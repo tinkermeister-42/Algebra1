@@ -27,10 +27,17 @@ echo "📥 Copying new files..."
 cp -r $DEPLOY_DIR/* .
 touch .nojekyll
 
-echo "📦 Committing and pushing..."
-git add .
-git commit -m "Deploy updated book"
-git push origin gh-pages
+# Force add everything (including overwritten files)
+git add -A
+
+# If there are changes, commit
+if ! git diff --cached --quiet; then
+  echo "📦 Committing changes..."
+  git commit -m "Deploy updated book"
+  git push origin gh-pages
+else
+  echo "⚠️ No changes to commit"
+fi
 
 echo "🔙 Returning to main branch..."
 git checkout main
