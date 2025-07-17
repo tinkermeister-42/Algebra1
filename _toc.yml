@@ -4,21 +4,10 @@ root: intro
 chapters:
   - file: chapters/unit1/index
     sections:
-      - file: chapters/unit1/lesson_1_1
-        title: Combining Like Terms
-      - file: chapters/unit1/lesson_1_2
-        title: The Distributive Property
-
+      - glob: chapters/unit1/lesson*
   - file: chapters/unit2/index
     sections:
-      - file: chapters/unit2/lesson_2_1
-        title: One-Step Equations
-      - file: chapters/unit2/lesson_2_2
-        title: Two-Step Equations
-      - file: chapters/unit2/lesson_2_3
-        title: Variables on Both Sides
-
+      - glob: chapters/unit2/lesson*
   - file: chapters/unit3/index
     sections:
-      - file: chapters/unit3/lesson_3_2
-        title: One-Step Equations
+      - glob: chapters/unit3/lesson*
