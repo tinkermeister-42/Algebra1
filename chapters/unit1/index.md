@@ -6,7 +6,7 @@ Whether it’s simplifying fractions, working with percentages, or understanding
 
 ---
 
-## 🧮 What You’ll Learn
+## What You’ll Learn
 
 By the end of this unit, you’ll be able to:
 
