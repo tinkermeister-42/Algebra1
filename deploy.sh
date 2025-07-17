@@ -7,6 +7,12 @@ echo "🚚 Preparing to deploy..."
 # Build the book
 ~/.venv/bin/jupyter-book build .
 
+# After building the book
+if [ ! -d "_build/html" ]; then
+  echo "❌ Build output not found in _build/html"
+  exit 1
+fi
+
 # Switch to gh-pages branch
 echo "📁 Switching to gh-pages branch..."
 git checkout gh-pages
