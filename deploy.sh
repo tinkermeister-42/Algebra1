@@ -3,7 +3,10 @@
 set -e
 
 BUILD_DIR="_build/html"
-DEPLOY_DIR=".deploy_temp"
+DEPLOY_DIR="/tmp/deploy_temp"
+
+echo "📘 Cleaning the book..."
+~/.venv/bin/jupyter-book clean .
 
 echo "📘 Building the book..."
 ~/.venv/bin/jupyter-book build .
