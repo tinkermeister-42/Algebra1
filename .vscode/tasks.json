@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Clean Book",
+      "type": "shell",
+      "command": "~/.venv/bin/jupyter-book clean .",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Book",
+      "type": "shell",
+      "command": "~/.venv/bin/jupyter-book build .",
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Book",
+      "type": "shell",
+      "command": "xdg-open",
+      "args": ["${workspaceFolder}/_build/html/index.html"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy Book",
+      "type": "shell",
+      "command": "./deploy.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
