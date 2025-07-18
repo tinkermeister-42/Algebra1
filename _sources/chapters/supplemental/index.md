@@ -1,4 +1,4 @@
-# 📦 Supplemental Materials
+# Supplemental Materials
 
 Welcome to the **Supplemental Materials** section of this course! This is where you'll find all the fun, extra, and just plain interesting math content that doesn't quite fit into the main units — but still helps build understanding, spark curiosity, or offer a little challenge.
 
@@ -8,18 +8,19 @@ Use these resources to:
 - Reinforce key concepts from class
 - Take a brain break with something still mathy (but fun!)
 
-## 🗂 What's Inside
+## What's Inside
 
-- 🧩 [**Math Games & Puzzles**](math_games_and_puzzles/index.md)
+🧩 [**Math Games & Puzzles**](math_games_and_puzzles/index.md)
+
   Number grids, logic puzzles, equation word searches, and more.
 
-- ✍️ **Extra Practice Worksheets**  
+✍️ **Extra Practice Worksheets**  
   Targeted drills and alternative problem sets.
 
-- 🧠 **Challenge Problems**  
+🧠 **Challenge Problems**  
   For students who want to push their thinking further.
 
-- 🎲 **Math Activities**  
+🎲 **Math Activities**  
   Open-ended or interactive things to try out
 
 ---
