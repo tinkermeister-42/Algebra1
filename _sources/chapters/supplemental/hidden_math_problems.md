@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   aspect-ratio: 1 / 1; /* 🔥 Forces it to be square */
-  max-width: 8in;
+  max-width: 7in;
   margin: 1rem auto;
   font-family: monospace;
   font-size: 1rem;
@@ -15,8 +15,8 @@
 }
 
 .puzzle-wrapper {
-  width: 7in;               /* Control print width */
-  height: 7in;              /* Match height for square shape */
+  width: 6in;               /* Control print width */
+  height: 6in;              /* Match height for square shape */
   margin: 1in auto;         /* Centered with print-safe margins */
   border: 2px solid #444;
   box-sizing: border-box;
@@ -43,9 +43,6 @@
 There are **at least 50 math problems** hiding in the number grid below.  
 
 Each problem uses **3 numbers** in a line written left to right, top to bottom, or diagonally moving up and to the right.  Put a **+**, **−**, **×**, or **÷** between the first two numbers, and an **=** before the last number to create a true math equation. For example, the numbers `3 5 15` could make `3 x 5 = 15`.
-
-
-**How many can you find? Circle them!**
 
 
 <div class="puzzle-grid">
