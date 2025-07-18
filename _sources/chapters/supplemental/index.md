@@ -10,7 +10,7 @@ Use these resources to:
 
 ## 🗂 What's Inside
 
-- 🧩 **Math Games & Puzzles**  
+- 🧩 [**Math Games & Puzzles**](math_games_and_puzzles/index.md)
   Number grids, logic puzzles, equation word searches, and more.
 
 - ✍️ **Extra Practice Worksheets**  
@@ -20,7 +20,7 @@ Use these resources to:
   For students who want to push their thinking further.
 
 - 🎲 **Math Activities**  
-  Open-ended or interactive things to try out — perfect for early finishers or enrichment.
+  Open-ended or interactive things to try out
 
 ---
 
