@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   aspect-ratio: 1 / 1; /* 🔥 Forces it to be square */
-  max-width: 7in;
+  max-width: 6.5in;
   margin: 1rem auto;
   font-family: monospace;
   font-size: 1rem;
@@ -15,8 +15,8 @@
 }
 
 .puzzle-wrapper {
-  width: 6in;               /* Control print width */
-  height: 6in;              /* Match height for square shape */
+  width: 5.5in;               /* Control print width */
+  height: 5.5in;              /* Match height for square shape */
   margin: 1in auto;         /* Centered with print-safe margins */
   border: 2px solid #444;
   box-sizing: border-box;
