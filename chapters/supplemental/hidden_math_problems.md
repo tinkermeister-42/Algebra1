@@ -37,12 +37,9 @@
 }
 </style>
 
+### Find the Hidden Math Problems!
 
-# Find the Hidden Math Problems!
-
-There are **at least 50 math problems** hiding in the number grid below.  
-
-Each problem uses **3 numbers** in a line written left to right, top to bottom, or diagonally moving up and to the right.  Put a **+**, **−**, **×**, or **÷** between the first two numbers, and an **=** before the last number to create a true math equation. For example, the numbers `3 5 15` could make `3 x 5 = 15`.
+There are **at least 50 math problems** hiding in the number grid below.  Each problem uses **3 numbers** in a line written left to right, top to bottom, or diagonally moving up and to the right.  Put a **+**, **−**, **×**, or **÷** between the first two numbers, and an **=** before the last number to create a true math equation. For example, the numbers `3 5 15` could make `3 x 5 = 15`.
 
 
 <div class="puzzle-grid">
