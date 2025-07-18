@@ -1,7 +1,5 @@
 # Find the Hidden Math Problems
 
-You can view the worksheet below, or [download the PDF](FindTheHiddenMathProblems.pdf).
+Click below to view or download the worksheet:
 
-```{pdf}
-FindTheHiddenMathProblems.pdf
-```
+👉 [Open Worksheet (PDF)](FindTheHiddenMathProblems.pdf)
