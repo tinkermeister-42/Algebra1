@@ -11,3 +11,6 @@ chapters:
   - file: chapters/unit3/index
     sections:
       - glob: chapters/unit3/lesson*
+  - file: chapters/supplemental/index
+    sections:
+      - file: chapters/supplemental/hidden_math_problems.md
