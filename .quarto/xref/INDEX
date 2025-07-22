@@ -1,0 +1,191 @@
+{
+  "index.md": {
+    "index.html": "e455a2ae"
+  },
+  "chapters/Unit_1/index.md": {
+    "index.html": "a326f30f"
+  },
+  "chapters/Unit_1/1.1_Integers_&_Number_Lines.md": {
+    "1.1_Integers_&_Number_Lines.html": "67a97f66"
+  },
+  "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.md": {
+    "1.2_Factor_Trees_&_Prime_Factorization.html": "ef5f127b"
+  },
+  "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).md": {
+    "1.3_Greatest_Common_Factor_(GCF).html": "a49257f8"
+  },
+  "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.md": {
+    "1.4_Multiplication_&_Division_Fluency.html": "9942ce60"
+  },
+  "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.md": {
+    "1.5_Fractions:_Meaning_&_Models.html": "44c18c0d"
+  },
+  "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.md": {
+    "1.6_Simplifying_Fractions_Using_GCF.html": "bd711f24"
+  },
+  "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.md": {
+    "1.7_Mixed_Numbers_&_Improper_Fractions.html": "66832f43"
+  },
+  "chapters/Unit_1/1.8_Order_of_Operations.md": {
+    "1.8_Order_of_Operations.html": "6bb2b1a2"
+  },
+  "chapters/Unit_2/index.md": {
+    "index.html": "0be9fb94"
+  },
+  "chapters/Unit_2/2.1_Evaluating_Expressions.md": {
+    "2.1_Evaluating_Expressions.html": "7374f48f"
+  },
+  "chapters/Unit_2/2.2_Inputs,_Outputs_&_Function_Machines_(Intro).md": {
+    "2.2_Inputs,_Outputs_&_Function_Machines_(Intro).html": "31161fdd"
+  },
+  "chapters/Unit_3/index.md": {
+    "index.html": "08c88410"
+  },
+  "chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.md": {
+    "3.1_Solving_One-Step_&_Two-Step_Equations.html": "21c4b67b"
+  },
+  "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.md": {
+    "3.2_Multi-Step_Equations_with_Distribution.html": "38dd1419"
+  },
+  "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.md": {
+    "3.3_Equations_with_Variables_on_Both_Sides.html": "ed63e21d"
+  },
+  "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.md": {
+    "3.4_No_Solution_vs._Infinite_Solutions.html": "a9fc2c37"
+  },
+  "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.md": {
+    "3.5_Writing_Equations_from_Real-Life_Contexts.html": "605cd03d"
+  },
+  "chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).md": {
+    "3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).html": "eebb9718"
+  },
+  "chapters/Unit_4/index.md": {
+    "index.html": "5bc1739d"
+  },
+  "chapters/Unit_4/4.1_Graphing_Expressions_with_Tables.md": {
+    "4.1_Graphing_Expressions_with_Tables.html": "199af5b6"
+  },
+  "chapters/Unit_4/4.2_Interpreting_Graphs_in_Context.md": {
+    "4.2_Interpreting_Graphs_in_Context.html": "21dfa446"
+  },
+  "chapters/Unit_4/4.3_Arithmetic_vs._Geometric_Patterns.md": {
+    "4.3_Arithmetic_vs._Geometric_Patterns.html": "86fb848c"
+  },
+  "chapters/Unit_4/4.4_Linear_Modeling_&_Rate_of_Change.md": {
+    "4.4_Linear_Modeling_&_Rate_of_Change.html": "dea28b24"
+  },
+  "chapters/Unit_4/4.5_Estimating_and_Checking_with_Graphs.md": {
+    "4.5_Estimating_and_Checking_with_Graphs.html": "d0e96374"
+  },
+  "chapters/Unit_5/index.md": {
+    "index.html": "9e6c2079"
+  },
+  "chapters/Unit_5/5.1_One-_and_Two-Step_Inequalities.md": {
+    "5.1_One-_and_Two-Step_Inequalities.html": "d195e019"
+  },
+  "chapters/Unit_5/5.2_Graphing_on_a_Number_Line.md": {
+    "5.2_Graphing_on_a_Number_Line.html": "902a02fc"
+  },
+  "chapters/Unit_5/5.3_Writing_Inequalities_from_Situations.md": {
+    "5.3_Writing_Inequalities_from_Situations.html": "c8236dfe"
+  },
+  "chapters/Unit_5/5.4_Interpreting_Graphs_with_Constraints.md": {
+    "5.4_Interpreting_Graphs_with_Constraints.html": "14a8113b"
+  },
+  "chapters/Unit_5/5.5_Compound_Inequalities_(Optional).md": {
+    "5.5_Compound_Inequalities_(Optional).html": "86e552f7"
+  },
+  "chapters/Unit_6/index.md": {
+    "index.html": "26b60ef7"
+  },
+  "chapters/Unit_6/6.1_The_Coordinate_Plane_&_Graphing_from_Tables.md": {
+    "6.1_The_Coordinate_Plane_&_Graphing_from_Tables.html": "e847cb76"
+  },
+  "chapters/Unit_6/6.2_Understanding_Slope_as_Rate_of_Change.md": {
+    "6.2_Understanding_Slope_as_Rate_of_Change.html": "04b663dd"
+  },
+  "chapters/Unit_6/6.3_Slope-Intercept_Form.md": {
+    "6.3_Slope-Intercept_Form.html": "56b6e5c0"
+  },
+  "chapters/Unit_6/6.4_Writing_Equations_from_Graphs_or_Words.md": {
+    "6.4_Writing_Equations_from_Graphs_or_Words.html": "70935907"
+  },
+  "chapters/Unit_6/6.5_Comparing_Linear_Models_from_Graphs_or_Data.md": {
+    "6.5_Comparing_Linear_Models_from_Graphs_or_Data.html": "0c227652"
+  },
+  "chapters/Unit_6/6.6_Applications__Cost,_Speed,_Growth.md": {
+    "6.6_Applications__Cost,_Speed,_Growth.html": "48b507c8"
+  },
+  "chapters/Unit_7/index.md": {
+    "index.html": "b928ede0"
+  },
+  "chapters/Unit_7/7.1_Multiplying_with_Exponents.md": {
+    "7.1_Multiplying_with_Exponents.html": "34803da6"
+  },
+  "chapters/Unit_7/7.2_Dividing_with_Exponents.md": {
+    "7.2_Dividing_with_Exponents.html": "a14cb750"
+  },
+  "chapters/Unit_7/7.3_Power_of_a_Power.md": {
+    "7.3_Power_of_a_Power.html": "edc1fac1"
+  },
+  "chapters/Unit_7/7.4_Zero_and_Negative_Exponents_(Intro_only).md": {
+    "7.4_Zero_and_Negative_Exponents_(Intro_only).html": "1e14b2e5"
+  },
+  "chapters/Unit_8/index.md": {
+    "index.html": "5b4f163e"
+  },
+  "chapters/Unit_8/8.1_Recognizing_Quadratic_Equations.md": {
+    "8.1_Recognizing_Quadratic_Equations.html": "a5aff3cc"
+  },
+  "chapters/Unit_8/8.2_Factoring_Simple_Quadratics.md": {
+    "8.2_Factoring_Simple_Quadratics.html": "f7686bee"
+  },
+  "chapters/Unit_8/8.3_Solving_by_Factoring.md": {
+    "8.3_Solving_by_Factoring.html": "38ff6d4d"
+  },
+  "chapters/Unit_8/8.4_The_Quadratic_Formula_(Intro).md": {
+    "8.4_The_Quadratic_Formula_(Intro).html": "ecbd322a"
+  },
+  "chapters/Unit_8/8.5_Graphing_Parabolas_by_Table_&_Comparing_with_Linear.md": {
+    "8.5_Graphing_Parabolas_by_Table_&_Comparing_with_Linear.html": "41ff03f3"
+  },
+  "chapters/Unit_9/index.md": {
+    "index.html": "a9f55cb3"
+  },
+  "chapters/Unit_9/9.1_What_Is_a_System.md": {
+    "9.1_What_Is_a_System.html": "604b9726"
+  },
+  "chapters/Unit_9/9.2_Solving_by_Graphing.md": {
+    "9.2_Solving_by_Graphing.html": "34941004"
+  },
+  "chapters/Unit_9/9.3_Substitution_Method_(Optional).md": {
+    "9.3_Substitution_Method_(Optional).html": "2d0c3bdf"
+  },
+  "chapters/Unit_9/9.4_Word_Problems_with_Systems.md": {
+    "9.4_Word_Problems_with_Systems.html": "d829a734"
+  },
+  "chapters/Unit_10/index.md": {
+    "index.html": "fce1ea10"
+  },
+  "chapters/Unit_10/10.1_Vocabulary_Review.md": {
+    "10.1_Vocabulary_Review.html": "27cd3f96"
+  },
+  "chapters/Unit_10/10.2_Real-World_Projects_(Graphs_+_Tables_+_Equations).md": {
+    "10.2_Real-World_Projects_(Graphs_+_Tables_+_Equations).html": "4be2d88e"
+  },
+  "chapters/Unit_10/10.3_Group_Presentations_or_Visual_Reports.md": {
+    "10.3_Group_Presentations_or_Visual_Reports.html": "4b4adab2"
+  },
+  "chapters/Unit_10/10.4_Final_Assessment_or_EOC_Practice.md": {
+    "10.4_Final_Assessment_or_EOC_Practice.html": "317860c7"
+  },
+  "chapters/supplemental/index.md": {
+    "index.html": "60152f39"
+  },
+  "chapters/supplemental/math_games_and_puzzles/index.md": {
+    "index.html": "08a541e3"
+  },
+  "glossary.md": {
+    "glossary.html": "3e6b741a"
+  }
+}
