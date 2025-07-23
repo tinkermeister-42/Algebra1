@@ -4,7 +4,6 @@ project:
     - ./scripts/build-glossary.sh
 
 resources:
-  - glossary.json
   - scripts/*
 
  
