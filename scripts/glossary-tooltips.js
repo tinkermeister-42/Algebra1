@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM ready");
 
+  const base = document.querySelector("base")?.getAttribute("href") || "/";
+
   try {
-    const res = await fetch("/glossary.json");
+    const res = await fetch(base + "glossary.json");
     console.log("Fetch status:", res.status);
 
     const glossary = await res.json();
