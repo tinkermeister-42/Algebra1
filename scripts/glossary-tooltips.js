@@ -1,14 +1,15 @@
-console.log("Running glossary tooltip loader...");
-
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM ready");
 
   try {
-    const res = await fetch("/glossary.json");
+    const res = await fetch("/glossary.json", {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }});
     console.log("Fetch status:", res.status);
 
     const glossary = await res.json();
-    console.log("Glossary loaded:", glossary);
 
     document.querySelectorAll(".glossary-link").forEach(link => {
       const term = link.dataset.term?.toLowerCase();
