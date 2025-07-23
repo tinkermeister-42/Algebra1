@@ -24,12 +24,20 @@ touch $TEMP_WORKTREE_DIR/.nojekyll
 echo "📦 Committing changes..."
 cd $TEMP_WORKTREE_DIR
 git add -A
+
+# Commit if there are staged changes
 if ! git diff --cached --quiet; then
   git commit -m "Deploy updated book"
-  git push origin $DEPLOY_BRANCH
+
+  echo "🔄 Pulling remote changes (rebase)"
+  git pull --rebase origin $DEPLOY_BRANCH
+
+  echo "🚀 Pushing to $DEPLOY_BRANCH"
+  git push origin $DEPLOY_BRANCH --force
 else
   echo "⚠️ No changes to commit"
 fi
+
 
 echo "🧹 Cleaning up temp worktree..."
 cd "$ORIGINAL_DIR"
