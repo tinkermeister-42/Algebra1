@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM ready");
 
   try {
-    const res = await fetch("/glossary.json", {
+    const res = await fetch("/scripts/glossary.json", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
