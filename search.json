@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "DHS Algebra 1",
     "section": "",
-    "text": "Welcome to Algebra 1\nWelcome to Algebra 1 at Frederick Douglass High School!\nThis book will guide you through the most important math skills you’ll need to succeed in high school and beyond. Algebra is more than just solving equations — it’s a powerful way to understand patterns, solve problems, and think logically.\nWhether you’re reviewing old ideas or learning something brand new, this book is here to help you every step of the way.",
+    "text": "Welcome to Algebra 1\nHere is an integer to test.\nWelcome to Algebra 1 at Frederick Douglass High School!\nThis book will guide you through the most important math skills you’ll need to succeed in high school and beyond. Algebra is more than just solving equations — it’s a powerful way to understand patterns, solve problems, and think logically.\nWhether you’re reviewing old ideas or learning something brand new, this book is here to help you every step of the way.",
     "crumbs": [
       "Welcome to Algebra 1"
     ]
@@ -2052,6 +2052,16 @@
     "crumbs": [
       "Supplemental",
       "Math Games and Puzzles"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "📚 Glossary",
+    "section": "",
+    "text": "absolute value\nThe distance a number is from zero on a number line, always expressed as a positive number or zero.\n\nExample: The absolute value of -7 is 7.\n\n\n\n\ninteger\nIn mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.\n\n\n\nnumber line\nA straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.\n\nExample: -2, 0, and 3 are all on the number line. \n\n\n\n\nnegative number\nA number less than zero. On a number line, negative numbers are to the left of zero.\n\nExample: -4 is a negative number.\n\n\n\n\nopposite\nTwo numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.\n\nExample: -3 and 3 are opposite numbers.\n\n\n\n\npositive number\nA number greater than zero. On a number line, positive numbers are to the right of zero.\n\nExample: 5 is a positive number.",
+    "crumbs": [
+      "📚 Glossary"
     ]
   }
 ]
