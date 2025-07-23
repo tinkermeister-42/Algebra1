@@ -1,6 +1,22 @@
 project:
   type: book
+  post-render:
+    - ./scripts/build-glossary.sh
 
+resources:
+  - glossary.json
+  - scripts/*
+
+ 
+filters:
+  - glossary-shortcode
+
+format:
+  html:
+    css: styles/glossary-tooltips.css
+    include-after-body:
+      - scripts/inject-glossary-tooltips.html
+    
 website:
   favicon: images/logo.png
   
