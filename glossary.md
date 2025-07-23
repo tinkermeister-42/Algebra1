@@ -3,7 +3,7 @@
 
 ### absolute value {#glossary-absolute-value}
 
-The distance a number is from zero on a {{< glink number line >}}, always expressed as a positive number or zero.
+The distance a number is from zero on a number line, always expressed as a positive number or zero.
 
 > Example: The **absolute value** of `-7` is `7`.
 
@@ -26,7 +26,7 @@ A straight line used to represent numbers in order. It usually has zero in the m
 
 ### negative number {#glossary-negative-number}
 
-A number less than zero. On a {{< glink number line >}}, negative numbers are to the left of zero.
+A number less than zero. On a number line, negative numbers are to the left of zero.
 
 > Example: `-4` is a **negative number**.
 
@@ -34,7 +34,7 @@ A number less than zero. On a {{< glink number line >}}, negative numbers are to
 
 ### opposite {#glossary-opposite}
 
-Two numbers that are the same distance from zero on a {{< glink number line >}}, but on opposite sides. Their sum is always zero.
+Two numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.
 
 > Example: `-3` and `3` are **opposite** numbers.
 
@@ -42,7 +42,7 @@ Two numbers that are the same distance from zero on a {{< glink number line >}},
 
 ### positive number {#glossary-positive-number}
 
-A number greater than zero. On a {{< glink number line >}}, positive numbers are to the right of zero.
+A number greater than zero. On a number line, positive numbers are to the right of zero.
 
 > Example: `5` is a **positive number**.
 

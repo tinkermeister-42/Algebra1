@@ -1,7 +1,5 @@
 # Welcome to Algebra 1 {.unnumbered}
 
-Here is an {{< glink integer >}} to test.
-
 Welcome to Algebra 1 at Frederick Douglass High School!
 
 This book will guide you through the most important math skills you'll need to succeed in high school and beyond. Algebra is more than just solving equations — it's a powerful way to understand patterns, solve problems, and think logically.
