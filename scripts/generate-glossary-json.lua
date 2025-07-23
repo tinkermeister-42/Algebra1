@@ -15,7 +15,7 @@ function Para(el)
 end
 
 function Pandoc(doc)
-  local f = io.open("./glossary.json", "w")
+  local f = io.open("glossary.json", "w")
   f:write("{\n")
   local first = true
   for term, def in pairs(glossary) do
