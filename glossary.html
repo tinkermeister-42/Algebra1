@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/glossary-tooltips.css">
 </head>
@@ -630,7 +659,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#glossary-absolute-value" id="toc-glossary-absolute-value" class="nav-link active" data-scroll-target="#glossary-absolute-value">absolute value</a></li>
+  <li><a href="#glossary-greater-than" id="toc-glossary-greater-than" class="nav-link" data-scroll-target="#glossary-greater-than">greater than (<strong>&gt;</strong>)</a></li>
   <li><a href="#glossary-integer" id="toc-glossary-integer" class="nav-link" data-scroll-target="#glossary-integer">integer</a></li>
+  <li><a href="#glossary-less-than" id="toc-glossary-less-than" class="nav-link" data-scroll-target="#glossary-less-than">less than (<strong>&lt;</strong>)</a></li>
   <li><a href="#glossary-number-line" id="toc-glossary-number-line" class="nav-link" data-scroll-target="#glossary-number-line">number line</a></li>
   <li><a href="#glossary-negative-number" id="toc-glossary-negative-number" class="nav-link" data-scroll-target="#glossary-negative-number">negative number</a></li>
   <li><a href="#glossary-opposite" id="toc-glossary-opposite" class="nav-link" data-scroll-target="#glossary-opposite">opposite</a></li>
@@ -668,16 +699,32 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <hr>
 </section>
+<section id="glossary-greater-than" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-greater-than">greater than (<strong>&gt;</strong>)</h3>
+<p>A number is greater than another number if it is further to the right on the number line.</p>
+<blockquote class="blockquote">
+<p>Example <span class="math inline">\(5 &gt; 3\)</span> is true <img src="images/Glossary/greater_than_true.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Greater than true example"> but <span class="math inline">\(3 &gt; 5\)</span> is false <img src="images/Glossary/greater_than_false.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Greater than false example"></p>
+</blockquote>
+<hr>
+</section>
 <section id="glossary-integer" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-integer">integer</h3>
 <p>In mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.</p>
+<hr>
+</section>
+<section id="glossary-less-than" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-less-than">less than (<strong>&lt;</strong>)</h3>
+<p>A number is less than another number if it is further to the left on the number line.</p>
+<blockquote class="blockquote">
+<p>Example <span class="math inline">\(3 &lt; 5\)</span> is true <img src="images/Glossary/less_than_true.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Greater than true example"> but <span class="math inline">\(5 &lt; 3\)</span> is false <img src="images/Glossary/less_than_false.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Greater than false example"></p>
+</blockquote>
 <hr>
 </section>
 <section id="glossary-number-line" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-number-line">number line</h3>
 <p>A straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.</p>
 <blockquote class="blockquote">
-<p>Example: <code>-2</code>, <code>0</code>, and <code>3</code> are all on the number line. <img src="images/Glossary/number_line_example.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Number line example"></p>
+<p>Example: <span class="math inline">\(-2\)</span>, <span class="math inline">\(0\)</span>, and <span class="math inline">\(3\)</span> are all on the number line. <img src="images/Glossary/number_line_example.png" id="fig-number-line" class="img-fluid" style="width:100.0%" alt="Number line example"></p>
 </blockquote>
 <hr>
 </section>

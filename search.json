@@ -57,7 +57,18 @@
     "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html",
     "title": "1.1 Integers & Number Lines",
     "section": "",
-    "text": "🔥 Warm-Up\nThis lesson introduces the concept of integers and how they are represented on number lines. You’ll learn how to locate and compare integers visually, which helps prepare for operations with negative numbers.\nComing soon.",
+    "text": "🔥 Warm-Up\nDid you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like algebra and calculus are just clever ways of organizing and extending basic ideas — like moving forward and backward on a number line.\nIn this lesson, we’ll use the number line not just to count, but to add, subtract, and compare positive and negative numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.\nNegative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like opposites, absolute value, and comparison — you’ll be setting yourself up for success in the rest of the course.\nAnswer as best you can – even if you aren’t sure!",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.1 Integers & Number Lines"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#warm-up",
+    "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#warm-up",
+    "title": "1.1 Integers & Number Lines",
+    "section": "",
+    "text": "What is the opposite of \\(6\\)?\nWhich is greater \\(-4\\) or \\(-9\\)?\nWhat is the absolute value of \\(-8\\)?\nFill in the blanks with the missing numbers:…, \\(-3\\), __, \\(-1\\), \\(0\\), __, \\(2\\), \\(3\\), …\nWhich is farther from \\(0\\): \\(-7\\) or \\(5\\)?",
     "crumbs": [
       "Unit 1: Foundations",
       "1.1 Integers & Number Lines"
@@ -67,8 +78,8 @@
     "objectID": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#learn-together",
     "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#learn-together",
     "title": "1.1 Integers & Number Lines",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.1.1 The Number Line Is More Than Just Counting\nYou already know how to count — \\(0\\), \\(1\\), \\(2\\), \\(3\\), and so on. The number line extends that idea in both directions.\nLet’s draw a number line from \\(-10\\) to \\(10\\) \nHere, every tick mark is an integer — a whole number.\n\nNumbers to the right of zero are positive\nNumbers to the left of zero are negative\n\nWe can use this number line to see what happens when we add, subtract, or compare numbers.\n\n\n\n\n\n\n🧠 How many numbers are between \\(3\\) and \\(5\\)?\n\n\n\n\n\nThe answer is not \\(2\\)! There are infinitely many numbers between \\(3\\) and \\(5\\). Here are two number lines that might help convince you. \n\n\n\n\n\n\n1.1.2 Understanding Opposites\nLet’s look at a pair of numbers, \\(3\\) and \\(-3\\).\nThese are called opposite numbers. They are the same distance from zero but on opposite sides of it.\n\n\n\n\n\n\n\n🧠 What is the opposite of zero?\n\n\n\n\n\nThe opposite of zero is zero. Zero is the only number that is its own opposite!\n\n\n\n\n\n1.1.3 What Is Absolute Value?\nAbsolute value (\\(|x|\\)) measures the distance from zero, no matter the direction.\nTake a look at the number \\(-5\\). The number line shows that it’s absolute value is \\(5\\) because it is \\(5\\) units away from zero. \nYou can see that \\(|5|\\) is also \\(5\\) for the same reason! \n\n\n\n\n\n\n🧠 Can the absolute value ever be negative?\n\n\n\n\n\nAbsolute value is never negative, because distance is never negative.\n\n\n\n\n\n\n1.1.4 Comparing Integers\nWe can also use the number line to compare values.\nLet’s compare \\(2\\) to \\(-7\\). \nAsk yourself:\n\nWhich number is farther to the right?\nWhich number is closer to 0?\nDoes absolute value change the comparison?\n\nYou can see from the number line that \\(2 &gt; -7\\) because \\(2\\) is to the right of \\(-7\\). But \\(|-7|&gt;|2|\\), that is \\(-7\\) has a greater absolute value than \\(2\\) because \\(-7\\) is further from zero.\n\n\n\n\n\n\n🧠 Try comparing \\(3\\) to \\(-8\\) using a number line.\n\n\n\n\n\n\\(3 &gt; -8\\) because it is further to the right but \\(|-8|&gt;|3|\\) because \\(-8\\) is further from zero.\n\n\n\n\n\n\n\n1.1.5 Number Lines and Arithmetic\nWe can also use the number line to model adding and subtracting integers.\n\nTo add a positive number, move right\nTo add a negative number, move left\n\nExamples:\n\nAddition: \\(-2 + 6 = 4\\) \nSubtraction: \\(4 - 7 = -3\\) \nAdding a negative: \\(2 + (-5) = -3\\) \nSubtracting a negative: \\(2 - (-3) = 5\\) \n\n\n\n\n\n\n\n🧠 Can You think of a real-world example of each of these?\n\n\n\n\n\n\nYou are $\\(2\\) in debt and earn $\\(6\\), now you have $\\(4\\).\nYou have $\\(4\\) and spend $\\(7\\). You are now $\\(3\\) in debt.\nYou have $\\(2\\), the bank adds a $\\(5\\) fee to your account. You now owe $\\(3\\).\nYou have $\\(2\\), the bank forgives a $\\(3\\) overdraft fee. You now have $\\(5\\).\n\n\n\n\n\nLet me know if you’d like to:\n\nAdd some interactive prompts (checkboxes or “Reveal” buttons)\nBreak this into smaller sub-lessons\nStyle these number lines with your custom Python tool\nAdd a partner or board activity here before the practice\n\nReady when you are to build the “Practice On Your Own” section or expand this into a printable resource.",
     "crumbs": [
       "Unit 1: Foundations",
       "1.1 Integers & Number Lines"
@@ -78,8 +89,19 @@
     "objectID": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#practice-on-your-own",
     "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#practice-on-your-own",
     "title": "1.1 Integers & Number Lines",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\n\n🧭 A. Locate and Label\nPlot the following integers on a number line: –10, –3, 0, 4, 9, –7\n👉 [INSERT: blank number line –12 to 12]\n\n\n\n🆚 B. Compare Using &gt;, &lt;, or =\n\n–4 ___ –9\n–3 ___ 0\n|–5| ___ 5\n–|–6| ___ 6\n–7 ___ –|8|\n–2 – 3 ___ –7\n|–3 – 6| ___ 9\n\n\n\n\n🔁 C. Opposites and Absolute Value\nFill in the blank:\n\nThe opposite of –6 is ___\nThe opposite of 0 is ___\n|–12| = ___\n|–3| + |–5| = ___\n–(–4) = ___\n|3 – 9| = ___\n\n\n\n\n⚖️ D. Reasoning Practice\nTrue or False? Justify with a sentence or sketch a number line.\n\n–3 &gt; –9\n|–7| = –|7|\nThe opposite of |–5| is –5\n–(–8) = |8|\n\n\n\n\n🌡️ E. Contextual Word Problems\n\nThe temperature was –12°F. It warmed up 20 degrees. What’s the new temperature?\nA diver is 45 feet below sea level. She goes down another 30 feet. How deep is she?\nYour bank account is at –$8. You deposit $5. What’s your new balance?",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.1 Integers & Number Lines"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#answer-key-faded-or-flipped",
+    "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html#answer-key-faded-or-flipped",
+    "title": "1.1 Integers & Number Lines",
+    "section": "✅ Answer Key (faded or flipped)",
+    "text": "✅ Answer Key (faded or flipped)\n\nA: Labelled on number line B: &gt;, &lt;, =, &lt;, &gt;, &gt;, = C: 6, 0, 12, 8, 4, 6 D: T, F, F, T E: 8°F, –75 ft, –$3\n\n\nWould you like this exported as Quarto .qmd with stylized headings, tooltips, and number line placeholders? I can also start wiring in your plotting code or build a .py helper file with reusable number line functions if you want this production-ready.",
     "crumbs": [
       "Unit 1: Foundations",
       "1.1 Integers & Number Lines"
@@ -2059,7 +2081,7 @@
     "href": "glossary.html",
     "title": "📚 Glossary",
     "section": "",
-    "text": "absolute value\nThe distance a number is from zero on a number line, always expressed as a positive number or zero.\n\nExample: The absolute value of -7 is 7.\n\n\n\n\ninteger\nIn mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.\n\n\n\nnumber line\nA straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.\n\nExample: -2, 0, and 3 are all on the number line. \n\n\n\n\nnegative number\nA number less than zero. On a number line, negative numbers are to the left of zero.\n\nExample: -4 is a negative number.\n\n\n\n\nopposite\nTwo numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.\n\nExample: -3 and 3 are opposite numbers.\n\n\n\n\npositive number\nA number greater than zero. On a number line, positive numbers are to the right of zero.\n\nExample: 5 is a positive number.",
+    "text": "absolute value\nThe distance a number is from zero on a number line, always expressed as a positive number or zero.\n\nExample: The absolute value of -7 is 7.\n\n\n\n\ngreater than (&gt;)\nA number is greater than another number if it is further to the right on the number line.\n\nExample \\(5 &gt; 3\\) is true  but \\(3 &gt; 5\\) is false \n\n\n\n\ninteger\nIn mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.\n\n\n\nless than (&lt;)\nA number is less than another number if it is further to the left on the number line.\n\nExample \\(3 &lt; 5\\) is true  but \\(5 &lt; 3\\) is false \n\n\n\n\nnumber line\nA straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.\n\nExample: \\(-2\\), \\(0\\), and \\(3\\) are all on the number line. \n\n\n\n\nnegative number\nA number less than zero. On a number line, negative numbers are to the left of zero.\n\nExample: -4 is a negative number.\n\n\n\n\nopposite\nTwo numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.\n\nExample: -3 and 3 are opposite numbers.\n\n\n\n\npositive number\nA number greater than zero. On a number line, positive numbers are to the right of zero.\n\nExample: 5 is a positive number.",
     "crumbs": [
       "📚 Glossary"
     ]
