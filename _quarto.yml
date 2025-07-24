@@ -13,10 +13,15 @@ filters:
 
 format:
   html:
-    css: styles/glossary-tooltips.css
+    theme:
+      - flatly
+    css:
+      - styles/callouts.css
+      - styles/glossary-tooltips.css
     include-after-body:
       - scripts/inject-glossary-tooltips.html
-    
+  pdf: default
+  
 website:
   favicon: images/logo.png
   

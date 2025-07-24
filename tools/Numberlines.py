@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+def norm(val, start, end):
+    return (val - start) / (end - start)
+    
 def plot_number_line_with_points(
     line_range=(-10, 10, 1),
     orientation="horizontal",
-    figsize=10,
+    figsize=8,
     title=None,
     line_thickness=None,
     tick_length=None,
@@ -14,294 +16,247 @@ def plot_number_line_with_points(
     points=None,
     inequalities=None,
     compound_inequalities=None,
-    distances=None,  # NEW FEATURE
+    distances=None,
     arrow=True,
     output=None,
+    unit_label="units"
 ):
     points = points or []
     inequalities = inequalities or []
     compound_inequalities = compound_inequalities or []
+    distances = distances or []
 
-    fig_height = 2 + len(distances or [0, 0]) / 2
+    # Unpack and compute
+    start = 0
+    end = 1
+    
+    _t0, _t1, _s = line_range
+    tick_labels = np.arange(_t0, _t1 + _s, _s)
 
-    fig_dims = (
-        (figsize, fig_height) if orientation == "horizontal" else (fig_height, figsize)
-    )
+    t0 = norm(_t0, _t0, _t1)
+    t1 = norm(_t1, _t0, _t1)
+    step = (t1 - t0) / ((_t1 - _t0) / _s)
+    
+    ticks = np.arange(t0, t1 + step, step)
+
+    
+    # Dynamic visuals
+    line_thickness = line_thickness or max(figsize * 0.1, 1.5)
+    tick_length = tick_length or max(figsize * 0.02, 0.1)
+    tick_fontsize = tick_fontsize or int(figsize * 1.5)
+    point_size = point_size or max(figsize * 1.5, 6)
+
+    # Figure size
+    vertical_space = 1 + len(distances)
+    fig_dims = (figsize, vertical_space) if orientation == "horizontal" else (vertical_space, figsize)
     fig, ax = plt.subplots(figsize=fig_dims)
-    ax.set_aspect("equal")
     ax.axis("off")
 
-    start, end, tick_interval = line_range
-    ticks = np.arange(start, end + tick_interval, tick_interval)
+    # Axes limits
+    margin = 0.05
 
-    margin = (end - start) * 0.05
-    arrow_start = start - margin
-    arrow_end = end + margin
-    arrowprops = dict(
-        arrowstyle="<|-|>, head_width=0.5, head_length=1.25", color="black"
-    )
-
-    # Dynamic styling
-    line_thickness = (
-        line_thickness if line_thickness is not None else max(figsize * 0.1, 1.5)
-    )
-    tick_length = tick_length if tick_length is not None else max(figsize * 0.025, 0.1)
-    tick_fontsize = tick_fontsize if tick_fontsize is not None else int(figsize * 1.2)
-    point_size = point_size if point_size is not None else max(figsize * 1.2, 6)
-
-    # Tick mark labels
-    def draw_tick_labels():
-        for t in ticks:
-            if orientation == "horizontal":
-                ax.plot(
-                    [t, t],
-                    [-tick_length / 2, tick_length / 2],
-                    color="black",
-                    lw=1.5,
-                    zorder=2,
-                )
-                ax.text(
-                    t,
-                    -tick_length * 1.8,
-                    str(t),
-                    ha="center",
-                    va="top",
-                    fontsize=tick_fontsize,
-                )
-            else:
-                ax.plot(
-                    [-tick_length / 2, tick_length / 2],
-                    [t, t],
-                    color="black",
-                    lw=1.5,
-                    zorder=2,
-                )
-                ax.text(
-                    -tick_length * 3.0,
-                    t,
-                    str(t),
-                    ha="right",
-                    va="center",
-                    fontsize=tick_fontsize,
-                )
-
-    def plot_dot(val, closed, color, zorder=4):
-        face = color if closed else "white"
-        edge = color
-        if orientation == "horizontal":
-            ax.plot(
-                val,
-                0,
-                "o",
-                markersize=point_size,
-                markeredgewidth=2.5,
-                markerfacecolor=face,
-                markeredgecolor=edge,
-                zorder=zorder,
-            )
-        else:
-            ax.plot(
-                0,
-                val,
-                "o",
-                markersize=point_size,
-                markeredgewidth=2.5,
-                markerfacecolor=face,
-                markeredgecolor=edge,
-                zorder=zorder,
-            )
-
-    def plot_ray(op, val, color):
-        closed = "=" in op
-        style = f"head_width=0.5, head_length=1.25"
-
-        if orientation == "horizontal":
-            if "<" in op:
-                style = "<|-, " + style
-                start_xy, end_xy = (arrow_start, 0), (val, 0)
-            else:
-                style = "-|>, " + style
-                start_xy, end_xy = (val, 0), (arrow_end, 0)
-        else:
-            if "<" in op:
-                style = "<|-, " + style
-                start_xy, end_xy = (0, arrow_start), (0, val)
-            else:
-                style = "-|>, " + style
-                start_xy, end_xy = (0, val), (0, arrow_end)
-
-        ax.annotate(
-            "",
-            xy=end_xy,
-            xytext=start_xy,
-            arrowprops=dict(arrowstyle=style, color=color, lw=2 * line_thickness),
-            zorder=3,
-        )
-        plot_dot(val, closed, color, zorder=3)
-
-    def plot_range(a, b, closed_a, closed_b, color):
-        x = np.linspace(a, b, 300)
-        if orientation == "horizontal":
-            y = np.zeros_like(x)
-            ax.plot(x, y, color=color, lw=4, zorder=3)
-            plot_dot(a, closed_a, color)
-            plot_dot(b, closed_b, color)
-        else:
-            y = np.linspace(a, b, 300)
-            x = np.zeros_like(y)
-            ax.plot(x, y, color=color, lw=4, zorder=3)
-            plot_dot(a, closed_a, color, zorder=3)
-            plot_dot(b, closed_b, color, zorder=3)
-
-    def draw_goalpost_distance(
-        ax,
-        x0,
-        x1,
-        base_y=0.4,
-        height=0.6,
-        color="black",
-        label=None,
-        flip=False,
-        distance_arrows=None,
-    ):
-        direction = -1 if flip else 1
-        top_y = base_y + height * direction
-        spike_y = top_y + 0.25 * direction
-        label_y = spike_y + 0.15 * direction
-        mid = (x0 + x1) / 2
-        lw = 2.2
-    
-        # Draw uprights
-        ax.vlines([x0, x1], ymin=base_y, ymax=top_y, color=color, lw=lw, zorder=5)
-        ax.hlines(y=top_y, xmin=x0, xmax=x1, color=color, lw=lw, zorder=5)
-        ax.vlines(mid, ymin=top_y, ymax=spike_y, color=color, lw=lw, zorder=5)
-    
-        # Draw directional arrow at base (optional)
-        arrow_length = 0.3
-        arrow_dir = -direction  # Always point away from number line
-    
-        if distance_arrows == "left":
-            ax.annotate(
-                "",
-                xy=(x0, base_y + arrow_length * arrow_dir),
-                xytext=(x0, base_y),
-                arrowprops=dict(arrowstyle="->", color=color, lw=lw),
-                zorder=6,
-            )
-        elif distance_arrows == "right":
-            ax.annotate(
-                "",
-                xy=(x1, base_y + arrow_length * arrow_dir),
-                xytext=(x1, base_y),
-                arrowprops=dict(arrowstyle="->", color=color, lw=lw),
-                zorder=6,
-            )
-    
-        # Draw label
-        va = "bottom" if direction > 0 else "top"
-        if label:
-            ax.text(
-                mid,
-                label_y,
-                label,
-                ha="center",
-                va=va,
-                fontsize=12,
-                color=color,
-                zorder=6,
-            )
-
-        # Draw center spike
-        ax.vlines(mid, ymin=top_y, ymax=spike_y, color=color, lw=lw, zorder=5)
-
-        # Draw label
-        va = "bottom" if direction > 0 else "top"
-        if label:
-            ax.text(
-                mid,
-                label_y,
-                label,
-                ha="center",
-                va=va,
-                fontsize=12,
-                color=color,
-                zorder=6,
-            )
-
-    # Draw number line
     if orientation == "horizontal":
-        if arrow:
-            ax.annotate(
-                "",
-                xy=(arrow_end, 0),
-                xytext=(arrow_start, 0),
-                arrowprops=arrowprops,
-                zorder=2,
-            )
-        else:
-            ax.plot([start, end], [0, 0], color="black", lw=line_thickness, zorder=2)
-        ax.set_xlim(arrow_start - 0.5, arrow_end + 0.5)
-        extra_y = len(distances) if distances else 1
-        ax.set_ylim(-extra_y, extra_y + 2)
+        ax.set_xlim(-margin, 1 + margin)
+        ax.set_ylim(-vertical_space / 2, vertical_space / 2)
     else:
-        if arrow:
-            ax.annotate(
-                "",
-                xy=(0, arrow_end),
-                xytext=(0, arrow_start),
-                arrowprops=arrowprops,
-                zorder=2,
-            )
-        else:
-            ax.plot([0, 0], [start, end], color="black", lw=line_thickness, zorder=2)
+        ax.set_ylim(-margin, 1 + margin)
+        ax.set_xlim(-vertical_space / 2, vertical_space / 2)
+
+    # Draw main line
+    _draw_number_line(ax, orientation, arrow, line_thickness)
+
+    # Ticks and labels
+    _draw_ticks(ax, orientation, ticks, tick_labels, tick_length, tick_fontsize)
+
+    # Points
+    for point in points:#val, closed, color in points:
+        
+        if not hasattr(point, '__len__'):
+            point = [point]
             
-        ax.set_ylim(arrow_start - 0.5, arrow_end + 0.5)
-        ax.set_xlim(-2.5, 1.5)
+        val, *args = point
+        
+        if args:
+            closed, *args = args
+        else:
+            closed = True
+            
+        if args:
+            color, *args = args
+        else:
+            color = "blue"
+
+        if args:
+            alpha = args[0]
+        else:
+            alpha = 1
+
+        val = norm(val, _t0, _t1)
+        
+        _draw_point(ax, orientation, val, closed, color, point_size, alpha)
+
+    # Inequalities
+    for ineq in inequalities:
+        op, val, *args = ineq
+        val = norm(val, _t0, _t1)
+        
+        if args:
+            color, *args = args
+        else:
+            color = "blue"
+
+        if args:
+            alpha = args[0]
+        else:
+            alpha = 1
+            
+        _draw_inequality(ax, orientation, op, val, color, line_thickness, point_size, alpha)
+        
+    # Ranges
+    for cineq in compound_inequalities:
+        low, high, *args = cineq
+        if args:
+            closed_low, *args = args
+        else:
+            closed_low = True
+            
+        if args:
+            closed_high, *args = args
+        else:
+            closed_high = True
+
+        if args:
+            color, *args = args
+        else:
+            color = "blue"
+
+        if args:
+            alpha = args[0]
+        else:
+            alpha = 1
+            
+        low = norm(low, _t0, _t1)
+        high = norm(high, _t0, _t1)
+        _draw_range(ax, orientation, low, high, closed_low, closed_high, color, point_size, alpha)
+
+    # Distances
+    for i, (a, b, *maybe_dir) in enumerate(distances):
+        direction = maybe_dir[0] if maybe_dir else None
+        distance = abs(b - a)
+        a = norm(a, _t0, _t1)
+        b = norm(b, _t0, _t1)
+        
+        label = f"{'+' if b > a else '-'}{distance} {unit_label}" if direction else f"{distance} {unit_label}"
+        _draw_distance_bracket(
+            ax,
+            orientation,
+            a,
+            b,
+            label=label,
+            flip=(i % 2 == 1),
+            tick_length=tick_length,
+            tick_fontsize=tick_fontsize,
+            spacing= (i // 2) * 1.5,
+            direction=direction
+        )
 
     if title:
-        ax.set_title(title, fontsize=tick_fontsize + 4, pad=10)  # was 30
-
-    draw_tick_labels()
-
-    for val, closed, color in points:
-        plot_dot(val, closed, color)
-
-    for op, val, color in inequalities:
-        plot_ray(op, val, color)
-
-    for low, high, closed_low, closed_high, color in compound_inequalities:
-        plot_range(low, high, closed_low, closed_high, color)
-
-    if distances:
-        for i, (a, b, *args) in enumerate(distances):
-            x0, x1 = sorted([a, b])
-            if args:
-                distance_arrows = args[0]
-            else:
-                distance_arrows = None
-                
-            flip = i % 2 == 1
-            base_y = 0.5 if not flip else -1.1
-            if distance_arrows:
-                sgn = "+" if b > a else "-"
-            else:
-                sgn = ""
-            
-            label = f"{sgn}{abs(a - b)} units"
-            draw_goalpost_distance(
-                ax,
-                x0,
-                x1,
-                base_y=base_y,
-                height=0.5,
-                label=label,
-                flip=flip,
-                distance_arrows=distance_arrows,
-            )
+        ax.set_title(title, fontsize=tick_fontsize + 4)
 
     plt.tight_layout()
-
+    
     if output:
         plt.savefig(output)
 
-    plt.show()
+    return fig, ax
+
+
+# === Subcomponents ===
+
+def _draw_number_line(ax, orientation, arrow, lw):
+    props = dict(arrowstyle="<|-|>,head_width=0.5,head_length=1.25", color="black")
+    if arrow:
+        if orientation == "horizontal":
+            ax.annotate("", (-0.05, 0), (1.05, 0), arrowprops=props, zorder=2)
+        else:
+            ax.annotate("", (0.0, -0.05), (0, 1.05), arrowprops=props, zorder=2)
+    else:
+        if orientation == "horizontal":
+            ax.plot([1, 0], [0, 0], color="black", lw=lw, zorder=2)
+        else:
+            ax.plot([0, 0], [1, 0], color="black", lw=lw, zorder=2)
+
+
+def _draw_ticks(ax, orientation, ticks, labels, length, fontsize):
+    for tick, label in zip(ticks, labels):
+        if orientation == "horizontal":
+            ax.plot([tick, tick], [-length / 2, length / 2], color="black", lw=1.5)
+            ax.text(tick, -length, str(label), ha="center", va="top", fontsize=fontsize)
+        else:
+            ax.plot([-length / 2, length / 2], [tick, tick], color="black", lw=1.5)
+            ax.text(-length * 1.5, tick, str(label), ha="right", va="center", fontsize=fontsize)
+
+
+def _draw_point(ax, orientation, val, closed, color, size, alpha=1, z=4):
+    face = color if closed else "white"
+    coords = (val, 0) if orientation == "horizontal" else (0, val)
+    ax.plot(*coords, "o", markersize=size, markeredgewidth=2.5,
+            markerfacecolor=face, markeredgecolor=color, alpha=alpha, zorder=z)
+
+
+def _draw_inequality(ax, orientation, op, val, color, lw, size, alpha):
+    closed = "=" in op
+    head = "<|-" if "<" in op else "-|>"
+    head += ",head_width=0.5,head_length=1.25"
+    if orientation == "horizontal":
+        coords = ((-0.05, 0), (val, 0)) if "<" in op else ((val, 0), (1.05, 0))
+    else:
+        coords = ((0, -0.05), (0, val)) if "<" in op else ((0, val), (0, 1.05))
+    ax.annotate("", coords[1], coords[0], arrowprops=dict(arrowstyle=head, color=color, lw=2 * lw, alpha=alpha), zorder=3)
+    _draw_point(ax, orientation, val, closed, color, size, 4, 1)
+
+
+def _draw_range(ax, orientation, a, b, ca, cb, color, size, alpha):
+    x = np.linspace(a, b, 300)
+    if orientation == "horizontal":
+        ax.plot(x, np.zeros_like(x), color=color, lw=4, zorder=3, alpha=alpha)
+    else:
+        ax.plot(np.zeros_like(x), x, color=color, lw=4, zorder=3, alpha=alpha)
+    _draw_point(ax, orientation, a, ca, color, size, 3, 1)
+    _draw_point(ax, orientation, b, cb, color, size, 3, 1)
+
+
+def _draw_distance_bracket(ax, orientation, x0, x1, label, flip, tick_length, tick_fontsize, spacing, direction=None):
+    x0, x1 = sorted([x0, x1])
+    mid = (x0 + x1) / 2
+    direction_sign = -1 if flip else 1
+    base_offset  = 0.25 * direction_sign
+    arrow_offset = 0.2 if direction else 0
+    
+    # Padding based on tick size and label font
+    vertical_offset = tick_length + tick_fontsize * 0.08 + spacing * 2 + arrow_offset
+    base_y = base_offset * vertical_offset - 0.1
+    top_y = base_y + direction_sign * 0.2
+    spike_y = top_y + direction_sign * 0.15
+    label_y = spike_y + direction_sign * 0.05
+
+    lw = 1.25
+
+    if orientation == "horizontal":
+        # Draw uprights
+        ax.vlines([x0, x1], base_y, top_y, color="black", lw=lw)
+        # Draw top bar
+        ax.hlines(top_y, x0, x1, color="black", lw=lw)
+        # Draw center spike
+        ax.vlines(mid, top_y, spike_y, color="black", lw=lw)
+        # Draw label
+        ax.text(mid, label_y, label, ha="center", va="bottom" if direction_sign > 0 else "top", fontsize=12)
+        # Optional arrows
+        if direction == "left":
+            ax.annotate("", (x0, base_y - 0.1 * direction_sign), (x0, base_y),
+                        arrowprops=dict(arrowstyle="-|>", color="black", lw=lw))
+        elif direction == "right":
+            ax.annotate("", (x1, base_y - 0.1 * direction_sign), (x1, base_y),
+                        arrowprops=dict(arrowstyle="-|>", color="black", lw=lw))
+    else:
+        raise NotImplementedError("Vertical bracket not supported yet.")

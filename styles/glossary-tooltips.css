@@ -1,6 +1,6 @@
 .tippy-box[data-theme~='light-border'] {
   font-size: 0.85rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #333;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -9,19 +9,11 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* GLOSSARY LINKS */
 a.glossary-link {
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
-  color: inherit;
-  background-color: #f9f9f9;
-  padding: 1px 2px;
-  border-radius: 3px;
-  cursor: help;
-  transition: background-color 0.2s ease;
+  font-weight: 550;
+  color: #1a4c7a;
+  text-decoration: underline dotted #9cb7d4;
+  text-underline-offset: 2px;
 }
 
-a.glossary-link:hover {
-  background-color: #eee;
-  border-bottom-color: #999;
-}
