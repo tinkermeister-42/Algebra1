@@ -1,10 +1,14 @@
 {
-  "positive number": "A number greater than zero. On a number line, positive numbers are to the right of zero.",
+  "algebra": "Algebra is a branch of math that uses letters and symbols to represent numbers and relationships.",
+  "negative": "A number is negative if it is less than zero. On a number line, negative numbers are to the left of zero.",
   "number line": "A straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.",
-  "integer": "In mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.",
-  "opposite": "Two numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.",
-  "less than (<)": "A number is less than another number if it is further to the left on the number line.",
-  "negative number": "A number less than zero. On a number line, negative numbers are to the left of zero.",
+  "horizontal": "Side to side, like the horizon. Level ground is horizontal.",
   "absolute value": "The distance a number is from zero on a number line, always expressed as a positive number or zero.",
-  "greater than (>)": "A number is greater than another number if it is further to the right on the number line."
+  "opposite": "Two numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.",
+  "less than": "A number is less than (<) another number if it is further to the left on the number line.",
+  "vertical": "Up and down like a flag pole.",
+  "integer": "In mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.",
+  "calculus": "Calculus is a branch of math that helps us understand change and motion.",
+  "greater than": "A number is greater than (>) another number if it is further to the right on the number line.",
+  "positive": "A number is positive if it is greater than zero. On a number line, positive numbers are to the right of zero."
 }

@@ -1,0 +1,22 @@
+.callout-note.realworld-box {
+  background-color: #f4fdf5;
+  border-left: 4px solid #5aa469;
+  padding: 1em;
+  margin-top: 1.5em;
+  font-size: 0.95em;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.callout-note.realworld-box .callout-header {
+  background-color: #e0f7e7;
+  color: #2f684e;
+  font-weight: bold;
+  font-size: 1.05em;
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #c2e9cc;
+}
+
+.callout-note.realworld-box .callout-body {
+  padding: 0.8em 1em;
+}
