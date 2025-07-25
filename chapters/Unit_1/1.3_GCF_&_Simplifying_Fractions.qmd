@@ -1,0 +1,174 @@
+# 1.3 – GCF & Simplifying Fractions {.unnumbered}
+
+Ever tried to share something fairly — like splitting snacks or organizing teams into equal groups? That’s the idea behind the **greatest common factor**, or GCF. It tells us how much we can evenly divide into *two or more* numbers.
+
+In this lesson, you’ll learn how to use **prime factorization** to find the GCF, and how that can help us **simplify fractions**. These aren’t just number tricks — they help you write expressions in cleaner, simpler ways so they’re easier to work with.
+
+::: {.callout-note icon=false title="🎯 Objectives"}
+- [ ] Find the GCF using prime factorization
+- [ ] Apply GCF to simplify fractions
+- [ ] Solve problems involving shared quantities
+:::
+
+::: {.callout-note icon=false title="📚 Vocabulary"}
+{{< glink greatest common factor >}}, {{< glink simplify >}}, {{< glink equivalent fractions >}}, {{< glink prime factorization >}}
+:::
+
+---
+
+## 🔥 Warm-Up
+
+1. List the prime factorization of:
+
+   a. 20
+   b. 45
+
+2. What’s the largest number that divides **both** 12 and 18 evenly?
+
+3. Write a fraction equal to \$\frac{12}{20}\$ using smaller numbers.
+
+---
+
+## 👥 Learn Together
+
+### 1.3.1 – What Is the Greatest Common Factor?
+
+The **greatest common factor (GCF)** is the **biggest number** that divides evenly into *two or more* numbers.
+
+Let’s look at 18 and 24.
+
+Factors of 18: 1, 2, 3, 6, 9, 18
+Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24
+The GCF is **6** — it’s the largest factor they both share.
+
+---
+
+### 1.3.2 – Use Prime Factorization to Find the GCF
+
+We can also find the GCF using **prime factorization**.
+
+Let’s try 36 and 60.
+
+Prime factorization:
+36 = 2 × 2 × 3 × 3
+60 = 2 × 2 × 3 × 5
+
+The GCF is the product of the **shared prime factors**:
+2 × 2 × 3 = **12**
+
+This method works even when the numbers are large or hard to list out.
+
+---
+
+### 1.3.3 – Simplifying Fractions with the GCF
+
+Let’s say you have the fraction \$\frac{36}{60}\$.
+Both numbers share a GCF of **12**, so:
+
+$$
+\frac{36 \div 12}{60 \div 12} = \frac{3}{5}
+$$
+
+You’ve **simplified** the fraction — but it still means the same thing.
+
+This is called an **equivalent fraction**.
+
+:::{.callout-caution title="Why Not Just Divide by 2?"}
+You *can* simplify step-by-step, but using the **GCF** gets the job done in **one move**.
+:::
+
+---
+
+### 1.3.4 – Real-World Example
+
+Suppose you’re planning gift bags.
+You have **60 pencils** and **36 erasers** and want to make **identical bags** with no extras.
+
+What’s the most you can make?
+
+> Find the GCF of 60 and 36 → **12**
+
+You can make **12 bags**, each with:
+60 ÷ 12 = 5 pencils
+36 ÷ 12 = 3 erasers
+
+---
+
+## ✍️ Practice On Your Own
+
+**GCF Practice**
+
+1. List the factors of:
+
+   a. 20 and 30
+   b. 36 and 45
+   c. 18 and 48
+
+2. Find the GCF of:
+
+   a. 20 and 30
+   b. 36 and 45
+   c. 18 and 48
+
+---
+
+**Simplifying Fractions**
+
+3. Simplify each fraction using the GCF:
+
+   a. \$\frac{18}{27}\$
+   b. \$\frac{50}{100}\$
+   c. \$\frac{14}{49}\$
+   d. \$\frac{48}{60}\$
+
+4. Create your own fraction and simplify it.
+
+---
+
+**Word Problem**
+
+5. You have 72 juice boxes and 60 cookies. You want to create snack packs with the **same number** of each, using **everything**.
+
+   a. What’s the greatest number of snack packs you can make?
+   b. How many juice boxes and cookies go in each?
+
+---
+
+::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+
+**1. Factors**
+
+a. 20: 1, 2, 4, 5, 10, 20
+30: 1, 2, 3, 5, 6, 10, 15, 30
+b. 36: 1, 2, 3, 4, 6, 9, 12, 18, 36
+45: 1, 3, 5, 9, 15, 45
+c. 18: 1, 2, 3, 6, 9, 18
+48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48
+
+---
+
+**2. GCFs**
+
+a. GCF(20, 30) = 10
+b. GCF(36, 45) = 9
+c. GCF(18, 48) = 6
+
+---
+
+**3. Simplified Fractions**
+
+a. \$\frac{18}{27} = \frac{2}{3}\$
+b. \$\frac{50}{100} = \frac{1}{2}\$
+c. \$\frac{14}{49} = \frac{2}{7}\$
+d. \$\frac{48}{60} = \frac{4}{5}\$
+
+---
+
+**5. Word Problem**
+
+a. GCF(72, 60) = **12**
+b. Each snack pack has:
+72 ÷ 12 = 6 juice boxes
+60 ÷ 12 = 5 cookies
+
+:::

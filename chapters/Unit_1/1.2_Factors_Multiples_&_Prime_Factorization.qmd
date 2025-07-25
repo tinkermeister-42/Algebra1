@@ -1,0 +1,209 @@
+# 1.2 – Factors, Multiples & Prime Factorization {.unnumbered}
+
+Have you ever tried to split something up evenly — like dividing pizza slices or organizing teams? That’s really what **factors** are all about: breaking numbers into equal parts.
+
+In this lesson, you’ll learn how to identify factors and multiples — and how to break numbers into their prime building blocks using a tool called a factor tree. This may sound simple, but it is one of the most important tools you'll use later when solving equations and factoring algebraic expressions.
+
+::: {.callout-note icon=false title="🎯 Objectives"}
+- [ ] Identify factors and multiples of whole numbers
+- [ ] Determine whether a number is prime or composite
+- [ ] Use factor trees to find the prime factorization of a number
+:::
+
+::: {.callout-note icon=false title="📚 Vocabulary"}
+{{< glink composite number >}}, {{< glink factor >}}, {{< glink factor tree >}}, {{< glink multiple >}}, {{< glink prime factorization >}}, {{< glink prime number >}}
+:::
+
+## 🔥 Warm-Up
+
+1. List all the whole-number factors of 12.
+
+2. What’s a multiple of 7 that is less than 50?
+
+3. Is 11 a prime number? How do you know?
+
+---
+
+## 👥 Learn Together
+
+### 1.2.1 – What Are Factors?
+
+A {{< glink factor >}} of a number is a whole number that divides it evenly — with no {{< glink remainder >}}.
+
+**Example:**
+
+The factors of 12 are: 1, 2, 3, 4, 6 and 2
+
+That’s because:
+
+1 × 12 = 12
+
+2 × 6 = 12
+
+3 × 4 = 12
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can a number have just one factor?"}
+Only one number does: **1**. It only has itself as a factor. That’s why it’s not considered prime *or* composite!
+:::
+
+---
+
+### 1.2.2 – What Are Multiples?
+
+A {{< glink multiple >}} is what you get when you multiply a number by 1, 2, 3, 4…
+
+**Example:**
+
+Here are the first few multiples of 5: 
+
+$5, 10, 15, 20, 25, 30, ...$
+
+Multiples are useful when finding common denominators or common multiples later in algebra.
+
+**Where have we seen this before?**
+
+Multiples show up all over the place. When you skip count, you are using multiples. In the previous lesson, we used multiples to constuct number lines! 
+
+**Example:**
+
+Here is a number line that shows multiples of three.
+![](/images/Unit_1/Lesson_2/skip_count_by_3.png)
+---
+
+### 1.2.3 – Prime vs. Composite
+
+A **prime number** has only 2 factors: 1 and itself.
+Examples: 2, 3, 5, 7, 11, 13...
+
+A **composite number** has more than 2 factors.
+Examples: 4, 6, 8, 9, 10...
+
+:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+Prime numbers play a big role in **encryption**, which keeps your data safe when you shop or message online.
+:::
+
+---
+
+### 1.2.4 – Prime Factorization and Factor Trees
+
+Every number can be written as a **product of prime numbers**.
+
+Let’s try 36.
+
+Start with any two factors:
+36
+↙   ↘
+6     6
+↙ ↘   ↙ ↘
+2  3   2  3
+
+So the prime factorization is:
+**2 × 2 × 3 × 3** or **2² × 3²**
+
+This is called a **factor tree**. It doesn’t matter how you split the number at the start — you’ll always end up with the same prime pieces.
+
+---
+
+### 1.2.5 – Why Do Prime Factors Matter?
+
+Later on, you'll use prime factorization to:
+
+* Simplify fractions
+* Find the **greatest common factor**
+* Factor algebraic expressions
+* Solve equations
+
+So this isn't just about numbers — it's about developing tools that will unlock Algebra.
+
+---
+
+## ✍️ Practice On Your Own
+
+**Factors & Multiples**
+
+1. List all the factors of:
+
+   a. 16
+   b. 18
+   c. 27
+
+2. List the first 5 multiples of:
+
+   a. 4
+   b. 9
+   c. 12
+
+---
+
+**Prime or Composite?**
+
+3. Label each number as **prime**, **composite**, or **neither**:
+   a. 7
+   b. 15
+   c. 1
+   d. 19
+   e. 21
+
+---
+
+**Factor Trees & Prime Factorization**
+
+4. Use a factor tree to find the prime factorization of:
+
+   a. 24
+   b. 60
+   c. 100
+   d. 81
+   e. 72
+
+---
+
+**Challenge**
+
+5. Can two different numbers have the same prime factorization? Why or why not?
+
+---
+
+::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+
+**1. Factors**
+
+a. 1, 2, 4, 8, 16
+b. 1, 2, 3, 6, 9, 18
+c. 1, 3, 9, 27
+
+---
+
+**2. Multiples**
+
+a. 4, 8, 12, 16, 20
+b. 9, 18, 27, 36, 45
+c. 12, 24, 36, 48, 60
+
+---
+
+**3. Prime or Composite**
+
+a. Prime
+b. Composite
+c. Neither
+d. Prime
+e. Composite
+
+---
+
+**4. Prime Factorization**
+
+a. 2 × 2 × 2 × 3 = 2³ × 3
+b. 2 × 2 × 3 × 5 = 2² × 3 × 5
+c. 2 × 2 × 5 × 5 = 2² × 5²
+d. 3 × 3 × 3 × 3 = 3⁴
+e. 2 × 2 × 2 × 3 × 3 = 2³ × 3²
+
+---
+
+**5. Challenge**
+
+> No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
+
+:::

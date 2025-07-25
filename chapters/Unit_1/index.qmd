@@ -1,0 +1,44 @@
+# Introduction {.unnumbered}
+
+Welcome to Unit 1! In this unit, we’ll build the foundation you need to succeed in Algebra. Think of this as preparing your math toolkit.
+
+You’ll explore integers, factors, fractions, and the rules of simplification. These skills are the building blocks that will help you solve more complex problems with confidence — especially when working with expressions and equations in later units.
+
+---
+
+## What You’ll Learn
+
+By the end of this unit, you’ll be able to:
+
+* Work with positive and negative numbers on a number line
+* Use factor trees to find prime factorizations
+* Identify and use the greatest common factor (GCF)
+* Convert between fractions, decimals, and percents
+* Multiply, divide, and compare fractions
+* Follow the correct order of operations to simplify expressions
+
+---
+
+## Topics in This Unit
+
+[**Integers & Number Lines**](1.1_Integers_&_Number_Lines)
+Understand and use positive and negative numbers, and how to place them on a number line.
+
+[**Factors, Multiples & Prime Factorization**](1.2_Factors,_Multiples_&_Prime_Factorization)
+Break numbers into their prime building blocks using factor trees.
+
+[**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions)
+Use prime factorization to find the GCF and simplify fractions to their simplest form.
+
+[**Fractions, Decimals & Percents**](1.4_Fractions,_Decimals_&_Percents)
+Convert between different number forms and apply them in real-world problems.
+
+[**Multiply, Divide & Compare Fractions**](1.5_Multiply,_Divide_&_Compare_Fractions)
+Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.
+
+[**Order of Operations**](1.6_Order_of_Operations)
+Follow the rules (PEMDAS) to simplify numeric expressions with integers and fractions.
+
+---
+
+Let’s build those Algebra muscles — you’ll need them for everything that follows!

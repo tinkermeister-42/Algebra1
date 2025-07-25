@@ -1,0 +1,195 @@
+# 1.4 – Fractions, Decimals & Percents {.unnumbered}
+
+Did you know that ½, 0.5, and 50% are all the same amount?
+
+In real life, we use **fractions**, **decimals**, and **percents** to describe parts of a whole — whether it's sale prices, test scores, or how much of a task is finished.
+
+In this lesson, you’ll learn how to convert between these forms and use them in real-world problems. Being able to move between them will make you faster, more flexible, and more confident in math.
+
+:::{.callout-note icon=false title="🎯 Objectives"}
+- [ ] Convert between fractions, decimals, and percents
+- [ ] Use benchmark values to estimate and reason
+- [ ] Solve real-world problems involving these number forms
+:::
+
+::: {.callout-note icon=false title="📚 Vocabulary"}
+{{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}, {{< glink equivalent >}}, {{< glink benchmark >}}, {{< glink ratio >}}
+:::
+
+## 🔥 Warm-Up
+
+1. What is ½ as a decimal? As a percent?
+
+2. Which is more: 0.75 or 2⁄3?
+
+3. What percent is the same as 3⁄4?
+
+---
+
+## 👥 Learn Together
+
+### 1.4.1 – What Are These Numbers Really Saying?
+
+All three number types describe a **part of a whole**:
+
+| Fraction | Decimal | Percent |
+| -------- | ------- | ------- |
+| ½        | 0.5     | 50%     |
+| ¼        | 0.25    | 25%     |
+| ¾        | 0.75    | 75%     |
+| 1⁄10     | 0.1     | 10%     |
+
+> ✔ They look different, but they mean the same thing.
+
+---
+
+### 1.4.2 – Converting Between Forms
+
+#### Fraction → Decimal
+
+Divide the top by the bottom
+Example: 3⁄4 → 3 ÷ 4 = **0.75**
+
+#### Decimal → Percent
+
+Move the decimal two places to the right (×100)
+0.75 → **75%**
+
+#### Percent → Decimal
+
+Move the decimal two places left (÷100)
+25% → **0.25**
+
+#### Decimal → Fraction
+
+Say the number out loud
+0.6 = “six tenths” = 6⁄10 → simplify to **3⁄5**
+
+---
+
+### 1.4.3 – Benchmarks Help You Think Fast
+
+These values come up a lot — **know them by heart**:
+
+| Fraction | Decimal | Percent |
+| -------- | ------- | ------- |
+| ½        | 0.5     | 50%     |
+| ⅓        | 0.333…  | \~33%   |
+| ¼        | 0.25    | 25%     |
+| ¾        | 0.75    | 75%     |
+| 1⁄5      | 0.2     | 20%     |
+
+If you can picture these in your head, you'll be able to **estimate, compare, and calculate faster.**
+
+---
+
+### 1.4.4 – Real-Life Uses
+
+You’ll see these forms all the time:
+
+* **Shopping**: 20% off = pay 80% of the price
+* **Grades**: 17 out of 20 = 85%
+* **Weather**: 30% chance of rain
+* **Data**: 40% of students passed = 4⁄10 = 0.4
+
+:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+A store is having a 25% off sale. That means you only pay 75% of the price.
+If a jacket costs \$60, then:
+
+60 × 0.75 = \$45 → That’s your sale price.
+:::
+
+---
+
+## ✍️ Practice On Your Own
+
+**Conversions**
+
+1. Convert the following:
+
+   a. ⅘ → decimal → percent
+   b. 0.3 → fraction → percent
+   c. 12.5% → decimal → fraction
+   d. ⅛ → decimal (rounded) → percent (rounded)
+
+---
+
+**Real-World Problems**
+
+2. You scored 18 out of 20 on a quiz. What is your:
+
+   a. Fraction score
+   b. Decimal score
+   c. Percent score
+
+3. A survey says 0.6 of people prefer vanilla. What is this as a:
+
+   a. Fraction
+   b. Percent
+
+4. You get 30% off a \$50 pair of shoes. What do you pay?
+
+---
+
+**Benchmarks & Estimation**
+
+5. Which is bigger?
+   a. ⅗ or 60%
+   b. ⅓ or 0.4
+   c. 70% or ⅔
+
+6. Estimate whether each is closer to 0%, 25%, 50%, 75%, or 100%:
+   a. 0.68
+   b. 9⁄10
+   c. 0.22
+
+---
+
+::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+
+**1. Conversions**
+
+a. ⅘ → 0.8 → 80%
+b. 0.3 → 3⁄10 → 30%
+c. 12.5% → 0.125 → 1⁄8
+d. ⅛ → 0.125 → 12.5%
+
+---
+
+**2. Quiz Score**
+
+a. 18⁄20 → 9⁄10
+b. 0.9
+c. 90%
+
+---
+
+**3. Survey**
+
+a. 0.6 = 3⁄5
+b. 60%
+
+---
+
+**4. Discount**
+
+30% of 50 = 0.30 × 50 = 15
+You pay: 50 − 15 = **\$35**
+
+---
+
+**5. Compare**
+
+a. Equal (⅗ = 60%)
+b. 0.4 is bigger
+c. 70% is slightly more than ⅔
+
+---
+
+**6. Estimate**
+
+a. \~75%
+b. \~100%
+c. \~25%
+
+:::
