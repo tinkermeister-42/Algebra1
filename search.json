@@ -24,7 +24,7 @@
     "href": "chapters/Unit_1/index.html",
     "title": "Introduction",
     "section": "",
-    "text": "What You’ll Learn\nWelcome to Unit 1! In this unit, we’ll build the foundation you need to succeed in Algebra. Think of this as preparing your math toolkit.\nYou’ll explore integers, factors, fractions, and how to evaluate expressions. These skills are the building blocks that will help you solve more complex problems with confidence.\nBy the end of this unit, you’ll be able to:",
+    "text": "What You’ll Learn\nWelcome to Unit 1! In this unit, we’ll build the foundation you need to succeed in Algebra. Think of this as preparing your math toolkit.\nYou’ll explore integers, factors, fractions, and the rules of simplification. These skills are the building blocks that will help you solve more complex problems with confidence — especially when working with expressions and equations in later units.\nBy the end of this unit, you’ll be able to:",
     "crumbs": [
       "Unit 1: Foundations",
       "Introduction"
@@ -35,7 +35,7 @@
     "href": "chapters/Unit_1/index.html#what-youll-learn",
     "title": "Introduction",
     "section": "",
-    "text": "Work with positive and negative numbers on a number line\nUse factor trees to find prime factorizations\nIdentify and use the greatest common factor (GCF)\nSimplify and convert fractions and mixed numbers\nFollow the correct order of operations\nEvaluate expressions by substituting values\nUnderstand input-output tables and basic functions",
+    "text": "Work with positive and negative numbers on a number line\nUse factor trees to find prime factorizations\nIdentify and use the greatest common factor (GCF)\nConvert between fractions, decimals, and percents\nMultiply, divide, and compare fractions\nFollow the correct order of operations to simplify expressions",
     "crumbs": [
       "Unit 1: Foundations",
       "Introduction"
@@ -46,7 +46,7 @@
     "href": "chapters/Unit_1/index.html#topics-in-this-unit",
     "title": "Introduction",
     "section": "Topics in This Unit",
-    "text": "Topics in This Unit\nIntegers & Number Lines\nUnderstand and use positive and negative numbers, and how to place them on a number line.\nFactor Trees & Prime Factorization\nBreak numbers into prime factors and draw factor trees to visualize.\nGreatest Common Factor (GCF)\nUse GCF to simplify expressions and understand relationships between numbers.\nMultiplication & Division Fluency\nPractice and strengthen multiplication and division skills.\nFractions: Meaning & Models\nVisualize and interpret fractions as parts of a whole or group.\nSimplifying Fractions Using GCF\nReduce fractions to simplest form using the GCF.\nMixed Numbers & Improper Fractions\nConvert and understand the relationship between mixed and improper fractions.\nOrder of Operations\nUse PEMDAS to simplify expressions accurately.\nEvaluating Expressions\nSubstitute values into algebraic expressions and simplify.\nInput-Output Machines\nExplore how functions assign outputs to inputs and recognize simple rules.\n\nLet’s build those Algebra muscles — you’ll need them for everything that follows!",
+    "text": "Topics in This Unit\nIntegers & Number Lines Understand and use positive and negative numbers, and how to place them on a number line.\nFactors, Multiples & Prime Factorization Break numbers into their prime building blocks using factor trees.\nGCF & Simplifying Fractions Use prime factorization to find the GCF and simplify fractions to their simplest form.\nFractions, Decimals & Percents Convert between different number forms and apply them in real-world problems.\nMultiply, Divide & Compare Fractions Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.\nOrder of Operations Follow the rules (PEMDAS) to simplify numeric expressions with integers and fractions.\n\nLet’s build those Algebra muscles — you’ll need them for everything that follows!",
     "crumbs": [
       "Unit 1: Foundations",
       "Introduction"
@@ -97,234 +97,223 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html",
-    "href": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html",
-    "title": "1.2 Factor Trees & Prime Factorization",
+    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html",
+    "href": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html",
+    "title": "1.2 – Factors, Multiples & Prime Factorization",
     "section": "",
-    "text": "🔥 Warm-Up\nThis lesson explores how to break numbers down into their prime components using factor trees. Understanding prime factorization is key for simplifying fractions and finding common factors.\nComing soon.",
+    "text": "🔥 Warm-Up\nHave you ever tried to split something up evenly — like dividing pizza slices or organizing teams? That’s really what factors are all about: breaking numbers into equal parts.\nIn this lesson, you’ll learn how to identify factors and multiples — and how to break numbers into their prime building blocks using a tool called a factor tree. This may sound simple, but it is one of the most important tools you’ll use later when solving equations and factoring algebraic expressions.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.2 Factor Trees & Prime Factorization"
+      "1.2 – Factors, Multiples & Prime Factorization"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html#learn-together",
-    "href": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html#learn-together",
-    "title": "1.2 Factor Trees & Prime Factorization",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.2 Factor Trees & Prime Factorization"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.html#practice-on-your-own",
-    "title": "1.2 Factor Trees & Prime Factorization",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.2 Factor Trees & Prime Factorization"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html",
-    "href": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html",
-    "title": "1.3 Greatest Common Factor (GCF)",
+    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#warm-up",
+    "href": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#warm-up",
+    "title": "1.2 – Factors, Multiples & Prime Factorization",
     "section": "",
-    "text": "🔥 Warm-Up\nYou’ll learn how to find the GCF of two or more numbers using prime factorization. GCF is important for simplifying fractions and solving real-world problems involving multiples.\nComing soon.",
+    "text": "List all the whole-number factors of 12.\nWhat’s a multiple of 7 that is less than 50?\nIs 11 a prime number? How do you know?",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.3 Greatest Common Factor (GCF)"
+      "1.2 – Factors, Multiples & Prime Factorization"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html#learn-together",
-    "href": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html#learn-together",
-    "title": "1.3 Greatest Common Factor (GCF)",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
+    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#learn-together",
+    "href": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#learn-together",
+    "title": "1.2 – Factors, Multiples & Prime Factorization",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.2.1 – What Are Factors?\nA factor of a number is a whole number that divides it evenly — with no remainder.\nExample:\nThe factors of 12 are: 1, 2, 3, 4, 6 and 2\nThat’s because:\n1 × 12 = 12\n2 × 6 = 12\n3 × 4 = 12\n\n\n\n\n\n\n🧠 Can a number have just one factor?\n\n\n\n\n\nOnly one number does: 1. It only has itself as a factor. That’s why it’s not considered prime or composite!\n\n\n\n\n\n\n1.2.2 – What Are Multiples?\nA multiple is what you get when you multiply a number by 1, 2, 3, 4…\nExample:\nHere are the first few multiples of 5:\n\\(5, 10, 15, 20, 25, 30, ...\\)\nMultiples are useful when finding common denominators or common multiples later in algebra.\nWhere have we seen this before?\nMultiples show up all over the place. When you skip count, you are using multiples. In the previous lesson, we used multiples to constuct number lines!\nExample:\nHere is a number line that shows multiples of three.  —\n\n\n1.2.3 – Prime vs. Composite\nA prime number has only 2 factors: 1 and itself. Examples: 2, 3, 5, 7, 11, 13…\nA composite number has more than 2 factors. Examples: 4, 6, 8, 9, 10…\n\n\n\n\n\n\n🌍 In the Real World\n\n\n\nPrime numbers play a big role in encryption, which keeps your data safe when you shop or message online.\n\n\n\n\n\n1.2.4 – Prime Factorization and Factor Trees\nEvery number can be written as a product of prime numbers.\nLet’s try 36.\nStart with any two factors: 36 ↙ ↘ 6 6 ↙ ↘ ↙ ↘ 2 3 2 3\nSo the prime factorization is: 2 × 2 × 3 × 3 or 2² × 3²\nThis is called a factor tree. It doesn’t matter how you split the number at the start — you’ll always end up with the same prime pieces.\n\n\n\n1.2.5 – Why Do Prime Factors Matter?\nLater on, you’ll use prime factorization to:\n\nSimplify fractions\nFind the greatest common factor\nFactor algebraic expressions\nSolve equations\n\nSo this isn’t just about numbers — it’s about developing tools that will unlock Algebra.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.3 Greatest Common Factor (GCF)"
+      "1.2 – Factors, Multiples & Prime Factorization"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).html#practice-on-your-own",
-    "title": "1.3 Greatest Common Factor (GCF)",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
+    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#practice-on-your-own",
+    "href": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html#practice-on-your-own",
+    "title": "1.2 – Factors, Multiples & Prime Factorization",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\nFactors & Multiples\n\nList all the factors of:\n\n16\n18\n27\n\nList the first 5 multiples of:\n\n4\n9\n12\n\n\n\nPrime or Composite?\n\nLabel each number as prime, composite, or neither:\n\n7\n15\n1\n19\n21\n\n\n\nFactor Trees & Prime Factorization\n\nUse a factor tree to find the prime factorization of:\n\n24\n60\n100\n81\n72\n\n\n\nChallenge\n\nCan two different numbers have the same prime factorization? Why or why not?\n\n\n\n\n\n\n\n\n🔑 Answer Key\n\n\n\n\n\n1. Factors\n\n1, 2, 4, 8, 16\n1, 2, 3, 6, 9, 18\n1, 3, 9, 27\n\n\n2. Multiples\n\n4, 8, 12, 16, 20\n9, 18, 27, 36, 45\n12, 24, 36, 48, 60\n\n\n3. Prime or Composite\n\nPrime\nComposite\nNeither\nPrime\nComposite\n\n\n4. Prime Factorization\n\n2 × 2 × 2 × 3 = 2³ × 3\n2 × 2 × 3 × 5 = 2² × 3 × 5\n2 × 2 × 5 × 5 = 2² × 5²\n3 × 3 × 3 × 3 = 3⁴\n2 × 2 × 2 × 3 × 3 = 2³ × 3²\n\n\n5. Challenge\n\nNo. Each number has a unique prime factorization. This is called the Fundamental Theorem of Arithmetic.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.3 Greatest Common Factor (GCF)"
+      "1.2 – Factors, Multiples & Prime Factorization"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html",
-    "href": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html",
-    "title": "1.4 Multiplication & Division Fluency",
+    "objectID": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html",
+    "href": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html",
+    "title": "1.3 – GCF & Simplifying Fractions",
     "section": "",
-    "text": "🔥 Warm-Up\nThis lesson builds speed and accuracy with multiplication and division. Being fluent in these operations will help with algebraic expressions later.\nComing soon.",
+    "text": "🔥 Warm-Up\nEver tried to share something fairly — like splitting snacks or organizing teams into equal groups? That’s the idea behind the greatest common factor, or GCF. It tells us how much we can evenly divide into two or more numbers.\nIn this lesson, you’ll learn how to use prime factorization to find the GCF, and how that can help us simplify fractions. These aren’t just number tricks — they help you write expressions in cleaner, simpler ways so they’re easier to work with.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.4 Multiplication & Division Fluency"
+      "1.3 – GCF & Simplifying Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html#learn-together",
-    "href": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html#learn-together",
-    "title": "1.4 Multiplication & Division Fluency",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.4 Multiplication & Division Fluency"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.html#practice-on-your-own",
-    "title": "1.4 Multiplication & Division Fluency",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.4 Multiplication & Division Fluency"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html",
-    "href": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html",
-    "title": "1.5 Fractions: Meaning & Models",
+    "objectID": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#warm-up",
+    "href": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#warm-up",
+    "title": "1.3 – GCF & Simplifying Fractions",
     "section": "",
-    "text": "🔥 Warm-Up\nLearn what fractions represent and how to model them visually. This lesson builds the foundational understanding needed for fraction operations.\nComing soon.",
+    "text": "List the prime factorization of:\n\n20\n45\n\nWhat’s the largest number that divides both 12 and 18 evenly?\nWrite a fraction equal to \\(\\frac{12}{20}\\) using smaller numbers.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.5 Fractions: Meaning & Models"
+      "1.3 – GCF & Simplifying Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html#learn-together",
-    "href": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html#learn-together",
-    "title": "1.5 Fractions: Meaning & Models",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
+    "objectID": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#learn-together",
+    "href": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#learn-together",
+    "title": "1.3 – GCF & Simplifying Fractions",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.3.1 – What Is the Greatest Common Factor?\nThe greatest common factor (GCF) is the biggest number that divides evenly into two or more numbers.\nLet’s look at 18 and 24.\nFactors of 18: 1, 2, 3, 6, 9, 18 Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24 The GCF is 6 — it’s the largest factor they both share.\n\n\n\n1.3.2 – Use Prime Factorization to Find the GCF\nWe can also find the GCF using prime factorization.\nLet’s try 36 and 60.\nPrime factorization: 36 = 2 × 2 × 3 × 3 60 = 2 × 2 × 3 × 5\nThe GCF is the product of the shared prime factors: 2 × 2 × 3 = 12\nThis method works even when the numbers are large or hard to list out.\n\n\n\n1.3.3 – Simplifying Fractions with the GCF\nLet’s say you have the fraction \\(\\frac{36}{60}\\). Both numbers share a GCF of 12, so:\n\\[\n\\frac{36 \\div 12}{60 \\div 12} = \\frac{3}{5}\n\\]\nYou’ve simplified the fraction — but it still means the same thing.\nThis is called an equivalent fraction.\n\n\n\n\n\n\nWhy Not Just Divide by 2?\n\n\n\nYou can simplify step-by-step, but using the GCF gets the job done in one move.\n\n\n\n\n\n1.3.4 – Real-World Example\nSuppose you’re planning gift bags. You have 60 pencils and 36 erasers and want to make identical bags with no extras.\nWhat’s the most you can make?\n\nFind the GCF of 60 and 36 → 12\n\nYou can make 12 bags, each with: 60 ÷ 12 = 5 pencils 36 ÷ 12 = 3 erasers",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.5 Fractions: Meaning & Models"
+      "1.3 – GCF & Simplifying Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.html#practice-on-your-own",
-    "title": "1.5 Fractions: Meaning & Models",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
+    "objectID": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#practice-on-your-own",
+    "href": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html#practice-on-your-own",
+    "title": "1.3 – GCF & Simplifying Fractions",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\nGCF Practice\n\nList the factors of:\n\n20 and 30\n36 and 45\n18 and 48\n\nFind the GCF of:\n\n20 and 30\n36 and 45\n18 and 48\n\n\n\nSimplifying Fractions\n\nSimplify each fraction using the GCF:\n\n\\(\\frac{18}{27}\\)\n\\(\\frac{50}{100}\\)\n\\(\\frac{14}{49}\\)\n\\(\\frac{48}{60}\\)\n\nCreate your own fraction and simplify it.\n\n\nWord Problem\n\nYou have 72 juice boxes and 60 cookies. You want to create snack packs with the same number of each, using everything.\n\nWhat’s the greatest number of snack packs you can make?\nHow many juice boxes and cookies go in each?\n\n\n\n\n\n\n\n\n\n🔑 Answer Key\n\n\n\n\n\n1. Factors\n\n20: 1, 2, 4, 5, 10, 20 30: 1, 2, 3, 5, 6, 10, 15, 30\n36: 1, 2, 3, 4, 6, 9, 12, 18, 36 45: 1, 3, 5, 9, 15, 45\n18: 1, 2, 3, 6, 9, 18 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48\n\n\n2. GCFs\n\nGCF(20, 30) = 10\nGCF(36, 45) = 9\nGCF(18, 48) = 6\n\n\n3. Simplified Fractions\n\n\\(\\frac{18}{27} = \\frac{2}{3}\\)\n\\(\\frac{50}{100} = \\frac{1}{2}\\)\n\\(\\frac{14}{49} = \\frac{2}{7}\\)\n\\(\\frac{48}{60} = \\frac{4}{5}\\)\n\n\n5. Word Problem\n\nGCF(72, 60) = 12\nEach snack pack has: 72 ÷ 12 = 6 juice boxes 60 ÷ 12 = 5 cookies",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.5 Fractions: Meaning & Models"
+      "1.3 – GCF & Simplifying Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html",
-    "href": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html",
-    "title": "1.6 Simplifying Fractions Using GCF",
+    "objectID": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html",
+    "href": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html",
+    "title": "1.4 – Fractions, Decimals & Percents",
     "section": "",
-    "text": "🔥 Warm-Up\nThis lesson teaches how to simplify fractions by dividing the numerator and denominator by their GCF.\nComing soon.",
+    "text": "🔥 Warm-Up\nDid you know that ½, 0.5, and 50% are all the same amount?\nIn real life, we use fractions, decimals, and percents to describe parts of a whole — whether it’s sale prices, test scores, or how much of a task is finished.\nIn this lesson, you’ll learn how to convert between these forms and use them in real-world problems. Being able to move between them will make you faster, more flexible, and more confident in math.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.6 Simplifying Fractions Using GCF"
+      "1.4 – Fractions, Decimals & Percents"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html#learn-together",
-    "href": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html#learn-together",
-    "title": "1.6 Simplifying Fractions Using GCF",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.6 Simplifying Fractions Using GCF"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.html#practice-on-your-own",
-    "title": "1.6 Simplifying Fractions Using GCF",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
-    "crumbs": [
-      "Unit 1: Foundations",
-      "1.6 Simplifying Fractions Using GCF"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html",
-    "href": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html",
-    "title": "1.7 Mixed Numbers & Improper Fractions",
+    "objectID": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#warm-up",
+    "href": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#warm-up",
+    "title": "1.4 – Fractions, Decimals & Percents",
     "section": "",
-    "text": "🔥 Warm-Up\nYou’ll learn how to convert between mixed numbers and improper fractions, and why both forms are useful.\nComing soon.",
+    "text": "What is ½ as a decimal? As a percent?\nWhich is more: 0.75 or 2⁄3?\nWhat percent is the same as 3⁄4?",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.7 Mixed Numbers & Improper Fractions"
+      "1.4 – Fractions, Decimals & Percents"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html#learn-together",
-    "href": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html#learn-together",
-    "title": "1.7 Mixed Numbers & Improper Fractions",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
+    "objectID": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#learn-together",
+    "href": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#learn-together",
+    "title": "1.4 – Fractions, Decimals & Percents",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.4.1 – What Are These Numbers Really Saying?\nAll three number types describe a part of a whole:\n\n\n\nFraction\nDecimal\nPercent\n\n\n\n\n½\n0.5\n50%\n\n\n¼\n0.25\n25%\n\n\n¾\n0.75\n75%\n\n\n1⁄10\n0.1\n10%\n\n\n\n\n✔ They look different, but they mean the same thing.\n\n\n\n\n1.4.2 – Converting Between Forms\n\nFraction → Decimal\nDivide the top by the bottom Example: 3⁄4 → 3 ÷ 4 = 0.75\n\n\nDecimal → Percent\nMove the decimal two places to the right (×100) 0.75 → 75%\n\n\nPercent → Decimal\nMove the decimal two places left (÷100) 25% → 0.25\n\n\nDecimal → Fraction\nSay the number out loud 0.6 = “six tenths” = 6⁄10 → simplify to 3⁄5\n\n\n\n\n1.4.3 – Benchmarks Help You Think Fast\nThese values come up a lot — know them by heart:\n\n\n\nFraction\nDecimal\nPercent\n\n\n\n\n½\n0.5\n50%\n\n\n⅓\n0.333…\n~33%\n\n\n¼\n0.25\n25%\n\n\n¾\n0.75\n75%\n\n\n1⁄5\n0.2\n20%\n\n\n\nIf you can picture these in your head, you’ll be able to estimate, compare, and calculate faster.\n\n\n\n1.4.4 – Real-Life Uses\nYou’ll see these forms all the time:\n\nShopping: 20% off = pay 80% of the price\nGrades: 17 out of 20 = 85%\nWeather: 30% chance of rain\nData: 40% of students passed = 4⁄10 = 0.4\n\n\n\n\n\n\n\n🌍 In the Real World\n\n\n\nA store is having a 25% off sale. That means you only pay 75% of the price. If a jacket costs $60, then:\n60 × 0.75 = $45 → That’s your sale price.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.7 Mixed Numbers & Improper Fractions"
+      "1.4 – Fractions, Decimals & Percents"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.html#practice-on-your-own",
-    "title": "1.7 Mixed Numbers & Improper Fractions",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
+    "objectID": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#practice-on-your-own",
+    "href": "chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.html#practice-on-your-own",
+    "title": "1.4 – Fractions, Decimals & Percents",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\nConversions\n\nConvert the following:\n\n⅘ → decimal → percent\n0.3 → fraction → percent\n12.5% → decimal → fraction\n⅛ → decimal (rounded) → percent (rounded)\n\n\n\nReal-World Problems\n\nYou scored 18 out of 20 on a quiz. What is your:\n\nFraction score\nDecimal score\nPercent score\n\nA survey says 0.6 of people prefer vanilla. What is this as a:\n\nFraction\nPercent\n\nYou get 30% off a $50 pair of shoes. What do you pay?\n\n\nBenchmarks & Estimation\n\nWhich is bigger?\n\n⅗ or 60%\n⅓ or 0.4\n70% or ⅔\n\nEstimate whether each is closer to 0%, 25%, 50%, 75%, or 100%:\n\n0.68\n9⁄10\n0.22\n\n\n\n\n\n\n\n\n\n🔑 Answer Key\n\n\n\n\n\n1. Conversions\n\n⅘ → 0.8 → 80%\n0.3 → 3⁄10 → 30%\n12.5% → 0.125 → 1⁄8\n⅛ → 0.125 → 12.5%\n\n\n2. Quiz Score\n\n18⁄20 → 9⁄10\n0.9\n90%\n\n\n3. Survey\n\n0.6 = 3⁄5\n60%\n\n\n4. Discount\n30% of 50 = 0.30 × 50 = 15 You pay: 50 − 15 = $35\n\n5. Compare\n\nEqual (⅗ = 60%)\n0.4 is bigger\n70% is slightly more than ⅔\n\n\n6. Estimate\n\n~75%\n~100%\n~25%",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.7 Mixed Numbers & Improper Fractions"
+      "1.4 – Fractions, Decimals & Percents"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.8_Order_of_Operations.html",
-    "href": "chapters/Unit_1/1.8_Order_of_Operations.html",
-    "title": "1.8 Order of Operations",
+    "objectID": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html",
+    "href": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html",
+    "title": "1.5 – Multiply, Divide & Compare Fractions",
     "section": "",
-    "text": "🔥 Warm-Up\nIn this lesson, we’ll explore how to simplify expressions using the correct order of operations (PEMDAS).\nComing soon.",
+    "text": "🔥 Warm-Up\nIn Algebra, you’ll work with fractions all the time — but not usually adding and subtracting them. What matters most is knowing how to multiply, divide, and simplify fractions to make expressions easier to work with.\nIn this lesson, you’ll learn how to multiply and divide fractions with confidence, and how to compare them logically. These are skills you’ll use throughout Algebra — especially when solving equations and simplifying rational expressions.",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.8 Order of Operations"
+      "1.5 – Multiply, Divide & Compare Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.8_Order_of_Operations.html#learn-together",
-    "href": "chapters/Unit_1/1.8_Order_of_Operations.html#learn-together",
-    "title": "1.8 Order of Operations",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
+    "objectID": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#warm-up",
+    "href": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#warm-up",
+    "title": "1.5 – Multiply, Divide & Compare Fractions",
+    "section": "",
+    "text": "What’s ⅔ of 12?\nWhat’s the reciprocal of 4⁄5?\nIs ¾ greater than ⅔? How do you know?",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.8 Order of Operations"
+      "1.5 – Multiply, Divide & Compare Fractions"
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.8_Order_of_Operations.html#practice-on-your-own",
-    "href": "chapters/Unit_1/1.8_Order_of_Operations.html#practice-on-your-own",
-    "title": "1.8 Order of Operations",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
+    "objectID": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#learn-together",
+    "href": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#learn-together",
+    "title": "1.5 – Multiply, Divide & Compare Fractions",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.5.1 – Multiplying Fractions\nMultiply straight across:\nNumerators × Numerators Denominators × Denominators\nExample:\n\\[\n\\frac{2}{3} \\times \\frac{5}{6} = \\frac{2 \\times 5}{3 \\times 6} = \\frac{10}{18}\n\\]\nSimplify: 10⁄18 → 5⁄9\nIf possible, simplify before multiplying:\n\\[\n\\frac{4}{5} \\times \\frac{10}{12} = \\frac{2}{5} \\times \\frac{5}{6} = \\frac{2 \\times 5}{5 \\times 6} = \\frac{10}{30} = \\frac{1}{3}\n\\]\n\n\n\n1.5.2 – Multiplying Mixed Numbers\nStep 1: Convert to improper fractions Step 2: Multiply Step 3: Simplify if needed\nExample: 1½ × 2⁄3 → 1½ = 3⁄2 → 3⁄2 × 2⁄3 = 6⁄6 = 1\n\n\n\n1.5.3 – Dividing Fractions\nTo divide fractions, multiply by the reciprocal (flip the second fraction):\nExample:\n\\[\n\\frac{3}{4} \\div \\frac{2}{5} = \\frac{3}{4} \\times \\frac{5}{2} = \\frac{15}{8}\n\\]\nMixed number: 1⅞\n\n\n\n\n\n\nDon’t flip the first fraction!\n\n\n\nOnly flip the second fraction — the one you’re dividing by.\n\n\n\n\n\n1.5.4 – Comparing Fractions\n\nMethod 1: Use Benchmarks\nEstimate which is closer to ½, ⅔, or 1.\n\n\nMethod 2: Use Common Denominators\nCompare ⅔ and ¾ → ⅔ = 8⁄12 → ¾ = 9⁄12 ✔ So ¾ is greater.\n\n\nMethod 3: Cross Multiply\n\\[\n\\frac{3}{5} \\quad \\text{vs.} \\quad \\frac{2}{3} \\\\\n3 \\times 3 = 9 \\\\\n5 \\times 2 = 10 \\\\\n\\text{Since 10 &gt; 9, } \\frac{2}{3} &gt; \\frac{3}{5}\n\\]\n\n\n\n\n1.5.5 – Why This Matters in Algebra\nYou’ll use fraction multiplication and division when:\n\nSolving equations with fractional coefficients\nSimplifying rational expressions\nFinding slope\nWorking with proportions\n\n\n\n\n\n\n\n🌍 In the Real World\n\n\n\nYou’re painting a wall. The can says it covers ⅔ of a room. You buy 3 cans. How much will it cover?\n3 × ⅔ = 2 → Enough for 2 rooms",
     "crumbs": [
       "Unit 1: Foundations",
-      "1.8 Order of Operations"
+      "1.5 – Multiply, Divide & Compare Fractions"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#practice-on-your-own",
+    "href": "chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.html#practice-on-your-own",
+    "title": "1.5 – Multiply, Divide & Compare Fractions",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\nMultiplying Fractions\n\nMultiply:\n\n2⁄3 × 3⁄5\n4⁄7 × 14⁄15\n1½ × ⅘\n3⁄10 × 5⁄6\n\n\n\nDividing Fractions\n\nDivide:\n\n¾ ÷ ½\n2⁄5 ÷ 3⁄4\n1⅓ ÷ ⅔\n9⁄10 ÷ 3⁄5\n\n\n\nCompare the Fractions\n\nUse any method to compare. Write &gt;, &lt;, or =:\n\n⅔ __ 3⁄4\n3⁄5 __ 2⁄3\n5⁄6 __ 10⁄12\n7⁄10 __ 2⁄3\n\n\n\nChallenge\n\nA recipe uses ¾ cup of flour for one batch. You want to make 2½ batches. How much flour will you need?\nA board is 5⁄6 meter long. You cut it into 3 equal pieces. How long is each piece?\n\n\n\n\n\n\n\n\n🔑 Answer Key\n\n\n\n\n\n1. Multiplication\n\n6⁄15 = 2⁄5\n4⁄7 × 14⁄15 → cancel 7 & 14 → 4 × 2⁄1 × 15 = 8⁄15\n3⁄2 × 4⁄5 = 12⁄10 = 6⁄5 or 1⅕\n15⁄60 = 1⁄4\n\n\n2. Division\n\n¾ ÷ ½ = ¾ × 2⁄1 = 6⁄4 = 1½\n2⁄5 × 4⁄3 = 8⁄15\n4⁄3 ÷ 2⁄3 = 4⁄3 × 3⁄2 = 12⁄6 = 2\n9⁄10 ÷ 3⁄5 = 9⁄10 × 5⁄3 = 45⁄30 = 3⁄2 = 1½\n\n\n3. Comparisons\n\n⅔ &lt; ¾\n3⁄5 &lt; 2⁄3\n5⁄6 = 10⁄12\n7⁄10 &gt; 2⁄3\n\n\n4. Recipe\n¾ × 2½ = ¾ × 5⁄2 = 15⁄8 = 1⅞ cups\n5. Cutting the board\n5⁄6 ÷ 3 = 5⁄6 × 1⁄3 = 5⁄18 meter per piece",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.5 – Multiply, Divide & Compare Fractions"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.6_Order_of_Operations.html",
+    "href": "chapters/Unit_1/1.6_Order_of_Operations.html",
+    "title": "1.6 – Order of Operations",
+    "section": "",
+    "text": "🔥 Warm-Up\nWhat does this equal?\n\\[\n6 + 2 \\times 3\n\\]\nIf you said 24 — you’re not alone. But that’s not the correct answer. Math has rules for what to do first. These rules are called the order of operations, and they’re essential for simplifying expressions the right way.\nIn this lesson, you’ll learn to follow those rules consistently — even when negatives, fractions, and grouping are involved.",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.6 – Order of Operations"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.6_Order_of_Operations.html#warm-up",
+    "href": "chapters/Unit_1/1.6_Order_of_Operations.html#warm-up",
+    "title": "1.6 – Order of Operations",
+    "section": "",
+    "text": "Simplify: 3 + 6 × 2\nTrue or False: (4 + 3) × 2 = 4 + (3 × 2)\nWhat does ½ × (4 + 2) equal?",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.6 – Order of Operations"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.6_Order_of_Operations.html#learn-together",
+    "href": "chapters/Unit_1/1.6_Order_of_Operations.html#learn-together",
+    "title": "1.6 – Order of Operations",
+    "section": "👥 Learn Together",
+    "text": "👥 Learn Together\n\n1.6.1 – The Order Matters\nThe correct order is:\nP – Parentheses E – Exponents MD – Multiply or Divide (left to right) AS – Add or Subtract (left to right)\nThis is often remembered as PEMDAS.\n\n⚠️ Multiply doesn’t always come before divide. Same with add and subtract. You go left to right when they appear together.\n\n\n\n\n1.6.2 – Basic Examples\n\n\n\n\\[\n5 + 3 \\times 2 = 5 + 6 = 11\n\\]\n\n\n\n\\[\n(5 + 3) \\times 2 = 8 \\times 2 = 16\n\\]\n\n\n\n\\[\n8 - 12 ÷ 3 = 8 - 4 = 4\n\\]\n\n\n\n1.6.3 – Include Negatives & Fractions\nWatch how signs and simplification interact:\nExample 1:\n\\[\n-3 \\times (4 - 7) = -3 \\times (-3) = 9\n\\]\nExample 2:\n\\[\n\\frac{1}{2} \\times (6 + 2) = \\frac{1}{2} \\times 8 = 4\n\\]\nExample 3:\n\\[\n\\frac{3 + 5}{2} = \\frac{8}{2} = 4\n\\]\n\n\n\n\n\n\nBe careful with negatives!\n\n\n\n\\(-3^2\\) means \\(-(3^2) = -9\\) but \\((-3)^2 = 9\\)\n\n\n\n\n\n1.6.4 – Complex Expressions\nPut it all together:\nExample:\n\\[\n4 + \\frac{1}{2} \\times (6 - 2)^2\n\\]\nStep 1: Parentheses → (6 - 2) = 4 Step 2: Exponents → 4² = 16 Step 3: Multiply → ½ × 16 = 8 Step 4: Add → 4 + 8 = 12\n\n\n\n1.6.5 – Why This Matters in Algebra\nLater, expressions will include:\n\nVariables\nDistributive property\nCombining like terms\n\nIf students can’t simplify numbers correctly, the algebra won’t work either.\n\n\n\n\n\n\n🌍 In the Real World\n\n\n\nYou get a 25% off coupon and a $10 gift card. The item costs $40. Which should be applied first?\n25% of 40 = $10 → pay $30, then gift card = $20 But 40 - 10 = 30, then 25% off = $22.50\nThe order changes the result!",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.6 – Order of Operations"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_1/1.6_Order_of_Operations.html#practice-on-your-own",
+    "href": "chapters/Unit_1/1.6_Order_of_Operations.html#practice-on-your-own",
+    "title": "1.6 – Order of Operations",
+    "section": "✍️ Practice On Your Own",
+    "text": "✍️ Practice On Your Own\nBasic Order of Operations\n\nSimplify:\n\n4 + 6 × 2\n(4 + 6) × 2\n12 ÷ 4 × 3\n12 ÷ (4 × 3)\n\n\n\nInclude Negatives & Fractions\n\nSimplify:\n\n-2 × (3 - 5)\n½ × (8 + 4)\n(6 - 2)² ÷ 2\n(3 + 5) ÷ 2\n\n\n\nExpression Breakdown\n\nSimplify:\n\n5 + 2 × (6 - 1)\n(12 - 4)² ÷ 4\n10 - 3 × (2 + 1)\n¾ × (12 - 4)\n\n\n\nChallenge\n\nShow two different ways to simplify:\n\n\\[\n8 - 3 + 2\n\\]\nWhich is correct, and why?\n\nSimplify:\n\n\\[\n\\frac{4 + 6 \\div 3}{2}\n\\]\n\n\n\n\n\n\n\n🔑 Answer Key\n\n\n\n\n\n1. Basic\n\n16\n20\n9\n1\n\n\n2. Negatives/Fractions\n\n-2 × (-2) = 4\n½ × 12 = 6\n(4)² ÷ 2 = 16 ÷ 2 = 8\n8 ÷ 2 = 4\n\n\n3. Expressions\n\n5 + 2 × 5 = 5 + 10 = 15\n8² ÷ 4 = 64 ÷ 4 = 16\n10 - 3 × 3 = 10 - 9 = 1\n¾ × 8 = 6\n\n\n4. Challenge\n8 - 3 + 2 = (8 - 3) + 2 = 5 + 2 = 7 → This is correct because subtraction and addition go left to right\n\n5. Final Problem\n6 ÷ 3 = 2 → 4 + 2 = 6 → 6 ÷ 2 = 3",
+    "crumbs": [
+      "Unit 1: Foundations",
+      "1.6 – Order of Operations"
     ]
   },
   {
@@ -2070,7 +2059,7 @@
     "href": "glossary.html",
     "title": "📚 Glossary",
     "section": "",
-    "text": "absolute value\nThe distance a number is from zero on a number line, always expressed as a positive number or zero.\n\nExample: The absolute value of -7 is 7.\n\n\n\n\nAlgebra\nAlgebra is a branch of math that uses letters and symbols to represent numbers and relationships.\nInstead of just solving problems with numbers, algebra lets us write rules, patterns, and equations that work for many situations.\n\n\n\nCalculus\nCalculus is a branch of math that helps us understand change and motion.\nIt’s used to study things like how fast something is moving, how things are growing or shrinking, or how to find the exact area under a curve.\n\n\n\ngreater than\nA number is greater than (&gt;) another number if it is further to the right on the number line.\n\nExample \\(5 &gt; 3\\) is true  but \\(3 &gt; 5\\) is false \n\n\n\n\nhorizontal\nSide to side, like the horizon. Level ground is horizontal.\n\nExample: This is a horizontal number line. \n\n\n\n\ninteger\nIn mathematics, an integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero. Examples include -3, 0, 5, and 100.\n\n\n\nless than\nA number is less than (&lt;) another number if it is further to the left on the number line.\n\nExample \\(3 &lt; 5\\) is true  but \\(5 &lt; 3\\) is false \n\n\n\n\nnumber line\nA straight line used to represent numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left. Number lines help visualize operations and compare values.\n\nExample: \\(-2\\), \\(0\\), and \\(3\\) are all on the number line. \n\n\n\n\nnegative\nA number is negative if it is less than zero. On a number line, negative numbers are to the left of zero.\n\nExample: -4 is a negative number.\n\n\n\n\nopposite\nTwo numbers that are the same distance from zero on a number line, but on opposite sides. Their sum is always zero.\n\nExample: -3 and 3 are opposite numbers.\n\n\n\n\npositive\nA number is positive if it is greater than zero. On a number line, positive numbers are to the right of zero.\n\nExample: 5 is a positive number.\n\n\n\n\nvertical\nUp and down like a flag pole.\n\nExample: This is a vertical number line.",
+    "text": "Absolute value\nThe distance a number is from zero on a number line, always expressed as a positive number or zero.\n\nExample: The absolute value of -7 is 7.\n\n\n\n\nAlgebra\nAlgebra is a branch of math that uses letters and symbols to represent numbers and relationships.\nIt lets us describe patterns, write rules, and solve problems that work in many different situations.\n\n\n\nCalculus\nCalculus is a branch of math that helps us understand change and motion.\nIt’s used to study how fast things move, how things grow or shrink, and how to find exact areas or curves.\n\n\n\nComposite number\nA composite number has more than two factors.\nThat means it can be divided evenly by numbers other than 1 and itself.\n\nExample: 12 is composite because 2, 3, 4, and 6 all divide it evenly.\n\n\n\n\nDenominator\nThe denominator is the bottom number in a fraction. It tells how many equal parts the whole is divided into.\n\nExample: In the fraction \\(\\frac{3}{4}\\), the denominator is 4.\n\n\n\n\nEquation\nAn equation is a math sentence that says two things are equal.\nIt has an equals sign (=) and shows a relationship between numbers or expressions.\n\nExamples: 2 + 3 = 5 and x + 1 = 7\n\n\n\n\nExpression\nAn expression is a math phrase made of numbers, variables, or both — but it doesn’t have an equals sign.\n\nExamples: 3x + 2 7 − y 5(a − 1)\n\n\n\n\nFactor\nA factor is a whole number that divides another number evenly — with no remainder.\nIf you can split something into equal groups with no leftovers, the group size is a factor.\n\nExample: 3 is a factor of 12 because 3 × 4 = 12.\n\n\n\n\nFactoring\nFactoring means breaking something down into smaller parts that multiply together to make it.\n\nExamples:\n\nFactoring a number: 12 can be factored into 3 × 4 or 2 × 6.\nFactoring an expression: x² + 5x + 6 can be factored into (x + 2)(x + 3).\n\n\n\n\n\nFactor tree\nA factor tree is a way to break a number into its smallest building blocks — the prime numbers that multiply to make it.\nYou keep splitting the number into smaller factors until you can’t go any further.\n\nExample: Here is a factor tree for 24:\n\n\n\n\n\n\nflowchart TD\n   A[24]\n   A --&gt; B[6]\n   A --&gt; C[4]\n   B --&gt; D[3]\n   B --&gt; E[2]\n   C --&gt; F[2]\n   C --&gt; G[2]\n\n\n\n\n\n\n\nThis tells us that the prime factorization of 24 is \\(2^3 \\cdot 3\\).\n\n\n\n\nFraction\nA fraction shows a part of a whole. It has a numerator (top number) and a denominator (bottom number).\nThe denominator tells how many equal parts the whole is divided into, and the numerator tells how many of those parts you have.\n\nExample: In \\(\\frac{3}{4}\\), the fraction means 3 out of 4 equal parts.\n\n\n\n\nGreater than\nA number is greater than (&gt;) another number if it is further to the right on the number line.\n\nExample: 5 &gt; 3 is true  but 3 &gt; 5 is false \n\n\n\n\nHorizontal\nSide to side, like the horizon. Level ground is horizontal.\n\nExample: This is a horizontal number line. \n\n\n\n\nInteger\nAn integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero.\n\nExamples: -3, 0, 5, 100\n\n\n\n\nLess than\nA number is less than (&lt;) another number if it is further to the left on the number line.\n\nExample: 3 &lt; 5 is true  but 5 &lt; 3 is false \n\n\n\n\nMultiple\nA multiple is what you get when you multiply a number by 1, 2, 3, and so on.\n\nExample: 5, 10, 15, and 20 are all multiples of 5.\n\n\n\n\nNumber line\nA straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.\nNumber lines help you visualize math operations and compare values.\n\nExample: -2, 0, and 3 are all on the number line. \n\n\n\n\nNumerator\nThe numerator is the top number in a fraction. It tells how many parts you have.\n\nExample: In the fraction \\(\\frac{3}{4}\\), the numerator is 3.\n\n\n\n\nNegative\nA number is negative if it is less than zero.\nOn a number line, negative numbers are to the left of zero.\n\nExample: -4 is a negative number.\n\n\n\n\nOpposite\nTwo numbers that are the same distance from zero on a number line, but on opposite sides.\nTheir sum is always zero.\n\nExample: -3 and 3 are opposites.\n\n\n\n\nPositive\nA number is positive if it is greater than zero.\nOn a number line, positive numbers are to the right of zero.\n\nExample: 5 is a positive number.\n\n\n\n\nPrime number\nA prime number has exactly two factors: 1 and itself.\n\nExamples: 2, 3, 5, 7, 11\n\n\n\n\nPrime factorization\nPrime factorization means writing a number as a product of prime numbers.\n\nExample: 18 = 2 × 3 × 3 or 2 × 3²\n\nThese are the prime building blocks of 18.\n\n\n\nProduct\nA product is the result of multiplying two or more numbers.\n\nExample: The product of 4 and 6 is 24, because 4 × 6 = 24.\n\n\n\n\nQuotient\nA quotient is the result of dividing one number by another.\n\nExample: The quotient of 20 divided by 5 is 4, because 20 ÷ 5 = 4.\n\n\n\n\nRemainder\nA remainder is what’s left over after dividing when the number doesn’t go in evenly.\n\nExample: 10 ÷ 3 = 3 with a remainder of 1, because 3 × 3 = 9 and there’s 1 left.\n\n\n\n\nSum\nA sum is the result of adding two or more numbers.\n\nExample: The sum of 7 and 8 is 15, because 7 + 8 = 15.\n\n\n\n\nVertical\nUp and down, like a flagpole.\n\nExample: This is a vertical number line.",
     "crumbs": [
       "📚 Glossary"
     ]

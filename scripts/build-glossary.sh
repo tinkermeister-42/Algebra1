@@ -3,7 +3,7 @@
 # Generate glossary.json from glossary.md
 echo "[build-glossary] generating glossary.json..."
 
-pandoc glossary.md -t plain --lua-filter=scripts/generate-glossary-json.lua \
+pandoc glossary.qmd -t plain --lua-filter=scripts/generate-glossary-json.lua \
   -o /dev/null
 
 if [[ $? -eq 0 ]]; then
