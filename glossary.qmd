@@ -1,0 +1,274 @@
+# 📚 Glossary {.unnumbered}
+
+### Absolute value {#glossary-absolute-value}
+
+The distance a number is from zero on a number line, always expressed as a positive number or zero.
+
+> Example: The **absolute value** of `-7` is `7`.
+
+---
+
+### Algebra {#glossary-algebra}
+
+Algebra is a branch of math that uses letters and symbols to represent numbers and relationships.
+
+It lets us describe patterns, write rules, and solve problems that work in many different situations.
+
+---
+
+### Calculus {#glossary-calculus}
+
+Calculus is a branch of math that helps us understand change and motion.
+
+It’s used to study how fast things move, how things grow or shrink, and how to find exact areas or curves.
+
+---
+
+### Composite number {#glossary-composite-number}
+
+A composite number has more than two factors.
+
+That means it can be divided evenly by numbers other than 1 and itself.
+
+> Example: 12 is composite because 2, 3, 4, and 6 all divide it evenly.
+
+---
+
+### Denominator {#glossary-denominator}
+
+The denominator is the **bottom number** in a fraction. It tells **how many equal parts** the whole is divided into.
+
+> Example: In the fraction $\frac{3}{4}$, the **denominator** is 4.
+
+---
+
+### Equation {#glossary-equation}
+
+An equation is a math sentence that says two things are equal.
+
+It has an equals sign (=) and shows a relationship between numbers or expressions.
+
+> Examples: `2 + 3 = 5` and `x + 1 = 7`
+
+---
+
+### Expression {#glossary-expression}
+
+An expression is a math phrase made of numbers, variables, or both — but it doesn’t have an equals sign.
+
+> Examples:
+> `3x + 2`
+> `7 − y`
+> `5(a − 1)`
+
+---
+
+### Factor {#glossary-factor}
+
+A factor is a whole number that divides another number evenly — with no remainder.
+
+If you can split something into equal groups with no leftovers, the group size is a factor.
+
+> Example: 3 is a factor of 12 because 3 × 4 = 12.
+
+---
+
+### Factoring {#glossary-factoring}
+
+Factoring means breaking something down into smaller parts that multiply together to make it.
+
+> Examples:
+> 
+> - Factoring a number: 12 can be factored into `3 × 4` or `2 × 6`.
+>
+> - Factoring an expression: `x² + 5x + 6` can be factored into `(x + 2)(x + 3)`.
+
+---
+
+### Factor tree {#glossary-factor-tree}
+
+A factor tree is a way to break a number into its smallest building blocks — the prime numbers that multiply to make it.
+
+You keep splitting the number into smaller factors until you can’t go any further.
+
+> Example: Here is a factor tree for 24:
+>
+```{mermaid}
+flowchart TD
+   A[24]
+   A --> B[6]
+   A --> C[4]
+   B --> D[3]
+   B --> E[2]
+   C --> F[2]
+   C --> G[2]
+```
+>
+> This tells us that the {{< glink prime factorization >}} of 24 is $2^3 \cdot 3$.
+
+---
+
+### Fraction {#glossary-fraction}
+
+A fraction shows a part of a whole. It has a {{< glink numerator >}} (top number) and a {{< glink denominator >}} (bottom number).
+
+The denominator tells how many equal parts the whole is divided into, and the numerator tells how many of those parts you have.
+
+> Example: In $\frac{3}{4}$, the fraction means **3 out of 4** equal parts.
+
+---
+
+### Greater than {#glossary-greater-than}
+
+A number is greater than (**>**) another number if it is further to the right on the number line.
+
+> Example: `5 > 3` is true
+> ![Greater than true](images/Glossary/greater_than_true.png){#fig-number-line width="100%"}
+> but `3 > 5` is false
+> ![Greater than false](images/Glossary/greater_than_false.png){#fig-number-line width="100%"}
+
+---
+
+### Horizontal {#glossary-horizontal}
+
+Side to side, like the horizon. Level ground is horizontal.
+
+> Example: This is a horizontal number line.
+> ![](/images/Glossary/blank_numberline.png)
+
+---
+
+### Integer {#glossary-integer}
+
+An integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero.
+
+> Examples: `-3`, `0`, `5`, `100`
+
+---
+
+### Less than {#glossary-less-than}
+
+A number is less than (**<**) another number if it is further to the left on the number line.
+
+> Example: `3 < 5` is true
+> ![Less than true](images/Glossary/less_than_true.png){#fig-number-line width="100%"}
+> but `5 < 3` is false
+> ![Less than false](images/Glossary/less_than_false.png){#fig-number-line width="100%"}
+
+---
+
+### Multiple {#glossary-multiple}
+
+A multiple is what you get when you multiply a number by 1, 2, 3, and so on.
+
+> Example: `5`, `10`, `15`, and `20` are all multiples of `5`.
+
+---
+
+### Number line {#glossary-number-line}
+
+A straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.
+
+Number lines help you visualize math operations and compare values.
+
+> Example: `-2`, `0`, and `3` are all on the number line.
+> ![Number line](images/Glossary/number_line_example.png){#fig-number-line width="100%"}
+
+---
+
+### Numerator {#glossary-numerator}
+
+The numerator is the **top number** in a fraction. It tells **how many parts** you have.
+
+> Example: In the fraction $\frac{3}{4}$, the **numerator** is 3.
+
+---
+
+### Negative {#glossary-negative}
+
+A number is negative if it is less than zero.
+
+On a number line, negative numbers are to the left of zero.
+
+> Example: `-4` is a negative number.
+
+---
+
+### Opposite {#glossary-opposite}
+
+Two numbers that are the same distance from zero on a number line, but on opposite sides.
+
+Their sum is always zero.
+
+> Example: `-3` and `3` are opposites.
+
+---
+
+### Positive {#glossary-positive}
+
+A number is positive if it is greater than zero.
+
+On a number line, positive numbers are to the right of zero.
+
+> Example: `5` is a positive number.
+
+---
+
+### Prime number {#glossary-prime-number}
+
+A prime number has exactly two factors: 1 and itself.
+
+> Examples: `2`, `3`, `5`, `7`, `11`
+
+---
+
+### Prime factorization {#glossary-prime-factorization}
+
+Prime factorization means writing a number as a product of prime numbers.
+
+> Example: `18 = 2 × 3 × 3` or `2 × 3²`
+
+These are the prime building blocks of 18.
+
+---
+
+### Product {#glossary-product}
+
+A product is the **result of multiplying** two or more numbers.
+
+> Example: The product of 4 and 6 is `24`, because `4 × 6 = 24`.
+
+---
+
+### Quotient {#glossary-quotient}
+
+A quotient is the **result of dividing** one number by another.
+
+> Example: The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+
+---
+
+### Remainder {#glossary-remainder}
+
+A remainder is what’s left over after dividing when the number doesn’t go in evenly.
+
+> Example: `10 ÷ 3 = 3` with a remainder of `1`, because `3 × 3 = 9` and there’s `1` left.
+
+---
+
+### Sum {#glossary-sum}
+
+A sum is the **result of adding** two or more numbers.
+
+> Example: The sum of 7 and 8 is `15`, because `7 + 8 = 15`.
+
+---
+
+### Vertical {#glossary-vertical}
+
+Up and down, like a flagpole.
+
+> Example: This is a vertical number line.
+> ![](/images/Glossary/vertical_by_tens.png)
+
+---

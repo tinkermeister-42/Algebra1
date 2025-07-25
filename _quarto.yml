@@ -20,6 +20,9 @@ format:
       - styles/glossary-tooltips.css
     include-after-body:
       - scripts/inject-glossary-tooltips.html
+    mermaid:
+      theme: neutral
+      
   pdf: default
   
 website:
@@ -45,15 +48,13 @@ book:
     
     - part: "Unit 1: Foundations"
       chapters:
-        - file: chapters/Unit_1/index.md
-        - file: chapters/Unit_1/1.1_Integers_&_Number_Lines.md
-        - file: chapters/Unit_1/1.2_Factor_Trees_&_Prime_Factorization.md
-        - file: chapters/Unit_1/1.3_Greatest_Common_Factor_(GCF).md
-        - file: chapters/Unit_1/1.4_Multiplication_&_Division_Fluency.md
-        - file: chapters/Unit_1/1.5_Fractions:_Meaning_&_Models.md
-        - file: chapters/Unit_1/1.6_Simplifying_Fractions_Using_GCF.md
-        - file: chapters/Unit_1/1.7_Mixed_Numbers_&_Improper_Fractions.md
-        - file: chapters/Unit_1/1.8_Order_of_Operations.md
+        - file: chapters/Unit_1/index.qmd
+        - file: chapters/Unit_1/1.1_Integers_&_Number_Lines.qmd
+        - file: chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.qmd
+        - file: chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
+        - file: chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.qmd
+        - file: chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.qmd
+        - file: chapters/Unit_1/1.6_Order_of_Operations.qmd
 
     - part: "Unit 2: Algebraic Expressions"
       chapters:
@@ -137,4 +138,4 @@ book:
         - file: chapters/supplemental/index.md
         - file: chapters/supplemental/math_games_and_puzzles/index.md
  
-    - file: glossary.md
+    - file: glossary.qmd

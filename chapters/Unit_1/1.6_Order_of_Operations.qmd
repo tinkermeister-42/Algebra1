@@ -93,9 +93,9 @@ $$
 $$
 
 :::{.callout-caution title="Be careful with negatives!"}
-\$-3^2\$ means \$-(3^2) = -9\$
+$-3^2$ means $-(3^2) = -9$
 but
-\$(-3)^2 = 9\$
+$(-3)^2 = 9$
 :::
 
 ---
