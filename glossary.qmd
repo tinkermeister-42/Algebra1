@@ -1,4 +1,4 @@
-# 📚 Glossary {.unnumbered}
+# Glossary {.unnumbered}
 
 ### Absolute value {#glossary-absolute-value}
 
@@ -176,6 +176,23 @@ Number lines help you visualize math operations and compare values.
 
 ---
 
+### Number sense {#glossary-number-sense}
+
+**Number sense** is a person’s ability to understand, work with, and think about numbers.
+
+In simple terms, it means having a good feel for how numbers work — like knowing:
+
+* What numbers mean
+* How they relate to each other
+* How to break them apart or put them together
+* What a reasonable answer might be
+
+People with strong number sense can do mental math, estimate, recognize patterns, and spot when something “doesn’t make sense.”
+
+It's kind of like having a good instinct for numbers — not just memorizing rules, but really *getting* how numbers behave.
+
+---
+
 ### Numerator {#glossary-numerator}
 
 The numerator is the **top number** in a fraction. It tells **how many parts** you have.
@@ -214,9 +231,9 @@ On a number line, positive numbers are to the right of zero.
 
 ---
 
-### Prime number {#glossary-prime-number}
+### Prime Number {#glossary-prime-number}
 
-A prime number has exactly two factors: 1 and itself.
+A number is prime if it has exactly two factors: 1 and itself.
 
 > Examples: `2`, `3`, `5`, `7`, `11`
 

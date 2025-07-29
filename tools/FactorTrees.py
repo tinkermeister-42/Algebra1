@@ -29,9 +29,14 @@ def prime_factors(n):
     return factors
 
     
-def ftree(n: int, method="depth_first"):
+def ftree(n: int, method="depth_first", max_depth=8, _current_depth=0):
+    if _current_depth >= max_depth:
+        return n
+
+    depth = _current_depth + 1
+    
     if n < -1:
-        return (n, -1, ftree(-n, method))
+        return (n, -1, ftree(-n, method, max_depth, depth))
     
     if n < 4:
         return n
@@ -48,17 +53,22 @@ def ftree(n: int, method="depth_first"):
 
     elif "random".startswith(str(method).lower()):
         factors = prime_factors(n)
+        
         if not factors:
             return n
 
-        ct = random.choice(range(1, len(factors)))
-        factors = random.sample(factors, k=ct)
-        
-        prod = 1
-        for factor in factors:
-            prod *= factor
+        if len(factors) == 1:
+            div = factors[0]
+        else:
+            ct = random.choice(range(1, len(factors)))
+            factors = random.sample(factors, k=ct)
             
-        div = prod
+            prod = 1
+            for factor in factors:
+                prod *= factor
+                
+            div = prod
+            
         predicate = lambda d: True
         
     else:
@@ -66,7 +76,7 @@ def ftree(n: int, method="depth_first"):
 
     while predicate(div):
         if n // div == n / div:
-            return (n, ftree(div, method), ftree(n // div, method))
+            return (n, ftree(div, method, max_depth, depth), ftree(n // div, method, max_depth, depth))
 
         div += inc
 
@@ -80,7 +90,7 @@ def generate_mermaid_tree(tree, parent_id=None, depth=0, node_prefix="node"):
 
     # If the tree is a leaf (a single number), return that node as a leaf
     if isinstance(tree, int):
-        diagram += f"    {node_id}[\"{tree}\"]\n"
+        diagram += f"    {node_id}(\"{tree}\")\n"
         if parent_id is not None:
             diagram += f"    {parent_id} --> {node_id}\n"
         return diagram, tree
@@ -88,7 +98,7 @@ def generate_mermaid_tree(tree, parent_id=None, depth=0, node_prefix="node"):
         # For non-leaf nodes (internal nodes)
         # Recursively calculate the product of the current node (multiply its children)
         child_values = []
-        diagram += f"    {node_id}[\"{tree[0]}\"]\n"
+        diagram += f"    {node_id}(\"{tree[0]}\")\n"
         if parent_id is not None:
             diagram += f"    {parent_id} --> {node_id}\n"
         
@@ -103,15 +113,22 @@ def generate_mermaid_tree(tree, parent_id=None, depth=0, node_prefix="node"):
 
         return diagram, product
 
-def factor_tree(n: int, method: str = "breadth_first"):
-    tree = ftree(n, method)
+def factor_tree(n: int, method: str = "breadth_first", max_depth=8):
+    tree = ftree(n, method, max_depth)
     
     # Start with the Mermaid graph declaration
-    mermaid_code = "flowchart TD\n"
+    mermaid_code = ""
     # Generate the tree diagram and get the final product
     diagram, _ = generate_mermaid_tree(tree)
     mermaid_code += diagram
-    mermaid_code = "```{mermaid}\n" + mermaid_code + "```"
+    header = """
+```{mermaid}
+%%| label: fig-mermaid-diagram
+%%| fit-align: center
+%%| fig-cap: " "
+flowchart TB
+"""
+    mermaid_code = header + mermaid_code + "```"
   
     print(mermaid_code)
     display(Markdown(mermaid_code))

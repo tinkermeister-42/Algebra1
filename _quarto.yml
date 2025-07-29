@@ -135,7 +135,8 @@ book:
 
     - part: "Supplemental"
       chapters:
-        - file: chapters/supplemental/index.md
-        - file: chapters/supplemental/math_games_and_puzzles/index.md
- 
+        - file: chapters/Supplemental/index.md
+        - file: chapters/Supplemental/math_games_and_puzzles/index.md
+
+    - file: resources.qmd
     - file: glossary.qmd

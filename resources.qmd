@@ -1,0 +1,15 @@
+# Resources {.unnumbered}
+
+Looking for extra support as you learn Algebra? Below you'l find helpful links to additional study materials and downloadable cheat sheets!
+
+---
+
+### Factor Chart
+
+Need help finding all the factor pairs of a number? This chart lists every {{< glink composite number >}} from 1 to 200. For each number, you'll see a list of its factor pairs.
+
+[Download Chart](/resources/Factor-Chart_noprimes.pdf)
+
+---
+
+*Want to suggest a resource or submit your own? Let me know!*
