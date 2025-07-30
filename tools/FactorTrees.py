@@ -123,7 +123,7 @@ def factor_tree(n: int, method: str = "breadth_first", max_depth=8):
     mermaid_code += diagram
     header = """
 ```{mermaid}
-%%| label: fig-mermaid-diagram
+%%| label: mermaid-diagram
 %%| fit-align: center
 %%| fig-cap: " "
 flowchart TB

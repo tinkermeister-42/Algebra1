@@ -6,7 +6,6 @@ project:
 resources:
   - glossary.json
   - scripts/*
-
  
 filters:
   - glossary-shortcode
@@ -20,9 +19,8 @@ format:
       - styles/glossary-tooltips.css
     include-after-body:
       - scripts/inject-glossary-tooltips.html
-    mermaid:
-      theme: neutral
-      
+    mermaid-format: png
+
   pdf: default
   
 website:

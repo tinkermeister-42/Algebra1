@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+from matplotlib.ticker import FuncFormatter
+
+
 def norm(val, start, end):
     return (val - start) / (end - start)
     
@@ -19,7 +22,8 @@ def plot_number_line_with_points(
     distances=None,
     arrow=True,
     output=None,
-    unit_label="units"
+    unit_label="units",
+    xtick_format=lambda x: x
 ):
     points = points or []
     inequalities = inequalities or []
@@ -52,6 +56,7 @@ def plot_number_line_with_points(
     fig, ax = plt.subplots(figsize=fig_dims)
     ax.axis("off")
 
+    
     # Axes limits
     margin = 0.05
 
@@ -65,8 +70,8 @@ def plot_number_line_with_points(
     # Draw main line
     _draw_number_line(ax, orientation, arrow, line_thickness)
 
-    # Ticks and labels
-    _draw_ticks(ax, orientation, ticks, tick_labels, tick_length, tick_fontsize)
+    # Ticks and labels   
+    _draw_ticks(ax, orientation, ticks, tick_labels, tick_length, tick_fontsize, xtick_format)
 
     # Points
     for point in points:#val, closed, color in points:
@@ -187,11 +192,11 @@ def _draw_number_line(ax, orientation, arrow, lw):
             ax.plot([0, 0], [1, 0], color="black", lw=lw, zorder=2)
 
 
-def _draw_ticks(ax, orientation, ticks, labels, length, fontsize):
+def _draw_ticks(ax, orientation, ticks, labels, length, fontsize, xtick_format):
     for tick, label in zip(ticks, labels):
         if orientation == "horizontal":
             ax.plot([tick, tick], [-length / 2, length / 2], color="black", lw=1.5)
-            ax.text(tick, -length, str(label), ha="center", va="top", fontsize=fontsize)
+            ax.text(tick, -length, str(xtick_format(label)), ha="center", va="top", fontsize=fontsize)
         else:
             ax.plot([-length / 2, length / 2], [tick, tick], color="black", lw=1.5)
             ax.text(-length * 1.5, tick, str(label), ha="right", va="center", fontsize=fontsize)

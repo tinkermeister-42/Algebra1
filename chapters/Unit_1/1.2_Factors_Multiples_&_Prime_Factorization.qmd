@@ -82,9 +82,11 @@ Here is a number line that shows multiples of three.
 ### 1.2.3 - Prime vs. Composite
 
 A **prime number** has only 2 factors: 1 and itself.
+
 Examples: 2, 3, 5, 7, 11, 13...
 
 A **composite number** has more than 2 factors.
+
 Examples: 4, 6, 8, 9, 10...
 
 :::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
@@ -131,9 +133,9 @@ flowchart TB
 flowchart TB
     node_0("360")
     node_1_0_1("18")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_1_1("20")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
 ```
 
 3. Break each of those numbers down further:
@@ -148,17 +150,17 @@ flowchart TB
 flowchart TB
     node_0("360")
     node_1_0_1("18")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_0_2_0_2("3")
-    node_1_0_1 --> node_1_0_2_0_2
+    node_1_0_1 --- node_1_0_2_0_2
     node_1_0_2_1_2("6")
-    node_1_0_1 --> node_1_0_2_1_2
+    node_1_0_1 --- node_1_0_2_1_2
     node_1_1_1("20")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("4")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_1_2("5")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
 ```
 
 4. Keep going until all branches end in **prime numbers** (numbers that can’t be factored anymore, like 2, 3, 5, 7...). We call the ends of the branches "leaves".
@@ -170,32 +172,33 @@ flowchart TB
     flowchart TB
     node_0("360")
     node_1_0_1("18")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_0_2_0_2("3")
-    node_1_0_1 --> node_1_0_2_0_2
+    node_1_0_1 --- node_1_0_2_0_2
     node_1_0_2_1_2("6")
-    node_1_0_1 --> node_1_0_2_1_2
+    node_1_0_1 --- node_1_0_2_1_2
     node_1_0_2_1_3_0_3("2")
-    node_1_0_2_1_2 --> node_1_0_2_1_3_0_3
+    node_1_0_2_1_2 --- node_1_0_2_1_3_0_3
     node_1_0_2_1_3_1_3("3")
-    node_1_0_2_1_2 --> node_1_0_2_1_3_1_3
+    node_1_0_2_1_2 --- node_1_0_2_1_3_1_3
     node_1_1_1("20")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("4")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_0_3_0_3("2")
-    node_1_1_2_0_2 --> node_1_1_2_0_3_0_3
+    node_1_1_2_0_2 --- node_1_1_2_0_3_0_3
     node_1_1_2_0_3_1_3("2")
-    node_1_1_2_0_2 --> node_1_1_2_0_3_1_3
+    node_1_1_2_0_2 --- node_1_1_2_0_3_1_3
     node_1_1_2_1_2("5")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
 
-    style node_1_1_2_1_2 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
-    style node_1_1_2_0_3_1_3 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
-    style node_1_1_2_0_3_0_3 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
-    style node_1_0_2_1_3_1_3 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
-    style node_1_0_2_1_3_0_3 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
-    style node_1_0_2_0_2 fill:lightgreen,stroke:darkgreen,stroke-width:2px;
+    style node_1_1_2_1_2 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_3_1_3 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_3_0_3 stroke-width:4px,font-weight:bold;
+    style node_1_0_2_1_3_1_3 stroke-width:4px,font-weight:bold;
+    style node_1_0_2_1_3_0_3 stroke-width:4px,font-weight:bold;
+    style node_1_0_2_0_2 stroke-width:4px,font-weight:bold;
+
 ```
 
 5. The prime factorization is the {{< glink product >}} of the leaves of the tree: <br> 
@@ -204,8 +207,6 @@ This can be written more compactly by using the factor counts as exponents. Ther
 $$2^3 * 3^2 * 5 = 360$$
 
 ---
-
-:::{.callout-tip tile="The order doesn't matter!"}
 
 There are *many* factor trees for the number 360. For example, you could also have started with $360 = 3 * 120$.
 
@@ -216,30 +217,80 @@ There are *many* factor trees for the number 360. For example, you could also ha
 flowchart TB
     node_0("360")
     node_1_0_1("3")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_1_1("120")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("2")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_1_2("60")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
     node_1_1_2_1_3_0_3("15")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_0_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
     node_1_1_2_1_3_0_4_0_4("5")
-    node_1_1_2_1_3_0_3 --> node_1_1_2_1_3_0_4_0_4
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_0_4
     node_1_1_2_1_3_0_4_1_4("3")
-    node_1_1_2_1_3_0_3 --> node_1_1_2_1_3_0_4_1_4
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_1_4
     node_1_1_2_1_3_1_3("4")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_1_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
     node_1_1_2_1_3_1_4_0_4("2")
-    node_1_1_2_1_3_1_3 --> node_1_1_2_1_3_1_4_0_4
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_0_4
     node_1_1_2_1_3_1_4_1_4("2")
-    node_1_1_2_1_3_1_3 --> node_1_1_2_1_3_1_4_1_4
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
+
+    style node_1_0_1 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_2 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_0_4_1_4 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_0_4_0_4 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_4_0_4 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_4_1_4 stroke-width:4px,font-weight:bold;
 ```
 
 There are still three 2s, two 3s, and one 5, so the prime factorization does not change!
 $$2^3 * 3^2 * 5 = 360$$
 As long as you end up with the same prime numbers, the tree is correct!
+
+---
+
+:::{.callout-tip title="Which factors should I start with?"}
+
+There is no one right answer to this question. It depends on your goal. If your goal is finding easy numbers, you might start small.  Notice that 360 is {{< glink even >}} that means it is divisible by 2. We could divide by 2 and keep going that way.
+
+```{mermaid}
+%%| label: mermaid-diagram
+%%| fit-align: center
+%%| fig-cap: " "
+flowchart TB
+    node_0("360")
+    node_1_0_1("2")
+    node_0 --- node_1_0_1
+    node_1_1_1("180")
+    node_0 --- node_1_1_1
+    node_1_1_2_0_2("2")
+    node_1_1_1 --- node_1_1_2_0_2
+    node_1_1_2_1_2("90")
+    node_1_1_1 --- node_1_1_2_1_2
+    node_1_1_2_1_3_0_3("2")
+    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
+    node_1_1_2_1_3_1_3("45")
+    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
+    node_1_1_2_1_3_1_4_0_4("3")
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_0_4
+    node_1_1_2_1_3_1_4_1_4("15")
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
+    node_1_1_2_1_3_1_4_1_5_0_5("3")
+    node_1_1_2_1_3_1_4_1_4 --- node_1_1_2_1_3_1_4_1_5_0_5
+    node_1_1_2_1_3_1_4_1_5_1_5("5")
+    node_1_1_2_1_3_1_4_1_4 --- node_1_1_2_1_3_1_4_1_5_1_5
+
+    style node_1_0_1 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_2 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_0_3 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_4_0_4 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_4_1_5_0_5 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_4_1_5_1_5 stroke-width:4px,font-weight:bold;
+```
+
+When you divide by the smallest (or biggest) factors, the tree tends to become deep. If you want smaller trees, you should start with factor pairs that are closer together like we did with the first factor tree for 360, splitting first with 18 and 20.
 
 :::
 
@@ -254,28 +305,44 @@ If the number is negative, factor out a -1 first. Here is one possible factor tr
 flowchart TB
     node_0("-24")
     node_1_0_1("-1")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_1_1("24")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("4")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_0_3_0_3("2")
-    node_1_1_2_0_2 --> node_1_1_2_0_3_0_3
+    node_1_1_2_0_2 --- node_1_1_2_0_3_0_3
     node_1_1_2_0_3_1_3("2")
-    node_1_1_2_0_2 --> node_1_1_2_0_3_1_3
+    node_1_1_2_0_2 --- node_1_1_2_0_3_1_3
     node_1_1_2_1_2("6")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
     node_1_1_2_1_3_0_3("2")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_0_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
     node_1_1_2_1_3_1_3("3")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_1_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
+
+    style node_1_0_1 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_3_0_3 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_0_3_1_3 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_0_3 stroke-width:4px,font-weight:bold;
+    style node_1_1_2_1_3_1_3 stroke-width:4px,font-weight:bold;
 ```
+
+So, the prime factorization of -24 is...
+
+$$-1 * 2^3 * 3 = -24$$
+
 
 This will come in handy later when we factor algebraic expressions like $-x^2 + 4x$. It’s often helpful to pull out a negative first!
 
+**Feeling overwhelmed?**
+
+If you struggle to come up with the factors for a number, you should check out the [factor chart](/resources/Factor-Chart_noprimes.pdf) in the resources section of this book. It shows all of the factor pairs for many composite numbers!
+
+
 :::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can you find at least one more factor tree for 360?"}
 
-I have only shown you 2 of the 60 unique factor trees for 360!
+I have only shown you 3 of the 60 unique factor trees for 360!
 :::
 
 
@@ -320,17 +387,17 @@ I have only shown you 2 of the 60 unique factor trees for 360!
 flowchart TB
     node_0("36")
     node_1_0_1("?")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_0_2_0_2("?")
-    node_1_0_1 --> node_1_0_2_0_2
+    node_1_0_1 --- node_1_0_2_0_2
     node_1_0_2_1_2("3")
-    node_1_0_1 --> node_1_0_2_1_2
+    node_1_0_1 --- node_1_0_2_1_2
     node_1_1_1("6")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("2")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_1_2("?")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
 ```
    b. 
 ```{mermaid}
@@ -340,25 +407,25 @@ flowchart TB
 flowchart TB
     node_0("-120")
     node_1_0_1("-1")
-    node_0 --> node_1_0_1
+    node_0 --- node_1_0_1
     node_1_1_1("?")
-    node_0 --> node_1_1_1
+    node_0 --- node_1_1_1
     node_1_1_2_0_2("2")
-    node_1_1_1 --> node_1_1_2_0_2
+    node_1_1_1 --- node_1_1_2_0_2
     node_1_1_2_1_2("?")
-    node_1_1_1 --> node_1_1_2_1_2
+    node_1_1_1 --- node_1_1_2_1_2
     node_1_1_2_1_3_0_3("6")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_0_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
     node_1_1_2_1_3_0_4_0_4("2")
-    node_1_1_2_1_3_0_3 --> node_1_1_2_1_3_0_4_0_4
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_0_4
     node_1_1_2_1_3_0_4_1_4("?")
-    node_1_1_2_1_3_0_3 --> node_1_1_2_1_3_0_4_1_4
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_1_4
     node_1_1_2_1_3_1_3("?")
-    node_1_1_2_1_2 --> node_1_1_2_1_3_1_3
+    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
     node_1_1_2_1_3_1_4_0_4("2")
-    node_1_1_2_1_3_1_3 --> node_1_1_2_1_3_1_4_0_4
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_0_4
     node_1_1_2_1_3_1_4_1_4("5")
-    node_1_1_2_1_3_1_3 --> node_1_1_2_1_3_1_4_1_4
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
 ```
 
 ---
@@ -444,12 +511,64 @@ flowchart TB
 4. Fill in the missing numbers.
 
    a. 
-   >
-   > ![](/images/Unit_1/Lesson_2/lesson_1_2_4a.png){width=300}
+```{mermaid}
+%%| label: fig-mermaid-diagram
+%%| fit-align: center
+%%| fig-cap: " "
+flowchart TB
+    node_0("36")
+    node_1_0_1("6")
+    node_0 --- node_1_0_1
+    node_1_0_2_0_2("2")
+    node_1_0_1 --- node_1_0_2_0_2
+    node_1_0_2_1_2("3")
+    node_1_0_1 --- node_1_0_2_1_2
+    node_1_1_1("6")
+    node_0 --- node_1_1_1
+    node_1_1_2_0_2("2")
+    node_1_1_1 --- node_1_1_2_0_2
+    node_1_1_2_1_2("3")
+    node_1_1_1 --- node_1_1_2_1_2
 
+    style node_1_0_1 stroke-width:4px;
+    style node_1_0_2_0_2 stroke-width:4px;
+    style node_1_1_2_1_2 stroke-width:4px;
+
+```
    b. 
-   >
-   > ![](/images/Unit_1/Lesson_2/lesson_1_2_4b.png){width=300}
+```{mermaid}
+%%| label: fig-mermaid-diagram
+%%| fit-align: center
+%%| fig-cap: " "
+flowchart TB
+    node_0("-120")
+    node_1_0_1("-1")
+    node_0 --- node_1_0_1
+    node_1_1_1("120")
+    node_0 --- node_1_1_1
+    node_1_1_2_0_2("2")
+    node_1_1_1 --- node_1_1_2_0_2
+    node_1_1_2_1_2("60")
+    node_1_1_1 --- node_1_1_2_1_2
+    node_1_1_2_1_3_0_3("6")
+    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
+    node_1_1_2_1_3_0_4_0_4("2")
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_0_4
+    node_1_1_2_1_3_0_4_1_4("3")
+    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_1_4
+    node_1_1_2_1_3_1_3("10")
+    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
+    node_1_1_2_1_3_1_4_0_4("2")
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_0_4
+    node_1_1_2_1_3_1_4_1_4("5")
+    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
+
+    style node_1_1_1 stroke-width:4px;
+    style node_1_1_2_1_2 stroke-width:4px;
+    style node_1_1_2_1_3_0_4_1_4 stroke-width:4px;
+    style node_1_1_2_1_3_1_3 stroke-width:4px;
+
+```
 
 ---
 
