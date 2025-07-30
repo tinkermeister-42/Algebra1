@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/callouts.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
@@ -158,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.3 – GCF &amp; Simplifying Fractions</span></a>
+ <span class="menu-text">1.3 - GCF &amp; Simplifying Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -628,10 +657,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
   <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">👥 Learn Together</a>
   <ul class="collapse">
-  <li><a href="#what-are-these-numbers-really-saying" id="toc-what-are-these-numbers-really-saying" class="nav-link" data-scroll-target="#what-are-these-numbers-really-saying">1.4.1 – What Are These Numbers Really Saying?</a></li>
-  <li><a href="#converting-between-forms" id="toc-converting-between-forms" class="nav-link" data-scroll-target="#converting-between-forms">1.4.2 – Converting Between Forms</a></li>
-  <li><a href="#benchmarks-help-you-think-fast" id="toc-benchmarks-help-you-think-fast" class="nav-link" data-scroll-target="#benchmarks-help-you-think-fast">1.4.3 – Benchmarks Help You Think Fast</a></li>
-  <li><a href="#real-life-uses" id="toc-real-life-uses" class="nav-link" data-scroll-target="#real-life-uses">1.4.4 – Real-Life Uses</a></li>
+  <li><a href="#what-are-fractions-decimals-and-percents" id="toc-what-are-fractions-decimals-and-percents" class="nav-link" data-scroll-target="#what-are-fractions-decimals-and-percents">1.4.1 – What Are Fractions, Decimals, and Percents?</a></li>
+  <li><a href="#converting-fractions-to-decimals" id="toc-converting-fractions-to-decimals" class="nav-link" data-scroll-target="#converting-fractions-to-decimals">1.4.2 – Converting Fractions to Decimals</a></li>
+  <li><a href="#converting-decimals-to-percents" id="toc-converting-decimals-to-percents" class="nav-link" data-scroll-target="#converting-decimals-to-percents">1.4.3 – Converting Decimals to Percents</a></li>
+  <li><a href="#converting-percents-to-decimals-and-fractions" id="toc-converting-percents-to-decimals-and-fractions" class="nav-link" data-scroll-target="#converting-percents-to-decimals-and-fractions">1.4.4 – Converting Percents to Decimals and Fractions</a></li>
+  <li><a href="#using-a-conversion-triangle" id="toc-using-a-conversion-triangle" class="nav-link" data-scroll-target="#using-a-conversion-triangle">1.4.5 – Using a Conversion Triangle</a></li>
+  <li><a href="#benchmark-values" id="toc-benchmark-values" class="nav-link" data-scroll-target="#benchmark-values">1.4.6 – Benchmark Values</a></li>
   </ul></li>
   <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✍️ Practice On Your Own</a></li>
   </ul>
@@ -659,9 +690,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Did you know that ½, 0.5, and 50% are all the same amount?</p>
-<p>In real life, we use <strong>fractions</strong>, <strong>decimals</strong>, and <strong>percents</strong> to describe parts of a whole — whether it’s sale prices, test scores, or how much of a task is finished.</p>
-<p>In this lesson, you’ll learn how to convert between these forms and use them in real-world problems. Being able to move between them will make you faster, more flexible, and more confident in math.</p>
+<p>Fractions, decimals, and percents are just different ways of showing the same thing — a part of a whole. Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.</p>
+<p>In this lesson, you’ll learn how to move between these forms and understand how they relate to each other. We’ll build on what you already know about simplifying fractions to make conversions easier.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="🎯 Objectives">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -674,8 +704,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <ul class="task-list">
 <li><label><input type="checkbox">Convert between fractions, decimals, and percents</label></li>
-<li><label><input type="checkbox">Use benchmark values to estimate and reason</label></li>
-<li><label><input type="checkbox">Solve real-world problems involving these number forms</label></li>
+<li><label><input type="checkbox">Use place value and division to convert fractions into decimals</label></li>
+<li><label><input type="checkbox">Understand and use common benchmark values like ½ = 0.5 = 50%</label></li>
 </ul>
 </div>
 </div>
@@ -689,190 +719,298 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="../../glossary.html#glossary-fraction" class="glossary-link" data-term="fraction">fraction</a>, <a href="../../glossary.html#glossary-decimal" class="glossary-link" data-term="decimal">decimal</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-term="percent">percent</a>, <a href="../../glossary.html#glossary-equivalent" class="glossary-link" data-term="equivalent">equivalent</a>, <a href="../../glossary.html#glossary-benchmark" class="glossary-link" data-term="benchmark">benchmark</a>, <a href="../../glossary.html#glossary-ratio" class="glossary-link" data-term="ratio">ratio</a></p>
+<p><a href="../../glossary.html#glossary-fraction" class="glossary-link" data-term="fraction">fraction</a>, <a href="../../glossary.html#glossary-decimal" class="glossary-link" data-term="decimal">decimal</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-term="percent">percent</a>, <a href="../../glossary.html#glossary-convert" class="glossary-link" data-term="convert">convert</a>, <a href="../../glossary.html#glossary-equivalent" class="glossary-link" data-term="equivalent">equivalent</a>, <a href="../../glossary.html#glossary-place-value" class="glossary-link" data-term="place value">place value</a></p>
 </div>
 </div>
+<hr>
 <section id="warm-up" class="level2">
 <h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
 <ol type="1">
-<li><p>What is ½ as a decimal? As a percent?</p></li>
-<li><p>Which is more: 0.75 or 2⁄3?</p></li>
-<li><p>What percent is the same as 3⁄4?</p></li>
+<li><p>Which one doesn’t belong?</p>
+<ol type="a">
+<li><span class="math inline">\(\frac{1}{2}\)</span></li>
+<li>0.25</li>
+<li>50%</li>
+<li>0.5</li>
+</ol>
+<p><em>(Explain your reasoning. There’s more than one right answer.)</em></p></li>
+<li><p>You drink half a bottle of water. Your friend drinks 60% of a bottle. Who drank more?</p></li>
+<li><p>Which two of these do you think are closest in value?</p>
+<ol type="a">
+<li><span class="math inline">\(\frac{2}{3}\)</span></li>
+<li>70%</li>
+<li>0.25</li>
+<li><span class="math inline">\(\frac{3}{4}\)</span></li>
+</ol></li>
 </ol>
 <hr>
 </section>
 <section id="learn-together" class="level2">
 <h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
-<section id="what-are-these-numbers-really-saying" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-these-numbers-really-saying">1.4.1 – What Are These Numbers Really Saying?</h3>
-<p>All three number types describe a <strong>part of a whole</strong>:</p>
+<section id="what-are-fractions-decimals-and-percents" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-fractions-decimals-and-percents">1.4.1 – What Are Fractions, Decimals, and Percents?</h3>
+<p>Fractions, decimals, and percents are all ways of showing a <strong>part of a whole</strong>.</p>
+<ul>
+<li>A <strong>fraction</strong> shows how many parts out of a total (e.g.&nbsp;<span class="math inline">\(\frac{2}{5}\)</span> = 2 out of 5 equal parts).</li>
+<li>A <strong>decimal</strong> uses place value and powers of 10 (e.g.&nbsp;0.4 = 4 tenths).</li>
+<li>A <strong>percent</strong> means “per 100” — it’s like a fraction with a denominator of 100 (e.g.&nbsp;25% = <span class="math inline">\(\frac{25}{100}\)</span>).</li>
+</ul>
+<p>Let’s look at one example in all three forms:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Example</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fraction</td>
+<td><span class="math inline">\(\frac{1}{2}\)</span></td>
+<td>1 out of 2 parts</td>
+</tr>
+<tr class="even">
+<td>Decimal</td>
+<td>0.5</td>
+<td>5 tenths</td>
+</tr>
+<tr class="odd">
+<td>Percent</td>
+<td>50%</td>
+<td>50 out of 100 parts</td>
+</tr>
+</tbody>
+</table>
+<p>These are all <a href="../../glossary.html#glossary-equivalent" class="glossary-link" data-term="equivalent">equivalent</a> – they mean the same thing, just written in different ways.</p>
+<hr>
+<p><strong>Here’s another example:</strong></p>
+<p>All of the following represent the same value: <span class="math inline">\(\frac{2}{5}\)</span> = 0.4 = 40%.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_1/Lesson_4/fraction_2_fifths.png" class="img-fluid figure-img" style="width:33.0%" alt="A grid with $\frac{2}{5}$ of the boxes shaded"></p>
+<figcaption>Fraction grid showing the fraction <span class="math inline">\(\frac{2}{5}\)</span></figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_1/Lesson_4/pie_chart_40_percent.png" class="img-fluid figure-img" style="width:50.0%" alt="A pie chart with 40% taken out."></p>
+<figcaption>Pie chart highlighting 40%</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_1/Lesson_4/linechart_point_4.png" class="img-fluid figure-img" style="width:100.0%" alt="Number line with a point at 0.4"></p>
+<figcaption>Number line with 0.4 marked</figcaption>
+</figure>
+</div>
+<p>Each image shows a <strong>part of a whole</strong> in a different way — but they all represent the same quantity.</p>
+<hr>
+</section>
+<section id="converting-fractions-to-decimals" class="level3">
+<h3 class="anchored" data-anchor-id="converting-fractions-to-decimals">1.4.2 – Converting Fractions to Decimals</h3>
+<p>To convert a fraction to a decimal, divide the numerator by the denominator.</p>
+<p>Let’s try:</p>
+<p><span class="math display">\[
+\frac{3}{4} = 3 \div 4 = 0.75
+\]</span></p>
+<p>Use a calculator if needed!</p>
+<p>Try these:</p>
+<ul>
+<li><span class="math inline">\(\frac{1}{2} = 1 \div 2 = \_\_\_\)</span></li>
+<li><span class="math inline">\(\frac{2}{5} = 2 \div 5 = \_\_\_\)</span></li>
+<li><span class="math inline">\(\frac{1}{8} = 1 \div 8 = \_\_\_\)</span></li>
+</ul>
+<p>Some fractions turn into decimals that <strong>stop</strong> (terminate), and some <strong>repeat forever</strong>.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Fraction</th>
 <th>Decimal</th>
-<th>Percent</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>½</td>
-<td>0.5</td>
-<td>50%</td>
+<td><span class="math inline">\(\frac{1}{4}\)</span></td>
+<td>0.25</td>
 </tr>
 <tr class="even">
-<td>¼</td>
-<td>0.25</td>
-<td>25%</td>
+<td><span class="math inline">\(\frac{1}{3}\)</span></td>
+<td>0.333…</td>
 </tr>
 <tr class="odd">
-<td>¾</td>
-<td>0.75</td>
-<td>75%</td>
+<td><span class="math inline">\(\frac{2}{3}\)</span></td>
+<td>0.666…</td>
 </tr>
 <tr class="even">
-<td>1⁄10</td>
-<td>0.1</td>
-<td>10%</td>
+<td><span class="math inline">\(\frac{1}{5}\)</span></td>
+<td>0.2</td>
 </tr>
 </tbody>
 </table>
+<p>If the decimal repeats, we write a bar over the repeating part: <span class="math inline">\(\frac{1}{3} = 0.\overline{3}\)</span></p>
+<hr>
+</section>
+<section id="converting-decimals-to-percents" class="level3">
+<h3 class="anchored" data-anchor-id="converting-decimals-to-percents">1.4.3 – Converting Decimals to Percents</h3>
+<p>To turn a decimal into a percent, multiply by 100 (move the decimal two places right) and add a percent sign:</p>
+<ul>
+<li><span class="math inline">\(0.5 \rightarrow 50%\)</span></li>
+<li><span class="math inline">\(0.75 \rightarrow 75%\)</span></li>
+<li><span class="math inline">\(0.08 \rightarrow 8%\)</span></li>
+</ul>
+<p><strong>Try this:</strong> What percent is 0.6?</p>
 <blockquote class="blockquote">
-<p>✔ They look different, but they mean the same thing.</p>
+<p><span class="math inline">\(0.6 \times 100 = 60%\)</span></p>
 </blockquote>
 <hr>
 </section>
-<section id="converting-between-forms" class="level3">
-<h3 class="anchored" data-anchor-id="converting-between-forms">1.4.2 – Converting Between Forms</h3>
-<section id="fraction-decimal" class="level4">
-<h4 class="anchored" data-anchor-id="fraction-decimal">Fraction → Decimal</h4>
-<p>Divide the top by the bottom Example: 3⁄4 → 3 ÷ 4 = <strong>0.75</strong></p>
-</section>
-<section id="decimal-percent" class="level4">
-<h4 class="anchored" data-anchor-id="decimal-percent">Decimal → Percent</h4>
-<p>Move the decimal two places to the right (×100) 0.75 → <strong>75%</strong></p>
-</section>
-<section id="percent-decimal" class="level4">
-<h4 class="anchored" data-anchor-id="percent-decimal">Percent → Decimal</h4>
-<p>Move the decimal two places left (÷100) 25% → <strong>0.25</strong></p>
-</section>
-<section id="decimal-fraction" class="level4">
-<h4 class="anchored" data-anchor-id="decimal-fraction">Decimal → Fraction</h4>
-<p>Say the number out loud 0.6 = “six tenths” = 6⁄10 → simplify to <strong>3⁄5</strong></p>
-<hr>
-</section>
-</section>
-<section id="benchmarks-help-you-think-fast" class="level3">
-<h3 class="anchored" data-anchor-id="benchmarks-help-you-think-fast">1.4.3 – Benchmarks Help You Think Fast</h3>
-<p>These values come up a lot — <strong>know them by heart</strong>:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Fraction</th>
-<th>Decimal</th>
-<th>Percent</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>½</td>
-<td>0.5</td>
-<td>50%</td>
-</tr>
-<tr class="even">
-<td>⅓</td>
-<td>0.333…</td>
-<td>~33%</td>
-</tr>
-<tr class="odd">
-<td>¼</td>
-<td>0.25</td>
-<td>25%</td>
-</tr>
-<tr class="even">
-<td>¾</td>
-<td>0.75</td>
-<td>75%</td>
-</tr>
-<tr class="odd">
-<td>1⁄5</td>
-<td>0.2</td>
-<td>20%</td>
-</tr>
-</tbody>
-</table>
-<p>If you can picture these in your head, you’ll be able to <strong>estimate, compare, and calculate faster.</strong></p>
-<hr>
-</section>
-<section id="real-life-uses" class="level3">
-<h3 class="anchored" data-anchor-id="real-life-uses">1.4.4 – Real-Life Uses</h3>
-<p>You’ll see these forms all the time:</p>
+<section id="converting-percents-to-decimals-and-fractions" class="level3">
+<h3 class="anchored" data-anchor-id="converting-percents-to-decimals-and-fractions">1.4.4 – Converting Percents to Decimals and Fractions</h3>
+<p>To convert a percent to a decimal, divide by 100 (move the decimal two places left):</p>
 <ul>
-<li><strong>Shopping</strong>: 20% off = pay 80% of the price</li>
-<li><strong>Grades</strong>: 17 out of 20 = 85%</li>
-<li><strong>Weather</strong>: 30% chance of rain</li>
-<li><strong>Data</strong>: 40% of students passed = 4⁄10 = 0.4</li>
+<li><span class="math inline">\(75% \rightarrow 0.75\)</span></li>
+<li><span class="math inline">\(20% \rightarrow 0.20\)</span></li>
+<li><span class="math inline">\(5% \rightarrow 0.05\)</span></li>
 </ul>
-<div class="realworld-box callout callout-style-default callout-tip no-icon callout-titled" title="🌍 In the Real World">
+<p>To write it as a fraction, think of the percent as “out of 100,” then simplify if possible:</p>
+<ul>
+<li><span class="math inline">\(75% = \frac{75}{100} = \frac{3}{4}\)</span></li>
+<li><span class="math inline">\(20% = \frac{20}{100} = \frac{1}{5}\)</span></li>
+<li><span class="math inline">\(5% = \frac{5}{100} = \frac{1}{20}\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="💡 Tip">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🌍 In the Real World
+💡 Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A store is having a 25% off sale. That means you only pay 75% of the price. If a jacket costs $60, then:</p>
-<p>60 × 0.75 = $45 → That’s your sale price.</p>
+<p>If the percent ends in a 0 or 5, it often simplifies nicely as a fraction.</p>
 </div>
 </div>
+<hr>
+</section>
+<section id="using-a-conversion-triangle" class="level3">
+<h3 class="anchored" data-anchor-id="using-a-conversion-triangle">1.4.5 – Using a Conversion Triangle</h3>
+<p>Here’s a quick triangle you can draw to help you remember how to switch between all three forms.</p>
+<pre><code>     Fraction
+     /      \
+    /        \
+Decimal &lt;––&gt; Percent</code></pre>
+<ul>
+<li><strong>Fraction → Decimal</strong>: divide top ÷ bottom</li>
+<li><strong>Decimal → Percent</strong>: × 100</li>
+<li><strong>Percent → Decimal</strong>: ÷ 100</li>
+<li><strong>Fraction → Percent</strong>: Convert to decimal first, then multiply by 100</li>
+</ul>
+<hr>
+</section>
+<section id="benchmark-values" class="level3">
+<h3 class="anchored" data-anchor-id="benchmark-values">1.4.6 – Benchmark Values</h3>
+<p>Some conversions are so common that it helps to <strong>memorize</strong> them. These are called <strong>benchmark values</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Fraction</th>
+<th>Decimal</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\frac{1}{2}\)</span></td>
+<td>0.5</td>
+<td>50%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\frac{1}{4}\)</span></td>
+<td>0.25</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{3}{4}\)</span></td>
+<td>0.75</td>
+<td>75%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\frac{1}{3}\)</span></td>
+<td>0.333…</td>
+<td>33.3%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{2}{3}\)</span></td>
+<td>0.666…</td>
+<td>66.6%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\frac{1}{5}\)</span></td>
+<td>0.2</td>
+<td>20%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\frac{1}{10}\)</span></td>
+<td>0.1</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
 </section>
 <section id="practice-on-your-own" class="level2">
 <h2 class="anchored" data-anchor-id="practice-on-your-own">✍️ Practice On Your Own</h2>
-<p><strong>Conversions</strong></p>
+<p><strong>Conversions Practice</strong></p>
 <ol type="1">
-<li><p>Convert the following:</p>
+<li><p>Convert each fraction to a decimal:</p>
 <ol type="a">
-<li>⅘ → decimal → percent</li>
-<li>0.3 → fraction → percent</li>
-<li>12.5% → decimal → fraction</li>
-<li>⅛ → decimal (rounded) → percent (rounded)</li>
+<li><span class="math inline">\(\frac{1}{2}\)</span></li>
+<li><span class="math inline">\(\frac{2}{5}\)</span></li>
+<li><span class="math inline">\(\frac{3}{4}\)</span></li>
+<li><span class="math inline">\(\frac{1}{8}\)</span></li>
+<li><span class="math inline">\(\frac{2}{3}\)</span></li>
+</ol></li>
+<li><p>Convert each decimal to a percent:</p>
+<ol type="a">
+<li>0.4</li>
+<li>0.75</li>
+<li>0.125</li>
+<li>0.01</li>
+<li>0.6</li>
+</ol></li>
+<li><p>Convert each percent to a fraction (in simplest form):</p>
+<ol type="a">
+<li>50%</li>
+<li>25%</li>
+<li>80%</li>
+<li>12.5%</li>
+<li>5%</li>
+</ol></li>
+<li><p>Convert each percent to a decimal:</p>
+<ol type="a">
+<li>15%</li>
+<li>30%</li>
+<li>0.5%</li>
+<li>66%</li>
+<li>3.5%</li>
 </ol></li>
 </ol>
 <hr>
 <p><strong>Real-World Problems</strong></p>
-<ol start="2" type="1">
-<li><p>You scored 18 out of 20 on a quiz. What is your:</p>
-<ol type="a">
-<li>Fraction score</li>
-<li>Decimal score</li>
-<li>Percent score</li>
-</ol></li>
-<li><p>A survey says 0.6 of people prefer vanilla. What is this as a:</p>
-<ol type="a">
-<li>Fraction</li>
-<li>Percent</li>
-</ol></li>
-<li><p>You get 30% off a $50 pair of shoes. What do you pay?</p></li>
+<ol start="5" type="1">
+<li><p>A store is offering 25% off all items. If a shirt costs $20, how much is the discount? What’s the sale price?</p></li>
+<li><p>A survey shows that 60% of students like pizza. If 120 students were asked, how many said they like pizza?</p></li>
+<li><p>A recipe calls for 0.75 cups of sugar. Write this as a fraction and as a percent.</p></li>
+<li><p>A basketball player makes 18 out of 24 free throws. What fraction of shots did they make? Write it as a percent.</p></li>
 </ol>
 <hr>
-<p><strong>Benchmarks &amp; Estimation</strong></p>
-<ol start="5" type="1">
-<li>Which is bigger?
-<ol type="a">
-<li>⅗ or 60%</li>
-<li>⅓ or 0.4</li>
-<li>70% or ⅔</li>
-</ol></li>
-<li>Estimate whether each is closer to 0%, 25%, 50%, 75%, or 100%:
-<ol type="a">
-<li>0.68</li>
-<li>9⁄10</li>
-<li>0.22</li>
-</ol></li>
+<p><strong>Challenge Problems</strong></p>
+<ol start="9" type="1">
+<li><p>Write a fraction that equals 0.625 and simplify it.</p></li>
+<li><p>A student scored 36 out of 45 on a quiz. What percent did they get?</p></li>
 </ol>
 <hr>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="🔑 Answer Key">
@@ -887,42 +1025,54 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>1. Conversions</strong></p>
+<p><strong>Conversions Practice</strong></p>
+<ol type="1">
+<li><p>Fractions to Decimals:</p>
 <ol type="a">
-<li>⅘ → 0.8 → 80%</li>
-<li>0.3 → 3⁄10 → 30%</li>
-<li>12.5% → 0.125 → 1⁄8</li>
-<li>⅛ → 0.125 → 12.5%</li>
-</ol>
-<hr>
-<p><strong>2. Quiz Score</strong></p>
+<li>0.5</li>
+<li>0.4</li>
+<li>0.75</li>
+<li>0.125</li>
+<li>0.666…</li>
+</ol></li>
+<li><p>Decimals to Percents:</p>
 <ol type="a">
-<li>18⁄20 → 9⁄10</li>
-<li>0.9</li>
-<li>90%</li>
-</ol>
-<hr>
-<p><strong>3. Survey</strong></p>
-<ol type="a">
-<li>0.6 = 3⁄5</li>
+<li>40%</li>
+<li>75%</li>
+<li>12.5%</li>
+<li>1%</li>
 <li>60%</li>
+</ol></li>
+<li><p>Percents to Fractions:</p>
+<ol type="a">
+<li><span class="math inline">\(\frac{1}{2}\)</span></li>
+<li><span class="math inline">\(\frac{1}{4}\)</span></li>
+<li><span class="math inline">\(\frac{4}{5}\)</span></li>
+<li><span class="math inline">\(\frac{1}{8}\)</span></li>
+<li><span class="math inline">\(\frac{1}{20}\)</span></li>
+</ol></li>
+<li><p>Percents to Decimals:</p>
+<ol type="a">
+<li>0.15</li>
+<li>0.3</li>
+<li>0.005</li>
+<li>0.66</li>
+<li>0.035</li>
+</ol></li>
 </ol>
 <hr>
-<p><strong>4. Discount</strong></p>
-<p>30% of 50 = 0.30 × 50 = 15 You pay: 50 − 15 = <strong>$35</strong></p>
-<hr>
-<p><strong>5. Compare</strong></p>
-<ol type="a">
-<li>Equal (⅗ = 60%)</li>
-<li>0.4 is bigger</li>
-<li>70% is slightly more than ⅔</li>
+<p><strong>Real-World Problems</strong></p>
+<ol start="5" type="1">
+<li><p>25% of $20 is $5, so the sale price is $15.</p></li>
+<li><p>60% of 120 is 72 students.</p></li>
+<li><p>0.75 = <span class="math inline">\(\frac{3}{4}\)</span> = 75%</p></li>
+<li><p><span class="math inline">\(\frac{18}{24} = \frac{3}{4} = 75%\)</span></p></li>
 </ol>
 <hr>
-<p><strong>6. Estimate</strong></p>
-<ol type="a">
-<li>~75%</li>
-<li>~100%</li>
-<li>~25%</li>
+<p><strong>Challenge Problems</strong></p>
+<ol start="9" type="1">
+<li><p>0.625 = <span class="math inline">\(\frac{625}{1000} = \frac{5}{8}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{36}{45} = \frac{4}{5} = 80%\)</span></p></li>
 </ol>
 </div>
 </div>
@@ -1336,8 +1486,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html" class="pagination-link" aria-label="1.3 – GCF &amp; Simplifying Fractions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1.3 – GCF &amp; Simplifying Fractions</span>
+      <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html" class="pagination-link" aria-label="1.3 - GCF &amp; Simplifying Fractions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1.3 - GCF &amp; Simplifying Fractions</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
