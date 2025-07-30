@@ -1,4 +1,4 @@
-# 1.2 – Factors, Multiples & Prime Factorization {.unnumbered}
+# 1.2 - Factors, Multiples & Prime Factorization {.unnumbered}
 
 Have you ever had to split something up evenly — like slices of pizza or players on a team? That’s really what {{< glink factors >}} are about: dividing numbers into equal parts.
 
@@ -34,7 +34,7 @@ You’ll use these skills again and again — from simplifying fractions to solv
 
 ## 👥 Learn Together
 
-### 1.2.1 – What Are Factors?
+### 1.2.1 - What Are Factors?
 
 A {{< glink factor >}} of a number is a whole number that divides it evenly — with no {{< glink remainder >}}.
 
@@ -56,7 +56,7 @@ Only one number does: **1**. It only has itself as a factor and so it is neither
 
 ---
 
-### 1.2.2 – What Are Multiples?
+### 1.2.2 - What Are Multiples?
 
 A {{< glink multiple >}} is what you get when you multiply a number by 1, 2, 3, 4…
 
@@ -79,7 +79,7 @@ Here is a number line that shows multiples of three.
 
 ---
 
-### 1.2.3 – Prime vs. Composite
+### 1.2.3 - Prime vs. Composite
 
 A **prime number** has only 2 factors: 1 and itself.
 Examples: 2, 3, 5, 7, 11, 13...
@@ -93,7 +93,7 @@ Prime numbers play a big role in **encryption**, which keeps your data safe when
 
 ---
 
-### 1.2.4 – Prime Factorization and Factor Trees
+### 1.2.4 - Prime Factorization and Factor Trees
 
 Every number can be broken into a **product of prime numbers** — sort of like breaking a LEGO® sculpture into individual bricks. These prime factors are the basic building blocks of all whole numbers.
 
@@ -444,11 +444,11 @@ flowchart TB
 4. Fill in the missing numbers.
 
    a. 
-
+   >
    > ![](/images/Unit_1/Lesson_2/lesson_1_2_4a.png){width=300}
 
    b. 
-
+   >
    > ![](/images/Unit_1/Lesson_2/lesson_1_2_4b.png){width=300}
 
 ---
@@ -485,5 +485,5 @@ flowchart TB
 
 >  No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
 
----
+
 :::
