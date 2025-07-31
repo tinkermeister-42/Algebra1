@@ -372,6 +372,10 @@ A percent is a number out of 100. It uses the percent symbol (%) and is another 
 Place value tells you what each digit in a number means, based on its position. In a decimal like 0.4, the 4 is in the tenths place — it means 4 tenths.
 Each place to the right is worth ten times less than the one before it.
 
+> **Example:**
+>
+> ![](/images/Glossary/place_value.png)
+
 --- 
 
 ### Positive {#glossary-positive}
@@ -436,7 +440,7 @@ There are three common ways to write a ratio:
 
   - Using a colon (like 2:3)
 
-  - As a fraction (like \frac{2}{3})
+  - As a fraction (like $\frac{2}{3}$)
 
   - Using the word "to" (like 2 to 3)
 

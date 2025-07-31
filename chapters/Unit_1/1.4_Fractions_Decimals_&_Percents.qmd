@@ -1,14 +1,17 @@
-# 1.4 – Fractions, Decimals & Percents {.unnumbered}
+# 1.4 – Fractions, Decimals & Percents: Conversions {.unnumbered}
 
 Fractions, decimals, and percents are just different ways of showing the same thing — a part of a whole. Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.
 
-In this lesson, you’ll learn how to move between these forms and understand how they relate to each other. We'll build on what you already know about simplifying fractions to make conversions easier.
+In this lesson, you’ll learn how to move between these forms and understand how they relate to each other. This will be an important skill for solving many types of problems that involve parts of a whole.
 
 :::{.callout-note icon=false title="🎯 Objectives"}
 
-* [ ] Convert between fractions, decimals, and percents
-* [ ] Use place value and division to convert fractions into decimals
-* [ ] Understand and use common benchmark values like ½ = 0.5 = 50%
+* [ ] I can change a fraction, decimal, or percent into the other forms
+* [ ] I can tell when a decimal repeats or ends and write it as a fraction
+* [ ] I can use place value to write a decimal as a fraction, or a fraction as a decimal
+* [ ] I know that a percent means “out of 100” and can use it to show part of a whole
+* [ ] I can use common benchmarks like ½ = 0.5 = 50% to help estimate or compare 
+* [ ] I can compare and order fractions, decimals, and percents in real-world situations
 
 :::
 
@@ -30,9 +33,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
     *(Explain your reasoning. There’s more than one right answer.)*
 
-2. You drink half a bottle of water. Your friend drinks 60% of a bottle. Who drank more?
-
-3. Which two of these do you think are closest in value?
+2. Which two of these do you think are closest in value?
 
     a. $\frac{2}{3}$
     b. 70%
@@ -47,41 +48,44 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
 Fractions, decimals, and percents are all ways of showing a **part of a whole**.
 
-- A **fraction** shows how many parts out of a total (e.g. $\frac{2}{5}$ = 2 out of 5 equal parts).
-- A **decimal** uses place value and powers of 10 (e.g. 0.4 = 4 tenths).
-- A **percent** means “per 100” — it’s like a fraction with a denominator of 100 (e.g. 25% = $\frac{25}{100}$).
+A **fraction** shows how many parts out of a total. We often use them when:
 
-Let’s look at one example in all three forms:
+- Measuring ingredients: "Add $\frac{2}{3}$ of a cup of milk."
+- Position in a ranking: "She ranked 2 out of 350 or $\frac{2}{350}$."
+- Splitting or sharing something: "We each got $\frac{3}{8}$ of the pizza"
 
-| Name     | Example       | Meaning              |
-|----------|---------------|----------------------|
-| Fraction | $\frac{1}{2}$ | 1 out of 2 parts     |
-| Decimal  | 0.5           | 5 tenths             |
-| Percent  | 50%           | 50 out of 100 parts  |
+A **decimal** uses place value and powers of 10. Decimals could be used for:
 
-These are all {{< glink equivalent >}} – they mean the same thing, just written in different ways.
+- Dealing with money: "This costs $4.75."
+- Measuring length or weight: "The board is 2.5 feet long."
+- Reporting data or averages: "The average was 3.6 stars"
 
----
+A **percent** means “per 100”. Percents are used when:
 
-**Here’s another example:**
-
-All of the following represent the same value: $\frac{2}{5}$ = 0.4 = 40%.
-
-![Fraction grid showing the fraction $\frac{2}{5}$](/images/Unit_1/Lesson_4/fraction_2_fifths.png){fig-alt="A grid with $\frac{2}{5}$ of the boxes shaded" width=33%}
-
-![Pie chart highlighting 40%](/images/Unit_1/Lesson_4/pie_chart_40_percent.png){fig-alt="A pie chart with 40% taken out." width=50%}
-
-![Number line with 0.4 marked](/images/Unit_1/Lesson_4/linechart_point_4.png){fig-alt="Number line with a point at 0.4" width=100%}
+- Talking about sales or discounts: "It's 20% off!"
+- Describing test scores: "She got 95% on the quiz."
+- Comparing populations or change: "Unemployment dropped by 2%."
 
 
-Each image shows a **part of a whole** in a different way — but they all represent the same quantity.
+We think about and visualize fractions, decimals, and percents differently too. Here is the same number shown in three different ways!
 
+
+![The fraction $\frac{2}{5}$](/images/Unit_1/Lesson_4/fraction_2_fifths.png){fig-align=center fig-alt="A grid with $\frac{2}{5}$ of the boxes shaded" width=33%}
+
+
+![The decimal 0.4](/images/Unit_1/Lesson_4/linechart_point_4.png){fig-align=center fig-alt="Number line with a point at 0.4" width=75%}
+
+
+![The percentage 40%](/images/Unit_1/Lesson_4/pie_chart_40_percent.png){fig-align=center fig-alt="A pie chart with 40% taken out." width=50%}
+
+
+You can always use decimals, fractions, and percents interchangeably. Which one you pick often depends on the situation and so it is useful to be able to turn one type into another. The following sections show how to do just that!
 
 ---
 
 ### 1.4.2 – Converting Fractions to Decimals
 
-To convert a fraction to a decimal, divide the numerator by the denominator.
+Have you ever wondered why the division symbol (&divide;) looks the way it does?  It has two dots separated by a bar because it represents a fraction! This is because fractions are just a different way to show division. To convert a fraction to a decimal, all we have to do is **divide** the numerator by the denominator.
 
 Let’s try:
 
@@ -89,15 +93,8 @@ $$
 \frac{3}{4} = 3 \div 4 = 0.75
 $$
 
-Use a calculator if needed!
 
-Try these:
-
-* $\frac{1}{2} = 1 \div 2 = \_\_\_$
-* $\frac{2}{5} = 2 \div 5 = \_\_\_$
-* $\frac{1}{8} = 1 \div 8 = \_\_\_$
-
-Some fractions turn into decimals that **stop** (terminate), and some **repeat forever**.
+When we convert to a decimal, we will see that some decimals **end**, and some **repeat forever**.
 
 | Fraction        | Decimal  |
 | --------------- | -------- |
@@ -109,63 +106,228 @@ Some fractions turn into decimals that **stop** (terminate), and some **repeat f
 If the decimal repeats, we write a bar over the repeating part:
 $\frac{1}{3} = 0.\overline{3}$
 
----
 
-### 1.4.3 – Converting Decimals to Percents
+::: {.callout-caution title="Watch Out: Repeating Decimals Aren’t Always Obvious"}
 
-To turn a decimal into a percent, multiply by 100 (move the decimal two places right) and add a percent sign:
+When you use a calculator to turn a fraction into a decimal, the result might look like it stops, but that can be misleading!
 
-* $0.5 \rightarrow 50%$
-* $0.75 \rightarrow 75%$
-* $0.08 \rightarrow 8%$
+Some fractions have repeating decimals that go on forever — but calculators round or cut them off.
 
-**Try this:**
-What percent is 0.6?
+For example:
 
-> $0.6 \times 100 = 60%$
+$\frac{2}{3}$ really equals $0.\overline{6}$ (0.6666…) but your calculator might show 0.6666666667
 
----
+This can cause small errors if you're not careful — especially when comparing values or converting back to fractions.
 
-### 1.4.4 – Converting Percents to Decimals and Fractions
+👉 Tip: If the decimal looks like it’s repeating (like 0.6666666667 or 0.14285714286...), it probably is!
+:::
 
-To convert a percent to a decimal, divide by 100 (move the decimal two places left):
 
-* $75% \rightarrow 0.75$
-* $20% \rightarrow 0.20$
-* $5% \rightarrow 0.05$
+:::{.callout-tip title="What fractions have repeating decimals?"}
 
-To write it as a fraction, think of the percent as “out of 100,” then simplify if possible:
+Fractions with denominators that only use multiples of 2 and 5 will end. Others repeat.
 
-* $75% = \frac{75}{100} = \frac{3}{4}$
-* $20% = \frac{20}{100} = \frac{1}{5}$
-* $5% = \frac{5}{100} = \frac{1}{20}$
+**Example 1:**
+ 
+The fraction $\frac{3}{10}$ has a denominator with factors 2 and 5. It ends and gives 0.3. 
 
-:::{.callout-note icon=false title="💡 Tip"}
-If the percent ends in a 0 or 5, it often simplifies nicely as a fraction.
+**Example 2**
+
+The fraction $\frac{2}{6}$ has a denominator with factors 2 and 3. It repeats and gives $0.\overline{3}$.
+
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Give it a try! Write $\frac{2}{5}$ as a decimal."}
+
+Using a calculator, we find that...
+
+$$
+\frac{2}{5} = 2 \div 5 = 0.4
+$$
+
 :::
 
 ---
 
-### 1.4.5 – Using a Conversion Triangle
+### 1.4.3 - Converting Fractions and Decimals to Percents
 
-Here’s a quick triangle you can draw to help you remember how to switch between all three forms.
+Turning a decimal into a percent is easy. We simply move the decimal point to the right twice (the same as multiplying by 100) and then add a % sign.
 
-```
-     Fraction
-     /      \
-    /        \
-Decimal <––> Percent
-```
+**Example:** Convert 0.234 to a percent
 
-* **Fraction → Decimal**: divide top ÷ bottom
-* **Decimal → Percent**: × 100
-* **Percent → Decimal**: ÷ 100
-* **Fraction → Percent**: Convert to decimal first, then multiply by 100
+To do this, we move the decimal two places to the right and then add a % sign. This gives us 23.4%. 
+
+![](/images/Unit_1/Lesson_4/convert_point_234.png){height=50 fig-alt="Converting 0.234 to 23.4%"}
+
+But what if there isn't a digit in the hundredths place? When we don't have enough digits to the right of the decimal, we just fill them in with zeros. 
+
+**Example:** Convert 0.4 to a percent.
+
+![](/images/Unit_1/Lesson_4/convert_point_4.png){height=50 fig-alt="Converting 0.4 to 40%"}
+
+But what if the number is bigger than 1? When the number is bigger than 1.0, we do exactly the same thing and end up with a percentage that is larger than 100%! 
+
+**Example:** Convert 3.2 to a percent.
+
+![](/images/Unit_1/Lesson_4/convert_3_point_2.png){height=50 fig-alt="Converting 3.2 to 320%"}
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 1.342 as a percent?"}
+
+We multiply by 100 (move the decimal to the right twice) and add a % sign. This gives...
+
+$$1.342 \times 100 = 134.2\%$$
+:::
 
 ---
 
-### 1.4.6 – Benchmark Values
+To convert a fraction to a percent, we first convert the fraction to a decimal.
 
+**Example:** Convert $\frac{3}{5}$ to a percent.
+
+$$
+\frac{3}{5} \Rightarrow 3 \div 5 = 0.6
+$$
+
+Now we convert the decimal to a percent.
+
+$$0.6 \Rightarrow 60\%$$
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is $\frac{2}{3}$ as a percent?"}
+
+First convert to a decimal:
+
+$$
+\frac{2}{3} \Rightarrow 2 \div 3 = 0.\overline{6}
+$$
+
+Now convert to a percent:
+
+$$
+0.\overline{6} \Rightarrow 66.\overline{6}\%
+$$
+
+:::
+
+---
+
+### 1.4.4 Converting Decimals to Fractions
+
+What if we want to go the other direction and convert a decimal to a fraction? The key to doing this is understanding {{< glink place value >}}. 
+
+Suppose we have the number 123.456. The following table shows the place value for each digit.
+
+| Place             | Value | Explanation                |
+|-------------------|:-----:|-----------------------------|
+| Hundreds          | 1     | 1 hundred = 100            |
+| Tens              | 2     | 2 tens = 20                |
+| Ones              | 3     | 3 ones = 3                 |
+| **Decimal Point** |  .    | Separates whole from part  |
+| Tenths            | 4     | 4 tenths = $\frac{4}{10}$  |
+| Hundredths        | 5     | 5 hundredths = $\frac{5}{100}$ |
+| Thousandths       | 6     | 6 thousandths = $\frac{6}{1000}$ |
+
+Place value helps us say the number differently. Instead of saying "123 **point** 456" we could say "123 **and** 456 **one thousandths**".  This is the trick to converting decimals to fractions.
+
+**Example 1:**
+
+Say we want to convert 0.75 to a fraction. We could say this is "zero **point** seven five" but it is more useful to say this is "75 one hundredths". This gives us our fraction!
+
+$$
+0.75 = \text{75 hundredths} \Rightarrow \frac{75}{100} = \frac{3}{4}
+$$
+
+
+**Example 2**
+
+Let's convert 0.1 into a fraction.
+
+$$
+0.1 = \text{1 tenth} \Rightarrow \frac{1}{10}
+$$
+
+**What if we have a number bigger than one?**
+
+If the number is bigger than one (like we saw with 4.23) we do the same thing, but we end up with a {{< glink mixed number >}}.
+
+$$
+4.23 = \text{4 and 23 hundredths} \Rightarrow 4\dfrac{23}{100}
+$$
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Give it a try! Write 0.51 as a fraction."}
+
+$$
+0.51 = \text{51 hundredths} \Rightarrow \frac{51}{100}
+$$
+
+:::
+
+---
+
+### 1.4.5 – Converting Percents to Decimals and Fractions
+
+To convert a percent to a decimal simply move the decimal two places left (the same as dividing by 100).
+
+For example, here is what it looks like to convert 41% to a decimal. Notice that we sometimes have to add zeros to the left so the decimal has a place to go. Also notice that if there is no decimal, we put it just after the number before moving to the right.
+
+![](/images/Unit_1/Lesson_4/convert_41_percent.png){height=50 fig-alt="Converting 41% to 0.41"}
+
+Here are some more examples:
+
+- 3.4% &rarr; 0.034
+
+- 75% &rarr; 0.75
+
+- 251% &rarr; 2.51
+
+- 0.2% &rarr; 0.002
+
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 35% as a decimal?"}
+
+We move the decimal to the left twice and remove the % sign. This gives...
+
+$$
+35\% = 0.35
+$$
+
+:::
+
+To write a percent as a fraction, first convert to a decimal and then convert to a fraction, simplifying if possible:
+
+- 3.4% &rarr; 0.034 &rarr; $\frac{34}{1000}$ &rarr; $\frac{17}{500}$
+
+- 75% &rarr; 0.75 &rarr; $\frac{75}{100}$ &rarr; $\frac{3}{4}$
+
+- 251% &rarr; 2.51 &rarr; $\frac{251}{100}$
+
+- 0.2% &rarr; 0.002 &rarr; $\frac{2}{1000}$ &rarr; $\frac{1}{500}$
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 35% as a fraction?"}
+
+First, convert to a decimal and then to a fraction.
+
+$$
+35\% = 0.35 \Rightarrow \text{35 hundredths} \Rightarrow \frac{35}{100} = \frac{7}{20}
+$$
+
+:::
+---
+
+### 1.4.5 – Bringing It All Together
+
+Now that you’ve seen how to convert between fractions, decimals, and percents, here’s a summary table to help you remember the steps:
+
+| From      |     To    | How to Convert                                                      |
+|-----------|-----------|---------------------------------------------------------------------|
+|  Fraction |  Decimal  | Divide the numerator by the denominator                             |
+|  Fraction |  Percent  | First convert to a decimal then convert to a percent                |
+|  Decimal  |  Fraction | Use place value (write the fraction as you would say it)            |
+|  Decimal  |  Percent  | Move the decimal two places right and add % sign                    |
+|  Percent  |  Decimal  | Move the decimal two places left and remove % sign                  |
+|  Percent  |  Fraction | First convert to a decimal and then convert to a fraction           |
+
+
+:::{.callout-tip title="Remember this!"}
 Some conversions are so common that it helps to **memorize** them. These are called **benchmark values**:
 
 | Fraction         | Decimal  | Percent |
@@ -176,7 +338,10 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 | $\frac{1}{3}$  | 0.333... | 33.3%   |
 | $\frac{2}{3}$  | 0.666... | 66.6%   |
 | $\frac{1}{5}$  | 0.2      | 20%     |
+| $\frac{1}{9}$  | 0.111... | 11.1%   |
 | $\frac{1}{10}$ | 0.1      | 10%     |
+
+:::
 
 ---
 
@@ -187,54 +352,79 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 1. Convert each fraction to a decimal:
 
    a. $\frac{1}{2}$
-   b. $\frac{2}{5}$
+   b. $\frac{3}{5}$
    c. $\frac{3}{4}$
    d. $\frac{1}{8}$
    e. $\frac{2}{3}$
+   f. $2\tfrac{2}{9}$
 
 2. Convert each decimal to a percent:
 
-   a. 0.4
-   b. 0.75
+   a. 0.42
+   b. 0.1
    c. 0.125
    d. 0.01
-   e. 0.6
+   e. 0.005
+   f. 5.03
 
-3. Convert each percent to a fraction (in simplest form):
-
-   a. 50%
-   b. 25%
-   c. 80%
-   d. 12.5%
-   e. 5%
-
-4. Convert each percent to a decimal:
+3. Convert each percent to a decimal:
 
    a. 15%
    b. 30%
    c. 0.5%
    d. 66%
    e. 3.5%
+   f. 132%
 
----
+4. Convert each percent to a fraction (in simplest form):
 
-**Real-World Problems**
+   a. 50%
+   b. 25%
+   c. 80%
+   d. 12.5%
+   e. 0.5%
+   f. 2.75%
 
-5. A store is offering 25% off all items. If a shirt costs $20, how much is the discount? What’s the sale price?
+**Comparison Questions**
 
-6. A survey shows that 60% of students like pizza. If 120 students were asked, how many said they like pizza?
+5. Show the following numbers on the same number line
+   - 0.25
+   - $\frac{4}{5}$
+   - 10%
 
-7. A recipe calls for 0.75 cups of sugar. Write this as a fraction and as a percent.
 
-8. A basketball player makes 18 out of 24 free throws. What fraction of shots did they make? Write it as a percent.
+6. Which is greatest? *(Explain how you know.)*
 
----
+   a. 0.65
+   b. 65%
+   c. $\frac{2}{3}$
+   d. $\frac{13}{20}$
+
+
+7. A test has 100 points. Which student did the best?
+
+   - Kai scored $\frac{4}{5}$ of the points
+   - Aaliyah scored 78%
+   - Zoe scored 0.76
+
 
 **Challenge Problems**
 
-9. Write a fraction that equals 0.625 and simplify it.
+8. Which is closest to $\frac{3}{4}$ (show your reasoning)?
 
-10. A student scored 36 out of 45 on a quiz. What percent did they get?
+   a. 70%
+   b. 0.72
+   c. $\frac{4}{5}$
+   d. 0.68
+
+
+9. A science quiz has 20 questions. Three students earned the following scores:
+
+      - Emily got 15 correct
+      - Omar got 75% correct
+      - Jalen got $\frac{14}{20}$ correct
+
+    Who had the highest score and who had the lowest?
 
 ---
 
@@ -242,56 +432,157 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 **Conversions Practice**
 
-1. Fractions to Decimals:
-
-   a. 0.5
-   b. 0.4
-   c. 0.75
-   d. 0.125
-   e. 0.666...
-
-2. Decimals to Percents:
-
-   a. 40%
-   b. 75%
-   c. 12.5%
-   d. 1%
-   e. 60%
-
-3. Percents to Fractions:
+1. Convert each fraction to a decimal:
 
    a. $\frac{1}{2}$
-   b. $\frac{1}{4}$
-   c. $\frac{4}{5}$
+
+   >  0.5
+
+   b. $\frac{3}{5}$
+
+   > 0.6
+
+   c. $\frac{3}{4}$
+
+   > 0.75
+
    d. $\frac{1}{8}$
-   e. $\frac{1}{20}$
 
-4. Percents to Decimals:
+   > 0.125
 
-   a. 0.15
-   b. 0.3
-   c. 0.005
-   d. 0.66
-   e. 0.035
+   e. $\frac{2}{3}$
 
----
+   > $0.\overline{6}$
 
-**Real-World Problems**
+   f. $2\tfrac{2}{9}$
 
-5. 25% of $20 is $5, so the sale price is $15.
+   > $2.\overline{2}$
 
-6. 60% of 120 is 72 students.
+2. Convert each decimal to a percent:
 
-7. 0.75 = $\frac{3}{4}$ = 75%
+   a. 0.42
 
-8. $\frac{18}{24} = \frac{3}{4} = 75%$
+   > 42%
 
----
+   b. 0.1
+
+   > 10%
+
+   c. 0.125
+
+   > 12.5%
+
+   d. 0.01
+
+   > 1%
+
+   e. 0.005
+
+   > 0.5%
+
+   f. 5.03
+
+   > 503%
+
+3. Convert each percent to a decimal:
+
+   a. 15%
+
+   > 0.15
+
+   b. 30%
+
+   > 0.3
+
+   c. 0.5%
+
+   > 0.005
+
+   d. 66%
+
+   > 0.66
+
+   e. 3.5%
+
+   > 0.035
+
+   f. 132%
+
+   > 1.32
+
+4. Convert each percent to a fraction (in simplest form):
+
+   a. 50%
+
+   > $\frac{1}{2}$
+
+   b. 25%
+
+   > $\frac{1}{4}$
+
+   c. 80%
+
+   > $\frac{4}{5}$
+
+   d. 12.5%
+
+   > $\frac{1}{8}$
+
+   e. 0.5%
+
+   > $\frac{1}{200}$
+
+   f. 2.75%
+
+   > $2\tfrac{3}{4}$
+
+
+**Comparison Questions**
+
+5. Show the following numbers on the same number line
+   - 0.25
+   - $\frac{4}{5}$
+   - 10%
+
+   > ![](/images/Unit_1/Lesson_4/answer_5.png)
+
+
+6. Which is greatest? *(Explain how you know.)*
+
+   a. 0.65
+   b. 65%
+   c. $\frac{2}{3}$
+   d. $\frac{13}{20}$
+
+   > $\frac{2}{3}$ is greatest because it equals $0.\overline{6}$ all of the others are equal to 0.65.
+
+7. A test has 100 points. Which student did the best?
+
+   - Kai scored $\frac{4}{5}$ of the points
+   - Aaliyah scored 78%
+   - Zoe scored 0.76
+
+   > Kai because he scored 80% and the others scored 78% and 76%.
 
 **Challenge Problems**
 
-9. 0.625 = $\frac{625}{1000} = \frac{5}{8}$
+8. Which is closest to $\frac{3}{4}$ (show your reasoning)?
 
-10. $\frac{36}{45} = \frac{4}{5} = 80%$
+   a. 70%
+   b. 0.72
+   c. $\frac{4}{5}$
+   d. 0.68
+
+   > B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are further away.
+
+9. A science quiz has 20 questions. Three students earned the following scores:
+
+      - Emily got 15 correct
+      - Omar got 75% correct
+      - Jalen got $\frac{14}{20}$ correct
+
+    Who had the highest score and who had the lowest?
+
+    > Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
 
 :::

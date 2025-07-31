@@ -1,0 +1,202 @@
+# 1.5 – Solving Problems with Fractions, Decimals & Percents {.unnumbered}
+
+Now that you know how to convert between fractions, decimals, and percents, it's time to put that knowledge to work! In this lesson, you'll solve real-world problems involving discounts, grades, part-whole relationships, and more.
+
+:::{.callout-note icon=false title="🎯 Objectives (Missouri Standards Aligned)"}
+* [ ] Solve real-world problems involving percents, including discounts, tax, and simple interest (MA.7.RP.A.3)
+* [ ] Use fractions, decimals, and percents to solve multistep ratio and percent problems (MA.7.RP.A.3)
+* [ ] Convert between forms to support problem solving (builds on MA.6.RP.A.3c)
+:::
+
+:::{.callout-note icon=false title="📚 Vocabulary"}
+{{< glink percent >}}, {{< glink fraction >}}, {{< glink decimal >}}, {{< glink part >}}, {{< glink whole >}}, {{< glink convert >}}, {{< glink percent of >}}
+:::
+
+---
+
+## 🔥 Warm-Up
+
+1. You scored 40 out of 50 on a quiz. What percent is that?
+
+2. What number is 25% of 60?
+
+3. Is 0.6 greater than $\frac{2}{3}$? Explain how you know.
+
+4. Write 0.8, $\frac{3}{4}$, and 75% in order from least to greatest.
+
+---
+
+## 👥 Learn Together
+
+### 1.5.1 – What is “Percent of a Number”?
+
+When you see a phrase like **"What is 25% of 80?"**, you’re really being asked to find a part of a whole. “Of” usually means **multiply**.
+
+$$
+25\% \text{ of } 80 = 0.25 \times 80 = 20
+$$
+
+You can also write this as a fraction:
+
+$$
+\frac{25}{100} \times 80 = \frac{1}{4} \times 80 = 20
+$$
+
+---
+
+### 1.5.2 – Finding the Percent
+
+Sometimes we know the part and the whole, and want to know what **percent** that part is.
+
+> You got 21 questions right out of 25. What percent is that?
+
+$$
+\frac{21}{25} = 0.84 \Rightarrow 84\%
+$$
+
+So you got an 84%!
+
+---
+
+### 1.5.3 – Percent Problems in Reverse
+
+What if we know the part and the percent, and want to find the whole?
+
+> 30 is 10% of what number?
+
+Set it up like this:
+
+$$
+0.10 \times \text{(whole)} = 30 \Rightarrow \text{whole} = \frac{30}{0.10} = 300
+$$
+
+Or write an equation:
+
+$$
+10\% \times x = 30 \Rightarrow x = 300
+$$
+
+---
+
+### 1.5.4 – Practical Examples
+
+Here are some common situations where you’ll use these ideas:
+
+---
+
+#### 🛍️ Discounts
+
+> A backpack costs $45. It’s 20% off. What is the sale price?
+
+1. Find the discount:
+   $$0.20 \times 45 = 9$$
+
+2. Subtract from original price:
+   $$45 - 9 = 36$$
+
+The sale price is **$36**.
+
+---
+
+#### 🎓 Grades
+
+> You scored 85%, 92%, and 78% on three tests. What is your average?
+
+Add the scores and divide by 3:
+
+$$
+\frac{85 + 92 + 78}{3} = \frac{255}{3} = 85
+$$
+
+Your average is **85%**.
+
+---
+
+#### 🧾 Tips and Tax
+
+> A restaurant bill is $48. You want to leave a 15% tip. How much is the tip?
+
+$$
+0.15 \times 48 = 7.20
+$$
+
+Tip: **$7.20**
+
+---
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try It Together"}
+
+1. A student scored 18 out of 20 on a quiz. What percent did they get?
+
+2. What is 12.5% of 80?
+
+3. A jacket is $60. It’s on sale for 30% off. What’s the sale price?
+
+4. A test has 25 questions. You got 20 right. What percent is that?
+
+:::
+
+---
+
+## ✍️ Practice On Your Own
+
+### **Percent Word Problems**
+
+1. What is 40% of 120?
+
+2. A phone costs $300 and is marked down by 25%. What is the sale price?
+
+3. You score 7 out of 10 on a quiz. What percent is that?
+
+4. A student answered 42 out of 56 questions correctly. What percent is that?
+
+5. 16 is 20% of what number?
+
+6. What number is 150% of 12?
+
+---
+
+### **Mixed Review**
+
+7. Write each value in all three forms (fraction, decimal, percent):
+
+   a. One-half  
+   b. 0.25  
+   c. 75%
+
+8. Order these from least to greatest:  
+   0.3, 33%, $\frac{1}{4}$, $\frac{3}{10}$
+
+9. Which is greater: $\frac{4}{5}$ or 85%?
+
+10. A test is worth 60 points. You score 51. What percent did you get?
+
+---
+
+### **Challenge Problems**
+
+11. A shirt originally costs $40. It’s discounted by 20%, then another 15% off the reduced price. What’s the final price?
+
+12. A student gets 18 out of 20 on one test, 27 out of 30 on another, and 42 out of 50 on the final. What is their overall percent average?
+
+---
+
+::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+
+1. 48  
+2. $225  
+3. 70%  
+4. 75%  
+5. 80  
+6. 18  
+7.  
+   a. $\frac{1}{2}$ = 0.5 = 50%  
+   b. $\frac{1}{4}$ = 0.25 = 25%  
+   c. $\frac{3}{4}$ = 0.75 = 75%  
+8. $\frac{1}{4}$, 0.3, $\frac{3}{10}$, 33%  
+9. $\frac{4}{5} = 0.8$ and 85% = 0.85 → 85% is greater  
+10. $51 \div 60 = 85\%$  
+11. First: $40 - 8 = 32$; Second: $32 - (0.15 × 32) = 27.20$  
+12. Percentages: 90%, 90%, 84% → Average = 88%
+
+:::

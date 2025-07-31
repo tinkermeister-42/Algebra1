@@ -533,7 +533,7 @@ $$2 * 2 * 2 = 8$$
 
 In the last section, dividing two numbers showed how to "cancel out" or eliminate shared factors. This is helpful when you want to {{< glink simplify >}} a fraction! 
 
-Simplifying a fraction means rewriting it in its {{< glink simplest form >}}. This makes a fraction as "small" or "basic" as possible without changing its value. Divide both the {{< glink numerator >}} (top number) and the {{< glink denominator >}} (bottom number) by their {{< glink greatest common factor >}} (GCF) – like finding the biggest number to divide both whole numbers in the previous examples. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1
+Simplifying a fraction means rewriting it in its {{< glink simplest form >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1
 
 --- 
 
