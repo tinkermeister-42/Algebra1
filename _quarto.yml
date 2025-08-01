@@ -51,8 +51,8 @@ book:
         - file: chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.qmd
         - file: chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
         - file: chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.qmd
-        - file: chapters/Unit_1/1.5_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
-        - file: chapters/Unit_1/1.6_Multiply_Divide_&_Compare_Fractions.qmd
+        - file: chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.qmd
+        - file: chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
         - file: chapters/Unit_1/1.7_Order_of_Operations.qmd
 
     - part: "Unit 2: Algebraic Expressions"

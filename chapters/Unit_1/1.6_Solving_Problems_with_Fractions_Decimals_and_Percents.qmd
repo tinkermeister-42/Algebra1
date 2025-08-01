@@ -1,8 +1,10 @@
-# 1.5 – Solving Problems With Fractions, Decimals & Percents {.unnumbered}
+# 1.6 – Solving Problems With Fractions, Decimals & Percents {.unnumbered}
 
-Fractions, decimals, and percents all show **parts of a whole** — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
+Now that you know how to multiply and divide fractions, you're ready to apply those skills to real-life problems.
 
-This lesson will help you decide **which form to use** and how to solve **real-world problems** using these tools.
+Fractions, decimals, and percents all show parts of a whole — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
+
+In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score to get an A?”
 
 :::{.callout-note icon=false title="🎯 Objectives"}
 
@@ -35,7 +37,7 @@ Use mental math if you can!
 
 ## 👥 Learn Together
 
-### 1.5.1 – What’s the Part, Whole, or Percent?
+### 1.6.1 – What’s the Part, Whole, or Percent?
 
 In many real-world problems, you’re given some information and asked to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
 
@@ -188,7 +190,7 @@ $$
 
 ---
 
-### 1.5.2 – Real-Life Examples
+### 1.6.2 – Real-Life Examples
 
 #### Grades
 
