@@ -78,6 +78,16 @@ The denominator is the **bottom number** in a fraction. It tells **how many equa
 
 ---
 
+### Discount {#glossary-discount}
+
+A **discount** is a percent taken off the original price. 
+
+> **Example:**
+>
+> A 25% discount means the item costs 25% less than before.
+
+--- 
+
 ### Divisible {#glossary-divisible}
 
 A number is **divisible** by another if it divides evenly — these rules help you check quickly.
@@ -204,6 +214,16 @@ The denominator tells how many equal parts the whole is divided into, and the nu
 
 ---
 
+### Grade {#glossary-grade}
+
+A **grade** is a way to show how well someone did on a task, often written as a percent.
+
+> **Example:**
+>
+> If you get 18 out of 20 points, your grade is $18 \div 20 * 100 = 90\%$.
+
+---
+
 ### Greater than {#glossary-greater-than}
 
 A number is greater than (**>**) another number if it is further to the right on the number line.
@@ -268,6 +288,26 @@ A number is less than (**<**) another number if it is further to the left on the
 > ![Less than true](images/Glossary/less_than_true.png){#fig-number-line width="100%"}
 > but `5 < 3` is false
 > ![Less than false](images/Glossary/less_than_false.png){#fig-number-line width="100%"}
+
+---
+
+### Markup {#glossary-markup}
+
+**Markup** is a percent added to the cost of something to set the selling price. Businesses use markup to make a profit.
+
+> **Example:**
+>
+> A store buys a backpack for $20. They want to make money, so they add a 50% markup.
+>
+> To find the markup amount:
+>
+>  $$\text{Markup} = 0.5 \times 20 = 10$$
+>
+> Then add it to the cost:
+>
+> $$\text{Selling Price} = 20 + 10 = 30$$
+>
+> So the store sells the backpack for $30.
 
 ---
 
@@ -357,6 +397,16 @@ Their sum is always zero.
 
 ---
 
+### Part {#glossary-part}
+
+The **part** is the piece or portion of the total amount. 
+
+> **Example:**
+>
+> If 3 out of 5 students like pizza, the part is 3.
+
+---
+
 ### Percent {#glossary-percent}
 
 A percent is a number out of 100. It uses the percent symbol (%) and is another way to show part of a whole.
@@ -422,6 +472,16 @@ A product is the **result of multiplying** two or more numbers.
 
 ---
 
+### Proportion {#glossary-proportion}
+
+A **proportion** is a statement that two ratios or fractions are equal. 
+
+> **Example:**
+>
+> $\frac{1}{2} = \frac{2}{4}$ is a true proportion.
+
+---
+
 ### Quotient {#glossary-quotient}
 
 A quotient is the **result of dividing** one number by another.
@@ -429,6 +489,17 @@ A quotient is the **result of dividing** one number by another.
 > **Example:**
 >
 > The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+
+---
+
+### Rate {#glossary-rate}
+
+A **rate** compares two different types of quantities. It often uses the word **per** like in miles per hour or price per gallon.
+
+> **Example:**
+> 
+> Anne used 10 gallons of gas to drive 500 miles in her Prius
+> Her gas mileage was $ 500 \div 10 = 50\text{mpg} $
 
 ---
 
@@ -512,6 +583,18 @@ A sum is the **result of adding** two or more numbers.
 
 ---
 
+### Survey {#glossary-survey}
+
+A **survey** is a way to gather information by asking people questions. Surveys often report results using percents.
+
+> **Example:**
+>
+> Mr. Ross' gave a survey to his Algebra class that asked whether they like pineapple pizza.
+> Of the 18 people in class, only 4 responded that the liked pineapple pizza. 
+> Mr. Ross reported that $22.\overline{2}\%$ like pineapple on their pizza.
+
+---
+
 ### Vertical {#glossary-vertical}
 
 Up and down, like a flagpole.
@@ -520,5 +603,15 @@ Up and down, like a flagpole.
 >
 > This is a vertical number line.
 > ![](/images/Glossary/vertical_by_tens.png)
+
+---
+
+### Whole {#glossary-whole}
+
+The **whole** is the total amount. It’s the full quantity before being divided into parts.
+
+> **Example:**
+>
+> If someone eats 3 slices of a pizza cut into 8 slices, they ate $\frac{3}{8}$ of the whole pizza.
 
 ---

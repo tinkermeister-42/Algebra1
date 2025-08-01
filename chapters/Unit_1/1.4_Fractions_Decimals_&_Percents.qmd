@@ -6,13 +6,9 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
 :::{.callout-note icon=false title="🎯 Objectives"}
 
-* [ ] I can change a fraction, decimal, or percent into the other forms
-* [ ] I can tell when a decimal repeats or ends and write it as a fraction
-* [ ] I can use place value to write a decimal as a fraction, or a fraction as a decimal
-* [ ] I know that a percent means “out of 100” and can use it to show part of a whole
-* [ ] I can use common benchmarks like ½ = 0.5 = 50% to help estimate or compare 
-* [ ] I can compare and order fractions, decimals, and percents in real-world situations
-
+- [ ] I can convert between fractions, decimals, and percents using place value, division, or benchmarks.
+- [ ] I can recognize repeating and terminating decimals and write them as fractions.
+- [ ] I can compare and order fractions, decimals, and percents in real-world situations.
 :::
 
 :::{.callout-note icon=false title="📚 Vocabulary"}
@@ -430,159 +426,59 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
-**Conversions Practice**
 
-1. Convert each fraction to a decimal:
+1. 
+
+   a. 0.5
+   b. 0.6
+   c. 0.75
+   d. 0.125
+   e. $0.\overline{6}$
+   f. $2.\overline{2}$
+
+
+2.
+
+   a. 42%
+   b. 10%
+   c. 12.5%
+   d. 1%
+   e. 0.5%
+   f. 503%
+
+
+3. 
+
+   a. 0.15
+   b. 0.3
+   c. 0.005
+   d. 0.66
+   e. 0.035
+   f. 1.32
+
+
+4.
 
    a. $\frac{1}{2}$
-
-   >  0.5
-
-   b. $\frac{3}{5}$
-
-   > 0.6
-
-   c. $\frac{3}{4}$
-
-   > 0.75
-
-   d. $\frac{1}{8}$
-
-   > 0.125
-
-   e. $\frac{2}{3}$
-
-   > $0.\overline{6}$
-
-   f. $2\tfrac{2}{9}$
-
-   > $2.\overline{2}$
-
-2. Convert each decimal to a percent:
-
-   a. 0.42
-
-   > 42%
-
-   b. 0.1
-
-   > 10%
-
-   c. 0.125
-
-   > 12.5%
-
-   d. 0.01
-
-   > 1%
-
-   e. 0.005
-
-   > 0.5%
-
-   f. 5.03
-
-   > 503%
-
-3. Convert each percent to a decimal:
-
-   a. 15%
-
-   > 0.15
-
-   b. 30%
-
-   > 0.3
-
-   c. 0.5%
-
-   > 0.005
-
-   d. 66%
-
-   > 0.66
-
-   e. 3.5%
-
-   > 0.035
-
-   f. 132%
-
-   > 1.32
-
-4. Convert each percent to a fraction (in simplest form):
-
-   a. 50%
-
-   > $\frac{1}{2}$
-
-   b. 25%
-
-   > $\frac{1}{4}$
-
-   c. 80%
-
-   > $\frac{4}{5}$
-
-   d. 12.5%
-
-   > $\frac{1}{8}$
-
-   e. 0.5%
-
-   > $\frac{1}{200}$
-
-   f. 2.75%
-
-   > $2\tfrac{3}{4}$
-
-
-**Comparison Questions**
-
-5. Show the following numbers on the same number line
-   - 0.25
-   - $\frac{4}{5}$
-   - 10%
-
-   > ![](/images/Unit_1/Lesson_4/answer_5.png)
-
-
-6. Which is greatest? *(Explain how you know.)*
-
-   a. 0.65
-   b. 65%
-   c. $\frac{2}{3}$
-   d. $\frac{13}{20}$
-
-   > $\frac{2}{3}$ is greatest because it equals $0.\overline{6}$ all of the others are equal to 0.65.
-
-7. A test has 100 points. Which student did the best?
-
-   - Kai scored $\frac{4}{5}$ of the points
-   - Aaliyah scored 78%
-   - Zoe scored 0.76
-
-   > Kai because he scored 80% and the others scored 78% and 76%.
-
-**Challenge Problems**
-
-8. Which is closest to $\frac{3}{4}$ (show your reasoning)?
-
-   a. 70%
-   b. 0.72
+   b. $\frac{1}{4}$
    c. $\frac{4}{5}$
-   d. 0.68
+   d. $\frac{1}{8}$
+   e. $\frac{1}{200}$
+   f. $2\tfrac{3}{4}$
 
-   > B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are further away.
 
-9. A science quiz has 20 questions. Three students earned the following scores:
+5. ![](/images/Unit_1/Lesson_4/answer_5.png)
 
-      - Emily got 15 correct
-      - Omar got 75% correct
-      - Jalen got $\frac{14}{20}$ correct
 
-    Who had the highest score and who had the lowest?
+6. $\frac{2}{3}$ is greatest because it equals $0.\overline{6}$ all of the others are equal to 0.65.
 
-    > Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
+
+7. Kai because he scored 80% and the others scored 78% and 76%.
+
+
+8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are further away.
+
+
+9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
 
 :::

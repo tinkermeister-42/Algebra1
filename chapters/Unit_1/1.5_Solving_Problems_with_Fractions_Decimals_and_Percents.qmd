@@ -1,202 +1,369 @@
-# 1.5 – Solving Problems with Fractions, Decimals & Percents {.unnumbered}
+# 1.5 – Solving Problems With Fractions, Decimals & Percents {.unnumbered}
 
-Now that you know how to convert between fractions, decimals, and percents, it's time to put that knowledge to work! In this lesson, you'll solve real-world problems involving discounts, grades, part-whole relationships, and more.
+Fractions, decimals, and percents all show **parts of a whole** — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
 
-:::{.callout-note icon=false title="🎯 Objectives (Missouri Standards Aligned)"}
-* [ ] Solve real-world problems involving percents, including discounts, tax, and simple interest (MA.7.RP.A.3)
-* [ ] Use fractions, decimals, and percents to solve multistep ratio and percent problems (MA.7.RP.A.3)
-* [ ] Convert between forms to support problem solving (builds on MA.6.RP.A.3c)
+This lesson will help you decide **which form to use** and how to solve **real-world problems** using these tools.
+
+:::{.callout-note icon=false title="🎯 Objectives"}
+
+- [ ] I can use fractions, decimals, and percents to solve real-world problems.
+- [ ] I can find a part, a whole, or a percent in situations like "30 is 10% of what number?"
+- [ ] I can use percents to solve problems involving grades, sales, and survey results.
+
 :::
 
 :::{.callout-note icon=false title="📚 Vocabulary"}
-{{< glink percent >}}, {{< glink fraction >}}, {{< glink decimal >}}, {{< glink part >}}, {{< glink whole >}}, {{< glink convert >}}, {{< glink percent of >}}
+
+{{< glink discount >}}, {{< glink equivalent >}}, {{< glink grade >}}, {{< glink markup >}}, {{< glink part >}}, {{< glink percent >}}, {{< glink proportion >}}, {{< glink rate >}}, {{< glink survey >}}, {{< glink whole >}}
+
+
 :::
 
 ---
 
 ## 🔥 Warm-Up
 
-1. You scored 40 out of 50 on a quiz. What percent is that?
+Use mental math if you can!
 
-2. What number is 25% of 60?
+1. What is 10% of 60?
 
-3. Is 0.6 greater than $\frac{2}{3}$? Explain how you know.
+2. If a student scores 45 out of 50 points on a test, what percent did they earn?
 
-4. Write 0.8, $\frac{3}{4}$, and 75% in order from least to greatest.
+3. A shirt costs $40. It’s 25% off. What’s the sale price?
 
 ---
 
 ## 👥 Learn Together
 
-### 1.5.1 – What is “Percent of a Number”?
+### 1.5.1 – What’s the Part, Whole, or Percent?
 
-When you see a phrase like **"What is 25% of 80?"**, you’re really being asked to find a part of a whole. “Of” usually means **multiply**.
+In many real-world problems, you’re given some information and asked to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
+
+These types of problems usually involve three pieces:
+
+  - part (how much you have),
+
+  - whole (the total or full amount),
+
+  - percent (the portion out of 100).
+
+If you know two of them, you can figure out the third. This formula helps:
 
 $$
-25\% \text{ of } 80 = 0.25 \times 80 = 20
+\text{part} = \text{percent} \times \text{whole}
 $$
 
-You can also write this as a fraction:
+You can also rearrange it to solve for the percent or the whole. We’ll walk through all three types of problems step by step.
 
-$$
-\frac{25}{100} \times 80 = \frac{1}{4} \times 80 = 20
-$$
+
+:::{.callout-tip}
+Converting the percent to a decimal will make calculations easier!
+:::
 
 ---
 
-### 1.5.2 – Finding the Percent
+**Example 1 – Finding the Part**
 
-Sometimes we know the part and the whole, and want to know what **percent** that part is.
+What is 15% of 80?
 
-> You got 21 questions right out of 25. What percent is that?
+You're looking for a small part of 80 — just 15 out of every 100. That’s what 15% means.
 
-$$
-\frac{21}{25} = 0.84 \Rightarrow 84\%
-$$
+We can turn this into a math sentence by translating the words:
 
-So you got an 84%!
+  - “is” becomes =
 
----
+  - “of” becomes ×
 
-### 1.5.3 – Percent Problems in Reverse
+So:
 
-What if we know the part and the percent, and want to find the whole?
+| what	| is	| 15%	| of	| 80?  |
+|-------|-------|-------|-------|------|
+| ?     | =     | $\times$ | 80   |
 
-> 30 is 10% of what number?
-
-Set it up like this:
+Now solve it:
 
 $$
-0.10 \times \text{(whole)} = 30 \Rightarrow \text{whole} = \frac{30}{0.10} = 300
+0.15×80=12
 $$
 
-Or write an equation:
+So **12** is 15% of 80.
+
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try This: What is 10% of 50?"}
+<br>
+Turn it into a math sentence:
+
+| what | is | 10%  | of | 50? |
+| ---- | -- | ---- | -- | --- |
+| ?    | =  | 0.10 | ×  | 50  |
+
+Then multiply:
 
 $$
-10\% \times x = 30 \Rightarrow x = 300
+0.10 \times 50 = 5
 $$
 
----
-
-### 1.5.4 – Practical Examples
-
-Here are some common situations where you’ll use these ideas:
-
----
-
-#### 🛍️ Discounts
-
-> A backpack costs $45. It’s 20% off. What is the sale price?
-
-1. Find the discount:
-   $$0.20 \times 45 = 9$$
-
-2. Subtract from original price:
-   $$45 - 9 = 36$$
-
-The sale price is **$36**.
-
----
-
-#### 🎓 Grades
-
-> You scored 85%, 92%, and 78% on three tests. What is your average?
-
-Add the scores and divide by 3:
-
-$$
-\frac{85 + 92 + 78}{3} = \frac{255}{3} = 85
-$$
-
-Your average is **85%**.
-
----
-
-#### 🧾 Tips and Tax
-
-> A restaurant bill is $48. You want to leave a 15% tip. How much is the tip?
-
-$$
-0.15 \times 48 = 7.20
-$$
-
-Tip: **$7.20**
-
----
-
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try It Together"}
-
-1. A student scored 18 out of 20 on a quiz. What percent did they get?
-
-2. What is 12.5% of 80?
-
-3. A jacket is $60. It’s on sale for 30% off. What’s the sale price?
-
-4. A test has 25 questions. You got 20 right. What percent is that?
+**Answer: 5**
 
 :::
 
 ---
 
+**Example 2 – Finding the Percent**
+
+Out of 50 students, 30 say they like soccer. **What percent is that?**"
+
+The phrase **out of** tells us that 50 is the **whole** and 30 is the **part**. We can write that as a fraction, then convert it into a percent.
+
+$$
+\frac{\text{part}}{\text{whole}} = \frac{30}{50} = 0.6 = 60\%
+$$
+
+So **60%** of students like soccer.
+
+:::{.callout-tip}
+
+To find a percent, divide the part by the whole, then multiply by 100.
+
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Your turn: If 3 out of 100 students get enough sleep, what percent is that?"}
+<br>
+$$
+\frac{3}{100} = 0.03 = 3\%
+$$
+
+So only 3% of students get enough sleep!
+
+:::
+
+---
+
+**Example 3 – Finding the Whole**
+
+**25% of a number is 10. What is the number?**
+
+We’re told that 10 is **25% of the total**. That means 10 is just a piece — one-fourth — of the whole. (Since 25% = 1/4.)
+
+If one-fourth of something is 10, then we can picture the whole as being made up of **4 equal parts** of 10:
+
+$$
+10 + 10 + 10 + 10 = 40
+$$
+
+So the whole is **40**.
+
+But what if it’s not so easy to think in fractions like 1/4? Here's a trick:
+
+25% as a decimal is 0.25. If we want to know,  
+
+> “0.25 of what number gives me 10?”  
+
+we can work backward by **dividing**:
+
+$$
+10 \div 0.25 = 40
+$$
+
+So the total is still **40** — just another way to get the same answer.
+
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Your turn: 20% of a number is 12. What is the number?"}
+<br>
+Start by thinking:  
+20% = 1/5 → So if one-fifth is 12, then the whole must be:
+
+$$
+12 \times 5 = 60
+$$
+
+Or use division:  
+$$
+12 \div 0.2 = 60
+$$
+
+**Answer: 60**
+
+:::
+
+---
+
+### 1.5.2 – Real-Life Examples
+
+#### Grades
+
+Mr. Ross hands you back your Algebra quiz. You got 19 out of 20 points! **What is your grade?**
+
+Grades are given as percentages so we want to figure out what $\frac{19}{20}$ is as a percent.
+
+$$
+\frac{19}{20} = 0.95 = 95\%
+$$
+
+You got **95%** on that assignment, that's an A!
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 If John got 20 out of 25 questions correct, what is his grade?"}
+
+$$
+\frac{20}{25} = 0.8 = 80\%
+$$
+
+John got an 80% which is a B.
+
+:::
+
+---
+
+#### Sales & Discounts
+
+A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. **What’s the new price?**
+<br>
+First, find the discount by asking "What is 25% of $60?":
+
+| what | is | 25%  | of | $60? |
+| ---- | -- | ---- | -- | --- |
+| ?    | =  | 0.25 | ×  | 60  |
+
+$$
+0.25 \times 60 = 15
+$$
+
+This tells us we will **save** $15. To find the new price we subtract:
+
+$$
+60 - 15 = 45
+$$
+
+The jacket now costs **$45**.
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?"}
+
+Find the discount:
+
+| what | is | 65%  | of | $300? |
+| ---- | -- | ---- | -- | --- |
+| ?    | =  | 0.65 | ×  | 300  |
+
+$$
+0.65 \times 300 = 195
+$$
+
+Now subtract to get the sale price:
+
+$$
+300 - 195 = 105
+$$
+
+Swanhilda pays $105 for the dress. What a steal!
+
+:::
+
+---
+
+#### Surveys & Data
+
+A survey of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?
+
+Here we want to know the **whole** when we have a percent. First, convert 75% to a decimal:
+
+$$
+75\% = 0.75
+$$
+
+Then divide:
+
+$$
+120 \div 0.75 = 160
+$$
+
+**160 teachers** were surveyed.
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 A survey asked Missourians if they support Proposition A. 550 (or 55%) said they **do** support it. How many people were surveyed?"}
+<br>
+First, convert to a decimal:
+
+$$
+55\% = 0.55
+$$
+
+Then divide:
+
+$$
+550 \div 0.55 = 1000
+$$
+
+**1000** Missourians were surveyed.
+
+:::
+---
+
 ## ✍️ Practice On Your Own
 
-### **Percent Word Problems**
+**Find the part whole or percent**
 
-1. What is 40% of 120?
+1. What is 60% of 95?
 
-2. A phone costs $300 and is marked down by 25%. What is the sale price?
+2. Eight is what percent of 64?
 
-3. You score 7 out of 10 on a quiz. What percent is that?
+3. One is what percent of 6?
 
-4. A student answered 42 out of 56 questions correctly. What percent is that?
+4. What percent of 40 is 25?
 
-5. 16 is 20% of what number?
+5. Fifteen is what percent of 40?
 
-6. What number is 150% of 12?
+6. What number is 85% of 40?
 
----
+7. 85% of a number is 510. What is the number?
 
-### **Mixed Review**
-
-7. Write each value in all three forms (fraction, decimal, percent):
-
-   a. One-half  
-   b. 0.25  
-   c. 75%
-
-8. Order these from least to greatest:  
-   0.3, 33%, $\frac{1}{4}$, $\frac{3}{10}$
-
-9. Which is greater: $\frac{4}{5}$ or 85%?
-
-10. A test is worth 60 points. You score 51. What percent did you get?
+8. 20% of a number is 150. What is the number?
 
 ---
 
-### **Challenge Problems**
+**Real-Life Scenarios**
 
-11. A shirt originally costs $40. It’s discounted by 20%, then another 15% off the reduced price. What’s the final price?
+9. A driver's test has 30 questions. To pass, you must score at least 24 points. What percent do you need to pass?
 
-12. A student gets 18 out of 20 on one test, 27 out of 30 on another, and 42 out of 50 on the final. What is their overall percent average?
+10. A student scores 27 out of 30 on one test and 42 out of 50 on another. What percent of the total points did they earn?
+
+11. A backpack is 25% off. The original price was $80. What is the discount? What’s the new price?
+
+12. A restaurant offers 30% off drinks during happy hour. A soda usually costs $3.50. What is the discount? What is the happy hour price?
+
+13. A survey shows 68% of people prefer cats to dogs. If 250 people were asked, how many chose dogs?
+
+14. A company sells fidget spinners. In a quality control test, they found that 3% of the fidget spinners tested were defective. If 60 spinners were defective, how many fidget spinners did they test?
+
+---
+
+**Challenge Problems**
+
+15. A class has 24 students. 1/3 are in choir, 25% are in band. The rest of the students are in art.  
+What percent of students are in art class?
+
+16. A shirt is marked down by 40%. It now costs $27. What was the original price?
+
+17. You have 88% of 325 points in Algebra. The last exam has 50 questions and is worth 100 points. If it takes 90% to get an A, is it possible to get an A in the class? If so, how many points do you need to score on the exam?
 
 ---
 
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
-1. 48  
-2. $225  
-3. 70%  
-4. 75%  
-5. 80  
-6. 18  
-7.  
-   a. $\frac{1}{2}$ = 0.5 = 50%  
-   b. $\frac{1}{4}$ = 0.25 = 25%  
-   c. $\frac{3}{4}$ = 0.75 = 75%  
-8. $\frac{1}{4}$, 0.3, $\frac{3}{10}$, 33%  
-9. $\frac{4}{5} = 0.8$ and 85% = 0.85 → 85% is greater  
-10. $51 \div 60 = 85\%$  
-11. First: $40 - 8 = 32$; Second: $32 - (0.15 × 32) = 27.20$  
-12. Percentages: 90%, 90%, 84% → Average = 88%
+1. 57  
+2. 12.5%
+3. $16.\overline{6}\%$  
+4. 62.5% 
+5. 37.5%  
+6. 34 
+7. 600 
+8. 750  
+9. 80% 
+10. 86.25%
+11. Discount: $20, Price: $60 
+12. Discount: $1.05, Price: $2.45
+13. 80 chose dogs 
+14. 2000 fidget spinners  
+15. $41.\overline{6}\%$
+16. $45
+17. Yes. You need to get 49 out of 50 correct.
 
 :::

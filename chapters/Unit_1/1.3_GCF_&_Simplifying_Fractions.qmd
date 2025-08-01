@@ -5,9 +5,9 @@ Have you ever needed to divide things up fairly — like sharing snacks or makin
 In this lesson, you’ll learn how to use {{< glink prime factorization >}} to find the GCF, and how that can help us simplify {{< glink fractions >}}. Learning GCF helps us make fractions and math problems simpler so they are easier to understand and solve.
 
 ::: {.callout-note icon=false title="🎯 Objectives"}
-- [ ] Find the GCF using prime factorization
-- [ ] Apply GCF to simplify fractions
-- [ ] Solve problems involving shared quantities
+- [ ] I can find the GCF using factor trees
+- [ ] I can simplify fractions using the GCF
+- [ ] I can solve real-world problems using the GCF
 :::
 
 ::: {.callout-note icon=false title="📚 Vocabulary"}
@@ -744,137 +744,59 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
 
-**GCF Practice**
+1. 
 
-1. Find the greatest common factor (GCF) of each pair:
-
-    a. 20 and 30
-
-    > 10
-
-    b. 36 and 45
-
-    > 9
-
-    c. 18 and 48
-
-    > 6
-
-    d. 30 and 42
-
-    > 6
-
-    e. 50 and 65
-
-    > 5
-
-    f. 72 and 90
-
-    > 18
-
-    g. 81 and 108
-
-    > 27
-
-2. Two numbers have a GCF of 6. One of the numbers is 18.
-   What could the other number be? Give two possible answers.
-
-   > Example: 30 and 42
-
-3. Two numbers have a GCF of 1.
-   What does that mean? Give an example.
-
-   > The numbers are {{< glink relatively prime >}}. For example: 8 and 15.
----
-
-**Simplifying Fractions**
-
-4. Simplify each fraction:
-
-   a. $\frac{18}{27}$
-
-   > $\frac{2}{3}$
-
-   b. $\frac{50}{100}$
-
-   > $\frac{1}{2}$
-
-   c. $\frac{14}{49}$
-
-   > $\frac{2}{7}$
-
-   d. $\frac{48}{60}$
-
-   > $\frac{4}{5}$
-
-   e. $\frac{84}{36}$
-
-   > $\frac{7}{3}$
-
-   f. $\frac{75}{90}$
-
-   > $\frac{5}{6}$
-
-   g. $\frac{99}{121}$
-
-   > $\frac{9}{11}$
-
-   h. $\frac{16}{40}$
-
-   > $\frac{2}{5}$
+    a. 10
+    b. 9
+    c. 6
+    d. 6
+    e. 5
+    f. 18
+    g. 27
 
 
-5. Can a fraction be simplified if the GCF is 1?
-   Explain your answer and give an example.
+2. Example: 30 and 42
 
-   >
-   > No. The numerator and denominator are relatively prime and so nothing can cancel out.
 
----
+3. The numbers are {{< glink relatively prime >}}. For example: 8 and 15.
 
-**Word Problems**
 
-6. You have 72 juice boxes and 60 cookies. You want to make snack packs with the **same number** of each. You must use **all** the items.
+4. 
 
-   a. What’s the greatest number of snack packs you can make?
+   a. $\frac{2}{3}$
+   b. $\frac{1}{2}$
+   c. $\frac{2}{7}$
+   d. $\frac{4}{5}$
+   e. $\frac{7}{3}$
+   f. $\frac{5}{6}$
+   g. $\frac{9}{11}$
+   h. $\frac{2}{5}$
 
-   > 12 snack packs
 
-   b. How many juice boxes and cookies go in each pack?
+5. No. The numerator and denominator are relatively prime and so nothing can cancel out.
 
-   > 6 juice boxes and 5 cookies
 
-7. A store is making bundles using 108 pairs of socks and 144 shirts. Each bundle must have the same number of socks and the same number of shirts. There should be no leftovers.
+6. 
 
-   a. What is the greatest number of bundles they can make?
+   a. 12 snack packs
+   b.  6 juice boxes and 5 cookies
 
-   > 12 bundles
 
-   b. How many pairs of socks and how many shirts will go in each bundle?
+7.
 
-   > 9 pairs of socks and 4 shirts
+   a. 12 bundles
+   b. 9 pairs of socks and 4 shirts
 
-8. A painter mixes 84 ounces of red paint and 36 ounces of blue paint. He wants to pour the paint into small jars that are all the same. Each jar must have the same mix of red and blue paint.
 
-   a. What is the greatest number of jars he can make with no paint left over?
+8. 
 
-   > 12 jars
+   a. 12 jars
+   b.  7 ounces of red paint and 2 ounces of blue paint
 
-   b. How many ounces of red and blue paint will go in each jar?
 
-   > 7 ounces of red paint and 2 ounces of blue paint
+9.  30 and 6 or -30 and -6
 
----
 
-**Challenge Problems**
-
-9. Two numbers multiply to make 180. Their GCF is 6.
-    What could the numbers be?
-
-   > 30 and 6 or -30 and -6
-
-10. A teacher has 150 pencils and 100 pens. She wants to make as many identical gift bags as possible, but she also wants to save at least 10 pencils for future use. What is the greatest number of gift bags she can make now?
-
-    > 30 gift bags with 3 pencils and 5 pens in each with 10 pencils left over
+10.  30 gift bags with 3 pencils and 5 pens in each with 10 pencils left over
 
 :::

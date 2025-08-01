@@ -13,9 +13,9 @@ In this lesson, you’ll learn how to:
 You’ll use these skills again and again — from simplifying fractions to solving equations.
 
 ::: {.callout-note icon=false title="🎯 Objectives"}
-- [ ] Identify factors and multiples of {{< glink integers >}}
-- [ ] Determine whether a number is prime or composite
-- [ ] Use factor trees to find the prime factorization of a number
+- [ ] I can find the factors and multiples of integers
+- [ ] I can tell if a number is prime or composite
+- [ ] I can break numbers into prime factors using a factor tree
 :::
 
 ::: {.callout-note icon=false title="📚 Vocabulary"}
@@ -451,64 +451,31 @@ flowchart TB
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 **Factors & Multiples**
 
-1. List all the factors of:
+1. 
 
-   a. 16
+   a. 1, 2, 4, 8, 16
+   b. 1, 2, 3, 6, 9, 18
+   c. 1, 3, 9, 27
 
-   > 1, 2, 4, 8, 16
 
-   b. 18 
-   
-   > 1, 2, 3, 6, 9, 18
+2. 
 
-   c. 27
-   
-   > 1, 3, 9, 27
+   a. 4, 8, 12, 16, 20
+   b. 8, 18, 27, 36, 45
+   c. 12, 24, 36, 48, 60
 
-2. List the first 5 multiples of:
 
-   a. 4
-  
-   > 4, 8, 12, 16, 20
+3. 
 
-   b. 9 
+   a. Prime
+   b. Composite
+   c. Neither
+   d. Prime
+   e. Composite
 
-   > 8, 18, 27, 36, 45
-   
-   c. 12
 
-   > 12, 24, 36, 48, 60
 
----
-
-**Prime or Composite?**
-
-3. Label each number as **prime**, **composite**, or **neither**:
-   a. 7
-   
-   > Prime
-
-   b. 15
-
-   > Composite
-
-   c. 1
-
-   > Neither
-
-   d. 19
-
-   > Prime
-
-   e. 21
-
-   > Composite
-
----
-
-**Complete the Factor Tree**
-
-4. Fill in the missing numbers.
+4. 
 
    a. 
 ```{mermaid}
@@ -570,39 +537,16 @@ flowchart TB
 
 ```
 
----
+5. 
 
-**Factor Trees & Prime Factorization**
+   a. 2 × 2 × 2 × 3 = 2³ × 3
+   b. 2 × 2 × 3 × 5 = 2² × 3 × 5
+   c. 2 × 2 × 5 × 5 = 2² × 5²
+   d. 3 × 3 × 3 × 3 = 3⁴
+   e.  2 × 2 × 2 × 3 × 3 = 2³ × 3²
 
-5. Use a factor tree to find the prime factorization of:
 
-   a. 24
-
-   > 2 × 2 × 2 × 3 = 2³ × 3
-
-   b. 60
-
-   > 2 × 2 × 3 × 5 = 2² × 3 × 5
-
-   c. 100
-
-   > 2 × 2 × 5 × 5 = 2² × 5²
-
-   d. 81
-
-   > 3 × 3 × 3 × 3 = 3⁴
-
-   e. 72
-
-   > 2 × 2 × 2 × 3 × 3 = 2³ × 3²
-
----
-
-**Challenge**
-
-6. Can two different numbers have the same prime factorization? Why or why not?
-
->  No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
+6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
 
 
 :::

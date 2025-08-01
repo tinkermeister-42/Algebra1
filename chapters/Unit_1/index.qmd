@@ -30,13 +30,16 @@ Break numbers into their prime building blocks using factor trees.
 [**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions)
 Use prime factorization to find the GCF and simplify fractions to their simplest form.
 
-[**Fractions, Decimals & Percents**](1.4_Fractions,_Decimals_&_Percents)
+[**Fractions, Decimals & Percents: Conversions**](1.4_Fractions,_Decimals_&_Percents)
 Convert between different number forms and apply them in real-world problems.
 
-[**Multiply, Divide & Compare Fractions**](1.5_Multiply,_Divide_&_Compare_Fractions)
+[**Solving Problems With Fractions Decimals & Percents**](1.5_Solving_Problems_with_Fractions_Decimals_and_Percents)
+Solve real-world problems using fractions decimals and percents.
+
+[**Multiply, Divide & Compare Fractions**](1.6_Multiply,_Divide_&_Compare_Fractions)
 Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.
 
-[**Order of Operations**](1.6_Order_of_Operations)
+[**Order of Operations**](1.7_Order_of_Operations)
 Follow the rules (PEMDAS) to simplify numeric expressions with integers and fractions.
 
 ---

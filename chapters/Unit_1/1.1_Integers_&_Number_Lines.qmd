@@ -7,10 +7,10 @@ In this lesson, we’ll use the number line not just to count, but to add, subtr
 Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like {{< glink opposites >}}, {{< glink absolute value >}}, and comparison — you’ll be setting yourself up for success in the rest of the course.
 
 ::: {.callout-note icon=false title="🎯 Objectives"}
-- [ ] Know what a number line represents
-- [ ] Understand and identify opposite numbers
-- [ ] Compare integers using greater than and less than  
-- [ ] Use a number line to perform addition and subtraction 
+- [ ] I know how to read and use a number line
+- [ ] I can find and describe the opposite of a number
+- [ ] I can compare positive and negative numbers using >, <, and =
+- [ ] I can add and subtract integers on a number line
 :::
 
 :::{.callout-note icon=false title="📚 Vocabulary"}
@@ -281,146 +281,78 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
 
 **Working With Number Lines**
 
-1. Draw a number line that shows:
+1. 
 
-   a. -4, 0, and 3.
+   a. ![](/images/Unit_1/Lesson_1/answer_1_a.png)
 
-   > ![](/images/Unit_1/Lesson_1/answer_1_a.png)
-
-   b. Your age
-
-   > *Answers vary. Here is what a 15 year old would show*
-   > ![](/images/Unit_1/Lesson_1/answer_1_b.png)
+   b. *Answers vary. Here is what a 15 year old would show*
+      ![](/images/Unit_1/Lesson_1/answer_1_b.png)
    
-   c. The number halfway between 5 and 9.
+   c. *The answer is 7*
+      ![](/images/Unit_1/Lesson_1/answer_1_c.png)
 
-   > *The answer is 7*
-   > ![](/images/Unit_1/Lesson_1/answer_1_c.png)
+3. *Answers vary. We could say "Plot the temperature on July 4th"*
+   ![](/images/Unit_1/Lesson_1/problem_2.png)
 
-3. What question could match this number line?
 
-> *Answers vary. We could say "Plot the temperature on July 4th"*
-> ![](/images/Unit_1/Lesson_1/problem_2.png)
+3. -42
 
----
 
-**Opposites**
+4. 3
 
-3. What is the opposite of 42?
 
-> -42
+5. *Answers vary. Here is an example:*
+   ![](/images/Unit_1/Lesson_1/answer_5.png)
 
-4. What is the opposite of -3?
 
-> 3
+6. Yes! The opposite is -3.5.
 
-5. Draw a number line with two numbers that are opposites.
 
-> *Answers vary. Here is an example:*
-> ![](/images/Unit_1/Lesson_1/answer_5.png)
+7. 5 is greater
 
-6. Does 3.5 have an opposite? If yes, what is it?
 
-> Yes! The opposite is -3.5.
+8. -10 has a greater absolute value
 
----
 
-**Comparing Numbers**
+9. Yes, because it is further from zero
 
-7. Which number is **greater**, 5 or -10?
 
-> 5 is greater
+10. 
 
-8. Which number has the greater absolute value, 5 or -10?
-
-> -10 has a greater absolute value
-
-9. Is 28 bigger than -30?
-
-> Yes, because it is further from zero
-
-10. Use (**&gt;**) or (**&lt;**) to compare:
-
-    a. -11\ \___\ -13
-
-    > -11\ >\ -13
-    
-    b. 7\ \___\ -2
-
-    > 7\ >\ -2
-    
-    c. |-3|\ \___\ |5|
-
-    > |-3| < |5|
+    a. -11\ >\ -13
+    b. 7\ >\ -2
+    c. |-3| < |5|
 
     
-12. Which is bigger?
+12. 
 
-    a. -4 or -5
-
-    > -4 is bigger because it is further to the right
+    a. -4
+    b. 3
+    c. |-5|
     
-    b. 3 or the opposite of 7
+13. 
 
-    > 3 is bigger. The opposite of 7 is -7 and 3 is further to the right.
+    a. ![](/images/Unit_1/Lesson_1/answer_12_a.png)
+    b. *Answers vary. I was born in 1982. The current year is 2025.*
+       ![](/images/Unit_1/Lesson_1/answer_12_b.png)
     
-    c. |-5| or |4|
 
-    > |-5| is bigger. |-5| is 5 which is further to the right than |4| which is 4.
-    
-13. Use a number line to compare:
+13. 
 
-    a. -7 to 2.
+    a. ![](/images/Unit_1/Lesson_1/answer_13_a.png)
+    b. ![](/images/Unit_1/Lesson_1/answer_13_b.png)
+    c. ![](/images/Unit_1/Lesson_1/answer_13_c.png)
+    d. ![](/images/Unit_1/Lesson_1/answer_13_d.png)
 
-    > ![](/images/Unit_1/Lesson_1/answer_12_a.png)
 
-    
-    b. The year you were born and the current year
 
-    > *Answers vary. I was born in 1982. The current year is 2025.*
-    > ![](/images/Unit_1/Lesson_1/answer_12_b.png)
-    
----
+14. 
 
-**Addition and Subtraction**
-
-13. Show these on a number line:
-
-    a. $-3 + 5$
-    
-    > ![](/images/Unit_1/Lesson_1/answer_13_a.png)
-    
-    b. $3 - 5$
-    
-    > ![](/images/Unit_1/Lesson_1/answer_13_b.png)
-
-    c. $-3 + (-3)$
-    
-    > ![](/images/Unit_1/Lesson_1/answer_13_c.png)
-
-    d. $3 - (-3)$
-    
-    > ![](/images/Unit_1/Lesson_1/answer_13_d.png)
-
----
-
-**Word Problems**
-
-14. Solve using a number line
-
-    a. The temperature was -12°F. It warms up by 20°. What is the new temperature?
-
-    > It is now 8 degrees
-    > ![](/images/Unit_1/Lesson_1/answer_14_a.png)
-
-    b. A diver is 45 feet below sea level. She dives 30 feet deeper. How far down is she?
-
-    > She is now 75 feet down.
-    > ![](/images/Unit_1/Lesson_1/answer_14_b.png)
-    
-    c. Your bank account is at -\$8. You deposit \$5. What is your new balance?
-
-    > You now have -\$3.
-    > ![](/images/Unit_1/Lesson_1/answer_14_c.png)
+    a. It is now 8 degrees
+       ![](/images/Unit_1/Lesson_1/answer_14_a.png)
+    b. She is now 75 feet down.
+       ![](/images/Unit_1/Lesson_1/answer_14_b.png)
+    c. You now have -\$3.
+       ![](/images/Unit_1/Lesson_1/answer_14_c.png)
 
 :::

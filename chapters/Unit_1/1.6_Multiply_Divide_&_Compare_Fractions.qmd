@@ -1,4 +1,4 @@
-# 1.5 – Multiply, Divide & Compare Fractions {.unnumbered}
+# 1.6 – Multiply, Divide & Compare Fractions {.unnumbered}
 
 In Algebra, you’ll work with fractions all the time — but not usually adding and subtracting them. What matters most is knowing how to **multiply**, **divide**, and **simplify** fractions to make expressions easier to work with.
 

@@ -1,4 +1,4 @@
-# 1.6 – Order of Operations {.unnumbered}
+# 1.7 – Order of Operations {.unnumbered}
 
 What does this equal?
 
