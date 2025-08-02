@@ -6,103 +6,184 @@ $$
 6 + 2 \times 3
 $$
 
-If you said 24 — you’re not alone. But that's **not** the correct answer. Math has rules for what to do first. These rules are called the **order of operations**, and they're essential for simplifying expressions the right way.
+If you said 24, you're not alone—but that's not the correct answer. Math has specific rules for what to do first. These rules are called the {{< glink order of operations >}}, and they help make sure everyone simplifies {{< glink expressions >}} the same way.
 
-In this lesson, you'll learn to follow those rules consistently — even when negatives, fractions, and grouping are involved.
+In this lesson, you'll learn how to follow those rules correctly—even when negatives, fractions, and grouping symbols are involved.
 
 :::{.callout-note icon=false title="🎯 Objectives"}
-
-- [ ] Apply the correct order of operations (PEMDAS)
-- [ ] Evaluate expressions involving integers and fractions
-- [ ] Recognize common mistakes and avoid them
+- [ ] I follow the correct order of operations (PEMDAS).
+- [ ] I simplify expressions with fractions and negatives.
+- [ ] I avoid common mistakes when simplifying expressions.
 :::
 
-::: {.callout-note icon=false title="📚 Vocabulary"}
+
+
+:::{.callout-note icon=false title="📚 Vocabulary"}
 {{< glink expression >}}, {{< glink order of operations >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiply >}}, {{< glink divide >}}, {{< glink add >}}, {{< glink subtract >}}
 :::
+
+---
 
 ## 🔥 Warm-Up
 
 1. Simplify: 3 + 6 × 2
-
 2. True or False: (4 + 3) × 2 = 4 + (3 × 2)
-
-3. What does ½ × (4 + 2) equal?
+3. What does $\frac{1}{2} \times (4 + 2)$ equal?
 
 ---
 
 ## 👥 Learn Together
 
-### 1.6.1 – The Order Matters
+### 1.7.1 – The Order Matters
 
-The correct order is:
+Order matters a lot in math — doing the steps in the wrong order can completely change your answer. That's why we have rules to follow.
 
-**P** – Parentheses
-**E** – Exponents
-**MD** – Multiply or Divide (left to right)
-**AS** – Add or Subtract (left to right)
+The correct order is often remembered with **PEMDAS**:
 
-This is often remembered as **PEMDAS**.
+* **P** – Parentheses $(...)$
+* **E** – Exponents $3^2$
+* **MD** – Multiplication ($\times$) or Division ($\div$)
+* **AS** – Addition ($+$) or Subtraction ($-$)
 
-> ⚠️ Multiply doesn’t always come before divide. Same with add and subtract. You go **left to right** when they appear together.
+> ⚠️ Multiply doesn’t always come before divide. Same with add and subtract. You move **left to right** when they appear together.
 
----
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What comes first in 8 - 12 ÷ 3?"}
 
-### 1.6.2 – Basic Examples
+Division comes first! So: 12 ÷ 3 = 4, then 8 - 4 = 4
 
-1.
-
-$$
-5 + 3 \times 2 = 5 + 6 = 11
-$$
-
-2.
-
-$$
-(5 + 3) \times 2 = 8 \times 2 = 16
-$$
-
-3.
-
-$$
-8 - 12 ÷ 3 = 8 - 4 = 4
-$$
-
----
-
-### 1.6.3 – Include Negatives & Fractions
-
-Watch how signs and simplification interact:
-
-**Example 1:**
-
-$$
--3 \times (4 - 7) = -3 \times (-3) = 9
-$$
-
-**Example 2:**
-
-$$
-\frac{1}{2} \times (6 + 2) = \frac{1}{2} \times 8 = 4
-$$
-
-**Example 3:**
-
-$$
-\frac{3 + 5}{2} = \frac{8}{2} = 4
-$$
-
-:::{.callout-caution title="Be careful with negatives!"}
-$-3^2$ means $-(3^2) = -9$
-but
-$(-3)^2 = 9$
 :::
 
 ---
 
-### 1.6.4 – Complex Expressions
+### 1.7.2 – Examples with Integers
 
-Put it all together:
+Let’s look at some expressions that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
+
+**Example:** $5 + 3 \times 2$
+
+First we do the multiplication:
+
+$$
+5 + \color{red}3 \times 2 \color{black}= 5 + \color{red}6
+$$
+
+Then we do the addition:
+
+$$
+5 + 6 = 11
+$$
+
+**Example:** $(5 + 3) \times 2$
+
+First we simplify what is in the parentheses:
+
+$$
+\color{red}(5 + 3) \color{black}\times 2 = \color{red}8 \color{black}\times 2
+$$
+
+Then we multiply:
+
+$$
+8 \times 2 = 16
+$$
+
+**Example:** $8 - 12 \div 3$
+
+First we divide:
+
+$$
+8 - \color{red}12 \div 3 \color{black}= 8 - \color{red}4
+$$
+
+Then we subtract:
+
+$$
+8 - 4 = 4
+$$
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Now you try: $5(8 - 1) + 2 \times 3$"}
+
+Parentheses come first:
+
+$$
+5\color{red}(8 - 1) \color{black}+ 2 \times 3 = 5 \times \color{red} 7 \color{black}+ 2 \times 3
+$$
+
+Multiplication is next:
+
+$$
+\color{red}5 \times 7 \color{black}+ \color{red}2 \times 3 \color{black}= \color{red}35 \color{black}+ \color{red}6
+$$
+
+Finally we add:
+
+$$
+35 + 6 = 41
+$$
+
+:::
+
+---
+
+### 1.7.3 – With Negatives and Fractions
+
+Once you're comfortable with the basics, we can add in negative numbers and fractions. The order still works the same way — you just have to be more careful.
+
+
+**Example:** $-3 \times (4 - 7)$
+
+First the parentheses:
+
+$$
+-3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}-3
+$$
+
+Then we multiply. Remember, a negative times a negative is positive.
+
+$$
+-3 \times -3 = 9
+$$
+
+**Example:** $\frac{1}{2} \times (6 + 2)$
+
+First the parentheses:
+
+$$
+\frac{1}{2} \times \color{red}(6 + 2) \color{black} = \frac{1}{2} \times \color{red}8
+$$
+
+Now the multiplication:
+
+$$
+\frac{1}{2} \times 8 = \frac{1}{2} \times \frac{8}{1} = \frac{8}{2} = 4
+$$
+
+
+3. $\frac{3 + 5}{2} = \frac{8}{2} = 4$
+
+:::{.callout-caution title="Be careful with negatives!"}
+$-3^2$ means $-(3^2) = -9$
+But $(-3)^2 = 9$
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What happens in -3 	imes (4 - 7)?"}
+
+First do the parentheses: 4 - 7 = -3. Then multiply: -3 × -3 = 9.
+
+:::
+
+---
+
+### 1.7.4 – More Complex Expressions
+
+Let’s try putting all the steps together. When expressions involve grouping, exponents, fractions, and multiple operations, PEMDAS really helps keep things organized.
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Why are parentheses so important here?"}
+
+Without parentheses, you might square the wrong number. Always follow PEMDAS and work inside parentheses first.
+
+:::
+. When expressions involve grouping, exponents, fractions, and multiple operations, PEMDAS really helps keep things organized.
 
 **Example:**
 
@@ -110,126 +191,100 @@ $$
 4 + \frac{1}{2} \times (6 - 2)^2
 $$
 
-Step 1: Parentheses → (6 - 2) = 4
-Step 2: Exponents → 4² = 16
-Step 3: Multiply → ½ × 16 = 8
-Step 4: Add → 4 + 8 = **12**
+Step 1: Parentheses → $6 - 2 = 4$
+Step 2: Exponents → $4^2 = 16$
+Step 3: Multiply → $\frac{1}{2} \times 16 = 8$
+Step 4: Add → $4 + 8 = 12$
 
 ---
 
-### 1.6.5 – Why This Matters in Algebra
+### 1.7.5 – Why This Matters
 
-Later, expressions will include:
+This might feel like just number-crunching, but it lays the foundation for Algebra. You’ll need these skills to simplify expressions, solve equations, and understand formulas.
 
-* **Variables**
-* **Distributive property**
-* **Combining like terms**
-
-If students can’t simplify numbers correctly, the algebra won’t work either.
+Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you can’t simplify numbers correctly, the rest will fall apart.
 
 :::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
-You get a 25% off coupon and a \$10 gift card. The item costs \$40.
+You get a 25% off coupon and a $10 gift card. The item costs $40.
+
 Which should be applied first?
 
-**25% of 40 = \$10 → pay \$30, then gift card = \$20**
-But **40 - 10 = 30, then 25% off = \$22.50**
+* 25% off first → $40 × 0.75 = $30 → $30 - $10 = **$20**
+* Gift card first → $40 - $10 = $30 → 25% off = $22.50
 
-The order changes the result!
+Same ingredients, different result. Order matters!
+:::
+
+::: {.callout-note icon=false collapse=true title="📝 Now You Try It"}
+Try writing your own expression that uses all four operations: add, subtract, multiply, and divide. Can someone else simplify it and get the same result?
 :::
 
 ---
 
 ## ✍️ Practice On Your Own
 
-**Basic Order of Operations**
+### Basic Order of Operations
 
 1. Simplify:
 
-   a. 4 + 6 × 2
-   b. (4 + 6) × 2
-   c. 12 ÷ 4 × 3
-   d. 12 ÷ (4 × 3)
+   * a. 4 + 6 × 2
+   * b. (4 + 6) × 2
+   * c. 12 ÷ 4 × 3
+   * d. 12 ÷ (4 × 3)
 
----
-
-**Include Negatives & Fractions**
+### With Negatives & Fractions
 
 2. Simplify:
 
-   a. -2 × (3 - 5)
-   b. ½ × (8 + 4)
-   c. (6 - 2)² ÷ 2
-   d. (3 + 5) ÷ 2
+   * a. -2 × (3 - 5)
+   * b. $\frac{1}{2} \times (8 + 4)$
+   * c. $(6 - 2)^2 \div 2$
+   * d. $(3 + 5) \div 2$
 
----
-
-**Expression Breakdown**
+### Expression Breakdown
 
 3. Simplify:
 
-   a. 5 + 2 × (6 - 1)
-   b. (12 - 4)² ÷ 4
-   c. 10 - 3 × (2 + 1)
-   d. ¾ × (12 - 4)
+   * a. 5 + 2 × (6 - 1)
+   * b. (12 - 4)² ÷ 4
+   * c. 10 - 3 × (2 + 1)
+   * d. $\frac{3}{4} \times (12 - 4)$
 
----
+### Challenge
 
-**Challenge**
-
-4. Show two different ways to simplify:
-
-$$
-8 - 3 + 2
-$$
-
-Which is correct, and why?
+4. Show two ways to simplify:
+   $8 - 3 + 2$
+   Which is correct, and why?
 
 5. Simplify:
-
-$$
-\frac{4 + 6 \div 3}{2}
-$$
+   $\frac{4 + 6 \div 3}{2}$
 
 ---
 
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
 **1. Basic**
-
 a. 16
 b. 20
 c. 9
 d. 1
 
----
-
 **2. Negatives/Fractions**
-
-a. -2 × (-2) = 4
-b. ½ × 12 = 6
-c. (4)² ÷ 2 = 16 ÷ 2 = 8
-d. 8 ÷ 2 = 4
-
----
+a. 4
+b. 6
+c. 8
+d. 4
 
 **3. Expressions**
-
-a. 5 + 2 × 5 = 5 + 10 = 15
-b. 8² ÷ 4 = 64 ÷ 4 = 16
-c. 10 - 3 × 3 = 10 - 9 = 1
-d. ¾ × 8 = 6
-
----
+a. 15
+b. 16
+c. 1
+d. 6
 
 **4. Challenge**
+$8 - 3 + 2 = (8 - 3) + 2 = 5 + 2 = \boxed{7}$ — correct because we go left to right with + and -
 
-8 - 3 + 2 = (8 - 3) + 2 = 5 + 2 = **7**
-→ This is correct because subtraction and addition go **left to right**
-
----
-
-**5. Final Problem**
-
-6 ÷ 3 = 2 → 4 + 2 = 6 → 6 ÷ 2 = **3**
+**5. Final**
+$6 \div 3 = 2 \rightarrow 4 + 2 = 6 \rightarrow 6 \div 2 = \boxed{3}$
 
 :::

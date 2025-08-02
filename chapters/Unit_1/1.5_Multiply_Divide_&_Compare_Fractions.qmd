@@ -1,8 +1,8 @@
 # 1.5 – Multiplying & Dividing Fractions {.unnumbered}
 
-So far, we’ve been learning how to compare and convert between fractions, decimals, and percents. But to actually solve real-world problems — like finding totals, discounts, grades, or recipe amounts — we also need to know how to **multiply and divide** with these numbers.
+In previous lessons, you've learned how fractions, decimals, and percents relate to each other. But to solve real-world problems—like adjusting recipes, calculating discounts, or determining grades—you also need to multiply and divide these numbers.
 
-In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a {{< glink reciprocal >}}. These skills will help prepare you for solving percent problems and other real-world applications in the next lesson.
+In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a {{< glink reciprocal >}}. These skills will help you tackle percent problems and practical applications in upcoming lessons.
 
 :::{.callout-note icon=false title="🎯 Objectives"}
 
@@ -24,11 +24,11 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 1. What is half of a half?
 
-2. How many fourths are in 1 whole?
+2. How many fourths are in one whole?
 
-3. Predict: What do you think happens when you multiply two numbers less than 1?
+3. Predict: What happens when you multiply two numbers that are smaller than 1?
 
-4. If you divide 1 by $\frac{1}{2}$, what kind of number do you expect to get — smaller or larger?
+4. If you divide 1 by $\frac{1}{2}$, will the anser be bigger or smaller?
 
 ---
 
@@ -36,69 +36,90 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 ### 1.5.1 – Multiplying Fractions
 
-Multiplying by a fraction **divides** things into parts and takes a certain number of them. 
+Multiplying by a fraction means finding a fraction **of** something else. In other words, you're finding a **part of a part**.
 
-So when you multiply one fraction by another, you're just finding a fraction of a fraction — or a **part of a part**.
+**Example:** $\frac{1}{4} \times \frac{1}{2}$
 
-**Example 1:** What is $\frac{1}{4} \times \frac{1}{2}$?
+This means:
 
-Remember, in math, the word **"of"** often means multiplication.  
-So this question is really asking:
+> **one-fourth of one-half**
 
-> What is **one-fourth of one-half**?
-
-Let’s look at a picture to show what this means:
+Here is what it looks like to find how many fourths are in one half:
 
 ![](/images/Unit_1/Lesson_5/fourth_of_a_half.png)
 
-The circle is divided into 8 equal pieces:  
-- The **right half** is light gray.  
-- The **left half** is dark gray.  
-- One small slice on the left is **blue**.
+That blue slice shows one of the four parts of the darker half.  
+Since there are 8 total pieces, and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.
 
-That blue slice shows **one-fourth of the dark half** — or one-fourth of one-half.  
-Since there are 8 total pieces and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.
+Drawing pie charts every time we multiply would take forever—so here's the shortcut:
 
-But drawing pictures every time would take too long.  
-We can take a shortcut by multiplying the numerators and denominators:
+- Multiply numerators together.
+- Multiply denominators together.
 
 $$
 \frac{1}{4} \times \frac{1}{2} = \frac{1 \times 1}{4 \times 2} = \frac{1}{8}
 $$
 
-:::{.callout-caution title="There is no denominator!"}
-Not to worry! If there is no denominator we just make it 1. That's because dividing by 1 does not change the value of the number, it just changes the way it looks.
-
-**Example 2:**
+:::{.callout-note icon=false collapse=true title="🧠 Now you try: $\frac{3}{5} \times \frac{4}{7}$"}
 
 $$
-3 \times \frac{2}{5} = \frac{3}{1} \times \frac{2}{5} = \frac{6}{5}
+\frac{3}{5} \times \frac{4}{7} = \frac{3 \times 4}{5 \times 7} = \frac{12}{35}
 $$
 
 :::
 
-**Example 3:** What is $\frac{2}{3} \times \frac{9}{4}$?
+#### **Multipying Whole Numbers by Fractions**
 
-We proceed in the same way. Multiplying numerators and denominators together:
+No denominator? No problem! Just put a 1 underneath:
+
+**Example:** $3 \times \frac{2}{5}$
+
+$$
+3 \times \frac{2}{5} = \frac{3}{\color{red}1} \times \frac{2}{5} = \frac{6}{5}
+$$
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try it yourself! $5 \times \frac{3}{4}$"}
+
+$$
+5 \times \frac{3}{4} = \frac{5}{\color{red}1} \times \frac{3}{4} = \frac{5 \times 3}{1 \times 4} = \frac{15}{4}
+$$
+
+:::
+
+#### **Simplifying After Multiplying**
+
+The smaller the numbers are, the easier they are to work with. Always simplify fractions when you can.
+
+**Example:** $\frac{2}{3} \times \frac{9}{4}$
 
 $$
 \frac{2}{3} \times \frac{9}{4} = \frac{2 \times 9}{3 \times 4} = \frac{18}{12}
 $$
 
-But wait! That fraction isn't in simplest form! We should always simplify our fractions when possible. So the answer is:
+Cancel out any common factors:
 
 
 $$
 \frac{18}{12}
-= \frac{\color{red}{\cancel{2}} \times 3 \times \color{red}{\cancel{3}}}{\color{red}{\cancel{2}} \times \color{red}{\cancel{3}} \times 2}
+= \frac{\cancel{\color{red}2} \times 3 \times \cancel{\color{red}3}}{\cancel{\color{red}2} \times \cancel{\color{red}3} \times 2}
 = \frac{3}{2}
 $$
 
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Your turn! What is $\frac{5}{8} \times \frac{3}{4}$?"}
+:::{.callout-tip}
+If you factor before you multiply, you get to skip a step.
 
- $$
-\frac{5}{8} \times \frac{3}{4} = \frac{5 \times 3}{8 \times 4} = \frac{15}{32}
+$$
+\frac{2}{3} \times \frac{9}{4} = \frac{2 \times 9}{3 \times 4} = \frac{\cancel{\color{red}2} \times (3 \times \cancel{\color{red}3})}{\cancel{\color{red}3}  \times (\cancel{\color{red}2} \times 2)}
+= \frac{3}{2}
+$$
+
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try it yourself! $\frac{8}{9} \times \frac{3}{4}$"}
+
+$$
+\frac{8}{9} \times \frac{3}{4} = \frac{8 \times 3}{9 \times 4} = \frac{(\cancel{\color{red}2} \times \cancel{\color{red}2} \times 2) \times \cancel{\color{red}3}}{(\cancel{\color{red}3} \times 3) \times (\cancel{\color{red}2} \times \cancel{\color{red}2})} = \frac{2}{3}
 $$
 
 :::
@@ -108,18 +129,13 @@ $$
 ### 1.5.2 – Multiplying Mixed Numbers
 
 A {{< glink mixed number >}} is a number that has a whole part and a fraction part, like $4\tfrac{2}{3}$.
-Before multiplying, we first need to turn it into an {{< glink improper fraction >}}, which is a fraction greater than 1.
-
-**Why?**
-We can’t multiply properly until we know how many total parts we're dealing with — and that’s what improper fractions show.
+Before multiplying, we first need to convert to an {{< glink improper fraction >}}.
 
 
 **Example:**
 Multiply $4\tfrac{2}{3} \times \frac{5}{6}$
 
-Step 1: Turn the mixed number into an improper fraction.
-
-We need to figure out how many thirds we have. To do that, multiply the whole number by the denominator:
+We have 2 thirds, but how many thirds are in 4? To find out, multiply the whole number by the denominator:
 
 $$
 4 \times 3 = 12
@@ -131,20 +147,19 @@ $$
 12 + 2 = 14
 $$
 
-This tells us how many parts we have.
-So:
+Now we know that there are 14 thirds.
 
 $$
 4\tfrac{2}{3} = \frac{14}{3}
 $$
 
-Step 2: Multiply the fractions.
+Now we are ready to multiply:
 
 $$
 \frac{14}{3} \times \frac{2}{3} = \frac{28}{9}
 $$
 
-**How do we convert back to a mixed number?**
+Sometimes we need to **convert back** to a mixed number. Here is how we do that:
 
 First, **divide**: 
 
@@ -152,16 +167,11 @@ $$
 28 \div 9 = 3 \text{ remainder 1}
 $$
 
-Then **add**: 
-
-$$
-3 + \frac{1}{9} = 3\frac{1}{9}
-$$
+Now we know we have 3 wholes and 1 remaining ninth. Together that is $3 \tfrac{1}{9}$.
 
 ---
 
-**Another Example:**
-Multiply $2\tfrac{1}{4} \times \frac{4}{5}$
+**Another Example:** $2\tfrac{1}{4} \times \frac{4}{5}$
 
 Step 1: Convert the mixed number.
 
@@ -172,21 +182,29 @@ $$
 Step 2: Multiply:
 
 $$
-\frac{9}{4} \times \frac{4}{5} = \frac{36}{20} = \frac{9}{5} = 1\frac{4}{5}
+\frac{9}{4} \times \frac{4}{5} = \frac{9 \times \cancel{\color{red}4}}{\cancel{\color{red}4} \times 5} = \frac{9}{5} = 1\frac{4}{5}
 $$
 
 
 :::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
-Mixed numbers show up very frequently in cooking. For example, a recipe may call for $3 \frac{1}{2}$ cups of sugar. What if we want to cut the recipe in half?  To do that, we need to multiply:
+Mixed numbers show up often, especially in cooking. If a recipe for 12 needs $3 \frac{1}{2}$ cups of flour, and we only want half (for 6 servings), we multiply:
 
 $$
-3 \frac{1}{2} \times \frac{1}{2} = \frac{7}{2} \times \frac{1}{2} = \frac{7}{4} \text{ cups}
+3 \frac{1}{2} \times \frac{1}{2} = \frac{7}{2} \times \frac{1}{2} = \frac{7}{4}
 $$
 
-Who wants to use a $\frac{1}{4}$ cup scoop 7 times? To save time, we convert back to a mixed number:
+Instead of measuring 7 times with a $\frac{1}{4}$ cup, convert back to a mixed number:
 
 $$
-\frac{7}{4} => 7 \div 4 = 1 \text{ remainder 3} => 1\frac{3}{4} \text{cups}
+\frac{7}{4} = 1\frac{3}{4} \text{ cups}
+$$
+
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try it yourself! $3 \tfrac{2}{3} \times 4 \tfrac{1}{2}$"}
+
+$$
+3 \tfrac{2}{3} \times 4 \tfrac{1}{8} = \frac{11}{3} \times \frac{9}{2} = \frac{11 \times (\cancel{\color{red}3} \times 3)}{\cancel{\color{red}3} \times 2} = \frac{33}{2} = 8 \frac{1}{2}
 $$
 
 :::
@@ -195,33 +213,27 @@ $$
 
 ### 1.5.3 – Division & Reciprocals
 
-Dividing fractions can seem strange — until you understand the **reciprocal**.
+Dividing fractions? Easy—meet the {{< glink reciprocal >}}. It flips fractions upside down!
 
-The **reciprocal** of a number is what you multiply by to get 1. For example:
+ - Reciprocal of  $\frac{3}{4}$ is $\frac{4}{3}$
+ - Reciprocal of 5 is $\frac{1}{5}$
 
-- The reciprocal of $\frac{3}{4}$ is $\frac{4}{3}$
-- The reciprocal of $5$ is $\frac{1}{5}$
 
-To **divide fractions**, we multiply by the reciprocal of the divisor:
+To divide fractions, multiply by the reciprocal of the {{< glink divisor >}}:
 
-**Example:**
+**Example:** $\frac{2}{3} \div \frac{1}{4}$
+
 $$
 \frac{2}{3} \div \frac{1}{4} = \frac{2}{3} \times \frac{4}{1} = \frac{8}{3}
 $$
 
-Why does this work?
-
-Dividing by $\frac{1}{4}$ asks: *How many fourths are in two-thirds?*
-
-Visualizing it:
-- Each “fourth” is a small slice.
-- You’re seeing how many of those slices fit in your amount.
+Dividing by  asks, "How many fourths are there in $\frac{2}{3}$?"
 
 ---
 
-:::{.callout-tip title="When in doubt: Keep, Change, Flip"}
+:::{.callout-tip title="Remember: Keep, Change, Flip"}
 
-A common trick for dividing fractions:
+Dividing fractions is as easy as 1-2-3:
 
 1. **Keep** the first fraction.
 2. **Change** the division sign to multiplication.
@@ -245,6 +257,7 @@ A common trick for dividing fractions:
    a. $1\tfrac{1}{2} \times \frac{2}{3}$  
    b. $2\tfrac{2}{5} \times 3$  
    c. $1\tfrac{3}{4} \times \frac{2}{3}$  
+   d. $5\tfrac{2}{9} \times 4\tfrac{3}{8}$
 
 3. Divide:
 
@@ -263,28 +276,47 @@ A common trick for dividing fractions:
 
 ---
 
+**Challenge Problems**
+
+5. What two fractions multiply to give exactly $\frac{3}{8}$ if one of them is $\frac{3}{4}$?
+
+6. A pancake recipe calls for $2\tfrac{1}{4}$ cups of sugar per batch. If you have exactly 9 cups of sugar, what is the greatest number of full batches you can make?
+
+
+---
+
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
-1.  
-   a. $\frac{6}{20} = \frac{3}{10}$  
-   b. $\frac{12}{7} = 1\tfrac{5}{7}$  
-   c. $\frac{5}{12}$  
-   d. $\frac{12}{72} = \frac{1}{6}$  
+1. Multiply:
 
-2.  
-   a. $\frac{3}{2} \times \frac{2}{3} = 1$  
-   b. $\frac{12}{5} \times 3 = \frac{36}{5} = 7\tfrac{1}{5}$  
-   c. $\frac{7}{4} \times \frac{2}{3} = \frac{14}{12} = \frac{7}{6} = 1\tfrac{1}{6}$  
+   a. $\frac{3}{10}$
+   b. $\frac{12}{7}$
+   c. $\frac{5}{12}$
+   d. $\frac{1}{6}$
 
-3.  
-   a. $\frac{3}{4} \times \frac{2}{1} = \frac{6}{4} = 1\tfrac{1}{2}$  
-   b. $2 \times \frac{5}{2} = 5$  
-   c. $\frac{5}{6} \times \frac{3}{1} = \frac{15}{6} = 2\tfrac{1}{2}$  
-   d. $1$  
+2. Multiply (mixed numbers):
 
-4.  
-   a. 6 people  
-   b. $\frac{1}{3}$ cup  
-   c. 8 shelves
+   a. 1
+   b. $\frac{36}{5} = 7\tfrac{1}{5}$
+   c. $\frac{7}{6} = 1\tfrac{1}{6}$
+   d. $\frac{1645}{72} = 22\tfrac{61}{72}$
+
+3. Divide:
+
+   a. $\frac{3}{2}$
+   b. 5
+   c. $\frac{5}{2}$
+   d. 1
+
+4. Word Problems:
+
+   a. 6
+   b. $\frac{1}{3}$
+   c. 8
+
+5. $\frac{3}{4}$ and $\frac{1}{2}$
+
+6. 4
+
 
 :::

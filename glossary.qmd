@@ -4,7 +4,19 @@
 
 The distance a number is from zero on a number line, always expressed as a positive number or zero.
 
-> Example: The **absolute value** of `-7` is `7`.
+> **Example:**
+>
+> The **absolute value** of `-7` is `7`.
+
+---
+
+### Addition {#glossary-addition}
+
+An operation that combines two or more numbers into a total.
+
+> **Example:**
+>
+> $5 + 7 = 12$
 
 ---
 
@@ -30,7 +42,29 @@ A composite number has more than two factors.
 
 That means it can be divided evenly by numbers other than 1 and itself.
 
-> Example: 12 is composite because 2, 3, 4, and 6 all divide it evenly.
+> **Example:**
+>
+> 12 is composite because 2, 3, 4, and 6 all divide it evenly.
+
+---
+
+### Convert {#glossary-convert}
+
+To convert means to **change a number from one form to another** — like from a fraction to a decimal, or a decimal to a percent.
+
+> **Example:**
+>
+> $\frac{3}{4} = 0.75 = 75\%$ — all are equivalent, just written differently.
+
+---
+
+### Decimal {#glossary-decimal}
+
+A decimal is a number that uses a **dot (.)** to show values **less than 1**. It’s based on powers of 10.
+
+> **Example:**
+>
+> $0.5$ means 5 tenths, and $3.14$ means 3 and 14 hundredths.
 
 ---
 
@@ -38,7 +72,29 @@ That means it can be divided evenly by numbers other than 1 and itself.
 
 The denominator is the **bottom number** in a fraction. It tells **how many equal parts** the whole is divided into.
 
-> Example: In the fraction 3/4, the **denominator** is 4.
+> **Example:**
+>
+> In the fraction 3/4, the **denominator** is 4.
+
+---
+
+### Discount {#glossary-discount}
+
+A discount is an amount **taken off the original price**. It’s usually shown as a percent.
+
+> **Example:**  
+>   
+> A 25% discount on a $40 shirt means you save $10. You pay $30.
+
+---
+
+### Division {#glossary-division}
+
+An operation that splits a number into equal parts.
+
+> **Example:**
+>
+> $12 \div 3 = 4$ (12 split into 3 equal parts)
 
 ---
 
@@ -56,41 +112,62 @@ A number is **divisible** by another if it divides evenly — these rules help y
 
 ---
 
+### Divisor {#glossary-divisor}
+
+A divisor is the number you **divide by** in a division problem. It tells you how many parts to split something into.
+
+> **Example:**  
+>   
+> In \(12 \div 3 = 4\), the number 3 is the divisor because it divides 12 into 3 equal parts.
+
+---
+
 ### Equation {#glossary-equation}
 
 An equation is a math sentence that says two things are equal.
 
 It has an equals sign (=) and shows a relationship between numbers or expressions.
 
-> Examples: `2 + 3 = 5` and `x + 1 = 7`
+> **Examples:**
+>
+> $2 + 3 = 5$ and $x + 1 = 7$
 
 ---
 
 ### Equivalent {#glossary-equivalent}
 
-Two numbers, fractions, or expressions are **equivalent** if they have the **same value**, even if the look different.
-
+Two numbers are equivalent if they have **the same value**, even if they look different.
 
 > **Example:**
 >
-> The fractions $\frac{2}{4}$ and $\frac{6}{12}$ are equivalent because both simplify to $\frac{1}{2}$. 
+> $\frac{1}{2}$, 0.5, and 50% are all equivalent.
+
+---
+
+### Exponent {#glossary-exponent}
+
+A number that tells you how many times to multiply a base number by itself.
+
+> **Example:**
 >
-> The decimal for $\frac{2}{4}$ can be found using a calculator by entering 1 &divide; 2, which gives 0.5  
->
->Likewise, $\frac{6}{12}$, can be found by entering 6 &divide; 12, which also gives 0.5.
+> $3^2 = 3 \times 3 = 9$
 
 ---
 
 ### Expression {#glossary-expression}
 
-An expression is a math phrase made of numbers, variables, or both — but it doesn’t have an equals sign.
+A math sentence made up of numbers, variables, operations, and sometimes parentheses — but **no equals sign**.
 
-> Examples:
-> `3x + 2`
-> `7 − y`
-> `5(a − 1)`
+> **Example:**
+>
+> $4 + 2 \times (5 - 1)$ is an expression.
+> 
+> **Another Example:**
+>
+> $4(x-3)^2$ is also an expression
 
 ---
+
 
 ### Factor {#glossary-factor}
 
@@ -98,7 +175,9 @@ A factor is a whole number that divides another number evenly — with no remain
 
 If you can split something into equal groups with no leftovers, the group size is a factor.
 
-> Example: 3 is a factor of 12 because 3 × 4 = 12.
+> **Example:**
+>
+> 3 is a factor of 12 because 3 × 4 = 12.
 
 ---
 
@@ -106,11 +185,11 @@ If you can split something into equal groups with no leftovers, the group size i
 
 Factoring means breaking something down into smaller parts that multiply together to make it.
 
-> Examples:
+> **Examples:**
 > 
-> - Factoring a number: 12 can be factored into `3 × 4` or `2 × 6`.
+> - Factoring a number: 12 can be factored into $3 \times 4$ or $2 \times 6$.
 >
-> - Factoring an expression: `x² + 5x + 6` can be factored into `(x + 2)(x + 3)`.
+> - Factoring an expression: $x^2 + 5x + 6$ can be factored into $(x + 2)(x + 3)$.
 
 ---
 
@@ -143,7 +222,19 @@ A fraction shows a part of a whole. It has a numerator (top number) and a denomi
 
 The denominator tells how many equal parts the whole is divided into, and the numerator tells how many of those parts you have.
 
-> Example: In 3/4, the fraction means **3 out of 4** equal parts.
+> **Example:**
+>
+> In 3/4, the fraction means **3 out of 4** equal parts.
+
+---
+
+### Grade {#glossary-grade}
+
+A grade often shows **how well someone did** using a percent or letter. It’s usually based on **part out of whole**.
+
+> **Example:**  
+>   
+> If you got 18 out of 20 questions right, your grade is \(\frac{18}{20} = 90\%\).
 
 ---
 
@@ -151,9 +242,11 @@ The denominator tells how many equal parts the whole is divided into, and the nu
 
 A number is greater than (**>**) another number if it is further to the right on the number line.
 
-> Example: `5 > 3` is true
+> **Example:**
+>
+> $5 > 3$ is true
 > ![Greater than true](images/Glossary/greater_than_true.png){#fig-number-line width="100%"}
-> but `3 > 5` is false
+> but $3 > 5$ is false
 > ![Greater than false](images/Glossary/greater_than_false.png){#fig-number-line width="100%"}
 
 ---
@@ -208,7 +301,9 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 
 An integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero.
 
-> **Examples:** `-3`, `0`, `5`, `100`
+> **Examples:** 
+> 
+> `-3`, `0`, `5`, `100`
 
 ---
 
@@ -216,10 +311,32 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 
 A number is less than (**<**) another number if it is further to the left on the number line.
 
-> Example: `3 < 5` is true
+> Example: 
+>
+> $3 < 5$ is true
 > ![Less than true](images/Glossary/less_than_true.png){#fig-number-line width="100%"}
-> but `5 < 3` is false
+> but $5 < 3$ is false
 > ![Less than false](images/Glossary/less_than_false.png){#fig-number-line width="100%"}
+
+---
+
+### Markup {#glossary-markup}
+
+A markup is the **amount added to a cost** to set a higher selling price, usually as a percent.
+
+> **Example:**  
+>   
+> If a store buys a toy for $10 and adds a 50% markup, the price becomes $15.
+
+---
+
+### Mixed Number {#glossary-mixed-number}
+
+A mixed number has a **whole number and a fraction** combined into one value.
+
+> **Example:**  
+>   
+> \(2\frac{1}{4}\) means 2 wholes and 1 fourth. It’s the same as \(\frac{9}{4}\).
 
 ---
 
@@ -227,7 +344,19 @@ A number is less than (**<**) another number if it is further to the left on the
 
 A multiple is what you get when you multiply a number by 1, 2, 3, and so on.
 
-> Example: `5`, `10`, `15`, and `20` are all multiples of `5`.
+> **Example:**
+>
+> `5`, `10`, `15`, and `20` are all multiples of `5`.
+
+---
+
+### Multiplication {#glossary-multiplication}
+
+A math operation that means repeated addition or combining equal groups.
+
+> **Example:**
+>
+> $4 \times 3 = 12$ (4 groups of 3)
 
 ---
 
@@ -237,7 +366,9 @@ A straight line used to show numbers in order. It usually has zero in the middle
 
 Number lines help you visualize math operations and compare values.
 
-> Example: `-2`, `0`, and `3` are all on the number line.
+> **Example:**
+>
+> `-2`, `0`, and `3` are all on the number line.
 > ![Number line](images/Glossary/number_line_example.png){#fig-number-line width="100%"}
 
 ---
@@ -263,7 +394,9 @@ It's kind of like having a good instinct for numbers — not just memorizing rul
 
 The numerator is the **top number** in a fraction. It tells **how many parts** you have.
 
-> Example: In the fraction 3/4, the **numerator** is 3.
+> **Example:**
+>
+> In the fraction 3/4, the **numerator** is 3.
 
 ---
 
@@ -273,7 +406,20 @@ A number is negative if it is less than zero.
 
 On a number line, negative numbers are to the left of zero.
 
-> Example: `-4` is a negative number.
+> **Example:**
+>
+> `-4` is a negative number.
+
+---
+
+### Operation {#glossary-operation}
+
+An operation is a **math action** you do with numbers — like adding, subtracting, multiplying, or dividing.
+
+> **Example:**  
+>   
+> In \(7 + 3\), the operation is addition.  
+> In \(12 \div 4\), the operation is division.
 
 ---
 
@@ -283,7 +429,62 @@ Two numbers that are the same distance from zero on a number line, but on opposi
 
 Their sum is always zero.
 
-> Example: `-3` and `3` are opposites.
+> **Example:**
+>
+> `-3` and `3` are opposites.
+
+---
+
+### Order of Operations {#glossary-order-of-operations}
+
+The specific order you follow to simplify expressions:
+**P**arentheses &rarr; **E**xponents &rarr; **M**ultiply/**D**ivide &rarr; **A**dd/**S**ubtract, or **PEMDAS**.
+
+Multiplication and division are done **left to right**, whichever comes first. Same with addition and subtraction — they are also done **left to right**.
+
+> **Example:**
+>
+> In $3 + 4 \times 2$, you multiply first: $3 + 8 = 11$
+
+---
+
+### Parentheses {#glossary-parentheses}
+
+A grouping symbol that tells you what to do first in an expression.
+
+> **Example:**
+>
+> In $(2 + 3) \times 4$, you add first: $5 \times 4 = 20$
+
+---
+
+### Place Value {#glossary-place-value}
+
+Place value tells you **how much each digit is worth** based on where it is in the number.
+
+> **Example:**
+>
+> In 23.4, the 2 is worth 20 (tens), the 3 is worth 3 (ones), and the 4 is worth 4 tenths.
+
+---
+
+### Part {#glossary-part}
+
+A part is one piece of the whole. It’s often what you’re looking for in a percent or fraction problem.
+
+> **Example:**  
+>   
+> In 20% of 50, the part is 10. (Because 20% of 50 is 10.)
+
+---
+
+### Percent {#glossary-percent}
+
+A percent is a way of expressing a number **out of 100**. The symbol **%** means “per hundred.”
+
+> **Example:**
+>
+> 25% means 25 out of 100. It’s the same as $\frac{1}{4}$ or 0.25.
 
 ---
 
@@ -293,7 +494,9 @@ A number is positive if it is greater than zero.
 
 On a number line, positive numbers are to the right of zero.
 
-> Example: `5` is a positive number.
+> **Example:**
+>
+> `5` is a positive number.
 
 ---
 
@@ -301,7 +504,9 @@ On a number line, positive numbers are to the right of zero.
 
 A number is prime if it has exactly two factors: 1 and itself.
 
-> Examples: `2`, `3`, `5`, `7`, `11`
+> **Examples:**
+>
+> `2`, `3`, `5`, `7`, `11`
 
 ---
 
@@ -309,9 +514,10 @@ A number is prime if it has exactly two factors: 1 and itself.
 
 Prime factorization means writing a number as a product of prime numbers.
 
-> Example: `18 = 2 × 3 × 3` or `2 × 3²`
-
-These are the prime building blocks of 18.
+> **Example:**
+>
+> `18 = 2 × 3 × 3` or `2 × 3²`
+> These are the prime building blocks of 18.
 
 ---
 
@@ -319,7 +525,19 @@ These are the prime building blocks of 18.
 
 A product is the **result of multiplying** two or more numbers.
 
-> Example: The product of 4 and 6 is `24`, because `4 × 6 = 24`.
+> **Example:**
+>
+> The product of 4 and 6 is `24`, because `4 × 6 = 24`.
+
+---
+
+### Proportion {#glossary-proportion}
+
+A proportion shows **two equal ratios**. It tells you that two fractions or comparisons are the same.
+
+> **Example:**  
+>   
+> \(\frac{2}{3} = \frac{4}{6}\) is a proportion.
 
 ---
 
@@ -327,7 +545,44 @@ A product is the **result of multiplying** two or more numbers.
 
 A quotient is the **result of dividing** one number by another.
 
-> Example: The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+> **Example:**
+>
+> The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+
+---
+
+### Rate {#glossary-rate}
+
+A rate compares **two different units**, like miles per hour or cost per item.
+
+> **Example:**  
+>   
+> If you drive 60 miles in 2 hours, your rate is 30 miles per hour.
+
+---
+
+### Reciprocal {#glossary-reciprocal}
+
+The reciprocal of a number is what you **multiply it by to get 1**. You can find it by **flipping the numerator and denominator** of a fraction.
+
+> **Example:**  
+>   
+> The reciprocal of \(\frac{2}{3}\) is \(\frac{3}{2}\), because \(\frac{2}{3} \times \frac{3}{2} = 1\).  
+> The reciprocal of 5 is \(\frac{1}{5}\).
+
+---
+
+### Relatively Prime {#glossary-relatively-prime}
+
+Two numbers are relatively prime if they have **no common factors** other than 1.
+
+This means their greatest common factor (GCF) is 1, even if neither number is prime.
+
+> **Example:**
+>
+> 8 and 15 are relatively prime because they share no factors except 1.
+> 8 has factors: 1, 2, 4, 8
+> 15 has factors: 1, 3, 5, 15
 
 ---
 
@@ -335,7 +590,22 @@ A quotient is the **result of dividing** one number by another.
 
 A remainder is what’s left over after dividing when the number doesn’t go in evenly.
 
-> Example: `10 ÷ 3 = 3` with a remainder of `1`, because `3 × 3 = 9` and there’s `1` left.
+> **Example:**
+>
+> `10 ÷ 3 = 3` with a remainder of `1`, because `3 × 3 = 9` and there’s `1` left.
+
+---
+
+### Simplest Form {#glossary-simplest-form}
+
+A fraction is in simplest form when the numerator and denominator have **no common factors** except 1.
+
+In other words, the fraction can’t be reduced any further.
+
+> **Example:**
+>
+> $\frac{6}{8}$ is not in simplest form because both numbers can be divided by 2.
+> $\frac{3}{4}$ is the simplest form of $\frac{6}{8}$.
 
 ---
 
@@ -344,6 +614,7 @@ A remainder is what’s left over after dividing when the number doesn’t go in
 To **simplify** a number or expression means to **rewrite it in a cleaner or shorter way** — without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.
 
 > **Example:**
+>
 > The fraction $\frac{12}{20}$ can be simplified by dividing both the {{< glink numerator >}} and {{< glink denominator >}} by 4:
 > 
 > $$\frac{12}{20} = \frac{3}{5}$$
@@ -353,11 +624,33 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 
 ---
 
+### Subtraction {#glossary-subtraction}
+
+An operation that finds the difference between two numbers.
+
+> **Example:**
+>
+> $9 - 4 = 5$
+
+---
+
 ### Sum {#glossary-sum}
 
 A sum is the **result of adding** two or more numbers.
 
-> Example: The sum of 7 and 8 is `15`, because `7 + 8 = 15`.
+> **Example: **
+>
+> The sum of 7 and 8 is `15`, because `7 + 8 = 15`.
+
+---
+
+### Survey {#glossary-survey}
+
+A survey is a way to **collect information** from people by asking questions.
+
+> **Example:**  
+>   
+> A survey might ask 100 students what their favorite lunch is.
 
 ---
 
@@ -365,7 +658,29 @@ A sum is the **result of adding** two or more numbers.
 
 Up and down, like a flagpole.
 
-> Example: This is a vertical number line.
-> ![](/images/Glossary/vertical_by_tens.png)
+> **Example:**
+>
+> This is a **vertical** number line.
+> ![](/images/Glossary/vertical_by_tens.png){height=200}
 
 ---
+
+### Whole {#glossary-whole}
+
+The whole is the **total amount** — it’s everything being considered before taking parts.
+
+> **Example:**  
+>   
+> If 30 is 60% of a number, then the whole is 50.
+
+---
+
+
+
+
+
+
+
+
+
+

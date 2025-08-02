@@ -6,6 +6,7 @@ project:
 resources:
   - glossary.json
   - scripts/*
+
  
 filters:
   - glossary-shortcode
@@ -19,9 +20,14 @@ format:
       - styles/glossary-tooltips.css
     include-after-body:
       - scripts/inject-glossary-tooltips.html
-    mermaid-format: png
-
-  pdf: default
+    mermaid:
+      theme: neutral
+      
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{cancel}
+        \usepackage{xcolor}
   
 website:
   favicon: images/logo.png
