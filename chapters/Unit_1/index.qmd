@@ -1,8 +1,8 @@
 # Introduction {.unnumbered}
 
-Welcome to Unit 1! In this unit, we’ll build the foundation you need to succeed in Algebra. Think of this as preparing your math toolkit.
+Welcome to Unit 1! This is where you’ll build your Algebra toolkit — skills like working with integers, simplifying fractions, and following the order of operations.
 
-You’ll explore integers, factors, fractions, and the rules of simplification. These skills are the building blocks that will help you solve more complex problems with confidence — especially when working with expressions and equations in later units.
+You’ll use these tools again and again to solve expressions, equations, and real-world problems throughout the year.
 
 ---
 
@@ -10,37 +10,37 @@ You’ll explore integers, factors, fractions, and the rules of simplification. 
 
 By the end of this unit, you’ll be able to:
 
-* Work with positive and negative numbers on a number line
-* Use factor trees to find prime factorizations
-* Identify and use the greatest common factor (GCF)
-* Convert between fractions, decimals, and percents
-* Multiply, divide, and compare fractions
+* Work with positive and negative numbers on a number line  
+* Use factor trees to find prime factorizations  
+* Identify and use the greatest common factor (GCF)  
+* Convert between fractions, decimals, and percents  
+* Multiply, divide, and compare fractions  
 * Follow the correct order of operations to simplify expressions
 
 ---
 
 ## Topics in This Unit
 
-[**Integers & Number Lines**](1.1_Integers_&_Number_Lines)
+[**Integers & Number Lines**](1.1_Integers_&_Number_Lines.html)  
 Understand and use positive and negative numbers, and how to place them on a number line.
 
-[**Factors, Multiples & Prime Factorization**](1.2_Factors,_Multiples_&_Prime_Factorization)
+[**Factors, Multiples & Prime Factorization**](1.2_Factors_Multiples_&_Prime_Factorization.html)  
 Break numbers into their prime building blocks using factor trees.
 
-[**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions)
+[**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions.html)  
 Use prime factorization to find the GCF and simplify fractions to their simplest form.
 
-[**Fractions, Decimals & Percents: Conversions**](1.4_Fractions,_Decimals_&_Percents)
-Convert between different number forms and apply them in real-world problems.
+[**Fractions, Decimals & Percents – Conversions**](1.4_Fractions_Decimals_&_Percents.html)  
+Convert between different number forms and compare them.
 
-[**Solving Problems With Fractions Decimals & Percents**](1.5_Solving_Problems_with_Fractions_Decimals_and_Percents)
-Solve real-world problems using fractions decimals and percents.
-
-[**Multiply, Divide & Compare Fractions**](1.6_Multiply,_Divide_&_Compare_Fractions)
+[**Multiply, Divide & Compare Fractions**](1.5_Multiply_Divide_&_Compare_Fractions.html)  
 Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.
 
-[**Order of Operations**](1.7_Order_of_Operations)
-Follow the rules (PEMDAS) to simplify numeric expressions with integers and fractions.
+[**Solving Problems with Fractions, Decimals & Percents**](1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html)  
+Solve real-world problems using these different number forms.
+
+[**Using the Order of Operations**](1.7_Order_of_Operations.html)  
+Follow the rules (PEMDAS) to simplify expressions with integers and fractions.
 
 ---
 
