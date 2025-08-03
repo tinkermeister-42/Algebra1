@@ -34,22 +34,67 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 ## 👥 Learn Together
 
+
 ### 1.7.1 – The Order Matters
 
-Order matters a lot in math — doing the steps in the wrong order can completely change your answer. That's why we have rules to follow.
+In math, the order you do things **really matters** — doing steps out of order can completely change the answer.
 
-The correct order is often remembered with **PEMDAS**:
+Take this simple-looking problem:
+
+$$
+10 + 3 \times 5
+$$
+
+Let’s try solving it from **left to right**:
+
+$$
+\color{red}10 + 3 \color{black}\times 5 = \color{red}13 \color{black}\times 5 = 65
+$$
+
+Now let’s try doing the **multiplication first**:
+
+$$
+10 + \color{red}3 \times 5 \color{black} = 10 + \color{red}15 \color{black} = 25
+$$
+
+So which one is correct — **65 or 25**?
+
+✅ The correct answer is **25**, because we follow a specific order of {{< glink operations >}}. Without these rules, people could get different answers to the same problem!
+
+Let’s look at the rules:
+
+:::{.callout-note icon=false title="📌 The Order of Operations"}
+
+We often remember the order using **PEMDAS**:
 
 * **P** – Parentheses $(...)$
-* **E** – Exponents $3^2$
-* **MD** – Multiplication ($\times$) or Division ($\div$)
-* **AS** – Addition ($+$) or Subtraction ($-$)
+* **E** – Exponents (like $3^2$)
+* **M/D** – Multiplication ($\times$) and Division ($\div$)
+* **A/S** – Addition ($+$) and Subtraction ($-$)
 
-> ⚠️ Multiply doesn’t always come before divide. Same with add and subtract. You move **left to right** when they appear together.
+**Note:**
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What comes first in 8 - 12 ÷ 3?"}
+- Multiplication and division are on the **same level**. Do them **left to right**.
+- The same goes for addition and subtraction.
 
-Division comes first! So: 12 ÷ 3 = 4, then 8 - 4 = 4
+You can think of it like a ladder. You start at the top and climb your way down!
+
+:::
+
+:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Why are multiplication and division grouped together?"}
+
+Because they are **two sides of the same operation**.
+Any division problem can be rewritten as multiplication by using the **reciprocal**.
+
+> **Example:** $12 \div \frac{3}{2}$
+> becomes
+> $12 \times \frac{2}{3} = 8$
+
+The same is true for addition and subtraction. Subtraction is really just adding the opposite.
+
+> **Example:** $5 - 2$
+> becomes
+> $5 + (-2) = 3$
 
 :::
 
@@ -59,63 +104,70 @@ Division comes first! So: 12 ÷ 3 = 4, then 8 - 4 = 4
 
 Let’s look at some expressions that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
 
-**Example:** $5 + 3 \times 2$
 
-First we do the multiplication:
+**Example 1:** $5 + 3 \times 2$
+
+First, do the multiplication:
 
 $$
-5 + \color{red}3 \times 2 \color{black}= 5 + \color{red}6
+5 + \color{red}3 \times 2 \color{black} = 5 + \color{red}6
 $$
 
-Then we do the addition:
+Then do the addition:
 
 $$
 5 + 6 = 11
 $$
 
-**Example:** $(5 + 3) \times 2$
+---
 
-First we simplify what is in the parentheses:
+**Example 2:** $(5 + 3) \times 2$
+
+First, simplify the parentheses:
 
 $$
-\color{red}(5 + 3) \color{black}\times 2 = \color{red}8 \color{black}\times 2
+\color{red}(5 + 3) \color{black} \times 2 = \color{red}8 \color{black} \times 2
 $$
 
-Then we multiply:
+Then multiply:
 
 $$
 8 \times 2 = 16
 $$
 
-**Example:** $8 - 12 \div 3$
+---
 
-First we divide:
+**Example 3:** $8 - 12 \div 3$
+
+First, divide:
 
 $$
-8 - \color{red}12 \div 3 \color{black}= 8 - \color{red}4
+8 - \color{red}12 \div 3 \color{black} = 8 - \color{red}4
 $$
 
-Then we subtract:
+Then subtract:
 
 $$
 8 - 4 = 4
 $$
 
+---
+
 :::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Now you try: $5(8 - 1) + 2 \times 3$"}
 
-Parentheses come first:
+Start with parentheses:
 
 $$
-5\color{red}(8 - 1) \color{black}+ 2 \times 3 = 5 \times \color{red} 7 \color{black}+ 2 \times 3
+5\color{red}(8 - 1)\color{black} + 2 \times 3 = 5 \times \color{red}7 \color{black} + 2 \times 3
 $$
 
-Multiplication is next:
+Next, do the multiplication:
 
 $$
-\color{red}5 \times 7 \color{black}+ \color{red}2 \times 3 \color{black}= \color{red}35 \color{black}+ \color{red}6
+\color{red}5 \times 7 \color{black} + \color{red}2 \times 3 \color{black} = \color{red}35 \color{black} + \color{red}6
 $$
 
-Finally we add:
+Finally, add:
 
 $$
 35 + 6 = 41
@@ -127,48 +179,105 @@ $$
 
 ### 1.7.3 – With Negatives and Fractions
 
-Once you're comfortable with the basics, we can add in negative numbers and fractions. The order still works the same way — you just have to be more careful.
+Once you're comfortable with the basics, we can add in **negative numbers** and **fractions**. The order of operations still works the same way — you just have to be more careful.
 
 
-**Example:** $-3 \times (4 - 7)$
+**Example 1:** $-3 \times (4 - 7)$
 
-First the parentheses:
+First, simplify the parentheses:
 
 $$
--3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}-3
+-3 \times \color{red}(4 - 7)\color{black} = -3 \times \color{red}-3
 $$
 
-Then we multiply. Remember, a negative times a negative is positive.
+Then multiply. Remember: a **negative times a negative is positive**.
 
 $$
 -3 \times -3 = 9
 $$
 
-**Example:** $\frac{1}{2} \times (6 + 2)$
+:::{.callout-note appearance="simple" icon=false collapse=true title="🧠 Why is a negative times a negative positive?"}
 
-First the parentheses:
+What does multiplying by a negative number do?  
+It **reverses the sign** of the number it’s multiplied by.
+
+**Example:**  
+$3 \times -1 = -3$ → the positive 3 becomes negative
+
+Now try it with a negative number:
+
+**Example:**  
+$-3 \times -1 = 3$ → the negative 3 becomes positive
+
+So multiplying by $-1$ always gives the **opposite sign**.  
+That’s why $-3 \times -1 = 3$ — the opposite of negative 3 is positive 3.
+
+:::
+
+
+---
+
+**Example 2:** $\frac{1}{2} \times (6 + 2)$
+
+First, simplify the parentheses:
 
 $$
-\frac{1}{2} \times \color{red}(6 + 2) \color{black} = \frac{1}{2} \times \color{red}8
+\frac{1}{2} \times \color{red}(6 + 2)\color{black} = \frac{1}{2} \times \color{red}8
 $$
 
-Now the multiplication:
+Then multiply:
 
 $$
 \frac{1}{2} \times 8 = \frac{1}{2} \times \frac{8}{1} = \frac{8}{2} = 4
 $$
 
+---
 
-3. $\frac{3 + 5}{2} = \frac{8}{2} = 4$
+**Example 3:** $\frac{3 + 5}{2}$
 
-:::{.callout-caution title="Be careful with negatives!"}
-$-3^2$ means $-(3^2) = -9$
-But $(-3)^2 = 9$
+This fraction means to divide **after** you do the work on top.
+
+Even though there are no parentheses, the **fraction bar acts like grouping symbols** — just like parentheses.
+
+So:
+
+$$
+\frac{\color{red}{3 + 5}}{2} = \frac{\color{red}{8}}{2} = 4
+$$
+
+---
+
+::: {.callout-caution title="Be careful with negatives!"}
+
+$-3^2$ means $-(3^2)$, which is:
+
+$$
+-(3^2) = -9
+$$
+
+But $(-3)^2$ means the negative is part of the base:
+
+$$
+(-3)^2 = 9
+$$
+
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What happens in -3 	imes (4 - 7)?"}
+---
 
-First do the parentheses: 4 - 7 = -3. Then multiply: -3 × -3 = 9.
+::: {.callout-note icon=false appearance="simple" collapse=true title="🧠 Now you try: $-3 \times (4 - 7)$"}
+
+First do the parentheses:
+
+$$
+-3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}{-3}
+$$
+
+Then multiply:
+
+$$
+-3 \times -3 = 9
+$$
 
 :::
 
@@ -178,24 +287,112 @@ First do the parentheses: 4 - 7 = -3. Then multiply: -3 × -3 = 9.
 
 Let’s try putting all the steps together. When expressions involve grouping, exponents, fractions, and multiple operations, PEMDAS really helps keep things organized.
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Why are parentheses so important here?"}
 
-Without parentheses, you might square the wrong number. Always follow PEMDAS and work inside parentheses first.
+**Example:**  $4 + \frac{1}{2} \times (6 - 2)^2$
+
+
+**Step 1:** Parentheses  
+$$
+4 + \frac{1}{2} \times \color{red}{(6 - 2)}^{\color{black}2} \color{black} = 4 + \frac{1}{2} \times \color{red}{4}\color{black}^{2}
+$$
+
+
+**Step 2:** Exponents  
+$$
+4 + \frac{1}{2} \times \color{red}{4^2}\color{black} = 4 + \frac{1}{2} \times \color{red}{16}
+$$
+
+
+**Step 3:** Multiplication
+$$
+4 + \color{red}{\frac{1}{2} \times 16}\color{black} = 4 + \color{red}{8}
+$$
+
+
+**Step 4:** Addition
+$$
+\color{red}{4 + 8}\color{black} = 12
+$$
+
+
+:::{.callout-note appearance="simple" icon=false collapse=true title="🧠 Why are parentheses so important here?"}
+
+Without parentheses, you might square the wrong number. Always follow PEMDAS and work **inside parentheses first** — especially when there are **multiple layers**.
 
 :::
-. When expressions involve grouping, exponents, fractions, and multiple operations, PEMDAS really helps keep things organized.
 
-**Example:**
+---
 
+### Nested Parentheses
+
+Sometimes, expressions use **more than one layer of grouping**. When that happens:
+
+- Always work **from the inside out**
+- Brackets $[\,]$ or braces $\{\,\}$ might be used to help keep things clear
+
+---
+
+**Example:**  
+$\left[ 3 + (2^2 + 1) \right] \times 2$
+
+---
+
+**Step 1: Inner parentheses**  
 $$
-4 + \frac{1}{2} \times (6 - 2)^2
+\left[ 3 + \color{red}{(2^2 + 1)} \color{black}\right] \times 2 = \left[ 3 + \color{red}{5} \right] \times 2
 $$
 
-Step 1: Parentheses → $6 - 2 = 4$
-Step 2: Exponents → $4^2 = 16$
-Step 3: Multiply → $\frac{1}{2} \times 16 = 8$
-Step 4: Add → $4 + 8 = 12$
+---
 
+**Step 2: Brackets**  
+$$
+\color{red}{\left[ 3 + 5 \right]} \color{black} \times 2 = \color{red}{8} \color{black} \times 2
+$$
+
+---
+
+**Step 3: Multiply**  
+$$
+\color{red}{8 \times 2} \color{black} = 16
+$$
+
+---
+
+::: {.callout-tip  title="What counts as grouping?"}
+
+PEMDAS starts with **grouping**, and that means more than just parentheses!
+
+These all group parts of an expression:
+
+- $(...)$ — parentheses
+- $[\,]$ or $\{\,\}$ — brackets/braces (used for nesting)
+- Fraction bars $\frac{a}{b}$
+- Square roots $\sqrt{a + b}$
+
+Always simplify **grouped expressions** before applying exponents or multiplying.
+
+:::
+
+::: {.callout-note icon=false appearance="simple" collapse=true title="🧠 Now You Try: $\left[ 5 + (3^2 - 1) \right] \times 2$"}
+
+**Step 1: Inner parentheses**  
+$$
+\left[ 5 + \color{red}{(3^2 - 1)} \right] \times 2 = \left[ 5 + \color{red}{8} \right] \times 2
+$$
+
+**Step 2: Brackets**  
+$$
+\color{red}{\left[ 5 + 8 \right]} \color{black} \times 2 = \color{red}{13} \color{black} \times 2
+$$
+
+**Step 3: Multiply**  
+$$
+\color{red}{13 \times 2} \color{black} = 26
+$$
+
+✅ Final Answer: **26**
+
+:::
 ---
 
 ### 1.7.5 – Why This Matters
@@ -215,76 +412,114 @@ Which should be applied first?
 Same ingredients, different result. Order matters!
 :::
 
-::: {.callout-note icon=false collapse=true title="📝 Now You Try It"}
-Try writing your own expression that uses all four operations: add, subtract, multiply, and divide. Can someone else simplify it and get the same result?
-:::
-
 ---
 
 ## ✍️ Practice On Your Own
 
-### Basic Order of Operations
+**Basic Order of Operations**
 
 1. Simplify:
 
-   * a. 4 + 6 × 2
-   * b. (4 + 6) × 2
-   * c. 12 ÷ 4 × 3
-   * d. 12 ÷ (4 × 3)
-
-### With Negatives & Fractions
-
-2. Simplify:
-
-   * a. -2 × (3 - 5)
-   * b. $\frac{1}{2} \times (8 + 4)$
-   * c. $(6 - 2)^2 \div 2$
-   * d. $(3 + 5) \div 2$
-
-### Expression Breakdown
-
-3. Simplify:
-
-   * a. 5 + 2 × (6 - 1)
-   * b. (12 - 4)² ÷ 4
-   * c. 10 - 3 × (2 + 1)
-   * d. $\frac{3}{4} \times (12 - 4)$
-
-### Challenge
-
-4. Show two ways to simplify:
-   $8 - 3 + 2$
-   Which is correct, and why?
-
-5. Simplify:
-   $\frac{4 + 6 \div 3}{2}$
+   - a. $4 + 6 \times 2$
+   - b. $(4 + 6) \times 2$
+   - c. $12 \div 4 \times 3$
+   - d. $12 \div (4 \times 3)$
 
 ---
 
+**With Negatives & Fractions**
+
+2. Simplify:
+
+   - a. $-2 \times (3 - 5)$  
+   - b. $\frac{1}{2} \times (8 + 4)$  
+   - c. $(6 - 2)^2 \div 2$  
+   - d. $(3 + 5) \div 2$
+
+---
+
+**Expression Breakdown**
+
+3. Simplify:
+
+   - a. $5 + 2 \times (6 - 1)$  
+   - b. $(12 - 4)^2 \div 4$  
+   - c. $10 - 3 \times (2 + 1)$  
+   - d. $\frac{3}{4} \times (12 - 4)$
+
+---
+
+**Challenge**
+
+4. Two students simplified this expression differently:
+
+   $8 - 3 + 2$
+
+   - Student A: $(8 - 3) + 2 = 7$
+   - Student B: $8 - (3 + 2) = 3$
+
+   Who is correct? What mistake did the other student make?
+
+
+5. Simplify the expression:
+
+   $6 + \frac{4 \times (2 + 1)}{3^2}$
+
+   Be careful with grouping and exponents.
+
+
+
+6. A student simplified this:
+
+   $2 + 3^2 \times (4 - 1)$  
+   and got **27**.  
+   
+   - What mistake did they make?
+   - What is the correct answer?
+
+
+
+7. Create your own expression using **at least three operations**, **one fraction**, and **a set of parentheses**.  
+   Swap with a partner — can they simplify it correctly?
+
+
 ::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
 
-**1. Basic**
-a. 16
-b. 20
-c. 9
-d. 1
+**Answer Key**
 
-**2. Negatives/Fractions**
-a. 4
-b. 6
-c. 8
-d. 4
+1. Simplify:
 
-**3. Expressions**
-a. 15
-b. 16
-c. 1
-d. 6
+   - a. **16**
+   - b. **20**
+   - c. **9**
+   - d. **1**
 
-**4. Challenge**
-$8 - 3 + 2 = (8 - 3) + 2 = 5 + 2 = \boxed{7}$ — correct because we go left to right with + and -
+---
 
-**5. Final**
-$6 \div 3 = 2 \rightarrow 4 + 2 = 6 \rightarrow 6 \div 2 = \boxed{3}$
+2. Simplify:
+
+   - a. **4**
+   - b. **6**
+   - c. **8**
+   - d. **4**
+
+---
+
+3. Simplify:
+
+   - a. **15**
+   - b. **16**
+   - c. **1**
+   - d. **6**
+
+---
+
+4. **7**
+
+5. **$\frac{22}{3}$** or **$7\frac{1}{3}$**
+
+6. **29**
+
+7. *Answers will vary*
 
 :::
