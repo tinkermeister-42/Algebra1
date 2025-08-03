@@ -234,7 +234,7 @@ A grade often shows **how well someone did** using a percent or letter. It’s u
 
 > **Example:**  
 >   
-> If you got 18 out of 20 questions right, your grade is \(\frac{18}{20} = 90\%\).
+> If you got 18 out of 20 questions right, your grade is $\frac{18}{20} = 90\%$.
 
 ---
 
@@ -336,7 +336,7 @@ A mixed number has a **whole number and a fraction** combined into one value.
 
 > **Example:**  
 >   
-> \(2\frac{1}{4}\) means 2 wholes and 1 fourth. It’s the same as \(\frac{9}{4}\).
+> $2\frac{1}{4}$ means 2 wholes and 1 fourth. It’s the same as $\frac{9}{4}$.
 
 ---
 
@@ -537,7 +537,7 @@ A proportion shows **two equal ratios**. It tells you that two fractions or comp
 
 > **Example:**  
 >   
-> \(\frac{2}{3} = \frac{4}{6}\) is a proportion.
+> $\frac{2}{3} = \frac{4}{6}$ is a proportion.
 
 ---
 
@@ -567,8 +567,8 @@ The reciprocal of a number is what you **multiply it by to get 1**. You can find
 
 > **Example:**  
 >   
-> The reciprocal of \(\frac{2}{3}\) is \(\frac{3}{2}\), because \(\frac{2}{3} \times \frac{3}{2} = 1\).  
-> The reciprocal of 5 is \(\frac{1}{5}\).
+> The reciprocal of $\frac{2}{3}$ is $\frac{3}{2}$, because $\frac{2}{3} \times \frac{3}{2} = 1$.  
+> The reciprocal of 5 is $\frac{1}{5}$.
 
 ---
 
