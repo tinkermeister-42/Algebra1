@@ -6,14 +6,14 @@ In this lesson, we’ll use the number line not just to count, but to add, subtr
 
 Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like {{< glink opposites >}}, {{< glink absolute value >}}, and comparison — you’ll be setting yourself up for success in the rest of the course.
 
-::: {.callout-note icon=false title="🎯 Objectives"}
+::: {.objectives}
 - [ ] I know how to read and use a number line
 - [ ] I can find and describe the opposite of a number
 - [ ] I can compare positive and negative numbers using >, <, and =
 - [ ] I can add and subtract integers on a number line
 :::
 
-:::{.callout-note icon=false title="📚 Vocabulary"}
+:::{.vocab}
 {{< glink absolute value >}}, {{< glink greater than >}}, {{< glink integer >}}, {{< glink less than >}}, {{< glink number line >}}, {{< glink negative >}}, {{< glink opposite >}}, {{< glink positive >}} 
 :::
 
@@ -58,7 +58,7 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 ![](/images/Unit_1/Lesson_1/vertical_by_tens.png)
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can you think of any real world examples of number lines?"}
+:::{.think title="Can you think of any real world examples of number lines?"}
 
 Here are a few examples:
 
@@ -69,7 +69,7 @@ Here are a few examples:
 - volume slider on a phone 
 :::
 
-:::{.callout-caution title="How many numbers are between 3 and 5?"}
+:::{.gotcha title="How many numbers are between 3 and 5?"}
 
 Though there are 2 {{< glink integers >}} between 3 and 5, the answer is not 2! There are infinitely many numbers between 3 and 5. Here are some number lines that might help convince you.
 
@@ -88,7 +88,7 @@ These are called {{< glink opposite >}} numbers. They are the **same distance** 
 
 ![](/images/Unit_1/Lesson_1/opposites.png)
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is the opposite of zero?"}
+:::{.think title="What is the opposite of zero?"}
 
 The opposite of zero is zero. Zero is the only number that is its own opposite!
 :::
@@ -106,7 +106,7 @@ Take a look at the number -5. The number line shows that it's absolute value is 
 You can see that |5| is also 5 for the same reason!
 ![](/images/Unit_1/Lesson_1/absolute_value_five.png)
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world}
 Absolute value is often used for describing the distance between two points. Suppose you live 3 miles to the east of the school and your best friend lives 5 miles to the west. How far apart are your houses? This is easy to see with a number line.
 
 ![](/images/Unit_1/Lesson_1/east_to_west.png)
@@ -114,7 +114,7 @@ Absolute value is often used for describing the distance between two points. Sup
 You can compute your distances by adding |-5| + |3|, by |-5 - 3|, or by |3 - (-5)|. All three of these give the same answer, 8 miles. What would change if we did not use absolute value?
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can the absolute value ever be negative?"}
+:::{.think title="Can the absolute value ever be negative?"}
 
 Absolute value is **never** negative, because distance is never negative.
 :::
@@ -134,11 +134,11 @@ You can see from the number line that 2 is greater than (&gt;) -7 because 2 is t
 
 You can also see that -7 is further from zero than 2 and so |-7| > |2|.
 
-:::{.callout-caution title="Which is **bigger**?"}
+:::{.gotcha title="Which is bigger?"}
 It is easy to get confused here. When we say which is "bigger" we are asking which number is further to the right on the number line, **not** which one is furthest from zero.
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try comparing 3 to -8 using a number line."}
+:::{.you-try title="Compare 3 to -8 using a number line."}
 3 > -8 because it is farther to the right but |-8| > |3| because -8 is further from zero.
 
 ![](/images/Unit_1/Lesson_1/compare_3_to_neg8.png)
@@ -159,28 +159,28 @@ Examples:
 1. Addition: $-2 + 6 = 4$
 ![](/images/Unit_1/Lesson_1/add_6_to_neg2.png)
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world}
 Imagine that you are \$2 in debt. If someone pays you \$6 you can pay off the debt and have \$$4$ left over.
 :::
 
 2. Adding a negative: $150 + (-5) = 145$
 ![](/images/Unit_1/Lesson_1/add_neg5_to_150.png)
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world}
 You have \$150 in the bank. The bank ads a fee for being under their \$200 minimum balance. You now have \$145.
 :::
 
 3. Subtraction: $400 - 450 = -50$ 
 ![](/images/Unit_1/Lesson_1/subtract_450_from_400.png)
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world}
 If you only have \$400 but spend \$450 on a credit card. You are now \$50 in debt.
 :::
 
 4. Subtracting a negative: $201 - (-5) = 206$
 ![](/images/Unit_1/Lesson_1/subtract_neg5_from_201.png)
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can You think of a real-world example for the previous example?"}
+:::{.think title="What real-world scenario could $200 - (-5) = 206$ represent?"}
 
 > Example:
 > The bank made a mistake, you had \$$201$ in your account so they took off the \$$5$ fee. Now you have \$$206$.
@@ -277,7 +277,7 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
 
 ---
 
-{{< answers >}}
+:::{.answers}
 
 **Warm-Up**
 
@@ -360,5 +360,4 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
        ![](/images/Unit_1/Lesson_1/answer_14_b.png)
     c. You now have -\$3.
        ![](/images/Unit_1/Lesson_1/answer_14_c.png)
-
-{{< /answers >}}
+:::

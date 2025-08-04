@@ -19,7 +19,7 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 
 :::{.vocab}
-{{< glink expression >}}, {{< glink order of operations >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiply >}}, {{< glink divide >}}, {{< glink add >}}, {{< glink subtract >}}
+{{< glink expression >}}, {{< glink order of operations >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink addition >}}, {{< glink subtraction >}}
 :::
 
 ---
@@ -157,23 +157,17 @@ $$
 :::{.you-try title="$5(8 - 1) + 2 \times 3$"}
 
 Start with parentheses:
-
 $$
 5\color{red}(8 - 1)\color{black} + 2 \times 3 = 5 \times \color{red}7 \color{black} + 2 \times 3
 $$
-
 Next, do the multiplication:
-
 $$
 \color{red}5 \times 7 \color{black} + \color{red}2 \times 3 \color{black} = \color{red}35 \color{black} + \color{red}6
 $$
-
 Finally, add:
-
 $$
 35 + 6 = 41
 $$
-
 :::
 
 ---
@@ -372,19 +366,15 @@ Always simplify **grouped expressions** before applying exponents or multiplying
 $$
 \left[ 5 + \color{red}{(3^2 - 1)} \right] \times 2 = \left[ 5 + \color{red}{8} \right] \times 2
 $$
-
 **Step 2: Brackets**  
 $$
 \color{red}{\left[ 5 + 8 \right]} \color{black} \times 2 = \color{red}{13} \color{black} \times 2
 $$
-
 **Step 3: Multiply**  
 $$
 \color{red}{13 \times 2} \color{black} = 26
 $$
-
 ✅ Final Answer: **26**
-
 :::
 ---
 
@@ -478,32 +468,27 @@ Same ingredients, different result. Order matters!
 
 :::{.answers}
 
-1. Simplify:
+1.
 
    a. **16**
    b. **20**
    c. **9**
    d. **1**
 
----
 
-2. Simplify:
+2.
 
    a. **4**
    b. **6**
    c. **8**
    d. **4**
 
----
-
-3. Simplify:
+3.
 
    a. **15**
    b. **16**
    c. **1**
    d. **6**
-
----
 
 4. **7**
 

@@ -4,13 +4,13 @@ Have you ever needed to divide things up fairly — like sharing snacks or makin
 
 In this lesson, you’ll learn how to use {{< glink prime factorization >}} to find the GCF, and how that can help us simplify {{< glink fractions >}}. Learning GCF helps us make fractions and math problems simpler so they are easier to understand and solve.
 
-::: {.callout-note icon=false title="🎯 Objectives"}
+::: {.objectives}
 - [ ] I can find the GCF using factor trees
 - [ ] I can simplify fractions using the GCF
 - [ ] I can solve real-world problems using the GCF
 :::
 
-::: {.callout-note icon=false title="📚 Vocabulary"}
+::: {.vocab}
 {{< glink equivalent >}}, {{< glink greatest common factor >}}, {{< glink prime factorization >}}, {{< glink relatively prime >}}, {{< glink simplify >}}
 :::
 
@@ -176,7 +176,7 @@ $$2 * 2 * 3 = 12$$
 
 The GCF for 36 and 60 is 12!
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can you find the greatest common factor between 45 and 180?"}
+:::{.you-try title="Find the GCF for 45 and 180."}
 
 ::::{layout-ncol=2}
 
@@ -376,10 +376,8 @@ flowchart TB
 
 The number 15 has prime factors 3 and 5. We can divide 90 by 15 by crossing out those shared factors and multiplying what is left.
 
+<div style="text-align: center;">
 ```{mermaid}
-%%| label: mermaid-diagram
-%%| fit-align: center
-%%| fig-cap: " "
 flowchart TB
     node_0("90")
     node_1_0_1("9")
@@ -403,12 +401,13 @@ flowchart TB
     style node_1_0_2_0_2 stroke-width:2px,stroke-dasharray: 5 5
     style node_1_1_2_1_2 stroke-width:2px,stroke-dasharray: 5 5
 ```
+</div>
 
 After crossing out 3 and 5 (the factors of 15) we are left with one 3 and one 2. This gives us...
 
 $$90 \div 15 = 3 * 2 = 6$$
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Give it a try! Use factor trees to divide 480 by 60."}
+:::{.you-try title="Use factor trees to divide 480 by 60."}
 
 1. Find the factor trees for each number
 
@@ -417,6 +416,7 @@ $$90 \div 15 = 3 * 2 = 6$$
 :::{#diagram-1}
 
 ```{mermaid}
+%%| mermaid-format: png
 %%| label: mermaid-diagram
 %%| fit-align: center
 %%| fig-cap: " "
@@ -452,6 +452,7 @@ flowchart TB
 :::{#diagram-2}
 
 ```{mermaid}
+%%| mermaid-format: png
 %%| label: mermaid-diagram
 %%| fit-align: center
 %%| fig-cap: " "
@@ -476,10 +477,9 @@ flowchart TB
 
 2. Cross out the prime factors 480 shares with 60
 
+<div style="text-align: center;">
 ```{mermaid}
-%%| label: mermaid-diagram
-%%| fit-align: center
-%%| fig-cap: " "
+%%| mermaid-format: png
 flowchart TB
     node_0("480")
     node_1_0_1("20")
@@ -521,6 +521,7 @@ flowchart TB
     style node_1_0_2_0_3_1_3 stroke-width:2px,stroke-dasharray: 5 5
     style node_1_1_2_1_3_1_3 stroke-width:2px,stroke-dasharray: 5 5
 ```
+</div>
 
 3. Multiply the remaining prime factors to get the answer.
 
@@ -575,7 +576,7 @@ This tells us the fraction $\frac{90}{15}$ is just another way to write the numb
 
 Factor trees help you *see* why this works by breaking the numbers into their building blocks.
 
-:::{.callout-caution title="What if the numerator and denominator don't share any factors?"}
+:::{.gotcha title="What if the numerator and denominator don't share any factors?"}
 
 If the numerator and denominator of a fraction share no common factors (besides 1) the two numbers are called {{< glink relatively prime >}}. In this case, the fraction cannot be simplified.
 
@@ -665,7 +666,7 @@ Or double that:
 
 Simplifying the original recipe helped you find a cleaner ratio — one that’s easier to scale up or down, depending on how many cookies you want.
 
-::: {.callout-tip icon=false title="🌍 In the Real World"}
+::: {.real-world}
 Simplifying isn’t just a math trick — it helps you work with numbers more easily in the real world. Whether you’re adjusting recipes, mixing paint, or scaling blueprints, understanding fractions and simplifying them makes life easier.
 :::
 
@@ -741,7 +742,7 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 
 ---
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+::: {.answers}
 
 
 1. 

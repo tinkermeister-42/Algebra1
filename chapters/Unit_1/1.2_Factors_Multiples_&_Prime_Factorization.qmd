@@ -12,13 +12,13 @@ In this lesson, you’ll learn how to:
 
 You’ll use these skills again and again — from simplifying fractions to solving equations.
 
-::: {.callout-note icon=false title="🎯 Objectives"}
+::: {.objectives}
 - [ ] I can find the factors and multiples of integers
 - [ ] I can tell if a number is prime or composite
 - [ ] I can break numbers into prime factors using a factor tree
 :::
 
-::: {.callout-note icon=false title="📚 Vocabulary"}
+::: {.vocab}
 {{< glink composite number >}}, {{< glink factor >}}, {{< glink factor tree >}}, {{< glink multiple >}}, {{< glink prime factorization >}}, {{< glink prime number >}}
 :::
 
@@ -50,7 +50,7 @@ That’s because:
 
 3 × 4 = 12
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can a number have just one factor?"}
+:::{.think title="Can a number have just one factor?"}
 Only one number does: **1**. It only has itself as a factor and so it is neither prime nor composite!
 :::
 
@@ -89,7 +89,7 @@ A **composite number** has more than 2 factors.
 
 Examples: 4, 6, 8, 9, 10...
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world}
 Prime numbers play a big role in **encryption**, which keeps your data safe when you shop or message online.
 :::
 
@@ -340,7 +340,7 @@ This will come in handy later when we factor algebraic expressions like $-x^2 + 
 If you struggle to come up with the factors for a number, you should check out the [factor chart](/resources/Factor-Chart_noprimes.pdf) in the resources section of this book. It shows all of the factor pairs for many composite numbers!
 
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Can you find at least one more factor tree for 360?"}
+:::{.you-try title="Can you find at least one more factor tree for 360?"}
 
 I have only shown you 3 of the 60 unique factor trees for 360!
 :::
@@ -448,7 +448,8 @@ flowchart TB
 
 ---
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+:::{.answers}
+
 **Factors & Multiples**
 
 1. 
@@ -477,65 +478,13 @@ flowchart TB
 
 4. 
 
-   a. 
-```{mermaid}
-%%| label: fig-mermaid-diagram
-%%| fit-align: center
-%%| fig-cap: " "
-flowchart TB
-    node_0("36")
-    node_1_0_1("6")
-    node_0 --- node_1_0_1
-    node_1_0_2_0_2("2")
-    node_1_0_1 --- node_1_0_2_0_2
-    node_1_0_2_1_2("3")
-    node_1_0_1 --- node_1_0_2_1_2
-    node_1_1_1("6")
-    node_0 --- node_1_1_1
-    node_1_1_2_0_2("2")
-    node_1_1_1 --- node_1_1_2_0_2
-    node_1_1_2_1_2("3")
-    node_1_1_1 --- node_1_1_2_1_2
+a. 
 
-    style node_1_0_1 stroke-width:4px;
-    style node_1_0_2_0_2 stroke-width:4px;
-    style node_1_1_2_1_2 stroke-width:4px;
+![](/images/Unit_1/Lesson_2/lesson_1_2_4a.png){height=200}
 
-```
-   b. 
-```{mermaid}
-%%| label: fig-mermaid-diagram
-%%| fit-align: center
-%%| fig-cap: " "
-flowchart TB
-    node_0("-120")
-    node_1_0_1("-1")
-    node_0 --- node_1_0_1
-    node_1_1_1("120")
-    node_0 --- node_1_1_1
-    node_1_1_2_0_2("2")
-    node_1_1_1 --- node_1_1_2_0_2
-    node_1_1_2_1_2("60")
-    node_1_1_1 --- node_1_1_2_1_2
-    node_1_1_2_1_3_0_3("6")
-    node_1_1_2_1_2 --- node_1_1_2_1_3_0_3
-    node_1_1_2_1_3_0_4_0_4("2")
-    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_0_4
-    node_1_1_2_1_3_0_4_1_4("3")
-    node_1_1_2_1_3_0_3 --- node_1_1_2_1_3_0_4_1_4
-    node_1_1_2_1_3_1_3("10")
-    node_1_1_2_1_2 --- node_1_1_2_1_3_1_3
-    node_1_1_2_1_3_1_4_0_4("2")
-    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_0_4
-    node_1_1_2_1_3_1_4_1_4("5")
-    node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
+b. 
 
-    style node_1_1_1 stroke-width:4px;
-    style node_1_1_2_1_2 stroke-width:4px;
-    style node_1_1_2_1_3_0_4_1_4 stroke-width:4px;
-    style node_1_1_2_1_3_1_3 stroke-width:4px;
-
-```
+![](/images/Unit_1/Lesson_2/lesson_1_2_4b.png){height=300}
 
 5. 
 
@@ -547,6 +496,4 @@ flowchart TB
 
 
 6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
-
-
 :::

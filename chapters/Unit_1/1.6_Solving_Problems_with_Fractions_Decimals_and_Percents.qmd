@@ -6,19 +6,14 @@ Fractions, decimals, and percents all show parts of a whole — but they’re us
 
 In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score to get an A?”
 
-:::{.callout-note icon=false title="🎯 Objectives"}
-
+:::{.objectives}
 - [ ] I can use fractions, decimals, and percents to solve real-world problems.
 - [ ] I can find a part, a whole, or a percent in situations like "30 is 10% of what number?"
 - [ ] I can use percents to solve problems involving grades, sales, and survey results.
-
 :::
 
-:::{.callout-note icon=false title="📚 Vocabulary"}
-
+:::{.vocab}
 {{< glink discount >}}, {{< glink equivalent >}}, {{< glink grade >}}, {{< glink markup >}}, {{< glink part >}}, {{< glink percent >}}, {{< glink proportion >}}, {{< glink rate >}}, {{< glink survey >}}, {{< glink whole >}}
-
-
 :::
 
 ---
@@ -72,15 +67,14 @@ You're looking for a small part of 80 — just 15 out of every 100. That’s wha
 
 We can turn this into a math sentence by translating the words:
 
-  - “is” becomes =
-
-  - “of” becomes ×
+  - “is” becomes equals (=)
+  - “of” becomes times (&times;)
 
 So:
 
 | what	| is	| 15%	| of	| 80?  |
 |-------|-------|-------|-------|------|
-| ?     | =     | $\times$ | 80   |
+| ?     | =     | 0.15  |$\times$ | 80   |
 
 Now solve it:
 
@@ -91,8 +85,8 @@ $$
 So **12** is 15% of 80.
 
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Try This: What is 10% of 50?"}
-<br>
+:::{.you-try title="What is 10% of 50?"}
+
 Turn it into a math sentence:
 
 | what | is | 10%  | of | 50? |
@@ -100,11 +94,9 @@ Turn it into a math sentence:
 | ?    | =  | 0.10 | ×  | 50  |
 
 Then multiply:
-
 $$
 0.10 \times 50 = 5
 $$
-
 **Answer: 5**
 
 :::
@@ -124,19 +116,14 @@ $$
 So **60%** of students like soccer.
 
 :::{.callout-tip}
-
 To find a percent, divide the part by the whole, then multiply by 100.
-
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Your turn: If 3 out of 100 students get enough sleep, what percent is that?"}
-<br>
+:::{.you-try title="If 3 out of 100 students get enough sleep, what percent is that?"}
 $$
 \frac{3}{100} = 0.03 = 3\%
 $$
-
 So only 3% of students get enough sleep!
-
 :::
 
 ---
@@ -145,7 +132,7 @@ So only 3% of students get enough sleep!
 
 **25% of a number is 10. What is the number?**
 
-We’re told that 10 is **25% of the total**. That means 10 is just a piece — one-fourth — of the whole. (Since 25% = 1/4.)
+We’re told that 10 is **25% of the total**. That means 10 is just a piece — one-fourth — of the whole. (Since $25\% = \frac{1}{4}$.)
 
 If one-fourth of something is 10, then we can picture the whole as being made up of **4 equal parts** of 10:
 
@@ -155,11 +142,11 @@ $$
 
 So the whole is **40**.
 
-But what if it’s not so easy to think in fractions like 1/4? Here's a trick:
+But what if the fractions are harder to think about than $\frac{1}{4}$? Here's a trick:
 
 25% as a decimal is 0.25. If we want to know,  
 
-> “0.25 of what number gives me 10?”  
+> “25% of what number gives me 10?”  
 
 we can work backward by **dividing**:
 
@@ -167,25 +154,21 @@ $$
 10 \div 0.25 = 40
 $$
 
-So the total is still **40** — just another way to get the same answer.
+So the total is still **40** — it is just another way to get the same answer.
 
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Your turn: 20% of a number is 12. What is the number?"}
-<br>
+:::{.you-try title="20% of a number is 12. What is the number?"}
 Start by thinking:  
-20% = 1/5 → So if one-fifth is 12, then the whole must be:
 
+$20\% = \frac{1}{4}$ → So if one-fifth is 12, then the whole must be:
 $$
 12 \times 5 = 60
 $$
-
 Or use division:  
 $$
 12 \div 0.2 = 60
 $$
-
 **Answer: 60**
-
 :::
 
 ---
@@ -204,22 +187,22 @@ $$
 
 You got **95%** on that assignment, that's an A!
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 If John got 20 out of 25 questions correct, what is his grade?"}
-
+:::{.you-try title="If John got 20 out of 25 questions correct, what is his grade?"}
 $$
 \frac{20}{25} = 0.8 = 80\%
 $$
-
 John got an 80% which is a B.
-
 :::
 
 ---
 
 #### Sales & Discounts
 
-A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. **What’s the new price?**
-<br>
+A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. 
+
+**What’s the new price?**
+
+
 First, find the discount by asking "What is 25% of $60?":
 
 | what | is | 25%  | of | $60? |
@@ -238,26 +221,21 @@ $$
 
 The jacket now costs **$45**.
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?"}
+:::{.you-try title="Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?"}
 
 Find the discount:
 
 | what | is | 65%  | of | $300? |
 | ---- | -- | ---- | -- | --- |
 | ?    | =  | 0.65 | ×  | 300  |
-
 $$
 0.65 \times 300 = 195
 $$
-
 Now subtract to get the sale price:
-
 $$
 300 - 195 = 105
 $$
-
 Swanhilda pays $105 for the dress. What a steal!
-
 :::
 
 ---
@@ -267,35 +245,25 @@ Swanhilda pays $105 for the dress. What a steal!
 A survey of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?
 
 Here we want to know the **whole** when we have a percent. First, convert 75% to a decimal:
-
 $$
 75\% = 0.75
 $$
-
 Then divide:
-
 $$
 120 \div 0.75 = 160
 $$
-
 **160 teachers** were surveyed.
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 A survey asked Missourians if they support Proposition A. 550 (or 55%) said they **do** support it. How many people were surveyed?"}
-<br>
+:::{.you-try title="A survey asked voters if the support Proposition A. 550 (or 55%) said they do support it. How many voters were surveyed?"}
 First, convert to a decimal:
-
 $$
 55\% = 0.55
 $$
-
 Then divide:
-
 $$
 550 \div 0.55 = 1000
 $$
-
-**1000** Missourians were surveyed.
-
+**1000** voters were surveyed.
 :::
 ---
 
@@ -348,7 +316,7 @@ What percent of students are in art class?
 
 ---
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
+::: {.answers}
 
 1. 57  
 2. 12.5%

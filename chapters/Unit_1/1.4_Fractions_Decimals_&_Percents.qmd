@@ -4,16 +4,14 @@ Fractions, decimals, and percents are just different ways of showing the same th
 
 In this lesson, you’ll learn how to move between these forms and understand how they relate to each other. This will be an important skill for solving many types of problems that involve parts of a whole.
 
-:::{.callout-note icon=false title="🎯 Objectives"}
-
-- [ ] I can convert between fractions, decimals, and percents using place value, division, or benchmarks.
+:::{.objectives}
+- [ ] I can convert between fractions, decimals, and percents.
 - [ ] I can recognize repeating and terminating decimals and write them as fractions.
 - [ ] I can compare and order fractions, decimals, and percents in real-world situations.
 :::
 
-:::{.callout-note icon=false title="📚 Vocabulary"}
+:::{.vocab}
 {{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}, {{< glink convert >}}, {{< glink equivalent >}}, {{< glink place value >}}
-
 :::
 
 ---
@@ -103,7 +101,7 @@ If the decimal repeats, we write a bar over the repeating part:
 $\frac{1}{3} = 0.\overline{3}$
 
 
-::: {.callout-caution title="Watch Out: Repeating Decimals Aren’t Always Obvious"}
+::: {.gotcha title="Repeating Decimals Aren’t Always Obvious"}
 
 When you use a calculator to turn a fraction into a decimal, the result might look like it stops, but that can be misleading!
 
@@ -133,14 +131,12 @@ The fraction $\frac{2}{6}$ has a denominator with factors 2 and 3. It repeats an
 
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Give it a try! Write $\frac{2}{5}$ as a decimal."}
+:::{.you-try title="Write $\frac{2}{5}$ as a decimal."}
 
 Using a calculator, we find that...
-
 $$
 \frac{2}{5} = 2 \div 5 = 0.4
 $$
-
 :::
 
 ---
@@ -167,10 +163,9 @@ But what if the number is bigger than 1? When the number is bigger than 1.0, we 
 
 ![](/images/Unit_1/Lesson_4/convert_3_point_2.png){height=50 fig-alt="Converting 3.2 to 320%"}
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 1.342 as a percent?"}
+:::{.you-try title="What is 1.342 as a percent?"}
 
 We multiply by 100 (move the decimal to the right twice) and add a % sign. This gives...
-
 $$1.342 \times 100 = 134.2\%$$
 :::
 
@@ -188,20 +183,15 @@ Now we convert the decimal to a percent.
 
 $$0.6 \Rightarrow 60\%$$
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is $\frac{2}{3}$ as a percent?"}
-
+:::{.you-try title="What is $\frac{2}{3}$ as a percent?"}
 First convert to a decimal:
-
 $$
 \frac{2}{3} \Rightarrow 2 \div 3 = 0.\overline{6}
 $$
-
 Now convert to a percent:
-
 $$
 0.\overline{6} \Rightarrow 66.\overline{6}\%
 $$
-
 :::
 
 ---
@@ -249,12 +239,10 @@ $$
 4.23 = \text{4 and 23 hundredths} \Rightarrow 4\dfrac{23}{100}
 $$
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Give it a try! Write 0.51 as a fraction."}
-
+:::{.you-try title="Write 0.51 as a fraction."}
 $$
 0.51 = \text{51 hundredths} \Rightarrow \frac{51}{100}
 $$
-
 :::
 
 ---
@@ -278,14 +266,11 @@ Here are some more examples:
 - 0.2% &rarr; 0.002
 
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 35% as a decimal?"}
-
+:::{.you-try title="What is 35% as a decimal?"}
 We move the decimal to the left twice and remove the % sign. This gives...
-
 $$
 35\% = 0.35
 $$
-
 :::
 
 To write a percent as a fraction, first convert to a decimal and then convert to a fraction, simplifying if possible:
@@ -298,14 +283,11 @@ To write a percent as a fraction, first convert to a decimal and then convert to
 
 - 0.2% &rarr; 0.002 &rarr; $\frac{2}{1000}$ &rarr; $\frac{1}{500}$
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 What is 35% as a fraction?"}
-
+:::{.you-try title="What is 35% as a fraction?"}
 First, convert to a decimal and then to a fraction.
-
 $$
 35\% = 0.35 \Rightarrow \text{35 hundredths} \Rightarrow \frac{35}{100} = \frac{7}{20}
 $$
-
 :::
 ---
 
@@ -323,7 +305,7 @@ Now that you’ve seen how to convert between fractions, decimals, and percents,
 |  Percent  |  Fraction | First convert to a decimal and then convert to a fraction           |
 
 
-:::{.callout-tip title="Remember this!"}
+:::{.remember}
 Some conversions are so common that it helps to **memorize** them. These are called **benchmark values**:
 
 | Fraction         | Decimal  | Percent |
@@ -336,7 +318,6 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 | $\frac{1}{5}$  | 0.2      | 20%     |
 | $\frac{1}{9}$  | 0.111... | 11.1%   |
 | $\frac{1}{10}$ | 0.1      | 10%     |
-
 :::
 
 ---
@@ -424,8 +405,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 ---
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
-
+::: {.answers}
 
 1. 
 

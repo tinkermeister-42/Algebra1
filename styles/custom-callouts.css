@@ -30,26 +30,49 @@ Blue-Gray	#34495E	rgba(52, 73, 94, 0.12)
 Green	#27AE60	rgba(39, 174, 96, 0.12)
 Light Gray	#BDC3C7	rgba(189, 195, 199, 0.12) */
 
-.objectives  { border-left: 4px solid rgba(44, 62, 80, .75) !important; }
-.vocab       { border-left: 4px solid rgba(44, 62, 80, .75) !important; }
-.remember    { border-left: 4px solid rgba(231, 76, 60, 1) !important; }
-.real-world  { border-left: 4px solid rgba(24, 188, 156, 1) !important; }
-.you-try     { border-left: 4px solid rgba(52, 152, 219, 1) !important; }
-.think       { border-left: 4px solid rrgba(26, 188, 156, 1) !important; }
-.gotcha      { border-left: 4px solid rgba(243, 156, 18, 1) !important; }
-.answers     { border-left: 4px solid rgba(39, 174, 96, 1) !important; }
+.objectives {
+  border-left: 4px solid rgba(44, 62, 80, .75) !important;
+}
+
+.vocab {
+  border-left: 4px solid rgba(44, 62, 80, .75) !important;
+}
+
+.remember {
+  border-left: 4px solid rgba(231, 76, 60, 1) !important;
+}
+
+.real-world {
+  border-left: 4px solid rgba(24, 188, 156, 1) !important;
+}
+
+.you-try {
+  border-left: 4px solid rgba(52, 152, 219, 1) !important;
+}
+
+.think {
+  border-left: 4px solid rgba(155, 89, 182, 1) !important;
+}
+
+.gotcha {
+  border-left: 4px solid rgba(243, 156, 18, 1) !important;
+}
+
+.answers {
+  border-left: 4px solid rgba(39, 174, 96, 1) !important;
+}
 
 
 /* === Collapsible Behavior (answers, you-try, think) === */
-.answers[data-collapse="true"] > :not(.callout-title),
-.you-try[data-collapse="true"] > :not(.callout-title),
-.think[data-collapse="true"] > :not(.callout-title) {
+.answers[data-collapse="true"]> :not(.callout-title),
+.you-try[data-collapse="true"]> :not(.callout-title),
+.think[data-collapse="true"]> :not(.callout-title) {
   display: none;
 }
 
-.answers.callout-open > :not(.callout-title),
-.you-try.callout-open > :not(.callout-title),
-.think.callout-open > :not(.callout-title) {
+.answers.callout-open> :not(.callout-title),
+.you-try.callout-open> :not(.callout-title),
+.think.callout-open> :not(.callout-title) {
   display: block;
   transition: all 0.3s ease;
 }
@@ -66,31 +89,56 @@ Light Gray	#BDC3C7	rgba(189, 195, 199, 0.12) */
 }
 
 
-.callout.objectives .callout-title  { background-color: rgba(44, 62, 80, 0.075) !important; } 
-.callout.vocab .callout-title       { background-color: rgba(44, 62, 80, 0.075) !important; }
-.callout.remember .callout-title    { background-color: rgba(231, 76, 60, 0.12) !important; } 
-.callout.real-world .callout-title  { background-color: rgba(24, 188, 156, 0.12) !important; }  
-.callout.you-try .callout-title     { background-color: rgba(52, 152, 219, 0.12) !important; } 
-.callout.think .callout-title       { background-color: rgba(26, 188, 156, 0.12) !important; }  
-.callout.gotcha .callout-title      { background-color: rgba(243, 156, 18, 0.12) !important; }  
-.callout.answers .callout-title     { background-color: rgba(39, 174, 96, 0.12) !important; }  
+.callout.objectives .callout-title {
+  background-color: rgba(44, 62, 80, 0.075) !important;
+}
+
+.callout.vocab .callout-title {
+  background-color: rgba(44, 62, 80, 0.075) !important;
+}
+
+.callout.remember .callout-title {
+  background-color: rgba(231, 76, 60, 0.12) !important;
+}
+
+.callout.real-world .callout-title {
+  background-color: rgba(24, 188, 156, 0.12) !important;
+}
+
+.callout.you-try .callout-title {
+  background-color: rgba(52, 152, 219, 0.12) !important;
+}
+
+.callout.think .callout-title {
+  background-color: rgba(155, 89, 182, 0.12) !important;
+}
+
+.callout.gotcha .callout-title {
+  background-color: rgba(243, 156, 18, 0.12) !important;
+}
+
+.callout.answers .callout-title {
+  background-color: rgba(39, 174, 96, 0.12) !important;
+}
 
 
 /* Only show pointer cursor when collapsible */
-[data-collapse="true"] > .callout-title {
+[data-collapse="true"]>.callout-title {
   cursor: pointer;
 }
 
-.callout[data-collapse="true"] > .callout-title::after {
-  content: "▶"; /* right-pointing arrow */
+.callout[data-collapse="true"]>.callout-title::after {
+  content: "▶";
+  /* right-pointing arrow */
   margin-left: auto;
   font-size: 1em;
   transition: transform 0.2s ease;
 }
 
 /* Rotate when expanded */
-.callout.callout-open > .callout-title::after {
-  transform: rotate(90deg); /* makes it a downward arrow */
+.callout.callout-open>.callout-title::after {
+  transform: rotate(90deg);
+  /* makes it a downward arrow */
 }
 
 
@@ -100,14 +148,14 @@ Light Gray	#BDC3C7	rgba(189, 195, 199, 0.12) */
 }
 
 /* === Callout Body Content Padding === */
-.objectives > *,
-.vocab > *,
-.remember > *,
-.real-world > *,
-.gotcha > *,
-.you-try > *,
-.answers > *,
-.think > * {
+.objectives>*,
+.vocab>*,
+.remember>*,
+.real-world>*,
+.gotcha>*,
+.you-try>*,
+.answers>*,
+.think>* {
   padding: 0.5em 0.75em;
   box-sizing: border-box;
 }
@@ -196,7 +244,16 @@ Light Gray	#BDC3C7	rgba(189, 195, 199, 0.12) */
   transform: scale(1.1);
 }
 
+
 .callout-title-sub {
   font-weight: normal;
   font-size: 0.95em;
+}
+
+.callout .callout-title>mjx-container {
+  padding-top: 0.2em;
+}
+
+.callout-title .callout-label {
+  white-space: nowrap;
 }
