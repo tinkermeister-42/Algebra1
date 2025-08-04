@@ -1,0 +1,259 @@
+/* === Shared Callout Box Styling for All Types === */
+.objectives,
+.vocab,
+.remember,
+.real-world,
+.gotcha,
+.you-try,
+.answers,
+.think {
+  border: 1px solid #ccc;
+  border-left: 4px solid;
+  border-radius: 4px;
+  background-color: white;
+  overflow: hidden;
+  margin: 0.75rem 0;
+  font-size: 0.95em;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* === Flatly Color Borders === */
+/* Dark Blue-Gray	#2C3E50	rgba(44, 62, 80, 0.12)
+Teal	#18BC9C	rgba(24, 188, 156, 0.12)
+Sky Blue	#3498DB	rgba(52, 152, 219, 0.12)
+Orange	#F39C12	rgba(243, 156, 18, 0.12)
+Red	#E74C3C	rgba(231, 76, 60, 0.12)
+Purple	#9B59B6	rgba(155, 89, 182, 0.12)
+Lighter Teal	#1ABC9C	rgba(26, 188, 156, 0.12)
+Blue-Gray	#34495E	rgba(52, 73, 94, 0.12)
+Green	#27AE60	rgba(39, 174, 96, 0.12)
+Light Gray	#BDC3C7	rgba(189, 195, 199, 0.12) */
+
+.objectives {
+  border-left: 4px solid rgba(44, 62, 80, .75) !important;
+}
+
+.vocab {
+  border-left: 4px solid rgba(44, 62, 80, .75) !important;
+}
+
+.remember {
+  border-left: 4px solid rgba(231, 76, 60, 1) !important;
+}
+
+.real-world {
+  border-left: 4px solid rgba(24, 188, 156, 1) !important;
+}
+
+.you-try {
+  border-left: 4px solid rgba(52, 152, 219, 1) !important;
+}
+
+.think {
+  border-left: 4px solid rgba(155, 89, 182, 1) !important;
+}
+
+.gotcha {
+  border-left: 4px solid rgba(243, 156, 18, 1) !important;
+}
+
+.answers {
+  border-left: 4px solid rgba(39, 174, 96, 1) !important;
+}
+
+
+/* === Collapsible Behavior (answers, you-try, think) === */
+.answers[data-collapse="true"]> :not(.callout-title),
+.you-try[data-collapse="true"]> :not(.callout-title),
+.think[data-collapse="true"]> :not(.callout-title) {
+  display: none;
+}
+
+.answers.callout-open> :not(.callout-title),
+.you-try.callout-open> :not(.callout-title),
+.think.callout-open> :not(.callout-title) {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* === Title Bar Styling === */
+.callout-title {
+  font-weight: bold;
+  padding: 0.2em 0.65em;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-size: 0.95em;
+}
+
+
+.callout.objectives .callout-title {
+  background-color: rgba(44, 62, 80, 0.075) !important;
+}
+
+.callout.vocab .callout-title {
+  background-color: rgba(44, 62, 80, 0.075) !important;
+}
+
+.callout.remember .callout-title {
+  background-color: rgba(231, 76, 60, 0.12) !important;
+}
+
+.callout.real-world .callout-title {
+  background-color: rgba(24, 188, 156, 0.12) !important;
+}
+
+.callout.you-try .callout-title {
+  background-color: rgba(52, 152, 219, 0.12) !important;
+}
+
+.callout.think .callout-title {
+  background-color: rgba(155, 89, 182, 0.12) !important;
+}
+
+.callout.gotcha .callout-title {
+  background-color: rgba(243, 156, 18, 0.12) !important;
+}
+
+.callout.answers .callout-title {
+  background-color: rgba(39, 174, 96, 0.12) !important;
+}
+
+
+/* Only show pointer cursor when collapsible */
+[data-collapse="true"]>.callout-title {
+  cursor: pointer;
+}
+
+.callout[data-collapse="true"]>.callout-title::after {
+  content: "▶";
+  /* right-pointing arrow */
+  margin-left: auto;
+  font-size: 1em;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate when expanded */
+.callout.callout-open>.callout-title::after {
+  transform: rotate(90deg);
+  /* makes it a downward arrow */
+}
+
+
+.callout-icon {
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+
+/* === Callout Body Content Padding === */
+.objectives>*,
+.vocab>*,
+.remember>*,
+.real-world>*,
+.gotcha>*,
+.you-try>*,
+.answers>*,
+.think>* {
+  padding: 0.5em 0.75em;
+  box-sizing: border-box;
+}
+
+/* === Paragraph Margin Cleanup === */
+.objectives p,
+.vocab p,
+.remember p,
+.real-world p,
+.gotcha p,
+.you-try p,
+.answers p,
+.think p {
+  margin-bottom: 0.25rem;
+}
+
+/* === List Styling === */
+.objectives ul,
+.vocab ul,
+.remember ul,
+.real-world ul,
+.gotcha ul,
+.you-try ul,
+.answers ul,
+.think ul,
+.objectives ol,
+.vocab ol,
+.remember ol,
+.real-world ol,
+.gotcha ol,
+.you-try ol,
+.answers ol,
+.think ol {
+  padding-left: 2rem;
+  margin: 0.25rem 0;
+}
+
+.objectives li,
+.vocab li,
+.remember li,
+.real-world li,
+.gotcha li,
+.you-try li,
+.answers li,
+.think li {
+  margin-bottom: 0.25rem;
+}
+
+/* === Task List / Checkbox Styling === */
+.objectives .task-list,
+.vocab .task-list,
+.remember .task-list,
+.real-world .task-list,
+.gotcha .task-list,
+.you-try .task-list,
+.answers .task-list,
+.think .task-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 0.25rem 0;
+}
+
+.objectives .task-list li,
+.vocab .task-list li,
+.remember .task-list li,
+.real-world .task-list li,
+.gotcha .task-list li,
+.you-try .task-list li,
+.answers .task-list li,
+.think .task-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+.objectives .task-list input[type="checkbox"],
+.vocab .task-list input[type="checkbox"],
+.remember .task-list input[type="checkbox"],
+.real-world .task-list input[type="checkbox"],
+.gotcha .task-list input[type="checkbox"],
+.you-try .task-list input[type="checkbox"],
+.answers .task-list input[type="checkbox"],
+.think .task-list input[type="checkbox"] {
+  margin-right: 0.5em;
+  margin-top: 0.15em;
+  transform: scale(1.1);
+}
+
+
+.callout-title-sub {
+  font-weight: normal;
+  font-size: 0.95em;
+}
+
+.callout .callout-title>mjx-container {
+  padding-top: 0.2em;
+}
+
+.callout-title .callout-label {
+  white-space: nowrap;
+}

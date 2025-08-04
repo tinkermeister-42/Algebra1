@@ -101,8 +101,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../styles/callouts.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
+<link rel="stylesheet" href="../../styles/custom-callouts.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -695,35 +695,15 @@ window.Quarto = {
 <p>Now that you know how to multiply and divide fractions, you’re ready to apply those skills to real-life problems.</p>
 <p>Fractions, decimals, and percents all show parts of a whole — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.</p>
 <p>In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score to get an A?”</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="🎯 Objectives">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🎯 Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can use fractions, decimals, and percents to solve real-world problems.</label></li>
 <li><label><input type="checkbox">I can find a part, a whole, or a percent in situations like “30 is 10% of what number?”</label></li>
 <li><label><input type="checkbox">I can use percents to solve problems involving grades, sales, and survey results.</label></li>
 </ul>
 </div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="📚 Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📚 Vocabulary
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="vocab">
 <p><a href="../../glossary.html#glossary-discount" class="glossary-link" data-original-term="discount" data-term="discount">discount</a>, <a href="../../glossary.html#glossary-equivalent" class="glossary-link" data-original-term="equivalent" data-term="equivalent">equivalent</a>, <a href="../../glossary.html#glossary-grade" class="glossary-link" data-original-term="grade" data-term="grade">grade</a>, <a href="../../glossary.html#glossary-markup" class="glossary-link" data-original-term="markup" data-term="markup">markup</a>, <a href="../../glossary.html#glossary-part" class="glossary-link" data-original-term="part" data-term="part">part</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-original-term="percent" data-term="percent">percent</a>, <a href="../../glossary.html#glossary-proportion" class="glossary-link" data-original-term="proportion" data-term="proportion">proportion</a>, <a href="../../glossary.html#glossary-rate" class="glossary-link" data-original-term="rate" data-term="rate">rate</a>, <a href="../../glossary.html#glossary-survey" class="glossary-link" data-original-term="survey" data-term="survey">survey</a>, <a href="../../glossary.html#glossary-whole" class="glossary-link" data-original-term="whole" data-term="whole">whole</a></p>
-</div>
 </div>
 <hr>
 <section id="warm-up" class="level2">
@@ -771,8 +751,8 @@ Tip
 <p>You’re looking for a small part of 80 — just 15 out of every 100. That’s what 15% means.</p>
 <p>We can turn this into a math sentence by translating the words:</p>
 <ul>
-<li><p>“is” becomes =</p></li>
-<li><p>“of” becomes ×</p></li>
+<li>“is” becomes equals (=)</li>
+<li>“of” becomes times (×)</li>
 </ul>
 <p>So:</p>
 <table class="caption-top table">
@@ -789,9 +769,9 @@ Tip
 <tr class="odd">
 <td>?</td>
 <td>=</td>
+<td>0.15</td>
 <td><span class="math inline">\(\times\)</span></td>
 <td>80</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -800,19 +780,8 @@ Tip
 0.15×80=12
 \]</span></p>
 <p>So <strong>12</strong> is 15% of 80.</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Try This: What is 10% of 50?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Try This: What is 10% of 50?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><br> Turn it into a math sentence:</p>
+<div class="you-try" title="What is 10% of 50?">
+<p>Turn it into a math sentence:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -833,13 +802,9 @@ Tip
 </tr>
 </tbody>
 </table>
-<p>Then multiply:</p>
-<p><span class="math display">\[
+<p>Then multiply: <span class="math display">\[
 0.10 \times 50 = 5
-\]</span></p>
-<p><strong>Answer: 5</strong></p>
-</div>
-</div>
+\]</span> <strong>Answer: 5</strong></p>
 </div>
 <hr>
 <p><strong>Example 2 – Finding the Percent</strong></p>
@@ -862,68 +827,38 @@ Tip
 <p>To find a percent, divide the part by the whole, then multiply by 100.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Your turn: If 3 out of 100 students get enough sleep, what percent is that?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Your turn: If 3 out of 100 students get enough sleep, what percent is that?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><br> <span class="math display">\[
+<div class="you-try" title="If 3 out of 100 students get enough sleep, what percent is that?">
+<p><span class="math display">\[
 \frac{3}{100} = 0.03 = 3\%
-\]</span></p>
-<p>So only 3% of students get enough sleep!</p>
-</div>
-</div>
+\]</span> So only 3% of students get enough sleep!</p>
 </div>
 <hr>
 <p><strong>Example 3 – Finding the Whole</strong></p>
 <p><strong>25% of a number is 10. What is the number?</strong></p>
-<p>We’re told that 10 is <strong>25% of the total</strong>. That means 10 is just a piece — one-fourth — of the whole. (Since 25% = 1/4.)</p>
+<p>We’re told that 10 is <strong>25% of the total</strong>. That means 10 is just a piece — one-fourth — of the whole. (Since <span class="math inline">\(25\% = \frac{1}{4}\)</span>.)</p>
 <p>If one-fourth of something is 10, then we can picture the whole as being made up of <strong>4 equal parts</strong> of 10:</p>
 <p><span class="math display">\[
 10 + 10 + 10 + 10 = 40
 \]</span></p>
 <p>So the whole is <strong>40</strong>.</p>
-<p>But what if it’s not so easy to think in fractions like 1/4? Here’s a trick:</p>
+<p>But what if the fractions are harder to think about than <span class="math inline">\(\frac{1}{4}\)</span>? Here’s a trick:</p>
 <p>25% as a decimal is 0.25. If we want to know,</p>
 <blockquote class="blockquote">
-<p>“0.25 of what number gives me 10?”</p>
+<p>“25% of what number gives me 10?”</p>
 </blockquote>
 <p>we can work backward by <strong>dividing</strong>:</p>
 <p><span class="math display">\[
 10 \div 0.25 = 40
 \]</span></p>
-<p>So the total is still <strong>40</strong> — just another way to get the same answer.</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Your turn: 20% of a number is 12. What is the number?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Your turn: 20% of a number is 12. What is the number?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><br> Start by thinking:<br>
-20% = 1/5 → So if one-fifth is 12, then the whole must be:</p>
-<p><span class="math display">\[
+<p>So the total is still <strong>40</strong> — it is just another way to get the same answer.</p>
+<div class="you-try" title="20% of a number is 12. What is the number?">
+<p>Start by thinking:</p>
+<p><span class="math inline">\(20\% = \frac{1}{4}\)</span> → So if one-fifth is 12, then the whole must be: <span class="math display">\[
 12 \times 5 = 60
-\]</span></p>
-<p>Or use division:<br>
+\]</span> Or use division:<br>
 <span class="math display">\[
 12 \div 0.2 = 60
-\]</span></p>
-<p><strong>Answer: 60</strong></p>
-</div>
-</div>
+\]</span> <strong>Answer: 60</strong></p>
 </div>
 <hr>
 </section>
@@ -937,30 +872,18 @@ Tip
 \frac{19}{20} = 0.95 = 95\%
 \]</span></p>
 <p>You got <strong>95%</strong> on that assignment, that’s an A!</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 If John got 20 out of 25 questions correct, what is his grade?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 If John got 20 out of 25 questions correct, what is his grade?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="you-try" title="If John got 20 out of 25 questions correct, what is his grade?">
 <p><span class="math display">\[
 \frac{20}{25} = 0.8 = 80\%
-\]</span></p>
-<p>John got an 80% which is a B.</p>
-</div>
-</div>
+\]</span> John got an 80% which is a B.</p>
 </div>
 <hr>
 </section>
 <section id="sales-discounts" class="level4">
 <h4 class="anchored" data-anchor-id="sales-discounts">Sales &amp; Discounts</h4>
-<p>A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. <strong>What’s the new price?</strong> <br> First, find the discount by asking “What is 25% of $60?”:</p>
+<p>A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off.</p>
+<p><strong>What’s the new price?</strong></p>
+<p>First, find the discount by asking “What is 25% of $60?”:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -989,87 +912,33 @@ Tip
 60 - 15 = 45
 \]</span></p>
 <p>The jacket now costs <strong>$45</strong>.</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="you-try" title="Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?">
 <p>Find the discount:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>what</th>
-<th>is</th>
-<th>65%</th>
-<th>of</th>
-<th>$300?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>?</td>
-<td>=</td>
-<td>0.65</td>
-<td>×</td>
-<td>300</td>
-</tr>
-</tbody>
-</table>
+<div class="line-block">what | is | 65% | of | $300? |<br>
+—- | – | —- | – | — |<br>
+? | = | 0.65 | × | 300 |</div>
 <p><span class="math display">\[
 0.65 \times 300 = 195
-\]</span></p>
-<p>Now subtract to get the sale price:</p>
-<p><span class="math display">\[
+\]</span> Now subtract to get the sale price: <span class="math display">\[
 300 - 195 = 105
-\]</span></p>
-<p>Swanhilda pays $105 for the dress. What a steal!</p>
-</div>
-</div>
+\]</span> Swanhilda pays $105 for the dress. What a steal!</p>
 </div>
 <hr>
 </section>
 <section id="surveys-data" class="level4">
 <h4 class="anchored" data-anchor-id="surveys-data">Surveys &amp; Data</h4>
 <p>A survey of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?</p>
-<p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal:</p>
-<p><span class="math display">\[
+<p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal: <span class="math display">\[
 75\% = 0.75
-\]</span></p>
-<p>Then divide:</p>
-<p><span class="math display">\[
+\]</span> Then divide: <span class="math display">\[
 120 \div 0.75 = 160
-\]</span></p>
-<p><strong>160 teachers</strong> were surveyed.</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 A survey asked Missourians if they support Proposition A. 550 (or 55%) said they **do** support it. How many people were surveyed?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 A survey asked Missourians if they support Proposition A. 550 (or 55%) said they <strong>do</strong> support it. How many people were surveyed?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><br> First, convert to a decimal:</p>
-<p><span class="math display">\[
+\]</span> <strong>160 teachers</strong> were surveyed.</p>
+<div class="you-try" title="A survey asked voters if the support Proposition A. 550 (or 55%) said they do support it. How many voters were surveyed?">
+<p>First, convert to a decimal: <span class="math display">\[
 55\% = 0.55
-\]</span></p>
-<p>Then divide:</p>
-<p><span class="math display">\[
+\]</span> Then divide: <span class="math display">\[
 550 \div 0.55 = 1000
-\]</span></p>
-<p><strong>1000</strong> Missourians were surveyed.</p>
-</div>
-</div>
+\]</span> <strong>1000</strong> voters were surveyed.</p>
 </div>
 <hr>
 </section>
@@ -1107,18 +976,7 @@ What percent of students are in art class?</p></li>
 <li><p>You have 88% of 325 points in Algebra. The last exam has 50 questions and is worth 100 points. If it takes 90% to get an A, is it possible to get an A in the class? If so, how many points do you need to score on the exam?</p></li>
 </ol>
 <hr>
-<div class="callout callout-style-default callout-tip no-icon callout-titled" title="🔑 Answer Key">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🔑 Answer Key
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="answers">
 <ol type="1">
 <li>57<br>
 </li>
@@ -1144,8 +1002,6 @@ What percent of students are in art class?</p></li>
 <li>Yes. You need to get 49 out of 50 correct.</li>
 </ol>
 </div>
-</div>
-</div>
 
 
 </section>
@@ -1154,6 +1010,7 @@ What percent of students are in art class?</p></li>
 <script src="../../scripts/popper.min.js"></script>
 <script src="../../scripts/tippy.min.js"></script>
 <script src="../../scripts/glossary-tooltips.js"></script>
+<script src="../../scripts/custom-callouts.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

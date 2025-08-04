@@ -101,8 +101,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../styles/callouts.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
+<link rel="stylesheet" href="../../styles/custom-callouts.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -700,37 +700,17 @@ window.Quarto = {
 <p><span class="math display">\[
 6 + 2 \times 3
 \]</span></p>
-<p>If you said 24, you’re not alone—but that’s not the correct answer. Math has specific rules for what to do first. These rules are called the <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-term="order of operations" data-original-term="order of operations">order of operations</a>, and they help make sure everyone simplifies <a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expressions">expressions</a> the same way.</p>
+<p>If you said 24, you’re not alone—but that’s not the correct answer. Math has specific rules for what to do first. These rules are called the <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-original-term="order of operations" data-term="order of operations">order of operations</a>, and they help make sure everyone simplifies <a href="../../glossary.html#glossary-expression" class="glossary-link" data-original-term="expressions" data-term="expression">expressions</a> the same way.</p>
 <p>In this lesson, you’ll learn how to follow those rules correctly—even when negatives, fractions, and grouping symbols are involved.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="🎯 Objectives">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🎯 Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I follow the correct order of operations (PEMDAS).</label></li>
 <li><label><input type="checkbox">I simplify expressions with fractions and negatives.</label></li>
 <li><label><input type="checkbox">I avoid common mistakes when simplifying expressions.</label></li>
 </ul>
 </div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="📚 Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📚 Vocabulary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a>, <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-term="order of operations" data-original-term="order of operations">order of operations</a>, <a href="../../glossary.html#glossary-parentheses" class="glossary-link" data-term="parentheses" data-original-term="parentheses">parentheses</a>, <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-term="exponent" data-original-term="exponent">exponent</a>, <a href="../../glossary.html#glossary-multiply" class="glossary-link" data-term="multiply" data-original-term="multiply">multiply</a>, <a href="../../glossary.html#glossary-divide" class="glossary-link" data-term="divide" data-original-term="divide">divide</a>, <a href="../../glossary.html#glossary-add" class="glossary-link" data-term="add" data-original-term="add">add</a>, <a href="../../glossary.html#glossary-subtract" class="glossary-link" data-term="subtract" data-original-term="subtract">subtract</a></p>
-</div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a>, <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-original-term="order of operations" data-term="order of operations">order of operations</a>, <a href="../../glossary.html#glossary-parentheses" class="glossary-link" data-original-term="parentheses" data-term="parentheses">parentheses</a>, <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-original-term="exponent" data-term="exponent">exponent</a>, <a href="../../glossary.html#glossary-multiplication" class="glossary-link" data-original-term="multiplication" data-term="multiplication">multiplication</a>, <a href="../../glossary.html#glossary-division" class="glossary-link" data-original-term="division" data-term="division">division</a>, <a href="../../glossary.html#glossary-addition" class="glossary-link" data-original-term="addition" data-term="addition">addition</a>, <a href="../../glossary.html#glossary-subtraction" class="glossary-link" data-original-term="subtraction" data-term="subtraction">subtraction</a></p>
 </div>
 <hr>
 <section id="warm-up" class="level2">
@@ -760,18 +740,9 @@ window.Quarto = {
 10 + \color{red}3 \times 5 \color{black} = 10 + \color{red}15 \color{black} = 25
 \]</span></p>
 <p>So which one is correct — <strong>65 or 25</strong>?</p>
-<p>✅ The correct answer is <strong>25</strong>, because we follow a specific order of <a href="../../glossary.html#glossary-operation" class="glossary-link" data-term="operation" data-original-term="operations">operations</a>. Without these rules, people could get different answers to the same problem!</p>
+<p>✅ The correct answer is <strong>25</strong>, because we follow a specific order of <a href="../../glossary.html#glossary-operation" class="glossary-link" data-original-term="operations" data-term="operation">operations</a>. Without these rules, people could get different answers to the same problem!</p>
 <p>Let’s look at the rules:</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="📌 The Order of Operations">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📌 The Order of Operations
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="remember" title="The Order of Operations">
 <p>We often remember the order using <strong>PEMDAS</strong>:</p>
 <ul>
 <li><strong>P</strong> – Parentheses <span class="math inline">\((...)\)</span></li>
@@ -786,19 +757,7 @@ window.Quarto = {
 </ul>
 <p>You can think of it like a ladder. You start at the top and climb your way down!</p>
 </div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Why are multiplication and division grouped together?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Why are multiplication and division grouped together?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="think" title="Why are multiplication and division grouped together?">
 <p>Because they are <strong>two sides of the same operation</strong>. Any division problem can be rewritten as multiplication by using the <strong>reciprocal</strong>.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong> <span class="math inline">\(12 \div \frac{3}{2}\)</span> becomes <span class="math inline">\(12 \times \frac{2}{3} = 8\)</span></p>
@@ -807,8 +766,6 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p><strong>Example:</strong> <span class="math inline">\(5 - 2\)</span> becomes <span class="math inline">\(5 + (-2) = 3\)</span></p>
 </blockquote>
-</div>
-</div>
 </div>
 <hr>
 </section>
@@ -845,32 +802,14 @@ window.Quarto = {
 8 - 4 = 4
 \]</span></p>
 <hr>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Now you try: $5(8 - 1) + 2 \times 3$">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Now you try: <span class="math inline">\(5(8 - 1) + 2 \times 3\)</span>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Start with parentheses:</p>
-<p><span class="math display">\[
+<div class="you-try" title="$5(8 - 1) + 2 \times 3$">
+<p>Start with parentheses: <span class="math display">\[
 5\color{red}(8 - 1)\color{black} + 2 \times 3 = 5 \times \color{red}7 \color{black} + 2 \times 3
-\]</span></p>
-<p>Next, do the multiplication:</p>
-<p><span class="math display">\[
+\]</span> Next, do the multiplication: <span class="math display">\[
 \color{red}5 \times 7 \color{black} + \color{red}2 \times 3 \color{black} = \color{red}35 \color{black} + \color{red}6
-\]</span></p>
-<p>Finally, add:</p>
-<p><span class="math display">\[
+\]</span> Finally, add: <span class="math display">\[
 35 + 6 = 41
 \]</span></p>
-</div>
-</div>
 </div>
 <hr>
 </section>
@@ -886,18 +825,7 @@ window.Quarto = {
 <p><span class="math display">\[
 -3 \times -3 = 9
 \]</span></p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Why is a negative times a negative positive?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Why is a negative times a negative positive?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="you-try" title="Why is a negative times a negative positive?">
 <p>What does multiplying by a negative number do?<br>
 It <strong>reverses the sign</strong> of the number it’s multiplied by.</p>
 <p><strong>Example:</strong><br>
@@ -907,8 +835,6 @@ It <strong>reverses the sign</strong> of the number it’s multiplied by.</p>
 <span class="math inline">\(-3 \times -1 = 3\)</span> → the negative 3 becomes positive</p>
 <p>So multiplying by <span class="math inline">\(-1\)</span> always gives the <strong>opposite sign</strong>.<br>
 That’s why <span class="math inline">\(-3 \times -1 = 3\)</span> — the opposite of negative 3 is positive 3.</p>
-</div>
-</div>
 </div>
 <hr>
 <p><strong>Example 2:</strong> <span class="math inline">\(\frac{1}{2} \times (6 + 2)\)</span></p>
@@ -929,49 +855,20 @@ That’s why <span class="math inline">\(-3 \times -1 = 3\)</span> — the oppos
 \frac{\color{red}{3 + 5}}{2} = \frac{\color{red}{8}}{2} = 4
 \]</span></p>
 <hr>
-<div class="callout callout-style-default callout-caution callout-titled" title="Be careful with negatives!">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Be careful with negatives!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><span class="math inline">\(-3^2\)</span> means <span class="math inline">\(-(3^2)\)</span>, which is:</p>
-<p><span class="math display">\[
+<div class="gotcha" title="Be careful with negatives!">
+<p><span class="math inline">\(-3^2\)</span> means <span class="math inline">\(-(3^2)\)</span>, which is: <span class="math display">\[
 -(3^2) = -9
-\]</span></p>
-<p>But <span class="math inline">\((-3)^2\)</span> means the negative is part of the base:</p>
-<p><span class="math display">\[
+\]</span> But <span class="math inline">\((-3)^2\)</span> means the negative is part of the base: <span class="math display">\[
 (-3)^2 = 9
 \]</span></p>
 </div>
-</div>
 <hr>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Now you try: $-3 \times (4 - 7)$">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Now you try: <span class="math inline">\(-3 \times (4 - 7)\)</span>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>First do the parentheses:</p>
-<p><span class="math display">\[
+<div class="you-try" title="$-3 \times (4 - 7)$">
+<p>First do the parentheses: <span class="math display">\[
 -3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}{-3}
-\]</span></p>
-<p>Then multiply:</p>
-<p><span class="math display">\[
+\]</span> Then multiply: <span class="math display">\[
 -3 \times -3 = 9
 \]</span></p>
-</div>
-</div>
 </div>
 <hr>
 </section>
@@ -993,21 +890,8 @@ Be careful with negatives!
 <p><strong>Step 4:</strong> Addition <span class="math display">\[
 \color{red}{4 + 8}\color{black} = 12
 \]</span></p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Why are parentheses so important here?">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Why are parentheses so important here?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="think" title="Why are parentheses so important here?">
 <p>Without parentheses, you might square the wrong number. Always follow PEMDAS and work <strong>inside parentheses first</strong> — especially when there are <strong>multiple layers</strong>.</p>
-</div>
-</div>
 </div>
 <hr>
 </section>
@@ -1037,16 +921,7 @@ Be careful with negatives!
 \color{red}{8 \times 2} \color{black} = 16
 \]</span></p>
 <hr>
-<div class="callout callout-style-default callout-tip callout-titled" title="What counts as grouping?">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-What counts as grouping?
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="remember" title="What counts as grouping?">
 <p>PEMDAS starts with <strong>grouping</strong>, and that means more than just parentheses!</p>
 <p>These all group parts of an expression:</p>
 <ul>
@@ -1057,34 +932,17 @@ What counts as grouping?
 </ul>
 <p>Always simplify <strong>grouped expressions</strong> before applying exponents or multiplying.</p>
 </div>
-</div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="🧠 Now You Try: $\left[ 5 + (3^2 - 1) \right] \times 2$">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Now You Try: <span class="math inline">\(\left[ 5 + (3^2 - 1) \right] \times 2\)</span>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="you-try" title="$\left[ 5 + (3^2 - 1) \right] \times 2$">
 <p><strong>Step 1: Inner parentheses</strong><br>
 <span class="math display">\[
 \left[ 5 + \color{red}{(3^2 - 1)} \right] \times 2 = \left[ 5 + \color{red}{8} \right] \times 2
-\]</span></p>
-<p><strong>Step 2: Brackets</strong><br>
+\]</span> <strong>Step 2: Brackets</strong><br>
 <span class="math display">\[
 \color{red}{\left[ 5 + 8 \right]} \color{black} \times 2 = \color{red}{13} \color{black} \times 2
-\]</span></p>
-<p><strong>Step 3: Multiply</strong><br>
+\]</span> <strong>Step 3: Multiply</strong><br>
 <span class="math display">\[
 \color{red}{13 \times 2} \color{black} = 26
-\]</span></p>
-<p>✅ Final Answer: <strong>26</strong></p>
-</div>
-</div>
+\]</span> ✅ Final Answer: <strong>26</strong></p>
 </div>
 <hr>
 </section>
@@ -1092,16 +950,7 @@ What counts as grouping?
 <h3 class="anchored" data-anchor-id="why-this-matters">1.7.5 – Why This Matters</h3>
 <p>This might feel like just number-crunching, but it lays the foundation for Algebra. You’ll need these skills to simplify expressions, solve equations, and understand formulas.</p>
 <p>Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you can’t simplify numbers correctly, the rest will fall apart.</p>
-<div class="realworld-box callout callout-style-default callout-tip no-icon callout-titled" title="🌍 In the Real World">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🌍 In the Real World
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="real-world" title="Coupons and Gift Cards">
 <p>You get a 25% off coupon and a $10 gift card. The item costs $40.</p>
 <p>Which should be applied first?</p>
 <ul>
@@ -1109,7 +958,6 @@ What counts as grouping?
 <li>Gift card first → $40 - $10 = $30 → 25% off = $22.50</li>
 </ul>
 <p>Same ingredients, different result. Order matters!</p>
-</div>
 </div>
 <hr>
 </section>
@@ -1201,81 +1049,31 @@ and got <strong>27</strong>.</p>
 <li><p>Create your own expression using <strong>at least three operations</strong>, <strong>one fraction</strong>, and <strong>a set of parentheses</strong>.<br>
 Swap with a partner — can they simplify it correctly?</p></li>
 </ol>
-<div class="callout callout-style-default callout-tip no-icon callout-titled" title="🔑 Answer Key">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🔑 Answer Key
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Answer Key</strong></p>
+<div class="answers">
 <ol type="1">
-<li><p>Simplify:</p>
-<ul>
 <li><ol type="a">
 <li><strong>16</strong></li>
-</ol></li>
-<li><ol start="2" type="a">
 <li><strong>20</strong></li>
-</ol></li>
-<li><ol start="3" type="a">
 <li><strong>9</strong></li>
-</ol></li>
-<li><ol start="4" type="a">
 <li><strong>1</strong></li>
 </ol></li>
-</ul></li>
-</ol>
-<hr>
-<ol start="2" type="1">
-<li><p>Simplify:</p>
-<ul>
 <li><ol type="a">
 <li><strong>4</strong></li>
-</ol></li>
-<li><ol start="2" type="a">
 <li><strong>6</strong></li>
-</ol></li>
-<li><ol start="3" type="a">
 <li><strong>8</strong></li>
-</ol></li>
-<li><ol start="4" type="a">
 <li><strong>4</strong></li>
 </ol></li>
-</ul></li>
-</ol>
-<hr>
-<ol start="3" type="1">
-<li><p>Simplify:</p>
-<ul>
 <li><ol type="a">
 <li><strong>15</strong></li>
-</ol></li>
-<li><ol start="2" type="a">
 <li><strong>16</strong></li>
-</ol></li>
-<li><ol start="3" type="a">
 <li><strong>1</strong></li>
-</ol></li>
-<li><ol start="4" type="a">
 <li><strong>6</strong></li>
 </ol></li>
-</ul></li>
-</ol>
-<hr>
-<ol start="4" type="1">
 <li><p><strong>7</strong></p></li>
 <li><p><strong><span class="math inline">\(\frac{22}{3}\)</span></strong> or <strong><span class="math inline">\(7\frac{1}{3}\)</span></strong></p></li>
 <li><p><strong>29</strong></p></li>
 <li><p><em>Answers will vary</em></p></li>
 </ol>
-</div>
-</div>
 </div>
 
 
@@ -1285,6 +1083,7 @@ Swap with a partner — can they simplify it correctly?</p></li>
 <script src="../../scripts/popper.min.js"></script>
 <script src="../../scripts/tippy.min.js"></script>
 <script src="../../scripts/glossary-tooltips.js"></script>
+<script src="../../scripts/custom-callouts.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
