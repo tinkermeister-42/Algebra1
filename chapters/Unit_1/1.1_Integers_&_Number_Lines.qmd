@@ -277,7 +277,13 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
 
 ---
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer key"}
+{{< answers >}}
+
+**Warm-Up**
+
+1. -6
+2. -4
+3. -7
 
 **Working With Number Lines**
 
@@ -355,4 +361,4 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
     c. You now have -\$3.
        ![](/images/Unit_1/Lesson_1/answer_14_c.png)
 
-:::
+{{< /answers >}}

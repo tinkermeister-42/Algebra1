@@ -10,7 +10,7 @@ If you said 24, you're not alone—but that's not the correct answer. Math has s
 
 In this lesson, you'll learn how to follow those rules correctly—even when negatives, fractions, and grouping symbols are involved.
 
-:::{.callout-note icon=false title="🎯 Objectives"}
+:::{.objectives}
 - [ ] I follow the correct order of operations (PEMDAS).
 - [ ] I simplify expressions with fractions and negatives.
 - [ ] I avoid common mistakes when simplifying expressions.
@@ -18,11 +18,12 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 
 
-:::{.callout-note icon=false title="📚 Vocabulary"}
+:::{.vocab}
 {{< glink expression >}}, {{< glink order of operations >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiply >}}, {{< glink divide >}}, {{< glink add >}}, {{< glink subtract >}}
 :::
 
 ---
+
 
 ## 🔥 Warm-Up
 
@@ -63,7 +64,7 @@ So which one is correct — **65 or 25**?
 
 Let’s look at the rules:
 
-:::{.callout-note icon=false title="📌 The Order of Operations"}
+:::{.remember title="The Order of Operations"}
 
 We often remember the order using **PEMDAS**:
 
@@ -81,7 +82,7 @@ You can think of it like a ladder. You start at the top and climb your way down!
 
 :::
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Why are multiplication and division grouped together?"}
+:::{.think title="Why are multiplication and division grouped together?"}
 
 Because they are **two sides of the same operation**.
 Any division problem can be rewritten as multiplication by using the **reciprocal**.
@@ -153,7 +154,7 @@ $$
 
 ---
 
-:::{.callout-note icon=false appearance="simple" collapse=true title="🧠 Now you try: $5(8 - 1) + 2 \times 3$"}
+:::{.you-try title="$5(8 - 1) + 2 \times 3$"}
 
 Start with parentheses:
 
@@ -196,7 +197,7 @@ $$
 -3 \times -3 = 9
 $$
 
-:::{.callout-note appearance="simple" icon=false collapse=true title="🧠 Why is a negative times a negative positive?"}
+:::{.you-try title="Why is a negative times a negative positive?"}
 
 What does multiplying by a negative number do?  
 It **reverses the sign** of the number it’s multiplied by.
@@ -247,38 +248,30 @@ $$
 
 ---
 
-::: {.callout-caution title="Be careful with negatives!"}
+::: {.gotcha title="Be careful with negatives!"}
 
 $-3^2$ means $-(3^2)$, which is:
-
 $$
 -(3^2) = -9
 $$
-
 But $(-3)^2$ means the negative is part of the base:
-
 $$
 (-3)^2 = 9
 $$
-
 :::
 
 ---
 
-::: {.callout-note icon=false appearance="simple" collapse=true title="🧠 Now you try: $-3 \times (4 - 7)$"}
+::: {.you-try title="$-3 \times (4 - 7)$"}
 
 First do the parentheses:
-
 $$
 -3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}{-3}
 $$
-
 Then multiply:
-
 $$
 -3 \times -3 = 9
 $$
-
 :::
 
 ---
@@ -315,7 +308,7 @@ $$
 $$
 
 
-:::{.callout-note appearance="simple" icon=false collapse=true title="🧠 Why are parentheses so important here?"}
+:::{.think title="Why are parentheses so important here?"}
 
 Without parentheses, you might square the wrong number. Always follow PEMDAS and work **inside parentheses first** — especially when there are **multiple layers**.
 
@@ -358,7 +351,7 @@ $$
 
 ---
 
-::: {.callout-tip  title="What counts as grouping?"}
+::: {.remember  title="What counts as grouping?"}
 
 PEMDAS starts with **grouping**, and that means more than just parentheses!
 
@@ -373,7 +366,7 @@ Always simplify **grouped expressions** before applying exponents or multiplying
 
 :::
 
-::: {.callout-note icon=false appearance="simple" collapse=true title="🧠 Now You Try: $\left[ 5 + (3^2 - 1) \right] \times 2$"}
+::: {.you-try title="$\left[ 5 + (3^2 - 1) \right] \times 2$"}
 
 **Step 1: Inner parentheses**  
 $$
@@ -401,7 +394,7 @@ This might feel like just number-crunching, but it lays the foundation for Algeb
 
 Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you can’t simplify numbers correctly, the rest will fall apart.
 
-:::{.callout-tip .realworld-box icon=false title="🌍 In the Real World"}
+:::{.real-world title="Coupons and Gift Cards"}
 You get a 25% off coupon and a $10 gift card. The item costs $40.
 
 Which should be applied first?
@@ -483,34 +476,32 @@ Same ingredients, different result. Order matters!
    Swap with a partner — can they simplify it correctly?
 
 
-::: {.callout-tip icon=false collapse=true title="🔑 Answer Key"}
-
-**Answer Key**
+:::{.answers}
 
 1. Simplify:
 
-   - a. **16**
-   - b. **20**
-   - c. **9**
-   - d. **1**
+   a. **16**
+   b. **20**
+   c. **9**
+   d. **1**
 
 ---
 
 2. Simplify:
 
-   - a. **4**
-   - b. **6**
-   - c. **8**
-   - d. **4**
+   a. **4**
+   b. **6**
+   c. **8**
+   d. **4**
 
 ---
 
 3. Simplify:
 
-   - a. **15**
-   - b. **16**
-   - c. **1**
-   - d. **6**
+   a. **15**
+   b. **16**
+   c. **1**
+   d. **6**
 
 ---
 

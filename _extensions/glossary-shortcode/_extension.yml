@@ -1,7 +1,0 @@
-title: glossary-shortcode
-author: Andy Ross
-version: 1.0.0
-quarto-required: ">=1.2.0"
-contributes:
-  shortcodes:
-    - glossary-shortcode.lua

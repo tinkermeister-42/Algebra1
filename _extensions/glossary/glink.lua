@@ -1,4 +1,5 @@
 function glink(args, kwargs)
+
   if #args == 0 then
     return pandoc.Str("[MISSING_TERM]")
   end

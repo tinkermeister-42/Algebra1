@@ -1,0 +1,12 @@
+---
+title: "Callout Test"
+format: html
+---
+
+{{< objectives title="Objectives" >}}
+
+- I can test this without Lua  
+- I can write less syntax  
+- I will be shocked if this works
+
+{{< /objectives >}}

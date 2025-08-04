@@ -7,22 +7,21 @@ resources:
   - glossary.json
   - scripts/*
 
- 
-filters:
-  - glossary-shortcode
-
+extensions:
+  - glossary
+  
 format:
   html:
     theme:
       - flatly
     css:
-      - styles/callouts.css
       - styles/glossary-tooltips.css
+      - styles/custom-callouts.css
     include-after-body:
-      - scripts/inject-glossary-tooltips.html
+      - scripts/inject-custom.html
     mermaid:
       theme: neutral
-      
+
   pdf: 
     include-in-header:
       text: |
