@@ -1,8 +1,8 @@
 # 1.3 - GCF & Simplifying Fractions {.unnumbered}
 
-Have you ever needed to divide things up fairly — like sharing snacks or making equal teams? The {{< glink greatest common factor >}} (GCF) helps you figure out the largest group size that works for both numbers.
+Suppose you’re making snack packs and have 20 bags of chips and 35 cookies. What’s the greatest number of identical packs you can make with no leftovers? To figure that out, you’d use something called the {{< glink greatest common factor >}} (GCF).
 
-In this lesson, you’ll learn how to use {{< glink prime factorization >}} to find the GCF, and how that can help us simplify {{< glink fractions >}}. Learning GCF helps us make fractions and math problems simpler so they are easier to understand and solve.
+In this lesson, you’ll learn how to use {{< glink prime factorization >}} to find the GCF — and how that can help you simplify {{< glink fractions >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
 
 ::: {.objectives}
 - [ ] I can find the GCF using factor trees
@@ -47,7 +47,7 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 
 ### 1.3.1 - Finding the GCF Using Factor Trees
 
-To find the {{< glink greatest common factor >}}, we can break numbers into their **prime factors** using {{< glink factor trees >}}.
+To find the GCF, we can break numbers into their **prime factors** using {{< glink factor trees >}}.
 
 Let's try it with 36 and 60:
 
@@ -171,9 +171,9 @@ flowchart TB
 ::::
 
 The numbers 36 and 60 share two 2s and one 3. We find the GCF by multiplying those shared factors.
-
-$$2 * 2 * 3 = 12$$
-
+$$
+2 * 2 * 3 = 12
+$$
 The GCF for 36 and 60 is 12!
 
 :::{.you-try title="Find the GCF for 45 and 180."}
@@ -183,6 +183,7 @@ The GCF for 36 and 60 is 12!
 :::{#diagram-1}
 
 ```{mermaid}
+%%| mermaid-format: png
 %%| label: mermaid-diagram
 %%| fit-align: center
 %%| fig-cap: " "
@@ -208,6 +209,7 @@ flowchart TB
 :::{#diagram-2}
 
 ```{mermaid}
+%%| mermaid-format: png
 %%| label: mermaid-diagram
 %%| fit-align: center
 %%| fig-cap: " "
@@ -237,6 +239,8 @@ flowchart TB
     style node_1_0_2_0_2 stroke-width:4px,font-weight:bold
     style node_1_1_2_0_2 stroke-width:4px,font-weight:bold
     style node_1_1_2_1_2 stroke-width:4px,font-weight:bold
+    style node_1_0_2_1_3_0_3 opacity:0.5,color:#999
+    style node_1_0_2_1_3_1_3 opacity:0.5,color:#999
 
 ```
 :::
@@ -253,7 +257,7 @@ $$3 * 3 * 5 = 45$$
 
 ### 1.3.2 - Using Factor Trees to Divide
 
-You might have noticed that we did not circle **all** of the prime factors for 36 and 60. What did we leave behind and what does that mean?
+You might have noticed that we did not circle **all** of the prime factors for 36 and 60 when finding their GCF of 12. What did we leave behind and what does that mean?
 
 ::::{layout-ncol=2}
 
@@ -544,7 +548,7 @@ $$
 \frac{36}{60}
 $$
 
-We found earlier that the GCF of 36 and 60 is 12. So to simplify, we divide both the top and bottom by 12:
+We found earlier that the GCF of 36 and 60 is 12. So to simplify, we divide both the numerator and denominator by 12:
 
 $$
 \frac{36 \div 12}{60 \div 12} = \frac{3}{5}
@@ -572,7 +576,7 @@ This tells us the fraction $\frac{90}{15}$ is just another way to write the numb
 
 **In other words:**
 
-> Simplifying a fraction is just another way of dividing the numerator and denominator by their greatest common factor.
+> Simplifying a fraction is just dividing the numerator and denominator by their greatest common factor.
 
 Factor trees help you *see* why this works by breaking the numbers into their building blocks.
 
@@ -622,6 +626,13 @@ Since 9 and 38 share no factors, $\frac{9}{38}$ is already in simplest form.
 
 :::
 
+:::{.you-try title="Write $\frac{30}{90}$ in simplest form"}
+The GCF of 30 and 90 is 30.
+$$
+\frac{30}{90} = \frac{30 \div 30}{90 \div 30} = \frac{1}{3}
+$$
+:::
+
 ---
 
 ### 1.3.4 – Application: Simplifying with Recipes
@@ -636,13 +647,13 @@ Here’s what the recipe says:
 
 You don’t want to bake that much — just a smaller, simpler version of the same cookie. But how do you shrink the recipe without changing how the cookies taste?
 
-Let’s treat the ingredients like a ratio:
+Let’s treat the ingredients like a {{< glink ratio >}}:
 
 $$
 \frac{36 \text{ cups of flower}}{60 \text{ cups sugar}}
 $$
  
-This {{< glink ratio >}} tells us how much flour to use per amount of sugar. But the numbers are too big — and a little messy.
+This **ratio** tells us how much flour to use per amount of sugar. But the numbers are too big — and a little messy.
 
 Just like with fractions, we can simplify this ratio by dividing both parts by their GCF. We already know the GCF of 36 and 60 is 12.
 
@@ -652,7 +663,7 @@ $$
  
 So for every 3 cups of flour, you need 5 cups of sugar.
 
-Now you can make a smaller batch that keeps the same balance by finding {{< glink multiples >}} of the numerator and denominator. For example:
+Now you can make a smaller batch that keeps the same balance by finding {{< glink multiples >}} of the {{< glink numerator >}} and {{< glink denominator >}}. For example:
 
 - 3 cups of flour
 

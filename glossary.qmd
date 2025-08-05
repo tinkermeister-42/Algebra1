@@ -307,6 +307,26 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 
 ---
 
+### Infinitely {#glossary-infinitely}
+
+The word **infinitely** means "without end" or "going on forever." In math, something is **infinite** if it never stops or has no limit.
+
+> **Example:**
+> The number line goes on **infinitely** in both directions.
+> There are **infinitely many** decimals between 0 and 1.
+
+---
+
+### Infinity {#glossary-infinity}
+
+**Infinity** is not a number — it’s the idea of something that goes on forever without ending. In math, we use the symbol ∞ to represent infinity.
+
+> **Example:**
+> The number line keeps going toward **infinity** in both directions.
+> You can keep counting forever — there's no biggest number because numbers go on to **infinity**.
+
+---
+
 ### Integer {#glossary-integer}
 
 An integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero.
@@ -581,6 +601,16 @@ A rate compares **two different units**, like miles per hour or cost per item.
 
 ---
 
+### Ratio {#glossary-ratio}
+
+A **ratio** compares two amounts to show how much of one thing there is compared to another. You can write a ratio with words (“3 to 2”), with a colon (“3:2”), or as a fraction ($\frac{3}{2}$).
+
+> **Example:**
+>
+> If there are 6 boys and 4 girls in a group, the ratio of boys to girls is 6 to 4, or 3 to 2 after simplifying.
+
+---
+
 ### Reciprocal {#glossary-reciprocal}
 
 The reciprocal of a number is what you **multiply it by to get 1**. You can find it by **flipping the numerator and denominator** of a fraction.
@@ -641,6 +671,20 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 >
 > This simpler fraction means the same thing — it's just written with smaller numbers.
 
+
+---
+
+### Skip Count {#glossary-skip-count}
+
+Skip counting means **counting forward (or backward) by a number other than 1** — like 2, 5, or 10. It’s a way to count faster using patterns.
+
+> **Example:**
+
+> Skip counting by 5:
+> 5, 10, 15, 20, 25, ...
+
+> Skip counting by 3:
+> 3, 6, 9, 12, 15, ...
 
 ---
 

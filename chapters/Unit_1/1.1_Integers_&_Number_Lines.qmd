@@ -21,11 +21,11 @@ Negative numbers can be tricky, especially when the rules don’t always match w
 
 Answer as best you can -- even if you aren't sure!
 
-1. What is the opposite of 6?
+1. What number is exactly halfway between 3 and 9?
    
-2. Which is greater -4 or -9?
+2. Which number is bigger: -4 or -9?
 
-3. Which is farther from 0: -7 or 5?
+3. Which number is farther from 0: -7 or 5?
 
 ---
 
@@ -58,6 +58,17 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 ![](/images/Unit_1/Lesson_1/vertical_by_tens.png)
 
+:::{.gotcha title="How many numbers are between any two numbers on the numberline?"}
+
+**Example:** How many numbers between 3 and 5?
+
+Though there are 2 {{< glink integers >}} between 3 and 5, the answer is not 2! There are {{< glink infinitely >}} many numbers between 3 and 5. Here are some number lines that might help convince you.
+
+![](/images/Unit_1/Lesson_1/three_to_five_by_1.png)
+![](/images/Unit_1/Lesson_1/between_3_and_5_by_05.png)
+![](/images/Unit_1/Lesson_1/between_3_and_5_by_025.png)
+:::
+
 :::{.think title="Can you think of any real world examples of number lines?"}
 
 Here are a few examples:
@@ -69,14 +80,7 @@ Here are a few examples:
 - volume slider on a phone 
 :::
 
-:::{.gotcha title="How many numbers are between 3 and 5?"}
 
-Though there are 2 {{< glink integers >}} between 3 and 5, the answer is not 2! There are infinitely many numbers between 3 and 5. Here are some number lines that might help convince you.
-
-![](/images/Unit_1/Lesson_1/three_to_five_by_1.png)
-![](/images/Unit_1/Lesson_1/between_3_and_5_by_05.png)
-![](/images/Unit_1/Lesson_1/between_3_and_5_by_025.png)
-:::
 
 ---
 
@@ -97,7 +101,8 @@ The opposite of zero is zero. Zero is the only number that is its own opposite!
 
 ### 1.1.3 - What Is Absolute Value?
 
-{{< glink Absolute value >}} ($|number|$) measures the **distance from zero**, no matter the direction.
+{{< glink Absolute value >}} measures the **distance from zero**. Absolute value is written as a number between two bars. For example, **the absolute value of -5** is written $|-5|$.
+
 
 Take a look at the number -5. The number line shows that it's absolute value is 5 because it is 5 units away from zero.
 ![](/images/Unit_1/Lesson_1/absolute_value_negative_five.png)
@@ -130,12 +135,12 @@ Let’s compare 2 to -7.
 ![](/images/Unit_1/Lesson_1/compare_2_to_neg7.png)
 
 
-You can see from the number line that 2 is greater than (&gt;) -7 because 2 is to the right of -7.  
+You can see from the number line that 2 is {{< glink greater than >}} (&gt;) -7 because 2 is to the right of -7.  
 
 You can also see that -7 is further from zero than 2 and so |-7| > |2|.
 
 :::{.gotcha title="Which is bigger?"}
-It is easy to get confused here. When we say which is "bigger" we are asking which number is further to the right on the number line, **not** which one is furthest from zero.
+It is easy to get confused here. When we say which number is "bigger" (or greater than), we are asking which number is further to the right on the number line. This is **not** the same as absolute value, which asks which one is furthest from zero.
 :::
 
 :::{.you-try title="Compare 3 to -8 using a number line."}

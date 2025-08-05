@@ -27,7 +27,7 @@ format:
       text: |
         \usepackage{cancel}
         \usepackage{xcolor}
-  
+    
 website:
   favicon: images/logo.png
   
@@ -139,8 +139,9 @@ book:
 
     - part: "Supplemental"
       chapters:
-        - file: chapters/Supplemental/index.md
+        - file: chapters/Supplemental/index.qmd
         - file: chapters/Supplemental/math_games_and_puzzles/index.md
+        - file: chapters/Supplemental/worksheets/index.qmd
 
     - file: resources.qmd
     - file: glossary.qmd

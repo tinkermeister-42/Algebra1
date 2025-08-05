@@ -14,7 +14,8 @@ By the end of this unit, you’ll be able to:
 * Use factor trees to find prime factorizations  
 * Identify and use the greatest common factor (GCF)  
 * Convert between fractions, decimals, and percents  
-* Multiply, divide, and compare fractions  
+* Multiply, divide, and compare fractions
+* Solve real-world problems using fractions, decimals, and percents
 * Follow the correct order of operations to simplify expressions
 
 ---
@@ -44,4 +45,4 @@ Follow the rules (PEMDAS) to simplify expressions with integers and fractions.
 
 ---
 
-Let’s build those Algebra muscles — you’ll need them for everything that follows!
+Curious how much of this you know already? Try the [Unit 1 pre-test](/chapters/Supplemental/worksheets/Unit_1/pretest.pdf)!

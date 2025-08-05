@@ -13,7 +13,7 @@ Use these resources to:
 
   Number grids, logic puzzles, equation word searches, and more.
 
-### Extra Practice Worksheets
+### [Extra Practice Worksheets](worksheets/index.qmd)
 
   Targeted drills and alternative problem sets.
 
