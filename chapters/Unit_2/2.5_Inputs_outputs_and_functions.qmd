@@ -1,0 +1,175 @@
+# 2.5 – Inputs, Outputs & Functions {.unnumbered}
+
+You’ve worked with expressions, and you’ve seen how inputs can go through a rule to produce outputs. This is the heart of what functions are all about.
+
+In this lesson, you’ll explore how input-output rules work, what makes something a **function**, and how to tell when a relationship is or isn’t a function.
+
+---
+
+:::{.objectives}
+- I can describe a rule that connects inputs and outputs  
+- I can tell whether a table or situation represents a function  
+- I can use expressions to represent input-output relationships  
+:::
+
+---
+
+:::{.vocab}
+{{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink rule >}}, {{< glink table >}}, {{< glink variable >}}
+:::
+
+---
+
+:::{.warmup collapse=true}
+1. A vending machine always gives the same snack when you press A1.  
+   - Is that acting like a function? Why?
+
+2. Now imagine sometimes A1 gives chips, sometimes candy.  
+   - What’s the problem?
+
+3. What’s something in your life that always depends on something else?
+
+> These questions help students connect function ideas to real-life consistency — one input gives one output.
+:::
+
+---
+
+## 🧠 Learn Together
+
+### 2.5.1 – Inputs → Rule → Outputs
+
+You can describe a relationship using a **rule**. The rule takes an **input** and produces an **output**.
+
+> **Example:**
+>
+> Rule: Multiply by 2 and add 1  
+> Expression: \(2x + 1\)
+
+| Input | Rule         | Output |
+|-------|--------------|--------|
+| 1     | \(2 \cdot 1 + 1\) | 3      |
+| 2     | \(2 \cdot 2 + 1\) | 5      |
+| 3     | \(2 \cdot 3 + 1\) | 7      |
+
+> _Suggestion: Use visual of input → rule box → output flow._
+
+---
+
+### 2.5.2 – What Is a Function?
+
+A **function** is a rule where **each input has exactly one output**.
+
+- It’s **okay** if different inputs have the same output  
+- It’s **not okay** if the same input gives more than one output
+
+> **Example:**
+
+| Input | Output |
+|-------|--------|
+| 2     | 3      |
+| 2     | 4      |
+
+❌ Not a function — the input 2 gives two different outputs
+
+---
+
+### 2.5.3 – Real-Life Functions
+
+> ✅ Function:  
+> You pay \$3 per taco. Total cost depends on number of tacos.  
+> Rule: \(3x\)
+
+> ❌ Not a Function:  
+> A person is matched to their favorite color… but is listed twice with different colors.
+
+> _Suggestion: Let students create their own “function or not?” example and explain their reasoning._
+
+---
+
+:::{.you-try collapse=true title="🤔 Function or Not?"}
+Decide if each scenario describes a function:
+
+1. You press a microwave button and it always sets the same time.  
+2. A dog is listed with two different owners.  
+3. A student has different classes during the day.  
+4. A single input gives two different outputs in a table.
+
+Explain your reasoning.
+:::
+
+---
+
+### 2.5.4 – Optional: Function Notation
+
+You may see something like this:
+
+\[
+f(x) = 3x + 2
+\]
+
+This just means: “The function named \(f\) gives this output when you plug in \(x\).”
+
+- If \(x = 4\):  
+  \[
+  f(4) = 3 \cdot 4 + 2 = 14
+  \]
+
+> _You can use this now or introduce more fully in Unit 4._
+
+---
+
+## 🏋️ Practice On Your Own
+
+1. Fill in the table using the rule: \(2x + 1\)
+
+| Input | Output |
+|-------|--------|
+| 1     |        |
+| 3     |        |
+| 5     |        |
+
+2. Write a rule for each situation:  
+   a. You earn \$10/hour.  
+   b. A car starts with 12 gallons and uses 0.3 gallons per mile.  
+   c. A delivery costs \$5 plus \$2 per item.
+
+3. Which of these are functions?
+
+| Input | Output |
+|-------|--------|
+| 1     | 4      |
+| 2     | 4      |
+| 3     | 4      |
+
+| Input | Output |
+|-------|--------|
+| 1     | 5      |
+| 1     | 6      |
+| 2     | 5      |
+
+4. Create a function of your own. Show a table with at least 3 inputs and outputs.
+
+---
+
+:::{.answers collapse=true}
+**✅ Answer Key**
+
+1.
+
+| Input | Output |
+|-------|--------|
+| 1     | 3      |
+| 3     | 7      |
+| 5     | 11     |
+
+2.  
+a. \(10x\)  
+b. \(12 - 0.3x\)  
+c. \(5 + 2x\)
+
+3.  
+- First table: ✅ Function  
+- Second table: ❌ Not a function
+
+4. _(Answers will vary)_
+:::

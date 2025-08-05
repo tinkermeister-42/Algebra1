@@ -1,0 +1,187 @@
+# 2.2 – Evaluating Expressions {.unnumbered}
+
+Once we know how to write algebraic expressions, the next step is to **evaluate** them. That means plugging in a number for each variable and simplifying the result. This is like testing what an expression equals when we know the value of the variable.
+
+In this lesson, you’ll practice **substituting** values into expressions and using **order of operations** (PEMDAS) to simplify. You’ll also start seeing how some expressions are always equal — even if they look different at first.
+
+---
+
+:::{.objectives}
+- I can substitute values into expressions and simplify them  
+- I can use the correct order of operations with variables and parentheses  
+- I can recognize when two expressions are equivalent  
+:::
+
+---
+
+:::{.vocab}
+{{< glink evaluate >}}, {{< glink substitute >}}, {{< glink equivalent expressions >}}, {{< glink order of operations >}}, {{< glink parentheses >}}
+:::
+
+---
+
+:::{.warmup collapse=true}
+1. What do you get if you simplify this expression?  
+   \[
+   3 + 2 \cdot 4
+   \]  
+   Why do we multiply before adding?
+
+2. A student says \(2x + 5\) and \(5 + 2x\) are different. Do you agree? Why or why not?
+
+3. What happens when you square a negative number, like \((-3)^2\)? What if you forget the parentheses?
+
+> These questions build on Unit 1 thinking and help students prepare to handle substitution and order of operations correctly — especially with negatives and parentheses.
+:::
+
+---
+
+## 🧠 Learn Together
+
+### 2.2.1 – What Does It Mean to Evaluate?
+
+To **evaluate** an expression means to find its value by **substituting** a number for the variable.
+
+> **Example:**
+>
+> \[
+> 4x + 1 \text{ when } x = 3
+> \]
+> \[
+> = 4 \cdot 3 + 1 = 12 + 1 = 13
+> \]
+
+> _Tip: Always put parentheses around the number you substitute — especially if it’s negative!_
+
+---
+
+### 2.2.2 – Using PEMDAS with Substitution
+
+You still follow the same **order of operations**:
+
+**P**arentheses → **E**xponents → **M/D** → **A/S**
+
+> **Example:**
+>
+> \[
+> 2(x + 3)^2 \text{ when } x = 1
+> \]
+> \[
+> = 2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
+> \]
+
+> _Common mistake: Forgetting to square the whole quantity inside parentheses._
+
+---
+
+:::{.you-try collapse=true title="📝 Try Substitution and Simplifying"}
+Evaluate each expression.
+
+1. \(3x + 5\) when \(x = 4\)  
+2. \((x - 2)^2\) when \(x = 5\)  
+3. \(2x - 4y\) when \(x = 3,\ y = 1\)  
+4. \(\frac{x + 6}{2}\) when \(x = 8\)  
+:::
+
+---
+
+### 2.2.3 – Why Parentheses Matter
+
+Let’s look at this expression:
+
+\[
+-3^2 \quad \text{vs.} \quad (-3)^2
+\]
+
+- \(-3^2 = -(3^2) = -9\)  
+- \((-3)^2 = (-3) \cdot (-3) = 9\)
+
+> _Tip: Without parentheses, the negative sign applies **after** squaring._
+
+---
+
+:::{.you-try collapse=true title="💥 Parentheses Practice"}
+Evaluate carefully:
+
+1. \(-4^2\)  
+2. \((-4)^2\)  
+3. \((x - 1)^2\) when \(x = 6\)  
+4. \(-x^2 + 2x\) when \(x = 3\)
+:::
+
+---
+
+### 2.2.4 – Equivalent Expressions
+
+Sometimes two expressions look different but always give the same result.
+
+> **Example:**
+>
+> \[
+> 3x + 2x = 5x
+> \]
+> Even if you substitute any value for \(x\), both expressions give the same result. Try it!
+
+> **Try it:**
+>
+> \[
+> 3x + 2x \quad \text{vs.} \quad 5x \text{ when } x = 4
+> \]
+> \[
+> = 12 + 8 = 20 \quad \text{vs.} \quad 5 \cdot 4 = 20
+> \]
+
+These are called **equivalent expressions** — they look different but are always equal.
+
+> _Visual idea: Use an input-output table comparing expressions side by side._
+
+---
+
+:::{.you-try collapse=true title="💭 Are These Equivalent?"}
+Try evaluating both expressions when \(x = 2\), \(x = 5\), and \(x = 10\). Are they always the same?
+
+1. \(2x + 3x\) and \(5x\)  
+2. \(3(x + 4)\) and \(3x + 12\)  
+3. \(x^2 + 4\) and \((x + 2)^2\)  
+4. \(2(x + 3) - 1\) and \(2x + 5\)
+
+Which are equivalent? How do you know?
+:::
+
+---
+
+## 🏋️ Practice On Your Own
+
+Evaluate each expression by substituting the given value(s).
+
+1. \(2x + 5\) when \(x = 6\)  
+2. \(x^2 + 3x\) when \(x = 4\)  
+3. \((x - 2)^2\) when \(x = 1\)  
+4. \(2a - 3b\) when \(a = 3, b = 5\)  
+5. \(\frac{x + 10}{5}\) when \(x = 15\)  
+6. \(-x^2 + 4x - 1\) when \(x = 2\)  
+
+Decide whether each pair is equivalent. Use substitution to test values.
+
+7. \(4x + 2x\) and \(6x\)  
+8. \(2(x + 3)\) and \(2x + 6\)  
+9. \(x^2 + 2x + 1\) and \((x + 1)^2\)  
+10. \(5x - 3\) and \(3x + 5\)
+
+---
+
+:::{.answers collapse=true}
+**✅ Answer Key**
+
+1. 17  
+2. \(16 + 12 = 28\)  
+3. \((-1)^2 = 1\)  
+4. \(6 - 15 = -9\)  
+5. \(\frac{25}{5} = 5\)  
+6. \(-4 + 8 - 1 = 3\)
+
+7. Yes (both equal \(6x\))  
+8. Yes  
+9. Yes  
+10. No  
+:::

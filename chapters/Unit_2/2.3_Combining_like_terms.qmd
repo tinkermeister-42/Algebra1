@@ -1,0 +1,153 @@
+# 2.3 – Combining Like Terms {.unnumbered}
+
+When we simplify an expression, we often look for pieces that can go together. In algebra, **like terms** are terms that have the same variable part. You can **combine** them by adding or subtracting their coefficients — just like counting apples or blocks of the same kind.
+
+In this lesson, you’ll learn to spot like terms, combine them, and rewrite expressions in simpler forms. You’ll also see how this connects to the idea of equivalent expressions.
+
+---
+
+:::{.objectives}
+- I can identify like terms in an expression  
+- I can combine like terms to simplify an expression  
+- I can explain why combining like terms creates an equivalent expression  
+:::
+
+---
+
+:::{.vocab}
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equivalent expressions >}}, {{< glink expression >}}, {{< glink like terms >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+:::
+
+---
+
+:::{.warmup collapse=true}
+1. What do you get when you add:  
+   a. \(5 + 7\)  
+   b. \(2x + 4x\)  
+   c. \(3x + 5y\)  
+
+2. Which of these pairs are “like” and which are not?  
+   - \(2x\) and \(5x\)  
+   - \(x\) and \(x^2\)  
+   - \(4y\) and \(4x\)
+
+3. Why might we want to rewrite an expression in a simpler form?
+
+> These questions preview the idea of combining matching parts while reinforcing variable structure.
+:::
+
+---
+
+## 🧠 Learn Together
+
+### 2.3.1 – What Are Like Terms?
+
+**Like terms** have the exact same variable part — including exponents.
+
+> **Examples:**
+> - \(2x\) and \(5x\) → ✅ like terms  
+> - \(x^2\) and \(x^2\) → ✅ like terms  
+> - \(3x\) and \(3y\) → ❌ not like terms  
+> - \(x\) and \(x^2\) → ❌ not like terms
+
+> _Suggested visual: Show a color-coded set of blocks or algebra tiles to group like terms visually._
+
+---
+
+### 2.3.2 – Combining Like Terms
+
+To combine like terms:
+1. Identify terms with the same variable part  
+2. Add or subtract their **coefficients**
+
+> **Example 1:**
+> \[
+> 3x + 5x = 8x
+> \]
+
+> **Example 2:**
+> \[
+> 7x - 2x = 5x
+> \]
+
+> **Example 3 (constants too):**
+> \[
+> 2x + 4 + 5x - 1 = 7x + 3
+> \]
+
+> _Visual option: Use algebra tiles to physically add and subtract blocks representing like terms._
+
+---
+
+:::{.you-try collapse=true title="💡 Try Combining"}
+Simplify each expression by combining like terms.
+
+1. \(4x + 3x\)  
+2. \(5a + 2b - 3a\)  
+3. \(x + 2 + x + 5\)  
+4. \(7m - 2m + 6 - 3\)  
+:::
+
+---
+
+### 2.3.3 – Why Does This Work?
+
+Combining like terms is just rewriting an expression in a simpler way — we’re not changing its meaning.
+
+> \[
+> 3x + 2x = 5x
+> \]
+> These expressions are **equivalent**. No matter what value \(x\) has, both expressions give the same result.
+
+Try testing values like \(x = 1, 2, 5\) and compare both sides — they’ll always match.
+
+> _Optional visual: Input-output table comparing \(3x + 2x\) and \(5x\)._
+
+---
+
+:::{.you-try collapse=true title="💭 Which Expressions Are Equivalent?"}
+Decide if the following pairs are equivalent. Try simplifying first.
+
+1. \(2x + 3x\) and \(5x\)  
+2. \(5y - 2y + 1\) and \(3y + 1\)  
+3. \(4x + 2\) and \(2x + 2x + 2\)  
+4. \(x + x + x\) and \(3x\)  
+:::
+
+---
+
+## 🏋️ Practice On Your Own
+
+Simplify each expression by combining like terms.
+
+1. \(6x + 4x\)  
+2. \(5a - 3a + 2\)  
+3. \(2x + 3 + 5x - 1\)  
+4. \(9y - 2y + 4 + y\)  
+5. \(3b + 2b + 6 - 2\)  
+6. \(4m - m + 7 - 3\)
+
+Are these expressions equivalent? Simplify each and compare.
+
+7. \(2x + 4x + 3\) and \(6x + 3\)  
+8. \(x + x + 4\) and \(2x + 4\)  
+9. \(4y + 6 - 3y + 2\) and \(y + 8\)  
+10. \(3x + 5 + 2x - 1\) and \(5x + 4\)
+
+---
+
+:::{.answers collapse=true}
+**✅ Answer Key**
+
+1. \(10x\)  
+2. \(2a + 2\)  
+3. \(7x + 2\)  
+4. \(8y + y = 9y + 4\)  
+5. \(5b + 4\)  
+6. \(3m + 4\)
+
+7. Yes  
+8. Yes  
+9. Yes  
+10. Yes  
+:::

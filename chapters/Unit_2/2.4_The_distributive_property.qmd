@@ -1,0 +1,180 @@
+# 2.4 – The Distributive Property {.unnumbered}
+
+Sometimes expressions have parentheses. To simplify them, we often use the **distributive property**. This means multiplying what's **outside** the parentheses by everything **inside**.
+
+In this lesson, you'll learn how to apply the distributive property, understand *why* it works, and use it to simplify expressions. You'll also see how different-looking expressions can be equivalent by distributing or factoring.
+
+---
+
+:::{.objectives}
+- I can use the distributive property to expand expressions  
+- I can simplify expressions using distribution and combining like terms  
+- I can explain why distribution creates an equivalent expression  
+:::
+
+---
+
+:::{.vocab}
+{{< glink combine like terms >}}, {{< glink equivalent expressions >}}, {{< glink expression >}}, {{< glink parentheses >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+:::
+
+---
+
+:::{.warmup collapse=true}
+1. You buy 3 bags of snacks. Each bag has 2 chips, 1 candy, and 1 drink.  
+   - How could you find the total number of snacks without opening the bags?
+
+2. What is the value of \(2(4 + 3)\)?  
+   What do you notice if you rewrite it as \(2 \cdot 4 + 2 \cdot 3\)?
+
+3. Write two different-looking expressions that both equal 12. How do you know they’re equal?
+
+> These questions introduce the idea of repeated groups, equal expressions, and multiplication over addition — all key to understanding distribution.
+:::
+
+---
+
+## 🧠 Learn Together
+
+### 2.4.1 – What Is the Distributive Property?
+
+The **distributive property** lets you multiply a number by a group in parentheses:
+
+\[
+a(b + c) = ab + ac
+\]
+
+> **Example:**
+> \[
+> 3(x + 4) = 3x + 12
+> \]
+
+You multiply the **3** by **both** terms inside:  
+- \(3 \cdot x = 3x\)  
+- \(3 \cdot 4 = 12\)
+
+> _Visual note: Use an area model or rectangle diagram to show this. Label one side as 3 and the other as split into \(x\) and 4._
+
+---
+
+### 2.4.2 – Why It Works
+
+Think of the parentheses as a **group**. You have 3 copies of the group \((x + 4)\):
+
+\[
+(x + 4) + (x + 4) + (x + 4)
+\]
+
+If you combine like terms:  
+\[
+3x + 12
+\]
+
+It’s the same as multiplying once:  
+\[
+3(x + 4)
+\]
+
+So these are **equivalent expressions**.
+
+---
+
+:::{.you-try collapse=true title="🧠 Try Using the Distributive Property"}
+Use the distributive property to expand each expression.
+
+1. \(2(x + 3)\)  
+2. \(5(a - 2)\)  
+3. \(3(2x + 4)\)  
+4. \(4(x - 1) + 2x\)
+:::
+
+---
+
+### 2.4.3 – Common Mistakes
+
+> ⚠️ **Don’t forget to multiply each part inside the parentheses!**
+
+> ❌ Incorrect:  
+> \(2(x + 5) = 2x + 5\) ← **Didn’t multiply the 5**
+
+> ✅ Correct:  
+> \(2(x + 5) = 2x + 10\)
+
+Also, be careful with negatives:
+
+> \[
+> -3(x - 2) = -3x + 6
+> \]
+
+> _Note: Consider using a “Gotcha!” callout box with common misconceptions here._
+
+---
+
+:::{.you-try collapse=true title="💥 Mistake or Not?"}
+Decide if each simplification is correct. If not, explain the mistake.
+
+1. \(4(x + 2) = 4x + 2\)  
+2. \(-2(a - 3) = -2a + 6\)  
+3. \(5(x - 1) + 3x = 8x - 5\)  
+4. \(3(2x + 4) = 6x + 12\)
+:::
+
+---
+
+### 2.4.4 – Distribution and Combining Like Terms
+
+You often need to combine like terms **after** distributing.
+
+> **Example:**
+> \[
+> 2(x + 3) + 4x = 2x + 6 + 4x = 6x + 6
+> \]
+
+This is especially common in expressions with more than one set of terms.
+
+---
+
+:::{.you-try collapse=true title="✏️ Distribute and Simplify"}
+1. \(3(x + 2) + x\)  
+2. \(4a - 2(3a - 1)\)  
+3. \(-5(x - 2) + 3x\)  
+4. \(6(x + 4) - 2(x + 1)\)
+:::
+
+---
+
+## 🏋️ Practice On Your Own
+
+Expand and simplify each expression.
+
+1. \(2(x + 5)\)  
+2. \(3(y - 4)\)  
+3. \(-4(x - 1)\)  
+4. \(5(a + 2) - a\)  
+5. \(6x + 2(x - 3)\)  
+6. \(3(x + 4) + 2(x - 1)\)
+
+Error check: Are these simplifications correct?
+
+7. \(2(x + 3) = 2x + 3\)  
+8. \(-3(x - 4) = -3x + 12\)  
+9. \(4x + 3(x + 2) = 7x + 6\)  
+10. \(2(x + 1) + 3x = 5x + 1\)
+
+---
+
+:::{.answers collapse=true}
+**✅ Answer Key**
+
+1. \(2x + 10\)  
+2. \(3y - 12\)  
+3. \(-4x + 4\)  
+4. \(5a + 10 - a = 4a + 10\)  
+5. \(6x + 2x - 6 = 8x - 6\)  
+6. \(3x + 12 + 2x - 2 = 5x + 10\)
+
+7. ❌ Should be \(2x + 6\)  
+8. ✅  
+9. ✅  
+10. ❌ Should be \(2x + 2 + 3x = 5x + 2\)
+:::

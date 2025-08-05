@@ -36,6 +36,17 @@ It’s used to study how fast things move, how things grow or shrink, and how to
 
 ---
 
+### Coefficient {#glossary-coefficient}
+
+A **coefficient** is the number in front of a variable. It tells you how many of that variable you have.
+
+> **Example:**
+>
+> In the expression \(3x\), the coefficient is **3**.  
+> It means “3 times x.”
+
+---
+
 ### Composite number {#glossary-composite-number}
 
 A composite number has more than two factors.
@@ -45,6 +56,16 @@ That means it can be divided evenly by numbers other than 1 and itself.
 > **Example:**
 >
 > 12 is composite because 2, 3, 4, and 6 all divide it evenly.
+
+---
+
+### Constant {#glossary-constant}
+
+A **constant** is a number that does **not** change. It stays the same no matter what the variable is.
+
+> **Example:**
+>
+> In the expression \(x + 5\), the number **5** is a constant.
 
 ---
 
@@ -718,6 +739,39 @@ A survey is a way to **collect information** from people by asking questions.
 
 ---
 
+### Symbol {#glossary-symbol}
+
+A **symbol** is a mark or character used to represent something in math. It can stand for an operation, a number, or an unknown value.
+
+> **Example:**
+>
+> In the expression \(3x + 5\), the **+** is a symbol for addition,  
+> and the **x** is a symbol for a variable (an unknown number).
+
+---
+
+### Term {#glossary-term}
+
+A **term** is one part of an expression. Terms are separated by plus or minus signs.
+
+> **Example:**
+>
+> In the expression \(4x + 3 - 2y\), there are **three** terms:  
+> \(4x\), \(3\), and \(-2y\)
+
+---
+
+### Variable {#glossary-variable}
+
+A **variable** is a letter or symbol that stands for a number that can change or is unknown.
+
+> **Example:**
+>
+> In the expression \(x + 7\), the letter **x** is a variable.  
+> It could be **any number**.
+
+---
+
 ### Vertical {#glossary-vertical}
 
 Up and down, like a flagpole.
@@ -738,6 +792,9 @@ The whole is the **total amount** — it’s everything being considered before 
 > If 30 is 60% of a number, then the whole is 50.
 
 ---
+
+
+
 
 
 

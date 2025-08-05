@@ -1,0 +1,155 @@
+# 2.1 – Expressions & Their Parts {.unnumbered}
+
+Algebra is a language made of **expressions** — math phrases that use numbers, symbols, and variables to describe patterns or situations. Before we learn to simplify or solve anything, we need to understand what expressions are and how to describe their parts.
+
+In this lesson, you’ll learn what a variable is, what makes up an expression, and how to recognize important parts like {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
+
+---
+
+:::{.objectives}
+- [ ] I can identify the parts of an algebraic expression  
+- [ ] I can describe what a variable, constant, coefficient, and term are  
+- [ ] I can write a simple expression to describe a real-world situation  
+:::
+
+---
+
+:::{.vocab}
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink expression >}}, {{< glink term >}}, {{< glink variable >}} 
+:::
+
+---
+
+## 🔥 Warm-Up
+
+1. If a shirt costs $10, how do you find the total cost of many shirts?
+
+2. You have some cookies. You eat 3. How can you show how many cookies are left? 
+
+3. A car drives 50 miles every hour. How can you find the total distance for many hours? 
+
+---
+
+## 👥 Learn Together
+
+### 2.1.1 – What Is a Variable?
+
+Numbers are very important in math. But sometimes, when trying to solve a problem or describe a situation, a way to talk about a number that is not known yet, or a number that can change, is needed. To do this, something special called a {{< glink variable >}} is used.
+
+A variable is a letter or {{< glink symbol >}} used to represent an unknown or changing number. Any symbol can be used for a variable but, in Algebra, the most common symbol we will use is the letter **x**.
+
+Think of a **x** as the label on a mystery box. You know the box holds a number inside, but you don't know which number it is yet! 
+
+![](/images/Unit_2/variable.png){width=35% fig-align=center}
+
+
+Let's look at some examples:
+
+Example:
+Imagine you have some apples, but you don't know exactly how many. You can use the letter a as a placeholder for the number of apples you have. 
+If you get 5 more apples, the number of apples you have now can be shown as: a + 5
+Suggested Visual:
+Instead of: a number machine, which might be too abstract.
+Try: A simple drawing of a box with a question mark on it, and the letter 'a' written next to it. Then draw 5 more apples next to the box. 
+This approach uses a concrete analogy ("mystery box"), avoids jargon initially, and immediately connects the concept to a tangible object (apples). It also sets up the next examples with a clear, relatable scenario. Remember to speak slowly and clearly when introducing these concepts. You can also invite students to offer other real-world examples of quantities that can change or be unknown. 
+
+### 2.1.2 – What Is an Expression?
+
+An **expression** is a math phrase that combines numbers, variables, and operations — **but no equal sign**.
+
+Examples of expressions:
+- \(3x + 5\)  
+- \(x - 7\)  
+- \(\frac{1}{2}(y + 4)\)
+
+These expressions tell us something — like a rule, or a situation — but they don’t make a claim about what the answer is.
+
+---
+
+### 2.1.3 – Terms, Coefficients, and Constants
+
+Take a look at this expression:
+
+\[
+4x + 2y - 7
+\]
+
+Let’s break it down:
+
+- **Terms** are the parts separated by + or –:  
+  → \(4x\), \(2y\), and \(-7\)  
+- A **coefficient** is the number in front of a variable:  
+  → 4 is the coefficient of \(x\); 2 is the coefficient of \(y\)  
+- A **constant** is a number that doesn’t change:  
+  → \(-7\) is a constant
+
+> _Suggested visual: Expression with labeled arrows or color-coded parts_
+
+---
+
+:::{.you-try collapse=true title="📝 Try It Yourself!"}
+Label the parts of each expression.
+
+1. \(5x + 2\)  
+2. \(3a + 4b - 9\)  
+3. \(\frac{1}{2}y + 6\)  
+4. \(9 - 2x\)  
+
+For each:  
+- Identify the terms  
+- Label the coefficients and constants  
+:::
+
+---
+
+### 2.1.4 – Writing Expressions for Situations
+
+Now let’s try going from a real-world situation to an expression.
+
+> **Examples:**
+>
+> - You earn $10 per hour. After \(h\) hours, you’ve earned:  
+>   → \(10h\)  
+> - A car’s speed increases by 15 miles per hour:  
+>   → \(s + 15\)  
+> - A box holds 5 pencils. How many pencils in \(x\) boxes?  
+>   → \(5x\)
+
+> _Note: These kinds of expressions will help when we study input/output and functions later._
+
+---
+
+:::{.you-try collapse=true title="💭 Create Expressions"}
+Write an expression for each situation:
+
+1. You have 3 more apples than your friend, who has \(x\).  
+2. A shirt costs $12. You buy \(n\) shirts.  
+3. A plant is 8 inches tall and grows \(g\) inches each day.  
+4. You spend \$20 and then buy 2 items that cost \(x\) each.
+
+> Be ready to explain what each part of your expression means!
+:::
+
+---
+
+## ✍️ Practice On Your Own
+
+1. Label all parts of this expression: \(7x - 5\)  
+2. Identify the terms in this expression: \(3a + 4b - 9\)  
+3. What is the coefficient of \(y\) in this expression: \(5x + 2y - 6\)?  
+4. Write an expression for:  
+   a. “6 fewer than a number”  
+   b. “Twice a number increased by 3”  
+5. Create your own expression to describe this:  
+   “Each item costs $4. You also pay a $2 delivery fee.”
+
+---
+
+:::{.answers}
+1. Terms: \(7x\), \(-5\); Coefficient: 7; Constant: \(-5\)  
+2. \(3a\), \(4b\), \(-9\)  
+3. Coefficient of \(y\) is 2  
+4. a) \(x - 6\)  
+   b) \(2x + 3\)  
+5. \(4x + 2\) _(Answers may vary slightly)_
+:::
