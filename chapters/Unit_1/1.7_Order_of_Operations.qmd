@@ -27,9 +27,12 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 ## 🔥 Warm-Up
 
-1. Simplify: 3 + 6 × 2
-2. True or False: (4 + 3) × 2 = 4 + (3 × 2)
-3. What does $\frac{1}{2} \times (4 + 2)$ equal?
+1. You and your friend are asked to simplify $10 - 4 + 2$. You got 8. They got 4. Who is right?
+
+2. This question went viral. Can you get it right? Apparently 9 out of 10 can't!
+$$
+6 \div 2(1 + 2)
+$$
 
 ---
 
@@ -103,7 +106,7 @@ The same is true for addition and subtraction. Subtraction is really just adding
 
 ### 1.7.2 – Examples with Integers
 
-Let’s look at some expressions that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
+Let’s look at some {{< glink expressions >}} that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
 
 
 **Example 1:** $5 + 3 \times 2$
@@ -191,7 +194,7 @@ $$
 -3 \times -3 = 9
 $$
 
-:::{.you-try title="Why is a negative times a negative positive?"}
+:::{.think title="Why is a negative times a negative positive?"}
 
 What does multiplying by a negative number do?  
 It **reverses the sign** of the number it’s multiplied by.
@@ -239,20 +242,6 @@ So:
 $$
 \frac{\color{red}{3 + 5}}{2} = \frac{\color{red}{8}}{2} = 4
 $$
-
----
-
-::: {.gotcha title="Be careful with negatives!"}
-
-$-3^2$ means $-(3^2)$, which is:
-$$
--(3^2) = -9
-$$
-But $(-3)^2$ means the negative is part of the base:
-$$
-(-3)^2 = 9
-$$
-:::
 
 ---
 
@@ -308,6 +297,18 @@ Without parentheses, you might square the wrong number. Always follow PEMDAS and
 
 :::
 
+::: {.gotcha title="Be careful with negatives!"}
+
+$-3^2$ means $-(3^2)$, which is:
+$$
+-(3^2) = -9
+$$
+But $(-3)^2$ means the negative is part of the base:
+$$
+(-3)^2 = 9
+$$
+:::
+
 ---
 
 ### Nested Parentheses
@@ -320,7 +321,9 @@ Sometimes, expressions use **more than one layer of grouping**. When that happen
 ---
 
 **Example:**  
-$\left[ 3 + (2^2 + 1) \right] \times 2$
+$$
+\left[ 3 + (2^2 + 1) \right] \times 2
+$$
 
 ---
 

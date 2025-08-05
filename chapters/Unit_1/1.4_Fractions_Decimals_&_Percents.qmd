@@ -212,11 +212,11 @@ Suppose we have the number 123.456. The following table shows the place value fo
 | Hundredths        | 5     | 5 hundredths = $\frac{5}{100}$ |
 | Thousandths       | 6     | 6 thousandths = $\frac{6}{1000}$ |
 
-Place value helps us say the number differently. Instead of saying "123 **point** 456" we could say "123 **and** 456 **one thousandths**".  This is the trick to converting decimals to fractions.
+Place value helps us say the number differently. Instead of saying "123 **point** 456" we could say "123 **and** 456 **thousandths**".  This is the trick to converting decimals to fractions.
 
 **Example 1:**
 
-Say we want to convert 0.75 to a fraction. We could say this is "zero **point** seven five" but it is more useful to say this is "75 one hundredths". This gives us our fraction!
+Say we want to convert 0.75 to a fraction. We could say this is "zero **point** seven five" but it is more useful to say this is "75 hundredths". This gives us our fraction!
 
 $$
 0.75 = \text{75 hundredths} \Rightarrow \frac{75}{100} = \frac{3}{4}
@@ -238,6 +238,17 @@ If the number is bigger than one (like we saw with 4.23) we do the same thing, b
 $$
 4.23 = \text{4 and 23 hundredths} \Rightarrow 4\dfrac{23}{100}
 $$
+
+:::{.callout-tip}
+If you struggle with words like "hundredths" here is another way to think about it. To convert a decimal to a fraction, count the number of digits to the **right** of the decimal. You will divide by 1 with that many zeros after it.
+
+**Example:** 0.5431
+
+There are 4 digits to the right of the decimal point and so we divide by 1 with 4 zeros:
+$$
+0.5431 = \frac{5431}{10000}
+$$
+:::
 
 :::{.you-try title="Write 0.51 as a fraction."}
 $$
@@ -313,8 +324,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 | $\frac{1}{2}$  | 0.5      | 50%     |
 | $\frac{1}{4}$  | 0.25     | 25%     |
 | $\frac{3}{4}$  | 0.75     | 75%     |
-| $\frac{1}{3}$  | 0.333... | 33.3%   |
-| $\frac{2}{3}$  | 0.666... | 66.6%   |
+| $\frac{1}{3}$  | 0.333... | 33.3...%   |
 | $\frac{1}{5}$  | 0.2      | 20%     |
 | $\frac{1}{9}$  | 0.111... | 11.1%   |
 | $\frac{1}{10}$ | 0.1      | 10%     |

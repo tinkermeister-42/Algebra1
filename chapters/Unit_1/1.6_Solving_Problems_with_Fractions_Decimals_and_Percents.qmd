@@ -4,11 +4,11 @@ Now that you know how to multiply and divide fractions, you're ready to apply th
 
 Fractions, decimals, and percents all show parts of a whole — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
 
-In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score to get an A?”
+In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score on the test to get an A?”
 
 :::{.objectives}
 - [ ] I can use fractions, decimals, and percents to solve real-world problems.
-- [ ] I can find a part, a whole, or a percent in situations like "30 is 10% of what number?"
+- [ ] I can find a part, a whole, or a percent.
 - [ ] I can use percents to solve problems involving grades, sales, and survey results.
 :::
 
@@ -22,11 +22,11 @@ In this lesson, you’ll practice choosing the right form for the situation, est
 
 Use mental math if you can!
 
-1. What is 10% of 60?
+1. Is 10% of 60 bigger or smaller than 30?
 
-2. If a student scores 45 out of 50 points on a test, what percent did they earn?
+2. Is 21 out of 35 a good score on a test?
 
-3. A shirt costs $40. It’s 25% off. What’s the sale price?
+3. What does it mean to say something is on sale for 25% off?
 
 ---
 
@@ -34,7 +34,7 @@ Use mental math if you can!
 
 ### 1.6.1 – What’s the Part, Whole, or Percent?
 
-In many real-world problems, you’re given some information and asked to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
+In many real-world problems, you’re given some information and need to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
 
 These types of problems usually involve three pieces:
 
@@ -115,15 +115,11 @@ $$
 
 So **60%** of students like soccer.
 
-:::{.callout-tip}
-To find a percent, divide the part by the whole, then multiply by 100.
-:::
-
-:::{.you-try title="If 3 out of 100 students get enough sleep, what percent is that?"}
+:::{.you-try title="If 3 out of 75 students get enough sleep, what percent is that?"}
 $$
-\frac{3}{100} = 0.03 = 3\%
+\frac{3}{75} = 0.04 = 4\%
 $$
-So only 3% of students get enough sleep!
+So only 4% of students get enough sleep!
 :::
 
 ---
@@ -177,7 +173,7 @@ $$
 
 #### Grades
 
-Mr. Ross hands you back your Algebra quiz. You got 19 out of 20 points! **What is your grade?**
+Your teacher hands you back your Unit 1 quiz. You got 19 out of 20 points! **What is your grade?**
 
 Grades are given as percentages so we want to figure out what $\frac{19}{20}$ is as a percent.
 
@@ -203,7 +199,7 @@ A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25
 **What’s the new price?**
 
 
-First, find the discount by asking "What is 25% of $60?":
+First, find the {{< glink discount >}} by asking "What is 25% of $60?":
 
 | what | is | 25%  | of | $60? |
 | ---- | -- | ---- | -- | --- |
@@ -228,6 +224,7 @@ Find the discount:
 | what | is | 65%  | of | $300? |
 | ---- | -- | ---- | -- | --- |
 | ?    | =  | 0.65 | ×  | 300  |
+
 $$
 0.65 \times 300 = 195
 $$
@@ -242,7 +239,7 @@ Swanhilda pays $105 for the dress. What a steal!
 
 #### Surveys & Data
 
-A survey of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?
+A {{<glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?
 
 Here we want to know the **whole** when we have a percent. First, convert 75% to a decimal:
 $$
@@ -254,7 +251,11 @@ $$
 $$
 **160 teachers** were surveyed.
 
-:::{.you-try title="A survey asked voters if the support Proposition A. 550 (or 55%) said they do support it. How many voters were surveyed?"}
+:::{.callout-tip}
+To help avoid silly mistakes, ask yourself first, **"What answer do I expect?"**. This will help you decide if your answer you get makes sense.
+:::
+
+:::{.you-try title="If a survey found 550 (or 55%) of students like cucumbers. How many students were surveyed?"}
 First, convert to a decimal:
 $$
 55\% = 0.55
@@ -263,7 +264,7 @@ Then divide:
 $$
 550 \div 0.55 = 1000
 $$
-**1000** voters were surveyed.
+**1000** students were surveyed.
 :::
 ---
 

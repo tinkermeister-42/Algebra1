@@ -20,11 +20,9 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 1. What is half of a half?
 
-2. How many fourths are in one whole?
+2. What happens when you multiply two numbers that are smaller than 1?
 
-3. Predict: What happens when you multiply two numbers that are smaller than 1?
-
-4. If you divide 1 by $\frac{1}{2}$, will the anser be bigger or smaller?
+3. If you divide 1 by $\frac{1}{2}$, will the anser be bigger or smaller?
 
 ---
 
@@ -42,7 +40,7 @@ This means:
 
 Here is what it looks like to find how many fourths are in one half:
 
-![](/images/Unit_1/Lesson_5/fourth_of_a_half.png)
+![](/images/Unit_1/Lesson_5/fourth_of_a_half.png){width=50%}
 
 That blue slice shows one of the four parts of the darker half.  
 Since there are 8 total pieces, and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.
@@ -87,7 +85,7 @@ $$
 Cancel out any common factors:
 $$
 \frac{18}{12}
-= \frac{\cancel{\color{red}2} \times 3 \times \cancel{\color{red}3}}{\cancel{\color{red}2} \times \cancel{\color{red}3} \times 2}
+= \frac{\cancel{\color{red}2} \times (3 \times \cancel{\color{red}3})}{3 \times (\cancel{\color{red}2} \times 2)}
 = \frac{3}{2}
 $$
 
@@ -124,7 +122,7 @@ Then add the numerator:
 $$
 12 + 2 = 14
 $$
-Now we know that there are 14 thirds.
+Now we know that there are 14 thirds in $4\tfrac{2}{3}$.
 $$
 4\tfrac{2}{3} = \frac{14}{3}
 $$
@@ -184,9 +182,9 @@ To divide fractions, multiply by the reciprocal of the {{< glink divisor >}}:
 
 **Example:** $\frac{2}{3} \div \frac{1}{4}$
 $$
-\frac{2}{3} \div \frac{1}{4} = \frac{2}{3} \times \frac{4}{1} = \frac{8}{3}
+\frac{2}{3} \div \frac{1}{4} = \frac{2}{3} \times \frac{\color{red}4}{\color{red}1} = \frac{8}{3}
 $$
-Dividing by  asks, "How many fourths are there in $\frac{2}{3}$?"
+Dividing by $\frac{1}{4}$ asks, "How many fourths are there in $\frac{2}{3}$?"
 
 ---
 
