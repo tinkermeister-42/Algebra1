@@ -1,10 +1,12 @@
-name: Mirror site to Work (diagnostic)
+name: Mirror site to Work Account (gh-pages → prod)
 
 on:
+  push:
+    branches: [gh-pages]
   workflow_dispatch:
     inputs:
       source_ref:
-        description: "Source branch or tag in personal repo"
+        description: "Source branch/tag in personal repo"
         required: false
         default: "gh-pages"
       dest_branch:
@@ -12,46 +14,28 @@ on:
         required: false
         default: "prod"
 
-permissions:
-  contents: read
-
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Show inputs / env
-        run: |
-          echo "SOURCE_REF=${{ inputs.source_ref }}"
-          echo "DEST_BRANCH=${{ inputs.dest_branch }}"
-          echo "WORK_OWNER=${{ secrets.WORK_OWNER }}"
-          echo "WORK_REPO=${{ secrets.WORK_REPO }}"
-          echo "Has WORK_TOKEN? ${{ secrets.WORK_TOKEN != '' }}"
-
-      - name: Checkout source branch
+      - name: Checkout source branch (no persisted creds)
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.source_ref }}
+          ref: ${{ inputs.source_ref || 'gh-pages' }}
           fetch-depth: 0
+          persist-credentials: false   # <-- critical
 
-      - name: Verify source ref exists
+      - name: Clear default GitHub token header (belt & suspenders)
         run: |
-          git rev-parse --abbrev-ref HEAD
-          echo "Listing local branches:"
-          git branch -a
-          echo "Top-level files:"
-          ls -la
-
-      - name: Test auth to work repo (read)
-        run: |
-          set -e
-          echo "Running ls-remote on work repo to verify token and repo path..."
-          git ls-remote https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
+          git config --global --unset-all http.https://github.com/.extraheader || true
 
       - name: Push to work repo
+        env:
+          WORK_URL: https://x-access-token:${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
         run: |
           set -e
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add work https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
-          echo "Pushing ${{ inputs.source_ref }} -> ${{ inputs.dest_branch }} (force)…"
-          git push --force work ${{ inputs.source_ref }}:${{ inputs.dest_branch }}
+          git remote add work "$WORK_URL"
+          echo "Pushing ${{ inputs.source_ref || 'gh-pages' }} -> ${{ inputs.dest_branch || 'prod' }} (force)…"
+          git push --force work ${{ inputs.source_ref || 'gh-pages' }}:${{ inputs.dest_branch || 'prod' }}
