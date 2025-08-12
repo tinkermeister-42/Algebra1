@@ -1,8 +1,18 @@
-name: Mirror site to Work Account
+name: Mirror site to Work Account (gh-pages → prod)
 
 on:
   push:
-    branches: [gh-pages]   # trigger when your personal repo updates gh-pages
+    branches: [gh-pages]
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: "Source branch/tag in personal repo"
+        required: false
+        default: "gh-pages"
+      dest_branch:
+        description: "Destination branch in work repo"
+        required: false
+        default: "prod"
 
 jobs:
   mirror:
@@ -11,13 +21,13 @@ jobs:
       - name: Checkout source branch
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
+          ref: ${{ inputs.source_ref || 'gh-pages' }}
           fetch-depth: 0
 
-      - name: Push to work repo prod branch
+      - name: Push to work repo
         run: |
           set -e
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote add work https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
-          git push --force work gh-pages:prod
+          git push --force work ${{ inputs.source_ref || 'gh-pages' }}:${{ inputs.dest_branch || 'prod' }}
