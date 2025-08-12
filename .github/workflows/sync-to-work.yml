@@ -25,4 +25,33 @@ jobs:
           echo "DEST_BRANCH=${{ inputs.dest_branch }}"
           echo "WORK_OWNER=${{ secrets.WORK_OWNER }}"
           echo "WORK_REPO=${{ secrets.WORK_REPO }}"
-          echo "Has WORK_TOKEN? ${{_
+          echo "Has WORK_TOKEN? ${{ secrets.WORK_TOKEN != '' }}"
+
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref }}
+          fetch-depth: 0
+
+      - name: Verify source ref exists
+        run: |
+          git rev-parse --abbrev-ref HEAD
+          echo "Listing local branches:"
+          git branch -a
+          echo "Top-level files:"
+          ls -la
+
+      - name: Test auth to work repo (read)
+        run: |
+          set -e
+          echo "Running ls-remote on work repo to verify token and repo path..."
+          git ls-remote https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
+
+      - name: Push to work repo
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add work https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
+          echo "Pushing ${{ inputs.source_ref }} -> ${{ inputs.dest_branch }} (force)…"
+          git push --force work ${{ inputs.source_ref }}:${{ inputs.dest_branch }}
