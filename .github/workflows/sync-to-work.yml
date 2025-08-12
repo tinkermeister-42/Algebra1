@@ -1,12 +1,10 @@
-name: Mirror site to Work Account (gh-pages → prod)
+name: Mirror site to Work (diagnostic)
 
 on:
-  push:
-    branches: [gh-pages]
   workflow_dispatch:
     inputs:
       source_ref:
-        description: "Source branch/tag in personal repo"
+        description: "Source branch or tag in personal repo"
         required: false
         default: "gh-pages"
       dest_branch:
@@ -14,20 +12,17 @@ on:
         required: false
         default: "prod"
 
+permissions:
+  contents: read
+
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.source_ref || 'gh-pages' }}
-          fetch-depth: 0
-
-      - name: Push to work repo
+      - name: Show inputs / env
         run: |
-          set -e
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add work https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
-          git push --force work ${{ inputs.source_ref || 'gh-pages' }}:${{ inputs.dest_branch || 'prod' }}
+          echo "SOURCE_REF=${{ inputs.source_ref }}"
+          echo "DEST_BRANCH=${{ inputs.dest_branch }}"
+          echo "WORK_OWNER=${{ secrets.WORK_OWNER }}"
+          echo "WORK_REPO=${{ secrets.WORK_REPO }}"
+          echo "Has WORK_TOKEN? ${{_
