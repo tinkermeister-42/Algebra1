@@ -632,6 +632,20 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 
 ---
 
+### Real number {#glossary-real-number}
+
+A **real number** is any number that can be placed on the **number line**. This includes whole numbers (integers), fractions, and decimals. Some decimals end or repeat (like 2.75 or 0.333…), and some never repeat (like √2 or π). All of these are real numbers.
+
+> **Note:** There are also **imaginary numbers**, like √(-1), which we call **i**. Imaginary numbers are **not** on the number line. When we combine real and imaginary numbers, we get **complex numbers** (numbers in the form *a + bi*). You will hear more about these in Algebra 2!
+
+> **Example:**
+>
+> Real numbers: $-3,\; 0,\; 4.5,\; \frac{3}{7},\; 2.75,\; \sqrt{2},\; \pi$
+>
+> Not real: $\sqrt{-1}=i$, $5+2i$ (complex)
+
+---
+
 ### Reciprocal {#glossary-reciprocal}
 
 The reciprocal of a number is what you **multiply it by to get 1**. You can find it by **flipping the numerator and denominator** of a fraction.
@@ -793,7 +807,17 @@ The whole is the **total amount** — it’s everything being considered before 
 
 ---
 
+### Whole number {#glossary-whole-number}
 
+A **whole number** is a number with **no fractions or decimals**. These are **0, 1, 2, 3, …** (zero and the positive integers). Whole numbers do **not** include negatives, decimals, or fractions. They are a subset of **integers**.
+
+**Note:** Some books use “natural numbers” to mean 1, 2, 3, … (sometimes including 0, sometimes not). “Whole numbers” always include **0**.
+
+> **Example:**
+>
+> Whole: $0,\; 7,\; 12,\; 345$
+>
+> Not whole: $-3$ (negative), $2.5$ (decimal), $\tfrac{3}{4}$ (fraction)
 
 
 

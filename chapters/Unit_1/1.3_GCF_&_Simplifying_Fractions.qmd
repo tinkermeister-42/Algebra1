@@ -40,7 +40,6 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 
    d. $\frac{24}{36}$
 
-
 ---
 
 ## 👥 Learn Together
@@ -538,7 +537,7 @@ $$2 * 2 * 2 = 8$$
 
 In the last section, dividing two numbers showed how to "cancel out" or eliminate shared factors. This is helpful when you want to {{< glink simplify >}} a fraction! 
 
-Simplifying a fraction means rewriting it in its {{< glink simplest form >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1
+Simplifying a fraction means rewriting it in its {{< glink simplest form >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1.
 
 --- 
 
@@ -650,7 +649,7 @@ You don’t want to bake that much — just a smaller, simpler version of the sa
 Let’s treat the ingredients like a {{< glink ratio >}}:
 
 $$
-\frac{36 \text{ cups of flower}}{60 \text{ cups sugar}}
+\frac{36 \text{ cups of flour}}{60 \text{ cups of sugar}}
 $$
  
 This **ratio** tells us how much flour to use per amount of sugar. But the numbers are too big — and a little messy.
@@ -748,13 +747,41 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 9. Two numbers multiply to make 180. Their GCF is 6.
     What could the numbers be?
 
-10. A teacher has 150 pencils and 100 pens. She wants to make gift bags with the same number of each.
-    What is the most gift bags she can make with no leftovers?
+10. A teacher has 150 pencils and 100 pens. She will make gift bags that all have the same number of pencils
+    and the same number of pens. Each bag must have **2 more pencils than pens**. She will use **all** the items.
+    How many bags can she make, and what goes in each bag?
 
 ---
 
 ::: {.answers}
 
+**Warm-Up**
+
+1. Which number do you *think* has the most prime factors? What makes you think so?
+
+   a. 20
+
+   b. 30
+
+   c. 45
+
+   d. 53
+
+2. What’s the largest number that you think might divide **both** 12 and 18 evenly?
+
+3. Here are four fractions. Which one doesn't belong and why?
+
+   a. $\frac{12}{18}$
+
+   b. $\frac{4}{9}$
+
+   c. $\frac{2}{3}$
+
+   d. $\frac{24}{36}$
+
+---
+
+**GCF Practice**
 
 1. 
 
@@ -767,11 +794,14 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
     g. 27
 
 
-2. Example: 30 and 42
+2. Examples: 30 or 42
 
 
 3. The numbers are {{< glink relatively prime >}}. For example: 8 and 15.
 
+---
+
+**Simplifying Fractions**
 
 4. 
 
@@ -787,6 +817,9 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 
 5. No. The numerator and denominator are relatively prime and so nothing can cancel out.
 
+---
+
+**Word Problems**
 
 6. 
 
@@ -796,19 +829,23 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 
 7.
 
-   a. 12 bundles
-   b. 9 pairs of socks and 4 shirts
+   a. 36 bundles
+   b. 3 pairs of socks and 4 shirts
 
 
 8. 
 
    a. 12 jars
-   b.  7 ounces of red paint and 2 ounces of blue paint
+   b.  7 ounces of red paint and 3 ounces of blue paint
 
+---
+
+**Challenge Problems**
 
 9.  30 and 6 or -30 and -6
 
 
-10.  30 gift bags with 3 pencils and 5 pens in each with 10 pencils left over
+10.  25 gift bags; each bag has 6 pencils and 4 pens.
+    (Check: 25×6 = 150 pencils, 25×4 = 100 pens; and 6 − 4 = 2.)
 
 :::
