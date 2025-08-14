@@ -838,14 +838,4 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
    a. 12 jars
    b.  7 ounces of red paint and 3 ounces of blue paint
 
----
-
-**Challenge Problems**
-
-9.  30 and 6 or -30 and -6
-
-
-10.  25 gift bags; each bag has 6 pencils and 4 pens.
-    (Check: 25×6 = 150 pencils, 25×4 = 100 pens; and 6 − 4 = 2.)
-
 :::

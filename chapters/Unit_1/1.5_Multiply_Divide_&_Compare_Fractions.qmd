@@ -295,13 +295,4 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
    b. $\frac{1}{3}$
    c. 8
 
----
-
-**Challenge**
-
-5. $\frac{3}{4}$ and $\frac{1}{2}$
-
-6. 4
-
-
 :::

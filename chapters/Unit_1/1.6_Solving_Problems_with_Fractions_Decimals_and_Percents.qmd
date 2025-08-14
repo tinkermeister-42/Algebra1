@@ -351,12 +351,4 @@ What percent of students are in art class?
 13. 80 chose dogs 
 14. 2000 fidget spinners  
 
----
-
-**Challenge Problems**
-
-15. $41.\overline{6}\%$
-16. $45
-17. Yes. You need at least 97/100 on the exam (total needed: 0.90x425 = 382.5 &Rightarrow; 383; you have 286 now, so 383-286 = 97). If each question is worth 2 points, that means 49 out of 50.
-
 :::

@@ -546,10 +546,5 @@ b.
    d. 3 × 3 × 3 × 3 = 3⁴
    e.  2 × 2 × 2 × 3 × 3 = 2³ × 3²
 
----
-
-**Challenge**
-
-6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
 
 :::

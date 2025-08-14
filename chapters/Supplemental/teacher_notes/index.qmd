@@ -1,0 +1,6 @@
+# Teacher Notes {.unnumbered}
+
+## Solutions to Challenge Problems
+[Unit 1](unit_1/challenge_solutions.qmd)
+
+[Unit 2](unit_2/challenge_solutions.qmd)

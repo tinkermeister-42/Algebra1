@@ -1,0 +1,77 @@
+# Unit 1 Challenge Problem Solutions {.unnumbered} {.unlisted}
+
+## Lesson 1
+
+:::{.answers}
+No Challenge Questions
+:::
+
+## Lesson 2
+
+:::{.answers}
+
+6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
+
+:::
+
+## Lesson 3
+
+:::{.answers}
+
+9.  30 and 6 or -30 and -6
+
+
+10.  25 gift bags; each bag has 6 pencils and 4 pens.
+    (Check: 25×6 = 150 pencils, 25×4 = 100 pens; and 6 − 4 = 2.)
+
+:::
+
+## Lesson 4
+
+:::{.answers}
+
+8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
+
+
+9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
+
+:::
+
+## Lesson 5
+
+:::{.answers}
+
+
+5. $\frac{3}{4}$ and $\frac{1}{2}$
+
+6. 4
+
+:::
+
+
+## Lesson 6
+
+:::{.answers}
+
+15. $41.\overline{6}\%$
+
+16. $45
+
+17. Yes. You need at least 97/100 on the exam (total needed: 0.90x425 = 382.5 &Rightarrow; 383; you have 286 now, so 383-286 = 97). If each question is worth 2 points, that means 49 out of 50.
+
+:::
+
+
+## Lesson 7
+
+:::{.answers}
+
+4. **7**
+
+5. **$\frac{22}{3}$** or **$7\frac{1}{3}$**
+
+6. **29**
+
+7. *Answers will vary*
+
+:::

@@ -483,13 +483,5 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 7. Kai because he scored 80% and the others scored 78% and 76%.
 
----
-
-**Challenge Problems**
-
-8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
-
-
-9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
 
 :::
