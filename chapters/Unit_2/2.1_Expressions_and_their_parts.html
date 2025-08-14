@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -667,7 +696,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-is-a-variable" id="toc-what-is-a-variable" class="nav-link" data-scroll-target="#what-is-a-variable">2.1.1 – What Is a Variable?</a></li>
   <li><a href="#what-is-an-expression" id="toc-what-is-an-expression" class="nav-link" data-scroll-target="#what-is-an-expression">2.1.2 – What Is an Expression?</a></li>
   <li><a href="#terms-coefficients-and-constants" id="toc-terms-coefficients-and-constants" class="nav-link" data-scroll-target="#terms-coefficients-and-constants">2.1.3 – Terms, Coefficients, and Constants</a></li>
-  <li><a href="#writing-expressions-for-situations" id="toc-writing-expressions-for-situations" class="nav-link" data-scroll-target="#writing-expressions-for-situations">2.1.4 – Writing Expressions for Situations</a></li>
+  <li><a href="#reading-expressions-in-words" id="toc-reading-expressions-in-words" class="nav-link" data-scroll-target="#reading-expressions-in-words">2.1.4 – Reading Expressions in Words</a></li>
+  <li><a href="#writing-expressions-for-situations" id="toc-writing-expressions-for-situations" class="nav-link" data-scroll-target="#writing-expressions-for-situations">2.1.5 – Writing Expressions for Situations</a></li>
+  <li><a href="#concept-lab-build-an-expression" id="toc-concept-lab-build-an-expression" class="nav-link" data-scroll-target="#concept-lab-build-an-expression">2.1.6 – Concept Lab: Build an Expression</a></li>
+  <li><a href="#common-misconceptions" id="toc-common-misconceptions" class="nav-link" data-scroll-target="#common-misconceptions">2.1.7 – Common Misconceptions</a></li>
   </ul></li>
   <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✍️ Practice On Your Own</a></li>
   </ul>
@@ -726,134 +758,237 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
 <section id="what-is-a-variable" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-a-variable">2.1.1 – What Is a Variable?</h3>
-<p>Numbers are very important in math. But sometimes, when trying to solve a problem or describe a situation, a way to talk about a number that is not known yet, or a number that can change, is needed. To do this, something special called a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a> is used.</p>
-<p>A variable is a letter or <a href="../../glossary.html#glossary-symbol" class="glossary-link" data-term="symbol" data-original-term="symbol">symbol</a> used to represent an unknown or changing number. Any symbol can be used for a variable but, in Algebra, the most common symbol we will use is the letter <strong>x</strong>.</p>
-<p>Think of a <strong>x</strong> as the label on a mystery box. You know the box holds a number inside, but you don’t know which number it is yet!</p>
+<p>Sometimes we need to talk about a number we don’t know yet—or one that can change. For that, we use a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a>.</p>
+<p>A variable is a letter or <a href="../../glossary.html#glossary-symbol" class="glossary-link" data-term="symbol" data-original-term="symbol">symbol</a> that stands for an unknown or changing number. You can use many letters, but in algebra we most often use <strong>x</strong>.</p>
+<p>Think of an <strong>x</strong> as the label on a mystery box. You know the box holds a number inside, but you don’t know which number it is yet!</p>
+<p><strong>Example:</strong></p>
+<p>You work at a grocery store. Your boss hands you a stack of labels and points to some apple boxes: “Write how many apples are in each box.”</p>
+<p>You pick up a sealed box. You can’t see inside, so you write x on the label — x stands for “the number of apples in this box (unknown).”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../images/Unit_2/variable.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+<p><img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
 </figure>
 </div>
-<p>Let’s look at some examples:</p>
-<p>Example: Imagine you have some apples, but you don’t know exactly how many. You can use the letter a as a placeholder for the number of apples you have. If you get 5 more apples, the number of apples you have now can be shown as: a + 5 Suggested Visual: Instead of: a number machine, which might be too abstract. Try: A simple drawing of a box with a question mark on it, and the letter ‘a’ written next to it. Then draw 5 more apples next to the box. This approach uses a concrete analogy (“mystery box”), avoids jargon initially, and immediately connects the concept to a tangible object (apples). It also sets up the next examples with a clear, relatable scenario. Remember to speak slowly and clearly when introducing these concepts. You can also invite students to offer other real-world examples of quantities that can change or be unknown.</p>
+<p>Your boss isn’t satisfied and says, “Check inside.” You open the box and peek: there are 3 apples.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_2/Lesson_1/AppleBoxOpen.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+</figure>
+</div>
+<p>Now that you know the number, you change the label to 3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_2/Lesson_1/AppleBox3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+</figure>
+</div>
+<p>Before you opened it, x was a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a>—a placeholder for an unknown number. After you looked, you found <span class="math inline">\(x = 3\)</span>, so you replaced the variable with the number.</p>
+<hr>
 </section>
 <section id="what-is-an-expression" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-an-expression">2.1.2 – What Is an Expression?</h3>
-<p>An <strong>expression</strong> is a math phrase that combines numbers, variables, and operations — <strong>but no equal sign</strong>.</p>
-<p>Examples of expressions: - (3x + 5)<br>
-- (x - 7)<br>
-- $((y + 4)$</p>
-<p>These expressions tell us something — like a rule, or a situation — but they don’t make a claim about what the answer is.</p>
+<p>An <strong>expression</strong> is a math phrase made of numbers, variables, and <a href="../../glossary.html#glossary-operation" class="glossary-link" data-term="operation" data-original-term="operations">operations</a> — <strong>but no equal sign</strong>.</p>
+<p><strong>Examples (expressions):</strong></p>
+<ul>
+<li><span class="math inline">\(3x + 5\)</span></li>
+<li><span class="math inline">\(x - 7\)</span></li>
+<li><span class="math inline">\(\tfrac{1}{2}(y + 4)\)</span></li>
+<li><span class="math inline">\(4(a - 3)\)</span></li>
+</ul>
+<p><strong>Not expressions (these make a claim):</strong></p>
+<ul>
+<li><span class="math inline">\(3x + 5 = 20\)</span> <em>(has an equals sign → an equation)</em></li>
+<li><span class="math inline">\(x &gt; 7\)</span> <em>(comparison)</em></li>
+</ul>
+<div class="gotcha" title="Where did the multiply sign go?">
+<p>In algebra we often multiply by just <strong>putting things next to each other</strong>. We call this <strong>multiplication by proximity</strong>.</p>
+<ul>
+<li><span class="math inline">\(3x\)</span> means <span class="math inline">\(3 \times x\)</span></li>
+<li><span class="math inline">\(4(a-3)\)</span> means <span class="math inline">\(4 \times (a-3)\)</span></li>
+</ul>
+</div>
+<div class="real-world">
+<p><strong>Price × quantity:</strong> If stickers cost $0.50 each and you buy <span class="math inline">\(s\)</span> stickers, the cost is <span class="math inline">\(0.50s\)</span>. That’s multiplication by proximity in the wild.</p>
+</div>
+<div class="visual-note">
+<p><strong>Visual idea:</strong> Two columns “Expression / Not an Expression.” On the right, highlight the equals sign in color. On the left, show <span class="math inline">\(3x\)</span> with a tiny label “proximity = multiply.”</p>
+</div>
 <hr>
 </section>
 <section id="terms-coefficients-and-constants" class="level3">
 <h3 class="anchored" data-anchor-id="terms-coefficients-and-constants">2.1.3 – Terms, Coefficients, and Constants</h3>
-<p>Take a look at this expression:</p>
-<p>[ 4x + 2y - 7 ]</p>
-<p>Let’s break it down:</p>
+<p>Consider:</p>
+<p><span class="math display">\[
+4x + 2y - 7
+\]</span></p>
 <ul>
-<li><strong>Terms</strong> are the parts separated by + or –:<br>
-→ (4x), (2y), and (-7)<br>
-</li>
-<li>A <strong>coefficient</strong> is the number in front of a variable:<br>
-→ 4 is the coefficient of (x); 2 is the coefficient of (y)<br>
-</li>
-<li>A <strong>constant</strong> is a number that doesn’t change:<br>
-→ (-7) is a constant</li>
+<li><strong>Terms</strong> are the chunks separated by <span class="math inline">\(+\)</span> or <span class="math inline">\(-\)</span>: <span class="math inline">\(4x\)</span>, <span class="math inline">\(2y\)</span>, <span class="math inline">\(-7\)</span>.</li>
+<li>A <strong>coefficient</strong> tells “how many copies of the variable”: 4 is the coefficient of <span class="math inline">\(x\)</span>; 2 is the coefficient of <span class="math inline">\(y\)</span>.</li>
+<li>A <strong>constant</strong> is a number that doesn’t change: <span class="math inline">\(-7\)</span>.</li>
 </ul>
-<blockquote class="blockquote">
-<p><em>Suggested visual: Expression with labeled arrows or color-coded parts</em></p>
-</blockquote>
+<div class="remember">
+<ul>
+<li>The <strong>sign in front</strong> belongs to the term → the last term here is <strong><span class="math inline">\(-7\)</span></strong>.</li>
+<li>A lone variable has an <strong>implied coefficient of 1</strong>. Examples: coefficient of <span class="math inline">\(x\)</span> is <span class="math inline">\(1\)</span>; coefficient of <span class="math inline">\(-y\)</span> is <span class="math inline">\(-1\)</span>.</li>
+</ul>
+</div>
+<div class="visual-note">
+<p><strong>Visual idea:</strong> Show <span class="math inline">\(4x + 2y - 7\)</span>. Circle each term, box the coefficients, underline the constant. Add a mini-example <span class="math inline">\(-y + 9\)</span> to spotlight the <strong>coefficient <span class="math inline">\(-1\)</span></strong> idea.</p>
+</div>
+<div class="you-try" data-collapse="true" title="📝 Label the parts in $9 - 3x + y$. What are the terms, coefficients, and constant?">
+<p><strong>Answer:</strong> terms: <span class="math inline">\(9\)</span>, <span class="math inline">\(-3x\)</span>, <span class="math inline">\(y\)</span>; coefficients: <span class="math inline">\(x \to -3\)</span>, <span class="math inline">\(y \to 1\)</span>; constant: <span class="math inline">\(9\)</span>.</p>
+</div>
 <hr>
-<div class="you-try" data-collapse="true" title="📝 Try It Yourself!">
-<p>Label the parts of each expression.</p>
-<ol type="1">
-<li>(5x + 2)<br>
-</li>
-<li>(3a + 4b - 9)<br>
-</li>
-<li>$(y + 6$</li>
-<li>(9 - 2x)</li>
-</ol>
-<p>For each:<br>
-- Identify the terms<br>
-- Label the coefficients and constants</p>
+</section>
+<section id="reading-expressions-in-words" class="level3">
+<h3 class="anchored" data-anchor-id="reading-expressions-in-words">2.1.4 – Reading Expressions in Words</h3>
+<p>Expressions are short stories.</p>
+<ul>
+<li><span class="math inline">\(10h\)</span>: “$10 <strong>per hour</strong> for <span class="math inline">\(h\)</span> hours.”</li>
+<li><span class="math inline">\(s + 15\)</span>: “start at speed <span class="math inline">\(s\)</span>, then increase by 15.”</li>
+<li><span class="math inline">\(5x\)</span>: “5 in each group, <span class="math inline">\(x\)</span> groups.”</li>
+<li><span class="math inline">\(2(x + 3)\)</span>: “double the amount <strong>after</strong> adding 3.”</li>
+</ul>
+<div class="gotcha" title="Order in words matters">
+<ul>
+<li>“Twice a number <strong>increased by 3</strong>” → <span class="math inline">\(2x + 3\)</span></li>
+<li>“Twice <strong>the number increased by 3</strong>” → <span class="math inline">\(2(x + 3)\)</span> Those are <strong>not</strong> the same.</li>
+</ul>
+</div>
+<div class="real-world">
+<p><strong>Step then scale:</strong> A club charges a $5 sign-up fee and then doubles your donation. If you donate <span class="math inline">\(d\)</span>, the club adds $5 first, then doubles: <span class="math inline">\(2(d + 5)\)</span>.</p>
+</div>
+<div class="you-try" data-collapse="true" title="Say $3(y-2)$ in words. What happens first? What happens next?">
+<p><strong>Answer:</strong> “Take <span class="math inline">\(y\)</span>, subtract 2, <strong>then</strong> triple the result.” First subtract, then multiply.</p>
 </div>
 <hr>
 </section>
 <section id="writing-expressions-for-situations" class="level3">
-<h3 class="anchored" data-anchor-id="writing-expressions-for-situations">2.1.4 – Writing Expressions for Situations</h3>
-<p>Now let’s try going from a real-world situation to an expression.</p>
-<blockquote class="blockquote">
-<p><strong>Examples:</strong></p>
+<h3 class="anchored" data-anchor-id="writing-expressions-for-situations">2.1.5 – Writing Expressions for Situations</h3>
+<p>From situation → expression:</p>
 <ul>
-<li>You earn $10 per hour. After (h) hours, you’ve earned:<br>
-→ (10h)<br>
-</li>
-<li>A car’s speed increases by 15 miles per hour:<br>
-→ (s + 15)<br>
-</li>
-<li>A box holds 5 pencils. How many pencils in (x) boxes?<br>
-→ (5x)</li>
+<li>You have <strong>3 more apples</strong> than your friend, who has <span class="math inline">\(x\)</span>. → <span class="math inline">\(x + 3\)</span></li>
+<li>A shirt costs $12. You buy <span class="math inline">\(n\)</span> shirts. → <span class="math inline">\(12n\)</span> <em>(multiplication by proximity)</em></li>
+<li>A plant is <strong>8 inches</strong> tall and grows <span class="math inline">\(g\)</span> inches each day. → <span class="math inline">\(8 + g\)</span></li>
+<li>You spend $20 and then buy <strong>2 items</strong> that cost <span class="math inline">\(x\)</span> each. → <span class="math inline">\(20 + 2x\)</span></li>
 </ul>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Note: These kinds of expressions will help when we study input/output and functions later.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="💭 Create Expressions">
-<p>Write an expression for each situation:</p>
-<ol type="1">
-<li>You have 3 more apples than your friend, who has (x).<br>
-</li>
-<li>A shirt costs $12. You buy (n) shirts.<br>
-</li>
-<li>A plant is 8 inches tall and grows (g) inches each day.<br>
-</li>
-<li>You spend $20 and then buy 2 items that cost (x) each.</li>
-</ol>
-<blockquote class="blockquote">
-<p>Be ready to explain what each part of your expression means!</p>
-</blockquote>
+<div class="real-world">
+<p><strong>Travel:</strong> A bus goes 45 miles per hour. After <span class="math inline">\(t\)</span> hours, the distance is <span class="math inline">\(45t\)</span>. That’s proximity multiplication again (speed × time).</p>
 </div>
+<div class="you-try" data-collapse="true" title="A taxi charges a $3 start fee plus $2 per mile for $m$ miles. Write an expression.">
+<p><strong>Answer:</strong> <span class="math inline">\(3 + 2m\)</span>.</p>
+</div>
+<div class="you-try" data-collapse="true" title="A rectangle has length $L$. Its width is 3 less than its length. Write the width and the perimeter.">
+<p><strong>Answer:</strong> width <span class="math inline">\(= L - 3\)</span>; perimeter <span class="math inline">\(= 2L + 2(L - 3) = 4L - 6\)</span>.</p>
+</div>
+<hr>
+</section>
+<section id="concept-lab-build-an-expression" class="level3">
+<h3 class="anchored" data-anchor-id="concept-lab-build-an-expression">2.1.6 – Concept Lab: Build an Expression</h3>
+<p>We’ll <em>build</em> expressions from pieces to feel what each part means. (Tiles, paper strips, or quick sketches work great.)</p>
+<ol type="1">
+<li>“Three <span class="math inline">\(x\)</span>’s and two more.” Arrange <strong><span class="math inline">\(x, x, x, 1, 1\)</span></strong>. Write: <span class="math inline">\(3x + 2\)</span>.</li>
+<li>“Double the amount after adding 4.” Build <strong><span class="math inline">\(x, 1, 1, 1, 1\)</span></strong>; then duplicate the group. Write: <span class="math inline">\(2(x+4)\)</span>.</li>
+<li>“Start at 10, then lose 2 each game for <span class="math inline">\(g\)</span> games.” Write: <span class="math inline">\(10 - 2g\)</span>.</li>
+</ol>
+<div class="visual-note">
+<p><strong>Visual idea:</strong> A photo/diagram of (a) <span class="math inline">\(3x+2\)</span> arranged with tiles, (b) two identical groups for <span class="math inline">\(2(x+4)\)</span>. Minimal labels so students do the talking.</p>
+</div>
+<hr>
+</section>
+<section id="common-misconceptions" class="level3">
+<h3 class="anchored" data-anchor-id="common-misconceptions">2.1.7 – Common Misconceptions</h3>
+<ul>
+<li><strong>Don’t add a ‘×’</strong>: <span class="math inline">\(3x\)</span> already means multiply (multiplication by proximity).</li>
+<li><strong>Sign goes with the term</strong>: in <span class="math inline">\(9 - 2x\)</span>, the second term is <span class="math inline">\(-2x\)</span>.</li>
+<li><strong>“Less than” flips order</strong>: “6 fewer than a number” → <span class="math inline">\(x - 6\)</span>, not <span class="math inline">\(6 - x\)</span>.</li>
+<li><strong>Coefficient ≠ exponent</strong>: in <span class="math inline">\(4x^2\)</span>, 4 is the coefficient; the 2 is an exponent (“square”).</li>
+</ul>
 <hr>
 </section>
 </section>
 <section id="practice-on-your-own" class="level2">
 <h2 class="anchored" data-anchor-id="practice-on-your-own">✍️ Practice On Your Own</h2>
+<p><strong>Identify the Parts</strong></p>
+<p>For each, list <strong>terms</strong>, give the <strong>coefficient</strong> for each variable, and the <strong>constant(s)</strong>.</p>
 <ol type="1">
-<li>Label all parts of this expression: (7x - 5)<br>
-</li>
-<li>Identify the terms in this expression: (3a + 4b - 9)<br>
-</li>
-<li>What is the coefficient of (y) in this expression: (5x + 2y - 6)?<br>
-</li>
-<li>Write an expression for:
-<ol type="a">
-<li>“6 fewer than a number”<br>
-</li>
-<li>“Twice a number increased by 3”<br>
-</li>
-</ol></li>
-<li>Create your own expression to describe this:<br>
-“Each item costs $4. You also pay a $2 delivery fee.”</li>
+<li><span class="math inline">\(7x - 5\)</span></li>
+<li><span class="math inline">\(3a + 4b - 9\)</span></li>
+<li><span class="math inline">\(5x + 2y - 6\)</span></li>
+<li><span class="math inline">\(-y + 12\)</span></li>
+<li><span class="math inline">\(\tfrac{1}{2}m + 4 - 3n\)</span></li>
+</ol>
+<hr>
+<p><strong>Say It in Words</strong></p>
+<p>Write a short sentence (in your own words) for each expression.</p>
+<ol start="6" type="1">
+<li><span class="math inline">\(9 + t\)</span></li>
+<li><span class="math inline">\(0.5x\)</span></li>
+<li><span class="math inline">\(4(n - 1)\)</span></li>
+<li><span class="math inline">\(3p + 7\)</span></li>
+<li><span class="math inline">\(2(x+3)\)</span></li>
+</ol>
+<hr>
+<p><strong>From Situation to Expression</strong></p>
+<ol start="11" type="1">
+<li>You have <span class="math inline">\(x\)</span> stickers. Your friend gives you 6 more.</li>
+<li>A gym costs $20 to join plus $8 per month for <span class="math inline">\(m\)</span> months.</li>
+<li>A tank starts with 50 liters and drains 3 liters each minute for <span class="math inline">\(t\)</span> minutes.</li>
+<li>A rectangle’s width is <span class="math inline">\(w\)</span>; its length is 5 more than its width. (Write length and perimeter.)</li>
+<li>A phone plan includes 2 GB free, then charges $5 per extra GB <span class="math inline">\(g\)</span>.</li>
+</ol>
+<hr>
+<p><strong>Match the Story to the Expression</strong></p>
+<p><strong>Stories</strong> a) “Double the amount after adding 2.” b) “Start at 10, then subtract 3 each day <span class="math inline">\(d\)</span>.” c) “$4 per ticket for <span class="math inline">\(t\)</span> tickets, plus a $6 fee.” d) “Three groups of <span class="math inline">\(x\)</span>, then add 1.” e) “Half of <span class="math inline">\(m\)</span>, then add 5.”</p>
+<p><strong>Expressions</strong> A) <span class="math inline">\(2(x+2)\)</span> B) <span class="math inline">\(10-3d\)</span> C) <span class="math inline">\(4t+6\)</span> D) <span class="math inline">\(3x+1\)</span> E) <span class="math inline">\(\tfrac12 m+5\)</span></p>
+<hr>
+<p><strong>Which One Doesn’t Belong?</strong></p>
+<ol start="16" type="1">
+<li><span class="math inline">\(2x+6\)</span>  <span class="math inline">\(2(x+3)\)</span>  <span class="math inline">\(x+x+6\)</span>  <span class="math inline">\(x+3+x+3\)</span></li>
+<li><span class="math inline">\(5n-2\)</span>  <span class="math inline">\(5(n-2)\)</span>  <span class="math inline">\(n+n+n+n+n-2\)</span>  <span class="math inline">\(5(n+2)\)</span></li>
+</ol>
+<hr>
+<p><strong>Error Analysis</strong></p>
+<ol start="18" type="1">
+<li>A student says the coefficient of <span class="math inline">\(y\)</span> in <span class="math inline">\(-y+9\)</span> is 0 because there’s no number in front. What would you say?</li>
+<li>A student writes “6 fewer than a number” as <span class="math inline">\(6-x\)</span>. Explain and correct it.</li>
+<li>A student says <span class="math inline">\(2x+3\)</span> and <span class="math inline">\(2(x+3)\)</span> mean the same thing. Give a counterexample by choosing a value of <span class="math inline">\(x\)</span>.</li>
+</ol>
+<hr>
+<p><strong>Real-World Mix</strong></p>
+<ol start="21" type="1">
+<li><strong>Shopping:</strong> Each notebook costs $5 and you also buy one binder for $2. Write two different expressions for the total with <span class="math inline">\(n\)</span> notebooks.</li>
+<li><strong>Reading goal:</strong> You start with 7 points and earn 0.25 points per hour <span class="math inline">\(h\)</span>. Write an expression.</li>
+<li><strong>Road trip:</strong> A car travels 60 miles per hour. How far in <span class="math inline">\(t\)</span> hours? What if the car already started 30 miles ahead?</li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="24" type="1">
+<li>Two different stories lead to the <strong>same expression</strong>. Create <strong>two</strong> real-world stories that both match <span class="math inline">\(2x + 6\)</span>. Explain why they both fit.</li>
+<li>Find a value of <span class="math inline">\(x\)</span> that makes <span class="math inline">\(2x + 3 = 2(x + 3)\)</span> <strong>false</strong> and explain what this shows about order and grouping.</li>
 </ol>
 <hr>
 <div class="answers">
+<p><strong>A. Identify the Parts</strong></p>
 <ol type="1">
-<li>Terms: (7x), (-5); Coefficient: 7; Constant: (-5)<br>
-</li>
-<li>(3a), (4b), (-9)<br>
-</li>
-<li>Coefficient of (y) is 2<br>
-</li>
-<li><ol type="a">
-<li>(x - 6)<br>
-</li>
-<li>(2x + 3)<br>
-</li>
-</ol></li>
-<li>(4x + 2) <em>(Answers may vary slightly)</em></li>
+<li>terms: <span class="math inline">\(7x\)</span>, <span class="math inline">\(-5\)</span>; coeff: <span class="math inline">\(x\to 7\)</span>; constant: <span class="math inline">\(-5\)</span></li>
+<li>terms: <span class="math inline">\(3a\)</span>, <span class="math inline">\(4b\)</span>, <span class="math inline">\(-9\)</span>; coeffs: <span class="math inline">\(a\to 3\)</span>, <span class="math inline">\(b\to 4\)</span>; constant: <span class="math inline">\(-9\)</span></li>
+<li>terms: <span class="math inline">\(5x\)</span>, <span class="math inline">\(2y\)</span>, <span class="math inline">\(-6\)</span>; coeffs: <span class="math inline">\(x\to 5\)</span>, <span class="math inline">\(y\to 2\)</span>; constant: <span class="math inline">\(-6\)</span></li>
+<li>terms: <span class="math inline">\(-y\)</span>, <span class="math inline">\(12\)</span>; coeff: <span class="math inline">\(y\to -1\)</span>; constant: <span class="math inline">\(12\)</span></li>
+<li>terms: <span class="math inline">\(\tfrac12 m\)</span>, <span class="math inline">\(4\)</span>, <span class="math inline">\(-3n\)</span>; coeffs: <span class="math inline">\(m\to \tfrac12\)</span>, <span class="math inline">\(n\to -3\)</span>; constant: <span class="math inline">\(4\)</span></li>
+</ol>
+<p><strong>B. Words</strong> <em>(sample)</em> 6) add 9 to <span class="math inline">\(t\)</span> 7) half of <span class="math inline">\(x\)</span> 8) four times one less than <span class="math inline">\(n\)</span> 9) three times <span class="math inline">\(p\)</span>, then add 7 10) double the amount after adding 3</p>
+<p><strong>C. Situations</strong> 11) <span class="math inline">\(x+6\)</span> 12) <span class="math inline">\(20+8m\)</span> 13) <span class="math inline">\(50-3t\)</span> 14) length <span class="math inline">\(= w+5\)</span>; perimeter <span class="math inline">\(= 2w + 2(w+5) = 4w+10\)</span> 15) <span class="math inline">\(2+5g\)</span></p>
+<p><strong>D. Match</strong> a→A, b→B, c→C, d→D, e→E</p>
+<p><strong>E. WODB</strong> <em>(many answers okay—justify!)</em> 16) All four are equivalent to <span class="math inline">\(2x+6\)</span> → you could say “none doesn’t belong,” or pick one and justify. 17) <span class="math inline">\(5(n-2)=5n-10\)</span> differs from the others (which equal <span class="math inline">\(5n-2\)</span> or <span class="math inline">\(5n+10\)</span>).</p>
+<p><strong>F. Error Analysis</strong> 18) The coefficient is <span class="math inline">\(-1\)</span> in <span class="math inline">\(-y\)</span>; a lone variable has an implied 1, and the sign belongs to the term. 19) “6 fewer than a number” means <em>take 6 away from the number</em> → <span class="math inline">\(x-6\)</span>, not <span class="math inline">\(6-x\)</span>. 20) Try <span class="math inline">\(x=1\)</span>: <span class="math inline">\(2x+3=5\)</span> but <span class="math inline">\(2(x+3)=8\)</span>. Not the same.</p>
+<p><strong>G. Real-World Mix</strong> 21) <span class="math inline">\(5n+2\)</span> and <span class="math inline">\(2+5n\)</span> 22) <span class="math inline">\(7+0.25h\)</span> 23) distance <span class="math inline">\(= 60t\)</span>; with a 30-mile head start: <span class="math inline">\(30+60t\)</span></p>
+<p><strong>Challenge</strong> 24) sample stories:</p>
+<ul>
+<li>“Buy <span class="math inline">\(x\)</span> movie tickets at $2 each and a $6 service fee” → <span class="math inline">\(2x+6\)</span></li>
+<li>“Two packs of snacks at $x each, plus $6 delivery” → <span class="math inline">\(2x+6\)</span> Both describe “two times something, then add six,” so both fit.</li>
+</ul>
+<ol start="25" type="1">
+<li>e.g., <span class="math inline">\(x=1\)</span>: <span class="math inline">\(2x+3=5\)</span> but <span class="math inline">\(2(x+3)=8\)</span> → not equal. This shows <strong>grouping</strong> changes the meaning: <span class="math inline">\(2x+3\)</span> is “double <span class="math inline">\(x\)</span>, then add 3,” while <span class="math inline">\(2(x+3)\)</span> is “add 3, then double.”</li>
 </ol>
 </div>
 
