@@ -1,0 +1,61 @@
+name: Mirror site to Work (diagnostic)
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: "Source branch or tag in personal repo"
+        required: false
+        default: "gh-pages"
+      dest_branch:
+        description: "Destination branch in work repo"
+        required: false
+        default: "prod"
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo inputs and secret presence
+        run: |
+          echo "SOURCE_REF=${{ inputs.source_ref }}"
+          echo "DEST_BRANCH=${{ inputs.dest_branch }}"
+          echo "WORK_OWNER=${{ secrets.WORK_OWNER }}"
+          echo "WORK_REPO=${{ secrets.WORK_REPO }}"
+          if [ -n "${{ secrets.WORK_TOKEN }}" ]; then echo "WORK_TOKEN present: yes"; else echo "WORK_TOKEN present: NO"; fi
+
+      - name: Checkout source ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref }}
+          fetch-depth: 0
+
+      - name: Verify source ref exists and has commits
+        run: |
+          echo "HEAD ref:"
+          git rev-parse --abbrev-ref HEAD || true
+          echo "Show commit:"
+          git log -1 --oneline || { echo "No commits on source ref"; exit 128; }
+          echo "List branches:"
+          git branch -a
+
+      - name: Verify token can see destination repo (ls-remote)
+        run: |
+          set -e
+          echo "Checking remote visibility…"
+          git ls-remote https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git >/dev/null
+          echo "OK: repo visible with token."
+
+      - name: Push to work repo (force)
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add work https://${{ secrets.WORK_TOKEN }}@github.com/${{ secrets.WORK_OWNER }}/${{ secrets.WORK_REPO }}.git
+          echo "Pushing ${{ inputs.source_ref }} -> ${{ inputs.dest_branch }} (force)…"
+          # create dest branch if it doesn't exist yet
+          git push --force work ${{ inputs.source_ref }}:${{ inputs.dest_branch }}
+          echo "Push succeeded."

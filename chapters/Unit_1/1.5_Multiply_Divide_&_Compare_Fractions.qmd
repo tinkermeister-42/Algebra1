@@ -11,7 +11,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 :::
 
 :::{.vocab}
-{{< glink improper fraction >}}, {{< glink mixed number >}}, {{< glink reciprocal >}}
+{{< glink divisor >}}, {{< glink improper fraction >}}, {{< glink mixed number >}}, {{< glink reciprocal >}}
 :::
 
 ---
@@ -20,9 +20,9 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 1. What is half of a half?
 
-2. What happens when you multiply two numbers that are smaller than 1?
+2. What happens when you multiply two, positive numbers that are smaller than 1?
 
-3. If you divide 1 by $\frac{1}{2}$, will the anser be bigger or smaller?
+3. If you divide 1 by $\frac{1}{2}$, will the answer be bigger or smaller?
 
 ---
 
@@ -59,7 +59,7 @@ $$
 $$
 :::
 
-#### **Multipying Whole Numbers by Fractions**
+#### **Multiplying Whole Numbers by Fractions**
 
 No denominator? No problem! Just put a 1 underneath:
 
@@ -85,7 +85,7 @@ $$
 Cancel out any common factors:
 $$
 \frac{18}{12}
-= \frac{\cancel{\color{red}2} \times (3 \times \cancel{\color{red}3})}{3 \times (\cancel{\color{red}2} \times 2)}
+= \frac{\cancel{\color{red}2} \times (3 \times \cancel{\color{red}3})}{\cancel{\color{red}3} \times (\cancel{\color{red}2} \times 2)}
 = \frac{3}{2}
 $$
 
@@ -128,15 +128,15 @@ $$
 $$
 Now we are ready to multiply:
 $$
-\frac{14}{3} \times \frac{2}{3} = \frac{28}{9}
+\frac{14}{3} \times \frac{5}{6} = \frac{35}{9}
 $$
 Sometimes we need to **convert back** to a mixed number. Here is how we do that:
 
 First, **divide**: 
 $$
-28 \div 9 = 3 \text{ remainder 1}
+35 \div 9 = 3 \text{ remainder 8}
 $$
-Now we know we have 3 wholes and 1 remaining ninth. Together that is $3 \tfrac{1}{9}$.
+Now we know we have 3 wholes and 8 remaining ninths. Together that is $3 \tfrac{8}{9}$.
 
 ---
 
@@ -164,7 +164,7 @@ $$
 
 :::{.you-try title="$3 \tfrac{2}{3} \times 4 \tfrac{1}{2}$"}
 $$
-3 \tfrac{2}{3} \times 4 \tfrac{1}{8} = \frac{11}{3} \times \frac{9}{2} = \frac{11 \times (\cancel{\color{red}3} \times 3)}{\cancel{\color{red}3} \times 2} = \frac{33}{2} = 8 \frac{1}{2}
+3 \tfrac{2}{3} \times 4 \tfrac{1}{2} = \frac{11}{3} \times \frac{9}{2} = \frac{11 \times (\cancel{\color{red}3} \times 3)}{\cancel{\color{red}3} \times 2} = \frac{33}{2} = 16 \frac{1}{2}
 $$
 :::
 
@@ -198,9 +198,14 @@ Dividing fractions is as easy as 1-2-3:
 
 :::
 
+:::{.gotcha}
+Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to an improper fraction before taking the reciprocal.
+:::
 ---
 
 ## ✍️ Practice On Your Own
+
+**Multiply and Divide Fractions**
 
 1. Multiply:
 
@@ -223,7 +228,12 @@ Dividing fractions is as easy as 1-2-3:
    c. $\frac{5}{6} \div \frac{1}{3}$  
    d. $\frac{7}{8} \div \frac{7}{8}$  
 
-4. Word Problems:
+
+---
+
+**Word Problems**
+
+4. Answer these questions using what you've learned:
 
    a. You have $\frac{3}{4}$ of a pie. If you give everyone $\frac{1}{8}$ of a pie, how many people can you serve?
 
@@ -239,10 +249,21 @@ Dividing fractions is as easy as 1-2-3:
 
 6. A pancake recipe calls for $2\tfrac{1}{4}$ cups of sugar per batch. If you have exactly 9 cups of sugar, what is the greatest number of full batches you can make?
 
-
 ---
 
 ::: {.answers}
+
+**Warm-Up**
+
+1. $\frac{1}{4}$
+
+2. Their product is smaller than either number (closer to zero).
+
+3. Bigger, the answer will be 2.
+
+---
+
+**Multiply and Divide Fractions**
 
 1. Multiply:
 
@@ -265,11 +286,18 @@ Dividing fractions is as easy as 1-2-3:
    c. $\frac{5}{2}$
    d. 1
 
-4. Word Problems:
+---
 
+**Word Problems**
+
+4. 
    a. 6
    b. $\frac{1}{3}$
    c. 8
+
+---
+
+**Challenge**
 
 5. $\frac{3}{4}$ and $\frac{1}{2}$
 

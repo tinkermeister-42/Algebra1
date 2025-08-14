@@ -62,7 +62,7 @@ book:
 
     - part: "Unit 2: Algebraic Expressions"
       chapters:
-        - file: chapters/Unit_2/index.md
+        - file: chapters/Unit_2/index.qmd
         - file: chapters/Unit_2/2.1_Expressions_and_their_parts.qmd
         - file: chapters/Unit_2/2.2_Evaluating_expressions.qmd
         - file: chapters/Unit_2/2.3_Combining_like_terms.qmd

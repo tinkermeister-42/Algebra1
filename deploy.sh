@@ -7,7 +7,7 @@ TEMP_WORKTREE_DIR="../gh-pages-temp"
 ORIGINAL_DIR=$(pwd)
 
 echo "📘 Building the book..."
-quarto render
+quarto render --to html
 
 echo "🌿 Preparing temp worktree for $DEPLOY_BRANCH..."
 rm -rf $TEMP_WORKTREE_DIR

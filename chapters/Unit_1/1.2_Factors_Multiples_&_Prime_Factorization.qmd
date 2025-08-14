@@ -40,7 +40,7 @@ A {{< glink factor >}} of a number is a whole number that divides it evenly — 
 
 **Example:**
 
-The factors of 12 are: 1, 2, 3, 4, 6 and 2
+The factors of 12 are: 1, 2, 3, 4, 6 and 12
 
 That’s because:
 
@@ -68,7 +68,7 @@ $5, 10, 15, 20, 25, 30, ...$
 
 **Where have we seen this before?**
 
-Multiples show up all over the place. When you {{< glink skip count >}}, you are using multiples. In the previous lesson, we used multiples to constuct number lines! 
+Multiples show up all over the place. When you {{< glink skip count >}}, you are using multiples. In the previous lesson, we used multiples to construct number lines! 
 
 **Example:**
 
@@ -277,7 +277,7 @@ As long as you end up with the same prime numbers, the tree is correct!
 
 :::{.callout-tip title="Which factors should I start with?"}
 
-There is no one right answer to this question. It depends on your goal. If your goal is finding easy numbers, you might start small.  Notice that 360 is {{< glink even >}} that means it is divisible by 2. We could divide by 2 and keep going that way.
+There is no one right answer to this question. It depends on your goal. If your goal is finding easy numbers, you might start small.  Notice that 360 is {{< glink even >}}, that means it is divisible by 2. We could divide by 2 and keep going that way.
 
 <div style="display: flex; justify-content: center;">
 
@@ -481,6 +481,17 @@ flowchart TB
 
 :::{.answers}
 
+**Warm-Up**
+
+1. **5** (1, 36), (2, 18), (3, 12), (4,9), (6, 6)
+
+2. 8 (if we count zero, which is a whole number)
+
+3. No, 13 is prime
+
+---
+
+
 **Factors & Multiples**
 
 1. 
@@ -493,9 +504,12 @@ flowchart TB
 2. 
 
    a. 4, 8, 12, 16, 20
-   b. 8, 18, 27, 36, 45
+   b. 9, 18, 27, 36, 45
    c. 12, 24, 36, 48, 60
 
+---
+
+**Prime or Composite?**
 
 3. 
 
@@ -506,6 +520,9 @@ flowchart TB
    e. Composite
 
 
+---
+
+**Complete the Factor Tree**
 
 4. 
 
@@ -517,6 +534,10 @@ b.
 
 ![](/images/Unit_1/Lesson_2/lesson_1_2_4b.png){height=300}
 
+---
+
+**Factor Trees and Prime Factorization**
+
 5. 
 
    a. 2 × 2 × 2 × 3 = 2³ × 3
@@ -525,6 +546,10 @@ b.
    d. 3 × 3 × 3 × 3 = 3⁴
    e.  2 × 2 × 2 × 3 × 3 = 2³ × 3²
 
+---
+
+**Challenge**
 
 6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
+
 :::

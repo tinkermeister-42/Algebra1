@@ -46,13 +46,13 @@ A **fraction** shows how many parts out of a total. We often use them when:
 
 - Measuring ingredients: "Add $\frac{2}{3}$ of a cup of milk."
 - Position in a ranking: "She ranked 2 out of 350 or $\frac{2}{350}$."
-- Splitting or sharing something: "We each got $\frac{3}{8}$ of the pizza"
+- Splitting or sharing something: "We each got $\frac{3}{8}$ of the pizza."
 
-A **decimal** uses place value and powers of 10. Decimals could be used for:
+A **decimal** uses place value and powers of 10. Decimals can be used for:
 
 - Dealing with money: "This costs $4.75."
 - Measuring length or weight: "The board is 2.5 feet long."
-- Reporting data or averages: "The average was 3.6 stars"
+- Reporting data or averages: "The average was 3.6 stars."
 
 A **percent** means “per 100”. Percents are used when:
 
@@ -73,7 +73,7 @@ We think about and visualize fractions, decimals, and percents differently too. 
 ![The percentage 40%](/images/Unit_1/Lesson_4/pie_chart_40_percent.png){fig-align=center fig-alt="A pie chart with 40% taken out." width=50%}
 
 
-You can always use decimals, fractions, and percents interchangeably. Which one you pick often depends on the situation and so it is useful to be able to turn one type into another. The following sections show how to do just that!
+Fractions, decimals, and percents all show the same thing in different ways. You can change one form into another. Choose the form that fits the situation. In the next sections, you’ll learn how to switch between them.
 
 ---
 
@@ -119,7 +119,7 @@ This can cause small errors if you're not careful — especially when comparing 
 
 :::{.callout-tip title="What fractions have repeating decimals?"}
 
-Fractions with denominators that only use multiples of 2 and 5 will end. Others repeat.
+After you simplify the fraction, look at the denominator. If it’s made only from 2s and/or 5s (like 2, 4, 5, 8, 10, 20), the decimal ends. If it has any other factor (like 3 or 7), the decimal repeats.
 
 **Example 1:**
  
@@ -262,7 +262,7 @@ $$
 
 To convert a percent to a decimal simply move the decimal two places left (the same as dividing by 100).
 
-For example, here is what it looks like to convert 41% to a decimal. Notice that we sometimes have to add zeros to the left so the decimal has a place to go. Also notice that if there is no decimal, we put it just after the number before moving to the right.
+For example, here is what it looks like to convert 41% to a decimal. Notice that we sometimes have to add zeros to the left so the decimal has a place to go. Also notice that if there is no decimal, we put it just after the number before moving to the left.
 
 ![](/images/Unit_1/Lesson_4/convert_41_percent.png){height=50 fig-alt="Converting 41% to 0.41"}
 
@@ -302,7 +302,7 @@ $$
 :::
 ---
 
-### 1.4.5 – Bringing It All Together
+### 1.4.6 – Bringing It All Together
 
 Now that you’ve seen how to convert between fractions, decimals, and percents, here’s a summary table to help you remember the steps:
 
@@ -319,13 +319,14 @@ Now that you’ve seen how to convert between fractions, decimals, and percents,
 :::{.remember}
 Some conversions are so common that it helps to **memorize** them. These are called **benchmark values**:
 
-| Fraction         | Decimal  | Percent |
-| ---------------- | -------- | ------- |
+| Fraction       | Decimal  | Percent |
+| -------------- | -------- | ------- |
 | $\frac{1}{2}$  | 0.5      | 50%     |
 | $\frac{1}{4}$  | 0.25     | 25%     |
 | $\frac{3}{4}$  | 0.75     | 75%     |
-| $\frac{1}{3}$  | 0.333... | 33.3...%   |
+| $\frac{1}{3}$  | 0.333... | 33.3...%|
 | $\frac{1}{5}$  | 0.2      | 20%     |
+| $\frac{1}{8}$  | 0.125    | 12.5%   |
 | $\frac{1}{9}$  | 0.111... | 11.1%   |
 | $\frac{1}{10}$ | 0.1      | 10%     |
 :::
@@ -370,7 +371,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
    c. 80%
    d. 12.5%
    e. 0.5%
-   f. 2.75%
+   f. 275%
 
 **Comparison Questions**
 
@@ -417,6 +418,20 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 ::: {.answers}
 
+**Warm-Up**
+
+1. *Answers vary* 
+
+   **Example:** 0.25 because all of the rest are equal to each other.
+
+
+2. b and d are closest
+
+
+---
+
+**Conversions Practice**
+
 1. 
 
    a. 0.5
@@ -456,6 +471,9 @@ Some conversions are so common that it helps to **memorize** them. These are cal
    e. $\frac{1}{200}$
    f. $2\tfrac{3}{4}$
 
+---
+
+**Comparison Questions**
 
 5. ![](/images/Unit_1/Lesson_4/answer_5.png)
 
@@ -465,8 +483,11 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 7. Kai because he scored 80% and the others scored 78% and 76%.
 
+---
 
-8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are further away.
+**Challenge Problems**
+
+8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
 
 
 9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.

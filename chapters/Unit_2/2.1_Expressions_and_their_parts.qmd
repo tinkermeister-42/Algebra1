@@ -34,122 +34,296 @@ In this lesson, you’ll learn what a variable is, what makes up an expression, 
 
 ### 2.1.1 – What Is a Variable?
 
-Numbers are very important in math. But sometimes, when trying to solve a problem or describe a situation, a way to talk about a number that is not known yet, or a number that can change, is needed. To do this, something special called a {{< glink variable >}} is used.
+Sometimes we need to talk about a number we don’t know yet—or one that can change. For that, we use a {{< glink variable >}}.
 
-A variable is a letter or {{< glink symbol >}} used to represent an unknown or changing number. Any symbol can be used for a variable but, in Algebra, the most common symbol we will use is the letter **x**.
+A variable is a letter or {{< glink symbol >}} that stands for an unknown or changing number. You can use many letters, but in algebra we most often use **x**.
 
-Think of a **x** as the label on a mystery box. You know the box holds a number inside, but you don't know which number it is yet! 
+Think of an **x** as the label on a mystery box. You know the box holds a number inside, but you don't know which number it is yet! 
 
-![](/images/Unit_2/variable.png){width=35% fig-align=center}
+**Example:**
 
+You work at a grocery store. Your boss hands you a stack of labels and points to some apple boxes: “Write how many apples are in each box.”
 
-Let's look at some examples:
+You pick up a sealed box. You can’t see inside, so you write x on the label — x stands for “the number of apples in this box (unknown).”
 
-Example:
-Imagine you have some apples, but you don't know exactly how many. You can use the letter a as a placeholder for the number of apples you have. 
-If you get 5 more apples, the number of apples you have now can be shown as: a + 5
-Suggested Visual:
-Instead of: a number machine, which might be too abstract.
-Try: A simple drawing of a box with a question mark on it, and the letter 'a' written next to it. Then draw 5 more apples next to the box. 
-This approach uses a concrete analogy ("mystery box"), avoids jargon initially, and immediately connects the concept to a tangible object (apples). It also sets up the next examples with a clear, relatable scenario. Remember to speak slowly and clearly when introducing these concepts. You can also invite students to offer other real-world examples of quantities that can change or be unknown. 
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){width=35% fig-align=center}
+
+Your boss isn’t satisfied and says, “Check inside.” You open the box and peek: there are 3 apples.
+
+![](/images/Unit_2/Lesson_1/AppleBoxOpen.png){width=35% fig-align=center}
+
+Now that you know the number, you change the label to 3.
+
+![](/images/Unit_2/Lesson_1/AppleBox3.png){width=35% fig-align=center}
+
+Before you opened it, x was a {{< glink variable >}}—a placeholder for an unknown number.
+After you looked, you found $x = 3$, so you replaced the variable with the number.
+
+---
 
 ### 2.1.2 – What Is an Expression?
 
-An **expression** is a math phrase that combines numbers, variables, and operations — **but no equal sign**.
+An **expression** is a math phrase made of numbers, variables, and {{< glink operations >}} — **but no equal sign**.
 
-Examples of expressions:
-- \(3x + 5\)  
-- \(x - 7\)  
-- \(\frac{1}{2}(y + 4)\)
+**Examples (expressions):**
 
-These expressions tell us something — like a rule, or a situation — but they don’t make a claim about what the answer is.
+* $3x + 5$
+* $x - 7$
+* $\tfrac{1}{2}(y + 4)$
+* $4(a - 3)$
+
+**Not expressions (these make a claim):**
+
+* $3x + 5 = 20$  *(has an equals sign → an equation)*
+* $x > 7$        *(comparison)*
+
+::: {.gotcha title="Where did the multiply sign go?"}
+In algebra we often multiply by just **putting things next to each other**.
+We call this **multiplication by proximity**.
+
+* $3x$ means $3 \times x$
+* $4(a-3)$ means $4 \times (a-3)$
+:::
+
+::: {.real-world}
+**Price × quantity:** If stickers cost \$0.50 each and you buy $s$ stickers, the cost is $0.50s$. That’s multiplication by proximity in the wild.
+:::
+
+::: {.visual-note}
+**Visual idea:** Two columns “Expression / Not an Expression.” On the right, highlight the equals sign in color. On the left, show $3x$ with a tiny label “proximity = multiply.”
+:::
 
 ---
 
 ### 2.1.3 – Terms, Coefficients, and Constants
 
-Take a look at this expression:
+Consider:
 
-\[
+$$
 4x + 2y - 7
-\]
+$$
 
-Let’s break it down:
+* **Terms** are the chunks separated by $+$ or $-$: $4x$, $2y$, $-7$.
+* A **coefficient** tells “how many copies of the variable”: 4 is the coefficient of $x$; 2 is the coefficient of $y$.
+* A **constant** is a number that doesn’t change: $-7$.
 
-- **Terms** are the parts separated by + or –:  
-  → \(4x\), \(2y\), and \(-7\)  
-- A **coefficient** is the number in front of a variable:  
-  → 4 is the coefficient of \(x\); 2 is the coefficient of \(y\)  
-- A **constant** is a number that doesn’t change:  
-  → \(-7\) is a constant
+::: {.remember}
 
-> _Suggested visual: Expression with labeled arrows or color-coded parts_
+* The **sign in front** belongs to the term → the last term here is **$-7$**.
+* A lone variable has an **implied coefficient of 1**.
+  Examples: coefficient of $x$ is $1$; coefficient of $-y$ is $-1$.
+:::
 
----
+::: {.visual-note}
+**Visual idea:** Show $4x + 2y - 7$. Circle each term, box the coefficients, underline the constant. Add a mini-example $-y + 9$ to spotlight the **coefficient $-1$** idea.
+:::
 
-:::{.you-try collapse=true title="📝 Try It Yourself!"}
-Label the parts of each expression.
-
-1. \(5x + 2\)  
-2. \(3a + 4b - 9\)  
-3. \(\frac{1}{2}y + 6\)  
-4. \(9 - 2x\)  
-
-For each:  
-- Identify the terms  
-- Label the coefficients and constants  
+:::{.you-try collapse=true title="📝 Label the parts in $9 - 3x + y$. What are the terms, coefficients, and constant?"}
+**Answer:** terms: $9$, $-3x$, $y$; coefficients: $x \to -3$, $y \to 1$; constant: $9$.
 :::
 
 ---
 
-### 2.1.4 – Writing Expressions for Situations
+### 2.1.4 – Reading Expressions in Words
 
-Now let’s try going from a real-world situation to an expression.
+Expressions are short stories.
 
-> **Examples:**
->
-> - You earn $10 per hour. After \(h\) hours, you’ve earned:  
->   → \(10h\)  
-> - A car’s speed increases by 15 miles per hour:  
->   → \(s + 15\)  
-> - A box holds 5 pencils. How many pencils in \(x\) boxes?  
->   → \(5x\)
+* $10h$: “\$10 **per hour** for $h$ hours.”
+* $s + 15$: “start at speed $s$, then increase by 15.”
+* $5x$: “5 in each group, $x$ groups.”
+* $2(x + 3)$: “double the amount **after** adding 3.”
 
-> _Note: These kinds of expressions will help when we study input/output and functions later._
+::: {.gotcha title="Order in words matters"}
+
+* “Twice a number **increased by 3**” → $2x + 3$
+* “Twice **the number increased by 3**” → $2(x + 3)$
+  Those are **not** the same.
+:::
+
+::: {.real-world}
+**Step then scale:** A club charges a \$5 sign-up fee and then doubles your donation. If you donate $d$, the club adds \$5 first, then doubles: $2(d + 5)$.
+:::
+
+:::{.you-try collapse=true title="Say $3(y-2)$ in words. What happens first? What happens next?"}
+**Answer:** “Take $y$, subtract 2, **then** triple the result.” First subtract, then multiply.
+:::
 
 ---
 
-:::{.you-try collapse=true title="💭 Create Expressions"}
-Write an expression for each situation:
+### 2.1.5 – Writing Expressions for Situations
 
-1. You have 3 more apples than your friend, who has \(x\).  
-2. A shirt costs $12. You buy \(n\) shirts.  
-3. A plant is 8 inches tall and grows \(g\) inches each day.  
-4. You spend \$20 and then buy 2 items that cost \(x\) each.
+From situation → expression:
 
-> Be ready to explain what each part of your expression means!
+* You have **3 more apples** than your friend, who has $x$. → $x + 3$
+* A shirt costs \$12. You buy $n$ shirts. → $12n$ *(multiplication by proximity)*
+* A plant is **8 inches** tall and grows $g$ inches each day. → $8 + g$
+* You spend \$20 and then buy **2 items** that cost $x$ each. → $20 + 2x$
+
+::: {.real-world}
+**Travel:** A bus goes 45 miles per hour. After $t$ hours, the distance is $45t$. That’s proximity multiplication again (speed × time).
 :::
+
+:::{.you-try collapse=true title="A taxi charges a \$3 start fee plus \$2 per mile for $m$ miles. Write an expression."}
+**Answer:** $3 + 2m$.
+:::
+
+:::{.you-try collapse=true title="A rectangle has length $L$. Its width is 3 less than its length. Write the width and the perimeter."}
+**Answer:** width $= L - 3$; perimeter $= 2L + 2(L - 3) = 4L - 6$.
+:::
+
+---
+
+### 2.1.6 – Concept Lab: Build an Expression
+
+We’ll *build* expressions from pieces to feel what each part means. (Tiles, paper strips, or quick sketches work great.)
+
+1. “Three $x$’s and two more.” Arrange **$x, x, x, 1, 1$**.
+   Write: $3x + 2$.
+2. “Double the amount after adding 4.” Build **$x, 1, 1, 1, 1$**; then duplicate the group.
+   Write: $2(x+4)$.
+3. “Start at 10, then lose 2 each game for $g$ games.”
+   Write: $10 - 2g$.
+
+::: {.visual-note}
+**Visual idea:** A photo/diagram of (a) $3x+2$ arranged with tiles, (b) two identical groups for $2(x+4)$. Minimal labels so students do the talking.
+:::
+
+---
+
+### 2.1.7 – Common Misconceptions
+
+* **Don’t add a ‘×’**: $3x$ already means multiply (multiplication by proximity).
+* **Sign goes with the term**: in $9 - 2x$, the second term is $-2x$.
+* **“Less than” flips order**: “6 fewer than a number” → $x - 6$, not $6 - x$.
+* **Coefficient ≠ exponent**: in $4x^2$, 4 is the coefficient; the 2 is an exponent (“square”).
 
 ---
 
 ## ✍️ Practice On Your Own
 
-1. Label all parts of this expression: \(7x - 5\)  
-2. Identify the terms in this expression: \(3a + 4b - 9\)  
-3. What is the coefficient of \(y\) in this expression: \(5x + 2y - 6\)?  
-4. Write an expression for:  
-   a. “6 fewer than a number”  
-   b. “Twice a number increased by 3”  
-5. Create your own expression to describe this:  
-   “Each item costs $4. You also pay a $2 delivery fee.”
+**Identify the Parts**
+
+For each, list **terms**, give the **coefficient** for each variable, and the **constant(s)**.
+
+1. $7x - 5$
+2. $3a + 4b - 9$
+3. $5x + 2y - 6$
+4. $-y + 12$
+5. $\tfrac{1}{2}m + 4 - 3n$
+
+---
+
+**Say It in Words**
+
+Write a short sentence (in your own words) for each expression.
+
+6. $9 + t$
+7. $0.5x$
+8. $4(n - 1)$
+9. $3p + 7$
+10. $2(x+3)$
+
+---
+
+**From Situation to Expression**
+
+11. You have $x$ stickers. Your friend gives you 6 more.
+12. A gym costs \$20 to join plus \$8 per month for $m$ months.
+13. A tank starts with 50 liters and drains 3 liters each minute for $t$ minutes.
+14. A rectangle’s width is $w$; its length is 5 more than its width. (Write length and perimeter.)
+15. A phone plan includes 2 GB free, then charges \$5 per extra GB $g$.
+
+---
+
+**Match the Story to the Expression**
+
+**Stories**
+a) “Double the amount after adding 2.”
+b) “Start at 10, then subtract 3 each day $d$.”
+c) “\$4 per ticket for $t$ tickets, plus a \$6 fee.”
+d) “Three groups of $x$, then add 1.”
+e) “Half of $m$, then add 5.”
+
+**Expressions**
+A) $2(x+2)$  B) $10-3d$  C) $4t+6$  D) $3x+1$  E) $\tfrac12 m+5$
+
+---
+
+**Which One Doesn’t Belong?**
+
+16. $2x+6$  $2(x+3)$  $x+x+6$  $x+3+x+3$
+17. $5n-2$  $5(n-2)$  $n+n+n+n+n-2$  $5(n+2)$
+
+---
+
+**Error Analysis**
+
+18. A student says the coefficient of $y$ in $-y+9$ is 0 because there’s no number in front. What would you say?
+19. A student writes “6 fewer than a number” as $6-x$. Explain and correct it.
+20. A student says $2x+3$ and $2(x+3)$ mean the same thing. Give a counterexample by choosing a value of $x$.
+
+---
+
+**Real-World Mix**
+
+21. **Shopping:** Each notebook costs \$5 and you also buy one binder for \$2. Write two different expressions for the total with $n$ notebooks.
+22. **Reading goal:** You start with 7 points and earn 0.25 points per hour $h$. Write an expression.
+23. **Road trip:** A car travels 60 miles per hour. How far in $t$ hours? What if the car already started 30 miles ahead?
+
+---
+
+**Challenge Problems**
+
+24. Two different stories lead to the **same expression**. Create **two** real-world stories that both match $2x + 6$. Explain why they both fit.
+25. Find a value of $x$ that makes $2x + 3 = 2(x + 3)$ **false** and explain what this shows about order and grouping.
 
 ---
 
 :::{.answers}
-1. Terms: \(7x\), \(-5\); Coefficient: 7; Constant: \(-5\)  
-2. \(3a\), \(4b\), \(-9\)  
-3. Coefficient of \(y\) is 2  
-4. a) \(x - 6\)  
-   b) \(2x + 3\)  
-5. \(4x + 2\) _(Answers may vary slightly)_
+
+**A. Identify the Parts**
+
+1. terms: $7x$, $-5$; coeff: $x\to 7$; constant: $-5$
+2. terms: $3a$, $4b$, $-9$; coeffs: $a\to 3$, $b\to 4$; constant: $-9$
+3. terms: $5x$, $2y$, $-6$; coeffs: $x\to 5$, $y\to 2$; constant: $-6$
+4. terms: $-y$, $12$; coeff: $y\to -1$; constant: $12$
+5. terms: $\tfrac12 m$, $4$, $-3n$; coeffs: $m\to \tfrac12$, $n\to -3$; constant: $4$
+
+**B. Words** *(sample)*
+6\) add 9 to $t$ 7) half of $x$ 8) four times one less than $n$
+9\) three times $p$, then add 7 10) double the amount after adding 3
+
+**C. Situations**
+11\) $x+6$
+12\) $20+8m$
+13\) $50-3t$
+14\) length $= w+5$; perimeter $= 2w + 2(w+5) = 4w+10$
+15\) $2+5g$
+
+**D. Match**
+a→A, b→B, c→C, d→D, e→E
+
+**E. WODB** *(many answers okay—justify!)*
+16\) All four are equivalent to $2x+6$ → you could say “none doesn’t belong,” or pick one and justify.
+17\) $5(n-2)=5n-10$ differs from the others (which equal $5n-2$ or $5n+10$).
+
+**F. Error Analysis**
+18\) The coefficient is $-1$ in $-y$; a lone variable has an implied 1, and the sign belongs to the term.
+19\) “6 fewer than a number” means *take 6 away from the number* → $x-6$, not $6-x$.
+20\) Try $x=1$: $2x+3=5$ but $2(x+3)=8$. Not the same.
+
+**G. Real-World Mix**
+21\) $5n+2$ and $2+5n$
+22\) $7+0.25h$
+23\) distance $= 60t$; with a 30-mile head start: $30+60t$
+
+**Challenge**
+24\) sample stories:
+
+* “Buy $x$ movie tickets at \$2 each and a \$6 service fee” → $2x+6$
+* “Two packs of snacks at \$x each, plus \$6 delivery” → $2x+6$
+  Both describe “two times something, then add six,” so both fit.
+
+25. e.g., $x=1$: $2x+3=5$ but $2(x+3)=8$ → not equal. This shows **grouping** changes the meaning: $2x+3$ is “double $x$, then add 3,” while $2(x+3)$ is “add 3, then double.”
+
 :::

@@ -53,8 +53,8 @@ $$
 You can also rearrange it to solve for the percent or the whole. We’ll walk through all three types of problems step by step.
 
 
-:::{.callout-tip}
-Converting the percent to a decimal will make calculations easier!
+:::{.remember}
+Convert the percent to a decimal first!
 :::
 
 ---
@@ -105,7 +105,7 @@ $$
 
 **Example 2 – Finding the Percent**
 
-Out of 50 students, 30 say they like soccer. **What percent is that?**"
+Out of 50 students, 30 say they like soccer. **What percent is that?**
 
 The phrase **out of** tells us that 50 is the **whole** and 30 is the **part**. We can write that as a fraction, then convert it into a percent.
 
@@ -156,7 +156,7 @@ So the total is still **40** — it is just another way to get the same answer.
 :::{.you-try title="20% of a number is 12. What is the number?"}
 Start by thinking:  
 
-$20\% = \frac{1}{4}$ → So if one-fifth is 12, then the whole must be:
+$20\% = \frac{1}{5}$ → So if one-fifth is 12, then the whole must be:
 $$
 12 \times 5 = 60
 $$
@@ -239,7 +239,7 @@ Swanhilda pays $105 for the dress. What a steal!
 
 #### Surveys & Data
 
-A {{<glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers prefered cookies, how many teachers were surveyed?
+A {{<glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?
 
 Here we want to know the **whole** when we have a percent. First, convert 75% to a decimal:
 $$
@@ -252,10 +252,10 @@ $$
 **160 teachers** were surveyed.
 
 :::{.callout-tip}
-To help avoid silly mistakes, ask yourself first, **"What answer do I expect?"**. This will help you decide if your answer you get makes sense.
+To help avoid silly mistakes, ask yourself first, **"What answer do I expect?"**. This will help you decide if the answer you get makes sense.
 :::
 
-:::{.you-try title="If a survey found 550 (or 55%) of students like cucumbers. How many students were surveyed?"}
+:::{.you-try title="If a survey found 550 -- which is 55% -- like cucumbers. How many students were surveyed?"}
 First, convert to a decimal:
 $$
 55\% = 0.55
@@ -270,7 +270,7 @@ $$
 
 ## ✍️ Practice On Your Own
 
-**Find the part whole or percent**
+**Find the Part, Whole, or Percent**
 
 1. What is 60% of 95?
 
@@ -319,6 +319,18 @@ What percent of students are in art class?
 
 ::: {.answers}
 
+**Warm-Up**
+
+1. Smaller
+
+2. That is a 60%. Most people would say no.
+
+3. It means that the item will cost 25% less than it usually would.
+
+---
+
+**Find the Part, Whole, or Percent**
+
 1. 57  
 2. 12.5%
 3. $16.\overline{6}\%$  
@@ -327,14 +339,24 @@ What percent of students are in art class?
 6. 34 
 7. 600 
 8. 750  
+
+---
+
+**Real-Life Scenarios**
+
 9. 80% 
 10. 86.25%
 11. Discount: $20, Price: $60 
 12. Discount: $1.05, Price: $2.45
 13. 80 chose dogs 
 14. 2000 fidget spinners  
+
+---
+
+**Challenge Problems**
+
 15. $41.\overline{6}\%$
 16. $45
-17. Yes. You need to get 49 out of 50 correct.
+17. Yes. You need at least 97/100 on the exam (total needed: 0.90x425 = 382.5 &Rightarrow; 383; you have 286 now, so 383-286 = 97). If each question is worth 2 points, that means 49 out of 50.
 
 :::

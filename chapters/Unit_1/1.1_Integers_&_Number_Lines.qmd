@@ -50,7 +50,7 @@ We can use this number line to *see* what happens when we add, subtract, or comp
 
 **Are there other ways to draw a number line?**
 
-Yes! Number lines can be drawn over different ranges and scales. For example, here is a number line that counts form -10 to 25 in steps of 5.
+Yes! Number lines can be drawn over different ranges and scales. For example, here is a number line that counts from -10 to 25 in steps of 5.
 
 ![](/images/Unit_1/Lesson_1/count_by_5s.png)
 
@@ -58,11 +58,11 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 ![](/images/Unit_1/Lesson_1/vertical_by_tens.png)
 
-:::{.gotcha title="How many numbers are between any two numbers on the numberline?"}
+:::{.gotcha title="How many numbers are between any two numbers on the number line?"}
 
 **Example:** How many numbers between 3 and 5?
 
-Though there are 2 {{< glink integers >}} between 3 and 5, the answer is not 2! There are {{< glink infinitely >}} many numbers between 3 and 5. Here are some number lines that might help convince you.
+If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink real numbers >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
 
 ![](/images/Unit_1/Lesson_1/three_to_five_by_1.png)
 ![](/images/Unit_1/Lesson_1/between_3_and_5_by_05.png)
@@ -104,7 +104,7 @@ The opposite of zero is zero. Zero is the only number that is its own opposite!
 {{< glink Absolute value >}} measures the **distance from zero**. Absolute value is written as a number between two bars. For example, **the absolute value of -5** is written $|-5|$.
 
 
-Take a look at the number -5. The number line shows that it's absolute value is 5 because it is 5 units away from zero.
+Take a look at the number -5. The number line shows that its absolute value is 5 because it is 5 units away from zero.
 ![](/images/Unit_1/Lesson_1/absolute_value_negative_five.png)
 
 
@@ -137,14 +137,14 @@ Let’s compare 2 to -7.
 
 You can see from the number line that 2 is {{< glink greater than >}} (&gt;) -7 because 2 is to the right of -7.  
 
-You can also see that -7 is further from zero than 2 and so |-7| > |2|.
+You can also see that -7 is farther from zero than 2 and so |-7| > |2|.
 
 :::{.gotcha title="Which is bigger?"}
-It is easy to get confused here. When we say which number is "bigger" (or greater than), we are asking which number is further to the right on the number line. This is **not** the same as absolute value, which asks which one is furthest from zero.
+It is easy to get confused here. When we say which number is "bigger" (or greater than), we are asking which number is farther to the right on the number line. This is **not** the same as absolute value, which asks which one is furthest from zero.
 :::
 
 :::{.you-try title="Compare 3 to -8 using a number line."}
-3 > -8 because it is farther to the right but |-8| > |3| because -8 is further from zero.
+3 > -8 because it is farther to the right but |-8| > |3| because -8 is farther from zero.
 
 ![](/images/Unit_1/Lesson_1/compare_3_to_neg8.png)
 :::
@@ -172,20 +172,20 @@ Imagine that you are \$2 in debt. If someone pays you \$6 you can pay off the de
 ![](/images/Unit_1/Lesson_1/add_neg5_to_150.png)
 
 :::{.real-world}
-You have \$150 in the bank. The bank ads a fee for being under their \$200 minimum balance. You now have \$145.
+You have \$150 in the bank. The bank adds a fee for being under their \$200 minimum balance. You now have \$145.
 :::
 
 3. Subtraction: $400 - 450 = -50$ 
 ![](/images/Unit_1/Lesson_1/subtract_450_from_400.png)
 
 :::{.real-world}
-If you only have \$400 but spend \$450 on a credit card. You are now \$50 in debt.
+If you only have \$400 but spend \$450 on a credit card, you are now \$50 in debt.
 :::
 
 4. Subtracting a negative: $201 - (-5) = 206$
 ![](/images/Unit_1/Lesson_1/subtract_neg5_from_201.png)
 
-:::{.think title="What real-world scenario could $200 - (-5) = 206$ represent?"}
+:::{.think title="What real-world scenario could $201 - (-5) = 206$ represent?"}
 
 > Example:
 > The bank made a mistake, you had \$$201$ in your account so they took off the \$$5$ fee. Now you have \$$206$.
@@ -207,7 +207,8 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
    c. The number halfway between 5 and 9.
 
 2. What question could match this number line?
-![](/images/Unit_1/Lesson_1/problem_2.png)
+
+   ![](/images/Unit_1/Lesson_1/problem_2.png)
 
 ---
 
@@ -286,83 +287,94 @@ If you only have \$400 but spend \$450 on a credit card. You are now \$50 in deb
 
 **Warm-Up**
 
-1. -6
+1. 6
+   
 2. -4
+
 3. -7
+
+---
 
 **Working With Number Lines**
 
-1. 
+1. a. 
 
-   a. ![](/images/Unit_1/Lesson_1/answer_1_a.png)
+      ![](/images/Unit_1/Lesson_1/answer_1_a.png)
 
-   b. *Answers vary. Here is what a 15 year old would show*
+   b. *Answers vary. Here is what a 15-year-old would show:*
+      
       ![](/images/Unit_1/Lesson_1/answer_1_b.png)
-   
-   c. *The answer is 7*
+   c. 7
+      
       ![](/images/Unit_1/Lesson_1/answer_1_c.png)
 
-3. *Answers vary. We could say "Plot the temperature on July 4th"*
+2. *Example question:* “What was the temperature on July 4th?”
+   
    ![](/images/Unit_1/Lesson_1/problem_2.png)
 
+---
+
+**Opposites**
 
 3. -42
-
-
 4. 3
-
-
-5. *Answers vary. Here is an example:*
+5. *Answers vary. Example:*
+   
    ![](/images/Unit_1/Lesson_1/answer_5.png)
+6. Yes — the opposite is -3.5
 
+---
 
-6. Yes! The opposite is -3.5.
+**Comparing Numbers**
 
+7. 5 is greater (farther right on the number line)
 
-7. 5 is greater
+8. -10 has the greater absolute value (10 > 5)
 
+9. Yes — 28 is greater because it is to the right of -30
 
-8. -10 has a greater absolute value
+10. a. -11 > -13
+    b. 7 > -2
+    c. |-3| < |5| (3 < 5)
 
+11. a. -4 > -5
+    b. 3 > -7
+    c. |-5| > |4| (5 > 4)
 
-9. Yes, because it is further from zero
-
-
-10. 
-
-    a. -11\ >\ -13
-    b. 7\ >\ -2
-    c. |-3| < |5|
-
-    
-12. 
-
-    a. -4
-    b. 3
-    c. |-5|
-    
-13. 
-
-    a. ![](/images/Unit_1/Lesson_1/answer_12_a.png)
-    b. *Answers vary. I was born in 1982. The current year is 2025.*
+12. a. 2 > -7
+    b. *Answers vary — for example, 2025 > 1985*
+       
        ![](/images/Unit_1/Lesson_1/answer_12_b.png)
-    
 
-13. 
+---
 
-    a. ![](/images/Unit_1/Lesson_1/answer_13_a.png)
-    b. ![](/images/Unit_1/Lesson_1/answer_13_b.png)
-    c. ![](/images/Unit_1/Lesson_1/answer_13_c.png)
-    d. ![](/images/Unit_1/Lesson_1/answer_13_d.png)
+**Addition and Subtraction**
 
+13. a. 
 
+       ![](/images/Unit_1/Lesson_1/answer_13_a.png)
+    b. 
 
-14. 
+       ![](/images/Unit_1/Lesson_1/answer_13_b.png)
+    c. 
 
-    a. It is now 8 degrees
-       ![](/images/Unit_1/Lesson_1/answer_14_a.png)
-    b. She is now 75 feet down.
-       ![](/images/Unit_1/Lesson_1/answer_14_b.png)
-    c. You now have -\$3.
-       ![](/images/Unit_1/Lesson_1/answer_14_c.png)
+       ![](/images/Unit_1/Lesson_1/answer_13_c.png)
+    d. 
+
+       ![](/images/Unit_1/Lesson_1/answer_13_d.png)
+
+---
+
+**Word Problems**
+
+14. a.  8°F
+        
+        ![](/images/Unit_1/Lesson_1/answer_14_a.png)
+    b.  75 feet down
+        
+        ![](/images/Unit_1/Lesson_1/answer_14_b.png)
+    c.  -\$3
+        
+        ![](/images/Unit_1/Lesson_1/answer_14_c.png)
+
 :::

@@ -27,7 +27,7 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 ## 🔥 Warm-Up
 
-1. You and your friend are asked to simplify $10 - 4 + 2$. You got 8. They got 4. Who is right?
+1. You and your friend are asked to simplify $10 - 4 \times 2$. You got 2. They got 12. Who is right?
 
 2. This question went viral. Can you get it right? Apparently 9 out of 10 can't!
 $$
@@ -435,7 +435,7 @@ Same ingredients, different result. Order matters!
 
 ---
 
-**Challenge**
+**Challenge Problems**
 
 4. Two students simplified this expression differently:
 
@@ -471,6 +471,16 @@ Same ingredients, different result. Order matters!
 
 :::{.answers}
 
+**Warm-Up**
+
+1. You are correct! Multiply first and then add.
+
+2. The answer is 9 (not 1).
+
+---
+
+**Basic Order of Operations**
+
 1.
 
    a. **16**
@@ -478,6 +488,9 @@ Same ingredients, different result. Order matters!
    c. **9**
    d. **1**
 
+---
+
+**With Negatives & Fractions**
 
 2.
 
@@ -486,12 +499,20 @@ Same ingredients, different result. Order matters!
    c. **8**
    d. **4**
 
+---
+
+**Expression Breakdown**
+
 3.
 
    a. **15**
    b. **16**
    c. **1**
    d. **6**
+
+---
+
+**Challenge Problems**
 
 4. **7**
 
