@@ -1,32 +1,30 @@
 # 2.1 – Expressions & Their Parts {.unnumbered}
 
-Algebra is a language made of **expressions** — math phrases that use numbers, symbols, and variables to describe patterns or situations. Before we learn to simplify or solve anything, we need to understand what expressions are and how to describe their parts.
+Algebra is like a language — it uses **expressions** to describe patterns, relationships, and real-world situations. Expressions are math phrases made from numbers, symbols, and variables. Before we can simplify or solve them, we need to know what they are and how to talk about their parts.
 
-In this lesson, you’ll learn what a variable is, what makes up an expression, and how to recognize important parts like {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
+In this lesson, you’ll learn what a variable is, what makes up an expression, and how to identify key parts like {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
 
 ---
 
-:::{.objectives}
-- [ ] I can identify the parts of an algebraic expression  
-- [ ] I can describe what a variable, constant, coefficient, and term are  
-- [ ] I can write a simple expression to describe a real-world situation  
+::: objectives
+- [ ] I can identify the parts of an algebraic expression.  
+- [ ] I can describe what a variable, constant, coefficient, and term are.  
+- [ ] I can write a simple expression to model a real-world situation.  
 :::
 
 ---
 
-:::{.vocab}
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink expression >}}, {{< glink term >}}, {{< glink variable >}} 
+::: vocab
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink expression >}}, {{< glink term >}}, {{< glink variable >}}
 :::
 
 ---
 
 ## 🔥 Warm-Up
 
-1. If a shirt costs $10, how do you find the total cost of many shirts?
-
-2. You have some cookies. You eat 3. How can you show how many cookies are left? 
-
-3. A car drives 50 miles every hour. How can you find the total distance for many hours? 
+1. A shirt costs $10. How do you find the total cost of several shirts?  
+2. You have some cookies. You eat 3. How can you show how many are left?  
+3. A car drives 50 miles every hour. How can you find the total distance for many hours?  
 
 ---
 
@@ -34,296 +32,318 @@ In this lesson, you’ll learn what a variable is, what makes up an expression, 
 
 ### 2.1.1 – What Is a Variable?
 
-Sometimes we need to talk about a number we don’t know yet—or one that can change. For that, we use a {{< glink variable >}}.
+Sometimes we need to talk about a number we don’t know yet — or one that can change. For that, we use a {{< glink variable >}}.
 
-A variable is a letter or {{< glink symbol >}} that stands for an unknown or changing number. You can use many letters, but in algebra we most often use **x**.
+A variable is a letter or {{< glink symbol >}} that stands for an unknown or changing number. Algebra often uses **x**, but other letters work too.
 
-Think of an **x** as the label on a mystery box. You know the box holds a number inside, but you don't know which number it is yet! 
+Think of **x** as the label on a mystery box: you know there’s a number inside, but you don’t know which one.
 
 **Example:**
 
-You work at a grocery store. Your boss hands you a stack of labels and points to some apple boxes: “Write how many apples are in each box.”
+You work at a grocery store. Your boss gives you labels and points to boxes of apples:  
+“Write how many apples are in each box.”
 
-You pick up a sealed box. You can’t see inside, so you write x on the label — x stands for “the number of apples in this box (unknown).”
+You pick up a sealed box. You can’t see inside, so you write **x** on the label — x means “the number of apples in this box (unknown).”
 
-![](/images/Unit_2/Lesson_1/AppleBoxX.png){width=35% fig-align=center}
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){width="35%" fig-align="center"}
 
-Your boss isn’t satisfied and says, “Check inside.” You open the box and peek: there are 3 apples.
+Your boss says, “Check inside.” You open the box: there are 3 apples.
 
-![](/images/Unit_2/Lesson_1/AppleBoxOpen.png){width=35% fig-align=center}
+![](/images/Unit_2/Lesson_1/AppleBoxOpen.png){width="35%" fig-align="center"}
 
-Now that you know the number, you change the label to 3.
+Now you know the number, so you change the label to 3.
 
-![](/images/Unit_2/Lesson_1/AppleBox3.png){width=35% fig-align=center}
+![](/images/Unit_2/Lesson_1/AppleBox3.png){width="35%" fig-align="center"}
 
-Before you opened it, x was a {{< glink variable >}}—a placeholder for an unknown number.
-After you looked, you found $x = 3$, so you replaced the variable with the number.
+Before opening it, **x** was a variable — a placeholder for an unknown number. After looking, you found $x = 3$.
+
 
 ---
 
 ### 2.1.2 – What Is an Expression?
 
-An **expression** is a math phrase made of numbers, variables, and {{< glink operations >}} — **but no equal sign**.
+An **expression** is a math phrase made of numbers, variables, and {{< glink operations >}}. Expressions do **not** compare values — so $2x$ and $5$ are expressions, but $2x = 5$ is not (that’s an equation).
 
-**Examples (expressions):**
+**Examples of expressions:**
 
-* $3x + 5$
-* $x - 7$
-* $\tfrac{1}{2}(y + 4)$
-* $4(a - 3)$
+- $3x$
+- $2x - 7$
+- $\tfrac{1}{2}(y + 4)$
+- $x^2 - 3x + 4$
+- $9$
 
-**Not expressions (these make a claim):**
+**Not expressions:**
 
-* $3x + 5 = 20$  *(has an equals sign → an equation)*
-* $x > 7$        *(comparison)*
+- $3x + 5 = 20$ *(equation — has an equals sign)*  
+- $x > 7$ *(comparison)*  
+
+::: {.you-try-m title="Think about this."}
+You have two situations:
+
+1. The total number of pencils in 7 boxes.
+2. Whether the total number of pencils is equal to 20.
+
+- Can both be represented by a single expression? 
+- Which one cannot? 
+- Explain your reasoning.
+:::
+::: {.answer title="Answer"}
+- Situation 1: Yes — you can write `7p` if `p` is pencils per box.
+- Situation 2: No — this is a comparison, not a single expression. Expressions describe quantities; they don’t make comparisons.
+:::
+
 
 ::: {.gotcha title="Where did the multiply sign go?"}
-In algebra we often multiply by just **putting things next to each other**.
-We call this **multiplication by proximity**.
+In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink multiplication by proximity >}}).
 
-* $3x$ means $3 \times x$
-* $4(a-3)$ means $4 \times (a-3)$
+**Three ways to write “3 times x”:**
+- $3 \times x$  *(rarely used)*  
+- $3 \cdot x$  
+- $3x$  
+
+Why avoid $\times$? To keep it from looking like the variable x.
 :::
 
-::: {.real-world}
-**Price × quantity:** If stickers cost \$0.50 each and you buy $s$ stickers, the cost is $0.50s$. That’s multiplication by proximity in the wild.
+**Example:**
+
+Back to the apple boxes: before, you had one box. Now suppose you have 5 boxes, each with **x** apples.
+
+::: {.text-center}
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
+![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
 :::
 
-::: {.visual-note}
-**Visual idea:** Two columns “Expression / Not an Expression.” On the right, highlight the equals sign in color. On the left, show $3x$ with a tiny label “proximity = multiply.”
+If each box has **x** apples, then the total is $5 \cdot x$ or simply $5x$.
+
+::: {.you-try title="10 boxes of pencils"}
+Let $p$ = pencils per box.  
+Total pencils = $10p$
 :::
 
 ---
 
 ### 2.1.3 – Terms, Coefficients, and Constants
 
-Consider:
+Expressions are made of **terms**. A term may have a variable with a **coefficient** (the number in front) or be a **constant** (a number without a variable).
+
+Example: $4x + 2y - 7$
 
 $$
-4x + 2y - 7
+\huge{
+\underbrace{\color{blue}{4}x}_{\text{term}}
+\;
+\underbrace{+\color{blue}{2}y}_{\text{term}}
+\;
+\underbrace{-\color{red}{7}}_{\text{term}}
+}
 $$
 
-* **Terms** are the chunks separated by $+$ or $-$: $4x$, $2y$, $-7$.
-* A **coefficient** tells “how many copies of the variable”: 4 is the coefficient of $x$; 2 is the coefficient of $y$.
-* A **constant** is a number that doesn’t change: $-7$.
+- **Terms** are separated by $+$ or $-$: $4x$, $2y$, $-7$  
+- **Coefficients** multiply a variable: 4 and 2  
+- **Constants** are numbers that don’t change: $-7$
 
-::: {.remember}
+::: {.gotcha title="Don’t forget the sign!"}
+- The sign (+ or −) belongs to the term.  
+- A lone variable has an **implied coefficient** of 1.
 
-* The **sign in front** belongs to the term → the last term here is **$-7$**.
-* A lone variable has an **implied coefficient of 1**.
-  Examples: coefficient of $x$ is $1$; coefficient of $-y$ is $-1$.
+**Example 1:**  
+$-5x^2 - 2x$ → terms: $-5x^2$, $-2x$  
+
+**Example 2:**  
+$3x^2 + x - y$ → terms: $3x^2$, $x$, $-y$; coefficients: 3, 1, -1
 :::
 
-::: {.visual-note}
-**Visual idea:** Show $4x + 2y - 7$. Circle each term, box the coefficients, underline the constant. Add a mini-example $-y + 9$ to spotlight the **coefficient $-1$** idea.
-:::
-
-:::{.you-try collapse=true title="📝 Label the parts in $9 - 3x + y$. What are the terms, coefficients, and constant?"}
-**Answer:** terms: $9$, $-3x$, $y$; coefficients: $x \to -3$, $y \to 1$; constant: $9$.
-:::
-
----
-
-### 2.1.4 – Reading Expressions in Words
-
-Expressions are short stories.
-
-* $10h$: “\$10 **per hour** for $h$ hours.”
-* $s + 15$: “start at speed $s$, then increase by 15.”
-* $5x$: “5 in each group, $x$ groups.”
-* $2(x + 3)$: “double the amount **after** adding 3.”
-
-::: {.gotcha title="Order in words matters"}
-
-* “Twice a number **increased by 3**” → $2x + 3$
-* “Twice **the number increased by 3**” → $2(x + 3)$
-  Those are **not** the same.
-:::
-
-::: {.real-world}
-**Step then scale:** A club charges a \$5 sign-up fee and then doubles your donation. If you donate $d$, the club adds \$5 first, then doubles: $2(d + 5)$.
-:::
-
-:::{.you-try collapse=true title="Say $3(y-2)$ in words. What happens first? What happens next?"}
-**Answer:** “Take $y$, subtract 2, **then** triple the result.” First subtract, then multiply.
+::: {.you-try collapse=true title="Make your own expression with 4+ terms"}
+Example: $18x - 2y + 3z - 1$  
+Terms: $18x$, $-2y$, $3z$, $-1$  
+Coefficients: 18, -2, 3  
+Constant: -1
 :::
 
 ---
 
-### 2.1.5 – Writing Expressions for Situations
+### 2.1.4 – Translating Between Words and Expressions
 
-From situation → expression:
+**Expressions** are math phrases that describe real situations. Learning to turn words into expressions is one of the most important skills in algebra because it connects math to real life — and it’s the first step to solving real-world problems.
 
-* You have **3 more apples** than your friend, who has $x$. → $x + 3$
-* A shirt costs \$12. You buy $n$ shirts. → $12n$ *(multiplication by proximity)*
-* A plant is **8 inches** tall and grows $g$ inches each day. → $8 + g$
-* You spend \$20 and then buy **2 items** that cost $x$ each. → $20 + 2x$
+---
 
-::: {.real-world}
-**Travel:** A bus goes 45 miles per hour. After $t$ hours, the distance is $45t$. That’s proximity multiplication again (speed × time).
-:::
+**Examples:**
 
-:::{.you-try collapse=true title="A taxi charges a \$3 start fee plus \$2 per mile for $m$ miles. Write an expression."}
-**Answer:** $3 + 2m$.
-:::
+- You have 5 boxes of apples. Each box has **x** apples.  
+  Number of apples: $5x$
 
-:::{.you-try collapse=true title="A rectangle has length $L$. Its width is 3 less than its length. Write the width and the perimeter."}
-**Answer:** width $= L - 3$; perimeter $= 2L + 2(L - 3) = 4L - 6$.
+- You earn $12 per hour for **h** hours.  
+  Total earnings: $12h$
+
+- Your friend has **n** games. You have 3 more than your friend.  
+  Your games: $n + 3$
+
+- A taxi charges $10 plus $2 for each mile **m**.  
+  Total cost: $10 + 2m$
+
+- A plant starts at **g** inches tall and grows 8 inches.  
+  New height: $g + 8$
+
+---
+
+::: {.you-try title="Rectangle width from length"}
+A rectangle has length **L**. The width is 2 more than 4 times the length.  
+$4L + 2$
 :::
 
 ---
 
-### 2.1.6 – Concept Lab: Build an Expression
-
-We’ll *build* expressions from pieces to feel what each part means. (Tiles, paper strips, or quick sketches work great.)
-
-1. “Three $x$’s and two more.” Arrange **$x, x, x, 1, 1$**.
-   Write: $3x + 2$.
-2. “Double the amount after adding 4.” Build **$x, 1, 1, 1, 1$**; then duplicate the group.
-   Write: $2(x+4)$.
-3. “Start at 10, then lose 2 each game for $g$ games.”
-   Write: $10 - 2g$.
-
-::: {.visual-note}
-**Visual idea:** A photo/diagram of (a) $3x+2$ arranged with tiles, (b) two identical groups for $2(x+4)$. Minimal labels so students do the talking.
-:::
+**Why Order Matters:**  
+Knowing the **order of operations** helps you write the correct expression.  
+- “Double $x$, then add 3” → $2x + 3$  
+- “Add 3 to $x$, then double” → $2(x + 3)$  
 
 ---
 
-### 2.1.7 – Common Misconceptions
+### Words → Expressions Quick Reference
 
-* **Don’t add a ‘×’**: $3x$ already means multiply (multiplication by proximity).
-* **Sign goes with the term**: in $9 - 2x$, the second term is $-2x$.
-* **“Less than” flips order**: “6 fewer than a number” → $x - 6$, not $6 - x$.
-* **Coefficient ≠ exponent**: in $4x^2$, 4 is the coefficient; the 2 is an exponent (“square”).
+| Words / Phrase                       | Symbol / Expression | Example in Words                            |
+| ------------------------------------ | ------------------- | ------------------------------------------- |
+| the same as                          | =                   | “$a$ is the same as $b$” → $a = b$          |
+| sum of                               | +                   | “The sum of $x$ and 3” → $x + 3$            |
+| added to / increased by              | +                   | “5 added to $y$” → $y + 5$                  |
+| difference of / minus / decreased by | −                   | “The difference of $x$ and 7” → $x - 7$     |
+| multiplied by / product of           | × or proximity      | “3 multiplied by $n$” → $3n$                |
+| per / each / times                   | × or proximity      | “$10 per hour for $h$ hours” → $10h$        |
+| double / twice                       | 2 ×                 | “Twice a number $x$” → $2x$                 |
+| triple / three times                 | 3 ×                 | “Three times a number $y$” → $3y$           |
+| half of                              | ÷2 or ½             | “Half of $m$” → $\frac12 m$                 |
+| squared / raised to the 2nd power    | ^2                  | “$x$ squared” → $x^2$                       |
+| cubed / raised to the 3rd power      | ^3                  | “$y$ cubed” → $y^3$                         |
+| sum then multiply                    | parentheses         | “Add 3 to $x$, then double” → $2(x+3)$      |
+| multiply then add                    | no parentheses      | “Double $x$, then add 3” → $2x + 3$         |
 
 ---
 
 ## ✍️ Practice On Your Own
 
-**Identify the Parts**
-
-For each, list **terms**, give the **coefficient** for each variable, and the **constant(s)**.
-
-1. $7x - 5$
-2. $3a + 4b - 9$
-3. $5x + 2y - 6$
-4. $-y + 12$
-5. $\tfrac{1}{2}m + 4 - 3n$
+**1. Identify the Parts**  
+List terms, coefficients, and constants.  
+1. $7x - 5$  
+2. $3a + 4b - 9$  
+3. $5x + 2y - 6$  
+4. $-y + 12$  
+5. $\tfrac12 m + 4 - 3n$
 
 ---
 
-**Say It in Words**
-
-Write a short sentence (in your own words) for each expression.
-
-6. $9 + t$
-7. $0.5x$
-8. $4(n - 1)$
-9. $3p + 7$
+**2. Say It in Words**  
+6. $9 + t$  
+7. $0.5x$  
+8. $4(n - 1)$  
+9. $3p + 7$  
 10. $2(x+3)$
 
 ---
 
-**From Situation to Expression**
-
-11. You have $x$ stickers. Your friend gives you 6 more.
-12. A gym costs \$20 to join plus \$8 per month for $m$ months.
-13. A tank starts with 50 liters and drains 3 liters each minute for $t$ minutes.
-14. A rectangle’s width is $w$; its length is 5 more than its width. (Write length and perimeter.)
-15. A phone plan includes 2 GB free, then charges \$5 per extra GB $g$.
+**3. From Situation to Expression**  
+11. You have $x$ stickers. Your friend gives you 6 more.  
+12. A gym costs $20 plus $8 per month for $m$ months.  
+13. A tank starts with 50 liters and drains 3 liters per minute for $t$ minutes.  
+14. A rectangle’s width is $w$; its length is 5 more than its width. (Write length and perimeter.)  
+15. A phone plan includes 2 GB free, then $5 per extra GB $g$.
 
 ---
 
-**Match the Story to the Expression**
+**4. Previous Knowledge Mix** *(review from Unit 1)*  
+16. Write an expression for the sum of the absolute values of $-3$ and $n$.  
+17. If $p$ is divisible by 4, write an expression showing $p$ as a product of its GCF with 12.  
+18. Write an expression for “half the distance from $-8$ to $x$ on the number line.”
 
-**Stories**
-a) “Double the amount after adding 2.”
-b) “Start at 10, then subtract 3 each day $d$.”
-c) “\$4 per ticket for $t$ tickets, plus a \$6 fee.”
-d) “Three groups of $x$, then add 1.”
+---
+
+**5. Match the Story to the Expression**  
+Stories:  
+a) “Double the amount after adding 2.”  
+b) “Start at 10, then subtract 3 each day $d$.”  
+c) “$4 per ticket for $t$ tickets, plus a $6 fee.”  
+d) “Three groups of $x$, then add 1.”  
 e) “Half of $m$, then add 5.”
 
-**Expressions**
-A) $2(x+2)$  B) $10-3d$  C) $4t+6$  D) $3x+1$  E) $\tfrac12 m+5$
+Expressions:  
+A) $2(x+2)$ B) $10-3d$ C) $4t+6$ D) $3x+1$ E) $\tfrac12 m+5$
 
 ---
 
-**Which One Doesn’t Belong?**
-
-16. $2x+6$  $2(x+3)$  $x+x+6$  $x+3+x+3$
-17. $5n-2$  $5(n-2)$  $n+n+n+n+n-2$  $5(n+2)$
-
----
-
-**Error Analysis**
-
-18. A student says the coefficient of $y$ in $-y+9$ is 0 because there’s no number in front. What would you say?
-19. A student writes “6 fewer than a number” as $6-x$. Explain and correct it.
-20. A student says $2x+3$ and $2(x+3)$ mean the same thing. Give a counterexample by choosing a value of $x$.
+**6. Which One Doesn’t Belong?**  
+19. $2x+6$ $2(x+3)$ $x+x+6$ $x+3+x+3$  
+20. $5n-2$ $5(n-2)$ $n+n+n+n+n-2$ $5(n+2)$
 
 ---
 
-**Real-World Mix**
-
-21. **Shopping:** Each notebook costs \$5 and you also buy one binder for \$2. Write two different expressions for the total with $n$ notebooks.
-22. **Reading goal:** You start with 7 points and earn 0.25 points per hour $h$. Write an expression.
-23. **Road trip:** A car travels 60 miles per hour. How far in $t$ hours? What if the car already started 30 miles ahead?
-
----
-
-**Challenge Problems**
-
-24. Two different stories lead to the **same expression**. Create **two** real-world stories that both match $2x + 6$. Explain why they both fit.
-25. Find a value of $x$ that makes $2x + 3 = 2(x + 3)$ **false** and explain what this shows about order and grouping.
+**7. Error Analysis**  
+21. A student says the coefficient of $y$ in $-y+9$ is 0. Explain.  
+22. “6 fewer than a number” is written as $6-x$. Explain and correct.  
+23. A student says $2x+3$ and $2(x+3)$ are the same. Give a counterexample.
 
 ---
 
-:::{.answers}
+**8. Real-World Mix**  
+24. Each notebook costs $5 and a binder costs $2. Write two expressions for $n$ notebooks.  
+25. You start with 7 points and earn 0.25 points per hour $h$.  
+26. A car travels 60 mph. How far in $t$ hours? What if it starts 30 miles ahead?
 
-**A. Identify the Parts**
+---
 
-1. terms: $7x$, $-5$; coeff: $x\to 7$; constant: $-5$
-2. terms: $3a$, $4b$, $-9$; coeffs: $a\to 3$, $b\to 4$; constant: $-9$
-3. terms: $5x$, $2y$, $-6$; coeffs: $x\to 5$, $y\to 2$; constant: $-6$
-4. terms: $-y$, $12$; coeff: $y\to -1$; constant: $12$
-5. terms: $\tfrac12 m$, $4$, $-3n$; coeffs: $m\to \tfrac12$, $n\to -3$; constant: $4$
+**9. Challenge Problems**  
+27. Make two different stories that fit $2x+6$.  
+28. Find $x$ so $2x+3 \neq 2(x+3)$.
 
-**B. Words** *(sample)*
-6\) add 9 to $t$ 7) half of $x$ 8) four times one less than $n$
-9\) three times $p$, then add 7 10) double the amount after adding 3
+---
 
-**C. Situations**
-11\) $x+6$
-12\) $20+8m$
-13\) $50-3t$
-14\) length $= w+5$; perimeter $= 2w + 2(w+5) = 4w+10$
-15\) $2+5g$
+::: answers
+**1. Parts:**  
+1) $7x$, $-5$; coeff: 7; const: $-5$  
+2) $3a$, $4b$, $-9$; coeffs: 3, 4; const: $-9$  
+3) $5x$, $2y$, $-6$; coeffs: 5, 2; const: $-6$  
+4) $-y$, $12$; coeff: $-1$; const: 12  
+5) $\frac12 m$, 4, $-3n$; coeffs: $\frac12$, $-3$; const: 4  
 
-**D. Match**
-a→A, b→B, c→C, d→D, e→E
+**2. Words:**  
+6) add 9 to $t$  
+7) half of $x$  
+8) four times one less than $n$  
+9) triple $p$, plus 7  
+10) double after adding 3  
 
-**E. WODB** *(many answers okay—justify!)*
-16\) All four are equivalent to $2x+6$ → you could say “none doesn’t belong,” or pick one and justify.
-17\) $5(n-2)=5n-10$ differs from the others (which equal $5n-2$ or $5n+10$).
+**3. Situations:**  
+11) $x+6$  
+12) $20+8m$  
+13) $50-3t$  
+14) length = $w+5$; perimeter = $4w+10$  
+15) $2+5g$  
 
-**F. Error Analysis**
-18\) The coefficient is $-1$ in $-y$; a lone variable has an implied 1, and the sign belongs to the term.
-19\) “6 fewer than a number” means *take 6 away from the number* → $x-6$, not $6-x$.
-20\) Try $x=1$: $2x+3=5$ but $2(x+3)=8$. Not the same.
+**4. Previous Mix:**  
+16) $|{-3}| + |n|$  
+17) $\text{GCF}(p,12) \times k$ (student picks k)  
+18) $\frac12\,(x - (-8))$ or $\frac12\,(x+8)$  
 
-**G. Real-World Mix**
-21\) $5n+2$ and $2+5n$
-22\) $7+0.25h$
-23\) distance $= 60t$; with a 30-mile head start: $30+60t$
+**5. Match:** a→A, b→B, c→C, d→D, e→E  
 
-**Challenge**
-24\) sample stories:
+**6. WODB:**  
+19) $2(x+3)$ changes order → not equivalent to the rest  
+20) $5(n+2)$ differs from $5n-2$ forms  
 
-* “Buy $x$ movie tickets at \$2 each and a \$6 service fee” → $2x+6$
-* “Two packs of snacks at \$x each, plus \$6 delivery” → $2x+6$
-  Both describe “two times something, then add six,” so both fit.
+**7. Errors:**  
+21) Coeff is $-1$, not 0; the sign belongs to the term  
+22) Should be $x-6$  
+23) Try $x=1$: $2x+3=5$ vs $2(x+3)=8$  
 
-25. e.g., $x=1$: $2x+3=5$ but $2(x+3)=8$ → not equal. This shows **grouping** changes the meaning: $2x+3$ is “double $x$, then add 3,” while $2(x+3)$ is “add 3, then double.”
+**8. Real-World:**  
+24) $5n+2$ and $2+5n$  
+25) $7+0.25h$  
+26) $60t$; $30+60t$  
 
+**9. Challenge:**  
+27) e.g., “2 packs of $x$ snacks plus $6 delivery” and “$2 tickets plus $6 fee”  
+28) $x=1$: $5\neq 8$
 :::

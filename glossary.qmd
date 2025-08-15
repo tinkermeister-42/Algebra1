@@ -411,6 +411,18 @@ A math operation that means repeated addition or combining equal groups.
 
 ---
 
+### Multiplication by proximity {#glossary-multiplication-by-proximity}
+
+Multipliation by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. Between them.
+
+> **Examples**
+>
+> - $3x$
+> - $5(x-1)$
+> - $(2x +5)(3x-1)$
+
+---
+
 ### Number line {#glossary-number-line}
 
 A straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.
