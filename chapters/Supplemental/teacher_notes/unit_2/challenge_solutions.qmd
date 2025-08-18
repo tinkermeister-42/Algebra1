@@ -4,13 +4,21 @@
 
 :::{.answers}
 
+24. $\frac{x + 3}{2(y-2)}$
+
+25. $(|5 - x| + 3)^2$
+
 :::
 
 ## Lesson 2
 
 :::{.answers}
 
+24. *Answers vary* 
+    Conclusion: Evidence suggests these expressions are equivalent.
 
+25. *Answers vary*
+    Conclusion: Evidence suggests these expressions are equivalent.
 :::
 
 ## Lesson 3

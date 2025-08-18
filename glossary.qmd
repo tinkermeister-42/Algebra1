@@ -28,6 +28,16 @@ It lets us describe patterns, write rules, and solve problems that work in many 
 
 ---
 
+### Calculate {#glossary-calculate}
+
+To **calculate** is to find an answer by using numbers and operations (add, subtract, multiply, divide).
+
+> **Example:**
+>
+> To calculate $7 + 5$, we add to get 12.
+
+---
+
 ### Calculus {#glossary-calculus}
 
 Calculus is a branch of math that helps us understand change and motion.
@@ -56,6 +66,16 @@ That means it can be divided evenly by numbers other than 1 and itself.
 > **Example:**
 >
 > 12 is composite because 2, 3, 4, and 6 all divide it evenly.
+
+---
+
+### Compute {#glossary-compute}
+
+To **compute** is another way to say find the answer in math by doing the steps.
+
+> **Example:**
+>
+> To compute $3 \times 4$, we multiply to get 12.
 
 ---
 
@@ -162,6 +182,33 @@ Two numbers are equivalent if they have **the same value**, even if they look di
 > **Example:**
 >
 > $\frac{1}{2}$, 0.5, and 50% are all equivalent.
+
+---
+
+### Equivalent expressions {#glossary-equivalent-expressions}
+
+Two expressions are equivalent if they have the same value for every number you substitute or if they can be transformed into the same expression using properties of operations.
+
+> **Example:**
+>
+> Take the following two expressions:
+>
+> A) $3x - 3$
+> B) $3(x-1)$
+>
+> These expressions are equivalent because, by the distributive property, expression B is $3x - 3$.
+
+---
+
+### Evaluate {#glossary-evaluate}
+
+To find the value of an expression by substituting numbers for the variables and performing the calculations.
+
+> **Example:**
+>
+> Evaluate the expression $2x - 5$ when $x = 3$.
+>
+> $2(3) - 5 = 6 - 5 = 1$
 
 ---
 
@@ -551,6 +598,23 @@ A part is one piece of the whole. It’s often what you’re looking for in a pe
 
 ---
 
+### PEMDAS {#glossary-pemdas}
+
+**PEMDAS** is an acronym that helps us remember the order of operations.
+
+**P** - parentheses
+**E** - exponents
+**M** - multiplication
+**D** - division
+**A** - addition
+**S** - subtraction
+
+Some people remember PEMDAS as "**P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally".
+
+Remember that multiplication and division are the same operation as each other and so we do them left to right. The same is true for addition and subtraction. 
+
+---
+
 ### Percent {#glossary-percent}
 
 A percent is a way of expressing a number **out of 100**. The symbol **%** means “per hundred.”
@@ -693,6 +757,16 @@ A remainder is what’s left over after dividing when the number doesn’t go in
 
 ---
 
+### Result {#glossary-result}
+
+The result is the final answer you get after evaluating or simplifying an expression.
+
+> **Example:**
+>
+> If you evaluate $3x+4$ when $x=2$, the result is $3(2)+4=10$.
+
+---
+
 ### Simplest Form {#glossary-simplest-form}
 
 A fraction is in simplest form when the numerator and denominator have **no common factors** except 1.
@@ -745,13 +819,13 @@ An operation that finds the difference between two numbers.
 
 ---
 
-### Sum {#glossary-sum}
+### Substitution {#glossary-substitution}
 
-A sum is the **result of adding** two or more numbers.
+Substitution is the process of replacing a variable with a number or another expression in an equation or expression.
 
-> **Example: **
+> **Example:**
 >
-> The sum of 7 and 8 is `15`, because `7 + 8 = 15`.
+> If $x = 3$, then substituting $x$ in $2x + 5$ gives $2(3) + 5 = 11$.
 
 ---
 
@@ -784,6 +858,17 @@ A **term** is one part of an expression. Terms are separated by plus or minus si
 >
 > In the expression \(4x + 3 - 2y\), there are **three** terms:  
 > \(4x\), \(3\), and \(-2y\)
+
+---
+
+### Value {#glossary-value}
+
+The value of an expression or variable is the amount it is worth.
+
+> **Example:**
+>
+> The value or $5 + 3$ is 8.
+> If $x = 4$, then the value of $2x$ is $2(4)=8$.
 
 ---
 

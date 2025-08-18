@@ -1,187 +1,447 @@
 # 2.2 – Evaluating Expressions {.unnumbered}
 
-Once we know how to write algebraic expressions, the next step is to **evaluate** them. That means plugging in a number for each variable and simplifying the result. This is like testing what an expression equals when we know the value of the variable.
+Once we know how to write algebraic expressions, the next step is to {{< glink evaluate >}} them. That means plugging in a number for each variable and simplifying the {{< glink result >}}. This is like testing what an expression equals when we know the value of the variable.
 
-In this lesson, you’ll practice **substituting** values into expressions and using **order of operations** (PEMDAS) to simplify. You’ll also start seeing how some expressions are always equal — even if they look different at first.
+In this lesson, you’ll practice **substituting** values into expressions and using the {{< glink order of operations >}} (PEMDAS) to simplify. You’ll also start seeing how some expressions are always equal — even if they look different at first.
 
 ---
 
 :::{.objectives}
 - I can substitute values into expressions and simplify them  
 - I can use the correct order of operations with variables and parentheses  
-- I can recognize when two expressions are equivalent  
+- I can use substitution to show two expressions are equivalent
 :::
 
 ---
 
 :::{.vocab}
-{{< glink evaluate >}}, {{< glink substitute >}}, {{< glink equivalent expressions >}}, {{< glink order of operations >}}, {{< glink parentheses >}}
+{{< glink evaluate >}}, {{< glink expression >}}, {{< glink operation >}}, {{< glink result >}}, {{< glink value >}}, {{< glink variable >}}
+
 :::
 
 ---
 
-:::{.warmup collapse=true}
+## 🔥 Warm-Up
+
 1. What do you get if you simplify this expression?  
-   \[
+   $$
    3 + 2 \cdot 4
-   \]  
-   Why do we multiply before adding?
+   $$
 
-2. A student says \(2x + 5\) and \(5 + 2x\) are different. Do you agree? Why or why not?
+2. In what ways are $2x + 5$ and $5 + 2x$ different? In what ways are they the same?
 
-3. What happens when you square a negative number, like \((-3)^2\)? What if you forget the parentheses?
-
-> These questions build on Unit 1 thinking and help students prepare to handle substitution and order of operations correctly — especially with negatives and parentheses.
-:::
+3. A student evaluates $(-3)^2$ and gets -9. Are they correct? Why or why not?
 
 ---
 
-## 🧠 Learn Together
+## 👥 Learn Together
 
 ### 2.2.1 – What Does It Mean to Evaluate?
 
-To **evaluate** an expression means to find its value by **substituting** a number for the variable.
+To **evaluate** an {{< glink expression >}} means to find its {{< glink value >}} by **substituting** (replacing) the variable with a number.
 
-> **Example:**
->
-> \[
-> 4x + 1 \text{ when } x = 3
-> \]
-> \[
-> = 4 \cdot 3 + 1 = 12 + 1 = 13
-> \]
+**Example 1:**
 
-> _Tip: Always put parentheses around the number you substitute — especially if it’s negative!_
+Evaluate $4x + 1$ when $x = 3$.
+
+First we replace the $x$ with what it is.
+
+$$
+4(\color{red}3\color{black}) + 1
+$$
+
+Now we simplify (or {{< glink calculate >}}) the {{< glink result >}}.
+
+$$
+4(3) + 1 = 12 + 1 = 13
+$$
+
+:::{.remember}
+When you see "**=**", think "**is**". In the previous example, we could say "x **is** 3".
+:::
+
+**Example 2:**
+
+Evaluate $3 - 2x$ when $x = -4$.
+
+First substitute.
+
+$$
+3 - 2(\color{red}{-4}\color{black})
+$$
+
+Then simplify.
+
+$$
+3 - 2(-4) = 3 + 8 = 11
+$$
+
+:::{.gotcha}
+**Always** put parentheses around the number you substitute — especially if it’s negative!
+:::
+
+:::{.you-try title="Evaluate $5x-2$ when $x=-3$"}
+
+$$
+5(\color{red}-3\color{black}) - 2 = -15 - 2 = -17
+$$
+
+:::
+
+Now that you know how to evaluate an expression, let's try some more complicated ones that will require us to remember our {{< glink order of operations >}}.
 
 ---
 
 ### 2.2.2 – Using PEMDAS with Substitution
 
-You still follow the same **order of operations**:
+Evaluating expressions is just one additional step on top of the order of operations. First we substitute, and then we apply {{< glink PEMDAS >}}. 
 
-**P**arentheses → **E**xponents → **M/D** → **A/S**
+**Example 1:**
 
-> **Example:**
->
-> \[
-> 2(x + 3)^2 \text{ when } x = 1
-> \]
-> \[
-> = 2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
-> \]
+Evaluate $2(x + 3)^2$ when $x = 1$.
 
-> _Common mistake: Forgetting to square the whole quantity inside parentheses._
+First we substitute.
 
----
+$$
+2((\color{red}{1}\color{black}) + 3)^2
+$$
 
-:::{.you-try collapse=true title="📝 Try Substitution and Simplifying"}
-Evaluate each expression.
+Then we simplify.
 
-1. \(3x + 5\) when \(x = 4\)  
-2. \((x - 2)^2\) when \(x = 5\)  
-3. \(2x - 4y\) when \(x = 3,\ y = 1\)  
-4. \(\frac{x + 6}{2}\) when \(x = 8\)  
+$$
+2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
+$$
+
+**Example 2:**
+
+Evaluating expressions works the same way if the variable shows up more than once. This expression has the variable $y$ in two places.
+
+Evaluate $3(2 - y) + 5(y - 2)$ when $y=-4$.
+
+Substitute:
+
+$$
+3(2 - (\color{red}{-4})\color{black}) + 5((\color{red}{-4}\color{black}) - 2)
+$$
+
+Now simplify:
+
+$$
+3(2 -(-4)) + 5((-4) - 2) = 3(6) + 5(-6) = 18 - 30 = -12
+$$
+
+:::{.you-try title="Evaluate $20(x - 2) + 2x^2$ when $x=5$."}
+
+Substitute:
+$$
+20((\color{red}{5}\color{black}) - 2) + 2(\color{red}{5}\color{black})^2
+$$
+
+Simplify:
+
+$$
+20(5 - 2) + 2(5)^2 = 20(3) + 2(25) = 60 - 50 = 10
+$$
+
 :::
 
 ---
 
-### 2.2.3 – Why Parentheses Matter
+### 2.2.3 – Evaluating Expressions With Multiple Variables
 
-Let’s look at this expression:
+It may look more difficult, but there is no difference between evaluating expressions with one variable and evaluating them with 2 or more variables.
 
-\[
--3^2 \quad \text{vs.} \quad (-3)^2
-\]
+In the following example, we have the variables $a$ and $b$. 
 
-- \(-3^2 = -(3^2) = -9\)  
-- \((-3)^2 = (-3) \cdot (-3) = 9\)
+**Example 1:**
 
-> _Tip: Without parentheses, the negative sign applies **after** squaring._
+Evaluate the expression $2a - 3b$ when $a=2$ and $b=1$.
 
----
+We do exactly what we did in the previous examples. First we substitute for $\color{blue}{a}$ and $\color{red}{b}$:
 
-:::{.you-try collapse=true title="💥 Parentheses Practice"}
-Evaluate carefully:
+$$
+2(\color{blue}{2}\color{black}) - 3(\color{red}{1}\color{black})
+$$
 
-1. \(-4^2\)  
-2. \((-4)^2\)  
-3. \((x - 1)^2\) when \(x = 6\)  
-4. \(-x^2 + 2x\) when \(x = 3\)
+Then we simplify:
+
+$$
+2(2) - 3(1) = 4 - 3 = 1
+$$
+
+
+**Example 2:**
+
+Evaluate $12x -3y^2$ when $x=7$ and $y=-3$.
+
+First substitute for $\color{blue}{x}$ and $\color{red}{y}$. Be careful with the negatives!
+
+$$
+12(\color{blue}{7}\color{black}) - 3(\color{red}{-3}\color{black})^2
+$$
+
+Now we simplify:
+
+$$
+12(7) - 3(-3)^2 = 84 - 3(9) = 84 - 27 = 57
+$$
+
+:::{.you-try title="Evaluate $\frac{1}{2}x^2 - 3y$ when $x = 4$ and $y = 3$."}
+
+First substitute for $\color{blue}{x}$ and $\color{red}{y}$.
+
+$$
+\frac{1}{2}(\color{blue}{4}\color{black})^2 - 3(\color{red}{3}\color{black})
+$$
+
+Now simplify:
+
+$$
+\frac{1}{2}(4)^2-3(3) = \frac{1}{2}(16)-9=8-9=-1
+$$
+
 :::
 
 ---
 
-### 2.2.4 – Equivalent Expressions
+### 2.2.4 – Testing For Equivalence
 
-Sometimes two expressions look different but always give the same result.
+Sometimes two expressions look different but always give the same result. We call these {{< glink equivalent expressions >}}. 
 
-> **Example:**
->
-> \[
-> 3x + 2x = 5x
-> \]
-> Even if you substitute any value for \(x\), both expressions give the same result. Try it!
+To test for equivalence, we can substitute values into each expression and see if they give the same result.
 
-> **Try it:**
->
-> \[
-> 3x + 2x \quad \text{vs.} \quad 5x \text{ when } x = 4
-> \]
-> \[
-> = 12 + 8 = 20 \quad \text{vs.} \quad 5 \cdot 4 = 20
-> \]
+**Example 1:**
 
-These are called **equivalent expressions** — they look different but are always equal.
+Test if the expressions $5x - 25$ and $5(x - 5)$ are equivalent.
 
-> _Visual idea: Use an input-output table comparing expressions side by side._
+Let's try $x=9$:
 
----
+$$
+\begin{align*}
+5(9) - 25 &= 45 - 25 &= 20 \\
+5(9 - 5) &= 5(4) &= 20
+\end{align*}
+$$
 
-:::{.you-try collapse=true title="💭 Are These Equivalent?"}
-Try evaluating both expressions when \(x = 2\), \(x = 5\), and \(x = 10\). Are they always the same?
+They both gave the same result and so we have evidence that the two expressions are equivalent.
 
-1. \(2x + 3x\) and \(5x\)  
-2. \(3(x + 4)\) and \(3x + 12\)  
-3. \(x^2 + 4\) and \((x + 2)^2\)  
-4. \(2(x + 3) - 1\) and \(2x + 5\)
+**Example 2:**
 
-Which are equivalent? How do you know?
+Test if expressions $3(x - 1)$ and $3x - 2$ are equivalent.
+
+Let's try $x = 2$:
+
+$$
+\begin{align*}
+3((2)-1) &= 3(1) &= 3 \\
+3(2) - 2 &= 6 - 2 &= 4
+\end{align*}
+$$
+
+These two expressions are **not** equivalent because they give different results when substituting the same number for $x$.
+
+:::{.gotcha title="What does this prove?"}
+When we substitute numbers to check if two expressions are equivalent, we are really testing a {{< glink hypothesis >}}:
+
+- If the two expressions give **different results** for the same substitution, then they are **not equivalent**.
+
+- If the two expressions give the **same result** for a substitution, that is **evidence** that they are equivalent, but it **does not** prove they are always the same.
+
+**Example:**
+Test if $6y$ and $2y$ are equivalent expressions.
+
+Try $y = 0$.
+
+$$
+\begin{align*}
+6(0) &= 0 \\
+2(0) &= 0
+\end{align*}
+$$
+
+We got the same result, so this is **evidence** that they could be equivalent. 
+
+But what if we try $y=3$?
+
+$$
+\begin{align*}
+6(3) &= 18 \\
+2(3) &= 6
+\end{align*}
+$$
+
+This proves that the expressions are **not equivalent**.
+
+For now we can only test the hypothesis. In section 2.6 we will learn how to **prove** two expressions are equivalent.
+
 :::
 
 ---
 
-## 🏋️ Practice On Your Own
+:::{.you-try-m title="Are they equivalent?"}
 
-Evaluate each expression by substituting the given value(s).
+Test if $9y - 3$ is equivalent to $3(3y - 2) + 3$ using $y = 2$.
 
-1. \(2x + 5\) when \(x = 6\)  
-2. \(x^2 + 3x\) when \(x = 4\)  
-3. \((x - 2)^2\) when \(x = 1\)  
-4. \(2a - 3b\) when \(a = 3, b = 5\)  
-5. \(\frac{x + 10}{5}\) when \(x = 15\)  
-6. \(-x^2 + 4x - 1\) when \(x = 2\)  
+Did you get the same result? What does your answer tell you about the two expressions?
 
-Decide whether each pair is equivalent. Use substitution to test values.
+:::
 
-7. \(4x + 2x\) and \(6x\)  
-8. \(2(x + 3)\) and \(2x + 6\)  
-9. \(x^2 + 2x + 1\) and \((x + 1)^2\)  
-10. \(5x - 3\) and \(3x + 5\)
+:::{.answer title="Answer"}
+If we substitute $y = 2$ we get:
+
+$$
+\begin{align*}
+9(2) - 3 &= 18 - 3 &= 15 \\
+3(3(2) - 2) + 3 &= 3(6 - 2) + 3 = 3(4) + 3 = 12 + 3 &= 15
+\end{align*}
+$$
+
+We have evidence that the two expressions are equivalent but we don't know for certain. 
+
+:::
 
 ---
 
-:::{.answers collapse=true}
-**✅ Answer Key**
+## ✍️ Practice On Your Own
 
-1. 17  
-2. \(16 + 12 = 28\)  
-3. \((-1)^2 = 1\)  
-4. \(6 - 15 = -9\)  
-5. \(\frac{25}{5} = 5\)  
-6. \(-4 + 8 - 1 = 3\)
+**Single variable**
 
-7. Yes (both equal \(6x\))  
-8. Yes  
-9. Yes  
-10. No  
+1. Evaluate $3x + 4$ when $x=5$
+
+2. Evaluate $7 - 2x$ when $x=-3$
+
+3. Evaluate $2x^2$ when $x=2$
+
+4. Evaluate $\frac{1}{2}x + 3$ when $x=6$
+
+5. Evaluate $-x + 7$ when $x=-2$
+
+---
+
+**Single variable, repeated**
+
+6. Evaluate $x + x + x$ when $x=4$
+
+7. Evaluate $2x + 3x$ when $x=2$
+
+8. Evaluate $x^2 + 3x^2$ when $x=1$
+
+9. Evaluate $5x - 2x + 4$ when $x=3$
+
+10. Evaluate $2(x+x) + 1$ when $x=-1$
+
+---
+
+**Parentheses / PEMDAS**
+
+11. Evaluate $2(x+3)^2$ when $x=1$
+
+12. Evaluate $3(x-2)^2 + 4$ when $x=3$
+
+13. Evaluate $(2x+1)(x-1)$ when $x=2$
+
+14. Evaluate $(x+2)^2 - 3x$ when $x=1$
+
+15. Evaluate $\frac{3(x+4)}{2}$ when $x=2$
+
+---
+
+**Multiple variables**
+
+16. Evaluate $2a - 3b$ when $a=3, b=5$
+
+17. Evaluate $4x + 2y$ when $x=2, y=-1$
+
+18. Evaluate $\frac{1}{2}x^2 - 3y$ when $x=4, y=3$
+
+19. Evaluate $3x - 2y + z$ when $x=1, y=2, z=5$
+
+20. Evaluate $(x+y)^2 - xy$ when $x=2, y=3$
+
+---
+
+**Testing Equivalence**
+
+21. Are $2(x+3)$ and $2x+6$ equivalent? Test $x=4$
+
+22. Are $4x + 2x$ and $6x$ equivalent? Test $x=-1$
+
+23. Are $x^2 + 2x + 1$ and $(x+1)^2$ equivalent? Test $x=2$
+
+
+---
+
+**Challenge Problems**
+
+24. Test if $3(a + b) - 2(a - b)$ and $a + 5b$ are equivalent. Try at least two different sets of values for $a$ and $b$.
+
+25. Test if $2(a + b)^2 - 2a^2 - 4ab$ and $2b^2 are equivalent. Try at least two different sets of values for $a$ and $b$.
+
+---
+
+:::{.answers}
+**Single variable**
+
+1. 19
+
+2. 13
+
+3. 8
+
+4. 6
+
+5. 9
+
+---
+
+**Single variable, repeated**
+
+6. 12
+
+7. 10
+
+8. 4
+
+9. 13
+
+10. -3
+
+---
+
+**Parentheses / PEMDAS**
+
+11. 32
+
+12. 7
+
+13. 5
+
+14. 6
+
+15. 9
+
+---
+
+**Multiple variables**
+
+16. -9
+
+17. 6
+
+18. -1
+
+19. 4
+
+20. 19
+
+---
+
+**Testing Equivalence**
+
+21. evidence of equivalence
+
+22. evidence of equivalence
+
+23. evidence of equivalence
+
 :::

@@ -83,26 +83,18 @@ You have two situations:
 1. The total number of pencils in 7 boxes.
 2. Whether the total number of pencils is equal to 20.
 
-- Can both be represented by a single expression? 
-- Which one cannot? 
+- Can situation 1 be represented with a single expression?
+- How about situation 2? 
 - Explain your reasoning.
 :::
 ::: {.answer title="Answer"}
-- Situation 1: Yes — you can write `7p` if `p` is pencils per box.
-- Situation 2: No — this is a comparison, not a single expression. Expressions describe quantities; they don’t make comparisons.
+- Situation 1: Yes — you can write **7p** if **p** is pencils per box.
+- Situation 2: No — this is a comparison, not a single expression. 
+
+
+Expressions describe quantities; they don’t make comparisons.
 :::
 
-
-::: {.gotcha title="Where did the multiply sign go?"}
-In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink multiplication by proximity >}}).
-
-**Three ways to write “3 times x”:**
-- $3 \times x$  *(rarely used)*  
-- $3 \cdot x$  
-- $3x$  
-
-Why avoid $\times$? To keep it from looking like the variable x.
-:::
 
 **Example:**
 
@@ -118,9 +110,21 @@ Back to the apple boxes: before, you had one box. Now suppose you have 5 boxes, 
 
 If each box has **x** apples, then the total is $5 \cdot x$ or simply $5x$.
 
-::: {.you-try title="10 boxes of pencils"}
+::: {.you-try title="Write an expression that represents 10 boxes of pencils"}
 Let $p$ = pencils per box.  
 Total pencils = $10p$
+:::
+
+::: {.gotcha title="Where did the multiply sign go?"}
+In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink multiplication by proximity >}}).
+
+**Three ways to write “3 times x”:**
+
+- $3 \times x$  *(rarely used)*  
+- $3 \cdot x$  
+- $3x$  
+
+Why avoid $\times$? To keep it from looking like the variable x.
 :::
 
 ---
@@ -133,30 +137,30 @@ Example: $4x + 2y - 7$
 
 $$
 \huge{
-\underbrace{\color{blue}{4}x}_{\text{term}}
+\underbrace{\color{blue}{4}\color{black}{x}^2}_{\text{term}}
 \;
-\underbrace{+\color{blue}{2}y}_{\text{term}}
+\underbrace{+\color{blue}{2}\color{black}{y}}_{\text{term}}
 \;
 \underbrace{-\color{red}{7}}_{\text{term}}
 }
 $$
 
-- **Terms** are separated by $+$ or $-$: $4x$, $2y$, $-7$  
-- **Coefficients** multiply a variable: 4 and 2  
-- **Constants** are numbers that don’t change: $-7$
+- **Terms** are separated by $+$ or $-$: $4x^2$, $2y$, $-7$ 
+- **Coefficients** multiply a variable: $\color{blue}{4}$ and $\color{blue}{2}$  
+- **Constants** are numbers that don’t change: $\color{red}{-7}$
 
 ::: {.gotcha title="Don’t forget the sign!"}
 - The sign (+ or −) belongs to the term.  
 - A lone variable has an **implied coefficient** of 1.
 
 **Example 1:**  
-$-5x^2 - 2x$ → terms: $-5x^2$, $-2x$  
+$-5x^2 - 2x$ → terms: $-5x^2$, $-2x$; coefficients: -5, -2  
 
 **Example 2:**  
 $3x^2 + x - y$ → terms: $3x^2$, $x$, $-y$; coefficients: 3, 1, -1
 :::
 
-::: {.you-try collapse=true title="Make your own expression with 4+ terms"}
+::: {.you-try collapse=true title="Make your own expression with 4+ terms. List the parts."}
 Example: $18x - 2y + 3z - 1$  
 Terms: $18x$, $-2y$, $3z$, $-1$  
 Coefficients: 18, -2, 3  
@@ -190,19 +194,18 @@ Constant: -1
 
 ---
 
-::: {.you-try title="Rectangle width from length"}
+::: {.you-try-m title="Rectangle width from length"}
 A rectangle has length **L**. The width is 2 more than 4 times the length.  
+Find an expression for the width **W** in terms of the length **L**,
+:::
+
+:::{.answer title="Answer"}
 $4L + 2$
 :::
 
 ---
 
-**Why Order Matters:**  
-Knowing the **order of operations** helps you write the correct expression.  
-- “Double $x$, then add 3” → $2x + 3$  
-- “Add 3 to $x$, then double” → $2(x + 3)$  
-
----
+Some words and phrases show up very frequently when describing mathematical situations. Here is a table of some of the most common ones to help you!
 
 ### Words → Expressions Quick Reference
 
@@ -222,128 +225,184 @@ Knowing the **order of operations** helps you write the correct expression.
 | sum then multiply                    | parentheses         | “Add 3 to $x$, then double” → $2(x+3)$      |
 | multiply then add                    | no parentheses      | “Double $x$, then add 3” → $2x + 3$         |
 
+:::{.callout-tip}
+
+Need more examples? Download [this sheet](/resources/KeywordTranslations.pdf) that has many more examples!
+
+:::
+
 ---
 
 ## ✍️ Practice On Your Own
 
-**1. Identify the Parts**  
-List terms, coefficients, and constants.  
+**Identify the Parts**  
+
+For each of the following expressions, list the terms, coefficients, and constants.  
+
+
 1. $7x - 5$  
+
 2. $3a + 4b - 9$  
+
 3. $5x + 2y - 6$  
+
 4. $-y + 12$  
+
 5. $\tfrac12 m + 4 - 3n$
 
 ---
 
-**2. Say It in Words**  
+**Say It in Words**  
+
+For each of the following expressions, write a sentence that describes the expression in words. For example, $x - 3$ could be "three less than a number".
+
+
 6. $9 + t$  
+
 7. $0.5x$  
+
 8. $4(n - 1)$  
+
 9. $3p + 7$  
+
 10. $2(x+3)$
 
 ---
 
-**3. From Situation to Expression**  
+**From Situation to Expression**  
+
+For each of the following situations, write an expression that represents it. For example, "Three more than a number n" could be $n + 3$.
+
 11. You have $x$ stickers. Your friend gives you 6 more.  
-12. A gym costs $20 plus $8 per month for $m$ months.  
+
+12. A gym costs $20 plus $8 per month for $m$ months. 
+
 13. A tank starts with 50 liters and drains 3 liters per minute for $t$ minutes.  
-14. A rectangle’s width is $w$; its length is 5 more than its width. (Write length and perimeter.)  
+
+14. A rectangle’s width is $w$; its length is 5 more than its width. (Write an expression for the perimeter of the rectangle.)  
+
 15. A phone plan includes 2 GB free, then $5 per extra GB $g$.
 
 ---
 
-**4. Previous Knowledge Mix** *(review from Unit 1)*  
+**Bringing It Back** *(review from Unit 1)*  
+
 16. Write an expression for the sum of the absolute values of $-3$ and $n$.  
-17. If $p$ is divisible by 4, write an expression showing $p$ as a product of its GCF with 12.  
-18. Write an expression for “half the distance from $-8$ to $x$ on the number line.”
+
+17. Create a factor tree for the product of 12 and $p$.
+
+18. Write an expression for half the distance from 2 to x on the number line.
 
 ---
 
-**5. Match the Story to the Expression**  
+**Match the Story to the Expression**  
+
 Stories:  
-a) “Double the amount after adding 2.”  
-b) “Start at 10, then subtract 3 each day $d$.”  
-c) “$4 per ticket for $t$ tickets, plus a $6 fee.”  
-d) “Three groups of $x$, then add 1.”  
-e) “Half of $m$, then add 5.”
 
-Expressions:  
-A) $2(x+2)$ B) $10-3d$ C) $4t+6$ D) $3x+1$ E) $\tfrac12 m+5$
+19. “Double the amount after adding 2.”  
 
----
+20. “Start at 10, then subtract 3 each day $d$.”  
 
-**6. Which One Doesn’t Belong?**  
-19. $2x+6$ $2(x+3)$ $x+x+6$ $x+3+x+3$  
-20. $5n-2$ $5(n-2)$ $n+n+n+n+n-2$ $5(n+2)$
+21. “$4 per ticket for $t$ tickets, plus a $6 fee.” 
 
----
+22. “Three groups of $x$, then add 1.” 
 
-**7. Error Analysis**  
-21. A student says the coefficient of $y$ in $-y+9$ is 0. Explain.  
-22. “6 fewer than a number” is written as $6-x$. Explain and correct.  
-23. A student says $2x+3$ and $2(x+3)$ are the same. Give a counterexample.
+23. “Half of $m$, then add 5.”
 
----
+Expressions:
 
-**8. Real-World Mix**  
-24. Each notebook costs $5 and a binder costs $2. Write two expressions for $n$ notebooks.  
-25. You start with 7 points and earn 0.25 points per hour $h$.  
-26. A car travels 60 mph. How far in $t$ hours? What if it starts 30 miles ahead?
+A) $2(x+2)$ 
+
+B) $\tfrac12 m+5$
+
+C) $10-3d$  
+
+D) $4t+6$  
+
+E) $3x+1$
 
 ---
 
-**9. Challenge Problems**  
-27. Make two different stories that fit $2x+6$.  
-28. Find $x$ so $2x+3 \neq 2(x+3)$.
+
+**Challenge Problems**  
+
+24. Write an expression for:
+    *"The quotient of 3 more than $x$ and twice 2 fewer than $y$."*
+
+25.  Write an expression for:
+     *"The distance from 5 to $x$ on the number line, increased by 3 and then squared"*
 
 ---
 
-::: answers
-**1. Parts:**  
-1) $7x$, $-5$; coeff: 7; const: $-5$  
-2) $3a$, $4b$, $-9$; coeffs: 3, 4; const: $-9$  
-3) $5x$, $2y$, $-6$; coeffs: 5, 2; const: $-6$  
-4) $-y$, $12$; coeff: $-1$; const: 12  
-5) $\frac12 m$, 4, $-3n$; coeffs: $\frac12$, $-3$; const: 4  
+:::{.answers}
+**Identify Parts**  
 
-**2. Words:**  
+1) Terms: $7x$, $-5$
+   Coefficients: 7
+   Constant: $-5$  
+
+2) Terms: $3a$, $4b$, $-9$
+   Coefficients: 3, 4 
+   Constant: $-9$  
+
+3) Terms: $5x$, $2y$, $-6$ 
+   Coefficients: 5, 2 
+   Constant: $-6$ 
+
+4) Terms: $-y$, $12$ 
+   Coefficients: $-1$ 
+   Constant: 12  
+
+5) Terms: $\frac12 m$, 4, $-3n$
+   Coefficients: $\frac12$, $-3$
+   Constant: 4  
+
+**Say It in Words**
+
+These are possible answers, there are more.
+
 6) add 9 to $t$  
-7) half of $x$  
-8) four times one less than $n$  
-9) triple $p$, plus 7  
-10) double after adding 3  
 
-**3. Situations:**  
+7) half of $x$
+
+8) four times one less than $n$  
+
+9) triple $p$, plus 7
+
+10) double after adding 3 
+
+
+**From Situation to Expression** 
+
 11) $x+6$  
+
 12) $20+8m$  
+
 13) $50-3t$  
-14) length = $w+5$; perimeter = $4w+10$  
+
+14) length = $w+5$; 
+    perimeter = $4w+10$  
+
 15) $2+5g$  
 
-**4. Previous Mix:**  
+**Bringing It Back**  
+
 16) $|{-3}| + |n|$  
-17) $\text{GCF}(p,12) \times k$ (student picks k)  
-18) $\frac12\,(x - (-8))$ or $\frac12\,(x+8)$  
 
-**5. Match:** a→A, b→B, c→C, d→D, e→E  
+17) Ask your teacher.  
 
-**6. WODB:**  
-19) $2(x+3)$ changes order → not equivalent to the rest  
-20) $5(n+2)$ differs from $5n-2$ forms  
+18) $\frac{1}{2}|2 - x|$ 
 
-**7. Errors:**  
-21) Coeff is $-1$, not 0; the sign belongs to the term  
-22) Should be $x-6$  
-23) Try $x=1$: $2x+3=5$ vs $2(x+3)=8$  
+**Match the Story to the Expression** 
 
-**8. Real-World:**  
-24) $5n+2$ and $2+5n$  
-25) $7+0.25h$  
-26) $60t$; $30+60t$  
+19. A
 
-**9. Challenge:**  
-27) e.g., “2 packs of $x$ snacks plus $6 delivery” and “$2 tickets plus $6 fee”  
-28) $x=1$: $5\neq 8$
+20. C
+
+21. D 
+
+22. E
+
+23. B  
+
 :::

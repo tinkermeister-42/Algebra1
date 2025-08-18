@@ -12,4 +12,10 @@ Need help finding all the factor pairs of a number? This chart lists every {{< g
 
 ---
 
+### Words to Expressions
+
+Translating from words to algebraic expressions can be a challenge. This chart lists many of the common words and phrases and shows how they are represented in expressions.
+
+[Download Chart](/resources/KeywordTranslations.pdf)
+
 *Want to suggest a resource or submit your own? Let me know!*
