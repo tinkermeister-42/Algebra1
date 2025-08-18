@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../../styles/custom-callouts.css">
@@ -700,13 +729,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="lesson-1" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="lesson-1"><span class="header-section-number">2.1</span> Lesson 1</h2>
 <div class="answers">
-
+<ol start="24" type="1">
+<li><p><span class="math inline">\(\frac{x + 3}{2(y-2)}\)</span></p></li>
+<li><p><span class="math inline">\((|5 - x| + 3)^2\)</span></p></li>
+</ol>
 </div>
 </section>
 <section id="lesson-2" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="lesson-2"><span class="header-section-number">2.2</span> Lesson 2</h2>
 <div class="answers">
-
+<ol start="24" type="1">
+<li><p><em>Answers vary</em> Conclusion: Evidence suggests these expressions are equivalent.</p></li>
+<li><p><em>Answers vary</em> Conclusion: Evidence suggests these expressions are equivalent.</p></li>
+</ol>
 </div>
 </section>
 <section id="lesson-3" class="level2" data-number="2.3">

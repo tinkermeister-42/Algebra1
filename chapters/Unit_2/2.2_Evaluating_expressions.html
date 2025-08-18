@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -679,14 +708,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link active" data-scroll-target="#learn-together">🧠 Learn Together</a>
+  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
+  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">👥 Learn Together</a>
   <ul class="collapse">
   <li><a href="#what-does-it-mean-to-evaluate" id="toc-what-does-it-mean-to-evaluate" class="nav-link" data-scroll-target="#what-does-it-mean-to-evaluate">2.2.1 – What Does It Mean to Evaluate?</a></li>
   <li><a href="#using-pemdas-with-substitution" id="toc-using-pemdas-with-substitution" class="nav-link" data-scroll-target="#using-pemdas-with-substitution">2.2.2 – Using PEMDAS with Substitution</a></li>
-  <li><a href="#why-parentheses-matter" id="toc-why-parentheses-matter" class="nav-link" data-scroll-target="#why-parentheses-matter">2.2.3 – Why Parentheses Matter</a></li>
-  <li><a href="#equivalent-expressions" id="toc-equivalent-expressions" class="nav-link" data-scroll-target="#equivalent-expressions">2.2.4 – Equivalent Expressions</a></li>
+  <li><a href="#evaluating-expressions-with-multiple-variables" id="toc-evaluating-expressions-with-multiple-variables" class="nav-link" data-scroll-target="#evaluating-expressions-with-multiple-variables">2.2.3 – Evaluating Expressions With Multiple Variables</a></li>
+  <li><a href="#testing-for-equivalence" id="toc-testing-for-equivalence" class="nav-link" data-scroll-target="#testing-for-equivalence">2.2.4 – Testing For Equivalence</a></li>
   </ul></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">🏋️ Practice On Your Own</a></li>
+  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✍️ Practice On Your Own</a></li>
   </ul>
 </nav>
     </div>
@@ -712,8 +742,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Once we know how to write algebraic expressions, the next step is to <strong>evaluate</strong> them. That means plugging in a number for each variable and simplifying the result. This is like testing what an expression equals when we know the value of the variable.</p>
-<p>In this lesson, you’ll practice <strong>substituting</strong> values into expressions and using <strong>order of operations</strong> (PEMDAS) to simplify. You’ll also start seeing how some expressions are always equal — even if they look different at first.</p>
+<p>Once we know how to write algebraic expressions, the next step is to <a href="../..\glossary.html#glossary-evaluate" class="glossary-link" data-original-term="evaluate" data-term="evaluate">evaluate</a> them. That means plugging in a number for each variable and simplifying the <a href="../..\glossary.html#glossary-result" class="glossary-link" data-original-term="result" data-term="result">result</a>. This is like testing what an expression equals when we know the value of the variable.</p>
+<p>In this lesson, you’ll practice <strong>substituting</strong> values into expressions and using the <a href="../..\glossary.html#glossary-order-of-operations" class="glossary-link" data-original-term="order of operations" data-term="order of operations">order of operations</a> (PEMDAS) to simplify. You’ll also start seeing how some expressions are always equal — even if they look different at first.</p>
 <hr>
 <div class="objectives">
 <ul>
@@ -721,177 +751,296 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>I can use the correct order of operations with variables and parentheses<br>
 </li>
-<li>I can recognize when two expressions are equivalent<br>
-</li>
+<li>I can use substitution to show two expressions are equivalent</li>
 </ul>
 </div>
 <hr>
 <div class="vocab">
-<p><a href="../..\glossary.html#glossary-evaluate" class="glossary-link" data-term="evaluate" data-original-term="evaluate">evaluate</a>, <a href="../..\glossary.html#glossary-substitute" class="glossary-link" data-term="substitute" data-original-term="substitute">substitute</a>, <a href="../..\glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>, <a href="../..\glossary.html#glossary-order-of-operations" class="glossary-link" data-term="order of operations" data-original-term="order of operations">order of operations</a>, <a href="../..\glossary.html#glossary-parentheses" class="glossary-link" data-term="parentheses" data-original-term="parentheses">parentheses</a></p>
+<p><a href="../..\glossary.html#glossary-evaluate" class="glossary-link" data-original-term="evaluate" data-term="evaluate">evaluate</a>, <a href="../..\glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a>, <a href="../..\glossary.html#glossary-operation" class="glossary-link" data-original-term="operation" data-term="operation">operation</a>, <a href="../..\glossary.html#glossary-result" class="glossary-link" data-original-term="result" data-term="result">result</a>, <a href="../..\glossary.html#glossary-value" class="glossary-link" data-original-term="value" data-term="value">value</a>, <a href="../..\glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
 </div>
 <hr>
-<div class="warmup" data-collapse="true">
+<section id="warm-up" class="level2">
+<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
 <ol type="1">
 <li><p>What do you get if you simplify this expression?<br>
-[ 3 + 2 ]<br>
-Why do we multiply before adding?</p></li>
-<li><p>A student says (2x + 5) and (5 + 2x) are different. Do you agree? Why or why not?</p></li>
-<li><p>What happens when you square a negative number, like ((-3)^2)? What if you forget the parentheses?</p></li>
+<span class="math display">\[
+3 + 2 \cdot 4
+\]</span></p></li>
+<li><p>In what ways are <span class="math inline">\(2x + 5\)</span> and <span class="math inline">\(5 + 2x\)</span> different? In what ways are they the same?</p></li>
+<li><p>A student evaluates <span class="math inline">\((-3)^2\)</span> and gets -9. Are they correct? Why or why not?</p></li>
 </ol>
-<blockquote class="blockquote">
-<p>These questions build on Unit 1 thinking and help students prepare to handle substitution and order of operations correctly — especially with negatives and parentheses.</p>
-</blockquote>
-</div>
 <hr>
+</section>
 <section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
+<h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
 <section id="what-does-it-mean-to-evaluate" class="level3">
 <h3 class="anchored" data-anchor-id="what-does-it-mean-to-evaluate">2.2.1 – What Does It Mean to Evaluate?</h3>
-<p>To <strong>evaluate</strong> an expression means to find its value by <strong>substituting</strong> a number for the variable.</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong></p>
-<p>[ 4x + 1 x = 3 ] [ = 4 + 1 = 12 + 1 = 13 ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Tip: Always put parentheses around the number you substitute — especially if it’s negative!</em></p>
-</blockquote>
+<p>To <strong>evaluate</strong> an <a href="../..\glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a> means to find its <a href="../..\glossary.html#glossary-value" class="glossary-link" data-original-term="value" data-term="value">value</a> by <strong>substituting</strong> (replacing) the variable with a number.</p>
+<p><strong>Example 1:</strong></p>
+<p>Evaluate <span class="math inline">\(4x + 1\)</span> when <span class="math inline">\(x = 3\)</span>.</p>
+<p>First we replace the <span class="math inline">\(x\)</span> with what it is.</p>
+<p><span class="math display">\[
+4(\color{red}3\color{black}) + 1
+\]</span></p>
+<p>Now we simplify (or <a href="../..\glossary.html#glossary-calculate" class="glossary-link" data-original-term="calculate" data-term="calculate">calculate</a>) the <a href="../..\glossary.html#glossary-result" class="glossary-link" data-original-term="result" data-term="result">result</a>.</p>
+<p><span class="math display">\[
+4(3) + 1 = 12 + 1 = 13
+\]</span></p>
+<div class="remember">
+<p>When you see “<strong>=</strong>”, think “<strong>is</strong>”. In the previous example, we could say “x <strong>is</strong> 3”.</p>
+</div>
+<p><strong>Example 2:</strong></p>
+<p>Evaluate <span class="math inline">\(3 - 2x\)</span> when <span class="math inline">\(x = -4\)</span>.</p>
+<p>First substitute.</p>
+<p><span class="math display">\[
+3 - 2(\color{red}{-4}\color{black})
+\]</span></p>
+<p>Then simplify.</p>
+<p><span class="math display">\[
+3 - 2(-4) = 3 + 8 = 11
+\]</span></p>
+<div class="gotcha">
+<p><strong>Always</strong> put parentheses around the number you substitute — especially if it’s negative!</p>
+</div>
+<div class="you-try" title="Evaluate $5x-2$ when $x=-3$">
+<p><span class="math display">\[
+5(\color{red}-3\color{black}) - 2 = -15 - 2 = -17
+\]</span></p>
+</div>
+<p>Now that you know how to evaluate an expression, let’s try some more complicated ones that will require us to remember our <a href="../..\glossary.html#glossary-order-of-operations" class="glossary-link" data-original-term="order of operations" data-term="order of operations">order of operations</a>.</p>
 <hr>
 </section>
 <section id="using-pemdas-with-substitution" class="level3">
 <h3 class="anchored" data-anchor-id="using-pemdas-with-substitution">2.2.2 – Using PEMDAS with Substitution</h3>
-<p>You still follow the same <strong>order of operations</strong>:</p>
-<p><strong>P</strong>arentheses → <strong>E</strong>xponents → <strong>M/D</strong> → <strong>A/S</strong></p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong></p>
-<p>[ 2(x + 3)^2 x = 1 ] [ = 2(1 + 3)^2 = 2(4)^2 = 2 = 32 ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Common mistake: Forgetting to square the whole quantity inside parentheses.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="📝 Try Substitution and Simplifying">
-<p>Evaluate each expression.</p>
-<ol type="1">
-<li>(3x + 5) when (x = 4)<br>
-</li>
-<li>((x - 2)^2) when (x = 5)<br>
-</li>
-<li>(2x - 4y) when (x = 3,&nbsp;y = 1)<br>
-</li>
-<li>() when (x = 8)<br>
-</li>
-</ol>
+<p>Evaluating expressions is just one additional step on top of the order of operations. First we substitute, and then we apply <a href="../..\glossary.html#glossary-pemda" class="glossary-link" data-original-term="PEMDAS" data-term="pemda">PEMDAS</a>.</p>
+<p><strong>Example 1:</strong></p>
+<p>Evaluate <span class="math inline">\(2(x + 3)^2\)</span> when <span class="math inline">\(x = 1\)</span>.</p>
+<p>First we substitute.</p>
+<p><span class="math display">\[
+2((\color{red}{1}\color{black}) + 3)^2
+\]</span></p>
+<p>Then we simplify.</p>
+<p><span class="math display">\[
+2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
+\]</span></p>
+<p><strong>Example 2:</strong></p>
+<p>Evaluating expressions works the same way if the variable shows up more than once. This expression has the variable <span class="math inline">\(y\)</span> in two places.</p>
+<p>Evaluate <span class="math inline">\(3(2 - y) + 5(y - 2)\)</span> when <span class="math inline">\(y=-4\)</span>.</p>
+<p>Substitute:</p>
+<p><span class="math display">\[
+3(2 - (\color{red}{-4})\color{black}) + 5((\color{red}{-4}\color{black}) - 2)
+\]</span></p>
+<p>Now simplify:</p>
+<p><span class="math display">\[
+3(2 -(-4)) + 5((-4) - 2) = 3(6) + 5(-6) = 18 - 30 = -12
+\]</span></p>
+<div class="you-try" title="Evaluate $20(x - 2) + 2x^2$ when $x=5$.">
+<p>Substitute: <span class="math display">\[
+20((\color{red}{5}\color{black}) - 2) + 2(\color{red}{5}\color{black})^2
+\]</span></p>
+<p>Simplify:</p>
+<p><span class="math display">\[
+20(5 - 2) + 2(5)^2 = 20(3) + 2(25) = 60 - 50 = 10
+\]</span></p>
 </div>
 <hr>
 </section>
-<section id="why-parentheses-matter" class="level3">
-<h3 class="anchored" data-anchor-id="why-parentheses-matter">2.2.3 – Why Parentheses Matter</h3>
-<p>Let’s look at this expression:</p>
-<p>[ -3^2 (-3)^2 ]</p>
+<section id="evaluating-expressions-with-multiple-variables" class="level3">
+<h3 class="anchored" data-anchor-id="evaluating-expressions-with-multiple-variables">2.2.3 – Evaluating Expressions With Multiple Variables</h3>
+<p>It may look more difficult, but there is no difference between evaluating expressions with one variable and evaluating them with 2 or more variables.</p>
+<p>In the following example, we have the variables <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p>
+<p><strong>Example 1:</strong></p>
+<p>Evaluate the expression <span class="math inline">\(2a - 3b\)</span> when <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b=1\)</span>.</p>
+<p>We do exactly what we did in the previous examples. First we substitute for <span class="math inline">\(\color{blue}{a}\)</span> and <span class="math inline">\(\color{red}{b}\)</span>:</p>
+<p><span class="math display">\[
+2(\color{blue}{2}\color{black}) - 3(\color{red}{1}\color{black})
+\]</span></p>
+<p>Then we simplify:</p>
+<p><span class="math display">\[
+2(2) - 3(1) = 4 - 3 = 1
+\]</span></p>
+<p><strong>Example 2:</strong></p>
+<p>Evaluate <span class="math inline">\(12x -3y^2\)</span> when <span class="math inline">\(x=7\)</span> and <span class="math inline">\(y=-3\)</span>.</p>
+<p>First substitute for <span class="math inline">\(\color{blue}{x}\)</span> and <span class="math inline">\(\color{red}{y}\)</span>. Be careful with the negatives!</p>
+<p><span class="math display">\[
+12(\color{blue}{7}\color{black}) - 3(\color{red}{-3}\color{black})^2
+\]</span></p>
+<p>Now we simplify:</p>
+<p><span class="math display">\[
+12(7) - 3(-3)^2 = 84 - 3(9) = 84 - 27 = 57
+\]</span></p>
+<div class="you-try" title="Evaluate $\frac{1}{2}x^2 - 3y$ when $x = 4$ and $y = 3$.">
+<p>First substitute for <span class="math inline">\(\color{blue}{x}\)</span> and <span class="math inline">\(\color{red}{y}\)</span>.</p>
+<p><span class="math display">\[
+\frac{1}{2}(\color{blue}{4}\color{black})^2 - 3(\color{red}{3}\color{black})
+\]</span></p>
+<p>Now simplify:</p>
+<p><span class="math display">\[
+\frac{1}{2}(4)^2-3(3) = \frac{1}{2}(16)-9=8-9=-1
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="testing-for-equivalence" class="level3">
+<h3 class="anchored" data-anchor-id="testing-for-equivalence">2.2.4 – Testing For Equivalence</h3>
+<p>Sometimes two expressions look different but always give the same result. We call these <a href="../..\glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>.</p>
+<p>To test for equivalence, we can substitute values into each expression and see if they give the same result.</p>
+<p><strong>Example 1:</strong></p>
+<p>Test if the expressions <span class="math inline">\(5x - 25\)</span> and <span class="math inline">\(5(x - 5)\)</span> are equivalent.</p>
+<p>Let’s try <span class="math inline">\(x=9\)</span>:</p>
+<p><span class="math display">\[
+\begin{align*}
+5(9) - 25 &amp;= 45 - 25 &amp;= 20 \\
+5(9 - 5) &amp;= 5(4) &amp;= 20
+\end{align*}
+\]</span></p>
+<p>They both gave the same result and so we have evidence that the two expressions are equivalent.</p>
+<p><strong>Example 2:</strong></p>
+<p>Test if expressions <span class="math inline">\(3(x - 1)\)</span> and <span class="math inline">\(3x - 2\)</span> are equivalent.</p>
+<p>Let’s try <span class="math inline">\(x = 2\)</span>:</p>
+<p><span class="math display">\[
+\begin{align*}
+3((2)-1) &amp;= 3(1) &amp;= 3 \\
+3(2) - 2 &amp;= 6 - 2 &amp;= 4
+\end{align*}
+\]</span></p>
+<p>These two expressions are <strong>not</strong> equivalent because they give different results when substituting the same number for <span class="math inline">\(x\)</span>.</p>
+<div class="gotcha" title="What does this prove?">
+<p>When we substitute numbers to check if two expressions are equivalent, we are really testing a <a href="../..\glossary.html#glossary-hypothesi" class="glossary-link" data-original-term="hypothesis" data-term="hypothesi">hypothesis</a>:</p>
 <ul>
-<li>(-3^2 = -(3^2) = -9)<br>
-</li>
-<li>((-3)^2 = (-3) (-3) = 9)</li>
+<li><p>If the two expressions give <strong>different results</strong> for the same substitution, then they are <strong>not equivalent</strong>.</p></li>
+<li><p>If the two expressions give the <strong>same result</strong> for a substitution, that is <strong>evidence</strong> that they are equivalent, but it <strong>does not</strong> prove they are always the same.</p></li>
 </ul>
-<blockquote class="blockquote">
-<p><em>Tip: Without parentheses, the negative sign applies <strong>after</strong> squaring.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="💥 Parentheses Practice">
-<p>Evaluate carefully:</p>
-<ol type="1">
-<li>(-4^2)<br>
-</li>
-<li>((-4)^2)<br>
-</li>
-<li>((x - 1)^2) when (x = 6)<br>
-</li>
-<li>(-x^2 + 2x) when (x = 3)</li>
-</ol>
+<p><strong>Example:</strong> Test if <span class="math inline">\(6y\)</span> and <span class="math inline">\(2y\)</span> are equivalent expressions.</p>
+<p>Try <span class="math inline">\(y = 0\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+6(0) &amp;= 0 \\
+2(0) &amp;= 0
+\end{align*}
+\]</span></p>
+<p>We got the same result, so this is <strong>evidence</strong> that they could be equivalent.</p>
+<p>But what if we try <span class="math inline">\(y=3\)</span>?</p>
+<p><span class="math display">\[
+\begin{align*}
+6(3) &amp;= 18 \\
+2(3) &amp;= 6
+\end{align*}
+\]</span></p>
+<p>This proves that the expressions are <strong>not equivalent</strong>.</p>
+<p>For now we can only test the hypothesis. In section 2.6 we will learn how to <strong>prove</strong> two expressions are equivalent.</p>
 </div>
 <hr>
-</section>
-<section id="equivalent-expressions" class="level3">
-<h3 class="anchored" data-anchor-id="equivalent-expressions">2.2.4 – Equivalent Expressions</h3>
-<p>Sometimes two expressions look different but always give the same result.</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong></p>
-<p>[ 3x + 2x = 5x ] Even if you substitute any value for (x), both expressions give the same result. Try it!</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Try it:</strong></p>
-<p>[ 3x + 2x 5x x = 4 ] [ = 12 + 8 = 20 = 20 ]</p>
-</blockquote>
-<p>These are called <strong>equivalent expressions</strong> — they look different but are always equal.</p>
-<blockquote class="blockquote">
-<p><em>Visual idea: Use an input-output table comparing expressions side by side.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="💭 Are These Equivalent?">
-<p>Try evaluating both expressions when (x = 2), (x = 5), and (x = 10). Are they always the same?</p>
-<ol type="1">
-<li>(2x + 3x) and (5x)<br>
-</li>
-<li>(3(x + 4)) and (3x + 12)<br>
-</li>
-<li>(x^2 + 4) and ((x + 2)^2)<br>
-</li>
-<li>(2(x + 3) - 1) and (2x + 5)</li>
-</ol>
-<p>Which are equivalent? How do you know?</p>
+<div class="you-try-m" title="Are they equivalent?">
+<p>Test if <span class="math inline">\(9y - 3\)</span> is equivalent to <span class="math inline">\(3(3y - 2) + 3\)</span> using <span class="math inline">\(y = 2\)</span>.</p>
+<p>Did you get the same result? What does your answer tell you about the two expressions?</p>
+</div>
+<div class="answer" title="Answer">
+<p>If we substitute <span class="math inline">\(y = 2\)</span> we get:</p>
+<p><span class="math display">\[
+\begin{align*}
+9(2) - 3 &amp;= 18 - 3 &amp;= 15 \\
+3(3(2) - 2) + 3 &amp;= 3(6 - 2) + 3 = 3(4) + 3 = 12 + 3 &amp;= 15
+\end{align*}
+\]</span></p>
+<p>We have evidence that the two expressions are equivalent but we don’t know for certain.</p>
 </div>
 <hr>
 </section>
 </section>
 <section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">🏋️ Practice On Your Own</h2>
-<p>Evaluate each expression by substituting the given value(s).</p>
+<h2 class="anchored" data-anchor-id="practice-on-your-own">✍️ Practice On Your Own</h2>
+<p><strong>Single variable</strong></p>
 <ol type="1">
-<li>(2x + 5) when (x = 6)<br>
-</li>
-<li>(x^2 + 3x) when (x = 4)<br>
-</li>
-<li>((x - 2)^2) when (x = 1)<br>
-</li>
-<li>(2a - 3b) when (a = 3, b = 5)<br>
-</li>
-<li>() when (x = 15)<br>
-</li>
-<li>(-x^2 + 4x - 1) when (x = 2)</li>
-</ol>
-<p>Decide whether each pair is equivalent. Use substitution to test values.</p>
-<ol start="7" type="1">
-<li>(4x + 2x) and (6x)<br>
-</li>
-<li>(2(x + 3)) and (2x + 6)<br>
-</li>
-<li>(x^2 + 2x + 1) and ((x + 1)^2)<br>
-</li>
-<li>(5x - 3) and (3x + 5)</li>
+<li><p>Evaluate <span class="math inline">\(3x + 4\)</span> when <span class="math inline">\(x=5\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(7 - 2x\)</span> when <span class="math inline">\(x=-3\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(2x^2\)</span> when <span class="math inline">\(x=2\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(\frac{1}{2}x + 3\)</span> when <span class="math inline">\(x=6\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(-x + 7\)</span> when <span class="math inline">\(x=-2\)</span></p></li>
 </ol>
 <hr>
-<div class="answers" data-collapse="true">
-<p><strong>✅ Answer Key</strong></p>
+<p><strong>Single variable, repeated</strong></p>
+<ol start="6" type="1">
+<li><p>Evaluate <span class="math inline">\(x + x + x\)</span> when <span class="math inline">\(x=4\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(2x + 3x\)</span> when <span class="math inline">\(x=2\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(x^2 + 3x^2\)</span> when <span class="math inline">\(x=1\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(5x - 2x + 4\)</span> when <span class="math inline">\(x=3\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(2(x+x) + 1\)</span> when <span class="math inline">\(x=-1\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Parentheses / PEMDAS</strong></p>
+<ol start="11" type="1">
+<li><p>Evaluate <span class="math inline">\(2(x+3)^2\)</span> when <span class="math inline">\(x=1\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(3(x-2)^2 + 4\)</span> when <span class="math inline">\(x=3\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\((2x+1)(x-1)\)</span> when <span class="math inline">\(x=2\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\((x+2)^2 - 3x\)</span> when <span class="math inline">\(x=1\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(\frac{3(x+4)}{2}\)</span> when <span class="math inline">\(x=2\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Multiple variables</strong></p>
+<ol start="16" type="1">
+<li><p>Evaluate <span class="math inline">\(2a - 3b\)</span> when <span class="math inline">\(a=3, b=5\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(4x + 2y\)</span> when <span class="math inline">\(x=2, y=-1\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(\frac{1}{2}x^2 - 3y\)</span> when <span class="math inline">\(x=4, y=3\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\(3x - 2y + z\)</span> when <span class="math inline">\(x=1, y=2, z=5\)</span></p></li>
+<li><p>Evaluate <span class="math inline">\((x+y)^2 - xy\)</span> when <span class="math inline">\(x=2, y=3\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Testing Equivalence</strong></p>
+<ol start="21" type="1">
+<li><p>Are <span class="math inline">\(2(x+3)\)</span> and <span class="math inline">\(2x+6\)</span> equivalent? Test <span class="math inline">\(x=4\)</span></p></li>
+<li><p>Are <span class="math inline">\(4x + 2x\)</span> and <span class="math inline">\(6x\)</span> equivalent? Test <span class="math inline">\(x=-1\)</span></p></li>
+<li><p>Are <span class="math inline">\(x^2 + 2x + 1\)</span> and <span class="math inline">\((x+1)^2\)</span> equivalent? Test <span class="math inline">\(x=2\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="24" type="1">
+<li><p>Test if <span class="math inline">\(3(a + b) - 2(a - b)\)</span> and <span class="math inline">\(a + 5b\)</span> are equivalent. Try at least two different sets of values for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p></li>
+<li><p>Test if <span class="math inline">\(2(a + b)^2 - 2a^2 - 4ab\)</span> and $2b^2 are equivalent. Try at least two different sets of values for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p></li>
+</ol>
+<hr>
+<div class="answers">
+<p><strong>Single variable</strong></p>
 <ol type="1">
-<li><p>17<br>
-</p></li>
-<li><p>(16 + 12 = 28)<br>
-</p></li>
-<li><p>((-1)^2 = 1)<br>
-</p></li>
-<li><p>(6 - 15 = -9)<br>
-</p></li>
-<li><p>( = 5)<br>
-</p></li>
-<li><p>(-4 + 8 - 1 = 3)</p></li>
-<li><p>Yes (both equal (6x))<br>
-</p></li>
-<li><p>Yes<br>
-</p></li>
-<li><p>Yes<br>
-</p></li>
-<li><p>No<br>
-</p></li>
+<li><p>19</p></li>
+<li><p>13</p></li>
+<li><p>8</p></li>
+<li><p>6</p></li>
+<li><p>9</p></li>
+</ol>
+<hr>
+<p><strong>Single variable, repeated</strong></p>
+<ol start="6" type="1">
+<li><p>12</p></li>
+<li><p>10</p></li>
+<li><p>4</p></li>
+<li><p>13</p></li>
+<li><p>-3</p></li>
+</ol>
+<hr>
+<p><strong>Parentheses / PEMDAS</strong></p>
+<ol start="11" type="1">
+<li><p>32</p></li>
+<li><p>7</p></li>
+<li><p>5</p></li>
+<li><p>6</p></li>
+<li><p>9</p></li>
+</ol>
+<hr>
+<p><strong>Multiple variables</strong></p>
+<ol start="16" type="1">
+<li><p>-9</p></li>
+<li><p>6</p></li>
+<li><p>-1</p></li>
+<li><p>4</p></li>
+<li><p>19</p></li>
+</ol>
+<hr>
+<p><strong>Testing Equivalence</strong></p>
+<ol start="21" type="1">
+<li><p>evidence of equivalence</p></li>
+<li><p>evidence of equivalence</p></li>
+<li><p>evidence of equivalence</p></li>
 </ol>
 </div>
 
