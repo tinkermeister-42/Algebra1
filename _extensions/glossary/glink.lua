@@ -10,6 +10,7 @@ function glink(args, kwargs)
   -- Exception list: keep these as-is
   local no_singularize = {
     ["order of operations"] = true,
+    ["pemdas"] = true,
     ["parentheses"] = true,
     ["positive numbers"] = true,
     ["calculus"] = true

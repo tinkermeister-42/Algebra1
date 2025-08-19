@@ -1,6 +1,6 @@
 # Glossary {.unnumbered}
 
-### Absolute value {#glossary-absolute-value}
+### Absolute value {#glossary-absolute_value}
 
 The distance a number is from zero on a number line, always expressed as a positive number or zero.
 
@@ -57,7 +57,7 @@ A **coefficient** is the number in front of a variable. It tells you how many of
 
 ---
 
-### Composite number {#glossary-composite-number}
+### Composite number {#glossary-composite_number}
 
 A composite number has more than two factors.
 
@@ -185,7 +185,7 @@ Two numbers are equivalent if they have **the same value**, even if they look di
 
 ---
 
-### Equivalent expressions {#glossary-equivalent-expressions}
+### Equivalent expressions {#glossary-equivalent_expressions}
 
 Two expressions are equivalent if they have the same value for every number you substitute or if they can be transformed into the same expression using properties of operations.
 
@@ -271,7 +271,7 @@ Factoring means breaking something down into smaller parts that multiply togethe
 
 ---
 
-### Factor tree {#glossary-factor-tree}
+### Factor tree {#glossary-factor_tree}
 
 A factor tree is a way to break a number into its smallest building blocks — the prime numbers that multiply to make it.
 
@@ -316,7 +316,7 @@ A grade often shows **how well someone did** using a percent or letter. It’s u
 
 ---
 
-### Greater than {#glossary-greater-than}
+### Greater than {#glossary-greater_than}
 
 A number is greater than (**>**) another number if it is further to the right on the number line.
 
@@ -329,7 +329,7 @@ A number is greater than (**>**) another number if it is further to the right on
 
 ---
 
-### Greatest Common Factor {#glossary-greatest-common-factor}
+### Greatest Common Factor {#glossary-greatest_common_factor}
 
 The **greatest common factor** (GCF) is the biggest number that divides evenly into two or more numbers. It is the largest factor they have in common. 
 
@@ -360,7 +360,21 @@ Side to side, like the horizon. Level ground is horizontal.
 
 ---
 
-### Improper Fraction {#glossary-improper-fraction}
+### Hypothesis {#glossary-hypothesis}
+
+A **hypothesis** is a claim you think might be true and plan to test. 
+
+In an experiment, if you find a case where the hypothesis **is not true** you can say that it is **false**. If you find a case where it **is true**, you have **evidence** that the hypothesis is correct but **not** proof.
+
+> **Examples:**
+>
+> "Plants grow better when spoken to".
+>
+> "These two expressions are equivalent". 
+
+---
+
+### Improper Fraction {#glossary-improper_fraction}
 
 An improper fraction is a fraction where the top number (numerator) is equal to or greater than the bottom number (denominator). That means the value is 1 or more.
 
@@ -405,7 +419,7 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 
 ---
 
-### Less than {#glossary-less-than}
+### Less than {#glossary-less_than}
 
 A number is less than (**<**) another number if it is further to the left on the number line.
 
@@ -415,6 +429,24 @@ A number is less than (**<**) another number if it is further to the left on the
 > ![Less than true](images/Glossary/less_than_true.png){#fig-number-line width="100%"}
 > but $5 < 3$ is false
 > ![Less than false](images/Glossary/less_than_false.png){#fig-number-line width="100%"}
+
+---
+
+### Like terms {#glossary-like_terms}
+
+Terms whose variable part matches exactly — same variables with the same exponents (order doesn’t matter). You can combine like terms by adding or subtracting their coefficients. Constants (no variables) are like terms with other constants.
+
+> **Examples:**
+>
+> - $2x$ and $5x$
+> - $15y^2$ and $-y^2$
+> - $5$ and $-8$
+>
+> **Counter Examples:**
+>
+> - $12x$ and $15x^2$ are **not** like terms.
+> - $2y$ and $2x$ are **not** like terms.
+> - $42$ and $42z$ are **not** like terms.
 
 ---
 
@@ -428,7 +460,7 @@ A markup is the **amount added to a cost** to set a higher selling price, usuall
 
 ---
 
-### Mixed Number {#glossary-mixed-number}
+### Mixed Number {#glossary-mixed_number}
 
 A mixed number has a **whole number and a fraction** combined into one value.
 
@@ -458,9 +490,9 @@ A math operation that means repeated addition or combining equal groups.
 
 ---
 
-### Multiplication by proximity {#glossary-multiplication-by-proximity}
+### Multiplication by proximity {#glossary-multiplication_by_proximity}
 
-Multipliation by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. Between them.
+Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. Between them.
 
 > **Examples**
 >
@@ -470,7 +502,7 @@ Multipliation by **proximity** means to multiply two things that are next to eac
 
 ---
 
-### Number line {#glossary-number-line}
+### Number line {#glossary-number_line}
 
 A straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.
 
@@ -483,7 +515,7 @@ Number lines help you visualize math operations and compare values.
 
 ---
 
-### Number sense {#glossary-number-sense}
+### Number sense {#glossary-number_sense}
 
 **Number sense** is a person’s ability to understand, work with, and think about numbers.
 
@@ -555,7 +587,7 @@ Their sum is always zero.
 
 ---
 
-### Order of Operations {#glossary-order-of-operations}
+### Order of Operations {#glossary-order_of_operations}
 
 The specific order you follow to simplify expressions:
 **P**arentheses &rarr; **E**xponents &rarr; **M**ultiply/**D**ivide &rarr; **A**dd/**S**ubtract, or **PEMDAS**.
@@ -578,7 +610,7 @@ A grouping symbol that tells you what to do first in an expression.
 
 ---
 
-### Place Value {#glossary-place-value}
+### Place Value {#glossary-place_value}
 
 Place value tells you **how much each digit is worth** based on where it is in the number.
 
@@ -637,7 +669,7 @@ On a number line, positive numbers are to the right of zero.
 
 ---
 
-### Prime Number {#glossary-prime-number}
+### Prime Number {#glossary-prime_number}
 
 A number is prime if it has exactly two factors: 1 and itself.
 
@@ -647,7 +679,7 @@ A number is prime if it has exactly two factors: 1 and itself.
 
 ---
 
-### Prime factorization {#glossary-prime-factorization}
+### Prime factorization {#glossary-prime_factorization}
 
 Prime factorization means writing a number as a product of prime numbers.
 
@@ -708,7 +740,7 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 
 ---
 
-### Real number {#glossary-real-number}
+### Real number {#glossary-real_number}
 
 A **real number** is any number that can be placed on the **number line**. This includes whole numbers (integers), fractions, and decimals. Some decimals end or repeat (like 2.75 or 0.333…), and some never repeat (like √2 or π). All of these are real numbers.
 
@@ -733,7 +765,7 @@ The reciprocal of a number is what you **multiply it by to get 1**. You can find
 
 ---
 
-### Relatively Prime {#glossary-relatively-prime}
+### Relatively Prime {#glossary-relatively_prime}
 
 Two numbers are relatively prime if they have **no common factors** other than 1.
 
@@ -767,7 +799,7 @@ The result is the final answer you get after evaluating or simplifying an expres
 
 ---
 
-### Simplest Form {#glossary-simplest-form}
+### Simplest Form {#glossary-simplest_form}
 
 A fraction is in simplest form when the numerator and denominator have **no common factors** except 1.
 
@@ -795,7 +827,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 
 ---
 
-### Skip Count {#glossary-skip-count}
+### Skip Count {#glossary-skip_count}
 
 Skip counting means **counting forward (or backward) by a number other than 1** — like 2, 5, or 10. It’s a way to count faster using patterns.
 
@@ -904,7 +936,7 @@ The whole is the **total amount** — it’s everything being considered before 
 
 ---
 
-### Whole number {#glossary-whole-number}
+### Whole number {#glossary-whole_number}
 
 A **whole number** is a number with **no fractions or decimals**. These are **0, 1, 2, 3, …** (zero and the positive integers). Whole numbers do **not** include negatives, decimals, or fractions. They are a subset of **integers**.
 

@@ -1,15 +1,17 @@
 # 2.3 – Combining Like Terms {.unnumbered}
 
-When we simplify an expression, we often look for pieces that can go together. In algebra, **like terms** are terms that have the same variable part. You can **combine** them by adding or subtracting their coefficients — just like counting apples or blocks of the same kind.
+Imagine you’re a cashier. At closing time you need to count the money in your drawer but it is all mixed up.
 
-In this lesson, you’ll learn to spot like terms, combine them, and rewrite expressions in simpler forms. You’ll also see how this connects to the idea of equivalent expressions.
+You sort by kind: $10 bills with $10 bills, $5 bills with $5 bills, quarters with quarters. Having the same kinds of money together makes it much easier to count. 
+
+The same thing can happen when we simplify expressions. Sometimes they are messy. To clean them up, we sort by kind before adding things up. We call this combining {{< glink like terms >}}.
 
 ---
 
 :::{.objectives}
 - I can identify like terms in an expression  
 - I can combine like terms to simplify an expression  
-- I can explain why combining like terms creates an equivalent expression  
+- I can check my work by using substitution 
 :::
 
 ---
