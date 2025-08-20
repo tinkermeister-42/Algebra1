@@ -1,4 +1,4 @@
-# Unit 2 Challenge Problem Solutions {.unlisted}
+# Unit 2 Challenge Problem Solutions {.unnumbered}
 
 ## Lesson 1
 
