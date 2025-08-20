@@ -172,6 +172,7 @@ It has an equals sign (=) and shows a relationship between numbers or expression
 > **Examples:**
 >
 > $2 + 3 = 5$ and $x + 1 = 7$
+> $(x - 5)^2 = 3x - 1$
 
 ---
 
