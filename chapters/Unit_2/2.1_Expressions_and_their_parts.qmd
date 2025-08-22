@@ -1,8 +1,8 @@
 # 2.1 – Expressions & Their Parts {.unnumbered}
 
-Algebra is like a language — it uses **expressions** to describe patterns, relationships, and real-world situations. Expressions are math phrases made from numbers, symbols, and variables. Before we can simplify or solve them, we need to know what they are and how to talk about their parts.
+Learning mathematics is about more than number crunching—you’re learning a new language. Like any language, mathematics uses words and phrases to communicate ideas. In algebra, we call those words and phrases **expressions**.
 
-In this lesson, you’ll learn what a variable is, what makes up an expression, and how to identify key parts like {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
+In this lesson, you’ll learn to **read** expressions to understand the ideas they communicate and to **write** expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: {{< glink variables >}}, {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
 
 ---
 

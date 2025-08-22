@@ -1,155 +1,223 @@
 # 2.3 – Combining Like Terms {.unnumbered}
 
-Imagine you’re a cashier. At closing time you need to count the money in your drawer but it is all mixed up.
+When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink like terms >}}**.
 
-You sort by kind: $10 bills with $10 bills, $5 bills with $5 bills, quarters with quarters. Having the same kinds of money together makes it much easier to count. 
-
-The same thing can happen when we simplify expressions. Sometimes they are messy. To clean them up, we sort by kind before adding things up. We call this combining {{< glink like terms >}}.
+Think of a cashier counting a mixed drawer: tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
 ---
 
 :::{.objectives}
-- I can identify like terms in an expression  
-- I can combine like terms to simplify an expression  
-- I can check my work by using substitution 
+
+* I can identify like terms in an expression.
+* I can combine like terms to simplify an expression.
+* I can check my work by substitution or by reasoning about equivalence.
 :::
 
 ---
 
 :::{.vocab}
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equivalent expressions >}}, {{< glink expression >}}, {{< glink like terms >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+{{< glink expression >}}, {{< glink term >}}, {{< glink coefficient >}}, {{< glink constant >}}, {{< glink like terms >}}, {{< glink simplify >}}, {{< glink equivalent expressions >}}, {{< glink variable >}}
 :::
 
 ---
 
-:::{.warmup collapse=true}
-1. What do you get when you add:  
-   a. \(5 + 7\)  
-   b. \(2x + 4x\)  
-   c. \(3x + 5y\)  
+## 🔥 Warm-Up
 
-2. Which of these pairs are “like” and which are not?  
-   - \(2x\) and \(5x\)  
-   - \(x\) and \(x^2\)  
-   - \(4y\) and \(4x\)
+1. What do you get when you add:
+
+   * $5 + 7$
+   * $2x + 4x$
+   * $3x + 5y$
+
+2. For each pair, how are they similar and how are they different?
+
+   * $2x$ and $5x$
+   * $x$ and $x^2$
+   * $4y$ and $4x$
 
 3. Why might we want to rewrite an expression in a simpler form?
 
-> These questions preview the idea of combining matching parts while reinforcing variable structure.
-:::
-
 ---
 
-## 🧠 Learn Together
+## 👥 Learn Together
 
 ### 2.3.1 – What Are Like Terms?
 
-**Like terms** have the exact same variable part — including exponents.
+**Like terms** have the **exact same variable part** (same letters with the same exponents). Only the **coefficients** may differ.
 
-> **Examples:**
-> - \(2x\) and \(5x\) → ✅ like terms  
-> - \(x^2\) and \(x^2\) → ✅ like terms  
-> - \(3x\) and \(3y\) → ❌ not like terms  
-> - \(x\) and \(x^2\) → ❌ not like terms
+> **Examples**
+> $2x$ and $5x$ → ✅ like
+> $x^2$ and $-3x^2$ → ✅ like
+> $3x$ and $3y$ → ❌ not like
+> $x$ and $x^2$ → ❌ not like
+> $4xy$ and $-7yx$ → ✅ like (order of letters doesn’t matter)
 
-> _Suggested visual: Show a color-coded set of blocks or algebra tiles to group like terms visually._
-
----
-
-### 2.3.2 – Combining Like Terms
-
-To combine like terms:
-1. Identify terms with the same variable part  
-2. Add or subtract their **coefficients**
-
-> **Example 1:**
-> \[
-> 3x + 5x = 8x
-> \]
-
-> **Example 2:**
-> \[
-> 7x - 2x = 5x
-> \]
-
-> **Example 3 (constants too):**
-> \[
-> 2x + 4 + 5x - 1 = 7x + 3
-> \]
-
-> _Visual option: Use algebra tiles to physically add and subtract blocks representing like terms._
-
----
-
-:::{.you-try collapse=true title="💡 Try Combining"}
-Simplify each expression by combining like terms.
-
-1. \(4x + 3x\)  
-2. \(5a + 2b - 3a\)  
-3. \(x + 2 + x + 5\)  
-4. \(7m - 2m + 6 - 3\)  
+:::{.remember}
+The **sign** belongs to the term. In $7x - 2x$, the terms are $+7x$ and $-2x$.
 :::
 
 ---
 
-### 2.3.3 – Why Does This Work?
+### 2.3.2 – How to Combine Like Terms (Sort → Group → Add)
 
-Combining like terms is just rewriting an expression in a simpler way — we’re not changing its meaning.
+**Step 1: Sort** terms by their variable part (including constants).
+**Step 2: Group** like terms together.
+**Step 3: Add/Subtract** the coefficients. Keep the variable part the same.
 
-> \[
-> 3x + 2x = 5x
-> \]
-> These expressions are **equivalent**. No matter what value \(x\) has, both expressions give the same result.
+**Example A (single variable + constants)**
 
-Try testing values like \(x = 1, 2, 5\) and compare both sides — they’ll always match.
+$$
+2x + 4 + 5x - 1 \;\to\; (2x + 5x) + (4 - 1) \;=\; 7x + 3
+$$
 
-> _Optional visual: Input-output table comparing \(3x + 2x\) and \(5x\)._
+**Example B (negatives and subtraction)**
+
+$$
+7x - 2x + 6 - 3 \;\to\; (7x - 2x) + (6 - 3) \;=\; 5x + 3
+$$
+
+**Example C (multiple variable types)**
+
+$$
+3x + 2y + 5 - x + y - 2 \;\to\; (3x - x) + (2y + y) + (5 - 2) \;=\; 2x + 3y + 3
+$$
+
+:::{.you-try title="Try it: Sort, group, and add"}
+Simplify each:
+
+1. $4x + 3x$
+2. $5a + 2b - 3a$
+3. $x + 2 + x + 5$
+4. $7m - 2m + 6 - 3$
+:::
 
 ---
 
-:::{.you-try collapse=true title="💭 Which Expressions Are Equivalent?"}
-Decide if the following pairs are equivalent. Try simplifying first.
+### 2.3.3 – Why Does This Work? (The idea behind it)
 
-1. \(2x + 3x\) and \(5x\)  
-2. \(5y - 2y + 1\) and \(3y + 1\)  
-3. \(4x + 2\) and \(2x + 2x + 2\)  
-4. \(x + x + x\) and \(3x\)  
+When the variable part matches, we can **factor** it like a common word:
+
+$$
+3x + 2x = (3+2)x = 5x \qquad\text{and}\qquad 4y - y = (4-1)y = 3y
+$$
+
+So $3x + 2x$ and $5x$ are **{{< glink equivalent expressions >}}**. They always give the same value for any $x$.
+
+:::{.think title="Convince yourself"}
+Pick a value (e.g., $x=10$). Compare $3x + 2x$ and $5x$. What do you notice?
+:::
+
+---
+
+### 2.3.4 – Common Mistakes (Watch out!)
+
+* **Different variable parts don’t combine:** $x$ and $x^2$ are not like; $xy$ and $x$ are not like.
+* **Don’t mix variables with constants:** $2x + 3 \neq 5x$.
+* **Mind the sign:** In $8x - 5x$, the second term is $-5x$, not $+5x$.
+
+:::{.gotcha}
+If you’re unsure, test with a number (substitution). If two forms always give the same value, they’re equivalent; if not, you changed the meaning.
+:::
+
+---
+
+### 2.3.5 – With Parentheses: “Open, Then Combine”
+
+If parentheses are present, **simplify inside** (or distribute if needed in a later lesson), then combine like terms.
+
+**Example D (reorder & combine)**
+
+$$
+(4x - 3) + (2 - 5x) \;\to\; (4x - 5x) + (-3 + 2) = -x - 1
+$$
+
+**Example E (a leading negative)**
+
+$$
+-(3x - 4) + 2x + 7 \;\to\; -3x + 4 + 2x + 7 = (-3x + 2x) + (4+7) = -x + 11
+$$
+
+:::{.you-try title="Try it with parentheses"}
+
+1. $(5y + 2) - (3y - 6)$
+2. $-(2x + 3) + (x - 5)$
+:::
+
+---
+
+### 2.3.6 – By Variable and Exponent (mixing $x$, $x^2$, and constants)
+
+We can (and should) combine **each kind** separately:
+
+$$
+4x^2 + 3x - 2 + x^2 - 5x + 6
+= (4x^2 + x^2) + (3x - 5x) + (-2 + 6)
+= 5x^2 - 2x + 4
+$$
+
+:::{.you-try title="Sort by kind"}
+
+1. $2x^2 + 5x - 3 + 4x^2 - x + 1$
+2. $7a^2 - 2a + 4 - 3a^2 + a - 6$
+
 :::
 
 ---
 
 ## 🏋️ Practice On Your Own
 
-Simplify each expression by combining like terms.
+**A. Identify and combine (no parentheses)**
 
-1. \(6x + 4x\)  
-2. \(5a - 3a + 2\)  
-3. \(2x + 3 + 5x - 1\)  
-4. \(9y - 2y + 4 + y\)  
-5. \(3b + 2b + 6 - 2\)  
-6. \(4m - m + 7 - 3\)
+1. $6x + 4x$
+2. $5a - 3a + 2$
+3. $2x + 3 + 5x - 1$
+4. $9y - 2y + 4 + y$
+5. $3b + 2b + 6 - 2$
+6. $4m - m + 7 - 3$
 
-Are these expressions equivalent? Simplify each and compare.
+**B. With negatives & reordering**
+7\) $-2x + 7 + 5x - 3$
+8\) $8y - (2y) + 1 - 5$
+9\) $-x - x + 4 - 2$
+10\) $5p - 9 + 3 - 2p$
 
-7. \(2x + 4x + 3\) and \(6x + 3\)  
-8. \(x + x + 4\) and \(2x + 4\)  
-9. \(4y + 6 - 3y + 2\) and \(y + 8\)  
-10. \(3x + 5 + 2x - 1\) and \(5x + 4\)
+**C. Parentheses (open, then combine)**
+11\) $(2x + 5) + (x - 3)$
+12\) $(4y - 7) - (2y + 1)$
+13\) $-(3x - 2) + (x + 5)$
+14\) $(6 - 2m) + (m - 9)$
+
+**D. Mixed powers / variables**
+15\) $2x^2 + 5x - 3 + 4x^2 - x + 1$
+16\) $7a^2 - 2a + 4 - 3a^2 + a - 6$
+17\) $3xy + 2x - xy + 5 - x$
+18\) $5t^2 + 3 - 2t + t^2 + 2t - 8$
+
+**E. Are they equivalent? Simplify each side and compare.**
+19\) $2x + 4x + 3$ and $6x + 3$
+20\) $x + x + 4$ and $2x + 4$
+21\) $4y + 6 - 3y + 2$ and $y + 8$
+22\) $3x + 5 + 2x - 1$ and $5x + 4$
+
+**F. Create & explain**
+23\) Make an expression **equivalent to $7x - 4$** that uses **at least four terms**. Explain how you know it’s equivalent.
+24\) Give a pair of expressions that are **not** equivalent, but that give the **same value** when $x=0$. Explain why that single test doesn’t prove equivalence.
 
 ---
 
-:::{.answers collapse=true}
-**✅ Answer Key**
+:::{.answers}
+A) 1) $10x$  2) $2 + 2a$  3) $7x + 2$  4) $8y + 4$  5) $5b + 4$  6) $3m + 4$
 
-1. \(10x\)  
-2. \(2a + 2\)  
-3. \(7x + 2\)  
-4. \(8y + y = 9y + 4\)  
-5. \(5b + 4\)  
-6. \(3m + 4\)
+B) 7) $3x + 4$  8) $6y - 4$  9) $-2x + 2$  10) $3p - 6$
 
-7. Yes  
-8. Yes  
-9. Yes  
-10. Yes  
+C) 11) $3x + 2$  12) $2y - 8$  13) $-2x + 7$  14) $-m - 3$
+
+D) 15) $6x^2 + 4x - 2$  16) $4a^2 - a - 2$  17) $2xy + x + 5$  18) $6t^2 - 5$
+
+E) 19) Yes  20) Yes  21) Yes  22) Yes
+
+F) Sample answers will vary. Example for 23): $4x + 5x - 3 - 1 = 9x - 4 $ (not equivalent—fix: $3x + 4x - 2 - 2 = 7x - 4$).
+For 24): $6x$ and $2x$ both give $0$ at $x=0$, but are not equivalent for other values.
 :::
+
+---
