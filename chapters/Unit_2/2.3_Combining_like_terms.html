@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -679,11 +708,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link active" data-scroll-target="#learn-together">🧠 Learn Together</a>
+  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
+  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">👥 Learn Together</a>
   <ul class="collapse">
   <li><a href="#what-are-like-terms" id="toc-what-are-like-terms" class="nav-link" data-scroll-target="#what-are-like-terms">2.3.1 – What Are Like Terms?</a></li>
-  <li><a href="#combining-like-terms" id="toc-combining-like-terms" class="nav-link" data-scroll-target="#combining-like-terms">2.3.2 – Combining Like Terms</a></li>
-  <li><a href="#why-does-this-work" id="toc-why-does-this-work" class="nav-link" data-scroll-target="#why-does-this-work">2.3.3 – Why Does This Work?</a></li>
+  <li><a href="#how-to-combine-like-terms-sort-group-add" id="toc-how-to-combine-like-terms-sort-group-add" class="nav-link" data-scroll-target="#how-to-combine-like-terms-sort-group-add">2.3.2 – How to Combine Like Terms (Sort → Group → Add)</a></li>
+  <li><a href="#why-does-this-work-the-idea-behind-it" id="toc-why-does-this-work-the-idea-behind-it" class="nav-link" data-scroll-target="#why-does-this-work-the-idea-behind-it">2.3.3 – Why Does This Work? (The idea behind it)</a></li>
+  <li><a href="#common-mistakes-watch-out" id="toc-common-mistakes-watch-out" class="nav-link" data-scroll-target="#common-mistakes-watch-out">2.3.4 – Common Mistakes (Watch out!)</a></li>
+  <li><a href="#with-parentheses-open-then-combine" id="toc-with-parentheses-open-then-combine" class="nav-link" data-scroll-target="#with-parentheses-open-then-combine">2.3.5 – With Parentheses: “Open, Then Combine”</a></li>
+  <li><a href="#by-variable-and-exponent-mixing-x-x2-and-constants" id="toc-by-variable-and-exponent-mixing-x-x2-and-constants" class="nav-link" data-scroll-target="#by-variable-and-exponent-mixing-x-x2-and-constants">2.3.6 – By Variable and Exponent (mixing <span class="math inline">\(x\)</span>, <span class="math inline">\(x^2\)</span>, and constants)</a></li>
   </ul></li>
   <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">🏋️ Practice On Your Own</a></li>
   </ul>
@@ -711,119 +744,134 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Imagine you’re a cashier. At closing time you need to count the money in your drawer but it is all mixed up.</p>
-<p>You sort by kind: $10 bills with $10 bills, $5 bills with $5 bills, quarters with quarters. Having the same kinds of money together makes it much easier to count.</p>
-<p>The same thing can happen when we simplify expressions. Sometimes they are messy. To clean them up, we sort by kind before adding things up. We call this combining <a href="../..\glossary.html#glossary-like-term" class="glossary-link" data-term="like term" data-original-term="like terms">like terms</a>.</p>
+<p>When we speak, we sometimes <strong>shorten</strong> a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we <strong>clean them up</strong> by putting <strong>like things with like things</strong> and then adding or subtracting. This is called <strong>combining <a href="../../glossary.html#glossary-like-term" class="glossary-link" data-original-term="like terms" data-term="like term">like terms</a></strong>.</p>
+<p>Think of a cashier counting a mixed drawer: tens with tens, fives with fives, quarters with quarters. Once things are <strong>sorted</strong>, they’re easy to <strong>count</strong>. In algebra, we sort by the <strong>variable part</strong> and then add the <strong>coefficients</strong>.</p>
 <hr>
 <div class="objectives">
 <ul>
-<li>I can identify like terms in an expression<br>
-</li>
-<li>I can combine like terms to simplify an expression<br>
-</li>
-<li>I can check my work by using substitution</li>
+<li>I can identify like terms in an expression.</li>
+<li>I can combine like terms to simplify an expression.</li>
+<li>I can check my work by substitution or by reasoning about equivalence.</li>
 </ul>
 </div>
 <hr>
 <div class="vocab">
-<p><a href="../..\glossary.html#glossary-coefficient" class="glossary-link" data-term="coefficient" data-original-term="coefficient">coefficient</a>, <a href="../..\glossary.html#glossary-constant" class="glossary-link" data-term="constant" data-original-term="constant">constant</a>, <a href="../..\glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>, <a href="../..\glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a>, <a href="../..\glossary.html#glossary-like-term" class="glossary-link" data-term="like term" data-original-term="like terms">like terms</a>, <a href="../..\glossary.html#glossary-simplify" class="glossary-link" data-term="simplify" data-original-term="simplify">simplify</a>, <a href="../..\glossary.html#glossary-term" class="glossary-link" data-term="term" data-original-term="term">term</a>, <a href="../..\glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-original-term="term" data-term="term">term</a>, <a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-term="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-original-term="constant" data-term="constant">constant</a>, <a href="../../glossary.html#glossary-like-term" class="glossary-link" data-original-term="like terms" data-term="like term">like terms</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-term="simplify" data-term="simplify">simplify</a>, <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
 </div>
 <hr>
-<div class="warmup" data-collapse="true">
+<section id="warm-up" class="level2">
+<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
 <ol type="1">
-<li>What do you get when you add:
-<ol type="a">
-<li>(5 + 7)<br>
-</li>
-<li>(2x + 4x)<br>
-</li>
-<li>(3x + 5y)</li>
-</ol></li>
-<li>Which of these pairs are “like” and which are not?
+<li><p>What do you get when you add:</p>
 <ul>
-<li>(2x) and (5x)<br>
-</li>
-<li>(x) and (x^2)<br>
-</li>
-<li>(4y) and (4x)</li>
+<li><span class="math inline">\(5 + 7\)</span></li>
+<li><span class="math inline">\(2x + 4x\)</span></li>
+<li><span class="math inline">\(3x + 5y\)</span></li>
 </ul></li>
-<li>Why might we want to rewrite an expression in a simpler form?</li>
+<li><p>For each pair, how are they similar and how are they different?</p>
+<ul>
+<li><span class="math inline">\(2x\)</span> and <span class="math inline">\(5x\)</span></li>
+<li><span class="math inline">\(x\)</span> and <span class="math inline">\(x^2\)</span></li>
+<li><span class="math inline">\(4y\)</span> and <span class="math inline">\(4x\)</span></li>
+</ul></li>
+<li><p>Why might we want to rewrite an expression in a simpler form?</p></li>
 </ol>
-<blockquote class="blockquote">
-<p>These questions preview the idea of combining matching parts while reinforcing variable structure.</p>
-</blockquote>
-</div>
 <hr>
+</section>
 <section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
+<h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
 <section id="what-are-like-terms" class="level3">
 <h3 class="anchored" data-anchor-id="what-are-like-terms">2.3.1 – What Are Like Terms?</h3>
-<p><strong>Like terms</strong> have the exact same variable part — including exponents.</p>
+<p><strong>Like terms</strong> have the <strong>exact same variable part</strong> (same letters with the same exponents). Only the <strong>coefficients</strong> may differ.</p>
 <blockquote class="blockquote">
-<p><strong>Examples:</strong> - (2x) and (5x) → ✅ like terms<br>
-- (x^2) and (x^2) → ✅ like terms<br>
-- (3x) and (3y) → ❌ not like terms<br>
-- (x) and (x^2) → ❌ not like terms</p>
+<p><strong>Examples</strong> <span class="math inline">\(2x\)</span> and <span class="math inline">\(5x\)</span> → ✅ like <span class="math inline">\(x^2\)</span> and <span class="math inline">\(-3x^2\)</span> → ✅ like <span class="math inline">\(3x\)</span> and <span class="math inline">\(3y\)</span> → ❌ not like <span class="math inline">\(x\)</span> and <span class="math inline">\(x^2\)</span> → ❌ not like <span class="math inline">\(4xy\)</span> and <span class="math inline">\(-7yx\)</span> → ✅ like (order of letters doesn’t matter)</p>
 </blockquote>
-<blockquote class="blockquote">
-<p><em>Suggested visual: Show a color-coded set of blocks or algebra tiles to group like terms visually.</em></p>
-</blockquote>
+<div class="remember">
+<p>The <strong>sign</strong> belongs to the term. In <span class="math inline">\(7x - 2x\)</span>, the terms are <span class="math inline">\(+7x\)</span> and <span class="math inline">\(-2x\)</span>.</p>
+</div>
 <hr>
 </section>
-<section id="combining-like-terms" class="level3">
-<h3 class="anchored" data-anchor-id="combining-like-terms">2.3.2 – Combining Like Terms</h3>
-<p>To combine like terms: 1. Identify terms with the same variable part<br>
-2. Add or subtract their <strong>coefficients</strong></p>
-<blockquote class="blockquote">
-<p><strong>Example 1:</strong> [ 3x + 5x = 8x ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Example 2:</strong> [ 7x - 2x = 5x ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Example 3 (constants too):</strong> [ 2x + 4 + 5x - 1 = 7x + 3 ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Visual option: Use algebra tiles to physically add and subtract blocks representing like terms.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="💡 Try Combining">
-<p>Simplify each expression by combining like terms.</p>
+<section id="how-to-combine-like-terms-sort-group-add" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-combine-like-terms-sort-group-add">2.3.2 – How to Combine Like Terms (Sort → Group → Add)</h3>
+<p><strong>Step 1: Sort</strong> terms by their variable part (including constants). <strong>Step 2: Group</strong> like terms together. <strong>Step 3: Add/Subtract</strong> the coefficients. Keep the variable part the same.</p>
+<p><strong>Example A (single variable + constants)</strong></p>
+<p><span class="math display">\[
+2x + 4 + 5x - 1 \;\to\; (2x + 5x) + (4 - 1) \;=\; 7x + 3
+\]</span></p>
+<p><strong>Example B (negatives and subtraction)</strong></p>
+<p><span class="math display">\[
+7x - 2x + 6 - 3 \;\to\; (7x - 2x) + (6 - 3) \;=\; 5x + 3
+\]</span></p>
+<p><strong>Example C (multiple variable types)</strong></p>
+<p><span class="math display">\[
+3x + 2y + 5 - x + y - 2 \;\to\; (3x - x) + (2y + y) + (5 - 2) \;=\; 2x + 3y + 3
+\]</span></p>
+<div class="you-try" title="Try it: Sort, group, and add">
+<p>Simplify each:</p>
 <ol type="1">
-<li>(4x + 3x)<br>
-</li>
-<li>(5a + 2b - 3a)<br>
-</li>
-<li>(x + 2 + x + 5)<br>
-</li>
-<li>(7m - 2m + 6 - 3)<br>
-</li>
+<li><span class="math inline">\(4x + 3x\)</span></li>
+<li><span class="math inline">\(5a + 2b - 3a\)</span></li>
+<li><span class="math inline">\(x + 2 + x + 5\)</span></li>
+<li><span class="math inline">\(7m - 2m + 6 - 3\)</span></li>
 </ol>
 </div>
 <hr>
 </section>
-<section id="why-does-this-work" class="level3">
-<h3 class="anchored" data-anchor-id="why-does-this-work">2.3.3 – Why Does This Work?</h3>
-<p>Combining like terms is just rewriting an expression in a simpler way — we’re not changing its meaning.</p>
-<blockquote class="blockquote">
-<p>[ 3x + 2x = 5x ] These expressions are <strong>equivalent</strong>. No matter what value (x) has, both expressions give the same result.</p>
-</blockquote>
-<p>Try testing values like (x = 1, 2, 5) and compare both sides — they’ll always match.</p>
-<blockquote class="blockquote">
-<p><em>Optional visual: Input-output table comparing (3x + 2x) and (5x).</em></p>
-</blockquote>
+<section id="why-does-this-work-the-idea-behind-it" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-this-work-the-idea-behind-it">2.3.3 – Why Does This Work? (The idea behind it)</h3>
+<p>When the variable part matches, we can <strong>factor</strong> it like a common word:</p>
+<p><span class="math display">\[
+3x + 2x = (3+2)x = 5x \qquad\text{and}\qquad 4y - y = (4-1)y = 3y
+\]</span></p>
+<p>So <span class="math inline">\(3x + 2x\)</span> and <span class="math inline">\(5x\)</span> are <strong><a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a></strong>. They always give the same value for any <span class="math inline">\(x\)</span>.</p>
+<div class="think" title="Convince yourself">
+<p>Pick a value (e.g., <span class="math inline">\(x=10\)</span>). Compare <span class="math inline">\(3x + 2x\)</span> and <span class="math inline">\(5x\)</span>. What do you notice?</p>
+</div>
 <hr>
-<div class="you-try" data-collapse="true" title="💭 Which Expressions Are Equivalent?">
-<p>Decide if the following pairs are equivalent. Try simplifying first.</p>
+</section>
+<section id="common-mistakes-watch-out" class="level3">
+<h3 class="anchored" data-anchor-id="common-mistakes-watch-out">2.3.4 – Common Mistakes (Watch out!)</h3>
+<ul>
+<li><strong>Different variable parts don’t combine:</strong> <span class="math inline">\(x\)</span> and <span class="math inline">\(x^2\)</span> are not like; <span class="math inline">\(xy\)</span> and <span class="math inline">\(x\)</span> are not like.</li>
+<li><strong>Don’t mix variables with constants:</strong> <span class="math inline">\(2x + 3 \neq 5x\)</span>.</li>
+<li><strong>Mind the sign:</strong> In <span class="math inline">\(8x - 5x\)</span>, the second term is <span class="math inline">\(-5x\)</span>, not <span class="math inline">\(+5x\)</span>.</li>
+</ul>
+<div class="gotcha">
+<p>If you’re unsure, test with a number (substitution). If two forms always give the same value, they’re equivalent; if not, you changed the meaning.</p>
+</div>
+<hr>
+</section>
+<section id="with-parentheses-open-then-combine" class="level3">
+<h3 class="anchored" data-anchor-id="with-parentheses-open-then-combine">2.3.5 – With Parentheses: “Open, Then Combine”</h3>
+<p>If parentheses are present, <strong>simplify inside</strong> (or distribute if needed in a later lesson), then combine like terms.</p>
+<p><strong>Example D (reorder &amp; combine)</strong></p>
+<p><span class="math display">\[
+(4x - 3) + (2 - 5x) \;\to\; (4x - 5x) + (-3 + 2) = -x - 1
+\]</span></p>
+<p><strong>Example E (a leading negative)</strong></p>
+<p><span class="math display">\[
+-(3x - 4) + 2x + 7 \;\to\; -3x + 4 + 2x + 7 = (-3x + 2x) + (4+7) = -x + 11
+\]</span></p>
+<div class="you-try" title="Try it with parentheses">
 <ol type="1">
-<li>(2x + 3x) and (5x)<br>
-</li>
-<li>(5y - 2y + 1) and (3y + 1)<br>
-</li>
-<li>(4x + 2) and (2x + 2x + 2)<br>
-</li>
-<li>(x + x + x) and (3x)<br>
-</li>
+<li><span class="math inline">\((5y + 2) - (3y - 6)\)</span></li>
+<li><span class="math inline">\(-(2x + 3) + (x - 5)\)</span></li>
+</ol>
+</div>
+<hr>
+</section>
+<section id="by-variable-and-exponent-mixing-x-x2-and-constants" class="level3">
+<h3 class="anchored" data-anchor-id="by-variable-and-exponent-mixing-x-x2-and-constants">2.3.6 – By Variable and Exponent (mixing <span class="math inline">\(x\)</span>, <span class="math inline">\(x^2\)</span>, and constants)</h3>
+<p>We can (and should) combine <strong>each kind</strong> separately:</p>
+<p><span class="math display">\[
+4x^2 + 3x - 2 + x^2 - 5x + 6
+= (4x^2 + x^2) + (3x - 5x) + (-2 + 6)
+= 5x^2 - 2x + 4
+\]</span></p>
+<div class="you-try" title="Sort by kind">
+<ol type="1">
+<li><span class="math inline">\(2x^2 + 5x - 3 + 4x^2 - x + 1\)</span></li>
+<li><span class="math inline">\(7a^2 - 2a + 4 - 3a^2 + a - 6\)</span></li>
 </ol>
 </div>
 <hr>
@@ -831,68 +879,51 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="practice-on-your-own" class="level2">
 <h2 class="anchored" data-anchor-id="practice-on-your-own">🏋️ Practice On Your Own</h2>
-<p>Simplify each expression by combining like terms.</p>
+<p><strong>A. Identify and combine (no parentheses)</strong></p>
 <ol type="1">
-<li>(6x + 4x)<br>
-</li>
-<li>(5a - 3a + 2)<br>
-</li>
-<li>(2x + 3 + 5x - 1)<br>
-</li>
-<li>(9y - 2y + 4 + y)<br>
-</li>
-<li>(3b + 2b + 6 - 2)<br>
-</li>
-<li>(4m - m + 7 - 3)</li>
+<li><span class="math inline">\(6x + 4x\)</span></li>
+<li><span class="math inline">\(5a - 3a + 2\)</span></li>
+<li><span class="math inline">\(2x + 3 + 5x - 1\)</span></li>
+<li><span class="math inline">\(9y - 2y + 4 + y\)</span></li>
+<li><span class="math inline">\(3b + 2b + 6 - 2\)</span></li>
+<li><span class="math inline">\(4m - m + 7 - 3\)</span></li>
 </ol>
-<p>Are these expressions equivalent? Simplify each and compare.</p>
-<ol start="7" type="1">
-<li>(2x + 4x + 3) and (6x + 3)<br>
-</li>
-<li>(x + x + 4) and (2x + 4)<br>
-</li>
-<li>(4y + 6 - 3y + 2) and (y + 8)<br>
-</li>
-<li>(3x + 5 + 2x - 1) and (5x + 4)</li>
-</ol>
+<p><strong>B. With negatives &amp; reordering</strong> 7) <span class="math inline">\(-2x + 7 + 5x - 3\)</span> 8) <span class="math inline">\(8y - (2y) + 1 - 5\)</span> 9) <span class="math inline">\(-x - x + 4 - 2\)</span> 10) <span class="math inline">\(5p - 9 + 3 - 2p\)</span></p>
+<p><strong>C. Parentheses (open, then combine)</strong> 11) <span class="math inline">\((2x + 5) + (x - 3)\)</span> 12) <span class="math inline">\((4y - 7) - (2y + 1)\)</span> 13) <span class="math inline">\(-(3x - 2) + (x + 5)\)</span> 14) <span class="math inline">\((6 - 2m) + (m - 9)\)</span></p>
+<p><strong>D. Mixed powers / variables</strong> 15) <span class="math inline">\(2x^2 + 5x - 3 + 4x^2 - x + 1\)</span> 16) <span class="math inline">\(7a^2 - 2a + 4 - 3a^2 + a - 6\)</span> 17) <span class="math inline">\(3xy + 2x - xy + 5 - x\)</span> 18) <span class="math inline">\(5t^2 + 3 - 2t + t^2 + 2t - 8\)</span></p>
+<p><strong>E. Are they equivalent? Simplify each side and compare.</strong> 19) <span class="math inline">\(2x + 4x + 3\)</span> and <span class="math inline">\(6x + 3\)</span> 20) <span class="math inline">\(x + x + 4\)</span> and <span class="math inline">\(2x + 4\)</span> 21) <span class="math inline">\(4y + 6 - 3y + 2\)</span> and <span class="math inline">\(y + 8\)</span> 22) <span class="math inline">\(3x + 5 + 2x - 1\)</span> and <span class="math inline">\(5x + 4\)</span></p>
+<p><strong>F. Create &amp; explain</strong> 23) Make an expression <strong>equivalent to <span class="math inline">\(7x - 4\)</span></strong> that uses <strong>at least four terms</strong>. Explain how you know it’s equivalent. 24) Give a pair of expressions that are <strong>not</strong> equivalent, but that give the <strong>same value</strong> when <span class="math inline">\(x=0\)</span>. Explain why that single test doesn’t prove equivalence.</p>
 <hr>
-<div class="answers" data-collapse="true">
-<p><strong>✅ Answer Key</strong></p>
-<ol type="1">
-<li><p>(10x)<br>
-</p></li>
-<li><p>(2a + 2)<br>
-</p></li>
-<li><p>(7x + 2)<br>
-</p></li>
-<li><p>(8y + y = 9y + 4)<br>
-</p></li>
-<li><p>(5b + 4)<br>
-</p></li>
-<li><p>(3m + 4)</p></li>
-<li><p>Yes<br>
-</p></li>
-<li><p>Yes<br>
-</p></li>
-<li><p>Yes<br>
-</p></li>
-<li><p>Yes<br>
-</p></li>
+<div class="answers">
+<ol type="A">
+<li><ol type="1">
+<li><span class="math inline">\(10x\)</span> 2) <span class="math inline">\(2 + 2a\)</span> 3) <span class="math inline">\(7x + 2\)</span> 4) <span class="math inline">\(8y + 4\)</span> 5) <span class="math inline">\(5b + 4\)</span> 6) <span class="math inline">\(3m + 4\)</span></li>
+</ol></li>
+<li><ol start="7" type="1">
+<li><span class="math inline">\(3x + 4\)</span> 8) <span class="math inline">\(6y - 4\)</span> 9) <span class="math inline">\(-2x + 2\)</span> 10) <span class="math inline">\(3p - 6\)</span></li>
+</ol></li>
+<li><ol start="11" type="1">
+<li><span class="math inline">\(3x + 2\)</span> 12) <span class="math inline">\(2y - 8\)</span> 13) <span class="math inline">\(-2x + 7\)</span> 14) <span class="math inline">\(-m - 3\)</span></li>
+</ol></li>
+<li><ol start="15" type="1">
+<li><span class="math inline">\(6x^2 + 4x - 2\)</span> 16) <span class="math inline">\(4a^2 - a - 2\)</span> 17) <span class="math inline">\(2xy + x + 5\)</span> 18) <span class="math inline">\(6t^2 - 5\)</span></li>
+</ol></li>
+<li><ol start="19" type="1">
+<li>Yes 20) Yes 21) Yes 22) Yes</li>
+</ol></li>
+<li>Sample answers will vary. Example for 23): $4x + 5x - 3 - 1 = 9x - 4 $ (not equivalent—fix: <span class="math inline">\(3x + 4x - 2 - 2 = 7x - 4\)</span>). For 24): <span class="math inline">\(6x\)</span> and <span class="math inline">\(2x\)</span> both give <span class="math inline">\(0\)</span> at <span class="math inline">\(x=0\)</span>, but are not equivalent for other values.</li>
 </ol>
 </div>
+<hr>
 
 
 </section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
