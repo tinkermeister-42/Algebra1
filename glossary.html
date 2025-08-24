@@ -714,11 +714,13 @@ window.Quarto = {
   <li><a href="#glossary-absolute_value" id="toc-glossary-absolute_value" class="nav-link active" data-scroll-target="#glossary-absolute_value">Absolute value</a></li>
   <li><a href="#glossary-addition" id="toc-glossary-addition" class="nav-link" data-scroll-target="#glossary-addition">Addition</a></li>
   <li><a href="#glossary-algebra" id="toc-glossary-algebra" class="nav-link" data-scroll-target="#glossary-algebra">Algebra</a></li>
+  <li><a href="#glossary-associative" id="toc-glossary-associative" class="nav-link" data-scroll-target="#glossary-associative">Associative (Associative Property)</a></li>
   <li><a href="#glossary-calculate" id="toc-glossary-calculate" class="nav-link" data-scroll-target="#glossary-calculate">Calculate</a></li>
   <li><a href="#glossary-calculus" id="toc-glossary-calculus" class="nav-link" data-scroll-target="#glossary-calculus">Calculus</a></li>
   <li><a href="#glossary-coefficient" id="toc-glossary-coefficient" class="nav-link" data-scroll-target="#glossary-coefficient">Coefficient</a></li>
   <li><a href="#glossary-composite_number" id="toc-glossary-composite_number" class="nav-link" data-scroll-target="#glossary-composite_number">Composite number</a></li>
   <li><a href="#glossary-compute" id="toc-glossary-compute" class="nav-link" data-scroll-target="#glossary-compute">Compute</a></li>
+  <li><a href="#glossary-commutative" id="toc-glossary-commutative" class="nav-link" data-scroll-target="#glossary-commutative">Commutative (Commutative Property)</a></li>
   <li><a href="#glossary-constant" id="toc-glossary-constant" class="nav-link" data-scroll-target="#glossary-constant">Constant</a></li>
   <li><a href="#glossary-convert" id="toc-glossary-convert" class="nav-link" data-scroll-target="#glossary-convert">Convert</a></li>
   <li><a href="#glossary-decimal" id="toc-glossary-decimal" class="nav-link" data-scroll-target="#glossary-decimal">Decimal</a></li>
@@ -842,6 +844,31 @@ window.Quarto = {
 <p>It lets us describe patterns, write rules, and solve problems that work in many different situations.</p>
 <hr>
 </section>
+<section id="glossary-associative" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-associative">Associative (Associative Property)</h3>
+<p>An operation is <strong>associative</strong> if <strong>changing how the numbers are grouped</strong> (parentheses) <strong>doesn’t change the result</strong>—as long as the operation is the same throughout.</p>
+<p><strong>Works for:</strong></p>
+<ul>
+<li>Addition: <span class="math inline">\((a + b) + c = a + (b + c)\)</span></li>
+<li>Multiplication: <span class="math inline">\((ab)c = a(bc)\)</span></li>
+</ul>
+<p><strong>Does <em>not</em> work for:</strong></p>
+<ul>
+<li>Subtraction: <span class="math inline">\((a - b) - c \ne a - (b - c)\)</span> in general</li>
+<li>Division: <span class="math inline">\((a \div b) \div c \ne a \div (b \div c)\)</span></li>
+<li>Exponents: <span class="math inline">\((a^b)^c \ne a^{(b^c)}\)</span></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><span class="math inline">\((2 + 5) + 3 = 2 + (5 + 3) = 10\)</span></li>
+<li><span class="math inline">\((x + 4) + 6 = x + (4 + 6) = x + 10\)</span></li>
+<li><span class="math inline">\((2\cdot 3)\cdot x = 2\cdot(3\cdot x)\)</span></li>
+</ul>
+<p><strong>Common gotcha:</strong> Subtraction/division aren’t associative. Also, mixing operations breaks it: <span class="math inline">\(a + (b\cdot c)\)</span> is <strong>not</strong> the same as <span class="math inline">\((a + b)\cdot c\)</span>.</p>
+<p><strong>Why it matters:</strong> Lets you <strong>regroup</strong> like terms to add coefficients more easily, e.g., <span class="math inline">\(3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5\)</span>.</p>
+<p><strong>See also:</strong> <a href="./glossary.html#glossary-commutative" class="glossary-link" data-term="commutative" data-original-term="commutative">commutative</a>, <a href="./glossary.html#glossary-distributive-property" class="glossary-link" data-term="distributive property" data-original-term="distributive property">distributive property</a>, <a href="./glossary.html#glossary-like-term" class="glossary-link" data-term="like term" data-original-term="like terms">like terms</a></p>
+<hr>
+</section>
 <section id="glossary-calculate" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-calculate">Calculate</h3>
 <p>To <strong>calculate</strong> is to find an answer by using numbers and operations (add, subtract, multiply, divide).</p>
@@ -884,6 +911,30 @@ It means “3 times x.”</p>
 <p><strong>Example:</strong></p>
 <p>To compute <span class="math inline">\(3 \times 4\)</span>, we multiply to get 12.</p>
 </blockquote>
+<hr>
+</section>
+<section id="glossary-commutative" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-commutative">Commutative (Commutative Property)</h3>
+<p>An operation is <strong>commutative</strong> if <strong>changing the order</strong> of the numbers <strong>doesn’t change the result</strong>.</p>
+<p><strong>Works for:</strong></p>
+<ul>
+<li>Addition: <span class="math inline">\(a + b = b + a\)</span></li>
+<li>Multiplication: <span class="math inline">\(a\cdot b = b\cdot a\)</span></li>
+</ul>
+<p><strong>Does <em>not</em> work for:</strong></p>
+<ul>
+<li>Subtraction: <span class="math inline">\(a - b \ne b - a\)</span> (e.g., <span class="math inline">\(7-3 \ne 3-7\)</span>)</li>
+<li>Division: <span class="math inline">\(a \div b \ne b \div a\)</span> (e.g., <span class="math inline">\(8\div2 \ne 2\div8\)</span>)</li>
+<li>Exponents (in general): <span class="math inline">\(a^b \ne b^a\)</span></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><span class="math inline">\(3 + 5 = 5 + 3 = 8\)</span></li>
+<li><span class="math inline">\(2x + 7 = 7 + 2x\)</span></li>
+<li><span class="math inline">\(4\cdot 3 = 3\cdot 4 = 12\)</span></li>
+</ul>
+<p><strong>Why it matters:</strong> Lets you <strong>reorder</strong> terms when simplifying, e.g., <span class="math inline">\(2x + 5x + 3 = (2x + 5x) + 3\)</span>.</p>
+<p><strong>See also:</strong> <a href="./glossary.html#glossary-associative" class="glossary-link" data-term="associative" data-original-term="associative">associative</a>, <a href="./glossary.html#glossary-distributive-property" class="glossary-link" data-term="distributive property" data-original-term="distributive property">distributive property</a></p>
 <hr>
 </section>
 <section id="glossary-constant" class="level3">
@@ -1083,7 +1134,7 @@ It means “3 times x.”</p>
 </div>
 </div>
 <blockquote class="blockquote">
-<p>This tells us that the <a href="./glossary.html#glossary-prime-factorization" class="glossary-link" data-original-term="prime factorization" data-term="prime factorization">prime factorization</a> of 24 is <span class="math inline">\(2^3 \cdot 3\)</span>.</p>
+<p>This tells us that the <a href="./glossary.html#glossary-prime-factorization" class="glossary-link" data-term="prime factorization" data-original-term="prime factorization">prime factorization</a> of 24 is <span class="math inline">\(2^3 \cdot 3\)</span>.</p>
 </blockquote>
 <hr>
 </section>
@@ -1526,7 +1577,7 @@ The reciprocal of 5 is <span class="math inline">\(\frac{1}{5}\)</span>.</p>
 <p>To <strong>simplify</strong> a number or expression means to <strong>rewrite it in a cleaner or shorter way</strong> — without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>The fraction <span class="math inline">\(\frac{12}{20}\)</span> can be simplified by dividing both the <a href="./glossary.html#glossary-numerator" class="glossary-link" data-original-term="numerator" data-term="numerator">numerator</a> and <a href="./glossary.html#glossary-denominator" class="glossary-link" data-original-term="denominator" data-term="denominator">denominator</a> by 4:</p>
+<p>The fraction <span class="math inline">\(\frac{12}{20}\)</span> can be simplified by dividing both the <a href="./glossary.html#glossary-numerator" class="glossary-link" data-term="numerator" data-original-term="numerator">numerator</a> and <a href="./glossary.html#glossary-denominator" class="glossary-link" data-term="denominator" data-original-term="denominator">denominator</a> by 4:</p>
 <p><span class="math display">\[\frac{12}{20} = \frac{3}{5}\]</span></p>
 <p>This simpler fraction means the same thing — it’s just written with smaller numbers.</p>
 </blockquote>

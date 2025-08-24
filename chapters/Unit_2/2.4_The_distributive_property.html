@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -679,12 +708,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link active" data-scroll-target="#learn-together">🧠 Learn Together</a>
+  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
+  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">👥 Learn Together</a>
   <ul class="collapse">
   <li><a href="#what-is-the-distributive-property" id="toc-what-is-the-distributive-property" class="nav-link" data-scroll-target="#what-is-the-distributive-property">2.4.1 – What Is the Distributive Property?</a></li>
-  <li><a href="#why-it-works" id="toc-why-it-works" class="nav-link" data-scroll-target="#why-it-works">2.4.2 – Why It Works</a></li>
-  <li><a href="#common-mistakes" id="toc-common-mistakes" class="nav-link" data-scroll-target="#common-mistakes">2.4.3 – Common Mistakes</a></li>
-  <li><a href="#distribution-and-combining-like-terms" id="toc-distribution-and-combining-like-terms" class="nav-link" data-scroll-target="#distribution-and-combining-like-terms">2.4.4 – Distribution and Combining Like Terms</a></li>
+  <li><a href="#distributing-with-negatives" id="toc-distributing-with-negatives" class="nav-link" data-scroll-target="#distributing-with-negatives">2.4.2 – Distributing with Negatives</a></li>
+  <li><a href="#distribute-then-combine-like-terms" id="toc-distribute-then-combine-like-terms" class="nav-link" data-scroll-target="#distribute-then-combine-like-terms">2.4.3 – Distribute, Then Combine Like Terms</a></li>
+  <li><a href="#why-it-works-another-look" id="toc-why-it-works-another-look" class="nav-link" data-scroll-target="#why-it-works-another-look">2.4.4 – Why It Works (Another Look)</a></li>
+  <li><a href="#reverse-it-factoring-out-a-common-factor" id="toc-reverse-it-factoring-out-a-common-factor" class="nav-link" data-scroll-target="#reverse-it-factoring-out-a-common-factor">2.4.5 – Reverse It: Factoring Out a Common Factor</a></li>
+  <li><a href="#check-your-work" id="toc-check-your-work" class="nav-link" data-scroll-target="#check-your-work">2.4.6 – Check Your Work</a></li>
   </ul></li>
   <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">🏋️ Practice On Your Own</a></li>
   </ul>
@@ -712,185 +744,233 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Sometimes expressions have parentheses. To simplify them, we often use the <strong>distributive property</strong>. This means multiplying what’s <strong>outside</strong> the parentheses by everything <strong>inside</strong>.</p>
-<p>In this lesson, you’ll learn how to apply the distributive property, understand <em>why</em> it works, and use it to simplify expressions. You’ll also see how different-looking expressions can be equivalent by distributing or factoring.</p>
+<p>Sometimes breaking something into parts makes it <strong>easier</strong> to work with. For example, many people do <span class="math inline">\(7 \times 13\)</span> by thinking <span class="math inline">\(7 \times (10 + 3) = 70 + 21 = 91\)</span>. We just <strong>distributed</strong> the 7 to both 10 and 3. We can do the same in algebra.</p>
 <hr>
 <div class="objectives">
 <ul>
-<li>I can use the distributive property to expand expressions<br>
-</li>
-<li>I can simplify expressions using distribution and combining like terms<br>
-</li>
-<li>I can explain why distribution creates an equivalent expression<br>
-</li>
+<li>I can use the <strong>distributive property</strong> to expand expressions like <span class="math inline">\(a(b+c)\)</span>.</li>
+<li>I can distribute with <strong>negatives</strong> and then <strong>combine like terms</strong>.</li>
+<li>I can <strong>factor out</strong> a common factor (reverse distribution) to rewrite an expression.</li>
 </ul>
 </div>
 <hr>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-combine-like-term" class="glossary-link" data-term="combine like term" data-original-term="combine like terms">combine like terms</a>, <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>, <a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a>, <a href="../../glossary.html#glossary-parentheses" class="glossary-link" data-term="parentheses" data-original-term="parentheses">parentheses</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-term="simplify" data-original-term="simplify">simplify</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-term="term" data-original-term="term">term</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-term="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>, <a href="../../glossary.html#glossary-factor" class="glossary-link" data-original-term="factor" data-term="factor">factor</a>, <a href="../../glossary.html#glossary-greatest-common-factor" class="glossary-link" data-original-term="greatest common factor" data-term="greatest common factor">greatest common factor</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-term="simplify" data-term="simplify">simplify</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-original-term="term" data-term="term">term</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
 </div>
 <hr>
-<div class="warmup" data-collapse="true">
+<section id="warm-up" class="level2">
+<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
 <ol type="1">
-<li><p>You buy 3 bags of snacks. Each bag has 2 chips, 1 candy, and 1 drink.</p>
-<ul>
-<li>How could you find the total number of snacks without opening the bags?</li>
-</ul></li>
-<li><p>What is the value of (2(4 + 3))?<br>
-What do you notice if you rewrite it as (2 + 2 )?</p></li>
-<li><p>Write two different-looking expressions that both equal 12. How do you know they’re equal?</p></li>
+<li>Mental math with parts:
+<ol type="a">
+<li><span class="math inline">\(6(10+4)\)</span> &nbsp;&nbsp; b) <span class="math inline">\(9(20-1)\)</span> &nbsp;&nbsp; c) <span class="math inline">\(5(3+0.2)\)</span></li>
+</ol></li>
+<li>True or false? Explain.
+<ol type="a">
+<li><span class="math inline">\(4(x+3)=4x+12\)</span></li>
+<li><span class="math inline">\(4(x+3)=4x+3\)</span></li>
+</ol></li>
+<li>Which is easier to compute in your head? Why?
+<ol type="a">
+<li><span class="math inline">\(12 \times 25\)</span> or <span class="math inline">\(12(20+5)\)</span></li>
+<li><span class="math inline">\(8 \times 19\)</span> or <span class="math inline">\(8(20-1)\)</span></li>
+</ol></li>
 </ol>
-<blockquote class="blockquote">
-<p>These questions introduce the idea of repeated groups, equal expressions, and multiplication over addition — all key to understanding distribution.</p>
-</blockquote>
-</div>
 <hr>
+</section>
 <section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
+<h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
 <section id="what-is-the-distributive-property" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-the-distributive-property">2.4.1 – What Is the Distributive Property?</h3>
-<p>The <strong>distributive property</strong> lets you multiply a number by a group in parentheses:</p>
-<p>[ a(b + c) = ab + ac ]</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong> [ 3(x + 4) = 3x + 12 ]</p>
-</blockquote>
-<p>You multiply the <strong>3</strong> by <strong>both</strong> terms inside:<br>
-- (3 x = 3x)<br>
-- (3 = 12)</p>
-<blockquote class="blockquote">
-<p><em>Visual note: Use an area model or rectangle diagram to show this. Label one side as 3 and the other as split into (x) and 4.</em></p>
-</blockquote>
-<hr>
-</section>
-<section id="why-it-works" class="level3">
-<h3 class="anchored" data-anchor-id="why-it-works">2.4.2 – Why It Works</h3>
-<p>Think of the parentheses as a <strong>group</strong>. You have 3 copies of the group ((x + 4)):</p>
-<p>[ (x + 4) + (x + 4) + (x + 4) ]</p>
-<p>If you combine like terms:<br>
-[ 3x + 12 ]</p>
-<p>It’s the same as multiplying once:<br>
-[ 3(x + 4) ]</p>
-<p>So these are <strong>equivalent expressions</strong>.</p>
-<hr>
-<div class="you-try" data-collapse="true" title="🧠 Try Using the Distributive Property">
-<p>Use the distributive property to expand each expression.</p>
+<p>The <strong>distributive property</strong> says:</p>
+<p><span class="math display">\[
+a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c)=ab-ac.
+\]</span></p>
+<p>Think of an <strong>area model</strong>. A rectangle with side lengths <span class="math inline">\((x+3)\)</span> and <span class="math inline">\(4\)</span> can be split into two smaller rectangles: one <span class="math inline">\(x\)</span> by <span class="math inline">\(4\)</span> and one <span class="math inline">\(3\)</span> by <span class="math inline">\(4\)</span>.</p>
+<p><img src="../../images/Unit_2/Lesson_4/area_4_by_(x+3).png" class="img-fluid" width="420"></p>
+<p>So the total area is <span class="math inline">\(4x + 12\)</span>. That’s distribution in pictures.</p>
+<p><strong>Examples</strong></p>
 <ol type="1">
-<li>(2(x + 3))<br>
-</li>
-<li>(5(a - 2))<br>
-</li>
-<li>(3(2x + 4))<br>
-</li>
-<li>(4(x - 1) + 2x)</li>
+<li><span class="math inline">\(3(x+2)=3x+6\)</span></li>
+<li><span class="math inline">\(5(y-4)=5y-20\)</span></li>
+<li><span class="math inline">\(2(4a+3b)=8a+6b\)</span></li>
+</ol>
+<div class="you-try-m" title="Expand using the distributive property.">
+<ol type="a">
+<li><span class="math inline">\(5(x+7)\)</span></li>
+<li><span class="math inline">\(2(3+y)\)</span></li>
+<li><span class="math inline">\(4(a+3b)\)</span></li>
+<li><span class="math inline">\(10(x-0.5)\)</span></li>
+</ol>
+</div>
+<div class="answer" title="Answer">
+<ol type="a">
+<li><span class="math inline">\(5x+35\)</span> &nbsp;&nbsp; b) <span class="math inline">\(6+2y\)</span> or <span class="math inline">\(2y+6\)</span> &nbsp;&nbsp; c) <span class="math inline">\(4a+12b\)</span> &nbsp;&nbsp; d) <span class="math inline">\(10x-5\)</span></li>
 </ol>
 </div>
 <hr>
 </section>
-<section id="common-mistakes" class="level3">
-<h3 class="anchored" data-anchor-id="common-mistakes">2.4.3 – Common Mistakes</h3>
-<blockquote class="blockquote">
-<p>⚠️ <strong>Don’t forget to multiply each part inside the parentheses!</strong></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>❌ Incorrect:<br>
-(2(x + 5) = 2x + 5) ← <strong>Didn’t multiply the 5</strong></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>✅ Correct:<br>
-(2(x + 5) = 2x + 10)</p>
-</blockquote>
-<p>Also, be careful with negatives:</p>
-<blockquote class="blockquote">
-<p>[ -3(x - 2) = -3x + 6 ]</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Note: Consider using a “Gotcha!” callout box with common misconceptions here.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="💥 Mistake or Not?">
-<p>Decide if each simplification is correct. If not, explain the mistake.</p>
+<section id="distributing-with-negatives" class="level3">
+<h3 class="anchored" data-anchor-id="distributing-with-negatives">2.4.2 – Distributing with Negatives</h3>
+<p>Careful with <strong>signs</strong>. The sign in front of the parentheses multiplies <strong>every</strong> term inside.</p>
+<p><strong>Examples</strong></p>
 <ol type="1">
-<li>(4(x + 2) = 4x + 2)<br>
-</li>
-<li>(-2(a - 3) = -2a + 6)<br>
-</li>
-<li>(5(x - 1) + 3x = 8x - 5)<br>
-</li>
-<li>(3(2x + 4) = 6x + 12)</li>
+<li><span class="math inline">\(-3(x-4) = -3x + 12\)</span></li>
+<li><span class="math inline">\(-(x+7)= -x - 7\)</span> (think “<span class="math inline">\(-1\)</span> times each term”)</li>
+<li><span class="math inline">\(6 - 2(x+3) = 6 - 2x - 6 = -2x\)</span></li>
+</ol>
+<div class="gotcha" title="Don’t skip a term">
+<p><span class="math inline">\(4(x+2y+5)\)</span> means <span class="math inline">\(4x + 8y + 20\)</span>. Distribute to <strong>every</strong> term, not just the first two.</p>
+</div>
+<div class="you-try" title="Expand and simplify $-2(3-y)+4(y+5)$">
+<p><span class="math display">\[
+-6 + 2y + 4y + 20 = 6y + 14
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="distribute-then-combine-like-terms" class="level3">
+<h3 class="anchored" data-anchor-id="distribute-then-combine-like-terms">2.4.3 – Distribute, Then Combine Like Terms</h3>
+<p>We often distribute <strong>and then</strong> use what we learned in 2.3 (combine like terms).</p>
+<p><strong>Example</strong></p>
+<p><span class="math display">\[
+4(x+2) + 3(x-5) = 4x + 8 + 3x - 15 = 7x - 7.
+\]</span></p>
+<p>Sometimes you can <strong>simplify inside</strong> first:</p>
+<p><span class="math display">\[
+2(x+3x-5)=2(4x-5)=8x-10,
+\]</span></p>
+<p>which is a little faster.</p>
+<div class="think" title="Which path is better?">
+<p>If you can combine inside the parentheses <strong>first</strong>, do it. If not, distribute and then combine like terms.</p>
+</div>
+<hr>
+</section>
+<section id="why-it-works-another-look" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-another-look">2.4.4 – Why It Works (Another Look)</h3>
+<p>Distribution turns “<strong>groups of a sum</strong>” into a “<strong>sum of groups</strong>.”</p>
+<p><strong>Word picture:</strong> A club sells a snack bundle: each bundle has <strong><span class="math inline">\(x\)</span> cookies and 3 candies</strong>. If you buy <strong>4 bundles</strong>, you get <strong><span class="math inline">\(4x\)</span> cookies and <span class="math inline">\(12\)</span> candies</strong>: <span class="math inline">\(4(x+3)=4x+12.\)</span></p>
+<div class="real-world" title="Group purchases">
+<p>Buying 7 “<span class="math inline">\(x\)</span>-dollar passes and a $2 fee” costs <span class="math inline">\(7(x+2)=7x+14\)</span>. The per-person cost (<span class="math inline">\(x\)</span>) and the fixed fee (2) both get multiplied by 7.</p>
+</div>
+<hr>
+</section>
+<section id="reverse-it-factoring-out-a-common-factor" class="level3">
+<h3 class="anchored" data-anchor-id="reverse-it-factoring-out-a-common-factor">2.4.5 – Reverse It: Factoring Out a Common Factor</h3>
+<p>Distribution goes both ways. If <span class="math inline">\(ab+ac = a(b+c)\)</span>, then we can <strong>factor out</strong> <span class="math inline">\(a\)</span>.</p>
+<p><strong>Examples</strong></p>
+<ol type="1">
+<li><span class="math inline">\(8x+12 = 4(2x+3)\)</span></li>
+<li><span class="math inline">\(15x-9 = 3(5x-3)\)</span></li>
+<li><span class="math inline">\(3x+6y = 3(x+2y)\)</span></li>
+</ol>
+<p>This is called <strong>factoring</strong> (using a <strong>greatest common factor</strong>, if possible).</p>
+<div class="you-try-m" title="Factor the expression (reverse distribute).">
+<ol type="a">
+<li><span class="math inline">\(12x+18\)</span> &nbsp;&nbsp; b) <span class="math inline">\(9a-6\)</span> &nbsp;&nbsp; c) <span class="math inline">\(14y+21x\)</span> &nbsp;&nbsp; d) <span class="math inline">\(15x-9x^2\)</span></li>
+</ol>
+</div>
+<div class="answer" title="Answer">
+<ol type="a">
+<li><span class="math inline">\(6(2x+3)\)</span> &nbsp;&nbsp; b) <span class="math inline">\(3(3a-2)\)</span> &nbsp;&nbsp; c) <span class="math inline">\(7(2y+3x)\)</span> &nbsp;&nbsp; d) <span class="math inline">\(3x(5-3x)\)</span></li>
 </ol>
 </div>
 <hr>
 </section>
-<section id="distribution-and-combining-like-terms" class="level3">
-<h3 class="anchored" data-anchor-id="distribution-and-combining-like-terms">2.4.4 – Distribution and Combining Like Terms</h3>
-<p>You often need to combine like terms <strong>after</strong> distributing.</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong> [ 2(x + 3) + 4x = 2x + 6 + 4x = 6x + 6 ]</p>
-</blockquote>
-<p>This is especially common in expressions with more than one set of terms.</p>
-<hr>
-<div class="you-try" data-collapse="true" title="✏️ Distribute and Simplify">
-<ol type="1">
-<li>(3(x + 2) + x)<br>
-</li>
-<li>(4a - 2(3a - 1))<br>
-</li>
-<li>(-5(x - 2) + 3x)<br>
-</li>
-<li>(6(x + 4) - 2(x + 1))</li>
-</ol>
+<section id="check-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="check-your-work">2.4.6 – Check Your Work</h3>
+<p>Use a quick <strong>substitution</strong> to confirm equivalence.</p>
+<p>Example: Is <span class="math inline">\(5(2x-3)-(x-4)\)</span> the same as <span class="math inline">\(9x-11\)</span>?</p>
+<p>Expand: <span class="math inline">\(5(2x-3)-(x-4)=10x-15-x+4=9x-11.\)</span></p>
+<p>Check <span class="math inline">\(x=2\)</span>: <span class="math inline">\(5(4-3)-(2-4)=5(1)-(-2)=5+2=7 \quad \text{and} \quad 9(2)-11=18-11=7.\)</span> They match.</p>
+<div class="gotcha" title="Important: Exponents don’t distribute over addition">
+<p><span class="math inline">\((x+2)^2 \neq x^2+2^2\)</span>. Correct: <span class="math inline">\((x+2)^2=(x+2)(x+2)=x^2+4x+4\)</span>.</p>
 </div>
 <hr>
 </section>
 </section>
 <section id="practice-on-your-own" class="level2">
 <h2 class="anchored" data-anchor-id="practice-on-your-own">🏋️ Practice On Your Own</h2>
-<p>Expand and simplify each expression.</p>
+<p><strong>Expand using the distributive property</strong></p>
 <ol type="1">
-<li>(2(x + 5))<br>
-</li>
-<li>(3(y - 4))<br>
-</li>
-<li>(-4(x - 1))<br>
-</li>
-<li>(5(a + 2) - a)<br>
-</li>
-<li>(6x + 2(x - 3))<br>
-</li>
-<li>(3(x + 4) + 2(x - 1))</li>
+<li><span class="math inline">\(6(x+5)\)</span></li>
+<li><span class="math inline">\(7(y-2)\)</span></li>
+<li><span class="math inline">\(4(3a+b)\)</span></li>
+<li><span class="math inline">\(10(m+0.3)\)</span></li>
+<li><span class="math inline">\(-3(p+9)\)</span></li>
+<li><span class="math inline">\(-(k-8)\)</span></li>
 </ol>
-<p>Error check: Are these simplifications correct?</p>
+<p><strong>Expand, then combine like terms</strong></p>
 <ol start="7" type="1">
-<li>(2(x + 3) = 2x + 3)<br>
-</li>
-<li>(-3(x - 4) = -3x + 12)<br>
-</li>
-<li>(4x + 3(x + 2) = 7x + 6)<br>
-</li>
-<li>(2(x + 1) + 3x = 5x + 1)</li>
+<li><span class="math inline">\(2(x+3)+5(x-1)\)</span></li>
+<li><span class="math inline">\(4y-2(3y-7)\)</span></li>
+<li><span class="math inline">\(3(a+2b)-5(2a-b)\)</span></li>
+<li><span class="math inline">\(-2(t-5)+3(t+1)\)</span></li>
+</ol>
+<p><strong>With decimals and fractions</strong></p>
+<ol start="11" type="1">
+<li><span class="math inline">\(0.5(8x-6)\)</span></li>
+<li><span class="math inline">\(1.2(y+5)-0.2y\)</span></li>
+<li><span class="math inline">\(\dfrac{3}{4}(4x-8)\)</span></li>
+<li><span class="math inline">\(-\dfrac{1}{2}(6a+10)\)</span></li>
+</ol>
+<p><strong>Factor (reverse distribute)</strong></p>
+<ol start="15" type="1">
+<li><span class="math inline">\(18x+27\)</span></li>
+<li><span class="math inline">\(20m-12\)</span></li>
+<li><span class="math inline">\(8p+12q\)</span></li>
+<li><span class="math inline">\(14x-21x^2\)</span></li>
+</ol>
+<p><strong>Are they equivalent? Expand/simplify and compare.</strong></p>
+<ol start="19" type="1">
+<li><span class="math inline">\(3(x+4)+2x\)</span> and <span class="math inline">\(5x+12\)</span></li>
+<li><span class="math inline">\(6-2(x+3)\)</span> and <span class="math inline">\(-2x\)</span></li>
+<li><span class="math inline">\(5(a-1)+a\)</span> and <span class="math inline">\(6a-5\)</span></li>
+<li><span class="math inline">\(4(y+2)-3(y-1)\)</span> and <span class="math inline">\(y+11\)</span></li>
+</ol>
+<p><strong>Challenge Problems</strong></p>
+<ol start="23" type="1">
+<li><p>Show two different ways to simplify <span class="math inline">\(3(x+5)-2(x-1)\)</span> (e.g., distribute-first vs.&nbsp;combine-inside-first if possible). Explain why both give the same result.</p></li>
+<li><p>Create <strong>two equivalent expressions</strong> that look different: one using parentheses and one fully expanded. Explain how you know they’re equivalent.</p></li>
 </ol>
 <hr>
-<div class="answers" data-collapse="true">
-<p><strong>✅ Answer Key</strong></p>
+<div class="answers">
+<p><strong>Expand using the distributive property</strong></p>
 <ol type="1">
-<li><p>(2x + 10)<br>
-</p></li>
-<li><p>(3y - 12)<br>
-</p></li>
-<li><p>(-4x + 4)<br>
-</p></li>
-<li><p>(5a + 10 - a = 4a + 10)<br>
-</p></li>
-<li><p>(6x + 2x - 6 = 8x - 6)<br>
-</p></li>
-<li><p>(3x + 12 + 2x - 2 = 5x + 10)</p></li>
-<li><p>❌ Should be (2x + 6)<br>
-</p></li>
-<li><p>✅<br>
-</p></li>
-<li><p>✅<br>
-</p></li>
-<li><p>❌ Should be (2x + 2 + 3x = 5x + 2)</p></li>
+<li><span class="math inline">\(6x+30\)</span></li>
+<li><span class="math inline">\(7y-14\)</span></li>
+<li><span class="math inline">\(12a+4b\)</span></li>
+<li><span class="math inline">\(10m+3\)</span></li>
+<li><span class="math inline">\(-3p-27\)</span></li>
+<li><span class="math inline">\(-k+8\)</span></li>
+</ol>
+<p><strong>Expand, then combine like terms</strong></p>
+<ol start="7" type="1">
+<li><span class="math inline">\(2x+6+5x-5=7x+1\)</span></li>
+<li><span class="math inline">\(4y-6y+14=-2y+14\)</span></li>
+<li><span class="math inline">\(3a+6b-10a+5b=-7a+11b\)</span></li>
+<li><span class="math inline">\(-2t+10+3t+3 = t+13\)</span></li>
+</ol>
+<p><strong>With decimals and fractions</strong></p>
+<ol start="11" type="1">
+<li><span class="math inline">\(4x-3\)</span></li>
+<li><span class="math inline">\(1.2y+6-0.2y = 1.0y+6\)</span> or <span class="math inline">\(y+6\)</span></li>
+<li><span class="math inline">\(3x-6\)</span></li>
+<li><span class="math inline">\(-3a-5\)</span></li>
+</ol>
+<p><strong>Factor (reverse distribute)</strong></p>
+<ol start="15" type="1">
+<li><span class="math inline">\(9(2x+3)\)</span></li>
+<li><span class="math inline">\(4(5m-3)\)</span></li>
+<li><span class="math inline">\(4(2p+3q)\)</span></li>
+<li><span class="math inline">\(7x(2-3x)\)</span></li>
+</ol>
+<p><strong>Are they equivalent?</strong></p>
+<ol start="19" type="1">
+<li>yes (both <span class="math inline">\(5x+12\)</span>)</li>
+<li>yes (both <span class="math inline">\(-2x\)</span>)</li>
+<li>yes (both <span class="math inline">\(6a-5\)</span>)</li>
+<li>yes (both <span class="math inline">\(y+11\)</span>)</li>
 </ol>
 </div>
 
