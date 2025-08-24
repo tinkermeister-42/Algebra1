@@ -2,7 +2,7 @@
 
 When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink like terms >}}**.
 
-Think of a cashier counting a mixed drawer: tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
+Think of a cashier counting money in a mixed drawer. They put tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
 ---
 
@@ -16,7 +16,8 @@ Think of a cashier counting a mixed drawer: tens with tens, fives with fives, qu
 ---
 
 :::{.vocab}
-{{< glink expression >}}, {{< glink term >}}, {{< glink coefficient >}}, {{< glink constant >}}, {{< glink like terms >}}, {{< glink simplify >}}, {{< glink equivalent expressions >}}, {{< glink variable >}}
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equivalent expressions >}}, {{< glink like terms >}}, {{< glink simplify >}}, 
+{{< glink term >}}, {{< glink variable >}}
 :::
 
 ---
@@ -27,7 +28,7 @@ Think of a cashier counting a mixed drawer: tens with tens, fives with fives, qu
 
    * $5 + 7$
    * $2x + 4x$
-   * $3x + 5y$
+   * $3x^2 + 5x^2$
 
 2. For each pair, how are they similar and how are they different?
 
@@ -43,53 +44,77 @@ Think of a cashier counting a mixed drawer: tens with tens, fives with fives, qu
 
 ### 2.3.1 – What Are Like Terms?
 
-**Like terms** have the **exact same variable part** (same letters with the same exponents). Only the **coefficients** may differ.
+Suppose you have apples, oranges, and bananas to sell.
 
-> **Examples**
-> $2x$ and $5x$ → ✅ like
-> $x^2$ and $-3x^2$ → ✅ like
-> $3x$ and $3y$ → ❌ not like
-> $x$ and $x^2$ → ❌ not like
-> $4xy$ and $-7yx$ → ✅ like (order of letters doesn’t matter)
+![](/images/Unit_2/Lesson_3/mixed_fruit.png){width="300px"}
 
-:::{.remember}
-The **sign** belongs to the term. In $7x - 2x$, the terms are $+7x$ and $-2x$.
+You can see what fruit is there, but it’s **messy**. Let’s **group by type** to clean it up.
+
+![](/images/Unit_2/Lesson_3/sorted_fruit.png){width="400px"}
+
+Now it’s easy to see how many you have of each kind—and it looks better for customers.
+
+Algebraic expressions can be messy in the same way. Different kinds of {{< glink terms >}} get mixed together. To **simplify**, we first **group by type** and then add things up.
+
+**What do we mean by “type”?**  
+Two terms are the same type if their **variable part** (letters and exponents) matches exactly. We call these **{{< glink like terms >}}**.
+
+**Like terms**
+
+- $5x$ and $3x$
+- $7$ and $-3$ *(both are {{< glink constants >}})*
+- $2y^3$ and $y^3$
+- $8xy$ and $2yx$ *(the order of the variables doesn't matter)*
+
+**Not like terms**
+
+- $2x$ and $3y$
+- $4x^2$ and $2x^4$
+- $7$ and $-3x$
+- $3x^2y$ and $3xy^2$
+
+:::{.remember} 
+The **sign** (+ or -) belongs with the term. In $7x - 2x$ the terms are $+7x$ and $-2x$.
+:::
+
+:::{.you-try title="Identify any like terms in this list: $3x$, $2y$, $77$, $8y$, $-x$, $5$"}
+
+**Like terms**
+
+- $3x$ and $-x$
+- $2y$ and $8y$
+- $77$ and $5$
 :::
 
 ---
 
 ### 2.3.2 – How to Combine Like Terms (Sort → Group → Add)
 
-**Step 1: Sort** terms by their variable part (including constants).
-**Step 2: Group** like terms together.
-**Step 3: Add/Subtract** the coefficients. Keep the variable part the same.
-
-**Example A (single variable + constants)**
+In this messy expression, there are several terms of different types. It is difficult to see what we have.
 
 $$
-2x + 4 + 5x - 1 \;\to\; (2x + 5x) + (4 - 1) \;=\; 7x + 3
+9a + 4c + 8b - 3a + b - 2c + 2a - 6b - 4a
 $$
 
-**Example B (negatives and subtraction)**
+**Step 1:** To clean it up, let's **sort** by type.
 
 $$
-7x - 2x + 6 - 3 \;\to\; (7x - 2x) + (6 - 3) \;=\; 5x + 3
+9a -3a +2a -4a + 4c - 2c + 8b + b - 6b
 $$
 
-**Example C (multiple variable types)**
+**Step 2:** Now we **group** the like terms together.
 
 $$
-3x + 2y + 5 - x + y - 2 \;\to\; (3x - x) + (2y + y) + (5 - 2) \;=\; 2x + 3y + 3
+(9a - 3a + 2a - 4a) + (4c - 2c) + (8b + b - 6b)
 $$
 
-:::{.you-try title="Try it: Sort, group, and add"}
-Simplify each:
+**Step 3:** To simplify we can **add** things up in each group.
 
-1. $4x + 3x$
-2. $5a + 2b - 3a$
-3. $x + 2 + x + 5$
-4. $7m - 2m + 6 - 3$
-:::
+$$ 
+4a + 2c + 3b
+$$
+
+It is now obvious that we have 4 a's, 2 c's, and 3 b's. This process of sorting, grouping, and adding things up is called **combining like terms**. Doing this makes working with algebraic expressions much easier.
 
 ---
 

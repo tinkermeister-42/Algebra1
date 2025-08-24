@@ -206,7 +206,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
    c. The number halfway between 5 and 9.
 
-2. What question could match this number line?
+2. What question could match this number line? (e.g. How old is grandma?)
 
    ![](/images/Unit_1/Lesson_1/problem_2.png)
 
