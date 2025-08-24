@@ -28,6 +28,38 @@ It lets us describe patterns, write rules, and solve problems that work in many 
 
 ---
 
+### Associative (Associative Property) {#glossary-associative}
+
+An operation is **associative** if **changing how the numbers are grouped** (parentheses) **doesn’t change the result**—as long as the operation is the same throughout.
+
+**Works for:**
+
+* Addition: $(a + b) + c = a + (b + c)$
+* Multiplication: $(ab)c = a(bc)$
+
+**Does *not* work for:**
+
+* Subtraction: $(a - b) - c \ne a - (b - c)$ in general
+* Division: $(a \div b) \div c \ne a \div (b \div c)$
+* Exponents: $(a^b)^c \ne a^{(b^c)}$
+
+**Examples:**
+
+* $(2 + 5) + 3 = 2 + (5 + 3) = 10$
+* $(x + 4) + 6 = x + (4 + 6) = x + 10$
+* $(2\cdot 3)\cdot x = 2\cdot(3\cdot x)$
+
+**Common gotcha:**
+Subtraction/division aren’t associative. Also, mixing operations breaks it: $a + (b\cdot c)$ is **not** the same as $(a + b)\cdot c$.
+
+**Why it matters:**
+Lets you **regroup** like terms to add coefficients more easily, e.g.,
+$3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5$.
+
+**See also:** {{< glink commutative >}}, {{< glink distributive property >}}, {{< glink like terms >}}
+
+---
+
 ### Calculate {#glossary-calculate}
 
 To **calculate** is to find an answer by using numbers and operations (add, subtract, multiply, divide).
@@ -76,6 +108,34 @@ To **compute** is another way to say find the answer in math by doing the steps.
 > **Example:**
 >
 > To compute $3 \times 4$, we multiply to get 12.
+
+---
+
+### Commutative (Commutative Property) {#glossary-commutative}
+
+An operation is **commutative** if **changing the order** of the numbers **doesn’t change the result**.
+
+**Works for:**
+
+* Addition: $a + b = b + a$
+* Multiplication: $a\cdot b = b\cdot a$
+
+**Does *not* work for:**
+
+* Subtraction: $a - b \ne b - a$ (e.g., $7-3 \ne 3-7$)
+* Division: $a \div b \ne b \div a$ (e.g., $8\div2 \ne 2\div8$)
+* Exponents (in general): $a^b \ne b^a$
+
+**Examples:**
+
+* $3 + 5 = 5 + 3 = 8$
+* $2x + 7 = 7 + 2x$
+* $4\cdot 3 = 3\cdot 4 = 12$
+
+**Why it matters:**
+Lets you **reorder** terms when simplifying, e.g., $2x + 5x + 3 = (2x + 5x) + 3$.
+
+**See also:** {{< glink associative >}}, {{< glink distributive property >}}
 
 ---
 

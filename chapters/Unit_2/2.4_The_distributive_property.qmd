@@ -1,180 +1,261 @@
 # 2.4 – The Distributive Property {.unnumbered}
 
-Sometimes expressions have parentheses. To simplify them, we often use the **distributive property**. This means multiplying what's **outside** the parentheses by everything **inside**.
-
-In this lesson, you'll learn how to apply the distributive property, understand *why* it works, and use it to simplify expressions. You'll also see how different-looking expressions can be equivalent by distributing or factoring.
+Sometimes breaking something into parts makes it **easier** to work with. For example, many people do $7 \times 13$ by thinking $7 \times (10 + 3) = 70 + 21 = 91$. We just **distributed** the 7 to both 10 and 3. We can do the same in algebra.
 
 ---
 
 :::{.objectives}
-- I can use the distributive property to expand expressions  
-- I can simplify expressions using distribution and combining like terms  
-- I can explain why distribution creates an equivalent expression  
+
+* I can use the **distributive property** to expand expressions like $a(b+c)$.
+* I can distribute with **negatives** and then **combine like terms**.
+* I can **factor out** a common factor (reverse distribution) to rewrite an expression.
 :::
 
 ---
 
 :::{.vocab}
-{{< glink combine like terms >}}, {{< glink equivalent expressions >}}, {{< glink expression >}}, {{< glink parentheses >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+{{< glink coefficient >}}, {{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
 :::
 
 ---
 
-:::{.warmup collapse=true}
-1. You buy 3 bags of snacks. Each bag has 2 chips, 1 candy, and 1 drink.  
-   - How could you find the total number of snacks without opening the bags?
+## 🔥 Warm-Up
 
-2. What is the value of \(2(4 + 3)\)?  
-   What do you notice if you rewrite it as \(2 \cdot 4 + 2 \cdot 3\)?
+1. Mental math with parts:
+   a) $6(10+4)$    b) $9(20-1)$    c) $5(3+0.2)$
 
-3. Write two different-looking expressions that both equal 12. How do you know they’re equal?
+2. True or false? Explain.
+   a) $4(x+3)=4x+12$
+   b) $4(x+3)=4x+3$
 
-> These questions introduce the idea of repeated groups, equal expressions, and multiplication over addition — all key to understanding distribution.
-:::
+3. Which is easier to compute in your head? Why?
+   a) $12 \times 25$ or $12(20+5)$
+   b) $8 \times 19$ or $8(20-1)$
 
 ---
 
-## 🧠 Learn Together
+## 👥 Learn Together
 
 ### 2.4.1 – What Is the Distributive Property?
 
-The **distributive property** lets you multiply a number by a group in parentheses:
+The **distributive property** says:
 
-\[
-a(b + c) = ab + ac
-\]
+$$
+a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c)=ab-ac.
+$$
 
-> **Example:**
-> \[
-> 3(x + 4) = 3x + 12
-> \]
+Think of an **area model**. A rectangle with side lengths $(x+3)$ and $4$ can be split into two smaller rectangles: one $x$ by $4$ and one $3$ by $4$.
 
-You multiply the **3** by **both** terms inside:  
-- \(3 \cdot x = 3x\)  
-- \(3 \cdot 4 = 12\)
+![](/images/Unit_2/Lesson_4/area_4_by_\(x+3\).png){width="420px"}
 
-> _Visual note: Use an area model or rectangle diagram to show this. Label one side as 3 and the other as split into \(x\) and 4._
+So the total area is $4x + 12$. That’s distribution in pictures.
 
----
+**Examples**
 
-### 2.4.2 – Why It Works
+1. $3(x+2)=3x+6$
+2. $5(y-4)=5y-20$
+3. $2(4a+3b)=8a+6b$
 
-Think of the parentheses as a **group**. You have 3 copies of the group \((x + 4)\):
+:::{.you-try-m title="Expand using the distributive property."}
+a) $5(x+7)$
+b) $2(3+y)$
+c) $4(a+3b)$
+d) $10(x-0.5)$
+:::
 
-\[
-(x + 4) + (x + 4) + (x + 4)
-\]
-
-If you combine like terms:  
-\[
-3x + 12
-\]
-
-It’s the same as multiplying once:  
-\[
-3(x + 4)
-\]
-
-So these are **equivalent expressions**.
-
----
-
-:::{.you-try collapse=true title="🧠 Try Using the Distributive Property"}
-Use the distributive property to expand each expression.
-
-1. \(2(x + 3)\)  
-2. \(5(a - 2)\)  
-3. \(3(2x + 4)\)  
-4. \(4(x - 1) + 2x\)
+:::{.answer title="Answer"}
+a) $5x+35$    b) $6+2y$ or $2y+6$    c) $4a+12b$    d) $10x-5$
 :::
 
 ---
 
-### 2.4.3 – Common Mistakes
+### 2.4.2 – Distributing with Negatives
 
-> ⚠️ **Don’t forget to multiply each part inside the parentheses!**
+Careful with **signs**. The sign in front of the parentheses multiplies **every** term inside.
 
-> ❌ Incorrect:  
-> \(2(x + 5) = 2x + 5\) ← **Didn’t multiply the 5**
+**Examples**
 
-> ✅ Correct:  
-> \(2(x + 5) = 2x + 10\)
+1. $-3(x-4) = -3x + 12$
+2. $-(x+7)= -x - 7$ (think “$-1$ times each term”)
+3. $6 - 2(x+3) = 6 - 2x - 6 = -2x$
 
-Also, be careful with negatives:
+:::{.gotcha title="Don’t skip a term"}
+$4(x+2y+5)$ means $4x + 8y + 20$. Distribute to **every** term, not just the first two.
+:::
 
-> \[
-> -3(x - 2) = -3x + 6
-> \]
+:::{.you-try title="Expand and simplify $-2(3-y)+4(y+5)$"}
 
-> _Note: Consider using a “Gotcha!” callout box with common misconceptions here._
+$$
+-6 + 2y + 4y + 20 = 6y + 14
+$$
 
----
-
-:::{.you-try collapse=true title="💥 Mistake or Not?"}
-Decide if each simplification is correct. If not, explain the mistake.
-
-1. \(4(x + 2) = 4x + 2\)  
-2. \(-2(a - 3) = -2a + 6\)  
-3. \(5(x - 1) + 3x = 8x - 5\)  
-4. \(3(2x + 4) = 6x + 12\)
 :::
 
 ---
 
-### 2.4.4 – Distribution and Combining Like Terms
+### 2.4.3 – Distribute, Then Combine Like Terms
 
-You often need to combine like terms **after** distributing.
+We often distribute **and then** use what we learned in 2.3 (combine like terms).
 
-> **Example:**
-> \[
-> 2(x + 3) + 4x = 2x + 6 + 4x = 6x + 6
-> \]
+**Example**
 
-This is especially common in expressions with more than one set of terms.
+$$
+4(x+2) + 3(x-5) = 4x + 8 + 3x - 15 = 7x - 7.
+$$
+
+Sometimes you can **simplify inside** first:
+
+$$
+2(x+3x-5)=2(4x-5)=8x-10,
+$$
+
+which is a little faster.
+
+:::{.think title="Which path is better?"}
+If you can combine inside the parentheses **first**, do it. If not, distribute and then combine like terms.
+:::
 
 ---
 
-:::{.you-try collapse=true title="✏️ Distribute and Simplify"}
-1. \(3(x + 2) + x\)  
-2. \(4a - 2(3a - 1)\)  
-3. \(-5(x - 2) + 3x\)  
-4. \(6(x + 4) - 2(x + 1)\)
+### 2.4.4 – Why It Works (Another Look)
+
+Distribution turns “**groups of a sum**” into a “**sum of groups**.”
+
+**Word picture:** A club sells a snack bundle: each bundle has **$x$ cookies and 3 candies**. If you buy **4 bundles**, you get **$4x$ cookies and $12$ candies**:
+$4(x+3)=4x+12.$
+
+:::{.real-world title="Group purchases"}
+Buying 7 “$x$-dollar passes and a $2 fee” costs $7(x+2)=7x+14$. The per-person cost ($x$) and the fixed fee (2) both get multiplied by 7.
+:::
+
+---
+
+### 2.4.5 – Reverse It: Factoring Out a Common Factor
+
+Distribution goes both ways. If $ab+ac = a(b+c)$, then we can **factor out** $a$.
+
+**Examples**
+
+1. $8x+12 = 4(2x+3)$
+2. $15x-9 = 3(5x-3)$
+3. $3x+6y = 3(x+2y)$
+
+This is called **factoring** (using a **greatest common factor**, if possible).
+
+:::{.you-try-m title="Factor the expression (reverse distribute)."}
+a) $12x+18$    b) $9a-6$    c) $14y+21x$    d) $15x-9x^2$
+:::
+
+:::{.answer title="Answer"}
+a) $6(2x+3)$    b) $3(3a-2)$    c) $7(2y+3x)$    d) $3x(5-3x)$
+:::
+
+---
+
+### 2.4.6 – Check Your Work
+
+Use a quick **substitution** to confirm equivalence.
+
+Example: Is $5(2x-3)-(x-4)$ the same as $9x-11$?
+
+Expand:
+$5(2x-3)-(x-4)=10x-15-x+4=9x-11.$
+
+Check $x=2$:
+$5(4-3)-(2-4)=5(1)-(-2)=5+2=7 \quad \text{and} \quad 9(2)-11=18-11=7.$
+They match.
+
+:::{.gotcha title="Important: Exponents don’t distribute over addition"}
+$(x+2)^2 \neq x^2+2^2$.
+Correct: $(x+2)^2=(x+2)(x+2)=x^2+4x+4$.
 :::
 
 ---
 
 ## 🏋️ Practice On Your Own
 
-Expand and simplify each expression.
+**Expand using the distributive property**
 
-1. \(2(x + 5)\)  
-2. \(3(y - 4)\)  
-3. \(-4(x - 1)\)  
-4. \(5(a + 2) - a\)  
-5. \(6x + 2(x - 3)\)  
-6. \(3(x + 4) + 2(x - 1)\)
+1. $6(x+5)$
+2. $7(y-2)$
+3. $4(3a+b)$
+4. $10(m+0.3)$
+5. $-3(p+9)$
+6. $-(k-8)$
 
-Error check: Are these simplifications correct?
+**Expand, then combine like terms**
 
-7. \(2(x + 3) = 2x + 3\)  
-8. \(-3(x - 4) = -3x + 12\)  
-9. \(4x + 3(x + 2) = 7x + 6\)  
-10. \(2(x + 1) + 3x = 5x + 1\)
+7. $2(x+3)+5(x-1)$
+8. $4y-2(3y-7)$
+9. $3(a+2b)-5(2a-b)$
+10. $-2(t-5)+3(t+1)$
+
+**With decimals and fractions**
+
+11. $0.5(8x-6)$
+12. $1.2(y+5)-0.2y$
+13. $\dfrac{3}{4}(4x-8)$
+14. $-\dfrac{1}{2}(6a+10)$
+
+**Factor (reverse distribute)**
+
+15. $18x+27$
+16. $20m-12$
+17. $8p+12q$
+18. $14x-21x^2$
+
+**Are they equivalent? Expand/simplify and compare.**
+
+19. $3(x+4)+2x$ and $5x+12$
+20. $6-2(x+3)$ and $-2x$
+21. $5(a-1)+a$ and $6a-5$
+22. $4(y+2)-3(y-1)$ and $y+11$
+
+**Challenge Problems**
+
+23. Show two different ways to simplify $3(x+5)-2(x-1)$ (e.g., distribute-first vs. combine-inside-first if possible). Explain why both give the same result.
+
+24. Create **two equivalent expressions** that look different: one using parentheses and one fully expanded. Explain how you know they’re equivalent.
 
 ---
 
-:::{.answers collapse=true}
-**✅ Answer Key**
+:::{.answers}
 
-1. \(2x + 10\)  
-2. \(3y - 12\)  
-3. \(-4x + 4\)  
-4. \(5a + 10 - a = 4a + 10\)  
-5. \(6x + 2x - 6 = 8x - 6\)  
-6. \(3x + 12 + 2x - 2 = 5x + 10\)
+**Expand using the distributive property**
 
-7. ❌ Should be \(2x + 6\)  
-8. ✅  
-9. ✅  
-10. ❌ Should be \(2x + 2 + 3x = 5x + 2\)
+1. $6x+30$
+2. $7y-14$
+3. $12a+4b$
+4. $10m+3$
+5. $-3p-27$
+6. $-k+8$
+
+**Expand, then combine like terms**
+
+7. $2x+6+5x-5=7x+1$
+8. $4y-6y+14=-2y+14$
+9. $3a+6b-10a+5b=-7a+11b$
+10. $-2t+10+3t+3 = t+13$
+
+**With decimals and fractions**
+
+11. $4x-3$
+12. $1.2y+6-0.2y = 1.0y+6$ or $y+6$
+13. $3x-6$
+14. $-3a-5$
+
+**Factor (reverse distribute)**
+
+15. $9(2x+3)$
+16. $4(5m-3)$
+17. $4(2p+3q)$
+18. $7x(2-3x)$
+
+**Are they equivalent?**
+
+19. yes (both $5x+12$)
+20. yes (both $-2x$)
+21. yes (both $6a-5$)
+22. yes (both $y+11$)
+
 :::

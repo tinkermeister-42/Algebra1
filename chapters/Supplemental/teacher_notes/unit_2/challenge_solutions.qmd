@@ -15,9 +15,11 @@
 :::{.answers}
 
 24. *Answers vary* 
+
     Conclusion: Evidence suggests these expressions are equivalent.
 
 25. *Answers vary*
+
     Conclusion: Evidence suggests these expressions are equivalent.
 :::
 
@@ -25,6 +27,13 @@
 
 :::{.answers}
 
+23. *Answers vary* 
+
+    $3x + 4x -6 + 2. They are equivalent because they give the same expression when simplified.
+
+24. *Answers vary* 
+
+    $4x - 3$ and $2x - 3$ both give $-3$ when substituting 0 for $x$. You shouldn't use zero when testing for equivalence. Even so, it is only evidence of equivalence, not proof.
 
 :::
 
