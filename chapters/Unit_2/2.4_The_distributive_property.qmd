@@ -1,6 +1,14 @@
 # 2.4 – The Distributive Property {.unnumbered}
 
-Sometimes breaking something into parts makes it **easier** to work with. For example, many people do $7 \times 13$ by thinking $7 \times (10 + 3) = 70 + 21 = 91$. We just **distributed** the 7 to both 10 and 3. We can do the same in algebra.
+Imagine your football (soccer) team wants to order new jerseys. Each jersey costs $25, and to add your team’s logo it’s another $5 per jersey.
+
+Since there are 11 players on the team, you need 11 jerseys. You could figure out the total cost in two different ways:
+
+First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = $330.
+
+Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = $330.
+
+Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink distributive property >}}. Today, we’re going to see how this property helps us simplify expressions.
 
 ---
 
