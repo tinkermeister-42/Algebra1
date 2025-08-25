@@ -22,6 +22,8 @@ Can your group end the game with more money than the Taxman?
 
 [Download Worksheet](taxman_game_groups.pdf)
 
+If you really want to go deep into strategies for beating the tax man, check out [this article](https://www.dsm.fordham.edu/~moniot/taxman-game.pdf) written by a professional mathematician. That's right, mathematicians get to play games for a living!
+
 ---
 
 Want to suggest an activity or submit your own? Let me know!
