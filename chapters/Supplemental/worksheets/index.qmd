@@ -8,5 +8,10 @@ Here are some worksheets that will give you practice on various topics.
   - [Pre-test](Unit_1/Unit_1_Pretest.pdf)
   - [GCF Maze](Unit_1/gcf_maze.pdf)
 
+
+## Unit 2 - Algebraic Expressions
+
+  - [Paint by Like Term](Unit_2/PaintByLikeTerm.pdf)
+  
 ---
 
