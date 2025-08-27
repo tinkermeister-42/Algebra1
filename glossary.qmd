@@ -189,6 +189,23 @@ A discount is an amount **taken off the original price**. It’s usually shown a
 
 ---
 
+### Distributive property {#glossary-distributive-property}
+
+A rule that lets you **multiply a number by each term inside parentheses** and then add or subtract the results. 
+
+In symbols:
+
+$a(b+c)=ab+ac$ and $a(b-c)=ab-ac$.
+You can also use it **in reverse** to **factor**: if $ab+ac$, you can write $a(b+c)$.
+
+> **Example:**
+>
+> $4(x+3)=4x+12$
+> With subtraction: $-2(y-5)=-2y+10$
+> Reverse (factoring): $8x+12=4(2x+3)$
+
+---
+
 ### Division {#glossary-division}
 
 An operation that splits a number into equal parts.
@@ -310,13 +327,15 @@ A math sentence made up of numbers, variables, operations, and sometimes parenth
 
 ### Factor {#glossary-factor}
 
-A factor is a whole number that divides another number evenly — with no remainder.
+A **factor** is a whole number that divides another number evenly — with no remainder.
 
 If you can split something into equal groups with no leftovers, the group size is a factor.
 
 > **Example:**
 >
 > 3 is a factor of 12 because 3 × 4 = 12.
+
+*Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink greatest common factor >}} giving $2(x-1)$*.
 
 ---
 

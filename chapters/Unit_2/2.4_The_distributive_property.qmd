@@ -22,29 +22,73 @@ Either way, you get the same answer. What we just did actually followed a rule i
 ---
 
 :::{.vocab}
-{{< glink coefficient >}}, {{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink product >}}, {{< glink simplify >}}
 :::
 
 ---
 
 ## 🔥 Warm-Up
 
-1. Mental math with parts:
-   a) $6(10+4)$    b) $9(20-1)$    c) $5(3+0.2)$
+1. Try to compute the following products in your head.
 
-2. True or false? Explain.
-   a) $4(x+3)=4x+12$
-   b) $4(x+3)=4x+3$
+   a. $6 \times 14$
 
-3. Which is easier to compute in your head? Why?
-   a) $12 \times 25$ or $12(20+5)$
-   b) $8 \times 19$ or $8(20-1)$
+   b. $9 \times 19$
+
+   c. $15 \times 12$
+
+
+2. Use substitution to test whether the following are true:
+
+   a. $4(x+3)=4x+12$
+
+   b. $5(x+2)=5x+2$
 
 ---
+
 
 ## 👥 Learn Together
 
 ### 2.4.1 – What Is the Distributive Property?
+
+```{=html}
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewBox="0 0 720 110"
+     style="font-family:'Times New Roman',serif">
+  <defs>
+    <!-- Small arrowhead; tied to stroke width -->
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <polygon points="0 0, 5 2.5, 0 5" fill="currentColor"></polygon>
+    </marker>
+  </defs>
+
+  <!-- 3(x+2) -->
+  <text x="15"  y="75" font-size="20pt">3</text>
+  <text x="35"  y="75" font-size="20pt">(</text>
+  <text x="45"  y="75" font-size="20pt">x</text>
+  <text x="70"  y="75" font-size="20pt">+</text>
+  <text x="100" y="75" font-size="20pt">2</text>
+  <text x="115" y="75" font-size="20pt">)</text>
+
+  <!-- shorter rainbow arcs from 3 → x and 3 → 2 -->
+  <path d="M 20 50 C 30 30, 50 30, 52 55"
+        stroke="crimson" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+  <path d="M 20 50 C 35 5, 105 15, 105 55"
+        stroke="steelblue" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+
+  <!-- → and expanded/simplified forms -->
+  <text x="140" y="75" font-size="20pt">=</text>
+  <text x="170" y="75" font-size="20pt">3(x) + 3(2) = 3x + 6</text>
+</svg>
+```
+
+We can use algebra tiles to represent $x + 2$ like this:
+
+![](/images/Unit_2/Lesson_4/x_plus_2.png){width="50%"}
+
+Multiplying by 3 gives:
+
+![](/images/Unit_2/Lesson_4/x_plus_2_times_3.png){width="50%"}
+
 
 The **distributive property** says:
 
