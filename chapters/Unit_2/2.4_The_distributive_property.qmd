@@ -22,30 +22,35 @@ Either way, you get the same answer. What we just did actually followed a rule i
 ---
 
 :::{.vocab}
-{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink product >}}, {{< glink simplify >}}
+{{< glink coefficient >}}, {{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
 :::
 
 ---
 
 ## 🔥 Warm-Up
 
-1. Try to compute the following products in your head.
+1. Here are the individual orders for 5 friends going through a drive through.
 
-   a. $6 \times 14$
+   a.  2 cheese burgers + 1 medium fries + 1 large drink
+   b.  6 piece chicken nuggets + 1 medium fries + 1 medium drink
+   c.  2 breakfast burritos + 3 hashbrowns + 1 cup of coffee
+   d.  6 piece chicken nuggets + 2 medium fries + 1 large drink
+   e.  1 cheese burger + 2 hashbrowns + 1 medium drink
 
-   b. $9 \times 19$
-
-   c. $15 \times 12$
+   What would you order if you combine these 5 orders into one?
 
 
-2. Use substitution to test whether the following are true:
+2. Try computing the following products in your head.
+   
+   a. $6 \times 45$
+   b. $3 \times 32$
+   c. $11 \times 25$
 
-   a. $4(x+3)=4x+12$
+3. Test whether $3(2x - 1) and $6x - 3$ are equivalent.
 
-   b. $5(x+2)=5x+2$
+
 
 ---
-
 
 ## 👥 Learn Together
 
