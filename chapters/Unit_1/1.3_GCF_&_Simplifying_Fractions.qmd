@@ -725,12 +725,12 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 
 **Word Problems**
 
-6. You have 72 juice boxes and 60 cookies. You want to make snack packs with the **same number** of each. You must use **all** the items.
+6. You have 72 juice boxes and 60 cookies. You want to make snack packs with the same {{< glink ratio >}} of each. You must use **all** the items.
 
    a. What’s the greatest number of snack packs you can make?
    b. How many juice boxes and cookies go in each pack?
 
-7. A store is making bundles using 108 pairs of socks and 144 shirts. Each bundle must have the same number of socks and the same number of shirts. There should be no leftovers.
+7. A store is making bundles using 108 pairs of socks and 144 shirts. Each bundle must have the same ratio of socks to shirts. There should be no leftovers.
 
    a. What is the greatest number of bundles they can make?
    b. How many socks and shirts will go in each bundle?
@@ -747,8 +747,7 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 9. Two numbers multiply to make 180. Their GCF is 6.
     What could the numbers be?
 
-10. A teacher has 150 pencils and 100 pens. She will make gift bags that all have the same number of pencils
-    and the same number of pens. Each bag must have **2 more pencils than pens**. She will use **all** the items.
+10. A teacher has 150 pencils and 100 pens. She will make gift bags that all have the same ratio of pencils to pens. Each bag must have **2 more pencils than pens**. She will use **all** the items.
     How many bags can she make, and what goes in each bag?
 
 ---
