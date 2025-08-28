@@ -668,20 +668,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/teacher_notes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Teacher Notes</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/teacher_notes/unit_1/challenge_solutions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 1 Challenge Problem Solutions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/teacher_notes/unit_2/challenge_solutions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 2 Challenge Problem Solutions</span></a>
+  <a href="../../chapters/Supplemental/challenge_solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Problem Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -744,103 +732,162 @@ window.Quarto = {
 </header>
 
 
-<p>Sometimes breaking something into parts makes it <strong>easier</strong> to work with. For example, many people do <span class="math inline">\(7 \times 13\)</span> by thinking <span class="math inline">\(7 \times (10 + 3) = 70 + 21 = 91\)</span>. We just <strong>distributed</strong> the 7 to both 10 and 3. We can do the same in algebra.</p>
+<p>Imagine your football (soccer) team wants to order new jerseys. Each jersey costs $25, and to add your team’s logo it’s another $5 per jersey.</p>
+<p>Since there are 11 players on the team, you need 11 jerseys. You could figure out the total cost in two different ways:</p>
+<p>First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = $330.</p>
+<p>Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = $330.</p>
+<p>Either way, you get the same answer. What we just did actually followed a rule in algebra called the <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a>. Today, we’re going to see how this property helps us simplify expressions.</p>
 <hr>
 <div class="objectives">
-<ul>
-<li>I can use the <strong>distributive property</strong> to expand expressions like <span class="math inline">\(a(b+c)\)</span>.</li>
-<li>I can distribute with <strong>negatives</strong> and then <strong>combine like terms</strong>.</li>
-<li>I can <strong>factor out</strong> a common factor (reverse distribution) to rewrite an expression.</li>
+<ul class="task-list">
+<li><label><input type="checkbox">I can use the <strong>distributive property</strong> to expand expressions like <span class="math inline">\(a(b+c)\)</span>.</label></li>
+<li><label><input type="checkbox">I can distribute with <strong>negatives</strong> and then <strong>combine like terms</strong>.</label></li>
+<li><label><input type="checkbox">I can <strong>factor out</strong> a common factor (reverse distribution) to rewrite an expression.</label></li>
 </ul>
 </div>
 <hr>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-term="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>, <a href="../../glossary.html#glossary-factor" class="glossary-link" data-original-term="factor" data-term="factor">factor</a>, <a href="../../glossary.html#glossary-greatest-common-factor" class="glossary-link" data-original-term="greatest common factor" data-term="greatest common factor">greatest common factor</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-term="simplify" data-term="simplify">simplify</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-original-term="term" data-term="term">term</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>, <a href="../../glossary.html#glossary-expand" class="glossary-link" data-original-term="expand" data-term="expand">expand</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-term="simplify" data-term="simplify">simplify</a></p>
 </div>
 <hr>
 <section id="warm-up" class="level2">
 <h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
 <ol type="1">
-<li>Mental math with parts:
+<li><p>Here are the individual orders for 5 friends going through a drive through.</p>
+<ul>
+<li>2 cheese burgers + 1 medium fries + 1 large drink</li>
+<li>chicken nuggets + 1 medium fries + 1 medium drink</li>
+<li>2 breakfast burritos + 3 hash browns + 1 cup of coffee</li>
+<li>chicken nuggets + 2 medium fries + 1 large drink</li>
+<li>1 cheese burger + 2 hash browns + 1 medium drink</li>
+</ul>
+<p>Combine these 5 orders into a single order.</p></li>
+<li><p>Try computing the following products in your head.</p>
 <ol type="a">
-<li><span class="math inline">\(6(10+4)\)</span> &nbsp;&nbsp; b) <span class="math inline">\(9(20-1)\)</span> &nbsp;&nbsp; c) <span class="math inline">\(5(3+0.2)\)</span></li>
+<li><span class="math inline">\(6 \times 45\)</span></li>
+<li><span class="math inline">\(3 \times 32\)</span></li>
+<li><span class="math inline">\(11 \times 25\)</span></li>
 </ol></li>
-<li>True or false? Explain.
-<ol type="a">
-<li><span class="math inline">\(4(x+3)=4x+12\)</span></li>
-<li><span class="math inline">\(4(x+3)=4x+3\)</span></li>
-</ol></li>
-<li>Which is easier to compute in your head? Why?
-<ol type="a">
-<li><span class="math inline">\(12 \times 25\)</span> or <span class="math inline">\(12(20+5)\)</span></li>
-<li><span class="math inline">\(8 \times 19\)</span> or <span class="math inline">\(8(20-1)\)</span></li>
-</ol></li>
+<li><p>Test whether <span class="math inline">\(3(2x - 1)\)</span> and <span class="math inline">\(6x - 3\)</span> are equivalent.</p></li>
 </ol>
 <hr>
 </section>
 <section id="learn-together" class="level2">
 <h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
+<hr>
 <section id="what-is-the-distributive-property" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-the-distributive-property">2.4.1 – What Is the Distributive Property?</h3>
-<p>The <strong>distributive property</strong> says:</p>
+<p>At the beginning of Algebra class, your teacher hands you a stack of worksheets and says, <em>“Please distribute these to the class.”</em></p>
+<p>To <strong>distribute</strong> the worksheets, you hand one to each student.</p>
+<p>In math, distribution works the same way. When we multiply an expression by a number, we “give” that number to each term in the expression.</p>
+<p>The <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a> says:</p>
 <p><span class="math display">\[
-a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c)=ab-ac.
+a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c) = ab - ac
 \]</span></p>
-<p>Think of an <strong>area model</strong>. A rectangle with side lengths <span class="math inline">\((x+3)\)</span> and <span class="math inline">\(4\)</span> can be split into two smaller rectangles: one <span class="math inline">\(x\)</span> by <span class="math inline">\(4\)</span> and one <span class="math inline">\(3\)</span> by <span class="math inline">\(4\)</span>.</p>
-<p><img src="../../images/Unit_2/Lesson_4/area_4_by_(x+3).png" class="img-fluid" width="420"></p>
-<p>So the total area is <span class="math inline">\(4x + 12\)</span>. That’s distribution in pictures.</p>
-<p><strong>Examples</strong></p>
-<ol type="1">
-<li><span class="math inline">\(3(x+2)=3x+6\)</span></li>
-<li><span class="math inline">\(5(y-4)=5y-20\)</span></li>
-<li><span class="math inline">\(2(4a+3b)=8a+6b\)</span></li>
-</ol>
-<div class="you-try-m" title="Expand using the distributive property.">
-<ol type="a">
-<li><span class="math inline">\(5(x+7)\)</span></li>
-<li><span class="math inline">\(2(3+y)\)</span></li>
-<li><span class="math inline">\(4(a+3b)\)</span></li>
-<li><span class="math inline">\(10(x-0.5)\)</span></li>
-</ol>
+<hr>
+<p><strong>Example:</strong></p>
+<p><a href="../../glossary.html#glossary-expand" class="glossary-link" data-original-term="Expand" data-term="expand">Expand</a> <span class="math inline">\(3(x + 2)\)</span> using the distributive property.</p>
+<p>To do this, distribute the 3. That is, multiply each term in <span class="math inline">\((x+2)\)</span> by 3:</p>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewbox="0 0 720 110" style="display:block; margin:0 auto; font-family:'Times New Roman',serif">
+  <defs>
+    <marker id="arrow" markerwidth="5" markerheight="5" refx="4.5" refy="2.5" orient="auto">
+      <polygon points="0 0, 5 2.5, 0 5" fill="currentColor"></polygon>
+    </marker>
+  </defs>
+
+  <!-- 3(x+2) -->
+  <text x="15" y="75" font-size="16pt">3</text>
+  <text x="35" y="75" font-size="16pt">(</text>
+  <text x="45" y="75" font-size="16pt">x</text>
+  <text x="70" y="75" font-size="16pt">+</text>
+  <text x="100" y="75" font-size="16pt">2</text>
+  <text x="115" y="75" font-size="16pt">)</text>
+
+  <!-- rainbow arcs -->
+  <path d="M 20 50 C 30 35, 50 35, 52 55" stroke="crimson" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+  <path d="M 20 50 C 38 20, 105 25, 105 55" stroke="steelblue" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
+
+  <!-- result -->
+  <text x="140" y="75" font-size="16pt">=</text>
+  <text x="170" y="75" font-size="16pt">3x + 6</text>
+</svg>
+<hr>
+<p>We can also see this with <strong>algebra tiles</strong>. The expression <span class="math inline">\(x + 2\)</span> looks like:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_2/Lesson_4/x_plus_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+</figure>
 </div>
-<div class="answer" title="Answer">
-<ol type="a">
-<li><span class="math inline">\(5x+35\)</span> &nbsp;&nbsp; b) <span class="math inline">\(6+2y\)</span> or <span class="math inline">\(2y+6\)</span> &nbsp;&nbsp; c) <span class="math inline">\(4a+12b\)</span> &nbsp;&nbsp; d) <span class="math inline">\(10x-5\)</span></li>
-</ol>
+<p>Multiplying by 3 means taking 3 groups of <span class="math inline">\((x+2)\)</span>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_2/Lesson_4/x_plus_2_times_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+</figure>
+</div>
+<p>If we count the tiles, there are 3 <span class="math inline">\(x\)</span>’s and 6 ones. In other words: <strong><span class="math inline">\(3x + 6\)</span></strong>.</p>
+<div class="you-try" title="Expand $5(x+7)$ using the distributive property.">
+<p><span class="math display">\[
+5(x+7) = 5(x) + 5(7) = 5x + 35
+\]</span></p>
 </div>
 <hr>
 </section>
 <section id="distributing-with-negatives" class="level3">
 <h3 class="anchored" data-anchor-id="distributing-with-negatives">2.4.2 – Distributing with Negatives</h3>
-<p>Careful with <strong>signs</strong>. The sign in front of the parentheses multiplies <strong>every</strong> term inside.</p>
-<p><strong>Examples</strong></p>
-<ol type="1">
-<li><span class="math inline">\(-3(x-4) = -3x + 12\)</span></li>
-<li><span class="math inline">\(-(x+7)= -x - 7\)</span> (think “<span class="math inline">\(-1\)</span> times each term”)</li>
-<li><span class="math inline">\(6 - 2(x+3) = 6 - 2x - 6 = -2x\)</span></li>
-</ol>
-<div class="gotcha" title="Don’t skip a term">
-<p><span class="math inline">\(4(x+2y+5)\)</span> means <span class="math inline">\(4x + 8y + 20\)</span>. Distribute to <strong>every</strong> term, not just the first two.</p>
-</div>
-<div class="you-try" title="Expand and simplify $-2(3-y)+4(y+5)$">
+<p>Distribution with negatives is no different than what we have seen so far. But you need to be careful!</p>
+<p><strong>Example 1:</strong></p>
+<p>Expand the expression <span class="math inline">\(-3(x - 4)\)</span>:</p>
 <p><span class="math display">\[
--6 + 2y + 4y + 20 = 6y + 14
+-3(x - 4) = -3(x) -3(-4) = -3x + 12
+\]</span></p>
+<p><strong>Example 2:</strong></p>
+<p>Expand the expression <span class="math inline">\(-(2x - 7)\)</span>:</p>
+<p><span class="math display">\[
+-(2x - 7) = -1(2x - 7) = -2x + 7
+\]</span></p>
+<div class="gotcha" title="Don't skip a term!">
+<p>When you distribute make sure you multiply <strong>every</strong> term in the expression. Students often make the mistake of only distributing to the first term.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+-4(x + 2y + 5) = -4(x) - 4(2y) - 4(5) = -4x -8y -20
+\]</span></p>
+</div>
+<div class="you-try" title="Expand $-2(3-y)$">
+<p><span class="math display">\[
+-2(3 - y) = -2(3) - 2(-y) = -6 + 2y
 \]</span></p>
 </div>
 <hr>
 </section>
 <section id="distribute-then-combine-like-terms" class="level3">
 <h3 class="anchored" data-anchor-id="distribute-then-combine-like-terms">2.4.3 – Distribute, Then Combine Like Terms</h3>
-<p>We often distribute <strong>and then</strong> use what we learned in 2.3 (combine like terms).</p>
-<p><strong>Example</strong></p>
-<p><span class="math display">\[
-4(x+2) + 3(x-5) = 4x + 8 + 3x - 15 = 7x - 7.
+<p>Expanding an expression using the distributive property often requires us to simplify the result. To do this, we combine like terms like we did in the previous lesson.</p>
+<p><strong>Example:</strong></p>
+<p>Simplify the expression <span class="math inline">\(4(x+2) + 3(x-5)\)</span>:</p>
+<p>First we expand using the distributive property. <span class="math display">\[
+4(x+2) + 3(x-5) = 4x + 8 + 3x - 15
 \]</span></p>
-<p>Sometimes you can <strong>simplify inside</strong> first:</p>
+<p>Then we simplify by combining like terms:</p>
 <p><span class="math display">\[
-2(x+3x-5)=2(4x-5)=8x-10,
+4x + 8 + 3x - 15 = 7x - 7
 \]</span></p>
-<p>which is a little faster.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Make it simpler">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Make it simpler
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When possible, you should simplify what is inside the parentheses before distributing.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+2(3x - 2y + 5 - x + 5y - 10) = 2(8x + 3y - 5) = 16x + 6y - 10
+\]</span></p>
+</div>
+</div>
 <div class="think" title="Which path is better?">
 <p>If you can combine inside the parentheses <strong>first</strong>, do it. If not, distribute and then combine like terms.</p>
 </div>
@@ -849,7 +896,7 @@ a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c)=ab-ac.
 <section id="why-it-works-another-look" class="level3">
 <h3 class="anchored" data-anchor-id="why-it-works-another-look">2.4.4 – Why It Works (Another Look)</h3>
 <p>Distribution turns “<strong>groups of a sum</strong>” into a “<strong>sum of groups</strong>.”</p>
-<p><strong>Word picture:</strong> A club sells a snack bundle: each bundle has <strong><span class="math inline">\(x\)</span> cookies and 3 candies</strong>. If you buy <strong>4 bundles</strong>, you get <strong><span class="math inline">\(4x\)</span> cookies and <span class="math inline">\(12\)</span> candies</strong>: <span class="math inline">\(4(x+3)=4x+12.\)</span></p>
+<p><strong>Word picture:</strong> A club sells a snack bundle: each bundle has <span class="math inline">\(x\)</span> cookies and 3 candies. If you buy <strong>4 bundles</strong>, you get <span class="math inline">\(4x\)</span> cookies and <span class="math inline">\(12\)</span> candies: <span class="math inline">\(4(x+3)=4x+12.\)</span></p>
 <div class="real-world" title="Group purchases">
 <p>Buying 7 “<span class="math inline">\(x\)</span>-dollar passes and a $2 fee” costs <span class="math inline">\(7(x+2)=7x+14\)</span>. The per-person cost (<span class="math inline">\(x\)</span>) and the fixed fee (2) both get multiplied by 7.</p>
 </div>
