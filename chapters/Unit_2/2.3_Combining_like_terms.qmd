@@ -8,9 +8,9 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 
 :::{.objectives}
 
-* I can identify like terms in an expression.
-* I can combine like terms to simplify an expression.
-* I can check my work by substitution or by reasoning about equivalence.
+- [ ] I can identify like terms in an expression.
+- [ ] I can combine like terms to simplify an expression.
+- [ ] I can check my work by substitution or by reasoning about equivalence.
 :::
 
 ---

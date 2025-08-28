@@ -300,6 +300,18 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 
 ---
 
+### Expand {#glossary-expand}
+
+To **expand** an expression means to **remove parentheses by multiplying**.  
+You use the distributive property to spread multiplication over addition or subtraction.
+
+> **Example:**
+>
+> $3(x+2)$ expands to $3x+6$.  
+> $(x+4)(x+1)$ expands to $x^2 + 5x + 4$.
+
+---
+
 ### Exponent {#glossary-exponent}
 
 A number that tells you how many times to multiply a base number by itself.

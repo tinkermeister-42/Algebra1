@@ -7,9 +7,9 @@ In this lesson, we will learn to **substitute** numbers for the variables in an 
 ---
 
 :::{.objectives}
-- I can substitute values into expressions and simplify them  
-- I can use the correct order of operations with variables and parentheses  
-- I can use substitution to show two expressions are equivalent
+- [ ] I can substitute values into expressions and simplify them  
+- [ ] I can use the correct order of operations with variables and parentheses  
+- [ ] I can use substitution to show two expressions are equivalent
 :::
 
 ---

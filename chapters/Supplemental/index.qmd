@@ -17,10 +17,9 @@ Use these resources to:
 
   Targeted drills and alternative problem sets.
 
-### Challenge Problems
+### [Challenge Problem Solutions](challenge_solutions.qmd)
 
-  For students who want to push their thinking further.
-  < Coming Soon!>
+  Solutions to all of the challenge problems.
 
 ### Math Activities
 

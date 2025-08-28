@@ -13,15 +13,15 @@ Either way, you get the same answer. What we just did actually followed a rule i
 ------------------------------------------------------------------------
 
 ::: objectives
--   I can use the **distributive property** to expand expressions like $a(b+c)$.
--   I can distribute with **negatives** and then **combine like terms**.
--   I can **factor out** a common factor (reverse distribution) to rewrite an expression.
+- [ ] I can use the **distributive property** to expand expressions like $a(b+c)$.
+- [ ] I can distribute with **negatives** and then **combine like terms**.
+- [ ] I can **factor out** a common factor (reverse distribution) to rewrite an expression.
 :::
 
 ------------------------------------------------------------------------
 
 ::: vocab
-{{< glink coefficient >}}, {{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink factor >}}, {{< glink greatest common factor >}}, {{< glink simplify >}}, {{< glink term >}}, {{< glink variable >}}
+{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink expand >}}, {{< glink simplify >}}
 :::
 
 ------------------------------------------------------------------------
@@ -31,16 +31,12 @@ Either way, you get the same answer. What we just did actually followed a rule i
 1.  Here are the individual orders for 5 friends going through a drive through.
 
     -   2 cheese burgers + 1 medium fries + 1 large drink
+    -   chicken nuggets + 1 medium fries + 1 medium drink
+    -   2 breakfast burritos + 3 hash browns + 1 cup of coffee
+    -   chicken nuggets + 2 medium fries + 1 large drink
+    -   1 cheese burger + 2 hash browns + 1 medium drink
 
-    -   6 piece chicken nuggets + 1 medium fries + 1 medium drink
-
-    -   2 breakfast burritos + 3 hashbrowns + 1 cup of coffee
-
-    -   6 piece chicken nuggets + 2 medium fries + 1 large drink
-
-    -   1 cheese burger + 2 hashbrowns + 1 medium drink
-
-    What would you order if you combine these 5 orders into one?
+    Combine these 5 orders into a single order.
 
 2.  Try computing the following products in your head.
 
@@ -50,98 +46,120 @@ Either way, you get the same answer. What we just did actually followed a rule i
 
 3.  Test whether $3(2x - 1)$ and $6x - 3$ are equivalent.
 
-------------------------------------------------------------------------
+---
 
 ## 👥 Learn Together
 
+---
+
 ### 2.4.1 – What Is the Distributive Property?
+
+At the beginning of Algebra class, your teacher hands you a stack of worksheets and says, *“Please distribute these to the class.”*  
+
+To **distribute** the worksheets, you hand one to each student.  
+
+In math, distribution works the same way. When we multiply an expression by a number, we "give" that number to each term in the expression.
+
+The {{< glink distributive property >}} says:
+
+$$
+a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c) = ab - ac
+$$
+
+---
+
+**Example:**
+
+{{< glink Expand >}} $3(x + 2)$ using the distributive property.
+
+To do this, distribute the 3. That is, multiply each term in $(x+2)$ by 3:
 
 ```{=html}
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewBox="0 0 720 110"
-     style="font-family:'Times New Roman',serif">
+     style="display:block; margin:0 auto; font-family:'Times New Roman',serif">
   <defs>
-    <!-- Small arrowhead; tied to stroke width -->
     <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
       <polygon points="0 0, 5 2.5, 0 5" fill="currentColor"></polygon>
     </marker>
   </defs>
 
   <!-- 3(x+2) -->
-  <text x="15"  y="75" font-size="20pt">3</text>
-  <text x="35"  y="75" font-size="20pt">(</text>
-  <text x="45"  y="75" font-size="20pt">x</text>
-  <text x="70"  y="75" font-size="20pt">+</text>
-  <text x="100" y="75" font-size="20pt">2</text>
-  <text x="115" y="75" font-size="20pt">)</text>
+  <text x="15"  y="75" font-size="16pt">3</text>
+  <text x="35"  y="75" font-size="16pt">(</text>
+  <text x="45"  y="75" font-size="16pt">x</text>
+  <text x="70"  y="75" font-size="16pt">+</text>
+  <text x="100" y="75" font-size="16pt">2</text>
+  <text x="115" y="75" font-size="16pt">)</text>
 
-  <!-- shorter rainbow arcs from 3 → x and 3 → 2 -->
-  <path d="M 20 50 C 30 30, 50 30, 52 55"
+  <!-- rainbow arcs -->
+  <path d="M 20 50 C 30 35, 50 35, 52 55"
         stroke="crimson" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-  <path d="M 20 50 C 35 5, 105 15, 105 55"
+  <path d="M 20 50 C 38 20, 105 25, 105 55"
         stroke="steelblue" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
 
-  <!-- → and expanded/simplified forms -->
-  <text x="140" y="75" font-size="20pt">=</text>
-  <text x="170" y="75" font-size="20pt">3(x) + 3(2) = 3x + 6</text>
+  <!-- result -->
+  <text x="140" y="75" font-size="16pt">=</text>
+  <text x="170" y="75" font-size="16pt">3x + 6</text>
 </svg>
 ```
 
-We can use algebra tiles to represent $x + 2$ like this:
+---
 
-![](/images/Unit_2/Lesson_4/x_plus_2.png){width="50%"}
+We can also see this with **algebra tiles**. The expression $x + 2$ looks like:
 
-Multiplying by 3 gives:
+![](/images/Unit_2/Lesson_4/x_plus_2.png){width="40%" fig-align="center"}
 
-![](/images/Unit_2/Lesson_4/x_plus_2_times_3.png){width="50%"}
+Multiplying by 3 means taking 3 groups of $(x+2)$:
 
-The **distributive property** says:
+![](/images/Unit_2/Lesson_4/x_plus_2_times_3.png){width="40%" fig-align="center"}
 
+If we count the tiles, there are 3 $x$’s and 6 ones.
+In other words: **$3x + 6$**.
+
+::: {.you-try title="Expand $5(x+7)$ using the distributive property."}
 $$
-a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c)=ab-ac.
+5(x+7) = 5(x) + 5(7) = 5x + 35
 $$
 
-Think of an **area model**. A rectangle with side lengths $(x+3)$ and $4$ can be split into two smaller rectangles: one $x$ by $4$ and one $3$ by $4$.
-
-![](/images/Unit_2/Lesson_4/area_4_by_(x+3).png){width="420px"}
-
-So the total area is $4x + 12$. That’s distribution in pictures.
-
-**Examples**
-
-1.  $3(x+2)=3x+6$
-2.  $5(y-4)=5y-20$
-3.  $2(4a+3b)=8a+6b$
-
-::: {.you-try-m title="Expand using the distributive property."}
-a)  $5(x+7)$
-b)  $2(3+y)$
-c)  $4(a+3b)$
-d)  $10(x-0.5)$
 :::
 
-::: {.answer title="Answer"}
-a)  $5x+35$    b) $6+2y$ or $2y+6$    c) $4a+12b$    d) $10x-5$
-:::
 
 ------------------------------------------------------------------------
 
 ### 2.4.2 – Distributing with Negatives
 
-Careful with **signs**. The sign in front of the parentheses multiplies **every** term inside.
+Distribution with negatives is no different than what we have seen so far. But you need to be careful!
 
-**Examples**
+**Example 1:**
 
-1.  $-3(x-4) = -3x + 12$
-2.  $-(x+7)= -x - 7$ (think “$-1$ times each term”)
-3.  $6 - 2(x+3) = 6 - 2x - 6 = -2x$
+Expand the expression $-3(x - 4)$:
 
-::: {.gotcha title="Don’t skip a term"}
-$4(x+2y+5)$ means $4x + 8y + 20$. Distribute to **every** term, not just the first two.
+$$
+-3(x - 4) = -3(x) -3(-4) = -3x + 12
+$$
+
+**Example 2:**
+
+Expand the expression $-(2x - 7)$:
+
+$$
+-(2x - 7) = -1(2x - 7) = -2x + 7
+$$
+
+:::{.gotcha title="Don't skip a term!"}
+When you distribute make sure you multiply **every** term in the expression. Students often make the mistake of only distributing to the first term.
+
+**Example:**
+
+$$
+-4(x + 2y + 5) = -4(x) - 4(2y) - 4(5) = -4x -8y -20
+$$
+
 :::
 
-::: {.you-try title="Expand and simplify $-2(3-y)+4(y+5)$"}
+::: {.you-try title="Expand $-2(3-y)$"}
 $$
--6 + 2y + 4y + 20 = 6y + 14
+-2(3 - y) = -2(3) - 2(-y) = -6 + 2y
 $$
 :::
 
@@ -149,21 +167,32 @@ $$
 
 ### 2.4.3 – Distribute, Then Combine Like Terms
 
-We often distribute **and then** use what we learned in 2.3 (combine like terms).
+Expanding an expression using the distributive property often requires us to simplify the result. To do this, we combine like terms like we did in the previous lesson.
 
-**Example**
+**Example:**
 
+Simplify the expression $4(x+2) + 3(x-5)$:
+
+First we expand using the distributive property.
 $$
-4(x+2) + 3(x-5) = 4x + 8 + 3x - 15 = 7x - 7.
-$$
-
-Sometimes you can **simplify inside** first:
-
-$$
-2(x+3x-5)=2(4x-5)=8x-10,
+4(x+2) + 3(x-5) = 4x + 8 + 3x - 15 
 $$
 
-which is a little faster.
+Then we simplify by combining like terms:
+
+$$
+4x + 8 + 3x - 15 = 7x - 7
+$$
+
+:::{.callout-tip title="Make it simpler"}
+When possible, you should simplify what is inside the parentheses before distributing.
+
+**Example:**
+
+$$
+2(3x - 2y + 5 - x + 5y - 10) = 2(8x + 3y - 5) = 16x + 6y - 10
+$$
+:::
 
 ::: {.think title="Which path is better?"}
 If you can combine inside the parentheses **first**, do it. If not, distribute and then combine like terms.

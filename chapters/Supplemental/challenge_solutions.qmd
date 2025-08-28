@@ -1,0 +1,139 @@
+# Challenge Problem Solutions {.unnumbered}
+
+## Unit 1 - Foundations
+
+### 1.1 - Integers & Number Lines
+
+:::{.answers}
+No Challenge Questions
+:::
+
+### 1.2 - Factors, Multiples, and Prime Factorization
+
+:::{.answers}
+
+6. No. Each number has a **unique** prime factorization. This is called the **Fundamental Theorem of Arithmetic**.
+
+:::
+
+### 1.3 - GCF and Simplifying Fractions
+
+:::{.answers}
+
+9.  30 and 6 or -30 and -6
+
+
+10.  25 gift bags; each bag has 6 pencils and 4 pens.
+    (Check: 25×6 = 150 pencils, 25×4 = 100 pens; and 6 − 4 = 2.)
+
+:::
+
+### 1.4 - Fractions, Decimals, and Percents
+
+:::{.answers}
+
+8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
+
+
+9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
+
+:::
+
+### 1.5 - Multiply, Divide, and Compare Fractions
+
+:::{.answers}
+
+
+5. $\frac{3}{4}$ and $\frac{1}{2}$
+
+6. 4
+
+:::
+
+
+### 1.6 - Solving Problems with Fractions, Decimals, and Percents
+
+:::{.answers}
+
+15. $41.\overline{6}\%$
+
+16. $45
+
+17. Yes. You need at least 97/100 on the exam (total needed: 0.90x425 = 382.5 &Rightarrow; 383; you have 286 now, so 383-286 = 97). If each question is worth 2 points, that means 49 out of 50.
+
+:::
+
+
+### 1.7 - Order of Operations
+
+:::{.answers}
+
+4. **7**
+
+5. **$\frac{22}{3}$** or **$7\frac{1}{3}$**
+
+6. **29**
+
+7. *Answers will vary*
+
+:::
+
+## Unit 2 - Algebraic Expressions
+
+### 2.1 - Expressions and Their Parts
+
+:::{.answers}
+
+24. $\frac{x + 3}{2(y-2)}$
+
+25. $(|5 - x| + 3)^2$
+
+:::
+
+### 2.2 - Evaluating Expressions
+
+:::{.answers}
+
+24. *Answers vary* 
+
+    Conclusion: Evidence suggests these expressions are equivalent.
+
+25. *Answers vary*
+
+    Conclusion: Evidence suggests these expressions are equivalent.
+:::
+
+### 2.3 - Combining Like Terms
+
+:::{.answers}
+
+23. *Answers vary* 
+
+    $3x + 4x -6 + 2. They are equivalent because they give the same expression when simplified.
+
+24. *Answers vary* 
+
+    $4x - 3$ and $2x - 3$ both give $-3$ when substituting 0 for $x$. You shouldn't use zero when testing for equivalence. Even so, it is only evidence of equivalence, not proof.
+
+:::
+
+### 2.4 - The Distributive Property
+
+:::{.answers}
+
+
+:::
+
+### 2.5 - Inputs, Outputs, and Functions
+
+:::{.answers}
+
+
+:::
+
+### 2.6 - Equivalent Expressions
+
+:::{.answers}
+
+:::
+
