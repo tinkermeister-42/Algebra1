@@ -12,7 +12,7 @@ Either way, you get the same answer. What we just did actually followed a rule i
 
 ---
 
-::: objectives
+::: {.objectives}
 - [ ] I can use the **distributive property** to expand expressions like $a(b+c)$.
 - [ ] I can distribute with **negatives** and then **combine like terms**.
 - [ ] I can **factor out** a common factor (reverse distribution) to rewrite an expression.
