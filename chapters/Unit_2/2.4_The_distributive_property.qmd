@@ -10,7 +10,7 @@ Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = \$330.
 
 Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink distributive property >}}. Today, we’re going to see how this property helps us simplify expressions.
 
-------------------------------------------------------------------------
+---
 
 ::: objectives
 - [ ] I can use the **distributive property** to expand expressions like $a(b+c)$.
@@ -18,13 +18,13 @@ Either way, you get the same answer. What we just did actually followed a rule i
 - [ ] I can **factor out** a common factor (reverse distribution) to rewrite an expression.
 :::
 
-------------------------------------------------------------------------
+---
 
 ::: vocab
 {{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink expand >}}, {{< glink simplify >}}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## 🔥 Warm-Up
 
@@ -116,6 +116,17 @@ Multiplying by 3 means taking 3 groups of $(x+2)$:
 If we count the tiles, there are 3 $x$’s and 6 ones.
 In other words: **$3x + 6$**.
 
+:::{.gotcha title="Don't skip a term!"}
+When you distribute make sure you multiply **every** term in the expression. Students often make the mistake of only distributing to the first term.
+
+**Example:**
+
+$$
+4(x + 2y + 5) = 4(x) + 4(2y) + 4(5) = 4x + 8y + 20
+$$
+
+:::
+
 ::: {.you-try title="Expand $5(x+7)$ using the distributive property."}
 $$
 5(x+7) = 5(x) + 5(7) = 5x + 35
@@ -124,11 +135,11 @@ $$
 :::
 
 
-------------------------------------------------------------------------
+---
 
 ### 2.4.2 – Distributing with Negatives
 
-Distribution with negatives is no different than what we have seen so far. But you need to be careful!
+Distribution with negatives is no different than what we have seen so far. But you need to be careful! It is easy to forget to include the negative sign when applying the distributive property.
 
 **Example 1:**
 
@@ -146,16 +157,6 @@ $$
 -(2x - 7) = -1(2x - 7) = -2x + 7
 $$
 
-:::{.gotcha title="Don't skip a term!"}
-When you distribute make sure you multiply **every** term in the expression. Students often make the mistake of only distributing to the first term.
-
-**Example:**
-
-$$
--4(x + 2y + 5) = -4(x) - 4(2y) - 4(5) = -4x -8y -20
-$$
-
-:::
 
 ::: {.you-try title="Expand $-2(3-y)$"}
 $$
@@ -163,7 +164,7 @@ $$
 $$
 :::
 
-------------------------------------------------------------------------
+---
 
 ### 2.4.3 – Distribute, Then Combine Like Terms
 
@@ -194,25 +195,28 @@ $$
 $$
 :::
 
-::: {.think title="Which path is better?"}
-If you can combine inside the parentheses **first**, do it. If not, distribute and then combine like terms.
+::: {.gotcha title="Watch those signs!"}
+Students often forget to keep the sign with the muliplier.
+
+**Example:**
+
+Simplify the following expression:
+
+$$
+3(x - 2) - 5(4x + 5)
+$$
+
+Notice the "-" sign in front of the 5. We **must** multiply the second part of the expression by -5.
+
+$$
+3(x - 2) \color{red}- 5\color{black}(4x + 5) = 3x - 6 \color{red}-20x - 25 \color{black} = -17x - 31
+$$
+
 :::
 
-------------------------------------------------------------------------
+---
 
-### 2.4.4 – Why It Works (Another Look)
-
-Distribution turns “**groups of a sum**” into a “**sum of groups**.”
-
-**Word picture:** A club sells a snack bundle: each bundle has $x$ cookies and 3 candies. If you buy **4 bundles**, you get $4x$ cookies and $12$ candies: $4(x+3)=4x+12.$
-
-::: {.real-world title="Group purchases"}
-Buying 7 “$x$-dollar passes and a \$2 fee” costs $7(x+2)=7x+14$. The per-person cost ($x$) and the fixed fee (2) both get multiplied by 7.
-:::
-
-------------------------------------------------------------------------
-
-### 2.4.5 – Reverse It: Factoring Out a Common Factor
+### 2.4.4 – Reverse It: Factoring Out a Common Factor
 
 Distribution goes both ways. If $ab+ac = a(b+c)$, then we can **factor out** $a$.
 
@@ -234,7 +238,7 @@ a)  $6(2x+3)$    b) $3(3a-2)$    c) $7(2y+3x)$    d) $3x(5-3x)$
 
 ------------------------------------------------------------------------
 
-### 2.4.6 – Check Your Work
+### 2.4.5 – Check Your Work
 
 Use a quick **substitution** to confirm equivalence.
 
