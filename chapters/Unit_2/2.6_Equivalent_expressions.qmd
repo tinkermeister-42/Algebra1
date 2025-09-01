@@ -1,15 +1,17 @@
 # 2.6 – Equivalent Expressions {.unnumbered}
 
-Sometimes two expressions look different — but they always give the same result. That means they’re **equivalent expressions**.
+When you visit another country, you might hear the same word said in different ways. *Hello*, *hola*, *bonjour* — all mean the same thing, but they look and sound different.
 
-In this lesson, you’ll learn how to recognize when expressions are equivalent by simplifying, using substitution, and thinking logically. This idea is a big deal in Algebra — especially when we start solving equations.
+Math is like that too. An idea can be written many different ways. $2(x+3)$ and $2x+6$ look different, but they both “say” the same thing. We call such pairs **equivalent expressions**. 
+
+In this lesson, you’ll learn how to recognize when expressions are equivalent by simplifying, using substitution, and thinking logically. This idea is a big deal in Algebra — especially when we start solving equations in Unit 3.
 
 ---
 
 :::{.objectives}
-- I can tell when two expressions are equivalent  
-- I can simplify expressions to check for equivalence  
-- I can explain why two expressions are or aren’t equivalent  
+- [ ] I can say what it means for two expressions to be equivalent.
+- [ ] I can prove equivalence by rewriting one expression to match the other.
+- [ ] I can tell the difference between testing and proving equivalence.
 :::
 
 ---
@@ -22,17 +24,6 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 {{< warmup >}}
 
-1. Which of these are equal?  
-   a. \(2x + 3x\) and \(5x\)  
-   b. \(3x + 4\) and \(4 + 3x\)  
-   c. \(x + 5\) and \(5x\)
-
-2. How could you check whether two expressions are equal — without guessing?
-
-3. If two expressions are equal for *every* value of \(x\), what does that tell you?
-
-> These questions set up both numeric and symbolic strategies — using simplification and substitution — to check for equivalence.
-:::
 
 ---
 
@@ -40,101 +31,90 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 ### 2.6.1 – What Does “Equivalent” Mean?
 
-Two expressions are **equivalent** if they always have the same value for any input.
+Two expressions are **equivalent** if they have the **same value for every input** (for all allowed values of the variable).
 
-> **Example:**  
-> \(2x + 3x\) and \(5x\) are equivalent  
-> Try substituting \(x = 1, 2, 10\) — both always give the same result.
+They do **not** have to look the same. What matters is the value you get when you plug in the **same** input.
 
 ---
 
-### 2.6.2 – Ways to Check for Equivalence
+**Example 1 — Two forms, same value**
 
-**Strategy 1: Simplify both expressions**
+Compare
 
-> \[
-> 2x + 3x \rightarrow 5x
-> \]
-> Now it’s easy to see they’re the same.
+$$
+A(x)=3(x+4)\quad\text{and}\quad B(x)=3x+12.
+$$
 
-**Strategy 2: Substitute a value**
+Try two easy inputs (we’ll use $x=0$ and $x=5$):
 
-> Try \(x = 2\):  
->  
-> - \(2x + 3x = 4 + 6 = 10\)  
-> - \(5x = 10\)
+| $x$ |       $A(x)=3(x+4)$ |    $B(x)=3x+12$ |
+| --: | ------------------: | --------------: |
+|   0 | $3(0+4)=3\cdot4=12$ | $3\cdot0+12=12$ |
+|   5 | $3(5+4)=3\cdot9=27$ | $3\cdot5+12=27$ |
 
-> _Note: This doesn’t prove they’re equivalent for all values, but it’s a good check._
-
-**Strategy 3: Think about structure**
-
-> \[
-> 3(x + 2) \text{ vs. } 3x + 6
-> \]
-> Distribute to see if they match.
+The outputs match both times. This is **evidence** that the expressions mean the same thing.
 
 ---
 
-:::{.you-try collapse=true title="💡 Are These Equivalent?"}
-Decide if each pair of expressions is equivalent. Use any strategy.
+**Example 2 — A pair that is *not* equivalent**
 
-1. \(2x + 4x\) and \(6x\)  
-2. \(3(x + 2)\) and \(3x + 2\)  
-3. \(4x + 6\) and \(2(2x + 3)\)  
-4. \(x + x + x\) and \(3x\)  
-5. \(x^2 + 2x + 1\) and \((x + 1)^2\)
+Compare
+
+$$
+C(x)=4x+1 \quad\text{and}\quad D(x)=4(x+1).
+$$
+
+Try $x=2$:
+
+$$
+C(2)=4(\textcolor{red}{2})+1=8+1=9
+\qquad
+D(2)=4(\textcolor{red}{2}+1)=4\cdot3=12.
+$$
+
+Different outputs → these two are **not** equivalent.
+
+---
+
+**Example 3 — Matching once doesn’t settle it**
+
+Sometimes two expressions match at some inputs but not at others.
+
+$$
+P(x)=x \quad\text{and}\quad Q(x)=x^2.
+$$
+
+* $x=0:\; P(0)=0,\; Q(0)=0$ (match)
+* $x=1:\; P(1)=1,\; Q(1)=1$ (match)
+* $x=2:\; P(2)=2,\; Q(2)=4$ (no match)
+
+So matching at one or two inputs is **only evidence**, not a guarantee.
+
+---
+
+:::{.you-try title="Check two inputs and say what you found"}
+Pick **two** easy inputs (0, 1, 2, or $-1$) for each pair. Compute both outputs each time. Decide whether you have **evidence of equivalence** or a **counterexample**.
+
+1. $x+x+x$ and $3x$
+2. $5(x-2)$ and $5x-10$
+3. $2x+3$ and $2(x+3)$
+:::
+
+:::{.remember}
+**Sentence frame (to explain your result):**
+“At $x=\_\_$, the first expression equals \_\_\_ and the second equals \_\_\_. So I have evidence they **are / are not** equivalent.”
 :::
 
 ---
 
-### 2.6.3 – Why Equivalent Expressions Matter
+:::{.think title="Why “for every input” matters"}
 
-Even though expressions can look different, they might represent the same thing.
+* One mismatch is enough to show two expressions are **not** equivalent.
+* Many matches give **evidence**, but not a proof.
 
-> **Real-world example:**  
-> You pay \$3 per item and a \$2 fee.  
-> - One store writes it: \(3x + 2\)  
-> - Another writes it: \(2 + 3x\)
-
-They mean the same thing. That’s helpful when comparing prices, combining steps, or solving equations.
-
-> _Suggestion: Use a visual (two receipts or diagrams) to show real-world equivalence._
-
----
-
-{{< practice >}}
-
-Simplify both expressions. Are they equivalent?
-
-1. \(5x + 2x\) and \(7x\)  
-2. \(4(x + 3)\) and \(4x + 12\)  
-3. \(6x + 3 - 2x\) and \(4x + 3\)  
-4. \(3(x - 1)\) and \(3x - 3\)  
-5. \(x^2 + 4\) and \((x + 2)^2\)
-
-Create your own equivalent expressions:
-
-6. Start with: \(2x + 6\).  
-   - Write a different-looking expression that’s equivalent.
-
-7. Start with: \(5(x + 2)\).  
-   - Write an expression that is **not** equivalent.
-
-Explain your reasoning for 6 and 7.
-
----
-
-:::{.answers collapse=true}
-**✅ Answer Key**
-
-1. Yes — both simplify to \(7x\)  
-2. Yes — distribute: \(4x + 12\)  
-3. Yes — simplify left: \(4x + 3\)  
-4. Yes — distribute: \(3x - 3\)  
-5. No — \(x^2 + 4\) is not the same as \(x^2 + 4x + 4\)
-
-6. Example: \(2(x + 3)\) — distributes to \(2x + 6\)  
-7. Example: \(5x + 2\) — not the same (would give different outputs)
-
-Answers may vary — look for clear structure and explanation.
+In the next sections, you’ll use algebra you already know (combining like terms, distributing, factoring) to **show** that two expressions are the same for **every** input.
 :::
+
+---
+
+

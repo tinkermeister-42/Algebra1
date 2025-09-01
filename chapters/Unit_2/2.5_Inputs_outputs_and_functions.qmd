@@ -1,4 +1,4 @@
-# 2.5 – Inputs and Outputs of Functions {.unnumbered}
+# 2.5 – Inputs and Outputs of Functions (optional) {.unnumbered}
 
 So far in this unit, you’ve learned how to evaluate expressions by plugging in values for variables. You’ve also simplified expressions using distribution and by combining like terms.
 
@@ -16,7 +16,7 @@ What could the rule be? How could we name it so others know exactly what it does
 
 :::{.vocab}
 
-{{< glink evaluate >}}, {{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink simplify >}}
+{{< glink evaluate >}}, {{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink notation >}}, {{< glink output >}}, {{< glink simplify >}}
 
 :::
 
@@ -50,9 +50,9 @@ Imagine our “mystery machine” from the introduction.
 
 ![The mystery machine](/images/Unit_2/Lesson_5/function_machine.png){width="50%"}
 
-Did you figure out what rule the machine is following? From the examples (5 &rarr; 13, 7 &rarr; 17), one possible rule is: “double the input and then add 3”.
+Did you figure out what rule the machine is following? With only two examples, we can't be 100% sure, but from the examples we have (5 &rarr; 13, 7 &rarr; 17), one possible rule is: “double the input and then add 3”.
 
-In algebra, we name the machine and write its rule using {{< glink function >}} notation.
+In algebra, we name the machine and write its rule using {{< glink function >}} {{< glink notation >}}.
 
 $$
 f(x) = 2x+3
@@ -137,9 +137,11 @@ $$
 
 Programmers spend much of their time writing functions. A function has a name, takes inputs (also called parameters), and produces one output.
 
+The code behind any app you use often has hundreds, and sometimes thousands, of functions that allow the app to do what it does.
+
 :::
 
-:::{.you-try title="Let $f(x) = 9 - 3x$. Find $f(2)$."}
+:::{.you-try title="Evaluate $f(2)$ if $f(x) = 9 - 3x$"}
 
 $$
 f(2) = 9 - 3(2) = 9 - 6 = 3
@@ -181,6 +183,8 @@ $$
 A shorter rule makes evaluation quicker and reduces mistakes.
 :::
 
+Whenever possible, simplify before substituting -- that way you only have to do it once, no matter what input you plug in."
+
 :::{.you-try title="Simplify $q(x) = 2(x+5) + 3x$. Then find $q(3)$."}
 
 $q(x) = 5x+10$, so $q(3)=25$.
@@ -217,7 +221,7 @@ C(80) &= 50 + 0.1(80) \\
 \end{align*}
 $$
 
-The total cost is $58.
+The total cost is **$58**.
 
 ---
 
@@ -240,6 +244,7 @@ F(25) &= \tfrac{9}{5}\cdot 25 + 32 \\
 \end{align*}
 $$
 
+25°C = **77°F**
 
 :::{.you-try-m title="How much will you earn?"}
 
@@ -269,130 +274,142 @@ You make \$495
 
 {{< practice >}}
 
-**Evaluate each function (direct substitution)**
+**Evaluate functions:**
 
-1. If $f(x) = 2x+3$, find $f(7)$.
-2. If $g(x) = 5x-4$, find $g(-1)$.
-3. If $h(x) = 4(x+2)$, find $h(0)$.
-4. If $p(x) = 3x^2$, find $p(2)$.
-5. If $k(x) = -x+6$, find $k(10)$.
-6. If $m(x) = x^2-5$, find $m(-2)$.
+1. If $f(x)=2x+3$, find $f(4)$.
 
----
+2. If $g(x)=5x-7$, find $g(2)$.
 
-**Simplify, then evaluate**
-7. $f(x) = 2(x+5)$. Simplify, then find $f(3)$.
-8. $g(x) = -3(x-4)+2x$. Simplify, then find $g(1)$.
-9. $h(x) = 0.5(6x-8)$. Simplify, then find $h(-2)$.
-10. $q(x) = 4x+2(x-1)$. Simplify, then find $q(3)$.
-11. $r(x) = 7(x-2)-3(x+4)$. Simplify, then find $r(5)$.
-12. $s(x) = (x+3)+2(x-1)$. Simplify, then find $s(0)$.
+3. If $h(x)=10-2x$, find $h(0)$.
 
----
+4. If $k(x)=x^2+1$, find $k(-3)$.
 
-**Function machine tables**
-13. Fill in the table if $f(x)=x^2-2$:
+5. If $m(x)=4(x+2)$, find $m(5)$.
 
-| Input | Rule $x^2-2$ | Output |
-| ----- | ------------ | ------ |
-| -2    |              |        |
-| -1    |              |        |
-| 0     |              |        |
-| 3     |              |        |
+**Simplify rules before evaluating:**
 
-14. Fill in the table if $g(x)=2x+5$:
+6. Simplify $p(x)=3(x+4)+2x$. Then find $p(1)$.
 
-| Input | Rule $2x+5$ | Output |
-| ----- | ----------- | ------ |
-| -3    |             |        |
-| 0     |             |        |
-| 4     |             |        |
-| 10    |             |        |
+7. Simplify $q(x)=5(x-3)-2x$. Then find $q(4)$.
 
-15. Fill in the table if $h(x)=3(x-2)$:
+8. Simplify $r(x)=2(2x+1)+x$. Then find $r(-2)$.
 
-| Input | Rule $3(x-2)$ | Output |
-| ----- | ------------- | ------ |
-| 1     |               |        |
-| 2     |               |        |
-| 5     |               |        |
-| -1    |               |        |
+9. Simplify $s(x)=7(x+5)-3(x-1)$. Then find $s(2)$.
 
----
+10. Simplify $t(x)=4(x-2)+5(x+1)$. Then find $t(0)$.
 
-**Equivalent function rules**
-16. If $f(x) = 2(x+4)$, write an equivalent simplified form.
-17. If $g(x) = 5x+10$, factor it to show a different but equivalent rule.
-18. If $h(x) = 3(x+2)-x$, simplify to an equivalent form.
-19. Which of these are equivalent?
+**Translate into words:**
 
-* $p(x)=4(x+1)$
-* $q(x)=4x+1$
-* $r(x)=4x+4$
+11. Describe in words what $f(x)=2x-5$ does.
 
----
+12. Describe in words what $g(x)=10+3x$ does.
 
-**Mixed practice (evaluate after rewriting)**
-20. $f(x) = 6(x-3)+2$. Simplify, then find $f(4)$.
-21. $g(x) = -2(2x+5)+3x$. Simplify, then find $g(-1)$.
-22. $h(x) = 0.25(8x-12)$. Simplify, then find $h(6)$.
+13. Write a sentence to explain $h(x)=x^2$.
+
+
+**Real-world applications:**
+
+14. A taxi charges \$4 plus \$2 per mile. Write a function $C(m)$ for the cost of a ride with $m$ miles. How much is a 10-mile ride?
+
+15. A video game character earns 50 points per level plus a 100-point bonus. Write a function $P(\ell)$ for total points after $\ell$ levels. How many points after 6 levels?
+
+16. The temperature in Celsius is given. Use $F(C)=\frac{9}{5}C+32$ to convert $C=0$ and $C=100$.
+
+17. A streaming service charges \$12 per month plus \$2 for each device. Write a function $S(d)$ and find $S(5)$.
+
+18. You earn \$15 per hour mowing lawns. Write a function $E(h)$. How much do you earn in 12 hours?
+
+**Mixed practice:**
+
+19. If $f(x)=2x+1$, find $f(3)+f(5)$.
+
+20. If $g(x)=x^2-4$, find $g(2)+g(-2)$.
+
+21. If $h(x)=3x-7$, solve $h(x)=5$.
+
+22. If $p(x)=4x+9$, find $p(a+1)$ in terms of $a$.
+
+23. Suppose $f(x)=2x+3$. If the output is 23, what was the input?
 
 ---
 
 **Challenge Problems**
-23. A mystery machine gives these outputs:
 
-| Input | Output |
-| ----- | ------ |
-| 2     | 9      |
-| 5     | 21     |
-| 10    | 41     |
 
-What rule is the machine using? Write it as $f(x)=\_\_\_$.
+24. Sometimes we put one function *inside* another. This is called **function composition**.  
 
-24. If $f(x)=2x+1$, find two different inputs that give the output 7.
+    If $f(x) = 2x - 5$ and $g(x) = 3 - 2x$, 
 
-25. If $g(x)=(x+2)(x-2)$, find $g(5)$.
+    find: 
+
+    a. $f(g(3))$ 
+
+    b. $g(f(3))$
+
+    c. $f(g(x))$.
+
+25. A carnival charges \$5 to enter plus \$3 per ride. 
+
+    a. Write a function $C(r)$ for cost after $r$ rides. 
+
+
+    b. Tickets are sold in multiples of 5 rides. Use your function to complete the table:
+
+    | # rides | cost |
+    |---------|------|
+    |    5    | ___  |
+    |    10   | ___  |
+    |   15    | ___  |
+    |   20    | ___  |
 
 ---
 
 :::{.answers}
-**Evaluate each function (direct substitution)**
 
-1. $17$
-2. $-9$
-3. $8$
-4. $12$
-5. $-4$
-6. $-1$
+1. 11
 
-**Simplify, then evaluate**
-7. $f(x)=2x+10\Rightarrow f(3)=16$
-8. $g(x)=-x+12\Rightarrow g(1)=11$
-9. $h(x)=3x-4\Rightarrow h(-2)=-10$
-10. $q(x)=6x-2\Rightarrow q(3)=16$
-11. $r(x)=4x-26\Rightarrow r(5)=-6$
-12. $s(x)=3x+1\Rightarrow s(0)=1$
+2. 3
 
-**Function machine tables**
-13. $f(x)=x^2-2$: $-2\mapsto 2$, $-1\mapsto -1$, $0\mapsto -2$, $3\mapsto 7$
-14. $g(x)=2x+5$: $-3\mapsto -1$, $0\mapsto 5$, $4\mapsto 13$, $10\mapsto 25$
-15. $h(x)=3(x-2)$: $1\mapsto -3$, $2\mapsto 0$, $5\mapsto 9$, $-1\mapsto -9$
+3. 10
 
-**Equivalent function rules**
-16. $f(x)=2x+8$
-17. $g(x)=5(x+2)$
-18. $h(x)=2x+6$
-19. Equivalent: $p(x)=4(x+1)=4x+4$ and $r(x)=4x+4$. $q(x)=4x+1$ is **not** equivalent.
+4. 10
 
-**Mixed practice (evaluate after rewriting)**
-20. $f(x)=6x-16\Rightarrow f(4)=8$
-21. $g(x)=-x-10\Rightarrow g(-1)=-9$
-22. $h(x)=2x-3\Rightarrow h(6)=9$
+5. 28
 
-**Challenge Problems**
+6. $p(x)=5x+12$, so $p(1)=17$
 
-23. Rule is $f(x)=4x+1$ (checks: $2\mapsto 9$, $5\mapsto 21$, $10\mapsto 41$).
-24. Only $x=3$ gives output $7$ (solve $2x+1=7\Rightarrow x=3$); there is **no second, different input** for this linear rule.
-25. $g(5)=(7)(3)=21$
+7. $q(x)=3x-15$, so $q(4)=-3$
+
+8. $r(x)=5x+2$, so $r(-2)=-8$
+
+9. $s(x)=4x+38$, so $s(2)=46$
+
+10. $t(x)=9x-3$, so $t(0)=-3$
+
+11. Double the input, then subtract 5.
+
+12. Triple the input, then add 10.
+
+13. Square the input.
+
+14. $C(m)=4+2m$, so $C(10)=24$
+
+15. $P(\ell)=100+50\ell$, so $P(6)=400$
+
+16. $F(0)=32$, $F(100)=212$
+
+17. $S(d)=12+2d$, so $S(5)=22$
+
+18. $E(h)=15h$, so $E(12)=180$
+
+19. $f(3)=7$, $f(5)=11$, total = 18
+
+20. $g(2)=0$, $g(-2)=0$, total = 0
+
+21. Solve $3x-7=5$, so $x=4$
+
+22. $p(a+1)=4(a+1)+9=4a+13$
+
+23. $2x+3=23$, so $x=10$
+
 :::

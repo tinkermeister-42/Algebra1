@@ -605,6 +605,16 @@ Multiplication by **proximity** means to multiply two things that are next to ea
 
 ---
 
+### Notation {#glossary-notation}
+
+**Notation** is the system of symbols and marks we use to represent mathematical ideas. It gives us a quick, consistent way to write numbers, operations, and rules without using long sentences.
+
+> **Example:**  
+>
+> The expression $3x + 2$ uses algebraic notation: the number $3$ is a coefficient, $x$ is a variable, and the $+$ sign shows addition.
+
+---
+
 ### Number line {#glossary-number_line}
 
 A straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.
@@ -700,6 +710,16 @@ Multiplication and division are done **left to right**, whichever comes first. S
 > **Example:**
 >
 > In $3 + 4 \times 2$, you multiply first: $3 + 8 = 11$
+
+---
+
+### Output {#glossary-output}
+
+The **output** is the result you get after a function or rule is applied to an input. Each input has exactly one output in a function.
+
+> **Example:**  
+>
+> If $f(x) = 2x + 3$ and the input is $x=4$, then the output is $f(4)=11$.
 
 ---
 
