@@ -14,9 +14,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 {{< glink divisor >}}, {{< glink improper fraction >}}, {{< glink mixed number >}}, {{< glink reciprocal >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. What is half of a half?
 
@@ -24,9 +22,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 3. If you divide 1 by $\frac{1}{2}$, will the answer be bigger or smaller?
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 1.5.1 – Multiplying Fractions
 
@@ -201,9 +197,8 @@ Dividing fractions is as easy as 1-2-3:
 :::{.gotcha}
 Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to an improper fraction before taking the reciprocal.
 :::
----
 
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Multiply and Divide Fractions**
 

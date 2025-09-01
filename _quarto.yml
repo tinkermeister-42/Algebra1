@@ -9,6 +9,7 @@ resources:
 
 extensions:
   - glossary
+  - headings
   
 format:
   html:
@@ -27,10 +28,7 @@ format:
       text: |
         \usepackage{cancel}
         \usepackage{xcolor}
-    
-website:
-  favicon: images/logo.png
-  
+
 book:
   title: "DHS Algebra 1"
   author: "Andy Ross"

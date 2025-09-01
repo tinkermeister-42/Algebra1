@@ -1,175 +1,398 @@
-# 2.5 – Inputs, Outputs & Functions {.unnumbered}
+# 2.5 – Inputs and Outputs of Functions {.unnumbered}
 
-You’ve worked with expressions, and you’ve seen how inputs can go through a rule to produce outputs. This is the heart of what functions are all about.
+So far in this unit, you’ve learned how to evaluate expressions by plugging in values for variables. You’ve also simplified expressions using distribution and by combining like terms.
 
-In this lesson, you’ll explore how input-output rules work, what makes something a **function**, and how to tell when a relationship is or isn’t a function.
+Now picture a small mystery machine on a desk with a sign that says “Feed me.” On the machine is a big letter "f" and on the table are number cards. You slide a 5 into the top, and out comes 13. You try 7, and out comes 17. When you feed the same number again, you get the same result again. It seems the machine is following a steady rule.
 
----
+What could the rule be? How could we name it so others know exactly what it does? Machines like this—where each input leads to one specific output—are called {{< glink functions >}}.
 
-:::{.objectives}
-- I can describe a rule that connects inputs and outputs  
-- I can tell whether a table or situation represents a function  
-- I can use expressions to represent input-output relationships  
+::: {.objectives}
+
+- [ ] I can read and use function notation like $f(x) = 2x+3$.
+- [ ] I can evaluate a function for a given input by substituting and simplifying.
+- [ ] I can rewrite a function rule in simplified form using distribution and combining like terms.
+
 :::
-
----
 
 :::{.vocab}
-{{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink rule >}}, {{< glink table >}}, {{< glink variable >}}
+
+{{< glink evaluate >}}, {{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink simplify >}}
+
+:::
+
+
+{{< warmup >}}
+
+1. Evaluate these expressions when $x=4$:
+
+   a. $2x+3$ 
+
+   b. $5(x-1)$ 
+
+   c. $3x-7+2x$
+
+2. Simplify $3(x+4) - 2(3x - 1)$.
+
+3. What rule could explain how to get the outputs in the table from the inputs?
+
+   | Input | Output |
+   | ----- | ------ |
+   | 1     | 4      |
+   | 3     | 10     |
+   | 6     | 19     |
+
+
+{{< learn >}}
+
+### 2.5.1 – What Is Function Notation?
+
+Imagine our “mystery machine” from the introduction. 
+
+![The mystery machine](/images/Unit_2/Lesson_5/function_machine.png){width="50%"}
+
+Did you figure out what rule the machine is following? From the examples (5 &rarr; 13, 7 &rarr; 17), one possible rule is: “double the input and then add 3”.
+
+In algebra, we name the machine and write its rule using {{< glink function >}} notation.
+
+$$
+f(x) = 2x+3
+$$
+
+- $f$ is the name of the function (we also use $g$, $h$, etc.).
+- $f(x)$ (read "f of x") means $x$ is the input variable.
+- $2x + 3$ is the rule for the output. It tells what to do to $x$.
+
+
+:::{.gotcha title="$f(x)$ is not $f$ times $x$"}
+
+Read $f(x)$ as "$f$ of $x$". It is a single name for the output when the input is $x$. It does **not** mean to multiply $f$ and $x$.
+
+:::
+
+:::{.you-try title="Describe in words what $g(y) = 2y - 2$ does."}
+
+It takes the input $y$, doubles it, and subtracts 2.
+
+**Example:**
+
+$$
+g(3) = 2(3)-2 = 4
+$$
+
 :::
 
 ---
 
-:::{.warmup collapse=true}
-1. A vending machine always gives the same snack when you press A1.  
-   - Is that acting like a function? Why?
 
-2. Now imagine sometimes A1 gives chips, sometimes candy.  
-   - What’s the problem?
+### 2.5.2 – Evaluating Functions
 
-3. What’s something in your life that always depends on something else?
+Function notation is a handy way to describe expression evaluation.
 
-> These questions help students connect function ideas to real-life consistency — one input gives one output.
+Suppose we are asked to evaluate the expression $2x + 3$ when $x = 5$. We would do this:
+
+$$
+\begin{align*}
+2(\textcolor{red}{5}) + 3 &= 10 + 3 \\
+&= 13
+\end{align*}
+$$
+
+Functions let us ask the same question with less writing. Instead we can just say "Find $f(5)$".
+
+$$
+\begin{align*}
+f(\textcolor{red}{5}) &= 2(\textcolor{red}{5}) + 3 \\
+&= 10 + 3 \\
+&= 13
+\end{align*}
+$$
+
+
+**Example 1:**
+
+Let $g(x) = 3(x+4)$. Find $g(2)$.
+
+$$
+\begin{align*}
+g(\textcolor{red}{2}) &= 3(\textcolor{red}{2}+4) \\
+&= 3(6) \\
+&= 18
+\end{align*}
+$$
+
+**Example 2:**
+
+Let $h(x) = -2(3x-1)+7$. Find $h(-2)$.
+
+$$
+\begin{align*}
+h(\textcolor{red}{-2}) &= -2(3(\textcolor{red}{-2})-1)+7 \\
+&= -2(-6 - 1) + 7 \\
+&= -2(-7)+7 \\
+&= 21
+\end{align*}
+$$
+
+:::{.real-world title="Programming: Functions everywhere"}
+
+Programmers spend much of their time writing functions. A function has a name, takes inputs (also called parameters), and produces one output.
+
+:::
+
+:::{.you-try title="Let $f(x) = 9 - 3x$. Find $f(2)$."}
+
+$$
+f(2) = 9 - 3(2) = 9 - 6 = 3
+$$
+
 :::
 
 ---
 
-## 🧠 Learn Together
+### 2.5.3 – Simplifying Function Rules
 
-### 2.5.1 – Inputs → Rule → Outputs
+Sometimes a rule is easier to use after you simplify it.
 
-You can describe a relationship using a **rule**. The rule takes an **input** and produces an **output**.
+**Example:**
 
-> **Example:**
->
-> Rule: Multiply by 2 and add 1  
-> Expression: \(2x + 1\)
+$$
+p(x) = 4(x-2) + 3x
+$$
 
-| Input | Rule         | Output |
-|-------|--------------|--------|
-| 1     | \(2 \cdot 1 + 1\) | 3      |
-| 2     | \(2 \cdot 2 + 1\) | 5      |
-| 3     | \(2 \cdot 3 + 1\) | 7      |
+First simplify:
 
-> _Suggestion: Use visual of input → rule box → output flow._
+$$
+\begin{align*}
+p(x) &= 4x-8+3x \\
+&= 7x-8
+\end{align*}
+$$
 
----
+Now evaluate at $x=5$:
 
-### 2.5.2 – What Is a Function?
+$$
+\begin{align*}
+p(5) &= 7(5)-8 \\
+&= 27
+\end{align*}
+$$
 
-A **function** is a rule where **each input has exactly one output**.
+:::{.think title="Why simplify the rule first?"}
+A shorter rule makes evaluation quicker and reduces mistakes.
+:::
 
-- It’s **okay** if different inputs have the same output  
-- It’s **not okay** if the same input gives more than one output
+:::{.you-try title="Simplify $q(x) = 2(x+5) + 3x$. Then find $q(3)$."}
 
-> **Example:**
+$q(x) = 5x+10$, so $q(3)=25$.
 
-| Input | Output |
-|-------|--------|
-| 2     | 3      |
-| 2     | 4      |
-
-❌ Not a function — the input 2 gives two different outputs
-
----
-
-### 2.5.3 – Real-Life Functions
-
-> ✅ Function:  
-> You pay \$3 per taco. Total cost depends on number of tacos.  
-> Rule: \(3x\)
-
-> ❌ Not a Function:  
-> A person is matched to their favorite color… but is listed twice with different colors.
-
-> _Suggestion: Let students create their own “function or not?” example and explain their reasoning._
-
----
-
-:::{.you-try collapse=true title="🤔 Function or Not?"}
-Decide if each scenario describes a function:
-
-1. You press a microwave button and it always sets the same time.  
-2. A dog is listed with two different owners.  
-3. A student has different classes during the day.  
-4. A single input gives two different outputs in a table.
-
-Explain your reasoning.
 :::
 
 ---
 
-### 2.5.4 – Optional: Function Notation
+### 2.5.4 – Function Evaluation in Real Life
 
-You may see something like this:
-
-\[
-f(x) = 3x + 2
-\]
-
-This just means: “The function named \(f\) gives this output when you plug in \(x\).”
-
-- If \(x = 4\):  
-  \[
-  f(4) = 3 \cdot 4 + 2 = 14
-  \]
-
-> _You can use this now or introduce more fully in Unit 4._
+Functions don’t just show up in math class—they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
 
 ---
 
-## 🏋️ Practice On Your Own
+**Example 1: Cell Phone Data Plan**
 
-1. Fill in the table using the rule: \(2x + 1\)
+A data plan charges a \$50 flat fee per month plus \$0.10 per Gb. How much will you pay if you use 80 Gb?
 
-| Input | Output |
-|-------|--------|
-| 1     |        |
-| 3     |        |
-| 5     |        |
+We can model the total cost with the function
 
-2. Write a rule for each situation:  
-   a. You earn \$10/hour.  
-   b. A car starts with 12 gallons and uses 0.3 gallons per mile.  
-   c. A delivery costs \$5 plus \$2 per item.
+$$
+C(g) = 50 + 0.1g
+$$
 
-3. Which of these are functions?
+where $C$ is the total cost (dollars) and $g$ is data used (Gb).
 
-| Input | Output |
-|-------|--------|
-| 1     | 4      |
-| 2     | 4      |
-| 3     | 4      |
+Substitute $g=80$:
 
-| Input | Output |
-|-------|--------|
-| 1     | 5      |
-| 1     | 6      |
-| 2     | 5      |
+$$
+\begin{align*}
+C(80) &= 50 + 0.1(80) \\
+&= 50 + 8 \\
+&= 58
+\end{align*}
+$$
 
-4. Create a function of your own. Show a table with at least 3 inputs and outputs.
+The total cost is $58.
 
 ---
 
-:::{.answers collapse=true}
-**✅ Answer Key**
 
-1.
+**Example 2: Temperature Conversion (°C → °F)**
+
+To convert from Celsius to Fahrenheit, use
+
+$$
+F(C) = \frac{9}{5}C + 32
+$$
+
+Find 25°C in Fahrenheit.
+
+$$
+\begin{align*}
+F(25) &= \tfrac{9}{5}\cdot 25 + 32 \\
+&= 45 + 32 \\
+&= 77^\circ\mathrm{F}
+\end{align*}
+$$
+
+
+:::{.you-try-m title="How much will you earn?"}
+
+You are paid \$12 per hour plus a \$15 bonus. You can represent your pay using 
+
+$$
+P(h) = 12h + 15
+$$
+
+where $h$ is the number of hours worked and $P$ is your total pay.
+
+How much do you make if you work for 40 hours?
+:::
+
+:::{.answer title="Answer"}
+$$
+P(40) = 12(40) + 15 = 480 + 15 = 495
+$$
+
+You make \$495
+
+:::
+
+
+---
+
+
+{{< practice >}}
+
+**Evaluate each function (direct substitution)**
+
+1. If $f(x) = 2x+3$, find $f(7)$.
+2. If $g(x) = 5x-4$, find $g(-1)$.
+3. If $h(x) = 4(x+2)$, find $h(0)$.
+4. If $p(x) = 3x^2$, find $p(2)$.
+5. If $k(x) = -x+6$, find $k(10)$.
+6. If $m(x) = x^2-5$, find $m(-2)$.
+
+---
+
+**Simplify, then evaluate**
+7. $f(x) = 2(x+5)$. Simplify, then find $f(3)$.
+8. $g(x) = -3(x-4)+2x$. Simplify, then find $g(1)$.
+9. $h(x) = 0.5(6x-8)$. Simplify, then find $h(-2)$.
+10. $q(x) = 4x+2(x-1)$. Simplify, then find $q(3)$.
+11. $r(x) = 7(x-2)-3(x+4)$. Simplify, then find $r(5)$.
+12. $s(x) = (x+3)+2(x-1)$. Simplify, then find $s(0)$.
+
+---
+
+**Function machine tables**
+13. Fill in the table if $f(x)=x^2-2$:
+
+| Input | Rule $x^2-2$ | Output |
+| ----- | ------------ | ------ |
+| -2    |              |        |
+| -1    |              |        |
+| 0     |              |        |
+| 3     |              |        |
+
+14. Fill in the table if $g(x)=2x+5$:
+
+| Input | Rule $2x+5$ | Output |
+| ----- | ----------- | ------ |
+| -3    |             |        |
+| 0     |             |        |
+| 4     |             |        |
+| 10    |             |        |
+
+15. Fill in the table if $h(x)=3(x-2)$:
+
+| Input | Rule $3(x-2)$ | Output |
+| ----- | ------------- | ------ |
+| 1     |               |        |
+| 2     |               |        |
+| 5     |               |        |
+| -1    |               |        |
+
+---
+
+**Equivalent function rules**
+16. If $f(x) = 2(x+4)$, write an equivalent simplified form.
+17. If $g(x) = 5x+10$, factor it to show a different but equivalent rule.
+18. If $h(x) = 3(x+2)-x$, simplify to an equivalent form.
+19. Which of these are equivalent?
+
+* $p(x)=4(x+1)$
+* $q(x)=4x+1$
+* $r(x)=4x+4$
+
+---
+
+**Mixed practice (evaluate after rewriting)**
+20. $f(x) = 6(x-3)+2$. Simplify, then find $f(4)$.
+21. $g(x) = -2(2x+5)+3x$. Simplify, then find $g(-1)$.
+22. $h(x) = 0.25(8x-12)$. Simplify, then find $h(6)$.
+
+---
+
+**Challenge Problems**
+23. A mystery machine gives these outputs:
 
 | Input | Output |
-|-------|--------|
-| 1     | 3      |
-| 3     | 7      |
-| 5     | 11     |
+| ----- | ------ |
+| 2     | 9      |
+| 5     | 21     |
+| 10    | 41     |
 
-2.  
-a. \(10x\)  
-b. \(12 - 0.3x\)  
-c. \(5 + 2x\)
+What rule is the machine using? Write it as $f(x)=\_\_\_$.
 
-3.  
-- First table: ✅ Function  
-- Second table: ❌ Not a function
+24. If $f(x)=2x+1$, find two different inputs that give the output 7.
 
-4. _(Answers will vary)_
+25. If $g(x)=(x+2)(x-2)$, find $g(5)$.
+
+---
+
+:::{.answers}
+**Evaluate each function (direct substitution)**
+
+1. $17$
+2. $-9$
+3. $8$
+4. $12$
+5. $-4$
+6. $-1$
+
+**Simplify, then evaluate**
+7. $f(x)=2x+10\Rightarrow f(3)=16$
+8. $g(x)=-x+12\Rightarrow g(1)=11$
+9. $h(x)=3x-4\Rightarrow h(-2)=-10$
+10. $q(x)=6x-2\Rightarrow q(3)=16$
+11. $r(x)=4x-26\Rightarrow r(5)=-6$
+12. $s(x)=3x+1\Rightarrow s(0)=1$
+
+**Function machine tables**
+13. $f(x)=x^2-2$: $-2\mapsto 2$, $-1\mapsto -1$, $0\mapsto -2$, $3\mapsto 7$
+14. $g(x)=2x+5$: $-3\mapsto -1$, $0\mapsto 5$, $4\mapsto 13$, $10\mapsto 25$
+15. $h(x)=3(x-2)$: $1\mapsto -3$, $2\mapsto 0$, $5\mapsto 9$, $-1\mapsto -9$
+
+**Equivalent function rules**
+16. $f(x)=2x+8$
+17. $g(x)=5(x+2)$
+18. $h(x)=2x+6$
+19. Equivalent: $p(x)=4(x+1)=4x+4$ and $r(x)=4x+4$. $q(x)=4x+1$ is **not** equivalent.
+
+**Mixed practice (evaluate after rewriting)**
+20. $f(x)=6x-16\Rightarrow f(4)=8$
+21. $g(x)=-x-10\Rightarrow g(-1)=-9$
+22. $h(x)=2x-3\Rightarrow h(6)=9$
+
+**Challenge Problems**
+
+23. Rule is $f(x)=4x+1$ (checks: $2\mapsto 9$, $5\mapsto 21$, $10\mapsto 41$).
+24. Only $x=3$ gives output $7$ (solve $2x+1=7\Rightarrow x=3$); there is **no second, different input** for this linear rule.
+25. $g(5)=(7)(3)=21$
 :::

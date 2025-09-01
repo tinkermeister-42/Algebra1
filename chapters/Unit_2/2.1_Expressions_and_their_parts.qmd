@@ -4,31 +4,25 @@ Learning mathematics is about more than number crunching—you’re learning a n
 
 In this lesson, you’ll learn to **read** expressions to understand the ideas they communicate and to **write** expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: {{< glink variables >}}, {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
 
----
-
-::: objectives
+:::{.objectives}
 - [ ] I can identify the parts of an algebraic expression.  
 - [ ] I can describe what a variable, constant, coefficient, and term are.  
 - [ ] I can write a simple expression to model a real-world situation.  
 :::
 
----
-
-::: vocab
+:::{.vocab}
 {{< glink coefficient >}}, {{< glink constant >}}, {{< glink expression >}}, {{< glink term >}}, {{< glink variable >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. A shirt costs $10. How do you find the total cost of several shirts?  
+
 2. You have some cookies. You eat 3. How can you show how many are left?  
+
 3. A car drives 50 miles every hour. How can you find the total distance for many hours?  
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 2.1.1 – What Is a Variable?
 
@@ -231,9 +225,7 @@ Need more examples? Download [this sheet](/resources/KeywordTranslations.pdf) th
 
 :::
 
----
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Identify the Parts**  
 

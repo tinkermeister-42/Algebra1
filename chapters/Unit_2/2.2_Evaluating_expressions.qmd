@@ -4,24 +4,18 @@ In the last lesson, you learned how to **read** and **write** algebraic expressi
 
 In this lesson, we will learn to **substitute** numbers for the variables in an expression so that we can **evaluate** its meaning in a particular situation.
 
----
-
 :::{.objectives}
 - [ ] I can substitute values into expressions and simplify them  
 - [ ] I can use the correct order of operations with variables and parentheses  
 - [ ] I can use substitution to show two expressions are equivalent
 :::
 
----
-
 :::{.vocab}
 {{< glink evaluate >}}, {{< glink expression >}}, {{< glink operation >}}, {{< glink result >}}, {{< glink value >}}, {{< glink variable >}}
 
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. What do you get if you simplify this expression?  
    $$
@@ -32,9 +26,7 @@ In this lesson, we will learn to **substitute** numbers for the variables in an 
 
 3. A student evaluates $(-3)^2$ and gets -9. Are they correct? Why or why not?
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 2.2.1 – What Does It Mean to Evaluate?
 
@@ -47,7 +39,7 @@ Evaluate $4x + 1$ when $x = 3$.
 First we replace the $x$ with what it is.
 
 $$
-4(\color{red}3\color{black}) + 1
+4(\textcolor{red}3) + 1
 $$
 
 Now we simplify (or {{< glink calculate >}}) the {{< glink result >}}.
@@ -67,7 +59,7 @@ Evaluate $3 - 2x$ when $x = -4$.
 First substitute.
 
 $$
-3 - 2(\color{red}{-4}\color{black})
+3 - 2(\textcolor{red}{-4})
 $$
 
 Then simplify.
@@ -83,7 +75,7 @@ It is easy to lose track of negative signs when substituting numbers in an expre
 :::{.you-try title="Evaluate $5x-2$ when $x=-3$"}
 
 $$
-5(\color{red}-3\color{black}) - 2 = -15 - 2 = -17
+5(\textcolor{red}{-3}) - 2 = -15 - 2 = -17
 $$
 
 :::
@@ -103,7 +95,7 @@ Evaluate $2(x + 3)^2$ when $x = 1$.
 First we substitute.
 
 $$
-2((\color{red}{1}\color{black}) + 3)^2
+2((\textcolor{red}{1}) + 3)^2
 $$
 
 Then we simplify.
@@ -121,7 +113,7 @@ Evaluate $3(2 - y) + 5(y - 2)$ when $y=-4$.
 Substitute:
 
 $$
-3(2 - (\color{red}{-4})\color{black}) + 5((\color{red}{-4}\color{black}) - 2)
+3(2 - (\textcolor{red}{-4})) + 5((\textcolor{red}{-4}) - 2)
 $$
 
 Now simplify:
@@ -134,7 +126,7 @@ $$
 
 Substitute:
 $$
-20((\color{red}{5}\color{black}) - 2) + 2(\color{red}{5}\color{black})^2
+20((\textcolor{red}{5}) - 2) + 2(\textcolor{red}{5})^2
 $$
 
 Simplify:
@@ -157,10 +149,10 @@ In the following example, we have the variables $a$ and $b$.
 
 Evaluate the expression $2a - 3b$ when $a=2$ and $b=1$.
 
-We do exactly what we did in the previous examples. First we substitute for $\color{blue}{a}$ and $\color{red}{b}$:
+We do exactly what we did in the previous examples. First we substitute for $\textcolor{blue}{a}$ and $\textcolor{red}{b}$:
 
 $$
-2(\color{blue}{2}\color{black}) - 3(\color{red}{1}\color{black})
+2(\textcolor{blue}{2}) - 3(\textcolor{red}{1})
 $$
 
 Then we simplify:
@@ -174,10 +166,10 @@ $$
 
 Evaluate $12x -3y^2$ when $x=7$ and $y=-3$.
 
-First substitute for $\color{blue}{x}$ and $\color{red}{y}$. Be careful with the negatives!
+First substitute for $\textcolor{blue}{x}$ and $\textcolor{red}{y}$. Be careful with the negatives!
 
 $$
-12(\color{blue}{7}\color{black}) - 3(\color{red}{-3}\color{black})^2
+12(\textcolor{blue}{7}) - 3(\textcolor{red}{-3})^2
 $$
 
 Now we simplify:
@@ -188,10 +180,10 @@ $$
 
 :::{.you-try title="Evaluate $\frac{1}{2}x^2 - 3y$ when $x = 4$ and $y = 3$."}
 
-First substitute for $\color{blue}{x}$ and $\color{red}{y}$.
+First substitute for $\textcolor{blue}{x}$ and $\textcolor{red}{y}$.
 
 $$
-\frac{1}{2}(\color{blue}{4}\color{black})^2 - 3(\color{red}{3}\color{black})
+\frac{1}{2}(\textcolor{blue}{4})^2 - 3(\textcolor{red}{3})
 $$
 
 Now simplify:
@@ -300,9 +292,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 :::
 
----
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Single variable**
 

@@ -10,23 +10,17 @@ Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = \$330.
 
 Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink distributive property >}}. Today, we’re going to see how this property helps us simplify expressions.
 
----
-
 ::: {.objectives}
 - [ ] I can use the **distributive property** to expand expressions like $a(b+c)$.
 - [ ] I can distribute with **negatives** and then **combine like terms**.
 - [ ] I can **factor out** a common factor (reverse distribution) to rewrite an expression.
 :::
 
----
-
 ::: vocab
-{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink expand >}}, {{< glink simplify >}}
+{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink expand >}}, {{< glink factor >}}, {{< glink simplify >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1.  Here are the individual orders for 5 friends going through a drive through.
 
@@ -43,14 +37,11 @@ Either way, you get the same answer. What we just did actually followed a rule i
     a.  $6 \times 45$
     b.  $3 \times 32$
     c.  $11 \times 25$
+    d.  $19 \times 5$
 
 3.  Test whether $3(2x - 1)$ and $6x - 3$ are equivalent.
 
----
-
-## 👥 Learn Together
-
----
+{{< learn >}}
 
 ### 2.4.1 – What Is the Distributive Property?
 
@@ -153,6 +144,8 @@ $$
 
 Expand the expression $-(2x - 7)$:
 
+Notice that there is no number with the negative sign. A lone negative sign means to multiply by -1.
+
 $$
 -(2x - 7) = -1(2x - 7) = -2x + 7
 $$
@@ -182,7 +175,7 @@ $$
 Then we simplify by combining like terms:
 
 $$
-4x + 8 + 3x - 15 = 7x - 7
+\color{red}4x \color{black}+ \color{blue}8 \color{black}+ \color{red}3x \color{black}- \color{blue}15 \color{black}= \color{red}7x \color{black}- \color{blue}7
 $$
 
 :::{.callout-tip title="Make it simpler"}
@@ -191,12 +184,15 @@ When possible, you should simplify what is inside the parentheses before distrib
 **Example:**
 
 $$
-2(3x - 2y + 5 - x + 5y - 10) = 2(8x + 3y - 5) = 16x + 6y - 10
+\begin{align*}
+2(4x + 3 - 2x - 1) &= \\
+2(2x + 2) &= 4x + 4
+\end{align*}
 $$
 :::
 
 ::: {.gotcha title="Watch those signs!"}
-Students often forget to keep the sign with the muliplier.
+Students often forget to keep the sign with the multiplier.
 
 **Example:**
 
@@ -209,7 +205,10 @@ $$
 Notice the "-" sign in front of the 5. We **must** multiply the second part of the expression by -5.
 
 $$
-3(x - 2) \color{red}- 5\color{black}(4x + 5) = 3x - 6 \color{red}-20x - 25 \color{black} = -17x - 31
+\begin{align*}
+3(x - 2) \color{red}- 5\color{black}(4x + 5) &= \\
+3x - 6 \color{red}-20x - 25 \color{black} &= -17x - 31
+\end{align*}
 $$
 
 :::
@@ -220,88 +219,206 @@ $$
 
 Distribution goes both ways. If $ab+ac = a(b+c)$, then we can **factor out** $a$.
 
-**Examples**
+**Examples:**
+
+Factor out the {{< glink greatest common factor >}} from each expression.
 
 1.  $8x+12 = 4(2x+3)$
 2.  $15x-9 = 3(5x-3)$
 3.  $3x+6y = 3(x+2y)$
 
-This is called **factoring** (using a **greatest common factor**, if possible).
+We call this process {{< glink factoring >}}.
 
-::: {.you-try-m title="Factor the expression (reverse distribute)."}
-a)  $12x+18$    b) $9a-6$    c) $14y+21x$    d) $15x-9x^2$
+::: {.you-try title="Factor the expression $12x + 18$."}
+
+The **GCF** is $6$.
+
+$$
+12x + 18 = 6(x + 3)
+$$
 :::
 
-::: {.answer title="Answer"}
-a)  $6(2x+3)$    b) $3(3a-2)$    c) $7(2y+3x)$    d) $3x(5-3x)$
-:::
-
-------------------------------------------------------------------------
+---
 
 ### 2.4.5 – Check Your Work
 
-Use a quick **substitution** to confirm equivalence.
+It is always a good idea to check your work in algebra. Here, we can use {{< glink substitution >}} to see if our answer is reasonable.
 
-Example: Is $5(2x-3)-(x-4)$ the same as $9x-11$?
+**Example 1:**
 
-Expand: $5(2x-3)-(x-4)=10x-15-x+4=9x-11.$
+Paxton simplified the expression $5(2x-3)-(x-4)$. Here are the steps he took. Did he make a mistake?
 
-Check $x=2$: $5(4-3)-(2-4)=5(1)-(-2)=5+2=7 \quad \text{and} \quad 9(2)-11=18-11=7.$ They match.
+**Step 1:** Apply the distributive property
+$$
+5(2x - 3) - (x - 4) = 10x - 3 - x - 4
+$$
 
-::: {.gotcha title="Important: Exponents don’t distribute over addition"}
-$(x+2)^2 \neq x^2+2^2$. Correct: $(x+2)^2=(x+2)(x+2)=x^2+4x+4$.
+**Step 2:** Combine like terms
+
+$$
+10x - 3 - x - 4 = 9x - 7
+$$
+
+To test whether he made a mistake, we can substitute a value for $x$.
+
+Let $x = \color{red}3$:
+
+$$
+\begin{align*}
+5(2(\color{red}3\color{black}) - 3) - (\color{red}3 \color{black}- 4) &= \\
+5(6 - 3) - (-1) &= \\
+5(3) + 1 &= \\
+15 + 1 &= 16
+\end{align*}
+$$
+
+But...
+
+$$
+\begin{align*}
+9(\color{red}3\color{black}) - 7 &= \\ 
+27 - 7 &= 20
+\end{align*}
+$$
+
+Since the substitution gives two different answers (20 and 16), we know that Paxton made a mistake. He forgot to distribute to all terms in the expression! Here is the correct answer.
+
+$$
+\begin{align*}
+5(2x - 3) - (x - 4) &= \\
+10x - 15 -x + 4 &= 9x - 11
+\end{align*}
+$$
+
+If we substitute using $x = \color{red}3$ we get...
+
+$$
+\begin{align*}
+9(\color{red}3\color{black}) - 11 &= \\
+ 27 - 11 &= 16
+ \end{align*}
+$$
+
+:::{.you-try title="Expand $-2(5 - 2x) + 3(x - 7)$. Check your work."}
+
+**Step 1:** Apply the distributive property
+
+$$
+\begin{align*}
+-2(5 - 2x) + 3(x - 7) &= \\
+-2(5) -2(-2x) + 3(x) + 3(-7) &= \\
+&= -10 + 4x + 3x - 21
+\end{align*}
+$$
+
+**Step 2:** Simplify by combining like terms
+
+$$
+-10 + 4x + 3x - 21 = 7x - 31
+$$
+
+**Step 3:** Check your work
+
+Let $x = \color{red}5$
+
+$$
+\begin{align*}
+-2(5 - 2(\color{red}5\color{black})) + 3(\color{red}5 \color{black} - 7) &= \\ 
+-2(5 - 10) + 3(-2) &= \\
+-2(-5) - 6 &= \\
+10 - 6 &= 4
+\end{align*}
+$$
+
+And...
+
+$$
+\begin{align*}
+7(\color{red}5\color{black}) - 31 &= \\
+35 - 31 &= 4
+\end{align*}
+$$
+
+Both expressions gave 4 when $x = 5$ so we feel good about our answer.
+
 :::
 
-------------------------------------------------------------------------
-
-## 🏋️ Practice On Your Own
+{{< practice >}}
 
 **Expand using the distributive property**
 
 1.  $6(x+5)$
+
 2.  $7(y-2)$
+
 3.  $4(3a+b)$
+
 4.  $10(m+0.3)$
+
 5.  $-3(p+9)$
+
 6.  $-(k-8)$
+
 
 **Expand, then combine like terms**
 
 7.  $2(x+3)+5(x-1)$
+
 8.  $4y-2(3y-7)$
+
 9.  $3(a+2b)-5(2a-b)$
+
 10. $-2(t-5)+3(t+1)$
 
 **With decimals and fractions**
 
 11. $0.5(8x-6)$
+
 12. $1.2(y+5)-0.2y$
+
 13. $\dfrac{3}{4}(4x-8)$
+
 14. $-\dfrac{1}{2}(6a+10)$
 
 **Factor (reverse distribute)**
 
 15. $18x+27$
+
 16. $20m-12$
+
 17. $8p+12q$
+
 18. $14x-21x^2$
 
 **Are they equivalent? Expand/simplify and compare.**
 
 19. $3(x+4)+2x$ and $5x+12$
+
 20. $6-2(x+3)$ and $-2x$
+
 21. $5(a-1)+a$ and $6a-5$
+
 22. $4(y+2)-3(y-1)$ and $y+11$
 
 **Challenge Problems**
 
-23. Show two different ways to simplify $3(x+5)-2(x-1)$ (e.g., distribute-first vs. combine-inside-first if possible). Explain why both give the same result.
+23. Simplify the expression in **two different ways**:
 
-24. Create **two equivalent expressions** that look different: one using parentheses and one fully expanded. Explain how you know they’re equivalent.
+$$
+4(2x + 3) - (2x + 3).
+$$
 
-------------------------------------------------------------------------
+- Try distributing first.
+- Then try factoring out the common $(2x+3)$ first.
 
-::: answers
+Explain why both methods lead to the same result.
+
+
+24. Use the distributive property to multiply $(3x - 1)(2x + 3)$. Show each step and simplify your result.
+
+---
+
+:::{.answers}
 **Expand using the distributive property**
 
 1.  $6x+30$
@@ -321,7 +438,7 @@ $(x+2)^2 \neq x^2+2^2$. Correct: $(x+2)^2=(x+2)(x+2)=x^2+4x+4$.
 **With decimals and fractions**
 
 11. $4x-3$
-12. $1.2y+6-0.2y = 1.0y+6$ or $y+6$
+12. $y+6$
 13. $3x-6$
 14. $-3a-5$
 

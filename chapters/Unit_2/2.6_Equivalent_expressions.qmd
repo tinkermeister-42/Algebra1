@@ -20,7 +20,8 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 ---
 
-:::{.warmup collapse=true}
+{{< warmup >}}
+
 1. Which of these are equal?  
    a. \(2x + 3x\) and \(5x\)  
    b. \(3x + 4\) and \(4 + 3x\)  
@@ -35,7 +36,7 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 ---
 
-## 🧠 Learn Together
+{{< learn >}}
 
 ### 2.6.1 – What Does “Equivalent” Mean?
 
@@ -101,7 +102,7 @@ They mean the same thing. That’s helpful when comparing prices, combining step
 
 ---
 
-## 🏋️ Practice On Your Own
+{{< practice >}}
 
 Simplify both expressions. Are they equivalent?
 

@@ -22,7 +22,7 @@ You’ll use these skills again and again — from simplifying fractions to solv
 {{< glink composite number >}}, {{< glink factor >}}, {{< glink factor tree >}}, {{< glink multiple >}}, {{< glink prime factorization >}}, {{< glink prime number >}}
 :::
 
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. How many different pairs of whole numbers can you multiply to get 36?
 
@@ -30,9 +30,7 @@ You’ll use these skills again and again — from simplifying fractions to solv
 
 3. Can you find more than one pair of whole numbers that multiply to make 13? 
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 1.2.1 - What Are Factors?
 
@@ -377,7 +375,7 @@ I have only shown you 3 of the 60 unique factor trees for 360!
 :::
 
 
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Factors & Multiples**
 

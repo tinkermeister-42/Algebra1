@@ -17,7 +17,7 @@ Negative numbers can be tricky, especially when the rules don’t always match w
 {{< glink absolute value >}}, {{< glink greater than >}}, {{< glink integer >}}, {{< glink less than >}}, {{< glink number line >}}, {{< glink negative >}}, {{< glink opposite >}}, {{< glink positive >}} 
 :::
 
-## 🔥 Warm-Up 
+{{< warmup >}} 
 
 Answer as best you can -- even if you aren't sure!
 
@@ -27,11 +27,7 @@ Answer as best you can -- even if you aren't sure!
 
 3. Which number is farther from 0: -7 or 5?
 
----
-
-## 👥 Learn Together
-
-
+{{< learn >}}
 
 ### 1.1.1 - The Number Line Is More Than Just Counting
 
@@ -191,10 +187,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 > The bank made a mistake, you had \$$201$ in your account so they took off the \$$5$ fee. Now you have \$$206$.
 :::
 
----
-
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Working With Number Lines**
 

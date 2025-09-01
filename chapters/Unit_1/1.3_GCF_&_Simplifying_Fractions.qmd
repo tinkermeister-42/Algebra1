@@ -14,9 +14,7 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 {{< glink equivalent >}}, {{< glink greatest common factor >}}, {{< glink prime factorization >}}, {{< glink relatively prime >}}, {{< glink simplify >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. Which number do you *think* has the most prime factors? What makes you think so?
 
@@ -40,9 +38,7 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 
    d. $\frac{24}{36}$
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 1.3.1 - Finding the GCF Using Factor Trees
 
@@ -680,10 +676,7 @@ Simplifying the original recipe helped you find a cleaner ratio — one that’s
 Simplifying isn’t just a math trick — it helps you work with numbers more easily in the real world. Whether you’re adjusting recipes, mixing paint, or scaling blueprints, understanding fractions and simplifying them makes life easier.
 :::
 
-
----
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **GCF Practice**
 

@@ -4,8 +4,6 @@ When we speak, we sometimes **shorten** a sentence without changing its meaning.
 
 Think of a cashier counting money in a mixed drawer. They put tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
----
-
 :::{.objectives}
 
 - [ ] I can identify like terms in an expression.
@@ -13,16 +11,12 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 - [ ] I can check my work by substitution or by reasoning about equivalence.
 :::
 
----
-
 :::{.vocab}
 {{< glink coefficient >}}, {{< glink constant >}}, {{< glink equivalent expressions >}}, {{< glink like terms >}}, {{< glink simplify >}}, 
 {{< glink term >}}, {{< glink variable >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. What do you get when you add:
 
@@ -38,9 +32,7 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 
 3. Why might we want to rewrite an expression in a simpler form?
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 2.3.1 – What Are Like Terms?
 
@@ -275,9 +267,7 @@ $$
 
 :::
 
----
-
-## 🏋️ Practice On Your Own
+{{< practice >}}
 
 **Identify and combine like terms**
 

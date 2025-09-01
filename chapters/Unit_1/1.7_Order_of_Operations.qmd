@@ -22,10 +22,7 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 {{< glink expression >}}, {{< glink order of operations >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink addition >}}, {{< glink subtraction >}}
 :::
 
----
-
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. You and your friend are asked to simplify $10 - 4 \times 2$. You got 2. They got 12. Who is right?
 
@@ -34,10 +31,7 @@ $$
 6 \div 2(1 + 2)
 $$
 
----
-
-## 👥 Learn Together
-
+{{< learn >}}
 
 ### 1.7.1 – The Order Matters
 
@@ -398,9 +392,7 @@ Which should be applied first?
 Same ingredients, different result. Order matters!
 :::
 
----
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Basic Order of Operations**
 

@@ -14,9 +14,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 {{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}, {{< glink convert >}}, {{< glink equivalent >}}, {{< glink place value >}}
 :::
 
----
-
-## 🔥 Warm-Up
+{{< warmup >}}
 
 1. Which one doesn’t belong?
 
@@ -34,9 +32,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
     c. 0.25
     d. $\frac{3}{4}$
 
----
-
-## 👥 Learn Together
+{{< learn >}}
 
 ### 1.4.1 – What Are Fractions, Decimals, and Percents?
 
@@ -331,9 +327,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 | $\frac{1}{10}$ | 0.1      | 10%     |
 :::
 
----
-
-## ✍️ Practice On Your Own
+{{< practice >}}
 
 **Conversions Practice**
 
