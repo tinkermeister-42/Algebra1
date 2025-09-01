@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,7 +258,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.5 – Inputs, Outputs &amp; Functions</span></a>
+ <span class="menu-text">2.5 – Inputs and Outputs of Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -696,15 +696,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">👥 Learn Together</a>
-  <ul class="collapse">
-  <li><a href="#what-does-it-mean-to-evaluate" id="toc-what-does-it-mean-to-evaluate" class="nav-link" data-scroll-target="#what-does-it-mean-to-evaluate">2.2.1 – What Does It Mean to Evaluate?</a></li>
+  <li><a href="#what-does-it-mean-to-evaluate" id="toc-what-does-it-mean-to-evaluate" class="nav-link active" data-scroll-target="#what-does-it-mean-to-evaluate">2.2.1 – What Does It Mean to Evaluate?</a></li>
   <li><a href="#using-pemdas-with-substitution" id="toc-using-pemdas-with-substitution" class="nav-link" data-scroll-target="#using-pemdas-with-substitution">2.2.2 – Using PEMDAS with Substitution</a></li>
   <li><a href="#evaluating-expressions-with-multiple-variables" id="toc-evaluating-expressions-with-multiple-variables" class="nav-link" data-scroll-target="#evaluating-expressions-with-multiple-variables">2.2.3 – Evaluating Expressions With Multiple Variables</a></li>
   <li><a href="#testing-for-equivalence" id="toc-testing-for-equivalence" class="nav-link" data-scroll-target="#testing-for-equivalence">2.2.4 – Testing For Equivalence</a></li>
-  </ul></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✍️ Practice On Your Own</a></li>
   </ul>
 </nav>
     </div>
@@ -732,7 +727,6 @@ window.Quarto = {
 
 <p>In the last lesson, you learned how to <strong>read</strong> and <strong>write</strong> algebraic expressions – the “phrases” of math. As with any language, the meaning of phrases can change with the situation. This is true in algebra too! The meaning or <strong>value</strong> of an expression depends on what numbers we use for its variables.</p>
 <p>In this lesson, we will learn to <strong>substitute</strong> numbers for the variables in an expression so that we can <strong>evaluate</strong> its meaning in a particular situation.</p>
-<hr>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can substitute values into expressions and simplify them<br>
@@ -742,13 +736,10 @@ window.Quarto = {
 <li><label><input type="checkbox">I can use substitution to show two expressions are equivalent</label></li>
 </ul>
 </div>
-<hr>
 <div class="vocab">
-<p><a href="../..\glossary.html#glossary-evaluate" class="glossary-link" data-term="evaluate" data-original-term="evaluate">evaluate</a>, <a href="../..\glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a>, <a href="../..\glossary.html#glossary-operation" class="glossary-link" data-term="operation" data-original-term="operation">operation</a>, <a href="../..\glossary.html#glossary-result" class="glossary-link" data-term="result" data-original-term="result">result</a>, <a href="../..\glossary.html#glossary-value" class="glossary-link" data-term="value" data-original-term="value">value</a>, <a href="../..\glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-evaluate" class="glossary-link" data-term="evaluate" data-original-term="evaluate">evaluate</a>, <a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a>, <a href="../../glossary.html#glossary-operation" class="glossary-link" data-term="operation" data-original-term="operation">operation</a>, <a href="../../glossary.html#glossary-result" class="glossary-link" data-term="result" data-original-term="result">result</a>, <a href="../../glossary.html#glossary-value" class="glossary-link" data-term="value" data-original-term="value">value</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
 </div>
-<hr>
-<section id="warm-up" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
 <li><p>What do you get if you simplify this expression?<br>
 <span class="math display">\[
@@ -757,20 +748,17 @@ window.Quarto = {
 <li><p>In what ways are <span class="math inline">\(2x + 5\)</span> and <span class="math inline">\(5 + 2x\)</span> different? In what ways are they the same?</p></li>
 <li><p>A student evaluates <span class="math inline">\((-3)^2\)</span> and gets -9. Are they correct? Why or why not?</p></li>
 </ol>
-<hr>
-</section>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">👥 Learn Together</h2>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
 <section id="what-does-it-mean-to-evaluate" class="level3">
 <h3 class="anchored" data-anchor-id="what-does-it-mean-to-evaluate">2.2.1 – What Does It Mean to Evaluate?</h3>
-<p>To <strong>evaluate</strong> an <a href="../..\glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a> means to find its <a href="../..\glossary.html#glossary-value" class="glossary-link" data-term="value" data-original-term="value">value</a> by <strong>substituting</strong> (replacing) the variable with a number.</p>
+<p>To <strong>evaluate</strong> an <a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expression" data-original-term="expression">expression</a> means to find its <a href="../../glossary.html#glossary-value" class="glossary-link" data-term="value" data-original-term="value">value</a> by <strong>substituting</strong> (replacing) the variable with a number.</p>
 <p><strong>Example 1:</strong></p>
 <p>Evaluate <span class="math inline">\(4x + 1\)</span> when <span class="math inline">\(x = 3\)</span>.</p>
 <p>First we replace the <span class="math inline">\(x\)</span> with what it is.</p>
 <p><span class="math display">\[
-4(\color{red}3\color{black}) + 1
+4(\textcolor{red}3) + 1
 \]</span></p>
-<p>Now we simplify (or <a href="../..\glossary.html#glossary-calculate" class="glossary-link" data-term="calculate" data-original-term="calculate">calculate</a>) the <a href="../..\glossary.html#glossary-result" class="glossary-link" data-term="result" data-original-term="result">result</a>.</p>
+<p>Now we simplify (or <a href="../../glossary.html#glossary-calculate" class="glossary-link" data-term="calculate" data-original-term="calculate">calculate</a>) the <a href="../../glossary.html#glossary-result" class="glossary-link" data-term="result" data-original-term="result">result</a>.</p>
 <p><span class="math display">\[
 4(3) + 1 = 12 + 1 = 13
 \]</span></p>
@@ -781,7 +769,7 @@ window.Quarto = {
 <p>Evaluate <span class="math inline">\(3 - 2x\)</span> when <span class="math inline">\(x = -4\)</span>.</p>
 <p>First substitute.</p>
 <p><span class="math display">\[
-3 - 2(\color{red}{-4}\color{black})
+3 - 2(\textcolor{red}{-4})
 \]</span></p>
 <p>Then simplify.</p>
 <p><span class="math display">\[
@@ -792,20 +780,20 @@ window.Quarto = {
 </div>
 <div class="you-try" title="Evaluate $5x-2$ when $x=-3$">
 <p><span class="math display">\[
-5(\color{red}-3\color{black}) - 2 = -15 - 2 = -17
+5(\textcolor{red}{-3}) - 2 = -15 - 2 = -17
 \]</span></p>
 </div>
-<p>Now that you know how to evaluate an expression, let’s try some more complicated ones that will require us to remember our <a href="../..\glossary.html#glossary-order-of-operations" class="glossary-link" data-term="order of operations" data-original-term="order of operations">order of operations</a>.</p>
+<p>Now that you know how to evaluate an expression, let’s try some more complicated ones that will require us to remember our <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-term="order of operations" data-original-term="order of operations">order of operations</a>.</p>
 <hr>
 </section>
 <section id="using-pemdas-with-substitution" class="level3">
 <h3 class="anchored" data-anchor-id="using-pemdas-with-substitution">2.2.2 – Using PEMDAS with Substitution</h3>
-<p>Evaluating expressions is just one additional step on top of the order of operations. First we substitute, and then we apply <a href="../..\glossary.html#glossary-pemdas" class="glossary-link" data-term="pemdas" data-original-term="PEMDAS">PEMDAS</a>.</p>
+<p>Evaluating expressions is just one additional step on top of the order of operations. First we substitute, and then we apply <a href="../../glossary.html#glossary-pemdas" class="glossary-link" data-term="pemdas" data-original-term="PEMDAS">PEMDAS</a>.</p>
 <p><strong>Example 1:</strong></p>
 <p>Evaluate <span class="math inline">\(2(x + 3)^2\)</span> when <span class="math inline">\(x = 1\)</span>.</p>
 <p>First we substitute.</p>
 <p><span class="math display">\[
-2((\color{red}{1}\color{black}) + 3)^2
+2((\textcolor{red}{1}) + 3)^2
 \]</span></p>
 <p>Then we simplify.</p>
 <p><span class="math display">\[
@@ -816,7 +804,7 @@ window.Quarto = {
 <p>Evaluate <span class="math inline">\(3(2 - y) + 5(y - 2)\)</span> when <span class="math inline">\(y=-4\)</span>.</p>
 <p>Substitute:</p>
 <p><span class="math display">\[
-3(2 - (\color{red}{-4})\color{black}) + 5((\color{red}{-4}\color{black}) - 2)
+3(2 - (\textcolor{red}{-4})) + 5((\textcolor{red}{-4}) - 2)
 \]</span></p>
 <p>Now simplify:</p>
 <p><span class="math display">\[
@@ -824,7 +812,7 @@ window.Quarto = {
 \]</span></p>
 <div class="you-try" title="Evaluate $20(x - 2) + 2x^2$ when $x=5$.">
 <p>Substitute: <span class="math display">\[
-20((\color{red}{5}\color{black}) - 2) + 2(\color{red}{5}\color{black})^2
+20((\textcolor{red}{5}) - 2) + 2(\textcolor{red}{5})^2
 \]</span></p>
 <p>Simplify:</p>
 <p><span class="math display">\[
@@ -839,9 +827,9 @@ window.Quarto = {
 <p>In the following example, we have the variables <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p>
 <p><strong>Example 1:</strong></p>
 <p>Evaluate the expression <span class="math inline">\(2a - 3b\)</span> when <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b=1\)</span>.</p>
-<p>We do exactly what we did in the previous examples. First we substitute for <span class="math inline">\(\color{blue}{a}\)</span> and <span class="math inline">\(\color{red}{b}\)</span>:</p>
+<p>We do exactly what we did in the previous examples. First we substitute for <span class="math inline">\(\textcolor{blue}{a}\)</span> and <span class="math inline">\(\textcolor{red}{b}\)</span>:</p>
 <p><span class="math display">\[
-2(\color{blue}{2}\color{black}) - 3(\color{red}{1}\color{black})
+2(\textcolor{blue}{2}) - 3(\textcolor{red}{1})
 \]</span></p>
 <p>Then we simplify:</p>
 <p><span class="math display">\[
@@ -849,18 +837,18 @@ window.Quarto = {
 \]</span></p>
 <p><strong>Example 2:</strong></p>
 <p>Evaluate <span class="math inline">\(12x -3y^2\)</span> when <span class="math inline">\(x=7\)</span> and <span class="math inline">\(y=-3\)</span>.</p>
-<p>First substitute for <span class="math inline">\(\color{blue}{x}\)</span> and <span class="math inline">\(\color{red}{y}\)</span>. Be careful with the negatives!</p>
+<p>First substitute for <span class="math inline">\(\textcolor{blue}{x}\)</span> and <span class="math inline">\(\textcolor{red}{y}\)</span>. Be careful with the negatives!</p>
 <p><span class="math display">\[
-12(\color{blue}{7}\color{black}) - 3(\color{red}{-3}\color{black})^2
+12(\textcolor{blue}{7}) - 3(\textcolor{red}{-3})^2
 \]</span></p>
 <p>Now we simplify:</p>
 <p><span class="math display">\[
 12(7) - 3(-3)^2 = 84 - 3(9) = 84 - 27 = 57
 \]</span></p>
 <div class="you-try" title="Evaluate $\frac{1}{2}x^2 - 3y$ when $x = 4$ and $y = 3$.">
-<p>First substitute for <span class="math inline">\(\color{blue}{x}\)</span> and <span class="math inline">\(\color{red}{y}\)</span>.</p>
+<p>First substitute for <span class="math inline">\(\textcolor{blue}{x}\)</span> and <span class="math inline">\(\textcolor{red}{y}\)</span>.</p>
 <p><span class="math display">\[
-\frac{1}{2}(\color{blue}{4}\color{black})^2 - 3(\color{red}{3}\color{black})
+\frac{1}{2}(\textcolor{blue}{4})^2 - 3(\textcolor{red}{3})
 \]</span></p>
 <p>Now simplify:</p>
 <p><span class="math display">\[
@@ -870,8 +858,8 @@ window.Quarto = {
 <hr>
 </section>
 <section id="testing-for-equivalence" class="level3">
-<h3 class="anchored" data-anchor-id="testing-for-equivalence">2.2.4 – Testing For Equivalence</h3>
-<p>Sometimes two expressions look different but always give the same result. We call these <a href="../..\glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>.</p>
+<h3 class="anchored">2.2.4 – Testing For Equivalence</h3>
+<p>Sometimes two expressions look different but always give the same result. We call these <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>.</p>
 <p>To test for equivalence, we can substitute values into each expression and see if they give the same result.</p>
 <p><strong>Example 1:</strong></p>
 <p>Test if the expressions <span class="math inline">\(5x - 25\)</span> and <span class="math inline">\(5(x - 5)\)</span> are equivalent.</p>
@@ -894,7 +882,7 @@ window.Quarto = {
 \]</span></p>
 <p>These two expressions are <strong>not</strong> equivalent because they give different results when substituting the same number for <span class="math inline">\(x\)</span>.</p>
 <div class="gotcha" title="What does this prove?">
-<p>When we substitute numbers to check if two expressions are equivalent, we are really testing a <a href="../..\glossary.html#glossary-hypothesi" class="glossary-link" data-term="hypothesi" data-original-term="hypothesis">hypothesis</a>:</p>
+<p>When we substitute numbers to check if two expressions are equivalent, we are really testing a <a href="../../glossary.html#glossary-hypothesi" class="glossary-link" data-term="hypothesi" data-original-term="hypothesis">hypothesis</a>:</p>
 <ul>
 <li><p>If the two expressions give <strong>different results</strong> for the same substitution, then they are <strong>not equivalent</strong>.</p></li>
 <li><p>If the two expressions give the <strong>same result</strong> for a substitution, that is <strong>evidence</strong> that they are equivalent, but it <strong>does not</strong> prove they are always the same.</p></li>
@@ -933,11 +921,7 @@ window.Quarto = {
 \]</span></p>
 <p>We have evidence that the two expressions are equivalent but we don’t know for certain.</p>
 </div>
-<hr>
-</section>
-</section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">✍️ Practice On Your Own</h2>
+<h2 class="unnumbered anchored" data-anchor-id="testing-for-equivalence">✍️ Practice On Your Own</h2>
 <p><strong>Single variable</strong></p>
 <ol type="1">
 <li><p>Evaluate <span class="math inline">\(3x + 4\)</span> when <span class="math inline">\(x=5\)</span></p></li>
@@ -1037,13 +1021,9 @@ window.Quarto = {
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

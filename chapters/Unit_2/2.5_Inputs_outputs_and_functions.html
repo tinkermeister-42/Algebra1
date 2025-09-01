@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2.5 – Inputs, Outputs &amp; Functions – DHS Algebra 1</title>
+<title>2.5 – Inputs and Outputs of Functions – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c27fdc8e5b00b532d2d5a75ada188648.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html">2.5 – Inputs, Outputs &amp; Functions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html">2.5 – Inputs and Outputs of Functions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -229,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">2.5 – Inputs, Outputs &amp; Functions</span></a>
+ <span class="menu-text">2.5 – Inputs and Outputs of Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -667,23 +696,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link active" data-scroll-target="#learn-together">🧠 Learn Together</a>
-  <ul class="collapse">
-  <li><a href="#inputs-rule-outputs" id="toc-inputs-rule-outputs" class="nav-link" data-scroll-target="#inputs-rule-outputs">2.5.1 – Inputs → Rule → Outputs</a></li>
-  <li><a href="#what-is-a-function" id="toc-what-is-a-function" class="nav-link" data-scroll-target="#what-is-a-function">2.5.2 – What Is a Function?</a></li>
-  <li><a href="#real-life-functions" id="toc-real-life-functions" class="nav-link" data-scroll-target="#real-life-functions">2.5.3 – Real-Life Functions</a></li>
-  <li><a href="#optional-function-notation" id="toc-optional-function-notation" class="nav-link" data-scroll-target="#optional-function-notation">2.5.4 – Optional: Function Notation</a></li>
-  </ul></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">🏋️ Practice On Your Own</a></li>
+  <li><a href="#what-is-function-notation" id="toc-what-is-function-notation" class="nav-link active" data-scroll-target="#what-is-function-notation">2.5.1 – What Is Function Notation?</a></li>
+  <li><a href="#evaluating-functions" id="toc-evaluating-functions" class="nav-link" data-scroll-target="#evaluating-functions">2.5.2 – Evaluating Functions</a></li>
+  <li><a href="#simplifying-function-rules" id="toc-simplifying-function-rules" class="nav-link" data-scroll-target="#simplifying-function-rules">2.5.3 – Simplifying Function Rules</a></li>
+  <li><a href="#function-evaluation-in-real-life" id="toc-function-evaluation-in-real-life" class="nav-link" data-scroll-target="#function-evaluation-in-real-life">2.5.4 – Function Evaluation in Real Life</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html">2.5 – Inputs, Outputs &amp; Functions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.5_Inputs_outputs_and_functions.html">2.5 – Inputs and Outputs of Functions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">2.5 – Inputs, Outputs &amp; Functions</h1>
+<h1 class="title">2.5 – Inputs and Outputs of Functions</h1>
 </div>
 
 
@@ -700,197 +725,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You’ve worked with expressions, and you’ve seen how inputs can go through a rule to produce outputs. This is the heart of what functions are all about.</p>
-<p>In this lesson, you’ll explore how input-output rules work, what makes something a <strong>function</strong>, and how to tell when a relationship is or isn’t a function.</p>
-<hr>
+<p>So far in this unit, you’ve learned how to evaluate expressions by plugging in values for variables. You’ve also simplified expressions using distribution and by combining like terms.</p>
+<p>Now picture a small mystery machine on a desk with a sign that says “Feed me.” On the machine is a big letter “f” and on the table are number cards. You slide a 5 into the top, and out comes 13. You try 7, and out comes 17. When you feed the same number again, you get the same result again. It seems the machine is following a steady rule.</p>
+<p>What could the rule be? How could we name it so others know exactly what it does? Machines like this—where each input leads to one specific output—are called <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-term="functions" data-term="function">functions</a>.</p>
 <div class="objectives">
-<ul>
-<li>I can describe a rule that connects inputs and outputs<br>
-</li>
-<li>I can tell whether a table or situation represents a function<br>
-</li>
-<li>I can use expressions to represent input-output relationships<br>
-</li>
+<ul class="task-list">
+<li><label><input type="checkbox">I can read and use function notation like <span class="math inline">\(f(x) = 2x+3\)</span>.</label></li>
+<li><label><input type="checkbox">I can evaluate a function for a given input by substituting and simplifying.</label></li>
+<li><label><input type="checkbox">I can rewrite a function rule in simplified form using distribution and combining like terms.</label></li>
 </ul>
 </div>
-<hr>
 <div class="vocab">
-<p><a href="../..\glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a>, <a href="../..\glossary.html#glossary-function" class="glossary-link" data-original-term="function" data-term="function">function</a>, <a href="../..\glossary.html#glossary-input" class="glossary-link" data-original-term="input" data-term="input">input</a>, <a href="../..\glossary.html#glossary-output" class="glossary-link" data-original-term="output" data-term="output">output</a>, <a href="../..\glossary.html#glossary-rule" class="glossary-link" data-original-term="rule" data-term="rule">rule</a>, <a href="../..\glossary.html#glossary-table" class="glossary-link" data-original-term="table" data-term="table">table</a>, <a href="../..\glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-evaluate" class="glossary-link" data-original-term="evaluate" data-term="evaluate">evaluate</a>, <a href="../../glossary.html#glossary-expression" class="glossary-link" data-original-term="expression" data-term="expression">expression</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-term="function" data-term="function">function</a>, <a href="../../glossary.html#glossary-input" class="glossary-link" data-original-term="input" data-term="input">input</a>, <a href="../../glossary.html#glossary-output" class="glossary-link" data-original-term="output" data-term="output">output</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-term="simplify" data-term="simplify">simplify</a></p>
 </div>
-<hr>
-<div class="warmup" data-collapse="true">
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
-<li>A vending machine always gives the same snack when you press A1.
-<ul>
-<li>Is that acting like a function? Why?</li>
-</ul></li>
-<li>Now imagine sometimes A1 gives chips, sometimes candy.
-<ul>
-<li>What’s the problem?</li>
-</ul></li>
-<li>What’s something in your life that always depends on something else?</li>
-</ol>
-<blockquote class="blockquote">
-<p>These questions help students connect function ideas to real-life consistency — one input gives one output.</p>
-</blockquote>
-</div>
-<hr>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
-<section id="inputs-rule-outputs" class="level3">
-<h3 class="anchored" data-anchor-id="inputs-rule-outputs">2.5.1 – Inputs → Rule → Outputs</h3>
-<p>You can describe a relationship using a <strong>rule</strong>. The rule takes an <strong>input</strong> and produces an <strong>output</strong>.</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong></p>
-<p>Rule: Multiply by 2 and add 1<br>
-Expression: (2x + 1)</p>
-</blockquote>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Input</th>
-<th>Rule</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>(2 + 1)</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>(2 + 1)</td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>(2 + 1)</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="blockquote">
-<p><em>Suggestion: Use visual of input → rule box → output flow.</em></p>
-</blockquote>
-<hr>
-</section>
-<section id="what-is-a-function" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-a-function">2.5.2 – What Is a Function?</h3>
-<p>A <strong>function</strong> is a rule where <strong>each input has exactly one output</strong>.</p>
-<ul>
-<li>It’s <strong>okay</strong> if different inputs have the same output<br>
-</li>
-<li>It’s <strong>not okay</strong> if the same input gives more than one output</li>
-</ul>
-<blockquote class="blockquote">
-<p><strong>Example:</strong></p>
-</blockquote>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p>❌ Not a function — the input 2 gives two different outputs</p>
-<hr>
-</section>
-<section id="real-life-functions" class="level3">
-<h3 class="anchored" data-anchor-id="real-life-functions">2.5.3 – Real-Life Functions</h3>
-<blockquote class="blockquote">
-<p>✅ Function:<br>
-You pay $3 per taco. Total cost depends on number of tacos.<br>
-Rule: (3x)</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>❌ Not a Function:<br>
-A person is matched to their favorite color… but is listed twice with different colors.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>Suggestion: Let students create their own “function or not?” example and explain their reasoning.</em></p>
-</blockquote>
-<hr>
-<div class="you-try" data-collapse="true" title="🤔 Function or Not?">
-<p>Decide if each scenario describes a function:</p>
-<ol type="1">
-<li>You press a microwave button and it always sets the same time.<br>
-</li>
-<li>A dog is listed with two different owners.<br>
-</li>
-<li>A student has different classes during the day.<br>
-</li>
-<li>A single input gives two different outputs in a table.</li>
-</ol>
-<p>Explain your reasoning.</p>
-</div>
-<hr>
-</section>
-<section id="optional-function-notation" class="level3">
-<h3 class="anchored" data-anchor-id="optional-function-notation">2.5.4 – Optional: Function Notation</h3>
-<p>You may see something like this:</p>
-<p>[ f(x) = 3x + 2 ]</p>
-<p>This just means: “The function named (f) gives this output when you plug in (x).”</p>
-<ul>
-<li>If (x = 4):<br>
-[ f(4) = 3 + 2 = 14 ]</li>
-</ul>
-<blockquote class="blockquote">
-<p><em>You can use this now or introduce more fully in Unit 4.</em></p>
-</blockquote>
-<hr>
-</section>
-</section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">🏋️ Practice On Your Own</h2>
-<ol type="1">
-<li>Fill in the table using the rule: (2x + 1)</li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ol start="2" type="1">
-<li>Write a rule for each situation:
+<li><p>Evaluate these expressions when <span class="math inline">\(x=4\)</span>:</p>
 <ol type="a">
-<li>You earn $10/hour.<br>
-</li>
-<li>A car starts with 12 gallons and uses 0.3 gallons per mile.<br>
-</li>
-<li>A delivery costs $5 plus $2 per item.</li>
+<li><p><span class="math inline">\(2x+3\)</span> </p></li>
+<li><p><span class="math inline">\(5(x-1)\)</span> </p></li>
+<li><p><span class="math inline">\(3x-7+2x\)</span></p></li>
 </ol></li>
-<li>Which of these are functions?</li>
-</ol>
+<li><p>Simplify <span class="math inline">\(3(x+4) - 2(3x - 1)\)</span>.</p></li>
+<li><p>What rule could explain how to get the outputs in the table from the inputs?</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -904,46 +761,297 @@ A person is matched to their favorite color… but is listed twice with differen
 <td>4</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>4</td>
-</tr>
-<tr class="odd">
 <td>3</td>
-<td>4</td>
+<td>10</td>
 </tr>
-</tbody>
-</table>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td>1</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>1</td>
 <td>6</td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td>5</td>
+<td>19</td>
 </tr>
 </tbody>
-</table>
-<ol start="4" type="1">
-<li>Create a function of your own. Show a table with at least 3 inputs and outputs.</li>
+</table></li>
+</ol>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="what-is-function-notation" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-function-notation">2.5.1 – What Is Function Notation?</h3>
+<p>Imagine our “mystery machine” from the introduction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_2/Lesson_5/function_machine.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>The mystery machine</figcaption>
+</figure>
+</div>
+<p>Did you figure out what rule the machine is following? From the examples (5 → 13, 7 → 17), one possible rule is: “double the input and then add 3”.</p>
+<p>In algebra, we name the machine and write its rule using <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-term="function" data-term="function">function</a> notation.</p>
+<p><span class="math display">\[
+f(x) = 2x+3
+\]</span></p>
+<ul>
+<li><span class="math inline">\(f\)</span> is the name of the function (we also use <span class="math inline">\(g\)</span>, <span class="math inline">\(h\)</span>, etc.).</li>
+<li><span class="math inline">\(f(x)\)</span> (read “f of x”) means <span class="math inline">\(x\)</span> is the input variable.</li>
+<li><span class="math inline">\(2x + 3\)</span> is the rule for the output. It tells what to do to <span class="math inline">\(x\)</span>.</li>
+</ul>
+<div class="gotcha" title="$f(x)$ is not $f$ times $x$">
+<p>Read <span class="math inline">\(f(x)\)</span> as “<span class="math inline">\(f\)</span> of <span class="math inline">\(x\)</span>”. It is a single name for the output when the input is <span class="math inline">\(x\)</span>. It does <strong>not</strong> mean to multiply <span class="math inline">\(f\)</span> and <span class="math inline">\(x\)</span>.</p>
+</div>
+<div class="you-try" title="Describe in words what $g(y) = 2y - 2$ does.">
+<p>It takes the input <span class="math inline">\(y\)</span>, doubles it, and subtracts 2.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+g(3) = 2(3)-2 = 4
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="evaluating-functions" class="level3">
+<h3 class="anchored" data-anchor-id="evaluating-functions">2.5.2 – Evaluating Functions</h3>
+<p>Function notation is a handy way to describe expression evaluation.</p>
+<p>Suppose we are asked to evaluate the expression <span class="math inline">\(2x + 3\)</span> when <span class="math inline">\(x = 5\)</span>. We would do this:</p>
+<p><span class="math display">\[
+\begin{align*}
+2(\textcolor{red}{5}) + 3 &amp;= 10 + 3 \\
+&amp;= 13
+\end{align*}
+\]</span></p>
+<p>Functions let us ask the same question with less writing. Instead we can just say “Find <span class="math inline">\(f(5)\)</span>”.</p>
+<p><span class="math display">\[
+\begin{align*}
+f(\textcolor{red}{5}) &amp;= 2(\textcolor{red}{5}) + 3 \\
+&amp;= 10 + 3 \\
+&amp;= 13
+\end{align*}
+\]</span></p>
+<p><strong>Example 1:</strong></p>
+<p>Let <span class="math inline">\(g(x) = 3(x+4)\)</span>. Find <span class="math inline">\(g(2)\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+g(\textcolor{red}{2}) &amp;= 3(\textcolor{red}{2}+4) \\
+&amp;= 3(6) \\
+&amp;= 18
+\end{align*}
+\]</span></p>
+<p><strong>Example 2:</strong></p>
+<p>Let <span class="math inline">\(h(x) = -2(3x-1)+7\)</span>. Find <span class="math inline">\(h(-2)\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+h(\textcolor{red}{-2}) &amp;= -2(3(\textcolor{red}{-2})-1)+7 \\
+&amp;= -2(-6 - 1) + 7 \\
+&amp;= -2(-7)+7 \\
+&amp;= 21
+\end{align*}
+\]</span></p>
+<div class="real-world" title="Programming: Functions everywhere">
+<p>Programmers spend much of their time writing functions. A function has a name, takes inputs (also called parameters), and produces one output.</p>
+</div>
+<div class="you-try" title="Let $f(x) = 9 - 3x$. Find $f(2)$.">
+<p><span class="math display">\[
+f(2) = 9 - 3(2) = 9 - 6 = 3
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="simplifying-function-rules" class="level3">
+<h3 class="anchored" data-anchor-id="simplifying-function-rules">2.5.3 – Simplifying Function Rules</h3>
+<p>Sometimes a rule is easier to use after you simplify it.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+p(x) = 4(x-2) + 3x
+\]</span></p>
+<p>First simplify:</p>
+<p><span class="math display">\[
+\begin{align*}
+p(x) &amp;= 4x-8+3x \\
+&amp;= 7x-8
+\end{align*}
+\]</span></p>
+<p>Now evaluate at <span class="math inline">\(x=5\)</span>:</p>
+<p><span class="math display">\[
+\begin{align*}
+p(5) &amp;= 7(5)-8 \\
+&amp;= 27
+\end{align*}
+\]</span></p>
+<div class="think" title="Why simplify the rule first?">
+<p>A shorter rule makes evaluation quicker and reduces mistakes.</p>
+</div>
+<div class="you-try" title="Simplify $q(x) = 2(x+5) + 3x$. Then find $q(3)$.">
+<p><span class="math inline">\(q(x) = 5x+10\)</span>, so <span class="math inline">\(q(3)=25\)</span>.</p>
+</div>
+<hr>
+</section>
+<section id="function-evaluation-in-real-life" class="level3">
+<h3 class="anchored">2.5.4 – Function Evaluation in Real Life</h3>
+<p>Functions don’t just show up in math class—they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.</p>
+<hr>
+<p><strong>Example 1: Cell Phone Data Plan</strong></p>
+<p>A data plan charges a $50 flat fee per month plus $0.10 per Gb. How much will you pay if you use 80 Gb?</p>
+<p>We can model the total cost with the function</p>
+<p><span class="math display">\[
+C(g) = 50 + 0.1g
+\]</span></p>
+<p>where <span class="math inline">\(C\)</span> is the total cost (dollars) and <span class="math inline">\(g\)</span> is data used (Gb).</p>
+<p>Substitute <span class="math inline">\(g=80\)</span>:</p>
+<p><span class="math display">\[
+\begin{align*}
+C(80) &amp;= 50 + 0.1(80) \\
+&amp;= 50 + 8 \\
+&amp;= 58
+\end{align*}
+\]</span></p>
+<p>The total cost is $58.</p>
+<hr>
+<p><strong>Example 2: Temperature Conversion (°C → °F)</strong></p>
+<p>To convert from Celsius to Fahrenheit, use</p>
+<p><span class="math display">\[
+F(C) = \frac{9}{5}C + 32
+\]</span></p>
+<p>Find 25°C in Fahrenheit.</p>
+<p><span class="math display">\[
+\begin{align*}
+F(25) &amp;= \tfrac{9}{5}\cdot 25 + 32 \\
+&amp;= 45 + 32 \\
+&amp;= 77^\circ\mathrm{F}
+\end{align*}
+\]</span></p>
+<div class="you-try-m" title="How much will you earn?">
+<p>You are paid $12 per hour plus a $15 bonus. You can represent your pay using</p>
+<p><span class="math display">\[
+P(h) = 12h + 15
+\]</span></p>
+<p>where <span class="math inline">\(h\)</span> is the number of hours worked and <span class="math inline">\(P\)</span> is your total pay.</p>
+<p>How much do you make if you work for 40 hours?</p>
+</div>
+<div class="answer" title="Answer">
+<p><span class="math display">\[
+P(40) = 12(40) + 15 = 480 + 15 = 495
+\]</span></p>
+<p>You make $495</p>
+</div>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="function-evaluation-in-real-life">✍️ Practice On Your Own</h2>
+<p><strong>Evaluate each function (direct substitution)</strong></p>
+<ol type="1">
+<li>If <span class="math inline">\(f(x) = 2x+3\)</span>, find <span class="math inline">\(f(7)\)</span>.</li>
+<li>If <span class="math inline">\(g(x) = 5x-4\)</span>, find <span class="math inline">\(g(-1)\)</span>.</li>
+<li>If <span class="math inline">\(h(x) = 4(x+2)\)</span>, find <span class="math inline">\(h(0)\)</span>.</li>
+<li>If <span class="math inline">\(p(x) = 3x^2\)</span>, find <span class="math inline">\(p(2)\)</span>.</li>
+<li>If <span class="math inline">\(k(x) = -x+6\)</span>, find <span class="math inline">\(k(10)\)</span>.</li>
+<li>If <span class="math inline">\(m(x) = x^2-5\)</span>, find <span class="math inline">\(m(-2)\)</span>.</li>
 </ol>
 <hr>
-<div class="answers" data-collapse="true">
-<p><strong>✅ Answer Key</strong></p>
-<ol type="1">
-<li></li>
+<p><strong>Simplify, then evaluate</strong> 7. <span class="math inline">\(f(x) = 2(x+5)\)</span>. Simplify, then find <span class="math inline">\(f(3)\)</span>. 8. <span class="math inline">\(g(x) = -3(x-4)+2x\)</span>. Simplify, then find <span class="math inline">\(g(1)\)</span>. 9. <span class="math inline">\(h(x) = 0.5(6x-8)\)</span>. Simplify, then find <span class="math inline">\(h(-2)\)</span>. 10. <span class="math inline">\(q(x) = 4x+2(x-1)\)</span>. Simplify, then find <span class="math inline">\(q(3)\)</span>. 11. <span class="math inline">\(r(x) = 7(x-2)-3(x+4)\)</span>. Simplify, then find <span class="math inline">\(r(5)\)</span>. 12. <span class="math inline">\(s(x) = (x+3)+2(x-1)\)</span>. Simplify, then find <span class="math inline">\(s(0)\)</span>.</p>
+<hr>
+<p><strong>Function machine tables</strong> 13. Fill in the table if <span class="math inline">\(f(x)=x^2-2\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Rule <span class="math inline">\(x^2-2\)</span></th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="14" type="1">
+<li>Fill in the table if <span class="math inline">\(g(x)=2x+5\)</span>:</li>
 </ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Rule <span class="math inline">\(2x+5\)</span></th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-3</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="15" type="1">
+<li>Fill in the table if <span class="math inline">\(h(x)=3(x-2)\)</span>:</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Rule <span class="math inline">\(3(x-2)\)</span></th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Equivalent function rules</strong> 16. If <span class="math inline">\(f(x) = 2(x+4)\)</span>, write an equivalent simplified form. 17. If <span class="math inline">\(g(x) = 5x+10\)</span>, factor it to show a different but equivalent rule. 18. If <span class="math inline">\(h(x) = 3(x+2)-x\)</span>, simplify to an equivalent form. 19. Which of these are equivalent?</p>
+<ul>
+<li><span class="math inline">\(p(x)=4(x+1)\)</span></li>
+<li><span class="math inline">\(q(x)=4x+1\)</span></li>
+<li><span class="math inline">\(r(x)=4x+4\)</span></li>
+</ul>
+<hr>
+<p><strong>Mixed practice (evaluate after rewriting)</strong> 20. <span class="math inline">\(f(x) = 6(x-3)+2\)</span>. Simplify, then find <span class="math inline">\(f(4)\)</span>. 21. <span class="math inline">\(g(x) = -2(2x+5)+3x\)</span>. Simplify, then find <span class="math inline">\(g(-1)\)</span>. 22. <span class="math inline">\(h(x) = 0.25(8x-12)\)</span>. Simplify, then find <span class="math inline">\(h(6)\)</span>.</p>
+<hr>
+<p><strong>Challenge Problems</strong> 23. A mystery machine gives these outputs:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -953,39 +1061,44 @@ A person is matched to their favorite color… but is listed twice with differen
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>3</td>
+<td>2</td>
+<td>9</td>
 </tr>
 <tr class="even">
-<td>3</td>
-<td>7</td>
+<td>5</td>
+<td>21</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>11</td>
+<td>10</td>
+<td>41</td>
 </tr>
 </tbody>
 </table>
-<ol start="2" type="1">
-<li></li>
+<p>What rule is the machine using? Write it as <span class="math inline">\(f(x)=\_\_\_\)</span>.</p>
+<ol start="24" type="1">
+<li><p>If <span class="math inline">\(f(x)=2x+1\)</span>, find two different inputs that give the output 7.</p></li>
+<li><p>If <span class="math inline">\(g(x)=(x+2)(x-2)\)</span>, find <span class="math inline">\(g(5)\)</span>.</p></li>
 </ol>
-<ol type="a">
-<li>(10x)<br>
-</li>
-<li>(12 - 0.3x)<br>
-</li>
-<li>(5 + 2x)</li>
+<hr>
+<div class="answers">
+<p><strong>Evaluate each function (direct substitution)</strong></p>
+<ol type="1">
+<li><span class="math inline">\(17\)</span></li>
+<li><span class="math inline">\(-9\)</span></li>
+<li><span class="math inline">\(8\)</span></li>
+<li><span class="math inline">\(12\)</span></li>
+<li><span class="math inline">\(-4\)</span></li>
+<li><span class="math inline">\(-1\)</span></li>
 </ol>
-<ol start="3" type="1">
-<li></li>
-</ol>
-<ul>
-<li>First table: ✅ Function<br>
-</li>
-<li>Second table: ❌ Not a function</li>
-</ul>
-<ol start="4" type="1">
-<li><em>(Answers will vary)</em></li>
+<p><strong>Simplify, then evaluate</strong> 7. <span class="math inline">\(f(x)=2x+10\Rightarrow f(3)=16\)</span> 8. <span class="math inline">\(g(x)=-x+12\Rightarrow g(1)=11\)</span> 9. <span class="math inline">\(h(x)=3x-4\Rightarrow h(-2)=-10\)</span> 10. <span class="math inline">\(q(x)=6x-2\Rightarrow q(3)=16\)</span> 11. <span class="math inline">\(r(x)=4x-26\Rightarrow r(5)=-6\)</span> 12. <span class="math inline">\(s(x)=3x+1\Rightarrow s(0)=1\)</span></p>
+<p><strong>Function machine tables</strong> 13. <span class="math inline">\(f(x)=x^2-2\)</span>: <span class="math inline">\(-2\mapsto 2\)</span>, <span class="math inline">\(-1\mapsto -1\)</span>, <span class="math inline">\(0\mapsto -2\)</span>, <span class="math inline">\(3\mapsto 7\)</span> 14. <span class="math inline">\(g(x)=2x+5\)</span>: <span class="math inline">\(-3\mapsto -1\)</span>, <span class="math inline">\(0\mapsto 5\)</span>, <span class="math inline">\(4\mapsto 13\)</span>, <span class="math inline">\(10\mapsto 25\)</span> 15. <span class="math inline">\(h(x)=3(x-2)\)</span>: <span class="math inline">\(1\mapsto -3\)</span>, <span class="math inline">\(2\mapsto 0\)</span>, <span class="math inline">\(5\mapsto 9\)</span>, <span class="math inline">\(-1\mapsto -9\)</span></p>
+<p><strong>Equivalent function rules</strong> 16. <span class="math inline">\(f(x)=2x+8\)</span> 17. <span class="math inline">\(g(x)=5(x+2)\)</span> 18. <span class="math inline">\(h(x)=2x+6\)</span> 19. Equivalent: <span class="math inline">\(p(x)=4(x+1)=4x+4\)</span> and <span class="math inline">\(r(x)=4x+4\)</span>. <span class="math inline">\(q(x)=4x+1\)</span> is <strong>not</strong> equivalent.</p>
+<p><strong>Mixed practice (evaluate after rewriting)</strong> 20. <span class="math inline">\(f(x)=6x-16\Rightarrow f(4)=8\)</span> 21. <span class="math inline">\(g(x)=-x-10\Rightarrow g(-1)=-9\)</span> 22. <span class="math inline">\(h(x)=2x-3\Rightarrow h(6)=9\)</span></p>
+<p><strong>Challenge Problems</strong></p>
+<ol start="23" type="1">
+<li>Rule is <span class="math inline">\(f(x)=4x+1\)</span> (checks: <span class="math inline">\(2\mapsto 9\)</span>, <span class="math inline">\(5\mapsto 21\)</span>, <span class="math inline">\(10\mapsto 41\)</span>).</li>
+<li>Only <span class="math inline">\(x=3\)</span> gives output <span class="math inline">\(7\)</span> (solve <span class="math inline">\(2x+1=7\Rightarrow x=3\)</span>); there is <strong>no second, different input</strong> for this linear rule.</li>
+<li><span class="math inline">\(g(5)=(7)(3)=21\)</span></li>
 </ol>
 </div>
 
@@ -994,13 +1107,9 @@ A person is matched to their favorite color… but is listed twice with differen
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
