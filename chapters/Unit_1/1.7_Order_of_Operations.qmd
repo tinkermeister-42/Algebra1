@@ -12,7 +12,7 @@ In this lesson, you'll learn how to follow those rules correctly—even when neg
 
 :::{.objectives}
 - [ ] I follow the correct order of operations (PEMDAS).
-- [ ] I simplify expressions with fractions and negatives.
+- [ ] I  simplify expressions with fractions and negatives.
 - [ ] I avoid common mistakes when simplifying expressions.
 :::
 

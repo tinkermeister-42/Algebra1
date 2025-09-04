@@ -6,7 +6,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
 :::{.objectives}
 - [ ] I can convert between fractions, decimals, and percents.
-- [ ] I can recognize repeating and terminating decimals and write them as fractions.
+- [ ] I can decide if a fraction’s decimal ends or repeats (and write it).
 - [ ] I can compare and order fractions, decimals, and percents in real-world situations.
 :::
 

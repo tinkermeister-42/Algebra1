@@ -7,7 +7,6 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 :::{.objectives}
 - [ ] I can multiply fractions and mixed numbers.
 - [ ] I can divide fractions by using reciprocals.
-- [ ] I can explain what a reciprocal is and why it’s useful.
 :::
 
 :::{.vocab}
