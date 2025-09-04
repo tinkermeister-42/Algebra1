@@ -17,12 +17,32 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 ---
 
 :::{.vocab}
-{{< glink combine like terms >}}, {{< glink equivalent expressions >}}, {{< glink expression >}}, {{< glink simplify >}}, {{< glink substitute >}}, {{< glink variable >}}
+{{< glink combine like terms >}}, {{< glink equivalent expressions >}}, {{< glink evidence >}}, {{< glink expression >}}, {{< glink simplify >}}, {{< glink substitute >}}, {{< glink variable >}}
 :::
 
 ---
 
 {{< warmup >}}
+
+1. **Do it two ways.**
+   Compute $3(7+4)$
+
+* Way A: add first, then multiply.
+* Way B: multiply first (use the distributive property), then add.
+
+2. **Simplify, then substitute.**
+   Simplify $4x + x + 6$.
+   Then find the value when $x=0$ and when $x=3$.
+   (Also try plugging in $x$ first *before* simplifying. Do you get the same number?)
+
+3. **Fill the table.**
+   For $A(x)=4(x-1)$ and $B(x)=4x-4$, calculate the outputs.
+
+|  $x$ | $A(x)$ | $B(x)$ |
+| ---: | -----: | -----: |
+|    0 |        |        |
+|    2 |        |        |
+| $-1$ |        |        |
 
 
 ---
@@ -31,13 +51,11 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 ### 2.6.1 – What Does “Equivalent” Mean?
 
-Two expressions are **equivalent** if they have the **same value for every input** (for all allowed values of the variable).
-
-They do **not** have to look the same. What matters is the value you get when you plug in the **same** input.
+Two expressions are **equivalent** if they have the **same value for every input** (for all allowed values of the variable). They do **not** have to look the same.
 
 ---
 
-**Example 1 — Two forms, same value**
+**Example:** Same value, different look
 
 Compare
 
@@ -52,11 +70,15 @@ Try two easy inputs (we’ll use $x=0$ and $x=5$):
 |   0 | $3(0+4)=3\cdot4=12$ | $3\cdot0+12=12$ |
 |   5 | $3(5+4)=3\cdot9=27$ | $3\cdot5+12=27$ |
 
-The outputs match both times. This is **evidence** that the expressions mean the same thing.
+The outputs match. This is {{< glink evidence >}} that they are equivalent.
+
+:::{.remember title="Evidence is not proof"}
+Testing a few values gives **evidence**, not a full **proof**. A proof shows it's true for **all** inputs.
+:::
 
 ---
 
-**Example 2 — A pair that is *not* equivalent**
+**Example:** Not equivalent (by substitution)
 
 Compare
 
@@ -72,11 +94,13 @@ C(2)=4(\textcolor{red}{2})+1=8+1=9
 D(2)=4(\textcolor{red}{2}+1)=4\cdot3=12.
 $$
 
-Different outputs → these two are **not** equivalent.
+Since we got different outputs for the same input, the expressions are **not** equivalent.
+
+> When we test a value and the results are different, we call this a {{< glink counterexample >}}.
 
 ---
 
-**Example 3 — Matching once doesn’t settle it**
+**Example:** Matching sometimes isn't enough
 
 Sometimes two expressions match at some inputs but not at others.
 
@@ -88,33 +112,231 @@ $$
 * $x=1:\; P(1)=1,\; Q(1)=1$ (match)
 * $x=2:\; P(2)=2,\; Q(2)=4$ (no match)
 
-So matching at one or two inputs is **only evidence**, not a guarantee.
+So "matching a few times" is **only evidence**, not a guarantee.
 
 ---
 
-:::{.you-try title="Check two inputs and say what you found"}
-Pick **two** easy inputs (0, 1, 2, or $-1$) for each pair. Compute both outputs each time. Decide whether you have **evidence of equivalence** or a **counterexample**.
+:::{.you-try-m title="Test quickly: evidence or counterexample?"}
+Pick **two** easy inputs ($0$, $1$, $2$, or $-1$) for each pair. 
 
 1. $x+x+x$ and $3x$
 2. $5(x-2)$ and $5x-10$
 3. $2x+3$ and $2(x+3)$
 :::
 
-:::{.remember}
-**Sentence frame (to explain your result):**
-“At $x=\_\_$, the first expression equals \_\_\_ and the second equals \_\_\_. So I have evidence they **are / are not** equivalent.”
+:::{.answer title="Answer"}
+Suppose we test $x=1$ and $x=2$:
+
+1.  $\textcolor{red}{1} + \textcolor{red}{1} + \textcolor{red}{1} = 3$ and $3(\textcolor{red}{1}) = 3$ $\implies$ **evidence**<br>
+    $\textcolor{red}{2} + \textcolor{red}{2} + \textcolor{red}{2} = 6$ and $3(\textcolor{red}{2}) = 6$ $\implies$ **evidence**<br>
+    The expressions appear to be equivalent.<br><br>
+
+2.  $5(\textcolor{red}{1} - 2) = -5$ and $5(\textcolor{red}{1}) - 10 = -5$ $\implies$ **evidence**<br>
+    $5(\textcolor{red}{2} - 2) = 0$ and $5(\textcolor{red}{2}) - 10 = 0$ $\implies$ **evidence**<br>
+    The expressions appear to be equivalent.<br><br>
+
+3.  $2(\textcolor{red}{1}) + 3 = 5$ and $2(\textcolor{red}{1} + 3) = 8$ $\implies$ **counterexample**<br>
+    $2(\textcolor{red}{2}) + 3 = 7$ and $2(\textcolor{red}{2} + 3) = 10$ $\implies$ **counterexample**<br>
+    The expressions **are not** equivalent.<br>
+
+:::
+
+
+:::{.think title="Can testing values prove expressions are not equivalent?"}
+Yes. You can never prove that two expressions **are** equivalent by testing values, but one counterexample is enough to prove they **are not** equivalent.
 :::
 
 ---
 
-:::{.think title="Why “for every input” matters"}
+### 2.6.2 Proving Equivalence
 
-* One mismatch is enough to show two expressions are **not** equivalent.
-* Many matches give **evidence**, but not a proof.
+We've talked a lot about **testing** whether expressions are equivalent. But how do we *prove* they are equivalent?
 
-In the next sections, you’ll use algebra you already know (combining like terms, distributing, factoring) to **show** that two expressions are the same for **every** input.
+Two expressions are equivalent if they give the same result for every value of their variables. But we can't test every value. To **prove** equivalence, use algebra to rewrite each expression until they match.
+
+---
+
+**Example:** (Distribute)
+
+Prove $2(3 - y)$ and $6 - 2y$ are equivalent.
+
+$$
+2(3 - y) = 6 - 2y
+$$
+
+They match.
+
+---
+
+**Example:** (Combine Like Terms)
+
+Combine like terms to prove $2x - 3y + 7$ and $2 - 3x + 5 - 3y + 5x$ are equivalent.
+
+$$
+2 - 3x + 5 - 3y + 5x = 2x - 3y + 7
+$$
+
+They match.
+
+---
+
+**Example:** (Simplify both sides)
+
+Prove $2(x - 1) + 3x$ and $2x + 3(x - 2) + 4$ are equivalent.
+
+$$
+\begin{align*}
+2(x - 1) + 3x &= 2x - 2 + 3x \\
+&= 5x - 2
+\end{align*}
+$$
+
+$$
+\begin{align*}
+2x + 3(x - 2) + 4 &= 2x + 3x - 6 + 4 \\
+&= 5x - 2
+\end{align*}
+$$
+
+They match.
+
+---
+
+**Example:** (Factor)
+
+Prove $6z - 2$ and $2(3z - 1)$ are equivalent.
+
+The GCF for $6z$ and $-2$ is $2$.
+
+$$
+6z - 2 = 2(3z - 1)
+$$
+
+The expressions are equivalent.
+
+---
+
+We can also prove expressions are **not** equivalent using algebra.
+
+**Example:** 
+
+Prove $2x + 3$ and $2(x + 3)$ are **not** equivalent.
+
+$$
+2(x + 3) = 2x + 6 \neq 2x + 3
+$$
+
+The do not match. The expressions are **not** equivalent.
+
+---
+
+:::{.you-try title="Prove $3 - 2(x + 1)$ and $x + 1 - 3x$ are equivalent."}
+
+Simplify both expressions.
+
+$$
+\begin{align*}
+3 - 2(x + 1) &= 3 - 2x - 2 \\
+&= 1 - 2x
+\end{align*}
+$$
+
+$$
+x + 1 - 3x = 1 - 2x
+$$
+
+They match, so the expressions are equivalent.
 :::
 
 ---
 
+{{< practice >}}
 
+For each pair, decide **Equivalent** or **Not equivalent**.
+If **Equivalent**, explain how you know.
+If **Not equivalent**, give a counterexample (pick a value that makes different outputs).
+
+1. $x+x+x$ vs $3x$
+
+2. $5(x-2)$ vs $5x-10$
+
+3. $2x+3$ vs $2(x+3)$
+
+4. $4\!\left(x+\tfrac12\right)$ vs $4x+2$
+
+5. $x^2+x$ vs $x(x+2)$
+
+6. $7-(2x+3)$ vs $4-2x$
+
+7. $3(x-y)$ vs $3x-y$
+
+8. $2(x+y)+3(x+y)$ vs $5(x+y)$
+
+9. $6z-2$ vs $2(3z-1)$
+
+10. $5x-2x+4$ vs $5(x-2x)+4$
+
+11. $\tfrac12(10x-6)$ vs $5x-3$
+
+12. $(x+2)^2$ vs $x^2+2^2$
+
+13. $9-3(x+2)$ vs $3-3x$
+
+14. $2(x-3y)+4y$ vs $2x-2y$
+
+15. $4(x+y)-(x+y)$ vs $3x+y$
+
+16. $2x+3x-4+1$ vs $5x-3$
+
+17. $3(x+1)+2$ vs $3x+3+2x$
+
+18. $\dfrac{x}{3}+\dfrac{2x}{3}$ vs $x$
+
+19. $2x^2+x$ vs $(2x)^2+x$
+
+20. $(m-n)+(n-m)$ vs $0$
+
+21. $7(x-1)$ vs $7x-1$
+
+22. $4-(x-5)$ vs $9-x$
+
+23. $2(x+1)(x-1)$ vs $2x^2-1$
+
+**Challenge Problems**
+
+24. Find $k$ so that $3(x+k)$ is equivalent to $3x+12$.
+
+25. Decide if the two expressions are equivalent for all $x$. If **yes**, show algebra to prove it. If **no**, give a counterexample.
+
+    $$
+    E_1(x)=(x+2)(4x-1)\;+\;3(x+2), 
+    \qquad
+    E_2(x)=2(x+2)(2x+1).
+    $$
+
+:::{.answers}
+
+1. Equivalent ($x+x+x=3x$).
+2. Equivalent ($5(x-2)=5x-10$).
+3. **Not** equivalent (e.g., $x=0:\ 3$ vs $6$).
+4. Equivalent ($4x+2$).
+5. **Not** equivalent (e.g., $x=1:\ 2$ vs $3$).
+6. Equivalent ($7-2x-3=4-2x$).
+7. **Not** equivalent (e.g., $x=0,y=1:\ -3$ vs $-1$).
+8. Equivalent ($5(x+y)$).
+9. Equivalent (factor $2$).
+10. **Not** equivalent (e.g., $x=1:\ 7$ vs $-1$).
+11. Equivalent ($5x-3$).
+12. **Not** equivalent ($(x+2)^2=x^2+4x+4$ vs $x^2+4$).
+13. Equivalent ($9-3x-6=3-3x$).
+14. Equivalent ($2x-6y+4y=2x-2y$).
+15. **Not** equivalent (LHS $=3x+3y$; e.g., $x=0,y=1:\ 3$ vs $1$).
+16. Equivalent ($5x-3$).
+17. **Not** equivalent (LHS $=3x+5$, RHS $=5x+3$; e.g., $x=0:\ 5$ vs $3$).
+18. Equivalent ($x$).
+19. **Not** equivalent (e.g., $x=1:\ 3$ vs $5$).
+20. Equivalent ($0$).
+21. **Not** equivalent (e.g., $x=0:\ -7$ vs $-1$).
+22. Equivalent ($4-x+5=9-x$).
+23. **Not** equivalent ($2(x^2-1)=2x^2-2$ vs $2x^2-1$; e.g., $x=2:\ 6$ vs $7$).
+:::

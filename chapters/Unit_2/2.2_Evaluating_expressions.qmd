@@ -11,7 +11,7 @@ In this lesson, we will learn to **substitute** numbers for the variables in an 
 :::
 
 :::{.vocab}
-{{< glink evaluate >}}, {{< glink expression >}}, {{< glink operation >}}, {{< glink result >}}, {{< glink value >}}, {{< glink variable >}}
+{{< glink evaluate >}}, {{< glink evidence >}}, {{< glink expression >}}, {{< glink operation >}}, {{< glink result >}}, {{< glink value >}}, {{< glink variable >}}
 
 :::
 
@@ -215,7 +215,7 @@ $$
 \end{align*}
 $$
 
-They both gave the same result and so we have evidence that the two expressions are equivalent.
+They both gave the same result and so we have {{< glink evidence >}} that the two expressions are equivalent.
 
 **Example 2:**
 

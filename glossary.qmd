@@ -159,6 +159,17 @@ To convert means to **change a number from one form to another** — like from a
 
 ---
 
+### Counterexample {#glossary-counterexample}
+
+A **counterexample** is a single, specific example that shows a statement is **not always true**. Finding just one counterexample is enough to show the statement is false.
+
+> **Example:**
+>
+> Statement: “All even numbers are multiples of 4.”
+> Counterexample: **6** is even but not a multiple of 4.
+
+---
+
 ### Decimal {#glossary-decimal}
 
 A decimal is a number that uses a **dot (.)** to show values **less than 1**. It’s based on powers of 10.
@@ -297,6 +308,17 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 > **Example:**
 > 6 is even because $6 \div 2 = 3$ with no leftover.
 > 14, 28, and 100 are also even.
+
+---
+
+### Evidence {#glossary-evidence}
+
+**Evidence** is information that supports a claim. It can be numbers, calculations, steps, measurements, a diagram, a table, or a specific example that helps show why something is true (or not true).
+
+> **Example:**
+>
+> Claim: “This pattern goes up by 3 each time.”
+> Evidence: The terms are 2, 5, 8, 11. The differences are +3, +3, +3, so the claim is supported.
 
 ---
 
@@ -820,6 +842,19 @@ A product is the **result of multiplying** two or more numbers.
 > **Example:**
 >
 > The product of 4 and 6 is `24`, because `4 × 6 = 24`.
+
+---
+
+### Proof {#glossary-proof}
+
+A **proof** is a clear, step-by-step explanation that shows a statement is **always true**. A good proof uses definitions, properties, and facts we already know, and explains why each step makes sense. Trying many examples is helpful evidence, but it is **not** a proof.
+
+> **Example:**
+>
+> Claim: “The sum of two odd numbers is even.”
+> Write two odd numbers as $2k+1$ and $2m+1$ (where $k$ and $m$ are whole numbers).
+> $(2k+1)+(2m+1)=2k+2m+2=2(k+m+1)$.
+> This is $2 \times$ a whole number, so it is even. Therefore, the claim is proven.
 
 ---
 
