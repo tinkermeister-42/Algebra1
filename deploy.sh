@@ -24,6 +24,7 @@ git worktree add "$TEMP_WORKTREE_DIR" "$DEPLOY_BRANCH"
 echo "🧹 Cleaning old files (preserve .git, .nojekyll, CNAME)..."
 find "$TEMP_WORKTREE_DIR" -mindepth 1 \
   ! -name '.git' \
+  ! -name '.github' \
   ! -name '.nojekyll' \
   ! -name 'CNAME' \
   -exec rm -rf {} +
@@ -32,6 +33,7 @@ echo "📥 Copying new files to $DEPLOY_BRANCH branch..."
 # rsync is safer than cp and handles deletions cleanly
 rsync -av --delete \
   --exclude '.git' \
+  --exclude '.github' \
   --exclude '.nojekyll' \
   --exclude 'CNAME' \
   "$BOOK_DIR"/ "$TEMP_WORKTREE_DIR"/
