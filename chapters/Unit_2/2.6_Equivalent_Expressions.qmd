@@ -40,9 +40,9 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 |  $x$ | $A(x)$ | $B(x)$ |
 | ---: | -----: | -----: |
-|    0 |        |        |
-|    2 |        |        |
-| $-1$ |        |        |
+|    0 |  ___      |  ___      |
+|    2 |  ___      |  ___      |
+| $-1$ |  ___      |  ___      |
 
 
 ---

@@ -9,8 +9,11 @@
 Convert as directed. Write answers in simplest form.
 
 a. $\tfrac{3}{4}$ → decimal: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
+
 b. $0.6$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
+
 c. $45\%$ → fraction: \_\_\_\_\_\_  decimal: \_\_\_\_\_\_
+
 d. $1.25$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 <br><br>
@@ -20,7 +23,9 @@ d. $1.25$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
 a. $\tfrac{11}{25}$ — decimal: \_\_\_\_\_\_\_\_
+
 b. $\tfrac{7}{12}$  — decimal: \_\_\_\_\_\_\_\_
+
 c. $\tfrac{6}{20}$ — decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
@@ -45,7 +50,9 @@ Which store gives the **biggest discount**? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 Simplify your answers.
 
 a. $\tfrac{3}{5}\times 10 =$ \_\_\_\_\_\_
+
 b. $\tfrac{2}{3}\times \tfrac{3}{4} =$ \_\_\_\_\_\_
+
 c. $1\tfrac{1}{2}\times 2\tfrac{2}{3} =$ \_\_\_\_\_\_
 
 <br><br>
@@ -55,6 +62,7 @@ c. $1\tfrac{1}{2}\times 2\tfrac{2}{3} =$ \_\_\_\_\_\_
 Find the following quotients.
 
 a. $\tfrac{3}{4}\div \tfrac{2}{5} =$ \_\_\_\_\_\_
+
 b. $5\div \tfrac{2}{3} =$ \_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
@@ -64,7 +72,9 @@ b. $5\div \tfrac{2}{3} =$ \_\_\_\_\_\_
 **6. I can find a part, a whole, or a percent**
 
 a. What is $30\%$ of $80$? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 b. $18$ is $20\%$ of what number? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 c. What percent is $45$ out of $60$? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 <br><br>
@@ -92,8 +102,11 @@ Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ cup(s)
 Simplify each expression.
 
 a. $6 - \tfrac{3}{2}\cdot 4 =$ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 b. $-3^2 + 5 =$ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 c. $\tfrac{1}{2} + \tfrac{3}{4}\cdot 2 - 1 =$ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 d. $\tfrac{8}{3}\div\left(\tfrac{2}{3}\right) - 1 =$ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 <br><br>
@@ -101,7 +114,9 @@ d. $\tfrac{8}{3}\div\left(\tfrac{2}{3}\right) - 1 =$ \_\_\_\_\_\_\_\_\_\_\_\_\_\
 **10. I avoid common mistakes when simplifying expressions**
 
 A student says $4\div \tfrac{1}{2}=2$ “because you divide by $2$.”
+
 a. Explain what is wrong.
+
 b. Find the correct value of $4\div \tfrac{1}{2}$.
 
 <br><br>

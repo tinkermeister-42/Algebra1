@@ -1,6 +1,6 @@
 # Introduction {.unnumbered}
 
-This unit is where Algebra really begins to feel like solving puzzles. You'll learn how to isolate variables, understand balance, and make sense of problems that come up in everyday life.
+Welcome to Unit 3! Here we turn **expressions** into **equations** and solve them like puzzles. You’ll use **inverse operations** and the idea of **balance** to isolate a variable, **check** your work, and write equations from short stories, tables, and simple rules. No graphing yet—that comes in Unit 4.
 
 ---
 
@@ -8,36 +8,35 @@ This unit is where Algebra really begins to feel like solving puzzles. You'll le
 
 By the end of this unit, you’ll be able to:
 
-- Solve one- and two-step equations using inverse operations
-- Distribute and combine like terms in multi-step equations
-- Move variables to one side of the equation
-- Identify when equations have no or infinite solutions
-- Write and solve equations from word problems and contexts
+* **Solve one- and two-step equations** using inverse operations and **check** solutions by substitution.
+* **Solve multi-step equations** by distributing and **combining like terms**, including equations with variables on **both sides**.
+* Handle **fractions and decimals** by **clearing denominators** or **multiplying by powers of 10** before solving.
+* **Recognize special cases**—no solution or infinitely many solutions (all numbers work)—and explain why.
+* **Write equations from contexts** (totals, rates, differences, start amounts) and solve.
+* Use small **tables** and simple **rules** to set up equations, find missing values, or decide when two rules give the **same result** (no graphing yet).
 
 ---
 
-## 📦 Topics in This Unit
+## Topics in This Unit
 
-###  3. Solving One- and Two-Step Equations {.unnumbered}
-Use inverse operations to find solutions.
+[**Solving One- and Two-Step Equations**](3.1_Solving_One_and_Two_Step_Equations.html)
+Undo add/subtract and multiply/divide with inverse operations. **Always check**.
 
-###  3. Multi-Step Equations with Distribution {.unnumbered}
-Distribute, simplify, and solve more complex equations.
+[**Multi-Step Equations with Distribution**](3.2_Multi_Step_Equations_with_Distribution.html)
+Distribute, combine like terms, and keep both sides balanced.
 
-###  3. Equations with Variables on Both Sides {.unnumbered}
-Move all variable terms to one side, then solve.
+[**Variables on Both Sides**](3.3_Variables_on_Both_Sides.html)
+Collect variable terms on one side and constants on the other, then solve and check.
 
-###  3. No Solution vs. Infinite Solutions {.unnumbered}
-Learn to recognize when an equation has no solution or all numbers work.
+[**Equations with Fractions & Decimals (mini-lesson)**](3.4_Equations_with_Fractions_and_Decimals.html)
+Clear denominators or scale by powers of 10 to make solving cleaner.
 
-###  3. Writing Equations from Contexts {.unnumbered}
-Translate real-world problems into equations.
+[**Special Cases: No Solution vs. Infinite Solutions**](3.5_Special_Cases_No_Solution_vs_Infinite_Solutions.html)
+See when both sides simplify to **always true** or **never true**, and explain.
 
-###  3. Solving with Tables, Graphs & Rules {.unnumbered}
-Connect functions to equations and problem-solving.
+[**Writing Equations from Contexts**](3.6_Writing_Equations_from_Contexts.html)
+Translate short stories, units, and rate language into equations and solve.
 
----
+[**Solving with Tables & Rules**](3.7_Solving_with_Tables_and_Rules.html)
+Use rules and input–output tables to find unknowns or when two rules match.
 
-## 🧭 How to Use This Unit
-
-You’ll find plenty of examples, visuals, and practice to help you develop confidence in solving equations from both numbers and words!

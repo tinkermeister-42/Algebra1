@@ -42,7 +42,3 @@ Solve real-world problems using these different number forms.
 
 [**Using the Order of Operations**](1.7_Order_of_Operations.html)  
 Follow the rules (PEMDAS) to simplify expressions with integers and fractions.
-
----
-
-Curious how much of this you know already? Try the [Unit 1 pre-test](/chapters/Supplemental/worksheets/Unit_1/pretest.pdf)!

@@ -61,12 +61,12 @@ book:
     - part: "Unit 2: Algebraic Expressions"
       chapters:
         - file: chapters/Unit_2/index.qmd
-        - file: chapters/Unit_2/2.1_Expressions_and_their_parts.qmd
-        - file: chapters/Unit_2/2.2_Evaluating_expressions.qmd
-        - file: chapters/Unit_2/2.3_Combining_like_terms.qmd
-        - file: chapters/Unit_2/2.4_The_distributive_property.qmd
-        - file: chapters/Unit_2/2.5_Inputs_outputs_and_functions.qmd
-        - file: chapters/Unit_2/2.6_Equivalent_expressions.qmd
+        - file: chapters/Unit_2/2.1_Expressions_and_Their_Parts.qmd
+        - file: chapters/Unit_2/2.2_Evaluating_Expressions.qmd
+        - file: chapters/Unit_2/2.3_Combining_Like_Terms.qmd
+        - file: chapters/Unit_2/2.4_The_Distributive_Property.qmd
+        - file: chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd
+        - file: chapters/Unit_2/2.6_Equivalent_Expressions.qmd
 
     - part: "Unit 3: Solving Equations"
       chapters:

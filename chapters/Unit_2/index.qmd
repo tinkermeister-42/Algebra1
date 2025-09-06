@@ -1,10 +1,6 @@
 # Introduction {.unnumbered}
 
-Welcome to Unit 2! This unit is all about using **variables** and **expressions** to represent patterns, describe relationships, and build the foundation for equations.
-
-You’ll learn how to write algebraic expressions, simplify them, evaluate them using substitution, and understand when two expressions are really saying the same thing — even if they look different.
-
-This unit also introduces the key idea behind **functions**: that one input leads to one output. No graphing yet — just solid building blocks to prepare for what's ahead.
+Welcome to Unit 2! Here we use **variables** and **expressions** to model real situations and simple rules. You’ll learn to read expressions, write them from words, **simplify**, and **evaluate** by plugging in values. You’ll also see when two different-looking expressions actually mean the same thing.
 
 ---
 
@@ -12,34 +8,33 @@ This unit also introduces the key idea behind **functions**: that one input lead
 
 By the end of this unit, you’ll be able to:
 
-- Identify parts of an expression and describe their meaning  
-- Write and evaluate expressions using variables and the order of operations  
-- Combine like terms and use the distributive property to simplify expressions  
-- Understand how inputs and rules connect to outputs — and what makes something a function  
-- Tell whether two expressions are equivalent using simplification and substitution
+* Name the parts of an expression (variables, terms, coefficients, constants) and tell what they mean in context.
+* Translate between **words and expressions** and choose operations in the correct **order** (use parentheses when needed).
+* **Evaluate** expressions by substitution using the order of operations.
+* **Combine like terms** to simplify, and explain why this works (same variable and same power).
+* Use the **distributive property** to remove parentheses and simplify; know situations where distribution **does not** apply (e.g., to exponents).
+* Describe rules with words, tables, and expressions, and decide if a relation is a **function** (exactly one output for each input); use function notation as simple shorthand.
+* Tell whether two expressions are **equivalent** by simplifying or by **substitution**, and understand the difference between **testing** a few values and **proving** they match for all values.
 
 ---
 
 ## Topics in This Unit
 
-[**Expressions & Their Parts**](2.1_Expressions_and_their_parts.html)  
-Learn what algebraic expressions are made of — variables, terms, constants, and coefficients — and how to describe real-world situations with math.
+[**Expressions & Their Parts**](2.1_Expressions_and_Their_Parts.html)
+What expressions are made of—and how to **translate** short phrases into algebraic expressions (and back).
 
-[**Evaluating Expressions**](2.2_Evaluating_expressions.html)  
-Plug in values for variables and simplify expressions using the correct order of operations (PEMDAS). Learn why parentheses matter!
+[**Evaluating Expressions**](2.2_Evaluating_Expressions.html)
+Plug in values and simplify with the correct order of operations. See why parentheses matter.
 
-[**Combining Like Terms**](2.3_Combining_like_terms.html)  
-Identify and combine terms that have the same variable part. Simplify expressions and see why combining like terms works.
+[**Combining Like Terms**](2.3_Combining_Like_Terms.html)
+Put “like with like” (same variable and power) to clean up expressions.
 
-[**The Distributive Property**](2.4_The_distributive_property.html)  
-Use multiplication to “distribute” across parentheses. Learn how this helps simplify expressions and spot equivalent forms.
+[**The Distributive Property**](2.4_The_Distributive_Property.html)
+Distribute to remove parentheses and simplify. Learn common slips to avoid (like trying to distribute over exponents).
 
-[**Inputs, Outputs & Functions**](2.5_Inputs_outputs_and_functions.html)  
-Explore how rules turn inputs into outputs. Learn what makes something a function and how to represent it with tables and expressions.
+[**Inputs, Outputs & Functions**](2.5_Inputs_Outputs_and_Functions.html)
+Use rules, tables, and expressions to map inputs to outputs. Decide if a relation is a function and practice simple function notation.
 
-[**Equivalent Expressions**](2.6_Equivalent_expressions.html)  
-Discover how different-looking expressions can mean the same thing. Use simplification and substitution to test for equivalence.
+[**Equivalent Expressions**](2.6_Equivalent_Expressions.html)
+Different forms, same value. Use simplification and substitution to test for equivalence—and see what counts as a proof.
 
----
-
-Curious how much of this you already know? Try the [Unit 2 pre-test](/chapters/Supplemental/worksheets/Unit_2/pretest.pdf)!
