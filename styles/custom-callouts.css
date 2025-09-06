@@ -240,3 +240,59 @@
 .callout-title .callout-label {
   white-space: nowrap;
 }
+
+/* ============================
+   Global table sizing & margins
+   ============================ */
+:root {
+  --table-side-gap: 0.9rem;   /* side margin around tables */
+  --table-top-gap: 0.6rem;    /* top/bottom margin */
+}
+
+/* Target Pandoc/Quarto tables broadly */
+:where(main, .content, .page-content, article) :is(table, .table) {
+  /* center and give space */
+  margin: var(--table-top-gap) auto;
+  /* prevent full-width stretch */
+  width: auto !important;            /* override Bootstrap .table { width:100% } */
+  max-width: calc(100% - (2 * var(--table-side-gap)));
+  /* let the table shrink to its content and be centerable with margin:auto */
+  display: table;
+}
+
+/* If Quarto wraps your table in a .quarto-table div, add a tiny cushion */
+:where(main, .content, .page-content, article) .quarto-table {
+  padding: 0 0.25rem;
+}
+
+/* Keep cell padding tidy when the table gets narrower */
+:where(main, .content, .page-content, article) table :is(th, td) {
+  padding: 0.35rem 0.6rem;
+}
+
+/* ---------- Opt-outs / utilities ---------- */
+/* Force a specific table to span full width */
+:where(main, .content, .page-content, article) :is(table.wide, .quarto-table.wide table) {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Enable horizontal scroll when content is too wide to shrink nicely */
+:where(main, .content, .page-content, article) :is(.quarto-table.scroll, table.scroll) {
+  display: block;         /* enables overflow on the wrapper */
+  overflow-x: auto;
+  width: 100% !important; /* full width, but scrollable */
+  max-width: 100%;
+  margin: var(--table-top-gap) 0;
+}
+
+/* Optional: friendlier wrapping in narrow tables (uncomment if needed) */
+/*
+:where(main, .content, .page-content, article) table {
+  table-layout: auto;         // default, but explicit here
+  word-break: break-word;     // prevent overflow on long words/URLs
+  hyphens: auto;
+}
+*/
