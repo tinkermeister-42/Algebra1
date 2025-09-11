@@ -57,6 +57,7 @@ book:
         - file: chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.qmd
         - file: chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
         - file: chapters/Unit_1/1.7_Order_of_Operations.qmd
+        - file: chapters/Unit_1/Review.qmd
 
     - part: "Unit 2: Algebraic Expressions"
       chapters:

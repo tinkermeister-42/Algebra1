@@ -46,13 +46,13 @@ $$
 Let’s try solving it from **left to right**:
 
 $$
-\color{red}10 + 3 \color{black}\times 5 = \color{red}13 \color{black}\times 5 = 65
+\textcolor{red}{10 + 3}\times 5 = \textcolor{red}{13}\times 5 = 65
 $$
 
 Now let’s try doing the **multiplication first**:
 
 $$
-10 + \color{red}3 \times 5 \color{black} = 10 + \color{red}15 \color{black} = 25
+10 + \textcolor{red}{3 \times 5} = 10 + \textcolor{red}{15} = 25
 $$
 
 So which one is correct — **65 or 25**?
@@ -108,7 +108,7 @@ Let’s look at some {{< glink expressions >}} that follow the order of operatio
 First, do the multiplication:
 
 $$
-5 + \color{red}3 \times 2 \color{black} = 5 + \color{red}6
+5 + \textcolor{red}{3 \times 2} = 5 + \textcolor{red}{6}
 $$
 
 Then do the addition:
@@ -124,7 +124,7 @@ $$
 First, simplify the parentheses:
 
 $$
-\color{red}(5 + 3) \color{black} \times 2 = \color{red}8 \color{black} \times 2
+(\textcolor{red}{5 + 3}) \times 2 = \textcolor{red}{8} \times 2
 $$
 
 Then multiply:
@@ -140,7 +140,7 @@ $$
 First, divide:
 
 $$
-8 - \color{red}12 \div 3 \color{black} = 8 - \color{red}4
+8 - \textcolor{red}{12 \div 3} = 8 - \textcolor{red}{4}
 $$
 
 Then subtract:
@@ -155,11 +155,11 @@ $$
 
 Start with parentheses:
 $$
-5\color{red}(8 - 1)\color{black} + 2 \times 3 = 5 \times \color{red}7 \color{black} + 2 \times 3
+5(\textcolor{red}{8 - 1}) + 2 \times 3 = 5 \times \textcolor{red}{7} + 2 \times 3
 $$
 Next, do the multiplication:
 $$
-\color{red}5 \times 7 \color{black} + \color{red}2 \times 3 \color{black} = \color{red}35 \color{black} + \color{red}6
+\textcolor{red}{5 \times 7} + \textcolor{red}{2 \times 3} = \textcolor{red}{35} + \textcolor{red}{6}
 $$
 Finally, add:
 $$
@@ -179,7 +179,7 @@ Once you're comfortable with the basics, we can add in **negative numbers** and 
 First, simplify the parentheses:
 
 $$
--3 \times \color{red}(4 - 7)\color{black} = -3 \times \color{red}-3
+-3 \times (\textcolor{red}{4 - 7}) = -3 \times \textcolor{red}{-3}
 $$
 
 Then multiply. Remember: a **negative times a negative is positive**.
@@ -214,7 +214,7 @@ That’s why $-3 \times -1 = 3$ — the opposite of negative 3 is positive 3.
 First, simplify the parentheses:
 
 $$
-\frac{1}{2} \times \color{red}(6 + 2)\color{black} = \frac{1}{2} \times \color{red}8
+\frac{1}{2} \times (\textcolor{red}{6 + 2}) = \frac{1}{2} \times \textcolor{red}{8}
 $$
 
 Then multiply:
@@ -234,7 +234,7 @@ Even though there are no parentheses, the **fraction bar acts like grouping symb
 So:
 
 $$
-\frac{\color{red}{3 + 5}}{2} = \frac{\color{red}{8}}{2} = 4
+\frac{\textcolor{red}{3 + 5}}{2} = \frac{\textcolor{red}{8}}{2} = 4
 $$
 
 ---
@@ -243,7 +243,7 @@ $$
 
 First do the parentheses:
 $$
--3 \times \color{red}(4 - 7) \color{black} = -3 \times \color{red}{-3}
+-3 \times (\textcolor{red}{4 - 7}) = -3 \times \textcolor{red}{-3}
 $$
 Then multiply:
 $$
@@ -263,25 +263,25 @@ Let’s try putting all the steps together. When expressions involve grouping, e
 
 **Step 1:** Parentheses  
 $$
-4 + \frac{1}{2} \times \color{red}{(6 - 2)}^{\color{black}2} \color{black} = 4 + \frac{1}{2} \times \color{red}{4}\color{black}^{2}
+4 + \frac{1}{2} \times (\textcolor{red}{6 - 2})^2 = 4 + \frac{1}{2} \times \textcolor{red}{4}^2
 $$
 
 
 **Step 2:** Exponents  
 $$
-4 + \frac{1}{2} \times \color{red}{4^2}\color{black} = 4 + \frac{1}{2} \times \color{red}{16}
+4 + \frac{1}{2} \times \textcolor{red}{4^2} = 4 + \frac{1}{2} \times \textcolor{red}{16}
 $$
 
 
 **Step 3:** Multiplication
 $$
-4 + \color{red}{\frac{1}{2} \times 16}\color{black} = 4 + \color{red}{8}
+4 + \textcolor{red}{\frac{1}{2} \times 16} = 4 + \textcolor{red}{8}
 $$
 
 
 **Step 4:** Addition
 $$
-\color{red}{4 + 8}\color{black} = 12
+\textcolor{red}{4 + 8} = 12
 $$
 
 
@@ -323,21 +323,21 @@ $$
 
 **Step 1: Inner parentheses**  
 $$
-\left[ 3 + \color{red}{(2^2 + 1)} \color{black}\right] \times 2 = \left[ 3 + \color{red}{5} \right] \times 2
+\left[ 3 + \textcolor{red}{(2^2 + 1)} \right] \times 2 = \left[ 3 + \textcolor{red}{5} \right] \times 2
 $$
 
 ---
 
 **Step 2: Brackets**  
 $$
-\color{red}{\left[ 3 + 5 \right]} \color{black} \times 2 = \color{red}{8} \color{black} \times 2
+\left[ \textcolor{red}{3 + 5} \right] \times 2 = \textcolor{red}{8} \times 2
 $$
 
 ---
 
 **Step 3: Multiply**  
 $$
-\color{red}{8 \times 2} \color{black} = 16
+\textcolor{red}{8 \times 2} = 16
 $$
 
 ---
@@ -361,15 +361,15 @@ Always simplify **grouped expressions** before applying exponents or multiplying
 
 **Step 1: Inner parentheses**  
 $$
-\left[ 5 + \color{red}{(3^2 - 1)} \right] \times 2 = \left[ 5 + \color{red}{8} \right] \times 2
+\left[ 5 + (\textcolor{red}{3^2 - 1}) \right] \times 2 = \left[ 5 + \textcolor{red}{8} \right] \times 2
 $$
 **Step 2: Brackets**  
 $$
-\color{red}{\left[ 5 + 8 \right]} \color{black} \times 2 = \color{red}{13} \color{black} \times 2
+\left[ \textcolor{red}{5 + 8} \right] \times 2 = \textcolor{red}{13} \times 2
 $$
 **Step 3: Multiply**  
 $$
-\color{red}{13 \times 2} \color{black} = 26
+\textcolor{red}{13 \times 2} = 26
 $$
 ✅ Final Answer: **26**
 :::
@@ -398,10 +398,13 @@ Same ingredients, different result. Order matters!
 
 1. Simplify:
 
-   - a. $4 + 6 \times 2$
-   - b. $(4 + 6) \times 2$
-   - c. $12 \div 4 \times 3$
-   - d. $12 \div (4 \times 3)$
+   a. $4 + 6 \times 2$
+
+   b. $(4 + 6) \times 2$
+
+   c. $12 \div 4 \times 3$
+
+   d. $12 \div (4 \times 3)$
 
 ---
 
@@ -409,10 +412,14 @@ Same ingredients, different result. Order matters!
 
 2. Simplify:
 
-   - a. $-2 \times (3 - 5)$  
-   - b. $\frac{1}{2} \times (8 + 4)$  
-   - c. $(6 - 2)^2 \div 2$  
-   - d. $(3 + 5) \div 2$
+   a. $-2 \times (3 - 5)$  
+
+   b. $\frac{1}{2} \times (8 + 4)$  
+
+   c. $(6 - 2)^2 \div 2$  
+
+   d. $(3 + 5) \div 2$
+
 
 ---
 
@@ -420,40 +427,46 @@ Same ingredients, different result. Order matters!
 
 3. Simplify:
 
-   - a. $5 + 2 \times (6 - 1)$  
-   - b. $(12 - 4)^2 \div 4$  
-   - c. $10 - 3 \times (2 + 1)$  
-   - d. $\frac{3}{4} \times (12 - 4)$
+   a. $5 + 2 \times (6 - 1)$  
+
+   b. $(12 - 4)^2 \div 4$  
+
+   c. $10 - 3 \times (2 + 1)$  
+
+   d. $\frac{3}{4} \times (12 - 4)$
+
 
 ---
 
-**Challenge Problems**
+**
 
 4. Two students simplified this expression differently:
 
    $8 - 3 + 2$
 
-   - Student A: $(8 - 3) + 2 = 7$
-   - Student B: $8 - (3 + 2) = 3$
+   **Student A**: $(8 - 3) + 2 = 7$
 
-   Who is correct? What mistake did the other student make?
+   **Student B**: $8 - (3 + 2) = 3$
+
+   - Who is correct? 
+   - What mistake did the other student make?
 
 
 5. Simplify the expression:
 
-   $6 + \frac{4 \times (2 + 1)}{3^2}$
+   $6 + \frac{4 \times (2 + 1) + 6}{3^2}$
 
    Be careful with grouping and exponents.
 
 
+**Challenge Problems**
 
-6. A student simplified this:
+6. A student simplified this expression and got **33**:
 
    $2 + 3^2 \times (4 - 1)$  
-   and got **27**.  
    
-   - What mistake did they make?
    - What is the correct answer?
+   - What mistake did they make?
 
 
 
@@ -501,5 +514,9 @@ Same ingredients, different result. Order matters!
    b. **16**
    c. **1**
    d. **6**
+
+4. Student A is correct. Student B did not perform addition and subtraction left to right.
+
+5. **8**
 
 :::

@@ -68,11 +68,7 @@ No Challenge Questions
 
 :::{.answers}
 
-4. **7**
-
-5. **$\frac{22}{3}$** or **$7\frac{1}{3}$**
-
-6. **29**
+6. The correct answer is **29**. The student added $2$ to $3^2$ before multiplying.
 
 7. *Answers will vary*
 
