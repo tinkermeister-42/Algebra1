@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3.5 Writing Equations from Real-Life Contexts – DHS Algebra 1</title>
+<title>Unit 1 Review (Lessons 1.1–1.7) – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&amp;_Rules_(Function_tie-in).html" rel="next">
-<link href="../../chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html" rel="prev">
+<link href="../../chapters/Unit_2/index.html" rel="next">
+<link href="../../chapters/Unit_1/1.7_Order_of_Operations.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html">3.5 Writing Equations from Real-Life Contexts</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/Review.html">Unit 1 Review (Lessons 1.1–1.7)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,13 +159,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 1: Foundations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_1/index.html" class="sidebar-item-text sidebar-link">
@@ -187,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/Review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_1/Review.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Unit 1 Review (Lessons 1.1–1.7)</span></a>
   </div>
 </li>
@@ -248,13 +277,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
@@ -287,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.5 Writing Equations from Real-Life Contexts</span></a>
   </div>
 </li>
@@ -673,18 +702,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">🧠 Learn Together</a></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✏️ Practice On Your Own</a></li>
+  <li><a href="#integers-number-lines-1.1" id="toc-integers-number-lines-1.1" class="nav-link active" data-scroll-target="#integers-number-lines-1.1">Integers &amp; Number Lines (1.1)</a></li>
+  <li><a href="#factors-multiples-prime-factorization-1.2" id="toc-factors-multiples-prime-factorization-1.2" class="nav-link" data-scroll-target="#factors-multiples-prime-factorization-1.2">Factors, Multiples &amp; Prime Factorization (1.2)</a></li>
+  <li><a href="#gcf-simplifying-fractions-1.3" id="toc-gcf-simplifying-fractions-1.3" class="nav-link" data-scroll-target="#gcf-simplifying-fractions-1.3">GCF &amp; Simplifying Fractions (1.3)</a></li>
+  <li><a href="#fractions-decimals-percents-1.4" id="toc-fractions-decimals-percents-1.4" class="nav-link" data-scroll-target="#fractions-decimals-percents-1.4">Fractions, Decimals &amp; Percents (1.4)</a></li>
+  <li><a href="#multiply-divide-fractions-1.5" id="toc-multiply-divide-fractions-1.5" class="nav-link" data-scroll-target="#multiply-divide-fractions-1.5">Multiply &amp; Divide Fractions (1.5)</a></li>
+  <li><a href="#compare-order-across-forms-1.41.5" id="toc-compare-order-across-forms-1.41.5" class="nav-link" data-scroll-target="#compare-order-across-forms-1.41.5">Compare &amp; Order (across forms) (1.4–1.5)</a></li>
+  <li><a href="#order-of-operations-1.7" id="toc-order-of-operations-1.7" class="nav-link" data-scroll-target="#order-of-operations-1.7">Order of Operations (1.7)</a></li>
+  <li><a href="#mixed-practice" id="toc-mixed-practice" class="nav-link" data-scroll-target="#mixed-practice">Mixed Practice</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html">3.5 Writing Equations from Real-Life Contexts</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/Review.html">Unit 1 Review (Lessons 1.1–1.7)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">3.5 Writing Equations from Real-Life Contexts</h1>
+<h1 class="title">Unit 1 Review (Lessons 1.1–1.7)</h1>
 </div>
 
 
@@ -701,48 +735,344 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Students will translate real-world scenarios into algebraic equations, helping them understand the connection between math and everyday problem solving.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🎯 Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul class="task-list">
-<li><label><input type="checkbox">Identify quantities and relationships in word problems</label></li>
-<li><label><input type="checkbox">Write algebraic equations to represent situations</label></li>
-<li><label><input type="checkbox">Solve and interpret solutions in context</label></li>
+<p>This review pulls together the key skills from Unit 1. It’s heavy on practice so you can build speed and confidence.</p>
+<p><strong>What you’ll review</strong></p>
+<ul>
+<li>Integers &amp; number lines (opposites, absolute value, distance, ordering)</li>
+<li>Factors, multiples, prime factorization; GCF</li>
+<li>Simplifying fractions</li>
+<li>Converting among fractions, decimals, and percents; deciding if a fraction’s decimal ends or repeats</li>
+<li>Multiplying &amp; dividing fractions (including mixed numbers)</li>
+<li>Comparing and ordering numbers in different forms</li>
+<li>Order of operations</li>
 </ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Vocabulary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>context, representation, translate, real-world</p>
-</div>
-</div>
-<section id="warm-up" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
-<p>Coming soon.</p>
+<hr>
+<section id="integers-number-lines-1.1" class="level3">
+<h3 class="anchored" data-anchor-id="integers-number-lines-1.1">Integers &amp; Number Lines (1.1)</h3>
+<ol type="1">
+<li><p>Write the opposite of each number.</p>
+<p><span class="math inline">\(7, -12, 0, 15, -3\)</span></p></li>
+<li><p>Find the absolute value of each number.</p>
+<p><span class="math inline">\(-9, 6, 0, -14, 3\)</span></p></li>
+<li><p>Order from least to greatest on a number line.</p>
+<p><span class="math inline">\(-5, 2, -1, 0, 6, -3\)</span></p></li>
+<li><p>Evaluate each expression.</p>
+<ol type="a">
+<li><p><span class="math inline">\(-7 + 12\)</span> </p></li>
+<li><p><span class="math inline">\(-15 - 9\)</span> </p></li>
+<li><p><span class="math inline">\(6 - (-4)\)</span> </p></li>
+<li><p><span class="math inline">\(-3 + (-8)\)</span> </p></li>
+<li><p><span class="math inline">\(|-9| - 4\)</span></p></li>
+</ol></li>
+<li><p>Find the distance between the points.</p>
+<ol type="a">
+<li><p><span class="math inline">\(-4\)</span> and <span class="math inline">\(3\)</span> </p></li>
+<li><p><span class="math inline">\(5\)</span> and <span class="math inline">\(-2\)</span> </p></li>
+<li><p><span class="math inline">\(0\)</span> and <span class="math inline">\(-7\)</span> </p></li>
+<li><p><span class="math inline">\(6\)</span> and <span class="math inline">\(6\)</span></p></li>
+</ol></li>
+</ol>
+<hr>
 </section>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
-<p>Coming soon.</p>
+<section id="factors-multiples-prime-factorization-1.2" class="level3">
+<h3 class="anchored" data-anchor-id="factors-multiples-prime-factorization-1.2">Factors, Multiples &amp; Prime Factorization (1.2)</h3>
+<ol start="6" type="1">
+<li><p>List all factors.</p>
+<ol type="a">
+<li><p><span class="math inline">\(18\)</span> </p></li>
+<li><p><span class="math inline">\(24\)</span> </p></li>
+<li><p><span class="math inline">\(30\)</span></p></li>
+</ol></li>
+<li><p>Label as prime, composite, or neither.</p>
+<ol type="a">
+<li><p><span class="math inline">\(29\)</span></p></li>
+<li><p><span class="math inline">\(51\)</span></p></li>
+<li><p><span class="math inline">\(1\)</span></p></li>
+<li><p><span class="math inline">\(97\)</span></p></li>
+<li><p><span class="math inline">\(121\)</span></p></li>
+</ol></li>
+<li><p>Find the prime factorization.</p>
+<ol type="a">
+<li><p><span class="math inline">\(36\)</span></p></li>
+<li><p><span class="math inline">\(84\)</span></p></li>
+<li><p><span class="math inline">\(90\)</span></p></li>
+<li><p><span class="math inline">\(72\)</span></p></li>
+</ol></li>
+<li><p>List the first five multiples of <span class="math inline">\(6\)</span>. <br><br></p></li>
+</ol>
+<hr>
 </section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">✏️ Practice On Your Own</h2>
-<p>Coming soon.</p>
+<section id="gcf-simplifying-fractions-1.3" class="level3">
+<h3 class="anchored" data-anchor-id="gcf-simplifying-fractions-1.3">GCF &amp; Simplifying Fractions (1.3)</h3>
+<ol start="10" type="1">
+<li><p>Find the greatest common factor.</p>
+<ol type="a">
+<li><p><span class="math inline">\(18\)</span>, <span class="math inline">\(24\)</span> </p></li>
+<li><p><span class="math inline">\(45\)</span>, <span class="math inline">\(60\)</span> </p></li>
+<li><p><span class="math inline">\(27\)</span>, <span class="math inline">\(36\)</span> </p></li>
+<li><p><span class="math inline">\(28\)</span>, <span class="math inline">\(70\)</span> </p></li>
+<li><p><span class="math inline">\(48\)</span>, <span class="math inline">\(180\)</span></p></li>
+</ol></li>
+<li><p>Simplify each fraction.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{18}{24}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{45}{60}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{28}{70}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{36}{27}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{48}{180}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{75}{120}\)</span></p></li>
+</ol></li>
+</ol>
+<hr>
+</section>
+<section id="fractions-decimals-percents-1.4" class="level3">
+<h3 class="anchored" data-anchor-id="fractions-decimals-percents-1.4">Fractions, Decimals &amp; Percents (1.4)</h3>
+<ol start="12" type="1">
+<li><p>Convert fraction → decimal and percent.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{3}{8}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{5}{12}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{7}{20}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{2}{9}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{11}{25}\)</span></p></li>
+</ol></li>
+<li><p>Convert decimal → fraction and percent.</p>
+<ol type="a">
+<li><p><span class="math inline">\(0.6\)</span> </p></li>
+<li><p><span class="math inline">\(0.125\)</span> </p></li>
+<li><p><span class="math inline">\(0.375\)</span> </p></li>
+<li><p><span class="math inline">\(1.2\)</span> </p></li>
+<li><p><span class="math inline">\(0.04\)</span></p></li>
+</ol></li>
+<li><p>Convert percent → fraction and decimal.</p>
+<ol type="a">
+<li><p><span class="math inline">\(45\%\)</span> </p></li>
+<li><p><span class="math inline">\(12.5\%\)</span> </p></li>
+<li><p><span class="math inline">\(250\%\)</span> </p></li>
+<li><p><span class="math inline">\(6\%\)</span> </p></li>
+<li><p><span class="math inline">\(37.5\%\)</span></p></li>
+</ol></li>
+<li><p>Decide if the fraction’s decimal <strong>ends</strong> or <strong>repeats</strong>. Then write the decimal.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{1}{8}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{7}{12}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{2}{5}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{6}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{3}{20}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{4}{11}\)</span></p></li>
+</ol></li>
+</ol>
+<hr>
+</section>
+<section id="multiply-divide-fractions-1.5" class="level3">
+<h3 class="anchored" data-anchor-id="multiply-divide-fractions-1.5">Multiply &amp; Divide Fractions (1.5)</h3>
+<ol start="16" type="1">
+<li><p><strong>Multiply.</strong> Simplify your answers.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{3}{4} \times \frac{2}{5}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{7}{8} \times \frac{12}{21}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{6} \cdot \frac{9}{10}\)</span></p></li>
+<li><p><span class="math inline">\((\frac{11}{12})(\frac{3}{11})\)</span> </p></li>
+<li><p><span class="math inline">\(2\tfrac{1}{3} \cdot \frac{3}{7}\)</span> </p></li>
+<li><p><span class="math inline">\(1\tfrac{1}{2} \times 2\tfrac{2}{5}\)</span></p></li>
+</ol></li>
+<li><p><strong>Divide.</strong> Simplify your answers.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{3}{4} \div \frac{2}{5}\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{7}{9} \div \frac{14}{27}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{6} \div \frac{10}{3}\)</span></p></li>
+<li><p><span class="math inline">\(2\tfrac{1}{2} \div \frac{5}{8}\)</span></p></li>
+<li><p><span class="math inline">\(1\tfrac{3}{4} \div \frac{7}{10}\)</span></p></li>
+<li><p><span class="math inline">\(3\tfrac{1}{3} \div 1\tfrac{1}{2}\)</span></p></li>
+</ol></li>
+</ol>
+<hr>
+</section>
+<section id="compare-order-across-forms-1.41.5" class="level3">
+<h3 class="anchored" data-anchor-id="compare-order-across-forms-1.41.5">Compare &amp; Order (across forms) (1.4–1.5)</h3>
+<ol start="18" type="1">
+<li><p>Compare with &gt;, &lt;, or =.</p>
+<ol type="a">
+<li><p><span class="math inline">\(\frac{3}{4}\)</span> ___ <span class="math inline">\(0.7\)</span> </p></li>
+<li><p><span class="math inline">\(\frac{2}{3}\)</span> ___ <span class="math inline">\(65\%\)</span> </p></li>
+<li><p><span class="math inline">\(0.45\)</span> ___ <span class="math inline">\(\frac{5}{9}\)</span></p></li>
+<li><p><span class="math inline">\(1.2\)</span> ___ <span class="math inline">\(\frac{6}{5}\)</span></p></li>
+<li><p><span class="math inline">\(0.8\)</span> ___ <span class="math inline">\(\frac{3}{4}\)</span></p></li>
+</ol></li>
+<li><p>Order from least to greatest.</p>
+<ol type="a">
+<li><p><span class="math inline">\(0.6, \frac{5}{8}, 62\%, 0.63\)</span></p></li>
+<li><p><span class="math inline">\(\frac{3}{5}, 0.56, 58\%, 0.6\)</span></p></li>
+</ol></li>
+</ol>
+<hr>
+</section>
+<section id="order-of-operations-1.7" class="level3">
+<h3 class="anchored" data-anchor-id="order-of-operations-1.7">Order of Operations (1.7)</h3>
+<p>Evaluate the following expressions:</p>
+<ol start="20" type="1">
+<li><p><span class="math inline">\(8 - 3^2 + 5\)</span></p></li>
+<li><p><span class="math inline">\((6 - 2)(3 + 1)\)</span></p></li>
+<li><p><span class="math inline">\(20 - 4(3 + 2)\)</span></p></li>
+<li><p><span class="math inline">\(18 \div (3 \cdot 2)\)</span></p></li>
+<li><p><span class="math inline">\(7 + 2 \cdot 5 - 6\)</span></p></li>
+<li><p><span class="math inline">\((12 - 4) \div 2^2\)</span></p></li>
+<li><p><span class="math inline">\(3[4 + 2(5 - 3)]\)</span></p></li>
+<li><p><span class="math inline">\((5 - 7)^2 - 4\)</span></p></li>
+<li><p><span class="math inline">\(10 - (2^3 + 6) \div 5\)</span></p></li>
+<li><p><span class="math inline">\((3 + 5) \div (2 + 6)\)</span></p></li>
+<li><p><span class="math inline">\((4^2 - 15) \div (7 - 6)\)</span></p></li>
+<li><p><span class="math inline">\(((9 - 3 \cdot 2)(5 - 4)) + 1\)</span></p></li>
+</ol>
+<hr>
+</section>
+<section id="mixed-practice" class="level3">
+<h3 class="anchored" data-anchor-id="mixed-practice">Mixed Practice</h3>
+<ol start="32" type="1">
+<li><p><span class="math inline">\(\frac{16}{24} \times \frac{9}{4}\)</span></p></li>
+<li><p>Convert <span class="math inline">\(0.375\)</span> to a fraction and to a percent.</p></li>
+<li><p>Find the <strong>GCF</strong> of <span class="math inline">\(54\)</span> and <span class="math inline">\(90\)</span>.</p></li>
+<li><p>Prime factorization of <span class="math inline">\(96\)</span></p></li>
+<li><p>Order least to greatest: <span class="math inline">\(\frac{3}{4}, 0.76, 75\%\)</span></p></li>
+<li><p><span class="math inline">\(5 - |-7| + 3^2\)</span></p></li>
+<li><p>Find the distance between <span class="math inline">\(-8\)</span> and <span class="math inline">\(5\)</span></p></li>
+<li><p><span class="math inline">\(\frac{7}{12} \div \frac{14}{9}\)</span></p></li>
+<li><p>Does <span class="math inline">\(\frac{7}{40}\)</span> end or repeat? Write its decimal.</p></li>
+<li><p><span class="math inline">\(\frac{3}{5} \div \frac{9}{25} \cdot \frac{10}{3}\)</span></p></li>
+</ol>
+<hr>
+<div class="answers">
+<ol type="1">
+<li><p>–7, 12, 0, –15, 3</p></li>
+<li><p>9, 6, 0, 14, 3</p></li>
+<li><p>–5, –3, –1, 0, 2, 6</p></li>
+<li><ol type="a">
+<li>5 </li>
+<li>–24 </li>
+<li>10 </li>
+<li>–11 </li>
+<li>5</li>
+</ol></li>
+<li><ol type="a">
+<li>7 </li>
+<li>7 </li>
+<li>7 </li>
+<li>0</li>
+</ol></li>
+<li><ol type="a">
+<li>1,2,3,6,9,18 </li>
+<li>1,2,3,4,6,8,12,24 </li>
+<li>1,2,3,5,6,10,15,30</li>
+</ol></li>
+<li><ol type="a">
+<li>prime</li>
+<li>composite</li>
+<li>neither</li>
+<li>prime</li>
+<li>composite</li>
+</ol></li>
+<li><ol type="a">
+<li>2²·3²</li>
+<li>2²·3·7</li>
+<li>2·3²·5</li>
+<li>2³·3²</li>
+</ol></li>
+<li><p>6, 12, 18, 24, 30</p></li>
+<li><ol type="a">
+<li>6 </li>
+<li>15 </li>
+<li>9 </li>
+<li>14 </li>
+<li>12</li>
+</ol></li>
+<li><ol type="a">
+<li>3/4 </li>
+<li>3/4 </li>
+<li>2/5 </li>
+<li>4/3 </li>
+<li>4/15 </li>
+<li>5/8</li>
+</ol></li>
+<li><ol type="a">
+<li>37.5% </li>
+<li>41.% </li>
+<li>35%</li>
+<li>22.% </li>
+<li>44%</li>
+</ol></li>
+<li><ol type="a">
+<li>3/5, 60% </li>
+<li>1/8, 12.5% </li>
+<li>3/8, 37.5% </li>
+<li>6/5, 120% </li>
+<li>1/25, 4%</li>
+</ol></li>
+<li><ol type="a">
+<li>9/20, 0.45 </li>
+<li>1/8, 0.125 </li>
+<li>5/2, 2.5 </li>
+<li>3/50, 0.06 </li>
+<li>3/8, 0.375</li>
+</ol></li>
+<li><ol type="a">
+<li>ends, 0.125 </li>
+<li>repeats, 0.58 </li>
+<li>ends, 0.4</li>
+<li>repeats, 0.8 </li>
+<li>ends, 0.15 </li>
+<li>repeats, 0.</li>
+</ol></li>
+<li><ol type="a">
+<li>3/10 </li>
+<li>1/2 </li>
+<li>3/4 </li>
+<li>1/4 </li>
+<li>1 </li>
+<li>18/5 (3 3/5)</li>
+</ol></li>
+<li><ol type="a">
+<li>15/8 (1 7/8) </li>
+<li>3/2 (1 1/2) </li>
+<li>1/4 </li>
+<li>4</li>
+<li>5/2 (2 1/2) </li>
+<li>20/9 (2 2/9)</li>
+</ol></li>
+<li><ol type="a">
+<li>&gt; </li>
+<li>&gt; </li>
+<li>&lt; </li>
+<li>= </li>
+<li>&gt;</li>
+</ol></li>
+<li><ol type="a">
+<li>0.6 &lt; 62% &lt; 5/8 &lt; 0.63   </li>
+<li>0.56 &lt; 58% &lt; 3/5 = 0.6</li>
+</ol></li>
+<li><p>4 </p></li>
+<li><p>16 </p></li>
+<li><p>0 </p></li>
+<li><p>3 </p></li>
+<li><p>11 </p></li>
+<li><p>2</p></li>
+<li><p>24 </p></li>
+<li><p>0 </p></li>
+<li><p>36/5 (7.2) </p></li>
+<li><p>1 </p></li>
+<li><p>1 </p></li>
+<li><p>4</p></li>
+<li><p>3/2 (1 1/2)</p></li>
+<li><p>3/8 and 37.5%</p></li>
+<li><p>18</p></li>
+<li><p>2⁵·3</p></li>
+<li><p>3/4 = 75% &lt; 0.76</p></li>
+<li><p>7</p></li>
+<li><p>13</p></li>
+<li><p>3/8</p></li>
+<li><p>ends, 0.175</p></li>
+<li><p>50/9 (5 5/9)</p></li>
+</ol>
+</div>
 
 
 </section>
@@ -1153,13 +1483,13 @@ Vocabulary
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html" class="pagination-link" aria-label="3.4 No Solution vs. Infinite Solutions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3.4 No Solution vs.&nbsp;Infinite Solutions</span>
+      <a href="../../chapters/Unit_1/1.7_Order_of_Operations.html" class="pagination-link" aria-label="1.7 – Order of Operations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1.7 – Order of Operations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&amp;_Rules_(Function_tie-in).html" class="pagination-link" aria-label="3.6 Solving with Tables, Graphs &amp; Rules (Function Tie-In)">
-        <span class="nav-page-text">3.6 Solving with Tables, Graphs &amp; Rules (Function Tie-In)</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_2/index.html" class="pagination-link" aria-label="Introduction">
+        <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
