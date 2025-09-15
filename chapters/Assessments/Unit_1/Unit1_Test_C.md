@@ -5,46 +5,64 @@
 ---
 
 ### Fractions, Decimals & Percents
+<br>
 
-1. Place these numbers in order from least to greatest and show them on a number line:
-   \$-0.25,; \tfrac{5}{6},; 33%,; -\tfrac{7}{10},; 1.2\$
+1. Place these numbers in order from **least to greatest** and **show them on a number line**:
+   $$
+   -0.35, \tfrac{3}{5}, 70\%, \tfrac{4}{9}, 0.25, -\frac{3}{4}, 55\%
+   $$
+<br><br><br><br><br>
 
-2. Convert \$\tfrac{11}{40}\$ to a decimal and a percent.
+2. Convert $\tfrac{11}{20}$ to a decimal and a percent.
+<br><br><br><br><br>
 
-3. Write **0.6** as a fraction in simplest form.
+3. Write $0.175$ as a percent **and** as a fraction in simplest form.
+<br><br><br><br><br>
 
----
+4. A sweater is on sale for $30\%$ off. It originally cost $\$120$. What is the new price?
+<br><br><br><br><br>
 
-### Factors & Prime Factorization
+<div style="page-break-after: always;"></div>
 
-4. Write the prime factorization of **72**.
 
-5. Find the **greatest common factor (GCF)** of 42 and 70.
+### Prime Factorization and Simplifying Fractions
+<br>
 
----
+5. Write the prime factorization of $128$.
+<br><br><br><br><br><br><br><br>
 
-### Simplifying Fractions
+6. Find the **greatest common factor (GCF)** of $18$ and $30$.
+<br><br><br><br><br><br><br><br>
 
-6. Simplify the fraction \$\tfrac{32}{48}\$.
+7. Simplify the fraction $\tfrac{70}{105}$.
+<br><br><br><br><br><br><br><br>
 
-7. Simplify the fraction \$\tfrac{225}{300}\$.
+<div style="page-break-after: always;"></div>
 
----
 
 ### Multiply & Divide Fractions
+<br>
 
-8. Compute: \$\tfrac{3}{8} \times \tfrac{16}{9}\$.
+Write your answers in **simplest form**.
+<br>
 
-9. Divide: \$\tfrac{12}{15} \div \tfrac{3}{10}\$.
+8. Multiply: $\tfrac{11}{15} \times \tfrac{10}{33}$.
+<br><br><br><br><br><br><br><br><br><br>
 
----
+9. Divide: $\tfrac{9}{22} \div \tfrac{15}{66}$.
+<br><br><br><br><br><br><br><br><br><br>
+
+<div style="page-break-after: always;"></div>
+
 
 ### Order of Operations
+<br>
 
-10. Simplify: \$10 + 2 \times (5 - 9)\$.
+10. Simplify: $8 + 7 \times (3 - 9)$.
+<br><br><br><br><br><br><br><br><br>
 
-11. Simplify: \$\dfrac{45}{9} + 4^2 \times 2\$.
+11. Simplify: $\dfrac{50}{25} + 5^2 \times 3$.
+<br><br><br><br><br><br><br><br><br>
 
-12. Simplify: $\[(6+2)\div 4] \times (3-11)\$.
-
----
+12. Simplify: $[(6+12)\div 3] \times (2-7)$.
+<br><br><br><br><br><br><br><br>
