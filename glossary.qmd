@@ -999,6 +999,28 @@ Skip counting means **counting forward (or backward) by a number other than 1** 
 
 ---
 
+### Solution {#glossary-solution}
+
+A **solution** is any value of a variable that makes an equation true. If there’s more than one answer, we call the set of all answers the **solution set**.
+
+> **Example:**
+>
+> For $x + 4 = 9$, the solution is $x = 5$.
+> Check: $5 + 4 = 9$ ✓.
+> For $|x| = 3$, the solution set is $\{-3,\,3\}$ because both values make the equation true.
+
+---
+
+### Solve {#glossary-solve}
+
+To **solve** an equation means to find every value of the variable that makes the equation true — so both sides are equal. The answer(s) you find are the solution (or **solution set**).
+
+> **Example:**
+>
+> Solve $x + 9 = 11$. Subtract 9 from both sides: $x = 2$. Check: $2 + 9 = 11$ ✓.
+
+---
+
 ### Subtraction {#glossary-subtraction}
 
 An operation that finds the difference between two numbers.
