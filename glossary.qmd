@@ -1031,6 +1031,23 @@ An operation that finds the difference between two numbers.
 
 ---
 
+### Substitute {#glossary-substitute}
+
+To **substitute** means to replace a variable with a number (or another expression) in an expression or an equation. We often say “**plug in**.” Use parentheses when you plug in, especially with negative numbers.
+
+> **Example:**
+>
+> Evaluate when $x=3$: $2x+5 \rightarrow 2(3)+5=11$.
+>
+> Check a solution: For $x+9=11$, substitute $x=2$: $2+9=11$ ✓, so $x=2$ is a {{< glink solution >}}.
+>
+> Parentheses help: For $y=-2$, $4-y=4-(-2)=6$.
+
+**See Also**
+{{< glink substitution >}}
+
+---
+
 ### Substitution {#glossary-substitution}
 
 Substitution is the process of replacing a variable with a number or another expression in an equation or expression.

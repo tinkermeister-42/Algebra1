@@ -60,7 +60,7 @@ $$
 a + 2 = 5
 $$
 
-To find the weight (**a**) of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.
+To find the weight *a* of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.
 
 Start by taking the two weights off the left-hand side.
 
@@ -143,7 +143,7 @@ Solving one-step equations with multiplication and division is very similar to s
 
 **Example 3:** One-step Equations with Multiplication
 
-Let's return to our scale with apples and weights. This time, there are 2 apples on the left-hand side and 6 weights on the right. We want to know the weight of one apple. 
+Let's return to our scale with apples and weights. This time, there are 2 apples on the left-hand side and 6 weights on the right. We want to know the weight *a* of one apple. 
 
 ![](/images/Unit_3/Lesson_1/balance_2x_equal_6_1.png){width="300px" fig-align="center"}
 
@@ -247,27 +247,24 @@ If they match, your solution is correct. If not, you made a mistake along the wa
 
 **Example – Check**
 
-Solve:  
-\[
-3x - 5 = 16
-\]
+Solve $3x = 21$ and check your answer.
 
-* Add 5 to both sides:  
-  \[
-  3x = 21
-  \]
+$$
+\begin{align*}
+3x &= 21 \\
+3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+x &= 7
+\end{align*}
+$$
 
-* Divide by 3:  
-  \[
-  x = 7
-  \]
 
-* **Check:** Substitute \(x = 7\) into the original equation.  
-  \[
-  3(7) - 5 = 21 - 5 = 16
-  \]
+**Check:** Substitute $x = 7$ into the original equation.  
 
-Since both sides equal 16, the solution \(x = 7\) is correct.
+$$
+3(\textcolor{red}{7}) = 21
+$$
+
+Since both sides equal 21, the solution $x = 7$ is correct.
 
 ---
 
@@ -275,7 +272,7 @@ Since both sides equal 16, the solution \(x = 7\) is correct.
 
 - It helps catch arithmetic mistakes.  
 - It confirms your solution actually works.  
-- On tests, showing the check can sometimes earn partial credit.  
+- On tests, showing the check can sometimes earn partial credit.
 
 Think of it like testing your answer with a calculator: the equation itself is the calculator, and you’re making sure it “works out.”
 
@@ -346,7 +343,7 @@ For each, **solve and then check your solution** by substituting back into the o
 
 **Challenge Problems**
 
-Set up and solve each situation with a one-step equation. Show your check.
+Set up and solve each situation with a one-step equation.
 
 23. **Paycheck problem:**
     After buying a video game for \$38, Jasmine has \$25 left. Write and solve an equation to find how much money she had before buying the game.
