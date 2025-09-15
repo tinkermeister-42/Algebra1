@@ -266,37 +266,48 @@
     "href": "chapters/Unit_3/index.html#topics-in-this-unit",
     "title": "Introduction",
     "section": "Topics in This Unit",
-    "text": "Topics in This Unit\nSolving One- and Two-Step Equations Undo add/subtract and multiply/divide with inverse operations. Always check.\nMulti-Step Equations with Distribution Distribute, combine like terms, and keep both sides balanced.\nVariables on Both Sides Collect variable terms on one side and constants on the other, then solve and check.\nEquations with Fractions & Decimals (mini-lesson) Clear denominators or scale by powers of 10 to make solving cleaner.\nSpecial Cases: No Solution vs. Infinite Solutions See when both sides simplify to always true or never true, and explain.\nWriting Equations from Contexts Translate short stories, units, and rate language into equations and solve.\nSolving with Tables & Rules Use rules and input–output tables to find unknowns or when two rules match.",
+    "text": "Topics in This Unit\nSolving One-Step Equations Undo add/subtract and multiply/divide with inverse operations.\nSolving Two-Step Equations Undo add/subtract and multiply/divide with inverse operations in reverse order.\nMulti-Step Equations with Distribution Distribute, combine like terms, and keep both sides balanced.\nVariables on Both Sides Collect variable terms on one side and constants on the other, then solve and check.\nSpecial Cases: No Solution vs. Infinite Solutions See when both sides simplify to always true or never true, and explain.\nWriting Equations from Contexts Translate short stories, units, and rate language into equations and solve.\nSolving with Tables & Rules Use rules and input–output tables to find unknowns or when two rules match.",
     "crumbs": [
       "Unit 3: Solving Equations",
       "Introduction"
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.html",
-    "href": "chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.html",
-    "title": "3.1 – Solving One- and Two-Step Equations",
+    "objectID": "chapters/Unit_3/3.1_Solving_One-Step_Equations.html",
+    "href": "chapters/Unit_3/3.1_Solving_One-Step_Equations.html",
+    "title": "3.1 – Solving One-Step Equations",
     "section": "",
-    "text": "3.1.1 – One-Step Equations (Addition and Subtraction)\nIn Unit 2, we learned how to work with equivalent expressions. Sometimes we could check a number, substitute it into both expressions, and see that they matched. But, with some expressions, we noticed something important:\nSome values worked.\nOther values didn’t.\nThis brings us to equations. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to find the numbers that make them equal.\nThose values are called the solutions of the equation.\nIn this lesson, we begin with the basic rules for solving equations:\nLater lessons will build on these rules to solve more complicated equations.\nAn equation is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true.\nYou can think of it like a scale with an expression in each pan. When the value of the left-hand side (LHS) is the same as the right-hand side (RHS), the scale will be in balance.\nExample 1: One-step equations with addition\nHere is a scale with an apple and 2 weights on the left-hand side and with 5 weights on the right-hand side. We would like to know the weight of an apple.\nLet a stand for the weight of one apple.\n\\[\na + 2 = 5\n\\]\nTo find the weight (a) of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.\nStart by taking the two weights off the left-hand side.\n\\[\na + 2 \\textcolor{red}{- 2} = 5\n\\]\nBy removing the weights from the left pan, we got the apple by itself, but now the right pan weighs more than the left. We have to take two weights off of the right pan to restore the balance.\n\\[\n\\begin{align*}\na &= 5 \\textcolor{red}{- 2} \\\\\na &= 3\n\\end{align*}\n\\]\nThe weight of the apple is 3.\nTo solve the equation, we only needed one step – subtract 2 from each side. We always undo addition by subtracting.\nWe don’t usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.\n\\[\n\\begin{align*}\na+2 &= 5 \\\\\na+2 \\textcolor{red}{- 2} &= 5 \\textcolor{red}{- 2} \\tag*{\\class{stepnote}{\\textcolor{gray}{-2 both sides}}} \\\\\na &= 3\n\\end{align*}\n\\]\nExample 2: One-step equations with subtraction\nSolving equations involving subtraction works the same way with a single difference. We always undo subtraction by adding.\nSolve the equation \\(x - 5 = 8\\).\n\\[\n\\begin{align*}\nx - 5 &= 8 \\\\\nx - 5 \\textcolor{red}{+ 5} &= 8 \\textcolor{red}{+ 5} \\tag*{\\class{stepnote}{\\textcolor{gray}{+5 both sides}}} \\\\\nx &= 13\n\\end{align*}\n\\]",
+    "text": "In Unit 2, we learned how to work with equivalent expressions. Sometimes we could check a number, substitute it into both expressions, and see that they matched. But, with some expressions, we noticed something important:\nSome values worked.\nOther values didn’t.\nThis brings us to equations. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to find the numbers that make them equal.\nThose values are called the solutions of the equation.\nIn this lesson, we begin with the basic rules for solving equations:\n\nKeep both sides equal.\nUndo operations step by step until the variable is by itself.\n\nLater lessons will build on these rules to solve more complicated equations.\n\n\nI can solve one-step equations and show my work.\nI can check a solution by substituting it into the original equation.\n\n\n\nequation, solution, variable\n\n🔥 Warm-Up\n\nAre \\(2(x + 3)\\) and \\(2x + 6\\) equivalent? How do you know?\nWhat value of \\(x\\) would make \\(3x\\) equivalent to 27?\nIf adding 4 to \\(x\\) makes 9, what is \\(x\\)?\n\n👥 Learn Together\n\n3.1.1 – One-Step Equations (Addition and Subtraction)\nAn equation is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true.\nYou can think of it like a scale with an expression in each pan. When the value of the left-hand side (LHS) is the same as the right-hand side (RHS), the scale will be in balance.\n\n\n\n\n\n\nExample 1: One-step equations with addition\nHere is a scale with an apple and 2 weights on the left-hand side and with 5 weights on the right-hand side. We would like to know the weight of an apple.\nLet a stand for the weight of one apple.\n\n\n\n\n\n\\[\na + 2 = 5\n\\]\nTo find the weight (a) of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.\nStart by taking the two weights off the left-hand side.\n\n\n\n\n\n\\[\na + 2 \\textcolor{red}{- 2} = 5\n\\]\nBy removing the weights from the left pan, we got the apple by itself, but now the right pan weighs more than the left. We have to take two weights off of the right pan to restore the balance.\n\n\n\n\n\n\\[\n\\begin{align*}\na &= 5 \\textcolor{red}{- 2} \\\\\na &= 3\n\\end{align*}\n\\]\nThe weight of the apple is 3.\nTo solve the equation, we only needed one step – subtract 2 from each side. We always undo addition by subtracting.\nWe don’t usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.\n\\[\n\\begin{align*}\na+2 &= 5 \\\\\na+2 \\textcolor{red}{- 2} &= 5 \\textcolor{red}{- 2} \\tag*{\\class{stepnote}{\\textcolor{gray}{-2 both sides}}} \\\\\na &= 3\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\nx + 9 &= 11 \\\\\nx + 9 \\textcolor{red}{- 9} &= 11 \\textcolor{red}{- 9} \\\\\nx &= 2\n\\end{align*}\n\\]\n\n\nExample 2: One-step equations with subtraction\nSolving equations involving subtraction works the same way with a single difference. We always undo subtraction by adding.\nSolve the equation \\(x - 5 = 8\\).\n\\[\n\\begin{align*}\nx - 5 &= 8 \\\\\nx - 5 \\textcolor{red}{+ 5} &= 8 \\textcolor{red}{+ 5} \\tag*{\\class{stepnote}{\\textcolor{gray}{+5 both sides}}} \\\\\nx &= 13\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\nx - 12 &= 2 \\\\\nx - 12 \\textcolor{red}{+ 12} &= 2 \\textcolor{red}{+ 12} \\\\\nx &= 14\n\\end{align*}\n\\]\n\n\n\n\n3.1.2 – One-Step Equations (Multiplication and Division)\nSolving one-step equations with multiplication and division is very similar to solving them with addition and subtraction.\nExample 3: One-step Equations with Multiplication\nLet’s return to our scale with apples and weights. This time, there are 2 apples on the left-hand side and 6 weights on the right. We want to know the weight of one apple.\n\n\n\n\n\n\\[\n2a = 6\n\\]\nWe can see that two apples is the same as 6 weights. Notice that for each apple there are 3 weights.\n\n\n\n\n\nWe get an apple by itself by dividing. Like we saw with addition and subtraction, we can’t divide just one side because it won’t stay balanced.\n\n\n\n\n\n\\[\n2a \\textcolor{red}{\\div 2} = 6\n\\]\nWe have to divide both sides by 2 to maintain the balance.\n\n\n\n\n\n\\[\n\\begin{align*}\n2a \\textcolor{red}{\\div 2} &= 6 \\textcolor{red}{\\div 2} \\\\\na &= 3\n\\end{align*}\n\\]\nAn apple has a weight of 3.\nHere is the solution showing just the algebra.\n\\[\n\\begin{align*}\n2a &= 6 \\\\\n2a \\textcolor{red}{\\div 2} &= 6 \\textcolor{red}{\\div 2} \\tag*{\\class{stepnote}{\\textcolor{gray}{÷2 both sides}}} \\\\\na &= 3\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\n3x &= 15 \\\\\n3x \\textcolor{red}{\\div 3} &= 15 \\textcolor{red}{\\div 3} \\\\\nx &= 5\n\\end{align*}\n\\]\n\n\nExample 4: One-step Equations With Division\nSolving one-step equations with division is the same. But instead of dividing, we multiply.\nSolve \\(\\frac{a}{3} = 1\\).\n\\[\n\\begin{align*}\n\\frac{a}{3} &= 1 \\\\\n\\frac{a}{3} \\textcolor{red}{\\times 3} &= 1 \\textcolor{red}{\\times 3} \\tag*{\\class{stepnote}{\\textcolor{gray}{×3 both sides}}} \\\\\na &= 3\n\\end{align*}\n\\]\n\n\\[\n\\begin{align*}\n\\frac{x}{5} &= 10 \\\\\n\\frac{x}{5} \\textcolor{red}{\\times 5} &= 10 \\textcolor{red}{\\times 5} \\\\\nx &= 50\n\\end{align*}\n\\]\n\n\nDo the same move to both sides.\n\n\n\nIf you see…\nUndo with…\nExample\n\n\n\n\n\\(+\\)\n\\(-\\)\n\\(x+7=12\\) → \\(x=5\\)\n\n\n\\(-\\)\n\\(+\\)\n\\(x-9=4\\) → \\(x=13\\)\n\n\n\\(\\times\\)\n\\(\\div\\)\n\\(4x=20\\) → \\(x=5\\)\n\n\n\\(\\div\\)\n\\(\\times\\)\n\\(\\tfrac{x}{3}=6\\) → \\(x=18\\)\n\n\n\n\n\n\n\n3.1.3 – Checking a Solution ✅\nWhen you solve an equation, it’s important to check your solution.\nThis means plugging your answer back into the original equation to see if both sides are equal.\nIf they match, your solution is correct. If not, you made a mistake along the way.\n\nExample – Check\nSolve:\n[ 3x - 5 = 16 ]\n\nAdd 5 to both sides:\n[ 3x = 21 ]\nDivide by 3:\n[ x = 7 ]\nCheck: Substitute (x = 7) into the original equation.\n[ 3(7) - 5 = 21 - 5 = 16 ]\n\nSince both sides equal 16, the solution (x = 7) is correct.\n\nWhy Check?\n\nIt helps catch arithmetic mistakes.\n\nIt confirms your solution actually works.\n\nOn tests, showing the check can sometimes earn partial credit.\n\nThink of it like testing your answer with a calculator: the equation itself is the calculator, and you’re making sure it “works out.”\n\n\n\nSolve \\(2y = 10\\). Then check your solution.\nSolve \\(\\dfrac{z}{-3} = 5\\). Then check your solution.\n\n\n\n\n\\(y = 5\\), \\(2(5) = 10\\)\n\\(z = -15\\), \\(\\dfrac{-15}{-3} = 5\\)\n\n\n\n✍️ Practice On Your Own\nLevel 1 – Basic\nSolve each equation.\n\n\\(x + 7 = 15\\)\n\\(m - 12 = -8\\)\n\\(5y = 40\\)\n\\(\\dfrac{z}{6} = -9\\)\n\\(-12 = k + 5\\)\n\\(r - (-8) = 2\\)\n\n\nLevel 2 – Moderate\nSolve each equation. Be careful with negatives and decimals.\n\n\\(0.4t = 3.2\\)\n\\(\\dfrac{p}{-5} = 11\\)\n\\(-0.6x = 4.2\\)\n\\(2y + 0 = 14\\)\n\\(\\dfrac{z}{7} = -2\\)\n\\(x - 15 = -23\\)\n\n\nLevel 3 – Harder\nFor each, solve and then check your solution by substituting back into the original equation.\n\n\\(-9 = \\dfrac{n}{3}\\)\n\\(\\dfrac{3}{4}k = 9\\)\n\\(-8x = -56\\)\n\\(\\dfrac{w}{-12} = -3\\)\n\\(1.2y = 0.36\\)\n\\(c + 14.5 = 2.3\\)\n\\(\\dfrac{2}{5}m = -6\\)\n\\(\\dfrac{x}{-4} = 7\\)\n\\(2.5n = 0.75\\)\n\\(-18 = 6 + p\\)\n\n\nChallenge Problems\nSet up and solve each situation with a one-step equation. Show your check.\n\nPaycheck problem: After buying a video game for $38, Jasmine has $25 left. Write and solve an equation to find how much money she had before buying the game.\nDistance problem: A car is traveling at 65 miles per hour. After \\(h\\) hours, the car traveled 325 miles. Write and solve an equation to find how many hours the trip was.\n\n\n\n\n\\(x = 8\\)\n\\(m = 4\\)\n\\(y = 8\\)\n\\(z = -54\\)\n\\(a = 13\\)\n\\(r = -6\\)\n\\(t = 8\\)\n\\(p = -55\\)\n\\(x = -7\\)\n\\(y = 7\\)\n\\(z = -14\\)\n\\(x = -8\\)\n\\(n = -27\\) ✔ check: \\(-27/3 = -9\\)\n\\(k = 12\\) ✔ check: \\((3/4)(12) = 9\\)\n\\(x = 7\\) ✔ check: \\(-8(7) = -56\\)\n\\(w = 36\\) ✔ check: \\(36 / -12 = -3\\)\n\\(y = 0.3\\) ✔ check: \\(1.2(0.3) = 0.36\\)\n\\(c = -12.2\\) ✔ check: \\(-12.2 + 14.5 = 2.3\\)\n\\(m = -15\\) ✔ check: \\((2/5)(-15) = -6\\)\n\\(x = -28\\) ✔ check: \\(-28 / -4 = 7\\)\n\\(n = 0.3\\) ✔ check: \\(2.5(0.3) = 0.75\\)\n\\(p = -24\\) ✔ check: \\(-18 = 6 + (-24)\\)",
     "crumbs": [
       "Unit 3: Solving Equations",
-      "3.1 – Solving One- and Two-Step Equations"
+      "3.1 – Solving One-Step Equations"
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.html#checking-a-solution",
-    "href": "chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.html#checking-a-solution",
-    "title": "3.1 – Solving One- and Two-Step Equations",
-    "section": "3.1.3 – Checking a Solution ✅",
-    "text": "3.1.3 – Checking a Solution ✅\nYou can always check your work by plugging the answer back in.\nExample – Check Solve \\(3x - 5 = 16\\).\n\nAdd 5: \\(3x = 21\\)\nDivide by 3: \\(x = 7\\)\nCheck: \\(3(7) - 5 = 21 - 5 = 16\\).\n\n\n✍️ Practice On Your Own\nSolve each equation. Show your steps.\nOne-Step Equations (Addition/Subtraction)\n\n\\(x + 9 = 15\\)\n\\(x - 7 = 4\\)\n\\(x + 3 = -2\\)\n\\(x - 12 = -5\\)\n\nOne-Step Equations (Multiplication/Division) 5. \\(8x = 40\\) 6. \\(-7x = 21\\) 7. \\(x/5 = 6\\) 8. \\(x/4 = -9\\)\nTwo-Step Equations (Positive Variable) 9. \\(3x + 2 = 20\\) 10. \\(5x - 11 = 4\\) 11. \\(2x + 7 = 17\\) 12. \\(6x - 9 = 21\\)\nTwo-Step Equations (Negative Variable) 13. \\(-2x + 7 = -5\\) 14. \\(-4x - 3 = 9\\) 15. \\(-3x + 8 = -10\\) 16. \\(-5x - 6 = -21\\)\nTwo-Step Equations (Fraction Coefficient) 17. \\(\\tfrac{x}{3} + 5 = 11\\) 18. \\(\\tfrac{x}{2} - 6 = -1\\) 19. \\(\\tfrac{2}{3}x + 4 = 10\\) 20. \\(\\tfrac{3}{4}x - 2 = 7\\)\nMixed Review 21. \\(7x = -28\\) 22. \\(x/6 + 8 = 2\\) 23. \\(4x - 5 = 3x + 7\\) (slightly harder — variables on both sides) 24. \\(2(x + 5) = 16\\) (requires distribution) 25. \\(\\tfrac{1}{2}x + 7 = \\tfrac{x}{4} + 13\\) (challenge problem — fractions on both sides)\n\n\n\n\\(x = 6\\)\n\\(x = 11\\)\n\\(x = -5\\)\n\\(x = 7\\)\n\\(x = 5\\)\n\\(x = -3\\)\n\\(x = 30\\)\n\\(x = -36\\)\n\\(x = 6\\)\n\\(x = 3\\)\n\\(x = 5\\)\n\\(x = 5\\)\n\\(x = 6\\)\n\\(x = -3\\)\n\\(x = 6\\)\n\\(x = 3\\)\n\\(x = 18\\)\n\\(x = 10\\)\n\\(x = 9\\)\n\\(x = 12\\)\n\\(x = -4\\)\n\\(x = -36\\)\n\\(x = 12\\)\n\\(x = 3\\)\n\\(x = 12\\)",
+    "objectID": "chapters/Unit_3/3.2_Solving_Two-Step_Equations.html",
+    "href": "chapters/Unit_3/3.2_Solving_Two-Step_Equations.html",
+    "title": "3.2 – Solving One- and Two-Step Equations",
+    "section": "",
+    "text": "3.2.1 – Two-Step Equations\nComing Soon\nSolving equations with more than one step works the same way as one-step equations, but we have to solve them by reversing the order of operations.\nExample 5: Two-step Equation With Addition and Multiplication\nHere we have 2 apples and one weight on the left-hand side and 7 weights on the other.\n\\[\n2a + 1 = 7\n\\]\nFollowing the order of operations (PEMDAS) in reverse, we start by undoing the addition.\n\\[\n2a + 1 \\textcolor{red}{- 1} = 7 \\textcolor{red}{- 1}\n\\]\nNow we are ready to undo the multiplication.\n\\[\n\\begin{align*}\n2a \\textcolor{red}{\\div 2} &= 6 \\textcolor{red}{\\div 2} \\\\\na &= 3\n\\end{align*}\n\\]\nAn apple has a weight of 3.\nHere are the steps showing just the algebra.\n\\[\n\\begin{align*}\n2a + 1 &= 7 \\\\\n2a + 1 \\textcolor{red}{- 1} &= 7 \\textcolor{red}{- 1} \\tag*{\\class{stepnote}{\\textcolor{gray}{-1 both sides}}} \\\\\n2a \\textcolor{red}{\\div 2} &= 6 \\textcolor{red}{\\div 2} \\tag*{\\class{stepnote}{\\textcolor{gray}{÷2 both sides}}} \\\\\na &= 3\n\\end{align*}\n\\]\nExample 6: Two-step Equation with Division and Subtraction\nSolve \\(\\frac{x}{8} - 3 = 7\\).\n\\[\n\\begin{align*}\n\\frac{x}{8} - 3 &= 7 \\\\\n\\frac{x}{8} - 3 \\textcolor{red}{+ 3} &= 7 \\textcolor{red}{+ 3} \\tag*{\\class{stepnote}{\\textcolor{gray}{+3 both sides}}} \\\\\n\\frac{x}{8} \\textcolor{red}{\\times 8} &= 10 \\textcolor{red}{\\times 8} \\tag*{\\class{stepnote}{\\textcolor{gray}{×8 both sides}}} \\\\\nx &= 80\n\\end{align*}\n\\]",
     "crumbs": [
       "Unit 3: Solving Equations",
-      "3.1 – Solving One- and Two-Step Equations"
+      "3.2 – Solving One- and Two-Step Equations"
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html",
-    "href": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html",
+    "objectID": "chapters/Unit_3/3.2_Solving_Two-Step_Equations.html#checking-a-solution",
+    "href": "chapters/Unit_3/3.2_Solving_Two-Step_Equations.html#checking-a-solution",
+    "title": "3.2 – Solving One- and Two-Step Equations",
+    "section": "3.2.2 – Checking a Solution ✅",
+    "text": "3.2.2 – Checking a Solution ✅\nYou can always check your work by plugging the answer back in.\nExample – Check Solve \\(3x - 5 = 16\\).\n\nAdd 5: \\(3x = 21\\)\nDivide by 3: \\(x = 7\\)\nCheck: \\(3(7) - 5 = 21 - 5 = 16\\).\n\n\n✍️ Practice On Your Own\nSolve each equation. Show your steps.\nOne-Step Equations (Addition/Subtraction)\n\n\\(x + 9 = 15\\)\n\\(x - 7 = 4\\)\n\\(x + 3 = -2\\)\n\\(x - 12 = -5\\)\n\nOne-Step Equations (Multiplication/Division) 5. \\(8x = 40\\) 6. \\(-7x = 21\\) 7. \\(x/5 = 6\\) 8. \\(x/4 = -9\\)\nTwo-Step Equations (Positive Variable) 9. \\(3x + 2 = 20\\) 10. \\(5x - 11 = 4\\) 11. \\(2x + 7 = 17\\) 12. \\(6x - 9 = 21\\)\nTwo-Step Equations (Negative Variable) 13. \\(-2x + 7 = -5\\) 14. \\(-4x - 3 = 9\\) 15. \\(-3x + 8 = -10\\) 16. \\(-5x - 6 = -21\\)\nTwo-Step Equations (Fraction Coefficient) 17. \\(\\tfrac{x}{3} + 5 = 11\\) 18. \\(\\tfrac{x}{2} - 6 = -1\\) 19. \\(\\tfrac{2}{3}x + 4 = 10\\) 20. \\(\\tfrac{3}{4}x - 2 = 7\\)\nMixed Review 21. \\(7x = -28\\) 22. \\(x/6 + 8 = 2\\) 23. \\(4x - 5 = 3x + 7\\) (slightly harder — variables on both sides) 24. \\(2(x + 5) = 16\\) (requires distribution) 25. \\(\\tfrac{1}{2}x + 7 = \\tfrac{x}{4} + 13\\) (challenge problem — fractions on both sides)\n\n\n\n\\(x = 6\\)\n\\(x = 11\\)\n\\(x = -5\\)\n\\(x = 7\\)\n\\(x = 5\\)\n\\(x = -3\\)\n\\(x = 30\\)\n\\(x = -36\\)\n\\(x = 6\\)\n\\(x = 3\\)\n\\(x = 5\\)\n\\(x = 5\\)\n\\(x = 6\\)\n\\(x = -3\\)\n\\(x = 6\\)\n\\(x = 3\\)\n\\(x = 18\\)\n\\(x = 10\\)\n\\(x = 9\\)\n\\(x = 12\\)\n\\(x = -4\\)\n\\(x = -36\\)\n\\(x = 12\\)\n\\(x = 3\\)\n\\(x = 12\\)",
+    "crumbs": [
+      "Unit 3: Solving Equations",
+      "3.2 – Solving One- and Two-Step Equations"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html",
+    "href": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html",
     "title": "3.2 Multi-Step Equations with Distribution",
     "section": "",
     "text": "🔥 Warm-Up\nThis lesson extends equation solving to multi-step problems, including those that require the distributive property and combining like terms.\nComing soon.",
@@ -306,8 +317,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html#learn-together",
-    "href": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html#learn-together",
+    "objectID": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html#learn-together",
+    "href": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html#learn-together",
     "title": "3.2 Multi-Step Equations with Distribution",
     "section": "🧠 Learn Together",
     "text": "🧠 Learn Together\nComing soon.",
@@ -317,8 +328,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html#practice-on-your-own",
-    "href": "chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html#practice-on-your-own",
+    "objectID": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html#practice-on-your-own",
+    "href": "chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html#practice-on-your-own",
     "title": "3.2 Multi-Step Equations with Distribution",
     "section": "✏️ Practice On Your Own",
     "text": "✏️ Practice On Your Own\nComing soon.",
@@ -328,8 +339,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html",
-    "href": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html",
+    "objectID": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html",
+    "href": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html",
     "title": "3.3 Equations with Variables on Both Sides",
     "section": "",
     "text": "🔥 Warm-Up\nStudents will learn how to solve equations where variables appear on both sides of the equals sign, reinforcing the concept of balancing and simplifying equations.\nComing soon.",
@@ -339,8 +350,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html#learn-together",
-    "href": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html#learn-together",
+    "objectID": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html#learn-together",
+    "href": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html#learn-together",
     "title": "3.3 Equations with Variables on Both Sides",
     "section": "🧠 Learn Together",
     "text": "🧠 Learn Together\nComing soon.",
@@ -350,8 +361,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html#practice-on-your-own",
-    "href": "chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html#practice-on-your-own",
+    "objectID": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html#practice-on-your-own",
+    "href": "chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html#practice-on-your-own",
     "title": "3.3 Equations with Variables on Both Sides",
     "section": "✏️ Practice On Your Own",
     "text": "✏️ Practice On Your Own\nComing soon.",
@@ -361,8 +372,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html",
-    "href": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html",
+    "objectID": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html",
+    "href": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html",
     "title": "3.4 No Solution vs. Infinite Solutions",
     "section": "",
     "text": "🔥 Warm-Up\nThis lesson focuses on identifying when equations have no solution or infinitely many solutions and how to justify those conclusions.\nComing soon.",
@@ -372,8 +383,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html#learn-together",
-    "href": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html#learn-together",
+    "objectID": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html#learn-together",
+    "href": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html#learn-together",
     "title": "3.4 No Solution vs. Infinite Solutions",
     "section": "🧠 Learn Together",
     "text": "🧠 Learn Together\nComing soon.",
@@ -383,47 +394,14 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html#practice-on-your-own",
-    "href": "chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html#practice-on-your-own",
+    "objectID": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html#practice-on-your-own",
+    "href": "chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html#practice-on-your-own",
     "title": "3.4 No Solution vs. Infinite Solutions",
     "section": "✏️ Practice On Your Own",
     "text": "✏️ Practice On Your Own\nComing soon.",
     "crumbs": [
       "Unit 3: Solving Equations",
       "3.4 No Solution vs. Infinite Solutions"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html",
-    "href": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html",
-    "title": "3.5 Writing Equations from Real-Life Contexts",
-    "section": "",
-    "text": "🔥 Warm-Up\nStudents will translate real-world scenarios into algebraic equations, helping them understand the connection between math and everyday problem solving.\nComing soon.",
-    "crumbs": [
-      "Unit 3: Solving Equations",
-      "3.5 Writing Equations from Real-Life Contexts"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html#learn-together",
-    "href": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html#learn-together",
-    "title": "3.5 Writing Equations from Real-Life Contexts",
-    "section": "🧠 Learn Together",
-    "text": "🧠 Learn Together\nComing soon.",
-    "crumbs": [
-      "Unit 3: Solving Equations",
-      "3.5 Writing Equations from Real-Life Contexts"
-    ]
-  },
-  {
-    "objectID": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html#practice-on-your-own",
-    "href": "chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html#practice-on-your-own",
-    "title": "3.5 Writing Equations from Real-Life Contexts",
-    "section": "✏️ Practice On Your Own",
-    "text": "✏️ Practice On Your Own\nComing soon.",
-    "crumbs": [
-      "Unit 3: Solving Equations",
-      "3.5 Writing Equations from Real-Life Contexts"
     ]
   },
   {
@@ -457,6 +435,39 @@
     "crumbs": [
       "Unit 3: Solving Equations",
       "3.6 Solving with Tables, Graphs & Rules (Function Tie-In)"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html",
+    "href": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html",
+    "title": "3.5 Writing Equations from Real-Life Contexts",
+    "section": "",
+    "text": "🔥 Warm-Up\nStudents will translate real-world scenarios into algebraic equations, helping them understand the connection between math and everyday problem solving.\nComing soon.",
+    "crumbs": [
+      "Unit 3: Solving Equations",
+      "3.5 Writing Equations from Real-Life Contexts"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html#learn-together",
+    "href": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html#learn-together",
+    "title": "3.5 Writing Equations from Real-Life Contexts",
+    "section": "🧠 Learn Together",
+    "text": "🧠 Learn Together\nComing soon.",
+    "crumbs": [
+      "Unit 3: Solving Equations",
+      "3.5 Writing Equations from Real-Life Contexts"
+    ]
+  },
+  {
+    "objectID": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html#practice-on-your-own",
+    "href": "chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html#practice-on-your-own",
+    "title": "3.5 Writing Equations from Real-Life Contexts",
+    "section": "✏️ Practice On Your Own",
+    "text": "✏️ Practice On Your Own\nComing soon.",
+    "crumbs": [
+      "Unit 3: Solving Equations",
+      "3.5 Writing Equations from Real-Life Contexts"
     ]
   },
   {
@@ -1949,7 +1960,7 @@
     "href": "chapters/Supplemental/challenge_solutions.html#unit-2---algebraic-expressions",
     "title": "Challenge Problem Solutions",
     "section": "Unit 2 - Algebraic Expressions",
-    "text": "Unit 2 - Algebraic Expressions\n\n2.1 - Expressions and Their Parts\n\n\n\\(\\frac{x + 3}{2(y-2)}\\)\n\\((|5 - x| + 3)^2\\)\n\n\n\n\n2.2 - Evaluating Expressions\n\n\nAnswers vary\nConclusion: Evidence suggests these expressions are equivalent.\nAnswers vary\nConclusion: Evidence suggests these expressions are equivalent.\n\n\n\n\n2.3 - Combining Like Terms\n\n\nAnswers vary\n$3x + 4x -6 + 2. They are equivalent because they give the same expression when simplified.\nAnswers vary\n\\(4x - 3\\) and \\(2x - 3\\) both give \\(-3\\) when substituting 0 for \\(x\\). You shouldn’t use zero when testing for equivalence. Even so, it is only evidence of equivalence, not proof.\n\n\n\n\n2.4 - The Distributive Property\n\n\nDistribute first:\n\\[\n\\begin{align*}\n4(2x + 3) - (2x + 3) &= \\\\\n4(2x) + 4(3) -1(2x) -1(3) &= \\\\\n8x + 12 - 2x - 3 &= 6x + 9\n\\end{align*}\n\\]\nFactor first: \\[\n\\begin{align*}\n4(2x + 3) - (2x + 3) &= \\\\\n(4 - 1) * (2x + 3) &= \\\\\n3 (2x + 3) & = 6x + 9\n\\end{align*}\n\\]\nThese are equivalent because the distributive property works both ways. We can expand by multiplying into parentheses or we can factor out by pulling out what’s common. In both cases, we are just rearranging the same multiplication and subtraction.\nYou have to distribute twice.\n\\[\n\\begin{align*}\n(3x - 1) * (2x + 3) &= \\\\\n(3x - 1)(2x) + (3x - 1)(-1) &= \\\\\n6x^2 - 2x - 3x + 1 &= 6x^2 -5x + 1\n\\end{align*}\n\\]\n\n\n\n\n2.5 - Inputs, Outputs, and Functions\n\n\n\n\\(f(g(3)) = -11\\)\n\\(g(f(3)) = 1\\)\n\\(f(g(x)) = 1 - 4x\\)\n\n\n\\(C(4) = 5 + 3r\\)\n\n\n\n\n\n# rides\ncost\n\n\n\n\n5\n$20\n\n\n10\n$35\n\n\n15\n$50\n\n\n20\n$65\n\n\n\n\n\n\n\n2.6 - Equivalent Expressions\n\n\n\\(3(x+k)=3x+3k=3x+12 \\Rightarrow k=4\\).\nFactor out an \\(x+2\\) from \\(E_1(x)\\)\n\\[\n\\begin{align*}\nE_1(x) &= (x+2)(4x-1) + 3(x+2) \\\\\n&= (x+2)((4x - 1) + 3) \\\\\n&= (x + 2) (4x + 2) \\\\\n&= 2(x + 2)(2x + 1)\n\\end{align*}\n\\]\nThe expressions are equivalent.",
+    "text": "Unit 2 - Algebraic Expressions\n\n2.1 - Expressions and Their Parts\n\n\n\\(\\frac{x + 3}{2(y-2)}\\)\n\\((|5 - x| + 3)^2\\)\n\n\n\n\n2.2 - Evaluating Expressions\n\n\nAnswers vary\nConclusion: Evidence suggests these expressions are equivalent.\nAnswers vary\nConclusion: Evidence suggests these expressions are equivalent.\n\n\n\n\n2.3 - Combining Like Terms\n\n\nAnswers vary\n$3x + 4x -6 + 2. They are equivalent because they give the same expression when simplified.\nAnswers vary\n\\(4x - 3\\) and \\(2x - 3\\) both give \\(-3\\) when substituting 0 for \\(x\\). You shouldn’t use zero when testing for equivalence. Even so, it is only evidence of equivalence, not proof.\n\n\n\n\n2.4 - The Distributive Property\n\n\nDistribute first:\n\\[\n\\begin{align*}\n4(2x + 3) - (2x + 3) &= \\\\\n4(2x) + 4(3) -1(2x) -1(3) &= \\\\\n8x + 12 - 2x - 3 &= 6x + 9\n\\end{align*}\n\\]\nFactor first: \\[\n\\begin{align*}\n4(2x + 3) - (2x + 3) &= \\\\\n(4 - 1) * (2x + 3) &= \\\\\n3 (2x + 3) & = 6x + 9\n\\end{align*}\n\\]\nThese are equivalent because the distributive property works both ways. We can expand by multiplying into parentheses or we can factor out by pulling out what’s common. In both cases, we are just rearranging the same multiplication and subtraction.\nYou have to distribute twice.\n\\[\n\\begin{align*}\n(3x - 1) * (2x + 3) &= \\\\\n(3x - 1)(2x) + (3x - 1)(-1) &= \\\\\n6x^2 - 2x - 3x + 1 &= 6x^2 -5x + 1\n\\end{align*}\n\\]\n\n\n\n\n2.5 - Inputs, Outputs, and Functions\n\n\n\n\\(f(g(3)) = -11\\)\n\\(g(f(3)) = 1\\)\n\\(f(g(x)) = 1 - 4x\\)\n\n\n\\(C(4) = 5 + 3r\\)\n\n\n\n\n\n# rides\ncost\n\n\n\n\n5\n$20\n\n\n10\n$35\n\n\n15\n$50\n\n\n20\n$65\n\n\n\n\n\n\n\n2.6 - Equivalent Expressions\n\n\n\\(3(x+k)=3x+3k=3x+12 \\Rightarrow k=4\\).\nFactor out an \\(x+2\\) from \\(E_1(x)\\)\n\\[\n\\begin{align*}\nE_1(x) &= (x+2)(4x-1) + 3(x+2) \\\\\n&= (x+2)((4x - 1) + 3) \\\\\n&= (x + 2) (4x + 2) \\\\\n&= 2(x + 2)(2x + 1)\n\\end{align*}\n\\]\nThe expressions are equivalent.\n\n\n\n\n3.1 - Solving One-Step Equations\n\n\nPaycheck problem: Equation: \\(x - 38 = 25\\) Solution: \\(x = 63\\)\nDistance problem: Equation: \\(65 \\times h = 325\\) Solution: \\(h = 5\\)",
     "crumbs": [
       "Supplemental",
       "Challenge Problem Solutions"

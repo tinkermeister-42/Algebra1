@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3.2 Multi-Step Equations with Distribution – DHS Algebra 1</title>
+<title>3.1 – Solving One-Step Equations – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html" rel="next">
-<link href="../../chapters/Unit_3/3.1_Solving_One-Step_&amp;_Two-Step_Equations.html" rel="prev">
+<link href="../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" rel="next">
+<link href="../../chapters/Unit_3/index.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html">3.2 Multi-Step Equations with Distribution</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html">3.1 – Solving One-Step Equations</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -263,38 +292,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.1_Solving_One-Step_&amp;_Two-Step_Equations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.1 – Solving One- and Two-Step Equations</span></a>
+  <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">3.1 – Solving One-Step Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 – Solving One- and Two-Step Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.2 Multi-Step Equations with Distribution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.3 Equations with Variables on Both Sides</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.4 No Solution vs.&nbsp;Infinite Solutions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.5 Writing Equations from Real-Life Contexts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&amp;_Rules_(Function_tie-in).html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.6 Solving with Tables, Graphs &amp; Rules (Function Tie-In)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Writing Equations from Real-Life Contexts</span></a>
   </div>
 </li>
       </ul>
@@ -673,18 +708,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">🧠 Learn Together</a></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✏️ Practice On Your Own</a></li>
+  <li><a href="#one-step-equations-addition-and-subtraction" id="toc-one-step-equations-addition-and-subtraction" class="nav-link active" data-scroll-target="#one-step-equations-addition-and-subtraction">3.1.1 – One-Step Equations (Addition and Subtraction)</a></li>
+  <li><a href="#one-step-equations-multiplication-and-division" id="toc-one-step-equations-multiplication-and-division" class="nav-link" data-scroll-target="#one-step-equations-multiplication-and-division">3.1.2 – One-Step Equations (Multiplication and Division)</a></li>
+  <li><a href="#checking-a-solution" id="toc-checking-a-solution" class="nav-link" data-scroll-target="#checking-a-solution">3.1.3 – Checking a Solution ✅</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.html">3.2 Multi-Step Equations with Distribution</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html">3.1 – Solving One-Step Equations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">3.2 Multi-Step Equations with Distribution</h1>
+<h1 class="title">3.1 – Solving One-Step Equations</h1>
 </div>
 
 
@@ -701,48 +736,344 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This lesson extends equation solving to multi-step problems, including those that require the distributive property and combining like terms.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🎯 Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>In Unit 2, we learned how to work with <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>. Sometimes we could check a number, <a href="../../glossary.html#glossary-substitute" class="glossary-link" data-term="substitute" data-original-term="substitute">substitute</a> it into both expressions, and see that they matched. But, with some expressions, we noticed something important:</p>
+<p>Some values worked.</p>
+<p>Other values didn’t.</p>
+<p>This brings us to <strong>equations</strong>. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to <strong>find the numbers that make them equal</strong>.</p>
+<p>Those values are called the <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-term="solutions">solutions</a> of the equation.</p>
+<p>In this lesson, we begin with the basic rules for solving equations:</p>
+<ul>
+<li><p>Keep both sides equal.</p></li>
+<li><p>Undo operations step by step until the variable is by itself.</p></li>
+</ul>
+<p>Later lessons will build on these rules to solve more complicated equations.</p>
+<div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">Apply the distributive property to simplify equations</label></li>
-<li><label><input type="checkbox">Combine like terms before solving</label></li>
-<li><label><input type="checkbox">Solve multi-step equations with multiple operations</label></li>
+<li><label><input type="checkbox">I can solve one-step equations and show my work.</label></li>
+<li><label><input type="checkbox">I can check a solution by substituting it into the original equation.</label></li>
 </ul>
 </div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-term="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>Are <span class="math inline">\(2(x + 3)\)</span> and <span class="math inline">\(2x + 6\)</span> equivalent? How do you know?</p></li>
+<li><p>What value of <span class="math inline">\(x\)</span> would make <span class="math inline">\(3x\)</span> equivalent to 27?</p></li>
+<li><p>If adding 4 to <span class="math inline">\(x\)</span> makes 9, what is <span class="math inline">\(x\)</span>?</p></li>
+</ol>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="one-step-equations-addition-and-subtraction" class="level3">
+<h3 class="anchored" data-anchor-id="one-step-equations-addition-and-subtraction">3.1.1 – One-Step Equations (Addition and Subtraction)</h3>
+<p>An <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a> is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true.</p>
+<p>You can think of it like a scale with an expression in each pan. When the value of the left-hand side (LHS) is the same as the right-hand side (RHS), the scale will be in balance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Vocabulary
+<hr>
+<p><strong>Example 1:</strong> One-step equations with addition</p>
+<p>Here is a scale with an apple and 2 weights on the left-hand side and with 5 weights on the right-hand side. We would like to know the weight of an apple.</p>
+<p>Let <em>a</em> stand for the weight of one apple.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_x_plus_2_equal_5_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
 </div>
+<p><span class="math display">\[
+a + 2 = 5
+\]</span></p>
+<p>To find the weight (<strong>a</strong>) of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.</p>
+<p>Start by taking the two weights off the left-hand side.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_x_plus_2_equal_5_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
 </div>
-<div class="callout-body-container callout-body">
-<p>distributive property, like terms, combine, simplify</p>
+<p><span class="math display">\[
+a + 2 \textcolor{red}{- 2} = 5
+\]</span></p>
+<p>By removing the weights from the left pan, we got the apple by itself, but now the right pan weighs more than the left. We have to take two weights off of the right pan to restore the balance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_x_plus_2_equal_5_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
 </div>
+<p><span class="math display">\[
+\begin{align*}
+a &amp;= 5 \textcolor{red}{- 2} \\
+a &amp;= 3
+\end{align*}
+\]</span></p>
+<p>The weight of the apple is <strong>3</strong>.</p>
+<p>To <a href="../../glossary.html#glossary-solve" class="glossary-link" data-term="solve" data-original-term="solve">solve</a> the equation, we only needed one step – subtract 2 from each side. We always <strong>undo addition by subtracting</strong>.</p>
+<p>We don’t usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.</p>
+<p><span class="math display">\[
+\begin{align*}
+a+2 &amp;= 5 \\
+a+2 \textcolor{red}{- 2} &amp;= 5 \textcolor{red}{- 2} \tag*{\class{stepnote}{\textcolor{gray}{-2 both sides}}} \\
+a &amp;= 3
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Solve $x + 9 = 11$.">
+<p><span class="math display">\[
+\begin{align*}
+x + 9 &amp;= 11 \\
+x + 9 \textcolor{red}{- 9} &amp;= 11 \textcolor{red}{- 9} \\
+x &amp;= 2
+\end{align*}
+\]</span></p>
 </div>
-<section id="warm-up" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
-<p>Coming soon.</p>
+<hr>
+<p><strong>Example 2:</strong> One-step equations with subtraction</p>
+<p>Solving equations involving subtraction works the same way with a single difference. We always <strong>undo subtraction by adding</strong>.</p>
+<p>Solve the equation <span class="math inline">\(x - 5 = 8\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+x - 5 &amp;= 8 \\
+x - 5 \textcolor{red}{+ 5} &amp;= 8 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
+x &amp;= 13
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Solve $x - 12 = 2$.">
+<p><span class="math display">\[
+\begin{align*}
+x - 12 &amp;= 2 \\
+x - 12 \textcolor{red}{+ 12} &amp;= 2 \textcolor{red}{+ 12} \\
+x &amp;= 14
+\end{align*}
+\]</span></p>
+</div>
+<hr>
 </section>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
-<p>Coming soon.</p>
+<section id="one-step-equations-multiplication-and-division" class="level3">
+<h3 class="anchored" data-anchor-id="one-step-equations-multiplication-and-division">3.1.2 – One-Step Equations (Multiplication and Division)</h3>
+<p>Solving one-step equations with multiplication and division is very similar to solving them with addition and subtraction.</p>
+<p><strong>Example 3:</strong> One-step Equations with Multiplication</p>
+<p>Let’s return to our scale with apples and weights. This time, there are 2 apples on the left-hand side and 6 weights on the right. We want to know the weight of one apple.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_2x_equal_6_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p><span class="math display">\[
+2a = 6
+\]</span></p>
+<p>We can see that two apples is the same as 6 weights. Notice that for each apple there are 3 weights.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_2x_equal_6_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>We get an apple by itself by <strong>dividing</strong>. Like we saw with addition and subtraction, we can’t divide just one side because it won’t stay balanced.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_2x_equal_6_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p><span class="math display">\[
+2a \textcolor{red}{\div 2} = 6
+\]</span></p>
+<p>We have to <strong>divide both sides</strong> by 2 to maintain the balance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_3/Lesson_1/balance_2x_equal_6_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p><span class="math display">\[
+\begin{align*}
+2a \textcolor{red}{\div 2} &amp;= 6 \textcolor{red}{\div 2} \\
+a &amp;= 3
+\end{align*}
+\]</span></p>
+<p>An apple has a weight of <strong>3</strong>.</p>
+<p>Here is the solution showing just the algebra.</p>
+<p><span class="math display">\[
+\begin{align*}
+2a &amp;= 6 \\
+2a \textcolor{red}{\div 2} &amp;= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+a &amp;= 3
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Solve $3x = 15$.">
+<p><span class="math display">\[
+\begin{align*}
+3x &amp;= 15 \\
+3x \textcolor{red}{\div 3} &amp;= 15 \textcolor{red}{\div 3} \\
+x &amp;= 5
+\end{align*}
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 4:</strong> One-step Equations With Division</p>
+<p>Solving one-step equations with division is the same. But instead of dividing, we <strong>multiply</strong>.</p>
+<p>Solve <span class="math inline">\(\frac{a}{3} = 1\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+\frac{a}{3} &amp;= 1 \\
+\frac{a}{3} \textcolor{red}{\times 3} &amp;= 1 \textcolor{red}{\times 3} \tag*{\class{stepnote}{\textcolor{gray}{×3 both sides}}} \\
+a &amp;= 3
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Solve $\frac{x}{5}=10$">
+<p><span class="math display">\[
+\begin{align*}
+\frac{x}{5} &amp;= 10 \\
+\frac{x}{5} \textcolor{red}{\times 5} &amp;= 10 \textcolor{red}{\times 5} \\
+x &amp;= 50
+\end{align*}
+\]</span></p>
+</div>
+<div class="remember" title="How to Undo Operations">
+<p>Do the same move to <strong>both</strong> sides.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>If you see…</th>
+<th>Undo with…</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(+\)</span></td>
+<td><span class="math inline">\(-\)</span></td>
+<td><span class="math inline">\(x+7=12\)</span> → <span class="math inline">\(x=5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-\)</span></td>
+<td><span class="math inline">\(+\)</span></td>
+<td><span class="math inline">\(x-9=4\)</span> → <span class="math inline">\(x=13\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\times\)</span></td>
+<td><span class="math inline">\(\div\)</span></td>
+<td><span class="math inline">\(4x=20\)</span> → <span class="math inline">\(x=5\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\div\)</span></td>
+<td><span class="math inline">\(\times\)</span></td>
+<td><span class="math inline">\(\tfrac{x}{3}=6\)</span> → <span class="math inline">\(x=18\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
 </section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">✏️ Practice On Your Own</h2>
-<p>Coming soon.</p>
+<section id="checking-a-solution" class="level3">
+<h3 class="anchored">3.1.3 – Checking a Solution ✅</h3>
+<p>When you solve an equation, it’s important to <strong>check your solution</strong>.<br>
+This means plugging your answer back into the original equation to see if both sides are equal.<br>
+If they match, your solution is correct. If not, you made a mistake along the way.</p>
+<hr>
+<p><strong>Example – Check</strong></p>
+<p>Solve:<br>
+[ 3x - 5 = 16 ]</p>
+<ul>
+<li><p>Add 5 to both sides:<br>
+[ 3x = 21 ]</p></li>
+<li><p>Divide by 3:<br>
+[ x = 7 ]</p></li>
+<li><p><strong>Check:</strong> Substitute (x = 7) into the original equation.<br>
+[ 3(7) - 5 = 21 - 5 = 16 ]</p></li>
+</ul>
+<p>Since both sides equal 16, the solution (x = 7) is correct.</p>
+<hr>
+<p><strong>Why Check?</strong></p>
+<ul>
+<li>It helps catch arithmetic mistakes.<br>
+</li>
+<li>It confirms your solution actually works.<br>
+</li>
+<li>On tests, showing the check can sometimes earn partial credit.</li>
+</ul>
+<p>Think of it like testing your answer with a calculator: the equation itself is the calculator, and you’re making sure it “works out.”</p>
+<hr>
+<div class="you-try-m" title="Solve and Check">
+<ol type="1">
+<li><p>Solve <span class="math inline">\(2y = 10\)</span>. Then check your solution.</p></li>
+<li><p>Solve <span class="math inline">\(\dfrac{z}{-3} = 5\)</span>. Then check your solution.</p></li>
+</ol>
+</div>
+<div class="answer" title="Answer">
+<ol type="1">
+<li><p><span class="math inline">\(y = 5\)</span>, <span class="math inline">\(2(5) = 10\)</span></p></li>
+<li><p><span class="math inline">\(z = -15\)</span>, <span class="math inline">\(\dfrac{-15}{-3} = 5\)</span></p></li>
+</ol>
+</div>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="checking-a-solution">✍️ Practice On Your Own</h2>
+<p><strong>Level 1 – Basic</strong></p>
+<p>Solve each equation.</p>
+<ol type="1">
+<li><span class="math inline">\(x + 7 = 15\)</span></li>
+<li><span class="math inline">\(m - 12 = -8\)</span></li>
+<li><span class="math inline">\(5y = 40\)</span></li>
+<li><span class="math inline">\(\dfrac{z}{6} = -9\)</span></li>
+<li><span class="math inline">\(-12 = k + 5\)</span></li>
+<li><span class="math inline">\(r - (-8) = 2\)</span></li>
+</ol>
+<hr>
+<p><strong>Level 2 – Moderate</strong></p>
+<p>Solve each equation. Be careful with negatives and decimals.</p>
+<ol start="7" type="1">
+<li><span class="math inline">\(0.4t = 3.2\)</span></li>
+<li><span class="math inline">\(\dfrac{p}{-5} = 11\)</span></li>
+<li><span class="math inline">\(-0.6x = 4.2\)</span></li>
+<li><span class="math inline">\(2y + 0 = 14\)</span></li>
+<li><span class="math inline">\(\dfrac{z}{7} = -2\)</span></li>
+<li><span class="math inline">\(x - 15 = -23\)</span></li>
+</ol>
+<hr>
+<p><strong>Level 3 – Harder</strong></p>
+<p>For each, <strong>solve and then check your solution</strong> by substituting back into the original equation.</p>
+<ol start="13" type="1">
+<li><span class="math inline">\(-9 = \dfrac{n}{3}\)</span></li>
+<li><span class="math inline">\(\dfrac{3}{4}k = 9\)</span></li>
+<li><span class="math inline">\(-8x = -56\)</span></li>
+<li><span class="math inline">\(\dfrac{w}{-12} = -3\)</span></li>
+<li><span class="math inline">\(1.2y = 0.36\)</span></li>
+<li><span class="math inline">\(c + 14.5 = 2.3\)</span></li>
+<li><span class="math inline">\(\dfrac{2}{5}m = -6\)</span></li>
+<li><span class="math inline">\(\dfrac{x}{-4} = 7\)</span></li>
+<li><span class="math inline">\(2.5n = 0.75\)</span></li>
+<li><span class="math inline">\(-18 = 6 + p\)</span></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<p>Set up and solve each situation with a one-step equation. Show your check.</p>
+<ol start="23" type="1">
+<li><p><strong>Paycheck problem:</strong> After buying a video game for $38, Jasmine has $25 left. Write and solve an equation to find how much money she had before buying the game.</p></li>
+<li><p><strong>Distance problem:</strong> A car is traveling at 65 miles per hour. After <span class="math inline">\(h\)</span> hours, the car traveled 325 miles. Write and solve an equation to find how many hours the trip was.</p></li>
+</ol>
+<hr>
+<div class="answers">
+<ol type="1">
+<li><span class="math inline">\(x = 8\)</span></li>
+<li><span class="math inline">\(m = 4\)</span></li>
+<li><span class="math inline">\(y = 8\)</span></li>
+<li><span class="math inline">\(z = -54\)</span></li>
+<li><span class="math inline">\(a = 13\)</span></li>
+<li><span class="math inline">\(r = -6\)</span></li>
+<li><span class="math inline">\(t = 8\)</span></li>
+<li><span class="math inline">\(p = -55\)</span></li>
+<li><span class="math inline">\(x = -7\)</span></li>
+<li><span class="math inline">\(y = 7\)</span></li>
+<li><span class="math inline">\(z = -14\)</span></li>
+<li><span class="math inline">\(x = -8\)</span></li>
+<li><span class="math inline">\(n = -27\)</span> ✔ check: <span class="math inline">\(-27/3 = -9\)</span></li>
+<li><span class="math inline">\(k = 12\)</span> ✔ check: <span class="math inline">\((3/4)(12) = 9\)</span></li>
+<li><span class="math inline">\(x = 7\)</span> ✔ check: <span class="math inline">\(-8(7) = -56\)</span></li>
+<li><span class="math inline">\(w = 36\)</span> ✔ check: <span class="math inline">\(36 / -12 = -3\)</span></li>
+<li><span class="math inline">\(y = 0.3\)</span> ✔ check: <span class="math inline">\(1.2(0.3) = 0.36\)</span></li>
+<li><span class="math inline">\(c = -12.2\)</span> ✔ check: <span class="math inline">\(-12.2 + 14.5 = 2.3\)</span></li>
+<li><span class="math inline">\(m = -15\)</span> ✔ check: <span class="math inline">\((2/5)(-15) = -6\)</span></li>
+<li><span class="math inline">\(x = -28\)</span> ✔ check: <span class="math inline">\(-28 / -4 = 7\)</span></li>
+<li><span class="math inline">\(n = 0.3\)</span> ✔ check: <span class="math inline">\(2.5(0.3) = 0.75\)</span></li>
+<li><span class="math inline">\(p = -24\)</span> ✔ check: <span class="math inline">\(-18 = 6 + (-24)\)</span></li>
+</ol>
+</div>
 
 
 </section>
@@ -1153,13 +1484,13 @@ Vocabulary
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_3/3.1_Solving_One-Step_&amp;_Two-Step_Equations.html" class="pagination-link" aria-label="3.1 – Solving One- and Two-Step Equations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3.1 – Solving One- and Two-Step Equations</span>
+      <a href="../../chapters/Unit_3/index.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.html" class="pagination-link" aria-label="3.3 Equations with Variables on Both Sides">
-        <span class="nav-page-text">3.3 Equations with Variables on Both Sides</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" class="pagination-link" aria-label="3.2 – Solving One- and Two-Step Equations">
+        <span class="nav-page-text">3.2 – Solving One- and Two-Step Equations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
