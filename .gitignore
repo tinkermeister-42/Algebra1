@@ -45,3 +45,5 @@ ENV/
 Thumbs.db
 
 /.luarc.json
+
+**/*.quarto_ipynb

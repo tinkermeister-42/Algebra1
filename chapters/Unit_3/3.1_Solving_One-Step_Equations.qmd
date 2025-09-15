@@ -1,4 +1,4 @@
-# 3.1 – Solving One- and Two-Step Equations {.unnumbered}
+# 3.1 – Solving One-Step Equations {.unnumbered}
 
 In Unit 2, we learned how to work with {{< glink equivalent expressions >}}. Sometimes we could check a number, {{< glink substitute >}} it into both expressions, and see that they matched. But, with some expressions, we noticed something important:
 
@@ -21,7 +21,6 @@ Later lessons will build on these rules to solve more complicated equations.
 :::{.objectives}
 
 - [ ] I can solve one-step equations and show my work.
-- [ ] I can solve two-step equations and show my work.
 - [ ] I can check a solution by substituting it into the original equation.
 :::
 
@@ -238,173 +237,148 @@ Do the same move to **both** sides.
 
 ---
 
-### 3.1.3 – Two-Step Equations
+### 3.1.3 – Checking a Solution ✅
 
-Solving equations with more than one step works the same way as one-step equations, but we have to solve them by reversing the order of operations. 
-
-**Example 5:** Two-step Equation With Addition and Multiplication
-
-Here we have 2 apples and one weight on the left-hand side and 7 weights on the other.
-
-![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_1.png){width="300px" fig-align="center"}
-
-$$
-2a + 1 = 7
-$$
-
-Following the order of operations ({{< glink PEMDAS >}}) in reverse, we start by undoing the addition.
-
-![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_3.png){width="300px" fig-align="center"}
-
-$$
-2a + 1 \textcolor{red}{- 1} = 7 \textcolor{red}{- 1}
-$$
-
-Now we are ready to undo the multiplication.
-
-![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_5.png){width="300px" fig-align="center"}
-
-$$
-\begin{align*}
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
-a &= 3
-\end{align*}
-$$
-
-An apple has a weight of **3**.
-
-Here are the steps showing just the algebra.
-
-$$
-\begin{align*}
-2a + 1 &= 7 \\
-2a + 1 \textcolor{red}{- 1} &= 7 \textcolor{red}{- 1} \tag*{\class{stepnote}{\textcolor{gray}{-1 both sides}}} \\
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
-a &= 3
-\end{align*}
-$$
-
-:::{.you-try title="Solve $3x - 2 = 7$."}
-$$
-\begin{align*}
-3x - 2 &= 7 \\
-3x - 2 \textcolor{red}{+ 2} &= 7 \textcolor{red}{+ 2} \\
-3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
-x &= 3
-\end{align*}
-$$
-:::
-
-**Example 6:** Two-step Equation with Division and Subtraction
-
-Solve $\frac{x}{8} - 3 = 7$.
-
-$$
-\begin{align*}
-\frac{x}{8} - 3 &= 7 \\
-\frac{x}{8} - 3 \textcolor{red}{+ 3} &= 7 \textcolor{red}{+ 3} \tag*{\class{stepnote}{\textcolor{gray}{+3 both sides}}} \\
-\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \tag*{\class{stepnote}{\textcolor{gray}{×8 both sides}}} \\
-x &= 80
-\end{align*}
-$$
-
-:::{.you-try title="Solve $\frac{x}{2} + 6 = 10$."}
-
-$$
-\begin{align*}
-\frac{x}{2} + 6 &= 10 \\
-\frac{x}{2} + 6 \textcolor{red}{- 6} &= 10 \textcolor{red}{- 6} \\
-\frac{x}{2} \textcolor{red}{\times 2} &= 4 \textcolor{red}{\times 2} \\
-x &= 8
-\end{align*}
-$$
-
-:::
+When you solve an equation, it’s important to **check your solution**.  
+This means plugging your answer back into the original equation to see if both sides are equal.  
+If they match, your solution is correct. If not, you made a mistake along the way.
 
 ---
 
-## 3.1.3 – Checking a Solution ✅
-
-You can always check your work by plugging the answer back in.
-
 **Example – Check**
-Solve $3x - 5 = 16$.
 
-* Add 5: $3x = 21$
-* Divide by 3: $x = 7$
-* Check: $3(7) - 5 = 21 - 5 = 16$. 
+Solve:  
+\[
+3x - 5 = 16
+\]
+
+* Add 5 to both sides:  
+  \[
+  3x = 21
+  \]
+
+* Divide by 3:  
+  \[
+  x = 7
+  \]
+
+* **Check:** Substitute \(x = 7\) into the original equation.  
+  \[
+  3(7) - 5 = 21 - 5 = 16
+  \]
+
+Since both sides equal 16, the solution \(x = 7\) is correct.
+
+---
+
+**Why Check?**
+
+- It helps catch arithmetic mistakes.  
+- It confirms your solution actually works.  
+- On tests, showing the check can sometimes earn partial credit.  
+
+Think of it like testing your answer with a calculator: the equation itself is the calculator, and you’re making sure it “works out.”
+
+---
+
+:::{.you-try-m title="Solve and Check"}
+
+1. Solve $2y = 10$. Then check your solution.  
+
+2. Solve $\dfrac{z}{-3} = 5$. Then check your solution.  
+
+:::
+
+:::{.answer title="Answer"}
+
+1. $y = 5$,  $2(5) = 10$
+
+2. $z = -15$, $\dfrac{-15}{-3} = 5$
+
+:::
 
 ---
 
 {{< practice >}}
 
-Solve each equation. Show your steps.
+**Level 1 – Basic**
 
-**One-Step Equations (Addition/Subtraction)**
+Solve each equation.
 
-1. $x + 9 = 15$
-2. $x - 7 = 4$
-3. $x + 3 = -2$
-4. $x - 12 = -5$
+1. $x + 7 = 15$
+2. $m - 12 = -8$
+3. $5y = 40$
+4. $\dfrac{z}{6} = -9$
+5. $-12 = k + 5$
+6. $r - (-8) = 2$
 
-**One-Step Equations (Multiplication/Division)**
-5. $8x = 40$
-6. $-7x = 21$
-7. $x/5 = 6$
-8. $x/4 = -9$
+---
 
-**Two-Step Equations (Positive Variable)**
-9. $3x + 2 = 20$
-10. $5x - 11 = 4$
-11. $2x + 7 = 17$
-12. $6x - 9 = 21$
+**Level 2 – Moderate**
 
-**Two-Step Equations (Negative Variable)**
-13. $-2x + 7 = -5$
-14. $-4x - 3 = 9$
-15. $-3x + 8 = -10$
-16. $-5x - 6 = -21$
+Solve each equation. Be careful with negatives and decimals.
 
-**Two-Step Equations (Fraction Coefficient)**
-17. $\tfrac{x}{3} + 5 = 11$
-18. $\tfrac{x}{2} - 6 = -1$
-19. $\tfrac{2}{3}x + 4 = 10$
-20. $\tfrac{3}{4}x - 2 = 7$
+7. $0.4t = 3.2$
+8. $\dfrac{p}{-5} = 11$
+9. $-0.6x = 4.2$
+10. $2y + 0 = 14$
+11. $\dfrac{z}{7} = -2$
+12. $x - 15 = -23$
 
-**Mixed Review**
-21. $7x = -28$
-22. $x/6 + 8 = 2$
-23. $4x - 5 = 3x + 7$ *(slightly harder — variables on both sides)*
-24. $2(x + 5) = 16$ *(requires distribution)*
-25. $\tfrac{1}{2}x + 7 = \tfrac{x}{4} + 13$ *(challenge problem — fractions on both sides)*
+---
+
+**Level 3 – Harder**
+
+For each, **solve and then check your solution** by substituting back into the original equation.
+
+13. $-9 = \dfrac{n}{3}$
+14. $\dfrac{3}{4}k = 9$
+15. $-8x = -56$
+16. $\dfrac{w}{-12} = -3$
+17. $1.2y = 0.36$
+18. $c + 14.5 = 2.3$
+19. $\dfrac{2}{5}m = -6$
+20. $\dfrac{x}{-4} = 7$
+21. $2.5n = 0.75$
+22. $-18 = 6 + p$
+
+---
+
+**Challenge Problems**
+
+Set up and solve each situation with a one-step equation. Show your check.
+
+23. **Paycheck problem:**
+    After buying a video game for \$38, Jasmine has \$25 left. Write and solve an equation to find how much money she had before buying the game.
+
+24. **Distance problem:**
+    A car is traveling at 65 miles per hour. After $h$ hours, the car traveled 325 miles. Write and solve an equation to find how many hours the trip was.
 
 ---
 
 :::{.answers}
 
-1. $x = 6$
-2. $x = 11$
-3. $x = -5$
-4. $x = 7$
-5. $x = 5$
-6. $x = -3$
-7. $x = 30$
-8. $x = -36$
-9. $x = 6$
-10. $x = 3$
-11. $x = 5$
-12. $x = 5$
-13. $x = 6$
-14. $x = -3$
-15. $x = 6$
-16. $x = 3$
-17. $x = 18$
-18. $x = 10$
-19. $x = 9$
-20. $x = 12$
-21. $x = -4$
-22. $x = -36$
-23. $x = 12$
-24. $x = 3$
-25. $x = 12$
+1. $x = 8$
+2. $m = 4$
+3. $y = 8$
+4. $z = -54$
+5. $a = 13$
+6. $r = -6$
+7. $t = 8$
+8. $p = -55$
+9. $x = -7$
+10. $y = 7$
+11. $z = -14$
+12. $x = -8$
+13. $n = -27$ ✔ check: $-27/3 = -9$
+14. $k = 12$ ✔ check: $(3/4)(12) = 9$
+15. $x = 7$ ✔ check: $-8(7) = -56$
+16. $w = 36$ ✔ check: $36 / -12 = -3$
+17. $y = 0.3$ ✔ check: $1.2(0.3) = 0.36$
+18. $c = -12.2$ ✔ check: $-12.2 + 14.5 = 2.3$
+19. $m = -15$ ✔ check: $(2/5)(-15) = -6$
+20. $x = -28$ ✔ check: $-28 / -4 = 7$
+21. $n = 0.3$ ✔ check: $2.5(0.3) = 0.75$
+22. $p = -24$ ✔ check: $-18 = 6 + (-24)$
+
 :::

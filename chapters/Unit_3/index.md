@@ -19,17 +19,17 @@ By the end of this unit, you’ll be able to:
 
 ## Topics in This Unit
 
-[**Solving One- and Two-Step Equations**](3.1_Solving_One_and_Two_Step_Equations.html)
-Undo add/subtract and multiply/divide with inverse operations. **Always check**.
+[**Solving One-Step Equations**](3.1_Solving_One-Step_Equations.html)
+Undo add/subtract and multiply/divide with inverse operations.
 
-[**Multi-Step Equations with Distribution**](3.2_Multi_Step_Equations_with_Distribution.html)
+[**Solving Two-Step Equations**](3.1_Solving_Two-Step_Equations.html)
+Undo add/subtract and multiply/divide with inverse operations in reverse order.
+
+[**Multi-Step Equations with Distribution**](3.3_Multi_Step_Equations_with_Distribution.html)
 Distribute, combine like terms, and keep both sides balanced.
 
-[**Variables on Both Sides**](3.3_Variables_on_Both_Sides.html)
+[**Variables on Both Sides**](3.4_Variables_on_Both_Sides.html)
 Collect variable terms on one side and constants on the other, then solve and check.
-
-[**Equations with Fractions & Decimals (mini-lesson)**](3.4_Equations_with_Fractions_and_Decimals.html)
-Clear denominators or scale by powers of 10 to make solving cleaner.
 
 [**Special Cases: No Solution vs. Infinite Solutions**](3.5_Special_Cases_No_Solution_vs_Infinite_Solutions.html)
 See when both sides simplify to **always true** or **never true**, and explain.

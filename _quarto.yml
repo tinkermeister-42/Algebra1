@@ -72,12 +72,13 @@ book:
     - part: "Unit 3: Solving Equations"
       chapters:
         - file: chapters/Unit_3/index.md
-        - file: chapters/Unit_3/3.1_Solving_One-Step_&_Two-Step_Equations.md
-        - file: chapters/Unit_3/3.2_Multi-Step_Equations_with_Distribution.md
-        - file: chapters/Unit_3/3.3_Equations_with_Variables_on_Both_Sides.md
-        - file: chapters/Unit_3/3.4_No_Solution_vs._Infinite_Solutions.md
-        - file: chapters/Unit_3/3.5_Writing_Equations_from_Real-Life_Contexts.md
-        - file: chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).md
+        - file: chapters/Unit_3/3.1_Solving_One-Step_Equations.qmd
+        - file: chapters/Unit_3/3.2_Solving_Two-Step_Equations.qmd
+        - file: chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.qmd
+        - file: chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.qmd
+        - file: chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.qmd
+        - file: chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).qmd
+        - file: chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.qmd
 
     - part: "Unit 4: Graphs and Patterns"
       chapters:

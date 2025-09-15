@@ -1,0 +1,195 @@
+# 3.2 – Solving One- and Two-Step Equations {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can solve two-step equations and show my work.
+- [ ] I can check a solutions to two-step equations.
+:::
+
+:::{.vocab}
+{{< glink equation >}}, {{< glink solution >}}, {{< glink variable >}}
+:::
+
+{{< warmup >}}
+
+1. Are $2(x + 3)$ and $2x + 6$ equivalent? How do you know?
+
+2. What value of $x$ would make $3x$ equivalent to 27?
+
+3. If adding 4 to $x$ makes 9, what is $x$?
+
+{{< learn >}}
+
+
+### 3.2.1 – Two-Step Equations
+
+Solving equations with more than one step works the same way as one-step equations, but we have to solve them by reversing the order of operations. 
+
+**Example 5:** Two-step Equation With Addition and Multiplication
+
+Here we have 2 apples and one weight on the left-hand side and 7 weights on the other.
+
+![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_1.png){width="300px" fig-align="center"}
+
+$$
+2a + 1 = 7
+$$
+
+Following the order of operations ({{< glink PEMDAS >}}) in reverse, we start by undoing the addition.
+
+![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_3.png){width="300px" fig-align="center"}
+
+$$
+2a + 1 \textcolor{red}{- 1} = 7 \textcolor{red}{- 1}
+$$
+
+Now we are ready to undo the multiplication.
+
+![](/images/Unit_3/Lesson_1/balance_2x_plus_1_equal_7_5.png){width="300px" fig-align="center"}
+
+$$
+\begin{align*}
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
+a &= 3
+\end{align*}
+$$
+
+An apple has a weight of **3**.
+
+Here are the steps showing just the algebra.
+
+$$
+\begin{align*}
+2a + 1 &= 7 \\
+2a + 1 \textcolor{red}{- 1} &= 7 \textcolor{red}{- 1} \tag*{\class{stepnote}{\textcolor{gray}{-1 both sides}}} \\
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+a &= 3
+\end{align*}
+$$
+
+:::{.you-try title="Solve $3x - 2 = 7$."}
+$$
+\begin{align*}
+3x - 2 &= 7 \\
+3x - 2 \textcolor{red}{+ 2} &= 7 \textcolor{red}{+ 2} \\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
+x &= 3
+\end{align*}
+$$
+:::
+
+**Example 6:** Two-step Equation with Division and Subtraction
+
+Solve $\frac{x}{8} - 3 = 7$.
+
+$$
+\begin{align*}
+\frac{x}{8} - 3 &= 7 \\
+\frac{x}{8} - 3 \textcolor{red}{+ 3} &= 7 \textcolor{red}{+ 3} \tag*{\class{stepnote}{\textcolor{gray}{+3 both sides}}} \\
+\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \tag*{\class{stepnote}{\textcolor{gray}{×8 both sides}}} \\
+x &= 80
+\end{align*}
+$$
+
+:::{.you-try title="Solve $\frac{x}{2} + 6 = 10$."}
+
+$$
+\begin{align*}
+\frac{x}{2} + 6 &= 10 \\
+\frac{x}{2} + 6 \textcolor{red}{- 6} &= 10 \textcolor{red}{- 6} \\
+\frac{x}{2} \textcolor{red}{\times 2} &= 4 \textcolor{red}{\times 2} \\
+x &= 8
+\end{align*}
+$$
+
+:::
+
+---
+
+## 3.2.2 – Checking a Solution ✅
+
+You can always check your work by plugging the answer back in.
+
+**Example – Check**
+Solve $3x - 5 = 16$.
+
+* Add 5: $3x = 21$
+* Divide by 3: $x = 7$
+* Check: $3(7) - 5 = 21 - 5 = 16$. 
+
+---
+
+{{< practice >}}
+
+Solve each equation. Show your steps.
+
+**One-Step Equations (Addition/Subtraction)**
+
+1. $x + 9 = 15$
+2. $x - 7 = 4$
+3. $x + 3 = -2$
+4. $x - 12 = -5$
+
+**One-Step Equations (Multiplication/Division)**
+5. $8x = 40$
+6. $-7x = 21$
+7. $x/5 = 6$
+8. $x/4 = -9$
+
+**Two-Step Equations (Positive Variable)**
+9. $3x + 2 = 20$
+10. $5x - 11 = 4$
+11. $2x + 7 = 17$
+12. $6x - 9 = 21$
+
+**Two-Step Equations (Negative Variable)**
+13. $-2x + 7 = -5$
+14. $-4x - 3 = 9$
+15. $-3x + 8 = -10$
+16. $-5x - 6 = -21$
+
+**Two-Step Equations (Fraction Coefficient)**
+17. $\tfrac{x}{3} + 5 = 11$
+18. $\tfrac{x}{2} - 6 = -1$
+19. $\tfrac{2}{3}x + 4 = 10$
+20. $\tfrac{3}{4}x - 2 = 7$
+
+**Mixed Review**
+21. $7x = -28$
+22. $x/6 + 8 = 2$
+23. $4x - 5 = 3x + 7$ *(slightly harder — variables on both sides)*
+24. $2(x + 5) = 16$ *(requires distribution)*
+25. $\tfrac{1}{2}x + 7 = \tfrac{x}{4} + 13$ *(challenge problem — fractions on both sides)*
+
+---
+
+:::{.answers}
+
+1. $x = 6$
+2. $x = 11$
+3. $x = -5$
+4. $x = 7$
+5. $x = 5$
+6. $x = -3$
+7. $x = 30$
+8. $x = -36$
+9. $x = 6$
+10. $x = 3$
+11. $x = 5$
+12. $x = 5$
+13. $x = 6$
+14. $x = -3$
+15. $x = 6$
+16. $x = 3$
+17. $x = 18$
+18. $x = 10$
+19. $x = 9$
+20. $x = 12$
+21. $x = -4$
+22. $x = -36$
+23. $x = 12$
+24. $x = 3$
+25. $x = 12$
+:::

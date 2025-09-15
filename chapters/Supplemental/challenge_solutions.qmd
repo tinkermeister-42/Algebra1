@@ -201,3 +201,15 @@ No Challenge Questions
     The expressions are equivalent.
 :::
 
+### 3.1 - Solving One-Step Equations
+
+:::{.answers}
+
+23. **Paycheck problem:**
+    Equation: $x - 38 = 25$
+    Solution: $x = 63$
+
+24. **Distance problem:**
+    Equation: $65 \times h = 325$
+    Solution: $h = 5$
+:::
