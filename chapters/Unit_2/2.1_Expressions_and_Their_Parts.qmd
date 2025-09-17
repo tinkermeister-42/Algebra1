@@ -127,7 +127,7 @@ Why avoid $\times$? To keep it from looking like the variable x.
 
 Expressions are made of **terms**. A term may have a variable with a **coefficient** (the number in front) or be a **constant** (a number without a variable).
 
-Example: $4x + 2y - 7$
+Example: $4x^2 + 2y - 7$
 
 $$
 \huge{
