@@ -213,3 +213,13 @@ No Challenge Questions
     Equation: $65 \times h = 325$
     Solution: $h = 5$
 :::
+
+### 3.2 - Solving Two-Step Equations
+
+:::{.answers}
+
+19. $x = \frac{16y}{9}$
+
+20. $y = \frac{9x}{16}$
+
+:::

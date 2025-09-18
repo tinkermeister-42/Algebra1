@@ -237,7 +237,7 @@ Do the same move to **both** sides.
 
 ---
 
-### 3.1.3 – Checking a Solution ✅
+### 3.1.3 – Checking a Solution 
 
 When you solve an equation, it’s important to **check your solution**.  
 This means plugging your answer back into the original equation to see if both sides are equal.  
@@ -264,7 +264,7 @@ $$
 3(\textcolor{red}{7}) = 21
 $$
 
-Since both sides equal 21, the solution $x = 7$ is correct.
+Since both sides equal 21, the solution $x = 7$ is correct. ✅
 
 ---
 
