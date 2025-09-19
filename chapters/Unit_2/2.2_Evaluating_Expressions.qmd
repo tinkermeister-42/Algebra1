@@ -365,7 +365,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 24. Test if $3(a + b) - 2(a - b)$ and $a + 5b$ are equivalent. Try at least two different sets of values for $a$ and $b$.
 
-25. Test if $2(a + b)^2 - 2a^2 - 4ab$ and $2b^2 are equivalent. Try at least two different sets of values for $a$ and $b$.
+25. Test if $2(a + b)^2 - 2a^2 - 4ab$ and $2b^2$ are equivalent. Try at least two different sets of values for $a$ and $b$.
 
 ---
 
