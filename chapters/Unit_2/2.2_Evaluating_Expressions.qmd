@@ -7,7 +7,7 @@ In this lesson, we will learn to **substitute** numbers for the variables in an 
 :::{.objectives}
 - [ ] I can substitute values into expressions and simplify them  
 - [ ] I can use the correct order of operations with variables and parentheses  
-- [ ] I can use substitution to show two expressions are equivalent
+- [ ] I can use substitution to test whether two expressions are equivalent
 :::
 
 :::{.vocab}
@@ -28,15 +28,42 @@ In this lesson, we will learn to **substitute** numbers for the variables in an 
 
 {{< learn >}}
 
-### 2.2.1 – What Does It Mean to Evaluate?
+### 2.2.1 – What Does It Mean to Evaluate an Expression?
 
-To **evaluate** an {{< glink expression >}} means to find its {{< glink value >}} by **substituting** (replacing) the variable with a number.
+To **evaluate** an {{< glink expression >}} means to find its value by substituting (replacing) the variable with a number.
+
+To see how this works, let’s use an analogy — The Great Cookie Caper!
+
+![](/images/Unit_2/Lesson_2/CookieCaper.png)
+
+**Panel 1**
+
+We don’t know who the thief is yet. All we know is that a thief stole the cookies.
+Here, “the thief” is like a variable — it stands for some unknown person.
+
+**Panel 2**
+
+A witness comes forward: “The thief is Bob.”
+Now we have an equation:
+Thief = Bob
+
+This gives the variable a value.
+
+**Panel 3**
+
+Since we know who the thief is, we can rewrite the story:
+Bob stole the cookies.
+We replaced “the thief” with Bob.
+
+Math works the same way. An expression starts as a kind of story with unknowns (variables). When we know the value of the variable, we substitute it in and then simplify. That’s what it means to evaluate an expression.
+
+---
 
 **Example 1:**
 
 Evaluate $4x + 1$ when $x = 3$.
 
-First we replace the $x$ with what it is.
+First we replace the $x$ with what it is. 
 
 $$
 4(\textcolor{red}3) + 1
@@ -51,6 +78,20 @@ $$
 :::{.remember}
 When you see "**=**", think "**is**". In the previous example, we could say "x **is** 3".
 :::
+
+:::{.think title="How is this example like *The Great Cookie Caper*?"}
+
+- $4x + 1$ -- The story
+
+- The variable $x$ -- The unknown thief
+
+- $x=3$ -- The thief *is* Bob.
+
+- $4x + 1=13$ -- Bob stole the cookies.
+
+:::
+
+---
 
 **Example 2:**
 
@@ -103,6 +144,8 @@ Then we simplify.
 $$
 2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
 $$
+
+---
 
 **Example 2:**
 
@@ -161,6 +204,7 @@ $$
 2(2) - 3(1) = 4 - 3 = 1
 $$
 
+---
 
 **Example 2:**
 
@@ -217,6 +261,8 @@ $$
 
 They both gave the same result and so we have {{< glink evidence >}} that the two expressions are equivalent.
 
+---
+
 **Example 2:**
 
 Test if expressions $3(x - 1)$ and $3x - 2$ are equivalent.
@@ -239,7 +285,9 @@ When we substitute numbers to check if two expressions are equivalent, we are re
 
 - If the two expressions give the **same result** for a substitution, that is **evidence** that they are equivalent, but it **does not** prove they are always the same.
 
-**Example:**
+---
+
+**Example 3:**
 Test if $6y$ and $2y$ are equivalent expressions.
 
 Try $y = 0$.
