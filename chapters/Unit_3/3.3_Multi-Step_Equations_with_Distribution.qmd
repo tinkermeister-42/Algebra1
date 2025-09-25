@@ -1,23 +1,452 @@
-#  3.2 Multi-Step Equations with Distribution {.unnumbered}
+#  3.3 Multi-Step Equations with Distribution {.unnumbered}
 
-This lesson extends equation solving to multi-step problems, including those that require the distributive property and combining like terms.
+So far in this unit, we’ve solved one-step and two-step {{< glink equations >}}. Now some equations look “messy” because they have parentheses or several terms that belong together. The key idea in this lesson is:
 
-::: {.callout-note icon=false}
-## 🎯 Objectives
-- [ ] Apply the distributive property to simplify equations
-- [ ] Combine like terms before solving
-- [ ] Solve multi-step equations with multiple operations
+Simplify first, then solve.
+
+We’ll use a short recipe:
+
+Use the {{< glink distributive property >}} to remove parentheses.
+
+{{< glink combine like terms >}} on the same side.
+
+{{< glink simplify >}} to a one- or two-step equation and solve.
+
+Check your answer by substituting it into the original equation.
+
+In this lesson, variables will stay on one side of the equation. Later, we’ll handle equations with variables on both sides.
+
+:::{.objectives}
+- [ ] I can apply the distributive property to simplify equations
+- [ ] I can combine like terms before solving
+- [ ] I can solve multi-step equations with multiple operations
+- [ ] I can check my solutions to multi-step equations by substitution
 :::
 
-::: {.callout-note title=Vocabulary}
-distributive property, like terms, combine, simplify
+:::{.vocab}
+{{< glink combine like terms >}}, {{< glink distributive property >}}, {{< glink equation >}}, {{< glink simplify >}}
 :::
 
-## 🔥 Warm-Up
-Coming soon.
+{{< warmup >}}
 
-## 🧠 Learn Together
-Coming soon.
+1. Solve $3x - 5 = 19$
 
-## ✏️ Practice On Your Own
-Coming soon.
+2. Simplify $-2(3x - 4) + 2x$
+
+3. Is $x=10$ a solution to $5(x - 1) = 45$?
+
+{{< learn >}}
+
+### 3.3.1 – Distribution in Equations
+
+Sometimes equations have parentheses. When that happens, you can’t get the variable by itself right away—you have to **simplify first**. This is where the **distributive property** comes in.
+
+Remember from Lesson 2.4:
+
+$$
+a(b + c) = ab + ac
+$$
+
+That rule lets us “remove” parentheses so the equation is easier to work with.
+
+---
+
+**Example 1:**
+
+Solve:
+
+$$
+3(x + 4) = 21
+$$
+
+The variable $x$ is trapped inside the parentheses. We start by applying the distributive property to free $x$.
+
+$$
+\begin{align*}
+\textcolor{red}{3}(x + 4) &= 21  \\
+3x + 12 &= 21 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}}
+\end{align*}
+$$
+
+Now we can solve the two-step equation.
+
+$$
+\begin{align*}
+3x + 12 \textcolor{red}{- 12} &= 21 \textcolor{red}{- 12} \tag*{\class{stepnote}{\textcolor{gray}{–12 both sides}}} \\
+3x &= 9 \\
+\\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+x &= 3
+\end{align*}
+$$
+
+---
+
+**Example 2:**
+
+Solve:
+
+$$
+-2(2x - 5) = 6
+$$
+
+Notice the negative sign. We need to be extra careful to include it when we distribute.
+
+$$
+\begin{align*}
+\textcolor{red}{-2}(2x - 5) &= 6 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -2}}} \\
+-4x + 10 &= 6  \\
+\\
+-4x + 10 \textcolor{red}{- 10} &= 6 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{-10 both sides}}} \\
+-4x &= -4 \\
+\\
+-4x \textcolor{red}{\div -4} &= -4 \textcolor{red}{\div -4} \tag*{\class{stepnote}{\textcolor{gray}{÷-4 both sides}}} \\
+x &= 1
+\end{align*}
+$$
+
+---
+
+:::{.you-try title="Solve $3(2x + 1) = 15$"}
+Solve:
+
+$$
+\begin{align*}
+\textcolor{red}{3}(2x + 1) &= 15 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
+6x + 3 &= 15 \\
+\\
+6x + 3 \textcolor{red}{-3} &= 15 \textcolor{red}{-3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}}\\
+6x &= 12 \\
+\\
+6x \textcolor{red}{\div 6} &= 12 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}}\\
+x &= 2
+\end{align*}
+$$
+
+:::
+
+---
+
+### 3.3.2 – Combining Like Terms in Equations
+
+Sometimes an equation looks messy because there are {{< glink like terms >}} on the same side of the equals sign. Before you can solve, you need to combine them into a single term.
+
+---
+
+**Example 1:**
+
+Solve:
+
+$$
+4x + 7 + 2x = 31
+$$
+
+Start by combining the like terms $4x$ and $2x$.
+
+$$
+\begin{align*}
+\textcolor{blue}{4x} + 7 + \textcolor{blue}{2x} &= 31 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{6x} + 7 &= 31 
+\end{align*}
+$$
+
+Now solve the two-step equation.
+
+$$
+\begin{align*}
+6x + 7 \textcolor{red}{- 7} &= 31 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{–7 both sides}}} \\
+6x &= 24 \\
+\\
+6x \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}} \\
+x &= 4
+\end{align*}
+$$
+
+---
+
+**Example 2:**
+
+Solve:
+
+$$
+2(x + 5) + 3x = 25
+$$
+
+This equation has both parentheses **and** like terms. Start by distributing.
+
+$$
+\begin{align*}
+\textcolor{red}{2}(x + 5) + 3x &= 25 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 2}}} \\
+2x + 10 + 3x &= 25 
+\end{align*}
+$$
+
+Now combine $2x$ and $3x$.
+
+$$
+\begin{align*}
+\textcolor{blue}{2x} + 10 + \textcolor{blue}{3x} &= 25 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{5x} + 10 &= 25
+\end{align*}
+$$
+
+Finish solving:
+
+$$
+\begin{align*}
+5x + 10 \textcolor{red}{- 10} &= 25 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{–10 both sides}}} \\
+5x &= 15 \\
+\\
+5x \textcolor{red}{\div 5} &= 15 \textcolor{red}{\div 5} \tag*{\class{stepnote}{\textcolor{gray}{÷5 both sides}}} \\
+x &= 3
+\end{align*}
+$$
+
+---
+
+**Example 3:**
+
+Solve:
+
+$$
+-3(x - 4) + 2x  - 3 = 7
+$$
+
+Be careful with those negative signs!
+
+$$
+\begin{align*}
+\textcolor{red}{-3}(x - 4) + 2x - 3 &= 7 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -3}}} \\
+-3x + 12 + 2x - 3 &= 7 \\
+\\
+\textcolor{blue}{-3x} + \textcolor{green}{12} + \textcolor{blue}{2x} \textcolor{green}{- 3} &= 7 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{-x} + \textcolor{green}{9} &= 7 \\
+\\
+-x + 9 \textcolor{red}{-9} &= 7 \textcolor{red}{- 9} \tag*{\class{stepnote}{\textcolor{gray}{-9 both sides}}} \\
+-x &= -2 \\
+\\
+-x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+x &= 2
+\end{align*}
+$$
+
+
+:::{.you-try title="Solve $4(x + 2) - 3x + 5 = 18$"}
+
+$$
+\begin{align*}
+\textcolor{red}{4}(x + 2) - 3x + 5 &= 18 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
+4x + 8 - 3x + 5 &= 18 \\
+\\
+\textcolor{blue}{4x} + \textcolor{green}{8} + \textcolor{blue}{-3x} + \textcolor{green}{5} &= 18 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{x} + \textcolor{green}{13} &= 18 \\
+\\
+x + 13 \textcolor{red}{-13} &= 18 \textcolor{red}{-13} \tag*{\class{stepnote}{\textcolor{gray}{-13 both sides}}} \\
+x &= 5
+\end{align*}
+$$
+
+:::
+
+---
+
+### 3.3.3 – Checking Your Work
+
+As always, it is a good idea to check your answer by substituting the solution into the original equation.
+
+---
+
+**Example:**
+
+Solve and check:
+
+$$
+4(x + 1) - 2x + 3 = 13
+$$
+
+**Step 1. Solve the equation**
+
+$$
+\begin{align*}
+\textcolor{red}{4}(x + 1) - 2x + 3 &= 13 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
+4x + 4 - 2x + 3 &= 13 \\
+\\
+\textcolor{blue}{4x} + \textcolor{green}{4} + \textcolor{blue}{-2x} + \textcolor{green}{3} &= 13 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{2x} + \textcolor{green}{7} &= 13 \\
+\\
+2x + 7 \textcolor{red}{- 7} &= 13 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
+2x &= 6 \\
+\\
+2x \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+x &= 3
+\end{align*}
+$$
+
+---
+
+**Step 2. Check the solution**
+
+Substitute $x = 3$ into the **original equation**:
+
+$$
+4(x + 1) - 2x + 3 = 13
+$$
+
+$$
+4(\textcolor{red}{3} + 1) - 2(\textcolor{red}{3}) + 3 = 13
+$$
+
+$$
+4(4) - 6 + 3 = 13
+$$
+
+$$
+16 - 6 + 3 = 13
+$$
+
+$$
+13 = 13 \quad \checkmark
+$$
+
+Since both sides are equal, $x = 3$ is correct.
+
+
+:::{.you-try title="Solve and check $3(x + 2) - x + 1 = 11$"}
+
+**Step 1. Solve the equation**
+
+$$
+\begin{align*}
+\textcolor{red}{3}(x + 2) - x + 1 &= 11 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
+3x + 6 - x + 1 &= 11 \\
+\\
+\textcolor{blue}{3x} + \textcolor{green}{6} + \textcolor{blue}{-x} + \textcolor{green}{1} &= 11 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{2x} + \textcolor{green}{7} &= 11 \\
+\\
+2x + 7 \textcolor{red}{- 7} &= 11 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
+2x &= 4 \\
+\\
+2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+x &= 2
+\end{align*}
+$$
+
+
+**Step 2. Check the solution**
+
+Substitute $x = 2$ into the **original equation**:
+
+$$
+\begin{align*}
+3(x + 2) - x + 1 &= 11 \\
+3(\textcolor{red}{2} + 2) - \textcolor{red}{2} + 1 &= 11 \\
+3(4) - 2 + 1 &= 11 \\
+12 - 2 + 1 &= 11 \\
+11 &= 11 \quad \checkmark
+\end{align*}
+$$
+
+:::
+
+---
+
+{{< practice >}}
+
+**Directions:** Solve each equation and check your work.
+
+**1–5. Distribute then solve**
+
+1. $2(x + 3) = 14$
+
+2. $3(x - 2) = 12$
+
+3. $-4(1 + x) = -20$
+
+4. $5(x - 3) = 10$
+
+5. $-2(-6 + x) = 10$
+
+---
+
+**6–10. Combine like terms**
+
+6. $4x + 7 + 3x = 28$
+
+7. $9x - 5 + 2x = 40$
+
+8. $6x + 3 + x + 4 = 18$
+
+9. $12x + 7 - 4x = 35$
+
+10. $15 + 8x + 2x = 55$
+
+---
+
+**11–23. Distribution + like terms**
+
+11. $2(4 + x) + 3x = 22$
+
+12. $2x + 5(-1 + x) = 19$
+
+13. $5x - 3(2 + x) = 11$
+
+14. $x + 2 + 4(-3 + x) = 14$
+
+15. $3 + 2x + 6(1 + x) = 35$
+
+16. $3 - 2(-5 + x) = 15$
+
+17. $-4x + 7(2 + x) = 20$
+
+18. $2x + 5 + 3(-4 + x) = 8$
+
+19. $2x + 7 - 5(1 + x) = -6$
+
+20. $3x + 5 + 8(-2 + x) = 40$
+
+21. $-x + 4 + 3(3 + x) = 18$
+
+22. $5x - 3 - 2(-4 + x) = 16$
+
+23. $-2x + 7 + 4(1 + x) = 25$
+
+---
+
+**Challenge Problems**
+
+24.  $6(x + 2) - 4(x - 3) + 5 = 31$
+
+25.  $2(x + y) + 3x - 4 = 5y + 6 \quad$ *(solve for $x$ in terms of $y$)*
+
+---
+
+:::{.answers}
+
+1. $x = 4$
+2. $x = 6$
+3. $x = 4$
+4. $x = 5$
+5. $x = 1$
+6. $x = 3$
+7. $x = 5$
+8. $x = 1$
+9. $x = 4$
+10. $x = 4$
+11. $x = 2$
+12. $x = 2$
+13. $x = 4$
+14. $x = 3$
+15. $x = 4$
+16. $x = 4$
+17. $x = 2$
+18. $x = 3$
+19. $x = -1$
+20. $x = 3$
+21. $x = 2$
+22. $x = 2$
+23. $x = 3$
+
+:::
+
+
+

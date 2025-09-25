@@ -1,8 +1,10 @@
 # 2.2 – Evaluating Expressions {.unnumbered}
 
-In the last lesson, you learned how to **read** and **write** algebraic expressions -- the "phrases" of math. As with any language, the meaning of phrases can change with the situation. This is true in algebra too! The meaning or **value** of an expression depends on what numbers we use for its variables. 
+In the last lessons, you learned how to solve one-step and two-step {{< glink equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
-In this lesson, we will learn to **substitute** numbers for the variables in an expression so that we can **evaluate** its meaning in a particular situation.
+But not every equation is that neat. Sometimes parentheses get in the way, or extra terms make things look messy. These are called multi-step equations.
+
+In this lesson, you’ll learn how to simplify first — by using the {{< glink distributive property >}} and combining like terms — and then solve the equation step by step. We’ll also practice checking our solutions to be sure they really work.
 
 :::{.objectives}
 - [ ] I can substitute values into expressions and simplify them  

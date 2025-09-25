@@ -223,3 +223,13 @@ No Challenge Questions
 20. $y = \frac{9x}{16}$
 
 :::
+
+### 3.3 - Multi-Step Equations with Distribution
+
+:::{.answers}
+
+24. $x = 1$
+
+25. $x = y + 2$
+
+:::

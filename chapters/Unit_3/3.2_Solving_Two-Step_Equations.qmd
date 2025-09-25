@@ -67,7 +67,10 @@ Here are the steps showing just the algebra.
 $$
 \begin{align*}
 2a + 1 &= 7 \\
+\\
 2a + 1 \textcolor{red}{- 1} &= 7 \textcolor{red}{- 1} \tag*{\class{stepnote}{\textcolor{gray}{-1 both sides}}} \\
+2a &= 6 \\
+\\
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
 a &= 3
 \end{align*}
@@ -77,7 +80,10 @@ $$
 $$
 \begin{align*}
 3x - 2 &= 7 \\
+\\
 3x - 2 \textcolor{red}{+ 2} &= 7 \textcolor{red}{+ 2} \\
+3x &= 9 \\
+\\
 3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
 x &= 3
 \end{align*}
@@ -93,7 +99,10 @@ This works the same way. First we undo the subtraction. Then we undo the divisio
 $$
 \begin{align*}
 \frac{x}{8} - 3 &= 7 \\
+\\
 \frac{x}{8} - 3 \textcolor{red}{+ 3} &= 7 \textcolor{red}{+ 3} \tag*{\class{stepnote}{\textcolor{gray}{+3 both sides}}} \\
+\frac{x}{8} &= 10 \\
+\\
 \frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \tag*{\class{stepnote}{\textcolor{gray}{×8 both sides}}} \\
 x &= 80
 \end{align*}
@@ -104,7 +113,10 @@ $$
 $$
 \begin{align*}
 \frac{x}{2} + 6 &= 10 \\
+\\
 \frac{x}{2} + 6 \textcolor{red}{- 6} &= 10 \textcolor{red}{- 6} \\
+\frac{x}{2} &= 4 \\
+\\
 \frac{x}{2} \textcolor{red}{\times 2} &= 4 \textcolor{red}{\times 2} \\
 x &= 8
 \end{align*}
@@ -119,7 +131,10 @@ Solve $-x + 5 = 3$.
 $$
 \begin{align*}
 -x + 5 &= 3 \\
+\\
 -x + 5 \textcolor{red}{- 5} &= 3 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+-x &= -2 \\
+\\
 -x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
 x &= 2
 \end{align*}
@@ -134,7 +149,10 @@ When a variable has no coefficient, the coefficient is $1$. When the variable ha
 $$
 \begin{align*}
 3 - x &= 7 \\
+\\
 3 \textcolor{red}{- 3} - x &= 7 \textcolor{red}{- 3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}} \\
+-x &= 4 \\
+\\
 -x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
 x &= -4
 \end{align*}
@@ -153,7 +171,10 @@ Solve $3x - 5 = 16$.
 $$
 \begin{align*}
 3x - 5 &= 16 \\
+\\
 3x - 5 \textcolor{red}{+ 5} &= 16 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
+3x &= 21 \\
+\\
 3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
 x &= 7
 \end{align*}
