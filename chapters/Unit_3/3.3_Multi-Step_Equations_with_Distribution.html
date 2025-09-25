@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3.2 Multi-Step Equations with Distribution – DHS Algebra 1</title>
+<title>3.3 Multi-Step Equations with Distribution – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html">3.2 Multi-Step Equations with Distribution</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html">3.3 Multi-Step Equations with Distribution</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -276,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">3.2 Multi-Step Equations with Distribution</span></a>
+ <span class="menu-text">3.3 Multi-Step Equations with Distribution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -679,18 +708,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">🧠 Learn Together</a></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✏️ Practice On Your Own</a></li>
+  <li><a href="#distribution-in-equations" id="toc-distribution-in-equations" class="nav-link active" data-scroll-target="#distribution-in-equations">3.3.1 – Distribution in Equations</a></li>
+  <li><a href="#combining-like-terms-in-equations" id="toc-combining-like-terms-in-equations" class="nav-link" data-scroll-target="#combining-like-terms-in-equations">3.3.2 – Combining Like Terms in Equations</a></li>
+  <li><a href="#checking-your-work" id="toc-checking-your-work" class="nav-link" data-scroll-target="#checking-your-work">3.3.3 – Checking Your Work</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html">3.2 Multi-Step Equations with Distribution</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html">3.3 Multi-Step Equations with Distribution</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">3.2 Multi-Step Equations with Distribution</h1>
+<h1 class="title">3.3 Multi-Step Equations with Distribution</h1>
 </div>
 
 
@@ -707,48 +736,338 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This lesson extends equation solving to multi-step problems, including those that require the distributive property and combining like terms.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🎯 Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>So far in this unit, we’ve solved one-step and two-step <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equations">equations</a>. Now some equations look “messy” because they have parentheses or several terms that belong together. The key idea in this lesson is:</p>
+<p>Simplify first, then solve.</p>
+<p>We’ll use a short recipe:</p>
+<p>Use the <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-term="distributive property" data-original-term="distributive property">distributive property</a> to remove parentheses.</p>
+<p><a href="../../glossary.html#glossary-combine-like-term" class="glossary-link" data-term="combine like term" data-original-term="combine like terms">combine like terms</a> on the same side.</p>
+<p><a href="../../glossary.html#glossary-simplify" class="glossary-link" data-term="simplify" data-original-term="simplify">simplify</a> to a one- or two-step equation and solve.</p>
+<p>Check your answer by substituting it into the original equation.</p>
+<p>In this lesson, variables will stay on one side of the equation. Later, we’ll handle equations with variables on both sides.</p>
+<div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">Apply the distributive property to simplify equations</label></li>
-<li><label><input type="checkbox">Combine like terms before solving</label></li>
-<li><label><input type="checkbox">Solve multi-step equations with multiple operations</label></li>
+<li><label><input type="checkbox">I can apply the distributive property to simplify equations</label></li>
+<li><label><input type="checkbox">I can combine like terms before solving</label></li>
+<li><label><input type="checkbox">I can solve multi-step equations with multiple operations</label></li>
+<li><label><input type="checkbox">I can check my solutions to multi-step equations by substitution</label></li>
 </ul>
 </div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-combine-like-term" class="glossary-link" data-term="combine like term" data-original-term="combine like terms">combine like terms</a>, <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-term="distributive property" data-original-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-term="simplify" data-original-term="simplify">simplify</a></p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>Solve <span class="math inline">\(3x - 5 = 19\)</span></p></li>
+<li><p>Simplify <span class="math inline">\(-2(3x - 4) + 2x\)</span></p></li>
+<li><p>Is <span class="math inline">\(x=10\)</span> a solution to <span class="math inline">\(5(x - 1) = 45\)</span>?</p></li>
+</ol>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="distribution-in-equations" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-in-equations">3.3.1 – Distribution in Equations</h3>
+<p>Sometimes equations have parentheses. When that happens, you can’t get the variable by itself right away—you have to <strong>simplify first</strong>. This is where the <strong>distributive property</strong> comes in.</p>
+<p>Remember from Lesson 2.4:</p>
+<p><span class="math display">\[
+a(b + c) = ab + ac
+\]</span></p>
+<p>That rule lets us “remove” parentheses so the equation is easier to work with.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+3(x + 4) = 21
+\]</span></p>
+<p>The variable <span class="math inline">\(x\)</span> is trapped inside the parentheses. We start by applying the distributive property to free <span class="math inline">\(x\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{3}(x + 4) &amp;= 21  \\
+3x + 12 &amp;= 21 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}}
+\end{align*}
+\]</span></p>
+<p>Now we can solve the two-step equation.</p>
+<p><span class="math display">\[
+\begin{align*}
+3x + 12 \textcolor{red}{- 12} &amp;= 21 \textcolor{red}{- 12} \tag*{\class{stepnote}{\textcolor{gray}{–12 both sides}}} \\
+3x &amp;= 9 \\
+\\
+3x \textcolor{red}{\div 3} &amp;= 9 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+x &amp;= 3
+\end{align*}
+\]</span></p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+-2(2x - 5) = 6
+\]</span></p>
+<p>Notice the negative sign. We need to be extra careful to include it when we distribute.</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{-2}(2x - 5) &amp;= 6 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -2}}} \\
+-4x + 10 &amp;= 6  \\
+\\
+-4x + 10 \textcolor{red}{- 10} &amp;= 6 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{-10 both sides}}} \\
+-4x &amp;= -4 \\
+\\
+-4x \textcolor{red}{\div -4} &amp;= -4 \textcolor{red}{\div -4} \tag*{\class{stepnote}{\textcolor{gray}{÷-4 both sides}}} \\
+x &amp;= 1
+\end{align*}
+\]</span></p>
+<hr>
+<div class="you-try" title="Solve $3(2x + 1) = 15$">
+<p>Solve:</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{3}(2x + 1) &amp;= 15 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
+6x + 3 &amp;= 15 \\
+\\
+6x + 3 \textcolor{red}{-3} &amp;= 15 \textcolor{red}{-3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}}\\
+6x &amp;= 12 \\
+\\
+6x \textcolor{red}{\div 6} &amp;= 12 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}}\\
+x &amp;= 2
+\end{align*}
+\]</span></p>
 </div>
-<div class="callout-title-container flex-fill">
-Vocabulary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>distributive property, like terms, combine, simplify</p>
-</div>
-</div>
-<section id="warm-up" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
-<p>Coming soon.</p>
+<hr>
 </section>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
-<p>Coming soon.</p>
+<section id="combining-like-terms-in-equations" class="level3">
+<h3 class="anchored" data-anchor-id="combining-like-terms-in-equations">3.3.2 – Combining Like Terms in Equations</h3>
+<p>Sometimes an equation looks messy because there are <a href="../../glossary.html#glossary-like-term" class="glossary-link" data-term="like term" data-original-term="like terms">like terms</a> on the same side of the equals sign. Before you can solve, you need to combine them into a single term.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+4x + 7 + 2x = 31
+\]</span></p>
+<p>Start by combining the like terms <span class="math inline">\(4x\)</span> and <span class="math inline">\(2x\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{blue}{4x} + 7 + \textcolor{blue}{2x} &amp;= 31 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{6x} + 7 &amp;= 31
+\end{align*}
+\]</span></p>
+<p>Now solve the two-step equation.</p>
+<p><span class="math display">\[
+\begin{align*}
+6x + 7 \textcolor{red}{- 7} &amp;= 31 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{–7 both sides}}} \\
+6x &amp;= 24 \\
+\\
+6x \textcolor{red}{\div 6} &amp;= 24 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}} \\
+x &amp;= 4
+\end{align*}
+\]</span></p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+2(x + 5) + 3x = 25
+\]</span></p>
+<p>This equation has both parentheses <strong>and</strong> like terms. Start by distributing.</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{2}(x + 5) + 3x &amp;= 25 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 2}}} \\
+2x + 10 + 3x &amp;= 25
+\end{align*}
+\]</span></p>
+<p>Now combine <span class="math inline">\(2x\)</span> and <span class="math inline">\(3x\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{blue}{2x} + 10 + \textcolor{blue}{3x} &amp;= 25 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{5x} + 10 &amp;= 25
+\end{align*}
+\]</span></p>
+<p>Finish solving:</p>
+<p><span class="math display">\[
+\begin{align*}
+5x + 10 \textcolor{red}{- 10} &amp;= 25 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{–10 both sides}}} \\
+5x &amp;= 15 \\
+\\
+5x \textcolor{red}{\div 5} &amp;= 15 \textcolor{red}{\div 5} \tag*{\class{stepnote}{\textcolor{gray}{÷5 both sides}}} \\
+x &amp;= 3
+\end{align*}
+\]</span></p>
+<hr>
+<p><strong>Example 3:</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+-3(x - 4) + 2x  - 3 = 7
+\]</span></p>
+<p>Be careful with those negative signs!</p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{-3}(x - 4) + 2x - 3 &amp;= 7 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -3}}} \\
+-3x + 12 + 2x - 3 &amp;= 7 \\
+\\
+\textcolor{blue}{-3x} + \textcolor{green}{12} + \textcolor{blue}{2x} \textcolor{green}{- 3} &amp;= 7 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{-x} + \textcolor{green}{9} &amp;= 7 \\
+\\
+-x + 9 \textcolor{red}{-9} &amp;= 7 \textcolor{red}{- 9} \tag*{\class{stepnote}{\textcolor{gray}{-9 both sides}}} \\
+-x &amp;= -2 \\
+\\
+-x \textcolor{red}{\div -1} &amp;= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+x &amp;= 2
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Solve $4(x + 2) - 3x + 5 = 18$">
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{4}(x + 2) - 3x + 5 &amp;= 18 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
+4x + 8 - 3x + 5 &amp;= 18 \\
+\\
+\textcolor{blue}{4x} + \textcolor{green}{8} + \textcolor{blue}{-3x} + \textcolor{green}{5} &amp;= 18 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{x} + \textcolor{green}{13} &amp;= 18 \\
+\\
+x + 13 \textcolor{red}{-13} &amp;= 18 \textcolor{red}{-13} \tag*{\class{stepnote}{\textcolor{gray}{-13 both sides}}} \\
+x &amp;= 5
+\end{align*}
+\]</span></p>
+</div>
+<hr>
 </section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">✏️ Practice On Your Own</h2>
-<p>Coming soon.</p>
+<section id="checking-your-work" class="level3">
+<h3 class="anchored">3.3.3 – Checking Your Work</h3>
+<p>As always, it is a good idea to check your answer by substituting the solution into the original equation.</p>
+<hr>
+<p><strong>Example:</strong></p>
+<p>Solve and check:</p>
+<p><span class="math display">\[
+4(x + 1) - 2x + 3 = 13
+\]</span></p>
+<p><strong>Step 1. Solve the equation</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{4}(x + 1) - 2x + 3 &amp;= 13 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
+4x + 4 - 2x + 3 &amp;= 13 \\
+\\
+\textcolor{blue}{4x} + \textcolor{green}{4} + \textcolor{blue}{-2x} + \textcolor{green}{3} &amp;= 13 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{2x} + \textcolor{green}{7} &amp;= 13 \\
+\\
+2x + 7 \textcolor{red}{- 7} &amp;= 13 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
+2x &amp;= 6 \\
+\\
+2x \textcolor{red}{\div 2} &amp;= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+x &amp;= 3
+\end{align*}
+\]</span></p>
+<hr>
+<p><strong>Step 2. Check the solution</strong></p>
+<p>Substitute <span class="math inline">\(x = 3\)</span> into the <strong>original equation</strong>:</p>
+<p><span class="math display">\[
+4(x + 1) - 2x + 3 = 13
+\]</span></p>
+<p><span class="math display">\[
+4(\textcolor{red}{3} + 1) - 2(\textcolor{red}{3}) + 3 = 13
+\]</span></p>
+<p><span class="math display">\[
+4(4) - 6 + 3 = 13
+\]</span></p>
+<p><span class="math display">\[
+16 - 6 + 3 = 13
+\]</span></p>
+<p><span class="math display">\[
+13 = 13 \quad \checkmark
+\]</span></p>
+<p>Since both sides are equal, <span class="math inline">\(x = 3\)</span> is correct.</p>
+<div class="you-try" title="Solve and check $3(x + 2) - x + 1 = 11$">
+<p><strong>Step 1. Solve the equation</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+\textcolor{red}{3}(x + 2) - x + 1 &amp;= 11 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
+3x + 6 - x + 1 &amp;= 11 \\
+\\
+\textcolor{blue}{3x} + \textcolor{green}{6} + \textcolor{blue}{-x} + \textcolor{green}{1} &amp;= 11 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{2x} + \textcolor{green}{7} &amp;= 11 \\
+\\
+2x + 7 \textcolor{red}{- 7} &amp;= 11 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
+2x &amp;= 4 \\
+\\
+2x \textcolor{red}{\div 2} &amp;= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+x &amp;= 2
+\end{align*}
+\]</span></p>
+<p><strong>Step 2. Check the solution</strong></p>
+<p>Substitute <span class="math inline">\(x = 2\)</span> into the <strong>original equation</strong>:</p>
+<p><span class="math display">\[
+\begin{align*}
+3(x + 2) - x + 1 &amp;= 11 \\
+3(\textcolor{red}{2} + 2) - \textcolor{red}{2} + 1 &amp;= 11 \\
+3(4) - 2 + 1 &amp;= 11 \\
+12 - 2 + 1 &amp;= 11 \\
+11 &amp;= 11 \quad \checkmark
+\end{align*}
+\]</span></p>
+</div>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="checking-your-work">✍️ Practice On Your Own</h2>
+<p><strong>Directions:</strong> Solve each equation and check your work.</p>
+<p><strong>1–5. Distribute then solve</strong></p>
+<ol type="1">
+<li><p><span class="math inline">\(2(x + 3) = 14\)</span></p></li>
+<li><p><span class="math inline">\(3(x - 2) = 12\)</span></p></li>
+<li><p><span class="math inline">\(-4(1 + x) = -20\)</span></p></li>
+<li><p><span class="math inline">\(5(x - 3) = 10\)</span></p></li>
+<li><p><span class="math inline">\(-2(-6 + x) = 10\)</span></p></li>
+</ol>
+<hr>
+<p><strong>6–10. Combine like terms</strong></p>
+<ol start="6" type="1">
+<li><p><span class="math inline">\(4x + 7 + 3x = 28\)</span></p></li>
+<li><p><span class="math inline">\(9x - 5 + 2x = 40\)</span></p></li>
+<li><p><span class="math inline">\(6x + 3 + x + 4 = 18\)</span></p></li>
+<li><p><span class="math inline">\(12x + 7 - 4x = 35\)</span></p></li>
+<li><p><span class="math inline">\(15 + 8x + 2x = 55\)</span></p></li>
+</ol>
+<hr>
+<p><strong>11–23. Distribution + like terms</strong></p>
+<ol start="11" type="1">
+<li><p><span class="math inline">\(2(4 + x) + 3x = 22\)</span></p></li>
+<li><p><span class="math inline">\(2x + 5(-1 + x) = 19\)</span></p></li>
+<li><p><span class="math inline">\(5x - 3(2 + x) = 11\)</span></p></li>
+<li><p><span class="math inline">\(x + 2 + 4(-3 + x) = 14\)</span></p></li>
+<li><p><span class="math inline">\(3 + 2x + 6(1 + x) = 35\)</span></p></li>
+<li><p><span class="math inline">\(3 - 2(-5 + x) = 15\)</span></p></li>
+<li><p><span class="math inline">\(-4x + 7(2 + x) = 20\)</span></p></li>
+<li><p><span class="math inline">\(2x + 5 + 3(-4 + x) = 8\)</span></p></li>
+<li><p><span class="math inline">\(2x + 7 - 5(1 + x) = -6\)</span></p></li>
+<li><p><span class="math inline">\(3x + 5 + 8(-2 + x) = 40\)</span></p></li>
+<li><p><span class="math inline">\(-x + 4 + 3(3 + x) = 18\)</span></p></li>
+<li><p><span class="math inline">\(5x - 3 - 2(-4 + x) = 16\)</span></p></li>
+<li><p><span class="math inline">\(-2x + 7 + 4(1 + x) = 25\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="24" type="1">
+<li><p><span class="math inline">\(6(x + 2) - 4(x - 3) + 5 = 31\)</span></p></li>
+<li><p><span class="math inline">\(2(x + y) + 3x - 4 = 5y + 6 \quad\)</span> <em>(solve for <span class="math inline">\(x\)</span> in terms of <span class="math inline">\(y\)</span>)</em></p></li>
+</ol>
+<hr>
+<div class="answers">
+<ol type="1">
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 6\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 5\)</span></li>
+<li><span class="math inline">\(x = 1\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+<li><span class="math inline">\(x = 5\)</span></li>
+<li><span class="math inline">\(x = 1\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+<li><span class="math inline">\(x = -1\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+</ol>
+</div>
 
 
 </section>
