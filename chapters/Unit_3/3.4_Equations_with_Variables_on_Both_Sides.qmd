@@ -1,4 +1,4 @@
-#  3.3 Equations with Variables on Both Sides {.unnumbered}
+#  3.4 Equations with Variables on Both Sides {.unnumbered}
 
 Students will learn how to solve equations where variables appear on both sides of the equals sign, reinforcing the concept of balancing and simplifying equations.
 

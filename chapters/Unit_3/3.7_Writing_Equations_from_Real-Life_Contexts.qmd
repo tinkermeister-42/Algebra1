@@ -1,4 +1,4 @@
-#  3.5 Writing Equations from Real-Life Contexts {.unnumbered}
+#  3.7 Writing Equations from Real-Life Contexts {.unnumbered}
 
 Students will translate real-world scenarios into algebraic equations, helping them understand the connection between math and everyday problem solving.
 

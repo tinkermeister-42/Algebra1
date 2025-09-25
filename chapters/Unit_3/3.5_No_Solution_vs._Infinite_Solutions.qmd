@@ -1,4 +1,4 @@
-#  3.4 No Solution vs. Infinite Solutions {.unnumbered}
+#  3.5 No Solution vs. Infinite Solutions {.unnumbered}
 
 This lesson focuses on identifying when equations have no solution or infinitely many solutions and how to justify those conclusions.
 
