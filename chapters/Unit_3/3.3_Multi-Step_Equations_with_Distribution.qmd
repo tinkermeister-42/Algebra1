@@ -1,20 +1,10 @@
 #  3.3 Multi-Step Equations with Distribution {.unnumbered}
 
-So far in this unit, we’ve solved one-step and two-step {{< glink equations >}}. Now some equations look “messy” because they have parentheses or several terms that belong together. The key idea in this lesson is:
+In the last lessons, you learned how to solve one-step and two-step {{< glink equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
-Simplify first, then solve.
+But not every equation is that neat. Sometimes parentheses get in the way, or extra terms make things look messy. These are called multi-step equations.
 
-We’ll use a short recipe:
-
-Use the {{< glink distributive property >}} to remove parentheses.
-
-{{< glink combine like terms >}} on the same side.
-
-{{< glink simplify >}} to a one- or two-step equation and solve.
-
-Check your answer by substituting it into the original equation.
-
-In this lesson, variables will stay on one side of the equation. Later, we’ll handle equations with variables on both sides.
+In this lesson, you’ll learn how to simplify first — by using the distributive property and combining like terms — and then solve the equation step by step. We’ll also practice checking our solutions to be sure they really work.
 
 :::{.objectives}
 - [ ] I can apply the distributive property to simplify equations
