@@ -1,23 +1,232 @@
-#  3.4 Equations with Variables on Both Sides {.unnumbered}
+#  3.4 - Solving Equations With Variables on Both Sides {.unnumbered}
 
-Students will learn how to solve equations where variables appear on both sides of the equals sign, reinforcing the concept of balancing and simplifying equations.
+Coming Soon
 
-::: {.callout-note icon=false}
-## 🎯 Objectives
-- [ ] Move variable terms to one side of the equation
-- [ ] Simplify both sides before solving
-- [ ] Identify equations with no or infinite solutions
+:::{.objectives}
+
+- [ ] I can solve equations that have variables on both sides using inverse operations.
+- [ ] I can simplify equations that require distribution or combining like terms before solving.
+ - [ ] I can recognize and avoid common pitfalls when solving equations with variables on both sides.
+
 :::
 
-::: {.callout-note title=Vocabulary}
-combine like terms, variable, no solution, infinite solutions
+:::{.vocab}
+
+{{< glink term >}}, ...
+
 :::
 
-## 🔥 Warm-Up
-Coming soon.
+{{< warmup >}}
 
-## 🧠 Learn Together
-Coming soon.
+{{< learn >}}
 
-## ✏️ Practice On Your Own
-Coming soon.
+### 3.4.1 – The Basic Strategy
+
+Up until now, the variable was always on one side of the equation. But sometimes we’ll see the variable appear on **both sides**. This adds a step to solving equations:
+
+**Get all the variables on one side and the numbers on the other.**
+
+Let’s use the apple-and-scale model to see how this works.
+
+**Example 1:**
+
+Here we have 3 apples and 1 weight on the left-hand side, and 1 apple and 7 weights on the right-hand side.
+
+![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7.png){width="300px" fig-align="center"}
+
+$$
+3a + 1 = a + 7
+$$
+
+To find the weight of an apple, we need apples on one side and weights on the other. We start by removing an apple from the right pan.
+
+![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_2.png){width="300px" fig-align="center"}
+
+$$
+\begin{align*}
+3a + 1 &= a + 7 \textcolor{red}{- a} \\
+3a + 1 &\neq 7
+\end{align*}
+$$
+
+The scale lost its balance! Always remember to **do the same thing to both sides** of the equation!
+
+![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_3.png){width="300px" fig-align="center"}
+
+$$
+\begin{align*}
+3a + 1 \textcolor{red}{- a} &= a + 7 \textcolor{red}{- a} \\
+2a + 1 &= 7
+\end{align*}
+$$
+
+Removing an apple from **both sides** kept the balance. Now we just have a two-step equation.
+
+Step 1: Remove a weight from both pans.
+
+![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_4.png){width="300px" fig-align="center"}
+
+$$
+\begin{align*}
+2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \\
+2a &= 6
+\end{align*}
+$$
+
+Step 2: Take half of what is in each pan.
+
+![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_5.png){width="300px" fig-align="center"}
+
+$$
+\begin{align*}
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
+a &= 3
+\end{align*}
+$$
+
+An apple has a weight of **3**.
+
+---
+
+**Example 2:**
+
+Solve $4x + 5 = 2x + 9$.
+
+$$
+\begin{align*}
+4x + 5 &= 2x + 9 \\
+\\
+4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}} \\
+2x + 5 &= 9 \\
+\\
+2x + 5 \textcolor{red}{- 5} &= 9 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+2x &= 4 \\
+\\
+2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+x &= 2
+\end{align*}
+$$
+
+:::{.you-try title="Solve $5x + 3 = 2x + 12$."}
+$$
+\begin{align*}
+5x + 3 &= 2x + 12 \\
+\\
+5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \\
+3x + 3 &= 12 \\
+\\
+3x + 3 \textcolor{red}{- 3} &= 12 \textcolor{red}{- 3} \\
+3x &= 9 \\
+\\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
+x &= 3
+\end{align*}
+$$
+:::
+
+---
+
+### 3.4.2 – Simplifying Before Solving
+
+Not every equation is ready to solve right away. Sometimes, each side of the equation has parentheses or extra terms that must be simplified first. The strategy is:
+
+1. Simplify both sides (distribute, combine like terms).
+2. Get all variables on the **left side**.
+3. Solve as usual.
+
+---
+
+**Example 1:**
+
+Solve $2(x + 3) = 3x + 1$.
+
+$$
+\begin{align*}
+\textcolor{red}{2}(x + 3) &= 3x + 1 \tag*{\class{stepnote}{\textcolor{gray}{Distribute the 2}}} \\
+2x + 6 &= 3x + 1  \\
+\\
+2x + 6 \textcolor{red}{- 3x} &= 3x + 1 \textcolor{red}{- 3x} \tag*{\class{stepnote}{\textcolor{gray}{$-3x$ both sides}}}\\
+-x + 6 &= 1 \\
+\\
+-x + 6 \textcolor{red}{- 6} &= 1 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+-x &= -5 \\
+\\
+-x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+x &= 5
+\end{align*}
+$$
+
+---
+
+**Example 2:**
+
+Solve $4x + 5 + x = 2x + 12$.
+
+$$
+\begin{align*}
+\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+\textcolor{blue}{5x} + 6 &= 2x + 12  \\
+\\
+5x + 6 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+3x + 6 &= 12 \\
+\\
+3x + 6 \textcolor{red}{- 6} &= 12 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+3x &= 6 \\
+\\
+3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+x &= 2
+\end{align*}
+$$
+
+---
+
+**Example 3:**
+
+Solve $3(x - 2) + 4 = 2(x + 1)$.
+
+$$
+\begin{align*}
+\textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \tag*{\class{stepnote}{\textcolor{gray}{Distribute both sides}}}\\
+3x - 6 + 4 &= 2x + 2  \\
+\\
+3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &= 2x + 2 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+3x \textcolor{blue}{- 2} &= 2x + 2 \\
+\\
+3x - 2 \textcolor{red}{- 2x} &= 2x + 2 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+x - 2 &= 2 \\
+\\
+x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \tag*{\class{stepnote}{\textcolor{gray}{+2 both sides}}}\\
+x &= 4
+\end{align*}
+$$
+
+---
+
+:::{.you-try title="Solve $2(x + 4) = x + 10$."}
+
+$$
+\begin{align*}
+2(x + 4) &= x + 10 \\
+\\
+2x + 8 &= x + 10 \\
+\\
+2x + 8 \textcolor{red}{- x} &= x + 10 \textcolor{red}{- x} \\
+x + 8 &= 10 \\
+\\
+x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \\
+x &= 2
+\end{align*}
+$$
+
+:::
+
+
+### 3.4.3 - Common Pitfalls and Tips
+
+Coming soon
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
