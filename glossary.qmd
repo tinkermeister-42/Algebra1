@@ -28,6 +28,19 @@ It lets us describe patterns, write rules, and solve problems that work in many 
 
 ---
 
+### All Real Numbers {#glossary-all-real-numbers}
+
+When we say the solution to an equation is **all real numbers**, it means that *any number you plug in will make the equation true*. This usually happens when both sides of the equation are exactly the same after simplifying.
+
+To save space and make their answers more clear, mathematicians like to use $\mathbb{R}$ in place of the words "all real numbers" or "infinitely many solutions".
+
+> **Example:**
+> $2(x + 3) = 2x + 6$
+> simplifies to $2x + 6 = 2x + 6$, which is always true.
+> The solution is **all real numbers**.
+
+---
+
 ### Associative (Associative Property) {#glossary-associative}
 
 An operation is **associative** if **changing how the numbers are grouped** (parentheses) **doesn’t change the result**—as long as the operation is the same throughout.
@@ -575,6 +588,23 @@ Terms whose variable part matches exactly — same variables with the same expon
 
 ---
 
+### Linear Equation {#glossary-linear-equation}
+
+A **linear equation** is an equation where the variable has an exponent of 1. Its graph is always a straight line. 
+
+In Algebra 1, linear equations usually look like:
+
+$$
+ax + b = c
+$$
+
+where $a$, $b$, and $c$ are numbers.
+
+> **Example:**
+> $3x + 7 = 19$ is a linear equation. Solving gives $x = 4$.
+
+---
+
 ### Markup {#glossary-markup}
 
 A markup is the **amount added to a cost** to set a higher selling price, usually as a percent.
@@ -624,6 +654,19 @@ Multiplication by **proximity** means to multiply two things that are next to ea
 > - $3x$
 > - $5(x-1)$
 > - $(2x +5)(3x-1)$
+
+---
+
+### No Solution {#glossary-no-solution}
+
+An equation has **no solution** when *no value* for the variable will make it true. This happens when the variable terms cancel out and you’re left with a false statement.
+
+Often, mathematicians use $\varnothing$ in place of "no solution". It means the "null set" which is a fancy way of saying, the answer with nothing in it.
+
+> **Example:**
+> $4x + 5 = 4x - 2$
+> simplifies to $5 = -2$, which is false.
+> The solution is **no solution**.
 
 ---
 

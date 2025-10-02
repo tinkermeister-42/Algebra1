@@ -69,14 +69,14 @@ book:
         - file: chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd
         - file: chapters/Unit_2/2.6_Equivalent_Expressions.qmd
 
-    - part: "Unit 3: Solving Equations"
+    - part: "Unit 3: Solving Linear Equations"
       chapters:
         - file: chapters/Unit_3/index.md
         - file: chapters/Unit_3/3.1_Solving_One-Step_Equations.qmd
         - file: chapters/Unit_3/3.2_Solving_Two-Step_Equations.qmd
         - file: chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.qmd
         - file: chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.qmd
-        - file: chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.qmd
+        - file: chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.qmd
         - file: chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).qmd
         - file: chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.qmd
 
