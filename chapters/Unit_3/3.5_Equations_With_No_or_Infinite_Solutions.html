@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3.5 No Solution vs.&nbsp;Infinite Solutions – DHS Algebra 1</title>
+<title>3.5 Equations With No or Infinite Solutions – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html">3.5 No Solution vs.&nbsp;Infinite Solutions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html">3.5 Equations With No or Infinite Solutions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -249,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Unit 3: Solving Equations</span></a>
+ <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -282,13 +311,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.4 Equations with Variables on Both Sides</span></a>
+ <span class="menu-text">3.4 - Solving Equations With Variables on Both Sides</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">3.5 No Solution vs.&nbsp;Infinite Solutions</span></a>
+  <a href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">3.5 Equations With No or Infinite Solutions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -679,18 +708,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">🔥 Warm-Up</a></li>
-  <li><a href="#learn-together" id="toc-learn-together" class="nav-link" data-scroll-target="#learn-together">🧠 Learn Together</a></li>
-  <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">✏️ Practice On Your Own</a></li>
+  <li><a href="#equations-with-no-solution" id="toc-equations-with-no-solution" class="nav-link active" data-scroll-target="#equations-with-no-solution">3.5.1 – Equations With No Solution</a></li>
+  <li><a href="#equations-with-infinitely-many-solutions" id="toc-equations-with-infinitely-many-solutions" class="nav-link" data-scroll-target="#equations-with-infinitely-many-solutions">3.5.2 – Equations With Infinitely Many Solutions</a></li>
+  <li><a href="#determining-the-number-of-solutions" id="toc-determining-the-number-of-solutions" class="nav-link" data-scroll-target="#determining-the-number-of-solutions">3.5.3 – Determining the Number of Solutions</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_No_Solution_vs._Infinite_Solutions.html">3.5 No Solution vs.&nbsp;Infinite Solutions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html">3.5 Equations With No or Infinite Solutions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">3.5 No Solution vs.&nbsp;Infinite Solutions</h1>
+<h1 class="title">3.5 Equations With No or Infinite Solutions</h1>
 </div>
 
 
@@ -707,48 +736,240 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This lesson focuses on identifying when equations have no solution or infinitely many solutions and how to justify those conclusions.</p>
+<p>So far, every equation we solved had exactly one solution. After simplifying and moving terms, we always ended with something like</p>
+<p><span class="math display">\[
+x=5
+\]</span></p>
+<p>which tells us the one value that makes the equation true.</p>
+<p>But equations don’t always behave that way. Sometimes:</p>
+<ul>
+<li>there is no value that makes the equation true, or</li>
+<li>every value works.</li>
+</ul>
+<p>These are called <strong>special cases</strong>. In this lesson, we’ll see what they look like and how to spot them.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🎯 Objectives
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul class="task-list">
-<li><label><input type="checkbox">Recognize inconsistent equations with no solution</label></li>
-<li><label><input type="checkbox">Identify dependent equations with infinite solutions</label></li>
-<li><label><input type="checkbox">Justify solutions using substitution or reasoning</label></li>
+<li><label><input type="checkbox">I can recognize when an equation has <strong>no solution</strong>.</label></li>
+<li><label><input type="checkbox">I can recognize when an equation has <strong>infinitely many solutions</strong>.</label></li>
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Vocabulary">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-all-real-number" class="glossary-link" data-original-term="all real numbers" data-term="all real number">all real numbers</a>, <a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-original-term="linear equation" data-term="linear equation">linear equation</a>, <a href="../../glossary.html#glossary-no-solution" class="glossary-link" data-original-term="no solution" data-term="no solution">no solution</a>, <a href="../../glossary.html#glossary-real-number" class="glossary-link" data-original-term="real numbers" data-term="real number">real numbers</a></p>
 </div>
-<div class="callout-title-container flex-fill">
-Vocabulary
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>Solve <span class="math inline">\(5x + 2 = 3x - 12\)</span>.</p></li>
+<li><p>Taylor solved the equation <span class="math inline">\(10x - 9 = 10x + 3\)</span>. Here are her steps. <span class="math display">\[
+\begin{align*}
+10x - 9 &amp;= 10x + 3 \\
+10x - 9 \textcolor{red}{-10x} &amp;= 10x + 3 \textcolor{red}{- 10x} \\
+-9 &amp;= 3
+\end{align*}
+\]</span></p>
+<p>Did Taylor make a mistake?</p></li>
+</ol>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="equations-with-no-solution" class="level3">
+<h3 class="anchored" data-anchor-id="equations-with-no-solution">3.5.1 – Equations With No Solution</h3>
+<p>In the last lesson, when we moved variables to one side, we always ended up with a single answer like <span class="math inline">\(x = 4\)</span>. But sometimes, something different happens. After simplifying, the variables cancel out and we’re left with a statement that is <strong>false</strong>.</p>
+<p>When this happens, the equation has <strong>no solution</strong> — there is no value that will make both sides equal.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Solve <span class="math inline">\(3x + 5 = 3x - 2\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+3x + 5 &amp;= 3x - 2 \\
+3x + 5 \textcolor{red}{- 3x} &amp;= 3x - 2 \textcolor{red}{- 3x} \\
+5 &amp;= -2 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
+\end{align*}
+\]</span></p>
+<p>Since <span class="math inline">\(5 = -2\)</span> is not true, there is <strong>no solution</strong>.</p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Solve <span class="math inline">\(2(x + 4) = 2x + 7\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+2(x + 4) &amp;= 2x + 7 \\
+2x + 8 &amp;= 2x + 7 \\
+2x + 8 \textcolor{red}{- 2x} &amp;= 2x + 7 \textcolor{red}{- 2x} \\
+8 &amp;= 7 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
+\end{align*}
+\]</span></p>
+<p>This is also false, so there is <strong>no solution</strong>.</p>
+<hr>
+<div class="remember" title="How to Recognize No Solution">
+<p>If you solve an equation and end up with two different numbers on either side of the equals sign, there is no solution.</p>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p>identity, contradiction, solution set, consistent, inconsistent</p>
-</div>
-</div>
-<section id="warm-up" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up">🔥 Warm-Up</h2>
-<p>Coming soon.</p>
 </section>
-<section id="learn-together" class="level2">
-<h2 class="anchored" data-anchor-id="learn-together">🧠 Learn Together</h2>
-<p>Coming soon.</p>
+<section id="equations-with-infinitely-many-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="equations-with-infinitely-many-solutions">3.5.2 – Equations With Infinitely Many Solutions</h3>
+<p>Sometimes when you solve, the variables cancel out and you’re left with a statement that is <strong>always true</strong>. In that case, every number works, so the equation has <strong>infinitely many solutions</strong>.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Solve <span class="math inline">\(4(x + 2) = 2(2x + 4)\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+4(x + 2) &amp;= 2(2x + 4) \\
+4x + 8 &amp;= 4x + 8 \\
+4x + 8 \textcolor{red}{- 4x} &amp;= 4x + 8 \textcolor{red}{- 4x} \\
+8 &amp;= 8 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
+\end{align*}
+\]</span></p>
+<p>Because <span class="math inline">\(8 = 8\)</span> is always true, any value of <span class="math inline">\(x\)</span> will make the original equation work.</p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Solve <span class="math inline">\(5y - 3 + 2y = 7y - 3\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+5y - 3 + 2y &amp;= 7y - 3 \\
+7y - 3 &amp;= 7y - 3 \\
+7y - 3 \textcolor{red}{- 7y} &amp;= 7y - 3 \textcolor{red}{- 7y} \\
+-3 &amp;= -3 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
+\end{align*}
+\]</span></p>
+<p>Again, the result is always true. The solution is <strong>all real numbers</strong>.</p>
+<hr>
+<div class="remember" title="How to Recognize Infinitely Many Solutions">
+<p>If you solve an equation and get the same thing on each side of the equal sign, the problem has infinitely many solutions. All real numbers will work.</p>
+</div>
 </section>
-<section id="practice-on-your-own" class="level2">
-<h2 class="anchored" data-anchor-id="practice-on-your-own">✏️ Practice On Your Own</h2>
-<p>Coming soon.</p>
+<section id="determining-the-number-of-solutions" class="level3">
+<h3 class="anchored">3.5.3 – Determining the Number of Solutions</h3>
+<p>There are some tricks for telling whether a <a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-original-term="linear equation" data-term="linear equation">linear equation</a> will have <strong>one</strong>, <strong>no</strong>, or <strong>infinitely many</strong> solutions. You can often see it without actually solving the equation all the way!</p>
+<hr>
+<p><strong>Equations With One Solution</strong> If a linear equation has a variable term on one side and a different constant term on the other side, it will have <strong>one solution</strong>.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+6x = 42
+\]</span></p>
+<p>There’s a variable term, <span class="math inline">\(6x\)</span>, on one side and a constant, <span class="math inline">\(42\)</span>, on the other. Solve to see:</p>
+<p><span class="math display">\[
+x = 7 \quad \text{(divide both sides by 6)}
+\]</span></p>
+<p>So this equation has one solution: <span class="math inline">\(x = 7\)</span>.</p>
+<hr>
+<p><strong>Equations With No Solution</strong> If both sides have the <strong>same variable term</strong> but <strong>different constants</strong>, the equation has <strong>no solution</strong>.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+3x + 8 = 3x + 1
+\]</span></p>
+<p>The variable part <span class="math inline">\(3x\)</span> matches on both sides, but the constants <span class="math inline">\(8\)</span> and <span class="math inline">\(1\)</span> don’t.</p>
+<p><span class="math display">\[
+8 = 1 \quad \text{(after subtracting $3x$ from both sides)}
+\]</span></p>
+<p>This is false, so the equation has no solution.</p>
+<hr>
+<p><strong>Equations With Infinitely Many Solutions</strong> If both sides have the <strong>same variable term</strong> and the <strong>same constant</strong>, the equation has <strong>infinitely many solutions</strong>.</p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+7x + 9 = 7x + 9
+\]</span></p>
+<p>Both sides are identical.</p>
+<p><span class="math display">\[
+9 = 9 \quad \text{(after subtracting $7x$ from both sides)}
+\]</span></p>
+<p>This is always true, so every value of <span class="math inline">\(x\)</span> works.</p>
+<hr>
+<div class="remember" title="Tips and Tricks">
+<ul>
+<li>Different variable and constant terms left and right → One solution</li>
+<li>Same variable, different constants → No solution</li>
+<li>Same variable, same constants → Infinitely many solutions</li>
+<li><span class="math inline">\(\varnothing\)</span> is often used in place of “no solution” to save space and</li>
+<li><span class="math inline">\(\mathbb{R}\)</span> is used in place of “all real numbers” or infinitely many solutions</li>
+</ul>
+</div>
+<div class="you-try-m" title="Decide how many solutions each equation has.">
+<ol type="1">
+<li><span class="math inline">\(5x + 2 = 3x + 10\)</span></li>
+<li><span class="math inline">\(4y + 7 = 4y - 5\)</span></li>
+<li><span class="math inline">\(6n + 9 = 9 + 6n\)</span></li>
+</ol>
+</div>
+<div class="answer" title="Answer">
+<ol type="1">
+<li>one solution</li>
+<li>no solution (<span class="math inline">\(\varnothing\)</span>)</li>
+<li>infinitely many solutions (<span class="math inline">\(\mathbb{R}\)</span>)</li>
+</ol>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="determining-the-number-of-solutions">✍️ Practice On Your Own</h2>
+<p>For each equation, decide whether it has <strong>one solution</strong>, <strong>no solution</strong>, or <strong>infinitely many solutions</strong>. Show your reasoning.</p>
+<ol type="1">
+<li><p><span class="math inline">\(2x + 3 = 7\)</span></p></li>
+<li><p><span class="math inline">\(5y + 4 = 5y + 10\)</span></p></li>
+<li><p><span class="math inline">\(6n - 2 = 4n + 8\)</span></p></li>
+<li><p><span class="math inline">\(3(x + 4) = 3x + 12\)</span></p></li>
+<li><p><span class="math inline">\(7a + 5 = 2a + 20\)</span></p></li>
+<li><p><span class="math inline">\(4m + 9 = 4m + 9\)</span></p></li>
+<li><p><span class="math inline">\(2(p - 3) + 5 = 2p - 1\)</span></p></li>
+<li><p><span class="math inline">\(8x + 7 = 2(4x + 3)\)</span></p></li>
+<li><p><span class="math inline">\(10n - 4 = 6n + 12\)</span></p></li>
+<li><p><span class="math inline">\(9y + 2 = 3(3y + 1)\)</span></p></li>
+<li><p><span class="math inline">\(5x + 7 = 3x + 15\)</span></p></li>
+<li><p><span class="math inline">\(2(3y - 2) = 6y - 4\)</span></p></li>
+<li><p><span class="math inline">\(4n + 5 = 4n - 3\)</span></p></li>
+<li><p><span class="math inline">\(7(a + 2) = 7a + 14\)</span></p></li>
+<li><p><span class="math inline">\(6m + 2 = 3m + 14\)</span></p></li>
+<li><p><span class="math inline">\(3(x + 5) - 2 = 3x + 13\)</span></p></li>
+<li><p><span class="math inline">\(4y + 6 = 2(2y + 3)\)</span></p></li>
+<li><p><span class="math inline">\(2n - 7 = 5n - 1\)</span></p></li>
+<li><p><span class="math inline">\(9x + 4 = 3(3x + 2)\)</span></p></li>
+<li><p><span class="math inline">\(2p + 1 = 2p - 3\)</span></p></li>
+<li><p><span class="math inline">\(7x - 5 = 7x - 5\)</span></p></li>
+<li><p><span class="math inline">\(5(y + 2) = 5y + 12\)</span></p></li>
+<li><p><span class="math inline">\(6(n - 1) = 6n - 1\)</span></p></li>
+</ol>
+<p><strong>Challenge Problems</strong></p>
+<ol start="24" type="1">
+<li><p>For what value(s) of <span class="math inline">\(k\)</span> does the equation</p>
+<p><span class="math display">\[
+(2k)x + 5 = k(2x + 3)
+\]</span></p>
+<p>have (a) one solution, (b) no solution, and (c) infinitely many solutions?</p></li>
+<li><p>Solve for <span class="math inline">\(x\)</span> in terms of <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+3(x + 2) + 4y = 2(x - y) + 10
+\]</span></p>
+<p>Then decide: is there exactly one solution, no solution, or infinitely many solutions?</p></li>
+</ol>
+<div class="answers">
+<ol type="1">
+<li><p>One solution (<span class="math inline">\(x = 2\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(4 = 10\)</span>, false)</p></li>
+<li><p>One solution (<span class="math inline">\(n = 5\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(3x + 12 = 3x + 12\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(a = 3\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(4m + 9 = 4m + 9\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(2p - 1 = 2p - 1\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(8x + 7 = 8x + 6\)</span> → <span class="math inline">\(7 = 6\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(n = 4\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(9y + 2 = 9y + 2\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(x = 4\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(6y - 4 = 6y - 4\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(5 = -3\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(7a + 14 = 7a + 14\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(m = 4\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(x = 6\)</span>)</p></li>
+<li><p>Infinitely many solutions (<span class="math inline">\(4y + 6 = 4y + 6\)</span>)</p></li>
+<li><p>One solution (<span class="math inline">\(n = -2\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(9x + 4 = 9x + 6\)</span> → <span class="math inline">\(4 = 6\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(1 = -3\)</span>)</p></li>
+<li><p>Infinitely many solutions (identical on both sides)</p></li>
+<li><p>No solution (<span class="math inline">\(10 = 12\)</span>)</p></li>
+<li><p>No solution (<span class="math inline">\(-6 = -1\)</span>)</p></li>
+</ol>
+</div>
 
 
 </section>
@@ -1159,8 +1380,8 @@ Vocabulary
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="pagination-link" aria-label="3.4 Equations with Variables on Both Sides">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3.4 Equations with Variables on Both Sides</span>
+      <a href="../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="pagination-link" aria-label="3.4 - Solving Equations With Variables on Both Sides">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3.4 - Solving Equations With Variables on Both Sides</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
