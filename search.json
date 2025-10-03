@@ -240,6 +240,17 @@
     ]
   },
   {
+    "objectID": "chapters/Unit_2/Review.html",
+    "href": "chapters/Unit_2/Review.html",
+    "title": "Review",
+    "section": "",
+    "text": "This review pulls together the key skills from Unit 2. It’s heavy on practice so you can build speed and confidence.\nWhat you’ll review\n\nExpressions & their parts (terms, coefficients, constants)\nEvaluating expressions (substituting values)\nCombining like terms\nUsing the distributive property (expand & factor)\nInputs and outputs of functions (rules & tables)\nEquivalent expressions (prove or disprove)\n\n\n\nExpressions & Their Parts (2.1)\n\nIdentify the terms, coefficients, and constant in the expression\n\\[\n7x - 4 + 3y - 2x + 9\n\\]\nterms:\ncoefficients:\nconstant:\nIdentify the terms, coefficients, and constant in the expression\n\\[\n5x^3 + 2x^2 - 3x + 5\n\\]\nterms:\ncoefficients:\nconstant:\nWrite an expression: “the sum of twice a number \\(n\\) and \\(5\\), then minus \\(3\\).”\nWrite an expression: “\\(3\\) more than the product of \\(-4\\) and \\(p\\).”\n\n\n\n\nEvaluating Expressions (2.2)\nEvaluate each expression for the given values.\n\n\\(3x - 2\\) when \\(x=5\\)\n\\(2a + 4b\\) when \\(a=3\\) and \\(b=-2\\)\n\\(5y - 3y + 8\\) when \\(y=-4\\)\n\\(\\dfrac{m+6}{2}\\) when \\(m=10\\)\n\\(2(t-3) + 7\\) when \\(t=1\\)\n\\(k^2 - 4k\\) when \\(k=-3\\)\n\n\n\n\nCombining Like Terms (2.3)\nSimplify each expression.\n\n\\(8x + 3 - 5x + 7\\)\n\\(4a - 2 + 6 - a\\)\n\\(-3y + 9y - 12\\)\n\\(5m + 2n - 3m + 7n\\)\n\\(2p - (5p - 4)\\)\n\\(7r - [3(r-2) - 1]\\)\n\n\n\n\nDistributive Property (2.4)\nExpand or factor as directed.\n\nExpand: \\(3(x+5)\\)\nExpand: \\(-2(4y - 3)\\)\nExpand and simplify: \\(5(2a-1) - (a+7)\\)\nFactor: \\(6x + 12\\)\nFactor: \\(9m - 15\\)\nFactor: \\(4n + 6\\)\nExpand and Simplify: \\(7(2k+1) - (k+1)\\)\n\n\n\n\nInputs & Outputs of Functions (2.5)\n\nA function is given by \\(f(x) = 4x - 3\\).\n\nFind \\(f(2)\\) and \\(f(-1)\\).\nFind \\(f(-1)\\).\n\nA function is given by \\(g(t) = \\dfrac{t+8}{2}\\).\n\nFind \\(g(4)\\).\nFind \\(g(-6)\\).\n\nComplete the table for \\(h(n)=3n-2\\).\n\n\n\n\n\\(n\\)\n\\(-2\\)\n\\(-1\\)\n\\(0\\)\n\\(1\\)\n\\(4\\)\n\n\n\n\n\\(h(n)\\)\n\n\n\n\n\n\n\n\n\nIs it a function?\n\n\n\n\nInput\nOutput\n\n\n\n\n1\n7\n\n\n3\n-5\n\n\n-2\n10\n\n\n1\n7\n\n\n5\n10\n\n\n\n\nIs it a function?\n\n\n\n\nInput\nOutput\n\n\n\n\n7\n1\n\n\n-5\n3\n\n\n10\n-2\n\n\n7\n1\n\n\n10\n5\n\n\n\n\n\n\nEquivalent Expressions (2.6)\nDecide if the expressions are equivalent. If yes, show algebra steps. If not, give one value of the variable that makes the values different.\n\n\\(5x + 7 - 2x\\) and \\(3x + 7\\)\n\\(3(y+4)\\) and \\(3y+12\\)\n\\(2(a+5) - a\\) and \\(a+10\\)\n\\(4k - (2k - 3)\\) and \\(2k + 3\\)\n\\(6m + 2\\) and \\(2(3m+2)\\)\n\\(\\dfrac{x+6}{3}\\) and \\(\\dfrac{x}{3} + 2\\)\n\\(5(p-1) + 7\\) and \\(5p + 2\\)\n\n\n\n\nMixed Practice\n\nSimplify: \\(4x + 3(2x - 5) - (x - 1)\\)\nFactor completely: \\(12y + 18\\)\nEvaluate \\(q(q-1)\\) when \\(q=6\\)\nWrite and simplify an expression for twice the sum of \\(n\\) and \\(7\\), then minus \\(3\\).\nA function is \\(F(s)=2s+9\\).\n\nFind \\(F(0)\\) and \\(F(6)\\).\nSolve \\(F(s)=25\\) for \\(s\\).\n\nAre \\(7(t-2) + 5\\) and \\(7t - 9\\) equivalent? Explain briefly.",
+    "crumbs": [
+      "Unit 2: Algebraic Expressions",
+      "Review"
+    ]
+  },
+  {
     "objectID": "chapters/Unit_3/index.html",
     "href": "chapters/Unit_3/index.html",
     "title": "Introduction",
