@@ -1,0 +1,25 @@
+# 3.6 – Solving Inequalities {.unnumbered}
+
+Coming soon
+
+::: {.objectives}
+
+:::
+
+::: {.vocab}
+
+:::
+
+{{< warmup >}}
+
+Coming Soon
+
+{{< learn >}}
+
+Coming Soon
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
