@@ -77,8 +77,7 @@ book:
         - file: chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.qmd
         - file: chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.qmd
         - file: chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.qmd
-        - file: chapters/Unit_3/3.6_Solving_with_Tables,_Graphs_&_Rules_(Function_tie-in).qmd
-        - file: chapters/Unit_3/3.7_Writing_Equations_from_Real-Life_Contexts.qmd
+        - file: chapters/Unit_3/3.6_Writing_Equations_for_Real-World_Problems.qmd
 
     - part: "Unit 4: Graphs and Patterns"
       chapters:
