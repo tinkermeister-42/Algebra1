@@ -68,6 +68,7 @@ book:
         - file: chapters/Unit_2/2.4_The_Distributive_Property.qmd
         - file: chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd
         - file: chapters/Unit_2/2.6_Equivalent_Expressions.qmd
+        - file: chapters/Unit_2/Review.qmd
 
     - part: "Unit 3: Solving Linear Equations"
       chapters:

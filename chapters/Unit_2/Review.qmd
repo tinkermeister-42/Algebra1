@@ -1,0 +1,189 @@
+# Review {.unnumbered}
+
+This review pulls together the key skills from Unit 2. It’s heavy on practice so you can build speed and confidence.
+
+**What you’ll review**
+
+* Expressions & their parts (terms, coefficients, constants)
+* Evaluating expressions (substituting values)
+* Combining like terms
+* Using the distributive property (expand & factor)
+* Inputs and outputs of functions (rules & tables)
+* Equivalent expressions (prove or disprove)
+
+---
+
+### Expressions & Their Parts (2.1)
+
+1. Identify the **terms**, **coefficients**, and **constant** in the expression
+   
+   $$
+   7x - 4 + 3y - 2x + 9
+   $$
+
+   **terms:**
+
+   **coefficients:**
+
+   **constant:**
+
+2. Identify the **terms**, **coefficients**, and **constant** in the expression
+   
+   $$
+   5x^3 + 2x^2 - 3x + 5
+   $$
+
+   **terms:**
+
+   **coefficients:**
+
+   **constant:**
+
+3. Write an expression: “the sum of twice a number $n$ and $5$, then minus $3$.”
+
+4. Write an expression: “$3$ more than the product of $-4$ and $p$.”
+
+---
+
+### Evaluating Expressions (2.2)
+
+Evaluate each expression for the given values.
+
+5. $3x - 2$ when $x=5$
+
+6. $2a + 4b$ when $a=3$ and $b=-2$
+
+7. $5y - 3y + 8$ when $y=-4$
+
+8. $\dfrac{m+6}{2}$ when $m=10$
+
+9. $2(t-3) + 7$ when $t=1$
+
+10. $k^2 - 4k$ when $k=-3$
+
+---
+
+### Combining Like Terms (2.3)
+
+Simplify each expression.
+
+11. $8x + 3 - 5x + 7$
+
+12. $4a - 2 + 6 - a$
+
+13. $-3y + 9y - 12$
+
+14. $5m + 2n - 3m + 7n$
+
+15. $2p - (5p - 4)$
+
+16. $7r - [3(r-2) - 1]$
+
+---
+
+### Distributive Property (2.4)
+
+Expand or factor as directed.
+
+17. Expand: $3(x+5)$
+
+18. Expand: $-2(4y - 3)$
+
+19. Expand and simplify: $5(2a-1) - (a+7)$
+
+20. Factor: $6x + 12$
+
+21. Factor: $9m - 15$
+
+22. Factor: $4n + 6$
+
+23. Expand and Simplify: $7(2k+1) - (k+1)$
+
+---
+
+### Inputs & Outputs of Functions (2.5)
+
+24. A function is given by $f(x) = 4x - 3$.
+    
+    a. Find $f(2)$ and $f(-1)$.
+
+    b. Find $f(-1)$.
+
+
+25. A function is given by $g(t) = \dfrac{t+8}{2}$.
+    
+    a. Find $g(4)$.
+
+    b. Find $g(-6)$.
+
+26. Complete the table for $h(n)=3n-2$.
+
+|    $n$ | $-2$ | $-1$ | $0$ | $1$ | $4$ |
+| -----: | :--: | :--: | :-: | :-: | :-: |
+| $h(n)$ |      |      |     |     |     |
+
+27. Is it a function?
+
+| Input | Output |
+| :--:  | :--:   |
+| 1     |  7     |
+| 3     |  -5    |     
+| -2    | 10     |
+| 1     | 7      |
+| 5     | 10     | 
+
+27. Is it a function?
+
+| Input | Output |
+| :--:  | :--:   |
+| 7     |  1     |
+| -5    |  3     |     
+| 10    | -2     |
+| 7     | 1      |
+| 10    | 5      | 
+
+
+---
+
+### Equivalent Expressions (2.6)
+
+Decide if the expressions are **equivalent**. If yes, show algebra steps.
+If not, **give one value** of the variable that makes the values different.
+
+28. $5x + 7 - 2x$ and $3x + 7$
+
+29. $3(y+4)$ and $3y+12$
+
+30. $2(a+5) - a$ and $a+10$
+
+31. $4k - (2k - 3)$ and $2k + 3$
+
+32. $6m + 2$ and $2(3m+2)$
+
+33. $\dfrac{x+6}{3}$ and $\dfrac{x}{3} + 2$
+
+34. $5(p-1) + 7$ and $5p + 2$
+
+---
+
+### Mixed Practice
+
+35. Simplify: $4x + 3(2x - 5) - (x - 1)$
+
+36. Factor completely: $12y + 18$
+
+37. Evaluate $q(q-1)$ when $q=6$
+
+38. Write and simplify an expression for **twice the sum** of $n$ and $7$, then **minus $3$**.
+
+39. A function is $F(s)=2s+9$.
+    a. Find $F(0)$ and $F(6)$.
+    b. Solve $F(s)=25$ for $s$.
+
+40. Are $7(t-2) + 5$ and $7t - 9$ equivalent? Explain briefly.
+
+---
+
+:::{.answers}
+
+:::
