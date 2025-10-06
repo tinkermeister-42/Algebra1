@@ -70,6 +70,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+window.MathJax = {
+  tex: {
+    packages: {'[+]': ['base', 'ams', 'color']},
+    macros: {
+      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+      snplus:   ['\\snboth{+#1}', 1],
+      snminus:  ['\\snboth{-#1}', 1],
+      sntimes:  ['\\snboth{\\times\\ #1}', 1],
+      sndiv:    ['\\snboth{\\div\\ #1}', 1]
+    }
+  }
+};
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -458,7 +473,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-combine-like-term" class="glossary-link" data-original-term="combine like terms" data-term="combine like term">combine like terms</a>, <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-original-term="distributive property" data-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-term="equation" data-term="equation">equation</a>, <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-original-term="inverse operations" data-term="inverse operation">inverse operations</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-combine-like-term" class="glossary-link" data-term="combine like term" data-original-term="combine like terms">combine like terms</a>, <a href="../../glossary.html#glossary-distributive-property" class="glossary-link" data-term="distributive property" data-original-term="distributive property">distributive property</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a>, <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-term="inverse operation" data-original-term="inverse operations">inverse operations</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
@@ -556,13 +571,13 @@ a &amp;= 3
 \begin{align*}
 4x + 5 &amp;= 2x + 9 \\
 \\
-4x + 5 \textcolor{red}{- 2x} &amp;= 2x + 9 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}} \\
+4x + 5 \textcolor{red}{- 2x} &amp;= 2x + 9 \textcolor{red}{- 2x} \snminus{2x} \\
 2x + 5 &amp;= 9 \\
 \\
-2x + 5 \textcolor{red}{- 5} &amp;= 9 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+2x + 5 \textcolor{red}{- 5} &amp;= 9 \textcolor{red}{- 5} \snminus{5} \\
 2x &amp;= 4 \\
 \\
-2x \textcolor{red}{\div 2} &amp;= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2x \textcolor{red}{\div 2} &amp;= 4 \textcolor{red}{\div 2} \sndiv{2} \\
 x &amp;= 2
 \end{align*}
 \]</span></p>
@@ -571,13 +586,13 @@ x &amp;= 2
 \begin{align*}
 5x + 3 &amp;= 2x + 12 \\
 \\
-5x + 3 \textcolor{red}{- 2x} &amp;= 2x + 12 \textcolor{red}{- 2x} \\
+5x + 3 \textcolor{red}{- 2x} &amp;= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 3 &amp;= 12 \\
 \\
-3x + 3 \textcolor{red}{- 3} &amp;= 12 \textcolor{red}{- 3} \\
+3x + 3 \textcolor{red}{- 3} &amp;= 12 \textcolor{red}{- 3} \snminus{3} \\
 3x &amp;= 9 \\
 \\
-3x \textcolor{red}{\div 3} &amp;= 9 \textcolor{red}{\div 3} \\
+3x \textcolor{red}{\div 3} &amp;= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &amp;= 3
 \end{align*}
 \]</span></p>
@@ -597,16 +612,16 @@ x &amp;= 3
 <p>Solve <span class="math inline">\(2(x + 3) = 3x + 1\)</span>.</p>
 <p><span class="math display">\[
 \begin{align*}
-\textcolor{red}{2}(x + 3) &amp;= 3x + 1 \tag*{\class{stepnote}{\textcolor{gray}{Distribute the 2}}} \\
+\textcolor{red}{2}(x + 3) &amp;= 3x + 1 \stepnote{Distribute the 2} \\
 2x + 6 &amp;= 3x + 1  \\
 \\
-2x + 6 \textcolor{red}{- 3x} &amp;= 3x + 1 \textcolor{red}{- 3x} \tag*{\class{stepnote}{\textcolor{gray}{$-3x$ both sides}}}\\
+2x + 6 \textcolor{red}{- 3x} &amp;= 3x + 1 \textcolor{red}{- 3x} \snminus{3x} \\
 -x + 6 &amp;= 1 \\
 \\
--x + 6 \textcolor{red}{- 6} &amp;= 1 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+-x + 6 \textcolor{red}{- 6} &amp;= 1 \textcolor{red}{- 6} \snminus{6} \\
 -x &amp;= -5 \\
 \\
--x \textcolor{red}{\div -1} &amp;= 1 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &amp;= 1 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &amp;= 5
 \end{align*}
 \]</span></p>
@@ -615,16 +630,16 @@ x &amp;= 5
 <p>Solve <span class="math inline">\(4x + 6 + x = 2x + 12\)</span>.</p>
 <p><span class="math display">\[
 \begin{align*}
-\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &amp;= 2x + 12 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &amp;= 2x + 12 \stepnote{Combine like terms} \\
 \textcolor{blue}{5x} + 6 &amp;= 2x + 12  \\
 \\
-5x + 6 \textcolor{red}{- 2x} &amp;= 2x + 12 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+5x + 6 \textcolor{red}{- 2x} &amp;= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 6 &amp;= 12 \\
 \\
-3x + 6 \textcolor{red}{- 6} &amp;= 12 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+3x + 6 \textcolor{red}{- 6} &amp;= 12 \textcolor{red}{- 6} \snminus{6} \\
 3x &amp;= 6 \\
 \\
-3x \textcolor{red}{\div 3} &amp;= 6 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &amp;= 6 \textcolor{red}{\div 3} \sndiv{3} \\
 x &amp;= 2
 \end{align*}
 \]</span></p>
@@ -633,30 +648,29 @@ x &amp;= 2
 <p>Solve <span class="math inline">\(3(x - 2) + 4 = 2(x + 1)\)</span>.</p>
 <p><span class="math display">\[
 \begin{align*}
-\textcolor{red}{3}(x - 2) + 4 &amp;= \textcolor{red}{2}(x + 1) \tag*{\class{stepnote}{\textcolor{gray}{Distribute both sides}}}\\
+\textcolor{red}{3}(x - 2) + 4 &amp;= \textcolor{red}{2}(x + 1) \stepnote{Distribute both sides}\\
 3x - 6 + 4 &amp;= 2x + 2  \\
 \\
-3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &amp;= 2x + 2 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &amp;= 2x + 2 \stepnote{Combine like terms} \\
 3x \textcolor{blue}{- 2} &amp;= 2x + 2 \\
 \\
-3x - 2 \textcolor{red}{- 2x} &amp;= 2x + 2 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+3x - 2 \textcolor{red}{- 2x} &amp;= 2x + 2 \textcolor{red}{- 2x} \snminus{2x} \\
 x - 2 &amp;= 2 \\
 \\
-x - 2 \textcolor{red}{+ 2} &amp;= 2 \textcolor{red}{+ 2} \tag*{\class{stepnote}{\textcolor{gray}{+2 both sides}}}\\
+x - 2 \textcolor{red}{+ 2} &amp;= 2 \textcolor{red}{+ 2} \snplus{2} \\
 x &amp;= 4
 \end{align*}
 \]</span></p>
 <div class="you-try" title="Solve $2(x + 4) = x + 10$.">
 <p><span class="math display">\[
 \begin{align*}
-2(x + 4) &amp;= x + 10 \\
-\\
+2(x + 4) &amp;= x + 10 \stepnote{Distribute the 2} \\
 2x + 8 &amp;= x + 10 \\
 \\
-2x + 8 \textcolor{red}{- x} &amp;= x + 10 \textcolor{red}{- x} \\
+2x + 8 \textcolor{red}{- x} &amp;= x + 10 \textcolor{red}{- x} \snminus{x} \\
 x + 8 &amp;= 10 \\
 \\
-x + 8 \textcolor{red}{- 8} &amp;= 10 \textcolor{red}{- 8} \\
+x + 8 \textcolor{red}{- 8} &amp;= 10 \textcolor{red}{- 8} \snminus{8} \\
 x &amp;= 2
 \end{align*}
 \]</span></p>
@@ -686,13 +700,13 @@ x &amp;= 2
 <p>Solve:</p>
 <p><span class="math display">\[
 \begin{align*}
-15h + 6 \textcolor{red}{-12h} &amp;= 12h + 18 \textcolor{red}{-12h} \\
+15h + 6 \textcolor{red}{-12h} &amp;= 12h + 18 \textcolor{red}{-12h} \snminus{12h} \\
 3h + 6 &amp;= 18 \\
 \\
-3h + 6 \textcolor{red}{-6} &amp;= 18 \textcolor{red}{-6} \\
+3h + 6 \textcolor{red}{-6} &amp;= 18 \textcolor{red}{-6} \snminus{6} \\
 3h &amp;= 12 \\
 \\
-3h \textcolor{red}{\div 3} &amp;= 18 \textcolor{red}{\div 3} \\
+3h \textcolor{red}{\div 3} &amp;= 18 \textcolor{red}{\div 3} \sndiv{3} \\
 h &amp;= 6
 \end{align*}
 \]</span></p>
@@ -712,17 +726,20 @@ h &amp;= 6
 <p>Distribute and simplify:</p>
 <p><span class="math display">\[
 \begin{align*}
-2(2x + 8) &amp;= 2(3x + 2) \\
+2(2x + 8) &amp;= 2(3x + 2) \stepnote{Distribute both sides} \\
 4x + 16 &amp;= 6x + 4 \\
-4x + 16 \textcolor{red}{- 4x} &amp;= 6x + 4 \textcolor{red}{- 4x} \tag*{\class{stepnote}{\textcolor{gray}{$-4x$ both sides}}} \\
-16 &amp;= 2x + 4 \\
-16 \textcolor{red}{- 4} &amp;= 2x + 4 \textcolor{red}{- 4} \tag*{\class{stepnote}{\textcolor{gray}{-4 both sides}}} \\
-12 &amp;= 2x \\
-\frac{12}{2} &amp;= \frac{2x}{2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \
+\\
+4x + 16 \textcolor{red}{- 6x} &amp;= 6x + 4 \textcolor{red}{- 6x} \snminus{6x} \\
+-2x + 16 &amp;= 4 \\
+\\
+-2x + 16 \textcolor{red}{- 16} &amp;= 4 \textcolor{red}{- 16} \snminus{16} \\
+-2x &amp;= -12 \\
+\\
+-2x \textcolor{red}{\div -2} &amp;= -12 \textcolor{red}{\div -2} \sndiv{-2} \\
 x &amp;= 6
 \end{align*}
 \]</span></p>
-<p>So <span class="math inline">\(x = 6\)</span>.</p>
+<p>So <strong><span class="math inline">\(x = 6\)</span></strong>.</p>
 <hr>
 <p><strong>Example 3 – Two Vendors, Same Total</strong></p>
 <p>Vendor A sells sweatshirts for $18 each, includes <strong>2 free</strong>, and charges $12 shipping. Vendor B sells sweatshirts for $15 each with a flat $42 shipping. For how many sweatshirts do the totals match?</p>
@@ -741,13 +758,19 @@ x &amp;= 6
 <p>Distribute and solve:</p>
 <p><span class="math display">\[
 \begin{align*}
+18(s - 2) + 12 &amp;= 15s + 42 \stepnote{Distribute the 18} \\
 18s - 36 + 12 &amp;= 15s + 42 \\
-18s - 24 &amp;= 15s + 42 \\
-18s - 24 \textcolor{red}{- 15s} &amp;= 15s + 42 \textcolor{red}{- 15s} \tag*{\class{stepnote}{\textcolor{gray}{$-15s$ both sides}}} \\
+\\
+18s \textcolor{blue}{- 36} \textcolor{blue}{+ 12} &amp;= 15s + 42 \stepnote{Combine like terms} \\
+18s \textcolor{blue}{- 24} &amp;= 15s + 42 \\
+\\
+18s - 24 \textcolor{red}{- 15s} &amp;= 15s + 42 \textcolor{red}{- 15s} \snminus{15s} \\
 3s - 24 &amp;= 42 \\
-3s - 24 \textcolor{red}{+ 24} &amp;= 42 \textcolor{red}{+ 24} \tag*{\class{stepnote}{\textcolor{gray}{+24 both sides}}} \\
+\\
+3s - 24 \textcolor{red}{+ 24} &amp;= 42 \textcolor{red}{+ 24} \snplus{24} \\
 3s &amp;= 66 \\
-\frac{3s}{3} &amp;= \frac{66}{3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+\\
+3s \textcolor{red}{\div 3} &amp;= 66 \textcolor{red}{\div 3} \sndiv{3} \\
 s &amp;= 22
 \end{align*}
 \]</span></p>
@@ -763,8 +786,13 @@ s &amp;= 22
 \]</span></p>
 <p><span class="math display">\[
 \begin{align*}
-8 - 2 &amp;= 5m - 3m \\
-6 &amp;= 2m \\
+8 + 3m \textcolor{red}{-5m} &amp;= 2 + 5m \textcolor{red}{-5m} \snminus{5m} \\
+8 - 2m &amp;= 2 \\
+\\
+8 - 2m \textcolor{red}{-8} &amp;= 2 \textcolor{red}{-8} \snminus{8} \\
+-2m &amp;= -6 \\
+\\
+-2m \textcolor{red}{\div -2} &amp;= -6 \textcolor{red}{\div -2} \sndiv{-2} \\
 m &amp;= 3
 \end{align*}
 \]</span></p>
@@ -804,15 +832,37 @@ m &amp;= 3
 <li><p><span class="math inline">\(2(x + 5) - 3 = 3(x - 1) + 4\)</span></p></li>
 <li><p><span class="math inline">\(5(2m - 1) = 3(m + 7) - m\)</span></p></li>
 </ol>
-<p><strong>Multi-Step, More Layers</strong></p>
+<p><strong>Word Problems</strong></p>
 <ol start="21" type="1">
-<li><p><span class="math inline">\(3(x + 4) + 2(x - 1) = 5(x + 3) - 4\)</span></p></li>
-<li><p><span class="math inline">\(2(3y - 5) + 7 = 4(y + 2) + (y - 1)\)</span></p></li>
-<li><p><span class="math inline">\(4(n - 2) + (n + 3) = 3(n + 1) + 5\)</span></p></li>
+<li><p>Competing Streaming Plans</p>
+<ul>
+<li>Plan A charges $10 per month plus $4 per movie.</li>
+<li>Plan B charges $6 per month plus $5 per movie.</li>
+</ul>
+<p>After how many movies will the total monthly cost be the same?</p></li>
+<li><p>Two Lawn Services</p>
+<ul>
+<li>Service A charges $25 per visit plus $15 per hour of mowing.</li>
+<li>Service B charges $40 per visit plus $10 per hour.</li>
+</ul>
+<p>After how many hours will the total costs be equal?</p></li>
+<li><p>Equal Sides, Different Expressions</p>
+<ul>
+<li>Two sides of a trapezoid are equal in length.</li>
+<li>The first side measures <span class="math inline">\(4x + 3\)</span> cm.</li>
+<li>The second side measures <span class="math inline">\(2(x + 6)\)</span> cm.</li>
+</ul>
+<p>Find the value of <span class="math inline">\(x\)</span> that makes the sides equal.</p></li>
 </ol>
 <p><strong>Challenge Problems</strong></p>
 <ol start="24" type="1">
-<li><p>A gym charges $20 signup plus $15 per month. Another gym charges $50 signup plus $10 per month. After how many months will the total cost be the same?</p></li>
+<li><p>Stage Builder Showdown</p>
+<p>Two contractors are bidding to build a concert stage.</p>
+<ul>
+<li>Contractor A charges a $1,200 setup fee plus $35 for every square meter more than the base design.</li>
+<li>Contractor B charges $50 per square meter but offers a $300 discount if the stage is small.</li>
+</ul>
+<p>For what size of stage (in square meters beyond the base design) will their total prices be the same?</p></li>
 <li><p>Solve for <span class="math inline">\(x\)</span> in terms of <span class="math inline">\(y\)</span>.</p></li>
 </ol>
 <p><span class="math display">\[
@@ -840,9 +890,9 @@ m &amp;= 3
 <li><p><span class="math inline">\(n = 13\)</span></p></li>
 <li><p><span class="math inline">\(x = 8\)</span></p></li>
 <li><p><span class="math inline">\(m = 6\)</span></p></li>
-<li><p><span class="math inline">\(x = 1\)</span></p></li>
-<li><p><span class="math inline">\(y = 4\)</span></p></li>
-<li><p><span class="math inline">\(n = 4\)</span></p></li>
+<li><p>The plans cost the same after 4 movies</p></li>
+<li><p>They cost the same after 3 hours</p></li>
+<li><p>Both sides are 21 cm in length</p></li>
 </ol>
 </div>
 

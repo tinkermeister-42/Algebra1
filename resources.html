@@ -70,6 +70,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+window.MathJax = {
+  tex: {
+    packages: {'[+]': ['base', 'ams', 'color']},
+    macros: {
+      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+      snplus:   ['\\snboth{+#1}', 1],
+      snminus:  ['\\snboth{-#1}', 1],
+      sntimes:  ['\\snboth{\\times\\ #1}', 1],
+      sndiv:    ['\\snboth{\\div\\ #1}', 1]
+    }
+  }
+};
+</script>
 
 
 <link rel="stylesheet" href="styles/glossary-tooltips.css">
@@ -423,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="factor-chart" class="level3">
 <h3 class="anchored" data-anchor-id="factor-chart">Factor Chart</h3>
-<p>Need help finding all the factor pairs of a number? This chart lists every <a href="./glossary.html#glossary-composite-number" class="glossary-link" data-term="composite number" data-original-term="composite number">composite number</a> from 1 to 147 and lists all <a href="./glossary.html#glossary-prime-number" class="glossary-link" data-term="prime number" data-original-term="prime numbers">prime numbers</a> up to 200. For each number, you’ll see a list of its factor pairs.</p>
+<p>Need help finding all the factor pairs of a number? This chart lists every <a href="./glossary.html#glossary-composite-number" class="glossary-link" data-original-term="composite number" data-term="composite number">composite number</a> from 1 to 147 and lists all <a href="./glossary.html#glossary-prime-number" class="glossary-link" data-original-term="prime numbers" data-term="prime number">prime numbers</a> up to 200. For each number, you’ll see a list of its factor pairs.</p>
 <p><a href="./resources/Factor-Chart_noprimes.pdf">Download Chart</a></p>
 <hr>
 </section>

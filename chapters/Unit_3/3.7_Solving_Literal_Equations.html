@@ -70,6 +70,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+window.MathJax = {
+  tex: {
+    packages: {'[+]': ['base', 'ams', 'color']},
+    macros: {
+      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+      snplus:   ['\\snboth{+#1}', 1],
+      snminus:  ['\\snboth{-#1}', 1],
+      sntimes:  ['\\snboth{\\times\\ #1}', 1],
+      sndiv:    ['\\snboth{\\div\\ #1}', 1]
+    }
+  }
+};
+</script>
 
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">

@@ -70,6 +70,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+window.MathJax = {
+  tex: {
+    packages: {'[+]': ['base', 'ams', 'color']},
+    macros: {
+      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+      snplus:   ['\\snboth{+#1}', 1],
+      snminus:  ['\\snboth{-#1}', 1],
+      sntimes:  ['\\snboth{\\times\\ #1}', 1],
+      sndiv:    ['\\snboth{\\div\\ #1}', 1]
+    }
+  }
+};
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -449,11 +464,11 @@ window.Quarto = {
 </header>
 
 
-<p>In Unit 2, we learned how to work with <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-term="equivalent expression" data-original-term="equivalent expressions">equivalent expressions</a>. Sometimes we could check a number, <a href="../../glossary.html#glossary-substitute" class="glossary-link" data-term="substitute" data-original-term="substitute">substitute</a> it into both expressions, and see that they matched. But, with some expressions, we noticed something important:</p>
+<p>In Unit 2, we learned how to work with <a href="../../glossary.html#glossary-equivalent-expression" class="glossary-link" data-original-term="equivalent expressions" data-term="equivalent expression">equivalent expressions</a>. Sometimes we could check a number, <a href="../../glossary.html#glossary-substitute" class="glossary-link" data-original-term="substitute" data-term="substitute">substitute</a> it into both expressions, and see that they matched. But, with some expressions, we noticed something important:</p>
 <p>Some values worked.</p>
 <p>Other values didn’t.</p>
 <p>This brings us to <strong>equations</strong>. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to <strong>find the numbers that make them equal</strong>.</p>
-<p>Those values are called the <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-term="solutions">solutions</a> of the equation.</p>
+<p>Those values are called the <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-term="solutions" data-term="solution">solutions</a> of the equation.</p>
 <p>In this lesson, we begin with the basic rules for solving equations:</p>
 <ul>
 <li><p>Keep both sides equal.</p></li>
@@ -467,7 +482,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a>, <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-term="inverse operation" data-original-term="inverse operations">inverse operations</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-term="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-term="equation" data-term="equation">equation</a>, <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-original-term="inverse operations" data-term="inverse operation">inverse operations</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-term="solution" data-term="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
@@ -478,7 +493,7 @@ window.Quarto = {
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
 <section id="one-step-equations-addition-and-subtraction" class="level3">
 <h3 class="anchored" data-anchor-id="one-step-equations-addition-and-subtraction">3.1.1 – One-Step Equations (Addition and Subtraction)</h3>
-<p>An <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-term="equation">equation</a> is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true.</p>
+<p>An <a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-term="equation" data-term="equation">equation</a> is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true.</p>
 <p>You can think of it like a scale with an expression in each pan. When the value of the left-hand side (LHS) is the same as the right-hand side (RHS), the scale will be in balance.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -520,12 +535,12 @@ a &amp;= 3
 \end{align*}
 \]</span></p>
 <p>The weight of the apple is <strong>3</strong>.</p>
-<p>To <a href="../../glossary.html#glossary-solve" class="glossary-link" data-term="solve" data-original-term="solve">solve</a> the equation, we only needed one step – subtract 2 from each side. We always <strong>undo addition by subtracting</strong>. Subtraction is what we call the <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-term="inverse operation" data-original-term="inverse operation">inverse operation</a> for addition.</p>
+<p>To <a href="../../glossary.html#glossary-solve" class="glossary-link" data-original-term="solve" data-term="solve">solve</a> the equation, we only needed one step – subtract 2 from each side. We always <strong>undo addition by subtracting</strong>. Subtraction is what we call the <a href="../../glossary.html#glossary-inverse-operation" class="glossary-link" data-original-term="inverse operation" data-term="inverse operation">inverse operation</a> for addition.</p>
 <p>We don’t usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.</p>
 <p><span class="math display">\[
 \begin{align*}
 a+2 &amp;= 5 \\
-a+2 \textcolor{red}{- 2} &amp;= 5 \textcolor{red}{- 2} \tag*{\class{stepnote}{\textcolor{gray}{-2 both sides}}} \\
+a+2 \textcolor{red}{- 2} &amp;= 5 \textcolor{red}{- 2} \snminus{2} \\
 a &amp;= 3
 \end{align*}
 \]</span></p>
@@ -546,7 +561,7 @@ x &amp;= 2
 <p><span class="math display">\[
 \begin{align*}
 x - 5 &amp;= 8 \\
-x - 5 \textcolor{red}{+ 5} &amp;= 8 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
+x - 5 \textcolor{red}{+ 5} &amp;= 8 \textcolor{red}{+ 5} \snplus{5} \\
 x &amp;= 13
 \end{align*}
 \]</span></p>
@@ -607,7 +622,7 @@ a &amp;= 3
 <p><span class="math display">\[
 \begin{align*}
 2a &amp;= 6 \\
-2a \textcolor{red}{\div 2} &amp;= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2a \textcolor{red}{\div 2} &amp;= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &amp;= 3
 \end{align*}
 \]</span></p>
@@ -628,7 +643,7 @@ x &amp;= 5
 <p><span class="math display">\[
 \begin{align*}
 \frac{a}{3} &amp;= 1 \\
-\frac{a}{3} \textcolor{red}{\times 3} &amp;= 1 \textcolor{red}{\times 3} \tag*{\class{stepnote}{\textcolor{gray}{×3 both sides}}} \\
+\frac{a}{3} \textcolor{red}{\times 3} &amp;= 1 \textcolor{red}{\times 3} \sntimes{3} \\
 a &amp;= 3
 \end{align*}
 \]</span></p>
@@ -688,7 +703,7 @@ If they match, your solution is correct. If not, you made a mistake along the wa
 <p><span class="math display">\[
 \begin{align*}
 3x &amp;= 21 \\
-3x \textcolor{red}{\div 3} &amp;= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &amp;= 21 \textcolor{red}{\div 3} \sndiv{3} \\
 x &amp;= 7
 \end{align*}
 \]</span></p>
