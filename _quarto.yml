@@ -20,14 +20,13 @@ format:
       - styles/custom-callouts.css
     include-after-body:
       - scripts/inject-custom.html
+    include-in-header: mathjax-macros.html
+    html-math-method: mathjax
     mermaid:
       theme: neutral
 
   pdf: 
-    include-in-header:
-      text: |
-        \usepackage{cancel}
-        \usepackage{xcolor}
+    include-in-header: macros.tex
 
 book:
   title: "DHS Algebra 1"

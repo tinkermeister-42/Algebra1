@@ -91,7 +91,7 @@ We don't usually draw pictures to solve equations. Here is what the solutions lo
 $$
 \begin{align*}
 a+2 &= 5 \\
-a+2 \textcolor{red}{- 2} &= 5 \textcolor{red}{- 2} \tag*{\class{stepnote}{\textcolor{gray}{-2 both sides}}} \\
+a+2 \textcolor{red}{- 2} &= 5 \textcolor{red}{- 2} \snminus{2} \\
 a &= 3
 \end{align*}
 $$
@@ -121,7 +121,7 @@ Here the operation is “subtract $5$,” so we use its **inverse**, “add $5$,
 $$
 \begin{align*}
 x - 5 &= 8 \\
-x - 5 \textcolor{red}{+ 5} &= 8 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
+x - 5 \textcolor{red}{+ 5} &= 8 \textcolor{red}{+ 5} \snplus{5} \\
 x &= 13
 \end{align*}
 $$
@@ -186,7 +186,7 @@ $2a$ means “multiply by $2$,” so we use the **inverse operation**, “divide
 $$
 \begin{align*}
 2a &= 6 \\
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
 \end{align*}
 $$
@@ -214,7 +214,7 @@ $\dfrac{a}{3}$ means “divide by $3$,” so we use the **inverse operation**, �
 $$
 \begin{align*}
 \frac{a}{3} &= 1 \\
-\frac{a}{3} \textcolor{red}{\times 3} &= 1 \textcolor{red}{\times 3} \tag*{\class{stepnote}{\textcolor{gray}{×3 both sides}}} \\
+\frac{a}{3} \textcolor{red}{\times 3} &= 1 \textcolor{red}{\times 3} \sntimes{3} \\
 a &= 3
 \end{align*}
 $$
@@ -259,7 +259,7 @@ Solve $3x = 21$ and check your answer.
 $$
 \begin{align*}
 3x &= 21 \\
-3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 7
 \end{align*}
 $$

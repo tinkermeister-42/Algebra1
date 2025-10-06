@@ -127,13 +127,13 @@ $$
 \begin{align*}
 4x + 5 &= 2x + 9 \\
 \\
-4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}} \\
+4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \snminus{2x} \\
 2x + 5 &= 9 \\
 \\
-2x + 5 \textcolor{red}{- 5} &= 9 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+2x + 5 \textcolor{red}{- 5} &= 9 \textcolor{red}{- 5} \snminus{5} \\
 2x &= 4 \\
 \\
-2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \sndiv{2} \\
 x &= 2
 \end{align*}
 $$
@@ -143,13 +143,13 @@ $$
 \begin{align*}
 5x + 3 &= 2x + 12 \\
 \\
-5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \\
+5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 3 &= 12 \\
 \\
-3x + 3 \textcolor{red}{- 3} &= 12 \textcolor{red}{- 3} \\
+3x + 3 \textcolor{red}{- 3} &= 12 \textcolor{red}{- 3} \snminus{3} \\
 3x &= 9 \\
 \\
-3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 3
 \end{align*}
 $$
@@ -173,16 +173,16 @@ Solve $2(x + 3) = 3x + 1$.
 
 $$
 \begin{align*}
-\textcolor{red}{2}(x + 3) &= 3x + 1 \tag*{\class{stepnote}{\textcolor{gray}{Distribute the 2}}} \\
+\textcolor{red}{2}(x + 3) &= 3x + 1 \stepnote{Distribute the 2} \\
 2x + 6 &= 3x + 1  \\
 \\
-2x + 6 \textcolor{red}{- 3x} &= 3x + 1 \textcolor{red}{- 3x} \tag*{\class{stepnote}{\textcolor{gray}{$-3x$ both sides}}}\\
+2x + 6 \textcolor{red}{- 3x} &= 3x + 1 \textcolor{red}{- 3x} \snminus{3x} \\
 -x + 6 &= 1 \\
 \\
--x + 6 \textcolor{red}{- 6} &= 1 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+-x + 6 \textcolor{red}{- 6} &= 1 \textcolor{red}{- 6} \snminus{6} \\
 -x &= -5 \\
 \\
--x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 5
 \end{align*}
 $$
@@ -195,16 +195,16 @@ Solve $4x + 6 + x = 2x + 12$.
 
 $$
 \begin{align*}
-\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \stepnote{Combine like terms} \\
 \textcolor{blue}{5x} + 6 &= 2x + 12  \\
 \\
-5x + 6 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+5x + 6 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 6 &= 12 \\
 \\
-3x + 6 \textcolor{red}{- 6} &= 12 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+3x + 6 \textcolor{red}{- 6} &= 12 \textcolor{red}{- 6} \snminus{6} \\
 3x &= 6 \\
 \\
-3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 2
 \end{align*}
 $$
@@ -217,16 +217,16 @@ Solve $3(x - 2) + 4 = 2(x + 1)$.
 
 $$
 \begin{align*}
-\textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \tag*{\class{stepnote}{\textcolor{gray}{Distribute both sides}}}\\
+\textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \stepnote{Distribute both sides}\\
 3x - 6 + 4 &= 2x + 2  \\
 \\
-3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &= 2x + 2 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &= 2x + 2 \stepnote{Combine like terms} \\
 3x \textcolor{blue}{- 2} &= 2x + 2 \\
 \\
-3x - 2 \textcolor{red}{- 2x} &= 2x + 2 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+3x - 2 \textcolor{red}{- 2x} &= 2x + 2 \textcolor{red}{- 2x} \snminus{2x} \\
 x - 2 &= 2 \\
 \\
-x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \tag*{\class{stepnote}{\textcolor{gray}{+2 both sides}}}\\
+x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \snplus{2} \\
 x &= 4
 \end{align*}
 $$
@@ -235,14 +235,13 @@ $$
 
 $$
 \begin{align*}
-2(x + 4) &= x + 10 \\
-\\
+2(x + 4) &= x + 10 \stepnote{Distribute the 2} \\
 2x + 8 &= x + 10 \\
 \\
-2x + 8 \textcolor{red}{- x} &= x + 10 \textcolor{red}{- x} \\
+2x + 8 \textcolor{red}{- x} &= x + 10 \textcolor{red}{- x} \snminus{x} \\
 x + 8 &= 10 \\
 \\
-x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \\
+x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \snminus{8} \\
 x &= 2
 \end{align*}
 $$
@@ -288,13 +287,13 @@ Solve:
 
 $$
 \begin{align*}
-15h + 6 \textcolor{red}{-12h} &= 12h + 18 \textcolor{red}{-12h} \\
+15h + 6 \textcolor{red}{-12h} &= 12h + 18 \textcolor{red}{-12h} \snminus{12h} \\
 3h + 6 &= 18 \\
 \\
-3h + 6 \textcolor{red}{-6} &= 18 \textcolor{red}{-6} \\
+3h + 6 \textcolor{red}{-6} &= 18 \textcolor{red}{-6} \snminus{6} \\
 3h &= 12 \\
 \\
-3h \textcolor{red}{\div 3} &= 18 \textcolor{red}{\div 3} \\
+3h \textcolor{red}{\div 3} &= 18 \textcolor{red}{\div 3} \sndiv{3} \\
 h &= 6
 \end{align*}
 $$
@@ -322,18 +321,21 @@ Distribute and simplify:
 
 $$
 \begin{align*}
-2(2x + 8) &= 2(3x + 2) \\
+2(2x + 8) &= 2(3x + 2) \stepnote{Distribute both sides} \\
 4x + 16 &= 6x + 4 \\
-4x + 16 \textcolor{red}{- 4x} &= 6x + 4 \textcolor{red}{- 4x} \tag*{\class{stepnote}{\textcolor{gray}{$-4x$ both sides}}} \\
-16 &= 2x + 4 \\
-16 \textcolor{red}{- 4} &= 2x + 4 \textcolor{red}{- 4} \tag*{\class{stepnote}{\textcolor{gray}{-4 both sides}}} \\
-12 &= 2x \\
-\frac{12}{2} &= \frac{2x}{2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \
+\\
+4x + 16 \textcolor{red}{- 6x} &= 6x + 4 \textcolor{red}{- 6x} \snminus{6x} \\
+-2x + 16 &= 4 \\
+\\
+-2x + 16 \textcolor{red}{- 16} &= 4 \textcolor{red}{- 16} \snminus{16} \\
+-2x &= -12 \\
+\\
+-2x \textcolor{red}{\div -2} &= -12 \textcolor{red}{\div -2} \sndiv{-2} \\
 x &= 6
 \end{align*}
 $$
 
-So $x = 6$.
+So **$x = 6$**.
 
 ---
 
@@ -366,13 +368,19 @@ Distribute and solve:
 
 $$
 \begin{align*}
+18(s - 2) + 12 &= 15s + 42 \stepnote{Distribute the 18} \\
 18s - 36 + 12 &= 15s + 42 \\
-18s - 24 &= 15s + 42 \\
-18s - 24 \textcolor{red}{- 15s} &= 15s + 42 \textcolor{red}{- 15s} \tag*{\class{stepnote}{\textcolor{gray}{$-15s$ both sides}}} \\
+\\
+18s \textcolor{blue}{- 36} \textcolor{blue}{+ 12} &= 15s + 42 \stepnote{Combine like terms} \\
+18s \textcolor{blue}{- 24} &= 15s + 42 \\
+\\
+18s - 24 \textcolor{red}{- 15s} &= 15s + 42 \textcolor{red}{- 15s} \snminus{15s} \\
 3s - 24 &= 42 \\
-3s - 24 \textcolor{red}{+ 24} &= 42 \textcolor{red}{+ 24} \tag*{\class{stepnote}{\textcolor{gray}{+24 both sides}}} \\
+\\
+3s - 24 \textcolor{red}{+ 24} &= 42 \textcolor{red}{+ 24} \snplus{24} \\
 3s &= 66 \\
-\frac{3s}{3} &= \frac{66}{3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+\\
+3s \textcolor{red}{\div 3} &= 66 \textcolor{red}{\div 3} \sndiv{3} \\
 s &= 22
 \end{align*}
 $$
@@ -396,8 +404,13 @@ $$
 
 $$
 \begin{align*}
-8 - 2 &= 5m - 3m \\
-6 &= 2m \\
+8 + 3m \textcolor{red}{-5m} &= 2 + 5m \textcolor{red}{-5m} \snminus{5m} \\
+8 - 2m &= 2 \\
+\\
+8 - 2m \textcolor{red}{-8} &= 2 \textcolor{red}{-8} \snminus{8} \\
+-2m &= -6 \\
+\\
+-2m \textcolor{red}{\div -2} &= -6 \textcolor{red}{\div -2} \sndiv{-2} \\
 m &= 3
 \end{align*}
 $$
@@ -460,17 +473,43 @@ They match at **3 movies**.
 
 20. $5(2m - 1) = 3(m + 7) - m$
 
-**Multi-Step, More Layers**
+**Word Problems**
 
-21. $3(x + 4) + 2(x - 1) = 5(x + 3) - 4$
+21. Competing Streaming Plans
 
-22. $2(3y - 5) + 7 = 4(y + 2) + (y - 1)$
+    * Plan A charges $10 per month plus $4 per movie.
+    * Plan B charges $6 per month plus $5 per movie.
 
-23. $4(n - 2) + (n + 3) = 3(n + 1) + 5$
+    After how many movies will the total monthly cost be the same?
+
+
+22. Two Lawn Services
+
+    * Service A charges $25 per visit plus $15 per hour of mowing.
+    * Service B charges $40 per visit plus $10 per hour.
+
+    After how many hours will the total costs be equal?
+
+
+23. Equal Sides, Different Expressions
+
+    * Two sides of a trapezoid are equal in length.
+    * The first side measures $4x + 3$ cm.
+    * The second side measures $2(x + 6)$ cm.
+    
+    Find the value of $x$ that makes the sides equal.
+
 
 **Challenge Problems**
 
-24. A gym charges $20 signup plus $15 per month. Another gym charges $50 signup plus $10 per month. After how many months will the total cost be the same?
+24. Stage Builder Showdown
+
+    Two contractors are bidding to build a concert stage.
+
+    * Contractor A charges a \$1,200 setup fee plus \$35 for every square meter more than the base design.
+    * Contractor B charges \$50 per square meter but offers a \$300 discount if the stage is small.
+
+    For what size of stage (in square meters beyond the base design) will their total prices be the same?
 
 25. Solve for $x$ in terms of $y$.
 
@@ -521,10 +560,10 @@ $$
 
 20. $m = 6$
 
-21. $x = 1$
+21. The plans cost the same after 4 movies
 
-22. $y = 4$
+22. They cost the same after 3 hours
 
-23. $n = 4$
+23. Both sides are 21 cm in length
 
 :::

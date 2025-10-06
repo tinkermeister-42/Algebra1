@@ -1,0 +1,13 @@
+% macros.tex
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\stepnote}[1]{\tag*{\class{stepnote}{\textcolor{gray}{#1}}}}
+\newcommand{\snboth}[1]{\tag*{\class{stepnote}{\textcolor{gray}{$#1$ both sides}}}}
+
+% optional shorthands
+\newcommand{\snplus}[1]{\snboth{+#1}}
+\newcommand{\snminus}[1]{\snboth{-#1}}
+\newcommand{\sntimes}[1]{\snboth{\times #1}}
+\newcommand{\sndiv}[1]{\snboth{\div #1}}

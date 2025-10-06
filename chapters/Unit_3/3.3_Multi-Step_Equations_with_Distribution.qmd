@@ -54,7 +54,7 @@ The variable $x$ is trapped inside the parentheses. We start by applying the dis
 $$
 \begin{align*}
 \textcolor{red}{3}(x + 4) &= 21  \\
-3x + 12 &= 21 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}}
+3x + 12 &= 21 \stepnote{distribute the 3}
 \end{align*}
 $$
 
@@ -62,10 +62,10 @@ Now we can solve the two-step equation.
 
 $$
 \begin{align*}
-3x + 12 \textcolor{red}{- 12} &= 21 \textcolor{red}{- 12} \tag*{\class{stepnote}{\textcolor{gray}{–12 both sides}}} \\
+3x + 12 \textcolor{red}{- 12} &= 21 \textcolor{red}{- 12} \snminus{12} \\
 3x &= 9 \\
 \\
-3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 3
 \end{align*}
 $$
@@ -84,13 +84,13 @@ Notice the negative sign. We need to be extra careful to include it when we dist
 
 $$
 \begin{align*}
-\textcolor{red}{-2}(2x - 5) &= 6 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -2}}} \\
+\textcolor{red}{-2}(2x - 5) &= 6 \stepnote{distribute the -2} \\
 -4x + 10 &= 6  \\
 \\
--4x + 10 \textcolor{red}{- 10} &= 6 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{-10 both sides}}} \\
+-4x + 10 \textcolor{red}{- 10} &= 6 \textcolor{red}{- 10} \snminus{10} \\
 -4x &= -4 \\
 \\
--4x \textcolor{red}{\div -4} &= -4 \textcolor{red}{\div -4} \tag*{\class{stepnote}{\textcolor{gray}{÷-4 both sides}}} \\
+-4x \textcolor{red}{\div -4} &= -4 \textcolor{red}{\div -4} \sndiv{-4} \\
 x &= 1
 \end{align*}
 $$
@@ -102,13 +102,13 @@ Solve:
 
 $$
 \begin{align*}
-\textcolor{red}{3}(2x + 1) &= 15 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
+\textcolor{red}{3}(2x + 1) &= 15 \stepnote{distribute the 3} \\
 6x + 3 &= 15 \\
 \\
-6x + 3 \textcolor{red}{-3} &= 15 \textcolor{red}{-3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}}\\
+6x + 3 \textcolor{red}{-3} &= 15 \textcolor{red}{-3} \snminus{3} \\
 6x &= 12 \\
 \\
-6x \textcolor{red}{\div 6} &= 12 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}}\\
+6x \textcolor{red}{\div 6} &= 12 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 2
 \end{align*}
 $$
@@ -135,7 +135,7 @@ Start by combining the like terms $4x$ and $2x$.
 
 $$
 \begin{align*}
-\textcolor{blue}{4x} + 7 + \textcolor{blue}{2x} &= 31 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{4x} + 7 + \textcolor{blue}{2x} &= 31 \stepnote{combine like terms} \\
 \textcolor{blue}{6x} + 7 &= 31 
 \end{align*}
 $$
@@ -144,10 +144,10 @@ Now solve the two-step equation.
 
 $$
 \begin{align*}
-6x + 7 \textcolor{red}{- 7} &= 31 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{–7 both sides}}} \\
+6x + 7 \textcolor{red}{- 7} &= 31 \textcolor{red}{- 7} \snminus{7} \\
 6x &= 24 \\
 \\
-6x \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}} \\
+6x \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 4
 \end{align*}
 $$
@@ -166,7 +166,7 @@ This equation has both parentheses **and** like terms. Start by distributing.
 
 $$
 \begin{align*}
-\textcolor{red}{2}(x + 5) + 3x &= 25 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 2}}} \\
+\textcolor{red}{2}(x + 5) + 3x &= 25 \stepnote{distribute the 2} \\
 2x + 10 + 3x &= 25 
 \end{align*}
 $$
@@ -175,7 +175,7 @@ Now combine $2x$ and $3x$.
 
 $$
 \begin{align*}
-\textcolor{blue}{2x} + 10 + \textcolor{blue}{3x} &= 25 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{2x} + 10 + \textcolor{blue}{3x} &= 25 \stepnote{combine like terms} \\
 \textcolor{blue}{5x} + 10 &= 25
 \end{align*}
 $$
@@ -184,10 +184,10 @@ Finish solving:
 
 $$
 \begin{align*}
-5x + 10 \textcolor{red}{- 10} &= 25 \textcolor{red}{- 10} \tag*{\class{stepnote}{\textcolor{gray}{–10 both sides}}} \\
+5x + 10 \textcolor{red}{- 10} &= 25 \textcolor{red}{- 10} \snminus{10} \\
 5x &= 15 \\
 \\
-5x \textcolor{red}{\div 5} &= 15 \textcolor{red}{\div 5} \tag*{\class{stepnote}{\textcolor{gray}{÷5 both sides}}} \\
+5x \textcolor{red}{\div 5} &= 15 \textcolor{red}{\div 5} \sndiv{5} \\
 x &= 3
 \end{align*}
 $$
@@ -206,16 +206,16 @@ Be careful with those negative signs!
 
 $$
 \begin{align*}
-\textcolor{red}{-3}(x - 4) + 2x - 3 &= 7 \tag*{\class{stepnote}{\textcolor{gray}{distribute the -3}}} \\
+\textcolor{red}{-3}(x - 4) + 2x - 3 &= 7 \stepnote{distribute the -3} \\
 -3x + 12 + 2x - 3 &= 7 \\
 \\
-\textcolor{blue}{-3x} + \textcolor{green}{12} + \textcolor{blue}{2x} \textcolor{green}{- 3} &= 7 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{-3x} + \textcolor{green}{12} + \textcolor{blue}{2x} \textcolor{green}{- 3} &= 7 \stepnote{combine like terms} \\
 \textcolor{blue}{-x} + \textcolor{green}{9} &= 7 \\
 \\
--x + 9 \textcolor{red}{-9} &= 7 \textcolor{red}{- 9} \tag*{\class{stepnote}{\textcolor{gray}{-9 both sides}}} \\
+-x + 9 \textcolor{red}{-9} &= 7 \textcolor{red}{- 9} \snminus{9} \\
 -x &= -2 \\
 \\
--x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 2
 \end{align*}
 $$
@@ -225,13 +225,13 @@ $$
 
 $$
 \begin{align*}
-\textcolor{red}{4}(x + 2) - 3x + 5 &= 18 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
+\textcolor{red}{4}(x + 2) - 3x + 5 &= 18 \stepnote{distribute the 4} \\
 4x + 8 - 3x + 5 &= 18 \\
 \\
-\textcolor{blue}{4x} + \textcolor{green}{8} + \textcolor{blue}{-3x} + \textcolor{green}{5} &= 18 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
+\textcolor{blue}{4x} + \textcolor{green}{8} + \textcolor{blue}{-3x} + \textcolor{green}{5} &= 18 \stepnote{combine like terms} \\
 \textcolor{blue}{x} + \textcolor{green}{13} &= 18 \\
 \\
-x + 13 \textcolor{red}{-13} &= 18 \textcolor{red}{-13} \tag*{\class{stepnote}{\textcolor{gray}{-13 both sides}}} \\
+x + 13 \textcolor{red}{-13} &= 18 \textcolor{red}{-13} \snminus{13} \\
 x &= 5
 \end{align*}
 $$
@@ -264,10 +264,13 @@ Simplify and solve:
 
 $$
 \begin{align*}
-12s - 60 - 6s &= 84 \\
-6s - 60 &= 84 \\
-6s - 60 \textcolor{red}{+ 60} &= 84 \textcolor{red}{+ 60} \tag*{\class{stepnote}{\textcolor{gray}{+60 both sides}}}\\
+\textcolor{blue}{12s} - 60 \textcolor{blue}{- 6s} &= 84 \stepnote{combine like terms}\\
+\textcolor{blue}{6s} - 60 &= 84 \\
+\\
+6s - 60 \textcolor{red}{+ 60} &= 84 \textcolor{red}{+ 60} \snplus{60} \\
 6s &= 144 \\
+\\
+6s \textcolor{red}{\div 6} &= 144 \textcolor{red}{\div 6} \sndiv{6} \\
 s &= 24
 \end{align*}
 $$
@@ -293,10 +296,13 @@ Simplify and solve:
 
 $$
 \begin{align*}
-6x + 6 &= 54 \\
-6x + 6 \textcolor{red}{- 6} &= 54 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+    (\textcolor{blue}{2x} + \textcolor{green}{3}) + (\textcolor{blue}{3x} \textcolor{green}{- 2}) + (\textcolor{blue}{x} \textcolor{green}{+ 5}) &= 54 \stepnote{combine like terms} \\
+\textcolor{blue}{6x} + \textcolor{green}{6} &= 54 \\
+\\
+6x + 6 \textcolor{red}{- 6} &= 54 \textcolor{red}{- 6} \snminus{6} \\
 6x &= 48 \\
-6x \textcolor{red}{\div 6} &= 48 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}}\\
+\\
+6x \textcolor{red}{\div 6} &= 48 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 8
 \end{align*}
 $$
@@ -323,10 +329,13 @@ Simplify and solve:
 
 $$
 \begin{align*}
-8c - 24 - 2c &= 96 \\
-6c - 24 &= 96 \\
-6c - 24 \textcolor{red}{+ 24} &= 96 \textcolor{red}{+ 24} \tag*{\class{stepnote}{\textcolor{gray}{+24 both sides}}}\\
+\textcolor{blue}{8c} - 24 \textcolor{blue}{- 2c} &= 96 \stepnote{combine like terms} \\
+\textcolor{blue}{6c} - 24 &= 96 \\
+\\
+6c - 24 \textcolor{red}{+ 24} &= 96 \textcolor{red}{+ 24} \snplus{24} \\
 6c &= 120 \\
+\\
+6c \textcolor{red}{\div 6} &= 120 \textcolor{red}{\div 6} \sndiv{6} \\
 c &= 20
 \end{align*}
 $$

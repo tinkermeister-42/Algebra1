@@ -68,10 +68,10 @@ $$
 \begin{align*}
 2a + 1 &= 7 \\
 \\
-2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \tag*{\class{stepnote}{\textcolor{gray}{-1 both sides}}} \\
+2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \snminus{1} \\
 2a &= 6 \\
 \\
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
 \end{align*}
 $$
@@ -100,10 +100,10 @@ $$
 \begin{align*}
 \frac{x}{8} - 3 &= 7 \\
 \\
-\frac{x}{8} - 3 \textcolor{red}{+3} &= 7 \textcolor{red}{+3} \tag*{\class{stepnote}{\textcolor{gray}{+3 both sides}}} \\
+\frac{x}{8} - 3 \textcolor{red}{+3} &= 7 \textcolor{red}{+3} \snplus{3} \\
 \frac{x}{8} &= 10 \\
 \\
-\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \tag*{\class{stepnote}{\textcolor{gray}{×8 both sides}}} \\
+\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \sntimes{8} \\
 x &= 80
 \end{align*}
 $$
@@ -132,10 +132,10 @@ $$
 \begin{align*}
 -x + 5 &= 3 \\
 \\
--x + 5 \textcolor{red}{-5} &= 3 \textcolor{red}{-5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+-x + 5 \textcolor{red}{-5} &= 3 \textcolor{red}{-5} \snminus{5} \\
 -x &= -2 \\
 \\
--x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 2
 \end{align*}
 $$
@@ -150,10 +150,10 @@ $$
 \begin{align*}
 3 - x &= 7 \\
 \\
-3 \textcolor{red}{-3} - x &= 7 \textcolor{red}{-3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}} \\
+3 \textcolor{red}{-3} - x &= 7 \textcolor{red}{-3} \snminus{3} \\
 -x &= 4 \\
 \\
--x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= -4
 \end{align*}
 $$
@@ -183,10 +183,10 @@ Now we solve for $h$:
 
 $$
 \begin{align*}
-8h + 10 \textcolor{red}{-10} &= 42 \textcolor{red}{-10} \tag*{\class{stepnote}{\textcolor{gray}{-10 both sides}}} \\
+8h + 10 \textcolor{red}{-10} &= 42 \textcolor{red}{-10} \snminus{10} \\
 8h &= 32 \\
 \\
-8h \textcolor{red}{\div 8} &= 32 \textcolor{red}{\div 8} \tag*{\class{stepnote}{\textcolor{gray}{÷8 both sides}}} \\
+8h \textcolor{red}{\div 8} &= 32 \textcolor{red}{\div 8} \sndiv{8} \\
 h &= 4
 \end{align*}
 $$
@@ -211,10 +211,10 @@ Now we solve for $t$:
 
 $$
 \begin{align*}
-0.05t + 25 \textcolor{red}{-25} &= 32 \textcolor{red}{-25} \tag*{\class{stepnote}{\textcolor{gray}{-25 both sides}}}\\
+0.05t + 25 \textcolor{red}{-25} &= 32 \textcolor{red}{-25} \snminus{25} \\
 0.05t &= 7 \\
 \\
-0.05t \textcolor{red}{\div 0.05} &= 7 \textcolor{red}{\div 0.05} \tag*{\class{stepnote}{\textcolor{gray}{÷0.05 both sides}}}\\
+0.05t \textcolor{red}{\div 0.05} &= 7 \textcolor{red}{\div 0.05} \sndiv{0.05} \\
 t &= 140
 \end{align*}
 $$
@@ -235,9 +235,9 @@ An equation that models this situation is:
 
 $$
 \begin{align*}
-2W + 2L &= 28 \tag*{\class{stepnote}{\textcolor{gray}{perimeter formula}}} \\
+2W + 2L &= 28 \stepnote{perimeter formula} \\
 \\
-2W + 2(2W + 2) &= 28 \tag*{\class{stepnote}{\textcolor{gray}{substitute and simplify}}}\\
+2W + 2(2W + 2) &= 28 \stepnote{substitute and simplify}\\
 2W + 4W + 4 &= 28 \\
 \\
 6W + 4 &= 28
@@ -248,10 +248,10 @@ Now we can solve for $W$:
 
 $$
 \begin{align*}
-6W + 4 \textcolor{red}{-4} &= 28 \textcolor{red}{-4} \tag*{\class{stepnote}{\textcolor{gray}{-4 both sides}}}\\
+6W + 4 \textcolor{red}{-4} &= 28 \textcolor{red}{-4} \snminus{4} \\
 6W &= 24 \\
 \\
-6W \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}} \\
+6W \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \sndiv{6} \\
 W &= 4
 \end{align*}
 $$
@@ -272,10 +272,10 @@ The equation $15c + 20 = 65$ can be used to model this situation.
 
 $$
 \begin{align*}
-15c + 20 \textcolor{red}{-20} &= 65 \textcolor{red}{-20} \tag*{\class{stepnote}{\textcolor{gray}{-20 both sides}}}\\
+15c + 20 \textcolor{red}{-20} &= 65 \textcolor{red}{-20} \snminus{20} \\
 15c &= 45 \\
 \\
-15c \textcolor{red}{\div 15} &= 45 \textcolor{red}{\div 15} \tag*{\class{stepnote}{\textcolor{gray}{÷15 both sides}}} \\
+15c \textcolor{red}{\div 15} &= 45 \textcolor{red}{\div 15} \sndiv{15} \\
 c &= 3
 \end{align*}
 $$

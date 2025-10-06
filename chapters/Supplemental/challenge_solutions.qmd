@@ -240,7 +240,7 @@ No Challenge Questions
 
 :::{.answers}
 
-24. $6$ months
+24. $116m^2$
 
 25. $x = 2y + 4$
 
