@@ -557,6 +557,18 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 
 ---
 
+### Inverse Operations {#glossary-inverse-operations}
+
+**Inverse operations** are pairs of operations that undo each other. When you perform one, you can use its inverse to get back to where you started.
+
+Addition and subtraction are inverses. Multiplication and division are inverses. We use inverse operations to isolate a variable when solving equations.
+
+> **Example:**
+> The inverse of adding 5 is subtracting 5.
+> The inverse of dividing by 3 is multiplying by 3.
+
+---
+
 ### Less than {#glossary-less_than}
 
 A number is less than (**<**) another number if it is further to the left on the number line.

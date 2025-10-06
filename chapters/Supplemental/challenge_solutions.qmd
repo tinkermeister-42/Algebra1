@@ -230,7 +230,7 @@ No Challenge Questions
 
 :::{.answers}
 
-24. $x = 1$
+24. **4** T-shirts and **11** hoodies
 
 25. $x = y + 2$
 

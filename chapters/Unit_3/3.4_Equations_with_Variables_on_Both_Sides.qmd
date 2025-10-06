@@ -265,7 +265,148 @@ When solving an equation with variables on both sides:
 
 :::
 
-Now it's your turn to practice solving some equations with variables on both sides!
+---
+
+## 3.4.3 – Word Problems with Variables on Both Sides
+
+When two different plans or expressions both describe the **same total**, we often get equations with the variable on **both sides**. Simplify each side (distribute, combine like terms), then move all variable terms to one side.
+
+---
+
+**Example 1 – Two Pay Plans**
+
+Alex earns a \$6 bonus plus \$15 per hour. Blair earns a \$18 bonus plus \$12 per hour.
+After how many hours will they earn the same amount?
+
+Let $h$ be the number of hours.
+
+$$
+15h + 6 = 12h + 18
+$$
+
+Solve:
+
+$$
+\begin{align*}
+15h + 6 \textcolor{red}{-12h} &= 12h + 18 \textcolor{red}{-12h} \\
+3h + 6 &= 18 \\
+\\
+3h + 6 \textcolor{red}{-6} &= 18 \textcolor{red}{-6} \\
+3h &= 12 \\
+\\
+3h \textcolor{red}{\div 3} &= 18 \textcolor{red}{\div 3} \\
+h &= 6
+\end{align*}
+$$
+
+They earn the same after **4 hours**.
+
+---
+
+**Example 2 – Equal Perimeters**
+
+Two rectangles have the **same perimeter**.
+
+* Rectangle A: length $x + 6$, width $x + 2$
+* Rectangle B: length $2x - 1$, width $x + 3$
+
+Find $x$.
+
+Perimeter: $P = 2(\text{length} + \text{width})$.
+
+$$
+2\big((x+6) + (x+2)\big) = 2\big((2x-1) + (x+3)\big)
+$$
+
+Distribute and simplify:
+
+$$
+\begin{align*}
+2(2x + 8) &= 2(3x + 2) \\
+4x + 16 &= 6x + 4 \\
+4x + 16 \textcolor{red}{- 4x} &= 6x + 4 \textcolor{red}{- 4x} \tag*{\class{stepnote}{\textcolor{gray}{$-4x$ both sides}}} \\
+16 &= 2x + 4 \\
+16 \textcolor{red}{- 4} &= 2x + 4 \textcolor{red}{- 4} \tag*{\class{stepnote}{\textcolor{gray}{-4 both sides}}} \\
+12 &= 2x \\
+\frac{12}{2} &= \frac{2x}{2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \
+x &= 6
+\end{align*}
+$$
+
+So $x = 6$.
+
+---
+
+**Example 3 – Two Vendors, Same Total**
+
+Vendor A sells sweatshirts for \$18 each, includes **2 free**, and charges \$12 shipping.
+Vendor B sells sweatshirts for \$15 each with a flat \$42 shipping.
+For how many sweatshirts do the totals match?
+
+Let $s$ be the number of sweatshirts ordered.
+
+Vendor A total: pay for $(s-2)$ shirts (because 2 are free) and add \$12 shipping
+
+$$
+18(s - 2) + 12
+$$
+
+Vendor B total:
+$$
+15s + 42
+$$
+
+Set them equal:
+
+$$
+18(s - 2) + 12 = 15s + 42
+$$
+
+Distribute and solve:
+
+$$
+\begin{align*}
+18s - 36 + 12 &= 15s + 42 \\
+18s - 24 &= 15s + 42 \\
+18s - 24 \textcolor{red}{- 15s} &= 15s + 42 \textcolor{red}{- 15s} \tag*{\class{stepnote}{\textcolor{gray}{$-15s$ both sides}}} \\
+3s - 24 &= 42 \\
+3s - 24 \textcolor{red}{+ 24} &= 42 \textcolor{red}{+ 24} \tag*{\class{stepnote}{\textcolor{gray}{+24 both sides}}} \\
+3s &= 66 \\
+\frac{3s}{3} &= \frac{66}{3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+s &= 22
+\end{align*}
+$$
+
+The totals match at **22 sweatshirts**.
+
+---
+
+:::{.you-try-m title="Break-Even Subscriptions"}
+Plan A costs \$8 per month plus \$3 per premium movie.
+Plan B costs \$2 per month plus \$5 per premium movie.
+For how many premium movies will the plans cost the same in a month?
+:::
+
+:::{.answer title="Answer"}
+Let $m$ be the number of premium movies.
+
+$$
+8 + 3m = 2 + 5m
+$$
+
+$$
+\begin{align*}
+8 - 2 &= 5m - 3m \\
+6 &= 2m \\
+m &= 3
+\end{align*}
+$$
+
+They match at **3 movies**.
+:::
+
+---
+
 
 
 

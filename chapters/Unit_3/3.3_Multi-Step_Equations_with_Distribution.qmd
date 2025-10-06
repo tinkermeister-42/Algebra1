@@ -240,103 +240,100 @@ $$
 
 ---
 
-### 3.3.3 – Checking Your Work
+### 3.3.3 – Word Problems with Multi-Step Equations
 
-As always, it is a good idea to check your answer by substituting the solution into the original equation.
-
----
-
-**Example:**
-
-Solve and check:
-
-$$
-4(x + 1) - 2x + 3 = 13
-$$
-
-**Step 1. Solve the equation**
-
-$$
-\begin{align*}
-\textcolor{red}{4}(x + 1) - 2x + 3 &= 13 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 4}}} \\
-4x + 4 - 2x + 3 &= 13 \\
-\\
-\textcolor{blue}{4x} + \textcolor{green}{4} + \textcolor{blue}{-2x} + \textcolor{green}{3} &= 13 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
-\textcolor{blue}{2x} + \textcolor{green}{7} &= 13 \\
-\\
-2x + 7 \textcolor{red}{- 7} &= 13 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
-2x &= 6 \\
-\\
-2x \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
-x &= 3
-\end{align*}
-$$
+Some problems lead to equations that look “messier” because they include parentheses or more than one set of like terms.
+We solve them the same way — by simplifying first, then isolating the variable.
 
 ---
 
-**Step 2. Check the solution**
+**Example 1 – Selling T-Shirts**
 
-Substitute $x = 3$ into the **original equation**:
+A club sells T-shirts for \$12 each. The total cost to make the shirts is \$60 plus \$6 per shirt.
+If the group made a profit of \$84, how many shirts did they sell?
 
-$$
-4(x + 1) - 2x + 3 = 13
-$$
+Let $s$ be the number of shirts sold.
 
-$$
-4(\textcolor{red}{3} + 1) - 2(\textcolor{red}{3}) + 3 = 13
-$$
+Total profit = money in − money out:
 
 $$
-4(4) - 6 + 3 = 13
+12s - (60 + 6s) = 84
 $$
 
-$$
-16 - 6 + 3 = 13
-$$
-
-$$
-13 = 13 \quad \checkmark
-$$
-
-Since both sides are equal, $x = 3$ is correct.
-
-
-:::{.you-try title="Solve and check $3(x + 2) - x + 1 = 11$"}
-
-**Step 1. Solve the equation**
+Simplify and solve:
 
 $$
 \begin{align*}
-\textcolor{red}{3}(x + 2) - x + 1 &= 11 \tag*{\class{stepnote}{\textcolor{gray}{distribute the 3}}} \\
-3x + 6 - x + 1 &= 11 \\
-\\
-\textcolor{blue}{3x} + \textcolor{green}{6} + \textcolor{blue}{-x} + \textcolor{green}{1} &= 11 \tag*{\class{stepnote}{\textcolor{gray}{combine like terms}}} \\
-\textcolor{blue}{2x} + \textcolor{green}{7} &= 11 \\
-\\
-2x + 7 \textcolor{red}{- 7} &= 11 \textcolor{red}{- 7} \tag*{\class{stepnote}{\textcolor{gray}{-7 both sides}}} \\
-2x &= 4 \\
-\\
-2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
-x &= 2
+12s - 60 - 6s &= 84 \\
+6s - 60 &= 84 \\
+6s - 60 \textcolor{red}{+ 60} &= 84 \textcolor{red}{+ 60} \tag*{\class{stepnote}{\textcolor{gray}{+60 both sides}}}\\
+6s &= 144 \\
+s &= 24
 \end{align*}
 $$
 
+They sold **24 shirts**.
 
-**Step 2. Check the solution**
+---
 
-Substitute $x = 2$ into the **original equation**:
+**Example 2 – Geometry**
+
+The perimeter of a triangle is 54 cm. The sides measure $2x + 3$, $3x - 2$, and $x + 5$.
+Find the value of $x$.
+
+![](/images/Unit_3/Lesson_3/triangle_sides.png){width="300px" fig-align="center"}
+
+Write an equation for the perimeter:
+
+$$
+(2x + 3) + (3x - 2) + (x + 5) = 54
+$$
+
+Simplify and solve:
 
 $$
 \begin{align*}
-3(x + 2) - x + 1 &= 11 \\
-3(\textcolor{red}{2} + 2) - \textcolor{red}{2} + 1 &= 11 \\
-3(4) - 2 + 1 &= 11 \\
-12 - 2 + 1 &= 11 \\
-11 &= 11 \quad \checkmark
+6x + 6 &= 54 \\
+6x + 6 \textcolor{red}{- 6} &= 54 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+6x &= 48 \\
+6x \textcolor{red}{\div 6} &= 48 \textcolor{red}{\div 6} \tag*{\class{stepnote}{\textcolor{gray}{÷6 both sides}}}\\
+x &= 8
 \end{align*}
 $$
 
+Each side can now be found using $x = 8$.
+
+---
+
+:::{.you-try-m title="Car Wash Fundraiser"}
+
+A car wash charges \$8 per car. Supplies cost \$24 plus \$2 per car.
+If the group earned \$96 in profit, how many cars did they wash?
 :::
+
+:::{.answer title="Answer"}
+
+Let $c$ be the number of cars washed.
+
+$$
+8c - (24 + 2c) = 96
+$$
+
+Simplify and solve:
+
+$$
+\begin{align*}
+8c - 24 - 2c &= 96 \\
+6c - 24 &= 96 \\
+6c - 24 \textcolor{red}{+ 24} &= 96 \textcolor{red}{+ 24} \tag*{\class{stepnote}{\textcolor{gray}{+24 both sides}}}\\
+6c &= 120 \\
+c &= 20
+\end{align*}
+$$
+
+They washed **20 cars**.
+:::
+
 
 ---
 
@@ -344,7 +341,7 @@ $$
 
 **Directions:** Solve each equation and check your work.
 
-**1–5. Distribute then solve**
+**Distribute then solve**
 
 1. $2(x + 3) = 14$
 
@@ -358,7 +355,7 @@ $$
 
 ---
 
-**6–10. Combine like terms**
+**Combine like terms**
 
 6. $4x + 7 + 3x = 28$
 
@@ -372,7 +369,7 @@ $$
 
 ---
 
-**11–23. Distribution + like terms**
+**Distribution + like terms**
 
 11. $2(4 + x) + 3x = 22$
 
@@ -394,17 +391,19 @@ $$
 
 20. $3x + 5 + 8(-2 + x) = 40$
 
-21. $-x + 4 + 3(3 + x) = 18$
+**Word Problems**
 
-22. $5x - 3 - 2(-4 + x) = 16$
+21. A plumber charges \$40 for the service call plus \$25 per hour. On one job, the plumber brought an assistant who also worked for \$15 per hour. The total bill was \$160. How many hours did they work?
 
-23. $-2x + 7 + 4(1 + x) = 25$
+22. A contractor charges \$20 per square foot to build a deck, plus a one-time permit fee of \$60. If the deck is $3$ feet longer than it is wide and has a total area of $w( w + 3)$ square feet, and the total cost was \$2,460, find the width of the deck.
+
+23. The perimeter of a triangle is 75 cm. The three sides measure $3x + 1$, $2(x + 4)$, and $x + 6$. Write and solve an equation to find the value of $x$.
 
 ---
 
 **Challenge Problems**
 
-24.  $6(x + 2) - 4(x - 3) + 5 = 31$
+24. The student council ordered T-shirts and hoodies from a printing company. Each T-shirt costs \$12, and each hoodie costs \$24. The number of hoodies ordered was 3 more than twice the number of T-shirts. If the total cost was \$312, how many T-shirts did they order?
 
 25.  $2(x + y) + 3x - 4 = 5y + 6 \quad$ *(solve for $x$ in terms of $y$)*
 
@@ -432,9 +431,9 @@ $$
 18. $x = 3$
 19. $x = -1$
 20. $x = 3$
-21. $x = 2$
-22. $x = 2$
-23. $x = 3$
+21. $h = 3$
+22. $w = 10$
+23. $x = 10$
 
 :::
 
