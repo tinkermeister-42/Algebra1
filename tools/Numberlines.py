@@ -208,7 +208,6 @@ def _draw_point(ax, orientation, val, closed, color, size, alpha=1, z=4):
     ax.plot(*coords, "o", markersize=size, markeredgewidth=2.5,
             markerfacecolor=face, markeredgecolor=color, alpha=alpha, zorder=z)
 
-
 def _draw_inequality(ax, orientation, op, val, color, lw, size, alpha):
     closed = "=" in op
     head = "<|-" if "<" in op else "-|>"
@@ -218,7 +217,7 @@ def _draw_inequality(ax, orientation, op, val, color, lw, size, alpha):
     else:
         coords = ((0, -0.05), (0, val)) if "<" in op else ((0, val), (0, 1.05))
     ax.annotate("", coords[1], coords[0], arrowprops=dict(arrowstyle=head, color=color, lw=2 * lw, alpha=alpha), zorder=3)
-    _draw_point(ax, orientation, val, closed, color, size, 4, 1)
+    _draw_point(ax, orientation, val, closed, color, size, 1, 4)
 
 
 def _draw_range(ax, orientation, a, b, ca, cb, color, size, alpha):
