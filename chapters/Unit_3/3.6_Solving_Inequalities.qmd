@@ -1,0 +1,286 @@
+# 3.6 – Solving Inequalities {.unnumbered}
+
+You have \$20 in your pocket and want to buy some candy at the grocery store. You need to purchase some bread for \$3.50. The candy you want to purchase costs \$1.25 per package. How many packages of candy can you afford?
+
+We might try to model this problem with the following equation.
+
+Let $c$ be the number of packages of candy you purchase.
+
+$$
+3.5 + 1.25c = 20
+$$
+
+Solving for $c$ gives us:
+
+$$
+\begin{align*}
+3.5 + 1.25c \textcolor{red}{-3.5} &= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
+1.25c &= 16.5 \\
+\\
+1.25c \textcolor{red}{\div 1.25} &= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
+c &= 13.2
+\end{align*}
+$$
+
+The solution to the equation says you can afford 13.2 packages of candy. But this seems strange because we can only purchase whole packages of candy.
+
+Problems like this one show the limitations of equations. To solve a problem like this in a meaningful way, we need to learn about **inequalities**.
+
+Unlike an equation, inequalities help us solve problems with a range of answers.
+
+::: {.objectives}
+
+:::
+
+::: {.vocab}
+
+:::
+
+{{< warmup >}}
+
+Coming Soon
+
+{{< learn >}}
+
+### 3.6.1 -- Inequality Basics
+
+An inequality is a mathematical statement that compares two expressions using one of 5 inequality symbols. The following table defines these.
+
+| Symbol | Meaning                  | Example    |
+| ---    | ---                      | ---        |
+| $\neq$ | Not equal                | $x \neq y$ |
+| $\gt$  | Greater than             | $x > y$    |
+| $\lt$  | Less than                | $x < y$    |
+| $\ge$  | Greater than or equal to | $x >= y$   |
+| $\le$  | Less than or equal to    | $x <= y$   |
+
+In Unit 1, we showed how to plot points on a number line. Typically, with equations, we show our answer as a simple equation like $x = 3$.  We can plot this solution on a number line.
+
+![](/images/Unit_3/Lesson_6/x_equal_3.png)
+
+The solution to an equation is simply a single point on the number line.
+
+We can also plot inequalities. The main difference is that inequalities represent a whole range of solutions, not just one number.
+
+---
+
+**Example 1:** Greater Than
+
+Plot the inequality $x > 3$.
+
+![](/images/Unit_3/Lesson_6/x_greater_than_3.png)
+
+Here we see that the number 3 is plotted just as it was with an equation. There are two main differences. First, instead of just a point, we indicate the range of possible solutions by drawing an arrow. In this case, the arrow covers all values bigger than 3. 
+
+If you have a keen eye, you may also notice the second difference. THe point at 3 is not a solid dot. It is an open circle. What this means is that the value 3 is not included in the range of answers. Everything all the way up to 3 is included, but not 3 itself!
+
+---
+
+**Example 2:** Less Than
+
+Plot the inequality $x < 3$.
+
+![](/images/Unit_3/Lesson_6/x_less_than_3.png)
+
+This is very similar to the previous example. The only difference is the direction the arrow points. In this case, the arrow covers all numbers that are **smaller than** 3. 
+
+You may notice that, in both examples, the arrow points in the direction of the inequality symbol.
+
+---
+
+**Example 3:** Greater Than or Equal To
+
+Plot the inequality $x >= 3$.
+
+![](/images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png)
+
+Compare this to example 1 ($x > 3$). Can you spot the difference? There is just one -- the dot at 3 is filled in rather than left open. This means that **3 is included** in the range of answers.
+
+---
+
+**Example 4:** Less Than or Equal To
+
+Plot the inequality $x <= 3$.
+
+![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
+
+Compare this to example 2 ($x < 3$). It is exactly the same, but the dot is filled in. This means that **3 is included** in the range of answers.
+
+:::{.callout-tip title="Test a value"}
+If you are unsure what direction to draw the arrow, try testing a value.  
+
+Suppose $x <= -1$. We can pick a number that makes this true and plot it with our solution. 
+
+Let's try $x = -4$ (which is smaller than -1).
+
+![](/images/Unit_3/Lesson_6/x_leq_neg1_test_value.png)
+
+The point at -4 is less than -1 and is covered by the arrow.
+:::
+
+### 3.6.2 -- Solving Inequalities Using Addition and Subtraction
+
+As with equations, the most interesting and useful inequalities require that we solve them. 
+
+There is good news, solving inequalities is *almost* exactly the same as solving equations. We can use all of the same skills we have alreay learned. 
+
+Unlike with equations, it is often very useful to plot the solution to an inequality because it clearly communicates the range of possible answers.
+
+---
+
+**Example 1:** 
+
+Solve the inequality and plot its solution on a number line.
+
+$$
+x - 5 > 2
+$$
+
+We solve this like a one-step equation.
+
+$$
+\begin{align*}
+x - 5 \textcolor{red}{+5} &> 2 \textcolor{red}{+5} \snplus{5} \\
+x &> 7
+\end{align*}
+$$
+
+Now we plot the solution.
+
+![](/images/Unit_3/Lesson_6/x_greater_than_7.png)
+
+The arrow covers all numbers larger than 7. The dot is left open because 7 itself is not included.
+
+---
+
+**Example 2:**
+
+Solve the inequality and plot its solution.
+
+$$
+x + 2 <= 5
+$$
+
+First we solve.
+
+$$
+\begin{align*}
+x + 2 \textcolor{red}{-2} &<= 5 \textcolor{red}{-2} \snminus{2} \\
+x &<= 3
+\end{align*}
+$$
+
+Now plot it.
+
+![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3)
+
+
+### 3.6.3 -- Solving Inequalities Involving Multiplication and Division
+
+When solving an inequality involves multiplication or division by a positive number, the process of solving is the same as with an equation.
+
+**Example 1:** 
+
+Solve the inequality and plot the solution.
+
+$$
+3x - 4 > 5
+$$
+
+Solve first:
+
+$$
+\begin{align*}
+3x - 4 \textcolor{red}{+4} &> 5 \textcolor{red}{+4} \snplus{4} \\
+3x &> 9 \\
+\\
+3x \textcolor{red}{\div 3}  &> 9 \textcolor{red}{\div 3} \sndiv{3} \\
+x &> 3
+\end{align*}
+$$
+
+Now plot it:
+
+![](/images/Unit_3/Lesson_6/x_greater_than_3.png)
+
+---
+
+In the previous section, we were told that solving inequalities is *almost* the same as solving equations. There is one significant difference -- **the inequality symbol flips when we multiply or divide by a negative number**.
+
+**Example 2:** 
+
+Solve the inequality and plot the solution.
+
+$$
+5 - 2x < -3
+$$
+
+Solve:
+
+$$
+\begin{align*}
+5 - 2x \textcolor{red}{-5} &< -3 \textcolor{red}{-5} \snminus{5} \\
+-2x &< -8 \\
+\\
+-2x \textcolor{red}{\div -2} &< -8 \textcolor{red}{\div -2} \sndiv{-2} \\
+x &> 4 \stepnote{Flip the sign}
+\end{align*}
+$$
+
+Plot the solution:
+
+![](/images/Unit_3/Lesson_6/x_gt_4.png)
+
+:::{.gotcha title="Don't forget to flip the sign"}
+Don't forget to flip the sign when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.
+
+In the previous example we found $x > 4$.  Try a value that makes this true. We will try $x = 5$.
+
+$$
+\begin{align*}
+5 - 2(\textcolor{red}{5}) &< -3 \stepnote{substitute 5} \\
+5 - 10 &< -3 \\
+-5 &< -3 \stepnote{$\leftarrow$ a true statement}
+\end{align*}
+$$
+
+If we had not flipped the sign, we would instead find $-5 > -3$. This is **not** true.
+:::
+
+### 3.6.4 -- Real-World Problems With Inequalities
+
+Now that we know how to solve inequalities, let's use them to solve some real problems. First, we will revisit the question in the introduction.  How many packages of candy can you afford?
+
+---
+
+**Example 1:** Buying candy
+
+You have \$20 in your pocket. You must by a loaf of bread for \$3.50 but you also want to buy some candy that costs \$1.25 per package. What is the greatest number of packages you can purchase?
+
+If we let $c$ be the number of candy packages you purchase, then $3.5 + 1.25c$ will give you the cost of purchasing that candy with a loaf of bread.
+
+To find the largest number you can purchase, we need to make sure you use less than or equal to \$20.
+
+$$
+3.5 + 1.25c <= 20
+$$
+
+Let's solve it.
+
+$$
+\begin{align*}
+3.5 + 1.25c \textcolor{red}{-3.5} &<= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
+1.25c &<= 16.5 \\
+\\
+1.25c \textcolor{red}{\div 1.25} &<= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
+c &<= 13.2
+\end{align*}
+$$
+
+Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is **13 packages**.
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

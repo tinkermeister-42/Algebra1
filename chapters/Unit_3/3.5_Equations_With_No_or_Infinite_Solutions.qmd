@@ -1,0 +1,350 @@
+#  3.5 Equations With No or Infinite Solutions {.unnumbered}
+
+So far, every equation we solved had exactly one solution. After simplifying and moving terms, we always ended with something like
+
+$$
+x=5
+$$
+
+which tells us the one value that makes the equation true.
+
+But equations don’t always behave that way. Sometimes:
+
+  * there is no value that makes the equation true, or
+  * every value works.
+
+These are called **special cases**. In this lesson, we’ll see what they look like and how to spot them.
+
+::: {.callout-note icon=false}
+
+- [ ] I can recognize when an equation has **no solution**.
+- [ ] I can recognize when an equation has **infinitely many solutions**.
+
+:::
+
+:::{.vocab}
+
+{{< glink all real numbers >}}, {{< glink linear equation >}}, {{< glink no solution >}}, {{< glink real numbers >}}
+:::
+
+{{< warmup >}}
+
+1. Solve $5x + 2 = 3x - 12$.
+
+2. Taylor solved the equation $10x - 9 = 10x + 3$. Here are her steps.
+    $$
+    \begin{align*}
+    10x - 9 &= 10x + 3 \\
+    10x - 9 \textcolor{red}{-10x} &= 10x + 3 \textcolor{red}{- 10x} \\
+    -9 &= 3
+    \end{align*}
+    $$
+
+    Did Taylor make a mistake?
+
+
+{{< learn >}}
+
+### 3.5.1 – Equations With No Solution
+
+In the last lesson, when we moved variables to one side, we always ended up with a single answer like $x = 4$. But sometimes, something different happens. After simplifying, the variables cancel out and we’re left with a statement that is **false**.
+
+When this happens, the equation has **no solution** — there is no value that will make both sides equal.
+
+---
+
+**Example 1:**
+
+Solve $3x + 5 = 3x - 2$.
+
+$$
+\begin{align*}
+3x + 5 &= 3x - 2 \\
+3x + 5 \textcolor{red}{- 3x} &= 3x - 2 \textcolor{red}{- 3x} \\
+5 &= -2 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
+\end{align*}
+$$
+
+Since $5 = -2$ is not true, there is **no solution**.
+
+---
+
+**Example 2:**
+
+Solve $2(x + 4) = 2x + 7$.
+
+$$
+\begin{align*}
+2(x + 4) &= 2x + 7 \\
+2x + 8 &= 2x + 7 \\
+2x + 8 \textcolor{red}{- 2x} &= 2x + 7 \textcolor{red}{- 2x} \\
+8 &= 7 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
+\end{align*}
+$$
+
+This is also false, so there is **no solution**.
+
+---
+
+:::{.remember title="How to Recognize No Solution"}
+
+If you solve an equation and end up with two different numbers on either side of the equals sign, there is no solution.
+
+:::
+
+### 3.5.2 – Equations With Infinitely Many Solutions
+
+Sometimes when you solve, the variables cancel out and you’re left with a statement that is **always true**. In that case, every number works, so the equation has **infinitely many solutions**.
+
+---
+
+**Example 1:**
+
+Solve $4(x + 2) = 2(2x + 4)$.
+
+$$
+\begin{align*}
+4(x + 2) &= 2(2x + 4) \\
+4x + 8 &= 4x + 8 \\
+4x + 8 \textcolor{red}{- 4x} &= 4x + 8 \textcolor{red}{- 4x} \\
+8 &= 8 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
+\end{align*}
+$$
+
+Because $8 = 8$ is always true, any value of $x$ will make the original equation work.
+
+---
+
+**Example 2:**
+
+Solve $5y - 3 + 2y = 7y - 3$.
+
+$$
+\begin{align*}
+5y - 3 + 2y &= 7y - 3 \\
+7y - 3 &= 7y - 3 \\
+7y - 3 \textcolor{red}{- 7y} &= 7y - 3 \textcolor{red}{- 7y} \\
+-3 &= -3 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
+\end{align*}
+$$
+
+Again, the result is always true. The solution is **all real numbers**.
+
+---
+
+:::{.remember title="How to Recognize Infinitely Many Solutions"}
+
+If you solve an equation and get the same thing on each side of the equal sign, the problem has infinitely many solutions. All real numbers will work.
+
+:::
+
+
+### 3.5.3 – Determining the Number of Solutions
+
+There are some tricks for telling whether a {{< glink linear equation >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
+
+---
+
+**Equations With One Solution**
+If a linear equation has a variable term on one side and a different constant term on the other side, it will have **one solution**.
+
+**Example:**
+
+$$
+6x = 42
+$$
+
+There’s a variable term, $6x$, on one side and a constant, $42$, on the other. Solve to see:
+
+$$
+x = 7 \quad \text{(divide both sides by 6)}
+$$
+
+So this equation has one solution: $x = 7$.
+
+---
+
+**Equations With No Solution**
+If both sides have the **same variable term** but **different constants**, the equation has **no solution**.
+
+**Example:**
+
+$$
+3x + 8 = 3x + 1
+$$
+
+The variable part $3x$ matches on both sides, but the constants $8$ and $1$ don’t.
+
+$$
+8 = 1 \quad \text{(after subtracting $3x$ from both sides)}
+$$
+
+This is false, so the equation has no solution.
+
+---
+
+**Equations With Infinitely Many Solutions**
+If both sides have the **same variable term** and the **same constant**, the equation has **infinitely many solutions**.
+
+**Example:**
+
+$$
+7x + 9 = 7x + 9
+$$
+
+Both sides are identical.
+
+$$
+9 = 9 \quad \text{(after subtracting $7x$ from both sides)}
+$$
+
+This is always true, so every value of $x$ works.
+
+---
+
+:::{.remember title="Tips and Tricks"}
+
+* Different variable and constant terms left and right → One solution
+* Same variable, different constants → No solution
+* Same variable, same constants → Infinitely many solutions
+* $\varnothing$ is often used in place of "no solution" to save space and
+* $\mathbb{R}$ is used in place of "all real numbers" or infinitely many solutions
+
+:::
+
+:::{.you-try-m title="Decide how many solutions each equation has."}
+
+1. $5x + 2 = 3x + 10$
+2. $4y + 7 = 4y - 5$
+3. $6n + 9 = 9 + 6n$
+
+:::
+
+:::{.answer title="Answer"}
+
+1. one solution
+2. no solution ($\varnothing$)
+3. infinitely many solutions ($\mathbb{R}$)
+
+:::
+
+{{< practice >}}
+
+For each equation, decide whether it has **one solution**, **no solution**, or **infinitely many solutions**. Show your reasoning.
+
+1. $2x + 3 = 7$
+
+2. $5y + 4 = 5y + 10$
+
+3. $6n - 2 = 4n + 8$
+
+4. $3(x + 4) = 3x + 12$
+
+5. $7a + 5 = 2a + 20$
+
+6. $4m + 9 = 4m + 9$
+
+7. $2(p - 3) + 5 = 2p - 1$
+
+8. $8x + 7 = 2(4x + 3)$
+
+9. $10n - 4 = 6n + 12$
+
+10. $9y + 2 = 3(3y + 1)$
+
+11. $5x + 7 = 3x + 15$
+
+12. $2(3y - 2) = 6y - 4$
+
+13. $4n + 5 = 4n - 3$
+
+14. $7(a + 2) = 7a + 14$
+
+15. $6m + 2 = 3m + 14$
+
+16. $3(x + 5) - 2 = 3x + 13$
+
+17. $4y + 6 = 2(2y + 3)$
+
+18. $2n - 7 = 5n - 1$
+
+19. $9x + 4 = 3(3x + 2)$
+
+20. $2p + 1 = 2p - 3$
+
+21. $7x - 5 = 7x - 5$
+
+22. $5(y + 2) = 5y + 12$
+
+23. $6(n - 1) = 6n - 1$
+
+
+**Challenge Problems**
+
+24. For what value(s) of $k$ does the equation
+
+    $$
+    (2k)x + 5 = k(2x + 3)
+    $$
+
+    have (a) one solution, (b) no solution, and (c) infinitely many solutions?
+
+
+25. Solve for $x$ in terms of $y$:
+
+    $$
+    3(x + 2) + 4y = 2(x - y) + 10
+    $$
+
+    Then decide: is there exactly one solution, no solution, or infinitely many solutions?
+
+
+:::{.answers}
+
+1. One solution ($x = 2$)
+
+2. No solution ($4 = 10$, false)
+
+3. One solution ($n = 5$)
+
+4. Infinitely many solutions ($3x + 12 = 3x + 12$)
+
+5. One solution ($a = 3$)
+
+6. Infinitely many solutions ($4m + 9 = 4m + 9$)
+
+7. Infinitely many solutions ($2p - 1 = 2p - 1$)
+
+8. No solution ($8x + 7 = 8x + 6$ → $7 = 6$)
+
+9. One solution ($n = 4$)
+
+10. Infinitely many solutions ($9y + 2 = 9y + 2$)
+
+11. One solution ($x = 4$)
+
+12. Infinitely many solutions ($6y - 4 = 6y - 4$)
+
+13. No solution ($5 = -3$)
+
+14. Infinitely many solutions ($7a + 14 = 7a + 14$)
+
+15. One solution ($m = 4$)
+
+16. One solution ($x = 6$)
+
+17. Infinitely many solutions ($4y + 6 = 4y + 6$)
+
+18. One solution ($n = -2$)
+
+19. No solution ($9x + 4 = 9x + 6$ → $4 = 6$)
+
+20. No solution ($1 = -3$)
+
+21. Infinitely many solutions (identical on both sides)
+
+22. No solution ($10 = 12$)
+
+23. No solution ($-6 = -1$)
+
+:::

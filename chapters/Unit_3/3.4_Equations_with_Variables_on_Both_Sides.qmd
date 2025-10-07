@@ -1,22 +1,43 @@
 #  3.4 - Solving Equations With Variables on Both Sides {.unnumbered}
 
-Coming Soon
+So far, every equation we solved had the variable on one side only. That made it clear where to “aim” our work — get the variable by itself on that side. But in real problems, equations aren’t always so neat. Sometimes the variable shows up on both sides of the equal sign.
+
+In this lesson, you’ll learn how to bring all the variable terms together, simplify what’s left, and then solve.
 
 :::{.objectives}
 
 - [ ] I can solve equations that have variables on both sides using inverse operations.
-- [ ] I can simplify equations that require distribution or combining like terms before solving.
- - [ ] I can recognize and avoid common pitfalls when solving equations with variables on both sides.
+- [ ] I can simplify equations with distribution or like terms before solving.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink combine like terms >}}, {{< glink distributive property >}}, {{< glink equation >}}, {{< glink inverse operations >}}, {{< glink variable >}}
 
 :::
 
 {{< warmup >}}
+
+1. Solve the equation $5x - 2 = 13$.
+
+2. Are $3(5x - 1)$ and $12x + 3(x - 1)$ equivalent?
+
+3. Swanhilda solved the equation $3(x-7)=3$ using the following steps. Did she solve it correctly?
+
+$$
+\begin{align*}
+\textcolor{red}{3}(x - 7) &= 3 \\
+3x - 21 &= 3 \\
+\\
+3x - 21 \textcolor{red}{+ 21} &= 3 \\
+3x &= 3 \\
+\\
+3x \textcolor{red}{\div 3} &= 3 \textcolor{red}{\div 3} \\
+x &= 1
+\end{align*}
+$$
+
 
 {{< learn >}}
 
@@ -44,12 +65,20 @@ To find the weight of an apple, we need apples on one side and weights on the ot
 
 $$
 \begin{align*}
-3a + 1 &= a + 7 \textcolor{red}{- a} \\
-3a + 1 &\neq 7
+3a + 1 &= a + 7 \textcolor{red}{- a}\\
+3a + 1 &= 7 \quad \textcolor{red}{\text{(false: not done to both sides)}}
 \end{align*}
 $$
 
 The scale lost its balance! Always remember to **do the same thing to both sides** of the equation!
+
+:::{.gotcha title="Do it to both sides!"}
+
+It can't be said enough, what you do to one side of an equation, you **must** do to the other side. Otherwise the equation will no longer be in balance and you will get the wrong answer.
+
+:::
+
+Instead of removing an apple from just the right pan, we remove one from both pans. Removing an apple from **both sides** keeps the balance. 
 
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_3.png){width="300px" fig-align="center"}
 
@@ -60,9 +89,9 @@ $$
 \end{align*}
 $$
 
-Removing an apple from **both sides** kept the balance. Now we just have a two-step equation.
+Now we just have a two-step equation!
 
-Step 1: Remove a weight from both pans.
+**Step 1:** Remove a weight from both pans.
 
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_4.png){width="300px" fig-align="center"}
 
@@ -73,7 +102,7 @@ $$
 \end{align*}
 $$
 
-Step 2: Take half of what is in each pan.
+**Step 2:** Take half of what is in each pan.
 
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_5.png){width="300px" fig-align="center"}
 
@@ -90,19 +119,21 @@ An apple has a weight of **3**.
 
 **Example 2:**
 
+Now let's try solving one with just algebra. Instead of apples, we have x's. Instead of weights, we have numbers.
+
 Solve $4x + 5 = 2x + 9$.
 
 $$
 \begin{align*}
 4x + 5 &= 2x + 9 \\
 \\
-4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}} \\
+4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \snminus{2x} \\
 2x + 5 &= 9 \\
 \\
-2x + 5 \textcolor{red}{- 5} &= 9 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+2x + 5 \textcolor{red}{- 5} &= 9 \textcolor{red}{- 5} \snminus{5} \\
 2x &= 4 \\
 \\
-2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \sndiv{2} \\
 x &= 2
 \end{align*}
 $$
@@ -112,13 +143,13 @@ $$
 \begin{align*}
 5x + 3 &= 2x + 12 \\
 \\
-5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \\
+5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 3 &= 12 \\
 \\
-3x + 3 \textcolor{red}{- 3} &= 12 \textcolor{red}{- 3} \\
+3x + 3 \textcolor{red}{- 3} &= 12 \textcolor{red}{- 3} \snminus{3} \\
 3x &= 9 \\
 \\
-3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
+3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 3
 \end{align*}
 $$
@@ -142,16 +173,16 @@ Solve $2(x + 3) = 3x + 1$.
 
 $$
 \begin{align*}
-\textcolor{red}{2}(x + 3) &= 3x + 1 \tag*{\class{stepnote}{\textcolor{gray}{Distribute the 2}}} \\
+\textcolor{red}{2}(x + 3) &= 3x + 1 \stepnote{Distribute the 2} \\
 2x + 6 &= 3x + 1  \\
 \\
-2x + 6 \textcolor{red}{- 3x} &= 3x + 1 \textcolor{red}{- 3x} \tag*{\class{stepnote}{\textcolor{gray}{$-3x$ both sides}}}\\
+2x + 6 \textcolor{red}{- 3x} &= 3x + 1 \textcolor{red}{- 3x} \snminus{3x} \\
 -x + 6 &= 1 \\
 \\
--x + 6 \textcolor{red}{- 6} &= 1 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+-x + 6 \textcolor{red}{- 6} &= 1 \textcolor{red}{- 6} \snminus{6} \\
 -x &= -5 \\
 \\
--x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 5
 \end{align*}
 $$
@@ -160,20 +191,20 @@ $$
 
 **Example 2:**
 
-Solve $4x + 5 + x = 2x + 12$.
+Solve $4x + 6 + x = 2x + 12$.
 
 $$
 \begin{align*}
-\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+\textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \stepnote{Combine like terms} \\
 \textcolor{blue}{5x} + 6 &= 2x + 12  \\
 \\
-5x + 6 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+5x + 6 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
 3x + 6 &= 12 \\
 \\
-3x + 6 \textcolor{red}{- 6} &= 12 \textcolor{red}{- 6} \tag*{\class{stepnote}{\textcolor{gray}{-6 both sides}}}\\
+3x + 6 \textcolor{red}{- 6} &= 12 \textcolor{red}{- 6} \snminus{6} \\
 3x &= 6 \\
 \\
-3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 2
 \end{align*}
 $$
@@ -186,47 +217,353 @@ Solve $3(x - 2) + 4 = 2(x + 1)$.
 
 $$
 \begin{align*}
-\textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \tag*{\class{stepnote}{\textcolor{gray}{Distribute both sides}}}\\
+\textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \stepnote{Distribute both sides}\\
 3x - 6 + 4 &= 2x + 2  \\
 \\
-3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &= 2x + 2 \tag*{\class{stepnote}{\textcolor{gray}{Combine like terms}}} \\
+3x \textcolor{blue}{- 6} + \textcolor{blue}{4} &= 2x + 2 \stepnote{Combine like terms} \\
 3x \textcolor{blue}{- 2} &= 2x + 2 \\
 \\
-3x - 2 \textcolor{red}{- 2x} &= 2x + 2 \textcolor{red}{- 2x} \tag*{\class{stepnote}{\textcolor{gray}{$-2x$ both sides}}}\\
+3x - 2 \textcolor{red}{- 2x} &= 2x + 2 \textcolor{red}{- 2x} \snminus{2x} \\
 x - 2 &= 2 \\
 \\
-x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \tag*{\class{stepnote}{\textcolor{gray}{+2 both sides}}}\\
+x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \snplus{2} \\
 x &= 4
 \end{align*}
 $$
-
----
 
 :::{.you-try title="Solve $2(x + 4) = x + 10$."}
 
 $$
 \begin{align*}
-2(x + 4) &= x + 10 \\
-\\
+2(x + 4) &= x + 10 \stepnote{Distribute the 2} \\
 2x + 8 &= x + 10 \\
 \\
-2x + 8 \textcolor{red}{- x} &= x + 10 \textcolor{red}{- x} \\
+2x + 8 \textcolor{red}{- x} &= x + 10 \textcolor{red}{- x} \snminus{x} \\
 x + 8 &= 10 \\
 \\
-x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \\
+x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \snminus{8} \\
 x &= 2
 \end{align*}
 $$
 
 :::
 
+:::{.remember title="Step-by-step"}
 
-### 3.4.3 - Common Pitfalls and Tips
+When solving an equation with variables on both sides:
 
-Coming soon
+1. Simplify each side using the distributive property and combining like terms
+
+2. Move the variables to the left side
+
+3. Move the constants to the right side
+
+4. Solve for the variable
+
+5. Check your solution
+
+:::
+
+---
+
+## 3.4.3 – Word Problems with Variables on Both Sides
+
+When two different plans or expressions both describe the **same total**, we often get equations with the variable on **both sides**. Simplify each side (distribute, combine like terms), then move all variable terms to one side.
+
+---
+
+**Example 1 – Two Pay Plans**
+
+Alex earns a \$6 bonus plus \$15 per hour. Blair earns a \$18 bonus plus \$12 per hour.
+After how many hours will they earn the same amount?
+
+Let $h$ be the number of hours.
+
+$$
+15h + 6 = 12h + 18
+$$
+
+Solve:
+
+$$
+\begin{align*}
+15h + 6 \textcolor{red}{-12h} &= 12h + 18 \textcolor{red}{-12h} \snminus{12h} \\
+3h + 6 &= 18 \\
+\\
+3h + 6 \textcolor{red}{-6} &= 18 \textcolor{red}{-6} \snminus{6} \\
+3h &= 12 \\
+\\
+3h \textcolor{red}{\div 3} &= 18 \textcolor{red}{\div 3} \sndiv{3} \\
+h &= 6
+\end{align*}
+$$
+
+They earn the same after **4 hours**.
+
+---
+
+**Example 2 – Equal Perimeters**
+
+Two rectangles have the **same perimeter**.
+
+* Rectangle A: length $x + 6$, width $x + 2$
+* Rectangle B: length $2x - 1$, width $x + 3$
+
+Find $x$.
+
+Perimeter: $P = 2(\text{length} + \text{width})$.
+
+$$
+2\big((x+6) + (x+2)\big) = 2\big((2x-1) + (x+3)\big)
+$$
+
+Distribute and simplify:
+
+$$
+\begin{align*}
+2(2x + 8) &= 2(3x + 2) \stepnote{Distribute both sides} \\
+4x + 16 &= 6x + 4 \\
+\\
+4x + 16 \textcolor{red}{- 6x} &= 6x + 4 \textcolor{red}{- 6x} \snminus{6x} \\
+-2x + 16 &= 4 \\
+\\
+-2x + 16 \textcolor{red}{- 16} &= 4 \textcolor{red}{- 16} \snminus{16} \\
+-2x &= -12 \\
+\\
+-2x \textcolor{red}{\div -2} &= -12 \textcolor{red}{\div -2} \sndiv{-2} \\
+x &= 6
+\end{align*}
+$$
+
+So **$x = 6$**.
+
+---
+
+**Example 3 – Two Vendors, Same Total**
+
+Vendor A sells sweatshirts for \$18 each, includes **2 free**, and charges \$12 shipping.
+Vendor B sells sweatshirts for \$15 each with a flat \$42 shipping.
+For how many sweatshirts do the totals match?
+
+Let $s$ be the number of sweatshirts ordered.
+
+Vendor A total: pay for $(s-2)$ shirts (because 2 are free) and add \$12 shipping
+
+$$
+18(s - 2) + 12
+$$
+
+Vendor B total:
+$$
+15s + 42
+$$
+
+Set them equal:
+
+$$
+18(s - 2) + 12 = 15s + 42
+$$
+
+Distribute and solve:
+
+$$
+\begin{align*}
+18(s - 2) + 12 &= 15s + 42 \stepnote{Distribute the 18} \\
+18s - 36 + 12 &= 15s + 42 \\
+\\
+18s \textcolor{blue}{- 36} \textcolor{blue}{+ 12} &= 15s + 42 \stepnote{Combine like terms} \\
+18s \textcolor{blue}{- 24} &= 15s + 42 \\
+\\
+18s - 24 \textcolor{red}{- 15s} &= 15s + 42 \textcolor{red}{- 15s} \snminus{15s} \\
+3s - 24 &= 42 \\
+\\
+3s - 24 \textcolor{red}{+ 24} &= 42 \textcolor{red}{+ 24} \snplus{24} \\
+3s &= 66 \\
+\\
+3s \textcolor{red}{\div 3} &= 66 \textcolor{red}{\div 3} \sndiv{3} \\
+s &= 22
+\end{align*}
+$$
+
+The totals match at **22 sweatshirts**.
+
+---
+
+:::{.you-try-m title="Break-Even Subscriptions"}
+Plan A costs \$8 per month plus \$3 per premium movie.
+Plan B costs \$2 per month plus \$5 per premium movie.
+For how many premium movies will the plans cost the same in a month?
+:::
+
+:::{.answer title="Answer"}
+Let $m$ be the number of premium movies.
+
+$$
+8 + 3m = 2 + 5m
+$$
+
+$$
+\begin{align*}
+8 + 3m \textcolor{red}{-5m} &= 2 + 5m \textcolor{red}{-5m} \snminus{5m} \\
+8 - 2m &= 2 \\
+\\
+8 - 2m \textcolor{red}{-8} &= 2 \textcolor{red}{-8} \snminus{8} \\
+-2m &= -6 \\
+\\
+-2m \textcolor{red}{\div -2} &= -6 \textcolor{red}{\div -2} \sndiv{-2} \\
+m &= 3
+\end{align*}
+$$
+
+They match at **3 movies**.
+:::
+
+---
+
+
+
 
 {{< practice >}}
 
+**Basic**
+
+1. $5x + 3 = 2x + 12$
+
+2. $7y - 4 = 3y + 12$
+
+3. $9 + 2n = 5n - 3$
+
+4. $4x + 5 = 2x + 13$
+
+5. $3m + 8 = m + 14$
+
+**Negatives & Larger Numbers**
+
+6. $10x - 7 = 4x + 11$
+
+7. $12y + 3 = 5y + 31$
+
+8. $-3x + 7 = 2x - 8$
+
+9. $15n + 7 = 9n + 25$
+
+10. $18x - 12 = 6x + 24$
+
+**Simplify One Side First**
+
+11. $3(x + 2) = 2x + 14$
+
+12. $5(y - 4) + 2 = 3y - 6$
+
+13. $2(n + 5) + n = 4n + 3$
+
+14. $4(x - 1) + 3 = 2x + 5$
+
+15. $6m + 4 + 2m = 3m + 19$
+
+**Distribution on Both Sides**
+
+16. $2(x + 3) = 3(x - 1)$
+
+17. $4(y - 2) + 5 = 2(y + 6)$
+
+18. $3(n - 4) = 2(n + 1) + 5$
+
+19. $2(x + 5) - 3 = 3(x - 1) + 4$
+
+20. $5(2m - 1) = 3(m + 7) - m$
+
+**Word Problems**
+
+21. Competing Streaming Plans
+
+    * Plan A charges $10 per month plus $4 per movie.
+    * Plan B charges $6 per month plus $5 per movie.
+
+    After how many movies will the total monthly cost be the same?
+
+
+22. Two Lawn Services
+
+    * Service A charges $25 per visit plus $15 per hour of mowing.
+    * Service B charges $40 per visit plus $10 per hour.
+
+    After how many hours will the total costs be equal?
+
+
+23. Equal Sides, Different Expressions
+
+    * Two sides of a trapezoid are equal in length.
+    * The first side measures $4x + 3$ cm.
+    * The second side measures $2(x + 6)$ cm.
+    
+    Find the value of $x$ that makes the sides equal.
+
+
+**Challenge Problems**
+
+24. Stage Builder Showdown
+
+    Two contractors are bidding to build a concert stage.
+
+    * Contractor A charges a \$1,200 setup fee plus \$35 for every square meter more than the base design.
+    * Contractor B charges \$50 per square meter but offers a \$300 discount if the stage is small.
+
+    For what size of stage (in square meters beyond the base design) will their total prices be the same?
+
+25. Solve for $x$ in terms of $y$.
+
+$$
+3(x + 2) + 4y = 2(x - y) + 10
+$$
+
+
 :::{.answers}
+
+1. $x = 3$
+
+2. $y = 4$
+
+3. $n = 3$
+
+4. $x = 4$
+
+5. $m = 3$
+
+6. $x = 3$
+
+7. $y = 4$
+
+8. $x = 3$
+
+9. $n = 3$
+
+10. $x = 3$
+
+11. $x = 8$
+
+12. $y = 6$
+
+13. $n = 7$
+
+14. $x = 3$
+
+15. $m = 3$
+
+16. $x = -5$
+
+17. $y = 6$
+
+18. $n = 13$
+
+19. $x = 8$
+
+20. $m = 6$
+
+21. The plans cost the same after 4 movies
+
+22. They cost the same after 3 hours
+
+23. Both sides are 21 cm in length
 
 :::

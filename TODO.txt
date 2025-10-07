@@ -1,3 +1,7 @@
-1. Write a lesson on adding and subtracting fractions
-2. Consider breaking 1.3 into two separate lessons (or shorten)
-3. Lesson 3.1, add some language about inverse operations
+- Write a lesson on adding and subtracting fractions
+
+- Consider breaking 1.3 into two separate lessons (or shorten)
+
+- Write lesson on Solving Inequalities
+
+- Write lesson on solving literal equations

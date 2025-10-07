@@ -5,7 +5,7 @@ With one-step equations, we identified the operation and did the opposite to bot
 :::{.objectives}
 
 - [ ] I can solve two-step equations and show my work.
-- [ ] I can check a solutions to two-step equations.
+- [ ] I can use two-step equations to solve real-world problems.
 :::
 
 :::{.vocab}
@@ -46,7 +46,7 @@ Following the order of operations ({{< glink PEMDAS >}}) in reverse, we start by
 ![](/images/Unit_3/Lesson_2/balance_2x_plus_1_equal_7_3.png){width="300px" fig-align="center"}
 
 $$
-2a + 1 \textcolor{red}{- 1} = 7 \textcolor{red}{- 1}
+2a + 1 \textcolor{red}{-1} = 7 \textcolor{red}{-1}
 $$
 
 Now we are ready to undo the multiplication.
@@ -68,10 +68,10 @@ $$
 \begin{align*}
 2a + 1 &= 7 \\
 \\
-2a + 1 \textcolor{red}{- 1} &= 7 \textcolor{red}{- 1} \tag*{\class{stepnote}{\textcolor{gray}{-1 both sides}}} \\
+2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \snminus{1} \\
 2a &= 6 \\
 \\
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
 \end{align*}
 $$
@@ -81,7 +81,7 @@ $$
 \begin{align*}
 3x - 2 &= 7 \\
 \\
-3x - 2 \textcolor{red}{+ 2} &= 7 \textcolor{red}{+ 2} \\
+3x - 2 \textcolor{red}{+2} &= 7 \textcolor{red}{+2} \\
 3x &= 9 \\
 \\
 3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
@@ -100,10 +100,10 @@ $$
 \begin{align*}
 \frac{x}{8} - 3 &= 7 \\
 \\
-\frac{x}{8} - 3 \textcolor{red}{+ 3} &= 7 \textcolor{red}{+ 3} \tag*{\class{stepnote}{\textcolor{gray}{+3 both sides}}} \\
+\frac{x}{8} - 3 \textcolor{red}{+3} &= 7 \textcolor{red}{+3} \snplus{3} \\
 \frac{x}{8} &= 10 \\
 \\
-\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \tag*{\class{stepnote}{\textcolor{gray}{×8 both sides}}} \\
+\frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \sntimes{8} \\
 x &= 80
 \end{align*}
 $$
@@ -114,7 +114,7 @@ $$
 \begin{align*}
 \frac{x}{2} + 6 &= 10 \\
 \\
-\frac{x}{2} + 6 \textcolor{red}{- 6} &= 10 \textcolor{red}{- 6} \\
+\frac{x}{2} + 6 \textcolor{red}{-6} &= 10 \textcolor{red}{-6} \\
 \frac{x}{2} &= 4 \\
 \\
 \frac{x}{2} \textcolor{red}{\times 2} &= 4 \textcolor{red}{\times 2} \\
@@ -132,10 +132,10 @@ $$
 \begin{align*}
 -x + 5 &= 3 \\
 \\
--x + 5 \textcolor{red}{- 5} &= 3 \textcolor{red}{- 5} \tag*{\class{stepnote}{\textcolor{gray}{-5 both sides}}} \\
+-x + 5 \textcolor{red}{-5} &= 3 \textcolor{red}{-5} \snminus{5} \\
 -x &= -2 \\
 \\
--x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 2
 \end{align*}
 $$
@@ -150,10 +150,10 @@ $$
 \begin{align*}
 3 - x &= 7 \\
 \\
-3 \textcolor{red}{- 3} - x &= 7 \textcolor{red}{- 3} \tag*{\class{stepnote}{\textcolor{gray}{-3 both sides}}} \\
+3 \textcolor{red}{-3} - x &= 7 \textcolor{red}{-3} \snminus{3} \\
 -x &= 4 \\
 \\
--x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \tag*{\class{stepnote}{\textcolor{gray}{÷-1 both sides}}} \\
+-x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= -4
 \end{align*}
 $$
@@ -161,32 +161,128 @@ $$
 
 ---
 
-## 3.2.2 – Checking a Solution 
+## 3.2.2 – Word Problems with Two-Step Equations
 
-Like we did with one-step equations, we can always check our work by plugging the answer back in.
+Equations are especially useful when a situation involves **two operations**. Let's look at some examples.
 
-**Example – Check**
-Solve $3x - 5 = 16$.
+---
+
+**Example 1 - Babysitting**
+
+A babysitter charges \$10 for travel plus \$8 per hour. The total charge was \$42. How many hours did the babysitter work?
+
+Let $h$ be the number of hours worked.
+
+The following equation can be used to model this situation.
+
+$$
+8h + 10 = 42
+$$
+
+Now we solve for $h$:
 
 $$
 \begin{align*}
-3x - 5 &= 16 \\
+8h + 10 \textcolor{red}{-10} &= 42 \textcolor{red}{-10} \snminus{10} \\
+8h &= 32 \\
 \\
-3x - 5 \textcolor{red}{+ 5} &= 16 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
-3x &= 21 \\
-\\
-3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
-x &= 7
+8h \textcolor{red}{\div 8} &= 32 \textcolor{red}{\div 8} \sndiv{8} \\
+h &= 4
 \end{align*}
 $$
 
-Check the solution:
-
-Let $x = \textcolor{red}{7}$:
-
-$3(\textcolor{red}{7}) - 5 = 21 - 5 = 16$. ✅
+The babysitter worked **4 hours**.
 
 ---
+
+**Example 2 - Cell Phone Plan**
+
+A phone plan charges \$25 each month plus \$0.05 per text. Last month the bill was \$32. How many texts were sent?
+
+Let $t$ be the number of texts sent.
+
+The equation we use to model this is:
+
+$$
+0.05t + 25 = 32
+$$
+
+Now we solve for $t$:
+
+$$
+\begin{align*}
+0.05t + 25 \textcolor{red}{-25} &= 32 \textcolor{red}{-25} \snminus{25} \\
+0.05t &= 7 \\
+\\
+0.05t \textcolor{red}{\div 0.05} &= 7 \textcolor{red}{\div 0.05} \sndiv{0.05} \\
+t &= 140
+\end{align*}
+$$
+
+There were **140 texts sent**.
+
+---
+
+**Example 3 - Geometry**
+
+The perimeter of a rectangle is 28cm. The length is 2 more than twice the width. Find the width of the rectangle.
+
+Let $W$ be the width of the rectangle.
+
+![](/images/Unit_3/Lesson_2/Rectangle.png){width="300px" fig-align="center"}
+
+An equation that models this situation is:
+
+$$
+\begin{align*}
+2W + 2L &= 28 \stepnote{perimeter formula} \\
+\\
+2W + 2(2W + 2) &= 28 \stepnote{substitute and simplify}\\
+2W + 4W + 4 &= 28 \\
+\\
+6W + 4 &= 28
+\end{align*}
+$$
+
+Now we can solve for $W$:
+
+$$
+\begin{align*}
+6W + 4 \textcolor{red}{-4} &= 28 \textcolor{red}{-4} \snminus{4} \\
+6W &= 24 \\
+\\
+6W \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \sndiv{6} \\
+W &= 4
+\end{align*}
+$$
+
+The width of the rectangle is **4cm**.
+
+:::{.you-try-m title="Gym Membership"}
+
+A gym membership is \$20 plus \$15 per class. Your total cost was \$65. How many classes did you attend?
+
+:::
+
+:::{.answer title="Answer"}
+
+Let $c$ be the number of classes attended.
+
+The equation $15c + 20 = 65$ can be used to model this situation.
+
+$$
+\begin{align*}
+15c + 20 \textcolor{red}{-20} &= 65 \textcolor{red}{-20} \snminus{20} \\
+15c &= 45 \\
+\\
+15c \textcolor{red}{\div 15} &= 45 \textcolor{red}{\div 15} \sndiv{15} \\
+c &= 3
+\end{align*}
+$$
+
+You attended **3 classes**.
+
+:::
 
 {{< practice >}}
 
@@ -230,11 +326,19 @@ $3(\textcolor{red}{7}) - 5 = 21 - 5 = 16$. ✅
 
 18. $\dfrac{x-3}{4}=2.5$
 
+**Word Problems**
+
+19. A taxi charges \$1.20 to start plus \$0.50 per mile. Your bill was \$6.20. How many miles did you travel?
+
+20. A movie theater charges \$9 for admission and \$4 for popcorn. If your total was \$25, how many popcorns did you buy?
+
+21. The temperature in Celsius is given by $C = \frac{5}{9}(F - 32)$. If $C=30$, what is the temperature in degrees Fahrenheit, $F$?
+
 **Challenge Problems**
 
-19. Solve $\frac{3x}{2} - 2y = \frac{2y}{3}$ for $x$. Check your answer.
+22. Solve $\frac{3x}{2} - 2y = \frac{2y}{3}$ for $x$. Check your answer.
 
-20. Solve $\frac{3x}{2} - 2y = \frac{2y}{3}$ for $y$. Check your answer.
+23. Solve $\frac{3x}{2} - 2y = \frac{2y}{3}$ for $y$. Check your answer.
 
 ---
 
@@ -257,5 +361,8 @@ $3(\textcolor{red}{7}) - 5 = 21 - 5 = 16$. ✅
 16. $x=6$
 17. $a=\dfrac{4}{5}$
 18. $x=13$
+19. You traveled **10 miles**
+20. You bought **4 popcorns**
+21. The temperature is **86 degrees Fahrenheit**
 :::
 

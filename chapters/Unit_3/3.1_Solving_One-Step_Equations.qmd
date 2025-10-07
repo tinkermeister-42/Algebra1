@@ -16,16 +16,17 @@ In this lesson, we begin with the basic rules for solving equations:
 
 - Undo operations step by step until the variable is by itself.
 
-Later lessons will build on these rules to solve more complicated equations.
+Later lessons will build on these rules to solve more complicated equations. 
 
 :::{.objectives}
 
 - [ ] I can solve one-step equations and show my work.
 - [ ] I can check a solution by substituting it into the original equation.
+
 :::
 
 :::{.vocab}
-{{< glink equation >}}, {{< glink solution >}}, {{< glink variable >}}
+{{< glink equation >}}, {{< glink inverse operations >}}, {{< glink solution >}}, {{< glink variable >}}
 :::
 
 {{< warmup >}}
@@ -62,7 +63,7 @@ $$
 
 To find the weight *a* of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.
 
-Start by taking the two weights off the left-hand side.
+Start by taking the two weights off the left-hand side to get the apple by itself.
 
 ![](/images/Unit_3/Lesson_1/balance_x_plus_2_equal_5_2.png){width="300px" fig-align="center"}
 
@@ -83,14 +84,14 @@ $$
 
 The weight of the apple is **3**.
 
-To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from each side. We always **undo addition by subtracting**.
+To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink inverse operation >}} for addition.
 
 We don't usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.
 
 $$
 \begin{align*}
 a+2 &= 5 \\
-a+2 \textcolor{red}{- 2} &= 5 \textcolor{red}{- 2} \tag*{\class{stepnote}{\textcolor{gray}{-2 both sides}}} \\
+a+2 \textcolor{red}{- 2} &= 5 \textcolor{red}{- 2} \snminus{2} \\
 a &= 3
 \end{align*}
 $$
@@ -115,10 +116,12 @@ Solving equations involving subtraction works the same way with a single differe
 
 Solve the equation $x - 5 = 8$.
 
+Here the operation is “subtract $5$,” so we use its **inverse**, “add $5$,” to undo it on both sides.
+
 $$
 \begin{align*}
 x - 5 &= 8 \\
-x - 5 \textcolor{red}{+ 5} &= 8 \textcolor{red}{+ 5} \tag*{\class{stepnote}{\textcolor{gray}{+5 both sides}}} \\
+x - 5 \textcolor{red}{+ 5} &= 8 \textcolor{red}{+ 5} \snplus{5} \\
 x &= 13
 \end{align*}
 $$
@@ -178,10 +181,12 @@ An apple has a weight of **3**.
 
 Here is the solution showing just the algebra.
 
+$2a$ means “multiply by $2$,” so we use the **inverse operation**, “divide by $2$,” on both sides.
+
 $$
 \begin{align*}
 2a &= 6 \\
-2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \tag*{\class{stepnote}{\textcolor{gray}{÷2 both sides}}} \\
+2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
 \end{align*}
 $$
@@ -204,10 +209,12 @@ Solving one-step equations with division is the same. But instead of dividing, w
 
 Solve $\frac{a}{3} = 1$.
 
+$\dfrac{a}{3}$ means “divide by $3$,” so we use the **inverse operation**, “multiply by $3$,” on both sides.
+
 $$
 \begin{align*}
 \frac{a}{3} &= 1 \\
-\frac{a}{3} \textcolor{red}{\times 3} &= 1 \textcolor{red}{\times 3} \tag*{\class{stepnote}{\textcolor{gray}{×3 both sides}}} \\
+\frac{a}{3} \textcolor{red}{\times 3} &= 1 \textcolor{red}{\times 3} \sntimes{3} \\
 a &= 3
 \end{align*}
 $$
@@ -223,7 +230,7 @@ $$
 :::
 
 
-:::{.remember title="How to Undo Operations"}
+:::{.remember title="Inverse Operations (How to Undo)"}
 Do the same move to **both** sides.
 
 | If you see… | Undo with… | Example |
@@ -252,7 +259,7 @@ Solve $3x = 21$ and check your answer.
 $$
 \begin{align*}
 3x &= 21 \\
-3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \tag*{\class{stepnote}{\textcolor{gray}{÷3 both sides}}} \\
+3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 7
 \end{align*}
 $$
