@@ -262,3 +262,13 @@ No Challenge Questions
     So $x = -6y + 4$. One solution in terms of $y$.
 
 :::
+
+### 3.6 - Solving Inequalities
+
+:::{.answers}
+
+24. $2 + 0.4b \le 20 \Rightarrow b \le 45$
+
+25. $7s + 10(20) \ge 400 \Rightarrow 7s \ge 200 \Rightarrow s \ge 29$
+
+:::

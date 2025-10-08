@@ -1,6 +1,6 @@
 # 3.6 – Solving Inequalities {.unnumbered}
 
-You have \$20 in your pocket and want to buy some candy at the grocery store. You need to purchase some bread for \$3.50. The candy you want to purchase costs \$1.25 per package. How many packages of candy can you afford?
+You have \$20 in your pocket and want to buy some candy at the grocery store. You need to buy bread for \$3.50, and each package of candy costs \$1.25. How many packages of candy can you afford?
 
 We might try to model this problem with the following equation.
 
@@ -24,21 +24,36 @@ $$
 
 The solution to the equation says you can afford 13.2 packages of candy. But this seems strange because we can only purchase whole packages of candy.
 
-Problems like this one show the limitations of equations. To solve a problem like this in a meaningful way, we need to learn about **inequalities**.
+Problems like this one show the limitations of equations. Equations are great when there’s exactly one answer, but real life often has limits or ranges instead. To solve a problem like this in a meaningful way, we need to learn about **inequalities**.
 
 Unlike an equation, inequalities help us solve problems with a range of answers.
 
 ::: {.objectives}
 
+- [ ] I can represent and graph solutions to inequalities on a number line.
+
+- [ ] I can solve one-step and two-step inequalities using addition, subtraction, multiplication, and division.
+
+- [ ] I can use inequalities to model and solve real-world problems.
+
 :::
 
 ::: {.vocab}
+
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equation >}}, {{< glink inequality >}}, {{< glink solution >}}, {{< glink variable >}}
 
 :::
 
 {{< warmup >}}
 
-Coming Soon
+1. Without solving, decide which side is larger:
+   $4x + 9$ or $6x + 3$
+
+2. Simplify: $3(2x - 5) - (x + 7)$
+
+3. You have \$50 to spend. After buying a \$12 game, you want to get as many \$8 accessories as possible.
+   How many could you afford *if you spent all your money exactly*?
+
 
 {{< learn >}}
 
@@ -49,10 +64,10 @@ An inequality is a mathematical statement that compares two expressions using on
 | Symbol | Meaning                  | Example    |
 | ---    | ---                      | ---        |
 | $\neq$ | Not equal                | $x \neq y$ |
-| $\gt$  | Greater than             | $x > y$    |
-| $\lt$  | Less than                | $x < y$    |
-| $\ge$  | Greater than or equal to | $x >= y$   |
-| $\le$  | Less than or equal to    | $x <= y$   |
+| $>$  | Greater than             | $x > y$    |
+| $<$  | Less than                | $x < y$    |
+| $\ge$  | Greater than or equal to | $x \ge y$   |
+| $\le$  | Less than or equal to    | $x \le y$   |
 
 In Unit 1, we showed how to plot points on a number line. Typically, with equations, we show our answer as a simple equation like $x = 3$.  We can plot this solution on a number line.
 
@@ -72,7 +87,7 @@ Plot the inequality $x > 3$.
 
 Here we see that the number 3 is plotted just as it was with an equation. There are two main differences. First, instead of just a point, we indicate the range of possible solutions by drawing an arrow. In this case, the arrow covers all values bigger than 3. 
 
-If you have a keen eye, you may also notice the second difference. THe point at 3 is not a solid dot. It is an open circle. What this means is that the value 3 is not included in the range of answers. Everything all the way up to 3 is included, but not 3 itself!
+If you have a keen eye, you may also notice the second difference. The point at 3 is not a solid dot. It is an open circle. What this means is that the value 3 is not included in the range of answers. Everything all the way up to 3 is included, but not 3 itself!
 
 ---
 
@@ -90,7 +105,7 @@ You may notice that, in both examples, the arrow points in the direction of the 
 
 **Example 3:** Greater Than or Equal To
 
-Plot the inequality $x >= 3$.
+Plot the inequality $x \ge 3$.
 
 ![](/images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png)
 
@@ -100,7 +115,7 @@ Compare this to example 1 ($x > 3$). Can you spot the difference? There is just 
 
 **Example 4:** Less Than or Equal To
 
-Plot the inequality $x <= 3$.
+Plot the inequality $x \le 3$.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
@@ -109,7 +124,7 @@ Compare this to example 2 ($x < 3$). It is exactly the same, but the dot is fill
 :::{.callout-tip title="Test a value"}
 If you are unsure what direction to draw the arrow, try testing a value.  
 
-Suppose $x <= -1$. We can pick a number that makes this true and plot it with our solution. 
+Suppose $x \le -1$. We can pick a number that makes this true and plot it with our solution. 
 
 Let's try $x = -4$ (which is smaller than -1).
 
@@ -122,7 +137,7 @@ The point at -4 is less than -1 and is covered by the arrow.
 
 As with equations, the most interesting and useful inequalities require that we solve them. 
 
-There is good news, solving inequalities is *almost* exactly the same as solving equations. We can use all of the same skills we have alreay learned. 
+The good news is that solving inequalities is almost exactly the same as solving equations. We can use all of the same skills we have already learned. 
 
 Unlike with equations, it is often very useful to plot the solution to an inequality because it clearly communicates the range of possible answers.
 
@@ -158,21 +173,21 @@ The arrow covers all numbers larger than 7. The dot is left open because 7 itsel
 Solve the inequality and plot its solution.
 
 $$
-x + 2 <= 5
+x + 2 \le 5
 $$
 
 First we solve.
 
 $$
 \begin{align*}
-x + 2 \textcolor{red}{-2} &<= 5 \textcolor{red}{-2} \snminus{2} \\
-x &<= 3
+x + 2 \textcolor{red}{-2} &\le 5 \textcolor{red}{-2} \snminus{2} \\
+x &\le 3
 \end{align*}
 $$
 
 Now plot it.
 
-![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3)
+![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
 
 ### 3.6.3 -- Solving Inequalities Involving Multiplication and Division
@@ -232,7 +247,7 @@ Plot the solution:
 ![](/images/Unit_3/Lesson_6/x_gt_4.png)
 
 :::{.gotcha title="Don't forget to flip the sign"}
-Don't forget to flip the sign when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.
+Don't forget to *flip the sign* when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.
 
 In the previous example we found $x > 4$.  Try a value that makes this true. We will try $x = 5$.
 
@@ -255,25 +270,25 @@ Now that we know how to solve inequalities, let's use them to solve some real pr
 
 **Example 1:** Buying candy
 
-You have \$20 in your pocket. You must by a loaf of bread for \$3.50 but you also want to buy some candy that costs \$1.25 per package. What is the greatest number of packages you can purchase?
+You have \$20 in your pocket. You must buy a loaf of bread for \$3.50 but you also want to buy some candy that costs \$1.25 per package. What is the greatest number of packages you can purchase?
 
 If we let $c$ be the number of candy packages you purchase, then $3.5 + 1.25c$ will give you the cost of purchasing that candy with a loaf of bread.
 
 To find the largest number you can purchase, we need to make sure you use less than or equal to \$20.
 
 $$
-3.5 + 1.25c <= 20
+3.5 + 1.25c \le 20
 $$
 
 Let's solve it.
 
 $$
 \begin{align*}
-3.5 + 1.25c \textcolor{red}{-3.5} &<= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
-1.25c &<= 16.5 \\
+3.5 + 1.25c \textcolor{red}{-3.5} &\le 20 \textcolor{red}{-3.5} \snminus{3.5} \\
+1.25c &\le 16.5 \\
 \\
-1.25c \textcolor{red}{\div 1.25} &<= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
-c &<= 13.2
+1.25c \textcolor{red}{\div 1.25} &\le 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
+c &\le 13.2
 \end{align*}
 $$
 
@@ -281,6 +296,124 @@ Since you can only purchase whole packages of candy, the closest whole number of
 
 {{< practice >}}
 
+**Identify and Graph**
+
+Plot each inequality on a number line.
+
+1. $x > 2$
+
+2. $x < -3$
+
+3. $x \ge 0$
+
+4. $x \le 5$
+
+5. $x < 4$
+
+---
+
+**Solve and Graph**
+
+Solve each inequality, then graph its solution.
+
+6. $3x - 7 > 2x + 4$
+
+7. $5 + 2(x - 3) \le 11$
+
+8. $4(x + 2) > 3x + 10$
+
+9. $7 - 2(x + 5) < 3$
+
+10. $6x + 4 \ge 2x + 20$
+
+11. $-3(x - 2) > 9$
+
+12. $2(x + 4) - 3x < 5$
+
+13. $-4x + 7 \le 2x - 5$
+
+14. $5(x - 1) > 2(x + 8)$
+
+15. $-2(3x + 4) \ge 8 - x$
+
+---
+
+**Write and Solve Inequalities**
+
+Write an inequality to model each situation, then solve.
+
+16. You must be at least 48 inches tall to ride the roller coaster. Let $h$ represent your height.
+
+17. You can spend no more than \$30 at the store. You buy a sandwich for \$6 and drinks that cost \$2 each. How many drinks can you buy?
+
+18. A babysitter charges \$25 plus \$12 per hour. If you can spend up to \$85, how many hours can they work?
+
+19. You already have 14 stickers. You want at least 30 total. How many more do you need?
+
+20. A concert ticket costs \$42, and each parking pass costs \$8. You have \$90. How many parking passes can you buy?
+
+21. A taxi ride costs \$3 plus \$0.75 per mile. You have \$15. How many miles can you ride?
+
+22. A water tank starts with 20 gallons and drains 2 gallons per minute. After how many minutes will it have less than 8 gallons left?
+
+23. A group rents a bus for \$200 plus \$15 per person. If they can spend at most \$500, how many people can go?
+
+---
+
+**Challenge Problems**
+
+24. You’re designing bracelets using beads that cost \$0.40 each plus a \$2 setup fee per bracelet. You have \$20. Write and solve an inequality to find the greatest number of beads you can use.
+
+25. A movie theater sells student tickets for \$7 and adult tickets for \$10. If the theater makes at least \$400 from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?
+
+---
 :::{.answers}
 
+1. open circle at 2, arrow right
+
+2. open circle at −3, arrow left
+
+3. closed circle at 0, arrow right
+
+4. closed circle at 5, arrow left
+
+5. open circle at 4, arrow left
+
+6. $x > 11$
+
+7. $x \le 7$
+
+8. $x > 2$
+
+9. $x > -4$
+
+10. $x \ge 4$
+
+11. $x < -1$
+
+12. $x > 3$
+
+13. $x \ge 2$
+
+14. $x > 10$
+
+15. $x \le -\dfrac{8}{5}$
+
+16. $h \ge 48$
+
+17. $6 + 2d \le 30 \Rightarrow d \le 12$
+
+18. $25 + 12h \le 85 \Rightarrow h \le 5$
+
+19. $14 + s \ge 30 \Rightarrow s \ge 16$
+
+20. $42 + 8p \le 90 \Rightarrow p \le 6$
+
+21. $3 + 0.75m \le 15 \Rightarrow m \le 16$
+
+22. $20 - 2t < 8 \Rightarrow t > 6$
+
+23. $200 + 15p \le 500 \Rightarrow p \le 20$
+
 :::
+
