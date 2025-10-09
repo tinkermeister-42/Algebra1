@@ -353,6 +353,12 @@ window.Quarto = {
  <span class="menu-text">3.7 – Solving Literal Equations</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_3/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -438,7 +444,7 @@ window.Quarto = {
   <ul>
   <li><a href="#inequality-basics" id="toc-inequality-basics" class="nav-link active" data-scroll-target="#inequality-basics">3.6.1 – Inequality Basics</a></li>
   <li><a href="#solving-inequalities-using-addition-and-subtraction" id="toc-solving-inequalities-using-addition-and-subtraction" class="nav-link" data-scroll-target="#solving-inequalities-using-addition-and-subtraction">3.6.2 – Solving Inequalities Using Addition and Subtraction</a></li>
-  <li><a href="#solving-inequalities-involving-multiplication-and-division" id="toc-solving-inequalities-involving-multiplication-and-division" class="nav-link" data-scroll-target="#solving-inequalities-involving-multiplication-and-division">3.6.3 – Solving Inequalities Involving Multiplication and Division</a></li>
+  <li><a href="#solving-inequalities-with-multiplication-and-division" id="toc-solving-inequalities-with-multiplication-and-division" class="nav-link" data-scroll-target="#solving-inequalities-with-multiplication-and-division">3.6.3 – Solving Inequalities with Multiplication and Division</a></li>
   <li><a href="#real-world-problems-with-inequalities" id="toc-real-world-problems-with-inequalities" class="nav-link" data-scroll-target="#real-world-problems-with-inequalities">3.6.4 – Real-World Problems With Inequalities</a></li>
   </ul>
 </nav>
@@ -465,7 +471,7 @@ window.Quarto = {
 </header>
 
 
-<p>You have $20 in your pocket and want to buy some candy at the grocery store. You need to purchase some bread for $3.50. The candy you want to purchase costs $1.25 per package. How many packages of candy can you afford?</p>
+<p>You have $20 in your pocket and want to buy some candy at the grocery store. You need to buy bread for $3.50, and each package of candy costs $1.25. How many packages of candy can you afford?</p>
 <p>We might try to model this problem with the following equation.</p>
 <p>Let <span class="math inline">\(c\)</span> be the number of packages of candy you purchase.</p>
 <p><span class="math display">\[
@@ -481,21 +487,30 @@ window.Quarto = {
 c &amp;= 13.2
 \end{align*}
 \]</span></p>
-<p>The solution to the equation says you can afford 13.2 packages of candy. But this seems strange because we can only purchase whole packages of candy.</p>
-<p>Problems like this one show the limitations of equations. To solve a problem like this in a meaningful way, we need to learn about <strong>inequalities</strong>.</p>
+<p>This tells us you can afford 13.2 packages of candy—but you can’t just buy part of a package.</p>
+<p>Problems like this one show the limitations of equations. Equations are great when there’s a single exact answer, but real situations often have <strong>ranges</strong> of possible answers. To describe those ranges, we use <strong>inequalities</strong>.</p>
 <p>Unlike an equation, inequalities help us solve problems with a range of answers.</p>
 <div class="objectives">
-
+<ul class="task-list">
+<li><p><label><input type="checkbox">I can represent and graph solutions to inequalities on a number line.</label></p></li>
+<li><p><label><input type="checkbox">I can solve inequalities using addition, subtraction, multiplication, and division.</label></p></li>
+<li><p><label><input type="checkbox">I can use inequalities to model and solve real-world problems.</label></p></li>
+</ul>
 </div>
 <div class="vocab">
-
+<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-term="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-original-term="constant" data-term="constant">constant</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-term="equation" data-term="equation">equation</a>, <a href="../../glossary.html#glossary-inequality" class="glossary-link" data-original-term="inequality" data-term="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-term="solution" data-term="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-term="variable" data-term="variable">variable</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<p>Coming Soon</p>
+<ol type="1">
+<li><p>Without solving, decide which is larger:</p>
+<p><span class="math inline">\(4x + 9\)</span> or <span class="math inline">\(6x + 3\)</span></p></li>
+<li><p>Simplify: <span class="math inline">\(3(2x - 5) - (x + 7)\)</span></p></li>
+<li><p>You have $50 to spend. After buying a $12 game, you want to get as many $8 accessories as possible. How many could you afford <em>if you spent all your money</em>?</p></li>
+</ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
 <section id="inequality-basics" class="level3">
 <h3 class="anchored" data-anchor-id="inequality-basics">3.6.1 – Inequality Basics</h3>
-<p>An inequality is a mathematical statement that compares two expressions using one of 5 inequality symbols. The following table defines these.</p>
+<p>An <strong>inequality</strong> compares two expressions using one of these symbols:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -511,53 +526,50 @@ c &amp;= 13.2
 <td><span class="math inline">\(x \neq y\)</span></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(\gt\)</span></td>
+<td><span class="math inline">\(&gt;\)</span></td>
 <td>Greater than</td>
 <td><span class="math inline">\(x &gt; y\)</span></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(\lt\)</span></td>
+<td><span class="math inline">\(&lt;\)</span></td>
 <td>Less than</td>
 <td><span class="math inline">\(x &lt; y\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(\ge\)</span></td>
 <td>Greater than or equal to</td>
-<td><span class="math inline">\(x &gt;= y\)</span></td>
+<td><span class="math inline">\(x \ge y\)</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(\le\)</span></td>
 <td>Less than or equal to</td>
-<td><span class="math inline">\(x &lt;= y\)</span></td>
+<td><span class="math inline">\(x \le y\)</span></td>
 </tr>
 </tbody>
 </table>
-<p>In Unit 1, we showed how to plot points on a number line. Typically, with equations, we show our answer as a simple equation like <span class="math inline">\(x = 3\)</span>. We can plot this solution on a number line.</p>
+<p>In Unit 1, we plotted single solutions like <span class="math inline">\(x = 3\)</span> on a number line:</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_equal_3.png" class="img-fluid"></p>
-<p>The solution to an equation is simply a single point on the number line.</p>
-<p>We can also plot inequalities. The main difference is that inequalities represent a whole range of solutions, not just one number.</p>
+<p>That’s just one point. Inequalities, however, represent a whole range of values.</p>
 <hr>
 <p><strong>Example 1:</strong> Greater Than</p>
-<p>Plot the inequality <span class="math inline">\(x &gt; 3\)</span>.</p>
+<p>Plot the solution to <span class="math inline">\(x &gt; 3\)</span> on a number line.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
-<p>Here we see that the number 3 is plotted just as it was with an equation. There are two main differences. First, instead of just a point, we indicate the range of possible solutions by drawing an arrow. In this case, the arrow covers all values bigger than 3.</p>
-<p>If you have a keen eye, you may also notice the second difference. THe point at 3 is not a solid dot. It is an open circle. What this means is that the value 3 is not included in the range of answers. Everything all the way up to 3 is included, but not 3 itself!</p>
+<p>The open circle shows 3 is <em>not included</em>. The arrow points right to show all numbers greater than 3 are possible solutions.</p>
 <hr>
 <p><strong>Example 2:</strong> Less Than</p>
-<p>Plot the inequality <span class="math inline">\(x &lt; 3\)</span>.</p>
+<p>Plot the solution to <span class="math inline">\(x &lt; 3\)</span> on a number line.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_less_than_3.png" class="img-fluid"></p>
-<p>This is very similar to the previous example. The only difference is the direction the arrow points. In this case, the arrow covers all numbers that are <strong>smaller than</strong> 3.</p>
-<p>You may notice that, in both examples, the arrow points in the direction of the inequality symbol.</p>
+<p>The arrow points left – toward smaller numbers. The open circle again shows that 3 itself is not included.</p>
 <hr>
 <p><strong>Example 3:</strong> Greater Than or Equal To</p>
-<p>Plot the inequality <span class="math inline">\(x &gt;= 3\)</span>.</p>
+<p>Plot the solution to <span class="math inline">\(x \ge 3\)</span> on a number line.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png" class="img-fluid"></p>
-<p>Compare this to example 1 (<span class="math inline">\(x &gt; 3\)</span>). Can you spot the difference? There is just one – the dot at 3 is filled in rather than left open. This means that <strong>3 is included</strong> in the range of answers.</p>
+<p>Same as Example 1, except the dot is filled in. That means <strong>3 is included</strong>.</p>
 <hr>
 <p><strong>Example 4:</strong> Less Than or Equal To</p>
-<p>Plot the inequality <span class="math inline">\(x &lt;= 3\)</span>.</p>
+<p>Plot the solution to <span class="math inline">\(x \le 3\)</span> on a number line.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
-<p>Compare this to example 2 (<span class="math inline">\(x &lt; 3\)</span>). It is exactly the same, but the dot is filled in. This means that <strong>3 is included</strong> in the range of answers.</p>
+<p>The dot is filled again, showing 3 is part of the solution. The arrow points left for “less than”.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Test a value">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -568,19 +580,16 @@ Test a value
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are unsure what direction to draw the arrow, try testing a value.</p>
-<p>Suppose <span class="math inline">\(x &lt;= -1\)</span>. We can pick a number that makes this true and plot it with our solution.</p>
-<p>Let’s try <span class="math inline">\(x = -4\)</span> (which is smaller than -1).</p>
+<p>Not sure which way the arrow goes? Test a number that makes the inequality true.</p>
+<p>For <span class="math inline">\(x \le -1\)</span> we could try <span class="math inline">\(x = -4\)</span>.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
-<p>The point at -4 is less than -1 and is covered by the arrow.</p>
+<p>Since <span class="math inline">\(-4 \le -1\)</span> is true, shade the side containing <span class="math inline">\(-4\)</span>.</p>
 </div>
 </div>
 </section>
 <section id="solving-inequalities-using-addition-and-subtraction" class="level3">
 <h3 class="anchored" data-anchor-id="solving-inequalities-using-addition-and-subtraction">3.6.2 – Solving Inequalities Using Addition and Subtraction</h3>
-<p>As with equations, the most interesting and useful inequalities require that we solve them.</p>
-<p>There is good news, solving inequalities is <em>almost</em> exactly the same as solving equations. We can use all of the same skills we have alreay learned.</p>
-<p>Unlike with equations, it is often very useful to plot the solution to an inequality because it clearly communicates the range of possible answers.</p>
+<p>Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.</p>
 <hr>
 <p><strong>Example 1:</strong></p>
 <p>Solve the inequality and plot its solution on a number line.</p>
@@ -601,21 +610,21 @@ x &amp;&gt; 7
 <p><strong>Example 2:</strong></p>
 <p>Solve the inequality and plot its solution.</p>
 <p><span class="math display">\[
-x + 2 &lt;= 5
+x + 2 \le 5
 \]</span></p>
 <p>First we solve.</p>
 <p><span class="math display">\[
 \begin{align*}
-x + 2 \textcolor{red}{-2} &amp;&lt;= 5 \textcolor{red}{-2} \snminus{2} \\
-x &amp;&lt;= 3
+x + 2 \textcolor{red}{-2} &amp;\le 5 \textcolor{red}{-2} \snminus{2} \\
+x &amp;\le 3
 \end{align*}
 \]</span></p>
 <p>Now plot it.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
 </section>
-<section id="solving-inequalities-involving-multiplication-and-division" class="level3">
-<h3 class="anchored" data-anchor-id="solving-inequalities-involving-multiplication-and-division">3.6.3 – Solving Inequalities Involving Multiplication and Division</h3>
-<p>When solving an inequality involves multiplication or division by a positive number, the process of solving is the same as with an equation.</p>
+<section id="solving-inequalities-with-multiplication-and-division" class="level3">
+<h3 class="anchored" data-anchor-id="solving-inequalities-with-multiplication-and-division">3.6.3 – Solving Inequalities with Multiplication and Division</h3>
+<p>If you multiply or divide by a positive number, then you solve just like an equation.</p>
 <p><strong>Example 1:</strong></p>
 <p>Solve the inequality and plot the solution.</p>
 <p><span class="math display">\[
@@ -634,7 +643,7 @@ x &amp;&gt; 3
 <p>Now plot it:</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
 <hr>
-<p>In the previous section, we were told that solving inequalities is <em>almost</em> the same as solving equations. There is one significant difference – <strong>the inequality symbol flips when we multiply or divide by a negative number</strong>.</p>
+<p>The one big difference between solving equations and inequalities comes when you multiply or divide by a <strong>negative</strong> number. In that case, you have to <strong>flip the sign</strong>.</p>
 <p><strong>Example 2:</strong></p>
 <p>Solve the inequality and plot the solution.</p>
 <p><span class="math display">\[
@@ -653,8 +662,8 @@ x &amp;&gt; 4 \stepnote{Flip the sign}
 <p>Plot the solution:</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_gt_4.png" class="img-fluid"></p>
 <div class="gotcha" title="Don't forget to flip the sign">
-<p>Don’t forget to flip the sign when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.</p>
-<p>In the previous example we found <span class="math inline">\(x &gt; 4\)</span>. Try a value that makes this true. We will try <span class="math inline">\(x = 5\)</span>.</p>
+<p>Don’t forget to <em>flip the sign</em> when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.</p>
+<p>In the previous example we found <span class="math inline">\(x &gt; 4\)</span>. Let’s test our answer with <span class="math inline">\(x = 5\)</span>.</p>
 <p><span class="math display">\[
 \begin{align*}
 5 - 2(\textcolor{red}{5}) &amp;&lt; -3 \stepnote{substitute 5} \\
@@ -662,34 +671,100 @@ x &amp;&gt; 4 \stepnote{Flip the sign}
 -5 &amp;&lt; -3 \stepnote{$\leftarrow$ a true statement}
 \end{align*}
 \]</span></p>
-<p>If we had not flipped the sign, we would instead find <span class="math inline">\(-5 &gt; -3\)</span>. This is <strong>not</strong> true.</p>
+<p>If we hadn’t flipped the sign, we’d get <span class="math inline">\(-5 &gt; -3\)</span> (false).</p>
 </div>
 </section>
 <section id="real-world-problems-with-inequalities" class="level3">
 <h3 class="anchored">3.6.4 – Real-World Problems With Inequalities</h3>
-<p>Now that we know how to solve inequalities, let’s use them to solve some real problems. First, we will revisit the question in the introduction. How many packages of candy can you afford?</p>
-<hr>
-<p><strong>Example 1:</strong> Buying candy</p>
-<p>You have $20 in your pocket. You must by a loaf of bread for $3.50 but you also want to buy some candy that costs $1.25 per package. What is the greatest number of packages you can purchase?</p>
-<p>If we let <span class="math inline">\(c\)</span> be the number of candy packages you purchase, then <span class="math inline">\(3.5 + 1.25c\)</span> will give you the cost of purchasing that candy with a loaf of bread.</p>
-<p>To find the largest number you can purchase, we need to make sure you use less than or equal to $20.</p>
+<p>Let’s revisit the candy problem:</p>
+<p>You have $20, break costs $3.50, and candy is $1.25 per package. How many packages can you afford?</p>
+<p>Let <span class="math inline">\(c\)</span> be the number of packages you purchase. The expression <span class="math inline">\(3.5 + 1.25c\)</span> will give you the cost of purchasing the candy with a loaf of bread.</p>
+<p>To find the largest number of packages you can purchase, you have to set up the inequality so that the total spent is less than or equal to $20.</p>
 <p><span class="math display">\[
-3.5 + 1.25c &lt;= 20
+3.5 + 1.25c \le 20
 \]</span></p>
 <p>Let’s solve it.</p>
 <p><span class="math display">\[
 \begin{align*}
-3.5 + 1.25c \textcolor{red}{-3.5} &amp;&lt;= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
-1.25c &amp;&lt;= 16.5 \\
+3.5 + 1.25c \textcolor{red}{-3.5} &amp;\le 20 \textcolor{red}{-3.5} \snminus{3.5} \\
+1.25c &amp;\le 16.5 \\
 \\
-1.25c \textcolor{red}{\div 1.25} &amp;&lt;= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
-c &amp;&lt;= 13.2
+1.25c \textcolor{red}{\div 1.25} &amp;\le 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
+c &amp;\le 13.2
 \end{align*}
 \]</span></p>
 <p>Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is <strong>13 packages</strong>.</p>
 <h2 class="unnumbered anchored" data-anchor-id="real-world-problems-with-inequalities">✍️ Practice On Your Own</h2>
+<p><strong>Identify and Graph</strong></p>
+<p>Plot each inequality on a number line.</p>
+<ol type="1">
+<li><p><span class="math inline">\(x &gt; 2\)</span></p></li>
+<li><p><span class="math inline">\(x &lt; -3\)</span></p></li>
+<li><p><span class="math inline">\(x \ge 0\)</span></p></li>
+<li><p><span class="math inline">\(x \le 5\)</span></p></li>
+<li><p><span class="math inline">\(x &lt; 4\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Solve and Graph</strong></p>
+<p>Solve each inequality, then graph its solution.</p>
+<ol start="6" type="1">
+<li><p><span class="math inline">\(3x - 7 &gt; 2x + 4\)</span></p></li>
+<li><p><span class="math inline">\(5 + 2(x - 3) \le 11\)</span></p></li>
+<li><p><span class="math inline">\(4(x + 2) &gt; 3x + 10\)</span></p></li>
+<li><p><span class="math inline">\(7 - 2(x + 5) &lt; 3\)</span></p></li>
+<li><p><span class="math inline">\(6x + 4 \ge 2x + 20\)</span></p></li>
+<li><p><span class="math inline">\(-3(x - 2) &gt; 9\)</span></p></li>
+<li><p><span class="math inline">\(2(x + 4) - 3x &lt; 5\)</span></p></li>
+<li><p><span class="math inline">\(-4x + 7 \le 2x - 5\)</span></p></li>
+<li><p><span class="math inline">\(5(x - 1) &gt; 2(x + 8)\)</span></p></li>
+<li><p><span class="math inline">\(-2(3x + 4) \ge 8 - x\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Write and Solve Inequalities</strong></p>
+<p>Write an inequality to model each situation, then solve.</p>
+<ol start="16" type="1">
+<li><p>You must be at least 48 inches tall to ride the roller coaster. Let <span class="math inline">\(h\)</span> represent your height.</p></li>
+<li><p>You can spend no more than $30 at the store. You buy a sandwich for $6 and drinks that cost $2 each. How many drinks can you buy?</p></li>
+<li><p>A babysitter charges $25 plus $12 per hour. If you can spend up to $85, how many hours can they work?</p></li>
+<li><p>You already have 14 stickers. You want at least 30 total. How many more do you need?</p></li>
+<li><p>A concert ticket costs $42, and each parking pass costs $8. You have $90. How many parking passes can you buy?</p></li>
+<li><p>A taxi ride costs $3 plus $0.75 per mile. You have $15. How many miles can you ride?</p></li>
+<li><p>A water tank starts with 20 gallons and drains 2 gallons per minute. After how many minutes will it have less than 8 gallons left?</p></li>
+<li><p>A group rents a bus for $200 plus $15 per person. If they can spend at most $500, how many people can go?</p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="24" type="1">
+<li><p>You’re designing bracelets using beads that cost $0.40 each plus a $2 setup fee per bracelet. You have $20. Write and solve an inequality to find the greatest number of beads you can use.</p></li>
+<li><p>A movie theater sells student tickets for $7 and adult tickets for $10. If the theater makes at least $400 from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?</p></li>
+</ol>
+<hr>
 <div class="answers">
-
+<ol type="1">
+<li><p>open circle at 2, arrow right</p></li>
+<li><p>open circle at −3, arrow left</p></li>
+<li><p>closed circle at 0, arrow right</p></li>
+<li><p>closed circle at 5, arrow left</p></li>
+<li><p>open circle at 4, arrow left</p></li>
+<li><p><span class="math inline">\(x &gt; 11\)</span></p></li>
+<li><p><span class="math inline">\(x \le 7\)</span></p></li>
+<li><p><span class="math inline">\(x &gt; 2\)</span></p></li>
+<li><p><span class="math inline">\(x &gt; -4\)</span></p></li>
+<li><p><span class="math inline">\(x \ge 4\)</span></p></li>
+<li><p><span class="math inline">\(x &lt; -1\)</span></p></li>
+<li><p><span class="math inline">\(x &gt; 3\)</span></p></li>
+<li><p><span class="math inline">\(x \ge 2\)</span></p></li>
+<li><p><span class="math inline">\(x &gt; 10\)</span></p></li>
+<li><p><span class="math inline">\(x \le -\dfrac{8}{5}\)</span></p></li>
+<li><p><span class="math inline">\(h \ge 48\)</span></p></li>
+<li><p><span class="math inline">\(6 + 2d \le 30 \Rightarrow d \le 12\)</span></p></li>
+<li><p><span class="math inline">\(25 + 12h \le 85 \Rightarrow h \le 5\)</span></p></li>
+<li><p><span class="math inline">\(14 + s \ge 30 \Rightarrow s \ge 16\)</span></p></li>
+<li><p><span class="math inline">\(42 + 8p \le 90 \Rightarrow p \le 6\)</span></p></li>
+<li><p><span class="math inline">\(3 + 0.75m \le 15 \Rightarrow m \le 16\)</span></p></li>
+<li><p><span class="math inline">\(20 - 2t &lt; 8 \Rightarrow t &gt; 6\)</span></p></li>
+<li><p><span class="math inline">\(200 + 15p \le 500 \Rightarrow p \le 20\)</span></p></li>
+</ol>
 </div>
 
 

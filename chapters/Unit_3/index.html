@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -324,6 +353,12 @@ window.MathJax = {
  <span class="menu-text">3.7 – Solving Literal Equations</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_3/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -434,30 +469,30 @@ window.MathJax = {
 </header>
 
 
-<p>Welcome to Unit 3! Here we turn <strong>expressions</strong> into <strong>equations</strong> and solve them like puzzles. You’ll use <strong>inverse operations</strong> and the idea of <strong>balance</strong> to isolate a variable, <strong>check</strong> your work, and write equations from short stories, tables, and simple rules. No graphing yet—that comes in Unit 4.</p>
+<p>Welcome to <strong>Unit 3!</strong> Here we move from working <em>with expressions</em> to solving <strong>equations</strong> and <strong>inequalities</strong>. Instead of just simplifying or evaluating, you’ll learn how to <strong>find the value of a variable</strong> that makes an equation true. You’ll also see what happens when there’s <em>no</em> solution, or when <em>every</em> value works.</p>
 <hr>
 <section id="what-youll-learn" class="level2">
 <h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
 <p>By the end of this unit, you’ll be able to:</p>
 <ul>
-<li><strong>Solve one- and two-step equations</strong> using inverse operations and <strong>check</strong> solutions by substitution.</li>
-<li><strong>Solve multi-step equations</strong> by distributing and <strong>combining like terms</strong>, including equations with variables on <strong>both sides</strong>.</li>
-<li>Handle <strong>fractions and decimals</strong> by <strong>clearing denominators</strong> or <strong>multiplying by powers of 10</strong> before solving.</li>
-<li><strong>Recognize special cases</strong>—no solution or infinitely many solutions (all numbers work)—and explain why.</li>
-<li><strong>Write equations from contexts</strong> (totals, rates, differences, start amounts) and solve.</li>
-<li>Use small <strong>tables</strong> and simple <strong>rules</strong> to set up equations, find missing values, or decide when two rules give the <strong>same result</strong> (no graphing yet).</li>
+<li><strong>Solve one-step and two-step equations</strong> by using inverse operations and check your work by substitution.</li>
+<li><strong>Simplify and solve multi-step equations</strong>, including those with parentheses or like terms.</li>
+<li><strong>Handle equations with variables on both sides</strong> and decide whether they have <strong>one</strong>, <strong>none</strong>, or <strong>infinitely many</strong> solutions.</li>
+<li><strong>Model real-world problems</strong> with equations and inequalities, and <strong>graph</strong> the range of possible answers.</li>
+<li><strong>Rearrange literal equations</strong> (formulas) to isolate any variable, just like rearranging <span class="math inline">\(V = IR\)</span> in physics or <span class="math inline">\(A = lw\)</span> in geometry.</li>
 </ul>
 <hr>
 </section>
 <section id="topics-in-this-unit" class="level2">
 <h2 class="anchored" data-anchor-id="topics-in-this-unit">Topics in This Unit</h2>
-<p><a href="3.1_Solving_One-Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Undo add/subtract and multiply/divide with inverse operations.</p>
-<p><a href="3.1_Solving_Two-Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Undo add/subtract and multiply/divide with inverse operations in reverse order.</p>
-<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Distribute, combine like terms, and keep both sides balanced.</p>
-<p><a href="3.4_Variables_on_Both_Sides.html"><strong>Variables on Both Sides</strong></a> Collect variable terms on one side and constants on the other, then solve and check.</p>
-<p><a href="3.5_Special_Cases_No_Solution_vs_Infinite_Solutions.html"><strong>Special Cases: No Solution vs.&nbsp;Infinite Solutions</strong></a> See when both sides simplify to <strong>always true</strong> or <strong>never true</strong>, and explain.</p>
-<p><a href="3.6_Writing_Equations_from_Contexts.html"><strong>Writing Equations from Contexts</strong></a> Translate short stories, units, and rate language into equations and solve.</p>
-<p><a href="3.7_Solving_with_Tables_and_Rules.html"><strong>Solving with Tables &amp; Rules</strong></a> Use rules and input–output tables to find unknowns or when two rules match.</p>
+<p><a href="3.1_Solving_One_Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.</p>
+<p><a href="3.2_Solving_Two_Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Add or subtract first, then multiply or divide. Practice solving short, real-world problems.</p>
+<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.</p>
+<p><a href="3.4_Equations_with_Variables_on_Both_Sides.html"><strong>Equations with Variables on Both Sides</strong></a> Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.</p>
+<p><a href="3.5_Equations_with_No_or_Infinite_Solutions.html"><strong>Equations with No or Infinite Solutions</strong></a> Recognize when both sides match perfectly—or never will—and explain what that means.</p>
+<p><a href="3.6_Solving_Inequalities.html"><strong>Solving Inequalities</strong></a> Represent ranges of solutions on a number line and remember to <strong>flip the sign</strong> when multiplying or dividing by a negative.</p>
+<p><a href="3.7_Solving_Literal_Equations.html"><strong>Solving Literal Equations</strong></a> Work with formulas like <span class="math inline">\(A = lw\)</span> or <span class="math inline">\(C = 2\pi r\)</span>. Rearrange them to solve for any variable you need.</p>
+<hr>
 
 
 </section>
