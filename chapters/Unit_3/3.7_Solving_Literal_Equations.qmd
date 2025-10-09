@@ -1,25 +1,349 @@
 # 3.7 – Solving Literal Equations {.unnumbered}
 
-Coming soon
+Imagine you’re asked to solve for time $t$ in the equation $d = rt$.
+You might recognize this as the distance formula: *distance = rate × time.*
+
+If you know any two of these values, you can find the third — but what if you need to *rearrange the formula itself*?
+That’s what we call a **literal equation**.
+
+Literal equations use letters (or “literals”) to represent variables, so solving them means isolating one variable in terms of the others.
+
+---
 
 ::: {.objectives}
+
+- [ ] I can identify and solve literal equations.
+- [ ] I can isolate a variable in a formula.
+- [ ] I can use known formulas (like area or distance) to solve for any variable.
 
 :::
 
 ::: {.vocab}
 
+{{< glink coefficient >}}, {{< glink equation >}}, {{< glink literal equation >}}, {{< glink variable >}}
+
 :::
 
 {{< warmup >}}
 
-Coming Soon
+1. You know that $A = lw$ gives the area of a rectangle.
+
+   * If the area is 24 and the length is 6, what is the width?
+   * What would happen if the length doubled but the area stayed the same?
+
+2. Here are three equations:
+
+   * $d = rt$
+   * $F = ma$
+   * $P = 2l + 2w$
+     What do all of these have in common?
+
+3. Think about how you get $x$ by itself in $3x + 5 = 20$.
+   What would you *do first*? How could you apply that same idea in $3x + a = b$?
+
 
 {{< learn >}}
 
-Coming Soon
+### 3.7.1 – What Is a Literal Equation?
+
+A **literal equation** is an equation made mostly of letters.
+You can think of it as a formula — like $A = lw$ for the area of a rectangle or $P = 2l + 2w$ for its perimeter.
+
+When we solve a literal equation, our goal is to **isolate one variable** using the same inverse operations we use in regular equations.
+
+---
+
+**Example 1:**
+Solve $A = lw$ for $w$.
+
+$$
+\begin{align*}
+A &= lw \\
+\\
+A \textcolor{red}{\div l} &= lw \textcolor{red}{\div l} \sndiv{l} \\
+\frac{A}{l} &= w
+\end{align*}
+$$
+
+So $w = \dfrac{A}{l}$.
+
+---
+
+**Example 2:**
+Solve $d = rt$ for $t$.
+
+$$
+\begin{align*}
+d &= rt \\
+\\
+d \textcolor{red}{\div r} &= rt \textcolor{red}{\div r} \sndiv{r} \\
+\frac{d}{r} &= t
+\end{align*}
+$$
+
+So $t = \dfrac{d}{r}$.
+
+:::{.you-try title="Solve $V = IR$ for $I$"}
+
+$$
+\begin{align*}
+V &= IR \\
+\\
+V \textcolor{red}{\div R} &= IR \textcolor{red}{\div R} \sndiv{R} \\
+\tfrac{V}{R} &= I
+\end{align*}
+$$
+
+So $I = \tfrac{V}{R}$.
+
+:::
+
+### 3.7.2 – Literal Equations with Addition or Subtraction
+
+Sometimes a variable appears in a longer expression.
+We can move terms using addition or subtraction before dividing or multiplying.
+
+---
+
+**Example 1:**
+Solve $P = 2l + 2w$ for $w$.
+
+$$
+\begin{align*}
+P &= 2l + 2w \\
+\\
+P \textcolor{red}{-2l} &= 2l + 2w \textcolor{red}{-2l} \snminus{2l} \\
+P - 2l &= 2w \\
+\\
+(P - 2l) \textcolor{red}{\div 2} &= 2w \textcolor{red}{\div 2} \sndiv{2} \\
+\frac{P - 2l}{2} &= w
+\end{align*}
+$$
+
+So $w = \dfrac{P - 2l}{2}$.
+
+---
+
+**Example 2:**
+Solve $y = mx + b$ for $x$.
+
+$$
+\begin{align*}
+y &= mx + b \\
+\\
+y \textcolor{red}{-b} &= mx + b \textcolor{red}{-b} \snminus{b} \\
+y - b &= mx \\
+\\
+(y - b) \textcolor{red}{\div m} &= mx \textcolor{red}{\div m} \sndiv{m} \\
+\frac{y - b}{m} &= x
+\end{align*}
+$$
+
+So $x = \dfrac{y - b}{m}$.
+
+:::{.you-try title="Solve $3a + b = 2c$ for $b$"}
+
+$$
+\begin{align*}
+3a + b &= 2c \\
+\\
+3a + b \textcolor{red}{-3a} &= 2c \textcolor{red}{-3a} \snminus{3a} \\
+b &= 2c - 3a
+\end{align*}
+$$
+
+So $b = 2c - 3a$.
+
+:::
+
+### 3.7.3 – Multi-Step Literal Equations
+
+Now let’s look at equations that take more than one operation to isolate the variable.
+
+---
+
+**Example 1:**
+Solve $V = Bh + 12$ for $h$.
+
+$$
+\begin{align*}
+V &= Bh + 12 \\
+\\
+V \textcolor{red}{-12} &= Bh + 12 \textcolor{red}{-12} \snminus{12} \\
+V - 12 &= Bh \\
+\\
+(V - 12) \textcolor{red}{\div B} &= Bh \textcolor{red}{\div B} \sndiv{B} \\
+\frac{V - 12}{B} &= h
+\end{align*}
+$$
+
+---
+
+**Example 2:**
+Solve $A = \frac{1}{2}bh + 3$ for $b$.
+
+$$
+\begin{align*}
+A &= \frac{1}{2}bh + 3 \\
+\\
+A \textcolor{red}{-3} &= \frac{1}{2}bh + 3 \textcolor{red}{-3} \snminus{3} \\
+A - 3 &= \frac{1}{2}bh \\
+\\
+(A - 3) \textcolor{red}{\times 2} &= \frac{1}{2}bh \textcolor{red}{\times 2} \sntimes{2} \\
+2(A - 3) &= bh \\
+\\
+2(A - 3) \textcolor{red}{\div h} &= bh \textcolor{red}{\div h} \sndiv{h} \\
+\frac{2(A - 3)}{h} &= b
+\end{align*}
+$$
+
+---
+
+**Example 3:**
+Convert Celsius to Fahrenheit.
+The formula is $C = \frac{5}{9}(F - 32)$.
+Solve for $F$.
+
+$$
+\begin{align*}
+C &= \frac{5}{9}(F - 32) \\
+\\
+C \textcolor{red}{\times \frac{9}{5}} &= \frac{5}{9}(F - 32) \textcolor{red}{\times \frac{9}{5}} \sntimes{\frac{9}{5}} \\
+\frac{9}{5}C &= F - 32 \\
+\\
+\frac{9}{5}C \textcolor{red}{+ 32} &= F - 32 \textcolor{red}{+ 32} \snplus{32} \\
+F &= \frac{9}{5}C + 32
+\end{align*}
+$$
+
+
+:::{.you-try title="Solve $PV = nR(T + 2)$ for $T$."}
+
+$$
+\begin{align*}
+PV &= nR(T + 2) \\
+\\
+PV \textcolor{red}{\div nR} &= nR(T + 2) \textcolor{red}{\div nR} \sndiv{nR} \\
+\tfrac{PV}{nR} &= T+2 \\
+\\
+\tfrac{PV}{nR} \textcolor{red}{-2} &= T + 2 \textcolor{red}{-2} \snminus{2} \\
+\tfrac{PV}{nR} - 2 &= T
+\end{align*}
+$$
+
+So $T = \tfrac{PV}{nR} - 2$.
+
+:::
 
 {{< practice >}}
 
+**Solve Each for the Indicated Variable**
+
+1. $A = lw$; solve for $l$
+
+2. $P = 2l + 2w$; solve for $l$
+
+3. $I = Prt$; solve for $t$
+
+4. $V = Bh$; solve for $B$
+
+5. $F = ma$; solve for $a$
+
+6. $y = mx + b$; solve for $m$
+
+7. $C = 2\pi r$; solve for $r$
+
+8. $S = \frac{d}{t}$; solve for $d$
+
+9. $P = 4s$; solve for $s$
+
+10. $A = \frac{1}{2}bh$; solve for $b$
+
+11. $P = 2(l + w)$; solve for $l$
+
+12. $M = \frac{p + q}{2}$; solve for $p$
+
+13. $V = Bh + k$; solve for $h$
+
+14. $W = mg + c$; solve for $m$
+
+15. $y - b = mx$; solve for $x$
+
+16. $Q = st - r$; solve for $t$
+
+17. $A = \frac{1}{2}(b_1 + b_2)h$; solve for $h$
+
+18. $D = rt + s$; solve for $t$
+
+19. $V = \pi r^2 h$; solve for $h$
+
+20. $K = 3n - 7p$; solve for $p$
+
+21. $A = P + rtP$; solve for $r$
+
+22. $M = ab - cd$; solve for $b$
+
+23. $T = \frac{a + b + c}{3}$; solve for $b$
+
+---
+
+**Challenge Problems**
+
+24. The area of a trapezoid is $A = \frac{1}{2}(b_1 + b_2)h$.
+    Solve for $b_1$ in terms of $A$, $b_2$, and $h$.
+
+25. The total cost of producing items is $C = np + f$,
+    where $C$ is total cost, $n$ is the number of items, $p$ is the price per item, and $f$ is a fixed setup fee.
+    Solve for $p$, then explain what happens to $p$ as $n$ increases.
+
+---
+
 :::{.answers}
+
+1. $l = \frac{A}{w}$
+
+2. $l = \frac{P - 2w}{2}$
+
+3. $t = \frac{I}{Pr}$
+
+4. $B = \frac{V}{h}$
+
+5. $a = \frac{F}{m}$
+
+6. $m = \frac{y - b}{x}$
+
+7. $r = \frac{C}{2\pi}$
+
+8. $d = St$
+
+9. $s = \frac{P}{4}$
+
+10. $b = \frac{2A}{h}$
+
+11. $l = \frac{P}{2} - w$
+
+12. $p = 2M - q$
+
+13. $h = \frac{V - k}{B}$
+
+14. $m = \frac{W - c}{g}$
+
+15. $x = \frac{y - b}{m}$
+
+16. $t = \frac{Q + r}{s}$
+
+17. $h = \frac{2A}{b_1 + b_2}$
+
+18. $t = \frac{D - s}{r}$
+
+19. $h = \frac{V}{\pi r^2}$
+
+20. $p = \frac{3n - K}{7}$
+
+21. $r = \frac{A - P}{tP}$
+
+22. $b = \frac{M + cd}{a}$
+
+23. $b = 3T - a - c$
 
 :::

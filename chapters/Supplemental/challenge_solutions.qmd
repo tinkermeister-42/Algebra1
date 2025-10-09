@@ -272,3 +272,15 @@ No Challenge Questions
 25. $7s + 10(20) \ge 400 \Rightarrow 7s \ge 200 \Rightarrow s \ge 29$
 
 :::
+
+
+### 3.7 - Solving Literal Equations
+
+:::{.answers}
+
+
+24. $b_1 = \frac{2A}{h} - b_2$
+
+25. $p = \frac{C - f}{n}$; as $n$ increases, $p$ decreases if $f$ stays the same.
+
+:::

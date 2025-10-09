@@ -22,9 +22,9 @@ c &= 13.2
 \end{align*}
 $$
 
-The solution to the equation says you can afford 13.2 packages of candy. But this seems strange because we can only purchase whole packages of candy.
+This tells us you can afford 13.2 packages of candy—but you can’t just buy part of a package.
 
-Problems like this one show the limitations of equations. Equations are great when there’s exactly one answer, but real life often has limits or ranges instead. To solve a problem like this in a meaningful way, we need to learn about **inequalities**.
+Problems like this one show the limitations of equations. Equations are great when there’s a single exact answer, but real situations often have **ranges** of possible answers. To describe those ranges, we use **inequalities**.
 
 Unlike an equation, inequalities help us solve problems with a range of answers.
 
@@ -32,7 +32,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 
 - [ ] I can represent and graph solutions to inequalities on a number line.
 
-- [ ] I can solve one-step and two-step inequalities using addition, subtraction, multiplication, and division.
+- [ ] I can solve inequalities using addition, subtraction, multiplication, and division.
 
 - [ ] I can use inequalities to model and solve real-world problems.
 
@@ -46,20 +46,21 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 
 {{< warmup >}}
 
-1. Without solving, decide which side is larger:
+1. Without solving, decide which is larger: 
+
    $4x + 9$ or $6x + 3$
 
 2. Simplify: $3(2x - 5) - (x + 7)$
 
 3. You have \$50 to spend. After buying a \$12 game, you want to get as many \$8 accessories as possible.
-   How many could you afford *if you spent all your money exactly*?
+   How many could you afford *if you spent all your money*?
 
 
 {{< learn >}}
 
 ### 3.6.1 -- Inequality Basics
 
-An inequality is a mathematical statement that compares two expressions using one of 5 inequality symbols. The following table defines these.
+An **inequality** compares two expressions using one of these symbols:
 
 | Symbol | Meaning                  | Example    |
 | ---    | ---                      | ---        |
@@ -69,77 +70,68 @@ An inequality is a mathematical statement that compares two expressions using on
 | $\ge$  | Greater than or equal to | $x \ge y$   |
 | $\le$  | Less than or equal to    | $x \le y$   |
 
-In Unit 1, we showed how to plot points on a number line. Typically, with equations, we show our answer as a simple equation like $x = 3$.  We can plot this solution on a number line.
+In Unit 1, we plotted single solutions like $x = 3$ on a number line:
 
 ![](/images/Unit_3/Lesson_6/x_equal_3.png)
 
-The solution to an equation is simply a single point on the number line.
-
-We can also plot inequalities. The main difference is that inequalities represent a whole range of solutions, not just one number.
+That’s just one point.
+Inequalities, however, represent a whole range of values.
 
 ---
 
 **Example 1:** Greater Than
 
-Plot the inequality $x > 3$.
+Plot the solution to $x > 3$ on a number line.
 
 ![](/images/Unit_3/Lesson_6/x_greater_than_3.png)
 
-Here we see that the number 3 is plotted just as it was with an equation. There are two main differences. First, instead of just a point, we indicate the range of possible solutions by drawing an arrow. In this case, the arrow covers all values bigger than 3. 
-
-If you have a keen eye, you may also notice the second difference. The point at 3 is not a solid dot. It is an open circle. What this means is that the value 3 is not included in the range of answers. Everything all the way up to 3 is included, but not 3 itself!
+The open circle shows 3 is *not included*. The arrow points right to show all numbers greater than 3 are possible solutions.
 
 ---
 
 **Example 2:** Less Than
 
-Plot the inequality $x < 3$.
+Plot the solution to $x < 3$ on a number line.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_3.png)
 
-This is very similar to the previous example. The only difference is the direction the arrow points. In this case, the arrow covers all numbers that are **smaller than** 3. 
-
-You may notice that, in both examples, the arrow points in the direction of the inequality symbol.
+The arrow points left -- toward smaller numbers. The open circle again shows that 3 itself is not included.
 
 ---
 
-**Example 3:** Greater Than or Equal To
+**Example 3:** Greater Than or Equal To 
 
-Plot the inequality $x \ge 3$.
+Plot the solution to $x \ge 3$ on a number line.
 
 ![](/images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png)
 
-Compare this to example 1 ($x > 3$). Can you spot the difference? There is just one -- the dot at 3 is filled in rather than left open. This means that **3 is included** in the range of answers.
+Same as Example 1, except the dot is filled in. That means **3 is included**.
 
 ---
 
 **Example 4:** Less Than or Equal To
 
-Plot the inequality $x \le 3$.
+Plot the solution to $x \le 3$ on a number line.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
-Compare this to example 2 ($x < 3$). It is exactly the same, but the dot is filled in. This means that **3 is included** in the range of answers.
+The dot is filled again, showing 3 is part of the solution. The arrow points left for "less than".
 
 :::{.callout-tip title="Test a value"}
-If you are unsure what direction to draw the arrow, try testing a value.  
 
-Suppose $x \le -1$. We can pick a number that makes this true and plot it with our solution. 
+Not sure which way the arrow goes? Test a number that makes the inequality true.
 
-Let's try $x = -4$ (which is smaller than -1).
+For $x \le -1$ we could try $x = -4$.
 
 ![](/images/Unit_3/Lesson_6/x_leq_neg1_test_value.png)
 
-The point at -4 is less than -1 and is covered by the arrow.
+Since $-4 \le -1$ is true, shade the side containing $-4$.
+
 :::
 
 ### 3.6.2 -- Solving Inequalities Using Addition and Subtraction
 
-As with equations, the most interesting and useful inequalities require that we solve them. 
-
-The good news is that solving inequalities is almost exactly the same as solving equations. We can use all of the same skills we have already learned. 
-
-Unlike with equations, it is often very useful to plot the solution to an inequality because it clearly communicates the range of possible answers.
+Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.
 
 ---
 
@@ -190,9 +182,9 @@ Now plot it.
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
 
-### 3.6.3 -- Solving Inequalities Involving Multiplication and Division
+### 3.6.3 -- Solving Inequalities with Multiplication and Division
 
-When solving an inequality involves multiplication or division by a positive number, the process of solving is the same as with an equation.
+If you multiply or divide by a positive number, then you solve just like an equation.
 
 **Example 1:** 
 
@@ -220,7 +212,7 @@ Now plot it:
 
 ---
 
-In the previous section, we were told that solving inequalities is *almost* the same as solving equations. There is one significant difference -- **the inequality symbol flips when we multiply or divide by a negative number**.
+The one big difference between solving equations and inequalities comes when you multiply or divide by a **negative** number. In that case, you have to **flip the sign**.
 
 **Example 2:** 
 
@@ -249,7 +241,7 @@ Plot the solution:
 :::{.gotcha title="Don't forget to flip the sign"}
 Don't forget to *flip the sign* when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.
 
-In the previous example we found $x > 4$.  Try a value that makes this true. We will try $x = 5$.
+In the previous example we found $x > 4$.  Let's test our answer with $x = 5$.
 
 $$
 \begin{align*}
@@ -259,22 +251,18 @@ $$
 \end{align*}
 $$
 
-If we had not flipped the sign, we would instead find $-5 > -3$. This is **not** true.
+If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 :::
 
 ### 3.6.4 -- Real-World Problems With Inequalities
 
-Now that we know how to solve inequalities, let's use them to solve some real problems. First, we will revisit the question in the introduction.  How many packages of candy can you afford?
+Let's revisit the candy problem:
 
----
+You have \$20, break costs \$3.50, and candy is \$1.25 per package. How many packages can you afford?
 
-**Example 1:** Buying candy
+Let $c$ be the number of packages you purchase. The expression $3.5 + 1.25c$ will give you the cost of purchasing the candy with a loaf of bread.
 
-You have \$20 in your pocket. You must buy a loaf of bread for \$3.50 but you also want to buy some candy that costs \$1.25 per package. What is the greatest number of packages you can purchase?
-
-If we let $c$ be the number of candy packages you purchase, then $3.5 + 1.25c$ will give you the cost of purchasing that candy with a loaf of bread.
-
-To find the largest number you can purchase, we need to make sure you use less than or equal to \$20.
+To find the largest number of packages you can purchase, you have to set up the inequality so that the total spent is less than or equal to \$20.
 
 $$
 3.5 + 1.25c \le 20

@@ -79,6 +79,7 @@ book:
         - file: chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.qmd
         - file: chapters/Unit_3/3.6_Solving_Inequalities.qmd
         - file: chapters/Unit_3/3.7_Solving_Literal_Equations.qmd
+        - file: chapters/Unit_3/Review.qmd
 
     - part: "Unit 4: Linear Functions & Graphs"
 

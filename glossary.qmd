@@ -527,6 +527,16 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 
 ---
 
+### Inequality {#glossary-inequality}
+
+An **inequality** is a math statement that compares two values or expressions using symbols like `<`, `>`, `≤`, or `≥`. Instead of saying two sides are equal, it shows which side is larger or smaller.
+
+> **Example:**
+>
+> The inequality ( x + 5 < 12 ) means that ( x + 5 ) is **less than** 12.
+
+---
+
 ### Infinitely {#glossary-infinitely}
 
 The word **infinitely** means "without end" or "going on forever." In math, something is **infinite** if it never stops or has no limit.
@@ -614,6 +624,17 @@ where $a$, $b$, and $c$ are numbers.
 
 > **Example:**
 > $3x + 7 = 19$ is a linear equation. Solving gives $x = 4$.
+
+---
+
+### Literal Equation {#glossary-literal-equation}
+
+A **literal equation** is an equation that uses letters to represent values. These letters can stand for numbers or other variables. Solving a literal equation means getting one variable by itself in terms of the others.
+
+> **Example:**
+>
+> In the formula $A = lw$, you can solve for $l$ by dividing both sides by $w$:
+> $l = \dfrac{A}{w}$.
 
 ---
 

@@ -1,0 +1,226 @@
+# Review {.unnumbered}
+
+This review brings together the key skills from Unit 3.
+It’s practice-heavy so you can build accuracy, speed, and confidence before the test.
+
+**What you’ll review**
+
+* Solving one-step and two-step equations
+* Simplifying and solving multi-step equations
+* Solving equations with variables on both sides
+* Recognizing no-solution and infinite-solution cases
+* Solving and graphing inequalities
+* Rearranging literal equations (formulas)
+
+---
+
+### Solving One-Step Equations (3.1)
+
+Solve each equation and **show your work**.
+
+1. $x + 9 = 15$
+
+2. $t - 8 = 5$
+
+3. $5y = 45$
+
+4. $\dfrac{m}{7} = 6$
+
+5. $-3p = 21$
+
+Check at least one of your answers by substitution.
+
+---
+
+### Solving Two-Step Equations (3.2)
+
+6. $2x + 5 = 17$
+
+7. $5a - 7 = 18$
+
+8. $4n + 9 = 1$
+
+9. $\dfrac{r}{3} + 8 = 14$
+
+10. $7x - 4 = 3x + 12$
+
+11. A movie ticket costs $12 plus $3 for each snack. You spent $27.
+Write and solve an equation to find how many snacks you bought.
+
+---
+
+### Multi-Step Equations with Distribution (3.3)
+
+Simplify, then solve.
+
+12. $3(x + 4) = 18$
+
+13. $2(5y - 1) = 18$
+
+14. $4(x - 3) + 2x = 12$
+
+15. $7a - 3(2a - 5) = 9$
+
+16. $5(k + 4) - 2(3k - 1) = 8$
+
+Check one by substitution.
+
+---
+
+### Variables on Both Sides (3.4)
+
+17. $6x + 8 = 4x + 20$
+
+18. $9 + 2y = 3y - 6$
+
+19. $5a - 7 = 3(a + 1)$
+
+20. $4(p + 2) = 6p$
+
+---
+
+### No or Infinite Solutions (3.5)
+
+Decide if each equation has **one**, **none**, or **infinitely many** solutions.
+Show how you know.
+
+21. $5x + 3 = 5x + 7$
+
+22. $4a + 6 = 2(2a + 3)$
+
+23. $7y - 2 = 3y + (4y - 2)$
+
+24. $9 + 2x = 2x + 9$
+
+---
+
+### Solving Inequalities (3.6)
+
+Solve and graph on a number line.
+
+25. $x - 4 > 6$
+
+26. $2y + 5 \le 9$
+
+27. $-3p \ge 12$
+
+28. $4 + 2n < 10$
+
+29. $5(x - 3) > 10$
+
+30. You have $50. You buy a game for $14 and plan to get several snacks costing $4 each.
+Write and solve an inequality to find how many snacks you can afford.
+
+---
+
+### Solving Literal Equations (3.7)
+
+Rearrange each formula to solve for the indicated variable.
+
+31. $A = lw$ solve for $l$
+
+32. $P = 2l + 2w$ solve for $w$
+
+33. $F = ma$ solve for $a$
+
+34. $C = 2\pi r$ solve for $r$
+
+35. $y = mx + b$ solve for $m$
+
+36. $V = Bh + k$ solve for $h$
+
+37. $A = \frac{1}{2}(b_1 + b_2)h$ solve for $h$
+
+38. $C = \frac{5}{9}(F - 32)$ solve for $F$
+
+**Challenge Problems**
+
+39. $P = 3(x + 4) - 2(2x - 1)$ solve for $x$
+
+40. $T = a(2b + 5) - 3b$ solve for $b$
+
+---
+
+:::{.answers}
+
+1. $x = 6$ 
+
+2. $t = 13$ 
+
+3. $y = 9$ 
+
+4. $m = 42$ 
+
+5. $p = -7$
+
+6. $x = 6$ 
+
+7. $a = 5$ 
+
+8. $n = -2$ 
+
+9. $r = 18$ 
+
+10. $x = 4$
+
+11. $12 + 3s = 27 \Rightarrow s = 5$
+
+12. $x = 2$ 
+
+13. $y = 2$ 
+
+14. $x = 5$ 
+
+15. $a = 3$ 
+
+16. $k = 3$
+
+17. $x = 6$ 
+
+18. $y = 15$ 
+
+19. $a = 5$ 
+
+20. $p = 4$
+
+21. No solution 
+
+22. Infinite solutions 
+
+23. Infinite solutions 
+
+24. Infinite solutions
+
+25. $x > 10$ 
+
+26. $y \le 2$ 
+
+27. $p \le -4$ 
+
+28. $n < 3$ 
+
+29. $x > 5$
+
+30. $50 \ge 14 + 4s \Rightarrow s \le 9$
+
+31. $l = \frac{A}{w}$ 
+
+32. $w = \frac{P - 2l}{2}$ 
+
+33. $a = \frac{F}{m}$ 
+
+34. $r = \frac{C}{2\pi}$
+
+35. $m = \frac{y - b}{x}$ 
+
+36. $h = \frac{V - k}{B}$ 
+
+37. $h = \frac{2A}{b_1 + b_2}$ 
+
+38. $F = \frac{9}{5}C + 32$
+
+39. $P = 3x + 12 - 4x + 2 \Rightarrow P = -x + 14 \Rightarrow x = 14 - P$
+
+40. $T = 2ab + 5a - 3b \Rightarrow b(2a - 3) = T - 5a \Rightarrow b = \dfrac{T - 5a}{2a - 3}$
+
+:::
