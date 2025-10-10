@@ -82,6 +82,16 @@ book:
         - file: chapters/Unit_3/Review.qmd
 
     - part: "Unit 4: Linear Functions & Graphs"
+      chapters:
+        - file: chapters/Unit_4/index.qmd
+        - file: chapters/Unit_4/4.1_Graphing_Points_and_Seeing_Patterns.qmd
+        - file: chapters/Unit_4/4.2_Understanding_Slope.qmd
+        - file: chapters/Unit_4/4.3_The_Equation_of_a_Line.qmd
+        - file: chapters/Unit_4/4.4_Writing_Linear_Equations.qmd
+        - file: chapters/Unit_4/4.5_Using_Function_Notation.qmd
+        - file: chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd
+        - file: chapters/Unit_4/4.7_Graphing_Linear_Inequalities.qmd
+        - file: chapters/Unit_4/Review.qmd
 
     - part: "Unit 5: Systems of Equations"
 

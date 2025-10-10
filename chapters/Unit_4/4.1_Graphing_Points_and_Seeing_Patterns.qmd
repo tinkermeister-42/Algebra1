@@ -1,0 +1,41 @@
+# 4.1 - Graphing Points and Seeing Patterns {.unnumbered}
+
+**Main Focus**
+
+* Review the coordinate plane and plotting ordered pairs.
+* Use tables of values to plot and connect points.
+* Notice consistent “add-by” patterns that produce straight lines.
+* Recognize that each x-value corresponds to one y-value.
+
+> *Goal:* Build comfort with coordinates and recognizing linearity visually.
+
+**Teacher Tips / Key Side Points**
+
+* Connect to real-world grids: maps, chessboards, city blocks.
+* Review vocabulary casually: *axis*, *origin*, *quadrant*, *ordered pair*.
+* Emphasize direction: x moves left/right, y moves up/down.
+* You can introduce **input → output** as a verbal bridge to functions, but without naming it yet.
+* If students are quick, you can preview that a straight line shows a *constant rate of change*.
+
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

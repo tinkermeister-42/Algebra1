@@ -1,0 +1,44 @@
+# 4.4 - Writing Linear Equations {.unnumbered}
+
+**Main Focus**
+
+* Write equations of lines given:
+
+  * a graph
+  * slope and a point
+  * two points.
+* Rearrange equations to isolate (y) (“put in slope-intercept form”).
+* Interpret slope and intercept in context.
+
+> *Goal:* Apply (y = mx + b) flexibly and strengthen algebraic fluency.
+
+**Teacher Tips / Key Side Points**
+
+* Use color-coding or arrows when rearranging (to highlight what changes sides).
+* Have students check work by plugging in a point—they love verifying themselves.
+* Include simple examples where slope is a fraction or negative.
+* Emphasize that any linear equation can be rewritten as (y = mx + b) — it’s like cleaning it up.
+* A nice mini-connection: when slope = 0, (y = b) → horizontal line.
+
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

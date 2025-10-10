@@ -1,4 +1,4 @@
-#  U.L Title {.unnumbered}
+# U.L Title {.unnumbered}
 
 Coming Soon
 

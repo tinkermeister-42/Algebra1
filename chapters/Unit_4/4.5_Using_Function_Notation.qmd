@@ -1,0 +1,41 @@
+# 4.5 - Using Function Notation {.unnumbered}
+
+**Main Focus**
+
+* Introduce **(f(x))** as another name for (y).
+* Evaluate simple cases like (f(3) = 2(3) + 1).
+* Use the **vertical line test** to confirm a line is a function.
+* Connect tables, graphs, and equations as representations of the same rule.
+
+> *Goal:* Link slope-intercept understanding to the formal language of functions.
+
+**Teacher Tips / Key Side Points**
+
+* Frame it simply: “(f(x)) just means ‘the value of the function when x = something.’”
+* Revisit the input → output model from earlier units.
+* Reinforce: vertical lines fail the vertical line test because one input → many outputs.
+* Mention **domain** (possible x’s) and **range** (possible y’s) lightly through examples, not formal definitions.
+* Encourage use of complete sentences: “When x increases by 1, f(x) increases by ___.”
+
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

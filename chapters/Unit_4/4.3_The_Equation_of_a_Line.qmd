@@ -1,0 +1,41 @@
+# 4.3 - The Equation of a Line {.unnumbered}
+
+**Main Focus**
+
+* Introduce (y = mx + b) as the structure of every non-vertical line.
+* Interpret (m) as slope (rate) and (b) as y-intercept (starting point).
+* Graph using slope and intercept efficiently.
+* Observe how changing (m) or (b) changes the line.
+
+> *Goal:* Establish (y = mx + b) as the central form for describing lines.
+
+**Teacher Tips / Key Side Points**
+
+* Reinforce that (b) = where the line crosses the y-axis → set (x = 0).
+* For ELLs: use parallel sentences (“(m) is the rate,” “(b) is where we start”) and visuals.
+* Show different forms of (m): fraction, decimal, negative values.
+* Connect to graphing calculators or Desmos for quick visual feedback.
+* Mention x-intercept as a related idea (set (y = 0)) but save formal work for 4.4.
+
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

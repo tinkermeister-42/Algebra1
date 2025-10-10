@@ -1,0 +1,41 @@
+# 4.2 - Understanding Slope {.unnumbered}
+
+**Main Focus**
+
+* Define slope as *rise over run* and *rate of change*.
+* Calculate slope from a graph or from two points.
+* Compare **positive**, **negative**, **zero**, and **undefined** slopes.
+* Explore **horizontal** and **vertical** lines (introduce “you can’t divide by zero”).
+
+> *Goal:* Build intuitive and computational understanding of slope.
+
+**Teacher Tips / Key Side Points**
+
+* Use real-world contexts: speed (miles per hour), pay rate, water level rising, etc.
+* Visual cue: “Always read slope left to right—like you read a story.”
+* Tie vertical lines back to *failing the vertical line test* (later link to function idea).
+* Have students physically model rise/run with dry-erase boards or their arms—it helps.
+* Mention that equal slopes mean **parallel lines** (just a teaser for later).
+
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

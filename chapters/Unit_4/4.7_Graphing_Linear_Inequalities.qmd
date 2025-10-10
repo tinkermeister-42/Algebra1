@@ -1,0 +1,40 @@
+# 4.7 - Graphing Linear Inequalities {.unnumbered}
+
+**Main Focus**
+
+* Review inequality symbols and one-variable graphs.
+* Graph two-variable inequalities ((y > mx + b), (y ≤ mx + b), etc.).
+* Shade solution regions; test a point to verify.
+* Interpret shaded regions in real-world terms.
+
+> *Goal:* Extend linear models to represent ranges of possible solutions.
+
+**Teacher Tips / Key Side Points**
+
+* Link inequality symbols to boundary style: ≥ or ≤ → solid line; > or < → dashed line.
+* Use color for shading; emphasize that shading = “all the answers.”
+* Include one real-world tie-in (e.g., budgets, limits, maximum capacity).
+* Quick check trick: (0,0) test point works most of the time.
+* Reassure: “You’re not solving anything new—just graphing a rule with more answers.”
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::

@@ -1,0 +1,39 @@
+# 4.6 - Linear Models in the Real World {.unnumbered}
+
+**Main Focus**
+
+* Model real situations with linear equations (motion, cost, temperature, etc.).
+* Interpret slope and intercept in context (rate and starting value).
+* Sketch or estimate **best-fit lines** informally to describe data trends.
+
+> *Goal:* Use linear equations as modeling tools.
+
+**Teacher Tips / Key Side Points**
+
+* Provide messy or semi-realistic data — they don’t have to be perfect lines.
+* Ask: “What does it mean if the slope is bigger?” or “What would a negative slope mean here?”
+* Bring in technology (Desmos, spreadsheet trendlines) to visualize best-fit.
+* Use units every time (“$5 per hour,” “2 inches per day”) to anchor meaning.
+* Briefly mention domain restrictions—what x-values make sense in context.
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
