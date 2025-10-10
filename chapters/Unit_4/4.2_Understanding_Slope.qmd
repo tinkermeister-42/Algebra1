@@ -1,40 +1,127 @@
-# 4.2 - Understanding Slope {.unnumbered}
+# 4.2 – Understanding Slope {.unnumbered}
 
-**Main Focus**
-
-* Define slope as *rise over run* and *rate of change*.
-* Calculate slope from a graph or from two points.
-* Compare **positive**, **negative**, **zero**, and **undefined** slopes.
-* Explore **horizontal** and **vertical** lines (introduce “you can’t divide by zero”).
-
-> *Goal:* Build intuitive and computational understanding of slope.
-
-**Teacher Tips / Key Side Points**
-
-* Use real-world contexts: speed (miles per hour), pay rate, water level rising, etc.
-* Visual cue: “Always read slope left to right—like you read a story.”
-* Tie vertical lines back to *failing the vertical line test* (later link to function idea).
-* Have students physically model rise/run with dry-erase boards or their arms—it helps.
-* Mention that equal slopes mean **parallel lines** (just a teaser for later).
-
+Intro Coming Soon
 
 :::{.objectives}
 
-- [ ] I can do things
+* [ ] I can find the slope of a line from a graph or from two points.
+* [ ] I can describe slope as a rate of change between x and y.
+* [ ] I can tell whether a slope is positive, negative, zero, or undefined.
+* [ ] I can explain why vertical lines do not have a slope.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink slope >}}, {{< glink rise >}}, {{< glink run >}}, {{< glink rate of change >}}, {{< glink horizontal line >}}, {{< glink vertical line >}}
 
 :::
 
 {{< warmup >}}
 
+Coming Soon
+
 {{< learn >}}
 
+### 4.2.1 – What Is Slope?
+
+* The **slope** of a line tells how steep it is — how fast y changes as x changes.
+* It’s the **rate of change** between x and y.
+* You can think of slope as the line’s *tilt* or *climb*.
+
+:::{.real-world title="Slope as a Rate"}
+If you earn $15 per hour, that’s a slope of 15 on a graph of pay vs. hours — your pay increases $15 for each additional hour you work.
+:::
+
+:::{.remember title="Formula for Slope"}
+Between two points ((x_1, y_1)) and ((x_2, y_2)):
+[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+]
+where (m) represents the slope.
+:::
+
+:::{.you-try title="Find the slope between (1, 2) and (4, 8)."}
+:::
+
+---
+
+### 4.2.2 – Finding Slope From a Graph
+
+* To find slope from a graph, pick two clear points on the line.
+* Count the **rise** (change in y) and the **run** (change in x).
+* Then use (m = \frac{\text{rise}}{\text{run}}).
+
+![](/images/Unit_4/Lesson_2/rise_run_example.png){width="300px" fig-align="center"}
+
+:::{.think title="Reading Direction"}
+Always read slope **left to right**, like you read a sentence.
+:::
+
+:::{.you-try title="Count the slope"}
+Find the rise and run between two points on your graph, then compute (m = \frac{\text{rise}}{\text{run}}).
+:::
+
+---
+
+### 4.2.3 – Types of Slope
+
+| Type          | Description               | Example  |
+| ------------- | ------------------------- | -------- |
+| **Positive**  | Line rises left to right  | (m > 0)  |
+| **Negative**  | Line falls left to right  | (m < 0)  |
+| **Zero**      | Line is flat (horizontal) | (y = 3)  |
+| **Undefined** | Line is vertical (no run) | (x = -2) |
+
+:::{.real-world title="What They Mean"}
+
+* **Positive slope:** going uphill, savings increasing, temperature rising.
+* **Negative slope:** going downhill, spending money, cooling down.
+* **Zero slope:** no change — a flat road or steady balance.
+* **Undefined slope:** vertical line — you’d have to “divide by zero,” which doesn’t make sense.
+  :::
+
+:::{.you-try-m title="Sketch examples"}
+Draw one example of each type of slope on graph paper. Label each line with its slope.
+:::
+
+:::{.think title="When Two Lines Meet"}
+If two lines have different slopes, they’ll **cross at one point**.  
+That point has the same (x, y) values in both equations — it makes **both** true.
+:::
+
+---
+
+### 4.2.4 – Slope in the Real World
+
+:::{.real-world title="Comparing Slopes in Context"}
+
+* A **wheelchair ramp** that rises 1 foot for every 12 feet forward has a slope of ( \frac{1}{12} ).
+* A **hill** that rises 10 feet for every 20 feet forward has a slope of ( \frac{10}{20} = \frac{1}{2} ).
+  Which one is steeper?
+  :::
+
+:::{.real-world title="Rates as Slopes"}
+
+* A car traveling 60 miles per hour and a cyclist traveling 15 miles per hour both form straight lines on a distance-time graph.
+* The car’s line is steeper because its **slope (rate of change)** is greater.
+  :::
+
+:::{.think title="What Slope Tells Us"}
+The larger the slope, the faster the change.
+The smaller the slope, the slower or flatter the change.
+:::
+
+---
+
+:::{.remember title="Key Idea"}
+Slope measures how y changes compared to x.
+A **constant slope** means the line rises or falls evenly — that’s what makes it *linear*.
+:::
+
 {{< practice >}}
+
+Coming Soon
 
 :::{.answers}
 

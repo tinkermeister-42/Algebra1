@@ -1,0 +1,131 @@
+# 4.6 – Graphing Linear Inequalities {.unnumbered}
+
+**Coming Soon**
+
+:::{.objectives}
+
+* [ ] I can graph linear inequalities in two variables.
+* [ ] I can decide whether to use a solid or dashed boundary line.
+* [ ] I can test points to determine which region to shade.
+* [ ] I can explain what the shaded region means in a real-world context.
+
+:::
+
+:::{.vocab}
+
+{{< glink inequality >}}, {{< glink greater than >}}, {{< glink less than >}}, {{< glink dashed line >}}, {{< glink solid line >}}, {{< glink solution set >}}
+
+:::
+
+{{< warmup >}}
+
+Coming Soon
+
+{{< learn >}}
+
+### 4.6.1 – Review of Inequalities
+
+* Inequalities compare two quantities.
+  Examples:
+
+  * (x > 3) means “x is greater than 3.”
+  * (y \le 5) means “y is less than or equal to 5.”
+* On a number line:
+
+  * Open circle → (>) or (<)
+  * Closed circle → (\ge) or (\le)
+
+:::{.you-try title="Review One-Variable Graphs"}
+Graph (x < -2) and (x \ge 4) on a number line.
+Which parts are shaded?
+:::
+
+---
+
+### 4.6.2 – Linear Inequalities in Two Variables
+
+A **linear inequality** looks like a linear equation, but it uses an inequality symbol instead of an equals sign.
+
+Examples:
+[
+y > 2x + 1 \qquad \text{and} \qquad y \le -x + 4
+]
+
+Each inequality represents **many points** that make the statement true — not just one line.
+
+:::{.remember title="Boundary Line Rules"}
+
+* Use a **dashed line** for (<) or (>).
+* Use a **solid line** for (\le) or (\ge).
+  :::
+
+![](/images/Unit_4/Lesson_6/inequality_boundary_line.png){width="360px" fig-align="center"}
+
+---
+
+### 4.6.3 – Shading the Solution Region
+
+1. Graph the boundary line for the related equation ((y = mx + b)).
+2. Choose a **test point** (often (0, 0)) and plug it into the inequality.
+3. If it makes the statement true, shade that side of the line.
+
+:::{.example title="Example – (y > x + 1)"}
+
+1. Graph (y = x + 1) as a **dashed line**.
+2. Test (0, 0): (0 > 0 + 1) → (0 > 1) is **false**.
+   So shade the **other side** of the line.
+   :::
+
+:::{.you-try title="Try It"}
+Graph (y \le -2x + 3).
+Use (0, 0) to decide where to shade.
+:::
+
+---
+
+### 4.6.4 – Interpreting the Shaded Region
+
+The shaded area shows **all the possible solutions** that make the inequality true.
+
+:::{.real-world title="Example – Budget Constraint"}
+You’re buying pens for $2 each and notebooks for $3 each.
+You can spend at most $18.
+[
+2x + 3y \le 18
+]
+
+* The line (2x + 3y = 18) is the spending limit.
+* The shaded region below it shows **all combinations** you can afford.
+  :::
+
+:::{.think title="Why Shade Below?"}
+“Less than or equal to” means you’re staying **under** the limit — so shade **below** the line.
+:::
+
+:::{.you-try-m title="Try Your Own"}
+Write and graph an inequality to model this:
+“You can drive up to 300 miles on 15 gallons of gas.”
+:::
+
+:::{.connect title="Where Both Conditions Are True"}
+If you graph two inequalities at once, the **overlapping shaded region**  
+shows where **both** are true — just like the point of intersection for two lines.  
+Those shared values are the **solutions** to the system.
+:::
+
+---
+
+:::{.remember title="Key Idea"}
+Linear inequalities show **ranges of solutions** rather than exact ones.
+The boundary line shows where values are equal, and the shading shows where the inequality is true.
+:::
+
+{{< practice >}}
+
+Coming Soon
+
+:::{.answers}
+
+Coming Soon
+
+:::

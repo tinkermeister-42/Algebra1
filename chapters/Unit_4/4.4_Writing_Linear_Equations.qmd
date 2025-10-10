@@ -1,44 +1,162 @@
-# 4.4 - Writing Linear Equations {.unnumbered}
+# 4.4 – Writing Linear Equations {.unnumbered}
 
-**Main Focus**
-
-* Write equations of lines given:
-
-  * a graph
-  * slope and a point
-  * two points.
-* Rearrange equations to isolate (y) (“put in slope-intercept form”).
-* Interpret slope and intercept in context.
-
-> *Goal:* Apply (y = mx + b) flexibly and strengthen algebraic fluency.
-
-**Teacher Tips / Key Side Points**
-
-* Use color-coding or arrows when rearranging (to highlight what changes sides).
-* Have students check work by plugging in a point—they love verifying themselves.
-* Include simple examples where slope is a fraction or negative.
-* Emphasize that any linear equation can be rewritten as (y = mx + b) — it’s like cleaning it up.
-* A nice mini-connection: when slope = 0, (y = b) → horizontal line.
-
+Coming Soon
 
 :::{.objectives}
 
-- [ ] I can do things
+* [ ] I can write the equation of a line from a graph, from two points, or from a slope and a point.
+* [ ] I can rearrange equations to slope-intercept form ((y = mx + b)).
+* [ ] I can check that my equation fits known points.
+* [ ] I can explain what the slope and intercept mean in a real-world context.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink slope >}}, {{< glink y-intercept >}}, {{< glink slope-intercept form >}}, {{< glink point-slope form >}}, {{< glink linear equation >}}
 
 :::
 
 {{< warmup >}}
 
+Coming Soon
+
 {{< learn >}}
+
+### 4.4.1 – Writing an Equation From a Graph
+
+* Look for the **y-intercept** first — where the line crosses the y-axis.
+* Then find the **slope** by counting rise/run between two points.
+* Substitute (m) and (b) into (y = mx + b) (or (f(x) = mx + b)).
+
+![](/images/Unit_4/Lesson_4/find_equation_from_graph.png){width="340px" fig-align="center"}
+
+:::{.real-world title="Example – Car Rental Costs"}
+A company charges $50 plus $0.25 per mile.
+The rule is (y = 0.25x + 50).
+
+* (m = 0.25): rate per mile
+* (b = 50): starting fee
+  :::
+
+:::{.you-try title="From Graph to Equation"}
+Use the graph your teacher provides. Identify the slope and y-intercept, then write the equation in slope-intercept form.
+:::
+
+---
+
+### 4.4.2 – Writing an Equation From Slope and a Point
+
+When you know a line’s slope and one point, use **point-slope form**:
+[
+y - y_1 = m(x - x_1)
+]
+
+Then rearrange to slope-intercept form if needed.
+
+:::{.example title="Example – Point and Slope"}
+Slope (m = 3), point ((2, 5)):
+[
+\begin{align*}
+y - 5 &= 3(x - 2) \
+y - 5 &= 3x - 6 \
+y &= 3x - 1
+\end{align*}
+]
+
+So (y = 3x - 1) or (f(x) = 3x - 1).
+:::
+
+:::{.you-try title="Use Point-Slope Form"}
+Find the equation of a line with slope (m = -2) that passes through ((1, 4)). Write your final answer as (y = mx + b).
+:::
+
+---
+
+### 4.4.3 – Writing an Equation From Two Points
+
+When you only know **two points**, first find the **slope**:
+[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+]
+
+Then use one of the points and point-slope form to find the equation.
+
+:::{.example title="Example – Two Points"}
+Points ((1, 2)) and ((4, 5)):
+
+[
+m = \frac{5 - 2}{4 - 1} = 1
+]
+
+Use point ((1, 2)):
+[
+y - 2 = 1(x - 1) \implies y = x + 1
+]
+:::
+
+:::{.you-try-m title="Try It Yourself"}
+Find the equation of the line passing through ((–2, 3)) and ((2, 7)).
+:::
+
+---
+
+### 4.4.4 – Rearranging Equations Into Slope-Intercept Form
+
+Sometimes a line is written in another form, like (3x + 2y = 10).
+To graph it easily, solve for (y).
+
+[
+\begin{align*}
+3x + 2y &= 10 \
+2y &= -3x + 10 \
+y &= -\frac{3}{2}x + 5
+\end{align*}
+]
+
+Now the slope is (-\frac{3}{2}) and the y-intercept is (5).
+
+:::{.you-try title="Put It in Slope-Intercept Form"}
+Rewrite (4x - 2y = 6) in slope-intercept form. Identify (m) and (b).
+:::
+
+---
+
+### 4.4.5 – Interpreting Slope and Intercept in Context
+
+:::{.real-world title="Example – Earnings Over Time"}
+A dog walker earns $15 per walk, plus $10 just for showing up.
+The rule is (f(x) = 15x + 10).
+
+* (m = 15): rate (how much per walk)
+* (b = 10): base pay
+  :::
+
+:::{.you-try-m title="Interpret the Meaning"}
+You spend $25 to join a club and $5 each visit.
+Write an equation for total cost (f(x)).
+What do (m) and (b) represent?
+:::
+
+:::{.remember title="Key Idea"}
+You can write linear equations from graphs, data, or descriptions.
+Once you know **slope** and **one point** (or intercept), you can find the rule that models the situation.
+:::
+
+:::{.real-world title="Comparing Two Models"}
+You track two savings plans:  
+\(f(x) = 10x + 100\) and \(g(x) = 20x + 20\).  
+Graph both.  
+The **intersection point** shows when your total savings are equal.  
+That single point satisfies both functions — it’s the **solution to the system**.
+:::
 
 {{< practice >}}
 
+Coming Soon
+
 :::{.answers}
+
+Coming Soon
 
 :::

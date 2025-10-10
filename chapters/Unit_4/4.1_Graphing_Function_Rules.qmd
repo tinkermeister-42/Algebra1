@@ -1,0 +1,93 @@
+# 4.1 – Graphing Function Rules {.unnumbered}
+
+Intro Coming Soon
+
+:::{.objectives}
+
+* [ ] I can use a simple equation or function rule to find y when I know x.
+* [ ] I can make a table of values and graph the related points.
+* [ ] I can recognize that these points form a straight line.
+
+:::
+
+:::{.vocab}
+
+{{< glink axis >}}, {{< glink origin >}}, {{< glink quadrant >}}, {{< glink ordered pair >}}, {{< glink coordinate plane >}}
+
+:::
+
+{{< warmup >}}
+
+Coming Soon
+
+{{< learn >}}
+
+### 4.1.1 – The Coordinate Plane
+
+* Review the **x-axis** (horizontal) and **y-axis** (vertical).
+* Identify the **origin (0, 0)** as the point where the two axes meet.
+* Describe how each point is written as an **ordered pair** ((x, y)).
+* Emphasize that x tells you how far to move left/right, and y tells you how far up/down.
+
+:::{.think title="How do we read a point?"}
+If the point is ((–3, 2)), move **left 3** and **up 2** from the origin.
+:::
+
+:::{.you-try title="Plot (2, 3) and (–4, 1) on your graph."}
+:::
+
+---
+
+### 4.1.2 – Function Rules and Tables of Values
+
+* A simple **rule** such as (y = 2x + 1) (or (f(x) = 2x + 1)) tells how y depends on x.
+
+* Choose x-values, plug them into the rule, and calculate y.
+
+  |  x  |  y  |
+  | :-: | :-: |
+  |  –2 |  –3 |
+  |  –1 |  –1 |
+  |  0  |  1  |
+  |  1  |  3  |
+  |  2  |  5  |
+
+* Plot those points on the coordinate plane.
+
+* Connect the dots — you’ll see a **straight line**.
+
+:::{.real-world title="The Rule as a Machine"}
+Each x is an **input**, the rule is the **machine**, and y is the **output**.
+Every time x increases by 1, y increases by 2 — a constant change that makes a line.
+:::
+
+:::{.you-try-m title="Try it Yourself"}
+Use the rule (y = 3x – 1).
+Make a table for x = –1 to 3 and graph the points.
+What do you notice about the pattern?
+:::
+
+---
+
+### 4.1.3 – Seeing Linear Patterns
+
+* Look for the pattern: points line up in a straight line.
+* Each x has exactly one y — that’s what makes it a predictable rule.
+* A line like this shows a **constant change** from step to step.
+
+:::{.think title="What if one x matched two y’s?"}
+That would break the rule — and later we’ll see that such a relation is *not a function*.
+:::
+
+:::{.remember title="Key Idea"}
+A **linear function** can be written as (y = mx + b) (or (f(x) = mx + b)).
+When you plot its input-output pairs, they always make a **straight line**.
+:::
+
+{{< practice >}}
+
+Coming Soon
+
+:::{.answers}
+
+:::
