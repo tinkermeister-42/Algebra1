@@ -73,6 +73,16 @@ $3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5$.
 
 ---
 
+### Axis {#glossary-axis}
+
+A straight reference line used to measure and locate points on a graph.
+In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** runs up and down. They cross at the **origin**.
+
+> **Example:**
+> On the coordinate plane, the point (4, 2) is 4 units to the right of the y-axis and 2 units above the x-axis.
+
+---
+
 ### Calculate {#glossary-calculate}
 
 To **calculate** is to find an answer by using numbers and operations (add, subtract, multiply, divide).
@@ -169,6 +179,15 @@ To convert means to **change a number from one form to another** — like from a
 > **Example:**
 >
 > $\frac{3}{4} = 0.75 = 75\%$ — all are equivalent, just written differently.
+
+---
+
+### Coordinate Plane {#glossary-coordinate-plane}
+
+A flat grid formed by the intersection of the x-axis and y-axis at the origin. It’s used to graph points, lines, and relationships between two numbers or variables.
+
+> **Example:**
+> When you graph the equation y = 2x + 1, every point on the coordinate plane that satisfies the equation makes a straight line.
 
 ---
 
@@ -798,6 +817,16 @@ Their sum is always zero.
 
 ---
 
+### Ordered Pair {#glossary-ordered-pair}
+
+A pair of numbers written in parentheses, like (x, y), that tells the exact location of a point on the coordinate plane.
+The first number is the x-coordinate (horizontal position), and the second is the y-coordinate (vertical position).
+
+> **Example:**
+> The ordered pair (–3, 5) means move 3 units left and 5 units up from the origin.
+
+---
+
 ### Order of Operations {#glossary-order_of_operations}
 
 The specific order you follow to simplify expressions:
@@ -808,6 +837,15 @@ Multiplication and division are done **left to right**, whichever comes first. S
 > **Example:**
 >
 > In $3 + 4 \times 2$, you multiply first: $3 + 8 = 11$
+
+---
+
+### Origin {#glossary-origin}
+
+The point where the x-axis and y-axis intersect, written as (0, 0). It’s the “starting point” for locating all other points on the coordinate plane.
+
+> **Example:**
+> The origin is where both coordinates are zero — right in the center of the grid.
 
 ---
 
@@ -941,6 +979,15 @@ A proportion shows **two equal ratios**. It tells you that two fractions or comp
 > **Example:**  
 >   
 > $\frac{2}{3} = \frac{4}{6}$ is a proportion.
+
+---
+
+### Quadrant {#glossary-quadrant}
+
+One of the four regions of the coordinate plane divided by the x-axis and y-axis. Quadrants are numbered **I, II, III, IV**, starting in the top-right and moving counterclockwise.
+
+> **Example:**
+> A point with positive x and positive y values lies in **Quadrant I**.
 
 ---
 

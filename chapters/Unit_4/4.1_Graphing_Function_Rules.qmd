@@ -22,19 +22,63 @@ Coming Soon
 
 {{< learn >}}
 
-### 4.1.1 – The Coordinate Plane
+### 4.1.1 – The Coordinate Plane {.unnumbered}
 
-* Review the **x-axis** (horizontal) and **y-axis** (vertical).
-* Identify the **origin (0, 0)** as the point where the two axes meet.
-* Describe how each point is written as an **ordered pair** ((x, y)).
-* Emphasize that x tells you how far to move left/right, and y tells you how far up/down.
+Up to now, we’ve worked with **number lines** — simple one-dimensional ways to show where a number belongs. But equations often have **two variables**, like $x$ and $y$. To show how they’re related, we need a way to display **two numbers at once**.
 
-:::{.think title="How do we read a point?"}
-If the point is ((–3, 2)), move **left 3** and **up 2** from the origin.
+That’s where the **coordinate plane** comes in.
+
+The coordinate plane is made by crossing two number lines:
+
+* The **x-axis** runs left and right.
+* The **y-axis** runs up and down.
+  They meet at the **origin** (0, 0).
+
+Every **point** on the plane has an **ordered pair** of numbers called its **coordinates**: $(x, y)$.
+The first number tells how far to move **left or right**, and the second tells how far to move **up or down**.
+
+![](/images/Unit_4/Lesson_1/CartesianCoordinatePlane.png){width="500px" fig-align="center" fig-cap="The coordinate plane with axes, origin, and quadrants labeled."}
+
+The axes divide the plane into **four quadrants**, labeled with Roman numerals I–IV, starting in the top-right and going counterclockwise.
+
+When you plot a point, **start at the origin**:
+
+1. Move left or right for the x-coordinate.
+2. Then move up or down for the y-coordinate.
+3. Mark the spot.
+
+---
+
+**Example:**
+
+Plot the points $(4, 2), (-6, 4), (-4, -8)$ and $(8, -4)$.
+
+![](/images/Unit_4/Lesson_1/FourPoints.png){width="500px" fig-align="center"}
+
+---
+
+:::{.you-try-m title="Match the points to their labels."}
+
+![](/images/Unit_4/Lesson_1/MatchLabels.png){width="500px" fig-align="center"}
+
+1. $(-4, 0)$
+2. $(-8, 8)$
+3. $(-2, -8)$
+4. $(0, 0)$
+5. $(0, 4)$
+6. $(6, 2)$
+7. $(7, -3)$
+8. $(4, 7)$
+
 :::
 
-:::{.you-try title="Plot (2, 3) and (–4, 1) on your graph."}
+:::{.answer title="Answer"}
+
+1 \: "G", 2 \: "B", 3 \: "C", 4 \: "E", 5 \: "H", 6 \: "A", 7 \: "D", 8 \: "F"
+
 :::
+
+In the next section, we’ll take **tables of values** that follow a rule (a function) and **plot the points** to see the pattern or shape they make.
 
 ---
 

@@ -3,3 +3,5 @@
 - Consider breaking 1.3 into two separate lessons (or shorten)
 
 - Need to incorporate solving proportions somewhere
+
+- fix issue with axis -> axi in tooltip

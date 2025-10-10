@@ -31,9 +31,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 ::: {.objectives}
 
 - [ ] I can represent and graph solutions to inequalities on a number line.
-
 - [ ] I can solve inequalities using addition, subtraction, multiplication, and division.
-
 - [ ] I can use inequalities to model and solve real-world problems.
 
 :::

@@ -61,6 +61,58 @@ def _apply_ticks(ax, axis: str, vmin: float, vmax: float, cfg: dict):
                 except ValueError:
                     pass
 
+
+# ---- Quadrant Labels ----
+# Optional quadrant labeling: "Quadrant I" or "I", etc.
+def add_quadrant_labels(
+    ax,
+    show=False,
+    short=False,
+    fontsize=24,
+    fontcolor='gray',
+    fontweight='bold',
+    xmax=None,
+    ymax=None,
+    **text_kwargs
+):
+
+    if not show:
+        return
+
+    # Default labels
+    if short:
+        labels = ["I", "II", "III", "IV"]
+    else:
+        labels = ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"]
+
+    # Compute midpoints for placement
+    xmid = 0.5 * xmax
+    ymid = 0.5 * ymax
+
+    positions = [
+        (xmid,  ymid),   # I  (top right)
+        (-xmid, ymid),   # II (top left)
+        (-xmid, -ymid),  # III (bottom left)
+        (xmid,  -ymid)   # IV (bottom right)
+    ]
+
+    for (xpos, ypos), label in zip(positions, labels):
+        ax.text(
+            xpos,
+            ypos,
+            label,
+            color=fontcolor,
+            fontsize=fontsize,
+            fontweight=fontweight,
+            fontfamily='DejaVu Serif',
+            ha='center',
+            va='center',
+            alpha=0.5,
+            zorder=0,
+            **text_kwargs
+        )
+
+
 # ---------- Main helper ----------
 def linear_function_coordinate_plane(
     x_axis: Tuple[float, float, str, dict] = (-10, 10, "x", {}),
@@ -97,12 +149,8 @@ def linear_function_coordinate_plane(
     figsize: Tuple[float, float] = (6, 6),
 
     # End-of-axis 'x'/'y' label offsets (fractions of data span)
-    x_end_label_offset: Tuple[float, float] = (0.008, -0.012),
-    y_end_label_offset: Tuple[float, float] = (-0.020, 0.010),
-
-    draw_origin_label: bool = True,
-    origin_label: str = "(0, 0)",
-    origin_label_offset: Tuple[float, float] = (0.01, 0.01),
+    x_end_label_offset: Tuple[float, float] = (0.025, 0),
+    y_end_label_offset: Tuple[float, float] = (0, 0.025),
 
     # Axis arrows & baselines
     axis_arrows: bool = False,
@@ -121,6 +169,14 @@ def linear_function_coordinate_plane(
     frame_box: bool = False,
     frame_inset: float = 0.0,        # fraction of axis span inset on each side
     frame_kwargs: Optional[dict] = None,
+
+    # Quadrant labels
+    show_quadrants: bool = False,
+    quadrant_label_style: str = "full",  # "full" or "short"
+
+    project_to_axes: bool = False,              # global toggle
+    projection_kwargs: Optional[dict] = None,   # style for the dashed guides
+
 ):
     """
     Clean, textbook-like coordinate plane generator.
@@ -157,6 +213,15 @@ def linear_function_coordinate_plane(
         axis_arrow_ends = {'x': 'pos', 'y': 'pos'}
     if frame_kwargs is None:
         frame_kwargs = {'linewidth': 1.25, 'linestyle': '-'}
+
+    if projection_kwargs is None:
+        # subtle, thin, dashed, slightly transparent, under the points
+        projection_kwargs = {
+            'linestyle': (0, (2, 4)),
+            'linewidth': 1.0,
+            'alpha': 0.5,
+            'zorder': 3,
+        }
 
     # ---- figure/axes ----
     fig, ax = plt.subplots(figsize=figsize)
@@ -197,6 +262,9 @@ def linear_function_coordinate_plane(
 
     # ---- grid ----
     ax.grid(show_grid, which='major', **grid_kwargs)
+    for line in ax.get_xgridlines() + ax.get_ygridlines():
+        line.set_clip_on(False)
+
     if x_cfg.get('minor_step') or x_cfg.get('minor_ticks') or y_cfg.get('minor_step') or y_cfg.get('minor_ticks'):
         ax.grid(True, which='minor',
                 **{**grid_kwargs,
@@ -230,14 +298,6 @@ def linear_function_coordinate_plane(
             add_arrow((0, (0 if centered_axes else ymin)), (0, ymax))
         if ym in ('neg', 'both'):
             add_arrow((0, (0 if centered_axes else ymax)), (0, ymin))
-
-    # ---- origin marker/label (only if origin in view) ----
-    if (xmin < 0 < xmax) and (ymin < 0 < ymax):
-        ax.scatter([0], [0], **{**scatter_defaults, 'zorder': 5})
-        if draw_origin_label:
-            dx0 = origin_label_offset[0] * (xmax - xmin)
-            dy0 = origin_label_offset[1] * (ymax - ymin)
-            ax.text(dx0, dy0, origin_label, fontsize=10, ha='left', va='bottom', zorder=6)
 
     # ---- end-of-axis labels (data-coord placement) ----
     if centered_axes:
@@ -332,20 +392,75 @@ def linear_function_coordinate_plane(
     # Points
     if points:
         for p in points:
+            # Allow (x, y), (x, y, label), or (x, y, label, style)
             if len(p) == 2:
-                x, y = p; label = None; pstyle = {}
+                x, y = p
+                label = None
+                pstyle = {}
             elif len(p) == 3:
-                x, y, label = p; pstyle = {}
+                x, y, label = p
+                pstyle = {}
             else:
                 x, y, label, pstyle = p
+    
+            # Plot the point
             ax.scatter([x], [y], **{**(scatter_defaults or {}), **(pstyle or {})})
-            if label:
-                ax.text(x, y, f" {label}", fontsize=10, ha='left', va='bottom')
+    
+            # Only show *custom* label text if provided
+            dx = 0.02 * (ax.get_xlim()[1] - ax.get_xlim()[0])
+            dy = 0.02 * (ax.get_ylim()[1] - ax.get_ylim()[0])
+            ax.text(
+                x - dx,
+                y + dy,
+                label,
+                fontsize=12,
+                ha='right',
+                va='bottom',
+                zorder=6,
+            )
+
+                # Optional dashed projections from the point to the axes
+            wants_proj = pstyle.pop('project', None)  # allow per-point override
+            if (project_to_axes or wants_proj) is not None:
+                do_proj = bool(project_to_axes) if wants_proj is None else bool(wants_proj)
+            else:
+                do_proj = False
+
+            if do_proj:
+                # choose a subtle color; fall back to gray if the point didn't set one
+                proj_style = projection_kwargs.copy()
+                color = pstyle.get('color', None)
+                if color is None and scatter_defaults is not None:
+                    color = scatter_defaults.get('color', None)
+                proj_style.setdefault('color', color if color is not None else '0.3')
+
+                # Only draw toward an axis if that axis actually crosses the view
+                xmin_cur, xmax_cur = ax.get_xlim()
+                ymin_cur, ymax_cur = ax.get_ylim()
+
+                # vertical drop to x-axis (y=0)
+                if ymin_cur < 0 < ymax_cur:
+                    ax.plot([x, x], [0, y], **proj_style)
+
+                # horizontal over to y-axis (x=0)
+                if xmin_cur < 0 < xmax_cur:
+                    ax.plot([0, x], [y, y], **proj_style)
+
+
 
     # Title
     if title:
-        extra_pad = 8 if (ylabel and len(ylabel) > 0) else 0
+        extra_pad = 15 if (ylabel and len(ylabel) > 0) else 0
         ax.set_title(title, fontsize=title_fontsize, pad=14 + extra_pad)
+
+    add_quadrant_labels(
+        ax,
+        show=show_quadrants,
+        short=(quadrant_label_style == "short"),
+        xmax = xmax,
+        ymax = ymax
+    )
+                     
 
     plt.tight_layout()
     if outfile:

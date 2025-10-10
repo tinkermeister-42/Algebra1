@@ -7,25 +7,66 @@ function slugify(s){
     .replace(/-+/g, "-")
     .trim();
 }
+
+// --- Irregulars (last-word only) ---
+const IRREGULAR_S2P = {
+  axis: "axes",
+  analysis: "analyses",
+  basis: "bases",
+  parenthesis: "parentheses",
+  thesis: "theses",
+  crisis: "crises",
+  diagnosis: "diagnoses",
+  hypothesis: "hypotheses",
+  synthesis: "syntheses",
+  synopsis: "synopses",
+  ellipsis: "ellipses",
+  oasis: "oases",
+};
+const IRREGULAR_P2S = Object.fromEntries(Object.entries(IRREGULAR_S2P).map(([s,p]) => [p, s]));
+
 function singularizeLastWord(s){
   const w = s.toLowerCase().trim().split(/\s+/);
   if (!w.length) return s;
   let last = w[w.length - 1];
+
+  // Irregular plural → singular first
+  if (IRREGULAR_P2S && IRREGULAR_P2S[last]) {
+    w[w.length - 1] = IRREGULAR_P2S[last];
+    return w.join(" ");
+  }
+
+  // 🚫 do NOT strip 's' if the word ends with 'is' (axis, basis, analysis, thesis, …)
+  if (/is$/.test(last)) {
+    return w.join(" ");
+  }
+
   if (last.endsWith("ies")) last = last.replace(/ies$/, "y");
-  else if (/(s|x|z|ch|sh)es$/.test(last)) last = last.replace(/es$/, "");
+  else if (/(?:[sxz]|ch|sh)es$/.test(last)) last = last.replace(/es$/, "");
   else if (last.endsWith("s") && !last.endsWith("ss")) last = last.replace(/s$/, "");
   w[w.length - 1] = last;
   return w.join(" ");
 }
+
+
 function pluralizeLastWord(s){
-  const w = s.toLowerCase().trim().split(/\s+/);
-  if (!w.length) return s;
-  let last = w[w.length - 1];
+  const parts = s.toLowerCase().trim().split(/\s+/);
+  if (!parts.length) return s;
+  let last = parts[parts.length - 1];
+
+  // Irregular singular → plural first (axis→axes, analysis→analyses, …)
+  if (IRREGULAR_S2P[last]) {
+    parts[parts.length - 1] = IRREGULAR_S2P[last];
+    return parts.join(" ");
+  }
+
+  // Regular rules
   if (/[^aeiou]y$/.test(last)) last = last.replace(/y$/, "ies");
-  else if (/(s|x|z|ch|sh)$/.test(last)) last = last + "es";
+  else if (/(?:[sxz]|ch|sh)$/.test(last)) last = last + "es";
   else if (!/s$/.test(last)) last = last + "s";
-  w[w.length - 1] = last;
-  return w.join(" ");
+
+  parts[parts.length - 1] = last;
+  return parts.join(" ");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,12 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const slugFromHref = m ? m[1] : null;
 
         const raw = link.dataset.term || link.textContent || "";
-        const candidates = [
+
+        // Build candidates: explicit id, base slug, singularized last word, pluralized last word
+        const rawSing = singularizeLastWord(raw);
+        const rawPlur = pluralizeLastWord(raw);
+
+        const candidates = Array.from(new Set([
           slugFromHref,
           slugify(raw),
-          slugify(singularizeLastWord(raw)),
-          slugify(pluralizeLastWord(raw))
-        ].filter(Boolean);
+          slugify(rawSing),
+          slugify(rawPlur),
+        ].filter(Boolean)));
 
         let def;
         for (const k of candidates) {
