@@ -57,7 +57,7 @@ Each inequality represents **many points** that make the statement true — not 
 
 * Use a **dashed line** for (<) or (>).
 * Use a **solid line** for (\le) or (\ge).
-  :::
+:::
 
 ![](/images/Unit_4/Lesson_6/inequality_boundary_line.png){width="360px" fig-align="center"}
 
@@ -74,7 +74,7 @@ Each inequality represents **many points** that make the statement true — not 
 1. Graph (y = x + 1) as a **dashed line**.
 2. Test (0, 0): (0 > 0 + 1) → (0 > 1) is **false**.
    So shade the **other side** of the line.
-   :::
+:::
 
 :::{.you-try title="Try It"}
 Graph (y \le -2x + 3).
@@ -96,7 +96,7 @@ You can spend at most $18.
 
 * The line (2x + 3y = 18) is the spending limit.
 * The shaded region below it shows **all combinations** you can afford.
-  :::
+:::
 
 :::{.think title="Why Shade Below?"}
 “Less than or equal to” means you’re staying **under** the limit — so shade **below** the line.

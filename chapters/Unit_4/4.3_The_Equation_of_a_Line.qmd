@@ -41,7 +41,7 @@ The rule is (y = 2x + 3) or (f(x) = 2x + 3).
 
 * (m = 2): you pay $2 per mile (the rate).
 * (b = 3): you start at $3 before any miles are driven.
-  :::
+:::
 
 :::{.you-try title="Find the starting value"}
 For (f(x) = 5x + 2), what does the 2 represent in context?
@@ -118,7 +118,7 @@ That means the point ((4, 11)) is on the line.
 * (m) tells the **rate of change** (slope).
 * (b) tells the **starting value** (y-intercept).
   Together, they describe how the line looks and what it means.
-  :::
+:::
 
 {{< practice >}}
 

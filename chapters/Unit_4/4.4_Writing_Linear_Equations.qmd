@@ -37,7 +37,7 @@ The rule is (y = 0.25x + 50).
 
 * (m = 0.25): rate per mile
 * (b = 50): starting fee
-  :::
+:::
 
 :::{.you-try title="From Graph to Equation"}
 Use the graph your teacher provides. Identify the slope and y-intercept, then write the equation in slope-intercept form.
@@ -130,7 +130,7 @@ The rule is (f(x) = 15x + 10).
 
 * (m = 15): rate (how much per walk)
 * (b = 10): base pay
-  :::
+:::
 
 :::{.you-try-m title="Interpret the Meaning"}
 You spend $25 to join a club and $5 each visit.

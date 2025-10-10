@@ -36,7 +36,7 @@ f(x) = 12x + 10
 
 * (m = 12): pay rate per hour
 * (b = 10): base fee
-  :::
+:::
 
 :::{.you-try title="Write a Rule"}
 You earn $8 per hour mowing lawns and start with $20 already saved.
@@ -58,7 +58,7 @@ f(x) = -3x + 90
 
 * (m = -3): the coffee cools 3°C per minute
 * (b = 90): starting temperature
-  :::
+:::
 
 :::{.you-try title="Describe the Meaning"}
 In (f(x) = -5x + 100), what does the slope tell us?
@@ -77,7 +77,7 @@ f(x) = 0.10x + 50
 
 * (m = 0.10): cost per text
 * (b = 50): base monthly charge
-  :::
+:::
 
 :::{.think title="Why Units Matter"}
 Slope and intercept should always have **units** — they tell what’s changing and what’s fixed.
@@ -125,7 +125,7 @@ Linear models show **constant rates of change** in real situations.
 * The **slope** represents the rate.
 * The **intercept** represents the starting value.
 * Using (f(x)) reminds us that outputs depend on inputs.
-  :::
+:::
 
 {{< practice >}}
 

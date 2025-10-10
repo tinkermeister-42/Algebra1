@@ -4,10 +4,10 @@ Intro Coming Soon
 
 :::{.objectives}
 
-* [ ] I can find the slope of a line from a graph or from two points.
-* [ ] I can describe slope as a rate of change between x and y.
-* [ ] I can tell whether a slope is positive, negative, zero, or undefined.
-* [ ] I can explain why vertical lines do not have a slope.
+- [ ] I can find the slope of a line from a graph or from two points.
+- [ ] I can describe slope as a rate of change between x and y.
+- [ ] I can tell whether a slope is positive, negative, zero, or undefined.
+- [ ] I can explain why vertical lines do not have a slope.
 
 :::
 
@@ -79,7 +79,7 @@ Find the rise and run between two points on your graph, then compute (m = \frac{
 * **Negative slope:** going downhill, spending money, cooling down.
 * **Zero slope:** no change — a flat road or steady balance.
 * **Undefined slope:** vertical line — you’d have to “divide by zero,” which doesn’t make sense.
-  :::
+:::
 
 :::{.you-try-m title="Sketch examples"}
 Draw one example of each type of slope on graph paper. Label each line with its slope.
@@ -99,13 +99,13 @@ That point has the same (x, y) values in both equations — it makes **both** tr
 * A **wheelchair ramp** that rises 1 foot for every 12 feet forward has a slope of ( \frac{1}{12} ).
 * A **hill** that rises 10 feet for every 20 feet forward has a slope of ( \frac{10}{20} = \frac{1}{2} ).
   Which one is steeper?
-  :::
+:::
 
 :::{.real-world title="Rates as Slopes"}
 
 * A car traveling 60 miles per hour and a cyclist traveling 15 miles per hour both form straight lines on a distance-time graph.
 * The car’s line is steeper because its **slope (rate of change)** is greater.
-  :::
+:::
 
 :::{.think title="What Slope Tells Us"}
 The larger the slope, the faster the change.
