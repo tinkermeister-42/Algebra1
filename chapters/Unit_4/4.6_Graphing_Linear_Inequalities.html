@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – DHS Algebra 1</title>
+<title>4.6 – Graphing Linear Inequalities – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" rel="next">
-<link href="../../chapters/Unit_2/Review.html" rel="prev">
+<link href="../../chapters/Unit_4/Review.html" rel="next">
+<link href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,35 +86,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html">4.6 – Graphing Linear Inequalities</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -298,16 +269,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -363,13 +334,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
@@ -408,7 +379,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">4.6 – Graphing Linear Inequalities</span></a>
   </div>
 </li>
@@ -497,17 +468,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link active" data-scroll-target="#what-youll-learn">What You’ll Learn</a></li>
-  <li><a href="#topics-in-this-unit" id="toc-topics-in-this-unit" class="nav-link" data-scroll-target="#topics-in-this-unit">Topics in This Unit</a></li>
+  <li><a href="#review-of-inequalities" id="toc-review-of-inequalities" class="nav-link active" data-scroll-target="#review-of-inequalities">4.6.1 – Review of Inequalities</a></li>
+  <li><a href="#linear-inequalities-in-two-variables" id="toc-linear-inequalities-in-two-variables" class="nav-link" data-scroll-target="#linear-inequalities-in-two-variables">4.6.2 – Linear Inequalities in Two Variables</a></li>
+  <li><a href="#shading-the-solution-region" id="toc-shading-the-solution-region" class="nav-link" data-scroll-target="#shading-the-solution-region">4.6.3 – Shading the Solution Region</a></li>
+  <li><a href="#interpreting-the-shaded-region" id="toc-interpreting-the-shaded-region" class="nav-link" data-scroll-target="#interpreting-the-shaded-region">4.6.4 – Interpreting the Shaded Region</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html">4.6 – Graphing Linear Inequalities</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">4.6 – Graphing Linear Inequalities</h1>
 </div>
 
 
@@ -524,30 +497,106 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to <strong>Unit 3!</strong> Here we move from working <em>with expressions</em> to solving <strong>equations</strong> and <strong>inequalities</strong>. Instead of just simplifying or evaluating, you’ll learn how to <strong>find the value of a variable</strong> that makes an equation true. You’ll also see what happens when there’s <em>no</em> solution, or when <em>every</em> value works.</p>
-<hr>
-<section id="what-youll-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
-<p>By the end of this unit, you’ll be able to:</p>
-<ul>
-<li><strong>Solve one-step and two-step equations</strong> by using inverse operations and check your work by substitution.</li>
-<li><strong>Simplify and solve multi-step equations</strong>, including those with parentheses or like terms.</li>
-<li><strong>Handle equations with variables on both sides</strong> and decide whether they have <strong>one</strong>, <strong>none</strong>, or <strong>infinitely many</strong> solutions.</li>
-<li><strong>Model real-world problems</strong> with equations and inequalities, and <strong>graph</strong> the range of possible answers.</li>
-<li><strong>Rearrange literal equations</strong> (formulas) to isolate any variable, just like rearranging <span class="math inline">\(V = IR\)</span> in physics or <span class="math inline">\(A = lw\)</span> in geometry.</li>
+<p><strong>Coming Soon</strong></p>
+<div class="objectives">
+<ul class="task-list">
+<li><label><input type="checkbox">I can graph linear inequalities in two variables.</label></li>
+<li><label><input type="checkbox">I can decide whether to use a solid or dashed boundary line.</label></li>
+<li><label><input type="checkbox">I can test points to determine which region to shade.</label></li>
+<li><label><input type="checkbox">I can explain what the shaded region means in a real-world context.</label></li>
 </ul>
+</div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-original-term="inequality">inequality</a>, <a href="../../glossary.html#glossary-greater-than" class="glossary-link" data-term="greater than" data-original-term="greater than">greater than</a>, <a href="../../glossary.html#glossary-less-than" class="glossary-link" data-term="less than" data-original-term="less than">less than</a>, <a href="../../glossary.html#glossary-dashed-line" class="glossary-link" data-term="dashed line" data-original-term="dashed line">dashed line</a>, <a href="../../glossary.html#glossary-solid-line" class="glossary-link" data-term="solid line" data-original-term="solid line">solid line</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-term="solution set" data-original-term="solution set">solution set</a></p>
+</div>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>Coming Soon</p>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="review-of-inequalities" class="level3">
+<h3 class="anchored" data-anchor-id="review-of-inequalities">4.6.1 – Review of Inequalities</h3>
+<ul>
+<li><p>Inequalities compare two quantities. Examples:</p>
+<ul>
+<li>(x &gt; 3) means “x is greater than 3.”</li>
+<li>(y ) means “y is less than or equal to 5.”</li>
+</ul></li>
+<li><p>On a number line:</p>
+<ul>
+<li>Open circle → (&gt;) or (&lt;)</li>
+<li>Closed circle → () or ()</li>
+</ul></li>
+</ul>
+<div class="you-try" title="Review One-Variable Graphs">
+<p>Graph (x &lt; -2) and (x ) on a number line. Which parts are shaded?</p>
+</div>
 <hr>
 </section>
-<section id="topics-in-this-unit" class="level2">
-<h2 class="anchored" data-anchor-id="topics-in-this-unit">Topics in This Unit</h2>
-<p><a href="3.1_Solving_One_Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.</p>
-<p><a href="3.2_Solving_Two_Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Add or subtract first, then multiply or divide. Practice solving short, real-world problems.</p>
-<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.</p>
-<p><a href="3.4_Equations_with_Variables_on_Both_Sides.html"><strong>Equations with Variables on Both Sides</strong></a> Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.</p>
-<p><a href="3.5_Equations_with_No_or_Infinite_Solutions.html"><strong>Equations with No or Infinite Solutions</strong></a> Recognize when both sides match perfectly—or never will—and explain what that means.</p>
-<p><a href="3.6_Solving_Inequalities.html"><strong>Solving Inequalities</strong></a> Represent ranges of solutions on a number line and remember to <strong>flip the sign</strong> when multiplying or dividing by a negative.</p>
-<p><a href="3.7_Solving_Literal_Equations.html"><strong>Solving Literal Equations</strong></a> Work with formulas like <span class="math inline">\(A = lw\)</span> or <span class="math inline">\(C = 2\pi r\)</span>. Rearrange them to solve for any variable you need.</p>
+<section id="linear-inequalities-in-two-variables" class="level3">
+<h3 class="anchored" data-anchor-id="linear-inequalities-in-two-variables">4.6.2 – Linear Inequalities in Two Variables</h3>
+<p>A <strong>linear inequality</strong> looks like a linear equation, but it uses an inequality symbol instead of an equals sign.</p>
+<p>Examples: [ y &gt; 2x + 1 y -x + 4]</p>
+<p>Each inequality represents <strong>many points</strong> that make the statement true — not just one line.</p>
+<div class="remember" title="Boundary Line Rules">
+<ul>
+<li>Use a <strong>dashed line</strong> for (&lt;) or (&gt;).</li>
+<li>Use a <strong>solid line</strong> for () or ().</li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/inequality_boundary_line.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+</figure>
+</div>
 <hr>
+</section>
+<section id="shading-the-solution-region" class="level3">
+<h3 class="anchored" data-anchor-id="shading-the-solution-region">4.6.3 – Shading the Solution Region</h3>
+<ol type="1">
+<li>Graph the boundary line for the related equation ((y = mx + b)).</li>
+<li>Choose a <strong>test point</strong> (often (0, 0)) and plug it into the inequality.</li>
+<li>If it makes the statement true, shade that side of the line.</li>
+</ol>
+<div class="example" title="Example – (y > x + 1)">
+<ol type="1">
+<li>Graph (y = x + 1) as a <strong>dashed line</strong>.</li>
+<li>Test (0, 0): (0 &gt; 0 + 1) → (0 &gt; 1) is <strong>false</strong>. So shade the <strong>other side</strong> of the line.</li>
+</ol>
+</div>
+<div class="you-try" title="Try It">
+<p>Graph (y -2x + 3). Use (0, 0) to decide where to shade.</p>
+</div>
+<hr>
+</section>
+<section id="interpreting-the-shaded-region" class="level3">
+<h3 class="anchored">4.6.4 – Interpreting the Shaded Region</h3>
+<p>The shaded area shows <strong>all the possible solutions</strong> that make the inequality true.</p>
+<div class="real-world" title="Example – Budget Constraint">
+<p>You’re buying pens for $2 each and notebooks for $3 each. You can spend at most $18. [ 2x + 3y ]</p>
+<ul>
+<li>The line (2x + 3y = 18) is the spending limit.</li>
+<li>The shaded region below it shows <strong>all combinations</strong> you can afford.</li>
+</ul>
+</div>
+<div class="think" title="Why Shade Below?">
+<p>“Less than or equal to” means you’re staying <strong>under</strong> the limit — so shade <strong>below</strong> the line.</p>
+</div>
+<div class="you-try-m" title="Try Your Own">
+<p>Write and graph an inequality to model this: “You can drive up to 300 miles on 15 gallons of gas.”</p>
+</div>
+<div class="connect" title="Where Both Conditions Are True">
+<p>If you graph two inequalities at once, the <strong>overlapping shaded region</strong><br>
+shows where <strong>both</strong> are true — just like the point of intersection for two lines.<br>
+Those shared values are the <strong>solutions</strong> to the system.</p>
+</div>
+<hr>
+<div class="remember" title="Key Idea">
+<p>Linear inequalities show <strong>ranges of solutions</strong> rather than exact ones. The boundary line shows where values are equal, and the shading shows where the inequality is true.</p>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="interpreting-the-shaded-region">✍️ Practice On Your Own</h2>
+<p>Coming Soon</p>
+<div class="answers">
+<p>Coming Soon</p>
+</div>
 
 
 </section>
@@ -958,13 +1007,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_2/Review.html" class="pagination-link" aria-label="Review">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Review</span>
+      <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="pagination-link" aria-label="4.5 – Linear Models in the Real World">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.5 – Linear Models in the Real World</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="pagination-link" aria-label="3.1 – Solving One-Step Equations">
-        <span class="nav-page-text">3.1 – Solving One-Step Equations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_4/Review.html" class="pagination-link" aria-label="Review">
+        <span class="nav-page-text">Review</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

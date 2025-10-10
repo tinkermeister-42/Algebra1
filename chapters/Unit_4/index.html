@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" rel="next">
-<link href="../../chapters/Unit_2/Review.html" rel="prev">
+<link href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" rel="next">
+<link href="../../chapters/Unit_3/Review.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,35 +86,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Introduction</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -298,16 +269,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -363,16 +334,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -505,7 +476,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Introduction</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Introduction</h1>
 </div>
@@ -524,30 +495,29 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to <strong>Unit 3!</strong> Here we move from working <em>with expressions</em> to solving <strong>equations</strong> and <strong>inequalities</strong>. Instead of just simplifying or evaluating, you’ll learn how to <strong>find the value of a variable</strong> that makes an equation true. You’ll also see what happens when there’s <em>no</em> solution, or when <em>every</em> value works.</p>
+<p>Welcome to <strong>Unit 4!</strong> Here we take what you’ve learned about equations and bring them to life on the <strong>coordinate plane</strong>. You’ll learn how equations like (y = mx + b) represent straight lines, what slope and intercept mean, and how these simple rules can <strong>model real situations</strong>—from earnings to motion to limits on spending.</p>
+<p>You’ll also extend this idea to <strong>inequalities</strong>, showing not just one solution but entire <strong>regions</strong> of possibilities.</p>
 <hr>
 <section id="what-youll-learn" class="level2">
 <h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
 <p>By the end of this unit, you’ll be able to:</p>
 <ul>
-<li><strong>Solve one-step and two-step equations</strong> by using inverse operations and check your work by substitution.</li>
-<li><strong>Simplify and solve multi-step equations</strong>, including those with parentheses or like terms.</li>
-<li><strong>Handle equations with variables on both sides</strong> and decide whether they have <strong>one</strong>, <strong>none</strong>, or <strong>infinitely many</strong> solutions.</li>
-<li><strong>Model real-world problems</strong> with equations and inequalities, and <strong>graph</strong> the range of possible answers.</li>
-<li><strong>Rearrange literal equations</strong> (formulas) to isolate any variable, just like rearranging <span class="math inline">\(V = IR\)</span> in physics or <span class="math inline">\(A = lw\)</span> in geometry.</li>
+<li><strong>Graph and interpret linear functions</strong> using equations like (y = mx + b) or (f(x) = mx + b).</li>
+<li><strong>Find and describe slope and intercepts</strong>, and explain what they mean in context.</li>
+<li><strong>Write equations of lines</strong> from graphs, tables, points, or real-world descriptions.</li>
+<li><strong>Use linear equations to model real situations</strong>, predict values, and estimate best-fit lines.</li>
+<li><strong>Graph linear inequalities</strong> to show ranges of possible solutions.</li>
 </ul>
 <hr>
 </section>
 <section id="topics-in-this-unit" class="level2">
 <h2 class="anchored" data-anchor-id="topics-in-this-unit">Topics in This Unit</h2>
-<p><a href="3.1_Solving_One_Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.</p>
-<p><a href="3.2_Solving_Two_Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Add or subtract first, then multiply or divide. Practice solving short, real-world problems.</p>
-<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.</p>
-<p><a href="3.4_Equations_with_Variables_on_Both_Sides.html"><strong>Equations with Variables on Both Sides</strong></a> Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.</p>
-<p><a href="3.5_Equations_with_No_or_Infinite_Solutions.html"><strong>Equations with No or Infinite Solutions</strong></a> Recognize when both sides match perfectly—or never will—and explain what that means.</p>
-<p><a href="3.6_Solving_Inequalities.html"><strong>Solving Inequalities</strong></a> Represent ranges of solutions on a number line and remember to <strong>flip the sign</strong> when multiplying or dividing by a negative.</p>
-<p><a href="3.7_Solving_Literal_Equations.html"><strong>Solving Literal Equations</strong></a> Work with formulas like <span class="math inline">\(A = lw\)</span> or <span class="math inline">\(C = 2\pi r\)</span>. Rearrange them to solve for any variable you need.</p>
-<hr>
+<p><a href="4.1_Graphing_Function_Rules.html"><strong>Graphing Function Rules</strong></a> Use equations like (y = 2x + 1) as rules to generate points. Plot those points to see how linear functions make straight-line graphs.</p>
+<p><a href="4.2_Understanding_Slope.html"><strong>Understanding Slope</strong></a> Explore slope as <em>rate of change</em>. Find slope from graphs or points, compare positive, negative, zero, and undefined slopes, and connect to real-world rates.</p>
+<p><a href="4.3_The_Equation_of_a_Line.html"><strong>The Equation of a Line ((y = mx + b))</strong></a> Discover how slope ((m)) and intercept ((b)) shape a line. Graph quickly from slope and intercept, and see how changing them moves the line.</p>
+<p><a href="4.4_Writing_Linear_Equations.html"><strong>Writing Linear Equations</strong></a> Write equations from graphs, data, or descriptions. Use slope-intercept and point-slope form, and explain what (m) and (b) mean in context.</p>
+<p><a href="4.5_Linear_Models_in_the_Real_World.html"><strong>Linear Models in the Real World</strong></a> Model real situations like costs, temperature changes, or speed. Interpret slope and intercept in units, and sketch best-fit lines to describe data trends.</p>
+<p><a href="4.6_Graphing_Linear_Inequalities.html"><strong>Graphing Linear Inequalities</strong></a> Extend linear models to show ranges of solutions. Graph inequalities, shade solution regions, and interpret what the shaded area means in real-world terms.</p>
 
 
 </section>
@@ -958,13 +928,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_2/Review.html" class="pagination-link" aria-label="Review">
+      <a href="../../chapters/Unit_3/Review.html" class="pagination-link" aria-label="Review">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Review</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="pagination-link" aria-label="3.1 – Solving One-Step Equations">
-        <span class="nav-page-text">3.1 – Solving One-Step Equations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="pagination-link" aria-label="4.1 – Graphing Function Rules">
+        <span class="nav-page-text">4.1 – Graphing Function Rules</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – DHS Algebra 1</title>
+<title>4.3 – The Equation of a Line – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" rel="next">
-<link href="../../chapters/Unit_2/Review.html" rel="prev">
+<link href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" rel="next">
+<link href="../../chapters/Unit_4/4.2_Understanding_Slope.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,35 +86,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html">4.3 – The Equation of a Line</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -298,16 +269,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -363,13 +334,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
@@ -390,7 +361,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">4.3 – The Equation of a Line</span></a>
   </div>
 </li>
@@ -497,17 +468,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link active" data-scroll-target="#what-youll-learn">What You’ll Learn</a></li>
-  <li><a href="#topics-in-this-unit" id="toc-topics-in-this-unit" class="nav-link" data-scroll-target="#topics-in-this-unit">Topics in This Unit</a></li>
+  <li><a href="#introducing-y-mx-b" id="toc-introducing-y-mx-b" class="nav-link active" data-scroll-target="#introducing-y-mx-b">4.3.1 – Introducing (y = mx + b)</a></li>
+  <li><a href="#graphing-using-slope-and-intercept" id="toc-graphing-using-slope-and-intercept" class="nav-link" data-scroll-target="#graphing-using-slope-and-intercept">4.3.2 – Graphing Using Slope and Intercept</a></li>
+  <li><a href="#changing-m-and-b" id="toc-changing-m-and-b" class="nav-link" data-scroll-target="#changing-m-and-b">4.3.3 – Changing (m) and (b)</a></li>
+  <li><a href="#y-and-fx-two-ways-to-write-the-same-rule" id="toc-y-and-fx-two-ways-to-write-the-same-rule" class="nav-link" data-scroll-target="#y-and-fx-two-ways-to-write-the-same-rule">4.3.4 – (y) and (f(x)): Two Ways to Write the Same Rule</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html">4.3 – The Equation of a Line</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">4.3 – The Equation of a Line</h1>
 </div>
 
 
@@ -524,30 +497,128 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to <strong>Unit 3!</strong> Here we move from working <em>with expressions</em> to solving <strong>equations</strong> and <strong>inequalities</strong>. Instead of just simplifying or evaluating, you’ll learn how to <strong>find the value of a variable</strong> that makes an equation true. You’ll also see what happens when there’s <em>no</em> solution, or when <em>every</em> value works.</p>
-<hr>
-<section id="what-youll-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
-<p>By the end of this unit, you’ll be able to:</p>
-<ul>
-<li><strong>Solve one-step and two-step equations</strong> by using inverse operations and check your work by substitution.</li>
-<li><strong>Simplify and solve multi-step equations</strong>, including those with parentheses or like terms.</li>
-<li><strong>Handle equations with variables on both sides</strong> and decide whether they have <strong>one</strong>, <strong>none</strong>, or <strong>infinitely many</strong> solutions.</li>
-<li><strong>Model real-world problems</strong> with equations and inequalities, and <strong>graph</strong> the range of possible answers.</li>
-<li><strong>Rearrange literal equations</strong> (formulas) to isolate any variable, just like rearranging <span class="math inline">\(V = IR\)</span> in physics or <span class="math inline">\(A = lw\)</span> in geometry.</li>
+<p>Coming Soon</p>
+<div class="objectives">
+<ul class="task-list">
+<li><label><input type="checkbox">I can identify the slope ((m)) and y-intercept ((b)) in an equation of a line.</label></li>
+<li><label><input type="checkbox">I can graph a line using its slope and y-intercept.</label></li>
+<li><label><input type="checkbox">I can describe how changing (m) or (b) changes the graph of a line.</label></li>
+<li><label><input type="checkbox">I can explain that (y = mx + b) and (f(x) = mx + b) represent the same rule.</label></li>
 </ul>
+</div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-original-term="slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-original-term="y-intercept">y-intercept</a>, <a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-term="linear equation" data-original-term="linear equation">linear equation</a>, <a href="../../glossary.html#glossary-slope-intercept-form" class="glossary-link" data-term="slope-intercept form" data-original-term="slope-intercept form">slope-intercept form</a>, <a href="../../glossary.html#glossary-function-notation" class="glossary-link" data-term="function notation" data-original-term="function notation">function notation</a></p>
+</div>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>Coming Soon</p>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="introducing-y-mx-b" class="level3">
+<h3 class="anchored" data-anchor-id="introducing-y-mx-b">4.3.1 – Introducing (y = mx + b)</h3>
+<ul>
+<li>Every non-vertical line can be written as (y = mx + b) or (f(x) = mx + b).</li>
+<li>These two equations mean the <strong>same thing</strong> — (f(x)) just reminds us that y depends on x.</li>
+<li><ol start="13" type="a">
+<li>is the <strong>slope</strong> (how fast y changes).</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>is the <strong>y-intercept</strong> (the starting value when (x = 0)).</li>
+</ol></li>
+</ul>
+<div class="think" title="Why is (b) special?">
+<p>When (x = 0), (y = b). That’s the point ((0, b)) — where the line crosses the y-axis.</p>
+</div>
+<div class="real-world" title="Example – A Taxi Ride">
+<p>A taxi charges $3 to start plus $2 per mile. The rule is (y = 2x + 3) or (f(x) = 2x + 3).</p>
+<ul>
+<li>(m = 2): you pay $2 per mile (the rate).</li>
+<li>(b = 3): you start at $3 before any miles are driven.</li>
+</ul>
+</div>
+<div class="you-try" title="Find the starting value">
+<p>For (f(x) = 5x + 2), what does the 2 represent in context?</p>
+</div>
 <hr>
 </section>
-<section id="topics-in-this-unit" class="level2">
-<h2 class="anchored" data-anchor-id="topics-in-this-unit">Topics in This Unit</h2>
-<p><a href="3.1_Solving_One_Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.</p>
-<p><a href="3.2_Solving_Two_Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Add or subtract first, then multiply or divide. Practice solving short, real-world problems.</p>
-<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.</p>
-<p><a href="3.4_Equations_with_Variables_on_Both_Sides.html"><strong>Equations with Variables on Both Sides</strong></a> Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.</p>
-<p><a href="3.5_Equations_with_No_or_Infinite_Solutions.html"><strong>Equations with No or Infinite Solutions</strong></a> Recognize when both sides match perfectly—or never will—and explain what that means.</p>
-<p><a href="3.6_Solving_Inequalities.html"><strong>Solving Inequalities</strong></a> Represent ranges of solutions on a number line and remember to <strong>flip the sign</strong> when multiplying or dividing by a negative.</p>
-<p><a href="3.7_Solving_Literal_Equations.html"><strong>Solving Literal Equations</strong></a> Work with formulas like <span class="math inline">\(A = lw\)</span> or <span class="math inline">\(C = 2\pi r\)</span>. Rearrange them to solve for any variable you need.</p>
+<section id="graphing-using-slope-and-intercept" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-using-slope-and-intercept">4.3.2 – Graphing Using Slope and Intercept</h3>
+<ol type="1">
+<li>Plot the y-intercept ((0, b)).</li>
+<li>Use the slope (m = ) to find another point.</li>
+<li>Draw a line through the points.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/graph_from_slope_intercept.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
+</div>
+<div class="think" title="Direction Matters">
+<p>A positive slope goes <strong>up to the right</strong>; a negative slope goes <strong>down to the right</strong>.</p>
+</div>
+<div class="you-try" title="Graph (f(x) = –2x + 4)">
+<p>Start at (0, 4), then go down 2 and right 1 to find the next point. Connect the dots.</p>
+</div>
 <hr>
+</section>
+<section id="changing-m-and-b" class="level3">
+<h3 class="anchored" data-anchor-id="changing-m-and-b">4.3.3 – Changing (m) and (b)</h3>
+<ul>
+<li><p>Changing <strong>(m)</strong> changes the <strong>steepness</strong> or direction.</p>
+<ul>
+<li>Larger (m) → steeper line.</li>
+<li>Negative (m) → line falls left to right.</li>
+</ul></li>
+<li><p>Changing <strong>(b)</strong> moves the line <strong>up or down</strong> but keeps the same tilt.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/change_m_b_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+</figure>
+</div>
+<div class="real-world" title="Comparing Cell Plans">
+<p>Two cell phone plans:</p>
+<ul>
+<li><strong>Plan A:</strong> (y = 30x + 10)</li>
+<li><strong>Plan B:</strong> (f(x) = 20x + 25)</li>
+</ul>
+<p>Which is cheaper for small x? Which is cheaper for large x?</p>
+</div>
+<div class="real-world" title="Where Two Rules Are Equal">
+<p>Two plans are given by<br>
+(f(x) = 30x + 10) and (g(x) = 20x + 25).</p>
+<p>Graph both on the same axes.<br>
+The point where the lines <strong>intersect</strong> shows when both plans cost the same —<br>
+one (x, y) pair that works for <strong>both</strong> equations.</p>
+</div>
+<div class="you-try-m" title="Predict the change">
+<p>If we increase (b), what happens to the graph? If we make (m) negative, what happens?</p>
+</div>
+<hr>
+</section>
+<section id="y-and-fx-two-ways-to-write-the-same-rule" class="level3">
+<h3 class="anchored">4.3.4 – (y) and (f(x)): Two Ways to Write the Same Rule</h3>
+<ul>
+<li>(f(x)) is just another way to write (y).</li>
+<li>Mathematicians use (f(x)) to show that y <strong>depends on</strong> x — it’s the same rule written differently.</li>
+</ul>
+<div class="think" title="Evaluating (f(x))">
+<p>If (f(x) = 2x + 3), then (f(4) = 2(4) + 3 = 11). That means the point ((4, 11)) is on the line.</p>
+</div>
+<div class="remember" title="Key Idea">
+<p>(y = mx + b) and (f(x) = mx + b) describe the <strong>same linear function</strong>.</p>
+<ul>
+<li><ol start="13" type="a">
+<li>tells the <strong>rate of change</strong> (slope).</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>tells the <strong>starting value</strong> (y-intercept). Together, they describe how the line looks and what it means.</li>
+</ol></li>
+</ul>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="y-and-fx-two-ways-to-write-the-same-rule">✍️ Practice On Your Own</h2>
+<p>Coming Soon</p>
+<div class="answers">
+<p>Coming Soon</p>
+</div>
 
 
 </section>
@@ -958,13 +1029,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_2/Review.html" class="pagination-link" aria-label="Review">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Review</span>
+      <a href="../../chapters/Unit_4/4.2_Understanding_Slope.html" class="pagination-link" aria-label="4.2 – Understanding Slope">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.2 – Understanding Slope</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="pagination-link" aria-label="3.1 – Solving One-Step Equations">
-        <span class="nav-page-text">3.1 – Solving One-Step Equations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="pagination-link" aria-label="4.4 – Writing Linear Equations">
+        <span class="nav-page-text">4.4 – Writing Linear Equations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

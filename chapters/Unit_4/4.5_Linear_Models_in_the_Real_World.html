@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – DHS Algebra 1</title>
+<title>4.5 – Linear Models in the Real World – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" rel="next">
-<link href="../../chapters/Unit_2/Review.html" rel="prev">
+<link href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" rel="next">
+<link href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,35 +86,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html">4.5 – Linear Models in the Real World</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -298,16 +269,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -363,13 +334,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
@@ -402,7 +373,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">4.5 – Linear Models in the Real World</span></a>
   </div>
 </li>
@@ -497,17 +468,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link active" data-scroll-target="#what-youll-learn">What You’ll Learn</a></li>
-  <li><a href="#topics-in-this-unit" id="toc-topics-in-this-unit" class="nav-link" data-scroll-target="#topics-in-this-unit">Topics in This Unit</a></li>
+  <li><a href="#turning-situations-into-equations" id="toc-turning-situations-into-equations" class="nav-link active" data-scroll-target="#turning-situations-into-equations">4.5.1 – Turning Situations Into Equations</a></li>
+  <li><a href="#negative-slopes-decreasing-situations" id="toc-negative-slopes-decreasing-situations" class="nav-link" data-scroll-target="#negative-slopes-decreasing-situations">4.5.2 – Negative Slopes: Decreasing Situations</a></li>
+  <li><a href="#interpreting-slope-and-intercept" id="toc-interpreting-slope-and-intercept" class="nav-link" data-scroll-target="#interpreting-slope-and-intercept">4.5.3 – Interpreting Slope and Intercept</a></li>
+  <li><a href="#estimating-best-fit-lines" id="toc-estimating-best-fit-lines" class="nav-link" data-scroll-target="#estimating-best-fit-lines">4.5.4 – Estimating Best-Fit Lines</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html">4.5 – Linear Models in the Real World</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">4.5 – Linear Models in the Real World</h1>
 </div>
 
 
@@ -524,30 +497,106 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to <strong>Unit 3!</strong> Here we move from working <em>with expressions</em> to solving <strong>equations</strong> and <strong>inequalities</strong>. Instead of just simplifying or evaluating, you’ll learn how to <strong>find the value of a variable</strong> that makes an equation true. You’ll also see what happens when there’s <em>no</em> solution, or when <em>every</em> value works.</p>
-<hr>
-<section id="what-youll-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
-<p>By the end of this unit, you’ll be able to:</p>
-<ul>
-<li><strong>Solve one-step and two-step equations</strong> by using inverse operations and check your work by substitution.</li>
-<li><strong>Simplify and solve multi-step equations</strong>, including those with parentheses or like terms.</li>
-<li><strong>Handle equations with variables on both sides</strong> and decide whether they have <strong>one</strong>, <strong>none</strong>, or <strong>infinitely many</strong> solutions.</li>
-<li><strong>Model real-world problems</strong> with equations and inequalities, and <strong>graph</strong> the range of possible answers.</li>
-<li><strong>Rearrange literal equations</strong> (formulas) to isolate any variable, just like rearranging <span class="math inline">\(V = IR\)</span> in physics or <span class="math inline">\(A = lw\)</span> in geometry.</li>
+<p>Coming Soon</p>
+<div class="objectives">
+<ul class="task-list">
+<li><label><input type="checkbox">I can represent real-world situations using linear equations or functions.</label></li>
+<li><label><input type="checkbox">I can identify and interpret the slope and intercept in context.</label></li>
+<li><label><input type="checkbox">I can sketch or estimate a best-fit line from data.</label></li>
+<li><label><input type="checkbox">I can use function notation to describe a model, such as (f(x) = 0.5x + 10).</label></li>
 </ul>
+</div>
+<div class="vocab">
+<p><a href="../../glossary.html#glossary-linear-model" class="glossary-link" data-original-term="linear model" data-term="linear model">linear model</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-original-term="slope" data-term="slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-original-term="y-intercept" data-term="y-intercept">y-intercept</a>, <a href="../../glossary.html#glossary-rate-of-change" class="glossary-link" data-original-term="rate of change" data-term="rate of change">rate of change</a>, <a href="../../glossary.html#glossary-best-fit-line" class="glossary-link" data-original-term="best-fit line" data-term="best-fit line">best-fit line</a>, <a href="../../glossary.html#glossary-function-notation" class="glossary-link" data-original-term="function notation" data-term="function notation">function notation</a></p>
+</div>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>Coming Soon</p>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="turning-situations-into-equations" class="level3">
+<h3 class="anchored" data-anchor-id="turning-situations-into-equations">4.5.1 – Turning Situations Into Equations</h3>
+<p>Linear models describe real situations where one quantity changes at a constant rate. The slope is the <strong>rate</strong>, and the intercept is the <strong>starting value</strong>.</p>
+<div class="example" title="Example – Babysitting Pay">
+<p>A babysitter earns $12 per hour plus $10 for transportation. [ f(x) = 12x + 10]</p>
+<ul>
+<li>(m = 12): pay rate per hour</li>
+<li>(b = 10): base fee</li>
+</ul>
+</div>
+<div class="you-try" title="Write a Rule">
+<p>You earn $8 per hour mowing lawns and start with $20 already saved. Write an equation for your total savings after x hours.</p>
+</div>
 <hr>
 </section>
-<section id="topics-in-this-unit" class="level2">
-<h2 class="anchored" data-anchor-id="topics-in-this-unit">Topics in This Unit</h2>
-<p><a href="3.1_Solving_One_Step_Equations.html"><strong>Solving One-Step Equations</strong></a> Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.</p>
-<p><a href="3.2_Solving_Two_Step_Equations.html"><strong>Solving Two-Step Equations</strong></a> Add or subtract first, then multiply or divide. Practice solving short, real-world problems.</p>
-<p><a href="3.3_Multi_Step_Equations_with_Distribution.html"><strong>Multi-Step Equations with Distribution</strong></a> Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.</p>
-<p><a href="3.4_Equations_with_Variables_on_Both_Sides.html"><strong>Equations with Variables on Both Sides</strong></a> Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.</p>
-<p><a href="3.5_Equations_with_No_or_Infinite_Solutions.html"><strong>Equations with No or Infinite Solutions</strong></a> Recognize when both sides match perfectly—or never will—and explain what that means.</p>
-<p><a href="3.6_Solving_Inequalities.html"><strong>Solving Inequalities</strong></a> Represent ranges of solutions on a number line and remember to <strong>flip the sign</strong> when multiplying or dividing by a negative.</p>
-<p><a href="3.7_Solving_Literal_Equations.html"><strong>Solving Literal Equations</strong></a> Work with formulas like <span class="math inline">\(A = lw\)</span> or <span class="math inline">\(C = 2\pi r\)</span>. Rearrange them to solve for any variable you need.</p>
+<section id="negative-slopes-decreasing-situations" class="level3">
+<h3 class="anchored" data-anchor-id="negative-slopes-decreasing-situations">4.5.2 – Negative Slopes: Decreasing Situations</h3>
+<p>Not all relationships increase. Some, like cooling or spending, have <strong>negative slopes</strong>.</p>
+<div class="real-world" title="Example – Cooling Water">
+<p>A cup of coffee cools from 90°C to 60°C over 10 minutes. [ f(x) = -3x + 90]</p>
+<ul>
+<li>(m = -3): the coffee cools 3°C per minute</li>
+<li>(b = 90): starting temperature</li>
+</ul>
+</div>
+<div class="you-try" title="Describe the Meaning">
+<p>In (f(x) = -5x + 100), what does the slope tell us? What does the intercept mean?</p>
+</div>
 <hr>
+</section>
+<section id="interpreting-slope-and-intercept" class="level3">
+<h3 class="anchored" data-anchor-id="interpreting-slope-and-intercept">4.5.3 – Interpreting Slope and Intercept</h3>
+<div class="real-world" title="Example – Cell Phone Bill">
+<p>A phone plan costs $50 per month plus $0.10 per text. [ f(x) = 0.10x + 50]</p>
+<ul>
+<li>(m = 0.10): cost per text</li>
+<li>(b = 50): base monthly charge</li>
+</ul>
+</div>
+<div class="think" title="Why Units Matter">
+<p>Slope and intercept should always have <strong>units</strong> — they tell what’s changing and what’s fixed.</p>
+</div>
+<div class="you-try" title="Explain the Meaning">
+<p>The equation (f(x) = 4x + 15) models parking costs, where x is hours. What do 4 and 15 represent?</p>
+</div>
+<hr>
+</section>
+<section id="estimating-best-fit-lines" class="level3">
+<h3 class="anchored">4.5.4 – Estimating Best-Fit Lines</h3>
+<p>Sometimes real data isn’t perfectly linear — but we can find a <strong>line that fits “about right.”</strong></p>
+<ol type="1">
+<li>Plot data points on a scatter plot.</li>
+<li>Sketch a line that seems to match the trend.</li>
+<li>Write a rule that fits the pattern roughly.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/scatter_best_fit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+</figure>
+</div>
+<div class="real-world" title="Example – Height vs. Age">
+<p>Students measure their height each year. The points don’t make a perfect line, but a line through the middle of the points shows the average growth rate.</p>
+</div>
+<div class="you-try-m" title="Draw a Best-Fit Line">
+<p>Your teacher will provide data for shoe size vs.&nbsp;age. Plot the points and sketch a best-fit line. Estimate the slope and intercept and write an equation.</p>
+</div>
+<div class="think" title="When Two Models Cross">
+<p>Sometimes two linear trends meet — for example, when expenses catch up to income,<br>
+or when two cars traveling at different speeds reach the same distance.<br>
+That crossover point means the two equations give the same output.</p>
+</div>
+<hr>
+<div class="remember" title="Key Idea">
+<p>Linear models show <strong>constant rates of change</strong> in real situations.</p>
+<ul>
+<li>The <strong>slope</strong> represents the rate.</li>
+<li>The <strong>intercept</strong> represents the starting value.</li>
+<li>Using (f(x)) reminds us that outputs depend on inputs.</li>
+</ul>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="estimating-best-fit-lines">✍️ Practice On Your Own</h2>
+<p>Coming Soon</p>
+<div class="answers">
+<p>Coming Soon</p>
+</div>
 
 
 </section>
@@ -958,13 +1007,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_2/Review.html" class="pagination-link" aria-label="Review">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Review</span>
+      <a href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="pagination-link" aria-label="4.4 – Writing Linear Equations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.4 – Writing Linear Equations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="pagination-link" aria-label="3.1 – Solving One-Step Equations">
-        <span class="nav-page-text">3.1 – Solving One-Step Equations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="pagination-link" aria-label="4.6 – Graphing Linear Inequalities">
+        <span class="nav-page-text">4.6 – Graphing Linear Inequalities</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
