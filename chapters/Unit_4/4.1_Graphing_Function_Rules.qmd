@@ -1,7 +1,5 @@
 # 4.1 – Graphing Function Rules {.unnumbered}
 
-Intro Coming Soon
-
 :::{.objectives}
 
 * [ ] I can use a simple equation or function rule to find y when I know x.
@@ -12,7 +10,7 @@ Intro Coming Soon
 
 :::{.vocab}
 
-{{< glink axis >}}, {{< glink origin >}}, {{< glink quadrant >}}, {{< glink ordered pair >}}, {{< glink coordinate plane >}}
+{{< glink axis >}}, {{< glink origin >}}, {{< glink quadrant >}}, {{< glink "ordered pair" >}}, {{< glink "coordinate plane" >}}
 
 :::
 

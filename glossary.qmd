@@ -69,7 +69,7 @@ Subtraction/division aren’t associative. Also, mixing operations breaks it: $a
 Lets you **regroup** like terms to add coefficients more easily, e.g.,
 $3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5$.
 
-**See also:** {{< glink commutative >}}, {{< glink distributive property >}}, {{< glink like terms >}}
+**See also:** {{< glink commutative >}}, {{< glink "distributive property" >}}, {{< glink "like terms" >}}
 
 ---
 
@@ -107,8 +107,18 @@ A **coefficient** is the number in front of a variable. It tells you how many of
 
 > **Example:**
 >
-> In the expression \(3x\), the coefficient is **3**.  
+> In the expression $3x$, the coefficient is **3**.  
 > It means “3 times x.”
+
+---
+
+### Combine Like Terms {#glossary-combine-like-terms}
+
+To **combine like terms** means to simplify an expression by adding or subtracting terms that have the same variable part.
+
+> **Example:**
+>
+> $3x + 2x = 5x$ because both terms are “like terms” (they each have $x$).
 
 ---
 
@@ -158,7 +168,7 @@ An operation is **commutative** if **changing the order** of the numbers **doesn
 **Why it matters:**
 Lets you **reorder** terms when simplifying, e.g., $2x + 5x + 3 = (2x + 5x) + 3$.
 
-**See also:** {{< glink associative >}}, {{< glink distributive property >}}
+**See also:** {{< glink associative >}}, {{< glink "distributive property" >}}
 
 ---
 
@@ -168,7 +178,7 @@ A **constant** is a number that does **not** change. It stays the same no matter
 
 > **Example:**
 >
-> In the expression \(x + 5\), the number **5** is a constant.
+> In the expression $x + 5$, the number **5** is a constant.
 
 ---
 
@@ -279,7 +289,7 @@ A divisor is the number you **divide by** in a division problem. It tells you ho
 
 > **Example:**  
 >   
-> In \(12 \div 3 = 4\), the number 3 is the divisor because it divides 12 into 3 equal parts.
+> In $12 \div 3 = 4$, the number 3 is the divisor because it divides 12 into 3 equal parts.
 
 ---
 
@@ -401,7 +411,7 @@ If you can split something into equal groups with no leftovers, the group size i
 >
 > 3 is a factor of 12 because 3 × 4 = 12.
 
-*Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink greatest common factor >}} giving $2(x-1)$*.
+*Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink "greatest common factor" >}} giving $2(x-1)$*.
 
 ---
 
@@ -436,7 +446,7 @@ flowchart TD
    C --> G[2]
 ```
 >
-> This tells us that the {{< glink prime factorization >}} of 24 is $2^3 \cdot 3$.
+> This tells us that the {{< glink "prime factorization" >}} of 24 is $2^3 \cdot 3$.
 
 ---
 
@@ -800,8 +810,8 @@ An operation is a **math action** you do with numbers — like adding, subtracti
 
 > **Example:**  
 >   
-> In \(7 + 3\), the operation is addition.  
-> In \(12 \div 4\), the operation is division.
+> In $7 + 3$, the operation is addition.  
+> In $12 \div 4$, the operation is division.
 
 ---
 
@@ -1197,7 +1207,7 @@ A **symbol** is a mark or character used to represent something in math. It can 
 
 > **Example:**
 >
-> In the expression \(3x + 5\), the **+** is a symbol for addition,  
+> In the expression $3x + 5$, the **+** is a symbol for addition,  
 > and the **x** is a symbol for a variable (an unknown number).
 
 ---
@@ -1208,8 +1218,8 @@ A **term** is one part of an expression. Terms are separated by plus or minus si
 
 > **Example:**
 >
-> In the expression \(4x + 3 - 2y\), there are **three** terms:  
-> \(4x\), \(3\), and \(-2y\)
+> In the expression $4x + 3 - 2y$, there are **three** terms:  
+> $4x$, $3$, and $-2y$
 
 ---
 
@@ -1230,7 +1240,7 @@ A **variable** is a letter or symbol that stands for a number that can change or
 
 > **Example:**
 >
-> In the expression \(x + 7\), the letter **x** is a variable.  
+> In the expression $x + 7$, the letter **x** is a variable.  
 > It could be **any number**.
 
 ---

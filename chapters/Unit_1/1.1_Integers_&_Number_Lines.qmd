@@ -1,6 +1,6 @@
 # 1.1 - Integers & Number Lines {.unnumbered}
 
-Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like {{< glink algebra >}} and {{< glink calculus >}} are just clever ways of organizing and extending basic ideas — like moving forward and backward on a {{< glink number line >}}.
+Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like {{< glink algebra >}} and {{< glink calculus >}} are just clever ways of organizing and extending basic ideas — like moving forward and backward on a {{< glink "number line" >}}.
 
 In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare {{< glink positive >}} and {{< glink negative >}} numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.
 
@@ -14,7 +14,7 @@ Negative numbers can be tricky, especially when the rules don’t always match w
 :::
 
 :::{.vocab}
-{{< glink absolute value >}}, {{< glink greater than >}}, {{< glink integer >}}, {{< glink less than >}}, {{< glink number line >}}, {{< glink negative >}}, {{< glink opposite >}}, {{< glink positive >}} 
+{{< glink "absolute value" >}}, {{< glink "greater than" >}}, {{< glink integer >}}, {{< glink "less than" >}}, {{< glink number line >}}, {{< glink negative >}}, {{< glink opposite >}}, {{< glink positive >}} 
 :::
 
 {{< warmup >}} 
@@ -58,7 +58,7 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 **Example:** How many numbers between 3 and 5?
 
-If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink real numbers >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
+If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink "real numbers" >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
 
 ![](/images/Unit_1/Lesson_1/three_to_five_by_1.png)
 ![](/images/Unit_1/Lesson_1/between_3_and_5_by_05.png)
@@ -97,7 +97,7 @@ The opposite of zero is zero. Zero is the only number that is its own opposite!
 
 ### 1.1.3 - What Is Absolute Value?
 
-{{< glink Absolute value >}} measures the **distance from zero**. Absolute value is written as a number between two bars. For example, **the absolute value of -5** is written $|-5|$.
+{{< glink "Absolute value" >}} measures the **distance from zero**. Absolute value is written as a number between two bars. For example, **the absolute value of -5** is written $|-5|$.
 
 
 Take a look at the number -5. The number line shows that its absolute value is 5 because it is 5 units away from zero.
@@ -131,7 +131,7 @@ Let’s compare 2 to -7.
 ![](/images/Unit_1/Lesson_1/compare_2_to_neg7.png)
 
 
-You can see from the number line that 2 is {{< glink greater than >}} (&gt;) -7 because 2 is to the right of -7.  
+You can see from the number line that 2 is {{< glink "greater than" >}} (&gt;) -7 because 2 is to the right of -7.  
 
 You can also see that -7 is farther from zero than 2 and so |-7| > |2|.
 

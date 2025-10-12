@@ -1,6 +1,6 @@
 # 2.3 – Combining Like Terms {.unnumbered}
 
-When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink like terms >}}**.
+When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink "like terms" >}}**.
 
 Think of a cashier counting money in a mixed drawer. They put tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
@@ -12,7 +12,7 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 :::
 
 :::{.vocab}
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equivalent expressions >}}, {{< glink like terms >}}, {{< glink simplify >}}, 
+{{< glink coefficient >}}, {{< glink constant >}}, {{< glink "equivalent expressions" >}}, {{< glink "like terms" >}}, {{< glink simplify >}}, 
 {{< glink term >}}, {{< glink variable >}}
 :::
 
@@ -46,15 +46,15 @@ You can see what fruit is there, but it’s **messy**. Let’s **group by type**
 
 Now it’s easy to see how many you have of each kind—and it looks better for customers.
 
-Algebraic expressions can be messy in the same way. Different kinds of {{< glink terms >}} get mixed together. To **simplify**, we first **group by type** before adding things up.
+Algebraic expressions can be messy in the same way. Different kinds of {{< glink slug=term text=terms >}} get mixed together. To **simplify**, we first **group by type** before adding things up.
 
 **What do we mean by “type”?**  
-Two terms are the same type if their **variable part** (letters and exponents) matches exactly. We call these **{{< glink like terms >}}**.
+Two terms are the same type if their **variable part** (letters and exponents) matches exactly. We call these **{{< glink "like terms" >}}**.
 
 **Like terms**
 
 - $5x$ and $3x$
-- $7$ and $-3$ *(both are {{< glink constants >}})*
+- $7$ and $-3$ *(both are {{< glink slug=constant text=constants >}})*
 - $2y^3$ and $y^3$
 - $8xy$ and $2yx$ *(the order of the variables doesn't matter)*
 

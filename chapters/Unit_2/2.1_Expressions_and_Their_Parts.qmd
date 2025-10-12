@@ -2,7 +2,7 @@
 
 Learning mathematics is about more than number crunching—you’re learning a new language. Like any language, mathematics uses words and phrases to communicate ideas. In algebra, we call those words and phrases **expressions**.
 
-In this lesson, you’ll learn to **read** expressions to understand the ideas they communicate and to **write** expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: {{< glink variables >}}, {{< glink terms >}}, {{< glink coefficients >}}, and {{< glink constants >}}.
+In this lesson, you’ll learn to **read** expressions to understand the ideas they communicate and to **write** expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: {{< glink slug=variable text="variables" >}}, {{< glink slug=term text=terms >}}, {{< glink slug=coefficient text=coefficients >}}, and {{< glink slug=constant text=constants >}}.
 
 :::{.objectives}
 - [ ] I can identify the parts of an algebraic expression.  
@@ -56,7 +56,7 @@ Before opening it, **x** was a variable — a placeholder for an unknown number.
 
 ### 2.1.2 – What Is an Expression?
 
-An **expression** is a math phrase made of numbers, variables, and {{< glink operations >}}. Expressions do **not** compare values — so $2x$ and $5$ are expressions, but $2x = 5$ is not (that’s an equation).
+An **expression** is a math phrase made of numbers, variables, and {{< glink slug=operation text=operations >}}. Expressions do **not** compare values — so $2x$ and $5$ are expressions, but $2x = 5$ is not (that’s an equation).
 
 **Examples of expressions:**
 
@@ -110,7 +110,7 @@ Total pencils = $10p$
 :::
 
 ::: {.gotcha title="Where did the multiply sign go?"}
-In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink multiplication by proximity >}}).
+In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink "multiplication by proximity" >}}).
 
 **Three ways to write “3 times x”:**
 

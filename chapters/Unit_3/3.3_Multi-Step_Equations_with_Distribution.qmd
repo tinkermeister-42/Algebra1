@@ -14,7 +14,7 @@ In this lesson, you’ll learn how to simplify first — by using the distributi
 :::
 
 :::{.vocab}
-{{< glink combine like terms >}}, {{< glink distributive property >}}, {{< glink equation >}}, {{< glink simplify >}}
+{{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink equation >}}, {{< glink simplify >}}
 :::
 
 {{< warmup >}}
@@ -119,7 +119,7 @@ $$
 
 ### 3.3.2 – Combining Like Terms in Equations
 
-Sometimes an equation looks messy because there are {{< glink like terms >}} on the same side of the equals sign. Before you can solve, you need to combine them into a single term.
+Sometimes an equation looks messy because there are {{< glink "like terms" >}} on the same side of the equals sign. Before you can solve, you need to combine them into a single term.
 
 ---
 

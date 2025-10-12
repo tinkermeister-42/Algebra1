@@ -1,8 +1,8 @@
 # 1.3 - GCF & Simplifying Fractions {.unnumbered}
 
-Suppose you’re making snack packs and have 20 bags of chips and 35 cookies. What’s the greatest number of identical packs you can make with no leftovers? To figure that out, you’d use something called the {{< glink greatest common factor >}} (GCF).
+Suppose you’re making snack packs and have 20 bags of chips and 35 cookies. What’s the greatest number of identical packs you can make with no leftovers? To figure that out, you’d use something called the {{< glink "greatest common factor" >}} (GCF).
 
-In this lesson, you’ll learn how to use {{< glink prime factorization >}} to find the GCF — and how that can help you simplify {{< glink fractions >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
+In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to find the GCF — and how that can help you simplify {{< glink slug=fraction text="fractions" >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
 
 ::: {.objectives}
 - [ ] I can find the GCF using factor trees
@@ -11,7 +11,7 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 :::
 
 ::: {.vocab}
-{{< glink equivalent >}}, {{< glink greatest common factor >}}, {{< glink prime factorization >}}, {{< glink relatively prime >}}, {{< glink simplify >}}
+{{< glink equivalent >}}, {{< glink "greatest common factor" >}}, {{< glink "prime factorization" >}}, {{< glink "relatively prime" >}}, {{< glink simplify >}}
 :::
 
 {{< warmup >}}
@@ -42,7 +42,7 @@ In this lesson, you’ll learn how to use {{< glink prime factorization >}} to f
 
 ### 1.3.1 - Finding the GCF Using Factor Trees
 
-To find the GCF, we can break numbers into their **prime factors** using {{< glink factor trees >}}.
+To find the GCF, we can break numbers into their **prime factors** using {{< glink slug=factor-tree text="factor trees" >}}.
 
 Let's try it with 36 and 60:
 
@@ -533,7 +533,7 @@ $$2 * 2 * 2 = 8$$
 
 In the last section, dividing two numbers showed how to "cancel out" or eliminate shared factors. This is helpful when you want to {{< glink simplify >}} a fraction! 
 
-Simplifying a fraction means rewriting it in its {{< glink simplest form >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1.
+Simplifying a fraction means rewriting it in its {{< glink "simplest form" >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1.
 
 --- 
 
@@ -577,7 +577,7 @@ Factor trees help you *see* why this works by breaking the numbers into their bu
 
 :::{.gotcha title="What if the numerator and denominator don't share any factors?"}
 
-If the numerator and denominator of a fraction share no common factors (besides 1) the two numbers are called {{< glink relatively prime >}}. In this case, the fraction cannot be simplified.
+If the numerator and denominator of a fraction share no common factors (besides 1) the two numbers are called {{< glink "relatively prime" >}}. In this case, the fraction cannot be simplified.
 
  **Example:**
 
@@ -789,7 +789,7 @@ Simplifying isn’t just a math trick — it helps you work with numbers more ea
 2. Examples: 30 or 42
 
 
-3. The numbers are {{< glink relatively prime >}}. For example: 8 and 15.
+3. The numbers are {{< glink "relatively prime" >}}. For example: 8 and 15.
 
 ---
 

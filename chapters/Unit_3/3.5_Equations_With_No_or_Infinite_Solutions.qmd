@@ -24,7 +24,7 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 
 :::{.vocab}
 
-{{< glink all real numbers >}}, {{< glink linear equation >}}, {{< glink no solution >}}, {{< glink real numbers >}}
+{{< glink "all real numbers" >}}, {{< glink "linear equation" >}}, {{< glink "no solution" >}}, {{< glink slug=real-number text="real numbers" >}}
 :::
 
 {{< warmup >}}
@@ -141,7 +141,7 @@ If you solve an equation and get the same thing on each side of the equal sign, 
 
 ### 3.5.3 – Determining the Number of Solutions
 
-There are some tricks for telling whether a {{< glink linear equation >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
+There are some tricks for telling whether a {{< glink "linear equation" >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
 
 ---
 

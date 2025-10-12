@@ -10,7 +10,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 :::
 
 :::{.vocab}
-{{< glink divisor >}}, {{< glink improper fraction >}}, {{< glink mixed number >}}, {{< glink reciprocal >}}
+{{< glink divisor >}}, {{< glink "improper fraction" >}}, {{< glink "mixed number" >}}, {{< glink reciprocal >}}
 :::
 
 {{< warmup >}}
@@ -102,8 +102,8 @@ $$
 
 ### 1.5.2 – Multiplying Mixed Numbers
 
-A {{< glink mixed number >}} is a number that has a whole part and a fraction part, like $4\tfrac{2}{3}$.
-Before multiplying, we first need to convert to an {{< glink improper fraction >}}.
+A {{< glink "mixed number" >}} is a number that has a whole part and a fraction part, like $4\tfrac{2}{3}$.
+Before multiplying, we first need to convert to an {{< glink "improper fraction" >}}.
 
 
 **Example:**

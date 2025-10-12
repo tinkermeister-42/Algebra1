@@ -1,5 +1,8 @@
+// glossary-tooltips.js — no plural/irregular logic (one key only)
+
 function slugify(s){
-  return s.toLowerCase()
+  return (s || "")
+    .toLowerCase()
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/&/g, "and")
     .replace(/[^a-z0-9\s-]/g, "")
@@ -8,108 +11,60 @@ function slugify(s){
     .trim();
 }
 
-// --- Irregulars (last-word only) ---
-const IRREGULAR_S2P = {
-  axis: "axes",
-  analysis: "analyses",
-  basis: "bases",
-  parenthesis: "parentheses",
-  thesis: "theses",
-  crisis: "crises",
-  diagnosis: "diagnoses",
-  hypothesis: "hypotheses",
-  synthesis: "syntheses",
-  synopsis: "synopses",
-  ellipsis: "ellipses",
-  oasis: "oases",
-};
-const IRREGULAR_P2S = Object.fromEntries(Object.entries(IRREGULAR_S2P).map(([s,p]) => [p, s]));
-
-function singularizeLastWord(s){
-  const w = s.toLowerCase().trim().split(/\s+/);
-  if (!w.length) return s;
-  let last = w[w.length - 1];
-
-  // Irregular plural → singular first
-  if (IRREGULAR_P2S && IRREGULAR_P2S[last]) {
-    w[w.length - 1] = IRREGULAR_P2S[last];
-    return w.join(" ");
+async function fetchFirstOk(urls){
+  for (const u of urls){
+    try {
+      const r = await fetch(u, { cache: "no-cache" });
+      if (r.ok) return await r.json();
+    } catch (_) {}
   }
-
-  // 🚫 do NOT strip 's' if the word ends with 'is' (axis, basis, analysis, thesis, …)
-  if (/is$/.test(last)) {
-    return w.join(" ");
-  }
-
-  if (last.endsWith("ies")) last = last.replace(/ies$/, "y");
-  else if (/(?:[sxz]|ch|sh)es$/.test(last)) last = last.replace(/es$/, "");
-  else if (last.endsWith("s") && !last.endsWith("ss")) last = last.replace(/s$/, "");
-  w[w.length - 1] = last;
-  return w.join(" ");
+  throw new Error("No glossary.json found at any candidate URL");
 }
 
+document.addEventListener("DOMContentLoaded", async () => {
+  // Build a few robust candidates for where glossary.json might live
+  const parts = location.pathname.split("/").filter(Boolean);
+  const guesses = [
+    // relative to current page
+    new URL("glossary.json", document.baseURI).href,
+    // repo subdir (e.g., /your-repo/ on GitHub Pages)
+    parts.length ? `/${parts[0]}/glossary.json` : "/glossary.json",
+    // absolute root fallback
+    "/glossary.json",
+  ];
 
-function pluralizeLastWord(s){
-  const parts = s.toLowerCase().trim().split(/\s+/);
-  if (!parts.length) return s;
-  let last = parts[parts.length - 1];
-
-  // Irregular singular → plural first (axis→axes, analysis→analyses, …)
-  if (IRREGULAR_S2P[last]) {
-    parts[parts.length - 1] = IRREGULAR_S2P[last];
-    return parts.join(" ");
+  let glossary;
+  try {
+    glossary = await fetchFirstOk(guesses);
+  } catch (err) {
+    console.error("🔥 Failed to load glossary.json:", err);
+    return;
   }
 
-  // Regular rules
-  if (/[^aeiou]y$/.test(last)) last = last.replace(/y$/, "ies");
-  else if (/(?:[sxz]|ch|sh)$/.test(last)) last = last + "es";
-  else if (!/s$/.test(last)) last = last + "s";
+  document.querySelectorAll(".glossary-link").forEach(link => {
+    const href = link.getAttribute("href") || "";
+    // Prefer the explicit slug from href (#glossary-<slug>) if present
+    const m = href.match(/#glossary-([^#?]+)/);
+    const slugFromHref = m ? m[1] : null;
 
-  parts[parts.length - 1] = last;
-  return parts.join(" ");
-}
+    const raw = link.dataset.term || link.textContent || "";
+    const fallbackSlug = slugify(raw);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const pathParts = window.location.pathname.split("/");
-  const isLocal = location.hostname === "localhost";
-  const basePath = isLocal ? "/" : `/${pathParts[1]}/`;
+    const key = slugFromHref || fallbackSlug;
+    const def = glossary[key];
 
-  fetch(`${basePath}glossary.json?ts=${Date.now()}`, { cache: "no-cache" })
-    .then(r => { if (!r.ok) throw new Error(`${r.status} ${r.statusText}`); return r.json(); })
-    .then(glossary => {
-      document.querySelectorAll(".glossary-link").forEach(link => {
-        const href = link.getAttribute("href") || "";
-        const m = href.match(/#glossary-([^#?]+)/);
-        const slugFromHref = m ? m[1] : null;
+    if (!def) return;
 
-        const raw = link.dataset.term || link.textContent || "";
-
-        // Build candidates: explicit id, base slug, singularized last word, pluralized last word
-        const rawSing = singularizeLastWord(raw);
-        const rawPlur = pluralizeLastWord(raw);
-
-        const candidates = Array.from(new Set([
-          slugFromHref,
-          slugify(raw),
-          slugify(rawSing),
-          slugify(rawPlur),
-        ].filter(Boolean)));
-
-        let def;
-        for (const k of candidates) {
-          if (glossary[k]) { def = glossary[k]; break; }
-        }
-        if (def) {
-          tippy(link, {
-            content: `<strong>${raw}</strong><br>${def}`,
-            allowHTML: true,
-            theme: "light-border",
-            placement: "top",
-            delay: [100, 100],
-            maxWidth: 300,
-          });
-        }
+    // Init tooltip (requires Tippy.js on the page)
+    if (typeof tippy === "function"){
+      tippy(link, {
+        content: `<strong>${raw}</strong><br>${def}`,
+        allowHTML: true,
+        theme: "light-border",
+        placement: "top",
+        delay: [100, 100],
+        maxWidth: 300,
       });
-    })
-    .catch(err => console.error("🔥 Failed to load glossary.json:", err));
+    }
+  });
 });

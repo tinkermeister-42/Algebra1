@@ -8,7 +8,7 @@ Other values didn’t.
 
 This brings us to **equations**. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to **find the numbers that make them equal**.
 
-Those values are called the {{< glink solutions >}} of the equation.
+Those values are called the {{< glink slug=solution text=solutions >}} of the equation.
 
 In this lesson, we begin with the basic rules for solving equations:
 
@@ -26,7 +26,7 @@ Later lessons will build on these rules to solve more complicated equations.
 :::
 
 :::{.vocab}
-{{< glink equation >}}, {{< glink inverse operations >}}, {{< glink solution >}}, {{< glink variable >}}
+{{< glink equation >}}, {{< glink "inverse operations" >}}, {{< glink solution >}}, {{< glink variable >}}
 :::
 
 {{< warmup >}}
@@ -84,7 +84,7 @@ $$
 
 The weight of the apple is **3**.
 
-To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink inverse operation >}} for addition.
+To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink slug="inverse-operations" text="inverse operation" >}} for addition.
 
 We don't usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.
 

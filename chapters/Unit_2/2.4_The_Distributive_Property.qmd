@@ -8,7 +8,7 @@ First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11
 
 Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = \$330.
 
-Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink distributive property >}}. Today, we’re going to see how this property helps us simplify expressions.
+Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink "distributive property" >}}. Today, we’re going to see how this property helps us simplify expressions.
 
 ::: {.objectives}
 - [ ] I can use the **distributive property** to expand expressions.
@@ -17,7 +17,7 @@ Either way, you get the same answer. What we just did actually followed a rule i
 :::
 
 ::: vocab
-{{< glink distributive property >}}, {{< glink equivalent expressions >}}, {{< glink expand >}}, {{< glink factor >}}, {{< glink simplify >}}
+{{< glink "distributive property" >}}, {{< glink "equivalent expressions" >}}, {{< glink expand >}}, {{< glink factor >}}, {{< glink simplify >}}
 :::
 
 {{< warmup >}}
@@ -51,7 +51,7 @@ To **distribute** the worksheets, you hand one to each student.
 
 In math, distribution works the same way. When we multiply an expression by a number, we "give" that number to each term in the expression.
 
-The {{< glink distributive property >}} says:
+The {{< glink "distributive property" >}} says:
 
 $$
 a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c) = ab - ac
@@ -221,7 +221,7 @@ Distribution goes both ways. If $ab+ac = a(b+c)$, then we can **factor out** $a$
 
 **Examples:**
 
-Factor out the {{< glink greatest common factor >}} from each expression.
+Factor out the {{< glink "greatest common factor" >}} from each expression.
 
 1.  $8x+12 = 4(2x+3)$
 2.  $15x-9 = 3(5x-3)$

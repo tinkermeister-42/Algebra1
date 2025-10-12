@@ -20,7 +20,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 
 ::: {.vocab}
 
-{{< glink coefficient >}}, {{< glink equation >}}, {{< glink literal equation >}}, {{< glink variable >}}
+{{< glink coefficient >}}, {{< glink equation >}}, {{< glink "literal equation" >}}, {{< glink variable >}}
 
 :::
 

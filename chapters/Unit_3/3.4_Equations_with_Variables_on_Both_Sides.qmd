@@ -13,7 +13,7 @@ In this lesson, you’ll learn how to bring all the variable terms together, sim
 
 :::{.vocab}
 
-{{< glink combine like terms >}}, {{< glink distributive property >}}, {{< glink equation >}}, {{< glink inverse operations >}}, {{< glink variable >}}
+{{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink equation >}}, {{< glink "inverse operations" >}}, {{< glink variable >}}
 
 :::
 
