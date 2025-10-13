@@ -366,7 +366,7 @@ Set up and solve each situation with a one-step equation.
 2. $m = 4$
 3. $y = 8$
 4. $z = -54$
-5. $a = 13$
+5. $k = -17$
 6. $r = -6$
 7. $t = 8$
 8. $p = -55$
