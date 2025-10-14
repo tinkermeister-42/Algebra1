@@ -196,6 +196,8 @@ To convert means to **change a number from one form to another** — like from a
 
 A flat grid formed by the intersection of the x-axis and y-axis at the origin. It’s used to graph points, lines, and relationships between two numbers or variables.
 
+![](/images/Glossary/CartesianCoordinatePlane.png){ width=500 }
+
 > **Example:**
 > When you graph the equation y = 2x + 1, every point on the coordinate plane that satisfies the equation makes a straight line.
 

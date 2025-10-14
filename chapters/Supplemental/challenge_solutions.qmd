@@ -1,5 +1,7 @@
 # Challenge Problem Solutions {.unnumbered}
 
+<br>
+
 ## Unit 1 - Foundations
 
 ### 1.1 - Integers & Number Lines
@@ -73,6 +75,8 @@ No Challenge Questions
 7. *Answers will vary*
 
 :::
+
+<br>
 
 ## Unit 2 - Algebraic Expressions
 
@@ -201,6 +205,8 @@ No Challenge Questions
     The expressions are equivalent.
 :::
 
+<br>
+
 ## Unit 3 - Solving Linear Equations
 
 ### 3.1 - Solving One-Step Equations
@@ -282,5 +288,22 @@ No Challenge Questions
 24. $b_1 = \frac{2A}{h} - b_2$
 
 25. $p = \frac{C - f}{n}$; as $n$ increases, $p$ decreases if $f$ stays the same.
+
+:::
+
+<br>
+
+## Unit 4 - Linear Functions and Graphs
+
+### 4.1 - Graphing Function Rules
+
+:::{.answers}
+
+
+14. The would never cross because for both, as x increases by 1, y increases by 4. The lines are parallel.
+
+![](/images/Unit_4/Lesson_1/Answer14.png){width=500px fig-align="center"}
+
+15. $f(x) = 2x + 2$
 
 :::

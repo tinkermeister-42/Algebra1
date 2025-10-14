@@ -177,6 +177,7 @@ def linear_function_coordinate_plane(
     project_to_axes: bool = False,              # global toggle
     projection_kwargs: Optional[dict] = None,   # style for the dashed guides
 
+    legend: bool = False #include legend
 ):
     """
     Clean, textbook-like coordinate plane generator.
@@ -460,7 +461,6 @@ def linear_function_coordinate_plane(
         xmax = xmax,
         ymax = ymax
     )
-                     
 
     plt.tight_layout()
     if outfile:
