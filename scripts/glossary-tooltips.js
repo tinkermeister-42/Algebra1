@@ -22,15 +22,17 @@ async function fetchFirstOk(urls){
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // Build a few robust candidates for where glossary.json might live
+  // Candidate locations for glossary.json
   const parts = location.pathname.split("/").filter(Boolean);
+  const repo = parts.length ? `/${parts[0]}/` : "/"; // e.g., "/your-repo/" on GitHub Pages
+
   const guesses = [
+    // absolute site root
+    `/glossary.json?ts=${Date.now()}`,
+    // repo subfolder (GitHub Pages)
+    `${repo}glossary.json?ts=${Date.now()}`,
     // relative to current page
-    new URL("glossary.json", document.baseURI).href,
-    // repo subdir (e.g., /your-repo/ on GitHub Pages)
-    parts.length ? `/${parts[0]}/glossary.json` : "/glossary.json",
-    // absolute root fallback
-    "/glossary.json",
+    new URL(`glossary.json?ts=${Date.now()}`, document.baseURI).href,
   ];
 
   let glossary;
@@ -43,19 +45,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.querySelectorAll(".glossary-link").forEach(link => {
     const href = link.getAttribute("href") || "";
-    // Prefer the explicit slug from href (#glossary-<slug>) if present
     const m = href.match(/#glossary-([^#?]+)/);
     const slugFromHref = m ? m[1] : null;
 
     const raw = link.dataset.term || link.textContent || "";
-    const fallbackSlug = slugify(raw);
+    const key = slugFromHref || raw
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .trim();
 
-    const key = slugFromHref || fallbackSlug;
     const def = glossary[key];
-
     if (!def) return;
 
-    // Init tooltip (requires Tippy.js on the page)
     if (typeof tippy === "function"){
       tippy(link, {
         content: `<strong>${raw}</strong><br>${def}`,
