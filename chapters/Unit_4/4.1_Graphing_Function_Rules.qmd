@@ -124,11 +124,11 @@ $$
 
 Now plot each pair $(x, f(x))$ on a coordinate plane.
 
-![](/images/Unit_4/Lesson_1/Example1A.png){width="300px" fig-align="center"}
+![](/images/Unit_4/Lesson_1/Example1A.png){width="350px" fig-align="center"}
 
 When we connect the points, they form a **straight line** — showing that $f(x) = 2x + 1$ is a **linear function**.
 
-![](/images/Unit_4/Lesson_1/Example1B.png){width="300px" fig-align="center"}
+![](/images/Unit_4/Lesson_1/Example1B.png){width="350px" fig-align="center"}
 
 ::: {.remember}
 
@@ -152,7 +152,7 @@ Evaluate $h(x)$ for $x = -3, 0,$ and $9$ and graph the result.
 | 0    | -3     |
 | 9    |  3     |
 
-![](/images/Unit_4/Lesson_1/Example2A.png){width="300px" fig-align="center"}
+![](/images/Unit_4/Lesson_1/Example2A.png){width="350px" fig-align="center"}
 
 :::{.think title="Can you tell if $h(x)$ is a function just by looking at the graph?"}
 
@@ -169,7 +169,7 @@ That’s what makes it a function — every input leads to exactly one output.
 | 1   | $1$    |
 | 3   | $7$    |
 
-![](/images/Unit_4/Lesson_1/YouTry_4_1_2.png){width="300px" fig-align="center"}
+![](/images/Unit_4/Lesson_1/YouTry_4_1_2.png){width="350px" fig-align="center"}
 
 :::
 
