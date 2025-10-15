@@ -1,6 +1,12 @@
 # 4.2 – Understanding Slope {.unnumbered}
 
-Intro Coming Soon
+In the previous lesson, you learned how to create tables of values for a linear function to create a graph. 
+Different linear functions produced different graphs but they all produced straight lines. 
+
+In real-world situations, it is often useful to compare functions by looking at their graphs.
+
+In this lesson, you will learn how to describe the way that lines change as you move from left to right.
+This rate of change is called the **slope**, one of the most important concepts you will learn in algebra.
 
 :::{.objectives}
 
@@ -19,11 +25,21 @@ Intro Coming Soon
 
 {{< warmup >}}
 
-Coming Soon
+1. Plot the function $f(x) = 2x + 1$.
+
+2. On the same graph, plot the function $g(x) = -3x + 1$.
+
+3. Looking at your graph. How are the two lines the same? How are they different?
+   [plot of two lines with same intercept but different slopes]
+
 
 {{< learn >}}
 
 ### 4.2.1 – What Is Slope?
+
+This section is an intuition builder.
+
+Compare stairs to climb. Show images of someone climbing shallow stairs and some steep mountain stairs.
 
 * The **slope** of a line tells how steep it is — how fast y changes as x changes.
 * It’s the **rate of change** between x and y.
