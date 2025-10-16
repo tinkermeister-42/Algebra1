@@ -37,28 +37,35 @@ This rate of change is called the **slope**, one of the most important concepts 
 
 ### 4.2.1 – What Is Slope?
 
-Look at the image below. In each of the four panels, a person is climbing stairs. In what ways are each of the four images similar and in what ways are they different?
+Look at the image below. In each of the four panels, a person is climbing stairs. How are the four images similar? How are they different?
 
 ![](/images/Unit_4/Lesson_2/stairs_xkcd.png){width=350px fig-align="center"}
 
-* The **slope** of a line tells how steep it is — how fast y changes as x changes.
-* It’s the **rate of change** between x and y.
-* You can think of slope as the line’s *tilt* or *climb*.
+You probably notice that the stairs in panels A and D are far less steep than the stairs in panels B and C. You may also notice that the stairs in panels A and C move up and to the right while the ones in panels B and D move down.
 
-:::{.real-world title="Slope as a Rate"}
-If you earn $15 per hour, that’s a slope of 15 on a graph of pay vs. hours — your pay increases $15 for each additional hour you work.
+Linear functions are the same. Sometimes they go up as we move to the right, and sometimes they go down. Sometimes they are steep, and other times they are less so. Together, direction and steepness describe the **slope**.
+
+The slope tells how much we rise (up or down) for every step we move to the right — it’s a rate of change. A larger slope means the line rises or falls more sharply — the {{< glink vertical >}} change happens faster for each {{< glink horizontal >}} step to the right.
+
+On a graph, the **rise** is a change in $y$ (abbreviated as $\Delta y$) and the **run** is a change in $x$ (abbreviated as $\Delta x$). 
+
+The slope, often abbreviated as $m$, is simply:
+
+$$
+m = \frac{\text{rise}}{\text{run}} = \frac{\Delta y}{\Delta x}
+$$
+
+:::{.think title="How does the rise (change in y) compare to the run (change in x) in each of the 4 panels above?"}
+
+|   Panel  |   Direction | Rise Compared to Run | $m=\frac{\Delta y}{\Delta x}$ |
+|   :-:    |   :-:    | :-: |  :-:  |
+|   A      |   Positive (up) | About half as fast | $\frac{1}{2}$ |
+|   B      |   Negative (down) | About the same   | $\frac{-1}{1}$ |
+|   C      |   Positive     |   About the same | $\frac{1}{1}$ |
+|   D      |   Negative     |  About half as fast |  $\frac{-1}{2}$ |
+
 :::
 
-:::{.remember title="Formula for Slope"}
-Between two points ((x_1, y_1)) and ((x_2, y_2)):
-[
-m = \frac{y_2 - y_1}{x_2 - x_1}
-]
-where (m) represents the slope.
-:::
-
-:::{.you-try title="Find the slope between (1, 2) and (4, 8)."}
-:::
 
 ---
 
