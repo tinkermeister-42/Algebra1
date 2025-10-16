@@ -57,12 +57,12 @@ $$
 
 :::{.think title="How does the rise (change in y) compare to the run (change in x) in each of the 4 panels above?"}
 
-|   Panel  |   Direction | Rise Compared to Run | $m=\frac{\Delta y}{\Delta x}$ |
-|   :-:    |   :-:    | :-: |  :-:  |
-|   A      |   Positive (up) | About half as fast | $\frac{1}{2}$ |
-|   B      |   Negative (down) | About the same   | $\frac{-1}{1}$ |
-|   C      |   Positive     |   About the same | $\frac{1}{1}$ |
-|   D      |   Negative     |  About half as fast |  $\frac{-1}{2}$ |
+|   Panel  |   Direction | Rise Compared to Run |
+|   :-:    |   :-:    | :-: | 
+|   A      |   Positive (up) | About $\frac{2}{3}$ as fast |
+|   B      |   Negative (down) | About the same   | 
+|   C      |   Positive     |   About the same | 
+|   D      |   Negative     |  About $\frac{2}{3}$ as fast |
 
 :::
 
@@ -71,23 +71,44 @@ $$
 
 ### 4.2.2 – Finding Slope From a Graph
 
-![](/images/Unit_4/Lesson_2/stick_figure_slope.png){width="350px" fig-align="center"}
+In the previous section we said that slope is **rise** over **run** ($\frac{\Delta y}{\Delta x}$). 
 
-* To find slope from a graph, pick two clear points on the line.
-* Count the **rise** (change in y) and the **run** (change in x).
-* Then use (m = \frac{\text{rise}}{\text{run}}).
+We visually compared the stairs in each of the 4 panels, noting that sometimes the stairs went up (positive) and sometimes they went down (negative). We used comparisions of the rise to the run with statements like "about the same". 
 
-![](/images/Unit_4/Lesson_2/rise_run_example.png){width="300px" fig-align="center"}
+**Example 1:**
 
-:::{.think title="Reading Direction"}
-Always read slope **left to right**, like you read a sentence.
-:::
+Let's look the same image again, but this time we will overlay a coordinate plane so that we can be more precise.
 
-:::{.you-try title="Count the slope"}
-Find the rise and run between two points on your graph, then compute (m = \frac{\text{rise}}{\text{run}}).
-:::
+![](/images/Unit_4/Lesson_2/stairs_xkcd_grid.png){width="500px" fig-align="center"}
+
+In panel A, the person climbs **up** 2 units for every 3 units they move **right**. The change in y ($\Delta y$) is 2 and the change in x ($\Delta x$) is 3. So the slope is $m = \frac{2}{3}$.
+
+In panel B, the person climbs **down** 3 units for every 3 units they move **right**. So the slope is $m = \frac{-3}{3} = -1$.
+
+In panel C, the person climbs **up** 3 units for every 3 units the move **right**. So the slope is $m = \frac{3}{3} = 1$.
+
+Finally, in panel D, the person climbs **down** 2 units for every 3 units they move right. So the slope is $m = \frac{2}{3}$.
 
 ---
+
+**Example 2:**
+
+Find the slope of the line graphed below.
+
+![](/images/Unit_4/Lesson_2/Example2A.png){width="400px" fig-align="center"}
+
+First, we pick two known points on the graph. Here we picked $(0, 2)$ and $(5, 6)$. Then we find the change in the x-values ($\Delta x$) and the change in the y values ($\Delta y$).
+
+![](/images/Unit_4/Lesson_2/Example2B.png){width="400px" fig-align="center"}
+
+The slope of the line is:
+
+$$
+m = \frac{\Delta y}{\Delta x} = \frac{4}{5}
+$$
+
+---
+
 
 ### 4.2.3 – Types of Slope
 
@@ -97,6 +118,8 @@ Find the rise and run between two points on your graph, then compute (m = \frac{
 | **Negative**  | Line falls left to right  | (m < 0)  |
 | **Zero**      | Line is flat (horizontal) | (y = 3)  |
 | **Undefined** | Line is vertical (no run) | (x = -2) |
+
+{{< include /assets/Unit_4/slope-widget.html >}}
 
 :::{.real-world title="What They Mean"}
 
