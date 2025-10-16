@@ -71,6 +71,8 @@ $$
 
 ### 4.2.2 – Finding Slope From a Graph
 
+![](/images/Unit_4/Lesson_2/stick_figure_slope.png){width="350px" fig-align="center"}
+
 * To find slope from a graph, pick two clear points on the line.
 * Count the **rise** (change in y) and the **run** (change in x).
 * Then use (m = \frac{\text{rise}}{\text{run}}).
