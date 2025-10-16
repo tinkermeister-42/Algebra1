@@ -37,9 +37,9 @@ This rate of change is called the **slope**, one of the most important concepts 
 
 ### 4.2.1 – What Is Slope?
 
-This section is an intuition builder.
+Look at the image below. In each of the four panels, a person is climbing stairs. In what ways are each of the four images similar and in what ways are they different?
 
-Compare stairs to climb. Show images of someone climbing shallow stairs and some steep mountain stairs.
+![](/images/Unit_4/Lesson_2/stairs_xkcd.png){width=350px fig-align="center"}
 
 * The **slope** of a line tells how steep it is — how fast y changes as x changes.
 * It’s the **rate of change** between x and y.
