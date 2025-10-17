@@ -498,9 +498,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#what-is-slope" id="toc-what-is-slope" class="nav-link active" data-scroll-target="#what-is-slope">4.2.1 – What Is Slope?</a></li>
-  <li><a href="#finding-slope-from-a-graph" id="toc-finding-slope-from-a-graph" class="nav-link" data-scroll-target="#finding-slope-from-a-graph">4.2.2 – Finding Slope From a Graph</a></li>
-  <li><a href="#types-of-slope" id="toc-types-of-slope" class="nav-link" data-scroll-target="#types-of-slope">4.2.3 – Types of Slope</a></li>
-  <li><a href="#slope-in-the-real-world" id="toc-slope-in-the-real-world" class="nav-link" data-scroll-target="#slope-in-the-real-world">4.2.4 – Slope in the Real World</a></li>
+  <li><a href="#finding-slope-from-a-graph" id="toc-finding-slope-from-a-graph" class="nav-link" data-scroll-target="#finding-slope-from-a-graph">4.2.2 – Finding Slope from a Graph</a></li>
+  <li><a href="#interactive-slope-exploration" id="toc-interactive-slope-exploration" class="nav-link" data-scroll-target="#interactive-slope-exploration">4.2.3 – Interactive Slope Exploration</a></li>
+  <li><a href="#finding-slope-using-the-slope-formula" id="toc-finding-slope-using-the-slope-formula" class="nav-link" data-scroll-target="#finding-slope-using-the-slope-formula">4.2.4 – Finding Slope Using the Slope Formula</a></li>
   </ul>
 </nav>
     </div>
@@ -526,44 +526,52 @@ window.Quarto = {
 </header>
 
 
-<p>In the previous lesson, you learned how to create tables of values for a linear function to create a graph. Different linear functions produced different graphs but they all produced straight lines.</p>
-<p>In real-world situations, it is often useful to compare functions by looking at their graphs.</p>
-<p>In this lesson, you will learn how to describe the way that lines change as you move from left to right. This rate of change is called the <strong>slope</strong>, one of the most important concepts you will learn in algebra.</p>
+<p>In the previous lesson, you graphed straight lines by making a table of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> values. Different equations made different graphs, but they were all <strong>linear</strong> — their points lined up perfectly.</p>
+<p>In real-world situations, we often want to compare how fast things change. Some lines rise quickly, some fall, and others stay flat. That rate of change is called the <strong>slope</strong> — one of the most important ideas in algebra.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can find the slope of a line from a graph or from two points.</label></li>
-<li><label><input type="checkbox">I can describe slope as a rate of change between x and y.</label></li>
+<li><label><input type="checkbox">I can describe slope as a rate of change between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</label></li>
 <li><label><input type="checkbox">I can tell whether a slope is positive, negative, zero, or undefined.</label></li>
 <li><label><input type="checkbox">I can explain why vertical lines do not have a slope.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="#glossary-slope" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="#glossary-rise" class="glossary-link" data-slug="rise" data-original-href="#glossary-rise" data-term="rise">rise</a>, <a href="#glossary-run" class="glossary-link" data-slug="run" data-original-href="#glossary-run" data-term="run">run</a>, <a href="../../glossary.html#glossary-rate" class="glossary-link" data-slug="rate" data-original-href="#glossary-rate" data-term="rate">rate</a>, <a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-slug="horizontal" data-original-href="#glossary-horizontal" data-term="horizontal">horizontal</a>, <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-slug="vertical" data-original-href="#glossary-vertical" data-term="vertical">vertical</a></p>
+<p><a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-slug="horizontal" data-term="horizontal" data-original-href="#glossary-horizontal">horizontal</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-term="slope" data-original-href="#glossary-slope">slope</a>, <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-slug="vertical" data-term="vertical" data-original-href="#glossary-vertical">vertical</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
-<li><p>Plot the function <span class="math inline">\(f(x) = 2x + 1\)</span>.</p></li>
-<li><p>On the same graph, plot the function <span class="math inline">\(g(x) = -3x + 1\)</span>.</p></li>
-<li><p>Looking at your graph. How are the two lines the same? How are they different? [plot of two lines with same intercept but different slopes]</p></li>
+<li><p>Plot the function <span class="math inline">\(f(x)=2x+1\)</span>.</p></li>
+<li><p>On the same graph, plot <span class="math inline">\(g(x)=-3x+1\)</span>.</p></li>
+<li><p>Compare the two lines. How are they alike? How are they different?</p></li>
 </ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
 <section id="what-is-slope" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-slope">4.2.1 – What Is Slope?</h3>
-<p>Look at the image below. In each of the four panels, a person is climbing stairs. How are the four images similar? How are they different?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/stairs_xkcd.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
-<p>You probably notice that the stairs in panels A and D are far less steep than the stairs in panels B and C. You may also notice that the stairs in panels A and C move up and to the right while the ones in panels B and D move down.</p>
-<p>Linear functions are the same. Sometimes they go up as we move to the right, and sometimes they go down. Sometimes they are steep, and other times they are less so. Together, direction and steepness describe the <strong>slope</strong>.</p>
-<p>The slope tells how much we rise (up or down) for every step we move to the right — it’s a rate of change. A larger slope means the line rises or falls more sharply — the <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-slug="vertical" data-original-href="#glossary-vertical" data-term="vertical">vertical</a> change happens faster for each <a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-slug="horizontal" data-original-href="#glossary-horizontal" data-term="horizontal">horizontal</a> step to the right.</p>
-<p>On a graph, the <strong>rise</strong> is a change in <span class="math inline">\(y\)</span> (abbreviated as <span class="math inline">\(\Delta y\)</span>) and the <strong>run</strong> is a change in <span class="math inline">\(x\)</span> (abbreviated as <span class="math inline">\(\Delta x\)</span>).</p>
-<p>The slope, often abbreviated as <span class="math inline">\(m\)</span>, is simply:</p>
+<p>Look at the four stairways above. They all go up and down, but not in the same way. Some are steep, some are gentle. Some rise as you move to the right, and others fall.</p>
+<p>Lines on a graph work the same way. The <strong>slope</strong> tells how a line tilts — whether it goes up or down, and how steep it is.</p>
+<p>If you walk along a line from left to right, two things happen: you move <strong>across</strong> the graph (that’s the <em>run</em>) and you move <strong>up or down</strong> (that’s the <em>rise</em>). Slope is how much the <em>rise</em> changes compared to the <em>run</em>.</p>
+<p>Mathematicians use the letter <strong>m</strong> for slope — think of it as the <em>measure</em> of steepness:</p>
 <p><span class="math display">\[
-m = \frac{\text{rise}}{\text{run}} = \frac{\Delta y}{\Delta x}
+m = \frac{\text{rise}}{\text{run}}
 \]</span></p>
-<div class="think" title="How does the rise (change in y) compare to the run (change in x) in each of the 4 panels above?">
+<p>Instead of the words <em>rise</em> and <em>run</em>, we often use the Greek letter <strong>Δ (delta)</strong>, which means <strong>change</strong>. So:</p>
+<ul>
+<li><strong>Δy</strong> means “change in <span class="math inline">\(y\)</span>” — how much the <span class="math inline">\(y\)</span>-values go up or down.</li>
+<li><strong>Δx</strong> means “change in <span class="math inline">\(x\)</span>” — how much the <span class="math inline">\(x\)</span>-values move left or right.</li>
+</ul>
+<p>That means the slope formula can also be written as:</p>
+<p><span class="math display">\[
+m = \frac{\Delta y}{\Delta x}
+\]</span></p>
+<p>A <strong>positive</strong> slope means the line rises as you move right. A <strong>negative</strong> slope means it falls. A <strong>larger</strong> slope means it’s steeper.</p>
+<p>As you can see, each stair pattern has a different tilt — just like lines on a graph. Next, we’ll place these same stairs on a coordinate grid so we can measure their slope more precisely.</p>
+<div class="think" title="What do you notice about how the rise compares to the run in each panel?">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -575,23 +583,23 @@ m = \frac{\text{rise}}{\text{run}} = \frac{\Delta y}{\Delta x}
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">A</td>
-<td style="text-align: center;">Positive (up)</td>
-<td style="text-align: center;">About <span class="math inline">\(\frac{2}{3}\)</span> as fast</td>
+<td style="text-align: center;">Up (positive)</td>
+<td style="text-align: center;">About <span class="math inline">\(\tfrac{2}{3}\)</span> as fast</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">B</td>
-<td style="text-align: center;">Negative (down)</td>
+<td style="text-align: center;">Down (negative)</td>
 <td style="text-align: center;">About the same</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">C</td>
-<td style="text-align: center;">Positive</td>
+<td style="text-align: center;">Up (positive)</td>
 <td style="text-align: center;">About the same</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">D</td>
-<td style="text-align: center;">Negative</td>
-<td style="text-align: center;">About <span class="math inline">\(\frac{2}{3}\)</span> as fast</td>
+<td style="text-align: center;">Down (negative)</td>
+<td style="text-align: center;">About <span class="math inline">\(\tfrac{2}{3}\)</span> as fast</td>
 </tr>
 </tbody>
 </table>
@@ -599,77 +607,91 @@ m = \frac{\text{rise}}{\text{run}} = \frac{\Delta y}{\Delta x}
 <hr>
 </section>
 <section id="finding-slope-from-a-graph" class="level3">
-<h3 class="anchored" data-anchor-id="finding-slope-from-a-graph">4.2.2 – Finding Slope From a Graph</h3>
-<p>In the previous section we said that slope is <strong>rise</strong> over <strong>run</strong> (<span class="math inline">\(\frac{\Delta y}{\Delta x}\)</span>).</p>
-<p>We visually compared the stairs in each of the 4 panels, noting that sometimes the stairs went up (positive) and sometimes they went down (negative). We used comparisions of the rise to the run with statements like “about the same”.</p>
-<p><strong>Example 1:</strong></p>
-<p>Let’s look the same image again, but this time we will overlay a coordinate plane so that we can be more precise.</p>
+<h3 class="anchored" data-anchor-id="finding-slope-from-a-graph">4.2.2 – Finding Slope from a Graph</h3>
+<p>Now let’s connect those stair patterns to a coordinate plane. This time, each set of stairs is <strong>overlaid</strong> with a grid so you can see the <em>exact</em> vertical and horizontal changes.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/stairs_xkcd_grid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 </figure>
 </div>
-<p>In panel A, the person climbs <strong>up</strong> 2 units for every 3 units they move <strong>right</strong>. The change in y (<span class="math inline">\(\Delta y\)</span>) is 2 and the change in x (<span class="math inline">\(\Delta x\)</span>) is 3. So the slope is <span class="math inline">\(m = \frac{2}{3}\)</span>.</p>
-<p>In panel B, the person climbs <strong>down</strong> 3 units for every 3 units they move <strong>right</strong>. So the slope is <span class="math inline">\(m = \frac{-3}{3} = -1\)</span>.</p>
-<p>In panel C, the person climbs <strong>up</strong> 3 units for every 3 units the move <strong>right</strong>. So the slope is <span class="math inline">\(m = \frac{3}{3} = 1\)</span>.</p>
-<p>Finally, in panel D, the person climbs <strong>down</strong> 2 units for every 3 units they move right. So the slope is <span class="math inline">\(m = \frac{2}{3}\)</span>.</p>
+<p>In each panel, count how far the person moves <em>up or down</em> (Δy) and <em>right</em> (Δx):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Panel</th>
+<th style="text-align: center;">Δy</th>
+<th style="text-align: center;">Δx</th>
+<th style="text-align: center;">Slope <span class="math inline">\(m=\tfrac{Δy}{Δx}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"><span class="math inline">\(\tfrac{2}{3}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">–3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">–1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">+3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">–2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">–<span class="math inline">\(\tfrac{2}{3}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>positive</strong> slope means the line rises left-to-right. A <strong>negative</strong> slope means it falls. Notice that Panels A and C rise, while B and D fall — exactly what we saw before, now confirmed by the numbers.</p>
 <hr>
-<p><strong>Example 2:</strong></p>
-<p>Find the slope of the line graphed below.</p>
+<p><strong>Example — Count the changes</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/Example2A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
 </figure>
 </div>
-<p>First, we pick two known points on the graph. Here we picked <span class="math inline">\((0, 2)\)</span> and <span class="math inline">\((5, 6)\)</span>. Then we find the change in the x-values (<span class="math inline">\(\Delta x\)</span>) and the change in the y values (<span class="math inline">\(\Delta y\)</span>).</p>
+<p>Pick two clear points on the line — here, <span class="math inline">\((0,2)\)</span> and <span class="math inline">\((5,6)\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/Example2B.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
 </figure>
 </div>
-<p>The slope of the line is:</p>
-<p><span class="math display">\[
-m = \frac{\Delta y}{\Delta x} = \frac{4}{5}
-\]</span></p>
+<p>Start at <span class="math inline">\((0,2)\)</span> and <strong>count</strong> boxes to get to <span class="math inline">\((5,6)\)</span>:</p>
+<ul>
+<li>Move <strong>right</strong> until you get to <span class="math inline">\(x=5\)</span>: <span class="math inline">\(\Delta x = 5\)</span></li>
+<li>From there, move <strong>up</strong> until you reach <span class="math inline">\(y=6\)</span>: <span class="math inline">\(\Delta y = 4\)</span></li>
+</ul>
+<p>Between these two points, the line moves <strong>right 5</strong> and <strong>up 4</strong>. <em>(In the next section, we’ll use these counts in the slope formula.)</em></p>
+<div class="you-try-m" title="Counting boxes">
+<p>Compute the slope of the line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_2/YouTry4_2_2A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+</div>
+<div class="answer" title="Answer">
+<p>Counting from <span class="math inline">\((-6, 3)\)</span> to <span class="math inline">\((3, -3)\)</span> you move:</p>
+<ul>
+<li>9 to the <strong>right</strong></li>
+<li>6 <strong>down</strong></li>
+</ul>
+<p>So <span class="math inline">\(\Delta x=9\)</span>, <span class="math inline">\(\Delta y=-6\)</span>, and <span class="math inline">\(m=-\tfrac{6}{9}=-\tfrac{2}{3}\)</span>.</p>
+</div>
 <hr>
 </section>
-<section id="types-of-slope" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-slope">4.2.3 – Types of Slope</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Positive</strong></td>
-<td>Line rises left to right</td>
-<td>(m &gt; 0)</td>
-</tr>
-<tr class="even">
-<td><strong>Negative</strong></td>
-<td>Line falls left to right</td>
-<td>(m &lt; 0)</td>
-</tr>
-<tr class="odd">
-<td><strong>Zero</strong></td>
-<td>Line is flat (horizontal)</td>
-<td>(y = 3)</td>
-</tr>
-<tr class="even">
-<td><strong>Undefined</strong></td>
-<td>Line is vertical (no run)</td>
-<td>(x = -2)</td>
-</tr>
-</tbody>
-</table>
-<!--
-Embed this raw HTML block directly in your .qmd where you want the widget to appear.
-Optionally save as a partial (e.g., partials/slope-widget.html) and include with {{< include partials/slope-widget.html >}}.
--->
+<section id="interactive-slope-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-slope-exploration">4.2.3 – Interactive Slope Exploration</h3>
+<p>Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.</p>
 <div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="true" style="max-width:720px;margin:1rem auto">
 
 </div>
@@ -677,17 +699,31 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
   .slope-widget {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
   .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem}
   .slope-badge {padding:0.25rem 0.5rem; border:1px solid #ddd; border-radius:0.5rem; font-variant-numeric: tabular-nums;}
+
   .slope-fig {border:1px solid #e5e7eb; border-radius:0.5rem; background:#fff;}
   .slope-fig svg {touch-action:none; display:block; width:100%; height:auto; aspect-ratio: 1 / 1;}
+
   .tick-label {font-size:10px; fill:#6b7280}
   .axis {stroke:#111827; stroke-width:1}
   .grid {stroke:#e5e7eb; stroke-width:1}
   .grid.minor {stroke:#f3f4f6}
+
   .pt {cursor:grab}
   .pt:active {cursor:grabbing}
-  .line {stroke-width:2}
-  .guide {stroke:#9ca3af; stroke-dasharray:3 3;}
-  .legend {font-size:12px; fill:#374151}
+
+  .line {stroke:#2563eb; stroke-width:2}
+
+  /* Dotted Δ legs */
+  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.7; }
+  .leg-x { stroke:#0ea5e9; } /* blue-green */
+  .leg-y { stroke:#10b981; } /* green */
+
+  /* Label groups (rect background + text) */
+  .lbl text { font-size:12px; fill:#111827; }
+  .lbl rect { fill:#ffffff; stroke:#e5e7eb; stroke-width:1; rx:3; ry:3; }
+
+  .leader { stroke:#9ca3af; stroke-dasharray:3 3; stroke-width:1; opacity:.8 }
+
   .kbd {font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; padding:0.1rem 0.35rem; border:1px solid #ddd; border-radius:4px; background:#f9fafb}
 
   /* Prevent selection/drag ghosts while interacting */
@@ -699,47 +735,82 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
   // UTILITIES
   const gcd = (a,b)=>{a=Math.abs(a); b=Math.abs(b); while(b){[a,b]=[b,a%b]} return a||1};
   const toFrac = (dy,dx)=>{
-    if(dx===0) return {tex:'\\text{undefined}', text:'undefined', m:null};
+    if(dx===0) return {text:'undefined', m:null};
     const sign = (dy*dx)>=0 ? 1 : -1;
     dy = Math.abs(dy); dx = Math.abs(dx);
-    const g = gcd(dy,dx); const n = (sign*dy/g), d = dx/g;
-    const tex = d===1 ? String(n) : n+"/"+d;
-    return {tex, text: d===1? String(n): `${n}/${d}`, m: n/d};
+    const g = gcd(dy,dx); const n = sign*(dy/g), d = dx/g;
+    return {text: d===1? String(n): `${n}/${d}`, m: n/d};
   };
+  const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
+  const clamp = (v,lo,hi)=> Math.max(lo, Math.min(hi, v));
+  const rectsOverlap = (a,b)=> !(a.x+a.width < b.x || b.x+b.width < a.x || a.y+a.height < b.y || b.y+b.height < a.y);
+
+  // Label helpers (rect + text + optional leader)
+  function makeLabelLayer(svg, withLeader=false){
+    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','lbl');
+    const r = document.createElementNS('http://www.w3.org/2000/svg','rect');
+    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+    g.append(r,t);
+    if(withLeader){
+      const l = document.createElementNS('http://www.w3.org/2000/svg','line');
+      l.setAttribute('class','leader');
+      g.appendChild(l);
+      g._leader = l;
+    }
+    svg.appendChild(g);
+    g._rect=r; g._text=t;
+    return g;
+  }
+  function positionLabel(g, x, y, text, anchor='start'){
+    const t=g._text, r=g._rect;
+    t.textContent = text;
+    t.setAttribute('x', x); t.setAttribute('y', y);
+    t.setAttribute('text-anchor', anchor);
+    return new Promise(resolve=>{
+      // microtask so bbox is available after text layout
+      Promise.resolve().then(()=>{
+        const padX=4, padY=2;
+        const bb=t.getBBox();
+        r.setAttribute('x', bb.x - padX);
+        r.setAttribute('y', bb.y - padY);
+        r.setAttribute('width', bb.width + 2*padX);
+        r.setAttribute('height', bb.height + 2*padY);
+        resolve({textBB:bb, rectBB:r.getBBox()});
+      });
+    });
+  }
 
   function createWidget(container){
-    // READ CONFIG
+    // CONFIG
     const xmin = +container.dataset.xmin ?? -10;
     const xmax = +container.dataset.xmax ?? 10;
     const ymin = +container.dataset.ymin ?? -10;
     const ymax = +container.dataset.ymax ?? 10;
-    const step = +container.dataset.step || 1; // snap size
+    const step = +container.dataset.step || 1;
     const gridLabels = (container.dataset.gridLabels||'true') !== 'false';
 
-    // Square canvas by default
-    const w = 480, h = 480, pad = 36; // inner padding for labels
+    // Canvas
+    const w = 480, h = 480, pad = 36;
     const xScale = x=> pad + (x - xmin) * (w - 2*pad) / (xmax - xmin);
     const yScale = y=> h - pad - (y - ymin) * (h - 2*pad) / (ymax - ymin);
     const invX = X=> xmin + (X - pad) * (xmax - xmin) / (w - 2*pad);
     const invY = Y=> ymin + (h - pad - Y) * (ymax - ymin) / (h - 2*pad);
 
-    // INITIAL STATE (two distinct points)
-    let P = {x: -4, y: -1};
-    let Q = {x:  6, y:  5};
+    // State
+    let P = {x:-4, y:-1};
+    let Q = {x: 6, y: 5};
 
     // DOM
-    container.innerHTML = "";
-
-    // UI header
+    container.innerHTML = '';
     const ui = document.createElement('div');
     ui.className = 'slope-ui';
     ui.innerHTML = `
       <div class="legend">Drag the points. They snap to the grid (<span class="kbd">Shift</span> = fine adjust by ${step/2}).</div>
-      <div class="slope-badge">slope m = <span class="slope-val" aria-live="polite"></span></div>
+      <div class="slope-badge">m = <span class="slope-val" aria-live="polite"></span></div>
     `;
     container.appendChild(ui);
 
-    // FIGURE
     const fig = document.createElement('div');
     fig.className = 'slope-fig';
     const svgNS = 'http://www.w3.org/2000/svg';
@@ -748,20 +819,17 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
     fig.appendChild(svg);
     container.appendChild(fig);
 
-    // Accessibility / selection prevention
-    container.setAttribute('draggable','false');
-    svg.setAttribute('draggable','false');
+    // Layers
+    const gridG   = document.createElementNS(svgNS,'g');
+    const axesG   = document.createElementNS(svgNS,'g');
+    const lineG   = document.createElementNS(svgNS,'g');
+    const legsG   = document.createElementNS(svgNS,'g');
+    const lblsG   = document.createElementNS(svgNS,'g');
+    const ptsG    = document.createElementNS(svgNS,'g');
+    const ticksG  = document.createElementNS(svgNS,'g');
+    svg.append(gridG, axesG, lineG, legsG, lblsG, ptsG, ticksG);
 
-    // LAYERS
-    const gridG = document.createElementNS(svgNS,'g');
-    const axesG = document.createElementNS(svgNS,'g');
-    const lineG = document.createElementNS(svgNS,'g');
-    const guidesG = document.createElementNS(svgNS,'g');
-    const ptsG = document.createElementNS(svgNS,'g');
-    const labelsG = document.createElementNS(svgNS,'g');
-    svg.append(gridG, axesG, lineG, guidesG, ptsG, labelsG);
-
-    // GRID (minor every step, major every 5*step)
+    // Grid
     const addLine = (x1,y1,x2,y2, cls)=>{
       const l = document.createElementNS(svgNS,'line');
       l.setAttribute('x1',x1); l.setAttribute('y1',y1);
@@ -769,7 +837,6 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
       l.setAttribute('class',cls);
       gridG.appendChild(l);
     };
-
     const majorEvery = 5*step;
     for(let x=Math.ceil(xmin/step)*step; x<=xmax; x+=step){
       const X = xScale(x);
@@ -778,7 +845,7 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
         const t = document.createElementNS(svgNS,'text');
         t.setAttribute('x', X); t.setAttribute('y', h-pad+12); t.setAttribute('text-anchor','middle');
         t.setAttribute('class','tick-label'); t.textContent = x;
-        labelsG.appendChild(t);
+        ticksG.appendChild(t);
       }
     }
     for(let y=Math.ceil(ymin/step)*step; y<=ymax; y+=step){
@@ -788,29 +855,27 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
         const t = document.createElementNS(svgNS,'text');
         t.setAttribute('x', pad-6); t.setAttribute('y', Y+3); t.setAttribute('text-anchor','end');
         t.setAttribute('class','tick-label'); t.textContent = y;
-        labelsG.appendChild(t);
+        ticksG.appendChild(t);
       }
     }
 
-    // AXES
+    // Axes
     const X0 = Math.max(pad, Math.min(w-pad, xScale(0)));
     const Y0 = Math.max(pad, Math.min(h-pad, yScale(0)));
     const xAxis = document.createElementNS(svgNS,'line');
     xAxis.setAttribute('x1', pad); xAxis.setAttribute('y1', Y0);
     xAxis.setAttribute('x2', w-pad); xAxis.setAttribute('y2', Y0);
     xAxis.setAttribute('class','axis'); axesG.appendChild(xAxis);
-
     const yAxis = document.createElementNS(svgNS,'line');
     yAxis.setAttribute('x1', X0); yAxis.setAttribute('y1', pad);
     yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h-pad);
     yAxis.setAttribute('class','axis'); axesG.appendChild(yAxis);
 
-    // ARROWHEADS (simple)
     function arrow(x1,y1,x2,y2){
       const a = document.createElementNS(svgNS,'path');
-      const angle = Math.atan2(y2-y1, x2-x1);
-      const L=6, W=4, bx=x2-Math.cos(angle)*L, by=y2-Math.sin(angle)*L;
-      const nx = Math.cos(angle+Math.PI/2)*W, ny=Math.sin(angle+Math.PI/2)*W;
+      const ang = Math.atan2(y2-y1, x2-x1);
+      const L=6, W=4, bx=x2-Math.cos(ang)*L, by=y2-Math.sin(ang)*L;
+      const nx = Math.cos(ang+Math.PI/2)*W, ny=Math.sin(ang+Math.PI/2)*W;
       a.setAttribute('d',`M ${x2} ${y2} L ${bx+nx} ${by+ny} L ${bx-nx} ${by-ny} Z`);
       a.setAttribute('fill','#111827');
       return a;
@@ -818,70 +883,52 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
     axesG.appendChild(arrow(pad, Y0, w-pad, Y0));
     axesG.appendChild(arrow(X0, h-pad, X0, pad));
 
-    // LINE THROUGH P AND Q (clipped to rectangle bounds)
+    // Main line
     const line = document.createElementNS(svgNS,'line');
-    line.setAttribute('class','line'); line.setAttribute('stroke','#2563eb');
+    line.setAttribute('class','line');
     lineG.appendChild(line);
 
-    // GUIDES (dashed projections to axes)
-    const gPx = document.createElementNS(svgNS,'line'); gPx.setAttribute('class','guide'); guidesG.appendChild(gPx);
-    const gPy = document.createElementNS(svgNS,'line'); gPy.setAttribute('class','guide'); guidesG.appendChild(gPy);
-    const gQx = document.createElementNS(svgNS,'line'); gQx.setAttribute('class','guide'); guidesG.appendChild(gQx);
-    const gQy = document.createElementNS(svgNS,'line'); gQy.setAttribute('class','guide'); guidesG.appendChild(gQy);
+    // Dotted legs
+    const legX = document.createElementNS(svgNS,'line'); legX.setAttribute('class','leg-x'); legsG.appendChild(legX);
+    const legY = document.createElementNS(svgNS,'line'); legY.setAttribute('class','leg-y'); legsG.appendChild(legY);
 
-    // DRAGGABLE POINTS
+    // Δ labels + leaders
+    const dxLabel = makeLabelLayer(lblsG, true);
+    const dyLabel = makeLabelLayer(lblsG, true);
+
+    // Point groups with circles; labels are separate groups (so they can dodge)
     function makePoint(color){
       const g = document.createElementNS(svgNS,'g');
       const c = document.createElementNS(svgNS,'circle');
       c.setAttribute('r',6); c.setAttribute('class','pt'); c.setAttribute('fill',color); c.setAttribute('stroke','#111827'); c.setAttribute('stroke-width','1');
-      const lbl = document.createElementNS(svgNS,'text');
-      lbl.setAttribute('class','legend'); lbl.setAttribute('text-anchor','start');
-      g.append(c,lbl); ptsG.appendChild(g);
+      g.append(c); ptsG.appendChild(g);
+      // external label
+      const lbl = makeLabelLayer(lblsG, false);
+      g._circle = c; g._label = lbl;
       g.setAttribute('draggable','false');
-      return {g,c,lbl};
+      return g;
     }
-    const pPt = makePoint('#10b981');
-    const qPt = makePoint('#ef4444');
+    const pG = makePoint('#10b981');
+    const qG = makePoint('#ef4444');
 
-    function clamp(v,lo,hi){ return Math.max(lo, Math.min(hi, v)); }
-    function snap(v, fine){
-      const s = fine ? step/2 : step;
-      return Math.round(v/s)*s;
-    }
+    let dragging=null, fineMode=false;
 
-    let dragging = null; let fineMode = false;
-    const root = document.documentElement;
-
-    function updateUI(){
-      // position points
-      pPt.g.setAttribute('transform', `translate(${xScale(P.x)} ${yScale(P.y)})`);
-      qPt.g.setAttribute('transform', `translate(${xScale(Q.x)} ${yScale(Q.y)})`);
-      pPt.lbl.setAttribute('x',8); pPt.lbl.setAttribute('y',-8); pPt.lbl.textContent=`P(${P.x}, ${P.y})`;
-      qPt.lbl.setAttribute('x',8); qPt.lbl.setAttribute('y',-8); qPt.lbl.textContent=`Q(${Q.x}, ${Q.y})`;
-
-      // guides
+    async function updateUI(){
       const PX=xScale(P.x), PY=yScale(P.y), QX=xScale(Q.x), QY=yScale(Q.y);
-      const X0c = Math.max(pad, Math.min(w-pad, xScale(0)));
-      const Y0c = Math.max(pad, Math.min(h-pad, yScale(0)));
-      gPx.setAttribute('x1',PX); gPx.setAttribute('y1',Y0c); gPx.setAttribute('x2',PX); gPx.setAttribute('y2',PY);
-      gPy.setAttribute('x1',X0c); gPy.setAttribute('y1',PY); gPy.setAttribute('x2',PX); gPy.setAttribute('y2',PY);
-      gQx.setAttribute('x1',QX); gQx.setAttribute('y1',Y0c); gQx.setAttribute('x2',QX); gQx.setAttribute('y2',QY);
-      gQy.setAttribute('x1',X0c); gQy.setAttribute('y1',QY); gQy.setAttribute('x2',QX); gQy.setAttribute('y2',QY);
+      pG.setAttribute('transform', `translate(${PX} ${PY})`);
+      qG.setAttribute('transform', `translate(${QX} ${QY})`);
 
-      // update line clipped to rectangle [xmin,xmax] x [ymin,ymax]
+      // Line clipped to bounds
       const dx = Q.x - P.x, dy = Q.y - P.y;
       if(dx===0){
-        // vertical line between ymin and ymax at x=P.x
         const X = xScale(P.x);
         line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
         line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
       } else {
         const m = dy/dx; const b = P.y - m*P.x;
         const pts = [];
-        // intersections with left/right
         const yL = m*xmin + b; if (yL>=ymin && yL<=ymax) pts.push({x:xmin,y:yL});
         const yR = m*xmax + b; if (yR>=ymin && yR<=ymax) pts.push({x:xmax,y:yR});
-        // intersections with bottom/top
         const xB = (ymin - b)/m; if (xB>=xmin && xB<=xmax) pts.push({x:xB,y:ymin});
         const xT = (ymax - b)/m; if (xT>=xmin && xT<=xmax) pts.push({x:xT,y:ymax});
         if(pts.length>=2){
@@ -890,17 +937,95 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
         }
       }
 
-      // slope
-      const slope = toFrac(dy,dx);
-      const out = container.querySelector('.slope-val');
-      out.textContent = slope.text; // 'undefined' when vertical
+      // Dotted legs (from P to Qx; then to Q)
+      legX.setAttribute('x1', PX); legX.setAttribute('y1', PY);
+      legX.setAttribute('x2', QX); legX.setAttribute('y2', PY);
+      legY.setAttribute('x1', QX); legY.setAttribute('y1', PY);
+      legY.setAttribute('x2', QX); legY.setAttribute('y2', QY);
 
-      // Trigger MathJax typesetting if present
+      // Point labels: offset along a normal so they never sit on the line
+      let nx=0, ny=-1;
+      if(!(dx===0 && dy===0)){
+        if(!(dx===0)){
+          const len = Math.hypot(dy, dx);
+          nx = -dy/len; ny = dx/len;
+        }
+      }
+      // If points are very close, push labels farther out
+      const triPix = Math.hypot(xScale(Q.x)-xScale(P.x), yScale(Q.y)-yScale(P.y));
+      const baseOff = triPix < 60 ? 22 : 14;
+
+      const pPos = await positionLabel(pG._label, PX + nx*baseOff, PY + ny*baseOff, `P(${fmt(P.x)}, ${fmt(P.y)})`, 'start');
+      const qPos = await positionLabel(qG._label, QX - nx*baseOff, QY - ny*baseOff, `Q(${fmt(Q.x)}, ${fmt(Q.y)})`, 'start');
+
+      // Δ labels: try multiple candidate positions to avoid overlap with point labels and each other
+      const off = 12, sx = dx>=0? 1 : -1, sy = dy>=0? 1 : -1;
+
+      // Δx candidates (midpoint above/below leg, try flips and larger offsets)
+      const midX = (PX+QX)/2, baseY = PY;
+      const dxCandidates = [
+        {x:midX, y: baseY + off*sy, anchor:'middle'},
+        {x:midX, y: baseY - off*sy, anchor:'middle'},
+        {x:midX, y: baseY + 2*off*sy, anchor:'middle'},
+        {x:midX, y: baseY - 2*off*sy, anchor:'middle'}
+      ];
+
+      let dxPlaced=null, dxBB=null;
+      for(const c of dxCandidates){
+        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
+        const bb = dxLabel._rect.getBBox();
+        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB)){
+          dxPlaced=c; dxBB=bb; break;
+        }
+      }
+      if(!dxPlaced){ // last resort: shove downward or upward more
+        const c = dxCandidates[0];
+        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(baseY + 3*off*sy, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
+        dxBB = dxLabel._rect.getBBox();
+      }
+      // leader for Δx
+      dxLabel._leader.setAttribute('x1', (PX+QX)/2);
+      dxLabel._leader.setAttribute('y1', baseY);
+      dxLabel._leader.setAttribute('x2', dxLabel._text.getAttribute('x'));
+      dxLabel._leader.setAttribute('y2', dxLabel._text.getAttribute('y'));
+
+      // Δy candidates (midpoint left/right of leg)
+      const midY = (PY+QY)/2, baseX = QX;
+      const dyCandidates = [
+        {x: baseX + off*sx, y: midY + 4, anchor:'start'},
+        {x: baseX - off*sx, y: midY + 4, anchor:'end'},
+        {x: baseX + 2*off*sx, y: midY + 4, anchor:'start'},
+        {x: baseX - 2*off*sx, y: midY + 4, anchor:'end'}
+      ];
+
+      let dyPlaced=null, dyBB=null;
+      for(const c of dyCandidates){
+        const res = await positionLabel(dyLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
+        const bb = dyLabel._rect.getBBox();
+        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB) && !rectsOverlap(bb, dxBB)){
+          dyPlaced=c; dyBB=bb; break;
+        }
+      }
+      if(!dyPlaced){
+        const c = dyCandidates[0];
+        await positionLabel(dyLabel, clamp(baseX + 3*off*sx, pad+6, w-pad-6), clamp(midY + 4, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
+        dyBB = dyLabel._rect.getBBox();
+      }
+      // leader for Δy
+      dyLabel._leader.setAttribute('x1', baseX);
+      dyLabel._leader.setAttribute('y1', (PY+QY)/2);
+      dyLabel._leader.setAttribute('x2', dyLabel._text.getAttribute('x'));
+      dyLabel._leader.setAttribute('y2', dyLabel._text.getAttribute('y'));
+
+      // slope badge
+      container.querySelector('.slope-val').textContent = toFrac(dy,dx).text;
+
+      // MathJax (optional)
       if(window.MathJax && MathJax.typesetPromise){ MathJax.typesetPromise([container]).catch(()=>{}); }
     }
 
-    function startDrag(which){ dragging = which; root.classList.add('slope-dragging'); }
-    function endDrag(){ dragging = null; root.classList.remove('slope-dragging'); }
+    function startDrag(which){ dragging = which; document.documentElement.classList.add('slope-dragging'); }
+    function endDrag(){ dragging = null; document.documentElement.classList.remove('slope-dragging'); }
 
     function pointerHandler(evt){
       if(!dragging) return;
@@ -910,32 +1035,34 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
       const sp = pt.matrixTransform(ctm);
       let x = invX(sp.x), y = invY(sp.y);
       x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
-      x = snap(x, fineMode); y = snap(y, fineMode);
-      // enforce integer if snapping to integer values
+
+      const s = (fineMode ? step/2 : step);
+      x = Math.round(x/s)*s; y = Math.round(y/s)*s;
+
       if(Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
       if(Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
+
       if(dragging==='P'){ P.x = x; P.y = y; }
       else { Q.x = x; Q.y = y; }
       updateUI();
     }
 
-    // Event wiring (prevent selection during drag)
-    function attachDrag(g, which){
-      g.addEventListener('pointerdown', e=>{
+    function attachDrag(group, which){
+      group.addEventListener('pointerdown', e=>{
         e.preventDefault();
-        g.setPointerCapture(e.pointerId);
+        group.setPointerCapture(e.pointerId);
         startDrag(which);
       });
-      g.addEventListener('pointerup', e=>{
+      group.addEventListener('pointerup', e=>{
         e.preventDefault();
-        g.releasePointerCapture(e.pointerId);
+        group.releasePointerCapture(e.pointerId);
         endDrag();
       });
-      g.addEventListener('pointercancel', ()=> endDrag());
-      g.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
+      group.addEventListener('pointercancel', ()=> endDrag());
+      group.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
     }
-    attachDrag(pPt.g,'P');
-    attachDrag(qPt.g,'Q');
+    attachDrag(pG,'P');
+    attachDrag(qG,'Q');
 
     window.addEventListener('keydown', e=>{ if(e.key==='Shift') fineMode=true; });
     window.addEventListener('keyup',   e=>{ if(e.key==='Shift') fineMode=false; });
@@ -943,65 +1070,137 @@ Optionally save as a partial (e.g., partials/slope-widget.html) and include with
     updateUI();
   }
 
-  // INIT all containers on this page
+  // INIT
   document.querySelectorAll('.slope-widget').forEach(createWidget);
 })();
 </script>
-<!--
-OPTIONS
-- Change data-xmin, data-xmax, data-ymin, data-ymax to set the plane range.
-- Change data-step to set the snap interval (default 1). Hold Shift while dragging for half-step.
-- Set data-grid-labels="false" to hide numeric tick labels.
-
-NOTES
-- Exact reduced fraction slope (rise/run). 'undefined' when run = 0.
-- No external libraries required. If MathJax is loaded in your book, it will re-typeset after updates automatically.
-- Line is clipped to the rectangle bounds; no overshoot at top/bottom.
-- Aspect ratio is 1:1 by CSS and by a square internal viewBox (480×480).
-- Selection/dragging is disabled while interacting to prevent text highlight/ghost images.
--->
-<div class="real-world" title="What They Mean">
-<ul>
-<li><strong>Positive slope:</strong> going uphill, savings increasing, temperature rising.</li>
-<li><strong>Negative slope:</strong> going downhill, spending money, cooling down.</li>
-<li><strong>Zero slope:</strong> no change — a flat road or steady balance.</li>
-<li><strong>Undefined slope:</strong> vertical line — you’d have to “divide by zero,” which doesn’t make sense.</li>
-</ul>
+<div class="think" title="What is the slope when the line is horizontal? Why?">
+<p>The slope is zero because the <span class="math inline">\(y\)</span>-values do not change (Δy = 0) for a horizontal line.</p>
 </div>
-<div class="you-try-m" title="Sketch examples">
-<p>Draw one example of each type of slope on graph paper. Label each line with its slope.</p>
+<p>Try making a vertical line. You will notice that the slope is <strong>undefined</strong>. This is because the <span class="math inline">\(x\)</span>-value doesn’t change, so <strong>Δx = 0</strong>. You can’t divide by zero, so the slope is undefined.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Straight up or straight down?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="think" title="When Two Lines Meet">
-<p>If two lines have different slopes, they’ll <strong>cross at one point</strong>.<br>
-That point has the same (x, y) values in both equations — it makes <strong>both</strong> true.</p>
+<div class="callout-title-container flex-fill">
+Straight up or straight down?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A vertical line has an undefined slope because you can’t divide by zero. But there is another way to think about it. Look at the picture below. One person is at the top of a cliff looking down at someone on the ground.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_2/vertical_lines.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>Is the cliff straight up, or is it straight down? It depends on who you ask! The person on the ground would say it is straight up. The person on top would say it is straight down. It can’t be both, and yet it is! Since it is both straight up and straight down, we say the slope is undefined.</p>
+</div>
 </div>
 <hr>
 </section>
-<section id="slope-in-the-real-world" class="level3">
-<h3 class="anchored">4.2.4 – Slope in the Real World</h3>
-<div class="real-world" title="Comparing Slopes in Context">
-<ul>
-<li>A <strong>wheelchair ramp</strong> that rises 1 foot for every 12 feet forward has a slope of ( ).</li>
-<li>A <strong>hill</strong> that rises 10 feet for every 20 feet forward has a slope of ( = ). Which one is steeper?</li>
-</ul>
+<section id="finding-slope-using-the-slope-formula" class="level3">
+<h3 class="anchored">4.2.4 – Finding Slope Using the Slope Formula</h3>
+<p>When a graph is available and the numbers are small, it’s often enough to <strong>count boxes</strong>. Sometimes the numbers are large or the points aren’t easy to plot. In those cases, we use the <a href="../../glossary.html#glossary-slope-formula" class="glossary-link" data-slug="slope-formula" data-term="slope formula" data-original-href="#glossary-slope-formula">slope formula</a>.</p>
+<p>For the points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span>, the slope is:</p>
+<p><span class="math display">\[
+m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+\]</span></p>
+<p>For example, the slope between the points <span class="math inline">\((1, 3)\)</span> and <span class="math inline">\((4, 5)\)</span> is:</p>
+<p><span class="math display">\[
+m = \frac{5 - 3}{4 - 1} = \frac{2}{3}
+\]</span></p>
+<p><strong>Example — Using the slope formula</strong></p>
+<p>Compute the slope of the line between the points <span class="math inline">\((-2, 8)\)</span> and <span class="math inline">\((10, 6)\)</span>.</p>
+<p>Here <span class="math inline">\(x_1 = -2\)</span>, <span class="math inline">\(x_2 = 10\)</span>, <span class="math inline">\(y_1 = 8\)</span>, and <span class="math inline">\(y_2 = 6\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+m &amp;= \frac{y_2 - y_1}{x_2 - x_1} \\
+  &amp;= \frac{6 - 8}{10 - (-2)} \\
+  &amp;= \frac{-2}{12} \\
+  &amp;= -\frac{1}{6}
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Calculate the slope between $(0, 95)$ and $(-50, 2)$">
+<p><span class="math display">\[
+\begin{align*}
+m &amp;= \frac{2 - 95}{-50 - 0} \\
+  &amp;= \frac{-93}{-50} \\
+  &amp;= \frac{93}{50}
+\end{align*}
+\]</span></p>
 </div>
-<div class="real-world" title="Rates as Slopes">
-<ul>
-<li>A car traveling 60 miles per hour and a cyclist traveling 15 miles per hour both form straight lines on a distance-time graph.</li>
-<li>The car’s line is steeper because its <strong>slope (rate of change)</strong> is greater.</li>
-</ul>
-</div>
-<div class="think" title="What Slope Tells Us">
-<p>The larger the slope, the faster the change. The smaller the slope, the slower or flatter the change.</p>
-</div>
+<h2 class="unnumbered anchored" data-anchor-id="finding-slope-using-the-slope-formula">✍️ Practice On Your Own</h2>
+<p>Is the slope <strong>positive</strong>, <strong>negative</strong>, <strong>zero</strong>, or <strong>undefined.</strong></p>
+<ol type="1">
+<li><p>A line that rises from left to right.</p></li>
+<li><p>A line that falls from left to right.</p></li>
+<li><p>A horizontal line through <span class="math inline">\((0,4)\)</span>.</p></li>
+<li><p>A vertical line through <span class="math inline">\((x=-3)\)</span>.</p></li>
+<li><p>A line that goes down very slightly — almost flat — from left to right.</p></li>
+</ol>
 <hr>
-<div class="remember" title="Key Idea">
-<p>Slope measures how y changes compared to x. A <strong>constant slope</strong> means the line rises or falls evenly — that’s what makes it <em>linear</em>.</p>
-</div>
-<h2 class="unnumbered anchored" data-anchor-id="slope-in-the-real-world">✍️ Practice On Your Own</h2>
-<p>Coming Soon</p>
+<p><strong>Plot the points and count to find the slope:</strong></p>
+<ol start="6" type="1">
+<li><p>From <span class="math inline">\((0,0)\)</span> to <span class="math inline">\((3,2)\)</span></p></li>
+<li><p>From <span class="math inline">\((–2,1)\)</span> to <span class="math inline">\((4,4)\)</span></p></li>
+<li><p>From <span class="math inline">\((1,5)\)</span> to <span class="math inline">\((4,2)\)</span></p></li>
+<li><p>From <span class="math inline">\((–3,–3)\)</span> to <span class="math inline">\((2,–3)\)</span></p></li>
+<li><p>From <span class="math inline">\((4,–1)\)</span> to <span class="math inline">\((4,3)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Use the slope formula to calculate the slope:</strong></p>
+<ol start="11" type="1">
+<li><p><span class="math inline">\((1,3)\)</span> and <span class="math inline">\((4,6)\)</span></p></li>
+<li><p><span class="math inline">\((–2,5)\)</span> and <span class="math inline">\((2,–1)\)</span></p></li>
+<li><p><span class="math inline">\((0,0)\)</span> and <span class="math inline">\((–3,9)\)</span></p></li>
+<li><p><span class="math inline">\((2,–3)\)</span> and <span class="math inline">\((5,–3)\)</span></p></li>
+<li><p><span class="math inline">\((–4,2)\)</span> and <span class="math inline">\((–4,–5)\)</span></p></li>
+<li><p><span class="math inline">\((1,\tfrac{1}{2})\)</span> and <span class="math inline">\((3,\tfrac{5}{2})\)</span></p></li>
+<li><p><span class="math inline">\((–6,9)\)</span> and <span class="math inline">\((3,–6)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Real-world slope problems:</strong></p>
+<ol start="18" type="1">
+<li><p>A ramp rises 3 inches for every 36 inches forward. What is the slope?</p></li>
+<li><p>A road climbs 200 feet over a horizontal distance of 1 mile (5280 ft). What is the slope?</p></li>
+<li><p>A plumber installs a drain pipe that drops ¼ inch for every 12 inches of length. What is the slope as a fraction?</p></li>
+<li><p>A line passes through the points (time = 1 hour, distance = 40 miles) and (time = 3 hours, distance = 100 miles). What is the slope, and what does it represent?</p></li>
+<li><p>A skier starts 1000 ft above the lodge and reaches 400 ft above it after skiing 3000 ft forward. What is the slope?</p></li>
+<li><p>A student graphs temperature over time: <span class="math inline">\((2,40°)\)</span> and <span class="math inline">\((6,68°)\)</span>. What is the slope, and what does it tell you?</p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems:</strong></p>
+<ol start="24" type="1">
+<li><p>Two lines have slopes <span class="math inline">\(m_1=3\)</span> and <span class="math inline">\(m_2=-\tfrac{1}{3}\)</span>. What is true about the relationship between these lines?</p></li>
+<li><p>A line passes through the origin and another point <span class="math inline">\((x,y)\)</span>. Show algebraically that if the line’s slope doubles, the new point <span class="math inline">\((x',y')\)</span> must satisfy <span class="math inline">\(y' = 2y\)</span> and <span class="math inline">\(x' = x\)</span>. What does this tell you about how slope affects “steepness” when the <span class="math inline">\(x\)</span> values stay fixed?</p></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li><p><strong>Positive</strong></p></li>
+<li><p><strong>Negative</strong></p></li>
+<li><p><strong>Zero</strong></p></li>
+<li><p><strong>Undefined</strong></p></li>
+<li><p><strong>Negative</strong> (small magnitude; just below 0)</p></li>
+<li><p><span class="math inline">\(\frac{2}{3}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{2}\)</span></p></li>
+<li><p><span class="math inline">\(-1\)</span></p></li>
+<li><p><span class="math inline">\(0\)</span></p></li>
+<li><p><strong>Undefined</strong></p></li>
+<li><p><span class="math inline">\(1\)</span></p></li>
+<li><p><span class="math inline">\(-\frac{3}{2}\)</span></p></li>
+<li><p><span class="math inline">\(-3\)</span></p></li>
+<li><p><span class="math inline">\(0\)</span></p></li>
+<li><p><strong>Undefined</strong></p></li>
+<li><p><span class="math inline">\(1\)</span></p></li>
+<li><p><span class="math inline">\(-\frac{5}{3}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{12}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{132}\approx0.0379\)</span></p></li>
+<li><p><span class="math inline">\(-\frac{1}{48}\)</span></p></li>
+<li><p><span class="math inline">\(30\)</span> miles/hour (speed)</p></li>
+<li><p><span class="math inline">\(-\frac{1}{5}\)</span></p></li>
+<li><p>7° per hour</p></li>
+</ol>
 </div>
 
 
