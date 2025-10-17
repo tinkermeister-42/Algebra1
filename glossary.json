@@ -93,6 +93,8 @@
   "simplest-form": "A fraction is in simplest form when the numerator and denominator have no common factors except 1.",
   "simplify": "To simplify a number or expression means to rewrite it in a cleaner or shorter way — without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.",
   "skip-count": "Skip counting means counting forward (or backward) by a number other than 1 — like 2, 5, or 10. It’s a way to count faster using patterns.",
+  "slope": "A number that shows how a line tilts — how much it goes up or down as you move left or right on a graph. It describes both the direction and the steepness of a line.",
+  "slope-formula": "The equation used to find the slope of a line by comparing how much y changes to how much x changes. It’s written as:",
   "solution": "A solution is any value of a variable that makes an equation true. If there’s more than one answer, we call the set of all answers the solution set.",
   "solve": "To solve an equation means to find every value of the variable that makes the equation true — so both sides are equal. The answer(s) you find are the solution (or solution set).",
   "substitute": "To substitute means to replace a variable with a number (or another expression) in an expression or an equation. We often say “plug in.” Use parentheses when you plug in, especially with negative numbers.",

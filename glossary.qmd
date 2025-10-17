@@ -1134,6 +1134,41 @@ Skip counting means **counting forward (or backward) by a number other than 1** 
 
 ---
 
+### Slope {#glossary-slope}
+
+A number that shows how a line tilts — how much it goes **up or down** as you move **left or right** on a graph.
+It describes both the **direction** and the **steepness** of a line.
+
+If the line goes **up** from left to right, the slope is **positive**.
+If it goes **down**, the slope is **negative**.
+A bigger slope means a steeper line.
+
+> **Example:**
+> A line that rises 2 units for every 3 units it moves right has a slope of $\tfrac{2}{3}$.
+
+---
+
+### Slope Formula {#glossary-slope-formula}
+
+The equation used to find the **slope** of a line by comparing how much $y$ changes to how much $x$ changes.
+It’s written as:
+
+$$
+m = \frac{\Delta y}{\Delta x}
+$$
+
+where
+
+* **Δy** means “change in y” (up or down), and
+* **Δx** means “change in x” (left or right).
+
+> **Example:**
+>
+> If a line passes through the points (1, 2) and (4, 8),
+> then $m = \dfrac{8 - 2}{4 - 1} = \dfrac{6}{3} = 2$.
+
+---
+
 ### Solution {#glossary-solution}
 
 A **solution** is any value of a variable that makes an equation true. If there’s more than one answer, we call the set of all answers the **solution set**.

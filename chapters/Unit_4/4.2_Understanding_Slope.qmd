@@ -1,176 +1,328 @@
 # 4.2 – Understanding Slope {.unnumbered}
 
-In the previous lesson, you learned how to create tables of values for a linear function to create a graph. 
-Different linear functions produced different graphs but they all produced straight lines. 
+In the previous lesson, you graphed straight lines by making a table of $x$ and $y$ values.
+Different equations made different graphs, but they were all **linear** — their points lined up perfectly.
 
-In real-world situations, it is often useful to compare functions by looking at their graphs.
-
-In this lesson, you will learn how to describe the way that lines change as you move from left to right.
-This rate of change is called the **slope**, one of the most important concepts you will learn in algebra.
+In real-world situations, we often want to compare how fast things change.
+Some lines rise quickly, some fall, and others stay flat. That rate of change is called the **slope** — one of the most important ideas in algebra.
 
 :::{.objectives}
 
-- [ ] I can find the slope of a line from a graph or from two points.
-- [ ] I can describe slope as a rate of change between x and y.
-- [ ] I can tell whether a slope is positive, negative, zero, or undefined.
-- [ ] I can explain why vertical lines do not have a slope.
-
+* [ ] I can find the slope of a line from a graph or from two points.
+* [ ] I can describe slope as a rate of change between $x$ and $y$.
+* [ ] I can tell whether a slope is positive, negative, zero, or undefined.
+* [ ] I can explain why vertical lines do not have a slope.
 :::
 
 :::{.vocab}
-
-{{< glink slope >}}, {{< glink rise >}}, {{< glink run >}}, {{< glink rate of change >}}, {{< glink horizontal line >}}, {{< glink vertical line >}}
-
+{{< glink horizontal >}}, {{< glink slope >}}, {{< glink vertical >}}
 :::
 
 {{< warmup >}}
 
-1. Plot the function $f(x) = 2x + 1$.
+1. Plot the function $f(x)=2x+1$.
 
-2. On the same graph, plot the function $g(x) = -3x + 1$.
+2. On the same graph, plot $g(x)=-3x+1$.
 
-3. Looking at your graph. How are the two lines the same? How are they different?
-   [plot of two lines with same intercept but different slopes]
-
-
+3. Compare the two lines. How are they alike? How are they different?
+   
 {{< learn >}}
 
 ### 4.2.1 – What Is Slope?
 
-Look at the image below. In each of the four panels, a person is climbing stairs. How are the four images similar? How are they different?
-
 ![](/images/Unit_4/Lesson_2/stairs_xkcd.png){width=350px fig-align="center"}
 
-You probably notice that the stairs in panels A and D are far less steep than the stairs in panels B and C. You may also notice that the stairs in panels A and C move up and to the right while the ones in panels B and D move down.
+Look at the four stairways above.
+They all go up and down, but not in the same way. Some are steep, some are gentle. Some rise as you move to the right, and others fall.
 
-Linear functions are the same. Sometimes they go up as we move to the right, and sometimes they go down. Sometimes they are steep, and other times they are less so. Together, direction and steepness describe the **slope**.
+Lines on a graph work the same way.
+The **slope** tells how a line tilts — whether it goes up or down, and how steep it is.
 
-The slope tells how much we rise (up or down) for every step we move to the right — it’s a rate of change. A larger slope means the line rises or falls more sharply — the {{< glink vertical >}} change happens faster for each {{< glink horizontal >}} step to the right.
+If you walk along a line from left to right, two things happen:
+you move **across** the graph (that’s the *run*) and you move **up or down** (that’s the *rise*).
+Slope is how much the *rise* changes compared to the *run*.
 
-On a graph, the **rise** is a change in $y$ (abbreviated as $\Delta y$) and the **run** is a change in $x$ (abbreviated as $\Delta x$). 
-
-The slope, often abbreviated as $m$, is simply:
+Mathematicians use the letter **m** for slope — think of it as the *measure* of steepness:
 
 $$
-m = \frac{\text{rise}}{\text{run}} = \frac{\Delta y}{\Delta x}
+m = \frac{\text{rise}}{\text{run}}
 $$
 
-:::{.think title="How does the rise (change in y) compare to the run (change in x) in each of the 4 panels above?"}
+Instead of the words *rise* and *run*, we often use the Greek letter **Δ (delta)**, which means **change**.
+So:
 
-|   Panel  |   Direction | Rise Compared to Run |
-|   :-:    |   :-:    | :-: | 
-|   A      |   Positive (up) | About $\frac{2}{3}$ as fast |
-|   B      |   Negative (down) | About the same   | 
-|   C      |   Positive     |   About the same | 
-|   D      |   Negative     |  About $\frac{2}{3}$ as fast |
+* **Δy** means “change in $y$” — how much the $y$-values go up or down.
+* **Δx** means “change in $x$” — how much the $x$-values move left or right.
+
+That means the slope formula can also be written as:
+
+$$
+m = \frac{\Delta y}{\Delta x}
+$$
+
+A **positive** slope means the line rises as you move right.
+A **negative** slope means it falls.
+A **larger** slope means it’s steeper.
+
+As you can see, each stair pattern has a different tilt — just like lines on a graph.
+Next, we’ll place these same stairs on a coordinate grid so we can measure their slope more precisely.
+
+:::{.think title="What do you notice about how the rise compares to the run in each panel?"}
+
+| Panel |    Direction    |     Rise Compared to Run     |
+| :---: | :-------------: | :--------------------------: |
+|   A   |  Up (positive)  | About $\tfrac{2}{3}$ as fast |
+|   B   | Down (negative) |        About the same        |
+|   C   |  Up (positive)  |        About the same        |
+|   D   | Down (negative) | About $\tfrac{2}{3}$ as fast |
 
 :::
 
-
 ---
 
-### 4.2.2 – Finding Slope From a Graph
+### 4.2.2 – Finding Slope from a Graph
 
-In the previous section we said that slope is **rise** over **run** ($\frac{\Delta y}{\Delta x}$). 
-
-We visually compared the stairs in each of the 4 panels, noting that sometimes the stairs went up (positive) and sometimes they went down (negative). We used comparisions of the rise to the run with statements like "about the same". 
-
-**Example 1:**
-
-Let's look the same image again, but this time we will overlay a coordinate plane so that we can be more precise.
+Now let’s connect those stair patterns to a coordinate plane.
+This time, each set of stairs is **overlaid** with a grid so you can see the *exact* vertical and horizontal changes.
 
 ![](/images/Unit_4/Lesson_2/stairs_xkcd_grid.png){width="500px" fig-align="center"}
 
-In panel A, the person climbs **up** 2 units for every 3 units they move **right**. The change in y ($\Delta y$) is 2 and the change in x ($\Delta x$) is 3. So the slope is $m = \frac{2}{3}$.
+In each panel, count how far the person moves *up or down* (Δy) and *right* (Δx):
 
-In panel B, the person climbs **down** 3 units for every 3 units they move **right**. So the slope is $m = \frac{-3}{3} = -1$.
+| Panel |  Δy |  Δx | Slope $m=\tfrac{Δy}{Δx}$ |
+| :---: | :-: | :-: | :----------------------: |
+|   A   |  +2 |  3  |      $\tfrac{2}{3}$      |
+|   B   |  –3 |  3  |            –1            |
+|   C   |  +3 |  3  |             1            |
+|   D   |  –2 |  3  |      –$\tfrac{2}{3}$     |
 
-In panel C, the person climbs **up** 3 units for every 3 units the move **right**. So the slope is $m = \frac{3}{3} = 1$.
-
-Finally, in panel D, the person climbs **down** 2 units for every 3 units they move right. So the slope is $m = \frac{2}{3}$.
+A **positive** slope means the line rises left-to-right.
+A **negative** slope means it falls.
+Notice that Panels A and C rise, while B and D fall — exactly what we saw before, now confirmed by the numbers.
 
 ---
 
-**Example 2:**
-
-Find the slope of the line graphed below.
+**Example — Count the changes**
 
 ![](/images/Unit_4/Lesson_2/Example2A.png){width="400px" fig-align="center"}
 
-First, we pick two known points on the graph. Here we picked $(0, 2)$ and $(5, 6)$. Then we find the change in the x-values ($\Delta x$) and the change in the y values ($\Delta y$).
+Pick two clear points on the line — here, $(0,2)$ and $(5,6)$.
 
 ![](/images/Unit_4/Lesson_2/Example2B.png){width="400px" fig-align="center"}
 
-The slope of the line is:
+Start at $(0,2)$ and **count** boxes to get to $(5,6)$:
 
-$$
-m = \frac{\Delta y}{\Delta x} = \frac{4}{5}
-$$
+* Move **right** until you get to $x=5$:
+  $\Delta x = 5$
+* From there, move **up** until you reach $y=6$:
+  $\Delta y = 4$
+
+Between these two points, the line moves **right 5** and **up 4**.
+*(In the next section, we’ll use these counts in the slope formula.)*
+
+:::{.you-try-m title="Counting boxes"}
+Compute the slope of the line.
+
+![](/images/Unit_4/Lesson_2/YouTry4_2_2A.png){width="350px" fig-align="center"}
+:::
+
+:::{.answer title="Answer"}
+Counting from $(-6, 3)$ to $(3, -3)$ you move:
+
+* 9 to the **right**
+* 6 **down**
+
+So $\Delta x=9$, $\Delta y=-6$, and $m=-\tfrac{6}{9}=-\tfrac{2}{3}$.
+:::
 
 ---
 
+### 4.2.3 – Interactive Slope Exploration
 
-### 4.2.3 – Types of Slope
-
-| Type          | Description               | Example  |
-| ------------- | ------------------------- | -------- |
-| **Positive**  | Line rises left to right  | (m > 0)  |
-| **Negative**  | Line falls left to right  | (m < 0)  |
-| **Zero**      | Line is flat (horizontal) | (y = 3)  |
-| **Undefined** | Line is vertical (no run) | (x = -2) |
+Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.
 
 {{< include /assets/Unit_4/slope-widget.html >}}
 
-:::{.real-world title="What They Mean"}
-
-* **Positive slope:** going uphill, savings increasing, temperature rising.
-* **Negative slope:** going downhill, spending money, cooling down.
-* **Zero slope:** no change — a flat road or steady balance.
-* **Undefined slope:** vertical line — you’d have to “divide by zero,” which doesn’t make sense.
+:::{.think title="What is the slope when the line is horizontal? Why?"}
+The slope is zero because the $y$-values do not change (Δy = 0) for a horizontal line.
 :::
 
-:::{.you-try-m title="Sketch examples"}
-Draw one example of each type of slope on graph paper. Label each line with its slope.
-:::
+Try making a vertical line. You will notice that the slope is **undefined**. This is because the $x$-value doesn’t change, so **Δx = 0**. You can’t divide by zero, so the slope is undefined.
 
-:::{.think title="When Two Lines Meet"}
-If two lines have different slopes, they’ll **cross at one point**.  
-That point has the same (x, y) values in both equations — it makes **both** true.
+:::{.callout-tip title="Straight up or straight down?"}
+A vertical line has an undefined slope because you can't divide by zero. But there is another way to think about it. Look at the picture below. One person is at the top of a cliff looking down at someone on the ground.
+
+![](/images/Unit_4/Lesson_2/vertical_lines.png){width="300px" fig-align="center"}
+
+Is the cliff straight up, or is it straight down? It depends on who you ask! The person on the ground would say it is straight up. The person on top would say it is straight down. It can't be both, and yet it is! Since it is both straight up and straight down, we say the slope is undefined.
 :::
 
 ---
 
-### 4.2.4 – Slope in the Real World
+### 4.2.4 – Finding Slope Using the Slope Formula
 
-:::{.real-world title="Comparing Slopes in Context"}
+When a graph is available and the numbers are small, it’s often enough to **count boxes**.
+Sometimes the numbers are large or the points aren’t easy to plot. In those cases, we use the {{< glink "slope formula" >}}.
 
-* A **wheelchair ramp** that rises 1 foot for every 12 feet forward has a slope of ( \frac{1}{12} ).
-* A **hill** that rises 10 feet for every 20 feet forward has a slope of ( \frac{10}{20} = \frac{1}{2} ).
-  Which one is steeper?
+For the points $(x_1, y_1)$ and $(x_2, y_2)$, the slope is:
+
+$$
+m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+$$
+
+For example, the slope between the points $(1, 3)$ and $(4, 5)$ is:
+
+$$
+m = \frac{5 - 3}{4 - 1} = \frac{2}{3}
+$$
+
+**Example — Using the slope formula**
+
+Compute the slope of the line between the points $(-2, 8)$ and $(10, 6)$.
+
+Here $x_1 = -2$, $x_2 = 10$, $y_1 = 8$, and $y_2 = 6$.
+
+$$
+\begin{align*}
+m &= \frac{y_2 - y_1}{x_2 - x_1} \\
+  &= \frac{6 - 8}{10 - (-2)} \\
+  &= \frac{-2}{12} \\
+  &= -\frac{1}{6}
+\end{align*}
+$$
+
+:::{.you-try title="Calculate the slope between $(0, 95)$ and $(-50, 2)$"} 
+
+$$ 
+\begin{align*} 
+m &= \frac{2 - 95}{-50 - 0} \\ 
+  &= \frac{-93}{-50} \\ 
+  &= \frac{93}{50} 
+\end{align*} 
+$$ 
+
 :::
 
-:::{.real-world title="Rates as Slopes"}
-
-* A car traveling 60 miles per hour and a cyclist traveling 15 miles per hour both form straight lines on a distance-time graph.
-* The car’s line is steeper because its **slope (rate of change)** is greater.
-:::
-
-:::{.think title="What Slope Tells Us"}
-The larger the slope, the faster the change.
-The smaller the slope, the slower or flatter the change.
-:::
-
----
-
-:::{.remember title="Key Idea"}
-Slope measures how y changes compared to x.
-A **constant slope** means the line rises or falls evenly — that’s what makes it *linear*.
-:::
 
 {{< practice >}}
 
-Coming Soon
+Is the slope **positive**, **negative**, **zero**, or **undefined.**
+
+1. A line that rises from left to right.
+
+2. A line that falls from left to right.
+
+3. A horizontal line through $(0,4)$.
+
+4. A vertical line through $(x=-3)$.
+
+5. A line that goes down very slightly — almost flat — from left to right.
+
+---
+
+**Plot the points and count to find the slope:**
+
+6. From $(0,0)$ to $(3,2)$
+
+7. From $(–2,1)$ to $(4,4)$
+
+8. From $(1,5)$ to $(4,2)$
+
+9. From $(–3,–3)$ to $(2,–3)$
+
+10. From $(4,–1)$ to $(4,3)$
+
+---
+
+**Use the slope formula to calculate the slope:**
+
+11. $(1,3)$ and $(4,6)$
+
+12. $(–2,5)$ and $(2,–1)$
+
+13. $(0,0)$ and $(–3,9)$
+
+14. $(2,–3)$ and $(5,–3)$
+
+15. $(–4,2)$ and $(–4,–5)$
+
+16. $(1,\tfrac{1}{2})$ and $(3,\tfrac{5}{2})$
+
+17. $(–6,9)$ and $(3,–6)$
+
+---
+
+**Real-world slope problems:**
+
+18. A ramp rises 3 inches for every 36 inches forward. What is the slope?
+
+19. A road climbs 200 feet over a horizontal distance of 1 mile (5280 ft). What is the slope?
+
+20. A plumber installs a drain pipe that drops ¼ inch for every 12 inches of length. What is the slope as a fraction?
+
+21. A line passes through the points (time = 1 hour, distance = 40 miles) and (time = 3 hours, distance = 100 miles). What is the slope, and what does it represent?
+
+22. A skier starts 1000 ft above the lodge and reaches 400 ft above it after skiing 3000 ft forward. What is the slope?
+
+23. A student graphs temperature over time: $(2,40°)$ and $(6,68°)$. What is the slope, and what does it tell you?
+
+---
+
+**Challenge Problems:**
+
+24. Two lines have slopes $m_1=3$ and $m_2=-\tfrac{1}{3}$.
+    What is true about the relationship between these lines?
+
+25. A line passes through the origin and another point $(x,y)$.
+    Show algebraically that if the line’s slope doubles, the new point $(x',y')$ must satisfy $y' = 2y$ and $x' = x$.
+    What does this tell you about how slope affects “steepness” when the $x$ values stay fixed?
 
 :::{.answers}
+
+1. **Positive**
+
+2. **Negative**
+
+3. **Zero**
+
+4. **Undefined**
+
+5. **Negative** (small magnitude; just below 0)
+
+6. $\frac{2}{3}$
+
+7. $\frac{1}{2}$
+
+8. $-1$
+
+9. $0$
+
+10. **Undefined**
+
+11. $1$
+
+12. $-\frac{3}{2}$
+
+13. $-3$
+
+14. $0$
+
+15. **Undefined**
+
+16. $1$
+
+17. $-\frac{5}{3}$
+
+18. $\frac{1}{12}$
+
+19. $\frac{5}{132}\approx0.0379$
+
+20. $-\frac{1}{48}$
+
+21. $30$ miles/hour (speed)
+
+22. $-\frac{1}{5}$
+
+23. 7° per hour
 
 :::
