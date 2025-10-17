@@ -404,7 +404,7 @@ They washed **20 cars**.
 
 21. A plumber charges \$40 for the service call plus \$25 per hour. On one job, the plumber brought an assistant who also worked for \$15 per hour. The total bill was \$160. How many hours did they work?
 
-22. A contractor charges \$20 per square foot to build a deck, plus a one-time permit fee of \$60. If the deck is $3$ feet longer than it is wide and has a total area of $w( w + 3)$ square feet, and the total cost was \$2,460, find the width of the deck.
+22. A contractor charges \$20 per foot of railing plus a one-time permit fee of \$60 to build a rectangular deck that is 3 feet longer than it is wide. If the total cost was \$2420, find the width of the deck.
 
 23. The perimeter of a triangle is 75 cm. The three sides measure $3x + 1$, $2(x + 4)$, and $x + 6$. Write and solve an equation to find the value of $x$.
 
@@ -426,22 +426,22 @@ They washed **20 cars**.
 4. $x = 5$
 5. $x = 1$
 6. $x = 3$
-7. $x = 5$
-8. $x = 1$
-9. $x = 4$
+7. $x = \frac{45}{11}$
+8. $x = \frac{11}{7}$
+9. $x = \frac{7}{2}$
 10. $x = 4$
-11. $x = 2$
-12. $x = 2$
-13. $x = 4$
-14. $x = 3$
-15. $x = 4$
-16. $x = 4$
+11. $x = \frac{14}{5}$
+12. $x = \frac{24}{7}$
+13. $x = \frac{17}{2}$
+14. $x = \frac{24}{5}$
+15. $x = \frac{13}{4}$
+16. $x = -1$
 17. $x = 2$
 18. $x = 3$
-19. $x = -1$
-20. $x = 3$
+19. $x = \frac{8}{3}$
+20. $x = \frac{51}{11}$
 21. $h = 3$
-22. $w = 10$
+22. $w = 28$
 23. $x = 10$
 
 :::
