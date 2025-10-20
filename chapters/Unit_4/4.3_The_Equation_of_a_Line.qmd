@@ -1,131 +1,171 @@
 # 4.3 – The Equation of a Line {.unnumbered}
 
-Coming Soon
+A linear equation connects two quantities that change at a constant rate.
+You’ve explored **slope**; now you’ll see how slope and a starting value work together in the equation (y = mx + b).
 
 :::{.objectives}
 
-* [ ] I can identify the slope ((m)) and y-intercept ((b)) in an equation of a line.
+* [ ] I can identify the slope (m) and y-intercept (b) in an equation of a line.
 * [ ] I can graph a line using its slope and y-intercept.
 * [ ] I can describe how changing (m) or (b) changes the graph of a line.
-* [ ] I can explain that (y = mx + b) and (f(x) = mx + b) represent the same rule.
-
+* [ ] I can explain that (y = mx + b) and (f(x) = mx + b) mean the same thing.
 :::
 
 :::{.vocab}
-
-{{< glink slope >}}, {{< glink y-intercept >}}, {{< glink linear equation >}}, {{< glink slope-intercept form >}}, {{< glink function notation >}}
-
+{{< glink "function notation" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink y-intercept >}}, {{< glink "x-intercept" >}}
 :::
 
 {{< warmup >}}
-
-Coming Soon
-
-{{< learn >}}
-
-### 4.3.1 – Introducing (y = mx + b)
-
-* Every non-vertical line can be written as (y = mx + b) or (f(x) = mx + b).
-* These two equations mean the **same thing** — (f(x)) just reminds us that y depends on x.
-* (m) is the **slope** (how fast y changes).
-* (b) is the **y-intercept** (the starting value when (x = 0)).
-
-:::{.think title="Why is (b) special?"}
-When (x = 0), (y = b).
-That’s the point ((0, b)) — where the line crosses the y-axis.
-:::
-
-:::{.real-world title="Example – A Taxi Ride"}
-A taxi charges $3 to start plus $2 per mile.
-The rule is (y = 2x + 3) or (f(x) = 2x + 3).
-
-* (m = 2): you pay $2 per mile (the rate).
-* (b = 3): you start at $3 before any miles are driven.
-:::
-
-:::{.you-try title="Find the starting value"}
-For (f(x) = 5x + 2), what does the 2 represent in context?
+A friend says the line (y = 3x + 1) “starts at 1 and goes up 3 for every step right.”
+What does **start at 1** mean on a graph? What does **up 3** mean?
 :::
 
 ---
 
-### 4.3.2 – Graphing Using Slope and Intercept
+## 4.3.1 – What (y = mx + b) Means
 
-1. Plot the y-intercept ((0, b)).
-2. Use the slope (m = \frac{\text{rise}}{\text{run}}) to find another point.
-3. Draw a line through the points.
+Every non-vertical line can be written as
+$
+y = mx + b \quad\text{or}\quad f(x) = mx + b.
+$
+
+* (m) is the **slope** — the rate of change.
+* (b) is the **y-intercept** — where the line crosses the y-axis (the value when (x=0)).
+
+:::{.think title="Why is (b) special?"}
+When (x=0), (y=b). So ((0,b)) is always on the line.
+:::
+
+**Examples (read, don’t write):**
+
+* (f(x)=2x+1) → (m=2), (b=1).
+* (y=-\tfrac12 x+3) → negative slope (falls to the right), crosses at ((0,3)).
+* (f(x)=4) → (m=0) (horizontal line at (y=4)).
+* (x=-2) → vertical line (not a (y=mx+b) line).
+
+---
+
+### 4.3.2 – Interactive: Slide (m) and (b)
+
+Use the sliders to see how changing (m) and (b) affects the line.
+
+* $m$ changes the **tilt** (steepness and direction).
+* $b$ moves the line **up or down**.
+
+{{< include /assets/Unit_4/slope-intercept-form-widget.html >}}
+
+:::{.you-try-m title="Quick slider challenges"}
+
+1. Set (m=1). Move (b) from (-4) to (+4). What stays the same? What changes?
+2. Fix (b=2). Move (m) from (-3) to (+3). When does the line have no (x)-intercept?
+3. With (m=-2) and (b=4), estimate (f(3)) using the graph. Then compute it exactly.
+:::
+
+:::{.remember title="Intercepts (light intro)"}
+
+* **y-intercept:** ((0,b)) — read it straight from the equation.
+* **x-intercept:** where (y=0). Solve (0=mx+b) (when (m\neq 0)) to find the (x)-value.
+  We’ll use these ideas more in the next lessons.
+:::
+
+---
+
+### 4.3.3 – Graphing from (y=mx+b)
+
+1. Plot the **y-intercept** ((0,b)).
+2. Use the **slope** (m=\dfrac{\text{rise}}{\text{run}}) to get a second point.
+3. Draw the line through your points.
 
 ![](/images/Unit_4/Lesson_3/graph_from_slope_intercept.png){width="340px" fig-align="center"}
 
-:::{.think title="Direction Matters"}
-A positive slope goes **up to the right**; a negative slope goes **down to the right**.
-:::
-
-:::{.you-try title="Graph (f(x) = –2x + 4)"}
-Start at (0, 4), then go down 2 and right 1 to find the next point. Connect the dots.
+:::{.you-try title="Graph (f(x)=-2x+4)"}
+Start at ((0,4)). Go down 2, right 1. Plot a second point and draw the line.
+Where are the intercepts?
 :::
 
 ---
 
-### 4.3.3 – Changing (m) and (b)
+## 4.3.4 – How Changing (m) and (b) Changes the Graph
 
-* Changing **(m)** changes the **steepness** or direction.
+**Changing (m) (tilt/steepness):**
 
-  * Larger (m) → steeper line.
-  * Negative (m) → line falls left to right.
-* Changing **(b)** moves the line **up or down** but keeps the same tilt.
+| Equation | Slope | What happens           |
+| -------- | ----: | ---------------------- |
+| (y=x+2)  |   (1) | Rises steadily         |
+| (y=2x+2) |   (2) | Rises faster (steeper) |
+| (y=-x+2) |  (-1) | Falls to the right     |
 
-![](/images/Unit_4/Lesson_3/change_m_b_effect.png){width="360px" fig-align="center"}
+![](/images/Unit_4/Lesson_3/change_m_effect.png){width="360px" fig-align="center"}
 
-:::{.real-world title="Comparing Cell Plans"}
-Two cell phone plans:
+**Changing (b) (vertical shift):**
 
-* **Plan A:** (y = 30x + 10)
-* **Plan B:** (f(x) = 20x + 25)
+| Equation | Intercept (b) | What happens                      |
+| -------- | ------------: | --------------------------------- |
+| (y=2x+1) |           (1) | Crosses y-axis lower              |
+| (y=2x+4) |           (4) | Crosses y-axis higher (same tilt) |
 
-Which is cheaper for small x? Which is cheaper for large x?
-:::
+![](/images/Unit_4/Lesson_3/change_b_effect.png){width="360px" fig-align="center"}
 
-:::{.real-world title="Where Two Rules Are Equal"}
-Two plans are given by  
-\(f(x) = 30x + 10\) and \(g(x) = 20x + 25\).  
-
-Graph both on the same axes.  
-The point where the lines **intersect** shows when both plans cost the same —  
-one (x, y) pair that works for **both** equations.
-:::
-
-:::{.you-try-m title="Predict the change"}
-If we increase (b), what happens to the graph?
-If we make (m) negative, what happens?
+:::{.real-world title="Compare two linear rules"}
+Two plans: (f(x)=30x+10) and (g(x)=20x+25).
+Which starts higher? Which grows faster? For a small (x), which is cheaper?
 :::
 
 ---
 
-### 4.3.4 – (y) and (f(x)): Two Ways to Write the Same Rule
+## 4.3.5 – Point-Slope as the Same Line (brief touch)
 
-* (f(x)) is just another way to write (y).
-* Mathematicians use (f(x)) to show that y **depends on** x — it’s the same rule written differently.
+Sometimes you know a **point** and the **slope** but not (b). You can still describe the line:
 
-:::{.think title="Evaluating (f(x))"}
-If (f(x) = 2x + 3), then (f(4) = 2(4) + 3 = 11).
-That means the point ((4, 11)) is on the line.
+[
+y - y_1 = m(x - x_1).
+]
+
+This is the **same** line as some (y=mx+b). Solving it for (y) will match the slope and reveal the same graph.
+
+**Example (read, don’t write):**
+Through ((-2,4)) with slope (3): (y-4=3(x+2)).
+This has the same graph as a (y=mx+b) line.
+
+:::{.you-try title="Just compare the forms"}
+Does (y-1=2(x-3)) have the same slope as (y=2x+4)? How can you tell without fully expanding?
 :::
 
-:::{.remember title="Key Idea"}
-(y = mx + b) and (f(x) = mx + b) describe the **same linear function**.
-
-* (m) tells the **rate of change** (slope).
-* (b) tells the **starting value** (y-intercept).
-  Together, they describe how the line looks and what it means.
-:::
+---
 
 {{< practice >}}
 
-Coming Soon
+
+**1. Identify (m) and (b)**
+a) (y=3x-2)  b) (f(x)=-\tfrac12 x+5)  c) (y=6)
+
+**2. Read values from an equation**
+For (f(x)=-2x+4):
+a) (f(0)) b) When (x=3), find (f(3)) c) Solve (0=f(x)) to find the (x)-intercept.
+
+**3. Graph (no writing equations):**
+a) (y=2x+1) b) (f(x)=-x+4).
+Label intercepts on each graph.
+
+**4. Compare lines (steepness & shift):**
+Which is steeper: (y=4x+1) or (y=2x+1)?
+Which crosses the y-axis higher?
+
+**5. Point-slope as the same line (form check only):**
+Does (y-3=-2(x+1)) represent a line with slope (-2)?
+What is its y-intercept **approximately** (estimate from a quick sketch or mental shift), without fully expanding?
 
 :::{.answers}
 
-Coming Soon
+1. a) (m=3,\ b=-2)  b) (m=-\tfrac12,\ b=5)  c) (m=0,\ b=6)
 
+2. a) (f(0)=4) (y-intercept)  b) (f(3)=-6+4=-2)  c) (0=-2x+4\Rightarrow x=2)
+
+3. Graphs vary; intercepts:
+   a) (y=2x+1): y-int ((0,1)), x-int (x=-\tfrac12)
+   b) (y=-x+4): y-int ((0,4)), x-int (x=4)
+
+4. (y=4x+1) is steeper; both cross at (y=1)
+
+5. Yes, slope (-2) (it’s the (m) in point-slope). Intercept is a bit **above** (y=1) (exact value appears when expanded; estimate is fine here).
 :::
