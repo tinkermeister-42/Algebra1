@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -468,10 +497,13 @@ window.MathJax = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introducing-y-mx-b" id="toc-introducing-y-mx-b" class="nav-link active" data-scroll-target="#introducing-y-mx-b">4.3.1 – Introducing (y = mx + b)</a></li>
-  <li><a href="#graphing-using-slope-and-intercept" id="toc-graphing-using-slope-and-intercept" class="nav-link" data-scroll-target="#graphing-using-slope-and-intercept">4.3.2 – Graphing Using Slope and Intercept</a></li>
-  <li><a href="#changing-m-and-b" id="toc-changing-m-and-b" class="nav-link" data-scroll-target="#changing-m-and-b">4.3.3 – Changing (m) and (b)</a></li>
-  <li><a href="#y-and-fx-two-ways-to-write-the-same-rule" id="toc-y-and-fx-two-ways-to-write-the-same-rule" class="nav-link" data-scroll-target="#y-and-fx-two-ways-to-write-the-same-rule">4.3.4 – (y) and (f(x)): Two Ways to Write the Same Rule</a></li>
+  <li><a href="#what-y-mx-b-means" id="toc-what-y-mx-b-means" class="nav-link active" data-scroll-target="#what-y-mx-b-means">4.3.1 – What (y = mx + b) Means</a>
+  <ul class="collapse">
+  <li><a href="#interactive-slide-m-and-b" id="toc-interactive-slide-m-and-b" class="nav-link" data-scroll-target="#interactive-slide-m-and-b">4.3.2 – Interactive: Slide (m) and (b)</a></li>
+  <li><a href="#graphing-from-ymxb" id="toc-graphing-from-ymxb" class="nav-link" data-scroll-target="#graphing-from-ymxb">4.3.3 – Graphing from (y=mx+b)</a></li>
+  </ul></li>
+  <li><a href="#how-changing-m-and-b-changes-the-graph" id="toc-how-changing-m-and-b-changes-the-graph" class="nav-link" data-scroll-target="#how-changing-m-and-b-changes-the-graph">4.3.4 – How Changing (m) and (b) Changes the Graph</a></li>
+  <li><a href="#point-slope-as-the-same-line-brief-touch" id="toc-point-slope-as-the-same-line-brief-touch" class="nav-link" data-scroll-target="#point-slope-as-the-same-line-brief-touch">4.3.5 – Point-Slope as the Same Line (brief touch)</a></li>
   </ul>
 </nav>
     </div>
@@ -497,127 +529,335 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>A linear equation connects two quantities that change at a constant rate. You’ve explored <strong>slope</strong>; now you’ll see how slope and a starting value work together in the equation (y = mx + b).</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can identify the slope ((m)) and y-intercept ((b)) in an equation of a line.</label></li>
+<li><label><input type="checkbox">I can identify the slope (m) and y-intercept (b) in an equation of a line.</label></li>
 <li><label><input type="checkbox">I can graph a line using its slope and y-intercept.</label></li>
 <li><label><input type="checkbox">I can describe how changing (m) or (b) changes the graph of a line.</label></li>
-<li><label><input type="checkbox">I can explain that (y = mx + b) and (f(x) = mx + b) represent the same rule.</label></li>
+<li><label><input type="checkbox">I can explain that (y = mx + b) and (f(x) = mx + b) mean the same thing.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="#glossary-y-intercept" class="glossary-link" data-slug="y-intercept" data-original-href="#glossary-y-intercept" data-term="y-intercept">y-intercept</a>, <a href="#glossary-linear" class="glossary-link" data-slug="linear" data-original-href="#glossary-linear" data-term="linear">linear</a>, <a href="#glossary-slope-intercept" class="glossary-link" data-slug="slope-intercept" data-original-href="#glossary-slope-intercept" data-term="slope-intercept">slope-intercept</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-slug="function" data-original-href="#glossary-function" data-term="function">function</a></p>
+<p><a href="#glossary-function-notation" class="glossary-link" data-term="function notation" data-slug="function-notation" data-original-href="#glossary-function-notation">function notation</a>, <a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-term="linear equation" data-slug="linear-equation" data-original-href="#glossary-linear-equation">linear equation</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="#glossary-slope-intercept-form" class="glossary-link" data-term="slope-intercept form" data-slug="slope-intercept-form" data-original-href="#glossary-slope-intercept-form">slope-intercept form</a>, <a href="#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-slug="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a>, <a href="#glossary-x-intercept" class="glossary-link" data-term="x-intercept" data-slug="x-intercept" data-original-href="#glossary-x-intercept">x-intercept</a></p>
 </div>
-<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<p>Coming Soon</p>
-<h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="introducing-y-mx-b" class="level3">
-<h3 class="anchored" data-anchor-id="introducing-y-mx-b">4.3.1 – Introducing (y = mx + b)</h3>
+<p></p><h2 class="unnumbered anchored">🔥 Warm-Up</h2> A friend says the line (y = 3x + 1) “starts at 1 and goes up 3 for every step right.” What does <strong>start at 1</strong> mean on a graph? What does <strong>up 3</strong> mean? :::<p></p>
+<hr>
+<section id="what-y-mx-b-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-y-mx-b-means">4.3.1 – What (y = mx + b) Means</h2>
+<p>Every non-vertical line can be written as $ y = mx + b f(x) = mx + b. $</p>
 <ul>
-<li>Every non-vertical line can be written as (y = mx + b) or (f(x) = mx + b).</li>
-<li>These two equations mean the <strong>same thing</strong> — (f(x)) just reminds us that y depends on x.</li>
 <li><ol start="13" type="a">
-<li>is the <strong>slope</strong> (how fast y changes).</li>
+<li>is the <strong>slope</strong> — the rate of change.</li>
 </ol></li>
 <li><ol start="2" type="a">
-<li>is the <strong>y-intercept</strong> (the starting value when (x = 0)).</li>
+<li>is the <strong>y-intercept</strong> — where the line crosses the y-axis (the value when (x=0)).</li>
 </ol></li>
 </ul>
 <div class="think" title="Why is (b) special?">
-<p>When (x = 0), (y = b). That’s the point ((0, b)) — where the line crosses the y-axis.</p>
+<p>When (x=0), (y=b). So ((0,b)) is always on the line.</p>
 </div>
-<div class="real-world" title="Example – A Taxi Ride">
-<p>A taxi charges $3 to start plus $2 per mile. The rule is (y = 2x + 3) or (f(x) = 2x + 3).</p>
+<p><strong>Examples (read, don’t write):</strong></p>
 <ul>
-<li>(m = 2): you pay $2 per mile (the rate).</li>
-<li>(b = 3): you start at $3 before any miles are driven.</li>
+<li>(f(x)=2x+1) → (m=2), (b=1).</li>
+<li>(y=- x+3) → negative slope (falls to the right), crosses at ((0,3)).</li>
+<li>(f(x)=4) → (m=0) (horizontal line at (y=4)).</li>
+<li>(x=-2) → vertical line (not a (y=mx+b) line).</li>
 </ul>
+<hr>
+<section id="interactive-slide-m-and-b" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-slide-m-and-b">4.3.2 – Interactive: Slide (m) and (b)</h3>
+<p>Use the sliders to see how changing (m) and (b) affects the line.</p>
+<ul>
+<li><span class="math inline">\(m\)</span> changes the <strong>tilt</strong> (steepness and direction).</li>
+<li><span class="math inline">\(b\)</span> moves the line <strong>up or down</strong>.</li>
+</ul>
+<!-- widgets/line-equation.html (v7) : label reposition -->
+<div class="leq3-root" data-m="1.0" data-b="0.0">
+
 </div>
-<div class="you-try" title="Find the starting value">
-<p>For (f(x) = 5x + 2), what does the 2 represent in context?</p>
+<style>
+    .leq3-root {
+        max-width: 860px;
+        /* border: 1px solid #e5e7eb; */
+        border-radius: 12px;
+        padding: 10px;
+        margin: 1rem 0;
+        background: #fff
+    }
+
+    .leq3-grid {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 84px auto;
+        gap: 5px;
+        align-items: start;
+    }
+
+    .leq3-bline {
+        grid-column: 1;
+        grid-row: 2;
+        position: relative
+    }
+
+    .leq3-mline {
+        grid-column: 2;
+        grid-row: 1;
+        position: relative
+    }
+
+    .leq3-plot {
+        grid-column: 2;
+        grid-row: 2;
+
+        position: relative
+    }
+
+    .leq3-nline-h {
+        width: 100%;
+        height: 80px;
+        display: block;
+        background: #fff;
+    }
+
+    .leq3-nline-v {
+        width: 100px;
+        height: 100%;
+        display: block;
+        background: #fff;
+    }
+
+    .leq3-canvas {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: #fff;
+        /* border: 1px solid #e5e7eb; */
+        border-radius: 10px
+    }
+
+    .leq3-label {
+        position: absolute;
+        pointer-events: none;
+        font: 600 13px ui-sans-serif, system-ui;
+        color: #0f172a;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 2px 8px
+    }
+
+    .leq3-label.m {
+        left: -10px;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+
+    /* left edge of horizontal slider */
+    .leq3-label.b {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* top edge of vertical slider */
+</style>
+<script>
+    (function () {
+        function initAll() { document.querySelectorAll('.leq3-root').forEach(initWidget); }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initAll, { once: true }); else initAll();
+
+        function initWidget(root) {
+            if (root.__init) return; root.__init = true;
+            const state = { m: round1(parseFloat(root.dataset.m ?? 1.0)), b: round1(parseFloat(root.dataset.b ?? 0.0)), xmin: -10, xmax: 10, ymin: -10, ymax: 10 };
+            const grid = el('div', 'leq3-grid');
+
+            const mWrap = el('div', 'leq3-mline');
+            const mCanvas = el('canvas', 'leq3-nline-h');
+            const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
+            mWrap.append(mCanvas, mLabel);
+
+            const bWrap = el('div', 'leq3-bline');
+            const bCanvas = el('canvas', 'leq3-nline-v');
+            const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
+            bWrap.append(bCanvas, bLabel);
+
+            const plot = el('div', 'leq3-plot'); const canvas = el('canvas', 'leq3-canvas'); plot.append(canvas);
+            grid.append(bWrap, mWrap, plot); root.append(grid);
+
+            const M = { left: 40, right: 40, top: 64, bottom: 40 };
+            function worldToPix(x, y, W, H) { const innerW = W - M.left - M.right, innerH = H - M.top - M.bottom; const sx = innerW / (state.xmax - state.xmin); const sy = innerH / (state.ymax - state.ymin); const px = M.left + (x - state.xmin) * sx; const py = M.top + innerH - (y - state.ymin) * sy; return [px, py]; }
+
+            let rafId = null; function scheduleDraw() { if (rafId !== null) return; rafId = requestAnimationFrame(() => { rafId = null; drawMain(); }); }
+
+            function drawMain() {
+                const ctx = canvas.getContext('2d'); const W = canvas.width | 0, H = canvas.height | 0; if (!W || !H) return; ctx.clearRect(0, 0, W, H);
+                const gridCol = '#cbd5e1', axisCol = '#1e293b', tickCol = '#334155', lineCol = '#0e7490', interceptCol = '#111827';
+                ctx.lineWidth = 1; ctx.strokeStyle = gridCol;
+                for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) { const [px0, py0] = worldToPix(x, state.ymin, W, H); const [px1, py1] = worldToPix(x, state.ymax, W, H); ctx.beginPath(); ctx.moveTo(px0, py0); ctx.lineTo(px1, py1); ctx.stroke(); }
+                for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) { const [px0, py0] = worldToPix(state.xmin, y, W, H); const [px1, py1] = worldToPix(state.xmax, y, W, H); ctx.beginPath(); ctx.moveTo(px0, py0); ctx.lineTo(px1, py1); ctx.stroke(); }
+                ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8;
+                const [xL, y0] = worldToPix(state.xmin, 0, W, H); const [xR] = worldToPix(state.xmax, 0, W, H); ctx.beginPath(); ctx.moveTo(xL, y0); ctx.lineTo(xR, y0); ctx.stroke();
+                const [x0, yB] = worldToPix(0, state.ymin, W, H); const [, yT] = worldToPix(0, state.ymax, W, H); ctx.beginPath(); ctx.moveTo(x0, yB); ctx.lineTo(x0, yT); ctx.stroke();
+                ctx.fillStyle = tickCol; ctx.font = '12px system-ui'; ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1;
+                for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) { const [px] = worldToPix(x, 0, W, H); ctx.beginPath(); ctx.moveTo(px, y0 - 5); ctx.lineTo(px, y0 + 5); ctx.stroke(); if (x !== 0) ctx.fillText(String(x), px - 4, y0 + 18); }
+                for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) { const [, py] = worldToPix(0, y, W, H); ctx.beginPath(); ctx.moveTo(x0 - 5, py); ctx.lineTo(x0 + 5, py); ctx.stroke(); if (y !== 0) ctx.fillText(String(y), x0 + 8, py + 4); }
+                const m = state.m, b = state.b; const pts = []; const yL = m * state.xmin + b, yR = m * state.xmax + b; addIf(state.xmin, yL); addIf(state.xmax, yR); if (Math.abs(m) > 1e-12) { const xB = (state.ymin - b) / m; addIf(xB, state.ymin); const xT = (state.ymax - b) / m; addIf(xT, state.ymax); } function addIf(x, y) { if (x >= state.xmin - 1e-9 && x <= state.xmax + 1e-9 && y >= state.ymin - 1e-9 && y <= state.ymax + 1e-9) pts.push([x, y]); }
+                if (pts.length >= 2) { const [x1, y1] = worldToPix(pts[0][0], pts[0][1], W, H); const [x2, y2] = worldToPix(pts[1][0], pts[1][1], W, H); ctx.strokeStyle = lineCol; ctx.lineWidth = 2.2; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
+                if (b >= state.ymin && b <= state.ymax) { const [ix, iy] = worldToPix(0, b, W, H); ctx.fillStyle = interceptCol; ctx.beginPath(); ctx.arc(ix, iy, 4, 0, Math.PI * 2); ctx.fill(); }
+                const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? '+' : '−'} ${Math.abs(b).toFixed(1)}`; ctx.font = '14px system-ui'; const tw = ctx.measureText(eq).width; const bx = W - M.right - tw - 28; const by = Math.max(18, Math.floor(M.top * 0.45) + 10); ctx.fillStyle = 'rgba(14,116,144,0.18)'; roundRect(ctx, bx, by - 20, tw + 32, 28, 10, true, false); ctx.fillStyle = lineCol; ctx.fillText(eq, bx + 14, by - 3);
+            }
+
+            function sizePlot() { const rect = plot.getBoundingClientRect(); const W = Math.max(460, Math.floor(rect.width)); const H = W; canvas.width = W; canvas.height = H; canvas.style.width = W + 'px'; canvas.style.height = H + 'px'; }
+
+            const h = { min: -10, max: 10, step: 0.1, cur: state.m }; function redrawH() { const ctx = mCanvas.getContext('2d'); const rect = mCanvas.getBoundingClientRect(); const W = Math.max(300, Math.floor(rect.width)), Hc = 80; mCanvas.width = W; mCanvas.height = Hc; ctx.clearRect(0, 0, W, Hc); const y = Math.floor(Hc * 0.44); ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(34, y); ctx.lineTo(W - 34, y); ctx.stroke(); ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui'; for (let t = Math.ceil(h.min); t <= Math.floor(h.max); t++) { const x = h_valToPx(t, W); ctx.beginPath(); ctx.moveTo(x, y - 12); ctx.lineTo(x, y + 12); ctx.stroke(); ctx.fillText(String(t), x - 6, y + 36); } const x0 = h_valToPx(0, W); ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(x0, y - 18); ctx.lineTo(x0, y + 18); ctx.stroke(); const hx = h_valToPx(h.cur, W); ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.fill(); ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.stroke(); }
+            function h_valToPx(v, W) { const pad = 34, L = pad, R = W - pad; const t = (v - h.min) / (h.max - h.min); return L + t * (R - L); } function h_pxToVal(px, W) { const pad = 34, L = pad, R = W - pad; const t = clamp((px - L) / (R - L), 0, 1); const raw = h.min + t * (h.max - h.min); return roundTo(raw, h.step); }
+
+            const v = { min: -10, max: 10, step: 0.1, cur: state.b }; function redrawV() { const ctx = bCanvas.getContext('2d'); const graphH = parseFloat(getComputedStyle(canvas).height) || canvas.height || 320; const Wc = 100, Hc = Math.max(240, Math.floor(graphH)); bCanvas.width = Wc; bCanvas.height = Hc; ctx.clearRect(0, 0, Wc, Hc); const x = Math.floor(Wc / 2); const top = M.top, bottom = Hc - 32; ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke(); ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui'; for (let t = Math.ceil(v.min); t <= Math.floor(v.max); t++) { const y = v_valToPx(t, Hc, top, bottom); ctx.beginPath(); ctx.moveTo(x - 12, y); ctx.lineTo(x + 12, y); ctx.stroke(); ctx.fillText(String(t), x + 22, y + 4); } const y0 = v_valToPx(0, Hc, top, bottom); ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(x - 16, y0); ctx.lineTo(x + 16, y0); ctx.stroke(); const hy = v_valToPx(v.cur, Hc, top, bottom); ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.fill(); ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.stroke(); }
+            function v_valToPx(val, Hc, top, bottom) { const T = top, B = bottom; const t = (val - v.min) / (v.max - v.min); return B - t * (B - T); } function v_pxToVal(py, Hc, top, bottom) { const T = top, B = bottom; const t = clamp((B - py) / (B - T), 0, 1); const raw = v.min + t * (v.max - v.min); return roundTo(raw, v.step); }
+
+            let draggingH = false, draggingV = false; mCanvas.addEventListener('mousedown', e => { draggingH = true; onMoveH(e); e.preventDefault(); }); mCanvas.addEventListener('mousemove', onMoveH); window.addEventListener('mouseup', () => draggingH = false); bCanvas.addEventListener('mousedown', e => { draggingV = true; onMoveV(e); e.preventDefault(); }); bCanvas.addEventListener('mousemove', onMoveV); window.addEventListener('mouseup', () => draggingV = false);
+            function onMoveH(e) { if (!draggingH) return; const rect = mCanvas.getBoundingClientRect(); const px = e.clientX - rect.left; const newVal = h_pxToVal(px, rect.width); if (Math.abs(newVal - h.cur) > 1e-9) { h.cur = newVal; state.m = newVal; scheduleDraw(); redrawH(); } }
+            function onMoveV(e) { if (!draggingV) return; const rect = bCanvas.getBoundingClientRect(); const py = e.clientY - rect.top; const top = M.top, bottom = rect.height - 32; const newVal = v_pxToVal(py, rect.height, top, bottom); if (Math.abs(newVal - v.cur) > 1e-9) { v.cur = newVal; state.b = newVal; scheduleDraw(); redrawV(); } }
+
+            const ro = new ResizeObserver(() => { sizePlot(); redrawH(); redrawV(); scheduleDraw(); }); ro.observe(root);
+            sizePlot(); redrawH(); redrawV(); scheduleDraw();
+
+            function round1(x) { return Math.round(x * 10) / 10; } function roundTo(x, step) { return Math.round(x / step) * step; } function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); } function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; } function roundRect(ctx, x, y, w, h, r, fill, stroke) { if (typeof r === 'number') r = { tl: r, tr: r, br: r, bl: r }; ctx.beginPath(); ctx.moveTo(x + r.tl, y); ctx.lineTo(x + w - r.tr, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r.tr); ctx.lineTo(x + w, y + h - r.br); ctx.quadraticCurveTo(x + w, y + h, x + w - r.br, y + h); ctx.lineTo(x + r.bl, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r.bl); ctx.lineTo(x, y + r.tl); ctx.quadraticCurveTo(x, y, x + r.tl, y); if (fill) ctx.fill(); if (stroke) ctx.stroke(); }
+        }
+    })();
+</script>
+<div class="you-try-m" title="Quick slider challenges">
+<ol type="1">
+<li>Set (m=1). Move (b) from (-4) to (+4). What stays the same? What changes?</li>
+<li>Fix (b=2). Move (m) from (-3) to (+3). When does the line have no (x)-intercept?</li>
+<li>With (m=-2) and (b=4), estimate (f(3)) using the graph. Then compute it exactly.</li>
+</ol>
+</div>
+<div class="remember" title="Intercepts (light intro)">
+<ul>
+<li><strong>y-intercept:</strong> ((0,b)) — read it straight from the equation.</li>
+<li><strong>x-intercept:</strong> where (y=0). Solve (0=mx+b) (when (m)) to find the (x)-value. We’ll use these ideas more in the next lessons.</li>
+</ul>
 </div>
 <hr>
 </section>
-<section id="graphing-using-slope-and-intercept" class="level3">
-<h3 class="anchored" data-anchor-id="graphing-using-slope-and-intercept">4.3.2 – Graphing Using Slope and Intercept</h3>
+<section id="graphing-from-ymxb" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-from-ymxb">4.3.3 – Graphing from (y=mx+b)</h3>
 <ol type="1">
-<li>Plot the y-intercept ((0, b)).</li>
-<li>Use the slope (m = ) to find another point.</li>
-<li>Draw a line through the points.</li>
+<li>Plot the <strong>y-intercept</strong> ((0,b)).</li>
+<li>Use the <strong>slope</strong> (m=) to get a second point.</li>
+<li>Draw the line through your points.</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_3/graph_from_slope_intercept.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
 </figure>
 </div>
-<div class="think" title="Direction Matters">
-<p>A positive slope goes <strong>up to the right</strong>; a negative slope goes <strong>down to the right</strong>.</p>
-</div>
-<div class="you-try" title="Graph (f(x) = –2x + 4)">
-<p>Start at (0, 4), then go down 2 and right 1 to find the next point. Connect the dots.</p>
+<div class="you-try" title="Graph (f(x)=-2x+4)">
+<p>Start at ((0,4)). Go down 2, right 1. Plot a second point and draw the line. Where are the intercepts?</p>
 </div>
 <hr>
 </section>
-<section id="changing-m-and-b" class="level3">
-<h3 class="anchored" data-anchor-id="changing-m-and-b">4.3.3 – Changing (m) and (b)</h3>
-<ul>
-<li><p>Changing <strong>(m)</strong> changes the <strong>steepness</strong> or direction.</p>
-<ul>
-<li>Larger (m) → steeper line.</li>
-<li>Negative (m) → line falls left to right.</li>
-</ul></li>
-<li><p>Changing <strong>(b)</strong> moves the line <strong>up or down</strong> but keeps the same tilt.</p></li>
-</ul>
+</section>
+<section id="how-changing-m-and-b-changes-the-graph" class="level2">
+<h2 class="anchored" data-anchor-id="how-changing-m-and-b-changes-the-graph">4.3.4 – How Changing (m) and (b) Changes the Graph</h2>
+<p><strong>Changing (m) (tilt/steepness):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th style="text-align: right;">Slope</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(y=x+2)</td>
+<td style="text-align: right;">(1)</td>
+<td>Rises steadily</td>
+</tr>
+<tr class="even">
+<td>(y=2x+2)</td>
+<td style="text-align: right;">(2)</td>
+<td>Rises faster (steeper)</td>
+</tr>
+<tr class="odd">
+<td>(y=-x+2)</td>
+<td style="text-align: right;">(-1)</td>
+<td>Falls to the right</td>
+</tr>
+</tbody>
+</table>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_3/change_m_b_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+<p><img src="../../images/Unit_4/Lesson_3/change_m_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
 </figure>
 </div>
-<div class="real-world" title="Comparing Cell Plans">
-<p>Two cell phone plans:</p>
-<ul>
-<li><strong>Plan A:</strong> (y = 30x + 10)</li>
-<li><strong>Plan B:</strong> (f(x) = 20x + 25)</li>
-</ul>
-<p>Which is cheaper for small x? Which is cheaper for large x?</p>
+<p><strong>Changing (b) (vertical shift):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th style="text-align: right;">Intercept (b)</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(y=2x+1)</td>
+<td style="text-align: right;">(1)</td>
+<td>Crosses y-axis lower</td>
+</tr>
+<tr class="even">
+<td>(y=2x+4)</td>
+<td style="text-align: right;">(4)</td>
+<td>Crosses y-axis higher (same tilt)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/change_b_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+</figure>
 </div>
-<div class="real-world" title="Where Two Rules Are Equal">
-<p>Two plans are given by<br>
-(f(x) = 30x + 10) and (g(x) = 20x + 25).</p>
-<p>Graph both on the same axes.<br>
-The point where the lines <strong>intersect</strong> shows when both plans cost the same —<br>
-one (x, y) pair that works for <strong>both</strong> equations.</p>
-</div>
-<div class="you-try-m" title="Predict the change">
-<p>If we increase (b), what happens to the graph? If we make (m) negative, what happens?</p>
+<div class="real-world" title="Compare two linear rules">
+<p>Two plans: (f(x)=30x+10) and (g(x)=20x+25). Which starts higher? Which grows faster? For a small (x), which is cheaper?</p>
 </div>
 <hr>
 </section>
-<section id="y-and-fx-two-ways-to-write-the-same-rule" class="level3">
-<h3 class="anchored">4.3.4 – (y) and (f(x)): Two Ways to Write the Same Rule</h3>
-<ul>
-<li>(f(x)) is just another way to write (y).</li>
-<li>Mathematicians use (f(x)) to show that y <strong>depends on</strong> x — it’s the same rule written differently.</li>
-</ul>
-<div class="think" title="Evaluating (f(x))">
-<p>If (f(x) = 2x + 3), then (f(4) = 2(4) + 3 = 11). That means the point ((4, 11)) is on the line.</p>
+<section id="point-slope-as-the-same-line-brief-touch" class="level2">
+<h2 class="anchored" data-anchor-id="point-slope-as-the-same-line-brief-touch">4.3.5 – Point-Slope as the Same Line (brief touch)</h2>
+<p>Sometimes you know a <strong>point</strong> and the <strong>slope</strong> but not (b). You can still describe the line:</p>
+<p>[ y - y_1 = m(x - x_1).]</p>
+<p>This is the <strong>same</strong> line as some (y=mx+b). Solving it for (y) will match the slope and reveal the same graph.</p>
+<p><strong>Example (read, don’t write):</strong> Through ((-2,4)) with slope (3): (y-4=3(x+2)). This has the same graph as a (y=mx+b) line.</p>
+<div class="you-try" title="Just compare the forms">
+<p>Does (y-1=2(x-3)) have the same slope as (y=2x+4)? How can you tell without fully expanding?</p>
 </div>
-<div class="remember" title="Key Idea">
-<p>(y = mx + b) and (f(x) = mx + b) describe the <strong>same linear function</strong>.</p>
-<ul>
-<li><ol start="13" type="a">
-<li>tells the <strong>rate of change</strong> (slope).</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li>tells the <strong>starting value</strong> (y-intercept). Together, they describe how the line looks and what it means.</li>
-</ol></li>
-</ul>
-</div>
-<h2 class="unnumbered anchored" data-anchor-id="y-and-fx-two-ways-to-write-the-same-rule">✍️ Practice On Your Own</h2>
-<p>Coming Soon</p>
+<hr>
+<h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
+<p><strong>1. Identify (m) and (b)</strong> a) (y=3x-2)  b) (f(x)=- x+5)  c) (y=6)</p>
+<p><strong>2. Read values from an equation</strong> For (f(x)=-2x+4): a) (f(0)) b) When (x=3), find (f(3)) c) Solve (0=f(x)) to find the (x)-intercept.</p>
+<p><strong>3. Graph (no writing equations):</strong> a) (y=2x+1) b) (f(x)=-x+4). Label intercepts on each graph.</p>
+<p><strong>4. Compare lines (steepness &amp; shift):</strong> Which is steeper: (y=4x+1) or (y=2x+1)? Which crosses the y-axis higher?</p>
+<p><strong>5. Point-slope as the same line (form check only):</strong> Does (y-3=-2(x+1)) represent a line with slope (-2)? What is its y-intercept <strong>approximately</strong> (estimate from a quick sketch or mental shift), without fully expanding?</p>
 <div class="answers">
-<p>Coming Soon</p>
+<ol type="1">
+<li><ol type="a">
+<li>(m=3,&nbsp;b=-2)  b) (m=-,&nbsp;b=5)  c) (m=0,&nbsp;b=6)</li>
+</ol></li>
+<li><ol type="a">
+<li>(f(0)=4) (y-intercept)  b) (f(3)=-6+4=-2)  c) (0=-2x+4x=2)</li>
+</ol></li>
+<li><p>Graphs vary; intercepts:</p>
+<ol type="a">
+<li>(y=2x+1): y-int ((0,1)), x-int (x=-)</li>
+<li>(y=-x+4): y-int ((0,4)), x-int (x=4)</li>
+</ol></li>
+<li><p>(y=4x+1) is steeper; both cross at (y=1)</p></li>
+<li><p>Yes, slope (-2) (it’s the (m) in point-slope). Intercept is a bit <strong>above</strong> (y=1) (exact value appears when expanded; estimate is fine here).</p></li>
+</ol>
 </div>
 
 
