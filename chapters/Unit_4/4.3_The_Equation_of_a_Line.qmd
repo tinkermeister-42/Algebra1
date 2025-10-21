@@ -1,171 +1,191 @@
 # 4.3 – The Equation of a Line {.unnumbered}
 
-A linear equation connects two quantities that change at a constant rate.
-You’ve explored **slope**; now you’ll see how slope and a starting value work together in the equation (y = mx + b).
+In the last lesson, you learned how to find and use the **slope** of a line.
+Now we’ll see how slope connects to a line’s **equation** — and how one special point called the **intercept** makes everything fit together.
 
 :::{.objectives}
 
-* [ ] I can identify the slope (m) and y-intercept (b) in an equation of a line.
-* [ ] I can graph a line using its slope and y-intercept.
-* [ ] I can describe how changing (m) or (b) changes the graph of a line.
-* [ ] I can explain that (y = mx + b) and (f(x) = mx + b) mean the same thing.
+* [ ] I can graph a line when I know one point and its slope.
+* [ ] I can identify and find the x- and y-intercepts of a line.
+* [ ] I can write an equation in the form (y = mx + b).
+* [ ] I can describe how changing (m) or (b) changes a line’s graph.
+
 :::
 
 :::{.vocab}
-{{< glink "function notation" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink y-intercept >}}, {{< glink "x-intercept" >}}
+{{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink "y-intercept" >}}, {{< glink "x-intercept" >}}, {{< glink "slope-intercept form" >}}, {{< glink "function notation" >}}
 :::
 
 {{< warmup >}}
-A friend says the line (y = 3x + 1) “starts at 1 and goes up 3 for every step right.”
-What does **start at 1** mean on a graph? What does **up 3** mean?
+
+Think about what you already know:
+
+* What does slope tell us about a line?
+* If you have one point on a line, how could you use the slope to find another?
+
+---
+
+### 4.3.1 – Graphing a Line Using a Point and the Slope
+
+A line’s slope is **constant** — it never changes no matter which points you use.
+That means if you know one point, you can find as many others as you want.
+
+**Example 1 – Graph from a Point and Slope**
+
+Graph the line with slope $m = \tfrac{1}{3}$ passing through the point $(0, 1)$.
+
+The slope means “up 1 for every 3 to the right.”
+Starting at $(0, 1)$, move right 3 and up 1 to reach $(3, 2)$.
+
+![](/images/Unit_4/Lesson_3/Example2.png){width="350px" fig-align="center"}
+
+:::{.you-try title="Graph the line with slope $m = \tfrac{3}{2}$ that passes through $(2, 2)$"}
+
+![](/images/Unit_4/Lesson_3/YouTry1.png){width="350px" fig-align="center"}
+
 :::
 
 ---
 
-## 4.3.1 – What (y = mx + b) Means
+### 4.3.2 – Discovering Intercepts
+
+Every line crosses the axes somewhere.
+Those crossing points are special because they’re easy to find — and they tell us a lot about the line.
+
+Let’s look at an example and see what happens.
+
+**Example 2 – Where Does It Cross?**
+
+Graph $y = \tfrac{3}{4}x - 3$.
+Then find where it crosses each axis.
+
+Let's use $x = 8$ and $x = -4$.
+
+| $x$ | $y$ |
+| :-: | :-: |
+| $8$ | $3$ |
+| $-4$| $-6$|
+
+![](/images/Unit_4/Lesson_3/Example3.png){width="350px" fig-align="center"}
+
+You can see two important points:
+
+* It crosses the **y-axis** at $(0, -3)$.
+* It crosses the **x-axis** around $(4, 0)$.
+
+Those are called **intercepts**.
+
+> The **x-intercept** is where the line crosses the x-axis → it always looks like $(x, 0)$.
+> The **y-intercept** is where the line crosses the y-axis → it always looks like $(0, y)$.
+
+---
+
+## 4.3.3 – Finding Intercepts Algebraically
+
+You don’t always need a graph.
+Because we know what the coordinates look like, we can **set one variable to 0** and solve for the other.
+
+**Example 3 – Find the Intercepts**
+
+Find the x- and y-intercepts of $y = x - 5$.
+
+**x-intercept:** set $y = 0$
+
+$$
+\begin{align*}
+0 &= x - 5\\
+x &= 5
+\end{align*}
+$$
+
+So the x-intercept is $(5, 0)$.
+
+**y-intercept:** set $x = 0$
+
+$$
+y = 0 - 5 = -5
+$$
+
+So the y-intercept is $(0, -5)$.
+
+:::{.you-try title="Find the x- and y-intercepts for $y = 2x + 1$"}
+
+**x-intercept:**
+$$
+\begin{align*}
+0 &= 2x + 1\\
+x &= -\tfrac{1}{2}
+\end{align*}
+$$
+
+$(- \tfrac{1}{2}, 0)$
+
+**y-intercept:**
+$$
+y = 2(0) + 1 = 1
+$$
+
+$(0, 1)$
+
+:::
+
+:::{.remember}
+To find intercepts:
+
+* set $y=0$ → get the x-intercept
+* set $x=0$ → get the y-intercept
+:::
+
+---
+
+## 4.3.4 – The Equation of a Line
+
+Now we can tie everything together.
 
 Every non-vertical line can be written as
-$
-y = mx + b \quad\text{or}\quad f(x) = mx + b.
-$
 
-* (m) is the **slope** — the rate of change.
-* (b) is the **y-intercept** — where the line crosses the y-axis (the value when (x=0)).
+$$
+y = mx + b
+$$
 
-:::{.think title="Why is (b) special?"}
-When (x=0), (y=b). So ((0,b)) is always on the line.
+where
+
+* $m$ is the slope, and
+* $b$ is the **y-intercept** (the point where the line crosses the y-axis).
+
+This is the {{< glink "slope-intercept form" >}} of a line.
+
+**Example 4 – Graph from an Equation**
+
+Graph $y = \tfrac{2}{3}x - 2$.
+
+Start at the y-intercept $(0, -2)$.
+Then use the slope $m = \tfrac{2}{3}$ → up 2, right 3.
+
+![](/images/Unit_4/Lesson_3/Example4.png){width="350px" fig-align="center"}
+
+:::{.you-try title="Graph the line $f(x) = 3x - 2$"}
+
+![](/images/Unit_4/Lesson_3/YouTry2.png){width="350px" fig-align="center"}
+
 :::
-
-**Examples (read, don’t write):**
-
-* (f(x)=2x+1) → (m=2), (b=1).
-* (y=-\tfrac12 x+3) → negative slope (falls to the right), crosses at ((0,3)).
-* (f(x)=4) → (m=0) (horizontal line at (y=4)).
-* (x=-2) → vertical line (not a (y=mx+b) line).
 
 ---
 
-### 4.3.2 – Interactive: Slide (m) and (b)
+## 4.3.5 – Explore: Changing $m$ and $b$
 
-Use the sliders to see how changing (m) and (b) affects the line.
+Try moving the sliders in the interactive chart below.
+Watch what happens as you change $m$ (slope) and $b$ (y-intercept).
 
-* $m$ changes the **tilt** (steepness and direction).
-* $b$ moves the line **up or down**.
+> **Think first:**
+> – What happens when $m$ gets larger?
+> – What happens when $b$ changes?
 
 {{< include /assets/Unit_4/slope-intercept-form-widget.html >}}
-
-:::{.you-try-m title="Quick slider challenges"}
-
-1. Set (m=1). Move (b) from (-4) to (+4). What stays the same? What changes?
-2. Fix (b=2). Move (m) from (-3) to (+3). When does the line have no (x)-intercept?
-3. With (m=-2) and (b=4), estimate (f(3)) using the graph. Then compute it exactly.
-:::
-
-:::{.remember title="Intercepts (light intro)"}
-
-* **y-intercept:** ((0,b)) — read it straight from the equation.
-* **x-intercept:** where (y=0). Solve (0=mx+b) (when (m\neq 0)) to find the (x)-value.
-  We’ll use these ideas more in the next lessons.
-:::
-
----
-
-### 4.3.3 – Graphing from (y=mx+b)
-
-1. Plot the **y-intercept** ((0,b)).
-2. Use the **slope** (m=\dfrac{\text{rise}}{\text{run}}) to get a second point.
-3. Draw the line through your points.
-
-![](/images/Unit_4/Lesson_3/graph_from_slope_intercept.png){width="340px" fig-align="center"}
-
-:::{.you-try title="Graph (f(x)=-2x+4)"}
-Start at ((0,4)). Go down 2, right 1. Plot a second point and draw the line.
-Where are the intercepts?
-:::
-
----
-
-## 4.3.4 – How Changing (m) and (b) Changes the Graph
-
-**Changing (m) (tilt/steepness):**
-
-| Equation | Slope | What happens           |
-| -------- | ----: | ---------------------- |
-| (y=x+2)  |   (1) | Rises steadily         |
-| (y=2x+2) |   (2) | Rises faster (steeper) |
-| (y=-x+2) |  (-1) | Falls to the right     |
-
-![](/images/Unit_4/Lesson_3/change_m_effect.png){width="360px" fig-align="center"}
-
-**Changing (b) (vertical shift):**
-
-| Equation | Intercept (b) | What happens                      |
-| -------- | ------------: | --------------------------------- |
-| (y=2x+1) |           (1) | Crosses y-axis lower              |
-| (y=2x+4) |           (4) | Crosses y-axis higher (same tilt) |
-
-![](/images/Unit_4/Lesson_3/change_b_effect.png){width="360px" fig-align="center"}
-
-:::{.real-world title="Compare two linear rules"}
-Two plans: (f(x)=30x+10) and (g(x)=20x+25).
-Which starts higher? Which grows faster? For a small (x), which is cheaper?
-:::
-
----
-
-## 4.3.5 – Point-Slope as the Same Line (brief touch)
-
-Sometimes you know a **point** and the **slope** but not (b). You can still describe the line:
-
-[
-y - y_1 = m(x - x_1).
-]
-
-This is the **same** line as some (y=mx+b). Solving it for (y) will match the slope and reveal the same graph.
-
-**Example (read, don’t write):**
-Through ((-2,4)) with slope (3): (y-4=3(x+2)).
-This has the same graph as a (y=mx+b) line.
-
-:::{.you-try title="Just compare the forms"}
-Does (y-1=2(x-3)) have the same slope as (y=2x+4)? How can you tell without fully expanding?
-:::
 
 ---
 
 {{< practice >}}
 
+Coming soon
 
-**1. Identify (m) and (b)**
-a) (y=3x-2)  b) (f(x)=-\tfrac12 x+5)  c) (y=6)
-
-**2. Read values from an equation**
-For (f(x)=-2x+4):
-a) (f(0)) b) When (x=3), find (f(3)) c) Solve (0=f(x)) to find the (x)-intercept.
-
-**3. Graph (no writing equations):**
-a) (y=2x+1) b) (f(x)=-x+4).
-Label intercepts on each graph.
-
-**4. Compare lines (steepness & shift):**
-Which is steeper: (y=4x+1) or (y=2x+1)?
-Which crosses the y-axis higher?
-
-**5. Point-slope as the same line (form check only):**
-Does (y-3=-2(x+1)) represent a line with slope (-2)?
-What is its y-intercept **approximately** (estimate from a quick sketch or mental shift), without fully expanding?
-
-:::{.answers}
-
-1. a) (m=3,\ b=-2)  b) (m=-\tfrac12,\ b=5)  c) (m=0,\ b=6)
-
-2. a) (f(0)=4) (y-intercept)  b) (f(3)=-6+4=-2)  c) (0=-2x+4\Rightarrow x=2)
-
-3. Graphs vary; intercepts:
-   a) (y=2x+1): y-int ((0,1)), x-int (x=-\tfrac12)
-   b) (y=-x+4): y-int ((0,4)), x-int (x=4)
-
-4. (y=4x+1) is steeper; both cross at (y=1)
-
-5. Yes, slope (-2) (it’s the (m) in point-slope). Intercept is a bit **above** (y=1) (exact value appears when expanded; estimate is fine here).
-:::
