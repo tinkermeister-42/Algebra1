@@ -453,40 +453,40 @@
     "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html",
     "title": "4.3 – The Equation of a Line",
     "section": "",
-    "text": "4.3.1 – What (y = mx + b) Means\nA linear equation connects two quantities that change at a constant rate. You’ve explored slope; now you’ll see how slope and a starting value work together in the equation (y = mx + b).\nEvery non-vertical line can be written as $ y = mx + b f(x) = mx + b. $\nExamples (read, don’t write):",
+    "text": "4.3.1 – Graphing a Line Using a Point and the Slope\nIn the last lesson, you learned how to find and use the slope of a line. Now we’ll see how slope connects to a line’s equation — and how one special point called the intercept makes everything fit together.\nThink about what you already know:\nA line’s slope is constant — it never changes no matter which points you use. That means if you know one point, you can find as many others as you want.\nExample 1 – Graph from a Point and Slope\nGraph the line with slope \\(m = \\tfrac{1}{3}\\) passing through the point \\((0, 1)\\).\nThe slope means “up 1 for every 3 to the right.” Starting at \\((0, 1)\\), move right 3 and up 1 to reach \\((3, 2)\\).",
     "crumbs": [
       "Unit 4: Linear Functions & Graphs",
       "4.3 – The Equation of a Line"
     ]
   },
   {
-    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#what-y-mx-b-means",
-    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#what-y-mx-b-means",
+    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#finding-intercepts-algebraically",
+    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#finding-intercepts-algebraically",
     "title": "4.3 – The Equation of a Line",
-    "section": "",
-    "text": "is the slope — the rate of change.\n\n\nis the y-intercept — where the line crosses the y-axis (the value when (x=0)).\n\n\n\nWhen (x=0), (y=b). So ((0,b)) is always on the line.\n\n\n\n(f(x)=2x+1) → (m=2), (b=1).\n(y=- x+3) → negative slope (falls to the right), crosses at ((0,3)).\n(f(x)=4) → (m=0) (horizontal line at (y=4)).\n(x=-2) → vertical line (not a (y=mx+b) line).\n\n\n\n4.3.2 – Interactive: Slide (m) and (b)\nUse the sliders to see how changing (m) and (b) affects the line.\n\n\\(m\\) changes the tilt (steepness and direction).\n\\(b\\) moves the line up or down.\n\n\n\n\n\n\n\n\n\nSet (m=1). Move (b) from (-4) to (+4). What stays the same? What changes?\nFix (b=2). Move (m) from (-3) to (+3). When does the line have no (x)-intercept?\nWith (m=-2) and (b=4), estimate (f(3)) using the graph. Then compute it exactly.\n\n\n\n\ny-intercept: ((0,b)) — read it straight from the equation.\nx-intercept: where (y=0). Solve (0=mx+b) (when (m)) to find the (x)-value. We’ll use these ideas more in the next lessons.\n\n\n\n\n\n4.3.3 – Graphing from (y=mx+b)\n\nPlot the y-intercept ((0,b)).\nUse the slope (m=) to get a second point.\nDraw the line through your points.\n\n\n\n\n\n\n\nStart at ((0,4)). Go down 2, right 1. Plot a second point and draw the line. Where are the intercepts?",
+    "section": "4.3.3 – Finding Intercepts Algebraically",
+    "text": "4.3.3 – Finding Intercepts Algebraically\nYou don’t always need a graph. Because we know what the coordinates look like, we can set one variable to 0 and solve for the other.\nExample 3 – Find the Intercepts\nFind the x- and y-intercepts of \\(y = x - 5\\).\nx-intercept: set \\(y = 0\\)\n\\[\n\\begin{align*}\n0 &= x - 5\\\\\nx &= 5\n\\end{align*}\n\\]\nSo the x-intercept is \\((5, 0)\\).\ny-intercept: set \\(x = 0\\)\n\\[\ny = 0 - 5 = -5\n\\]\nSo the y-intercept is \\((0, -5)\\).\n\nx-intercept: \\[\n\\begin{align*}\n0 &= 2x + 1\\\\\nx &= -\\tfrac{1}{2}\n\\end{align*}\n\\]\n\\((- \\tfrac{1}{2}, 0)\\)\ny-intercept: \\[\ny = 2(0) + 1 = 1\n\\]\n\\((0, 1)\\)\n\n\nTo find intercepts:\n\nset \\(y=0\\) → get the x-intercept\nset \\(x=0\\) → get the y-intercept",
     "crumbs": [
       "Unit 4: Linear Functions & Graphs",
       "4.3 – The Equation of a Line"
     ]
   },
   {
-    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#how-changing-m-and-b-changes-the-graph",
-    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#how-changing-m-and-b-changes-the-graph",
+    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#the-equation-of-a-line",
+    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#the-equation-of-a-line",
     "title": "4.3 – The Equation of a Line",
-    "section": "4.3.4 – How Changing (m) and (b) Changes the Graph",
-    "text": "4.3.4 – How Changing (m) and (b) Changes the Graph\nChanging (m) (tilt/steepness):\n\n\n\nEquation\nSlope\nWhat happens\n\n\n\n\n(y=x+2)\n(1)\nRises steadily\n\n\n(y=2x+2)\n(2)\nRises faster (steeper)\n\n\n(y=-x+2)\n(-1)\nFalls to the right\n\n\n\n\n\n\n\n\nChanging (b) (vertical shift):\n\n\n\nEquation\nIntercept (b)\nWhat happens\n\n\n\n\n(y=2x+1)\n(1)\nCrosses y-axis lower\n\n\n(y=2x+4)\n(4)\nCrosses y-axis higher (same tilt)\n\n\n\n\n\n\n\n\n\nTwo plans: (f(x)=30x+10) and (g(x)=20x+25). Which starts higher? Which grows faster? For a small (x), which is cheaper?",
+    "section": "4.3.4 – The Equation of a Line",
+    "text": "4.3.4 – The Equation of a Line\nNow we can tie everything together.\nEvery non-vertical line can be written as\n\\[\ny = mx + b\n\\]\nwhere\n\n\\(m\\) is the slope, and\n\\(b\\) is the y-intercept (the point where the line crosses the y-axis).\n\nThis is the slope-intercept form of a line.\nExample 4 – Graph from an Equation\nGraph \\(y = \\tfrac{2}{3}x - 2\\).\nStart at the y-intercept \\((0, -2)\\). Then use the slope \\(m = \\tfrac{2}{3}\\) → up 2, right 3.",
     "crumbs": [
       "Unit 4: Linear Functions & Graphs",
       "4.3 – The Equation of a Line"
     ]
   },
   {
-    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#point-slope-as-the-same-line-brief-touch",
-    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#point-slope-as-the-same-line-brief-touch",
+    "objectID": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#explore-changing-m-and-b",
+    "href": "chapters/Unit_4/4.3_The_Equation_of_a_Line.html#explore-changing-m-and-b",
     "title": "4.3 – The Equation of a Line",
-    "section": "4.3.5 – Point-Slope as the Same Line (brief touch)",
-    "text": "4.3.5 – Point-Slope as the Same Line (brief touch)\nSometimes you know a point and the slope but not (b). You can still describe the line:\n[ y - y_1 = m(x - x_1).]\nThis is the same line as some (y=mx+b). Solving it for (y) will match the slope and reveal the same graph.\nExample (read, don’t write): Through ((-2,4)) with slope (3): (y-4=3(x+2)). This has the same graph as a (y=mx+b) line.\n\nDoes (y-1=2(x-3)) have the same slope as (y=2x+4)? How can you tell without fully expanding?\n\n\n✍️ Practice On Your Own\n1. Identify (m) and (b) a) (y=3x-2)  b) (f(x)=- x+5)  c) (y=6)\n2. Read values from an equation For (f(x)=-2x+4): a) (f(0)) b) When (x=3), find (f(3)) c) Solve (0=f(x)) to find the (x)-intercept.\n3. Graph (no writing equations): a) (y=2x+1) b) (f(x)=-x+4). Label intercepts on each graph.\n4. Compare lines (steepness & shift): Which is steeper: (y=4x+1) or (y=2x+1)? Which crosses the y-axis higher?\n5. Point-slope as the same line (form check only): Does (y-3=-2(x+1)) represent a line with slope (-2)? What is its y-intercept approximately (estimate from a quick sketch or mental shift), without fully expanding?\n\n\n\n(m=3, b=-2)  b) (m=-, b=5)  c) (m=0, b=6)\n\n\n(f(0)=4) (y-intercept)  b) (f(3)=-6+4=-2)  c) (0=-2x+4x=2)\n\nGraphs vary; intercepts:\n\n(y=2x+1): y-int ((0,1)), x-int (x=-)\n(y=-x+4): y-int ((0,4)), x-int (x=4)\n\n(y=4x+1) is steeper; both cross at (y=1)\nYes, slope (-2) (it’s the (m) in point-slope). Intercept is a bit above (y=1) (exact value appears when expanded; estimate is fine here).",
+    "section": "4.3.5 – Explore: Changing \\(m\\) and \\(b\\)",
+    "text": "4.3.5 – Explore: Changing \\(m\\) and \\(b\\)\nTry moving the sliders in the interactive chart below. Watch what happens as you change \\(m\\) (slope) and \\(b\\) (y-intercept).\n\nThink first: – What happens when \\(m\\) gets larger? – What happens when \\(b\\) changes?\n\n\n\n\n\n\n\n\n✍️ Practice On Your Own\nComing soon",
     "crumbs": [
       "Unit 4: Linear Functions & Graphs",
       "4.3 – The Equation of a Line"

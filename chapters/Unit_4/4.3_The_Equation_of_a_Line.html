@@ -497,13 +497,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-y-mx-b-means" id="toc-what-y-mx-b-means" class="nav-link active" data-scroll-target="#what-y-mx-b-means">4.3.1 – What (y = mx + b) Means</a>
-  <ul class="collapse">
-  <li><a href="#interactive-slide-m-and-b" id="toc-interactive-slide-m-and-b" class="nav-link" data-scroll-target="#interactive-slide-m-and-b">4.3.2 – Interactive: Slide (m) and (b)</a></li>
-  <li><a href="#graphing-from-ymxb" id="toc-graphing-from-ymxb" class="nav-link" data-scroll-target="#graphing-from-ymxb">4.3.3 – Graphing from (y=mx+b)</a></li>
-  </ul></li>
-  <li><a href="#how-changing-m-and-b-changes-the-graph" id="toc-how-changing-m-and-b-changes-the-graph" class="nav-link" data-scroll-target="#how-changing-m-and-b-changes-the-graph">4.3.4 – How Changing (m) and (b) Changes the Graph</a></li>
-  <li><a href="#point-slope-as-the-same-line-brief-touch" id="toc-point-slope-as-the-same-line-brief-touch" class="nav-link" data-scroll-target="#point-slope-as-the-same-line-brief-touch">4.3.5 – Point-Slope as the Same Line (brief touch)</a></li>
+  <li><a href="#graphing-a-line-using-a-point-and-the-slope" id="toc-graphing-a-line-using-a-point-and-the-slope" class="nav-link active" data-scroll-target="#graphing-a-line-using-a-point-and-the-slope">4.3.1 – Graphing a Line Using a Point and the Slope</a></li>
+  <li><a href="#discovering-intercepts" id="toc-discovering-intercepts" class="nav-link" data-scroll-target="#discovering-intercepts">4.3.2 – Discovering Intercepts</a></li>
+  <li><a href="#finding-intercepts-algebraically" id="toc-finding-intercepts-algebraically" class="nav-link" data-scroll-target="#finding-intercepts-algebraically">4.3.3 – Finding Intercepts Algebraically</a></li>
+  <li><a href="#the-equation-of-a-line" id="toc-the-equation-of-a-line" class="nav-link" data-scroll-target="#the-equation-of-a-line">4.3.4 – The Equation of a Line</a></li>
+  <li><a href="#explore-changing-m-and-b" id="toc-explore-changing-m-and-b" class="nav-link" data-scroll-target="#explore-changing-m-and-b">4.3.5 – Explore: Changing <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span></a></li>
   </ul>
 </nav>
     </div>
@@ -529,49 +527,162 @@ window.Quarto = {
 </header>
 
 
-<p>A linear equation connects two quantities that change at a constant rate. You’ve explored <strong>slope</strong>; now you’ll see how slope and a starting value work together in the equation (y = mx + b).</p>
+<p>In the last lesson, you learned how to find and use the <strong>slope</strong> of a line. Now we’ll see how slope connects to a line’s <strong>equation</strong> — and how one special point called the <strong>intercept</strong> makes everything fit together.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can identify the slope (m) and y-intercept (b) in an equation of a line.</label></li>
-<li><label><input type="checkbox">I can graph a line using its slope and y-intercept.</label></li>
-<li><label><input type="checkbox">I can describe how changing (m) or (b) changes the graph of a line.</label></li>
-<li><label><input type="checkbox">I can explain that (y = mx + b) and (f(x) = mx + b) mean the same thing.</label></li>
+<li><label><input type="checkbox">I can graph a line when I know one point and its slope.</label></li>
+<li><label><input type="checkbox">I can identify and find the x- and y-intercepts of a line.</label></li>
+<li><label><input type="checkbox">I can write an equation in the form (y = mx + b).</label></li>
+<li><label><input type="checkbox">I can describe how changing (m) or (b) changes a line’s graph.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="#glossary-function-notation" class="glossary-link" data-term="function notation" data-slug="function-notation" data-original-href="#glossary-function-notation">function notation</a>, <a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-term="linear equation" data-slug="linear-equation" data-original-href="#glossary-linear-equation">linear equation</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="#glossary-slope-intercept-form" class="glossary-link" data-term="slope-intercept form" data-slug="slope-intercept-form" data-original-href="#glossary-slope-intercept-form">slope-intercept form</a>, <a href="#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-slug="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a>, <a href="#glossary-x-intercept" class="glossary-link" data-term="x-intercept" data-slug="x-intercept" data-original-href="#glossary-x-intercept">x-intercept</a></p>
+<p><a href="../../glossary.html#glossary-linear-equation" class="glossary-link" data-original-href="#glossary-linear-equation" data-slug="linear-equation" data-term="linear equation">linear equation</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-original-href="#glossary-slope" data-slug="slope" data-term="slope">slope</a>, <a href="#glossary-y-intercept" class="glossary-link" data-original-href="#glossary-y-intercept" data-slug="y-intercept" data-term="y-intercept">y-intercept</a>, <a href="#glossary-x-intercept" class="glossary-link" data-original-href="#glossary-x-intercept" data-slug="x-intercept" data-term="x-intercept">x-intercept</a>, <a href="#glossary-slope-intercept-form" class="glossary-link" data-original-href="#glossary-slope-intercept-form" data-slug="slope-intercept-form" data-term="slope-intercept form">slope-intercept form</a>, <a href="#glossary-function-notation" class="glossary-link" data-original-href="#glossary-function-notation" data-slug="function-notation" data-term="function notation">function notation</a></p>
 </div>
-<p></p><h2 class="unnumbered anchored">🔥 Warm-Up</h2> A friend says the line (y = 3x + 1) “starts at 1 and goes up 3 for every step right.” What does <strong>start at 1</strong> mean on a graph? What does <strong>up 3</strong> mean? :::<p></p>
-<hr>
-<section id="what-y-mx-b-means" class="level2">
-<h2 class="anchored" data-anchor-id="what-y-mx-b-means">4.3.1 – What (y = mx + b) Means</h2>
-<p>Every non-vertical line can be written as $ y = mx + b f(x) = mx + b. $</p>
+<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>Think about what you already know:</p>
 <ul>
-<li><ol start="13" type="a">
-<li>is the <strong>slope</strong> — the rate of change.</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li>is the <strong>y-intercept</strong> — where the line crosses the y-axis (the value when (x=0)).</li>
-</ol></li>
-</ul>
-<div class="think" title="Why is (b) special?">
-<p>When (x=0), (y=b). So ((0,b)) is always on the line.</p>
-</div>
-<p><strong>Examples (read, don’t write):</strong></p>
-<ul>
-<li>(f(x)=2x+1) → (m=2), (b=1).</li>
-<li>(y=- x+3) → negative slope (falls to the right), crosses at ((0,3)).</li>
-<li>(f(x)=4) → (m=0) (horizontal line at (y=4)).</li>
-<li>(x=-2) → vertical line (not a (y=mx+b) line).</li>
+<li>What does slope tell us about a line?</li>
+<li>If you have one point on a line, how could you use the slope to find another?</li>
 </ul>
 <hr>
-<section id="interactive-slide-m-and-b" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-slide-m-and-b">4.3.2 – Interactive: Slide (m) and (b)</h3>
-<p>Use the sliders to see how changing (m) and (b) affects the line.</p>
+<section id="graphing-a-line-using-a-point-and-the-slope" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-a-line-using-a-point-and-the-slope">4.3.1 – Graphing a Line Using a Point and the Slope</h3>
+<p>A line’s slope is <strong>constant</strong> — it never changes no matter which points you use. That means if you know one point, you can find as many others as you want.</p>
+<p><strong>Example 1 – Graph from a Point and Slope</strong></p>
+<p>Graph the line with slope <span class="math inline">\(m = \tfrac{1}{3}\)</span> passing through the point <span class="math inline">\((0, 1)\)</span>.</p>
+<p>The slope means “up 1 for every 3 to the right.” Starting at <span class="math inline">\((0, 1)\)</span>, move right 3 and up 1 to reach <span class="math inline">\((3, 2)\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/Example2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<div class="you-try" title="Graph the line with slope $m = \tfrac{3}{2}$ that passes through $(2, 2)$">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/YouTry1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="discovering-intercepts" class="level3">
+<h3 class="anchored" data-anchor-id="discovering-intercepts">4.3.2 – Discovering Intercepts</h3>
+<p>Every line crosses the axes somewhere. Those crossing points are special because they’re easy to find — and they tell us a lot about the line.</p>
+<p>Let’s look at an example and see what happens.</p>
+<p><strong>Example 2 – Where Does It Cross?</strong></p>
+<p>Graph <span class="math inline">\(y = \tfrac{3}{4}x - 3\)</span>. Then find where it crosses each axis.</p>
+<p>Let’s use <span class="math inline">\(x = 8\)</span> and <span class="math inline">\(x = -4\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(8\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(3\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(-4\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-6\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/Example3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<p>You can see two important points:</p>
 <ul>
-<li><span class="math inline">\(m\)</span> changes the <strong>tilt</strong> (steepness and direction).</li>
-<li><span class="math inline">\(b\)</span> moves the line <strong>up or down</strong>.</li>
+<li>It crosses the <strong>y-axis</strong> at <span class="math inline">\((0, -3)\)</span>.</li>
+<li>It crosses the <strong>x-axis</strong> around <span class="math inline">\((4, 0)\)</span>.</li>
 </ul>
+<p>Those are called <strong>intercepts</strong>.</p>
+<blockquote class="blockquote">
+<p>The <strong>x-intercept</strong> is where the line crosses the x-axis → it always looks like <span class="math inline">\((x, 0)\)</span>. The <strong>y-intercept</strong> is where the line crosses the y-axis → it always looks like <span class="math inline">\((0, y)\)</span>.</p>
+</blockquote>
+<hr>
+</section>
+<section id="finding-intercepts-algebraically" class="level2">
+<h2 class="anchored" data-anchor-id="finding-intercepts-algebraically">4.3.3 – Finding Intercepts Algebraically</h2>
+<p>You don’t always need a graph. Because we know what the coordinates look like, we can <strong>set one variable to 0</strong> and solve for the other.</p>
+<p><strong>Example 3 – Find the Intercepts</strong></p>
+<p>Find the x- and y-intercepts of <span class="math inline">\(y = x - 5\)</span>.</p>
+<p><strong>x-intercept:</strong> set <span class="math inline">\(y = 0\)</span></p>
+<p><span class="math display">\[
+\begin{align*}
+0 &amp;= x - 5\\
+x &amp;= 5
+\end{align*}
+\]</span></p>
+<p>So the x-intercept is <span class="math inline">\((5, 0)\)</span>.</p>
+<p><strong>y-intercept:</strong> set <span class="math inline">\(x = 0\)</span></p>
+<p><span class="math display">\[
+y = 0 - 5 = -5
+\]</span></p>
+<p>So the y-intercept is <span class="math inline">\((0, -5)\)</span>.</p>
+<div class="you-try" title="Find the x- and y-intercepts for $y = 2x + 1$">
+<p><strong>x-intercept:</strong> <span class="math display">\[
+\begin{align*}
+0 &amp;= 2x + 1\\
+x &amp;= -\tfrac{1}{2}
+\end{align*}
+\]</span></p>
+<p><span class="math inline">\((- \tfrac{1}{2}, 0)\)</span></p>
+<p><strong>y-intercept:</strong> <span class="math display">\[
+y = 2(0) + 1 = 1
+\]</span></p>
+<p><span class="math inline">\((0, 1)\)</span></p>
+</div>
+<div class="remember">
+<p>To find intercepts:</p>
+<ul>
+<li>set <span class="math inline">\(y=0\)</span> → get the x-intercept</li>
+<li>set <span class="math inline">\(x=0\)</span> → get the y-intercept</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="the-equation-of-a-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-equation-of-a-line">4.3.4 – The Equation of a Line</h2>
+<p>Now we can tie everything together.</p>
+<p>Every non-vertical line can be written as</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(m\)</span> is the slope, and</li>
+<li><span class="math inline">\(b\)</span> is the <strong>y-intercept</strong> (the point where the line crosses the y-axis).</li>
+</ul>
+<p>This is the <a href="#glossary-slope-intercept-form" class="glossary-link" data-original-href="#glossary-slope-intercept-form" data-slug="slope-intercept-form" data-term="slope-intercept form">slope-intercept form</a> of a line.</p>
+<p><strong>Example 4 – Graph from an Equation</strong></p>
+<p>Graph <span class="math inline">\(y = \tfrac{2}{3}x - 2\)</span>.</p>
+<p>Start at the y-intercept <span class="math inline">\((0, -2)\)</span>. Then use the slope <span class="math inline">\(m = \tfrac{2}{3}\)</span> → up 2, right 3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<div class="you-try" title="Graph the line $f(x) = 3x - 2$">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_3/YouTry2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="explore-changing-m-and-b" class="level2">
+<h2 class="anchored" data-anchor-id="explore-changing-m-and-b">4.3.5 – Explore: Changing <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span></h2>
+<p>Try moving the sliders in the interactive chart below. Watch what happens as you change <span class="math inline">\(m\)</span> (slope) and <span class="math inline">\(b\)</span> (y-intercept).</p>
+<blockquote class="blockquote">
+<p><strong>Think first:</strong> – What happens when <span class="math inline">\(m\)</span> gets larger? – What happens when <span class="math inline">\(b\)</span> changes?</p>
+</blockquote>
 <!-- widgets/line-equation.html (v7) : label reposition -->
 <div class="leq3-root" data-m="1.0" data-b="0.0">
 
@@ -727,138 +838,9 @@ window.Quarto = {
         }
     })();
 </script>
-<div class="you-try-m" title="Quick slider challenges">
-<ol type="1">
-<li>Set (m=1). Move (b) from (-4) to (+4). What stays the same? What changes?</li>
-<li>Fix (b=2). Move (m) from (-3) to (+3). When does the line have no (x)-intercept?</li>
-<li>With (m=-2) and (b=4), estimate (f(3)) using the graph. Then compute it exactly.</li>
-</ol>
-</div>
-<div class="remember" title="Intercepts (light intro)">
-<ul>
-<li><strong>y-intercept:</strong> ((0,b)) — read it straight from the equation.</li>
-<li><strong>x-intercept:</strong> where (y=0). Solve (0=mx+b) (when (m)) to find the (x)-value. We’ll use these ideas more in the next lessons.</li>
-</ul>
-</div>
-<hr>
-</section>
-<section id="graphing-from-ymxb" class="level3">
-<h3 class="anchored" data-anchor-id="graphing-from-ymxb">4.3.3 – Graphing from (y=mx+b)</h3>
-<ol type="1">
-<li>Plot the <strong>y-intercept</strong> ((0,b)).</li>
-<li>Use the <strong>slope</strong> (m=) to get a second point.</li>
-<li>Draw the line through your points.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_3/graph_from_slope_intercept.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
-</figure>
-</div>
-<div class="you-try" title="Graph (f(x)=-2x+4)">
-<p>Start at ((0,4)). Go down 2, right 1. Plot a second point and draw the line. Where are the intercepts?</p>
-</div>
-<hr>
-</section>
-</section>
-<section id="how-changing-m-and-b-changes-the-graph" class="level2">
-<h2 class="anchored" data-anchor-id="how-changing-m-and-b-changes-the-graph">4.3.4 – How Changing (m) and (b) Changes the Graph</h2>
-<p><strong>Changing (m) (tilt/steepness):</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Equation</th>
-<th style="text-align: right;">Slope</th>
-<th>What happens</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>(y=x+2)</td>
-<td style="text-align: right;">(1)</td>
-<td>Rises steadily</td>
-</tr>
-<tr class="even">
-<td>(y=2x+2)</td>
-<td style="text-align: right;">(2)</td>
-<td>Rises faster (steeper)</td>
-</tr>
-<tr class="odd">
-<td>(y=-x+2)</td>
-<td style="text-align: right;">(-1)</td>
-<td>Falls to the right</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_3/change_m_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
-</figure>
-</div>
-<p><strong>Changing (b) (vertical shift):</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Equation</th>
-<th style="text-align: right;">Intercept (b)</th>
-<th>What happens</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>(y=2x+1)</td>
-<td style="text-align: right;">(1)</td>
-<td>Crosses y-axis lower</td>
-</tr>
-<tr class="even">
-<td>(y=2x+4)</td>
-<td style="text-align: right;">(4)</td>
-<td>Crosses y-axis higher (same tilt)</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_3/change_b_effect.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
-</figure>
-</div>
-<div class="real-world" title="Compare two linear rules">
-<p>Two plans: (f(x)=30x+10) and (g(x)=20x+25). Which starts higher? Which grows faster? For a small (x), which is cheaper?</p>
-</div>
-<hr>
-</section>
-<section id="point-slope-as-the-same-line-brief-touch" class="level2">
-<h2 class="anchored" data-anchor-id="point-slope-as-the-same-line-brief-touch">4.3.5 – Point-Slope as the Same Line (brief touch)</h2>
-<p>Sometimes you know a <strong>point</strong> and the <strong>slope</strong> but not (b). You can still describe the line:</p>
-<p>[ y - y_1 = m(x - x_1).]</p>
-<p>This is the <strong>same</strong> line as some (y=mx+b). Solving it for (y) will match the slope and reveal the same graph.</p>
-<p><strong>Example (read, don’t write):</strong> Through ((-2,4)) with slope (3): (y-4=3(x+2)). This has the same graph as a (y=mx+b) line.</p>
-<div class="you-try" title="Just compare the forms">
-<p>Does (y-1=2(x-3)) have the same slope as (y=2x+4)? How can you tell without fully expanding?</p>
-</div>
 <hr>
 <h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
-<p><strong>1. Identify (m) and (b)</strong> a) (y=3x-2)  b) (f(x)=- x+5)  c) (y=6)</p>
-<p><strong>2. Read values from an equation</strong> For (f(x)=-2x+4): a) (f(0)) b) When (x=3), find (f(3)) c) Solve (0=f(x)) to find the (x)-intercept.</p>
-<p><strong>3. Graph (no writing equations):</strong> a) (y=2x+1) b) (f(x)=-x+4). Label intercepts on each graph.</p>
-<p><strong>4. Compare lines (steepness &amp; shift):</strong> Which is steeper: (y=4x+1) or (y=2x+1)? Which crosses the y-axis higher?</p>
-<p><strong>5. Point-slope as the same line (form check only):</strong> Does (y-3=-2(x+1)) represent a line with slope (-2)? What is its y-intercept <strong>approximately</strong> (estimate from a quick sketch or mental shift), without fully expanding?</p>
-<div class="answers">
-<ol type="1">
-<li><ol type="a">
-<li>(m=3,&nbsp;b=-2)  b) (m=-,&nbsp;b=5)  c) (m=0,&nbsp;b=6)</li>
-</ol></li>
-<li><ol type="a">
-<li>(f(0)=4) (y-intercept)  b) (f(3)=-6+4=-2)  c) (0=-2x+4x=2)</li>
-</ol></li>
-<li><p>Graphs vary; intercepts:</p>
-<ol type="a">
-<li>(y=2x+1): y-int ((0,1)), x-int (x=-)</li>
-<li>(y=-x+4): y-int ((0,4)), x-int (x=4)</li>
-</ol></li>
-<li><p>(y=4x+1) is steeper; both cross at (y=1)</p></li>
-<li><p>Yes, slope (-2) (it’s the (m) in point-slope). Intercept is a bit <strong>above</strong> (y=1) (exact value appears when expanded; estimate is fine here).</p></li>
-</ol>
-</div>
+<p>Coming soon</p>
 
 
 </section>
