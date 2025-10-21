@@ -293,8 +293,8 @@ $$
 3h + 6 \textcolor{red}{-6} &= 18 \textcolor{red}{-6} \snminus{6} \\
 3h &= 12 \\
 \\
-3h \textcolor{red}{\div 3} &= 18 \textcolor{red}{\div 3} \sndiv{3} \\
-h &= 6
+3h \textcolor{red}{\div 3} &= 12 \textcolor{red}{\div 3} \sndiv{3} \\
+h &= 4
 \end{align*}
 $$
 
