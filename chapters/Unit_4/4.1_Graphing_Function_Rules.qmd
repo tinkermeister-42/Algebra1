@@ -242,7 +242,7 @@ Which point lies on the y-axis?
 **10.** For $h(x) = \frac{1}{2}x + 1$, make a table for $x = 0, 2, 4, 6$.
 Plot and connect the points.
 
-|  $x$  |  $y = 2x$  |
+|  $x$  |  $y = \frac{1}{2}x + 1$  |
 |  :-:  |    :-:     |
 |   0   |            |
 |   2   |            |

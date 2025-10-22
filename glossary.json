@@ -37,6 +37,7 @@
   "factoring": "Factoring means breaking something down into smaller parts that multiply together to make it.",
   "fraction": "A fraction shows a part of a whole. It has a numerator (top number) and a denominator (bottom number).",
   "function": "A function is a rule that takes an input, does something to it, and produces exactly one output. We often write a function with a name like f(x), which reads “f of x” and means “the rule f applied to input x.”",
+  "function-notation": "Function notation is a way of writing rules or equations that show how one variable depends on another. Instead of writing y = 2x + 1, we can write f(x) = 2x + 1. This means “the function f takes an input x and gives an output f(x).”",
   "grade": "A grade often shows how well someone did using a percent or letter. It’s usually based on part out of whole.",
   "greater-than": "A number is greater than (>) another number if it is further to the right on the number line.",
   "greatest-common-factor": "The greatest common factor (GCF) is the biggest number that divides evenly into two or more numbers. It is the largest factor they have in common.",
@@ -95,6 +96,7 @@
   "skip-count": "Skip counting means counting forward (or backward) by a number other than 1 — like 2, 5, or 10. It’s a way to count faster using patterns.",
   "slope": "A number that shows how a line tilts — how much it goes up or down as you move left or right on a graph. It describes both the direction and the steepness of a line.",
   "slope-formula": "The equation used to find the slope of a line by comparing how much y changes to how much x changes. It’s written as:",
+  "slope-intercept-form": "The slope-intercept form of a line is the equation y = mx + b.",
   "solution": "A solution is any value of a variable that makes an equation true. If there’s more than one answer, we call the set of all answers the solution set.",
   "solve": "To solve an equation means to find every value of the variable that makes the equation true — so both sides are equal. The answer(s) you find are the solution (or solution set).",
   "substitute": "To substitute means to replace a variable with a number (or another expression) in an expression or an equation. We often say “plug in.” Use parentheses when you plug in, especially with negative numbers.",
@@ -107,5 +109,7 @@
   "variable": "A variable is a letter or symbol that stands for a number that can change or is unknown.",
   "vertical": "Up and down, like a flagpole.",
   "whole": "The whole is the total amount — it’s everything being considered before taking parts.",
-  "whole-number": "A whole number is a number with no fractions or decimals. These are 0, 1, 2, 3, … (zero and the positive integers). Whole numbers do not include negatives, decimals, or fractions. They are a subset of integers."
+  "whole-number": "A whole number is a number with no fractions or decimals. These are 0, 1, 2, 3, … (zero and the positive integers). Whole numbers do not include negatives, decimals, or fractions. They are a subset of integers.",
+  "x-intercept": "The x-intercept is the point where a line crosses the x-axis. At this point, the value of y is always 0.",
+  "y-intercept": "The y-intercept is the point where a line crosses the y-axis. At this point, the value of x is always 0."
 }

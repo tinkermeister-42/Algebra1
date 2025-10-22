@@ -328,3 +328,18 @@ No Challenge Questions
     **Conclusion:** doubling the slope (with the same $x$) doubles the vertical change — the line becomes twice as steep by stretching the $y$-values while $x$ stays fixed.
     
 :::
+
+### 4.3 - The Equation of a Line
+
+:::{.answers}
+
+14. $(3, 8)$
+
+
+15. 
+    $$
+    \boxed{b = m - \frac{n(n - 3)}{4 - m}}
+    $$
+
+
+:::

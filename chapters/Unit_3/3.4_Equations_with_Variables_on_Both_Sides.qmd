@@ -550,20 +550,20 @@ $$
 
 15. $m = 3$
 
-16. $x = -5$
+16. $x = 9$
 
-17. $y = 6$
+17. $y = 7.5$
 
-18. $n = 13$
+18. $n = 19$
 
-19. $x = 8$
+19. $x = 6$
 
-20. $m = 6$
+20. $m = 3.25$
 
 21. The plans cost the same after 4 movies
 
 22. They cost the same after 3 hours
 
-23. Both sides are 21 cm in length
+23. $x=4.5$. Both sides are 21 cm in length
 
 :::

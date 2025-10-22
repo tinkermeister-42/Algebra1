@@ -475,6 +475,17 @@ A **function** is a rule that takes an **input**, does something to it, and prod
 
 ---
 
+### Function Notation {#glossary-function-notation}
+
+**Function notation** is a way of writing rules or equations that show how one variable depends on another.
+Instead of writing $y = 2x + 1$, we can write $f(x) = 2x + 1$.
+This means “the function $f$ takes an input $x$ and gives an output $f(x)$.”
+
+> **Example:**
+> If $f(x) = 2x + 1$, then $f(3) = 2(3) + 1 = 7$.
+
+---
+
 ### Grade {#glossary-grade}
 
 A grade often shows **how well someone did** using a percent or letter. It’s usually based on **part out of whole**.
@@ -1169,6 +1180,17 @@ where
 
 ---
 
+### Slope-Intercept Form {#glossary-slope-intercept-form}
+
+The **slope-intercept form** of a line is the equation $y = mx + b$.
+
+Where $m$ is the **slope** (how steep the line is) and $b$ is the **y-intercept** (where it crosses the y-axis).
+
+> **Example:**
+> In $y = 2x + 1$, the slope is $2$ and the y-intercept is $1$.
+
+---
+
 ### Solution {#glossary-solution}
 
 A **solution** is any value of a variable that makes an equation true. If there’s more than one answer, we call the set of all answers the **solution set**.
@@ -1315,7 +1337,24 @@ A **whole number** is a number with **no fractions or decimals**. These are **0,
 >
 > Not whole: $-3$ (negative), $2.5$ (decimal), $\tfrac{3}{4}$ (fraction)
 
+---
 
+### x-intercept {#glossary-x-intercept}
 
+The **x-intercept** is the point where a line crosses the x-axis.
+At this point, the value of $y$ is always $0$.
 
+> **Example:**
+> The line $y = 2x - 6$ crosses the x-axis at $(3, 0)$, so the x-intercept is **3**.
 
+---
+
+### y-intercept {#glossary-y-intercept}
+
+The **y-intercept** is the point where a line crosses the y-axis.
+At this point, the value of $x$ is always $0$.
+
+> **Example:**
+> The line $y = -3x + 5$ crosses the y-axis at $(0, 5)$, so the y-intercept is **5**.
+
+---

@@ -367,11 +367,11 @@ Write an inequality to model each situation, then solve.
 
 6. $x > 11$
 
-7. $x \le 7$
+7. $x \le 6$
 
 8. $x > 2$
 
-9. $x > -4$
+9. $x > -3$
 
 10. $x \ge 4$
 
@@ -381,9 +381,9 @@ Write an inequality to model each situation, then solve.
 
 13. $x \ge 2$
 
-14. $x > 10$
+14. $x > 7$
 
-15. $x \le -\dfrac{8}{5}$
+15. $x \le -\dfrac{16}{5}$
 
 16. $h \ge 48$
 
@@ -402,4 +402,3 @@ Write an inequality to model each situation, then solve.
 23. $200 + 15p \le 500 \Rightarrow p \le 20$
 
 :::
-
