@@ -28,9 +28,9 @@ Once you know those, you can write an equation, make predictions, and see how th
 3. What is the $x$-value when a line crosses the y-axis?
    What is the $y$-value when a line crosses the x-axis?
 
----
+{{< learn >}}
 
-## 4.3.1 – Graphing a Line Using a Point and the Slope
+### 4.3.1 – Graphing a Line Using a Point and the Slope
 
 A line’s slope is **constant** — it never changes, no matter which points you use.
 That means if you know **one point** and the **slope**, you can find as many other points as you want.
@@ -52,7 +52,7 @@ Starting at $(0, 1)$, move right 3 and up 1 to reach $(3, 2)$.
 
 ---
 
-## 4.3.2 – Discovering Intercepts
+### 4.3.2 – Discovering Intercepts
 
 Every line crosses the axes somewhere.
 Those crossing points are special because they’re easy to find — and they tell us a lot about the line.
@@ -89,7 +89,7 @@ Those are called **intercepts**.
 
 :::
 
-## 4.3.3 – Finding Intercepts Algebraically
+### 4.3.3 – Finding Intercepts Algebraically
 
 You don’t always need a graph.
 Because we know what the intercepts look like, we can **set one variable to 0** and solve for the other.
@@ -102,7 +102,7 @@ Find the x- and y-intercepts of $y = x - 5$.
 
 $$
 \begin{align*}
-0 &= x - 5\
+0 &= x - 5\\
 x &= 5
 \end{align*}
 $$
@@ -122,7 +122,7 @@ So the y-intercept is $(0, -5)$.
 **x-intercept:**
 $$
 \begin{align*}
-0 &= 2x + 1\
+0 &= 2x + 1\\
 x &= -\tfrac{1}{2}
 \end{align*}
 $$
@@ -146,7 +146,7 @@ To find intercepts:
 
 ---
 
-## 4.3.4 – The Equation of a Line
+### 4.3.4 – The Equation of a Line
 
 Now we can tie everything together.
 
@@ -240,7 +240,7 @@ Give the [**Slope-Intercept Form Investigation**](/chapters/Interactive/explorin
 
 7. Find the x- and y-intercepts of $y = -2x + 8$.
 
-8. Find the intercepts of $2x + 3y = 12$.
+8. Find the intercepts of $2x + 3y = 12$ (*Hint: solve for y first*).
 
 ---
 

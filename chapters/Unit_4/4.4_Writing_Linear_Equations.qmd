@@ -21,7 +21,8 @@ The key is to recognize what you already know — the **slope**, a **point**, or
 
 :::{.vocab}
 
-{{< glink parallel >}}, {{< glink perpendicular >}}, {{< glink "point-slope form" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink "two-point form" >}}, {{< glink y-intercept >}}
+{{< glink parallel >}}, {{< glink perpendicular >}}, {{< glink "point-slope form" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink y-intercept >}}
+
 :::
 
 {{< warmup >}}
@@ -40,7 +41,7 @@ The key is to recognize what you already know — the **slope**, a **point**, or
    * what does the $2$ mean?
    * what does the $1$ mean?
 
----
+
 
 {{< learn >}}
 
@@ -51,7 +52,7 @@ This is the easiest kind of problem because you already know both parts of the r
 Those two numbers are all you need to write an equation in slope-intercept form:
 
 $$
-y = mx + b
+y = \textcolor{blue}{m}x + \textcolor{red}{b}
 $$
 
 ---
@@ -60,11 +61,13 @@ $$
 
 Find the equation for the line with:
 
-* slope $m=4$
-* y-intercept $b=-2$
+* slope $m=\textcolor{blue}{4}$
+* y-intercept $b=\textcolor{red}{-2}$
+
+All we have to do is replace $m$ with $\textcolor{blue}{4}$ and $b$ with $\textcolor{red}{-2}$.
 
 $$
-y=4x-2
+y=\textcolor{blue}{4}x\textcolor{red}{-2}
 $$
 
 ---
@@ -73,11 +76,11 @@ $$
 
 Find the equation for a line with:
 
-* slope $m=-\tfrac{3}{4}$
-* y-intercept $b=5$
+* slope $m=\textcolor{blue}{-\tfrac{3}{4}}$
+* y-intercept $b=\textcolor{red}{5}$
 
 $$
-y=-\tfrac{3}{4}x+5
+y=\textcolor{blue}{-\tfrac{3}{4}}x+\textcolor{red}{5}
 $$
 
 :::{.you-try title="Find the equation for a line with slope 2 and y-intercept 7"}
@@ -526,13 +529,15 @@ Write the equation for each line.
 
 24. Line perpendicular to $y=\tfrac{1}{3}x+2$ through $(3,1)$
 
-25. Line parallel to $3x+2y=6$ through $(2,-1)$
+25. Line parallel to $3x+2y=6$ through $(2,-1)$ (*Hint: solve for $y$ first*)
 
 ---
 
 **Challenge Problems**
 
-Coming Soon
+26. Find the equation for the line passing through the point $(x_1, y_1)$ and $(x_2, y_2)$. What is the y-intercept?
+
+27. Find the point where $y = -\tfrac{1}{3}x - 4$ intersects with the perpendicular line containing the point $(5, -3)$.
 
 ---
 

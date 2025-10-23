@@ -341,5 +341,20 @@ No Challenge Questions
     \boxed{b = m - \frac{n(n - 3)}{4 - m}}
     $$
 
+:::
+
+### 4.4 - Writin Linear Equations
+
+:::{.answers}
+
+26. $y - y_1 = \tfrac{y_2 - y_1}{x_2 - x_1}(x - x_1)$.
+
+    This is called the two-point equation of a line. Solving for $y$ to put it in slope-intercept form gives the y-intercept:
+
+    $$
+    -\tfrac{y_2 - y_1}{x_2 - x_1}x_1 + y_1
+    $$
+
+27. $(\tfrac{21}{5}, \tfrac{-27}{5})$
 
 :::

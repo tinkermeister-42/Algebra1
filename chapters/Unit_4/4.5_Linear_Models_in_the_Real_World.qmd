@@ -1,21 +1,25 @@
 # 4.5 – Linear Models in the Real World {.unnumbered}
 
-Coming Soon
+Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more.
+Whenever one quantity changes at a steady rate, we can model it with a **linear function**.
+
+A linear model has the same structure as
+$$y = mx + b,$$
+but we rename $x$ and $y$ to match the situation — like $P(e)$ for price or $T(t)$ for temperature.
+
 
 :::{.objectives}
 
 * [ ] I can represent real-world situations using linear equations or functions.
 * [ ] I can identify and interpret the slope and intercept in context.
-* [ ] I can sketch or estimate a best-fit line from data.
-* [ ] I can use function notation to describe a model, such as (f(x) = 0.5x + 10).
+* [ ] I can describe what a best-fit line shows about a data trend.
 
 :::
 
 :::{.vocab}
-
-{{< glink linear model >}}, {{< glink slope >}}, {{< glink y-intercept >}}, {{< glink rate of change >}}, {{< glink best-fit line >}}, {{< glink function notation >}}
-
+{{< glink "linear model" >}}, {{< glink slope >}}, {{< glink "y-intercept" >}}, {{< glink "rate of change" >}}, {{< glink "best-fit line" >}}, {{< glink "function notation" >}}
 :::
+
 
 {{< warmup >}}
 
@@ -23,116 +27,303 @@ Coming Soon
 
 {{< learn >}}
 
-### 4.5.1 – Turning Situations Into Equations
+### 4.5.1 – What the Parts of a Linear Model Tell Us
 
-Linear models describe real situations where one quantity changes at a constant rate.
-The slope is the **rate**, and the intercept is the **starting value**.
+Linear models always have two key pieces:
 
-:::{.example title="Example – Babysitting Pay"}
-A babysitter earns $12 per hour plus $10 for transportation.
-[
-f(x) = 12x + 10
-]
+* The **slope ($m$)** shows how fast something changes.
+* The **intercept ($b$)** shows where it starts.
 
-* (m = 12): pay rate per hour
-* (b = 10): base fee
-:::
+Let’s look at how these appear in real situations.
 
-:::{.you-try title="Write a Rule"}
-You earn $8 per hour mowing lawns and start with $20 already saved.
-Write an equation for your total savings after x hours.
+---
+
+**Example 1:** Streaming Service (Positive Slope)
+
+A streaming service charges $2 for every episode you rent, plus a monthly fee of $7.99.
+Write a linear function that models the total price.
+
+Let $e$ = episodes and $P(e)$ = total price (dollars).
+
+The slope is **2 per episode**, and the intercept is **7.99 dollars**.
+
+$$
+P(e) = 2e + 7.99
+$$
+
+![](/images/Unit_4/Lesson_5/Example_1.png){width="350px" fig-align="center"}
+
+:::{.think title="How much would it cost to rent 10 episodes?"}
+
+$$
+\begin{align*}
+P(10) &= 2(10) + 7.99 \\
+&= 27.99
+\end{align*}
+$$
+
+It would cost **$27.99** to rent 10 episodes.
+
 :::
 
 ---
 
-### 4.5.2 – Negative Slopes: Decreasing Situations
+**Example 2:** Cooling Soup (Negative Slope)
 
-Not all relationships increase.
-Some, like cooling or spending, have **negative slopes**.
+A cup of soup cools from 90 °C to 60 °C over 10 minutes.
+Assuming a steady rate of cooling:
 
-:::{.real-world title="Example – Cooling Water"}
-A cup of coffee cools from 90°C to 60°C over 10 minutes.
-[
-f(x) = -3x + 90
-]
+$$
+T(t) = -3t + 90
+$$
 
-* (m = -3): the coffee cools 3°C per minute
-* (b = 90): starting temperature
-:::
+Let $t$ = time (min), and $T(t)$ = temperature (°C).
 
-:::{.you-try title="Describe the Meaning"}
-In (f(x) = -5x + 100), what does the slope tell us?
-What does the intercept mean?
-:::
+![](/images/Unit_4/Lesson_5/Example_2.png){width="350px" fig-align="center"}
 
----
+The slope –3 means the soup’s temperature **drops 3 °C each minute**.
+The intercept 90 °C shows the **starting temperature** right after pouring.
 
-### 4.5.3 – Interpreting Slope and Intercept
+:::{.think title="What will the temperature be after 15 minutes?"}
 
-:::{.real-world title="Example – Cell Phone Bill"}
-A phone plan costs $50 per month plus $0.10 per text.
-[
-f(x) = 0.10x + 50
-]
+$$
+T(15) = -3(15) + 90 = 45
+$$
 
-* (m = 0.10): cost per text
-* (b = 50): base monthly charge
-:::
+After 15 minutes, the soup will be **45 °C**.
 
-:::{.think title="Why Units Matter"}
-Slope and intercept should always have **units** — they tell what’s changing and what’s fixed.
-:::
-
-:::{.you-try title="Explain the Meaning"}
-The equation (f(x) = 4x + 15) models parking costs, where x is hours.
-What do 4 and 15 represent?
 :::
 
 ---
 
-### 4.5.4 – Estimating Best-Fit Lines
+**Example 3:** Taxi Ride (Intercept Focus)
 
-Sometimes real data isn’t perfectly linear — but we can find a **line that fits “about right.”**
+A taxi charges $3 to start the ride and $2.25 per mile.
 
-1. Plot data points on a scatter plot.
-2. Sketch a line that seems to match the trend.
-3. Write a rule that fits the pattern roughly.
+$$
+C(d) = 2.25d + 3
+$$
+
+Let $d$ = miles, and $C(d)$ = total cost (dollars).
+
+![](/images/Unit_4/Lesson_5/Example_3.png){width="350px" fig-align="center"}
+
+The intercept 3 means you pay **\$3 before moving** — the base fare.
+The slope 2.25 shows the **cost per mile** once the ride begins.
+
+---
+
+**Example 4:** Babysitting Job (Putting It Together)
+
+A babysitter earns $12 per hour plus a $10 transportation fee.
+
+Let $h$ = hours, and $P(h)$ = total pay (dollars).
+
+$$
+P(h) = 12h + 10
+$$
+
+![](/images/Unit_4/Lesson_5/Example_4.png){width="350px" fig-align="center"}
+
+The slope 12 means pay increases **\$12 per hour worked**.
+The intercept 10 is the **starting amount** earned before any hours.
+
+:::{.think title="How much will the babysitter earn for 5 hours of work?"}
+
+$$
+P(5) = 12(5) + 10 = 70
+$$
+
+The babysitter earns **\$70 total**.
+
+:::
+
+---
+
+### 4.5.2 – How to Create a Linear Model
+
+So far, you’ve interpreted models.
+Now let’s learn how to **make your own** from words or data.
+
+A linear model always follows the pattern
+$$
+\text{output} = (\text{rate of change})(\text{input}) + (\text{starting value})
+$$
+
+---
+
+**Step 1:** Find What’s Changing
+
+Look for words that describe a *steady increase or decrease.*
+That number is your **slope** ($m$).
+
+**Examples:**
+
+* “$15 per hour” → $m = 15$
+* “drops 3 degrees each minute” → $m = -3$
+* “gains 5 points per week” → $m = 5$
+
+---
+
+**Step 2:** Find Where It Starts
+
+What’s true when your input is 0?
+That number is the **intercept** ($b$).
+
+**Examples:**
+
+* “base fee of $20” → $b = 20$
+* “starts at 100 points” → $b = 100$
+* “initial temperature 90 °C” → $b = 90$
+
+---
+
+**Step 3:** Write the Equation
+
+Put both pieces together and use variables that make sense.
+
+**Example:**
+
+A car rental costs \$50 per day plus $30 in fees.
+Let $d$ = days rented, $C(d)$ = total cost.
+$$C(d) = 50d + 30$$
+
+---
+
+**Example:** Gym Membership
+
+A gym charges a one-time \$30 fee plus \$25 per month.
+
+Let $m$ = months, and $C(m)$ = total cost.
+
+1. Slope =\ 25 (per month)
+2. Intercept =\ 30 (one-time fee)
+3. Model: $$C(m) = 25m + 30$$
+
+![](/images/Unit_4/Lesson_5/Example_5.png){width="350px" fig-align="center"}
+
+:::{.think title="How much will 6 months cost?"}
+
+$$
+C(6) = 25(6) + 30 = 180
+$$
+
+After 6 months, the total cost is **\$180**.
+
+:::
+
+---
+
+:::{.note title="Tips for Writing Your Own Models"}
+
+* Include **units** in your reasoning.
+* Watch for **negative slopes** — they show decreases.
+* The **starting value** might not come first in the sentence.
+* Choose variable names that fit the situation.
+
+:::
+
+---
+
+### 4.5.3 – Seeing Patterns in Data
+
+In real life, data points don’t line up perfectly, but they often follow a **trend**.
+A **best-fit line** shows that overall direction.
 
 ![](/images/Unit_4/Lesson_5/scatter_best_fit.png){width="360px" fig-align="center"}
 
-:::{.real-world title="Example – Height vs. Age"}
-Students measure their height each year.
-The points don’t make a perfect line, but a line through the middle of the points shows the average growth rate.
-:::
+**Example – Height vs. Age**
 
-:::{.you-try-m title="Draw a Best-Fit Line"}
-Your teacher will provide data for shoe size vs. age.
-Plot the points and sketch a best-fit line.
-Estimate the slope and intercept and write an equation.
-:::
+Each dot shows one student’s age and height.
+The line through the middle shows the *average growth pattern.*
 
-:::{.think title="When Two Models Cross"}
-Sometimes two linear trends meet — for example, when expenses catch up to income,  
-or when two cars traveling at different speeds reach the same distance.  
-That crossover point means the two equations give the same output.  
+The **positive slope** means height generally increases with age.
+The **intercept** estimates the height at age 0 — the starting point at birth.
+
+:::{.think title="What would a negative slope mean in a trend like this?"}
+It would mean that as one variable increases, the other **decreases** — for example, temperature falling as time passes.
 :::
 
 ---
 
-:::{.remember title="Key Idea"}
-Linear models show **constant rates of change** in real situations.
+:::{.remember title="Key Ideas"}
 
-* The **slope** represents the rate.
-* The **intercept** represents the starting value.
-* Using (f(x)) reminds us that outputs depend on inputs.
+* The **slope** tells how fast something changes.
+* The **intercept** tells where it starts.
+* Together they describe how one value depends on another.
+* A **best-fit line** shows that relationship when data aren’t exact.
 :::
+
+---
 
 {{< practice >}}
 
-Coming Soon
+### 🔹 Part A – Interpret Models
+
+1. The equation $T(h) = -2h + 70$ shows the temperature $T$ after $h$ hours.
+
+   * What does the slope mean?
+   * What does the intercept mean?
+2. $P(n) = 5n + 20$ models parking costs.
+
+   * How much does it cost to park for 3 hours?
+   * What do the 5 and 20 represent?
+
+---
+
+### 🔹 Part B – Write Your Own Models
+
+3. A movie theater charges $10 per ticket plus a $3 service fee.
+
+   * Write a model for total cost $C(t)$, where $t$ is tickets bought.
+4. A phone loses 8 % battery every hour starting at 100 %.
+
+   * Write and interpret a model for remaining charge $B(h)$.
+5. You start with $50 and save $12 per week.
+
+   * Write a model and use it to find your total after 8 weeks.
+
+---
+
+### 🔹 Part C – Compare and Predict
+
+6. Two gyms have different pricing plans:
+
+   * **Plan A:** $C_1(m)=25m+30$
+   * **Plan B:** $C_2(m)=20m+60$
+   * Which plan costs less at first? Which is cheaper after 10 months?
+
+7. A taxi charges $2.50 per mile plus $3 start fee.
+   Another charges $3 per mile but no start fee.
+
+   * Write both equations.
+   * When do they cost the same?
+
+---
+
+### 🔹 Part D – Interpret Graphs
+
+8. A scatter plot shows weekly hours of study vs. test scores.
+   The best-fit line rises from left to right.
+
+   * What does the slope tell you?
+   * What would a flat line mean?
+9. The line $D(t)$ in the graph slopes downward.
+
+   * What kind of relationship does that show between $D$ and $t$?
+
+---
 
 :::{.answers}
 
-Coming Soon
+**Sample answers (not shown to students):**
+
+1. Slope = –2 °C/hour → cooling rate; intercept = 70 °C start.
+2. $P(3)=35$; slope = cost per hour; intercept = base fee.
+3. $C(t)=10t+3$.
+4. $B(h)=100-8h$ (if linear).
+5. $S(w)=12w+50$, so $S(8)=146$.
+6. Plan A starts cheaper, Plan B cheaper after 6 months.
+7. $C_1=2.5x+3$, $C_2=3x$ → same at $x=6$.
 
 :::
