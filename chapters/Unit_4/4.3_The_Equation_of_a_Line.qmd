@@ -197,26 +197,12 @@ $$
 
 :::
 
----
+{{< interact >}}
 
-## 4.3.5 – Explore: Changing $m$ and $b$
+The best way to learn math is by playing around with it. 
 
-Sometimes the best way to learn math is to **play around with it**.
+Give the [**Slope-Intercept Form Investigation**](/chapters/Interactive/exploring_slope_intercept_form.qmd) tool a try. It will help you better understand how $y=mx+b$ works!
 
-Try moving the sliders in the interactive chart below.
-Watch what happens as you change $m$ (slope) and $b$ (y-intercept).
-
-As you explore, think about these questions:
-
-1. What happens when you increase the slope from zero?
-2. What happens when you decrease the slope from zero?
-3. How does the line move when you change the y-intercept $b$?
-4. How would you describe two lines that have the same slope but different y-intercepts?
-5. Could you make a **vertical** line with a tool like this? Why or why not?
-
-{{< include /assets/Unit_4/slope-intercept-form-widget.html >}}
-
----
 
 {{< practice >}}
 

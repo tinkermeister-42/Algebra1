@@ -19,5 +19,8 @@ return {
   end,
   ["warmup"] = function(args, kwargs, meta)
     return raw_block_for_heading("🔥 Warm-Up")
+  end,
+  ["interact"] = function(args, kwargs, meta)
+    return raw_block_for_heading("▶️ Interactive Learning")
   end
 }

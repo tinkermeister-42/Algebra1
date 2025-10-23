@@ -1,0 +1,5 @@
+# Interactive Learning {.unnumbered}
+
+#### [Understanding Slope](widgets/understanding_slope.qmd)
+
+#### [Exploring Slope-Intercept Form](widgets/exploring_slope_intercept_form.qmd)

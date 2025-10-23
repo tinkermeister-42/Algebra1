@@ -1,0 +1,20 @@
+# Index {.unnumbered}
+
+## Unit 1 - Algebra Foundations
+
+Coming Soon
+
+## Unit 2 - Algebraic Expressions
+
+Coming Soon
+
+## Unit 3 - Solving Linear Equations
+
+Coming Soon
+
+
+## Unit 4 - Linear Functions & Graphs
+
+#### [Slope Explorer](understanding_slope.qmd)
+
+#### [Slope-Intercept Form Investigation](exploring_slope_intercept_form.qmd)

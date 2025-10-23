@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const calloutTypes = [
     "answers", "answer", "objectives", "vocab", "real-world", "remember",
-    "you-try", "you-try-m", "think", "gotcha"
+    "you-try", "you-try-m", "think", "gotcha", "note"
   ];
 
   const iconMap = {
@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     remember: "📌 Remember",
     "you-try": "📝 You Try",
     "you-try-m": "📝 You Try",
-    think: "💡 Think About It",
-    gotcha: "⚠️ Caution!"
+    think: "🤔 Think About It",
+    gotcha: "⚠️ Caution!",
+    note: "📋 Note"
   };
 
   // Outer-collapsible callouts (answer intentionally NOT collapsible)

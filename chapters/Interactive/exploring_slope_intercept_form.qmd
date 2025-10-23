@@ -1,0 +1,20 @@
+# Slope-Intercept Form Investigation {.unnumbered}
+
+Sometimes the best way to learn math is to **play around with it**.
+
+Try moving the sliders in the interactive chart below.
+Watch what happens as you change $m$ (slope) and $b$ (y-intercept).
+
+As you explore, think about these questions:
+
+1. What happens when you increase the slope from zero?
+2. What happens when you decrease the slope from zero?
+3. How does the line move when you change the y-intercept $b$?
+4. How would you describe two lines that have the same slope but different y-intercepts?
+5. Could you make a **vertical** line with a tool like this? Why or why not?
+
+{{< include /assets/Unit_4/slope-intercept-form-widget.html >}}
+
+---
+
+To learn more about slope-intercept form, take a look at [4.3 - The Equation of a Line](/chapters/Unit_4/4.3_The_Equation_of_a_Line.qmd)

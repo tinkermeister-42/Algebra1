@@ -1,162 +1,591 @@
 # 4.4 – Writing Linear Equations {.unnumbered}
 
-Coming Soon
+In the last lesson, you learned how slope and intercept describe a line.
+Now you’ll learn how to **write the equation** for a line when you’re given different kinds of information.
+
+Every situation leads back to the same form:
+
+$$
+y = mx + b
+$$
+
+The key is to recognize what you already know — the **slope**, a **point**, or both — and use it to build the rule for your line.
 
 :::{.objectives}
 
-* [ ] I can write the equation of a line from a graph, from two points, or from a slope and a point.
-* [ ] I can rearrange equations to slope-intercept form ((y = mx + b)).
-* [ ] I can check that my equation fits known points.
-* [ ] I can explain what the slope and intercept mean in a real-world context.
+* [ ] I can write an equation for a line from a graph.
+* [ ] I can write an equation knowing the slope and intercept, the slope and one point, or two points.
+* [ ] I can find equations of lines that are parallel or perpendicular to a given line.
 
 :::
 
 :::{.vocab}
 
-{{< glink slope >}}, {{< glink y-intercept >}}, {{< glink slope-intercept form >}}, {{< glink point-slope form >}}, {{< glink linear equation >}}
-
+{{< glink parallel >}}, {{< glink perpendicular >}}, {{< glink "point-slope form" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink "two-point form" >}}, {{< glink y-intercept >}}
 :::
 
 {{< warmup >}}
 
-Coming Soon
+1. Two lines are described below.
+
+   * Line A goes through $(0,2)$ and $(3,5)$.
+   * Line B goes through $(0,2)$ and $(3,4)$.
+
+   Which line is steeper? How can you tell *without graphing*?
+
+2. Graph the line $y = \tfrac{2}{3}x + 3$.
+
+3. In the equation $y = 2x + 1$,
+
+   * what does the $2$ mean?
+   * what does the $1$ mean?
+
+---
 
 {{< learn >}}
 
-### 4.4.1 – Writing an Equation From a Graph
+### 4.4.1 – Slope and Intercept Are Known
 
-* Look for the **y-intercept** first — where the line crosses the y-axis.
-* Then find the **slope** by counting rise/run between two points.
-* Substitute (m) and (b) into (y = mx + b) (or (f(x) = mx + b)).
+This is the easiest kind of problem because you already know both parts of the rule — the slope ($m$) and the y-intercept ($b$).
 
-![](/images/Unit_4/Lesson_4/find_equation_from_graph.png){width="340px" fig-align="center"}
+Those two numbers are all you need to write an equation in slope-intercept form:
 
-:::{.real-world title="Example – Car Rental Costs"}
-A company charges $50 plus $0.25 per mile.
-The rule is (y = 0.25x + 50).
+$$
+y = mx + b
+$$
 
-* (m = 0.25): rate per mile
-* (b = 50): starting fee
+---
+
+**Example 1:**
+
+Find the equation for the line with:
+
+* slope $m=4$
+* y-intercept $b=-2$
+
+$$
+y=4x-2
+$$
+
+---
+
+**Example 2:**
+
+Find the equation for a line with:
+
+* slope $m=-\tfrac{3}{4}$
+* y-intercept $b=5$
+
+$$
+y=-\tfrac{3}{4}x+5
+$$
+
+:::{.you-try title="Find the equation for a line with slope 2 and y-intercept 7"}
+
+$$
+y = 2x + 7
+$$
+
 :::
 
-:::{.you-try title="From Graph to Equation"}
-Use the graph your teacher provides. Identify the slope and y-intercept, then write the equation in slope-intercept form.
+### 4.4.2 – From a Graph
+
+When you can **see** a line, you can figure out its equation by paying attention to two simple things:
+how steep it is (the **slope**) and where it crosses the y-axis (the **intercept**).
+
+Every straight line on a coordinate plane follows the same pattern:
+
+$$
+y = mx + b
+$$
+
+So, if you can find $m$ and $b$ from the graph, you can write its equation immediately.
+
+**Steps:**
+
+1. Find where the line crosses the y-axis — that’s **$b$**.
+2. Pick two clear points and count the **rise** and **run** to find **$m$**.
+3. Substitute $m$ and $b$ into $y = mx + b$.
+
+---
+
+**Example 3:**
+
+Find the equation for the line line pictured below:
+
+![](/images/Unit_4/Lesson_4/Example3A.png){width="340px" fig-align="center"}
+
+The line crosses the y-axis at $(0, 1)$ so $b=1$.
+
+Now pick two clear points on the line to find the slope.
+
+![](/images/Unit_4/Lesson_4/Example3B.png){width="340px" fig-align="center"}
+
+Picking the points $(0, 1)$ and $(1, 3)$ we see that $m=2$.
+
+Now we just replace $m$ and $b$ in $y=mx+b$.
+
+$$
+y = 2x + 1
+$$
+
+---
+
+**Example 4:**
+
+Find the equation of the line from the graph.
+
+![](/images/Unit_4/Lesson_4/Example4.png){width="340px" fig-align="center"}
+
+The y-intercept $b=-3$ and the slope $m = -\tfrac{1}{2}$.
+
+The equation of the line is:
+
+$$
+y = -\tfrac{1}{2}x - 3
+$$
+
+:::{.you-try-m title="Find the equation from the graph"}
+
+![](/images/Unit_4/Lesson_4/YouTry2.png){width="340px" fig-align="center"}
+
+:::
+
+:::{.answer title="Answer"}
+
+$$
+y = 3x - 4
+$$
+
 :::
 
 ---
 
-### 4.4.2 – Writing an Equation From Slope and a Point
+### 4.4.3 – Slope and a Point Are Known
 
-When you know a line’s slope and one point, use **point-slope form**:
-[
+Sometimes you know the **slope** of a line and just **one point** it passes through — but not the y-intercept. That’s okay! You can still find the full equation by plugging the point into the rule for a line and solving for $b$.
+
+Remember, every line follows:
+
+$$
+y = mx + b
+$$
+
+You already know $m$ and, since you have a point, you have $x$ and $y$.
+Use those values to find $b$, then substitute it back into the equation.
+
+**Steps:**
+
+1. Start with $y = mx + b$.
+2. Substitute the slope and the coordinates of the known point.
+3. Solve for $b$.
+4. Write the final equation using your values of $m$ and $b$.
+
+---
+
+**Example 5:**
+
+Find the equation of a line with slope $m = 3$ that passes through the point $(2, 5)$.
+
+Start with $y = mx + b$ and plug in $x = \textcolor{green}{2}$, $y = \textcolor{red}{5}$, and $m = \textcolor{blue}{3}$:
+
+$$
+\begin{aligned}
+\textcolor{red}{5} &= \textcolor{blue}{3}(\textcolor{green}{2}) + b \\
+5 &= 6 + b \\
+b &= -1
+\end{aligned}
+$$
+
+Now substitute $m = 3$ and $b = -1$ into $y = mx + b$:
+
+$$
+y = 3x - 1
+$$
+
+---
+
+**Example 6:**
+
+Find the equation of a line with slope $m = \textcolor{blue}{-2}$ that passes through the point $(\textcolor{green}{1}, \textcolor{red}{4})$.
+
+$$
+\begin{aligned}
+\textcolor{red}{4} &= \textcolor{blue}{-2}(\textcolor{green}{1}) + b \\
+4 &= -2 + b \\
+b &= 6
+\end{aligned}
+$$
+
+So the equation is:
+
+$$
+y = -2x + 6
+$$
+
+:::{.you-try title="Find the equation of the line with slope $m = \tfrac{1}{2}$ that passes through $(4, 3)$."}
+$$
+y = \tfrac{1}{2}x + 1
+$$
+:::
+
+
+:::{.note title="Point-Slope Form"}
+
+If you prefer to memorize formulas, you can also solve problems like this using the point-slope form of a line.
+
+$$
 y - y_1 = m(x - x_1)
-]
+$$
 
-Then rearrange to slope-intercept form if needed.
+Using point-slope form the line in Example 6 with slope $m=-2$ and point $(1, 4)$:
 
-:::{.example title="Example – Point and Slope"}
-Slope (m = 3), point ((2, 5)):
-[
+We know $m = \textcolor{blue}{-2}$, $y_1 = \textcolor{red}{4}$ and $x_1 = \textcolor{green}{1}$ so the equation is:
+
+$$
+y - \textcolor{red}{4} = \textcolor{blue}{-2}(x - \textcolor{green}{1})
+$$
+
+In slope-intercept form that is:
+
+$$
 \begin{align*}
-y - 5 &= 3(x - 2) \
-y - 5 &= 3x - 6 \
-y &= 3x - 1
+y - 4 &= \textcolor{red}{-2}(x - 1) \stepnote{Distribute the -2}\\
+y - 4 &= -2x + 2 \\
+\\
+y - 4 \textcolor{red}{+4} &= -2x + 2 \textcolor{red}{+4} \snplus{4} \\
+y &= -2x + 6
 \end{align*}
-]
+$$
 
-So (y = 3x - 1) or (f(x) = 3x - 1).
-:::
-
-:::{.you-try title="Use Point-Slope Form"}
-Find the equation of a line with slope (m = -2) that passes through ((1, 4)). Write your final answer as (y = mx + b).
 :::
 
 ---
 
-### 4.4.3 – Writing an Equation From Two Points
+### 4.4.4 – Two Points Are Known
 
-When you only know **two points**, first find the **slope**:
-[
-m = \frac{y_2 - y_1}{x_2 - x_1}
-]
+Sometimes you don’t know the slope **or** the intercept — just **two points** the line passes through. That’s all you need! You can find the slope from the two points, then use what you learned in the last section to find $b$ and write the full equation.
 
-Then use one of the points and point-slope form to find the equation.
+Every line still follows:
 
-:::{.example title="Example – Two Points"}
-Points ((1, 2)) and ((4, 5)):
+$$
+y = mx + b
+$$
 
-[
-m = \frac{5 - 2}{4 - 1} = 1
-]
+But this time, we’ll start by finding $m$ using the slope formula.
 
-Use point ((1, 2)):
-[
-y - 2 = 1(x - 1) \implies y = x + 1
-]
+**Steps:**
+
+1. Label your two points $(x_1, y_1)$ and $(x_2, y_2)$.
+2. Find the slope:
+   $$
+   m = \frac{y_2 - y_1}{x_2 - x_1}
+   $$
+3. Pick one of the points and substitute it into $y = mx + b$.
+4. Solve for $b$.
+5. Write the final equation using your values of $m$ and $b$.
+
+---
+
+**Example 7:**
+
+Find the equation of the line passing through $(1, 2)$ and $(4, 5)$.
+
+First, find the slope:
+
+$$
+m = \frac{5 - 2}{4 - 1} = \frac{3}{3} = 1
+$$
+
+Now use $m = \textcolor{blue}{1}$ and one of the points — let’s use $(\textcolor{green}{1}, \textcolor{red}{2})$ — to find $b$:
+
+$$
+\begin{aligned}
+\textcolor{red}{2} &= \textcolor{blue}{1}(\textcolor{green}{1}) + b \\
+2 &= 1 + b \\
+b &= 1
+\end{aligned}
+$$
+
+So the equation of the line is:
+
+$$
+y = x + 1
+$$
+
+
+:::{.callout-tip title="Use Either Point"}
+You can use **either** of the two points when solving for $b$.
+If your slope is correct, both points will fit the same equation.
+Try plugging in the second point to check your answer!
 :::
 
-:::{.you-try-m title="Try It Yourself"}
-Find the equation of the line passing through ((–2, 3)) and ((2, 7)).
+
+---
+
+**Example 8:**
+
+Find the equation of the line passing through $(-2, 3)$ and $(2, -1)$.
+
+Start with the slope:
+
+$$
+m = \frac{-1 - 3}{2 - (-2)} = \frac{-4}{4} = -1
+$$
+
+Now substitute $m = \textcolor{blue}{-1}$ and the point $(\textcolor{green}{-2}, \textcolor{red}{3})$ into $y = mx + b$:
+
+$$
+\begin{aligned}
+\textcolor{red}{3} &= \textcolor{blue}{-1}(\textcolor{green}{-2}) + b \\
+3 &= 2 + b \\
+b &= 1
+\end{aligned}
+$$
+
+So the equation is:
+
+$$
+y = -x + 1
+$$
+
+:::{.you-try title="Find the equation of the line passing through $(0, -2)$ and $(3, 4)$."}
+
+$$
+y = 2x - 2
+$$
+
 :::
 
 ---
 
-### 4.4.4 – Rearranging Equations Into Slope-Intercept Form
+### 4.4.5 – Parallel and Perpendicular Lines (Optional)
 
-Sometimes a line is written in another form, like (3x + 2y = 10).
-To graph it easily, solve for (y).
+Sometimes you’re asked to write the equation of a line that’s **parallel** or **perpendicular** to another line and passes through a given point.
+The process is nearly the same as before — the only difference is how you find the slope.
 
-[
-\begin{align*}
-3x + 2y &= 10 \
-2y &= -3x + 10 \
-y &= -\frac{3}{2}x + 5
-\end{align*}
-]
+* **Parallel lines** have the **same slope**.
 
-Now the slope is (-\frac{3}{2}) and the y-intercept is (5).
+* **Perpendicular lines** have **opposite reciprocal slopes**
 
-:::{.you-try title="Put It in Slope-Intercept Form"}
-Rewrite (4x - 2y = 6) in slope-intercept form. Identify (m) and (b).
-:::
+$$m_\perp=-\tfrac{1}{m}$$
 
 ---
 
-### 4.4.5 – Interpreting Slope and Intercept in Context
+**Steps:**
 
-:::{.real-world title="Example – Earnings Over Time"}
-A dog walker earns $15 per walk, plus $10 just for showing up.
-The rule is (f(x) = 15x + 10).
+1. Identify the slope of the given line.
+2. Use the same slope if the new line is **parallel**, or take the **opposite reciprocal** if it’s **perpendicular**.
+3. Substitute the slope and your point into $y = mx + b$.
+4. Solve for $b$ and write the final equation.
 
-* (m = 15): rate (how much per walk)
-* (b = 10): base pay
+---
+
+**Example 9 – Parallel Lines**
+
+Find the equation of the line parallel to $y = 3x - 4$ that passes through $(2, 1)$.
+
+The slope of the given line is $m = 3$.
+Parallel lines have the same slope, so $m = \textcolor{blue}{3}$.
+
+Plug the point $(\textcolor{green}{2}, \textcolor{red}{1})$ into $y = mx + b$:
+
+$$
+\begin{aligned}
+\textcolor{red}{1} &= \textcolor{blue}{3}(\textcolor{green}{2}) + b \\
+1 &= 6 + b \\
+b &= -5
+\end{aligned}
+$$
+
+The equation of the new line is:
+
+$$
+y = 3x - 5
+$$
+
+Here is a graph showing the two lines:
+
+![](/images/Unit_4/Lesson_4/Example9.png){width="340px" fig-align="center"}
+
+---
+
+**Example 10 – Perpendicular Lines**
+
+Find the equation of the line perpendicular to $y = -\tfrac{1}{2}x + 3$ that passes through $(4, 2)$.
+
+The given slope is $m = -\tfrac{1}{2}$.
+A perpendicular line has the opposite reciprocal slope, so $m_\perp = \textcolor{blue}{2}$.
+
+Substitute $(\textcolor{green}{4}, \textcolor{red}{2})$ into $y = mx + b$:
+
+$$
+\begin{aligned}
+\textcolor{red}{2} &= \textcolor{blue}{2}(\textcolor{green}{4}) + b \\
+2 &= 8 + b \\
+b &= -6
+\end{aligned}
+$$
+
+The equation of the perpendicular line is:
+
+$$
+y = 2x - 6
+$$
+
+![](/images/Unit_4/Lesson_4/Example10.png){width="340px" fig-align="center"}
+
+---
+
+:::{.you-try-m title="Parallel and Perpendicular Practice"}
+
+1. Find the equation of the line parallel to $y = -2x + 5$ that passes through $(0, -3)$.
+2. Find the equation of the line perpendicular to $y = \tfrac{1}{3}x - 1$ that passes through $(3, 4)$.
 :::
 
-:::{.you-try-m title="Interpret the Meaning"}
-You spend $25 to join a club and $5 each visit.
-Write an equation for total cost (f(x)).
-What do (m) and (b) represent?
+:::{.answer title="Answers"}
+
+1. $y = -2x - 3$
+2. $y = -3x + 13$
+
 :::
 
-:::{.remember title="Key Idea"}
-You can write linear equations from graphs, data, or descriptions.
-Once you know **slope** and **one point** (or intercept), you can find the rule that models the situation.
-:::
-
-:::{.real-world title="Comparing Two Models"}
-You track two savings plans:  
-\(f(x) = 10x + 100\) and \(g(x) = 20x + 20\).  
-Graph both.  
-The **intersection point** shows when your total savings are equal.  
-That single point satisfies both functions — it’s the **solution to the system**.
-:::
 
 {{< practice >}}
 
+**Slope & Intercept Known**
+
+Write the equation for each line.
+
+1. $m=3$, $b=-1$
+
+2. $m=-2$, $b=4$
+
+3. $m=\tfrac{1}{2}$, $b=0$
+
+4. $m=-\tfrac{3}{4}$, $b=5$
+
+5. $m=0$, $b=-6$
+
+---
+
+**From a Graph**
+
+A line crosses the y-axis at $1$ and the x-axis at $-2$.
+Find its slope and equation.
+
+Write the equation for each line.
+
+6. <br>![](/images/Unit_4/Lesson_4/Question6.png){width="350px"}
+
+7. <br>![](/images/Unit_4/Lesson_4/Question7.png){width="350px"}
+
+8. <br>![](/images/Unit_4/Lesson_4/Question8.png){width="350px"}
+
+9. <br>![](/images/Unit_4/Lesson_4/Question9.png){width="350px"}
+
+10. <br>![](/images/Unit_4/Lesson_4/Question10.png){width="350px"}
+
+---
+
+**From Points**
+
+Write the equation for each line.
+
+11. Through $(1,3)$ and $(5,7)$
+
+12. Through $(-2,3)$ and $(2,-1)$
+
+13. Through $(3,-1)$ and $(7,5)$
+
+14. Through $(0,-3)$ and $(6,9)$
+
+15. Through $(5,2)$ and $(1,-2)$
+
+16. Through $(0,4)$ and $(4,0)$
+
+17. Through $(-3,6)$ and $(0,-3)$
+
+18. Through $(1,1)$ and $(3,5)$
+
+19. Through $(0,-2)$ and $(4,-2)$
+
+20. Through $(10,0)$ and $(0,5)$
+
+---
+
+**Parallel & Perpendicular Lines**
+
+Write the equation for each line.
+
+21. Line parallel to $y=2x+1$ through $(0,-3)$
+
+22. Line perpendicular to $y=-\tfrac{1}{2}x+5$ through $(4,2)$
+
+23. Line parallel to $y=x-4$ through $(0,6)$
+
+24. Line perpendicular to $y=\tfrac{1}{3}x+2$ through $(3,1)$
+
+25. Line parallel to $3x+2y=6$ through $(2,-1)$
+
+---
+
+**Challenge Problems**
+
 Coming Soon
+
+---
 
 :::{.answers}
 
-Coming Soon
+1. $y=3x-1$ 
+
+2. $y=-2x+4$ 
+
+3. $y=\tfrac{1}{2}x$ 
+
+4. $y=-\tfrac{3}{4}x+5$ 
+
+5. $y=-6$
+
+6. $y=3x+2$ 
+
+7. $y=-\tfrac{1}{2}x-4$ 
+
+8. $y=2x+3$ 
+
+9. $y=-\tfrac{1}{3}x-2$ 
+
+10. $y=\tfrac{1}{2}x+1$
+
+11. $y=x+2$ 
+
+12. $y=-x+1$ 
+
+13. $y=\tfrac{3}{2}x-\tfrac{11}{2}$ 
+
+14. $y=2x-3$ 
+
+15. $y=x-3$
+
+16. $y=-x+4$ 
+
+17. $y=-3x-3$ 
+
+18. $y=2x-1$ 
+
+19. $y=-2$ 
+
+20. $y=-\tfrac{1}{2}x+5$
+
+21. $y=2x-3$ 
+
+22. $y=2x-6$ 
+
+23. $y=x+6$ 
+
+24. $y=-3x+10$ 
+
+25. $y=-\tfrac{3}{2}x+2$
 
 :::

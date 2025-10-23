@@ -102,6 +102,12 @@ book:
     
     - part: "Unit 9: Statistics & Probability"
 
+    - part: "Interactive Learning"
+      chapters:
+        - file: chapters/Interactive/index.qmd
+        - file: chapters/Interactive/understanding_slope.qmd
+        - file: chapters/Interactive/exploring_slope_intercept_form.qmd
+
     - part: "Supplemental"
       chapters:
         - file: chapters/Supplemental/index.qmd

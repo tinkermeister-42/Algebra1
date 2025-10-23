@@ -1,0 +1,9 @@
+# Slope Explorer {.unnumbered}
+
+Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.
+
+{{< include /assets/Unit_4/slope-widget.html >}}
+
+---
+
+To learn more about slope, take a look at [4.2 - Understanding Slope](/chapters/Unit_4/4.2_Understanding_Slope.qmd)
