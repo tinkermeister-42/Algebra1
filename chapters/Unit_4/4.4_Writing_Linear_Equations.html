@@ -443,12 +443,41 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
- <span class="menu-text">Supplemental</span></a>
+ <span class="menu-text">Interactive Learning</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/understanding_slope.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slope Explorer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slope-Intercept Form Investigation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Supplemental</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
@@ -497,11 +526,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#writing-an-equation-from-a-graph" id="toc-writing-an-equation-from-a-graph" class="nav-link active" data-scroll-target="#writing-an-equation-from-a-graph">4.4.1 – Writing an Equation From a Graph</a></li>
-  <li><a href="#writing-an-equation-from-slope-and-a-point" id="toc-writing-an-equation-from-slope-and-a-point" class="nav-link" data-scroll-target="#writing-an-equation-from-slope-and-a-point">4.4.2 – Writing an Equation From Slope and a Point</a></li>
-  <li><a href="#writing-an-equation-from-two-points" id="toc-writing-an-equation-from-two-points" class="nav-link" data-scroll-target="#writing-an-equation-from-two-points">4.4.3 – Writing an Equation From Two Points</a></li>
-  <li><a href="#rearranging-equations-into-slope-intercept-form" id="toc-rearranging-equations-into-slope-intercept-form" class="nav-link" data-scroll-target="#rearranging-equations-into-slope-intercept-form">4.4.4 – Rearranging Equations Into Slope-Intercept Form</a></li>
-  <li><a href="#interpreting-slope-and-intercept-in-context" id="toc-interpreting-slope-and-intercept-in-context" class="nav-link" data-scroll-target="#interpreting-slope-and-intercept-in-context">4.4.5 – Interpreting Slope and Intercept in Context</a></li>
+  <li><a href="#slope-and-intercept-are-known" id="toc-slope-and-intercept-are-known" class="nav-link active" data-scroll-target="#slope-and-intercept-are-known">4.4.1 – Slope and Intercept Are Known</a></li>
+  <li><a href="#from-a-graph" id="toc-from-a-graph" class="nav-link" data-scroll-target="#from-a-graph">4.4.2 – From a Graph</a></li>
+  <li><a href="#slope-and-a-point-are-known" id="toc-slope-and-a-point-are-known" class="nav-link" data-scroll-target="#slope-and-a-point-are-known">4.4.3 – Slope and a Point Are Known</a></li>
+  <li><a href="#two-points-are-known" id="toc-two-points-are-known" class="nav-link" data-scroll-target="#two-points-are-known">4.4.4 – Two Points Are Known</a></li>
+  <li><a href="#parallel-and-perpendicular-lines-optional" id="toc-parallel-and-perpendicular-lines-optional" class="nav-link" data-scroll-target="#parallel-and-perpendicular-lines-optional">4.4.5 – Parallel and Perpendicular Lines (Optional)</a></li>
   </ul>
 </nav>
     </div>
@@ -527,118 +556,431 @@ window.Quarto = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>In the last lesson, you learned how slope and intercept describe a line. Now you’ll learn how to <strong>write the equation</strong> for a line when you’re given different kinds of information.</p>
+<p>Every situation leads back to the same form:</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<p>The key is to recognize what you already know — the <strong>slope</strong>, a <strong>point</strong>, or both — and use it to build the rule for your line.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can write the equation of a line from a graph, from two points, or from a slope and a point.</label></li>
-<li><label><input type="checkbox">I can rearrange equations to slope-intercept form ((y = mx + b)).</label></li>
-<li><label><input type="checkbox">I can check that my equation fits known points.</label></li>
-<li><label><input type="checkbox">I can explain what the slope and intercept mean in a real-world context.</label></li>
+<li><label><input type="checkbox">I can write an equation for a line from a graph.</label></li>
+<li><label><input type="checkbox">I can write an equation knowing the slope and intercept, the slope and one point, or two points.</label></li>
+<li><label><input type="checkbox">I can find equations of lines that are parallel or perpendicular to a given line.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-slug="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a>, <a href="#glossary-slope-intercept" class="glossary-link" data-term="slope-intercept" data-slug="slope-intercept" data-original-href="#glossary-slope-intercept">slope-intercept</a>, <a href="#glossary-point-slope" class="glossary-link" data-term="point-slope" data-slug="point-slope" data-original-href="#glossary-point-slope">point-slope</a>, <a href="#glossary-linear" class="glossary-link" data-term="linear" data-slug="linear" data-original-href="#glossary-linear">linear</a></p>
+<p><a href="#glossary-parallel" class="glossary-link" data-slug="parallel" data-term="parallel" data-original-href="#glossary-parallel">parallel</a>, <a href="#glossary-perpendicular" class="glossary-link" data-slug="perpendicular" data-term="perpendicular" data-original-href="#glossary-perpendicular">perpendicular</a>, <a href="#glossary-point-slope-form" class="glossary-link" data-slug="point-slope-form" data-term="point-slope form" data-original-href="#glossary-point-slope-form">point-slope form</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-term="slope" data-original-href="#glossary-slope">slope</a>, <a href="../../glossary.html#glossary-slope-intercept-form" class="glossary-link" data-slug="slope-intercept-form" data-term="slope-intercept form" data-original-href="#glossary-slope-intercept-form">slope-intercept form</a>, <a href="#glossary-two-point-form" class="glossary-link" data-slug="two-point-form" data-term="two-point form" data-original-href="#glossary-two-point-form">two-point form</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-slug="y-intercept" data-term="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<p>Coming Soon</p>
-<h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="writing-an-equation-from-a-graph" class="level3">
-<h3 class="anchored" data-anchor-id="writing-an-equation-from-a-graph">4.4.1 – Writing an Equation From a Graph</h3>
+<ol type="1">
+<li><p>Two lines are described below.</p>
 <ul>
-<li>Look for the <strong>y-intercept</strong> first — where the line crosses the y-axis.</li>
-<li>Then find the <strong>slope</strong> by counting rise/run between two points.</li>
-<li>Substitute (m) and (b) into (y = mx + b) (or (f(x) = mx + b)).</li>
+<li>Line A goes through <span class="math inline">\((0,2)\)</span> and <span class="math inline">\((3,5)\)</span>.</li>
+<li>Line B goes through <span class="math inline">\((0,2)\)</span> and <span class="math inline">\((3,4)\)</span>.</li>
 </ul>
+<p>Which line is steeper? How can you tell <em>without graphing</em>?</p></li>
+<li><p>Graph the line <span class="math inline">\(y = \tfrac{2}{3}x + 3\)</span>.</p></li>
+<li><p>In the equation <span class="math inline">\(y = 2x + 1\)</span>,</p>
+<ul>
+<li>what does the <span class="math inline">\(2\)</span> mean?</li>
+<li>what does the <span class="math inline">\(1\)</span> mean?</li>
+</ul></li>
+</ol>
+<hr>
+<h2 class="unnumbered anchored">👥 Learn Together</h2>
+<section id="slope-and-intercept-are-known" class="level3">
+<h3 class="anchored" data-anchor-id="slope-and-intercept-are-known">4.4.1 – Slope and Intercept Are Known</h3>
+<p>This is the easiest kind of problem because you already know both parts of the rule — the slope (<span class="math inline">\(m\)</span>) and the y-intercept (<span class="math inline">\(b\)</span>).</p>
+<p>Those two numbers are all you need to write an equation in slope-intercept form:</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Find the equation for the line with:</p>
+<ul>
+<li>slope <span class="math inline">\(m=4\)</span></li>
+<li>y-intercept <span class="math inline">\(b=-2\)</span></li>
+</ul>
+<p><span class="math display">\[
+y=4x-2
+\]</span></p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Find the equation for a line with:</p>
+<ul>
+<li>slope <span class="math inline">\(m=-\tfrac{3}{4}\)</span></li>
+<li>y-intercept <span class="math inline">\(b=5\)</span></li>
+</ul>
+<p><span class="math display">\[
+y=-\tfrac{3}{4}x+5
+\]</span></p>
+<div class="you-try" title="Find the equation for a line with slope 2 and y-intercept 7">
+<p><span class="math display">\[
+y = 2x + 7
+\]</span></p>
+</div>
+</section>
+<section id="from-a-graph" class="level3">
+<h3 class="anchored" data-anchor-id="from-a-graph">4.4.2 – From a Graph</h3>
+<p>When you can <strong>see</strong> a line, you can figure out its equation by paying attention to two simple things: how steep it is (the <strong>slope</strong>) and where it crosses the y-axis (the <strong>intercept</strong>).</p>
+<p>Every straight line on a coordinate plane follows the same pattern:</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<p>So, if you can find <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> from the graph, you can write its equation immediately.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Find where the line crosses the y-axis — that’s <strong><span class="math inline">\(b\)</span></strong>.</li>
+<li>Pick two clear points and count the <strong>rise</strong> and <strong>run</strong> to find <strong><span class="math inline">\(m\)</span></strong>.</li>
+<li>Substitute <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> into <span class="math inline">\(y = mx + b\)</span>.</li>
+</ol>
+<hr>
+<p><strong>Example 3:</strong></p>
+<p>Find the equation for the line line pictured below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_4/find_equation_from_graph.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+<p><img src="../../images/Unit_4/Lesson_4/Example3A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
 </figure>
 </div>
-<div class="real-world" title="Example – Car Rental Costs">
-<p>A company charges $50 plus $0.25 per mile. The rule is (y = 0.25x + 50).</p>
+<p>The line crosses the y-axis at <span class="math inline">\((0, 1)\)</span> so <span class="math inline">\(b=1\)</span>.</p>
+<p>Now pick two clear points on the line to find the slope.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_4/Example3B.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
+</div>
+<p>Picking the points <span class="math inline">\((0, 1)\)</span> and <span class="math inline">\((1, 3)\)</span> we see that <span class="math inline">\(m=2\)</span>.</p>
+<p>Now we just replace <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(y=mx+b\)</span>.</p>
+<p><span class="math display">\[
+y = 2x + 1
+\]</span></p>
+<hr>
+<p><strong>Example 4:</strong></p>
+<p>Find the equation of the line from the graph.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_4/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
+</div>
+<p>The y-intercept <span class="math inline">\(b=-3\)</span> and the slope <span class="math inline">\(m = -\tfrac{1}{2}\)</span>.</p>
+<p>The equation of the line is:</p>
+<p><span class="math display">\[
+y = -\tfrac{1}{2}x - 3
+\]</span></p>
+<div class="you-try-m" title="Find the equation from the graph">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_4/YouTry2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
+</div>
+</div>
+<div class="answer" title="Answer">
+<p><span class="math display">\[
+y = 3x - 4
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="slope-and-a-point-are-known" class="level3">
+<h3 class="anchored" data-anchor-id="slope-and-a-point-are-known">4.4.3 – Slope and a Point Are Known</h3>
+<p>Sometimes you know the <strong>slope</strong> of a line and just <strong>one point</strong> it passes through — but not the y-intercept. That’s okay! You can still find the full equation by plugging the point into the rule for a line and solving for <span class="math inline">\(b\)</span>.</p>
+<p>Remember, every line follows:</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<p>You already know <span class="math inline">\(m\)</span> and, since you have a point, you have <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. Use those values to find <span class="math inline">\(b\)</span>, then substitute it back into the equation.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Start with <span class="math inline">\(y = mx + b\)</span>.</li>
+<li>Substitute the slope and the coordinates of the known point.</li>
+<li>Solve for <span class="math inline">\(b\)</span>.</li>
+<li>Write the final equation using your values of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</li>
+</ol>
+<hr>
+<p><strong>Example 5:</strong></p>
+<p>Find the equation of a line with slope <span class="math inline">\(m = 3\)</span> that passes through the point <span class="math inline">\((2, 5)\)</span>.</p>
+<p>Start with <span class="math inline">\(y = mx + b\)</span> and plug in <span class="math inline">\(x = \textcolor{green}{2}\)</span>, <span class="math inline">\(y = \textcolor{red}{5}\)</span>, and <span class="math inline">\(m = \textcolor{blue}{3}\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{5} &amp;= \textcolor{blue}{3}(\textcolor{green}{2}) + b \\
+5 &amp;= 6 + b \\
+b &amp;= -1
+\end{aligned}
+\]</span></p>
+<p>Now substitute <span class="math inline">\(m = 3\)</span> and <span class="math inline">\(b = -1\)</span> into <span class="math inline">\(y = mx + b\)</span>:</p>
+<p><span class="math display">\[
+y = 3x - 1
+\]</span></p>
+<hr>
+<p><strong>Example 6:</strong></p>
+<p>Find the equation of a line with slope <span class="math inline">\(m = \textcolor{blue}{-2}\)</span> that passes through the point <span class="math inline">\((\textcolor{green}{1}, \textcolor{red}{4})\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{4} &amp;= \textcolor{blue}{-2}(\textcolor{green}{1}) + b \\
+4 &amp;= -2 + b \\
+b &amp;= 6
+\end{aligned}
+\]</span></p>
+<p>So the equation is:</p>
+<p><span class="math display">\[
+y = -2x + 6
+\]</span></p>
+<div class="you-try" title="Find the equation of the line with slope $m = \tfrac{1}{2}$ that passes through $(4, 3)$.">
+<p><span class="math display">\[
+y = \tfrac{1}{2}x + 1
+\]</span></p>
+</div>
+<div class="note" title="Point-Slope Form">
+<p>If you prefer to memorize formulas, you can also solve problems like this using the point-slope form of a line.</p>
+<p><span class="math display">\[
+y - y_1 = m(x - x_1)
+\]</span></p>
+<p>Using point-slope form the line in Example 6 with slope <span class="math inline">\(m=-2\)</span> and point <span class="math inline">\((1, 4)\)</span>:</p>
+<p>We know <span class="math inline">\(m = \textcolor{blue}{-2}\)</span>, <span class="math inline">\(y_1 = \textcolor{red}{4}\)</span> and <span class="math inline">\(x_1 = \textcolor{green}{1}\)</span> so the equation is:</p>
+<p><span class="math display">\[
+y - \textcolor{red}{4} = \textcolor{blue}{-2}(x - \textcolor{green}{1})
+\]</span></p>
+<p>In slope-intercept form that is:</p>
+<p><span class="math display">\[
+\begin{align*}
+y - 4 &amp;= \textcolor{red}{-2}(x - 1) \stepnote{Distribute the -2}\\
+y - 4 &amp;= -2x + 2 \\
+\\
+y - 4 \textcolor{red}{+4} &amp;= -2x + 2 \textcolor{red}{+4} \snplus{4} \\
+y &amp;= -2x + 6
+\end{align*}
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="two-points-are-known" class="level3">
+<h3 class="anchored" data-anchor-id="two-points-are-known">4.4.4 – Two Points Are Known</h3>
+<p>Sometimes you don’t know the slope <strong>or</strong> the intercept — just <strong>two points</strong> the line passes through. That’s all you need! You can find the slope from the two points, then use what you learned in the last section to find <span class="math inline">\(b\)</span> and write the full equation.</p>
+<p>Every line still follows:</p>
+<p><span class="math display">\[
+y = mx + b
+\]</span></p>
+<p>But this time, we’ll start by finding <span class="math inline">\(m\)</span> using the slope formula.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Label your two points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span>.</li>
+<li>Find the slope: <span class="math display">\[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\]</span></li>
+<li>Pick one of the points and substitute it into <span class="math inline">\(y = mx + b\)</span>.</li>
+<li>Solve for <span class="math inline">\(b\)</span>.</li>
+<li>Write the final equation using your values of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</li>
+</ol>
+<hr>
+<p><strong>Example 7:</strong></p>
+<p>Find the equation of the line passing through <span class="math inline">\((1, 2)\)</span> and <span class="math inline">\((4, 5)\)</span>.</p>
+<p>First, find the slope:</p>
+<p><span class="math display">\[
+m = \frac{5 - 2}{4 - 1} = \frac{3}{3} = 1
+\]</span></p>
+<p>Now use <span class="math inline">\(m = \textcolor{blue}{1}\)</span> and one of the points — let’s use <span class="math inline">\((\textcolor{green}{1}, \textcolor{red}{2})\)</span> — to find <span class="math inline">\(b\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{2} &amp;= \textcolor{blue}{1}(\textcolor{green}{1}) + b \\
+2 &amp;= 1 + b \\
+b &amp;= 1
+\end{aligned}
+\]</span></p>
+<p>So the equation of the line is:</p>
+<p><span class="math display">\[
+y = x + 1
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Use Either Point">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Use Either Point
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can use <strong>either</strong> of the two points when solving for <span class="math inline">\(b\)</span>. If your slope is correct, both points will fit the same equation. Try plugging in the second point to check your answer!</p>
+</div>
+</div>
+<hr>
+<p><strong>Example 8:</strong></p>
+<p>Find the equation of the line passing through <span class="math inline">\((-2, 3)\)</span> and <span class="math inline">\((2, -1)\)</span>.</p>
+<p>Start with the slope:</p>
+<p><span class="math display">\[
+m = \frac{-1 - 3}{2 - (-2)} = \frac{-4}{4} = -1
+\]</span></p>
+<p>Now substitute <span class="math inline">\(m = \textcolor{blue}{-1}\)</span> and the point <span class="math inline">\((\textcolor{green}{-2}, \textcolor{red}{3})\)</span> into <span class="math inline">\(y = mx + b\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{3} &amp;= \textcolor{blue}{-1}(\textcolor{green}{-2}) + b \\
+3 &amp;= 2 + b \\
+b &amp;= 1
+\end{aligned}
+\]</span></p>
+<p>So the equation is:</p>
+<p><span class="math display">\[
+y = -x + 1
+\]</span></p>
+<div class="you-try" title="Find the equation of the line passing through $(0, -2)$ and $(3, 4)$.">
+<p><span class="math display">\[
+y = 2x - 2
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="parallel-and-perpendicular-lines-optional" class="level3">
+<h3 class="anchored">4.4.5 – Parallel and Perpendicular Lines (Optional)</h3>
+<p>Sometimes you’re asked to write the equation of a line that’s <strong>parallel</strong> or <strong>perpendicular</strong> to another line and passes through a given point. The process is nearly the same as before — the only difference is how you find the slope.</p>
 <ul>
-<li>(m = 0.25): rate per mile</li>
-<li>(b = 50): starting fee</li>
+<li><p><strong>Parallel lines</strong> have the <strong>same slope</strong>.</p></li>
+<li><p><strong>Perpendicular lines</strong> have <strong>opposite reciprocal slopes</strong></p></li>
 </ul>
-</div>
-<div class="you-try" title="From Graph to Equation">
-<p>Use the graph your teacher provides. Identify the slope and y-intercept, then write the equation in slope-intercept form.</p>
+<p><span class="math display">\[m_\perp=-\tfrac{1}{m}\]</span></p>
+<hr>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Identify the slope of the given line.</li>
+<li>Use the same slope if the new line is <strong>parallel</strong>, or take the <strong>opposite reciprocal</strong> if it’s <strong>perpendicular</strong>.</li>
+<li>Substitute the slope and your point into <span class="math inline">\(y = mx + b\)</span>.</li>
+<li>Solve for <span class="math inline">\(b\)</span> and write the final equation.</li>
+</ol>
+<hr>
+<p><strong>Example 9 – Parallel Lines</strong></p>
+<p>Find the equation of the line parallel to <span class="math inline">\(y = 3x - 4\)</span> that passes through <span class="math inline">\((2, 1)\)</span>.</p>
+<p>The slope of the given line is <span class="math inline">\(m = 3\)</span>. Parallel lines have the same slope, so <span class="math inline">\(m = \textcolor{blue}{3}\)</span>.</p>
+<p>Plug the point <span class="math inline">\((\textcolor{green}{2}, \textcolor{red}{1})\)</span> into <span class="math inline">\(y = mx + b\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{1} &amp;= \textcolor{blue}{3}(\textcolor{green}{2}) + b \\
+1 &amp;= 6 + b \\
+b &amp;= -5
+\end{aligned}
+\]</span></p>
+<p>The equation of the new line is:</p>
+<p><span class="math display">\[
+y = 3x - 5
+\]</span></p>
+<p>Here is a graph showing the two lines:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_4/Example9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
 </div>
 <hr>
-</section>
-<section id="writing-an-equation-from-slope-and-a-point" class="level3">
-<h3 class="anchored" data-anchor-id="writing-an-equation-from-slope-and-a-point">4.4.2 – Writing an Equation From Slope and a Point</h3>
-<p>When you know a line’s slope and one point, use <strong>point-slope form</strong>: [ y - y_1 = m(x - x_1)]</p>
-<p>Then rearrange to slope-intercept form if needed.</p>
-<div class="example" title="Example – Point and Slope">
-<p>Slope (m = 3), point ((2, 5)): [ <span class="math display">\[\begin{align*}
-y - 5 &amp;= 3(x - 2) \
-y - 5 &amp;= 3x - 6 \
-y &amp;= 3x - 1
-\end{align*}\]</span>- 6<br>
-y &amp;= 3x - 1 \end{align*}]</p>
-<p>So (y = 3x - 1) or (f(x) = 3x - 1).</p>
-</div>
-<div class="you-try" title="Use Point-Slope Form">
-<p>Find the equation of a line with slope (m = -2) that passes through ((1, 4)). Write your final answer as (y = mx + b).</p>
-</div>
-<hr>
-</section>
-<section id="writing-an-equation-from-two-points" class="level3">
-<h3 class="anchored" data-anchor-id="writing-an-equation-from-two-points">4.4.3 – Writing an Equation From Two Points</h3>
-<p>When you only know <strong>two points</strong>, first find the <strong>slope</strong>: [ m = ]</p>
-<p>Then use one of the points and point-slope form to find the equation.</p>
-<div class="example" title="Example – Two Points">
-<p>Points ((1, 2)) and ((4, 5)):</p>
-<p>[ m = = 1]</p>
-<p>Use point ((1, 2)): [ y - 2 = 1(x - 1) y = x + 1]</p>
-</div>
-<div class="you-try-m" title="Try It Yourself">
-<p>Find the equation of the line passing through ((–2, 3)) and ((2, 7)).</p>
+<p><strong>Example 10 – Perpendicular Lines</strong></p>
+<p>Find the equation of the line perpendicular to <span class="math inline">\(y = -\tfrac{1}{2}x + 3\)</span> that passes through <span class="math inline">\((4, 2)\)</span>.</p>
+<p>The given slope is <span class="math inline">\(m = -\tfrac{1}{2}\)</span>. A perpendicular line has the opposite reciprocal slope, so <span class="math inline">\(m_\perp = \textcolor{blue}{2}\)</span>.</p>
+<p>Substitute <span class="math inline">\((\textcolor{green}{4}, \textcolor{red}{2})\)</span> into <span class="math inline">\(y = mx + b\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textcolor{red}{2} &amp;= \textcolor{blue}{2}(\textcolor{green}{4}) + b \\
+2 &amp;= 8 + b \\
+b &amp;= -6
+\end{aligned}
+\]</span></p>
+<p>The equation of the perpendicular line is:</p>
+<p><span class="math display">\[
+y = 2x - 6
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_4/Example10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="340"></p>
+</figure>
 </div>
 <hr>
-</section>
-<section id="rearranging-equations-into-slope-intercept-form" class="level3">
-<h3 class="anchored" data-anchor-id="rearranging-equations-into-slope-intercept-form">4.4.4 – Rearranging Equations Into Slope-Intercept Form</h3>
-<p>Sometimes a line is written in another form, like (3x + 2y = 10). To graph it easily, solve for (y).</p>
-<p>[ <span class="math display">\[\begin{align*}
-3x + 2y &amp;= 10 \
-2y &amp;= -3x + 10 \
-y &amp;= -\frac{3}{2}x + 5
-\end{align*}\]</span>10<br>
-y &amp;= -x + 5 \end{align*}]</p>
-<p>Now the slope is (-) and the y-intercept is (5).</p>
-<div class="you-try" title="Put It in Slope-Intercept Form">
-<p>Rewrite (4x - 2y = 6) in slope-intercept form. Identify (m) and (b).</p>
+<div class="you-try-m" title="Parallel and Perpendicular Practice">
+<ol type="1">
+<li>Find the equation of the line parallel to <span class="math inline">\(y = -2x + 5\)</span> that passes through <span class="math inline">\((0, -3)\)</span>.</li>
+<li>Find the equation of the line perpendicular to <span class="math inline">\(y = \tfrac{1}{3}x - 1\)</span> that passes through <span class="math inline">\((3, 4)\)</span>.</li>
+</ol>
 </div>
+<div class="answer" title="Answers">
+<ol type="1">
+<li><span class="math inline">\(y = -2x - 3\)</span></li>
+<li><span class="math inline">\(y = -3x + 13\)</span></li>
+</ol>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="parallel-and-perpendicular-lines-optional">✍️ Practice On Your Own</h2>
+<p><strong>Slope &amp; Intercept Known</strong></p>
+<p>Write the equation for each line.</p>
+<ol type="1">
+<li><p><span class="math inline">\(m=3\)</span>, <span class="math inline">\(b=-1\)</span></p></li>
+<li><p><span class="math inline">\(m=-2\)</span>, <span class="math inline">\(b=4\)</span></p></li>
+<li><p><span class="math inline">\(m=\tfrac{1}{2}\)</span>, <span class="math inline">\(b=0\)</span></p></li>
+<li><p><span class="math inline">\(m=-\tfrac{3}{4}\)</span>, <span class="math inline">\(b=5\)</span></p></li>
+<li><p><span class="math inline">\(m=0\)</span>, <span class="math inline">\(b=-6\)</span></p></li>
+</ol>
 <hr>
-</section>
-<section id="interpreting-slope-and-intercept-in-context" class="level3">
-<h3 class="anchored">4.4.5 – Interpreting Slope and Intercept in Context</h3>
-<div class="real-world" title="Example – Earnings Over Time">
-<p>A dog walker earns $15 per walk, plus $10 just for showing up. The rule is (f(x) = 15x + 10).</p>
-<ul>
-<li>(m = 15): rate (how much per walk)</li>
-<li>(b = 10): base pay</li>
-</ul>
-</div>
-<div class="you-try-m" title="Interpret the Meaning">
-<p>You spend $25 to join a club and $5 each visit. Write an equation for total cost (f(x)). What do (m) and (b) represent?</p>
-</div>
-<div class="remember" title="Key Idea">
-<p>You can write linear equations from graphs, data, or descriptions. Once you know <strong>slope</strong> and <strong>one point</strong> (or intercept), you can find the rule that models the situation.</p>
-</div>
-<div class="real-world" title="Comparing Two Models">
-<p>You track two savings plans:<br>
-(f(x) = 10x + 100) and (g(x) = 20x + 20).<br>
-Graph both.<br>
-The <strong>intersection point</strong> shows when your total savings are equal.<br>
-That single point satisfies both functions — it’s the <strong>solution to the system</strong>.</p>
-</div>
-<h2 class="unnumbered anchored" data-anchor-id="interpreting-slope-and-intercept-in-context">✍️ Practice On Your Own</h2>
+<p><strong>From a Graph</strong></p>
+<p>A line crosses the y-axis at <span class="math inline">\(1\)</span> and the x-axis at <span class="math inline">\(-2\)</span>. Find its slope and equation.</p>
+<p>Write the equation for each line.</p>
+<ol start="6" type="1">
+<li><p><br><img src="../../images/Unit_4/Lesson_4/Question6.png" class="img-fluid" width="350"></p></li>
+<li><p><br><img src="../../images/Unit_4/Lesson_4/Question7.png" class="img-fluid" width="350"></p></li>
+<li><p><br><img src="../../images/Unit_4/Lesson_4/Question8.png" class="img-fluid" width="350"></p></li>
+<li><p><br><img src="../../images/Unit_4/Lesson_4/Question9.png" class="img-fluid" width="350"></p></li>
+<li><p><br><img src="../../images/Unit_4/Lesson_4/Question10.png" class="img-fluid" width="350"></p></li>
+</ol>
+<hr>
+<p><strong>From Points</strong></p>
+<p>Write the equation for each line.</p>
+<ol start="11" type="1">
+<li><p>Through <span class="math inline">\((1,3)\)</span> and <span class="math inline">\((5,7)\)</span></p></li>
+<li><p>Through <span class="math inline">\((-2,3)\)</span> and <span class="math inline">\((2,-1)\)</span></p></li>
+<li><p>Through <span class="math inline">\((3,-1)\)</span> and <span class="math inline">\((7,5)\)</span></p></li>
+<li><p>Through <span class="math inline">\((0,-3)\)</span> and <span class="math inline">\((6,9)\)</span></p></li>
+<li><p>Through <span class="math inline">\((5,2)\)</span> and <span class="math inline">\((1,-2)\)</span></p></li>
+<li><p>Through <span class="math inline">\((0,4)\)</span> and <span class="math inline">\((4,0)\)</span></p></li>
+<li><p>Through <span class="math inline">\((-3,6)\)</span> and <span class="math inline">\((0,-3)\)</span></p></li>
+<li><p>Through <span class="math inline">\((1,1)\)</span> and <span class="math inline">\((3,5)\)</span></p></li>
+<li><p>Through <span class="math inline">\((0,-2)\)</span> and <span class="math inline">\((4,-2)\)</span></p></li>
+<li><p>Through <span class="math inline">\((10,0)\)</span> and <span class="math inline">\((0,5)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Parallel &amp; Perpendicular Lines</strong></p>
+<p>Write the equation for each line.</p>
+<ol start="21" type="1">
+<li><p>Line parallel to <span class="math inline">\(y=2x+1\)</span> through <span class="math inline">\((0,-3)\)</span></p></li>
+<li><p>Line perpendicular to <span class="math inline">\(y=-\tfrac{1}{2}x+5\)</span> through <span class="math inline">\((4,2)\)</span></p></li>
+<li><p>Line parallel to <span class="math inline">\(y=x-4\)</span> through <span class="math inline">\((0,6)\)</span></p></li>
+<li><p>Line perpendicular to <span class="math inline">\(y=\tfrac{1}{3}x+2\)</span> through <span class="math inline">\((3,1)\)</span></p></li>
+<li><p>Line parallel to <span class="math inline">\(3x+2y=6\)</span> through <span class="math inline">\((2,-1)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
 <p>Coming Soon</p>
+<hr>
 <div class="answers">
-<p>Coming Soon</p>
+<ol type="1">
+<li><p><span class="math inline">\(y=3x-1\)</span> </p></li>
+<li><p><span class="math inline">\(y=-2x+4\)</span> </p></li>
+<li><p><span class="math inline">\(y=\tfrac{1}{2}x\)</span> </p></li>
+<li><p><span class="math inline">\(y=-\tfrac{3}{4}x+5\)</span> </p></li>
+<li><p><span class="math inline">\(y=-6\)</span></p></li>
+<li><p><span class="math inline">\(y=3x+2\)</span> </p></li>
+<li><p><span class="math inline">\(y=-\tfrac{1}{2}x-4\)</span> </p></li>
+<li><p><span class="math inline">\(y=2x+3\)</span> </p></li>
+<li><p><span class="math inline">\(y=-\tfrac{1}{3}x-2\)</span> </p></li>
+<li><p><span class="math inline">\(y=\tfrac{1}{2}x+1\)</span></p></li>
+<li><p><span class="math inline">\(y=x+2\)</span> </p></li>
+<li><p><span class="math inline">\(y=-x+1\)</span> </p></li>
+<li><p><span class="math inline">\(y=\tfrac{3}{2}x-\tfrac{11}{2}\)</span> </p></li>
+<li><p><span class="math inline">\(y=2x-3\)</span> </p></li>
+<li><p><span class="math inline">\(y=x-3\)</span></p></li>
+<li><p><span class="math inline">\(y=-x+4\)</span> </p></li>
+<li><p><span class="math inline">\(y=-3x-3\)</span> </p></li>
+<li><p><span class="math inline">\(y=2x-1\)</span> </p></li>
+<li><p><span class="math inline">\(y=-2\)</span> </p></li>
+<li><p><span class="math inline">\(y=-\tfrac{1}{2}x+5\)</span></p></li>
+<li><p><span class="math inline">\(y=2x-3\)</span> </p></li>
+<li><p><span class="math inline">\(y=2x-6\)</span> </p></li>
+<li><p><span class="math inline">\(y=x+6\)</span> </p></li>
+<li><p><span class="math inline">\(y=-3x+10\)</span> </p></li>
+<li><p><span class="math inline">\(y=-\tfrac{3}{2}x+2\)</span></p></li>
+</ol>
 </div>
 
 

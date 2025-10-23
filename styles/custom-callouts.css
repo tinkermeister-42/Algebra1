@@ -8,7 +8,8 @@
 .you-try-m,
 .answers,
 .answer,
-.think {
+.think,
+.note {
   border: 1px solid #ccc;
   border-left: 4px solid;
   border-radius: 4px;
@@ -50,6 +51,11 @@
 .answer {
   border-left: 4px solid rgba(39, 174, 96, 0.75) !important;
   background-color: #f7fcf9 !important;
+}
+/* Note callout (informational) */
+.note {
+  border-left: 4px solid rgba(168, 81, 202, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.9)  !important;
 }
 
 /* === Collapsible Behavior (answers, you-try, think) === */
@@ -104,6 +110,9 @@
 .callout.answer .callout-title {
   background-color: rgba(39, 174, 96, 0.12) !important;
 }
+.callout.note .callout-title {
+  background-color: rgba(168, 81, 202, 0.219) !important;
+}
 
 /* Only show pointer cursor when collapsible */
 [data-collapse="true"] > .callout-title {
@@ -130,7 +139,8 @@
 .you-try-m > *,
 .answers > *,
 .answer > *,
-.think > * {
+.think > *,
+.note > * {
   padding: 0.5em 0.75em;
   box-sizing: border-box;
 }
@@ -145,7 +155,8 @@
 .you-try-m p,
 .answers p,
 .answer p,
-.think p {
+.think p,
+.note p {
   margin-bottom: 0.25rem;
 }
 
@@ -160,6 +171,7 @@
 .answers ul,
 .answer ul,
 .think ul,
+.note ul,
 .objectives ol,
 .vocab ol,
 .remember ol,
@@ -169,7 +181,8 @@
 .you-try-m ol,
 .answers ol,
 .answer ol,
-.think ol {
+.think ol,
+.note ol {
   padding-left: 2rem;
   margin: 0.25rem 0;
 }
@@ -182,7 +195,8 @@
 .you-try-m li,
 .answers li,
 .answer li,
-.think li {
+.think li,
+.note li {
   margin-bottom: 0.25rem;
 }
 
@@ -196,7 +210,8 @@
 .you-try-m .task-list,
 .answers .task-list,
 .answer .task-list,
-.think .task-list {
+.think .task-list,
+.note .task-list {
   list-style: none;
   padding-left: 1.5rem;
   margin: 0.25rem 0;
@@ -210,7 +225,8 @@
 .you-try-m .task-list li,
 .answers .task-list li,
 .answer .task-list li,
-.think .task-list li {
+.think .task-list li,
+.note .task-list li {
   display: flex;
   align-items: flex-start;
   margin-bottom: 0.3rem;
@@ -224,7 +240,8 @@
 .you-try-m .task-list input[type="checkbox"],
 .answers .task-list input[type="checkbox"],
 .answer .task-list input[type="checkbox"],
-.think .task-list input[type="checkbox"] {
+.think .task-list input[type="checkbox"],
+.note .task-list input[type="checkbox"] {
   margin-right: 0.5em;
   margin-top: 0.15em;
   transform: scale(1.1);
@@ -245,54 +262,31 @@
    Global table sizing & margins
    ============================ */
 :root {
-  --table-side-gap: 0.9rem;   /* side margin around tables */
-  --table-top-gap: 0.6rem;    /* top/bottom margin */
+  --table-side-gap: 0.9rem;
+  --table-top-gap: 0.6rem;
 }
-
-/* Target Pandoc/Quarto tables broadly */
 :where(main, .content, .page-content, article) :is(table, .table) {
-  /* center and give space */
   margin: var(--table-top-gap) auto;
-  /* prevent full-width stretch */
-  width: auto !important;            /* override Bootstrap .table { width:100% } */
+  width: auto !important;
   max-width: calc(100% - (2 * var(--table-side-gap)));
-  /* let the table shrink to its content and be centerable with margin:auto */
   display: table;
 }
-
-/* If Quarto wraps your table in a .quarto-table div, add a tiny cushion */
 :where(main, .content, .page-content, article) .quarto-table {
   padding: 0 0.25rem;
 }
-
-/* Keep cell padding tidy when the table gets narrower */
 :where(main, .content, .page-content, article) table :is(th, td) {
   padding: 0.35rem 0.6rem;
 }
-
-/* ---------- Opt-outs / utilities ---------- */
-/* Force a specific table to span full width */
 :where(main, .content, .page-content, article) :is(table.wide, .quarto-table.wide table) {
   width: 100% !important;
   max-width: 100% !important;
   margin-left: 0;
   margin-right: 0;
 }
-
-/* Enable horizontal scroll when content is too wide to shrink nicely */
 :where(main, .content, .page-content, article) :is(.quarto-table.scroll, table.scroll) {
-  display: block;         /* enables overflow on the wrapper */
+  display: block;
   overflow-x: auto;
-  width: 100% !important; /* full width, but scrollable */
+  width: 100% !important;
   max-width: 100%;
   margin: var(--table-top-gap) 0;
 }
-
-/* Optional: friendlier wrapping in narrow tables (uncomment if needed) */
-/*
-:where(main, .content, .page-content, article) table {
-  table-layout: auto;         // default, but explicit here
-  word-break: break-word;     // prevent overflow on long words/URLs
-  hyphens: auto;
-}
-*/

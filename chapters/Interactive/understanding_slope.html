@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4.1 – Graphing Function Rules – DHS Algebra 1</title>
+<title>Slope Explorer – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_4/4.2_Understanding_Slope.html" rel="next">
-<link href="../../chapters/Unit_4/index.html" rel="prev">
+<link href="../../chapters/Interactive/exploring_slope_intercept_form.html" rel="next">
+<link href="../../chapters/Interactive/index.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,35 +86,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html">4.1 – Graphing Function Rules</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../chapters/Interactive/understanding_slope.html">Slope Explorer</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -363,13 +334,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
@@ -378,7 +349,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.1 – Graphing Function Rules</span></a>
   </div>
 </li>
@@ -442,13 +413,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
  <span class="menu-text">Interactive Learning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
@@ -457,7 +428,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/understanding_slope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Interactive/understanding_slope.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Slope Explorer</span></a>
   </div>
 </li>
@@ -521,22 +492,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#the-coordinate-plane" id="toc-the-coordinate-plane" class="nav-link active" data-scroll-target="#the-coordinate-plane">4.1.1 – The Coordinate Plane</a></li>
-  <li><a href="#function-rules-and-tables-of-values" id="toc-function-rules-and-tables-of-values" class="nav-link" data-scroll-target="#function-rules-and-tables-of-values">4.1.2 – Function Rules and Tables of Values</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html">4.1 – Graphing Function Rules</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../chapters/Interactive/understanding_slope.html">Slope Explorer</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">4.1 – Graphing Function Rules</h1>
+<h1 class="title">Slope Explorer</h1>
 </div>
 
 
@@ -553,509 +517,393 @@ window.Quarto = {
 </header>
 
 
-<p>So far, you’ve worked with rules that take an input, do something to it, and give an output. You’ve written equations, evaluated expressions, and created tables that show how numbers are connected.</p>
-<p>In this lesson, we’ll take that same idea one step further. Instead of only listing input–output pairs, we’ll see them — each pair becomes a point you can plot. When those points come together, they reveal a picture of the rule itself.</p>
-<p>It’s time to move from numbers to shapes — and start seeing how a function behaves.</p>
-<div class="objectives">
-<ul class="task-list">
-<li><label><input type="checkbox">I can use a simple equation or function rule to find y when I know x.</label></li>
-<li><label><input type="checkbox">I can make a table of values and graph the related points.</label></li>
-<li><label><input type="checkbox">I can recognize that these points form a straight line.</label></li>
-</ul>
+<p>Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.</p>
+<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="true" style="max-width:720px;margin:1rem auto">
+
 </div>
-<div class="vocab">
-<p><a href="../../glossary.html#glossary-axis" class="glossary-link" data-original-href="#glossary-axis" data-slug="axis" data-term="axis">axis</a>, <a href="../../glossary.html#glossary-origin" class="glossary-link" data-original-href="#glossary-origin" data-slug="origin" data-term="origin">origin</a>, <a href="../../glossary.html#glossary-quadrant" class="glossary-link" data-original-href="#glossary-quadrant" data-slug="quadrant" data-term="quadrant">quadrant</a>, <a href="../../glossary.html#glossary-ordered-pair" class="glossary-link" data-original-href="#glossary-ordered-pair" data-slug="ordered-pair" data-term="ordered pair">ordered pair</a>, <a href="../../glossary.html#glossary-coordinate-plane" class="glossary-link" data-original-href="#glossary-coordinate-plane" data-slug="coordinate-plane" data-term="coordinate plane">coordinate plane</a></p>
-</div>
-<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<ol type="1">
-<li>Complete the table for the function <span class="math inline">\(f(x) = 2x + 1\)</span></li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(f(x)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ol start="2" type="1">
-<li><p>Plot the solution to the equation <span class="math inline">\(2x + 1 = 7\)</span> on a number line.</p></li>
-<li><p>On a number line, a point shows one number. What if you wanted to show two numbers at the same time? How could we do that?</p></li>
-</ol>
-<h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="the-coordinate-plane" class="level3">
-<h3 class="anchored" data-anchor-id="the-coordinate-plane">4.1.1 – The Coordinate Plane</h3>
-<p>Up to now, we’ve worked with <strong>number lines</strong> — simple one-dimensional ways to show where a number belongs. But equations often have <strong>two variables</strong>, like <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. To show how they’re related, we need a way to display <strong>two numbers at once</strong>.</p>
-<p>That’s where the <strong>coordinate plane</strong> comes in.</p>
-<p>The coordinate plane is made by crossing two number lines:</p>
-<ul>
-<li>The <strong>x-axis</strong> runs left and right.</li>
-<li>The <strong>y-axis</strong> runs up and down. They meet at the <strong>origin</strong> (0, 0).</li>
-</ul>
-<p>Every <strong>point</strong> on the plane has an <strong>ordered pair</strong> of numbers called its <strong>coordinates</strong>: <span class="math inline">\((x, y)\)</span>. The first number tells how far to move <strong>left or right</strong>, and the second tells how far to move <strong>up or down</strong>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/CartesianCoordinatePlane.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-cap="The coordinate plane with axes, origin, and quadrants labeled." width="400"></p>
-</figure>
-</div>
-<p>The axes divide the plane into <strong>four quadrants</strong>, labeled with Roman numerals I–IV, starting in the top-right and going counterclockwise.</p>
-<p>When you plot a point, <strong>start at the origin</strong>:</p>
-<ol type="1">
-<li>Move left or right for the x-coordinate.</li>
-<li>Then move up or down for the y-coordinate.</li>
-<li>Mark the spot.</li>
-</ol>
+<style>
+  .slope-widget {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+  .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem}
+  .slope-badge {padding:0.25rem 0.5rem; border:1px solid #ddd; border-radius:0.5rem; font-variant-numeric: tabular-nums;}
+
+  .slope-fig {border:1px solid #e5e7eb; border-radius:0.5rem; background:#fff;}
+  .slope-fig svg {touch-action:none; display:block; width:100%; height:auto; aspect-ratio: 1 / 1;}
+
+  .tick-label {font-size:10px; fill:#6b7280}
+  .axis {stroke:#111827; stroke-width:1}
+  .grid {stroke:#e5e7eb; stroke-width:1}
+  .grid.minor {stroke:#f3f4f6}
+
+  .pt {cursor:grab}
+  .pt:active {cursor:grabbing}
+
+  .line {stroke:#2563eb; stroke-width:2}
+
+  /* Dotted Δ legs */
+  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.7; }
+  .leg-x { stroke:#0ea5e9; } /* blue-green */
+  .leg-y { stroke:#10b981; } /* green */
+
+  /* Label groups (rect background + text) */
+  .lbl text { font-size:12px; fill:#111827; }
+  .lbl rect { fill:#ffffff; stroke:#e5e7eb; stroke-width:1; rx:3; ry:3; }
+
+  .leader { stroke:#9ca3af; stroke-dasharray:3 3; stroke-width:1; opacity:.8 }
+
+  .kbd {font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; padding:0.1rem 0.35rem; border:1px solid #ddd; border-radius:4px; background:#f9fafb}
+
+  /* Prevent selection/drag ghosts while interacting */
+  html.slope-dragging, html.slope-dragging * { -webkit-user-select:none !important; user-select:none !important; cursor:grabbing !important; }
+  .slope-widget, .slope-widget * { -webkit-user-drag:none; user-drag:none; }
+</style>
+<script>
+(function(){
+  // UTILITIES
+  const gcd = (a,b)=>{a=Math.abs(a); b=Math.abs(b); while(b){[a,b]=[b,a%b]} return a||1};
+  const toFrac = (dy,dx)=>{
+    if(dx===0) return {text:'undefined', m:null};
+    const sign = (dy*dx)>=0 ? 1 : -1;
+    dy = Math.abs(dy); dx = Math.abs(dx);
+    const g = gcd(dy,dx); const n = sign*(dy/g), d = dx/g;
+    return {text: d===1? String(n): `${n}/${d}`, m: n/d};
+  };
+  const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
+  const clamp = (v,lo,hi)=> Math.max(lo, Math.min(hi, v));
+  const rectsOverlap = (a,b)=> !(a.x+a.width < b.x || b.x+b.width < a.x || a.y+a.height < b.y || b.y+b.height < a.y);
+
+  // Label helpers (rect + text + optional leader)
+  function makeLabelLayer(svg, withLeader=false){
+    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','lbl');
+    const r = document.createElementNS('http://www.w3.org/2000/svg','rect');
+    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+    g.append(r,t);
+    if(withLeader){
+      const l = document.createElementNS('http://www.w3.org/2000/svg','line');
+      l.setAttribute('class','leader');
+      g.appendChild(l);
+      g._leader = l;
+    }
+    svg.appendChild(g);
+    g._rect=r; g._text=t;
+    return g;
+  }
+  function positionLabel(g, x, y, text, anchor='start'){
+    const t=g._text, r=g._rect;
+    t.textContent = text;
+    t.setAttribute('x', x); t.setAttribute('y', y);
+    t.setAttribute('text-anchor', anchor);
+    return new Promise(resolve=>{
+      // microtask so bbox is available after text layout
+      Promise.resolve().then(()=>{
+        const padX=4, padY=2;
+        const bb=t.getBBox();
+        r.setAttribute('x', bb.x - padX);
+        r.setAttribute('y', bb.y - padY);
+        r.setAttribute('width', bb.width + 2*padX);
+        r.setAttribute('height', bb.height + 2*padY);
+        resolve({textBB:bb, rectBB:r.getBBox()});
+      });
+    });
+  }
+
+  function createWidget(container){
+    // CONFIG
+    const xmin = +container.dataset.xmin ?? -10;
+    const xmax = +container.dataset.xmax ?? 10;
+    const ymin = +container.dataset.ymin ?? -10;
+    const ymax = +container.dataset.ymax ?? 10;
+    const step = +container.dataset.step || 1;
+    const gridLabels = (container.dataset.gridLabels||'true') !== 'false';
+
+    // Canvas
+    const w = 480, h = 480, pad = 36;
+    const xScale = x=> pad + (x - xmin) * (w - 2*pad) / (xmax - xmin);
+    const yScale = y=> h - pad - (y - ymin) * (h - 2*pad) / (ymax - ymin);
+    const invX = X=> xmin + (X - pad) * (xmax - xmin) / (w - 2*pad);
+    const invY = Y=> ymin + (h - pad - Y) * (ymax - ymin) / (h - 2*pad);
+
+    // State
+    let P = {x:-4, y:-1};
+    let Q = {x: 6, y: 5};
+
+    // DOM
+    container.innerHTML = '';
+    const ui = document.createElement('div');
+    ui.className = 'slope-ui';
+    ui.innerHTML = `
+      <div class="legend">Drag the points. They snap to the grid (<span class="kbd">Shift</span> = fine adjust by ${step/2}).</div>
+      <div class="slope-badge">m = <span class="slope-val" aria-live="polite"></span></div>
+    `;
+    container.appendChild(ui);
+
+    const fig = document.createElement('div');
+    fig.className = 'slope-fig';
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS,'svg');
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    fig.appendChild(svg);
+    container.appendChild(fig);
+
+    // Layers
+    const gridG   = document.createElementNS(svgNS,'g');
+    const axesG   = document.createElementNS(svgNS,'g');
+    const lineG   = document.createElementNS(svgNS,'g');
+    const legsG   = document.createElementNS(svgNS,'g');
+    const lblsG   = document.createElementNS(svgNS,'g');
+    const ptsG    = document.createElementNS(svgNS,'g');
+    const ticksG  = document.createElementNS(svgNS,'g');
+    svg.append(gridG, axesG, lineG, legsG, lblsG, ptsG, ticksG);
+
+    // Grid
+    const addLine = (x1,y1,x2,y2, cls)=>{
+      const l = document.createElementNS(svgNS,'line');
+      l.setAttribute('x1',x1); l.setAttribute('y1',y1);
+      l.setAttribute('x2',x2); l.setAttribute('y2',y2);
+      l.setAttribute('class',cls);
+      gridG.appendChild(l);
+    };
+    const majorEvery = 5*step;
+    for(let x=Math.ceil(xmin/step)*step; x<=xmax; x+=step){
+      const X = xScale(x);
+      addLine(X, pad, X, h-pad, 'grid ' + ((x%majorEvery===0)?'':'minor'));
+      if(gridLabels && x%majorEvery===0 && x!==0){
+        const t = document.createElementNS(svgNS,'text');
+        t.setAttribute('x', X); t.setAttribute('y', h-pad+12); t.setAttribute('text-anchor','middle');
+        t.setAttribute('class','tick-label'); t.textContent = x;
+        ticksG.appendChild(t);
+      }
+    }
+    for(let y=Math.ceil(ymin/step)*step; y<=ymax; y+=step){
+      const Y = yScale(y);
+      addLine(pad, Y, w-pad, Y, 'grid ' + ((y%majorEvery===0)?'':'minor'));
+      if(gridLabels && y%majorEvery===0 && y!==0){
+        const t = document.createElementNS(svgNS,'text');
+        t.setAttribute('x', pad-6); t.setAttribute('y', Y+3); t.setAttribute('text-anchor','end');
+        t.setAttribute('class','tick-label'); t.textContent = y;
+        ticksG.appendChild(t);
+      }
+    }
+
+    // Axes
+    const X0 = Math.max(pad, Math.min(w-pad, xScale(0)));
+    const Y0 = Math.max(pad, Math.min(h-pad, yScale(0)));
+    const xAxis = document.createElementNS(svgNS,'line');
+    xAxis.setAttribute('x1', pad); xAxis.setAttribute('y1', Y0);
+    xAxis.setAttribute('x2', w-pad); xAxis.setAttribute('y2', Y0);
+    xAxis.setAttribute('class','axis'); axesG.appendChild(xAxis);
+    const yAxis = document.createElementNS(svgNS,'line');
+    yAxis.setAttribute('x1', X0); yAxis.setAttribute('y1', pad);
+    yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h-pad);
+    yAxis.setAttribute('class','axis'); axesG.appendChild(yAxis);
+
+    function arrow(x1,y1,x2,y2){
+      const a = document.createElementNS(svgNS,'path');
+      const ang = Math.atan2(y2-y1, x2-x1);
+      const L=6, W=4, bx=x2-Math.cos(ang)*L, by=y2-Math.sin(ang)*L;
+      const nx = Math.cos(ang+Math.PI/2)*W, ny=Math.sin(ang+Math.PI/2)*W;
+      a.setAttribute('d',`M ${x2} ${y2} L ${bx+nx} ${by+ny} L ${bx-nx} ${by-ny} Z`);
+      a.setAttribute('fill','#111827');
+      return a;
+    }
+    axesG.appendChild(arrow(pad, Y0, w-pad, Y0));
+    axesG.appendChild(arrow(X0, h-pad, X0, pad));
+
+    // Main line
+    const line = document.createElementNS(svgNS,'line');
+    line.setAttribute('class','line');
+    lineG.appendChild(line);
+
+    // Dotted legs
+    const legX = document.createElementNS(svgNS,'line'); legX.setAttribute('class','leg-x'); legsG.appendChild(legX);
+    const legY = document.createElementNS(svgNS,'line'); legY.setAttribute('class','leg-y'); legsG.appendChild(legY);
+
+    // Δ labels + leaders
+    const dxLabel = makeLabelLayer(lblsG, true);
+    const dyLabel = makeLabelLayer(lblsG, true);
+
+    // Point groups with circles; labels are separate groups (so they can dodge)
+    function makePoint(color){
+      const g = document.createElementNS(svgNS,'g');
+      const c = document.createElementNS(svgNS,'circle');
+      c.setAttribute('r',6); c.setAttribute('class','pt'); c.setAttribute('fill',color); c.setAttribute('stroke','#111827'); c.setAttribute('stroke-width','1');
+      g.append(c); ptsG.appendChild(g);
+      // external label
+      const lbl = makeLabelLayer(lblsG, false);
+      g._circle = c; g._label = lbl;
+      g.setAttribute('draggable','false');
+      return g;
+    }
+    const pG = makePoint('#10b981');
+    const qG = makePoint('#ef4444');
+
+    let dragging=null, fineMode=false;
+
+    async function updateUI(){
+      const PX=xScale(P.x), PY=yScale(P.y), QX=xScale(Q.x), QY=yScale(Q.y);
+      pG.setAttribute('transform', `translate(${PX} ${PY})`);
+      qG.setAttribute('transform', `translate(${QX} ${QY})`);
+
+      // Line clipped to bounds
+      const dx = Q.x - P.x, dy = Q.y - P.y;
+      if(dx===0){
+        const X = xScale(P.x);
+        line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
+        line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
+      } else {
+        const m = dy/dx; const b = P.y - m*P.x;
+        const pts = [];
+        const yL = m*xmin + b; if (yL>=ymin && yL<=ymax) pts.push({x:xmin,y:yL});
+        const yR = m*xmax + b; if (yR>=ymin && yR<=ymax) pts.push({x:xmax,y:yR});
+        const xB = (ymin - b)/m; if (xB>=xmin && xB<=xmax) pts.push({x:xB,y:ymin});
+        const xT = (ymax - b)/m; if (xT>=xmin && xT<=xmax) pts.push({x:xT,y:ymax});
+        if(pts.length>=2){
+          line.setAttribute('x1', xScale(pts[0].x)); line.setAttribute('y1', yScale(pts[0].y));
+          line.setAttribute('x2', xScale(pts[1].x)); line.setAttribute('y2', yScale(pts[1].y));
+        }
+      }
+
+      // Dotted legs (from P to Qx; then to Q)
+      legX.setAttribute('x1', PX); legX.setAttribute('y1', PY);
+      legX.setAttribute('x2', QX); legX.setAttribute('y2', PY);
+      legY.setAttribute('x1', QX); legY.setAttribute('y1', PY);
+      legY.setAttribute('x2', QX); legY.setAttribute('y2', QY);
+
+      // Point labels: offset along a normal so they never sit on the line
+      let nx=0, ny=-1;
+      if(!(dx===0 && dy===0)){
+        if(!(dx===0)){
+          const len = Math.hypot(dy, dx);
+          nx = -dy/len; ny = dx/len;
+        }
+      }
+      // If points are very close, push labels farther out
+      const triPix = Math.hypot(xScale(Q.x)-xScale(P.x), yScale(Q.y)-yScale(P.y));
+      const baseOff = triPix < 60 ? 22 : 14;
+
+      const pPos = await positionLabel(pG._label, PX + nx*baseOff, PY + ny*baseOff, `P(${fmt(P.x)}, ${fmt(P.y)})`, 'start');
+      const qPos = await positionLabel(qG._label, QX - nx*baseOff, QY - ny*baseOff, `Q(${fmt(Q.x)}, ${fmt(Q.y)})`, 'start');
+
+      // Δ labels: try multiple candidate positions to avoid overlap with point labels and each other
+      const off = 12, sx = dx>=0? 1 : -1, sy = dy>=0? 1 : -1;
+
+      // Δx candidates (midpoint above/below leg, try flips and larger offsets)
+      const midX = (PX+QX)/2, baseY = PY;
+      const dxCandidates = [
+        {x:midX, y: baseY + off*sy, anchor:'middle'},
+        {x:midX, y: baseY - off*sy, anchor:'middle'},
+        {x:midX, y: baseY + 2*off*sy, anchor:'middle'},
+        {x:midX, y: baseY - 2*off*sy, anchor:'middle'}
+      ];
+
+      let dxPlaced=null, dxBB=null;
+      for(const c of dxCandidates){
+        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
+        const bb = dxLabel._rect.getBBox();
+        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB)){
+          dxPlaced=c; dxBB=bb; break;
+        }
+      }
+      if(!dxPlaced){ // last resort: shove downward or upward more
+        const c = dxCandidates[0];
+        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(baseY + 3*off*sy, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
+        dxBB = dxLabel._rect.getBBox();
+      }
+      // leader for Δx
+      dxLabel._leader.setAttribute('x1', (PX+QX)/2);
+      dxLabel._leader.setAttribute('y1', baseY);
+      dxLabel._leader.setAttribute('x2', dxLabel._text.getAttribute('x'));
+      dxLabel._leader.setAttribute('y2', dxLabel._text.getAttribute('y'));
+
+      // Δy candidates (midpoint left/right of leg)
+      const midY = (PY+QY)/2, baseX = QX;
+      const dyCandidates = [
+        {x: baseX + off*sx, y: midY + 4, anchor:'start'},
+        {x: baseX - off*sx, y: midY + 4, anchor:'end'},
+        {x: baseX + 2*off*sx, y: midY + 4, anchor:'start'},
+        {x: baseX - 2*off*sx, y: midY + 4, anchor:'end'}
+      ];
+
+      let dyPlaced=null, dyBB=null;
+      for(const c of dyCandidates){
+        const res = await positionLabel(dyLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
+        const bb = dyLabel._rect.getBBox();
+        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB) && !rectsOverlap(bb, dxBB)){
+          dyPlaced=c; dyBB=bb; break;
+        }
+      }
+      if(!dyPlaced){
+        const c = dyCandidates[0];
+        await positionLabel(dyLabel, clamp(baseX + 3*off*sx, pad+6, w-pad-6), clamp(midY + 4, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
+        dyBB = dyLabel._rect.getBBox();
+      }
+      // leader for Δy
+      dyLabel._leader.setAttribute('x1', baseX);
+      dyLabel._leader.setAttribute('y1', (PY+QY)/2);
+      dyLabel._leader.setAttribute('x2', dyLabel._text.getAttribute('x'));
+      dyLabel._leader.setAttribute('y2', dyLabel._text.getAttribute('y'));
+
+      // slope badge
+      container.querySelector('.slope-val').textContent = toFrac(dy,dx).text;
+
+      // MathJax (optional)
+      if(window.MathJax && MathJax.typesetPromise){ MathJax.typesetPromise([container]).catch(()=>{}); }
+    }
+
+    function startDrag(which){ dragging = which; document.documentElement.classList.add('slope-dragging'); }
+    function endDrag(){ dragging = null; document.documentElement.classList.remove('slope-dragging'); }
+
+    function pointerHandler(evt){
+      if(!dragging) return;
+      const pt = svg.createSVGPoint();
+      pt.x = evt.clientX; pt.y = evt.clientY;
+      const ctm = svg.getScreenCTM().inverse();
+      const sp = pt.matrixTransform(ctm);
+      let x = invX(sp.x), y = invY(sp.y);
+      x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
+
+      const s = (fineMode ? step/2 : step);
+      x = Math.round(x/s)*s; y = Math.round(y/s)*s;
+
+      if(Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
+      if(Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
+
+      if(dragging==='P'){ P.x = x; P.y = y; }
+      else { Q.x = x; Q.y = y; }
+      updateUI();
+    }
+
+    function attachDrag(group, which){
+      group.addEventListener('pointerdown', e=>{
+        e.preventDefault();
+        group.setPointerCapture(e.pointerId);
+        startDrag(which);
+      });
+      group.addEventListener('pointerup', e=>{
+        e.preventDefault();
+        group.releasePointerCapture(e.pointerId);
+        endDrag();
+      });
+      group.addEventListener('pointercancel', ()=> endDrag());
+      group.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
+    }
+    attachDrag(pG,'P');
+    attachDrag(qG,'Q');
+
+    window.addEventListener('keydown', e=>{ if(e.key==='Shift') fineMode=true; });
+    window.addEventListener('keyup',   e=>{ if(e.key==='Shift') fineMode=false; });
+
+    updateUI();
+  }
+
+  // INIT
+  document.querySelectorAll('.slope-widget').forEach(createWidget);
+})();
+</script>
 <hr>
-<p><strong>Example:</strong></p>
-<p>Plot the points <span class="math inline">\((4, 2), (-6, 4), (-4, -8)\)</span> and <span class="math inline">\((8, -4)\)</span>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/FourPoints.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-<hr>
-<div class="you-try-m" title="Match the points to their labels.">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/MatchLabels.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1. <span class="math inline">\((-4, 0)\)</span></td>
-<td style="text-align: center;">2. <span class="math inline">\((-8, 8)\)</span></td>
-<td style="text-align: center;">3. <span class="math inline">\((-2, -8)\)</span></td>
-<td style="text-align: center;">4. <span class="math inline">\((0, 0)\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">5. <span class="math inline">\((0, 4)\)</span></td>
-<td style="text-align: center;">6. <span class="math inline">\((6, 2)\)</span></td>
-<td style="text-align: center;">7. <span class="math inline">\((7, -3)\)</span></td>
-<td style="text-align: center;">8. <span class="math inline">\((4, 7)\)</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="answer" title="Answer">
-<p>1 : “G”, 2 : “B”, 3 : “C”, 4 : “E”, 5 : “H”, 6 : “A”, 7 : “D”, 8 : “F”</p>
-</div>
-<p>Now that we know how to plot points, let’s see how a rule — like an equation — can generate points that form a picture.</p>
-<hr>
-</section>
-<section id="function-rules-and-tables-of-values" class="level3">
-<h3 class="anchored">4.1.2 – Function Rules and Tables of Values</h3>
-<p>In Unit 2, we learned how to find the <strong>output</strong> of a function for a given <strong>input</strong>.<br>
-Each input/output pair forms a point we can plot.<br>
-By connecting those points, we can see what the function looks like.</p>
-<p><strong>Example 1</strong></p>
-<p>Let <span class="math inline">\(f(x) = 2x + 1\)</span>.</p>
-<p>To graph <span class="math inline">\(f(x)\)</span>, we first make a table of values for several <span class="math inline">\(x\)</span> inputs.<br>
-Let’s use <span class="math inline">\(x = 1, 2, 3,\)</span> and <span class="math inline">\(4\)</span>.</p>
-<p><span class="math display">\[
-\begin{align*}
-f(\textcolor{red}{1}) &amp;= 2(\textcolor{red}{1}) + 1 = 3 \\
-f(\textcolor{red}{2}) &amp;= 2(\textcolor{red}{2}) + 1 = 5 \\
-f(\textcolor{red}{3}) &amp;= 2(\textcolor{red}{3}) + 1 = 7 \\
-f(\textcolor{red}{4}) &amp;= 2(\textcolor{red}{4}) + 1 = 9
-\end{align*}
-\]</span></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(f(x)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">9</td>
-</tr>
-</tbody>
-</table>
-<p>Now plot each pair <span class="math inline">\((x, f(x))\)</span> on a coordinate plane.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Example1A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-<p>When we connect the points, they form a <strong>straight line</strong> — showing that <span class="math inline">\(f(x) = 2x + 1\)</span> is a <strong>linear function</strong>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Example1B.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-<div class="remember">
-<p><span class="math inline">\(f(x)\)</span> means the same thing as <span class="math inline">\(y\)</span>.<br>
-It’s just a different way to name the output of a function.<br>
-So the equation <span class="math inline">\(f(x) = 2x + 1\)</span> could also be written as <span class="math inline">\(y = 2x + 1\)</span>.</p>
-</div>
-<p>Let’s look at another function that behaves a little differently.</p>
-<p><strong>Example 2:</strong></p>
-<p>Let <span class="math inline">\(h(x) = -\frac{2}{3}x - 3\)</span>.</p>
-<p>Evaluate <span class="math inline">\(h(x)\)</span> for <span class="math inline">\(x = -3, 0,\)</span> and <span class="math inline">\(9\)</span> and graph the result.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(h(x)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-3</td>
-<td style="text-align: center;">-5</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">-3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">3</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Example2A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-<div class="think" title="Can you tell if $h(x)$ is a function just by looking at the graph?">
-<p>Yes! Each <span class="math inline">\(x\)</span> value gives only one <span class="math inline">\(y\)</span> value.<br>
-That’s what makes it a function — every input leads to exactly one output.</p>
-</div>
-<div class="you-try" title="Using $x = -1, 1,$ and $3$, graph $g(x) = 3x - 2$.">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(g(x)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-1</td>
-<td style="text-align: center;"><span class="math inline">\(-5\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;"><span class="math inline">\(7\)</span></td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/YouTry_4_1_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
-</figure>
-</div>
-</div>
-<p>Not every function will make a straight line, but when it does, we can describe it with a rule like <span class="math inline">\(f(x) = mx + b\)</span> (or <span class="math inline">\(y = mx + b\)</span>).</p>
-<p>For now, just notice that these kinds of rules always make points that line up perfectly.</p>
-<h2 class="unnumbered anchored" data-anchor-id="function-rules-and-tables-of-values">✍️ Practice On Your Own</h2>
-<p><strong>Practice: Graphing Functions on the Coordinate Plane</strong></p>
-<p><strong>1.</strong> Plot these points on a coordinate plane: <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((2, 4)\)</span>, <span class="math inline">\((3, 6)\)</span>. What do you notice about the pattern?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>2.</strong> Add one more point that continues the same pattern. Write its coordinates.</p>
-<p><strong>3.</strong> Each point from Question 1 fits a rule. Find a simple equation that could describe it using <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span>.</p>
-<hr>
-<p><strong>4.</strong> Complete the table and graph the points.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(y = x + 2\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-2</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>5.</strong> Graph the function <span class="math inline">\(f(x) = x - 4\)</span> for <span class="math inline">\(x = 0, 2, 4, 6\)</span>. Where does it cross the y-axis?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>6.</strong> For <span class="math inline">\(y = 2x\)</span>, make a table using <span class="math inline">\(x = -2, -1, 0, 1, 2\)</span>.</p>
-<p>What happens to the outputs as <span class="math inline">\(x\)</span> increases?</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(y = 2x\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-2</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">-1</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>7.</strong> Graph <span class="math inline">\(g(x) = 3x\)</span> for <span class="math inline">\(x = 0, 1, 2, 3\)</span>. What do you notice about the spacing between the points?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<hr>
-<p><strong>8.</strong> Evaluate and graph <span class="math inline">\(f(x) = -2x\)</span> for <span class="math inline">\(x = -3, -2, -1, 0, 1, 2\)</span>. How does the line compare to <span class="math inline">\(y = 2x\)</span>?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>9.</strong> Graph <span class="math inline">\(y = x - 3\)</span> for <span class="math inline">\(x = 0, 1, 2, 3, 4\)</span>. Which point lies on the y-axis?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>10.</strong> For <span class="math inline">\(h(x) = \frac{1}{2}x + 1\)</span>, make a table for <span class="math inline">\(x = 0, 2, 4, 6\)</span>. Plot and connect the points.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(y = \frac{1}{2}x + 1\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>11.</strong> Graph <span class="math inline">\(y = -x + 2\)</span> for <span class="math inline">\(x = -2, 0, 2\)</span>. What happens to the y-values as <span class="math inline">\(x\)</span> increases?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<hr>
-<p><strong>12.</strong> The functions <span class="math inline">\(f(x) = 2x + 4\)</span> and <span class="math inline">\(g(x) = 2x - 2\)</span> are both graphed on the same coordinate plane. How are their lines alike, and how are they different?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Problem12.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>13.</strong> Graph <span class="math inline">\(y = 3\)</span> and <span class="math inline">\(y = -2\)</span> on the same grid. What kind of lines do they make?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<hr>
-<p><strong>Challenge Problems</strong></p>
-<p><strong>14.</strong> Without graphing, explain how you could tell whether <span class="math inline">\(y = 4x + 2\)</span> and <span class="math inline">\(y = 4x - 5\)</span> would ever cross on the coordinate plane. Then check your prediction by graphing.</p>
-<p><strong>15.</strong> A mystery function passes through the points <span class="math inline">\((0, 2)\)</span> and <span class="math inline">\((2, 6)\)</span>. Write a possible rule for the function and plot one more point that fits your rule.</p>
-<div class="answers">
-<p><strong>1.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>2.</strong> varies</p>
-<p><strong>3.</strong> <span class="math inline">\(y = 2x\)</span></p>
-<p><strong>4.</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(y = x + 2\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-2</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">4</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>5.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>6.</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(y = 2x\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">-2</td>
-<td style="text-align: center;">-4</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">-1</td>
-<td style="text-align: center;">-2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">4</td>
-</tr>
-</tbody>
-</table>
-<p>As <span class="math inline">\(x\)</span> increases by one, <span class="math inline">\(y\)</span> increases by 2.</p>
-<p><strong>7.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p>Every time x increases by one, y increases by 3.</p>
-<p><strong>8.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>9.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p>The point (0, -3) lies on the y-axis.</p>
-<p><strong>10.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p><strong>11.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer11.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p>The y-values get smaller as x gets larger.</p>
-<p><strong>12.</strong></p>
-<p>Both go up 2 for every 1 to the right.</p>
-<p><span class="math inline">\(f(x)\)</span> crosses the y-axes at 4 and the x-axis at -2, but <span class="math inline">\(g(x)\)</span> crosses at -2 and 1.</p>
-<p><strong>13.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_4/Lesson_1/Answer13.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
-</figure>
-</div>
-<p>They are horizontal lines.</p>
-</div>
+<p>To learn more about slope, take a look at <a href="../../chapters/Unit_4/4.2_Understanding_Slope.html">4.2 - Understanding Slope</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
@@ -1463,13 +1311,13 @@ That’s what makes it a function — every input leads to exactly one output.</
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_4/index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../../chapters/Interactive/index.html" class="pagination-link" aria-label="Index">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Index</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_4/4.2_Understanding_Slope.html" class="pagination-link" aria-label="4.2 – Understanding Slope">
-        <span class="nav-page-text">4.2 – Understanding Slope</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Interactive/exploring_slope_intercept_form.html" class="pagination-link" aria-label="Slope-Intercept Form Investigation">
+        <span class="nav-page-text">Slope-Intercept Form Investigation</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
