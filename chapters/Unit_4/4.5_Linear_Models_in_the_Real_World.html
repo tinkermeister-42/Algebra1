@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -497,10 +526,13 @@ window.MathJax = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#turning-situations-into-equations" id="toc-turning-situations-into-equations" class="nav-link active" data-scroll-target="#turning-situations-into-equations">4.5.1 – Turning Situations Into Equations</a></li>
-  <li><a href="#negative-slopes-decreasing-situations" id="toc-negative-slopes-decreasing-situations" class="nav-link" data-scroll-target="#negative-slopes-decreasing-situations">4.5.2 – Negative Slopes: Decreasing Situations</a></li>
-  <li><a href="#interpreting-slope-and-intercept" id="toc-interpreting-slope-and-intercept" class="nav-link" data-scroll-target="#interpreting-slope-and-intercept">4.5.3 – Interpreting Slope and Intercept</a></li>
-  <li><a href="#estimating-best-fit-lines" id="toc-estimating-best-fit-lines" class="nav-link" data-scroll-target="#estimating-best-fit-lines">4.5.4 – Estimating Best-Fit Lines</a></li>
+  <li><a href="#what-the-parts-of-a-linear-model-tell-us" id="toc-what-the-parts-of-a-linear-model-tell-us" class="nav-link active" data-scroll-target="#what-the-parts-of-a-linear-model-tell-us">4.5.1 – What the Parts of a Linear Model Tell Us</a></li>
+  <li><a href="#how-to-create-a-linear-model" id="toc-how-to-create-a-linear-model" class="nav-link" data-scroll-target="#how-to-create-a-linear-model">4.5.2 – How to Create a Linear Model</a></li>
+  <li><a href="#seeing-patterns-in-data" id="toc-seeing-patterns-in-data" class="nav-link" data-scroll-target="#seeing-patterns-in-data">4.5.3 – Seeing Patterns in Data</a></li>
+  <li><a href="#part-a-interpret-models" id="toc-part-a-interpret-models" class="nav-link" data-scroll-target="#part-a-interpret-models">🔹 Part A – Interpret Models</a></li>
+  <li><a href="#part-b-write-your-own-models" id="toc-part-b-write-your-own-models" class="nav-link" data-scroll-target="#part-b-write-your-own-models">🔹 Part B – Write Your Own Models</a></li>
+  <li><a href="#part-c-compare-and-predict" id="toc-part-c-compare-and-predict" class="nav-link" data-scroll-target="#part-c-compare-and-predict">🔹 Part C – Compare and Predict</a></li>
+  <li><a href="#part-d-interpret-graphs" id="toc-part-d-interpret-graphs" class="nav-link" data-scroll-target="#part-d-interpret-graphs">🔹 Part D – Interpret Graphs</a></li>
   </ul>
 </nav>
     </div>
@@ -526,105 +558,266 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more. Whenever one quantity changes at a steady rate, we can model it with a <strong>linear function</strong>.</p>
+<p>A linear model has the same structure as <span class="math display">\[y = mx + b,\]</span> but we rename <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> to match the situation — like <span class="math inline">\(P(e)\)</span> for price or <span class="math inline">\(T(t)\)</span> for temperature.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can represent real-world situations using linear equations or functions.</label></li>
 <li><label><input type="checkbox">I can identify and interpret the slope and intercept in context.</label></li>
-<li><label><input type="checkbox">I can sketch or estimate a best-fit line from data.</label></li>
-<li><label><input type="checkbox">I can use function notation to describe a model, such as (f(x) = 0.5x + 10).</label></li>
+<li><label><input type="checkbox">I can describe what a best-fit line shows about a data trend.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="#glossary-linear" class="glossary-link" data-term="linear" data-slug="linear" data-original-href="#glossary-linear">linear</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-slug="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a>, <a href="../../glossary.html#glossary-rate" class="glossary-link" data-term="rate" data-slug="rate" data-original-href="#glossary-rate">rate</a>, <a href="#glossary-best-fit" class="glossary-link" data-term="best-fit" data-slug="best-fit" data-original-href="#glossary-best-fit">best-fit</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-term="function" data-slug="function" data-original-href="#glossary-function">function</a></p>
+<p><a href="#glossary-linear-model" class="glossary-link" data-slug="linear-model" data-original-href="#glossary-linear-model" data-term="linear model">linear model</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-slug="y-intercept" data-original-href="#glossary-y-intercept" data-term="y-intercept">y-intercept</a>, <a href="#glossary-rate-of-change" class="glossary-link" data-slug="rate-of-change" data-original-href="#glossary-rate-of-change" data-term="rate of change">rate of change</a>, <a href="#glossary-best-fit-line" class="glossary-link" data-slug="best-fit-line" data-original-href="#glossary-best-fit-line" data-term="best-fit line">best-fit line</a>, <a href="../../glossary.html#glossary-function-notation" class="glossary-link" data-slug="function-notation" data-original-href="#glossary-function-notation" data-term="function notation">function notation</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <p>Coming Soon</p>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="turning-situations-into-equations" class="level3">
-<h3 class="anchored" data-anchor-id="turning-situations-into-equations">4.5.1 – Turning Situations Into Equations</h3>
-<p>Linear models describe real situations where one quantity changes at a constant rate. The slope is the <strong>rate</strong>, and the intercept is the <strong>starting value</strong>.</p>
-<div class="example" title="Example – Babysitting Pay">
-<p>A babysitter earns $12 per hour plus $10 for transportation. [ f(x) = 12x + 10]</p>
+<section id="what-the-parts-of-a-linear-model-tell-us" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-parts-of-a-linear-model-tell-us">4.5.1 – What the Parts of a Linear Model Tell Us</h3>
+<p>Linear models always have two key pieces:</p>
 <ul>
-<li>(m = 12): pay rate per hour</li>
-<li>(b = 10): base fee</li>
+<li>The <strong>slope (<span class="math inline">\(m\)</span>)</strong> shows how fast something changes.</li>
+<li>The <strong>intercept (<span class="math inline">\(b\)</span>)</strong> shows where it starts.</li>
 </ul>
+<p>Let’s look at how these appear in real situations.</p>
+<hr>
+<p><strong>Example 1:</strong> Streaming Service (Positive Slope)</p>
+<p>A streaming service charges $2 for every episode you rent, plus a monthly fee of $7.99. Write a linear function that models the total price.</p>
+<p>Let <span class="math inline">\(e\)</span> = episodes and <span class="math inline">\(P(e)\)</span> = total price (dollars).</p>
+<p>The slope is <strong>2 per episode</strong>, and the intercept is <strong>7.99 dollars</strong>.</p>
+<p><span class="math display">\[
+P(e) = 2e + 7.99
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
 </div>
-<div class="you-try" title="Write a Rule">
-<p>You earn $8 per hour mowing lawns and start with $20 already saved. Write an equation for your total savings after x hours.</p>
+<div class="think" title="How much would it cost to rent 10 episodes?">
+<p><span class="math display">\[
+\begin{align*}
+P(10) &amp;= 2(10) + 7.99 \\
+&amp;= 27.99
+\end{align*}
+\]</span></p>
+<p>It would cost <strong>$27.99</strong> to rent 10 episodes.</p>
+</div>
+<hr>
+<p><strong>Example 2:</strong> Cooling Soup (Negative Slope)</p>
+<p>A cup of soup cools from 90 °C to 60 °C over 10 minutes. Assuming a steady rate of cooling:</p>
+<p><span class="math display">\[
+T(t) = -3t + 90
+\]</span></p>
+<p>Let <span class="math inline">\(t\)</span> = time (min), and <span class="math inline">\(T(t)\)</span> = temperature (°C).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<p>The slope –3 means the soup’s temperature <strong>drops 3 °C each minute</strong>. The intercept 90 °C shows the <strong>starting temperature</strong> right after pouring.</p>
+<div class="think" title="What will the temperature be after 15 minutes?">
+<p><span class="math display">\[
+T(15) = -3(15) + 90 = 45
+\]</span></p>
+<p>After 15 minutes, the soup will be <strong>45 °C</strong>.</p>
+</div>
+<hr>
+<p><strong>Example 3:</strong> Taxi Ride (Intercept Focus)</p>
+<p>A taxi charges $3 to start the ride and $2.25 per mile.</p>
+<p><span class="math display">\[
+C(d) = 2.25d + 3
+\]</span></p>
+<p>Let <span class="math inline">\(d\)</span> = miles, and <span class="math inline">\(C(d)\)</span> = total cost (dollars).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<p>The intercept 3 means you pay <strong>$3 before moving</strong> — the base fare. The slope 2.25 shows the <strong>cost per mile</strong> once the ride begins.</p>
+<hr>
+<p><strong>Example 4:</strong> Babysitting Job (Putting It Together)</p>
+<p>A babysitter earns $12 per hour plus a $10 transportation fee.</p>
+<p>Let <span class="math inline">\(h\)</span> = hours, and <span class="math inline">\(P(h)\)</span> = total pay (dollars).</p>
+<p><span class="math display">\[
+P(h) = 12h + 10
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<p>The slope 12 means pay increases <strong>$12 per hour worked</strong>. The intercept 10 is the <strong>starting amount</strong> earned before any hours.</p>
+<div class="think" title="How much will the babysitter earn for 5 hours of work?">
+<p><span class="math display">\[
+P(5) = 12(5) + 10 = 70
+\]</span></p>
+<p>The babysitter earns <strong>$70 total</strong>.</p>
 </div>
 <hr>
 </section>
-<section id="negative-slopes-decreasing-situations" class="level3">
-<h3 class="anchored" data-anchor-id="negative-slopes-decreasing-situations">4.5.2 – Negative Slopes: Decreasing Situations</h3>
-<p>Not all relationships increase. Some, like cooling or spending, have <strong>negative slopes</strong>.</p>
-<div class="real-world" title="Example – Cooling Water">
-<p>A cup of coffee cools from 90°C to 60°C over 10 minutes. [ f(x) = -3x + 90]</p>
-<ul>
-<li>(m = -3): the coffee cools 3°C per minute</li>
-<li>(b = 90): starting temperature</li>
-</ul>
-</div>
-<div class="you-try" title="Describe the Meaning">
-<p>In (f(x) = -5x + 100), what does the slope tell us? What does the intercept mean?</p>
-</div>
+<section id="how-to-create-a-linear-model" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-create-a-linear-model">4.5.2 – How to Create a Linear Model</h3>
+<p>So far, you’ve interpreted models. Now let’s learn how to <strong>make your own</strong> from words or data.</p>
+<p>A linear model always follows the pattern <span class="math display">\[
+\text{output} = (\text{rate of change})(\text{input}) + (\text{starting value})
+\]</span></p>
 <hr>
-</section>
-<section id="interpreting-slope-and-intercept" class="level3">
-<h3 class="anchored" data-anchor-id="interpreting-slope-and-intercept">4.5.3 – Interpreting Slope and Intercept</h3>
-<div class="real-world" title="Example – Cell Phone Bill">
-<p>A phone plan costs $50 per month plus $0.10 per text. [ f(x) = 0.10x + 50]</p>
+<p><strong>Step 1:</strong> Find What’s Changing</p>
+<p>Look for words that describe a <em>steady increase or decrease.</em> That number is your <strong>slope</strong> (<span class="math inline">\(m\)</span>).</p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>(m = 0.10): cost per text</li>
-<li>(b = 50): base monthly charge</li>
+<li>“$15 per hour” → <span class="math inline">\(m = 15\)</span></li>
+<li>“drops 3 degrees each minute” → <span class="math inline">\(m = -3\)</span></li>
+<li>“gains 5 points per week” → <span class="math inline">\(m = 5\)</span></li>
 </ul>
-</div>
-<div class="think" title="Why Units Matter">
-<p>Slope and intercept should always have <strong>units</strong> — they tell what’s changing and what’s fixed.</p>
-</div>
-<div class="you-try" title="Explain the Meaning">
-<p>The equation (f(x) = 4x + 15) models parking costs, where x is hours. What do 4 and 15 represent?</p>
-</div>
 <hr>
-</section>
-<section id="estimating-best-fit-lines" class="level3">
-<h3 class="anchored">4.5.4 – Estimating Best-Fit Lines</h3>
-<p>Sometimes real data isn’t perfectly linear — but we can find a <strong>line that fits “about right.”</strong></p>
+<p><strong>Step 2:</strong> Find Where It Starts</p>
+<p>What’s true when your input is 0? That number is the <strong>intercept</strong> (<span class="math inline">\(b\)</span>).</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>“base fee of $20” → <span class="math inline">\(b = 20\)</span></li>
+<li>“starts at 100 points” → <span class="math inline">\(b = 100\)</span></li>
+<li>“initial temperature 90 °C” → <span class="math inline">\(b = 90\)</span></li>
+</ul>
+<hr>
+<p><strong>Step 3:</strong> Write the Equation</p>
+<p>Put both pieces together and use variables that make sense.</p>
+<p><strong>Example:</strong></p>
+<p>A car rental costs $50 per day plus $30 in fees. Let <span class="math inline">\(d\)</span> = days rented, <span class="math inline">\(C(d)\)</span> = total cost. <span class="math display">\[C(d) = 50d + 30\]</span></p>
+<hr>
+<p><strong>Example:</strong> Gym Membership</p>
+<p>A gym charges a one-time $30 fee plus $25 per month.</p>
+<p>Let <span class="math inline">\(m\)</span> = months, and <span class="math inline">\(C(m)\)</span> = total cost.</p>
 <ol type="1">
-<li>Plot data points on a scatter plot.</li>
-<li>Sketch a line that seems to match the trend.</li>
-<li>Write a rule that fits the pattern roughly.</li>
+<li>Slope =&nbsp;25 (per month)</li>
+<li>Intercept =&nbsp;30 (one-time fee)</li>
+<li>Model: <span class="math display">\[C(m) = 25m + 30\]</span></li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<div class="think" title="How much will 6 months cost?">
+<p><span class="math display">\[
+C(6) = 25(6) + 30 = 180
+\]</span></p>
+<p>After 6 months, the total cost is <strong>$180</strong>.</p>
+</div>
+<hr>
+<div class="note" title="Tips for Writing Your Own Models">
+<ul>
+<li>Include <strong>units</strong> in your reasoning.</li>
+<li>Watch for <strong>negative slopes</strong> — they show decreases.</li>
+<li>The <strong>starting value</strong> might not come first in the sentence.</li>
+<li>Choose variable names that fit the situation.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="seeing-patterns-in-data" class="level3">
+<h3 class="anchored">4.5.3 – Seeing Patterns in Data</h3>
+<p>In real life, data points don’t line up perfectly, but they often follow a <strong>trend</strong>. A <strong>best-fit line</strong> shows that overall direction.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_5/scatter_best_fit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
 </figure>
 </div>
-<div class="real-world" title="Example – Height vs. Age">
-<p>Students measure their height each year. The points don’t make a perfect line, but a line through the middle of the points shows the average growth rate.</p>
-</div>
-<div class="you-try-m" title="Draw a Best-Fit Line">
-<p>Your teacher will provide data for shoe size vs.&nbsp;age. Plot the points and sketch a best-fit line. Estimate the slope and intercept and write an equation.</p>
-</div>
-<div class="think" title="When Two Models Cross">
-<p>Sometimes two linear trends meet — for example, when expenses catch up to income,<br>
-or when two cars traveling at different speeds reach the same distance.<br>
-That crossover point means the two equations give the same output.</p>
+<p><strong>Example – Height vs.&nbsp;Age</strong></p>
+<p>Each dot shows one student’s age and height. The line through the middle shows the <em>average growth pattern.</em></p>
+<p>The <strong>positive slope</strong> means height generally increases with age. The <strong>intercept</strong> estimates the height at age 0 — the starting point at birth.</p>
+<div class="think" title="What would a negative slope mean in a trend like this?">
+<p>It would mean that as one variable increases, the other <strong>decreases</strong> — for example, temperature falling as time passes.</p>
 </div>
 <hr>
-<div class="remember" title="Key Idea">
-<p>Linear models show <strong>constant rates of change</strong> in real situations.</p>
+<div class="remember" title="Key Ideas">
 <ul>
-<li>The <strong>slope</strong> represents the rate.</li>
-<li>The <strong>intercept</strong> represents the starting value.</li>
-<li>Using (f(x)) reminds us that outputs depend on inputs.</li>
+<li>The <strong>slope</strong> tells how fast something changes.</li>
+<li>The <strong>intercept</strong> tells where it starts.</li>
+<li>Together they describe how one value depends on another.</li>
+<li>A <strong>best-fit line</strong> shows that relationship when data aren’t exact.</li>
 </ul>
 </div>
-<h2 class="unnumbered anchored" data-anchor-id="estimating-best-fit-lines">✍️ Practice On Your Own</h2>
-<p>Coming Soon</p>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="seeing-patterns-in-data">✍️ Practice On Your Own</h2>
+</section>
+<section id="part-a-interpret-models" class="level3">
+<h3 class="anchored" data-anchor-id="part-a-interpret-models">🔹 Part A – Interpret Models</h3>
+<ol type="1">
+<li><p>The equation <span class="math inline">\(T(h) = -2h + 70\)</span> shows the temperature <span class="math inline">\(T\)</span> after <span class="math inline">\(h\)</span> hours.</p>
+<ul>
+<li>What does the slope mean?</li>
+<li>What does the intercept mean?</li>
+</ul></li>
+<li><p><span class="math inline">\(P(n) = 5n + 20\)</span> models parking costs.</p>
+<ul>
+<li>How much does it cost to park for 3 hours?</li>
+<li>What do the 5 and 20 represent?</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="part-b-write-your-own-models" class="level3">
+<h3 class="anchored" data-anchor-id="part-b-write-your-own-models">🔹 Part B – Write Your Own Models</h3>
+<ol start="3" type="1">
+<li><p>A movie theater charges $10 per ticket plus a $3 service fee.</p>
+<ul>
+<li>Write a model for total cost <span class="math inline">\(C(t)\)</span>, where <span class="math inline">\(t\)</span> is tickets bought.</li>
+</ul></li>
+<li><p>A phone loses 8 % battery every hour starting at 100 %.</p>
+<ul>
+<li>Write and interpret a model for remaining charge <span class="math inline">\(B(h)\)</span>.</li>
+</ul></li>
+<li><p>You start with $50 and save $12 per week.</p>
+<ul>
+<li>Write a model and use it to find your total after 8 weeks.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="part-c-compare-and-predict" class="level3">
+<h3 class="anchored" data-anchor-id="part-c-compare-and-predict">🔹 Part C – Compare and Predict</h3>
+<ol start="6" type="1">
+<li><p>Two gyms have different pricing plans:</p>
+<ul>
+<li><strong>Plan A:</strong> <span class="math inline">\(C_1(m)=25m+30\)</span></li>
+<li><strong>Plan B:</strong> <span class="math inline">\(C_2(m)=20m+60\)</span></li>
+<li>Which plan costs less at first? Which is cheaper after 10 months?</li>
+</ul></li>
+<li><p>A taxi charges $2.50 per mile plus $3 start fee. Another charges $3 per mile but no start fee.</p>
+<ul>
+<li>Write both equations.</li>
+<li>When do they cost the same?</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="part-d-interpret-graphs" class="level3">
+<h3 class="anchored" data-anchor-id="part-d-interpret-graphs">🔹 Part D – Interpret Graphs</h3>
+<ol start="8" type="1">
+<li><p>A scatter plot shows weekly hours of study vs.&nbsp;test scores. The best-fit line rises from left to right.</p>
+<ul>
+<li>What does the slope tell you?</li>
+<li>What would a flat line mean?</li>
+</ul></li>
+<li><p>The line <span class="math inline">\(D(t)\)</span> in the graph slopes downward.</p>
+<ul>
+<li>What kind of relationship does that show between <span class="math inline">\(D\)</span> and <span class="math inline">\(t\)</span>?</li>
+</ul></li>
+</ol>
+<hr>
 <div class="answers">
-<p>Coming Soon</p>
+<p><strong>Sample answers (not shown to students):</strong></p>
+<ol type="1">
+<li>Slope = –2 °C/hour → cooling rate; intercept = 70 °C start.</li>
+<li><span class="math inline">\(P(3)=35\)</span>; slope = cost per hour; intercept = base fee.</li>
+<li><span class="math inline">\(C(t)=10t+3\)</span>.</li>
+<li><span class="math inline">\(B(h)=100-8h\)</span> (if linear).</li>
+<li><span class="math inline">\(S(w)=12w+50\)</span>, so <span class="math inline">\(S(8)=146\)</span>.</li>
+<li>Plan A starts cheaper, Plan B cheaper after 6 months.</li>
+<li><span class="math inline">\(C_1=2.5x+3\)</span>, <span class="math inline">\(C_2=3x\)</span> → same at <span class="math inline">\(x=6\)</span>.</li>
+</ol>
 </div>
 
 
