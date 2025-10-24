@@ -3,3 +3,7 @@
 - Consider breaking 1.3 into two separate lessons (or shorten)
 
 - Need to incorporate solving proportions somewhere
+
+- Go back over 4.2. It is missing a lot of transitions
+
+- Fix challenge solutions for 3.5
