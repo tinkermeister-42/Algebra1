@@ -284,10 +284,10 @@ For each equation, decide whether it has **one solution**, **no solution**, or *
 24. For what value(s) of $k$ does the equation
 
     $$
-    (2k)x + 5 = k(2x + 3)
+    (k−2)x=6−2k
     $$
 
-    have (a) one solution, (b) no solution, and (c) infinitely many solutions?
+    have (a) one solution, (b) no solution?
 
 
 25. Solve for $x$ in terms of $y$:

@@ -257,15 +257,9 @@ No Challenge Questions
 
 :::{.answers}
 
-24. Expand RHS: $2kx + 5 = 2kx + 3k$. Subtract $2kx$: $5 = 3k$.
+1.  If $x = 2$ there will be no solution. For all other values, there will be one solution.
 
-    * If $k = \tfrac{5}{3}$ → one solution.
-    * If no $k$? Actually, wait — check carefully: if $k = 0$, LHS = 5, RHS = 0, so **no solution**.
-    * For any other $k$, equation reduces to $5 = 3k$. That’s only true when $k = \tfrac{5}{3}$.
-      So: one solution if $k = \tfrac{5}{3}$, no solution if $k=0$, otherwise **no solution** as well (gifted students can refine the logic).
-
-25. $3x + 6 + 4y = 2x - 2y + 10$. Simplify: $x + 6y - 4 = 0$.
-    So $x = -6y + 4$. One solution in terms of $y$.
+2.   $x = -6y + 4$. One solution in terms of $y$.
 
 :::
 
