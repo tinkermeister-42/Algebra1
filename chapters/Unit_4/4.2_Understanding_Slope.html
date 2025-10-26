@@ -457,14 +457,26 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/understanding_slope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Interactive/Unit_4/understanding_slope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slope Explorer</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slope-Intercept Form Investigation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to Correlation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/Unit_4/slope_intercept_form_game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slope-Intercept-Form Matching Game</span></a>
   </div>
 </li>
       </ul>
@@ -564,7 +576,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-slug="horizontal" data-original-href="#glossary-horizontal" data-term="horizontal">horizontal</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-slug="vertical" data-original-href="#glossary-vertical" data-term="vertical">vertical</a></p>
+<p><a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-term="horizontal" data-slug="horizontal" data-original-href="#glossary-horizontal">horizontal</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-term="vertical" data-slug="vertical" data-original-href="#glossary-vertical">vertical</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
@@ -580,63 +592,61 @@ window.Quarto = {
 <p><img src="../../images/Unit_4/Lesson_2/stairs_xkcd.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
-<p>Look at the four stairways above. They all go up and down, but not in the same way. Some are steep, some are gentle. Some rise as you move to the right, and others fall.</p>
-<p>Lines on a graph work the same way. The <strong>slope</strong> tells how a line tilts — whether it goes up or down, and how steep it is.</p>
-<p>If you walk along a line from left to right, two things happen: you move <strong>across</strong> the graph (that’s the <em>run</em>) and you move <strong>up or down</strong> (that’s the <em>rise</em>). Slope is how much the <em>rise</em> changes compared to the <em>run</em>.</p>
-<p>Mathematicians use the letter <strong>m</strong> for slope — think of it as the <em>measure</em> of steepness:</p>
+<p>Look at the four stairways above. They all move up or down, but not in the same way. Some are steep, some are gentle. Some rise as you move to the right, and others fall.</p>
+<p>Imagine walking along one of the stairways. Each step moves you <strong>forward</strong> and also <strong>up or down</strong>. How much you go up compared to how much you go forward tells how steep the stairs are.</p>
+<p>That comparison is what mathematicians call <strong>slope</strong>. It measures how something tilts — both its <strong>direction</strong> (up or down) and its <strong>steepness</strong>. We use the letter <strong>m</strong> for slope — think of it as a <em>measure</em> of change:</p>
 <p><span class="math display">\[
 m = \frac{\text{rise}}{\text{run}}
 \]</span></p>
-<p>Instead of the words <em>rise</em> and <em>run</em>, we often use the Greek letter <strong>Δ (delta)</strong>, which means <strong>change</strong>. So:</p>
+<p>Instead of the words <em>rise</em> and <em>run</em>, we often describe slope using the Greek letter <strong>Δ (delta)</strong>, which means <strong>change</strong>:</p>
 <ul>
-<li><strong>Δy</strong> means “change in <span class="math inline">\(y\)</span>” — how much the <span class="math inline">\(y\)</span>-values go up or down.</li>
-<li><strong>Δx</strong> means “change in <span class="math inline">\(x\)</span>” — how much the <span class="math inline">\(x\)</span>-values move left or right.</li>
+<li><strong>Δy</strong> means “change in <span class="math inline">\(y\)</span>” — how much the height changes.</li>
+<li><strong>Δx</strong> means “change in <span class="math inline">\(x\)</span>” — how much we move forward.</li>
 </ul>
-<p>That means the slope formula can also be written as:</p>
+<p>So the slope formula can also be written as:</p>
 <p><span class="math display">\[
 m = \frac{\Delta y}{\Delta x}
 \]</span></p>
-<p>A <strong>positive</strong> slope means the line rises as you move right. A <strong>negative</strong> slope means it falls. A <strong>larger</strong> slope means it’s steeper.</p>
-<p>As you can see, each stair pattern has a different tilt — just like lines on a graph.</p>
-<p>You’ve seen how slope describes direction and steepness. In the <strong>interactive section</strong>, you can explore how changing the <em>rise</em> or <em>run</em> affects the line’s tilt. For now, let’s see how to measure slope directly from a graph.</p>
-<div class="think" title="What do you notice about how the rise compares to the run in each panel?">
+<p>This tells us how much <span class="math inline">\(y\)</span> changes for each change in <span class="math inline">\(x\)</span>. If <span class="math inline">\(y\)</span> increases as <span class="math inline">\(x\)</span> increases, the slope is <strong>positive</strong> — the line (or stairs) goes up as you move right. If <span class="math inline">\(y\)</span> decreases as <span class="math inline">\(x\)</span> increases, the slope is <strong>negative</strong> — it goes down instead. And if <span class="math inline">\(y\)</span> changes more sharply, the slope has a <strong>larger</strong> value — it’s steeper.</p>
+<p>Each stairway above has a different amount of up-and-over change — a different slope. In the next section, we’ll place these same stairways on a coordinate grid so we can measure those changes exactly.</p>
+<div class="think" title="What do you notice about how the change in y compares to the change in x in each panel?">
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Panel</th>
 <th style="text-align: center;">Direction</th>
-<th style="text-align: center;">Rise Compared to Run</th>
+<th style="text-align: center;">Change in y Compared to Change in x</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">A</td>
 <td style="text-align: center;">Up (positive)</td>
-<td style="text-align: center;">About <span class="math inline">\(\tfrac{2}{3}\)</span> as fast</td>
+<td style="text-align: center;">Slower than <span class="math inline">\(x\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">B</td>
 <td style="text-align: center;">Down (negative)</td>
-<td style="text-align: center;">About the same</td>
+<td style="text-align: center;">About the same as <span class="math inline">\(x\)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">C</td>
 <td style="text-align: center;">Up (positive)</td>
-<td style="text-align: center;">About the same</td>
+<td style="text-align: center;">About the same as <span class="math inline">\(x\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">D</td>
 <td style="text-align: center;">Down (negative)</td>
-<td style="text-align: center;">About <span class="math inline">\(\tfrac{2}{3}\)</span> as fast</td>
+<td style="text-align: center;">Slower than <span class="math inline">\(x\)</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="finding-slope-from-a-graph" class="level3">
 <h3 class="anchored" data-anchor-id="finding-slope-from-a-graph">4.2.2 – Finding Slope from a Graph</h3>
-<p>Now let’s connect those stair patterns to a coordinate plane and measure slope precisely. Each stairway is shown on a grid so you can see the <em>exact</em> vertical and horizontal changes — the rise and the run.</p>
+<p>Now that you’ve seen slope as the amount of change in <span class="math inline">\(y\)</span> compared to change in <span class="math inline">\(x\)</span>, let’s put numbers to that idea.</p>
+<p>We’ll look at the same stairways again — this time drawn on a coordinate grid — so you can measure each change directly and see how slope connects to a line on a graph.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/stairs_xkcd_grid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
@@ -679,15 +689,22 @@ m = \frac{\Delta y}{\Delta x}
 </tr>
 </tbody>
 </table>
-<p>A <strong>positive</strong> slope means the line rises left-to-right. A <strong>negative</strong> slope means it falls. Notice that Panels A and C rise, while B and D fall — exactly what we saw before, now confirmed by the numbers.</p>
+<p>These numbers match what your eyes already noticed in the stairways:</p>
+<ul>
+<li>A and C go up (positive slope).</li>
+<li>B and D go down (negative slope).</li>
+<li>B and C are steep - <span class="math inline">\(y\)</span> changes more for them.</li>
+<li>A and D are less steep - <span class="math inline">\(y\)</span> changes less for them.</li>
+</ul>
 <hr>
 <p><strong>Example 1:</strong></p>
+<p>Let’s find the slope of this line like we did with the stairs.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/Example2A.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
 </figure>
 </div>
-<p>Pick two clear points on the line — here, <span class="math inline">\((0,2)\)</span> and <span class="math inline">\((5,6)\)</span>.</p>
+<p>First, we pick two clear points on the line — here, <span class="math inline">\((0,2)\)</span> and <span class="math inline">\((5,6)\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/Example2B.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
@@ -698,7 +715,10 @@ m = \frac{\Delta y}{\Delta x}
 <li>Move <strong>right</strong> until you get to <span class="math inline">\(x=5\)</span>: <span class="math inline">\(\Delta x = 5\)</span></li>
 <li>From there, move <strong>up</strong> until you reach <span class="math inline">\(y=6\)</span>: <span class="math inline">\(\Delta y = 4\)</span></li>
 </ul>
-<p>Between these two points, the line moves <strong>right 5</strong> and <strong>up 4</strong>. <em>(In the next section, we’ll use these counts in the slope formula.)</em></p>
+<p>Between these two points, the line moves <strong>right 5</strong> and <strong>up 4</strong> so the slope is:</p>
+<p><span class="math display">\[
+m = \frac{\Delta y}{\Delta x} = \frac{4}{5}
+\]</span></p>
 <div class="you-try-m" title="Counting boxes">
 <p>Compute the slope of the line.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -720,7 +740,7 @@ m = \frac{\Delta y}{\Delta x}
 </section>
 <section id="finding-slope-using-the-slope-formula" class="level3">
 <h3 class="anchored">4.2.3 – Finding Slope Using the Slope Formula</h3>
-<p>Whether we count boxes or use numbers directly, the idea is the same — slope measures how much <span class="math inline">\(y\)</span> changes for every change in <span class="math inline">\(x\)</span>. Here’s how to calculate it when you only know the coordinates.</p>
+<p>Whether we count boxes or use numbers directly, the idea is the same — slope measures how much <span class="math inline">\(y\)</span> changes for every change in <span class="math inline">\(x\)</span>. When counting is impractical, we can calculate slope using a simple formula.</p>
 <p>For the points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span>, the slope is:</p>
 <p><span class="math display">\[
 m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
@@ -746,9 +766,34 @@ m &amp;= \frac{-5 - (-2)}{5-3} \\
 &amp;= -\frac{3}{2} \\
 \end{align*}
 \]</span></p>
-<div class="think" title="What is the slope of a horizontal line? Why?">
-<p>The slope is zero because the <span class="math inline">\(y\)</span>-values do not change (Δy = 0) for a horizontal line.</p>
+<hr>
+<p><strong>Example 4:</strong></p>
+<p>Compute the slope of the line containing <span class="math inline">\((4, 3)\)</span> and <span class="math inline">\((2, 3)\)</span>.</p>
+<p>Here <span class="math inline">\(x_1=4\)</span>, <span class="math inline">\(x_2=2\)</span>, <span class="math inline">\(y_1=3\)</span>, and <span class="math inline">\(y_2=3\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+m &amp;= \frac{3 - 3}{2 - 4} \\
+&amp;= 0
+\end{align*}
+\]</span></p>
+<div class="think" title="In the last example, the slope is $0$. What does that mean?">
+<p>It means the line is <strong>horizontal</strong>. If <span class="math inline">\(y\)</span>-values don’t change as <span class="math inline">\(x\)</span> changes, then there is no “rise”.</p>
 </div>
+<hr>
+<p><strong>Example 5:</strong></p>
+<p>Find the slope of the line containing <span class="math inline">\((5, -3)\)</span> and <span class="math inline">\((5, 6)\)</span>.</p>
+<p>Here <span class="math inline">\(x_1=5\)</span>, <span class="math inline">\(x_2=5\)</span>, <span class="math inline">\(y_1=3\)</span>, and <span class="math inline">\(y_2=6\)</span>.</p>
+<p><span class="math display">\[
+\begin{align*}
+m &amp;= \frac{6 - 3}{5 - 5} \\
+&amp;= \frac{3}{0} \\
+\end{align*}
+\]</span></p>
+<p>The slope is <strong>undefined</strong> because you can’t divide by zero.</p>
+<div class="think" title="What does it mean to have an undefined slope?">
+<p>It means the line is <strong>vertical</strong>. You move up and down but not left and right.</p>
+</div>
+<hr>
 <div class="callout callout-style-default callout-tip callout-titled" title="Straight up or straight down?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -759,8 +804,7 @@ Straight up or straight down?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For any vertical line, <span class="math inline">\(\Delta x=0\)</span>. This means the slope is undefined because you can’t divide by zero.</p>
-<p>There is another way to think about it. Look at the picture below. One person is at the top of a cliff looking down at someone on the ground.</p>
+<p>There is another way to think about the slope of vertical lines. Look at the picture below. One person is at the top of a cliff looking down at someone on the ground.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../images/Unit_4/Lesson_2/vertical_lines.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
@@ -780,7 +824,7 @@ m &amp;= \frac{2 - 95}{-50 - 0} \\
 </div>
 <h2 class="unnumbered anchored" data-anchor-id="finding-slope-using-the-slope-formula">▶️ Interactive Learning</h2>
 <p>Want to get a better understanding of how slope works?</p>
-<p>Try using the <a href="../../chapters/Interactive/understanding_slope.html"><strong>Interactive Slope Explorer</strong></a></p>
+<p>Try using the <a href="../../chapters/Interactive/Unit_4/understanding_slope.html"><strong>Interactive Slope Explorer</strong></a></p>
 <h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
 <p>Is the slope <strong>positive</strong>, <strong>negative</strong>, <strong>zero</strong>, or <strong>undefined.</strong></p>
 <ol type="1">

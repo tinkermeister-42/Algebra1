@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3.6 – Solving Inequalities – DHS Algebra 1</title>
+<title>Slope Explorer – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_3/3.7_Solving_Literal_Equations.html" rel="next">
-<link href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" rel="prev">
-<link href="../../images/logo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" rel="next">
+<link href="../../../chapters/Interactive/index.html" rel="prev">
+<link href="../../../images/logo.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,38 +86,9 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../styles/glossary-tooltips.css">
-<link rel="stylesheet" href="../../styles/custom-callouts.css">
+<link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
+<link rel="stylesheet" href="../../../styles/custom-callouts.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -127,7 +98,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
   </div>
@@ -141,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.6_Solving_Inequalities.html">3.6 – Solving Inequalities</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/understanding_slope.html">Slope Explorer</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,8 +126,8 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -168,7 +139,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome to Algebra 1</span></a>
   </div>
 </li>
@@ -183,55 +154,55 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.1_Integers_&amp;_Number_Lines.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.1_Integers_&amp;_Number_Lines.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 - Integers &amp; Number Lines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.2_Factors_Multiples_&amp;_Prime_Factorization.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.2_Factors_Multiples_&amp;_Prime_Factorization.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.2 - Factors, Multiples &amp; Prime Factorization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.3 - GCF &amp; Simplifying Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.4_Fractions_Decimals_&amp;_Percents.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.4_Fractions_Decimals_&amp;_Percents.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.4 – Fractions, Decimals &amp; Percents: Conversions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.5_Multiply_Divide_&amp;_Compare_Fractions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.5_Multiply_Divide_&amp;_Compare_Fractions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.5 – Multiplying &amp; Dividing Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.7_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/1.7_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.7 – Order of Operations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/Review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_1/Review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Review</span></a>
   </div>
 </li>
@@ -248,49 +219,49 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.1_Expressions_and_Their_Parts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.1_Expressions_and_Their_Parts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.1 – Expressions &amp; Their Parts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.2_Evaluating_Expressions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.2_Evaluating_Expressions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.2 – Evaluating Expressions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.3_Combining_Like_Terms.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.3_Combining_Like_Terms.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.3 – Combining Like Terms</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.4_The_Distributive_Property.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.4_The_Distributive_Property.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.4 – The Distributive Property</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.5 – Inputs and Outputs of Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.6_Equivalent_Expressions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/2.6_Equivalent_Expressions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.6 – Equivalent Expressions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/Review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_2/Review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Review</span></a>
   </div>
 </li>
@@ -298,64 +269,64 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.1 – Solving One-Step Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.2 – Solving Two-Step Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.3 Multi-Step Equations with Distribution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.4 - Solving Equations With Variables on Both Sides</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.5 Equations With No or Infinite Solutions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.6_Solving_Inequalities.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../chapters/Unit_3/3.6_Solving_Inequalities.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.6 – Solving Inequalities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/3.7_Solving_Literal_Equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/3.7_Solving_Literal_Equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3.7 – Solving Literal Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_3/Review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_3/Review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Review</span></a>
   </div>
 </li>
@@ -372,49 +343,49 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.1 – Graphing Function Rules</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.2_Understanding_Slope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.2_Understanding_Slope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.2 – Understanding Slope</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.3 – The Equation of a Line</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.4 – Writing Linear Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.5 – Linear Models in the Real World</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4.6 – Graphing Linear Inequalities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/Review.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Unit_4/Review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Review</span></a>
   </div>
 </li>
@@ -442,40 +413,40 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
  <span class="menu-text">Interactive Learning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Index</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/Unit_4/understanding_slope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/Unit_4/understanding_slope.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Slope Explorer</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slope-Intercept Form Investigation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Intro to Correlation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Interactive/Unit_4/slope_intercept_form_game.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/Unit_4/slope_intercept_form_game.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slope-Intercept-Form Matching Game</span></a>
   </div>
 </li>
@@ -492,25 +463,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Supplemental Materials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/math_games_and_puzzles/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Supplemental/math_games_and_puzzles/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Math Games and Puzzles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Supplemental/challenge_solutions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Supplemental/challenge_solutions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Challenge Problem Solutions</span></a>
   </div>
 </li>
@@ -518,13 +489,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../resources.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../resources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../glossary.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
@@ -533,24 +504,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#inequality-basics" id="toc-inequality-basics" class="nav-link active" data-scroll-target="#inequality-basics">3.6.1 – Inequality Basics</a></li>
-  <li><a href="#solving-inequalities-using-addition-and-subtraction" id="toc-solving-inequalities-using-addition-and-subtraction" class="nav-link" data-scroll-target="#solving-inequalities-using-addition-and-subtraction">3.6.2 – Solving Inequalities Using Addition and Subtraction</a></li>
-  <li><a href="#solving-inequalities-with-multiplication-and-division" id="toc-solving-inequalities-with-multiplication-and-division" class="nav-link" data-scroll-target="#solving-inequalities-with-multiplication-and-division">3.6.3 – Solving Inequalities with Multiplication and Division</a></li>
-  <li><a href="#real-world-problems-with-inequalities" id="toc-real-world-problems-with-inequalities" class="nav-link" data-scroll-target="#real-world-problems-with-inequalities">3.6.4 – Real-World Problems With Inequalities</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_3/index.html">Unit 3: Solving Linear Equations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_3/3.6_Solving_Inequalities.html">3.6 – Solving Inequalities</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/understanding_slope.html">Slope Explorer</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">3.6 – Solving Inequalities</h1>
+<h1 class="title">Slope Explorer</h1>
 </div>
 
 
@@ -567,310 +529,297 @@ window.Quarto = {
 </header>
 
 
-<p>You have $20 in your pocket and want to buy some candy at the grocery store. You need to buy bread for $3.50, and each package of candy costs $1.25. How many packages of candy can you afford?</p>
-<p>We might try to model this problem with the following equation.</p>
-<p>Let <span class="math inline">\(c\)</span> be the number of packages of candy you purchase.</p>
-<p><span class="math display">\[
-3.5 + 1.25c = 20
-\]</span></p>
-<p>Solving for <span class="math inline">\(c\)</span> gives us:</p>
-<p><span class="math display">\[
-\begin{align*}
-3.5 + 1.25c \textcolor{red}{-3.5} &amp;= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
-1.25c &amp;= 16.5 \\
-\\
-1.25c \textcolor{red}{\div 1.25} &amp;= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
-c &amp;= 13.2
-\end{align*}
-\]</span></p>
-<p>This tells us you can afford 13.2 packages of candy—but you can’t just buy part of a package.</p>
-<p>Problems like this one show the limitations of equations. Equations are great when there’s a single exact answer, but real situations often have <strong>ranges</strong> of possible answers. To describe those ranges, we use <strong>inequalities</strong>.</p>
-<p>Unlike an equation, inequalities help us solve problems with a range of answers.</p>
-<div class="objectives">
-<ul class="task-list">
-<li><label><input type="checkbox">I can represent and graph solutions to inequalities on a number line.</label></li>
-<li><label><input type="checkbox">I can solve inequalities using addition, subtraction, multiplication, and division.</label></li>
-<li><label><input type="checkbox">I can use inequalities to model and solve real-world problems.</label></li>
-</ul>
+<p>Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.</p>
+<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="false" style="max-width:720px;margin:1rem auto">
+
 </div>
-<div class="vocab">
-<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-href="#glossary-coefficient" data-slug="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-original-href="#glossary-constant" data-slug="constant" data-term="constant">constant</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-href="#glossary-equation" data-slug="equation" data-term="equation">equation</a>, <a href="../../glossary.html#glossary-inequality" class="glossary-link" data-original-href="#glossary-inequality" data-slug="inequality" data-term="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-href="#glossary-solution" data-slug="solution" data-term="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-href="#glossary-variable" data-slug="variable" data-term="variable">variable</a></p>
-</div>
-<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<ol type="1">
-<li><p>Without solving, decide which is larger:</p>
-<p><span class="math inline">\(4x + 9\)</span> or <span class="math inline">\(6x + 3\)</span></p></li>
-<li><p>Simplify: <span class="math inline">\(3(2x - 5) - (x + 7)\)</span></p></li>
-<li><p>You have $50 to spend. After buying a $12 game, you want to get as many $8 accessories as possible. How many could you afford <em>if you spent all your money</em>?</p></li>
-</ol>
-<h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="inequality-basics" class="level3">
-<h3 class="anchored" data-anchor-id="inequality-basics">3.6.1 – Inequality Basics</h3>
-<p>An <strong>inequality</strong> compares two expressions using one of these symbols:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Symbol</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(\neq\)</span></td>
-<td>Not equal</td>
-<td><span class="math inline">\(x \neq y\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(&gt;\)</span></td>
-<td>Greater than</td>
-<td><span class="math inline">\(x &gt; y\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(&lt;\)</span></td>
-<td>Less than</td>
-<td><span class="math inline">\(x &lt; y\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(\ge\)</span></td>
-<td>Greater than or equal to</td>
-<td><span class="math inline">\(x \ge y\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(\le\)</span></td>
-<td>Less than or equal to</td>
-<td><span class="math inline">\(x \le y\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>In Unit 1, we plotted single solutions like <span class="math inline">\(x = 3\)</span> on a number line:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_equal_3.png" class="img-fluid"></p>
-<p>That’s just one point. Inequalities, however, represent a whole range of values.</p>
+<style>
+  .slope-widget {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+
+  /* Readout bar */
+  .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem; flex-wrap:wrap}
+  .legend {color:#4b5563; font-size:0.95rem}
+  .readout {display:flex; gap:10px; align-items:baseline; border:1px solid #e5e7eb; border-radius:8px; padding:8px 10px; background:#fff}
+  .m-big {font-weight:700; font-size:1.05rem}
+  .mono {font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  .muted {color:#6b7280; font-size:0.9rem}
+
+  /* Big, uncluttered graph */
+  .slope-fig {border:1px solid #e5e7eb; border-radius:0.5rem; background:#fff;}
+  .slope-fig svg {touch-action:none; display:block; width:100%; height:auto; aspect-ratio: 1 / 1;}
+
+  .tick-label {font-size:10px; fill:#6b7280}
+  .axis {stroke:#111827; stroke-width:1}
+  .grid {stroke:#e5e7eb; stroke-width:1}
+  .grid.minor {stroke:#f3f4f6}
+
+  .pt {cursor:grab}
+  .pt:active {cursor:grabbing}
+  .line {stroke:#2563eb; stroke-width:2}
+  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.75; }
+  .leg-x { stroke:#0ea5e9; } /* run */
+  .leg-y { stroke:#10b981; } /* rise */
+
+  /* On-leg Δ labels with halo for contrast */
+  .leglbl {font-size:12px; font-weight:700; fill:#111827; paint-order:stroke; stroke:#ffffff; stroke-width:3px; stroke-linejoin:round}
+  .lblx { fill:#0369a1; }  /* blue-ish for Δx */
+  .lbly { fill:#047857; }  /* green-ish for Δy */
+
+  /* Prevent selection/drag ghosts while interacting */
+  html.slope-dragging, html.slope-dragging * { -webkit-user-select:none !important; user-select:none !important; cursor:grabbing !important; }
+  .slope-widget, .slope-widget * { -webkit-user-drag:none; user-drag:none; }
+</style>
+<script>
+(function(){
+  // ---------- Utilities ----------
+  const gcd = (a,b)=>{a=Math.abs(a); b=Math.abs(b); while(b){[a,b]=[b,a%b]} return a||1};
+  // Reduce a ratio where values are integers or half-integers (supports step=1 and fine step=0.5)
+  function fracFromSteps(dy, dx){
+    if (dx === 0) return { text: 'undefined', m: null };
+    // scale by 2 to capture halves as integers
+    let N = Math.round(dy * 2);
+    let D = Math.round(dx * 2);
+    const g = gcd(N, D);
+    N /= g; D /= g;
+    return { text: (D===1 ? String(N) : `${N}/${D}`), m: N / D };
+  }
+  const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
+  const numDec = v => Number.isFinite(v) ? (Math.abs(v)<1e-6 ? '0' : (Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : v.toFixed(2))) : '—';
+  const clamp = (v,lo,hi)=> Math.max(lo, Math.min(hi, v));
+
+  function createWidget(container){
+    // ---------- Config ----------
+    const xmin = +container.dataset.xmin ?? -10;
+    const xmax = +container.dataset.xmax ?? 10;
+    const ymin = +container.dataset.ymin ?? -10;
+    const ymax = +container.dataset.ymax ?? 10;
+    const step = +container.dataset.step || 1;
+    const gridLabels = (container.dataset.gridLabels||'false') !== 'false';
+
+    // ---------- Canvas ----------
+    const w = 520, h = 520, pad = 36;
+    const xScale = x=> pad + (x - xmin) * (w - 2*pad) / (xmax - xmin);
+    const yScale = y=> h - pad - (y - ymin) * (h - 2*pad) / (ymax - ymin);
+    const invX = X=> xmin + (X - pad) * (xmax - xmin) / (w - 2*pad);
+    const invY = Y=> ymin + (h - pad - Y) * (ymax - ymin) / (h - 2*pad);
+
+    // ---------- State ----------
+    let P = {x:-4, y:-1};
+    let Q = {x: 6, y: 5};
+    let dragging = null;
+    let fineMode = false;
+
+    // ---------- DOM ----------
+    container.innerHTML = '';
+
+    // Readout bar (only slope)
+    const ui = document.createElement('div');
+    ui.className = 'slope-ui';
+    ui.innerHTML = `
+      <div class="legend">Drag the points (hold <span class="mono" style="border:1px solid #ddd;border-radius:4px;padding:0 4px;background:#f9fafb">Shift</span> for finer snap).</div>
+      <div class="readout" aria-live="polite">
+        <span class="m-big mono">m = <span class="vmf">—</span></span>
+        <span class="muted mono">(≈ <span class="vmd">—</span>)</span>
+      </div>
+    `;
+    container.appendChild(ui);
+
+    // Graph
+    const fig = document.createElement('div');
+    fig.className = 'slope-fig';
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS,'svg');
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    fig.appendChild(svg);
+    container.appendChild(fig);
+
+    const vmf = ui.querySelector('.vmf');
+    const vmd = ui.querySelector('.vmd');
+
+    // Layers
+    const gridG   = document.createElementNS(svgNS,'g');
+    const axesG   = document.createElementNS(svgNS,'g');
+    const lineG   = document.createElementNS(svgNS,'g');
+    const legsG   = document.createElementNS(svgNS,'g');
+    const labelsG = document.createElementNS(svgNS,'g');
+    const ptsG    = document.createElementNS(svgNS,'g');
+    svg.append(gridG, axesG, lineG, legsG, labelsG, ptsG);
+
+    // Grid
+    const addLine = (x1,y1,x2,y2, cls)=>{
+      const l = document.createElementNS(svgNS,'line');
+      l.setAttribute('x1',x1); l.setAttribute('y1',y1);
+      l.setAttribute('x2',x2); l.setAttribute('y2',y2);
+      l.setAttribute('class',cls);
+      gridG.appendChild(l);
+    };
+    const majorEvery = 5*step;
+    for(let x=Math.ceil(xmin/step)*step; x<=xmax; x+=step){
+      const X = xScale(x);
+      addLine(X, pad, X, h-pad, 'grid ' + ((x%majorEvery===0)?'':'minor'));
+      if(gridLabels && x%majorEvery===0 && x!==0){
+        const t = document.createElementNS(svgNS,'text');
+        t.setAttribute('x', X); t.setAttribute('y', h-pad+12); t.setAttribute('text-anchor','middle');
+        t.setAttribute('class','tick-label'); t.textContent = x;
+        gridG.appendChild(t);
+      }
+    }
+    for(let y=Math.ceil(ymin/step)*step; y<=ymax; y+=step){
+      const Y = yScale(y);
+      addLine(pad, Y, w-pad, Y, 'grid ' + ((y%majorEvery===0)?'':'minor'));
+      if(gridLabels && y%majorEvery===0 && y!==0){
+        const t = document.createElementNS(svgNS,'text');
+        t.setAttribute('x', pad-6); t.setAttribute('y', Y+3); t.setAttribute('text-anchor','end');
+        t.setAttribute('class','tick-label'); t.textContent = y;
+        gridG.appendChild(t);
+      }
+    }
+
+    // Axes
+    const X0 = Math.max(pad, Math.min(w-pad, xScale(0)));
+    const Y0 = Math.max(pad, Math.min(h-pad, yScale(0)));
+    const xAxis = document.createElementNS(svgNS,'line');
+    xAxis.setAttribute('x1', pad); xAxis.setAttribute('y1', Y0);
+    xAxis.setAttribute('x2', w-pad); xAxis.setAttribute('y2', Y0);
+    xAxis.setAttribute('class','axis'); axesG.appendChild(xAxis);
+    const yAxis = document.createElementNS(svgNS,'line');
+    yAxis.setAttribute('x1', X0); yAxis.setAttribute('y1', pad);
+    yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h-pad);
+    yAxis.setAttribute('class','axis'); axesG.appendChild(yAxis);
+
+    // Line through P and Q
+    const line = document.createElementNS(svgNS,'line');
+    line.setAttribute('class','line');
+    lineG.appendChild(line);
+
+    // Dotted legs
+    const legX = document.createElementNS(svgNS,'line'); legX.setAttribute('class','leg-x'); legsG.appendChild(legX);
+    const legY = document.createElementNS(svgNS,'line'); legY.setAttribute('class','leg-y'); legsG.appendChild(legY);
+
+    // On-leg labels (Δx, Δy)
+    const lblDx = document.createElementNS(svgNS,'text'); lblDx.setAttribute('class','leglbl lblx'); labelsG.appendChild(lblDx);
+    const lblDy = document.createElementNS(svgNS,'text'); lblDy.setAttribute('class','leglbl lbly'); labelsG.appendChild(lblDy);
+
+    // Points (no P/Q labels)
+    function makePoint(color){
+      const g = document.createElementNS(svgNS,'g');
+      const c = document.createElementNS(svgNS,'circle');
+      c.setAttribute('r',6); c.setAttribute('class','pt'); c.setAttribute('fill',color); c.setAttribute('stroke','#111827'); c.setAttribute('stroke-width','1');
+      g.append(c); ptsG.appendChild(g);
+      g._circle = c; g.setAttribute('draggable','false');
+      return g;
+    }
+    const pG = makePoint('#10b981');
+    const qG = makePoint('#ef4444');
+
+    function updateUI(){
+      const PX=xScale(P.x), PY=yScale(P.y), QX=xScale(Q.x), QY=yScale(Q.y);
+      pG.setAttribute('transform', `translate(${PX} ${PY})`);
+      qG.setAttribute('transform', `translate(${QX} ${QY})`);
+
+      // Determine LEFT and RIGHT points so Δx >= 0
+      let L = P, R = Q, LX=PX, LY=PY, RX=QX, RY=QY;
+      if (Q.x < P.x) { L = Q; R = P; LX = QX; LY = QY; RX = PX; RY = PY; }
+
+      const dx = R.x - L.x;               // guaranteed >= 0
+      const dy = R.y - L.y;               // signed (rise from left→right)
+
+      // Draw the infinite line clipped to box
+      if((R.x - L.x) === 0){
+        const X = xScale(L.x);
+        line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
+        line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
+      } else {
+        const m = dy / dx;
+        const b = L.y - m * L.x;
+        const pts = [];
+        const yL = m*xmin + b; if (yL>=ymin && yL<=ymax) pts.push({x:xmin,y:yL});
+        const yR = m*xmax + b; if (yR>=ymin && yR<=ymax) pts.push({x:xmax,y:yR});
+        const xB = (ymin - b)/m; if (xB>=xmin && xB<=xmax) pts.push({x:xB,y:ymin});
+        const xT = (ymax - b)/m; if (xT>=xmin && xT<=xmax) pts.push({x:xT,y:ymax});
+        if(pts.length>=2){
+          line.setAttribute('x1', xScale(pts[0].x)); line.setAttribute('y1', yScale(pts[0].y));
+          line.setAttribute('x2', xScale(pts[1].x)); line.setAttribute('y2', yScale(pts[1].y));
+        }
+      }
+
+      // Dotted legs from L to (R.x, L.y), then to R
+      legX.setAttribute('x1', LX); legX.setAttribute('y1', LY);
+      legX.setAttribute('x2', RX); legX.setAttribute('y2', LY);
+      legY.setAttribute('x1', RX); legY.setAttribute('y1', LY);
+      legY.setAttribute('x2', RX); legY.setAttribute('y2', RY);
+
+      // On-leg labels: center on segments; offset to avoid overlap
+      const midX = (LX + RX)/2;
+      const midY = (LY + RY)/2;
+
+      const offY = (dy >= 0) ? -10 : 14;           // Δx label above or below horizontal leg
+      lblDx.setAttribute('x', midX);
+      lblDx.setAttribute('y', LY + offY);
+      lblDx.setAttribute('text-anchor','middle');
+      lblDx.textContent = `Δx = ${fmt(dx)}`;
+
+      // Δy: to the right of the vertical leg unless near the edge
+      const rightSpace = (w - pad) - RX;
+      const offX = (rightSpace > 24) ? 10 : -10;
+      lblDy.setAttribute('x', RX + offX);
+      lblDy.setAttribute('y', midY + 4);
+      lblDy.setAttribute('text-anchor', (offX > 0) ? 'start' : 'end');
+      lblDy.textContent = `Δy = ${fmt(dy)}`;
+
+      // Readout (fraction from steps; decimal from dy/dx)
+      const f = fracFromSteps(dy, dx);
+      vmf.textContent = (f.m===null) ? 'undef' : (f.text.includes('/') ? f.text : `${f.text}/1`);
+      vmd.textContent = (f.m===null) ? '—' : numDec(dy / (dx||NaN));
+    }
+
+    // Dragging
+    function startDrag(which){ dragging = which; document.documentElement.classList.add('slope-dragging'); }
+    function endDrag(){ dragging = null; document.documentElement.classList.remove('slope-dragging'); }
+
+    function pointerHandler(evt){
+      if(!dragging) return;
+      const pt = svg.createSVGPoint();
+      pt.x = evt.clientX; pt.y = evt.clientY;
+      const ctm = svg.getScreenCTM().inverse();
+      const sp = pt.matrixTransform(ctm);
+      let x = invX(sp.x), y = invY(sp.y);
+      x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
+      const s = (fineMode ? step/2 : step);
+      x = Math.round(x/s)*s; y = Math.round(y/s)*s;
+      if(Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
+      if(Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
+      if(dragging==='P'){ P.x = x; P.y = y; } else { Q.x = x; Q.y = y; }
+      updateUI();
+    }
+    function attachDrag(group, which){
+      group.addEventListener('pointerdown', e=>{ e.preventDefault(); group.setPointerCapture(e.pointerId); startDrag(which); });
+      group.addEventListener('pointerup',   e=>{ e.preventDefault(); group.releasePointerCapture(e.pointerId); endDrag(); });
+      group.addEventListener('pointercancel', ()=> endDrag());
+      group.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
+    }
+    attachDrag(pG,'P'); attachDrag(qG,'Q');
+
+    window.addEventListener('keydown', e=>{ if(e.key==='Shift') fineMode=true; });
+    window.addEventListener('keyup',   e=>{ if(e.key==='Shift') fineMode=false; });
+
+    updateUI();
+  }
+
+  // INIT
+  document.querySelectorAll('.slope-widget').forEach(createWidget);
+})();
+</script>
 <hr>
-<p><strong>Example 1:</strong> Greater Than</p>
-<p>Plot the solution to <span class="math inline">\(x &gt; 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
-<p>The open circle shows 3 is <em>not included</em>. The arrow points right to show all numbers greater than 3 are possible solutions.</p>
-<hr>
-<p><strong>Example 2:</strong> Less Than</p>
-<p>Plot the solution to <span class="math inline">\(x &lt; 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_3.png" class="img-fluid"></p>
-<p>The arrow points left – toward smaller numbers. The open circle again shows that 3 itself is not included.</p>
-<hr>
-<p><strong>Example 3:</strong> Greater Than or Equal To</p>
-<p>Plot the solution to <span class="math inline">\(x \ge 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png" class="img-fluid"></p>
-<p>Same as Example 1, except the dot is filled in. That means <strong>3 is included</strong>.</p>
-<hr>
-<p><strong>Example 4:</strong> Less Than or Equal To</p>
-<p>Plot the solution to <span class="math inline">\(x \le 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
-<p>The dot is filled again, showing 3 is part of the solution. The arrow points left for “less than”.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Test a value">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Test a value
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Not sure which way the arrow goes? Test a number that makes the inequality true.</p>
-<p>For <span class="math inline">\(x \le -1\)</span> we could try <span class="math inline">\(x = -4\)</span>.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
-<p>Since <span class="math inline">\(-4 \le -1\)</span> is true, shade the side containing <span class="math inline">\(-4\)</span>.</p>
-</div>
-</div>
-</section>
-<section id="solving-inequalities-using-addition-and-subtraction" class="level3">
-<h3 class="anchored" data-anchor-id="solving-inequalities-using-addition-and-subtraction">3.6.2 – Solving Inequalities Using Addition and Subtraction</h3>
-<p>Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.</p>
-<hr>
-<p><strong>Example 1:</strong></p>
-<p>Solve the inequality and plot its solution on a number line.</p>
-<p><span class="math display">\[
-x - 5 &gt; 2
-\]</span></p>
-<p>We solve this like a one-step equation.</p>
-<p><span class="math display">\[
-\begin{align*}
-x - 5 \textcolor{red}{+5} &amp;&gt; 2 \textcolor{red}{+5} \snplus{5} \\
-x &amp;&gt; 7
-\end{align*}
-\]</span></p>
-<p>Now we plot the solution.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_7.png" class="img-fluid"></p>
-<p>The arrow covers all numbers larger than 7. The dot is left open because 7 itself is not included.</p>
-<hr>
-<p><strong>Example 2:</strong></p>
-<p>Solve the inequality and plot its solution.</p>
-<p><span class="math display">\[
-x + 2 \le 5
-\]</span></p>
-<p>First we solve.</p>
-<p><span class="math display">\[
-\begin{align*}
-x + 2 \textcolor{red}{-2} &amp;\le 5 \textcolor{red}{-2} \snminus{2} \\
-x &amp;\le 3
-\end{align*}
-\]</span></p>
-<p>Now plot it.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
-</section>
-<section id="solving-inequalities-with-multiplication-and-division" class="level3">
-<h3 class="anchored" data-anchor-id="solving-inequalities-with-multiplication-and-division">3.6.3 – Solving Inequalities with Multiplication and Division</h3>
-<p>If you multiply or divide by a positive number, then you solve just like an equation.</p>
-<p><strong>Example 1:</strong></p>
-<p>Solve the inequality and plot the solution.</p>
-<p><span class="math display">\[
-3x - 4 &gt; 5
-\]</span></p>
-<p>Solve first:</p>
-<p><span class="math display">\[
-\begin{align*}
-3x - 4 \textcolor{red}{+4} &amp;&gt; 5 \textcolor{red}{+4} \snplus{4} \\
-3x &amp;&gt; 9 \\
-\\
-3x \textcolor{red}{\div 3}  &amp;&gt; 9 \textcolor{red}{\div 3} \sndiv{3} \\
-x &amp;&gt; 3
-\end{align*}
-\]</span></p>
-<p>Now plot it:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
-<hr>
-<p>The one big difference between solving equations and inequalities comes when you multiply or divide by a <strong>negative</strong> number. In that case, you have to <strong>flip the sign</strong>.</p>
-<p><strong>Example 2:</strong></p>
-<p>Solve the inequality and plot the solution.</p>
-<p><span class="math display">\[
-5 - 2x &lt; -3
-\]</span></p>
-<p>Solve:</p>
-<p><span class="math display">\[
-\begin{align*}
-5 - 2x \textcolor{red}{-5} &amp;&lt; -3 \textcolor{red}{-5} \snminus{5} \\
--2x &amp;&lt; -8 \\
-\\
--2x \textcolor{red}{\div -2} &amp;&lt; -8 \textcolor{red}{\div -2} \sndiv{-2} \\
-x &amp;&gt; 4 \stepnote{Flip the sign}
-\end{align*}
-\]</span></p>
-<p>Plot the solution:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_gt_4.png" class="img-fluid"></p>
-<div class="gotcha" title="Don't forget to flip the sign">
-<p>Don’t forget to <em>flip the sign</em> when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.</p>
-<p>In the previous example we found <span class="math inline">\(x &gt; 4\)</span>. Let’s test our answer with <span class="math inline">\(x = 5\)</span>.</p>
-<p><span class="math display">\[
-\begin{align*}
-5 - 2(\textcolor{red}{5}) &amp;&lt; -3 \stepnote{substitute 5} \\
-5 - 10 &amp;&lt; -3 \\
--5 &amp;&lt; -3 \stepnote{$\leftarrow$ a true statement}
-\end{align*}
-\]</span></p>
-<p>If we hadn’t flipped the sign, we’d get <span class="math inline">\(-5 &gt; -3\)</span> (false).</p>
-</div>
-</section>
-<section id="real-world-problems-with-inequalities" class="level3">
-<h3 class="anchored">3.6.4 – Real-World Problems With Inequalities</h3>
-<p>Let’s revisit the candy problem:</p>
-<p>You have $20, break costs $3.50, and candy is $1.25 per package. How many packages can you afford?</p>
-<p>Let <span class="math inline">\(c\)</span> be the number of packages you purchase. The expression <span class="math inline">\(3.5 + 1.25c\)</span> will give you the cost of purchasing the candy with a loaf of bread.</p>
-<p>To find the largest number of packages you can purchase, you have to set up the inequality so that the total spent is less than or equal to $20.</p>
-<p><span class="math display">\[
-3.5 + 1.25c \le 20
-\]</span></p>
-<p>Let’s solve it.</p>
-<p><span class="math display">\[
-\begin{align*}
-3.5 + 1.25c \textcolor{red}{-3.5} &amp;\le 20 \textcolor{red}{-3.5} \snminus{3.5} \\
-1.25c &amp;\le 16.5 \\
-\\
-1.25c \textcolor{red}{\div 1.25} &amp;\le 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
-c &amp;\le 13.2
-\end{align*}
-\]</span></p>
-<p>Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is <strong>13 packages</strong>.</p>
-<h2 class="unnumbered anchored" data-anchor-id="real-world-problems-with-inequalities">✍️ Practice On Your Own</h2>
-<p><strong>Identify and Graph</strong></p>
-<p>Plot each inequality on a number line.</p>
-<ol type="1">
-<li><p><span class="math inline">\(x &gt; 2\)</span></p></li>
-<li><p><span class="math inline">\(x &lt; -3\)</span></p></li>
-<li><p><span class="math inline">\(x \ge 0\)</span></p></li>
-<li><p><span class="math inline">\(x \le 5\)</span></p></li>
-<li><p><span class="math inline">\(x &lt; 4\)</span></p></li>
-</ol>
-<hr>
-<p><strong>Solve and Graph</strong></p>
-<p>Solve each inequality, then graph its solution.</p>
-<ol start="6" type="1">
-<li><p><span class="math inline">\(3x - 7 &gt; 2x + 4\)</span></p></li>
-<li><p><span class="math inline">\(5 + 2(x - 3) \le 11\)</span></p></li>
-<li><p><span class="math inline">\(4(x + 2) &gt; 3x + 10\)</span></p></li>
-<li><p><span class="math inline">\(7 - 2(x + 5) &lt; 3\)</span></p></li>
-<li><p><span class="math inline">\(6x + 4 \ge 2x + 20\)</span></p></li>
-<li><p><span class="math inline">\(-3(x - 2) &gt; 9\)</span></p></li>
-<li><p><span class="math inline">\(2(x + 4) - 3x &lt; 5\)</span></p></li>
-<li><p><span class="math inline">\(-4x + 7 \le 2x - 5\)</span></p></li>
-<li><p><span class="math inline">\(5(x - 1) &gt; 2(x + 8)\)</span></p></li>
-<li><p><span class="math inline">\(-2(3x + 4) \ge 8 - x\)</span></p></li>
-</ol>
-<hr>
-<p><strong>Write and Solve Inequalities</strong></p>
-<p>Write an inequality to model each situation, then solve.</p>
-<ol start="16" type="1">
-<li><p>You must be at least 48 inches tall to ride the roller coaster. Let <span class="math inline">\(h\)</span> represent your height.</p></li>
-<li><p>You can spend no more than $30 at the store. You buy a sandwich for $6 and drinks that cost $2 each. How many drinks can you buy?</p></li>
-<li><p>A babysitter charges $25 plus $12 per hour. If you can spend up to $85, how many hours can they work?</p></li>
-<li><p>You already have 14 stickers. You want at least 30 total. How many more do you need?</p></li>
-<li><p>A concert ticket costs $42, and each parking pass costs $8. You have $90. How many parking passes can you buy?</p></li>
-<li><p>A taxi ride costs $3 plus $0.75 per mile. You have $15. How many miles can you ride?</p></li>
-<li><p>A water tank starts with 20 gallons and drains 2 gallons per minute. After how many minutes will it have less than 8 gallons left?</p></li>
-<li><p>A group rents a bus for $200 plus $15 per person. If they can spend at most $500, how many people can go?</p></li>
-</ol>
-<hr>
-<p><strong>Challenge Problems</strong></p>
-<ol start="24" type="1">
-<li><p>You’re designing bracelets using beads that cost $0.40 each plus a $2 setup fee per bracelet. You have $20. Write and solve an inequality to find the greatest number of beads you can use.</p></li>
-<li><p>A movie theater sells student tickets for $7 and adult tickets for $10. If the theater makes at least $400 from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?</p></li>
-</ol>
-<hr>
-<div class="answers">
-<ol type="1">
-<li><p>open circle at 2, arrow right</p></li>
-<li><p>open circle at −3, arrow left</p></li>
-<li><p>closed circle at 0, arrow right</p></li>
-<li><p>closed circle at 5, arrow left</p></li>
-<li><p>open circle at 4, arrow left</p></li>
-<li><p><span class="math inline">\(x &gt; 11\)</span></p></li>
-<li><p><span class="math inline">\(x \le 6\)</span></p></li>
-<li><p><span class="math inline">\(x &gt; 2\)</span></p></li>
-<li><p><span class="math inline">\(x &gt; -3\)</span></p></li>
-<li><p><span class="math inline">\(x \ge 4\)</span></p></li>
-<li><p><span class="math inline">\(x &lt; -1\)</span></p></li>
-<li><p><span class="math inline">\(x &gt; 3\)</span></p></li>
-<li><p><span class="math inline">\(x \ge 2\)</span></p></li>
-<li><p><span class="math inline">\(x &gt; 7\)</span></p></li>
-<li><p><span class="math inline">\(x \le -\dfrac{16}{5}\)</span></p></li>
-<li><p><span class="math inline">\(h \ge 48\)</span></p></li>
-<li><p><span class="math inline">\(6 + 2d \le 30 \Rightarrow d \le 12\)</span></p></li>
-<li><p><span class="math inline">\(25 + 12h \le 85 \Rightarrow h \le 5\)</span></p></li>
-<li><p><span class="math inline">\(14 + s \ge 30 \Rightarrow s \ge 16\)</span></p></li>
-<li><p><span class="math inline">\(42 + 8p \le 90 \Rightarrow p \le 6\)</span></p></li>
-<li><p><span class="math inline">\(3 + 0.75m \le 15 \Rightarrow m \le 16\)</span></p></li>
-<li><p><span class="math inline">\(20 - 2t &lt; 8 \Rightarrow t &gt; 6\)</span></p></li>
-<li><p><span class="math inline">\(200 + 15p \le 500 \Rightarrow p \le 20\)</span></p></li>
-</ol>
-</div>
+<p>To learn more about slope, take a look at <a href="../../../chapters/Unit_4/4.2_Understanding_Slope.html">4.2 - Understanding Slope</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
-<script src="../../scripts/popper.min.js"></script>
-<script src="../../scripts/tippy.min.js"></script>
-<script src="../../scripts/glossary-tooltips.js"></script>
-<script src="../../scripts/custom-callouts.js"></script>
+<script src="../../../scripts/popper.min.js"></script>
+<script src="../../../scripts/tippy.min.js"></script>
+<script src="../../../scripts/glossary-tooltips.js"></script>
+<script src="../../../scripts/custom-callouts.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1272,13 +1221,13 @@ c &amp;\le 13.2
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" class="pagination-link" aria-label="3.5 Equations With No or Infinite Solutions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3.5 Equations With No or Infinite Solutions</span>
+      <a href="../../../chapters/Interactive/index.html" class="pagination-link" aria-label="Index">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Index</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_3/3.7_Solving_Literal_Equations.html" class="pagination-link" aria-label="3.7 – Solving Literal Equations">
-        <span class="nav-page-text">3.7 – Solving Literal Equations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="pagination-link" aria-label="Slope-Intercept Form Investigation">
+        <span class="nav-page-text">Slope-Intercept Form Investigation</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
