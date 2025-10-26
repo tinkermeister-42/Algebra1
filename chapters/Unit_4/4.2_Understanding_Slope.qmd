@@ -266,7 +266,7 @@ $$
 
 Want to get a better understanding of how slope works? 
 
-Try using the [**Interactive Slope Explorer**](/chapters/Interactive/understanding_slope.qmd) 
+Try using the [**Interactive Slope Explorer**](/chapters/Interactive/Unit_4/understanding_slope.qmd) 
 
 
 {{< practice >}}

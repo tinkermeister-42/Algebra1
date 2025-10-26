@@ -1,0 +1,24 @@
+# Slope-Intercept-Form Matching Game {.unnumbered}
+
+When we collect data in the real world, it rarely lines up perfectly — but patterns still appear.  
+
+This tool lets you explore how **correlation** describes those patterns.  
+
+Move the **slider** to change the strength and direction of the correlation. 
+
+You’ll see:
+
+* positive correlation makes points rise together
+* negative correlation makes them fall
+* no correlation means there’s no clear pattern at all
+
+The orange line shows the **best-fit line**, which summarizes the trend.  
+Notice how the points stay close to the line when the relationship is strong  
+and spread out when the relationship is weak.
+
+{{< include /assets/Unit_4/slope-intercept-form-game.html >}}
+
+---
+
+To learn more, take a look at [4.5 – Linear Models in the Real World](/chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.qmd)
+

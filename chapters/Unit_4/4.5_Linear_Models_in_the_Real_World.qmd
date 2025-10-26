@@ -1,12 +1,10 @@
 # 4.5 – Linear Models in the Real World {.unnumbered}
 
-Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more.
-Whenever one quantity changes at a steady rate, we can model it with a **linear function**.
+Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more. In any situation where something changes at a steady rate, you can use a linear model to describe it.
 
-A linear model has the same structure as
-$$y = mx + b,$$
-but we rename $x$ and $y$ to match the situation — like $P(e)$ for price or $T(t)$ for temperature.
+You've already worked with many linear models in previous lessons. They all followed the pattern $y = mx + b$.
 
+In this lesson, you will learn how to use these linear models to solve real-world problems involving constant rates of change.
 
 :::{.objectives}
 
@@ -17,41 +15,62 @@ but we rename $x$ and $y$ to match the situation — like $P(e)$ for price or $T
 :::
 
 :::{.vocab}
-{{< glink "linear model" >}}, {{< glink slope >}}, {{< glink "y-intercept" >}}, {{< glink "rate of change" >}}, {{< glink "best-fit line" >}}, {{< glink "function notation" >}}
+ {{< glink "best-fit line" >}}, {{< glink "linear model" >}}, {{< glink slope >}}, {{< glink "y-intercept" >}} 
 :::
 
 
 {{< warmup >}}
 
-Coming Soon
+1. Complete the table for the function $g(x) = 3x - 2$.
+
+|  $x$  |   $g(x)$   |
+|  :-:  |   :-:      |
+|   -2  |   ___      |
+|    0  |   ___      |
+|    2  |   ___      |
+
+2. If a car travels 150 miles at a constant rate in 3 hours, how fast is the car moving?
+
+3. If Murphy made \$950 working 30 hours and Katie made \$780 working 25 hours, who makes the most per hour?
 
 {{< learn >}}
 
-### 4.5.1 – What the Parts of a Linear Model Tell Us
+### 4.5.1 – Solving Problems With Linear Models
 
 Linear models always have two key pieces:
 
 * The **slope ($m$)** shows how fast something changes.
-* The **intercept ($b$)** shows where it starts.
+* The **y-intercept ($b$)** shows where it starts.
 
 Let’s look at how these appear in real situations.
 
 ---
 
-**Example 1:** Streaming Service (Positive Slope)
+**Example 1 – Streaming Service (Positive Slope)**
 
-A streaming service charges $2 for every episode you rent, plus a monthly fee of $7.99.
-Write a linear function that models the total price.
+A streaming service charges $2 for every episode you rent, plus a monthly fee of \$7.99.
+Write a function that models the total cost.
 
-Let $e$ = episodes and $P(e)$ = total price (dollars).
+Let $e$ = number of episodes and $P(e)$ = total price (dollars).
 
-The slope is **2 per episode**, and the intercept is **7.99 dollars**.
+First, we need to know **what is changing**.
+
+* The cost **increases** \$2 per episode — that’s the **slope** ($m = 2$).
+
+Next, we need to know **where we start**.
+
+* The **minimum** you pay is \$7.99 — that’s the **y-intercept** ($b = 7.99$).
+
+Putting it together:
 
 $$
 P(e) = 2e + 7.99
 $$
 
-![](/images/Unit_4/Lesson_5/Example_1.png){width="350px" fig-align="center"}
+This model shows how the total cost changes with the number of episodes rented.
+You can use it to find the price for any number of episodes.
+
+![](/images/Unit_4/Lesson_5/Example1.png){width="500px" fig-align="center"}
 
 :::{.think title="How much would it cost to rent 10 episodes?"}
 
@@ -62,29 +81,28 @@ P(10) &= 2(10) + 7.99 \\
 \end{align*}
 $$
 
-It would cost **$27.99** to rent 10 episodes.
-
+It would cost **\$27.99** to rent 10 episodes.
 :::
+
 
 ---
 
-**Example 2:** Cooling Soup (Negative Slope)
+**Example 2:** Cooling Soup
 
-A cup of soup cools from 90 °C to 60 °C over 10 minutes.
-Assuming a steady rate of cooling:
+A cup of soup cools from 90 °C to 60 °C in 10 minutes. Assuming the soup cools at a constant rate, write a function that models the temperature of the soup as a function of time in minutes.
+
+Let $t$ be the number of minutes and $T(t)$ be the temperature of the soup after $t$ minutes. 
+
+* The temperature **decreases** 30 °C in 10 minutes ($m = -3$).
+* The soup **started** at 90 °C ($b = 90$)
 
 $$
 T(t) = -3t + 90
 $$
 
-Let $t$ = time (min), and $T(t)$ = temperature (°C).
+![](/images/Unit_4/Lesson_5/Example2.png){width="500px" fig-align="center"}
 
-![](/images/Unit_4/Lesson_5/Example_2.png){width="350px" fig-align="center"}
-
-The slope –3 means the soup’s temperature **drops 3 °C each minute**.
-The intercept 90 °C shows the **starting temperature** right after pouring.
-
-:::{.think title="What will the temperature be after 15 minutes?"}
+:::{.you-try title="What will the temperature be after 15 minutes?"}
 
 $$
 T(15) = -3(15) + 90 = 45
@@ -94,236 +112,397 @@ After 15 minutes, the soup will be **45 °C**.
 
 :::
 
+:::{.note title="How much should I graph?"}
+
+In the last example, the graph started at 0 minutes and stopped at 20 minutes.
+That’s because a model only makes sense for certain values.
+
+Before 0 minutes, time would be negative — like going back in time!
+After 20 minutes, the soup would drop below room temperature, which isn’t realistic here.
+
+So even though the line continues forever, we only graph the part that fits the situation.
+
+:::
+
 ---
 
-**Example 3:** Taxi Ride (Intercept Focus)
+**Example 3:** Taxi Ride
 
-A taxi charges $3 to start the ride and $2.25 per mile.
+A taxi charges $3 to start the ride and \$2.25 per mile. Write a function that gives the total cost based on the number of miles traveled.
+
+Let $d$ be the distances in miles, and $C(d)$ = total cost (dollars).
+
+* The cost **increases** \$2.25 each mile ($m = 2.25$)
+* The minimum cost is \$3 ($b = 3$)
 
 $$
 C(d) = 2.25d + 3
 $$
 
-Let $d$ = miles, and $C(d)$ = total cost (dollars).
+![](/images/Unit_4/Lesson_5/Example3.png){width="500px" fig-align="center"}
 
-![](/images/Unit_4/Lesson_5/Example_3.png){width="350px" fig-align="center"}
-
-The intercept 3 means you pay **\$3 before moving** — the base fare.
-The slope 2.25 shows the **cost per mile** once the ride begins.
-
----
-
-**Example 4:** Babysitting Job (Putting It Together)
-
-A babysitter earns $12 per hour plus a $10 transportation fee.
-
-Let $h$ = hours, and $P(h)$ = total pay (dollars).
+:::{.you-try title="How much will it cost to ride 20 miles?"}
 
 $$
-P(h) = 12h + 10
+C(20) = 2.25(20) + 3 = 48
 $$
 
-![](/images/Unit_4/Lesson_5/Example_4.png){width="350px" fig-align="center"}
-
-The slope 12 means pay increases **\$12 per hour worked**.
-The intercept 10 is the **starting amount** earned before any hours.
-
-:::{.think title="How much will the babysitter earn for 5 hours of work?"}
-
-$$
-P(5) = 12(5) + 10 = 70
-$$
-
-The babysitter earns **\$70 total**.
+A 20 mile ride will cost **\$48**.
 
 :::
 
 ---
 
-### 4.5.2 – How to Create a Linear Model
+**Example 4 – Comparing Services**
 
-So far, you’ve interpreted models.
-Now let’s learn how to **make your own** from words or data.
+In the last example, we found a function for the cost of a taxi ride.
+Now suppose a ride-sharing service charges **no minimum fee** but **$3.75 per mile**.
 
-A linear model always follows the pattern
+After how many miles would it make more sense to take the taxi instead?
+
+Let’s write a model for the ride-sharing cost.
+
+Let $d$ = distance traveled (miles) and $R(d)$ = ride-share cost (dollars).
+
+* Rate: $3.75 per mile → $m = 3.75$
+* No minimum fee → $b = 0$
+
 $$
-\text{output} = (\text{rate of change})(\text{input}) + (\text{starting value})
+R(d) = 3.75d
 $$
+
+![](/images/Unit_4/Lesson_5/Example4.png){width="450px" fig-align="center"}
+
+By comparing the graphs, the two lines cross at about **2 miles**.
+That means the taxi and ride-share cost the same at that distance.
+For trips **longer than 2 miles**, the taxi is **cheaper**.
+
+:::{.think title="What is the cost at the break-even point?"}
+We can use either equation.
+
+**Taxi service:**
+$$
+C(2) = 2.25(2) + 3 = 7.50
+$$
+
+**Ride-share:**
+$$
+R(2) = 3.75(2) = 7.50
+$$
+
+The break-even cost is **$7.50**.
+:::
 
 ---
 
-**Step 1:** Find What’s Changing
+**Example 5:** Babysitting
 
-Look for words that describe a *steady increase or decrease.*
-That number is your **slope** ($m$).
+Estrella says she charges a fixed hourly rate plus a minimum fee to babysit.
+She charged $70 for 5 hours and $46 for 3 hours. What is her hourly rate?
 
-**Examples:**
-
-* “$15 per hour” → $m = 15$
-* “drops 3 degrees each minute” → $m = -3$
-* “gains 5 points per week” → $m = 5$
-
----
-
-**Step 2:** Find Where It Starts
-
-What’s true when your input is 0?
-That number is the **intercept** ($b$).
-
-**Examples:**
-
-* “base fee of $20” → $b = 20$
-* “starts at 100 points” → $b = 100$
-* “initial temperature 90 °C” → $b = 90$
-
----
-
-**Step 3:** Write the Equation
-
-Put both pieces together and use variables that make sense.
-
-**Example:**
-
-A car rental costs \$50 per day plus $30 in fees.
-Let $d$ = days rented, $C(d)$ = total cost.
-$$C(d) = 50d + 30$$
-
----
-
-**Example:** Gym Membership
-
-A gym charges a one-time \$30 fee plus \$25 per month.
-
-Let $m$ = months, and $C(m)$ = total cost.
-
-1. Slope =\ 25 (per month)
-2. Intercept =\ 30 (one-time fee)
-3. Model: $$C(m) = 25m + 30$$
-
-![](/images/Unit_4/Lesson_5/Example_5.png){width="350px" fig-align="center"}
-
-:::{.think title="How much will 6 months cost?"}
+Since she charges a minimum fee, we can’t just divide money by hours.
+What we need is the **rate of change** — the **slope**.
 
 $$
-C(6) = 25(6) + 30 = 180
+m = \frac{70 - 46}{5 - 3} = \frac{24}{2} = 12
 $$
 
-After 6 months, the total cost is **\$180**.
+Her rate is **$12 per hour.**
+
+---
+
+Now let’s find her **minimum fee** (the y-intercept).
+
+Let $h$ be the number of hours and $C(h)$ the total charge.
+
+$$
+C(h) = 12h + b
+$$
+
+To find $b$, substitute one of the points and solve:
+
+$$
+\begin{align*}
+70 &= 12(5) + b \\
+70 - 60 &= b \\
+b &= 10
+\end{align*}
+$$
+
+Her minimum fee is **$10**, so her model is
+
+$$
+C(h) = 12h + 10
+$$
+
+Now we can predict her charge for any number of hours.
+
+:::{.think title="How much will she charge for 12 hours of babysitting?"}
+
+$$
+\begin{align*}
+C(12) &= 12(12) + 10 \\
+&= 144 + 10 \\
+&= 154
+\end{align*}
+$$
+
+She will charge **$154** for 12 hours.
 
 :::
 
 ---
 
-:::{.note title="Tips for Writing Your Own Models"}
+### 4.5.2 – Seeing Patterns in Data
 
-* Include **units** in your reasoning.
-* Watch for **negative slopes** — they show decreases.
-* The **starting value** might not come first in the sentence.
-* Choose variable names that fit the situation.
+In real life, data points rarely fall in a perfect line — but they often show a **pattern**.
+When that pattern looks roughly straight, we can model it with a **best-fit line** (or *trend line*).
 
+The closer the points are to that line, the more **strongly correlated** the two variables are:
+
+* **Positive correlation** – both variables increase together.
+* **Negative correlation** – one increases while the other decreases.
+* **No correlation** – no clear pattern appears.
+
+The line helps us see these relationships and make **predictions**.
+
+---
+
+**Example 6 – Test Grades**
+
+A group of 100 students took an end-of-course Algebra exam.
+Each student tracked how many hours they studied (to the nearest half-hour).
+
+![](/images/Unit_4/Lesson_5/Example6.png){width="500px" fig-align="center"}
+
+Even though the points don’t form a perfect line, there’s a **clear positive correlation** —
+students who studied more hours **tended to earn higher scores**.
+
+A computer can calculate a line that best fits the data:
+
+$$
+G(h) = 4.5h + 49.5
+$$
+
+* The **slope (4.5)** means test scores increase about 4.5 points for each extra hour studied.
+* The **intercept (49.5)** means a student who didn’t study at all might score around 50%.
+
+This data shows a **moderate positive correlation** — most points stay fairly close to the line,
+but not perfectly so.
+
+:::{.think title="How can we use the line to make predictions?"}
+We can plug in study hours ($h$) to estimate a score.
+
+$$
+G(7) = 4.5(7) + 49.5 = 81
+$$
+
+A student who studies for **7 hours** would be predicted to score about **81%**.
 :::
 
 ---
 
-### 4.5.3 – Seeing Patterns in Data
+**Example 7 – Car Weight and Fuel Economy**
 
-In real life, data points don’t line up perfectly, but they often follow a **trend**.
-A **best-fit line** shows that overall direction.
+Car weight and fuel efficiency are also related — but in the **opposite direction**.
+There’s a **strong negative correlation**: heavier cars usually get **fewer miles per gallon**.
 
-![](/images/Unit_4/Lesson_5/scatter_best_fit.png){width="360px" fig-align="center"}
+![](/images/Unit_4/Lesson_5/Example7.png){width="500px" fig-align="center"}
 
-**Example – Height vs. Age**
+A best-fit line for the data is:
 
-Each dot shows one student’s age and height.
-The line through the middle shows the *average growth pattern.*
+$$
+F(w) = -0.007w + 70
+$$
 
-The **positive slope** means height generally increases with age.
-The **intercept** estimates the height at age 0 — the starting point at birth.
+* The **negative slope (–0.007)** means that for every additional pound,
+  fuel economy drops by about **0.007 mpg** — roughly **0.7 mpg less per 100 lb**.
+* The **intercept (70)** helps the line fit the trend but doesn’t represent a real car.
 
-:::{.think title="What would a negative slope mean in a trend like this?"}
-It would mean that as one variable increases, the other **decreases** — for example, temperature falling as time passes.
+Here, the points stay very close to the line — showing a much **stronger correlation**
+than the test score data. As weight increases, mpg decreases in a nearly straight-line pattern.
+
+:::{.you-try title="Predict the fuel efficiency for a car weighing 3450 lbs."}
+
+$$
+\begin{align*}
+F(3450) &= -0.007(3450) + 70 \\
+&\approx 45.85
+\end{align*}
+$$
+
+A 3450 lb car will get **about 46 mpg**.
+
 :::
 
----
-
-:::{.remember title="Key Ideas"}
-
-* The **slope** tells how fast something changes.
-* The **intercept** tells where it starts.
-* Together they describe how one value depends on another.
-* A **best-fit line** shows that relationship when data aren’t exact.
-:::
 
 ---
 
 {{< practice >}}
 
-### 🔹 Part A – Interpret Models
+**Write a Linear Model**
 
-1. The equation $T(h) = -2h + 70$ shows the temperature $T$ after $h$ hours.
+1. A phone plan costs $25 per month plus $0.10 per text message.
+   
+   a. Write a function for the total monthly cost.
+   
+   b. Find the cost for 150 texts.
 
-   * What does the slope mean?
-   * What does the intercept mean?
-2. $P(n) = 5n + 20$ models parking costs.
+2. A car rental company charges $60 per day plus $0.30 per mile.
+   Write a model for total cost and find the cost for 200 miles in one day.
 
-   * How much does it cost to park for 3 hours?
-   * What do the 5 and 20 represent?
+3. A plumber charges $50 for a house call plus $65 per hour.
+   Write an equation for total cost $C(h)$.
 
----
+4. The temperature was 72 °F at noon and drops steadily to 54 °F by 8 p.m.
+   Write a function for $T(t)$, where $t$ is hours after noon.
 
-### 🔹 Part B – Write Your Own Models
-
-3. A movie theater charges $10 per ticket plus a $3 service fee.
-
-   * Write a model for total cost $C(t)$, where $t$ is tickets bought.
-4. A phone loses 8 % battery every hour starting at 100 %.
-
-   * Write and interpret a model for remaining charge $B(h)$.
-5. You start with $50 and save $12 per week.
-
-   * Write a model and use it to find your total after 8 weeks.
+5. A musician earns $75 per hour performing plus a $100 setup fee.
+   Write $E(h)$ for total earnings and find $E(3.5)$.
 
 ---
 
-### 🔹 Part C – Compare and Predict
+**Interpret the Slope and Intercept**
 
-6. Two gyms have different pricing plans:
+6. $C(x) = 40x + 200$ models the cost of manufacturing $x$ items.
+   Explain what the 40 and 200 represent.
 
-   * **Plan A:** $C_1(m)=25m+30$
-   * **Plan B:** $C_2(m)=20m+60$
-   * Which plan costs less at first? Which is cheaper after 10 months?
+7. $T(d) = 85 - 2d$ models the temperature (°F) at $d$ thousand feet of altitude.
+   What do the slope and intercept tell you?
 
-7. A taxi charges $2.50 per mile plus $3 start fee.
-   Another charges $3 per mile but no start fee.
-
-   * Write both equations.
-   * When do they cost the same?
+8. $P(h) = 10.5h + 35$ gives total pay for a dog walker.
+   Interpret both numbers in context.
 
 ---
 
-### 🔹 Part D – Interpret Graphs
+**Compare or Solve with Two Models**
 
-8. A scatter plot shows weekly hours of study vs. test scores.
-   The best-fit line rises from left to right.
+9. A gym charges $30 per month plus $5 per visit.
+   Another gym charges no monthly fee but $9 per visit.
+   
+   After how many visits will the total cost be the same?
 
-   * What does the slope tell you?
-   * What would a flat line mean?
-9. The line $D(t)$ in the graph slopes downward.
+10. Two printing companies charge
 
-   * What kind of relationship does that show between $D$ and $t$?
+    * Company A: $12 per poster
+    * Company B: $80 setup fee + $8 per poster
+
+    At what number of posters is the cost equal?
+
+11. A streaming plan costs $6.50 per month plus $1 per episode.
+    Another plan costs $12 per month and $0.50 per episode.
+    
+    Which is cheaper for 15 episodes?
 
 ---
+
+**Real-World Trend Interpretation**
+
+For numbers 12-15, describe the trend by giving:
+
+* the direction of the correlation (positive or negative)
+* the strength of the correlation (strong or weak)
+* the meaning of the slope of the best-fit line
+* the meaning of the y-intercept of the best fit line
+
+12. As outdoor temperature increases, the number of cups of hot chocolate sold decreases.
+    
+    ![](/images/Unit_4/Lesson_5/Practice12.png){width="300px" fig-align="center"}
+
+13. The more time students spend watching review videos, the higher their quiz scores.
+    
+    ![](/images/Unit_4/Lesson_5/Practice13.png){width="300px" fig-align="center"}
+
+14. A scatter plot shows that as screen time increases, sleep hours tend to decrease but with a lot of scatter.
+    
+    ![](/images/Unit_4/Lesson_5/Practice14.png){width="300px" fig-align="center"}
+
+15. running practice hours vs. race time (minutes) has a **negative slope**.
+    
+    ![](/images/Unit_4/Lesson_5/Practice15.png){width="300px" fig-align="center"}
+
+---
+
+**Challenge Problems**
+
+
+16. In Example 7, a best-fit line models fuel economy (mpg) from car weight (lb):
+
+    $$
+    F(w) = -0.007w + 70 \quad \text{(valid for } 2500 \le w \le 4500\text{)}
+    $$
+
+    a. Predict the mpg for a car that weighs **3600 lb**.
+
+    b. A measured 3600-lb car actually gets **51.5 mpg**.
+
+        * Find the **residual** (actual – predicted).
+        * Is the point **above** or **below** the line?
+
+    c. A performance package adds **180 lb** and the tires reduce mpg by an additional **1.3 mpg** (independent of weight).
+
+        * Predict the new mpg for the 3600-lb car **after** this package.
+
+    d. What weight would be needed to reach **55 mpg** (with normal tires)?
+
+        * Is that weight inside the model’s valid range? Explain.
+
+    e. Data entry mistake: a point appears at **(4300 lb, 62 mpg)**.
+
+        * How would including this point likely change the **slope** (more negative, less negative, or flip sign)?
+        * Would the **strength** of the negative correlation get stronger or weaker? Briefly explain.
+
 
 :::{.answers}
 
-**Sample answers (not shown to students):**
+1. $C(x)=25+0.10x$; for 150 texts: **$40**.
 
-1. Slope = –2 °C/hour → cooling rate; intercept = 70 °C start.
-2. $P(3)=35$; slope = cost per hour; intercept = base fee.
-3. $C(t)=10t+3$.
-4. $B(h)=100-8h$ (if linear).
-5. $S(w)=12w+50$, so $S(8)=146$.
-6. Plan A starts cheaper, Plan B cheaper after 6 months.
-7. $C_1=2.5x+3$, $C_2=3x$ → same at $x=6$.
+2. $C(m)=60+0.30m$; for 200 miles: **$120**.
+
+3. $C(h)=50+65h$.
+
+4. $m=\dfrac{54-72}{8}=-2.25$; $T(t)=72-2.25t$.
+
+5. $E(h)=75h+100$; $E(3.5)=\mathbf{$362.50}$.
+
+6. Slope $40$: $40 per item (variable cost). Intercept $200$: fixed/startup cost at $x=0$.
+
+7. Slope $-2$: temperature drops $2^\circ\text{F}$ per 1,000 ft. Intercept $85$: sea-level temperature ($d=0$).
+
+8. Slope $10.5$: $10.50 per hour. Intercept $35$: base fee before any hours.
+
+9. $30+5v=9v \Rightarrow v=7.5$ visits (break-even). For $v\ge 8$, Gym A is cheaper; for $v\le 7$, Gym B is cheaper.
+
+10. $12n=80+8n \Rightarrow n=20$ posters.
+
+11. Plan 1: **$21.50**; Plan 2: **$19.50** → Plan 2 is cheaper.
+
+12.
+
+* **Direction:** Negative correlation — as temperature increases, hot chocolate sales decrease.
+* **Strength:** Strong — points are close to the line.
+* **Slope meaning:** Each additional $1^\circ\text{F}$ is associated with about 1–1.5 fewer cups sold.
+* **Y-intercept meaning:** At $0^\circ\text{F}$ (extrapolating beyond the plotted range), the model predicts about 120 cups.
+
+13.
+
+* **Direction:** Positive correlation — more review time, higher quiz scores.
+* **Strength:** Moderate — visible trend with some scatter.
+* **Slope meaning:** Each extra hour of video is associated with about a 5–6 point increase.
+* **Y-intercept meaning:** With 0 hours, the model predicts about 55%.
+
+14.
+
+* **Direction:** Negative correlation — more screen time, less sleep.
+* **Strength:** Weak to moderate — lots of scatter.
+* **Slope meaning:** Each additional hour of evening screen time is associated with about $0.3$ fewer hours of sleep (≈18 minutes).
+* **Y-intercept meaning:** With 0 hours of screen time, the model predicts about 8 hours of sleep.
+
+15.
+
+* **Direction:** Negative correlation — more practice, faster (lower) race times.
+* **Strength:** Strong — points are close to the line.
+* **Slope meaning:** Each extra hour of weekly practice is associated with roughly a $0.6$ minute reduction in race time.
+* **Y-intercept meaning:** With 0 hours of practice, predicted time is about 22 minutes.
 
 :::

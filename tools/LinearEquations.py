@@ -11,7 +11,7 @@ def _aligned_ticks(vmin: float, vmax: float, step: Optional[float]):
     if step is None or step <= 0:
         return None
     start = np.floor(vmin / step) * step
-    end   = np.ceil (vmax / step) * step
+    end   = np.ceil (vmax  / step) * step
     ticks = np.arange(start, end + step*1e-9, step)
     return ticks[(ticks >= vmin - 1e-12) & (ticks <= vmax + 1e-12)]
 
@@ -63,7 +63,6 @@ def _apply_ticks(ax, axis: str, vmin: float, vmax: float, cfg: dict):
 
 
 # ---- Quadrant Labels ----
-# Optional quadrant labeling: "Quadrant I" or "I", etc.
 def add_quadrant_labels(
     ax,
     show=False,
@@ -75,40 +74,32 @@ def add_quadrant_labels(
     ymax=None,
     **text_kwargs
 ):
-
+    """Optional quadrant labeling: 'Quadrant I' or 'I'."""
     if not show:
         return
 
-    # Default labels
-    if short:
-        labels = ["I", "II", "III", "IV"]
-    else:
-        labels = ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"]
+    labels = ["I", "II", "III", "IV"] if short else \
+             ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"]
 
-    # Compute midpoints for placement
     xmid = 0.5 * xmax
     ymid = 0.5 * ymax
 
     positions = [
-        (xmid,  ymid),   # I  (top right)
-        (-xmid, ymid),   # II (top left)
-        (-xmid, -ymid),  # III (bottom left)
-        (xmid,  -ymid)   # IV (bottom right)
+        (xmid,  ymid),    # I
+        (-xmid, ymid),    # II
+        (-xmid,-ymid),    # III
+        (xmid, -ymid)     # IV
     ]
 
     for (xpos, ypos), label in zip(positions, labels):
         ax.text(
-            xpos,
-            ypos,
-            label,
+            xpos, ypos, label,
             color=fontcolor,
             fontsize=fontsize,
             fontweight=fontweight,
             fontfamily='DejaVu Serif',
-            ha='center',
-            va='center',
-            alpha=0.5,
-            zorder=0,
+            ha='center', va='center',
+            alpha=0.5, zorder=0,
             **text_kwargs
         )
 
@@ -165,7 +156,7 @@ def linear_function_coordinate_plane(
     # Algebra-style centered axes vs classic chart spines
     centered_axes: bool = True,
 
-    # --- NEW: frame (box) around the plane ---
+    # --- Frame (box) around the plane ---
     frame_box: bool = False,
     frame_inset: float = 0.0,        # fraction of axis span inset on each side
     frame_kwargs: Optional[dict] = None,
@@ -174,10 +165,13 @@ def linear_function_coordinate_plane(
     show_quadrants: bool = False,
     quadrant_label_style: str = "full",  # "full" or "short"
 
+    # Projections from points to axes
     project_to_axes: bool = False,              # global toggle
     projection_kwargs: Optional[dict] = None,   # style for the dashed guides
 
-    legend: bool = False #include legend
+    # Legend
+    legend: Union[bool, dict] = False,          # True/False or dict as shortcut for legend_config
+    legend_config: Optional[dict] = None
 ):
     """
     Clean, textbook-like coordinate plane generator.
@@ -186,8 +180,8 @@ def linear_function_coordinate_plane(
     • Arrowheads on pos/neg/both ends (with full-length baselines).
     • End-of-axis labels; outside chart labels; edge labels at data positions.
     • Ticks by step or explicit lists; formatted labels; rotation; hide-zero.
-    • Lines y = m x + b, shaded inequalities, points.
-    • Configurable aspect; optional framed box; file save.
+    • Lines y = m x + b, shaded inequalities, points (with optional projections).
+    • Configurable aspect; optional framed box; legend; file save.
     """
     # ---- unpack axes ----
     xmin, xmax, xlabel, xstyle = x_axis
@@ -214,15 +208,34 @@ def linear_function_coordinate_plane(
         axis_arrow_ends = {'x': 'pos', 'y': 'pos'}
     if frame_kwargs is None:
         frame_kwargs = {'linewidth': 1.25, 'linestyle': '-'}
-
     if projection_kwargs is None:
-        # subtle, thin, dashed, slightly transparent, under the points
         projection_kwargs = {
             'linestyle': (0, (2, 4)),
             'linewidth': 1.0,
             'alpha': 0.5,
             'zorder': 3,
         }
+
+    # Legend config defaults
+    if isinstance(legend, dict):
+        legend_config = {**(legend_config or {}), **legend}
+        legend = True
+    if legend_config is None:
+        legend_config = {}
+    _legend_defaults = {
+        'loc': 'upper right',
+        'ncol': 1,
+        'frameon': True,
+        'fancybox': True,
+        'framealpha': 0.9,
+        'title': None,
+        'bbox_to_anchor': None,
+        'borderpad': 0.6,
+        'handlelength': 2.0,
+        'handletextpad': 0.6,
+        'markerscale': 1.2
+    }
+    _legend_cfg = {**_legend_defaults, **legend_config}
 
     # ---- figure/axes ----
     fig, ax = plt.subplots(figsize=figsize)
@@ -355,7 +368,7 @@ def linear_function_coordinate_plane(
             (ymax_cur - ymin_cur) - 0.5*dy,
             fill=False,
             linewidth=frame_kwargs.get('linewidth', 1.25),
-            edgecolor=frame_kwargs.get('edgecolor', None),  # inherit default if None
+            edgecolor=frame_kwargs.get('edgecolor', None),
             linestyle=frame_kwargs.get('linestyle', '-'),
             zorder=frame_kwargs.get('zorder', 10)
         )
@@ -364,36 +377,93 @@ def linear_function_coordinate_plane(
     # ---- sample xs for lines/inequalities ----
     xs = np.linspace(xmin, xmax, 1000)
 
-    # Lines: y = m x + b
+    # ---- Legend collector ----
+    legend_items: List[Tuple[Any, str]] = []
+    seen_labels: set = set()
+
+    def _add_legend_item(artist, label: Optional[str]):
+        if not legend or not label:
+            return
+        if label in seen_labels:
+            return
+        seen_labels.add(label)
+        legend_items.append((artist, label))
+
+    # ---- Lines: y = m x + b ----
     if lines:
         for item in lines:
             if len(item) == 2:
                 m, b = item; style = {}
             else:
                 m, b, style = item
-            ys = m * xs + b
-            ax.plot(xs, ys, **{**(line_defaults or {}), **(style or {})})
 
-    # Inequalities: shaded half-planes + boundary style (dashed for <,>)
+            ys = m * xs + b
+            style = (style or {}).copy()
+            line_style = {**(line_defaults or {}), **style}
+
+            explicit_label = line_style.pop('label', None)
+            ln, = ax.plot(xs, ys, **line_style)
+
+            # Legend: explicit wins; else auto
+            if legend:
+                auto_label = explicit_label or f"y = {m:g}x + {b:g}"
+                _add_legend_item(ln, auto_label)
+
+    # ---- Inequalities: shaded half-planes + boundary style ----
     if inequalities:
+        fill_once_keys = set()  # to avoid repeated fill entries
+
         for item in inequalities:
             if len(item) == 3:
                 m, b, comp = item; style = {}
             else:
                 m, b, comp, style = item
+
             ys = m * xs + b
             boundary = {'linestyle': (0, (4, 4))} if comp in ('<', '>') else {'linestyle': '-'}
-            ax.plot(xs, ys, **{**(line_defaults or {}), **boundary,
-                               **{k: v for k, v in (style or {}).items() if k in ['linewidth', 'linestyle']}})
-            if comp in ('<', '<='):
-                ax.fill_between(xs, ymin, ys, **{k: v for k, v in (style or {}).items() if k != 'linestyle'})
-            else:  # '>' or '>='
-                ax.fill_between(xs, ys, ymax, **{k: v for k, v in (style or {}).items() if k != 'linestyle'})
 
-    # Points
+            style = (style or {}).copy()
+            explicit_label = style.get('label', None)
+
+            # draw boundary
+            ln, = ax.plot(
+                xs, ys,
+                **{
+                    **(line_defaults or {}),
+                    **boundary,
+                    **{k: v for k, v in style.items() if k in ['linewidth', 'linestyle', 'color']}
+                }
+            )
+
+            # fill region
+            if comp in ('<', '<='):
+                fill = ax.fill_between(
+                    xs, ymin, ys,
+                    **{k: v for k, v in style.items() if k != 'linestyle'},
+                    alpha=style.get('alpha', (inequality_defaults or {}).get('alpha', 0.15))
+                )
+            else:
+                fill = ax.fill_between(
+                    xs, ys, ymax,
+                    **{k: v for k, v in style.items() if k != 'linestyle'},
+                    alpha=style.get('alpha', (inequality_defaults or {}).get('alpha', 0.15))
+                )
+
+            if legend:
+                leq_map = {'<': '<', '<=': '≤', '>': '>', '>=': '≥'}
+                sym = leq_map.get(comp, comp)
+                boundary_label = explicit_label or f"y {sym} {m:g}x + {b:g}"
+                _add_legend_item(ln, boundary_label)
+
+                # optional fill entry once per style key if user opts in
+                key = (comp, style.get('color'), style.get('hatch'), style.get('alpha'))
+                if key not in fill_once_keys and style.get('legend_fill', False):
+                    fill_once_keys.add(key)
+                    _add_legend_item(fill, style.get('legend_fill_label', 'Shaded region'))
+
+    # ---- Points ----
     if points:
         for p in points:
-            # Allow (x, y), (x, y, label), or (x, y, label, style)
             if len(p) == 2:
                 x, y = p
                 label = None
@@ -403,24 +473,16 @@ def linear_function_coordinate_plane(
                 pstyle = {}
             else:
                 x, y, label, pstyle = p
-    
-            # Plot the point
-            ax.scatter([x], [y], **{**(scatter_defaults or {}), **(pstyle or {})})
-    
-            # Only show *custom* label text if provided
+
+            pstyle = (pstyle or {}).copy()
+            sc = ax.scatter([x], [y], **{**(scatter_defaults or {}), **pstyle})
+
+            # text label next to the point (only if provided)
             dx = 0.02 * (ax.get_xlim()[1] - ax.get_xlim()[0])
             dy = 0.02 * (ax.get_ylim()[1] - ax.get_ylim()[0])
-            ax.text(
-                x - dx,
-                y + dy,
-                label,
-                fontsize=12,
-                ha='right',
-                va='bottom',
-                zorder=6,
-            )
+            ax.text(x - dx, y + dy, label, fontsize=12, ha='right', va='bottom', zorder=6)
 
-                # Optional dashed projections from the point to the axes
+            # Optional dashed projections from the point to the axes
             wants_proj = pstyle.pop('project', None)  # allow per-point override
             if (project_to_axes or wants_proj) is not None:
                 do_proj = bool(project_to_axes) if wants_proj is None else bool(wants_proj)
@@ -428,8 +490,15 @@ def linear_function_coordinate_plane(
                 do_proj = False
 
             if do_proj:
+                base_proj = {
+                    'linestyle': (0, (2, 4)),
+                    'linewidth': 1.0,
+                    'alpha': 0.5,
+                    'zorder': 3,
+                }
+                proj_style = (projection_kwargs or base_proj).copy()
+
                 # choose a subtle color; fall back to gray if the point didn't set one
-                proj_style = projection_kwargs.copy()
                 color = pstyle.get('color', None)
                 if color is None and scatter_defaults is not None:
                     color = scatter_defaults.get('color', None)
@@ -447,20 +516,50 @@ def linear_function_coordinate_plane(
                 if xmin_cur < 0 < xmax_cur:
                     ax.plot([0, x], [y, y], **proj_style)
 
+            # Legend entry for points only if they have a label or explicit opt-in
+            if legend:
+                point_label = pstyle.get('label', None) or label
+                if point_label or pstyle.get('legend_show', False):
+                    if not point_label:
+                        point_label = f"({x:g}, {y:g})"
+                    _add_legend_item(sc, point_label)
 
-
-    # Title
+    # ---- Title ----
     if title:
         extra_pad = 15 if (ylabel and len(ylabel) > 0) else 0
         ax.set_title(title, fontsize=title_fontsize, pad=14 + extra_pad)
 
+    # ---- Quadrants ----
     add_quadrant_labels(
         ax,
         show=show_quadrants,
         short=(quadrant_label_style == "short"),
-        xmax = xmax,
-        ymax = ymax
+        xmax=xmax,
+        ymax=ymax
     )
+
+    # ---- Render legend ----
+    if legend and legend_items:
+        handles, labels = zip(*legend_items)
+        uniq: Dict[str, Any] = {}
+        for h, lab in zip(handles, labels):
+            if lab not in uniq:
+                uniq[lab] = h
+        ax.legend(
+            list(uniq.values()),
+            list(uniq.keys()),
+            loc=_legend_cfg['loc'],
+            ncol=_legend_cfg['ncol'],
+            frameon=_legend_cfg['frameon'],
+            fancybox=_legend_cfg['fancybox'],
+            framealpha=_legend_cfg['framealpha'],
+            title=_legend_cfg['title'],
+            bbox_to_anchor=_legend_cfg['bbox_to_anchor'],
+            borderpad=_legend_cfg['borderpad'],
+            handlelength=_legend_cfg['handlelength'],
+            handletextpad=_legend_cfg['handletextpad'],
+            markerscale=_legend_cfg['markerscale']
+        )
 
     plt.tight_layout()
     if outfile:

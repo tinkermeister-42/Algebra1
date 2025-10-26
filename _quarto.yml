@@ -105,8 +105,10 @@ book:
     - part: "Interactive Learning"
       chapters:
         - file: chapters/Interactive/index.qmd
-        - file: chapters/Interactive/understanding_slope.qmd
-        - file: chapters/Interactive/exploring_slope_intercept_form.qmd
+        - file: chapters/Interactive/Unit_4/understanding_slope.qmd
+        - file: chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd
+        - file: chapters/Interactive/Unit_4/intro_to_correlation.qmd
+        - file: chapters/Interactive/Unit_4/slope_intercept_form_game.qmd
 
     - part: "Supplemental"
       chapters:

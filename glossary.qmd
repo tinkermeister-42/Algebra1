@@ -83,6 +83,16 @@ In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** 
 
 ---
 
+### Best-Fit Line {#glossary-best-fit-line}
+
+A straight line that comes **closest to all the data points** on a scatter plot.
+It shows the general trend of the data and can be used to **make predictions**.
+
+> **Example:**
+> In a graph of study time vs. test score, the best-fit line rises upward because students who study more tend to earn higher scores.
+
+---
+
 ### Calculate {#glossary-calculate}
 
 To **calculate** is to find an answer by using numbers and operations (add, subtract, multiply, divide).
@@ -669,6 +679,16 @@ where $a$, $b$, and $c$ are numbers.
 
 ---
 
+### Linear Model {#glossary-linear-model}
+
+An equation that shows a **steady rate of change** between two quantities.
+It follows the pattern $y = mx + b$, where $m$ is the **slope** (rate) and $b$ is the **starting value**.
+
+> **Example:**
+> If a taxi costs $3 to start plus $2 per mile, the linear model is $C(d) = 2d + 3$.
+
+---
+
 ### Literal Equation {#glossary-literal-equation}
 
 A **literal equation** is an equation that uses letters to represent values. These letters can stand for numbers or other variables. Solving a literal equation means getting one variable by itself in terms of the others.
@@ -882,6 +902,16 @@ The **output** is the result you get after a function or rule is applied to an i
 
 ---
 
+### Parallel {#glossary-parallel}
+
+Two lines that **never meet** because they have the **same slope** but different $y$-intercepts.
+Parallel lines stay the same distance apart everywhere on the graph.
+
+> **Example:**
+> $y = 2x + 3$ and $y = 2x - 4$ are parallel because both have a slope of $2$.
+
+---
+
 ### Parentheses {#glossary-parentheses}
 
 A grouping symbol that tells you what to do first in an expression.
@@ -889,6 +919,16 @@ A grouping symbol that tells you what to do first in an expression.
 > **Example:**
 >
 > In $(2 + 3) \times 4$, you add first: $5 \times 4 = 20$
+
+---
+
+### Perpendicular {#glossary-perpendicular}
+
+Two lines that **intersect to form a right angle (90°)**.
+Their slopes are **negative reciprocals** — their products multiply to $-1$.
+
+> **Example:**
+> The line $y = 2x + 1$ is perpendicular to $y = -\tfrac{1}{2}x + 4$ because $2 \times (-\tfrac{1}{2}) = -1$.
 
 ---
 
@@ -936,6 +976,21 @@ A percent is a way of expressing a number **out of 100**. The symbol **%** means
 > **Example:**
 >
 > 25% means 25 out of 100. It’s the same as $\frac{1}{4}$ or 0.25.
+
+---
+
+### Point-Slope Form {#glossary-point-slope-form}
+
+A way to write the equation of a line when you know its **slope** and **one point** on the line.
+The form is:
+
+$$
+y - y_1 = m(x - x_1)
+$$
+
+> **Example:**
+> A line passing through $(3, 5)$ with slope $2$ can be written as
+> $y - 5 = 2(x - 3)$.
 
 ---
 

@@ -1,0 +1,418 @@
+<!-- widgets/line-match.html (v1): "Match the line" game -->
+<div class="leq4-root" data-m="0.0" data-b="0"></div>
+
+<style>
+  .leq4-root {
+    max-width: 860px;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 1rem 0;
+    background: #fff;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    color: #0f172a;
+  }
+  .leq4-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 92px auto auto;
+    gap: 8px;
+    align-items: start;
+  }
+  .leq4-mline { grid-column: 2; grid-row: 1; position: relative; }
+  .leq4-bline { grid-column: 1; grid-row: 2 / span 2; position: relative; }
+  .leq4-plot  { grid-column: 2; grid-row: 2; position: relative; }
+  .leq4-ctrls { grid-column: 2; grid-row: 3; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+
+  .leq4-nline-h { width: 100%; height: 84px; display: block; background: #fff; }
+  .leq4-nline-v { width: 120px; height: 100%; display: block; background: #fff; }
+
+  .leq4-canvas {
+    width: 100%; height: auto; display: block; background: #fff; border-radius: 10px;
+  }
+
+  .leq4-label {
+    position: absolute; pointer-events: none;
+    font: 600 13px ui-sans-serif, system-ui;
+    color: #0f172a; background: rgba(255,255,255,.9);
+    border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 8px;
+  }
+  .leq4-label.m { left: -10px; top: 45%; transform: translateY(-50%); }
+  .leq4-label.b { top: 20px; left: 50%; transform: translateX(-50%); }
+
+  .leq4-badge {
+    font: 600 14px system-ui;
+    background: rgba(14,116,144,0.18);
+    color: #0e7490;
+    border-radius: 10px; padding: 4px 10px;
+  }
+  .leq4-pill {
+    display:inline-block; padding:4px 10px; border:1px solid #cbd5e1; border-radius:9999px; font-size:13px; background:#fff;
+  }
+
+  .leq4-btn {
+    border: 1px solid #cbd5e1; background: #f8fafc; border-radius: 8px; padding: 6px 10px; font-weight: 600;
+    cursor: pointer;
+  }
+  .leq4-btn:hover { background: #eef2f7; }
+
+  .leq4-toast {
+    position:absolute; left: 50%; top: 14px; transform: translateX(-50%);
+    background: #10b981; color: white; padding: 8px 12px; border-radius: 9999px;
+    font-weight: 700; box-shadow: 0 6px 18px rgba(16,185,129,.35); opacity: 0; pointer-events: none;
+    transition: opacity .2s ease;
+  }
+  .leq4-toast.show { opacity: 1; }
+  .leq4-small { font-size: 12px; color: #475569; }
+</style>
+
+<script>
+(function () {
+  function initAll() {
+    document.querySelectorAll('.leq4-root').forEach(initWidget);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll, { once: true });
+  } else {
+    initAll();
+  }
+
+  function initWidget(root) {
+    if (root.__init) return; root.__init = true;
+
+    const state = {
+      // player-controlled line y = m x + b
+      m: parseFloat(root.dataset.m ?? 0.0),
+      b: parseFloat(root.dataset.b ?? 0),
+      xmin: -10, xmax: 10, ymin: -10, ymax: 10,
+      // target line
+      tm: 1, tb: 0, tdx: 1, tdy: 1,
+      // game bits
+      streak: 0
+    };
+
+    // Layout
+    const grid = el('div', 'leq4-grid');
+
+    const mWrap = el('div', 'leq4-mline');
+    const mCanvas = el('canvas', 'leq4-nline-h');
+    const mLabel = el('div', 'leq4-label m'); mLabel.textContent = 'm';
+    mWrap.append(mCanvas, mLabel);
+
+    const bWrap = el('div', 'leq4-bline');
+    const bCanvas = el('canvas', 'leq4-nline-v');
+    const bLabel = el('div', 'leq4-label b'); bLabel.textContent = 'b';
+    bWrap.append(bCanvas, bLabel);
+
+    const plot = el('div', 'leq4-plot');
+    const canvas = el('canvas', 'leq4-canvas');
+    const toast = el('div', 'leq4-toast'); toast.textContent = 'Nice! +1 streak';
+    plot.append(canvas, toast);
+
+    const ctrls = el('div', 'leq4-ctrls');
+    const statusLeft = el('div');
+    const statusRight = el('div');
+    ctrls.append(statusLeft, statusRight);
+
+    grid.append(bWrap, mWrap, plot, ctrls);
+    root.append(grid);
+
+    // Controls UI
+    const eqBadge = el('span','leq4-badge');
+    const tgtBadge = el('span','leq4-pill');
+    const streakBadge = el('span','leq4-pill');
+    statusLeft.append(eqBadge);
+    statusRight.append(tgtBadge, sp(), streakBadge, sp(),
+      btn('Skip', () => { newTarget(); drawAll(); }),
+      btn('Reset', () => { state.m = 0; state.b = 0; h.cur = 0; v.cur = 0; drawAll(); })
+    );
+
+    function sp(){ const s=document.createElement('span'); s.style.width='8px'; return s; }
+    function btn(txt, on){ const b=el('button','leq4-btn'); b.textContent=txt; b.addEventListener('click',on); return b; }
+
+    // Margins
+    const M = { left: 40, right: 40, top: 64, bottom: 40 };
+
+    // World<->Pixel
+    function worldToPix(x, y, W, H) {
+      const innerW = W - M.left - M.right;
+      const innerH = H - M.top - M.bottom;
+      const sx = innerW / (state.xmax - state.xmin);
+      const sy = innerH / (state.ymax - state.ymin);
+      const px = M.left + (x - state.xmin) * sx;
+      const py = M.top + innerH - (y - state.ymin) * sy;
+      return [px, py];
+    }
+
+    // HiDPI helper
+    function sizeForDPR(c, cssW, cssH){
+      const dpr = window.devicePixelRatio || 1;
+      c.style.width = cssW+'px'; c.style.height = cssH+'px';
+      c.width = Math.max(1, Math.floor(cssW*dpr)); c.height = Math.max(1, Math.floor(cssH*dpr));
+      const ctx = c.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx,dpr};
+    }
+
+    // Random target with integer b, integer Δx, Δy
+    function newTarget(){
+      // y-intercept integer within bounds but not too close to edge
+      state.tb = randint(-7,7);
+      // pick Δx in [1..5], Δy in [-8..8]\{0}, reduce to keep slope reasonable
+      let dx = randint(1,5), dy = randint(-8,8); while(dy===0) dy = randint(-8,8);
+      // simplify fraction sign carried by dy
+      const g = gcd(Math.abs(dx), Math.abs(dy)); dx/=g; dy/=g;
+      // keep slope within ~[-4,4]
+      let m = dy/dx;
+      if (Math.abs(m) > 4) { dy = clampInt(dy, -8, 8); dx = clampInt(dx, 1, 5); m = dy/dx; }
+      state.tdx = dx; state.tdy = dy; state.tm = m;
+      // also randomize player starting m,b near 0 to avoid instant matches
+      state.m = roundTo(randf(-1,1), 0.1);
+      state.b = 0;
+      h.cur = state.m; v.cur = state.b;
+      hideToast();
+    }
+
+    // Sliders state
+    const h = { min: -5, max: 5, step: 0.01, cur: state.m };
+    const v = { min: -9, max: 9, step: 1,    cur: state.b };
+
+    // Drawing
+    function drawAll(){
+      sizePlot(); redrawH(); redrawV(); drawMain();
+      eqBadge.textContent = `y = ${fmtNum(state.m)}x ${state.b>=0?'+':'−'} ${fmtNum(Math.abs(state.b))}`;
+      tgtBadge.textContent = `Target: y = (${state.tdy}/${state.tdx})x + ${state.tb}`;
+      streakBadge.textContent = `Streak: ${state.streak}`;
+    }
+
+    function drawMain(){
+      const Wcss = canvas.clientWidth|0, Hcss = canvas.clientHeight|0;
+      if(!Wcss||!Hcss) return;
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0,0,Wcss,Hcss);
+
+      const gridCol='#cbd5e1', axisCol='#1e293b', tickCol='#334155';
+      const playerCol='#0e7490', interceptCol='#111827';
+      const targetCol='#7c3aed';
+
+      // Grid
+      ctx.lineWidth=1; ctx.strokeStyle=gridCol;
+      for(let x=Math.ceil(state.xmin); x<=Math.floor(state.xmax); x++){
+        const [px0,py0]=worldToPix(x,state.ymin,Wcss,Hcss);
+        const [px1,py1]=worldToPix(x,state.ymax,Wcss,Hcss);
+        const X=Math.round(px0)+0.5; ctx.beginPath(); ctx.moveTo(X,py0); ctx.lineTo(X,py1); ctx.stroke();
+      }
+      for(let y=Math.ceil(state.ymin); y<=Math.floor(state.ymax); y++){
+        const [px0,py0]=worldToPix(state.xmin,y,Wcss,Hcss);
+        const [px1,py1]=worldToPix(state.xmax,y,Wcss,Hcss);
+        const Y=Math.round(py0)+0.5; ctx.beginPath(); ctx.moveTo(px0,Y); ctx.lineTo(px1,Y); ctx.stroke();
+      }
+
+      // Axes
+      ctx.strokeStyle=axisCol; ctx.lineWidth=1.8;
+      const [xL,y0]=worldToPix(state.xmin,0,Wcss,Hcss);
+      const [xR]=worldToPix(state.xmax,0,Wcss,Hcss);
+      const yAxisPx=Math.round(y0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xL,yAxisPx); ctx.lineTo(xR,yAxisPx); ctx.stroke();
+      const [x0,yB]=worldToPix(0,state.ymin,Wcss,Hcss);
+      const [,yT]=worldToPix(0,state.ymax,Wcss,Hcss);
+      const xAxisPx=Math.round(x0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xAxisPx,yB); ctx.lineTo(xAxisPx,yT); ctx.stroke();
+
+      // Ticks + labels
+      ctx.fillStyle=tickCol; ctx.font='12px system-ui'; ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1;
+      for(let x=Math.ceil(state.xmin); x<=Math.floor(state.xmax); x++){
+        const [px]=worldToPix(x,0,Wcss,Hcss); const X=Math.round(px)+0.5;
+        ctx.beginPath(); ctx.moveTo(X,yAxisPx-5); ctx.lineTo(X,yAxisPx+5); ctx.stroke();
+        if(x!==0) ctx.fillText(String(x), X-4, yAxisPx+18);
+      }
+      for(let y=Math.ceil(state.ymin); y<=Math.floor(state.ymax); y++){
+        const [,py]=worldToPix(0,y,Wcss,Hcss); const Y=Math.round(py)+0.5;
+        ctx.beginPath(); ctx.moveTo(xAxisPx-5,Y); ctx.lineTo(xAxisPx+5,Y); ctx.stroke();
+        if(y!==0) ctx.fillText(String(y), xAxisPx+8, Y+4);
+      }
+
+      // Target line (dashed purple)
+      drawClippedLine(ctx, state.tm, state.tb, Wcss, Hcss, targetCol, 2.2, [8,6]);
+
+      // Player line (solid teal)
+      drawClippedLine(ctx, state.m, state.b, Wcss, Hcss, playerCol, 2.4, []);
+
+      // y-intercept dot for player
+      if(state.b>=state.ymin && state.b<=state.ymax){
+        const [ix,iy]=worldToPix(0,state.b,Wcss,Hcss);
+        ctx.fillStyle=interceptCol; ctx.beginPath(); ctx.arc(ix,iy,4,0,Math.PI*2); ctx.fill();
+      }
+
+      // Equation badge
+      const eq = `y = ${fmtNum(state.m)}x ${state.b>=0?'+':'−'} ${fmtNum(Math.abs(state.b))}`;
+      ctx.font='14px system-ui';
+      const tw=ctx.measureText(eq).width;
+      const bx=Wcss - M.right - tw - 28;
+      const by=Math.max(18, Math.floor(M.top*.45)+10);
+      ctx.fillStyle='rgba(14,116,144,0.18)';
+      roundRect(ctx, bx, by-20, tw+32, 28, 10, true, false);
+      ctx.fillStyle=playerCol; ctx.fillText(eq, bx+14, by-3);
+
+      // Success check
+      if (isMatch()){
+        showToast();
+        state.streak += 1;
+        // new target after a brief pause
+        setTimeout(() => { newTarget(); drawAll(); }, 600);
+      }
+    }
+
+    function drawClippedLine(ctx, m, b, Wcss, Hcss, color, lw, dash){
+      const pts=[];
+      const yL=m*state.xmin+b, yR=m*state.xmax+b;
+      addIf(state.xmin,yL); addIf(state.xmax,yR);
+      if(Math.abs(m)>1e-12){
+        const xB=(state.ymin-b)/m; addIf(xB,state.ymin);
+        const xT=(state.ymax-b)/m; addIf(xT,state.ymax);
+      }
+      function addIf(x,y){
+        if(x>=state.xmin-1e-9 && x<=state.xmax+1e-9 && y>=state.ymin-1e-9 && y<=state.ymax+1e-9)
+          pts.push([x,y]);
+      }
+      if(pts.length>=2){
+        const [x1,y1]=worldToPix(pts[0][0],pts[0][1],Wcss,Hcss);
+        const [x2,y2]=worldToPix(pts[1][0],pts[1][1],Wcss,Hcss);
+        ctx.save();
+        ctx.strokeStyle=color; ctx.lineWidth=lw; ctx.setLineDash(dash);
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+        ctx.restore();
+      }
+    }
+
+    // Sliders drawing
+    function redrawH(){
+      const rect = mCanvas.getBoundingClientRect();
+      const Wcss=Math.max(360, Math.floor(rect.width));
+      const Hcss=84;
+      const {ctx}=sizeForDPR(mCanvas,Wcss,Hcss);
+
+      const y = Math.floor(Hcss*0.44)+0.5;
+      ctx.strokeStyle='#e2e8f0'; ctx.lineWidth=10; ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(34,y); ctx.lineTo(Wcss-34,y); ctx.stroke();
+
+      // integer ticks
+      ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1; ctx.fillStyle='#334155'; ctx.font='12px system-ui';
+      for(let t=Math.ceil(h.min); t<=Math.floor(h.max); t++){
+        const x=Math.round(h_valToPx(t,Wcss))+0.5;
+        ctx.beginPath(); ctx.moveTo(x,y-12); ctx.lineTo(x,y+12); ctx.stroke();
+        ctx.fillText(String(t), x-6, y+36);
+      }
+      // zero mark
+      const x0=Math.round(h_valToPx(0,Wcss))+0.5; ctx.strokeStyle='#64748b'; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.moveTo(x0,y-18); ctx.lineTo(x0,y+18); ctx.stroke();
+
+      const hx=h_valToPx(h.cur,Wcss);
+      ctx.fillStyle='#0ea5a6'; ctx.beginPath(); ctx.arc(hx,y,7,0,Math.PI*2); ctx.fill();
+      ctx.strokeStyle='#155e75'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(hx,y,7,0,Math.PI*2); ctx.stroke();
+
+      // helper text
+      ctx.fillStyle='#475569'; ctx.font='12px system-ui';
+      ctx.fillText(`slope m = ${fmtNum(h.cur)}`, 10, 14);
+    }
+    function h_valToPx(v,W){ const pad=34,L=pad,R=W-pad; const t=(v-h.min)/(h.max-h.min); return L+t*(R-L); }
+    function h_pxToVal(px,W){ const pad=34,L=pad,R=W-pad; const t=clamp((px-L)/(R-L),0,1); const raw=h.min+t*(h.max-h.min); return roundTo(raw,h.step); }
+
+    function redrawV(){
+      const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 360;
+      const Wcss=120, Hcss=Math.max(260, Math.floor(graphHcss));
+      const {ctx}=sizeForDPR(bCanvas,Wcss,Hcss);
+
+      const x=Math.floor(Wcss/2)+0.5; const top=M.top, bottom=Hcss-32;
+
+      ctx.strokeStyle='#e2e8f0'; ctx.lineWidth=10; ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(x,top); ctx.lineTo(x,bottom); ctx.stroke();
+
+      ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1; ctx.fillStyle='#334155'; ctx.font='12px system-ui';
+      for(let t=v.min; t<=v.max; t++){
+        const y=Math.round(v_valToPx(t,Hcss,top,bottom))+0.5;
+        ctx.beginPath(); ctx.moveTo(x-12,y); ctx.lineTo(x+12,y); ctx.stroke();
+        if(t%1===0) ctx.fillText(String(t), x+22, y+4);
+      }
+
+      const y0=Math.round(v_valToPx(0,Hcss,top,bottom))+0.5;
+      ctx.strokeStyle='#64748b'; ctx.lineWidth=1.6; ctx.beginPath(); ctx.moveTo(x-16,y0); ctx.lineTo(x+16,y0); ctx.stroke();
+
+      const hy=v_valToPx(v.cur,Hcss,top,bottom);
+      ctx.fillStyle='#0ea5a6'; ctx.beginPath(); ctx.arc(x,hy,7,0,Math.PI*2); ctx.fill();
+      ctx.strokeStyle='#155e75'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(x,hy,7,0,Math.PI*2); ctx.stroke();
+
+      ctx.fillStyle='#475569'; ctx.font='12px system-ui';
+      ctx.fillText(`intercept b = ${fmtNum(v.cur)}`, 6, 14);
+    }
+    function v_valToPx(val,Hc,top,bottom){ const T=top,B=bottom; const t=(val-v.min)/(v.max-v.min); return B - t*(B-T); }
+    function v_pxToVal(py,Hc,top,bottom){ const T=top,B=bottom; const t=clamp((B-py)/(B-T),0,1); const raw=v.min+t*(v.max-v.min); return Math.round(raw); }
+
+    // Dragging
+    let draggingH=false, draggingV=false;
+    mCanvas.addEventListener('mousedown', e=>{ draggingH=true; onMoveH(e); e.preventDefault(); });
+    mCanvas.addEventListener('mousemove', onMoveH);
+    window.addEventListener('mouseup', ()=> draggingH=false);
+
+    bCanvas.addEventListener('mousedown', e=>{ draggingV=true; onMoveV(e); e.preventDefault(); });
+    bCanvas.addEventListener('mousemove', onMoveV);
+    window.addEventListener('mouseup', ()=> draggingV=false);
+
+    function onMoveH(e){
+      if(!draggingH) return;
+      const rect=mCanvas.getBoundingClientRect();
+      const px=e.clientX-rect.left;
+      const newVal=h_pxToVal(px, rect.width);
+      if(Math.abs(newVal-h.cur)>1e-9){ h.cur=newVal; state.m=newVal; drawMain(); redrawH(); }
+    }
+    function onMoveV(e){
+      if(!draggingV) return;
+      const rect=bCanvas.getBoundingClientRect();
+      const py=e.clientY-rect.top; const top=M.top, bottom=rect.height-32;
+      const newVal=v_pxToVal(py, rect.height, top, bottom);
+      if(Math.abs(newVal-v.cur)>1e-9){ v.cur=newVal; state.b=newVal; drawMain(); redrawV(); }
+    }
+
+    // Sizing
+    function sizePlot(){
+      const rect = plot.getBoundingClientRect();
+      const Wcss = Math.max(460, Math.floor(rect.width));
+      const Hcss = Wcss; // square
+      sizeForDPR(canvas, Wcss, Hcss);
+    }
+
+    // Match check (tolerant m; exact b since integer)
+    function isMatch(){
+      const epsM = 0.02; // tolerance so students can hit 2/3≈0.67
+      return Math.abs(state.m - state.tm) <= epsM && state.b === state.tb;
+    }
+
+    function showToast(){ toast.classList.add('show'); setTimeout(hideToast, 450); }
+    function hideToast(){ toast.classList.remove('show'); }
+
+    // Helpers
+    function gcd(a,b){ while(b){ const t=b; b=a%b; a=t; } return a||1; }
+    function randint(a,b){ return Math.floor(Math.random()*(b-a+1))+a; }
+    function randf(a,b){ return a + Math.random()*(b-a); }
+    function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
+    function clampInt(v,min,max){ return Math.max(min, Math.min(max, v)); }
+    function roundTo(x,step){ return Math.round(x/step)*step; }
+    function fmtNum(x){ return (Math.abs(x)%1<1e-9) ? String(Math.round(x)) : x.toFixed(2).replace(/\.?0+$/,''); }
+    function el(tag, cls){ const n=document.createElement(tag); if(cls) n.className=cls; return n; }
+    function roundRect(ctx,x,y,w,h,r,fill,stroke){
+      if(typeof r==='number') r={tl:r,tr:r,br:r,bl:r};
+      ctx.beginPath();
+      ctx.moveTo(x+r.tl,y); ctx.lineTo(x+w-r.tr,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r.tr);
+      ctx.lineTo(x+w,y+h-r.br); ctx.quadraticCurveTo(x+w,y+h,x+w-r.br,y+h);
+      ctx.lineTo(x+r.bl,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r.bl);
+      ctx.lineTo(x,y+r.tl); ctx.quadraticCurveTo(x,y,x+r.tl,y);
+      if(fill) ctx.fill(); if(stroke) ctx.stroke();
+    }
+
+    // Resize observer
+    const ro = new ResizeObserver(() => drawAll());
+    ro.observe(root);
+
+    // Go!
+    newTarget();
+    drawAll();
+  }
+})();
+</script>

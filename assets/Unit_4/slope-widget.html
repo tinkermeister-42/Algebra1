@@ -1,10 +1,17 @@
-<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="true" style="max-width:720px;margin:1rem auto"></div>
+<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="false" style="max-width:720px;margin:1rem auto"></div>
 
 <style>
   .slope-widget {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
-  .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem}
-  .slope-badge {padding:0.25rem 0.5rem; border:1px solid #ddd; border-radius:0.5rem; font-variant-numeric: tabular-nums;}
 
+  /* Readout bar */
+  .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem; flex-wrap:wrap}
+  .legend {color:#4b5563; font-size:0.95rem}
+  .readout {display:flex; gap:10px; align-items:baseline; border:1px solid #e5e7eb; border-radius:8px; padding:8px 10px; background:#fff}
+  .m-big {font-weight:700; font-size:1.05rem}
+  .mono {font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  .muted {color:#6b7280; font-size:0.9rem}
+
+  /* Big, uncluttered graph */
   .slope-fig {border:1px solid #e5e7eb; border-radius:0.5rem; background:#fff;}
   .slope-fig svg {touch-action:none; display:block; width:100%; height:auto; aspect-ratio: 1 / 1;}
 
@@ -15,21 +22,15 @@
 
   .pt {cursor:grab}
   .pt:active {cursor:grabbing}
-
   .line {stroke:#2563eb; stroke-width:2}
+  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.75; }
+  .leg-x { stroke:#0ea5e9; } /* run */
+  .leg-y { stroke:#10b981; } /* rise */
 
-  /* Dotted Δ legs */
-  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.7; }
-  .leg-x { stroke:#0ea5e9; } /* blue-green */
-  .leg-y { stroke:#10b981; } /* green */
-
-  /* Label groups (rect background + text) */
-  .lbl text { font-size:12px; fill:#111827; }
-  .lbl rect { fill:#ffffff; stroke:#e5e7eb; stroke-width:1; rx:3; ry:3; }
-
-  .leader { stroke:#9ca3af; stroke-dasharray:3 3; stroke-width:1; opacity:.8 }
-
-  .kbd {font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; padding:0.1rem 0.35rem; border:1px solid #ddd; border-radius:4px; background:#f9fafb}
+  /* On-leg Δ labels with halo for contrast */
+  .leglbl {font-size:12px; font-weight:700; fill:#111827; paint-order:stroke; stroke:#ffffff; stroke-width:3px; stroke-linejoin:round}
+  .lblx { fill:#0369a1; }  /* blue-ish for Δx */
+  .lbly { fill:#047857; }  /* green-ish for Δy */
 
   /* Prevent selection/drag ghosts while interacting */
   html.slope-dragging, html.slope-dragging * { -webkit-user-select:none !important; user-select:none !important; cursor:grabbing !important; }
@@ -38,85 +39,60 @@
 
 <script>
 (function(){
-  // UTILITIES
+  // ---------- Utilities ----------
   const gcd = (a,b)=>{a=Math.abs(a); b=Math.abs(b); while(b){[a,b]=[b,a%b]} return a||1};
-  const toFrac = (dy,dx)=>{
-    if(dx===0) return {text:'undefined', m:null};
-    const sign = (dy*dx)>=0 ? 1 : -1;
-    dy = Math.abs(dy); dx = Math.abs(dx);
-    const g = gcd(dy,dx); const n = sign*(dy/g), d = dx/g;
-    return {text: d===1? String(n): `${n}/${d}`, m: n/d};
-  };
+  // Reduce a ratio where values are integers or half-integers (supports step=1 and fine step=0.5)
+  function fracFromSteps(dy, dx){
+    if (dx === 0) return { text: 'undefined', m: null };
+    // scale by 2 to capture halves as integers
+    let N = Math.round(dy * 2);
+    let D = Math.round(dx * 2);
+    const g = gcd(N, D);
+    N /= g; D /= g;
+    return { text: (D===1 ? String(N) : `${N}/${D}`), m: N / D };
+  }
   const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
+  const numDec = v => Number.isFinite(v) ? (Math.abs(v)<1e-6 ? '0' : (Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : v.toFixed(2))) : '—';
   const clamp = (v,lo,hi)=> Math.max(lo, Math.min(hi, v));
-  const rectsOverlap = (a,b)=> !(a.x+a.width < b.x || b.x+b.width < a.x || a.y+a.height < b.y || b.y+b.height < a.y);
-
-  // Label helpers (rect + text + optional leader)
-  function makeLabelLayer(svg, withLeader=false){
-    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
-    g.setAttribute('class','lbl');
-    const r = document.createElementNS('http://www.w3.org/2000/svg','rect');
-    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
-    g.append(r,t);
-    if(withLeader){
-      const l = document.createElementNS('http://www.w3.org/2000/svg','line');
-      l.setAttribute('class','leader');
-      g.appendChild(l);
-      g._leader = l;
-    }
-    svg.appendChild(g);
-    g._rect=r; g._text=t;
-    return g;
-  }
-  function positionLabel(g, x, y, text, anchor='start'){
-    const t=g._text, r=g._rect;
-    t.textContent = text;
-    t.setAttribute('x', x); t.setAttribute('y', y);
-    t.setAttribute('text-anchor', anchor);
-    return new Promise(resolve=>{
-      // microtask so bbox is available after text layout
-      Promise.resolve().then(()=>{
-        const padX=4, padY=2;
-        const bb=t.getBBox();
-        r.setAttribute('x', bb.x - padX);
-        r.setAttribute('y', bb.y - padY);
-        r.setAttribute('width', bb.width + 2*padX);
-        r.setAttribute('height', bb.height + 2*padY);
-        resolve({textBB:bb, rectBB:r.getBBox()});
-      });
-    });
-  }
 
   function createWidget(container){
-    // CONFIG
+    // ---------- Config ----------
     const xmin = +container.dataset.xmin ?? -10;
     const xmax = +container.dataset.xmax ?? 10;
     const ymin = +container.dataset.ymin ?? -10;
     const ymax = +container.dataset.ymax ?? 10;
     const step = +container.dataset.step || 1;
-    const gridLabels = (container.dataset.gridLabels||'true') !== 'false';
+    const gridLabels = (container.dataset.gridLabels||'false') !== 'false';
 
-    // Canvas
-    const w = 480, h = 480, pad = 36;
+    // ---------- Canvas ----------
+    const w = 520, h = 520, pad = 36;
     const xScale = x=> pad + (x - xmin) * (w - 2*pad) / (xmax - xmin);
     const yScale = y=> h - pad - (y - ymin) * (h - 2*pad) / (ymax - ymin);
     const invX = X=> xmin + (X - pad) * (xmax - xmin) / (w - 2*pad);
     const invY = Y=> ymin + (h - pad - Y) * (ymax - ymin) / (h - 2*pad);
 
-    // State
+    // ---------- State ----------
     let P = {x:-4, y:-1};
     let Q = {x: 6, y: 5};
+    let dragging = null;
+    let fineMode = false;
 
-    // DOM
+    // ---------- DOM ----------
     container.innerHTML = '';
+
+    // Readout bar (only slope)
     const ui = document.createElement('div');
     ui.className = 'slope-ui';
     ui.innerHTML = `
-      <div class="legend">Drag the points. They snap to the grid (<span class="kbd">Shift</span> = fine adjust by ${step/2}).</div>
-      <div class="slope-badge">m = <span class="slope-val" aria-live="polite"></span></div>
+      <div class="legend">Drag the points (hold <span class="mono" style="border:1px solid #ddd;border-radius:4px;padding:0 4px;background:#f9fafb">Shift</span> for finer snap).</div>
+      <div class="readout" aria-live="polite">
+        <span class="m-big mono">m = <span class="vmf">—</span></span>
+        <span class="muted mono">(≈ <span class="vmd">—</span>)</span>
+      </div>
     `;
     container.appendChild(ui);
 
+    // Graph
     const fig = document.createElement('div');
     fig.className = 'slope-fig';
     const svgNS = 'http://www.w3.org/2000/svg';
@@ -125,15 +101,17 @@
     fig.appendChild(svg);
     container.appendChild(fig);
 
+    const vmf = ui.querySelector('.vmf');
+    const vmd = ui.querySelector('.vmd');
+
     // Layers
     const gridG   = document.createElementNS(svgNS,'g');
     const axesG   = document.createElementNS(svgNS,'g');
     const lineG   = document.createElementNS(svgNS,'g');
     const legsG   = document.createElementNS(svgNS,'g');
-    const lblsG   = document.createElementNS(svgNS,'g');
+    const labelsG = document.createElementNS(svgNS,'g');
     const ptsG    = document.createElementNS(svgNS,'g');
-    const ticksG  = document.createElementNS(svgNS,'g');
-    svg.append(gridG, axesG, lineG, legsG, lblsG, ptsG, ticksG);
+    svg.append(gridG, axesG, lineG, legsG, labelsG, ptsG);
 
     // Grid
     const addLine = (x1,y1,x2,y2, cls)=>{
@@ -151,7 +129,7 @@
         const t = document.createElementNS(svgNS,'text');
         t.setAttribute('x', X); t.setAttribute('y', h-pad+12); t.setAttribute('text-anchor','middle');
         t.setAttribute('class','tick-label'); t.textContent = x;
-        ticksG.appendChild(t);
+        gridG.appendChild(t);
       }
     }
     for(let y=Math.ceil(ymin/step)*step; y<=ymax; y+=step){
@@ -161,7 +139,7 @@
         const t = document.createElementNS(svgNS,'text');
         t.setAttribute('x', pad-6); t.setAttribute('y', Y+3); t.setAttribute('text-anchor','end');
         t.setAttribute('class','tick-label'); t.textContent = y;
-        ticksG.appendChild(t);
+        gridG.appendChild(t);
       }
     }
 
@@ -177,19 +155,7 @@
     yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h-pad);
     yAxis.setAttribute('class','axis'); axesG.appendChild(yAxis);
 
-    function arrow(x1,y1,x2,y2){
-      const a = document.createElementNS(svgNS,'path');
-      const ang = Math.atan2(y2-y1, x2-x1);
-      const L=6, W=4, bx=x2-Math.cos(ang)*L, by=y2-Math.sin(ang)*L;
-      const nx = Math.cos(ang+Math.PI/2)*W, ny=Math.sin(ang+Math.PI/2)*W;
-      a.setAttribute('d',`M ${x2} ${y2} L ${bx+nx} ${by+ny} L ${bx-nx} ${by-ny} Z`);
-      a.setAttribute('fill','#111827');
-      return a;
-    }
-    axesG.appendChild(arrow(pad, Y0, w-pad, Y0));
-    axesG.appendChild(arrow(X0, h-pad, X0, pad));
-
-    // Main line
+    // Line through P and Q
     const line = document.createElementNS(svgNS,'line');
     line.setAttribute('class','line');
     lineG.appendChild(line);
@@ -198,40 +164,42 @@
     const legX = document.createElementNS(svgNS,'line'); legX.setAttribute('class','leg-x'); legsG.appendChild(legX);
     const legY = document.createElementNS(svgNS,'line'); legY.setAttribute('class','leg-y'); legsG.appendChild(legY);
 
-    // Δ labels + leaders
-    const dxLabel = makeLabelLayer(lblsG, true);
-    const dyLabel = makeLabelLayer(lblsG, true);
+    // On-leg labels (Δx, Δy)
+    const lblDx = document.createElementNS(svgNS,'text'); lblDx.setAttribute('class','leglbl lblx'); labelsG.appendChild(lblDx);
+    const lblDy = document.createElementNS(svgNS,'text'); lblDy.setAttribute('class','leglbl lbly'); labelsG.appendChild(lblDy);
 
-    // Point groups with circles; labels are separate groups (so they can dodge)
+    // Points (no P/Q labels)
     function makePoint(color){
       const g = document.createElementNS(svgNS,'g');
       const c = document.createElementNS(svgNS,'circle');
       c.setAttribute('r',6); c.setAttribute('class','pt'); c.setAttribute('fill',color); c.setAttribute('stroke','#111827'); c.setAttribute('stroke-width','1');
       g.append(c); ptsG.appendChild(g);
-      // external label
-      const lbl = makeLabelLayer(lblsG, false);
-      g._circle = c; g._label = lbl;
-      g.setAttribute('draggable','false');
+      g._circle = c; g.setAttribute('draggable','false');
       return g;
     }
     const pG = makePoint('#10b981');
     const qG = makePoint('#ef4444');
 
-    let dragging=null, fineMode=false;
-
-    async function updateUI(){
+    function updateUI(){
       const PX=xScale(P.x), PY=yScale(P.y), QX=xScale(Q.x), QY=yScale(Q.y);
       pG.setAttribute('transform', `translate(${PX} ${PY})`);
       qG.setAttribute('transform', `translate(${QX} ${QY})`);
 
-      // Line clipped to bounds
-      const dx = Q.x - P.x, dy = Q.y - P.y;
-      if(dx===0){
-        const X = xScale(P.x);
+      // Determine LEFT and RIGHT points so Δx >= 0
+      let L = P, R = Q, LX=PX, LY=PY, RX=QX, RY=QY;
+      if (Q.x < P.x) { L = Q; R = P; LX = QX; LY = QY; RX = PX; RY = PY; }
+
+      const dx = R.x - L.x;               // guaranteed >= 0
+      const dy = R.y - L.y;               // signed (rise from left→right)
+
+      // Draw the infinite line clipped to box
+      if((R.x - L.x) === 0){
+        const X = xScale(L.x);
         line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
         line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
       } else {
-        const m = dy/dx; const b = P.y - m*P.x;
+        const m = dy / dx;
+        const b = L.y - m * L.x;
         const pts = [];
         const yL = m*xmin + b; if (yL>=ymin && yL<=ymax) pts.push({x:xmin,y:yL});
         const yR = m*xmax + b; if (yR>=ymin && yR<=ymax) pts.push({x:xmax,y:yR});
@@ -243,93 +211,37 @@
         }
       }
 
-      // Dotted legs (from P to Qx; then to Q)
-      legX.setAttribute('x1', PX); legX.setAttribute('y1', PY);
-      legX.setAttribute('x2', QX); legX.setAttribute('y2', PY);
-      legY.setAttribute('x1', QX); legY.setAttribute('y1', PY);
-      legY.setAttribute('x2', QX); legY.setAttribute('y2', QY);
+      // Dotted legs from L to (R.x, L.y), then to R
+      legX.setAttribute('x1', LX); legX.setAttribute('y1', LY);
+      legX.setAttribute('x2', RX); legX.setAttribute('y2', LY);
+      legY.setAttribute('x1', RX); legY.setAttribute('y1', LY);
+      legY.setAttribute('x2', RX); legY.setAttribute('y2', RY);
 
-      // Point labels: offset along a normal so they never sit on the line
-      let nx=0, ny=-1;
-      if(!(dx===0 && dy===0)){
-        if(!(dx===0)){
-          const len = Math.hypot(dy, dx);
-          nx = -dy/len; ny = dx/len;
-        }
-      }
-      // If points are very close, push labels farther out
-      const triPix = Math.hypot(xScale(Q.x)-xScale(P.x), yScale(Q.y)-yScale(P.y));
-      const baseOff = triPix < 60 ? 22 : 14;
+      // On-leg labels: center on segments; offset to avoid overlap
+      const midX = (LX + RX)/2;
+      const midY = (LY + RY)/2;
 
-      const pPos = await positionLabel(pG._label, PX + nx*baseOff, PY + ny*baseOff, `P(${fmt(P.x)}, ${fmt(P.y)})`, 'start');
-      const qPos = await positionLabel(qG._label, QX - nx*baseOff, QY - ny*baseOff, `Q(${fmt(Q.x)}, ${fmt(Q.y)})`, 'start');
+      const offY = (dy >= 0) ? -10 : 14;           // Δx label above or below horizontal leg
+      lblDx.setAttribute('x', midX);
+      lblDx.setAttribute('y', LY + offY);
+      lblDx.setAttribute('text-anchor','middle');
+      lblDx.textContent = `Δx = ${fmt(dx)}`;
 
-      // Δ labels: try multiple candidate positions to avoid overlap with point labels and each other
-      const off = 12, sx = dx>=0? 1 : -1, sy = dy>=0? 1 : -1;
+      // Δy: to the right of the vertical leg unless near the edge
+      const rightSpace = (w - pad) - RX;
+      const offX = (rightSpace > 24) ? 10 : -10;
+      lblDy.setAttribute('x', RX + offX);
+      lblDy.setAttribute('y', midY + 4);
+      lblDy.setAttribute('text-anchor', (offX > 0) ? 'start' : 'end');
+      lblDy.textContent = `Δy = ${fmt(dy)}`;
 
-      // Δx candidates (midpoint above/below leg, try flips and larger offsets)
-      const midX = (PX+QX)/2, baseY = PY;
-      const dxCandidates = [
-        {x:midX, y: baseY + off*sy, anchor:'middle'},
-        {x:midX, y: baseY - off*sy, anchor:'middle'},
-        {x:midX, y: baseY + 2*off*sy, anchor:'middle'},
-        {x:midX, y: baseY - 2*off*sy, anchor:'middle'}
-      ];
-
-      let dxPlaced=null, dxBB=null;
-      for(const c of dxCandidates){
-        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
-        const bb = dxLabel._rect.getBBox();
-        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB)){
-          dxPlaced=c; dxBB=bb; break;
-        }
-      }
-      if(!dxPlaced){ // last resort: shove downward or upward more
-        const c = dxCandidates[0];
-        const res = await positionLabel(dxLabel, clamp(c.x, pad+6, w-pad-6), clamp(baseY + 3*off*sy, pad+12, h-pad-6), `Δx = ${fmt(dx)}`, c.anchor);
-        dxBB = dxLabel._rect.getBBox();
-      }
-      // leader for Δx
-      dxLabel._leader.setAttribute('x1', (PX+QX)/2);
-      dxLabel._leader.setAttribute('y1', baseY);
-      dxLabel._leader.setAttribute('x2', dxLabel._text.getAttribute('x'));
-      dxLabel._leader.setAttribute('y2', dxLabel._text.getAttribute('y'));
-
-      // Δy candidates (midpoint left/right of leg)
-      const midY = (PY+QY)/2, baseX = QX;
-      const dyCandidates = [
-        {x: baseX + off*sx, y: midY + 4, anchor:'start'},
-        {x: baseX - off*sx, y: midY + 4, anchor:'end'},
-        {x: baseX + 2*off*sx, y: midY + 4, anchor:'start'},
-        {x: baseX - 2*off*sx, y: midY + 4, anchor:'end'}
-      ];
-
-      let dyPlaced=null, dyBB=null;
-      for(const c of dyCandidates){
-        const res = await positionLabel(dyLabel, clamp(c.x, pad+6, w-pad-6), clamp(c.y, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
-        const bb = dyLabel._rect.getBBox();
-        if(!rectsOverlap(bb, pPos.rectBB) && !rectsOverlap(bb, qPos.rectBB) && !rectsOverlap(bb, dxBB)){
-          dyPlaced=c; dyBB=bb; break;
-        }
-      }
-      if(!dyPlaced){
-        const c = dyCandidates[0];
-        await positionLabel(dyLabel, clamp(baseX + 3*off*sx, pad+6, w-pad-6), clamp(midY + 4, pad+12, h-pad-6), `Δy = ${fmt(dy)}`, c.anchor);
-        dyBB = dyLabel._rect.getBBox();
-      }
-      // leader for Δy
-      dyLabel._leader.setAttribute('x1', baseX);
-      dyLabel._leader.setAttribute('y1', (PY+QY)/2);
-      dyLabel._leader.setAttribute('x2', dyLabel._text.getAttribute('x'));
-      dyLabel._leader.setAttribute('y2', dyLabel._text.getAttribute('y'));
-
-      // slope badge
-      container.querySelector('.slope-val').textContent = toFrac(dy,dx).text;
-
-      // MathJax (optional)
-      if(window.MathJax && MathJax.typesetPromise){ MathJax.typesetPromise([container]).catch(()=>{}); }
+      // Readout (fraction from steps; decimal from dy/dx)
+      const f = fracFromSteps(dy, dx);
+      vmf.textContent = (f.m===null) ? 'undef' : (f.text.includes('/') ? f.text : `${f.text}/1`);
+      vmd.textContent = (f.m===null) ? '—' : numDec(dy / (dx||NaN));
     }
 
+    // Dragging
     function startDrag(which){ dragging = which; document.documentElement.classList.add('slope-dragging'); }
     function endDrag(){ dragging = null; document.documentElement.classList.remove('slope-dragging'); }
 
@@ -341,34 +253,20 @@
       const sp = pt.matrixTransform(ctm);
       let x = invX(sp.x), y = invY(sp.y);
       x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
-
       const s = (fineMode ? step/2 : step);
       x = Math.round(x/s)*s; y = Math.round(y/s)*s;
-
       if(Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
       if(Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
-
-      if(dragging==='P'){ P.x = x; P.y = y; }
-      else { Q.x = x; Q.y = y; }
+      if(dragging==='P'){ P.x = x; P.y = y; } else { Q.x = x; Q.y = y; }
       updateUI();
     }
-
     function attachDrag(group, which){
-      group.addEventListener('pointerdown', e=>{
-        e.preventDefault();
-        group.setPointerCapture(e.pointerId);
-        startDrag(which);
-      });
-      group.addEventListener('pointerup', e=>{
-        e.preventDefault();
-        group.releasePointerCapture(e.pointerId);
-        endDrag();
-      });
+      group.addEventListener('pointerdown', e=>{ e.preventDefault(); group.setPointerCapture(e.pointerId); startDrag(which); });
+      group.addEventListener('pointerup',   e=>{ e.preventDefault(); group.releasePointerCapture(e.pointerId); endDrag(); });
       group.addEventListener('pointercancel', ()=> endDrag());
       group.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
     }
-    attachDrag(pG,'P');
-    attachDrag(qG,'Q');
+    attachDrag(pG,'P'); attachDrag(qG,'Q');
 
     window.addEventListener('keydown', e=>{ if(e.key==='Shift') fineMode=true; });
     window.addEventListener('keyup',   e=>{ if(e.key==='Shift') fineMode=false; });

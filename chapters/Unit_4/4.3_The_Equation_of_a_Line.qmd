@@ -201,7 +201,7 @@ $$
 
 The best way to learn math is by playing around with it. 
 
-Give the [**Slope-Intercept Form Investigation**](/chapters/Interactive/exploring_slope_intercept_form.qmd) tool a try. It will help you better understand how $y=mx+b$ works!
+Give the [**Slope-Intercept Form Investigation**](/chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd) tool a try. It will help you better understand how $y=mx+b$ works!
 
 
 {{< practice >}}

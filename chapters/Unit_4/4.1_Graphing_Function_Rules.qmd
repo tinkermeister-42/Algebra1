@@ -16,7 +16,7 @@ It’s time to move from numbers to shapes — and start seeing how a function b
 
 :::{.vocab}
 
-{{< glink axis >}}, {{< glink origin >}}, {{< glink quadrant >}}, {{< glink "ordered pair" >}}, {{< glink "coordinate plane" >}}
+{{< glink axis >}}, {{< glink "coordinate plane" >}}, {{< glink origin >}}, {{< glink "ordered pair" >}}, {{< glink quadrant >}}
 
 :::
 
