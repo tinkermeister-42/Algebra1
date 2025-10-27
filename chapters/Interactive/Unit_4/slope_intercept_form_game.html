@@ -529,433 +529,259 @@ window.MathJax = {
 </header>
 
 
-<p>When we collect data in the real world, it rarely lines up perfectly — but patterns still appear.</p>
-<p>This tool lets you explore how <strong>correlation</strong> describes those patterns.</p>
-<p>Move the <strong>slider</strong> to change the strength and direction of the correlation.</p>
-<p>You’ll see:</p>
-<ul>
-<li>positive correlation makes points rise together</li>
-<li>negative correlation makes them fall</li>
-<li>no correlation means there’s no clear pattern at all</li>
-</ul>
-<p>The orange line shows the <strong>best-fit line</strong>, which summarizes the trend.<br>
-Notice how the points stay close to the line when the relationship is strong<br>
-and spread out when the relationship is weak.</p>
-<!-- widgets/line-match.html (v1): "Match the line" game -->
-<div class="leq4-root" data-m="0.0" data-b="0">
+<p>Try to get your line to match up with the on on the graph by entering an intercept and slope. You will earn points</p>
+<!-- Line Match Game – v5.6 (restore full game; compact controls; Score → Controls → Graph) |
+  Fixes:
+  - Restores full grid/logic after v5.5 regression
+  - Compact controls (smaller fonts/inputs/buttons)
+  - Order: Score top, Controls below, Graph last (wide)
+  - Quarto-safe modal classes; responsive canvas uses plot container width
+  - Prevents canvas overflow (right padding + overflow hidden)
+-->
+<div class="lm9-root" data-max-moves="6" data-lives="3">
 
 </div>
 <style>
-  .leq4-root {
-    max-width: 860px;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 1rem 0;
-    background: #fff;
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    color: #0f172a;
+  :root{
+    --bg-card:#f9fafb; --bd-card:#e5e7eb; --ink:#0f172a;
+    --accent:#2563eb; --accent-2:#10b981; --grid:#e2e8f0; --axis:#111827;
+    --target:#64748b; --player:#0ea5e9; --pill-bg:#eef2ff; --pill-bd:#c7d2fe;
+    --badge-bg:#e0e7ff; --badge-ink:#3730a3;
   }
-  .leq4-grid {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    grid-template-rows: 92px auto auto;
-    gap: 8px;
-    align-items: start;
-  }
-  .leq4-mline { grid-column: 2; grid-row: 1; position: relative; }
-  .leq4-bline { grid-column: 1; grid-row: 2 / span 2; position: relative; }
-  .leq4-plot  { grid-column: 2; grid-row: 2; position: relative; }
-  .leq4-ctrls { grid-column: 2; grid-row: 3; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .lm9-root{max-width:1100px;margin:16px auto;padding:14px;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink)}
+  .lm9-grid{display:grid;grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}
+  .card{background:var(--bg-card);border:1px solid var(--bd-card);border-radius:16px;box-shadow:0 2px 10px rgba(2,6,23,.06)}
+  .card h3{margin:0;padding:10px 14px 0;font-size:15px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .card-body{padding:12px}
 
-  .leq4-nline-h { width: 100%; height: 84px; display: block; background: #fff; }
-  .leq4-nline-v { width: 120px; height: 100%; display: block; background: #fff; }
+  /* Single column to maximize graph width in Quarto */
+  @media (min-width:920px){ .lm9-grid{grid-template-columns:1fr;gap:14px} }
 
-  .leq4-canvas {
-    width: 100%; height: auto; display: block; background: #fff; border-radius: 10px;
-  }
+  /* Controls — compact */
+  .controls{display:grid;gap:8px}
+  .field{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .field label{font-weight:800;min-width:90px;font-size:13px}
+  .input{height:36px;min-width:150px;max-width:240px;width:100%;padding:0 12px;border:1px solid #cbd5e1;border-radius:10px;font-size:14px;background:#fff}
+  .btn{border:1px solid var(--accent);background:linear-gradient(180deg,#60a5fa,#3b82f6);border-radius:10px;padding:7px 12px;font-weight:800;color:#fff;cursor:pointer;font-size:14px}
+  .btn-ghost{background:#fff;color:var(--accent);border:1px solid #cbd5e1}
+  .btn-danger{background:linear-gradient(180deg,#ef4444,#dc2626);border-color:#dc2626}
+  .hint{color:#475569;font-size:12px}
 
-  .leq4-label {
-    position: absolute; pointer-events: none;
-    font: 600 13px ui-sans-serif, system-ui;
-    color: #0f172a; background: rgba(255,255,255,.9);
-    border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 8px;
-  }
-  .leq4-label.m { left: -10px; top: 45%; transform: translateY(-50%); }
-  .leq4-label.b { top: 20px; left: 50%; transform: translateX(-50%); }
+  /* Score — compact pills */
+  .score-wrap{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .badges{display:flex;flex-wrap:wrap;gap:8px}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--pill-bd);border-radius:9999px;background:var(--pill-bg);font-weight:800;font-size:13px}
+  .pill .muted{font-weight:800;color:var(--accent)}
 
-  .leq4-badge {
-    font: 600 14px system-ui;
-    background: rgba(14,116,144,0.18);
-    color: #0e7490;
-    border-radius: 10px; padding: 4px 10px;
-  }
-  .leq4-pill {
-    display:inline-block; padding:4px 10px; border:1px solid #cbd5e1; border-radius:9999px; font-size:13px; background:#fff;
-  }
+  /* Graph sizing & padding */
+  .plot-wrap{position:relative;padding:12px 20px 16px 16px;overflow:hidden}
+  .plot{width:100%;min-width:300px;display:block;background:#fff;border-radius:14px}
+  .eq-badge{position:absolute;left:16px;top:16px;background:var(--badge-bg);color:var(--badge-ink);border-radius:14px;padding:10px 14px;font:900 16px system-ui;box-shadow:0 4px 10px rgba(0,0,0,.08);border:1px solid #c7d2fe}
 
-  .leq4-btn {
-    border: 1px solid #cbd5e1; background: #f8fafc; border-radius: 8px; padding: 6px 10px; font-weight: 600;
-    cursor: pointer;
-  }
-  .leq4-btn:hover { background: #eef2f7; }
-
-  .leq4-toast {
-    position:absolute; left: 50%; top: 14px; transform: translateX(-50%);
-    background: #10b981; color: white; padding: 8px 12px; border-radius: 9999px;
-    font-weight: 700; box-shadow: 0 6px 18px rgba(16,185,129,.35); opacity: 0; pointer-events: none;
-    transition: opacity .2s ease;
-  }
-  .leq4-toast.show { opacity: 1; }
-  .leq4-small { font-size: 12px; color: #475569; }
+  /* Quarto-safe modal classes */
+  .lm-modal-bg{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:radial-gradient(1000px 600px at 50% -20%, rgba(99,102,241,.35), rgba(15,23,42,.70));z-index:2147483000}
+  .lm-modal{width:min(500px,calc(100% - 32px));border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#ffffff,#f1f5f9);box-shadow:0 10px 30px rgba(0,0,0,.3)}
+  .lm-modal-header{padding:12px;background:linear-gradient(90deg,#6366f1 0%, #10b981 100%);color:white;display:flex;align-items:center;justify-content:space-between}
+  .lm-modal-header h4{margin:0;font-size:19px}
+  .lm-modal-body{padding:12px}
+  .lm-row{display:flex;justify-content:space-between;gap:12px;margin:6px 0}
+  .lm-row .lm-label{color:#475569}
+  .lm-modal-actions{display:flex;justify-content:flex-end;gap:8px;padding:10px 12px;background:#eef2ff}
+  .celebrate{font-size:22px}
+  @media (max-width:600px){.card-body{padding:10px}.field{flex-direction:column;align-items:flex-start}.btn{width:100%}}
 </style>
 <script>
-(function () {
-  function initAll() {
-    document.querySelectorAll('.leq4-root').forEach(initWidget);
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAll, { once: true });
-  } else {
-    initAll();
-  }
+(function(){
+  function initAll(){ document.querySelectorAll('.lm9-root').forEach(initWidget); }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', initAll, {once:true}); } else { initAll(); }
 
-  function initWidget(root) {
-    if (root.__init) return; root.__init = true;
+  function initWidget(root){
+    if(root.__init) return; root.__init = true;
+    const maxMoves = toInt(root.dataset.maxMoves, 6);
+    const maxLives = toInt(root.dataset.lives, 3);
+    const state = { xmin:-10,xmax:10,ymin:-10,ymax:10,
+      m:0,mFrac:{n:0,d:1}, b:0, mSet:false,bSet:false,
+      animM:null,animB:null,pulse:null,
+      tdy:1,tdx:1,tb:0, moves:0, score:0, lives:maxLives };
 
-    const state = {
-      // player-controlled line y = m x + b
-      m: parseFloat(root.dataset.m ?? 0.0),
-      b: parseFloat(root.dataset.b ?? 0),
-      xmin: -10, xmax: 10, ymin: -10, ymax: 10,
-      // target line
-      tm: 1, tb: 0, tdx: 1, tdy: 1,
-      // game bits
-      streak: 0
-    };
+    // Build UI — Score, then Controls, then Graph
+    const grid = el('div','lm9-grid');
 
-    // Layout
-    const grid = el('div', 'leq4-grid');
+    const score = card('Score & Lives');
+    const newBtn = button('New Game','btn btn-danger');
+    score.root.querySelector('h3').append(newBtn);
+    const badges = el('div','badges');
+    const pillMoves = pill('Moves', `${state.moves}/${maxMoves}`);
+    const pillLives = pill('Lives', `${state.lives}`);
+    const pillScore = pill('Score', `${state.score}`);
+    badges.append(pillMoves,pillLives,pillScore);
+    score.body.append(elWrap('div','score-wrap',badges));
 
-    const mWrap = el('div', 'leq4-mline');
-    const mCanvas = el('canvas', 'leq4-nline-h');
-    const mLabel = el('div', 'leq4-label m'); mLabel.textContent = 'm';
-    mWrap.append(mCanvas, mLabel);
+    const ctrl = card('Controls');
+    const controls = el('div','controls');
+    const slopeField = field('Slope m', input('text','e.g., -3/2','slope'));
+    const bField = field('Intercept b', input('number','integer','b'));
+    const actions = el('div','field');
+    const apply = button('Apply','btn');
+    actions.append(apply);
+    const hint = el('div','hint'); hint.textContent='Press Enter in either box to apply both at once.';
+    controls.append(slopeField.wrap,bField.wrap,actions,hint);
+    ctrl.body.append(controls);
 
-    const bWrap = el('div', 'leq4-bline');
-    const bCanvas = el('canvas', 'leq4-nline-v');
-    const bLabel = el('div', 'leq4-label b'); bLabel.textContent = 'b';
-    bWrap.append(bCanvas, bLabel);
+    const graph = card('Graph');
+    const wrap = el('div','plot-wrap');
+    const canvas = el('canvas','plot');
+    const eqBadge = el('div','eq-badge');
+    wrap.append(canvas,eqBadge); graph.body.append(wrap);
 
-    const plot = el('div', 'leq4-plot');
-    const canvas = el('canvas', 'leq4-canvas');
-    const toast = el('div', 'leq4-toast'); toast.textContent = 'Nice! +1 streak';
-    plot.append(canvas, toast);
-
-    const ctrls = el('div', 'leq4-ctrls');
-    const statusLeft = el('div');
-    const statusRight = el('div');
-    ctrls.append(statusLeft, statusRight);
-
-    grid.append(bWrap, mWrap, plot, ctrls);
+    grid.append(score.root, ctrl.root, graph.root);
     root.append(grid);
 
-    // Controls UI
-    const eqBadge = el('span','leq4-badge');
-    const tgtBadge = el('span','leq4-pill');
-    const streakBadge = el('span','leq4-pill');
-    statusLeft.append(eqBadge);
-    statusRight.append(tgtBadge, sp(), streakBadge, sp(),
-      btn('Skip', () => { newTarget(); drawAll(); }),
-      btn('Reset', () => { state.m = 0; state.b = 0; h.cur = 0; v.cur = 0; drawAll(); })
-    );
+    // Modal (Quarto-safe classes)
+    const modalBg=el('div','lm-modal-bg'); const modal=el('div','lm-modal');
+    const mh=el('div','lm-modal-header'); const mhTitle=el('h4'); mhTitle.textContent='Round result'; const mhCele=el('div','celebrate'); mh.append(mhTitle,mhCele);
+    const mb=el('div','lm-modal-body'); const rEq=row('Equation:'), rMoves=row('Moves used:'), rPts=row('Points earned:'), rLives=row('Lives left:'); mb.append(rEq.wrap,rMoves.wrap,rPts.wrap,rLives.wrap);
+    const ma=el('div','lm-modal-actions'); const mNext=button('Next line','btn'), mClose=button('Close','btn btn-ghost'), mReset=button('New game','btn btn-danger'); ma.append(mNext,mClose,mReset);
+    modal.append(mh,mb,ma); modalBg.append(modal); document.body.append(modalBg);
 
-    function sp(){ const s=document.createElement('span'); s.style.width='8px'; return s; }
-    function btn(txt, on){ const b=el('button','leq4-btn'); b.textContent=txt; b.addEventListener('click',on); return b; }
-
-    // Margins
-    const M = { left: 40, right: 40, top: 64, bottom: 40 };
-
-    // World<->Pixel
-    function worldToPix(x, y, W, H) {
-      const innerW = W - M.left - M.right;
-      const innerH = H - M.top - M.bottom;
-      const sx = innerW / (state.xmax - state.xmin);
-      const sy = innerH / (state.ymax - state.ymin);
-      const px = M.left + (x - state.xmin) * sx;
-      const py = M.top + innerH - (y - state.ymin) * sy;
-      return [px, py];
-    }
-
-    // HiDPI helper
-    function sizeForDPR(c, cssW, cssH){
-      const dpr = window.devicePixelRatio || 1;
-      c.style.width = cssW+'px'; c.style.height = cssH+'px';
-      c.width = Math.max(1, Math.floor(cssW*dpr)); c.height = Math.max(1, Math.floor(cssH*dpr));
-      const ctx = c.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0); return {ctx,dpr};
-    }
-
-    // Random target with integer b, integer Δx, Δy
-    function newTarget(){
-      // y-intercept integer within bounds but not too close to edge
-      state.tb = randint(-7,7);
-      // pick Δx in [1..5], Δy in [-8..8]\{0}, reduce to keep slope reasonable
-      let dx = randint(1,5), dy = randint(-8,8); while(dy===0) dy = randint(-8,8);
-      // simplify fraction sign carried by dy
-      const g = gcd(Math.abs(dx), Math.abs(dy)); dx/=g; dy/=g;
-      // keep slope within ~[-4,4]
-      let m = dy/dx;
-      if (Math.abs(m) > 4) { dy = clampInt(dy, -8, 8); dx = clampInt(dx, 1, 5); m = dy/dx; }
-      state.tdx = dx; state.tdy = dy; state.tm = m;
-      // also randomize player starting m,b near 0 to avoid instant matches
-      state.m = roundTo(randf(-1,1), 0.1);
-      state.b = 0;
-      h.cur = state.m; v.cur = state.b;
-      hideToast();
-    }
-
-    // Sliders state
-    const h = { min: -5, max: 5, step: 0.01, cur: state.m };
-    const v = { min: -9, max: 9, step: 1,    cur: state.b };
-
-    // Drawing
-    function drawAll(){
-      sizePlot(); redrawH(); redrawV(); drawMain();
-      eqBadge.textContent = `y = ${fmtNum(state.m)}x ${state.b>=0?'+':'−'} ${fmtNum(Math.abs(state.b))}`;
-      tgtBadge.textContent = `Target: y = (${state.tdy}/${state.tdx})x + ${state.tb}`;
-      streakBadge.textContent = `Streak: ${state.streak}`;
-    }
-
-    function drawMain(){
-      const Wcss = canvas.clientWidth|0, Hcss = canvas.clientHeight|0;
-      if(!Wcss||!Hcss) return;
-      const ctx = canvas.getContext('2d');
-      ctx.clearRect(0,0,Wcss,Hcss);
-
-      const gridCol='#cbd5e1', axisCol='#1e293b', tickCol='#334155';
-      const playerCol='#0e7490', interceptCol='#111827';
-      const targetCol='#7c3aed';
-
+    // --- Drawing
+    let raf=null; const M={left:40,right:40,top:64,bottom:40};
+    function worldToPix(x,y,W,H){ const innerW=W-M.left-M.right, innerH=H-M.top-M.bottom; const sx=innerW/(state.xmax-state.xmin), sy=innerH/(state.ymax-state.ymin); const px=M.left+(x-state.xmin)*sx; const py=M.top+innerH-(y-state.ymin)*sy; return [px,py]; }
+    function sizeForDPR(c,w,h){ const dpr=window.devicePixelRatio||1; c.style.height=h+'px'; c.style.width=w+'px'; c.width=Math.max(1,Math.floor(w*dpr)); c.height=Math.max(1,Math.floor(h*dpr)); const ctx=c.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0); return ctx; }
+    function draw(){
+      const W=Math.max(1, Math.floor(wrap.getBoundingClientRect().width || root.clientWidth || 300));
+      if(W<10){ schedule(); return; }
+      const H=W; const ctx=sizeForDPR(canvas,W,H); ctx.clearRect(0,0,W,H);
+      const gridCol=getCSS('--grid'), axisCol=getCSS('--axis'), targetCol=getCSS('--target'), playerCol=getCSS('--player');
       // Grid
       ctx.lineWidth=1; ctx.strokeStyle=gridCol;
       for(let x=Math.ceil(state.xmin); x<=Math.floor(state.xmax); x++){
-        const [px0,py0]=worldToPix(x,state.ymin,Wcss,Hcss);
-        const [px1,py1]=worldToPix(x,state.ymax,Wcss,Hcss);
-        const X=Math.round(px0)+0.5; ctx.beginPath(); ctx.moveTo(X,py0); ctx.lineTo(X,py1); ctx.stroke();
+        const [px0,py0]=worldToPix(x,state.ymin,W,H); const [px1,py1]=worldToPix(x,state.ymax,W,H); const X=Math.round(px0)+0.5; ctx.beginPath(); ctx.moveTo(X,py0); ctx.lineTo(X,py1); ctx.stroke();
       }
       for(let y=Math.ceil(state.ymin); y<=Math.floor(state.ymax); y++){
-        const [px0,py0]=worldToPix(state.xmin,y,Wcss,Hcss);
-        const [px1,py1]=worldToPix(state.xmax,y,Wcss,Hcss);
-        const Y=Math.round(py0)+0.5; ctx.beginPath(); ctx.moveTo(px0,Y); ctx.lineTo(px1,Y); ctx.stroke();
+        const [px0,py0]=worldToPix(state.xmin,y,W,H); const [px1,py1]=worldToPix(state.xmax,y,W,H); const Y=Math.round(py0)+0.5; ctx.beginPath(); ctx.moveTo(px0,Y); ctx.lineTo(px1,Y); ctx.stroke();
       }
-
       // Axes
-      ctx.strokeStyle=axisCol; ctx.lineWidth=1.8;
-      const [xL,y0]=worldToPix(state.xmin,0,Wcss,Hcss);
-      const [xR]=worldToPix(state.xmax,0,Wcss,Hcss);
-      const yAxisPx=Math.round(y0)+0.5;
-      ctx.beginPath(); ctx.moveTo(xL,yAxisPx); ctx.lineTo(xR,yAxisPx); ctx.stroke();
-      const [x0,yB]=worldToPix(0,state.ymin,Wcss,Hcss);
-      const [,yT]=worldToPix(0,state.ymax,Wcss,Hcss);
-      const xAxisPx=Math.round(x0)+0.5;
-      ctx.beginPath(); ctx.moveTo(xAxisPx,yB); ctx.lineTo(xAxisPx,yT); ctx.stroke();
-
-      // Ticks + labels
-      ctx.fillStyle=tickCol; ctx.font='12px system-ui'; ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1;
-      for(let x=Math.ceil(state.xmin); x<=Math.floor(state.xmax); x++){
-        const [px]=worldToPix(x,0,Wcss,Hcss); const X=Math.round(px)+0.5;
-        ctx.beginPath(); ctx.moveTo(X,yAxisPx-5); ctx.lineTo(X,yAxisPx+5); ctx.stroke();
-        if(x!==0) ctx.fillText(String(x), X-4, yAxisPx+18);
-      }
-      for(let y=Math.ceil(state.ymin); y<=Math.floor(state.ymax); y++){
-        const [,py]=worldToPix(0,y,Wcss,Hcss); const Y=Math.round(py)+0.5;
-        ctx.beginPath(); ctx.moveTo(xAxisPx-5,Y); ctx.lineTo(xAxisPx+5,Y); ctx.stroke();
-        if(y!==0) ctx.fillText(String(y), xAxisPx+8, Y+4);
-      }
-
-      // Target line (dashed purple)
-      drawClippedLine(ctx, state.tm, state.tb, Wcss, Hcss, targetCol, 2.2, [8,6]);
-
-      // Player line (solid teal)
-      drawClippedLine(ctx, state.m, state.b, Wcss, Hcss, playerCol, 2.4, []);
-
-      // y-intercept dot for player
-      if(state.b>=state.ymin && state.b<=state.ymax){
-        const [ix,iy]=worldToPix(0,state.b,Wcss,Hcss);
-        ctx.fillStyle=interceptCol; ctx.beginPath(); ctx.arc(ix,iy,4,0,Math.PI*2); ctx.fill();
-      }
-
+      ctx.strokeStyle=axisCol; ctx.lineWidth=1.8; const [xL,y0]=worldToPix(state.xmin,0,W,H); const [xR]=worldToPix(state.xmax,0,W,H); const yAxisPx=Math.round(y0)+0.5; ctx.beginPath(); ctx.moveTo(xL,yAxisPx); ctx.lineTo(xR,yAxisPx); ctx.stroke(); const [x0,yB]=worldToPix(0,state.ymin,W,H); const [,yT]=worldToPix(0,state.ymax,W,H); const xAxisPx=Math.round(x0)+0.5; ctx.beginPath(); ctx.moveTo(xAxisPx,yB); ctx.lineTo(xAxisPx,yT); ctx.stroke();
+      // Ticks
+      ctx.fillStyle='#475569'; ctx.font='12px system-ui'; ctx.strokeStyle='#cbd5e1';
+      for(let x=Math.ceil(state.xmin); x<=Math.floor(state.xmax); x++){ const [px]=worldToPix(x,0,W,H); const X=Math.round(px)+0.5; ctx.beginPath(); ctx.moveTo(X,yAxisPx-5); ctx.lineTo(X,yAxisPx+5); ctx.stroke(); if(x!==0) ctx.fillText(String(x), X-4, yAxisPx+16); }
+      for(let y=Math.ceil(state.ymin); y<=Math.floor(state.ymax); y++){ const [,py]=worldToPix(0,y,W,H); const Y=Math.round(py)+0.5; ctx.beginPath(); ctx.moveTo(xAxisPx-5,Y); ctx.lineTo(xAxisPx+5,Y); ctx.stroke(); if(y!==0) ctx.fillText(String(y), xAxisPx+8, Y+4); }
+      // Line with halo helper
+      function lineWithHalo(m,b,color,width){ const pts=[]; const xMin=state.xmin,xMax=state.xmax,yMin=state.ymin,yMax=state.ymax; const yL=m*xMin+b, yR=m*xMax+b; add(xMin,yL); add(xMax,yR); if(Math.abs(m)>1e-12){ add((yMin-b)/m,yMin); add((yMax-b)/m,yMax); } function add(x,y){ if(x>=xMin-1e-9&&x<=xMax+1e-9&&y>=yMin-1e-9&&y<=yMax+1e-9) pts.push([x,y]); } if(pts.length<2) return; const [x1,y1]=worldToPix(pts[0][0],pts[0][1],W,H); const [x2,y2]=worldToPix(pts[1][0],pts[1][1],W,H); ctx.save(); ctx.lineWidth=width+3; ctx.strokeStyle='rgba(255,255,255,0.85)'; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); ctx.lineWidth=width; ctx.strokeStyle=color; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); ctx.restore(); }
+      // Target & player lines
+      lineWithHalo(slopeFromFrac(state.tdy,state.tdx), state.tb, targetCol, 3);
+      if(state.mSet && state.bSet){ const pulsing = state.pulse && (performance.now()-state.pulse.start < state.pulse.dur); if(pulsing) lineWithHalo(currentM(), currentB(), 'rgba(16,185,129,0.55)', 7); lineWithHalo(currentM(), currentB(), playerCol, 3.5); }
       // Equation badge
-      const eq = `y = ${fmtNum(state.m)}x ${state.b>=0?'+':'−'} ${fmtNum(Math.abs(state.b))}`;
-      ctx.font='14px system-ui';
-      const tw=ctx.measureText(eq).width;
-      const bx=Wcss - M.right - tw - 28;
-      const by=Math.max(18, Math.floor(M.top*.45)+10);
-      ctx.fillStyle='rgba(14,116,144,0.18)';
-      roundRect(ctx, bx, by-20, tw+32, 28, 10, true, false);
-      ctx.fillStyle=playerCol; ctx.fillText(eq, bx+14, by-3);
-
-      // Success check
-      if (isMatch()){
-        showToast();
-        state.streak += 1;
-        // new target after a brief pause
-        setTimeout(() => { newTarget(); drawAll(); }, 600);
-      }
+      eqBadge.textContent = (state.mSet && state.bSet) ? `y = ${fracStr(state.mFrac.n,state.mFrac.d)}x ${fmtB(state.b)}` : 'y = ?x ? ?';
+      if( (state.animM && !animDone(state.animM)) || (state.animB && !animDone(state.animB)) || (state.pulse && performance.now()-state.pulse.start < state.pulse.dur) ) schedule();
     }
+    function schedule(){ if(raf) return; raf=requestAnimationFrame(()=>{ raf=null; draw(); }); }
+    function startAnimM(from,to,dur=300){ state.animM={from,to,start:performance.now(),dur}; schedule(); }
+    function startAnimB(from,to,dur=300){ state.animB={from,to,start:performance.now(),dur}; schedule(); }
+    function ease(t){ return t<.5 ? 2*t*t : -1+(4-2*t)*t; }
+    function animValue(a){ const t=Math.min(1,(performance.now()-a.start)/a.dur); const e=ease(t); return a.from + (a.to-a.from)*e; }
+    function animDone(a){ return (performance.now()-a.start) >= a.dur; }
+    function currentM(){ return state.animM ? animValue(state.animM) : state.m; }
+    function currentB(){ return state.animB ? animValue(state.animB) : state.b; }
 
-    function drawClippedLine(ctx, m, b, Wcss, Hcss, color, lw, dash){
-      const pts=[];
-      const yL=m*state.xmin+b, yR=m*state.xmax+b;
-      addIf(state.xmin,yL); addIf(state.xmax,yR);
-      if(Math.abs(m)>1e-12){
-        const xB=(state.ymin-b)/m; addIf(xB,state.ymin);
-        const xT=(state.ymax-b)/m; addIf(xT,state.ymax);
-      }
-      function addIf(x,y){
-        if(x>=state.xmin-1e-9 && x<=state.xmax+1e-9 && y>=state.ymin-1e-9 && y<=state.ymax+1e-9)
-          pts.push([x,y]);
-      }
-      if(pts.length>=2){
-        const [x1,y1]=worldToPix(pts[0][0],pts[0][1],Wcss,Hcss);
-        const [x2,y2]=worldToPix(pts[1][0],pts[1][1],Wcss,Hcss);
-        ctx.save();
-        ctx.strokeStyle=color; ctx.lineWidth=lw; ctx.setLineDash(dash);
-        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
-        ctx.restore();
-      }
-    }
+    // --- Math helpers
+    function toInt(x,d){ const n=parseInt(x,10); return Number.isFinite(n)?n:d; }
+    function gcd(a,b){ a=Math.abs(a); b=Math.abs(b); while(b){ const t=b; b=a%b; a=t; } return a||1; }
+    function simplify(n,d){ if(d===0) return {n:1,d:0}; if(d<0){ n=-n; d=-d; } const g=gcd(n,d); return {n:n/g,d:d/g}; }
+    function fracStr(n,d){ const s=simplify(n,d); return s.d===1? String(s.n) : `(${s.n}/${s.d})`; }
+    function slopeFromFrac(n,d){ return d===0?Infinity:n/d; }
+    function decimalToFrac(x,maxDen=100){ const s=Math.sign(x); const ax=Math.abs(x); const num=Math.round(ax*maxDen); const g=gcd(num,maxDen); const r=simplify(s*num/g,maxDen/g); return r; }
+    function parseSlope(str){ const raw=(str||'').trim(); if(!raw) return null; if(raw.includes('/')){ const parts=raw.split('/'); if(parts.length!==2) return null; const a=parseInt(parts[0],10), b=parseInt(parts[1],10); if(!Number.isFinite(a)||!Number.isFinite(b)||b===0) return null; const s=simplify(a,b); return {m:slopeFromFrac(s.n,s.d), frac:s}; } const m=Number(raw); if(Number.isFinite(m)){ return {m, frac:decimalToFrac(m,100)}; } return null; }
+    function fmtB(b){ return `${b>=0?'+':'−'} ${Math.abs(b)}`; }
 
-    // Sliders drawing
-    function redrawH(){
-      const rect = mCanvas.getBoundingClientRect();
-      const Wcss=Math.max(360, Math.floor(rect.width));
-      const Hcss=84;
-      const {ctx}=sizeForDPR(mCanvas,Wcss,Hcss);
-
-      const y = Math.floor(Hcss*0.44)+0.5;
-      ctx.strokeStyle='#e2e8f0'; ctx.lineWidth=10; ctx.lineCap='round';
-      ctx.beginPath(); ctx.moveTo(34,y); ctx.lineTo(Wcss-34,y); ctx.stroke();
-
-      // integer ticks
-      ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1; ctx.fillStyle='#334155'; ctx.font='12px system-ui';
-      for(let t=Math.ceil(h.min); t<=Math.floor(h.max); t++){
-        const x=Math.round(h_valToPx(t,Wcss))+0.5;
-        ctx.beginPath(); ctx.moveTo(x,y-12); ctx.lineTo(x,y+12); ctx.stroke();
-        ctx.fillText(String(t), x-6, y+36);
-      }
-      // zero mark
-      const x0=Math.round(h_valToPx(0,Wcss))+0.5; ctx.strokeStyle='#64748b'; ctx.lineWidth=1.6;
-      ctx.beginPath(); ctx.moveTo(x0,y-18); ctx.lineTo(x0,y+18); ctx.stroke();
-
-      const hx=h_valToPx(h.cur,Wcss);
-      ctx.fillStyle='#0ea5a6'; ctx.beginPath(); ctx.arc(hx,y,7,0,Math.PI*2); ctx.fill();
-      ctx.strokeStyle='#155e75'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(hx,y,7,0,Math.PI*2); ctx.stroke();
-
-      // helper text
-      ctx.fillStyle='#475569'; ctx.font='12px system-ui';
-      ctx.fillText(`slope m = ${fmtNum(h.cur)}`, 10, 14);
-    }
-    function h_valToPx(v,W){ const pad=34,L=pad,R=W-pad; const t=(v-h.min)/(h.max-h.min); return L+t*(R-L); }
-    function h_pxToVal(px,W){ const pad=34,L=pad,R=W-pad; const t=clamp((px-L)/(R-L),0,1); const raw=h.min+t*(h.max-h.min); return roundTo(raw,h.step); }
-
-    function redrawV(){
-      const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 360;
-      const Wcss=120, Hcss=Math.max(260, Math.floor(graphHcss));
-      const {ctx}=sizeForDPR(bCanvas,Wcss,Hcss);
-
-      const x=Math.floor(Wcss/2)+0.5; const top=M.top, bottom=Hcss-32;
-
-      ctx.strokeStyle='#e2e8f0'; ctx.lineWidth=10; ctx.lineCap='round';
-      ctx.beginPath(); ctx.moveTo(x,top); ctx.lineTo(x,bottom); ctx.stroke();
-
-      ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1; ctx.fillStyle='#334155'; ctx.font='12px system-ui';
-      for(let t=v.min; t<=v.max; t++){
-        const y=Math.round(v_valToPx(t,Hcss,top,bottom))+0.5;
-        ctx.beginPath(); ctx.moveTo(x-12,y); ctx.lineTo(x+12,y); ctx.stroke();
-        if(t%1===0) ctx.fillText(String(t), x+22, y+4);
-      }
-
-      const y0=Math.round(v_valToPx(0,Hcss,top,bottom))+0.5;
-      ctx.strokeStyle='#64748b'; ctx.lineWidth=1.6; ctx.beginPath(); ctx.moveTo(x-16,y0); ctx.lineTo(x+16,y0); ctx.stroke();
-
-      const hy=v_valToPx(v.cur,Hcss,top,bottom);
-      ctx.fillStyle='#0ea5a6'; ctx.beginPath(); ctx.arc(x,hy,7,0,Math.PI*2); ctx.fill();
-      ctx.strokeStyle='#155e75'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(x,hy,7,0,Math.PI*2); ctx.stroke();
-
-      ctx.fillStyle='#475569'; ctx.font='12px system-ui';
-      ctx.fillText(`intercept b = ${fmtNum(v.cur)}`, 6, 14);
-    }
-    function v_valToPx(val,Hc,top,bottom){ const T=top,B=bottom; const t=(val-v.min)/(v.max-v.min); return B - t*(B-T); }
-    function v_pxToVal(py,Hc,top,bottom){ const T=top,B=bottom; const t=clamp((B-py)/(B-T),0,1); const raw=v.min+t*(v.max-v.min); return Math.round(raw); }
-
-    // Dragging
-    let draggingH=false, draggingV=false;
-    mCanvas.addEventListener('mousedown', e=>{ draggingH=true; onMoveH(e); e.preventDefault(); });
-    mCanvas.addEventListener('mousemove', onMoveH);
-    window.addEventListener('mouseup', ()=> draggingH=false);
-
-    bCanvas.addEventListener('mousedown', e=>{ draggingV=true; onMoveV(e); e.preventDefault(); });
-    bCanvas.addEventListener('mousemove', onMoveV);
-    window.addEventListener('mouseup', ()=> draggingV=false);
-
-    function onMoveH(e){
-      if(!draggingH) return;
-      const rect=mCanvas.getBoundingClientRect();
-      const px=e.clientX-rect.left;
-      const newVal=h_pxToVal(px, rect.width);
-      if(Math.abs(newVal-h.cur)>1e-9){ h.cur=newVal; state.m=newVal; drawMain(); redrawH(); }
-    }
-    function onMoveV(e){
-      if(!draggingV) return;
-      const rect=bCanvas.getBoundingClientRect();
-      const py=e.clientY-rect.top; const top=M.top, bottom=rect.height-32;
-      const newVal=v_pxToVal(py, rect.height, top, bottom);
-      if(Math.abs(newVal-v.cur)>1e-9){ v.cur=newVal; state.b=newVal; drawMain(); redrawV(); }
-    }
-
-    // Sizing
-    function sizePlot(){
-      const rect = plot.getBoundingClientRect();
-      const Wcss = Math.max(460, Math.floor(rect.width));
-      const Hcss = Wcss; // square
-      sizeForDPR(canvas, Wcss, Hcss);
-    }
-
-    // Match check (tolerant m; exact b since integer)
-    function isMatch(){
-      const epsM = 0.02; // tolerance so students can hit 2/3≈0.67
-      return Math.abs(state.m - state.tm) <= epsM && state.b === state.tb;
-    }
-
-    function showToast(){ toast.classList.add('show'); setTimeout(hideToast, 450); }
-    function hideToast(){ toast.classList.remove('show'); }
-
-    // Helpers
-    function gcd(a,b){ while(b){ const t=b; b=a%b; a=t; } return a||1; }
+    // --- Target generation & game logic
     function randint(a,b){ return Math.floor(Math.random()*(b-a+1))+a; }
-    function randf(a,b){ return a + Math.random()*(b-a); }
-    function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
-    function clampInt(v,min,max){ return Math.max(min, Math.min(max, v)); }
-    function roundTo(x,step){ return Math.round(x/step)*step; }
-    function fmtNum(x){ return (Math.abs(x)%1<1e-9) ? String(Math.round(x)) : x.toFixed(2).replace(/\.?0+$/,''); }
-    function el(tag, cls){ const n=document.createElement(tag); if(cls) n.className=cls; return n; }
-    function roundRect(ctx,x,y,w,h,r,fill,stroke){
-      if(typeof r==='number') r={tl:r,tr:r,br:r,bl:r};
-      ctx.beginPath();
-      ctx.moveTo(x+r.tl,y); ctx.lineTo(x+w-r.tr,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r.tr);
-      ctx.lineTo(x+w,y+h-r.br); ctx.quadraticCurveTo(x+w,y+h,x+w-r.br,y+h);
-      ctx.lineTo(x+r.bl,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r.bl);
-      ctx.lineTo(x,y+r.tl); ctx.quadraticCurveTo(x,y,x+r.tl,y);
-      if(fill) ctx.fill(); if(stroke) ctx.stroke();
+    function newTarget(){
+      if(state.lives<=0){ return; }
+      const xmin=state.xmin, xmax=state.xmax, ymin=state.ymin, ymax=state.ymax;
+      function fits(m,b){ const yL=m*xmin+b, yR=m*xmax+b; const xB=Math.abs(m)<1e-12?Infinity:(ymin-b)/m; const xT=Math.abs(m)<1e-12?Infinity:(ymax-b)/m; const cond1=(yL>=ymin&&yL<=ymax)||(yR>=ymin&&yR<=ymax); const cond2=(xB>=xmin&&xB<=xmax)||(xT>=xmin&&xT<=xmax); return cond1||cond2; }
+      let tries=0; do{ state.tb = randint(-8,8); let dx=randint(1,6), dy=randint(-6,6); while(dy===0) dy=randint(-6,6); const s=simplify(dy,dx); state.tdy=Math.max(-8,Math.min(8,s.n)); state.tdx=Math.max(1,Math.min(8,s.d)); tries++; } while(tries<50 && !fits(slopeFromFrac(state.tdy,state.tdx), state.tb));
+      state.moves=0; state.mSet=false; state.bSet=false; state.pulse=null; state.animM=null; state.animB=null; slopeField.input.value=''; bField.input.value=''; setControlsEnabled(true); updateUI(); schedule();
+    }
+    function isMatch(){ const tm=slopeFromFrac(state.tdy,state.tdx); return state.mSet && state.bSet && Math.abs(state.m - tm) < 1e-9 && state.b===state.tb; }
+    function updateUI(){ pillMoves.lastChild.textContent = `${state.moves}/${maxMoves}`; pillLives.lastChild.textContent = `${state.lives}`; pillScore.lastChild.textContent = `${state.score}`; }
+
+    function showModal(success, points){
+      mhTitle.textContent = success ? 'You nailed it!' : (state.lives>0 ? 'Out of moves' : 'Game Over');
+      mhCele.textContent = success ? '✨🏆' : (state.lives>0 ? '😬⏳' : '💥');
+      const mT=fracStr(state.tdy,state.tdx); const eqTarget=`y = ${mT}x ${fmtB(state.tb)}`; const eqPlayer=(state.mSet&&state.bSet)?`y = ${fracStr(state.mFrac.n,state.mFrac.d)}x ${fmtB(state.b)}`:'—';
+      rEq.val.textContent = success ? `Your answer: ${eqPlayer}` : `Oh no! You ran out of moves. The equation was ${eqTarget}`;
+      rMoves.val.textContent=String(state.moves);
+      rPts.val.textContent=success?String(points):'0';
+      rLives.val.textContent=String(state.lives);
+      modalBg.style.display='flex';
+      mNext.style.display = state.lives>0 ? '' : 'none';
+      mReset.style.display = '';
+      mNext.onclick = ()=>{ modalBg.style.display='none'; newTarget(); };
+      mClose.onclick = ()=>{ modalBg.style.display='none'; };
+      mReset.onclick = ()=>{ state.score=0; state.lives=maxLives; modalBg.style.display='none'; newTarget(); };
     }
 
-    // Resize observer
-    const ro = new ResizeObserver(() => drawAll());
-    ro.observe(root);
+    // --- Actions
+    function commitBoth(){
+      if(state.lives<=0) return; // stop on game over
+      const mP = parseSlope(slopeField.input.value);
+      const bVal = parseInt(bField.input.value,10);
+      if(!mP || !Number.isFinite(bVal)) return;
+      const newM=mP.m, newFrac=mP.frac||decimalToFrac(mP.m,100);
+      const fromM = state.mSet? state.m : newM; const fromB = state.bSet? state.b : bVal;
+      state.m=newM; state.mFrac=newFrac; state.mSet=true; startAnimM(fromM,newM,320);
+      state.b=bVal; state.bSet=true; startAnimB(fromB,bVal,320);
+      if(state.moves<maxMoves) state.moves += 1; updateUI();
+      setTimeout(()=>{
+        if(isMatch()){
+          state.pulse = { start: performance.now(), dur: 900 }; schedule();
+          const points = Math.max(0, maxMoves - state.moves);
+          state.score += points; updateUI();
+          setTimeout(()=> showModal(true, points), 950);
+        } else if(state.moves >= maxMoves){
+          if(state.lives>0) state.lives -= 1; if(state.lives<0) state.lives=0; updateUI();
+          if(state.lives<=0){ setControlsEnabled(false); }
+          showModal(false, 0);
+        }
+      }, 340);
+    }
 
-    // Go!
+    apply.addEventListener('click', commitBoth);
+    slopeField.input.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); commitBoth(); }});
+    bField.input.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); commitBoth(); }});
+    newBtn.addEventListener('click', ()=>{ state.score=0; state.lives=maxLives; newTarget(); });
+
+    // Responsive sizing for Quarto
+    const ro = new ResizeObserver(()=>{ schedule(); });
+    ro.observe(wrap);
+    window.addEventListener('resize', schedule);
     newTarget();
-    drawAll();
+
+    // --- Dev tests
+    try{
+      console.assert(JSON.stringify(simplify(6,8))==='{"n":3,"d":4}','simplify 6/8');
+      console.assert(JSON.stringify(simplify(-6,-8))==='{"n":3,"d":4}','simplify -6/-8');
+      console.assert(JSON.stringify(decimalToFrac(1.5,10))==='{"n":3,"d":2}','dec to frac 1.5');
+      const p1=parseSlope('-3/2'); console.assert(p1 && p1.m===-1.5 && p1.frac.n===-3 && p1.frac.d===2,'parse -3/2');
+      const p2=parseSlope('2'); console.assert(p2 && p2.m===2 && p2.frac.n===2 && p2.frac.d===1,'parse 2');
+      const p3=parseSlope(' -4 / -2 '); console.assert(p3 && p3.m===2 && p3.frac.n===2 && p3.frac.d===1,'parse spaced -4/-2');
+      console.assert(fmtB(3)==='+ 3' && fmtB(-3)==='− 3','fmtB signs');
+      console.log('Line Match Game v5.6 tests passed');
+    }catch(e){ console.warn('Tests failed',e); }
+
+    // --- helpers
+    function card(title){ const root=el('div','card'); const body=el('div','card-body'); const h=el('h3'); h.textContent=title; root.append(h,body); return {root,body}; }
+    function field(labelText,inputEl){ const wrap=el('div','field'); const lab=el('label'); lab.textContent=labelText; wrap.append(lab,inputEl); return {wrap, input:inputEl}; }
+    function input(type,ph,id){ const i=el('input','input'); i.type=type; i.placeholder=ph; if(id) i.id=id; return i; }
+    function button(text,cls){ const b=el('button', cls||'btn'); b.textContent=text; return b; }
+    function pill(k,v){ const p=el('div','pill'); const a=el('span','muted'); a.textContent=k+':'; const b=document.createElement('span'); b.textContent=v; p.append(a,b); return p; }
+    function elWrap(tag,cls,child){ const n=el(tag,cls); if(child) n.append(child); return n; }
+    function row(label){ const wrap=el('div','lm-row'); const l=el('div','lm-label'); l.textContent=label; const v=document.createElement('div'); wrap.append(l,v); return {wrap, val:v}; }
+    function el(tag,cls){ const n=document.createElement(tag); if(cls) n.className=cls; return n; }
+    function getCSS(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+    function setControlsEnabled(enabled){ slopeField.input.disabled=!enabled; bField.input.disabled=!enabled; apply.disabled=!enabled; }
   }
 })();
 </script>
