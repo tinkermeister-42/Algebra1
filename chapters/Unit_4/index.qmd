@@ -1,8 +1,10 @@
 # Introduction {.unnumbered}
 
 Welcome to **Unit 4!**
+
 Here we take what you’ve learned about equations and bring them to life on the **coordinate plane**.
-You’ll learn how equations like (y = mx + b) represent straight lines, what slope and intercept mean, and how these simple rules can **model real situations**—from earnings to motion to limits on spending.
+
+You’ll learn how equations like $y = mx + b$ represent straight lines, what slope and intercept mean, and how these simple rules can **model real situations**—from earnings to motion to limits on spending.
 
 You’ll also extend this idea to **inequalities**, showing not just one solution but entire **regions** of possibilities.
 
@@ -12,10 +14,14 @@ You’ll also extend this idea to **inequalities**, showing not just one solutio
 
 By the end of this unit, you’ll be able to:
 
-* **Graph and interpret linear functions** using equations like (y = mx + b) or (f(x) = mx + b).
+* **Graph and interpret linear functions** using equations like $y = mx + b$ or $f(x) = mx + b$.
+
 * **Find and describe slope and intercepts**, and explain what they mean in context.
+
 * **Write equations of lines** from graphs, tables, points, or real-world descriptions.
+
 * **Use linear equations to model real situations**, predict values, and estimate best-fit lines.
+
 * **Graph linear inequalities** to show ranges of possible solutions.
 
 ---
@@ -23,20 +29,20 @@ By the end of this unit, you’ll be able to:
 ## Topics in This Unit
 
 [**Graphing Function Rules**](4.1_Graphing_Function_Rules.html)
-Use equations like (y = 2x + 1) as rules to generate points.
+Use equations like $y = 2x + 1$ as rules to generate points.
 Plot those points to see how linear functions make straight-line graphs.
 
 [**Understanding Slope**](4.2_Understanding_Slope.html)
 Explore slope as *rate of change*.
 Find slope from graphs or points, compare positive, negative, zero, and undefined slopes, and connect to real-world rates.
 
-[**The Equation of a Line ((y = mx + b))**](4.3_The_Equation_of_a_Line.html)
-Discover how slope ((m)) and intercept ((b)) shape a line.
+[**The Equation of a Line ($y = mx + b$)**](4.3_The_Equation_of_a_Line.html)
+Discover how slope ($m$) and intercept ($b$) shape a line.
 Graph quickly from slope and intercept, and see how changing them moves the line.
 
 [**Writing Linear Equations**](4.4_Writing_Linear_Equations.html)
 Write equations from graphs, data, or descriptions.
-Use slope-intercept and point-slope form, and explain what (m) and (b) mean in context.
+Use slope-intercept and point-slope form, and explain what $m$ and $b$ mean in context.
 
 [**Linear Models in the Real World**](4.5_Linear_Models_in_the_Real_World.html)
 Model real situations like costs, temperature changes, or speed.

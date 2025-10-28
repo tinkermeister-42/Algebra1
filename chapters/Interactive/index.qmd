@@ -17,6 +17,16 @@ Coming Soon
 
 #### [Slope Explorer](Unit_4/understanding_slope.qmd)
 
+Drag points around the grid to see how slope changes with point position.
+
 #### [Slope-Intercept Form Investigation](Unit_4/exploring_slope_intercept_form.qmd)
 
+Move the slope and y-intercept sliders to see how lines change based on their equation.
+
+#### [Line Matching Game](Unit_4/slope_intercept_form_game.qmd)
+
+Try to get a high score matching slopes and intercepts in this fast-paced matching game.
+
 #### [Intro to Correlation](Unit_4/intro_to_correlation.qmd)
+
+Move the slider to see the effect of different correlation values.

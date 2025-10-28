@@ -1,57 +1,60 @@
-<div class="correlation-widget" data-points="140" style="max-width:640px;margin:1rem auto"></div>
+<!-- Correlation Widget – HiDPI crisp, white canvas, compact UI -->
+<div class="correlation-widget" data-points="140" style="max-width:600px;margin:0.75rem auto"></div>
 
 <style>
   .correlation-widget {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff !important;
   }
 
+  /* Compact controls */
   .cw-controls {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(80px, auto) 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "label slider pill" "rho rho refresh";
     align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    min-height: 56px;
+    column-gap: 10px;
+    row-gap: 6px;
     border: 1px solid #eee;
     border-radius: 10px;
-    padding: 8px 10px;
-    margin-bottom: 10px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    background: #fff
   }
 
   .cw-label {
-    color: #666;
-    font-size: 0.95rem;
-  }
-
-  .cw-slider {
-    width: 260px;
+    color: #555;
+    font-size: .95rem
   }
 
   .cw-pill {
     display: inline-block;
     border-radius: 999px;
-    padding: 4px 10px;
+    padding: 3px 8px;
     line-height: 1;
-    min-width: 140px;
+    min-width: 110px;
     text-align: center;
     font-weight: 600;
+    font-size: .8rem;
     color: #fff;
-    background: #6a737d;
+    background: #6a737d
   }
 
   .cw-metrics {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: baseline;
     color: #666;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.95rem;
+    font-size: .95rem
   }
 
   .cw-val {
     display: inline-block;
     min-width: 7ch;
     text-align: right;
-    color: #222;
+    color: #222
   }
 
   .cw-btn {
@@ -59,209 +62,235 @@
     background: #fff;
     border-radius: 8px;
     padding: 6px 10px;
-    cursor: pointer;
+    cursor: pointer
   }
 
-  /* square canvas; keep 1:1 aspect */
+  .cw-slider {
+    width: 100%;
+    cursor: grab
+  }
+
+  .cw-slider:active {
+    cursor: grabbing
+  }
+
+  @media (max-width:520px) {
+    .cw-slider {
+      width: 160px
+    }
+  }
+
+  /* Square canvas (CSS size) */
   .cw-canvas {
     border: 1px solid #ddd;
     border-radius: 10px;
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
+    background: #fff
   }
 
+  /* Color states */
   .cw-pos {
-    background: #22863a !important;
+    background: #22863a !important
   }
 
   .cw-neg {
-    background: #d73a49 !important;
+    background: #d73a49 !important
   }
 
   .cw-neu {
-    background: #6a737d !important;
-  }
-
-  .cw-slider {
-    width: 260px;
-    cursor: grab;
-  }
-
-  .cw-slider:active {
-    cursor: grabbing;
+    background: #6a737d !important
   }
 </style>
 
 <script>
-(() => {
-  function createWidget(root) {
-    // -------- Build UI (unchanged) --------
-    const controls = document.createElement('div'); controls.className = 'cw-controls';
-    const label = document.createElement('span'); label.className = 'cw-label'; label.textContent = 'Correlation:';
-    const slider = document.createElement('input'); slider.type = 'range'; slider.min = '-0.99'; slider.max = '0.99'; slider.step = '0.01'; slider.value = '0.80'; slider.className = 'cw-slider';
-    const pill = document.createElement('span'); pill.className = 'cw-pill cw-neu'; pill.textContent = 'High Positive';
-    const metrics = document.createElement('div'); metrics.className = 'cw-metrics';
-    const tWrap = document.createElement('span'); tWrap.innerHTML = 'ρ: <span class="cw-val cw-target">+0.80</span>';
-    metrics.appendChild(tWrap);
-    const refresh = document.createElement('button'); refresh.className = 'cw-btn'; refresh.title = 'New random base cloud (keeps current ρ)'; refresh.textContent = '🔁 New Sample';
-    controls.append(label, slider, pill, metrics, refresh);
+  (() => {
+    function createWidget(root) {
+      // UI
+      const controls = document.createElement('div'); controls.className = 'cw-controls';
+      const label = document.createElement('span'); label.className = 'cw-label'; label.textContent = 'Correlation:';
+      const slider = document.createElement('input'); slider.type = 'range'; slider.min = '-0.99'; slider.max = '0.99'; slider.step = '0.01'; slider.value = '0.80'; slider.className = 'cw-slider';
+      const pill = document.createElement('span'); pill.className = 'cw-pill cw-neu'; pill.textContent = 'High Positive';
+      const metrics = document.createElement('div'); metrics.className = 'cw-metrics';
+      const tWrap = document.createElement('span'); tWrap.innerHTML = 'ρ: <span class="cw-val cw-target">+0.80</span>';
+      const targetEl = tWrap.querySelector('.cw-target');
+      const refresh = document.createElement('button'); refresh.className = 'cw-btn'; refresh.title = 'New random base cloud (keeps current ρ)'; refresh.textContent = '🔁 New Sample';
+      metrics.appendChild(tWrap);
+      // place into fixed grid rows
+      label.style.gridArea = 'label';
+      slider.style.gridArea = 'slider';
+      pill.style.gridArea = 'pill';
+      metrics.style.gridArea = 'rho';
+      refresh.style.gridArea = 'refresh';
+      controls.append(label, slider, pill, metrics, refresh);
 
-    const canvas = document.createElement('canvas'); canvas.className = 'cw-canvas';
-    canvas.width = 600; canvas.height = 600; // square, crisp
-    root.append(controls, canvas);
+      const canvas = document.createElement('canvas'); canvas.className = 'cw-canvas';
+      root.append(controls, canvas);
 
-    const targetEl = metrics.querySelector('.cw-target');
-    const ctx = canvas.getContext('2d');
+      const ctx = canvas.getContext('2d', { alpha: false });
 
-    // -------- Fixed axes --------
-    const AX = { xmin:-3, xmax:3, ymin:-3, ymax:3, pad:56 };
-    const w = canvas.width - 2*AX.pad, h = canvas.height - 2*AX.pad;
-    const sx = x => AX.pad + (x-AX.xmin)/(AX.xmax-AX.xmin)*w;
-    const sy = y => canvas.height - AX.pad - (y-AX.ymin)/(AX.ymax-AX.ymin)*h;
+      // Layout & HiDPI
+      const AX = { xmin: -3, xmax: 3, ymin: -3, ymax: 3, pad: 52 }; // CSS px
+      let Wcss = 0, Hcss = 0, dpr = 1, PX = 1;
 
-    // Cache the grid on an offscreen canvas
-    const grid = document.createElement('canvas');
-    grid.width = canvas.width; grid.height = canvas.height;
-    (function drawGridOffscreen(){
-      const g = grid.getContext('2d');
-      g.clearRect(0,0,grid.width, grid.height);
-      // grid
-      g.strokeStyle = '#e6e6e6'; g.lineWidth = 1;
-      for(let x=-3;x<=3;x++){ g.beginPath(); g.moveTo(sx(x), sy(-3)); g.lineTo(sx(x), sy(3)); g.stroke(); }
-      for(let y=-3;y<=3;y++){ g.beginPath(); g.moveTo(sx(-3), sy(y)); g.lineTo(sx(3), sy(y)); g.stroke(); }
-      // axes
-      g.strokeStyle = '#bdbdbd'; g.lineWidth = 1.5;
-      g.beginPath(); g.moveTo(sx(-3), sy(0)); g.lineTo(sx(3), sy(0)); g.stroke();
-      g.beginPath(); g.moveTo(sx(0), sy(-3)); g.lineTo(sx(0), sy(3)); g.stroke();
-      // ticks
-      g.fillStyle = '#6a6a6a'; g.font = '12px system-ui, sans-serif';
-      for(let x=-3;x<=3;x++) g.fillText(String(x), sx(x)-3, sy(0)+14);
-      for(let y=-3;y<=3;y++) if(y!==0) g.fillText(String(y), sx(0)+6, sy(y)+4);
-    })();
-
-    // -------- RNG --------
-    function randn(){ let u=0,v=0; while(!u)u=Math.random(); while(!v)v=Math.random();
-      return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
-
-    const N = Number(root.dataset.points || 140);
-
-    // -------- Helpers (vector ops) --------
-    function center(v){ const n=v.length; let s=0; for(let i=0;i<n;i++) s+=v[i]; const mu=s/n;
-      const out=new Float32Array(n); for(let i=0;i<n;i++) out[i]=v[i]-mu; return out; }
-    function sd(v){ const n=v.length; let s=0; for(let i=0;i<n;i++) s+=v[i]; const mu=s/n;
-      let ss=0; for(let i=0;i<n;i++){ const d=v[i]-mu; ss+=d*d; } return Math.sqrt(ss/n); }
-    function scaleToUnitSD(v){ const s=sd(v)||1; const n=v.length; const out=new Float32Array(n);
-      for(let i=0;i<n;i++) out[i]=v[i]/s; return out; }
-    function dot(a,b){ let s=0; for(let i=0;i<a.length;i++) s+=a[i]*b[i]; return s; }
-
-    // -------- Base data & precomputation (ONE-TIME per refresh) --------
-    let X_unit, Zperp_unit; // cached, unit-variance & uncorrelated
-    function initBase() {
-      // new raw normals
-      const X0 = new Float32Array(N);
-      const Z0 = new Float32Array(N);
-      for (let i=0;i<N;i++){ X0[i]=randn(); Z0[i]=randn(); }
-      // center
-      const Xc = center(X0);
-      const Zc = center(Z0);
-      // orthogonalize: Z⊥ = Zc - proj_Xc(Zc)
-      const uu = dot(Xc, Xc) || 1;
-      const k  = dot(Xc, Zc) / uu;
-      const Zperp = new Float32Array(N); for(let i=0;i<N;i++) Zperp[i] = Zc[i] - k*Xc[i];
-      // standardize to sd=1 (sample)
-      X_unit      = scaleToUnitSD(Xc);
-      Zperp_unit  = scaleToUnitSD(Zperp);
-    }
-    initBase();
-
-    // -------- Fast transform per ρ (no re-centering/GS) --------
-    const XY = new Float32Array(2*N); // reused buffer
-    function buildXY(rho){
-      const s = Math.sqrt(1 - rho*rho);
-      for(let i=0;i<N;i++){
-        const x = X_unit[i];
-        XY[2*i]   = x;
-        XY[2*i+1] = rho * x + s * Zperp_unit[i];
+      function resizeCanvas() {
+        const cssW = Math.max(1, Math.round(canvas.clientWidth));
+        const cssH = cssW; // 1:1
+        if (cssW === Wcss && cssH === Hcss) return;
+        Wcss = cssW; Hcss = cssH;
+        dpr = Math.min(3, window.devicePixelRatio || 1);
+        PX = 1 / dpr;                        // crisp 1 device pixel
+        canvas.width = Math.max(1, Math.floor(Wcss * dpr));
+        canvas.height = Math.max(1, Math.floor(Hcss * dpr));
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);   // draw in CSS units
+        scheduleRender(currentRho, true);
       }
-    }
 
-    // -------- Least-squares fit (cheap) --------
-    function fitLine(){
-      let sx=0, sy=0, sxx=0, sxy=0, n=N;
-      for(let i=0;i<N;i++){ const x=XY[2*i], y=XY[2*i+1]; sx+=x; sy+=y; sxx+=x*x; sxy+=x*y; }
-      const mx=sx/n, my=sy/n;
-      const num = sxy - n*mx*my;
-      const den = sxx - n*mx*mx;
-      const m = num / den;
-      const b = my - m*mx;
-      return {m,b};
-    }
+      const sx = x => AX.pad + (x - AX.xmin) / (AX.xmax - AX.xmin) * (Wcss - 2 * AX.pad);
+      const sy = y => Hcss - AX.pad - (y - AX.ymin) / (AX.ymax - AX.ymin) * (Hcss - 2 * AX.pad);
 
-    // -------- Draw (uses cached grid) --------
-    function draw(line){
-      ctx.clearRect(0,0,canvas.width, canvas.height);
-      ctx.drawImage(grid, 0, 0); // cached grid
-      ctx.fillStyle = '#3777c2';
-      for(let i=0;i<N;i++){
-        const x=XY[2*i], y=XY[2*i+1];
-        if (x<-3||x>3||y<-3||y>3) continue;
-        ctx.beginPath(); ctx.arc(sx(x), sy(y), 3, 0, 2*Math.PI); ctx.fill();
+      // RNG & data
+      function randn() {
+        let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random();
+        return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
       }
-      ctx.strokeStyle = '#ff8c00'; ctx.lineWidth = 2;
-      ctx.beginPath(); ctx.moveTo(sx(AX.xmin), sy(line.m*AX.xmin + line.b));
-      ctx.lineTo(sx(AX.xmax), sy(line.m*AX.xmax + line.b)); ctx.stroke();
-    }
 
-    // -------- Descriptor & UI --------
-    function descriptor(rho){
-      const a=Math.abs(rho);
-      const strength = (a<0.15)?"No/Very Weak":(a<0.35)?"Low":(a<0.65)?"Moderate":"High";
-      let cls='cw-neu', text=strength;
-      if (rho>0.05){ cls='cw-pos'; text=`${strength} Positive`; }
-      else if (rho<-0.05){ cls='cw-neg'; text=`${strength} Negative`; }
-      pill.classList.remove('cw-pos','cw-neg','cw-neu'); pill.classList.add(cls);
-      pill.textContent = text;
-    }
+      const N = Number(root.dataset.points || 140);
 
-    // -------- Render loop (throttled with rAF) --------
-    let currentRho = parseFloat(slider.value);
-    let pendingRho = null;
-    function scheduleRender(rho){
-      pendingRho = rho;
-      if (!rafScheduled) {
-        rafScheduled = true;
-        requestAnimationFrame(() => {
-          rafScheduled = false;
-          if (pendingRho === null) return;
-          currentRho = pendingRho; pendingRho = null;
-
-          buildXY(currentRho);             // cheap
-          const line = fitLine();          // cheap
-          descriptor(currentRho);
-          targetEl.textContent = (currentRho>=0?'+':'') + currentRho.toFixed(2);
-          draw(line);
-        });
+      function center(v) {
+        const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i]; const mu = s / n;
+        const out = new Float32Array(n); for (let i = 0; i < n; i++) out[i] = v[i] - mu; return out;
       }
+      function sd(v) {
+        const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i]; const mu = s / n;
+        let ss = 0; for (let i = 0; i < n; i++) { const d = v[i] - mu; ss += d * d; } return Math.sqrt(ss / n);
+      }
+      function scaleToUnitSD(v) {
+        const s = sd(v) || 1; const n = v.length; const out = new Float32Array(n);
+        for (let i = 0; i < n; i++) out[i] = v[i] / s; return out;
+      }
+      function dot(a, b) { let s = 0; for (let i = 0; i < a.length; i++) s += a[i] * b[i]; return s; }
+
+      let X_unit, Zperp_unit;
+      function initBase() {
+        const X0 = new Float32Array(N), Z0 = new Float32Array(N);
+        for (let i = 0; i < N; i++) { X0[i] = randn(); Z0[i] = randn(); }
+        const Xc = center(X0), Zc = center(Z0);
+        const uu = dot(Xc, Xc) || 1;
+        const k = dot(Zc, Xc) / uu;
+        const Zperp = new Float32Array(N); for (let i = 0; i < N; i++) Zperp[i] = Zc[i] - k * Xc[i];
+        X_unit = scaleToUnitSD(Xc); Zperp_unit = scaleToUnitSD(Zperp);
+      }
+      initBase();
+
+      const XY = new Float32Array(2 * N);
+      function buildXY(rho) {
+        const s = Math.sqrt(1 - rho * rho);
+        for (let i = 0; i < N; i++) {
+          const x = X_unit[i];
+          XY[2 * i] = x;
+          XY[2 * i + 1] = rho * x + s * Zperp_unit[i];
+        }
+      }
+
+      function fitLine() {
+        let sxv = 0, syv = 0, sxx = 0, sxy = 0;
+        for (let i = 0; i < N; i++) { const x = XY[2 * i], y = XY[2 * i + 1]; sxv += x; syv += y; sxx += x * x; sxy += x * y; }
+        const n = N, mx = sxv / n, my = syv / n;
+        const m = (sxy - n * mx * my) / (sxx - n * mx * mx);
+        const b = my - m * mx;
+        return { m, b };
+      }
+
+      function draw(line) {
+        // White background to avoid any dark compositing on some browsers
+        ctx.save();
+        ctx.fillStyle = '#fff';
+        ctx.fillRect(0, 0, Wcss, Hcss);
+        ctx.restore();
+
+        // Grid
+        ctx.lineWidth = PX;
+        ctx.strokeStyle = '#e6e6e6';
+        for (let x = -3; x <= 3; x++) {
+          const X = Math.round(sx(x));
+          ctx.beginPath(); ctx.moveTo(X, sy(-3)); ctx.lineTo(X, sy(3)); ctx.stroke();
+        }
+        for (let y = -3; y <= 3; y++) {
+          const Y = Math.round(sy(y));
+          ctx.beginPath(); ctx.moveTo(sx(-3), Y); ctx.lineTo(sx(3), Y); ctx.stroke();
+        }
+
+        // Axes
+        ctx.lineWidth = 2 * PX;
+        ctx.strokeStyle = '#bdbdbd';
+        const Y0 = Math.round(sy(0));
+        ctx.beginPath(); ctx.moveTo(sx(-3), Y0); ctx.lineTo(sx(3), Y0); ctx.stroke();
+        const X0 = Math.round(sx(0));
+        ctx.beginPath(); ctx.moveTo(X0, sy(-3)); ctx.lineTo(X0, sy(3)); ctx.stroke();
+
+        // Ticks / labels
+        ctx.fillStyle = '#6a6a6a';
+        ctx.font = '12px system-ui, sans-serif';
+        for (let x = -3; x <= 3; x++) ctx.fillText(String(x), sx(x) - 3, Y0 + 14);
+        for (let y = -3; y <= 3; y++) if (y !== 0) ctx.fillText(String(y), X0 + 6, sy(y) + 4);
+
+        // Points
+        ctx.fillStyle = '#3777c2';
+        for (let i = 0; i < N; i++) {
+          const x = XY[2 * i], y = XY[2 * i + 1];
+          if (x < -3 || x > 3 || y < -3 || y > 3) continue;
+          ctx.beginPath(); ctx.arc(sx(x), sy(y), 2, 0, Math.PI * 2); ctx.fill();
+        }
+
+        // Regression line
+        ctx.lineWidth = 2 * PX;
+        ctx.strokeStyle = '#ff8c00';
+        ctx.beginPath();
+        ctx.moveTo(sx(AX.xmin), sy(line.m * AX.xmin + line.b));
+        ctx.lineTo(sx(AX.xmax), sy(line.m * AX.xmax + line.b));
+        ctx.stroke();
+      }
+
+      function descriptor(rho) {
+        const a = Math.abs(rho);
+        const strength = (a < 0.15) ? "No/Very Weak" : (a < 0.35) ? "Low" : (a < 0.65) ? "Moderate" : "High";
+        let cls = 'cw-neu', text = strength;
+        if (rho > 0.05) { cls = 'cw-pos'; text = `${strength} Positive`; }
+        else if (rho < -0.05) { cls = 'cw-neg'; text = `${strength} Negative`; }
+        pill.classList.remove('cw-pos', 'cw-neg', 'cw-neu'); pill.classList.add(cls);
+        pill.textContent = text;
+      }
+
+      // Render loop
+      let currentRho = parseFloat(slider.value);
+      let pendingRho = null, rafScheduled = false;
+      function scheduleRender(rho, force = false) {
+        if (typeof rho === 'number') pendingRho = rho;
+        if (force) { doRender(); return; }
+        if (!rafScheduled) { rafScheduled = true; requestAnimationFrame(doRender); }
+      }
+      function doRender() {
+        rafScheduled = false;
+        if (pendingRho !== null) { currentRho = pendingRho; pendingRho = null; }
+        buildXY(currentRho);
+        descriptor(currentRho);
+        targetEl.textContent = (currentRho >= 0 ? '+' : '') + currentRho.toFixed(2);
+        draw(fitLine());
+      }
+
+      // Events
+      slider.addEventListener('input', () => scheduleRender(parseFloat(slider.value)));
+      refresh.addEventListener('click', () => { initBase(); scheduleRender(currentRho); });
+
+      // Resize observer for crisp redraws
+      const ro = new ResizeObserver(resizeCanvas);
+      ro.observe(canvas);
+      resizeCanvas(); // initial
     }
-    let rafScheduled = false;
 
-    // initial paint
-    scheduleRender(currentRho);
-
-    // -------- Events --------
-    slider.addEventListener('input', () => {
-      scheduleRender(parseFloat(slider.value));
-    });
-
-    refresh.addEventListener('click', () => {
-      initBase(); // new base cloud; keep rho
-      scheduleRender(currentRho);
-    });
-  }
-
-  // INIT all widgets
-  document.querySelectorAll('.correlation-widget').forEach(createWidget);
-})();
+    document.querySelectorAll('.correlation-widget').forEach(createWidget);
+  })();
 </script>

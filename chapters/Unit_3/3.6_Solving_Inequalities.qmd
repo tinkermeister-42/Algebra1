@@ -127,6 +127,8 @@ Since $-4 \le -1$ is true, shade the side containing $-4$.
 
 :::
 
+---
+
 ### 3.6.2 -- Solving Inequalities Using Addition and Subtraction
 
 Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.
@@ -179,6 +181,7 @@ Now plot it.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
+---
 
 ### 3.6.3 -- Solving Inequalities with Multiplication and Division
 
@@ -251,6 +254,8 @@ $$
 
 If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 :::
+
+---
 
 ### 3.6.4 -- Real-World Problems With Inequalities
 

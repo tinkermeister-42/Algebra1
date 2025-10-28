@@ -1,280 +1,391 @@
-<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1" data-grid-labels="false" style="max-width:720px;margin:1rem auto"></div>
+<div class="slope-widget" data-xmin="-10" data-xmax="10" data-ymin="-10" data-ymax="10" data-step="1"
+  data-grid-labels="false" style="max-width:600px;margin:1rem auto"></div>
 
 <style>
-  .slope-widget {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+  .slope-widget {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif
+  }
 
   /* Readout bar */
-  .slope-ui {display:flex; gap:1rem; align-items:center; justify-content:space-between; margin:0.25rem 0 0.5rem; flex-wrap:wrap}
-  .legend {color:#4b5563; font-size:0.95rem}
-  .readout {display:flex; gap:10px; align-items:baseline; border:1px solid #e5e7eb; border-radius:8px; padding:8px 10px; background:#fff}
-  .m-big {font-weight:700; font-size:1.05rem}
-  .mono {font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
-  .muted {color:#6b7280; font-size:0.9rem}
+  .slope-ui {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.25rem 0 0.5rem;
+    flex-wrap: wrap
+  }
+
+  .legend {
+    color: #4b5563;
+    font-size: 0.95rem
+  }
+
+  .readout {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background: #fff
+  }
+
+  .m-big {
+    font-weight: 700;
+    font-size: 1.05rem
+  }
+
+  .mono {
+    font-variant-numeric: tabular-nums;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+  }
+
+  .muted {
+    color: #6b7280;
+    font-size: 0.9rem
+  }
 
   /* Big, uncluttered graph */
-  .slope-fig {border:1px solid #e5e7eb; border-radius:0.5rem; background:#fff;}
-  .slope-fig svg {touch-action:none; display:block; width:100%; height:auto; aspect-ratio: 1 / 1;}
+  .slope-fig {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
 
-  .tick-label {font-size:10px; fill:#6b7280}
-  .axis {stroke:#111827; stroke-width:1}
-  .grid {stroke:#e5e7eb; stroke-width:1}
-  .grid.minor {stroke:#f3f4f6}
+  .slope-fig svg {
+    touch-action: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 
-  .pt {cursor:grab}
-  .pt:active {cursor:grabbing}
-  .line {stroke:#2563eb; stroke-width:2}
-  .leg-x, .leg-y { stroke-dasharray: 4 3; stroke-width: 1.5; opacity: 0.75; }
-  .leg-x { stroke:#0ea5e9; } /* run */
-  .leg-y { stroke:#10b981; } /* rise */
+  .tick-label {
+    font-size: 10px;
+    fill: #6b7280
+  }
+
+  .axis {
+    stroke: #111827;
+    stroke-width: 1
+  }
+
+  .grid {
+    stroke: #e5e7eb;
+    stroke-width: 1
+  }
+
+  .grid.minor {
+    stroke: #f3f4f6
+  }
+
+  .pt {
+    cursor: grab
+  }
+
+  .pt:active {
+    cursor: grabbing
+  }
+
+  .line {
+    stroke: #2563eb;
+    stroke-width: 2
+  }
+
+  .leg-x,
+  .leg-y {
+    stroke-dasharray: 4 3;
+    stroke-width: 1.5;
+    opacity: 0.75;
+  }
+
+  .leg-x {
+    stroke: #0ea5e9;
+  }
+
+  /* run */
+  .leg-y {
+    stroke: #10b981;
+  }
+
+  /* rise */
 
   /* On-leg Δ labels with halo for contrast */
-  .leglbl {font-size:12px; font-weight:700; fill:#111827; paint-order:stroke; stroke:#ffffff; stroke-width:3px; stroke-linejoin:round}
-  .lblx { fill:#0369a1; }  /* blue-ish for Δx */
-  .lbly { fill:#047857; }  /* green-ish for Δy */
+  .leglbl {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #111827;
+    paint-order: stroke;
+    stroke: #ffffff;
+    stroke-width: 3px;
+    stroke-linejoin: round
+  }
+
+  .lblx {
+    fill: #0369a1;
+  }
+
+  /* blue-ish for Δx */
+  .lbly {
+    fill: #047857;
+  }
+
+  /* green-ish for Δy */
 
   /* Prevent selection/drag ghosts while interacting */
-  html.slope-dragging, html.slope-dragging * { -webkit-user-select:none !important; user-select:none !important; cursor:grabbing !important; }
-  .slope-widget, .slope-widget * { -webkit-user-drag:none; user-drag:none; }
+  html.slope-dragging,
+  html.slope-dragging * {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    cursor: grabbing !important;
+  }
+
+  .slope-widget,
+  .slope-widget * {
+    -webkit-user-drag: none;
+    user-drag: none;
+  }
 </style>
 
 <script>
-(function(){
-  // ---------- Utilities ----------
-  const gcd = (a,b)=>{a=Math.abs(a); b=Math.abs(b); while(b){[a,b]=[b,a%b]} return a||1};
-  // Reduce a ratio where values are integers or half-integers (supports step=1 and fine step=0.5)
-  function fracFromSteps(dy, dx){
-    if (dx === 0) return { text: 'undefined', m: null };
-    // scale by 2 to capture halves as integers
-    let N = Math.round(dy * 2);
-    let D = Math.round(dx * 2);
-    const g = gcd(N, D);
-    N /= g; D /= g;
-    return { text: (D===1 ? String(N) : `${N}/${D}`), m: N / D };
-  }
-  const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
-  const numDec = v => Number.isFinite(v) ? (Math.abs(v)<1e-6 ? '0' : (Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : v.toFixed(2))) : '—';
-  const clamp = (v,lo,hi)=> Math.max(lo, Math.min(hi, v));
+  (function () {
+    // ---------- Utilities ----------
+    const gcd = (a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) { [a, b] = [b, a % b] } return a || 1 };
+    // Reduce a ratio where values are integers or half-integers (supports step=1 and fine step=0.5)
+    function fracFromSteps(dy, dx) {
+      if (dx === 0) return { text: 'undefined', m: null };
+      // scale by 2 to capture halves as integers
+      let N = Math.round(dy * 2);
+      let D = Math.round(dx * 2);
+      const g = gcd(N, D);
+      N /= g; D /= g;
+      return { text: (D === 1 ? String(N) : `${N}/${D}`), m: N / D };
+    }
+    const fmt = v => Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : String(v);
+    const numDec = v => Number.isFinite(v) ? (Math.abs(v) < 1e-6 ? '0' : (Math.abs(v - Math.round(v)) < 1e-6 ? String(Math.round(v)) : v.toFixed(2))) : '—';
+    const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
-  function createWidget(container){
-    // ---------- Config ----------
-    const xmin = +container.dataset.xmin ?? -10;
-    const xmax = +container.dataset.xmax ?? 10;
-    const ymin = +container.dataset.ymin ?? -10;
-    const ymax = +container.dataset.ymax ?? 10;
-    const step = +container.dataset.step || 1;
-    const gridLabels = (container.dataset.gridLabels||'false') !== 'false';
+    function createWidget(container) {
+      // ---------- Config ----------
+      const xmin = +container.dataset.xmin ?? -10;
+      const xmax = +container.dataset.xmax ?? 10;
+      const ymin = +container.dataset.ymin ?? -10;
+      const ymax = +container.dataset.ymax ?? 10;
+      const step = +container.dataset.step || 1;
+      const gridLabels = (container.dataset.gridLabels || 'false') !== 'false';
 
-    // ---------- Canvas ----------
-    const w = 520, h = 520, pad = 36;
-    const xScale = x=> pad + (x - xmin) * (w - 2*pad) / (xmax - xmin);
-    const yScale = y=> h - pad - (y - ymin) * (h - 2*pad) / (ymax - ymin);
-    const invX = X=> xmin + (X - pad) * (xmax - xmin) / (w - 2*pad);
-    const invY = Y=> ymin + (h - pad - Y) * (ymax - ymin) / (h - 2*pad);
+      // ---------- Canvas ----------
+      const w = 520, h = 520, pad = 36;
+      const xScale = x => pad + (x - xmin) * (w - 2 * pad) / (xmax - xmin);
+      const yScale = y => h - pad - (y - ymin) * (h - 2 * pad) / (ymax - ymin);
+      const invX = X => xmin + (X - pad) * (xmax - xmin) / (w - 2 * pad);
+      const invY = Y => ymin + (h - pad - Y) * (ymax - ymin) / (h - 2 * pad);
 
-    // ---------- State ----------
-    let P = {x:-4, y:-1};
-    let Q = {x: 6, y: 5};
-    let dragging = null;
-    let fineMode = false;
+      // ---------- State ----------
+      let P = { x: -4, y: -1 };
+      let Q = { x: 6, y: 5 };
+      let dragging = null;
+      let fineMode = false;
 
-    // ---------- DOM ----------
-    container.innerHTML = '';
+      // ---------- DOM ----------
+      container.innerHTML = '';
 
-    // Readout bar (only slope)
-    const ui = document.createElement('div');
-    ui.className = 'slope-ui';
-    ui.innerHTML = `
+      // Readout bar (only slope)
+      const ui = document.createElement('div');
+      ui.className = 'slope-ui';
+      ui.innerHTML = `
       <div class="legend">Drag the points (hold <span class="mono" style="border:1px solid #ddd;border-radius:4px;padding:0 4px;background:#f9fafb">Shift</span> for finer snap).</div>
       <div class="readout" aria-live="polite">
         <span class="m-big mono">m = <span class="vmf">—</span></span>
         <span class="muted mono">(≈ <span class="vmd">—</span>)</span>
       </div>
     `;
-    container.appendChild(ui);
+      container.appendChild(ui);
 
-    // Graph
-    const fig = document.createElement('div');
-    fig.className = 'slope-fig';
-    const svgNS = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(svgNS,'svg');
-    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-    fig.appendChild(svg);
-    container.appendChild(fig);
+      // Graph
+      const fig = document.createElement('div');
+      fig.className = 'slope-fig';
+      const svgNS = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      fig.appendChild(svg);
+      container.appendChild(fig);
 
-    const vmf = ui.querySelector('.vmf');
-    const vmd = ui.querySelector('.vmd');
+      const vmf = ui.querySelector('.vmf');
+      const vmd = ui.querySelector('.vmd');
 
-    // Layers
-    const gridG   = document.createElementNS(svgNS,'g');
-    const axesG   = document.createElementNS(svgNS,'g');
-    const lineG   = document.createElementNS(svgNS,'g');
-    const legsG   = document.createElementNS(svgNS,'g');
-    const labelsG = document.createElementNS(svgNS,'g');
-    const ptsG    = document.createElementNS(svgNS,'g');
-    svg.append(gridG, axesG, lineG, legsG, labelsG, ptsG);
+      // Layers
+      const gridG = document.createElementNS(svgNS, 'g');
+      const axesG = document.createElementNS(svgNS, 'g');
+      const lineG = document.createElementNS(svgNS, 'g');
+      const legsG = document.createElementNS(svgNS, 'g');
+      const labelsG = document.createElementNS(svgNS, 'g');
+      const ptsG = document.createElementNS(svgNS, 'g');
+      svg.append(gridG, axesG, lineG, legsG, labelsG, ptsG);
 
-    // Grid
-    const addLine = (x1,y1,x2,y2, cls)=>{
-      const l = document.createElementNS(svgNS,'line');
-      l.setAttribute('x1',x1); l.setAttribute('y1',y1);
-      l.setAttribute('x2',x2); l.setAttribute('y2',y2);
-      l.setAttribute('class',cls);
-      gridG.appendChild(l);
-    };
-    const majorEvery = 5*step;
-    for(let x=Math.ceil(xmin/step)*step; x<=xmax; x+=step){
-      const X = xScale(x);
-      addLine(X, pad, X, h-pad, 'grid ' + ((x%majorEvery===0)?'':'minor'));
-      if(gridLabels && x%majorEvery===0 && x!==0){
-        const t = document.createElementNS(svgNS,'text');
-        t.setAttribute('x', X); t.setAttribute('y', h-pad+12); t.setAttribute('text-anchor','middle');
-        t.setAttribute('class','tick-label'); t.textContent = x;
-        gridG.appendChild(t);
+      // Grid
+      const addLine = (x1, y1, x2, y2, cls) => {
+        const l = document.createElementNS(svgNS, 'line');
+        l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+        l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+        l.setAttribute('class', cls);
+        gridG.appendChild(l);
+      };
+      const majorEvery = 5 * step;
+      for (let x = Math.ceil(xmin / step) * step; x <= xmax; x += step) {
+        const X = xScale(x);
+        addLine(X, pad, X, h - pad, 'grid ' + ((x % majorEvery === 0) ? '' : 'minor'));
+        if (gridLabels && x % majorEvery === 0 && x !== 0) {
+          const t = document.createElementNS(svgNS, 'text');
+          t.setAttribute('x', X); t.setAttribute('y', h - pad + 12); t.setAttribute('text-anchor', 'middle');
+          t.setAttribute('class', 'tick-label'); t.textContent = x;
+          gridG.appendChild(t);
+        }
       }
-    }
-    for(let y=Math.ceil(ymin/step)*step; y<=ymax; y+=step){
-      const Y = yScale(y);
-      addLine(pad, Y, w-pad, Y, 'grid ' + ((y%majorEvery===0)?'':'minor'));
-      if(gridLabels && y%majorEvery===0 && y!==0){
-        const t = document.createElementNS(svgNS,'text');
-        t.setAttribute('x', pad-6); t.setAttribute('y', Y+3); t.setAttribute('text-anchor','end');
-        t.setAttribute('class','tick-label'); t.textContent = y;
-        gridG.appendChild(t);
-      }
-    }
-
-    // Axes
-    const X0 = Math.max(pad, Math.min(w-pad, xScale(0)));
-    const Y0 = Math.max(pad, Math.min(h-pad, yScale(0)));
-    const xAxis = document.createElementNS(svgNS,'line');
-    xAxis.setAttribute('x1', pad); xAxis.setAttribute('y1', Y0);
-    xAxis.setAttribute('x2', w-pad); xAxis.setAttribute('y2', Y0);
-    xAxis.setAttribute('class','axis'); axesG.appendChild(xAxis);
-    const yAxis = document.createElementNS(svgNS,'line');
-    yAxis.setAttribute('x1', X0); yAxis.setAttribute('y1', pad);
-    yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h-pad);
-    yAxis.setAttribute('class','axis'); axesG.appendChild(yAxis);
-
-    // Line through P and Q
-    const line = document.createElementNS(svgNS,'line');
-    line.setAttribute('class','line');
-    lineG.appendChild(line);
-
-    // Dotted legs
-    const legX = document.createElementNS(svgNS,'line'); legX.setAttribute('class','leg-x'); legsG.appendChild(legX);
-    const legY = document.createElementNS(svgNS,'line'); legY.setAttribute('class','leg-y'); legsG.appendChild(legY);
-
-    // On-leg labels (Δx, Δy)
-    const lblDx = document.createElementNS(svgNS,'text'); lblDx.setAttribute('class','leglbl lblx'); labelsG.appendChild(lblDx);
-    const lblDy = document.createElementNS(svgNS,'text'); lblDy.setAttribute('class','leglbl lbly'); labelsG.appendChild(lblDy);
-
-    // Points (no P/Q labels)
-    function makePoint(color){
-      const g = document.createElementNS(svgNS,'g');
-      const c = document.createElementNS(svgNS,'circle');
-      c.setAttribute('r',6); c.setAttribute('class','pt'); c.setAttribute('fill',color); c.setAttribute('stroke','#111827'); c.setAttribute('stroke-width','1');
-      g.append(c); ptsG.appendChild(g);
-      g._circle = c; g.setAttribute('draggable','false');
-      return g;
-    }
-    const pG = makePoint('#10b981');
-    const qG = makePoint('#ef4444');
-
-    function updateUI(){
-      const PX=xScale(P.x), PY=yScale(P.y), QX=xScale(Q.x), QY=yScale(Q.y);
-      pG.setAttribute('transform', `translate(${PX} ${PY})`);
-      qG.setAttribute('transform', `translate(${QX} ${QY})`);
-
-      // Determine LEFT and RIGHT points so Δx >= 0
-      let L = P, R = Q, LX=PX, LY=PY, RX=QX, RY=QY;
-      if (Q.x < P.x) { L = Q; R = P; LX = QX; LY = QY; RX = PX; RY = PY; }
-
-      const dx = R.x - L.x;               // guaranteed >= 0
-      const dy = R.y - L.y;               // signed (rise from left→right)
-
-      // Draw the infinite line clipped to box
-      if((R.x - L.x) === 0){
-        const X = xScale(L.x);
-        line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
-        line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
-      } else {
-        const m = dy / dx;
-        const b = L.y - m * L.x;
-        const pts = [];
-        const yL = m*xmin + b; if (yL>=ymin && yL<=ymax) pts.push({x:xmin,y:yL});
-        const yR = m*xmax + b; if (yR>=ymin && yR<=ymax) pts.push({x:xmax,y:yR});
-        const xB = (ymin - b)/m; if (xB>=xmin && xB<=xmax) pts.push({x:xB,y:ymin});
-        const xT = (ymax - b)/m; if (xT>=xmin && xT<=xmax) pts.push({x:xT,y:ymax});
-        if(pts.length>=2){
-          line.setAttribute('x1', xScale(pts[0].x)); line.setAttribute('y1', yScale(pts[0].y));
-          line.setAttribute('x2', xScale(pts[1].x)); line.setAttribute('y2', yScale(pts[1].y));
+      for (let y = Math.ceil(ymin / step) * step; y <= ymax; y += step) {
+        const Y = yScale(y);
+        addLine(pad, Y, w - pad, Y, 'grid ' + ((y % majorEvery === 0) ? '' : 'minor'));
+        if (gridLabels && y % majorEvery === 0 && y !== 0) {
+          const t = document.createElementNS(svgNS, 'text');
+          t.setAttribute('x', pad - 6); t.setAttribute('y', Y + 3); t.setAttribute('text-anchor', 'end');
+          t.setAttribute('class', 'tick-label'); t.textContent = y;
+          gridG.appendChild(t);
         }
       }
 
-      // Dotted legs from L to (R.x, L.y), then to R
-      legX.setAttribute('x1', LX); legX.setAttribute('y1', LY);
-      legX.setAttribute('x2', RX); legX.setAttribute('y2', LY);
-      legY.setAttribute('x1', RX); legY.setAttribute('y1', LY);
-      legY.setAttribute('x2', RX); legY.setAttribute('y2', RY);
+      // Axes
+      const X0 = Math.max(pad, Math.min(w - pad, xScale(0)));
+      const Y0 = Math.max(pad, Math.min(h - pad, yScale(0)));
+      const xAxis = document.createElementNS(svgNS, 'line');
+      xAxis.setAttribute('x1', pad); xAxis.setAttribute('y1', Y0);
+      xAxis.setAttribute('x2', w - pad); xAxis.setAttribute('y2', Y0);
+      xAxis.setAttribute('class', 'axis'); axesG.appendChild(xAxis);
+      const yAxis = document.createElementNS(svgNS, 'line');
+      yAxis.setAttribute('x1', X0); yAxis.setAttribute('y1', pad);
+      yAxis.setAttribute('x2', X0); yAxis.setAttribute('y2', h - pad);
+      yAxis.setAttribute('class', 'axis'); axesG.appendChild(yAxis);
 
-      // On-leg labels: center on segments; offset to avoid overlap
-      const midX = (LX + RX)/2;
-      const midY = (LY + RY)/2;
+      // Line through P and Q
+      const line = document.createElementNS(svgNS, 'line');
+      line.setAttribute('class', 'line');
+      lineG.appendChild(line);
 
-      const offY = (dy >= 0) ? -10 : 14;           // Δx label above or below horizontal leg
-      lblDx.setAttribute('x', midX);
-      lblDx.setAttribute('y', LY + offY);
-      lblDx.setAttribute('text-anchor','middle');
-      lblDx.textContent = `Δx = ${fmt(dx)}`;
+      // Dotted legs
+      const legX = document.createElementNS(svgNS, 'line'); legX.setAttribute('class', 'leg-x'); legsG.appendChild(legX);
+      const legY = document.createElementNS(svgNS, 'line'); legY.setAttribute('class', 'leg-y'); legsG.appendChild(legY);
 
-      // Δy: to the right of the vertical leg unless near the edge
-      const rightSpace = (w - pad) - RX;
-      const offX = (rightSpace > 24) ? 10 : -10;
-      lblDy.setAttribute('x', RX + offX);
-      lblDy.setAttribute('y', midY + 4);
-      lblDy.setAttribute('text-anchor', (offX > 0) ? 'start' : 'end');
-      lblDy.textContent = `Δy = ${fmt(dy)}`;
+      // On-leg labels (Δx, Δy)
+      const lblDx = document.createElementNS(svgNS, 'text'); lblDx.setAttribute('class', 'leglbl lblx'); labelsG.appendChild(lblDx);
+      const lblDy = document.createElementNS(svgNS, 'text'); lblDy.setAttribute('class', 'leglbl lbly'); labelsG.appendChild(lblDy);
 
-      // Readout (fraction from steps; decimal from dy/dx)
-      const f = fracFromSteps(dy, dx);
-      vmf.textContent = (f.m===null) ? 'undef' : (f.text.includes('/') ? f.text : `${f.text}/1`);
-      vmd.textContent = (f.m===null) ? '—' : numDec(dy / (dx||NaN));
-    }
+      // Points (no P/Q labels)
+      function makePoint(color) {
+        const g = document.createElementNS(svgNS, 'g');
+        const c = document.createElementNS(svgNS, 'circle');
+        c.setAttribute('r', 6); c.setAttribute('class', 'pt'); c.setAttribute('fill', color); c.setAttribute('stroke', '#111827'); c.setAttribute('stroke-width', '1');
+        g.append(c); ptsG.appendChild(g);
+        g._circle = c; g.setAttribute('draggable', 'false');
+        return g;
+      }
+      const pG = makePoint('#10b981');
+      const qG = makePoint('#ef4444');
 
-    // Dragging
-    function startDrag(which){ dragging = which; document.documentElement.classList.add('slope-dragging'); }
-    function endDrag(){ dragging = null; document.documentElement.classList.remove('slope-dragging'); }
+      function updateUI() {
+        const PX = xScale(P.x), PY = yScale(P.y), QX = xScale(Q.x), QY = yScale(Q.y);
+        pG.setAttribute('transform', `translate(${PX} ${PY})`);
+        qG.setAttribute('transform', `translate(${QX} ${QY})`);
 
-    function pointerHandler(evt){
-      if(!dragging) return;
-      const pt = svg.createSVGPoint();
-      pt.x = evt.clientX; pt.y = evt.clientY;
-      const ctm = svg.getScreenCTM().inverse();
-      const sp = pt.matrixTransform(ctm);
-      let x = invX(sp.x), y = invY(sp.y);
-      x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
-      const s = (fineMode ? step/2 : step);
-      x = Math.round(x/s)*s; y = Math.round(y/s)*s;
-      if(Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
-      if(Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
-      if(dragging==='P'){ P.x = x; P.y = y; } else { Q.x = x; Q.y = y; }
+        // Determine LEFT and RIGHT points so Δx >= 0
+        let L = P, R = Q, LX = PX, LY = PY, RX = QX, RY = QY;
+        if (Q.x < P.x) { L = Q; R = P; LX = QX; LY = QY; RX = PX; RY = PY; }
+
+        const dx = R.x - L.x;               // guaranteed >= 0
+        const dy = R.y - L.y;               // signed (rise from left→right)
+
+        // Draw the infinite line clipped to box
+        if ((R.x - L.x) === 0) {
+          const X = xScale(L.x);
+          line.setAttribute('x1', X); line.setAttribute('y1', yScale(ymin));
+          line.setAttribute('x2', X); line.setAttribute('y2', yScale(ymax));
+        } else {
+          const m = dy / dx;
+          const b = L.y - m * L.x;
+          const pts = [];
+          const yL = m * xmin + b; if (yL >= ymin && yL <= ymax) pts.push({ x: xmin, y: yL });
+          const yR = m * xmax + b; if (yR >= ymin && yR <= ymax) pts.push({ x: xmax, y: yR });
+          const xB = (ymin - b) / m; if (xB >= xmin && xB <= xmax) pts.push({ x: xB, y: ymin });
+          const xT = (ymax - b) / m; if (xT >= xmin && xT <= xmax) pts.push({ x: xT, y: ymax });
+          if (pts.length >= 2) {
+            line.setAttribute('x1', xScale(pts[0].x)); line.setAttribute('y1', yScale(pts[0].y));
+            line.setAttribute('x2', xScale(pts[1].x)); line.setAttribute('y2', yScale(pts[1].y));
+          }
+        }
+
+        // Dotted legs from L to (R.x, L.y), then to R
+        legX.setAttribute('x1', LX); legX.setAttribute('y1', LY);
+        legX.setAttribute('x2', RX); legX.setAttribute('y2', LY);
+        legY.setAttribute('x1', RX); legY.setAttribute('y1', LY);
+        legY.setAttribute('x2', RX); legY.setAttribute('y2', RY);
+
+        // On-leg labels: center on segments; offset to avoid overlap
+        const midX = (LX + RX) / 2;
+        const midY = (LY + RY) / 2;
+
+        const offY = (dy >= 0) ? -10 : 14;           // Δx label above or below horizontal leg
+        lblDx.setAttribute('x', midX);
+        lblDx.setAttribute('y', LY + offY);
+        lblDx.setAttribute('text-anchor', 'middle');
+        lblDx.textContent = `Δx = ${fmt(dx)}`;
+
+        // Δy: to the right of the vertical leg unless near the edge
+        const rightSpace = (w - pad) - RX;
+        const offX = (rightSpace > 24) ? 10 : -10;
+        lblDy.setAttribute('x', RX + offX);
+        lblDy.setAttribute('y', midY + 4);
+        lblDy.setAttribute('text-anchor', (offX > 0) ? 'start' : 'end');
+        lblDy.textContent = `Δy = ${fmt(dy)}`;
+
+        // Readout (fraction from steps; decimal from dy/dx)
+        const f = fracFromSteps(dy, dx);
+        vmf.textContent = (f.m === null) ? 'undef' : (f.text.includes('/') ? f.text : `${f.text}/1`);
+        vmd.textContent = (f.m === null) ? '—' : numDec(dy / (dx || NaN));
+      }
+
+      // Dragging
+      function startDrag(which) { dragging = which; document.documentElement.classList.add('slope-dragging'); }
+      function endDrag() { dragging = null; document.documentElement.classList.remove('slope-dragging'); }
+
+      function pointerHandler(evt) {
+        if (!dragging) return;
+        const pt = svg.createSVGPoint();
+        pt.x = evt.clientX; pt.y = evt.clientY;
+        const ctm = svg.getScreenCTM().inverse();
+        const sp = pt.matrixTransform(ctm);
+        let x = invX(sp.x), y = invY(sp.y);
+        x = clamp(x, xmin, xmax); y = clamp(y, ymin, ymax);
+        const s = (fineMode ? step / 2 : step);
+        x = Math.round(x / s) * s; y = Math.round(y / s) * s;
+        if (Math.abs(x - Math.round(x)) < 1e-6) x = Math.round(x);
+        if (Math.abs(y - Math.round(y)) < 1e-6) y = Math.round(y);
+        if (dragging === 'P') { P.x = x; P.y = y; } else { Q.x = x; Q.y = y; }
+        updateUI();
+      }
+      function attachDrag(group, which) {
+        group.addEventListener('pointerdown', e => { e.preventDefault(); group.setPointerCapture(e.pointerId); startDrag(which); });
+        group.addEventListener('pointerup', e => { e.preventDefault(); group.releasePointerCapture(e.pointerId); endDrag(); });
+        group.addEventListener('pointercancel', () => endDrag());
+        group.addEventListener('pointermove', e => { if (dragging) { e.preventDefault(); } pointerHandler(e); });
+      }
+      attachDrag(pG, 'P'); attachDrag(qG, 'Q');
+
+      window.addEventListener('keydown', e => { if (e.key === 'Shift') fineMode = true; });
+      window.addEventListener('keyup', e => { if (e.key === 'Shift') fineMode = false; });
+
       updateUI();
     }
-    function attachDrag(group, which){
-      group.addEventListener('pointerdown', e=>{ e.preventDefault(); group.setPointerCapture(e.pointerId); startDrag(which); });
-      group.addEventListener('pointerup',   e=>{ e.preventDefault(); group.releasePointerCapture(e.pointerId); endDrag(); });
-      group.addEventListener('pointercancel', ()=> endDrag());
-      group.addEventListener('pointermove', e=>{ if(dragging){ e.preventDefault(); } pointerHandler(e); });
-    }
-    attachDrag(pG,'P'); attachDrag(qG,'Q');
 
-    window.addEventListener('keydown', e=>{ if(e.key==='Shift') fineMode=true; });
-    window.addEventListener('keyup',   e=>{ if(e.key==='Shift') fineMode=false; });
-
-    updateUI();
-  }
-
-  // INIT
-  document.querySelectorAll('.slope-widget').forEach(createWidget);
-})();
+    // INIT
+    document.querySelectorAll('.slope-widget').forEach(createWidget);
+  })();
 </script>

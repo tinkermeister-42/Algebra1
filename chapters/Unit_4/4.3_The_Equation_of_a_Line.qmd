@@ -203,6 +203,7 @@ The best way to learn math is by playing around with it.
 
 Give the [**Slope-Intercept Form Investigation**](/chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd) tool a try. It will help you better understand how $y=mx+b$ works!
 
+If you are interested in a gamified way to learn about lines, try out the [**Line Matching Game**](/chapters/Interactive/Unit_4/slope_intercept_form_game.qmd)
 
 {{< practice >}}
 
