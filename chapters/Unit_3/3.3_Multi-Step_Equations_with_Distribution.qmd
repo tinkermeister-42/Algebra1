@@ -1,6 +1,6 @@
 #  3.3 Multi-Step Equations with Distribution {.unnumbered}
 
-In the last lessons, you learned how to solve one-step and two-step {{< glink equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
+In the last lessons, you learned how to solve one-step and two-step {{< glink slug=equation text=equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
 But not every equation is that neat. Sometimes parentheses get in the way, or extra terms make things look messy. These are called multi-step equations.
 

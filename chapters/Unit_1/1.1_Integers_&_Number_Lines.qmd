@@ -4,7 +4,7 @@ Did you know that all of mathematics is actually built up from simple things lik
 
 In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare {{< glink positive >}} and {{< glink negative >}} numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.
 
-Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like {{< glink opposites >}}, {{< glink absolute value >}}, and comparison — you’ll be setting yourself up for success in the rest of the course.
+Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like {{< glink opposites >}}, {{< glink "absolute value" >}}, and comparison — you’ll be setting yourself up for success in the rest of the course.
 
 ::: {.objectives}
 - [ ] I know how to read and use a number line

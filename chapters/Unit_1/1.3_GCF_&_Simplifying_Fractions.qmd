@@ -658,7 +658,7 @@ $$
  
 So for every 3 cups of flour, you need 5 cups of sugar.
 
-Now you can make a smaller batch that keeps the same balance by finding {{< glink multiples >}} of the {{< glink numerator >}} and {{< glink denominator >}}. For example:
+Now you can make a smaller batch that keeps the same balance by finding {{< glink slug="multiple" text="multiples" >}} of the {{< glink numerator >}} and {{< glink denominator >}}. For example:
 
 - 3 cups of flour
 

@@ -1,6 +1,6 @@
 # 3.1 – Solving One-Step Equations {.unnumbered}
 
-In Unit 2, we learned how to work with {{< glink equivalent expressions >}}. Sometimes we could check a number, {{< glink substitute >}} it into both expressions, and see that they matched. But, with some expressions, we noticed something important:
+In Unit 2, we learned how to work with {{< glink "equivalent expressions" >}}. Sometimes we could check a number, {{< glink substitute >}} it into both expressions, and see that they matched. But, with some expressions, we noticed something important:
 
 Some values worked.
 
