@@ -5,6 +5,36 @@ import matplotlib.ticker as mticker
 from matplotlib.patches import FancyArrowPatch, Rectangle
 from typing import List, Tuple, Optional, Dict, Any, Union
 
+# ---------- Label formatters ----------
+def format_line_label(m: float, b: float) -> str:
+    """Return 'y = mx + b' with nice special-casing:
+       1x -> x, -1x -> -x, +0 suppressed, sign handled."""
+    m1 = np.isclose(m, 1.0)
+    m_1 = np.isclose(m, -1.0)
+    b0 = np.isclose(b, 0.0)
+    m_0 = np.isclose(m, 0.0)
+    
+    if m1:
+        m_str = "x"
+    elif m_1:
+        m_str = "-x"
+    elif m_0:
+        m_str = "0"
+    else:
+        m_str = f"{m:g}x"
+
+    if b0:
+        return f"y = {m_str}"
+    return f"y = {m_str} + {b:g}" if b > 0 else f"y = {m_str} - {abs(b):g}"
+
+def format_ineq_label(m: float, b: float, comp: str) -> str:
+    """Return 'y ≤ mx + b' etc. with the same nice special-casing."""
+    sym = {'<':'<', '<=':'≤', '>':'>', '>=':'≥'}.get(comp, comp)
+    # reuse the line formatter but swap the equality sign for the inequality
+    eq = format_line_label(m, b)          # 'y = ...'
+    return eq.replace('=', sym, 1)        # 'y ≤ ...'
+
+
 # ---------- Tick utilities ----------
 def _aligned_ticks(vmin: float, vmax: float, step: Optional[float]):
     """Return tick positions aligned to 'step', covering [vmin, vmax]."""
@@ -406,9 +436,9 @@ def linear_function_coordinate_plane(
 
             # Legend: explicit wins; else auto
             if legend:
-                auto_label = explicit_label or f"y = {m:g}x + {b:g}"
+                auto_label = explicit_label or format_line_label(m, b)
                 _add_legend_item(ln, auto_label)
-
+                
     # ---- Inequalities: shaded half-planes + boundary style ----
     if inequalities:
         fill_once_keys = set()  # to avoid repeated fill entries
@@ -450,11 +480,9 @@ def linear_function_coordinate_plane(
                 )
 
             if legend:
-                leq_map = {'<': '<', '<=': '≤', '>': '>', '>=': '≥'}
-                sym = leq_map.get(comp, comp)
-                boundary_label = explicit_label or f"y {sym} {m:g}x + {b:g}"
+                boundary_label = explicit_label or format_ineq_label(m, b, comp)
                 _add_legend_item(ln, boundary_label)
-
+                
                 # optional fill entry once per style key if user opts in
                 key = (comp, style.get('color'), style.get('hatch'), style.get('alpha'))
                 if key not in fill_once_keys and style.get('legend_fill', False):

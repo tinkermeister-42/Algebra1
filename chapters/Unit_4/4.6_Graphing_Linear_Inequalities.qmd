@@ -8,100 +8,422 @@ When we switch from **equations** to **inequalities**, we’re no longer looking
 :::{.objectives}
 
 * [ ] I can graph linear inequalities in two variables.
-* [ ] I can explain what the shaded region means in a real-world context.
+* [ ] I can solve linear inequalities in two variables and graph the solution.
+* [ ] I can solve systems of linear inequalities.
 
 :::
 
 :::{.vocab}
-
 {{< glink inequality >}}, {{< glink greater than >}}, {{< glink less than >}}, {{< glink dashed line >}}, {{< glink solid line >}}, {{< glink solution set >}}
-
 :::
 
 {{< warmup >}}
 
-1. Solve for $x$: $4x - 7 < 13$
-2. Solve for $y$: $-3y + 6 \ge 9$
-3. On a graph, what does it mean if a point is *above* the line $y = 2x + 3$? What about *below* it?
+1. Solve for $x$: $4x - 7 < 13$
+
+2. Solve for $y$: $-3y + 6 \ge 9$
+
+3. Graph the line $y = -\tfrac{2}{3}x + 1$.
 
 {{< learn >}}
 
 ### 4.6.1 – Linear Inequalities in Two Variables
 
-When we graph an inequality like
-$$y < 2x + 3,$$
-we start just like a line — by graphing the **boundary** $y = 2x + 3$.
+Back in Unit 3, you learned that solving an **inequality** is almost the same as solving an **equation**, with just a few key differences:
 
-But the inequality sign changes what happens next:
+* If you multiply or divide by a negative number, you **flip the inequality sign**.
+* The solution is not a single number but a **range of values**.
+* The difference between $x > 5$ and $x \ge 5$ is whether the endpoint is **included** (closed circle) or **not included** (open circle).
 
-* If it’s **<** or **>**, we draw a **dashed line**.
+Those same ideas still apply when we move to **two variables**, but now our solutions appear on a **coordinate plane** instead of a number line.
 
-  > (Points *on* the line are *not* included.)
-* If it’s **≤** or **≥**, we draw a **solid line**.
+---
 
-  > (Points *on* the line *are* included.)
+Let’s start with what you already know.
 
-Then we **shade** the half of the graph where the inequality is true:
+When you graph $x > 5$, you use an **open circle** at 5 and shade to the right:
 
-* Shade **above** the line for **greater than** ($>$ or $≥$).
-* Shade **below** the line for **less than** ($<$ or $≤$).
+![](/images/Unit_4/Lesson_6/xgt5.png){width="500px" fig-align="center"}
 
-:::{.you-try-m title="Graph and shade"}
-Graph $y > -x + 2$.
-Is the line solid or dashed? Which side should you shade?
+If the inequality is $x \ge 5$, you use a **closed circle** at 5 and again shade to the right:
+
+![](/images/Unit_4/Lesson_6/xgte5.png){width="500px" fig-align="center"}
+
+---
+
+Now we’ll extend those ideas to the coordinate plane.
+
+| On a number line                  | On a coordinate plane                                |
+| --------------------------------- | ---------------------------------------------------- |
+| Open circle → point not included  | **Dashed line** → points on the line not included    |
+| Closed circle → point included    | **Solid line** → points on the line included         |
+| Arrow to the right → greater than | **Shade above** the line → greater than ($>$ or $≥$) |
+| Arrow to the left → less than     | **Shade below** the line → less than ($<$ or $≤$)    |
+
+---
+
+**Example 1**
+Graph the inequality $y \le \tfrac{1}{2}x + 2$.
+
+![](/images/Unit_4/Lesson_6/Example1.png){width="450px" fig-align="center"}
+
+The shaded region shows all points **below** the line.
+The line is **solid**, so points on the line are **included** in the solution set.
+
+We can use a **test point** to confirm.
+
+The point $(-4, 6)$ appears **outside** the shaded region:
+$$
+\begin{align*}
+6 &\le \tfrac{1}{2}(-4) + 2 \\
+6 &\le 0
+\end{align*}
+$$
+This is **false**, so $(-4, 6)$ is correctly outside the solution.
+
+The point $(2, -4)$ appears **inside** the shaded region:
+$$
+\begin{align*}
+-4 &\le \tfrac{1}{2}(2) + 2 \\
+-4 &\le 3
+\end{align*}
+$$
+This is **true**, confirming that $(2, -4)$ is part of the solution set.
+
+---
+
+**Example 2**
+Graph the inequality $y < \tfrac{1}{2}x + 2$.
+
+![](/images/Unit_4/Lesson_6/Example2.png){width="450px" fig-align="center"}
+
+The shaded region shows all points **below** the line.
+The line is **dashed**, so points on the line are **not included**.
+
+---
+
+**Example 3**
+Graph the inequality $y > \tfrac{1}{2}x + 2$.
+
+![](/images/Unit_4/Lesson_6/Example3.png){width="450px" fig-align="center"}
+
+The shaded region shows all points **above** the line.
+The line is **dashed**, so points on the line are **not included**.
+
+---
+
+**Example 4**
+Graph the inequality $y \ge \tfrac{1}{2}x + 2$.
+
+![](/images/Unit_4/Lesson_6/Example4.png){width="450px" fig-align="center"}
+
+The shaded region shows all points **above** the line.
+The line is **solid**, so points on the line are **included**.
+
+:::{.you-try title="Graph the inequality $y < 3x - 5$"}
+![](/images/Unit_4/Lesson_6/YouTry1.png){width="450px" fig-align="center"}
 :::
 
 ---
 
-### 4.6.2 – Systems of Inequalities
+### 4.6.2 – Solving Two-Variable Inequalities
 
-A **system of inequalities** means you have *more than one* inequality on the same graph.
-Each one creates a shaded region, and the **solution set** is where the shaded regions **overlap**.
+In the last section, you graphed a linear inequality once it was already written as $y < mx + b$ or $y \le mx + b$.
 
-This area represents all points that make **every inequality true at once**.
+But what if $y$ isn’t by itself yet?
+Here we’ll focus on **getting the inequality into slope-intercept form** so it’s ready to graph.
 
-:::{.real-world title="Example – Budget and Time Limits"}
-You can make bracelets ($x$) and necklaces ($y$).
-Each bracelet takes 1 hour, each necklace takes 2 hours, and you have at most 10 hours total.
-You also can’t make negative amounts.
+---
 
-Inequalities:
+**How to solve for $y$:**
+
+1. Move $x$-terms and constants just like in an equation.
+2. If you multiply or divide by a **negative**, **flip the inequality sign**.
+3. Once it’s in slope-intercept form ($y = mx + b$), graph it as before:
+
+   * **Dashed line** for $<$ or $>$
+   * **Solid line** for $\le$ or $\ge$
+   * **Shade above** for “greater,” **below** for “less”
+
+---
+
+**Example 1**
+
+Solve and graph $2x + y < 4$.
+$$
+\begin{align*}
+2x + y &< 4 \\
+y &< -2x + 4
+\end{align*}
+$$
+The line $y = -2x + 4$ is **dashed** and shaded **below**.
+
+![](/images/Unit_4/Lesson_6/Example5.png){width="450px" fig-align="center"}
+
+---
+
+**Example 2**
+
+Solve and graph $3x - 2y \le 6$.
+$$
+\begin{align*}
+3x - 2y &\le 6 \\
+-2y &\le -3x + 6 \\
+y &\ge \tfrac{3}{2}x - 3 \quad \text{(flip the sign when dividing by –2)}
+\end{align*}
+$$
+The line $y = \tfrac{3}{2}x - 3$ is **solid** and shaded **above**.
+
+![](/images/Unit_4/Lesson_6/Example6.png){width="450px" fig-align="center"}
+
+:::{.gotcha title="Don’t forget to flip the sign!"}
+When you multiply or divide both sides by a **negative number**, the inequality **reverses direction**.
+:::
+
+:::{.you-try title="Solve and graph 4x - 2y ≤ 8"}
+$$
+y \ge 2x - 4
+$$
+
+![](/images/Unit_4/Lesson_6/YouTry2.png){width="450px" fig-align="center"}
+:::
+
+---
+
+### 4.6.3 – Systems of Linear Inequalities
+
+So far, you’ve graphed a **single inequality** — one shaded region showing all the points that make it true.
+
+A **system of inequalities** means you have **two or more inequalities** on the same graph.
+Each one creates its own shaded region.
+The **solution set** is where all the shaded regions **overlap**.
+
+That overlapping area shows all the $(x, y)$ pairs that make **every inequality true** at the same time.
+
+---
+
+**Example 7**
+
+Graph the system:
 $$
 \begin{aligned}
-x + 2y &\le 10 \\
-x &\ge 0 \\
+y &\le 2x + 3 \\
+y &> -x + 1
+\end{aligned}
+$$
+
+Steps:
+
+1. Graph $y = 2x + 3$ with a **solid line** and shade **below** it.
+2. Graph $y = -x + 1$ with a **dashed line** and shade **above** it.
+3. The **overlapping region** (where both shades meet) is the **solution set**.
+
+![](/images/Unit_4/Lesson_6/Example7.png){width="450px" fig-align="center"}
+
+Any point in that shaded overlap makes both inequalities true.
+For example, $(4, 2)$ works because:
+$$
+\begin{aligned}
+2 &\le 2(4) + 3 = 11 \quad \text{(true)} \\
+2 &> -4 + 1 = -3 \quad \text{(true)}
+\end{aligned}
+$$
+
+---
+
+**Example 8**
+
+Some systems create a **closed shape** when the shaded areas overlap.
+These are common in real-world problems with limits or constraints.
+$$
+\begin{aligned}
+y &\le -x + 5 \\
+y &\le x + 1 \\
 y &\ge 0
 \end{aligned}
 $$
-Graph these and shade the region that satisfies all three.
-:::
+
+Steps:
+
+1. Graph each line (the top two are solid and shade **below**; the last shades **above** the $x$-axis).
+2. The shaded **triangle** that forms where all three regions meet is the **solution**.
+
+![](/images/Unit_4/Lesson_6/Example8.png){width="450px" fig-align="center"}
+
+Any point inside that triangle satisfies **all three inequalities**.
 
 ---
 
-### 4.6.3 – Interpreting the Shaded Region
+:::{.you-try-m title="Graph and describe the solution region."}
+$$
+\begin{aligned}
+y &> -x + 2 \\
+y &< 3x + 6
+\end{aligned}
+$$
+:::
 
-Every point in the shaded area represents a **possible solution**.
-In real-world terms, that might mean:
+:::{.answer title="Answer"}
+![](/images/Unit_4/Lesson_6/YouTry3.png){width="450px" fig-align="center"}
+:::
 
-* combinations of products you can afford,
-* time or resource limits you can’t exceed,
-* or any mix of values that meet your conditions.
+:::{.remember title="What the overlap means"}
+Each shaded region shows where **one inequality** is true.
+The **overlap** shows where **all inequalities** are true together — the solution set.
 
-:::{.you-try-m title="Practice Interpretation"}
-You’re buying snacks for a party. Chips cost $3 per bag and drinks cost $2 each.
-You can spend at most $12.
-
-1. Write an inequality for your total cost.
-2. Graph it.
-3. What does a point inside the shaded region mean?
+In real-world problems, this region represents all combinations that **meet every condition** (for example, time, budget, or resource limits).
 :::
 
 {{< practice >}}
 
-Coming soon.
+1. For $y \le -3x + 2$: say whether the boundary is **solid or dashed**, and whether you shade **above or below**.
+
+2. For $y > \tfrac{1}{2}x - 4$: boundary type and shading direction?
+
+3. Rewrite in slope-intercept form and state $(m, b)$:
+   $3x + y \ge 5$.
+
+4. Rewrite and state boundary/shading:
+   $-2y < 6x - 8$.
+
+5. Test whether the point is a solution to $y \le x + 1$: $(2, 3)$.
+
+6. Test whether the point is a solution to $y \le x + 1$: $(0, 2)$.
+
+7. **Graphing (describe):** For $y < -x$, draw the boundary and describe which side to shade.
+
+8. A boundary line passes through $(0, -2)$ and $(2, 2)$. The region is **above** the boundary and the boundary is **not included**. Write an inequality in the form $y \ \square\  mx + b$.
+
+9. For the system
+
+   $$
+    \begin{align*}
+    y &>= -x + 1 \\
+    y &< 2x + 5
+    \end{align*}
+   $$
+
+   is $(2, 4)$ a solution?
+
+10. For the system
+    $$
+    \begin{align*}
+    y &\le 3 - x \\
+    y &\ge -2
+    \end{align*}
+    $$
+
+    is $(5, -1)$ a solution?
+
+11. Put $4x - 2y \ge 8$ into slope-intercept form and state boundary/shading.
+
+12. **Graphing (describe):** Draw the dashed line $y = -\tfrac{1}{2}x + 4$ and indicate which side to shade for $y < -\tfrac{1}{2}x + 4$.
+
+13. For the system
+    $$
+    \begin{align*}
+    y &\ge 0 \\
+    x &\ge 0 \\
+    y &\le -x + 6
+    \end{align*}
+    $$
+
+    list the **vertices** of the triangular solution region.
+
+14. The boundary is $y = \tfrac{1}{3}x + 1$, the region is **above**, and the boundary **is included**. Write the inequality.
+
+15. Without rearranging, decide boundary/shading for $y > 2 - \tfrac{3}{4}x$.
+
+16. Solve for $y$, then say whether the origin $(0,0)$ lies in the solution:
+    $-x + 3y > 9$.
+
+17. True/False: “If a point lies on the boundary of $y < 2x + 1$, then it is part of the solution set.”
+
+18. For the pair of inequalities $y \ge x - 1$ and $y \le x + 2$:
+    a) Describe the shape of the solution region.
+    b) Is $(0,0)$ in the solution?
+
+19. An open boundary through $(-2, 1)$ and $(2, -1)$ with the region **below** the line. Write the inequality.
+
+20. Determine if the system has **any** solutions (yes/no). Briefly justify.
+    $$
+    \begin{align*}
+    y &< x - 5 \\
+    y &> x + 1
+    \end{align*}
+    $$
+
+21. Write an inequality whose solution is “all points with $y$ at least $-2$”. State boundary/shading.
+
+22. Shade “to the right of” the vertical line $x = -3$, boundary **not included**. Write the inequality.
+
+23. **Graphing (describe):** For the system
+    $$
+    \begin{align*}
+    y &\le 2x + 1 \\
+    y &\ge -x - 2
+    \end{align*}
+    $$
+
+    describe the overlap and decide if $(3,0)$ is included.
+
+24. **Challenge.** For the system
+    
+    $$
+    \begin{align*}
+    y &\ge x - 1 \\
+    y &\ge -x - 1 \\
+    y &\le 4
+    \end{align*}
+    $$
+
+    find the **vertices** of the (bounded) solution region.
+
+25. **Challenge.** A triangular region has vertices $(0,0),\ (4,0),\ (1,3)$. Write a system of **three** linear inequalities (with $\le$ or $\ge$) whose solution set is exactly this triangle (including edges).
+
+---
 
 :::{.answers}
 
-Coming soon.
+1. **Solid**, shade **below** (because (\le)).
+2. **Dashed**, shade **above** (because (>)).
+3. (y \ge -3x + 5). So (m=-3,\ b=5); **solid**, shade **above**.
+4. Divide by (-2) (flip): (y > -3x + 4). **Dashed**, shade **above**.
+5. Check (3 \le 2 + 1\Rightarrow 3 \le 3) **true** → solution.
+6. Check (2 \le 0 + 1\Rightarrow 2 \le 1) **false** → not a solution.
+7. Boundary: line (y = -x), **dashed**; shade **below** the line.
+8. Slope (m=\dfrac{2-(-2)}{2-0}=2), intercept (b=-2) ⇒ line (y=2x-2). Above & not included ⇒ (\boxed{,y > 2x - 2,}).
+9. ((2,4)): (4 \ge -2 + 1=-1) true; (4 < 9) true ⇒ **yes**.
+10. ((5,-1)): (-1 \le 3-5=-2) **false** ⇒ **no**.
+11. (4x - 2y \ge 8 \Rightarrow -2y \ge 8 - 4x \Rightarrow y \le 2x - 4). **Solid**, shade **below**.
+12. For (y < -\tfrac{1}{2}x + 4): draw **dashed** (y=-\tfrac{1}{2}x+4), shade **below**.
+13. First-quadrant triangle under (y=-x+6): vertices (\boxed{(0,0),\ (6,0),\ (0,6)}).
+14. Above and included ⇒ (\boxed{,y \ge \tfrac{1}{3}x + 1,}).
+15. Already in (y > \cdots) form: **dashed**, shade **above**.
+16. (-x + 3y > 9 \Rightarrow 3y > x + 9 \Rightarrow y > \tfrac{1}{3}x + 3).
+    Test origin: (0 > 3) **false**, so the side **not** containing ((0,0)).
+17. **False.** Strict inequality (<) excludes boundary points.
+18. a) A **band** between two parallel lines (both boundaries **included**).
+    b) ((0,0)): (0 \ge -1) true, (0 \le 2) true ⇒ **yes**.
+19. Through ((-2,1)), ((2,-1)): slope (m=\dfrac{-1-1}{2-(-2)}=-\dfrac{2}{4}=-\tfrac{1}{2});
+    Using ((2,-1)): (y=-\tfrac{1}{2}x + b\Rightarrow -1=-1+b\Rightarrow b=0).
+    Below, not included ⇒ (\boxed{,y < -\tfrac{1}{2}x,}).
+20. **No solutions.** Both have slope 1; (y>x+1) is above (y>x-5). You can’t be **above** the higher line and **below** the lower line simultaneously.
+21. (\boxed{,y \ge -2,}). **Solid** horizontal line at (y=-2), shade **above**.
+22. (\boxed{,x > -3,}). **Dashed** vertical line (x=-3); shade **right**.
+23. Overlap = region between the two lines; ((3,0)): (0 \le 7) true, (0 \ge -5) true ⇒ **included**.
+24. Intersections:
+
+* (y=4) with (y=x-1) ⇒ (x=5) ⇒ ((5,4))
+* (y=4) with (y=-x-1) ⇒ (-x-1=4\Rightarrow x=-5) ⇒ ((-5,4))
+* (y=x-1) with (y=-x-1) ⇒ (x-1=-x-1\Rightarrow x=0,\ y=-1)
+  Vertices: (\boxed{(-5,4),\ (5,4),\ (0,-1)}).
+
+25. Edges:
+
+* ((0,0))–((4,0)): (y=0 \Rightarrow \boxed{y \ge 0}) (interior above the (x)-axis)
+* ((0,0))–((1,3)): (y=3x \Rightarrow \boxed{y \le 3x}) (check ((4,0)): (0 \le 12) true)
+* ((4,0))–((1,3)): slope (-1), line (y=-x+4 \Rightarrow \boxed{y \le -x + 4}) (check interior ((\tfrac{5}{3},1)): (1 \le 2.\overline{3}) true)
+  System: (\boxed{,y \ge 0,\ \ y \le 3x,\ \ y \le -x + 4,}).
 
 :::
