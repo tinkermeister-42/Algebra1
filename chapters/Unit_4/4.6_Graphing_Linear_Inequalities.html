@@ -539,8 +539,8 @@ window.Quarto = {
    
   <ul>
   <li><a href="#linear-inequalities-in-two-variables" id="toc-linear-inequalities-in-two-variables" class="nav-link active" data-scroll-target="#linear-inequalities-in-two-variables">4.6.1 – Linear Inequalities in Two Variables</a></li>
-  <li><a href="#systems-of-inequalities" id="toc-systems-of-inequalities" class="nav-link" data-scroll-target="#systems-of-inequalities">4.6.2 – Systems of Inequalities</a></li>
-  <li><a href="#interpreting-the-shaded-region" id="toc-interpreting-the-shaded-region" class="nav-link" data-scroll-target="#interpreting-the-shaded-region">4.6.3 – Interpreting the Shaded Region</a></li>
+  <li><a href="#solving-two-variable-inequalities" id="toc-solving-two-variable-inequalities" class="nav-link" data-scroll-target="#solving-two-variable-inequalities">4.6.2 – Solving Two-Variable Inequalities</a></li>
+  <li><a href="#systems-of-linear-inequalities" id="toc-systems-of-linear-inequalities" class="nav-link" data-scroll-target="#systems-of-linear-inequalities">4.6.3 – Systems of Linear Inequalities</a></li>
   </ul>
 </nav>
     </div>
@@ -571,79 +571,372 @@ window.Quarto = {
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can graph linear inequalities in two variables.</label></li>
-<li><label><input type="checkbox">I can explain what the shaded region means in a real-world context.</label></li>
+<li><label><input type="checkbox">I can solve linear inequalities in two variables and graph the solution.</label></li>
+<li><label><input type="checkbox">I can solve systems of linear inequalities.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-slug="inequality" data-term="inequality" data-original-href="#glossary-inequality">inequality</a>, <a href="#glossary-greater" class="glossary-link" data-slug="greater" data-term="greater" data-original-href="#glossary-greater">greater</a>, <a href="#glossary-less" class="glossary-link" data-slug="less" data-term="less" data-original-href="#glossary-less">less</a>, <a href="#glossary-dashed" class="glossary-link" data-slug="dashed" data-term="dashed" data-original-href="#glossary-dashed">dashed</a>, <a href="#glossary-solid" class="glossary-link" data-slug="solid" data-term="solid" data-original-href="#glossary-solid">solid</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-slug="solution" data-term="solution" data-original-href="#glossary-solution">solution</a></p>
+<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-slug="inequality" data-original-href="#glossary-inequality">inequality</a>, <a href="#glossary-greater" class="glossary-link" data-term="greater" data-slug="greater" data-original-href="#glossary-greater">greater</a>, <a href="#glossary-less" class="glossary-link" data-term="less" data-slug="less" data-original-href="#glossary-less">less</a>, <a href="#glossary-dashed" class="glossary-link" data-term="dashed" data-slug="dashed" data-original-href="#glossary-dashed">dashed</a>, <a href="#glossary-solid" class="glossary-link" data-term="solid" data-slug="solid" data-original-href="#glossary-solid">solid</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-slug="solution" data-original-href="#glossary-solution">solution</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
-<li>Solve for <span class="math inline">\(x\)</span>: <span class="math inline">\(4x - 7 &lt; 13\)</span></li>
-<li>Solve for <span class="math inline">\(y\)</span>: <span class="math inline">\(-3y + 6 \ge 9\)</span></li>
-<li>On a graph, what does it mean if a point is <em>above</em> the line <span class="math inline">\(y = 2x + 3\)</span>? What about <em>below</em> it?</li>
+<li><p>Solve for <span class="math inline">\(x\)</span>: <span class="math inline">\(4x - 7 &lt; 13\)</span></p></li>
+<li><p>Solve for <span class="math inline">\(y\)</span>: <span class="math inline">\(-3y + 6 \ge 9\)</span></p></li>
+<li><p>Graph the line <span class="math inline">\(y = -\tfrac{2}{3}x + 1\)</span>.</p></li>
 </ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
 <section id="linear-inequalities-in-two-variables" class="level3">
 <h3 class="anchored" data-anchor-id="linear-inequalities-in-two-variables">4.6.1 – Linear Inequalities in Two Variables</h3>
-<p>When we graph an inequality like <span class="math display">\[y &lt; 2x + 3,\]</span> we start just like a line — by graphing the <strong>boundary</strong> <span class="math inline">\(y = 2x + 3\)</span>.</p>
-<p>But the inequality sign changes what happens next:</p>
+<p>Back in Unit 3, you learned that solving an <strong>inequality</strong> is almost the same as solving an <strong>equation</strong>, with just a few key differences:</p>
 <ul>
-<li><p>If it’s <strong>&lt;</strong> or <strong>&gt;</strong>, we draw a <strong>dashed line</strong>.</p>
-<blockquote class="blockquote">
-<p>(Points <em>on</em> the line are <em>not</em> included.)</p>
-</blockquote></li>
-<li><p>If it’s <strong>≤</strong> or <strong>≥</strong>, we draw a <strong>solid line</strong>.</p>
-<blockquote class="blockquote">
-<p>(Points <em>on</em> the line <em>are</em> included.)</p>
-</blockquote></li>
+<li>If you multiply or divide by a negative number, you <strong>flip the inequality sign</strong>.</li>
+<li>The solution is not a single number but a <strong>range of values</strong>.</li>
+<li>The difference between <span class="math inline">\(x &gt; 5\)</span> and <span class="math inline">\(x \ge 5\)</span> is whether the endpoint is <strong>included</strong> (closed circle) or <strong>not included</strong> (open circle).</li>
 </ul>
-<p>Then we <strong>shade</strong> the half of the graph where the inequality is true:</p>
-<ul>
-<li>Shade <strong>above</strong> the line for <strong>greater than</strong> (<span class="math inline">\(&gt;\)</span> or <span class="math inline">\(≥\)</span>).</li>
-<li>Shade <strong>below</strong> the line for <strong>less than</strong> (<span class="math inline">\(&lt;\)</span> or <span class="math inline">\(≤\)</span>).</li>
-</ul>
-<div class="you-try-m" title="Graph and shade">
-<p>Graph <span class="math inline">\(y &gt; -x + 2\)</span>. Is the line solid or dashed? Which side should you shade?</p>
+<p>Those same ideas still apply when we move to <strong>two variables</strong>, but now our solutions appear on a <strong>coordinate plane</strong> instead of a number line.</p>
+<hr>
+<p>Let’s start with what you already know.</p>
+<p>When you graph <span class="math inline">\(x &gt; 5\)</span>, you use an <strong>open circle</strong> at 5 and shade to the right:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/xgt5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<p>If the inequality is <span class="math inline">\(x \ge 5\)</span>, you use a <strong>closed circle</strong> at 5 and again shade to the right:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/xgte5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<hr>
+<p>Now we’ll extend those ideas to the coordinate plane.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>On a number line</th>
+<th>On a coordinate plane</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Open circle → point not included</td>
+<td><strong>Dashed line</strong> → points on the line not included</td>
+</tr>
+<tr class="even">
+<td>Closed circle → point included</td>
+<td><strong>Solid line</strong> → points on the line included</td>
+</tr>
+<tr class="odd">
+<td>Arrow to the right → greater than</td>
+<td><strong>Shade above</strong> the line → greater than (<span class="math inline">\(&gt;\)</span> or <span class="math inline">\(≥\)</span>)</td>
+</tr>
+<tr class="even">
+<td>Arrow to the left → less than</td>
+<td><strong>Shade below</strong> the line → less than (<span class="math inline">\(&lt;\)</span> or <span class="math inline">\(≤\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Example 1</strong> Graph the inequality <span class="math inline">\(y \le \tfrac{1}{2}x + 2\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>The shaded region shows all points <strong>below</strong> the line. The line is <strong>solid</strong>, so points on the line are <strong>included</strong> in the solution set.</p>
+<p>We can use a <strong>test point</strong> to confirm.</p>
+<p>The point <span class="math inline">\((-4, 6)\)</span> appears <strong>outside</strong> the shaded region: <span class="math display">\[
+\begin{align*}
+6 &amp;\le \tfrac{1}{2}(-4) + 2 \\
+6 &amp;\le 0
+\end{align*}
+\]</span> This is <strong>false</strong>, so <span class="math inline">\((-4, 6)\)</span> is correctly outside the solution.</p>
+<p>The point <span class="math inline">\((2, -4)\)</span> appears <strong>inside</strong> the shaded region: <span class="math display">\[
+\begin{align*}
+-4 &amp;\le \tfrac{1}{2}(2) + 2 \\
+-4 &amp;\le 3
+\end{align*}
+\]</span> This is <strong>true</strong>, confirming that <span class="math inline">\((2, -4)\)</span> is part of the solution set.</p>
+<hr>
+<p><strong>Example 2</strong> Graph the inequality <span class="math inline">\(y &lt; \tfrac{1}{2}x + 2\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>The shaded region shows all points <strong>below</strong> the line. The line is <strong>dashed</strong>, so points on the line are <strong>not included</strong>.</p>
+<hr>
+<p><strong>Example 3</strong> Graph the inequality <span class="math inline">\(y &gt; \tfrac{1}{2}x + 2\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>The shaded region shows all points <strong>above</strong> the line. The line is <strong>dashed</strong>, so points on the line are <strong>not included</strong>.</p>
+<hr>
+<p><strong>Example 4</strong> Graph the inequality <span class="math inline">\(y \ge \tfrac{1}{2}x + 2\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>The shaded region shows all points <strong>above</strong> the line. The line is <strong>solid</strong>, so points on the line are <strong>included</strong>.</p>
+<div class="you-try" title="Graph the inequality $y < 3x - 5$">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/YouTry1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
 </div>
 <hr>
 </section>
-<section id="systems-of-inequalities" class="level3">
-<h3 class="anchored" data-anchor-id="systems-of-inequalities">4.6.2 – Systems of Inequalities</h3>
-<p>A <strong>system of inequalities</strong> means you have <em>more than one</em> inequality on the same graph. Each one creates a shaded region, and the <strong>solution set</strong> is where the shaded regions <strong>overlap</strong>.</p>
-<p>This area represents all points that make <strong>every inequality true at once</strong>.</p>
-<div class="real-world" title="Example – Budget and Time Limits">
-<p>You can make bracelets (<span class="math inline">\(x\)</span>) and necklaces (<span class="math inline">\(y\)</span>). Each bracelet takes 1 hour, each necklace takes 2 hours, and you have at most 10 hours total. You also can’t make negative amounts.</p>
-<p>Inequalities: <span class="math display">\[
+<section id="solving-two-variable-inequalities" class="level3">
+<h3 class="anchored" data-anchor-id="solving-two-variable-inequalities">4.6.2 – Solving Two-Variable Inequalities</h3>
+<p>In the last section, you graphed a linear inequality once it was already written as <span class="math inline">\(y &lt; mx + b\)</span> or <span class="math inline">\(y \le mx + b\)</span>.</p>
+<p>But what if <span class="math inline">\(y\)</span> isn’t by itself yet? Here we’ll focus on <strong>getting the inequality into slope-intercept form</strong> so it’s ready to graph.</p>
+<hr>
+<p><strong>How to solve for <span class="math inline">\(y\)</span>:</strong></p>
+<ol type="1">
+<li><p>Move <span class="math inline">\(x\)</span>-terms and constants just like in an equation.</p></li>
+<li><p>If you multiply or divide by a <strong>negative</strong>, <strong>flip the inequality sign</strong>.</p></li>
+<li><p>Once it’s in slope-intercept form (<span class="math inline">\(y = mx + b\)</span>), graph it as before:</p>
+<ul>
+<li><strong>Dashed line</strong> for <span class="math inline">\(&lt;\)</span> or <span class="math inline">\(&gt;\)</span></li>
+<li><strong>Solid line</strong> for <span class="math inline">\(\le\)</span> or <span class="math inline">\(\ge\)</span></li>
+<li><strong>Shade above</strong> for “greater,” <strong>below</strong> for “less”</li>
+</ul></li>
+</ol>
+<hr>
+<p><strong>Example 1</strong></p>
+<p>Solve and graph <span class="math inline">\(2x + y &lt; 4\)</span>. <span class="math display">\[
+\begin{align*}
+2x + y &amp;&lt; 4 \\
+y &amp;&lt; -2x + 4
+\end{align*}
+\]</span> The line <span class="math inline">\(y = -2x + 4\)</span> is <strong>dashed</strong> and shaded <strong>below</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<hr>
+<p><strong>Example 2</strong></p>
+<p>Solve and graph <span class="math inline">\(3x - 2y \le 6\)</span>. <span class="math display">\[
+\begin{align*}
+3x - 2y &amp;\le 6 \\
+-2y &amp;\le -3x + 6 \\
+y &amp;\ge \tfrac{3}{2}x - 3 \quad \text{(flip the sign when dividing by –2)}
+\end{align*}
+\]</span> The line <span class="math inline">\(y = \tfrac{3}{2}x - 3\)</span> is <strong>solid</strong> and shaded <strong>above</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<div class="gotcha" title="Don’t forget to flip the sign!">
+<p>When you multiply or divide both sides by a <strong>negative number</strong>, the inequality <strong>reverses direction</strong>.</p>
+</div>
+<div class="you-try" title="Solve and graph 4x - 2y ≤ 8">
+<p><span class="math display">\[
+y \ge 2x - 4
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/YouTry2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="systems-of-linear-inequalities" class="level3">
+<h3 class="anchored">4.6.3 – Systems of Linear Inequalities</h3>
+<p>So far, you’ve graphed a <strong>single inequality</strong> — one shaded region showing all the points that make it true.</p>
+<p>A <strong>system of inequalities</strong> means you have <strong>two or more inequalities</strong> on the same graph. Each one creates its own shaded region. The <strong>solution set</strong> is where all the shaded regions <strong>overlap</strong>.</p>
+<p>That overlapping area shows all the <span class="math inline">\((x, y)\)</span> pairs that make <strong>every inequality true</strong> at the same time.</p>
+<hr>
+<p><strong>Example 7</strong></p>
+<p>Graph the system: <span class="math display">\[
 \begin{aligned}
-x + 2y &amp;\le 10 \\
-x &amp;\ge 0 \\
+y &amp;\le 2x + 3 \\
+y &amp;&gt; -x + 1
+\end{aligned}
+\]</span></p>
+<p>Steps:</p>
+<ol type="1">
+<li>Graph <span class="math inline">\(y = 2x + 3\)</span> with a <strong>solid line</strong> and shade <strong>below</strong> it.</li>
+<li>Graph <span class="math inline">\(y = -x + 1\)</span> with a <strong>dashed line</strong> and shade <strong>above</strong> it.</li>
+<li>The <strong>overlapping region</strong> (where both shades meet) is the <strong>solution set</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>Any point in that shaded overlap makes both inequalities true. For example, <span class="math inline">\((4, 2)\)</span> works because: <span class="math display">\[
+\begin{aligned}
+2 &amp;\le 2(4) + 3 = 11 \quad \text{(true)} \\
+2 &amp;&gt; -4 + 1 = -3 \quad \text{(true)}
+\end{aligned}
+\]</span></p>
+<hr>
+<p><strong>Example 8</strong></p>
+<p>Some systems create a <strong>closed shape</strong> when the shaded areas overlap. These are common in real-world problems with limits or constraints. <span class="math display">\[
+\begin{aligned}
+y &amp;\le -x + 5 \\
+y &amp;\le x + 1 \\
 y &amp;\ge 0
 \end{aligned}
-\]</span> Graph these and shade the region that satisfies all three.</p>
-</div>
-<hr>
-</section>
-<section id="interpreting-the-shaded-region" class="level3">
-<h3 class="anchored">4.6.3 – Interpreting the Shaded Region</h3>
-<p>Every point in the shaded area represents a <strong>possible solution</strong>. In real-world terms, that might mean:</p>
-<ul>
-<li>combinations of products you can afford,</li>
-<li>time or resource limits you can’t exceed,</li>
-<li>or any mix of values that meet your conditions.</li>
-</ul>
-<div class="you-try-m" title="Practice Interpretation">
-<p>You’re buying snacks for a party. Chips cost $3 per bag and drinks cost $2 each. You can spend at most $12.</p>
+\]</span></p>
+<p>Steps:</p>
 <ol type="1">
-<li>Write an inequality for your total cost.</li>
-<li>Graph it.</li>
-<li>What does a point inside the shaded region mean?</li>
+<li>Graph each line (the top two are solid and shade <strong>below</strong>; the last shades <strong>above</strong> the <span class="math inline">\(x\)</span>-axis).</li>
+<li>The shaded <strong>triangle</strong> that forms where all three regions meet is the <strong>solution</strong>.</li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/Example8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
 </div>
-<h2 class="unnumbered anchored" data-anchor-id="interpreting-the-shaded-region">✍️ Practice On Your Own</h2>
-<p>Coming soon.</p>
+<p>Any point inside that triangle satisfies <strong>all three inequalities</strong>.</p>
+<hr>
+<div class="you-try-m" title="Graph and describe the solution region.">
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;&gt; -x + 2 \\
+y &amp;&lt; 3x + 6
+\end{aligned}
+\]</span></p>
+</div>
+<div class="answer" title="Answer">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_6/YouTry3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+</div>
+<div class="remember" title="What the overlap means">
+<p>Each shaded region shows where <strong>one inequality</strong> is true. The <strong>overlap</strong> shows where <strong>all inequalities</strong> are true together — the solution set.</p>
+<p>In real-world problems, this region represents all combinations that <strong>meet every condition</strong> (for example, time, budget, or resource limits).</p>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="systems-of-linear-inequalities">✍️ Practice On Your Own</h2>
+<ol type="1">
+<li><p>For <span class="math inline">\(y \le -3x + 2\)</span>: say whether the boundary is <strong>solid or dashed</strong>, and whether you shade <strong>above or below</strong>.</p></li>
+<li><p>For <span class="math inline">\(y &gt; \tfrac{1}{2}x - 4\)</span>: boundary type and shading direction?</p></li>
+<li><p>Rewrite in slope-intercept form and state <span class="math inline">\((m, b)\)</span>: <span class="math inline">\(3x + y \ge 5\)</span>.</p></li>
+<li><p>Rewrite and state boundary/shading: <span class="math inline">\(-2y &lt; 6x - 8\)</span>.</p></li>
+<li><p>Test whether the point is a solution to <span class="math inline">\(y \le x + 1\)</span>: <span class="math inline">\((2, 3)\)</span>.</p></li>
+<li><p>Test whether the point is a solution to <span class="math inline">\(y \le x + 1\)</span>: <span class="math inline">\((0, 2)\)</span>.</p></li>
+<li><p><strong>Graphing (describe):</strong> For <span class="math inline">\(y &lt; -x\)</span>, draw the boundary and describe which side to shade.</p></li>
+<li><p>A boundary line passes through <span class="math inline">\((0, -2)\)</span> and <span class="math inline">\((2, 2)\)</span>. The region is <strong>above</strong> the boundary and the boundary is <strong>not included</strong>. Write an inequality in the form <span class="math inline">\(y \ \square\  mx + b\)</span>.</p></li>
+<li><p>For the system</p>
+<p><span class="math display">\[
+\begin{align*}
+y &amp;&gt;= -x + 1 \\
+y &amp;&lt; 2x + 5
+\end{align*}
+\]</span></p>
+<p>is <span class="math inline">\((2, 4)\)</span> a solution?</p></li>
+<li><p>For the system <span class="math display">\[
+\begin{align*}
+y &amp;\le 3 - x \\
+y &amp;\ge -2
+\end{align*}
+\]</span></p>
+<p>is <span class="math inline">\((5, -1)\)</span> a solution?</p></li>
+<li><p>Put <span class="math inline">\(4x - 2y \ge 8\)</span> into slope-intercept form and state boundary/shading.</p></li>
+<li><p><strong>Graphing (describe):</strong> Draw the dashed line <span class="math inline">\(y = -\tfrac{1}{2}x + 4\)</span> and indicate which side to shade for <span class="math inline">\(y &lt; -\tfrac{1}{2}x + 4\)</span>.</p></li>
+<li><p>For the system <span class="math display">\[
+\begin{align*}
+y &amp;\ge 0 \\
+x &amp;\ge 0 \\
+y &amp;\le -x + 6
+\end{align*}
+\]</span></p>
+<p>list the <strong>vertices</strong> of the triangular solution region.</p></li>
+<li><p>The boundary is <span class="math inline">\(y = \tfrac{1}{3}x + 1\)</span>, the region is <strong>above</strong>, and the boundary <strong>is included</strong>. Write the inequality.</p></li>
+<li><p>Without rearranging, decide boundary/shading for <span class="math inline">\(y &gt; 2 - \tfrac{3}{4}x\)</span>.</p></li>
+<li><p>Solve for <span class="math inline">\(y\)</span>, then say whether the origin <span class="math inline">\((0,0)\)</span> lies in the solution: <span class="math inline">\(-x + 3y &gt; 9\)</span>.</p></li>
+<li><p>True/False: “If a point lies on the boundary of <span class="math inline">\(y &lt; 2x + 1\)</span>, then it is part of the solution set.”</p></li>
+<li><p>For the pair of inequalities <span class="math inline">\(y \ge x - 1\)</span> and <span class="math inline">\(y \le x + 2\)</span>:</p>
+<ol type="a">
+<li>Describe the shape of the solution region.</li>
+<li>Is <span class="math inline">\((0,0)\)</span> in the solution?</li>
+</ol></li>
+<li><p>An open boundary through <span class="math inline">\((-2, 1)\)</span> and <span class="math inline">\((2, -1)\)</span> with the region <strong>below</strong> the line. Write the inequality.</p></li>
+<li><p>Determine if the system has <strong>any</strong> solutions (yes/no). Briefly justify. <span class="math display">\[
+\begin{align*}
+y &amp;&lt; x - 5 \\
+y &amp;&gt; x + 1
+\end{align*}
+\]</span></p></li>
+<li><p>Write an inequality whose solution is “all points with <span class="math inline">\(y\)</span> at least <span class="math inline">\(-2\)</span>”. State boundary/shading.</p></li>
+<li><p>Shade “to the right of” the vertical line <span class="math inline">\(x = -3\)</span>, boundary <strong>not included</strong>. Write the inequality.</p></li>
+<li><p><strong>Graphing (describe):</strong> For the system <span class="math display">\[
+\begin{align*}
+y &amp;\le 2x + 1 \\
+y &amp;\ge -x - 2
+\end{align*}
+\]</span></p>
+<p>describe the overlap and decide if <span class="math inline">\((3,0)\)</span> is included.</p></li>
+<li><p><strong>Challenge.</strong> For the system</p>
+<p><span class="math display">\[
+\begin{align*}
+y &amp;\ge x - 1 \\
+y &amp;\ge -x - 1 \\
+y &amp;\le 4
+\end{align*}
+\]</span></p>
+<p>find the <strong>vertices</strong> of the (bounded) solution region.</p></li>
+<li><p><strong>Challenge.</strong> A triangular region has vertices <span class="math inline">\((0,0),\ (4,0),\ (1,3)\)</span>. Write a system of <strong>three</strong> linear inequalities (with <span class="math inline">\(\le\)</span> or <span class="math inline">\(\ge\)</span>) whose solution set is exactly this triangle (including edges).</p></li>
+</ol>
+<hr>
 <div class="answers">
-<p>Coming soon.</p>
+<ol type="1">
+<li><strong>Solid</strong>, shade <strong>below</strong> (because ()).</li>
+<li><strong>Dashed</strong>, shade <strong>above</strong> (because (&gt;)).</li>
+<li>(y -3x + 5). So (m=-3,&nbsp;b=5); <strong>solid</strong>, shade <strong>above</strong>.</li>
+<li>Divide by (-2) (flip): (y &gt; -3x + 4). <strong>Dashed</strong>, shade <strong>above</strong>.</li>
+<li>Check (3 + 1 ) <strong>true</strong> → solution.</li>
+<li>Check (2 + 1 ) <strong>false</strong> → not a solution.</li>
+<li>Boundary: line (y = -x), <strong>dashed</strong>; shade <strong>below</strong> the line.</li>
+<li>Slope (m==2), intercept (b=-2) ⇒ line (y=2x-2). Above &amp; not included ⇒ ().</li>
+<li>((2,4)): (4 + 1=-1) true; (4 &lt; 9) true ⇒ <strong>yes</strong>.</li>
+<li>((5,-1)): (-1 -5=-2) <strong>false</strong> ⇒ <strong>no</strong>.</li>
+<li>(4x - 2y -2y - 4x y 2x - 4). <strong>Solid</strong>, shade <strong>below</strong>.</li>
+<li>For (y &lt; -x + 4): draw <strong>dashed</strong> (y=-x+4), shade <strong>below</strong>.</li>
+<li>First-quadrant triangle under (y=-x+6): vertices ().</li>
+<li>Above and included ⇒ ().</li>
+<li>Already in (y &gt; ) form: <strong>dashed</strong>, shade <strong>above</strong>.</li>
+<li>(-x + 3y &gt; 9 3y &gt; x + 9 y &gt; x + 3). Test origin: (0 &gt; 3) <strong>false</strong>, so the side <strong>not</strong> containing ((0,0)).</li>
+<li><strong>False.</strong> Strict inequality (&lt;) excludes boundary points.</li>
+<li><ol type="a">
+<li>A <strong>band</strong> between two parallel lines (both boundaries <strong>included</strong>).</li>
+<li>((0,0)): (0 ) true, (0 ) true ⇒ <strong>yes</strong>.</li>
+</ol></li>
+<li>Through ((-2,1)), ((2,-1)): slope (m==-=-); Using ((2,-1)): (y=-x + b=-1+bb=0). Below, not included ⇒ ().</li>
+<li><strong>No solutions.</strong> Both have slope 1; (y&gt;x+1) is above (y&gt;x-5). You can’t be <strong>above</strong> the higher line and <strong>below</strong> the lower line simultaneously.</li>
+<li>(). <strong>Solid</strong> horizontal line at (y=-2), shade <strong>above</strong>.</li>
+<li>(). <strong>Dashed</strong> vertical line (x=-3); shade <strong>right</strong>.</li>
+<li>Overlap = region between the two lines; ((3,0)): (0 ) true, (0 ) true ⇒ <strong>included</strong>.</li>
+<li>Intersections:</li>
+</ol>
+<ul>
+<li>(y=4) with (y=x-1) ⇒ (x=5) ⇒ ((5,4))</li>
+<li>(y=4) with (y=-x-1) ⇒ (-x-1=4x=-5) ⇒ ((-5,4))</li>
+<li>(y=x-1) with (y=-x-1) ⇒ (x-1=-x-1x=0,&nbsp;y=-1) Vertices: ().</li>
+</ul>
+<ol start="25" type="1">
+<li>Edges:</li>
+</ol>
+<ul>
+<li>((0,0))–((4,0)): (y=0 ) (interior above the (x)-axis)</li>
+<li>((0,0))–((1,3)): (y=3x ) (check ((4,0)): (0 ) true)</li>
+<li>((4,0))–((1,3)): slope (-1), line (y=-x+4 ) (check interior ((,1)): (1 .) true) System: ().</li>
+</ul>
 </div>
 
 
