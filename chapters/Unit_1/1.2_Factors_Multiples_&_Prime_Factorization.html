@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,20 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
 window.MathJax = {
+
   tex: {
+
     packages: {'[+]': ['base', 'ams', 'color']},
+
     macros: {
+
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+
       snplus:   ['\\snboth{+#1}', 1],
+
       snminus:  ['\\snboth{-#1}', 1],
+
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
+
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
+
     }
+
   }
+
 };
+
 </script>
+
 <meta name="mermaid-theme" content="neutral">
 <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
@@ -104,7 +120,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -131,6 +147,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -160,7 +178,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -619,7 +638,7 @@ window.Quarto = {
 <p><strong>Where have we seen this before?</strong></p>
 <p>Multiples show up all over the place. When you <a href="#glossary-skip-count" class="glossary-link" data-term="skip count" data-slug="skip-count" data-original-href="#glossary-skip-count">skip count</a>, you are using multiples. In the previous lesson, we used multiples to construct number lines!</p>
 <p><strong>Example:</strong></p>
-<p>Here is a number line that shows multiples of three. <img src="../../images/Unit_1/Lesson_2/skip_count_by_3.png" class="img-fluid"></p>
+<p>Here is a number line that shows multiples of three. <img src="../..\images/Unit_1/Lesson_2/skip_count_by_3.png" class="img-fluid"></p>
 <div class="real-world">
 <p>If a bus comes every 15 minutes, the arrival times are multiples of 15.</p>
 </div>
@@ -811,7 +830,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Which factors should I start with?
+<span class="screen-reader-only">Tip</span>Which factors should I start with?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -901,7 +920,7 @@ Which factors should I start with?
 <p><span class="math display">\[-1 * 2^3 * 3 = -24\]</span></p>
 <p>This will come in handy later when we factor algebraic <a href="../../glossary.html#glossary-expression" class="glossary-link" data-term="expressions" data-slug="expression" data-original-href="#glossary-expression">expressions</a> like <span class="math inline">\(-x^2 + 4x\)</span>. It’s often helpful to pull out a negative first!</p>
 <p><strong>Feeling overwhelmed?</strong></p>
-<p>If you struggle to come up with the factors for a number, you should check out the <a href="../../resources/Factor-Chart_noprimes.pdf">factor chart</a> in the resources section of this book. It shows all of the factor pairs for many composite numbers!</p>
+<p>If you struggle to come up with the factors for a number, you should check out the <a href="../..\resources/Factor-Chart_noprimes.pdf">factor chart</a> in the resources section of this book. It shows all of the factor pairs for many composite numbers!</p>
 <div class="you-try" title="Can you find at least one more factor tree for 360?">
 <p>I have only shown you 3 of the 60 unique factor trees for 360!</p>
 </div>
@@ -1070,11 +1089,11 @@ Figure&nbsp;2
 <ol type="a">
 <li></li>
 </ol>
-<p><img src="../../images/Unit_1/Lesson_2/lesson_1_2_4a.png" height="200"></p>
+<p><img src="../..\images/Unit_1/Lesson_2/lesson_1_2_4a.png" height="200"></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p><img src="../../images/Unit_1/Lesson_2/lesson_1_2_4b.png" height="300"></p>
+<p><img src="../..\images/Unit_1/Lesson_2/lesson_1_2_4b.png" height="300"></p>
 <hr>
 <p><strong>Factor Trees and Prime Factorization</strong></p>
 <ol start="5" type="1">
@@ -1094,9 +1113,13 @@ Figure&nbsp;2
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
+
 <script src="../../scripts/tippy.min.js"></script>
+
 <script src="../../scripts/glossary-tooltips.js"></script>
+
 <script src="../../scripts/custom-callouts.js"></script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1148,13 +1171,14 @@ Figure&nbsp;2
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
