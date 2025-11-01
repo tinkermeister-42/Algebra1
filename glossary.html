@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="./images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +70,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
-
 <meta name="mermaid-theme" content="neutral">
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
@@ -119,7 +103,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -146,8 +130,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -177,8 +159,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -241,14 +222,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  <a href="./chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 - Adding and Subtracting Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/Unit_1/1.7_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.7 – Order of Operations</span></a>
+  <a href="./chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_1/1.8_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 – Order of Operations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -424,14 +411,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.5 – Linear Models in the Real World</span></a>
+  <a href="./chapters/Unit_4/4.5_Systems_of_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 – Systems of Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.6 – Graphing Linear Inequalities</span></a>
+  <a href="./chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 – Linear Models in the Real World</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_4/4.7_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 – Graphing Linear Inequalities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -443,34 +436,132 @@ window.Quarto = {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 5: Systems of Equations</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 6: Polynomials &amp; Factoring</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 7: Quadratics</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 8: Exponential Functions</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 9: Statistics &amp; Probability</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
- <span class="menu-text">Interactive Learning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 5: Exponents &amp; Polynomials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.1_Exponent_Rules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 - Exponent Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Simplifying Expressions with Exponents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.3_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 - Introduction to Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.4_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 - Multiplying Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.5_Special_Products.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 - Special Products</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/5.6_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 - Factoring_Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_5/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 6: Quadratic Equations &amp; Functions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 - Introduction to Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 - Forms of Quadratic Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 - Solving Quadratic Equations by Factoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.4_Completing_the_Square.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 - Completing_the_Square</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.5_The_Quadratic_Formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 - The Quadratic Formula</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/6.6_Graphing_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 - Graphing Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/Unit_6/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Interactive Learning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
@@ -505,13 +596,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
  <span class="menu-text">Supplemental</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
@@ -585,6 +676,7 @@ window.Quarto = {
   <li><a href="#glossary-division" id="toc-glossary-division" class="nav-link" data-scroll-target="#glossary-division">Division</a></li>
   <li><a href="#glossary-divisible" id="toc-glossary-divisible" class="nav-link" data-scroll-target="#glossary-divisible">Divisible</a></li>
   <li><a href="#glossary-divisor" id="toc-glossary-divisor" class="nav-link" data-scroll-target="#glossary-divisor">Divisor</a></li>
+  <li><a href="#glossary-elimination" id="toc-glossary-elimination" class="nav-link" data-scroll-target="#glossary-elimination">Elimination</a></li>
   <li><a href="#glossary-equation" id="toc-glossary-equation" class="nav-link" data-scroll-target="#glossary-equation">Equation</a></li>
   <li><a href="#glossary-equivalent" id="toc-glossary-equivalent" class="nav-link" data-scroll-target="#glossary-equivalent">Equivalent</a></li>
   <li><a href="#glossary-equivalent_expressions" id="toc-glossary-equivalent_expressions" class="nav-link" data-scroll-target="#glossary-equivalent_expressions">Equivalent expressions</a></li>
@@ -610,6 +702,7 @@ window.Quarto = {
   <li><a href="#glossary-infinitely" id="toc-glossary-infinitely" class="nav-link" data-scroll-target="#glossary-infinitely">Infinitely</a></li>
   <li><a href="#glossary-infinity" id="toc-glossary-infinity" class="nav-link" data-scroll-target="#glossary-infinity">Infinity</a></li>
   <li><a href="#glossary-integer" id="toc-glossary-integer" class="nav-link" data-scroll-target="#glossary-integer">Integer</a></li>
+  <li><a href="#glossary-intersection" id="toc-glossary-intersection" class="nav-link" data-scroll-target="#glossary-intersection">Intersection</a></li>
   <li><a href="#glossary-inverse-operations" id="toc-glossary-inverse-operations" class="nav-link" data-scroll-target="#glossary-inverse-operations">Inverse Operations</a></li>
   <li><a href="#glossary-less_than" id="toc-glossary-less_than" class="nav-link" data-scroll-target="#glossary-less_than">Less than</a></li>
   <li><a href="#glossary-like_terms" id="toc-glossary-like_terms" class="nav-link" data-scroll-target="#glossary-like_terms">Like terms</a></li>
@@ -670,6 +763,7 @@ window.Quarto = {
   <li><a href="#glossary-substitution" id="toc-glossary-substitution" class="nav-link" data-scroll-target="#glossary-substitution">Substitution</a></li>
   <li><a href="#glossary-survey" id="toc-glossary-survey" class="nav-link" data-scroll-target="#glossary-survey">Survey</a></li>
   <li><a href="#glossary-symbol" id="toc-glossary-symbol" class="nav-link" data-scroll-target="#glossary-symbol">Symbol</a></li>
+  <li><a href="#glossary-system-of-equations" id="toc-glossary-system-of-equations" class="nav-link" data-scroll-target="#glossary-system-of-equations">System of Equations</a></li>
   <li><a href="#glossary-term" id="toc-glossary-term" class="nav-link" data-scroll-target="#glossary-term">Term</a></li>
   <li><a href="#glossary-value" id="toc-glossary-value" class="nav-link" data-scroll-target="#glossary-value">Value</a></li>
   <li><a href="#glossary-variable" id="toc-glossary-variable" class="nav-link" data-scroll-target="#glossary-variable">Variable</a></li>
@@ -758,7 +852,7 @@ window.Quarto = {
 </ul>
 <p><strong>Common gotcha:</strong> Subtraction/division aren’t associative. Also, mixing operations breaks it: <span class="math inline">\(a + (b\cdot c)\)</span> is <strong>not</strong> the same as <span class="math inline">\((a + b)\cdot c\)</span>.</p>
 <p><strong>Why it matters:</strong> Lets you <strong>regroup</strong> like terms to add coefficients more easily, e.g., <span class="math inline">\(3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5\)</span>.</p>
-<p><strong>See also:</strong> <a href="#glossary-commutative" class="glossary-link" data-slug="commutative" data-original-href="#glossary-commutative" data-term="commutative">commutative</a>, <a href="#glossary-distributive-property" class="glossary-link" data-slug="distributive-property" data-original-href="#glossary-distributive-property" data-term="distributive property">distributive property</a>, <a href="#glossary-like-terms" class="glossary-link" data-slug="like-terms" data-original-href="#glossary-like-terms" data-term="like terms">like terms</a></p>
+<p><strong>See also:</strong> <a href="#glossary-commutative" class="glossary-link" data-original-href="#glossary-commutative" data-term="commutative" data-slug="commutative">commutative</a>, <a href="#glossary-distributive-property" class="glossary-link" data-original-href="#glossary-distributive-property" data-term="distributive property" data-slug="distributive-property">distributive property</a>, <a href="#glossary-like-terms" class="glossary-link" data-original-href="#glossary-like-terms" data-term="like terms" data-slug="like-terms">like terms</a></p>
 <hr>
 </section>
 <section id="glossary-axis" class="level3">
@@ -851,7 +945,7 @@ It means “3 times x.”</p>
 <li><span class="math inline">\(4\cdot 3 = 3\cdot 4 = 12\)</span></li>
 </ul>
 <p><strong>Why it matters:</strong> Lets you <strong>reorder</strong> terms when simplifying, e.g., <span class="math inline">\(2x + 5x + 3 = (2x + 5x) + 3\)</span>.</p>
-<p><strong>See also:</strong> <a href="#glossary-associative" class="glossary-link" data-slug="associative" data-original-href="#glossary-associative" data-term="associative">associative</a>, <a href="#glossary-distributive-property" class="glossary-link" data-slug="distributive-property" data-original-href="#glossary-distributive-property" data-term="distributive property">distributive property</a></p>
+<p><strong>See also:</strong> <a href="#glossary-associative" class="glossary-link" data-original-href="#glossary-associative" data-term="associative" data-slug="associative">associative</a>, <a href="#glossary-distributive-property" class="glossary-link" data-original-href="#glossary-distributive-property" data-term="distributive property" data-slug="distributive-property">distributive property</a></p>
 <hr>
 </section>
 <section id="glossary-constant" class="level3">
@@ -875,7 +969,7 @@ It means “3 times x.”</p>
 <section id="glossary-coordinate-plane" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-coordinate-plane">Coordinate Plane</h3>
 <p>A flat grid formed by the intersection of the x-axis and y-axis at the origin. It’s used to graph points, lines, and relationships between two numbers or variables.</p>
-<p><img src=".\images/Glossary/CartesianCoordinatePlane.png" class="img-fluid" width="500"></p>
+<p><img src="./images/Glossary/CartesianCoordinatePlane.png" class="img-fluid" width="500"></p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong> When you graph the equation y = 2x + 1, every point on the coordinate plane that satisfies the equation makes a straight line.</p>
 </blockquote>
@@ -957,6 +1051,21 @@ It means “3 times x.”</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
 <p>In <span class="math inline">\(12 \div 3 = 4\)</span>, the number 3 is the divisor because it divides 12 into 3 equal parts.</p>
+</blockquote>
+<hr>
+</section>
+<section id="glossary-elimination" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-elimination">Elimination</h3>
+<p><strong>Elimination</strong> is a method for solving a system of equations by adding or subtracting the equations so that one variable cancels out. After one variable is eliminated, you can solve for the other and then substitute back to find both values.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+2x + y &amp;= 10 \\
+2x - y &amp;= 2
+\end{align*}
+\]</span></p>
+<p>Add the equations to eliminate <span class="math inline">\(y\)</span>: <span class="math inline">\(4x = 12 \Rightarrow x = 3\)</span>. Substitute back to get <span class="math inline">\(y = 4\)</span>. The solution is <span class="math inline">\((3, 4)\)</span>.</p>
 </blockquote>
 <hr>
 </section>
@@ -1059,7 +1168,7 @@ You use the distributive property to spread multiplication over addition or subt
 <p><strong>Example:</strong></p>
 <p>3 is a factor of 12 because 3 × 4 = 12.</p>
 </blockquote>
-<p><em>Note: Factor can also be used as a command. For example, “factor the expression <span class="math inline">\(2x-2\)</span>” asks you to take out the <a href="#glossary-greatest-common-factor" class="glossary-link" data-slug="greatest-common-factor" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor">greatest common factor</a> giving <span class="math inline">\(2(x-1)\)</span></em>.</p>
+<p><em>Note: Factor can also be used as a command. For example, “factor the expression <span class="math inline">\(2x-2\)</span>” asks you to take out the <a href="#glossary-greatest-common-factor" class="glossary-link" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor" data-slug="greatest-common-factor">greatest common factor</a> giving <span class="math inline">\(2(x-1)\)</span></em>.</p>
 <hr>
 </section>
 <section id="glossary-factoring" class="level3">
@@ -1101,7 +1210,7 @@ You use the distributive property to spread multiplication over addition or subt
 </div>
 </div>
 <blockquote class="blockquote">
-<p>This tells us that the <a href="#glossary-prime-factorization" class="glossary-link" data-slug="prime-factorization" data-original-href="#glossary-prime-factorization" data-term="prime factorization">prime factorization</a> of 24 is <span class="math inline">\(2^3 \cdot 3\)</span>.</p>
+<p>This tells us that the <a href="#glossary-prime-factorization" class="glossary-link" data-original-href="#glossary-prime-factorization" data-term="prime factorization" data-slug="prime-factorization">prime factorization</a> of 24 is <span class="math inline">\(2^3 \cdot 3\)</span>.</p>
 </blockquote>
 <hr>
 </section>
@@ -1171,7 +1280,7 @@ If <span class="math inline">\(f(x) = 2x+3\)</span>, then:<br>
 <p>Side to side, like the horizon. Level ground is horizontal.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>This is a horizontal number line. <img src=".\images/Glossary/blank_numberline.png" class="img-fluid"></p>
+<p>This is a horizontal number line. <img src="./images/Glossary/blank_numberline.png" class="img-fluid"></p>
 </blockquote>
 <hr>
 </section>
@@ -1228,6 +1337,14 @@ If <span class="math inline">\(f(x) = 2x+3\)</span>, then:<br>
 <blockquote class="blockquote">
 <p><strong>Examples:</strong></p>
 <p><code>-3</code>, <code>0</code>, <code>5</code>, <code>100</code></p>
+</blockquote>
+<hr>
+</section>
+<section id="glossary-intersection" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-intersection">Intersection</h3>
+<p>An <strong>intersection</strong> is the point where two lines (or curves) meet on a graph. In a system of equations, the intersection represents the solution — the values that work in both equations.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong> The lines <span class="math inline">\(y = 2x + 1\)</span> and <span class="math inline">\(y = -x + 4\)</span> intersect at <span class="math inline">\((1, 3)\)</span>, meaning that <span class="math inline">\((1, 3)\)</span> makes both equations true.</p>
 </blockquote>
 <hr>
 </section>
@@ -1698,7 +1815,7 @@ The reciprocal of 5 is <span class="math inline">\(\frac{1}{5}\)</span>.</p>
 <p>To <strong>simplify</strong> a number or expression means to <strong>rewrite it in a cleaner or shorter way</strong> — without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>The fraction <span class="math inline">\(\frac{12}{20}\)</span> can be simplified by dividing both the <a href="#glossary-numerator" class="glossary-link" data-slug="numerator" data-original-href="#glossary-numerator" data-term="numerator">numerator</a> and <a href="#glossary-denominator" class="glossary-link" data-slug="denominator" data-original-href="#glossary-denominator" data-term="denominator">denominator</a> by 4:</p>
+<p>The fraction <span class="math inline">\(\frac{12}{20}\)</span> can be simplified by dividing both the <a href="#glossary-numerator" class="glossary-link" data-original-href="#glossary-numerator" data-term="numerator" data-slug="numerator">numerator</a> and <a href="#glossary-denominator" class="glossary-link" data-original-href="#glossary-denominator" data-term="denominator" data-slug="denominator">denominator</a> by 4:</p>
 <p><span class="math display">\[\frac{12}{20} = \frac{3}{5}\]</span></p>
 <p>This simpler fraction means the same thing — it’s just written with smaller numbers.</p>
 </blockquote>
@@ -1786,10 +1903,10 @@ m = \frac{\Delta y}{\Delta x}
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
 <p>Evaluate when <span class="math inline">\(x=3\)</span>: <span class="math inline">\(2x+5 \rightarrow 2(3)+5=11\)</span>.</p>
-<p>Check a solution: For <span class="math inline">\(x+9=11\)</span>, substitute <span class="math inline">\(x=2\)</span>: <span class="math inline">\(2+9=11\)</span> ✓, so <span class="math inline">\(x=2\)</span> is a <a href="#glossary-solution" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a>.</p>
+<p>Check a solution: For <span class="math inline">\(x+9=11\)</span>, substitute <span class="math inline">\(x=2\)</span>: <span class="math inline">\(2+9=11\)</span> ✓, so <span class="math inline">\(x=2\)</span> is a <a href="#glossary-solution" class="glossary-link" data-original-href="#glossary-solution" data-term="solution" data-slug="solution">solution</a>.</p>
 <p>Parentheses help: For <span class="math inline">\(y=-2\)</span>, <span class="math inline">\(4-y=4-(-2)=6\)</span>.</p>
 </blockquote>
-<p><strong>See Also</strong> <a href="#glossary-substitution" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a></p>
+<p><strong>See Also</strong> <a href="#glossary-substitution" class="glossary-link" data-original-href="#glossary-substitution" data-term="substitution" data-slug="substitution">substitution</a></p>
 <hr>
 </section>
 <section id="glossary-substitution" class="level3">
@@ -1817,6 +1934,21 @@ m = \frac{\Delta y}{\Delta x}
 <p><strong>Example:</strong></p>
 <p>In the expression <span class="math inline">\(3x + 5\)</span>, the <strong>+</strong> is a symbol for addition,<br>
 and the <strong>x</strong> is a symbol for a variable (an unknown number).</p>
+</blockquote>
+<hr>
+</section>
+<section id="glossary-system-of-equations" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-system-of-equations">System of Equations</h3>
+<p>A <strong>system of equations</strong> is a set of two or more equations that use the same variables. Solving the system means finding the values that make <em>all</em> of the equations true at the same time.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[
+\begin{align*}
+y &amp;= 2x + 1 \\
+y &amp;= -x + 4
+\end{align*}
+\]</span></p>
+<p>The two lines intersect at <span class="math inline">\((1, 3)\)</span>, so that point is the <strong>solution to the system</strong>.</p>
 </blockquote>
 <hr>
 </section>
@@ -1854,7 +1986,7 @@ It could be <strong>any number</strong>.</p>
 <p>Up and down, like a flagpole.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>This is a <strong>vertical</strong> number line. <img src=".\images/Glossary/vertical_by_tens.png" height="200"></p>
+<p>This is a <strong>vertical</strong> number line. <img src="./images/Glossary/vertical_by_tens.png" height="200"></p>
 </blockquote>
 <hr>
 </section>
@@ -1899,13 +2031,9 @@ It could be <strong>any number</strong>.</p>
 
 </main> <!-- /main -->
 <script src="./scripts/popper.min.js"></script>
-
 <script src="./scripts/tippy.min.js"></script>
-
 <script src="./scripts/glossary-tooltips.js"></script>
-
 <script src="./scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1957,14 +2085,13 @@ It could be <strong>any number</strong>.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

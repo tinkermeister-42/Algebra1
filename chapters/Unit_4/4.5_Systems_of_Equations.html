@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1.6 – Solving Problems With Fractions, Decimals &amp; Percents – DHS Algebra 1</title>
+<title>4.5 – Systems of Equations – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,20 +30,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_1/1.7_Order_of_Operations.html" rel="next">
-<link href="../../chapters/Unit_1/1.5_Multiply_Divide_&amp;_Compare_Fractions.html" rel="prev">
+<link href="../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" rel="next">
+<link href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
-
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -116,7 +100,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -143,8 +127,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -159,7 +141,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.5_Systems_of_Equations.html">4.5 – Systems of Equations</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -174,8 +156,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -193,13 +174,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 1: Foundations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_1/index.html" class="sidebar-item-text sidebar-link">
@@ -238,14 +219,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  <a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 - Adding and Subtracting Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.7_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.7 – Order of Operations</span></a>
+  <a href="../../chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_1/1.8_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 – Order of Operations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -382,13 +369,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
@@ -421,14 +408,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.5 – Linear Models in the Real World</span></a>
+  <a href="../../chapters/Unit_4/4.5_Systems_of_Equations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.5 – Systems of Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.6 – Graphing Linear Inequalities</span></a>
+  <a href="../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 – Linear Models in the Real World</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_4/4.7_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 – Graphing Linear Inequalities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -440,34 +433,132 @@ window.Quarto = {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 5: Systems of Equations</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 6: Polynomials &amp; Factoring</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 7: Quadratics</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 8: Exponential Functions</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 9: Statistics &amp; Probability</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
- <span class="menu-text">Interactive Learning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 5: Exponents &amp; Polynomials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.1_Exponent_Rules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 - Exponent Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Simplifying Expressions with Exponents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.3_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 - Introduction to Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.4_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 - Multiplying Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.5_Special_Products.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 - Special Products</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.6_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 - Factoring_Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 6: Quadratic Equations &amp; Functions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 - Introduction to Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 - Forms of Quadratic Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 - Solving Quadratic Equations by Factoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.4_Completing_the_Square.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 - Completing_the_Square</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.5_The_Quadratic_Formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 - The Quadratic Formula</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.6_Graphing_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 - Graphing Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Interactive Learning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
@@ -502,13 +593,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
  <span class="menu-text">Supplemental</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
@@ -557,17 +648,17 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#whats-the-part-whole-or-percent" id="toc-whats-the-part-whole-or-percent" class="nav-link active" data-scroll-target="#whats-the-part-whole-or-percent">1.6.1 – What’s the Part, Whole, or Percent?</a></li>
-  <li><a href="#real-life-examples" id="toc-real-life-examples" class="nav-link" data-scroll-target="#real-life-examples">1.6.2 – Real-Life Examples</a></li>
+  <li><a href="#graphing-systems-of-equations-and-interpreting-their-solutions" id="toc-graphing-systems-of-equations-and-interpreting-their-solutions" class="nav-link active" data-scroll-target="#graphing-systems-of-equations-and-interpreting-their-solutions">4.5.1 – Graphing Systems of Equations and Interpreting Their Solutions</a></li>
+  <li><a href="#other-solving-methods-optional" id="toc-other-solving-methods-optional" class="nav-link" data-scroll-target="#other-solving-methods-optional">4.5.2 – Other Solving Methods (Optional)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_4/index.html">Unit 4: Linear Functions &amp; Graphs</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_4/4.5_Systems_of_Equations.html">4.5 – Systems of Equations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</h1>
+<h1 class="title">4.5 – Systems of Equations</h1>
 </div>
 
 
@@ -584,318 +675,449 @@ window.Quarto = {
 </header>
 
 
-<p>Now that you know how to multiply and divide fractions, you’re ready to apply those skills to real-life problems.</p>
-<p>Fractions, decimals, and percents all show parts of a whole — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.</p>
-<p>In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score on the test to get an A?”</p>
+<p>So far, you’ve graphed <strong>one line at a time</strong> — each showing a single rule or relationship. But life isn’t always that simple.</p>
+<p>Imagine comparing two phone plans. Each one has a different starting fee and a different rate per minute. You might wonder: <strong>When will they cost the same?</strong></p>
+<p>That kind of question can’t be answered with just one line — you have to see <strong>both relationships together</strong>. When two lines meet, they show a shared truth — a point that works for <em>both</em> situations.</p>
+<p>That’s the idea behind a <strong>system of equations</strong>.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can use fractions, decimals, and percents to solve real-world problems.</label></li>
-<li><label><input type="checkbox">I can find a part, a whole, or a percent.</label></li>
-<li><label><input type="checkbox">I can use percents to solve problems involving grades, sales, and survey results.</label></li>
+<li><label><input type="checkbox">I can interpret the solution to a system of equations.</label></li>
+<li><label><input type="checkbox">I can solve a system by <strong>graphing</strong>.</label></li>
+<li><label><input type="checkbox">I can describe what <strong>substitution</strong> and <strong>elimination</strong> mean.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-discount" class="glossary-link" data-term="discount" data-slug="discount" data-original-href="#glossary-discount">discount</a>, <a href="../../glossary.html#glossary-equivalent" class="glossary-link" data-term="equivalent" data-slug="equivalent" data-original-href="#glossary-equivalent">equivalent</a>, <a href="../../glossary.html#glossary-grade" class="glossary-link" data-term="grade" data-slug="grade" data-original-href="#glossary-grade">grade</a>, <a href="../../glossary.html#glossary-markup" class="glossary-link" data-term="markup" data-slug="markup" data-original-href="#glossary-markup">markup</a>, <a href="../../glossary.html#glossary-part" class="glossary-link" data-term="part" data-slug="part" data-original-href="#glossary-part">part</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-term="percent" data-slug="percent" data-original-href="#glossary-percent">percent</a>, <a href="../../glossary.html#glossary-proportion" class="glossary-link" data-term="proportion" data-slug="proportion" data-original-href="#glossary-proportion">proportion</a>, <a href="../../glossary.html#glossary-rate" class="glossary-link" data-term="rate" data-slug="rate" data-original-href="#glossary-rate">rate</a>, <a href="../../glossary.html#glossary-survey" class="glossary-link" data-term="survey" data-slug="survey" data-original-href="#glossary-survey">survey</a>, <a href="../../glossary.html#glossary-whole" class="glossary-link" data-term="whole" data-slug="whole" data-original-href="#glossary-whole">whole</a></p>
+<p><a href="../../glossary.html#glossary-elimination" class="glossary-link" data-slug="elimination" data-original-href="#glossary-elimination" data-term="elimination">elimination</a>, <a href="../../glossary.html#glossary-intersection" class="glossary-link" data-slug="intersection" data-original-href="#glossary-intersection" data-term="intersection">intersection</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a>, <a href="../../glossary.html#glossary-substitution" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a>, <a href="../../glossary.html#glossary-system-of-equations" class="glossary-link" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations" data-term="system of equations">system of equations</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<p>Use mental math if you can!</p>
 <ol type="1">
-<li><p>Is 10% of 60 bigger or smaller than 30?</p></li>
-<li><p>Is 21 out of 35 a good score on a test?</p></li>
-<li><p>What does it mean to say something is on sale for 25% off?</p></li>
+<li><p>Graph <span class="math inline">\(y = 2x + 1\)</span> and <span class="math inline">\(y = -x + 4\)</span> on the same axes.</p></li>
+<li><p>Is the point <span class="math inline">\((3, 4)\)</span> a solution to <span class="math inline">\(y = 5x - 11\)</span>?</p></li>
+<li><p>Is there a point that makes both <span class="math inline">\(y=2x+1\)</span> and <span class="math inline">\(y=-x+4\)</span> true? If so, how could you find it?</p></li>
 </ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="whats-the-part-whole-or-percent" class="level3">
-<h3 class="anchored" data-anchor-id="whats-the-part-whole-or-percent">1.6.1 – What’s the Part, Whole, or Percent?</h3>
-<p>In many real-world problems, you’re given some information and need to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.</p>
-<p>These types of problems usually involve three pieces:</p>
+<section id="graphing-systems-of-equations-and-interpreting-their-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-systems-of-equations-and-interpreting-their-solutions">4.5.1 – Graphing Systems of Equations and Interpreting Their Solutions</h3>
+<p>A <a href="../../glossary.html#glossary-system-of-equations" class="glossary-link" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations" data-term="system of equations">system of equations</a> is two or more equations that share the same variables.</p>
+<p>Each equation describes a rule or relationship, and the solution to the system is a point that satisfies <em>all</em> of those rules at the same time.</p>
+<p>In the following examples, we will see some systems of equations and learn how to interpret their solutions.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Here is a simple system of two equations. Let’s find the solution to the system by graphing.</p>
+<p><span class="math display">\[
+\begin{cases}
+y = 2x + 1 \\
+y = -x + 4
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p><strong>Interpretation:</strong></p>
+<p>The two lines cross at <span class="math inline">\((1, 3)\)</span>. This is the one point where both equations are true. We call this point the <strong>solution to the system</strong>.</p>
+<div class="note" title="Checking the Solution">
+<p>We can check it using <a href="../../glossary.html#glossary-substitution" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a>.</p>
+<p><span class="math display">\[
+\begin{cases}
+\textcolor{blue}{3} = 2(\textcolor{red}{1})+1 ✔️ \\
+\textcolor{blue}{3} = -(\textcolor{red}{1}) + 4 ✔️
+\end{cases}
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Find the solution to the system of equations by graphing.</p>
+<p><span class="math display">\[
+\begin{cases}
+y = \tfrac{1}{2}x + 3 \\
+y = -x + 6
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p><strong>Interpretation:</strong></p>
+<p>The solution to the system is <span class="math inline">\((2, 4)\)</span>. This is the one point where both equations are true.</p>
+<hr>
+<p><strong>Example 3:</strong></p>
+<p>A local gym offers two membership plans:</p>
 <ul>
-<li><p>part (how much you have),</p></li>
-<li><p>whole (the total or full amount),</p></li>
-<li><p>percent (the portion out of 100).</p></li>
+<li><strong>Plan A:</strong> $10 sign-up fee + $5 per class</li>
+<li><strong>Plan B:</strong> $25 sign-up fee + $2 per class</li>
 </ul>
-<p>If you know two of them, you can figure out the third. This formula helps:</p>
-<p><span class="math display">\[
-\text{part} = \text{percent} \times \text{whole}
+<p>Here is a system of equations that models these two plans. <span class="math display">\[
+\begin{cases}
+y = 5x + 10 \\
+y = 2x + 25
+\end{cases}
 \]</span></p>
-<p>You can also rearrange it to solve for the percent or the whole. We’ll walk through all three types of problems step by step.</p>
-<div class="remember">
-<p>Convert the percent to a decimal first!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>The lines meet at <span class="math inline">\((5, 35)\)</span>.</p>
+<p><strong>Interpretation:</strong></p>
+<p>After <strong>5 classes</strong>, both plans cost <strong>$35</strong>. Before that, Plan A is cheaper; after that, Plan B is cheaper. The intersection shows exactly where the two plans balance.</p>
+<hr>
+<p><strong>Example 4:</strong></p>
+<p>A plumber charges a flat fee of $40 plus $60 per hour. An electrician charges $100 plus $50 per hour.</p>
+<p>Here is a system that models the service costs:</p>
+<p><span class="math display">\[
+\begin{cases}
+y = 60x + 40 \\
+y = 50x + 100
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Lesson_5/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>The lines intersect at <span class="math inline">\((6, 400)\)</span>.</p>
+<p><strong>Interpretation:</strong></p>
+<p>After <strong>6 hours</strong>, both services cost <strong>$400</strong>. The <span class="math inline">\(x\)</span>-value tells when they cost the same, and the <span class="math inline">\(y\)</span>-value tells how much that shared cost is.</p>
+<hr>
+<div class="you-try-m" title="Cell-Phone Plan Costs">
+<p>Two cell-phone plans are modeled by the equations below:</p>
+<p><span class="math display">\[
+\begin{cases}
+y = 15x + 40 \\
+y = 25x + 10
+\end{cases}
+\]</span></p>
+<p>Here, <span class="math inline">\(y\)</span> represents total cost (in dollars) and <span class="math inline">\(x\)</span> represents the number of months.</p>
+<p>The two lines cross at <span class="math inline">\((3, 85)\)</span>. What does that point represent?</p>
+</div>
+<div class="answer" title="Answer">
+<p>That means after <strong>3 months</strong>, both plans cost <strong>$85</strong>. Before that, the second plan is cheaper; after that, the first plan is cheaper.</p>
 </div>
 <hr>
-<p><strong>Example 1 – Finding the Part</strong></p>
-<p>What is 15% of 80?</p>
-<p>You’re looking for a small part of 80 — just 15 out of every 100. That’s what 15% means.</p>
-<p>We can turn this into a math sentence by translating the words:</p>
+</section>
+<section id="other-solving-methods-optional" class="level3">
+<h3 class="anchored">4.5.2 – Other Solving Methods (Optional)</h3>
+<p>Graphing is a great way to see where two lines meet, but sometimes the intersection doesn’t fall on clean grid points. Or maybe the lines are difficult to draw accurately. In those cases, we can solve the system using <strong>algebra</strong> instead of a graph.</p>
+<p>There are two main algebraic methods:</p>
 <ul>
-<li>“is” becomes equals (=)</li>
-<li>“of” becomes times (×)</li>
+<li><strong>Substitution</strong> – replace one variable with an equivalent expression</li>
+<li><strong>Elimination</strong> – add or subtract equations so one variable cancels out</li>
 </ul>
-<p>So:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>what</th>
-<th>is</th>
-<th>15%</th>
-<th>of</th>
-<th>80?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>?</td>
-<td>=</td>
-<td>0.15</td>
-<td><span class="math inline">\(\times\)</span></td>
-<td>80</td>
-</tr>
-</tbody>
-</table>
-<p>Now solve it:</p>
-<p><span class="math display">\[
-0.15×80=12
-\]</span></p>
-<p>So <strong>12</strong> is 15% of 80.</p>
-<div class="you-try" title="What is 10% of 50?">
-<p>Turn it into a math sentence:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>what</th>
-<th>is</th>
-<th>10%</th>
-<th>of</th>
-<th>50?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>?</td>
-<td>=</td>
-<td>0.10</td>
-<td>×</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p>Then multiply: <span class="math display">\[
-0.10 \times 50 = 5
-\]</span> <strong>Answer: 5</strong></p>
-</div>
+<p>Let’s look at each one.</p>
 <hr>
-<p><strong>Example 2 – Finding the Percent</strong></p>
-<p>Out of 50 students, 30 say they like soccer. <strong>What percent is that?</strong></p>
-<p>The phrase <strong>out of</strong> tells us that 50 is the <strong>whole</strong> and 30 is the <strong>part</strong>. We can write that as a fraction, then convert it into a percent.</p>
-<p><span class="math display">\[
-\frac{\text{part}}{\text{whole}} = \frac{30}{50} = 0.6 = 60\%
-\]</span></p>
-<p>So <strong>60%</strong> of students like soccer.</p>
-<div class="you-try" title="If 3 out of 75 students get enough sleep, what percent is that?">
-<p><span class="math display">\[
-\frac{3}{75} = 0.04 = 4\%
-\]</span> So only 4% of students get enough sleep!</p>
-</div>
-<hr>
-<p><strong>Example 3 – Finding the Whole</strong></p>
-<p><strong>25% of a number is 10. What is the number?</strong></p>
-<p>We’re told that 10 is <strong>25% of the total</strong>. That means 10 is just a piece — one-fourth — of the whole. (Since <span class="math inline">\(25\% = \frac{1}{4}\)</span>.)</p>
-<p>If one-fourth of something is 10, then we can picture the whole as being made up of <strong>4 equal parts</strong> of 10:</p>
-<p><span class="math display">\[
-10 + 10 + 10 + 10 = 40
-\]</span></p>
-<p>So the whole is <strong>40</strong>.</p>
-<p>But what if the fractions are harder to think about than <span class="math inline">\(\frac{1}{4}\)</span>? Here’s a trick:</p>
-<p>25% as a decimal is 0.25. If we want to know,</p>
-<blockquote class="blockquote">
-<p>“25% of what number gives me 10?”</p>
-</blockquote>
-<p>we can work backward by <strong>dividing</strong>:</p>
-<p><span class="math display">\[
-10 \div 0.25 = 40
-\]</span></p>
-<p>So the total is still <strong>40</strong> — it is just another way to get the same answer.</p>
-<div class="you-try" title="20% of a number is 12. What is the number?">
-<p>Start by thinking:</p>
-<p><span class="math inline">\(20\% = \frac{1}{5}\)</span> → So if one-fifth is 12, then the whole must be: <span class="math display">\[
-12 \times 5 = 60
-\]</span> Or use division:<br>
-<span class="math display">\[
-12 \div 0.2 = 60
-\]</span> <strong>Answer: 60</strong></p>
-</div>
-<hr>
-</section>
-<section id="real-life-examples" class="level3">
-<h3 class="anchored">1.6.2 – Real-Life Examples</h3>
-<section id="grades" class="level4">
-<h4 class="anchored" data-anchor-id="grades">Grades</h4>
-<p>Your teacher hands you back your Unit 1 quiz. You got 19 out of 20 points! <strong>What is your grade?</strong></p>
-<p>Grades are given as percentages so we want to figure out what <span class="math inline">\(\frac{19}{20}\)</span> is as a percent.</p>
-<p><span class="math display">\[
-\frac{19}{20} = 0.95 = 95\%
-\]</span></p>
-<p>You got <strong>95%</strong> on that assignment, that’s an A!</p>
-<div class="you-try" title="If John got 20 out of 25 questions correct, what is his grade?">
-<p><span class="math display">\[
-\frac{20}{25} = 0.8 = 80\%
-\]</span> John got an 80% which is a B.</p>
-</div>
-<hr>
-</section>
-<section id="sales-discounts" class="level4">
-<h4 class="anchored" data-anchor-id="sales-discounts">Sales &amp; Discounts</h4>
-<p>A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off.</p>
-<p><strong>What’s the new price?</strong></p>
-<p>First, find the <a href="../../glossary.html#glossary-discount" class="glossary-link" data-term="discount" data-slug="discount" data-original-href="#glossary-discount">discount</a> by asking “What is 25% of $60?”:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>what</th>
-<th>is</th>
-<th>25%</th>
-<th>of</th>
-<th>$60?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>?</td>
-<td>=</td>
-<td>0.25</td>
-<td>×</td>
-<td>60</td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[
-0.25 \times 60 = 15
-\]</span></p>
-<p>This tells us we will <strong>save</strong> $15. To find the new price we subtract:</p>
-<p><span class="math display">\[
-60 - 15 = 45
-\]</span></p>
-<p>The jacket now costs <strong>$45</strong>.</p>
-<div class="you-try" title="Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?">
-<p>Find the discount:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>what</th>
-<th>is</th>
-<th>65%</th>
-<th>of</th>
-<th>$300?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>?</td>
-<td>=</td>
-<td>0.65</td>
-<td>×</td>
-<td>300</td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[
-0.65 \times 300 = 195
-\]</span> Now subtract to get the sale price: <span class="math display">\[
-300 - 195 = 105
-\]</span> Swanhilda pays $105 for the dress. What a steal!</p>
-</div>
-<hr>
-</section>
-<section id="surveys-data" class="level4">
-<h4 class="anchored">Surveys &amp; Data</h4>
-<p>A <a href="../../glossary.html#glossary-survey" class="glossary-link" data-term="survey" data-slug="survey" data-original-href="#glossary-survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
-<p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal: <span class="math display">\[
-75\% = 0.75
-\]</span> Then divide: <span class="math display">\[
-120 \div 0.75 = 160
-\]</span> <strong>160 teachers</strong> were surveyed.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To help avoid silly mistakes, ask yourself first, <strong>“What answer do I expect?”</strong>. This will help you decide if the answer you get makes sense.</p>
-</div>
-</div>
-<div class="you-try" title="If a survey found 550 -- which is 55% -- like cucumbers. How many students were surveyed?">
-<p>First, convert to a decimal: <span class="math display">\[
-55\% = 0.55
-\]</span> Then divide: <span class="math display">\[
-550 \div 0.55 = 1000
-\]</span> <strong>1000</strong> students were surveyed.</p>
-</div>
-<h2 class="unnumbered anchored" data-anchor-id="surveys-data">✍️ Practice On Your Own</h2>
-<p><strong>Find the Part, Whole, or Percent</strong></p>
+<section id="solving-by-substitution" class="level4">
+<h4 class="anchored" data-anchor-id="solving-by-substitution"><strong>Solving by Substitution</strong></h4>
+<p>Substitution works because if two expressions are equal, you can replace one with the other. That turns a two-variable system into a single equation you already know how to solve.</p>
+<p><strong>Steps for Solving by Substitution</strong></p>
 <ol type="1">
-<li><p>What is 60% of 95?</p></li>
-<li><p>Eight is what percent of 64?</p></li>
-<li><p>One is what percent of 6?</p></li>
-<li><p>What percent of 40 is 25?</p></li>
-<li><p>Fifteen is what percent of 40?</p></li>
-<li><p>What number is 85% of 40?</p></li>
-<li><p>85% of a number is 510. What is the number?</p></li>
-<li><p>20% of a number is 150. What is the number?</p></li>
+<li>Pick one of the equations and <strong>solve for one variable</strong> (like <span class="math inline">\(y\)</span> or <span class="math inline">\(x\)</span>).</li>
+<li><strong>Substitute</strong> that expression into the other equation.</li>
+<li><strong>Solve</strong> for the remaining variable.</li>
+<li><strong>Plug back in</strong> to find the other variable.</li>
+<li><strong>Check</strong> that your solution works in both equations.</li>
 </ol>
 <hr>
-<p><strong>Real-Life Scenarios</strong></p>
-<ol start="9" type="1">
-<li><p>A driver’s test has 30 questions. To pass, you must score at least 24 points. What percent do you need to pass?</p></li>
-<li><p>A student scores 27 out of 30 on one test and 42 out of 50 on another. What percent of the total points did they earn?</p></li>
-<li><p>A backpack is 25% off. The original price was $80. What is the discount? What’s the new price?</p></li>
-<li><p>A restaurant offers 30% off drinks during happy hour. A soda usually costs $3.50. What is the discount? What is the happy hour price?</p></li>
-<li><p>A survey shows 68% of people prefer cats to dogs. If 250 people were asked, how many chose dogs?</p></li>
-<li><p>A company sells fidget spinners. In a quality control test, they found that 3% of the fidget spinners tested were defective. If 60 spinners were defective, how many fidget spinners did they test?</p></li>
+<p><strong>Example 5:</strong></p>
+<p><span class="math display">\[
+\begin{cases}
+y = x + 2 \\
+2x + y = 8
+\end{cases}
+\]</span></p>
+<p>We already know <span class="math inline">\(y = x + 2\)</span>, so we can substitute that into the second equation:</p>
+<p><span class="math display">\[
+2x + (x + 2) = 8
+\]</span></p>
+<p>Simplify and solve:</p>
+<p><span class="math display">\[
+3x + 2 = 8 \\
+x = 2
+\]</span></p>
+<p>Now substitute back:</p>
+<p><span class="math display">\[
+y = 2 + 2 = 4
+\]</span></p>
+<p><strong>Solution:</strong> <span class="math inline">\((2, 4)\)</span></p>
+<hr>
+<p><strong>Example 6:</strong></p>
+<p><span class="math display">\[
+\begin{cases}
+y = 3x - 8 \\
+x + y = -24
+\end{cases}
+\]</span></p>
+<p>Substitute <span class="math inline">\(y = 3x - 8\)</span> into the second equation:</p>
+<p><span class="math display">\[
+x + (3x - 8) = -24
+\]</span></p>
+<p>Simplify and solve:</p>
+<p><span class="math display">\[
+\begin{align*}
+x + (3x - 8) &amp;= -24 \stepnote{Combine like terms} \\
+4x - 8 &amp;= -24 \snplus{8} \\
+4x &amp;= -16 \sndiv{4} \\
+x &amp;= -4
+\end{align*}
+\]</span></p>
+<p>Then <span class="math inline">\(y = 3(-4) - 8 = -20\)</span></p>
+<p><strong>Solution:</strong> <span class="math inline">\((-4, -20)\)</span></p>
+<hr>
+</section>
+<section id="solving-by-elimination" class="level4">
+<h4 class="anchored"><strong>Solving by Elimination</strong></h4>
+<p>Elimination works by stacking the two equations and <strong>adding or subtracting</strong> them so that one variable cancels out. This method is especially convenient when both equations already have similar <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> coefficients.</p>
+<p><strong>Steps for Solving by Elimination</strong></p>
+<ol type="1">
+<li><strong>Line up</strong> both equations.</li>
+<li>If needed, <strong>multiply</strong> one equation so that one variable has the same or opposite coefficient.</li>
+<li><strong>Add or subtract</strong> the equations to eliminate that variable.</li>
+<li><strong>Solve</strong> for the remaining variable.</li>
+<li><strong>Substitute back</strong> to find the other variable.</li>
+</ol>
+<hr>
+<p><strong>Example 7:</strong></p>
+<p><span class="math display">\[
+\begin{cases}
+2x + y = 10 \\
+2x - y = 2
+\end{cases}
+\]</span></p>
+<p>Add the equations to make <span class="math inline">\(y\)</span> cancel out:</p>
+<p><span class="math display">\[
+(2x + y) + (2x - y) = 10 + 2 \\
+4x = 12 \Rightarrow x = 3
+\]</span></p>
+<p>Now substitute <span class="math inline">\(x = 3\)</span> into one of the equations:</p>
+<p><span class="math display">\[
+2(3) + y = 10 \Rightarrow y = 4
+\]</span></p>
+<p><strong>Solution:</strong> <span class="math inline">\((3, 4)\)</span></p>
+<hr>
+<p><strong>Example 8:</strong></p>
+<p><span class="math display">\[
+\begin{cases}
+x + y = 9 \\
+x - y = 3
+\end{cases}
+\]</span></p>
+<p>Add the equations:</p>
+<p><span class="math display">\[
+(x + y) + (x - y) = 9 + 3 \\
+2x = 12 \Rightarrow x = 6
+\]</span></p>
+<p>Now plug back in:</p>
+<p><span class="math display">\[
+6 + y = 9 \Rightarrow y = 3
+\]</span></p>
+<p><strong>Solution:</strong> <span class="math inline">\((6, 3)\)</span></p>
+<hr>
+<p><strong>Example 9:</strong></p>
+<p>In the previous two examples, one of the variables canceled out when combining the two equations. Sometimes you will have to multiply one or both equations by something for this to work. <span class="math display">\[
+\begin{cases}
+3x + 2y = 16 \\
+2x + 3y = 14
+\end{cases}
+\]</span></p>
+<p>Neither variable will cancel right away, so we’ll make the <span class="math inline">\(x\)</span>–coefficients match.</p>
+<p>Multiply the first equation by <strong>2</strong> and the second by <strong>−3</strong>:</p>
+<p><span class="math display">\[
+\begin{cases}
+6x + 4y = 32 \\
+-6x - 9y = -42
+\end{cases}
+\]</span></p>
+<p>Now add the equations:</p>
+<p><span class="math display">\[
+(6x - 6x) + (4y - 9y) = 32 - 42 \\
+-5y = -10 \Rightarrow y = 2
+\]</span></p>
+<p>Substitute <span class="math inline">\(y = 2\)</span> into one of the original equations:</p>
+<p><span class="math display">\[
+3x + 2(2) = 16 \\
+3x + 4 = 16 \\
+3x = 12 \Rightarrow x = 4
+\]</span></p>
+<p><strong>Solution:</strong> <span class="math inline">\((4, 2)\)</span></p>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="solving-by-elimination">✍️ Practice On Your Own</h2>
+<p><strong>Solve by Graphing</strong></p>
+<p>Graph each system and find the solution.</p>
+<ol type="1">
+<li><p><span class="math display">\[
+\begin{cases}
+y = x + 1 \\
+y = -x + 5
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = 2x - 3 \\
+y = -x + 6
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = \tfrac{1}{2}x + 1 \\
+y = -\tfrac{1}{2}x + 5
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = -2x + 8 \\
+y = x - 1
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = 3x - 4 \\
+y = -x + 8
+\end{cases}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_4/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div></li>
+</ol>
+<hr>
+<p><strong>Word Problems</strong></p>
+<ol start="6" type="1">
+<li><p><strong>Streaming Services</strong> One streaming service costs $8 per month plus $4 per movie. Another costs $20 per month plus $2 per movie. When will the two services cost the same?</p></li>
+<li><p><strong>Taxi vs.&nbsp;Ride-Share</strong> A taxi charges $5 plus $3 per mile. A ride-share app charges $2 plus $4 per mile. How far do you have to travel before the cost is the same?</p></li>
+<li><p><strong>Concert Tickets</strong> Company A sells tickets for $30 each plus a $10 service fee. Company B sells tickets for $25 each plus a $20 service fee. How many tickets make the cost equal?</p></li>
+<li><p><strong>Gym Memberships</strong> Plan A costs $15 to join and $20 per month. Plan B costs $50 to join and $15 per month. After how many months will both plans cost the same?</p></li>
+<li><p><strong>Movie Theater Snacks</strong> A popcorn-soda combo costs $8.50 at Theater A and $9.50 at Theater B, but Theater B gives a $1 discount for each friend after the first (so $8.50 for 2, $7.50 for 3, etc.). For how many friends will the total cost be the same?</p></li>
+</ol>
+<hr>
+<p><strong>Solve by Substitution</strong></p>
+<ol start="11" type="1">
+<li><p><span class="math display">\[
+\begin{cases}
+y = 2x + 3 \\
+x + y = 9
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = x - 4 \\
+2x + y = 8
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = 5x \\
+3x + y = 24
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = 4x + 1 \\
+2x + y = 13
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+y = -x + 7 \\
+3x + y = 15
+\end{cases}
+\]</span></p></li>
+</ol>
+<hr>
+<p><strong>Solve by Elimination</strong></p>
+<ol start="16" type="1">
+<li><p><span class="math display">\[
+\begin{cases}
+x + y = 9 \\
+x - y = 3
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+2x + y = 10 \\
+2x - y = 2
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+3x + 2y = 16 \\
+3x - y = 7
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+4x - y = 11 \\
+2x + y = 9
+\end{cases}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{cases}
+3x + 2y = 12 \\
+2x + 3y = 13
+\end{cases}
+\]</span></p></li>
 </ol>
 <hr>
 <p><strong>Challenge Problems</strong></p>
-<ol start="15" type="1">
-<li><p>A class has 24 students. 1/3 are in choir, 25% are in band. The rest of the students are in art.<br>
-What percent of students are in art class?</p></li>
-<li><p>A shirt is marked down by 40%. It now costs $27. What was the original price?</p></li>
-<li><p>You have 88% of 325 points in Algebra. The last exam has 50 questions and is worth 100 points. If it takes 90% to get an A, is it possible to get an A in the class? If so, how many points do you need to score on the exam?</p></li>
+<ol start="21" type="1">
+<li><p>Solve by any method. <span class="math display">\[
+\begin{cases}
+2x + 3y = 18 \\
+x - y = 2
+\end{cases}
+\]</span></p></li>
+<li><p>The system <span class="math display">\[
+\begin{cases}
+y = m x + 4 \\
+y = -2x + b
+\end{cases}
+\]</span> intersects at <span class="math inline">\((2, 0)\)</span>. Find the values of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</p></li>
 </ol>
 <hr>
 <div class="answers">
-<p><strong>Warm-Up</strong></p>
 <ol type="1">
-<li><p>Smaller</p></li>
-<li><p>That is a 60%. Most people would say no.</p></li>
-<li><p>It means that the item will cost 25% less than it usually would.</p></li>
-</ol>
-<hr>
-<p><strong>Find the Part, Whole, or Percent</strong></p>
-<ol type="1">
-<li>57<br>
-</li>
-<li>12.5%</li>
-<li><span class="math inline">\(16.\overline{6}\%\)</span><br>
-</li>
-<li>62.5%</li>
-<li>37.5%<br>
-</li>
-<li>34</li>
-<li>600</li>
-<li>750</li>
-</ol>
-<hr>
-<p><strong>Real-Life Scenarios</strong></p>
-<ol start="9" type="1">
-<li>80%</li>
-<li>86.25%</li>
-<li>Discount: $20, Price: $60</li>
-<li>Discount: $1.05, Price: $2.45</li>
-<li>80 chose dogs</li>
-<li>2000 fidget spinners</li>
+<li><span class="math inline">\((2, 3)\)</span>  </li>
+<li><span class="math inline">\((3, 3)\)</span>  </li>
+<li><span class="math inline">\((4, 3)\)</span>  </li>
+<li><span class="math inline">\((3, 2)\)</span>  </li>
+<li><span class="math inline">\((3, 5)\)</span></li>
+<li><span class="math inline">\((x, y) = (6, 32)\)</span> → After 6 movies, both cost $32.</li>
+<li><span class="math inline">\((x, y) = (3, 14)\)</span> → After 3 miles, both cost $14.</li>
+<li><span class="math inline">\((x, y) = (2, 70)\)</span> → At 2 tickets, cost $70 each.</li>
+<li><span class="math inline">\((x, y) = (7, 155)\)</span> → After 7 months, both cost $155.</li>
+<li><span class="math inline">\((x, y) = (3, 25.5)\)</span> → About 3 friends, both totals $25.50.</li>
+<li><span class="math inline">\((3, 9)\)</span>  </li>
+<li><span class="math inline">\((4, 0)\)</span>  </li>
+<li><span class="math inline">\((4, 20)\)</span>  </li>
+<li><span class="math inline">\((3, 13)\)</span>  </li>
+<li><span class="math inline">\((2, 5)\)</span></li>
+<li><span class="math inline">\((6, 3)\)</span>  </li>
+<li><span class="math inline">\((3, 4)\)</span>  </li>
+<li><span class="math inline">\((3, 3)\)</span>  </li>
+<li><span class="math inline">\((4, -1)\)</span>  </li>
+<li><span class="math inline">\((2, 3)\)</span></li>
 </ol>
 </div>
 
@@ -905,13 +1127,9 @@ What percent of students are in art class?</p></li>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -963,14 +1181,13 @@ What percent of students are in art class?</p></li>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1314,13 +1531,13 @@ What percent of students are in art class?</p></li>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_1/1.5_Multiply_Divide_&amp;_Compare_Fractions.html" class="pagination-link" aria-label="1.5 – Multiplying &amp; Dividing Fractions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1.5 – Multiplying &amp; Dividing Fractions</span>
+      <a href="../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="pagination-link" aria-label="4.4 – Writing Linear Equations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4.4 – Writing Linear Equations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_1/1.7_Order_of_Operations.html" class="pagination-link" aria-label="1.7 – Order of Operations">
-        <span class="nav-page-text">1.7 – Order of Operations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" class="pagination-link" aria-label="4.6 – Linear Models in the Real World">
+        <span class="nav-page-text">4.6 – Linear Models in the Real World</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
-
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -116,7 +100,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -143,8 +127,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -174,8 +156,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -238,14 +219,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.6 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  <a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 - Adding and Subtracting Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_1/1.7_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.7 – Order of Operations</span></a>
+  <a href="../../chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 – Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_1/1.8_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 – Order of Operations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -421,14 +408,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.5 – Linear Models in the Real World</span></a>
+  <a href="../../chapters/Unit_4/4.5_Systems_of_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 – Systems of Equations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_4/4.6_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.6 – Graphing Linear Inequalities</span></a>
+  <a href="../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 – Linear Models in the Real World</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_4/4.7_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 – Graphing Linear Inequalities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -440,34 +433,132 @@ window.Quarto = {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 5: Systems of Equations</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 6: Polynomials &amp; Factoring</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 7: Quadratics</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 8: Exponential Functions</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unit 9: Statistics &amp; Probability</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
- <span class="menu-text">Interactive Learning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 5: Exponents &amp; Polynomials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.1_Exponent_Rules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 - Exponent Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Simplifying Expressions with Exponents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.3_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 - Introduction to Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.4_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 - Multiplying Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.5_Special_Products.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 - Special Products</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/5.6_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 - Factoring_Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_5/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 6: Quadratic Equations &amp; Functions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 - Introduction to Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 - Forms of Quadratic Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 - Solving Quadratic Equations by Factoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.4_Completing_the_Square.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 - Completing_the_Square</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.5_The_Quadratic_Formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 - The Quadratic Formula</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/6.6_Graphing_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 - Graphing Quadratic Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/Unit_6/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Interactive Learning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
@@ -502,13 +593,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
  <span class="menu-text">Supplemental</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
@@ -587,9 +678,9 @@ window.Quarto = {
 </header>
 
 
-<p>Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like <a href="../../glossary.html#glossary-algebra" class="glossary-link" data-slug="algebra" data-original-href="#glossary-algebra" data-term="algebra">algebra</a> and <a href="../../glossary.html#glossary-calculus" class="glossary-link" data-slug="calculus" data-original-href="#glossary-calculus" data-term="calculus">calculus</a> are just clever ways of organizing and extending basic ideas — like moving forward and backward on a <a href="#glossary-number-line" class="glossary-link" data-slug="number-line" data-original-href="#glossary-number-line" data-term="number line">number line</a>.</p>
-<p>In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare <a href="../../glossary.html#glossary-positive" class="glossary-link" data-slug="positive" data-original-href="#glossary-positive" data-term="positive">positive</a> and <a href="../../glossary.html#glossary-negative" class="glossary-link" data-slug="negative" data-original-href="#glossary-negative" data-term="negative">negative</a> numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.</p>
-<p>Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like <a href="#glossary-opposites" class="glossary-link" data-slug="opposites" data-original-href="#glossary-opposites" data-term="opposites">opposites</a>, <a href="#glossary-absolute-value" class="glossary-link" data-slug="absolute-value" data-original-href="#glossary-absolute-value" data-term="absolute value">absolute value</a>, and comparison — you’ll be setting yourself up for success in the rest of the course.</p>
+<p>Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like <a href="../../glossary.html#glossary-algebra" class="glossary-link" data-term="algebra" data-slug="algebra" data-original-href="#glossary-algebra">algebra</a> and <a href="../../glossary.html#glossary-calculus" class="glossary-link" data-term="calculus" data-slug="calculus" data-original-href="#glossary-calculus">calculus</a> are just clever ways of organizing and extending basic ideas — like moving forward and backward on a <a href="#glossary-number-line" class="glossary-link" data-term="number line" data-slug="number-line" data-original-href="#glossary-number-line">number line</a>.</p>
+<p>In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare <a href="../../glossary.html#glossary-positive" class="glossary-link" data-term="positive" data-slug="positive" data-original-href="#glossary-positive">positive</a> and <a href="../../glossary.html#glossary-negative" class="glossary-link" data-term="negative" data-slug="negative" data-original-href="#glossary-negative">negative</a> numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.</p>
+<p>Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like <a href="#glossary-opposites" class="glossary-link" data-term="opposites" data-slug="opposites" data-original-href="#glossary-opposites">opposites</a>, <a href="#glossary-absolute-value" class="glossary-link" data-term="absolute value" data-slug="absolute-value" data-original-href="#glossary-absolute-value">absolute value</a>, and comparison — you’ll be setting yourself up for success in the rest of the course.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I know how to read and use a number line</label></li>
@@ -599,7 +690,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="#glossary-absolute-value" class="glossary-link" data-slug="absolute-value" data-original-href="#glossary-absolute-value" data-term="absolute value">absolute value</a>, <a href="#glossary-greater-than" class="glossary-link" data-slug="greater-than" data-original-href="#glossary-greater-than" data-term="greater than">greater than</a>, <a href="../../glossary.html#glossary-integer" class="glossary-link" data-slug="integer" data-original-href="#glossary-integer" data-term="integer">integer</a>, <a href="#glossary-less-than" class="glossary-link" data-slug="less-than" data-original-href="#glossary-less-than" data-term="less than">less than</a>, <a href="#glossary-number" class="glossary-link" data-slug="number" data-original-href="#glossary-number" data-term="number">number</a>, <a href="../../glossary.html#glossary-negative" class="glossary-link" data-slug="negative" data-original-href="#glossary-negative" data-term="negative">negative</a>, <a href="../../glossary.html#glossary-opposite" class="glossary-link" data-slug="opposite" data-original-href="#glossary-opposite" data-term="opposite">opposite</a>, <a href="../../glossary.html#glossary-positive" class="glossary-link" data-slug="positive" data-original-href="#glossary-positive" data-term="positive">positive</a></p>
+<p><a href="#glossary-absolute-value" class="glossary-link" data-term="absolute value" data-slug="absolute-value" data-original-href="#glossary-absolute-value">absolute value</a>, <a href="#glossary-greater-than" class="glossary-link" data-term="greater than" data-slug="greater-than" data-original-href="#glossary-greater-than">greater than</a>, <a href="../../glossary.html#glossary-integer" class="glossary-link" data-term="integer" data-slug="integer" data-original-href="#glossary-integer">integer</a>, <a href="#glossary-less-than" class="glossary-link" data-term="less than" data-slug="less-than" data-original-href="#glossary-less-than">less than</a>, <a href="#glossary-number" class="glossary-link" data-term="number" data-slug="number" data-original-href="#glossary-number">number</a>, <a href="../../glossary.html#glossary-negative" class="glossary-link" data-term="negative" data-slug="negative" data-original-href="#glossary-negative">negative</a>, <a href="../../glossary.html#glossary-opposite" class="glossary-link" data-term="opposite" data-slug="opposite" data-original-href="#glossary-opposite">opposite</a>, <a href="../../glossary.html#glossary-positive" class="glossary-link" data-term="positive" data-slug="positive" data-original-href="#glossary-positive">positive</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <p>Answer as best you can – even if you aren’t sure!</p>
@@ -612,22 +703,22 @@ window.Quarto = {
 <section id="the-number-line-is-more-than-just-counting" class="level3">
 <h3 class="anchored" data-anchor-id="the-number-line-is-more-than-just-counting">1.1.1 - The Number Line Is More Than Just Counting</h3>
 <p>You already know how to count — 0, 1, 2, 3, and so on. The <strong>number line</strong> extends that idea in both directions.</p>
-<p><strong>Let’s draw a number line from -10 to 10</strong> <img src="../..\images/Unit_1/Lesson_1/blank_numberline.png" class="img-fluid"></p>
-<p>Here, every tick mark is an <a href="../../glossary.html#glossary-integer" class="glossary-link" data-slug="integer" data-original-href="#glossary-integer" data-term="integer">integer</a> — a whole number.</p>
+<p><strong>Let’s draw a number line from -10 to 10</strong> <img src="../../images/Unit_1/Lesson_1/blank_numberline.png" class="img-fluid"></p>
+<p>Here, every tick mark is an <a href="../../glossary.html#glossary-integer" class="glossary-link" data-term="integer" data-slug="integer" data-original-href="#glossary-integer">integer</a> — a whole number.</p>
 <ul>
-<li>Numbers to the <strong>right</strong> of zero are <a href="../../glossary.html#glossary-positive" class="glossary-link" data-slug="positive" data-original-href="#glossary-positive" data-term="positive">positive</a></li>
-<li>Numbers to the <strong>left</strong> of zero are <a href="../../glossary.html#glossary-negative" class="glossary-link" data-slug="negative" data-original-href="#glossary-negative" data-term="negative">negative</a></li>
+<li>Numbers to the <strong>right</strong> of zero are <a href="../../glossary.html#glossary-positive" class="glossary-link" data-term="positive" data-slug="positive" data-original-href="#glossary-positive">positive</a></li>
+<li>Numbers to the <strong>left</strong> of zero are <a href="../../glossary.html#glossary-negative" class="glossary-link" data-term="negative" data-slug="negative" data-original-href="#glossary-negative">negative</a></li>
 </ul>
 <p>We can use this number line to <em>see</em> what happens when we add, subtract, or compare numbers.</p>
 <p><strong>Are there other ways to draw a number line?</strong></p>
 <p>Yes! Number lines can be drawn over different ranges and scales. For example, here is a number line that counts from -10 to 25 in steps of 5.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/count_by_5s.png" class="img-fluid"></p>
-<p>In fact, number lines don’t even have to be <a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-slug="horizontal" data-original-href="#glossary-horizontal" data-term="horizontal">horizontal</a>. Here is a <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-slug="vertical" data-original-href="#glossary-vertical" data-term="vertical">vertical</a> number line that goes from 0 to 100 in steps of 10.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/vertical_by_tens.png" class="img-fluid"></p>
+<p><img src="../../images/Unit_1/Lesson_1/count_by_5s.png" class="img-fluid"></p>
+<p>In fact, number lines don’t even have to be <a href="../../glossary.html#glossary-horizontal" class="glossary-link" data-term="horizontal" data-slug="horizontal" data-original-href="#glossary-horizontal">horizontal</a>. Here is a <a href="../../glossary.html#glossary-vertical" class="glossary-link" data-term="vertical" data-slug="vertical" data-original-href="#glossary-vertical">vertical</a> number line that goes from 0 to 100 in steps of 10.</p>
+<p><img src="../../images/Unit_1/Lesson_1/vertical_by_tens.png" class="img-fluid"></p>
 <div class="gotcha" title="How many numbers are between any two numbers on the number line?">
 <p><strong>Example:</strong> How many numbers between 3 and 5?</p>
-<p>If you are counting integers, there is 1 <a href="../../glossary.html#glossary-integer" class="glossary-link" data-slug="integer" data-original-href="#glossary-integer" data-term="integer">integer</a> between 3 and 5 (just 4). But if you mean <a href="#glossary-real-numbers" class="glossary-link" data-slug="real-numbers" data-original-href="#glossary-real-numbers" data-term="real numbers">real numbers</a>, there are <a href="../../glossary.html#glossary-infinitely" class="glossary-link" data-slug="infinitely" data-original-href="#glossary-infinitely" data-term="infinitely">infinitely</a> many between 3 and 5. Here are some number lines that might help convince you.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/three_to_five_by_1.png" class="img-fluid"> <img src="../..\images/Unit_1/Lesson_1/between_3_and_5_by_05.png" class="img-fluid"> <img src="../..\images/Unit_1/Lesson_1/between_3_and_5_by_025.png" class="img-fluid"></p>
+<p>If you are counting integers, there is 1 <a href="../../glossary.html#glossary-integer" class="glossary-link" data-term="integer" data-slug="integer" data-original-href="#glossary-integer">integer</a> between 3 and 5 (just 4). But if you mean <a href="#glossary-real-numbers" class="glossary-link" data-term="real numbers" data-slug="real-numbers" data-original-href="#glossary-real-numbers">real numbers</a>, there are <a href="../../glossary.html#glossary-infinitely" class="glossary-link" data-term="infinitely" data-slug="infinitely" data-original-href="#glossary-infinitely">infinitely</a> many between 3 and 5. Here are some number lines that might help convince you.</p>
+<p><img src="../../images/Unit_1/Lesson_1/three_to_five_by_1.png" class="img-fluid"> <img src="../../images/Unit_1/Lesson_1/between_3_and_5_by_05.png" class="img-fluid"> <img src="../../images/Unit_1/Lesson_1/between_3_and_5_by_025.png" class="img-fluid"></p>
 </div>
 <div class="think" title="Can you think of any real world examples of number lines?">
 <p>Here are a few examples:</p>
@@ -644,8 +735,8 @@ window.Quarto = {
 <section id="understanding-opposites" class="level3">
 <h3 class="anchored" data-anchor-id="understanding-opposites">1.1.2 - Understanding Opposites</h3>
 <p>Let’s look at a pair of numbers, 3 and -3.</p>
-<p>These are called <a href="../../glossary.html#glossary-opposite" class="glossary-link" data-slug="opposite" data-original-href="#glossary-opposite" data-term="opposite">opposite</a> numbers. They are the <strong>same distance</strong> from zero but on <strong>opposite sides</strong> of it.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/opposites.png" class="img-fluid"></p>
+<p>These are called <a href="../../glossary.html#glossary-opposite" class="glossary-link" data-term="opposite" data-slug="opposite" data-original-href="#glossary-opposite">opposite</a> numbers. They are the <strong>same distance</strong> from zero but on <strong>opposite sides</strong> of it.</p>
+<p><img src="../../images/Unit_1/Lesson_1/opposites.png" class="img-fluid"></p>
 <div class="think" title="What is the opposite of zero?">
 <p>The opposite of zero is zero. Zero is the only number that is its own opposite!</p>
 </div>
@@ -653,12 +744,12 @@ window.Quarto = {
 </section>
 <section id="what-is-absolute-value" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-absolute-value">1.1.3 - What Is Absolute Value?</h3>
-<p><a href="#glossary-absolute-value" class="glossary-link" data-slug="absolute-value" data-original-href="#glossary-absolute-value" data-term="Absolute value">Absolute value</a> measures the <strong>distance from zero</strong>. Absolute value is written as a number between two bars. For example, <strong>the absolute value of -5</strong> is written <span class="math inline">\(|-5|\)</span>.</p>
-<p>Take a look at the number -5. The number line shows that its absolute value is 5 because it is 5 units away from zero. <img src="../..\images/Unit_1/Lesson_1/absolute_value_negative_five.png" class="img-fluid"></p>
-<p>You can see that |5| is also 5 for the same reason! <img src="../..\images/Unit_1/Lesson_1/absolute_value_five.png" class="img-fluid"></p>
+<p><a href="#glossary-absolute-value" class="glossary-link" data-term="Absolute value" data-slug="absolute-value" data-original-href="#glossary-absolute-value">Absolute value</a> measures the <strong>distance from zero</strong>. Absolute value is written as a number between two bars. For example, <strong>the absolute value of -5</strong> is written <span class="math inline">\(|-5|\)</span>.</p>
+<p>Take a look at the number -5. The number line shows that its absolute value is 5 because it is 5 units away from zero. <img src="../../images/Unit_1/Lesson_1/absolute_value_negative_five.png" class="img-fluid"></p>
+<p>You can see that |5| is also 5 for the same reason! <img src="../../images/Unit_1/Lesson_1/absolute_value_five.png" class="img-fluid"></p>
 <div class="real-world">
 <p>Absolute value is often used for describing the distance between two points. Suppose you live 3 miles to the east of the school and your best friend lives 5 miles to the west. How far apart are your houses? This is easy to see with a number line.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/east_to_west.png" class="img-fluid"></p>
+<p><img src="../../images/Unit_1/Lesson_1/east_to_west.png" class="img-fluid"></p>
 <p>You can compute your distances by adding |-5| + |3|, by |-5 - 3|, or by |3 - (-5)|. All three of these give the same answer, 8 miles. What would change if we did not use absolute value?</p>
 </div>
 <div class="think" title="Can the absolute value ever be negative?">
@@ -669,15 +760,15 @@ window.Quarto = {
 <section id="comparing-integers" class="level3">
 <h3 class="anchored" data-anchor-id="comparing-integers">1.1.4 - Comparing Integers</h3>
 <p>We can also use the number line to compare values.</p>
-<p>Let’s compare 2 to -7. <img src="../..\images/Unit_1/Lesson_1/compare_2_to_neg7.png" class="img-fluid"></p>
-<p>You can see from the number line that 2 is <a href="#glossary-greater-than" class="glossary-link" data-slug="greater-than" data-original-href="#glossary-greater-than" data-term="greater than">greater than</a> (&gt;) -7 because 2 is to the right of -7.</p>
+<p>Let’s compare 2 to -7. <img src="../../images/Unit_1/Lesson_1/compare_2_to_neg7.png" class="img-fluid"></p>
+<p>You can see from the number line that 2 is <a href="#glossary-greater-than" class="glossary-link" data-term="greater than" data-slug="greater-than" data-original-href="#glossary-greater-than">greater than</a> (&gt;) -7 because 2 is to the right of -7.</p>
 <p>You can also see that -7 is farther from zero than 2 and so |-7| &gt; |2|.</p>
 <div class="gotcha" title="Which is bigger?">
 <p>It is easy to get confused here. When we say which number is “bigger” (or greater than), we are asking which number is farther to the right on the number line. This is <strong>not</strong> the same as absolute value, which asks which one is furthest from zero.</p>
 </div>
 <div class="you-try" title="Compare 3 to -8 using a number line.">
 <p>3 &gt; -8 because it is farther to the right but |-8| &gt; |3| because -8 is farther from zero.</p>
-<p><img src="../..\images/Unit_1/Lesson_1/compare_3_to_neg8.png" class="img-fluid"></p>
+<p><img src="../../images/Unit_1/Lesson_1/compare_3_to_neg8.png" class="img-fluid"></p>
 </div>
 <hr>
 </section>
@@ -685,30 +776,30 @@ window.Quarto = {
 <h3 class="anchored">1.1.5 - Number Lines and Arithmetic</h3>
 <p>We can also use the number line to model <strong>adding and subtracting</strong> integers.</p>
 <ul>
-<li>To add a <a href="../../glossary.html#glossary-positive" class="glossary-link" data-slug="positive" data-original-href="#glossary-positive" data-term="positive">positive</a> number, move <strong>right</strong></li>
-<li>To add a <a href="../../glossary.html#glossary-negative" class="glossary-link" data-slug="negative" data-original-href="#glossary-negative" data-term="negative">negative</a> number, move <strong>left</strong></li>
+<li>To add a <a href="../../glossary.html#glossary-positive" class="glossary-link" data-term="positive" data-slug="positive" data-original-href="#glossary-positive">positive</a> number, move <strong>right</strong></li>
+<li>To add a <a href="../../glossary.html#glossary-negative" class="glossary-link" data-term="negative" data-slug="negative" data-original-href="#glossary-negative">negative</a> number, move <strong>left</strong></li>
 </ul>
 <p>Examples:</p>
 <ol type="1">
-<li>Addition: <span class="math inline">\(-2 + 6 = 4\)</span> <img src="../..\images/Unit_1/Lesson_1/add_6_to_neg2.png" class="img-fluid"></li>
+<li>Addition: <span class="math inline">\(-2 + 6 = 4\)</span> <img src="../../images/Unit_1/Lesson_1/add_6_to_neg2.png" class="img-fluid"></li>
 </ol>
 <div class="real-world">
 <p>Imagine that you are $2 in debt. If someone pays you $6 you can pay off the debt and have $<span class="math inline">\(4\)</span> left over.</p>
 </div>
 <ol start="2" type="1">
-<li>Adding a negative: <span class="math inline">\(150 + (-5) = 145\)</span> <img src="../..\images/Unit_1/Lesson_1/add_neg5_to_150.png" class="img-fluid"></li>
+<li>Adding a negative: <span class="math inline">\(150 + (-5) = 145\)</span> <img src="../../images/Unit_1/Lesson_1/add_neg5_to_150.png" class="img-fluid"></li>
 </ol>
 <div class="real-world">
 <p>You have $150 in the bank. The bank adds a fee for being under their $200 minimum balance. You now have $145.</p>
 </div>
 <ol start="3" type="1">
-<li>Subtraction: <span class="math inline">\(400 - 450 = -50\)</span> <img src="../..\images/Unit_1/Lesson_1/subtract_450_from_400.png" class="img-fluid"></li>
+<li>Subtraction: <span class="math inline">\(400 - 450 = -50\)</span> <img src="../../images/Unit_1/Lesson_1/subtract_450_from_400.png" class="img-fluid"></li>
 </ol>
 <div class="real-world">
 <p>If you only have $400 but spend $450 on a credit card, you are now $50 in debt.</p>
 </div>
 <ol start="4" type="1">
-<li>Subtracting a negative: <span class="math inline">\(201 - (-5) = 206\)</span> <img src="../..\images/Unit_1/Lesson_1/subtract_neg5_from_201.png" class="img-fluid"></li>
+<li>Subtracting a negative: <span class="math inline">\(201 - (-5) = 206\)</span> <img src="../../images/Unit_1/Lesson_1/subtract_neg5_from_201.png" class="img-fluid"></li>
 </ol>
 <div class="think" title="What real-world scenario could $201 - (-5) = 206$ represent?">
 <blockquote class="blockquote">
@@ -725,7 +816,7 @@ window.Quarto = {
 <li><p>The number halfway between 5 and 9.</p></li>
 </ol></li>
 <li><p>What question could match this number line? (e.g.&nbsp;How old is grandma?)</p>
-<p><img src="../..\images/Unit_1/Lesson_1/problem_2.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/problem_2.png" class="img-fluid"></p></li>
 </ol>
 <hr>
 <p><strong>Opposites</strong></p>
@@ -792,14 +883,14 @@ window.Quarto = {
 <p><strong>Working With Number Lines</strong></p>
 <ol type="1">
 <li><ol type="a">
-<li><p><img src="../..\images/Unit_1/Lesson_1/answer_1_a.png" class="img-fluid"></p></li>
+<li><p><img src="../../images/Unit_1/Lesson_1/answer_1_a.png" class="img-fluid"></p></li>
 <li><p><em>Answers vary. Here is what a 15-year-old would show:</em></p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_1_b.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_1_b.png" class="img-fluid"></p></li>
 <li><p>7</p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_1_c.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_1_c.png" class="img-fluid"></p></li>
 </ol></li>
 <li><p><em>Example question:</em> “What was the temperature on July 4th?”</p>
-<p><img src="../..\images/Unit_1/Lesson_1/problem_2.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/problem_2.png" class="img-fluid"></p></li>
 </ol>
 <hr>
 <p><strong>Opposites</strong></p>
@@ -807,7 +898,7 @@ window.Quarto = {
 <li><p>-42</p></li>
 <li><p>3</p></li>
 <li><p><em>Answers vary. Example:</em></p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_5.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_5.png" class="img-fluid"></p></li>
 <li><p>Yes — the opposite is -3.5</p></li>
 </ol>
 <hr>
@@ -829,17 +920,17 @@ window.Quarto = {
 <li><ol type="a">
 <li><p>2 &gt; -7</p></li>
 <li><p><em>Answers vary — for example, 2025 &gt; 1985</em></p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_12_b.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_12_b.png" class="img-fluid"></p></li>
 </ol></li>
 </ol>
 <hr>
 <p><strong>Addition and Subtraction</strong></p>
 <ol start="13" type="1">
 <li><ol type="a">
-<li><img src="../..\images/Unit_1/Lesson_1/answer_13_a.png" class="img-fluid"></li>
-<li><img src="../..\images/Unit_1/Lesson_1/answer_13_b.png" class="img-fluid"></li>
-<li><img src="../..\images/Unit_1/Lesson_1/answer_13_c.png" class="img-fluid"></li>
-<li><img src="../..\images/Unit_1/Lesson_1/answer_13_d.png" class="img-fluid"></li>
+<li><img src="../../images/Unit_1/Lesson_1/answer_13_a.png" class="img-fluid"></li>
+<li><img src="../../images/Unit_1/Lesson_1/answer_13_b.png" class="img-fluid"></li>
+<li><img src="../../images/Unit_1/Lesson_1/answer_13_c.png" class="img-fluid"></li>
+<li><img src="../../images/Unit_1/Lesson_1/answer_13_d.png" class="img-fluid"></li>
 </ol></li>
 </ol>
 <hr>
@@ -847,11 +938,11 @@ window.Quarto = {
 <ol start="14" type="1">
 <li><ol type="a">
 <li><p>8°F</p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_14_a.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_14_a.png" class="img-fluid"></p></li>
 <li><p>75 feet down</p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_14_b.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_14_b.png" class="img-fluid"></p></li>
 <li><p>-$3</p>
-<p><img src="../..\images/Unit_1/Lesson_1/answer_14_c.png" class="img-fluid"></p></li>
+<p><img src="../../images/Unit_1/Lesson_1/answer_14_c.png" class="img-fluid"></p></li>
 </ol></li>
 </ol>
 </div>
@@ -861,13 +952,9 @@ window.Quarto = {
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -919,14 +1006,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
