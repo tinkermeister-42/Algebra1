@@ -1,0 +1,31 @@
+# 5.2 - Simplifying Expressions with Exponents {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+# 5.1 - Exponent Rules {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

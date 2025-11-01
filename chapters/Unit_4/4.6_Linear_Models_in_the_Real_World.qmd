@@ -1,4 +1,4 @@
-# 4.5 – Linear Models in the Real World {.unnumbered}
+# 4.6 – Linear Models in the Real World {.unnumbered}
 
 Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more. In any situation where something changes at a steady rate, you can use a linear model to describe it.
 
@@ -70,7 +70,7 @@ $$
 This model shows how the total cost changes with the number of episodes rented.
 You can use it to find the price for any number of episodes.
 
-![](/images/Unit_4/Lesson_5/Example1.png){width="500px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example1.png){width="500px" fig-align="center"}
 
 :::{.think title="How much would it cost to rent 10 episodes?"}
 
@@ -100,7 +100,7 @@ $$
 T(t) = -3t + 90
 $$
 
-![](/images/Unit_4/Lesson_5/Example2.png){width="500px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example2.png){width="500px" fig-align="center"}
 
 :::{.you-try title="What will the temperature be after 15 minutes?"}
 
@@ -139,7 +139,7 @@ $$
 C(d) = 2.25d + 3
 $$
 
-![](/images/Unit_4/Lesson_5/Example3.png){width="500px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example3.png){width="500px" fig-align="center"}
 
 :::{.you-try title="How much will it cost to ride 20 miles?"}
 
@@ -171,7 +171,7 @@ $$
 R(d) = 3.75d
 $$
 
-![](/images/Unit_4/Lesson_5/Example4.png){width="450px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example4.png){width="450px" fig-align="center"}
 
 By comparing the graphs, the two lines cross at about **2 miles**.
 That means the taxi and ride-share cost the same at that distance.
@@ -273,7 +273,7 @@ The line helps us see these relationships and make **predictions**.
 A group of 100 students took an end-of-course Algebra exam.
 Each student tracked how many hours they studied (to the nearest half-hour).
 
-![](/images/Unit_4/Lesson_5/Example6.png){width="500px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example6.png){width="500px" fig-align="center"}
 
 Even though the points don’t form a perfect line, there’s a **clear positive correlation** —
 students who studied more hours **tended to earn higher scores**.
@@ -307,7 +307,7 @@ A student who studies for **7 hours** would be predicted to score about **81%**.
 Car weight and fuel efficiency are also related — but in the **opposite direction**.
 There’s a **strong negative correlation**: heavier cars usually get **fewer miles per gallon**.
 
-![](/images/Unit_4/Lesson_5/Example7.png){width="500px" fig-align="center"}
+![](/images/Unit_4/Lesson_6/Example7.png){width="500px" fig-align="center"}
 
 A best-fit line for the data is:
 
@@ -407,19 +407,19 @@ For numbers 12-15, describe the trend by giving:
 
 12. As outdoor temperature increases, the number of cups of hot chocolate sold decreases.
     
-    ![](/images/Unit_4/Lesson_5/Practice12.png){width="300px" fig-align="center"}
+    ![](/images/Unit_4/Lesson_6/Practice12.png){width="300px" fig-align="center"}
 
 13. The more time students spend watching review videos, the higher their quiz scores.
     
-    ![](/images/Unit_4/Lesson_5/Practice13.png){width="300px" fig-align="center"}
+    ![](/images/Unit_4/Lesson_6/Practice13.png){width="300px" fig-align="center"}
 
 14. A scatter plot shows that as screen time increases, sleep hours tend to decrease but with a lot of scatter.
     
-    ![](/images/Unit_4/Lesson_5/Practice14.png){width="300px" fig-align="center"}
+    ![](/images/Unit_4/Lesson_6/Practice14.png){width="300px" fig-align="center"}
 
 15. running practice hours vs. race time (minutes) has a **negative slope**.
     
-    ![](/images/Unit_4/Lesson_5/Practice15.png){width="300px" fig-align="center"}
+    ![](/images/Unit_4/Lesson_6/Practice15.png){width="300px" fig-align="center"}
 
 ---
 

@@ -1,0 +1,31 @@
+# 6.4 - Completing_the_Square {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

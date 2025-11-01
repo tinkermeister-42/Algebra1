@@ -54,8 +54,9 @@ book:
         - file: chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
         - file: chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.qmd
         - file: chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.qmd
-        - file: chapters/Unit_1/1.6_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
-        - file: chapters/Unit_1/1.7_Order_of_Operations.qmd
+        - file: chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.qmd
+        - file: chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
+        - file: chapters/Unit_1/1.8_Order_of_Operations.qmd
         - file: chapters/Unit_1/Review.qmd
 
     - part: "Unit 2: Algebraic Expressions"
@@ -88,19 +89,32 @@ book:
         - file: chapters/Unit_4/4.2_Understanding_Slope.qmd
         - file: chapters/Unit_4/4.3_The_Equation_of_a_Line.qmd
         - file: chapters/Unit_4/4.4_Writing_Linear_Equations.qmd
-        - file: chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.qmd
-        - file: chapters/Unit_4/4.6_Graphing_Linear_Inequalities.qmd
+        - file: chapters/Unit_4/4.5_Systems_of_Equations.qmd
+        - file: chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd
+        - file: chapters/Unit_4/4.7_Graphing_Linear_Inequalities.qmd
         - file: chapters/Unit_4/Review.qmd
 
-    - part: "Unit 5: Systems of Equations"
+    - part: "Unit 5: Exponents & Polynomials"
+      chapters:
+        - file: chapters/Unit_5/index.qmd
+        - file: chapters/Unit_5/5.1_Exponent_Rules.qmd
+        - file: chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.qmd
+        - file: chapters/Unit_5/5.3_Introduction_to_Polynomials.qmd
+        - file: chapters/Unit_5/5.4_Multiplying_Polynomials.qmd
+        - file: chapters/Unit_5/5.5_Special_Products.qmd
+        - file: chapters/Unit_5/5.6_Factoring_Polynomials.qmd
+        - file: chapters/Unit_5/Review.qmd
 
-    - part: "Unit 6: Polynomials & Factoring"
-
-    - part: "Unit 7: Quadratics"
-
-    - part: "Unit 8: Exponential Functions"
-    
-    - part: "Unit 9: Statistics & Probability"
+    - part: "Unit 6: Quadratic Equations & Functions"
+      chapters:
+        - file: chapters/Unit_6/index.qmd
+        - file: chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.qmd
+        - file: chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.qmd
+        - file: chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.qmd
+        - file: chapters/Unit_6/6.4_Completing_the_Square.qmd
+        - file: chapters/Unit_6/6.5_The_Quadratic_Formula.qmd
+        - file: chapters/Unit_6/6.6_Graphing_Quadratic_Functions.qmd
+        - file: chapters/Unit_6/Review.qmd
 
     - part: "Interactive Learning"
       chapters:

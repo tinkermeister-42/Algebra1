@@ -1,0 +1,31 @@
+# 5.3 - Introduction to Polynomials {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

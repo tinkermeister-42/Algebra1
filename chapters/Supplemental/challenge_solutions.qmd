@@ -52,8 +52,13 @@ No Challenge Questions
 
 :::
 
+### 1.6 - Adding and Subtracting Fractions
 
-### 1.6 - Solving Problems with Fractions, Decimals, and Percents
+:::{.answers}
+
+:::
+
+### 1.7 - Solving Problems with Fractions, Decimals, and Percents
 
 :::{.answers}
 
@@ -66,7 +71,7 @@ No Challenge Questions
 :::
 
 
-### 1.7 - Order of Operations
+### 1.8 - Order of Operations
 
 :::{.answers}
 
@@ -353,7 +358,14 @@ No Challenge Questions
 
 :::
 
-### 4.5 - Linear Models in the Real World
+### 4.5 - Solving Systems of Equations
+
+:::{.answers}
+
+:::
+
+
+### 4.6 - Linear Models in the Real World
 
 :::{.answers}
 
@@ -364,6 +376,25 @@ b) Residual $=51.5-44.8=\mathbf{+6.7}$ mpg → point is **above** the line.
 c) New weight $=3600+180=3780$; $F(3780)=43.54$ mpg; minus $1.3$ for tires → **42.24** mpg.
 d) $55=-0.007w+70 \Rightarrow w=\dfrac{15}{0.007}\approx 2143$ lb → **outside** the valid $[2500,4500]$ lb range (not reliable).
 e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **less negative** (pulled up on the right) and the negative correlation appears **weaker**.
+
+:::
+
+
+### 4.7 - Graphing Linear Inequalities
+
+:::{.answers}
+
+15. Yes, it is an isosceles triangle.
+
+16. Answers vary: 
+
+    $$
+    \begin{align*}
+    y &>= 0 \\
+    y &<= 3x \\
+    y &<= -x + 4
+    \end{align*}
+    $$
 
 :::
 

@@ -1,0 +1,31 @@
+# 6.6 - Graphing Quadratic Functions {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can do things
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+
