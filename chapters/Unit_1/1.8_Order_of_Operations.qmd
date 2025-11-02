@@ -33,7 +33,7 @@ $$
 
 {{< learn >}}
 
-### 1.7.1 – The Order Matters
+### 1.8.1 – The Order Matters
 
 In math, the order you do things **really matters** — doing steps out of order can completely change the answer.
 
@@ -98,7 +98,7 @@ The same is true for addition and subtraction. Subtraction is really just adding
 
 ---
 
-### 1.7.2 – Examples with Integers
+### 1.8.2 – Examples with Integers
 
 Let’s look at some {{< glink slug=expression text="expressions" >}} that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
 
@@ -169,7 +169,7 @@ $$
 
 ---
 
-### 1.7.3 – With Negatives and Fractions
+### 1.8.3 – With Negatives and Fractions
 
 Once you're comfortable with the basics, we can add in **negative numbers** and **fractions**. The order of operations still works the same way — you just have to be more careful.
 
@@ -253,7 +253,7 @@ $$
 
 ---
 
-### 1.7.4 – More Complex Expressions
+### 1.8.4 – More Complex Expressions
 
 Let’s try putting all the steps together. When expressions involve grouping, exponents, fractions, and multiple operations, PEMDAS really helps keep things organized.
 
@@ -375,7 +375,7 @@ $$
 :::
 ---
 
-### 1.7.5 – Why This Matters
+### 1.8.5 – Why This Matters
 
 This might feel like just number-crunching, but it lays the foundation for Algebra. You’ll need these skills to simplify expressions, solve equations, and understand formulas.
 

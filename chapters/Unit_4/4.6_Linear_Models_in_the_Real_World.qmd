@@ -35,7 +35,7 @@ In this lesson, you will learn how to use these linear models to solve real-worl
 
 {{< learn >}}
 
-### 4.5.1 – Solving Problems With Linear Models
+### 4.6.1 – Solving Problems With Linear Models
 
 Linear models always have two key pieces:
 
@@ -253,7 +253,7 @@ She will charge **$154** for 12 hours.
 
 ---
 
-### 4.5.2 – Seeing Patterns in Data
+### 4.6.2 – Seeing Patterns in Data
 
 In real life, data points rarely fall in a perfect line — but they often show a **pattern**.
 When that pattern looks roughly straight, we can model it with a **best-fit line** (or *trend line*).

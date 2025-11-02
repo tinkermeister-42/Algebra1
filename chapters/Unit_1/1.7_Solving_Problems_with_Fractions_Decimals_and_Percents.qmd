@@ -28,7 +28,7 @@ Use mental math if you can!
 
 {{< learn >}}
 
-### 1.6.1 – What’s the Part, Whole, or Percent?
+### 1.7.1 – What’s the Part, Whole, or Percent?
 
 In many real-world problems, you’re given some information and need to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
 
@@ -165,7 +165,7 @@ $$
 
 ---
 
-### 1.6.2 – Real-Life Examples
+### 1.7.2 – Real-Life Examples
 
 #### Grades
 

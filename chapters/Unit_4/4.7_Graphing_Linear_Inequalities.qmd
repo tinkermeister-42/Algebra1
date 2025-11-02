@@ -27,7 +27,7 @@ When we switch from **equations** to **inequalities**, we’re no longer looking
 
 {{< learn >}}
 
-### 4.6.1 – Linear Inequalities in Two Variables
+### 4.7.1 – Linear Inequalities in Two Variables
 
 Back in Unit 3, you learned that solving an **inequality** is almost the same as solving an **equation**, with just a few key differences:
 
@@ -126,7 +126,7 @@ The line is **solid**, so points on the line are **included**.
 
 ---
 
-### 4.6.2 – Solving Two-Variable Inequalities
+### 4.7.2 – Solving Two-Variable Inequalities
 
 In the last section, you graphed a linear inequality once it was already written as $y < mx + b$ or $y \le mx + b$.
 
@@ -190,7 +190,7 @@ $$
 
 ---
 
-### 4.6.3 – Systems of Linear Inequalities
+### 4.7.3 – Systems of Linear Inequalities
 
 So far, you’ve graphed a **single inequality** — one shaded region showing all the points that make it true.
 

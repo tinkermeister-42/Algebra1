@@ -44,10 +44,13 @@ Graph quickly from slope and intercept, and see how changing them moves the line
 Write equations from graphs, data, or descriptions.
 Use slope-intercept and point-slope form, and explain what $m$ and $b$ mean in context.
 
-[**Linear Models in the Real World**](4.5_Linear_Models_in_the_Real_World.html)
+[**Systems of Equations**](4.5_Systems_of_Equations.qmd)
+Find points of intersection between two lines. These points of intersection are solutions to a system of equations.
+
+[**Linear Models in the Real World**](4.6_Linear_Models_in_the_Real_World.html)
 Model real situations like costs, temperature changes, or speed.
 Interpret slope and intercept in units, and sketch best-fit lines to describe data trends.
 
-[**Graphing Linear Inequalities**](4.6_Graphing_Linear_Inequalities.html)
+[**Graphing Linear Inequalities**](4.7_Graphing_Linear_Inequalities.html)
 Extend linear models to show ranges of solutions.
 Graph inequalities, shade solution regions, and interpret what the shaded area means in real-world terms.
