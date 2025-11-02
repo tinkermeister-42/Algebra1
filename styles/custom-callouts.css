@@ -47,10 +47,10 @@
 .answers {
   border-left: 4px solid rgba(39, 174, 96, 1) !important;
 }
-/* Single non-collapsible answer block */
+/* Single collapsible answer block */
 .answer {
   border-left: 4px solid rgba(39, 174, 96, 0.75) !important;
-  background-color: #f7fcf9 !important;
+  
 }
 /* Note callout (informational) */
 .note {

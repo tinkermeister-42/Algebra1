@@ -15,8 +15,8 @@ That’s the idea behind a **system of equations**.
 :::{.objectives}
 
 * [ ] I can interpret the solution to a system of equations.
-* [ ] I can solve a system by **graphing**.
-* [ ] I can describe what **substitution** and **elimination** mean.
+* [ ] I can solve a system of equations by graphing.
+* [ ] I can describe what substitution and elimination mean.
 
 :::
 
@@ -71,8 +71,8 @@ We can check it using {{< glink substitution >}}.
 
 $$
 \begin{cases}
-\textcolor{blue}{3} = 2(\textcolor{red}{1})+1 ✔️ \\
-\textcolor{blue}{3} = -(\textcolor{red}{1}) + 4 ✔️
+\textcolor{blue}{3} = 2(\textcolor{red}{1})+1 = 3 ✔️ \\
+\textcolor{blue}{3} = -(\textcolor{red}{1}) + 4 = 3 ✔️
 \end{cases}
 $$
 
@@ -122,7 +122,7 @@ The lines meet at $(5, 35)$.
 
 After **5 classes**, both plans cost **\$35**.
 Before that, Plan A is cheaper; after that, Plan B is cheaper.
-The intersection shows exactly where the two plans balance.
+The {{< glink intersection >}} shows exactly where the two plans balance.
 
 ---
 
@@ -162,13 +162,17 @@ y = 25x + 10
 \end{cases}
 $$
 
-Here, $y$ represents total cost (in dollars) and $x$ represents the number of months.
+Here, $y$ represents total cost (in dollars) and $x$ represents the number of months on the plan.
 
-The two lines cross at $(3, 85)$. What does that point represent?
+Find the solution to the system by graphing and then interpret the solution.
 
 :::
 
 :::{.answer title="Answer"}
+
+![](/images/Unit_4/Lesson_5/YouTry1.png){width="400px" fig-align="center"}
+
+The two lines cross at $(3, 85)$.
 
 That means after **3 months**, both plans cost **\$85**.
 Before that, the second plan is cheaper; after that, the first plan is cheaper.
@@ -203,11 +207,12 @@ That turns a two-variable system into a single equation you already know how to 
 2. **Substitute** that expression into the other equation.
 3. **Solve** for the remaining variable.
 4. **Plug back in** to find the other variable.
-5. **Check** that your solution works in both equations.
 
 ---
 
 **Example 5:**
+
+Solve the system of equations by substitution.
 
 $$
 \begin{cases}
@@ -225,8 +230,11 @@ $$
 Simplify and solve:
 
 $$
-3x + 2 = 8 \\
-x = 2
+\begin{align*}
+3x + 2 &= 8 \snminus{2} \\
+3x &= 6 \sndiv{3} \\
+x &= 2
+\end{align*}
 $$
 
 Now substitute back:
@@ -241,6 +249,7 @@ $$
 
 **Example 6:**
 
+Solve the system of equations by substitution.
 $$
 \begin{cases}
 y = 3x - 8 \\
@@ -258,14 +267,20 @@ Simplify and solve:
 
 $$
 \begin{align*}
-x + (3x - 8) &= -24 \stepnote{Combine like terms} \\
 4x - 8 &= -24 \snplus{8} \\
 4x &= -16 \sndiv{4} \\
 x &= -4
 \end{align*}
 $$
 
-Then $y = 3(-4) - 8 = -20$
+Then substitute and solve for y:
+
+$$
+\begin{align*}
+y &= 3(-4) - 8 \\
+y &= -20
+\end{align*}
+$$
 
 **Solution:** $(-4, -20)$
 
@@ -279,15 +294,15 @@ This method is especially convenient when both equations already have similar $x
 **Steps for Solving by Elimination**
 
 1. **Line up** both equations.
-2. If needed, **multiply** one equation so that one variable has the same or opposite coefficient.
-3. **Add or subtract** the equations to eliminate that variable.
-4. **Solve** for the remaining variable.
-5. **Substitute back** to find the other variable.
+2. **Add or subtract** the equations to eliminate that variable.
+3. **Solve** for the remaining variable.
+4. **Substitute back** to find the other variable.
 
 ---
 
 **Example 7:**
 
+Solve the system of equations by elimination.
 $$
 \begin{cases}
 2x + y = 10 \\
@@ -298,14 +313,20 @@ $$
 Add the equations to make $y$ cancel out:
 
 $$
-(2x + y) + (2x - y) = 10 + 2 \\
-4x = 12 \Rightarrow x = 3
+\begin{align*}
+(2x + y) + (2x - y) &= 10 + 2 \stepnote{Combine Like Terms} \\
+4x &= 12 \sndiv{4} \\
+x &= 3
+\end{align*}
 $$
 
 Now substitute $x = 3$ into one of the equations:
 
 $$
-2(3) + y = 10 \Rightarrow y = 4
+\begin{align*}
+2(3) + y &= 10 \snminus{6} \\
+y &= 4
+\end{align*}
 $$
 
 **Solution:** $(3, 4)$
@@ -313,6 +334,8 @@ $$
 ---
 
 **Example 8:**
+
+Solve the system of equations by elimination.
 
 $$
 \begin{cases}
@@ -325,14 +348,20 @@ $$
 Add the equations:
 
 $$
-(x + y) + (x - y) = 9 + 3 \\
-2x = 12 \Rightarrow x = 6
+\begin{align*}
+(x + y) + (x - y) &= 9 + 3 \stepnote{Combine Like Terms} \\
+2x &= 12 \sndiv{2} \\
+x &= 6
+\end{align*}
 $$
 
 Now plug back in:
 
 $$
-6 + y = 9 \Rightarrow y = 3
+\begin{align*}
+6 + y &= 9 \snminus{6} \\
+y &= 3
+\end{align*}
 $$
 
 
@@ -340,9 +369,13 @@ $$
 
 ---
 
+:::{.note title="When Nothing Cancels Out"}
+In the previous two examples, one of the variables canceled out when combining the two equations. Sometimes you will have to **multiply one or both equations** by something for this to work.
+:::
+
 **Example 9:**
 
-In the previous two examples, one of the variables canceled out when combining the two equations. Sometimes you will have to multiply one or both equations by something for this to work.
+Solve the system of equations by elimination.
 $$
 \begin{cases}
 3x + 2y = 16 \\
@@ -364,21 +397,26 @@ $$
 Now add the equations:
 
 $$
-(6x - 6x) + (4y - 9y) = 32 - 42 \\
--5y = -10 \Rightarrow y = 2
+\begin{align*}
+(6x - 6x) + (4y - 9y) &= 32 - 42 \stepnote{Combine Like Terms} \\
+-5y &= -10 \sndiv{-5} \\
+y &= 2
+\end{align*}
 $$
 
 Substitute $y = 2$ into one of the original equations:
 
 $$
-3x + 2(2) = 16 \\
-3x + 4 = 16 \\
-3x = 12 \Rightarrow x = 4
+\begin{align*}
+3x + 2(2) &= 16 \\
+3x + 4 &= 16 \snminus{4} \\
+3x &= 12 \sndiv{3} \\
+x&= 4
+\end{align*}
 $$
 
 **Solution:** $(4, 2)$
 
----
 
 {{< practice >}}
 
@@ -442,73 +480,80 @@ Graph each system and find the solution.
 **Word Problems**
 
 6. **Streaming Services**
+   
    One streaming service costs \$8 per month plus \$4 per movie.
    Another costs \$20 per month plus \$2 per movie.
    When will the two services cost the same?
 
 7. **Taxi vs. Ride-Share**
+   
    A taxi charges \$5 plus \$3 per mile.
    A ride-share app charges \$2 plus \$4 per mile.
    How far do you have to travel before the cost is the same?
 
 8. **Concert Tickets**
+   
    Company A sells tickets for \$30 each plus a \$10 service fee.
    Company B sells tickets for \$25 each plus a \$20 service fee.
    How many tickets make the cost equal?
 
-9. **Gym Memberships**
+9.  **Gym Memberships**
+    
    Plan A costs \$15 to join and \$20 per month.
    Plan B costs \$50 to join and \$15 per month.
    After how many months will both plans cost the same?
 
-10. **Movie Theater Snacks**
-    A popcorn-soda combo costs \$8.50 at Theater A and \$9.50 at Theater B,
-    but Theater B gives a \$1 discount for each friend after the first (so \$8.50 for 2, \$7.50 for 3, etc.).
-    For how many friends will the total cost be the same?
+10. **Movie Tickets**
+    
+    A group of friends is trying to decide which theater to go to.
+    * Theater A: Tickets cost \$12 each, plus a \$6 service fee.
+    * Theater B: Tickets cost \$10 each, plus a \$12 service fee.
+   
+    After how many tickets will the total cost be the same?
 
 ---
 
 **Solve by Substitution**
 
-11. 
-    $$
-    \begin{cases}
-    y = 2x + 3 \\
-    x + y = 9
-    \end{cases}
-    $$
+11.   
+   $$
+   \begin{cases}
+   y = 2x + 3 \\
+   x + y = 9
+   \end{cases}
+   $$
 
-12. 
-    $$
-    \begin{cases}
-    y = x - 4 \\
-    2x + y = 8
-    \end{cases}
-    $$
+12.   
+   $$
+   \begin{cases}
+   y = x - 4 \\
+   2x + y = 8
+   \end{cases}
+   $$
 
-13. 
-    $$
-    \begin{cases}
-    y = 5x \\
-    3x + y = 24
-    \end{cases}
-    $$
+3.   
+   $$
+   \begin{cases}
+   y = 5x \\
+   3x + y = 24
+   \end{cases}
+   $$
 
-14. 
-    $$
-    \begin{cases}
-    y = 4x + 1 \\
-    2x + y = 13
-    \end{cases}
-    $$
+4.   
+   $$
+   \begin{cases}
+   y = 4x + 1 \\
+   2x + y = 13
+   \end{cases}
+   $$
 
-15. 
-    $$
-    \begin{cases}
-    y = -x + 7 \\
-    3x + y = 15
-    \end{cases}
-    $$
+5.   
+   $$
+   \begin{cases}
+   y = -x + 7 \\
+   3x + y = 15
+   \end{cases}
+   $$
 
 ---
 
@@ -538,7 +583,7 @@ Graph each system and find the solution.
     \end{cases}
     $$
 
-20. 
+19. 
     $$
     \begin{cases}
     4x - y = 11 \\
@@ -546,7 +591,7 @@ Graph each system and find the solution.
     \end{cases}
     $$
 
-21. 
+20. 
     $$
     \begin{cases}
     3x + 2y = 12 \\
@@ -558,16 +603,7 @@ Graph each system and find the solution.
 
 **Challenge Problems**
 
-21. Solve by any method.
-    $$
-    \begin{cases}
-    2x + 3y = 18 \\
-    x - y = 2
-    \end{cases}
-    $$
-    
-
-22. The system
+21. The system
     $$
     \begin{cases}
     y = m x + 4 \\
@@ -576,6 +612,16 @@ Graph each system and find the solution.
     $$
     intersects at $(2, 0)$.
     Find the values of $m$ and $b$.
+
+22. Solve the system for $x$, $y$, and $z$. 
+
+    $$
+    \begin{cases}
+    x + y + z = 9 \\
+    2x - y + z = 7 \\
+    x + 2y - z = 8
+    \end{cases}
+    $$
 
 ---
 
@@ -586,11 +632,11 @@ Graph each system and find the solution.
 3. $(4, 3)$  
 4. $(3, 2)$  
 5. $(3, 5)$
-6. $(x, y) = (6, 32)$ → After 6 movies, both cost $32.
-7. $(x, y) = (3, 14)$ → After 3 miles, both cost $14.
-8. $(x, y) = (2, 70)$ → At 2 tickets, cost $70 each.
-9. $(x, y) = (7, 155)$ → After 7 months, both cost $155.
-10. $(x, y) = (3, 25.5)$ → About 3 friends, both totals $25.50.
+6. After 6 movies, both cost \$32.
+7. After 3 miles, both cost \$14.
+8. At 2 tickets, cost \$70 each.
+9. After 7 months, both cost \$155.
+10. After 3 tickets, total cost \$42.
 11. $(3, 9)$   
 12. $(4, 0)$   
 13. $(4, 20)$  

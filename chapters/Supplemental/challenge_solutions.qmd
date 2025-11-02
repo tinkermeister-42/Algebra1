@@ -362,6 +362,10 @@ No Challenge Questions
 
 :::{.answers}
 
+21. $m=-2$ and $b=4$
+
+22. $(4, 3, 2)$
+    
 :::
 
 
