@@ -1,0 +1,2 @@
+* text=auto eol=lf
+site_libs/** -text
