@@ -1,31 +1,517 @@
-# 5.1 - Exponent Rules {.unnumbered}
 
-Coming Soon
+# 5.1 – Exponent Rules {.unnumbered}
+
+When we start working with algebraic expressions, we quickly see powers like $x^2$, $x^3$, or $x^4$. These expressions use **exponents** to show repeated multiplication.
+
+Instead of writing $x \cdot x \cdot x \cdot x$, we can write $x^4$.
+This shorthand makes it much easier to work with larger problems, but it also means we need to know how powers behave when we multiply, divide, or raise them to other powers.
+
+In this lesson, we’ll learn the rules, unpack *why* they work and, learn how to use them to simplify expressions.
+
 
 :::{.objectives}
 
-- [ ] I can do things
+* [ ] I can describe what a **base** and an **exponent** are and what they mean.
+* [ ] I can apply the **rules of exponents** to simplify expressions with like bases.
+* [ ] I can simplify expressions that include **zero or negative exponents**.
+* [ ] I can rewrite expressions so that all exponents are **positive**.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink base >}}, {{< glink exponent >}}, {{< glink power >}}, {{< glink product rule >}}, {{< glink quotient rule >}}, {{< glink power of a power >}}, {{< glink zero exponent >}}, {{< glink negative exponent >}}, {{< glink fractional exponent >}}
 
 :::
 
 {{< warmup >}}
 
+Simplify each expression.
+
+1. $2^3 =$
+
+2. $2^3 \cdot 2^2 =$
+
+3. $(2^3)^2 =$
+
+4. $\dfrac{2^5}{2^2} =$
+
+
 {{< learn >}}
 
-{{< practice >}}
+### 5.1.1 - Understanding Powers
 
-:::{.answers}
+A **power** has two parts, a {{< glink base >}} and an {{< glink exponent >}}:
+
+* The **base** tells what number or variable is being multiplied.
+* The **exponent** tells how many times to multiply that base by itself.
+
+For example, $5^3 = 5 \cdot 5 \cdot 5 = 125$.
+The base is 5. The exponent is 3.
+When two powers share the same base — like $x^2$ and $x^5$ — we call them **like bases**.
+That’s when these exponent rules apply.
+
+---
+
+#### Rule 1 – Product Rule
+
+If we multiply $x^3$ by $x^5$, here’s what’s happening:
+
+$$
+x^3 \cdot x^5 = (x \cdot x \cdot x) \cdot (x \cdot x \cdot x \cdot x \cdot x)
+$$
+
+If we write that as one long product, we have eight $x$’s multiplied together and so:
+
+$$
+x^3 \cdot x^5 = x^{3+5}
+$$
+
+In general, if you **multiply powers** with like bases, you **add the exponents**. This is called the {{< glink "product rule" >}} of exponents.
+
+$$
+a^m \cdot a^n = a^{m+n}
+$$
+
+
+---
+
+**Example 1:**
+
+Simplify $r^4 \cdot r^3$
+
+$$
+r^4 \cdot r^3 = r^{4+3} = r^7
+$$
+
+:::{.you-try title="Simplify $x^9 \cdot x^3$"}
+
+$$
+x^{9+3} = x^{12}
+$$
 
 :::
 
+---
+
+#### Rule 2 – Quotient Rule
+
+When dividing powers with the same base, we’re really canceling out factors.
+
+$$
+\dfrac{x^7}{x^3} = \dfrac{x \cdot x \cdot x \cdot x \cdot x \cdot x \cdot x}{x \cdot x \cdot x}
+$$
+
+Each $x$ in the denominator cancels one $x$ in the numerator.
+After canceling three, four remain:
+
+$$
+\dfrac{x \cdot x \cdot x \cdot x \cdot \cancel{x} \cdot \cancel{x} \cdot \cancel{x}}{\cancel{x} \cdot \cancel{x} \cdot \cancel{x}} = x^4
+$$
+
+In general, when you **divide powers** with like bases, you **subtract the exponents**. This is called the {{< glink "quotient rule" >}} of exponents.
+
+$$
+\dfrac{a^m}{a^n} = a^{m-n}
+$$
+
+---
+
+**Example 2:**
+
+Simplify $\dfrac{y^8}{y^5}$
+
+$$
+\dfrac{y^8}{y^5} = y^{8-5} = y^3
+$$
+
+:::{.you-try title="Simplify $\dfrac{p^9}{p^4}$"}
+$p^{9-4} = p^5$
+:::
+
+---
+
+#### Rule 3 – Power of a Power
+
+What if we raise a power to another power?
+
+$$
+(x^3)^2
+$$
+
+Let's expand it out. Raising anything to the 2<sup>nd</sup> power means to multiply it by itself 2 times.
+
+$$
+\begin{align*}
+(x^3)^2 &= (x^3) \cdot (x^3)  \\
+&= (x \cdot x \cdot x) \cdot (x \cdot x \cdot x) \\
+& = x^{6}
+\end{align*}
+$$
+
+In general, when you **raise a power to a power** you **multiply the exponents**.
+
+$$
+(a^m)^n = a^{m \cdot n}
+$$
+
+**Example 3:**
+
+Simplify $(m^2)^5$
+
+$$
+(m^2)^5 = m^{2 \times 5} = m^{10}
+$$
+
+:::{.you-try title="Simplify $(x^3)^2$"}
+
+$x^{3 \times 2} = x^6$
+
+:::
+
+---
+
+#### Rule 4 – Power of a Product
+
+When an exponent applies to a product, it applies to **each factor**.
+
+$$
+\begin{align*}
+(ab)^3 &= (ab)\cdot (ab) \cdot (ab) \\
+&= (a \cdot a \cdot a) \cdot (b \cdot b \cdot b) \stepnote{rearrange} \\
+&= a^3b^3
+\end{align*}
+$$
+
+We can **generalize** this pattern as:
+
+$$
+(ab)^n = a^n b^n
+$$
+
+Notice that this is really just an extension of the power of a power rule.
+
+---
+
+**Example 4:**
+
+Simplify $(2x)^4$
+
+$$
+(2x)^4 = 2^4 x^4 = 16x^4
+$$
 
 
+:::{.you-try title="Simplify $(3y)^3$"}
+
+$$
+(3y)^3) = 27y^6
+$$
+
+:::
+
+---
+
+#### Rule 5 – Power of a Quotient
+
+The same idea works for fractions — both numerator and denominator get the exponent.
+
+$$
+\begin{align*}
+\left(\dfrac{x}{y}\right)^3 &= \left(\dfrac{x}{y}\right) \cdot \left(\dfrac{x}{y}\right) \cdot \left(\dfrac{x}{y}\right) \\
+&= \dfrac{x \cdot x \cdot x}{y \cdot y \cdot y} \\
+&= \dfrac{x^3}{y^3}
+\end{align*}
+$$
+
+In general, when you raise a fraction to a power, the rule is:
+
+$$
+\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}
+$$
+
+---
+
+**Example 5:**
+
+Simplify $\left(\dfrac{x}{3}\right)^2$
+
+$$
+\left(\dfrac{x}{3}\right)^2 = \dfrac{x^2}{9}
+$$
 
 
+:::{.you-try title="Simplify $\left(\dfrac{2m}{5}\right)^3$"}
 
+$\dfrac{8m^3}{125}$
+
+:::
+
+---
+
+#### Rule 6 – Zero Exponent
+
+A zero exponent has a special property, anything raised to the zero power is $1$.
+
+$$
+a^0 = 1 \quad (a \ne 0)
+$$
+
+**Example 6:**
+
+Simplify $(5y)^0$
+
+$$
+(5y)^0 = 1
+$$
+
+:::{.you-try title="Simplify $(3a^4)^0$"}
+
+$$
+1
+$$
+
+:::
+
+:::{.note title="What is 0^0?"}
+
+Mathematicians disagree on the value of $0^0$. Some say it is $1$ and others say it is **undefined**. 
+
+For consistency, we will say $0^0 = 1$.
+
+:::
+
+---
+
+#### Rule 7 – Negative Exponent
+
+A negative exponent means to move the base to the denominator.
+
+$$
+a^{-n} = \dfrac{1}{a^n}
+$$
+
+**Example 7:**
+
+Simplify $x^{-4}$
+
+$$
+x^{-4} = \dfrac{1}{x^4}
+$$
+
+:::{.you-try title="Simplify $k^{-3}$"}
+
+$$
+\dfrac{1}{k^3}
+$$
+
+:::
+
+---
+
+#### Fractional Exponents (optional)
+
+Fractional exponents connect to roots:
+
+$$
+a^{\tfrac{m}{n}} = \sqrt[n]{a^m}
+$$
+
+**Example 8:**
+
+Simplify $8^{\tfrac{2}{3}}$
+
+$$
+\sqrt[3]{8^2} = \sqrt[3]{64} = 4
+$$
+
+:::{.you-try title="Simplify $16^{\tfrac{3}{4}}$"}
+
+$$
+\sqrt[4]{16^3} = \sqrt[4]{4096} = 8
+$$
+
+:::
+
+---
+
+:::{.remember title="Summary of Exponent Rules"}
+
+
+| Rule                    |                   Algebraic Rule                  | Example                                        |
+| :-----------------------: | :----------------------------------------------: | :----------------------------------------------: |
+| **Product Rule**        | $a^m \cdot a^n = a^{m + n}$           | $x^4 \cdot x^3 = x^7$                          |
+| **Quotient Rule**       |  $\dfrac{a^m}{a^n} = a^{m - n}$          | $\dfrac{y^8}{y^2} = y^6$                       |
+| **Power of a Power**    |     $(a^m)^n = a^{m \cdot n}$            | $(x^3)^2 = x^6$                                |
+| **Power of a Product**  |      $(a \cdot b)^n = a^n \cdot b^n$         | $(3b)^2 = 9b^2$                                |
+| **Power of a Quotient** |  $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$ | $\left(\dfrac{x}{2}\right)^3 = \dfrac{x^3}{8}$ |
+| **Zero Exponent**       |      $a^0 = 1$                    | $m^0 = 1$                                      |
+| **Negative Exponent**   |     $a^{-n} = \dfrac{1}{a^n}$            | $k^{-2} = \dfrac{1}{k^2}$                      |
+| **Fractional Exponent** |    $a^{\tfrac{m}{n}} = \sqrt[n]{a^m}$        | $x^{\tfrac{2}{3}} = \sqrt[3]{x^2}$             |
+
+:::
+
+:::{.gotcha}
+
+**Common Mistakes to Avoid**
+
+* $(-3)^2=9$, but $-3^2=-9$. The negative must be inside parentheses to be part of the base.
+* Exponents only distribute over multiplication, not addition: $(x+y)^2\ne x^2+y^2$.
+* A negative exponent doesn’t make the number negative — it moves the base to the denominator.
+* $x^0$ is always $1$ (as long as $x\ne0$), not $0$.
+
+:::
+
+---
+
+### 5.1.2 – Combining Rules
+
+Now that you know all the rules, it’s time to put them to use to simplify more complex expressions. The trick is to follow the order of operations and use the rules strategically.
+
+---
+
+**Example 9:**
+
+Simplify $\dfrac{(2x^3)^2}{x^5}$
+
+$$
+(2x^3)^2 = 4x^6
+$$
+
+$$
+\dfrac{4x^6}{x^5} = 4x^{6-5} = 4x
+$$
+
+---
+
+**Example 10:**
+
+Simplify $(3a^2b^{-3})^{-2}$
+
+Apply the exponent to each factor: $3^{-2}a^{-4}b^6$
+Rewrite with positive exponents: $\dfrac{b^6}{9a^4}$
+
+---
+
+**Example 11:**
+
+Simplify $\dfrac{(x^{-2}y^4)^3}{x^3y^{-2}}$
+
+$$(x^{-2}y^4)^3 = x^{-6}y^{12}$$
+
+Divide: $x^{-6-3}y^{12-(-2)} = x^{-9}y^{14}$
+
+Rewrite: $\dfrac{y^{14}}{x^9}$
+
+---
+
+{{< practice >}}
+
+### Review the Basics
+
+1. $x^2 \cdot x^5$
+
+2. $\dfrac{p^7}{p^2}$
+
+3. $(r^3)^4$
+
+4. $(5m)^2$
+
+5. $\left(\dfrac{n}{3}\right)^3$
+
+---
+
+### Simplify Multi-Step Expressions
+
+6. $a^4b^2 \cdot a^3b^5$
+
+7. $\dfrac{(2t^2)^3}{t^4}$
+
+8. $(3c^2d)^2$
+
+9. $\dfrac{(4x^3y^2)^2}{8x^4}$
+
+10. $(k^{-2}m^3)^2$
+
+---
+
+### Mixed Practice
+
+11. $\dfrac{(2x^{-3}y^4)^2}{(x^2y^{-1})^3}$
+
+12. $(3a^{-2}b^4)^{-3}$
+
+13. $\dfrac{(6p^2q^{-1})^3}{(2p^{-3}q^4)^2}$
+
+14. $\dfrac{(x^2y^3)^{-2}}{(x^{-4}y)^3}$
+
+15. $\dfrac{(4m^{-1}n^2)^0}{(m^3n^{-2})^{-1}}$
+
+16. $\dfrac{12r^{-2}s^3}{4r^5s^{-4}}$
+
+17. $\dfrac{(10x^{-2}y)^2}{(2x^3y^{-3})^3}$
+
+18. $(2a^{-3}b^2c^{-1})^{-2}$
+
+19. $\dfrac{(x^{-2}y^5)^2}{(x^3y^{-4})^{-1}}$
+
+20. $(5t^0u^{-3})^3$
+
+---
+
+### Challenge Problems
+
+21. $\dfrac{(9a^{\tfrac{1}{2}}b^{-\tfrac{2}{3}})^3}{(3a^{-2}b^{\tfrac{1}{3}})^2}$
+
+22. $\dfrac{(4x^{\tfrac{2}{5}}y^{-1})^{-2}}{(2x^{-3}y^{\tfrac{3}{5}})^3}$
+
+23. Simplify and rewrite using only positive exponents:
+    $\dfrac{(3p^{-\tfrac{1}{2}}q^{\tfrac{3}{4}})^2}{(9p^{\tfrac{2}{3}}q^{-\tfrac{1}{4}})^3}$
+
+---
+
+:::{.answers}
+
+**Review the Basics**
+
+1. $x^7$
+2. $p^5$
+3. $r^{12}$
+4. $25m^2$
+5. $\tfrac{n^3}{27}$
+
+**Simplify Multi-Step Expressions**
+
+6. $a^7b^7$
+7. $8t^2$
+8. $9c^4d^2$
+9. $2x^2y^4$
+10. $\tfrac{m^6}{k^4}$
+
+**Mixed Practice**
+
+11. $\tfrac{4y^{11}}{x^{12}}$
+12. $\tfrac{a^6}{27b^{12}}$
+13. $\tfrac{27p^{18}}{4q^{11}}$
+14. $\tfrac{x^8}{y^9}$
+15. $\tfrac{m^3}{n^2}$
+16. $\tfrac{3s^7}{r^7}$
+17. $\tfrac{25y^{11}}{4x^{13}}$
+18. $\tfrac{a^6c^2}{4b^4}$
+19. $\tfrac{y^{14}}{x^7}$
+20. $\tfrac{1}{u^9}$
+
+**Combining Rules Strategically**
+
+9. $4x$
+10. $\dfrac{b^6}{9a^4}$
+11. $\dfrac{y^{14}}{x^9}$
+12. $81a^{\tfrac{7}{2}}b^{\tfrac{4}{3}}$
+
+**Challenge Problems**
+
+21. $9a^{\tfrac{7}{2}}b^{-\tfrac{8}{3}}$
+22. $\tfrac{x^{7}y^{-7}}{64}$
+23. $\tfrac{p^{-\tfrac{13}{2}}q^{\tfrac{7}{2}}}{729}$
+
+:::
