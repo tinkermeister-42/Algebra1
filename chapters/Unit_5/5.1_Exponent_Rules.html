@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,20 +30,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" rel="next">
+<link href="../../chapters/Unit_5/5.2_Introduction_to_Polynomials.html" rel="next">
 <link href="../../chapters/Unit_5/index.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,36 +71,50 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -114,8 +127,6 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -145,8 +156,7 @@ window.MathJax = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -445,32 +455,20 @@ window.MathJax = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 - Simplifying Expressions with Exponents</span></a>
+  <a href="../../chapters/Unit_5/5.2_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Introduction to Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.3_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.3 - Introduction to Polynomials</span></a>
+  <a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 - Multiplying Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.4_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 - Multiplying Polynomials</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.5_Special_Products.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.5 - Special Products</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.6_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.6 - Factoring_Polynomials</span></a>
+  <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 - Factoring_Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -633,8 +631,15 @@ window.MathJax = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#understanding-powers" id="toc-understanding-powers" class="nav-link active" data-scroll-target="#understanding-powers">5.1.1 - Understanding Powers</a></li>
+  <li><a href="#combining-rules" id="toc-combining-rules" class="nav-link" data-scroll-target="#combining-rules">5.1.2 - Combining Rules</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -658,33 +663,482 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>When we start working with algebraic expressions, we quickly see powers like <span class="math inline">\(x^2\)</span>, <span class="math inline">\(x^3\)</span>, or <span class="math inline">\(x^4\)</span>. These expressions use <strong>exponents</strong> to show repeated multiplication.</p>
+<p>Instead of writing <span class="math inline">\(x \cdot x \cdot x \cdot x\)</span>, we can write <span class="math inline">\(x^4\)</span>. This shorthand makes it much easier to work with larger problems, but it also means we need to know how powers behave when we multiply, divide, or raise them to other powers.</p>
+<p>In this lesson, we’ll learn the rules, unpack <em>why</em> they work, and learn how to use them to simplify expressions.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can do things</label></li>
+<li><label><input type="checkbox">I can describe what a <strong>base</strong> and an <strong>exponent</strong> are and what they mean.</label></li>
+<li><label><input type="checkbox">I can apply the <strong>rules of exponents</strong> to simplify expressions with like bases.</label></li>
+<li><label><input type="checkbox">I can simplify expressions that include <strong>zero or negative exponents</strong>.</label></li>
+<li><label><input type="checkbox">I can rewrite expressions so that all exponents are <strong>positive</strong>.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-original-href="#glossary-term" data-term="term">term</a>, …</p>
+<p><a href="../../glossary.html#glossary-base" class="glossary-link" data-term="base" data-original-href="#glossary-base" data-slug="base">base</a>, <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-term="exponent" data-original-href="#glossary-exponent" data-slug="exponent">exponent</a>, <a href="../../glossary.html#glossary-fractional-exponent" class="glossary-link" data-term="fractional exponent" data-original-href="#glossary-fractional-exponent" data-slug="fractional-exponent">fractional exponent</a>, <a href="../../glossary.html#glossary-negative-exponent" class="glossary-link" data-term="negative exponent" data-original-href="#glossary-negative-exponent" data-slug="negative-exponent">negative exponent</a>, <a href="../../glossary.html#glossary-power" class="glossary-link" data-term="power" data-original-href="#glossary-power" data-slug="power">power</a>, <a href="../../glossary.html#glossary-power-of-a-power" class="glossary-link" data-term="power of a power" data-original-href="#glossary-power-of-a-power" data-slug="power-of-a-power">power of a power</a>, <a href="../../glossary.html#glossary-product-rule" class="glossary-link" data-term="product rule" data-original-href="#glossary-product-rule" data-slug="product-rule">product rule</a>, <a href="../../glossary.html#glossary-quotient-rule" class="glossary-link" data-term="quotient rule" data-original-href="#glossary-quotient-rule" data-slug="quotient-rule">quotient rule</a>, <a href="../../glossary.html#glossary-zero-exponent" class="glossary-link" data-term="zero exponent" data-original-href="#glossary-zero-exponent" data-slug="zero-exponent">zero exponent</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>Simplify each expression.</p>
+<ol type="1">
+<li><p><span class="math inline">\(2^3 =\)</span></p></li>
+<li><p><span class="math inline">\(2^3 \cdot 2^2 =\)</span></p></li>
+<li><p><span class="math inline">\((2^3)^2 =\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{2^5}{2^2} =\)</span></p></li>
+</ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
+<section id="understanding-powers" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-powers">5.1.1 - Understanding Powers</h3>
+<p>A <strong>power</strong> has two parts, a <a href="../../glossary.html#glossary-base" class="glossary-link" data-term="base" data-original-href="#glossary-base" data-slug="base">base</a> and an <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-term="exponent" data-original-href="#glossary-exponent" data-slug="exponent">exponent</a>:</p>
+<ul>
+<li>The <strong>base</strong> tells what number or variable is being multiplied.</li>
+<li>The <strong>exponent</strong> tells how many times to multiply that base by itself.</li>
+</ul>
+<p>For example, <span class="math inline">\(5^3 = 5 \cdot 5 \cdot 5 = 125\)</span>. The base is 5. The exponent is 3. When two powers share the same base — like <span class="math inline">\(x^2\)</span> and <span class="math inline">\(x^5\)</span> — we call them <strong>like bases</strong>. That’s when these exponent rules apply.</p>
+<hr>
+<section id="rule-1---product-rule" class="level4">
+<h4 class="anchored" data-anchor-id="rule-1---product-rule">Rule 1 - Product Rule</h4>
+<p>To understand how to multiplying powers with like bases works, let’s take an example and expand it out.</p>
+<p>If we multiply <span class="math inline">\(x^3\)</span> by <span class="math inline">\(x^5\)</span>, here’s what’s really happening:</p>
+<p><span class="math display">\[
+x^3 \cdot x^5 = (x \cdot x \cdot x) \cdot (x \cdot x \cdot x \cdot x \cdot x)
+\]</span></p>
+<p>As you can see, we are really multiplying <span class="math inline">\(x\)</span> times itself 8 times! That means we can simplify the process of multiplying by adding the exponents.</p>
+<p><span class="math display">\[
+x^3 \cdot x^5 = x^{3+5} = x^8
+\]</span></p>
+<p>In general, if you <strong>multiply powers</strong> with like bases, you <strong>add the exponents</strong>. This is called the <a href="../../glossary.html#glossary-product-rule" class="glossary-link" data-term="product rule" data-original-href="#glossary-product-rule" data-slug="product-rule">product rule</a> of exponents.</p>
+<p><span class="math display">\[
+a^m \cdot a^n = a^{m+n}
+\]</span></p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Simplify <span class="math inline">\(r^4 \cdot r^3\)</span></p>
+<p>Using the product rule we get: <span class="math display">\[
+r^4 \cdot r^3 = r^{4+3} = r^7
+\]</span></p>
+<div class="you-try" title="Simplify $x^9 \cdot x^3$">
+<p><span class="math inline">\(x^{9+3} = x^{12}\)</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-2---quotient-rule" class="level4">
+<h4 class="anchored" data-anchor-id="rule-2---quotient-rule">Rule 2 - Quotient Rule</h4>
+<p>When dividing powers with the same base, we’re really canceling out factors.</p>
+<p><span class="math display">\[
+\dfrac{x^7}{x^3} = \dfrac{x \cdot x \cdot x \cdot x \cdot x \cdot x \cdot x}{x \cdot x \cdot x}
+\]</span></p>
+<p>Each <span class="math inline">\(x\)</span> in the denominator cancels one <span class="math inline">\(x\)</span> in the numerator. After canceling three, four remain:</p>
+<p><span class="math display">\[
+\dfrac{x \cdot x \cdot x \cdot x \cdot \cancel{x} \cdot \cancel{x} \cdot \cancel{x}}{\cancel{x} \cdot \cancel{x} \cdot \cancel{x}} = x^4
+\]</span></p>
+<p>This is the same as subtracting the exponents.</p>
+<p><span class="math display">\[
+\dfrac{x^7}{x^3} = x^{7 - 3} = x^4
+\]</span></p>
+<p>In general, when you <strong>divide powers</strong> with like bases, you <strong>subtract the exponents</strong>. This is called the <a href="../../glossary.html#glossary-quotient-rule" class="glossary-link" data-term="quotient rule" data-original-href="#glossary-quotient-rule" data-slug="quotient-rule">quotient rule</a> of exponents.</p>
+<p><span class="math display">\[
+\dfrac{a^m}{a^n} = a^{m-n}
+\]</span></p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Simplify <span class="math inline">\(\dfrac{y^8}{y^5}\)</span></p>
+<p>All we have to do is apply the quotient rule: <span class="math display">\[
+\dfrac{y^8}{y^5} = y^{8-5} = y^3
+\]</span></p>
+<div class="you-try" title="Simplify $\dfrac{p^9}{p^4}$">
+<p><span class="math display">\[
+p^{9-4} = p^5
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-3---power-of-a-power" class="level4">
+<h4 class="anchored" data-anchor-id="rule-3---power-of-a-power">Rule 3 - Power of a Power</h4>
+<p>What if we raise a power to another power?</p>
+<p><span class="math display">\[
+(x^3)^2
+\]</span></p>
+<p>Raising to the <span class="math inline">\(2^{\text{nd}}\)</span> power means multiply by itself two times:</p>
+<p><span class="math display">\[
+\begin{align*}
+(x^3)^2 &amp;= (x^3) \cdot (x^3)  \\
+&amp;= (x \cdot x \cdot x) \cdot (x \cdot x \cdot x) \\
+&amp;= x^{6}
+\end{align*}
+\]</span></p>
+<p>A simpler way to do this is to multiply the exponents.</p>
+<p><span class="math display">\[
+(x^3)^2 = x^(3 \times 2) = x^6
+\]</span></p>
+<p>In general, when you <strong>raise a power to a power</strong> you <strong>multiply the exponents</strong>.</p>
+<p><span class="math display">\[
+(a^m)^n = a^{m \cdot n}
+\]</span></p>
+<hr>
+<p><strong>Example 3:</strong></p>
+<p>Simplify <span class="math inline">\((m^2)^5\)</span></p>
+<p>We just apply the rule <span class="math inline">\((x^a)^b = x^{a \cdot b}\)</span>.</p>
+<p><span class="math display">\[
+(m^2)^5 = m^{2 \times 5} = m^{10}
+\]</span></p>
+<div class="you-try" title="Simplify $(x^3)^2$">
+<p><span class="math display">\[
+x^{3 \times 2} = x^6
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-4---power-of-a-product" class="level4">
+<h4 class="anchored" data-anchor-id="rule-4---power-of-a-product">Rule 4 - Power of a Product</h4>
+<p>When an exponent applies to a product, it applies to <strong>each factor</strong>.</p>
+<p><span class="math display">\[
+\begin{align*}
+(ab)^3 &amp;= (ab)\cdot (ab) \cdot (ab) \\
+&amp;= (a \cdot a \cdot a) \cdot (b \cdot b \cdot b) \\
+&amp;= a^3 b^3
+\end{align*}
+\]</span></p>
+<p>This is an extension of the “power of a power” idea to two factors.</p>
+<p><span class="math display">\[
+(ab)^n = a^n b^n
+\]</span></p>
+<hr>
+<p><strong>Example 4:</strong></p>
+<p>Simplify <span class="math inline">\((2x)^4\)</span></p>
+<p>All we have to do is apply the rule <span class="math inline">\((ab)^n = a^n b^n\)</span>. <span class="math display">\[
+(2x)^4 = 2^4 x^4 = 16x^4
+\]</span></p>
+<div class="you-try" title="Simplify $(3y)^3$">
+<p><span class="math display">\[
+(3y)^3 = 3^3 y^3 = 27y^3
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-5---power-of-a-quotient" class="level4">
+<h4 class="anchored" data-anchor-id="rule-5---power-of-a-quotient">Rule 5 - Power of a Quotient</h4>
+<p>The same idea works for fractions — both numerator and denominator get the exponent.</p>
+<p><span class="math display">\[
+\begin{align*}
+\left(\dfrac{x}{y}\right)^3 &amp;= \left(\dfrac{x}{y}\right) \cdot \left(\dfrac{x}{y}\right)\cdot \left(\dfrac{x}{y}\right) \\
+&amp;= \dfrac{x \cdot x \cdot x}{y \cdot y \cdot y} \\
+&amp;= \dfrac{x^3}{y^3}
+\end{align*}
+\]</span></p>
+<p>In general:</p>
+<p><span class="math display">\[
+\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}
+\]</span></p>
+<hr>
+<p><strong>Example 5:</strong></p>
+<p>Simplify <span class="math inline">\(\left(\dfrac{x}{3}\right)^2\)</span></p>
+<p><span class="math display">\[
+\left(\dfrac{x}{3}\right)^2 = \dfrac{x^2}{9}
+\]</span></p>
+<div class="you-try" title="Simplify $\left(\dfrac{2m}{5}\right)^3$">
+<p><span class="math display">\[
+\dfrac{8m^3}{125}
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-6---zero-exponent" class="level4">
+<h4 class="anchored" data-anchor-id="rule-6---zero-exponent">Rule 6 - Zero Exponent</h4>
+<p>A zero exponent has a special property: anything raised to the zero power is <span class="math inline">\(1\)</span> (as long as the base is not <span class="math inline">\(0\)</span>).</p>
+<p><span class="math display">\[
+a^0 = 1 \quad (a \ne 0)
+\]</span></p>
+<hr>
+<p><strong>Example 6:</strong></p>
+<p>Simplify <span class="math inline">\((5y)^0\)</span></p>
+<p><span class="math display">\[
+(5y)^0 = 1
+\]</span></p>
+<div class="you-try" title="Simplify $(3a^4)^0$">
+<p><span class="math display">\[
+1
+\]</span></p>
+</div>
+<div class="note" title="What about $0^0$?">
+<p>You may see <span class="math inline">\(0^0\)</span> treated differently in different contexts. Some mathematicians prefer to think of <span class="math inline">\(0^0\)</span> as undefined or indeterminate. This is common in courses such as <a href="../../glossary.html#glossary-calculus" class="glossary-link" data-term="Calculus" data-original-href="#glossary-calculus" data-slug="calculus">Calculus</a>.</p>
+<p>For consistency, in Algebra, we will use the definition:</p>
+<p><span class="math display">\[
+0^0 = 1
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-7---negative-exponent" class="level4">
+<h4 class="anchored" data-anchor-id="rule-7---negative-exponent">Rule 7 - Negative Exponent</h4>
+<p><strong>Idea:</strong> A negative exponent counts how many factors you still need <strong>in the denominator</strong>. Start from the quotient rule:</p>
+<p><span class="math display">\[
+\dfrac{a^m}{a^n} = a^{m-n}
+\]</span></p>
+<p>If <span class="math inline">\(m&lt;n\)</span>, then <span class="math inline">\(m-n\)</span> is negative. But canceling shows what it means:</p>
+<p><span class="math display">\[
+\dfrac{a^3}{a^5}
+= \dfrac{1}{a^2}
+= a^{-2}
+\]</span></p>
+<p>So a negative exponent just moves the factor to the denominator (or to the numerator if it’s already in the denominator):</p>
+<p><span class="math display">\[
+a^{-n} = \dfrac{1}{a^n}, \qquad \dfrac{1}{a^{-n}} = a^n \qquad (a\neq 0)
+\]</span></p>
+<div class="note" title="A tip for working with negative exponents">
+<p>First move factors with negative exponents to the other side of the fraction bar, then apply other rules.</p>
+<p>For example:</p>
+<p><span class="math display">\[
+\begin{align*}
+\dfrac{x^{-2} \cdot y^3}{x^{-3} \cdot y^{-2}} &amp;= \dfrac{x^3 \cdot y^3 \cdot y^2}{x^2} \\
+&amp;= \dfrac{x^3 y^5}{x^2} \\
+&amp;= x^{3-2} y^5 \\
+&amp;= xy^5
+\end{align*}
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 7:</strong></p>
+<p>Simplify <span class="math inline">\(\dfrac{x^{-4}y}{x^2y^{-2}}\)</span></p>
+<p><span class="math display">\[
+\begin{align*}
+\dfrac{x^{-4}y}{x^2y^{-2}} &amp;= \dfrac{y \cdot y^2}{x^4 \cdot x^2} \\
+&amp;= \dfrac{y^{1 + 2}}{x^{4 + 2}} \\
+&amp;= \dfrac{y^3}{x^6}
+\end{align*}
+\]</span></p>
+<div class="you-try" title="Rewrite with positive exponents: $\dfrac{3x^{-2}y^3}{6x^5y^{-1}}$">
+<p><span class="math display">\[
+\dfrac{3}{6},x^{-7},y^4=\dfrac{1}{2}\cdot\dfrac{y^4}{x^7}=\dfrac{y^4}{2x^7}
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="rule-8---fractional-exponents-optional" class="level4">
+<h4 class="anchored" data-anchor-id="rule-8---fractional-exponents-optional">Rule 8 - Fractional Exponents (optional)</h4>
+<p><strong>Idea:</strong> Fractional exponents connect powers and roots. The denominator of the fraction is the <strong>root</strong>, and the numerator is the <strong>power</strong>.</p>
+<p>Start with the unit fraction: <span class="math display">\[
+a^{\tfrac{1}{n}}=\sqrt[n]{a}\quad (a\ge 0 \text{ for real roots})
+\]</span></p>
+<p>Then combine with a power:</p>
+<p><span class="math display">\[
+a^{\tfrac{m}{n}} = \big(a^{\tfrac{1}{n}}\big)^m = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}
+\]</span></p>
+<hr>
+<p><strong>Example 8:</strong></p>
+<p>Simplify <span class="math inline">\(8^{\tfrac{2}{3}}\)</span></p>
+<p><span class="math display">\[
+\sqrt[3]{8^2} = \sqrt[3]{64} = 4
+\]</span></p>
+<div class="you-try" title="Simplify $16^{\tfrac{3}{4}}$">
+<p><span class="math display">\[
+\left(\sqrt[4]{16}\right)^3 = 2^3 = 8
+\]</span></p>
+</div>
+<div class="you-try" title="Rewrite with positive rational exponents: $\sqrt[5]{x^2}$ and $\dfrac{1}{\sqrt[3]{y^4}}$">
+<p><span class="math display">\[
+\sqrt[5]{x^2}=x^{\tfrac{2}{5}} \quad\text{and}\quad \dfrac{1}{\sqrt[3]{y^4}}=y^{-\tfrac{4}{3}}
+\]</span></p>
+</div>
+<hr>
+<div class="gotcha">
+<p><strong>Common Mistakes to Avoid</strong></p>
+<ul>
+<li><span class="math inline">\((-3)^2=9\)</span>, but <span class="math inline">\(-3^2=-9\)</span>. The negative must be inside parentheses to be part of the base.</li>
+<li>Exponents distribute over multiplication/division, <strong>not</strong> over addition/subtraction: <span class="math inline">\((x+y)^2\ne x^2+y^2\)</span>.</li>
+<li>A negative exponent doesn’t make the number negative — it moves the base to the other side of the fraction bar.</li>
+<li><span class="math inline">\(a^0=1\)</span> <strong>not</strong> 0.</li>
+</ul>
+</div>
+<hr>
+</section>
+</section>
+<section id="combining-rules" class="level3">
+<h3 class="anchored">5.1.2 - Combining Rules</h3>
+<p>Now that you know all the rules, it’s time to put them to use on more complex expressions. A helpful routine:</p>
+<ol type="1">
+<li><strong>Inside first:</strong> simplify inside parentheses.</li>
+<li><strong>Exponents next:</strong> handle powers like <span class="math inline">\((\cdot)^n\)</span>.</li>
+<li><strong>Then multiply/divide:</strong> combine like bases with product/quotient rules.</li>
+<li><strong>Finish clean:</strong> write with <strong>positive</strong> exponents.</li>
+</ol>
+<hr>
+<p><strong>Example 9:</strong></p>
+<p>Simplify <span class="math inline">\(\dfrac{(2x^3)^2}{x^5}\)</span></p>
+<p>First simplify the numerator. <span class="math display">\[
+(2x^3)^2=4x^6
+\]</span></p>
+<p>Now apply the quotient rule:</p>
+<p><span class="math display">\[
+\dfrac{4x^6}{x^5}=4x^{6-5}=4x
+\]</span></p>
+<hr>
+<p><strong>Example 10:</strong></p>
+<p>Simplify <span class="math inline">\((3a^2b^{-3})^{-2}\)</span></p>
+<p>First, apply the outer exponent using the rule <span class="math inline">\((x^a)^b = x^{a \cdot b}\)</span></p>
+<p><span class="math display">\[
+(3a^2b^{-3})^{-2} = 3^{-2}a^{-4}b^6
+\]</span></p>
+<p>Finally, rewrite it so that all of the exponents are positive:</p>
+<p><span class="math display">\[
+3^{-2}a^{-4}b^6 = \dfrac{b^6}{9a^4}
+\]</span></p>
+<hr>
+<p><strong>Example 11:</strong></p>
+<p>Simplify <span class="math inline">\(\dfrac{(x^{-2}y^4)^3}{x^3y^{-2}}\)</span></p>
+<p>First, apply the outer exponent using the power of a power rule:</p>
+<p><span class="math display">\[
+\dfrac{(x^{-2}y^4)^3}{x^3y^{-2}} = \dfrac{x^{-6}y^{12}}{x^3y^{-2}}
+\]</span></p>
+<p>Now apply the quotient rule:</p>
+<p><span class="math display">\[
+\dfrac{x^{-6}y^{12}}{x^3y^{-2}} = x^{-6 - 3}y^{12 - (-2)} = x^{-9}y^{14}
+\]</span></p>
+<p>Finally, rewrite it so that the exponents are all positive:</p>
+<p><span class="math display">\[
+x^{-9}y^{14} = \dfrac{y^{14}}{x^9}
+\]</span></p>
+<div class="note" title="Summary of Exponent Rules">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 41%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Rule</th>
+<th style="text-align: center;">Algebraic Rule</th>
+<th style="text-align: center;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Product Rule</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a^m \cdot a^n = a^{m + n}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(x^4 \cdot x^3 = x^7\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Quotient Rule</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{a^m}{a^n} = a^{m - n}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{y^8}{y^2} = y^6\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Power of a Power</strong></td>
+<td style="text-align: center;"><span class="math inline">\((a^m)^n = a^{m \cdot n}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((x^3)^2 = x^6\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Power of a Product</strong></td>
+<td style="text-align: center;"><span class="math inline">\((a \cdot b)^n = a^n \cdot b^n\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((3b)^2 = 9b^2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Power of a Quotient</strong></td>
+<td style="text-align: center;"><span class="math inline">\(\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\left(\dfrac{x}{2}\right)^3 = \dfrac{x^3}{8}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Zero Exponent</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a^0 = 1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(m^0 = 1\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Negative Exponent</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a^{-n} = \dfrac{1}{a^n}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(k^{-2} = \dfrac{1}{k^2}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Fractional Exponent</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a^{\tfrac{m}{n}}=\sqrt[n]{a^m}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(x^{\tfrac{2}{3}}=\sqrt[3]{x^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="combining-rules">✍️ Practice On Your Own</h2>
+<p><strong>Simplify Expressions with Exponents (Basic)</strong></p>
+<ol type="1">
+<li><p><span class="math inline">\(x^2 \cdot x^5\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{p^7}{p^2}\)</span></p></li>
+<li><p><span class="math inline">\((r^3)^4\)</span></p></li>
+<li><p><span class="math inline">\((5m)^2\)</span></p></li>
+<li><p><span class="math inline">\(\left(\dfrac{n}{3}\right)^3\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Simplify Multi-Step Expressions with Exponents</strong></p>
+<ol start="6" type="1">
+<li><p><span class="math inline">\(a^4b^2 \cdot a^3b^5\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(2t^2)^3}{t^4}\)</span></p></li>
+<li><p><span class="math inline">\((3c^2d)^2\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(4x^3y^2)^2}{8x^4}\)</span></p></li>
+<li><p><span class="math inline">\((k^{-2}m^3)^2\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(2x^{-3}y^4)^2}{(x^2y^{-1})^3}\)</span></p></li>
+<li><p><span class="math inline">\((3a^{-2}b^4)^{-3}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(6p^2q^{-1})^3}{(2p^{-3}q^4)^2}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(x^2y^3)^{-2}}{(x^{-4}y)^3}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(4m^{-1}n^2)^0}{(m^3n^{-2})^{-1}}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{12r^{-2}s^3}{4r^5s^{-4}}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(10x^{-2}y)^2}{(2x^3y^{-3})^3}\)</span></p></li>
+<li><p><span class="math inline">\((2a^{-3}b^2c^{-1})^{-2}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(x^{-2}y^5)^2}{(x^3y^{-4})^{-1}}\)</span></p></li>
+<li><p><span class="math inline">\((5t^0u^{-3})^3\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Fractional Exponents (Basic)</strong></p>
+<ol start="21" type="1">
+<li><p><span class="math inline">\(25^{\tfrac{1}{2}}\)</span></p></li>
+<li><p><span class="math inline">\(27^{\tfrac{2}{3}}\)</span></p></li>
+<li><p><span class="math inline">\(x^{\tfrac{3}{2}} \cdot x^{\tfrac{1}{2}}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{y^{\tfrac{5}{4}}}{y^{\tfrac{1}{2}}}\)</span></p></li>
+<li><p><span class="math inline">\(\left(z^{\tfrac{2}{3}}\right)^{\tfrac{3}{2}}\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<p>Simplify and rewrite using only positive exponents:</p>
+<ol start="26" type="1">
+<li><p><span class="math inline">\(\dfrac{(9a^{\tfrac{1}{2}}b^{-\tfrac{2}{3}})^3}{(3a^{-2}b^{\tfrac{1}{3}})^2}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(4x^{\tfrac{2}{5}}y^{-1})^{-2}}{(2x^{-3}y^{\tfrac{3}{5}})^3}\)</span></p></li>
+<li><p><span class="math inline">\(\dfrac{(3p^{-\tfrac{1}{2}}q^{\tfrac{3}{4}})^2}{(9p^{\tfrac{2}{3}}q^{-\tfrac{1}{4}})^3}\)</span></p></li>
+</ol>
+<hr>
 <div class="answers">
-
+<ol type="1">
+<li><span class="math inline">\(x^7\)</span></li>
+<li><span class="math inline">\(p^5\)</span></li>
+<li><span class="math inline">\(r^{12}\)</span></li>
+<li><span class="math inline">\(25m^2\)</span></li>
+<li><span class="math inline">\(\tfrac{n^3}{27}\)</span></li>
+<li><span class="math inline">\(a^7b^7\)</span></li>
+<li><span class="math inline">\(8t^2\)</span></li>
+<li><span class="math inline">\(9c^4d^2\)</span></li>
+<li><span class="math inline">\(2x^2y^4\)</span></li>
+<li><span class="math inline">\(\tfrac{m^6}{k^4}\)</span></li>
+<li><span class="math inline">\(\tfrac{4y^{11}}{x^{12}}\)</span></li>
+<li><span class="math inline">\(\tfrac{a^6}{27b^{12}}\)</span></li>
+<li><span class="math inline">\(\dfrac{54,p^{12}}{q^{11}}\)</span></li>
+<li><span class="math inline">\(\dfrac{x^8}{y^9}\)</span></li>
+<li><span class="math inline">\(\dfrac{m^3}{n^2}\)</span></li>
+<li><span class="math inline">\(\dfrac{3s^7}{r^7}\)</span></li>
+<li><span class="math inline">\(\dfrac{25,y^{11}}{2x^{13}}\)</span></li>
+<li><span class="math inline">\(\dfrac{a^6c^2}{4b^4}\)</span></li>
+<li><span class="math inline">\(\dfrac{y^{6}}{x}\)</span></li>
+<li><span class="math inline">\(\dfrac{125}{u^9}\)</span></li>
+<li><span class="math inline">\(5\)</span></li>
+<li><span class="math inline">\(9\)</span></li>
+<li><span class="math inline">\(x^{2}\)</span></li>
+<li><span class="math inline">\(y^{\tfrac{3}{4}}\)</span></li>
+<li><span class="math inline">\(z^{1} = z\)</span></li>
+</ol>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -736,14 +1190,13 @@ window.MathJax = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1092,8 +1545,8 @@ window.MathJax = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_5/5.2_Simplifying_Expressions_with_Exponents.html" class="pagination-link" aria-label="5.2 - Simplifying Expressions with Exponents">
-        <span class="nav-page-text">5.2 - Simplifying Expressions with Exponents</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_5/5.2_Introduction_to_Polynomials.html" class="pagination-link" aria-label="5.2 - Introduction to Polynomials">
+        <span class="nav-page-text">5.2 - Introduction to Polynomials</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
