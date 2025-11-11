@@ -83,6 +83,17 @@ In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** 
 
 ---
 
+### Base {#glossary-base}
+
+The **base** is the number or variable being multiplied by itself.
+In a power like $5^3$, the base is $5$.
+
+> **Example:**
+>
+> In $x^4$, the base is $x$.
+
+---
+
 ### Best-Fit Line {#glossary-best-fit-line}
 
 A straight line that comes **closest to all the data points** on a scatter plot.
@@ -410,13 +421,15 @@ You use the distributive property to spread multiplication over addition or subt
 
 ### Exponent {#glossary-exponent}
 
-A number that tells you how many times to multiply a base number by itself.
+The **exponent** tells how many times to multiply the base by itself.
+In $5^3$, the exponent is $3$, which means $5\cdot5\cdot5$.
 
 > **Example:**
 >
-> $3^2 = 3 \times 3 = 9$
+> $x^4$ means $x\cdot x\cdot x\cdot x$ (four $x$’s multiplied).
 
 ---
+
 
 ### Expression {#glossary-expression}
 
@@ -491,6 +504,17 @@ The denominator tells how many equal parts the whole is divided into, and the nu
 > **Example:**
 >
 > In 3/4, the fraction means **3 out of 4** equal parts.
+
+---
+
+### Fractional Exponent {#glossary-fractional-exponent}
+
+A **fractional exponent** represents a root and a power. The denominator is the **root**, and the numerator is the **power**:
+$a^{\tfrac{m}{n}}=\sqrt[n]{a^m}$ (for real numbers, typically $a\ge0$).
+
+> **Example:**
+>
+> $16^{\tfrac{3}{4}}=\sqrt[4]{16^3}=\sqrt[4]{4096}=8$.
 
 ---
 
@@ -781,6 +805,17 @@ Multiplication by **proximity** means to multiply two things that are next to ea
 
 ---
 
+### Negative Exponent {#glossary-negative-exponent}
+
+A **negative exponent** means the reciprocal (move the factor across the fraction bar):
+$a^{-n}=\dfrac{1}{a^n}$, and $\dfrac{1}{a^{-n}}=a^n$ (for $a\ne0$).
+
+> **Example:**
+>
+> $k^{-3}=\dfrac{1}{k^3}$.
+
+---
+
 ### No Solution {#glossary-no-solution}
 
 An equation has **no solution** when *no value* for the variable will make it true. This happens when the variable terms cancel out and you’re left with a false statement.
@@ -951,6 +986,16 @@ A grouping symbol that tells you what to do first in an expression.
 
 ---
 
+### Part {#glossary-part}
+
+A part is one piece of the whole. It’s often what you’re looking for in a percent or fraction problem.
+
+> **Example:**  
+>   
+> In 20% of 50, the part is 10. (Because 20% of 50 is 10.)
+
+---
+
 ### Perpendicular {#glossary-perpendicular}
 
 Two lines that **intersect to form a right angle (90°)**.
@@ -968,16 +1013,6 @@ Place value tells you **how much each digit is worth** based on where it is in t
 > **Example:**
 >
 > In 23.4, the 2 is worth 20 (tens), the 3 is worth 3 (ones), and the 4 is worth 4 tenths.
-
----
-
-### Part {#glossary-part}
-
-A part is one piece of the whole. It’s often what you’re looking for in a percent or fraction problem.
-
-> **Example:**  
->   
-> In 20% of 50, the part is 10. (Because 20% of 50 is 10.)
 
 ---
 
@@ -1035,6 +1070,28 @@ On a number line, positive numbers are to the right of zero.
 
 ---
 
+### Power {#glossary-power}
+
+A **power** is a compact way to write repeated multiplication. It has a **base** and an **exponent**.
+For $a^n$, $a$ is the base and $n$ is the exponent.
+
+> **Example:**
+>
+> $2^5$ is a power that equals $2\cdot2\cdot2\cdot2\cdot2=32$.
+
+---
+
+### Power of a Power (Exponents) {#glossary-power-of-a-power}
+
+When raising a power to another power, **multiply** the exponents:
+$(a^m)^n=a^{m\cdot n}$.
+
+> **Example:**
+>
+> $(x^3)^2=x^{3\cdot2}=x^6$.
+
+---
+
 ### Prime Number {#glossary-prime_number}
 
 A number is prime if it has exactly two factors: 1 and itself.
@@ -1063,6 +1120,17 @@ A product is the **result of multiplying** two or more numbers.
 > **Example:**
 >
 > The product of 4 and 6 is `24`, because `4 × 6 = 24`.
+
+---
+
+### Product Rule (Exponents) {#glossary-product-rule}
+
+When multiplying powers with the **same base**, **add** the exponents:
+$a^m\cdot a^n=a^{m+n}$.
+
+> **Example:**
+>
+> $x^4\cdot x^3=x^{4+3}=x^7$.
 
 ---
 
@@ -1105,6 +1173,17 @@ A quotient is the **result of dividing** one number by another.
 > **Example:**
 >
 > The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+
+---
+
+### Quotient Rule (Exponents) {#glossary-quotient-rule}
+
+When dividing powers with the **same base**, **subtract** the exponents:
+$\dfrac{a^m}{a^n}=a^{m-n}$.
+
+> **Example:**
+>
+> $\dfrac{y^8}{y^2}=y^{8-2}=y^6$.
 
 ---
 
@@ -1459,3 +1538,15 @@ At this point, the value of $x$ is always $0$.
 > The line $y = -3x + 5$ crosses the y-axis at $(0, 5)$, so the y-intercept is **5**.
 
 ---
+
+### Zero Exponent {#glossary-zero-exponent}
+
+Any **nonzero** base to the zero power equals $1$:
+$a^0=1$ for $a\ne0$.
+
+> **Example:**
+>
+> $(5y)^0=1$.
+
+---
+

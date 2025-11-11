@@ -402,3 +402,14 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 
 :::
 
+### 5.1 - Exponent Rules
+
+:::{.answers}
+
+26. $81,a^{\tfrac{11}{2}},b^{-\tfrac{8}{3}}$
+
+27. $\dfrac{x^{\tfrac{41}{5}},y^{\tfrac{1}{5}}}{128}$
+
+28. $\dfrac{q^{\tfrac{9}{4}}}{81,p^{3}}$
+
+:::
