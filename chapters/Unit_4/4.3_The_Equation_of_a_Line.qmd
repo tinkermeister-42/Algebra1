@@ -83,7 +83,7 @@ Those are called **intercepts**.
 
 ---
 
-:::{.you-try title="Find the y-intercept for $f(x) = 2x - 4$"}
+:::{.you-try title="Find the y-intercept for ${f}(x) = 2x - 4$"}
 
 ![](/images/Unit_4/Lesson_3/YouTry_4_3_2.png){width="350px" fig-align="center"}
 
@@ -191,7 +191,7 @@ $$
 
 ![](/images/Unit_4/Lesson_3/Example5.png){width="350px" fig-align="center"}
 
-:::{.you-try title="Graph the line $f(x) = 3x - 2$"}
+:::{.you-try title="Graph the line ${f}(x) = 3x - 2$"}
 
 ![](/images/Unit_4/Lesson_3/YouTry2.png){width="350px" fig-align="center"}
 
