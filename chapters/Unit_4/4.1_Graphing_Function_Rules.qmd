@@ -130,6 +130,12 @@ When we connect the points, they form a **straight line** — showing that $f(x)
 
 ![](/images/Unit_4/Lesson_1/Example1B.png){width="350px" fig-align="center"}
 
+:::{.note title="That's the answer!"}
+When an equation has one variable, its answer is just one number. On a number line, that number is shown as a single point.
+
+But when an equation has two variables, it doesn’t have just one answer — it has many! In fact, all of the (x, y) pairs that make the equation true line up to form a straight line. That’s why we graph the equation — the line shows all the solutions.
+:::
+
 ::: {.remember}
 
 $f(x)$ means the same thing as $y$.  
@@ -144,13 +150,13 @@ Let’s look at another function that behaves a little differently.
 
 Let $h(x) = -\frac{2}{3}x - 3$.
 
-Evaluate $h(x)$ for $x = -3, 0,$ and $9$ and graph the result.
+Evaluate $h(x)$ for $x = -3, 0,$ and $3$ and graph the result.
 
 | $x$  | $h(x)$ |
 | :-:  | :-:    |
-| -3   | -5     |
+| -3   | -1     |
 | 0    | -3     |
-| 9    |  3     |
+| 3    |  -5    |
 
 ![](/images/Unit_4/Lesson_1/Example2A.png){width="350px" fig-align="center"}
 
