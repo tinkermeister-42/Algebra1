@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,20 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
 window.MathJax = {
+
   tex: {
+
     packages: {'[+]': ['base', 'ams', 'color']},
+
     macros: {
+
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+
       snplus:   ['\\snboth{+#1}', 1],
+
       snminus:  ['\\snboth{-#1}', 1],
+
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
+
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
+
     }
+
   }
+
 };
+
 </script>
+
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -100,7 +116,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -127,6 +143,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -156,7 +174,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -692,7 +711,7 @@ c &amp;= 13.2
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-href="#glossary-coefficient" data-term="coefficient" data-slug="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-original-href="#glossary-constant" data-term="constant" data-slug="constant">constant</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-original-href="#glossary-equation" data-term="equation" data-slug="equation">equation</a>, <a href="../../glossary.html#glossary-inequality" class="glossary-link" data-original-href="#glossary-inequality" data-term="inequality" data-slug="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-href="#glossary-solution" data-term="solution" data-slug="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-href="#glossary-variable" data-term="variable" data-slug="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-term="coefficient" data-original-href="#glossary-coefficient" data-slug="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-term="constant" data-original-href="#glossary-constant" data-slug="constant">constant</a>, <a href="../../glossary.html#glossary-equation" class="glossary-link" data-term="equation" data-original-href="#glossary-equation" data-slug="equation">equation</a>, <a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-original-href="#glossary-inequality" data-slug="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-href="#glossary-solution" data-slug="solution">solution</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-href="#glossary-variable" data-slug="variable">variable</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
@@ -742,27 +761,27 @@ c &amp;= 13.2
 </tbody>
 </table>
 <p>In Unit 1, we plotted single solutions like <span class="math inline">\(x = 3\)</span> on a number line:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_equal_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_equal_3.png" class="img-fluid"></p>
 <p>That’s just one point. Inequalities, however, represent a whole range of values.</p>
 <hr>
 <p><strong>Example 1:</strong> Greater Than</p>
 <p>Plot the solution to <span class="math inline">\(x &gt; 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
 <p>The open circle shows 3 is <em>not included</em>. The arrow points right to show all numbers greater than 3 are possible solutions.</p>
 <hr>
 <p><strong>Example 2:</strong> Less Than</p>
 <p>Plot the solution to <span class="math inline">\(x &lt; 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_less_than_3.png" class="img-fluid"></p>
 <p>The arrow points left – toward smaller numbers. The open circle again shows that 3 itself is not included.</p>
 <hr>
 <p><strong>Example 3:</strong> Greater Than or Equal To</p>
 <p>Plot the solution to <span class="math inline">\(x \ge 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_greater_than_or_equal_to_3.png" class="img-fluid"></p>
 <p>Same as Example 1, except the dot is filled in. That means <strong>3 is included</strong>.</p>
 <hr>
 <p><strong>Example 4:</strong> Less Than or Equal To</p>
 <p>Plot the solution to <span class="math inline">\(x \le 3\)</span> on a number line.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
 <p>The dot is filled again, showing 3 is part of the solution. The arrow points left for “less than”.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Test a value">
 <div class="callout-header d-flex align-content-center">
@@ -770,13 +789,13 @@ c &amp;= 13.2
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Test a value
+<span class="screen-reader-only">Tip</span>Test a value
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Not sure which way the arrow goes? Test a number that makes the inequality true.</p>
 <p>For <span class="math inline">\(x \le -1\)</span> we could try <span class="math inline">\(x = -4\)</span>.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
 <p>Since <span class="math inline">\(-4 \le -1\)</span> is true, shade the side containing <span class="math inline">\(-4\)</span>.</p>
 </div>
 </div>
@@ -799,7 +818,7 @@ x &amp;&gt; 7
 \end{align*}
 \]</span></p>
 <p>Now we plot the solution.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_7.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_greater_than_7.png" class="img-fluid"></p>
 <p>The arrow covers all numbers larger than 7. The dot is left open because 7 itself is not included.</p>
 <hr>
 <p><strong>Example 2:</strong></p>
@@ -815,7 +834,7 @@ x &amp;\le 3
 \end{align*}
 \]</span></p>
 <p>Now plot it.</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="solving-inequalities-with-multiplication-and-division" class="level3">
@@ -837,7 +856,7 @@ x &amp;&gt; 3
 \end{align*}
 \]</span></p>
 <p>Now plot it:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
 <hr>
 <p>The one big difference between solving equations and inequalities comes when you multiply or divide by a <strong>negative</strong> number. In that case, you have to <strong>flip the sign</strong>.</p>
 <p><strong>Example 2:</strong></p>
@@ -856,7 +875,7 @@ x &amp;&gt; 4 \stepnote{Flip the sign}
 \end{align*}
 \]</span></p>
 <p>Plot the solution:</p>
-<p><img src="../../images/Unit_3/Lesson_6/x_gt_4.png" class="img-fluid"></p>
+<p><img src="../..\images/Unit_3/Lesson_6/x_gt_4.png" class="img-fluid"></p>
 <div class="gotcha" title="Don't forget to flip the sign">
 <p>Don’t forget to <em>flip the sign</em> when you multiply or divide by a negative number. If you are in doubt, you can always test your answer to see if it works.</p>
 <p>In the previous example we found <span class="math inline">\(x &gt; 4\)</span>. Let’s test our answer with <span class="math inline">\(x = 5\)</span>.</p>
@@ -969,9 +988,13 @@ c &amp;\le 13.2
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
+
 <script src="../../scripts/tippy.min.js"></script>
+
 <script src="../../scripts/glossary-tooltips.js"></script>
+
 <script src="../../scripts/custom-callouts.js"></script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1023,13 +1046,14 @@ c &amp;\le 13.2
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

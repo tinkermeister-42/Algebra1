@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,20 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
 window.MathJax = {
+
   tex: {
+
     packages: {'[+]': ['base', 'ams', 'color']},
+
     macros: {
+
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
+
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
+
       snplus:   ['\\snboth{+#1}', 1],
+
       snminus:  ['\\snboth{-#1}', 1],
+
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
+
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
+
     }
+
   }
+
 };
+
 </script>
+
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -100,7 +116,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -127,6 +143,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -156,7 +174,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -665,7 +684,7 @@ window.Quarto = {
 
 
 <p>In previous lessons, you’ve learned how fractions, decimals, and percents relate to each other. But to solve real-world problems—like adjusting recipes, calculating discounts, or determining grades—you also need to multiply and divide these numbers.</p>
-<p>In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-term="reciprocal" data-original-href="#glossary-reciprocal">reciprocal</a>. These skills will help you tackle percent problems and practical applications in upcoming lessons.</p>
+<p>In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a>. These skills will help you tackle percent problems and practical applications in upcoming lessons.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can multiply fractions and mixed numbers.</label></li>
@@ -673,7 +692,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-divisor" class="glossary-link" data-slug="divisor" data-term="divisor" data-original-href="#glossary-divisor">divisor</a>, <a href="#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-term="improper fraction" data-original-href="#glossary-improper-fraction">improper fraction</a>, <a href="#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-term="mixed number" data-original-href="#glossary-mixed-number">mixed number</a>, <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-term="reciprocal" data-original-href="#glossary-reciprocal">reciprocal</a></p>
+<p><a href="../../glossary.html#glossary-divisor" class="glossary-link" data-slug="divisor" data-original-href="#glossary-divisor" data-term="divisor">divisor</a>, <a href="#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-original-href="#glossary-improper-fraction" data-term="improper fraction">improper fraction</a>, <a href="#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a>, <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
@@ -691,7 +710,7 @@ window.Quarto = {
 <p><strong>one-fourth of one-half</strong></p>
 </blockquote>
 <p>Here is what it looks like to find how many fourths are in one half:</p>
-<p><img src="../../images/Unit_1/Lesson_5/fourth_of_a_half.png" class="img-fluid" style="width:50.0%"></p>
+<p><img src="../..\images/Unit_1/Lesson_5/fourth_of_a_half.png" class="img-fluid" style="width:50.0%"></p>
 <p>That blue slice shows one of the four parts of the darker half.<br>
 Since there are 8 total pieces, and only 1 is blue, the answer is <span class="math inline">\(\frac{1}{8}\)</span> of the whole.</p>
 <p>Drawing pie charts every time we multiply would take forever—so here’s the shortcut:</p>
@@ -754,7 +773,7 @@ Tip
 </section>
 <section id="multiplying-mixed-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="multiplying-mixed-numbers">1.5.2 – Multiplying Mixed Numbers</h3>
-<p>A <a href="#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-term="mixed number" data-original-href="#glossary-mixed-number">mixed number</a> is a number that has a whole part and a fraction part, like <span class="math inline">\(4\tfrac{2}{3}\)</span>. Before multiplying, we first need to convert to an <a href="#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-term="improper fraction" data-original-href="#glossary-improper-fraction">improper fraction</a>.</p>
+<p>A <a href="#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a> is a number that has a whole part and a fraction part, like <span class="math inline">\(4\tfrac{2}{3}\)</span>. Before multiplying, we first need to convert to an <a href="#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-original-href="#glossary-improper-fraction" data-term="improper fraction">improper fraction</a>.</p>
 <p><strong>Example:</strong> Multiply <span class="math inline">\(4\tfrac{2}{3} \times \frac{5}{6}\)</span></p>
 <p>We have 2 thirds, but how many thirds are in 4? To find out, multiply the whole number by the denominator: <span class="math display">\[
 4 \times 3 = 12
@@ -791,12 +810,12 @@ Tip
 </section>
 <section id="division-reciprocals" class="level3">
 <h3 class="anchored">1.5.3 – Division &amp; Reciprocals</h3>
-<p>Dividing fractions? Easy—meet the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-term="reciprocal" data-original-href="#glossary-reciprocal">reciprocal</a>. It flips fractions upside down!</p>
+<p>Dividing fractions? Easy—meet the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a>. It flips fractions upside down!</p>
 <ul>
 <li>Reciprocal of <span class="math inline">\(\frac{3}{4}\)</span> is <span class="math inline">\(\frac{4}{3}\)</span></li>
 <li>Reciprocal of 5 is <span class="math inline">\(\frac{1}{5}\)</span></li>
 </ul>
-<p>To divide fractions, multiply by the reciprocal of the <a href="../../glossary.html#glossary-divisor" class="glossary-link" data-slug="divisor" data-term="divisor" data-original-href="#glossary-divisor">divisor</a>:</p>
+<p>To divide fractions, multiply by the reciprocal of the <a href="../../glossary.html#glossary-divisor" class="glossary-link" data-slug="divisor" data-original-href="#glossary-divisor" data-term="divisor">divisor</a>:</p>
 <p><strong>Example:</strong> <span class="math inline">\(\frac{2}{3} \div \frac{1}{4}\)</span> <span class="math display">\[
 \frac{2}{3} \div \frac{1}{4} = \frac{2}{3} \times \frac{\color{red}4}{\color{red}1} = \frac{8}{3}
 \]</span> Dividing by <span class="math inline">\(\frac{1}{4}\)</span> asks, “How many fourths are there in <span class="math inline">\(\frac{2}{3}\)</span>?”</p>
@@ -911,9 +930,13 @@ Tip
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
+
 <script src="../../scripts/tippy.min.js"></script>
+
 <script src="../../scripts/glossary-tooltips.js"></script>
+
 <script src="../../scripts/custom-callouts.js"></script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -965,13 +988,14 @@ Tip
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
