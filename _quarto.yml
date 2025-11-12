@@ -98,7 +98,7 @@ book:
       chapters:
         - file: chapters/Unit_5/index.qmd
         - file: chapters/Unit_5/5.1_Exponent_Rules.qmd
-        - file: chapters/Unit_5/5.2_Introduction_to_Polynomials.qmd
+        - file: chapters/Unit_5/5.2_Simplifying_Polynomials.qmd
         - file: chapters/Unit_5/5.3_Multiplying_Polynomials.qmd
         - file: chapters/Unit_5/5.4_Factoring_Polynomials.qmd
         - file: chapters/Unit_5/Review.qmd

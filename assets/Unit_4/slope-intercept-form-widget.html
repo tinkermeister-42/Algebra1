@@ -3,7 +3,8 @@
 
 <style>
   .leq3-root {
-    max-width: 600px; /* increase if you want a larger plot */
+    max-width: 600px;
+    /* increase if you want a larger plot */
     /* border: 1px solid #e5e7eb; */
     border-radius: 12px;
     padding: 10px;
@@ -51,6 +52,15 @@
     background: #fff;
   }
 
+  .leq3-nline-h,
+  .leq3-nline-v {
+    touch-action: none;
+    -ms-touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+
   .leq3-canvas {
     width: 100%;
     height: auto;
@@ -83,330 +93,352 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   /* top edge of vertical slider */
 </style>
 
 <script>
-(function () {
-  function initAll() {
-    document.querySelectorAll('.leq3-root').forEach(initWidget);
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAll, { once: true });
-  } else {
-    initAll();
-  }
-
-  function initWidget(root) {
-    if (root.__init) return;
-    root.__init = true;
-
-    const state = {
-      m: round1(parseFloat(root.dataset.m ?? 1.0)),
-      b: round1(parseFloat(root.dataset.b ?? 0.0)),
-      xmin: -10, xmax: 10, ymin: -10, ymax: 10
-    };
-
-    const grid = el('div', 'leq3-grid');
-
-    const mWrap = el('div', 'leq3-mline');
-    const mCanvas = el('canvas', 'leq3-nline-h');
-    const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
-    mWrap.append(mCanvas, mLabel);
-
-    const bWrap = el('div', 'leq3-bline');
-    const bCanvas = el('canvas', 'leq3-nline-v');
-    const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
-    bWrap.append(bCanvas, bLabel);
-
-    const plot = el('div', 'leq3-plot');
-    const canvas = el('canvas', 'leq3-canvas');
-    plot.append(canvas);
-
-    grid.append(bWrap, mWrap, plot);
-    root.append(grid);
-
-    const M = { left: 40, right: 40, top: 64, bottom: 40 };
-
-    function worldToPix(x, y, W, H) {
-      const innerW = W - M.left - M.right;
-      const innerH = H - M.top - M.bottom;
-      const sx = innerW / (state.xmax - state.xmin);
-      const sy = innerH / (state.ymax - state.ymin);
-      const px = M.left + (x - state.xmin) * sx;
-      const py = M.top + innerH - (y - state.ymin) * sy;
-      return [px, py];
+  (function () {
+    function initAll() {
+      document.querySelectorAll('.leq3-root').forEach(initWidget);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAll, { once: true });
+    } else {
+      initAll();
     }
 
-    let rafId = null;
-    function scheduleDraw() {
-      if (rafId !== null) return;
-      rafId = requestAnimationFrame(() => { rafId = null; drawMain(); });
-    }
+    function initWidget(root) {
+      if (root.__init) return;
+      root.__init = true;
 
-    // --- HiDPI sizing helper: draw in CSS units, canvas scaled internally
-    function sizeForDPR(canvas, cssW, cssH) {
-      const dpr = window.devicePixelRatio || 1;
-      canvas.style.width  = cssW + 'px';
-      canvas.style.height = cssH + 'px';
-      canvas.width  = Math.max(1, Math.floor(cssW * dpr));
-      canvas.height = Math.max(1, Math.floor(cssH * dpr));
-      const ctx = canvas.getContext('2d');
-      // Use CSS pixel space for drawing
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      return { ctx, dpr };
-    }
+      const state = {
+        m: round1(parseFloat(root.dataset.m ?? 1.0)),
+        b: round1(parseFloat(root.dataset.b ?? 0.0)),
+        xmin: -10, xmax: 10, ymin: -10, ymax: 10
+      };
 
-    function drawMain() {
-      const Wcss = canvas.clientWidth | 0;
-      const Hcss = canvas.clientHeight | 0;
-      if (!Wcss || !Hcss) return;
+      const grid = el('div', 'leq3-grid');
 
-      const ctx = canvas.getContext('2d'); // already scaled by sizeForDPR
-      ctx.clearRect(0, 0, Wcss, Hcss);
+      const mWrap = el('div', 'leq3-mline');
+      const mCanvas = el('canvas', 'leq3-nline-h');
+      const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
+      mWrap.append(mCanvas, mLabel);
 
-      const gridCol = '#cbd5e1', axisCol = '#1e293b', tickCol = '#334155',
-            lineCol = '#0e7490', interceptCol = '#111827';
+      const bWrap = el('div', 'leq3-bline');
+      const bCanvas = el('canvas', 'leq3-nline-v');
+      const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
+      bWrap.append(bCanvas, bLabel);
 
-      // Grid
-      ctx.lineWidth = 1;
-      ctx.strokeStyle = gridCol;
-      for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-        const [px0, py0] = worldToPix(x, state.ymin, Wcss, Hcss);
-        const [px1, py1] = worldToPix(x, state.ymax, Wcss, Hcss);
-        const X = Math.round(px0) + 0.5; // crisp 1px
-        ctx.beginPath();
-        ctx.moveTo(X, py0);
-        ctx.lineTo(X, py1);
-        ctx.stroke();
-      }
-      for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-        const [px0, py0] = worldToPix(state.xmin, y, Wcss, Hcss);
-        const [px1, py1] = worldToPix(state.xmax, y, Wcss, Hcss);
-        const Y = Math.round(py0) + 0.5; // crisp 1px
-        ctx.beginPath();
-        ctx.moveTo(px0, Y);
-        ctx.lineTo(px1, Y);
-        ctx.stroke();
+      const plot = el('div', 'leq3-plot');
+      const canvas = el('canvas', 'leq3-canvas');
+      plot.append(canvas);
+
+      grid.append(bWrap, mWrap, plot);
+      root.append(grid);
+
+      const M = { left: 40, right: 40, top: 64, bottom: 40 };
+
+      function worldToPix(x, y, W, H) {
+        const innerW = W - M.left - M.right;
+        const innerH = H - M.top - M.bottom;
+        const sx = innerW / (state.xmax - state.xmin);
+        const sy = innerH / (state.ymax - state.ymin);
+        const px = M.left + (x - state.xmin) * sx;
+        const py = M.top + innerH - (y - state.ymin) * sy;
+        return [px, py];
       }
 
-      // Axes
-      ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8;
-      const [xL, y0] = worldToPix(state.xmin, 0, Wcss, Hcss);
-      const [xR] = worldToPix(state.xmax, 0, Wcss, Hcss);
-      const yAxisPx = Math.round(y0) + 0.5;
-      ctx.beginPath(); ctx.moveTo(xL, yAxisPx); ctx.lineTo(xR, yAxisPx); ctx.stroke();
-
-      const [x0, yB] = worldToPix(0, state.ymin, Wcss, Hcss);
-      const [, yT] = worldToPix(0, state.ymax, Wcss, Hcss);
-      const xAxisPx = Math.round(x0) + 0.5;
-      ctx.beginPath(); ctx.moveTo(xAxisPx, yB); ctx.lineTo(xAxisPx, yT); ctx.stroke();
-
-      // Ticks + labels
-      ctx.fillStyle = tickCol; ctx.font = '12px system-ui';
-      ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1;
-      for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-        const [px] = worldToPix(x, 0, Wcss, Hcss);
-        const X = Math.round(px) + 0.5;
-        ctx.beginPath(); ctx.moveTo(X, yAxisPx - 5); ctx.lineTo(X, yAxisPx + 5); ctx.stroke();
-        if (x !== 0) ctx.fillText(String(x), X - 4, yAxisPx + 18);
-      }
-      for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-        const [, py] = worldToPix(0, y, Wcss, Hcss);
-        const Y = Math.round(py) + 0.5;
-        ctx.beginPath(); ctx.moveTo(xAxisPx - 5, Y); ctx.lineTo(xAxisPx + 5, Y); ctx.stroke();
-        if (y !== 0) ctx.fillText(String(y), xAxisPx + 8, Y + 4);
+      let rafId = null;
+      function scheduleDraw() {
+        if (rafId !== null) return;
+        rafId = requestAnimationFrame(() => { rafId = null; drawMain(); });
       }
 
-      // Line segment within bounds
-      const m = state.m, b = state.b;
-      const pts = [];
-      const yL = m * state.xmin + b, yR = m * state.xmax + b;
-      addIf(state.xmin, yL); addIf(state.xmax, yR);
-      if (Math.abs(m) > 1e-12) {
-        const xB = (state.ymin - b) / m; addIf(xB, state.ymin);
-        const xT = (state.ymax - b) / m; addIf(xT, state.ymax);
-      }
-      function addIf(x, y) {
-        if (x >= state.xmin - 1e-9 && x <= state.xmax + 1e-9 && y >= state.ymin - 1e-9 && y <= state.ymax + 1e-9)
-          pts.push([x, y]);
-      }
-      if (pts.length >= 2) {
-        const [x1, y1] = worldToPix(pts[0][0], pts[0][1], Wcss, Hcss);
-        const [x2, y2] = worldToPix(pts[1][0], pts[1][1], Wcss, Hcss);
-        ctx.strokeStyle = lineCol; ctx.lineWidth = 2.2;
-        ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+      // --- HiDPI sizing helper: draw in CSS units, canvas scaled internally
+      function sizeForDPR(canvas, cssW, cssH) {
+        const dpr = window.devicePixelRatio || 1;
+        canvas.style.width = cssW + 'px';
+        canvas.style.height = cssH + 'px';
+        canvas.width = Math.max(1, Math.floor(cssW * dpr));
+        canvas.height = Math.max(1, Math.floor(cssH * dpr));
+        const ctx = canvas.getContext('2d');
+        // Use CSS pixel space for drawing
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        return { ctx, dpr };
       }
 
-      // y-intercept dot
-      if (b >= state.ymin && b <= state.ymax) {
-        const [ix, iy] = worldToPix(0, b, Wcss, Hcss);
-        ctx.fillStyle = interceptCol;
-        ctx.beginPath(); ctx.arc(ix, iy, 4, 0, Math.PI * 2); ctx.fill();
+      function drawMain() {
+        const Wcss = canvas.clientWidth | 0;
+        const Hcss = canvas.clientHeight | 0;
+        if (!Wcss || !Hcss) return;
+
+        const ctx = canvas.getContext('2d'); // already scaled by sizeForDPR
+        ctx.clearRect(0, 0, Wcss, Hcss);
+
+        const gridCol = '#cbd5e1', axisCol = '#1e293b', tickCol = '#334155',
+          lineCol = '#0e7490', interceptCol = '#111827';
+
+        // Grid
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = gridCol;
+        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
+          const [px0, py0] = worldToPix(x, state.ymin, Wcss, Hcss);
+          const [px1, py1] = worldToPix(x, state.ymax, Wcss, Hcss);
+          const X = Math.round(px0) + 0.5; // crisp 1px
+          ctx.beginPath();
+          ctx.moveTo(X, py0);
+          ctx.lineTo(X, py1);
+          ctx.stroke();
+        }
+        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
+          const [px0, py0] = worldToPix(state.xmin, y, Wcss, Hcss);
+          const [px1, py1] = worldToPix(state.xmax, y, Wcss, Hcss);
+          const Y = Math.round(py0) + 0.5; // crisp 1px
+          ctx.beginPath();
+          ctx.moveTo(px0, Y);
+          ctx.lineTo(px1, Y);
+          ctx.stroke();
+        }
+
+        // Axes
+        ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8;
+        const [xL, y0] = worldToPix(state.xmin, 0, Wcss, Hcss);
+        const [xR] = worldToPix(state.xmax, 0, Wcss, Hcss);
+        const yAxisPx = Math.round(y0) + 0.5;
+        ctx.beginPath(); ctx.moveTo(xL, yAxisPx); ctx.lineTo(xR, yAxisPx); ctx.stroke();
+
+        const [x0, yB] = worldToPix(0, state.ymin, Wcss, Hcss);
+        const [, yT] = worldToPix(0, state.ymax, Wcss, Hcss);
+        const xAxisPx = Math.round(x0) + 0.5;
+        ctx.beginPath(); ctx.moveTo(xAxisPx, yB); ctx.lineTo(xAxisPx, yT); ctx.stroke();
+
+        // Ticks + labels
+        ctx.fillStyle = tickCol; ctx.font = '12px system-ui';
+        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1;
+        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
+          const [px] = worldToPix(x, 0, Wcss, Hcss);
+          const X = Math.round(px) + 0.5;
+          ctx.beginPath(); ctx.moveTo(X, yAxisPx - 5); ctx.lineTo(X, yAxisPx + 5); ctx.stroke();
+          if (x !== 0) ctx.fillText(String(x), X - 4, yAxisPx + 18);
+        }
+        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
+          const [, py] = worldToPix(0, y, Wcss, Hcss);
+          const Y = Math.round(py) + 0.5;
+          ctx.beginPath(); ctx.moveTo(xAxisPx - 5, Y); ctx.lineTo(xAxisPx + 5, Y); ctx.stroke();
+          if (y !== 0) ctx.fillText(String(y), xAxisPx + 8, Y + 4);
+        }
+
+        // Line segment within bounds
+        const m = state.m, b = state.b;
+        const pts = [];
+        const yL = m * state.xmin + b, yR = m * state.xmax + b;
+        addIf(state.xmin, yL); addIf(state.xmax, yR);
+        if (Math.abs(m) > 1e-12) {
+          const xB = (state.ymin - b) / m; addIf(xB, state.ymin);
+          const xT = (state.ymax - b) / m; addIf(xT, state.ymax);
+        }
+        function addIf(x, y) {
+          if (x >= state.xmin - 1e-9 && x <= state.xmax + 1e-9 && y >= state.ymin - 1e-9 && y <= state.ymax + 1e-9)
+            pts.push([x, y]);
+        }
+        if (pts.length >= 2) {
+          const [x1, y1] = worldToPix(pts[0][0], pts[0][1], Wcss, Hcss);
+          const [x2, y2] = worldToPix(pts[1][0], pts[1][1], Wcss, Hcss);
+          ctx.strokeStyle = lineCol; ctx.lineWidth = 2.2;
+          ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+        }
+
+        // y-intercept dot
+        if (b >= state.ymin && b <= state.ymax) {
+          const [ix, iy] = worldToPix(0, b, Wcss, Hcss);
+          ctx.fillStyle = interceptCol;
+          ctx.beginPath(); ctx.arc(ix, iy, 4, 0, Math.PI * 2); ctx.fill();
+        }
+
+        // Equation badge
+        const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? '+' : '−'} ${Math.abs(b).toFixed(1)}`;
+        ctx.font = '14px system-ui';
+        const tw = ctx.measureText(eq).width;
+        const bx = Wcss - M.right - tw - 28;
+        const by = Math.max(18, Math.floor(M.top * 0.45) + 10);
+        ctx.fillStyle = 'rgba(14,116,144,0.18)';
+        roundRect(ctx, bx, by - 20, tw + 32, 28, 10, true, false);
+        ctx.fillStyle = lineCol; ctx.fillText(eq, bx + 14, by - 3);
       }
 
-      // Equation badge
-      const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? '+' : '−'} ${Math.abs(b).toFixed(1)}`;
-      ctx.font = '14px system-ui';
-      const tw = ctx.measureText(eq).width;
-      const bx = Wcss - M.right - tw - 28;
-      const by = Math.max(18, Math.floor(M.top * 0.45) + 10);
-      ctx.fillStyle = 'rgba(14,116,144,0.18)';
-      roundRect(ctx, bx, by - 20, tw + 32, 28, 10, true, false);
-      ctx.fillStyle = lineCol; ctx.fillText(eq, bx + 14, by - 3);
-    }
-
-    function sizePlot() {
-      const rect = plot.getBoundingClientRect();
-      const Wcss = Math.max(460, Math.floor(rect.width));
-      const Hcss = Wcss; // keep square
-      sizeForDPR(canvas, Wcss, Hcss);
-    }
-
-    const h = { min: -10, max: 10, step: 0.1, cur: state.m };
-    function redrawH() {
-      const rect = mCanvas.getBoundingClientRect();
-      const Wcss = Math.max(300, Math.floor(rect.width));
-      const Hcss = 80;
-      const { ctx } = sizeForDPR(mCanvas, Wcss, Hcss);
-
-      const y = Math.floor(Hcss * 0.44) + 0.5; // crisp line
-      ctx.strokeStyle = '#e2e8f0';
-      ctx.lineWidth = 10; ctx.lineCap = 'round';
-      ctx.beginPath(); ctx.moveTo(34, y); ctx.lineTo(Wcss - 34, y); ctx.stroke();
-
-      ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
-      for (let t = Math.ceil(h.min); t <= Math.floor(h.max); t++) {
-        const x = Math.round(h_valToPx(t, Wcss)) + 0.5;
-        ctx.beginPath(); ctx.moveTo(x, y - 12); ctx.lineTo(x, y + 12); ctx.stroke();
-        ctx.fillText(String(t), x - 6, y + 36);
+      function sizePlot() {
+        const rect = plot.getBoundingClientRect();
+        const Wcss = Math.max(460, Math.floor(rect.width));
+        const Hcss = Wcss; // keep square
+        sizeForDPR(canvas, Wcss, Hcss);
       }
 
-      const x0 = Math.round(h_valToPx(0, Wcss)) + 0.5;
-      ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-      ctx.beginPath(); ctx.moveTo(x0, y - 18); ctx.lineTo(x0, y + 18); ctx.stroke();
+      const h = { min: -10, max: 10, step: 0.1, cur: state.m };
+      function redrawH() {
+        const rect = mCanvas.getBoundingClientRect();
+        const Wcss = Math.max(300, Math.floor(rect.width));
+        const Hcss = 80;
+        const { ctx } = sizeForDPR(mCanvas, Wcss, Hcss);
 
-      const hx = h_valToPx(h.cur, Wcss);
-      ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.fill();
-      ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.stroke();
-    }
-    function h_valToPx(v, W) {
-      const pad = 34, L = pad, R = W - pad;
-      const t = (v - h.min) / (h.max - h.min);
-      return L + t * (R - L);
-    }
-    function h_pxToVal(px, W) {
-      const pad = 34, L = pad, R = W - pad;
-      const t = clamp((px - L) / (R - L), 0, 1);
-      const raw = h.min + t * (h.max - h.min);
-      return roundTo(raw, h.step);
-    }
+        const y = Math.floor(Hcss * 0.44) + 0.5; // crisp line
+        ctx.strokeStyle = '#e2e8f0';
+        ctx.lineWidth = 10; ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.moveTo(34, y); ctx.lineTo(Wcss - 34, y); ctx.stroke();
 
-    const v = { min: -10, max: 10, step: 0.1, cur: state.b };
-    function redrawV() {
-      const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 320;
-      const Wcss = 100, Hcss = Math.max(240, Math.floor(graphHcss));
-      const { ctx } = sizeForDPR(bCanvas, Wcss, Hcss);
+        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
+        for (let t = Math.ceil(h.min); t <= Math.floor(h.max); t++) {
+          const x = Math.round(h_valToPx(t, Wcss)) + 0.5;
+          ctx.beginPath(); ctx.moveTo(x, y - 12); ctx.lineTo(x, y + 12); ctx.stroke();
+          ctx.fillText(String(t), x - 6, y + 36);
+        }
 
-      const x = Math.floor(Wcss / 2) + 0.5;
-      const top = M.top, bottom = Hcss - 32;
+        const x0 = Math.round(h_valToPx(0, Wcss)) + 0.5;
+        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
+        ctx.beginPath(); ctx.moveTo(x0, y - 18); ctx.lineTo(x0, y + 18); ctx.stroke();
 
-      ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round';
-      ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke();
-
-      ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
-      for (let t = Math.ceil(v.min); t <= Math.floor(v.max); t++) {
-        const y = Math.round(v_valToPx(t, Hcss, top, bottom)) + 0.5;
-        ctx.beginPath(); ctx.moveTo(x - 12, y); ctx.lineTo(x + 12, y); ctx.stroke();
-        ctx.fillText(String(t), x + 22, y + 4);
+        const hx = h_valToPx(h.cur, Wcss);
+        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.stroke();
+      }
+      function h_valToPx(v, W) {
+        const pad = 34, L = pad, R = W - pad;
+        const t = (v - h.min) / (h.max - h.min);
+        return L + t * (R - L);
+      }
+      function h_pxToVal(px, W) {
+        const pad = 34, L = pad, R = W - pad;
+        const t = clamp((px - L) / (R - L), 0, 1);
+        const raw = h.min + t * (h.max - h.min);
+        return roundTo(raw, h.step);
       }
 
-      const y0 = Math.round(v_valToPx(0, Hcss, top, bottom)) + 0.5;
-      ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-      ctx.beginPath(); ctx.moveTo(x - 16, y0); ctx.lineTo(x + 16, y0); ctx.stroke();
+      const v = { min: -10, max: 10, step: 0.1, cur: state.b };
+      function redrawV() {
+        const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 320;
+        const Wcss = 100, Hcss = Math.max(240, Math.floor(graphHcss));
+        const { ctx } = sizeForDPR(bCanvas, Wcss, Hcss);
 
-      const hy = v_valToPx(v.cur, Hcss, top, bottom);
-      ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.fill();
-      ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.stroke();
-    }
-    function v_valToPx(val, Hc, top, bottom) {
-      const T = top, B = bottom;
-      const t = (val - v.min) / (v.max - v.min);
-      return B - t * (B - T);
-    }
-    function v_pxToVal(py, Hc, top, bottom) {
-      const T = top, B = bottom;
-      const t = clamp((B - py) / (B - T), 0, 1);
-      const raw = v.min + t * (v.max - v.min);
-      return roundTo(raw, v.step);
-    }
+        const x = Math.floor(Wcss / 2) + 0.5;
+        const top = M.top, bottom = Hcss - 32;
 
-    // Dragging
-    let draggingH = false, draggingV = false;
-    mCanvas.addEventListener('mousedown', e => {
-      draggingH = true; onMoveH(e); e.preventDefault();
-    });
-    mCanvas.addEventListener('mousemove', onMoveH);
-    window.addEventListener('mouseup', () => draggingH = false);
+        ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke();
 
-    bCanvas.addEventListener('mousedown', e => {
-      draggingV = true; onMoveV(e); e.preventDefault();
-    });
-    bCanvas.addEventListener('mousemove', onMoveV);
-    window.addEventListener('mouseup', () => draggingV = false);
+        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
+        for (let t = Math.ceil(v.min); t <= Math.floor(v.max); t++) {
+          const y = Math.round(v_valToPx(t, Hcss, top, bottom)) + 0.5;
+          ctx.beginPath(); ctx.moveTo(x - 12, y); ctx.lineTo(x + 12, y); ctx.stroke();
+          ctx.fillText(String(t), x + 22, y + 4);
+        }
 
-    function onMoveH(e) {
-      if (!draggingH) return;
-      const rect = mCanvas.getBoundingClientRect();
-      const px = e.clientX - rect.left;
-      const newVal = h_pxToVal(px, rect.width);
-      if (Math.abs(newVal - h.cur) > 1e-9) {
-        h.cur = newVal; state.m = newVal;
-        scheduleDraw(); redrawH();
+        const y0 = Math.round(v_valToPx(0, Hcss, top, bottom)) + 0.5;
+        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
+        ctx.beginPath(); ctx.moveTo(x - 16, y0); ctx.lineTo(x + 16, y0); ctx.stroke();
+
+        const hy = v_valToPx(v.cur, Hcss, top, bottom);
+        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.stroke();
       }
-    }
-
-    function onMoveV(e) {
-      if (!draggingV) return;
-      const rect = bCanvas.getBoundingClientRect();
-      const py = e.clientY - rect.top;
-      const top = M.top, bottom = rect.height - 32;
-      const newVal = v_pxToVal(py, rect.height, top, bottom);
-      if (Math.abs(newVal - v.cur) > 1e-9) {
-        v.cur = newVal; state.b = newVal;
-        scheduleDraw(); redrawV();
+      function v_valToPx(val, Hc, top, bottom) {
+        const T = top, B = bottom;
+        const t = (val - v.min) / (v.max - v.min);
+        return B - t * (B - T);
       }
-    }
+      function v_pxToVal(py, Hc, top, bottom) {
+        const T = top, B = bottom;
+        const t = clamp((B - py) / (B - T), 0, 1);
+        const raw = v.min + t * (v.max - v.min);
+        return roundTo(raw, v.step);
+      }
 
-    // Resize observer to keep things sharp as layout changes
-    const ro = new ResizeObserver(() => {
+      // Dragging — unified Pointer Events (works for mouse, touch, pen)
+      let dragMode = null; // 'h' or 'v'
+
+      function onPointerDownH(e) {
+        dragMode = 'h';
+        mCanvas.setPointerCapture?.(e.pointerId);
+        onMoveH(e);
+        e.preventDefault();
+      }
+      function onPointerDownV(e) {
+        dragMode = 'v';
+        bCanvas.setPointerCapture?.(e.pointerId);
+        onMoveV(e);
+        e.preventDefault();
+      }
+
+      function onPointerMove(e) {
+        if (dragMode === 'h') onMoveH(e);
+        else if (dragMode === 'v') onMoveV(e);
+      }
+
+      function onPointerUp(e) {
+        if (dragMode === 'h') mCanvas.releasePointerCapture?.(e.pointerId);
+        if (dragMode === 'v') bCanvas.releasePointerCapture?.(e.pointerId);
+        dragMode = null;
+      }
+
+      // attach listeners (non-passive so we can preventDefault on touch)
+      mCanvas.addEventListener('pointerdown', onPointerDownH, { passive: false });
+      bCanvas.addEventListener('pointerdown', onPointerDownV, { passive: false });
+      window.addEventListener('pointermove', onPointerMove, { passive: false });
+      window.addEventListener('pointerup', onPointerUp, { passive: true });
+
+      // update helpers to read from PointerEvent (works for mouse/touch/pen)
+      function onMoveH(e) {
+        if (dragMode !== 'h') return;
+        const rect = mCanvas.getBoundingClientRect();
+        const px = e.clientX - rect.left;
+        const newVal = h_pxToVal(px, rect.width);
+        if (Math.abs(newVal - h.cur) > 1e-9) {
+          h.cur = newVal; state.m = newVal;
+          scheduleDraw(); redrawH();
+        }
+      }
+
+      function onMoveV(e) {
+        if (dragMode !== 'v') return;
+        const rect = bCanvas.getBoundingClientRect();
+        const py = e.clientY - rect.top;
+        const top = M.top, bottom = rect.height - 32;
+        const newVal = v_pxToVal(py, rect.height, top, bottom);
+        if (Math.abs(newVal - v.cur) > 1e-9) {
+          v.cur = newVal; state.b = newVal;
+          scheduleDraw(); redrawV();
+        }
+      }
+
+
+      // Resize observer to keep things sharp as layout changes
+      const ro = new ResizeObserver(() => {
+        sizePlot(); redrawH(); redrawV(); scheduleDraw();
+      });
+      ro.observe(root);
+
+      // Initial draw
       sizePlot(); redrawH(); redrawV(); scheduleDraw();
-    });
-    ro.observe(root);
 
-    // Initial draw
-    sizePlot(); redrawH(); redrawV(); scheduleDraw();
-
-    // --- utils ---
-    function round1(x) { return Math.round(x * 10) / 10; }
-    function roundTo(x, step) { return Math.round(x / step) * step; }
-    function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
-    function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
-    function roundRect(ctx, x, y, w, h, r, fill, stroke) {
-      if (typeof r === 'number') r = { tl: r, tr: r, br: r, bl: r };
-      ctx.beginPath();
-      ctx.moveTo(x + r.tl, y);
-      ctx.lineTo(x + w - r.tr, y);
-      ctx.quadraticCurveTo(x + w, y, x + w, y + r.tr);
-      ctx.lineTo(x + w, y + h - r.br);
-      ctx.quadraticCurveTo(x + w, y + h, x + w - r.br, y + h);
-      ctx.lineTo(x + r.bl, y + h);
-      ctx.quadraticCurveTo(x, y + h, x, y + h - r.bl);
-      ctx.lineTo(x, y + r.tl);
-      ctx.quadraticCurveTo(x, y, x + r.tl, y);
-      if (fill) ctx.fill();
-      if (stroke) ctx.stroke();
+      // --- utils ---
+      function round1(x) { return Math.round(x * 10) / 10; }
+      function roundTo(x, step) { return Math.round(x / step) * step; }
+      function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+      function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
+      function roundRect(ctx, x, y, w, h, r, fill, stroke) {
+        if (typeof r === 'number') r = { tl: r, tr: r, br: r, bl: r };
+        ctx.beginPath();
+        ctx.moveTo(x + r.tl, y);
+        ctx.lineTo(x + w - r.tr, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + r.tr);
+        ctx.lineTo(x + w, y + h - r.br);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - r.br, y + h);
+        ctx.lineTo(x + r.bl, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - r.bl);
+        ctx.lineTo(x, y + r.tl);
+        ctx.quadraticCurveTo(x, y, x + r.tl, y);
+        if (fill) ctx.fill();
+        if (stroke) ctx.stroke();
+      }
     }
-  }
-})();
+  })();
 </script>

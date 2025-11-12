@@ -1,0 +1,368 @@
+# 5.2 - Simplifying Polynomials {.unnumbered}
+
+In the last lesson, you learned how exponents behave: how powers multiply, divide, and combine.
+Now we will use those same ideas to understand and simplify **polynomials**, the expressions that form the backbone of algebra.
+
+When we simplify polynomials, we are really just doing what we have always done:
+**organize, combine, and clean things up**, but now with variables and exponents.
+
+:::{.objectives}
+
+* [ ] I can identify and name a {{< glink polynomial >}} by its degree and number of terms.
+* [ ] I can write a polynomial in {{< glink standard form >}}.
+* [ ] I can simplify a polynomial by distributing and combining {{< glink "like terms" >}}.
+
+:::
+
+:::{.vocab}
+
+{{< glink binomial >}}, {{< glink coefficient >}}, {{< glink degree >}}, {{< glink "distributive property" >}}, {{< glink "like terms" >}}, {{< glink monomial >}}, {{< glink polynomial >}}, {{< glink "standard form" >}}, {{< glink term >}}, {{< glink trinomial >}}
+
+:::
+
+{{< warmup >}}
+
+Simplify each expression.
+These quick checks remind you of the rules we will rely on today.
+
+1. $x^2 \cdot x^3 =$
+2. $4x^2 + 7x^2 =$
+3. $3x^0 =$
+
+
+
+{{< learn >}}
+
+### 5.2.1 - Understanding Polynomials
+
+A {{< glink polynomial >}} is a sum or difference of {{< glink slug="term" text="terms" >}}.  Each term includes a {{< glink coefficient >}} (a number), a {{< glink variable >}}, and a {{< glink "whole number" >}} exponent.  
+
+Every term like $7x^3$, $-4x^2$, or $5$ follows this pattern.  
+
+> The number $5$ is a {{< glink constant >}}, but it still fits the rule because we can think of it as $5x^0$.  
+> Since any number to the zero power equals 1, $5x^0$ is the same as $5$.
+
+**These are polynomials:**
+
+* $3x^2 + 2x - 5$  
+* $7y^3 - 4y$  
+* $9$
+
+**These are not polynomials:**
+
+* $\dfrac{2}{x}$ (variable in the denominator → negative exponent)  
+* $x^{-3} + 4$ (negative exponent)  
+* $\sqrt{x} + 5$ (fractional exponent)
+
+> We only allow {{< glink "whole number" >}} exponents so the variable never ends up in a denominator or under a root.
+
+---
+
+Some polynomials have special names based on the number of {{< glink slug="term" text="terms" >}} they contain.
+
+| Number of Terms | Name | Example |
+|-----------------|------|----------|
+| 1 | {{< glink monomial >}} | $7x^3$ |
+| 2 | {{< glink binomial >}} | $4x + 1$ |
+| 3 | {{< glink trinomial >}} | $x^2 + 3x + 2$ |
+
+> Polynomials with more than three terms do not have a special name. We just call them {{< glink slug="polynomial" text="polynomials" >}}.
+
+The exponent on a term is called its {{< glink degree >}}. Polynomials have a degree as well. The {{< glink degree >}} of a polynomial is the largest exponent in the expression.
+
+---
+
+**Example 1:**
+
+Find the special name and degree of each of the following polynomial:
+
+* $5z^6 - 2z^2 - 3$
+* $2$
+* $3x - 1$
+  
+All we have to do is count the terms and find the largest exponent.
+
+
+|   Polynomial     |  Special Name     |  Degree  |
+|:----------------:|:---------:|:--------:|
+|$5z^6 - 2z^2 - 3$ | trinomial |    6     |
+|$2$               |  monomial |    0     |
+|$3x - 1$          |  binomial |    1     |
+
+---
+
+Polynomials can get quite large and messy. To keep polynomials organized, we usually write them in what is called {{< glink "standard form" >}}. This means arranging the terms from highest degree to lowest.
+
+Writing in standard form does not change the value of the expression, but it makes it easier to read, compare, and simplify. When every polynomial follows the same order, it is also easier to spot patterns.
+
+---
+
+**Example 2:**
+
+Write each of the following polynomials in standard form:
+
+a. $2y^2 - 3y^3 - 3$
+b. $2 - 3x + 2x^2$
+c. $9b^2 + 3b^3 - b^4 + 3$
+  
+We just need to sort the polynomials from largest to smallest exponent.
+
+
+|    |  Standard Form     |
+|:--:|:------------------:|
+|  a | $-3y^3 + 2y^2 - 3$ |
+|  b | $2x^2 - 3x + 2$    |
+|  c |  $-b^4 + 3b^3 + 9b^2 + 3$ |
+
+---
+
+
+:::{.you-try-m title="Identify features of polynomials"}
+
+For each of the following polynomials:
+
+* Determine if it has a special name.
+* Write the polynomial in standard form.
+* Identify the degree of the polynomial
+
+1. $3 - 2x^4$
+   
+2. $-5x^7 + 2x - 6$
+
+3. $42$
+
+4. $\tfrac{1}{3}a^9 - \tfrac{2}{9}a^3 + \tfrac{3}{5}a^7 - 4$
+   
+:::
+
+:::{.answer title="Answer"}
+
+|            | Special Name | Standard Form     | Degree  |
+|:----------:|:------------:|:----------------: |:-------:|
+| 1          | binomial     |  $-2x^4 + 3$      |   4     |
+| 2          | trinomial    |  $-5x^7 + 2x - 6$ |   7     |
+| 3          | monomial     |   $42$            |   0     |
+| 4          | None         | $\tfrac{1}{3}a^9 + \tfrac{3}{5}a^7 - 2a^3 - 4$ | 9 |
+
+:::
+
+Once we can recognize and name polynomials, the next step is to **simplify** them.  
+Simplifying makes expressions shorter, cleaner, and easier to work with.  
+We will use the exponent and combining rules from last time to tidy up polynomial expressions.
+
+---
+
+### 5.2.2 - Simplifying Polynomials
+
+In Unit 2, we learned how to simplify expressions by distributing and combining like terms. In the previous lesson, we learned how to simplify expressions containing exponents. Now we will combine these ideas to help us simplify polynomials to make them easier to work with.
+
+The process always follows the same four-step pattern:
+
+1. **Distribute** across parentheses if needed.
+2. Use **exponent rules** to simplify powers.
+3. **Combine {{< glink "like terms" >}}** (same variable and same exponent).
+4. Write in **standard form**.
+
+---
+
+**Example 3:**
+
+Simplify $3x^2 + 5x^2 - 4x$.
+
+The $x^2$ terms match, so we combine their coefficients.
+
+$$
+3x^2 + 5x^2 - 4x = 8x^2 - 4x
+$$
+
+
+---
+
+**Example 5**
+
+Simplify $(2x^3 + 4x^2) + (x^3 - 5x)$.
+
+Drop the parentheses and combine like terms.
+Color-coding or underlining can help you see what matches.
+
+$$
+(2x^3 + x^3) + 4x^2 - 5x = 3x^3 + 4x^2 - 5x
+$$
+
+:::{.you-try title="Simplify $(3x^4 - 2x^3 + x) + (2x^4 + 5x^2 - 6)$."}
+$5x^4 - 2x^3 + 5x^2 + x - 6$
+:::
+
+---
+
+**Example 6**
+
+Simplify $3x(2x^2 + 5x - 4)$.
+
+Distribute $3x$ to each term and apply the product rule $x^a \cdot x^b = x^{a+b}$.
+
+$$
+3x(2x^2 + 5x - 4) = 6x^3 + 15x^2 - 12x
+$$
+
+:::{.you-try title="Simplify $-4x^2(2x^3 - 3x + 1)$."}
+$-8x^5 + 12x^3 - 4x^2$
+:::
+
+---
+
+**Example 7**
+
+Simplify $3(2x^2 - x + 5) - (x^2 + 4x - 1)$.
+
+:::{.you-try-m title="Simplifying with distribution and subtraction"}
+Distribute both sets of parentheses, then combine like terms carefully.
+
+$3(2x^2 - x + 5) - (x^2 + 4x - 1)$
+:::
+
+:::{.answer title="Answer"}
+[
+\begin{align*}
+3(2x^2 - x + 5) - (x^2 + 4x - 1)
+&= 6x^2 - 3x + 15 - x^2 - 4x + 1 \
+&= (6x^2 - x^2) + (-3x - 4x) + (15 + 1) \
+&= 5x^2 - 7x + 16
+\end{align*}
+]
+:::
+
+---
+
+:::{.you-try title="Simplify $7x - (4x - 6)$."}
+$3x + 6$
+:::
+
+---
+
+:::{.gotcha}
+
+**Common Mistakes**
+
+* Combining terms with different exponents: $x^2 + x \neq 2x^2$
+* Losing signs when distributing: $a(b - c) = ab - ac$
+* Forgetting invisible 1’s: $-x = -1x$
+* Forgetting to reorder: always end in standard form (highest power to lowest)
+
+:::
+
+---
+
+### 5.2.3 - Closure - What We Have Learned
+
+When simplifying polynomials:
+
+* Each term has a clear structure: coefficient × variable × exponent.
+* Distribute first, then combine like terms.
+* Exponent rules help simplify powers when multiplying.
+* Standard form keeps everything organized from highest power to lowest.
+
+This process is: distribute, simplify, combine, and order.
+It is a pattern you will use constantly in algebra.
+Next, we will extend these same ideas to **adding, subtracting, and multiplying** entire polynomials.
+
+---
+
+{{< practice >}}
+
+**Identify and Name**
+
+Decide if each expression is a polynomial.
+If it is, name it by number of terms and degree.
+
+1. $4x^2 + 7x - 9$
+   
+2. $\dfrac{3}{x} + 2$
+   
+3. $5x^4 - 8x^2 + 1$
+   
+4. $7y - 4$
+   
+5. $\sqrt{x} + 5$
+   
+6. $9$
+   
+7. $x^{-2} + 4x - 3$
+   
+8. $2x^3 + 5x^2 - x + 4$
+
+---
+
+**Write in Standard Form**
+
+Rearrange each expression from highest to lowest degree.
+
+9. $3x + 7x^3 - 2x^2 + 5$
+    
+10. $6 - x + 4x^3 + x^2$
+    
+11. $2 + 3x^5 - 4x^4 + x^2$
+
+---
+
+**Simplify Polynomials**
+
+12. $4x^2 + 6x + 2x^2 - 3$
+    
+13. $(5x^3 - 2x) + (8x^3 + 4x^2)$
+    
+14. $2x(3x^2 + 5x - 4)$
+    
+15. $(3x^4 - 2x^3 + x) + (2x^4 + 5x^2 - 6)$
+    
+16. $-4x^2(2x^3 - 3x + 1)$
+    
+17. $3(2x^2 - x + 5) - (x^2 + 4x - 1)$
+    
+18. $-2x(5x^2 - 2x - 3) + 3x^3$
+    
+19. $(x^3 + 2x^2 - x) - (3x^3 - x^2 + 4x)$
+    
+20. $6x(x^2 - 3x) + 2(x^3 - x)$
+    
+21. $(4x^2 - 5x + 3) + (7x^2 + x - 9)$
+    
+22. $(2x^3 + 4x^2 - 5x) - (x^3 + 6x^2 - 8)$
+    
+23. $3x(x^3 + 2x^2 - 4x + 6)$
+    
+24. $5(x^2 - 2x + 1) - 3(x^2 - 1)$
+    
+25. $2(3x^3 - x^2 + 4) - (x^3 + 5x^2 - 2)$
+
+---
+
+:::{.answers}
+
+1. Polynomial, trinomial, degree 2
+2. Not a polynomial
+3. Polynomial, trinomial, degree 4
+4. Polynomial, binomial, degree 1
+5. Not a polynomial
+6. Polynomial, monomial, degree 0
+7. Not a polynomial
+8. Polynomial, 4 terms, degree 3
+9. $7x^3 - 2x^2 + 3x + 5$
+10. $4x^3 + x^2 - x + 6$
+11. $3x^5 - 4x^4 + x^2 + 2$
+12. $6x^2 + 6x - 3$
+13. $13x^3 + 4x^2 - 2x$
+14. $6x^3 + 10x^2 - 8x$
+15. $5x^4 - 2x^3 + 5x^2 + x - 6$
+16. $-8x^5 + 12x^3 - 4x^2$
+17. $5x^2 - 7x + 16$
+18. $-7x^3 + 4x^2 + 6x$
+19. $-2x^3 + 3x^2 - 5x$
+20. $8x^3 - 18x^2 - 2x$
+21. $11x^2 - 4x - 6$
+22. $x^3 - 2x^2 - 5x + 8$
+23. $3x^4 + 6x^3 - 12x^2 + 18x$
+24. $2x^2 - 10x + 8$
+25. $5x^3 - 7x^2 + 10$
+
+:::
