@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../images/logo.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
-
 
 
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
@@ -114,8 +98,6 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -145,8 +127,7 @@ window.MathJax = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../../index.html" class="sidebar-logo-link">
-      <img src="../../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -445,8 +426,8 @@ window.MathJax = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../chapters/Unit_5/5.2_Introduction_to_Polynomials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.2 - Introduction to Polynomials</span></a>
+  <a href="../../../chapters/Unit_5/5.2_Simplifying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Simplifying Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -658,22 +639,27 @@ window.MathJax = {
 <p>The orange line shows the <strong>best-fit line</strong>, which summarizes the trend.<br>
 Notice how the points stay close to the line when the relationship is strong<br>
 and spread out when the relationship is weak.</p>
-<!-- Correlation Widget – HiDPI crisp, white canvas, compact UI -->
+<!-- Correlation Widget – fixed lane + lane-wide drag + pointer capture (v4) -->
 <div class="correlation-widget" data-points="140" style="max-width:600px;margin:0.75rem auto">
 
 </div>
 <style>
   .correlation-widget {
+    --cw-slider-w: 320px;   /* fixed lane width */
+    --cw-track-h: 28px;
+    --cw-thumb:   18px;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    background-color: #ffffff !important;
+    background: #fff !important;
   }
 
-  /* Compact controls */
-  .cw-controls {
+  /* Controls: label | FIXED lane | pill (flex) */
+  .correlation-widget .cw-controls {
     display: grid;
-    grid-template-columns: minmax(80px, auto) 1fr auto;
+    grid-template-columns: max-content var(--cw-slider-w) 1fr !important;
     grid-template-rows: auto auto;
-    grid-template-areas: "label slider pill" "rho rho refresh";
+    grid-template-areas:
+      "label slider pill"
+      "rho   rho    refresh";
     align-items: center;
     column-gap: 10px;
     row-gap: 6px;
@@ -681,293 +667,428 @@ and spread out when the relationship is weak.</p>
     border-radius: 10px;
     padding: 6px 8px;
     margin-bottom: 8px;
-    background: #fff
+    background: #fff;
   }
 
-  .cw-label {
+  .correlation-widget .cw-label {
+    grid-area: label;
     color: #555;
-    font-size: .95rem
+    font-size: .95rem;
+    white-space: nowrap;
   }
 
-  .cw-pill {
+  /* Slider lane: this whole area is draggable */
+  .correlation-widget .cw-slider-wrap {
+    grid-area: slider;
+    position: relative;
+    width: var(--cw-slider-w);
+    min-width: var(--cw-slider-w);
+    height: var(--cw-track-h);
+    display: flex;
+    align-items: center;
+    /* slightly larger hit area */
+    padding: 6px 0;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none; /* allow smooth horizontal drag without scrolling */
+  }
+  .correlation-widget .cw-slider-wrap.dragging { cursor: grabbing; }
+
+  /* Native range takes the lane width but we also listen on the wrapper */
+  .correlation-widget .cw-slider {
+    width: 100% !important;
+    min-width: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  /* Thicker track & larger thumb — WebKit/Blink */
+  .correlation-widget .cw-slider::-webkit-slider-runnable-track {
+    height: var(--cw-track-h);
+    background: #e9ecef;
+    border-radius: 999px;
+    border: 1px solid #dde2e6;
+  }
+  .correlation-widget .cw-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: var(--cw-thumb);
+    width: var(--cw-thumb);
+    border-radius: 50%;
+    margin-top: calc((var(--cw-track-h) - var(--cw-thumb)) / 2);
+    background: #1976d2;
+    border: 2px solid #125a9e;
+    box-sizing: border-box;
+  }
+
+  /* Firefox */
+  .correlation-widget .cw-slider::-moz-range-track {
+    height: var(--cw-track-h);
+    background: #e9ecef;
+    border-radius: 999px;
+    border: 1px solid #dde2e6;
+  }
+  .correlation-widget .cw-slider::-moz-range-thumb {
+    height: var(--cw-thumb);
+    width: var(--cw-thumb);
+    border-radius: 50%;
+    background: #1976d2;
+    border: 2px solid #125a9e;
+  }
+
+  .correlation-widget .cw-pill {
+    grid-area: pill;
+    justify-self: end;
     display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     border-radius: 999px;
     padding: 3px 8px;
     line-height: 1;
-    min-width: 110px;
-    text-align: center;
     font-weight: 600;
     font-size: .8rem;
     color: #fff;
-    background: #6a737d
+    background: #6a737d;
   }
 
-  .cw-metrics {
+  .correlation-widget .cw-metrics {
+    grid-area: rho;
     display: flex;
     gap: 8px;
     align-items: baseline;
     color: #666;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: .95rem
+    font-size: .95rem;
   }
-
-  .cw-val {
+  .correlation-widget .cw-val {
     display: inline-block;
     min-width: 7ch;
     text-align: right;
-    color: #222
+    color: #222;
   }
 
-  .cw-btn {
+  .correlation-widget .cw-btn {
+    grid-area: refresh;
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 8px;
     padding: 6px 10px;
-    cursor: pointer
+    cursor: pointer;
+    white-space: nowrap;
   }
 
-  .cw-slider {
-    width: 100%;
-    cursor: grab
-  }
-
-  .cw-slider:active {
-    cursor: grabbing
-  }
-
-  @media (max-width:520px) {
-    .cw-slider {
-      width: 160px
-    }
-  }
-
-  /* Square canvas (CSS size) */
-  .cw-canvas {
+  .correlation-widget .cw-canvas {
     border: 1px solid #ddd;
     border-radius: 10px;
     display: block;
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    background: #fff
+    background: #fff;
   }
 
   /* Color states */
-  .cw-pos {
-    background: #22863a !important
-  }
+  .correlation-widget .cw-pos { background: #22863a !important; }
+  .correlation-widget .cw-neg { background: #d73a49 !important; }
+  .correlation-widget .cw-neu { background: #6a737d !important; }
 
-  .cw-neg {
-    background: #d73a49 !important
-  }
-
-  .cw-neu {
-    background: #6a737d !important
+  @media (max-width: 520px) {
+    .correlation-widget { --cw-slider-w: 220px; }
   }
 </style>
 <script>
-  (() => {
-    function createWidget(root) {
-      // UI
-      const controls = document.createElement('div'); controls.className = 'cw-controls';
-      const label = document.createElement('span'); label.className = 'cw-label'; label.textContent = 'Correlation:';
-      const slider = document.createElement('input'); slider.type = 'range'; slider.min = '-0.99'; slider.max = '0.99'; slider.step = '0.01'; slider.value = '0.80'; slider.className = 'cw-slider';
-      const pill = document.createElement('span'); pill.className = 'cw-pill cw-neu'; pill.textContent = 'High Positive';
-      const metrics = document.createElement('div'); metrics.className = 'cw-metrics';
-      const tWrap = document.createElement('span'); tWrap.innerHTML = 'ρ: <span class="cw-val cw-target">+0.80</span>';
-      const targetEl = tWrap.querySelector('.cw-target');
-      const refresh = document.createElement('button'); refresh.className = 'cw-btn'; refresh.title = 'New random base cloud (keeps current ρ)'; refresh.textContent = '🔁 New Sample';
-      metrics.appendChild(tWrap);
-      // place into fixed grid rows
-      label.style.gridArea = 'label';
-      slider.style.gridArea = 'slider';
-      pill.style.gridArea = 'pill';
-      metrics.style.gridArea = 'rho';
-      refresh.style.gridArea = 'refresh';
-      controls.append(label, slider, pill, metrics, refresh);
+(() => {
+  function createWidget(root) {
+    // UI
+    const controls = document.createElement('div'); controls.className = 'cw-controls';
 
-      const canvas = document.createElement('canvas'); canvas.className = 'cw-canvas';
-      root.append(controls, canvas);
+    const label = document.createElement('span');
+    label.className = 'cw-label';
+    label.textContent = 'Correlation:';
 
-      const ctx = canvas.getContext('2d', { alpha: false });
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = '-0.99';
+    slider.max = '0.99';
+    slider.step = '0.01';
+    slider.value = '0.80';
+    slider.className = 'cw-slider';
 
-      // Layout & HiDPI
-      const AX = { xmin: -3, xmax: 3, ymin: -3, ymax: 3, pad: 52 }; // CSS px
-      let Wcss = 0, Hcss = 0, dpr = 1, PX = 1;
+    // Lane wrapper: pointer capture + wide hit area
+    const sliderWrap = document.createElement('div');
+    sliderWrap.className = 'cw-slider-wrap';
+    sliderWrap.appendChild(slider);
 
-      function resizeCanvas() {
-        const cssW = Math.max(1, Math.round(canvas.clientWidth));
-        const cssH = cssW; // 1:1
-        if (cssW === Wcss && cssH === Hcss) return;
-        Wcss = cssW; Hcss = cssH;
-        dpr = Math.min(3, window.devicePixelRatio || 1);
-        PX = 1 / dpr;                        // crisp 1 device pixel
-        canvas.width = Math.max(1, Math.floor(Wcss * dpr));
-        canvas.height = Math.max(1, Math.floor(Hcss * dpr));
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);   // draw in CSS units
-        scheduleRender(currentRho, true);
-      }
+    const pill = document.createElement('span');
+    pill.className = 'cw-pill cw-neu';
+    pill.textContent = 'High Positive';
 
-      const sx = x => AX.pad + (x - AX.xmin) / (AX.xmax - AX.xmin) * (Wcss - 2 * AX.pad);
-      const sy = y => Hcss - AX.pad - (y - AX.ymin) / (AX.ymax - AX.ymin) * (Hcss - 2 * AX.pad);
+    const metrics = document.createElement('div');
+    metrics.className = 'cw-metrics';
+    const tWrap = document.createElement('span');
+    tWrap.innerHTML = 'ρ: <span class="cw-val cw-target">+0.80</span>';
+    const targetEl = tWrap.querySelector('.cw-target');
+    metrics.appendChild(tWrap);
 
-      // RNG & data
-      function randn() {
-        let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random();
-        return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
-      }
+    const refresh = document.createElement('button');
+    refresh.className = 'cw-btn';
+    refresh.title = 'New random base cloud (keeps current ρ)';
+    refresh.textContent = '🔁 New Sample';
 
-      const N = Number(root.dataset.points || 140);
+    controls.append(label, sliderWrap, pill, metrics, refresh);
 
-      function center(v) {
-        const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i]; const mu = s / n;
-        const out = new Float32Array(n); for (let i = 0; i < n; i++) out[i] = v[i] - mu; return out;
-      }
-      function sd(v) {
-        const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i]; const mu = s / n;
-        let ss = 0; for (let i = 0; i < n; i++) { const d = v[i] - mu; ss += d * d; } return Math.sqrt(ss / n);
-      }
-      function scaleToUnitSD(v) {
-        const s = sd(v) || 1; const n = v.length; const out = new Float32Array(n);
-        for (let i = 0; i < n; i++) out[i] = v[i] / s; return out;
-      }
-      function dot(a, b) { let s = 0; for (let i = 0; i < a.length; i++) s += a[i] * b[i]; return s; }
+    const canvas = document.createElement('canvas');
+    canvas.className = 'cw-canvas';
+    root.append(controls, canvas);
 
-      let X_unit, Zperp_unit;
-      function initBase() {
-        const X0 = new Float32Array(N), Z0 = new Float32Array(N);
-        for (let i = 0; i < N; i++) { X0[i] = randn(); Z0[i] = randn(); }
-        const Xc = center(X0), Zc = center(Z0);
-        const uu = dot(Xc, Xc) || 1;
-        const k = dot(Zc, Xc) / uu;
-        const Zperp = new Float32Array(N); for (let i = 0; i < N; i++) Zperp[i] = Zc[i] - k * Xc[i];
-        X_unit = scaleToUnitSD(Xc); Zperp_unit = scaleToUnitSD(Zperp);
-      }
-      initBase();
+    const ctx = canvas.getContext('2d', { alpha: false });
 
-      const XY = new Float32Array(2 * N);
-      function buildXY(rho) {
-        const s = Math.sqrt(1 - rho * rho);
-        for (let i = 0; i < N; i++) {
-          const x = X_unit[i];
-          XY[2 * i] = x;
-          XY[2 * i + 1] = rho * x + s * Zperp_unit[i];
-        }
-      }
+    // HiDPI & coords
+    const AX = { xmin: -3, xmax: 3, ymin: -3, ymax: 3, pad: 52 };
+    let Wcss = 0, Hcss = 0, dpr = 1, PX = 1;
 
-      function fitLine() {
-        let sxv = 0, syv = 0, sxx = 0, sxy = 0;
-        for (let i = 0; i < N; i++) { const x = XY[2 * i], y = XY[2 * i + 1]; sxv += x; syv += y; sxx += x * x; sxy += x * y; }
-        const n = N, mx = sxv / n, my = syv / n;
-        const m = (sxy - n * mx * my) / (sxx - n * mx * mx);
-        const b = my - m * mx;
-        return { m, b };
-      }
-
-      function draw(line) {
-        // White background to avoid any dark compositing on some browsers
-        ctx.save();
-        ctx.fillStyle = '#fff';
-        ctx.fillRect(0, 0, Wcss, Hcss);
-        ctx.restore();
-
-        // Grid
-        ctx.lineWidth = PX;
-        ctx.strokeStyle = '#e6e6e6';
-        for (let x = -3; x <= 3; x++) {
-          const X = Math.round(sx(x));
-          ctx.beginPath(); ctx.moveTo(X, sy(-3)); ctx.lineTo(X, sy(3)); ctx.stroke();
-        }
-        for (let y = -3; y <= 3; y++) {
-          const Y = Math.round(sy(y));
-          ctx.beginPath(); ctx.moveTo(sx(-3), Y); ctx.lineTo(sx(3), Y); ctx.stroke();
-        }
-
-        // Axes
-        ctx.lineWidth = 2 * PX;
-        ctx.strokeStyle = '#bdbdbd';
-        const Y0 = Math.round(sy(0));
-        ctx.beginPath(); ctx.moveTo(sx(-3), Y0); ctx.lineTo(sx(3), Y0); ctx.stroke();
-        const X0 = Math.round(sx(0));
-        ctx.beginPath(); ctx.moveTo(X0, sy(-3)); ctx.lineTo(X0, sy(3)); ctx.stroke();
-
-        // Ticks / labels
-        ctx.fillStyle = '#6a6a6a';
-        ctx.font = '12px system-ui, sans-serif';
-        for (let x = -3; x <= 3; x++) ctx.fillText(String(x), sx(x) - 3, Y0 + 14);
-        for (let y = -3; y <= 3; y++) if (y !== 0) ctx.fillText(String(y), X0 + 6, sy(y) + 4);
-
-        // Points
-        ctx.fillStyle = '#3777c2';
-        for (let i = 0; i < N; i++) {
-          const x = XY[2 * i], y = XY[2 * i + 1];
-          if (x < -3 || x > 3 || y < -3 || y > 3) continue;
-          ctx.beginPath(); ctx.arc(sx(x), sy(y), 2, 0, Math.PI * 2); ctx.fill();
-        }
-
-        // Regression line
-        ctx.lineWidth = 2 * PX;
-        ctx.strokeStyle = '#ff8c00';
-        ctx.beginPath();
-        ctx.moveTo(sx(AX.xmin), sy(line.m * AX.xmin + line.b));
-        ctx.lineTo(sx(AX.xmax), sy(line.m * AX.xmax + line.b));
-        ctx.stroke();
-      }
-
-      function descriptor(rho) {
-        const a = Math.abs(rho);
-        const strength = (a < 0.15) ? "No/Very Weak" : (a < 0.35) ? "Low" : (a < 0.65) ? "Moderate" : "High";
-        let cls = 'cw-neu', text = strength;
-        if (rho > 0.05) { cls = 'cw-pos'; text = `${strength} Positive`; }
-        else if (rho < -0.05) { cls = 'cw-neg'; text = `${strength} Negative`; }
-        pill.classList.remove('cw-pos', 'cw-neg', 'cw-neu'); pill.classList.add(cls);
-        pill.textContent = text;
-      }
-
-      // Render loop
-      let currentRho = parseFloat(slider.value);
-      let pendingRho = null, rafScheduled = false;
-      function scheduleRender(rho, force = false) {
-        if (typeof rho === 'number') pendingRho = rho;
-        if (force) { doRender(); return; }
-        if (!rafScheduled) { rafScheduled = true; requestAnimationFrame(doRender); }
-      }
-      function doRender() {
-        rafScheduled = false;
-        if (pendingRho !== null) { currentRho = pendingRho; pendingRho = null; }
-        buildXY(currentRho);
-        descriptor(currentRho);
-        targetEl.textContent = (currentRho >= 0 ? '+' : '') + currentRho.toFixed(2);
-        draw(fitLine());
-      }
-
-      // Events
-      slider.addEventListener('input', () => scheduleRender(parseFloat(slider.value)));
-      refresh.addEventListener('click', () => { initBase(); scheduleRender(currentRho); });
-
-      // Resize observer for crisp redraws
-      const ro = new ResizeObserver(resizeCanvas);
-      ro.observe(canvas);
-      resizeCanvas(); // initial
+    function resizeCanvas() {
+      const cssW = Math.max(1, Math.round(canvas.clientWidth));
+      const cssH = cssW;
+      if (cssW === Wcss && cssH === Hcss) return;
+      Wcss = cssW; Hcss = cssH;
+      dpr = Math.min(3, window.devicePixelRatio || 1);
+      PX = 1 / dpr;
+      canvas.width  = Math.max(1, Math.floor(Wcss * dpr));
+      canvas.height = Math.max(1, Math.floor(Hcss * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      scheduleRender(currentRho, true);
     }
 
-    document.querySelectorAll('.correlation-widget').forEach(createWidget);
-  })();
+    const sx = x => AX.pad + (x - AX.xmin) / (AX.xmax - AX.xmin) * (Wcss - 2 * AX.pad);
+    const sy = y => Hcss - AX.pad - (y - AX.ymin) / (AX.ymax - AX.ymin) * (Hcss - 2 * AX.pad);
+
+    // RNG & data
+    function randn() {
+      let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random();
+      return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+    }
+
+    const N = Number(root.dataset.points || 140);
+
+    function center(v) {
+      const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i];
+      const mu = s / n;
+      const out = new Float32Array(n);
+      for (let i = 0; i < n; i++) out[i] = v[i] - mu;
+      return out;
+    }
+    function sd(v) {
+      const n = v.length; let s = 0; for (let i = 0; i < n; i++) s += v[i];
+      const mu = s / n;
+      let ss = 0; for (let i = 0; i < n; i++) { const d = v[i] - mu; ss += d * d; }
+      return Math.sqrt(ss / n);
+    }
+    function scaleToUnitSD(v) {
+      const s = sd(v) || 1; const n = v.length; const out = new Float32Array(n);
+      for (let i = 0; i < n; i++) out[i] = v[i] / s;
+      return out;
+    }
+    function dot(a, b) { let s = 0; for (let i = 0; i < a.length; i++) s += a[i] * b[i]; return s; }
+
+    let X_unit, Zperp_unit;
+    function initBase() {
+      const X0 = new Float32Array(N), Z0 = new Float32Array(N);
+      for (let i = 0; i < N; i++) { X0[i] = randn(); Z0[i] = randn(); }
+      const Xc = center(X0), Zc = center(Z0);
+      const uu = dot(Xc, Xc) || 1;
+      const k = dot(Zc, Xc) / uu;
+      const Zperp = new Float32Array(N); for (let i = 0; i < N; i++) Zperp[i] = Zc[i] - k * Xc[i];
+      X_unit = scaleToUnitSD(Xc);
+      Zperp_unit = scaleToUnitSD(Zperp);
+    }
+    initBase();
+
+    const XY = new Float32Array(2 * N);
+    function buildXY(rho) {
+      const s = Math.sqrt(1 - rho * rho);
+      for (let i = 0; i < N; i++) {
+        const x = X_unit[i];
+        XY[2 * i]     = x;
+        XY[2 * i + 1] = rho * x + s * Zperp_unit[i];
+      }
+    }
+
+    function fitLine() {
+      let sxv = 0, syv = 0, sxx = 0, sxy = 0;
+      for (let i = 0; i < N; i++) {
+        const x = XY[2 * i], y = XY[2 * i + 1];
+        sxv += x; syv += y; sxx += x * x; sxy += x * y;
+      }
+      const n = N, mx = sxv / n, my = syv / n;
+      const m = (sxy - n * mx * my) / (sxx - n * mx * mx);
+      const b = my - m * mx;
+      return { m, b };
+    }
+
+    function draw(line) {
+      ctx.save();
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, Wcss, Hcss);
+      ctx.restore();
+
+      // Grid
+      ctx.lineWidth = PX;
+      ctx.strokeStyle = '#e6e6e6';
+      for (let x = -3; x <= 3; x++) {
+        const X = Math.round(sx(x));
+        ctx.beginPath(); ctx.moveTo(X, sy(-3)); ctx.lineTo(X, sy(3)); ctx.stroke();
+      }
+      for (let y = -3; y <= 3; y++) {
+        const Y = Math.round(sy(y));
+        ctx.beginPath(); ctx.moveTo(sx(-3), Y); ctx.lineTo(sx(3), Y); ctx.stroke();
+      }
+
+      // Axes
+      ctx.lineWidth = 2 * PX;
+      ctx.strokeStyle = '#bdbdbd';
+      const Y0 = Math.round(sy(0));
+      ctx.beginPath(); ctx.moveTo(sx(-3), Y0); ctx.lineTo(sx(3), Y0); ctx.stroke();
+      const X0 = Math.round(sx(0));
+      ctx.beginPath(); ctx.moveTo(X0, sy(-3)); ctx.lineTo(X0, sy(3)); ctx.stroke();
+
+      // Ticks / labels
+      ctx.fillStyle = '#6a6a6a';
+      ctx.font = '12px system-ui, sans-serif';
+      for (let x = -3; x <= 3; x++) ctx.fillText(String(x), sx(x) - 3, Y0 + 14);
+      for (let y = -3; y <= 3; y++) if (y !== 0) ctx.fillText(String(y), X0 + 6, sy(y) + 4);
+
+      // Points
+      const r = dragging ? 1.5 : 2;
+      ctx.fillStyle = '#3777c2';
+      for (let i = 0; i < N; i++) {
+        const x = XY[2 * i], y = XY[2 * i + 1];
+        if (x < -3 || x > 3 || y < -3 || y > 3) continue;
+        ctx.beginPath(); ctx.arc(sx(x), sy(y), r, 0, Math.PI * 2); ctx.fill();
+      }
+
+      // Regression line
+      ctx.lineWidth = 2 * PX;
+      ctx.strokeStyle = '#ff8c00';
+      ctx.beginPath();
+      ctx.moveTo(sx(AX.xmin), sy(line.m * AX.xmin + line.b));
+      ctx.lineTo(sx(AX.xmax), sy(line.m * AX.xmax + line.b));
+      ctx.stroke();
+    }
+
+    // Pill updater (bucketed)
+    let lastBucket = null;
+    function descriptor(rho) {
+      const a = Math.abs(rho);
+      const strength = (a < 0.15) ? "No/Very Weak"
+                    : (a < 0.35) ? "Low"
+                    : (a < 0.65) ? "Moderate"
+                    : "High";
+      let cls = 'cw-neu', text = strength;
+      if (rho > 0.05) { cls = 'cw-pos'; text = `${strength} Positive`; }
+      else if (rho < -0.05) { cls = 'cw-neg'; text = `${strength} Negative`; }
+      const bucket = cls + '|' + text;
+      if (bucket !== lastBucket) {
+        pill.classList.remove('cw-pos','cw-neg','cw-neu');
+        pill.classList.add(cls);
+        pill.textContent = text;
+        lastBucket = bucket;
+      }
+    }
+
+    // Render loop
+    let currentRho = parseFloat(slider.value);
+    let pendingRho = null, rafScheduled = false;
+
+    function scheduleRender(rho, force = false) {
+      if (typeof rho === 'number') pendingRho = rho;
+      if (force) { doRender(); return; }
+      if (!rafScheduled) { rafScheduled = true; requestAnimationFrame(doRender); }
+    }
+
+    function doRender() {
+      rafScheduled = false;
+      if (pendingRho !== null) { currentRho = pendingRho; pendingRho = null; }
+      buildXY(currentRho);
+      descriptor(currentRho);
+      targetEl.textContent = (currentRho >= 0 ? '+' : '') + currentRho.toFixed(2);
+      draw(fitLine());
+    }
+
+    // ----- Lane-wide drag with pointer capture -----
+    let dragging = false;
+
+    function valFromX(clientX) {
+      const rect = slider.getBoundingClientRect(); // use input's exact track width
+      const t = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+      const min = parseFloat(slider.min), max = parseFloat(slider.max), step = parseFloat(slider.step) || 0.01;
+      const raw = min + t * (max - min);
+      // snap to step
+      const snapped = Math.round(raw / step) * step;
+      return Math.min(max, Math.max(min, snapped));
+    }
+
+    function beginDrag(e) {
+      dragging = true;
+      sliderWrap.classList.add('dragging');
+      sliderWrap.setPointerCapture?.(e.pointerId);
+      const v = valFromX(e.clientX);
+      if (v !== currentRho) {
+        slider.value = String(v);
+        scheduleRender(v);
+      }
+      e.preventDefault();
+    }
+
+    function moveDrag(e) {
+      if (!dragging) return;
+      const v = valFromX(e.clientX);
+      if (v !== currentRho) {
+        slider.value = String(v);
+        scheduleRender(v);
+      }
+    }
+
+    function endDrag(e) {
+      if (!dragging) return;
+      dragging = false;
+      sliderWrap.classList.remove('dragging');
+      sliderWrap.releasePointerCapture?.(e.pointerId);
+      scheduleRender(currentRho, true);
+    }
+
+    // Listen on the lane wrapper, not just the tiny thumb
+    sliderWrap.addEventListener('pointerdown', beginDrag, { passive: false });
+    sliderWrap.addEventListener('pointermove', moveDrag, { passive: false });
+    sliderWrap.addEventListener('pointerup',   endDrag,   { passive: true });
+    sliderWrap.addEventListener('pointercancel', endDrag, { passive: true });
+    // Keep native keyboard accessibility
+    slider.addEventListener('input', () => scheduleRender(parseFloat(slider.value)));
+
+    refresh.addEventListener('click', () => { initBase(); scheduleRender(currentRho); });
+
+    // Resize observer
+    const ro = new ResizeObserver(resizeCanvas);
+    ro.observe(root);
+    resizeCanvas();
+  }
+
+  document.querySelectorAll('.correlation-widget').forEach(createWidget);
+})();
 </script>
 <hr>
-<p>To learn more, take a look at <a href="../../..\chapters/Unit_4/4.5_Linear_Models_in_the_Real_World.qmd">4.5 – Linear Models in the Real World</a></p>
+<p>To learn more, take a look at <a href="../../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html">4.6 – Linear Models in the Real World</a></p>
 
 
 
 </main> <!-- /main -->
 <script src="../../../scripts/popper.min.js"></script>
-
 <script src="../../../scripts/tippy.min.js"></script>
-
 <script src="../../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1019,14 +1140,13 @@ and spread out when the relationship is weak.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
