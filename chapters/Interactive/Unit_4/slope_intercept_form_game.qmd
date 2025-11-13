@@ -1,18 +1,18 @@
 # Line Matching Game {.unnumbered}
 
-In this game, you’ll practice writing equations for lines in **slope–intercept form** ($y = mx + b$).
+A quick way to build intuition for how slope and intercept shape a line.
 
-Your goal is to match the **target line** that appears on the graph.
+Match the **hidden target line** using slope–intercept form ($y = mx + b$).
 
 **How to play:**
 
-1. Click **Start** to begin the round. A green target line will appear.
-2. Type a **slope ($m$)** and **y-intercept ($b$)** for your line, then click **Apply**.
-3. You have **6 tries** and **1 minute** to match the target line exactly.
-4. Each correct match earns points — faster answers give a **time bonus**, and every **100 points** adds an **extra life**.
-5. Run out of moves or time, and you’ll lose a life. Lose all lives, and the game is over.
+1. Hit **Start** to begin a round.
+2. Enter your **$m$** and **$b$**, then press **Apply** to reveal your guess.
+3. You have limited **moves**, and (if enabled) a **timer** — faster matches earn bigger multipliers.
+4. Correct answers give points; every **100 points** = **+1 life**.
+5. Run out of moves or lives and the game ends.
 
-This game helps you visualize how slope and intercept affect a line and builds intuition for graphing equations.
+
 
 
 {{< include /assets/Unit_4/slope-intercept-form-game.html >}}

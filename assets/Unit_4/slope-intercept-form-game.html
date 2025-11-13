@@ -1,590 +1,1317 @@
-<!-- Line Match Game – v5.35 (full game + controls restored; animations; time-bonus bands; extra-life toast) -->
+<!-- Line Match Game – v6.2 -->
 <div class="lm9-root" data-max-moves="6" data-lives="3"></div>
 
 <style>
-  :root {
-    --plot-pad: 12px;
-    --bg-card: #f9fafb;
-    --bd-card: #e2e8f0;
-    --ink: #0f172a;
-    --accent: #2563eb;
-    --accent-strong: #1d4ed8;
-    --grid: #e2e8f0;
-    --axis: #111827;
-    --target: #10b981;
-    --player: #2563eb;
-    --warn: #f59e0b;
-    --danger: #ef4444;
-  }
+:root{
+  --plot-pad:12px;
+  --bg-card:#f9fafb;
+  --bd-card:#e2e8f0;
+  --ink:#0f172a;
+  --accent:#2563eb;
+  --accent-strong:#1d4ed8;
+  --grid:#e2e8f0;
+  --axis:#111827;
+  --plot-bg:#ffffff;
+  --target:#10b981;
+  --player:#2563eb;
+  --warn:#f59e0b;
+  --danger:#ef4444;
+  --tile-bg:#ffffff;
+  --tile-bd:#e2e8f0;
+  --panel-bg:#ffffff;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.25);
+  --tab-bg:#ffffff;
+  --tab-bd:#e2e8f0;
+  --tab-ink:#334155;
+  --tab-active:#2563eb;
+  --tab-active-ink:#ffffff;
+  --tick:#0f172a;
+}
 
-  .lm9-root {
-    max-width: 600px;
-    margin: 16px auto;
-    padding: 14px;
-    font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial;
-    color: var(--ink);
-  }
+/* Global monospace override for the whole widget system */
+:root {
+  --lm-font: 'Courier New', Courier, monospace !important;
+}
 
-  .lm9-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 10px
-  }
 
-  /* SCOREBOARD */
-  .scoreboard {
-    background: #fff;
-    border: 1px solid var(--bd-card);
-    border-radius: 10px;
-    padding: 6px 8px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    align-items: stretch
-  }
+/* THEME: MIDNIGHT (high-contrast cyan/blue on deep navy) */
+.lm9-root.theme-midnight{
+  --bg-card:#020617;
+  --bd-card:#111827;
+  --ink:#e5e7eb;
+  --accent:#22d3ee;
+  --accent-strong:#0ea5e9;
+  --grid:#111827;
+  --axis:#e5e7eb;
+  --plot-bg:#020617;
+  --target:#4ade80;   /* bright green */
+  --player:#38bdf8;   /* bright cyan */
+  --warn:#facc15;
+  --danger:#fb7185;
+  --tile-bg:#020617;
+  --tile-bd:#111827;
+  --panel-bg:#020617;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.65);
+  --tab-bg:#020617;
+  --tab-bd:#111827;
+  --tab-ink:#9ca3af;
+  --tab-active:#0ea5e9;
+  --tab-active-ink:#0b1120;
+  --tick:#e5e7eb;
+}
 
-  .tile {
-    background: #fff;
-    border: 1px solid var(--bd-card);
-    border-radius: 10px;
-    padding: 10px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: border-color .2s, color .2s
-  }
+/* THEME: OCEAN (unchanged, already good) */
+.lm9-root.theme-ocean{
+  --bg-card:#ecfeff;
+  --bd-card:#bae6fd;
+  --ink:#0f172a;
+  --accent:#0ea5e9;
+  --accent-strong:#0284c7;
+  --grid:#e0f2fe;
+  --axis:#0f172a;
+  --plot-bg:#f0f9ff;
+  --target:#22c55e;
+  --player:#0369a1;
+  --warn:#f97316;
+  --danger:#ef4444;
+  --tile-bg:#f9feff;
+  --tile-bd:#bae6fd;
+  --panel-bg:#f9feff;
+  --panel-shadow:0 10px 30px rgba(15,23,42,.18);
+  --tab-bg:#e0f2fe;
+  --tab-bd:#bae6fd;
+  --tab-ink:#0f172a;
+  --tab-active:#0ea5e9;
+  --tab-active-ink:#ffffff;
+  --tick:#0f172a;
+}
 
-  .tile .lbl {
-    font-size: 11px;
-    letter-spacing: .06em;
-    color: #475569;
-    font-weight: 800;
-    text-transform: uppercase
-  }
+/* THEME: DARCULA – warm purple + neon accents */
+.lm9-root.theme-darcula{
+  --bg-card:#1e1f22;
+  --bd-card:#2b2d31;
+  --ink:#f8fafc;
+  --accent:#c084fc;          /* purple accent */
+  --accent-strong:#a855f7;
+  --grid:#2b2d31;
+  --axis:#e5e7eb;
+  --plot-bg:#1e1f22;
+  --target:#facc15;          /* gold target line */
+  --player:#c084fc;          /* purple player line */
+  --warn:#fbbf24;
+  --danger:#fb7185;
+  --tile-bg:#1e1f22;
+  --tile-bd:#2b2d31;
+  --panel-bg:#1e1f22;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.8);
+  --tab-bg:#1e1f22;
+  --tab-bd:#2b2d31;
+  --tab-ink:#cbd5e1;
+  --tab-active:#a855f7;
+  --tab-active-ink:#1e1f22;
+  --tick:#e2e8f0;
+}
 
-  .tile .val {
-    font-variant-numeric: tabular-nums;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 18px;
-    font-weight: 900;
-    margin-top: 2px
-  }
+/* THEME: TERMINAL GREEN – neon CRT-style */
+.lm9-root.theme-terminal{
+  --bg-card:#020617;
+  --bd-card:#064e3b;
+  --ink:#bbf7d0;
+  --accent:#22c55e;
+  --accent-strong:#16a34a;
+  --grid:#022c22;
+  --axis:#22c55e;
+  --plot-bg:#020617;
+  --target:#39ff14;          /* bright neon green */
+  --player:#a7f3d0;          /* softer mint for player line */
+  --warn:#f97316;
+  --danger:#ef4444;
+  --tile-bg:#020617;
+  --tile-bd:#064e3b;
+  --panel-bg:#020617;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.85);
+  --tab-bg:#020617;
+  --tab-bd:#064e3b;
+  --tab-ink:#a7f3d0;
+  --tab-active:#16a34a;
+  --tab-active-ink:#02130c;
+  --tick:#bbf7d0;
+}
 
+.lm9-root {
+  max-width: 600px;
+  margin: 16px auto;
+  padding: 14px;
+  font-family: var(--lm-font);
+  color: var(--ink);
+}
+
+/* TABS */
+.tabs{
+  display:flex;
+  gap:8px;
+  margin-bottom:8px;
+}
+.tab{
+  background:var(--tab-bg);
+  border:1px solid var(--tab-bd);
+  color:var(--tab-ink);
+  padding:6px 10px;
+  border-radius:10px;
+  font-weight:800;
+  font-size:12px;
+  cursor:pointer;
+  user-select:none;
+}
+.tab.active{
+  border-color:var(--accent-strong);
+  background:var(--accent);
+  color:var(--tab-active-ink);
+}
+
+.lm9-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-auto-rows:auto;
+  gap:10px;
+}
+
+/* SCOREBOARD */
+.scoreboard{
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:6px 8px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  align-items:stretch;
+}
+.tile{
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:10px 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  transition:border-color .2s,color .2s;
+}
+.tile .lbl{
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#475569;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.lm9-root.theme-midnight .tile .lbl,
+.lm9-root.theme-darcula .tile .lbl,
+.lm9-root.theme-terminal .tile .lbl{
+  color:#9aa5b1;
+}
+.tile .val{
+  font-variant-numeric:tabular-nums;
+  font-size:18px;
+  font-weight:900;
+  margin-top:2px;
+}
+.tile.time.warn,
+.tile.moves.warn{
+  border-color:var(--warn);
+  animation:pulseRing 1.3s ease-out infinite;
+}
+.tile.time.danger,
+.tile.moves.danger{
+  border-color:var(--danger);
+  animation:pulseRing .85s ease-out infinite;
+}
+.tile.life{
+  position:relative;
+}
+.life-toast{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  background:#10b981;
+  color:#fff;
+  border-radius:9999px;
+  padding:2px 6px;
+  font-weight:800;
+  font-size:11px;
+  opacity:0;
+  transform:translateY(-6px);
+  transition:opacity .18s,transform .18s;
+  box-shadow:0 2px 6px rgba(16,185,129,.35);
+}
+.life-toast.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* GRAPH */
+.plot-wrap{
+  position:relative;
+  padding:10px;
+  overflow:hidden;
+  border-radius:12px;
+  background:var(--tile-bg);
+  border:1px solid var(--bd-card);
+}
+.plot{
+  width:100%;
+  aspect-ratio:1/1;
+  height:auto;
+  display:block;
+  background:transparent;
+  border-radius:10px;
+  border:0;
+}
+.eq-badge{
+  position:absolute;
+  z-index:2;
+  top:var(--plot-pad);
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--panel-bg);
+  color:var(--ink);
+  border:1px solid var(--bd-card);
+  border-radius:8px;
+  padding:6px 10px;
+  font-weight:700;
+  font-size:13px;
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+  display:none;
+  animation:popIn .18s ease-out;
+}
+
+.start-overlay{
+  position:absolute;
+  inset:10px;
+  background:rgba(255,255,255,.96);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:3;
+  border-radius:10px;
+  border:1px dashed var(--bd-card);
+}
+.lm9-root.theme-midnight .start-overlay,
+.lm9-root.theme-darcula .start-overlay,
+.lm9-root.theme-terminal .start-overlay{
+  background:rgba(15,23,42,.92);
+}
+.start-overlay .msg{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+}
+.start-overlay .hint{
+  font-size:12px;
+  color:#475569;
+}
+.lm9-root.theme-midnight .start-overlay .hint,
+.lm9-root.theme-darcula .start-overlay .hint,
+.lm9-root.theme-terminal .start-overlay .hint{
+  color:#9aa5b1;
+}
+
+.confetti{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  border-radius:10px;
+}
+.confetti .p{
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:3px;
+  opacity:0;
+  will-change:transform,opacity;
+}
+
+/* CONTROLS */
+.controls{
+  font-family: 'Courier New', Courier, monospace;
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:8px 10px;
+  display:grid;
+  grid-template-columns:1fr 1fr auto;
+  gap:8px 10px;
+  align-items:end;
+}
+.field{
+  font-family:var(--lm-font);
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.field label{
+  font-family:var(--lm-font);
+  font-weight:800;
+  min-width:22px;
+  font-size:12px;
+  color:#334155;
+}
+.lm9-root.theme-midnight .field label,
+.lm9-root.theme-darcula .field label,
+.lm9-root.theme-terminal .field label{
+  color:#9aa5b1;
+}
+.input{
+  font-family:var(--lm-font);
+  height:32px;
+  width:100%;
+  padding:0 10px;
+  border:1px solid #cbd5e1;
+  border-radius:8px;
+  font-size:13px;
+  background:#ffffff;
+  color:#0f172a;
+}
+.lm9-root.theme-midnight .input,
+.lm9-root.theme-darcula .input,
+.lm9-root.theme-terminal .input{
+  background:#020617;
+  color:#e5e7eb;
+  border-color:#374151;
+}
+.actions{
+  display:flex;
+  justify-content:flex-end;
+}
+.btn{
+  font-family:var(--lm-font);
+  border:1px solid var(--accent-strong);
+  background:var(--accent);
+  border-radius:8px;
+  padding:7px 12px;
+  font-weight:800;
+  color:#ffffff;
+  cursor:pointer;
+  font-size:12px;
+}
+.btn:hover{
+  background:var(--accent-strong);
+  border-color:var(--accent-strong);
+}
+.btn:active{
+  transform:translateY(1px);
+}
+
+/* SETTINGS PANEL */
+.settings-card{
+  background:var(--panel-bg);
+  border:1px solid var(--bd-card);
+  border-radius:10px;
+  padding:10px;
+}
+.sp-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:6px 0;
+}
+.sp-row label{
+  font-weight:800;
+  font-size:12px;
+  color:#64748b;
+}
+.lm9-root.theme-midnight .sp-row label,
+.lm9-root.theme-darcula .sp-row label,
+.lm9-root.theme-terminal .sp-row label{
+  color:#93a3b8;
+}
+
+.toggle-group button{
+  font-family:var(--lm-font);
+  border:1px solid var(--bd-card);
+  padding:5px 8px;
+  border-radius:8px;
+  background:var(--tile-bg);
+  color:var(--ink);
+  font-weight:800;
+  font-size:12px;
+  margin-left:6px;
+  cursor:pointer;
+}
+.toggle-group button.active{
+  font-family:var(--lm-font);
+  background:var(--accent);
+  color:#ffffff;
+  border-color:var(--accent-strong);
+}
+
+/* MODAL & ANIMS */
+.lm-modal-bg{
+  font-family:var(--lm-font);
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:radial-gradient(1000px 600px at 50% -20%, rgba(99,102,241,.35), rgba(15,23,42,.70));
+  z-index:2147483000;
+}
+.lm-modal{
+  width:min(420px,92vw);
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--panel-bg);
+  box-shadow:var(--panel-shadow);
+  color:var(--ink);
+  border:1px solid var(--bd-card);
+}
+.lm-modal *{
+  font-family:var(--lm-font);
+}
+.lm-modal-header{
+  font-family:var(--lm-font);
+  padding:12px;
+  background:var(--panel-bg);
+  color:var(--ink);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--bd-card);
+}
+.lm-modal-header h4{
+  font-family:var(--lm-font);
+  margin:0;
+  font-size:19px;
+}
+.lm-modal-body{
+  font-family:var(--lm-font);
+  padding:12px;
+}
+.lm-row{
+  font-family:var(--lm-font);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin:6px 0;
+}
+.lm-row .lm-label{
+  font-family:var(--lm-font);
+  color:#334155;
+  font-weight:700;
+}
+.lm9-root.theme-midnight .lm-row .lm-label,
+.lm9-root.theme-darcula .lm-row .lm-label,
+.lm9-root.theme-terminal .lm-row .lm-label{
+  color:#9aa5b1;
+}
+.lm-modal-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  padding:10px 12px;
+  background:var(--panel-bg);
+  border-top:1px solid var(--bd-card);
+}
+.celebrate{
+  font-size:22px;
+}
+
+@keyframes pulseRing{
+  0%{box-shadow:0 0 0 0 rgba(37,99,235,.35);}
+  100%{box-shadow:0 0 0 14px rgba(37,99,235,0);}
+}
+@keyframes bump{
+  0%{transform:scale(1);}
+  35%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+.val.bump{
+  animation:bump .26s ease-out;
+}
+@keyframes popIn{
+  0%{transform:translateY(-6px) scale(.96);opacity:0;}
+  100%{transform:translateY(0) scale(1);opacity:1;}
+}
+.start-overlay .btn{
+  position:relative;
+  overflow:hidden;
+}
+.start-overlay .btn::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.35) 20%, transparent 40%);
+  background-size:200% 100%;
+  animation:shine 2.4s linear infinite;
+}
+@keyframes shine{
+  0%{background-position:-200% 0;}
+  100%{background-position:200% 0;}
+}
+
+@media (prefers-reduced-motion:reduce){
   .tile.time.warn,
-  .tile.moves.warn {
-    border-color: var(--warn);
-    animation: pulseRing 1.3s ease-out infinite
-  }
-
   .tile.time.danger,
-  .tile.moves.danger {
-    border-color: var(--danger);
-    animation: pulseRing 0.85s ease-out infinite
+  .tile.moves.warn,
+  .tile.moves.danger,
+  .val.bump,
+  .eq-badge,
+  .start-overlay .btn::after{
+    animation:none;
   }
-
-  .tile.life {
-    position: relative
-  }
-
-  .life-toast {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background: #10b981;
-    color: #fff;
-    border-radius: 9999px;
-    padding: 2px 6px;
-    font: 800 11px system-ui, Segoe UI, Roboto, Helvetica, Arial;
-    opacity: 0;
-    transform: translateY(-6px);
-    transition: opacity .18s ease, transform .18s ease;
-    box-shadow: 0 2px 6px rgba(16, 185, 129, .35)
-  }
-
-  .life-toast.show {
-    opacity: 1;
-    transform: translateY(0)
-  }
-
-  /* GRAPH */
-  .plot-wrap {
-    position: relative;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 12px;
-    background: #fff;
-    border: 1px solid #e5e7eb
-  }
-
-  .plot {
-    width: 100%;
-    aspect-ratio: 1/1;
-    height: auto;
-    display: block;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 0
-  }
-
-  .eq-badge {
-    position: absolute;
-    z-index: 2;
-    top: var(--plot-pad);
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ffffff;
-    color: #111827;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 6px 10px;
-    font: 700 13px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
-    display: none;
-    animation: popIn .18s ease-out;
-    will-change: transform, opacity
-  }
-
-  .start-overlay {
-    position: absolute;
-    inset: 10px;
-    background: rgba(255, 255, 255, 0.96);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    border-radius: 10px;
-    border: 1px dashed #e5e7eb
-  }
-
-  .start-overlay .msg {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center
-  }
-
-  .start-overlay .hint {
-    font-size: 12px;
-    color: #475569
-  }
-
-  .confetti {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden
-  }
-
-  .confetti .p {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 1px;
-    opacity: 0;
-    will-change: transform, opacity
-  }
-
-  /* CONTROLS */
-  .controls {
-    background: #fff;
-    border: 1px solid var(--bd-card);
-    border-radius: 10px;
-    padding: 8px 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    gap: 8px 10px;
-    align-items: end
-  }
-
-  .field {
-    display: flex;
-    align-items: center;
-    gap: 6px
-  }
-
-  .field label {
-    font-weight: 800;
-    min-width: 22px;
-    font-size: 12px;
-    color: #334155
-  }
-
-  .input {
-    height: 32px;
-    width: 100%;
-    padding: 0 10px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 13px;
-    background: #fff;
-    color: #0f172a
-  }
-
-  .actions {
-    display: flex;
-    justify-content: flex-end
-  }
-
-  .btn {
-    border: 1px solid var(--accent-strong);
-    background: var(--accent);
-    border-radius: 8px;
-    padding: 7px 12px;
-    font-weight: 800;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px
-  }
-
-  .btn:hover {
-    background: var(--accent-strong);
-    border-color: var(--accent-strong)
-  }
-
-  .btn:active {
-    transform: translateY(1px)
-  }
-
-  /* MODAL */
-  .lm-modal-bg {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(1000px 600px at 50% -20%, rgba(99, 102, 241, .35), rgba(15, 23, 42, .70));
-    z-index: 2147483000
-  }
-
-  .lm-modal {
-    width: min(420px, 92vw);
-    border-radius: 16px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
-    color: #0f172a;
-    border: 1px solid #e5e7eb
-  }
-
-  .lm-modal-header {
-    padding: 12px;
-    background: #fff;
-    color: #0f172a;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #e5e7eb
-  }
-
-  .lm-modal-header h4 {
-    margin: 0;
-    font-size: 19px
-  }
-
-  .lm-modal-body {
-    padding: 12px
-  }
-
-  .lm-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    margin: 6px 0
-  }
-
-  .lm-row .lm-label {
-    color: #334155;
-    font-weight: 700
-  }
-
-  .lm-modal-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    padding: 10px 12px;
-    background: #fff;
-    border-top: 1px solid #e5e7eb
-  }
-
-  .celebrate {
-    font-size: 22px
-  }
-
-  /* Animations */
-  @keyframes pulseRing {
-    0% {
-      box-shadow: 0 0 0 0 rgba(37, 99, 235, .35)
-    }
-
-    100% {
-      box-shadow: 0 0 0 14px rgba(37, 99, 235, 0)
-    }
-  }
-
-  @keyframes bump {
-    0% {
-      transform: scale(1)
-    }
-
-    35% {
-      transform: scale(1.08)
-    }
-
-    100% {
-      transform: scale(1)
-    }
-  }
-
-  .val.bump {
-    animation: bump .26s ease-out
-  }
-
-  @keyframes popIn {
-    0% {
-      transform: translateY(-6px) scale(.96);
-      opacity: 0
-    }
-
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 1
-    }
-  }
-
-  .start-overlay .btn {
-    position: relative;
-    overflow: hidden
-  }
-
-  .start-overlay .btn::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, .35) 20%, transparent 40%);
-    background-size: 200% 100%;
-    animation: shine 2.4s linear infinite
-  }
-
-  @keyframes shine {
-    0% {
-      background-position: -200% 0
-    }
-
-    100% {
-      background-position: 200% 0
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-
-    .tile.time.warn,
-    .tile.time.danger,
-    .tile.moves.warn,
-    .tile.moves.danger,
-    .val.bump,
-    .eq-badge,
-    .start-overlay .btn::after {
-      animation: none
-    }
-  }
+}
 </style>
 
 <script>
-  (function () {
-    function initAll() { document.querySelectorAll('.lm9-root').forEach(initWidget); }
-    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initAll, { once: true }); } else { initAll(); }
+(function(){
+  function initAll(){document.querySelectorAll('.lm9-root').forEach(initWidget);}
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',initAll,{once:true});
+  }else{initAll();}
 
-    function initWidget(root) {
-      if (root.__init) return; root.__init = true;
-      const maxMoves = parseInt(root.dataset.maxMoves || '6', 10);
-      const maxLives = parseInt(root.dataset.lives || '3', 10);
+  function initWidget(root){
+    if(root.__init) return; root.__init=true;
+    const maxMoves=parseInt(root.dataset.maxMoves||'6',10);
+    const maxLives=parseInt(root.dataset.lives||'3',10);
 
-      const state = {
-        xmin: -10, xmax: 10, ymin: -10, ymax: 10,
-        m: 0, mFrac: { n: 0, d: 1 }, b: 0, mSet: false, bSet: false,
-        animM: null, animB: null, pulse: null,
-        tdy: 1, tdx: 1, tb: 0, moves: 0, score: 0, lives: maxLives,
-        turnLimitSec: 90, timer: null, deadline: 0, lastShownSec: null
-      };
-
-      // Build UI (stacked: Score → Graph → Controls)
-      const grid = el('div', 'lm9-grid');
-
-      // SCORE
-      const board = el('div', 'scoreboard');
-      const tMoves = tile('Moves'); tMoves.wrap.classList.add('moves');
-      const tTime = tile('Time'); tTime.wrap.classList.add('time'); tTime.val.textContent = state.turnLimitSec + 's';
-      const tLives = tile('Lives'); tLives.wrap.classList.add('life');
-      const tScore = tile('Score');
-      board.append(tMoves.wrap, tTime.wrap, tLives.wrap, tScore.wrap);
-
-      // GRAPH
-      const wrap = el('div', 'plot-wrap');
-      const canvas = el('canvas', 'plot');
-      const eqBadge = el('div', 'eq-badge');
-      const overlay = el('div', 'start-overlay'); const ovMsg = el('div', 'msg'); const ovHint = el('div', 'hint'); ovHint.textContent = "Press Start when you're ready."; const ovBtn = button('Start', 'btn'); ovMsg.append(ovBtn, ovHint); overlay.append(ovMsg);
-      const confetti = el('div', 'confetti');
-      wrap.append(canvas, eqBadge, overlay, confetti);
-
-      // CONTROLS
-      const controls = el('div', 'controls');
-      const slopeField = field('m', input('text', 'e.g., -3/2', 'slope'));
-      const bField = field('b', input('number', 'integer', 'b'));
-      const actions = el('div', 'actions');
-      const apply = button('Apply', 'btn');
-      actions.append(apply);
-      controls.append(slopeField.wrap, bField.wrap, actions);
-
-      // Mount order
-      grid.append(board, wrap, controls);
-      root.append(grid);
-
-      // Modal (no Close)
-      const modalBg = el('div', 'lm-modal-bg'); const modal = el('div', 'lm-modal');
-      const mh = el('div', 'lm-modal-header'); const mhTitle = el('h4'); mhTitle.textContent = 'Round result'; const mhCele = el('div', 'celebrate'); mh.append(mhTitle, mhCele);
-      const mb = el('div', 'lm-modal-body'); const rEq = row('Equation:'), rBonus = row('Time bonus:'), rPts = row('Points earned:'), rMoves = row('Moves used:'), rLives = row('Lives left:'); mb.append(rEq.wrap, rBonus.wrap, rPts.wrap, rMoves.wrap, rLives.wrap);
-      const ma = el('div', 'lm-modal-actions'); const mNext = button('Next line', 'btn'), mReset = button('New game', 'btn'); ma.append(mNext, mReset);
-      modal.append(mh, mb, ma); modalBg.append(modal); document.body.append(modalBg); modalBg.style.display = 'none';
-
-      // Drawing
-      let raf = null; const M = { left: 34, right: 34, top: 56, bottom: 36 }; let lastW = 0;
-      function worldToPix(x, y, W, H) { const innerW = W - M.left - M.right, innerH = H - M.top - M.bottom; const sx = innerW / (state.xmax - state.xmin), sy = innerH / (state.ymax - state.ymin); const px = M.left + (x - state.xmin) * sx; const py = M.top + innerH - (y - state.ymin) * sy; return [px, py]; }
-      function sizeForDPR(c, w, h) { const base = window.devicePixelRatio || 1; const dpr = Math.min(4, base * 3); c.width = Math.max(1, Math.floor(w * dpr)); c.height = Math.max(1, Math.floor(h * dpr)); const ctx = c.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.imageSmoothingEnabled = false; return ctx; }
-
-      function draw() {
-        const W = Math.max(1, Math.round(wrap.clientWidth || root.clientWidth || 300)); if (W < 10) { schedule(); return; }
-        const H = W; const ctx = sizeForDPR(canvas, W, H); lastW = W; ctx.clearRect(0, 0, W, H);
-        const gridCol = getCSS('--grid'), axisCol = getCSS('--axis');
-        // grid
-        ctx.lineWidth = 1; ctx.strokeStyle = gridCol;
-        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-          const [px0, py0] = worldToPix(x, state.ymin, W, H); const [px1, py1] = worldToPix(x, state.ymax, W, H); const X = Math.round(px0) + 0.5; ctx.beginPath(); ctx.moveTo(X, py0); ctx.lineTo(X, py1); ctx.stroke();
-        }
-        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-          const [px0, py0] = worldToPix(state.xmin, y, W, H); const [px1, py1] = worldToPix(state.xmax, y, W, H); const Y = Math.round(py0) + 0.5; ctx.beginPath(); ctx.moveTo(px0, Y); ctx.lineTo(px1, Y); ctx.stroke();
-        }
-        // axes
-        ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8; const [xL, y0] = worldToPix(state.xmin, 0, W, H); const [xR] = worldToPix(state.xmax, 0, W, H); const yAxisPx = Math.round(y0) + 0.5; ctx.beginPath(); ctx.moveTo(xL, yAxisPx); ctx.lineTo(xR, yAxisPx); ctx.stroke(); const [x0, yB] = worldToPix(0, state.ymin, W, H); const [, yT] = worldToPix(0, state.ymax, W, H); const xAxisPx = Math.round(x0) + 0.5; ctx.beginPath(); ctx.moveTo(xAxisPx, yB); ctx.lineTo(xAxisPx, yT); ctx.stroke();
-        // ticks
-        ctx.fillStyle = '#0f172a'; ctx.font = '12px system-ui'; ctx.strokeStyle = '#0f172a'; ctx.lineWidth = 1.25;
-        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-          const [px] = worldToPix(x, 0, W, H); const X = Math.round(px) + 0.5; ctx.beginPath(); ctx.moveTo(X, yAxisPx - 5); ctx.lineTo(X, yAxisPx + 5); ctx.stroke(); if (x !== 0) ctx.fillText(String(x), X - 4, yAxisPx + 16);
-        }
-        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-          const [, py] = worldToPix(0, y, W, H); const Y = Math.round(py) + 0.5; ctx.beginPath(); ctx.moveTo(xAxisPx - 5, Y); ctx.lineTo(xAxisPx + 5, Y); ctx.stroke(); if (y !== 0) ctx.fillText(String(y), xAxisPx + 8, Y + 4);
-        }
-        // lines
-        function lineWithHalo(m, b, color, width, glow = false) {
-          const pts = []; const xMin = state.xmin, xMax = state.xmax, yMin = state.ymin, yMax = state.ymax; const yL = m * xMin + b, yR = m * xMax + b; add(xMin, yL); add(xMax, yR); if (Math.abs(m) > 1e-12) { add((yMin - b) / m, yMin); add((yMax - b) / m, yMax); } function add(x, y) { if (x >= xMin - 1e-9 && x <= xMax + 1e-9 && y >= yMin - 1e-9 && y <= yMax + 1e-9) pts.push([x, y]); } if (pts.length < 2) return; const [x1, y1] = worldToPix(pts[0][0], pts[0][1], W, H); const [x2, y2] = worldToPix(pts[1][0], pts[1][1], W, H); ctx.save(); ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-          // white edge for separation from grid
-          ctx.lineWidth = width + 2; ctx.strokeStyle = 'rgba(255,255,255,0.92)'; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
-          // main stroke
-          ctx.lineWidth = width; ctx.strokeStyle = color; if (glow) { ctx.shadowColor = color; ctx.shadowBlur = 6; }
-          ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); ctx.shadowBlur = 0; ctx.restore();
-        }
-        // target + player
-        lineWithHalo(slopeFromFrac(state.tdy, state.tdx), state.tb, getCSS('--target'), 2.25);
-        if (state.mSet && state.bSet) { const pulsing = state.pulse && (performance.now() - state.pulse.start < state.pulse.dur); if (pulsing) lineWithHalo(currentM(), currentB(), 'rgba(16,185,129,0.55)', 7); lineWithHalo(currentM(), currentB(), getCSS('--player'), 3.25, true); }
-        // badge
-        if (state.mSet && state.bSet) { eqBadge.textContent = formatEquation(state.mFrac, state.b); eqBadge.style.display = 'block'; } else { eqBadge.style.display = 'none'; }
-        if ((state.animM && !animDone(state.animM)) || (state.animB && !animDone(state.animB)) || (state.pulse && performance.now() - state.pulse.start < state.pulse.dur)) schedule();
-      }
-      function schedule() { if (raf) return; raf = requestAnimationFrame(() => { raf = null; draw(); }); }
-      function startAnimM(from, to, dur = 300) { state.animM = { from, to, start: performance.now(), dur }; schedule(); }
-      function startAnimB(from, to, dur = 300) { state.animB = { from, to, start: performance.now(), dur }; schedule(); }
-      function ease(t) { return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
-      function animValue(a) { const t = Math.min(1, (performance.now() - a.start) / a.dur); const e = ease(t); return a.from + (a.to - a.from) * e; }
-      function animDone(a) { return (performance.now() - a.start) >= a.dur; }
-      function currentM() { return state.animM ? animValue(state.animM) : state.m; }
-      function currentB() { return state.animB ? animValue(state.animB) : state.b; }
-
-      // Math helpers
-      function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { const t = b; b = a % b; a = t; } return a || 1; }
-      function simplify(n, d) { if (d === 0) return { n: 1, d: 0 }; if (d < 0) { n = -n; d = -d; } const g = gcd(n, d); return { n: n / g, d: d / g }; }
-      function fracStr(n, d) { const s = simplify(n, d); return s.d === 1 ? String(s.n) : `(${s.n}/${s.d})`; }
-      function slopeFromFrac(n, d) { return d === 0 ? Infinity : n / d; }
-      function decimalToFrac(x, maxDen = 100) { const s = Math.sign(x); const ax = Math.abs(x); const num = Math.round(ax * maxDen); const g = gcd(num, maxDen); const r = simplify(s * num / g, maxDen / g); return r; }
-      function parseSlope(str) { const raw = (str || '').trim(); if (!raw) return null; if (raw.includes('/')) { const parts = raw.split('/'); if (parts.length !== 2) return null; const a = parseInt(parts[0], 10), b = parseInt(parts[1], 10); if (!Number.isFinite(a) || !Number.isFinite(b) || b === 0) return null; const s = simplify(a, b); return { m: slopeFromFrac(s.n, s.d), frac: s }; } const m = Number(raw); if (Number.isFinite(m)) { return { m, frac: decimalToFrac(m, 100) }; } return null; }
-      function fmtB(b) { return `${b >= 0 ? '+' : '−'} ${Math.abs(b)}`; }
-      function formatEquation(frac, b) { const s = simplify(frac.n, frac.d); let mStr = ''; if (s.n === 1 && s.d === 1) { mStr = 'x'; } else if (s.n === -1 && s.d === 1) { mStr = '− x'; } else { const core = s.d === 1 ? String(s.n) : `(${s.n}/${s.d})`; mStr = `${core}x`; } let bStr = ''; if (b > 0) bStr = ` + ${Math.abs(b)}`; else if (b < 0) bStr = ` − ${Math.abs(b)}`; return `y = ${mStr}${bStr}`; }
-
-      // Time bonus bands: 0–19s → ×1, 20–39s → ×2, 40–90s → ×3
-      function timeMult(sec) { if (sec >= 40) return 3; if (sec >= 20) return 2; return 1; }
-
-      // Indicators
-      function updateIndicators() { const left = Math.max(0, Math.ceil((state.deadline - performance.now()) / 1000)); tTime.wrap.classList.toggle('warn', left <= 10 && left > 5); tTime.wrap.classList.toggle('danger', left <= 5); const movesLeft = maxMoves - state.moves; tMoves.wrap.classList.toggle('warn', movesLeft <= 2 && movesLeft > 1); tMoves.wrap.classList.toggle('danger', movesLeft <= 1); }
-
-      // Timer
-      function startTimer() { stopTimer(); state.deadline = performance.now() + state.turnLimitSec * 1000; state.lastShownSec = null; tTime.wrap.classList.remove('warn', 'danger'); tTime.val.textContent = state.turnLimitSec + 's'; state.timer = setInterval(() => { const left = Math.max(0, Math.ceil((state.deadline - performance.now()) / 1000)); if (left !== state.lastShownSec) { state.lastShownSec = left; tTime.val.textContent = left + 's'; updateIndicators(); } if (left <= 0) { stopTimer(); handleTimeout(); } }, 200); }
-      function stopTimer() { if (state.timer) { clearInterval(state.timer); state.timer = null; } }
-      function handleTimeout() { if (state.lives <= 0) return; if (state.lives > 0) state.lives -= 1; if (state.lives < 0) state.lives = 0; updateBoard(); if (state.lives <= 0) { setControlsEnabled(false); } showModal(false, 0, 'time'); }
-
-      // Target + game logic
-      function randint(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
-      function prepareTarget() { const xmin = state.xmin, xmax = state.xmax, ymin = state.ymin, ymax = state.ymax; function fits(m, b) { const yL = m * xmin + b, yR = m * xmax + b; const xB = Math.abs(m) < 1e-12 ? Infinity : (ymin - b) / m; const xT = Math.abs(m) < 1e-12 ? Infinity : (ymax - b) / m; const cond1 = (yL >= ymin && yL <= ymax) || (yR >= ymin && yR <= ymax); const cond2 = (xB >= xmin && xB <= xmax) || (xT >= xmin && xT <= xmax); return cond1 || cond2; } let tries = 0; do { state.tb = randint(-8, 8); let dx = randint(1, 6), dy = randint(-6, 6); while (dy === 0) dy = randint(-6, 6); const s = simplify(dy, dx); state.tdy = Math.max(-8, Math.min(8, s.n)); state.tdx = Math.max(1, Math.min(8, s.d)); tries++; } while (tries < 50 && !fits(slopeFromFrac(state.tdy, state.tdx), state.tb)); state.moves = 0; state.mSet = false; state.bSet = false; state.pulse = null; state.animM = null; state.animB = null; slopeField.input.value = ''; bField.input.value = ''; setControlsEnabled(false); updateBoard(); schedule(); }
-      function newTarget() { if (state.lives <= 0) return; prepareTarget(); showOverlay(); }
-      function startRound() { hideOverlay(); setControlsEnabled(true); startTimer(); }
-      function showOverlay() { overlay.style.display = 'flex'; }
-      function hideOverlay() { overlay.style.display = 'none'; }
-
-      function isMatch() { const tm = slopeFromFrac(state.tdy, state.tdx); return state.mSet && state.bSet && Math.abs(state.m - tm) < 1e-9 && state.b === state.tb; }
-      function updateBoard() { setVal(tMoves, `${state.moves}/${maxMoves}`); setVal(tLives, `${state.lives}`); setVal(tScore, `${state.score}`); updateIndicators(); }
-
-      // Toast for +life
-      let lifeToast = null; function showLifeToast(n) { if (!lifeToast) { lifeToast = el('div', 'life-toast'); tLives.wrap.append(lifeToast); } lifeToast.textContent = `+${n}`; lifeToast.classList.remove('show'); void lifeToast.offsetWidth; lifeToast.classList.add('show'); tLives.val.classList.remove('bump'); void tLives.val.offsetWidth; tLives.val.classList.add('bump'); setTimeout(() => lifeToast && lifeToast.classList.remove('show'), 1200); }
-
-      function showModal(success, points, cause) {
-        stopTimer(); const outOfLives = state.lives <= 0 && !success; if (success) { mhTitle.textContent = 'You nailed it!'; mhCele.textContent = '✨🏆'; } else if (outOfLives) { mhTitle.textContent = 'Game Over'; mhCele.textContent = '💥'; } else if (cause === 'time') { mhTitle.textContent = 'Out of time'; mhCele.textContent = '⏰'; } else { mhTitle.textContent = 'Out of moves'; mhCele.textContent = '😬⏳'; } const mT = fracStr(state.tdy, state.tdx); const eqTarget = `y = ${mT}x ${fmtB(state.tb)}`; const eqPlayer = (state.mSet && state.bSet) ? `y = ${fracStr(state.mFrac.n, state.mFrac.d)}x ${fmtB(state.b)}` : '—'; rEq.val.textContent = success ? `${eqPlayer}` : (cause === 'time' ? `Time's up! The equation was ${eqTarget}` : `Oh no! You ran out of moves. The equation was ${eqTarget}`); rBonus.val.textContent = success ? rBonus.val.textContent : '—'; rPts.val.textContent = success ? rPts.val.textContent : '0'; rMoves.val.textContent = String(state.moves); rLives.val.textContent = String(state.lives); modalBg.style.display = 'flex'; if (success) { mNext.style.display = ''; mReset.style.display = ''; } else if (state.lives > 0) { mNext.style.display = ''; mReset.style.display = 'none'; } else { mNext.style.display = 'none'; mReset.style.display = ''; } mNext.onclick = () => { modalBg.style.display = 'none'; newTarget(); }; mReset.onclick = () => { state.score = 0; state.lives = maxLives; modalBg.style.display = 'none'; newTarget(); };
-      }
-
-      // Actions
-      function commitBoth() {
-        if (state.lives <= 0 || overlay.style.display !== 'none') return; const mP = parseSlope(slopeField.input.value); const bVal = parseInt(bField.input.value, 10); if (!mP || !Number.isFinite(bVal)) return; const newM = mP.m, newFrac = mP.frac || decimalToFrac(mP.m, 100); const fromM = state.mSet ? state.m : newM; const fromB = state.bSet ? state.b : bVal; state.m = newM; state.mFrac = newFrac; state.mSet = true; startAnimM(fromM, newM, 320); state.b = bVal; state.bSet = true; startAnimB(fromB, bVal, 320); if (state.moves < maxMoves) state.moves += 1; updateBoard(); tMoves.val.classList.remove('bump'); void tMoves.val.offsetWidth; tMoves.val.classList.add('bump'); setTimeout(() => { if (isMatch()) { state.pulse = { start: performance.now(), dur: 900 }; schedule(); launchConfetti(12); const left = Math.max(0, Math.ceil((state.deadline - performance.now()) / 1000)); const mult = timeMult(left); const base = Math.max(0, maxMoves - state.moves); const points = base * mult; rBonus.val.textContent = `×${mult}`; rPts.val.textContent = String(points); const prevHundreds = Math.floor(state.score / 100); state.score += points; const newHundreds = Math.floor(state.score / 100); const gained = Math.max(0, newHundreds - prevHundreds); if (gained > 0) { state.lives += gained; showLifeToast(gained); } tScore.val.classList.remove('bump'); void tScore.val.offsetWidth; tScore.val.classList.add('bump'); updateBoard(); setTimeout(() => showModal(true, points, null), 950); } else if (state.moves >= maxMoves) { if (state.lives > 0) state.lives -= 1; if (state.lives < 0) state.lives = 0; updateBoard(); if (state.lives <= 0) { setControlsEnabled(false); } showModal(false, 0, 'moves'); } }, 340);
-      }
-
-      // Events
-      apply.addEventListener('click', commitBoth);
-      slopeField.input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); commitBoth(); } });
-      bField.input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); commitBoth(); } });
-      ovBtn.addEventListener('click', () => { startRound(); tTime.val.classList.remove('bump'); void tTime.val.offsetWidth; tTime.val.classList.add('bump'); });
-
-      // Responsive sizing
-      const ro = new ResizeObserver(() => { const w = Math.round(wrap.clientWidth || 0); if (w !== lastW) schedule(); }); ro.observe(wrap);
-
-      // Start idle
-      newTarget();
-
-      // helpers & effects
-      function field(labelText, inputEl) { const wrap = el('div', 'field'); const lab = el('label'); lab.textContent = labelText; wrap.append(lab, inputEl); return { wrap, input: inputEl }; }
-      function input(type, ph, id) { const i = el('input', 'input'); i.type = type; i.placeholder = ph; if (id) i.id = id; return i; }
-      function button(text, cls) { const b = el('button', cls || 'btn'); b.textContent = text; return b; }
-      function row(label) { const wrap = el('div', 'lm-row'); const l = el('div', 'lm-label'); l.textContent = label; const v = document.createElement('div'); wrap.append(l, v); return { wrap, val: v }; }
-      function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
-      function tile(label) { const wrap = el('div', 'tile'); const lbl = el('div', 'lbl'); lbl.textContent = label; const val = el('div', 'val'); val.textContent = '—'; wrap.append(lbl, val); return { wrap, val }; }
-      function setVal(tile, txt) { if (tile.val.textContent !== txt) { tile.val.textContent = txt; tile.val.classList.remove('bump'); void tile.val.offsetWidth; tile.val.classList.add('bump'); } }
-      function getCSS(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
-      function setControlsEnabled(enabled) { slopeField.input.disabled = !enabled; bField.input.disabled = !enabled; apply.disabled = !enabled; }
-      function worldShake() { wrap.animate([{ transform: 'translate(0,0)' }, { transform: 'translate(-2px,0)' }, { transform: 'translate(2px,0)' }, { transform: 'translate(0,0)' }], { duration: 250, easing: 'ease-out' }); }
-      function rand(min, max) { return Math.random() * (max - min) + min; }
-      function launchConfetti(count) { for (let i = 0; i < count; i++) { const p = el('div', 'p'); const hue = Math.floor(rand(180, 320)); p.style.background = `hsl(${hue} 85% 55%)`; const startX = wrap.clientWidth / 2 + rand(-10, 10); const startY = 12 + rand(-6, 6); p.style.left = startX + 'px'; p.style.top = startY + 'px'; confetti.append(p); const dx = rand(-80, 80); const dy = rand(60, 140); const rot = rand(-180, 180); p.animate([{ transform: `translate(0,0) rotate(0deg)`, opacity: 1 }, { transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg)`, opacity: 0 }], { duration: 900 + Math.random() * 500, easing: 'cubic-bezier(.2,.7,.2,1)' }).onfinish = () => p.remove(); } }
+    const saved=safeJSON(localStorage.getItem('lm9-settings'))||{};
+    const defaultRoundTime=90;
+    const validTimes=['off',15,30,60,90,120];
+    let roundTime = saved.roundTime;
+    if(!validTimes.includes(roundTime)){
+      roundTime = defaultRoundTime;
     }
 
-    // Dev tests
-    try {
-      // simplify
-      (function () { const g = (a, b) => { while (b) { [a, b] = [b, a % b] } return a; }; const simplifyLocal = (n, d) => { const G = g(Math.abs(n), Math.abs(d)); return [n / G, d / G]; }; console.assert(JSON.stringify(simplifyLocal(6, 8)) === JSON.stringify([3, 4]), 'simplify 6/8'); })();
-      // parse slope
-      (function () { const parseSlopeLocal = (s) => { s = s.trim(); if (s.includes('/')) { const [a, b] = s.split('/').map(Number); return a / b; } return Number(s); }; console.assert(parseSlopeLocal('-3/2') === -1.5, 'parse -3/2'); console.assert(parseSlopeLocal(' 1 / 1 ') === 1, 'parse 1/1 spacing'); })();
-      // fmtB sign
-      (function () { const fmtBLocal = (b) => `${b >= 0 ? '+' : '−'} ${Math.abs(b)}`; console.assert(fmtBLocal(3) === '+ 3' && fmtBLocal(-3) === '− 3', 'fmtB signs'); })();
-      // timeMult mapping (banded)
-      (function () { console.assert((function (sec) { if (sec >= 40) return 3; if (sec >= 20) return 2; return 1; })(0) === 1, '0–19 => ×1'); console.assert((function (sec) { if (sec >= 40) return 3; if (sec >= 20) return 2; return 1; })(20) === 2, '20–39 => ×2'); console.assert((function (sec) { if (sec >= 40) return 3; if (sec >= 20) return 2; return 1; })(40) === 3, '40–90 => ×3'); })();
-      // equation formatting quick-checks
-      (function () { const fmt = (n, d, b) => { const simp = (n, d) => { const g = ((a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) { [a, b] = [b, a % b] } return a || 1 })(Math.abs(n), Math.abs(d)); if (d < 0) { n = -n; d = -d; } return { n: n / g, d: d / g }; }; const s = simp(n, d); let m = ''; if (s.n === 1 && s.d === 1) m = 'x'; else if (s.n === -1 && s.d === 1) m = '− x'; else m = (s.d === 1 ? String(s.n) : `(${s.n}/${s.d})`) + 'x'; let bb = ''; if (b > 0) bb = ` + ${Math.abs(b)}`; else if (b < 0) bb = ` − ${Math.abs(b)}`; return `y = ${m}${bb}`; }; console.assert(fmt(1, 1, 0) === 'y = x', 'no 1x'); console.assert(fmt(-1, 1, 0) === 'y = − x', 'no -1x'); console.assert(fmt(3, 2, 5) === 'y = (3/2)x + 5', 'm fraction + b'); })();
-      console.log('Line Match Game v5.35 tests passed');
-    } catch (e) { console.warn('Tests failed', e); }
+    const state={
+      xmin:-10,xmax:10,ymin:-10,ymax:10,
+      m:0,mFrac:{n:0,d:1},b:0,mSet:false,bSet:false,
+      animM:null,animB:null,pulse:null,
+      tdy:1,tdx:1,tb:0,moves:0,score:0,lives:maxLives,
+      turnLimitSec: typeof roundTime === 'number' ? roundTime : defaultRoundTime,
+      roundTime: roundTime,
+      roundTimeSnap: null,
+      timer:null,deadline:0,lastShownSec:null,
+      timerRoundEnabled:null,
+      theme:saved.theme||'classic',
+      hoverPoint:null
+    };
 
-  })();
+    function getVar(name) {
+      return getComputedStyle(root).getPropertyValue(name).trim();
+    };
+
+    applyTheme(root,state.theme);
+
+    /* Tabs */
+    const tabs=el('div','tabs');
+    const tabGame=el('div','tab active'); tabGame.textContent='Game';
+    const tabSettings=el('div','tab'); tabSettings.textContent='Settings';
+    tabs.append(tabGame,tabSettings);
+    root.append(tabs);
+
+    const grid=el('div','lm9-grid');
+    root.append(grid);
+
+    /* Settings card */
+    const settingsCard=el('div','settings-card');
+
+    const timeValues=['off',15, 30, 60, 90, 120];
+    const timeLabels=['Off','15s','30s','60s','90s','120s'];
+    let timeIdx=timeValues.findIndex(v=>v===state.roundTime);
+    if(timeIdx<0) timeIdx=timeValues.indexOf(90);
+    const rowTimer=spRow('Round time', toggleGroup(timeLabels,timeIdx));
+
+    const themeNames=['classic','midnight','ocean','darcula','terminal'];
+    let themeIdx=themeNames.indexOf(state.theme);
+    if(themeIdx<0) themeIdx=0;
+    const rowTheme=spRow('Theme', toggleGroup(['Classic','Midnight','Ocean','Darcula','Terminal'], themeIdx));
+
+    settingsCard.append(rowTimer.wrap,rowTheme.wrap);
+
+    /* Scoreboard */
+    const board=el('div','scoreboard');
+    const tMoves=tile('Moves'); tMoves.wrap.classList.add('moves');
+    const tTime=tile('Time'); tTime.wrap.classList.add('time');
+    tTime.val.textContent = state.roundTime==='off' ? 'Off' : state.roundTime+'s';
+    const tLives=tile('Lives'); tLives.wrap.classList.add('life');
+    const tScore=tile('Score');
+    board.append(tMoves.wrap,tTime.wrap,tLives.wrap,tScore.wrap);
+
+    /* Graph */
+    const wrap=el('div','plot-wrap');
+    const canvas=el('canvas','plot');
+    const eqBadge=el('div','eq-badge');
+    const overlay=el('div','start-overlay');
+    const ovMsg=el('div','msg');
+    const ovHint=el('div','hint'); ovHint.textContent="Press Start when you're ready.";
+    const ovBtn=button('Start','btn');
+    ovMsg.append(ovBtn,ovHint); overlay.append(ovMsg);
+    const confetti=el('div','confetti');
+    wrap.append(canvas,eqBadge,overlay,confetti);
+
+    /* Controls */
+    const controls=el('div','controls');
+    const slopeField=field('m', input('text','e.g., -3/2','slope'));
+    const bField=inputField('b','number','integer','b');
+    const actions=el('div','actions');
+    const applyBtn=button('Apply','btn');
+    actions.append(applyBtn);
+    controls.append(slopeField.wrap,bField.wrap,actions);
+
+    /* Default view */
+    grid.append(board,wrap,controls);
+
+    /* Modal */
+    const modalBg=el('div','lm-modal-bg');
+    const modal=el('div','lm-modal');
+    const mh=el('div','lm-modal-header');
+    const mhTitle=el('h4'); mhTitle.textContent='Round result';
+    const mhCele=el('div','celebrate'); mh.append(mhTitle,mhCele);
+    const mb=el('div','lm-modal-body');
+    const rEq=row('Equation:'), rBonus=row('Time bonus:'), rPts=row('Points earned:'), rMoves=row('Moves used:'), rLives=row('Lives left:');
+    mb.append(rEq.wrap,rBonus.wrap,rPts.wrap,rMoves.wrap,rLives.wrap);
+    const ma=el('div','lm-modal-actions');
+    const mNext=button('Next line','btn'), mReset=button('New game','btn');
+    ma.append(mNext,mReset); modal.append(mh,mb,ma); modalBg.append(modal); document.body.append(modalBg); modalBg.style.display='none';
+
+    /* Tabs behavior */
+    function showGame(){
+      tabGame.classList.add('active'); tabSettings.classList.remove('active');
+      grid.innerHTML=''; grid.append(board,wrap,controls);
+    }
+    function showSettings(){
+      tabSettings.classList.add('active'); tabGame.classList.remove('active');
+      grid.innerHTML=''; grid.append(settingsCard);
+    }
+    tabGame.addEventListener('click',showGame);
+    tabSettings.addEventListener('click',showSettings);
+
+    /* Drawing & clipping */
+    let raf=null; const M={left:34,right:34,top:56,bottom:36}; let lastW=0,lastH=0;
+    function worldToPix(x,y,W,H){
+      const innerW=W-M.left-M.right, innerH=H-M.top-M.bottom;
+      const sx=innerW/(state.xmax-state.xmin), sy=innerH/(state.ymax-state.ymin);
+      const px=M.left+(x-state.xmin)*sx;
+      const py=M.top+innerH-(y-state.ymin)*sy;
+      return[px,py];
+    }
+    function sizeForDPR(c,w,h){
+      const base=window.devicePixelRatio||1; const dpr=Math.min(4,base*3);
+      c.width=Math.max(1,Math.floor(w*dpr));
+      c.height=Math.max(1,Math.floor(h*dpr));
+      const ctx=c.getContext('2d');
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      ctx.imageSmoothingEnabled=false;
+      return ctx;
+    }
+
+    function clipLineToRect(xmin,xmax,ymin,ymax,m,b){
+      const pts=[];
+      function add(x,y){
+        if(Number.isFinite(x)&&Number.isFinite(y)&&
+           x>=xmin-1e-9&&x<=xmax+1e-9 &&
+           y>=ymin-1e-9&&y<=ymax+1e-9) pts.push([x,y]);
+      }
+      const yL=m*xmin+b; add(xmin,yL);
+      const yR=m*xmax+b; add(xmax,yR);
+      if(Math.abs(m)>1e-12){
+        const xB=(ymin-b)/m; add(xB,ymin);
+        const xT=(ymax-b)/m; add(xT,ymax);
+      }
+      const out=[];
+      for(const p of pts){
+        let dup=false;
+        for(const q of out){
+          if(Math.hypot(p[0]-q[0],p[1]-q[1])<1e-6){dup=true;break;}
+        }
+        if(!dup) out.push(p);
+      }
+      if(out.length<2) return null;
+      let best=[out[0],out[1]], bestd=-1;
+      for(let i=0;i<out.length;i++)for(let j=i+1;j<out.length;j++){
+        const d=(out[i][0]-out[j][0])**2+(out[i][1]-out[j][1])**2;
+        if(d>bestd){bestd=d;best=[out[i],out[j]];}
+      }
+      return best;
+    }
+
+    function draw(){
+      const W=Math.max(1,Math.round(wrap.clientWidth||root.clientWidth||300));
+      if(W<10){schedule();return;}
+      const H=W;
+      const ctx=sizeForDPR(canvas,W,H);
+      lastW=W; lastH=H;
+      ctx.clearRect(0,0,W,H);
+      ctx.fillStyle=getCSS('--plot-bg');
+      ctx.fillRect(0,0,W,H);
+
+      const gridCol=getCSS('--grid'), axisCol=getCSS('--axis');
+      const overlayVisible = overlay.style.display !== 'none';
+
+      // grid
+      ctx.lineWidth=1; ctx.strokeStyle=gridCol;
+      for(let x=Math.ceil(state.xmin);x<=Math.floor(state.xmax);x++){
+        const[px0,py0]=worldToPix(x,state.ymin,W,H);
+        const[px1,py1]=worldToPix(x,state.ymax,W,H);
+        const X=Math.round(px0)+0.5;
+        ctx.beginPath(); ctx.moveTo(X,py0); ctx.lineTo(X,py1); ctx.stroke();
+      }
+      for(let y=Math.ceil(state.ymin);y<=Math.floor(state.ymax);y++){
+        const[px0,py0]=worldToPix(state.xmin,y,W,H);
+        const[px1,py1]=worldToPix(state.xmax,y,W,H);
+        const Y=Math.round(py0)+0.5;
+        ctx.beginPath(); ctx.moveTo(px0,Y); ctx.lineTo(px1,Y); ctx.stroke();
+      }
+
+      // axes
+      ctx.strokeStyle=axisCol; ctx.lineWidth=1.8;
+      const[xL,y0]=worldToPix(state.xmin,0,W,H);
+      const[xR]=worldToPix(state.xmax,0,W,H);
+      const yAxisPx=Math.round(y0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xL,yAxisPx); ctx.lineTo(xR,yAxisPx); ctx.stroke();
+      const[x0,yB]=worldToPix(0,state.ymin,W,H);
+      const[,yT]=worldToPix(0,state.ymax,W,H);
+      const xAxisPx=Math.round(x0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xAxisPx,yB); ctx.lineTo(xAxisPx,yT); ctx.stroke();
+
+      // ticks + labels
+      ctx.fillStyle=getCSS('--tick');
+      ctx.strokeStyle=getCSS('--tick');
+      ctx.lineWidth=1.25;
+      ctx.font='12px system-ui';
+      for(let x=Math.ceil(state.xmin);x<=Math.floor(state.xmax);x++){
+        const[px]=worldToPix(x,0,W,H);
+        const X=Math.round(px)+0.5;
+        ctx.beginPath(); ctx.moveTo(X,yAxisPx-5); ctx.lineTo(X,yAxisPx+5); ctx.stroke();
+        if(x!==0) ctx.fillText(String(x),X-4,yAxisPx+16);
+      }
+      for(let y=Math.ceil(state.ymin);y<=Math.floor(state.ymax);y++){
+        const[,py]=worldToPix(0,y,W,H);
+        const Y=Math.round(py)+0.5;
+        ctx.beginPath(); ctx.moveTo(xAxisPx-5,Y); ctx.lineTo(xAxisPx+5,Y); ctx.stroke();
+        if(y!==0) ctx.fillText(String(y),xAxisPx+8,Y+4);
+      }
+
+      function lineWithHalo(m,b,color,width,glow=false){
+        const seg=clipLineToRect(state.xmin,state.xmax,state.ymin,state.ymax,m,b);
+        if(!seg) return;
+        const[x1,y1]=worldToPix(seg[0][0],seg[0][1],W,H);
+        const[x2,y2]=worldToPix(seg[1][0],seg[1][1],W,H);
+        ctx.save(); ctx.lineCap='round'; ctx.lineJoin='round';
+        const dark = root.classList.contains('theme-midnight') ||
+                     root.classList.contains('theme-darcula') ||
+                     root.classList.contains('theme-terminal');
+        let coreW = width;
+        if(dark) coreW = Math.max(1.8, width - 0.6);
+        const haloColor = dark ? 'rgba(15,23,42,0.95)' : 'rgba(255,255,255,0.92)';
+        ctx.lineWidth=coreW+2;
+        ctx.strokeStyle=haloColor;
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+        ctx.lineWidth=coreW;
+        ctx.strokeStyle=color;
+        if(glow){ctx.shadowColor=color; ctx.shadowBlur=dark?12:6;}
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+        ctx.shadowBlur=0;
+        ctx.restore();
+      }
+
+      if(!overlayVisible){
+        const targetM=slopeFromFrac(state.tdy,state.tdx);
+        lineWithHalo(targetM,state.tb,getVar('--target'),2.25);
+
+        if(state.mSet&&state.bSet){
+          const pulsing=state.pulse&&(performance.now()-state.pulse.start<state.pulse.dur);
+          if(pulsing) lineWithHalo(currentM(),currentB(),getVar('--target') + 'cc',7);
+          lineWithHalo(currentM(),currentB(),getVar('--player'),3.1,true);
+        }
+
+        if(state.mSet&&state.bSet){
+          eqBadge.textContent=formatEquation(state.mFrac,state.b);
+          eqBadge.style.display='block';
+        }else{
+          eqBadge.style.display='none';
+        }
+      }else{
+        eqBadge.style.display='none';
+      }
+
+      // Hover snap + drop lines
+      if(state.hoverPoint && !overlayVisible){
+        const hx=state.hoverPoint.x, hy=state.hoverPoint.y;
+        const[px,py]=worldToPix(hx,hy,W,H);
+        const[pxAxis,py0]=worldToPix(hx,0,W,H);
+        const[px0Axis,pyAxis]=worldToPix(0,hy,W,H);
+        ctx.save();
+        ctx.setLineDash([5,4]);
+        ctx.lineWidth=1.3;
+        ctx.strokeStyle='rgba(148,163,184,0.9)';
+
+        ctx.beginPath();
+        ctx.moveTo(px,py);
+        ctx.lineTo(pxAxis,py0);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(px,py);
+        ctx.lineTo(px0Axis,pyAxis);
+        ctx.stroke();
+
+        ctx.setLineDash([]);
+
+        ctx.fillStyle=getCSS('--player');
+        ctx.beginPath();
+        ctx.arc(px,py,4,0,Math.PI*2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+    }
+
+    function schedule(){if(raf)return;raf=requestAnimationFrame(()=>{raf=null;draw();});}
+    function startAnimM(from,to,dur=300){state.animM={from,to,start:performance.now(),dur};schedule();}
+    function startAnimB(from,to,dur=300){state.animB={from,to,start:performance.now(),dur};schedule();}
+    function ease(t){return t<.5?2*t*t:-1+(4-2*t)*t;}
+    function animValue(a){const t=Math.min(1,(performance.now()-a.start)/a.dur);const e=ease(t);return a.from+(a.to-a.from)*e;}
+    function currentM(){return state.animM?animValue(state.animM):state.m;}
+    function currentB(){return state.animB?animValue(state.animB):state.b;}
+
+    /* Math helpers */
+    function gcd(a,b){a=Math.abs(a);b=Math.abs(b);while(b){const t=b;b=a%b;a=t;}return a||1;}
+    function simplify(n,d){if(d===0)return{n:1,d:0};if(d<0){n=-n;d=-d;}const g=gcd(n,d);return{n:n/g,d:d/g};}
+    function fracStr(n,d){const s=simplify(n,d);return s.d===1?String(s.n):`(${s.n}/${s.d})`;}
+    function slopeFromFrac(n,d){return d===0?Infinity:n/d;}
+    function decimalToFrac(x,maxDen=100){const s=Math.sign(x),ax=Math.abs(x);const num=Math.round(ax*maxDen);const g=gcd(num,maxDen);return simplify(s*num/g,maxDen/g);}
+    function parseSlope(str){
+      const raw=(str||'').trim(); if(!raw) return null;
+      if(raw.includes('/')){
+        const parts=raw.split('/'); if(parts.length!==2) return null;
+        const a=parseInt(parts[0],10), b=parseInt(parts[1],10);
+        if(!Number.isFinite(a)||!Number.isFinite(b)||b===0) return null;
+        const s=simplify(a,b); return{m:slopeFromFrac(s.n,s.d),frac:s};
+      }
+      const m=Number(raw); if(Number.isFinite(m)) return{m,frac:decimalToFrac(m,100)};
+      return null;
+    }
+    function fmtB(b){return`${b>=0?'+':'−'} ${Math.abs(b)}`;}
+    function formatEquation(frac,b){
+      const s=simplify(frac.n,frac.d);
+      let mStr='';
+      if(s.n===1&&s.d===1)mStr='x';
+      else if(s.n===-1&&s.d===1)mStr='− x';
+      else{
+        const core=s.d===1?String(s.n):`(${s.n}/${s.d})`;
+        mStr=`${core}x`;
+      }
+      let bStr='';
+      if(b>0)bStr=` + ${Math.abs(b)}`;
+      else if(b<0)bStr=` − ${Math.abs(b)}`;
+      return`y = ${mStr}${bStr}`;
+    }
+
+function timeMult() {
+  const rtRaw = state.roundTimeSnap;
+
+  // Timer disabled or "off" → no bonus.
+  if (!state.timerRoundEnabled || rtRaw === 'off') return 1;
+
+  // Coerce roundTimeSnap to a number (handles "30", "60", etc).
+  const total = typeof rtRaw === 'string' ? parseInt(rtRaw, 10) : rtRaw;
+  if (!Number.isFinite(total) || total <= 0) return 1;
+
+  // Max multipliers by round length
+  const caps = {
+    120: 3,
+    90: 4,
+    60: 5,
+    30: 6,
+    15: 10
+  };
+  const maxMult = caps[total] || 1;
+
+  // Figure out how much time is left based on the game's deadline
+  let remaining = total;
+  if (state.deadline) {
+    const remainingMs = state.deadline - performance.now();
+    remaining = Math.max(0, Math.min(total, remainingMs / 1000));
+  }
+
+  // Scale from 1 → maxMult as time goes from 0 → total
+  // remaining = total  → multiplier ~ maxMult
+  // remaining = 0      → multiplier = 1
+  const scaled = 1 + (maxMult - 1) * (remaining / total);
+
+  // Floor to a clean integer, never below 1
+  return Math.max(1, Math.floor(scaled + 1e-9));
+}
+
+
+
+    function updateIndicators(){
+      const left=Math.max(0,Math.ceil((state.deadline-performance.now())/1000));
+      if(!state.timerRoundEnabled){
+        tTime.wrap.classList.remove('warn','danger');
+      }else{
+        tTime.wrap.classList.toggle('warn',left<=10&&left>5);
+        tTime.wrap.classList.toggle('danger',left<=5);
+      }
+      const movesLeft=maxMoves-state.moves;
+      tMoves.wrap.classList.toggle('warn',movesLeft<=2&&movesLeft>1);
+      tMoves.wrap.classList.toggle('danger',movesLeft<=1);
+    }
+
+    /* Timer */
+    function startTimer(){
+      stopTimer();
+      if(!state.timerRoundEnabled){
+        tTime.val.textContent = state.roundTimeSnap === 'off'
+          ? 'Off'
+          : state.turnLimitSec+'s';
+        return;
+      }
+      state.deadline=performance.now()+state.turnLimitSec*1000;
+      state.lastShownSec=null;
+      tTime.wrap.classList.remove('warn','danger');
+      tTime.val.textContent=state.turnLimitSec+'s';
+      state.timer=setInterval(()=>{
+        const left=Math.max(0,Math.ceil((state.deadline-performance.now())/1000));
+        if(left!==state.lastShownSec){
+          state.lastShownSec=left;
+          tTime.val.textContent=left+'s';
+          updateIndicators();
+        }
+        if(left<=0){
+          stopTimer();
+          handleTimeout();
+        }
+      },200);
+    }
+    function stopTimer(){if(state.timer){clearInterval(state.timer);state.timer=null;}}
+    function handleTimeout(){
+      if(!state.timerRoundEnabled) return;
+      if(state.lives<=0) return;
+      if(state.lives>0) state.lives-=1;
+      if(state.lives<0) state.lives=0;
+      updateBoard();
+      if(state.lives<=0) setControlsEnabled(false);
+      showModal(false,0,'time');
+    }
+
+    /* Target generation */
+    function randint(a,b){return Math.floor(Math.random()*(b-a+1))+a;}
+    function fitsWithinView(m,b){return !!clipLineToRect(state.xmin,state.xmax,state.ymin,state.ymax,m,b);}
+    function prepareTarget(){
+      let tries=0;
+      do{
+        state.tb=randint(-8,8);
+        let dx=randint(1,6), dy=randint(-6,6); // dx>=1 => no vertical slopes
+        while(dy===0) dy=randint(-6,6);
+        const s=simplify(dy,dx);
+        state.tdy=Math.max(-8,Math.min(8,s.n));
+        state.tdx=Math.max(1,Math.min(8,s.d));
+        tries++;
+      }while(tries<80 && !fitsWithinView(slopeFromFrac(state.tdy,state.tdx),state.tb));
+
+      state.moves=0;
+      state.mSet=false; state.bSet=false;
+      state.pulse=null; state.animM=null; state.animB=null;
+      slopeField.input.value=''; bField.input.value='';
+      setControlsEnabled(false);
+      updateBoard();
+      schedule();
+    }
+
+    function newTarget(){if(state.lives<=0)return;prepareTarget();showOverlay();}
+    function startRound(){
+      showGame();
+      state.roundTimeSnap = state.roundTime;
+      state.turnLimitSec = typeof state.roundTimeSnap === 'number' ? state.roundTimeSnap : 90;
+      state.timerRoundEnabled = state.roundTimeSnap !== 'off';
+      hideOverlay();
+      setControlsEnabled(true);
+      startTimer();
+    }
+    function showOverlay(){overlay.style.display='flex'; schedule();}
+    function hideOverlay(){overlay.style.display='none'; schedule();}
+
+    function isMatch(){
+      const tm=slopeFromFrac(state.tdy,state.tdx);
+      return state.mSet&&state.bSet && Math.abs(state.m-tm)<1e-9 && state.b===state.tb;
+    }
+
+    function updateBoard(){
+      setVal(tMoves,`${state.moves}/${maxMoves}`);
+      setVal(tLives,`${state.lives}`);
+      setVal(tScore,`${state.score}`);
+      if(!state.timer){
+        if(state.roundTime==='off') tTime.val.textContent='Off';
+        else tTime.val.textContent = (typeof state.roundTime === 'number' ? state.roundTime : 90) + 's';
+      }
+      updateIndicators();
+    }
+
+    /* Modal + scoring */
+    let lifeToast=null;
+    function showLifeToast(n){
+      if(!lifeToast){
+        lifeToast=el('div','life-toast');
+        tLives.wrap.append(lifeToast);
+      }
+      lifeToast.textContent=`+${n}`;
+      lifeToast.classList.remove('show');
+      void lifeToast.offsetWidth;
+      lifeToast.classList.add('show');
+      tLives.val.classList.remove('bump');
+      void tLives.val.offsetWidth;
+      tLives.val.classList.add('bump');
+      setTimeout(()=>lifeToast&&lifeToast.classList.remove('show'),1200);
+    }
+
+    function showModal(success,points,cause){
+      stopTimer();
+      const outOfLives=state.lives<=0&&!success;
+      if(success){mhTitle.textContent='Nailed It!';mhCele.textContent='✨🏆';}
+      else if(outOfLives){mhTitle.textContent='Game Over';mhCele.textContent='💥';}
+      else if(cause==='time'){mhTitle.textContent='Out of Time';mhCele.textContent='⏰';}
+      else{mhTitle.textContent='Out of Moves';mhCele.textContent='😬⏳';}
+
+      const mT=fracStr(state.tdy,state.tdx);
+      const eqTarget=`y = ${mT}x ${fmtB(state.tb)}`;
+      const eqPlayer=(state.mSet&&state.bSet)?`y = ${fracStr(state.mFrac.n,state.mFrac.d)}x ${fmtB(state.b)}`:'—';
+
+      rEq.val.textContent=success
+        ? eqPlayer
+        : (cause==='time'
+            ? `Time's up! The equation was ${eqTarget}`
+            : `Oh no! You ran out of moves. The equation was ${eqTarget}`);
+
+      rBonus.val.textContent=success ? rBonus.val.textContent : '—';
+      rPts.val.textContent=success ? rPts.val.textContent : '0';
+      rMoves.val.textContent=String(state.moves);
+      rLives.val.textContent=String(state.lives);
+
+      modalBg.style.display='flex';
+      if(success){mNext.style.display='';mReset.style.display='';}
+      else if(state.lives>0){mNext.style.display='';mReset.style.display='none';}
+      else{mNext.style.display='none';mReset.style.display='';}
+
+      mNext.onclick=()=>{modalBg.style.display='none';newTarget();};
+      mReset.onclick=()=>{state.score=0;state.lives=maxLives;modalBg.style.display='none';newTarget();};
+    }
+
+    function commitBoth(){
+      if(state.lives<=0 || overlay.style.display!=='none') return;
+      const mP=parseSlope(slopeField.input.value);
+      const bVal=parseInt(bField.input.value,10);
+      if(!mP || !Number.isFinite(bVal)) return;
+
+      const newM=mP.m, newFrac=mP.frac||decimalToFrac(mP.m,100);
+      const fromM=state.mSet?state.m:newM;
+      const fromB=state.bSet?state.b:bVal;
+      state.m=newM; state.mFrac=newFrac; state.mSet=true;
+      startAnimM(fromM,newM,320);
+      state.b=bVal; state.bSet=true;
+      startAnimB(fromB,bVal,320);
+
+      if(state.moves<maxMoves) state.moves+=1;
+      updateBoard();
+      tMoves.val.classList.remove('bump');
+      void tMoves.val.offsetWidth;
+      tMoves.val.classList.add('bump');
+
+      setTimeout(()=>{
+        if(isMatch()){
+          state.pulse={start:performance.now(),dur:900};
+          schedule();
+          launchConfetti(40);
+
+          const mult=timeMult();
+          const base=Math.max(0,maxMoves-state.moves);
+          const points=base*mult;
+          rBonus.val.textContent = state.timerRoundEnabled
+            ? `×${mult}`
+            : 'Timer off (×1)';
+          rPts.val.textContent   = String(points);
+
+          const prevHundreds=Math.floor(state.score/100);
+          state.score+=points;
+          const newHundreds=Math.floor(state.score/100);
+          const gained=Math.max(0,newHundreds-prevHundreds);
+          if(gained>0){state.lives+=gained;showLifeToast(gained);}
+
+          tScore.val.classList.remove('bump');
+          void tScore.val.offsetWidth;
+          tScore.val.classList.add('bump');
+          updateBoard();
+          setTimeout(()=>showModal(true,points,null),950);
+        }else if(state.moves>=maxMoves){
+          if(state.lives>0) state.lives-=1;
+          if(state.lives<0) state.lives=0;
+          updateBoard();
+          if(state.lives<=0) setControlsEnabled(false);
+          showModal(false,0,'moves');
+        }
+      },340);
+    }
+
+    /* Hover snap handlers */
+    canvas.addEventListener('pointermove',e=>{
+      const rect=canvas.getBoundingClientRect();
+      const px=e.clientX-rect.left;
+      const py=e.clientY-rect.top;
+      if(!lastW||!lastH){state.hoverPoint=null;return;}
+      const innerW=lastW-M.left-M.right;
+      const innerH=lastH-M.top-M.bottom;
+      if(px<M.left||px>lastW-M.right||py<M.top||py>lastH-M.bottom){
+        if(state.hoverPoint){state.hoverPoint=null;schedule();}
+        return;
+      }
+      const sx=innerW/(state.xmax-state.xmin);
+      const sy=innerH/(state.ymax-state.ymin);
+      const x=state.xmin+(px-M.left)/sx;
+      const y=state.ymin+((innerH-(py-M.top))/sy);
+      const snapX=Math.round(x);
+      const snapY=Math.round(y);
+      if(snapX<state.xmin||snapX>state.xmax||snapY<state.ymin||snapY>state.ymax){
+        if(state.hoverPoint){state.hoverPoint=null;schedule();}
+        return;
+      }
+      const hpPrev=state.hoverPoint;
+      if(!hpPrev || hpPrev.x!==snapX || hpPrev.y!==snapY){
+        state.hoverPoint={x:snapX,y:snapY};
+        schedule();
+      }
+    });
+    canvas.addEventListener('pointerleave',()=>{
+      if(state.hoverPoint){state.hoverPoint=null;schedule();}
+    });
+
+    /* Events */
+    applyBtn.addEventListener('click',commitBoth);
+    slopeField.input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();commitBoth();}});
+    bField.input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();commitBoth();}});
+    ovBtn.addEventListener('click',()=>{
+      startRound();
+      tTime.val.classList.remove('bump');
+      void tTime.val.offsetWidth;
+      tTime.val.classList.add('bump');
+    });
+
+    /* Settings interactions */
+    rowTimer.ctrl.addEventListener('click',()=>{
+      const idx=Number(rowTimer.ctrl.dataset.idx||0);
+      const val=timeValues[idx] ?? 90;
+      state.roundTime = val;
+      state.turnLimitSec = typeof val === 'number' ? val : 90;
+      stopTimer();
+      state.score=0;
+      state.lives=maxLives;
+      state.timerRoundEnabled=null;
+      tTime.val.textContent = val==='off' ? 'Off' : `${state.turnLimitSec}s`;
+      updateBoard();
+      setControlsEnabled(false);
+      showGame();
+      newTarget();
+      persist();
+    });
+
+    rowTheme.ctrl.addEventListener('click',()=>{
+      const idx=Number(rowTheme.ctrl.dataset.idx||0);
+      const theme=themeNames[idx] || 'classic';
+      state.theme=theme;
+      applyTheme(root,theme);
+      persist();
+      schedule();
+    });
+
+    /* Resize */
+    const ro=new ResizeObserver(()=>{
+      const w=Math.round(wrap.clientWidth||0);
+      if(w!==lastW){schedule();}
+    });
+    ro.observe(wrap);
+
+    /* Confetti "fireworks" */
+    function launchConfetti(count){
+      const W = wrap.clientWidth || 300;
+      const H = wrap.clientHeight || W;
+      const originX = W/2;
+      const originY = M.top + (H-M.top-M.bottom)/3;
+
+      for(let i=0;i<count;i++){
+        const p=el('div','p');
+        const hue=Math.floor(rand(180,330));
+        const sat=80+rand(-10,10);
+        const light=55+rand(-10,10);
+        p.style.background=`hsl(${hue} ${sat}% ${light}%)`;
+        p.style.left=originX+'px';
+        p.style.top=originY+'px';
+        confetti.append(p);
+        const angle = rand(-Math.PI, Math.PI);
+        const speed = rand(90,190);
+        const dx = Math.cos(angle)*speed;
+        const dy = Math.sin(angle)*speed + 40;
+        const rot = rand(-360,360);
+        const dur = 900+Math.random()*700;
+        p.animate(
+          [
+            {transform:`translate(0,0) rotate(0deg)`,opacity:1},
+            {transform:`translate(${dx}px, ${dy}px) rotate(${rot}deg)`,opacity:0}
+          ],
+          {duration:dur,easing:'cubic-bezier(.15,.7,.2,1)'}
+        ).onfinish=()=>p.remove();
+      }
+    }
+    function rand(a,b){return Math.random()*(b-a)+a;}
+
+    /* Helpers */
+    function field(labelText,inputEl){const wrap=el('div','field');const lab=el('label');lab.textContent=labelText;wrap.append(lab,inputEl);return{wrap,input:inputEl};}
+    function inputField(label,type,ph,id){const i=input(type,ph,id);const wrap=el('div','field');const lab=el('label');lab.textContent=label;wrap.append(lab,i);return{wrap,input:i};}
+    function input(type,ph,id){const i=el('input','input');i.type=type;i.placeholder=ph;if(id)i.id=id;return i;}
+    function button(text,cls){const b=el('button',cls||'btn');b.textContent=text;return b;}
+    function row(label){const wrap=el('div','lm-row');const l=el('div','lm-label');l.textContent=label;const v=document.createElement('div');wrap.append(l,v);return{wrap,val:v};}
+    function el(tag,cls){const n=document.createElement(tag);if(cls)n.className=cls;return n;}
+    function tile(label){const wrap=el('div','tile');const lbl=el('div','lbl');lbl.textContent=label;const val=el('div','val');val.textContent='—';wrap.append(lbl,val);return{wrap,val};}
+    function setVal(tile,txt){if(tile.val.textContent!==txt){tile.val.textContent=txt;tile.val.classList.remove('bump');void tile.val.offsetWidth;tile.val.classList.add('bump');}}
+    function getCSS(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+    function setControlsEnabled(enabled){slopeField.input.disabled=!enabled;bField.input.disabled=!enabled;applyBtn.disabled=!enabled;}
+    function spRow(label,ctrl){const wrap=el('div','sp-row');const l=document.createElement('label');l.textContent=label;wrap.append(l,ctrl);return{wrap,ctrl};}
+    function toggleGroup(opts,activeIdx){
+      const w=el('div','toggle-group');w.dataset.idx=String(activeIdx|0);
+      opts.forEach((t,i)=>{
+        const b=document.createElement('button');b.textContent=t;b.type='button';
+        if(i===activeIdx)b.classList.add('active');
+        b.addEventListener('click',()=>{
+          w.dataset.idx=String(i);
+          w.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+          b.classList.add('active');
+          w.dispatchEvent(new Event("click"));
+        });
+        w.appendChild(b);
+      });
+      return w;
+    }
+    function persist(){localStorage.setItem('lm9-settings',JSON.stringify({roundTime:state.roundTime,theme:state.theme}));}
+    function safeJSON(s){try{return JSON.parse(s);}catch{return null;}}
+    function applyTheme(root,theme){
+      root.classList.remove('theme-classic','theme-midnight','theme-ocean','theme-darcula','theme-terminal');
+      if(theme==='midnight') root.classList.add('theme-midnight');
+      else if(theme==='ocean') root.classList.add('theme-ocean');
+      else if(theme==='darcula') root.classList.add('theme-darcula');
+      else if(theme==='terminal') root.classList.add('theme-terminal');
+      else root.classList.add('theme-classic');
+    }
+
+    /* Sanity tests */
+    try{
+      (function(){const g=(a,b)=>{while(b){[a,b]=[b,a%b]}return a};const s=(n,d)=>{const G=g(Math.abs(n),Math.abs(d));return[n/G,d/G]};console.assert(JSON.stringify(s(6,8))===JSON.stringify([3,4]),'simplify 6/8');})();
+      (function(){const p=(s)=>{s=s.trim();if(s.includes('/')){const[a,b]=s.split('/').map(Number);return a/b;}return Number(s);};console.assert(p('-3/2')===-1.5,'parse -3/2');})();
+    }catch(e){console.warn('tests failed',e);}
+
+    /* Kick off */
+    newTarget();
+  }
+})();
 </script>

@@ -9,27 +9,24 @@ When we simplify polynomials, we are really just doing what we have always done:
 :::{.objectives}
 
 * [ ] I can identify and name a {{< glink polynomial >}} by its degree and number of terms.
-* [ ] I can write a polynomial in {{< glink standard form >}}.
+* [ ] I can write a polynomial in {{< glink "standard form" >}}.
 * [ ] I can simplify a polynomial by distributing and combining {{< glink "like terms" >}}.
 
 :::
 
 :::{.vocab}
 
-{{< glink binomial >}}, {{< glink coefficient >}}, {{< glink degree >}}, {{< glink "distributive property" >}}, {{< glink "like terms" >}}, {{< glink monomial >}}, {{< glink polynomial >}}, {{< glink "standard form" >}}, {{< glink term >}}, {{< glink trinomial >}}
+{{< glink binomial >}}, {{< glink degree >}}, {{< glink monomial >}}, {{< glink polynomial >}}, {{< glink "standard form" >}}, {{< glink trinomial >}}
 
 :::
 
 {{< warmup >}}
 
-Simplify each expression.
-These quick checks remind you of the rules we will rely on today.
+1. Simplify $3(2x - 4) + 5x - 7$.
 
-1. $x^2 \cdot x^3 =$
-2. $4x^2 + 7x^2 =$
-3. $3x^0 =$
-
-
+2. Evaluate $4x^2 - 2x + 7 - x^2$ when $x = -3$.
+   
+3. Rewrite $x^{-3} \cdot x^5$ using only positive exponents.
 
 {{< learn >}}
 
@@ -152,121 +149,90 @@ We will use the exponent and combining rules from last time to tidy up polynomia
 
 ---
 
-### 5.2.2 - Simplifying Polynomials
+### 5.2.2 – Simplifying Polynomials
 
-In Unit 2, we learned how to simplify expressions by distributing and combining like terms. In the previous lesson, we learned how to simplify expressions containing exponents. Now we will combine these ideas to help us simplify polynomials to make them easier to work with.
+Now that you can distribute, combine like terms, and use exponent rules, you’re ready to turn messy expressions into clean **polynomials in standard form**. This is an essential skill before we start multiplying and factoring polynomials.
 
-The process always follows the same four-step pattern:
+The process is always the same:
 
-1. **Distribute** across parentheses if needed.
-2. Use **exponent rules** to simplify powers.
-3. **Combine {{< glink "like terms" >}}** (same variable and same exponent).
-4. Write in **standard form**.
+1. **Distribute** if parentheses are present.
+2. Apply **exponent rules** when needed.
+3. **Combine** {{< glink "like terms" >}}.
+4. Rewrite the answer in **standard form** (highest power to lowest).
 
 ---
 
-**Example 3:**
+**Example 3:** Combining like terms
 
 Simplify $3x^2 + 5x^2 - 4x$.
 
-The $x^2$ terms match, so we combine their coefficients.
-
 $$
-3x^2 + 5x^2 - 4x = 8x^2 - 4x
+\begin{align*}
+3x^2 + 5x^2 - 4x
+&= (3x^2 + 5x^2) - 4x \\
+&= 8x^2 - 4x
+\end{align*}
 $$
-
 
 ---
 
-**Example 5**
+**Example 4:** Adding two polynomials
 
 Simplify $(2x^3 + 4x^2) + (x^3 - 5x)$.
 
-Drop the parentheses and combine like terms.
-Color-coding or underlining can help you see what matches.
-
 $$
-(2x^3 + x^3) + 4x^2 - 5x = 3x^3 + 4x^2 - 5x
+\begin{align*}
+(2x^3 + 4x^2) + (x^3 - 5x)
+&= 2x^3 + 4x^2 + x^3 - 5x \\
+&= (2x^3 + x^3) + 4x^2 - 5x \\
+&= 3x^3 + 4x^2 - 5x
+\end{align*}
 $$
-
-:::{.you-try title="Simplify $(3x^4 - 2x^3 + x) + (2x^4 + 5x^2 - 6)$."}
-$5x^4 - 2x^3 + 5x^2 + x - 6$
-:::
 
 ---
 
-**Example 6**
+**Example 5:** Distributing a monomial
 
 Simplify $3x(2x^2 + 5x - 4)$.
 
-Distribute $3x$ to each term and apply the product rule $x^a \cdot x^b = x^{a+b}$.
-
 $$
-3x(2x^2 + 5x - 4) = 6x^3 + 15x^2 - 12x
+\begin{align*}
+3x(2x^2 + 5x - 4)
+&= 3x \cdot 2x^2 + 3x \cdot 5x - 3x \cdot 4 \\
+&= 6x^3 + 15x^2 - 12x
+\end{align*}
 $$
-
-:::{.you-try title="Simplify $-4x^2(2x^3 - 3x + 1)$."}
-$-8x^5 + 12x^3 - 4x^2$
-:::
 
 ---
 
-**Example 7**
+**Example 6:** Multiple steps with subtraction
 
-Simplify $3(2x^2 - x + 5) - (x^2 + 4x - 1)$.
+Simplify
+$3(2x^2 - x + 5) - (x^2 + 4x - 1)$.
 
-:::{.you-try-m title="Simplifying with distribution and subtraction"}
-Distribute both sets of parentheses, then combine like terms carefully.
-
-$3(2x^2 - x + 5) - (x^2 + 4x - 1)$
-:::
-
-:::{.answer title="Answer"}
-[
+$$
 \begin{align*}
 3(2x^2 - x + 5) - (x^2 + 4x - 1)
-&= 6x^2 - 3x + 15 - x^2 - 4x + 1 \
-&= (6x^2 - x^2) + (-3x - 4x) + (15 + 1) \
+&= (6x^2 - 3x + 5\cdot3) - (x^2 + 4x - 1) \\
+&= 6x^2 - 3x + 15 - x^2 - 4x + 1 \\
+&= (6x^2 - x^2) + (-3x - 4x) + (15 + 1) \\
 &= 5x^2 - 7x + 16
 \end{align*}
-]
-:::
+$$
 
 ---
 
-:::{.you-try title="Simplify $7x - (4x - 6)$."}
-$3x + 6$
-:::
+:::{.you-try title="Simplify and write $-3x(2 - 5x - x^2) + 4x - 1$ in standard form."}
 
----
-
-:::{.gotcha}
-
-**Common Mistakes**
-
-* Combining terms with different exponents: $x^2 + x \neq 2x^2$
-* Losing signs when distributing: $a(b - c) = ab - ac$
-* Forgetting invisible 1’s: $-x = -1x$
-* Forgetting to reorder: always end in standard form (highest power to lowest)
+$$
+\begin{align*}
+-3x(2 - 5x - x^2) + 4x - 1 &= -6x + 15x^2 + 3x^3 + 4x - 1  \\
+&= -2x + 15x^2 + 3x^3 - 1 \\
+&= 3x^3 + 15x^2 - 2x - 1 
+\end{align*}
+$$
 
 :::
-
----
-
-### 5.2.3 - Closure - What We Have Learned
-
-When simplifying polynomials:
-
-* Each term has a clear structure: coefficient × variable × exponent.
-* Distribute first, then combine like terms.
-* Exponent rules help simplify powers when multiplying.
-* Standard form keeps everything organized from highest power to lowest.
-
-This process is: distribute, simplify, combine, and order.
-It is a pattern you will use constantly in algebra.
-Next, we will extend these same ideas to **adding, subtracting, and multiplying** entire polynomials.
-
----
 
 {{< practice >}}
 

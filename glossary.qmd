@@ -104,6 +104,16 @@ It shows the general trend of the data and can be used to **make predictions**.
 
 ---
 
+### Binomial {#glossary-binomial}
+
+A **binomial** is a polynomial with **exactly two terms** added or subtracted.
+Examples: $3x + 5$, $7y^2 - 4y$.
+
+> **Example:**
+> $x^2 + 9$ is a binomial because it has two terms: $x^2$ and $9$.
+
+---
+
 ### Calculate {#glossary-calculate}
 
 To **calculate** is to find an answer by using numbers and operations (add, subtract, multiply, divide).
@@ -242,6 +252,16 @@ A decimal is a number that uses a **dot (.)** to show values **less than 1**. It
 > **Example:**
 >
 > $0.5$ means 5 tenths, and $3.14$ means 3 and 14 hundredths.
+
+---
+
+### Degree {#glossary-degree}
+
+The **degree** of a term is the value of its exponent.
+The **degree of a polynomial** is the **highest** exponent that appears on its variables.
+
+> **Example:**
+> In $4x^3 - 2x + 7$, the highest exponent is $3$, so the degree is $3$.
 
 ---
 
@@ -773,6 +793,16 @@ A mixed number has a **whole number and a fraction** combined into one value.
 
 ---
 
+### Monomial {#glossary-monomial}
+
+A **monomial** is a polynomial with **just one term**.
+It can be a number, a variable, or a coefficient times a variable with an exponent.
+
+> **Example:**
+> $5x^4$ is a monomial. So are $7$ and $-3y$.
+
+---
+
 ### Multiple {#glossary-multiple}
 
 A multiple is what you get when you multiply a number by 1, 2, 3, and so on.
@@ -1055,6 +1085,21 @@ $$
 > **Example:**
 > A line passing through $(3, 5)$ with slope $2$ can be written as
 > $y - 5 = 2(x - 3)$.
+
+---
+
+### Polynomial {#glossary-polynomial}
+
+A **polynomial** is a sum or difference of terms where each term has:
+
+* a number (coefficient)
+* a variable
+* a **whole-number** exponent
+
+Polynomials can have one term, two terms, or many terms.
+
+> **Example:**
+> $3x^2 + 2x - 5$ is a polynomial with three terms.
 
 ---
 
@@ -1376,6 +1421,21 @@ To **solve** an equation means to find every value of the variable that makes th
 
 ---
 
+### Standard Form {#glossary-standard-form}
+
+**Standard form** is a way of writing an expression or equation using an agreed-upon order.
+
+The exact rules depend on the type of problem:
+
+* **Polynomials:** write terms from **highest degree** to **lowest degree**.
+* **Linear equations:** write the equation in the form **$Ax + By = C$**, where $A$, $B$, and $C$ are numbers and $A$ is usually positive.
+
+> **Example:**
+> *Polynomial:* $5x^3 - 2x + 7$
+> *Linear equation:* $3x - 4y = 12$
+
+---
+
 ### Subtraction {#glossary-subtraction}
 
 An operation that finds the difference between two numbers.
@@ -1459,6 +1519,15 @@ A **term** is one part of an expression. Terms are separated by plus or minus si
 >
 > In the expression $4x + 3 - 2y$, there are **three** terms:  
 > $4x$, $3$, and $-2y$
+
+---
+
+### Trinomial {#glossary-trinomial}
+
+A **trinomial** is a polynomial with **exactly three terms**.
+
+> **Example:**
+> $x^2 + 3x - 10$ is a trinomial because it has three terms.
 
 ---
 
