@@ -8,7 +8,7 @@ The distance a number is from zero on a number line, always expressed as a posit
 >
 > The **absolute value** of `-7` is `7`.
 
-**See Also:** {{< glink "best-fit line" >}}, {{< glink correlation >}}
+**See Also:** {{< glink opposite >}}
 
 ---
 
@@ -60,35 +60,26 @@ An **area model** is a visual way to organize multiplication by breaking each nu
 
 ### Associative (Associative Property) {#glossary-associative}
 
-An operation is **associative** if **changing how the numbers are grouped** (parentheses) **doesn’t change the result**—as long as the operation is the same throughout.
+An operation is **associative** if changing how the numbers are grouped does not change the answer.  
+The numbers stay in the same order; only the parentheses move.
 
-**Works for:**
+Addition and multiplication are associative. Subtraction, division, and most exponent situations are not.
 
-* Addition: $(a + b) + c = a + (b + c)$
-* Multiplication: $(ab)c = a(bc)$
+> **Examples (associative):**
+>
+> $(2 + 5) + 3 = 2 + (5 + 3)$  
+> $(4 \cdot 3)\cdot x = 4\cdot(3\cdot x)$
 
-**Does *not* work for:**
+> **Not associative:**
+>
+> $(7 - 3) - 2 \ne 7 - (3 - 2)$
 
-* Subtraction: $(a - b) - c \ne a - (b - c)$ in general
-* Division: $(a \div b) \div c \ne a \div (b \div c)$
-* Exponents: $(a^b)^c \ne a^{(b^c)}$
-
-**Examples:**
-
-* $(2 + 5) + 3 = 2 + (5 + 3) = 10$
-* $(x + 4) + 6 = x + (4 + 6) = x + 10$
-* $(2\cdot 3)\cdot x = 2\cdot(3\cdot x)$
-
-**Common gotcha:**
-Subtraction/division aren’t associative. Also, mixing operations breaks it: $a + (b\cdot c)$ is **not** the same as $(a + b)\cdot c$.
-
-**Why it matters:**
-Lets you **regroup** like terms to add coefficients more easily, e.g.,
-$3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5$.
+We use the associative property to regroup terms or factors so it is easier to do mental math and to simplify expressions.
 
 **See also:** {{< glink commutative >}}, {{< glink "distributive property" >}}, {{< glink "like terms" >}}
 
 ---
+
 
 ### Axis {#glossary-axis}
 
@@ -123,7 +114,7 @@ It shows the general trend of the data and can be used to **make predictions**.
 > **Example:**
 > In a graph of study time vs. test score, the best-fit line rises upward because students who study more tend to earn higher scores.
 
-**See Also:** {{< glink correlation >}}
+**See Also:** {{< glink correlation >}}, {{< glink "scatter plot" >}}
   
 ---
 
@@ -199,31 +190,27 @@ That means it can be divided evenly by numbers other than 1 and itself.
 
 ### Commutative (Commutative Property) {#glossary-commutative}
 
-An operation is **commutative** if **changing the order** of the numbers **doesn’t change the result**.
+An operation is **commutative** if changing the order of the numbers does not change the answer.
 
-**Works for:**
+Addition and multiplication are commutative. Subtraction, division, and most exponent situations are not.
 
-* Addition: $a + b = b + a$
-* Multiplication: $a\cdot b = b\cdot a$
+> **Examples (commutative):**
+>
+> $3 + 5 = 5 + 3$  
+> $2x + 7 = 7 + 2x$  
+> $4\cdot 3 = 3\cdot 4$
 
-**Does *not* work for:**
+> **Not commutative:**
+>
+> $7 - 3 \ne 3 - 7$  
+> $8 \div 2 \ne 2 \div 8$
 
-* Subtraction: $a - b \ne b - a$ (e.g., $7-3 \ne 3-7$)
-* Division: $a \div b \ne b \div a$ (e.g., $8\div2 \ne 2\div8$)
-* Exponents (in general): $a^b \ne b^a$
-
-**Examples:**
-
-* $3 + 5 = 5 + 3 = 8$
-* $2x + 7 = 7 + 2x$
-* $4\cdot 3 = 3\cdot 4 = 12$
-
-**Why it matters:**
-Lets you **reorder** terms when simplifying, e.g., $2x + 5x + 3 = (2x + 5x) + 3$.
+The commutative property lets us reorder terms in a sum or product to make simplifying and mental math easier.
 
 **See Also:** {{< glink associative >}}, {{< glink "distributive property" >}}
 
 ---
+
 
 ### Compute {#glossary-compute}
 
@@ -281,7 +268,7 @@ Correlation describes how two variables are related. It tells you whether they t
 > **Example:**  
 > As the number of hours you practice a skill increases, your performance often improves — this is a positive correlation.
 
-**See Also:** {{< glink "best-fit line" >}}
+**See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}
 
 ---
 
@@ -390,19 +377,22 @@ An operation that splits a number into equal parts.
 
 ### Divisible {#glossary-divisible}
 
-A number is **divisible** by another if it divides evenly — these rules help you check quickly.
+A number is **divisible** by another number if it divides evenly with no remainder.
 
-* **Divisible by 2**: The number ends in **0, 2, 4, 6, or 8** (an even number).
-* **Divisible by 3**: The **sum of the digits** is divisible by 3.
-* **Divisible by 4**: The **last two digits** form a number divisible by 4.
-* **Divisible by 5**: The number ends in **0 or 5**.
-* **Divisible by 6**: The number is divisible by **both 2 and 3**.
-* **Divisible by 9**: The **sum of the digits** is divisible by 9.
-* **Divisible by 10**: The number ends in **0**.
+There are some quick tests that help you check:
 
-**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "prime factorization" >}}, {{< glink multiple >}}
+* **Divisible by 2**: the number ends in 0, 2, 4, 6, or 8.
+* **Divisible by 3**: the sum of the digits is divisible by 3.
+* **Divisible by 4**: the last two digits form a number divisible by 4.
+* **Divisible by 5**: the number ends in 0 or 5.
+* **Divisible by 6**: the number is divisible by both 2 and 3.
+* **Divisible by 9**: the sum of the digits is divisible by 9.
+* **Divisible by 10**: the number ends in 0.
+
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink multiple >}}
 
 ---
+
 
 ### Divisor {#glossary-divisor}
 
@@ -741,7 +731,7 @@ You can find the GCF by listing all the factors and finding the ones shared betw
 > 
 > **The greatest is 6**
 
-**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink factoring >}}, {{< glink simplify >}}, {{< glink "relatively prime" >}}
+**See Also:** {{< glink factor >}}, {{< glink factoring >}}, {{< glink "prime factorization" >}}, {{< glink simplify >}}, {{< glink "relatively prime" >}}
 
 
 ---
@@ -1051,7 +1041,7 @@ A math operation that means repeated addition or combining equal groups.
 
 ### Multiplication by proximity {#glossary-multiplication_by_proximity}
 
-Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. You multiply them implicitly when they are next to each other.
+Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$.
 
 > **Examples**
 >
@@ -1120,20 +1110,16 @@ Number lines help you visualize math operations and compare values.
 
 ### Number sense {#glossary-number_sense}
 
-**Number sense** is a person’s ability to understand, work with, and think about numbers.
+Number sense is a person’s feel for how numbers work. It means you understand what numbers mean, how they relate to each other, and what answers seem reasonable.
 
-In simple terms, it means having a good feel for how numbers work — like knowing:
+People with strong number sense can estimate, do mental math, notice patterns, and tell when an answer is too big or too small.
 
-* What numbers mean
-* How they relate to each other
-* How to break them apart or put them together
-* What a reasonable answer might be
-
-People with strong number sense can do mental math, estimate, recognize patterns, and spot when something “doesn’t make sense.”
-
-It's kind of like having a good instinct for numbers — not just memorizing rules, but really *getting* how numbers behave.
+> **Example:**
+>
+> If someone says that $20\%$ of 50 is 40, good number sense tells you that cannot be right, because $20\%$ of 50 should be much smaller than 50.
 
 ---
+
 
 ### Numerator {#glossary-numerator}
 
@@ -1449,7 +1435,7 @@ Prime factorization means writing a number as a product of prime numbers.
 > `18 = 2 × 3 × 3` or `2 × 3²`
 > These are the prime building blocks of 18.
 
-**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "prime number" >}}, {{< glink product >}}, {{< glink "factor tree" >}}
+**See Also:** {{< glink factor >}}, {{< glink "prime number" >}}, {{< glink product >}}, {{< glink "factor tree" >}}
 
 ---
 
@@ -1657,7 +1643,7 @@ Positive residuals are points **above** the line; negative residuals are **below
 > **Example:**  
 > If the line of best fit predicts $\hat{y} = 12$ for some $x$, but the actual value is $y = 15$, then the residual is $15 - 12 = 3$.
 
-**See Also:** {{< glink "best-fit line" >}}
+**See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}
 
 ---
 
@@ -1668,7 +1654,7 @@ A scatter plot is a graph that shows pairs of data points as dots on a coordinat
 > **Example:**  
 > A scatter plot of study time vs. test score might show that students who study more tend to earn higher scores.
 
-**See Also:** {{< glink "best-fit line" >}}, {{< glink correlation >}}
+**See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}, {{< glink correlation >}}
 
 ---
 
