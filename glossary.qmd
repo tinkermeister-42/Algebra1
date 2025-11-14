@@ -8,15 +8,19 @@ The distance a number is from zero on a number line, always expressed as a posit
 >
 > The **absolute value** of `-7` is `7`.
 
+**See Also:** {{< glink "best-fit line" >}}, {{< glink correlation >}}
+
 ---
 
 ### Addition {#glossary-addition}
 
-An operation that combines two or more numbers into a total.
+An operation that combines two or more numbers into a total. Also called "plus".
 
 > **Example:**
 >
 > $5 + 7 = 12$
+
+**See Also:** {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink PEMDAS >}}, {{< glink "order of operations" >}}
 
 ---
 
@@ -38,6 +42,19 @@ To save space and make their answers more clear, mathematicians like to use $\ma
 > $2(x + 3) = 2x + 6$
 > simplifies to $2x + 6 = 2x + 6$, which is always true.
 > The solution is **all real numbers**.
+
+**See Also:** {{< glink "no solution" >}}
+
+---
+
+### Area Model {#glossary-area-model}
+
+An **area model** is a visual way to organize multiplication by breaking each number or expression into parts. Each part forms a row or column in a box, and the box cells show the partial products. When all the partial products are added together, you get the total product. Area models work for whole numbers, decimals, and polynomials of any size.
+
+> **Example:**
+> To multiply $(x + 4)(x^2 - 3x + 2)$, you can use a box with two rows and three columns. Each cell shows one partial product, and adding them gives the final expression.
+
+**See Also:** {{< glink product >}}, {{< glink multiplication >}}, {{< glink polynomial >}}, {{< glink "partial product" >}}
 
 ---
 
@@ -76,10 +93,12 @@ $3x + 2x + 5 = (3x + 2x) + 5 = 5x + 5$.
 ### Axis {#glossary-axis}
 
 A straight reference line used to measure and locate points on a graph.
-In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** runs up and down. They cross at the **origin**.
+In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** runs up and down. They cross at the **origin**. When we talk about more than one axis, we say "axes".
 
 > **Example:**
 > On the coordinate plane, the point (4, 2) is 4 units to the right of the y-axis and 2 units above the x-axis.
+
+**See Also:** {{< glink "coordinate plane" >}}, {{< glink quadrant >}}, {{< glink "number line" >}}
 
 ---
 
@@ -92,6 +111,8 @@ In a power like $5^3$, the base is $5$.
 >
 > In $x^4$, the base is $x$.
 
+**See Also:** {{< glink exponent >}}, {{< glink variable >}}, {{< glink power >}}
+
 ---
 
 ### Best-Fit Line {#glossary-best-fit-line}
@@ -102,15 +123,18 @@ It shows the general trend of the data and can be used to **make predictions**.
 > **Example:**
 > In a graph of study time vs. test score, the best-fit line rises upward because students who study more tend to earn higher scores.
 
+**See Also:** {{< glink correlation >}}
+  
 ---
 
 ### Binomial {#glossary-binomial}
 
 A **binomial** is a polynomial with **exactly two terms** added or subtracted.
-Examples: $3x + 5$, $7y^2 - 4y$.
 
 > **Example:**
 > $x^2 + 9$ is a binomial because it has two terms: $x^2$ and $9$.
+
+**See Also:** {{< glink monomial >}}, {{< glink trinomial >}}, {{< glink polynomial >}}
 
 ---
 
@@ -121,6 +145,8 @@ To **calculate** is to find an answer by using numbers and operations (add, subt
 > **Example:**
 >
 > To calculate $7 + 5$, we add to get 12.
+
+**See Also:** {{< glink evaluate >}}, {{< glink "order of operations" >}}, {{< glink operation >}}
 
 ---
 
@@ -141,6 +167,8 @@ A **coefficient** is the number in front of a variable. It tells you how many of
 > In the expression $3x$, the coefficient is **3**.  
 > It means “3 times x.”
 
+**See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink polynomial >}}, {{< glink expression >}}
+
 ---
 
 ### Combine Like Terms {#glossary-combine-like-terms}
@@ -150,6 +178,8 @@ To **combine like terms** means to simplify an expression by adding or subtracti
 > **Example:**
 >
 > $3x + 2x = 5x$ because both terms are “like terms” (they each have $x$).
+
+**See Also:** {{< glink simplify >}}, {{< glink "like terms" >}}, {{< glink expression >}}
 
 ---
 
@@ -163,15 +193,7 @@ That means it can be divided evenly by numbers other than 1 and itself.
 >
 > 12 is composite because 2, 3, 4, and 6 all divide it evenly.
 
----
-
-### Compute {#glossary-compute}
-
-To **compute** is another way to say find the answer in math by doing the steps.
-
-> **Example:**
->
-> To compute $3 \times 4$, we multiply to get 12.
+**See Also:** {{< glink "prime number" >}}, {{< glink factor >}}
 
 ---
 
@@ -199,7 +221,19 @@ An operation is **commutative** if **changing the order** of the numbers **doesn
 **Why it matters:**
 Lets you **reorder** terms when simplifying, e.g., $2x + 5x + 3 = (2x + 5x) + 3$.
 
-**See also:** {{< glink associative >}}, {{< glink "distributive property" >}}
+**See Also:** {{< glink associative >}}, {{< glink "distributive property" >}}
+
+---
+
+### Compute {#glossary-compute}
+
+To **compute** is another way to say find the answer in math by doing the steps.
+
+> **Example:**
+>
+> To compute $3 \times 4$, we multiply to get 12.
+
+**See Also:** {{< glink evaluate >}}, {{< glink "order of operations" >}}
 
 ---
 
@@ -211,15 +245,19 @@ A **constant** is a number that does **not** change. It stays the same no matter
 >
 > In the expression $x + 5$, the number **5** is a constant.
 
+**See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink expression >}}
+
 ---
 
 ### Convert {#glossary-convert}
 
-To convert means to **change a number from one form to another** — like from a fraction to a decimal, or a decimal to a percent.
+To convert means to **change a number from one form to another**, like from a fraction to a decimal, or a decimal to a percent.
 
 > **Example:**
 >
 > $\frac{3}{4} = 0.75 = 75\%$ — all are equivalent, just written differently.
+
+**See Also:** {{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}
 
 ---
 
@@ -232,6 +270,19 @@ A flat grid formed by the intersection of the x-axis and y-axis at the origin. I
 > **Example:**
 > When you graph the equation y = 2x + 1, every point on the coordinate plane that satisfies the equation makes a straight line.
 
+**See Also:** {{< glink axis >}}, {{< glink "number line" >}}, {{< glink quadrant >}}, {{< glink "ordered pair" >}}
+
+---
+
+### Correlation {#glossary-correlation}
+
+Correlation describes how two variables are related. It tells you whether they tend to increase together, decrease together, or move in opposite ways. Correlation can be positive, negative, or close to zero if there is no clear pattern.
+
+> **Example:**  
+> As the number of hours you practice a skill increases, your performance often improves — this is a positive correlation.
+
+**See Also:** {{< glink "best-fit line" >}}
+
 ---
 
 ### Counterexample {#glossary-counterexample}
@@ -243,6 +294,8 @@ A **counterexample** is a single, specific example that shows a statement is **n
 > Statement: “All even numbers are multiples of 4.”
 > Counterexample: **6** is even but not a multiple of 4.
 
+**See Also:** {{< glink evidence >}}, {{< glink proof >}}
+
 ---
 
 ### Decimal {#glossary-decimal}
@@ -252,6 +305,8 @@ A decimal is a number that uses a **dot (.)** to show values **less than 1**. It
 > **Example:**
 >
 > $0.5$ means 5 tenths, and $3.14$ means 3 and 14 hundredths.
+
+**See Also:** {{< glink fraction >}}, {{< glink percent >}}, {{< glink part >}}, {{< glink convert >}}, {{< glink "place value" >}}
 
 ---
 
@@ -263,6 +318,8 @@ The **degree of a polynomial** is the **highest** exponent that appears on its v
 > **Example:**
 > In $4x^3 - 2x + 7$, the highest exponent is $3$, so the degree is $3$.
 
+**See Also:** {{< glink polynomial >}}, {{< glink term >}}, {{< glink exponent >}}
+
 ---
 
 ### Denominator {#glossary-denominator}
@@ -273,6 +330,19 @@ The denominator is the **bottom number** in a fraction. It tells **how many equa
 >
 > In the fraction 3/4, the **denominator** is 4.
 
+**See Also:** {{< glink numerator >}}, {{< glink fraction >}}, {{< glink divisor >}}
+
+---
+
+### Difference {#glossary-difference}
+
+The difference is the result of subtracting one number or expression from another.
+
+> **Example:**  
+> The difference between $15$ and $9$ is $6$.
+
+**See Also:** {{< glink sum >}}, {{< glink subtraction >}}, {{< glink quotient >}}, {{< glink product >}}, {{< glink addition >}}
+
 ---
 
 ### Discount {#glossary-discount}
@@ -282,6 +352,8 @@ A discount is an amount **taken off the original price**. It’s usually shown a
 > **Example:**  
 >   
 > A 25% discount on a $40 shirt means you save $10. You pay $30.
+
+**See Also:** {{< glink markup >}}
 
 ---
 
@@ -300,6 +372,8 @@ You can also use it **in reverse** to **factor**: if $ab+ac$, you can write $a(b
 > With subtraction: $-2(y-5)=-2y+10$
 > Reverse (factoring): $8x+12=4(2x+3)$
 
+**See Also:** {{< glink "associative property" >}}, {{< glink multiplication >}}
+
 ---
 
 ### Division {#glossary-division}
@@ -309,6 +383,8 @@ An operation that splits a number into equal parts.
 > **Example:**
 >
 > $12 \div 3 = 4$ (12 split into 3 equal parts)
+
+**See Also:** {{< glink addition >}}, {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink operation >}}, {{< glink fraction >}}
 
 ---
 
@@ -324,6 +400,8 @@ A number is **divisible** by another if it divides evenly — these rules help y
 * **Divisible by 9**: The **sum of the digits** is divisible by 9.
 * **Divisible by 10**: The number ends in **0**.
 
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "prime factorization" >}}, {{< glink multiple >}}
+
 ---
 
 ### Divisor {#glossary-divisor}
@@ -333,6 +411,19 @@ A divisor is the number you **divide by** in a division problem. It tells you ho
 > **Example:**  
 >   
 > In $12 \div 3 = 4$, the number 3 is the divisor because it divides 12 into 3 equal parts.
+
+**See Also:** {{< glink division >}}, {{< glink denominator >}}, {{< glink factor >}}
+
+---
+
+### Domain {#glossary-domain}
+
+The **domain** of a relationship or function is the set of all **input values** that are allowed or make sense in the situation.
+
+> **Example:**  
+> If $x$ represents the number of tickets sold, then the domain is whole numbers $0, 1, 2, \dots$ (you can’t sell a negative number of tickets).
+
+**See Also:** {{< glink range >}}, {{< glink function >}}, {{< glink input >}}
 
 ---
 
@@ -354,6 +445,8 @@ A divisor is the number you **divide by** in a division problem. It tells you ho
 > Substitute back to get $y = 4$.
 > The solution is $(3, 4)$.
 
+**See Also:** {{< glink substitution >}}, {{< glink "system of equations" >}}
+
 ---
 
 ### Equation {#glossary-equation}
@@ -367,6 +460,8 @@ It has an equals sign (=) and shows a relationship between numbers or expression
 > $2 + 3 = 5$ and $x + 1 = 7$
 > $(x - 5)^2 = 3x - 1$
 
+**See Also:** {{< glink solution >}}, {{< glink inequality >}}, {{< glink solve >}}, {{< glink expression >}}, {{< glink "literal equation" >}}, {{< glink "linear equation" >}}
+
 ---
 
 ### Equivalent {#glossary-equivalent}
@@ -376,6 +471,8 @@ Two numbers are equivalent if they have **the same value**, even if they look di
 > **Example:**
 >
 > $\frac{1}{2}$, 0.5, and 50% are all equivalent.
+
+**See Also:** {{< glink "equivalent expressions" >}}, {{< glink equation >}}
 
 ---
 
@@ -392,6 +489,8 @@ Two expressions are equivalent if they have the same value for every number you 
 >
 > These expressions are equivalent because, by the distributive property, expression B is $3x - 3$.
 
+**See Also:** {{< glink equivalent >}}, {{< glink expression >}}, {{< glink equation >}}
+
 ---
 
 ### Evaluate {#glossary-evaluate}
@@ -404,6 +503,8 @@ To find the value of an expression by substituting numbers for the variables and
 >
 > $2(3) - 5 = 6 - 5 = 1$
 
+**See Also:** {{< glink calculate >}}, {{< glink substitute >}}, {{< glink substitution >}}
+
 ---
 
 ### Even {#glossary-even}
@@ -413,6 +514,8 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 > **Example:**
 > 6 is even because $6 \div 2 = 3$ with no leftover.
 > 14, 28, and 100 are also even.
+
+**See Also:** {{< glink odd >}}, {{< glink "whole number" >}}, {{< glink "skip count" >}}
 
 ---
 
@@ -424,6 +527,8 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 >
 > Claim: “This pattern goes up by 3 each time.”
 > Evidence: The terms are 2, 5, 8, 11. The differences are +3, +3, +3, so the claim is supported.
+
+**See Also:** {{< glink counterexample >}}, {{< glink proof >}}
 
 ---
 
@@ -437,6 +542,8 @@ You use the distributive property to spread multiplication over addition or subt
 > $3(x+2)$ expands to $3x+6$.  
 > $(x+4)(x+1)$ expands to $x^2 + 5x + 4$.
 
+**See Also:** {{< glink simplify >}}, {{< glink "distributive property" >}}
+
 ---
 
 ### Exponent {#glossary-exponent}
@@ -447,6 +554,8 @@ In $5^3$, the exponent is $3$, which means $5\cdot5\cdot5$.
 > **Example:**
 >
 > $x^4$ means $x\cdot x\cdot x\cdot x$ (four $x$’s multiplied).
+
+**See Also:** {{< glink base >}}, {{< glink term >}}, {{< glink "product rule" >}}, {{< glink "power of a power" >}}, {{< glink "quotient rule" >}}, {{< glink "negative exponent" >}}, {{< glink "zero exponent" >}}, {{< glink power >}}
 
 ---
 
@@ -463,6 +572,8 @@ A math sentence made up of numbers, variables, operations, and sometimes parenth
 >
 > $4(x-3)^2$ is also an expression
 
+**See Also:** {{< glink equation >}}, {{< glink simplify >}}, {{< glink variable >}}, {{< glink operation >}}
+
 ---
 
 
@@ -478,6 +589,8 @@ If you can split something into equal groups with no leftovers, the group size i
 
 *Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink "greatest common factor" >}} giving $2(x-1)$*.
 
+**See Also:** {{< glink "factor tree" >}}, {{< glink factoring >}}, {{< glink "whole number" >}}, {{< glink multiple >}}, {{< glink "greatest common factor" >}}
+
 ---
 
 ### Factoring {#glossary-factoring}
@@ -489,6 +602,8 @@ Factoring means breaking something down into smaller parts that multiply togethe
 > - Factoring a number: 12 can be factored into $3 \times 4$ or $2 \times 6$.
 >
 > - Factoring an expression: $x^2 + 5x + 6$ can be factored into $(x + 2)(x + 3)$.
+
+**See Also:** {{< glink polynomial >}}, {{< glink factor >}}, {{< glink expression >}}, {{< glink "factor tree" >}}
 
 ---
 
@@ -513,6 +628,19 @@ flowchart TD
 >
 > This tells us that the {{< glink "prime factorization" >}} of 24 is $2^3 \cdot 3$.
 
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}
+
+---
+
+### Formula {#glossary-formula}
+
+A formula is a rule or equation that shows how different quantities are related. It usually includes variables and tells you how to calculate one value from others.
+
+> **Example:**  
+> The area of a rectangle uses the formula $A = \ell w$, which means you can find the area by multiplying the length and width.
+
+**See Also:** {{< glink "literal equation" >}}
+
 ---
 
 ### Fraction {#glossary-fraction}
@@ -525,6 +653,8 @@ The denominator tells how many equal parts the whole is divided into, and the nu
 >
 > In 3/4, the fraction means **3 out of 4** equal parts.
 
+**See Also:** {{< glink division >}}, {{< glink numerator >}}, {{< glink denominator >}}, {{< glink part >}}, {{< glink ratio >}}, {{< glink quotient >}}
+
 ---
 
 ### Fractional Exponent {#glossary-fractional-exponent}
@@ -535,6 +665,8 @@ $a^{\tfrac{m}{n}}=\sqrt[n]{a^m}$ (for real numbers, typically $a\ge0$).
 > **Example:**
 >
 > $16^{\tfrac{3}{4}}=\sqrt[4]{16^3}=\sqrt[4]{4096}=8$.
+
+**See Also:** {{< glink exponent >}}
 
 ---
 
@@ -547,6 +679,8 @@ A **function** is a rule that takes an **input**, does something to it, and prod
 > - Input 5 &rarr; Output 13  
 > - Input -1 &rarr; Output 1
 
+**See Also:** {{< glink "function notation" >}}, {{< glink output >}}, {{< glink input >}}, {{< glink  "linear equation" >}}
+
 ---
 
 ### Function Notation {#glossary-function-notation}
@@ -558,6 +692,8 @@ This means “the function $f$ takes an input $x$ and gives an output $f(x)$.”
 > **Example:**
 > If $f(x) = 2x + 1$, then $f(3) = 2(3) + 1 = 7$.
 
+**See Also:** {{< glink function >}}
+
 ---
 
 ### Grade {#glossary-grade}
@@ -567,6 +703,8 @@ A grade often shows **how well someone did** using a percent or letter. It’s u
 > **Example:**  
 >   
 > If you got 18 out of 20 questions right, your grade is $\frac{18}{20} = 90\%$.
+
+**See Also:** {{< glink percent >}}, {{< glink ratio >}}
 
 ---
 
@@ -580,6 +718,8 @@ A number is greater than (**>**) another number if it is further to the right on
 > ![Greater than true](images/Glossary/greater_than_true.png){#fig-number-line width="100%"}
 > but $3 > 5$ is false
 > ![Greater than false](images/Glossary/greater_than_false.png){#fig-number-line width="100%"}
+
+**See Also:** {{< glink inequality >}}, {{< glink "less than" >}}
 
 ---
 
@@ -601,6 +741,9 @@ You can find the GCF by listing all the factors and finding the ones shared betw
 > 
 > **The greatest is 6**
 
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink factoring >}}, {{< glink simplify >}}, {{< glink "relatively prime" >}}
+
+
 ---
 
 ### Horizontal {#glossary-horizontal}
@@ -611,6 +754,8 @@ Side to side, like the horizon. Level ground is horizontal.
 >
 >  This is a horizontal number line.
 > ![](/images/Glossary/blank_numberline.png)
+
+**See Also:** {{< glink vertical >}}, {{< glink slope >}}, {{< glink axis >}}
 
 ---
 
@@ -625,6 +770,8 @@ In an experiment, if you find a case where the hypothesis **is not true** you ca
 > "Plants grow better when spoken to".
 >
 > "These two expressions are equivalent". 
+
+**See Also:** {{< glink counterexample >}}, {{< glink evidence >}}
 
 ---
 
@@ -641,6 +788,8 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 >
 > $\frac{8}{3}$ means “eight thirds,” or $2\frac{2}{3}$.
 
+**See Also:** {{< glink "mixed number" >}}, {{< glink fraction >}}
+
 ---
 
 ### Inequality {#glossary-inequality}
@@ -650,6 +799,8 @@ An **inequality** is a math statement that compares two values or expressions us
 > **Example:**
 >
 > The inequality ( x + 5 < 12 ) means that ( x + 5 ) is **less than** 12.
+
+**See Also:** {{< glink equation >}}, {{< glink "less than" >}}, {{< glink "greater than" >}}
 
 ---
 
@@ -661,6 +812,8 @@ The word **infinitely** means "without end" or "going on forever." In math, some
 > The number line goes on **infinitely** in both directions.
 > There are **infinitely many** decimals between 0 and 1.
 
+**See Also:** {{< glink infinity >}}, {{< glink "all real numbers" >}}
+
 ---
 
 ### Infinity {#glossary-infinity}
@@ -670,6 +823,8 @@ The word **infinitely** means "without end" or "going on forever." In math, some
 > **Example:**
 > The number line keeps going toward **infinity** in both directions.
 > You can keep counting forever — there's no biggest number because numbers go on to **infinity**.
+
+**See Also:** {{< glink "all real numbers" >}}
 
 ---
 
@@ -681,6 +836,8 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 > 
 > `-3`, `0`, `5`, `100`
 
+**See Also:** {{< glink "whole number" >}}, {{< glink fraction >}}, {{< glink decimal >}}
+
 ---
 
 ### Intersection {#glossary-intersection}
@@ -689,6 +846,19 @@ An **intersection** is the point where two lines (or curves) meet on a graph. In
 
 > **Example:**
 > The lines $y = 2x + 1$ and $y = -x + 4$ intersect at $(1, 3)$, meaning that $(1, 3)$ makes both equations true.
+
+**See Also:** {{< glink "system of equations" >}}, {{< glink perpendicular >}}, {{< glink solution >}}
+
+---
+
+### Interval {#glossary-interval}
+
+An **interval** is a continuous stretch of the number line between two values. It may **include** or **exclude** its endpoints, depending on the context or inequality symbols used.
+
+> **Example:**  
+> The inequality $1 < x \le 4$ describes the interval of numbers **greater than 1 and up to and including 4**.
+
+**See Also:** {{< glink inequality >}}, {{< glink "number line" >}}, {{< glink domain >}}
 
 ---
 
@@ -702,6 +872,8 @@ Addition and subtraction are inverses. Multiplication and division are inverses.
 > The inverse of adding 5 is subtracting 5.
 > The inverse of dividing by 3 is multiplying by 3.
 
+**See Also:** {{< glink solve >}}, {{< glink equation >}}, {{< glink operation >}}
+
 ---
 
 ### Less than {#glossary-less_than}
@@ -714,6 +886,8 @@ A number is less than (**<**) another number if it is further to the left on the
 > ![Less than true](images/Glossary/less_than_true.png){#fig-number-line width="100%"}
 > but $5 < 3$ is false
 > ![Less than false](images/Glossary/less_than_false.png){#fig-number-line width="100%"}
+
+**See Also:** {{< glink inequality >}}, {{< glink "greater than" >}}
 
 ---
 
@@ -733,6 +907,8 @@ Terms whose variable part matches exactly — same variables with the same expon
 > - $2y$ and $2x$ are **not** like terms.
 > - $42$ and $42z$ are **not** like terms.
 
+**See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink "combine like terms" >}}
+
 ---
 
 ### Linear Equation {#glossary-linear-equation}
@@ -750,6 +926,8 @@ where $a$, $b$, and $c$ are numbers.
 > **Example:**
 > $3x + 7 = 19$ is a linear equation. Solving gives $x = 4$.
 
+**See Also:** {{< glink "linear model" >}}, {{< glink equation >}}, {{< glink "best-fit line" >}}
+
 ---
 
 ### Linear Model {#glossary-linear-model}
@@ -759,6 +937,8 @@ It follows the pattern $y = mx + b$, where $m$ is the **slope** (rate) and $b$ i
 
 > **Example:**
 > If a taxi costs $3 to start plus $2 per mile, the linear model is $C(d) = 2d + 3$.
+
+**See Also:** {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink y-intercept >}}
 
 ---
 
@@ -771,6 +951,8 @@ A **literal equation** is an equation that uses letters to represent values. The
 > In the formula $A = lw$, you can solve for $l$ by dividing both sides by $w$:
 > $l = \dfrac{A}{w}$.
 
+**See Also:** {{< glink equation >}}, {{< glink  formula >}}
+
 ---
 
 ### Markup {#glossary-markup}
@@ -780,6 +962,31 @@ A markup is the **amount added to a cost** to set a higher selling price, usuall
 > **Example:**  
 >   
 > If a store buys a toy for $10 and adds a 50% markup, the price becomes $15.
+
+**See Also:** {{< glink discount >}}
+
+---
+
+### Mean {#glossary-mean}
+
+The **mean** of a data set is what we usually call the **average**. You find it by adding all the values and dividing by how many there are.
+
+> **Example:**  
+> The mean of 4, 7, and 9 is $\dfrac{4 + 7 + 9}{3} = \dfrac{20}{3} \approx 6.67$.
+
+**See Also:** {{< glink median >}}, {{< glink mode >}}, {{< glink "standard deviation" >}}
+
+---
+
+### Median {#glossary-median}
+
+The **median** is the **middle value** in a data set when the numbers are arranged in order. If there are two middle values, the median is the mean of those two numbers.
+
+> **Example:**  
+> For 3, 8, 10, 12, 15 the median is 10 (the middle value).  
+> For 2, 4, 7, 9 the median is $\dfrac{4 + 7}{2} = 5.5$.
+
+**See Also:** {{< glink mean >}}, {{< glink mode >}}
 
 ---
 
@@ -791,6 +998,19 @@ A mixed number has a **whole number and a fraction** combined into one value.
 >   
 > $2\frac{1}{4}$ means 2 wholes and 1 fourth. It’s the same as $\frac{9}{4}$.
 
+**See Also:** {{< glink "improper fraction" >}}, {{< glink fraction >}}
+
+---
+
+### Mode {#glossary-mode}
+
+The **mode** of a data set is the value that appears **most often**. A data set can have one mode, more than one mode, or no mode at all.
+
+> **Example:**  
+> In 5, 7, 7, 8, 9, the mode is 7 because it appears more times than the other numbers.
+
+**See Also:** {{< glink mean >}}, {{< glink median >}}
+
 ---
 
 ### Monomial {#glossary-monomial}
@@ -800,6 +1020,8 @@ It can be a number, a variable, or a coefficient times a variable with an expone
 
 > **Example:**
 > $5x^4$ is a monomial. So are $7$ and $-3y$.
+
+**See Also:** {{< glink polynomial >}}, {{< glink term >}}, {{< glink coefficient >}}, {{< glink variable >}}, {{< glink exponent >}}
 
 ---
 
@@ -811,6 +1033,8 @@ A multiple is what you get when you multiply a number by 1, 2, 3, and so on.
 >
 > `5`, `10`, `15`, and `20` are all multiples of `5`.
 
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "skip count" >}}
+
 ---
 
 ### Multiplication {#glossary-multiplication}
@@ -821,17 +1045,21 @@ A math operation that means repeated addition or combining equal groups.
 >
 > $4 \times 3 = 12$ (4 groups of 3)
 
+**See Also:** {{< glink product >}}, {{< glink operation >}}, {{< glink division >}}
+
 ---
 
 ### Multiplication by proximity {#glossary-multiplication_by_proximity}
 
-Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. Between them.
+Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$. You multiply them implicitly when they are next to each other.
 
 > **Examples**
 >
 > - $3x$
 > - $5(x-1)$
 > - $(2x +5)(3x-1)$
+
+**See Also:** {{< glink multiplication >}}, {{< glink parentheses >}}, {{< glink "distributive property" >}}, {{< glink product >}}
 
 ---
 
@@ -843,6 +1071,8 @@ $a^{-n}=\dfrac{1}{a^n}$, and $\dfrac{1}{a^{-n}}=a^n$ (for $a\ne0$).
 > **Example:**
 >
 > $k^{-3}=\dfrac{1}{k^3}$.
+
+**See Also:** {{< glink division >}}, {{< glink exponent >}}
 
 ---
 
@@ -857,6 +1087,8 @@ Often, mathematicians use $\varnothing$ in place of "no solution". It means the 
 > simplifies to $5 = -2$, which is false.
 > The solution is **no solution**.
 
+**See Also:** {{< glink equation >}}, {{< glink solution >}}, {{< glink "all real numbers" >}}
+
 ---
 
 ### Notation {#glossary-notation}
@@ -866,6 +1098,8 @@ Often, mathematicians use $\varnothing$ in place of "no solution". It means the 
 > **Example:**  
 >
 > The expression $3x + 2$ uses algebraic notation: the number $3$ is a coefficient, $x$ is a variable, and the $+$ sign shows addition.
+
+**See Also:** {{< glink function >}}
 
 ---
 
@@ -879,6 +1113,8 @@ Number lines help you visualize math operations and compare values.
 >
 > `-2`, `0`, and `3` are all on the number line.
 > ![Number line](images/Glossary/number_line_example.png){#fig-number-line width="100%"}
+
+**See Also:** {{< glink axis >}}, {{< glink "whole number" >}}, {{< glink integer >}}
 
 ---
 
@@ -907,6 +1143,8 @@ The numerator is the **top number** in a fraction. It tells **how many parts** y
 >
 > In the fraction 3/4, the **numerator** is 3.
 
+**See Also:** {{< glink fraction >}}, {{< glink denominator >}}
+
 ---
 
 ### Negative {#glossary-negative}
@@ -919,6 +1157,8 @@ On a number line, negative numbers are to the left of zero.
 >
 > `-4` is a negative number.
 
+**See Also:** {{< glink positive >}}, {{< glink subtraction >}}, {{< glink "number line" >}}
+
 ---
 
 ### Odd {#glossary-odd}
@@ -928,6 +1168,8 @@ An **odd number** is a whole number that **cannot** be divided evenly by 2. It a
 > **Example:**
 > 5 is odd because $5 \div 2 = 2$ with 1 left over.
 > 11, 33, and 101 are also odd.
+
+**See Also:** {{< glink even >}}, {{< glink multiple >}}
 
 ---
 
@@ -939,6 +1181,8 @@ An operation is a **math action** you do with numbers — like adding, subtracti
 >   
 > In $7 + 3$, the operation is addition.  
 > In $12 \div 4$, the operation is division.
+
+**See Also:** {{< glink addition >}}, {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink "order of operations" >}}, {{< glink PEMDAS >}}
 
 ---
 
@@ -952,6 +1196,8 @@ Their sum is always zero.
 >
 > `-3` and `3` are opposites.
 
+**See Also:** {{< glink "absolute value" >}}, {{< glink "number line" >}}
+
 ---
 
 ### Ordered Pair {#glossary-ordered-pair}
@@ -961,6 +1207,8 @@ The first number is the x-coordinate (horizontal position), and the second is th
 
 > **Example:**
 > The ordered pair (–3, 5) means move 3 units left and 5 units up from the origin.
+
+**See Also:** {{< glink  "coordinate plane" >}}, {{< glink "axis" >}}
 
 ---
 
@@ -975,6 +1223,8 @@ Multiplication and division are done **left to right**, whichever comes first. S
 >
 > In $3 + 4 \times 2$, you multiply first: $3 + 8 = 11$
 
+**See Also:** {{< glink PEMDAS >}}, {{< glink operation >}}
+
 ---
 
 ### Origin {#glossary-origin}
@@ -983,6 +1233,8 @@ The point where the x-axis and y-axis intersect, written as (0, 0). It’s the �
 
 > **Example:**
 > The origin is where both coordinates are zero — right in the center of the grid.
+
+**See Also:** {{< glink "coordinate plane" >}}, {{< glink "ordered pair" >}}, {{< glink axis >}}
 
 ---
 
@@ -994,6 +1246,8 @@ The **output** is the result you get after a function or rule is applied to an i
 >
 > If $f(x) = 2x + 3$ and the input is $x=4$, then the output is $f(4)=11$.
 
+**See Also:** {{< glink function >}}, {{< glink input >}}, {{< glink substitution >}}
+
 ---
 
 ### Parallel {#glossary-parallel}
@@ -1003,6 +1257,8 @@ Parallel lines stay the same distance apart everywhere on the graph.
 
 > **Example:**
 > $y = 2x + 3$ and $y = 2x - 4$ are parallel because both have a slope of $2$.
+
+**See Also:** {{< glink slope >}}, {{< glink perpendicular >}}
 
 ---
 
@@ -1014,6 +1270,8 @@ A grouping symbol that tells you what to do first in an expression.
 >
 > In $(2 + 3) \times 4$, you add first: $5 \times 4 = 20$
 
+**See Also:** {{< glink "order of operations" >}}, {{< glink "multiplication by proximity" >}}, {{< glink "distributive property" >}}
+
 ---
 
 ### Part {#glossary-part}
@@ -1023,6 +1281,21 @@ A part is one piece of the whole. It’s often what you’re looking for in a pe
 > **Example:**  
 >   
 > In 20% of 50, the part is 10. (Because 20% of 50 is 10.)
+
+**See Also:** {{< glink whole >}}, {{< glink fraction >}}
+
+---
+
+### Partial Product {#glossary-partial-product}
+
+A **partial product** is the result of multiplying one part of an expression by one part of another expression. When you multiply polynomials (or even whole numbers using place value), each pair of pieces creates its own partial product. After finding all the partial products, you combine them to get the final answer.
+
+> **Example:**
+> In the product $(x + 3)(x + 5)$, the four partial products are
+> $x \cdot x$, $x \cdot 5$, $3 \cdot x$, and $3 \cdot 5$.
+> Adding those partial products gives the full product $x^2 + 8x + 15$.
+
+**See Also:** {{< glink product >}}, {{< glink "area model" >}}
 
 ---
 
@@ -1034,6 +1307,8 @@ Their slopes are **negative reciprocals** — their products multiply to $-1$.
 > **Example:**
 > The line $y = 2x + 1$ is perpendicular to $y = -\tfrac{1}{2}x + 4$ because $2 \times (-\tfrac{1}{2}) = -1$.
 
+**See Also:** {{< glink parallel >}}, {{< glink slope >}}, {{< glink reciprocal >}}
+
 ---
 
 ### Place Value {#glossary-place_value}
@@ -1043,6 +1318,8 @@ Place value tells you **how much each digit is worth** based on where it is in t
 > **Example:**
 >
 > In 23.4, the 2 is worth 20 (tens), the 3 is worth 3 (ones), and the 4 is worth 4 tenths.
+
+**See Also:** {{< glink simplify >}}, {{< glink convert >}}, {{< glink decimal >}}
 
 ---
 
@@ -1061,6 +1338,8 @@ Some people remember PEMDAS as "**P**lease **E**xcuse **M**y **D**ear **A**unt *
 
 Remember that multiplication and division are the same operation as each other and so we do them left to right. The same is true for addition and subtraction. 
 
+**See Also:** {{< glink "order of operations" >}}, {{< glink operation >}}
+
 ---
 
 ### Percent {#glossary-percent}
@@ -1070,6 +1349,8 @@ A percent is a way of expressing a number **out of 100**. The symbol **%** means
 > **Example:**
 >
 > 25% means 25 out of 100. It’s the same as $\frac{1}{4}$ or 0.25.
+
+**See Also:** {{< glink fraction >}}, {{< glink decimal >}}, {{< glink convert >}}, {{< glink ratio >}}
 
 ---
 
@@ -1086,6 +1367,8 @@ $$
 > A line passing through $(3, 5)$ with slope $2$ can be written as
 > $y - 5 = 2(x - 3)$.
 
+**See Also:** {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink "standard form" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}
+
 ---
 
 ### Polynomial {#glossary-polynomial}
@@ -1101,6 +1384,8 @@ Polynomials can have one term, two terms, or many terms.
 > **Example:**
 > $3x^2 + 2x - 5$ is a polynomial with three terms.
 
+**See Also:** {{< glink term >}}, {{< glink coefficient >}}, {{< glink monomial >}}, {{< glink binomial >}}, {{< glink trinomial >}}, {{< glink expression >}}, {{< glink degree >}}
+
 ---
 
 ### Positive {#glossary-positive}
@@ -1113,6 +1398,8 @@ On a number line, positive numbers are to the right of zero.
 >
 > `5` is a positive number.
 
+**See Also:** {{< glink negative >}}, {{< glink "number line" >}}, {{< glink addition >}}
+
 ---
 
 ### Power {#glossary-power}
@@ -1123,6 +1410,8 @@ For $a^n$, $a$ is the base and $n$ is the exponent.
 > **Example:**
 >
 > $2^5$ is a power that equals $2\cdot2\cdot2\cdot2\cdot2=32$.
+
+**See Also:** {{< glink exponent >}}, {{< glink base >}}, {{< glink multiplication >}}
 
 ---
 
@@ -1135,6 +1424,8 @@ $(a^m)^n=a^{m\cdot n}$.
 >
 > $(x^3)^2=x^{3\cdot2}=x^6$.
 
+**See Also:** {{< glink exponent >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "zero exponent" >}}
+
 ---
 
 ### Prime Number {#glossary-prime_number}
@@ -1144,6 +1435,8 @@ A number is prime if it has exactly two factors: 1 and itself.
 > **Examples:**
 >
 > `2`, `3`, `5`, `7`, `11`
+
+**See Also:** {{< glink "composite number" >}}, {{< glink "prime factorization" >}}, {{< glink factor >}}
 
 ---
 
@@ -1156,6 +1449,8 @@ Prime factorization means writing a number as a product of prime numbers.
 > `18 = 2 × 3 × 3` or `2 × 3²`
 > These are the prime building blocks of 18.
 
+**See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "prime number" >}}, {{< glink product >}}, {{< glink "factor tree" >}}
+
 ---
 
 ### Product {#glossary-product}
@@ -1166,6 +1461,7 @@ A product is the **result of multiplying** two or more numbers.
 >
 > The product of 4 and 6 is `24`, because `4 × 6 = 24`.
 
+**See Also:** {{< glink multiplication >}}, {{< glink sum >}}, {{< glink difference >}}, {{< glink quotient >}}
 ---
 
 ### Product Rule (Exponents) {#glossary-product-rule}
@@ -1176,6 +1472,8 @@ $a^m\cdot a^n=a^{m+n}$.
 > **Example:**
 >
 > $x^4\cdot x^3=x^{4+3}=x^7$.
+
+**See Also:** {{< glink exponent >}}, {{< glink "quotient rule" >}}, {{< glink "zero exponent" >}}, {{< glink "power of a power" >}}
 
 ---
 
@@ -1190,6 +1488,8 @@ A **proof** is a clear, step-by-step explanation that shows a statement is **alw
 > $(2k+1)+(2m+1)=2k+2m+2=2(k+m+1)$.
 > This is $2 \times$ a whole number, so it is even. Therefore, the claim is proven.
 
+**See Also:** {{< glink hypothesis >}}, {{< glink evidence >}}, {{< glink counterexample >}}
+
 ---
 
 ### Proportion {#glossary-proportion}
@@ -1200,6 +1500,8 @@ A proportion shows **two equal ratios**. It tells you that two fractions or comp
 >   
 > $\frac{2}{3} = \frac{4}{6}$ is a proportion.
 
+**See Also:** {{< glink ratio >}}, {{< glink percent >}}, {{< glink fraction >}}, {{< glink quotient >}}
+
 ---
 
 ### Quadrant {#glossary-quadrant}
@@ -1208,6 +1510,8 @@ One of the four regions of the coordinate plane divided by the x-axis and y-axis
 
 > **Example:**
 > A point with positive x and positive y values lies in **Quadrant I**.
+
+**See Also:** {{< glink "coordinate plane" >}}, {{< glink axis >}}, {{< glink origin >}}
 
 ---
 
@@ -1218,6 +1522,8 @@ A quotient is the **result of dividing** one number by another.
 > **Example:**
 >
 > The quotient of 20 divided by 5 is `4`, because `20 ÷ 5 = 4`.
+
+**See Also:** {{< glink fraction >}}, {{< glink division >}}, {{< glink product >}}, {{< glink sum >}}, {{< glink difference >}}
 
 ---
 
@@ -1230,6 +1536,8 @@ $\dfrac{a^m}{a^n}=a^{m-n}$.
 >
 > $\dfrac{y^8}{y^2}=y^{8-2}=y^6$.
 
+**See Also:** {{< glink exponent >}}, {{< glink "power of a power" >}}, {{< glink "zero exponent" >}}, {{< glink "product rule" >}}, {{< glink "negative exponent" >}}, {{< glink quotient >}}
+
 ---
 
 ### Rate {#glossary-rate}
@@ -1240,6 +1548,8 @@ A rate compares **two different units**, like miles per hour or cost per item.
 >   
 > If you drive 60 miles in 2 hours, your rate is 30 miles per hour.
 
+**See Also:** {{< glink slope >}}, {{< glink ratio >}}, {{< glink "linear model" >}}
+
 ---
 
 ### Ratio {#glossary-ratio}
@@ -1249,6 +1559,19 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 > **Example:**
 >
 > If there are 6 boys and 4 girls in a group, the ratio of boys to girls is 6 to 4, or 3 to 2 after simplifying.
+
+**See Also:** {{< glink fraction >}}, {{< glink quotient >}}
+
+---
+
+### Range {#glossary-range}
+
+The **range** of a relationship or function is the set of all **output values** it can produce.
+
+> **Example:**  
+> If $f(x) = 2x + 3$ and the domain is $x = 1, 2, 3$, then the outputs are $5, 7, 9$. The range is $\{5, 7, 9\}$.
+
+**See Also:** {{< glink domain >}}, {{< glink function >}}, {{< glink output >}}
 
 ---
 
@@ -1264,6 +1587,8 @@ A **real number** is any number that can be placed on the **number line**. This 
 >
 > Not real: $\sqrt{-1}=i$, $5+2i$ (complex)
 
+**See Also:** {{< glink "whole number" >}}, {{< glink integer >}}, {{< glink decimal >}}, {{< glink "number line" >}}, {{< glink "all real numbers" >}}, {{< glink positive >}}, {{< glink negative >}}
+
 ---
 
 ### Reciprocal {#glossary-reciprocal}
@@ -1274,6 +1599,8 @@ The reciprocal of a number is what you **multiply it by to get 1**. You can find
 >   
 > The reciprocal of $\frac{2}{3}$ is $\frac{3}{2}$, because $\frac{2}{3} \times \frac{3}{2} = 1$.  
 > The reciprocal of 5 is $\frac{1}{5}$.
+
+**See Also:** {{< glink fraction >}}, {{< glink division >}}, {{< glink quotient >}}, {{< glink "inverse operations" >}}
 
 ---
 
@@ -1289,6 +1616,8 @@ This means their greatest common factor (GCF) is 1, even if neither number is pr
 > 8 has factors: 1, 2, 4, 8
 > 15 has factors: 1, 3, 5, 15
 
+**See Also:** {{< glink "prime number" >}}, {{< glink "greatest common factor" >}}, {{< glink factor >}}
+
 ---
 
 ### Remainder {#glossary-remainder}
@@ -1299,6 +1628,8 @@ A remainder is what’s left over after dividing when the number doesn’t go in
 >
 > `10 ÷ 3 = 3` with a remainder of `1`, because `3 × 3 = 9` and there’s `1` left.
 
+**See Also:** {{< glink quotient >}}, {{< glink division >}}
+
 ---
 
 ### Result {#glossary-result}
@@ -1308,6 +1639,36 @@ The result is the final answer you get after evaluating or simplifying an expres
 > **Example:**
 >
 > If you evaluate $3x+4$ when $x=2$, the result is $3(2)+4=10$.
+
+**See Also:** {{< glink solution >}}, {{< glink evaluate >}}, {{< glink expression >}}
+
+---
+
+### Residual {#glossary-residual}
+
+A **residual** measures how far a data point is from a model’s prediction. For a line of best fit, the residual is
+
+$$
+\text{residual} = \text{actual y} - \text{predicted y}.
+$$
+
+Positive residuals are points **above** the line; negative residuals are **below** the line.
+
+> **Example:**  
+> If the line of best fit predicts $\hat{y} = 12$ for some $x$, but the actual value is $y = 15$, then the residual is $15 - 12 = 3$.
+
+**See Also:** {{< glink "best-fit line" >}}
+
+---
+
+### Scatter Plot {#glossary-scatter-plot}
+
+A scatter plot is a graph that shows pairs of data points as dots on a coordinate plane. Each dot represents one observation, helping you see patterns, clusters, or possible relationships between two variables.
+
+> **Example:**  
+> A scatter plot of study time vs. test score might show that students who study more tend to earn higher scores.
+
+**See Also:** {{< glink "best-fit line" >}}, {{< glink correlation >}}
 
 ---
 
@@ -1321,6 +1682,8 @@ In other words, the fraction can’t be reduced any further.
 >
 > $\frac{6}{8}$ is not in simplest form because both numbers can be divided by 2.
 > $\frac{3}{4}$ is the simplest form of $\frac{6}{8}$.
+
+**See Also:** {{< glink expression >}}, {{< glink simplify >}}, {{< glink fraction >}}
 
 ---
 
@@ -1336,6 +1699,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 >
 > This simpler fraction means the same thing — it's just written with smaller numbers.
 
+**See Also:** {{< glink "simplest form" >}}, {{< glink expression >}}, {{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink expand >}}
 
 ---
 
@@ -1351,6 +1715,8 @@ Skip counting means **counting forward (or backward) by a number other than 1** 
 > Skip counting by 3:
 > 3, 6, 9, 12, 15, ...
 
+**See Also:** {{< glink multiple >}}, {{< glink factor >}}, {{< glink "number line" >}}
+
 ---
 
 ### Slope {#glossary-slope}
@@ -1364,6 +1730,8 @@ A bigger slope means a steeper line.
 
 > **Example:**
 > A line that rises 2 units for every 3 units it moves right has a slope of $\tfrac{2}{3}$.
+
+**See Also:** {{< glink "linear equation" >}}, {{< glink rate >}}, {{< glink ratio >}}, {{< glink y-intercept >}}, {{< glink "slope formula" >}}
 
 ---
 
@@ -1386,6 +1754,8 @@ where
 > If a line passes through the points (1, 2) and (4, 8),
 > then $m = \dfrac{8 - 2}{4 - 1} = \dfrac{6}{3} = 2$.
 
+**See Also:** {{< glink slope >}}, {{< glink formula >}}, {{< glink "linear model" >}}, {{< glink "ordered pair" >}}, {{< glink ratio >}}
+
 ---
 
 ### Slope-Intercept Form {#glossary-slope-intercept-form}
@@ -1396,6 +1766,8 @@ Where $m$ is the **slope** (how steep the line is) and $b$ is the **y-intercept*
 
 > **Example:**
 > In $y = 2x + 1$, the slope is $2$ and the y-intercept is $1$.
+
+**See Also:** {{< glink "linear model" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink y-intercept >}}, {{< glink "point-slope form" >}}, {{< glink "standard form" >}}
 
 ---
 
@@ -1409,6 +1781,8 @@ A **solution** is any value of a variable that makes an equation true. If there�
 > Check: $5 + 4 = 9$ ✓.
 > For $|x| = 3$, the solution set is $\{-3,\,3\}$ because both values make the equation true.
 
+**See Also:** {{< glink equation >}}, {{< glink result >}}, {{< glink inequality >}}, {{< glink value >}}
+
 ---
 
 ### Solve {#glossary-solve}
@@ -1418,6 +1792,19 @@ To **solve** an equation means to find every value of the variable that makes th
 > **Example:**
 >
 > Solve $x + 9 = 11$. Subtract 9 from both sides: $x = 2$. Check: $2 + 9 = 11$ ✓.
+
+**See Also:** {{< glink equation >}}, {{< glink solution >}}, {{< glink result >}}, {{< glink simplify >}}, {{< glink value >}}
+
+---
+
+### Standard Deviation {#glossary-standard-deviation}
+
+**Standard deviation** measures how **spread out** the values in a data set are from the mean. A small standard deviation means the data are close to the mean; a large one means the data are more spread out.
+
+> **Example:**  
+> Two classes might both have a mean score of 80 on a test, but the class with a larger standard deviation has scores that are more spread out (more low and high scores).
+
+**See Also:** {{< glink mean >}}, {{< glink residual >}}
 
 ---
 
@@ -1434,6 +1821,8 @@ The exact rules depend on the type of problem:
 > *Polynomial:* $5x^3 - 2x + 7$
 > *Linear equation:* $3x - 4y = 12$
 
+**See Also:** {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink "point-slope form" >}}
+
 ---
 
 ### Subtraction {#glossary-subtraction}
@@ -1443,6 +1832,8 @@ An operation that finds the difference between two numbers.
 > **Example:**
 >
 > $9 - 4 = 5$
+
+**See Also:** {{< glink operation >}}, {{< glink addition >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink "order of operations" >}}, {{< glink difference >}}
 
 ---
 
@@ -1458,8 +1849,7 @@ To **substitute** means to replace a variable with a number (or another expressi
 >
 > Parentheses help: For $y=-2$, $4-y=4-(-2)=6$.
 
-**See Also**
-{{< glink substitution >}}
+**See Also:** {{< glink substitution >}}, {{< glink simplify >}}, {{< glink evaluate >}}, {{< glink expression >}}, {{< glink formula >}}
 
 ---
 
@@ -1471,6 +1861,19 @@ Substitution is the process of replacing a variable with a number or another exp
 >
 > If $x = 3$, then substituting $x$ in $2x + 5$ gives $2(3) + 5 = 11$.
 
+**See Also:** {{< glink substitute >}}, {{< glink "system of equations" >}}, {{< glink expression >}}, {{< glink variable >}}
+
+---
+
+### Sum {#glossary-sum}
+
+The sum is the result you get when you add two or more numbers or expressions together.
+
+> **Example:**  
+> The sum of $7$ and $12$ is $19$.
+
+**See Also:** {{< glink addition >}}, {{< glink product >}}, {{< glink quotient >}}, {{< glink difference >}}, {{< glink value >}}, {{< glink result >}}
+
 ---
 
 ### Survey {#glossary-survey}
@@ -1480,6 +1883,8 @@ A survey is a way to **collect information** from people by asking questions.
 > **Example:**  
 >   
 > A survey might ask 100 students what their favorite lunch is.
+
+**See Also:** {{< glink correlation >}}
 
 ---
 
@@ -1491,6 +1896,8 @@ A **symbol** is a mark or character used to represent something in math. It can 
 >
 > In the expression $3x + 5$, the **+** is a symbol for addition,  
 > and the **x** is a symbol for a variable (an unknown number).
+
+**See Also:** {{< glink variable >}}
 
 ---
 
@@ -1509,6 +1916,21 @@ A **system of equations** is a set of two or more equations that use the same va
 > 
 > The two lines intersect at $(1, 3)$, so that point is the **solution to the system**.
 
+**See Also:** {{< glink equation >}}, {{< glink "ordered pair" >}}, {{< glink substitution >}}, {{< glink elimination >}}, {{< glink "linear model" >}}
+
+---
+
+### Table {#glossary-table}
+
+A **table** is a way to organize information in rows and columns. In Algebra, tables often show **pairs of values**, such as input and output, so you can see patterns and relationships.
+
+> **Example:**  
+> For the rule $y = 3x$, a table might show:  
+> $x$: 0, 1, 2, 3  
+> $y$: 0, 3, 6, 9
+
+**See Also:** {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink "coordinate plane" >}}
+
 ---
 
 ### Term {#glossary-term}
@@ -1520,6 +1942,8 @@ A **term** is one part of an expression. Terms are separated by plus or minus si
 > In the expression $4x + 3 - 2y$, there are **three** terms:  
 > $4x$, $3$, and $-2y$
 
+**See Also:** {{< glink variable >}}, {{< glink coefficient >}}, {{< glink expression >}}, {{< glink polynomial >}}, {{< glink "combine like terms" >}}, {{< glink "like terms" >}}
+
 ---
 
 ### Trinomial {#glossary-trinomial}
@@ -1528,6 +1952,8 @@ A **trinomial** is a polynomial with **exactly three terms**.
 
 > **Example:**
 > $x^2 + 3x - 10$ is a trinomial because it has three terms.
+
+**See Also:** {{< glink polynomial >}}, {{< glink binomial >}}, {{< glink monomial >}}
 
 ---
 
@@ -1540,6 +1966,8 @@ The value of an expression or variable is the amount it is worth.
 > The value or $5 + 3$ is 8.
 > If $x = 4$, then the value of $2x$ is $2(4)=8$.
 
+**See Also:** {{< glink variable >}}, {{< glink result >}}, {{< glink expression >}}, {{< glink substitution >}}
+
 ---
 
 ### Variable {#glossary-variable}
@@ -1550,6 +1978,8 @@ A **variable** is a letter or symbol that stands for a number that can change or
 >
 > In the expression $x + 7$, the letter **x** is a variable.  
 > It could be **any number**.
+
+**See Also:** {{< glink coefficient >}}, {{< glink constant >}}, {{< glink term >}}, {{< glink equation >}}
 
 ---
 
@@ -1562,6 +1992,8 @@ Up and down, like a flagpole.
 > This is a **vertical** number line.
 > ![](/images/Glossary/vertical_by_tens.png){height=200}
 
+**See Also:** {{< glink horizontal >}}, {{< glink slope >}}
+
 ---
 
 ### Whole {#glossary-whole}
@@ -1571,6 +2003,8 @@ The whole is the **total amount** — it’s everything being considered before 
 > **Example:**  
 >   
 > If 30 is 60% of a number, then the whole is 50.
+
+**See Also:** {{< glink part >}}, {{< glink "whole number" >}}, {{< glink fraction >}}
 
 ---
 
@@ -1586,6 +2020,8 @@ A **whole number** is a number with **no fractions or decimals**. These are **0,
 >
 > Not whole: $-3$ (negative), $2.5$ (decimal), $\tfrac{3}{4}$ (fraction)
 
+**See Also:** {{< glink integer >}}, {{< glink decimal >}}, {{< glink fraction >}}, {{< glink "real number" >}}
+
 ---
 
 ### x-intercept {#glossary-x-intercept}
@@ -1596,6 +2032,8 @@ At this point, the value of $y$ is always $0$.
 > **Example:**
 > The line $y = 2x - 6$ crosses the x-axis at $(3, 0)$, so the x-intercept is **3**.
 
+**See Also:** {{< glink y-intercept >}}, {{< glink "linear model" >}}, {{< glink "linear equation" >}}, {{< glink "slope-intercept form" >}}, {{< glink "ordered pair" >}}, {{< glink axis >}}
+
 ---
 
 ### y-intercept {#glossary-y-intercept}
@@ -1605,6 +2043,8 @@ At this point, the value of $x$ is always $0$.
 
 > **Example:**
 > The line $y = -3x + 5$ crosses the y-axis at $(0, 5)$, so the y-intercept is **5**.
+
+**See Also:** {{< glink  x-intercept >}}, {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink slope >}}
 
 ---
 
@@ -1617,5 +2057,6 @@ $a^0=1$ for $a\ne0$.
 >
 > $(5y)^0=1$.
 
----
+**See Also:** {{< glink exponent >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "negative exponent" >}}
 
+---

@@ -1,31 +1,362 @@
-# 5.3 - Multiplying Polynomials {.unnumbered}
+# 5.3 – Multiplying Polynomials {.unnumbered}
 
-Coming Soon
+You’ve worked a lot with expressions that grow by **adding** and **subtracting** terms. You’ve also multiplied a single term by a whole expression. But what happens when **both** expressions have more than one term?
+
+For example, what should we do with something like:
+
+$$(x + 4)(x^2 - 3x + 2)?$$
+
+Where does each part go?
+How many products appear?
+And how do we keep everything organized without losing track?
+
+In this lesson, you’ll learn a method that works for **any** size polynomial — from binomials to trinomials and beyond. It will give you the structure you need now, and it will become absolutely essential when we reverse the process during factoring.
+
+---
 
 :::{.objectives}
 
-- [ ] I can do things
+* [ ] I can multiply two polynomials using distribution.
+* [ ] I can organize polynomial multiplication using an area model.
+* [ ] I can multiply larger polynomials (3 or more terms) in more than one step and write the answer in standard form.
 
 :::
+
+---
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink distribute >}},
+{{< glink monomial >}},
+{{< glink "like terms" >}},
+{{< glink polynomial >}},
+{{< glink "standard form" >}}
 
 :::
+
+---
 
 {{< warmup >}}
 
+1. Rewrite $342$ as the sum of its place-value parts.
+
+2. Expand: $4x(3x^2 - 2x + 5)$.
+
+3. Predict: how many individual products will appear if you multiply $(x + 3)(x^2 - x + 5)$?
+
+---
+
 {{< learn >}}
 
-{{< practice >}}
 
-:::{.answers}
+### 5.3.1 – Multiplying Polynomials Using Distribution
+
+You already know how to multiply a **monomial** times a polynomial by distributing. But what about when *both* expressions have more than one term?
+
+Let’s try the method you know and see what happens.
+
+---
+
+**Example 1:**
+Multiply $(2x + 3)(3x - 5)$ using only distribution.
+
+$$
+\begin{align*}
+(2x + 3)(\textcolor{red}{3x} \textcolor{blue}{- 5}) &= \textcolor{red}{3x}(2x + 3) \textcolor{blue}{-5}(2x + 3) \\
+&= \textcolor{red}{6x^2 + 9x} \textcolor{blue}{-10x - 15} \\
+&= 6x^2 - x - 15 \stepnote{combine like terms} 
+\end{align*}
+$$
+
+Notice that we had to distribute *twice*. This works fine, but as soon as expressions get bigger, the list of separate distributions gets pretty messy.
+
+Try distributing for this one:
+
+$$(x + 4)(x^2 - 3x + 2)$$
+
+You would need to distribute $x$ across three terms, then $4$ across those same three terms, and then collect all six partial products. The more terms we have, the messier it gets. 
+
+Let’s learn a better way to organize everything.
+
+---
+
+:::{.you-try title="Multiply $(x - 5)(x + 2)$ using distribution"}
+
+**Answer:** $x^2 - 3x - 10$
 
 :::
 
+---
 
+### 5.3.2 – Area Models
 
+Before we use area models for polynomials, let’s remind ourselves how the idea works with numbers.
 
+To multiply $28 \cdot 47$, you can break each number into place-value parts:
 
+|        | 40  | 7   |
+| ------ | --- | --- |
+| **20** | 800 | 140 |
+| **8**  | 320 | 56  |
+
+Add the pieces:
+
+$$800 + 140 + 320 + 56 = 1316.$$
+
+Everything has a place. Nothing gets lost.
+
+Area models work the same way with polynomials, but terms are used instead of place-value. 
+
+---
+
+**Example 2:** Multiplying Two Binomials
+
+Multiply $(x + 6)(x + 2)$.
+
+To use the area model, we put the terms of one binomial across the top, and the terms for the other down the side.
+
+|         | $x$   | $2$  |
+| ------- | ----- | ---- |
+| **$x$** | $x^2$ | $2x$ |
+| **$6$** | $6x$  | $12$ |
+
+Combine like terms:
+
+$$x^2 + 8x + 12.$$
+
+:::{.note title="A Common Shortcut (FOIL)."}
+
+Many Algebra books use a method called FOIL to multiply two binomials. FOIL stands for **F**irsts, **O**utsides, **I**nsides, **L**asts. 
+
+In the last example, we would use FOIL like this:
+
+Firsts: $x \cdot x = x^2$
+Outsides: $x \cdot 2 = 2x$
+Insides: $6 \cdot x = 6x$
+Lasts: $6 \cdot 2 = 12$
+
+Then we add:
+
+$x^2 + 8x + 12$
+
+The trouble with FOIL is that it **only works for binomials**. We want a method that works for **all** polynomials.
+
+:::
+
+:::{.you-try title="Multiply $(3x - 1)(6x + 2)$."}
+
+|         | $6x$   | $2$  |
+| ------- | ----- | ---- |
+| **$3x$** | $18x^2$ | $6x$ |
+| **$-1$** | $-6x$  | $-2$ |
+
+Combine:
+
+$$18x^2 - 2$$
+
+:::
+
+---
+
+In the next few examples, we will see that the area model really starts to shine when we have more terms to keep track of.
+
+**Example 3:** A Binomial Times a Trinomial
+
+Multiply $(2x - 3)(x^2 + x + 4)$.
+
+We do exactly the same thing here that we did in the previous example. Terms from one polynomial go across the top and terms from the second go down the side.
+
+|          | $x^2$   | $x$    | $4$   |
+| -------- | ------- | ------ | ----- |
+| **$2x$** | $2x^3$  | $2x^2$ | $8x$  |
+| **$-3$** | $-3x^2$ | $-3x$  | $-12$ |
+
+Combine:
+
+$$2x^3 - x^2 + 5x - 12.$$
+
+---
+
+**Example 4:** A Trinomial Times a Trinomial**
+
+Multiply $(x^2 + x + 3)(2x^2 - x + 4)$.
+
+|           | $2x^2$ | $-x$   | $4$    |
+| --------- | ------ | ------ | ------ |
+| **$x^2$** | $2x^4$ | $-x^3$ | $4x^2$ |
+| **$x$**   | $2x^3$ | $-x^2$ | $4x$   |
+| **$3$**   | $6x^2$ | $-3x$  | $12$   |
+
+Combine:
+
+$$2x^4 + x^3 + 9x^2 + x + 12.$$
+
+---
+
+**Example 5:** A Binomial Times a 4-Term Polynomial**
+
+Multiply $(3x + 1)(x^3 - 4x^2 + x + 5)$.
+
+|          | $x^3$  | $-4x^2$  | $x$    | $5$   |
+| -------- | ------ | -------- | ------ | ----- |
+| **$3x$** | $3x^4$ | $-12x^3$ | $3x^2$ | $15x$ |
+| **$1$**  | $x^3$  | $-4x^2$  | $x$    | $5$   |
+
+Combine:
+
+$$3x^4 - 11x^3 - x^2 + 16x + 5.$$
+
+---
+
+:::{.note}
+Area models **also** work for monomial × polynomial, but it’s usually faster to distribute in those cases.
+For example, $4x(3x^2 - x + 6)$ could be done with a 1-row box — but distribution is simpler.
+:::
+
+---
+
+:::{.you-try title="Multiply $(-4x - 7)(2x^2 - 3x + 9)$."}
+
+|         | $2x^2$   | $-3x$  | $9$  |
+| ------- | ----- | ---- | ---- |
+| **$-4x$** | $-8x^3$ | $12x^2$ | $-36x$ |
+| **$-7$** | $-14x^2$  | $21x$ | $-63$ |
+
+Combine:
+
+$$-8x^3 -2x^2 -15x -63$$
+
+:::
+
+Area models organize anything with two polynomials. But what about when you multiply *three* or more expressions?
+
+---
+
+## 5.3.3 – Products of More Than Two Polynomials
+
+Sometimes you’ll multiply expressions like:
+
+$$(x + 2)(x - 5)(2x + 3)$$
+
+You can still use area models — just do it in **steps**.
+
+Multiply the first two polynomials.
+Then multiply the result by the third.
+
+This keeps each step manageable, and it’s exactly what we do later when factoring or simplifying complicated expressions.
+
+---
+
+**Example 6:**
+Multiply $(x - 3)(2x + 1)(x + 4)$.
+
+**Step 1:** Multiply the first two.
+
+$(x - 3)(2x + 1)$:
+
+|          | $2x$   | $1$  |
+| -------- | ------ | ---- |
+| **$x$**  | $2x^2$ | $x$  |
+| **$-3$** | $-6x$  | $-3$ |
+
+Combine:
+
+$$2x^2 - 5x - 3.$$
+
+**Step 2:** Now multiply that result by $(x + 4)$.
+
+$(2x^2 - 5x - 3)(x + 4)$:
+
+|            | $x$     | $4$    |
+| ---------- | ------- | ------ |
+| **$2x^2$** | $2x^3$  | $8x^2$ |
+| **$-5x$**  | $-5x^2$ | $-20x$ |
+| **$-3$**   | $-3x$   | $-12$  |
+
+Combine:
+
+$$2x^3 + 3x^2 - 23x - 12.$$
+
+---
+
+:::{.you-try-m title="Multiply three polynomials in steps"}
+
+Multiply $(x + 1)(x - 2)(2x - 3)$.
+
+:::
+
+:::{.answer title="Answer"}
+
+$x^3 - 3x^2 - x + 6$
+
+:::
+
+---
+
+{{< practice >}}
+
+**Multiply the polynomials**
+
+1. $(x + 3)(x + 8)$
+2. $(2x - 1)(x - 7)$
+3. $(x - 4)(x^2 + x + 6)$
+4. $(3x + 5)(x^2 - 2x + 1)$
+5. $(x + 1)(x^2 - 4x + 5)$
+6. $(2x - 3)(x^3 + x^2 - 4x + 1)$
+7. $(x + 6)(x^3 - 2x^2 + x - 3)$
+8. $(4x - 1)(x^2 - x + 2)$
+9. $(x^2 + 2x + 3)(x + 5)$
+10. $(3x^2 - x + 1)(x - 4)$
+11. $(x^2 + x + 1)(x^2 - x + 4)$
+12. $(2x^2 - 3x + 2)(x^2 + x - 1)$
+13. $(x + 2)(x^3 - x^2 + 4x - 6)$
+14. $(x - 3)(2x^3 + x^2 - 5x + 4)$
+15. $(3x + 2)(x^3 - 4x + 1)$
+16. $(x^2 + 3x + 4)(x^2 + x)$
+17. $(x^2 - 2x + 5)(x^2 + 4)$
+18. $(2x^2 + x + 3)(x^2 - x + 2)$
+19. $(x^2 + 4x + 1)(2x^2 - x + 3)$
+20. $(3x^2 - 5)(x^2 + x - 2)$
+21. $(x^3 + 2x^2 + x + 1)(x + 3)$
+22. $(2x - 1)(x^3 - 3x + 5)$
+23. $(x^2 - 1)(x^2 + x + 1)$
+24. $(4x - 3)(x^3 + x^2 + 2)$
+25. $(x^2 + 5x + 6)(x^2 - 4x + 3)$
+
+**Challenge Problems**
+
+26. Multiply $(x^2 + 3x - 2)(2x^2 - x + 5)$.
+27. Multiply $(3x^2 - x + 4)(x^3 + 2x - 1)$.
+
+---
+
+:::{.answers}
+
+1. $x^2 + 11x + 24$
+2. $2x^2 - 15x + 7$
+3. $x^3 - 3x^2 + 2x - 24$
+4. $3x^3 - x^2 - 7x + 5$
+5. $x^3 - 3x^2 + x + 5$
+6. $2x^4 - x^3 - 11x^2 + 13x - 3$
+7. $x^4 + 4x^3 - 11x^2 + 3x - 18$
+8. $4x^3 - 5x^2 + 9x - 2$
+9. $x^3 + 7x^2 + 13x + 15$
+10. $3x^3 - 13x^2 + 5x - 4$
+11. $x^4 + x^3 + 4x^2 + 3x + 4$
+12. $2x^4 - x^3 - 4x^2 - x - 2$
+13. $x^4 + x^3 + 2x^2 - 14x - 12$
+14. $2x^4 - 5x^3 - 17x^2 + 19x - 12$
+15. $3x^4 + 2x^3 - 12x^2 - 7x + 2$
+16. $x^4 + 4x^3 + 7x^2 + 4x$
+17. $x^4 + 2x^3 - 3x^2 + 20x + 20$
+18. $2x^4 - x^3 + 7x^2 - x + 6$
+19. $2x^4 + 7x^3 + 9x^2 - 17x + 3$
+20. $3x^4 + 3x^3 - 16x^2 - 5x + 10$
+21. $x^4 + 5x^3 + 7x^2 + 4x + 3$
+22. $2x^4 - x^3 - 6x^2 + 11x - 5$
+23. $x^4 + x^3 + x^2 - x - 1$
+24. $4x^4 + x^3 - x^2 - 6x - 6$
+25. $x^4 + x^3 - 11x^2 - x + 18$
+
+:::
 
