@@ -1,0 +1,92 @@
+/* ============================
+   Global table sizing & margins
+   ============================ */
+:root {
+  --table-side-gap: 0.9rem;
+  --table-top-gap: 0.6rem;
+}
+:where(main, .content, .page-content, article) :is(table, .table) {
+  margin: var(--table-top-gap) auto;
+  width: auto !important;
+  max-width: calc(100% - (2 * var(--table-side-gap)));
+  display: table;
+}
+:where(main, .content, .page-content, article) .quarto-table {
+  padding: 0 0.25rem;
+}
+:where(main, .content, .page-content, article) table :is(th, td) {
+  padding: 0.35rem 0.6rem;
+}
+:where(main, .content, .page-content, article) :is(table.wide, .quarto-table.wide table) {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+:where(main, .content, .page-content, article) :is(.quarto-table.scroll, table.scroll) {
+  display: block;
+  overflow-x: auto;
+  width: 100% !important;
+  max-width: 100%;
+  margin: var(--table-top-gap) 0;
+}
+
+
+/* Base table container */
+.areabox table {
+  border-collapse: separate;   /* avoid shared borders */
+  border-spacing: 0;           /* no gaps between cells */
+  margin: 1rem auto;           /* center on page */
+  border: none !important;     /* kill any theme table border */
+}
+
+/* Reset all cells to a clean baseline */
+.areabox th,
+.areabox td {
+  margin: 0;
+  padding: 0.55rem 0.9rem;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 1rem;
+  background: #fff;         /* partial products default */
+}
+
+/* Remove any top border Quarto may add to header row */
+.areabox thead,
+.areabox thead tr {
+  border-top: none !important;
+}
+
+/* ----- LABEL CELLS (top row + left column) ----- */
+
+/* Top header row (polynomial across the top) */
+.areabox thead th {
+  background: #cdd6e9;         /* slightly darker tint */
+  font-weight: 700;
+}
+
+/* First column in the body (polynomial down the side) */
+.areabox tbody td:first-child {
+  background: #cdd6e9;         /* same tint as header row */
+  font-weight: 700;
+}
+
+/* ----- TOP-LEFT CORNER FIX ----- */
+
+/* Empty top-left corner cell: no borders at all */
+.areabox thead th:first-child {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: 0;                    /* collapse visually */
+}
+
+/* ----- PARTIAL PRODUCT CELLS ----- */
+
+/* All interior cells (not labels) stay pure white and lighter weight */
+.areabox tbody td:not(:first-child) {
+  background: #eaecf0;
+  font-weight: 400;
+}
+
+

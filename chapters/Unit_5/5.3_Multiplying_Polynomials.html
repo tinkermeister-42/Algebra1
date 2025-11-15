@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5.3 - Multiplying Polynomials – DHS Algebra 1</title>
+<title>5.3 – Multiplying Polynomials – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,9 +86,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
+<link rel="stylesheet" href="../../styles/custom-general.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -112,7 +142,7 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html">5.3 - Multiplying Polynomials</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html">5.3 – Multiplying Polynomials</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -433,13 +463,13 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">5.3 - Multiplying Polynomials</span></a>
+ <span class="menu-text">5.3 – Multiplying Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5.4 - Factoring_Polynomials</span></a>
+ <span class="menu-text">5.4 - Factoring Polynomials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -602,15 +632,23 @@ window.MathJax = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#multiplying-polynomials-using-distribution" id="toc-multiplying-polynomials-using-distribution" class="nav-link active" data-scroll-target="#multiplying-polynomials-using-distribution">5.3.1 – Multiplying Polynomials Using Distribution</a></li>
+  <li><a href="#area-models-the-box-method" id="toc-area-models-the-box-method" class="nav-link" data-scroll-target="#area-models-the-box-method">5.3.2 – Area Models (The Box Method)</a></li>
+  <li><a href="#products-of-more-than-two-polynomials" id="toc-products-of-more-than-two-polynomials" class="nav-link" data-scroll-target="#products-of-more-than-two-polynomials">5.3.3 – Products of More Than Two Polynomials</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html">5.3 - Multiplying Polynomials</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html">5.3 – Multiplying Polynomials</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">5.3 - Multiplying Polynomials</h1>
+<h1 class="title">5.3 – Multiplying Polynomials</h1>
 </div>
 
 
@@ -627,23 +665,587 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>You already know how to multiply a single term by a polynomial, distribute and combine like terms. But once <strong>both</strong> polynomials have more than one term, things can get complicated in a hurry.</p>
+<p>Take something like:</p>
+<p><span class="math display">\[(x + 4)(x^2 - 3x + 2).\]</span></p>
+<p>Every part of the first polynomial needs to connect with every part of the second. How many products does that make? And what’s the best way to organize all those pieces so nothing gets lost?</p>
+<p>In this lesson, you’ll learn a method that keeps everything in order and works for <strong>any</strong> size polynomial. It gives you the structure you need now, and it sets up the skills we’ll use later when we start factoring.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can do things</label></li>
+<li><label><input type="checkbox">I can multiply two polynomials using distribution.</label></li>
+<li><label><input type="checkbox">I can organize polynomial multiplication using an area model.</label></li>
+<li><label><input type="checkbox">I can multiply three or more polynomials.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-term="term" data-original-href="#glossary-term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-slug="area-model" data-original-href="#glossary-area-model" data-term="area model">area model</a>, <a href="" class="glossary-link" data-slug="binomial" data-original-href="#glossary-binomial" data-term="binomial">binomial</a>, <a href="" class="glossary-link" data-slug="distribute" data-original-href="#glossary-distribute" data-term="distribute">distribute</a>, <a href="" class="glossary-link" data-slug="like-terms" data-original-href="#glossary-like-terms" data-term="like terms">like terms</a>, <a href="" class="glossary-link" data-slug="monomial" data-original-href="#glossary-monomial" data-term="monomial">monomial</a>, <a href="" class="glossary-link" data-slug="polynomial" data-original-href="#glossary-polynomial" data-term="polynomial">polynomial</a>, <a href="" class="glossary-link" data-slug="standard-form" data-original-href="#glossary-standard-form" data-term="standard form">standard form</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>Rewrite <span class="math inline">\(342\)</span> as the sum of its place-value parts.</p></li>
+<li><p>Expand: <span class="math inline">\(4x(3x^2 - 2x + 5)\)</span>.</p></li>
+<li><p>Predict: how many individual products will appear if you multiply <span class="math inline">\((x + 3)(x^2 - x + 5)\)</span>?</p></li>
+</ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
+<section id="multiplying-polynomials-using-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="multiplying-polynomials-using-distribution">5.3.1 – Multiplying Polynomials Using Distribution</h3>
+<p>You already know how to multiply a <strong>monomial</strong> times a polynomial by distributing. But what about when <em>both</em> polynomials have more than one term?</p>
+<p>Let’s try the method you know and see what happens.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Multiply <span class="math inline">\((2x + 3)(3x - 5)\)</span> using only distribution.</p>
+<p>Break the second polynomial into its parts and distribute the <strong>first</strong> polynomial over them:</p>
+<p><span class="math display">\[
+\begin{align*}
+(2x + 3)(3x - 5)
+&amp;= (2x + 3)\,\textcolor{#3366cc}{\cdot\;3x}
+\;+\;
+(2x + 3)\,\textcolor{#cc3333}{\cdot\;(-5)} \\[6pt]
+&amp;= \big(\textcolor{#3366cc}{6x^2 + 9x}\big)
+\;+\;
+\big(\textcolor{#cc3333}{-10x - 15}\big) \\[6pt]
+&amp;= 6x^2 - x - 15
+\end{align*}
+\]</span></p>
+<p>This works, but we already had to distribute twice. As the polynomials get bigger, the number of <a href="" class="glossary-link" data-slug="partial-product" data-original-href="#glossary-partial-product" data-term="partial products">partial products</a> grows quickly, and it’s easy to lose track.</p>
+<p>Imagine distributing for this one:</p>
+<p><span class="math display">\[(x + 4)(x^2 - 3x + 2)\]</span></p>
+<p>You would need to distribute <span class="math inline">\(x\)</span> across three terms, then <span class="math inline">\(4\)</span> across those same three terms, and then collect all six partial products. The more terms we have, the messier it gets.</p>
+<p>Let’s learn a better way to organize everything.</p>
+<div class="you-try" title="Multiply $(x - 5)(x + 2)$ using distribution">
+<p><span class="math display">\[x^2 - 3x - 10\]</span></p>
+</div>
+<hr>
+</section>
+<section id="area-models-the-box-method" class="level3">
+<h3 class="anchored" data-anchor-id="area-models-the-box-method">5.3.2 – Area Models (The Box Method)</h3>
+<p>Before we use area models for polynomials, let’s remind ourselves how the idea works with numbers.</p>
+<p>To multiply <span class="math inline">\(28 \cdot 47\)</span>, you can break each number into place-value parts:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(40\)</span></th>
+<th><span class="math inline">\(7\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(20\)</span></td>
+<td><span class="math inline">\(800\)</span></td>
+<td><span class="math inline">\(140\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(8\)</span></td>
+<td><span class="math inline">\(320\)</span></td>
+<td><span class="math inline">\(56\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Add the pieces:</p>
+<p><span class="math display">\[800 + 140 + 320 + 56 = 1316\]</span></p>
+<p>Everything has a place. Nothing gets lost.</p>
+<p>Area models work the same way with polynomials, but terms are used instead of place-value.</p>
+<div class="you-try" title="Multiply $352 \cdot 283$ using an area model.">
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(300\)</span></th>
+<th><span class="math inline">\(50\)</span></th>
+<th><span class="math inline">\(2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(200\)</span></td>
+<td><span class="math inline">\(60000\)</span></td>
+<td><span class="math inline">\(10000\)</span></td>
+<td><span class="math inline">\(400\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(80\)</span></td>
+<td><span class="math inline">\(24000\)</span></td>
+<td><span class="math inline">\(4000\)</span></td>
+<td><span class="math inline">\(160\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(900\)</span></td>
+<td><span class="math inline">\(150\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="math display">\[60000 + 10000 + 400 + 24000 + 4000 + 160 + 900 + 150 + 6 = 99616\]</span></p>
+</div>
+<hr>
+<p><strong>Example 2:</strong> Multiplying Two Binomials</p>
+<p>Let’s return to the product in the first example.</p>
+<p>Multiply <span class="math inline">\((2x + 3)(3x - 5)\)</span>.</p>
+<p>To use the area model, we put the terms of one binomial across the top, and the terms for the other down the side.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(3x\)</span></th>
+<th><span class="math inline">\(-5\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(6x^2\)</span></td>
+<td><span class="math inline">\(-10x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(9x\)</span></td>
+<td><span class="math inline">\(-15\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine like terms and write in <a href="" class="glossary-link" data-slug="standard-form" data-original-href="#glossary-standard-form" data-term="standard form">standard form</a>:</p>
+<p><span class="math display">\[6x^2 - x - 15\]</span></p>
+<p>Compare this to the method that didn’t use an area model. We created all the same partial products, but the area model is simpler and more organized.</p>
+<div class="note" title="A Common Shortcut (FOIL).">
+<p>Many Algebra books use a method called FOIL to multiply two binomials. FOIL stands for <strong>F</strong>irsts, <strong>O</strong>utsides, <strong>I</strong>nsides, <strong>L</strong>asts.</p>
+<p>In the last example, <span class="math inline">\((2x + 3)(3x - 5)\)</span>, we would use FOIL like this:</p>
+<ul>
+<li><strong>F</strong>irsts: <span class="math inline">\(2x \cdot 3x = 6x^2\)</span></li>
+<li><strong>O</strong>utsides: <span class="math inline">\(2x \cdot -5 = -10x\)</span></li>
+<li><strong>I</strong>nsides: <span class="math inline">\(3 \cdot 3x = 9x\)</span></li>
+<li><strong>L</strong>asts: <span class="math inline">\(3 \cdot -5 = -15\)</span></li>
+</ul>
+<p>Then we combine:</p>
+<p><span class="math inline">\(6x^2 - x - 15\)</span></p>
+<p>FOIL works only for binomials. Area models work for <strong>all</strong> polynomials, no matter how many terms they have.</p>
+</div>
+<div class="you-try" title="Multiply $(3x - 1)(6x + 2)$.">
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(6x\)</span></th>
+<th><span class="math inline">\(2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(3x\)</span></strong></td>
+<td><span class="math inline">\(18x^2\)</span></td>
+<td><span class="math inline">\(6x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-1\)</span></strong></td>
+<td><span class="math inline">\(-6x\)</span></td>
+<td><span class="math inline">\(-2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine and write in standard form:</p>
+<p><span class="math display">\[18x^2 - 2\]</span></p>
+</div>
+<hr>
+<p>In the next few examples, we will see that the area model really starts to shine when we have more terms to keep track of.</p>
+<p><strong>Example 3:</strong></p>
+<p>Multiply <span class="math inline">\((2x - 3)(x^2 + x + 4)\)</span>.</p>
+<p>We do exactly the same thing here that we did in the previous example. Terms from one polynomial go across the top and terms from the second go down the side.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x^2\)</span></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(2x\)</span></strong></td>
+<td><span class="math inline">\(2x^3\)</span></td>
+<td><span class="math inline">\(2x^2\)</span></td>
+<td><span class="math inline">\(8x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-3\)</span></strong></td>
+<td><span class="math inline">\(-3x^2\)</span></td>
+<td><span class="math inline">\(-3x\)</span></td>
+<td><span class="math inline">\(-12\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[2x^3 - x^2 + 5x - 12.\]</span></p>
+<hr>
+<p><strong>Example 4:</strong></p>
+<p>Multiply <span class="math inline">\((x^2 + x + 3)(2x^2 - x + 4)\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(2x^2\)</span></th>
+<th><span class="math inline">\(-x\)</span></th>
+<th><span class="math inline">\(4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(x^2\)</span></strong></td>
+<td><span class="math inline">\(2x^4\)</span></td>
+<td><span class="math inline">\(-x^3\)</span></td>
+<td><span class="math inline">\(4x^2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(x\)</span></strong></td>
+<td><span class="math inline">\(2x^3\)</span></td>
+<td><span class="math inline">\(-x^2\)</span></td>
+<td><span class="math inline">\(4x\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\(3\)</span></strong></td>
+<td><span class="math inline">\(6x^2\)</span></td>
+<td><span class="math inline">\(-3x\)</span></td>
+<td><span class="math inline">\(12\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[2x^4 + x^3 + 9x^2 + x + 12.\]</span></p>
+<hr>
+<p><strong>Example 5:</strong></p>
+<p>Multiply <span class="math inline">\((3x + 1)(x^3 - 4x^2 + x + 5)\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x^3\)</span></th>
+<th><span class="math inline">\(-4x^2\)</span></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(5\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(3x\)</span></strong></td>
+<td><span class="math inline">\(3x^4\)</span></td>
+<td><span class="math inline">\(-12x^3\)</span></td>
+<td><span class="math inline">\(3x^2\)</span></td>
+<td><span class="math inline">\(15x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(1\)</span></strong></td>
+<td><span class="math inline">\(x^3\)</span></td>
+<td><span class="math inline">\(-4x^2\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[3x^4 - 11x^3 - x^2 + 16x + 5.\]</span></p>
+<hr>
+<div class="you-try" title="Multiply $(-4x - 7)(2x^2 - 3x + 9)$.">
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(2x^2\)</span></th>
+<th><span class="math inline">\(-3x\)</span></th>
+<th><span class="math inline">\(9\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(-4x\)</span></strong></td>
+<td><span class="math inline">\(-8x^3\)</span></td>
+<td><span class="math inline">\(12x^2\)</span></td>
+<td><span class="math inline">\(-36x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-7\)</span></strong></td>
+<td><span class="math inline">\(-14x^2\)</span></td>
+<td><span class="math inline">\(21x\)</span></td>
+<td><span class="math inline">\(-63\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[-8x^3 - 2x^2 - 15x - 63\]</span></p>
+</div>
+<div class="note">
+<p>You can use an area model to multiply a monomial times a polynomial. For example, <span class="math inline">\(3x(x + 3)\)</span> could be written as</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(3x\)</span></td>
+<td><span class="math inline">\(3x^2\)</span></td>
+<td><span class="math inline">\(9x\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>giving <span class="math inline">\(3x^2 + 9x\)</span>. This is rarely done because it is just as easy to distribute normally.</p>
+</div>
+</section>
+<section id="products-of-more-than-two-polynomials" class="level3">
+<h3 class="anchored">5.3.3 – Products of More Than Two Polynomials</h3>
+<p>Sometimes you’ll multiply expressions like:</p>
+<p><span class="math display">\[(x + 2)(x - 5)(2x + 3)\]</span></p>
+<p>You can still use area models — just do it in <strong>steps</strong>.</p>
+<p>Multiply the first two polynomials. Then multiply the result by the third.</p>
+<p>This keeps each step manageable, and it’s exactly what we do later when factoring or simplifying complicated expressions.</p>
+<hr>
+<p><strong>Example 6:</strong> Multiply <span class="math inline">\((x - 3)(2x + 1)(x + 4)\)</span>.</p>
+<p><strong>Step 1:</strong> Multiply the first two.</p>
+<p><span class="math inline">\((x - 3)(2x + 1)\)</span>:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(2x\)</span></th>
+<th><span class="math inline">\(1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(x\)</span></strong></td>
+<td><span class="math inline">\(2x^2\)</span></td>
+<td><span class="math inline">\(x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-3\)</span></strong></td>
+<td><span class="math inline">\(-6x\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[2x^2 - 5x - 3.\]</span></p>
+<p><strong>Step 2:</strong> Now multiply that result by <span class="math inline">\((x + 4)\)</span>.</p>
+<p><span class="math inline">\((2x^2 - 5x - 3)(x + 4)\)</span>:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(2x^2\)</span></strong></td>
+<td><span class="math inline">\(2x^3\)</span></td>
+<td><span class="math inline">\(8x^2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-5x\)</span></strong></td>
+<td><span class="math inline">\(-5x^2\)</span></td>
+<td><span class="math inline">\(-20x\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\(-3\)</span></strong></td>
+<td><span class="math inline">\(-3x\)</span></td>
+<td><span class="math inline">\(-12\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[2x^3 + 3x^2 - 23x - 12.\]</span></p>
+<hr>
+<div class="you-try" title="Multiply $(x+1)(x-2)(2x-3)$.">
+<p><strong>Step 1:</strong> Multiply <span class="math inline">\((x + 1)(x - 2)\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(x\)</span></strong></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(-2x\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(1\)</span></strong></td>
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(-2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[x^2 - x - 2.\]</span></p>
+<p><strong>Step 2:</strong> Now multiply that result by <span class="math inline">\((2x - 3)\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(2x\)</span></th>
+<th><span class="math inline">\(-3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\(x^2\)</span></strong></td>
+<td><span class="math inline">\(2x^3\)</span></td>
+<td><span class="math inline">\(-3x^2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(-x\)</span></strong></td>
+<td><span class="math inline">\(-2x^2\)</span></td>
+<td><span class="math inline">\(3x\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\(-2\)</span></strong></td>
+<td><span class="math inline">\(-4x\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine:</p>
+<p><span class="math display">\[2x^3 - 5x^2 - x + 6.\]</span></p>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="products-of-more-than-two-polynomials">✍️ Practice On Your Own</h2>
+<p><strong>Level 1</strong></p>
+<p>Write the product as a single polynomial in <strong>standard form</strong>.</p>
+<ol type="1">
+<li><p><span class="math inline">\((x + 3)(x + 8)\)</span></p></li>
+<li><p><span class="math inline">\((2x - 1)(x - 7)\)</span></p></li>
+<li><p><span class="math inline">\((x + 6)(x - 4)\)</span></p></li>
+<li><p><span class="math inline">\((3x + 5)(x - 1)\)</span></p></li>
+<li><p><span class="math inline">\((x - 9)(x + 2)\)</span></p></li>
+<li><p><span class="math inline">\((4x - 3)(x + 6)\)</span></p></li>
+<li><p><span class="math inline">\((x + 5)(x - 12)\)</span></p></li>
+<li><p><span class="math inline">\((5x - 2)(x - 3)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Level 2</strong></p>
+<p>Write the product as a single polynomial in <strong>standard form</strong>.</p>
+<ol start="9" type="1">
+<li><p><span class="math inline">\((x - 4)(x^2 + x + 6)\)</span></p></li>
+<li><p><span class="math inline">\((x + 1)(x^2 - 4x + 5)\)</span></p></li>
+<li><p><span class="math inline">\((3x + 2)(x^2 - 2x + 1)\)</span></p></li>
+<li><p><span class="math inline">\((4x - 1)(x^2 - x + 2)\)</span></p></li>
+<li><p><span class="math inline">\((x^2 + 2x + 3)(x + 5)\)</span></p></li>
+<li><p><span class="math inline">\((3x^2 - x + 1)(x - 4)\)</span></p></li>
+<li><p><span class="math inline">\((x^2 - 2x + 5)(x^2 + 4)\)</span></p></li>
+<li><p><span class="math inline">\((2x^2 + x + 3)(x^2 - x + 2)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Level 3</strong></p>
+<p>Write the product as a single polynomial in <strong>standard form</strong>.</p>
+<ol start="17" type="1">
+<li><p><span class="math inline">\((x^2 + x + 1)(4 - x)\)</span></p></li>
+<li><p><span class="math inline">\((x - 3)(2x^3 + x^2 - 5x + 4)\)</span></p></li>
+<li><p><span class="math inline">\((3x + 2)(1 - 4x + x^3)\)</span></p></li>
+<li><p><span class="math inline">\((4x - 3)(x^3 + x^2 + 2)\)</span></p></li>
+<li><p><span class="math inline">\((x + 2)(-6 + 4x - x^2 + x^3)\)</span></p></li>
+<li><p><span class="math inline">\((x^2 + 4x + 1)(3 - x + 2x^2)\)</span></p></li>
+<li><p><span class="math inline">\((x + 1)(x - 2)(x + 3)\)</span></p></li>
+<li><p><span class="math inline">\((2x - 1)(x + 4)(x - 5)\)</span></p></li>
+<li><p><span class="math inline">\((x - 3)(x^2 + x + 1)(x + 2)\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="26" type="1">
+<li><p>The product<br>
+<span class="math display">\[(x + a)(x + b)(x + c)\]</span></p>
+<p>has <strong>no <span class="math inline">\(x^2\)</span> term</strong> when expanded.</p>
+<p>Find a relationship that <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> must satisfy.</p></li>
+<li><p>The product<br>
+<span class="math display">\[(x + p)(x + q)(x + r)\]</span></p>
+<p>has <strong>no <span class="math inline">\(x\)</span> term</strong> when expanded.</p>
+<p>Find a relationship that <span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>, and <span class="math inline">\(r\)</span> must satisfy.</p></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li><p><span class="math inline">\(x^2 + 11x + 24\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2x^2 - 15x + 7\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^2 + 2x - 24\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3x^2 + 2x - 5\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^2 - 7x - 18\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(4x^2 + 21x - 18\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^2 - 7x - 60\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(5x^2 - 17x + 6\)</span></p></li>
+<li><p><span class="math inline">\(x^3 - 3x^2 + 2x - 24\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^3 - 3x^2 + x + 5\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3x^3 - 4x^2 - x + 2\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(4x^3 - 5x^2 + 9x - 2\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^3 + 7x^2 + 13x + 15\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3x^3 - 13x^2 + 5x - 4\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^4 - 2x^3 + 9x^2 - 8x + 20\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2x^4 - x^3 + 6x^2 - x + 6\)</span></p></li>
+<li><p><span class="math inline">\(-x^3 + 3x^2 + 3x + 4\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2x^4 - 5x^3 - 8x^2 + 19x - 12\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3x^4 + 2x^3 - 12x^2 - 5x + 2\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(4x^4 + x^3 - 3x^2 + 8x - 6\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^4 + x^3 + 2x^2 + 2x - 12\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2x^4 + 7x^3 + x^2 + 11x + 3\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^3 + 2x^2 - 5x - 6\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2x^3 - 3x^2 - 39x + 20\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x^4 - 6x^2 - 7x - 6\)</span></p></li>
+</ol>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
@@ -1056,8 +1658,8 @@ window.MathJax = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials.html" class="pagination-link" aria-label="5.4 - Factoring_Polynomials">
-        <span class="nav-page-text">5.4 - Factoring_Polynomials</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials.html" class="pagination-link" aria-label="5.4 - Factoring Polynomials">
+        <span class="nav-page-text">5.4 - Factoring Polynomials</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

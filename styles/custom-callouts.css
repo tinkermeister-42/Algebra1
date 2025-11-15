@@ -258,35 +258,3 @@
   white-space: nowrap;
 }
 
-/* ============================
-   Global table sizing & margins
-   ============================ */
-:root {
-  --table-side-gap: 0.9rem;
-  --table-top-gap: 0.6rem;
-}
-:where(main, .content, .page-content, article) :is(table, .table) {
-  margin: var(--table-top-gap) auto;
-  width: auto !important;
-  max-width: calc(100% - (2 * var(--table-side-gap)));
-  display: table;
-}
-:where(main, .content, .page-content, article) .quarto-table {
-  padding: 0 0.25rem;
-}
-:where(main, .content, .page-content, article) table :is(th, td) {
-  padding: 0.35rem 0.6rem;
-}
-:where(main, .content, .page-content, article) :is(table.wide, .quarto-table.wide table) {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-left: 0;
-  margin-right: 0;
-}
-:where(main, .content, .page-content, article) :is(.quarto-table.scroll, table.scroll) {
-  display: block;
-  overflow-x: auto;
-  width: 100% !important;
-  max-width: 100%;
-  margin: var(--table-top-gap) 0;
-}

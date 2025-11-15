@@ -50,6 +50,17 @@ local function add_term(term, def)
   if key ~= "" then push(key, def) end
 end
 
+-- Wrap math in $...$ so stringify produces TeX with delimiters
+local function wrap_math_in_dollars(block)
+  return pandoc.walk_block(block, {
+    Math = function(m)
+      -- m.text is the TeX body (no $)
+      return pandoc.Str("$" .. (m.text or "") .. "$")
+    end
+  })
+end
+
+
 function Header(el)
   if el.level == 3 then
     captured = false
@@ -65,17 +76,20 @@ end
 
 function Para(el)
   if current and not captured then
-    add_term(current, pandoc.utils.stringify(el.content))
+    local with_math = wrap_math_in_dollars(el)
+    add_term(current, pandoc.utils.stringify(with_math.content))
     captured = true
   end
 end
 
 function Plain(el)
   if current and not captured then
-    add_term(current, pandoc.utils.stringify(el))
+    local with_math = wrap_math_in_dollars(el)
+    add_term(current, pandoc.utils.stringify(with_math))
     captured = true
   end
 end
+
 
 function Pandoc(doc)
   local f = assert(io.open("glossary.json", "w"))
