@@ -35,7 +35,13 @@ fi
 
 echo "[build-glossary] Using pandoc executable at: $PANDOC"
 
-"$PANDOC" glossary.qmd -t plain --lua-filter=scripts/generate-glossary-json.lua -o "$TMP_OUT"
+"$PANDOC" glossary.qmd \
+  --from markdown+tex_math_dollars+tex_math_single_backslash \
+  --to json \
+  --lua-filter=scripts/generate-glossary-json.lua \
+  --quiet \
+  -o "$TMP_OUT"
+
 
 PANDOC_EXIT_CODE=$?
 

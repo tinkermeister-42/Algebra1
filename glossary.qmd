@@ -49,7 +49,9 @@ To save space and make their answers more clear, mathematicians like to use $\ma
 
 ### Area Model {#glossary-area-model}
 
-An **area model** is a visual way to organize multiplication by breaking each number or expression into parts. Each part forms a row or column in a box, and the box cells show the partial products. When all the partial products are added together, you get the total product. Area models work for whole numbers, decimals, and polynomials of any size.
+An **area model** (or "box method") is a visual way to organize multiplication by breaking each number or expression into parts.
+
+In an area model, each part forms a row or column in a box, and the box cells show the partial products. When all the partial products are added together, you get the total product. Area models work for whole numbers, decimals, and polynomials of any size.
 
 > **Example:**
 > To multiply $(x + 4)(x^2 - 3x + 2)$, you can use a box with two rows and three columns. Each cell shows one partial product, and adding them gives the final expression.

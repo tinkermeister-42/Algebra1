@@ -18,6 +18,7 @@ format:
     css:
       - styles/glossary-tooltips.css
       - styles/custom-callouts.css
+      - styles/custom-general.css
     include-after-body:
       - scripts/inject-custom.html
     include-in-header: mathjax-macros.html

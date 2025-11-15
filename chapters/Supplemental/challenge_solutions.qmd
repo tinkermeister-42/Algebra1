@@ -413,3 +413,21 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 28. $\dfrac{q^{\tfrac{9}{4}}}{81,p^{3}}$
 
 :::
+
+### 5.2 - Simplifying Polynomials
+
+:::{.answers}
+
+26. $a + b + c = 0$
+
+:::
+
+### 5.3 - Multiplying Polynomials
+
+:::{.answers}
+
+26. $a + b + c = 0$
+
+27. $pq + pr + qr = 0$
+    
+:::

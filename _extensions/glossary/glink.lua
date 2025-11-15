@@ -49,6 +49,6 @@ return {
       href = href
     }
 
-    return pandoc.Link(display, href, "", attr)
+    return pandoc.Link(display, "", "", attr)
   end
 }

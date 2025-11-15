@@ -303,6 +303,13 @@ Rearrange each expression from highest to lowest degree.
 
 ---
 
+**Challenge Problems**
+
+26. Three linear expressions are added together:
+    $$(x + a) + (x + b) + (x + c)$$
+
+    After combining like terms, the result has **no $x$ term**. What relationship must $a$, $b$, and $c$ satisfy?
+
 :::{.answers}
 
 1. Polynomial, trinomial, degree 2
