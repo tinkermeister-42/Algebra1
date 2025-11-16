@@ -36,7 +36,7 @@ You’ll use these skills again and again — from simplifying fractions to solv
 
 A {{< glink factor >}} of a number is a whole number that divides it evenly — with no {{< glink remainder >}}.
 
-**Example:**
+**Example 1:** Factors of 12
 
 The factors of 12 are: 1, 2, 3, 4, 6 and 12
 
@@ -58,7 +58,7 @@ Only one number does: **1**. It only has itself as a factor!
 
 A {{< glink multiple >}} is what you get when you multiply a number by 1, 2, 3, 4…
 
-**Example:**
+**Example 2:** Multiples of 5
 
 Here are the first few multiples of 5: 
 
@@ -68,7 +68,9 @@ $5, 10, 15, 20, 25, 30, ...$
 
 Multiples show up all over the place. When you {{< glink "skip count" >}}, you are using multiples. In the previous lesson, we used multiples to construct number lines! 
 
-**Example:**
+---
+
+**Example 3:** Multiples of 3
 
 Here is a number line that shows multiples of three.
 ![](/images/Unit_1/Lesson_2/skip_count_by_3.png)
@@ -126,7 +128,7 @@ Let’s build a factor tree for **360** to see how it works.
 <div style="display: flex; justify-content: center;">
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("360")
@@ -139,7 +141,7 @@ flowchart TB
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("360")
@@ -159,7 +161,7 @@ flowchart TB
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("360")
@@ -184,7 +186,7 @@ flowchart TB
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
     flowchart TB
     node_0("360")
@@ -232,7 +234,7 @@ There are *many* factor trees for the number 360. For example, you could also ha
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("360")
@@ -281,7 +283,7 @@ There is no one right answer to this question. It depends on your goal. If your 
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("360")
@@ -327,7 +329,7 @@ If the number is negative, factor out a -1 first. Here is one possible factor tr
 
 ```{mermaid}
 %%| label: mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("-24")
@@ -411,7 +413,7 @@ I have only shown you 3 of the 60 unique factor trees for 360!
    a. 
 ```{mermaid}
 %%| label: fig-mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("36")
@@ -431,7 +433,7 @@ flowchart TB
    b. 
 ```{mermaid}
 %%| label: fig-mermaid-diagram
-%%| fit-align: center
+%%| fig-align: center
 %%| fig-cap: " "
 flowchart TB
     node_0("-120")

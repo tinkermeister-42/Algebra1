@@ -41,7 +41,7 @@ $$
 
 {{< learn >}}
 
-### 3.4.1 – The Basic Strategy
+### 3.4.1 - The Basic Strategy
 
 Up until now, the variable was always on one side of the equation. But sometimes we’ll see the variable appear on **both sides**. This adds a step to solving equations:
 
@@ -49,7 +49,7 @@ Up until now, the variable was always on one side of the equation. But sometimes
 
 Let’s use the apple-and-scale model to see how this works.
 
-**Example 1:**
+**Example 1:** How much does an apple weigh?
 
 Here we have 3 apples and 1 weight on the left-hand side, and 1 apple and 7 weights on the right-hand side.
 
@@ -117,7 +117,7 @@ An apple has a weight of **3**.
 
 ---
 
-**Example 2:**
+**Example 2:** Apples to algebra
 
 Now let's try solving one with just algebra. Instead of apples, we have x's. Instead of weights, we have numbers.
 
@@ -157,7 +157,7 @@ $$
 
 ---
 
-### 3.4.2 – Simplifying Before Solving
+### 3.4.2 - Simplifying Before Solving
 
 Not every equation is ready to solve right away. Sometimes, each side of the equation has parentheses or extra terms that must be simplified first. The strategy is:
 
@@ -167,7 +167,7 @@ Not every equation is ready to solve right away. Sometimes, each side of the equ
 
 ---
 
-**Example 1:**
+**Example 3:** Simplifying with distribution
 
 Solve $2(x + 3) = 3x + 1$.
 
@@ -189,7 +189,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 4:** Simplifying by combining like terms
 
 Solve $4x + 6 + x = 2x + 12$.
 
@@ -211,7 +211,7 @@ $$
 
 ---
 
-**Example 3:**
+**Example 5:** Simplifying with distribution and like terms
 
 Solve $3(x - 2) + 4 = 2(x + 1)$.
 
@@ -266,13 +266,13 @@ When solving an equation with variables on both sides:
 
 ---
 
-## 3.4.3 – Word Problems with Variables on Both Sides
+## 3.4.3 - Word Problems with Variables on Both Sides
 
 When two different plans or expressions both describe the **same total**, we often get equations with the variable on **both sides**. Simplify each side (distribute, combine like terms), then move all variable terms to one side.
 
 ---
 
-**Example 1 – Two Pay Plans**
+**Example 6:** Two pay plans
 
 Alex earns a \$6 bonus plus \$15 per hour. Blair earns a \$18 bonus plus \$12 per hour.
 After how many hours will they earn the same amount?
@@ -302,7 +302,7 @@ They earn the same after **4 hours**.
 
 ---
 
-**Example 2 – Equal Perimeters**
+**Example 7:** Equal perimeters
 
 Two rectangles have the **same perimeter**.
 
@@ -339,7 +339,7 @@ So **$x = 6$**.
 
 ---
 
-**Example 3 – Two Vendors, Same Total**
+**Example 8:** Two vendors, same total
 
 Vendor A sells sweatshirts for \$18 each, includes **2 free**, and charges \$12 shipping.
 Vendor B sells sweatshirts for \$15 each with a flat \$42 shipping.

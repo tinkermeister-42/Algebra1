@@ -1,4 +1,4 @@
-#  3.3 Multi-Step Equations with Distribution {.unnumbered}
+#  3.3 - Multi-Step Equations with Distribution {.unnumbered}
 
 In the last lessons, you learned how to solve one-step and two-step {{< glink slug=equation text=equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
@@ -27,7 +27,7 @@ In this lesson, you’ll learn how to simplify first — by using the distributi
 
 {{< learn >}}
 
-### 3.3.1 – Distribution in Equations
+### 3.3.1 - Distribution in Equations
 
 Sometimes equations have parentheses. When that happens, you can’t get the variable by itself right away—you have to **simplify first**. This is where the **distributive property** comes in.
 
@@ -117,13 +117,13 @@ $$
 
 ---
 
-### 3.3.2 – Combining Like Terms in Equations
+### 3.3.2 - Combining Like Terms in Equations
 
 Sometimes an equation looks messy because there are {{< glink "like terms" >}} on the same side of the equals sign. Before you can solve, you need to combine them into a single term.
 
 ---
 
-**Example 1:**
+**Example 1:** Combining like terms
 
 Solve:
 
@@ -154,7 +154,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 2:** Distribution and like terms
 
 Solve:
 
@@ -194,7 +194,7 @@ $$
 
 ---
 
-**Example 3:**
+**Example 3:** Distribution and like terms with negatives
 
 Solve:
 
@@ -240,14 +240,14 @@ $$
 
 ---
 
-### 3.3.3 – Word Problems with Multi-Step Equations
+### 3.3.3 - Word Problems with Multi-Step Equations
 
 Some problems lead to equations that look “messier” because they include parentheses or more than one set of like terms.
 We solve them the same way — by simplifying first, then isolating the variable.
 
 ---
 
-**Example 1 – Selling T-Shirts**
+**Example 4:** Selling t-shirts
 
 A club sells T-shirts for \$12 each. The total cost to make the shirts is \$60 plus \$6 per shirt.
 If the group made a profit of \$84, how many shirts did they sell?
@@ -279,7 +279,7 @@ They sold **24 shirts**.
 
 ---
 
-**Example 2 – Geometry**
+**Example 5:** Connections to Geometry
 
 The perimeter of a triangle is 54 cm. The sides measure $2x + 3$, $3x - 2$, and $x + 5$.
 Find the value of $x$.

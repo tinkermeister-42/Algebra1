@@ -1,4 +1,4 @@
-# 2.4 – The Distributive Property {.unnumbered}
+# 2.4 - The Distributive Property {.unnumbered}
 
 Imagine your football (soccer) team wants to order new jerseys. Each jersey costs \$25, and to add your team’s logo it’s another \$5 per jersey.
 
@@ -43,7 +43,7 @@ Either way, you get the same answer. What we just did actually followed a rule i
 
 {{< learn >}}
 
-### 2.4.1 – What Is the Distributive Property?
+### 2.4.1 - What Is the Distributive Property?
 
 At the beginning of Algebra class, your teacher hands you a stack of worksheets and says, *“Please distribute these to the class.”*  
 
@@ -59,7 +59,7 @@ $$
 
 ---
 
-**Example:**
+**Example 1:** Expanding expressions
 
 {{< glink Expand >}} $3(x + 2)$ using the distributive property.
 
@@ -128,11 +128,11 @@ $$
 
 ---
 
-### 2.4.2 – Distributing with Negatives
+### 2.4.2 - Distributing with Negatives
 
 Distribution with negatives is no different than what we have seen so far. But you need to be careful! It is easy to forget to include the negative sign when applying the distributive property.
 
-**Example 1:**
+**Example 2:** Expanding with negatives
 
 Expand the expression $-3(x - 4)$:
 
@@ -140,7 +140,7 @@ $$
 -3(x - 4) = -3(x) -3(-4) = -3x + 12
 $$
 
-**Example 2:**
+**Example 3:** Expanding with an invisible $1$.
 
 Expand the expression $-(2x - 7)$:
 
@@ -159,11 +159,11 @@ $$
 
 ---
 
-### 2.4.3 – Distribute, Then Combine Like Terms
+### 2.4.3 - Distribute, Then Combine Like Terms
 
 Expanding an expression using the distributive property often requires us to simplify the result. To do this, we combine like terms like we did in the previous lesson.
 
-**Example:**
+**Example 4:** Expand and combine
 
 Simplify the expression $4(x+2) + 3(x-5)$:
 
@@ -215,7 +215,7 @@ $$
 
 ---
 
-### 2.4.4 – Reverse It: Factoring Out a Common Factor
+### 2.4.4 - Reverse It: Factoring Out a Common Factor
 
 Distribution goes both ways. If $ab+ac = a(b+c)$, then we can **factor out** $a$.
 
@@ -240,11 +240,11 @@ $$
 
 ---
 
-### 2.4.5 – Check Your Work
+### 2.4.5 - Check Your Work
 
 It is always a good idea to check your work in algebra. Here, we can use {{< glink substitution >}} to see if our answer is reasonable.
 
-**Example 1:**
+**Example 5:** Spot the mistake
 
 Paxton simplified the expression $5(2x-3)-(x-4)$. Here are the steps he took. Did he make a mistake?
 

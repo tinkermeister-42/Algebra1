@@ -1,0 +1,791 @@
+# 5.4 - Factoring: GCF & Basic Trinomials {.unnumbered}
+
+You’ve spent a lot of time learning how to {{< glink simplify >}} expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.
+
+Take something like:
+
+$$
+12x + 18.
+$$
+
+It looks simple, but there’s structure hidden inside it. Could this expression be written as a {{< glink product >}} of smaller pieces?
+
+Now look at a trinomial such as
+
+$$
+x^2 + 11x + 24.
+$$
+
+Where did it come from? Could it be the result of multiplying two binomials? If so, how could we work backward to uncover them?
+
+In this lesson, we will find the answers to these questions by learning the basics of {{< glink factoring >}} polynomials.
+
+
+::: {.objectives}
+
+* [ ] I can factor a polynomial by taking out a greatest common factor (GCF).
+* [ ] I can factor basic trinomials using an area model.
+* [ ] I can check a factored expression by multiplying.
+:::
+
+::: {.vocab}
+{{< glink coefficient >}},
+{{< glink factor >}},
+{{< glink "greatest common factor" >}},
+{{< glink polynomial >}},
+{{< glink term >}},
+{{< glink trinomial >}}
+:::
+
+
+{{< warmup >}}
+
+1. Find the GCF of each pair:
+   a. 12 and 18
+   b. 8x and 20
+   c. 21x² and 14x
+<br>
+<br>
+2. Rewrite in **standard form**:
+   a. $5 + 3x + x^2$
+   b. $-2x + 7 + 4x^2$
+<br>
+<br>
+3. What two numbers multiply to $14$ and add to $9$?
+
+
+{{< learn >}}
+
+### 5.4.1 - Factoring Out a GCF
+
+In [Lesson 1.3](/chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd), you learned how to find a **greatest common factor** (GCF). The GCF is the largest number or expression that divides every term.
+
+When working with polynomials, writing an expression as a **product** is often the first step toward a cleaner or more useful form. Before jumping in, let’s quickly remind ourselves what a GCF looks like.
+
+A fast way to review the idea is to look at the factors of each term and see what they share:
+
+* $12x$ has factors $2 \cdot 2 \cdot 3 \cdot x$
+* $18$ has factors $2 \cdot 3 \cdot 3$
+* The part they have in common is $6$
+
+This is the same idea you used in Unit 1 with factor trees.
+
+---
+
+**Example 1:** An integer GCF
+
+Here is a factor-tree style diagram for the expression $12x + 18$:
+
+<div style="text-align: center;">
+```{mermaid}
+flowchart TB
+    node_0("12x + 18")
+    node_1("6")
+    node_2("2x + 3")
+    node_0 --- node_1
+    node_0 --- node_2
+```
+</div>
+
+This picture shows the kind of result we want: the expression written as two factors that multiply to the whole expression.
+
+To do that, we take out the greatest common factor:
+
+$$
+\begin{align*}
+\text{GCF}(12x,18) &= 6 \\
+12x + 18 &= 6(2x + 3)
+\end{align*}
+$$
+
+Just like a factor tree, we have separated the common part from what remains.
+
+---
+
+**Example 2:** A GCF with a variable
+
+Factor $12x^3 - 3x^2$.
+
+This time, each term has both a numerical factor and a variable factor in common.
+
+Break each term into its pieces:
+
+* $12x^3 = 3 \cdot 2 \cdot 2 \cdot x \cdot x \cdot x$
+* $3x^2 = 3 \cdot x \cdot x$
+
+The shared part is $3x$, so that becomes the GCF:
+
+$$
+\begin{align*}
+12x^3 - 3x^2 &= 3x(4x^2 - 1)
+\end{align*}
+$$
+
+Pulling out the GCF keeps the structure organized and prepares the expression for more factoring later.
+
+:::{.you-try title="Factor $15y^3 - 5y$."}
+$$
+15y^3 - 5y = 5y(3y^2 - 1)
+$$
+
+:::
+
+---
+
+**Example 3:** A negative leading term
+
+Factor $-x^2 - 4x - 3$.
+
+When the first term is negative, it is usually easiest to take out $-1$ first. This keeps the inside positive and easier to work with:
+
+$$
+-x^2 - 4x - 3 = -1(x^2 + 4x + 3)
+$$
+
+Now the polynomial is written as a product, and the trinomial inside has a standard form we can factor later in this lesson.
+
+:::{.you-try title="Factor $-18xy^2 + 27x^2y$."}
+
+The GCF for $-18xy^2 + 27x^2y$ is $-9xy$ (the leading coefficient is negative) and so:
+
+$$
+-18xy^2 + 27x^2y = -9xy(2y - 3x)
+$$
+
+:::
+
+---
+
+We have now learned the important first step in factoring polynomials: take out a GCF. But sometimes more has to be done. In the next section we will see how area models can help us factor polynomials further.
+
+---
+
+### 5.4.2 – Area Models and Basic Trinomials
+
+Before we learn how to factor trinomials, it helps to understand how they are created when we multiply two binomials.  
+An area model organizes the multiplication so we can clearly see where each term comes from.
+
+#### **A closer look at multiplying binomials**
+
+Consider the product
+
+$$
+(x + 3)(x + 2).
+$$
+
+An area model shows how each part multiplies:
+
+:::{.areabox}
+|     | $x$                   | $2$                   |
+| --- | --------------------- | --------------------- |
+| $x$ | $x^2$                 | $\textcolor{red}{2x}$ |
+| $3$ | $\textcolor{red}{3x}$ | $6$                   |
+:::
+
+Combine the diagonal terms:
+
+$$
+x^2 + \textcolor{red}{2x} + \textcolor{red}{3x} + 6
+= x^2 + \textcolor{red}{5x} + 6
+$$
+
+This reveals the pattern we will use when factoring:
+
+* The top-left box comes from multiplying the first terms  
+* The bottom-right box comes from multiplying the last terms  
+* The diagonal boxes combine to form the middle term  
+
+Factoring works by reversing this structure.
+
+---
+
+#### **Using the area model to factor**
+
+To factor a trinomial like
+
+$$
+x^2 + 5x + 6,
+$$
+
+we begin by placing the first and last terms where they belong:
+
+:::{.areabox}
+|     | ?                      | ?                    |
+| --- | ---------------------- | -------------------- |
+| ?   | $\textcolor{red}{x^2}$ | ?                    |
+| ?   | ?                      | $\textcolor{red}{6}$ |
+:::
+
+The $x^2$ term can only come from $x \cdot x$, so we fill those in:
+
+:::{.areabox}
+|                      | $\textcolor{red}{x}$ | ?   |
+| -------------------- | -------------------- | --- |
+| $\textcolor{red}{x}$ | $x^2$                | ?   |
+| ?                    | ?                    | $6$ |
+:::
+
+To determine the missing diagonal terms, notice that their **coefficients must multiply to $6$** (the constant term) and **their sum must be $5$** (the middle coefficient).
+
+So we list the factor pairs of $6$ and choose the pair whose sum is $5$.
+
+| Factors          | Factor Sum |
+| ---------------- | ---------- |
+| $1 \times 6$     | $1 + 6 = 7$        |
+| $2 \times 3$     | $2 + 3 = 5$ ✓      |
+
+Split the middle term using the factor pair we found:
+
+:::{.areabox}
+|     | $x$                   | ?                     |
+| --- | --------------------- | --------------------- |
+| $x$ | $x^2$                 | $\textcolor{red}{3x}$ |
+| ?   | $\textcolor{red}{2x}$ | $6$                   |
+:::
+
+Now the remaining entries fall into place:
+
+:::{.areabox}
+|                      | $x$   | $\textcolor{red}{3}$ |
+| -------------------- | ----- | -------------------- |
+| $x$                  | $x^2$ | $3x$                 |
+| $\textcolor{red}{2}$ | $2x$  | $6$                  |
+:::
+
+This gives us,
+
+$$
+x^2 + 5x + 6 = (x + 3)(x + 2)
+$$
+
+---
+
+**Example 4:** A positive constant and positive middle term  
+
+Factor $x^2 + 11x + 24$.
+
+We start by filling out what we know.
+
+:::{.areabox}
+|       | $x$   | ?     |
+| ----- | ----- | ----- |
+| $x$   | $x^2$ | ?     |
+| ?     | ?     | $24$  |
+:::
+
+Now we look for factor pairs of $24$ that add up to $11$:
+
+| Factors | Sum |
+| ------- | ---- |
+| $1 \times 24$ | $25$ |
+| $2 \times 12$ | $14$ |
+| $3 \times 8$ | $11$ ✓ |
+| $4 \times 6$ | $10$ |
+
+We use what we found to complete the area model.
+
+:::{.areabox}
+|       | $x$   | $8$  |
+| ----- | ----- | ---- |
+| $x$   | $x^2$ | $8x$ |
+| $3$   | $3x$  | $24$ |
+:::
+
+So,
+
+$$
+x^2 + 11x + 24 = (x + 3)(x + 8)
+$$
+
+:::{.you-try title="Factor $x^2 + 4x + 4$"}
+$$
+x^2 + 4x + 4 = (x + 2)(x + 2)
+$$
+:::
+
+---
+
+**Example 5:** A negative constant with a negative middle term  
+
+Factor $x^2 - 7x - 30$.
+
+Fill in what we know.
+
+:::{.areabox}
+|     | $x$   |   ?  |
+| --: | ----- | ------ |
+| $x$ | $x^2$ |   ?  |
+| ?   | ?     | $-30$  |
+:::
+
+The last term is negative, so one factor is positive and one negative.  
+The middle term is negative, so the larger factor must be negative. We just need to find which factor pair add up to $-7$.
+
+| Factors | Sum |
+| ------- | ---- |
+| $1 \times -30$ | $-29$ |
+| $2 \times -15$ | $-13$ |
+| $3 \times -10$ | $-7$ ✓ |
+
+Now we can complete the area model.
+
+:::{.areabox}
+|     | $x$   | $-10$ |
+| --: | ----- | ------ |
+| $x$ | $x^2$ | $-10x$ |
+| $3$ | $3x$  | $-30$  |
+:::
+
+Thus,
+
+$$
+x^2 - 7x - 30 = (x + 3)(x - 10)
+$$
+
+---
+
+**Example 6:** A negative constant with a positive middle term  
+
+Factor $x^2 + 2x - 15$.
+
+:::{.areabox}
+|        | $x$    | ?      |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  |    ?   |
+|  ?     |    ?   | $-15$  |
+:::
+
+Since the last term is negative, one factor must be positive and one negative.  
+The middle term is positive, so the larger factor is positive.
+
+| Factors | Sum |
+| ------- | ---- |
+| $-1 \times 15$ | $14$ |
+| $-3 \times 5$  | $2$ ✓ |
+
+:::{.areabox}
+|        | $x$    | $-3$   |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  | $-3x$  |
+| $5$    | $5x$   | $-15$  |
+:::
+
+Thus,
+
+$$
+x^2 + 2x - 15 = (x + 5)(x - 3)
+$$
+
+:::{.you-try title="Factor $a^2 - 16$."}
+
+Since there is no middle term, it must be zero. We can rewrite this as:
+
+$$
+a^2 + 0a - 16
+$$
+
+So we are looking for numbers whose product is $-16$ and whose sum is $0$. The only pair that works is $-4$ and $4$.
+
+:::{.areabox}
+|        | $a$    | $-4$   |
+| -----: | ------ | ------ |
+| $a$    | $a^2$  | $-4a$  |
+| $4$    | $4a$   | $-16$  |
+:::
+
+So,
+
+$$
+a^2 - 16 = (a + 4)(a - 4)
+$$
+
+We will see in the next section that this is a special form called a difference of squares.
+
+:::
+
+---
+
+**Example 7:** A positive constant with a negative middle term  
+
+Factor $x^2 - 10x + 16$
+
+Fill in what we know.
+
+:::{.areabox}
+|        | $x$    | ?      |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  | ?      |
+| ?      | ?      | $16$   |
+:::
+
+The last term is positive, so both factors have the same sign.  
+The middle term is negative, so both should be negative.
+
+| Factors | Sum |
+| ------- | ---- |
+| $-1 \times -16$ | $-17$ |
+| $-2 \times -8$  | $-10$ ✓ |
+| $-4 \times -4$  | $-8$ |
+
+Now complete the area model.
+
+:::{.areabox}
+|        | $x$    | $-2$   |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  | $-2x$  |
+| $-8$   | $-8x$  | $16$   |
+:::
+
+Thus,
+
+$$
+x^2 - 10x + 16 = (x - 8)(x - 2)
+$$
+
+---
+
+:::{.note title="Choosing signs when factoring"}
+
+For a trinomial $x^2 + bx + c$:
+
+* If $c$ is positive, both factors have the same sign  
+  – If $b$ is positive → both positive  
+  – If $b$ is negative → both negative  
+
+* If $c$ is negative, the factors have opposite signs  
+  – If $b$ is positive → the larger factor is positive  
+  – If $b$ is negative → the larger factor is negative  
+
+These patterns help you choose the correct factors quickly.
+:::
+
+### 5.4.3 – Mixed Expressions (GCF and Area Model)
+
+Sometimes a polynomial needs more than one step to be completely factored.  
+If every term has a common factor, we take out the **GCF first**, then use the **area model** to factor the remaining trinomial.
+
+Taking out the GCF keeps the trinomial in its cleanest form and makes the area model easier to use.
+
+---
+
+**Example 8:** GCF first, then area model
+
+Factor $4x^2 + 20x + 24$.
+
+Start by taking out the GCF:
+
+$$
+\text{GCF}(4x^2, 20x, 24) = 4
+$$
+
+$$
+4x^2 + 20x + 24 = 4(x^2 + 5x + 6)
+$$
+
+Now factor the trinomial inside the parentheses.
+
+We need coefficients that multiply to $6$ and add to $5$:
+
+| Factors | Sum |
+| ------- | ---- |
+| $1 \times 6$ | $7$ |
+| $2 \times 3$ | $5$ ✓ |
+
+Fill the diagonal entries:
+
+:::{.areabox}
+|     | $x$   | $3$   |
+| --- | ----- | ----- |
+| $x$ | $x^2$ | $3x$  |
+| $2$ | $2x$  | $6$   |
+:::
+
+So,
+
+$$
+x^2 + 5x + 6 = (x + 2)(x + 3)
+$$
+
+Final answer:
+
+$$
+4x^2 + 20x + 24 = 4(x + 2)(x + 3)
+$$
+
+:::{.gotcha title="Put it back!"}
+If you factor out a GCF, don't forget to include it in your answer!
+:::
+
+---
+
+**Example 9:** GCF fixes a negative leading coefficient
+
+Factor $-15x^2 + 45x - 30$.
+
+Take out the negative GCF:
+
+$$
+\text{GCF}(-15x^2, 45x, -30) = -15
+$$
+
+$$
+-15x^2 + 45x - 30 = -15(x^2 - 3x + 2)
+$$
+
+Now factor $x^2 - 3x + 2$.
+
+We need factors of $2$ that add to $-3$:
+
+| Factors | Sum |
+| ------- | ---- |
+| $-1 \times -2$ | $-3$ ✓ |
+
+:::{.areabox}
+|        | $x$    | $-1$   |
+| ------ | ------- | ------- |
+| $x$    | $x^2$   | $-1x$  |
+| $-2$   | $-2x$   | $2$    |
+:::
+
+Thus,
+
+$$
+x^2 - 3x + 2 = (x - 1)(x - 2)
+$$
+
+Final answer:
+
+$$
+-15x^2 + 45x - 30 = -15(x - 1)(x - 2)
+$$
+
+---
+
+**Example 10:** Polynomial written out of order
+
+Factor $-45x^2 - 5x^3 - 70x$.
+
+Rewrite in standard form:
+
+$$
+-5x^3 - 45x^2 - 70x
+$$
+
+Take out the GCF:
+
+$$
+\text{GCF}(-5x^3, -45x^2, -70x) = -5x
+$$
+
+So,
+
+$$
+-5x^3 - 45x^2 - 70x = -5x(x^2 + 9x + 14)
+$$
+
+Now to factor the trinomial. We need factors of $14$ that add to $9$:
+
+| Factors | Sum |
+| ------- | ---- |
+| $1 \times 14$ | $15$ |
+| $2 \times 7$  | $9$ ✓ |
+
+:::{.areabox}
+|        | $x$    | $7$   |
+| ------ | ------ | ------ |
+| $x$    | $x^2$  | $7x$  |
+| $2$    | $2x$   | $14$  |
+:::
+
+Thus,
+
+$$
+x^2 + 9x + 14 = (x + 2)(x + 7)
+$$
+
+Final answer:
+
+$$
+-5x^3 - 45x^2 - 70x = -5x(x + 2)(x + 7)
+$$
+
+:::{.you-try title="Factor $-9b^3 + 9b^2 + 18b$."}
+
+Start by taking out a GCF $-9b$.
+
+$$
+-9b^3 + 9b^2 + 18b = -9b(b^2 - b - 2)
+$$
+
+Now factor the trinomial.
+
+:::{.areabox}
+|        | $b$     | $1$      |
+| ------ | ---------- | ---------- |
+| $b$    | $b^2$    | $b$      |
+| $-2$   | $-2b$      | $-2$      |
+:::
+
+So,
+
+$$
+-9b^3 + 9b^2 + 18b = -9b(b-2)(b+1)
+$$
+
+:::
+
+:::{.remember title="Important Trinomial Factoring Steps"}
+1. Put the polynomial in standard form  
+2. Factor out a GCF if there is one  
+3. If the first term is negative, include a negative sign with the GCF  
+4. Use the area model to factor the trinomial  
+:::
+
+{{< practice >}}
+
+**Factoring out a GCF**  
+Factor each polynomial by taking out a GCF.
+
+1. $12p + 18$
+
+2. $7m - 21$
+
+3. $16r^2 + 24r$
+
+4. $9k^3 - 6k^2$
+
+5. $-8t^2 + 12t$
+
+6. $14y^3 + 21y^2 + 7y$
+
+7. $20a^2b - 15ab$
+
+8. $-27c^4 + 18c^3$
+
+9. $42uv^2 - 14u^2v$
+
+10. $-30x^3y + 45x^2y^2 - 15xy$
+
+---
+
+**Factoring Trinomials**  
+Use an area model to factor each trinomial.
+
+11. $p^2 + 8p + 15$
+
+12. $m^2 - 6m - 16$
+
+13. $r^2 + r - 20$
+
+14. $k^2 - 9k + 20$
+
+15. $t^2 + 12t + 35$
+
+16. $a^2 - 5a + 6$
+
+17. $y^2 + 2y - 48$
+
+18. $b^2 - 11b + 18$
+
+19. $-42 + s + s^2$
+
+20. $z - 30 + z^2$
+
+---
+
+**Mixed Practice**  
+Factor each polynomial completely.
+
+21. $6p^2 + 9p$
+
+22. $-4m^2 - 12m$
+
+23. $15r^2 + 5r - 20$
+
+24. $12k^2 - 3k - 15$
+
+25. $-18t^2 + 24t - 6$
+
+26. $21y + 14y^2 + 7y^3$
+
+27. $-10a^2 + 35a - 25$
+
+28. $8c^2 + 2c - 3$
+
+29. $5x - 15x^2 + 10$
+
+30. $-9n^2 - 6 - 15n$
+
+---
+
+**Challenge Problems**  
+Factor each expression completely.
+
+31. $4a^2b - 9b^3$
+
+32. $k^4 - 10k^2 + 9$
+
+
+:::{.answers}
+
+1. $6(2p + 3)$
+
+2. $7(m - 3)$
+
+3. $8r(2r + 3)$
+
+4. $3k^2(3k - 2)$
+
+5. $-4t(2t - 3)$
+
+6. $7y(2y + 1)(y + 1)$
+
+7. $5ab(4a - 3)$
+
+8. $-9c^3(3c - 2)$
+
+9. $14uv(3v - u)$
+
+10. $-15xy(2x^2 - 3xy + 1)$
+
+11. $(p + 3)(p + 5)$
+
+12. $(m - 8)(m + 2)$
+
+13. $(r + 5)(r - 4)$
+
+14. $(k - 5)(k - 4)$
+
+15. $(t + 5)(t + 7)$
+
+16. $(a - 2)(a - 3)$
+
+17. $(y + 8)(y - 6)$
+
+18. $(b - 2)(b - 9)$
+
+19. $(s + 7)(s - 6)$
+
+20. $(z + 6)(z - 5)$
+
+21. $3p(2p + 3)$
+
+22. $-4m(m + 3)$
+
+23. $5(3r + 4)(r - 1)$
+
+24. $3(4k - 5)(k + 1)$
+
+25. $-6(3t - 1)(t - 1)$
+
+26. $7y(y^2 + 2y + 3)$
+
+27. $-5(2a - 5)(a - 1)$
+
+28. $(2c - 1)(4c + 3)$
+
+29. $-5(3x + 2)(x - 1)$
+
+30. $-3(3n + 2)(n + 1)$
+
+:::

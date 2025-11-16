@@ -1,4 +1,4 @@
-# 4.2 – Understanding Slope {.unnumbered}
+# 4.2 - Understanding Slope {.unnumbered}
 
 In the previous lesson, you graphed straight lines by making a table of $x$ and $y$ values.
 Different equations made different graphs, but they were all **linear** — their points lined up perfectly.
@@ -29,7 +29,7 @@ That rate of change is called the **slope** — one of the most important ideas 
 
 {{< learn >}}
 
-### 4.2.1 – What Is Slope?
+### 4.2.1 - What Is Slope?
 
 ![](/images/Unit_4/Lesson_2/stairs_xkcd.png){width=350px fig-align="center"}
 
@@ -79,7 +79,7 @@ In the next section, we’ll place these same stairways on a coordinate grid so 
 
 :::
 
-### 4.2.2 – Finding Slope from a Graph
+### 4.2.2 - Finding Slope from a Graph
 
 Now that you’ve seen slope as the amount of change in $y$ compared to change in $x$, let’s put numbers to that idea.
 
@@ -92,9 +92,9 @@ In each panel, count how far the person moves *up or down* (Δy) and *right* (Δ
 | Panel |  Δy |  Δx | Slope $m=\tfrac{Δy}{Δx}$ |
 | :---: | :-: | :-: | :----------------------: |
 |   A   |  +2 |  3  |      $\tfrac{2}{3}$      |
-|   B   |  –3 |  3  |            –1            |
+|   B   |  -3 |  3  |            -1            |
 |   C   |  +3 |  3  |             1            |
-|   D   |  –2 |  3  |      –$\tfrac{2}{3}$     |
+|   D   |  -2 |  3  |      -$\tfrac{2}{3}$     |
 
 These numbers match what your eyes already noticed in the stairways: 
 
@@ -105,7 +105,7 @@ These numbers match what your eyes already noticed in the stairways:
 
 ---
 
-**Example 1:**
+**Example 1:** Finding slope from a graph
 
 Let's find the slope of this line like we did with the stairs.
 
@@ -147,7 +147,7 @@ In those cases, we use a formula to calculate slope exactly.
 
 ---
 
-### 4.2.3 – Finding Slope Using the Slope Formula
+### 4.2.3 - Finding Slope Using the Slope Formula
 
 Whether we count boxes or use numbers directly, the idea is the same — slope measures how much $y$ changes for every change in $x$.
 When counting is impractical, we can calculate slope using a simple formula.
@@ -158,7 +158,7 @@ $$
 m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 $$
 
-**Example 2:**
+**Example 2:** Using the slope formula
 
 Compute the slope of the line between the points $(-2, 8)$ and $(10, 6)$.
 
@@ -175,7 +175,7 @@ $$
 
 ---
 
-**Example 3:**
+**Example 3:** More practice with the slope formula
 
 Compute the slope of the line between the points $(3, -2)$ and $(5, -5)$.
 
@@ -190,7 +190,7 @@ $$
 
 ---
 
-**Example 4:**
+**Example 4:** Flat line
 
 Compute the slope of the line containing $(4, 3)$ and $(2, 3)$.
 
@@ -212,7 +212,7 @@ It means the line is **horizontal**. If $y$-values don't change as $x$ changes, 
 
 ---
 
-**Example 5:**
+**Example 5:** Undefined slopes
 
 Find the slope of the line containing $(5, -3)$ and $(5, 6)$.
 
@@ -289,13 +289,13 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 6. From $(0,0)$ to $(3,2)$
 
-7. From $(–2,1)$ to $(4,4)$
+7. From $(-2,1)$ to $(4,4)$
 
 8. From $(1,5)$ to $(4,2)$
 
-9. From $(–3,–3)$ to $(2,–3)$
+9. From $(-3,-3)$ to $(2,-3)$
 
-10. From $(4,–1)$ to $(4,3)$
+10. From $(4,-1)$ to $(4,3)$
 
 ---
 
@@ -303,17 +303,17 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 11. $(1,3)$ and $(4,6)$
 
-12. $(–2,5)$ and $(2,–1)$
+12. $(-2,5)$ and $(2,-1)$
 
-13. $(0,0)$ and $(–3,9)$
+13. $(0,0)$ and $(-3,9)$
 
-14. $(2,–3)$ and $(5,–3)$
+14. $(2,-3)$ and $(5,-3)$
 
-15. $(–4,2)$ and $(–4,–5)$
+15. $(-4,2)$ and $(-4,-5)$
 
 16. $(1,\tfrac{1}{2})$ and $(3,\tfrac{5}{2})$
 
-17. $(–6,9)$ and $(3,–6)$
+17. $(-6,9)$ and $(3,-6)$
 
 ---
 

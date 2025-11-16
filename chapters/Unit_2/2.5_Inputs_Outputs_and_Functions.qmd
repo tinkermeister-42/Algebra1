@@ -1,4 +1,4 @@
-# 2.5 – Inputs and Outputs of Functions {.unnumbered}
+# 2.5 - Inputs and Outputs of Functions {.unnumbered}
 
 So far in this unit, you’ve learned how to evaluate expressions by plugging in values for variables. You’ve also simplified expressions using distribution and by combining like terms.
 
@@ -43,7 +43,7 @@ What could the rule be? How could we name it so others know exactly what it does
 
 {{< learn >}}
 
-### 2.5.1 – What Is Function Notation?
+### 2.5.1 - What Is Function Notation?
 
 Imagine our “mystery machine” from the introduction.
 
@@ -73,9 +73,9 @@ It takes the input $y$, doubles it, and subtracts 2.
 
 ---
 
-### 2.5.2 – Is It a Function? (Using Tables)
+### 2.5.2 - Is It a Function? (Using Tables)
 
-A **relation** is any set of input–output pairs. A **function** is a special kind of relation: **each input has exactly one output**.
+A **relation** is any set of input-output pairs. A **function** is a special kind of relation: **each input has exactly one output**.
 
 We can check this quickly with an input/output table.
 
@@ -93,7 +93,7 @@ We can check this quickly with an input/output table.
 4. **Not enough information?**
    A small table doesn’t prove something *is* a function for all inputs, but it **can** show when it is **not** a function.
 
-**Example A — Function**
+**Example 1:** A function
 
 | Input | Output |
 | ----: | -----: |
@@ -104,7 +104,7 @@ We can check this quickly with an input/output table.
 
 The input 2 shows up twice, but with the **same** output (7). This table is consistent with a function.
 
-**Example B — Not a Function**
+**Example 2:** Not a function
 
 | Input | Output |
 | ----: | -----: |
@@ -154,7 +154,7 @@ It’s okay if **different inputs** give the **same output**. For example, two d
 
 ---
 
-### 2.5.3 – Evaluating Functions
+### 2.5.3 - Evaluating Functions
 
 Function notation is a handy way to describe expression evaluation.
 
@@ -177,7 +177,7 @@ f(\textcolor{red}{5}) &= 2(\textcolor{red}{5}) + 3 \\
 \end{align*}
 $$
 
-**Example 1:**
+**Example 3:** Evaluating functions
 
 Let $g(x) = 3(x+4)$. Find $g(2)$.
 
@@ -189,7 +189,7 @@ g(\textcolor{red}{2}) &= 3(\textcolor{red}{2}+4) \\
 \end{align*}
 $$
 
-**Example 2:**
+**Example 4:** Evaluating functions with negative numbers
 
 Let $h(x) = -2(3x-1)+7$. Find $h(-2)$.
 
@@ -212,11 +212,11 @@ $f(2) = 9 - 3(2) = 9 - 6 = 3$
 
 ---
 
-### 2.5.4 – Simplifying Function Rules
+### 2.5.4 - Simplifying Function Rules
 
 Sometimes a rule is easier to use after you simplify it.
 
-**Example:**
+**Example 5:** Simplifying before evaluation
 
 $$
 p(x) = 4(x-2) + 3x
@@ -252,13 +252,13 @@ $q(x) = 5x+10$, so $q(3)=25$.
 
 ---
 
-### 2.5.5 – Function Evaluation in Real Life
+### 2.5.5 - Function Evaluation in Real Life
 
 Functions don’t just show up in math class—they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
 
 ---
 
-**Example 1: Cell Phone Data Plan**
+**Example 6:** Cellphone data plan
 
 A data plan charges a \$50 flat fee per month plus \$0.10 per Gb. How much will you pay if you use 80 Gb?
 
@@ -284,7 +284,7 @@ The total cost is **\$58**.
 
 ---
 
-**Example 2: Temperature Conversion (°C → °F)**
+**Example 7:** Temperature conversion (°C → °F)
 
 To convert from Celsius to Fahrenheit, use
 

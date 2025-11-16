@@ -1,4 +1,4 @@
-# 4.3 – The Equation of a Line {.unnumbered}
+# 4.3 - The Equation of a Line {.unnumbered}
 
 In the last lesson, you learned how to find and use the **slope** of a line.
 Now you’ll see how slope connects to a line’s **equation** — and how one special point called the **y-intercept** helps you write that equation quickly.
@@ -30,12 +30,12 @@ Once you know those, you can write an equation, make predictions, and see how th
 
 {{< learn >}}
 
-### 4.3.1 – Graphing a Line Using a Point and the Slope
+### 4.3.1 - Graphing a Line Using a Point and the Slope
 
 A line’s slope is **constant** — it never changes, no matter which points you use.
 That means if you know **one point** and the **slope**, you can find as many other points as you want.
 
-**Example 1 – Graph from a Point and Slope**
+**Example 1:** Graph from a point and slope
 
 Graph the line with slope $m = \tfrac{1}{3}$ passing through the point $(0, 1)$.
 
@@ -52,12 +52,12 @@ Starting at $(0, 1)$, move right 3 and up 1 to reach $(3, 2)$.
 
 ---
 
-### 4.3.2 – Discovering Intercepts
+### 4.3.2 - Discovering Intercepts
 
 Every line crosses the axes somewhere.
 Those crossing points are special because they’re easy to find — and they tell us a lot about the line.
 
-**Example 2 – Where Does It Cross?**
+**Example 2:** Where does it cross?
 
 Graph $y = \tfrac{3}{4}x - 3$.
 Then find where it crosses each axis.
@@ -89,12 +89,12 @@ Those are called **intercepts**.
 
 :::
 
-### 4.3.3 – Finding Intercepts Algebraically
+### 4.3.3 - Finding Intercepts Algebraically
 
 You don’t always need a graph.
 Because we know what the intercepts look like, we can **set one variable to 0** and solve for the other.
 
-**Example 3 – Find the Intercepts**
+**Example 3:** Find the intercepts
 
 Find the x- and y-intercepts of $y = x - 5$.
 
@@ -146,7 +146,7 @@ To find intercepts:
 
 ---
 
-### 4.3.4 – The Equation of a Line
+### 4.3.4 - The Equation of a Line
 
 Now we can tie everything together.
 
@@ -165,7 +165,7 @@ This is called the {{< glink "slope-intercept form" >}} of a line.
 
 ---
 
-**Example 4 – Graph from an Equation**
+**Example 4:** Graph from an equation
 
 Graph $y = \tfrac{2}{3}x - 2$.
 
@@ -176,7 +176,7 @@ Then use the slope $m = \tfrac{2}{3}$ → up 2, right 3.
 
 ---
 
-**Example 5 – Integer Slope**
+**Example 5:**  Integer slope
 
 Graph $y = -4x + 3$.
 

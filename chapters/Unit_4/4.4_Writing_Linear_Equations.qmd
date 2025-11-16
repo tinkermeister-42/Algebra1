@@ -1,4 +1,4 @@
-# 4.4 – Writing Linear Equations {.unnumbered}
+# 4.4 - Writing Linear Equations {.unnumbered}
 
 In the last lesson, you learned how slope and intercept describe a line.
 Now you’ll learn how to **write the equation** for a line when you’re given different kinds of information.
@@ -45,7 +45,7 @@ The key is to recognize what you already know — the **slope**, a **point**, or
 
 {{< learn >}}
 
-### 4.4.1 – Slope and Intercept Are Known
+### 4.4.1 - Slope and Intercept Are Known
 
 This is the easiest kind of problem because you already know both parts of the rule — the slope ($m$) and the y-intercept ($b$).
 
@@ -57,7 +57,7 @@ $$
 
 ---
 
-**Example 1:**
+**Example 1:** A given slope and intercept
 
 Find the equation for the line with:
 
@@ -72,7 +72,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 2:** A fractional slope
 
 Find the equation for a line with:
 
@@ -91,7 +91,7 @@ $$
 
 :::
 
-### 4.4.2 – From a Graph
+### 4.4.2 - From a Graph
 
 When you can **see** a line, you can figure out its equation by paying attention to two simple things:
 how steep it is (the **slope**) and where it crosses the y-axis (the **intercept**).
@@ -112,7 +112,7 @@ So, if you can find $m$ and $b$ from the graph, you can write its equation immed
 
 ---
 
-**Example 3:**
+**Example 3:** Equation from a graph
 
 Find the equation for the line line pictured below:
 
@@ -134,7 +134,7 @@ $$
 
 ---
 
-**Example 4:**
+**Example 4:** A negative slope
 
 Find the equation of the line from the graph.
 
@@ -164,7 +164,7 @@ $$
 
 ---
 
-### 4.4.3 – Slope and a Point Are Known
+### 4.4.3 - Slope and a Point Are Known
 
 Sometimes you know the **slope** of a line and just **one point** it passes through — but not the y-intercept. That’s okay! You can still find the full equation by plugging the point into the rule for a line and solving for $b$.
 
@@ -186,7 +186,7 @@ Use those values to find $b$, then substitute it back into the equation.
 
 ---
 
-**Example 5:**
+**Example 5:** Finding the intercept
 
 Find the equation of a line with slope $m = 3$ that passes through the point $(2, 5)$.
 
@@ -208,7 +208,7 @@ $$
 
 ---
 
-**Example 6:**
+**Example 6:** Another missing intercept
 
 Find the equation of a line with slope $m = \textcolor{blue}{-2}$ that passes through the point $(\textcolor{green}{1}, \textcolor{red}{4})$.
 
@@ -265,7 +265,7 @@ $$
 
 ---
 
-### 4.4.4 – Two Points Are Known
+### 4.4.4 - Two Points Are Known
 
 Sometimes you don’t know the slope **or** the intercept — just **two points** the line passes through. That’s all you need! You can find the slope from the two points, then use what you learned in the last section to find $b$ and write the full equation.
 
@@ -290,7 +290,7 @@ But this time, we’ll start by finding $m$ using the slope formula.
 
 ---
 
-**Example 7:**
+**Example 7:** Finding the slope and intercept from points
 
 Find the equation of the line passing through $(1, 2)$ and $(4, 5)$.
 
@@ -326,7 +326,7 @@ Try plugging in the second point to check your answer!
 
 ---
 
-**Example 8:**
+**Example 8:** Another case of a missing slope and intercept
 
 Find the equation of the line passing through $(-2, 3)$ and $(2, -1)$.
 
@@ -362,7 +362,7 @@ $$
 
 ---
 
-### 4.4.5 – Parallel and Perpendicular Lines (Optional)
+### 4.4.5 - Parallel and Perpendicular Lines (Optional)
 
 Sometimes you’re asked to write the equation of a line that’s **parallel** or **perpendicular** to another line and passes through a given point.
 The process is nearly the same as before — the only difference is how you find the slope.
@@ -384,7 +384,7 @@ $$m_\perp=-\tfrac{1}{m}$$
 
 ---
 
-**Example 9 – Parallel Lines**
+**Example 9:** Parallel lines
 
 Find the equation of the line parallel to $y = 3x - 4$ that passes through $(2, 1)$.
 
@@ -413,7 +413,7 @@ Here is a graph showing the two lines:
 
 ---
 
-**Example 10 – Perpendicular Lines**
+**Example 10:** Perpendicular lines
 
 Find the equation of the line perpendicular to $y = -\tfrac{1}{2}x + 3$ that passes through $(4, 2)$.
 

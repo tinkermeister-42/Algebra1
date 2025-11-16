@@ -74,7 +74,7 @@ $$
 
 ---
 
-**Example 1:**
+**Example 1:** A simple product
 
 Simplify $r^4 \cdot r^3$
 
@@ -120,7 +120,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 2:** A simple quotient
 
 Simplify $\dfrac{y^8}{y^5}$
 
@@ -171,7 +171,7 @@ $$
 
 ---
 
-**Example 3:**
+**Example 3:** Powers of powers
 
 Simplify $(m^2)^5$
 
@@ -211,7 +211,7 @@ $$
 
 ---
 
-**Example 4:**
+**Example 4:** Distributing exponents
 
 Simplify $(2x)^4$
 
@@ -250,7 +250,7 @@ $$
 
 ---
 
-**Example 5:**
+**Example 5:** Distributing exponents of a fraction
 
 Simplify $\left(\dfrac{x}{3}\right)^2$
 
@@ -278,7 +278,7 @@ $$
 
 ---
 
-**Example 6:**
+**Example 6:** The power of zero
 
 Simplify $(5y)^0$
 
@@ -350,7 +350,7 @@ $$
 
 ---
 
-**Example 7:**
+**Example 7:** Negative exponents
 
 Simplify $\dfrac{x^{-4}y}{x^2y^{-2}}$
 
@@ -389,7 +389,7 @@ $$
 
 ---
 
-**Example 8:**
+**Example 8:** Exponents and roots
 
 Simplify $8^{\tfrac{2}{3}}$
 
@@ -440,7 +440,7 @@ A helpful routine:
 
 ---
 
-**Example 9:**
+**Example 9:** Multiple rules
 
 Simplify $\dfrac{(2x^3)^2}{x^5}$
 
@@ -457,7 +457,7 @@ $$
 
 ---
 
-**Example 10:**
+**Example 10:** Getting tricky
 
 Simplify $(3a^2b^{-3})^{-2}$
 
@@ -476,7 +476,7 @@ $$
 
 ---
 
-**Example 11:**
+**Example 11:** A mess of exponents
 
 Simplify $\dfrac{(x^{-2}y^4)^3}{x^3y^{-2}}$
 

@@ -1,4 +1,4 @@
-# 4.5 – Systems of Equations {.unnumbered}
+# 4.5 - Systems of Equations {.unnumbered}
 
 So far, you’ve graphed **one line at a time** — each showing a single rule or relationship.
 But life isn’t always that simple.
@@ -37,7 +37,7 @@ That’s the idea behind a **system of equations**.
 
 {{< learn >}}
 
-### 4.5.1 – Graphing Systems of Equations and Interpreting Their Solutions
+### 4.5.1 - Graphing Systems of Equations and Interpreting Their Solutions
 
 A {{< glink "system of equations" >}} is two or more equations that share the same variables.
 
@@ -47,7 +47,7 @@ In the following examples, we will see some systems of equations and learn how t
 
 ---
 
-**Example 1:** 
+**Example 1:** Finding the intersection
 
 Here is a simple system of two equations. Let's find the solution to the system by graphing.
 
@@ -80,7 +80,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 2:** Where do they cross?
 
 Find the solution to the system of equations by graphing.
 
@@ -99,7 +99,7 @@ The solution to the system is $(2, 4)$. This is the one point where both equatio
 
 ---
 
-**Example 3:**
+**Example 3:** Gym memberships
 
 A local gym offers two membership plans:
 
@@ -126,7 +126,7 @@ The {{< glink intersection >}} shows exactly where the two plans balance.
 
 ---
 
-**Example 4:**
+**Example 4:** Plumbers and electricians
 
 A plumber charges a flat fee of \$40 plus \$60 per hour.
 An electrician charges \$100 plus \$50 per hour.
@@ -181,7 +181,7 @@ Before that, the second plan is cheaper; after that, the first plan is cheaper.
 
 ---
 
-### 4.5.2 – Other Solving Methods (Optional)
+### 4.5.2 - Other Solving Methods (Optional)
 
 Graphing is a great way to see where two lines meet, but sometimes the intersection doesn’t fall on clean grid points.
 Or maybe the lines are difficult to draw accurately.
@@ -189,8 +189,8 @@ In those cases, we can solve the system using **algebra** instead of a graph.
 
 There are two main algebraic methods:
 
-* **Substitution** – replace one variable with an equivalent expression
-* **Elimination** – add or subtract equations so one variable cancels out
+* **Substitution** - replace one variable with an equivalent expression
+* **Elimination** - add or subtract equations so one variable cancels out
 
 Let’s look at each one.
 
@@ -210,7 +210,7 @@ That turns a two-variable system into a single equation you already know how to 
 
 ---
 
-**Example 5:**
+**Example 5:** Substitute to solve
 
 Solve the system of equations by substitution.
 
@@ -247,7 +247,7 @@ $$
 
 ---
 
-**Example 6:**
+**Example 6:** Substitute to solve
 
 Solve the system of equations by substitution.
 $$
@@ -300,7 +300,7 @@ This method is especially convenient when both equations already have similar $x
 
 ---
 
-**Example 7:**
+**Example 7:** Eliminate it
 
 Solve the system of equations by elimination.
 $$
@@ -333,7 +333,7 @@ $$
 
 ---
 
-**Example 8:**
+**Example 8:** Another example of elimination
 
 Solve the system of equations by elimination.
 
@@ -373,7 +373,7 @@ $$
 In the previous two examples, one of the variables canceled out when combining the two equations. Sometimes you will have to **multiply one or both equations** by something for this to work.
 :::
 
-**Example 9:**
+**Example 9:** Multiplying first
 
 Solve the system of equations by elimination.
 $$
@@ -383,7 +383,7 @@ $$
 \end{cases}
 $$
 
-Neither variable will cancel right away, so we’ll make the $x$–coefficients match.
+Neither variable will cancel right away, so we’ll make the $x$-coefficients match.
 
 Multiply the first equation by **2** and the second by **−3**:
 

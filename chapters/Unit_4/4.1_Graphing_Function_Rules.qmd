@@ -1,8 +1,8 @@
-# 4.1 – Graphing Function Rules {.unnumbered}
+# 4.1 - Graphing Function Rules {.unnumbered}
 
 So far, you've worked with rules that take an input, do something to it, and give an output. You've written equations, evaluated expressions, and created tables that show how numbers are connected.
 
-In this lesson, we’ll take that same idea one step further. Instead of only listing input–output pairs, we’ll see them — each pair becomes a point you can plot. When those points come together, they reveal a picture of the rule itself.
+In this lesson, we’ll take that same idea one step further. Instead of only listing input-output pairs, we’ll see them — each pair becomes a point you can plot. When those points come together, they reveal a picture of the rule itself.
 
 It’s time to move from numbers to shapes — and start seeing how a function behaves.
 
@@ -38,7 +38,7 @@ It’s time to move from numbers to shapes — and start seeing how a function b
 
 {{< learn >}}
 
-### 4.1.1 – The Coordinate Plane
+### 4.1.1 - The Coordinate Plane
 
 Up to now, we’ve worked with **number lines** — simple one-dimensional ways to show where a number belongs. But equations often have **two variables**, like $x$ and $y$. To show how they’re related, we need a way to display **two numbers at once**.
 
@@ -54,7 +54,7 @@ Every **point** on the plane has an **ordered pair** of numbers called its **coo
 
 ![](/images/Unit_4/Lesson_1/CartesianCoordinatePlane.png){width="400px" fig-align="center" fig-cap="The coordinate plane with axes, origin, and quadrants labeled."}
 
-The axes divide the plane into **four quadrants**, labeled with Roman numerals I–IV, starting in the top-right and going counterclockwise.
+The axes divide the plane into **four quadrants**, labeled with Roman numerals I-IV, starting in the top-right and going counterclockwise.
 
 When you plot a point, **start at the origin**:
 
@@ -64,7 +64,7 @@ When you plot a point, **start at the origin**:
 
 ---
 
-**Example:**
+**Example 1:** Plotting points
 
 Plot the points $(4, 2), (-6, 4), (-4, -8)$ and $(8, -4)$.
 
@@ -93,13 +93,13 @@ Now that we know how to plot points, let’s see how a rule — like an equation
 
 ---
 
-### 4.1.2 – Function Rules and Tables of Values
+### 4.1.2 - Function Rules and Tables of Values
 
 In Unit 2, we learned how to find the **output** of a function for a given **input**.  
 Each input/output pair forms a point we can plot.  
 By connecting those points, we can see what the function looks like.
 
-**Example 1**
+**Example 2:** Graphing a function from a table
 
 Let $f(x) = 2x + 1$.
 
@@ -146,7 +146,7 @@ So the equation $f(x) = 2x + 1$ could also be written as $y = 2x + 1$.
 
 Let’s look at another function that behaves a little differently.
 
-**Example 2:**
+**Example 3:** Functions with fractional coefficients
 
 Let $h(x) = -\frac{2}{3}x - 3$.
 
@@ -187,18 +187,18 @@ For now, just notice that these kinds of rules always make points that line up p
 
 **Practice: Graphing Functions on the Coordinate Plane**
 
-**1.** Plot these points on a coordinate plane: $(1, 2)$, $(2, 4)$, $(3, 6)$.
+1. Plot these points on a coordinate plane: $(1, 2)$, $(2, 4)$, $(3, 6)$.
 What do you notice about the pattern?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
-**2.** Add one more point that continues the same pattern. Write its coordinates.
+2. Add one more point that continues the same pattern. Write its coordinates.
 
-**3.** Each point from Question 1 fits a rule. Find a simple equation that could describe it using $y$ and $x$.
+3. Each point from Question 1 fits a rule. Find a simple equation that could describe it using $y$ and $x$.
 
 ---
 
-**4.** Complete the table and graph the points.
+4. Complete the table and graph the points.
 
 | $x$ | $y = x + 2$ |
 | :-: | :---------: |
@@ -209,12 +209,12 @@ What do you notice about the pattern?
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 
-**5.** Graph the function $f(x) = x - 4$ for $x = 0, 2, 4, 6$. Where does it cross the y-axis?
+5. Graph the function $f(x) = x - 4$ for $x = 0, 2, 4, 6$. Where does it cross the y-axis?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 
-**6.** For $y = 2x$, make a table using $x = -2, -1, 0, 1, 2$.
+6. For $y = 2x$, make a table using $x = -2, -1, 0, 1, 2$.
 
 What happens to the outputs as $x$ increases?
 
@@ -227,25 +227,25 @@ What happens to the outputs as $x$ increases?
 |   2   |            |
 
 
-**7.** Graph $g(x) = 3x$ for $x = 0, 1, 2, 3$.
+7. Graph $g(x) = 3x$ for $x = 0, 1, 2, 3$.
 What do you notice about the spacing between the points?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 ---
 
-**8.** Evaluate and graph $f(x) = -2x$ for $x = -3, -2, -1, 0, 1, 2$.
+8. Evaluate and graph $f(x) = -2x$ for $x = -3, -2, -1, 0, 1, 2$.
 How does the line compare to $y = 2x$?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
-**9.** Graph $y = x - 3$ for $x = 0, 1, 2, 3, 4$.
+9. Graph $y = x - 3$ for $x = 0, 1, 2, 3, 4$.
 Which point lies on the y-axis?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 
-**10.** For $h(x) = \frac{1}{2}x + 1$, make a table for $x = 0, 2, 4, 6$.
+10. For $h(x) = \frac{1}{2}x + 1$, make a table for $x = 0, 2, 4, 6$.
 Plot and connect the points.
 
 |  $x$  |  $y = \frac{1}{2}x + 1$  |
@@ -259,19 +259,19 @@ Plot and connect the points.
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 
-**11.** Graph $y = -x + 2$ for $x = -2, 0, 2$.
+11. Graph $y = -x + 2$ for $x = -2, 0, 2$.
 What happens to the y-values as $x$ increases?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
 
 ---
 
-**12.** The functions $f(x) = 2x + 4$ and $g(x) = 2x - 2$ are both graphed on the same coordinate plane.
+12. The functions $f(x) = 2x + 4$ and $g(x) = 2x - 2$ are both graphed on the same coordinate plane.
 How are their lines alike, and how are they different?
 
 ![](/images/Unit_4/Lesson_1/Problem12.png){width=300 fig-align="center"}
 
-**13.** Graph $y = 3$ and $y = -2$ on the same grid.
+13. Graph $y = 3$ and $y = -2$ on the same grid.
 What kind of lines do they make?
 
 ![](/images/Unit_4/Lesson_1/Blank.png){width=300 fig-align="center"}
@@ -280,25 +280,25 @@ What kind of lines do they make?
 
 **Challenge Problems**
 
-**14.** Without graphing, explain how you could tell whether $y = 4x + 2$ and $y = 4x - 5$ would ever cross on the coordinate plane.
+14. Without graphing, explain how you could tell whether $y = 4x + 2$ and $y = 4x - 5$ would ever cross on the coordinate plane.
 Then check your prediction by graphing.
 
-**15.** A mystery function passes through the points $(0, 2)$ and $(2, 6)$.
+15. A mystery function passes through the points $(0, 2)$ and $(2, 6)$.
 Write a possible rule for the function and plot one more point that fits your rule.
 
 
 
 :::{.answers}
 
-**1.** 
+1. 
 
 ![](/images/Unit_4/Lesson_1/Answer1.png){width=300 fig-align="center"}
 
-**2.** varies
+2. varies
 
-**3.** $y = 2x$
+3. $y = 2x$
 
-**4.** 
+4. 
 
 | $x$ | $y = x + 2$ |
 | :-: | :---------: |
@@ -308,11 +308,11 @@ Write a possible rule for the function and plot one more point that fits your ru
 
 ![](/images/Unit_4/Lesson_1/Answer4.png){width=300 fig-align="center"}
 
-**5.**
+5.
 
 ![](/images/Unit_4/Lesson_1/Answer5.png){width=300 fig-align="center"}
 
-**6.** 
+6. 
 
 | $x$ | $y = 2x$    |
 | :-: | :---------: |
@@ -324,39 +324,39 @@ Write a possible rule for the function and plot one more point that fits your ru
 
 As $x$ increases by one, $y$ increases by 2.
 
-**7.** 
+7. 
 
 ![](/images/Unit_4/Lesson_1/Answer7.png){width=300 fig-align="center"}
 
 Every time x increases by one, y increases by 3.
 
-**8.**
+8.
 
 ![](/images/Unit_4/Lesson_1/Answer8.png){width=300 fig-align="center"}
 
-**9.** 
+9. 
 
 ![](/images/Unit_4/Lesson_1/Answer9.png){width=300 fig-align="center"}
 
 The point (0, -3) lies on the y-axis.
 
-**10.** 
+10. 
 
 ![](/images/Unit_4/Lesson_1/Answer10.png){width=300 fig-align="center"}
 
-**11.** 
+11. 
 
 ![](/images/Unit_4/Lesson_1/Answer11.png){width=300 fig-align="center"}
 
 The y-values get smaller as x gets larger.
 
-**12.** 
+12. 
 
 Both go up 2 for every 1 to the right. 
 
 $f(x)$ crosses the y-axes at 4 and the x-axis at -2, but $g(x)$ crosses at -2 and 1.
 
-**13.** 
+13. 
 
 ![](/images/Unit_4/Lesson_1/Answer13.png){width=300 fig-align="center"}
 

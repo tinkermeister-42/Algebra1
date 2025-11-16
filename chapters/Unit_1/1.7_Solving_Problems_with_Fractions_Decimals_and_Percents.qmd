@@ -1,4 +1,4 @@
-# 1.7 – Solving Problems With Fractions, Decimals & Percents {.unnumbered}
+# 1.7 - Solving Problems With Fractions, Decimals & Percents {.unnumbered}
 
 Now that you know how to multiply and divide fractions, you're ready to apply those skills to real-life problems.
 
@@ -28,7 +28,7 @@ Use mental math if you can!
 
 {{< learn >}}
 
-### 1.7.1 – What’s the Part, Whole, or Percent?
+### 1.7.1 - What’s the Part, Whole, or Percent?
 
 In many real-world problems, you’re given some information and need to find what’s missing. Maybe you know the total price and the discount, and you want to know how much money you saved. Or you know how many questions you got right on a quiz, and you want to figure out your percent score.
 
@@ -55,7 +55,7 @@ Convert the percent to a decimal first!
 
 ---
 
-**Example 1 – Finding the Part**
+**Example 1:** Finding the Part
 
 What is 15% of 80?
 
@@ -99,7 +99,7 @@ $$
 
 ---
 
-**Example 2 – Finding the Percent**
+**Example 2:** Finding the Percent
 
 Out of 50 students, 30 say they like soccer. **What percent is that?**
 
@@ -120,7 +120,7 @@ So only 4% of students get enough sleep!
 
 ---
 
-**Example 3 – Finding the Whole**
+**Example 3:**  Finding the Whole
 
 **25% of a number is 10. What is the number?**
 
@@ -165,9 +165,9 @@ $$
 
 ---
 
-### 1.7.2 – Real-Life Examples
+### 1.7.2 - Real-Life Examples
 
-#### Grades
+**Example 4:** Grades
 
 Your teacher hands you back your Unit 1 quiz. You got 19 out of 20 points! **What is your grade?**
 
@@ -188,7 +188,7 @@ John got an 80% which is a B.
 
 ---
 
-#### Sales & Discounts
+**Example 5:** Sales & Discounts
 
 A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. 
 
@@ -233,7 +233,7 @@ Swanhilda pays $105 for the dress. What a steal!
 
 ---
 
-#### Surveys & Data
+**Example 6:** Surveys & Data
 
 A {{<glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?
 

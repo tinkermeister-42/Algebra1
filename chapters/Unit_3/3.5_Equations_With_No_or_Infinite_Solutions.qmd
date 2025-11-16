@@ -1,4 +1,4 @@
-#  3.5 Equations With No or Infinite Solutions {.unnumbered}
+#  3.5 - Equations With No or Infinite Solutions {.unnumbered}
 
 So far, every equation we solved had exactly one solution. After simplifying and moving terms, we always ended with something like
 
@@ -45,7 +45,7 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 
 {{< learn >}}
 
-### 3.5.1 – Equations With No Solution
+### 3.5.1 - Equations With No Solution
 
 In the last lesson, when we moved variables to one side, we always ended up with a single answer like $x = 4$. But sometimes, something different happens. After simplifying, the variables cancel out and we’re left with a statement that is **false**.
 
@@ -53,7 +53,7 @@ When this happens, the equation has **no solution** — there is no value that w
 
 ---
 
-**Example 1:**
+**Example 1:** An equation with no solution
 
 Solve $3x + 5 = 3x - 2$.
 
@@ -69,7 +69,7 @@ Since $5 = -2$ is not true, there is **no solution**.
 
 ---
 
-**Example 2:**
+**Example 2:** Another equation with no solution
 
 Solve $2(x + 4) = 2x + 7$.
 
@@ -92,13 +92,13 @@ If you solve an equation and end up with two different numbers on either side of
 
 :::
 
-### 3.5.2 – Equations With Infinitely Many Solutions
+### 3.5.2 - Equations With Infinitely Many Solutions
 
 Sometimes when you solve, the variables cancel out and you’re left with a statement that is **always true**. In that case, every number works, so the equation has **infinitely many solutions**.
 
 ---
 
-**Example 1:**
+**Example 3:** All real numbers
 
 Solve $4(x + 2) = 2(2x + 4)$.
 
@@ -115,7 +115,7 @@ Because $8 = 8$ is always true, any value of $x$ will make the original equation
 
 ---
 
-**Example 2:**
+**Example 4:** All real numbers again
 
 Solve $5y - 3 + 2y = 7y - 3$.
 
@@ -139,7 +139,7 @@ If you solve an equation and get the same thing on each side of the equal sign, 
 :::
 
 
-### 3.5.3 – Determining the Number of Solutions
+### 3.5.3 - Determining the Number of Solutions
 
 There are some tricks for telling whether a {{< glink "linear equation" >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
 
@@ -148,7 +148,7 @@ There are some tricks for telling whether a {{< glink "linear equation" >}} will
 **Equations With One Solution**
 If a linear equation has a variable term on one side and a different constant term on the other side, it will have **one solution**.
 
-**Example:**
+**Example 5:** How many solutions are there?
 
 $$
 6x = 42
@@ -167,7 +167,7 @@ So this equation has one solution: $x = 7$.
 **Equations With No Solution**
 If both sides have the **same variable term** but **different constants**, the equation has **no solution**.
 
-**Example:**
+**Example 6:** Obviously no solution
 
 $$
 3x + 8 = 3x + 1
@@ -186,7 +186,7 @@ This is false, so the equation has no solution.
 **Equations With Infinitely Many Solutions**
 If both sides have the **same variable term** and the **same constant**, the equation has **infinitely many solutions**.
 
-**Example:**
+**Example 7:** Obviously all real numbers
 
 $$
 7x + 9 = 7x + 9

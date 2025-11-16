@@ -1,4 +1,4 @@
-# 2.6 – Equivalent Expressions {.unnumbered}
+# 2.6 - Equivalent Expressions {.unnumbered}
 
 When you visit another country, you might hear the same word said in different ways. *Hello*, *hola*, *bonjour* — all mean the same thing, but they look and sound different.
 
@@ -49,13 +49,13 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 {{< learn >}}
 
-### 2.6.1 – What Does “Equivalent” Mean?
+### 2.6.1 - What Does “Equivalent” Mean?
 
 Two expressions are **equivalent** if they have the **same value for every input** (for all allowed values of the variable). They do **not** have to look the same.
 
 ---
 
-**Example:** Same value, different look
+**Example 1:** Same value, different look
 
 Compare
 
@@ -78,7 +78,7 @@ Testing a few values gives **evidence**, not a full **proof**. A proof shows it'
 
 ---
 
-**Example:** Not equivalent (by substitution)
+**Example 2:** Not equivalent (by substitution)
 
 Compare
 
@@ -100,7 +100,7 @@ Since we got different outputs for the same input, the expressions are **not** e
 
 ---
 
-**Example:** Matching sometimes isn't enough
+**Example 3:** Matching sometimes isn't enough
 
 Sometimes two expressions match at some inputs but not at others.
 
@@ -156,7 +156,7 @@ Two expressions are equivalent if they give the same result for every value of t
 
 ---
 
-**Example:** (Distribute)
+**Example 4:** (Distribute)
 
 Prove $2(3 - y)$ and $6 - 2y$ are equivalent.
 
@@ -168,7 +168,7 @@ They match.
 
 ---
 
-**Example:** (Combine Like Terms)
+**Example 5:** (Combine Like Terms)
 
 Combine like terms to prove $2x - 3y + 7$ and $2 - 3x + 5 - 3y + 5x$ are equivalent.
 
@@ -180,7 +180,7 @@ They match.
 
 ---
 
-**Example:** (Simplify both sides)
+**Example 6:** (Simplify both sides)
 
 Prove $2(x - 1) + 3x$ and $2x + 3(x - 2) + 4$ are equivalent.
 
@@ -202,7 +202,7 @@ They match.
 
 ---
 
-**Example:** (Factor)
+**Example 7:** (Factor)
 
 Prove $6z - 2$ and $2(3z - 1)$ are equivalent.
 
@@ -218,7 +218,7 @@ The expressions are equivalent.
 
 We can also prove expressions are **not** equivalent using algebra.
 
-**Example:** 
+**Example 8:**  Disproving equivalence
 
 Prove $2x + 3$ and $2(x + 3)$ are **not** equivalent.
 

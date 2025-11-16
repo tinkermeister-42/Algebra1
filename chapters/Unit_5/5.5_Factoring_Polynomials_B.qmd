@@ -1,0 +1,33 @@
+# 5.5 - Factoring: General Trinomials & Special Patterns {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can factor trinomials where $a \neq 1$ using an area model.
+- [ ] I can recognize and factor special products.
+- [ ] I can recognize when an expression is not factorable over the integers.
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

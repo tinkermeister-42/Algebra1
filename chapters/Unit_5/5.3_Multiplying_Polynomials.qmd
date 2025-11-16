@@ -1,4 +1,4 @@
-# 5.3 – Multiplying Polynomials {.unnumbered}
+# 5.3 - Multiplying Polynomials {.unnumbered}
 
 You already know how to multiply a single term by a polynomial, distribute and combine like terms. But once **both** polynomials have more than one term, things can get complicated in a hurry.
 
@@ -40,7 +40,7 @@ In this lesson, you’ll learn a method that keeps everything in order and works
 
 {{< learn >}}
 
-### 5.3.1 – Multiplying Polynomials Using Distribution
+### 5.3.1 - Multiplying Polynomials Using Distribution
 
 You already know how to multiply a **monomial** times a polynomial by distributing. But what about when *both* polynomials have more than one term?
 
@@ -48,7 +48,7 @@ Let’s try the method you know and see what happens.
 
 ---
 
-**Example 1:**  
+**Example 1:**  Multiplying two binomials with distribution
 
 Multiply $(2x + 3)(3x - 5)$ using only distribution.
 
@@ -85,7 +85,7 @@ $$x^2 - 3x - 10$$
 
 ---
 
-### 5.3.2 – Area Models (The Box Method)
+### 5.3.2 - Area Models (The Box Method)
 
 Before we use area models for polynomials, let’s remind ourselves how the idea works with numbers.
 
@@ -122,7 +122,7 @@ $$60000 + 10000 + 400 + 24000 + 4000 + 160 + 900 + 150 + 6 = 99616$$
 
 ---
 
-**Example 2:** Multiplying Two Binomials
+**Example 2:** Multiplying two binomials
 
 Let's return to the product in the first example. 
 
@@ -182,7 +182,7 @@ $$18x^2 - 2$$
 
 In the next few examples, we will see that the area model really starts to shine when we have more terms to keep track of.
 
-**Example 3:**
+**Example 3:** A binomial times a trinomial
 
 Multiply $(2x - 3)(x^2 + x + 4)$.
 
@@ -201,7 +201,7 @@ $$2x^3 - x^2 + 5x - 12.$$
 
 ---
 
-**Example 4:** 
+**Example 4:**  A trinomial times a trinomial
 
 Multiply $(x^2 + x + 3)(2x^2 - x + 4)$.
 
@@ -219,7 +219,7 @@ $$2x^4 + x^3 + 9x^2 + x + 12.$$
 
 ---
 
-**Example 5:** 
+**Example 5:**  A binomial times a polynomial
 
 Multiply $(3x + 1)(x^3 - 4x^2 + x + 5)$.
 
@@ -265,7 +265,7 @@ giving $3x^2 + 9x$. This is rarely done because it is just as easy to distribute
 :::
 
 
-### 5.3.3 – Products of More Than Two Polynomials
+### 5.3.3 - Products of More Than Two Polynomials
 
 Sometimes you’ll multiply expressions like:
 
@@ -280,7 +280,8 @@ This keeps each step manageable, and it’s exactly what we do later when factor
 
 ---
 
-**Example 6:**
+**Example 6:** A product of three binomials
+
 Multiply $(x - 3)(2x + 1)(x + 4)$.
 
 **Step 1:** Multiply the first two.

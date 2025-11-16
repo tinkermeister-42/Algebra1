@@ -1,4 +1,4 @@
-# 2.2 – Evaluating Expressions {.unnumbered}
+# 2.2 - Evaluating Expressions {.unnumbered}
 
 In the last lessons, you learned how to solve one-step and two-step {{< glink slug=equation text=equations >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
@@ -30,7 +30,7 @@ In this lesson, you’ll learn how to simplify first — by using the {{< glink 
 
 {{< learn >}}
 
-### 2.2.1 – What Does It Mean to Evaluate an Expression?
+### 2.2.1 - What Does It Mean to Evaluate an Expression?
 
 To **evaluate** an {{< glink expression >}} means to find its value by substituting (replacing) the variable with a number.
 
@@ -61,7 +61,7 @@ Math works the same way. An expression starts as a kind of story with unknowns (
 
 ---
 
-**Example 1:**
+**Example 1:** An expression with one variable
 
 Evaluate $4x + 1$ when $x = 3$.
 
@@ -95,7 +95,7 @@ When you see "**=**", think "**is**". In the previous example, we could say "x *
 
 ---
 
-**Example 2:**
+**Example 2:** Being careful with negatives
 
 Evaluate $3 - 2x$ when $x = -4$.
 
@@ -127,11 +127,11 @@ Now that you know how to evaluate an expression, let's try some more complicated
 
 ---
 
-### 2.2.2 – Using PEMDAS with Substitution
+### 2.2.2 - Using PEMDAS with Substitution
 
 Evaluating expressions is just one additional step on top of the order of operations. First we substitute, and then we apply {{< glink PEMDAS >}}. 
 
-**Example 1:**
+**Example 3:** Multi-step evaluation
 
 Evaluate $2(x + 3)^2$ when $x = 1$.
 
@@ -149,7 +149,7 @@ $$
 
 ---
 
-**Example 2:**
+**Example 4:** Duplicated variables
 
 Evaluating expressions works the same way if the variable shows up more than once. This expression has the variable $y$ in two places.
 
@@ -184,13 +184,13 @@ $$
 
 ---
 
-### 2.2.3 – Evaluating Expressions With Multiple Variables
+### 2.2.3 - Evaluating Expressions With Multiple Variables
 
 It may look more difficult, but there is no difference between evaluating expressions with one variable and evaluating them with 2 or more variables.
 
 In the following example, we have the variables $a$ and $b$. 
 
-**Example 1:**
+**Example 5:**  Multiple variables
 
 Evaluate the expression $2a - 3b$ when $a=2$ and $b=1$.
 
@@ -208,9 +208,9 @@ $$
 
 ---
 
-**Example 2:**
+**Example 6:** Multiple variables
 
-Evaluate $12x -3y^2$ when $x=7$ and $y=-3$.
+Evaluate $12x - 3y^2$ when $x=7$ and $y=-3$.
 
 First substitute for $\textcolor{blue}{x}$ and $\textcolor{red}{y}$. Be careful with the negatives!
 
@@ -242,13 +242,13 @@ $$
 
 ---
 
-### 2.2.4 – Testing For Equivalence
+### 2.2.4 - Testing For Equivalence
 
 Sometimes two expressions look different but always give the same result. We call these {{< glink "equivalent expressions" >}}. 
 
 To test for equivalence, we can substitute values into each expression and see if they give the same result.
 
-**Example 1:**
+**Example 7:**  Testing for equivalence
 
 Test if the expressions $5x - 25$ and $5(x - 5)$ are equivalent.
 
@@ -265,7 +265,7 @@ They both gave the same result and so we have {{< glink evidence >}} that the tw
 
 ---
 
-**Example 2:**
+**Example 8:** Testing for equivalence
 
 Test if expressions $3(x - 1)$ and $3x - 2$ are equivalent.
 
@@ -289,7 +289,7 @@ When we substitute numbers to check if two expressions are equivalent, we are re
 
 ---
 
-**Example 3:**
+**Example:**
 Test if $6y$ and $2y$ are equivalent expressions.
 
 Try $y = 0$.

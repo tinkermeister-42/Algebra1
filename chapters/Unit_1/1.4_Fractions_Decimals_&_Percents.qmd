@@ -1,4 +1,4 @@
-# 1.4 – Fractions, Decimals & Percents: Conversions {.unnumbered}
+# 1.4 - Fractions, Decimals & Percents: Conversions {.unnumbered}
 
 Fractions, decimals, and percents are just different ways of showing the same thing — a part of a whole. Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.
 
@@ -34,7 +34,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
 {{< learn >}}
 
-### 1.4.1 – What Are Fractions, Decimals, and Percents?
+### 1.4.1 - What Are Fractions, Decimals, and Percents?
 
 Fractions, decimals, and percents are all ways of showing a **part of a whole**.
 
@@ -73,7 +73,7 @@ Fractions, decimals, and percents all show the same thing in different ways. You
 
 ---
 
-### 1.4.2 – Converting Fractions to Decimals
+### 1.4.2 - Converting Fractions to Decimals
 
 Have you ever wondered why the division symbol (&divide;) looks the way it does?  It has two dots separated by a bar because it represents a fraction! This is because fractions are just a different way to show division. To convert a fraction to a decimal, all we have to do is **divide** the numerator by the denominator.
 
@@ -117,11 +117,11 @@ This can cause small errors if you're not careful — especially when comparing 
 
 After you simplify the fraction, look at the denominator. If it’s made only from 2s and/or 5s (like 2, 4, 5, 8, 10, 20), the decimal ends. If it has any other factor (like 3 or 7), the decimal repeats.
 
-**Example 1:**
+**Example:** Terminating Decimal
  
 The fraction $\frac{3}{10}$ has a denominator with factors 2 and 5. It ends and gives 0.3. 
 
-**Example 2**
+**Example:** Repeating Decimal
 
 The fraction $\frac{2}{6}$ has a denominator with factors 2 and 3. It repeats and gives $0.\overline{3}$.
 
@@ -141,7 +141,7 @@ $$
 
 Turning a decimal into a percent is easy. We simply move the decimal point to the right twice (the same as multiplying by 100) and then add a % sign.
 
-**Example:** Convert 0.234 to a percent
+**Example 3:** Convert 0.234 to a percent
 
 To do this, we move the decimal two places to the right and then add a % sign. This gives us 23.4%. 
 
@@ -149,13 +149,13 @@ To do this, we move the decimal two places to the right and then add a % sign. T
 
 But what if there isn't a digit in the hundredths place? When we don't have enough digits to the right of the decimal, we just fill them in with zeros. 
 
-**Example:** Convert 0.4 to a percent.
+**Example 4:** Convert 0.4 to a percent.
 
 ![](/images/Unit_1/Lesson_4/convert_point_4.png){height=50 fig-alt="Converting 0.4 to 40%"}
 
 But what if the number is bigger than 1? When the number is bigger than 1.0, we do exactly the same thing and end up with a percentage that is larger than 100%! 
 
-**Example:** Convert 3.2 to a percent.
+**Example 5:** Convert 3.2 to a percent.
 
 ![](/images/Unit_1/Lesson_4/convert_3_point_2.png){height=50 fig-alt="Converting 3.2 to 320%"}
 
@@ -169,7 +169,7 @@ $$1.342 \times 100 = 134.2\%$$
 
 To convert a fraction to a percent, we first convert the fraction to a decimal.
 
-**Example:** Convert $\frac{3}{5}$ to a percent.
+**Example 6:** Convert $\frac{3}{5}$ to a percent.
 
 $$
 \frac{3}{5} \Rightarrow 3 \div 5 = 0.6
@@ -210,7 +210,9 @@ Suppose we have the number 123.456. The following table shows the place value fo
 
 Place value helps us say the number differently. Instead of saying "123 **point** 456" we could say "123 **and** 456 **thousandths**".  This is the trick to converting decimals to fractions.
 
-**Example 1:**
+---
+
+**Example 1:** Converting a Decimal to a Fraction
 
 Say we want to convert 0.75 to a fraction. We could say this is "zero **point** seven five" but it is more useful to say this is "75 hundredths". This gives us our fraction!
 
@@ -218,8 +220,9 @@ $$
 0.75 = \text{75 hundredths} \Rightarrow \frac{75}{100} = \frac{3}{4}
 $$
 
+---
 
-**Example 2**
+**Example 2:** Converting a Decimal to a Fraction
 
 Let's convert 0.1 into a fraction.
 
@@ -254,7 +257,7 @@ $$
 
 ---
 
-### 1.4.5 – Converting Percents to Decimals and Fractions
+### 1.4.5 - Converting Percents to Decimals and Fractions
 
 To convert a percent to a decimal simply move the decimal two places left (the same as dividing by 100).
 
@@ -298,7 +301,7 @@ $$
 :::
 ---
 
-### 1.4.6 – Bringing It All Together
+### 1.4.6 - Bringing It All Together
 
 Now that you’ve seen how to convert between fractions, decimals, and percents, here’s a summary table to help you remember the steps:
 

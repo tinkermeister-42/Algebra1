@@ -1194,7 +1194,7 @@ A pair of numbers written in parentheses, like (x, y), that tells the exact loca
 The first number is the x-coordinate (horizontal position), and the second is the y-coordinate (vertical position).
 
 > **Example:**
-> The ordered pair (–3, 5) means move 3 units left and 5 units up from the origin.
+> The ordered pair (-3, 5) means move 3 units left and 5 units up from the origin.
 
 **See Also:** {{< glink  "coordinate plane" >}}, {{< glink "axis" >}}
 

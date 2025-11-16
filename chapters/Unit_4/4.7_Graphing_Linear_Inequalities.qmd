@@ -1,4 +1,4 @@
-# 4.7 – Graphing Linear Inequalities {.unnumbered}
+# 4.7 - Graphing Linear Inequalities {.unnumbered}
 
 You’ve learned how to **graph lines** from equations like $y = 2x + 3$.
 Now we’ll take that same idea and add one new twist — an **inequality symbol**.
@@ -27,7 +27,7 @@ When we switch from **equations** to **inequalities**, we’re no longer looking
 
 {{< learn >}}
 
-### 4.7.1 – Linear Inequalities in Two Variables
+### 4.7.1 - Linear Inequalities in Two Variables
 
 Back in Unit 3, you learned that solving an **inequality** is almost the same as solving an **equation**, with just a few key differences:
 
@@ -62,7 +62,8 @@ Now we’ll extend those ideas to the coordinate plane.
 
 ---
 
-**Example 1**
+**Example 1:** Less than or equal to
+
 Graph the inequality $y \le \tfrac{1}{2}x + 2$.
 
 ![](/images/Unit_4/Lesson_7/Example1.png){width="350px" fig-align="center"}
@@ -92,7 +93,8 @@ This is **true**, confirming that $(6, -4)$ is part of the solution set.
 
 ---
 
-**Example 2**
+**Example 2:** Less than
+
 Graph the inequality $y < \tfrac{1}{2}x + 2$.
 
 ![](/images/Unit_4/Lesson_7/Example2.png){width="350px" fig-align="center"}
@@ -102,7 +104,8 @@ The line is **dashed**, so points on the line are **not included**.
 
 ---
 
-**Example 3**
+**Example 3:** Greater than
+
 Graph the inequality $y > \tfrac{1}{2}x + 2$.
 
 ![](/images/Unit_4/Lesson_7/Example3.png){width="350px" fig-align="center"}
@@ -112,7 +115,8 @@ The line is **dashed**, so points on the line are **not included**.
 
 ---
 
-**Example 4**
+**Example 4:** Greater than or equal to
+
 Graph the inequality $y \ge \tfrac{1}{2}x + 2$.
 
 ![](/images/Unit_4/Lesson_7/Example4.png){width="350px" fig-align="center"}
@@ -126,7 +130,7 @@ The line is **solid**, so points on the line are **included**.
 
 ---
 
-### 4.7.2 – Solving Two-Variable Inequalities
+### 4.7.2 - Solving Two-Variable Inequalities
 
 In the last section, you graphed a linear inequality once it was already written as $y < mx + b$ or $y \le mx + b$.
 
@@ -147,7 +151,7 @@ Here we’ll focus on **getting the inequality into slope-intercept form** so it
 
 ---
 
-**Example 1**
+**Example 5:** Getting it in slope-intercept form
 
 Solve and graph $2x + y < 4$.
 $$
@@ -162,14 +166,14 @@ The line $y = -2x + 4$ is **dashed** and shaded **below**.
 
 ---
 
-**Example 2**
+**Example 6:** Don't forget to flip it!
 
 Solve and graph $3x - 2y \le 6$.
 $$
 \begin{align*}
 3x - 2y &\le 6 \\
 -2y &\le -3x + 6 \\
-y &\ge \tfrac{3}{2}x - 3 \quad \text{(flip the sign when dividing by –2)}
+y &\ge \tfrac{3}{2}x - 3 \quad \text{(flip the sign when dividing by -2)}
 \end{align*}
 $$
 The line $y = \tfrac{3}{2}x - 3$ is **solid** and shaded **above**.
@@ -190,7 +194,7 @@ $$
 
 ---
 
-### 4.7.3 – Systems of Linear Inequalities
+### 4.7.3 - Systems of Linear Inequalities
 
 So far, you’ve graphed a **single inequality** — one shaded region showing all the points that make it true.
 
@@ -202,7 +206,7 @@ That overlapping area shows all the $(x, y)$ pairs that make **every inequality 
 
 ---
 
-**Example 7**
+**Example 7:** A system of inequalities
 
 Graph the system:
 $$
@@ -231,7 +235,7 @@ $$
 
 ---
 
-**Example 8**
+**Example 8:** A larger system
 
 Some systems create a **closed shape** when the shaded areas overlap.
 These are common in real-world problems with limits or constraints.

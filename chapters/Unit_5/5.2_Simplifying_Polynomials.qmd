@@ -69,7 +69,7 @@ The exponent on a term is called its {{< glink degree >}}. Polynomials have a de
 
 ---
 
-**Example 1:**
+**Example 1:** A matter of degree
 
 Find the special name and degree of each of the following polynomial:
 
@@ -94,7 +94,7 @@ Writing in standard form does not change the value of the expression, but it mak
 
 ---
 
-**Example 2:**
+**Example 2:** Standardizing polynomials
 
 Write each of the following polynomials in standard form:
 
@@ -149,7 +149,7 @@ We will use the exponent and combining rules from last time to tidy up polynomia
 
 ---
 
-### 5.2.2 – Simplifying Polynomials
+### 5.2.2 - Simplifying Polynomials
 
 Now that you can distribute, combine like terms, and use exponent rules, you’re ready to turn messy expressions into clean **polynomials in standard form**. This is an essential skill before we start multiplying and factoring polynomials.
 

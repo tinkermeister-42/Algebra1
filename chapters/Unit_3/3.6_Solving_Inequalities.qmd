@@ -1,4 +1,4 @@
-# 3.6 – Solving Inequalities {.unnumbered}
+# 3.6 - Solving Inequalities {.unnumbered}
 
 You have \$20 in your pocket and want to buy some candy at the grocery store. You need to buy bread for \$3.50, and each package of candy costs \$1.25. How many packages of candy can you afford?
 
@@ -56,7 +56,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 
 {{< learn >}}
 
-### 3.6.1 -- Inequality Basics
+### 3.6.1 - Inequality Basics
 
 An **inequality** compares two expressions using one of these symbols:
 
@@ -129,13 +129,13 @@ Since $-4 \le -1$ is true, shade the side containing $-4$.
 
 ---
 
-### 3.6.2 -- Solving Inequalities Using Addition and Subtraction
+### 3.6.2 - Solving Inequalities Using Addition and Subtraction
 
 Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.
 
 ---
 
-**Example 1:** 
+**Example 5:**  A one-step inequality
 
 Solve the inequality and plot its solution on a number line.
 
@@ -160,7 +160,7 @@ The arrow covers all numbers larger than 7. The dot is left open because 7 itsel
 
 ---
 
-**Example 2:**
+**Example 6:** Another one-step inequality
 
 Solve the inequality and plot its solution.
 
@@ -187,7 +187,7 @@ Now plot it.
 
 If you multiply or divide by a positive number, then you solve just like an equation.
 
-**Example 1:** 
+**Example 7:** A two-step inequality
 
 Solve the inequality and plot the solution.
 
@@ -215,7 +215,7 @@ Now plot it:
 
 The one big difference between solving equations and inequalities comes when you multiply or divide by a **negative** number. In that case, you have to **flip the sign**.
 
-**Example 2:** 
+**Example 8:** Flipping the sign
 
 Solve the inequality and plot the solution.
 

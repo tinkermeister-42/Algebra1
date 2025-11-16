@@ -431,3 +431,13 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 27. $pq + pr + qr = 0$
     
 :::
+
+### 5.4 - Factoring: GCF & Basic Trinomials
+
+:::{.answers}
+
+31. $b(2a - 3b)(2a + 3b)$
+
+32. $(k - 1)(k + 1)(k - 3)(k + 3)$
+
+:::

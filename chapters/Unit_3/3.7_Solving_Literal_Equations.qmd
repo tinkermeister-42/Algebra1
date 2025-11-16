@@ -1,4 +1,4 @@
-# 3.7 – Solving Literal Equations {.unnumbered}
+# 3.7 - Solving Literal Equations {.unnumbered}
 
 Imagine you’re asked to solve for time $t$ in the equation $d = rt$.
 You might recognize this as the distance formula: *distance = rate × time.*
@@ -44,7 +44,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 
 {{< learn >}}
 
-### 3.7.1 – What Is a Literal Equation?
+### 3.7.1 - What Is a Literal Equation?
 
 A **literal equation** is an equation made mostly of letters.
 You can think of it as a formula — like $A = lw$ for the area of a rectangle or $P = 2l + 2w$ for its perimeter.
@@ -53,8 +53,9 @@ When we solve a literal equation, our goal is to **isolate one variable** using 
 
 ---
 
-**Example 1:**
-Solve $A = lw$ for $w$.
+**Example 1:** Finding the width
+
+A rectangle has area $A = lw$. Solve for the width $w$.
 
 $$
 \begin{align*}
@@ -69,8 +70,9 @@ So $w = \dfrac{A}{l}$.
 
 ---
 
-**Example 2:**
-Solve $d = rt$ for $t$.
+**Example 2:** Finding the time
+
+Distance is equal to the rate times the time $d = rt$. Solve for the time $t$.
 
 $$
 \begin{align*}
@@ -98,15 +100,16 @@ So $I = \tfrac{V}{R}$.
 
 :::
 
-### 3.7.2 – Literal Equations with Addition or Subtraction
+### 3.7.2 - Literal Equations with Addition or Subtraction
 
 Sometimes a variable appears in a longer expression.
 We can move terms using addition or subtraction before dividing or multiplying.
 
 ---
 
-**Example 1:**
-Solve $P = 2l + 2w$ for $w$.
+**Example 3:** Finding the width
+
+A rectangle has perimeter $P = 2l + 2w$. Solve for the width $w$.
 
 $$
 \begin{align*}
@@ -124,8 +127,9 @@ So $w = \dfrac{P - 2l}{2}$.
 
 ---
 
-**Example 2:**
-Solve $y = mx + b$ for $x$.
+**Example 4:** A linear equation
+
+A line has the equation $y = mx + b$. Solve for $x$.
 
 $$
 \begin{align*}
@@ -156,13 +160,14 @@ So $b = 2c - 3a$.
 
 :::
 
-### 3.7.3 – Multi-Step Literal Equations
+### 3.7.3 - Multi-Step Literal Equations
 
 Now let’s look at equations that take more than one operation to isolate the variable.
 
 ---
 
-**Example 1:**
+**Example 5:** A two step equation
+
 Solve $V = Bh + 12$ for $h$.
 
 $$
@@ -179,7 +184,8 @@ $$
 
 ---
 
-**Example 2:**
+**Example 6:** A fractional coefficient
+
 Solve $A = \frac{1}{2}bh + 3$ for $b$.
 
 $$
@@ -199,10 +205,10 @@ $$
 
 ---
 
-**Example 3:**
-Convert Celsius to Fahrenheit.
-The formula is $C = \frac{5}{9}(F - 32)$.
-Solve for $F$.
+**Example 7:** Converting Celsius to Fahrenheit.
+
+The formula for convering form Celsius to Fahrenheit is $C = \frac{5}{9}(F - 32)$.
+Solve for the temperature in Fahrenheit $F$.
 
 $$
 \begin{align*}

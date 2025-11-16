@@ -1,4 +1,4 @@
-# 3.1 – Solving One-Step Equations {.unnumbered}
+# 3.1 - Solving One-Step Equations {.unnumbered}
 
 In Unit 2, we learned how to work with {{< glink "equivalent expressions" >}}. Sometimes we could check a number, {{< glink substitute >}} it into both expressions, and see that they matched. But, with some expressions, we noticed something important:
 
@@ -39,7 +39,7 @@ Later lessons will build on these rules to solve more complicated equations.
 
 {{< learn >}}
 
-### 3.1.1 – One-Step Equations (Addition and Subtraction)
+### 3.1.1 - One-Step Equations (Addition and Subtraction)
 
 An {{< glink equation >}} is made up of two expressions separated by an equals sign. Our goal is to find values of the variables in each expression that make the equation true. 
 
@@ -244,7 +244,7 @@ Do the same move to **both** sides.
 
 ---
 
-### 3.1.3 – Checking a Solution 
+### 3.1.3 - Checking a Solution 
 
 When you solve an equation, it’s important to **check your solution**.  
 This means plugging your answer back into the original equation to see if both sides are equal.  
@@ -252,7 +252,7 @@ If they match, your solution is correct. If not, you made a mistake along the wa
 
 ---
 
-**Example – Check**
+**Example 5:** Checking your work
 
 Solve $3x = 21$ and check your answer.
 
@@ -305,7 +305,7 @@ Think of it like testing your answer with a calculator: the equation itself is t
 
 {{< practice >}}
 
-**Level 1 – Basic**
+**Level 1 - Basic**
 
 Solve each equation.
 
@@ -318,7 +318,7 @@ Solve each equation.
 
 ---
 
-**Level 2 – Moderate**
+**Level 2 - Moderate**
 
 Solve each equation. Be careful with negatives and decimals.
 
@@ -331,7 +331,7 @@ Solve each equation. Be careful with negatives and decimals.
 
 ---
 
-**Level 3 – Harder**
+**Level 3 - Harder**
 
 For each, **solve and then check your solution** by substituting back into the original equation.
 

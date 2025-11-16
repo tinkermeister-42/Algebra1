@@ -56,7 +56,7 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 :::{.gotcha title="How many numbers are between any two numbers on the number line?"}
 
-**Example:** How many numbers between 3 and 5?
+**Example 1:** How many numbers between 3 and 5?
 
 If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink "real numbers" >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
 

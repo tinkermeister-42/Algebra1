@@ -1,3 +1,44 @@
 # Introduction {.unnumbered}
 
-Coming Soon
+Welcome to **Unit 5!**
+
+This unit brings together two big ideas in algebra: **exponents** and **polynomials**.  
+You’ll learn how powers behave, how polynomial expressions are built, and how to rewrite them in cleaner, more useful forms.
+
+As you work through the lessons, you’ll move from simplifying and multiplying polynomials to **factoring**, which is the reverse process. Factoring becomes a major skill later in Algebra, especially when solving quadratic equations.
+
+---
+
+## What You’ll Learn
+
+By the end of this unit, you’ll be able to:
+
+* **Use exponent rules** to simplify expressions with powers.
+
+* **Rewrite and simplify polynomials** by distributing and combining like terms.
+
+* **Multiply polynomials** with visual models and structured methods.
+
+* **Factor polynomials** by taking a GCF and breaking down trinomials.
+
+* **Recognize special factoring patterns** and factor more general trinomials.
+
+---
+
+## Topics in This Unit
+
+[**Exponent Rules**](5.1_Exponent_Rules.html)  
+Learn how powers work and apply the core exponent rules to simplify expressions.
+
+[**Simplifying Polynomials**](5.2_Simplifying_Polynomials.html)  
+Combine like terms, distribute, and rewrite expressions in standard form.
+
+[**Multiplying Polynomials**](5.3_Multiplying_Polynomials.html)  
+Use area models and structured methods to multiply polynomials of different sizes.
+
+[**Factoring: GCF & Basic Trinomials**](5.4_Factoring_Polynomials_A.html)  
+Start factoring by taking out a GCF and factoring simple trinomials using structure and area models.
+
+[**Factoring: General Trinomials & Special Patterns**](5.5_Factoring_Polynomials_B.html)  
+Factor more complex trinomials and learn common patterns like perfect square trinomials and difference of squares.
+

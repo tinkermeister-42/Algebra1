@@ -1,4 +1,4 @@
-# 2.3 – Combining Like Terms {.unnumbered}
+# 2.3 - Combining Like Terms {.unnumbered}
 
 When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink "like terms" >}}**.
 
@@ -34,7 +34,7 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 
 {{< learn >}}
 
-### 2.3.1 – What Are Like Terms?
+### 2.3.1 - What Are Like Terms?
 
 Suppose you have apples, oranges, and bananas to sell.
 
@@ -96,11 +96,11 @@ Pairs: a, d, and e
 :::
 ---
 
-### 2.3.2 – How to Combine Like Terms (Sort → Group → Add)
+### 2.3.2 - How to Combine Like Terms (Sort → Group → Add)
 
 Now that you can identify like terms, let's see how to use this to help us simplify expressions.
 
-**Example 1**:
+**Example 1:** Combining like terms
 
 In this messy expression, there are several terms of different types. Like with the fruit, it is difficult to see what we have.
 
@@ -136,7 +136,7 @@ We can then group terms together because addition is {{< glink associative >}}.
 
 :::
 
-**Example 2**
+**Example 2:** Combining like terms with decimal coefficents
 
 Simplify the following expression.
 
@@ -208,7 +208,7 @@ $$
 :::
 ---
 
-### 2.3.3 – Checking Your Work
+### 2.3.3 - Checking Your Work
 
 When simplifying expressions it is easy to make a mistake. If you are unsure, test with numbers and {{< glink substitution >}}.
 

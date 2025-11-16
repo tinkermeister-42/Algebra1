@@ -1,4 +1,4 @@
-# 3.2 – Solving Two-Step Equations {.unnumbered}
+# 3.2 - Solving Two-Step Equations {.unnumbered}
 
 With one-step equations, we identified the operation and did the opposite to both sides. Two-step equations are the same idea with one new decision to make. Which operation do we deal with first?
 
@@ -23,7 +23,7 @@ With one-step equations, we identified the operation and did the opposite to bot
 {{< learn >}}
 
 
-### 3.2.1 – Two-Step Equations
+### 3.2.1 - Two-Step Equations
 
 We solve equations by getting the variable by itself. With one operation, we solve by doing the opposite. When there are two operations, we do the same thing one operation at a time. To decide which comes first, we apply the order of operations in reverse.
 
@@ -31,7 +31,7 @@ When you simplify expressions, follow PEMDAS. When you solve, go the other direc
 
 ![](/images/Unit_3/Lesson_2/PEMDAS_simplify_solve.png){width="300px" fig-align="center"}
 
-**Example 1:** 
+**Example 1:**  How much does an apple weigh?
 
 Here we have 2 apples and one weight on the left-hand side and 7 weights on the other. Let's find *a*, the weight of one apple.
 
@@ -90,7 +90,7 @@ x &= 3
 $$
 :::
 
-**Example 2:** 
+**Example 2:**  Solving with division
 
 Solve $\frac{x}{8} - 3 = 7$.
 
@@ -124,7 +124,7 @@ $$
 
 :::
 
-**Example 3:** 
+**Example 3:** Negative coefficients
 
 Solve $-x + 5 = 3$.
 
@@ -161,13 +161,13 @@ $$
 
 ---
 
-## 3.2.2 – Word Problems with Two-Step Equations
+## 3.2.2 - Word Problems with Two-Step Equations
 
 Equations are especially useful when a situation involves **two operations**. Let's look at some examples.
 
 ---
 
-**Example 1 - Babysitting**
+**Example 4:** Babysitting
 
 A babysitter charges \$10 for travel plus \$8 per hour. The total charge was \$42. How many hours did the babysitter work?
 
@@ -195,7 +195,7 @@ The babysitter worked **4 hours**.
 
 ---
 
-**Example 2 - Cell Phone Plan**
+**Example 5:** Cellphone plan
 
 A phone plan charges \$25 each month plus \$0.05 per text. Last month the bill was \$32. How many texts were sent?
 
@@ -223,7 +223,7 @@ There were **140 texts sent**.
 
 ---
 
-**Example 3 - Geometry**
+**Example 6:** Connections to geometry
 
 The perimeter of a rectangle is 28cm. The length is 2 more than twice the width. Find the width of the rectangle.
 
