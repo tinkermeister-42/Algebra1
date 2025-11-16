@@ -638,8 +638,14 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#factoring-when-a-neq-1" id="toc-factoring-when-a-neq-1" class="nav-link active" data-scroll-target="#factoring-when-a-neq-1">5.5.1 - Factoring When <span class="math inline">\(a \neq 1\)</span></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -663,25 +669,936 @@ window.Quarto = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>Up until now, the trinomials you have been factoring have all started the same way. The first term has always been something like <span class="math inline">\(x^2\)</span>. That made the area model feel comfortable, because the first box always held <span class="math inline">\(x^2\)</span> and the first terms in the factors were simply <span class="math inline">\(x\)</span> and <span class="math inline">\(x\)</span>.</p>
+<p>But what if the trinomial started with something like <span class="math inline">\(6x^2\)</span> instead of <span class="math inline">\(x^2\)</span>?<br>
+What would go in the first box then, and what would the first terms in the factors look like?</p>
+<p>Would the same process still work?</p>
+<p>Here is another question to think about. What if the trinomial does not fit the same product sum pattern you used before? Is there some structure hiding inside it, or is it something completely different?</p>
+<p>These questions will guide us as we look at trinomials that do not follow the familiar patterns from earlier lessons. Some will behave in ways you expect, and others will require a new idea or two. As we explore them, the area model will continue to be our main tool, and you will see how it adapts to these new situations.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can factor trinomials where <span class="math inline">\(a \neq 1\)</span> using an area model.</label></li>
-<li><label><input type="checkbox">I can recognize and factor special products.</label></li>
-<li><label><input type="checkbox">I can recognize when an expression is not factorable over the integers.</label></li>
+<li><label><input type="checkbox">I can factor trinomials when <span class="math inline">\(a \neq 1\)</span> using structured strategies.</label></li>
+<li><label><input type="checkbox">I can recognize and factor special patterns like difference of squares and perfect-square trinomials.</label></li>
+<li><label><input type="checkbox">I can decide when a trinomial is not factorable over the integers.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-term" data-term="term" data-slug="term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a>, <a href="" class="glossary-link" data-slug="factorable" data-original-href="#glossary-factorable" data-term="factorable">factorable</a>, <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect-square trinomial">perfect-square trinomial</a>, <a href="" class="glossary-link" data-slug="trinomial" data-original-href="#glossary-trinomial" data-term="trinomial">trinomial</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>When you factored trinomials like <span class="math inline">\(x^2 + 9x + 20\)</span>, what made the process predictable?</p></li>
+<li><p>Look at <span class="math inline">\(6x^2 + 11x + 3\)</span>. What is the first thing you notice about its structure compared to the ones you have already factored?</p></li>
+<li><p>Swanhilda claimed that <span class="math inline">\(6x^2 + 7x + 10 = (x + 2)(x + 5)\)</span>. Explain why this cannot be correct.</p></li>
+</ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
+<section id="factoring-when-a-neq-1" class="level3">
+<h3 class="anchored">5.5.1 - Factoring When <span class="math inline">\(a \neq 1\)</span></h3>
+<p>So far, every trinomial you have factored has looked like this:</p>
+<p><span class="math display">\[
+x^2 + bx + c
+\]</span></p>
+<p>When the first term is <span class="math inline">\(x^2\)</span>, the factoring process feels straightforward. You only need to look for factors of <span class="math inline">\(c\)</span> that add up to <span class="math inline">\(b\)</span>. The first terms of the factors are always <span class="math inline">\(x\)</span> and <span class="math inline">\(x\)</span>, so there is nothing to decide.</p>
+<p>In general, a trinomial does not always start with <span class="math inline">\(x^2\)</span>. It can have any integer in front, like this:</p>
+<p><span class="math display">\[
+ax^2 + bx + c
+\]</span></p>
+<p>Take <span class="math inline">\(6x^2 - 7x - 3\)</span> for example. Since the first coefficient is <span class="math inline">\(6\)</span>, there are several possible ways to split the first term in the area model. The first terms of the factors are no longer automatic.</p>
+<p>To handle this, we adjust the process you already know. Instead of looking for factors of <span class="math inline">\(c\)</span> that add up to <span class="math inline">\(b\)</span>, we now look for factors of <span class="math inline">\(a \cdot c\)</span> that add up to <span class="math inline">\(b\)</span>. This gives us the pieces we need to build the area model correctly.</p>
+<hr>
+<p><strong>Example 1:</strong> An updated area model</p>
+<p>Factor <span class="math inline">\(6x^2 + 11x + 3\)</span>.</p>
+<p>Like we did before, let’s fill in what we know.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{6}x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>?</td>
+<td><span class="math inline">\(\textcolor{blue}{3}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We need to find factors of <span class="math inline">\(\textcolor{red}{6} \cdot \textcolor{blue}{3} = 18\)</span> that add up to <span class="math inline">\(11\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 18\)</span></td>
+<td><span class="math inline">\(18\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\textcolor{red}{2} \times \textcolor{blue}{9}\)</span></td>
+<td><span class="math inline">\(11\)</span> ✓</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3 \times 6\)</span></td>
+<td><span class="math inline">\(9\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now we can fill out the rest of the partial products.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(6x^2\)</span></td>
+<td><span class="math inline">\(\textcolor{blue}{9x}\)</span></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{2x}\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The last step is to fill in the factors themselves, but it is a little trickier than before. There are several possibilities for the first terms: <span class="math inline">\(6x, x\)</span>, <span class="math inline">\(3x, 2x\)</span>, <span class="math inline">\(x, 6x\)</span>, <span class="math inline">\(2x, 3x\)</span>.</p>
+<p>You can guess and check to solve this, but that becomes very inefficient if there are many possibilities. Instead, we will find the GCF for each row and column of partial products.</p>
+<p>First the rows: <span class="math display">\[
+\begin{align*}
+GCF(6x^2, 9x) &amp;= \textcolor{red}{3x} \\
+GCF(2x, 3) &amp;= \textcolor{blue}{1} \\
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\textcolor{red}{3x}\)</span></td>
+<td><span class="math inline">\(6x^2\)</span></td>
+<td><span class="math inline">\(9x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\textcolor{blue}{1}\)</span></td>
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Now the columns: <span class="math display">\[
+\begin{align*}
+GCF(6x^2, 2x) &amp;= \textcolor{red}{2x} \\
+GCF(9x, 3) &amp;= \textcolor{blue}{3}
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(\textcolor{red}{2x}\)</span></th>
+<th><span class="math inline">\(\textcolor{blue}{3}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(3x\)</span></td>
+<td><span class="math inline">\(6x^2\)</span></td>
+<td><span class="math inline">\(9x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+6x^2 + 11x + 3 = (3x + 1)(2x + 3)
+\]</span></p>
+<hr>
+<div class="you-try" title="factor $10y^2 + 13y + 3$">
+<p>Look for factors of <span class="math inline">\(10 \cdot 3 = 30\)</span> that sum to <span class="math inline">\(13\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 x 30\)</span></td>
+<td><span class="math inline">\(31\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 x 15\)</span></td>
+<td><span class="math inline">\(17\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3 x 10\)</span></td>
+<td><span class="math inline">\(13\)</span> ✓</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(5 x 6\)</span></td>
+<td><span class="math inline">\(11\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now complete the area model.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(y\)</span></th>
+<th><span class="math inline">\(1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(10y\)</span></td>
+<td><span class="math inline">\(10y^2\)</span></td>
+<td><span class="math inline">\(10y\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(3y\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+10y^2 + 13y + 3 = (10y + 3)(y + 1)
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 2:</strong> Negative constant term</p>
+<p>Factor <span class="math inline">\(8m^2 + 2m - 3\)</span>.</p>
+<p>We need factors of <span class="math inline">\(8 \cdot -3 = -24\)</span> that add up to <span class="math inline">\(2\)</span>. Since the sum is positive, the larger factor needs to be positive.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-1 \times 24\)</span></td>
+<td><span class="math inline">\(23\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2 \times  12\)</span></td>
+<td><span class="math inline">\(10\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\textcolor{red}{-4} \times \textcolor{blue}{6}\)</span></td>
+<td><span class="math inline">\(2\)</span> ✓</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-3 \times 8\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now place the partial products.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(8m^2\)</span></td>
+<td><span class="math inline">\(\textcolor{blue}{6m}\)</span></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{-4m}\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Factor rows:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(8m^2, 6m) &amp;= 2m \\
+GCF(-4m, -3) &amp;= -1
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(2m\)</span></td>
+<td><span class="math inline">\(8m^2\)</span></td>
+<td><span class="math inline">\(6m\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-1\)</span></td>
+<td><span class="math inline">\(-4m\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Factor columns:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(8m^2, -4m) &amp;= 4m \\
+GCF(6m, -3) &amp;= 3
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(4m\)</span></th>
+<th><span class="math inline">\(3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(2m\)</span></td>
+<td><span class="math inline">\(8m^2\)</span></td>
+<td><span class="math inline">\(6m\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-1\)</span></td>
+<td><span class="math inline">\(-4m\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+8m^2 + 2m - 3 = (2m - 1)(4m + 3)
+\]</span></p>
+<hr>
+<div class="you-try" title="factor $14w^2 + 3w - 2$">
+<p>Look for factors of <span class="math inline">\(14 \cdot (-2) = -28\)</span> that add to <span class="math inline">\(3\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-1 \times 28\)</span></td>
+<td><span class="math inline">\(27\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2 \times 14\)</span></td>
+<td><span class="math inline">\(12\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(-4 \times 7\)</span></td>
+<td><span class="math inline">\(3\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><strong>Example 3:</strong> Negative middle term</p>
+<p>Factor <span class="math inline">\(12n^2 - 25n + 2\)</span>.</p>
+<p>We need factors of <span class="math inline">\(12 \cdot 2 = 24\)</span> that add to <span class="math inline">\(-25\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\textcolor{red}{-1} \times \textcolor{blue}{-24}\)</span></td>
+<td><span class="math inline">\(-25\)</span> ✓</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2 \times -12\)</span></td>
+<td><span class="math inline">\(-14\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(-3 \times -8\)</span></td>
+<td><span class="math inline">\(-11\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-4 \times -6\)</span></td>
+<td><span class="math inline">\(-10\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Split and fill the model:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(12n^2\)</span></td>
+<td><span class="math inline">\(\textcolor{red}{-n}\)</span></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{blue}{-24n}\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Factor rows:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(12n^2, -n) &amp;= n \\
+GCF(-24n, 2) &amp;= -2
+\end{align*}
+\]</span></p>
+<p>Factor columns:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(12n^2, -24n) &amp;= 12n \\
+GCF(-n, 2) &amp;= -1
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(12n\)</span></th>
+<th><span class="math inline">\(-1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(n\)</span></td>
+<td><span class="math inline">\(12n^2\)</span></td>
+<td><span class="math inline">\(-n\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2\)</span></td>
+<td><span class="math inline">\(-24n\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+12n^2 - 25n + 2 = (12n - 1)(n - 2)
+\]</span></p>
+<hr>
+<div class="you-try" title="factor $18p^2 - 13p - 5$">
+<p>Use factors of <span class="math inline">\(18 \cdot -5 = -90\)</span> that add to <span class="math inline">\(-13\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times -90\)</span></td>
+<td><span class="math inline">\(-89\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times -45\)</span></td>
+<td><span class="math inline">\(-43\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3 \times -30\)</span></td>
+<td><span class="math inline">\(-27\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(5 \times -18\)</span></td>
+<td><span class="math inline">\(-13\)</span> ✓</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(6 \times -15\)</span></td>
+<td><span class="math inline">\(-9\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(9 \times -10\)</span></td>
+<td><span class="math inline">\(-1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now complete the area model:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(p\)</span></th>
+<th><span class="math inline">\(-1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(18p\)</span></td>
+<td><span class="math inline">\(18p^2\)</span></td>
+<td><span class="math inline">\(-18p\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(5p\)</span></td>
+<td><span class="math inline">\(-5\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+18p^2 - 13p - 5 = (18p + 5)(p - 1)
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 4:</strong> A GCF must be taken out first</p>
+<p>Factor <span class="math inline">\(15k^2 + 27k + 12\)</span>.</p>
+<p>All three terms share a GCF of <span class="math inline">\(3\)</span>.</p>
+<p><span class="math display">\[
+15k^2 + 27k + 12 = 3(5k^2 + 9k + 4)
+\]</span></p>
+<p>Now factor the trinomial inside the parentheses.</p>
+<p>We need factors of <span class="math inline">\(5 \cdot 4 = 20\)</span> that sum to <span class="math inline">\(9\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 20\)</span></td>
+<td><span class="math inline">\(21\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times 10\)</span></td>
+<td><span class="math inline">\(12\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\textcolor{red}{4} \times \textcolor{blue}{5}\)</span></td>
+<td><span class="math inline">\(9\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Fill the area model:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(5k^2\)</span></td>
+<td><span class="math inline">\(\textcolor{red}{4k}\)</span></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{blue}{5k}\)</span></td>
+<td><span class="math inline">\(4\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Factor rows:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(5k^2, 4k) &amp;= k \\
+GCF(5k, 4) &amp;= 1
+\end{align*}
+\]</span></p>
+<p>Factor columns:</p>
+<p><span class="math display">\[
+\begin{align*}
+GCF(5k^2, 5k) &amp;= 5k \\
+GCF(4k, 4) &amp;= 4
+\end{align*}
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(5k\)</span></th>
+<th><span class="math inline">\(4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(k\)</span></td>
+<td><span class="math inline">\(5k^2\)</span></td>
+<td><span class="math inline">\(4k\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(5k\)</span></td>
+<td><span class="math inline">\(4\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+5k^2 + 9k + 4 = (k + 1)(5k + 4)
+\]</span></p>
+<p>Don’t forget to put the GCF back!</p>
+<p><span class="math display">\[
+15k^2 + 27k + 12 = 3(k+1)(5k+4)
+\]</span></p>
+<hr>
+<div class="you-try" title="factor $21r^2 + 30r + 9$">
+<p>Start by taking out the <span class="math inline">\(GCF(21r^2, 30r, 9) = 3\)</span>.</p>
+<p>Then use the area model to factor <span class="math inline">\(7r^2 + 10r + 3\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(r\)</span></th>
+<th><span class="math inline">\(1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(7r\)</span></td>
+<td><span class="math inline">\(7r^2\)</span></td>
+<td><span class="math inline">\(7r\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(3r\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class="math display">\[
+21r^2 + 30r + 9 = 3(7r + 3)(r + 1)
+\]</span></p>
+</div>
+<hr>
+<div class="note" title="Proving the Area Model">
+<p>Does our approach to factoring always work?</p>
+<p>Let’s prove it using</p>
+<p>Compute the product <span class="math inline">\((px + m)(qx + n)\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(px\)</span></th>
+<th><span class="math inline">\(m\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(qx\)</span></td>
+<td><span class="math inline">\(pqx^2\)</span></td>
+<td><span class="math inline">\(qmx\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n\)</span></td>
+<td><span class="math inline">\(pnx\)</span></td>
+<td><span class="math inline">\(nm\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+(px + m)(qx + n) = pqx^2 + pnx + qmx + nm = pqx^2 + (pn + qm)x + nm
+\]</span></p>
+<p>The coefficients for this polynomial in standard form are <span class="math inline">\(a = pq\)</span>, <span class="math inline">\(b = pn + qm\)</span>, and <span class="math inline">\(c = nm\)</span>.</p>
+<p>Factoring that requires that we find numbers <span class="math inline">\(pq \cdot nm\)</span> that add up to <span class="math inline">\(pn + qm\)</span>. But this is true no matter what values we pick for <span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>, <span class="math inline">\(m\)</span>, and <span class="math inline">\(n\)</span>. And so we have proven our method.</p>
+</div>
+<p>To create a trinomial we can factor out an x from the two middle terms ### 5.5.2 - Special Patterns</p>
+<p>There are two special cases where factoring becomes much easier.</p>
+<ul>
+<li>Difference of squares</li>
+<li>Perfect square trinomials</li>
+</ul>
+<p>A <a href="" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a> has the form:</p>
+<p><span class="math display">\[
+(px)^2 - q^2
+\]</span></p>
+<p>Notice that there is no <span class="math inline">\(x\)</span> term. This means that the two middle terms cancel.</p>
+<p>As an area model, this looks like:</p>
+<div class="areabox">
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="math inline">\(px\)</span> | $q |<br>
+&nbsp;$px | $(px)^2 | $pqx |<br>
+&nbsp;<span class="math inline">\(-q\)</span> | <span class="math inline">\(-pqx\)</span> | <span class="math inline">\(-q^2\)</span> |</div>
+</div>
+<p>And so every difference of squares factors to:</p>
+<p><span class="math display">\[
+(px)^2 - q^2 = (px + q)(px - q)
+\]</span></p>
+<hr>
+<p><strong>Example 5:</strong> Difference of squares</p>
+<p>Factor <span class="math inline">\(16x^2 - 9\)</span>.</p>
+<p>Both <span class="math inline">\(16x^2\)</span> and <span class="math inline">\(9\)</span> are perfect squares. So the factorization becomes,</p>
+<p><span class="math display">\[
+16x^2 - 9 = (4x - 3)(4x + 3).
+\]</span></p>
+<div class="you-try" title="factor $49p^2 - 25$">
+<p><span class="math display">\[
+49p^2 - 25 = (7p + 5)(7p - 5)
+\]</span></p>
+</div>
+<hr>
+<p>Another special pattern is a <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect square trinomial">perfect square trinomial</a>. These always have the form:</p>
+<p><span class="math display">\[
+(px)^2 + 2pqx + q^2
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+(px)^2 - 2pqx + q^2
+\]</span></p>
+<p>Trinomials of this form always factor to</p>
+<p><span class="math display">\[
+(px)^2 + 2pqx + q^2 = (px + q)(px + q) = (px + q)^2
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+(px)^2 - 2pqx + q^2 = (px - q)(px - q) = (px - q)^2
+\]</span></p>
+<p><strong>Example 4:</strong> Perfect square trinomials</p>
+<p>Factor <span class="math inline">\(25m^2 + 30m + 9\)</span>.</p>
+<p>Notice that this trinomial can be written as a perfect square trinomial:</p>
+<p><span class="math display">\[
+(5m)^2 + (2 \cdot 5 \cdot 3)m + 3^2
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+25m^2 + 30m + 9 = (5m + 3)^2
+\]</span></p>
+<hr>
+<p><strong>Example 5:</strong> Perfect square with negative middle term</p>
+<p>Factor <span class="math inline">\(36z^2 - 12z + 1\)</span>.</p>
+<p>We can write this in the form of a perfect square trinomial:</p>
+<p><span class="math display">\[
+(6z)^2 - (2 \cdot 6 \cdot 1)z + 1^2
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+36z^2 - 12z + 1 = (6z - 1)^2
+\]</span></p>
+<div class="you-try" title="factor $9a^2 - 30a + 25$">
+<p><span class="math display">\[
+9a^2 - 30a + 25 = (3a)^2 - (2 \cdot 3 \cdot 5)a + 5^2
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+9a^2 - 30a + 25 = (3a - 5)^2
+\]</span></p>
+</div>
+<hr>
+<div class="note" title="Prime Trinomials">
+<p>Just like there are prime numbers, there are also prime polynomials. For example,</p>
+<p><span class="math display">\[
+3x^2 + 10x + 5.
+\]</span></p>
+<p>How can you tell that the polynomial is prime?</p>
+<p>It is because there is no factor pair for <span class="math inline">\(3 \cdot 5 = 15\)</span> that add up to <span class="math inline">\(10\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 15\)</span></td>
+<td><span class="math inline">\(16\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3 \times 5\)</span></td>
+<td><span class="math inline">\(8\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(3x^2 + 10x + 5\)</span> is <strong>prime</strong></p>
+</div>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="factoring-when-a-neq-1">✍️ Practice On Your Own</h2>
+<p><strong>Trinomials with <span class="math inline">\(a \neq 1\)</span></strong> Factor completely. If the polynomial cannot be factored, write <strong>prime</strong>.</p>
+<ol type="1">
+<li><p><span class="math inline">\(6x^2 + 19x + 10\)</span></p></li>
+<li><p><span class="math inline">\(15y^2 + 29y + 14\)</span></p></li>
+<li><p><span class="math inline">\(8m^2 + 2m - 3\)</span></p></li>
+<li><p><span class="math inline">\(12n^2 + 7n - 10\)</span></p></li>
+<li><p><span class="math inline">\(9a^2 + 12a + 4\)</span></p></li>
+<li><p><span class="math inline">\(18p^2 + p - 5\)</span></p></li>
+<li><p><span class="math inline">\(14w^2 - 9w - 2\)</span></p></li>
+<li><p><span class="math inline">\(16r^2 + 24r + 9\)</span></p></li>
+<li><p><span class="math inline">\(20k^2 + 17k - 21\)</span></p></li>
+<li><p><span class="math inline">\(15g^2 - 14g + 3\)</span></p></li>
+</ol>
+<p><strong>Special Patterns</strong></p>
+<ol start="11" type="1">
+<li><p><span class="math inline">\(4s^2 - 49\)</span></p></li>
+<li><p><span class="math inline">\(81x^2 - 16\)</span></p></li>
+<li><p><span class="math inline">\(100m^2 + 40m + 4\)</span></p></li>
+<li><p><span class="math inline">\(49t^2 + 14t + 1\)</span></p></li>
+<li><p><span class="math inline">\(64u^2 - 121\)</span></p></li>
+</ol>
+<p><strong>Mixed Practice</strong><br>
+Factor completely. If the polynomial cannot be factored, write <strong>prime</strong>.</p>
+<ol start="16" type="1">
+<li><p><span class="math inline">\(3x^2 + 5x + 8\)</span></p></li>
+<li><p><span class="math inline">\(10y^2 + 11y + 3\)</span></p></li>
+<li><p><span class="math inline">\(7v^2 - 2v - 3\)</span></p></li>
+<li><p><span class="math inline">\(4p^2 + p + 1\)</span></p></li>
+<li><p><span class="math inline">\(15z^2 - z - 2\)</span></p></li>
+<li><p><span class="math inline">\(6x^2 + 9x + 3\)</span></p></li>
+<li><p><span class="math inline">\(6 + m^2 + 5m\)</span></p></li>
+<li><p><span class="math inline">\(-2a^2 + 7a - 3\)</span></p></li>
+<li><p><span class="math inline">\(-9p^2 - 3p + 6\)</span></p></li>
+<li><p><span class="math inline">\(4q - 5 + q^2\)</span></p></li>
+<li><p><span class="math inline">\(12r^2 - 27\)</span></p></li>
+<li><p><span class="math inline">\(21t^2 + 22t - 8\)</span></p></li>
+<li><p><span class="math inline">\(4x^2 - 20x + 24\)</span></p></li>
+<li><p><span class="math inline">\(11y^2 + 7y + 2\)</span></p></li>
+<li><p><span class="math inline">\(5 - 30z + 25z^2\)</span></p></li>
+</ol>
+<p><strong>Challenge Problems</strong></p>
+<ol start="31" type="1">
+<li><p>Factor completely: <span class="math inline">\(24x^3 + 38x^2 + 15x\)</span></p></li>
+<li><p>Identify the pattern and factor: <span class="math inline">\(121a^4 - 64b^4\)</span></p></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li><span class="math inline">\((3x + 2)(2x + 5)\)</span><br>
+</li>
+<li><span class="math inline">\((y + 1)(15y + 14)\)</span><br>
+</li>
+<li><span class="math inline">\((2m - 1)(4m + 3)\)</span><br>
+</li>
+<li><span class="math inline">\((3n - 2)(4n + 5)\)</span><br>
+</li>
+<li><span class="math inline">\((3a + 2)^2\)</span><br>
+</li>
+<li><span class="math inline">\((2p-1)(9p+5)\)</span><br>
+</li>
+<li><span class="math inline">\(prime\)</span><br>
+</li>
+<li><span class="math inline">\((4r + 3)^2\)</span><br>
+</li>
+<li><span class="math inline">\((5k-3)(4k+7)\)</span><br>
+</li>
+<li><span class="math inline">\((3g - 1)(5g - 3)\)</span><br>
+</li>
+<li><span class="math inline">\((2s - 7)(2s + 7)\)</span><br>
+</li>
+<li><span class="math inline">\((9x - 4)(9x + 4)\)</span><br>
+</li>
+<li><span class="math inline">\((10m + 2)^2\)</span><br>
+</li>
+<li><span class="math inline">\((7t + 1)^2\)</span><br>
+</li>
+<li><span class="math inline">\((8u - 11)(8u + 11)\)</span><br>
+</li>
+<li><span class="math inline">\(prime\)</span><br>
+</li>
+<li><span class="math inline">\((5y + 3)(2y + 1)\)</span><br>
+</li>
+<li><span class="math inline">\((7v + 3)(v - 1)\)</span><br>
+</li>
+<li><span class="math inline">\(prime\)</span><br>
+</li>
+<li><span class="math inline">\((5z - 2)(3z + 1)\)</span><br>
+</li>
+<li><span class="math inline">\(3(x + 1)(2x + 1)\)</span><br>
+</li>
+<li><span class="math inline">\((m + 2)(m + 3)\)</span><br>
+</li>
+<li><span class="math inline">\(-(2a - 1)(a - 3)\)</span><br>
+</li>
+<li><span class="math inline">\(-3(p + 1)(3p - 2)\)</span><br>
+</li>
+<li><span class="math inline">\((q - 1)(q + 5)\)</span><br>
+</li>
+<li><span class="math inline">\(3(2r - 3)(2r + 3)\)</span><br>
+</li>
+<li><span class="math inline">\((3t + 4)(7t - 2)\)</span><br>
+</li>
+<li><span class="math inline">\(4(x - 3)(x - 2)\)</span><br>
+</li>
+<li><span class="math inline">\(prime\)</span><br>
+</li>
+<li><span class="math inline">\(5(z - 1)(5z - 1)\)</span><br>
+</li>
+</ol>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
