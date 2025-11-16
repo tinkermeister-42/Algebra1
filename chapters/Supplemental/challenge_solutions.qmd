@@ -441,3 +441,13 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 32. $(k - 1)(k + 1)(k - 3)(k + 3)$
 
 :::
+
+### 5.5 - Factoring: General Trinomials & Special Patterns
+
+:::{.ansers}
+
+31. $x(12x + 5)(2x + 3)$  
+
+32. $(11a^2 - 8b^2)(11a^2 + 8b^2)$
+
+:::

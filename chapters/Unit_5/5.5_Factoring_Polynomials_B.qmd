@@ -1,33 +1,700 @@
 # 5.5 - Factoring: General Trinomials & Special Patterns {.unnumbered}
 
-Coming Soon
+Up until now, the trinomials you have been factoring have all started the same way. The first term has always been something like $x^2$. That made the area model feel comfortable, because the first box always held $x^2$ and the first terms in the factors were simply $x$ and $x$.
+
+But what if the trinomial started with something like $6x^2$ instead of $x^2$?  
+What would go in the first box then, and what would the first terms in the factors look like?  
+
+Would the same process still work?
+
+Here is another question to think about. What if the trinomial does not fit the same product sum pattern you used before? Is there some structure hiding inside it, or is it something completely different?
+
+These questions will guide us as we look at trinomials that do not follow the familiar patterns from earlier lessons. Some will behave in ways you expect, and others will require a new idea or two. As we explore them, the area model will continue to be our main tool, and you will see how it adapts to these new situations.
+
+
 
 :::{.objectives}
-
-- [ ] I can factor trinomials where $a \neq 1$ using an area model.
-- [ ] I can recognize and factor special products.
-- [ ] I can recognize when an expression is not factorable over the integers.
-
+- [ ] I can factor trinomials when $a \neq 1$ using structured strategies.
+- [ ] I can recognize and factor special patterns like difference of squares and perfect-square trinomials.
+- [ ] I can decide when a trinomial is not factorable over the integers.
 :::
 
 :::{.vocab}
-
-{{< glink term >}}, ...
-
+{{< glink "difference of squares" >}},  {{< glink "factorable" >}},  {{< glink "perfect-square trinomial" >}}, {{< glink "trinomial" >}}
 :::
 
 {{< warmup >}}
 
+1. When you factored trinomials like $x^2 + 9x + 20$, what made the process predictable?
+
+2. Look at $6x^2 + 11x + 3$. What is the first thing you notice about its structure compared to the ones you have already factored?
+
+3. Swanhilda claimed that $6x^2 + 7x + 10 = (x + 2)(x + 5)$. Explain why this cannot be correct.
+
 {{< learn >}}
 
-{{< practice >}}
+### 5.5.1 - Factoring When $a \neq 1$
 
-:::{.answers}
+So far, every trinomial you have factored has looked like this:
+
+$$
+x^2 + bx + c
+$$
+
+When the first term is $x^2$, the factoring process feels straightforward. You only need to look for factors of $c$ that add up to $b$. The first terms of the factors are always $x$ and $x$, so there is nothing to decide.
+
+In general, a trinomial does not always start with $x^2$. It can have any integer in front, like this:
+
+$$
+ax^2 + bx + c
+$$
+
+Take $6x^2 - 7x - 3$ for example. Since the first coefficient is $6$, there are several possible ways to split the first term in the area model. The first terms of the factors are no longer automatic.
+
+To handle this, we adjust the process you already know. Instead of looking for factors of $c$ that add up to $b$, we now look for factors of $a \cdot c$ that add up to $b$. This gives us the pieces we need to build the area model correctly.
+
+
+---
+
+**Example 1:**  An updated area model  
+
+Factor $6x^2 + 11x + 3$.
+
+Like we did before, let's fill in what we know.
+
+:::{.areabox}
+|            |      ?      |       ?     |
+| ---------- | ----------- | ----------- |
+|     ?      |   $\textcolor{red}{6}x^2$    |       ?     |
+|     ?      |      ?      |       $\textcolor{blue}{3}$   |
+:::
+
+We need to find factors of $\textcolor{red}{6} \cdot \textcolor{blue}{3} = 18$ that add up to $11$.
+
+|    Factors    |   Factor Sum   |
+| ------------- | -------------- |
+| $1 \times 18$ |      $18$      |
+| $\textcolor{red}{2} \times \textcolor{blue}{9}$  |      $11$ ✓    |
+| $3 \times 6$  |      $9$       |
+
+
+Now we can fill out the rest of the partial products.
+
+:::{.areabox}
+|            |      ?      |       ?     |
+| ---------- | ----------- | ----------- |
+|     ?      |   $6x^2$    |      $\textcolor{blue}{9x}$   |
+|     ?      |    $\textcolor{red}{2x}$     |       $3$   |
+:::
+
+The last step is to fill in the factors themselves, but it is a little trickier than before. There are several possibilities for the first terms: $6x, x$, $3x, 2x$, $x, 6x$, $2x, 3x$.
+
+You can guess and check to solve this, but that becomes very inefficient if there are many possibilities. Instead, we will find the GCF for each row and column of partial products.
+
+First the rows:
+$$
+\begin{align*}
+GCF(6x^2, 9x) &= \textcolor{red}{3x} \\
+GCF(2x, 3) &= \textcolor{blue}{1} \\
+\end{align*}
+$$
+
+:::{.areabox}
+|            |      ?      |       ?     |
+| ---------- | ----------- | ----------- |
+|    $\textcolor{red}{3x}$    |   $6x^2$    |      $9x$   |
+|     $\textcolor{blue}{1}$    |    $2x$     |       $3$   |
+:::
+
+Now the columns:
+$$
+\begin{align*}
+GCF(6x^2, 2x) &= \textcolor{red}{2x} \\
+GCF(9x, 3) &= \textcolor{blue}{3}
+\end{align*}
+$$
+
+:::{.areabox}
+|            |      $\textcolor{red}{2x}$   |       $\textcolor{blue}{3}$   |
+| ---------- | ----------- | ----------- |
+|    $3x$    |   $6x^2$    |      $9x$   |
+|     $1$    |    $2x$     |       $3$   |
+:::
+
+So,
+
+$$
+6x^2 + 11x + 3 = (3x + 1)(2x + 3)
+$$
+
+---
+
+:::{.you-try title="factor $10y^2 + 13y + 3$"}
+
+Look for factors of $10 \cdot 3 = 30$ that sum to $13$.
+
+|     Factors    |    Factor Sum    |
+| -------------- | ---------------- |
+|    $1 x 30$    |       $31$       |
+|    $2 x 15$    |       $17$       |
+|    $3 x 10$    |       $13$ ✓     |
+|    $5 x 6$     |       $11$       |
+
+Now complete the area model.
+
+:::{.areabox}
+|            |      $y$   |       $1$   |
+| ---------- | ----------- | ----------- |
+|    $10y$    |   $10y^2$    |      $10y$   |
+|     $3$    |    $3y$     |       $3$   |
+:::
+
+So,
+
+$$
+10y^2 + 13y + 3 = (10y + 3)(y + 1)
+$$
+
+:::
+
+---
+
+**Example 2:** Negative constant term
+
+Factor $8m^2 + 2m - 3$.
+
+We need factors of $8 \cdot -3 = -24$ that add up to $2$. Since the sum is positive, the larger factor needs to be positive.
+
+|    Factors     |   Factor Sum   |
+| -------------- | -------------- |
+| $-1 \times 24$ | $23$          |
+| $-2 \times  12$ | $10$          |
+| $\textcolor{red}{-4} \times \textcolor{blue}{6}$ | $2$ ✓ |
+| $-3 \times 8$  | $5$           |
+
+Now place the partial products.
+
+:::{.areabox}
+|            |      ?        |        ?        |
+| ---------- | ------------- | --------------- |
+|     ?      |   $8m^2$      |   $\textcolor{blue}{6m}$    |
+|     ?      | $\textcolor{red}{-4m}$ |     $-3$        |
+:::
+
+Factor rows:
+
+$$
+\begin{align*}
+GCF(8m^2, 6m) &= 2m \\
+GCF(-4m, -3) &= -1
+\end{align*}
+$$
+
+:::{.areabox}
+|            |      ?      |       ?     |
+| ---------- | ----------- | ----------- |
+|   $2m$     |   $8m^2$    |     $6m$    |
+|   $-1$     |   $-4m$     |     $-3$    |
+:::
+
+Factor columns:
+
+$$
+\begin{align*}
+GCF(8m^2, -4m) &= 4m \\
+GCF(6m, -3) &= 3
+\end{align*}
+$$
+
+:::{.areabox}
+|            |     $4m$     |      $3$      |
+| ---------- | ------------ | ------------- |
+|   $2m$     |   $8m^2$     |     $6m$      |
+|   $-1$     |   $-4m$      |     $-3$      |
+:::
+
+So,
+
+$$
+8m^2 + 2m - 3 = (2m - 1)(4m + 3)
+$$
+
+---
+
+:::{.you-try title="factor $14w^2 + 3w - 2$"}
+Look for factors of $14 \cdot (-2) = -28$ that add to $3$.  
+
+|  Factors   |    Factor Sum   |
+| ---------- | --------------- |
+|  $-1 \times 28$ | $27$       |
+|  $-2 \times 14$ |  $12$      |
+|  $-4 \times 7$  |  $3$ ✓     |
+
+:::
+
+---
+
+**Example 3:** Negative middle term
+
+Factor $12n^2 - 25n + 2$.
+
+We need factors of $12 \cdot 2 = 24$ that add to $-25$.
+
+|    Factors     |   Factor Sum   |
+| -------------- | -------------- |
+| $\textcolor{red}{-1} \times \textcolor{blue}{-24}$ | $-25$ ✓      |
+| $-2 \times -12$ | $-14$         |
+| $-3 \times -8$ | $-11$ |
+| $-4 \times -6$ | $-10$  |
+
+Split and fill the model:
+
+:::{.areabox}
+|            |        ?         |        ?        |
+| ---------- | ---------------- | ---------------- |
+|     ?      |     $12n^2$      |   $\textcolor{red}{-n}$      |
+|     ?      |   $\textcolor{blue}{-24n}$      |      $2$         |
+:::
+
+Factor rows:
+
+$$
+\begin{align*}
+GCF(12n^2, -n) &= n \\
+GCF(-24n, 2) &= -2
+\end{align*}
+$$
+
+Factor columns:
+
+$$
+\begin{align*}
+GCF(12n^2, -24n) &= 12n \\
+GCF(-n, 2) &= -1
+\end{align*}
+$$
+
+:::{.areabox}
+|            |      $12n$     |       $-1$       |
+| ---------- | -------------- | ---------------- |
+|   $n$     |    $12n^2$     |      $-n$       |
+|   $-2$     |    $-24n$       |       $2$        |
+:::
+
+So,
+
+$$
+12n^2 - 25n + 2 = (12n - 1)(n - 2)
+$$
+
+---
+
+:::{.you-try title="factor $18p^2 - 13p - 5$"}
+
+Use factors of $18 \cdot -5 = -90$ that add to $-13$.  
+
+|  Factors          |   Factor Sum  |
+| ----------------- | ------------- |
+| $1 \times -90$    |  $-89$        |
+| $2 \times -45$    |  $-43$        |
+| $3 \times -30$    |  $-27$        |
+| $5 \times -18$    |  $-13$ ✓      |
+| $6 \times -15$    |  $-9$         |
+| $9 \times -10$    |  $-1$         |
+
+Now complete the area model:
+
+:::{.areabox}
+|            |      $p$       |       $-1$       |
+| ---------- | -------------- | ---------------- |
+|   $18p$    |    $18p^2$     |      $-18p$      |
+|   $5$      |     $5p$       |       $-5$       |
+:::
+
+So,
+
+$$
+18p^2 - 13p - 5 = (18p + 5)(p - 1)
+$$
 
 :::
 
 
+---
+
+**Example 4:** A GCF must be taken out first
+
+Factor $15k^2 + 27k + 12$.
+
+All three terms share a GCF of $3$.
+
+$$
+15k^2 + 27k + 12 = 3(5k^2 + 9k + 4)
+$$
+
+Now factor the trinomial inside the parentheses.
+
+We need factors of $5 \cdot 4 = 20$ that sum to $9$.
+
+|    Factors     |   Factor Sum   |
+| -------------- | -------------- |
+| $1 \times 20$  | $21$           |
+| $2 \times 10$  | $12$           |
+| $\textcolor{red}{4} \times \textcolor{blue}{5}$ | $9$ ✓ |
+
+Fill the area model:
+
+:::{.areabox}
+|            |        ?         |       ?       |
+| ---------- | ---------------- | -------------- |
+|     ?      |     $5k^2$       |   $\textcolor{red}{4k}$     |
+|     ?      |  $\textcolor{blue}{5k}$      |      $4$       |
+:::
+
+Factor rows:
+
+$$
+\begin{align*}
+GCF(5k^2, 4k) &= k \\
+GCF(5k, 4) &= 1
+\end{align*}
+$$
+
+Factor columns:
+
+$$
+\begin{align*}
+GCF(5k^2, 5k) &= 5k \\
+GCF(4k, 4) &= 4
+\end{align*}
+$$
+
+:::{.areabox}
+|            |     $5k$     |      $4$      |
+| ---------- | ------------ | ------------- |
+|    $k$     |   $5k^2$     |     $4k$      |
+|    $1$     |    $5k$      |      $4$      |
+:::
+
+So,
+
+$$
+5k^2 + 9k + 4 = (k + 1)(5k + 4)
+$$
+
+Don't forget to put the GCF back!
+
+$$
+15k^2 + 27k + 12 = 3(k+1)(5k+4)
+$$
 
 
+---
 
+:::{.you-try title="factor $21r^2 + 30r + 9$"}
+
+Start by taking out the $GCF(21r^2, 30r, 9) = 3$.  
+
+Then use the area model to factor $7r^2 + 10r + 3$.
+
+:::{.areabox}
+|            |     $r$     |      $1$      |
+| ---------- | ------------ | ------------- |
+|    $7r$     |   $7r^2$     |     $7r$      |
+|    $3$     |    $3r$      |      $3$      |
+:::
+
+$$
+21r^2 + 30r + 9 = 3(7r + 3)(r + 1)
+$$
+
+:::
+
+---
+
+:::{.note title="Proving the Area Model"}
+
+Does our approach to factoring always work? 
+
+Let's prove it using 
+
+Compute the product $(px + m)(qx + n)$.
+
+:::{.areabox}
+|      |  $px$  |  $m$   |
+| ---- | ------ | ------ |
+| $qx$ | $pqx^2$ | $qmx$  |
+|  $n$ | $pnx$   |  $nm$  |
+:::
+
+So,
+
+$$
+(px + m)(qx + n) = pqx^2 + pnx + qmx + nm = pqx^2 + (pn + qm)x + nm
+$$
+
+The coefficients for this polynomial in standard form are $a = pq$, $b = pn + qm$, and $c = nm$. 
+
+Factoring that requires that we find numbers $pq \cdot nm$ that add up to $pn + qm$. But this is true no matter what values we pick for $p$, $q$, $m$, and $n$. And so we have proven our method.
+:::
+
+To create a trinomial we can factor out an x from the two middle terms
+### 5.5.2 - Special Patterns
+
+There are two special cases where factoring becomes much easier.
+
+* Difference of squares
+* Perfect square trinomials
+  
+A {{< glink "difference of squares" >}} has the form:
+
+$$
+(px)^2 - q^2
+$$
+
+Notice that there is no $x$ term. This means that the two middle terms cancel. 
+
+As an area model, this looks like:
+
+:::{.areabox}
+|       |   $px$    |  $q    |
+|  $px  |   $(px)^2 |  $pqx  |
+|  $-q$ |   $-pqx$  |  $-q^2$ |
+:::
+
+And so every difference of squares factors to:
+
+$$
+(px)^2 - q^2 = (px + q)(px - q)
+$$
+
+---
+
+**Example 5:** Difference of squares 
+
+Factor $16x^2 - 9$.
+
+Both $16x^2$ and $9$ are perfect squares. So the factorization becomes,
+
+$$
+16x^2 - 9 = (4x - 3)(4x + 3).
+$$
+
+:::{.you-try title="factor $49p^2 - 25$"}
+
+$$
+49p^2 - 25 = (7p + 5)(7p - 5)
+$$
+
+:::
+
+---
+
+Another special pattern is a {{< glink "perfect square trinomial" >}}. These always have the form:
+
+$$
+(px)^2 + 2pqx + q^2
+$$
+
+or 
+
+$$
+(px)^2 - 2pqx + q^2
+$$
+
+Trinomials of this form always factor to
+
+$$
+(px)^2 + 2pqx + q^2 = (px + q)(px + q) = (px + q)^2
+$$
+
+or 
+
+$$
+(px)^2 - 2pqx + q^2 = (px - q)(px - q) = (px - q)^2
+$$
+
+
+**Example 4:** Perfect square trinomials
+
+Factor $25m^2 + 30m + 9$.
+
+Notice that this trinomial can be written as a perfect square trinomial:
+
+$$
+(5m)^2 + (2 \cdot 5 \cdot 3)m + 3^2
+$$
+
+So,
+
+$$
+25m^2 + 30m + 9 = (5m + 3)^2
+$$
+
+---
+
+**Example 5:** Perfect square with negative middle term
+
+Factor $36z^2 - 12z + 1$.
+
+We can write this in the form of a perfect square trinomial:
+
+$$
+(6z)^2 - (2 \cdot 6 \cdot 1)z + 1^2
+$$
+
+So,
+
+$$
+36z^2 - 12z + 1 = (6z - 1)^2
+$$
+
+
+:::{.you-try title="factor $9a^2 - 30a + 25$"}
+
+$$
+9a^2 - 30a + 25 = (3a)^2 - (2 \cdot 3 \cdot 5)a + 5^2
+$$
+
+So,
+
+$$
+9a^2 - 30a + 25 = (3a - 5)^2
+$$
+
+:::
+
+---
+
+:::{.note title="Prime Trinomials"}
+
+Just like there are prime numbers, there are also prime polynomials. For example,
+
+$$
+3x^2 + 10x + 5.
+$$
+
+How can you tell that the polynomial is prime?
+
+It is because there is no factor pair for $3 \cdot 5 = 15$ that add up to $10$.
+
+|   Factors  |  Factor Sum |
+| ---------- | ----------- |
+|  $1 \times 15$  |  $16$       |
+|  $3 \times 5$   |  $8$        |
+
+$3x^2 + 10x + 5$ is **prime**
+
+:::
+
+---
+
+{{< practice >}}
+
+**Trinomials with $a \neq 1$**
+Factor completely. If the polynomial cannot be factored, write **prime**.
+
+1. $6x^2 + 19x + 10$  
+
+2. $15y^2 + 29y + 14$  
+
+3. $8m^2 + 2m - 3$  
+
+4. $12n^2 + 7n - 10$  
+
+5. $9a^2 + 12a + 4$  
+
+6. $18p^2 + p - 5$  
+
+7. $14w^2 - 9w - 2$  
+
+8. $16r^2 + 24r + 9$  
+
+9. $20k^2 + 17k - 21$  
+
+10. $15g^2 - 14g + 3$
+
+**Special Patterns**
+
+11. $4s^2 - 49$  
+
+12. $81x^2 - 16$  
+
+13. $100m^2 + 40m + 4$  
+
+14. $49t^2 + 14t + 1$  
+
+15. $64u^2 - 121$
+
+**Mixed Practice**  
+Factor completely. If the polynomial cannot be factored, write **prime**.
+
+16. $3x^2 + 5x + 8$  
+
+17. $10y^2 + 11y + 3$  
+
+18. $7v^2 - 2v - 3$  
+
+19. $4p^2 + p + 1$  
+
+20. $15z^2 - z - 2$  
+
+21. $6x^2 + 9x + 3$  
+
+22. $6 + m^2 + 5m$  
+
+23. $-2a^2 + 7a - 3$  
+
+24. $-9p^2 - 3p + 6$  
+
+25. $4q - 5 + q^2$  
+
+26. $12r^2 - 27$  
+
+27. $21t^2 + 22t - 8$  
+
+28. $4x^2 - 20x + 24$  
+
+29. $11y^2 + 7y + 2$  
+
+30. $5 - 30z + 25z^2$
+
+**Challenge Problems**
+
+31. Factor completely: $24x^3 + 38x^2 + 15x$  
+
+32. Identify the pattern and factor: $121a^4 - 64b^4$
+
+:::{.answers}
+1. $(3x + 2)(2x + 5)$  
+2. $(y + 1)(15y + 14)$  
+3. $(2m - 1)(4m + 3)$  
+4. $(3n - 2)(4n + 5)$  
+5. $(3a + 2)^2$  
+6. $(2p-1)(9p+5)$  
+7. $prime$  
+8. $(4r + 3)^2$  
+9. $(5k-3)(4k+7)$  
+10. $(3g - 1)(5g - 3)$  
+11. $(2s - 7)(2s + 7)$  
+12. $(9x - 4)(9x + 4)$  
+13. $(10m + 2)^2$  
+14. $(7t + 1)^2$  
+15. $(8u - 11)(8u + 11)$  
+16. $prime$  
+17. $(5y + 3)(2y + 1)$  
+18. $(7v + 3)(v - 1)$  
+19. $prime$  
+20. $(5z - 2)(3z + 1)$  
+21. $3(x + 1)(2x + 1)$  
+22. $(m + 2)(m + 3)$  
+23. $-(2a - 1)(a - 3)$  
+24. $-3(p + 1)(3p - 2)$  
+25. $(q - 1)(q + 5)$  
+26. $3(2r - 3)(2r + 3)$  
+27. $(3t + 4)(7t - 2)$  
+28. $4(x - 3)(x - 2)$  
+29. $prime$  
+30. $5(z - 1)(5z - 1)$  
+:::
 

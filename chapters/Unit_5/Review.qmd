@@ -1,3 +1,170 @@
 # Review {.unnumbered}
 
-Coming Soon
+This review brings together the key skills from **Unit 5: Exponents and Polynomials**.  
+It focuses on exponent rules, simplifying expressions, and building fluency with polynomials and factoring.
+
+**What you’ll review**
+
+* Using exponent rules to simplify expressions  
+* Simplifying and combining polynomials  
+* Multiplying polynomials  
+* Factoring using GCF  
+* Factoring trinomials and recognizing special patterns  
+
+---
+
+### Exponent Rules (5.1)
+
+Simplify each expression.
+
+1. $x^3 \cdot x^5$
+
+2. $\dfrac{a^7}{a^2}$
+
+3. $(m^4)^3$
+
+4. $g^{-3}$
+
+5. $\dfrac{2x^5 y^3}{4x^2 y}$
+
+6. $(3p^2 q)^2$
+
+7. $\dfrac{h^0 k^4}{k^{-2}}$
+
+8. $\left(\dfrac{b^3}{b^{-1}}\right)^2$
+
+9. $(xy^2)^3$
+
+10. $\dfrac{12x^{-2} y^5}{3y^2}$
+
+---
+
+### Simplifying Polynomials (5.2)
+
+Write each expression in standard form.
+
+11. $3x^2 + 5x - 9 + 2x^2$
+
+12. $7m - 4 + 3m^2 - 9m$
+
+13. $(2r + 5) - (3r - 8)$
+
+14. $4n^2 - 6n + 1 + (n^2 + 2n - 7)$
+
+15. $5a(2a - 3) + a^2$
+
+16. $-(3k^2 - 7k + 4) + (2k^2 + 5k)$
+
+---
+
+### Multiplying Polynomials (5.3)
+
+Multiply and write in standard form.
+
+17. $(x + 3)(x + 5)$
+
+18. $(2m - 1)(m + 4)$
+
+19. $(p - 6)^2$
+
+20. $(3y + 2)(2y - 5)$
+
+21. $(t + 7)(t^2 - 3t + 1)$
+
+22. $(4w - 3)(w - 2)$
+
+23. $(q + 5)(q - 5)$
+
+24. $(2x - 3y)(x + y)$
+
+---
+
+### Factoring GCF (5.4)
+
+Factor each expression completely.
+
+25. $12x^2 + 18x$
+
+26. $4m^3 - 20m$
+
+27. $15p^4 + 10p^3$
+
+28. $9a^2 b - 6ab^2$
+
+29. $7k^5 - 21k^3$
+
+---
+
+### Factoring Trinomials and Special Patterns (5.5)
+
+Factor each expression completely.
+
+30. $x^2 + 7x + 12$
+
+31. $n^2 - 5n + 6$
+
+32. $2r^2 + 11r + 5$
+
+33. $3y^2 - 2y - 8$
+
+34. $m^2 - 16$
+
+35. $25p^2 - 30p + 9$
+
+36. $4x^2 + 4x - 15$
+
+37. $k^2 + 10k + 21$
+
+38. $6a^2 - 7a - 3$
+
+39. $9b^2 - 1$
+
+---
+
+:::{.answers}
+
+1. $x^8$  
+2. $a^5$  
+3. $m^{12}$  
+4. $\dfrac{1}{g^3}$  
+5. $\dfrac{1}{2} x^3 y^2$  
+6. $9p^4 q^2$  
+7. $k^6$  
+8. $b^8$  
+9. $x^3 y^6$  
+10. $\dfrac{4y^3}{x^2}$  
+
+11. $5x^2 + 5x - 9$  
+12. $3m^2 - 2m - 4$  
+13. $-r + 13$  
+14. $5n^2 - 4n - 6$  
+15. $11a^2 - 15a$  
+16. $-k^2 + 12k - 4$  
+
+17. $x^2 + 8x + 15$  
+18. $2m^2 + 7m - 4$  
+19. $p^2 - 12p + 36$  
+20. $6y^2 - 11y - 10$  
+21. $t^3 + 4t^2 - 20t + 7$  
+22. $4w^2 - 11w + 6$  
+23. $q^2 - 25$  
+24. $2x^2 - x y - 3y^2$  
+
+25. $6x(2x + 3)$  
+26. $4m(m^2 - 5)$  
+27. $5p^3(3p + 2)$  
+28. $3ab(3a - 2b)$  
+29. $7k^3(k^2 - 3)$  
+
+30. $(x + 3)(x + 4)$  
+31. $(n - 2)(n - 3)$  
+32. $(2r + 1)(r + 5)$  
+33. $(3y + 4)(y - 2)$  
+34. $(m - 4)(m + 4)$  
+35. $(5p - 3)^2$  
+36. $(2x + 5)(2x - 3)$  
+37. $(k + 3)(k + 7)$  
+38. $(3a + 1)(2a - 3)$  
+39. $(3b - 1)(3b + 1)$  
+
+:::
