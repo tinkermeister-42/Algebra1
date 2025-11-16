@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2.4 - The Distributive Property – DHS Algebra 1</title>
+<title>5.4 - Factoring: GCF &amp; Basic Trinomials – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html" rel="next">
-<link href="../../chapters/Unit_2/2.3_Combining_Like_Terms.html" rel="prev">
+<link href="../../chapters/Unit_5/5.5_Factoring_Polynomials_B.html" rel="next">
+<link href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -85,6 +85,10 @@ window.MathJax = {
   }
 };
 </script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -142,7 +146,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.4_The_Distributive_Property.html">2.4 - The Distributive Property</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.4_Factoring_Polynomials_A.html">5.4 - Factoring: GCF &amp; Basic Trinomials</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -246,13 +250,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Unit 2: Algebraic Expressions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_2/index.html" class="sidebar-item-text sidebar-link">
@@ -279,7 +283,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_2/2.4_The_Distributive_Property.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Unit_2/2.4_The_Distributive_Property.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.4 - The Distributive Property</span></a>
   </div>
 </li>
@@ -435,13 +439,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Unit 5: Exponents &amp; Polynomials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_5/index.html" class="sidebar-item-text sidebar-link">
@@ -468,7 +472,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials_A.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_5/5.4_Factoring_Polynomials_A.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">5.4 - Factoring: GCF &amp; Basic Trinomials</span></a>
   </div>
 </li>
@@ -643,20 +647,18 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-the-distributive-property" id="toc-what-is-the-distributive-property" class="nav-link active" data-scroll-target="#what-is-the-distributive-property">2.4.1 - What Is the Distributive Property?</a></li>
-  <li><a href="#distributing-with-negatives" id="toc-distributing-with-negatives" class="nav-link" data-scroll-target="#distributing-with-negatives">2.4.2 - Distributing with Negatives</a></li>
-  <li><a href="#distribute-then-combine-like-terms" id="toc-distribute-then-combine-like-terms" class="nav-link" data-scroll-target="#distribute-then-combine-like-terms">2.4.3 - Distribute, Then Combine Like Terms</a></li>
-  <li><a href="#reverse-it-factoring-out-a-common-factor" id="toc-reverse-it-factoring-out-a-common-factor" class="nav-link" data-scroll-target="#reverse-it-factoring-out-a-common-factor">2.4.4 - Reverse It: Factoring Out a Common Factor</a></li>
-  <li><a href="#check-your-work" id="toc-check-your-work" class="nav-link" data-scroll-target="#check-your-work">2.4.5 - Check Your Work</a></li>
+  <li><a href="#factoring-out-a-gcf" id="toc-factoring-out-a-gcf" class="nav-link active" data-scroll-target="#factoring-out-a-gcf">5.4.1 - Factoring Out a GCF</a></li>
+  <li><a href="#area-models-and-basic-trinomials" id="toc-area-models-and-basic-trinomials" class="nav-link" data-scroll-target="#area-models-and-basic-trinomials">5.4.2 – Area Models and Basic Trinomials</a></li>
+  <li><a href="#mixed-expressions-gcf-and-area-model" id="toc-mixed-expressions-gcf-and-area-model" class="nav-link" data-scroll-target="#mixed-expressions-gcf-and-area-model">5.4.3 – Mixed Expressions (GCF and Area Model)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_2/index.html">Unit 2: Algebraic Expressions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_2/2.4_The_Distributive_Property.html">2.4 - The Distributive Property</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_5/index.html">Unit 5: Exponents &amp; Polynomials</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_5/5.4_Factoring_Polynomials_A.html">5.4 - Factoring: GCF &amp; Basic Trinomials</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">2.4 - The Distributive Property</h1>
+<h1 class="title">5.4 - Factoring: GCF &amp; Basic Trinomials</h1>
 </div>
 
 
@@ -673,361 +675,991 @@ window.Quarto = {
 </header>
 
 
-<p>Imagine your football (soccer) team wants to order new jerseys. Each jersey costs $25, and to add your team’s logo it’s another $5 per jersey.</p>
-<p>Since there are 11 players on the team, you need 11 jerseys. You could figure out the total cost in two different ways:</p>
-<p>First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = $330.</p>
-<p>Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = $330.</p>
-<p>Either way, you get the same answer. What we just did actually followed a rule in algebra called the <a href="" class="glossary-link" data-slug="distributive-property" data-original-href="#glossary-distributive-property" data-term="distributive property">distributive property</a>. Today, we’re going to see how this property helps us simplify expressions.</p>
+<p>You’ve spent a lot of time learning how to <a href="" class="glossary-link" data-slug="simplify" data-term="simplify" data-original-href="#glossary-simplify">simplify</a> expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.</p>
+<p>Take something like:</p>
+<p><span class="math display">\[
+12x + 18.
+\]</span></p>
+<p>It looks simple, but there’s structure hidden inside it. Could this expression be written as a <a href="" class="glossary-link" data-slug="product" data-term="product" data-original-href="#glossary-product">product</a> of smaller pieces?</p>
+<p>Now look at a trinomial such as</p>
+<p><span class="math display">\[
+x^2 + 11x + 24.
+\]</span></p>
+<p>Where did it come from? Could it be the result of multiplying two binomials? If so, how could we work backward to uncover them?</p>
+<p>In this lesson, we will find the answers to these questions by learning the basics of <a href="" class="glossary-link" data-slug="factoring" data-term="factoring" data-original-href="#glossary-factoring">factoring</a> polynomials.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can use the <strong>distributive property</strong> to expand expressions.</label></li>
-<li><label><input type="checkbox">I can distribute with <strong>negatives</strong> and then <strong>combine like terms</strong>.</label></li>
-<li><label><input type="checkbox">I can <strong>factor out</strong> a common factor (reverse distribution) to rewrite an expression.</label></li>
+<li><label><input type="checkbox">I can factor a polynomial by taking out a greatest common factor (GCF).</label></li>
+<li><label><input type="checkbox">I can factor basic trinomials using an area model.</label></li>
+<li><label><input type="checkbox">I can check a factored expression by multiplying.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="distributive-property" data-original-href="#glossary-distributive-property" data-term="distributive property">distributive property</a>, <a href="" class="glossary-link" data-slug="equivalent-expressions" data-original-href="#glossary-equivalent-expressions" data-term="equivalent expressions">equivalent expressions</a>, <a href="" class="glossary-link" data-slug="expand" data-original-href="#glossary-expand" data-term="expand">expand</a>, <a href="" class="glossary-link" data-slug="factor" data-original-href="#glossary-factor" data-term="factor">factor</a>, <a href="" class="glossary-link" data-slug="simplify" data-original-href="#glossary-simplify" data-term="simplify">simplify</a></p>
+<p><a href="" class="glossary-link" data-slug="coefficient" data-term="coefficient" data-original-href="#glossary-coefficient">coefficient</a>, <a href="" class="glossary-link" data-slug="factor" data-term="factor" data-original-href="#glossary-factor">factor</a>, <a href="" class="glossary-link" data-slug="greatest-common-factor" data-term="greatest common factor" data-original-href="#glossary-greatest-common-factor">greatest common factor</a>, <a href="" class="glossary-link" data-slug="polynomial" data-term="polynomial" data-original-href="#glossary-polynomial">polynomial</a>, <a href="" class="glossary-link" data-slug="term" data-term="term" data-original-href="#glossary-term">term</a>, <a href="" class="glossary-link" data-slug="trinomial" data-term="trinomial" data-original-href="#glossary-trinomial">trinomial</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
 <ol type="1">
-<li><p>Here are the individual orders for 5 friends going through a drive through.</p>
-<ul>
-<li>2 cheese burgers + 1 medium fries + 1 large drink</li>
-<li>chicken nuggets + 1 medium fries + 1 medium drink</li>
-<li>2 breakfast burritos + 3 hash browns + 1 cup of coffee</li>
-<li>chicken nuggets + 2 medium fries + 1 large drink</li>
-<li>1 cheese burger + 2 hash browns + 1 medium drink</li>
-</ul>
-<p>Combine these 5 orders into a single order.</p></li>
-<li><p>Try computing the following products in your head.</p>
+<li>Find the GCF of each pair:
 <ol type="a">
-<li><span class="math inline">\(6 \times 45\)</span></li>
-<li><span class="math inline">\(3 \times 32\)</span></li>
-<li><span class="math inline">\(11 \times 25\)</span></li>
-<li><span class="math inline">\(19 \times 5\)</span></li>
+<li>12 and 18</li>
+<li>8x and 20</li>
+<li>21x² and 14x <br> <br></li>
 </ol></li>
-<li><p>Test whether <span class="math inline">\(3(2x - 1)\)</span> and <span class="math inline">\(6x - 3\)</span> are equivalent.</p></li>
+<li>Rewrite in <strong>standard form</strong>:
+<ol type="a">
+<li><span class="math inline">\(5 + 3x + x^2\)</span></li>
+<li><span class="math inline">\(-2x + 7 + 4x^2\)</span> <br> <br></li>
+</ol></li>
+<li>What two numbers multiply to <span class="math inline">\(14\)</span> and add to <span class="math inline">\(9\)</span>?</li>
 </ol>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="what-is-the-distributive-property" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-the-distributive-property">2.4.1 - What Is the Distributive Property?</h3>
-<p>At the beginning of Algebra class, your teacher hands you a stack of worksheets and says, <em>“Please distribute these to the class.”</em></p>
-<p>To <strong>distribute</strong> the worksheets, you hand one to each student.</p>
-<p>In math, distribution works the same way. When we multiply an expression by a number, we “give” that number to each term in the expression.</p>
-<p>The <a href="" class="glossary-link" data-slug="distributive-property" data-original-href="#glossary-distributive-property" data-term="distributive property">distributive property</a> says:</p>
-<p><span class="math display">\[
-a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c) = ab - ac
-\]</span></p>
-<hr>
-<p><strong>Example 1:</strong> Expanding expressions</p>
-<p><a href="" class="glossary-link" data-slug="expand" data-original-href="#glossary-expand" data-term="Expand">Expand</a> <span class="math inline">\(3(x + 2)\)</span> using the distributive property.</p>
-<p>To do this, distribute the 3. That is, multiply each term in <span class="math inline">\((x+2)\)</span> by 3:</p>
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="110" viewbox="0 0 720 110" style="display:block; margin:0 auto; font-family:'Times New Roman',serif">
-  <defs>
-    <marker id="arrow" markerwidth="5" markerheight="5" refx="4.5" refy="2.5" orient="auto">
-      <polygon points="0 0, 5 2.5, 0 5" fill="currentColor"></polygon>
-    </marker>
-  </defs>
-
-  <!-- 3(x+2) -->
-  <text x="15" y="75" font-size="16pt">3</text>
-  <text x="35" y="75" font-size="16pt">(</text>
-  <text x="45" y="75" font-size="16pt">x</text>
-  <text x="70" y="75" font-size="16pt">+</text>
-  <text x="100" y="75" font-size="16pt">2</text>
-  <text x="115" y="75" font-size="16pt">)</text>
-
-  <!-- rainbow arcs -->
-  <path d="M 20 50 C 30 35, 50 35, 52 55" stroke="crimson" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-  <path d="M 20 50 C 38 20, 105 25, 105 55" stroke="steelblue" stroke-width="2" fill="none" marker-end="url(#arrow)"></path>
-
-  <!-- result -->
-  <text x="140" y="75" font-size="16pt">=</text>
-  <text x="170" y="75" font-size="16pt">3x + 6</text>
-</svg>
-<hr>
-<p>We can also see this with <strong>algebra tiles</strong>. The expression <span class="math inline">\(x + 2\)</span> looks like:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_2/Lesson_4/x_plus_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
-</figure>
-</div>
-<p>Multiplying by 3 means taking 3 groups of <span class="math inline">\((x+2)\)</span>:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../images/Unit_2/Lesson_4/x_plus_2_times_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
-</figure>
-</div>
-<p>If we count the tiles, there are 3 <span class="math inline">\(x\)</span>’s and 6 ones. In other words: <strong><span class="math inline">\(3x + 6\)</span></strong>.</p>
-<div class="gotcha" title="Don't skip a term!">
-<p>When you distribute make sure you multiply <strong>every</strong> term in the expression. Students often make the mistake of only distributing to the first term.</p>
-<p><strong>Example:</strong></p>
-<p><span class="math display">\[
-4(x + 2y + 5) = 4(x) + 4(2y) + 4(5) = 4x + 8y + 20
-\]</span></p>
-</div>
-<div class="you-try" title="Expand $5(x+7)$ using the distributive property.">
-<p><span class="math display">\[
-5(x+7) = 5(x) + 5(7) = 5x + 35
-\]</span></p>
-</div>
-<hr>
-</section>
-<section id="distributing-with-negatives" class="level3">
-<h3 class="anchored" data-anchor-id="distributing-with-negatives">2.4.2 - Distributing with Negatives</h3>
-<p>Distribution with negatives is no different than what we have seen so far. But you need to be careful! It is easy to forget to include the negative sign when applying the distributive property.</p>
-<p><strong>Example 2:</strong> Expanding with negatives</p>
-<p>Expand the expression <span class="math inline">\(-3(x - 4)\)</span>:</p>
-<p><span class="math display">\[
--3(x - 4) = -3(x) -3(-4) = -3x + 12
-\]</span></p>
-<p><strong>Example 3:</strong> Expanding with an invisible <span class="math inline">\(1\)</span>.</p>
-<p>Expand the expression <span class="math inline">\(-(2x - 7)\)</span>:</p>
-<p>Notice that there is no number with the negative sign. A lone negative sign means to multiply by -1.</p>
-<p><span class="math display">\[
--(2x - 7) = -1(2x - 7) = -2x + 7
-\]</span></p>
-<div class="you-try" title="Expand $-2(3-y)$">
-<p><span class="math display">\[
--2(3 - y) = -2(3) - 2(-y) = -6 + 2y
-\]</span></p>
-</div>
-<hr>
-</section>
-<section id="distribute-then-combine-like-terms" class="level3">
-<h3 class="anchored" data-anchor-id="distribute-then-combine-like-terms">2.4.3 - Distribute, Then Combine Like Terms</h3>
-<p>Expanding an expression using the distributive property often requires us to simplify the result. To do this, we combine like terms like we did in the previous lesson.</p>
-<p><strong>Example 4:</strong> Expand and combine</p>
-<p>Simplify the expression <span class="math inline">\(4(x+2) + 3(x-5)\)</span>:</p>
-<p>First we expand using the distributive property. <span class="math display">\[
-4(x+2) + 3(x-5) = 4x + 8 + 3x - 15
-\]</span></p>
-<p>Then we simplify by combining like terms:</p>
-<p><span class="math display">\[
-\color{red}4x \color{black}+ \color{blue}8 \color{black}+ \color{red}3x \color{black}- \color{blue}15 \color{black}= \color{red}7x \color{black}- \color{blue}7
-\]</span></p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Make it simpler">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Make it simpler
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When possible, you should simplify what is inside the parentheses before distributing.</p>
-<p><strong>Example:</strong></p>
-<p><span class="math display">\[
-\begin{align*}
-2(4x + 3 - 2x - 1) &amp;= \\
-2(2x + 2) &amp;= 4x + 4
-\end{align*}
-\]</span></p>
-</div>
-</div>
-<div class="gotcha" title="Watch those signs!">
-<p>Students often forget to keep the sign with the multiplier.</p>
-<p><strong>Example:</strong></p>
-<p>Simplify the following expression:</p>
-<p><span class="math display">\[
-3(x - 2) - 5(4x + 5)
-\]</span></p>
-<p>Notice the “-” sign in front of the 5. We <strong>must</strong> multiply the second part of the expression by -5.</p>
-<p><span class="math display">\[
-\begin{align*}
-3(x - 2) \color{red}- 5\color{black}(4x + 5) &amp;= \\
-3x - 6 \color{red}-20x - 25 \color{black} &amp;= -17x - 31
-\end{align*}
-\]</span></p>
-</div>
-<hr>
-</section>
-<section id="reverse-it-factoring-out-a-common-factor" class="level3">
-<h3 class="anchored" data-anchor-id="reverse-it-factoring-out-a-common-factor">2.4.4 - Reverse It: Factoring Out a Common Factor</h3>
-<p>Distribution goes both ways. If <span class="math inline">\(ab+ac = a(b+c)\)</span>, then we can <strong>factor out</strong> <span class="math inline">\(a\)</span>.</p>
-<p><strong>Examples:</strong></p>
-<p>Factor out the <a href="" class="glossary-link" data-slug="greatest-common-factor" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor">greatest common factor</a> from each expression.</p>
-<ol type="1">
-<li><span class="math inline">\(8x+12 = 4(2x+3)\)</span></li>
-<li><span class="math inline">\(15x-9 = 3(5x-3)\)</span></li>
-<li><span class="math inline">\(3x+6y = 3(x+2y)\)</span></li>
-</ol>
-<p>We call this process <a href="" class="glossary-link" data-slug="factoring" data-original-href="#glossary-factoring" data-term="factoring">factoring</a>.</p>
-<div class="you-try" title="Factor the expression $12x + 18$.">
-<p>The <strong>GCF</strong> is <span class="math inline">\(6\)</span>.</p>
-<p><span class="math display">\[
-12x + 18 = 6(x + 3)
-\]</span></p>
-</div>
-<hr>
-</section>
-<section id="check-your-work" class="level3">
-<h3 class="anchored">2.4.5 - Check Your Work</h3>
-<p>It is always a good idea to check your work in algebra. Here, we can use <a href="" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a> to see if our answer is reasonable.</p>
-<p><strong>Example 5:</strong> Spot the mistake</p>
-<p>Paxton simplified the expression <span class="math inline">\(5(2x-3)-(x-4)\)</span>. Here are the steps he took. Did he make a mistake?</p>
-<p><strong>Step 1:</strong> Apply the distributive property <span class="math display">\[
-5(2x - 3) - (x - 4) = 10x - 3 - x - 4
-\]</span></p>
-<p><strong>Step 2:</strong> Combine like terms</p>
-<p><span class="math display">\[
-10x - 3 - x - 4 = 9x - 7
-\]</span></p>
-<p>To test whether he made a mistake, we can substitute a value for <span class="math inline">\(x\)</span>.</p>
-<p>Let <span class="math inline">\(x = \color{red}3\)</span>:</p>
-<p><span class="math display">\[
-\begin{align*}
-5(2(\color{red}3\color{black}) - 3) - (\color{red}3 \color{black}- 4) &amp;= \\
-5(6 - 3) - (-1) &amp;= \\
-5(3) + 1 &amp;= \\
-15 + 1 &amp;= 16
-\end{align*}
-\]</span></p>
-<p>But…</p>
-<p><span class="math display">\[
-\begin{align*}
-9(\color{red}3\color{black}) - 7 &amp;= \\
-27 - 7 &amp;= 20
-\end{align*}
-\]</span></p>
-<p>Since the substitution gives two different answers (20 and 16), we know that Paxton made a mistake. He forgot to distribute to all terms in the expression! Here is the correct answer.</p>
-<p><span class="math display">\[
-\begin{align*}
-5(2x - 3) - (x - 4) &amp;= \\
-10x - 15 -x + 4 &amp;= 9x - 11
-\end{align*}
-\]</span></p>
-<p>If we substitute using <span class="math inline">\(x = \color{red}3\)</span> we get…</p>
-<p><span class="math display">\[
-\begin{align*}
-9(\color{red}3\color{black}) - 11 &amp;= \\
-27 - 11 &amp;= 16
-\end{align*}
-\]</span></p>
-<div class="you-try" title="Expand $-2(5 - 2x) + 3(x - 7)$. Check your work.">
-<p><strong>Step 1:</strong> Apply the distributive property</p>
-<p><span class="math display">\[
-\begin{align*}
--2(5 - 2x) + 3(x - 7) &amp;= \\
--2(5) -2(-2x) + 3(x) + 3(-7) &amp;= \\
-&amp;= -10 + 4x + 3x - 21
-\end{align*}
-\]</span></p>
-<p><strong>Step 2:</strong> Simplify by combining like terms</p>
-<p><span class="math display">\[
--10 + 4x + 3x - 21 = 7x - 31
-\]</span></p>
-<p><strong>Step 3:</strong> Check your work</p>
-<p>Let <span class="math inline">\(x = \color{red}5\)</span></p>
-<p><span class="math display">\[
-\begin{align*}
--2(5 - 2(\color{red}5\color{black})) + 3(\color{red}5 \color{black} - 7) &amp;= \\
--2(5 - 10) + 3(-2) &amp;= \\
--2(-5) - 6 &amp;= \\
-10 - 6 &amp;= 4
-\end{align*}
-\]</span></p>
-<p>And…</p>
-<p><span class="math display">\[
-\begin{align*}
-7(\color{red}5\color{black}) - 31 &amp;= \\
-35 - 31 &amp;= 4
-\end{align*}
-\]</span></p>
-<p>Both expressions gave 4 when <span class="math inline">\(x = 5\)</span> so we feel good about our answer.</p>
-</div>
-<h2 class="unnumbered anchored" data-anchor-id="check-your-work">✍️ Practice On Your Own</h2>
-<p><strong>Expand using the distributive property</strong></p>
-<ol type="1">
-<li><p><span class="math inline">\(6(x+5)\)</span></p></li>
-<li><p><span class="math inline">\(7(y-2)\)</span></p></li>
-<li><p><span class="math inline">\(4(3a+b)\)</span></p></li>
-<li><p><span class="math inline">\(10(m+0.3)\)</span></p></li>
-<li><p><span class="math inline">\(-3(p+9)\)</span></p></li>
-<li><p><span class="math inline">\(-(k-8)\)</span></p></li>
-</ol>
-<p><strong>Expand, then combine like terms</strong></p>
-<ol start="7" type="1">
-<li><p><span class="math inline">\(2(x+3)+5(x-1)\)</span></p></li>
-<li><p><span class="math inline">\(4y-2(3y-7)\)</span></p></li>
-<li><p><span class="math inline">\(3(a+2b)-5(2a-b)\)</span></p></li>
-<li><p><span class="math inline">\(-2(t-5)+3(t+1)\)</span></p></li>
-</ol>
-<p><strong>With decimals and fractions</strong></p>
-<ol start="11" type="1">
-<li><p><span class="math inline">\(0.5(8x-6)\)</span></p></li>
-<li><p><span class="math inline">\(1.2(y+5)-0.2y\)</span></p></li>
-<li><p><span class="math inline">\(\dfrac{3}{4}(4x-8)\)</span></p></li>
-<li><p><span class="math inline">\(-\dfrac{1}{2}(6a+10)\)</span></p></li>
-</ol>
-<p><strong>Factor (reverse distribute)</strong></p>
-<ol start="15" type="1">
-<li><p><span class="math inline">\(18x+27\)</span></p></li>
-<li><p><span class="math inline">\(20m-12\)</span></p></li>
-<li><p><span class="math inline">\(8p+12q\)</span></p></li>
-<li><p><span class="math inline">\(14x-21x^2\)</span></p></li>
-</ol>
-<p><strong>Are they equivalent? Expand/simplify and compare.</strong></p>
-<ol start="19" type="1">
-<li><p><span class="math inline">\(3(x+4)+2x\)</span> and <span class="math inline">\(5x+12\)</span></p></li>
-<li><p><span class="math inline">\(6-2(x+3)\)</span> and <span class="math inline">\(-2x\)</span></p></li>
-<li><p><span class="math inline">\(5(a-1)+a\)</span> and <span class="math inline">\(6a-5\)</span></p></li>
-<li><p><span class="math inline">\(4(y+2)-3(y-1)\)</span> and <span class="math inline">\(y+11\)</span></p></li>
-</ol>
-<p><strong>Challenge Problems</strong></p>
-<ol start="23" type="1">
-<li>Simplify the expression in <strong>two different ways</strong>:</li>
-</ol>
-<p><span class="math display">\[
-4(2x + 3) - (2x + 3).
-\]</span></p>
+<section id="factoring-out-a-gcf" class="level3">
+<h3 class="anchored" data-anchor-id="factoring-out-a-gcf">5.4.1 - Factoring Out a GCF</h3>
+<p>In <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.html">Lesson 1.3</a>, you learned how to find a <strong>greatest common factor</strong> (GCF). The GCF is the largest number or expression that divides every term.</p>
+<p>When working with polynomials, writing an expression as a <strong>product</strong> is often the first step toward a cleaner or more useful form. Before jumping in, let’s quickly remind ourselves what a GCF looks like.</p>
+<p>A fast way to review the idea is to look at the factors of each term and see what they share:</p>
 <ul>
-<li>Try distributing first.</li>
-<li>Then try factoring out the common <span class="math inline">\((2x+3)\)</span> first.</li>
+<li><span class="math inline">\(12x\)</span> has factors <span class="math inline">\(2 \cdot 2 \cdot 3 \cdot x\)</span></li>
+<li><span class="math inline">\(18\)</span> has factors <span class="math inline">\(2 \cdot 3 \cdot 3\)</span></li>
+<li>The part they have in common is <span class="math inline">\(6\)</span></li>
 </ul>
-<p>Explain why both methods lead to the same result.</p>
-<ol start="24" type="1">
-<li>Use the distributive property to multiply <span class="math inline">\((3x - 1)(2x + 3)\)</span>. Show each step and simplify your result.</li>
+<p>This is the same idea you used in Unit 1 with factor trees.</p>
+<hr>
+<p><strong>Example 1:</strong> An integer GCF</p>
+<p>Here is a factor-tree style diagram for the expression <span class="math inline">\(12x + 18\)</span>:</p>
+<div style="text-align: center;">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    node_0("12x + 18")
+    node_1("6")
+    node_2("2x + 3")
+    node_0 --- node_1
+    node_0 --- node_2
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<p>This picture shows the kind of result we want: the expression written as two factors that multiply to the whole expression.</p>
+<p>To do that, we take out the greatest common factor:</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{GCF}(12x,18) &amp;= 6 \\
+12x + 18 &amp;= 6(2x + 3)
+\end{align*}
+\]</span></p>
+<p>Just like a factor tree, we have separated the common part from what remains.</p>
+<hr>
+<p><strong>Example 2:</strong> A GCF with a variable</p>
+<p>Factor <span class="math inline">\(12x^3 - 3x^2\)</span>.</p>
+<p>This time, each term has both a numerical factor and a variable factor in common.</p>
+<p>Break each term into its pieces:</p>
+<ul>
+<li><span class="math inline">\(12x^3 = 3 \cdot 2 \cdot 2 \cdot x \cdot x \cdot x\)</span></li>
+<li><span class="math inline">\(3x^2 = 3 \cdot x \cdot x\)</span></li>
+</ul>
+<p>The shared part is <span class="math inline">\(3x\)</span>, so that becomes the GCF:</p>
+<p><span class="math display">\[
+\begin{align*}
+12x^3 - 3x^2 &amp;= 3x(4x^2 - 1)
+\end{align*}
+\]</span></p>
+<p>Pulling out the GCF keeps the structure organized and prepares the expression for more factoring later.</p>
+<div class="you-try" title="Factor $15y^3 - 5y$.">
+<p><span class="math display">\[
+15y^3 - 5y = 5y(3y^2 - 1)
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 3:</strong> A negative leading term</p>
+<p>Factor <span class="math inline">\(-x^2 - 4x - 3\)</span>.</p>
+<p>When the first term is negative, it is usually easiest to take out <span class="math inline">\(-1\)</span> first. This keeps the inside positive and easier to work with:</p>
+<p><span class="math display">\[
+-x^2 - 4x - 3 = -1(x^2 + 4x + 3)
+\]</span></p>
+<p>Now the polynomial is written as a product, and the trinomial inside has a standard form we can factor later in this lesson.</p>
+<div class="you-try" title="Factor $-18xy^2 + 27x^2y$.">
+<p>The GCF for <span class="math inline">\(-18xy^2 + 27x^2y\)</span> is <span class="math inline">\(-9xy\)</span> (the leading coefficient is negative) and so:</p>
+<p><span class="math display">\[
+-18xy^2 + 27x^2y = -9xy(2y - 3x)
+\]</span></p>
+</div>
+<hr>
+<p>We have now learned the important first step in factoring polynomials: take out a GCF. But sometimes more has to be done. In the next section we will see how area models can help us factor polynomials further.</p>
+<hr>
+</section>
+<section id="area-models-and-basic-trinomials" class="level3">
+<h3 class="anchored" data-anchor-id="area-models-and-basic-trinomials">5.4.2 – Area Models and Basic Trinomials</h3>
+<p>Before we learn how to factor trinomials, it helps to understand how they are created when we multiply two binomials.<br>
+An area model organizes the multiplication so we can clearly see where each term comes from.</p>
+<section id="a-closer-look-at-multiplying-binomials" class="level4">
+<h4 class="anchored" data-anchor-id="a-closer-look-at-multiplying-binomials"><strong>A closer look at multiplying binomials</strong></h4>
+<p>Consider the product</p>
+<p><span class="math display">\[
+(x + 3)(x + 2).
+\]</span></p>
+<p>An area model shows how each part multiplies:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(\textcolor{red}{2x}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(\textcolor{red}{3x}\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Combine the diagonal terms:</p>
+<p><span class="math display">\[
+x^2 + \textcolor{red}{2x} + \textcolor{red}{3x} + 6
+= x^2 + \textcolor{red}{5x} + 6
+\]</span></p>
+<p>This reveals the pattern we will use when factoring:</p>
+<ul>
+<li>The top-left box comes from multiplying the first terms<br>
+</li>
+<li>The bottom-right box comes from multiplying the last terms<br>
+</li>
+<li>The diagonal boxes combine to form the middle term</li>
+</ul>
+<p>Factoring works by reversing this structure.</p>
+<hr>
+</section>
+<section id="using-the-area-model-to-factor" class="level4">
+<h4 class="anchored" data-anchor-id="using-the-area-model-to-factor"><strong>Using the area model to factor</strong></h4>
+<p>To factor a trinomial like</p>
+<p><span class="math display">\[
+x^2 + 5x + 6,
+\]</span></p>
+<p>we begin by placing the first and last terms where they belong:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>?</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{x^2}\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{6}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The <span class="math inline">\(x^2\)</span> term can only come from <span class="math inline">\(x \cdot x\)</span>, so we fill those in:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(\textcolor{red}{x}\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\textcolor{red}{x}\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>?</td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To determine the missing diagonal terms, notice that their <strong>coefficients must multiply to <span class="math inline">\(6\)</span></strong> (the constant term) and <strong>their sum must be <span class="math inline">\(5\)</span></strong> (the middle coefficient).</p>
+<p>So we list the factor pairs of <span class="math inline">\(6\)</span> and choose the pair whose sum is <span class="math inline">\(5\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Factor Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 6\)</span></td>
+<td><span class="math inline">\(1 + 6 = 7\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times 3\)</span></td>
+<td><span class="math inline">\(2 + 3 = 5\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Split the middle term using the factor pair we found:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(\textcolor{red}{3x}\)</span></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><span class="math inline">\(\textcolor{red}{2x}\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Now the remaining entries fall into place:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(\textcolor{red}{3}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(3x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\textcolor{red}{2}\)</span></td>
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This gives us,</p>
+<p><span class="math display">\[
+x^2 + 5x + 6 = (x + 3)(x + 2)
+\]</span></p>
+<hr>
+<p><strong>Example 4:</strong> A positive constant and positive middle term</p>
+<p>Factor <span class="math inline">\(x^2 + 11x + 24\)</span>.</p>
+<p>We start by filling out what we know.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>?</td>
+<td><span class="math inline">\(24\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Now we look for factor pairs of <span class="math inline">\(24\)</span> that add up to <span class="math inline">\(11\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 24\)</span></td>
+<td><span class="math inline">\(25\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times 12\)</span></td>
+<td><span class="math inline">\(14\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3 \times 8\)</span></td>
+<td><span class="math inline">\(11\)</span> ✓</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(4 \times 6\)</span></td>
+<td><span class="math inline">\(10\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>We use what we found to complete the area model.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(8\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(8x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(3x\)</span></td>
+<td><span class="math inline">\(24\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+x^2 + 11x + 24 = (x + 3)(x + 8)
+\]</span></p>
+<div class="you-try" title="Factor $x^2 + 4x + 4$">
+<p><span class="math display">\[
+x^2 + 4x + 4 = (x + 2)(x + 2)
+\]</span></p>
+</div>
+<hr>
+<p><strong>Example 5:</strong> A negative constant with a negative middle term</p>
+<p>Factor <span class="math inline">\(x^2 - 7x - 30\)</span>.</p>
+<p>Fill in what we know.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">?</td>
+<td>?</td>
+<td><span class="math inline">\(-30\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The last term is negative, so one factor is positive and one negative.<br>
+The middle term is negative, so the larger factor must be negative. We just need to find which factor pair add up to <span class="math inline">\(-7\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times -30\)</span></td>
+<td><span class="math inline">\(-29\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times -15\)</span></td>
+<td><span class="math inline">\(-13\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(3 \times -10\)</span></td>
+<td><span class="math inline">\(-7\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Now we can complete the area model.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-10\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(-10x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(3x\)</span></td>
+<td><span class="math inline">\(-30\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thus,</p>
+<p><span class="math display">\[
+x^2 - 7x - 30 = (x + 3)(x - 10)
+\]</span></p>
+<hr>
+<p><strong>Example 6:</strong> A negative constant with a positive middle term</p>
+<p>Factor <span class="math inline">\(x^2 + 2x - 15\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">?</td>
+<td>?</td>
+<td><span class="math inline">\(-15\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since the last term is negative, one factor must be positive and one negative.<br>
+The middle term is positive, so the larger factor is positive.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-1 \times 15\)</span></td>
+<td><span class="math inline">\(14\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-3 \times 5\)</span></td>
+<td><span class="math inline">\(2\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(-3x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(5x\)</span></td>
+<td><span class="math inline">\(-15\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thus,</p>
+<p><span class="math display">\[
+x^2 + 2x - 15 = (x + 5)(x - 3)
+\]</span></p>
+<div class="you-try" title="Factor $a^2 - 16$.">
+<p>Since there is no middle term, it must be zero. We can rewrite this as:</p>
+<p><span class="math display">\[
+a^2 + 0a - 16
+\]</span></p>
+<p>So we are looking for numbers whose product is <span class="math inline">\(-16\)</span> and whose sum is <span class="math inline">\(0\)</span>. The only pair that works is <span class="math inline">\(-4\)</span> and <span class="math inline">\(4\)</span>.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(a\)</span></th>
+<th><span class="math inline">\(-4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(a\)</span></td>
+<td><span class="math inline">\(a^2\)</span></td>
+<td><span class="math inline">\(-4a\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(4\)</span></td>
+<td><span class="math inline">\(4a\)</span></td>
+<td><span class="math inline">\(-16\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+a^2 - 16 = (a + 4)(a - 4)
+\]</span></p>
+<p>We will see in the next section that this is a special form called a difference of squares.</p>
+</div>
+<hr>
+<p><strong>Example 7:</strong> A positive constant with a negative middle term</p>
+<p>Factor <span class="math inline">\(x^2 - 10x + 16\)</span></p>
+<p>Fill in what we know.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">?</td>
+<td>?</td>
+<td><span class="math inline">\(16\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The last term is positive, so both factors have the same sign.<br>
+The middle term is negative, so both should be negative.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-1 \times -16\)</span></td>
+<td><span class="math inline">\(-17\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2 \times -8\)</span></td>
+<td><span class="math inline">\(-10\)</span> ✓</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(-4 \times -4\)</span></td>
+<td><span class="math inline">\(-8\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now complete the area model.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(-2x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(-8\)</span></td>
+<td><span class="math inline">\(-8x\)</span></td>
+<td><span class="math inline">\(16\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thus,</p>
+<p><span class="math display">\[
+x^2 - 10x + 16 = (x - 8)(x - 2)
+\]</span></p>
+<hr>
+<div class="note" title="Choosing signs when factoring">
+<p>For a trinomial <span class="math inline">\(x^2 + bx + c\)</span>:</p>
+<ul>
+<li><p>If <span class="math inline">\(c\)</span> is positive, both factors have the same sign<br>
+– If <span class="math inline">\(b\)</span> is positive → both positive<br>
+– If <span class="math inline">\(b\)</span> is negative → both negative</p></li>
+<li><p>If <span class="math inline">\(c\)</span> is negative, the factors have opposite signs<br>
+– If <span class="math inline">\(b\)</span> is positive → the larger factor is positive<br>
+– If <span class="math inline">\(b\)</span> is negative → the larger factor is negative</p></li>
+</ul>
+<p>These patterns help you choose the correct factors quickly.</p>
+</div>
+</section>
+</section>
+<section id="mixed-expressions-gcf-and-area-model" class="level3">
+<h3 class="anchored">5.4.3 – Mixed Expressions (GCF and Area Model)</h3>
+<p>Sometimes a polynomial needs more than one step to be completely factored.<br>
+If every term has a common factor, we take out the <strong>GCF first</strong>, then use the <strong>area model</strong> to factor the remaining trinomial.</p>
+<p>Taking out the GCF keeps the trinomial in its cleanest form and makes the area model easier to use.</p>
+<hr>
+<p><strong>Example 8:</strong> GCF first, then area model</p>
+<p>Factor <span class="math inline">\(4x^2 + 20x + 24\)</span>.</p>
+<p>Start by taking out the GCF:</p>
+<p><span class="math display">\[
+\text{GCF}(4x^2, 20x, 24) = 4
+\]</span></p>
+<p><span class="math display">\[
+4x^2 + 20x + 24 = 4(x^2 + 5x + 6)
+\]</span></p>
+<p>Now factor the trinomial inside the parentheses.</p>
+<p>We need coefficients that multiply to <span class="math inline">\(6\)</span> and add to <span class="math inline">\(5\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 6\)</span></td>
+<td><span class="math inline">\(7\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times 3\)</span></td>
+<td><span class="math inline">\(5\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Fill the diagonal entries:</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(3x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+x^2 + 5x + 6 = (x + 2)(x + 3)
+\]</span></p>
+<p>Final answer:</p>
+<p><span class="math display">\[
+4x^2 + 20x + 24 = 4(x + 2)(x + 3)
+\]</span></p>
+<div class="gotcha" title="Put it back!">
+<p>If you factor out a GCF, don’t forget to include it in your answer!</p>
+</div>
+<hr>
+<p><strong>Example 9:</strong> GCF fixes a negative leading coefficient</p>
+<p>Factor <span class="math inline">\(-15x^2 + 45x - 30\)</span>.</p>
+<p>Take out the negative GCF:</p>
+<p><span class="math display">\[
+\text{GCF}(-15x^2, 45x, -30) = -15
+\]</span></p>
+<p><span class="math display">\[
+-15x^2 + 45x - 30 = -15(x^2 - 3x + 2)
+\]</span></p>
+<p>Now factor <span class="math inline">\(x^2 - 3x + 2\)</span>.</p>
+<p>We need factors of <span class="math inline">\(2\)</span> that add to <span class="math inline">\(-3\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-1 \times -2\)</span></td>
+<td><span class="math inline">\(-3\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(-1x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2\)</span></td>
+<td><span class="math inline">\(-2x\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thus,</p>
+<p><span class="math display">\[
+x^2 - 3x + 2 = (x - 1)(x - 2)
+\]</span></p>
+<p>Final answer:</p>
+<p><span class="math display">\[
+-15x^2 + 45x - 30 = -15(x - 1)(x - 2)
+\]</span></p>
+<hr>
+<p><strong>Example 10:</strong> Polynomial written out of order</p>
+<p>Factor <span class="math inline">\(-45x^2 - 5x^3 - 70x\)</span>.</p>
+<p>Rewrite in standard form:</p>
+<p><span class="math display">\[
+-5x^3 - 45x^2 - 70x
+\]</span></p>
+<p>Take out the GCF:</p>
+<p><span class="math display">\[
+\text{GCF}(-5x^3, -45x^2, -70x) = -5x
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+-5x^3 - 45x^2 - 70x = -5x(x^2 + 9x + 14)
+\]</span></p>
+<p>Now to factor the trinomial. We need factors of <span class="math inline">\(14\)</span> that add to <span class="math inline">\(9\)</span>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(1 \times 14\)</span></td>
+<td><span class="math inline">\(15\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2 \times 7\)</span></td>
+<td><span class="math inline">\(9\)</span> ✓</td>
+</tr>
+</tbody>
+</table>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(7\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(7x\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(2x\)</span></td>
+<td><span class="math inline">\(14\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Thus,</p>
+<p><span class="math display">\[
+x^2 + 9x + 14 = (x + 2)(x + 7)
+\]</span></p>
+<p>Final answer:</p>
+<p><span class="math display">\[
+-5x^3 - 45x^2 - 70x = -5x(x + 2)(x + 7)
+\]</span></p>
+<div class="you-try" title="Factor $-9b^3 + 9b^2 + 18b$.">
+<p>Start by taking out a GCF <span class="math inline">\(-9b\)</span>.</p>
+<p><span class="math display">\[
+-9b^3 + 9b^2 + 18b = -9b(b^2 - b - 2)
+\]</span></p>
+<p>Now factor the trinomial.</p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(b\)</span></th>
+<th><span class="math inline">\(1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(b\)</span></td>
+<td><span class="math inline">\(b^2\)</span></td>
+<td><span class="math inline">\(b\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-2\)</span></td>
+<td><span class="math inline">\(-2b\)</span></td>
+<td><span class="math inline">\(-2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>So,</p>
+<p><span class="math display">\[
+-9b^3 + 9b^2 + 18b = -9b(b-2)(b+1)
+\]</span></p>
+</div>
+<div class="remember" title="Important Trinomial Factoring Steps">
+<ol type="1">
+<li>Put the polynomial in standard form<br>
+</li>
+<li>Factor out a GCF if there is one<br>
+</li>
+<li>If the first term is negative, include a negative sign with the GCF<br>
+</li>
+<li>Use the area model to factor the trinomial<br>
+</li>
+</ol>
+</div>
+<h2 class="unnumbered anchored" data-anchor-id="mixed-expressions-gcf-and-area-model">✍️ Practice On Your Own</h2>
+<p><strong>Factoring out a GCF</strong><br>
+Factor each polynomial by taking out a GCF.</p>
+<ol type="1">
+<li><p><span class="math inline">\(12p + 18\)</span></p></li>
+<li><p><span class="math inline">\(7m - 21\)</span></p></li>
+<li><p><span class="math inline">\(16r^2 + 24r\)</span></p></li>
+<li><p><span class="math inline">\(9k^3 - 6k^2\)</span></p></li>
+<li><p><span class="math inline">\(-8t^2 + 12t\)</span></p></li>
+<li><p><span class="math inline">\(14y^3 + 21y^2 + 7y\)</span></p></li>
+<li><p><span class="math inline">\(20a^2b - 15ab\)</span></p></li>
+<li><p><span class="math inline">\(-27c^4 + 18c^3\)</span></p></li>
+<li><p><span class="math inline">\(42uv^2 - 14u^2v\)</span></p></li>
+<li><p><span class="math inline">\(-30x^3y + 45x^2y^2 - 15xy\)</span></p></li>
 </ol>
 <hr>
-<div class="answers">
-<p><strong>Expand using the distributive property</strong></p>
-<ol type="1">
-<li><span class="math inline">\(6x+30\)</span></li>
-<li><span class="math inline">\(7y-14\)</span></li>
-<li><span class="math inline">\(12a+4b\)</span></li>
-<li><span class="math inline">\(10m+3\)</span></li>
-<li><span class="math inline">\(-3p-27\)</span></li>
-<li><span class="math inline">\(-k+8\)</span></li>
-</ol>
-<p><strong>Expand, then combine like terms</strong></p>
-<ol start="7" type="1">
-<li><span class="math inline">\(2x+6+5x-5=7x+1\)</span></li>
-<li><span class="math inline">\(4y-6y+14=-2y+14\)</span></li>
-<li><span class="math inline">\(3a+6b-10a+5b=-7a+11b\)</span></li>
-<li><span class="math inline">\(-2t+10+3t+3 = t+13\)</span></li>
-</ol>
-<p><strong>With decimals and fractions</strong></p>
+<p><strong>Factoring Trinomials</strong><br>
+Use an area model to factor each trinomial.</p>
 <ol start="11" type="1">
-<li><span class="math inline">\(4x-3\)</span></li>
-<li><span class="math inline">\(y+6\)</span></li>
-<li><span class="math inline">\(3x-6\)</span></li>
-<li><span class="math inline">\(-3a-5\)</span></li>
+<li><p><span class="math inline">\(p^2 + 8p + 15\)</span></p></li>
+<li><p><span class="math inline">\(m^2 - 6m - 16\)</span></p></li>
+<li><p><span class="math inline">\(r^2 + r - 20\)</span></p></li>
+<li><p><span class="math inline">\(k^2 - 9k + 20\)</span></p></li>
+<li><p><span class="math inline">\(t^2 + 12t + 35\)</span></p></li>
+<li><p><span class="math inline">\(a^2 - 5a + 6\)</span></p></li>
+<li><p><span class="math inline">\(y^2 + 2y - 48\)</span></p></li>
+<li><p><span class="math inline">\(b^2 - 11b + 18\)</span></p></li>
+<li><p><span class="math inline">\(-42 + s + s^2\)</span></p></li>
+<li><p><span class="math inline">\(z - 30 + z^2\)</span></p></li>
 </ol>
-<p><strong>Factor (reverse distribute)</strong></p>
-<ol start="15" type="1">
-<li><span class="math inline">\(9(2x+3)\)</span></li>
-<li><span class="math inline">\(4(5m-3)\)</span></li>
-<li><span class="math inline">\(4(2p+3q)\)</span></li>
-<li><span class="math inline">\(7x(2-3x)\)</span></li>
+<hr>
+<p><strong>Mixed Practice</strong><br>
+Factor each polynomial completely.</p>
+<ol start="21" type="1">
+<li><p><span class="math inline">\(6p^2 + 9p\)</span></p></li>
+<li><p><span class="math inline">\(-4m^2 - 12m\)</span></p></li>
+<li><p><span class="math inline">\(15r^2 + 5r - 20\)</span></p></li>
+<li><p><span class="math inline">\(12k^2 - 3k - 15\)</span></p></li>
+<li><p><span class="math inline">\(-18t^2 + 24t - 6\)</span></p></li>
+<li><p><span class="math inline">\(21y + 14y^2 + 7y^3\)</span></p></li>
+<li><p><span class="math inline">\(-10a^2 + 35a - 25\)</span></p></li>
+<li><p><span class="math inline">\(8c^2 + 2c - 3\)</span></p></li>
+<li><p><span class="math inline">\(5x - 15x^2 + 10\)</span></p></li>
+<li><p><span class="math inline">\(-9n^2 - 6 - 15n\)</span></p></li>
 </ol>
-<p><strong>Are they equivalent?</strong></p>
-<ol start="19" type="1">
-<li>yes (both <span class="math inline">\(5x+12\)</span>)</li>
-<li>yes (both <span class="math inline">\(-2x\)</span>)</li>
-<li>yes (both <span class="math inline">\(6a-5\)</span>)</li>
-<li>yes (both <span class="math inline">\(y+11\)</span>)</li>
+<hr>
+<p><strong>Challenge Problems</strong><br>
+Factor each expression completely.</p>
+<ol start="31" type="1">
+<li><p><span class="math inline">\(4a^2b - 9b^3\)</span></p></li>
+<li><p><span class="math inline">\(k^4 - 10k^2 + 9\)</span></p></li>
+</ol>
+<div class="answers">
+<ol type="1">
+<li><p><span class="math inline">\(6(2p + 3)\)</span></p></li>
+<li><p><span class="math inline">\(7(m - 3)\)</span></p></li>
+<li><p><span class="math inline">\(8r(2r + 3)\)</span></p></li>
+<li><p><span class="math inline">\(3k^2(3k - 2)\)</span></p></li>
+<li><p><span class="math inline">\(-4t(2t - 3)\)</span></p></li>
+<li><p><span class="math inline">\(7y(2y + 1)(y + 1)\)</span></p></li>
+<li><p><span class="math inline">\(5ab(4a - 3)\)</span></p></li>
+<li><p><span class="math inline">\(-9c^3(3c - 2)\)</span></p></li>
+<li><p><span class="math inline">\(14uv(3v - u)\)</span></p></li>
+<li><p><span class="math inline">\(-15xy(2x^2 - 3xy + 1)\)</span></p></li>
+<li><p><span class="math inline">\((p + 3)(p + 5)\)</span></p></li>
+<li><p><span class="math inline">\((m - 8)(m + 2)\)</span></p></li>
+<li><p><span class="math inline">\((r + 5)(r - 4)\)</span></p></li>
+<li><p><span class="math inline">\((k - 5)(k - 4)\)</span></p></li>
+<li><p><span class="math inline">\((t + 5)(t + 7)\)</span></p></li>
+<li><p><span class="math inline">\((a - 2)(a - 3)\)</span></p></li>
+<li><p><span class="math inline">\((y + 8)(y - 6)\)</span></p></li>
+<li><p><span class="math inline">\((b - 2)(b - 9)\)</span></p></li>
+<li><p><span class="math inline">\((s + 7)(s - 6)\)</span></p></li>
+<li><p><span class="math inline">\((z + 6)(z - 5)\)</span></p></li>
+<li><p><span class="math inline">\(3p(2p + 3)\)</span></p></li>
+<li><p><span class="math inline">\(-4m(m + 3)\)</span></p></li>
+<li><p><span class="math inline">\(5(3r + 4)(r - 1)\)</span></p></li>
+<li><p><span class="math inline">\(3(4k - 5)(k + 1)\)</span></p></li>
+<li><p><span class="math inline">\(-6(3t - 1)(t - 1)\)</span></p></li>
+<li><p><span class="math inline">\(7y(y^2 + 2y + 3)\)</span></p></li>
+<li><p><span class="math inline">\(-5(2a - 5)(a - 1)\)</span></p></li>
+<li><p><span class="math inline">\((2c - 1)(4c + 3)\)</span></p></li>
+<li><p><span class="math inline">\(-5(3x + 2)(x - 1)\)</span></p></li>
+<li><p><span class="math inline">\(-3(3n + 2)(n + 1)\)</span></p></li>
 </ol>
 </div>
 
@@ -1440,13 +2072,13 @@ Make it simpler
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_2/2.3_Combining_Like_Terms.html" class="pagination-link" aria-label="2.3 - Combining Like Terms">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.3 - Combining Like Terms</span>
+      <a href="../../chapters/Unit_5/5.3_Multiplying_Polynomials.html" class="pagination-link" aria-label="5.3 - Multiplying Polynomials">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">5.3 - Multiplying Polynomials</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html" class="pagination-link" aria-label="2.5 - Inputs and Outputs of Functions">
-        <span class="nav-page-text">2.5 - Inputs and Outputs of Functions</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Unit_5/5.5_Factoring_Polynomials_B.html" class="pagination-link" aria-label="5.5 - Factoring: General Trinomials &amp; Special Patterns">
+        <span class="nav-page-text">5.5 - Factoring: General Trinomials &amp; Special Patterns</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
