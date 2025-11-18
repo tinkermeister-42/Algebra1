@@ -1,0 +1,92 @@
+# Algebra 1 – Q4.1_4.3 A
+
+**Name: ____________________________**
+
+## 4.1 – Graphing Function Rules
+
+**Find the value of $y$ for each function rule. Show your work.**
+
+1. $y = 3x - 4$ when $x = 5$ 
+   <br><br>
+
+2. $f(x) = -2x + 7$ when $x = -3$ 
+   <br><br>
+
+3. $y = \dfrac{1}{2}x + 6$ when $x = 8$
+   <br><br>
+
+**Complete the table of values and graph the line.**
+
+4. $y = -x + 2$
+
+:::{layout-ncol=2}
+
+:::{#diagram-1}
+|  x  |  y  |
+| --- | --- |
+| -2  |     |
+| 2   |     |
+:::
+
+:::{#diagram-2}
+![](images/Blank.png){width="300px" fig-align="center"}
+:::
+
+:::
+
+<div style="page-break-after: always;"></div>
+
+
+## 4.2 – Understanding Slope
+
+**Find the slope. Show your work.**
+
+5. Points: $(4, 2)$ and $(10, 8)$ 
+   <br><br><br><br><br>
+
+6. Points: $(-3, 5)$ and $(1, -7)$ 
+   <br><br><br><br><br>
+
+**Tell whether the slope is positive, negative, zero, or undefined.**
+
+7. A line rising left to right. 
+   <br><br><br><br><br>
+
+8. A vertical line through $x = -2$. 
+   <br><br><br><br><br>
+
+9. A horizontal line through $y = 17$.
+    
+<div style="page-break-after: always;"></div>
+
+
+## 4.3 – The Equation of a Line
+
+**Graph the line using the given point and slope.**
+
+10. Through $(2, 1)$ with slope $m = -\dfrac{1}{2}$
+
+![](images/Blank.png){width="300px" fig-align="center"}
+
+<br><br>
+
+11.  Through $(-1, 4)$ with slope $m = 3$
+
+![](images/Blank.png){width="300px" fig-align="center"}
+
+<div style="page-break-after: always;"></div>
+
+
+**Find the x- and y-intercept. Show your work.**
+
+12.  $y = -2x + 10$ 
+    <br><br><br><br><br>
+
+13.  $3x + 6y = 18$ 
+    <br><br><br><br><br>
+
+**Real-World Problem**
+
+14.   A phone plan costs $20$ plus $5$ dollars per gigabyte of data.
+    If your bill was $65$, how many gigabytes did you use?
+
