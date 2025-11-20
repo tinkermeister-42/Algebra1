@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6.1 - Introduction to Quadratic Functions – DHS Algebra 1</title>
+<title>6.1 - Introduction to Quadratics – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" rel="next">
+<link href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" rel="next">
 <link href="../../chapters/Unit_6/index.html" rel="prev">
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -113,7 +142,7 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html">6.1 - Introduction to Quadratic Functions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html">6.1 - Introduction to Quadratics</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -475,12 +504,12 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">6.1 - Introduction to Quadratic Functions</span></a>
+ <span class="menu-text">6.1 - Introduction to Quadratics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6.2 - Forms of Quadratic Equations</span></a>
   </div>
 </li>
@@ -500,12 +529,6 @@ window.MathJax = {
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_6/6.5_The_Quadratic_Formula.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6.5 - The Quadratic Formula</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/Unit_6/6.6_Graphing_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.6 - Graphing Quadratic Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -609,15 +632,23 @@ window.MathJax = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#identifying-quadratic-functions" id="toc-identifying-quadratic-functions" class="nav-link active" data-scroll-target="#identifying-quadratic-functions">6.1.1 - Identifying Quadratic Functions</a></li>
+  <li><a href="#features-of-quadratic-functions" id="toc-features-of-quadratic-functions" class="nav-link" data-scroll-target="#features-of-quadratic-functions">6.1.2 - Features of Quadratic Functions</a></li>
+  <li><a href="#domain-and-range-of-quadratics" id="toc-domain-and-range-of-quadratics" class="nav-link" data-scroll-target="#domain-and-range-of-quadratics">6.1.3 - Domain and Range of Quadratics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html">6.1 - Introduction to Quadratic Functions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html">6.1 - Introduction to Quadratics</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">6.1 - Introduction to Quadratic Functions</h1>
+<h1 class="title">6.1 - Introduction to Quadratics</h1>
 </div>
 
 
@@ -634,23 +665,178 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>Up to now, we have learned a lot about functions that model situations with straight-line behavior. Linear functions are useful in many real-world situations, but plenty of things do not move in straight lines. One example is the path of a thrown ball.</p>
+<p>When you throw a ball, it rises, slows down, reaches a highest point, and then falls. If you traced the path it makes in the air, the curve would look like a smooth U shape.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_1/BallArc.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<p>How could we model something like this?</p>
+<p>In this lesson, we will uncover a new type of function that can model curved paths like the one above. We call these functions <strong>quadratics</strong>.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can do things</label></li>
+<li><label><input type="checkbox">I can recognize a quadratic function from an equation, table, or graph.</label></li>
+<li><label><input type="checkbox">I can describe the shape and direction of a parabola.</label></li>
+<li><label><input type="checkbox">I can identify the vertex as a minimum or maximum.</label></li>
+<li><label><input type="checkbox">I can describe the domain and range of a quadratic function.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-term" data-term="term" data-slug="term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-domain" data-term="domain" data-slug="domain">domain</a>, <a href="" class="glossary-link" data-original-href="#glossary-function" data-term="function" data-slug="function">function</a>, <a href="" class="glossary-link" data-original-href="#glossary-maximum" data-term="maximum" data-slug="maximum">maximum</a>, <a href="" class="glossary-link" data-original-href="#glossary-minimum" data-term="minimum" data-slug="minimum">minimum</a>, <a href="" class="glossary-link" data-original-href="#glossary-parabola" data-term="parabola" data-slug="parabola">parabola</a>, <a href="" class="glossary-link" data-original-href="#glossary-range" data-term="range" data-slug="range">range</a>, <a href="" class="glossary-link" data-original-href="#glossary-vertex" data-term="vertex" data-slug="vertex">vertex</a></p>
 </div>
 <h2 class="unnumbered anchored">🔥 Warm-Up</h2>
+<p>A friend tosses a tennis ball and wants to draw the path it takes. Below are three rough sketches. Which one looks most like the path of a tossed ball? Explain your thinking.</p>
+<p>(Replace these placeholders later.)</p>
+<ul>
+<li><img src="images/Unit6/warmup_line.png" class="img-fluid" width="240"></li>
+<li><img src="images/Unit6/warmup_parabola.png" class="img-fluid" width="240"></li>
+<li><img src="images/Unit6/warmup_zigzag.png" class="img-fluid" width="240"></li>
+</ul>
+<hr>
 <h2 class="unnumbered anchored">👥 Learn Together</h2>
-<h2 class="unnumbered anchored">✍️ Practice On Your Own</h2>
+<section id="identifying-quadratic-functions" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-quadratic-functions">6.1.1 - Identifying Quadratic Functions</h3>
+<p>In Unit 5 you learned that the <a href="" class="glossary-link" data-original-href="#glossary-degree" data-term="degree" data-slug="degree">degree</a> of a polynomial tells us how the expression behaves. Linear functions have degree <span class="math inline">\(1\)</span>, which means their graphs can only move in one direction at a time. They never bend, so the result is always a straight line.</p>
+<p>Quadratic functions raise the degree to <span class="math inline">\(2\)</span>, and that single change gives the graph the ability to curve once. This allows them to model situations that bend instead of moving in a straight path.</p>
+<p>So how do you recognize a quadratic function?</p>
+<p>There are a few good clues to look for, depending on whether you see an equation, a table, or a graph. Let’s start with equations.</p>
+<section id="from-an-equation" class="level4">
+<h4 class="anchored" data-anchor-id="from-an-equation"><strong>From an Equation</strong></h4>
+<p>When you look at an equation, the fastest way to recognize a quadratic is to check the <strong>highest power of x</strong>. If the highest power is <span class="math inline">\(2\)</span>, the function is quadratic.</p>
+<p>Here are a few examples.</p>
+<hr>
+<p><strong>Example 1:</strong></p>
+<p>Is the function <span class="math inline">\(f(x) = 3x^2 - 4x + 1\)</span> quadratic?</p>
+<p>The highest power is <span class="math inline">\(2\)</span>.</p>
+<p>So <span class="math inline">\(f(x)\)</span> <strong>is</strong> a quadratic function.</p>
+<hr>
+<p><strong>Example 2:</strong></p>
+<p>Is <span class="math inline">\(g(x) = 5x - 9\)</span> quadratic?</p>
+<p>The highest power is <span class="math inline">\(1\)</span>. There is no <span class="math inline">\(x^2\)</span> term.</p>
+<p>So <span class="math inline">\(g(x)\)</span> is <strong>not</strong> quadratic. It is linear.</p>
+<hr>
+<p><strong>Example 3:</strong></p>
+<p>Is <span class="math inline">\(h(x) = 7x^3 + 2\)</span> quadratic?</p>
+<p>The highest power is <span class="math inline">\(3\)</span>, which means the function curves more than once.</p>
+<p>So <span class="math inline">\(h(x)\)</span> is <strong>not</strong> quadratic. It is cubic.</p>
+<hr>
+<div class="you-try-m" title="Is it quadratic?">
+<p>Which of the following are quadratic functions?</p>
+<ol type="1">
+<li><span class="math inline">\(p(x) = 4x^2 + 6\)</span></li>
+<li><span class="math inline">\(q(x) = 10 - x\)</span></li>
+<li><span class="math inline">\(r(x) = x^2 - x^3\)</span></li>
+<li><span class="math inline">\(s(x) = -3x^2 + 7x - 1\)</span></li>
+<li><span class="math inline">\(g(x) = 4\)</span></li>
+</ol>
+</div>
+<div class="answer" title="Answer">
+<ol type="1">
+<li>quadratic (degree 2)</li>
+<li>linear (degree 1)</li>
+<li>cubic (degree 3)</li>
+<li>quadratic (degree 2)</li>
+<li>constant (degree 0)</li>
+</ol>
+</div>
+</section>
+<section id="from-a-table" class="level4">
+<h4 class="anchored" data-anchor-id="from-a-table"><strong>From a table</strong></h4>
+<p>You do not need new vocabulary here. Instead, look at the pattern of the y values.</p>
+<p>Example (placeholder):</p>
+<p><img src="images/Unit6/table_curve.png" class="img-fluid" width="320"></p>
+<p>The values rise for a while, then slow down, then start to fall. That “rise then fall” (or “fall then rise”) pattern suggests a quadratic.</p>
+</section>
+<section id="from-a-graph" class="level4">
+<h4 class="anchored" data-anchor-id="from-a-graph">From a graph</h4>
+<p>Quadratic functions create a smooth U-shaped curve called a <strong>parabola</strong>.</p>
+<p>Example (placeholder):</p>
+<p><img src="images/Unit6/simple_parabola.png" class="img-fluid" width="340"></p>
+<p>A parabola has exactly one turning point. Both sides match if you imagine folding it down the middle.</p>
+<hr>
+</section>
+</section>
+<section id="features-of-quadratic-functions" class="level3">
+<h3 class="anchored" data-anchor-id="features-of-quadratic-functions">6.1.2 - Features of Quadratic Functions</h3>
+<p>Quadratics share three major features that help us understand their shape.</p>
+<section id="opening-direction" class="level4">
+<h4 class="anchored" data-anchor-id="opening-direction">Opening direction</h4>
+<p>The coefficient in front of <span class="math inline">\(x^2\)</span> tells which way the parabola opens.</p>
+<ul>
+<li>Positive coefficient → opens upward</li>
+<li>Negative coefficient → opens downward</li>
+</ul>
+<p>Example:</p>
+<p><img src="images/Unit6/open_up_down.png" class="img-fluid" width="380"></p>
+</section>
+<section id="vertex" class="level4">
+<h4 class="anchored" data-anchor-id="vertex">Vertex</h4>
+<p>The <strong>vertex</strong> is the single turning point of the graph.</p>
+<ul>
+<li>If the parabola opens upward, the vertex is a <strong>minimum</strong>.</li>
+<li>If the parabola opens downward, the vertex is a <strong>maximum</strong>.</li>
+</ul>
+<p>Example:</p>
+<p><img src="images/Unit6/vertex_point.png" class="img-fluid" width="340"></p>
+<p>You do not need to calculate the vertex yet. Here you only need to recognize its meaning.</p>
+</section>
+<section id="symmetry" class="level4">
+<h4 class="anchored" data-anchor-id="symmetry">Symmetry</h4>
+<p>Every parabola has a vertical line that splits it into two matching halves. This will be important later when we study how to find the vertex.</p>
+<hr>
+</section>
+</section>
+<section id="domain-and-range-of-quadratics" class="level3">
+<h3 class="anchored">6.1.3 - Domain and Range of Quadratics</h3>
+<p>This is the first time domain and range appear, so here is a simple introduction.</p>
+<ul>
+<li>The <strong>domain</strong> is all the x values a function can take.</li>
+<li>The <strong>range</strong> is all the y values the function can produce.</li>
+</ul>
+<p>For quadratics:</p>
+<ul>
+<li>The <strong>domain</strong> is all real numbers because you can plug in any x value.</li>
+<li>The <strong>range</strong> depends on the vertex.</li>
+</ul>
+<p>If a parabola opens upward, the lowest y value is at the vertex and everything else is above it. If it opens downward, the highest y value is at the vertex and everything else is below it.</p>
+<p>Example (placeholder):</p>
+<p><img src="images/Unit6/range_examples.png" class="img-fluid" width="360"></p>
+<hr>
+<h2 class="unnumbered anchored" data-anchor-id="domain-and-range-of-quadratics">✍️ Practice On Your Own</h2>
+<ol type="1">
+<li><p>Which of the following functions are quadratic?</p>
+<ol type="a">
+<li><span class="math inline">\(6x - 1\)</span></li>
+<li><span class="math inline">\(x^2 + 4x\)</span></li>
+<li><span class="math inline">\(8 - 3x^3\)</span></li>
+<li><span class="math inline">\(5x^2 + 2\)</span></li>
+</ol></li>
+<li><p>Look at the graph below.</p>
+<ol type="a">
+<li>Does it open up or down?</li>
+<li>Is the vertex a minimum or maximum?</li>
+<li>What do you think the range is?</li>
+</ol>
+<p><img src="images/Unit6/parabola_practice.png" class="img-fluid" width="320"></p></li>
+<li><p>A table of values rises for several x values, reaches a highest point, and then falls. Explain why this suggests the function might be quadratic.</p></li>
+<li><p>A parabola opens upward and its lowest point is at <span class="math inline">\(y = -4\)</span>. What is the domain? What is the range?</p></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li>b and d</li>
+<li><ol type="a">
+<li>Down</li>
+<li>Maximum</li>
+<li>All y values less than or equal to the vertex y value</li>
+</ol></li>
+<li>The y values increase and then decrease which matches the pattern of a quadratic</li>
+<li>Domain is all real numbers, range is all y values greater than or equal to negative four</li>
+</ol>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
@@ -1063,7 +1249,7 @@ window.MathJax = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.html" class="pagination-link" aria-label="6.2 - Forms of Quadratic Equations">
+      <a href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="pagination-link" aria-label="6.2 - Forms of Quadratic Equations">
         <span class="nav-page-text">6.2 - Forms of Quadratic Equations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
