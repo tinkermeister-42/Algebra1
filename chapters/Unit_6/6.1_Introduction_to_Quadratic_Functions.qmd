@@ -1,31 +1,229 @@
-# 6.1 - Introduction to Quadratic Functions {.unnumbered}
+# 6.1 - Introduction to Quadratics {.unnumbered}
 
-Coming Soon
+Up to now, we have learned a lot about functions that model situations with straight-line behavior. Linear functions are useful in many real-world situations, but plenty of things do not move in straight lines. One example is the path of a thrown ball.
+
+When you throw a ball, it rises, slows down, reaches a highest point, and then falls. If you traced the path it makes in the air, the curve would look like a smooth U shape.
+
+![](/images/Unit_6/Lesson_1/BallArc.png){width="500px" fig-align="center"}
+
+How could we model something like this?
+
+In this lesson, we will uncover a new type of function that can model curved paths like the one above. We call these functions **quadratics**.
 
 :::{.objectives}
 
-- [ ] I can do things
+* [ ] I can recognize a quadratic function from an equation, table, or graph.
+* [ ] I can describe the shape and direction of a parabola.
+* [ ] I can identify the vertex as a minimum or maximum.
+* [ ] I can describe the domain and range of a quadratic function.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink range >}}, {{< glink vertex >}}
 
 :::
 
 {{< warmup >}}
 
+A friend tosses a tennis ball and wants to draw the path it takes.
+Below are three rough sketches.
+Which one looks most like the path of a tossed ball? Explain your thinking.
+
+(Replace these placeholders later.)
+
+* ![](images/Unit6/warmup_line.png){width="240"}
+* ![](images/Unit6/warmup_parabola.png){width="240"}
+* ![](images/Unit6/warmup_zigzag.png){width="240"}
+
+---
+
 {{< learn >}}
 
-{{< practice >}}
+### 6.1.1 - Identifying Quadratic Functions
 
-:::{.answers}
+In Unit 5 you learned that the {{< glink degree >}} of a polynomial tells us how the expression behaves. Linear functions have degree $1$, which means their graphs can only move in one direction at a time. They never bend, so the result is always a straight line.
+
+Quadratic functions raise the degree to $2$, and that single change gives the graph the ability to curve once. This allows them to model situations that bend instead of moving in a straight path.
+
+So how do you recognize a quadratic function?
+
+There are a few good clues to look for, depending on whether you see an equation, a table, or a graph. Let’s start with equations.
+
+#### **From an Equation**
+
+When you look at an equation, the fastest way to recognize a quadratic is to check the **highest power of x**.
+If the highest power is $2$, the function is quadratic.
+
+Here are a few examples.
+
+---
+
+**Example 1:**
+
+Is the function $f(x) = 3x^2 - 4x + 1$ quadratic?
+
+The highest power is $2$.
+
+So $f(x)$ **is** a quadratic function.
+
+---
+
+**Example 2:**
+
+Is $g(x) = 5x - 9$ quadratic?
+
+The highest power is $1$.
+There is no $x^2$ term.
+
+So $g(x)$ is **not** quadratic. It is linear.
+
+---
+
+**Example 3:**
+
+Is $h(x) = 7x^3 + 2$ quadratic?
+
+The highest power is $3$, which means the function curves more than once.
+
+So $h(x)$ is **not** quadratic. It is cubic.
+
+---
+
+:::{.you-try-m title="Is it quadratic?"}
+
+Which of the following are quadratic functions?
+
+1. $p(x) = 4x^2 + 6$
+2. $q(x) = 10 - x$
+3. $r(x) = x^2 - x^3$
+4. $s(x) = -3x^2 + 7x - 1$
+5. $g(x) = 4$
 
 :::
 
+:::{.answer title="Answer"}
 
+1. quadratic (degree 2)
+2. linear (degree 1)
+3. cubic (degree 3)
+4. quadratic (degree 2)
+5. constant (degree 0)
 
+:::
 
+#### **From a table**
 
+You do not need new vocabulary here.
+Instead, look at the pattern of the y values.
+
+Example (placeholder):
+
+![](images/Unit6/table_curve.png){width="320"}
+
+The values rise for a while, then slow down, then start to fall.
+That “rise then fall” (or “fall then rise”) pattern suggests a quadratic.
+
+#### From a graph
+
+Quadratic functions create a smooth U-shaped curve called a **parabola**.
+
+Example (placeholder):
+
+![](images/Unit6/simple_parabola.png){width="340"}
+
+A parabola has exactly one turning point.
+Both sides match if you imagine folding it down the middle.
+
+---
+
+### 6.1.2 - Features of Quadratic Functions
+
+Quadratics share three major features that help us understand their shape.
+
+#### Opening direction
+
+The coefficient in front of $x^2$ tells which way the parabola opens.
+
+* Positive coefficient → opens upward
+* Negative coefficient → opens downward
+
+Example:
+
+![](images/Unit6/open_up_down.png){width="380"}
+
+#### Vertex
+
+The **vertex** is the single turning point of the graph.
+
+* If the parabola opens upward, the vertex is a **minimum**.
+* If the parabola opens downward, the vertex is a **maximum**.
+
+Example:
+
+![](images/Unit6/vertex_point.png){width="340"}
+
+You do not need to calculate the vertex yet.
+Here you only need to recognize its meaning.
+
+#### Symmetry
+
+Every parabola has a vertical line that splits it into two matching halves.
+This will be important later when we study how to find the vertex.
+
+---
+
+### 6.1.3 - Domain and Range of Quadratics
+
+This is the first time domain and range appear, so here is a simple introduction.
+
+* The **domain** is all the x values a function can take.
+* The **range** is all the y values the function can produce.
+
+For quadratics:
+
+* The **domain** is all real numbers because you can plug in any x value.
+* The **range** depends on the vertex.
+
+If a parabola opens upward, the lowest y value is at the vertex and everything else is above it.
+If it opens downward, the highest y value is at the vertex and everything else is below it.
+
+Example (placeholder):
+
+![](images/Unit6/range_examples.png){width="360"}
+
+---
+
+{{< practice >}}
+
+1. Which of the following functions are quadratic?
+   a. $6x - 1$
+   b. $x^2 + 4x$
+   c. $8 - 3x^3$
+   d. $5x^2 + 2$
+
+2. Look at the graph below.
+   a. Does it open up or down?
+   b. Is the vertex a minimum or maximum?
+   c. What do you think the range is?
+
+   ![](images/Unit6/parabola_practice.png){width="320"}
+
+3. A table of values rises for several x values, reaches a highest point, and then falls. Explain why this suggests the function might be quadratic.
+
+4. A parabola opens upward and its lowest point is at $y = -4$.
+   What is the domain?
+   What is the range?
+
+:::{.answers}
+
+1. b and d
+2. a. Down
+   b. Maximum
+   c. All y values less than or equal to the vertex y value
+3. The y values increase and then decrease which matches the pattern of a quadratic
+4. Domain is all real numbers, range is all y values greater than or equal to negative four
+
+:::
 

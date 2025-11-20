@@ -4,8 +4,10 @@ Coming Soon
 
 :::{.objectives}
 
-- [ ] I can do things
-
+- [ ] I can rewrite $x^2 + bx$ as a perfect square.
+- [ ] I can solve equations of the form $(x-h)^2 = k$.
+- [ ] I can explain how completing the square connects to the quadratic formula.
+  
 :::
 
 :::{.vocab}
@@ -17,6 +19,22 @@ Coming Soon
 {{< warmup >}}
 
 {{< learn >}}
+
+### 6.4.1 - Turning $x^2 + bx$ into a Perfect Square
+
+Half the middle term idea
+
+### 6.4.2 - Solving by Taking Square Roots
+
+(x-h)^2 = k
+
+### 6.4.3 - Vertex from Completed Square
+
+Identifying (h, k) without transformations
+
+### 6.4.4 - Deriving the Quadratic Formula
+
+How this leads to the quadratic formula
 
 {{< practice >}}
 

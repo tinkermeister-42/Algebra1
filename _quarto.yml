@@ -109,11 +109,10 @@ book:
       chapters:
         - file: chapters/Unit_6/index.qmd
         - file: chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.qmd
-        - file: chapters/Unit_6/6.2_Forms_of_Quadratic_Equations.qmd
+        - file: chapters/Unit_6/6.2_Graphing_Quadratics.qmd
         - file: chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.qmd
         - file: chapters/Unit_6/6.4_Completing_the_Square.qmd
         - file: chapters/Unit_6/6.5_The_Quadratic_Formula.qmd
-        - file: chapters/Unit_6/6.6_Graphing_Quadratic_Functions.qmd
         - file: chapters/Unit_6/Review.qmd
 
     - part: "Interactive Learning"

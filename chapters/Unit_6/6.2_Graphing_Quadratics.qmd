@@ -1,0 +1,45 @@
+# 6.2 - Forms of Quadratic Equations {.unnumbered}
+
+Coming Soon
+
+:::{.objectives}
+
+- [ ] I can find the axis of symmetry for a quadratic function.
+- [ ] I can find the vertex of a quadratic in standard form.
+- [ ] I can use identify positive/negative and increasing/decreasing intervals.
+
+:::
+
+:::{.vocab}
+
+{{< glink term >}}, ...
+
+:::
+
+{{< warmup >}}
+
+{{< learn >}}
+
+### 6.2.1 - Axis of Symmetry from Standard Form
+
+x = -b/2a
+
+### 6.2.2 - Finding the Vertex
+
+plug in the axis value
+
+### 6.2.3 - Interpreting the Graph
+
+positive/negative, increasing/decreasing, x-intercepts
+
+{{< practice >}}
+
+:::{.answers}
+
+:::
+
+
+
+
+
+

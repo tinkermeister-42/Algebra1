@@ -4,7 +4,9 @@ Coming Soon
 
 :::{.objectives}
 
-- [ ] I can do things
+- [ ] I can solve quadratic equations by factoring.
+- [ ] I can connect solutions to x-intercepts on a graph.
+- [ ] I can check solutions to quadratic equations.
 
 :::
 
@@ -17,6 +19,18 @@ Coming Soon
 {{< warmup >}}
 
 {{< learn >}}
+
+### 6.3.1 - Setting Up the Equation
+
+Move everything to one side; set equal to zero
+
+### 6.3.2 - Factoring and Solving
+
+Use Unit 5 methods; split zero product
+
+### 6.3.3 - Connecting Solutions to the Graph
+
+Solutions = x-intercepts; significance of zero
 
 {{< practice >}}
 

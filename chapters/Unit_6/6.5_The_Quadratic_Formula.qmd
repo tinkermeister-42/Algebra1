@@ -4,7 +4,9 @@ Coming Soon
 
 :::{.objectives}
 
-- [ ] I can do things
+- [ ] I can use the quadratic formula to solve any quadratic.
+- [ ] I can use the discriminant to determine how many solutions there are.
+- [ ] I can choose which solving method is most efficient.
 
 :::
 
@@ -17,6 +19,18 @@ Coming Soon
 {{< warmup >}}
 
 {{< learn >}}
+
+### 6.5.1 - Using the Quadratic Formula
+
+Plug-in approach, checking simplification
+
+### 6.5.2 - Understanding the Discriminant
+
+Positive/zero/negative -> two/one/none
+
+### 6.5.3 - Choosing a Method
+
+When factoring is quick vs when formula is best
 
 {{< practice >}}
 
