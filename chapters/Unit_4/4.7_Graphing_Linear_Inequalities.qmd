@@ -242,7 +242,7 @@ These are common in real-world problems with limits or constraints.
 $$
 \begin{aligned}
 y &\le -x + 5 \\
-y &\le x + 1 \\
+y &> x + 1 \\
 y &\ge 0
 \end{aligned}
 $$
@@ -311,7 +311,7 @@ Indicate whether each point is a solution to the inequality.
    ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
 
-5. $y <= -x$
+5. $y \ge -x$
 
     ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
@@ -319,7 +319,7 @@ Indicate whether each point is a solution to the inequality.
     
     ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
-7. $y >= \tfrac{4}{3}x - 3$
+7. $y \ge \tfrac{4}{3}x - 3$
 
     ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
@@ -334,7 +334,7 @@ Indicate whether each point is a solution to the inequality.
     
     ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
-10. $5(2y - 3) >= -2x + 5y$
+10. $5(2y - 3) \ge -2x + 5y$
 
     ![](/images/Unit_4/Lesson_7/Blank.png){width="350px" fig-align="center"}
 
@@ -349,7 +349,7 @@ Indicate whether each point is a solution to the inequality.
 
    $$
     \begin{align*}
-    y &>= -x + 1 \\
+    y &\ge -x + 1 \\
     y &< 2x + 5
     \end{align*}
    $$
