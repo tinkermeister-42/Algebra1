@@ -237,8 +237,7 @@ $$
 
 **Example 8:** A larger system
 
-Some systems create a **closed shape** when the shaded areas overlap.
-These are common in real-world problems with limits or constraints.
+Some systems have more than just two inequalities. These are common in real-world problems with limits or constraints.
 $$
 \begin{aligned}
 y &\le -x + 5 \\
@@ -247,14 +246,9 @@ y &\ge 0
 \end{aligned}
 $$
 
-Steps:
-
-1. Graph each line (the top two are solid and shade **below**; the last shades **above** the $x$-axis).
-2. The shaded **triangle** that forms where all three regions meet is the **solution**.
+The steps for graphing this larger system are exactly the same as before. We are looking for the region that makes **all** inequalities true. The highlighted region shows the solution.
 
 ![](/images/Unit_4/Lesson_7/Example8.png){width="350px" fig-align="center"}
-
-Any point inside that triangle satisfies **all three inequalities**.
 
 ---
 
