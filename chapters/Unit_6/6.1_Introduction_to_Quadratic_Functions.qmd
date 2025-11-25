@@ -1,14 +1,14 @@
 # 6.1 - Introduction to Quadratics {.unnumbered}
 
-Up to now, we have learned a lot about functions that model situations with straight-line behavior. Linear functions are useful in many real-world situations, but plenty of things do not move in straight lines. One example is the path of a thrown ball.
+Up to now, we have learned a lot about functions that model situations with straight-line behavior. Linear functions are useful in many real-world situations, but many things do not move in straight lines. One example is the path of a thrown ball.
 
-When you throw a ball, it rises, slows down, reaches a highest point, and then falls. If you traced the path it makes in the air, the curve would look like a smooth U shape.
+When you throw a ball, it rises, slows down, reaches a highest point, and then falls. If you traced the path it makes in the air, the curve looks like a smooth U shape.
 
 ![](/images/Unit_6/Lesson_1/BallArc.png){width="500px" fig-align="center"}
 
 How could we model something like this?
 
-In this lesson, we will uncover a new type of function that can model curved paths like the one above. We call these functions **quadratics**.
+In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions **quadratics**.
 
 :::{.objectives}
 
@@ -27,7 +27,11 @@ In this lesson, we will uncover a new type of function that can model curved pat
 
 {{< warmup >}}
 
-Coming Soon
+1. Find the degree of the polynomial $x^3 - 3x^4 + 2x^2 - x + 42$.
+
+2. Graph the function $f(x) = \tfrac{3/2}x - 2$. 
+
+3. A line has the equation $x = 5$. What type of line is this? What is its slope?
 
 {{< learn >}}
 
@@ -39,11 +43,11 @@ Quadratic functions raise the degree to $2$, and that single change gives the gr
 
 So how do you recognize a quadratic function?
 
-There are a few good clues to look for, depending on whether you see an equation, a table, or a graph. Let’s start with equations.
+There are a few ways to tell, depending on whether you see an equation, a table, or a graph. Let’s start with equations.
 
 #### **From an Equation**
 
-When you look at an equation, the fastest way to recognize a quadratic is to check the **highest power of x**.
+When you look at an equation, the fastest way to recognize a quadratic is to check the **highest power of $x$**.  
 If the highest power is $2$, the function is quadratic.
 
 Here are a few examples.
@@ -64,7 +68,7 @@ So $f(x)$ **is** a quadratic function.
 
 Is $g(x) = 5x - 9$ quadratic?
 
-The highest power is $1$.
+The highest power is $1$.  
 There is no $x^2$ term.
 
 So $g(x)$ is **not** quadratic. It is linear.
@@ -75,7 +79,7 @@ So $g(x)$ is **not** quadratic. It is linear.
 
 Is $h(x) = 7x^3 + 2$ quadratic?
 
-The highest power is $3$, which means the function curves more than once.
+The highest power is $3$.
 
 So $h(x)$ is **not** quadratic. It is cubic.
 
@@ -85,27 +89,29 @@ So $h(x)$ is **not** quadratic. It is cubic.
 
 Which of the following are quadratic functions?
 
-1. $p(x) = 4x^2 + 6$
-2. $q(x) = 10 - x$
-3. $r(x) = x^2 - x^3$
-4. $s(x) = -3x^2 + 7x - 1$
+1. $p(x) = 4x^2 + 6$  
+2. $q(x) = 10 - x$  
+3. $r(x) = x^2 - x^3$  
+4. $s(x) = -3x^2 + 7x - 1$  
 5. $t(x) = 4$
 
 :::
 
 :::{.answer title="Answer"}
 
-1. quadratic (degree 2)
-2. linear (degree 1)
-3. cubic (degree 3)
-4. quadratic (degree 2)
+1. quadratic (degree 2)  
+2. linear (degree 1)  
+3. cubic (degree 3)  
+4. quadratic (degree 2)  
 5. constant (degree 0)
 
 :::
 
-#### From a graph
+#### From a Graph
 
-Quadratic functions create a smooth U-shaped curve called a {{< glink parabola >}}. A parabola has exactly one turning point. Both sides match if you imagine folding it down the middle. 
+Now let's look at how to identify a quadratic from its graph.
+
+Quadratic functions create a smooth U-shaped curve called a {{< glink parabola >}}. A parabola has exactly one turning point. Both sides match if you imagine folding it in half. 
 
 The following example shows three different parabolas.
 
@@ -119,7 +125,7 @@ The following example shows three different parabolas.
 
 ### 6.1.2 - Features of Quadratic Functions
 
-Every quadratic function creates a parabola and all parabolas have three important characteristics.
+Every quadratic function creates a parabola. All parabolas have three main features.
 
 * Opening direction
 * Vertex
@@ -127,18 +133,18 @@ Every quadratic function creates a parabola and all parabolas have three importa
 
 Let's take a look at each of these.
 
-#### Opening direction
+#### Opening Direction
 
-A parabola can open upward, or it can open downward. Which direction it opens depends on the coefficient of the $x^2$ term.
+A parabola can open upward, or it can open downward. The opening direction comes from the coefficient of the $x^2$ term.
 
-* Positive coefficient → opens upward
+* Positive coefficient → opens upward  
 * Negative coefficient → opens downward
 
 ---
 
 **Example 5:** Opens upward
 
-The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficent on the $x^2$ term and so it opens upward.
+The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficient on the $x^2$ term and so it opens upward.
 
 ![](/images/Unit_6/Lesson_1/Example5.png){width="450" fig-align="center"}
 
@@ -153,7 +159,7 @@ The quadratic function $f(x) = -0.5x^2 + 4$ has a negative $x^2$ term and so it 
 
 :::{.you-try title="Will $f(x) = 3x^2 - 4x + 1$ open upward or downward?"}
 
-It will open upward because the coefficient on the $x^2$ term is positive
+It will open upward because the coefficient on the $x^2$ term is positive.
 
 :::
 
@@ -161,7 +167,7 @@ It will open upward because the coefficient on the $x^2$ term is positive
 
 The **vertex** is the single turning point of the graph.
 
-* If the parabola opens upward, the vertex is a **minimum**.
+* If the parabola opens upward, the vertex is a **minimum**.  
 * If the parabola opens downward, the vertex is a **maximum**.
 
 ---
@@ -176,69 +182,235 @@ The function $f(x) = -x^2 + 4x + 7$ has a vertex at $(2, 11)$. The coefficient o
 
 **Example 8:** A minimum vertex
 
-The function $f(x) = 0.5x^2 -3x + 2.5$ has a positive coefficient on the $x^2$ term and so the parabola opens up and its vertex is a minimum.
+The function $f(x) = 0.5x^2 -3x + 2.5$ has a positive coefficient on the $x^2$ term and so the parabola opens upward and its vertex is a minimum.
 
 ![](/images/Unit_6/Lesson_1/Example8.png){width="450" fig-align="center"}
 
-
+> Later in this unit, we will learn a quick way to find the vertex from an equation.  
+> For now, we only find the vertex when it is shown on a graph or directly given.
 
 #### Axis of Symmetry
 
-Every parabola has a vertical line that splits it into two matching halves.
-This will be important later when we study how to find the vertex.
+Every parabola has a vertical line, passing through the vertex, that splits it into two matching halves. This vertical line is called the {{< glink "axis of symmetry" >}}.
+
+The axis of symmetry is always $x = h$, where $h$ is the $x$-value of the vertex.
 
 ---
 
-### 6.1.3 - Domain and Range of Quadratics
+**Example 9:** The axis of symmetry of a parabola
 
-This is the first time domain and range appear, so here is a simple introduction.
+The function $f(x) = \tfrac{1}{4}(x + 2)^2 - 4$ has vertex $(-2, -4)$ and axis of symmetry $x = -2$.
 
-* The **domain** is all the x values a function can take.
-* The **range** is all the y values the function can produce.
+![](/images/Unit_6/Lesson_1/Example9.png){width="450" fig-align="center"}
 
-For quadratics:
+Note: we don't need the graph to find the axis of symmetry if we know the vertex. The axis of symmetry is always a vertical line through the vertex.
 
-* The **domain** is all real numbers because you can plug in any x value.
-* The **range** depends on the vertex.
+:::{.you-try-m title="Describe the parabola."}
 
-If a parabola opens upward, the lowest y value is at the vertex and everything else is above it.
-If it opens downward, the highest y value is at the vertex and everything else is below it.
+Using the graph for the equation $y = 2x^2 - 4x$ find its
 
-Example (placeholder):
-
-![](images/Unit6/range_examples.png){width="360"}
-
----
-
-{{< practice >}}
-
-1. Which of the following functions are quadratic?
-   a. $6x - 1$
-   b. $x^2 + 4x$
-   c. $8 - 3x^3$
-   d. $5x^2 + 2$
-
-2. Look at the graph below.
-   a. Does it open up or down?
-   b. Is the vertex a minimum or maximum?
-   c. What do you think the range is?
-
-   ![](images/Unit6/parabola_practice.png){width="320"}
-
-3. A table of values rises for several x values, reaches a highest point, and then falls. Explain why this suggests the function might be quadratic.
-
-4. A parabola opens upward and its lowest point is at $y = -4$.
-   What is the domain?
-   What is the range?
-
-:::{.answers}
-
-1. b and d
-2. a. Down
-   b. Maximum
-   c. All y values less than or equal to the vertex y value
-3. The y values increase and then decrease which matches the pattern of a quadratic
-4. Domain is all real numbers, range is all y values greater than or equal to negative four
+* opening direction  
+* vertex  
+* axis of symmetry
+  
+![](/images/Unit_6/Lesson_1/YouTryDescribeParabola.png){width="450" fig-align="center"}
 
 :::
 
+:::{.answer title="Answer"}
+
+* Opens upward  
+* Vertex is $(1, -2)$  
+* Axis of symmetry is $x = 1$
+
+:::
+
+### 6.1.3 - Domain and Range of Quadratics
+
+As is true for linear functions, a parabola goes on forever in both directions along the $x$-axis. So the {{< glink domain >}} (all things $x$ can be) is {{< glink "all real numbers" >}}, written $(-\infty, \infty)$.
+
+Unlike linear functions, a quadratic function does not take all possible $y$ values. Recall that when a parabola **opens upward**, its vertex is a **minimum**. When a parabola **opens downward**, its vertex is a **maximum**. 
+
+The set of possible $y$ values is called the {{< glink range >}}. For any quadratic function with vertex $(h, k)$, its **range** is
+
+* $[k, \infty)$ if it opens upward  
+* $(-\infty, k]$ if it opens downward
+
+---
+
+**Example 10:** Domain and range of a parabola
+
+Find the domain and range of $y = 0.5(x - 1)^2 - 1$ from its graph.
+
+![](/images/Unit_6/Lesson_1/Example10.png){width="450" fig-align="center"}
+
+As with any parabola, **the domain is all real numbers.**
+
+The vertex is at $(1, -1)$ and so **the range is $[-1, \infty)$**.
+
+---
+
+**Example 11:** Range of a parabola that opens downward
+
+Find the range of the parabola with equation $y = -3x^2 - 12x - 10$ from its graph.
+
+![](/images/Unit_6/Lesson_1/Example11.png){width="450" fig-align="center"}
+
+The vertex is $(-2, 2)$ and so **the range is $(-\infty, 2]$**.
+
+:::{.you-try-m title="Features from a graph."}
+
+Using its graph, describe the following features for $y = 2x^2 - 16x + 23$.
+
+* opening direction  
+* vertex  
+* axis of symmetry  
+* domain  
+* range
+
+![](/images/Unit_6/Lesson_1/YouTryFeaturesFromGraph.png){width="450" fig-align="center"}
+
+:::
+
+:::{.answer title="Answer"}
+
+* Opens upward  
+* Vertex is $(4, -9)$  
+* Axis of symmetry is $x = 4$  
+* Domain is **all real numbers**  
+* Range is $[-9, \infty)$
+  
+:::
+
+{{< practice >}}
+
+**Identify & Compare**
+
+Decide whether the expression is quadratic and explain briefly why.
+
+1. $y = 4x^2 - 3x + 1$
+
+2. $y = (x - 6)^2 - 2$
+
+3. $y = x^3 - 5x$
+
+4. $y = -2x^2$
+
+5. $y = 12x + 9$
+
+---
+
+**Opening Direction**
+
+State whether the parabola opens upward or downward and how you know.
+
+6. $y = -3x^2 + 4$
+
+7. $y = 0.2x^2 - 8$
+
+8. $y = -(x - 1)^2 + 7$
+
+9. $y = 5x^2$
+
+10. $y = -0.5x^2 - 12$
+
+---
+
+**Vertex & Axis of Symmetry**
+
+Use the information given to identify the vertex or axis of symmetry.
+
+11. A parabola opens upward and its lowest point is at $(4, 3)$.  
+    What is its vertex? What is its axis of symmetry?
+
+12. A parabola opens downward and its highest point is at $(-1, -5)$.  
+    What is its vertex? What is its axis of symmetry?
+
+13. A parabola opens upward and has vertex $(2, -6)$.  
+    What is its axis of symmetry?
+
+14. A parabola opens downward and has axis of symmetry $x = -3$.  
+    Give one possible vertex.
+
+15. A parabola has vertex $(0, 4)$ and opens downward.  
+    Is this a maximum or a minimum?
+
+---
+
+**Graph Interpretation**
+
+Use the graph to find the vertex, axis of symmetry, domain, and range.
+
+16. 
+    ![](/images/Unit_6/Lesson_1/Problem16.png){width="450" fig-align="center"}
+
+17. 
+    ![](/images/Unit_6/Lesson_1/Problem17.png){width="450" fig-align="center"}
+
+18. 
+    ![](/images/Unit_6/Lesson_1/Problem18.png){width="450" fig-align="center"}
+
+19. 
+    ![](/images/Unit_6/Lesson_1/Problem19.png){width="450" fig-align="center"}
+    
+
+20.   
+    ![](/images/Unit_6/Lesson_1/Problem20.png){width="450" fig-align="center"}
+
+---
+
+**Challenge Problems**
+
+Construct or justify a quadratic using only vertex, range, and opening direction.
+
+21.  A quadratic has vertex $(a, b)$ and opens upward.  
+    Write a possible equation and state its axis of symmetry.
+
+22.  A parabola has range $(-\infty, 4]$ and axis of symmetry $x = 3$.  
+    Give a possible vertex and matching quadratic equation.
+
+---
+
+:::{.answers}
+
+1. quadratic  
+
+2. quadratic  
+
+3. not quadratic  
+
+4. quadratic  
+
+5. not quadratic  
+
+6. opens downward  
+
+7. opens upward  
+
+8. opens downward  
+
+9. opens upward  
+
+10. opens downward  
+
+11. vertex $(4, 3)$, axis $x = 4$  
+
+12. vertex $(-1, -5)$, axis $x = -1$  
+
+13. vertex $(2, -6)$, axis $x = 2$  
+
+14. vertex $(-3, k)$ for any $k$  
+
+15. maximum  
+
+16. vertex $(-1, -9)$, axis $x = -1$, range $[-9, \infty)$  
+
+17. vertex $(4, 12)$, axis $x = 4$, range $(-\infty, 12]$  
+
+18. vertex $(2, -3)$, axis $x = 2$, range $[-3, \infty)$
+
+19. vertex $(0, -5), axis $x = 0$, range $[-5, \infty)$  
+
+20. vertex $(1, 1)$, axis $x = 1$, range $(-\infty, 1]$  
+
+:::

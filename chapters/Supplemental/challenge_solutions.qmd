@@ -402,6 +402,8 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 
 :::
 
+## Unit 5 - Exponents & Polynomials
+
 ### 5.1 - Exponent Rules
 
 :::{.answers}
@@ -444,10 +446,22 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 
 ### 5.5 - Factoring: General Trinomials & Special Patterns
 
-:::{.ansers}
+:::{.answers}
 
 31. $x(12x + 5)(2x + 3)$  
 
 32. $(11a^2 - 8b^2)(11a^2 + 8b^2)$
 
+:::
+
+## Unit 6 - Quadratic Equations & Functions
+
+### 6.1 - Introduction to Quadratic Functions
+
+:::{.answers}
+
+21. example: $y = (x - a)^2 + b$, axis $x = a$  
+
+22. example vertex $(3, 4)$; example equation: $y = -(x - 3)^2 + 4$  
+    
 :::
