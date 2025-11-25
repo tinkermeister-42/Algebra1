@@ -12,7 +12,7 @@ In this lesson, we will uncover a new type of function that can model curved pat
 
 :::{.objectives}
 
-* [ ] I can recognize a quadratic function from an equation, table, or graph.
+* [ ] I can recognize a quadratic function from an equation or graph.
 * [ ] I can describe the shape and direction of a parabola.
 * [ ] I can identify the vertex as a minimum or maximum.
 * [ ] I can describe the domain and range of a quadratic function.
@@ -21,23 +21,13 @@ In this lesson, we will uncover a new type of function that can model curved pat
 
 :::{.vocab}
 
-{{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink range >}}, {{< glink vertex >}}
+{{< glink "axis of symmetry" >}}, {{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink range >}}, {{< glink vertex >}}
 
 :::
 
 {{< warmup >}}
 
-A friend tosses a tennis ball and wants to draw the path it takes.
-Below are three rough sketches.
-Which one looks most like the path of a tossed ball? Explain your thinking.
-
-(Replace these placeholders later.)
-
-* ![](images/Unit6/warmup_line.png){width="240"}
-* ![](images/Unit6/warmup_parabola.png){width="240"}
-* ![](images/Unit6/warmup_zigzag.png){width="240"}
-
----
+Coming Soon
 
 {{< learn >}}
 
@@ -99,7 +89,7 @@ Which of the following are quadratic functions?
 2. $q(x) = 10 - x$
 3. $r(x) = x^2 - x^3$
 4. $s(x) = -3x^2 + 7x - 1$
-5. $g(x) = 4$
+5. $t(x) = 4$
 
 :::
 
@@ -113,45 +103,59 @@ Which of the following are quadratic functions?
 
 :::
 
-#### **From a table**
-
-You do not need new vocabulary here.
-Instead, look at the pattern of the y values.
-
-Example (placeholder):
-
-![](images/Unit6/table_curve.png){width="320"}
-
-The values rise for a while, then slow down, then start to fall.
-That “rise then fall” (or “fall then rise”) pattern suggests a quadratic.
-
 #### From a graph
 
-Quadratic functions create a smooth U-shaped curve called a **parabola**.
+Quadratic functions create a smooth U-shaped curve called a {{< glink parabola >}}. A parabola has exactly one turning point. Both sides match if you imagine folding it down the middle. 
 
-Example (placeholder):
+The following example shows three different parabolas.
 
-![](images/Unit6/simple_parabola.png){width="340"}
+---
 
-A parabola has exactly one turning point.
-Both sides match if you imagine folding it down the middle.
+**Example 4:** Three Parabolas
+
+![](/images/Unit_6/Lesson_1/Example4.png){width="340" fig-align="center"}
 
 ---
 
 ### 6.1.2 - Features of Quadratic Functions
 
-Quadratics share three major features that help us understand their shape.
+Every quadratic function creates a parabola and all parabolas have three important characteristics.
+
+* Opening direction
+* Vertex
+* Axis of symmetry
+
+Let's take a look at each of these.
 
 #### Opening direction
 
-The coefficient in front of $x^2$ tells which way the parabola opens.
+A parabola can open upward, or it can open downward. Which direction it opens depends on the coefficient of the $x^2$ term.
 
 * Positive coefficient → opens upward
 * Negative coefficient → opens downward
 
-Example:
+---
 
-![](images/Unit6/open_up_down.png){width="380"}
+**Example 5:** Opens upward
+
+The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficent on the $x^2$ term and so it opens upward.
+
+![](/images/Unit_6/Lesson_1/Example5.png){width="450" fig-align="center"}
+
+---
+
+**Example 6:** Opens downward
+
+The quadratic function $f(x) = -0.5x^2 + 4$ has a negative $x^2$ term and so it opens downward.
+
+![](/images/Unit_6/Lesson_1/Example6.png){width="450" fig-align="center"}
+
+
+:::{.you-try title="Will $f(x) = 3x^2 - 4x + 1$ open upward or downward?"}
+
+It will open upward because the coefficient on the $x^2$ term is positive
+
+:::
 
 #### Vertex
 
@@ -160,14 +164,25 @@ The **vertex** is the single turning point of the graph.
 * If the parabola opens upward, the vertex is a **minimum**.
 * If the parabola opens downward, the vertex is a **maximum**.
 
-Example:
+---
 
-![](images/Unit6/vertex_point.png){width="340"}
+**Example 7:** A maximum vertex
 
-You do not need to calculate the vertex yet.
-Here you only need to recognize its meaning.
+The function $f(x) = -x^2 + 4x + 7$ has a vertex at $(2, 11)$. The coefficient on the $x^2$ term is negative so the parabola opens downward and its vertex is a maximum.
 
-#### Symmetry
+![](/images/Unit_6/Lesson_1/Example7.png){width="450" fig-align="center"}
+
+---
+
+**Example 8:** A minimum vertex
+
+The function $f(x) = 0.5x^2 -3x + 2.5$ has a positive coefficient on the $x^2$ term and so the parabola opens up and its vertex is a minimum.
+
+![](/images/Unit_6/Lesson_1/Example8.png){width="450" fig-align="center"}
+
+
+
+#### Axis of Symmetry
 
 Every parabola has a vertical line that splits it into two matching halves.
 This will be important later when we study how to find the vertex.
