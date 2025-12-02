@@ -1,268 +1,284 @@
+from LinearEquations import *
+
+# ===== quadratic helpers for linear_plane.py =====
 import numpy as np
-import matplotlib.pyplot as plt
 
-
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator
-
-
-def parse_quadratic(quad):
+def format_quadratic_label(a: float, b: float, c: float) -> str:
     """
-    Accepts:
-    - (a, b, c)
-    - (a, h, k, "vertex")
-    - a function f(x)
-
-    Returns: function f, and inferred standard (a, b, c) if possible
+    Return a nice string like 'y = 2x^2 - 3x + 1' with special casing:
+      - hide 1 and -1 coefficients where appropriate
+      - suppress +0 terms
+      - handle signs cleanly
     """
+    parts = []
 
-    if callable(quad):
-        # cannot infer coefficients
-        return quad, None
+    # a x^2 term
+    a0 = np.isclose(a, 0.0)
+    a1 = np.isclose(a, 1.0)
+    a_1 = np.isclose(a, -1.0)
 
-    if len(quad) == 3:
-        a, b, c = quad
-        def f(x): return a * x**2 + b * x + c
-        return f, (a, b, c)
-
-    if len(quad) == 4 and quad[3] == "vertex":
-        a, h, k, _ = quad
-        def f(x): return a * (x - h)**2 + k
-        # convert to standard form for labels
-        A = a
-        B = -2 * a * h
-        C = a * h**2 + k
-        return f, (A, B, C)
-
-    raise ValueError("Invalid quadratic format.")
-    
-
-def quadratic_latex(a, b, c, func_name="f"):
-    """
-    Produce a LaTeX equation like:
-    $f(x) = x^2 - 4x + 3$
-    """
-    var = "x"
-    pieces = []
-
-    # ax^2
-    if a == 1:
-        pieces.append(f"{var}^2")
-    elif a == -1:
-        pieces.append(f"-{var}^2")
-    else:
-        pieces.append(f"{a}{var}^2")
-
-    # bx
-    if b != 0:
-        sign = "+" if b > 0 else ""
-        if b == 1:
-            pieces.append(f"{sign}{var}")
-        elif b == -1:
-            pieces.append(f"-{var}")
+    if not a0:
+        if a1:
+            parts.append("x^2")
+        elif a_1:
+            parts.append("-x^2")
         else:
-            pieces.append(f"{sign}{b}{var}")
+            parts.append(f"{a:g}x^2")
+
+    # b x term
+    b0 = np.isclose(b, 0.0)
+    if not b0:
+        sign = "+" if b > 0 else "-"
+        mag = abs(b)
+        if np.isclose(mag, 1.0):
+            piece = "x"
+        else:
+            piece = f"{mag:g}x"
+        if parts:
+            parts.append(f" {sign} {piece}")
+        else:
+            # first term, keep sign
+            parts.append(f"{b:g}x" if not np.isclose(mag, 1.0) else ("x" if b > 0 else "-x"))
 
     # constant term
-    if c != 0:
-        sign = "+" if c > 0 else ""
-        pieces.append(f"{sign}{c}")
+    c0 = np.isclose(c, 0.0)
+    if not c0:
+        sign = "+" if c > 0 else "-"
+        mag = abs(c)
+        if parts:
+            parts.append(f" {sign} {mag:g}")
+        else:
+            parts.append(f"{c:g}")
 
-    rhs = " ".join(pieces)
-    return rf"${func_name}({var}) = {rhs}$"
+    # if everything vanished, it's y = 0
+    if not parts:
+        rhs = "0"
+    else:
+        rhs = "".join(parts)
+
+    return f"y = {rhs}"
 
 
-def plot_quadratic(
-    quad,
-    *,
-    x_range=(-10, 10),
-    y_range=None,
-    aspect=1,
-    points=None,
-    axis_of_symmetry=None,
-    equation_label=None,
-    grid=None,
-    figsize=(4, 4),
+def format_quadratic_ineq_label(a: float, b: float, c: float, comp: str) -> str:
+    """
+    Same as format_quadratic_label but with inequalities like y ≤ ax^2 + bx + c.
+    """
+    sym = {'<': '<', '<=': '≤', '>': '>', '>=': '≥'}.get(comp, comp)
+    eq = format_quadratic_label(a, b, c)      # 'y = ...'
+    return eq.replace('=', sym, 1)            # 'y ≤ ...'
+
+
+def add_quadratics_to_axes(
+    ax,
+    quadratics=None,
+    inequalities=None,
+    show_vertex: bool = False,
+    show_roots: bool = False,
+    quad_line_defaults: Optional[dict] = None,
+    quad_inequality_defaults: Optional[dict] = None,
+    samples: int = 1000,
+    legend: bool = True,
 ):
     """
-    Clean, textbook style quadratic plotter.
+    Draw quadratics on an existing axes (e.g. from linear_function_coordinate_plane).
 
     Parameters
     ----------
-    quad:
-        (a, b, c)
-        (a, h, k, "vertex")
-        callable f(x)
-
-    x_range:
-        Tuple (xmin, xmax)
-
-    y_range:
-        Tuple (ymin, ymax) or None for auto
-
-    aspect:
-        Numeric aspect ratio. 1 gives a square plot area.
-
-    points:
-        List of (x, y, style_dict) where style_dict may contain:
-          - "label": text
-          - "color": marker color
-          - "size": marker size
-          - "offset": (dx, dy) in points for the label
-
-    axis_of_symmetry:
-        Dict or None. Example:
-          {
-            "x": value,
-            "color": "red",
-            "linestyle": "--",
-            "linewidth": 1.5,
-            "label": "x = 2.0",
-            "label_offset": (0, 0)
-          }
-
-    equation_label:
-        Dict or None. Example:
-          {
-            "location": "top-right",
-            "func_name": "f",
-            "fontsize": 12,
-            "offset": (-5, -5)   # in points
-          }
-
-    grid:
-        Dict or None. Example:
-          {
-            "major": True,
-            "minor": True,
-            "x_major_step": 1,
-            "y_major_step": 1
-          }
+    ax : matplotlib Axes
+        The axes to draw on.
+    quadratics : list of (a, b, c) or (a, b, c, style_dict)
+        Curves y = ax^2 + bx + c. Optional style dict merged over quad_line_defaults.
+    inequalities : list of (a, b, c, comp) or (a, b, c, comp, style_dict)
+        Quadratic inequalities with comp in {'<','<=','>','>='}.
+        Region is shaded above/below the curve.
+    show_vertex : bool
+        If True, mark the vertex of each quadratic that lies in view.
+    show_roots : bool
+        If True, mark real roots of each quadratic that lie in view.
+    quad_line_defaults : dict
+        Default matplotlib style for quadratic curves.
+    quad_inequality_defaults : dict
+        Default style for inequality boundaries and fills.
+    samples : int
+        Number of x samples across the visible x-range.
+    legend : bool
+        If True, call ax.legend() at the end. Note: this will only show artists
+        that have labels; your existing linear_function_coordinate_plane does not
+        set labels by default, so usually only the quadratics will appear.
     """
+    if quadratics is None and inequalities is None:
+        return ax
 
-    # parse the quadratic info
-    f, coeffs = parse_quadratic(quad)
-    a = b = c = None
-    if coeffs is not None:
-        a, b, c = coeffs
+    if quad_line_defaults is None:
+        quad_line_defaults = {'linewidth': 2.0}
+    if quad_inequality_defaults is None:
+        quad_inequality_defaults = {'alpha': 0.15, 'linewidth': 1.5}
 
-    # sample points
-    xs = np.linspace(x_range[0], x_range[1], 400)
-    ys = f(xs)
+    xmin, xmax = ax.get_xlim()
+    ymin, ymax = ax.get_ylim()
+    xs = np.linspace(xmin, xmax, samples)
 
-    fig, ax = plt.subplots(figsize=figsize)
+    # --- helper for vertex & roots ---
+    def _vertex(a, b, c):
+        if np.isclose(a, 0.0):
+            return None
+        h = -b / (2 * a)
+        k = a * h * h + b * h + c
+        return h, k
 
-    # main curve
-    ax.plot(xs, ys, color="C0", linewidth=2)
+    def _roots(a, b, c):
+        if np.isclose(a, 0.0):
+            # Degenerate to linear
+            if np.isclose(b, 0.0):
+                return []
+            x = -c / b
+            return [x]
+        disc = b * b - 4 * a * c
+        if disc < 0:
+            return []
+        if np.isclose(disc, 0.0):
+            return [-b / (2 * a)]
+        r = disc ** 0.5
+        return [(-b - r) / (2 * a), (-b + r) / (2 * a)]
 
-    # axes
-    ax.axhline(0, color="#CCCCCC", linewidth=1)
-    ax.axvline(0, color="#CCCCCC", linewidth=1)
+    # --- curves y = ax^2 + bx + c ---
+    if quadratics:
+        for item in quadratics:
+            if len(item) == 3:
+                a, b, c = item
+                style = {}
+            else:
+                a, b, c, style = item
 
-    # grid with major and minor ticks
-    if grid:
-        major = grid.get("major", True)
-        minor = grid.get("minor", False)
+            style = (style or {}).copy()
+            label = style.pop('label', None) or format_quadratic_label(a, b, c)
+            line_style = {**quad_line_defaults, **style, 'label': label}
 
-        if "x_major_step" in grid:
-            ax.xaxis.set_major_locator(MultipleLocator(grid["x_major_step"]))
-        if "y_major_step" in grid:
-            ax.yaxis.set_major_locator(MultipleLocator(grid["y_major_step"]))
+            ys = a * xs**2 + b * xs + c
+            ax.plot(xs, ys, **line_style)
 
-        if major:
-            ax.grid(True, which="major", linestyle=":", linewidth=0.8, color="#DDDDDD")
-        if minor:
-            ax.minorticks_on()
-            ax.grid(True, which="minor", linestyle=":", linewidth=0.5, color="#EEEEEE")
+            # vertex marker
+            if show_vertex:
+                v = _vertex(a, b, c)
+                if v is not None:
+                    vx, vy = v
+                    if xmin <= vx <= xmax and ymin <= vy <= ymax:
+                        ax.scatter([vx], [vy], s=30, zorder=5, color=line_style.get('color', None))
 
-    # optional points
-    if points:
-        for (px, py, style) in points:
-            label = style.get("label")
-            color = style.get("color", "black")
-            size = style.get("size", 40)
-            offset = style.get("offset", (6, 6))
+            # root markers
+            if show_roots:
+                rs = _roots(a, b, c)
+                for r in rs:
+                    if xmin <= r <= xmax:
+                        yr = 0.0
+                        if ymin <= yr <= ymax:
+                            ax.scatter([r], [yr], s=30, zorder=5, color=line_style.get('color', None))
 
-            ax.scatter(px, py, color=color, s=size, zorder=5)
-            if label:
-                ax.annotate(
-                    label,
-                    xy=(px, py),
-                    xytext=offset,
-                    textcoords="offset points",
-                    fontsize=10,
-                )
+    # --- inequalities y ⋚ ax^2 + bx + c ---
+    if inequalities:
+        for item in inequalities:
+            if len(item) == 4:
+                a, b, c, comp = item
+                style = {}
+            else:
+                a, b, c, comp, style = item
 
-    # axis of symmetry
-    if axis_of_symmetry:
-        x0 = axis_of_symmetry.get("x")
-        color = axis_of_symmetry.get("color", "red")
-        ls = axis_of_symmetry.get("linestyle", "--")
-        lw = axis_of_symmetry.get("linewidth", 1.4)
-        ax.axvline(x0, color=color, linestyle=ls, linewidth=lw)
+            style = (style or {}).copy()
+            boundary_ls = (0, (4, 4)) if comp in ('<', '>') else '-'
 
-        if "label" in axis_of_symmetry:
-            label_offset = axis_of_symmetry.get("label_offset", (0, 0))
-            # place label at top of plot above the line
-            ax.annotate(
-                axis_of_symmetry["label"],
-                xy=(x0, ax.get_ylim()[1]),
-                xycoords=("data", "data"),
-                xytext=label_offset,
-                textcoords="offset points",
-                ha="center",
-                va="bottom",
-                fontsize=10,
-                color=color,
-            )
+            boundary_style = {
+                **quad_inequality_defaults,
+                'linestyle': boundary_ls,
+            }
+            # allow user overrides
+            for k in ['color', 'linewidth', 'linestyle']:
+                if k in style:
+                    boundary_style[k] = style[k]
 
-    # equation label
-    if equation_label and coeffs is not None:
-        loc = equation_label.get("location", "top-right")
-        fontsize = equation_label.get("fontsize", 12)
-        func_name = equation_label.get("func_name", "f")
-        offset = equation_label.get("offset", (0, 0))
+            label = style.pop('label', None) or format_quadratic_ineq_label(a, b, c, comp)
+            ys = a * xs**2 + b * xs + c
 
-        eq_text = quadratic_latex(a, b, c, func_name=func_name)
+            ax.plot(xs, ys, label=label, **boundary_style)
 
-        loc_map = {
-            "top-right": (0.98, 0.98),
-            "top-left": (0.02, 0.98),
-            "bottom-left": (0.02, 0.02),
-            "bottom-right": (0.98, 0.02),
+            fill_kwargs = quad_inequality_defaults.copy()
+            fill_kwargs.update({k: v for k, v in style.items() if k not in ['linestyle']})
+
+            if comp in ('<', '<='):
+                ax.fill_between(xs, ymin, ys, **fill_kwargs)
+            else:
+                ax.fill_between(xs, ys, ymax, **fill_kwargs)
+
+    if legend:
+        ax.legend()
+
+    return ax
+
+
+def quadratic_function_coordinate_plane(
+    *,
+    quadratics=None,
+    inequalities=None,
+    show_vertex: bool = False,
+    show_roots: bool = False,
+    quad_line_defaults: Optional[dict] = None,
+    quad_inequality_defaults: Optional[dict] = None,
+    samples: int = 1000,
+    legend: bool = True,
+    **plane_kwargs,
+):
+    """
+    Convenience wrapper around linear_function_coordinate_plane that also draws
+    quadratics.
+
+    Usage example
+    -------------
+    fig, ax = quadratic_function_coordinate_plane(
+        x_axis=(-10, 10, "x", {}),
+        y_axis=(-10, 10, "y", {}),
+        quadratics=[(1, 0, -4), (-0.5, 2, 3)],
+        show_vertex=True,
+        show_roots=True,
+        chart_axis_labels={
+            "bottom": ("Time (seconds)", {}),
+            "left": ("Height (meters)", {}),
         }
-        xloc, yloc = loc_map[loc]
+    )
 
-        # use annotate so we can nudge by points
-        ha = "right" if "right" in loc else "left"
-        va = "top" if "top" in loc else "bottom"
+    Any extra keyword arguments are passed directly through to
+    linear_function_coordinate_plane (ticks, points, lines, etc).
 
-        ax.annotate(
-            eq_text,
-            xy=(xloc, yloc),
-            xycoords="axes fraction",
-            xytext=offset,
-            textcoords="offset points",
-            ha=ha,
-            va=va,
-            fontsize=fontsize,
-            bbox=dict(facecolor="white", edgecolor="black", boxstyle="round,pad=0.25"),
-        )
+    Note
+    ----
+    The built-in legend logic of linear_function_coordinate_plane is disabled
+    in this wrapper so that we can use standard Matplotlib legend behavior.
+    If you want a legend, set legend=True (default), and only the artists with
+    labels (quadratics, or anything else you explicitly label) will appear.
+    """
+    # We deliberately disable the internal legend logic and handle it here
+    plane_kwargs = plane_kwargs.copy()
+    plane_kwargs['legend'] = False
 
-    # aspect and ranges
-    ax.set_xlim(x_range)
-    if y_range:
-        ax.set_ylim(y_range)
-    else:
-        ymin, ymax = np.min(ys), np.max(ys)
-        pad = 0.1 * (ymax - ymin if ymax > ymin else 1)
-        ax.set_ylim(ymin - pad, ymax + pad)
+    fig, ax = linear_function_coordinate_plane(**plane_kwargs)
 
-    ax.set_aspect(aspect, adjustable="box")
+    add_quadratics_to_axes(
+        ax,
+        quadratics=quadratics,
+        inequalities=inequalities,
+        show_vertex=show_vertex,
+        show_roots=show_roots,
+        quad_line_defaults=quad_line_defaults,
+        quad_inequality_defaults=quad_inequality_defaults,
+        samples=samples,
+        legend=legend,
+    )
 
-    ax.set_xlabel("x")
-    ax.set_ylabel("y")
-    ax.margins(0)
-    plt.tight_layout()
     return fig, ax
+
+def convert_to_standard_form(a, h, k):
+    return (
+        a,
+        -2*a*h,
+        a*h**2 + k
+    )
+# ===== end quadratic helpers =====
+

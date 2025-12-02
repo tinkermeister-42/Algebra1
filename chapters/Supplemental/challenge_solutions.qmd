@@ -465,3 +465,15 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 22. example vertex $(3, 4)$; example equation: $y = -(x - 3)^2 + 4$  
     
 :::
+
+### 6.2 - Graphing Quadratics
+
+:::{.answers}
+
+13. $a > 0$ and $k > 0$
+
+14. Example points given to show solution set.
+    
+    ![](/images/Unit_6/Lesson_2/Problem14.png){width="400px" fig-align="center"}
+
+:::

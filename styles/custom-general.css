@@ -90,3 +90,8 @@
 }
 
 
+/* Force a page break before Practice headings when printing / PDF */
+.pagebreak-before {
+  page-break-before: always;
+  break-before: page;
+}

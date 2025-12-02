@@ -119,7 +119,7 @@ The following example shows three different parabolas.
 
 **Example 4:** Three Parabolas
 
-![](/images/Unit_6/Lesson_1/Example4.png){width="340" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example4.png){width="300px" fig-align="center"}
 
 ---
 
@@ -146,7 +146,7 @@ A parabola can open upward, or it can open downward. The opening direction comes
 
 The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficient on the $x^2$ term and so it opens upward.
 
-![](/images/Unit_6/Lesson_1/Example5.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example5.png){width="320px" fig-align="center"}
 
 ---
 
@@ -154,7 +154,7 @@ The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficient on the 
 
 The quadratic function $f(x) = -0.5x^2 + 4$ has a negative $x^2$ term and so it opens downward.
 
-![](/images/Unit_6/Lesson_1/Example6.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example6.png){width="320px" fig-align="center"}
 
 
 :::{.you-try title="Will $f(x) = 3x^2 - 4x + 1$ open upward or downward?"}
@@ -176,7 +176,7 @@ The **vertex** is the single turning point of the graph.
 
 The function $f(x) = -x^2 + 4x + 7$ has a vertex at $(2, 11)$. The coefficient on the $x^2$ term is negative so the parabola opens downward and its vertex is a maximum.
 
-![](/images/Unit_6/Lesson_1/Example7.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example7.png){width="320px" fig-align="center"}
 
 ---
 
@@ -184,10 +184,9 @@ The function $f(x) = -x^2 + 4x + 7$ has a vertex at $(2, 11)$. The coefficient o
 
 The function $f(x) = 0.5x^2 -3x + 2.5$ has a positive coefficient on the $x^2$ term and so the parabola opens upward and its vertex is a minimum.
 
-![](/images/Unit_6/Lesson_1/Example8.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example8.png){width="320px" fig-align="center"}
 
-> Later in this unit, we will learn a quick way to find the vertex from an equation.  
-> For now, we only find the vertex when it is shown on a graph or directly given.
+---
 
 #### Axis of Symmetry
 
@@ -201,7 +200,7 @@ The axis of symmetry is always $x = h$, where $h$ is the $x$-value of the vertex
 
 The function $f(x) = \tfrac{1}{4}(x + 2)^2 - 4$ has vertex $(-2, -4)$ and axis of symmetry $x = -2$.
 
-![](/images/Unit_6/Lesson_1/Example9.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example9.png){width="320px" fig-align="center"}
 
 Note: we don't need the graph to find the axis of symmetry if we know the vertex. The axis of symmetry is always a vertical line through the vertex.
 
@@ -213,7 +212,7 @@ Using the graph for the equation $y = 2x^2 - 4x$ find its
 * vertex  
 * axis of symmetry
   
-![](/images/Unit_6/Lesson_1/YouTryDescribeParabola.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/YouTryDescribeParabola.png){width="320px" fig-align="center"}
 
 :::
 
@@ -242,7 +241,7 @@ The set of possible $y$ values is called the {{< glink range >}}. For any quadra
 
 Find the domain and range of $y = 0.5(x - 1)^2 - 1$ from its graph.
 
-![](/images/Unit_6/Lesson_1/Example10.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example10.png){width="320px" fig-align="center"}
 
 As with any parabola, **the domain is all real numbers.**
 
@@ -254,7 +253,7 @@ The vertex is at $(1, -1)$ and so **the range is $[-1, \infty)$**.
 
 Find the range of the parabola with equation $y = -3x^2 - 12x - 10$ from its graph.
 
-![](/images/Unit_6/Lesson_1/Example11.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/Example11.png){width="320px" fig-align="center"}
 
 The vertex is $(-2, 2)$ and so **the range is $(-\infty, 2]$**.
 
@@ -268,7 +267,7 @@ Using its graph, describe the following features for $y = 2x^2 - 16x + 23$.
 * domain  
 * range
 
-![](/images/Unit_6/Lesson_1/YouTryFeaturesFromGraph.png){width="450" fig-align="center"}
+![](/images/Unit_6/Lesson_1/YouTryFeaturesFromGraph.png){width="320px" fig-align="center"}
 
 :::
 
@@ -342,20 +341,20 @@ Use the information given to identify the vertex or axis of symmetry.
 Use the graph to find the vertex, axis of symmetry, domain, and range.
 
 16. 
-    ![](/images/Unit_6/Lesson_1/Problem16.png){width="450" fig-align="center"}
+    ![](/images/Unit_6/Lesson_1/Problem16.png){width="320px" fig-align="center"}
 
 17. 
-    ![](/images/Unit_6/Lesson_1/Problem17.png){width="450" fig-align="center"}
+    ![](/images/Unit_6/Lesson_1/Problem17.png){width="320px" fig-align="center"}
 
 18. 
-    ![](/images/Unit_6/Lesson_1/Problem18.png){width="450" fig-align="center"}
+    ![](/images/Unit_6/Lesson_1/Problem18.png){width="320px" fig-align="center"}
 
 19. 
-    ![](/images/Unit_6/Lesson_1/Problem19.png){width="450" fig-align="center"}
+    ![](/images/Unit_6/Lesson_1/Problem19.png){width="320px" fig-align="center"}
     
 
 20. 
-    ![](/images/Unit_6/Lesson_1/Problem20.png){width="450" fig-align="center"}
+    ![](/images/Unit_6/Lesson_1/Problem20.png){width="320px" fig-align="center"}
 
 ---
 

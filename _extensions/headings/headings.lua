@@ -10,17 +10,32 @@ local function raw_block_for_heading(text)
   end
 end
 
+
+local function heading(level, title)
+  return pandoc.Header(level, title)
+end
+
+local function heading_with_pagebreak(level, title)
+  -- add a CSS class that we will target in styles
+  return pandoc.Header(level, title, pandoc.Attr("", {"pagebreak-before"}))
+end
+
 return {
-  ["practice"] = function(args, kwargs, meta)
-    return raw_block_for_heading("✍️ Practice On Your Own")
+  practice = function(args, kwargs, meta)
+    -- H2 with a class that triggers a page break in CSS
+    return heading_with_pagebreak(2, "✍️ Practice On Your Own")
   end,
-  ["learn"] = function(args, kwargs, meta)
-    return raw_block_for_heading("👥 Learn Together")
+
+  learn = function(args, kwargs, meta)
+    return heading(2, "👥 Learn Together")
   end,
-  ["warmup"] = function(args, kwargs, meta)
-    return raw_block_for_heading("🔥 Warm-Up")
+
+  warmup = function(args, kwargs, meta)
+    return heading(2, "🔥 Warm-Up")
   end,
-  ["interact"] = function(args, kwargs, meta)
-    return raw_block_for_heading("▶️ Interactive Learning")
+
+  interact = function(args, kwargs, meta)
+    return heading(2, "▶️ Interactive Learning")
   end
 }
+

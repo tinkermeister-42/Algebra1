@@ -8,22 +8,24 @@ Now we ask a similar question for quadratics:
 
 **How can we use a quadratic equation to graph its parabola?**
 
-The equation has its own way of showing where the graph turns, how it’s shaped, and how it moves across the coordinate plane. Once you know how to read those clues, the picture starts to come into focus.
-
----
-
-:::{.objectives}
-- [ ] I can find the axis of symmetry for a quadratic function.  
-- [ ] I can find the vertex of a quadratic in standard form.  
-- [ ] I can sketch the graph of a quadratic using its key features.  
-- [ ] I can identify positive/negative and increasing/decreasing behavior from the graph.
+::: objectives
+-   [ ] I can find the axis of symmetry for a quadratic function.
+-   [ ] I can find the vertex of a quadratic in standard form.
+-   [ ] I can sketch the graph of a quadratic using its key features.
+-   [ ] I can identify positive/negative and increasing/decreasing behavior from the graph.
 :::
 
-:::{.vocab}
-{{< glink "axis of symmetry" >}}, {{< glink decreasing >}}, {{< glink increasing >}}, {{< glink parabola >}}, {{< glink "positive/negative intervals" >}}, {{< glink "quadratic function" >}}, {{< glink "standard form" >}}, {{< glink vertex >}}
+::: vocab
+{{< glink "axis of symmetry" >}}, {{< glink parabola >}}, {{< glink slug="standard-form-quadratic" text="standard form" >}}, {{< glink vertex >}}, {{< glink slug="vertex-form-quadratic" text="vertex form" >}}
 :::
 
 {{< warmup >}}
+
+1. Find the slope and y-intercept for the line $y = 3x - 2$. How can you use those to graph the line?
+   
+2. If a line has slope $m = \tfrac{1}{2}$ and passes through the point $(4, 1)$, what is its y-intercept?
+
+3. Find the vertex of $y = 2x^2 + 4x - 1$ if its axis of symmetry is $x=-1$.
 
 {{< learn >}}
 
@@ -31,7 +33,7 @@ The equation has its own way of showing where the graph turns, how it’s shaped
 
 You first graphed linear equations by making a table of values, plotting the points, and drawing the line through them. This was easy because you only need **two** points to make a straight line.
 
-A quadratic equation is different. A parabola curves, turns, and changes direction. You need **several** points to see the curve.
+A quadratic equation is different. A parabola curves, turns, and changes direction. You need **several** points to see its shape.
 
 ---
 
@@ -43,23 +45,23 @@ $$
 f(x) = x^2 - 4x + 1
 $$
 
-First, we make a table by choosing x-values and calculating the matching y-values.
+First, we make a table by choosing x-values and calculating their matching y-values.
 
-| x | f(x) |
-|---|------|
-| 0 | 1    |
-| 1 | -2   |
-| 2 | -3   |
-| 3 | -2   |
-| 4 | 1    |
+| x   | f(x) |
+|-----|------|
+| 0   | 1    |
+| 1   | -2   |
+| 2   | -3   |
+| 3   | -2   |
+| 4   | 1    |
 
 Next, we plot the points:
 
-![](/images/Unit_6/Lesson_2/Example1A.png){width="450px" fig-align="center"}
+![](/images/Unit_6/Lesson_2/Example1A.png){width="320px" fig-align="center"}
 
 Then we connect them:
 
-![](/images/Unit_6/Lesson_2/Example1B.png){width="450px" fig-align="center"}
+![](/images/Unit_6/Lesson_2/Example1B.png){width="320px" fig-align="center"}
 
 The graph dips down, reaches its {{< glink minimum >}} at the vertex, and rises again. This curved shape cannot be seen from only two points.
 
@@ -67,10 +69,10 @@ The graph dips down, reaches its {{< glink minimum >}} at the vertex, and rises 
 
 This method **works**, but it has some clear drawbacks:
 
-* You need many points to see the parabola’s shape.  
-* If you choose the “wrong” x-values, you might miss the vertex.  
-* Squaring numbers and handling signs can lead to mistakes.  
-* It takes much more time than graphing a line.
+-   You need many points to see the parabola’s shape.
+-   If you choose the “wrong” x-values, you might miss the vertex.
+-   Squaring numbers and handling signs can lead to mistakes.
+-   It takes much more time than graphing a line.
 
 Just like with linear equations, we want a quicker, more reliable way to graph.
 
@@ -82,9 +84,9 @@ For quadratics, we can graph much faster by using a few key features of the equa
 
 A parabola becomes much easier to sketch when you know three important features:
 
-* the **vertex**  
-* the **axis of symmetry**  
-* whether it opens upward or downward  
+-   the **vertex**
+-   the **axis of symmetry**
+-   whether it opens upward or downward
 
 With these features, you can graph a parabola using only **two additional points**.
 
@@ -92,15 +94,15 @@ With these features, you can graph a parabola using only **two additional points
 
 **Example 2:** Graphing from Features
 
-In Example 1, the parabola we graphed had:
+From Example 1, the parabola we graphed had:
 
-* Vertex at $(2, -3)$  
-* Axis of symmetry: $x = 2$  
-* Opening direction: upward  
+-   Vertex at $(2, -3)$
+-   Axis of symmetry: $x = 2$
+-   Opening direction: upward
 
 Plot the vertex and draw the axis of symmetry:
 
-![](/images/Unit_6/Lesson_2/Example2A.png){width="420px" fig-align="center"}
+![](/images/Unit_6/Lesson_2/Example2A.png){width="320px" fig-align="center"}
 
 Next, choose a point on one side of the vertex, such as $x = 3$:
 
@@ -108,115 +110,147 @@ $$
 f(3) = 3^2 - 4(3) + 1 = -2
 $$
 
-This gives the point $(3, -2)$. 
+This gives the point $(3, -2)$.
 
 Because the graph is symmetric, we also plot its mirror image at $(1, -2)$.
 
-![](/images/Unit_6/Lesson_2/Example2B.png){width="420px" fig-align="center"}
+![](/images/Unit_6/Lesson_2/Example2B.png){width="320px" fig-align="center"}
 
 Connect the points smoothly to complete the parabola:
 
-![](/images/Unit_6/Lesson_2/Example2C.png){width="420px" fig-align="center"}
+![](/images/Unit_6/Lesson_2/Example2C.png){width="320px" fig-align="center"}
 
 When graphing by hand, you might add a couple more points to improve accuracy. If you need very precise graphs, calculators or computer programs are usually better.
 
-:::{.note title="Reading the Graph"}
-
+::: {.note title="Reading the Graph"}
 A graph can tell us a lot about how a function behaves.
 
-*Before the vertex:* the graph moves downward as x increases.  
-We say the function is **decreasing** on the interval $(-\infty, 2)$.
+![](/images/Unit_6/Lesson_2/QuadraticFeatures.png){width="320px" fig-align="center"}
 
-*After the vertex:* the graph moves upward.  
-We say the function is **increasing** on the interval $(2, \infty)$.
+*Before the vertex:* the graph moves downward as x increases. We say the function is **decreasing** on the interval $(-\infty, 2)$.
+
+*After the vertex:* the graph moves upward. We say the function is **increasing** on the interval $(2, \infty)$.
 
 Because the graph crosses the x-axis twice, the function is:
 
-* **negative** between the intercepts  
-* **positive** outside of them  
+- **negative** between the intercepts  
+- **positive** outside of them
 
 These ideas help us describe the function’s behavior just by looking at the graph.
-
 :::
 
-:::{.you-try-m title="Graph the quadratic from its features."}
-
-Graph the quadratic 
+::: {.you-try-m title="Graph the quadratic from its features."}
+Graph the quadratic
 
 $$
-f(x) = 3x^2 -6x + 7
+f(x) = 3x^2 - 6x + 7
 $$
 
-With features:
+with features:
 
-* Vertex $(1, 4)$
-* Axis of symmetry $x = 1$
-* Opening direction: upward
-
+- Vertex $(1, 4)$  
+- Axis of symmetry $x = 1$  
+- Opening direction: upward  
 :::
 
-:::{.answer title="Answer"}
-
-![](/images/Unit_6/Lesson_2/YouTry1.png){width="420px" fig-align="center"}
-
+::: {.answer title="Answer"}
+![](/images/Unit_6/Lesson_2/YouTry1.png){width="320px" fig-align="center"}
 :::
 
 ---
 
 ### 6.2.3 – Graphing From Vertex Form
 
-Vertex form makes the key features visible immediately:
+As we saw in earlier units, a function can be written in different forms. One useful form for quadratics is {{< glink "vertex form" >}}:
 
 $$
 f(x) = a(x - h)^2 + k
 $$
 
-From this form:
+Vertex form makes the key features visible right away:
 
-* Vertex is $(h, k)$  
-* Axis of symmetry is $x = h$  
-* If $a > 0$, the parabola opens upward; if $a < 0$, it opens downward  
+- Vertex: $(h, k)$  
+- Axis of symmetry: $x = h$  
+- Opening direction: upward if $a > 0$, downward if $a < 0$
 
-This makes graphing quick.
+Because the important information is built into the structure of the equation, graphing becomes much faster.
 
 ---
 
-**Example 3:**  Opens upward
+**Example 3:** Graphing a parabola that opens upward
 
 Graph  
 $$
 f(x) = 2(x - 3)^2 - 4
 $$
 
-1. Vertex: $(3, -4)$  
-2. Axis: $x = 3$  
-3. Opens upward  
-4. Pick $x = 4$:  
-   $$f(4) = 2(1)^2 - 4 = -2$$  
-   Reflect across axis → $(2, -2)$  
+Key features:
 
-After plotting these few points, the graph is clear.
+- Vertex: $(3, -4)$  
+- Axis of symmetry: $x = 3$  
+- Opening direction: upward  
+
+Pick $x = 4$:
+
+$$
+f(4) = 2(1)^2 - 4 = -2 \Rightarrow (4, -2)
+$$
+
+Reflect the point over $x = 3$ to get $(2, -2)$.
+
+![](/images/Unit_6/Lesson_2/Example3.png){fig-align="center" width="320px"}
 
 The function decreases until $x = 3$ and increases afterward.  
-It is negative near the vertex and becomes positive as it moves away.
+It is negative between the x-intercepts and positive elsewhere.
 
 ---
 
-**Example 4:** Opens downward
+**Example 4:** Graphing a parabola that opens downward
 
-Graph 
-
+Graph  
 $$
 f(x) = -\tfrac{1}{3}(x + 2)^2 - 1
 $$
 
+- Vertex: $(-2, -1)$  
+- Axis of symmetry: $x = -2$  
+- Opening direction: downward  
+
+Pick $x = 1$:
+
+$$
+f(1) = -\dfrac{1}{3}(1 + 2)^2 - 1 = -4
+$$
+
+This gives the point $(1, -4)$ and its reflection $(-5, -4)$.
+
+![](/images/Unit_6/Lesson_2/Example4.png){fig-align="center" width="320px"}
+
 ---
 
-:::{.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
+:::{.gotcha title="Careful with those signs!"}
+Students often forget that $h$ is subtracted and $k$ is added in the formula. For example:
 
+$$
+f(x) = 2(x + 3)^2 - 2
+$$
+
+The vertex is **not** $(3, -2)$. It is $(-3, -2)$.
+
+Always switch the sign on the $h$ value and keep the sign for the $k$ value.
 :::
 
-Vertex form is ideal for graphing, but many quadratics appear in **standard form** instead. The vertex isn’t visible at first glance.
+::: {.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
+- Vertex: $(-1, 3)$  
+- Axis of symmetry: $x = -1$  
+- Opening direction: upward  
+
+Picking $x = -3$ gives $(-3, 7)$, and its reflection is $(1, 7)$.
+
+![](/images/Unit_6/Lesson_2/YouTryFeaturePlot.png){fig-align="center" width="320px"}
+:::
+
+Vertex form is ideal for graphing, but many quadratics appear in {{< glink "standard form" >}} instead. The vertex isn’t visible at first glance.
 
 The good news is that standard form has a shortcut for finding the axis of symmetry,  
 and once you have that, the vertex follows immediately.
@@ -227,7 +261,7 @@ This means you can graph any quadratic, no matter how it’s written.
 
 ### 6.2.4 – Finding the Axis of Symmetry (Standard Form)
 
-A quadratic in **{{< glink "standard form" >}}** is written:
+A quadratic in {{< glink "standard form" >}} is written:
 
 $$
 f(x) = ax^2 + bx + c
@@ -244,53 +278,56 @@ This value gives the x-coordinate of the vertex.
 
 ---
 
-**Example 5:**  
+**Example 5:** Axis of symmetry from standard form
 
 Find the axis of symmetry for  
 $$
 f(x) = -3x^2 + 12x + 5.
 $$
 
-$a = -3$, $b = 12$
+- $a = -3$  
+- $b = 12$
 
 $$
 x = -\frac{12}{2(-3)} = 2
 $$
 
-Axis: $x = 2$
+Axis of symmetry: $x = 2$
 
 ---
 
-:::{.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
+::: {.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
+$a=2$, $b=4$
 
+$$
+x = -\frac{4}{2(2)} = -1
+$$
+
+Axis of symmetry: $x = -1$
 :::
+
+---
 
 ### 6.2.5 – Finding the Vertex (Standard Form)
 
-Once you know the axis $x = h$, find the corresponding y-value by evaluating $f(h)$:
-
-$$
-(h, f(h))
-$$
-
-This gives the vertex, which immediately tells you where the graph turns.
+Once we know the axis of symmetry $x = h$, finding the vertex is easy: it always has the form $(h, f(h))$.
 
 ---
 
-**Example 6:**  
+**Example 6:** Vertex from standard form
 
 Find the vertex of  
 $$
 f(x) = x^2 - 6x + 10.
 $$
 
-Axis:
+Axis of symmetry:
 
 $$
 x = -\frac{-6}{2(1)} = 3
 $$
 
-Evaluate:
+Then:
 
 $$
 \begin{align*}
@@ -302,18 +339,160 @@ $$
 
 Vertex: $(3, 1)$
 
-Now you can graph the parabola just like before: using the vertex, axis, and a mirrored pair of points. The graph decreases up to $x = 3$ and increases afterward.
+---
 
-Because this vertex lies above the x-axis, the function stays positive unless it crosses the axis elsewhere.
+::: {.you-try title="Find the vertex of $f(x) = 2x^2 + 8x - 5$."}
+Axis:  
+$$x = \frac{-8}{2(2)} = -2$$
 
-:::{.you-try title="Find the vertex of $f(x) = 2x^2 + 3x - 5$."}
+Then  
+$$f(-2) = -13$$
 
+Vertex: $(-2, -13)$
 :::
 
 ---
 
 {{< practice >}}
 
-:::{.answers}
+**Graphing From a Table**
+
+1. Graph the parabola using x-values $x = -4, -3, -2, -1, 0, 1, 2$.
+
+   $f(x) = x^2 + 2x - 3$  
+
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+**Graphing Quadratics and Describing Their Behavior**
+
+For Problems 2–6, graph the quadratic. Then identify:
+
+- where the function is increasing  
+- where it is decreasing  
+- where it is positive  
+- where it is negative  
+  
+2. $f(x) = (x - 1)^2 - 2$ (Use $x = 3$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"} 
+
+3. $g(x) = -(x + 3)^2 + 4$ (Use $x = -5$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+4. $f(x) = 2(x - 2)^2 + 1$  (Use $x = 4$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+5. $f(x) = -\tfrac{1}{2}(x + 1)^2 + 3$ (Use $x = -3$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+6. $f(x) = -\tfrac{1}{4}x^2 + 4$ (Use $x = -4$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+
+**Graphing from Standard Form**
+
+Find the axis of symmetry and vertex to graph each quadratic.
+
+7. $f(x) = x^2 - 6x + 4$ (Use $x = 6$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+
+8. $f(x) = \tfrac{1}{2}x^2 + 2x - 2$ (Use $x = 2$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+9.  $f(x) = -3x^2 + 30x - 69$ (Use $x = 3$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+10. $f(x) = x^2 - 8x + 12$ (Use $x = 1$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+11. $f(x) = 0.5x^2 - 3.0x - 7.0$ (Use $x = -7$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+12. $f(x) = \tfrac{1}{4}x^2 + \tfrac{1}{2}x - \tfrac{7}{4}$ (Use $x = -7$ for your extra point)
+   
+   ![](/images/Blank.png){width="250px" fig-align="center"}
+
+
+**Challenge Problems**
+
+13. A quadratic function has vertex $(h, k)$ and is written  
+    $$
+    f(x) = a(x - h)^2 + k.
+    $$
+    The function is always positive, even at its minimum.  
+    Write a condition on $a$ and $k$ that guarantees this.
+
+14. Consider the system of inequalities:
+
+    $$
+    y < x + 4
+    $$
+    $$
+    y \ge -\tfrac{1}{2}(x - 2)^2 + 1
+    $$
+
+    Sketch and shade the solution region.
+
+---
+
+::: answers
+1. The graph is
+   
+   ![](/images/Unit_6/Lesson_2/Problem1.png){width="250px" fig-align="center"}
+
+2. Vertex is $(1, -2)$. Increasing on $(1,\infty)$; decreasing on $(-\infty,1)$; negative between the two x-intercepts; positive outside them  
+   
+   ![](/images/Unit_6/Lesson_2/Problem2.png){width="250px" fig-align="center"}
+
+3. Vertex is $(-2, 4)$. Increasing on $(-\infty,-2)$; decreasing on $(-2,\infty)$; positive between the two x-intercepts; negative outside them  
+   
+   ![](/images/Unit_6/Lesson_2/Problem3.png){width="250px" fig-align="center"}
+
+4. Vertex $(2,1)$; decreasing on $(-\infty,2)$; increasing on $(2,\infty)$; positive for all $x$  
+   
+   ![](/images/Unit_6/Lesson_2/Problem4.png){width="250px" fig-align="center"}
+
+5. Vertex $(-1,3)$; increasing on $(-\infty,-1)$; decreasing on $(-1,\infty)$; positive between the x-intercepts and negative otherwise  
+   
+   ![](/images/Unit_6/Lesson_2/Problem5.png){width="250px" fig-align="center"}
+
+6. Vertex $(0,4)$; decreasing on $(-\infty,0)$; increasing on $(0,\infty)$; positive between the x-intercepts and negative otherwise.  
+   
+   ![](/images/Unit_6/Lesson_2/Problem6.png){width="250px" fig-align="center"}
+
+7. Axis of symmetry is $x = 3$  Vertex is $(3, -5)$.
+   
+   ![](/images/Unit_6/Lesson_2/Problem7.png){width="250px" fig-align="center"}
+
+8. Axis of symmetry is $x = -2$. Vertex is $(-2, -4)$.
+   
+   ![](/images/Unit_6/Lesson_2/Problem8.png){width="250px" fig-align="center"}
+
+9. Axis of symmetry is $x = 5$. Vertex is $(5, 6)$.
+   
+   ![](/images/Unit_6/Lesson_2/Problem9.png){width="250px" fig-align="center"}
+
+10. Axis of symmetry is $x=4$. Vertex is $(4,-4)$  
+   
+   ![](/images/Unit_6/Lesson_2/Problem10.png){width="250px" fig-align="center"}
+
+11. Axis of symmetry is $x = -3$. Vertex is $(-3,-7)$  
+   
+   ![](/images/Unit_6/Lesson_2/Problem11.png){width="250px" fig-align="center"}
+
+12. Axis of symmetry is $x = -1$. Vertex is $(-1,-2)$  
+   
+   ![](/images/Unit_6/Lesson_2/Problem12.png){width="250px" fig-align="center"}
 
 :::
+
