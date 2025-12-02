@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -481,7 +510,7 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6.2 - Forms of Quadratic Equations</span></a>
+ <span class="menu-text">6.2 – Graphing Quadratics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -608,9 +637,14 @@ window.MathJax = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#setting-up-the-equation" id="toc-setting-up-the-equation" class="nav-link active" data-scroll-target="#setting-up-the-equation">6.3.1 - Setting Up the Equation</a></li>
-  <li><a href="#factoring-and-solving" id="toc-factoring-and-solving" class="nav-link" data-scroll-target="#factoring-and-solving">6.3.2 - Factoring and Solving</a></li>
-  <li><a href="#connecting-solutions-to-the-graph" id="toc-connecting-solutions-to-the-graph" class="nav-link" data-scroll-target="#connecting-solutions-to-the-graph">6.3.3 - Connecting Solutions to the Graph</a></li>
+  <li>🔥 Warm-Up</li>
+  <li>👥 Learn Together
+  <ul class="collapse">
+  <li><a href="#from-equations-to-x-intercepts" id="toc-from-equations-to-x-intercepts" class="nav-link active" data-scroll-target="#from-equations-to-x-intercepts">6.3.1 - From equations to x-intercepts</a></li>
+  <li><a href="#solving-quadratic-equations-by-factoring" id="toc-solving-quadratic-equations-by-factoring" class="nav-link" data-scroll-target="#solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</a></li>
+  <li><a href="#how-many-solutions-can-a-quadratic-have" id="toc-how-many-solutions-can-a-quadratic-have" class="nav-link" data-scroll-target="#how-many-solutions-can-a-quadratic-have">6.3.3 - How many solutions can a quadratic have?</a></li>
+  </ul></li>
+  <li>✍️ Practice On Your Own</li>
   </ul>
 </nav>
     </div>
@@ -636,31 +670,95 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>In the last two lessons, we learned how to graph quadratic functions and describe the shapes of their parabolas. We now know how they open, where their vertices are, and how to find key features on the graph.</p>
+<p>But quadratics are not just interesting curves. They also show up in <strong>equations</strong> we need to solve, like:</p>
+<p><span class="math display">\[x^2 + 2x = 8.\]</span></p>
+<p>It is natural to ask how we would solve an equation like this. In this lesson, we will see that we already have all of the tools we need!</p>
+<hr>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can solve quadratic equations by factoring.</label></li>
-<li><label><input type="checkbox">I can connect solutions to x-intercepts on a graph.</label></li>
-<li><label><input type="checkbox">I can check solutions to quadratic equations.</label></li>
+<li><label><input type="checkbox">I can solve quadratic equations by factoring.<br>
+</label></li>
+<li><label><input type="checkbox">I can connect solutions (roots) to x-intercepts.<br>
+</label></li>
+<li><label><input type="checkbox">I can describe when a quadratic has two, one, or no real solutions.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-term" data-slug="term" data-term="term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>,<br>
+<a href="" class="glossary-link" data-slug="factor" data-original-href="#glossary-factor" data-term="factor">factor</a>,<br>
+<a href="" class="glossary-link" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property" data-term="zero product property">zero product property</a>,<br>
+<a href="" class="glossary-link" data-slug="root" data-original-href="#glossary-root" data-term="root">root</a>,<br>
+<a href="" class="glossary-link" data-slug="x-intercept" data-original-href="#glossary-x-intercept" data-term="x intercept">x intercept</a>,<br>
+<a href="" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a></p>
 </div>
-<h2 class="unnumbered anchored">🔥 Warm-Up</h2>
-<h2 class="unnumbered anchored">👥 Learn Together</h2>
-<section id="setting-up-the-equation" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-the-equation">6.3.1 - Setting Up the Equation</h3>
-<p>Move everything to one side; set equal to zero</p>
+<section class="level2">
+<h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
 </section>
-<section id="factoring-and-solving" class="level3">
-<h3 class="anchored" data-anchor-id="factoring-and-solving">6.3.2 - Factoring and Solving</h3>
-<p>Use Unit 5 methods; split zero product</p>
+<section class="level2">
+<h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
+<section id="from-equations-to-x-intercepts" class="level3">
+<h3 class="anchored" data-anchor-id="from-equations-to-x-intercepts">6.3.1 - From equations to x-intercepts</h3>
+<p>A <strong>quadratic equation</strong> is any equation that can be written as</p>
+<p><span class="math display">\[ax^2 + bx + c = 0.\]</span></p>
+<p>For example:</p>
+<p><span class="math display">\[x^2 + 3x = 7 \quad\longrightarrow\quad x^2 + 3x - 7 = 0.\]</span></p>
+<p>Why force it to equal zero?<br>
+Because <span class="math inline">\(y = 0\)</span> is exactly what happens on the x-axis.<br>
+If we define the related function</p>
+<p><span class="math display">\[y = x^2 + 3x - 7,\]</span></p>
+<p>then solving</p>
+<p><span class="math display">\[x^2 + 3x - 7 = 0\]</span></p>
+<p>tells us the x-values where the parabola touches the x-axis.</p>
+<p><strong>Graph this parabola:</strong><br>
+<img src="images/Unit_6/Lesson_3/graph_equation_to_intercepts.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p>The x-intercepts on the graph are exactly the <strong>roots</strong> of the quadratic equation.</p>
+<p>Roots, solutions, and x-intercepts all refer to the same x-values.</p>
+<hr>
 </section>
-<section id="connecting-solutions-to-the-graph" class="level3">
-<h3 class="anchored">6.3.3 - Connecting Solutions to the Graph</h3>
-<p>Solutions = x-intercepts; significance of zero</p>
-<h2 class="unnumbered anchored" data-anchor-id="connecting-solutions-to-the-graph">✍️ Practice On Your Own</h2>
+<section id="solving-quadratic-equations-by-factoring" class="level3">
+<h3 class="anchored" data-anchor-id="solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</h3>
+<p>To solve<br>
+<span class="math display">\[ax^2 + bx + c = 0,\]</span><br>
+we factor the left side and use the <strong>zero product property</strong>:</p>
+<p><strong>If a product equals zero, at least one factor must be zero.</strong></p>
+<p>This turns one quadratic equation into two simple linear ones.</p>
+<p><strong>Example 1:</strong><br>
+Solve <span class="math inline">\(x^2 - 4x - 5 = 0\)</span>.</p>
+<p>Factor: <span class="math display">\[x^2 - 4x - 5 = (x - 5)(x + 1).\]</span></p>
+<p>Zero product property: <span class="math display">\[(x - 5)(x + 1) = 0.\]</span></p>
+<p>So: <span class="math display">\[x = 5,\quad x = -1.\]</span></p>
+<p><strong>Graph:</strong><br>
+<img src="images/Unit_6/Lesson_3/graph_two_roots.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p>The intercepts match the solutions.</p>
+<p><strong>Example 2 (GCF first):</strong><br>
+Solve <span class="math inline">\(2x^2 + 6x - 20 = 0.\)</span></p>
+<p>Factor out the GCF: <span class="math display">\[2(x^2 + 3x - 10) = 0.\]</span></p>
+<p>Then factor the trinomial: <span class="math display">\[2(x + 5)(x - 2) = 0.\]</span></p>
+<p>So: <span class="math display">\[x = -5,\quad x = 2.\]</span></p>
+<p><strong>Graph:</strong><br>
+<img src="images/Unit_6/Lesson_3/graph_two_roots_gcf.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<hr>
+</section>
+<section id="how-many-solutions-can-a-quadratic-have" class="level3">
+<h3 class="anchored" data-anchor-id="how-many-solutions-can-a-quadratic-have">6.3.3 - How many solutions can a quadratic have?</h3>
+<p>Graphs show the possibilities clearly.</p>
+<p><strong>Two real solutions</strong><br>
+The parabola crosses the x-axis twice.<br>
+<img src="images/Unit_6/Lesson_3/two_solutions.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p><strong>One real solution</strong><br>
+The parabola touches the x-axis at its vertex.<br>
+This comes from a perfect square like <span class="math inline">\((x - 3)^2 = 0.\)</span><br>
+<img src="images/Unit_6/Lesson_3/one_solution.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p><strong>No real solutions</strong><br>
+The parabola stays above or below the x-axis.<br>
+<img src="images/Unit_6/Lesson_3/no_solutions.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p>Real roots match real x-intercepts.<br>
+If the graph has none, the equation has no real solutions.</p>
+</section>
+</section>
+<section class="level2 pagebreak-before">
+<h2 class="pagebreak-before anchored" data-anchor-id="">✍️ Practice On Your Own</h2>
 <div class="answers">
 
 </div>
@@ -1074,8 +1172,8 @@ window.MathJax = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="pagination-link" aria-label="6.2 - Forms of Quadratic Equations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">6.2 - Forms of Quadratic Equations</span>
+      <a href="../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="pagination-link" aria-label="6.2 – Graphing Quadratics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">6.2 – Graphing Quadratics</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

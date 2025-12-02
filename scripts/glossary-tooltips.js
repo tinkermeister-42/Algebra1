@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const slugFromHref = m ? m[1] : null;
 
     const raw = link.dataset.term || link.textContent || "";
-    const key = slugFromHref || slugify(raw);
+    const key = link.dataset.slug || slugFromHref || slugify(raw);
 
     const def = glossary[key];
     if (!def) return;
