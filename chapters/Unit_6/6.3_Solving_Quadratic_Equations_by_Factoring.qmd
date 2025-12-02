@@ -1,18 +1,31 @@
 # 6.3 - Solving Quadratic Equations by Factoring {.unnumbered}
 
-Coming Soon
+In the last two lessons, we learned how to graph quadratic functions and describe the shapes of their parabolas. We now know how they open, where their vertices are, and how to find key features on the graph.
+
+But quadratics are not just interesting curves.  They also show up in **equations** we need to solve, like:
+
+$$x^2 + 2x = 8.$$
+
+It is natural to ask how we would solve an equation like this. In this lesson, we will see that we already have all of the tools we need!
+
+---
 
 :::{.objectives}
 
-- [ ] I can solve quadratic equations by factoring.
-- [ ] I can connect solutions to x-intercepts on a graph.
-- [ ] I can check solutions to quadratic equations.
+- [ ] I can solve quadratic equations by factoring.  
+- [ ] I can connect solutions (roots) to x-intercepts.  
+- [ ] I can describe when a quadratic has two, one, or no real solutions.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink "quadratic equation" >}},  
+{{< glink factor >}},  
+{{< glink "zero product property" >}},  
+{{< glink root >}},  
+{{< glink "x intercept" >}},  
+{{< glink solution >}}
 
 :::
 
@@ -20,26 +33,103 @@ Coming Soon
 
 {{< learn >}}
 
-### 6.3.1 - Setting Up the Equation
+### 6.3.1 - From equations to x-intercepts
 
-Move everything to one side; set equal to zero
+A **quadratic equation** is any equation that can be written as
 
-### 6.3.2 - Factoring and Solving
+$$ax^2 + bx + c = 0.$$
 
-Use Unit 5 methods; split zero product
+For example:
 
-### 6.3.3 - Connecting Solutions to the Graph
+$$x^2 + 3x = 7 \quad\longrightarrow\quad x^2 + 3x - 7 = 0.$$
 
-Solutions = x-intercepts; significance of zero
+Why force it to equal zero?  
+Because $y = 0$ is exactly what happens on the x-axis.  
+If we define the related function
+
+$$y = x^2 + 3x - 7,$$
+
+then solving
+
+$$x^2 + 3x - 7 = 0$$
+
+tells us the x-values where the parabola touches the x-axis.
+
+**Graph this parabola:**  
+![](images/Unit_6/Lesson_3/graph_equation_to_intercepts.png){width="350px" fig-align="center"}
+
+The x-intercepts on the graph are exactly the **roots** of the quadratic equation.
+
+Roots, solutions, and x-intercepts all refer to the same x-values.
+
+---
+
+### 6.3.2 - Solving quadratic equations by factoring
+
+To solve  
+$$ax^2 + bx + c = 0,$$  
+we factor the left side and use the **zero product property**:
+
+**If a product equals zero, at least one factor must be zero.**
+
+This turns one quadratic equation into two simple linear ones.
+
+**Example 1:**  
+Solve $x^2 - 4x - 5 = 0$.
+
+Factor:
+$$x^2 - 4x - 5 = (x - 5)(x + 1).$$
+
+Zero product property:
+$$(x - 5)(x + 1) = 0.$$
+
+So:
+$$x = 5,\quad x = -1.$$
+
+**Graph:**  
+![](images/Unit_6/Lesson_3/graph_two_roots.png){width="350px" fig-align="center"}
+
+The intercepts match the solutions.
+
+**Example 2 (GCF first):**  
+Solve $2x^2 + 6x - 20 = 0.$
+
+Factor out the GCF:
+$$2(x^2 + 3x - 10) = 0.$$
+
+Then factor the trinomial:
+$$2(x + 5)(x - 2) = 0.$$
+
+So:
+$$x = -5,\quad x = 2.$$
+
+**Graph:**  
+![](images/Unit_6/Lesson_3/graph_two_roots_gcf.png){width="350px" fig-align="center"}
+
+---
+
+### 6.3.3 - How many solutions can a quadratic have?
+
+Graphs show the possibilities clearly.
+
+**Two real solutions**  
+The parabola crosses the x-axis twice.  
+![](images/Unit_6/Lesson_3/two_solutions.png){width="350px" fig-align="center"}
+
+**One real solution**  
+The parabola touches the x-axis at its vertex.  
+This comes from a perfect square like $(x - 3)^2 = 0.$  
+![](images/Unit_6/Lesson_3/one_solution.png){width="350px" fig-align="center"}
+
+**No real solutions**  
+The parabola stays above or below the x-axis.  
+![](images/Unit_6/Lesson_3/no_solutions.png){width="350px" fig-align="center"}
+
+Real roots match real x-intercepts.  
+If the graph has none, the equation has no real solutions.
 
 {{< practice >}}
 
 :::{.answers}
 
 :::
-
-
-
-
-
-
