@@ -26,6 +26,14 @@ if [[ -z "$PANDOC" ]]; then
   exit 1
 fi
 
+# If glossary.json exists and is newer than both inputs, skip rebuild
+if [[ -f glossary.json ]]; then
+  if [[ glossary.json -nt glossary.qmd && glossary.json -nt scripts/generate-glossary-json.lua ]]; then
+    echo "[build-glossary] glossary.json is up to date. Skipping."
+    exit 0
+  fi
+fi
+
 # Use a temporary file for output on Windows, /dev/null on Unix
 if [[ "$IS_WINDOWS" = true ]]; then
   TMP_OUT="$(mktemp).json"
@@ -41,7 +49,6 @@ echo "[build-glossary] Using pandoc executable at: $PANDOC"
   --lua-filter=scripts/generate-glossary-json.lua \
   --quiet \
   -o "$TMP_OUT"
-
 
 PANDOC_EXIT_CODE=$?
 

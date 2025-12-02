@@ -82,7 +82,6 @@ We use the associative property to regroup terms or factors so it is easier to d
 
 ---
 
-
 ### Axis {#glossary-axis}
 
 A straight reference line used to measure and locate points on a graph.
@@ -92,6 +91,17 @@ In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** 
 > On the coordinate plane, the point (4, 2) is 4 units to the right of the y-axis and 2 units above the x-axis.
 
 **See Also:** {{< glink "coordinate plane" >}}, {{< glink quadrant >}}, {{< glink "number line" >}}
+
+---
+
+### Axis of symmetry {#glossary-axis-of-symmetry}
+
+An axis of symmetry is a line that divides a figure or graph into two matching halves. Each point on one side reflects across the line to the other side.
+
+> **Example:**  
+> A parabola like $y = (x - 3)^2$ has an axis of symmetry at $x = 3$.
+
+**See Also:** {{< glink parabola >}}, {{< glink vertex >}}, {{< glink axis >}}
 
 ---
 
@@ -346,6 +356,18 @@ A discount is an amount **taken off the original price**. It’s usually shown a
 
 ---
 
+### Discriminant {#glossary-discriminant}
+
+The discriminant is the expression $b^2 - 4ac$ inside the square root of the quadratic formula. It tells you how many real solutions a quadratic equation has.
+
+> **Example:**  
+> If $b^2 - 4ac$ is positive, the quadratic has two real solutions.
+
+**See Also:**  
+{{< glink "quadratic formula" >}}, {{< glink "quadratic equation" >}}, {{< glink parabola >}}
+
+---
+
 ### Distributive property {#glossary-distributive-property}
 
 A rule that lets you **multiply a number by each term inside parentheses** and then add or subtract the results. 
@@ -410,12 +432,12 @@ A divisor is the number you **divide by** in a division problem. It tells you ho
 
 ### Domain {#glossary-domain}
 
-The **domain** of a relationship or function is the set of all **input values** that are allowed or make sense in the situation.
+The domain is the set of all input values that a relation or function is allowed to use. It tells you which $x$ values make sense or are permitted.
 
 > **Example:**  
-> If $x$ represents the number of tickets sold, then the domain is whole numbers $0, 1, 2, \dots$ (you can’t sell a negative number of tickets).
+> If a function models the height of a ball over time, the domain includes only the times when the ball is actually in the air.
 
-**See Also:** {{< glink range >}}, {{< glink function >}}, {{< glink input >}}
+**See Also:** {{< glink range >}}, {{< glink function >}}, {{< glink  "all real numbers" >}}
 
 ---
 
@@ -664,14 +686,12 @@ $a^{\tfrac{m}{n}}=\sqrt[n]{a^m}$ (for real numbers, typically $a\ge0$).
 
 ### Function {#glossary-function}
 
-A **function** is a rule that takes an **input**, does something to it, and produces exactly one **output**. We often write a function with a name like $f(x)$, which reads "f of x" and means “the rule $f$ applied to input $x$.”  
+A function is a rule that pairs each input with exactly one output. If you plug in the same input, you always get the same output.
 
 > **Example:**  
-> If $f(x) = 2x+3$, then:  
-> - Input 5 &rarr; Output 13  
-> - Input -1 &rarr; Output 1
+> $f(x) = 2x + 5$ is a function because every $x$ value produces only one result.
 
-**See Also:** {{< glink "function notation" >}}, {{< glink output >}}, {{< glink input >}}, {{< glink  "linear equation" >}}
+**See Also:**  {{< glink domain >}}, {{< glink range >}}, {{< glink "function notation" >}}
 
 ---
 
@@ -959,6 +979,17 @@ A markup is the **amount added to a cost** to set a higher selling price, usuall
 
 ---
 
+### Maximum {#glossary-maximum}
+
+A maximum is the greatest value a function or data set reaches. It is the highest point on a graph if it exists.
+
+> **Example:**  
+> A downward opening parabola has a maximum at its vertex.
+
+**See Also:** {{< glink minimum >}}, {{< glink vertex >}}, {{< glink domain >}}, {{< glink range >}}
+
+---
+
 ### Mean {#glossary-mean}
 
 The **mean** of a data set is what we usually call the **average**. You find it by adding all the values and dividing by how many there are.
@@ -979,6 +1010,17 @@ The **median** is the **middle value** in a data set when the numbers are arrang
 > For 2, 4, 7, 9 the median is $\dfrac{4 + 7}{2} = 5.5$.
 
 **See Also:** {{< glink mean >}}, {{< glink mode >}}
+
+---
+
+### Minimum {#glossary-minimum}
+
+A minimum is the smallest value a function or data set reaches. It is the lowest point on a graph if it exists.
+
+> **Example:**  
+> An upward opening parabola has a minimum at its vertex.
+
+**See Also:** {{< glink maximum >}}, {{< glink vertex >}}, {{< glink domain >}}, {{< glink range >}}
 
 ---
 
@@ -1235,6 +1277,17 @@ The **output** is the result you get after a function or rule is applied to an i
 > If $f(x) = 2x + 3$ and the input is $x=4$, then the output is $f(4)=11$.
 
 **See Also:** {{< glink function >}}, {{< glink input >}}, {{< glink substitution >}}
+
+---
+
+### Parabola {#glossary-parabola}
+
+A parabola is a U shaped curve formed by quadratic relationships. It can open upward or downward and has symmetry around a vertical line.
+
+> **Example:**  
+> The graph of $y = x^2$ is a parabola that opens upward.
+
+**See Also:** {{< glink vertex >}}, {{< glink "axis of symmetry" >}}, {{< glink quadratic >}}, {{< glink "quadratic equation" >}}
 
 ---
 
@@ -1503,6 +1556,47 @@ One of the four regions of the coordinate plane divided by the x-axis and y-axis
 
 ---
 
+### Quadratic {#glossary-quadratic}
+
+A quadratic is an expression, equation, or relationship that involves a squared term. Quadratics often produce U shaped graphs called parabolas.
+
+> **Example:**  
+> $3x^2 - 7x + 2$ is a quadratic expression.
+
+**See Also:**  
+{{< glink "quadratic equation" >}}, {{< glink parabola >}}, {{< glink vertex >}}, {{< glink "axis of symmetry" >}}
+
+---
+
+### Quadratic equation {#glossary-quadratic-equation}
+
+A quadratic equation is an equation that can be written in the form  
+$$ax^2 + bx + c = 0$$  
+where $a$, $b$, and $c$ are numbers and $a$ is not zero. Quadratic equations often have two solutions, one solution, or no real solutions.
+
+> **Example:**  
+> $x^2 - 5x + 6 = 0$ is a quadratic equation.
+
+**See Also:**  
+{{< glink quadratic >}}, {{< glink "quadratic formula" >}}, {{< glink parabola >}}
+
+---
+
+### Quadratic formula {#glossary-quadratic-formula}
+
+The quadratic formula is a method used to solve any quadratic equation. It gives the solutions to  
+$$ax^2 + bx + c = 0$$  
+using  
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
+
+> **Example:**  
+> The equation $x^2 - 4x - 5 = 0$ can be solved with the quadratic formula.
+
+**See Also:**  
+{{< glink "quadratic equation" >}}, {{< glink quadratic >}}, {{< glink parabola >}}, {{< glink vertex >}}
+
+---
+
 ### Quotient {#glossary-quotient}
 
 A quotient is the **result of dividing** one number by another.
@@ -1525,6 +1619,17 @@ $\dfrac{a^m}{a^n}=a^{m-n}$.
 > $\dfrac{y^8}{y^2}=y^{8-2}=y^6$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "power of a power" >}}, {{< glink "zero exponent" >}}, {{< glink "product rule" >}}, {{< glink "negative exponent" >}}, {{< glink quotient >}}
+
+---
+
+### Range {#glossary-range}
+
+The range is the set of all output values a relation or function can produce. It tells you which $y$ values occur or are possible.
+
+> **Example:**  
+> For $y = x^2$, the range includes all numbers greater than or equal to $0$.
+
+**See Also:** {{< glink domain >}}, {{< glink function >}}, {{< glink "all real numbers" >}}
 
 ---
 
@@ -1813,6 +1918,20 @@ The exact rules depend on the type of problem:
 
 ---
 
+### Standard form (quadratic) {#glossary-standard-form-quadratic}
+
+Standard form for a quadratic expression or equation is  
+$$ax^2 + bx + c.$$
+It is helpful for identifying $a$, $b$, and $c$ and for using the quadratic formula.
+
+> **Example:**  
+> $2x^2 + 9x - 5$ is in standard form.
+
+**See Also:**  
+{{< glink quadratic >}}, {{< glink "quadratic equation" >}}, {{< glink "quadratic formula" >}}
+
+---
+
 ### Subtraction {#glossary-subtraction}
 
 An operation that finds the difference between two numbers.
@@ -1968,6 +2087,29 @@ A **variable** is a letter or symbol that stands for a number that can change or
 > It could be **any number**.
 
 **See Also:** {{< glink coefficient >}}, {{< glink constant >}}, {{< glink term >}}, {{< glink equation >}}
+
+---
+
+### Vertex {#glossary-vertex}
+
+A vertex is a special point where something changes direction, meets, or connects. In geometry, it is the corner of an angle or shape. In graphs, it can be a turning point.
+
+> **Example:**  
+> The lowest or highest point of a parabola is called its vertex.
+
+---
+
+### Vertex form (quadratic) {#glossary-vertex-form-quadratic}
+
+Vertex form for a quadratic is  
+$$y = a(x - h)^2 + k$$  
+where $(h, k)$ is the vertex. This form makes it easy to read the vertex and direction of opening.
+
+> **Example:**  
+> $y = 2(x + 1)^2 - 8$ is in vertex form.
+
+**See Also:**  
+{{< glink vertex >}}, {{< glink parabola >}}, {{< glink "axis of symmetry" >}}, {{< glink quadratic >}}
 
 ---
 

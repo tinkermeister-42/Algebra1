@@ -8,7 +8,7 @@ When you throw a ball, it rises, slows down, reaches a highest point, and then f
 
 How could we model something like this?
 
-In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions **quadratics**.
+In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions {{< glink slug="quadratic" text="quadratics" >}}.
 
 :::{.objectives}
 
@@ -21,7 +21,7 @@ In this lesson, we will learn a new type of function that can model curved paths
 
 :::{.vocab}
 
-{{< glink "axis of symmetry" >}}, {{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink range >}}, {{< glink vertex >}}
+{{< glink "axis of symmetry" >}}, {{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink "quadratic equation" >}}, {{< glink range >}}, {{< glink vertex >}}
 
 :::
 
@@ -29,9 +29,9 @@ In this lesson, we will learn a new type of function that can model curved paths
 
 1. Find the degree of the polynomial $x^3 - 3x^4 + 2x^2 - x + 42$.
 
-2. Graph the function $f(x) = \tfrac{3/2}x - 2$. 
+2. A line has the equation $x = 5$. What type of line is this? What is its slope?
 
-3. A line has the equation $x = 5$. What type of line is this? What is its slope?
+3. Graph the function the following points $(-1, 3), (0, 1), (1, 5)$. Could these be solutions to a linear function?
 
 {{< learn >}}
 
@@ -354,7 +354,7 @@ Use the graph to find the vertex, axis of symmetry, domain, and range.
     ![](/images/Unit_6/Lesson_1/Problem19.png){width="450" fig-align="center"}
     
 
-20.   
+20. 
     ![](/images/Unit_6/Lesson_1/Problem20.png){width="450" fig-align="center"}
 
 ---

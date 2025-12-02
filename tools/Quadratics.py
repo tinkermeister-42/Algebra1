@@ -263,6 +263,6 @@ def plot_quadratic(
 
     ax.set_xlabel("x")
     ax.set_ylabel("y")
-
+    ax.margins(0)
     plt.tight_layout()
     return fig, ax

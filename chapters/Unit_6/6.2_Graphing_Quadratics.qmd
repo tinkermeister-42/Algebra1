@@ -1,45 +1,319 @@
-# 6.2 - Forms of Quadratic Equations {.unnumbered}
+# 6.2 – Graphing Quadratics {.unnumbered}
 
-Coming Soon
+In the last lesson, you looked at graphs of quadratic functions and learned the key features of a parabola: the vertex, the axis of symmetry, and how the graph can have a maximum or a minimum.
+
+Earlier in the course, you graphed lines by starting with a table of values and later moved to using slope and intercept directly from the equation.
+
+Now we ask a similar question for quadratics:
+
+**How can we use a quadratic equation to graph its parabola?**
+
+The equation has its own way of showing where the graph turns, how it’s shaped, and how it moves across the coordinate plane. Once you know how to read those clues, the picture starts to come into focus.
+
+---
 
 :::{.objectives}
-
-- [ ] I can find the axis of symmetry for a quadratic function.
-- [ ] I can find the vertex of a quadratic in standard form.
-- [ ] I can use identify positive/negative and increasing/decreasing intervals.
-
+- [ ] I can find the axis of symmetry for a quadratic function.  
+- [ ] I can find the vertex of a quadratic in standard form.  
+- [ ] I can sketch the graph of a quadratic using its key features.  
+- [ ] I can identify positive/negative and increasing/decreasing behavior from the graph.
 :::
 
 :::{.vocab}
-
-{{< glink term >}}, ...
-
+{{< glink "axis of symmetry" >}}, {{< glink decreasing >}}, {{< glink increasing >}}, {{< glink parabola >}}, {{< glink "positive/negative intervals" >}}, {{< glink "quadratic function" >}}, {{< glink "standard form" >}}, {{< glink vertex >}}
 :::
 
 {{< warmup >}}
 
 {{< learn >}}
 
-### 6.2.1 - Axis of Symmetry from Standard Form
+### 6.2.1 – Graphing With a Table of Values
 
-x = -b/2a
+You first graphed linear equations by making a table of values, plotting the points, and drawing the line through them. This was easy because you only need **two** points to make a straight line.
 
-### 6.2.2 - Finding the Vertex
+A quadratic equation is different. A parabola curves, turns, and changes direction. You need **several** points to see the curve.
 
-plug in the axis value
+---
 
-### 6.2.3 - Interpreting the Graph
+**Example 1:** Using a table of values
 
-positive/negative, increasing/decreasing, x-intercepts
+Let’s graph:
+
+$$
+f(x) = x^2 - 4x + 1
+$$
+
+First, we make a table by choosing x-values and calculating the matching y-values.
+
+| x | f(x) |
+|---|------|
+| 0 | 1    |
+| 1 | -2   |
+| 2 | -3   |
+| 3 | -2   |
+| 4 | 1    |
+
+Next, we plot the points:
+
+![](/images/Unit_6/Lesson_2/Example1A.png){width="450px" fig-align="center"}
+
+Then we connect them:
+
+![](/images/Unit_6/Lesson_2/Example1B.png){width="450px" fig-align="center"}
+
+The graph dips down, reaches its {{< glink minimum >}} at the vertex, and rises again. This curved shape cannot be seen from only two points.
+
+---
+
+This method **works**, but it has some clear drawbacks:
+
+* You need many points to see the parabola’s shape.  
+* If you choose the “wrong” x-values, you might miss the vertex.  
+* Squaring numbers and handling signs can lead to mistakes.  
+* It takes much more time than graphing a line.
+
+Just like with linear equations, we want a quicker, more reliable way to graph.
+
+For quadratics, we can graph much faster by using a few key features of the equation.
+
+---
+
+### 6.2.2 – Graphing Using Key Features
+
+A parabola becomes much easier to sketch when you know three important features:
+
+* the **vertex**  
+* the **axis of symmetry**  
+* whether it opens upward or downward  
+
+With these features, you can graph a parabola using only **two additional points**.
+
+---
+
+**Example 2:** Graphing from Features
+
+In Example 1, the parabola we graphed had:
+
+* Vertex at $(2, -3)$  
+* Axis of symmetry: $x = 2$  
+* Opening direction: upward  
+
+Plot the vertex and draw the axis of symmetry:
+
+![](/images/Unit_6/Lesson_2/Example2A.png){width="420px" fig-align="center"}
+
+Next, choose a point on one side of the vertex, such as $x = 3$:
+
+$$
+f(3) = 3^2 - 4(3) + 1 = -2
+$$
+
+This gives the point $(3, -2)$. 
+
+Because the graph is symmetric, we also plot its mirror image at $(1, -2)$.
+
+![](/images/Unit_6/Lesson_2/Example2B.png){width="420px" fig-align="center"}
+
+Connect the points smoothly to complete the parabola:
+
+![](/images/Unit_6/Lesson_2/Example2C.png){width="420px" fig-align="center"}
+
+When graphing by hand, you might add a couple more points to improve accuracy. If you need very precise graphs, calculators or computer programs are usually better.
+
+:::{.note title="Reading the Graph"}
+
+A graph can tell us a lot about how a function behaves.
+
+*Before the vertex:* the graph moves downward as x increases.  
+We say the function is **decreasing** on the interval $(-\infty, 2)$.
+
+*After the vertex:* the graph moves upward.  
+We say the function is **increasing** on the interval $(2, \infty)$.
+
+Because the graph crosses the x-axis twice, the function is:
+
+* **negative** between the intercepts  
+* **positive** outside of them  
+
+These ideas help us describe the function’s behavior just by looking at the graph.
+
+:::
+
+:::{.you-try-m title="Graph the quadratic from its features."}
+
+Graph the quadratic 
+
+$$
+f(x) = 3x^2 -6x + 7
+$$
+
+With features:
+
+* Vertex $(1, 4)$
+* Axis of symmetry $x = 1$
+* Opening direction: upward
+
+:::
+
+:::{.answer title="Answer"}
+
+![](/images/Unit_6/Lesson_2/YouTry1.png){width="420px" fig-align="center"}
+
+:::
+
+---
+
+### 6.2.3 – Graphing From Vertex Form
+
+Vertex form makes the key features visible immediately:
+
+$$
+f(x) = a(x - h)^2 + k
+$$
+
+From this form:
+
+* Vertex is $(h, k)$  
+* Axis of symmetry is $x = h$  
+* If $a > 0$, the parabola opens upward; if $a < 0$, it opens downward  
+
+This makes graphing quick.
+
+---
+
+**Example 3:**  Opens upward
+
+Graph  
+$$
+f(x) = 2(x - 3)^2 - 4
+$$
+
+1. Vertex: $(3, -4)$  
+2. Axis: $x = 3$  
+3. Opens upward  
+4. Pick $x = 4$:  
+   $$f(4) = 2(1)^2 - 4 = -2$$  
+   Reflect across axis → $(2, -2)$  
+
+After plotting these few points, the graph is clear.
+
+The function decreases until $x = 3$ and increases afterward.  
+It is negative near the vertex and becomes positive as it moves away.
+
+---
+
+**Example 4:** Opens downward
+
+Graph 
+
+$$
+f(x) = -\tfrac{1}{3}(x + 2)^2 - 1
+$$
+
+---
+
+:::{.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
+
+:::
+
+Vertex form is ideal for graphing, but many quadratics appear in **standard form** instead. The vertex isn’t visible at first glance.
+
+The good news is that standard form has a shortcut for finding the axis of symmetry,  
+and once you have that, the vertex follows immediately.
+
+This means you can graph any quadratic, no matter how it’s written.
+
+---
+
+### 6.2.4 – Finding the Axis of Symmetry (Standard Form)
+
+A quadratic in **{{< glink "standard form" >}}** is written:
+
+$$
+f(x) = ax^2 + bx + c
+$$
+
+There is always a vertical line running down the center of the parabola.  
+In standard form, it can be found using:
+
+$$
+x = -\frac{b}{2a}
+$$
+
+This value gives the x-coordinate of the vertex.
+
+---
+
+**Example 5:**  
+
+Find the axis of symmetry for  
+$$
+f(x) = -3x^2 + 12x + 5.
+$$
+
+$a = -3$, $b = 12$
+
+$$
+x = -\frac{12}{2(-3)} = 2
+$$
+
+Axis: $x = 2$
+
+---
+
+:::{.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
+
+:::
+
+### 6.2.5 – Finding the Vertex (Standard Form)
+
+Once you know the axis $x = h$, find the corresponding y-value by evaluating $f(h)$:
+
+$$
+(h, f(h))
+$$
+
+This gives the vertex, which immediately tells you where the graph turns.
+
+---
+
+**Example 6:**  
+
+Find the vertex of  
+$$
+f(x) = x^2 - 6x + 10.
+$$
+
+Axis:
+
+$$
+x = -\frac{-6}{2(1)} = 3
+$$
+
+Evaluate:
+
+$$
+\begin{align*}
+f(3) &= 3^2 - 6(3) + 10 \\
+     &= 9 - 18 + 10 \\
+     &= 1
+\end{align*}
+$$
+
+Vertex: $(3, 1)$
+
+Now you can graph the parabola just like before: using the vertex, axis, and a mirrored pair of points. The graph decreases up to $x = 3$ and increases afterward.
+
+Because this vertex lies above the x-axis, the function stays positive unless it crosses the axis elsewhere.
+
+:::{.you-try title="Find the vertex of $f(x) = 2x^2 + 3x - 5$."}
+
+:::
+
+---
 
 {{< practice >}}
 
 :::{.answers}
 
 :::
-
-
-
-
-
-
