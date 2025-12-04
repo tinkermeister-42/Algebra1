@@ -438,7 +438,6 @@ The coefficients for this polynomial in standard form are $a = pq$, $b = pn + qm
 Factoring that requires that we find numbers $pq \cdot nm$ that add up to $pn + qm$. But this is true no matter what values we pick for $p$, $q$, $m$, and $n$. And so we have proven our method.
 :::
 
-To create a trinomial we can factor out an x from the two middle terms
 ### 5.5.2 - Special Patterns
 
 There are two special cases where factoring becomes much easier.
