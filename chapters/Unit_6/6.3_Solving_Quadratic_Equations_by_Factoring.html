@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b9f6aeef373d9be9c310adb242ce897.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
-
       stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
       snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
       snplus:   ['\\snboth{+#1}', 1],
-
       snminus:  ['\\snboth{-#1}', 1],
-
       sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
       sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
     }
-
   }
-
 };
-
 </script>
-
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -116,7 +100,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -144,8 +128,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -175,8 +157,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -659,9 +640,9 @@ window.Quarto = {
   <li>🔥 Warm-Up</li>
   <li>👥 Learn Together
   <ul class="collapse">
-  <li><a href="#from-equations-to-x-intercepts" id="toc-from-equations-to-x-intercepts" class="nav-link active" data-scroll-target="#from-equations-to-x-intercepts">6.3.1 - From equations to x-intercepts</a></li>
+  <li><a href="#finding-the-x-intercepts-of-a-quadratic-function" id="toc-finding-the-x-intercepts-of-a-quadratic-function" class="nav-link active" data-scroll-target="#finding-the-x-intercepts-of-a-quadratic-function">6.3.1 - Finding the x-intercepts of a quadratic function</a></li>
   <li><a href="#solving-quadratic-equations-by-factoring" id="toc-solving-quadratic-equations-by-factoring" class="nav-link" data-scroll-target="#solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</a></li>
-  <li><a href="#how-many-solutions-can-a-quadratic-have" id="toc-how-many-solutions-can-a-quadratic-have" class="nav-link" data-scroll-target="#how-many-solutions-can-a-quadratic-have">6.3.3 - How many solutions can a quadratic have?</a></li>
+  <li><a href="#how-many-solutions-can-a-quadratic-equation-have" id="toc-how-many-solutions-can-a-quadratic-equation-have" class="nav-link" data-scroll-target="#how-many-solutions-can-a-quadratic-equation-have">6.3.3 – How many solutions can a quadratic equation have?</a></li>
   </ul></li>
   <li>✍️ Practice On Your Own</li>
   </ul>
@@ -692,94 +673,345 @@ window.Quarto = {
 <p>In the last two lessons, we learned how to graph quadratic functions and describe the shapes of their parabolas. We now know how they open, where their vertices are, and how to find key features on the graph.</p>
 <p>But quadratics are not just interesting curves. They also show up in <strong>equations</strong> we need to solve, like:</p>
 <p><span class="math display">\[x^2 + 2x = 8.\]</span></p>
-<p>It is natural to ask how we would solve an equation like this. In this lesson, we will see that we already have all of the tools we need!</p>
+<p>It is natural to ask how we would solve an equation like this. In this lesson, we will see that we already have all of the tools we need.</p>
 <hr>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can solve quadratic equations by factoring.<br>
-</label></li>
-<li><label><input type="checkbox">I can connect solutions (roots) to x-intercepts.<br>
-</label></li>
+<li><label><input type="checkbox">I can solve quadratic equations by factoring.</label></li>
+<li><label><input type="checkbox">I can connect solutions (roots) to x-intercepts.</label></li>
 <li><label><input type="checkbox">I can describe when a quadratic has two, one, or no real solutions.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="quadratic equation" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a>,<br>
-<a href="" class="glossary-link" data-term="factor" data-slug="factor" data-original-href="#glossary-factor">factor</a>,<br>
-<a href="" class="glossary-link" data-term="zero product property" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property">zero product property</a>,<br>
-<a href="" class="glossary-link" data-term="root" data-slug="root" data-original-href="#glossary-root">root</a>,<br>
-<a href="" class="glossary-link" data-term="x intercept" data-slug="x-intercept" data-original-href="#glossary-x-intercept">x intercept</a>,<br>
-<a href="" class="glossary-link" data-term="solution" data-slug="solution" data-original-href="#glossary-solution">solution</a></p>
+<p><a href="" class="glossary-link" data-term="quadratic equation" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a>, <a href="" class="glossary-link" data-term="root" data-slug="root" data-original-href="#glossary-root">root</a>, <a href="" class="glossary-link" data-term="zero product property" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property">zero product property</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
 </section>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
-<section id="from-equations-to-x-intercepts" class="level3">
-<h3 class="anchored" data-anchor-id="from-equations-to-x-intercepts">6.3.1 - From equations to x-intercepts</h3>
-<p>A <strong>quadratic equation</strong> is any equation that can be written as</p>
-<p><span class="math display">\[ax^2 + bx + c = 0.\]</span></p>
-<p>For example:</p>
-<p><span class="math display">\[x^2 + 3x = 7 \quad\longrightarrow\quad x^2 + 3x - 7 = 0.\]</span></p>
-<p>Why force it to equal zero?<br>
-Because <span class="math inline">\(y = 0\)</span> is exactly what happens on the x-axis.<br>
-If we define the related function</p>
-<p><span class="math display">\[y = x^2 + 3x - 7,\]</span></p>
-<p>then solving</p>
-<p><span class="math display">\[x^2 + 3x - 7 = 0\]</span></p>
-<p>tells us the x-values where the parabola touches the x-axis.</p>
-<p><strong>Graph this parabola:</strong><br>
-<img src="images/Unit_6/Lesson_3/graph_equation_to_intercepts.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
-<p>The x-intercepts on the graph are exactly the <strong>roots</strong> of the quadratic equation.</p>
-<p>Roots, solutions, and x-intercepts all refer to the same x-values.</p>
+<hr>
+<section id="finding-the-x-intercepts-of-a-quadratic-function" class="level3">
+<h3 class="anchored" data-anchor-id="finding-the-x-intercepts-of-a-quadratic-function">6.3.1 - Finding the x-intercepts of a quadratic function</h3>
+<p>In Unit 4, we learned how to find the x-intercepts of linear functions. A quadratic works the same way: we look for the points where the graph touches or crosses the x-axis.</p>
+<p>But unlike lines, a parabola can have <strong>two</strong>, <strong>one</strong>, or <strong>zero</strong> x-intercepts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/Parabolas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="320"></p>
+</figure>
+</div>
+<ul>
+<li>The parabola on the left touches once (one solution).</li>
+<li>The parabola in the middle crosses twice (two solutions).</li>
+<li>The parabola on the right never touches (no real solutions).</li>
+</ul>
+<p>These values of <span class="math inline">\(x\)</span> are the <a href="" class="glossary-link" data-term="roots" data-slug="root" data-original-href="#glossary-root">roots</a> or <strong>zeros</strong> of the function. They occur exactly when the <strong>output</strong> of the function is zero.</p>
+<p>This idea is the key to why we solve equations by setting them equal to zero.</p>
+<hr>
+<p><strong>Example 1:</strong> Finding x-intercepts by graphing</p>
+<p>Consider the function</p>
+<p><span class="math display">\[
+f(x) = x^2 + 2x - 15.
+\]</span></p>
+<p>Before graphing, we can use what we know:</p>
+<ul>
+<li>Vertex <span class="math inline">\((-1, -16)\)</span> is below the x-axis.</li>
+<li>The parabola opens upward.</li>
+</ul>
+<p>So it must cross the x-axis twice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/XIntercepts.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>The x-intercepts are <span class="math inline">\((-5, 0)\)</span> and <span class="math inline">\((3, 0)\)</span>.</p>
+<p>We will get these same values shortly by solving the equation algebraically.</p>
+<hr>
+<div class="you-try" title="Find the x-intercepts of $f(x) = -\tfrac{1}{2}(x - 3)^2 + 2$.">
+<p>Features:</p>
+<ul>
+<li>Vertex <span class="math inline">\((3, 2)\)</span></li>
+<li>Opens downward</li>
+</ul>
+<p>Since the vertex is above the x-axis, the graph must cross twice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/YouTry1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>The x-intercepts are <span class="math inline">\((1, 0)\)</span> and <span class="math inline">\((5, 0)\)</span>.</p>
+</div>
 <hr>
 </section>
 <section id="solving-quadratic-equations-by-factoring" class="level3">
 <h3 class="anchored" data-anchor-id="solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</h3>
-<p>To solve<br>
-<span class="math display">\[ax^2 + bx + c = 0,\]</span><br>
-we factor the left side and use the <strong>zero product property</strong>:</p>
-<p><strong>If a product equals zero, at least one factor must be zero.</strong></p>
-<p>This turns one quadratic equation into two simple linear ones.</p>
-<p><strong>Example 1:</strong><br>
-Solve <span class="math inline">\(x^2 - 4x - 5 = 0\)</span>.</p>
-<p>Factor: <span class="math display">\[x^2 - 4x - 5 = (x - 5)(x + 1).\]</span></p>
-<p>Zero product property: <span class="math display">\[(x - 5)(x + 1) = 0.\]</span></p>
-<p>So: <span class="math display">\[x = 5,\quad x = -1.\]</span></p>
-<p><strong>Graph:</strong><br>
-<img src="images/Unit_6/Lesson_3/graph_two_roots.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
-<p>The intercepts match the solutions.</p>
-<p><strong>Example 2 (GCF first):</strong><br>
-Solve <span class="math inline">\(2x^2 + 6x - 20 = 0.\)</span></p>
-<p>Factor out the GCF: <span class="math display">\[2(x^2 + 3x - 10) = 0.\]</span></p>
-<p>Then factor the trinomial: <span class="math display">\[2(x + 5)(x - 2) = 0.\]</span></p>
-<p>So: <span class="math display">\[x = -5,\quad x = 2.\]</span></p>
-<p><strong>Graph:</strong><br>
-<img src="images/Unit_6/Lesson_3/graph_two_roots_gcf.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
+<p>To find the exact x-intercepts, we need an algebraic method. This is where the <a href="" class="glossary-link" data-term="quadratic equation" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a> comes in:</p>
+<p><span class="math display">\[
+ax^2 + bx + c = 0.
+\]</span></p>
+<p>But why do we set it equal to <strong>zero</strong>?</p>
+<p>Because x-intercepts occur when the <strong>y-value is zero</strong>. So if we want to find where the graph hits the x-axis, we must solve the equation that results from setting the function equal to zero.</p>
+<p>This connects directly to Unit 5: once a quadratic is written as an expression equal to zero, we can factor it and use the <a href="" class="glossary-link" data-term="zero product property" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property">zero product property</a>.</p>
+<p>If a product equals zero, then at least one factor must be zero. Each factor gives us a possible x-intercept.</p>
+<hr>
+<p><strong>Example 2:</strong> Solving a quadratic equation by factoring</p>
+<p>We already graphed</p>
+<p><span class="math display">\[
+f(x) = x^2 + 2x - 15.
+\]</span></p>
+<p>To find its x-intercepts algebraically, set the output to zero:</p>
+<p><span class="math display">\[
+x^2 + 2x - 15 = 0.
+\]</span></p>
+<p>Factor the quadratic:</p>
+<p><span class="math display">\[
+\begin{align*}
+x^2 + 2x - 15 &amp;= 0 \\
+(x + 5)(x - 3) &amp;= 0
+\end{align*}
+\]</span></p>
+<p>Now each factor gives a possible x-intercept:</p>
+<ul>
+<li><span class="math inline">\(x + 5 = 0 \Rightarrow x = -5\)</span></li>
+<li><span class="math inline">\(x - 3 = 0 \Rightarrow x = 3\)</span></li>
+</ul>
+<p>These match the graph perfectly.</p>
+<hr>
+<p><strong>Example 3:</strong> A quadratic not in standard form</p>
+<p>Solve:</p>
+<p><span class="math display">\[
+2x^2 = 3x + 4
+\]</span></p>
+<p>Move everything to one side to make the output zero:</p>
+<p><span class="math display">\[
+2x^2 - 3x - 4 = 0.
+\]</span></p>
+<p>Now factor:</p>
+<p><span class="math display">\[(2x + 1)(x - 4) = 0.\]</span></p>
+<p>Set each factor to zero:</p>
+<ul>
+<li><span class="math inline">\(x = -\tfrac{1}{2}\)</span></li>
+<li><span class="math inline">\(x = 4\)</span></li>
+</ul>
+<p>Two solutions means two x-intercepts.</p>
+<hr>
+<p><strong>Example 4:</strong> Taking out a GCF</p>
+<p>Solve:</p>
+<p><span class="math display">\[
+8x^2 + 60x + 72 = 0
+\]</span></p>
+<p>Factor out the GCF:</p>
+<p><span class="math display">\[
+4(2x^2 + 15x + 18) = 0.
+\]</span></p>
+<p>Divide both sides by <span class="math inline">\(4\)</span>:</p>
+<p><span class="math display">\[
+\begin{align*}
+2x^2 + 15x + 18 &amp;= 0 \\
+(x + 6)(2x + 3) &amp;= 0
+\end{align*}
+\]</span></p>
+<p>Solutions:</p>
+<ul>
+<li><span class="math inline">\(x = -6\)</span></li>
+<li><span class="math inline">\(x = -\tfrac{3}{2}\)</span></li>
+</ul>
+<hr>
+<p><strong>Example 5:</strong> A cubic equation</p>
+<p>The same strategy works whenever the entire expression can be factored.</p>
+<p>Solve:</p>
+<p><span class="math display">\[
+3x^3 = 9x + 6x^2
+\]</span></p>
+<p>Write it in standard form:</p>
+<p><span class="math display">\[
+3x^3 - 6x^2 - 9x = 0.
+\]</span></p>
+<p>Factor step by step:</p>
+<p><span class="math display">\[
+\begin{align*}
+3x(x^2 - 2x - 3) &amp;= 0 \\
+3x(x + 1)(x - 3) &amp;= 0
+\end{align*}
+\]</span></p>
+<p>Set each factor equal to zero:</p>
+<ul>
+<li><span class="math inline">\(x = 0\)</span></li>
+<li><span class="math inline">\(x = -1\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+</ul>
+<hr>
+<div class="you-try" title="Solve $3x^2 - 7x = 6$">
+<p><span class="math display">\[
+\begin{align*}
+3x^2 - 7x &amp;= 6 \snminus{6} \\
+3x^2 - 7x - 6 &amp;= 0 \stepnote{factor} \\
+(x - 3)(3x + 2) &amp;=0
+\end{align*}
+\]</span></p>
+<p>Solutions:</p>
+<ul>
+<li><span class="math inline">\(x - 3 = 0 \Rightarrow x = 3\)</span></li>
+<li><span class="math inline">\(3x + 2 = 0 \Rightarrow x = -\tfrac{2}{3}\)</span></li>
+</ul>
+</div>
 <hr>
 </section>
-<section id="how-many-solutions-can-a-quadratic-have" class="level3">
-<h3 class="anchored" data-anchor-id="how-many-solutions-can-a-quadratic-have">6.3.3 - How many solutions can a quadratic have?</h3>
-<p>Graphs show the possibilities clearly.</p>
-<p><strong>Two real solutions</strong><br>
-The parabola crosses the x-axis twice.<br>
-<img src="images/Unit_6/Lesson_3/two_solutions.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
-<p><strong>One real solution</strong><br>
-The parabola touches the x-axis at its vertex.<br>
-This comes from a perfect square like <span class="math inline">\((x - 3)^2 = 0.\)</span><br>
-<img src="images/Unit_6/Lesson_3/one_solution.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
-<p><strong>No real solutions</strong><br>
-The parabola stays above or below the x-axis.<br>
-<img src="images/Unit_6/Lesson_3/no_solutions.png" class="img-fluid quarto-figure quarto-figure-center" width="350"></p>
-<p>Real roots match real x-intercepts.<br>
-If the graph has none, the equation has no real solutions.</p>
+<section id="how-many-solutions-can-a-quadratic-equation-have" class="level3">
+<h3 class="anchored" data-anchor-id="how-many-solutions-can-a-quadratic-equation-have">6.3.3 – How many solutions can a quadratic equation have?</h3>
+<p>By now we’ve seen that a quadratic function can have <strong>two</strong>, <strong>one</strong>, or <strong>zero</strong> x-intercepts. Since solving a quadratic equation is the same as finding its x-intercepts, the equation itself can have:</p>
+<ul>
+<li><strong>Two real solutions</strong></li>
+<li><strong>One real solution</strong></li>
+<li><strong>No real solutions</strong></li>
+</ul>
+<p>In this section, we’ll see what each of these cases looks like <strong>algebraically</strong> when we try to factor.</p>
+<hr>
+<p><strong>Example 6:</strong> Two solutions</p>
+<p>A quadratic has <strong>two</strong> real solutions when it factors into <strong>two different linear factors</strong>.</p>
+<p>Solve: <span class="math display">\[x^2 - 5x + 6 = 0\]</span></p>
+<p>Factor:</p>
+<p><span class="math display">\[(x - 2)(x - 3) = 0\]</span></p>
+<p>Set each factor to zero:</p>
+<ul>
+<li><span class="math inline">\(x = 2\)</span></li>
+<li><span class="math inline">\(x = 3\)</span></li>
+</ul>
+<p>Because we get <strong>two distinct solutions</strong>, the graph crosses the x-axis twice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/Example6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<hr>
+<p><strong>Example 7:</strong> One solution</p>
+<p>A quadratic has <strong>one</strong> real solution when its factors are <strong>identical</strong>. This is sometimes called a <em>double root</em>. Graphically, the parabola touches the x-axis at exactly one point (its vertex).</p>
+<p>Solve:</p>
+<p><span class="math display">\[x^2 - 6x + 9 = 0\]</span></p>
+<p>Factor:</p>
+<p><span class="math display">\[(x - 3)(x - 3) = 0 \qquad\text{or}\qquad (x - 3)^2 = 0\]</span></p>
+<p>Both factors give the same solution:</p>
+<ul>
+<li><span class="math inline">\(x = 3\)</span></li>
+</ul>
+<p>Because the factors repeat, there is <strong>only one</strong> solution. On the graph, the parabola just <em>touches</em> the x-axis at <span class="math inline">\((3, 0)\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/Example7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<hr>
+<p><strong>Example 8:</strong> No real solutions</p>
+<p>A quadratic has <strong>no</strong> real solutions when it <strong>cannot be factored</strong> into real linear factors. This means no real value of <span class="math inline">\(x\)</span> will make the expression equal zero.</p>
+<p>Solve:</p>
+<p><span class="math display">\[x^2 + 4x + 7 = 0\]</span></p>
+<p>Try to factor:</p>
+<p>There are no two numbers that multiply to <span class="math inline">\(7\)</span> and add to <span class="math inline">\(4\)</span>, so this quadratic <strong>does not factor</strong> over the real numbers.</p>
+<p>That means:</p>
+<ul>
+<li>There is <strong>no real value</strong> of <span class="math inline">\(x\)</span> that makes the equation true.</li>
+<li>The graph never touches the x-axis.</li>
+</ul>
+<p><img src="../../images/Unit_6/Lesson_3/Example8.png" class="img-fluid"></p>
+<hr>
+<section id="putting-it-all-together" class="level4">
+<h4 class="anchored" data-anchor-id="putting-it-all-together">Putting it all together</h4>
+<p>Factoring shows us clearly:</p>
+<ul>
+<li><p><strong>Two solutions</strong> when the quadratic factors into two different binomials <span class="math inline">\((x - p)(x - q) = 0\)</span></p></li>
+<li><p><strong>One solution</strong> when the quadratic factors into a perfect square <span class="math inline">\((x - p)^2 = 0\)</span></p></li>
+<li><p><strong>No real solutions</strong> when the quadratic does not factor over the real numbers</p></li>
+</ul>
+<p>These algebraic patterns match exactly what we see on the graph.</p>
+</section>
 </section>
 </section>
 <section class="level2 pagebreak-before">
 <h2 class="pagebreak-before anchored" data-anchor-id="">✍️ Practice On Your Own</h2>
+<p><strong>Practice On Your Own</strong></p>
+<p><strong>Conceptual Questions</strong><br>
+Answer in your own words.</p>
+<ol type="1">
+<li><p>How can you tell that an equation is “quadratic”?</p></li>
+<li><p>Why do we set a quadratic equation equal to zero before factoring?</p></li>
+<li><p>What does it mean if a quadratic equation has only one real solution?</p></li>
+<li><p>If a quadratic does not touch the x-axis, what does that tell you about its solutions?</p></li>
+<li><p>Why does the equation <span class="math inline">\((x - 4)^2 = 0\)</span> have only one solution even though it looks like a product?</p></li>
+</ol>
+<hr>
+<p><strong>Solve by Factoring</strong><br>
+Solve each equation.</p>
+<ol start="6" type="1">
+<li><p><span class="math inline">\(x^2 - 9 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 8x + 15 = 0\)</span></p></li>
+<li><p><span class="math inline">\(m^2 - 7m + 10 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 4x + 4 = 0\)</span></p></li>
+<li><p><span class="math inline">\(3x^2 - 2x - 8 = 0\)</span></p></li>
+<li><p><span class="math inline">\(4y^2 + 12y = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 3x - 18 = 0\)</span></p></li>
+<li><p><span class="math inline">\(5p^2 + 20p = 0\)</span></p></li>
+<li><p><span class="math inline">\(2x^2 + 3x - 20 = 0\)</span></p></li>
+<li><p><span class="math inline">\(3x^2 + 10x + 8 = 0\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Mixed Practice</strong><br>
+Solve each equation. If you can, say how many real solutions it has.</p>
+<ol start="16" type="1">
+<li><p><span class="math inline">\(2x^2 = 14x\)</span></p></li>
+<li><p><span class="math inline">\(x^2 = 6x - 11\)</span></p></li>
+<li><p><span class="math inline">\(7t^2 - 28t + 28 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 2x - 35 = 0\)</span></p></li>
+<li><p><span class="math inline">\(4x^2 + 4x = 8\)</span></p></li>
+<li><p><span class="math inline">\(6r^2 = 15r\)</span></p></li>
+<li><p><span class="math inline">\(x^2 = 5x - 6\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 12 = 6x\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 10x + 21 = 0\)</span></p></li>
+<li><p><span class="math inline">\(2x^2 - 9x - 5 = 0\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="26" type="1">
+<li>Solve for <span class="math inline">\(x\)</span>:</li>
+</ol>
+<pre><code>$$(x - 3)(x + 2) = (x - 1)(x + 4)$$</code></pre>
+<ol start="27" type="1">
+<li><p>Write a quadratic equation that satisfies the graph below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_3/RootsGraph.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li><p>To solve a quadratic equation means to find all values of <span class="math inline">\(x\)</span> that make the equation true (make the output <span class="math inline">\(y\)</span> equal to <span class="math inline">\(0\)</span>).</p></li>
+<li><p>We set a quadratic equal to <span class="math inline">\(0\)</span> so we can use the zero product property and because x-intercepts happen when <span class="math inline">\(y = 0\)</span>.</p></li>
+<li><p>One real solution means the parabola touches the x-axis at exactly one point (the vertex), and the equation has a double root.</p></li>
+<li><p>If the quadratic does not touch the x-axis, it has no real solutions (its roots are not real numbers).</p></li>
+<li><p><span class="math inline">\((x - 4)^2 = 0\)</span> has only one solution because both factors are the same, so they both give <span class="math inline">\(x = 4\)</span>.</p></li>
+<li><p><span class="math inline">\(x = -3, 3\)</span></p></li>
+<li><p><span class="math inline">\(x = -5, -3\)</span></p></li>
+<li><p><span class="math inline">\(m = 2, 5\)</span></p></li>
+<li><p><span class="math inline">\(x = 2\)</span></p></li>
+<li><p><span class="math inline">\(x = -\tfrac{4}{3}, 2\)</span></p></li>
+<li><p><span class="math inline">\(y = -3, 0\)</span></p></li>
+<li><p><span class="math inline">\(x = -6, 3\)</span></p></li>
+<li><p><span class="math inline">\(p = -4, 0\)</span></p></li>
+<li><p><span class="math inline">\(x = -4, \tfrac{5}{2}\)</span></p></li>
+<li><p><span class="math inline">\(x = -2, -\tfrac{4}{3}\)</span></p></li>
+<li><p><span class="math inline">\(x = 0, 7\)</span></p></li>
+<li><p>No real solutions (the equation <span class="math inline">\(x^2 - 6x + 11 = 0\)</span> does not factor over the reals).</p></li>
+<li><p><span class="math inline">\(t = 2\)</span></p></li>
+<li><p><span class="math inline">\(x = -5, 7\)</span></p></li>
+<li><p><span class="math inline">\(x = -2, 1\)</span></p></li>
+<li><p><span class="math inline">\(r = 0, \tfrac{5}{2}\)</span></p></li>
+<li><p><span class="math inline">\(x = 2, 3\)</span></p></li>
+<li><p>No real solutions (the equation <span class="math inline">\(x^2 - 6x + 12 = 0\)</span> does not factor over the reals).</p></li>
+<li><p><span class="math inline">\(x = 3, 7\)</span></p></li>
+<li><p><span class="math inline">\(x = -\tfrac{1}{2}, 5\)</span></p></li>
+<li><p><span class="math inline">\(x = -\tfrac{1}{2}\)</span></p></li>
+<li><p><span class="math inline">\(y = x^2 - 5x + 4\)</span></p></li>
+</ol>
 </div>
 
 
@@ -787,13 +1019,9 @@ If the graph has none, the equation has no real solutions.</p>
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -845,14 +1073,13 @@ If the graph has none, the equation has no real solutions.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
