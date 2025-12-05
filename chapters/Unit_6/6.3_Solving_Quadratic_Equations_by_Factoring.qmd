@@ -2,134 +2,488 @@
 
 In the last two lessons, we learned how to graph quadratic functions and describe the shapes of their parabolas. We now know how they open, where their vertices are, and how to find key features on the graph.
 
-But quadratics are not just interesting curves.  They also show up in **equations** we need to solve, like:
+But quadratics are not just interesting curves. They also show up in **equations** we need to solve, like:
 
 $$x^2 + 2x = 8.$$
 
-It is natural to ask how we would solve an equation like this. In this lesson, we will see that we already have all of the tools we need!
+It is natural to ask how we would solve an equation like this.
+In this lesson, we will see that we already have all of the tools we need.
 
 ---
 
 :::{.objectives}
 
-- [ ] I can solve quadratic equations by factoring.  
-- [ ] I can connect solutions (roots) to x-intercepts.  
-- [ ] I can describe when a quadratic has two, one, or no real solutions.
+* [ ] I can solve quadratic equations by factoring.
+* [ ] I can connect solutions (roots) to x-intercepts.
+* [ ] I can describe when a quadratic has two, one, or no real solutions.
 
 :::
 
 :::{.vocab}
-
-{{< glink "quadratic equation" >}},  
-{{< glink factor >}},  
-{{< glink "zero product property" >}},  
-{{< glink root >}},  
-{{< glink "x intercept" >}},  
-{{< glink solution >}}
-
+{{< glink "quadratic equation" >}}, {{< glink root >}}, {{< glink "zero product property" >}}
 :::
 
 {{< warmup >}}
 
 {{< learn >}}
 
-### 6.3.1 - From equations to x-intercepts
+---
 
-A **quadratic equation** is any equation that can be written as
+### 6.3.1 - Finding the x-intercepts of a quadratic function
 
-$$ax^2 + bx + c = 0.$$
+In Unit 4, we learned how to find the x-intercepts of linear functions.
+A quadratic works the same way: we look for the points where the graph touches or crosses the x-axis.
 
-For example:
+But unlike lines, a parabola can have **two**, **one**, or **zero** x-intercepts.
 
-$$x^2 + 3x = 7 \quad\longrightarrow\quad x^2 + 3x - 7 = 0.$$
+![](/images/Unit_6/Lesson_3/Parabolas.png){width="320px" fig-align="center"}
 
-Why force it to equal zero?  
-Because $y = 0$ is exactly what happens on the x-axis.  
-If we define the related function
+* The parabola on the left touches once (one solution).
+* The parabola in the middle crosses twice (two solutions).
+* The parabola on the right never touches (no real solutions).
 
-$$y = x^2 + 3x - 7,$$
+These values of $x$ are the {{< glink slug=root text=roots >}} or **zeros** of the function.
+They occur exactly when the **output** of the function is zero.
 
-then solving
+This idea is the key to why we solve equations by setting them equal to zero.
 
-$$x^2 + 3x - 7 = 0$$
+---
 
-tells us the x-values where the parabola touches the x-axis.
+**Example 1:** Finding x-intercepts by graphing
 
-**Graph this parabola:**  
-![](images/Unit_6/Lesson_3/graph_equation_to_intercepts.png){width="350px" fig-align="center"}
+Consider the function
 
-The x-intercepts on the graph are exactly the **roots** of the quadratic equation.
+$$
+f(x) = x^2 + 2x - 15.
+$$
 
-Roots, solutions, and x-intercepts all refer to the same x-values.
+Before graphing, we can use what we know:
+
+* Vertex $(-1, -16)$ is below the x-axis.
+* The parabola opens upward.
+
+So it must cross the x-axis twice.
+
+![](/images/Unit_6/Lesson_3/XIntercepts.png){width="400px" fig-align="center"}
+
+The x-intercepts are $(-5, 0)$ and $(3, 0)$.
+
+We will get these same values shortly by solving the equation algebraically.
+
+---
+
+:::{.you-try title="Find the x-intercepts of $f(x) = -\tfrac{1}{2}(x - 3)^2 + 2$."}
+
+Features:
+
+* Vertex $(3, 2)$
+* Opens downward
+
+Since the vertex is above the x-axis, the graph must cross twice.
+
+![](/images/Unit_6/Lesson_3/YouTry1.png){width="400px" fig-align="center"}
+
+The x-intercepts are $(1, 0)$ and $(5, 0)$.
+
+:::
 
 ---
 
 ### 6.3.2 - Solving quadratic equations by factoring
 
-To solve  
-$$ax^2 + bx + c = 0,$$  
-we factor the left side and use the **zero product property**:
+To find the exact x-intercepts, we need an algebraic method.
+This is where the {{< glink "quadratic equation" >}} comes in:
 
-**If a product equals zero, at least one factor must be zero.**
+$$
+ax^2 + bx + c = 0.
+$$
 
-This turns one quadratic equation into two simple linear ones.
+But why do we set it equal to **zero**?
 
-**Example 1:**  
-Solve $x^2 - 4x - 5 = 0$.
+Because x-intercepts occur when the **y-value is zero**.
+So if we want to find where the graph hits the x-axis, we must solve the equation that results from setting the function equal to zero.
 
-Factor:
-$$x^2 - 4x - 5 = (x - 5)(x + 1).$$
+This connects directly to Unit 5:
+once a quadratic is written as an expression equal to zero, we can factor it and use the {{< glink "zero product property" >}}.
 
-Zero product property:
-$$(x - 5)(x + 1) = 0.$$
-
-So:
-$$x = 5,\quad x = -1.$$
-
-**Graph:**  
-![](images/Unit_6/Lesson_3/graph_two_roots.png){width="350px" fig-align="center"}
-
-The intercepts match the solutions.
-
-**Example 2 (GCF first):**  
-Solve $2x^2 + 6x - 20 = 0.$
-
-Factor out the GCF:
-$$2(x^2 + 3x - 10) = 0.$$
-
-Then factor the trinomial:
-$$2(x + 5)(x - 2) = 0.$$
-
-So:
-$$x = -5,\quad x = 2.$$
-
-**Graph:**  
-![](images/Unit_6/Lesson_3/graph_two_roots_gcf.png){width="350px" fig-align="center"}
+If a product equals zero, then at least one factor must be zero.
+Each factor gives us a possible x-intercept.
 
 ---
 
-### 6.3.3 - How many solutions can a quadratic have?
+**Example 2:** Solving a quadratic equation by factoring
 
-Graphs show the possibilities clearly.
+We already graphed
 
-**Two real solutions**  
-The parabola crosses the x-axis twice.  
-![](images/Unit_6/Lesson_3/two_solutions.png){width="350px" fig-align="center"}
+$$
+f(x) = x^2 + 2x - 15.
+$$
 
-**One real solution**  
-The parabola touches the x-axis at its vertex.  
-This comes from a perfect square like $(x - 3)^2 = 0.$  
-![](images/Unit_6/Lesson_3/one_solution.png){width="350px" fig-align="center"}
+To find its x-intercepts algebraically, set the output to zero:
 
-**No real solutions**  
-The parabola stays above or below the x-axis.  
-![](images/Unit_6/Lesson_3/no_solutions.png){width="350px" fig-align="center"}
+$$
+x^2 + 2x - 15 = 0.
+$$
 
-Real roots match real x-intercepts.  
-If the graph has none, the equation has no real solutions.
+Factor the quadratic:
+
+$$
+\begin{align*}
+x^2 + 2x - 15 &= 0 \\
+(x + 5)(x - 3) &= 0
+\end{align*}
+$$
+
+Now each factor gives a possible x-intercept:
+
+* $x + 5 = 0 \Rightarrow x = -5$
+* $x - 3 = 0 \Rightarrow x = 3$
+
+These match the graph perfectly.
+
+---
+
+**Example 3:** A quadratic not in standard form
+
+Solve:
+
+$$
+2x^2 = 3x + 4
+$$
+
+Move everything to one side to make the output zero:
+
+$$
+2x^2 - 3x - 4 = 0.
+$$
+
+Now factor:
+
+$$(2x + 1)(x - 4) = 0.$$
+
+Set each factor to zero:
+
+* $x = -\tfrac{1}{2}$
+* $x = 4$
+
+Two solutions means two x-intercepts.
+
+---
+
+**Example 4:** Taking out a GCF
+
+Solve:
+
+$$
+8x^2 + 60x + 72 = 0
+$$
+
+Factor out the GCF:
+
+$$
+4(2x^2 + 15x + 18) = 0.
+$$
+
+Divide both sides by $4$:
+
+$$
+\begin{align*}
+2x^2 + 15x + 18 &= 0 \\
+(x + 6)(2x + 3) &= 0
+\end{align*}
+$$
+
+Solutions:
+
+* $x = -6$
+* $x = -\tfrac{3}{2}$
+
+---
+
+**Example 5:** A cubic equation
+
+The same strategy works whenever the entire expression can be factored.
+
+Solve:
+
+$$
+3x^3 = 9x + 6x^2
+$$
+
+Write it in standard form:
+
+$$
+3x^3 - 6x^2 - 9x = 0.
+$$
+
+Factor step by step:
+
+$$
+\begin{align*}
+3x(x^2 - 2x - 3) &= 0 \\
+3x(x + 1)(x - 3) &= 0
+\end{align*}
+$$
+
+Set each factor equal to zero:
+
+* $x = 0$
+* $x = -1$
+* $x = 3$
+
+---
+
+:::{.you-try title="Solve $3x^2 - 7x = 6$"}
+
+$$
+\begin{align*}
+3x^2 - 7x &= 6 \snminus{6} \\
+3x^2 - 7x - 6 &= 0 \stepnote{factor} \\
+(x - 3)(3x + 2) &=0
+\end{align*}
+$$
+
+Solutions:
+
+* $x - 3 = 0 \Rightarrow x = 3$
+* $3x + 2 = 0 \Rightarrow x = -\tfrac{2}{3}$
+
+:::
+
+---
+
+### 6.3.3 – How many solutions can a quadratic equation have?
+
+By now we’ve seen that a quadratic function can have **two**, **one**, or **zero** x-intercepts.
+Since solving a quadratic equation is the same as finding its x-intercepts, the equation itself can have:
+
+* **Two real solutions**
+* **One real solution**
+* **No real solutions**
+
+In this section, we’ll see what each of these cases looks like **algebraically** when we try to factor.
+
+---
+
+**Example 6:** Two solutions
+
+A quadratic has **two** real solutions when it factors into **two different linear factors**.
+
+Solve:
+$$x^2 - 5x + 6 = 0$$
+
+Factor:
+
+$$(x - 2)(x - 3) = 0$$
+
+Set each factor to zero:
+
+* $x = 2$
+* $x = 3$
+
+Because we get **two distinct solutions**, the graph crosses the x-axis twice.
+
+![](/images/Unit_6/Lesson_3/Example6.png){width="400px" fig-align="center"}
+
+---
+
+**Example 7:** One solution
+
+A quadratic has **one** real solution when its factors are **identical**.
+This is sometimes called a *double root*.
+Graphically, the parabola touches the x-axis at exactly one point (its vertex).
+
+Solve:
+
+$$x^2 - 6x + 9 = 0$$
+
+Factor:
+
+$$(x - 3)(x - 3) = 0 \qquad\text{or}\qquad (x - 3)^2 = 0$$
+
+Both factors give the same solution:
+
+* $x = 3$
+
+Because the factors repeat, there is **only one** solution.
+On the graph, the parabola just *touches* the x-axis at $(3, 0)$.
+
+![](/images/Unit_6/Lesson_3/Example7.png){width="400px" fig-align="center"}
+
+---
+
+**Example 8:** No real solutions
+
+A quadratic has **no** real solutions when it **cannot be factored** into real linear factors. This means no real value of $x$ will make the expression equal zero.
+
+Solve:
+
+$$x^2 + 4x + 7 = 0$$
+
+Try to factor:
+
+There are no two numbers that multiply to $7$ and add to $4$, so this quadratic **does not factor** over the real numbers.
+
+That means:
+
+* There is **no real value** of $x$ that makes the equation true.
+* The graph never touches the x-axis.
+
+![](/images/Unit_6/Lesson_3/Example8.png)
+
+---
+
+#### Putting it all together
+
+Factoring shows us clearly:
+
+* **Two solutions**
+  when the quadratic factors into two different binomials
+  $(x - p)(x - q) = 0$
+
+* **One solution**
+  when the quadratic factors into a perfect square
+  $(x - p)^2 = 0$
+
+* **No real solutions**
+  when the quadratic does not factor over the real numbers
+
+These algebraic patterns match exactly what we see on the graph.
+
 
 {{< practice >}}
 
+**Practice On Your Own**
+
+**Conceptual Questions**  
+Answer in your own words.
+
+1.  How can you tell that an equation is "quadratic"?
+
+2.  Why do we set a quadratic equation equal to zero before factoring?
+
+3.  What does it mean if a quadratic equation has only one real solution?
+
+4.  If a quadratic does not touch the x-axis, what does that tell you about its solutions?
+
+5.  Why does the equation $(x - 4)^2 = 0$ have only one solution even though it looks like a product?
+
+---
+
+**Solve by Factoring**  
+Solve each equation.
+
+6.  $x^2 - 9 = 0$
+
+7.  $x^2 + 8x + 15 = 0$
+
+8.  $m^2 - 7m + 10 = 0$
+
+9.  $x^2 - 4x + 4 = 0$
+
+10. $3x^2 - 2x - 8 = 0$
+
+11. $4y^2 + 12y = 0$
+
+12. $x^2 + 3x - 18 = 0$
+
+13. $5p^2 + 20p = 0$
+
+14. $2x^2 + 3x - 20 = 0$
+
+15. $3x^2 + 10x + 8 = 0$
+
+---
+
+**Mixed Practice**  
+Solve each equation. If you can, say how many real solutions it has.
+
+16. $2x^2 = 14x$
+
+17. $x^2 = 6x - 11$
+
+18. $7t^2 - 28t + 28 = 0$
+
+19. $x^2 - 2x - 35 = 0$
+
+20. $4x^2 + 4x = 8$
+
+21. $6r^2 = 15r$
+
+22. $x^2 = 5x - 6$
+
+23. $x^2 + 12 = 6x$
+
+24. $x^2 - 10x + 21 = 0$
+
+25. $2x^2 - 9x - 5 = 0$
+
+---
+
+**Challenge Problems**
+
+26.  Solve for $x$:
+    
+    $$(x - 3)(x + 2) = (x - 1)(x + 4)$$
+
+27. Write a quadratic equation that satisfies the graph below.
+
+    ![](/images/Unit_6/Lesson_3/RootsGraph.png){width="300px" fig-align="center"}
+
 :::{.answers}
+
+1.  To solve a quadratic equation means to find all values of $x$ that make the equation true (make the output $y$ equal to $0$).
+
+2.  We set a quadratic equal to $0$ so we can use the zero product property and because x-intercepts happen when $y = 0$.
+
+3.  One real solution means the parabola touches the x-axis at exactly one point (the vertex), and the equation has a double root.
+
+4.  If the quadratic does not touch the x-axis, it has no real solutions (its roots are not real numbers).
+
+5.  $(x - 4)^2 = 0$ has only one solution because both factors are the same, so they both give $x = 4$.
+
+6.  $x = -3, 3$
+
+7.  $x = -5, -3$
+
+8.  $m = 2, 5$
+
+9.  $x = 2$
+
+10. $x = -\tfrac{4}{3}, 2$
+
+11. $y = -3, 0$
+
+12. $x = -6, 3$
+
+13. $p = -4, 0$
+
+14. $x = -4, \tfrac{5}{2}$
+
+15. $x = -2, -\tfrac{4}{3}$
+
+16. $x = 0, 7$
+
+17. No real solutions (the equation $x^2 - 6x + 11 = 0$ does not factor over the reals).
+
+18. $t = 2$
+
+19. $x = -5, 7$
+
+20. $x = -2, 1$
+
+21. $r = 0, \tfrac{5}{2}$
+
+22. $x = 2, 3$
+
+23. No real solutions (the equation $x^2 - 6x + 12 = 0$ does not factor over the reals).
+
+24. $x = 3, 7$
+
+25. $x = -\tfrac{1}{2}, 5$
+
+26. $x = -\tfrac{1}{2}$
+
+27. $y = x^2 - 5x + 4$
 
 :::

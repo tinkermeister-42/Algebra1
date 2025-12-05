@@ -1754,6 +1754,17 @@ Positive residuals are points **above** the line; negative residuals are **below
 
 ---
 
+### Root {#glossary-root}
+
+A root of an equation is a value that makes the equation true. For quadratic equations, roots are the x-values where the graph touches or crosses the x-axis. Roots are also called solutions or zeros.
+
+> **Example:**  
+> The equation $x^2 - 9 = 0$ has roots $x = 3$ and $x = -3$ because each value makes the equation equal zero.
+
+**See Also:** {{< glink "x intercept" >}}, {{< glink solution >}}, {{< glink "zero product property" >}}
+
+---
+
 ### Scatter Plot {#glossary-scatter-plot}
 
 A scatter plot is a graph that shows pairs of data points as dots on a coordinate plane. Each dot represents one observation, helping you see patterns, clusters, or possible relationships between two variables.
@@ -2188,5 +2199,17 @@ $a^0=1$ for $a\ne0$.
 > $(5y)^0=1$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "negative exponent" >}}
+
+---
+
+### Zero Product Property {#glossary-zero-product-property}
+
+The zero product property says that if a product equals zero, then at least one of the factors must be zero. We use this idea when solving equations like $(x+3)(x-5)=0$ by setting each factor equal to zero.
+
+> **Example:**  
+> If $(x-4)(2x+1)=0$, then either $x-4=0$ or $2x+1=0$.  
+> The solutions are $x=4$ and $x=-\tfrac12$.
+
+**See Also:** {{< glink factor >}}, {{< glink root >}}, {{< glink "quadratic equation" >}}
 
 ---

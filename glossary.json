@@ -129,6 +129,7 @@
   "remainder": "A remainder is what’s left over after dividing when the number doesn’t go in evenly.",
   "residual": "A residual measures how far a data point is from a model’s prediction. For a line of best fit, the residual is",
   "result": "The result is the final answer you get after evaluating or simplifying an expression.",
+  "root": "A root of an equation is a value that makes the equation true. For quadratic equations, roots are the x-values where the graph touches or crosses the x-axis. Roots are also called solutions or zeros.",
   "scatter-plot": "A scatter plot is a graph that shows pairs of data points as dots on a coordinate plane. Each dot represents one observation, helping you see patterns, clusters, or possible relationships between two variables.",
   "simplest-form": "A fraction is in simplest form when the numerator and denominator have no common factors except 1.",
   "simplify": "To simplify a number or expression means to rewrite it in a cleaner or shorter way — without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.",
@@ -160,5 +161,6 @@
   "whole-number": "A whole number is a number with no fractions or decimals. These are 0, 1, 2, 3, … (zero and the positive integers). Whole numbers do not include negatives, decimals, or fractions. They are a subset of integers.",
   "x-intercept": "The x-intercept is the point where a line crosses the x-axis. At this point, the value of $y$ is always $0$.",
   "y-intercept": "The y-intercept is the point where a line crosses the y-axis. At this point, the value of $x$ is always $0$.",
-  "zero-exponent": "Any nonzero base to the zero power equals $1$: $a^0=1$ for $a\\ne0$."
+  "zero-exponent": "Any nonzero base to the zero power equals $1$: $a^0=1$ for $a\\ne0$.",
+  "zero-product-property": "The zero product property says that if a product equals zero, then at least one of the factors must be zero. We use this idea when solving equations like $(x+3)(x-5)=0$ by setting each factor equal to zero."
 }

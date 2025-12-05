@@ -123,6 +123,16 @@ The following example shows three different parabolas.
 
 ---
 
+:::{.real-world title="Parabolic Reflectors"}
+Parabolas show up in more places than you might think. The curve of a quadratic function is the exact shape used in satellite dishes, car headlights, telescopes, and huge radio antennas.
+
+Why that shape?
+
+A parabolic reflector takes incoming light or sound and directs it to one precise spot, making it perfect for gathering signals or projecting powerful beams.
+
+It’s one of the ways a simple algebraic curve becomes a tool engineers rely on every day.
+:::
+
 ### 6.1.2 - Features of Quadratic Functions
 
 Every quadratic function creates a parabola. All parabolas have three main features.
