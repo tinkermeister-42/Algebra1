@@ -424,7 +424,9 @@ Solve each equation. If you can, say how many real solutions it has.
 
 26.  Solve for $x$:
     
-    $$(x - 3)(x + 2) = (x - 1)(x + 4)$$
+     $$
+     (x - 3)(x + 2) = (x - 1)(x + 4)
+     $$
 
 27. Write a quadratic equation that satisfies the graph below.
 
