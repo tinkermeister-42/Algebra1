@@ -186,6 +186,18 @@ To **combine like terms** means to simplify an expression by adding or subtracti
 
 ---
 
+### Completing the Square {#glossary-completing-the-square}
+
+**Completing the square** is a method for rewriting a quadratic expression so it becomes a perfect square plus or minus a number. This makes quadratic equations easier to solve and helps us find important features like the vertex.
+
+> **Example:**
+>
+> $x^2 + 6x = (x + 3)^2 - 9$
+
+**See Also:** {{< glink "perfect square" >}}, {{< glink "quadratic formula" >}}
+
+---
+
 ### Composite number {#glossary-composite_number}
 
 A composite number has more than two factors.
@@ -1340,6 +1352,22 @@ A **partial product** is the result of multiplying one part of an expression by 
 
 ---
 
+### Perfect Square {#glossary-perfect-square}
+
+A **perfect square** is a number or expression that can be written as something multiplied by itself.
+
+This can be a number, like $25 = 5^2$, or an algebraic expression that comes from squaring a binomial.
+
+> **Example:**
+>
+> $25 = 5^2$
+>
+> $(x - 4)^2 = x^2 - 8x + 16$
+
+**See Also:** {{< glink "completing the square" >}}, {{< glink "square root" >}}
+
+---
+
 ### Perpendicular {#glossary-perpendicular}
 
 Two lines that **intersect to form a right angle (90°)**.
@@ -1898,6 +1926,18 @@ To **solve** an equation means to find every value of the variable that makes th
 > Solve $x + 9 = 11$. Subtract 9 from both sides: $x = 2$. Check: $2 + 9 = 11$ ✓.
 
 **See Also:** {{< glink equation >}}, {{< glink solution >}}, {{< glink result >}}, {{< glink simplify >}}, {{< glink value >}}
+
+---
+
+### Square Root {#glossary-square-root}
+
+A **square root** of a number is a value that, when multiplied by itself, gives the original number. Positive numbers have two square roots, one positive and one negative.
+
+> **Example:**
+>
+> The square roots of $9$ are $3$ and $-3$, because $3^2 = 9$ and $(-3)^2 = 9$.
+
+**See Also:** {{< glink "perfect square" >}}
 
 ---
 

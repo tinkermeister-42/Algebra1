@@ -477,3 +477,13 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
     ![](/images/Unit_6/Lesson_2/Problem14.png){width="400px" fig-align="center"}
 
 :::
+
+### 6.3 - Solving Quadratic Equations by Factoring
+
+:::{.answers}
+
+33. $x = -\tfrac{1}{2}$
+
+34. $y = x^2 - 5x + 4$
+
+:::
