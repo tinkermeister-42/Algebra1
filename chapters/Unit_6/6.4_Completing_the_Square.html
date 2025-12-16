@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6.4 - Completing_the_Square – DHS Algebra 1</title>
+<title>6.4 - Completing the Square – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.4_Completing_the_Square.html">6.4 - Completing_the_Square</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.4_Completing_the_Square.html">6.4 - Completing the Square</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -522,7 +522,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_6/6.4_Completing_the_Square.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">6.4 - Completing_the_Square</span></a>
+ <span class="menu-text">6.4 - Completing the Square</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -641,8 +641,8 @@ window.Quarto = {
   <li>👥 Learn Together
   <ul class="collapse">
   <li><a href="#turning-x2-bx-into-a-perfect-square" id="toc-turning-x2-bx-into-a-perfect-square" class="nav-link active" data-scroll-target="#turning-x2-bx-into-a-perfect-square">6.4.1 - Turning <span class="math inline">\(x^2 + bx\)</span> into a Perfect Square</a></li>
-  <li><a href="#solving-by-taking-square-roots" id="toc-solving-by-taking-square-roots" class="nav-link" data-scroll-target="#solving-by-taking-square-roots">6.4.2 - Solving by Taking Square Roots</a></li>
-  <li><a href="#vertex-from-completed-square" id="toc-vertex-from-completed-square" class="nav-link" data-scroll-target="#vertex-from-completed-square">6.4.3 - Vertex from Completed Square</a></li>
+  <li><a href="#completing-the-square-when-the-leading-coefficient-is-not-1" id="toc-completing-the-square-when-the-leading-coefficient-is-not-1" class="nav-link" data-scroll-target="#completing-the-square-when-the-leading-coefficient-is-not-1">6.4.2 - Completing the Square When the Leading Coefficient Is Not 1</a></li>
+  <li><a href="#solving-by-taking-square-roots" id="toc-solving-by-taking-square-roots" class="nav-link" data-scroll-target="#solving-by-taking-square-roots">6.4.3 - Solving by Taking Square Roots</a></li>
   <li><a href="#deriving-the-quadratic-formula" id="toc-deriving-the-quadratic-formula" class="nav-link" data-scroll-target="#deriving-the-quadratic-formula">6.4.4 - Deriving the Quadratic Formula</a></li>
   </ul></li>
   <li>✍️ Practice On Your Own</li>
@@ -652,9 +652,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.4_Completing_the_Square.html">6.4 - Completing_the_Square</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_6/index.html">Unit 6: Quadratic Equations &amp; Functions</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_6/6.4_Completing_the_Square.html">6.4 - Completing the Square</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">6.4 - Completing_the_Square</h1>
+<h1 class="title">6.4 - Completing the Square</h1>
 </div>
 
 
@@ -671,43 +671,381 @@ window.Quarto = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>In the last lesson, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.</p>
+<p>But not all quadratic equations factor using integers.</p>
+<p>For example,</p>
+<p><span class="math display">\[
+x^2 + 6x + 5 = 0
+\]</span></p>
+<p>factors easily, while</p>
+<p><span class="math display">\[
+x^2 + 6x + 2 = 0
+\]</span></p>
+<p>does not.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_4/IntroExample.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>Both parabolas cross the x-axis twice, so both equations have two solutions. We can find the solutions to the first equation by factoring:</p>
+<p><span class="math display">\[
+\begin{align*}
+x^2 + 6x + 5 &amp;= 0 \\
+(x + 5)(x + 1) &amp;= 0
+\end{align*}
+\]</span></p>
+<p>This gives the solutions <span class="math inline">\(x = -5\)</span> and <span class="math inline">\(x = -1\)</span>.</p>
+<p>But factoring does not work for the second equation. We need a method that works <strong>every time</strong>, even when factoring fails.</p>
+<p>In this lesson, we will learn a method called <strong>completing the square</strong>. This method always works for quadratic equations. Even more importantly, it leads directly to one of the most important formulas in algebra: the <strong>quadratic formula</strong>.</p>
+<hr>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can rewrite <span class="math inline">\(x^2 + bx\)</span> as a perfect square.</label></li>
-<li><label><input type="checkbox">I can solve equations of the form <span class="math inline">\((x-h)^2 = k\)</span>.</label></li>
-<li><label><input type="checkbox">I can explain how completing the square connects to the quadratic formula.</label></li>
+<li><label><input type="checkbox">I can solve equations of the form <span class="math inline">\((x - h)^2 = k\)</span>.</label></li>
+<li><label><input type="checkbox">I can explain why completing the square leads to the quadratic formula.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="term" data-slug="term" data-original-href="#glossary-term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-completing-the-square" data-slug="completing-the-square" data-term="completing the square">completing the square</a>, <a href="" class="glossary-link" data-original-href="#glossary-perfect-square" data-slug="perfect-square" data-term="perfect square">perfect square</a>, <a href="" class="glossary-link" data-original-href="#glossary-quadratic-formula" data-slug="quadratic-formula" data-term="quadratic formula">quadratic formula</a>, <a href="" class="glossary-link" data-original-href="#glossary-square-root" data-slug="square-root" data-term="square root">square root</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
+<p><strong>Warm-Up</strong></p>
+<ol type="1">
+<li><p>Expand the expression: <span class="math display">\[
+(x + 4)^2
+\]</span></p></li>
+<li><p>Expand the expression: <span class="math display">\[
+(x - 5)^2
+\]</span></p></li>
+<li><p>In both expansions, how is the middle term related to the number inside the parentheses?</p></li>
+</ol>
 </section>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
+<hr>
 <section id="turning-x2-bx-into-a-perfect-square" class="level3">
 <h3 class="anchored" data-anchor-id="turning-x2-bx-into-a-perfect-square">6.4.1 - Turning <span class="math inline">\(x^2 + bx\)</span> into a Perfect Square</h3>
-<p>Half the middle term idea</p>
+<p>From the warm-up, we can see a pattern:</p>
+<p><span class="math display">\[
+(x + a)^2 = x^2 + 2ax + a^2.
+\]</span></p>
+<p>The middle term is always <strong>twice</strong> the number inside the parentheses.</p>
+<p>Completing the square works by reversing this pattern.</p>
+<hr>
+<p><strong>Example 1:</strong> Completing the square</p>
+<p>Rewrite:</p>
+<p><span class="math display">\[
+x^2 + 10x
+\]</span></p>
+<p>Half of the middle term is</p>
+<p><span class="math display">\[
+\frac{10}{2} = 5.
+\]</span></p>
+<p>So we start with</p>
+<p><span class="math display">\[
+(x + 5)^2.
+\]</span></p>
+<p>But</p>
+<p><span class="math display">\[
+(x + 5)^2 = x^2 + 10x + 25,
+\]</span></p>
+<p>which is <span class="math inline">\(25\)</span> larger than the original expression.</p>
+<p>To correct this, we subtract <span class="math inline">\(25\)</span>:</p>
+<p><span class="math display">\[
+x^2 + 10x = (x + 5)^2 - 25.
+\]</span></p>
+<hr>
+<p><strong>Example 2:</strong> A negative middle term</p>
+<p>Rewrite:</p>
+<p><span class="math display">\[
+x^2 - 6x.
+\]</span></p>
+<p>Half of <span class="math inline">\(-6\)</span> is <span class="math inline">\(-3\)</span>:</p>
+<p><span class="math display">\[
+(x - 3)^2 = x^2 - 6x + 9.
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+x^2 - 6x = (x - 3)^2 - 9.
+\]</span></p>
+<hr>
+<p><strong>Example 3:</strong> A fractional middle term</p>
+<p>Rewrite:</p>
+<p><span class="math display">\[
+x^2 + 3x.
+\]</span></p>
+<p>Half of <span class="math inline">\(3\)</span> is <span class="math inline">\(\tfrac{3}{2}\)</span>:</p>
+<p><span class="math display">\[
+(x + \tfrac{3}{2})^2 = x^2 + 3x + \tfrac{9}{4}.
+\]</span></p>
+<p>So,</p>
+<p><span class="math display">\[
+x^2 + 3x = (x + \tfrac{3}{2})^2 - \tfrac{9}{4}.
+\]</span></p>
+<p>This process works every time.</p>
+<hr>
+<div class="you-try" title="Rewrite $x^2 + 8x$ as a perfect square plus or minus a number.">
+<p><span class="math display">\[
+x^2 + 8x = (x + 4)^2 - 16
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="completing-the-square-when-the-leading-coefficient-is-not-1" class="level3">
+<h3 class="anchored" data-anchor-id="completing-the-square-when-the-leading-coefficient-is-not-1">6.4.2 - Completing the Square When the Leading Coefficient Is Not 1</h3>
+<p>If the coefficient of <span class="math inline">\(x^2\)</span> is not <span class="math inline">\(1\)</span>, the pattern will not work until we fix that.</p>
+<hr>
+<p><strong>Step 1:</strong> Factor out the leading coefficient</p>
+<p><span class="math display">\[
+2x^2 + 8x = 2(x^2 + 4x).
+\]</span></p>
+<hr>
+<p><strong>Step 2:</strong> Complete the square inside the parentheses</p>
+<p><span class="math display">\[
+x^2 + 4x = (x + 2)^2 - 4.
+\]</span></p>
+<p>Substitute back:</p>
+<p><span class="math display">\[
+2(x + 2)^2 - 8.
+\]</span></p>
+<hr>
+<p><strong>Example 4:</strong> Completing the square with a leading coefficient</p>
+<p>Rewrite:</p>
+<p><span class="math display">\[
+3x^2 + 12x.
+\]</span></p>
+<p><span class="math display">\[
+3(x^2 + 4x) = 3\big((x + 2)^2 - 4\big) = 3(x + 2)^2 - 12.
+\]</span></p>
+<hr>
+<p><strong>Example 5:</strong> Completing the square in an equation</p>
+<p>Rewrite by completing the square:</p>
+<p><span class="math display">\[
+2x^2 + 8x + 3 = 0.
+\]</span></p>
+<p><span class="math display">\[
+\begin{align*}
+2(x^2 + 4x) + 3 &amp;= 0 \\
+2(x^2 + 4x) &amp;= -3 \\
+x^2 + 4x &amp;= -\tfrac{3}{2}
+\end{align*}
+\]</span></p>
+<p>Complete the square:</p>
+<p><span class="math display">\[
+(x + 2)^2 = \tfrac{5}{2}.
+\]</span></p>
+<p>We will solve this equation in the next section.</p>
+<hr>
 </section>
 <section id="solving-by-taking-square-roots" class="level3">
-<h3 class="anchored" data-anchor-id="solving-by-taking-square-roots">6.4.2 - Solving by Taking Square Roots</h3>
-<p>(x-h)^2 = k</p>
-</section>
-<section id="vertex-from-completed-square" class="level3">
-<h3 class="anchored" data-anchor-id="vertex-from-completed-square">6.4.3 - Vertex from Completed Square</h3>
-<p>Identifying (h, k) without transformations</p>
+<h3 class="anchored" data-anchor-id="solving-by-taking-square-roots">6.4.3 - Solving by Taking Square Roots</h3>
+<p>Once an equation is written in the form</p>
+<p><span class="math display">\[
+(x - h)^2 = k,
+\]</span></p>
+<p>we solve it by taking <a href="" class="glossary-link" data-original-href="#glossary-square root" data-slug="square root" data-term="square roots">square roots</a>.</p>
+<hr>
+<p><strong>Example 6:</strong> Solving after completing the square</p>
+<p>Let’s solve the equation from Example 5.</p>
+<p><span class="math display">\[
+(x + 2)^2 = \tfrac{5}{2}
+\]</span></p>
+<p>Take the square root of both sides and solve.</p>
+<p><span class="math display">\[
+\begin{align*}
+x + 2 &amp;= \pm \sqrt{\tfrac{5}{2}} \\
+x &amp;= -2 \pm \sqrt{\tfrac{5}{2}}
+\end{align*}
+\]</span></p>
+<div class="note" title="Why do we use $\pm$?">
+<p>The square root asks what number, multiplied by itself, gives the number under the square root. Take <span class="math inline">\(\sqrt{25}\)</span> as a simple example.</p>
+<p>There are actually <strong>two</strong> numbers that satisfy the square root</p>
+<p><span class="math display">\[
+5^2 = 25 \quad \text{and} \quad (-5)^2 = 25
+\]</span></p>
+<p>So when we undo a square, we must include <strong>both possibilities</strong>.</p>
+</div>
+<hr>
+<p><strong>Example 7:</strong> No real solutions</p>
+<p>Solve:</p>
+<p><span class="math display">\[
+(x + 1)^2 = -6.
+\]</span></p>
+<p>The left side of the equation is a square. That means it represents a number multiplied by itself.</p>
+<p>For any real number, a square is <strong>never negative</strong>.</p>
+<p>But the right side of the equation is <span class="math inline">\(-6\)</span>, which is negative.</p>
+<p>Since no real number squared can equal <span class="math inline">\(-6\)</span>, there is <strong>no real value of <span class="math inline">\(x\)</span></strong> that makes this equation true.</p>
+<p>So this equation has <strong>no real solutions</strong>.</p>
+<hr>
+<div class="you-try" title="Solve $(x - 5)^2 = 9$.">
+<p><span class="math display">\[
+x = 8 \quad \text{or} \quad x = 2
+\]</span></p>
+</div>
+<hr>
 </section>
 <section id="deriving-the-quadratic-formula" class="level3">
 <h3 class="anchored" data-anchor-id="deriving-the-quadratic-formula">6.4.4 - Deriving the Quadratic Formula</h3>
-<p>How this leads to the quadratic formula</p>
+<p>This is the most important result of this lesson.</p>
+<p>We are going to solve <strong>any quadratic equation</strong>, using the same steps we have already practiced.</p>
+<p>Start with the general quadratic equation:</p>
+<p><span class="math display">\[
+ax^2 + bx + c = 0, \qquad a \neq 0.
+\]</span></p>
+<hr>
+<p><strong>Step 1:</strong> Make the coefficient of <span class="math inline">\(x^2\)</span> equal to 1</p>
+<p>To complete the square, the coefficient of <span class="math inline">\(x^2\)</span> must be <span class="math inline">\(1\)</span>. So we divide <strong>every term</strong> by <span class="math inline">\(a\)</span>:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x + \frac{c}{a} = 0.
+\]</span></p>
+<hr>
+<p><strong>Step 2:</strong> Move the constant term</p>
+<p>We want only the <span class="math inline">\(x\)</span> terms on the left side:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x = -\frac{c}{a}.
+\]</span></p>
+<hr>
+<p><strong>Step 3:</strong> Complete the square</p>
+<p>Just like before, we take <strong>half of the coefficient of <span class="math inline">\(x\)</span></strong> and square it.</p>
+<p>Half of <span class="math inline">\(\frac{b}{a}\)</span> is <span class="math inline">\(\frac{b}{2a}\)</span>, so we add</p>
+<p><span class="math display">\[
+\left(\frac{b}{2a}\right)^2
+\]</span></p>
+<p>to <strong>both sides</strong> of the equation:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2
+=
+-\frac{c}{a} + \left(\frac{b}{2a}\right)^2.
+\]</span></p>
+<p>Now the left side is a perfect square:</p>
+<p><span class="math display">\[
+\left(x + \frac{b}{2a}\right)^2
+=
+\frac{b^2 - 4ac}{4a^2}.
+\]</span></p>
+<p>At this point, the equation has the same form we solved earlier:</p>
+<p><span class="math display">\[
+(x - h)^2 = k.
+\]</span></p>
+<hr>
+<p><strong>Step 4:</strong> Take square roots</p>
+<p>To undo the square, we take the square root of <strong>both sides</strong>. Remember, this always introduces <span class="math inline">\(\pm\)</span>:</p>
+<p><span class="math display">\[
+x + \frac{b}{2a}
+=
+\pm \frac{\sqrt{b^2 - 4ac}}{2a}.
+\]</span></p>
+<hr>
+<p><strong>Step 5:</strong> Solve for <span class="math inline">\(x\)</span></p>
+<p>Subtract <span class="math inline">\(\frac{b}{2a}\)</span> from both sides:</p>
+<p><span class="math display">\[
+x
+=
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><strong>This is the quadratic formula.</strong></p>
+</blockquote>
+<p>It is not a new idea.<br>
+It is the result of completing the square on <strong>every possible quadratic equation</strong>.</p>
+<p>That means:</p>
+<ul>
+<li>it works even when factoring fails</li>
+<li>it explains why some quadratics have two solutions, one solution, or no real solutions</li>
+<li>it is the most powerful method we have for solving quadratic equations</li>
+</ul>
+<p>In the next lesson, we will focus entirely on <strong>using</strong> this formula.</p>
 </section>
 </section>
 <section class="level2 pagebreak-before">
 <h2 class="pagebreak-before anchored" data-anchor-id="">✍️ Practice On Your Own</h2>
+<p><strong>Conceptual Questions</strong></p>
+<ol type="1">
+<li><p>Why do we take half of the middle term when completing the square?</p></li>
+<li><p>Why must we add the same number to both sides of an equation?</p></li>
+<li><p>Why does taking a square root require using <span class="math inline">\(\pm\)</span>?</p></li>
+<li><p>What does it mean if <span class="math inline">\((x - h)^2 = k\)</span> has no real solution?</p></li>
+<li><p>Why does completing the square guarantee the quadratic formula works for every quadratic?</p></li>
+</ol>
+<hr>
+<p><strong>Solve by Completing the Square</strong></p>
+<ol start="6" type="1">
+<li><p><span class="math inline">\(x^2 + 6x = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 8x = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 5x = 0\)</span></p></li>
+<li><p><span class="math inline">\((x - 3)^2 = 25\)</span></p></li>
+<li><p><span class="math inline">\((x + 2)^2 = 7\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 6x + 5 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 6x + 2 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 4x - 1 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 10x + 9 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 10x + 30 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 8x + 1 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 2x + 6 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 12x + 36 = 0\)</span></p></li>
+<li><p><span class="math inline">\(2x^2 + 8x + 3 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 7x + 1 = 0\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 4x = 5\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 6x = 2\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 2x = 3\)</span></p></li>
+<li><p><span class="math inline">\(x^2 - 10x = -9\)</span></p></li>
+<li><p><span class="math inline">\(x^2 + 1 = 0\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="26" type="1">
+<li><p><span class="math inline">\(3x^2 + 12x + 7 = 0\)</span></p></li>
+<li><p>Explain why completing the square must always lead to the quadratic formula.</p></li>
+</ol>
 <div class="answers">
-
+<ol type="1">
+<li><p>Because the middle term in <span class="math inline">\((x+a)^2\)</span> is always <span class="math inline">\(2ax\)</span>, so half of <span class="math inline">\(b\)</span> tells us the value of <span class="math inline">\(a\)</span>.</p></li>
+<li><p>To keep the equation balanced so the solution does not change.</p></li>
+<li><p>Because both a positive and a negative number square to the same value.</p></li>
+<li><p>It means no real number can satisfy the equation.</p></li>
+<li><p>Because completing the square works for any values of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span>.</p></li>
+<li><p><span class="math inline">\((x+3)^2 - 9\)</span><br>
+</p></li>
+<li><p><span class="math inline">\((x-4)^2 - 16\)</span><br>
+</p></li>
+<li><p><span class="math inline">\((x+\tfrac{5}{2})^2 - \tfrac{25}{4}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = 8, 2\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -2 \pm \sqrt{7}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -1, -5\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -3 \pm \sqrt{7}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = 2 \pm \sqrt{5}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -1, -9\)</span><br>
+</p></li>
+<li><p>No real solutions<br>
+</p></li>
+<li><p><span class="math inline">\(x = -4 \pm \sqrt{15}\)</span><br>
+</p></li>
+<li><p>No real solutions<br>
+</p></li>
+<li><p><span class="math inline">\(x = -6\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -2 \pm \tfrac{\sqrt{10}}{2}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = \tfrac{7 \pm \sqrt{45}}{2}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -2 \pm 3\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = 3 \pm \sqrt{7}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = -1 \pm \sqrt{4}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(x = 1, 9\)</span><br>
+</p></li>
+<li><p>No real solutions</p></li>
+</ol>
 </div>
 
 
