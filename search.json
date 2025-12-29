@@ -673,7 +673,7 @@
     "href": "chapters/Unit_6/6.4_Completing_the_Square.html",
     "title": "6.4 - Completing the Square",
     "section": "",
-    "text": "🔥 Warm-Up\nIn the last lesson, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.\nBut not all quadratic equations factor using integers.\nFor example,\n\\[\nx^2 + 6x + 5 = 0\n\\]\nfactors easily, while\n\\[\nx^2 + 6x + 2 = 0\n\\]\ndoes not.\nBoth parabolas cross the x-axis twice, so both equations have two solutions. We can find the solutions to the first equation by factoring:\n\\[\n\\begin{align*}\nx^2 + 6x + 5 &= 0 \\\\\n(x + 5)(x + 1) &= 0\n\\end{align*}\n\\]\nThis gives the solutions \\(x = -5\\) and \\(x = -1\\).\nBut factoring does not work for the second equation. We need a method that works every time, even when factoring fails.\nIn this lesson, we will learn a method called completing the square. This method always works for quadratic equations. Even more importantly, it leads directly to one of the most important formulas in algebra: the quadratic formula.\nWarm-Up",
+    "text": "🔥 Warm-Up\nIn the last lesson, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.\nBut not all quadratic equations factor using integers.\nFor example,\n\\[\nx^2 + 6x + 5 = 0\n\\]\nfactors easily, while\n\\[\nx^2 + 6x + 2 = 0\n\\]\ndoes not.\nBoth parabolas cross the \\(x\\)-axis twice, so both equations have two solutions. We can find the solutions to the first equation by factoring:\n\\[\n\\begin{align*}\nx^2 + 6x + 5 &= 0 \\\\\n(x + 5)(x + 1) &= 0\n\\end{align*}\n\\]\nThis gives the solutions \\(x = -5\\) and \\(x = -1\\).\nBut factoring does not work for the second equation. We need a method that works every time, even when factoring fails.\nIn this lesson, we will learn a method called completing the square. This method always works for quadratic equations. What’s more, it leads directly to one of the most important formulas in algebra: the quadratic formula.\nWarm-Up",
     "crumbs": [
       "Unit 6: Quadratic Equations & Functions",
       "6.4 - Completing the Square"
@@ -684,7 +684,7 @@
     "href": "chapters/Unit_6/6.5_The_Quadratic_Formula.html",
     "title": "6.5 - The Quadratic Formula",
     "section": "",
-    "text": "🔥 Warm-Up\nComing Soon",
+    "text": "🔥 Warm-Up\nBy now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.\nBut not all quadratic equations cooperate.\nIn this lesson, we will develop a general method that works for every quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the quadratic formula.",
     "crumbs": [
       "Unit 6: Quadratic Equations & Functions",
       "6.5 - The Quadratic Formula"
@@ -926,7 +926,7 @@
     "href": "chapters/Supplemental/challenge_solutions.html#unit-6---quadratic-equations-functions",
     "title": "Challenge Problem Solutions",
     "section": "Unit 6 - Quadratic Equations & Functions",
-    "text": "Unit 6 - Quadratic Equations & Functions\n\n6.1 - Introduction to Quadratic Functions\n\n\nexample: \\(y = (x - a)^2 + b\\), axis \\(x = a\\)\nexample vertex \\((3, 4)\\); example equation: \\(y = -(x - 3)^2 + 4\\)\n\n\n\n\n6.2 - Graphing Quadratics\n\n\n\\(a &gt; 0\\) and \\(k &gt; 0\\)\nExample points given to show solution set.\n\n\n\n\n\n\n\n\n\n6.3 - Solving Quadratic Equations by Factoring\n\n\n\\(x = -\\tfrac{1}{2}\\)\n\\(y = x^2 - 5x + 4\\)",
+    "text": "Unit 6 - Quadratic Equations & Functions\n\n6.1 - Introduction to Quadratic Functions\n\n\nexample: \\(y = (x - a)^2 + b\\), axis \\(x = a\\)\nexample vertex \\((3, 4)\\); example equation: \\(y = -(x - 3)^2 + 4\\)\n\n\n\n\n6.2 - Graphing Quadratics\n\n\n\\(a &gt; 0\\) and \\(k &gt; 0\\)\nExample points given to show solution set.\n\n\n\n\n\n\n\n\n\n6.3 - Solving Quadratic Equations by Factoring\n\n\n\\(x = -\\tfrac{1}{2}\\)\n\\(y = x^2 - 5x + 4\\)\n\n\n\n\n6.4 - Completing the Square\n\n\n\\(b=8\\) or \\(b=-8\\)\n\\(b=6\\) or \\(b=-6\\)",
     "crumbs": [
       "Supplemental",
       "Challenge Problem Solutions"

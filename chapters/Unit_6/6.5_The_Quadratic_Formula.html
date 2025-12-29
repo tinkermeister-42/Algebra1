@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -611,9 +640,10 @@ window.MathJax = {
   <li>🔥 Warm-Up</li>
   <li>👥 Learn Together
   <ul class="collapse">
-  <li><a href="#using-the-quadratic-formula" id="toc-using-the-quadratic-formula" class="nav-link active" data-scroll-target="#using-the-quadratic-formula">6.5.1 - Using the Quadratic Formula</a></li>
-  <li><a href="#understanding-the-discriminant" id="toc-understanding-the-discriminant" class="nav-link" data-scroll-target="#understanding-the-discriminant">6.5.2 - Understanding the Discriminant</a></li>
-  <li><a href="#choosing-a-method" id="toc-choosing-a-method" class="nav-link" data-scroll-target="#choosing-a-method">6.5.3 - Choosing a Method</a></li>
+  <li><a href="#deriving-the-quadratic-formula" id="toc-deriving-the-quadratic-formula" class="nav-link active" data-scroll-target="#deriving-the-quadratic-formula">6.5.1 - Deriving the Quadratic Formula</a></li>
+  <li><a href="#solving-equations-with-the-quadratic-formula" id="toc-solving-equations-with-the-quadratic-formula" class="nav-link" data-scroll-target="#solving-equations-with-the-quadratic-formula">6.5.2 - Solving Equations with the Quadratic Formula</a></li>
+  <li><a href="#understanding-the-discriminant" id="toc-understanding-the-discriminant" class="nav-link" data-scroll-target="#understanding-the-discriminant">6.5.3 - Understanding the Discriminant</a></li>
+  <li><a href="#choosing-a-method" id="toc-choosing-a-method" class="nav-link" data-scroll-target="#choosing-a-method">6.5.4 - Choosing a Method</a></li>
   </ul></li>
   <li>✍️ Practice On Your Own</li>
   </ul>
@@ -641,7 +671,9 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>By now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.</p>
+<p>But not all quadratic equations cooperate.</p>
+<p>In this lesson, we will develop a <strong>general method</strong> that works for <em>every</em> quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the <strong>quadratic formula</strong>.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can use the quadratic formula to solve any quadratic.</label></li>
@@ -650,24 +682,243 @@ window.MathJax = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="term" data-original-href="#glossary-term" data-term="term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-term="completing the square" data-slug="completing-the-square" data-original-href="#glossary-completing-the-square">completing the square</a>, <a href="" class="glossary-link" data-term="discriminant" data-slug="discriminant" data-original-href="#glossary-discriminant">discriminant</a>, <a href="" class="glossary-link" data-term="quadratic formula" data-slug="quadratic-formula" data-original-href="#glossary-quadratic-formula">quadratic formula</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
 </section>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
-<section id="using-the-quadratic-formula" class="level3">
-<h3 class="anchored" data-anchor-id="using-the-quadratic-formula">6.5.1 - Using the Quadratic Formula</h3>
-<p>Plug-in approach, checking simplification</p>
+<section id="deriving-the-quadratic-formula" class="level3">
+<h3 class="anchored" data-anchor-id="deriving-the-quadratic-formula">6.5.1 - Deriving the Quadratic Formula</h3>
+<p>Suppose we want to solve a quadratic equation, but we do not know anything special about it.</p>
+<ul>
+<li>It might not factor.<br>
+</li>
+<li>It might not be set up nicely for square roots.</li>
+</ul>
+<p>The most general quadratic equation we can write is:</p>
+<p><span class="math display">\[
+ax^2 + bx + c = 0, \quad a \neq 0
+\]</span></p>
+<p>This equation represents every quadratic written in standard form. If we can solve this equation, then we can solve any quadratic.</p>
+<p>As in the previous lesson, we begin by making the coefficient of <span class="math inline">\(x^2\)</span> equal to <span class="math inline">\(1\)</span> by dividing both sides by <span class="math inline">\(a\)</span>:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+\]</span></p>
+<p>Next, we move the constant term to the other side:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x = -\frac{c}{a}
+\]</span></p>
+<p>At this point, we complete the square in the same way we did in Lesson 6.4. We split the middle term into two equal pieces and use an area model:</p>
+<p><span class="math display">\[
+\frac{b}{a}x = \frac{b}{2a}x + \frac{b}{2a}x
+\]</span></p>
+<div class="areabox">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(\dfrac{b}{2a}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(x^2\)</span></td>
+<td><span class="math inline">\(\dfrac{b}{2a}x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(\dfrac{b}{2a}\)</span></td>
+<td><span class="math inline">\(\dfrac{b}{2a}x\)</span></td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The missing corner is:</p>
+<p><span class="math display">\[
+\left(\frac{b}{2a}\right)\left(\frac{b}{2a}\right) = \frac{b^2}{4a^2}
+\]</span></p>
+<p>Adding this value to both sides gives:</p>
+<p><span class="math display">\[
+x^2 + \frac{b}{a}x + \frac{b^2}{4a^2}
+=
+-\frac{c}{a} + \frac{b^2}{4a^2}
+\]</span></p>
+<p>The left side is now a perfect square:</p>
+<p><span class="math display">\[
+\left(x + \frac{b}{2a}\right)^2
+\]</span></p>
+<p>Combining terms on the right side leads to:</p>
+<p><span class="math display">\[
+\left(x + \frac{b}{2a}\right)^2
+=
+\frac{b^2 - 4ac}{4a^2}
+\]</span></p>
+<p>Taking square roots:</p>
+<p><span class="math display">\[
+x + \frac{b}{2a}
+=
+\pm \frac{\sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<p>Finally, subtracting <span class="math inline">\(\frac{b}{2a}\)</span> from both sides gives:</p>
+<p><span class="math display">\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<p>This expression gives the solution to the equation <span class="math inline">\(ax^2 + bx + c = 0\)</span>.</p>
+<p>Rather than repeating this completing-the-square process every time we solve a quadratic, we record the result as a single formula.</p>
+<p>This formula is called the <strong>quadratic formula</strong>, and it works for <strong>every</strong> quadratic equation.</p>
+<hr>
+</section>
+<section id="solving-equations-with-the-quadratic-formula" class="level3">
+<h3 class="anchored" data-anchor-id="solving-equations-with-the-quadratic-formula">6.5.2 - Solving Equations with the Quadratic Formula</h3>
+<p>Once the quadratic formula has been derived, using it is a <strong>consistent, mechanical process</strong>.</p>
+<p>For an equation written in standard form,</p>
+<p><span class="math display">\[
+ax^2 + bx + c = 0
+\]</span></p>
+<p>the solutions are:</p>
+<p><span class="math display">\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<p>The key steps are always the same:</p>
+<ol type="1">
+<li>Identify <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span></li>
+<li>Substitute carefully</li>
+<li>Simplify step by step</li>
+</ol>
+<hr>
+<p><strong>Example 1</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+x^2 + 3x + 1 = 0
+\]</span></p>
+<p>Identify coefficients:</p>
+<p><span class="math display">\[
+a = 1, \quad b = 3, \quad c = 1
+\]</span></p>
+<p>Substitute:</p>
+<p><span class="math display">\[
+x = \frac{-3 \pm \sqrt{9 - 4}}{2}
+\]</span></p>
+<p><span class="math display">\[
+x = \frac{-3 \pm \sqrt{5}}{2}
+\]</span></p>
+<p>This equation does not factor, but the quadratic formula still gives exact solutions.</p>
+<hr>
+<p><strong>Example 2</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+2x^2 - 5x + 2 = 0
+\]</span></p>
+<p><span class="math display">\[
+a = 2, \quad b = -5, \quad c = 2
+\]</span></p>
+<p><span class="math display">\[
+x = \frac{5 \pm \sqrt{25 - 16}}{4}
+\]</span></p>
+<p><span class="math display">\[
+x = \frac{5 \pm 3}{4}
+\]</span></p>
+<p>So the solutions are:</p>
+<p><span class="math display">\[
+x = 2 \quad \text{and} \quad x = \frac{1}{2}
+\]</span></p>
+<hr>
+<p><strong>Example 3</strong></p>
+<p>Solve:</p>
+<p><span class="math display">\[
+3x^2 + 4x + 7 = 0
+\]</span></p>
+<p><span class="math display">\[
+a = 3, \quad b = 4, \quad c = 7
+\]</span></p>
+<p><span class="math display">\[
+x = \frac{-4 \pm \sqrt{16 - 84}}{6}
+\]</span></p>
+<p><span class="math display">\[
+x = \frac{-4 \pm \sqrt{-68}}{6}
+\]</span></p>
+<p>Since the square root is not real, this equation has <strong>no real solutions</strong>.</p>
+<hr>
 </section>
 <section id="understanding-the-discriminant" class="level3">
-<h3 class="anchored" data-anchor-id="understanding-the-discriminant">6.5.2 - Understanding the Discriminant</h3>
-<p>Positive/zero/negative -&gt; two/one/none</p>
+<h3 class="anchored" data-anchor-id="understanding-the-discriminant">6.5.3 - Understanding the Discriminant</h3>
+<p>The expression under the square root in the quadratic formula,</p>
+<p><span class="math display">\[
+b^2 - 4ac
+\]</span></p>
+<p>is called the <strong>discriminant</strong>.</p>
+<p>The discriminant tells us <strong>what kind of solutions</strong> a quadratic equation has <em>before</em> we finish solving.</p>
+<p>This happens because:</p>
+<ul>
+<li>the square root of a positive number is real</li>
+<li>the square root of zero is zero</li>
+<li>the square root of a negative number is not real</li>
+</ul>
+<hr>
+<section id="what-the-discriminant-tells-us" class="level4">
+<h4 class="anchored" data-anchor-id="what-the-discriminant-tells-us">What the Discriminant Tells Us</h4>
+<ul>
+<li><p><strong>If <span class="math inline">\(b^2 - 4ac &gt; 0\)</span></strong> There are <strong>two real solutions</strong></p></li>
+<li><p><strong>If <span class="math inline">\(b^2 - 4ac = 0\)</span></strong> There is <strong>one real solution</strong></p></li>
+<li><p><strong>If <span class="math inline">\(b^2 - 4ac &lt; 0\)</span></strong> There are <strong>no real solutions</strong></p></li>
+</ul>
+<p>These cases match what we see on the graph of a parabola.</p>
+<hr>
+<p><strong>Example A: Two Solutions</strong></p>
+<p><em>(Placeholder image: upward-opening parabola crossing the <span class="math inline">\(x\)</span>-axis twice)</em></p>
+<p>This parabola intersects the <span class="math inline">\(x\)</span>-axis at two points. The discriminant is positive, so the quadratic has <strong>two real solutions</strong>.</p>
+<hr>
+<p><strong>Example B: One Solution</strong></p>
+<p><em>(Placeholder image: parabola tangent to the <span class="math inline">\(x\)</span>-axis at the vertex)</em></p>
+<p>This parabola touches the <span class="math inline">\(x\)</span>-axis exactly once. The discriminant is zero, so the quadratic has <strong>one real solution</strong>.</p>
+<hr>
+<p><strong>Example C: No Solutions</strong></p>
+<p><em>(Placeholder image: parabola that does not intersect the <span class="math inline">\(x\)</span>-axis)</em></p>
+<p>This parabola never crosses the <span class="math inline">\(x\)</span>-axis. The discriminant is negative, so the quadratic has <strong>no real solutions</strong>.</p>
+<hr>
+</section>
 </section>
 <section id="choosing-a-method" class="level3">
-<h3 class="anchored" data-anchor-id="choosing-a-method">6.5.3 - Choosing a Method</h3>
-<p>When factoring is quick vs when formula is best</p>
+<h3 class="anchored" data-anchor-id="choosing-a-method">6.5.4 - Choosing a Method</h3>
+<p>There are several ways to solve quadratic equations. Choosing the right method can save time and reduce errors.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>When It Works Best</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Factoring</td>
+<td>The quadratic factors quickly and cleanly</td>
+</tr>
+<tr class="even">
+<td>Completing the square</td>
+<td>You want vertex form or to understand structure</td>
+</tr>
+<tr class="odd">
+<td>Quadratic formula</td>
+<td>Factoring is difficult or impossible</td>
+</tr>
+</tbody>
+</table>
+<p>The quadratic formula:</p>
+<ul>
+<li>works for every quadratic</li>
+<li>does not depend on guessing factors</li>
+<li>gives exact solutions when factoring fails</li>
+</ul>
+<p>If you are unsure which method to use, the quadratic formula is always a reliable choice.</p>
+<hr>
 </section>
 </section>
 <section class="level2 pagebreak-before">
