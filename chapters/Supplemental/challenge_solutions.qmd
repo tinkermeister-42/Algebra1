@@ -487,3 +487,13 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 34. $y = x^2 - 5x + 4$
 
 :::
+
+### 6.4 - Completing the Square
+
+:::{.answers}
+
+24. $b=8$ or $b=-8$
+
+25. $b=6$ or $b=-6$
+
+:::

@@ -20,7 +20,7 @@ does not.
 
 ![](/images/Unit_6/Lesson_4/IntroExample.png){width="400px" fig-align="center"}
 
-Both parabolas cross the x-axis twice, so both equations have two solutions.
+Both parabolas cross the $x$-axis twice, so both equations have two solutions.
 We can find the solutions to the first equation by factoring:
 
 $$
@@ -34,32 +34,30 @@ This gives the solutions $x = -5$ and $x = -1$.
 
 But factoring does not work for the second equation. We need a method that works **every time**, even when factoring fails.
 
-In this lesson, we will learn a method called **completing the square**. This method always works for quadratic equations. Even more importantly, it leads directly to one of the most important formulas in algebra: the **quadratic formula**.
+In this lesson, we will learn a method called **completing the square**. This method always works for quadratic equations. What's more, it leads directly to one of the most important formulas in algebra: the **quadratic formula**.
 
 ---
 
 :::{.objectives}
-
 - [ ] I can rewrite $x^2 + bx$ as a perfect square.
+- [ ] I can solve quadratic equations by completing the square.
 - [ ] I can solve equations of the form $(x - h)^2 = k$.
-- [ ] I can explain why completing the square leads to the quadratic formula.
-
 :::
 
 :::{.vocab}
-{{< glink "completing the square" >}}, {{< glink "perfect square" >}}, {{< glink "quadratic formula" >}}, {{< glink "square root" >}}
+{{< glink "completing the square" >}}, {{< glink "perfect square" >}}, {{< glink "square root" >}}
 :::
 
 {{< warmup >}}
 
 **Warm-Up**
 
-1. Expand the expression:
+1. Expand:
    $$
    (x + 4)^2
    $$
 
-2. Expand the expression:
+2. Expand:
    $$
    (x - 5)^2
    $$
@@ -68,54 +66,72 @@ In this lesson, we will learn a method called **completing the square**. This me
 
 {{< learn >}}
 
----
-
 ### 6.4.1 - Turning $x^2 + bx$ into a Perfect Square
 
-From the warm-up, we can see a pattern:
+In Unit 5, we learned how to recognize and factor **perfect square trinomials**.
+
+Those trinomials always come from squaring a binomial:
 
 $$
-(x + a)^2 = x^2 + 2ax + a^2.
+(x + a)^2 = x^2 + 2ax + a^2
 $$
 
-The middle term is always **twice** the number inside the parentheses.
+Completing the square is the reverse idea.
 
-Completing the square works by reversing this pattern.
+Instead of starting with a square and expanding it, we start with part of the expression and figure out what is missing to make a square.
+
+One way to see this clearly is to use an **area model**, just like we did when factoring.
 
 ---
 
-**Example 1:** Completing the square
+**Example 1:** Completing the Square with an Area Model
 
-Rewrite:
+Let’s start with the expression:
 
 $$
 x^2 + 10x
 $$
 
-Half of the middle term is
+Our goal is to turn this into a **perfect square trinomial**, which comes from squaring a binomial. 
+
+That means there is only **one** binomial factor, used twice.
+
+So the two terms on the diagonal of the area model must be the **same**.
+
+To make that happen, the middle term must be split evenly:
 
 $$
-\frac{10}{2} = 5.
+10x = 5x + 5x
 $$
 
-So we start with
+:::{.areabox}
+|        | $x$   | $5$   |
+| -----: | ----- | ----- |
+| $x$    | $x^2$ | $5x$  |
+| $5$    | $5x$  | ?     |
+:::
+
+Only one piece is missing.
+To complete the square, that piece must be:
 
 $$
-(x + 5)^2.
+5 \times 5 = 25
 $$
 
-But
+:::{.areabox}
+|        | $x$   | $5$   |
+| -----: | ----- | ----- |
+| $x$    | $x^2$ | $5x$  |
+| $5$    | $5x$  | $25$  |
+:::
+
+Now we have a perfect square, but it is **not the original expression**.
+We added $25$ to create the square.
+
+To keep the value the same, we must subtract that $25$ back out:
 
 $$
-(x + 5)^2 = x^2 + 10x + 25,
-$$
-
-which is $25$ larger than the original expression.
-
-To correct this, we subtract $25$:
-
-$$
-x^2 + 10x = (x + 5)^2 - 25.
+x^2 + 10x = (x + 5)^2 - 25
 $$
 
 ---
@@ -125,96 +141,95 @@ $$
 Rewrite:
 
 $$
-x^2 - 6x.
+x^2 - 6x
 $$
 
-Half of $-6$ is $-3$:
+Split the middle term:
 
 $$
-(x - 3)^2 = x^2 - 6x + 9.
+-6x = -3x - 3x
 $$
+
+:::{.areabox}
+|        | $x$    | $-3$   |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  | $-3x$  |
+| $-3$   | $-3x$  | $9$    |
+:::
 
 So,
 
 $$
-x^2 - 6x = (x - 3)^2 - 9.
+x^2 - 6x = (x - 3)^2 - 9
 $$
 
 ---
 
 **Example 3:** A fractional middle term
 
+Instead of drawing the full area model, we can apply the same idea algebraically.
+
 Rewrite:
 
 $$
-x^2 + 3x.
+x^2 + 3x
 $$
 
 Half of $3$ is $\tfrac{3}{2}$:
 
 $$
-(x + \tfrac{3}{2})^2 = x^2 + 3x + \tfrac{9}{4}.
+x^2 + 3x = (x + \tfrac{3}{2})^2 - \tfrac{9}{4}
 $$
-
-So,
-
-$$
-x^2 + 3x = (x + \tfrac{3}{2})^2 - \tfrac{9}{4}.
-$$
-
-This process works every time.
 
 ---
 
 :::{.you-try title="Rewrite $x^2 + 8x$ as a perfect square plus or minus a number."}
-
 $$
 x^2 + 8x = (x + 4)^2 - 16
 $$
-
 :::
 
 ---
 
-### 6.4.2 - Completing the Square When the Leading Coefficient Is Not 1
+### 6.4.2 - Completing the Square When $a \ne 1$
 
-If the coefficient of $x^2$ is not $1$, the pattern will not work until we fix that.
-
----
-
-**Step 1:** Factor out the leading coefficient
-
-$$
-2x^2 + 8x = 2(x^2 + 4x).
-$$
+Completing the square works best when the coefficient of $x^2$ is $1$.
+If it is not, we fix that first.
 
 ---
 
-**Step 2:** Complete the square inside the parentheses
+**Example 4:** Completing the square when $a \ne 1$
+
+Rewrite:
 
 $$
-x^2 + 4x = (x + 2)^2 - 4.
+3x^2 + 12x
+$$
+
+First, factor out the leading coefficient:
+
+$$
+3(x^2 + 4x)
+$$
+
+Complete the square inside the parentheses:
+
+$$
+x^2 + 4x = (x + 2)^2 - 4
 $$
 
 Substitute back:
 
 $$
-2(x + 2)^2 - 8.
+3((x + 2)^2 - 4)
 $$
 
----
-
-**Example 4:** Completing the square with a leading coefficient
-
-Rewrite:
+Simplify:
 
 $$
-3x^2 + 12x.
+3(x + 2)^2 - 12
 $$
 
-$$
-3(x^2 + 4x) = 3\big((x + 2)^2 - 4\big) = 3(x + 2)^2 - 12.
-$$
 
 ---
 
@@ -223,8 +238,10 @@ $$
 Rewrite by completing the square:
 
 $$
-2x^2 + 8x + 3 = 0.
+2x^2 + 8x + 3 = 0
 $$
+
+First, factor out the leading coefficient and isolate the $x$ terms:
 
 $$
 \begin{align*}
@@ -234,294 +251,349 @@ x^2 + 4x &= -\tfrac{3}{2}
 \end{align*}
 $$
 
-Complete the square:
+Now complete the square for $x^2 + 4x$ using an area model.
+
+Split the middle term evenly:
 
 $$
-(x + 2)^2 = \tfrac{5}{2}.
+4x = 2x + 2x
 $$
 
-We will solve this equation in the next section.
-
----
-
-### 6.4.3 - Solving by Taking Square Roots
-
-Once an equation is written in the form
-
-$$
-(x - h)^2 = k,
-$$
-
-we solve it by taking {{< glink slug="square root" text="square roots" >}}.
-
----
-
-**Example 6:** Solving after completing the square
-
-Let's solve the equation from Example 5.
-
-$$
-(x + 2)^2 = \tfrac{5}{2}
-$$
-
-Take the square root of both sides and solve.
-
-$$
-\begin{align*}
-x + 2 &= \pm \sqrt{\tfrac{5}{2}} \\
-x &= -2 \pm \sqrt{\tfrac{5}{2}} 
-\end{align*}
-$$
-
-
-:::{.note title="Why do we use $\pm$?"}
-
-The square root asks what number, multiplied by itself, gives the number under the square root. Take $\sqrt{25}$ as a simple example.
-
-There are actually **two** numbers that satisfy the square root 
-
-$$
-5^2 = 25 \quad \text{and} \quad (-5)^2 = 25
-$$
-
-So when we undo a square, we must include **both possibilities**.
-
+:::{.areabox}
+|        | $x$   | $2$   |
+| -----: | ----- | ----- |
+| $x$    | $x^2$ | $2x$  |
+| $2$    | $2x$  | ?     |
 :::
 
----
-
-**Example 7:** No real solutions
-
-Solve:
+The missing corner must be:
 
 $$
-(x + 1)^2 = -6.
+2 \times 2 = 4
 $$
 
-The left side of the equation is a square.
-That means it represents a number multiplied by itself.
-
-For any real number, a square is **never negative**.
-
-But the right side of the equation is $-6$, which is negative.
-
-Since no real number squared can equal $-6$, there is **no real value of $x$** that makes this equation true.
-
-So this equation has **no real solutions**.
-
----
-
-
-:::{.you-try title="Solve $(x - 5)^2 = 9$."}
+So we add $4$ to both sides of the equation:
 
 $$
-x = 8 \quad \text{or} \quad x = 2
-$$
-
-:::
-
----
-
-### 6.4.4 - Deriving the Quadratic Formula
-
-This is the most important result of this lesson.
-
-We are going to solve **any quadratic equation**, using the same steps we have already practiced.
-
-Start with the general quadratic equation:
-
-$$
-ax^2 + bx + c = 0, \qquad a \neq 0.
-$$
-
----
-
-**Step 1:** Make the coefficient of $x^2$ equal to 1
-
-To complete the square, the coefficient of $x^2$ must be $1$.
-So we divide **every term** by $a$:
-
-$$
-x^2 + \frac{b}{a}x + \frac{c}{a} = 0.
-$$
-
----
-
-**Step 2:** Move the constant term
-
-We want only the $x$ terms on the left side:
-
-$$
-x^2 + \frac{b}{a}x = -\frac{c}{a}.
-$$
-
----
-
-**Step 3:** Complete the square
-
-Just like before, we take **half of the coefficient of $x$** and square it.
-
-Half of $\frac{b}{a}$ is $\frac{b}{2a}$, so we add
-
-$$
-\left(\frac{b}{2a}\right)^2
-$$
-
-to **both sides** of the equation:
-
-$$
-x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2
-=
--\frac{c}{a} + \left(\frac{b}{2a}\right)^2.
+x^2 + 4x + 4 = -\tfrac{3}{2} + 4
 $$
 
 Now the left side is a perfect square:
 
 $$
-\left(x + \frac{b}{2a}\right)^2
-=
-\frac{b^2 - 4ac}{4a^2}.
+(x + 2)^2 = \tfrac{5}{2}
 $$
 
-At this point, the equation has the same form we solved earlier:
+
+---
+
+### 6.4.3 - Solving by Taking Square Roots
+
+The reason we complete the square is not just to rewrite expressions.
+We do it because it puts a quadratic equation into a form that is **easy to solve**.
+
+Once an equation is written as
 
 $$
-(x - h)^2 = k.
+(x - h)^2 = k
+$$
+
+we can solve it by taking {{< glink slug="square root" text="square roots" >}} of both sides.
+
+---
+
+**Example 6:** Solving by taking square roots
+
+Solve:
+
+$$
+(x + 2)^2 = \tfrac{5}{2}
+$$
+
+Take the square root of both sides:
+
+$$
+\begin{align*}
+x + 2 &= \pm \sqrt{\tfrac{5}{2}} \\
+x &= -2 \pm \sqrt{\tfrac{5}{2}}
+\end{align*}
+$$
+
+:::{.note title="Why do we use $\pm$?"}
+When we undo a square, we must include both possibilities.
+
+For example,
+
+$$
+5^2 = 25 \quad \text{and} \quad (-5)^2 = 25
+$$
+
+Both values square to the same result, so both must be included when taking a square root.
+:::
+
+---
+
+**Example 7:** Solving by completing the square
+
+Solve:
+
+$$
+x^2 + 4x - 1 = 0
+$$
+
+First, isolate the $x$ terms:
+
+$$
+x^2 + 4x = 1
+$$
+
+Now complete the square for $x^2 + 4x$ using an area model.
+
+Split the middle term evenly:
+
+$$
+4x = 2x + 2x
+$$
+
+:::{.areabox}
+|        | $x$   | $2$   |
+| -----: | ----- | ----- |
+| $x$    | $x^2$ | $2x$  |
+| $2$    | $2x$  | ?     |
+:::
+
+The missing corner must be:
+
+$$
+2 \times 2 = 4
+$$
+
+Add $4$ to both sides of the equation:
+
+$$
+x^2 + 4x + 4 = 1 + 4
+$$
+
+Now the left side is a perfect square:
+
+$$
+(x + 2)^2 = 5
+$$
+
+Take the square root of both sides:
+
+$$
+\begin{align*}
+x + 2 &= \pm \sqrt{5} \\
+x &= -2 \pm \sqrt{5}
+\end{align*}
 $$
 
 ---
 
-**Step 4:** Take square roots
+**Example 8:** No real solutions
 
-To undo the square, we take the square root of **both sides**.
-Remember, this always introduces $\pm$:
+Solve:
 
 $$
-x + \frac{b}{2a}
-=
-\pm \frac{\sqrt{b^2 - 4ac}}{2a}.
+(x + 1)^2 = -6
 $$
+
+We would normally solve this by taking the square root of both sides:
+
+$$
+x + 1 = \pm \sqrt{-6}
+$$
+
+But $\sqrt{-6}$ is not a real number.
+
+A square represents a real number multiplied by itself, and any real number squared is **zero or positive**.
+
+Since $-6$ is negative, there is no real number whose square equals $-6$.
+
+So this equation has **no real solutions**.
 
 ---
 
-**Step 5:** Solve for $x$
-
-Subtract $\frac{b}{2a}$ from both sides:
+:::{.you-try title="Solve $x^2 - 10x + 16 = 0$ by completing the square."}
+Solve by completing the square:
 
 $$
-x
-=
-\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+x^2 - 10x + 16 = 0
 $$
 
----
+Move the constant:
 
-> **This is the quadratic formula.**
+$$
+x^2 - 10x = -16
+$$
 
-It is not a new idea.  
-It is the result of completing the square on **every possible quadratic equation**.
+Split the middle term:
 
-That means:
+$$
+-10x = -5x - 5x
+$$
 
-- it works even when factoring fails
-- it explains why some quadratics have two solutions, one solution, or no real solutions
-- it is the most powerful method we have for solving quadratic equations
+:::{.areabox}
+|        | $x$    | $-5$   |
+| -----: | ------ | ------ |
+| $x$    | $x^2$  | $-5x$  |
+| $-5$   | $-5x$  | ?      |
+:::
 
-In the next lesson, we will focus entirely on **using** this formula.
+Fill the missing corner:
+
+$$
+(-5)(-5) = 25
+$$
+
+Add $25$ to both sides:
+
+$$
+x^2 - 10x + 25 = -16 + 25
+$$
+
+Rewrite and solve:
+
+$$
+\begin{align*}
+(x - 5)^2 &= 9 \\
+x - 5 &= \pm 3 \\
+x &= 8 \quad \text{or} \quad x = 2
+\end{align*}
+$$
+
+:::
+
 
 {{< practice >}}
 
 **Conceptual Questions**
 
-1. Why do we take half of the middle term when completing the square?
-   
-2. Why must we add the same number to both sides of an equation?
-   
-3. Why does taking a square root require using $\pm$?
-   
-4. What does it mean if $(x - h)^2 = k$ has no real solution?
-   
-5. Why does completing the square guarantee the quadratic formula works for every quadratic?
+1. What does it mean for a trinomial to be a **perfect square**?
+
+2. When completing the square, why must the middle term be split into two equal parts?
+
+3. In the area model, what does the missing corner represent?
+
+4. Why do we subtract the number we add when completing the square?
+
+5. Without solving, what can you say about the solutions of  
+   $$
+   (x - h)^2 = k
+   $$
+   when $k > 0$, $k = 0$, and $k < 0$?
+
 
 ---
 
-**Solve by Completing the Square**
+**Rewrite as a perfect square**
 
-6. $x^2 + 6x = 0$  
-   
-7. $x^2 - 8x = 0$  
-   
-8. $x^2 + 5x = 0$  
-   
-9.  $(x - 3)^2 = 25$  
-    
-10. $(x + 2)^2 = 7$  
-    
-11. $x^2 + 6x + 5 = 0$  
-    
-12. $x^2 + 6x + 2 = 0$  
-    
-13. $x^2 - 4x - 1 = 0$  
-    
-14. $x^2 + 10x + 9 = 0$  
-    
-15. $x^2 + 10x + 30 = 0$  
-    
-16. $x^2 + 8x + 1 = 0$  
-    
-17. $x^2 - 2x + 6 = 0$  
-    
-18. $x^2 + 12x + 36 = 0$  
-    
-19. $2x^2 + 8x + 3 = 0$  
-    
-20. $x^2 - 7x + 1 = 0$  
-    
-21. $x^2 + 4x = 5$  
-    
-22. $x^2 - 6x = 2$  
-    
-23. $x^2 + 2x = 3$  
-    
-24. $x^2 - 10x = -9$  
-    
-25. $x^2 + 1 = 0$  
+6. $x^2 + 6x$
+
+7. $x^2 - 8x$
+
+8. $x^2 + 5x$
+
+9. $x^2 + 10x$
+
+---
+
+**Solve by taking square roots**
+
+10. $(x - 3)^2 = 25$
+
+11. $(x + 2)^2 = 7$
+
+12. $(x - 5)^2 = 0$
+
+13. $(x + 1)^2 = -6$
+
+---
+
+**Solve by completing the square**
+
+14. $x^2 + 6x + 5 = 0$
+
+15. $x^2 + 6x + 2 = 0$
+
+16. $x^2 - 4x - 1 = 0$
+
+17. $x^2 + 10x + 9 = 0$
+
+18. $x^2 + 10x + 30 = 0$
+
+---
+
+**Solve by completing the square ($a \ne 1$)**
+
+19. $2x^2 + 8x + 3 = 0$
+
+20. $3x^2 + 12x = 0$
+
+21. $2x^2 - 4x + 1 = 0$
+
+22. $3x^2 + 6x + 1 = 0$
+
+23. $4x^2 - 12x + 5 = 0$
 
 ---
 
 **Challenge Problems**
 
-26. $3x^2 + 12x + 7 = 0$  
+24. A quadratic expression is completed to the square and rewritten as  
+    $$
+    (x + k)^2 - 16
+    $$
+
+    for some real number $k$.
+
+    Originally, the expression had the form
+    $$
+    x^2 + bx.
+    $$
+
+    Find the value of $b$ and explain how you know, **without expanding** $(x + k)^2$.
+
+---
+
+25. Consider the equation
     
-27. Explain why completing the square must always lead to the quadratic formula.
+    $$
+    x^2 + bx + 9 = 0.
+    $$
+
+    For what value of $b$ does this equation have **exactly one real solution**?
+
+    Solve the problem by completing the square and explain why your answer makes sense.
 
 :::{.answers}
+1. It means the trinomial comes from squaring one binomial, so it can be written as $(x \pm a)^2$.
+2. Because a perfect square is one binomial times itself, so the two linear pieces must match, which forces an even split.
+3. The term that must be added to make the expression a perfect square trinomial.
+4. Because we added that term to create the square, so we subtract it back out to keep the value the same.
+5. If $k>0$ there are two real solutions, if $k=0$ there is one real solution, if $k<0$ there are no real solutions.
 
-1. Because the middle term in $(x+a)^2$ is always $2ax$, so half of $b$ tells us the value of $a$.
-2. To keep the equation balanced so the solution does not change.
-3. Because both a positive and a negative number square to the same value.
-4. It means no real number can satisfy the equation.
-5. Because completing the square works for any values of $a$, $b$, and $c$.
+6. $(x+3)^2 - 9$
+7. $(x-4)^2 - 16$
+8. $(x+\tfrac{5}{2})^2 - \tfrac{25}{4}$
+9. $(x+5)^2 - 25$
 
-6. $(x+3)^2 - 9$  
-7. $(x-4)^2 - 16$  
-8. $(x+\tfrac{5}{2})^2 - \tfrac{25}{4}$  
-9. $x = 8, 2$  
-10. $x = -2 \pm \sqrt{7}$  
-11. $x = -1, -5$  
-12. $x = -3 \pm \sqrt{7}$  
-13. $x = 2 \pm \sqrt{5}$  
-14. $x = -1, -9$  
-15. No real solutions  
-16. $x = -4 \pm \sqrt{15}$  
-17. No real solutions  
-18. $x = -6$  
-19. $x = -2 \pm \tfrac{\sqrt{10}}{2}$  
-20. $x = \tfrac{7 \pm \sqrt{45}}{2}$  
-21. $x = -2 \pm 3$  
-22. $x = 3 \pm \sqrt{7}$  
-23. $x = -1 \pm \sqrt{4}$  
-24. $x = 1, 9$  
-25. No real solutions  
+10. $x=8,\,-2$
+11. $x=-2 \pm \sqrt{7}$
+12. $x=5$
+13. No real solutions
 
+14. $x=-1,\,-5$
+15. $x=-3 \pm \sqrt{7}$
+16. $x=2 \pm \sqrt{5}$
+17. $x=-1,\,-9$
+18. No real solutions
+
+19. $x=-2 \pm \sqrt{\tfrac{5}{2}}$
+20. $x=0,\,-4$
+21. $x=1 \pm \sqrt{\tfrac{1}{2}}$
+22. $x=-1 \pm \sqrt{\tfrac{2}{3}}$
+23. $x=\tfrac{1}{2},\,\tfrac{5}{2}$
+    
 :::

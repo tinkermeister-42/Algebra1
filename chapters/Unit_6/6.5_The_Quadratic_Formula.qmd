@@ -1,18 +1,22 @@
 # 6.5 - The Quadratic Formula {.unnumbered}
 
-Coming Soon
+By now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.
+
+But not all quadratic equations cooperate.
+
+In this lesson, we will develop a **general method** that works for *every* quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the **quadratic formula**.
 
 :::{.objectives}
 
-- [ ] I can use the quadratic formula to solve any quadratic.
-- [ ] I can use the discriminant to determine how many solutions there are.
-- [ ] I can choose which solving method is most efficient.
+* [ ] I can use the quadratic formula to solve any quadratic.
+* [ ] I can use the discriminant to determine how many solutions there are.
+* [ ] I can choose which solving method is most efficient.
 
 :::
 
 :::{.vocab}
 
-{{< glink term >}}, ...
+{{< glink "completing the square" >}}, {{< glink discriminant >}}, {{< glink "quadratic formula" >}}
 
 :::
 
@@ -20,26 +24,286 @@ Coming Soon
 
 {{< learn >}}
 
-### 6.5.1 - Using the Quadratic Formula
+### 6.5.1 - Deriving the Quadratic Formula
 
-Plug-in approach, checking simplification
+Suppose we want to solve a quadratic equation, but we do not know anything special about it.  
 
-### 6.5.2 - Understanding the Discriminant
+* It might not factor.  
+* It might not be set up nicely for square roots.
 
-Positive/zero/negative -> two/one/none
+The most general quadratic equation we can write is:
 
-### 6.5.3 - Choosing a Method
+$$
+ax^2 + bx + c = 0, \quad a \neq 0
+$$
 
-When factoring is quick vs when formula is best
+This equation represents every quadratic written in standard form. If we can solve this equation, then we can solve any quadratic.
+
+As in the previous lesson, we begin by making the coefficient of $x^2$ equal to $1$ by dividing both sides by $a$:
+
+$$
+x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+$$
+
+Next, we move the constant term to the other side:
+
+$$
+x^2 + \frac{b}{a}x = -\frac{c}{a}
+$$
+
+At this point, we complete the square in the same way we did in Lesson 6.4. We split the middle term into two equal pieces and use an area model:
+
+$$
+\frac{b}{a}x = \frac{b}{2a}x + \frac{b}{2a}x
+$$
+
+:::{.areabox}
+|                      | $x$                     | $\dfrac{b}{2a}$ |
+| -------------------: | ----------------------- | ---------------- |
+| $x$                  | $x^2$                   | $\dfrac{b}{2a}x$ |
+| $\dfrac{b}{2a}$      | $\dfrac{b}{2a}x$        | ?                |
+:::
+
+The missing corner is:
+
+$$
+\left(\frac{b}{2a}\right)\left(\frac{b}{2a}\right) = \frac{b^2}{4a^2}
+$$
+
+Adding this value to both sides gives:
+
+$$
+x^2 + \frac{b}{a}x + \frac{b^2}{4a^2}
+=
+-\frac{c}{a} + \frac{b^2}{4a^2}
+$$
+
+The left side is now a perfect square:
+
+$$
+\left(x + \frac{b}{2a}\right)^2
+$$
+
+Combining terms on the right side leads to:
+
+$$
+\left(x + \frac{b}{2a}\right)^2
+=
+\frac{b^2 - 4ac}{4a^2}
+$$
+
+Taking square roots:
+
+$$
+x + \frac{b}{2a}
+=
+\pm \frac{\sqrt{b^2 - 4ac}}{2a}
+$$
+
+Finally, subtracting $\frac{b}{2a}$ from both sides gives:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+This expression gives the solution to the equation $ax^2 + bx + c = 0$.
+
+Rather than repeating this completing-the-square process every time we solve a quadratic, we record the result as a single formula. 
+
+This formula is called the **quadratic formula**, and it works for **every** quadratic equation.
+
+---
+
+### 6.5.2 - Solving Equations with the Quadratic Formula
+
+Once the quadratic formula has been derived, using it is a **consistent, mechanical process**.
+
+For an equation written in standard form,
+
+$$
+ax^2 + bx + c = 0
+$$
+
+the solutions are:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+The key steps are always the same:
+
+1. Identify $a$, $b$, and $c$
+2. Substitute carefully
+3. Simplify step by step
+
+---
+
+**Example 1**
+
+Solve:
+
+$$
+x^2 + 3x + 1 = 0
+$$
+
+Identify coefficients:
+
+$$
+a = 1, \quad b = 3, \quad c = 1
+$$
+
+Substitute:
+
+$$
+x = \frac{-3 \pm \sqrt{9 - 4}}{2}
+$$
+
+$$
+x = \frac{-3 \pm \sqrt{5}}{2}
+$$
+
+This equation does not factor, but the quadratic formula still gives exact solutions.
+
+---
+
+**Example 2**
+
+Solve:
+
+$$
+2x^2 - 5x + 2 = 0
+$$
+
+$$
+a = 2, \quad b = -5, \quad c = 2
+$$
+
+$$
+x = \frac{5 \pm \sqrt{25 - 16}}{4}
+$$
+
+$$
+x = \frac{5 \pm 3}{4}
+$$
+
+So the solutions are:
+
+$$
+x = 2 \quad \text{and} \quad x = \frac{1}{2}
+$$
+
+---
+
+**Example 3**
+
+Solve:
+
+$$
+3x^2 + 4x + 7 = 0
+$$
+
+$$
+a = 3, \quad b = 4, \quad c = 7
+$$
+
+$$
+x = \frac{-4 \pm \sqrt{16 - 84}}{6}
+$$
+
+$$
+x = \frac{-4 \pm \sqrt{-68}}{6}
+$$
+
+Since the square root is not real, this equation has **no real solutions**.
+
+---
+
+### 6.5.3 - Understanding the Discriminant
+
+The expression under the square root in the quadratic formula,
+
+$$
+b^2 - 4ac
+$$
+
+is called the **discriminant**.
+
+The discriminant tells us **what kind of solutions** a quadratic equation has *before* we finish solving.
+
+This happens because:
+
+* the square root of a positive number is real
+* the square root of zero is zero
+* the square root of a negative number is not real
+
+---
+
+#### What the Discriminant Tells Us
+
+* **If $b^2 - 4ac > 0$**
+  There are **two real solutions**
+
+* **If $b^2 - 4ac = 0$**
+  There is **one real solution**
+
+* **If $b^2 - 4ac < 0$**
+  There are **no real solutions**
+
+These cases match what we see on the graph of a parabola.
+
+---
+
+**Example A: Two Solutions**
+
+*(Placeholder image: upward-opening parabola crossing the $x$-axis twice)*
+
+This parabola intersects the $x$-axis at two points.
+The discriminant is positive, so the quadratic has **two real solutions**.
+
+---
+
+**Example B: One Solution**
+
+*(Placeholder image: parabola tangent to the $x$-axis at the vertex)*
+
+This parabola touches the $x$-axis exactly once.
+The discriminant is zero, so the quadratic has **one real solution**.
+
+---
+
+**Example C: No Solutions**
+
+*(Placeholder image: parabola that does not intersect the $x$-axis)*
+
+This parabola never crosses the $x$-axis.
+The discriminant is negative, so the quadratic has **no real solutions**.
+
+---
+
+### 6.5.4 - Choosing a Method
+
+There are several ways to solve quadratic equations.
+Choosing the right method can save time and reduce errors.
+
+| Method                | When It Works Best                              |
+| --------------------- | ----------------------------------------------- |
+| Factoring             | The quadratic factors quickly and cleanly       |
+| Completing the square | You want vertex form or to understand structure |
+| Quadratic formula     | Factoring is difficult or impossible            |
+
+The quadratic formula:
+
+* works for every quadratic
+* does not depend on guessing factors
+* gives exact solutions when factoring fails
+
+If you are unsure which method to use, the quadratic formula is always a reliable choice.
+
+---
 
 {{< practice >}}
 
 :::{.answers}
 
 :::
-
-
-
-
-
 
