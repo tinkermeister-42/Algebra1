@@ -1,3 +1,174 @@
 # Review {.unnumbered}
 
-Coming Soon
+This review brings together the key skills from **Unit 6: Quadratic Functions and Equations**.  
+It focuses on understanding parabolas, graphing quadratics, and solving quadratic equations using multiple methods.
+
+**What you’ll review**
+
+* Recognizing and describing quadratic functions  
+* Graphing quadratics and identifying key features  
+* Solving quadratic equations by factoring  
+* Solving quadratics by completing the square  
+* Using the quadratic formula and the discriminant  
+
+---
+
+### Introduction to Quadratic Functions (6.1)
+
+Use the equation or graph to answer each question.
+
+1. The graph below represents a quadratic function.
+
+![](/images/Unit_6/Review/Problem1.png){width="350px" fig-align="center"}
+
+a. Identify the vertex.  
+b. Does the vertex represent a minimum or maximum?  
+c. Write the axis of symmetry.
+
+2. The graph below represents a quadratic function.
+
+![](/images/Unit_6/Review/Problem2.png){width="350px" fig-align="center"}
+
+a. Identify the vertex.  
+b. Does the vertex represent a minimum or maximum?  
+c. Write the axis of symmetry.
+
+3. $y = (x - 1)^2 + 5$  
+Identify the vertex.
+
+4. $y = -(x + 4)^2$  
+Identify the vertex.
+
+5. The graph below shows a quadratic function.
+
+![](/images/Unit_6/Review/Problem5.png){width="350px" fig-align="center"}
+
+State the domain and range.
+
+6. The graph below shows a quadratic function.
+
+![](/images/Unit_6/Review/Problem6.png){width="350px" fig-align="center"}
+
+State the domain and range.
+
+---
+
+### Graphing Quadratics (6.2)
+
+Answer each question.
+
+7. Find the axis of symmetry of the quadratic shown.
+
+![](/images/Unit_6/Review/Problem7.png){width="350px" fig-align="center"}
+
+8. Find the vertex of $y = x^2 + 4x + 1$.
+
+9. Find the vertex of $y = -x^2 + 2x + 8$.
+
+10. The graph of a quadratic is shown.
+
+![](/images/Unit_6/Review/Problem10.png){width="350px" fig-align="center"}
+
+Identify the vertex and axis of symmetry.
+
+11. For the graph below, determine whether the function is increasing or decreasing to the left of the vertex.
+
+![](/images/Unit_6/Review/Problem11.png){width="350px" fig-align="center"}
+
+12. The graph below shows a quadratic function.
+
+![](/images/Unit_6/Review/Problem12.png){width="350px" fig-align="center"}
+
+Identify the $x$-intercepts.
+
+---
+
+### Solving Quadratic Equations by Factoring (6.3)
+
+Solve each equation.
+
+13. $x^2 - 5x = 0$
+
+14. $x^2 + 3x - 10 = 0$
+
+15. $2x^2 - 7x - 4 = 0$
+
+16. $x^2 - 9 = 0$
+
+17. $3x^2 + 12x = 0$
+
+18. $x^3 + 3x^2 + 2x = 0$
+
+19. $2x^3 + 8x^2 - 10x= 0$  
+
+---
+
+### Completing the Square (6.4)
+
+Solve each equation by completing the square.
+
+20. $x^2 + 6x = 4$
+
+21. $x^2 - 8x + 7 = 0$
+
+22. $x^2 + 10x + 9 = 0$
+
+23. $(x - 3)^2 = 11$
+
+24. $(x + 2)^2 = -5$
+
+---
+
+### The Quadratic Formula (6.5)
+
+Solve each equation using the quadratic formula.
+
+25. $x^2 - 7x + 10 = 0$
+
+26. $2x^2 + x - 3 = 0$
+
+27. $x^2 + 4x + 8 = 0$
+
+28. $3x^2 - 12x + 12 = 0$
+
+29. $x^2 - 2x + 5 = 0$
+
+---
+
+:::{.answers}
+
+1. Vertex $(2, -3)$, minimum, axis $x = 2$  
+2. Vertex $(-1, 4)$, maximum, axis $x = -1$  
+3. $(1, 5)$  
+4. $(-4, 0)$  
+5. $(-\infty, \infty)$  
+6. $(-\infty, 7]$  
+
+7. $x = 3$  
+8. $(-2, -3)$  
+9. $(1, 9)$  
+10. Vertex $(2, -3)$, axis $x = 2$  
+11. Increasing  
+12. $x = -3, 3$  
+
+13. $x = 0, 5$  
+14. $x = -5, 2$  
+15. $x = 4, -\dfrac{1}{2}$  
+16. $x = -3, 3$  
+17. $x = 0, -4$  
+18. $x = 0, -1, -2$  
+19. $x = 0, -5, 1$ 
+
+20. $x = -3 \pm \sqrt{13}$  
+21. $x = 1, 7$  
+22. $x = -1, -9$  
+23. $x = 3 \pm \sqrt{11}$  
+24. No real solutions  
+
+25. $x = 5, 2$  
+26. $x = 1, -\dfrac{3}{2}$  
+27. No real solutions  
+28. $x = 2$  
+29. No real solutions  
+
+:::

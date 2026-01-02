@@ -1,0 +1,66 @@
+<svg width="260" height="260"
+     viewBox="-120 -120 240 240"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     aria-label="Pepperoni pizza divided into 12 slices with 4 slices missing">
+
+  <defs>
+    <!-- Mask: white keeps, black removes -->
+    <mask id="pizzaMask12">
+      <rect x="-120" y="-120" width="240" height="240" fill="#ffffff"></rect>
+
+      <!-- remove 4 of 12 slices as one continuous wedge: 0° to 120° -->
+      <path d="M0,0 L120,0 A120,120 0 0,1 -60,103.923 Z" fill="#000000"></path>
+    </mask>
+  </defs>
+
+  <g mask="url(#pizzaMask12)">
+
+    <!-- crust -->
+    <circle cx="0" cy="0" r="105" fill="#d9a066" stroke="#000000" stroke-width="2"></circle>
+
+    <!-- cheese -->
+    <circle cx="0" cy="0" r="95" fill="#f6d87a" stroke="#000000" stroke-width="2"></circle>
+
+    <!-- pepperoni (spread out, deterministic) -->
+    <g fill="#b22222" stroke="#7a1414" stroke-width="1">
+      <circle cx="-55" cy="-40" r="8"></circle>
+      <circle cx="-25" cy="-60" r="7"></circle>
+      <circle cx="10" cy="-55" r="8"></circle>
+      <circle cx="45" cy="-35" r="7"></circle>
+
+      <circle cx="-70" cy="-10" r="7"></circle>
+      <circle cx="-30" cy="-10" r="8"></circle>
+      <circle cx="10" cy="-10" r="7"></circle>
+      <circle cx="55" cy="-10" r="8"></circle>
+
+      <circle cx="-55" cy="25" r="7"></circle>
+      <circle cx="-15" cy="25" r="8"></circle>
+      <circle cx="25" cy="25" r="7"></circle>
+      <circle cx="70" cy="25" r="8"></circle>
+
+      <circle cx="-35" cy="60" r="8"></circle>
+      <circle cx="0" cy="65" r="7"></circle>
+      <circle cx="35" cy="60" r="8"></circle>
+
+      <circle cx="0" cy="-30" r="7"></circle>
+    </g>
+
+    <!-- slice lines (12 slices).
+         We omit the interior slice lines inside the missing wedge (30°, 60°, 90°).
+         Keep 0° and 120° boundaries and all other slice boundaries. -->
+    <g stroke="#000000" stroke-width="2">
+      <line x1="0" y1="0" x2="105" y2="0"></line>           <!-- 0° -->
+      <line x1="0" y1="0" x2="-52.5" y2="90.933"></line>    <!-- 120° -->
+      <line x1="0" y1="0" x2="-90.933" y2="52.5"></line>    <!-- 150° -->
+      <line x1="0" y1="0" x2="-105" y2="0"></line>          <!-- 180° -->
+      <line x1="0" y1="0" x2="-90.933" y2="-52.5"></line>   <!-- 210° -->
+      <line x1="0" y1="0" x2="-52.5" y2="-90.933"></line>   <!-- 240° -->
+      <line x1="0" y1="0" x2="0" y2="-105"></line>          <!-- 270° -->
+      <line x1="0" y1="0" x2="52.5" y2="-90.933"></line>    <!-- 300° -->
+      <line x1="0" y1="0" x2="90.933" y2="-52.5"></line>    <!-- 330° -->
+    </g>
+
+  </g>
+
+</svg>

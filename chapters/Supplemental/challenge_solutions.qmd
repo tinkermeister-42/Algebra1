@@ -497,3 +497,13 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 25. $b=6$ or $b=-6$
 
 :::
+
+### 6.5 - The Quadratic Formula
+
+:::{.answers}
+
+26. $k = -6, 6$  
+
+27. $4x^2 - 6x - 1 = 0$  
+
+:::

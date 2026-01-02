@@ -1,0 +1,33 @@
+<svg width="260" height="260" viewBox="-120 -120 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cheese pizza divided into 8 slices with 2 slices missing">
+
+  <defs>
+    <mask id="pizzaMask">
+      <!-- white keeps -->
+      <rect x="-120" y="-120" width="240" height="240" fill="white"></rect>
+
+      <!-- black removes: ONE wedge from 0° to 90° (two slices) -->
+      <path d="M0,0 L120,0 A120,120 0 0,1 0,120 Z" fill="black"></path>
+    </mask>
+  </defs>
+
+  <g mask="url(#pizzaMask)">
+    <!-- crust -->
+    <circle cx="0" cy="0" r="105" fill="#d9a066" stroke="#000" stroke-width="2"></circle>
+
+    <!-- cheese -->
+    <circle cx="0" cy="0" r="95" fill="#f6d87a" stroke="#000" stroke-width="2"></circle>
+
+    <!-- slice lines: keep 0° and 90° boundaries, omit the 45° line -->
+    <g stroke="#000" stroke-width="2">
+      <line x1="0" y1="0" x2="105" y2="0"></line>
+      <line x1="0" y1="0" x2="0" y2="105"></line>
+
+      <line x1="0" y1="0" x2="-74.246" y2="74.246"></line>
+      <line x1="0" y1="0" x2="-105" y2="0"></line>
+      <line x1="0" y1="0" x2="-74.246" y2="-74.246"></line>
+      <line x1="0" y1="0" x2="0" y2="-105"></line>
+      <line x1="0" y1="0" x2="74.246" y2="-74.246"></line>
+    </g>
+  </g>
+
+</svg>
