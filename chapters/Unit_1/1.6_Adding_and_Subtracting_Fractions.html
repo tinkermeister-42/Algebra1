@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1.6 - Adding and Subtracting Fractions – DHS Algebra 1</title>
+<title>1.6 - Adding &amp; Subtracting Fractions – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,6 +86,35 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
@@ -113,7 +142,7 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html">1.6 - Adding and Subtracting Fractions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html">1.6 - Adding &amp; Subtracting Fractions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,7 +221,7 @@ window.MathJax = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1.6 - Adding and Subtracting Fractions</span></a>
+ <span class="menu-text">1.6 - Adding &amp; Subtracting Fractions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -609,7 +638,12 @@ window.MathJax = {
    
   <ul>
   <li>🔥 Warm-Up</li>
-  <li>👥 Learn Together</li>
+  <li>👥 Learn Together
+  <ul class="collapse">
+  <li><a href="#adding-fractions-with-like-denominators" id="toc-adding-fractions-with-like-denominators" class="nav-link active" data-scroll-target="#adding-fractions-with-like-denominators">1.6.1 - Adding Fractions with Like Denominators</a></li>
+  <li><a href="#adding-fractions-with-unlike-denominators" id="toc-adding-fractions-with-unlike-denominators" class="nav-link" data-scroll-target="#adding-fractions-with-unlike-denominators">1.6.2 - Adding Fractions with Unlike Denominators</a></li>
+  <li><a href="#adding-subtracting-mixed-numbers" id="toc-adding-subtracting-mixed-numbers" class="nav-link" data-scroll-target="#adding-subtracting-mixed-numbers">1.6.3 - Adding &amp; Subtracting Mixed Numbers</a></li>
+  </ul></li>
   <li>✍️ Practice On Your Own</li>
   </ul>
 </nav>
@@ -617,9 +651,9 @@ window.MathJax = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html">1.6 - Adding and Subtracting Fractions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Unit_1/index.html">Unit 1: Foundations</a></li><li class="breadcrumb-item"><a href="../../chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.html">1.6 - Adding &amp; Subtracting Fractions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.6 - Adding and Subtracting Fractions</h1>
+<h1 class="title">1.6 - Adding &amp; Subtracting Fractions</h1>
 </div>
 
 
@@ -636,25 +670,315 @@ window.MathJax = {
 </header>
 
 
-<p>Coming Soon</p>
+<p>In earlier lessons, you learned how to multiply and divide fractions. But many real-world problems, like combining ingredients, measuring distance, or tracking time, require <strong>adding and subtracting</strong> fractions instead.</p>
+<p>In this lesson, you’ll learn how to add and subtract fractions and mixed numbers. We’ll focus on why common denominators matter, how to find them efficiently, and how to avoid common mistakes.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can do things</label></li>
+<li><label><input type="checkbox">I can add and subtract fractions with like denominators.</label></li>
+<li><label><input type="checkbox">I can add and subtract fractions with unlike denominators.</label></li>
+<li><label><input type="checkbox">I can add and subtract mixed numbers.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="term" data-term="term" data-original-href="#glossary-term">term</a>, …</p>
+<p><a href="" class="glossary-link" data-slug="denominator" data-original-href="#glossary-denominator" data-term="denominator">denominator</a>, <a href="" class="glossary-link" data-slug="improper-fraction" data-original-href="#glossary-improper-fraction" data-term="improper fraction">improper fraction</a>, <a href="" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a>, <a href="" class="glossary-link" data-slug="numerator" data-original-href="#glossary-numerator" data-term="numerator">numerator</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
+<ol type="1">
+<li><p>Monique was hungry for pizza. She ate</p>
+<ul>
+<li><strong>1 slice of pepperoni pizza</strong></li>
+<li>She also ate <strong>2 slices of cheese pizza</strong>.</li>
+</ul>
+<p>Both pizzas were cut into <strong>8 equal slices</strong>. How much pizza did Monique eat in total?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="../../images/Unit_1/Lesson_6/pepperoni_pizza7of8.svg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="../../images/Unit_1/Lesson_6/cheese_pizza_6of8.svg" class="img-fluid"></p>
+</div>
+</div></li>
+</ol>
+<hr>
+<ol start="2" type="1">
+<li><p>Jack was hungrier than Monique.</p>
+<ul>
+<li>He ate <strong>1 slice of pepperoni pizza</strong>, cut into <strong>3 equal pieces</strong>.</li>
+<li>He also ate <strong>1 slice of cheese pizza</strong>, cut into <strong>4 equal pieces</strong>.</li>
+</ul>
+<p>How much pizza did Jack eat in total?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="../../images/Unit_1/Lesson_6/pepperoni_pizza2of3.svg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="../../images/Unit_1/Lesson_6/cheese_pizza_3of4.svg" class="img-fluid"></p>
+</div>
+</div></li>
+</ol>
 </section>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
+<section id="adding-fractions-with-like-denominators" class="level3">
+<h3 class="anchored" data-anchor-id="adding-fractions-with-like-denominators">1.6.1 - Adding Fractions with Like Denominators</h3>
+<p>When fractions have the <strong>same denominator</strong>, they describe pieces of the <strong>same size</strong>.</p>
+<p>That’s exactly what happened with Monique’s pizza.</p>
+<ul>
+<li>Keep the denominator.</li>
+<li>Add or subtract the numerators.</li>
+</ul>
+<p><strong>Example 1:</strong> <span class="math inline">\(\frac{2}{7} + \frac{3}{7}\)</span> <span class="math display">\[
+\frac{2}{7} + \frac{3}{7} = \frac{2 + 3}{7} = \frac{5}{7}
+\]</span></p>
+<div class="gotcha" title="Numerators only">
+<p>A common mistake students make is to add the numerators together <strong>and</strong> the denominators together. <strong>Only add the numerators!</strong></p>
+</div>
+<hr>
+<p><strong>Example 2:</strong> <span class="math inline">\(\frac{11}{12} - \frac{5}{12}\)</span> <span class="math display">\[
+\frac{11}{12} - \frac{5}{12} = \frac{6}{12} = \frac{1}{2}
+\]</span></p>
+<div class="you-try" title="$\frac{10}{15} - \frac{4}{15}$">
+<p><span class="math display">\[
+\frac{10}{15} - \frac{4}{15} = \frac{6}{15} = \frac{2}{5}
+\]</span></p>
+</div>
+<hr>
+</section>
+<section id="adding-fractions-with-unlike-denominators" class="level3">
+<h3 class="anchored" data-anchor-id="adding-fractions-with-unlike-denominators">1.6.2 - Adding Fractions with Unlike Denominators</h3>
+<p>When fractions have <strong>different denominators</strong>, they describe pieces of <strong>different sizes</strong>.<br>
+Before we can add or subtract, we need to rewrite them so the pieces match.</p>
+<p>Let’s return to <strong>Jack’s pizza</strong>. Jack ate</p>
+<ul>
+<li><span class="math inline">\(\frac{1}{3}\)</span> of a pepperoni pizza<br>
+</li>
+<li><span class="math inline">\(\frac{1}{4}\)</span> of a cheese pizza</li>
+</ul>
+<p>At first, these pieces don’t match.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Pepperoni (cut into thirds)</strong><br>
+<img src="../../images/Unit_1/Lesson_6/pepperoni_pizza2of3.svg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Cheese (cut into fourths)</strong><br>
+<img src="../../images/Unit_1/Lesson_6/cheese_pizza_3of4.svg" class="img-fluid"></p>
+</div>
+</div>
+<p>Even though Jack ate <strong>one slice</strong> of each pizza, those slices are <strong>not the same size</strong>.<br>
+So we can’t just add <span class="math inline">\(\frac{1}{3} + \frac{1}{4}\)</span> yet.</p>
+<hr>
+<section id="how-to-find-a-common-denominator" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-find-a-common-denominator">How to Find a Common Denominator</h4>
+<p>A common denominator is a number that <strong>both denominators divide into evenly</strong>.</p>
+<p>Here are two reliable ways to find one.</p>
+<p><strong>Method A: Quick check (fastest when it works)</strong><br>
+If one denominator divides into the other, the larger denominator works.</p>
+<p>Example: for <span class="math inline">\(\frac{7}{8}\)</span> and <span class="math inline">\(\frac{1}{4}\)</span>, <span class="math inline">\(8\)</span> works because <span class="math inline">\(8 \div 4 = 2\)</span>.</p>
+<p><strong>Method B: List multiples (always works)</strong><br>
+1. Write a few multiples of each denominator.<br>
+2. Find the first number that appears in both lists.<br>
+3. Use that number as the common denominator.</p>
+<p>Example: for <span class="math inline">\(\frac{1}{3}\)</span> and <span class="math inline">\(\frac{1}{4}\)</span></p>
+<p>Multiples of <span class="math inline">\(3\)</span>: <span class="math inline">\(3, 6, 9, 12, \dots\)</span><br>
+Multiples of <span class="math inline">\(4\)</span>: <span class="math inline">\(4, 8, 12, \dots\)</span></p>
+<p>The first number that appears in both lists is <span class="math inline">\(12\)</span>.</p>
+<hr>
+</section>
+<section id="making-the-pieces-match" class="level4">
+<h4 class="anchored" data-anchor-id="making-the-pieces-match">Making the Pieces Match</h4>
+<p>To combine these amounts, we need to cut <strong>both pizzas into pieces that line up</strong>.</p>
+<p>For thirds and fourths, we found the common denominator <span class="math inline">\(12\)</span>.</p>
+<p>That means: - <span class="math inline">\(12 \div 3 = 4\)</span>, so each third becomes <strong>4 equal pieces</strong> - <span class="math inline">\(12 \div 4 = 3\)</span>, so each fourth becomes <strong>3 equal pieces</strong></p>
+<p>Now both pizzas can be described using <strong>twelfths</strong>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Pepperoni in twelfths</strong><br>
+<img src="../../images/Unit_1/Lesson_6/pepperoni_pizza8of12.svg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Cheese in twelfths</strong><br>
+<img src="../../images/Unit_1/Lesson_6/cheese_pizza_9of12.svg" class="img-fluid"></p>
+</div>
+</div>
+<p>Once the pieces match, the math works the same way as before.</p>
+<hr>
+<p><strong>Example 3:</strong> <span class="math inline">\(\frac{1}{3} + \frac{1}{4}\)</span></p>
+<p>First, find a number that <strong>both denominators divide into</strong>.<br>
+Both 3 and 4 divide into 12.</p>
+<p>Rewrite each fraction: <span class="math display">\[
+\frac{1}{3} = \frac{4}{4}\cdot\frac{1}{3} = \frac{4}{12}
+\]</span></p>
+<p>and <span class="math display">\[
+\frac{1}{4} = \frac{3}{3}\cdot\frac{1}{4} = \frac{3}{12}
+\]</span></p>
+<p>Now add: <span class="math display">\[
+\frac{4}{12} + \frac{3}{12} = \frac{7}{12}
+\]</span></p>
+<hr>
+<p><strong>Example 4:</strong> <span class="math inline">\(\frac{7}{8} - \frac{1}{4}\)</span></p>
+<p>The denominators are different, so we need matching pieces.</p>
+<p>Here, we can use the quick check.<br>
+<span class="math inline">\(8\)</span> works because <span class="math inline">\(8 \div 4 = 2\)</span>.</p>
+<p>Rewrite: <span class="math display">\[
+\frac{1}{4} = \frac{2}{8}
+\]</span></p>
+<p>Now subtract: <span class="math display">\[
+\frac{7}{8} - \frac{2}{8} = \frac{5}{8}
+\]</span></p>
+<div class="you-try" title="Add $\frac{2}{3} + \frac{1}{6}$">
+<p>A common denominator is <span class="math inline">\(6\)</span> because <span class="math inline">\(6 \div 3 = 2\)</span> and <span class="math inline">\(6 \div 6 = 1\)</span>.</p>
+<p><span class="math display">\[
+\frac{2}{3} = \frac{4}{6}
+\qquad
+\frac{4}{6} + \frac{1}{6} = \frac{5}{6}
+\]</span></p>
+</div>
+</section>
+</section>
+<section id="adding-subtracting-mixed-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="adding-subtracting-mixed-numbers">1.6.3 - Adding &amp; Subtracting Mixed Numbers</h3>
+<p>A <a href="" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a> has a whole number and a fraction, like <span class="math inline">\(2\tfrac{1}{3}\)</span>.</p>
+<p>To add or subtract mixed numbers, we will use this method:</p>
+<ol type="1">
+<li>Convert each mixed number to an improper fraction.<br>
+</li>
+<li>Add or subtract the fractions.<br>
+</li>
+<li>If needed, convert back to a mixed number.</li>
+</ol>
+<hr>
+<section id="converting-a-mixed-number-to-an-improper-fraction" class="level4">
+<h4 class="anchored" data-anchor-id="converting-a-mixed-number-to-an-improper-fraction">Converting a Mixed Number to an Improper Fraction</h4>
+<p>To convert <span class="math inline">\(a\tfrac{b}{c}\)</span> into an improper fraction:</p>
+<ol type="1">
+<li>Multiply: <span class="math inline">\(a \cdot c\)</span><br>
+</li>
+<li>Add the numerator: <span class="math inline">\(a \cdot c + b\)</span><br>
+</li>
+<li>Put it over the same denominator <span class="math inline">\(c\)</span></li>
+</ol>
+<p>So: <span class="math display">\[
+a\tfrac{b}{c} = \frac{a\cdot c + b}{c}
+\]</span></p>
+<hr>
+<p><strong>Example 5:</strong> <span class="math inline">\(2\tfrac{1}{3} + 1\tfrac{5}{6}\)</span></p>
+<p>Convert each mixed number:</p>
+<p>For <span class="math inline">\(2\tfrac{1}{3}\)</span>: <span class="math display">\[
+2\cdot 3 + 1 = 7
+\qquad
+2\tfrac{1}{3} = \frac{7}{3}
+\]</span></p>
+<p>For <span class="math inline">\(1\tfrac{5}{6}\)</span>: <span class="math display">\[
+1\cdot 6 + 5 = 11
+\qquad
+1\tfrac{5}{6} = \frac{11}{6}
+\]</span></p>
+<p>Match denominators: <span class="math display">\[
+\frac{7}{3} = \frac{14}{6}
+\]</span></p>
+<p>Add: <span class="math display">\[
+\frac{14}{6} + \frac{11}{6} = \frac{25}{6}
+\]</span></p>
+<p>Convert back to a mixed number by dividing: <span class="math display">\[
+25 \div 6 = 4 \text{ remainder } 1
+\qquad
+\frac{25}{6} = 4\tfrac{1}{6}
+\]</span></p>
+<hr>
+<p><strong>Example 6:</strong> <span class="math inline">\(4\tfrac{1}{2} - 2\tfrac{3}{4}\)</span></p>
+<p>Convert each mixed number:</p>
+<p>For <span class="math inline">\(4\tfrac{1}{2}\)</span>: <span class="math display">\[
+4\cdot 2 + 1 = 9
+\qquad
+4\tfrac{1}{2} = \frac{9}{2}
+\]</span></p>
+<p>For <span class="math inline">\(2\tfrac{3}{4}\)</span>: <span class="math display">\[
+2\cdot 4 + 3 = 11
+\qquad
+2\tfrac{3}{4} = \frac{11}{4}
+\]</span></p>
+<p>Match denominators: <span class="math display">\[
+\frac{9}{2} = \frac{18}{4}
+\]</span></p>
+<p>Subtract: <span class="math display">\[
+\frac{18}{4} - \frac{11}{4} = \frac{7}{4}
+\]</span></p>
+<p>Convert back: <span class="math display">\[
+7 \div 4 = 1 \text{ remainder } 3
+\qquad
+\frac{7}{4} = 1\tfrac{3}{4}
+\]</span></p>
+<div class="remember">
+<p>If your final answer is negative, double-check the order of the subtraction.</p>
+</div>
+</section>
+</section>
 </section>
 <section class="level2 pagebreak-before">
 <h2 class="pagebreak-before anchored" data-anchor-id="">✍️ Practice On Your Own</h2>
+<p><strong>Add and Subtract Fractions</strong></p>
+<ol type="1">
+<li><p><span class="math inline">\(\frac{3}{8} + \frac{1}{8}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{6} - \frac{1}{6}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{2}{9} + \frac{4}{9}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{11}{12} - \frac{7}{12}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{4} + \frac{1}{6}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{8} - \frac{1}{4}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{3}{5} + \frac{7}{10}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{9}{10} - \frac{2}{15}\)</span></p></li>
+<li><p><span class="math inline">\(1\tfrac{1}{2} + 2\tfrac{1}{4}\)</span></p></li>
+<li><p><span class="math inline">\(4\tfrac{3}{5} - 1\tfrac{2}{5}\)</span></p></li>
+<li><p><span class="math inline">\(3\tfrac{1}{6} + 2\tfrac{5}{6}\)</span></p></li>
+<li><p><span class="math inline">\(6\tfrac{1}{4} - 3\tfrac{3}{8}\)</span></p></li>
+</ol>
+<hr>
+<p><strong>Word Problems</strong></p>
+<ol start="13" type="1">
+<li><p>You drink <span class="math inline">\(\frac{3}{4}\)</span> of a liter of water in the morning and <span class="math inline">\(\frac{1}{8}\)</span> of a liter in the afternoon.<br>
+How much water did you drink total?</p></li>
+<li><p>A rope is <span class="math inline">\(5\tfrac{1}{2}\)</span> meters long. If <span class="math inline">\(2\tfrac{3}{4}\)</span> meters are cut off, how much remains?</p></li>
+<li><p>A recipe needs <span class="math inline">\(\frac{2}{3}\)</span> cup of sugar. If you already added <span class="math inline">\(\frac{1}{4}\)</span> cup, how much more do you need?</p></li>
+</ol>
+<hr>
+<p><strong>Challenge Problems</strong></p>
+<ol start="16" type="1">
+<li><p>Two fractions have a sum of exactly 1. One of them is <span class="math inline">\(\frac{3}{8}\)</span>. What is the other fraction?</p></li>
+<li><p>A runner completes <span class="math inline">\(4\tfrac{2}{3}\)</span> miles on Monday and <span class="math inline">\(3\tfrac{5}{6}\)</span> miles on Tuesday.<br>
+How many miles did they run total?</p></li>
+</ol>
+<hr>
 <div class="answers">
-
+<ol type="1">
+<li><p><span class="math inline">\(\frac{1}{2}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{2}{3}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{2}{3}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{1}{3}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{5}{12}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{3}{8}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(1\tfrac{3}{10}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{23}{30}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3\tfrac{3}{4}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(3\tfrac{1}{5}\)</span><br>
+</p></li>
+<li><p>6<br>
+</p></li>
+<li><p><span class="math inline">\(2\tfrac{7}{8}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{7}{8}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(2\tfrac{3}{4}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(\frac{5}{12}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5}{8}\)</span><br>
+</p></li>
+<li><p><span class="math inline">\(8\tfrac{1}{2}\)</span></p></li>
+</ol>
 </div>
 
 
