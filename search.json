@@ -748,45 +748,56 @@
   {
     "objectID": "chapters/Interactive/Unit_4/understanding_slope.html",
     "href": "chapters/Interactive/Unit_4/understanding_slope.html",
-    "title": "Slope Explorer",
+    "title": "Unit 4 - Slope Explorer",
     "section": "",
     "text": "Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.\n\n\n\n\n\n\nTo learn more about slope, take a look at 4.2 - Understanding Slope",
     "crumbs": [
       "Interactive Learning",
-      "Slope Explorer"
+      "Unit 4 - Slope Explorer"
     ]
   },
   {
     "objectID": "chapters/Interactive/Unit_4/exploring_slope_intercept_form.html",
     "href": "chapters/Interactive/Unit_4/exploring_slope_intercept_form.html",
-    "title": "Slope-Intercept Form Investigation",
+    "title": "Unit 4 - Slope-Intercept Form Investigation",
     "section": "",
     "text": "Sometimes the best way to learn math is to play around with it.\nTry moving the sliders in the interactive chart below. Watch what happens as you change \\(m\\) (slope) and \\(b\\) (y-intercept).\nAs you explore, think about these questions:\n\nWhat happens when you increase the slope from zero?\nWhat happens when you decrease the slope from zero?\nHow does the line move when you change the y-intercept \\(b\\)?\nHow would you describe two lines that have the same slope but different y-intercepts?\nCould you make a vertical line with a tool like this? Why or why not?\n\n\n\n\n\n\n\n\nTo learn more about slope-intercept form, take a look at 4.3 - The Equation of a Line",
     "crumbs": [
       "Interactive Learning",
-      "Slope-Intercept Form Investigation"
+      "Unit 4 - Slope-Intercept Form Investigation"
     ]
   },
   {
     "objectID": "chapters/Interactive/Unit_4/intro_to_correlation.html",
     "href": "chapters/Interactive/Unit_4/intro_to_correlation.html",
-    "title": "Intro to Correlation",
+    "title": "Unit 4 - Intro to Correlation",
     "section": "",
     "text": "When we collect data in the real world, it rarely lines up perfectly — but patterns still appear.\nThis tool lets you explore how correlation describes those patterns.\nMove the slider to change the strength and direction of the correlation.\nYou’ll see:\n\npositive correlation makes points rise together\nnegative correlation makes them fall\nno correlation means there’s no clear pattern at all\n\nThe orange line shows the best-fit line, which summarizes the trend.\nNotice how the points stay close to the line when the relationship is strong\nand spread out when the relationship is weak.\n\n\n\n\n\n\n\nTo learn more, take a look at 4.6 – Linear Models in the Real World",
     "crumbs": [
       "Interactive Learning",
-      "Intro to Correlation"
+      "Unit 4 - Intro to Correlation"
     ]
   },
   {
     "objectID": "chapters/Interactive/Unit_4/slope_intercept_form_game.html",
     "href": "chapters/Interactive/Unit_4/slope_intercept_form_game.html",
-    "title": "Line Matching Game",
+    "title": "Unit 4 - Line Matching Game",
     "section": "",
     "text": "A quick way to build intuition for how slope and intercept shape a line.\nMatch the hidden target line using slope–intercept form (\\(y = mx + b\\)).\nHow to play:\n\nHit Start to begin a round.\nEnter your \\(m\\) and \\(b\\), then press Apply to reveal your guess.\nYou have limited moves, and (if enabled) a timer — faster matches earn bigger multipliers.\nCorrect answers give points; every 100 points = +1 life.\nRun out of moves or lives and the game ends.\n\n\n\n\n\n\n\n\nTo learn more, take a look at 4.6 – Linear Models in the Real World",
     "crumbs": [
       "Interactive Learning",
-      "Line Matching Game"
+      "Unit 4 - Line Matching Game"
+    ]
+  },
+  {
+    "objectID": "chapters/Interactive/Unit_6/vertex_form_explorer.html",
+    "href": "chapters/Interactive/Unit_6/vertex_form_explorer.html",
+    "title": "Unit 6 - Vertex Form Explorer",
+    "section": "",
+    "text": "This widget lets you play around with quadratics in vertex form.\n\\[\nf(x) = a(x - h)^2 + k\n\\]\nThis gives a parabola with vertex \\((h, k)\\) and scale factor \\(a\\).\n\n\n\n\n\n\nTo learn more, take a look at 6.2 - Graphing Quadratics",
+    "crumbs": [
+      "Interactive Learning",
+      "Unit 6 - Vertex Form Explorer"
     ]
   },
   {
