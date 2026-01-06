@@ -353,6 +353,12 @@ Vertex: $(-2, -13)$
 
 ---
 
+{{< interact >}}
+
+The best way to learn math is by playing around with it. 
+
+Give the [**Vertex Form Explorer**](/chapters/Interactive/Unit_6/vertex_form_explorer.qmd) tool a try. It will help you better understand how $a$, $h$, and $k$ impact the way a quadratic looks.
+
 {{< practice >}}
 
 **Graphing From a Table**

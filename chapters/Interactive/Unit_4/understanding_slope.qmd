@@ -1,4 +1,4 @@
-# Slope Explorer {.unnumbered}
+# Unit 4 - Slope Explorer {.unnumbered}
 
 Sometimes the best way to learn about something is to play around with it. Try adjusting the two points below to see how slope changes.
 

@@ -122,6 +122,7 @@ book:
         - file: chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd
         - file: chapters/Interactive/Unit_4/intro_to_correlation.qmd
         - file: chapters/Interactive/Unit_4/slope_intercept_form_game.qmd
+        - file: chapters/Interactive/Unit_6/vertex_form_explorer.qmd
 
     - part: "Supplemental"
       chapters:

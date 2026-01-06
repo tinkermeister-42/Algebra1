@@ -1,0 +1,16 @@
+# Unit 6 - Vertex Form Explorer {.unnumbered}
+
+This widget lets you play around with quadratics in vertex form.
+
+$$
+f(x) = a(x - h)^2 + k
+$$
+
+This gives a parabola with vertex $(h, k)$ and scale factor $a$.
+
+{{< include /assets/Unit_6/vertex_form-widget.html >}}
+
+---
+
+To learn more, take a look at [6.2 - Graphing Quadratics](/chapters/Unit_6/6.2_Graphing_Quadratics.qmd)
+

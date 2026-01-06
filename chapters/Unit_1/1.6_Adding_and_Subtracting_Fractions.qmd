@@ -317,11 +317,6 @@ $$
 \frac{7}{4} = 1\tfrac{3}{4}
 $$
 
-:::{.remember}
-If your final answer is negative, double-check the order of the subtraction.
-:::
-
-
 {{< practice >}}
 
 **Add and Subtract Fractions**

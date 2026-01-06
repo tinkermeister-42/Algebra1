@@ -1,33 +1,39 @@
-<svg width="260" height="260" viewBox="-120 -120 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cheese pizza divided into 8 slices with 2 slices missing">
+<svg width="260" height="260"
+     viewBox="-120 -120 240 240"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     aria-label="Cheese pizza divided into 8 slices with 2 slices eaten">
 
-  <defs>
-    <mask id="pizzaMask">
-      <!-- white keeps -->
-      <rect x="-120" y="-120" width="240" height="240" fill="white"></rect>
+  <!-- crust -->
+  <circle cx="0" cy="0" r="105"
+          fill="#d9a066" stroke="#000" stroke-width="2"></circle>
 
-      <!-- black removes: ONE wedge from 0° to 90° (two slices) -->
-      <path d="M0,0 L120,0 A120,120 0 0,1 0,120 Z" fill="black"></path>
-    </mask>
-  </defs>
+  <!-- cheese -->
+  <circle cx="0" cy="0" r="95"
+          fill="#f6d87a" stroke="#000" stroke-width="2"></circle>
 
-  <g mask="url(#pizzaMask)">
-    <!-- crust -->
-    <circle cx="0" cy="0" r="105" fill="#d9a066" stroke="#000" stroke-width="2"></circle>
+  <!-- eaten slices overlay: 0° to 90° (two of eight slices), drawn first -->
+  <path d="M0,0 L105,0 A105,105 0 0,1 0,105 Z"
+        fill="#ffffff"
+        opacity="0.8"></path>
 
-    <!-- cheese -->
-    <circle cx="0" cy="0" r="95" fill="#f6d87a" stroke="#000" stroke-width="2"></circle>
+  <!-- main slice boundaries (solid 8ths) -->
+  <g stroke="#000" stroke-width="2">
+    <line x1="0" y1="0" x2="105" y2="0"></line>              <!-- 0° -->
+    <line x1="0" y1="0" x2="0" y2="105"></line>              <!-- 90° -->
+    <line x1="0" y1="0" x2="-74.246" y2="74.246"></line>     <!-- 135° -->
+    <line x1="0" y1="0" x2="-105" y2="0"></line>             <!-- 180° -->
+    <line x1="0" y1="0" x2="-74.246" y2="-74.246"></line>    <!-- 225° -->
+    <line x1="0" y1="0" x2="0" y2="-105"></line>              <!-- 270° -->
+    <line x1="0" y1="0" x2="74.246" y2="-74.246"></line>     <!-- 315° -->
+  </g>
 
-    <!-- slice lines: keep 0° and 90° boundaries, omit the 45° line -->
-    <g stroke="#000" stroke-width="2">
-      <line x1="0" y1="0" x2="105" y2="0"></line>
-      <line x1="0" y1="0" x2="0" y2="105"></line>
-
-      <line x1="0" y1="0" x2="-74.246" y2="74.246"></line>
-      <line x1="0" y1="0" x2="-105" y2="0"></line>
-      <line x1="0" y1="0" x2="-74.246" y2="-74.246"></line>
-      <line x1="0" y1="0" x2="0" y2="-105"></line>
-      <line x1="0" y1="0" x2="74.246" y2="-74.246"></line>
-    </g>
+  <!-- internal boundary inside eaten region (dashed): 45° -->
+  <g stroke="#000"
+     stroke-width="2"
+     stroke-dasharray="4 6"
+     opacity="0.45">
+    <line x1="0" y1="0" x2="74.246" y2="74.246"></line>      <!-- 45° -->
   </g>
 
 </svg>

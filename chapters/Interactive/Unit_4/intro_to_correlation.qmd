@@ -1,4 +1,4 @@
-# Intro to Correlation {.unnumbered}
+# Unit 4 - Intro to Correlation {.unnumbered}
 
 When we collect data in the real world, it rarely lines up perfectly — but patterns still appear.  
 
