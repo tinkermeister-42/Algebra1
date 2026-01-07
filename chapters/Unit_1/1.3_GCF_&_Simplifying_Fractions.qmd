@@ -321,7 +321,7 @@ flowchart TB
 
 ::::
 
-For 36 we left behind a 3 and for 60 we left behind a 5.  What this means is that 36 ÷ 12 is 3 and 60 ÷ 12 is 5!”
+For 36 we left behind a 3 and for 60 we left behind a 5.  What this means is that 36 ÷ 12 is 3 and 60 ÷ 12 is 5.
 
 ---
 
