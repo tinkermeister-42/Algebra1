@@ -1,4 +1,4 @@
-# 1.4 - Fractions, Decimals & Percents: Conversions {.unnumbered}
+# 1.6 - Fractions, Decimals & Percents: Conversions {.unnumbered}
 
 Fractions, decimals, and percents are just different ways of showing the same thing — a part of a whole. Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.
 
@@ -34,7 +34,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 
 {{< learn >}}
 
-### 1.4.1 - What Are Fractions, Decimals, and Percents?
+### 1.6.1 - What Are Fractions, Decimals, and Percents?
 
 Fractions, decimals, and percents are all ways of showing a **part of a whole**.
 
@@ -73,7 +73,7 @@ Fractions, decimals, and percents all show the same thing in different ways. You
 
 ---
 
-### 1.4.2 - Converting Fractions to Decimals
+### 1.6.2 - Converting Fractions to Decimals
 
 Have you ever wondered why the division symbol (&divide;) looks the way it does?  It has two dots separated by a bar because it represents a fraction! This is because fractions are just a different way to show division. To convert a fraction to a decimal, all we have to do is **divide** the numerator by the denominator.
 
@@ -137,7 +137,7 @@ $$
 
 ---
 
-### 1.4.3 - Converting Fractions and Decimals to Percents
+### 1.6.3 - Converting Fractions and Decimals to Percents
 
 Turning a decimal into a percent is easy. We simply move the decimal point to the right twice (the same as multiplying by 100) and then add a % sign.
 
@@ -192,7 +192,7 @@ $$
 
 ---
 
-### 1.4.4 Converting Decimals to Fractions
+### 1.6.4 Converting Decimals to Fractions
 
 What if we want to go the other direction and convert a decimal to a fraction? The key to doing this is understanding {{< glink "place value" >}}. 
 
@@ -257,7 +257,7 @@ $$
 
 ---
 
-### 1.4.5 - Converting Percents to Decimals and Fractions
+### 1.6.5 - Converting Percents to Decimals and Fractions
 
 To convert a percent to a decimal simply move the decimal two places left (the same as dividing by 100).
 
@@ -301,7 +301,7 @@ $$
 :::
 ---
 
-### 1.4.6 - Bringing It All Together
+### 1.6.6 - Bringing It All Together
 
 Now that you’ve seen how to convert between fractions, decimals, and percents, here’s a summary table to help you remember the steps:
 

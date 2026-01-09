@@ -1,4 +1,4 @@
-# 1.5 - Multiplying & Dividing Fractions {.unnumbered}
+# 1.4 - Multiplying & Dividing Fractions {.unnumbered}
 
 In previous lessons, you've learned how fractions, decimals, and percents relate to each other. But to solve real-world problems—like adjusting recipes, calculating discounts, or determining grades—you also need to multiply and divide these numbers.
 
@@ -23,7 +23,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 
 {{< learn >}}
 
-### 1.5.1 - Multiplying Fractions
+### 1.4.1 - Multiplying Fractions
 
 Multiplying by a fraction means finding a fraction **of** something else. In other words, you're finding a **part of a part**.
 
@@ -100,7 +100,7 @@ $$
 
 ---
 
-### 1.5.2 - Multiplying Mixed Numbers
+### 1.4.2 - Multiplying Mixed Numbers
 
 A {{< glink "mixed number" >}} is a number that has a whole part and a fraction part, like $4\tfrac{2}{3}$.
 Before multiplying, we first need to convert to an {{< glink "improper fraction" >}}.
@@ -165,7 +165,7 @@ $$
 
 ---
 
-### 1.5.3 - Division & Reciprocals
+### 1.4.3 - Division & Reciprocals
 
 Dividing fractions? Easy—meet the {{< glink reciprocal >}}. It flips fractions upside down!
 

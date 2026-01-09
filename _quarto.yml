@@ -53,9 +53,9 @@ book:
         - file: chapters/Unit_1/1.1_Integers_&_Number_Lines.qmd
         - file: chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.qmd
         - file: chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
-        - file: chapters/Unit_1/1.4_Fractions_Decimals_&_Percents.qmd
-        - file: chapters/Unit_1/1.5_Multiply_Divide_&_Compare_Fractions.qmd
-        - file: chapters/Unit_1/1.6_Adding_and_Subtracting_Fractions.qmd
+        - file: chapters/Unit_1/1.4_Multiply_Divide_&_Compare_Fractions.qmd
+        - file: chapters/Unit_1/1.5_Adding_and_Subtracting_Fractions.qmd
+        - file: chapters/Unit_1/1.6_Fractions_Decimals_&_Percents.qmd
         - file: chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
         - file: chapters/Unit_1/1.8_Order_of_Operations.qmd
         - file: chapters/Unit_1/Review.qmd

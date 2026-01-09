@@ -7,8 +7,9 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 * Integers & number lines (opposites, absolute value, distance, ordering)
 * Factors, multiples, prime factorization; GCF
 * Simplifying fractions
-* Converting among fractions, decimals, and percents; deciding if a fraction’s decimal ends or repeats
 * Multiplying & dividing fractions (including mixed numbers)
+* Adding & subtracting fractions
+* Converting among fractions, decimals, and percents; deciding if a fraction’s decimal ends or repeats
 * Comparing and ordering numbers in different forms
 * Order of operations
 
@@ -92,6 +93,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 ### GCF & Simplifying Fractions (1.3)
 
 10. Find the greatest common factor.
+    
     a. $18$, $24$ 
     
     b. $45$, $60$ 
@@ -101,7 +103,6 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     d. $28$, $70$ 
     
     e. $48$, $180$
-
 
 11. Simplify each fraction.
     
@@ -119,82 +120,9 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 
 ---
 
-### Fractions, Decimals & Percents (1.4)
+### Multiply & Divide Fractions (1.4)
 
-12. Convert fraction → decimal and percent.
-    
-    a. $\frac{3}{8}$ 
-    
-    b. $\frac{5}{12}$ 
-    
-    c. $\frac{7}{20}$ 
-    
-    d. $\frac{2}{9}$ 
-    
-    e. $\frac{11}{25}$
-
-13. Convert decimal → fraction and percent.
-    
-    a. $0.6$ 
-    
-    b. $0.125$ 
-    
-    c. $0.375$ 
-    
-    d. $1.2$ 
-    
-    e. $0.04$
-
-14. Convert percent → fraction and decimal.
-    
-    a. $45\%$ 
-    
-    b. $12.5\%$ 
-    
-    c. $250\%$ 
-    
-    d. $6\%$ 
-    
-    e. $37.5\%$
-
-15. Decide if the fraction’s decimal **ends** or **repeats**. Then write the decimal.
-    
-    a. $\frac{1}{8}$ 
-    
-    b. $\frac{7}{12}$ 
-    
-    c. $\frac{2}{5}$
-    
-    d. $\frac{5}{6}$ 
-    
-    e. $\frac{3}{20}$ 
-    
-    f. $\frac{4}{11}$
-
-16. Compare with >, <, or =.
-
-    a. $\frac{3}{4}$ \_\_\_ $0.7$ 
-    
-    b. $\frac{2}{3}$ \_\_\_ $65\%$ 
-    
-    c. $0.45$ \_\_\_ $\frac{5}{9}$
-
-    d. $1.2$ \_\_\_ $\frac{6}{5}$
-    
-    e. $0.8$ \_\_\_ $\frac{3}{4}$
-
-
-17. Order from least to greatest.
-    
-    a. $0.6, \frac{5}{8}, 62\%, 0.63$
-    
-    b. $\frac{3}{5}, 0.56, 58\%, 0.6$
-
----
-
-### Multiply & Divide Fractions (1.5)
-
-18. **Multiply.** Simplify your answers.
+12. **Multiply.** Simplify your answers.
 
     a. $\frac{3}{4} \times \frac{2}{5}$
     
@@ -208,7 +136,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     
     f. $1\tfrac{1}{2} \times 2\tfrac{2}{5}$
 
-19. **Divide.** Simplify your answers.
+13. **Divide.** Simplify your answers.
     
     a. $\frac{3}{4} \div \frac{2}{5}$ 
     
@@ -224,24 +152,95 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 
 ---
 
-### Adding and Subtracting Fractions (1.6)
+### Adding & Subtracting Fractions (1.5)
 
-20. **Add.** Simplify your answers.
+14. **Add or subtract.** Simplify your answers.
     
-    a.
-
-    b.
-
-    c.
-
-    d.
-
-    e.
-
-    f.
+    a. $\frac{3}{8} + \frac{1}{8}$
+    
+    b. $\frac{5}{6} - \frac{1}{6}$
+    
+    c. $\frac{1}{4} + \frac{2}{3}$
+    
+    d. $\frac{7}{10} - \frac{3}{5}$
+    
+    e. $\frac{9}{8} + \frac{1}{4}$
+    
+    f. $2\tfrac{1}{3} - \tfrac{2}{3}$
 
 ---
 
+### Fractions, Decimals & Percents (1.6)
+
+15. Convert fraction → decimal and percent.
+    
+    a. $\frac{3}{8}$ 
+    
+    b. $\frac{5}{12}$ 
+    
+    c. $\frac{7}{20}$ 
+    
+    d. $\frac{2}{9}$ 
+    
+    e. $\frac{11}{25}$
+
+16. Convert decimal → fraction and percent.
+    
+    a. $0.6$ 
+    
+    b. $0.125$ 
+    
+    c. $0.375$ 
+    
+    d. $1.2$ 
+    
+    e. $0.04$
+
+17. Convert percent → fraction and decimal.
+    
+    a. $45\%$ 
+    
+    b. $12.5\%$ 
+    
+    c. $250\%$ 
+    
+    d. $6\%$ 
+    
+    e. $37.5\%$
+
+18. Decide if the fraction’s decimal ends or repeats. Then write the decimal.
+    
+    a. $\frac{1}{8}$ 
+    
+    b. $\frac{7}{12}$ 
+    
+    c. $\frac{2}{5}$
+    
+    d. $\frac{5}{6}$ 
+    
+    e. $\frac{3}{20}$ 
+    
+    f. $\frac{4}{11}$
+
+19. Compare with >, <, or =.
+
+    a. $\frac{3}{4}$ \_\_\_ $0.7$ 
+    
+    b. $\frac{2}{3}$ \_\_\_ $65\%$ 
+    
+    c. $0.45$ \_\_\_ $\frac{5}{9}$
+
+    d. $1.2$ \_\_\_ $\frac{6}{5}$
+    
+    e. $0.8$ \_\_\_ $\frac{3}{4}$
+
+20. Order from least to greatest.
+    
+    a. $0.6, \frac{5}{8}, 62\%, 0.63$
+    
+    b. $\frac{3}{5}, 0.56, 58\%, 0.6$
+
+---
 
 ### Order of Operations (1.8)
 
@@ -299,29 +298,29 @@ Evaluate the following expressions:
 
 :::{.answers}
 
-1. –7, 12, 0, –15, 3
+1. $-7, 12, 0, -15, 3$
 
-2. 9, 6, 0, 14, 3
+2. $9, 6, 0, 14, 3$
 
-3. –5, –3, –1, 0, 2, 6
+3. $-5, -3, -1, 0, 2, 6$
 
 4. 
-    a. 5 
-    b. –24 
-    c. 10 
-    d. –11 
-    e. 5
+    a. $5$ 
+    b. $-24$ 
+    c. $10$ 
+    d. $-11$ 
+    e. $5$
 
 5. 
-    a. 7 
-    b. 7 
-    c. 7 
-    d. 0
+    a. $7$ 
+    b. $7$ 
+    c. $7$ 
+    d. $0$
 
 6. 
-    a. 1,2,3,6,9,18 
-    b. 1,2,3,4,6,8,12,24 
-    c. 1,2,3,5,6,10,15,30
+    a. $1,2,3,6,9,18$ 
+    b. $1,2,3,4,6,8,12,24$ 
+    c. $1,2,3,5,6,10,15,30$
 
 7. 
     a. prime 
@@ -331,135 +330,135 @@ Evaluate the following expressions:
     e. composite
 
 8. 
-    a. 2²·3² 
-    b. 2²·3·7
-    c. 2·3²·5
-    d. 2³·3²
+    a. $2^2 \cdot 3^2$ 
+    b. $2^2 \cdot 3 \cdot 7$
+    c. $2 \cdot 3^2 \cdot 5$
+    d. $2^3 \cdot 3^2$
 
-9. 6, 12, 18, 24, 30
+9. $6, 12, 18, 24, 30$
 
 10. 
-    a. 6 
-    b. 15 
-    c. 9 
-    d. 14 
-    e. 12
+    a. $6$ 
+    b. $15$ 
+    c. $9$ 
+    d. $14$ 
+    e. $12$
 
 11. 
-    a. 3/4 
-    b. 3/4 
-    c. 2/5 
-    d. 4/3 
-    e. 4/15 
-    f. 5/8
+    a. $3/4$ 
+    b. $3/4$ 
+    c. $2/5$ 
+    d. $4/3$ 
+    e. $4/15$ 
+    f. $5/8$
 
-12. 
-    a. 37.5% 
-    b. 41.\overline{6}% 
-    c. 35%
-    d. 22.\overline{2}% 
-    e. 44%
+12.
+    a. $3/10$  
+    b. $1/2$  
+    c. $3/4$  
+    d. $1/4$  
+    e. $1$  
+    f. $18/5\;(3\tfrac{3}{5})$
 
 13. 
-    a. 3/5, 60% 
-    b. 1/8, 12.5% 
-    c. 3/8, 37.5% 
-    d. 6/5, 120% 
-    e. 1/25, 4%
+    a. $15/8\;(1\tfrac{7}{8})$ 
+    b. $3/2\;(1\tfrac{1}{2})$ 
+    c. $1/4$ 
+    d. $4$
+    e. $5/2\;(2\tfrac{1}{2})$ 
+    f. $20/9\;(2\tfrac{2}{9})$
 
-14. 
-    a. 9/20, 0.45 
-    b. 1/8, 0.125 
-    c. 5/2, 2.5 
-    d. 3/50, 0.06 
-    e. 3/8, 0.375
+14.  
+    a. $1/2$  
+    b. $2/3$  
+    c. $11/12$  
+    d. $1/10$  
+    e. $11/8\;(1\tfrac{3}{8})$  
+    f. $1\tfrac{2}{3}$  
 
 15. 
-    a. ends, 0.125 
-    b. repeats, 0.58\overline{3} 
-    c. ends, 0.4
-    d. repeats, 0.8\overline{3} 
-    e. ends, 0.15 
-    f. repeats, 0.\overline{36}
+    a. $0.375,\;37.5\%$ 
+    b. $0.41\overline{6},\;41.\overline{6}\%$ 
+    c. $0.35,\;35\%$
+    d. $0.\overline{2},\;22.\overline{2}\%$ 
+    e. $0.44,\;44\%$
 
 16. 
-    a. \> 
-    b. \> 
-    c. \< 
-    d. \= 
-    e. \>
+    a. $3/5,\;60\%$ 
+    b. $1/8,\;12.5\%$ 
+    c. $3/8,\;37.5\%$ 
+    d. $6/5,\;120\%$ 
+    e. $1/25,\;4\%$
 
 17. 
-    a. 0.6 \< 62\% \< 5/8 \< 0.63
-    
-    b. 0.56 \< 58\% < 3/5 = 0.6
+    a. $9/20,\;0.45$ 
+    b. $1/8,\;0.125$ 
+    c. $5/2,\;2.5$ 
+    d. $3/50,\;0.06$ 
+    e. $3/8,\;0.375$
 
-18.
-    a.
-    b.
-    c.
-    d.
-    e.
-    f.
+18. 
+    a. ends, $0.125$ 
+    b. repeats, $0.58\overline{3}$ 
+    c. ends, $0.4$
+    d. repeats, $0.8\overline{3}$ 
+    e. ends, $0.15$ 
+    f. repeats, $0.\overline{36}$
 
 19. 
-    a. 3/10 
-    b. 1/2 
-    c. 3/4 
-    d. 1/4 
-    e. 1 
-    f. 18/5 (3 3/5)
+    a. $>$ 
+    b. $>$ 
+    c. $<$ 
+    d. $=$ 
+    e. $>$ 
 
 20. 
-    a. 15/8 (1 7/8) 
-    b. 3/2 (1 1/2) 
-    c. 1/4 
-    d. 4
-    e. 5/2 (2 1/2) 
-    f. 20/9 (2 2/9)
+    a. $0.6 < 62\% < 5/8 < 0.63$
+    
+    b. $0.56 < 58\% < 3/5 = 0.6$
 
+21. $4$ 
 
-21. 4 
+22. $16$ 
 
-22. 16 
+23. $0$ 
 
-23. 0 
+24. $3$ 
 
-24. 3 
+25. $11$ 
 
-25. 11 
+26. $2$
 
-26. 2
+27. $24$ 
 
-27. 24 
+28. $0$ 
 
-28. 0 
+29. $36/5\;(7.2)$ 
 
-29. 36/5 (7.2) 
+30. $1$ 
 
-30. 1 
+31. $1$ 
 
-31. 1 
+32. $4$
 
-32. 4
+33. $3/2\;(1\tfrac{1}{2})$
 
-33. 3/2 (1 1/2)
+34. $3/8$ and $37.5\%$
 
-34. 3/8 and 37.5%
+35. $18$
 
-35. 18
+36. $2^5 \cdot 3$
 
-36. 2⁵·3
+37. $3/4 = 75\% < 0.76$
 
-37. 3/4 = 75% < 0.76
+38. $7$
 
-38. 7
+39. $13$
 
-39. 13
+40. $3/8$
 
-40. 3/8
+41. ends, $0.175$
 
-41. ends, 0.175
+42. $50/9\;(5\tfrac{5}{9})$
 
-42. 50/9 (5 5/9)
 :::

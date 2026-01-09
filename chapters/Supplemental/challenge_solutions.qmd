@@ -30,18 +30,7 @@ No Challenge Questions
 
 :::
 
-### 1.4 - Fractions, Decimals, and Percents
-
-:::{.answers}
-
-8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
-
-
-9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
-
-:::
-
-### 1.5 - Multiply, Divide, and Compare Fractions
+### 1.4 - Multiply, Divide, and Compare Fractions
 
 :::{.answers}
 
@@ -52,9 +41,24 @@ No Challenge Questions
 
 :::
 
-### 1.6 - Adding and Subtracting Fractions
+### 1.5 - Adding and Subtracting Fractions
 
 :::{.answers}
+
+16. $\frac{5}{8}$ 
+     
+17. $8\tfrac{1}{2}$  
+    
+:::
+
+### 1.6 - Fractions, Decimals, and Percents
+
+:::{.answers}
+
+8. B. $\frac{3}{4} = 0.75$. 0.72 is only 0.03 units away from 0.75. The rest are farther away.
+
+
+9. Both Emily and Omar tied for highest at 75%. Jalen got the lowest at 70%.
 
 :::
 

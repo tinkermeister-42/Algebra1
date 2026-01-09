@@ -31,14 +31,14 @@ Break numbers into their prime building blocks using factor trees.
 [**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions.html)  
 Use prime factorization to find the GCF and simplify fractions to their simplest form.
 
-[**Fractions, Decimals & Percents – Conversions**](1.4_Fractions_Decimals_&_Percents.html)  
-Convert between different number forms and compare them.
-
-[**Multiply, Divide & Compare Fractions**](1.5_Multiply_Divide_&_Compare_Fractions.html)  
+[**Multiply, Divide & Compare Fractions**](1.4_Multiply_Divide_&_Compare_Fractions.html)  
 Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.
 
-[**Adding & Subtracting Fractions**](1.6_Adding_and_Subtracting_Fractions.qmd)
+[**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.qmd)
 Learn to add and subtract fractions by finding a common denominator.
+
+[**Fractions, Decimals & Percents – Conversions**](1.6_Fractions_Decimals_&_Percents.html)  
+Convert between different number forms and compare them.
 
 [**Solving Problems with Fractions, Decimals & Percents**](1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html)  
 Solve real-world problems using these different number forms.

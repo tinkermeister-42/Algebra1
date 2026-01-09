@@ -1,4 +1,4 @@
-# 1.6 - Adding & Subtracting Fractions {.unnumbered}
+# 1.5 - Adding & Subtracting Fractions {.unnumbered}
 
 In earlier lessons, you learned how to multiply and divide fractions. But many real-world problems, like combining ingredients, measuring distance, or tracking time, require **adding and subtracting** fractions instead.
 
@@ -54,7 +54,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 
 {{< learn >}}
 
-### 1.6.1 - Adding Fractions with Like Denominators
+### 1.5.1 - Adding Fractions with Like Denominators
 
 When fractions have the **same denominator**, they describe pieces of the **same size**.
 
@@ -87,7 +87,7 @@ $$
 
 ---
 
-### 1.6.2 - Adding Fractions with Unlike Denominators
+### 1.5.2 - Adding Fractions with Unlike Denominators
 
 When fractions have **different denominators**, they describe pieces of **different sizes**.  
 Before we can add or subtract, we need to rewrite them so the pieces match.
@@ -218,7 +218,7 @@ $$
 $$
 :::
 
-### 1.6.3 - Adding & Subtracting Mixed Numbers
+### 1.5.3 - Adding & Subtracting Mixed Numbers
 
 A {{< glink "mixed number" >}} has a whole number and a fraction, like $2\tfrac{1}{3}$.
 
@@ -385,8 +385,5 @@ How many miles did they run total?
 13. $\frac{7}{8}$  
 14. $2\tfrac{3}{4}$  
 15. $\frac{5}{12}$  
-
-16. $\frac{5}{8}$  
-17. $8\tfrac{1}{2}$  
 
 :::
