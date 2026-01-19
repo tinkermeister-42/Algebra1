@@ -1,6 +1,6 @@
 # 1.4 - Multiplying & Dividing Fractions {.unnumbered}
 
-In previous lessons, you've learned how fractions, decimals, and percents relate to each other. But to solve real-world problems—like adjusting recipes, calculating discounts, or determining grades—you also need to multiply and divide these numbers.
+In previous lessons, you've learned how fractions, decimals, and percents relate to each other. But to solve real-world problems (like adjusting recipes, calculating discounts, or determining grades) you also need to multiply and divide these numbers.
 
 In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a {{< glink reciprocal >}}. These skills will help you tackle percent problems and practical applications in upcoming lessons.
 
@@ -40,7 +40,7 @@ Here is what it looks like to find how many fourths are in one half:
 That blue slice shows one of the four parts of the darker half.  
 Since there are 8 total pieces, and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.
 
-Drawing pie charts every time we multiply would take forever—so here's the shortcut:
+Drawing pie charts every time we multiply would take forever, so here's the shortcut:
 
 - Multiply numerators together.
 - Multiply denominators together.
@@ -167,11 +167,10 @@ $$
 
 ### 1.4.3 - Division & Reciprocals
 
-Dividing fractions? Easy—meet the {{< glink reciprocal >}}. It flips fractions upside down!
+If you can multiply fractions, you just need one more simple tool to divide them, the {{< glink reciprocal >}}. The reciprocal of a fraction flips it upside down.
 
  - Reciprocal of  $\frac{3}{4}$ is $\frac{4}{3}$
  - Reciprocal of 5 is $\frac{1}{5}$
-
 
 To divide fractions, multiply by the reciprocal of the {{< glink divisor >}}:
 

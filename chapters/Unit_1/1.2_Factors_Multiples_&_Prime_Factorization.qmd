@@ -1,6 +1,6 @@
 # 1.2 - Factors, Multiples & Prime Factorization {.unnumbered}
 
-Have you ever had to split something up evenly — like slices of pizza or players on a team? That’s really what {{< glink factor text="factors" >}} are about: dividing numbers into equal parts.
+Have you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what {{< glink factor text="factors" >}} are about: dividing numbers into equal parts.
 
 In this lesson, you’ll learn how to:
 
@@ -10,7 +10,7 @@ In this lesson, you’ll learn how to:
 
   - Break numbers into their basic building blocks using a {{< glink "factor tree" >}}.
 
-You’ll use these skills again and again — from simplifying fractions to solving equations.
+You’ll use these skills again and again, from simplifying fractions to solving equations.
 
 ::: {.objectives}
 - [ ] I can find the factors and multiples of integers
@@ -34,7 +34,7 @@ You’ll use these skills again and again — from simplifying fractions to solv
 
 ### 1.2.1 - What Are Factors?
 
-A {{< glink factor >}} of a number is a whole number that divides it evenly — with no {{< glink remainder >}}.
+A {{< glink factor >}} of a number is a whole number that divides it evenly (with no {{< glink remainder >}}).
 
 **Example 1:** Factors of 12
 
@@ -83,7 +83,7 @@ If a bus comes every 15 minutes, the arrival times are multiples of 15.
 
 ### 1.2.3 - Prime vs. Composite
 
-Some numbers can only be divided evenly two ways — others can be broken into many parts. Let's explore the difference between {{< glink slug=prime-number text="prime numbers" >}} and {{< glink slug=composite-number text="composite numbers" >}}.
+Some numbers can only be divided evenly two ways, others can be broken into many parts. Let's explore the difference between {{< glink slug=prime-number text="prime numbers" >}} and {{< glink slug=composite-number text="composite numbers" >}}.
 
 A **prime number** has only 2 factors: 1 and itself.
 
@@ -98,7 +98,7 @@ People around the world spend years searching for giant prime numbers. The large
 
 Why go to all that trouble?
 
-Prime numbers are the secret behind modern encryption. They're used to protect everything from bank accounts to private messages. The bigger the primes, the harder they are to break — which is why finding huge ones is such a big deal.
+Prime numbers are the secret behind modern encryption. They're used to protect everything from bank accounts to private messages. The bigger the primes, the harder they are to break. That's why finding huge ones is such a big deal.
 
 It’s like a global math scavenger hunt… with real-world consequences.
 :::
@@ -107,9 +107,9 @@ It’s like a global math scavenger hunt… with real-world consequences.
 
 ### 1.2.4 - Prime Factorization and Factor Trees
 
-Every number can be broken into a {{< glink product >}} of prime numbers — sort of like breaking a LEGO® sculpture into individual bricks. These prime factors are the basic building blocks of all whole numbers.
+Every number can be broken into a {{< glink product >}} of prime numbers. These prime factors are the basic building blocks of all whole numbers.
 
-We use **factor trees** to find these prime factors. This isn’t just a fun trick — it builds your {{< glink "number sense" >}}: your ability to see patterns, understand how numbers are structured, and work confidently with them.
+We use **factor trees** to find these prime factors. This isn’t just a fun trick, it builds your {{< glink "number sense" >}}, your ability to see patterns, understand how numbers are structured, and work confidently with them.
 
 That number sense will come in handy later when you:
 

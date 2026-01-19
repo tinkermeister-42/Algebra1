@@ -1,10 +1,10 @@
 # 1.1 - Integers & Number Lines {.unnumbered}
 
-Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like {{< glink algebra >}} and {{< glink calculus >}} are just clever ways of organizing and extending basic ideas — like moving forward and backward on a {{< glink "number line" >}}.
+Did you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like {{< glink algebra >}} and {{< glink calculus >}} are just clever ways of organizing and extending basic ideas (like moving forward and backward on a {{< glink "number line" >}}).
 
 In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare {{< glink positive >}} and {{< glink negative >}} numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.
 
-Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line — including things like {{< glink slug="opposite" text="opposites" >}}, {{< glink "absolute value" >}}, and comparison — you’ll be setting yourself up for success in the rest of the course.
+Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line (including things like {{< glink slug="opposite" text="opposites" >}}, {{< glink "absolute value" >}}, and comparison) you’ll be setting yourself up for success in the rest of the course.
 
 ::: {.objectives}
 - [ ] I know how to read and use a number line
@@ -31,13 +31,13 @@ Answer as best you can -- even if you aren't sure!
 
 ### 1.1.1 - The Number Line Is More Than Just Counting
 
-You already know how to count — 0, 1, 2, 3, and so on. The **number line** extends that idea in both directions.
+You already know how to count (0, 1, 2, 3, and so on). The **number line** extends that idea in both directions.
 
 
 **Let’s draw a number line from -10 to 10**
 ![](/images/Unit_1/Lesson_1/blank_numberline.png)
 
-Here, every tick mark is an {{< glink integer >}} — a whole number.
+Here, every tick mark is an {{< glink integer >}} (a whole number).
 
 - Numbers to the **right** of zero are {{< glink positive >}}
 - Numbers to the **left** of zero are {{< glink negative >}}
@@ -314,7 +314,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 5. *Answers vary. Example:*
    
    ![](/images/Unit_1/Lesson_1/answer_5.png)
-6. Yes — the opposite is -3.5
+6. Yes (the opposite is -3.5)
 
 ---
 
@@ -324,7 +324,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
 8. -10 has the greater absolute value (10 > 5)
 
-9. Yes — 28 is greater because it is to the right of -30
+9. Yes (28 is greater because it is to the right of -30)
 
 10. a. -11 > -13
     b. 7 > -2
@@ -335,7 +335,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
     c. |-5| > |4| (5 > 4)
 
 12. a. 2 > -7
-    b. *Answers vary — for example, 2025 > 1985*
+    b. *Answers vary: for example, 2025 > 1985*
        
        ![](/images/Unit_1/Lesson_1/answer_12_b.png)
 

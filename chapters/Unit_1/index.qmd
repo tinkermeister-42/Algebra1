@@ -1,6 +1,6 @@
 # Introduction {.unnumbered}
 
-Welcome to Unit 1! This is where you’ll build your Algebra toolkit — skills like working with integers, simplifying fractions, and following the order of operations.
+Welcome to Unit 1! This is where you’ll build your Algebra toolkit, skills like working with integers, simplifying fractions, and following the order of operations.
 
 You’ll use these tools again and again to solve expressions, equations, and real-world problems throughout the year.
 

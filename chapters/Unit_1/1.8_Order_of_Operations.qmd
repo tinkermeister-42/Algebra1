@@ -6,9 +6,9 @@ $$
 6 + 2 \times 3
 $$
 
-If you said 24, you're not alone—but that's not the correct answer. Math has specific rules for what to do first. These rules are called the {{< glink "order of operations" >}}, and they help make sure everyone simplifies {{< glink slug=expression text="expressions" >}} the same way.
+If you said 24, you're not alone, but that's not the correct answer. Math has specific rules for what to do first. These rules are called the {{< glink "order of operations" >}}, and they help make sure everyone simplifies {{< glink slug=expression text="expressions" >}} the same way.
 
-In this lesson, you'll learn how to follow those rules correctly—even when negatives, fractions, and grouping symbols are involved.
+In this lesson, you'll learn how to follow those rules correctly, even when negatives, fractions, and grouping symbols are involved.
 
 :::{.objectives}
 - [ ] I follow the correct order of operations (PEMDAS).
@@ -35,7 +35,7 @@ $$
 
 ### 1.8.1 - The Order Matters
 
-In math, the order you do things **really matters** — doing steps out of order can completely change the answer.
+In math, the order you do things **really matters**, doing steps out of order can completely change the answer.
 
 Take this simple-looking problem:
 
@@ -55,7 +55,7 @@ $$
 10 + \textcolor{red}{3 \times 5} = 10 + \textcolor{red}{15} = 25
 $$
 
-So which one is correct — **65 or 25**?
+So which one is correct, **65 or 25**?
 
 ✅ The correct answer is **25**, because we follow a specific order of {{< glink slug=operation text="operations" >}}. Without these rules, people could get different answers to the same problem!
 
@@ -100,7 +100,7 @@ The same is true for addition and subtraction. Subtraction is really just adding
 
 ### 1.8.2 - Examples with Integers
 
-Let’s look at some {{< glink slug=expression text="expressions" >}} that follow the order of operations. These use only whole numbers — no fractions or negatives yet.
+Let’s look at some {{< glink slug=expression text="expressions" >}} that follow the order of operations. These use only whole numbers (no fractions or negatives yet).
 
 
 **Example 1:** $5 + 3 \times 2$
@@ -171,7 +171,7 @@ $$
 
 ### 1.8.3 - With Negatives and Fractions
 
-Once you're comfortable with the basics, we can add in **negative numbers** and **fractions**. The order of operations still works the same way — you just have to be more careful.
+Once you're comfortable with the basics, we can add in **negative numbers** and **fractions**. The order of operations still works the same way, you just have to be more careful.
 
 
 **Example 4:** $-3 \times (4 - 7)$
@@ -202,7 +202,7 @@ Now try it with a negative number:
 $-3 \times -1 = 3$ → the negative 3 becomes positive
 
 So multiplying by $-1$ always gives the **opposite sign**.  
-That’s why $-3 \times -1 = 3$ — the opposite of negative 3 is positive 3.
+That’s why $-3 \times -1 = 3$, the opposite of negative 3 is positive 3.
 
 :::
 
@@ -229,7 +229,7 @@ $$
 
 This fraction means to divide **after** you do the work on top.
 
-Even though there are no parentheses, the **fraction bar acts like grouping symbols** — just like parentheses.
+Even though there are no parentheses, the **fraction bar acts like grouping symbols** just like parentheses do.
 
 So:
 
@@ -287,7 +287,7 @@ $$
 
 :::{.think title="Why are parentheses so important here?"}
 
-Without parentheses, you might square the wrong number. Always follow PEMDAS and work **inside parentheses first** — especially when there are **multiple layers**.
+Without parentheses, you might square the wrong number. Always follow PEMDAS and work **inside parentheses first** (especially when there are multiple layers).
 
 :::
 
@@ -471,7 +471,7 @@ Same ingredients, different result. Order matters!
 
 
 7. Create your own expression using **at least three operations**, **one fraction**, and **a set of parentheses**.  
-   Swap with a partner — can they simplify it correctly?
+   Swap with a partner, can they simplify it correctly?
 
 
 :::{.answers}

@@ -1,6 +1,6 @@
 # 1.6 - Fractions, Decimals & Percents: Conversions {.unnumbered}
 
-Fractions, decimals, and percents are just different ways of showing the same thing — a part of a whole. Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.
+Fractions, decimals, and percents are just different ways of showing the same thing (a part of a whole). Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.
 
 In this lesson, you’ll learn how to move between these forms and understand how they relate to each other. This will be an important skill for solving many types of problems that involve parts of a whole.
 
@@ -101,13 +101,13 @@ $\frac{1}{3} = 0.\overline{3}$
 
 When you use a calculator to turn a fraction into a decimal, the result might look like it stops, but that can be misleading!
 
-Some fractions have repeating decimals that go on forever — but calculators round or cut them off.
+Some fractions have repeating decimals that go on forever, but calculators round or cut them off.
 
 For example:
 
 $\frac{2}{3}$ really equals $0.\overline{6}$ (0.6666…) but your calculator might show 0.6666666667
 
-This can cause small errors if you're not careful — especially when comparing values or converting back to fractions.
+This can cause small errors if you're not careful, especially when comparing values or converting back to fractions.
 
 👉 Tip: If the decimal looks like it’s repeating (like 0.6666666667 or 0.14285714286...), it probably is!
 :::

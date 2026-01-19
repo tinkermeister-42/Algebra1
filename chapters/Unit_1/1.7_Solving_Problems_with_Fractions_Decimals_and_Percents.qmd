@@ -2,7 +2,7 @@
 
 Now that you know how to multiply and divide fractions, you're ready to apply those skills to real-life problems.
 
-Fractions, decimals, and percents all show parts of a whole — but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
+Fractions, decimals, and percents all show parts of a whole, but they’re used in different ways. We see them every day: in grades, prices, sales, surveys, and more.
 
 In this lesson, you’ll practice choosing the right form for the situation, estimating or calculating accurately, and solving common problems like “What percent of this is that?” or “What do I need to score on the test to get an A?”
 
@@ -59,7 +59,7 @@ Convert the percent to a decimal first!
 
 What is 15% of 80?
 
-You're looking for a small part of 80 — just 15 out of every 100. That’s what 15% means.
+You're looking for a small part of 80, just 15 out of every 100. That’s what 15% means.
 
 We can turn this into a math sentence by translating the words:
 
@@ -124,7 +124,7 @@ So only 4% of students get enough sleep!
 
 **25% of a number is 10. What is the number?**
 
-We’re told that 10 is **25% of the total**. That means 10 is just a piece — one-fourth — of the whole. (Since $25\% = \frac{1}{4}$.)
+We’re told that 10 is **25% of the total**. That means 10 is just a piece (one-fourth) of the whole. (Since $25\% = \frac{1}{4}$.)
 
 If one-fourth of something is 10, then we can picture the whole as being made up of **4 equal parts** of 10:
 
@@ -146,7 +146,7 @@ $$
 10 \div 0.25 = 40
 $$
 
-So the total is still **40** — it is just another way to get the same answer.
+So the total is still **40**. It is just another way to get the same answer.
 
 
 :::{.you-try title="20% of a number is 12. What is the number?"}

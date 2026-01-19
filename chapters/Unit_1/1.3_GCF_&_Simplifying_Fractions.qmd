@@ -2,7 +2,7 @@
 
 Suppose you’re making snack packs and have 20 bags of chips and 35 cookies. What’s the greatest number of identical packs you can make with no leftovers? To figure that out, you’d use something called the {{< glink "greatest common factor" >}} (GCF).
 
-In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to find the GCF — and how that can help you simplify {{< glink slug=fraction text="fractions" >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
+In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to find the GCF, and how that can help you simplify {{< glink slug=fraction text="fractions" >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
 
 ::: {.objectives}
 - [ ] I can find the GCF using factor trees
@@ -549,7 +549,7 @@ $$
 \frac{36 \div 12}{60 \div 12} = \frac{3}{5}
 $$
 
-This is just like the division you saw in the factor trees. We canceled out the factors they both had — two 2s and one 3 — and kept what was left.
+This is just like the division you saw in the factor trees. We canceled out the factors they both had (two 2s and one 3) and kept what was left.
 
 ---
 
@@ -632,7 +632,7 @@ $$
 
 ### 1.3.4  Application: Simplifying with Recipes
 
-Imagine you’re following a recipe that makes a giant batch of cookies — way more than you need. You decide to cut the recipe down to a smaller size, but the measurements are a little awkward.
+Imagine you’re following a recipe that makes a giant batch of cookies (way more than you need). You decide to cut the recipe down to a smaller size, but the measurements are a little awkward.
 
 Here’s what the recipe says:
 
@@ -640,7 +640,7 @@ Here’s what the recipe says:
 
 - 60 cups of sugar
 
-You don’t want to bake that much — just a smaller, simpler version of the same cookie. But how do you shrink the recipe without changing how the cookies taste?
+You don’t want to bake that much, just a smaller, simpler version of the same cookie. But how do you shrink the recipe without changing how the cookies taste?
 
 Let’s treat the ingredients like a {{< glink ratio >}}:
 
@@ -648,7 +648,7 @@ $$
 \frac{36 \text{ cups of flour}}{60 \text{ cups of sugar}}
 $$
  
-This **ratio** tells us how much flour to use per amount of sugar. But the numbers are too big — and a little messy.
+This **ratio** tells us how much flour to use per amount of sugar. But the numbers are too big (and a little messy).
 
 Just like with fractions, we can simplify this ratio by dividing both parts by their GCF. We already know the GCF of 36 and 60 is 12.
 
@@ -670,10 +670,10 @@ Or double that:
 
 - 10 cups of sugar
 
-Simplifying the original recipe helped you find a cleaner ratio — one that’s easier to scale up or down, depending on how many cookies you want.
+Simplifying the original recipe helped you find a cleaner ratio, one that’s easier to scale up or down, depending on how many cookies you want.
 
 ::: {.real-world}
-Simplifying isn’t just a math trick — it helps you work with numbers more easily in the real world. Whether you’re adjusting recipes, mixing paint, or scaling blueprints, understanding fractions and simplifying them makes life easier.
+Simplifying helps you work with numbers more easily in the real world. Whether you’re adjusting recipes, mixing paint, or scaling blueprints, understanding fractions and simplifying them makes life easier.
 :::
 
 {{< practice >}}
