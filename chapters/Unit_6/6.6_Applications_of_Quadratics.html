@@ -701,14 +701,14 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="parabola" data-slug="parabola" data-original-href="#glossary-parabola">parabola</a>, <a href="" class="glossary-link" data-term="vertex" data-slug="vertex" data-original-href="#glossary-vertex">vertex</a>, <a href="" class="glossary-link" data-term="zeros" data-slug="zeros" data-original-href="#glossary-zeros">zeros</a>, <a href="" class="glossary-link" data-term="quadratic model" data-slug="quadratic-model" data-original-href="#glossary-quadratic-model">quadratic model</a></p>
+<p><a href="" class="glossary-link" data-slug="zeros" data-original-href="#glossary-zeros" data-term="zeros">zeros</a>, <a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="" class="glossary-link" data-slug="quadratic-model" data-original-href="#glossary-quadratic-model" data-term="quadratic model">quadratic model</a>, <a href="" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
 <ol type="1">
 <li><p>Why might we use a quadratic function to model a ball being thrown in the air?</p></li>
 <li><p>If a quadratic has two solutions, what might those solutions represent in a real situation?</p></li>
-<li><p>Can you think of a situation where only of two solutions to a quadratic would make sense in the real world?</p></li>
+<li><p>Can you think of a situation where only one of the two solutions to a quadratic would make sense in the real world?</p></li>
 </ol>
 </section>
 <section class="level2">
@@ -731,7 +731,7 @@ y = ax^2 + bx + c
 <p><span class="math display">\[
 h(t) = at^2 + bt + c
 \]</span></p>
-<p>where <span class="math inline">\(t\)</span> is time and <span class="math inline">\(h(t)\)</span> is height.</p>
+<p>where <span class="math inline">\(t\)</span> is time in seconds and <span class="math inline">\(h(t)\)</span> is height in feet.</p>
 <hr>
 <p><strong>Example 1</strong></p>
 <p>A ball is thrown upward from a height of <span class="math inline">\(5\)</span> feet. Its height after <span class="math inline">\(t\)</span> seconds is given by</p>
@@ -762,7 +762,7 @@ t = \frac{-20 \pm 12\sqrt{5}}{-32}
 <p><span class="math display">\[
 t = \frac{-20 - 12\sqrt{5}}{-32} = \frac{5 + 3\sqrt{5}}{8} \approx 1.46
 \]</span></p>
-<p>So the ball hits the ground after about <span class="math inline">\(1.46\)</span> seconds.</p>
+<p>So the ball hits the ground after about <span class="math inline">\(1.46\)</span> seconds. We ignore the negative time because time cannot be negative in this situation.</p>
 <hr>
 <p><strong>Step 2 : Find the maximum height</strong></p>
 <p>The maximum happens at the vertex time:</p>
@@ -782,7 +782,7 @@ h\left(\frac{5}{8}\right) = \frac{45}{4} = 11.25
 <p>Maximum height is <span class="math inline">\(11.25\)</span> feet.</p>
 <hr>
 <div class="you-try-m" title="When does the ball hit the ground?">
-<p>A ball is thrown from a height of 6 feet with equation <span class="math inline">\(h(t) = -16t^2 + 24t + 6\)</span>. When does it hit the ground?</p>
+<p>A ball is thrown from a height of <span class="math inline">\(6\)</span> feet with equation <span class="math inline">\(h(t) = -16t^2 + 24t + 6\)</span>. When does it hit the ground?</p>
 </div>
 <div class="answer" title="Answer">
 <p>Set <span class="math inline">\(h(t)=0\)</span>:</p>
@@ -832,7 +832,7 @@ x^2 + 4x - 96 = 0
 <p><span class="math display">\[
 x = -12 \quad \text{or} \quad x = 8
 \]</span></p>
-<p>Only <span class="math inline">\(x=8\)</span> makes sense.</p>
+<p>Only <span class="math inline">\(x=8\)</span> makes sense because a length cannot be negative.</p>
 <p>Width is <span class="math inline">\(8\)</span> feet and length is <span class="math inline">\(12\)</span> feet.</p>
 <hr>
 <div class="note" title="Interpreting solutions">
@@ -849,6 +849,7 @@ x = -12 \quad \text{or} \quad x = 8
 <p>Let <span class="math inline">\(x\)</span> be the number of $1 increases.</p>
 <p>Price: <span class="math inline">\(10 + x\)</span><br>
 Tickets sold: <span class="math inline">\(80 - 5x\)</span></p>
+<p>Revenue (in dollars):</p>
 <p><span class="math display">\[
 R(x) = (10 + x)(80 - 5x)
 \]</span></p>
@@ -970,7 +971,9 @@ h\left(\frac{3}{2}\right)=-36+72+10=46
 \]</span> Maximum height is <span class="math inline">\(46\)</span> feet.</p></li>
 <li><p>Vertex: <span class="math display">\[
 x=-\frac{b}{2a}=-\frac{20}{2(-1)}=10
-\]</span> So profit is maximized at <span class="math inline">\(10\)</span> items.</p></li>
+\]</span> So profit is maximized at <span class="math inline">\(10\)</span> items. <span class="math display">\[
+P(10)=-100+200-60=40
+\]</span> The maximum profit is <span class="math inline">\(40\)</span> dollars.</p></li>
 </ol>
 <p><strong>Level 3</strong></p>
 <ol start="8" type="1">
@@ -1004,7 +1007,7 @@ t=\frac{0+5}{2}=2.5
 \]</span> Given maximum height <span class="math inline">\(64\)</span> at <span class="math inline">\(t=2.5\)</span>: <span class="math display">\[
 64=a(2.5)(-2.5)=a(-6.25)
 \]</span> <span class="math display">\[
-a=-\frac{64}{6.25}=-\frac{256}{25}=-10.24
+a=-\frac{64}{6.25}=-\frac{256}{25}
 \]</span> One possible model: <span class="math display">\[
 h(t)=-\frac{256}{25}t(t-5)
 \]</span></p></li>
