@@ -7,17 +7,16 @@ But quadratic equations were not invented just to be solved.
 They model real situations involving height, distance, area, revenue, and time. In this lesson, we will use quadratics to make sense of real world problems and interpret what the solutions actually mean.
 
 :::{.objectives}
-
-* [ ] I can write a quadratic equation to model a real situation.
-* [ ] I can solve quadratic application problems.
-* [ ] I can interpret solutions in context.
-
+- [ ] I can write a quadratic equation to model a real situation.
+- [ ] I can solve quadratic application problems.
+- [ ] I can interpret solutions in context.
 :::
 
 :::{.vocab}
-
-{{< glink parabola >}}, {{< glink vertex >}}, {{< glink zeros >}}, {{< glink "quadratic model" >}}
-
+{{< glink zeros >}},
+{{< glink "quadratic equation" >}},
+{{< glink "quadratic model" >}},
+{{< glink solution >}}
 :::
 
 {{< warmup >}}

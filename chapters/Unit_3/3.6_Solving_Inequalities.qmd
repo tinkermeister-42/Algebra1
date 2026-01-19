@@ -28,18 +28,16 @@ Problems like this one show the limitations of equations. Equations are great wh
 
 Unlike an equation, inequalities help us solve problems with a range of answers.
 
-::: {.objectives}
-
+:::{.objectives}
 - [ ] I can represent and graph solutions to inequalities on a number line.
 - [ ] I can solve inequalities using addition, subtraction, multiplication, and division.
 - [ ] I can use inequalities to model and solve real-world problems.
-
 :::
 
-::: {.vocab}
-
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink equation >}}, {{< glink inequality >}}, {{< glink solution >}}, {{< glink variable >}}
-
+:::{.vocab}
+{{< glink inequality >}},
+{{< glink solution >}},
+{{< glink "solution set"}}, {{< glink variable >}}
 :::
 
 {{< warmup >}}

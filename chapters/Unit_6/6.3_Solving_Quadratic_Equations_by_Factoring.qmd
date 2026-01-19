@@ -15,15 +15,17 @@ In this lesson, we will see that we already have all of the tools we need.
 ***
 
 :::{.objectives}
-
-* [ ] I can solve quadratic equations by factoring.
-* [ ] I can connect solutions (roots) to x-intercepts.
-* [ ] I can describe when a quadratic has two, one, or no real solutions.
-
+- [ ] I can solve quadratic equations by factoring.
+- [ ] I can connect solutions (roots) to x-intercepts.
+- [ ] I can describe when a quadratic has two, one, or no real solutions.
 :::
 
 :::{.vocab}
-{{< glink "quadratic equation" >}}, {{< glink root >}}, {{< glink "zero product property" >}}
+{{< glink "quadratic equation" >}},
+{{< glink "real solution" >}},
+{{< glink root >}},
+{{< glink "x-intercept" >}},
+{{< glink "zero product property" >}}
 :::
 
 {{< warmup >}}

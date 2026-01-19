@@ -11,7 +11,11 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 :::
 
 :::{.vocab}
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink expression >}}, {{< glink term >}}, {{< glink variable >}}
+{{< glink coefficient >}},
+{{< glink constant >}},
+{{< glink expression >}},
+{{< glink term >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

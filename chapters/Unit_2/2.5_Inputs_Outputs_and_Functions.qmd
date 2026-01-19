@@ -6,19 +6,20 @@ Now picture a small mystery machine on a desk with a sign that says “Feed me.�
 
 What could the rule be? How could we name it so others know exactly what it does? Machines like this—where each input leads to one specific output—are called {{< glink slug=function text=functions >}}.
 
-::: {.objectives}
-
+:::{.objectives}
 - [ ] I can read and use function notation like $f(x) = 2x+3$.
 - [ ] I can evaluate a function for a given input by substituting and simplifying.
 - [ ] I can simplify a function rule using distribution and combining like terms.
 - [ ] I can identify whether a relation is a function based on input and output pairs.
-
 :::
 
 :::{.vocab}
-
-{{< glink evaluate >}}, {{< glink expression >}}, {{< glink function >}}, {{< glink input >}}, {{< glink notation >}}, {{< glink output >}}, {{< glink simplify >}}
-
+{{< glink evaluate >}},
+{{< glink function >}},
+{{< glink input >}},
+{{< glink output >}},
+{{< glink relation >}},
+{{< glink simplify >}}
 :::
 
 {{< warmup >}}

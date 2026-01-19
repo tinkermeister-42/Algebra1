@@ -6,15 +6,14 @@ Now we’ll take that same idea and add one new twist, an **inequality symbol**.
 When we switch from **equations** to **inequalities**, we’re no longer looking for one line that fits. We’re looking for **all the points that make the inequality true**, a whole region of the graph.
 
 :::{.objectives}
-
-* [ ] I can graph linear inequalities in two variables.
-* [ ] I can solve linear inequalities in two variables and graph the solution.
-* [ ] I can solve systems of linear inequalities.
-
+- [ ] I can graph linear inequalities in two variables.
+- [ ] I can solve linear inequalities in two variables and graph the solution.
+- [ ] I can solve systems of linear inequalities.
 :::
 
 :::{.vocab}
-{{< glink inequality >}}, {{< glink greater than >}}, {{< glink less than >}}, {{< glink dashed line >}}, {{< glink solid line >}}, {{< glink solution set >}}
+{{< glink inequality >}},
+{{< glink "solution set" >}}
 :::
 
 {{< warmup >}}

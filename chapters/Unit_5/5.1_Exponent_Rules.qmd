@@ -8,18 +8,18 @@ This shorthand makes it much easier to work with larger problems, but it also me
 In this lesson, we’ll learn the rules, unpack *why* they work, and learn how to use them to simplify expressions.
 
 :::{.objectives}
-
-* [ ] I can describe what a **base** and an **exponent** are and what they mean.
-* [ ] I can apply the **rules of exponents** to simplify expressions with like bases.
-* [ ] I can simplify expressions that include **zero or negative exponents**.
-* [ ] I can rewrite expressions so that all exponents are **positive**.
-
+- [ ] I can describe what a **base** and an **exponent** are and what they mean.
+- [ ] I can apply the **rules of exponents** to simplify expressions with like bases.
+- [ ] I can simplify expressions that include **zero or negative exponents**.
+- [ ] I can rewrite expressions so that all exponents are **positive**.
 :::
 
 :::{.vocab}
-
-{{< glink base >}}, {{< glink exponent >}}, {{< glink "fractional exponent" >}}, {{< glink "negative exponent" >}}, {{< glink power >}}, {{< glink "power of a power" >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "zero exponent" >}}
-
+{{< glink base >}},
+{{< glink exponent >}},
+{{< glink "negative exponent" >}},
+{{< glink "positive exponent" >}},
+{{< glink "zero exponent" >}}
 :::
 
 {{< warmup >}}

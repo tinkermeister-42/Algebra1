@@ -19,14 +19,15 @@ In this lesson, we begin with the basic rules for solving equations:
 Later lessons will build on these rules to solve more complicated equations. 
 
 :::{.objectives}
-
 - [ ] I can solve one-step equations and show my work.
 - [ ] I can check a solution by substituting it into the original equation.
-
 :::
 
 :::{.vocab}
-{{< glink equation >}}, {{< glink "inverse operations" >}}, {{< glink solution >}}, {{< glink variable >}}
+{{< glink equation >}},
+{{< glink "inverse operations" >}},
+{{< glink solution >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

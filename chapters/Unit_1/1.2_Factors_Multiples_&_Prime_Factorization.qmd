@@ -12,14 +12,19 @@ In this lesson, you’ll learn how to:
 
 You’ll use these skills again and again, from simplifying fractions to solving equations.
 
-::: {.objectives}
+:::{.objectives}
 - [ ] I can find the factors and multiples of integers
 - [ ] I can tell if a number is prime or composite
 - [ ] I can break numbers into prime factors using a factor tree
 :::
 
-::: {.vocab}
-{{< glink "composite number" >}}, {{< glink factor >}}, {{< glink "factor tree" >}}, {{< glink multiple >}}, {{< glink "prime factorization" >}}, {{< glink "prime number" >}}
+:::{.vocab}
+{{< glink "composite number" >}},
+{{< glink factor >}},
+{{< glink "factor tree" >}},
+{{< glink multiple >}},
+{{< glink "prime factorization" >}},
+{{< glink "prime number" >}}
 :::
 
 {{< warmup >}}

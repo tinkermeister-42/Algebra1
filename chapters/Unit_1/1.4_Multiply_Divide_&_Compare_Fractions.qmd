@@ -5,12 +5,16 @@ In previous lessons, you've learned how fractions, decimals, and percents relate
 In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a {{< glink reciprocal >}}. These skills will help you tackle percent problems and practical applications in upcoming lessons.
 
 :::{.objectives}
-- [ ] I can multiply fractions and mixed numbers.
-- [ ] I can divide fractions by using reciprocals.
+- [ ] I can multiply fractions.
+- [ ] I can multiply mixed numbers by rewriting them as improper fractions.
+- [ ] I can divide fractions by multiplying by the reciprocal.
 :::
 
+
 :::{.vocab}
-{{< glink divisor >}}, {{< glink "improper fraction" >}}, {{< glink "mixed number" >}}, {{< glink reciprocal >}}
+{{< glink "improper fraction" >}},
+{{< glink "mixed number" >}},
+{{< glink reciprocal >}}
 :::
 
 {{< warmup >}}

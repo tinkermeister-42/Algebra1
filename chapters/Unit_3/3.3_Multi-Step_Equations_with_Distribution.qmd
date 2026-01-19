@@ -14,7 +14,10 @@ In this lesson, you’ll learn how to simplify first (by using the distributive 
 :::
 
 :::{.vocab}
-{{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink equation >}}, {{< glink simplify >}}
+{{< glink "combine like terms" >}},
+{{< glink "distributive property" >}},
+{{< glink equation >}},
+{{< glink "inverse operations" >}}
 :::
 
 {{< warmup >}}

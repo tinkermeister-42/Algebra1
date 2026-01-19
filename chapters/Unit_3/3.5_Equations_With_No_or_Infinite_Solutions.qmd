@@ -15,16 +15,15 @@ But equations don’t always behave that way. Sometimes:
 
 These are called **special cases**. In this lesson, we’ll see what they look like and how to spot them.
 
-::: {.callout-note icon=false}
-
+::: {.objectives}
 - [ ] I can recognize when an equation has **no solution**.
 - [ ] I can recognize when an equation has **infinitely many solutions**.
-
 :::
 
 :::{.vocab}
-
-{{< glink "all real numbers" >}}, {{< glink "linear equation" >}}, {{< glink "no solution" >}}, {{< glink slug=real-number text="real numbers" >}}
+{{< glink "all real numbers" >}},
+{{< glink "infinitely many solutions" >}},
+{{< glink "no solution" >}}
 :::
 
 {{< warmup >}}

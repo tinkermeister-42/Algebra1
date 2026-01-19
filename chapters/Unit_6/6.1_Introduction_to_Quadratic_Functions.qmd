@@ -11,18 +11,21 @@ How could we model something like this?
 In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions {{< glink slug="quadratic" text="quadratics" >}}.
 
 :::{.objectives}
-
-* [ ] I can recognize a quadratic function from an equation or graph.
-* [ ] I can describe the shape and direction of a parabola.
-* [ ] I can identify the vertex as a minimum or maximum.
-* [ ] I can describe the domain and range of a quadratic function.
-
+- [ ] I can recognize a quadratic function from an equation or graph.
+- [ ] I can describe the shape and direction of a parabola.
+- [ ] I can identify the vertex as a minimum or maximum.
+- [ ] I can describe the domain and range of a quadratic function.
 :::
 
 :::{.vocab}
-
-{{< glink "axis of symmetry" >}}, {{< glink domain >}}, {{< glink function >}}, {{< glink maximum >}}, {{< glink minimum >}}, {{< glink parabola >}}, {{< glink "quadratic equation" >}}, {{< glink range >}}, {{< glink vertex >}}
-
+{{< glink domain >}},
+{{< glink function >}},
+{{< glink maximum >}},
+{{< glink minimum >}},
+{{< glink parabola >}},
+{{< glink "quadratic function" >}},
+{{< glink range >}},
+{{< glink vertex >}}
 :::
 
 {{< warmup >}}

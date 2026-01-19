@@ -7,15 +7,16 @@ You've already worked with many linear models in previous lessons. They all foll
 In this lesson, you will learn how to use these linear models to solve real-world problems involving constant rates of change.
 
 :::{.objectives}
-
-* [ ] I can represent real-world situations using linear equations or functions.
-* [ ] I can identify and interpret the slope and intercept in context.
-* [ ] I can describe what a best-fit line shows about a data trend.
-
+- [ ] I can represent real-world situations using linear equations or functions.
+- [ ] I can identify and interpret the slope and intercept in context.
+- [ ] I can describe what a best-fit line shows about a data trend.
 :::
 
 :::{.vocab}
- {{< glink "best-fit line" >}}, {{< glink "linear model" >}}, {{< glink slope >}}, {{< glink "y-intercept" >}} 
+{{< glink "best-fit line" >}},
+{{< glink "linear model" >}},
+{{< glink slope >}},
+{{< glink "y-intercept" >}}
 :::
 
 

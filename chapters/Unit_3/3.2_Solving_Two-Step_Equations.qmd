@@ -3,13 +3,15 @@
 With one-step equations, we identified the operation and did the opposite to both sides. Two-step equations are the same idea with one new decision to make. Which operation do we deal with first?
 
 :::{.objectives}
-
 - [ ] I can solve two-step equations and show my work.
 - [ ] I can use two-step equations to solve real-world problems.
 :::
 
 :::{.vocab}
-{{< glink equation >}}, {{< glink solution >}}, {{< glink variable >}}
+{{< glink equation >}},
+{{< glink "inverse operations" >}},
+{{< glink solution >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

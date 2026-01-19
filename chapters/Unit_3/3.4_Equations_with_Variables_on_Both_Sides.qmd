@@ -5,16 +5,16 @@ So far, every equation we solved had the variable on one side only. That made it
 In this lesson, you’ll learn how to bring all the variable terms together, simplify what’s left, and then solve.
 
 :::{.objectives}
-
 - [ ] I can solve equations that have variables on both sides using inverse operations.
 - [ ] I can simplify equations with distribution or like terms before solving.
-
 :::
 
 :::{.vocab}
-
-{{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink equation >}}, {{< glink "inverse operations" >}}, {{< glink variable >}}
-
+{{< glink "combine like terms" >}},
+{{< glink "distributive property" >}},
+{{< glink equation >}},
+{{< glink "inverse operations" >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

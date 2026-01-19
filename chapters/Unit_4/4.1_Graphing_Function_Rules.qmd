@@ -7,17 +7,17 @@ In this lesson, we’ll take that same idea one step further. Instead of only li
 It’s time to move from numbers to shapes, and start seeing how a function behaves.
 
 :::{.objectives}
-
-* [ ] I can use a simple equation or function rule to find y when I know x.
-* [ ] I can make a table of values and graph the related points.
-* [ ] I can recognize that these points form a straight line.
-
+- [ ] I can use a simple equation or function rule to find $y$ when I know $x$.
+- [ ] I can make a table of values and graph the related points.
+- [ ] I can recognize that these points form a straight line.
 :::
 
 :::{.vocab}
-
-{{< glink axis >}}, {{< glink "coordinate plane" >}}, {{< glink origin >}}, {{< glink "ordered pair" >}}, {{< glink quadrant >}}
-
+{{< glink axis >}},
+{{< glink "coordinate plane" >}},
+{{< glink "linear relationship" >}},
+{{< glink origin >}},
+{{< glink "ordered pair" >}}
 :::
 
 {{< warmup >}}

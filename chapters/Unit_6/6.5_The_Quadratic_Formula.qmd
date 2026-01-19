@@ -7,17 +7,14 @@ But not all quadratic equations cooperate.
 In this lesson, we will develop a **general method** that works for *every* quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the **quadratic formula**.
 
 :::{.objectives}
-
-* [ ] I can use the quadratic formula to solve any quadratic.
-* [ ] I can use the discriminant to determine how many solutions there are.
-* [ ] I can choose which solving method is most efficient.
-
+- [ ] I can use the quadratic formula to solve any quadratic.
+- [ ] I can use the discriminant to determine how many solutions there are.
+- [ ] I can choose which solving method is most efficient.
 :::
 
 :::{.vocab}
-
-{{< glink "completing the square" >}}, {{< glink discriminant >}}, {{< glink "quadratic formula" >}}
-
+{{< glink discriminant >}},
+{{< glink "quadratic formula" >}}
 :::
 
 {{< warmup >}}

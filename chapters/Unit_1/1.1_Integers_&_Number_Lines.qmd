@@ -6,15 +6,23 @@ In this lesson, we’ll use the number line not just to count, but to add, subtr
 
 Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line (including things like {{< glink slug="opposite" text="opposites" >}}, {{< glink "absolute value" >}}, and comparison) you’ll be setting yourself up for success in the rest of the course.
 
-::: {.objectives}
+:::{.objectives}
 - [ ] I know how to read and use a number line
 - [ ] I can find and describe the opposite of a number
+- [ ] I can find the absolute value of an integer on a number line
 - [ ] I can compare positive and negative numbers using >, <, and =
 - [ ] I can add and subtract integers on a number line
 :::
 
 :::{.vocab}
-{{< glink "absolute value" >}}, {{< glink "greater than" >}}, {{< glink integer >}}, {{< glink "less than" >}}, {{< glink number line >}}, {{< glink negative >}}, {{< glink opposite >}}, {{< glink positive >}} 
+{{< glink "absolute value" >}},
+{{< glink "greater than" >}},
+{{< glink integer >}},
+{{< glink "less than" >}},
+{{< glink "number line" >}},
+{{< glink negative >}},
+{{< glink opposite >}},
+{{< glink positive >}}
 :::
 
 {{< warmup >}} 

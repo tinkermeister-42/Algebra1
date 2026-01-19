@@ -7,17 +7,19 @@ When we simplify polynomials, we are really just doing what we have always done:
 **organize, combine, and clean things up**, but now with variables and exponents.
 
 :::{.objectives}
-
-* [ ] I can identify and name a {{< glink polynomial >}} by its degree and number of terms.
-* [ ] I can write a polynomial in {{< glink "standard form" >}}.
-* [ ] I can simplify a polynomial by distributing and combining {{< glink "like terms" >}}.
-
+- [ ] I can identify and name a {{< glink polynomial >}} by its degree and number of terms.
+- [ ] I can write a polynomial in {{< glink "standard form" >}}.
+- [ ] I can simplify a polynomial by distributing and combining {{< glink "like terms" >}}.
 :::
 
 :::{.vocab}
-
-{{< glink binomial >}}, {{< glink degree >}}, {{< glink monomial >}}, {{< glink polynomial >}}, {{< glink "standard form" >}}, {{< glink trinomial >}}
-
+{{< glink binomial >}},
+{{< glink degree >}},
+{{< glink "like terms" >}},
+{{< glink monomial >}},
+{{< glink polynomial >}},
+{{< glink "standard form" >}},
+{{< glink trinomial >}}
 :::
 
 {{< warmup >}}

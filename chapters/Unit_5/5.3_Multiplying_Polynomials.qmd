@@ -11,22 +11,16 @@ Every part of the first polynomial needs to connect with every part of the secon
 In this lesson, you’ll learn a method that keeps everything in order and works for **any** size polynomial. It gives you the structure you need now, and it sets up the skills we’ll use later when we start factoring.
 
 :::{.objectives}
-
-* [ ] I can multiply two polynomials using distribution.
-* [ ] I can organize polynomial multiplication using an area model.
-* [ ] I can multiply three or more polynomials.
-
+- [ ] I can multiply two polynomials using distribution.
+- [ ] I can organize polynomial multiplication using an area model.
+- [ ] I can multiply three or more polynomials.
 :::
 
 :::{.vocab}
 {{< glink "area model" >}},
 {{< glink binomial >}},
-{{< glink distribute >}},
-{{< glink "like terms" >}},
 {{< glink monomial >}},
-{{< glink polynomial >}},
-{{< glink "standard form" >}}
-
+{{< glink polynomial >}}
 :::
 
 

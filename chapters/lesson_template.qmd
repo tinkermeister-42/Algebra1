@@ -3,15 +3,11 @@
 Coming Soon
 
 :::{.objectives}
-
 - [ ] I can do things
-
 :::
 
 :::{.vocab}
-
-{{< glink term >}}, ...
-
+{{< glink term >}}
 :::
 
 {{< warmup >}}

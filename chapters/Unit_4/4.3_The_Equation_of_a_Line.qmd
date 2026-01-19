@@ -8,15 +8,17 @@ Every straight line can be described with just **two numbers**: its **slope** an
 Once you know those, you can write an equation, make predictions, and see how the line behaves, all without having to graph every single point.
 
 :::{.objectives}
-
-* [ ] I can graph a line when I know one point and its slope.
-* [ ] I can identify and find the x- and y-intercepts of a line.
-* [ ] I can describe how changing $m$ or $b$ changes a line’s graph.
-
+- [ ] I can graph a line when I know one point and its slope.
+- [ ] I can identify and find the x- and y-intercepts of a line.
+- [ ] I can describe how changing $m$ or $b$ changes a line’s graph.
 :::
 
 :::{.vocab}
-{{< glink "function notation" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink "x-intercept" >}}, {{< glink "y-intercept" >}}
+{{< glink intercept >}},
+{{< glink slope >}},
+{{< glink "slope-intercept form" >}},
+{{< glink "x-intercept" >}},
+{{< glink "y-intercept" >}}
 :::
 
 {{< warmup >}}

@@ -20,7 +20,11 @@ These questions will guide us as we look at trinomials that do not follow the fa
 :::
 
 :::{.vocab}
-{{< glink "difference of squares" >}},  {{< glink "factorable" >}},  {{< glink "perfect-square trinomial" >}}, {{< glink "trinomial" >}}
+{{< glink "difference of squares" >}},
+{{< glink "factorable" >}},
+{{< glink "over the integers" >}},
+{{< glink "perfect-square trinomial" >}},
+{{< glink "trinomial" >}}
 :::
 
 {{< warmup >}}

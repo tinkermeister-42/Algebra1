@@ -19,7 +19,11 @@ In this lesson, you'll learn how to follow those rules correctly, even when nega
 
 
 :::{.vocab}
-{{< glink expression >}}, {{< glink "order of operations" >}}, {{< glink parentheses >}}, {{< glink exponent >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink addition >}}, {{< glink subtraction >}}
+{{< glink expression >}},
+{{< glink "grouping symbols" >}},
+{{< glink "order of operations" >}},
+{{< glink parentheses >}},
+{{< glink exponent >}}
 :::
 
 {{< warmup >}}

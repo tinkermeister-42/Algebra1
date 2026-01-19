@@ -8,15 +8,21 @@ Now we ask a similar question for quadratics:
 
 **How can we use a quadratic equation to graph its parabola?**
 
-::: objectives
--   [ ] I can find the axis of symmetry for a quadratic function.
--   [ ] I can find the vertex of a quadratic in standard form.
--   [ ] I can sketch the graph of a quadratic using its key features.
--   [ ] I can identify positive/negative and increasing/decreasing behavior from the graph.
+:::{.objectives}
+- [ ] I can find the axis of symmetry for a quadratic function.
+- [ ] I can find the vertex of a quadratic in standard form.
+- [ ] I can sketch the graph of a quadratic using its key features.
+- [ ] I can identify positive/negative and increasing/decreasing behavior from the graph.
 :::
 
-::: vocab
-{{< glink "axis of symmetry" >}}, {{< glink parabola >}}, {{< glink slug="standard-form-quadratic" text="standard form" >}}, {{< glink vertex >}}, {{< glink slug="vertex-form-quadratic" text="vertex form" >}}
+:::{.vocab}
+{{< glink "axis of symmetry" >}},
+{{< glink decreasing >}},
+{{< glink increasing >}},
+{{< glink parabola >}},
+{{< glink slug="standard-form-quadratic" text="standard form" >}},
+{{< glink vertex >}},
+{{< glink slug="vertex-form-quadratic" text="vertex form" >}}
 :::
 
 {{< warmup >}}

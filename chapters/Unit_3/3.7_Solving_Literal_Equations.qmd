@@ -10,18 +10,17 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 
 ***
 
-::: {.objectives}
-
+:::{.objectives}
 - [ ] I can identify and solve literal equations.
 - [ ] I can isolate a variable in a formula.
 - [ ] I can use known formulas (like area or distance) to solve for any variable.
-
 :::
 
-::: {.vocab}
-
-{{< glink coefficient >}}, {{< glink equation >}}, {{< glink "literal equation" >}}, {{< glink variable >}}
-
+:::{.vocab}
+{{< glink equation >}},
+{{< glink isolate >}},
+{{< glink "literal equation" >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

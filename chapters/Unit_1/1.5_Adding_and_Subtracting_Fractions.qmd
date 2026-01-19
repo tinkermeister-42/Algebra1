@@ -11,7 +11,11 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 :::
 
 :::{.vocab}
-{{< glink denominator >}}, {{< glink "improper fraction" >}}, {{< glink "mixed number" >}}, {{< glink numerator >}}
+{{< glink "common denominator" >}},
+{{< glink denominator >}},
+{{< glink "improper fraction" >}},
+{{< glink "mixed number" >}},
+{{< glink numerator >}}
 :::
 
 {{< warmup >}}

@@ -13,7 +13,11 @@ In this lesson, you’ll practice choosing the right form for the situation, est
 :::
 
 :::{.vocab}
-{{< glink discount >}}, {{< glink equivalent >}}, {{< glink grade >}}, {{< glink markup >}}, {{< glink part >}}, {{< glink percent >}}, {{< glink proportion >}}, {{< glink rate >}}, {{< glink survey >}}, {{< glink whole >}}
+{{< glink part >}},
+{{< glink percent >}},
+{{< glink "percent of" >}},
+{{< glink proportion >}},
+{{< glink whole >}}
 :::
 
 {{< warmup >}}

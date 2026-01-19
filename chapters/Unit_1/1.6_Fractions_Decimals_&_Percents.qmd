@@ -11,7 +11,9 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 :::
 
 :::{.vocab}
-{{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}, {{< glink convert >}}, {{< glink equivalent >}}, {{< glink "place value" >}}
+{{< glink equivalent >}},
+{{< glink "place value" >}},
+{{< glink "repeating decimal" >}}
 :::
 
 {{< warmup >}}

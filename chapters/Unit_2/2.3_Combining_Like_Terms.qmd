@@ -5,15 +5,19 @@ When we speak, we sometimes **shorten** a sentence without changing its meaning.
 Think of a cashier counting money in a mixed drawer. They put tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
 :::{.objectives}
-
 - [ ] I can identify like terms in an expression.
 - [ ] I can combine like terms to simplify an expression.
 - [ ] I can check my work by substitution or by reasoning about equivalence.
 :::
 
 :::{.vocab}
-{{< glink coefficient >}}, {{< glink constant >}}, {{< glink "equivalent expressions" >}}, {{< glink "like terms" >}}, {{< glink simplify >}}, 
-{{< glink term >}}, {{< glink variable >}}
+{{< glink coefficient >}},
+{{< glink constant >}},
+{{< glink "equivalent expressions" >}},
+{{< glink "like terms" >}},
+{{< glink simplify >}},
+{{< glink term >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

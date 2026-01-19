@@ -45,7 +45,10 @@ In this lesson, we will learn a method called **completing the square**. This me
 :::
 
 :::{.vocab}
-{{< glink "completing the square" >}}, {{< glink "perfect square" >}}, {{< glink "square root" >}}
+{{< glink "completing the square" >}},
+{{< glink "quadratic equation" >}},
+{{< glink "perfect square" >}},
+{{< glink "square root" >}}
 :::
 
 {{< warmup >}}

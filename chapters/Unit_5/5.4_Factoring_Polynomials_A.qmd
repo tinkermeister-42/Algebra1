@@ -21,14 +21,13 @@ Where did it come from? Could it be the result of multiplying two binomials? If 
 In this lesson, we will find the answers to these questions by learning the basics of {{< glink factoring >}} polynomials.
 
 
-::: {.objectives}
-
-* [ ] I can factor a polynomial by taking out a greatest common factor (GCF).
-* [ ] I can factor basic trinomials using an area model.
-* [ ] I can check a factored expression by multiplying.
+:::{.objectives}
+- [ ] I can factor a polynomial by taking out a greatest common factor (GCF).
+- [ ] I can factor basic trinomials using an area model.
+- [ ] I can check a factored expression by multiplying.
 :::
 
-::: {.vocab}
+:::{.vocab}
 {{< glink coefficient >}},
 {{< glink factor >}},
 {{< glink "greatest common factor" >}},

@@ -4,14 +4,18 @@ Suppose you’re making snack packs and have 20 bags of chips and 35 cookies. Wh
 
 In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to find the GCF, and how that can help you simplify {{< glink slug=fraction text="fractions" >}}. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.
 
-::: {.objectives}
+:::{.objectives}
 - [ ] I can find the GCF using factor trees
 - [ ] I can simplify fractions using the GCF
 - [ ] I can solve real-world problems using the GCF
 :::
 
-::: {.vocab}
-{{< glink equivalent >}}, {{< glink "greatest common factor" >}}, {{< glink "prime factorization" >}}, {{< glink "relatively prime" >}}, {{< glink simplify >}}
+:::{.vocab}
+{{< glink equivalent >}},
+{{< glink factor >}},
+{{< glink "greatest common factor" >}},
+{{< glink "prime factorization" >}},
+{{< glink simplify >}}
 :::
 
 {{< warmup >}}

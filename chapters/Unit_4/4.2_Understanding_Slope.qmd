@@ -8,15 +8,16 @@ Some lines rise quickly, some fall, and others stay flat.
 That rate of change is called the **slope**, one of the most important ideas in algebra.
 
 :::{.objectives}
-
-* [ ] I can find the slope of a line from a graph or from two points.
-* [ ] I can describe slope as a rate of change between $x$ and $y$.
-* [ ] I can tell whether a slope is positive, negative, zero, or undefined.
-
+- [ ] I can find the slope of a line from a graph or from two points.
+- [ ] I can describe slope as a rate of change between $x$ and $y$.
+- [ ] I can tell whether a slope is positive, negative, zero, or undefined.
 :::
 
 :::{.vocab}
-{{< glink horizontal >}}, {{< glink slope >}}, {{< glink vertical >}}
+{{< glink horizontal >}},
+{{< glink "rate of change" >}},
+{{< glink slope >}},
+{{< glink vertical >}}
 :::
 
 {{< warmup >}}

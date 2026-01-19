@@ -12,17 +12,18 @@ $$
 The key is to recognize what you already know (the **slope**, a **point**, or both) and use it to build the rule for your line.
 
 :::{.objectives}
-
-* [ ] I can write an equation for a line from a graph.
-* [ ] I can write an equation knowing the slope and intercept, the slope and one point, or two points.
-* [ ] I can find equations of lines that are parallel or perpendicular to a given line.
-
+- [ ] I can write an equation for a line from a graph.
+- [ ] I can write an equation knowing the slope and intercept, the slope and one point, or two points.
+- [ ] I can find equations of lines that are parallel or perpendicular to a given line.
 :::
 
 :::{.vocab}
-
-{{< glink parallel >}}, {{< glink perpendicular >}}, {{< glink "point-slope form" >}}, {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink y-intercept >}}
-
+{{< glink "equation of a line" >}},
+{{< glink parallel >}},
+{{< glink perpendicular >}},
+{{< glink "point-slope form" >}},
+{{< glink slope >}},
+{{< glink "slope-intercept form" >}}
 :::
 
 {{< warmup >}}

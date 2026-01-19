@@ -10,14 +10,18 @@ Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = \$330.
 
 Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink "distributive property" >}}. Today, we’re going to see how this property helps us simplify expressions.
 
-::: {.objectives}
+:::{.objectives}
 - [ ] I can use the **distributive property** to expand expressions.
 - [ ] I can distribute with **negatives** and then **combine like terms**.
 - [ ] I can **factor out** a common factor (reverse distribution) to rewrite an expression.
 :::
 
-::: vocab
-{{< glink "distributive property" >}}, {{< glink "equivalent expressions" >}}, {{< glink expand >}}, {{< glink factor >}}, {{< glink simplify >}}
+:::{.vocab}
+{{< glink "common factor" >}},
+{{< glink "distributive property" >}},
+{{< glink "equivalent expressions" >}},
+{{< glink expand >}},
+{{< glink factor >}}
 :::
 
 {{< warmup >}}

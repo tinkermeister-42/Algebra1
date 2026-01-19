@@ -13,8 +13,12 @@ In this lesson, you’ll learn how to simplify first (by using the {{< glink "di
 :::
 
 :::{.vocab}
-{{< glink evaluate >}}, {{< glink evidence >}}, {{< glink expression >}}, {{< glink operation >}}, {{< glink result >}}, {{< glink substitute >}}, {{< glink value >}}, {{< glink variable >}}
-
+{{< glink "equivalent expressions" >}},
+{{< glink evaluate >}},
+{{< glink expression >}},
+{{< glink substitute >}},
+{{< glink value >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}

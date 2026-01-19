@@ -13,17 +13,17 @@ When two lines meet, they show a shared truth, a point that works for *both* sit
 That’s the idea behind a **system of equations**.
 
 :::{.objectives}
-
-* [ ] I can interpret the solution to a system of equations.
-* [ ] I can solve a system of equations by graphing.
-* [ ] I can describe what substitution and elimination mean.
-
+- [ ] I can interpret the solution to a system of equations.
+- [ ] I can solve a system of equations by graphing.
+- [ ] I can describe what substitution and elimination mean.
 :::
 
 :::{.vocab}
-
-{{< glink elimination >}}, {{< glink intersection >}}, {{< glink solution >}}, {{< glink substitution >}}, {{< glink "system of equations" >}}
-
+{{< glink elimination >}},
+{{< glink intersection >}},
+{{< glink solution >}},
+{{< glink substitution >}},
+{{< glink "system of equations" >}}
 :::
 
 {{< warmup >}}

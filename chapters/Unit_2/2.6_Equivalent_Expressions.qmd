@@ -17,7 +17,10 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 ***
 
 :::{.vocab}
-{{< glink "combine like terms" >}}, {{< glink "equivalent expressions" >}}, {{< glink evidence >}}, {{< glink expression >}}, {{< glink simplify >}}, {{< glink substitute >}}, {{< glink variable >}}
+{{< glink "equivalent expressions" >}},
+{{< glink expression >}},
+{{< glink prove >}},
+{{< glink variable >}}
 :::
 
 ***

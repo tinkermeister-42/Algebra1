@@ -186,6 +186,20 @@ To **combine like terms** means to simplify an expression by adding or subtracti
 
 ***
 
+### Common Denominator {#glossary-common-denominator}
+
+When adding or subtracting fractions, a **common denominator** means the fractions have the same denominator.
+
+If the denominators are different, you must rewrite the fractions so they share a denominator before you can combine them.
+
+> **Example:**
+>
+> To add $\frac{1}{4}$ and $\frac{1}{6}$, you can rewrite them as $\frac{3}{12}$ and $\frac{2}{12}$.
+>
+> Since both fractions now have the denominator 12, they have a common denominator and can be added.
+
+***
+
 ### Completing the Square {#glossary-completing-the-square}
 
 **Completing the square** is a method for rewriting a quadratic expression so it becomes a perfect square plus or minus a number. This makes quadratic equations easier to solve and helps us find important features like the vertex.
@@ -318,6 +332,19 @@ A decimal is a number that uses a **dot (.)** to show values **less than 1**. It
 > $0.5$ means 5 tenths, and $3.14$ means 3 and 14 hundredths.
 
 **See Also:** {{< glink fraction >}}, {{< glink percent >}}, {{< glink part >}}, {{< glink convert >}}, {{< glink "place value" >}}
+
+***
+
+### Decreasing {#glossary-decreasing}
+
+A function is **decreasing** on an interval if its outputs go down as the inputs go up.  
+When you move left to right on the graph, the graph falls.
+
+> **Example:**
+>
+> If a graph goes downward as $x$ increases, the function is decreasing on that part of the graph.
+
+**See Also:** {{< glink increasing >}}, {{< glink function >}}, {{< glink graph >}}
 
 ***
 
@@ -501,6 +528,26 @@ It has an equals sign (=) and shows a relationship between numbers or expression
 > $(x - 5)^2 = 3x - 1$
 
 **See Also:** {{< glink solution >}}, {{< glink inequality >}}, {{< glink solve >}}, {{< glink expression >}}, {{< glink "literal equation" >}}, {{< glink "linear equation" >}}
+
+***
+
+### Equation of a Line {#glossary-equation-of-a-line}
+
+An **equation of a line** is a rule that describes all the points on a straight line.
+
+It shows the relationship between $x$ and $y$ and can be used to graph the line or find points on it.
+
+Common forms of an equation of a line include:
+- **Slope-intercept form:** $y = mx + b$
+- **Point-slope form:** $y - y_1 = m(x - x_1)$
+
+> **Example:**
+>
+> The equation $y = 2x + 3$ describes a line with slope 2 and y-intercept 3.
+>
+> Every point on that line satisfies this equation.
+
+**See Also:** {{< glink slope >}}, {{< glink "slope-intercept form" >}}, {{< glink "point-slope form" >}}, {{< glink "y-intercept" >}}
 
 ***
 
@@ -760,6 +807,20 @@ A grade often shows **how well someone did** using a percent or letter. It’s u
 
 ***
 
+### Graph {#glossary-graph}
+
+A **graph** shows how two quantities are related by plotting points on a coordinate plane.  
+For functions, a graph shows how each input value matches with exactly one output value.
+
+> **Example:**
+>
+> The graph of $y = x^2$ is a curved shape called a parabola.  
+> Each point on the graph shows an input $x$ and its corresponding output $y$.
+
+**See Also:** {{< glink function >}}, {{< glink coordinate-plane >}}, {{< glink parabola >}}
+
+***
+
 ### Greater than {#glossary-greater_than}
 
 A number is greater than (**>**) another number if it is further to the right on the number line.
@@ -794,6 +855,26 @@ You can find the GCF by listing all the factors and finding the ones shared betw
 > **The greatest is 6**
 
 **See Also:** {{< glink factor >}}, {{< glink factoring >}}, {{< glink "prime factorization" >}}, {{< glink simplify >}}, {{< glink "relatively prime" >}}
+
+***
+
+### Grouping Symbols {#glossary-grouping-symbols}
+
+**Grouping symbols** are symbols used to show which parts of an expression should be worked on first.
+
+They tell you to treat certain numbers and operations as a group when following the order of operations.
+
+Common grouping symbols include parentheses $(\ )$, brackets $[\ ]$, braces $\{ \}$, and fraction bars.
+
+> **Example:**
+>
+> In the expression
+> $$
+> 8 - (3 + 2)
+> $$
+> the grouping symbols show that $3 + 2$ must be done first.
+>
+> Without grouping symbols, the result would be different.
 
 
 ***
@@ -844,6 +925,19 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 
 ***
 
+### Increasing {#glossary-increasing}
+
+A function is **increasing** on an interval if its outputs go up as the inputs go up.  
+When you move left to right on the graph, the graph rises.
+
+> **Example:**
+>
+> If a graph goes upward as $x$ increases, the function is increasing on that part of the graph.
+
+**See Also:** {{< glink decreasing >}}, {{< glink function >}}, {{< glink graph >}}
+
+***
+
 ### Inequality {#glossary-inequality}
 
 An **inequality** is a math statement that compares two values or expressions using symbols like `<`, `>`, `≤`, or `≥`. Instead of saying two sides are equal, it shows which side is larger or smaller.
@@ -865,6 +959,28 @@ The word **infinitely** means "without end" or "going on forever." In math, some
 > There are **infinitely many** decimals between 0 and 1.
 
 **See Also:** {{< glink infinity >}}, {{< glink "all real numbers" >}}
+
+***
+
+### Infinitely Many Solutions {#glossary-infinitely-many-solutions}
+
+An equation has **infinitely many solutions** if *every real number* makes the equation true.
+
+This usually happens when both sides of the equation simplify to the same expression.
+
+> **Example:**
+>
+> $$
+> 2(x + 3) = 2x + 6
+> $$
+>
+> Simplifying both sides gives:
+>
+> $$
+> 2x + 6 = 2x + 6
+> $$
+>
+> Since this is true for all values of $x$, the equation has infinitely many solutions.
 
 ***
 
@@ -903,6 +1019,25 @@ An **intersection** is the point where two lines (or curves) meet on a graph. In
 
 ***
 
+### Intercept {#glossary-intercept}
+
+An **intercept** is a point where a graph crosses an axis.
+
+- An **x-intercept** is where the graph crosses the x-axis.
+- A **y-intercept** is where the graph crosses the y-axis.
+
+Intercepts show where one variable is zero.
+
+> **Example:**
+>
+> If a line crosses the y-axis at $(0, 3)$, then its y-intercept is 3.
+>
+> If it crosses the x-axis at $(4, 0)$, then its x-intercept is 4.
+
+**See Also:** {{< glink "x-intercept" >}}, {{< glink "y-intercept" >}}, {{< glink slope >}}
+
+***
+
 ### Interval {#glossary-interval}
 
 An **interval** is a continuous stretch of the number line between two values. It may **include** or **exclude** its endpoints, depending on the context or inequality symbols used.
@@ -925,6 +1060,27 @@ Addition and subtraction are inverses. Multiplication and division are inverses.
 > The inverse of dividing by 3 is multiplying by 3.
 
 **See Also:** {{< glink solve >}}, {{< glink equation >}}, {{< glink operation >}}
+
+***
+
+### Isolate {#glossary-isolate}
+
+To **isolate** a variable means to get that variable alone on one side of an equation.
+
+When you isolate a variable, you use inverse operations to undo everything attached to it.
+
+> **Example:**
+>
+> Starting with
+> $$
+> A = lw
+> $$
+> To isolate $l$, divide both sides by $w$:
+> $$
+> l = \frac{A}{w}
+> $$
+>
+> The variable $l$ is now isolated.
 
 ***
 
@@ -991,6 +1147,21 @@ It follows the pattern $y = mx + b$, where $m$ is the **slope** (rate) and $b$ i
 > If a taxi costs $3 to start plus $2 per mile, the linear model is $C(d) = 2d + 3$.
 
 **See Also:** {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink y-intercept >}}
+
+***
+
+### Linear Relationship {#glossary-linear-relationship}
+
+A **linear relationship** is a relationship where the points form a straight line when graphed.
+
+This means that as one value changes, the other value changes at a constant rate.
+
+> **Example:**
+>
+> If a table of values follows the rule $y = 2x + 1$, the points  
+> $(0,1)$, $(1,3)$, and $(2,5)$ all lie on a straight line.
+>
+> Because the points line up, this is a linear relationship.
 
 ***
 
@@ -1320,6 +1491,22 @@ The **output** is the result you get after a function or rule is applied to an i
 
 ***
 
+### Over the Integers {#glossary-over-the-integers}
+
+When we say an expression is factored **over the integers**, we mean it is written using only whole numbers and their negatives as coefficients.  
+No fractions, decimals, or irrational numbers are allowed.
+
+> **Example:**
+>
+> $x^2 - 5x + 6 = (x - 2)(x - 3)$  
+> This trinomial **is factorable over the integers** because both factors use integers.
+>
+> $x^2 - 2$ is **not factorable over the integers**, even though it can be factored using $\sqrt{2}$.
+
+**See Also:** {{< glink factorable >}}, {{< glink trinomial >}}, {{< glink integer >}}
+
+***
+
 ### Parabola {#glossary-parabola}
 
 A parabola is a U shaped curve formed by quadratic relationships. It can open upward or downward and has symmetry around a vertical line.
@@ -1380,34 +1567,6 @@ A **partial product** is the result of multiplying one part of an expression by 
 
 ***
 
-### Perfect Square {#glossary-perfect-square}
-
-A **perfect square** is a number or expression that can be written as something multiplied by itself.
-
-This can be a number, like $25 = 5^2$, or an algebraic expression that comes from squaring a binomial.
-
-> **Example:**
->
-> $25 = 5^2$
->
-> $(x - 4)^2 = x^2 - 8x + 16$
-
-**See Also:** {{< glink "completing the square" >}}, {{< glink "square root" >}}
-
-***
-
-### Perpendicular {#glossary-perpendicular}
-
-Two lines that **intersect to form a right angle (90°)**.
-Their slopes are **negative reciprocals** — their products multiply to $-1$.
-
-> **Example:**
-> The line $y = 2x + 1$ is perpendicular to $y = -\tfrac{1}{2}x + 4$ because $2 \times (-\tfrac{1}{2}) = -1$.
-
-**See Also:** {{< glink parallel >}}, {{< glink slope >}}, {{< glink reciprocal >}}
-
-***
-
 ### Place Value {#glossary-place_value}
 
 Place value tells you **how much each digit is worth** based on where it is in the number.
@@ -1448,6 +1607,52 @@ A percent is a way of expressing a number **out of 100**. The symbol **%** means
 > 25% means 25 out of 100. It’s the same as $\frac{1}{4}$ or 0.25.
 
 **See Also:** {{< glink fraction >}}, {{< glink decimal >}}, {{< glink convert >}}, {{< glink ratio >}}
+
+***
+
+### Percent Of {#glossary-percent-of}
+
+The phrase **percent of** means “multiply by a percent.”
+
+In percent problems, **percent of** tells you to find a part of a whole using a percent.
+
+> **Example:**
+>
+> What is 30% of 50?
+>
+> $$
+> 30\% \text{ of } 50 = 0.30 \times 50 = 15
+> $$
+>
+> So, 15 is 30% of 50.
+
+***
+
+### Perpendicular {#glossary-perpendicular}
+
+Two lines that **intersect to form a right angle (90°)**.
+Their slopes are **negative reciprocals** — their products multiply to $-1$.
+
+> **Example:**
+> The line $y = 2x + 1$ is perpendicular to $y = -\tfrac{1}{2}x + 4$ because $2 \times (-\tfrac{1}{2}) = -1$.
+
+**See Also:** {{< glink parallel >}}, {{< glink slope >}}, {{< glink reciprocal >}}
+
+***
+
+### Perfect Square {#glossary-perfect-square}
+
+A **perfect square** is a number or expression that can be written as something multiplied by itself.
+
+This can be a number, like $25 = 5^2$, or an algebraic expression that comes from squaring a binomial.
+
+> **Example:**
+>
+> $25 = 5^2$
+>
+> $(x - 4)^2 = x^2 - 8x + 16$
+
+**See Also:** {{< glink "completing the square" >}}, {{< glink "square root" >}}
 
 ***
 
@@ -1510,6 +1715,20 @@ On a number line, positive numbers are to the right of zero.
 > `5` is a positive number.
 
 **See Also:** {{< glink negative >}}, {{< glink "number line" >}}, {{< glink addition >}}
+
+***
+
+### Positive Exponent {#glossary-positive-exponent}
+
+A **positive exponent** tells how many times the base is multiplied by itself.  
+It represents repeated multiplication.
+
+> **Example:**
+>
+> $2^3 = 2 \cdot 2 \cdot 2 = 8$  
+> The exponent $3$ is positive, so we multiply $2$ three times.
+
+**See Also:** {{< glink exponent >}}, {{< glink base >}}, {{< glink "negative exponent" >}}, {{< glink "zero exponent" >}}
 
 ***
 
@@ -1615,6 +1834,14 @@ A proportion shows **two equal ratios**. It tells you that two fractions or comp
 
 ***
 
+### Prove {#glossary-prove}
+
+To **prove** something means to show that it is always true, using clear mathematical reasoning.
+
+See **{{< glink proof >}}**.
+
+***
+
 ### Quadrant {#glossary-quadrant}
 
 One of the four regions of the coordinate plane divided by the x-axis and y-axis. Quadrants are numbered **I, II, III, IV**, starting in the top-right and moving counterclockwise.
@@ -1667,6 +1894,20 @@ $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
 
 ***
 
+### Quadratic Function {#glossary-quadratic-function}
+
+A **quadratic function** is a function whose rule includes a squared variable.  
+Its graph is a **parabola**, which can open upward or downward and has a highest or lowest point.
+
+> **Example:**
+>
+> $f(x) = x^2 - 4x + 3$ is a quadratic function.  
+> Its graph is a parabola with a minimum value.
+
+**See Also:** {{< glink "quadratic equation" >}}, {{< glink parabola >}}, {{< glink vertex >}}, {{< glink function >}}
+
+***
+
 ### Quotient {#glossary-quotient}
 
 A quotient is the **result of dividing** one number by another.
@@ -1715,6 +1956,24 @@ A rate compares **two different units**, like miles per hour or cost per item.
 
 ***
 
+### Rate of Change {#glossary-rate-of-change}
+
+The **rate of change** tells how much $y$ changes when $x$ changes by 1.
+
+For a straight line, the rate of change is the same everywhere on the graph.  
+This constant rate of change is called the **slope**.
+
+> **Example:**
+>
+> If a line goes up 2 units in $y$ every time $x$ goes right 1 unit,  
+> the rate of change is 2.
+>
+> This means $y$ increases by 2 for each increase of 1 in $x$.
+
+**See Also:** {{< glink slope >}}
+
+***
+
 ### Ratio {#glossary-ratio}
 
 A **ratio** compares two amounts to show how much of one thing there is compared to another. You can write a ratio with words (“3 to 2”), with a colon (“3:2”), or as a fraction ($\frac{3}{2}$).
@@ -1743,6 +2002,20 @@ A **real number** is any number that can be placed on the **number line**. This 
 
 ***
 
+### Real Solution {#glossary-real-solution}
+
+A **real solution** is a solution that is a real number and can be shown on the number line.  
+For quadratic equations, real solutions correspond to places where the graph crosses or touches the $x$-axis.
+
+> **Example:**
+>
+> The equation $x^2 - 5x + 6 = 0$ has two real solutions: $x = 2$ and $x = 3$.  
+> The equation $x^2 + 1 = 0$ has **no real solutions** because it never crosses the $x$-axis.
+
+**See Also:** {{< glink root >}}, {{< glink "x-intercept" >}}, {{< glink "quadratic equation" >}}
+
+***
+
 ### Reciprocal {#glossary-reciprocal}
 
 The reciprocal of a number is what you **multiply it by to get 1**. You can find it by **flipping the numerator and denominator** of a fraction.
@@ -1753,6 +2026,22 @@ The reciprocal of a number is what you **multiply it by to get 1**. You can find
 > The reciprocal of 5 is $\frac{1}{5}$.
 
 **See Also:** {{< glink fraction >}}, {{< glink division >}}, {{< glink quotient >}}, {{< glink "inverse operations" >}}
+
+***
+
+### Relation {#glossary-relation}
+
+A **relation** is a set of inputs and their corresponding outputs.
+
+A relation shows how values are paired, but it does not have to follow any special rules.
+
+Some relations are functions, and some are not.
+
+> **Example:**
+>
+> The pairs $(1, 2)$, $(2, 4)$, and $(1, 5)$ form a relation.
+>
+> This relation is **not** a function because the input 1 is paired with two different outputs.
 
 ***
 
@@ -1769,6 +2058,24 @@ This means their greatest common factor (GCF) is 1, even if neither number is pr
 > 15 has factors: 1, 3, 5, 15
 
 **See Also:** {{< glink "prime number" >}}, {{< glink "greatest common factor" >}}, {{< glink factor >}}
+
+***
+
+### Repeating Decimal {#glossary-repeating-decimal}
+
+A **repeating decimal** is a decimal where one digit, or a group of digits, repeats forever.
+
+Repeating decimals often come from fractions that cannot be written with a decimal that ends.
+
+> **Example:**
+>
+> $$\frac{1}{3} = 0.333\ldots$$
+>
+> The digit 3 repeats, so this is a repeating decimal.
+>
+> $$\frac{2}{11} = 0.1818\ldots$$
+>
+> The digits 18 repeat, so this is also a repeating decimal.
 
 ***
 
@@ -1945,6 +2252,23 @@ A **solution** is any value of a variable that makes an equation true. If there�
 > For $|x| = 3$, the solution set is $\{-3,\,3\}$ because both values make the equation true.
 
 **See Also:** {{< glink equation >}}, {{< glink result >}}, {{< glink inequality >}}, {{< glink value >}}
+
+***
+
+### Solution Set {#glossary-solution-set}
+
+A **solution set** is the group of all values that make an equation or inequality true.
+
+For an equation, the solution set might be one number, several numbers, or none.  
+For an inequality, the solution set is often many numbers, like all numbers greater than 3.
+
+> **Example:**
+>
+> For the inequality $x > 3$, the solution set is every number greater than 3.
+>
+> That includes 4, 10, and 3.5, but not 3.
+
+**See Also:** {{< glink solution >}}, {{< glink inequality >}}
 
 ***
 
