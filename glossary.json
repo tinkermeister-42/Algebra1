@@ -15,6 +15,7 @@
   "coefficient": "A coefficient is the number in front of a variable. It tells you how many of that variable you have.",
   "combine-like-terms": "To combine like terms means to simplify an expression by adding or subtracting terms that have the same variable part.",
   "common-denominator": "When adding or subtracting fractions, a common denominator means the fractions have the same denominator.",
+  "common-factor": "A common factor is a number or variable that divides evenly into two or more terms. Common factors are what you look for first when factoring an expression.",
   "commutative": "An operation is commutative if changing the order of the numbers does not change the answer.",
   "completing-the-square": "Completing the square is a method for rewriting a quadratic expression so it becomes a perfect square plus or minus a number. This makes quadratic equations easier to solve and helps us find important features like the vertex.",
   "composite-number": "A composite number has more than two factors.",
@@ -70,6 +71,7 @@
   "infinitely": "The word infinitely means “without end” or “going on forever.” In math, something is infinite if it never stops or has no limit.",
   "infinitely-many-solutions": "An equation has infinitely many solutions if every real number makes the equation true.",
   "infinity": "Infinity is not a number — it’s the idea of something that goes on forever without ending. In math, we use the symbol ∞ to represent infinity.",
+  "input": "An input is the value you put into a rule or function. It is the starting value that the rule acts on. Inputs are often written as $x$ values.",
   "integer": "An integer is a whole number (not a fraction or decimal) that can be positive, negative, or zero.",
   "intercept": "An intercept is a point where a graph crosses an axis.",
   "intersection": "An intersection is the point where two lines (or curves) meet on a graph. In a system of equations, the intersection represents the solution — the values that work in both equations.",
@@ -138,6 +140,7 @@
   "quadratic-equation": "A quadratic equation is an equation that can be written in the form $ax^2 + bx + c = 0$ where $a$, $b$, and $c$ are numbers and $a$ is not zero. Quadratic equations often have two solutions, one solution, or no real solutions.",
   "quadratic-formula": "The quadratic formula is a method used to solve any quadratic equation. It gives the solutions to $ax^2 + bx + c = 0$ using $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}.$",
   "quadratic-function": "A quadratic function is a function whose rule includes a squared variable. Its graph is a parabola, which can open upward or downward and has a highest or lowest point.",
+  "quadratic-model": "A quadratic model is a quadratic equation used to represent a real situation where the relationship between variables is curved rather than straight. Quadratic models are often used when something rises and then falls, or falls and then rises.",
   "quotient": "A quotient is the result of dividing one number by another.",
   "quotient-rule": "When dividing powers with the same base, subtract the exponents: $\\dfrac{a^m}{a^n}=a^{m-n}$.",
   "range": "The range is the set of all output values a relation or function can produce. It tells you which $y$ values occur or are possible.",
@@ -188,5 +191,6 @@
   "x-intercept": "The x-intercept is the point where a line crosses the x-axis. At this point, the value of $y$ is always $0$.",
   "y-intercept": "The y-intercept is the point where a line crosses the y-axis. At this point, the value of $x$ is always $0$.",
   "zero-exponent": "Any nonzero base to the zero power equals $1$: $a^0=1$ for $a\\ne0$.",
-  "zero-product-property": "The zero product property says that if a product equals zero, then at least one of the factors must be zero. We use this idea when solving equations like $(x+3)(x-5)=0$ by setting each factor equal to zero."
+  "zero-product-property": "The zero product property says that if a product equals zero, then at least one of the factors must be zero. We use this idea when solving equations like $(x+3)(x-5)=0$ by setting each factor equal to zero.",
+  "zeros": "Zeros are the input values that make an expression or function equal to $0$. On a graph, zeros are the $x$-values where the graph crosses or touches the $x$-axis."
 }
