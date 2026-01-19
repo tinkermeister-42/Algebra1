@@ -1,10 +1,10 @@
 # 1.2 - Factors, Multiples & Prime Factorization {.unnumbered}
 
-Have you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what {{< glink factor text="factors" >}} are about: dividing numbers into equal parts.
+Have you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what {{< glink slug=factor text="factors" >}} are about: dividing numbers into equal parts.
 
 In this lesson, you’ll learn how to:
 
-  - Spot factors and {{< glink multiple text="multiples" >}}.
+  - Spot factors and {{< glink slug=multiple text="multiples" >}}.
 
   - Tell if a number is {{< glink "prime number" >}} or {{< glink "composite number" >}}.
 

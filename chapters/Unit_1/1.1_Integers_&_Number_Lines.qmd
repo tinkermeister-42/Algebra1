@@ -66,7 +66,7 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 **Example 1:** How many numbers between 3 and 5?
 
-If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink "real numbers" >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
+If you are counting integers, there is 1 {{< glink integer >}} between 3 and 5 (just 4). But if you mean {{< glink slug="real-number" text="real numbers" >}}, there are {{< glink infinitely >}} many between 3 and 5. Here are some number lines that might help convince you.
 
 ![](/images/Unit_1/Lesson_1/three_to_five_by_1.png)
 ![](/images/Unit_1/Lesson_1/between_3_and_5_by_05.png)

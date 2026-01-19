@@ -167,7 +167,7 @@ with features:
 
 ### 6.2.3 – Graphing From Vertex Form
 
-As we saw in earlier units, a function can be written in different forms. One useful form for quadratics is {{< glink "vertex form" >}}:
+As we saw in earlier units, a function can be written in different forms. One useful form for quadratics is {{< glink slug="vertex-form-quadratic" text="vertex form" >}}:
 
 $$
 f(x) = a(x - h)^2 + k
@@ -256,7 +256,7 @@ Picking $x = -3$ gives $(-3, 7)$, and its reflection is $(1, 7)$.
 ![](/images/Unit_6/Lesson_2/YouTryFeaturePlot.png){fig-align="center" width="320px"}
 :::
 
-Vertex form is ideal for graphing, but many quadratics appear in {{< glink "standard form" >}} instead. The vertex isn’t visible at first glance.
+Vertex form is ideal for graphing, but many quadratics appear in {{< glink slug="standard-form-quadratic" text="standard form" >}} instead. The vertex isn’t visible at first glance.
 
 The good news is that standard form has a shortcut for finding the axis of symmetry,  
 and once you have that, the vertex follows immediately.
