@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ff66e45b39d49436fe97d3fe27b9920.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +72,25 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
+      // right-side "step note" that does NOT use \tag
+      // \hbox{} creates a zero-width box so the note does not affect alignment
+      // \hskip inserts spacing to the right
+      stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
 
-      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
-      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
-      snplus:   ['\\snboth{+#1}', 1],
-
-      snminus:  ['\\snboth{-#1}', 1],
-
-      sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
-      sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
+      // helpers
+      snboth:   ['\\stepnote{$#1$\\ \\text{both sides}}', 1],
+      snplus:   ['\\snboth{+\\,#1}', 1],
+      snminus:  ['\\snboth{-\\,#1}', 1],
+      sntimes:  ['\\snboth{\\times\\,#1}', 1],
+      sndiv:    ['\\snboth{\\div\\,#1}', 1]
     }
-
   }
-
 };
-
 </script>
-
 
 
 <link rel="stylesheet" href="styles/glossary-tooltips.css">
@@ -115,8 +105,6 @@ window.MathJax = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -671,7 +659,7 @@ window.MathJax = {
 <section id="welcome-to-algebra-1" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome to Algebra 1</h1>
 <p>Welcome to Algebra 1 at Frederick Douglass High School!</p>
-<p>This book will guide you through the most important math skills you’ll need to succeed in high school and beyond. Algebra is more than just solving equations — it’s a powerful way to understand patterns, solve problems, and think logically.</p>
+<p>This book will guide you through the most important math skills you’ll need to succeed in high school and beyond. Algebra is more than just solving equations. It’s a powerful way to understand patterns, solve problems, and think logically.</p>
 <p>Whether you’re reviewing old ideas or learning something brand new, this book is here to help you every step of the way.</p>
 <hr>
 <section id="what-youll-find-in-this-book" class="level2">
@@ -683,7 +671,7 @@ window.MathJax = {
 <li>Practice problems</li>
 <li>Activities to explore and talk through ideas</li>
 </ul>
-<p>We’ll start with the basics — like working with numbers and fractions — and build up to more complex ideas like equations, graphs, and even quadratics.</p>
+<p>We’ll start with the basics (like working with numbers and fractions) and build up to more complex ideas like equations, graphs, and even quadratics.</p>
 <p>You don’t have to be a “math person” to do well here. Just bring your curiosity, a little patience, and the willingness to try.</p>
 <p>Let’s get started!</p>
 
@@ -693,13 +681,9 @@ window.MathJax = {
 
 </main> <!-- /main -->
 <script src="./scripts/popper.min.js"></script>
-
 <script src="./scripts/tippy.min.js"></script>
-
 <script src="./scripts/glossary-tooltips.js"></script>
-
 <script src="./scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

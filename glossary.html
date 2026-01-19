@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ff66e45b39d49436fe97d3fe27b9920.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +71,25 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
+      // right-side "step note" that does NOT use \tag
+      // \hbox{} creates a zero-width box so the note does not affect alignment
+      // \hskip inserts spacing to the right
+      stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
 
-      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
-      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
-      snplus:   ['\\snboth{+#1}', 1],
-
-      snminus:  ['\\snboth{-#1}', 1],
-
-      sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
-      sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
+      // helpers
+      snboth:   ['\\stepnote{$#1$\\ \\text{both sides}}', 1],
+      snplus:   ['\\snboth{+\\,#1}', 1],
+      snminus:  ['\\snboth{-\\,#1}', 1],
+      sntimes:  ['\\snboth{\\times\\,#1}', 1],
+      sndiv:    ['\\snboth{\\div\\,#1}', 1]
     }
-
   }
-
 };
-
 </script>
-
 <meta name="mermaid-theme" content="neutral">
 <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
@@ -147,8 +137,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -693,6 +681,7 @@ window.Quarto = {
   <li><a href="#glossary-degree" id="toc-glossary-degree" class="nav-link" data-scroll-target="#glossary-degree">Degree</a></li>
   <li><a href="#glossary-denominator" id="toc-glossary-denominator" class="nav-link" data-scroll-target="#glossary-denominator">Denominator</a></li>
   <li><a href="#glossary-difference" id="toc-glossary-difference" class="nav-link" data-scroll-target="#glossary-difference">Difference</a></li>
+  <li><a href="#glossary-difference-of-squares" id="toc-glossary-difference-of-squares" class="nav-link" data-scroll-target="#glossary-difference-of-squares">Difference of Squares</a></li>
   <li><a href="#glossary-discount" id="toc-glossary-discount" class="nav-link" data-scroll-target="#glossary-discount">Discount</a></li>
   <li><a href="#glossary-discriminant" id="toc-glossary-discriminant" class="nav-link" data-scroll-target="#glossary-discriminant">Discriminant</a></li>
   <li><a href="#glossary-distributive-property" id="toc-glossary-distributive-property" class="nav-link" data-scroll-target="#glossary-distributive-property">Distributive property</a></li>
@@ -711,6 +700,7 @@ window.Quarto = {
   <li><a href="#glossary-exponent" id="toc-glossary-exponent" class="nav-link" data-scroll-target="#glossary-exponent">Exponent</a></li>
   <li><a href="#glossary-expression" id="toc-glossary-expression" class="nav-link" data-scroll-target="#glossary-expression">Expression</a></li>
   <li><a href="#glossary-factor" id="toc-glossary-factor" class="nav-link" data-scroll-target="#glossary-factor">Factor</a></li>
+  <li><a href="#glossary-factorable" id="toc-glossary-factorable" class="nav-link" data-scroll-target="#glossary-factorable">Factorable</a></li>
   <li><a href="#glossary-factoring" id="toc-glossary-factoring" class="nav-link" data-scroll-target="#glossary-factoring">Factoring</a></li>
   <li><a href="#glossary-factor_tree" id="toc-glossary-factor_tree" class="nav-link" data-scroll-target="#glossary-factor_tree">Factor tree</a></li>
   <li><a href="#glossary-formula" id="toc-glossary-formula" class="nav-link" data-scroll-target="#glossary-formula">Formula</a></li>
@@ -771,6 +761,7 @@ window.Quarto = {
   <li><a href="#glossary-place_value" id="toc-glossary-place_value" class="nav-link" data-scroll-target="#glossary-place_value">Place Value</a></li>
   <li><a href="#glossary-pemdas" id="toc-glossary-pemdas" class="nav-link" data-scroll-target="#glossary-pemdas">PEMDAS</a></li>
   <li><a href="#glossary-percent" id="toc-glossary-percent" class="nav-link" data-scroll-target="#glossary-percent">Percent</a></li>
+  <li><a href="#glossary-perfect-square-trinomial" id="toc-glossary-perfect-square-trinomial" class="nav-link" data-scroll-target="#glossary-perfect-square-trinomial">Perfect Square Trinomial</a></li>
   <li><a href="#glossary-point-slope-form" id="toc-glossary-point-slope-form" class="nav-link" data-scroll-target="#glossary-point-slope-form">Point-Slope Form</a></li>
   <li><a href="#glossary-polynomial" id="toc-glossary-polynomial" class="nav-link" data-scroll-target="#glossary-polynomial">Polynomial</a></li>
   <li><a href="#glossary-positive" id="toc-glossary-positive" class="nav-link" data-scroll-target="#glossary-positive">Positive</a></li>
@@ -779,8 +770,6 @@ window.Quarto = {
   <li><a href="#glossary-prime_number" id="toc-glossary-prime_number" class="nav-link" data-scroll-target="#glossary-prime_number">Prime Number</a></li>
   <li><a href="#glossary-prime_factorization" id="toc-glossary-prime_factorization" class="nav-link" data-scroll-target="#glossary-prime_factorization">Prime factorization</a></li>
   <li><a href="#glossary-product" id="toc-glossary-product" class="nav-link" data-scroll-target="#glossary-product">Product</a></li>
-  <li><a href="#see-also" id="toc-see-also" class="nav-link" data-scroll-target="#see-also"><strong>See Also:</strong> multiplication, sum, difference, quotient</a>
-  <ul class="collapse">
   <li><a href="#glossary-product-rule" id="toc-glossary-product-rule" class="nav-link" data-scroll-target="#glossary-product-rule">Product Rule (Exponents)</a></li>
   <li><a href="#glossary-proof" id="toc-glossary-proof" class="nav-link" data-scroll-target="#glossary-proof">Proof</a></li>
   <li><a href="#glossary-proportion" id="toc-glossary-proportion" class="nav-link" data-scroll-target="#glossary-proportion">Proportion</a></li>
@@ -793,7 +782,6 @@ window.Quarto = {
   <li><a href="#glossary-range" id="toc-glossary-range" class="nav-link" data-scroll-target="#glossary-range">Range</a></li>
   <li><a href="#glossary-rate" id="toc-glossary-rate" class="nav-link" data-scroll-target="#glossary-rate">Rate</a></li>
   <li><a href="#glossary-ratio" id="toc-glossary-ratio" class="nav-link" data-scroll-target="#glossary-ratio">Ratio</a></li>
-  <li><a href="#glossary-range" id="toc-glossary-range" class="nav-link" data-scroll-target="#glossary-range">Range</a></li>
   <li><a href="#glossary-real_number" id="toc-glossary-real_number" class="nav-link" data-scroll-target="#glossary-real_number">Real number</a></li>
   <li><a href="#glossary-reciprocal" id="toc-glossary-reciprocal" class="nav-link" data-scroll-target="#glossary-reciprocal">Reciprocal</a></li>
   <li><a href="#glossary-relatively_prime" id="toc-glossary-relatively_prime" class="nav-link" data-scroll-target="#glossary-relatively_prime">Relatively Prime</a></li>
@@ -835,7 +823,6 @@ window.Quarto = {
   <li><a href="#glossary-y-intercept" id="toc-glossary-y-intercept" class="nav-link" data-scroll-target="#glossary-y-intercept">y-intercept</a></li>
   <li><a href="#glossary-zero-exponent" id="toc-glossary-zero-exponent" class="nav-link" data-scroll-target="#glossary-zero-exponent">Zero Exponent</a></li>
   <li><a href="#glossary-zero-product-property" id="toc-glossary-zero-product-property" class="nav-link" data-scroll-target="#glossary-zero-product-property">Zero Product Property</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1082,7 +1069,7 @@ It means “3 times x.”</p>
 <section id="glossary-coordinate-plane" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-coordinate-plane">Coordinate Plane</h3>
 <p>A flat grid formed by the intersection of the x-axis and y-axis at the origin. It’s used to graph points, lines, and relationships between two numbers or variables.</p>
-<p><img src=".\images/Glossary/CartesianCoordinatePlane.png" class="img-fluid" width="500"></p>
+<p><img src="./images/Glossary/CartesianCoordinatePlane.png" class="img-fluid" width="500"></p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong> When you graph the equation y = 2x + 1, every point on the coordinate plane that satisfies the equation makes a straight line.</p>
 </blockquote>
@@ -1146,6 +1133,17 @@ As the number of hours you practice a skill increases, your performance often im
 The difference between <span class="math inline">\(15\)</span> and <span class="math inline">\(9\)</span> is <span class="math inline">\(6\)</span>.</p>
 </blockquote>
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-sum" data-term="sum" data-slug="sum">sum</a>, <a href="" class="glossary-link" data-original-href="#glossary-subtraction" data-term="subtraction" data-slug="subtraction">subtraction</a>, <a href="" class="glossary-link" data-original-href="#glossary-quotient" data-term="quotient" data-slug="quotient">quotient</a>, <a href="" class="glossary-link" data-original-href="#glossary-product" data-term="product" data-slug="product">product</a>, <a href="" class="glossary-link" data-original-href="#glossary-addition" data-term="addition" data-slug="addition">addition</a></p>
+<hr>
+</section>
+<section id="glossary-difference-of-squares" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-difference-of-squares">Difference of Squares</h3>
+<p>A <strong>difference of squares</strong> is an expression where one square is subtracted from another square. These expressions can be factored into two binomials.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong></p>
+<p><span class="math inline">\(x^2 - 9\)</span> is a difference of squares because <span class="math inline">\(x^2 = (x)^2\)</span> and <span class="math inline">\(9 = (3)^2\)</span>.</p>
+<p>It factors as <span class="math inline">\((x + 3)(x - 3)\)</span>.</p>
+</blockquote>
+<p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-factorable" data-term="factorable" data-slug="factorable">factorable</a></p>
 <hr>
 </section>
 <section id="glossary-discount" class="level3">
@@ -1233,10 +1231,10 @@ If a function models the height of a ball over time, the domain includes only th
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 2x + y &amp;= 10 \\
 2x - y &amp;= 2
-\end{align*}
+\end{aligned}
 \]</span></p>
 <p>Add the equations to eliminate <span class="math inline">\(y\)</span>: <span class="math inline">\(4x = 12 \Rightarrow x = 3\)</span>. Substitute back to get <span class="math inline">\(y = 4\)</span>. The solution is <span class="math inline">\((3, 4)\)</span>.</p>
 </blockquote>
@@ -1353,6 +1351,17 @@ You use the distributive property to spread multiplication over addition or subt
 </blockquote>
 <p><em>Note: Factor can also be used as a command. For example, “factor the expression <span class="math inline">\(2x-2\)</span>” asks you to take out the <a href="" class="glossary-link" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor" data-slug="greatest-common-factor">greatest common factor</a> giving <span class="math inline">\(2(x-1)\)</span></em>.</p>
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-factor-tree" data-term="factor tree" data-slug="factor-tree">factor tree</a>, <a href="" class="glossary-link" data-original-href="#glossary-factoring" data-term="factoring" data-slug="factoring">factoring</a>, <a href="" class="glossary-link" data-original-href="#glossary-whole-number" data-term="whole number" data-slug="whole-number">whole number</a>, <a href="" class="glossary-link" data-original-href="#glossary-multiple" data-term="multiple" data-slug="multiple">multiple</a>, <a href="" class="glossary-link" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor" data-slug="greatest-common-factor">greatest common factor</a></p>
+<hr>
+</section>
+<section id="glossary-factorable" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-factorable">Factorable</h3>
+<p>An expression is <strong>factorable</strong> if it can be written as a product of simpler expressions. Factoring often makes equations easier to solve or expressions easier to work with.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong></p>
+<p><span class="math inline">\(x^2 - 5x\)</span> is factorable.</p>
+<p>It can be written as <span class="math inline">\(x(x - 5)\)</span>.</p>
+</blockquote>
+<p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-difference-of-squares" data-term="difference of squares" data-slug="difference-of-squares">difference of squares</a>, <a href="" class="glossary-link" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect square trinomial" data-slug="perfect-square-trinomial">perfect square trinomial</a></p>
 <hr>
 </section>
 <section id="glossary-factoring" class="level3">
@@ -1490,7 +1499,7 @@ The area of a rectangle uses the formula <span class="math inline">\(A = \ell w\
 <p>Side to side, like the horizon. Level ground is horizontal.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>This is a horizontal number line. <img src=".\images/Glossary/blank_numberline.png" class="img-fluid"></p>
+<p>This is a horizontal number line. <img src="./images/Glossary/blank_numberline.png" class="img-fluid"></p>
 </blockquote>
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-vertical" data-term="vertical" data-slug="vertical">vertical</a>, <a href="" class="glossary-link" data-original-href="#glossary-slope" data-term="slope" data-slug="slope">slope</a>, <a href="" class="glossary-link" data-original-href="#glossary-axis" data-term="axis" data-slug="axis">axis</a></p>
 <hr>
@@ -2003,6 +2012,17 @@ The graph of <span class="math inline">\(y = x^2\)</span> is a parabola that ope
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-fraction" data-term="fraction" data-slug="fraction">fraction</a>, <a href="" class="glossary-link" data-original-href="#glossary-decimal" data-term="decimal" data-slug="decimal">decimal</a>, <a href="" class="glossary-link" data-original-href="#glossary-convert" data-term="convert" data-slug="convert">convert</a>, <a href="" class="glossary-link" data-original-href="#glossary-ratio" data-term="ratio" data-slug="ratio">ratio</a></p>
 <hr>
 </section>
+<section id="glossary-perfect-square-trinomial" class="level3">
+<h3 class="anchored" data-anchor-id="glossary-perfect-square-trinomial">Perfect Square Trinomial</h3>
+<p>A <strong>perfect square trinomial</strong> is a trinomial that can be written as the square of a binomial. It comes from squaring a binomial like <span class="math inline">\((x + a)^2\)</span> or <span class="math inline">\((x - a)^2\)</span>.</p>
+<blockquote class="blockquote">
+<p><strong>Example:</strong></p>
+<p><span class="math inline">\(x^2 + 6x + 9\)</span> is a perfect square trinomial.</p>
+<p>It factors as <span class="math inline">\((x + 3)^2\)</span>.</p>
+</blockquote>
+<p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-factorable" data-term="factorable" data-slug="factorable">factorable</a></p>
+<hr>
+</section>
 <section id="glossary-point-slope-form" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-point-slope-form">Point-Slope Form</h3>
 <p>A way to write the equation of a line when you know its <strong>slope</strong> and <strong>one point</strong> on the line. The form is:</p>
@@ -2088,9 +2108,8 @@ y - y_1 = m(x - x_1)
 <p><strong>Example:</strong></p>
 <p>The product of 4 and 6 is <code>24</code>, because <code>4 × 6 = 24</code>.</p>
 </blockquote>
+<p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-multiplication" data-term="multiplication" data-slug="multiplication">multiplication</a>, <a href="" class="glossary-link" data-original-href="#glossary-sum" data-term="sum" data-slug="sum">sum</a>, <a href="" class="glossary-link" data-original-href="#glossary-difference" data-term="difference" data-slug="difference">difference</a>, <a href="" class="glossary-link" data-original-href="#glossary-quotient" data-term="quotient" data-slug="quotient">quotient</a> ***</p>
 </section>
-<section id="see-also" class="level2">
-<h2 class="anchored" data-anchor-id="see-also"><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-multiplication" data-term="multiplication" data-slug="multiplication">multiplication</a>, <a href="" class="glossary-link" data-original-href="#glossary-sum" data-term="sum" data-slug="sum">sum</a>, <a href="" class="glossary-link" data-original-href="#glossary-difference" data-term="difference" data-slug="difference">difference</a>, <a href="" class="glossary-link" data-original-href="#glossary-quotient" data-term="quotient" data-slug="quotient">quotient</a></h2>
 <section id="glossary-product-rule" class="level3">
 <h3 class="anchored" data-anchor-id="glossary-product-rule">Product Rule (Exponents)</h3>
 <p>When multiplying powers with the <strong>same base</strong>, <strong>add</strong> the exponents: <span class="math inline">\(a^m\cdot a^n=a^{m+n}\)</span>.</p>
@@ -2216,16 +2235,6 @@ For <span class="math inline">\(y = x^2\)</span>, the range includes all numbers
 <p>If there are 6 boys and 4 girls in a group, the ratio of boys to girls is 6 to 4, or 3 to 2 after simplifying.</p>
 </blockquote>
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-fraction" data-term="fraction" data-slug="fraction">fraction</a>, <a href="" class="glossary-link" data-original-href="#glossary-quotient" data-term="quotient" data-slug="quotient">quotient</a></p>
-<hr>
-</section>
-<section id="glossary-range" class="level3">
-<h3 class="anchored" data-anchor-id="glossary-range">Range</h3>
-<p>The <strong>range</strong> of a relationship or function is the set of all <strong>output values</strong> it can produce.</p>
-<blockquote class="blockquote">
-<p><strong>Example:</strong><br>
-If <span class="math inline">\(f(x) = 2x + 3\)</span> and the domain is <span class="math inline">\(x = 1, 2, 3\)</span>, then the outputs are <span class="math inline">\(5, 7, 9\)</span>. The range is <span class="math inline">\(\{5, 7, 9\}\)</span>.</p>
-</blockquote>
-<p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-domain" data-term="domain" data-slug="domain">domain</a>, <a href="" class="glossary-link" data-original-href="#glossary-function" data-term="function" data-slug="function">function</a>, <a href="" class="glossary-link" data-original-href="#glossary-output" data-term="output" data-slug="output">output</a></p>
 <hr>
 </section>
 <section id="glossary-real_number" class="level3">
@@ -2529,10 +2538,10 @@ and the <strong>x</strong> is a symbol for a variable (an unknown number).</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 y &amp;= 2x + 1 \\
 y &amp;= -x + 4
-\end{align*}
+\end{aligned}
 \]</span></p>
 <p>The two lines intersect at <span class="math inline">\((1, 3)\)</span>, so that point is the <strong>solution to the system</strong>.</p>
 </blockquote>
@@ -2619,7 +2628,7 @@ where <span class="math inline">\((h, k)\)</span> is the vertex. This form makes
 <p>Up and down, like a flagpole.</p>
 <blockquote class="blockquote">
 <p><strong>Example:</strong></p>
-<p>This is a <strong>vertical</strong> number line. <img src=".\images/Glossary/vertical_by_tens.png" height="200"></p>
+<p>This is a <strong>vertical</strong> number line. <img src="./images/Glossary/vertical_by_tens.png" height="200"></p>
 </blockquote>
 <p><strong>See Also:</strong> <a href="" class="glossary-link" data-original-href="#glossary-horizontal" data-term="horizontal" data-slug="horizontal">horizontal</a>, <a href="" class="glossary-link" data-original-href="#glossary-slope" data-term="slope" data-slug="slope">slope</a></p>
 <hr>
@@ -2687,17 +2696,12 @@ The solutions are <span class="math inline">\(x=4\)</span> and <span class="math
 
 
 </section>
-</section>
 
 </main> <!-- /main -->
 <script src="./scripts/popper.min.js"></script>
-
 <script src="./scripts/tippy.min.js"></script>
-
 <script src="./scripts/glossary-tooltips.js"></script>
-
 <script src="./scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

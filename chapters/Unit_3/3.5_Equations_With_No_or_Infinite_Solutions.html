@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4ff66e45b39d49436fe97d3fe27b9920.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +72,25 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-
 window.MathJax = {
-
   tex: {
-
     packages: {'[+]': ['base', 'ams', 'color']},
-
     macros: {
+      // right-side "step note" that does NOT use \tag
+      // \hbox{} creates a zero-width box so the note does not affect alignment
+      // \hskip inserts spacing to the right
+      stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
 
-      stepnote: ['\\tag*{\\class{stepnote}{\\textcolor{gray}{#1}}}', 1],
-
-      snboth:   ['\\tag*{\\class{stepnote}{\\textcolor{gray}{$#1$\\ both\\ sides}}}', 1],
-
-      snplus:   ['\\snboth{+#1}', 1],
-
-      snminus:  ['\\snboth{-#1}', 1],
-
-      sntimes:  ['\\snboth{\\times\\ #1}', 1],
-
-      sndiv:    ['\\snboth{\\div\\ #1}', 1]
-
+      // helpers
+      snboth:   ['\\stepnote{$#1$\\ \\text{both sides}}', 1],
+      snplus:   ['\\snboth{+\\,#1}', 1],
+      snminus:  ['\\snboth{-\\,#1}', 1],
+      sntimes:  ['\\snboth{\\times\\,#1}', 1],
+      sndiv:    ['\\snboth{\\div\\,#1}', 1]
     }
-
   }
-
 };
-
 </script>
-
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -144,8 +134,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -723,18 +711,18 @@ Note
 </div>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-all-real-numbers" data-term="all real numbers" data-slug="all-real-numbers">all real numbers</a>, <a href="" class="glossary-link" data-original-href="#glossary-linear-equation" data-term="linear equation" data-slug="linear-equation">linear equation</a>, <a href="" class="glossary-link" data-original-href="#glossary-no-solution" data-term="no solution" data-slug="no-solution">no solution</a>, <a href="" class="glossary-link" data-original-href="#glossary-real-number" data-term="real numbers" data-slug="real-number">real numbers</a></p>
+<p><a href="" class="glossary-link" data-slug="all-real-numbers" data-term="all real numbers" data-original-href="#glossary-all-real-numbers">all real numbers</a>, <a href="" class="glossary-link" data-slug="linear-equation" data-term="linear equation" data-original-href="#glossary-linear-equation">linear equation</a>, <a href="" class="glossary-link" data-slug="no-solution" data-term="no solution" data-original-href="#glossary-no-solution">no solution</a>, <a href="" class="glossary-link" data-slug="real-number" data-term="real numbers" data-original-href="#glossary-real-number">real numbers</a></p>
 </div>
 <section class="level2">
 <h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
 <ol type="1">
 <li><p>Solve <span class="math inline">\(5x + 2 = 3x - 12\)</span>.</p></li>
 <li><p>Taylor solved the equation <span class="math inline">\(10x - 9 = 10x + 3\)</span>. Here are her steps. <span class="math display">\[
-\begin{align*}
+\begin{aligned}
 10x - 9 &amp;= 10x + 3 \\
 10x - 9 \textcolor{red}{-10x} &amp;= 10x + 3 \textcolor{red}{- 10x} \\
 -9 &amp;= 3
-\end{align*}
+\end{aligned}
 \]</span></p>
 <p>Did Taylor make a mistake?</p></li>
 </ol>
@@ -744,28 +732,28 @@ Note
 <section id="equations-with-no-solution" class="level3">
 <h3 class="anchored" data-anchor-id="equations-with-no-solution">3.5.1 - Equations With No Solution</h3>
 <p>In the last lesson, when we moved variables to one side, we always ended up with a single answer like <span class="math inline">\(x = 4\)</span>. But sometimes, something different happens. After simplifying, the variables cancel out and we’re left with a statement that is <strong>false</strong>.</p>
-<p>When this happens, the equation has <strong>no solution</strong> — there is no value that will make both sides equal.</p>
+<p>When this happens, the equation has <strong>no solution</strong>, there is no value that will make both sides equal.</p>
 <hr>
 <p><strong>Example 1:</strong> An equation with no solution</p>
 <p>Solve <span class="math inline">\(3x + 5 = 3x - 2\)</span>.</p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 3x + 5 &amp;= 3x - 2 \\
 3x + 5 \textcolor{red}{- 3x} &amp;= 3x - 2 \textcolor{red}{- 3x} \\
-5 &amp;= -2 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
-\end{align*}
+5 &amp;= -2 \stepnote{\textcolor{red}{false statement}}
+\end{aligned}
 \]</span></p>
 <p>Since <span class="math inline">\(5 = -2\)</span> is not true, there is <strong>no solution</strong>.</p>
 <hr>
 <p><strong>Example 2:</strong> Another equation with no solution</p>
 <p>Solve <span class="math inline">\(2(x + 4) = 2x + 7\)</span>.</p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 2(x + 4) &amp;= 2x + 7 \\
 2x + 8 &amp;= 2x + 7 \\
 2x + 8 \textcolor{red}{- 2x} &amp;= 2x + 7 \textcolor{red}{- 2x} \\
-8 &amp;= 7 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
-\end{align*}
+8 &amp;= 7 \stepnote{\textcolor{red}{false statement}}
+\end{aligned}
 \]</span></p>
 <p>This is also false, so there is <strong>no solution</strong>.</p>
 <hr>
@@ -780,24 +768,24 @@ Note
 <p><strong>Example 3:</strong> All real numbers</p>
 <p>Solve <span class="math inline">\(4(x + 2) = 2(2x + 4)\)</span>.</p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 4(x + 2) &amp;= 2(2x + 4) \\
 4x + 8 &amp;= 4x + 8 \\
 4x + 8 \textcolor{red}{- 4x} &amp;= 4x + 8 \textcolor{red}{- 4x} \\
-8 &amp;= 8 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
-\end{align*}
+8 &amp;= 8 \stepnote{\textcolor{green}{true statement}}
+\end{aligned}
 \]</span></p>
 <p>Because <span class="math inline">\(8 = 8\)</span> is always true, any value of <span class="math inline">\(x\)</span> will make the original equation work.</p>
 <hr>
 <p><strong>Example 4:</strong> All real numbers again</p>
 <p>Solve <span class="math inline">\(5y - 3 + 2y = 7y - 3\)</span>.</p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 5y - 3 + 2y &amp;= 7y - 3 \\
 7y - 3 &amp;= 7y - 3 \\
 7y - 3 \textcolor{red}{- 7y} &amp;= 7y - 3 \textcolor{red}{- 7y} \\
--3 &amp;= -3 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
-\end{align*}
+-3 &amp;= -3 \stepnote{\textcolor{green}{true statement}}
+\end{aligned}
 \]</span></p>
 <p>Again, the result is always true. The solution is <strong>all real numbers</strong>.</p>
 <hr>
@@ -807,7 +795,7 @@ Note
 </section>
 <section id="determining-the-number-of-solutions" class="level3">
 <h3 class="anchored" data-anchor-id="determining-the-number-of-solutions">3.5.3 - Determining the Number of Solutions</h3>
-<p>There are some tricks for telling whether a <a href="" class="glossary-link" data-original-href="#glossary-linear-equation" data-term="linear equation" data-slug="linear-equation">linear equation</a> will have <strong>one</strong>, <strong>no</strong>, or <strong>infinitely many</strong> solutions. You can often see it without actually solving the equation all the way!</p>
+<p>There are some tricks for telling whether a <a href="" class="glossary-link" data-slug="linear-equation" data-term="linear equation" data-original-href="#glossary-linear-equation">linear equation</a> will have <strong>one</strong>, <strong>no</strong>, or <strong>infinitely many</strong> solutions. You can often see it without actually solving the equation all the way!</p>
 <hr>
 <p><strong>Equations With One Solution</strong> If a linear equation has a variable term on one side and a different constant term on the other side, it will have <strong>one solution</strong>.</p>
 <p><strong>Example 5:</strong> How many solutions are there?</p>
@@ -941,13 +929,9 @@ x = 7 \quad \text{(divide both sides by 6)}
 
 </main> <!-- /main -->
 <script src="../../scripts/popper.min.js"></script>
-
 <script src="../../scripts/tippy.min.js"></script>
-
 <script src="../../scripts/glossary-tooltips.js"></script>
-
 <script src="../../scripts/custom-callouts.js"></script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
