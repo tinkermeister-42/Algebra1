@@ -301,7 +301,7 @@ $$
 (x - h)^2 = k
 $$
 
-we can solve it by taking {{< glink slug="square root" text="square roots" >}} of both sides.
+we can solve it by taking {{< glink slug="square-root" text="square roots" >}} of both sides.
 
 ***
 
