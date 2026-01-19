@@ -135,6 +135,47 @@ Solve each equation using the quadratic formula.
 
 ***
 
+### Applications of Quadratics (6.6)
+
+Solve each problem. Show your work and interpret your answers in context.
+
+30. The height of a ball (in feet) after $t$ seconds is given by  
+$$
+h(t) = -16t^2 + 32t
+$$
+
+a. How long does it take for the ball to hit the ground?  
+b. What is the maximum height of the ball?
+
+31. A ball is thrown upward from a height of $6$ feet. Its height is modeled by  
+$$
+h(t) = -16t^2 + 24t + 6
+$$
+
+a. When does the ball hit the ground?  
+b. What is the maximum height?
+
+32. A rectangular garden has an area of $45$ square feet. The length is $3$ feet longer than the width.  
+Find the dimensions of the garden.
+
+33. The profit (in dollars) from selling $x$ items is given by  
+$$
+P(x) = -x^2 + 20x - 60
+$$
+
+a. How many items should be sold to maximize profit?  
+b. What is the maximum profit?
+
+34. A firework is launched from the ground. Its height is modeled by  
+$$
+h(t) = -16t^2 + 48t
+$$
+
+a. When does the firework hit the ground?  
+b. At what time does it reach its maximum height?
+
+***
+
 :::{.answers}
 
 1. Vertex $(2, -3)$, minimum, axis $x = 2$  
@@ -157,7 +198,7 @@ Solve each equation using the quadratic formula.
 16. $x = -3, 3$  
 17. $x = 0, -4$  
 18. $x = 0, -1, -2$  
-19. $x = 0, -5, 1$ 
+19. $x = 0, -5, 1$  
 
 20. $x = -3 \pm \sqrt{13}$  
 21. $x = 1, 7$  
@@ -170,5 +211,19 @@ Solve each equation using the quadratic formula.
 27. No real solutions  
 28. $x = 2$  
 29. No real solutions  
+
+30. a. $t = 0, 2$ so the ball hits the ground at $t = 2$ seconds  
+    b. Maximum height is $16$ feet  
+
+31. a. $t = \dfrac{3 + \sqrt{15}}{4} \approx 1.72$ seconds  
+    b. Maximum height is $15$ feet  
+
+32. Width $= 5$ ft, length $= 8$ ft  
+
+33. a. $x = 10$  
+    b. Maximum profit is $40$ dollars  
+
+34. a. $t = 0, 3$ so it hits the ground at $t = 3$ seconds  
+    b. Maximum height occurs at $t = 1.5$ seconds  
 
 :::

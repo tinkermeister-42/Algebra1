@@ -113,6 +113,7 @@ book:
         - file: chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.qmd
         - file: chapters/Unit_6/6.4_Completing_the_Square.qmd
         - file: chapters/Unit_6/6.5_The_Quadratic_Formula.qmd
+        - file: chapters/Unit_6/6.6_Applications_of_Quadratics.qmd
         - file: chapters/Unit_6/Review.qmd
 
     - part: "Interactive Learning"

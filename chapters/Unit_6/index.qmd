@@ -1,3 +1,49 @@
 # Introduction {.unnumbered}
 
-Coming Soon
+Welcome to **Unit 6!**
+
+This unit is all about **quadratic functions**, one of the most important and powerful ideas in Algebra. Quadratics show up whenever something rises and falls, speeds up and slows down, or reaches a highest or lowest point.
+
+You will explore what quadratic functions look like, how to graph them, and how to solve quadratic equations in multiple ways. Each method gives you a different perspective, and together they help you understand both the structure of quadratics and how they behave.
+
+As you move through the unit, you will go from visual ideas like graphs and symmetry to algebraic techniques like factoring, completing the square, and using the quadratic formula. By the end, you will be able to apply quadratics to real situations and interpret what the solutions actually mean.
+
+***
+
+## What You’ll Learn
+
+By the end of this unit, you’ll be able to:
+
+* **Understand quadratic functions** and identify their key features like vertex and axis of symmetry.
+
+* **Graph quadratic functions** and connect equations to their shapes.
+
+* **Solve quadratic equations by factoring** and interpret the solutions.
+
+* **Solve quadratics by completing the square** and see how vertex form is created.
+
+* **Use the quadratic formula** to solve any quadratic equation.
+
+* **Apply quadratic models** to real world situations and answer meaningful questions.
+
+***
+
+## Topics in This Unit
+
+[**Introduction to Quadratic Functions**](6.1_Introduction_to_Quadratic_Functions.html)  
+Learn what makes a function quadratic and explore the basic shape and features of parabolas.
+
+[**Graphing Quadratics**](6.2_Graphing_Quadratics.html)  
+Graph quadratic functions and identify key features like the vertex, axis of symmetry, and intercepts.
+
+[**Solving Quadratic Equations by Factoring**](6.3_Solving_Quadratic_Equations_by_Factoring.html)  
+Solve quadratic equations by rewriting them as products and finding their zeros.
+
+[**Completing the Square**](6.4_Completing_the_Square.html)  
+Rewrite quadratics to reveal the vertex and solve equations using a structured process.
+
+[**The Quadratic Formula**](6.5_The_Quadratic_Formula.html)  
+Use a single formula that works for every quadratic equation.
+
+[**Applications of Quadratics**](6.6_Applications_of_Quadratics.html)  
+Model and solve real world problems involving area, motion, and maximum or minimum values.
