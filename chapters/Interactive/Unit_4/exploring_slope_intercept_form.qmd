@@ -15,6 +15,6 @@ As you explore, think about these questions:
 
 {{< include /assets/Unit_4/slope-intercept-form-widget.html >}}
 
----
+***
 
 To learn more about slope-intercept form, take a look at [4.3 - The Equation of a Line](/chapters/Unit_4/4.3_The_Equation_of_a_Line.qmd)

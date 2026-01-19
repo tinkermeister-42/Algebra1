@@ -103,7 +103,7 @@ These numbers match what your eyes already noticed in the stairways:
 * B and C are steep - $y$ changes more for them.
 * A and D are less steep - $y$ changes less for them.
 
----
+***
 
 **Example 1:** Finding slope from a graph
 
@@ -145,7 +145,7 @@ Counting boxes works great when the graph is clear.
 But sometimes the points are far apart or hard to see.
 In those cases, we use a formula to calculate slope exactly.
 
----
+***
 
 ### 4.2.3 - Finding Slope Using the Slope Formula
 
@@ -165,15 +165,15 @@ Compute the slope of the line between the points $(-2, 8)$ and $(10, 6)$.
 Here $x_1=-2$, $x_2=10$, $y_1=8$, and $y_2=6$.
 
 $$
-\begin{align*}
+\begin{aligned}
 m &= \frac{y_2 - y_1}{x_2 - x_1} \\
 &= \frac{6 - 8}{10 - (-2)} \\
 &= \frac{-2}{12} \\
 &= -\frac{1}{6}
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 3:** More practice with the slope formula
 
@@ -182,13 +182,13 @@ Compute the slope of the line between the points $(3, -2)$ and $(5, -5)$.
 Here $x_1=3$, $x_2=-2$, $y_1=5$, and $y_2=-5$.
 
 $$
-\begin{align*}
+\begin{aligned}
 m &= \frac{-5 - (-2)}{5-3} \\
 &= -\frac{3}{2} \\
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 4:** Flat line
 
@@ -197,10 +197,10 @@ Compute the slope of the line containing $(4, 3)$ and $(2, 3)$.
 Here $x_1=4$, $x_2=2$, $y_1=3$, and $y_2=3$.
 
 $$
-\begin{align*}
+\begin{aligned}
 m &= \frac{3 - 3}{2 - 4} \\
 &= 0
-\end{align*}
+\end{aligned}
 $$
  
 
@@ -210,7 +210,7 @@ It means the line is **horizontal**. If $y$-values don't change as $x$ changes, 
 
 :::
 
----
+***
 
 **Example 5:** Undefined slopes
 
@@ -219,10 +219,10 @@ Find the slope of the line containing $(5, -3)$ and $(5, 6)$.
 Here $x_1=5$, $x_2=5$, $y_1=3$, and $y_2=6$.
 
 $$
-\begin{align*}
+\begin{aligned}
 m &= \frac{6 - 3}{5 - 5} \\
 &= \frac{3}{0} \\
-\end{align*}
+\end{aligned}
 $$
 
 The slope is **undefined** because you can't divide by zero.
@@ -234,7 +234,7 @@ It means the line is **vertical**. You move up and down but not left and right.
 
 :::
 
----
+***
 
 :::{.callout-tip title="Straight up or straight down?"}
 
@@ -253,11 +253,11 @@ Since it’s both straight up and straight down, we say the slope is **undefined
 :::{.you-try title="Calculate the slope between $(0, 95)$ and $(-50, 2)$"}
 
 $$
-\begin{align*}
+\begin{aligned}
 m &= \frac{2 - 95}{-50 - 0} \\
 &= \frac{-93}{-50} \\
 &= \frac{93}{50}
-\end{align*}
+\end{aligned}
 $$
 
 :::
@@ -283,7 +283,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 5. A line that goes down very slightly — almost flat — from left to right.
 
----
+***
 
 **Plot the points and count to find the slope:**
 
@@ -297,7 +297,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 10. From $(4,-1)$ to $(4,3)$
 
----
+***
 
 **Use the slope formula to calculate the slope:**
 
@@ -315,7 +315,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 17. $(-6,9)$ and $(3,-6)$
 
----
+***
 
 **Real-world slope problems:**
 
@@ -331,7 +331,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 23. A student graphs temperature over time: $(2,40°)$ and $(6,68°)$. What is the slope, and what does it tell you?
 
----
+***
 
 **Challenge Problems:**
 

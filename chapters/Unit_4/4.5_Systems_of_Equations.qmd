@@ -45,7 +45,7 @@ Each equation describes a rule or relationship, and the solution to the system i
 
 In the following examples, we will see some systems of equations and learn how to interpret their solutions.
 
----
+***
 
 **Example 1:** Finding the intersection
 
@@ -78,7 +78,7 @@ $$
 
 :::
 
----
+***
 
 **Example 2:** Where do they cross?
 
@@ -97,7 +97,7 @@ $$
 
 The solution to the system is $(2, 4)$. This is the one point where both equations are true.
 
----
+***
 
 **Example 3:** Gym memberships
 
@@ -124,7 +124,7 @@ After **5 classes**, both plans cost **\$35**.
 Before that, Plan A is cheaper; after that, Plan B is cheaper.
 The {{< glink intersection >}} shows exactly where the two plans balance.
 
----
+***
 
 **Example 4:** Plumbers and electricians
 
@@ -149,7 +149,7 @@ The lines intersect at $(6, 400)$.
 After **6 hours**, both services cost **\$400**.
 The $x$-value tells when they cost the same, and the $y$-value tells how much that shared cost is.
 
----
+***
 
 :::{.you-try-m title="Cell-Phone Plan Costs"}
 
@@ -179,7 +179,7 @@ Before that, the second plan is cheaper; after that, the first plan is cheaper.
 
 :::
 
----
+***
 
 ### 4.5.2 - Other Solving Methods (Optional)
 
@@ -194,7 +194,7 @@ There are two main algebraic methods:
 
 Let’s look at each one.
 
----
+***
 
 #### **Solving by Substitution**
 
@@ -208,7 +208,7 @@ That turns a two-variable system into a single equation you already know how to 
 3. **Solve** for the remaining variable.
 4. **Plug back in** to find the other variable.
 
----
+***
 
 **Example 5:** Substitute to solve
 
@@ -230,11 +230,11 @@ $$
 Simplify and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 3x + 2 &= 8 \snminus{2} \\
 3x &= 6 \sndiv{3} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 Now substitute back:
@@ -245,7 +245,7 @@ $$
 
 **Solution:** $(2, 4)$
 
----
+***
 
 **Example 6:** Substitute to solve
 
@@ -266,25 +266,25 @@ $$
 Simplify and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 4x - 8 &= -24 \snplus{8} \\
 4x &= -16 \sndiv{4} \\
 x &= -4
-\end{align*}
+\end{aligned}
 $$
 
 Then substitute and solve for y:
 
 $$
-\begin{align*}
+\begin{aligned}
 y &= 3(-4) - 8 \\
 y &= -20
-\end{align*}
+\end{aligned}
 $$
 
 **Solution:** $(-4, -20)$
 
----
+***
 
 #### **Solving by Elimination**
 
@@ -298,7 +298,7 @@ This method is especially convenient when both equations already have similar $x
 3. **Solve** for the remaining variable.
 4. **Substitute back** to find the other variable.
 
----
+***
 
 **Example 7:** Eliminate it
 
@@ -313,25 +313,25 @@ $$
 Add the equations to make $y$ cancel out:
 
 $$
-\begin{align*}
+\begin{aligned}
 (2x + y) + (2x - y) &= 10 + 2 \stepnote{Combine Like Terms} \\
 4x &= 12 \sndiv{4} \\
 x &= 3
-\end{align*}
+\end{aligned}
 $$
 
 Now substitute $x = 3$ into one of the equations:
 
 $$
-\begin{align*}
+\begin{aligned}
 2(3) + y &= 10 \snminus{6} \\
 y &= 4
-\end{align*}
+\end{aligned}
 $$
 
 **Solution:** $(3, 4)$
 
----
+***
 
 **Example 8:** Another example of elimination
 
@@ -348,26 +348,26 @@ $$
 Add the equations:
 
 $$
-\begin{align*}
+\begin{aligned}
 (x + y) + (x - y) &= 9 + 3 \stepnote{Combine Like Terms} \\
 2x &= 12 \sndiv{2} \\
 x &= 6
-\end{align*}
+\end{aligned}
 $$
 
 Now plug back in:
 
 $$
-\begin{align*}
+\begin{aligned}
 6 + y &= 9 \snminus{6} \\
 y &= 3
-\end{align*}
+\end{aligned}
 $$
 
 
 **Solution:** $(6, 3)$
 
----
+***
 
 :::{.note title="When Nothing Cancels Out"}
 In the previous two examples, one of the variables canceled out when combining the two equations. Sometimes you will have to **multiply one or both equations** by something for this to work.
@@ -397,22 +397,22 @@ $$
 Now add the equations:
 
 $$
-\begin{align*}
+\begin{aligned}
 (6x - 6x) + (4y - 9y) &= 32 - 42 \stepnote{Combine Like Terms} \\
 -5y &= -10 \sndiv{-5} \\
 y &= 2
-\end{align*}
+\end{aligned}
 $$
 
 Substitute $y = 2$ into one of the original equations:
 
 $$
-\begin{align*}
+\begin{aligned}
 3x + 2(2) &= 16 \\
 3x + 4 &= 16 \snminus{4} \\
 3x &= 12 \sndiv{3} \\
 x&= 4
-\end{align*}
+\end{aligned}
 $$
 
 **Solution:** $(4, 2)$
@@ -475,7 +475,7 @@ Graph each system and find the solution.
    
    ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
----
+***
 
 **Word Problems**
 
@@ -511,7 +511,7 @@ Graph each system and find the solution.
    
     After how many tickets will the total cost be the same?
 
----
+***
 
 **Solve by Substitution**
 
@@ -555,7 +555,7 @@ Graph each system and find the solution.
    \end{cases}
    $$
 
----
+***
 
 **Solve by Elimination**
 
@@ -599,7 +599,7 @@ Graph each system and find the solution.
     \end{cases}
     $$
 
----
+***
 
 **Challenge Problems**
 
@@ -623,7 +623,7 @@ Graph each system and find the solution.
     \end{cases}
     $$
 
----
+***
 
 :::{.answers}
 

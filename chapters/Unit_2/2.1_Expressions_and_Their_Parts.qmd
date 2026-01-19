@@ -52,7 +52,7 @@ Now you know the number, so you change the label to 3.
 Before opening it, **x** was a variable — a placeholder for an unknown number. After looking, you found $x = 3$.
 
 
----
+***
 
 ### 2.1.2 - What Is an Expression?
 
@@ -121,7 +121,7 @@ In algebra, we usually don’t use $\times$ for multiplication. Instead, we use 
 Why avoid $\times$? To keep it from looking like the variable x.
 :::
 
----
+***
 
 ### 2.1.3 - Terms, Coefficients, and Constants
 
@@ -161,13 +161,13 @@ Coefficients: 18, -2, 3
 Constant: -1
 :::
 
----
+***
 
 ### 2.1.4 - Translating Between Words and Expressions
 
 **Expressions** are math phrases that describe real situations. Learning to turn words into expressions is one of the most important skills in algebra because it connects math to real life — and it’s the first step to solving real-world problems.
 
----
+***
 
 **Examples:**
 
@@ -186,7 +186,7 @@ Constant: -1
 - A plant starts at **g** inches tall and grows 8 inches.  
   New height: $g + 8$
 
----
+***
 
 ::: {.you-try-m title="Rectangle width from length"}
 A rectangle has length **L**. The width is 2 more than 4 times the length.  
@@ -197,7 +197,7 @@ Find an expression for the width **W** in terms of the length **L**,
 $4L + 2$
 :::
 
----
+***
 
 Some words and phrases show up very frequently when describing mathematical situations. Here is a table of some of the most common ones to help you!
 
@@ -242,7 +242,7 @@ For each of the following expressions, list the terms, coefficients, and constan
 
 5. $\tfrac12 m + 4 - 3n$
 
----
+***
 
 **Say It in Words**  
 
@@ -259,7 +259,7 @@ For each of the following expressions, write a sentence that describes the expre
 
 10. $2(x+3)$
 
----
+***
 
 **From Situation to Expression**  
 
@@ -275,7 +275,7 @@ For each of the following situations, write an expression that represents it. Fo
 
 15. A phone plan includes 2 GB free, then $5 per extra GB $g$.
 
----
+***
 
 **Bringing It Back** *(review from Unit 1)*  
 
@@ -285,7 +285,7 @@ For each of the following situations, write an expression that represents it. Fo
 
 18. Write an expression for half the distance from 2 to x on the number line.
 
----
+***
 
 **Match the Story to the Expression**  
 
@@ -313,7 +313,7 @@ D) $4t+6$
 
 E) $3x+1$
 
----
+***
 
 
 **Challenge Problems**  
@@ -324,7 +324,7 @@ E) $3x+1$
 25.  Write an expression for:
      *"The distance from 5 to $x$ on the number line, increased by 3 and then squared"*
 
----
+***
 
 :::{.answers}
 **Identify Parts**  

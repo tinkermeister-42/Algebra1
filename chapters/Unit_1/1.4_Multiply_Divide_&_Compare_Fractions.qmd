@@ -98,7 +98,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.4.2 - Multiplying Mixed Numbers
 
@@ -133,7 +133,7 @@ $$
 $$
 Now we know we have 3 wholes and 8 remaining ninths. Together that is $3 \tfrac{8}{9}$.
 
----
+***
 
 **Another Example:** $2\tfrac{1}{4} \times \frac{4}{5}$
 
@@ -163,7 +163,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.4.3 - Division & Reciprocals
 
@@ -180,7 +180,7 @@ $$
 $$
 Dividing by $\frac{1}{4}$ asks, "How many fourths are there in $\frac{2}{3}$?"
 
----
+***
 
 :::{.remember title="Keep, Change, Flip"}
 
@@ -222,7 +222,7 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
    d. $\frac{7}{8} \div \frac{7}{8}$  
 
 
----
+***
 
 **Word Problems**
 
@@ -234,7 +234,7 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
 
    c. A board is 6 feet long. Each shelf needs $\frac{3}{4}$ feet. How many shelves can you make?
 
----
+***
 
 **Challenge Problems**
 
@@ -242,7 +242,7 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
 
 6. A pancake recipe calls for $2\tfrac{1}{4}$ cups of sugar per batch. If you have exactly 9 cups of sugar, what is the greatest number of full batches you can make?
 
----
+***
 
 ::: {.answers}
 
@@ -254,7 +254,7 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
 
 3. Bigger, the answer will be 2.
 
----
+***
 
 **Multiply and Divide Fractions**
 
@@ -279,7 +279,7 @@ Zero has no reciprocal (you can’t divide by 0). For mixed numbers, convert to 
    c. $\frac{5}{2}$
    d. 1
 
----
+***
 
 **Word Problems**
 

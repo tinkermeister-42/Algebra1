@@ -1,13 +1,27 @@
-% macros.tex
 \usepackage{cancel}
 \usepackage{amsmath}
 \usepackage{xcolor}
+\usepackage{mathtools}
 
-\newcommand{\stepnote}[1]{\tag*{\class{stepnote}{\textcolor{gray}{#1}}}}
-\newcommand{\snboth}[1]{\tag*{\class{stepnote}{\textcolor{gray}{$#1$ both sides}}}}
+\providecommand{\class}[2]{#2}
 
-% optional shorthands
-\newcommand{\snplus}[1]{\snboth{+#1}}
-\newcommand{\snminus}[1]{\snboth{-#1}}
-\newcommand{\sntimes}[1]{\snboth{\times #1}}
-\newcommand{\sndiv}[1]{\snboth{\div #1}}
+% Step note that is safe in or out of math mode
+\newcommand{\stepnote}[1]{%
+  \ifmmode
+    \mathrlap{\qquad \text{\class{stepnote}{\textcolor{gray}{\scriptsize #1}}}}%
+  \else
+    {\class{stepnote}{\textcolor{gray}{\scriptsize #1}}}%
+  \fi
+}
+
+% Compatibility macro for replacing old tag based notes
+\newcommand{\steptag}[1]{\stepnote{#1}}
+
+% Notes like "+ 3 both sides"
+\newcommand{\snboth}[1]{\stepnote{\ensuremath{#1}\ \text{both sides}}}
+
+\newcommand{\snplus}[1]{\snboth{+\,#1}}
+\newcommand{\snminus}[1]{\snboth{-\,#1}}
+\newcommand{\sntimes}[1]{\snboth{\times\,#1}}
+\newcommand{\sndiv}[1]{\snboth{\div\,#1}}
+

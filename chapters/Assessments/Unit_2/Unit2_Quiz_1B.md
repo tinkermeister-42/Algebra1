@@ -43,7 +43,7 @@ Your boss says she will pay you \$25 to show up to work plus \$15 for every hour
 <br>
 <br>
 
----
+***
 
 ## 2.2 – Evaluating Expressions
 
@@ -87,7 +87,7 @@ Test whether $9x - 3$ is equivalent to $3(x - 1) + 6x$. Try **2 different values
 <br>
 <br>
 
----
+***
 
 ## 2.3 – Combining Like Terms
 

@@ -94,7 +94,7 @@ e. $252xyz$ and $525yxz$
 Pairs: a, d, and e
 
 :::
----
+***
 
 ### 2.3.2 - How to Combine Like Terms (Sort → Group → Add)
 
@@ -206,7 +206,7 @@ $$
 $$
 
 :::
----
+***
 
 ### 2.3.3 - Checking Your Work
 
@@ -312,7 +312,7 @@ $$
 
 24. Give a pair of expressions that are **not** equivalent, but that give the **same value** when $x=0$. Explain why that single test doesn’t prove equivalence.
 
----
+***
 
 :::{.answers}
 **Identify and combine like terms**

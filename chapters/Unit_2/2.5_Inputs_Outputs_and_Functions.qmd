@@ -71,7 +71,7 @@ It takes the input $y$, doubles it, and subtracts 2.
 **Example:** $g(3) = 2(3)-2 = 4$
 :::
 
----
+***
 
 ### 2.5.2 - Is It a Function? (Using Tables)
 
@@ -152,7 +152,7 @@ It’s okay if **different inputs** give the **same output**. For example, two d
 (c) Function (different inputs share one output—allowed).
 :::
 
----
+***
 
 ### 2.5.3 - Evaluating Functions
 
@@ -161,20 +161,20 @@ Function notation is a handy way to describe expression evaluation.
 Suppose we are asked to evaluate the expression $2x + 3$ when $x = 5$. We would do this:
 
 $$
-\begin{align*}
+\begin{aligned}
 2(\textcolor{red}{5}) + 3 &= 10 + 3 \\
 &= 13
-\end{align*}
+\end{aligned}
 $$
 
 Functions let us ask the same question with less writing. Instead we can just say "Find $f(5)$".
 
 $$
-\begin{align*}
+\begin{aligned}
 f(\textcolor{red}{5}) &= 2(\textcolor{red}{5}) + 3 \\
 &= 10 + 3 \\
 &= 13
-\end{align*}
+\end{aligned}
 $$
 
 **Example 3:** Evaluating functions
@@ -182,11 +182,11 @@ $$
 Let $g(x) = 3(x+4)$. Find $g(2)$.
 
 $$
-\begin{align*}
+\begin{aligned}
 g(\textcolor{red}{2}) &= 3(\textcolor{red}{2}+4) \\
 &= 3(6) \\
 &= 18
-\end{align*}
+\end{aligned}
 $$
 
 **Example 4:** Evaluating functions with negative numbers
@@ -194,12 +194,12 @@ $$
 Let $h(x) = -2(3x-1)+7$. Find $h(-2)$.
 
 $$
-\begin{align*}
+\begin{aligned}
 h(\textcolor{red}{-2}) &= -2(3(\textcolor{red}{-2})-1)+7 \\
 &= -2(-6 - 1) + 7 \\
 &= -2(-7)+7 \\
 &= 21
-\end{align*}
+\end{aligned}
 $$
 
 :::{.real-world title="Programming: Functions everywhere"}
@@ -210,7 +210,7 @@ Programmers spend much of their time writing functions. A function has a name, t
 $f(2) = 9 - 3(2) = 9 - 6 = 3$
 :::
 
----
+***
 
 ### 2.5.4 - Simplifying Function Rules
 
@@ -225,19 +225,19 @@ $$
 First simplify:
 
 $$
-\begin{align*}
+\begin{aligned}
 p(x) &= 4x-8+3x \\
 &= 7x-8
-\end{align*}
+\end{aligned}
 $$
 
 Now evaluate at $x=5$:
 
 $$
-\begin{align*}
+\begin{aligned}
 p(5) &= 7(5)-8 \\
 &= 27
-\end{align*}
+\end{aligned}
 $$
 
 :::{.think title="Why simplify the rule first?"}
@@ -250,13 +250,13 @@ Whenever possible, simplify before substituting—then you only have to do it on
 $q(x) = 5x+10$, so $q(3)=25$.
 :::
 
----
+***
 
 ### 2.5.5 - Function Evaluation in Real Life
 
 Functions don’t just show up in math class—they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
 
----
+***
 
 **Example 6:** Cellphone data plan
 
@@ -273,16 +273,16 @@ where $C$ is the total cost (dollars) and $g$ is data used (Gb).
 Substitute $g=80$:
 
 $$
-\begin{align*}
+\begin{aligned}
 C(80) &= 50 + 0.1(80) \\
 &= 50 + 8 \\
 &= 58
-\end{align*}
+\end{aligned}
 $$
 
 The total cost is **\$58**.
 
----
+***
 
 **Example 7:** Temperature conversion (°C → °F)
 
@@ -295,11 +295,11 @@ $$
 Find 25°C in Fahrenheit.
 
 $$
-\begin{align*}
+\begin{aligned}
 F(25) &= \tfrac{9}{5}\cdot 25 + 32 \\
 &= 45 + 32 \\
 &= 77^\circ\mathrm{F}
-\end{align*}
+\end{aligned}
 $$
 
 25°C = **77°F**
@@ -321,11 +321,11 @@ $P(40) = 12(40) + 15 = 480 + 15 = 495$
 You make **\$495**.
 :::
 
----
+***
 
 Awesome—here’s an updated **Practice** section with a new “Function or not?” tables block added, and a light trim to keep the length about the same. I also updated the **Answers** to match the new numbering.
 
----
+***
 
 {{< practice >}}
 
@@ -414,7 +414,7 @@ Awesome—here’s an updated **Practice** section with a new “Function or not
 
 23. Suppose $f(x)=2x+3$. If the output is 23, what was the input?
 
----
+***
 
 **Challenge Problems**
 
@@ -438,7 +438,7 @@ Awesome—here’s an updated **Practice** section with a new “Function or not
 | 15      | \_\_\_ |
 | 20      | \_\_\_ |
 
----
+***
 
 :::{.answers}
 

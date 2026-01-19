@@ -35,7 +35,7 @@ You first graphed linear equations by making a table of values, plotting the poi
 
 A quadratic equation is different. A parabola curves, turns, and changes direction. You need **several** points to see its shape.
 
----
+***
 
 **Example 1:** Using a table of values
 
@@ -65,7 +65,7 @@ Then we connect them:
 
 The graph dips down, reaches its {{< glink minimum >}} at the vertex, and rises again. This curved shape cannot be seen from only two points.
 
----
+***
 
 This method **works**, but it has some clear drawbacks:
 
@@ -78,7 +78,7 @@ Just like with linear equations, we want a quicker, more reliable way to graph.
 
 For quadratics, we can graph much faster by using a few key features of the equation.
 
----
+***
 
 ### 6.2.2 – Graphing Using Key Features
 
@@ -90,7 +90,7 @@ A parabola becomes much easier to sketch when you know three important features:
 
 With these features, you can graph a parabola using only **two additional points**.
 
----
+***
 
 **Example 2:** Graphing from Features
 
@@ -157,7 +157,7 @@ with features:
 ![](/images/Unit_6/Lesson_2/YouTry1.png){width="320px" fig-align="center"}
 :::
 
----
+***
 
 ### 6.2.3 – Graphing From Vertex Form
 
@@ -175,7 +175,7 @@ Vertex form makes the key features visible right away:
 
 Because the important information is built into the structure of the equation, graphing becomes much faster.
 
----
+***
 
 **Example 3:** Graphing a parabola that opens upward
 
@@ -203,7 +203,7 @@ Reflect the point over $x = 3$ to get $(2, -2)$.
 The function decreases until $x = 3$ and increases afterward.  
 It is negative between the x-intercepts and positive elsewhere.
 
----
+***
 
 **Example 4:** Graphing a parabola that opens downward
 
@@ -226,7 +226,7 @@ This gives the point $(1, -4)$ and its reflection $(-5, -4)$.
 
 ![](/images/Unit_6/Lesson_2/Example4.png){fig-align="center" width="320px"}
 
----
+***
 
 :::{.gotcha title="Careful with those signs!"}
 Students often forget that $h$ is subtracted and $k$ is added in the formula. For example:
@@ -257,7 +257,7 @@ and once you have that, the vertex follows immediately.
 
 This means you can graph any quadratic, no matter how it’s written.
 
----
+***
 
 ### 6.2.4 – Finding the Axis of Symmetry (Standard Form)
 
@@ -276,7 +276,7 @@ $$
 
 This value gives the x-coordinate of the vertex.
 
----
+***
 
 **Example 5:** Axis of symmetry from standard form
 
@@ -294,7 +294,7 @@ $$
 
 Axis of symmetry: $x = 2$
 
----
+***
 
 ::: {.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
 $a=2$, $b=4$
@@ -306,13 +306,13 @@ $$
 Axis of symmetry: $x = -1$
 :::
 
----
+***
 
 ### 6.2.5 – Finding the Vertex (Standard Form)
 
 Once we know the axis of symmetry $x = h$, finding the vertex is easy: it always has the form $(h, f(h))$.
 
----
+***
 
 **Example 6:** Vertex from standard form
 
@@ -330,16 +330,16 @@ $$
 Then:
 
 $$
-\begin{align*}
+\begin{aligned}
 f(3) &= 3^2 - 6(3) + 10 \\
      &= 9 - 18 + 10 \\
      &= 1
-\end{align*}
+\end{aligned}
 $$
 
 Vertex: $(3, 1)$
 
----
+***
 
 ::: {.you-try title="Find the vertex of $f(x) = 2x^2 + 8x - 5$."}
 Axis:  
@@ -351,7 +351,7 @@ $$f(-2) = -13$$
 Vertex: $(-2, -13)$
 :::
 
----
+***
 
 {{< interact >}}
 
@@ -449,7 +449,7 @@ Find the axis of symmetry and vertex to graph each quadratic.
 
     Sketch and shade the solution region.
 
----
+***
 
 ::: answers
 1. The graph is

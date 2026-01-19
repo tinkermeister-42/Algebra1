@@ -13,7 +13,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 * Comparing and ordering numbers in different forms
 * Order of operations
 
----
+***
 
 ### Integers & Number Lines (1.1)
 
@@ -51,7 +51,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
    
    d. $6$ and $6$
 
----
+***
 
 ### Factors, Multiples & Prime Factorization (1.2)
 
@@ -88,7 +88,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
 9. List the first five multiples of $6$.
 <br><br>
 
----
+***
 
 ### GCF & Simplifying Fractions (1.3)
 
@@ -118,7 +118,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     
     f. $\frac{75}{120}$
 
----
+***
 
 ### Multiply & Divide Fractions (1.4)
 
@@ -150,7 +150,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     
     f. $3\tfrac{1}{3} \div 1\tfrac{1}{2}$
 
----
+***
 
 ### Adding & Subtracting Fractions (1.5)
 
@@ -168,7 +168,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     
     f. $2\tfrac{1}{3} - \tfrac{2}{3}$
 
----
+***
 
 ### Fractions, Decimals & Percents (1.6)
 
@@ -240,7 +240,7 @@ This review pulls together the key skills from Unit 1. It’s heavy on practice 
     
     b. $\frac{3}{5}, 0.56, 58\%, 0.6$
 
----
+***
 
 ### Order of Operations (1.8)
 
@@ -270,7 +270,7 @@ Evaluate the following expressions:
 
 32. $((9 - 3 \cdot 2)(5 - 4)) + 1$
 
----
+***
 
 ### Mixed Practice
 
@@ -294,7 +294,7 @@ Evaluate the following expressions:
 
 42. $\frac{3}{5} \div \frac{9}{25} \cdot \frac{10}{3}$
 
----
+***
 
 :::{.answers}
 

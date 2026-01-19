@@ -55,7 +55,7 @@ $$
 y = \textcolor{blue}{m}x + \textcolor{red}{b}
 $$
 
----
+***
 
 **Example 1:** A given slope and intercept
 
@@ -70,7 +70,7 @@ $$
 y=\textcolor{blue}{4}x\textcolor{red}{-2}
 $$
 
----
+***
 
 **Example 2:** A fractional slope
 
@@ -110,7 +110,7 @@ So, if you can find $m$ and $b$ from the graph, you can write its equation immed
 2. Pick two clear points and count the **rise** and **run** to find **$m$**.
 3. Substitute $m$ and $b$ into $y = mx + b$.
 
----
+***
 
 **Example 3:** Equation from a graph
 
@@ -132,7 +132,7 @@ $$
 y = 2x + 1
 $$
 
----
+***
 
 **Example 4:** A negative slope
 
@@ -162,7 +162,7 @@ $$
 
 :::
 
----
+***
 
 ### 4.4.3 - Slope and a Point Are Known
 
@@ -184,7 +184,7 @@ Use those values to find $b$, then substitute it back into the equation.
 3. Solve for $b$.
 4. Write the final equation using your values of $m$ and $b$.
 
----
+***
 
 **Example 5:** Finding the intercept
 
@@ -206,7 +206,7 @@ $$
 y = 3x - 1
 $$
 
----
+***
 
 **Example 6:** Another missing intercept
 
@@ -252,18 +252,18 @@ $$
 In slope-intercept form that is:
 
 $$
-\begin{align*}
+\begin{aligned}
 y - 4 &= \textcolor{red}{-2}(x - 1) \stepnote{Distribute the -2}\\
 y - 4 &= -2x + 2 \\
 \\
 y - 4 \textcolor{red}{+4} &= -2x + 2 \textcolor{red}{+4} \snplus{4} \\
 y &= -2x + 6
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 ### 4.4.4 - Two Points Are Known
 
@@ -288,7 +288,7 @@ But this time, we’ll start by finding $m$ using the slope formula.
 4. Solve for $b$.
 5. Write the final equation using your values of $m$ and $b$.
 
----
+***
 
 **Example 7:** Finding the slope and intercept from points
 
@@ -324,7 +324,7 @@ Try plugging in the second point to check your answer!
 :::
 
 
----
+***
 
 **Example 8:** Another case of a missing slope and intercept
 
@@ -360,7 +360,7 @@ $$
 
 :::
 
----
+***
 
 ### 4.4.5 - Parallel and Perpendicular Lines (Optional)
 
@@ -373,7 +373,7 @@ The process is nearly the same as before — the only difference is how you find
 
 $$m_\perp=-\tfrac{1}{m}$$
 
----
+***
 
 **Steps:**
 
@@ -382,7 +382,7 @@ $$m_\perp=-\tfrac{1}{m}$$
 3. Substitute the slope and your point into $y = mx + b$.
 4. Solve for $b$ and write the final equation.
 
----
+***
 
 **Example 9:** Parallel lines
 
@@ -411,7 +411,7 @@ Here is a graph showing the two lines:
 
 ![](/images/Unit_4/Lesson_4/Example9.png){width="340px" fig-align="center"}
 
----
+***
 
 **Example 10:** Perpendicular lines
 
@@ -438,7 +438,7 @@ $$
 
 ![](/images/Unit_4/Lesson_4/Example10.png){width="340px" fig-align="center"}
 
----
+***
 
 :::{.you-try-m title="Parallel and Perpendicular Practice"}
 
@@ -470,7 +470,7 @@ Write the equation for each line.
 
 5. $m=0$, $b=-6$
 
----
+***
 
 **From a Graph**
 
@@ -489,7 +489,7 @@ Write the equation for each line.
 
 10. <br>![](/images/Unit_4/Lesson_4/Question10.png){width="350px"}
 
----
+***
 
 **From Points**
 
@@ -515,7 +515,7 @@ Write the equation for each line.
 
 20. Through $(10,0)$ and $(0,5)$
 
----
+***
 
 **Parallel & Perpendicular Lines**
 
@@ -531,7 +531,7 @@ Write the equation for each line.
 
 25. Line parallel to $3x+2y=6$ through $(2,-1)$ (*Hint: solve for $y$ first*)
 
----
+***
 
 **Challenge Problems**
 
@@ -539,7 +539,7 @@ Write the equation for each line.
 
 27. Find the point where $y = -\tfrac{1}{3}x - 4$ intersects with the perpendicular line containing the point $(5, -3)$.
 
----
+***
 
 :::{.answers}
 

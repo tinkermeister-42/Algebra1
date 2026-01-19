@@ -10,7 +10,7 @@ This gives a parabola with vertex $(h, k)$ and scale factor $a$.
 
 {{< include /assets/Unit_6/vertex_form-widget.html >}}
 
----
+***
 
 To learn more, take a look at [6.2 - Graphing Quadratics](/chapters/Unit_6/6.2_Graphing_Quadratics.qmd)
 

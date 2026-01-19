@@ -96,7 +96,7 @@ The same is true for addition and subtraction. Subtraction is really just adding
 
 :::
 
----
+***
 
 ### 1.8.2 - Examples with Integers
 
@@ -117,7 +117,7 @@ $$
 5 + 6 = 11
 $$
 
----
+***
 
 **Example 2:** $(5 + 3) \times 2$
 
@@ -133,7 +133,7 @@ $$
 8 \times 2 = 16
 $$
 
----
+***
 
 **Example 3:** $8 - 12 \div 3$
 
@@ -149,7 +149,7 @@ $$
 8 - 4 = 4
 $$
 
----
+***
 
 :::{.you-try title="$5(8 - 1) + 2 \times 3$"}
 
@@ -167,7 +167,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.8.3 - With Negatives and Fractions
 
@@ -207,7 +207,7 @@ That’s why $-3 \times -1 = 3$, the opposite of negative 3 is positive 3.
 :::
 
 
----
+***
 
 **Example 5:** $\frac{1}{2} \times (6 + 2)$
 
@@ -223,7 +223,7 @@ $$
 \frac{1}{2} \times 8 = \frac{1}{2} \times \frac{8}{1} = \frac{8}{2} = 4
 $$
 
----
+***
 
 **Example 6:** $\frac{3 + 5}{2}$
 
@@ -237,7 +237,7 @@ $$
 \frac{\textcolor{red}{3 + 5}}{2} = \frac{\textcolor{red}{8}}{2} = 4
 $$
 
----
+***
 
 ::: {.you-try title="$-3 \times (4 - 7)$"}
 
@@ -251,7 +251,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.8.4 - More Complex Expressions
 
@@ -303,7 +303,7 @@ $$
 $$
 :::
 
----
+***
 
 ### Nested Parentheses
 
@@ -312,35 +312,35 @@ Sometimes, expressions use **more than one layer of grouping**. When that happen
 - Always work **from the inside out**
 - Brackets $[\,]$ or braces $\{\,\}$ might be used to help keep things clear
 
----
+***
 
 **Example 8:**  
 $$
 \left[ 3 + (2^2 + 1) \right] \times 2
 $$
 
----
+***
 
 **Step 1: Inner parentheses**  
 $$
 \left[ 3 + \textcolor{red}{(2^2 + 1)} \right] \times 2 = \left[ 3 + \textcolor{red}{5} \right] \times 2
 $$
 
----
+***
 
 **Step 2: Brackets**  
 $$
 \left[ \textcolor{red}{3 + 5} \right] \times 2 = \textcolor{red}{8} \times 2
 $$
 
----
+***
 
 **Step 3: Multiply**  
 $$
 \textcolor{red}{8 \times 2} = 16
 $$
 
----
+***
 
 ::: {.remember  title="What counts as grouping?"}
 
@@ -373,7 +373,7 @@ $$
 $$
 ✅ Final Answer: **26**
 :::
----
+***
 
 ### 1.8.5 - Why This Matters
 
@@ -406,7 +406,7 @@ Same ingredients, different result. Order matters!
 
    d. $12 \div (4 \times 3)$
 
----
+***
 
 **With Negatives & Fractions**
 
@@ -421,7 +421,7 @@ Same ingredients, different result. Order matters!
    d. $(3 + 5) \div 2$
 
 
----
+***
 
 **Expression Breakdown**
 
@@ -436,9 +436,7 @@ Same ingredients, different result. Order matters!
    d. $\frac{3}{4} \times (12 - 4)$
 
 
----
-
-**
+***
 
 4. Two students simplified this expression differently:
 
@@ -482,7 +480,7 @@ Same ingredients, different result. Order matters!
 
 2. The answer is 9 (not 1).
 
----
+***
 
 **Basic Order of Operations**
 
@@ -493,7 +491,7 @@ Same ingredients, different result. Order matters!
    c. **9**
    d. **1**
 
----
+***
 
 **With Negatives & Fractions**
 
@@ -504,7 +502,7 @@ Same ingredients, different result. Order matters!
    c. **8**
    d. **4**
 
----
+***
 
 **Expression Breakdown**
 

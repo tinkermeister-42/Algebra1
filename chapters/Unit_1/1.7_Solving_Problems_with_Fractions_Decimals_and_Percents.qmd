@@ -53,7 +53,7 @@ You can also rearrange it to solve for the percent or the whole. We’ll walk th
 Convert the percent to a decimal first!
 :::
 
----
+***
 
 **Example 1:** Finding the Part
 
@@ -97,7 +97,7 @@ $$
 
 :::
 
----
+***
 
 **Example 2:** Finding the Percent
 
@@ -118,7 +118,7 @@ $$
 So only 4% of students get enough sleep!
 :::
 
----
+***
 
 **Example 3:**  Finding the Whole
 
@@ -163,7 +163,7 @@ $$
 **Answer: 60**
 :::
 
----
+***
 
 ### 1.7.2 - Real-Life Examples
 
@@ -186,7 +186,7 @@ $$
 John got an 80% which is a B.
 :::
 
----
+***
 
 **Example 5:** Sales & Discounts
 
@@ -231,7 +231,7 @@ $$
 Swanhilda pays $105 for the dress. What a steal!
 :::
 
----
+***
 
 **Example 6:** Surveys & Data
 
@@ -283,7 +283,7 @@ $$
 
 8. 20% of a number is 150. What is the number?
 
----
+***
 
 **Real-Life Scenarios**
 
@@ -299,7 +299,7 @@ $$
 
 14. A company sells fidget spinners. In a quality control test, they found that 3% of the fidget spinners tested were defective. If 60 spinners were defective, how many fidget spinners did they test?
 
----
+***
 
 **Challenge Problems**
 
@@ -310,7 +310,7 @@ What percent of students are in art class?
 
 17. You have 88% of 325 points in Algebra. The last exam has 50 questions and is worth 100 points. If it takes 90% to get an A, is it possible to get an A in the class? If so, how many points do you need to score on the exam?
 
----
+***
 
 ::: {.answers}
 
@@ -322,7 +322,7 @@ What percent of students are in art class?
 
 3. It means that the item will cost 25% less than it usually would.
 
----
+***
 
 **Find the Part, Whole, or Percent**
 
@@ -335,7 +335,7 @@ What percent of students are in art class?
 7. 600 
 8. 750  
 
----
+***
 
 **Real-Life Scenarios**
 

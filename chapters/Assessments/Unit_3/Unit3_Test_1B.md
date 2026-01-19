@@ -2,11 +2,11 @@
 
 **Name: __________________________________________**
 
----
+***
 
 ### Solving Equations
 
----
+***
 
 1. Solve for $x$.
    
@@ -34,7 +34,7 @@
 
 ### Multi-Step Equations
 
----
+***
 
 4. Solve for $x$.
    
@@ -80,7 +80,7 @@
 
 ### Solving Inequalities
 
----
+***
 
 9. Solve and graph the solution on a number line.
    
@@ -101,7 +101,7 @@
 
 ### Literal Equations
 
----
+***
 
 11. Solve for $h$.
    

@@ -2,7 +2,7 @@
 
 **Name: ____________________________**
 
----
+***
 
 ## 3.1 – One-Step Equations
 
@@ -14,7 +14,7 @@
 
 3. $\dfrac{p}{6} = -5$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -30,7 +30,7 @@
 
 7. $0.5y – 1.5 = 2.5$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -44,7 +44,7 @@
 
 10. $4(t + 2) – 3t = 9$ <br><br><br><br><br>
 
----
+***
 
 **Real-World Problem**
 

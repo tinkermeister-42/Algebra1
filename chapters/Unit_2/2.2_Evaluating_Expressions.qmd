@@ -59,7 +59,7 @@ We replaced “the thief” with Bob.
 
 Math works the same way. An expression starts as a kind of story with unknowns (variables). When we know the value of the variable, we substitute it in and then simplify. That’s what it means to evaluate an expression.
 
----
+***
 
 **Example 1:** An expression with one variable
 
@@ -93,7 +93,7 @@ When you see "**=**", think "**is**". In the previous example, we could say "x *
 
 :::
 
----
+***
 
 **Example 2:** Being careful with negatives
 
@@ -125,7 +125,7 @@ $$
 
 Now that you know how to evaluate an expression, let's try some more complicated ones that will require us to remember our {{< glink "order of operations" >}}.
 
----
+***
 
 ### 2.2.2 - Using PEMDAS with Substitution
 
@@ -147,7 +147,7 @@ $$
 2(1 + 3)^2 = 2(4)^2 = 2 \cdot 16 = 32
 $$
 
----
+***
 
 **Example 4:** Duplicated variables
 
@@ -182,7 +182,7 @@ $$
 
 :::
 
----
+***
 
 ### 2.2.3 - Evaluating Expressions With Multiple Variables
 
@@ -206,7 +206,7 @@ $$
 2(2) - 3(1) = 4 - 3 = 1
 $$
 
----
+***
 
 **Example 6:** Multiple variables
 
@@ -240,7 +240,7 @@ $$
 
 :::
 
----
+***
 
 ### 2.2.4 - Testing For Equivalence
 
@@ -255,15 +255,15 @@ Test if the expressions $5x - 25$ and $5(x - 5)$ are equivalent.
 Let's try $x=9$:
 
 $$
-\begin{align*}
+\begin{aligned}
 5(9) - 25 &= 45 - 25 &= 20 \\
 5(9 - 5) &= 5(4) &= 20
-\end{align*}
+\end{aligned}
 $$
 
 They both gave the same result and so we have {{< glink evidence >}} that the two expressions are equivalent.
 
----
+***
 
 **Example 8:** Testing for equivalence
 
@@ -272,10 +272,10 @@ Test if expressions $3(x - 1)$ and $3x - 2$ are equivalent.
 Let's try $x = 2$:
 
 $$
-\begin{align*}
+\begin{aligned}
 3((2)-1) &= 3(1) &= 3 \\
 3(2) - 2 &= 6 - 2 &= 4
-\end{align*}
+\end{aligned}
 $$
 
 These two expressions are **not** equivalent because they give different results when substituting the same number for $x$.
@@ -287,7 +287,7 @@ When we substitute numbers to check if two expressions are equivalent, we are re
 
 - If the two expressions give the **same result** for a substitution, that is **evidence** that they are equivalent, but it **does not** prove they are always the same.
 
----
+***
 
 **Example:**
 Test if $6y$ and $2y$ are equivalent expressions.
@@ -295,10 +295,10 @@ Test if $6y$ and $2y$ are equivalent expressions.
 Try $y = 0$.
 
 $$
-\begin{align*}
+\begin{aligned}
 6(0) &= 0 \\
 2(0) &= 0
-\end{align*}
+\end{aligned}
 $$
 
 We got the same result, so this is **evidence** that they could be equivalent. 
@@ -306,10 +306,10 @@ We got the same result, so this is **evidence** that they could be equivalent.
 But what if we try $y=3$?
 
 $$
-\begin{align*}
+\begin{aligned}
 6(3) &= 18 \\
 2(3) &= 6
-\end{align*}
+\end{aligned}
 $$
 
 This proves that the expressions are **not equivalent**.
@@ -318,7 +318,7 @@ For now we can only test the hypothesis. In section 2.6 we will learn how to **p
 
 :::
 
----
+***
 
 :::{.you-try-m title="Are they equivalent?"}
 
@@ -332,10 +332,10 @@ Did you get the same result? What does your answer tell you about the two expres
 If we substitute $y = 2$ we get:
 
 $$
-\begin{align*}
+\begin{aligned}
 9(2) - 3 &= 18 - 3 &= 15 \\
 3(3(2) - 2) + 3 &= 3(6 - 2) + 3 = 3(4) + 3 = 12 + 3 &= 15
-\end{align*}
+\end{aligned}
 $$
 
 We have evidence that the two expressions are equivalent but we don't know for certain. 
@@ -356,7 +356,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 5. Evaluate $-x + 7$ when $x=-2$
 
----
+***
 
 **Single variable, repeated**
 
@@ -370,7 +370,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 10. Evaluate $2(x+x) + 1$ when $x=-1$
 
----
+***
 
 **Parentheses / PEMDAS**
 
@@ -384,7 +384,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 15. Evaluate $\frac{3(x+4)}{2}$ when $x=2$
 
----
+***
 
 **Multiple variables**
 
@@ -398,7 +398,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 20. Evaluate $(x+y)^2 - xy$ when $x=2, y=3$
 
----
+***
 
 **Testing Equivalence**
 
@@ -409,7 +409,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 23. Are $x^2 + 2x + 1$ and $(x+1)^2$ equivalent? Test $x=2$
 
 
----
+***
 
 **Challenge Problems**
 
@@ -417,7 +417,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 25. Test if $2(a + b)^2 - 2a^2 - 4ab$ and $2b^2$ are equivalent. Try at least two different sets of values for $a$ and $b$.
 
----
+***
 
 :::{.answers}
 **Single variable**
@@ -432,7 +432,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 5. 9
 
----
+***
 
 **Single variable, repeated**
 
@@ -446,7 +446,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 10. -3
 
----
+***
 
 **Parentheses / PEMDAS**
 
@@ -460,7 +460,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 15. 9
 
----
+***
 
 **Multiple variables**
 
@@ -474,7 +474,7 @@ We have evidence that the two expressions are equivalent but we don't know for c
 
 20. 19
 
----
+***
 
 **Testing Equivalence**
 

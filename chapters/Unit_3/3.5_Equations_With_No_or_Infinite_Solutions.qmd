@@ -33,11 +33,11 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 
 2. Taylor solved the equation $10x - 9 = 10x + 3$. Here are her steps.
     $$
-    \begin{align*}
+    \begin{aligned}
     10x - 9 &= 10x + 3 \\
     10x - 9 \textcolor{red}{-10x} &= 10x + 3 \textcolor{red}{- 10x} \\
     -9 &= 3
-    \end{align*}
+    \end{aligned}
     $$
 
     Did Taylor make a mistake?
@@ -51,40 +51,40 @@ In the last lesson, when we moved variables to one side, we always ended up with
 
 When this happens, the equation has **no solution** — there is no value that will make both sides equal.
 
----
+***
 
 **Example 1:** An equation with no solution
 
 Solve $3x + 5 = 3x - 2$.
 
 $$
-\begin{align*}
+\begin{aligned}
 3x + 5 &= 3x - 2 \\
 3x + 5 \textcolor{red}{- 3x} &= 3x - 2 \textcolor{red}{- 3x} \\
-5 &= -2 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
-\end{align*}
+5 &= -2 \stepnote{\textcolor{red}{false statement}}
+\end{aligned}
 $$
 
 Since $5 = -2$ is not true, there is **no solution**.
 
----
+***
 
 **Example 2:** Another equation with no solution
 
 Solve $2(x + 4) = 2x + 7$.
 
 $$
-\begin{align*}
+\begin{aligned}
 2(x + 4) &= 2x + 7 \\
 2x + 8 &= 2x + 7 \\
 2x + 8 \textcolor{red}{- 2x} &= 2x + 7 \textcolor{red}{- 2x} \\
-8 &= 7 \tag*{\class{stepnote}{\textcolor{red}{false statement}}}
-\end{align*}
+8 &= 7 \stepnote{\textcolor{red}{false statement}}
+\end{aligned}
 $$
 
 This is also false, so there is **no solution**.
 
----
+***
 
 :::{.remember title="How to Recognize No Solution"}
 
@@ -96,41 +96,41 @@ If you solve an equation and end up with two different numbers on either side of
 
 Sometimes when you solve, the variables cancel out and you’re left with a statement that is **always true**. In that case, every number works, so the equation has **infinitely many solutions**.
 
----
+***
 
 **Example 3:** All real numbers
 
 Solve $4(x + 2) = 2(2x + 4)$.
 
 $$
-\begin{align*}
+\begin{aligned}
 4(x + 2) &= 2(2x + 4) \\
 4x + 8 &= 4x + 8 \\
 4x + 8 \textcolor{red}{- 4x} &= 4x + 8 \textcolor{red}{- 4x} \\
-8 &= 8 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
-\end{align*}
+8 &= 8 \stepnote{\textcolor{green}{true statement}}
+\end{aligned}
 $$
 
 Because $8 = 8$ is always true, any value of $x$ will make the original equation work.
 
----
+***
 
 **Example 4:** All real numbers again
 
 Solve $5y - 3 + 2y = 7y - 3$.
 
 $$
-\begin{align*}
+\begin{aligned}
 5y - 3 + 2y &= 7y - 3 \\
 7y - 3 &= 7y - 3 \\
 7y - 3 \textcolor{red}{- 7y} &= 7y - 3 \textcolor{red}{- 7y} \\
--3 &= -3 \tag*{\class{stepnote}{\textcolor{green}{true statement}}}
-\end{align*}
+-3 &= -3 \stepnote{\textcolor{green}{true statement}}
+\end{aligned}
 $$
 
 Again, the result is always true. The solution is **all real numbers**.
 
----
+***
 
 :::{.remember title="How to Recognize Infinitely Many Solutions"}
 
@@ -143,7 +143,7 @@ If you solve an equation and get the same thing on each side of the equal sign, 
 
 There are some tricks for telling whether a {{< glink "linear equation" >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
 
----
+***
 
 **Equations With One Solution**
 If a linear equation has a variable term on one side and a different constant term on the other side, it will have **one solution**.
@@ -162,7 +162,7 @@ $$
 
 So this equation has one solution: $x = 7$.
 
----
+***
 
 **Equations With No Solution**
 If both sides have the **same variable term** but **different constants**, the equation has **no solution**.
@@ -181,7 +181,7 @@ $$
 
 This is false, so the equation has no solution.
 
----
+***
 
 **Equations With Infinitely Many Solutions**
 If both sides have the **same variable term** and the **same constant**, the equation has **infinitely many solutions**.
@@ -200,7 +200,7 @@ $$
 
 This is always true, so every value of $x$ works.
 
----
+***
 
 :::{.remember title="Tips and Tricks"}
 

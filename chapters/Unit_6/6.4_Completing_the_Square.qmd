@@ -24,10 +24,10 @@ Both parabolas cross the $x$-axis twice, so both equations have two solutions.
 We can find the solutions to the first equation by factoring:
 
 $$
-\begin{align*}
+\begin{aligned}
 x^2 + 6x + 5 &= 0 \\
 (x + 5)(x + 1) &= 0
-\end{align*}
+\end{aligned}
 $$
 
 This gives the solutions $x = -5$ and $x = -1$.
@@ -36,7 +36,7 @@ But factoring does not work for the second equation. We need a method that works
 
 In this lesson, we will learn a method called **completing the square**. This method always works for quadratic equations. What's more, it leads directly to one of the most important formulas in algebra: the **quadratic formula**.
 
----
+***
 
 :::{.objectives}
 - [ ] I can rewrite $x^2 + bx$ as a perfect square.
@@ -82,7 +82,7 @@ Instead of starting with a square and expanding it, we start with part of the ex
 
 One way to see this clearly is to use an **area model**, just like we did when factoring.
 
----
+***
 
 **Example 1:** Completing the Square with an Area Model
 
@@ -134,7 +134,7 @@ $$
 x^2 + 10x = (x + 5)^2 - 25
 $$
 
----
+***
 
 **Example 2:** A negative middle term
 
@@ -163,7 +163,7 @@ $$
 x^2 - 6x = (x - 3)^2 - 9
 $$
 
----
+***
 
 **Example 3:** A fractional middle term
 
@@ -181,7 +181,7 @@ $$
 x^2 + 3x = (x + \tfrac{3}{2})^2 - \tfrac{9}{4}
 $$
 
----
+***
 
 :::{.you-try title="Rewrite $x^2 + 8x$ as a perfect square plus or minus a number."}
 $$
@@ -189,16 +189,16 @@ x^2 + 8x = (x + 4)^2 - 16
 $$
 :::
 
----
+***
 
-### 6.4.2 - Completing the Square When $a \ne 1$
+### 6.4.2 - Completing the Square When a ≠ 1
 
 Completing the square works best when the coefficient of $x^2$ is $1$.
 If it is not, we fix that first.
 
----
+***
 
-**Example 4:** Completing the square when $a \ne 1$
+**Example 4:** Completing the square when a ≠ 1
 
 Rewrite:
 
@@ -231,7 +231,7 @@ $$
 $$
 
 
----
+***
 
 **Example 5:** Completing the square in an equation
 
@@ -244,11 +244,11 @@ $$
 First, factor out the leading coefficient and isolate the $x$ terms:
 
 $$
-\begin{align*}
+\begin{aligned}
 2(x^2 + 4x) + 3 &= 0 \\
 2(x^2 + 4x) &= -3 \\
 x^2 + 4x &= -\tfrac{3}{2}
-\end{align*}
+\end{aligned}
 $$
 
 Now complete the square for $x^2 + 4x$ using an area model.
@@ -285,7 +285,7 @@ $$
 $$
 
 
----
+***
 
 ### 6.4.3 - Solving by Taking Square Roots
 
@@ -300,7 +300,7 @@ $$
 
 we can solve it by taking {{< glink slug="square root" text="square roots" >}} of both sides.
 
----
+***
 
 **Example 6:** Solving by taking square roots
 
@@ -313,10 +313,10 @@ $$
 Take the square root of both sides:
 
 $$
-\begin{align*}
+\begin{aligned}
 x + 2 &= \pm \sqrt{\tfrac{5}{2}} \\
 x &= -2 \pm \sqrt{\tfrac{5}{2}}
-\end{align*}
+\end{aligned}
 $$
 
 :::{.note title="Why do we use $\pm$?"}
@@ -331,7 +331,7 @@ $$
 Both values square to the same result, so both must be included when taking a square root.
 :::
 
----
+***
 
 **Example 7:** Solving by completing the square
 
@@ -383,13 +383,13 @@ $$
 Take the square root of both sides:
 
 $$
-\begin{align*}
+\begin{aligned}
 x + 2 &= \pm \sqrt{5} \\
 x &= -2 \pm \sqrt{5}
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 8:** No real solutions
 
@@ -413,7 +413,7 @@ Since $-6$ is negative, there is no real number whose square equals $-6$.
 
 So this equation has **no real solutions**.
 
----
+***
 
 :::{.you-try title="Solve $x^2 - 10x + 16 = 0$ by completing the square."}
 Solve by completing the square:
@@ -456,11 +456,11 @@ $$
 Rewrite and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 (x - 5)^2 &= 9 \\
 x - 5 &= \pm 3 \\
 x &= 8 \quad \text{or} \quad x = 2
-\end{align*}
+\end{aligned}
 $$
 
 :::
@@ -485,7 +485,7 @@ $$
    when $k > 0$, $k = 0$, and $k < 0$?
 
 
----
+***
 
 **Rewrite as a perfect square**
 
@@ -497,7 +497,7 @@ $$
 
 9. $x^2 + 10x$
 
----
+***
 
 **Solve by taking square roots**
 
@@ -509,7 +509,7 @@ $$
 
 13. $(x + 1)^2 = -6$
 
----
+***
 
 **Solve by completing the square**
 
@@ -523,9 +523,9 @@ $$
 
 18. $x^2 + 10x + 30 = 0$
 
----
+***
 
-**Solve by completing the square ($a \ne 1$)**
+**Solve by completing the square (a ≠ 1)**
 
 19. $2x^2 + 8x + 3 = 0$
 
@@ -537,7 +537,7 @@ $$
 
 23. $4x^2 - 12x + 5 = 0$
 
----
+***
 
 **Challenge Problems**
 
@@ -555,7 +555,7 @@ $$
 
     Find the value of $b$ and explain how you know, **without expanding** $(x + k)^2$.
 
----
+***
 
 25. Consider the equation
     

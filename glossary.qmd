@@ -10,7 +10,7 @@ The distance a number is from zero on a number line, always expressed as a posit
 
 **See Also:** {{< glink opposite >}}
 
----
+***
 
 ### Addition {#glossary-addition}
 
@@ -22,7 +22,7 @@ An operation that combines two or more numbers into a total. Also called "plus".
 
 **See Also:** {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink PEMDAS >}}, {{< glink "order of operations" >}}
 
----
+***
 
 ### Algebra {#glossary-algebra}
 
@@ -30,7 +30,7 @@ Algebra is a branch of math that uses letters and symbols to represent numbers a
 
 It lets us describe patterns, write rules, and solve problems that work in many different situations.
 
----
+***
 
 ### All Real Numbers {#glossary-all-real-numbers}
 
@@ -45,7 +45,7 @@ To save space and make their answers more clear, mathematicians like to use $\ma
 
 **See Also:** {{< glink "no solution" >}}
 
----
+***
 
 ### Area Model {#glossary-area-model}
 
@@ -58,7 +58,7 @@ In an area model, each part forms a row or column in a box, and the box cells sh
 
 **See Also:** {{< glink product >}}, {{< glink multiplication >}}, {{< glink polynomial >}}, {{< glink "partial product" >}}
 
----
+***
 
 ### Associative (Associative Property) {#glossary-associative}
 
@@ -80,7 +80,7 @@ We use the associative property to regroup terms or factors so it is easier to d
 
 **See also:** {{< glink commutative >}}, {{< glink "distributive property" >}}, {{< glink "like terms" >}}
 
----
+***
 
 ### Axis {#glossary-axis}
 
@@ -92,7 +92,7 @@ In the coordinate plane, the **x-axis** runs left and right, and the **y-axis** 
 
 **See Also:** {{< glink "coordinate plane" >}}, {{< glink quadrant >}}, {{< glink "number line" >}}
 
----
+***
 
 ### Axis of symmetry {#glossary-axis-of-symmetry}
 
@@ -103,7 +103,7 @@ An axis of symmetry is a line that divides a figure or graph into two matching h
 
 **See Also:** {{< glink parabola >}}, {{< glink vertex >}}, {{< glink axis >}}
 
----
+***
 
 ### Base {#glossary-base}
 
@@ -116,7 +116,7 @@ In a power like $5^3$, the base is $5$.
 
 **See Also:** {{< glink exponent >}}, {{< glink variable >}}, {{< glink power >}}
 
----
+***
 
 ### Best-Fit Line {#glossary-best-fit-line}
 
@@ -128,7 +128,7 @@ It shows the general trend of the data and can be used to **make predictions**.
 
 **See Also:** {{< glink correlation >}}, {{< glink "scatter plot" >}}
   
----
+***
 
 ### Binomial {#glossary-binomial}
 
@@ -139,7 +139,7 @@ A **binomial** is a polynomial with **exactly two terms** added or subtracted.
 
 **See Also:** {{< glink monomial >}}, {{< glink trinomial >}}, {{< glink polynomial >}}
 
----
+***
 
 ### Calculate {#glossary-calculate}
 
@@ -151,7 +151,7 @@ To **calculate** is to find an answer by using numbers and operations (add, subt
 
 **See Also:** {{< glink evaluate >}}, {{< glink "order of operations" >}}, {{< glink operation >}}
 
----
+***
 
 ### Calculus {#glossary-calculus}
 
@@ -159,7 +159,7 @@ Calculus is a branch of math that helps us understand change and motion.
 
 It’s used to study how fast things move, how things grow or shrink, and how to find exact areas or curves.
 
----
+***
 
 ### Coefficient {#glossary-coefficient}
 
@@ -172,7 +172,7 @@ A **coefficient** is the number in front of a variable. It tells you how many of
 
 **See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink polynomial >}}, {{< glink expression >}}
 
----
+***
 
 ### Combine Like Terms {#glossary-combine-like-terms}
 
@@ -184,7 +184,7 @@ To **combine like terms** means to simplify an expression by adding or subtracti
 
 **See Also:** {{< glink simplify >}}, {{< glink "like terms" >}}, {{< glink expression >}}
 
----
+***
 
 ### Completing the Square {#glossary-completing-the-square}
 
@@ -196,7 +196,7 @@ To **combine like terms** means to simplify an expression by adding or subtracti
 
 **See Also:** {{< glink "perfect square" >}}, {{< glink "quadratic formula" >}}
 
----
+***
 
 ### Composite number {#glossary-composite_number}
 
@@ -210,7 +210,7 @@ That means it can be divided evenly by numbers other than 1 and itself.
 
 **See Also:** {{< glink "prime number" >}}, {{< glink factor >}}
 
----
+***
 
 ### Commutative (Commutative Property) {#glossary-commutative}
 
@@ -233,7 +233,7 @@ The commutative property lets us reorder terms in a sum or product to make simpl
 
 **See Also:** {{< glink associative >}}, {{< glink "distributive property" >}}
 
----
+***
 
 
 ### Compute {#glossary-compute}
@@ -246,7 +246,7 @@ To **compute** is another way to say find the answer in math by doing the steps.
 
 **See Also:** {{< glink evaluate >}}, {{< glink "order of operations" >}}
 
----
+***
 
 ### Constant {#glossary-constant}
 
@@ -258,7 +258,7 @@ A **constant** is a number that does **not** change. It stays the same no matter
 
 **See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink expression >}}
 
----
+***
 
 ### Convert {#glossary-convert}
 
@@ -270,7 +270,7 @@ To convert means to **change a number from one form to another**, like from a fr
 
 **See Also:** {{< glink fraction >}}, {{< glink decimal >}}, {{< glink percent >}}
 
----
+***
 
 ### Coordinate Plane {#glossary-coordinate-plane}
 
@@ -283,7 +283,7 @@ A flat grid formed by the intersection of the x-axis and y-axis at the origin. I
 
 **See Also:** {{< glink axis >}}, {{< glink "number line" >}}, {{< glink quadrant >}}, {{< glink "ordered pair" >}}
 
----
+***
 
 ### Correlation {#glossary-correlation}
 
@@ -294,7 +294,7 @@ Correlation describes how two variables are related. It tells you whether they t
 
 **See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}
 
----
+***
 
 ### Counterexample {#glossary-counterexample}
 
@@ -307,7 +307,7 @@ A **counterexample** is a single, specific example that shows a statement is **n
 
 **See Also:** {{< glink evidence >}}, {{< glink proof >}}
 
----
+***
 
 ### Decimal {#glossary-decimal}
 
@@ -319,7 +319,7 @@ A decimal is a number that uses a **dot (.)** to show values **less than 1**. It
 
 **See Also:** {{< glink fraction >}}, {{< glink percent >}}, {{< glink part >}}, {{< glink convert >}}, {{< glink "place value" >}}
 
----
+***
 
 ### Degree {#glossary-degree}
 
@@ -331,7 +331,7 @@ The **degree of a polynomial** is the **highest** exponent that appears on its v
 
 **See Also:** {{< glink polynomial >}}, {{< glink term >}}, {{< glink exponent >}}
 
----
+***
 
 ### Denominator {#glossary-denominator}
 
@@ -343,7 +343,7 @@ The denominator is the **bottom number** in a fraction. It tells **how many equa
 
 **See Also:** {{< glink numerator >}}, {{< glink fraction >}}, {{< glink divisor >}}
 
----
+***
 
 ### Difference {#glossary-difference}
 
@@ -354,7 +354,7 @@ The difference is the result of subtracting one number or expression from anothe
 
 **See Also:** {{< glink sum >}}, {{< glink subtraction >}}, {{< glink quotient >}}, {{< glink product >}}, {{< glink addition >}}
 
----
+***
 
 ### Discount {#glossary-discount}
 
@@ -366,7 +366,7 @@ A discount is an amount **taken off the original price**. It’s usually shown a
 
 **See Also:** {{< glink markup >}}
 
----
+***
 
 ### Discriminant {#glossary-discriminant}
 
@@ -378,7 +378,7 @@ The discriminant is the expression $b^2 - 4ac$ inside the square root of the qua
 **See Also:**  
 {{< glink "quadratic formula" >}}, {{< glink "quadratic equation" >}}, {{< glink parabola >}}
 
----
+***
 
 ### Distributive property {#glossary-distributive-property}
 
@@ -397,7 +397,7 @@ You can also use it **in reverse** to **factor**: if $ab+ac$, you can write $a(b
 
 **See Also:** {{< glink "associative property" >}}, {{< glink multiplication >}}
 
----
+***
 
 ### Division {#glossary-division}
 
@@ -409,7 +409,7 @@ An operation that splits a number into equal parts.
 
 **See Also:** {{< glink addition >}}, {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink operation >}}, {{< glink fraction >}}
 
----
+***
 
 ### Divisible {#glossary-divisible}
 
@@ -427,7 +427,7 @@ There are some quick tests that help you check:
 
 **See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink multiple >}}
 
----
+***
 
 
 ### Divisor {#glossary-divisor}
@@ -440,7 +440,7 @@ A divisor is the number you **divide by** in a division problem. It tells you ho
 
 **See Also:** {{< glink division >}}, {{< glink denominator >}}, {{< glink factor >}}
 
----
+***
 
 ### Domain {#glossary-domain}
 
@@ -451,7 +451,7 @@ The domain is the set of all input values that a relation or function is allowed
 
 **See Also:** {{< glink range >}}, {{< glink function >}}, {{< glink  "all real numbers" >}}
 
----
+***
 
 ### Elimination {#glossary-elimination}
 
@@ -460,10 +460,10 @@ The domain is the set of all input values that a relation or function is allowed
 > **Example:**
 > 
 > $$
-> \begin{align*}
+> \begin{aligned}
 > 2x + y &= 10 \\
 > 2x - y &= 2
-> \end{align*}
+> \end{aligned}
 > $$
 > 
 > Add the equations to eliminate $y$:
@@ -473,7 +473,7 @@ The domain is the set of all input values that a relation or function is allowed
 
 **See Also:** {{< glink substitution >}}, {{< glink "system of equations" >}}
 
----
+***
 
 ### Equation {#glossary-equation}
 
@@ -488,7 +488,7 @@ It has an equals sign (=) and shows a relationship between numbers or expression
 
 **See Also:** {{< glink solution >}}, {{< glink inequality >}}, {{< glink solve >}}, {{< glink expression >}}, {{< glink "literal equation" >}}, {{< glink "linear equation" >}}
 
----
+***
 
 ### Equivalent {#glossary-equivalent}
 
@@ -500,7 +500,7 @@ Two numbers are equivalent if they have **the same value**, even if they look di
 
 **See Also:** {{< glink "equivalent expressions" >}}, {{< glink equation >}}
 
----
+***
 
 ### Equivalent expressions {#glossary-equivalent_expressions}
 
@@ -517,7 +517,7 @@ Two expressions are equivalent if they have the same value for every number you 
 
 **See Also:** {{< glink equivalent >}}, {{< glink expression >}}, {{< glink equation >}}
 
----
+***
 
 ### Evaluate {#glossary-evaluate}
 
@@ -531,7 +531,7 @@ To find the value of an expression by substituting numbers for the variables and
 
 **See Also:** {{< glink calculate >}}, {{< glink substitute >}}, {{< glink substitution >}}
 
----
+***
 
 ### Even {#glossary-even}
 
@@ -543,7 +543,7 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 
 **See Also:** {{< glink odd >}}, {{< glink "whole number" >}}, {{< glink "skip count" >}}
 
----
+***
 
 ### Evidence {#glossary-evidence}
 
@@ -556,7 +556,7 @@ An **even number** is any whole number that can be divided by 2 **with no remain
 
 **See Also:** {{< glink counterexample >}}, {{< glink proof >}}
 
----
+***
 
 ### Expand {#glossary-expand}
 
@@ -570,7 +570,7 @@ You use the distributive property to spread multiplication over addition or subt
 
 **See Also:** {{< glink simplify >}}, {{< glink "distributive property" >}}
 
----
+***
 
 ### Exponent {#glossary-exponent}
 
@@ -583,7 +583,7 @@ In $5^3$, the exponent is $3$, which means $5\cdot5\cdot5$.
 
 **See Also:** {{< glink base >}}, {{< glink term >}}, {{< glink "product rule" >}}, {{< glink "power of a power" >}}, {{< glink "quotient rule" >}}, {{< glink "negative exponent" >}}, {{< glink "zero exponent" >}}, {{< glink power >}}
 
----
+***
 
 
 ### Expression {#glossary-expression}
@@ -600,7 +600,7 @@ A math sentence made up of numbers, variables, operations, and sometimes parenth
 
 **See Also:** {{< glink equation >}}, {{< glink simplify >}}, {{< glink variable >}}, {{< glink operation >}}
 
----
+***
 
 
 ### Factor {#glossary-factor}
@@ -617,7 +617,7 @@ If you can split something into equal groups with no leftovers, the group size i
 
 **See Also:** {{< glink "factor tree" >}}, {{< glink factoring >}}, {{< glink "whole number" >}}, {{< glink multiple >}}, {{< glink "greatest common factor" >}}
 
----
+***
 
 ### Factoring {#glossary-factoring}
 
@@ -631,7 +631,7 @@ Factoring means breaking something down into smaller parts that multiply togethe
 
 **See Also:** {{< glink polynomial >}}, {{< glink factor >}}, {{< glink expression >}}, {{< glink "factor tree" >}}
 
----
+***
 
 ### Factor tree {#glossary-factor_tree}
 
@@ -656,7 +656,7 @@ flowchart TD
 
 **See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}
 
----
+***
 
 ### Formula {#glossary-formula}
 
@@ -667,7 +667,7 @@ A formula is a rule or equation that shows how different quantities are related.
 
 **See Also:** {{< glink "literal equation" >}}
 
----
+***
 
 ### Fraction {#glossary-fraction}
 
@@ -681,7 +681,7 @@ The denominator tells how many equal parts the whole is divided into, and the nu
 
 **See Also:** {{< glink division >}}, {{< glink numerator >}}, {{< glink denominator >}}, {{< glink part >}}, {{< glink ratio >}}, {{< glink quotient >}}
 
----
+***
 
 ### Fractional Exponent {#glossary-fractional-exponent}
 
@@ -694,7 +694,7 @@ $a^{\tfrac{m}{n}}=\sqrt[n]{a^m}$ (for real numbers, typically $a\ge0$).
 
 **See Also:** {{< glink exponent >}}
 
----
+***
 
 ### Function {#glossary-function}
 
@@ -705,7 +705,7 @@ A function is a rule that pairs each input with exactly one output. If you plug 
 
 **See Also:**  {{< glink domain >}}, {{< glink range >}}, {{< glink "function notation" >}}
 
----
+***
 
 ### Function Notation {#glossary-function-notation}
 
@@ -718,7 +718,7 @@ This means “the function $f$ takes an input $x$ and gives an output $f(x)$.”
 
 **See Also:** {{< glink function >}}
 
----
+***
 
 ### Grade {#glossary-grade}
 
@@ -730,7 +730,7 @@ A grade often shows **how well someone did** using a percent or letter. It’s u
 
 **See Also:** {{< glink percent >}}, {{< glink ratio >}}
 
----
+***
 
 ### Greater than {#glossary-greater_than}
 
@@ -745,7 +745,7 @@ A number is greater than (**>**) another number if it is further to the right on
 
 **See Also:** {{< glink inequality >}}, {{< glink "less than" >}}
 
----
+***
 
 ### Greatest Common Factor {#glossary-greatest_common_factor}
 
@@ -768,7 +768,7 @@ You can find the GCF by listing all the factors and finding the ones shared betw
 **See Also:** {{< glink factor >}}, {{< glink factoring >}}, {{< glink "prime factorization" >}}, {{< glink simplify >}}, {{< glink "relatively prime" >}}
 
 
----
+***
 
 ### Horizontal {#glossary-horizontal}
 
@@ -781,7 +781,7 @@ Side to side, like the horizon. Level ground is horizontal.
 
 **See Also:** {{< glink vertical >}}, {{< glink slope >}}, {{< glink axis >}}
 
----
+***
 
 ### Hypothesis {#glossary-hypothesis}
 
@@ -797,7 +797,7 @@ In an experiment, if you find a case where the hypothesis **is not true** you ca
 
 **See Also:** {{< glink counterexample >}}, {{< glink evidence >}}
 
----
+***
 
 ### Improper Fraction {#glossary-improper_fraction}
 
@@ -814,7 +814,7 @@ An improper fraction is a fraction where the top number (numerator) is equal to 
 
 **See Also:** {{< glink "mixed number" >}}, {{< glink fraction >}}
 
----
+***
 
 ### Inequality {#glossary-inequality}
 
@@ -826,7 +826,7 @@ An **inequality** is a math statement that compares two values or expressions us
 
 **See Also:** {{< glink equation >}}, {{< glink "less than" >}}, {{< glink "greater than" >}}
 
----
+***
 
 ### Infinitely {#glossary-infinitely}
 
@@ -838,7 +838,7 @@ The word **infinitely** means "without end" or "going on forever." In math, some
 
 **See Also:** {{< glink infinity >}}, {{< glink "all real numbers" >}}
 
----
+***
 
 ### Infinity {#glossary-infinity}
 
@@ -850,7 +850,7 @@ The word **infinitely** means "without end" or "going on forever." In math, some
 
 **See Also:** {{< glink "all real numbers" >}}
 
----
+***
 
 ### Integer {#glossary-integer}
 
@@ -862,7 +862,7 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 
 **See Also:** {{< glink "whole number" >}}, {{< glink fraction >}}, {{< glink decimal >}}
 
----
+***
 
 ### Intersection {#glossary-intersection}
 
@@ -873,7 +873,7 @@ An **intersection** is the point where two lines (or curves) meet on a graph. In
 
 **See Also:** {{< glink "system of equations" >}}, {{< glink perpendicular >}}, {{< glink solution >}}
 
----
+***
 
 ### Interval {#glossary-interval}
 
@@ -884,7 +884,7 @@ An **interval** is a continuous stretch of the number line between two values. I
 
 **See Also:** {{< glink inequality >}}, {{< glink "number line" >}}, {{< glink domain >}}
 
----
+***
 
 ### Inverse Operations {#glossary-inverse-operations}
 
@@ -898,7 +898,7 @@ Addition and subtraction are inverses. Multiplication and division are inverses.
 
 **See Also:** {{< glink solve >}}, {{< glink equation >}}, {{< glink operation >}}
 
----
+***
 
 ### Less than {#glossary-less_than}
 
@@ -913,7 +913,7 @@ A number is less than (**<**) another number if it is further to the left on the
 
 **See Also:** {{< glink inequality >}}, {{< glink "greater than" >}}
 
----
+***
 
 ### Like terms {#glossary-like_terms}
 
@@ -933,7 +933,7 @@ Terms whose variable part matches exactly — same variables with the same expon
 
 **See Also:** {{< glink term >}}, {{< glink variable >}}, {{< glink "combine like terms" >}}
 
----
+***
 
 ### Linear Equation {#glossary-linear-equation}
 
@@ -952,7 +952,7 @@ where $a$, $b$, and $c$ are numbers.
 
 **See Also:** {{< glink "linear model" >}}, {{< glink equation >}}, {{< glink "best-fit line" >}}
 
----
+***
 
 ### Linear Model {#glossary-linear-model}
 
@@ -964,7 +964,7 @@ It follows the pattern $y = mx + b$, where $m$ is the **slope** (rate) and $b$ i
 
 **See Also:** {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink y-intercept >}}
 
----
+***
 
 ### Literal Equation {#glossary-literal-equation}
 
@@ -977,7 +977,7 @@ A **literal equation** is an equation that uses letters to represent values. The
 
 **See Also:** {{< glink equation >}}, {{< glink  formula >}}
 
----
+***
 
 ### Markup {#glossary-markup}
 
@@ -989,7 +989,7 @@ A markup is the **amount added to a cost** to set a higher selling price, usuall
 
 **See Also:** {{< glink discount >}}
 
----
+***
 
 ### Maximum {#glossary-maximum}
 
@@ -1000,7 +1000,7 @@ A maximum is the greatest value a function or data set reaches. It is the highes
 
 **See Also:** {{< glink minimum >}}, {{< glink vertex >}}, {{< glink domain >}}, {{< glink range >}}
 
----
+***
 
 ### Mean {#glossary-mean}
 
@@ -1011,7 +1011,7 @@ The **mean** of a data set is what we usually call the **average**. You find it 
 
 **See Also:** {{< glink median >}}, {{< glink mode >}}, {{< glink "standard deviation" >}}
 
----
+***
 
 ### Median {#glossary-median}
 
@@ -1023,7 +1023,7 @@ The **median** is the **middle value** in a data set when the numbers are arrang
 
 **See Also:** {{< glink mean >}}, {{< glink mode >}}
 
----
+***
 
 ### Minimum {#glossary-minimum}
 
@@ -1034,7 +1034,7 @@ A minimum is the smallest value a function or data set reaches. It is the lowest
 
 **See Also:** {{< glink maximum >}}, {{< glink vertex >}}, {{< glink domain >}}, {{< glink range >}}
 
----
+***
 
 ### Mixed Number {#glossary-mixed_number}
 
@@ -1046,7 +1046,7 @@ A mixed number has a **whole number and a fraction** combined into one value.
 
 **See Also:** {{< glink "improper fraction" >}}, {{< glink fraction >}}
 
----
+***
 
 ### Mode {#glossary-mode}
 
@@ -1057,7 +1057,7 @@ The **mode** of a data set is the value that appears **most often**. A data set 
 
 **See Also:** {{< glink mean >}}, {{< glink median >}}
 
----
+***
 
 ### Monomial {#glossary-monomial}
 
@@ -1069,7 +1069,7 @@ It can be a number, a variable, or a coefficient times a variable with an expone
 
 **See Also:** {{< glink polynomial >}}, {{< glink term >}}, {{< glink coefficient >}}, {{< glink variable >}}, {{< glink exponent >}}
 
----
+***
 
 ### Multiple {#glossary-multiple}
 
@@ -1081,7 +1081,7 @@ A multiple is what you get when you multiply a number by 1, 2, 3, and so on.
 
 **See Also:** {{< glink factor >}}, {{< glink "prime factorization" >}}, {{< glink "skip count" >}}
 
----
+***
 
 ### Multiplication {#glossary-multiplication}
 
@@ -1093,7 +1093,7 @@ A math operation that means repeated addition or combining equal groups.
 
 **See Also:** {{< glink product >}}, {{< glink operation >}}, {{< glink division >}}
 
----
+***
 
 ### Multiplication by proximity {#glossary-multiplication_by_proximity}
 
@@ -1107,7 +1107,7 @@ Multiplication by **proximity** means to multiply two things that are next to ea
 
 **See Also:** {{< glink multiplication >}}, {{< glink parentheses >}}, {{< glink "distributive property" >}}, {{< glink product >}}
 
----
+***
 
 ### Negative Exponent {#glossary-negative-exponent}
 
@@ -1120,7 +1120,7 @@ $a^{-n}=\dfrac{1}{a^n}$, and $\dfrac{1}{a^{-n}}=a^n$ (for $a\ne0$).
 
 **See Also:** {{< glink division >}}, {{< glink exponent >}}
 
----
+***
 
 ### No Solution {#glossary-no-solution}
 
@@ -1135,7 +1135,7 @@ Often, mathematicians use $\varnothing$ in place of "no solution". It means the 
 
 **See Also:** {{< glink equation >}}, {{< glink solution >}}, {{< glink "all real numbers" >}}
 
----
+***
 
 ### Notation {#glossary-notation}
 
@@ -1147,7 +1147,7 @@ Often, mathematicians use $\varnothing$ in place of "no solution". It means the 
 
 **See Also:** {{< glink function >}}
 
----
+***
 
 ### Number line {#glossary-number_line}
 
@@ -1162,7 +1162,7 @@ Number lines help you visualize math operations and compare values.
 
 **See Also:** {{< glink axis >}}, {{< glink "whole number" >}}, {{< glink integer >}}
 
----
+***
 
 ### Number sense {#glossary-number_sense}
 
@@ -1174,7 +1174,7 @@ People with strong number sense can estimate, do mental math, notice patterns, a
 >
 > If someone says that $20\%$ of 50 is 40, good number sense tells you that cannot be right, because $20\%$ of 50 should be much smaller than 50.
 
----
+***
 
 
 ### Numerator {#glossary-numerator}
@@ -1187,7 +1187,7 @@ The numerator is the **top number** in a fraction. It tells **how many parts** y
 
 **See Also:** {{< glink fraction >}}, {{< glink denominator >}}
 
----
+***
 
 ### Negative {#glossary-negative}
 
@@ -1201,7 +1201,7 @@ On a number line, negative numbers are to the left of zero.
 
 **See Also:** {{< glink positive >}}, {{< glink subtraction >}}, {{< glink "number line" >}}
 
----
+***
 
 ### Odd {#glossary-odd}
 
@@ -1213,7 +1213,7 @@ An **odd number** is a whole number that **cannot** be divided evenly by 2. It a
 
 **See Also:** {{< glink even >}}, {{< glink multiple >}}
 
----
+***
 
 ### Operation {#glossary-operation}
 
@@ -1226,7 +1226,7 @@ An operation is a **math action** you do with numbers — like adding, subtracti
 
 **See Also:** {{< glink addition >}}, {{< glink subtraction >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink "order of operations" >}}, {{< glink PEMDAS >}}
 
----
+***
 
 ### Opposite {#glossary-opposite}
 
@@ -1240,7 +1240,7 @@ Their sum is always zero.
 
 **See Also:** {{< glink "absolute value" >}}, {{< glink "number line" >}}
 
----
+***
 
 ### Ordered Pair {#glossary-ordered-pair}
 
@@ -1252,7 +1252,7 @@ The first number is the x-coordinate (horizontal position), and the second is th
 
 **See Also:** {{< glink  "coordinate plane" >}}, {{< glink "axis" >}}
 
----
+***
 
 ### Order of Operations {#glossary-order_of_operations}
 
@@ -1267,7 +1267,7 @@ Multiplication and division are done **left to right**, whichever comes first. S
 
 **See Also:** {{< glink PEMDAS >}}, {{< glink operation >}}
 
----
+***
 
 ### Origin {#glossary-origin}
 
@@ -1278,7 +1278,7 @@ The point where the x-axis and y-axis intersect, written as (0, 0). It’s the �
 
 **See Also:** {{< glink "coordinate plane" >}}, {{< glink "ordered pair" >}}, {{< glink axis >}}
 
----
+***
 
 ### Output {#glossary-output}
 
@@ -1290,7 +1290,7 @@ The **output** is the result you get after a function or rule is applied to an i
 
 **See Also:** {{< glink function >}}, {{< glink input >}}, {{< glink substitution >}}
 
----
+***
 
 ### Parabola {#glossary-parabola}
 
@@ -1301,7 +1301,7 @@ A parabola is a U shaped curve formed by quadratic relationships. It can open up
 
 **See Also:** {{< glink vertex >}}, {{< glink "axis of symmetry" >}}, {{< glink quadratic >}}, {{< glink "quadratic equation" >}}
 
----
+***
 
 ### Parallel {#glossary-parallel}
 
@@ -1313,7 +1313,7 @@ Parallel lines stay the same distance apart everywhere on the graph.
 
 **See Also:** {{< glink slope >}}, {{< glink perpendicular >}}
 
----
+***
 
 ### Parentheses {#glossary-parentheses}
 
@@ -1325,7 +1325,7 @@ A grouping symbol that tells you what to do first in an expression.
 
 **See Also:** {{< glink "order of operations" >}}, {{< glink "multiplication by proximity" >}}, {{< glink "distributive property" >}}
 
----
+***
 
 ### Part {#glossary-part}
 
@@ -1337,7 +1337,7 @@ A part is one piece of the whole. It’s often what you’re looking for in a pe
 
 **See Also:** {{< glink whole >}}, {{< glink fraction >}}
 
----
+***
 
 ### Partial Product {#glossary-partial-product}
 
@@ -1350,7 +1350,7 @@ A **partial product** is the result of multiplying one part of an expression by 
 
 **See Also:** {{< glink product >}}, {{< glink "area model" >}}
 
----
+***
 
 ### Perfect Square {#glossary-perfect-square}
 
@@ -1366,7 +1366,7 @@ This can be a number, like $25 = 5^2$, or an algebraic expression that comes fro
 
 **See Also:** {{< glink "completing the square" >}}, {{< glink "square root" >}}
 
----
+***
 
 ### Perpendicular {#glossary-perpendicular}
 
@@ -1378,7 +1378,7 @@ Their slopes are **negative reciprocals** — their products multiply to $-1$.
 
 **See Also:** {{< glink parallel >}}, {{< glink slope >}}, {{< glink reciprocal >}}
 
----
+***
 
 ### Place Value {#glossary-place_value}
 
@@ -1390,7 +1390,7 @@ Place value tells you **how much each digit is worth** based on where it is in t
 
 **See Also:** {{< glink simplify >}}, {{< glink convert >}}, {{< glink decimal >}}
 
----
+***
 
 ### PEMDAS {#glossary-pemdas}
 
@@ -1409,7 +1409,7 @@ Remember that multiplication and division are the same operation as each other a
 
 **See Also:** {{< glink "order of operations" >}}, {{< glink operation >}}
 
----
+***
 
 ### Percent {#glossary-percent}
 
@@ -1421,7 +1421,7 @@ A percent is a way of expressing a number **out of 100**. The symbol **%** means
 
 **See Also:** {{< glink fraction >}}, {{< glink decimal >}}, {{< glink convert >}}, {{< glink ratio >}}
 
----
+***
 
 ### Point-Slope Form {#glossary-point-slope-form}
 
@@ -1438,7 +1438,7 @@ $$
 
 **See Also:** {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink "standard form" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}
 
----
+***
 
 ### Polynomial {#glossary-polynomial}
 
@@ -1455,7 +1455,7 @@ Polynomials can have one term, two terms, or many terms.
 
 **See Also:** {{< glink term >}}, {{< glink coefficient >}}, {{< glink monomial >}}, {{< glink binomial >}}, {{< glink trinomial >}}, {{< glink expression >}}, {{< glink degree >}}
 
----
+***
 
 ### Positive {#glossary-positive}
 
@@ -1469,7 +1469,7 @@ On a number line, positive numbers are to the right of zero.
 
 **See Also:** {{< glink negative >}}, {{< glink "number line" >}}, {{< glink addition >}}
 
----
+***
 
 ### Power {#glossary-power}
 
@@ -1482,7 +1482,7 @@ For $a^n$, $a$ is the base and $n$ is the exponent.
 
 **See Also:** {{< glink exponent >}}, {{< glink base >}}, {{< glink multiplication >}}
 
----
+***
 
 ### Power of a Power (Exponents) {#glossary-power-of-a-power}
 
@@ -1495,7 +1495,7 @@ $(a^m)^n=a^{m\cdot n}$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "zero exponent" >}}
 
----
+***
 
 ### Prime Number {#glossary-prime_number}
 
@@ -1507,7 +1507,7 @@ A number is prime if it has exactly two factors: 1 and itself.
 
 **See Also:** {{< glink "composite number" >}}, {{< glink "prime factorization" >}}, {{< glink factor >}}
 
----
+***
 
 ### Prime factorization {#glossary-prime_factorization}
 
@@ -1520,7 +1520,7 @@ Prime factorization means writing a number as a product of prime numbers.
 
 **See Also:** {{< glink factor >}}, {{< glink "prime number" >}}, {{< glink product >}}, {{< glink "factor tree" >}}
 
----
+***
 
 ### Product {#glossary-product}
 
@@ -1531,7 +1531,7 @@ A product is the **result of multiplying** two or more numbers.
 > The product of 4 and 6 is `24`, because `4 × 6 = 24`.
 
 **See Also:** {{< glink multiplication >}}, {{< glink sum >}}, {{< glink difference >}}, {{< glink quotient >}}
----
+***
 
 ### Product Rule (Exponents) {#glossary-product-rule}
 
@@ -1544,7 +1544,7 @@ $a^m\cdot a^n=a^{m+n}$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "quotient rule" >}}, {{< glink "zero exponent" >}}, {{< glink "power of a power" >}}
 
----
+***
 
 ### Proof {#glossary-proof}
 
@@ -1559,7 +1559,7 @@ A **proof** is a clear, step-by-step explanation that shows a statement is **alw
 
 **See Also:** {{< glink hypothesis >}}, {{< glink evidence >}}, {{< glink counterexample >}}
 
----
+***
 
 ### Proportion {#glossary-proportion}
 
@@ -1571,7 +1571,7 @@ A proportion shows **two equal ratios**. It tells you that two fractions or comp
 
 **See Also:** {{< glink ratio >}}, {{< glink percent >}}, {{< glink fraction >}}, {{< glink quotient >}}
 
----
+***
 
 ### Quadrant {#glossary-quadrant}
 
@@ -1582,7 +1582,7 @@ One of the four regions of the coordinate plane divided by the x-axis and y-axis
 
 **See Also:** {{< glink "coordinate plane" >}}, {{< glink axis >}}, {{< glink origin >}}
 
----
+***
 
 ### Quadratic {#glossary-quadratic}
 
@@ -1594,7 +1594,7 @@ A quadratic is an expression, equation, or relationship that involves a squared 
 **See Also:**  
 {{< glink "quadratic equation" >}}, {{< glink parabola >}}, {{< glink vertex >}}, {{< glink "axis of symmetry" >}}
 
----
+***
 
 ### Quadratic equation {#glossary-quadratic-equation}
 
@@ -1608,7 +1608,7 @@ where $a$, $b$, and $c$ are numbers and $a$ is not zero. Quadratic equations oft
 **See Also:**  
 {{< glink quadratic >}}, {{< glink "quadratic formula" >}}, {{< glink parabola >}}
 
----
+***
 
 ### Quadratic formula {#glossary-quadratic-formula}
 
@@ -1623,7 +1623,7 @@ $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
 **See Also:**  
 {{< glink "quadratic equation" >}}, {{< glink quadratic >}}, {{< glink parabola >}}, {{< glink vertex >}}
 
----
+***
 
 ### Quotient {#glossary-quotient}
 
@@ -1635,7 +1635,7 @@ A quotient is the **result of dividing** one number by another.
 
 **See Also:** {{< glink fraction >}}, {{< glink division >}}, {{< glink product >}}, {{< glink sum >}}, {{< glink difference >}}
 
----
+***
 
 ### Quotient Rule (Exponents) {#glossary-quotient-rule}
 
@@ -1648,7 +1648,7 @@ $\dfrac{a^m}{a^n}=a^{m-n}$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "power of a power" >}}, {{< glink "zero exponent" >}}, {{< glink "product rule" >}}, {{< glink "negative exponent" >}}, {{< glink quotient >}}
 
----
+***
 
 ### Range {#glossary-range}
 
@@ -1659,7 +1659,7 @@ The range is the set of all output values a relation or function can produce. It
 
 **See Also:** {{< glink domain >}}, {{< glink function >}}, {{< glink "all real numbers" >}}
 
----
+***
 
 ### Rate {#glossary-rate}
 
@@ -1671,7 +1671,7 @@ A rate compares **two different units**, like miles per hour or cost per item.
 
 **See Also:** {{< glink slope >}}, {{< glink ratio >}}, {{< glink "linear model" >}}
 
----
+***
 
 ### Ratio {#glossary-ratio}
 
@@ -1683,7 +1683,7 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 
 **See Also:** {{< glink fraction >}}, {{< glink quotient >}}
 
----
+***
 
 ### Range {#glossary-range}
 
@@ -1694,7 +1694,7 @@ The **range** of a relationship or function is the set of all **output values** 
 
 **See Also:** {{< glink domain >}}, {{< glink function >}}, {{< glink output >}}
 
----
+***
 
 ### Real number {#glossary-real_number}
 
@@ -1710,7 +1710,7 @@ A **real number** is any number that can be placed on the **number line**. This 
 
 **See Also:** {{< glink "whole number" >}}, {{< glink integer >}}, {{< glink decimal >}}, {{< glink "number line" >}}, {{< glink "all real numbers" >}}, {{< glink positive >}}, {{< glink negative >}}
 
----
+***
 
 ### Reciprocal {#glossary-reciprocal}
 
@@ -1723,7 +1723,7 @@ The reciprocal of a number is what you **multiply it by to get 1**. You can find
 
 **See Also:** {{< glink fraction >}}, {{< glink division >}}, {{< glink quotient >}}, {{< glink "inverse operations" >}}
 
----
+***
 
 ### Relatively Prime {#glossary-relatively_prime}
 
@@ -1739,7 +1739,7 @@ This means their greatest common factor (GCF) is 1, even if neither number is pr
 
 **See Also:** {{< glink "prime number" >}}, {{< glink "greatest common factor" >}}, {{< glink factor >}}
 
----
+***
 
 ### Remainder {#glossary-remainder}
 
@@ -1751,7 +1751,7 @@ A remainder is what’s left over after dividing when the number doesn’t go in
 
 **See Also:** {{< glink quotient >}}, {{< glink division >}}
 
----
+***
 
 ### Result {#glossary-result}
 
@@ -1763,7 +1763,7 @@ The result is the final answer you get after evaluating or simplifying an expres
 
 **See Also:** {{< glink solution >}}, {{< glink evaluate >}}, {{< glink expression >}}
 
----
+***
 
 ### Residual {#glossary-residual}
 
@@ -1780,7 +1780,7 @@ Positive residuals are points **above** the line; negative residuals are **below
 
 **See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}
 
----
+***
 
 ### Root {#glossary-root}
 
@@ -1791,7 +1791,7 @@ A root of an equation is a value that makes the equation true. For quadratic equ
 
 **See Also:** {{< glink "x intercept" >}}, {{< glink solution >}}, {{< glink "zero product property" >}}
 
----
+***
 
 ### Scatter Plot {#glossary-scatter-plot}
 
@@ -1802,7 +1802,7 @@ A scatter plot is a graph that shows pairs of data points as dots on a coordinat
 
 **See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}, {{< glink correlation >}}
 
----
+***
 
 ### Simplest Form {#glossary-simplest_form}
 
@@ -1817,7 +1817,7 @@ In other words, the fraction can’t be reduced any further.
 
 **See Also:** {{< glink expression >}}, {{< glink simplify >}}, {{< glink fraction >}}
 
----
+***
 
 ### Simplify {#glossary-simplify}
 
@@ -1833,7 +1833,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 
 **See Also:** {{< glink "simplest form" >}}, {{< glink expression >}}, {{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink expand >}}
 
----
+***
 
 ### Skip Count {#glossary-skip_count}
 
@@ -1849,7 +1849,7 @@ Skip counting means **counting forward (or backward) by a number other than 1** 
 
 **See Also:** {{< glink multiple >}}, {{< glink factor >}}, {{< glink "number line" >}}
 
----
+***
 
 ### Slope {#glossary-slope}
 
@@ -1865,7 +1865,7 @@ A bigger slope means a steeper line.
 
 **See Also:** {{< glink "linear equation" >}}, {{< glink rate >}}, {{< glink ratio >}}, {{< glink y-intercept >}}, {{< glink "slope formula" >}}
 
----
+***
 
 ### Slope Formula {#glossary-slope-formula}
 
@@ -1888,7 +1888,7 @@ where
 
 **See Also:** {{< glink slope >}}, {{< glink formula >}}, {{< glink "linear model" >}}, {{< glink "ordered pair" >}}, {{< glink ratio >}}
 
----
+***
 
 ### Slope-Intercept Form {#glossary-slope-intercept-form}
 
@@ -1901,7 +1901,7 @@ Where $m$ is the **slope** (how steep the line is) and $b$ is the **y-intercept*
 
 **See Also:** {{< glink "linear model" >}}, {{< glink "linear equation" >}}, {{< glink slope >}}, {{< glink y-intercept >}}, {{< glink "point-slope form" >}}, {{< glink "standard form" >}}
 
----
+***
 
 ### Solution {#glossary-solution}
 
@@ -1915,7 +1915,7 @@ A **solution** is any value of a variable that makes an equation true. If there�
 
 **See Also:** {{< glink equation >}}, {{< glink result >}}, {{< glink inequality >}}, {{< glink value >}}
 
----
+***
 
 ### Solve {#glossary-solve}
 
@@ -1927,7 +1927,7 @@ To **solve** an equation means to find every value of the variable that makes th
 
 **See Also:** {{< glink equation >}}, {{< glink solution >}}, {{< glink result >}}, {{< glink simplify >}}, {{< glink value >}}
 
----
+***
 
 ### Square Root {#glossary-square-root}
 
@@ -1939,7 +1939,7 @@ A **square root** of a number is a value that, when multiplied by itself, gives 
 
 **See Also:** {{< glink "perfect square" >}}
 
----
+***
 
 ### Standard Deviation {#glossary-standard-deviation}
 
@@ -1950,7 +1950,7 @@ A **square root** of a number is a value that, when multiplied by itself, gives 
 
 **See Also:** {{< glink mean >}}, {{< glink residual >}}
 
----
+***
 
 ### Standard Form {#glossary-standard-form}
 
@@ -1967,7 +1967,7 @@ The exact rules depend on the type of problem:
 
 **See Also:** {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink "point-slope form" >}}
 
----
+***
 
 ### Standard form (quadratic) {#glossary-standard-form-quadratic}
 
@@ -1981,7 +1981,7 @@ It is helpful for identifying $a$, $b$, and $c$ and for using the quadratic form
 **See Also:**  
 {{< glink quadratic >}}, {{< glink "quadratic equation" >}}, {{< glink "quadratic formula" >}}
 
----
+***
 
 ### Subtraction {#glossary-subtraction}
 
@@ -1993,7 +1993,7 @@ An operation that finds the difference between two numbers.
 
 **See Also:** {{< glink operation >}}, {{< glink addition >}}, {{< glink multiplication >}}, {{< glink division >}}, {{< glink "order of operations" >}}, {{< glink difference >}}
 
----
+***
 
 ### Substitute {#glossary-substitute}
 
@@ -2009,7 +2009,7 @@ To **substitute** means to replace a variable with a number (or another expressi
 
 **See Also:** {{< glink substitution >}}, {{< glink simplify >}}, {{< glink evaluate >}}, {{< glink expression >}}, {{< glink formula >}}
 
----
+***
 
 ### Substitution {#glossary-substitution}
 
@@ -2021,7 +2021,7 @@ Substitution is the process of replacing a variable with a number or another exp
 
 **See Also:** {{< glink substitute >}}, {{< glink "system of equations" >}}, {{< glink expression >}}, {{< glink variable >}}
 
----
+***
 
 ### Sum {#glossary-sum}
 
@@ -2032,7 +2032,7 @@ The sum is the result you get when you add two or more numbers or expressions to
 
 **See Also:** {{< glink addition >}}, {{< glink product >}}, {{< glink quotient >}}, {{< glink difference >}}, {{< glink value >}}, {{< glink result >}}
 
----
+***
 
 ### Survey {#glossary-survey}
 
@@ -2044,7 +2044,7 @@ A survey is a way to **collect information** from people by asking questions.
 
 **See Also:** {{< glink correlation >}}
 
----
+***
 
 ### Symbol {#glossary-symbol}
 
@@ -2057,7 +2057,7 @@ A **symbol** is a mark or character used to represent something in math. It can 
 
 **See Also:** {{< glink variable >}}
 
----
+***
 
 ### System of Equations {#glossary-system-of-equations}
 
@@ -2066,17 +2066,17 @@ A **system of equations** is a set of two or more equations that use the same va
 > **Example:**
 >
 > $$
-> \begin{align*}
+> \begin{aligned}
 > y &= 2x + 1 \\
 > y &= -x + 4
-> \end{align*}
+> \end{aligned}
 > $$
 > 
 > The two lines intersect at $(1, 3)$, so that point is the **solution to the system**.
 
 **See Also:** {{< glink equation >}}, {{< glink "ordered pair" >}}, {{< glink substitution >}}, {{< glink elimination >}}, {{< glink "linear model" >}}
 
----
+***
 
 ### Table {#glossary-table}
 
@@ -2089,7 +2089,7 @@ A **table** is a way to organize information in rows and columns. In Algebra, ta
 
 **See Also:** {{< glink function >}}, {{< glink input >}}, {{< glink output >}}, {{< glink "coordinate plane" >}}
 
----
+***
 
 ### Term {#glossary-term}
 
@@ -2102,7 +2102,7 @@ A **term** is one part of an expression. Terms are separated by plus or minus si
 
 **See Also:** {{< glink variable >}}, {{< glink coefficient >}}, {{< glink expression >}}, {{< glink polynomial >}}, {{< glink "combine like terms" >}}, {{< glink "like terms" >}}
 
----
+***
 
 ### Trinomial {#glossary-trinomial}
 
@@ -2113,7 +2113,7 @@ A **trinomial** is a polynomial with **exactly three terms**.
 
 **See Also:** {{< glink polynomial >}}, {{< glink binomial >}}, {{< glink monomial >}}
 
----
+***
 
 ### Value {#glossary-value}
 
@@ -2126,7 +2126,7 @@ The value of an expression or variable is the amount it is worth.
 
 **See Also:** {{< glink variable >}}, {{< glink result >}}, {{< glink expression >}}, {{< glink substitution >}}
 
----
+***
 
 ### Variable {#glossary-variable}
 
@@ -2139,7 +2139,7 @@ A **variable** is a letter or symbol that stands for a number that can change or
 
 **See Also:** {{< glink coefficient >}}, {{< glink constant >}}, {{< glink term >}}, {{< glink equation >}}
 
----
+***
 
 ### Vertex {#glossary-vertex}
 
@@ -2148,7 +2148,7 @@ A vertex is a special point where something changes direction, meets, or connect
 > **Example:**  
 > The lowest or highest point of a parabola is called its vertex.
 
----
+***
 
 ### Vertex form (quadratic) {#glossary-vertex-form-quadratic}
 
@@ -2162,7 +2162,7 @@ where $(h, k)$ is the vertex. This form makes it easy to read the vertex and dir
 **See Also:**  
 {{< glink vertex >}}, {{< glink parabola >}}, {{< glink "axis of symmetry" >}}, {{< glink quadratic >}}
 
----
+***
 
 ### Vertical {#glossary-vertical}
 
@@ -2175,7 +2175,7 @@ Up and down, like a flagpole.
 
 **See Also:** {{< glink horizontal >}}, {{< glink slope >}}
 
----
+***
 
 ### Whole {#glossary-whole}
 
@@ -2187,7 +2187,7 @@ The whole is the **total amount** — it’s everything being considered before 
 
 **See Also:** {{< glink part >}}, {{< glink "whole number" >}}, {{< glink fraction >}}
 
----
+***
 
 ### Whole number {#glossary-whole_number}
 
@@ -2203,7 +2203,7 @@ A **whole number** is a number with **no fractions or decimals**. These are **0,
 
 **See Also:** {{< glink integer >}}, {{< glink decimal >}}, {{< glink fraction >}}, {{< glink "real number" >}}
 
----
+***
 
 ### x-intercept {#glossary-x-intercept}
 
@@ -2215,7 +2215,7 @@ At this point, the value of $y$ is always $0$.
 
 **See Also:** {{< glink y-intercept >}}, {{< glink "linear model" >}}, {{< glink "linear equation" >}}, {{< glink "slope-intercept form" >}}, {{< glink "ordered pair" >}}, {{< glink axis >}}
 
----
+***
 
 ### y-intercept {#glossary-y-intercept}
 
@@ -2227,7 +2227,7 @@ At this point, the value of $x$ is always $0$.
 
 **See Also:** {{< glink  x-intercept >}}, {{< glink "linear model" >}}, {{< glink "slope-intercept form" >}}, {{< glink slope >}}
 
----
+***
 
 ### Zero Exponent {#glossary-zero-exponent}
 
@@ -2240,7 +2240,7 @@ $a^0=1$ for $a\ne0$.
 
 **See Also:** {{< glink exponent >}}, {{< glink "product rule" >}}, {{< glink "quotient rule" >}}, {{< glink "negative exponent" >}}
 
----
+***
 
 ### Zero Product Property {#glossary-zero-product-property}
 
@@ -2252,4 +2252,4 @@ The zero product property says that if a product equals zero, then at least one 
 
 **See Also:** {{< glink factor >}}, {{< glink root >}}, {{< glink "quadratic equation" >}}
 
----
+***

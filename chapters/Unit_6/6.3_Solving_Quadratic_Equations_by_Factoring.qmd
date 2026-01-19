@@ -12,7 +12,7 @@ It is natural to ask how we would solve an equation like this.
 
 In this lesson, we will see that we already have all of the tools we need.
 
----
+***
 
 :::{.objectives}
 
@@ -46,7 +46,7 @@ In this lesson, we will see that we already have all of the tools we need.
 
 {{< learn >}}
 
----
+***
 
 ### 6.3.1 - Finding the x-intercepts of a quadratic function
 
@@ -66,7 +66,7 @@ They occur exactly when the **output** of the function is zero.
 
 This idea is the key to why we solve equations by setting them equal to zero.
 
----
+***
 
 **Example 1:** Finding x-intercepts by graphing
 
@@ -101,7 +101,7 @@ Instead, we use algebra to find the exact x-values.
 
 We will now solve this same quadratic algebraically and confirm these results exactly.
 
----
+***
 
 ### 6.3.2 - Solving quadratic equations by factoring
 
@@ -123,7 +123,7 @@ Once a quadratic is written as an expression equal to zero, we can factor it and
 If a product equals zero, then at least one factor must be zero.
 Each factor gives a possible solution.
 
----
+***
 
 **Example 2:** Solving a quadratic equation by factoring
 
@@ -152,7 +152,7 @@ Each factor gives a possible solution.
 
 These solutions match the x-intercepts we saw on the graph.
 
----
+***
 
 **Example 3:** A quadratic not in standard form
 
@@ -179,7 +179,7 @@ Setting each factor equal to zero gives
 * $x = -\tfrac{1}{2}$
 * $x = 4$
 
----
+***
 
 **Example 4:** Taking out a GCF
 
@@ -206,7 +206,7 @@ The solutions are
 * $x = -6$
 * $x = -\tfrac{3}{2}$
 
----
+***
 
 **Example 5:** A higher-degree equation
 
@@ -240,16 +240,16 @@ Each factor gives a solution.
 * $x = -1$
 * $x = 3$
 
----
+***
 
 :::{.you-try title="Solve $3x^2 - 7x = 6$"}
 
 $$
-\begin{align*}
+\begin{aligned}
 3x^2 - 7x &= 6 \\
 3x^2 - 7x - 6 &= 0 \\
 (x - 3)(3x + 2) &= 0
-\end{align*}
+\end{aligned}
 $$
 
 The solutions are
@@ -259,14 +259,14 @@ The solutions are
 
 :::
 
----
+***
 
 ### 6.3.3 - How many solutions can a quadratic equation have?
 
 A quadratic function can have **two**, **one**, or **zero** x-intercepts.
 Because solving a quadratic equation is the same as finding its x-intercepts, the equation itself can have the same possibilities.
 
----
+***
 
 **Example 6:** Two solutions
 
@@ -287,7 +287,7 @@ Because there are two different solutions, the graph crosses the x-axis twice.
 
 ![](/images/Unit_6/Lesson_3/Example6.png){width="400px" fig-align="center"}
 
----
+***
 
 **Example 7:** One solution
 
@@ -308,7 +308,7 @@ On the graph, the parabola touches the x-axis at exactly one point.
 
 ![](/images/Unit_6/Lesson_3/Example7.png){width="400px" fig-align="center"}
 
----
+***
 
 **Example 8:** No real solutions
 
@@ -325,7 +325,7 @@ On the graph, the parabola never touches the x-axis.
 
 ![](/images/Unit_6/Lesson_3/Example8.png){width="400px" fig-align="center"}
 
----
+***
 
 #### Putting it all together
 
@@ -350,7 +350,7 @@ Answer in your own words.
 
 5.  Why does the equation $(x - 4)^2 = 0$ have only one solution even though it looks like a product?
 
----
+***
 
 **Solve by Factoring**  
 Solve each equation.
@@ -409,7 +409,7 @@ Solve each equation.
 
 32. $x^2 + 1 = 0$
 
----
+***
 
 **Challenge Problems**
 

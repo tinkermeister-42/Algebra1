@@ -13,13 +13,13 @@ $$
 Solving for $c$ gives us:
 
 $$
-\begin{align*}
+\begin{aligned}
 3.5 + 1.25c \textcolor{red}{-3.5} &= 20 \textcolor{red}{-3.5} \snminus{3.5} \\
 1.25c &= 16.5 \\
 \\
 1.25c \textcolor{red}{\div 1.25} &= 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
 c &= 13.2
-\end{align*}
+\end{aligned}
 $$
 
 This tells us you can afford 13.2 packages of candy—but you can’t just buy part of a package.
@@ -75,7 +75,7 @@ In Unit 1, we plotted single solutions like $x = 3$ on a number line:
 That’s just one point.
 Inequalities, however, represent a whole range of values.
 
----
+***
 
 **Example 1:** Greater Than
 
@@ -85,7 +85,7 @@ Plot the solution to $x > 3$ on a number line.
 
 The open circle shows 3 is *not included*. The arrow points right to show all numbers greater than 3 are possible solutions.
 
----
+***
 
 **Example 2:** Less Than
 
@@ -95,7 +95,7 @@ Plot the solution to $x < 3$ on a number line.
 
 The arrow points left -- toward smaller numbers. The open circle again shows that 3 itself is not included.
 
----
+***
 
 **Example 3:** Greater Than or Equal To 
 
@@ -105,7 +105,7 @@ Plot the solution to $x \ge 3$ on a number line.
 
 Same as Example 1, except the dot is filled in. That means **3 is included**.
 
----
+***
 
 **Example 4:** Less Than or Equal To
 
@@ -127,13 +127,13 @@ Since $-4 \le -1$ is true, shade the side containing $-4$.
 
 :::
 
----
+***
 
 ### 3.6.2 - Solving Inequalities Using Addition and Subtraction
 
 Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.
 
----
+***
 
 **Example 5:**  A one-step inequality
 
@@ -146,10 +146,10 @@ $$
 We solve this like a one-step equation.
 
 $$
-\begin{align*}
+\begin{aligned}
 x - 5 \textcolor{red}{+5} &> 2 \textcolor{red}{+5} \snplus{5} \\
 x &> 7
-\end{align*}
+\end{aligned}
 $$
 
 Now we plot the solution.
@@ -158,7 +158,7 @@ Now we plot the solution.
 
 The arrow covers all numbers larger than 7. The dot is left open because 7 itself is not included.
 
----
+***
 
 **Example 6:** Another one-step inequality
 
@@ -171,17 +171,17 @@ $$
 First we solve.
 
 $$
-\begin{align*}
+\begin{aligned}
 x + 2 \textcolor{red}{-2} &\le 5 \textcolor{red}{-2} \snminus{2} \\
 x &\le 3
-\end{align*}
+\end{aligned}
 $$
 
 Now plot it.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
----
+***
 
 ### 3.6.3 -- Solving Inequalities with Multiplication and Division
 
@@ -198,20 +198,20 @@ $$
 Solve first:
 
 $$
-\begin{align*}
+\begin{aligned}
 3x - 4 \textcolor{red}{+4} &> 5 \textcolor{red}{+4} \snplus{4} \\
 3x &> 9 \\
 \\
 3x \textcolor{red}{\div 3}  &> 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &> 3
-\end{align*}
+\end{aligned}
 $$
 
 Now plot it:
 
 ![](/images/Unit_3/Lesson_6/x_greater_than_3.png)
 
----
+***
 
 The one big difference between solving equations and inequalities comes when you multiply or divide by a **negative** number. In that case, you have to **flip the sign**.
 
@@ -226,13 +226,13 @@ $$
 Solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 5 - 2x \textcolor{red}{-5} &< -3 \textcolor{red}{-5} \snminus{5} \\
 -2x &< -8 \\
 \\
 -2x \textcolor{red}{\div -2} &< -8 \textcolor{red}{\div -2} \sndiv{-2} \\
 x &> 4 \stepnote{Flip the sign}
-\end{align*}
+\end{aligned}
 $$
 
 Plot the solution:
@@ -245,17 +245,17 @@ Don't forget to *flip the sign* when you multiply or divide by a negative number
 In the previous example we found $x > 4$.  Let's test our answer with $x = 5$.
 
 $$
-\begin{align*}
+\begin{aligned}
 5 - 2(\textcolor{red}{5}) &< -3 \stepnote{substitute 5} \\
 5 - 10 &< -3 \\
 -5 &< -3 \stepnote{$\leftarrow$ a true statement}
-\end{align*}
+\end{aligned}
 $$
 
 If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 :::
 
----
+***
 
 ### 3.6.4 -- Real-World Problems With Inequalities
 
@@ -274,13 +274,13 @@ $$
 Let's solve it.
 
 $$
-\begin{align*}
+\begin{aligned}
 3.5 + 1.25c \textcolor{red}{-3.5} &\le 20 \textcolor{red}{-3.5} \snminus{3.5} \\
 1.25c &\le 16.5 \\
 \\
 1.25c \textcolor{red}{\div 1.25} &\le 16.5 \textcolor{red}{\div 1.25} \sndiv{1.25} \\
 c &\le 13.2
-\end{align*}
+\end{aligned}
 $$
 
 Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is **13 packages**.
@@ -301,7 +301,7 @@ Plot each inequality on a number line.
 
 5. $x < 4$
 
----
+***
 
 **Solve and Graph**
 
@@ -327,7 +327,7 @@ Solve each inequality, then graph its solution.
 
 15. $-2(3x + 4) \ge 8 - x$
 
----
+***
 
 **Write and Solve Inequalities**
 
@@ -349,7 +349,7 @@ Write an inequality to model each situation, then solve.
 
 23. A group rents a bus for \$200 plus \$15 per person. If they can spend at most \$500, how many people can go?
 
----
+***
 
 **Challenge Problems**
 
@@ -357,7 +357,7 @@ Write an inequality to model each situation, then solve.
 
 25. A movie theater sells student tickets for \$7 and adult tickets for \$10. If the theater makes at least \$400 from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?
 
----
+***
 :::{.answers}
 
 1. open circle at 2, arrow right

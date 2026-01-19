@@ -12,7 +12,7 @@ It’s practice-heavy so you can build accuracy, speed, and confidence before th
 * Solving and graphing inequalities
 * Rearranging literal equations (formulas)
 
----
+***
 
 ### Solving One-Step Equations (3.1)
 
@@ -30,7 +30,7 @@ Solve each equation and **show your work**.
 
 Check at least one of your answers by substitution.
 
----
+***
 
 ### Solving Two-Step Equations (3.2)
 
@@ -47,7 +47,7 @@ Check at least one of your answers by substitution.
 11. A movie ticket costs $12 plus $3 for each snack. You spent $27.
 Write and solve an equation to find how many snacks you bought.
 
----
+***
 
 ### Multi-Step Equations with Distribution (3.3)
 
@@ -65,7 +65,7 @@ Simplify, then solve.
 
 Check one by substitution.
 
----
+***
 
 ### Variables on Both Sides (3.4)
 
@@ -77,7 +77,7 @@ Check one by substitution.
 
 20. $4(p + 2) = 6p$
 
----
+***
 
 ### No or Infinite Solutions (3.5)
 
@@ -92,7 +92,7 @@ Show how you know.
 
 24. $9 + 2x = 2x + 9$
 
----
+***
 
 ### Solving Inequalities (3.6)
 
@@ -111,7 +111,7 @@ Solve and graph on a number line.
 30. You have $50. You buy a game for $14 and plan to get several snacks costing $4 each.
 Write and solve an inequality to find how many snacks you can afford.
 
----
+***
 
 ### Solving Literal Equations (3.7)
 
@@ -139,7 +139,7 @@ Rearrange each formula to solve for the indicated variable.
 
 40. $T = a(2b + 5) - 3b$ solve for $b$
 
----
+***
 
 :::{.answers}
 

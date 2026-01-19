@@ -33,7 +33,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
    :::
    ::::
 
----
+***
 
 2. Jack was hungrier than Monique.
 
@@ -72,7 +72,7 @@ $$
 A common mistake students make is to add the numerators together **and** the denominators together. **Only add the numerators!**
 :::
 
----
+***
 
 **Example 2:** $\frac{11}{12} - \frac{5}{12}$
 $$
@@ -85,7 +85,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.5.2 - Adding Fractions with Unlike Denominators
 
@@ -114,7 +114,7 @@ At first, these pieces don’t match.
 Even though Jack ate **one slice** of each pizza, those slices are **not the same size**.  
 So we can’t just add $\frac{1}{3} + \frac{1}{4}$ yet.
 
----
+***
 
 #### How to Find a Common Denominator
 
@@ -139,7 +139,7 @@ Multiples of $4$: $4, 8, 12, \dots$
 
 The first number that appears in both lists is $12$.
 
----
+***
 
 #### Making the Pieces Match
 
@@ -167,7 +167,7 @@ Now both pizzas can be described using **twelfths**.
 
 Once the pieces match, the math works the same way as before.
 
----
+***
 
 **Example 3:** $\frac{1}{3} + \frac{1}{4}$
 
@@ -189,7 +189,7 @@ $$
 \frac{4}{12} + \frac{3}{12} = \frac{7}{12}
 $$
 
----
+***
 
 **Example 4:** $\frac{7}{8} - \frac{1}{4}$
 
@@ -228,7 +228,7 @@ To add or subtract mixed numbers, we will use this method:
 2. Add or subtract the fractions.  
 3. If needed, convert back to a mixed number.
 
----
+***
 
 #### Converting a Mixed Number to an Improper Fraction
 
@@ -243,7 +243,7 @@ $$
 a\tfrac{b}{c} = \frac{a\cdot c + b}{c}
 $$
 
----
+***
 
 **Example 5:** $2\tfrac{1}{3} + 1\tfrac{5}{6}$
 
@@ -280,7 +280,7 @@ $$
 \frac{25}{6} = 4\tfrac{1}{6}
 $$
 
----
+***
 
 **Example 6:** $4\tfrac{1}{2} - 2\tfrac{3}{4}$
 
@@ -345,7 +345,7 @@ $$
 
 12. $6\tfrac{1}{4} - 3\tfrac{3}{8}$
 
----
+***
 
 **Word Problems**
 
@@ -356,7 +356,7 @@ How much water did you drink total?
 
 15. A recipe needs $\frac{2}{3}$ cup of sugar. If you already added $\frac{1}{4}$ cup, how much more do you need?
 
----
+***
 
 **Challenge Problems**
 
@@ -365,7 +365,7 @@ How much water did you drink total?
 17. A runner completes $4\tfrac{2}{3}$ miles on Monday and $3\tfrac{5}{6}$ miles on Tuesday.  
 How many miles did they run total?
 
----
+***
 
 ::: {.answers}
 

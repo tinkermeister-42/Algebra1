@@ -248,7 +248,7 @@ $$3 * 3 * 5 = 45$$
 
 :::
 
----
+***
 
 ### 1.3.2 - Using Factor Trees to Divide
 
@@ -323,7 +323,7 @@ flowchart TB
 
 For 36 we left behind a 3 and for 60 we left behind a 5.  What this means is that 36 ÷ 12 is 3 and 60 ÷ 12 is 5.
 
----
+***
 
 **Let's try another one**
 
@@ -527,7 +527,7 @@ flowchart TB
 $$2 * 2 * 2 = 8$$
 
 :::
----
+***
 
 ### 1.3.3 - Simplifying Fractions with the GCF
 
@@ -535,7 +535,7 @@ In the last section, dividing two numbers showed how to "cancel out" or eliminat
 
 Simplifying a fraction means rewriting it in its {{< glink "simplest form" >}}. This makes a fraction as "small" or "basic" as possible without changing its value. To do that, we divide both the {{< glink numerator >}} and the {{< glink denominator >}} by their GCF. When a fraction is in its simplest form, the numerator and denominator don't share any factors other than 1.
 
---- 
+***
 
 Let’s go back to one we’ve already seen:
 
@@ -551,7 +551,7 @@ $$
 
 This is just like the division you saw in the factor trees. We canceled out the factors they both had (two 2s and one 3) and kept what was left.
 
----
+***
 
 **Here's another:**
 
@@ -567,7 +567,7 @@ $$
 
 This tells us the fraction $\frac{90}{15}$ is just another way to write the number 6.
 
----
+***
 
 **In other words:**
 
@@ -628,7 +628,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.3.4  Application: Simplifying with Recipes
 
@@ -696,7 +696,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 3. Two numbers have a GCF of 1.
    What does that mean? Give an example.
 
----
+***
 
 **Simplifying Fractions**
 
@@ -714,7 +714,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 5. Can a fraction be simplified if the GCF is 1?
    Explain your answer and give an example.
 
----
+***
 
 **Word Problems**
 
@@ -733,7 +733,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
    a. What is the greatest number of jars he can make with no paint left over?
    b. How many ounces of red and blue paint will go in each jar?
 
----
+***
 
 **Challenge Problems**
 
@@ -743,7 +743,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 10. A teacher has 150 pencils and 100 pens. She will make gift bags that all have the same ratio of pencils to pens. Each bag must have **2 more pencils than pens**. She will use **all** the items.
     How many bags can she make, and what goes in each bag?
 
----
+***
 
 ::: {.answers}
 
@@ -771,7 +771,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 
    d. $\frac{24}{36}$
 
----
+***
 
 **GCF Practice**
 
@@ -791,7 +791,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 
 3. The numbers are {{< glink "relatively prime" >}}. For example: 8 and 15.
 
----
+***
 
 **Simplifying Fractions**
 
@@ -809,7 +809,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 
 5. No. The numerator and denominator are relatively prime and so nothing can cancel out.
 
----
+***
 
 **Word Problems**
 

@@ -11,7 +11,7 @@ It focuses on exponent rules, simplifying expressions, and building fluency with
 * Factoring using GCF  
 * Factoring trinomials and recognizing special patterns  
 
----
+***
 
 ### Exponent Rules (5.1)
 
@@ -37,7 +37,7 @@ Simplify each expression.
 
 10. $\dfrac{12x^{-2} y^5}{3y^2}$
 
----
+***
 
 ### Simplifying Polynomials (5.2)
 
@@ -55,7 +55,7 @@ Write each expression in standard form.
 
 16. $-(3k^2 - 7k + 4) + (2k^2 + 5k)$
 
----
+***
 
 ### Multiplying Polynomials (5.3)
 
@@ -77,7 +77,7 @@ Multiply and write in standard form.
 
 24. $(2x - 3y)(x + y)$
 
----
+***
 
 ### Factoring GCF (5.4)
 
@@ -93,7 +93,7 @@ Factor each expression completely.
 
 29. $7k^5 - 21k^3$
 
----
+***
 
 ### Factoring Trinomials and Special Patterns (5.5)
 
@@ -119,7 +119,7 @@ Factor each expression completely.
 
 39. $9b^2 - 1$
 
----
+***
 
 :::{.answers}
 

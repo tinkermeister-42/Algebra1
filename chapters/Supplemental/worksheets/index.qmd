@@ -2,7 +2,7 @@
 
 Here are some worksheets that will give you practice on various topics.
 
----
+***
 
 ## Unit 1 - Algebra Foundations
   - [Pre-test](Unit_1/Unit_1_Pretest.pdf)
@@ -13,5 +13,5 @@ Here are some worksheets that will give you practice on various topics.
 
   - [Paint by Like Term](Unit_2/PaintByLikeTerm.pdf)
   
----
+***
 

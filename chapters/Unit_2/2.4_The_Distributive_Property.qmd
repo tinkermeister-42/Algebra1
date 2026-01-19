@@ -57,7 +57,7 @@ $$
 a(b+c) = ab + ac \qquad\text{and}\qquad a(b-c) = ab - ac
 $$
 
----
+***
 
 **Example 1:** Expanding expressions
 
@@ -94,7 +94,7 @@ To do this, distribute the 3. That is, multiply each term in $(x+2)$ by 3:
 </svg>
 ```
 
----
+***
 
 We can also see this with **algebra tiles**. The expression $x + 2$ looks like:
 
@@ -126,7 +126,7 @@ $$
 :::
 
 
----
+***
 
 ### 2.4.2 - Distributing with Negatives
 
@@ -157,7 +157,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 2.4.3 - Distribute, Then Combine Like Terms
 
@@ -184,10 +184,10 @@ When possible, you should simplify what is inside the parentheses before distrib
 **Example:**
 
 $$
-\begin{align*}
+\begin{aligned}
 2(4x + 3 - 2x - 1) &= \\
 2(2x + 2) &= 4x + 4
-\end{align*}
+\end{aligned}
 $$
 :::
 
@@ -205,15 +205,15 @@ $$
 Notice the "-" sign in front of the 5. We **must** multiply the second part of the expression by -5.
 
 $$
-\begin{align*}
+\begin{aligned}
 3(x - 2) \color{red}- 5\color{black}(4x + 5) &= \\
 3x - 6 \color{red}-20x - 25 \color{black} &= -17x - 31
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 ### 2.4.4 - Reverse It: Factoring Out a Common Factor
 
@@ -238,7 +238,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 2.4.5 - Check Your Work
 
@@ -264,39 +264,39 @@ To test whether he made a mistake, we can substitute a value for $x$.
 Let $x = \color{red}3$:
 
 $$
-\begin{align*}
+\begin{aligned}
 5(2(\color{red}3\color{black}) - 3) - (\color{red}3 \color{black}- 4) &= \\
 5(6 - 3) - (-1) &= \\
 5(3) + 1 &= \\
 15 + 1 &= 16
-\end{align*}
+\end{aligned}
 $$
 
 But...
 
 $$
-\begin{align*}
+\begin{aligned}
 9(\color{red}3\color{black}) - 7 &= \\ 
 27 - 7 &= 20
-\end{align*}
+\end{aligned}
 $$
 
 Since the substitution gives two different answers (20 and 16), we know that Paxton made a mistake. He forgot to distribute to all terms in the expression! Here is the correct answer.
 
 $$
-\begin{align*}
+\begin{aligned}
 5(2x - 3) - (x - 4) &= \\
 10x - 15 -x + 4 &= 9x - 11
-\end{align*}
+\end{aligned}
 $$
 
 If we substitute using $x = \color{red}3$ we get...
 
 $$
-\begin{align*}
+\begin{aligned}
 9(\color{red}3\color{black}) - 11 &= \\
  27 - 11 &= 16
- \end{align*}
+ \end{aligned}
 $$
 
 :::{.you-try title="Expand $-2(5 - 2x) + 3(x - 7)$. Check your work."}
@@ -304,11 +304,11 @@ $$
 **Step 1:** Apply the distributive property
 
 $$
-\begin{align*}
+\begin{aligned}
 -2(5 - 2x) + 3(x - 7) &= \\
 -2(5) -2(-2x) + 3(x) + 3(-7) &= \\
 &= -10 + 4x + 3x - 21
-\end{align*}
+\end{aligned}
 $$
 
 **Step 2:** Simplify by combining like terms
@@ -322,21 +322,21 @@ $$
 Let $x = \color{red}5$
 
 $$
-\begin{align*}
+\begin{aligned}
 -2(5 - 2(\color{red}5\color{black})) + 3(\color{red}5 \color{black} - 7) &= \\ 
 -2(5 - 10) + 3(-2) &= \\
 -2(-5) - 6 &= \\
 10 - 6 &= 4
-\end{align*}
+\end{aligned}
 $$
 
 And...
 
 $$
-\begin{align*}
+\begin{aligned}
 7(\color{red}5\color{black}) - 31 &= \\
 35 - 31 &= 4
-\end{align*}
+\end{aligned}
 $$
 
 Both expressions gave 4 when $x = 5$ so we feel good about our answer.
@@ -416,7 +416,7 @@ Explain why both methods lead to the same result.
 
 24. Use the distributive property to multiply $(3x - 1)(2x + 3)$. Show each step and simplify your result.
 
----
+***
 
 :::{.answers}
 **Expand using the distributive property**

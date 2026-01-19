@@ -49,7 +49,7 @@ b. Draw a number line that shows $-5 - 3 = -8$.
 <br>
 <br>
 
----
+***
 
 ## 1.2 – Factors, Multiples, and Prime Factorization
 

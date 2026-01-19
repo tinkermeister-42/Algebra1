@@ -43,7 +43,7 @@ Your boss says she will pay you \$100 to show up to work plus \$9 for every hour
 <br>
 <br>
 
----
+***
 
 ## 2.2 – Evaluating Expressions
 
@@ -87,7 +87,7 @@ Test whether $12x - 1$ is equivalent to $3(4x - 2) + 7$. Try **2 different value
 <br>
 <br>
 
----
+***
 
 ## 2.3 – Combining Like Terms
 

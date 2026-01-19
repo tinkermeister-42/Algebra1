@@ -47,7 +47,7 @@ You can think of it like a scale with an expression in each pan. When the value 
 
 ![](/images/Unit_3/Lesson_1/balance.png){width="300px" fig-align="center"}
 
----
+***
 
 **Example 1:** One-step equations with addition
 
@@ -76,10 +76,10 @@ By removing the weights from the left pan, we got the apple by itself, but now t
 ![](/images/Unit_3/Lesson_1/balance_x_plus_2_equal_5_3.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 a &= 5 \textcolor{red}{- 2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 The weight of the apple is **3**.
@@ -89,26 +89,26 @@ To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from 
 We don't usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.
 
 $$
-\begin{align*}
+\begin{aligned}
 a+2 &= 5 \\
 a+2 \textcolor{red}{- 2} &= 5 \textcolor{red}{- 2} \snminus{2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $x + 9 = 11$."}
 
 $$
-\begin{align*}
+\begin{aligned}
 x + 9 &= 11 \\
 x + 9 \textcolor{red}{- 9} &= 11 \textcolor{red}{- 9} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 **Example 2:** One-step equations with subtraction
 
@@ -119,26 +119,26 @@ Solve the equation $x - 5 = 8$.
 Here the operation is “subtract $5$,” so we use its **inverse**, “add $5$,” to undo it on both sides.
 
 $$
-\begin{align*}
+\begin{aligned}
 x - 5 &= 8 \\
 x - 5 \textcolor{red}{+ 5} &= 8 \textcolor{red}{+ 5} \snplus{5} \\
 x &= 13
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $x - 12 = 2$."}
 
 $$
-\begin{align*}
+\begin{aligned}
 x - 12 &= 2 \\
 x - 12 \textcolor{red}{+ 12} &= 2 \textcolor{red}{+ 12} \\
 x &= 14
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 ### 3.1.2 -- One-Step Equations (Multiplication and Division)
 
@@ -171,10 +171,10 @@ We have to **divide both sides** by 2 to maintain the balance.
 ![](/images/Unit_3/Lesson_1/balance_2x_equal_6_4.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 An apple has a weight of **3**.
@@ -184,24 +184,24 @@ Here is the solution showing just the algebra.
 $2a$ means “multiply by $2$,” so we use the **inverse operation**, “divide by $2$,” on both sides.
 
 $$
-\begin{align*}
+\begin{aligned}
 2a &= 6 \\
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $3x = 15$."}
 $$
-\begin{align*}
+\begin{aligned}
 3x &= 15 \\
 3x \textcolor{red}{\div 3} &= 15 \textcolor{red}{\div 3} \\
 x &= 5
-\end{align*}
+\end{aligned}
 $$
 :::
 
----
+***
 
 **Example 4:** One-step Equations With Division
 
@@ -212,20 +212,20 @@ Solve $\frac{a}{3} = 1$.
 $\dfrac{a}{3}$ means “divide by $3$,” so we use the **inverse operation**, “multiply by $3$,” on both sides.
 
 $$
-\begin{align*}
+\begin{aligned}
 \frac{a}{3} &= 1 \\
 \frac{a}{3} \textcolor{red}{\times 3} &= 1 \textcolor{red}{\times 3} \sntimes{3} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $\frac{x}{5}=10$"}
 $$
-\begin{align*}
+\begin{aligned}
 \frac{x}{5} &= 10 \\
 \frac{x}{5} \textcolor{red}{\times 5} &= 10 \textcolor{red}{\times 5} \\
 x &= 50
-\end{align*}
+\end{aligned}
 $$
 :::
 
@@ -242,7 +242,7 @@ Do the same move to **both** sides.
 
 :::
 
----
+***
 
 ### 3.1.3 - Checking a Solution 
 
@@ -250,18 +250,18 @@ When you solve an equation, it’s important to **check your solution**.
 This means plugging your answer back into the original equation to see if both sides are equal.  
 If they match, your solution is correct. If not, you made a mistake along the way.
 
----
+***
 
 **Example 5:** Checking your work
 
 Solve $3x = 21$ and check your answer.
 
 $$
-\begin{align*}
+\begin{aligned}
 3x &= 21 \\
 3x \textcolor{red}{\div 3} &= 21 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 7
-\end{align*}
+\end{aligned}
 $$
 
 
@@ -273,7 +273,7 @@ $$
 
 Since both sides equal 21, the solution $x = 7$ is correct. ✅
 
----
+***
 
 **Why Check?**
 
@@ -283,7 +283,7 @@ Since both sides equal 21, the solution $x = 7$ is correct. ✅
 
 Think of it like testing your answer with a calculator: the equation itself is the calculator, and you’re making sure it “works out.”
 
----
+***
 
 :::{.you-try-m title="Solve and Check"}
 
@@ -301,7 +301,7 @@ Think of it like testing your answer with a calculator: the equation itself is t
 
 :::
 
----
+***
 
 {{< practice >}}
 
@@ -316,7 +316,7 @@ Solve each equation.
 5. $-12 = k + 5$
 6. $r - (-8) = 2$
 
----
+***
 
 **Level 2 - Moderate**
 
@@ -329,7 +329,7 @@ Solve each equation. Be careful with negatives and decimals.
 11. $\dfrac{z}{7} = -2$
 12. $x - 15 = -23$
 
----
+***
 
 **Level 3 - Harder**
 
@@ -346,7 +346,7 @@ For each, **solve and then check your solution** by substituting back into the o
 21. $2.5n = 0.75$
 22. $-18 = 6 + p$
 
----
+***
 
 **Challenge Problems**
 
@@ -358,7 +358,7 @@ Set up and solve each situation with a one-step equation.
 24. **Distance problem:**
     A car is traveling at 65 miles per hour. After $h$ hours, the car traveled 325 miles. Write and solve an equation to find how many hours the trip was.
 
----
+***
 
 :::{.answers}
 

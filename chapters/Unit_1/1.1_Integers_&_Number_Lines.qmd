@@ -78,7 +78,7 @@ Here are a few examples:
 
 
 
----
+***
 
 ### 1.1.2 - Understanding Opposites
 
@@ -93,7 +93,7 @@ These are called {{< glink opposite >}} numbers. They are the **same distance** 
 The opposite of zero is zero. Zero is the only number that is its own opposite!
 :::
 
----
+***
 
 ### 1.1.3 - What Is Absolute Value?
 
@@ -120,7 +120,7 @@ You can compute your distances by adding |-5| + |3|, by |-5 - 3|, or by |3 - (-5
 Absolute value is **never** negative, because distance is never negative.
 :::
 
----
+***
 
 
 ### 1.1.4 - Comparing Integers
@@ -145,7 +145,7 @@ It is easy to get confused here. When we say which number is "bigger" (or greate
 ![](/images/Unit_1/Lesson_1/compare_3_to_neg8.png)
 :::
 
----
+***
 
 ### 1.1.5 - Number Lines and Arithmetic
 
@@ -203,7 +203,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
    ![](/images/Unit_1/Lesson_1/problem_2.png)
 
----
+***
 
 **Opposites**
 
@@ -215,7 +215,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
 6. Does 3.5 have an opposite? If yes, what is it?
 
----
+***
 
 **Comparing Numbers**
 
@@ -247,7 +247,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
  
     b. The year you were born and the current year
 
----
+***
 
 **Addition and Subtraction**
 
@@ -262,7 +262,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
     d. $3 - (-3)$
 
 
----
+***
 
 **Word Problems**
 
@@ -274,7 +274,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
     c. Your bank account is at -\$8. You deposit \$5. What is your new balance?
 
----
+***
 
 :::{.answers}
 
@@ -286,7 +286,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
 3. -7
 
----
+***
 
 **Working With Number Lines**
 
@@ -305,7 +305,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
    
    ![](/images/Unit_1/Lesson_1/problem_2.png)
 
----
+***
 
 **Opposites**
 
@@ -316,7 +316,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
    ![](/images/Unit_1/Lesson_1/answer_5.png)
 6. Yes (the opposite is -3.5)
 
----
+***
 
 **Comparing Numbers**
 
@@ -339,7 +339,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
        
        ![](/images/Unit_1/Lesson_1/answer_12_b.png)
 
----
+***
 
 **Addition and Subtraction**
 
@@ -356,7 +356,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
        ![](/images/Unit_1/Lesson_1/answer_13_d.png)
 
----
+***
 
 **Word Problems**
 

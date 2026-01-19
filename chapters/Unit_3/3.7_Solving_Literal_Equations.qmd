@@ -8,7 +8,7 @@ That’s what we call a **literal equation**.
 
 Literal equations use letters (or “literals”) to represent variables, so solving them means isolating one variable in terms of the others.
 
----
+***
 
 ::: {.objectives}
 
@@ -51,36 +51,36 @@ You can think of it as a formula — like $A = lw$ for the area of a rectangle o
 
 When we solve a literal equation, our goal is to **isolate one variable** using the same inverse operations we use in regular equations.
 
----
+***
 
 **Example 1:** Finding the width
 
 A rectangle has area $A = lw$. Solve for the width $w$.
 
 $$
-\begin{align*}
+\begin{aligned}
 A &= lw \\
 \\
 A \textcolor{red}{\div l} &= lw \textcolor{red}{\div l} \sndiv{l} \\
 \frac{A}{l} &= w
-\end{align*}
+\end{aligned}
 $$
 
 So $w = \dfrac{A}{l}$.
 
----
+***
 
 **Example 2:** Finding the time
 
 Distance is equal to the rate times the time $d = rt$. Solve for the time $t$.
 
 $$
-\begin{align*}
+\begin{aligned}
 d &= rt \\
 \\
 d \textcolor{red}{\div r} &= rt \textcolor{red}{\div r} \sndiv{r} \\
 \frac{d}{r} &= t
-\end{align*}
+\end{aligned}
 $$
 
 So $t = \dfrac{d}{r}$.
@@ -88,12 +88,12 @@ So $t = \dfrac{d}{r}$.
 :::{.you-try title="Solve $V = IR$ for $I$"}
 
 $$
-\begin{align*}
+\begin{aligned}
 V &= IR \\
 \\
 V \textcolor{red}{\div R} &= IR \textcolor{red}{\div R} \sndiv{R} \\
 \tfrac{V}{R} &= I
-\end{align*}
+\end{aligned}
 $$
 
 So $I = \tfrac{V}{R}$.
@@ -105,14 +105,14 @@ So $I = \tfrac{V}{R}$.
 Sometimes a variable appears in a longer expression.
 We can move terms using addition or subtraction before dividing or multiplying.
 
----
+***
 
 **Example 3:** Finding the width
 
 A rectangle has perimeter $P = 2l + 2w$. Solve for the width $w$.
 
 $$
-\begin{align*}
+\begin{aligned}
 P &= 2l + 2w \\
 \\
 P \textcolor{red}{-2l} &= 2l + 2w \textcolor{red}{-2l} \snminus{2l} \\
@@ -120,19 +120,19 @@ P - 2l &= 2w \\
 \\
 (P - 2l) \textcolor{red}{\div 2} &= 2w \textcolor{red}{\div 2} \sndiv{2} \\
 \frac{P - 2l}{2} &= w
-\end{align*}
+\end{aligned}
 $$
 
 So $w = \dfrac{P - 2l}{2}$.
 
----
+***
 
 **Example 4:** A linear equation
 
 A line has the equation $y = mx + b$. Solve for $x$.
 
 $$
-\begin{align*}
+\begin{aligned}
 y &= mx + b \\
 \\
 y \textcolor{red}{-b} &= mx + b \textcolor{red}{-b} \snminus{b} \\
@@ -140,7 +140,7 @@ y - b &= mx \\
 \\
 (y - b) \textcolor{red}{\div m} &= mx \textcolor{red}{\div m} \sndiv{m} \\
 \frac{y - b}{m} &= x
-\end{align*}
+\end{aligned}
 $$
 
 So $x = \dfrac{y - b}{m}$.
@@ -148,12 +148,12 @@ So $x = \dfrac{y - b}{m}$.
 :::{.you-try title="Solve $3a + b = 2c$ for $b$"}
 
 $$
-\begin{align*}
+\begin{aligned}
 3a + b &= 2c \\
 \\
 3a + b \textcolor{red}{-3a} &= 2c \textcolor{red}{-3a} \snminus{3a} \\
 b &= 2c - 3a
-\end{align*}
+\end{aligned}
 $$
 
 So $b = 2c - 3a$.
@@ -164,14 +164,14 @@ So $b = 2c - 3a$.
 
 Now let’s look at equations that take more than one operation to isolate the variable.
 
----
+***
 
 **Example 5:** A two step equation
 
 Solve $V = Bh + 12$ for $h$.
 
 $$
-\begin{align*}
+\begin{aligned}
 V &= Bh + 12 \\
 \\
 V \textcolor{red}{-12} &= Bh + 12 \textcolor{red}{-12} \snminus{12} \\
@@ -179,17 +179,17 @@ V - 12 &= Bh \\
 \\
 (V - 12) \textcolor{red}{\div B} &= Bh \textcolor{red}{\div B} \sndiv{B} \\
 \frac{V - 12}{B} &= h
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 6:** A fractional coefficient
 
 Solve $A = \frac{1}{2}bh + 3$ for $b$.
 
 $$
-\begin{align*}
+\begin{aligned}
 A &= \frac{1}{2}bh + 3 \\
 \\
 A \textcolor{red}{-3} &= \frac{1}{2}bh + 3 \textcolor{red}{-3} \snminus{3} \\
@@ -200,10 +200,10 @@ A - 3 &= \frac{1}{2}bh \\
 \\
 2(A - 3) \textcolor{red}{\div h} &= bh \textcolor{red}{\div h} \sndiv{h} \\
 \frac{2(A - 3)}{h} &= b
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 7:** Converting Celsius to Fahrenheit.
 
@@ -211,7 +211,7 @@ The formula for convering form Celsius to Fahrenheit is $C = \frac{5}{9}(F - 32)
 Solve for the temperature in Fahrenheit $F$.
 
 $$
-\begin{align*}
+\begin{aligned}
 C &= \frac{5}{9}(F - 32) \\
 \\
 C \textcolor{red}{\times \frac{9}{5}} &= \frac{5}{9}(F - 32) \textcolor{red}{\times \frac{9}{5}} \sntimes{\frac{9}{5}} \\
@@ -219,14 +219,14 @@ C \textcolor{red}{\times \frac{9}{5}} &= \frac{5}{9}(F - 32) \textcolor{red}{\ti
 \\
 \frac{9}{5}C \textcolor{red}{+ 32} &= F - 32 \textcolor{red}{+ 32} \snplus{32} \\
 F &= \frac{9}{5}C + 32
-\end{align*}
+\end{aligned}
 $$
 
 
 :::{.you-try title="Solve $PV = nR(T + 2)$ for $T$."}
 
 $$
-\begin{align*}
+\begin{aligned}
 PV &= nR(T + 2) \\
 \\
 PV \textcolor{red}{\div nR} &= nR(T + 2) \textcolor{red}{\div nR} \sndiv{nR} \\
@@ -234,7 +234,7 @@ PV \textcolor{red}{\div nR} &= nR(T + 2) \textcolor{red}{\div nR} \sndiv{nR} \\
 \\
 \tfrac{PV}{nR} \textcolor{red}{-2} &= T + 2 \textcolor{red}{-2} \snminus{2} \\
 \tfrac{PV}{nR} - 2 &= T
-\end{align*}
+\end{aligned}
 $$
 
 So $T = \tfrac{PV}{nR} - 2$.
@@ -291,7 +291,7 @@ So $T = \tfrac{PV}{nR} - 2$.
 
 23. $T = \frac{a + b + c}{3}$; solve for $b$
 
----
+***
 
 **Challenge Problems**
 
@@ -302,7 +302,7 @@ So $T = \tfrac{PV}{nR} - 2$.
     where $C$ is total cost, $n$ is the number of items, $p$ is the price per item, and $f$ is a fixed setup fee.
     Solve for $p$, then explain what happens to $p$ as $n$ increases.
 
----
+***
 
 :::{.answers}
 

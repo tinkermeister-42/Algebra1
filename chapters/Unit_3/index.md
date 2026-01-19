@@ -4,7 +4,7 @@ Welcome to **Unit 3!** Here we move from working *with expressions* to solving *
 Instead of just simplifying or evaluating, you’ll learn how to **find the value of a variable** that makes an equation true.
 You’ll also see what happens when there’s *no* solution, or when *every* value works.
 
----
+***
 
 ## What You’ll Learn
 
@@ -16,7 +16,7 @@ By the end of this unit, you’ll be able to:
 * **Model real-world problems** with equations and inequalities, and **graph** the range of possible answers.
 * **Rearrange literal equations** (formulas) to isolate any variable, just like rearranging $V = IR$ in physics or $A = lw$ in geometry.
 
----
+***
 
 ## Topics in This Unit
 
@@ -41,4 +41,4 @@ Represent ranges of solutions on a number line and remember to **flip the sign**
 [**Solving Literal Equations**](3.7_Solving_Literal_Equations.html)
 Work with formulas like $A = lw$ or $C = 2\pi r$. Rearrange them to solve for any variable you need.
 
----
+***

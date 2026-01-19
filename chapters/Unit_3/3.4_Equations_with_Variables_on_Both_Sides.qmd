@@ -26,7 +26,7 @@ In this lesson, you’ll learn how to bring all the variable terms together, sim
 3. Swanhilda solved the equation $3(x-7)=3$ using the following steps. Did she solve it correctly?
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{3}(x - 7) &= 3 \\
 3x - 21 &= 3 \\
 \\
@@ -35,7 +35,7 @@ $$
 \\
 3x \textcolor{red}{\div 3} &= 3 \textcolor{red}{\div 3} \\
 x &= 1
-\end{align*}
+\end{aligned}
 $$
 
 
@@ -64,10 +64,10 @@ To find the weight of an apple, we need apples on one side and weights on the ot
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_2.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 3a + 1 &= a + 7 \textcolor{red}{- a}\\
 3a + 1 &= 7 \quad \textcolor{red}{\text{(false: not done to both sides)}}
-\end{align*}
+\end{aligned}
 $$
 
 The scale lost its balance! Always remember to **do the same thing to both sides** of the equation!
@@ -83,10 +83,10 @@ Instead of removing an apple from just the right pan, we remove one from both pa
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_3.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 3a + 1 \textcolor{red}{- a} &= a + 7 \textcolor{red}{- a} \\
 2a + 1 &= 7
-\end{align*}
+\end{aligned}
 $$
 
 Now we just have a two-step equation!
@@ -96,10 +96,10 @@ Now we just have a two-step equation!
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_4.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \\
 2a &= 6
-\end{align*}
+\end{aligned}
 $$
 
 **Step 2:** Take half of what is in each pan.
@@ -107,15 +107,15 @@ $$
 ![](/images/Unit_3/Lesson_4/Balance_2a_plus_1_equal_a_plus_7_5.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 An apple has a weight of **3**.
 
----
+***
 
 **Example 2:** Apples to algebra
 
@@ -124,7 +124,7 @@ Now let's try solving one with just algebra. Instead of apples, we have x's. Ins
 Solve $4x + 5 = 2x + 9$.
 
 $$
-\begin{align*}
+\begin{aligned}
 4x + 5 &= 2x + 9 \\
 \\
 4x + 5 \textcolor{red}{- 2x} &= 2x + 9 \textcolor{red}{- 2x} \snminus{2x} \\
@@ -135,12 +135,12 @@ $$
 \\
 2x \textcolor{red}{\div 2} &= 4 \textcolor{red}{\div 2} \sndiv{2} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $5x + 3 = 2x + 12$."}
 $$
-\begin{align*}
+\begin{aligned}
 5x + 3 &= 2x + 12 \\
 \\
 5x + 3 \textcolor{red}{- 2x} &= 2x + 12 \textcolor{red}{- 2x} \snminus{2x} \\
@@ -151,11 +151,11 @@ $$
 \\
 3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 3
-\end{align*}
+\end{aligned}
 $$
 :::
 
----
+***
 
 ### 3.4.2 - Simplifying Before Solving
 
@@ -165,14 +165,14 @@ Not every equation is ready to solve right away. Sometimes, each side of the equ
 2. Get all variables on the **left side**.
 3. Solve as usual.
 
----
+***
 
 **Example 3:** Simplifying with distribution
 
 Solve $2(x + 3) = 3x + 1$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{2}(x + 3) &= 3x + 1 \stepnote{Distribute the 2} \\
 2x + 6 &= 3x + 1  \\
 \\
@@ -184,17 +184,17 @@ $$
 \\
 -x \textcolor{red}{\div -1} &= 1 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 5
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 4:** Simplifying by combining like terms
 
 Solve $4x + 6 + x = 2x + 12$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{blue}{4x} + 6 + \textcolor{blue}{x} &= 2x + 12 \stepnote{Combine like terms} \\
 \textcolor{blue}{5x} + 6 &= 2x + 12  \\
 \\
@@ -206,17 +206,17 @@ $$
 \\
 3x \textcolor{red}{\div 3} &= 6 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 5:** Simplifying with distribution and like terms
 
 Solve $3(x - 2) + 4 = 2(x + 1)$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{3}(x - 2) + 4 &= \textcolor{red}{2}(x + 1) \stepnote{Distribute both sides}\\
 3x - 6 + 4 &= 2x + 2  \\
 \\
@@ -228,13 +228,13 @@ x - 2 &= 2 \\
 \\
 x - 2 \textcolor{red}{+ 2} &= 2 \textcolor{red}{+ 2} \snplus{2} \\
 x &= 4
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $2(x + 4) = x + 10$."}
 
 $$
-\begin{align*}
+\begin{aligned}
 2(x + 4) &= x + 10 \stepnote{Distribute the 2} \\
 2x + 8 &= x + 10 \\
 \\
@@ -243,7 +243,7 @@ x + 8 &= 10 \\
 \\
 x + 8 \textcolor{red}{- 8} &= 10 \textcolor{red}{- 8} \snminus{8} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 :::
@@ -264,13 +264,13 @@ When solving an equation with variables on both sides:
 
 :::
 
----
+***
 
 ## 3.4.3 - Word Problems with Variables on Both Sides
 
 When two different plans or expressions both describe the **same total**, we often get equations with the variable on **both sides**. Simplify each side (distribute, combine like terms), then move all variable terms to one side.
 
----
+***
 
 **Example 6:** Two pay plans
 
@@ -286,7 +286,7 @@ $$
 Solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 15h + 6 \textcolor{red}{-12h} &= 12h + 18 \textcolor{red}{-12h} \snminus{12h} \\
 3h + 6 &= 18 \\
 \\
@@ -295,12 +295,12 @@ $$
 \\
 3h \textcolor{red}{\div 3} &= 12 \textcolor{red}{\div 3} \sndiv{3} \\
 h &= 4
-\end{align*}
+\end{aligned}
 $$
 
 They earn the same after **4 hours**.
 
----
+***
 
 **Example 7:** Equal perimeters
 
@@ -320,7 +320,7 @@ $$
 Distribute and simplify:
 
 $$
-\begin{align*}
+\begin{aligned}
 2(2x + 8) &= 2(3x + 2) \stepnote{Distribute both sides} \\
 4x + 16 &= 6x + 4 \\
 \\
@@ -332,12 +332,12 @@ $$
 \\
 -2x \textcolor{red}{\div -2} &= -12 \textcolor{red}{\div -2} \sndiv{-2} \\
 x &= 6
-\end{align*}
+\end{aligned}
 $$
 
 So **$x = 6$**.
 
----
+***
 
 **Example 8:** Two vendors, same total
 
@@ -367,7 +367,7 @@ $$
 Distribute and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 18(s - 2) + 12 &= 15s + 42 \stepnote{Distribute the 18} \\
 18s - 36 + 12 &= 15s + 42 \\
 \\
@@ -382,12 +382,12 @@ $$
 \\
 3s \textcolor{red}{\div 3} &= 66 \textcolor{red}{\div 3} \sndiv{3} \\
 s &= 22
-\end{align*}
+\end{aligned}
 $$
 
 The totals match at **22 sweatshirts**.
 
----
+***
 
 :::{.you-try-m title="Break-Even Subscriptions"}
 Plan A costs \$8 per month plus \$3 per premium movie.
@@ -403,7 +403,7 @@ $$
 $$
 
 $$
-\begin{align*}
+\begin{aligned}
 8 + 3m \textcolor{red}{-5m} &= 2 + 5m \textcolor{red}{-5m} \snminus{5m} \\
 8 - 2m &= 2 \\
 \\
@@ -412,13 +412,13 @@ $$
 \\
 -2m \textcolor{red}{\div -2} &= -6 \textcolor{red}{\div -2} \sndiv{-2} \\
 m &= 3
-\end{align*}
+\end{aligned}
 $$
 
 They match at **3 movies**.
 :::
 
----
+***
 
 
 

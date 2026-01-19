@@ -2,10 +2,10 @@
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
----
+***
 
 ### Expressions And Their Parts
----
+***
 
 1. Identify the parts of the expression:
    $$
@@ -37,7 +37,7 @@
 
 
 ### Evaluating and Simplifying Expressions
----
+***
 
 **Simplify** each expression and then **evaluate**.
 
@@ -66,7 +66,7 @@
 
 
 ### Functions
----
+***
 
 5. Use the function $f(x) = 5(3x - 1) + x$ to answer the following questions.
    <br>

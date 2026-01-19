@@ -11,7 +11,7 @@ It focuses on understanding parabolas, graphing quadratics, and solving quadrati
 * Solving quadratics by completing the square  
 * Using the quadratic formula and the discriminant  
 
----
+***
 
 ### Introduction to Quadratic Functions (6.1)
 
@@ -51,7 +51,7 @@ State the domain and range.
 
 State the domain and range.
 
----
+***
 
 ### Graphing Quadratics (6.2)
 
@@ -81,7 +81,7 @@ Identify the vertex and axis of symmetry.
 
 Identify the $x$-intercepts.
 
----
+***
 
 ### Solving Quadratic Equations by Factoring (6.3)
 
@@ -101,7 +101,7 @@ Solve each equation.
 
 19. $2x^3 + 8x^2 - 10x= 0$  
 
----
+***
 
 ### Completing the Square (6.4)
 
@@ -117,7 +117,7 @@ Solve each equation by completing the square.
 
 24. $(x + 2)^2 = -5$
 
----
+***
 
 ### The Quadratic Formula (6.5)
 
@@ -133,7 +133,7 @@ Solve each equation using the quadratic formula.
 
 29. $x^2 - 2x + 5 = 0$
 
----
+***
 
 :::{.answers}
 

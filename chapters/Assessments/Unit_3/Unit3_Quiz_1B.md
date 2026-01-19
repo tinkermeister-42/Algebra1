@@ -2,7 +2,7 @@
 
 **Name: ____________________________**
 
----
+***
 
 ## 3.1 – One-Step Equations
 
@@ -14,7 +14,7 @@
 
 3. $\dfrac{z}{-4} = -7$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -30,7 +30,7 @@
 
 7. $0.4b + 1.6 = 5.2$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -44,7 +44,7 @@
 
 10. $3(2a + 1) - a = 18$ <br><br><br><br><br>
 
----
+***
 
 **Real-World Problem**
 

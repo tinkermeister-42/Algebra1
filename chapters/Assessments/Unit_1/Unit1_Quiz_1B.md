@@ -49,7 +49,7 @@ b. Draw a number line that shows $6 - 3 = 3$.
 <br>
 <br>
 
----
+***
 
 ## 1.2 – Factors, Multiples, and Prime Factorization
 

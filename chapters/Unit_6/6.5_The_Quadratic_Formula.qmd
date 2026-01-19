@@ -133,7 +133,7 @@ Rather than repeating this completing-the-square process every time we solve a q
 
 This formula is called the **quadratic formula**, and it works for **every** quadratic equation.
 
----
+***
 
 ### 6.5.2 - Solving Equations with the Quadratic Formula
 
@@ -157,7 +157,7 @@ The key steps are always the same:
 2. Substitute carefully
 3. Simplify step by step
 
----
+***
 
 **Example 1**
 
@@ -185,7 +185,7 @@ $$
 
 This equation does not factor, but the quadratic formula still gives exact solutions.
 
----
+***
 
 **Example 2**
 
@@ -213,7 +213,7 @@ $$
 x = 2 \quad \text{and} \quad x = \frac{1}{2}
 $$
 
----
+***
 
 **Example 3**
 
@@ -237,7 +237,7 @@ $$
 
 Since the square root is not real, this equation has **no real solutions**.
 
----
+***
 
 :::{.you-try title="Solve $4x^2 - 5x - 12 = 0$ using the quadratic formula."}
 
@@ -250,10 +250,10 @@ a = 4, \quad b = -5, \quad c = -12
 $$
 
 $$
-\begin{align*}
+\begin{aligned}
 x &= \frac{-(-5) \pm \sqrt{(-5)^2 - 4(4)(-12)}}{2(4)} \\
 x &= \frac{5 + \sqrt{217}}{8} \quad \text{and} \quad x = \frac{5 - \sqrt{217}}{8}
-\end{align*}
+\end{aligned}
 $$
 
 :::
@@ -276,7 +276,7 @@ This happens because:
 * the square root of zero is zero
 * the square root of a negative number is not real
 
----
+***
 
 #### What the Discriminant Tells Us
 
@@ -291,7 +291,7 @@ This happens because:
 
 These cases match what we see on the graph of a parabola.
 
----
+***
 
 **Example 4:** Two solutions
 
@@ -311,7 +311,7 @@ The discriminant is positive, so the quadratic has **two real solutions**. The p
 
 ![](/images/Unit_6/Lesson_5/Example4.png){width="350px" fig-align="center"}
 
----
+***
 
 **Example 5:** One solution
 
@@ -331,7 +331,7 @@ The discriminant is zero, so the quadratic has **one real solution**. The parabo
 
 ![](/images/Unit_6/Lesson_5/Example5.png){width="350px" fig-align="center"}
 
----
+***
 
 **Example 6:** No solution
 
@@ -351,7 +351,7 @@ The discriminant is negative, so the quadratic has **no real solutions**. The pa
 
 ![](/images/Unit_6/Lesson_5/Example6.png){width="350px" fig-align="center"}
 
----
+***
 
 :::{.note title="Is it factorable?"}
 The discriminant can help you decide if a quadratic can be factorable. If the discriminant is a perfect square, the quadratic can be factored over the integers. For example:
@@ -375,7 +375,7 @@ The discriminant is positive so there are two real solutions.
 
 :::
 
----
+***
 
 {{< practice >}}
 
@@ -400,7 +400,7 @@ Solve each equation for $x$.
 
 8.  $\quad 9x^2 + 12x + 4 = 0$
 
----
+***
 
 **Level 2 - Intermediate**
 
@@ -422,7 +422,7 @@ Identify the number of solutions and then solve for $x$.
 
 16.  $\quad 2x^2 + 4x + 5 = 0$
 
----
+***
 
 **Level 3 - Challenging**
 
@@ -446,7 +446,7 @@ Identify the number of solutions and then solve for $x$ (You may need to rearran
 
 25.  $\quad 3x^2 + 4x + 7 = 0$
 
----
+***
 
 **Challenge Problems**
 
@@ -464,7 +464,7 @@ Identify the number of solutions and then solve for $x$ (You may need to rearran
 
     Write the original quadratic equation in standard form.
 
----
+***
 
 
 :::{.answers}

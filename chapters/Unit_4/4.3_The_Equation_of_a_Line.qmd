@@ -50,7 +50,7 @@ Starting at $(0, 1)$, move right 3 and up 1 to reach $(3, 2)$.
 
 :::
 
----
+***
 
 ### 4.3.2 - Discovering Intercepts
 
@@ -81,7 +81,7 @@ Those are called **intercepts**.
 > The **x-intercept** is where the line crosses the x-axis → it always has the form $(x, 0)$.
 > The **y-intercept** is where the line crosses the y-axis → it always has the form $(0, y)$.
 
----
+***
 
 :::{.you-try title="Find the y-intercept for ${f}(x) = 2x - 4$"}
 
@@ -101,10 +101,10 @@ Find the x- and y-intercepts of $y = x - 5$.
 **x-intercept:** set $y = 0$
 
 $$
-\begin{align*}
+\begin{aligned}
 0 &= x - 5\\
 x &= 5
-\end{align*}
+\end{aligned}
 $$
 
 So the x-intercept is $(5, 0)$.
@@ -121,10 +121,10 @@ So the y-intercept is $(0, -5)$.
 
 **x-intercept:**
 $$
-\begin{align*}
+\begin{aligned}
 0 &= 2x + 1\\
 x &= -\tfrac{1}{2}
-\end{align*}
+\end{aligned}
 $$
 $(-\tfrac{1}{2}, 0)$
 
@@ -144,7 +144,7 @@ To find intercepts:
 
 :::
 
----
+***
 
 ### 4.3.4 - The Equation of a Line
 
@@ -163,7 +163,7 @@ where
 
 This is called the {{< glink "slope-intercept form" >}} of a line.
 
----
+***
 
 **Example 4:** Graph from an equation
 
@@ -174,7 +174,7 @@ Then use the slope $m = \tfrac{2}{3}$ → up 2, right 3.
 
 ![](/images/Unit_4/Lesson_3/Example4.png){width="350px" fig-align="center"}
 
----
+***
 
 **Example 5:**  Integer slope
 
@@ -233,7 +233,7 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
 
     ![](/images/Unit_4/Lesson_3/Blank10_10.png){width=300 fig-align="center"}
 
----
+***
 
 **Find Intercepts**
 
@@ -243,7 +243,7 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
 
 8. Find the intercepts of $2x + 3y = 12$ (*Hint: solve for y first*).
 
----
+***
 
 **Interpret and Compare Lines**
 
@@ -262,7 +262,7 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
 
 13. Which is steeper: $y = \tfrac{1}{2}x + 1$ or $y = 4x - 3$? Explain how you know.
 
----
+***
 
 **Challenge Problems**
 

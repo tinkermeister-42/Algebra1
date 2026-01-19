@@ -6,7 +6,7 @@ Math is like that too. An idea can be written many different ways. $2(x+3)$ and 
 
 In this lesson, you’ll learn how to recognize when expressions are equivalent by simplifying, using substitution, and thinking logically. This idea is a big deal in Algebra — especially when we start solving equations in Unit 3.
 
----
+***
 
 :::{.objectives}
 - [ ] I can say what it means for two expressions to be equivalent.
@@ -14,13 +14,13 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 - [ ] I can tell the difference between testing and proving equivalence.
 :::
 
----
+***
 
 :::{.vocab}
 {{< glink "combine like terms" >}}, {{< glink "equivalent expressions" >}}, {{< glink evidence >}}, {{< glink expression >}}, {{< glink simplify >}}, {{< glink substitute >}}, {{< glink variable >}}
 :::
 
----
+***
 
 {{< warmup >}}
 
@@ -45,7 +45,7 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 | $-1$ |  ___      |  ___      |
 
 
----
+***
 
 {{< learn >}}
 
@@ -53,7 +53,7 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 Two expressions are **equivalent** if they have the **same value for every input** (for all allowed values of the variable). They do **not** have to look the same.
 
----
+***
 
 **Example 1:** Same value, different look
 
@@ -76,7 +76,7 @@ The outputs match. This is {{< glink evidence >}} that they are equivalent.
 Testing a few values gives **evidence**, not a full **proof**. A proof shows it's true for **all** inputs.
 :::
 
----
+***
 
 **Example 2:** Not equivalent (by substitution)
 
@@ -98,7 +98,7 @@ Since we got different outputs for the same input, the expressions are **not** e
 
 > When we test a value and the results are different, we call this a {{< glink counterexample >}}.
 
----
+***
 
 **Example 3:** Matching sometimes isn't enough
 
@@ -114,7 +114,7 @@ $$
 
 So "matching a few times" is **only evidence**, not a guarantee.
 
----
+***
 
 :::{.you-try-m title="Test quickly: evidence or counterexample?"}
 Pick **two** easy inputs ($0$, $1$, $2$, or $-1$) for each pair. 
@@ -146,7 +146,7 @@ Suppose we test $x=1$ and $x=2$:
 Yes. You can never prove that two expressions **are** equivalent by testing values, but one counterexample is enough to prove they **are not** equivalent.
 :::
 
----
+***
 
 ### 2.6.2 Proving Equivalence
 
@@ -154,7 +154,7 @@ We've talked a lot about **testing** whether expressions are equivalent. But how
 
 Two expressions are equivalent if they give the same result for every value of their variables. But we can't test every value. To **prove** equivalence, use algebra to rewrite each expression until they match.
 
----
+***
 
 **Example 4:** (Distribute)
 
@@ -166,7 +166,7 @@ $$
 
 They match.
 
----
+***
 
 **Example 5:** (Combine Like Terms)
 
@@ -178,29 +178,29 @@ $$
 
 They match.
 
----
+***
 
 **Example 6:** (Simplify both sides)
 
 Prove $2(x - 1) + 3x$ and $2x + 3(x - 2) + 4$ are equivalent.
 
 $$
-\begin{align*}
+\begin{aligned}
 2(x - 1) + 3x &= 2x - 2 + 3x \\
 &= 5x - 2
-\end{align*}
+\end{aligned}
 $$
 
 $$
-\begin{align*}
+\begin{aligned}
 2x + 3(x - 2) + 4 &= 2x + 3x - 6 + 4 \\
 &= 5x - 2
-\end{align*}
+\end{aligned}
 $$
 
 They match.
 
----
+***
 
 **Example 7:** (Factor)
 
@@ -214,7 +214,7 @@ $$
 
 The expressions are equivalent.
 
----
+***
 
 We can also prove expressions are **not** equivalent using algebra.
 
@@ -228,17 +228,17 @@ $$
 
 The do not match. The expressions are **not** equivalent.
 
----
+***
 
 :::{.you-try title="Prove $3 - 2(x + 1)$ and $x + 1 - 3x$ are equivalent."}
 
 Simplify both expressions.
 
 $$
-\begin{align*}
+\begin{aligned}
 3 - 2(x + 1) &= 3 - 2x - 2 \\
 &= 1 - 2x
-\end{align*}
+\end{aligned}
 $$
 
 $$
@@ -248,7 +248,7 @@ $$
 They match, so the expressions are equivalent.
 :::
 
----
+***
 
 {{< practice >}}
 

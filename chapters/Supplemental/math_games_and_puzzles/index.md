@@ -2,7 +2,7 @@
 
 Explore these fun and challenging math activities! Click on any worksheet to open the PDF.
 
----
+***
 
 ## 🔍 Hidden Math Problems
 
@@ -11,7 +11,7 @@ Explore these fun and challenging math activities! Click on any worksheet to ope
 
 [Download Worksheet](FindTheHiddenMathProblems.pdf)
 
----
+***
 
 ## 🤑 Tax Man
 
@@ -24,6 +24,6 @@ Can your group end the game with more money than the Taxman?
 
 If you really want to go deep into strategies for beating the tax man, check out [this article](https://www.dsm.fordham.edu/~moniot/taxman-game.pdf) written by a professional mathematician. That's right, mathematicians get to play games for a living!
 
----
+***
 
 Want to suggest an activity or submit your own? Let me know!

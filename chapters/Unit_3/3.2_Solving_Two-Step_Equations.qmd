@@ -54,10 +54,10 @@ Now we are ready to undo the multiplication.
 ![](/images/Unit_3/Lesson_2/balance_2x_plus_1_equal_7_5.png){width="300px" fig-align="center"}
 
 $$
-\begin{align*}
+\begin{aligned}
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 An apple has a weight of **3**.
@@ -65,7 +65,7 @@ An apple has a weight of **3**.
 Here are the steps showing just the algebra.
 
 $$
-\begin{align*}
+\begin{aligned}
 2a + 1 &= 7 \\
 \\
 2a + 1 \textcolor{red}{-1} &= 7 \textcolor{red}{-1} \snminus{1} \\
@@ -73,12 +73,12 @@ $$
 \\
 2a \textcolor{red}{\div 2} &= 6 \textcolor{red}{\div 2} \sndiv{2} \\
 a &= 3
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $3x - 2 = 7$."}
 $$
-\begin{align*}
+\begin{aligned}
 3x - 2 &= 7 \\
 \\
 3x - 2 \textcolor{red}{+2} &= 7 \textcolor{red}{+2} \\
@@ -86,7 +86,7 @@ $$
 \\
 3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \\
 x &= 3
-\end{align*}
+\end{aligned}
 $$
 :::
 
@@ -97,7 +97,7 @@ Solve $\frac{x}{8} - 3 = 7$.
 This works the same way. First we undo the subtraction. Then we undo the division.
 
 $$
-\begin{align*}
+\begin{aligned}
 \frac{x}{8} - 3 &= 7 \\
 \\
 \frac{x}{8} - 3 \textcolor{red}{+3} &= 7 \textcolor{red}{+3} \snplus{3} \\
@@ -105,13 +105,13 @@ $$
 \\
 \frac{x}{8} \textcolor{red}{\times 8} &= 10 \textcolor{red}{\times 8} \sntimes{8} \\
 x &= 80
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Solve $\frac{x}{2} + 6 = 10$."}
 
 $$
-\begin{align*}
+\begin{aligned}
 \frac{x}{2} + 6 &= 10 \\
 \\
 \frac{x}{2} + 6 \textcolor{red}{-6} &= 10 \textcolor{red}{-6} \\
@@ -119,7 +119,7 @@ $$
 \\
 \frac{x}{2} \textcolor{red}{\times 2} &= 4 \textcolor{red}{\times 2} \\
 x &= 8
-\end{align*}
+\end{aligned}
 $$
 
 :::
@@ -129,7 +129,7 @@ $$
 Solve $-x + 5 = 3$.
 
 $$
-\begin{align*}
+\begin{aligned}
 -x + 5 &= 3 \\
 \\
 -x + 5 \textcolor{red}{-5} &= 3 \textcolor{red}{-5} \snminus{5} \\
@@ -137,7 +137,7 @@ $$
 \\
 -x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 
@@ -147,7 +147,7 @@ When a variable has no coefficient, the coefficient is $1$. When the variable ha
 
 :::{.you-try title="Solve $3 - x = 7$"}
 $$
-\begin{align*}
+\begin{aligned}
 3 - x &= 7 \\
 \\
 3 \textcolor{red}{-3} - x &= 7 \textcolor{red}{-3} \snminus{3} \\
@@ -155,17 +155,17 @@ $$
 \\
 -x \textcolor{red}{\div -1} &= 4 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= -4
-\end{align*}
+\end{aligned}
 $$
 :::
 
----
+***
 
 ## 3.2.2 - Word Problems with Two-Step Equations
 
 Equations are especially useful when a situation involves **two operations**. Let's look at some examples.
 
----
+***
 
 **Example 4:** Babysitting
 
@@ -182,18 +182,18 @@ $$
 Now we solve for $h$:
 
 $$
-\begin{align*}
+\begin{aligned}
 8h + 10 \textcolor{red}{-10} &= 42 \textcolor{red}{-10} \snminus{10} \\
 8h &= 32 \\
 \\
 8h \textcolor{red}{\div 8} &= 32 \textcolor{red}{\div 8} \sndiv{8} \\
 h &= 4
-\end{align*}
+\end{aligned}
 $$
 
 The babysitter worked **4 hours**.
 
----
+***
 
 **Example 5:** Cellphone plan
 
@@ -210,18 +210,18 @@ $$
 Now we solve for $t$:
 
 $$
-\begin{align*}
+\begin{aligned}
 0.05t + 25 \textcolor{red}{-25} &= 32 \textcolor{red}{-25} \snminus{25} \\
 0.05t &= 7 \\
 \\
 0.05t \textcolor{red}{\div 0.05} &= 7 \textcolor{red}{\div 0.05} \sndiv{0.05} \\
 t &= 140
-\end{align*}
+\end{aligned}
 $$
 
 There were **140 texts sent**.
 
----
+***
 
 **Example 6:** Connections to geometry
 
@@ -234,26 +234,26 @@ Let $W$ be the width of the rectangle.
 An equation that models this situation is:
 
 $$
-\begin{align*}
+\begin{aligned}
 2W + 2L &= 28 \stepnote{perimeter formula} \\
 \\
 2W + 2(2W + 2) &= 28 \stepnote{substitute and simplify}\\
 2W + 4W + 4 &= 28 \\
 \\
 6W + 4 &= 28
-\end{align*}
+\end{aligned}
 $$
 
 Now we can solve for $W$:
 
 $$
-\begin{align*}
+\begin{aligned}
 6W + 4 \textcolor{red}{-4} &= 28 \textcolor{red}{-4} \snminus{4} \\
 6W &= 24 \\
 \\
 6W \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \sndiv{6} \\
 W &= 4
-\end{align*}
+\end{aligned}
 $$
 
 The width of the rectangle is **4cm**.
@@ -271,13 +271,13 @@ Let $c$ be the number of classes attended.
 The equation $15c + 20 = 65$ can be used to model this situation.
 
 $$
-\begin{align*}
+\begin{aligned}
 15c + 20 \textcolor{red}{-20} &= 65 \textcolor{red}{-20} \snminus{20} \\
 15c &= 45 \\
 \\
 15c \textcolor{red}{\div 15} &= 45 \textcolor{red}{\div 15} \sndiv{15} \\
 c &= 3
-\end{align*}
+\end{aligned}
 $$
 
 You attended **3 classes**.
@@ -340,7 +340,7 @@ You attended **3 classes**.
 
 23. Solve $\frac{3x}{2} - 2y = \frac{2y}{3}$ for $y$. Check your answer.
 
----
+***
 
 :::{.answers}
 1. $x=4$

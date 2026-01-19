@@ -48,7 +48,7 @@ The base is 5. The exponent is 3.
 When two powers share the same base — like $x^2$ and $x^5$ — we call them **like bases**.
 That’s when these exponent rules apply.
 
----
+***
 
 #### Rule 1 - Product Rule
 
@@ -72,7 +72,7 @@ $$
 a^m \cdot a^n = a^{m+n}
 $$
 
----
+***
 
 **Example 1:** A simple product
 
@@ -89,7 +89,7 @@ $$
 $x^{9+3} = x^{12}$
 :::
 
----
+***
 
 #### Rule 2 - Quotient Rule
 
@@ -118,7 +118,7 @@ $$
 \dfrac{a^m}{a^n} = a^{m-n}
 $$
 
----
+***
 
 **Example 2:** A simple quotient
 
@@ -137,7 +137,7 @@ $$
 
 :::
 
----
+***
 
 #### Rule 3 - Power of a Power
 
@@ -150,11 +150,11 @@ $$
 Raising to the $2^{\text{nd}}$ power means multiply by itself two times:
 
 $$
-\begin{align*}
+\begin{aligned}
 (x^3)^2 &= (x^3) \cdot (x^3)  \\
 &= (x \cdot x \cdot x) \cdot (x \cdot x \cdot x) \\
 &= x^{6}
-\end{align*}
+\end{aligned}
 $$
 
 A simpler way to do this is to multiply the exponents.
@@ -169,7 +169,7 @@ $$
 (a^m)^n = a^{m \cdot n}
 $$
 
----
+***
 
 **Example 3:** Powers of powers
 
@@ -189,18 +189,18 @@ $$
 
 :::
 
----
+***
 
 #### Rule 4 - Power of a Product
 
 When an exponent applies to a product, it applies to **each factor**.
 
 $$
-\begin{align*}
+\begin{aligned}
 (ab)^3 &= (ab)\cdot (ab) \cdot (ab) \\
 &= (a \cdot a \cdot a) \cdot (b \cdot b \cdot b) \\
 &= a^3 b^3
-\end{align*}
+\end{aligned}
 $$
 
 This is an extension of the “power of a power” idea to two factors.
@@ -209,7 +209,7 @@ $$
 (ab)^n = a^n b^n
 $$
 
----
+***
 
 **Example 4:** Distributing exponents
 
@@ -228,18 +228,18 @@ $$
 
 :::
 
----
+***
 
 #### Rule 5 - Power of a Quotient
 
 The same idea works for fractions — both numerator and denominator get the exponent.
 
 $$
-\begin{align*}
+\begin{aligned}
 \left(\dfrac{x}{y}\right)^3 &= \left(\dfrac{x}{y}\right) \cdot \left(\dfrac{x}{y}\right)\cdot \left(\dfrac{x}{y}\right) \\
 &= \dfrac{x \cdot x \cdot x}{y \cdot y \cdot y} \\
 &= \dfrac{x^3}{y^3}
-\end{align*}
+\end{aligned}
 $$
 
 In general:
@@ -248,7 +248,7 @@ $$
 \left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}
 $$
 
----
+***
 
 **Example 5:** Distributing exponents of a fraction
 
@@ -266,7 +266,7 @@ $$
 
 :::
 
----
+***
 
 #### Rule 6 - Zero Exponent
 
@@ -276,7 +276,7 @@ $$
 a^0 = 1 \quad (a \ne 0)
 $$
 
----
+***
 
 **Example 6:** The power of zero
 
@@ -306,7 +306,7 @@ $$
 
 :::
 
----
+***
 
 #### Rule 7 - Negative Exponent
 
@@ -338,28 +338,28 @@ First move factors with negative exponents to the other side of the fraction bar
 For example:
 
 $$
-\begin{align*}
+\begin{aligned}
 \dfrac{x^{-2} \cdot y^3}{x^{-3} \cdot y^{-2}} &= \dfrac{x^3 \cdot y^3 \cdot y^2}{x^2} \\
 &= \dfrac{x^3 y^5}{x^2} \\
 &= x^{3-2} y^5 \\
 &= xy^5
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 **Example 7:** Negative exponents
 
 Simplify $\dfrac{x^{-4}y}{x^2y^{-2}}$
 
 $$
-\begin{align*}
+\begin{aligned}
 \dfrac{x^{-4}y}{x^2y^{-2}} &= \dfrac{y \cdot y^2}{x^4 \cdot x^2} \\
 &= \dfrac{y^{1 + 2}}{x^{4 + 2}} \\
 &= \dfrac{y^3}{x^6}
-\end{align*}
+\end{aligned}
 $$
 
 :::{.you-try title="Rewrite with positive exponents: $\dfrac{3x^{-2}y^3}{6x^5y^{-1}}$"}
@@ -370,7 +370,7 @@ $$
 
 :::
 
----
+***
 
 #### Rule 8 - Fractional Exponents (optional)
 
@@ -387,7 +387,7 @@ $$
 a^{\tfrac{m}{n}} = \big(a^{\tfrac{1}{n}}\big)^m = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}
 $$
 
----
+***
 
 **Example 8:** Exponents and roots
 
@@ -413,7 +413,7 @@ $$
 
 :::
 
----
+***
 
 :::{.gotcha}
 
@@ -426,7 +426,7 @@ $$
 
 :::
 
----
+***
 
 ### 5.1.2 - Combining Rules
 
@@ -438,7 +438,7 @@ A helpful routine:
 3. **Then multiply/divide:** combine like bases with product/quotient rules.
 4. **Finish clean:** write with **positive** exponents.
 
----
+***
 
 **Example 9:** Multiple rules
 
@@ -455,7 +455,7 @@ $$
 \dfrac{4x^6}{x^5}=4x^{6-5}=4x
 $$
 
----
+***
 
 **Example 10:** Getting tricky
 
@@ -474,7 +474,7 @@ $$
 $$
 
 
----
+***
 
 **Example 11:** A mess of exponents
 
@@ -529,7 +529,7 @@ $$
 
 5. $\left(\dfrac{n}{3}\right)^3$
 
----
+***
 
 **Simplify Multi-Step Expressions with Exponents**
 
@@ -563,7 +563,7 @@ $$
 
 20. $(5t^0u^{-3})^3$
 
----
+***
 
 **Fractional Exponents (Basic)**
 
@@ -577,7 +577,7 @@ $$
 
 25. $\left(z^{\tfrac{2}{3}}\right)^{\tfrac{3}{2}}$
 
----
+***
 
 **Challenge Problems**
 
@@ -589,7 +589,7 @@ Simplify and rewrite using only positive exponents:
 
 28. $\dfrac{(3p^{-\tfrac{1}{2}}q^{\tfrac{3}{4}})^2}{(9p^{\tfrac{2}{3}}q^{-\tfrac{1}{4}})^3}$
 
----
+***
 
 :::{.answers}
 

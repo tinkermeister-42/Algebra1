@@ -2,7 +2,7 @@
 
 **Name: ____________________________**
 
----
+***
 
 ## 3.1 – One-Step Equations
 
@@ -14,7 +14,7 @@
 
 3. $\dfrac{m}{-3} = 9$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -30,7 +30,7 @@
 
 7. $0.3a + 2.4 = 5.4$ <br><br><br><br><br>
 
----
+***
 
 <div style="page-break-after: always;"></div>
 
@@ -44,7 +44,7 @@
 
 10. $2(3y - 4) + y = 13$ <br><br><br><br><br>
 
----
+***
 
 **Real-World Problem**
 

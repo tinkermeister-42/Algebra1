@@ -2,7 +2,7 @@
 
 Welcome to Unit 2! Here we use **variables** and **expressions** to model real situations and simple rules. You’ll learn to read expressions, write them from words, **simplify**, and **evaluate** by plugging in values. You’ll also see when two different-looking expressions actually mean the same thing.
 
----
+***
 
 ## What You’ll Learn
 
@@ -16,7 +16,7 @@ By the end of this unit, you’ll be able to:
 * Describe rules with words, tables, and expressions, and decide if a relation is a **function** (exactly one output for each input); use function notation as simple shorthand.
 * Tell whether two expressions are **equivalent** by simplifying or by **substitution**, and understand the difference between **testing** a few values and **proving** they match for all values.
 
----
+***
 
 ## Topics in This Unit
 

@@ -52,7 +52,7 @@ If the highest power is $2$, the function is quadratic.
 
 Here are a few examples.
 
----
+***
 
 **Example 1:**
 
@@ -62,7 +62,7 @@ The highest power is $2$.
 
 So $f(x)$ **is** a quadratic function.
 
----
+***
 
 **Example 2:**
 
@@ -73,7 +73,7 @@ There is no $x^2$ term.
 
 So $g(x)$ is **not** quadratic. It is linear.
 
----
+***
 
 **Example 3:**
 
@@ -83,7 +83,7 @@ The highest power is $3$.
 
 So $h(x)$ is **not** quadratic. It is cubic.
 
----
+***
 
 :::{.you-try-m title="Is it quadratic?"}
 
@@ -115,13 +115,13 @@ Quadratic functions create a smooth U-shaped curve called a {{< glink parabola >
 
 The following example shows three different parabolas.
 
----
+***
 
 **Example 4:** Three Parabolas
 
 ![](/images/Unit_6/Lesson_1/Example4.png){width="300px" fig-align="center"}
 
----
+***
 
 :::{.real-world title="Parabolic Reflectors"}
 Parabolas show up in more places than you might think. The curve of a quadratic function is the exact shape used in satellite dishes, car headlights, telescopes, and huge radio antennas.
@@ -150,7 +150,7 @@ A parabola can open upward, or it can open downward. The opening direction comes
 * Positive coefficient → opens upward  
 * Negative coefficient → opens downward
 
----
+***
 
 **Example 5:** Opens upward
 
@@ -158,7 +158,7 @@ The quadratic function $f(x) = 2x^2 + 3x - 5$ has a positive coefficient on the 
 
 ![](/images/Unit_6/Lesson_1/Example5.png){width="320px" fig-align="center"}
 
----
+***
 
 **Example 6:** Opens downward
 
@@ -180,7 +180,7 @@ The **vertex** is the single turning point of the graph.
 * If the parabola opens upward, the vertex is a **minimum**.  
 * If the parabola opens downward, the vertex is a **maximum**.
 
----
+***
 
 **Example 7:** A maximum vertex
 
@@ -188,7 +188,7 @@ The function $f(x) = -x^2 + 4x + 7$ has a vertex at $(2, 11)$. The coefficient o
 
 ![](/images/Unit_6/Lesson_1/Example7.png){width="320px" fig-align="center"}
 
----
+***
 
 **Example 8:** A minimum vertex
 
@@ -196,7 +196,7 @@ The function $f(x) = 0.5x^2 -3x + 2.5$ has a positive coefficient on the $x^2$ t
 
 ![](/images/Unit_6/Lesson_1/Example8.png){width="320px" fig-align="center"}
 
----
+***
 
 #### Axis of Symmetry
 
@@ -204,7 +204,7 @@ Every parabola has a vertical line, passing through the vertex, that splits it i
 
 The axis of symmetry is always $x = h$, where $h$ is the $x$-value of the vertex.
 
----
+***
 
 **Example 9:** The axis of symmetry of a parabola
 
@@ -245,7 +245,7 @@ The set of possible $y$ values is called the {{< glink range >}}. For any quadra
 * $[k, \infty)$ if it opens upward  
 * $(-\infty, k]$ if it opens downward
 
----
+***
 
 **Example 10:** Domain and range of a parabola
 
@@ -257,7 +257,7 @@ As with any parabola, **the domain is all real numbers.**
 
 The vertex is at $(1, -1)$ and so **the range is $[-1, \infty)$**.
 
----
+***
 
 **Example 11:** Range of a parabola that opens downward
 
@@ -307,7 +307,7 @@ Decide whether the expression is quadratic and explain briefly why.
 
 5. $y = 12x + 9$
 
----
+***
 
 **Opening Direction**
 
@@ -323,7 +323,7 @@ State whether the parabola opens upward or downward and how you know.
 
 10. $y = -0.5x^2 - 12$
 
----
+***
 
 **Vertex & Axis of Symmetry**
 
@@ -344,7 +344,7 @@ Use the information given to identify the vertex or axis of symmetry.
 15. A parabola has vertex $(0, 4)$ and opens downward.  
     Is this a maximum or a minimum?
 
----
+***
 
 **Graph Interpretation**
 
@@ -366,7 +366,7 @@ Use the graph to find the vertex, axis of symmetry, domain, and range.
 20. 
     ![](/images/Unit_6/Lesson_1/Problem20.png){width="320px" fig-align="center"}
 
----
+***
 
 **Challenge Problems**
 
@@ -378,7 +378,7 @@ Construct or justify a quadratic using only vertex, range, and opening direction
 22.  A parabola has range $(-\infty, 4]$ and axis of symmetry $x = 3$.  
     Give a possible vertex and matching quadratic equation.
 
----
+***
 
 :::{.answers}
 

@@ -52,7 +52,7 @@ That’s because:
 Only one number does: **1**. It only has itself as a factor!
 :::
 
----
+***
 
 ### 1.2.2 - What Are Multiples?
 
@@ -68,7 +68,7 @@ $5, 10, 15, 20, 25, 30, ...$
 
 Multiples show up all over the place. When you {{< glink "skip count" >}}, you are using multiples. In the previous lesson, we used multiples to construct number lines! 
 
----
+***
 
 **Example 3:** Multiples of 3
 
@@ -79,7 +79,7 @@ Here is a number line that shows multiples of three.
 If a bus comes every 15 minutes, the arrival times are multiples of 15.
 :::
 
----
+***
 
 ### 1.2.3 - Prime vs. Composite
 
@@ -103,7 +103,7 @@ Prime numbers are the secret behind modern encryption. They're used to protect e
 It’s like a global math scavenger hunt… with real-world consequences.
 :::
 
----
+***
 
 ### 1.2.4 - Prime Factorization and Factor Trees
 
@@ -119,7 +119,7 @@ That number sense will come in handy later when you:
 
 Let’s build a factor tree for **360** to see how it works.
 
----
+***
 
 #### Steps to Make a Factor Tree
 
@@ -226,7 +226,7 @@ $$2 * 2 * 2 * 3 * 3 * 5 = 360$$
 This can be written more compactly by using the factor counts as {{< glink slug=exponent text="exponents" >}}. There are three 2s and two 3s in this case and so we get...<br>
 $$2^3 * 3^2 * 5 = 360$$
 
----
+***
 
 There are *many* factor trees for the number 360. For example, you could also have started with $360 = 3 * 120$.
 
@@ -273,7 +273,7 @@ There are still three 2s, two 3s, and one 5, so the prime factorization does not
 $$2^3 * 3^2 * 5 = 360$$
 As long as you end up with the same prime numbers, the tree is correct!
 
----
+***
 
 :::{.callout-tip title="Which factors should I start with?"}
 
@@ -393,7 +393,7 @@ I have only shown you 3 of the 60 unique factor trees for 360!
    b. 9
    c. 12
 
----
+***
 
 **Prime or Composite?**
 
@@ -404,7 +404,7 @@ I have only shown you 3 of the 60 unique factor trees for 360!
    d. 19
    e. 21
 
----
+***
 
 **Complete the Factor Tree**
 
@@ -459,7 +459,7 @@ flowchart TB
     node_1_1_2_1_3_1_3 --- node_1_1_2_1_3_1_4_1_4
 ```
 
----
+***
 
 **Factor Trees & Prime Factorization**
 
@@ -471,13 +471,13 @@ flowchart TB
    d. 81
    e. 72
 
----
+***
 
 **Challenge**
 
 6. Can two different numbers have the same prime factorization? Why or why not?
 
----
+***
 
 :::{.answers}
 
@@ -489,7 +489,7 @@ flowchart TB
 
 3. No, 13 is prime
 
----
+***
 
 
 **Factors & Multiples**
@@ -507,7 +507,7 @@ flowchart TB
    b. 9, 18, 27, 36, 45
    c. 12, 24, 36, 48, 60
 
----
+***
 
 **Prime or Composite?**
 
@@ -520,7 +520,7 @@ flowchart TB
    e. Composite
 
 
----
+***
 
 **Complete the Factor Tree**
 
@@ -534,7 +534,7 @@ b.
 
 ![](/images/Unit_1/Lesson_2/lesson_1_2_4b.png){height=300}
 
----
+***
 
 **Factor Trees and Prime Factorization**
 

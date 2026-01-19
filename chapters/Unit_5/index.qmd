@@ -7,7 +7,7 @@ You’ll learn how powers behave, how polynomial expressions are built, and how 
 
 As you work through the lessons, you’ll move from simplifying and multiplying polynomials to **factoring**, which is the reverse process. Factoring becomes a major skill later in Algebra, especially when solving quadratic equations.
 
----
+***
 
 ## What You’ll Learn
 
@@ -23,7 +23,7 @@ By the end of this unit, you’ll be able to:
 
 * **Recognize special factoring patterns** and factor more general trinomials.
 
----
+***
 
 ## Topics in This Unit
 

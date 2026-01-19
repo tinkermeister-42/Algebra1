@@ -11,7 +11,7 @@ This review pulls together the key skills from Unit 2. It’s heavy on practice 
 * Inputs and outputs of functions (rules & tables)
 * Equivalent expressions (prove or disprove)
 
----
+***
 
 ### Expressions & Their Parts (2.1)
 
@@ -43,7 +43,7 @@ This review pulls together the key skills from Unit 2. It’s heavy on practice 
 
 4. Write an expression: “$3$ more than the product of $-4$ and $p$.”
 
----
+***
 
 ### Evaluating Expressions (2.2)
 
@@ -61,7 +61,7 @@ Evaluate each expression for the given values.
 
 10. $k^2 - 4k$ when $k=-3$
 
----
+***
 
 ### Combining Like Terms (2.3)
 
@@ -79,7 +79,7 @@ Simplify each expression.
 
 16. $7r - [3(r-2) - 1]$
 
----
+***
 
 ### Distributive Property (2.4)
 
@@ -99,7 +99,7 @@ Expand or factor as directed.
 
 23. Expand and Simplify: $7(2k+1) - (k+1)$
 
----
+***
 
 ### Inputs & Outputs of Functions (2.5)
 
@@ -143,7 +143,7 @@ Expand or factor as directed.
 | 10    | 5      | 
 
 
----
+***
 
 ### Equivalent Expressions (2.6)
 
@@ -164,7 +164,7 @@ If not, **give one value** of the variable that makes the values different.
 
 34. $5(p-1) + 7$ and $5p + 2$
 
----
+***
 
 ### Mixed Practice
 
@@ -182,7 +182,7 @@ If not, **give one value** of the variable that makes the values different.
 
 40. Are $7(t-2) + 5$ and $7t - 9$ equivalent? Explain briefly.
 
----
+***
 
 :::{.answers}
 
@@ -204,7 +204,7 @@ If not, **give one value** of the variable that makes the values different.
 
 4. $-4p + 3$
 
----
+***
 
 ### Evaluating Expressions (2.2)
 
@@ -220,7 +220,7 @@ If not, **give one value** of the variable that makes the values different.
 
 10. $(-3)^2 - 4(-3) = 9 + 12 = 21$
 
----
+***
 
 ### Combining Like Terms (2.3)
 
@@ -236,7 +236,7 @@ If not, **give one value** of the variable that makes the values different.
 
 16. $7r - [3(r - 2) - 1] = 7r - [3r - 6 - 1] = 7r - (3r - 7) = 4r + 7$
 
----
+***
 
 ### Distributive Property (2.4)
 
@@ -254,7 +254,7 @@ If not, **give one value** of the variable that makes the values different.
 
 23. $7(2k + 1) - (k + 1) = 14k + 7 - k - 1 = 13k + 6$
 
----
+***
 
 ### Inputs & Outputs of Functions (2.5)
 
@@ -279,7 +279,7 @@ b. $g(-6) = \dfrac{-6 + 8}{2} = 1$
 **First table:** Yes, it is a function (each input has exactly one output).
 **Second table:** No, it is not a function (input $10$ has two different outputs).
 
----
+***
 
 ### Equivalent Expressions (2.6)
 
@@ -297,7 +297,7 @@ b. $g(-6) = \dfrac{-6 + 8}{2} = 1$
 
 34. Yes. $5(p - 1) + 7 = 5p - 5 + 7 = 5p + 2$
 
----
+***
 
 ### Mixed Practice
 

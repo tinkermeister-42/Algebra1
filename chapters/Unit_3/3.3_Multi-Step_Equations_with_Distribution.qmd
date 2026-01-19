@@ -39,7 +39,7 @@ $$
 
 That rule lets us “remove” parentheses so the equation is easier to work with.
 
----
+***
 
 **Example 1:**
 
@@ -52,25 +52,25 @@ $$
 The variable $x$ is trapped inside the parentheses. We start by applying the distributive property to free $x$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{3}(x + 4) &= 21  \\
 3x + 12 &= 21 \stepnote{distribute the 3}
-\end{align*}
+\end{aligned}
 $$
 
 Now we can solve the two-step equation.
 
 $$
-\begin{align*}
+\begin{aligned}
 3x + 12 \textcolor{red}{- 12} &= 21 \textcolor{red}{- 12} \snminus{12} \\
 3x &= 9 \\
 \\
 3x \textcolor{red}{\div 3} &= 9 \textcolor{red}{\div 3} \sndiv{3} \\
 x &= 3
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 2:**
 
@@ -83,7 +83,7 @@ $$
 Notice the negative sign. We need to be extra careful to include it when we distribute.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{-2}(2x - 5) &= 6 \stepnote{distribute the -2} \\
 -4x + 10 &= 6  \\
 \\
@@ -92,16 +92,16 @@ $$
 \\
 -4x \textcolor{red}{\div -4} &= -4 \textcolor{red}{\div -4} \sndiv{-4} \\
 x &= 1
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 :::{.you-try title="Solve $3(2x + 1) = 15$"}
 Solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{3}(2x + 1) &= 15 \stepnote{distribute the 3} \\
 6x + 3 &= 15 \\
 \\
@@ -110,18 +110,18 @@ $$
 \\
 6x \textcolor{red}{\div 6} &= 12 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 ### 3.3.2 - Combining Like Terms in Equations
 
 Sometimes an equation looks messy because there are {{< glink "like terms" >}} on the same side of the equals sign. Before you can solve, you need to combine them into a single term.
 
----
+***
 
 **Example 1:** Combining like terms
 
@@ -134,25 +134,25 @@ $$
 Start by combining the like terms $4x$ and $2x$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{blue}{4x} + 7 + \textcolor{blue}{2x} &= 31 \stepnote{combine like terms} \\
 \textcolor{blue}{6x} + 7 &= 31 
-\end{align*}
+\end{aligned}
 $$
 
 Now solve the two-step equation.
 
 $$
-\begin{align*}
+\begin{aligned}
 6x + 7 \textcolor{red}{- 7} &= 31 \textcolor{red}{- 7} \snminus{7} \\
 6x &= 24 \\
 \\
 6x \textcolor{red}{\div 6} &= 24 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 4
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 2:** Distribution and like terms
 
@@ -165,34 +165,34 @@ $$
 This equation has both parentheses **and** like terms. Start by distributing.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{2}(x + 5) + 3x &= 25 \stepnote{distribute the 2} \\
 2x + 10 + 3x &= 25 
-\end{align*}
+\end{aligned}
 $$
 
 Now combine $2x$ and $3x$.
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{blue}{2x} + 10 + \textcolor{blue}{3x} &= 25 \stepnote{combine like terms} \\
 \textcolor{blue}{5x} + 10 &= 25
-\end{align*}
+\end{aligned}
 $$
 
 Finish solving:
 
 $$
-\begin{align*}
+\begin{aligned}
 5x + 10 \textcolor{red}{- 10} &= 25 \textcolor{red}{- 10} \snminus{10} \\
 5x &= 15 \\
 \\
 5x \textcolor{red}{\div 5} &= 15 \textcolor{red}{\div 5} \sndiv{5} \\
 x &= 3
-\end{align*}
+\end{aligned}
 $$
 
----
+***
 
 **Example 3:** Distribution and like terms with negatives
 
@@ -205,7 +205,7 @@ $$
 Be careful with those negative signs!
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{-3}(x - 4) + 2x - 3 &= 7 \stepnote{distribute the -3} \\
 -3x + 12 + 2x - 3 &= 7 \\
 \\
@@ -217,14 +217,14 @@ $$
 \\
 -x \textcolor{red}{\div -1} &= -2 \textcolor{red}{\div -1} \sndiv{-1} \\
 x &= 2
-\end{align*}
+\end{aligned}
 $$
 
 
 :::{.you-try title="Solve $4(x + 2) - 3x + 5 = 18$"}
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{red}{4}(x + 2) - 3x + 5 &= 18 \stepnote{distribute the 4} \\
 4x + 8 - 3x + 5 &= 18 \\
 \\
@@ -233,19 +233,19 @@ $$
 \\
 x + 13 \textcolor{red}{-13} &= 18 \textcolor{red}{-13} \snminus{13} \\
 x &= 5
-\end{align*}
+\end{aligned}
 $$
 
 :::
 
----
+***
 
 ### 3.3.3 - Word Problems with Multi-Step Equations
 
 Some problems lead to equations that look “messier” because they include parentheses or more than one set of like terms.
 We solve them the same way — by simplifying first, then isolating the variable.
 
----
+***
 
 **Example 4:** Selling t-shirts
 
@@ -263,7 +263,7 @@ $$
 Simplify and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{blue}{12s} - 60 \textcolor{blue}{- 6s} &= 84 \stepnote{combine like terms}\\
 \textcolor{blue}{6s} - 60 &= 84 \\
 \\
@@ -272,12 +272,12 @@ $$
 \\
 6s \textcolor{red}{\div 6} &= 144 \textcolor{red}{\div 6} \sndiv{6} \\
 s &= 24
-\end{align*}
+\end{aligned}
 $$
 
 They sold **24 shirts**.
 
----
+***
 
 **Example 5:** Connections to Geometry
 
@@ -295,7 +295,7 @@ $$
 Simplify and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
     (\textcolor{blue}{2x} + \textcolor{green}{3}) + (\textcolor{blue}{3x} \textcolor{green}{- 2}) + (\textcolor{blue}{x} \textcolor{green}{+ 5}) &= 54 \stepnote{combine like terms} \\
 \textcolor{blue}{6x} + \textcolor{green}{6} &= 54 \\
 \\
@@ -304,12 +304,12 @@ $$
 \\
 6x \textcolor{red}{\div 6} &= 48 \textcolor{red}{\div 6} \sndiv{6} \\
 x &= 8
-\end{align*}
+\end{aligned}
 $$
 
 Each side can now be found using $x = 8$.
 
----
+***
 
 :::{.you-try-m title="Car Wash Fundraiser"}
 
@@ -328,7 +328,7 @@ $$
 Simplify and solve:
 
 $$
-\begin{align*}
+\begin{aligned}
 \textcolor{blue}{8c} - 24 \textcolor{blue}{- 2c} &= 96 \stepnote{combine like terms} \\
 \textcolor{blue}{6c} - 24 &= 96 \\
 \\
@@ -337,14 +337,14 @@ $$
 \\
 6c \textcolor{red}{\div 6} &= 120 \textcolor{red}{\div 6} \sndiv{6} \\
 c &= 20
-\end{align*}
+\end{aligned}
 $$
 
 They washed **20 cars**.
 :::
 
 
----
+***
 
 {{< practice >}}
 
@@ -362,7 +362,7 @@ They washed **20 cars**.
 
 5. $-2(-6 + x) = 10$
 
----
+***
 
 **Combine like terms**
 
@@ -376,7 +376,7 @@ They washed **20 cars**.
 
 10. $15 + 8x + 2x = 55$
 
----
+***
 
 **Distribution + like terms**
 
@@ -408,7 +408,7 @@ They washed **20 cars**.
 
 23. The perimeter of a triangle is 75 cm. The three sides measure $3x + 1$, $2(x + 4)$, and $x + 6$. Write and solve an equation to find the value of $x$.
 
----
+***
 
 **Challenge Problems**
 
@@ -416,7 +416,7 @@ They washed **20 cars**.
 
 25.  $2(x + y) + 3x - 4 = 5y + 6 \quad$ *(solve for $x$ in terms of $y$)*
 
----
+***
 
 :::{.answers}
 

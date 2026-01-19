@@ -71,7 +71,7 @@ We think about and visualize fractions, decimals, and percents differently too. 
 
 Fractions, decimals, and percents all show the same thing in different ways. You can change one form into another. Choose the form that fits the situation. In the next sections, you’ll learn how to switch between them.
 
----
+***
 
 ### 1.6.2 - Converting Fractions to Decimals
 
@@ -135,7 +135,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.6.3 - Converting Fractions and Decimals to Percents
 
@@ -165,7 +165,7 @@ We multiply by 100 (move the decimal to the right twice) and add a % sign. This 
 $$1.342 \times 100 = 134.2\%$$
 :::
 
----
+***
 
 To convert a fraction to a percent, we first convert the fraction to a decimal.
 
@@ -190,7 +190,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.6.4 Converting Decimals to Fractions
 
@@ -210,7 +210,7 @@ Suppose we have the number 123.456. The following table shows the place value fo
 
 Place value helps us say the number differently. Instead of saying "123 **point** 456" we could say "123 **and** 456 **thousandths**".  This is the trick to converting decimals to fractions.
 
----
+***
 
 **Example 1:** Converting a Decimal to a Fraction
 
@@ -220,7 +220,7 @@ $$
 0.75 = \text{75 hundredths} \Rightarrow \frac{75}{100} = \frac{3}{4}
 $$
 
----
+***
 
 **Example 2:** Converting a Decimal to a Fraction
 
@@ -255,7 +255,7 @@ $$
 $$
 :::
 
----
+***
 
 ### 1.6.5 - Converting Percents to Decimals and Fractions
 
@@ -299,7 +299,7 @@ $$
 35\% = 0.35 \Rightarrow \text{35 hundredths} \Rightarrow \frac{35}{100} = \frac{7}{20}
 $$
 :::
----
+***
 
 ### 1.6.6 - Bringing It All Together
 
@@ -411,7 +411,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
     Who had the highest score and who had the lowest?
 
----
+***
 
 ::: {.answers}
 
@@ -425,7 +425,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 2. b and d are closest
 
 
----
+***
 
 **Conversions Practice**
 
@@ -468,7 +468,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
    e. $\frac{1}{200}$
    f. $2\tfrac{3}{4}$
 
----
+***
 
 **Comparison Questions**
 

@@ -17,7 +17,7 @@ Match the **hidden target line** using slope–intercept form ($y = mx + b$).
 
 {{< include /assets/Unit_4/slope-intercept-form-game.html >}}
 
----
+***
 
 To learn more, take a look at [4.6 – Linear Models in the Real World](/chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd)
 

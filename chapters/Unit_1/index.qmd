@@ -4,7 +4,7 @@ Welcome to Unit 1! This is where you’ll build your Algebra toolkit, skills lik
 
 You’ll use these tools again and again to solve expressions, equations, and real-world problems throughout the year.
 
----
+***
 
 ## What You’ll Learn
 
@@ -18,7 +18,7 @@ By the end of this unit, you’ll be able to:
 * Solve real-world problems using fractions, decimals, and percents
 * Follow the correct order of operations to simplify expressions
 
----
+***
 
 ## Topics in This Unit
 

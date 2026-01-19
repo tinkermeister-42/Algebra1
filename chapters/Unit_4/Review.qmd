@@ -12,7 +12,7 @@ It focuses on connecting equations, graphs, and real-world meaning.
 * Modeling real-world situations
 * Graphing inequalities
 
----
+***
 
 ### Graphing Function Rules (4.1)
 
@@ -34,7 +34,7 @@ Find $y$ for each $x$-value, complete the table, and plot the points.
 
 ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
----
+***
 
 ### Understanding Slope (4.2)
 
@@ -51,7 +51,7 @@ Find the slope of each line or between each pair of points.
 9. A plumber charges $60 to visit plus $40 per hour.
    Interpret the slope and intercept in this context.
 
----
+***
 
 ### The Equation of a Line (4.3)
 
@@ -63,7 +63,7 @@ Find the slope of each line or between each pair of points.
     
     ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
----
+***
 
 ### Writing Linear Equations (4.4)
 
@@ -75,7 +75,7 @@ Find the slope of each line or between each pair of points.
 
 16. Find the equation of a line **perpendicular** to $y = \tfrac{1}{2}x - 3$ that goes through $(2, 1)$.
 
----
+***
 
 ### Systems of Equations (4.5)
 
@@ -124,7 +124,7 @@ $$
     \end{cases}
     $$
 
----
+***
 
 ### Linear Models in the Real World (4.6)
 
@@ -142,7 +142,7 @@ $$
 24. The equation $y = -5x + 120$ models the temperature $y$ after $x$ minutes.
     What are the slope and intercept, and what do they mean?
 
----
+***
 
 ### Graphing Linear Inequalities (4.7)
 
@@ -166,7 +166,7 @@ $$
 
     ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
----
+***
 
 
 :::{.answers}
