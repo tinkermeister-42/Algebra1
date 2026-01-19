@@ -26,7 +26,7 @@ They model real situations involving height, distance, area, revenue, and time. 
 
 2. If a quadratic has two solutions, what might those solutions represent in a real situation?
 
-3. Can you think of a situation where only of two solutions to a quadratic would make sense in the real world?
+3. Can you think of a situation where only one of the two solutions to a quadratic would make sense in the real world?
 
 {{< learn >}}
 
@@ -56,7 +56,7 @@ $$
 h(t) = at^2 + bt + c
 $$
 
-where $t$ is time and $h(t)$ is height.
+where $t$ is time in seconds and $h(t)$ is height in feet.
 
 ***
 
@@ -101,7 +101,7 @@ $$
 t = \frac{-20 - 12\sqrt{5}}{-32} = \frac{5 + 3\sqrt{5}}{8} \approx 1.46
 $$
 
-So the ball hits the ground after about $1.46$ seconds.
+So the ball hits the ground after about $1.46$ seconds. We ignore the negative time because time cannot be negative in this situation.
 
 ---
 
@@ -133,11 +133,12 @@ Maximum height is $11.25$ feet.
 
 :::{.you-try-m title="When does the ball hit the ground?"}
 
-A ball is thrown from a height of 6 feet with equation $h(t) = -16t^2 + 24t + 6$. When does it hit the ground?
+A ball is thrown from a height of $6$ feet with equation $h(t) = -16t^2 + 24t + 6$. When does it hit the ground?
 
 :::
 
 :::{.answer title="Answer"}
+
 Set $h(t)=0$:
 
 $$
@@ -207,7 +208,7 @@ $$
 x = -12 \quad \text{or} \quad x = 8
 $$
 
-Only $x=8$ makes sense.
+Only $x=8$ makes sense because a length cannot be negative.
 
 Width is $8$ feet and length is $12$ feet.
 
@@ -233,6 +234,8 @@ Let $x$ be the number of $1 increases.
 
 Price: $10 + x$  
 Tickets sold: $80 - 5x$
+
+Revenue (in dollars):
 
 $$
 R(x) = (10 + x)(80 - 5x)
@@ -402,6 +405,10 @@ Explain what the vertex represents.
    x=-\frac{b}{2a}=-\frac{20}{2(-1)}=10
    $$
    So profit is maximized at $10$ items.
+   $$
+   P(10)=-100+200-60=40
+   $$
+   The maximum profit is $40$ dollars.
 
 **Level 3**
 
@@ -460,7 +467,7 @@ Explain what the vertex represents.
     64=a(2.5)(-2.5)=a(-6.25)
     $$
     $$
-    a=-\frac{64}{6.25}=-\frac{256}{25}=-10.24
+    a=-\frac{64}{6.25}=-\frac{256}{25}
     $$
     One possible model:
     $$
