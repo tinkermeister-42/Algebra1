@@ -37,7 +37,8 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 :::{.vocab}
 {{< glink inequality >}},
 {{< glink solution >}},
-{{< glink "solution set"}}, {{< glink variable >}}
+{{< glink "solution set" >}},
+{{< glink variable >}}
 :::
 
 {{< warmup >}}
