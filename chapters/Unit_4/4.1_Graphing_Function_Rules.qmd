@@ -2,9 +2,9 @@
 
 So far, you've worked with rules that take an input, do something to it, and give an output. You've written equations, evaluated expressions, and created tables that show how numbers are connected.
 
-In this lesson, we’ll take that same idea one step further. Instead of only listing input-output pairs, we’ll see them — each pair becomes a point you can plot. When those points come together, they reveal a picture of the rule itself.
+In this lesson, we’ll take that same idea one step further. Instead of only listing input-output pairs, we’ll see them. Each pair becomes a point you can plot. When those points come together, they reveal a picture of the rule itself.
 
-It’s time to move from numbers to shapes — and start seeing how a function behaves.
+It’s time to move from numbers to shapes, and start seeing how a function behaves.
 
 :::{.objectives}
 
@@ -40,7 +40,7 @@ It’s time to move from numbers to shapes — and start seeing how a function b
 
 ### 4.1.1 - The Coordinate Plane
 
-Up to now, we’ve worked with **number lines** — simple one-dimensional ways to show where a number belongs. But equations often have **two variables**, like $x$ and $y$. To show how they’re related, we need a way to display **two numbers at once**.
+Up to now, we’ve worked with **number lines**, simple one-dimensional ways to show where a number belongs. But equations often have **two variables**, like $x$ and $y$. To show how they’re related, we need a way to display **two numbers at once**.
 
 That’s where the **coordinate plane** comes in.
 
@@ -89,7 +89,7 @@ Plot the points $(4, 2), (-6, 4), (-4, -8)$ and $(8, -4)$.
 
 :::
 
-Now that we know how to plot points, let’s see how a rule — like an equation — can generate points that form a picture.
+Now that we know how to plot points, let’s see how a rule, like an equation, can generate points that form a picture.
 
 ***
 
@@ -126,14 +126,14 @@ Now plot each pair $(x, f(x))$ on a coordinate plane.
 
 ![](/images/Unit_4/Lesson_1/Example1A.png){width="350px" fig-align="center"}
 
-When we connect the points, they form a **straight line** — showing that $f(x) = 2x + 1$ is a **linear function**.
+When we connect the points, they form a **straight line**, showing that $f(x) = 2x + 1$ is a **linear function**.
 
 ![](/images/Unit_4/Lesson_1/Example1B.png){width="350px" fig-align="center"}
 
 :::{.note title="That's the answer!"}
 When an equation has one variable, its answer is just one number. On a number line, that number is shown as a single point.
 
-But when an equation has two variables, it doesn’t have just one answer — it has many! In fact, all of the (x, y) pairs that make the equation true line up to form a straight line. That’s why we graph the equation — the line shows all the solutions.
+But when an equation has two variables, it doesn’t have just one answer, it has many! In fact, all of the (x, y) pairs that make the equation true line up to form a straight line. That’s why we graph the equation, the line shows all the solutions.
 :::
 
 ::: {.remember}
@@ -163,7 +163,7 @@ Evaluate $h(x)$ for $x = -3, 0,$ and $3$ and graph the result.
 :::{.think title="Can you tell if $h(x)$ is a function just by looking at the graph?"}
 
 Yes! Each $x$ value gives only one $y$ value.  
-That’s what makes it a function — every input leads to exactly one output.
+That’s what makes it a function, every input leads to exactly one output.
 
 :::
 

@@ -1,11 +1,11 @@
 # 4.3 - The Equation of a Line {.unnumbered}
 
 In the last lesson, you learned how to find and use the **slope** of a line.
-Now you’ll see how slope connects to a line’s **equation** — and how one special point called the **y-intercept** helps you write that equation quickly.
+Now you’ll see how slope connects to a line’s **equation**, and how one special point called the **y-intercept** helps you write that equation quickly.
 
-Lines are everywhere — roads, ramps, graphs of data, the list goes on and on.
+Lines are everywhere. We see them on roads, ramps, graphs of data, the list goes on and on.
 Every straight line can be described with just **two numbers**: its **slope** and its **y-intercept**.
-Once you know those, you can write an equation, make predictions, and see how the line behaves — all without having to graph every single point.
+Once you know those, you can write an equation, make predictions, and see how the line behaves, all without having to graph every single point.
 
 :::{.objectives}
 
@@ -32,7 +32,7 @@ Once you know those, you can write an equation, make predictions, and see how th
 
 ### 4.3.1 - Graphing a Line Using a Point and the Slope
 
-A line’s slope is **constant** — it never changes, no matter which points you use.
+A line’s slope is **constant**, it never changes, no matter which points you use.
 That means if you know **one point** and the **slope**, you can find as many other points as you want.
 
 **Example 1:** Graph from a point and slope
@@ -55,7 +55,7 @@ Starting at $(0, 1)$, move right 3 and up 1 to reach $(3, 2)$.
 ### 4.3.2 - Discovering Intercepts
 
 Every line crosses the axes somewhere.
-Those crossing points are special because they’re easy to find — and they tell us a lot about the line.
+Those crossing points are special because they’re easy to find, and they tell us a lot about the line.
 
 **Example 2:** Where does it cross?
 
@@ -159,7 +159,7 @@ $$
 where
 
 * $m$ is the **slope**, and
-* $b$ is the **y-intercept** — the point where the line crosses the y-axis.
+* $b$ is the **y-intercept**: the point where the line crosses the y-axis.
 
 This is called the {{< glink "slope-intercept form" >}} of a line.
 

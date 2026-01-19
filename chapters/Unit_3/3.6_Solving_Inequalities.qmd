@@ -131,7 +131,7 @@ Since $-4 \le -1$ is true, shade the side containing $-4$.
 
 ### 3.6.2 - Solving Inequalities Using Addition and Subtraction
 
-Solving inequalities works just like solving equations—you undo operations to get the variable by itself. The only difference is that the solution represents a range.
+Solving inequalities works just like solving equations, you undo operations to get the variable by itself. The only difference is that the solution represents a range.
 
 ***
 

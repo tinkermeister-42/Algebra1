@@ -21,7 +21,7 @@ By the end of this unit, you’ll be able to:
 ## Topics in This Unit
 
 [**Expressions & Their Parts**](2.1_Expressions_and_Their_Parts.html)
-What expressions are made of—and how to **translate** short phrases into algebraic expressions (and back).
+What expressions are made of, and how to **translate** short phrases into algebraic expressions (and back).
 
 [**Evaluating Expressions**](2.2_Evaluating_Expressions.html)
 Plug in values and simplify with the correct order of operations. See why parentheses matter.
@@ -36,5 +36,5 @@ Distribute to remove parentheses and simplify. Learn common slips to avoid (like
 Use rules, tables, and expressions to map inputs to outputs. Decide if a relation is a function and practice simple function notation.
 
 [**Equivalent Expressions**](2.6_Equivalent_Expressions.html)
-Different forms, same value. Use simplification and substitution to test for equivalence—and see what counts as a proof.
+Different forms, same value. Use simplification and substitution to test for equivalence, and see what counts as a proof.
 

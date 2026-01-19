@@ -1,6 +1,6 @@
 # 2.1 - Expressions & Their Parts {.unnumbered}
 
-Learning mathematics is about more than number crunching—you’re learning a new language. Like any language, mathematics uses words and phrases to communicate ideas. In algebra, we call those words and phrases **expressions**.
+Learning mathematics is about more than number crunching, you’re learning a new language. Like any language, mathematics uses words and phrases to communicate ideas. In algebra, we call those words and phrases **expressions**.
 
 In this lesson, you’ll learn to **read** expressions to understand the ideas they communicate and to **write** expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: {{< glink slug=variable text="variables" >}}, {{< glink slug=term text=terms >}}, {{< glink slug=coefficient text=coefficients >}}, and {{< glink slug=constant text=constants >}}.
 
@@ -26,7 +26,7 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 
 ### 2.1.1 - What Is a Variable?
 
-Sometimes we need to talk about a number we don’t know yet — or one that can change. For that, we use a {{< glink variable >}}.
+Sometimes we need to talk about a number we don’t know yet, or one that can change. For that, we use a {{< glink variable >}}.
 
 A variable is a letter or {{< glink symbol >}} that stands for an unknown or changing number. Algebra often uses **x**, but other letters work too.
 
@@ -37,7 +37,7 @@ Think of **x** as the label on a mystery box: you know there’s a number inside
 You work at a grocery store. Your boss gives you labels and points to boxes of apples:  
 “Write how many apples are in each box.”
 
-You pick up a sealed box. You can’t see inside, so you write **x** on the label — x means “the number of apples in this box (unknown).”
+You pick up a sealed box. You can’t see inside, so you write **x** on the label, x means “the number of apples in this box (unknown).”
 
 ![](/images/Unit_2/Lesson_1/AppleBoxX.png){width="35%" fig-align="center"}
 
@@ -49,14 +49,14 @@ Now you know the number, so you change the label to 3.
 
 ![](/images/Unit_2/Lesson_1/AppleBox3.png){width="35%" fig-align="center"}
 
-Before opening it, **x** was a variable — a placeholder for an unknown number. After looking, you found $x = 3$.
+Before opening it, **x** was a variable, a placeholder for an unknown number. After looking, you found $x = 3$.
 
 
 ***
 
 ### 2.1.2 - What Is an Expression?
 
-An **expression** is a math phrase made of numbers, variables, and {{< glink slug=operation text=operations >}}. Expressions do **not** compare values — so $2x$ and $5$ are expressions, but $2x = 5$ is not (that’s an equation).
+An **expression** is a math phrase made of numbers, variables, and {{< glink slug=operation text=operations >}}. Expressions do **not** compare values, so $2x$ and $5$ are expressions, but $2x = 5$ is not (that’s an equation).
 
 **Examples of expressions:**
 
@@ -68,7 +68,7 @@ An **expression** is a math phrase made of numbers, variables, and {{< glink slu
 
 **Not expressions:**
 
-- $3x + 5 = 20$ *(equation — has an equals sign)*  
+- $3x + 5 = 20$ *(equation: has an equals sign)*  
 - $x > 7$ *(comparison)*  
 
 ::: {.you-try-m title="Think about this."}
@@ -82,8 +82,8 @@ You have two situations:
 - Explain your reasoning.
 :::
 ::: {.answer title="Answer"}
-- Situation 1: Yes — you can write **7p** if **p** is pencils per box.
-- Situation 2: No — this is a comparison, not a single expression. 
+- Situation 1: Yes: you can write **7p** if **p** is pencils per box.
+- Situation 2: No: this is a comparison, not a single expression. 
 
 
 Expressions describe quantities; they don’t make comparisons.
@@ -165,7 +165,7 @@ Constant: -1
 
 ### 2.1.4 - Translating Between Words and Expressions
 
-**Expressions** are math phrases that describe real situations. Learning to turn words into expressions is one of the most important skills in algebra because it connects math to real life — and it’s the first step to solving real-world problems.
+**Expressions** are math phrases that describe real situations. Learning to turn words into expressions is one of the most important skills in algebra because it connects math to real life, and it’s the first step to solving real-world problems.
 
 ***
 

@@ -1,6 +1,6 @@
 # 4.6 - Linear Models in the Real World {.unnumbered}
 
-Real life is full of linear patterns — pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more. In any situation where something changes at a steady rate, you can use a linear model to describe it.
+Real life is full of linear patterns. Examples include pay that rises with hours worked, temperature that drops over time, or costs that increase as you buy more. In any situation where something changes at a steady rate, you can use a linear model to describe it.
 
 You've already worked with many linear models in previous lessons. They all followed the pattern $y = mx + b$.
 
@@ -55,11 +55,11 @@ Let $e$ = number of episodes and $P(e)$ = total price (dollars).
 
 First, we need to know **what is changing**.
 
-* The cost **increases** \$2 per episode — that’s the **slope** ($m = 2$).
+* The cost **increases** \$2 per episode - that’s the **slope** ($m = 2$).
 
 Next, we need to know **where we start**.
 
-* The **minimum** you pay is \$7.99 — that’s the **y-intercept** ($b = 7.99$).
+* The **minimum** you pay is \$7.99 - that’s the **y-intercept** ($b = 7.99$).
 
 Putting it together:
 
@@ -117,7 +117,7 @@ After 15 minutes, the soup will be **45 °C**.
 In the last example, the graph started at 0 minutes and stopped at 20 minutes.
 That’s because a model only makes sense for certain values.
 
-Before 0 minutes, time would be negative — like going back in time!
+Before 0 minutes, time would be negative, like going back in time!
 After 20 minutes, the soup would drop below room temperature, which isn’t realistic here.
 
 So even though the line continues forever, we only graph the part that fits the situation.
@@ -201,7 +201,7 @@ Estrella says she charges a fixed hourly rate plus a minimum fee to babysit.
 She charged $70 for 5 hours and $46 for 3 hours. What is her hourly rate?
 
 Since she charges a minimum fee, we can’t just divide money by hours.
-What we need is the **rate of change** — the **slope**.
+What we need is the **rate of change**, the **slope**.
 
 $$
 m = \frac{70 - 46}{5 - 3} = \frac{24}{2} = 12
@@ -255,7 +255,7 @@ She will charge **$154** for 12 hours.
 
 ### 4.6.2 - Seeing Patterns in Data
 
-In real life, data points rarely fall in a perfect line — but they often show a **pattern**.
+In real life, data points rarely fall in a perfect line, but they often show a **pattern**.
 When that pattern looks roughly straight, we can model it with a **best-fit line** (or *trend line*).
 
 The closer the points are to that line, the more **strongly correlated** the two variables are:
@@ -275,8 +275,7 @@ Each student tracked how many hours they studied (to the nearest half-hour).
 
 ![](/images/Unit_4/Lesson_6/Example6.png){width="500px" fig-align="center"}
 
-Even though the points don’t form a perfect line, there’s a **clear positive correlation** —
-students who studied more hours **tended to earn higher scores**.
+Even though the points don’t form a perfect line, there’s a **clear positive correlation**. Students who studied more hours **tended to earn higher scores**.
 
 A computer can calculate a line that best fits the data:
 
@@ -287,7 +286,7 @@ $$
 * The **slope (4.5)** means test scores increase about 4.5 points for each extra hour studied.
 * The **intercept (49.5)** means a student who didn’t study at all might score around 50%.
 
-This data shows a **moderate positive correlation** — most points stay fairly close to the line,
+This data shows a **moderate positive correlation**, most points stay fairly close to the line,
 but not perfectly so.
 
 :::{.think title="How can we use the line to make predictions?"}
@@ -304,7 +303,7 @@ A student who studies for **7 hours** would be predicted to score about **81%**.
 
 **Example 7:** Car weight and fuel economy
 
-Car weight and fuel efficiency are also related — but in the **opposite direction**.
+Car weight and fuel efficiency are also related, but in the **opposite direction**.
 There’s a **strong negative correlation**: heavier cars usually get **fewer miles per gallon**.
 
 ![](/images/Unit_4/Lesson_6/Example7.png){width="500px" fig-align="center"}
@@ -316,10 +315,10 @@ F(w) = -0.007w + 70
 $$
 
 * The **negative slope (-0.007)** means that for every additional pound,
-  fuel economy drops by about **0.007 mpg** — roughly **0.7 mpg less per 100 lb**.
+  fuel economy drops by about **0.007 mpg**, roughly **0.7 mpg less per 100 lb**.
 * The **intercept (70)** helps the line fit the trend but doesn’t represent a real car.
 
-Here, the points stay very close to the line — showing a much **stronger correlation**
+Here, the points stay very close to the line, showing a much **stronger correlation**
 than the test score data. As weight increases, mpg decreases in a nearly straight-line pattern.
 
 :::{.you-try title="Predict the fuel efficiency for a car weighing 3450 lbs."}
@@ -479,29 +478,29 @@ For numbers 12-15, describe the trend by giving:
 
 12.
 
-* **Direction:** Negative correlation — as temperature increases, hot chocolate sales decrease.
-* **Strength:** Strong — points are close to the line.
+* **Direction:** Negative correlation - as temperature increases, hot chocolate sales decrease.
+* **Strength:** Strong - points are close to the line.
 * **Slope meaning:** Each additional $1^\circ\text{F}$ is associated with about 1-1.5 fewer cups sold.
 * **Y-intercept meaning:** At $0^\circ\text{F}$ (extrapolating beyond the plotted range), the model predicts about 120 cups.
 
 13.
 
-* **Direction:** Positive correlation — more review time, higher quiz scores.
-* **Strength:** Moderate — visible trend with some scatter.
+* **Direction:** Positive correlation - more review time, higher quiz scores.
+* **Strength:** Moderate - visible trend with some scatter.
 * **Slope meaning:** Each extra hour of video is associated with about a 5-6 point increase.
 * **Y-intercept meaning:** With 0 hours, the model predicts about 55%.
 
 14.
 
-* **Direction:** Negative correlation — more screen time, less sleep.
-* **Strength:** Weak to moderate — lots of scatter.
+* **Direction:** Negative correlation - more screen time, less sleep.
+* **Strength:** Weak to moderate - lots of scatter.
 * **Slope meaning:** Each additional hour of evening screen time is associated with about $0.3$ fewer hours of sleep (≈18 minutes).
 * **Y-intercept meaning:** With 0 hours of screen time, the model predicts about 8 hours of sleep.
 
 15.
 
-* **Direction:** Negative correlation — more practice, faster (lower) race times.
-* **Strength:** Strong — points are close to the line.
+* **Direction:** Negative correlation - more practice, faster (lower) race times.
+* **Strength:** Strong - points are close to the line.
 * **Slope meaning:** Each extra hour of weekly practice is associated with roughly a $0.6$ minute reduction in race time.
 * **Y-intercept meaning:** With 0 hours of practice, predicted time is about 22 minutes.
 

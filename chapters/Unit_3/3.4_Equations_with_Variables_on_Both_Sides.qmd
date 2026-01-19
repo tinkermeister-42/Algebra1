@@ -1,6 +1,6 @@
 #  3.4 - Solving Equations With Variables on Both Sides {.unnumbered}
 
-So far, every equation we solved had the variable on one side only. That made it clear where to “aim” our work — get the variable by itself on that side. But in real problems, equations aren’t always so neat. Sometimes the variable shows up on both sides of the equal sign.
+So far, every equation we solved had the variable on one side only. That made it clear where to “aim” our work, get the variable by itself on that side. But in real problems, equations aren’t always so neat. Sometimes the variable shows up on both sides of the equal sign.
 
 In this lesson, you’ll learn how to bring all the variable terms together, simplify what’s left, and then solve.
 

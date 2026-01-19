@@ -1,14 +1,14 @@
 # 4.5 - Systems of Equations {.unnumbered}
 
-So far, you’ve graphed **one line at a time** — each showing a single rule or relationship.
+So far, you’ve graphed **one line at a time**, each showing a single rule or relationship.
 But life isn’t always that simple.
 
 Imagine comparing two phone plans.
 Each one has a different starting fee and a different rate per minute.
 You might wonder: **When will they cost the same?**
 
-That kind of question can’t be answered with just one line — you have to see **both relationships together**.
-When two lines meet, they show a shared truth — a point that works for *both* situations.
+That kind of question can’t be answered with just one line, you have to see **both relationships together**.
+When two lines meet, they show a shared truth, a point that works for *both* situations.
 
 That’s the idea behind a **system of equations**.
 

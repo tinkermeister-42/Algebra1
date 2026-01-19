@@ -271,7 +271,7 @@ Sometimes you’ll multiply expressions like:
 
 $$(x + 2)(x - 5)(2x + 3)$$
 
-You can still use area models — just do it in **steps**.
+You can still use area models, just do it in **steps**.
 
 Multiply the first two polynomials.
 Then multiply the result by the third.

@@ -356,6 +356,20 @@ The difference is the result of subtracting one number or expression from anothe
 
 ***
 
+### Difference of Squares {#glossary-difference-of-squares}
+
+A **difference of squares** is an expression where one square is subtracted from another square. These expressions can be factored into two binomials.
+
+> **Example:**
+>
+> $x^2 - 9$ is a difference of squares because $x^2 = (x)^2$ and $9 = (3)^2$.
+>
+> It factors as $(x + 3)(x - 3)$.
+
+**See Also:** {{< glink factorable >}}
+
+***
+
 ### Discount {#glossary-discount}
 
 A discount is an amount **taken off the original price**. It’s usually shown as a percent.
@@ -616,6 +630,20 @@ If you can split something into equal groups with no leftovers, the group size i
 *Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink "greatest common factor" >}} giving $2(x-1)$*.
 
 **See Also:** {{< glink "factor tree" >}}, {{< glink factoring >}}, {{< glink "whole number" >}}, {{< glink multiple >}}, {{< glink "greatest common factor" >}}
+
+***
+
+### Factorable {#glossary-factorable}
+
+An expression is **factorable** if it can be written as a product of simpler expressions. Factoring often makes equations easier to solve or expressions easier to work with.
+
+> **Example:**
+>
+> $x^2 - 5x$ is factorable.
+>
+> It can be written as $x(x - 5)$.
+
+**See Also:** {{< glink "difference of squares" >}}, {{< glink "perfect square trinomial" >}}
 
 ***
 
@@ -1423,6 +1451,20 @@ A percent is a way of expressing a number **out of 100**. The symbol **%** means
 
 ***
 
+### Perfect Square Trinomial {#glossary-perfect-square-trinomial}
+
+A **perfect square trinomial** is a trinomial that can be written as the square of a binomial. It comes from squaring a binomial like $(x + a)^2$ or $(x - a)^2$.
+
+> **Example:**
+>
+> $x^2 + 6x + 9$ is a perfect square trinomial.
+>
+> It factors as $(x + 3)^2$.
+
+**See Also:** {{< glink factorable >}}
+
+***
+
 ### Point-Slope Form {#glossary-point-slope-form}
 
 A way to write the equation of a line when you know its **slope** and **one point** on the line.
@@ -1682,17 +1724,6 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 > If there are 6 boys and 4 girls in a group, the ratio of boys to girls is 6 to 4, or 3 to 2 after simplifying.
 
 **See Also:** {{< glink fraction >}}, {{< glink quotient >}}
-
-***
-
-### Range {#glossary-range}
-
-The **range** of a relationship or function is the set of all **output values** it can produce.
-
-> **Example:**  
-> If $f(x) = 2x + 3$ and the domain is $x = 1, 2, 3$, then the outputs are $5, 7, 9$. The range is $\{5, 7, 9\}$.
-
-**See Also:** {{< glink domain >}}, {{< glink function >}}, {{< glink output >}}
 
 ***
 

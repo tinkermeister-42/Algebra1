@@ -33,7 +33,7 @@ Simplify before you solve. Distribute to remove parentheses, combine like terms,
 Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.
 
 [**Equations with No or Infinite Solutions**](3.5_Equations_with_No_or_Infinite_Solutions.html)
-Recognize when both sides match perfectly—or never will—and explain what that means.
+Recognize when both sides match perfectly (or never will) and explain what that means.
 
 [**Solving Inequalities**](3.6_Solving_Inequalities.html)
 Represent ranges of solutions on a number line and remember to **flip the sign** when multiplying or dividing by a negative.

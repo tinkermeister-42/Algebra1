@@ -32,7 +32,7 @@ Break numbers into their prime building blocks using factor trees.
 Use prime factorization to find the GCF and simplify fractions to their simplest form.
 
 [**Multiply, Divide & Compare Fractions**](1.4_Multiply_Divide_&_Compare_Fractions.html)  
-Work with fractions in ways that actually show up in Algebra — simplify, multiply, divide, and compare.
+Work with fractions in ways that actually show up in Algebra (simplify, multiply, divide, and compare).
 
 [**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.qmd)
 Learn to add and subtract fractions by finding a common denominator.

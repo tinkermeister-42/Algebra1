@@ -1,9 +1,9 @@
 # 4.7 - Graphing Linear Inequalities {.unnumbered}
 
 You’ve learned how to **graph lines** from equations like $y = 2x + 3$.
-Now we’ll take that same idea and add one new twist — an **inequality symbol**.
+Now we’ll take that same idea and add one new twist, an **inequality symbol**.
 
-When we switch from **equations** to **inequalities**, we’re no longer looking for one line that fits. We’re looking for **all the points that make the inequality true** — a whole region of the graph.
+When we switch from **equations** to **inequalities**, we’re no longer looking for one line that fits. We’re looking for **all the points that make the inequality true**, a whole region of the graph.
 
 :::{.objectives}
 
@@ -196,7 +196,7 @@ $$
 
 ### 4.7.3 - Systems of Linear Inequalities
 
-So far, you’ve graphed a **single inequality** — one shaded region showing all the points that make it true.
+So far, you’ve graphed a **single inequality**, one shaded region showing all the points that make it true.
 
 A **system of inequalities** means you have **two or more inequalities** on the same graph.
 Each one creates its own shaded region.
@@ -267,7 +267,7 @@ $$
 
 :::{.remember title="What the overlap means"}
 Each shaded region shows where **one inequality** is true.
-The **overlap** shows where **all inequalities** are true together — the solution set.
+The **overlap** shows where **all inequalities** are true together, the solution set.
 
 In real-world problems, this region represents all combinations that **meet every condition** (for example, time, budget, or resource limits).
 :::

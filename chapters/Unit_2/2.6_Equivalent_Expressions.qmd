@@ -1,10 +1,10 @@
 # 2.6 - Equivalent Expressions {.unnumbered}
 
-When you visit another country, you might hear the same word said in different ways. *Hello*, *hola*, *bonjour* — all mean the same thing, but they look and sound different.
+When you visit another country, you might hear the same word said in different ways. *Hello*, *hola*, *bonjour*, all mean the same thing, but they look and sound different.
 
 Math is like that too. An idea can be written many different ways. $2(x+3)$ and $2x+6$ look different, but they both “say” the same thing. We call such pairs **equivalent expressions**. 
 
-In this lesson, you’ll learn how to recognize when expressions are equivalent by simplifying, using substitution, and thinking logically. This idea is a big deal in Algebra — especially when we start solving equations in Unit 3.
+In this lesson, you’ll learn how to recognize when expressions are equivalent by simplifying, using substitution, and thinking logically. This idea is a big deal in Algebra, especially when we start solving equations in Unit 3.
 
 ***
 

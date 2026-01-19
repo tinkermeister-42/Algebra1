@@ -45,7 +45,7 @@ A **power** has two parts, a {{< glink base >}} and an {{< glink exponent >}}:
 
 For example, $5^3 = 5 \cdot 5 \cdot 5 = 125$.
 The base is 5. The exponent is 3.
-When two powers share the same base — like $x^2$ and $x^5$ — we call them **like bases**.
+When two powers share the same base (like $x^2$ and $x^5$) we call them **like bases**.
 That’s when these exponent rules apply.
 
 ***
@@ -232,7 +232,7 @@ $$
 
 #### Rule 5 - Power of a Quotient
 
-The same idea works for fractions — both numerator and denominator get the exponent.
+The same idea works for fractions, both numerator and denominator get the exponent.
 
 $$
 \begin{aligned}
@@ -421,7 +421,7 @@ $$
 
 * $(-3)^2=9$, but $-3^2=-9$. The negative must be inside parentheses to be part of the base.
 * Exponents distribute over multiplication/division, **not** over addition/subtraction: $(x+y)^2\ne x^2+y^2$.
-* A negative exponent doesn’t make the number negative — it moves the base to the other side of the fraction bar.
+* A negative exponent doesn’t make the number negative, it moves the base to the other side of the fraction bar.
 * $a^0=1$ **not** 0.
 
 :::

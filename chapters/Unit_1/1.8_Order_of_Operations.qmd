@@ -348,8 +348,8 @@ PEMDAS starts with **grouping**, and that means more than just parentheses!
 
 These all group parts of an expression:
 
-- $(...)$ — parentheses
-- $[\,]$ or $\{\,\}$ — brackets/braces (used for nesting)
+- $(...)$: parentheses
+- $[\,]$ or $\{\,\}$: brackets/braces (used for nesting)
 - Fraction bars $\frac{a}{b}$
 - Square roots $\sqrt{a + b}$
 

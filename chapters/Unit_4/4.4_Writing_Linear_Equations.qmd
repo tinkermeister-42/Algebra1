@@ -9,7 +9,7 @@ $$
 y = mx + b
 $$
 
-The key is to recognize what you already know — the **slope**, a **point**, or both — and use it to build the rule for your line.
+The key is to recognize what you already know (the **slope**, a **point**, or both) and use it to build the rule for your line.
 
 :::{.objectives}
 
@@ -47,7 +47,7 @@ The key is to recognize what you already know — the **slope**, a **point**, or
 
 ### 4.4.1 - Slope and Intercept Are Known
 
-This is the easiest kind of problem because you already know both parts of the rule — the slope ($m$) and the y-intercept ($b$).
+This is the easiest kind of problem because you already know both parts of the rule, the slope ($m$) and the y-intercept ($b$).
 
 Those two numbers are all you need to write an equation in slope-intercept form:
 
@@ -106,7 +106,7 @@ So, if you can find $m$ and $b$ from the graph, you can write its equation immed
 
 **Steps:**
 
-1. Find where the line crosses the y-axis — that’s **$b$**.
+1. Find where the line crosses the y-axis, that’s **$b$**.
 2. Pick two clear points and count the **rise** and **run** to find **$m$**.
 3. Substitute $m$ and $b$ into $y = mx + b$.
 
@@ -166,7 +166,7 @@ $$
 
 ### 4.4.3 - Slope and a Point Are Known
 
-Sometimes you know the **slope** of a line and just **one point** it passes through — but not the y-intercept. That’s okay! You can still find the full equation by plugging the point into the rule for a line and solving for $b$.
+Sometimes you know the **slope** of a line and just **one point** it passes through, but not the y-intercept. That’s okay! You can still find the full equation by plugging the point into the rule for a line and solving for $b$.
 
 Remember, every line follows:
 
@@ -267,7 +267,7 @@ $$
 
 ### 4.4.4 - Two Points Are Known
 
-Sometimes you don’t know the slope **or** the intercept — just **two points** the line passes through. That’s all you need! You can find the slope from the two points, then use what you learned in the last section to find $b$ and write the full equation.
+Sometimes you don’t know the slope **or** the intercept, just **two points** the line passes through. That’s all you need! You can find the slope from the two points, then use what you learned in the last section to find $b$ and write the full equation.
 
 Every line still follows:
 
@@ -300,7 +300,7 @@ $$
 m = \frac{5 - 2}{4 - 1} = \frac{3}{3} = 1
 $$
 
-Now use $m = \textcolor{blue}{1}$ and one of the points — let’s use $(\textcolor{green}{1}, \textcolor{red}{2})$ — to find $b$:
+Now use $m = \textcolor{blue}{1}$ and one of the points, let’s use $(\textcolor{green}{1}, \textcolor{red}{2})$, to find $b$:
 
 $$
 \begin{aligned}
@@ -365,7 +365,7 @@ $$
 ### 4.4.5 - Parallel and Perpendicular Lines (Optional)
 
 Sometimes you’re asked to write the equation of a line that’s **parallel** or **perpendicular** to another line and passes through a given point.
-The process is nearly the same as before — the only difference is how you find the slope.
+The process is nearly the same as before, the only difference is how you find the slope.
 
 * **Parallel lines** have the **same slope**.
 

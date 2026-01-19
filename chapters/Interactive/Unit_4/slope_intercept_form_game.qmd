@@ -8,7 +8,7 @@ Match the **hidden target line** using slope–intercept form ($y = mx + b$).
 
 1. Hit **Start** to begin a round.
 2. Enter your **$m$** and **$b$**, then press **Apply** to reveal your guess.
-3. You have limited **moves**, and (if enabled) a **timer** — faster matches earn bigger multipliers.
+3. You have limited **moves**, and (if enabled) a **timer**, faster matches earn bigger multipliers.
 4. Correct answers give points; every **100 points** = **+1 life**.
 5. Run out of moves or lives and the game ends.
 

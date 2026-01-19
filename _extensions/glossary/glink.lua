@@ -33,7 +33,7 @@ return {
 
     -- If still nothing, fail loudly
     if not display or display == "" then
-      return pandoc.Span({ pandoc.Str("{{glink:missing-term}}") }, { class = "glink-error" })
+      return pandoc.Span({ pandoc.Str("{{glink:missing-term}}") }, pandoc.Attr("", { "glink-error" }, {}))
     end
 
     if not slug or slug == "" then
@@ -49,6 +49,6 @@ return {
       href = href
     }
 
-    return pandoc.Link(display, "", "", attr)
+    return pandoc.Link({pandoc.Str(display)}, "", "", attr)
   end
 }

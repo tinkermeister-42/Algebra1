@@ -49,7 +49,7 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 
 In the last lesson, when we moved variables to one side, we always ended up with a single answer like $x = 4$. But sometimes, something different happens. After simplifying, the variables cancel out and we’re left with a statement that is **false**.
 
-When this happens, the equation has **no solution** — there is no value that will make both sides equal.
+When this happens, the equation has **no solution**, there is no value that will make both sides equal.
 
 ***
 

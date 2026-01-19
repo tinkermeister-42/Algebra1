@@ -4,7 +4,7 @@ In the last lessons, you learned how to solve one-step and two-step {{< glink sl
 
 But not every equation is that neat. Sometimes parentheses get in the way, or extra terms make things look messy. These are called multi-step equations.
 
-In this lesson, you’ll learn how to simplify first — by using the distributive property and combining like terms — and then solve the equation step by step. We’ll also practice checking our solutions to be sure they really work.
+In this lesson, you’ll learn how to simplify first (by using the distributive property and combining like terms) and then solve the equation step by step. We’ll also practice checking our solutions to be sure they really work.
 
 :::{.objectives}
 - [ ] I can apply the distributive property to simplify equations
@@ -29,7 +29,7 @@ In this lesson, you’ll learn how to simplify first — by using the distributi
 
 ### 3.3.1 - Distribution in Equations
 
-Sometimes equations have parentheses. When that happens, you can’t get the variable by itself right away—you have to **simplify first**. This is where the **distributive property** comes in.
+Sometimes equations have parentheses. When that happens, you can’t get the variable by itself right away, you have to **simplify first**. This is where the **distributive property** comes in.
 
 Remember from Lesson 2.4:
 
@@ -243,7 +243,7 @@ $$
 ### 3.3.3 - Word Problems with Multi-Step Equations
 
 Some problems lead to equations that look “messier” because they include parentheses or more than one set of like terms.
-We solve them the same way — by simplifying first, then isolating the variable.
+We solve them the same way, by simplifying first, then isolating the variable.
 
 ***
 

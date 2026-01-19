@@ -3,7 +3,7 @@
 Imagine you’re asked to solve for time $t$ in the equation $d = rt$.
 You might recognize this as the distance formula: *distance = rate × time.*
 
-If you know any two of these values, you can find the third — but what if you need to *rearrange the formula itself*?
+If you know any two of these values, you can find the third, but what if you need to *rearrange the formula itself*?
 That’s what we call a **literal equation**.
 
 Literal equations use letters (or “literals”) to represent variables, so solving them means isolating one variable in terms of the others.
@@ -47,7 +47,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 ### 3.7.1 - What Is a Literal Equation?
 
 A **literal equation** is an equation made mostly of letters.
-You can think of it as a formula — like $A = lw$ for the area of a rectangle or $P = 2l + 2w$ for its perimeter.
+You can think of it as a formula, like $A = lw$ for the area of a rectangle or $P = 2l + 2w$ for its perimeter.
 
 When we solve a literal equation, our goal is to **isolate one variable** using the same inverse operations we use in regular equations.
 

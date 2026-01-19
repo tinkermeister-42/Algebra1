@@ -1,11 +1,11 @@
 # 4.2 - Understanding Slope {.unnumbered}
 
 In the previous lesson, you graphed straight lines by making a table of $x$ and $y$ values.
-Different equations made different graphs, but they were all **linear** — their points lined up perfectly.
+Different equations made different graphs, but they were all **linear**, their points lined up perfectly.
 
 In real-world situations, we often want to compare how fast things change.
 Some lines rise quickly, some fall, and others stay flat.
-That rate of change is called the **slope** — one of the most important ideas in algebra.
+That rate of change is called the **slope**, one of the most important ideas in algebra.
 
 :::{.objectives}
 
@@ -42,8 +42,8 @@ Each step moves you **forward** and also **up or down**.
 How much you go up compared to how much you go forward tells how steep the stairs are.
 
 That comparison is what mathematicians call **slope**.
-It measures how something tilts — both its **direction** (up or down) and its **steepness**.
-We use the letter **m** for slope — think of it as a *measure* of change:
+It measures how something tilts, both its **direction** (up or down) and its **steepness**.
+We use the letter **m** for slope, think of it as a *measure* of change:
 
 $$
 m = \frac{\text{rise}}{\text{run}}
@@ -51,8 +51,8 @@ $$
 
 Instead of the words *rise* and *run*, we often describe slope using the Greek letter **Δ (delta)**, which means **change**:
 
-* **Δy** means “change in $y$” — how much the height changes.
-* **Δx** means “change in $x$” — how much we move forward.
+* **Δy** means “change in $y$”: how much the height changes.
+* **Δx** means “change in $x$”: how much we move forward.
 
 So the slope formula can also be written as:
 
@@ -61,11 +61,11 @@ m = \frac{\Delta y}{\Delta x}
 $$
 
 This tells us how much $y$ changes for each change in $x$.
-If $y$ increases as $x$ increases, the slope is **positive** — the line (or stairs) goes up as you move right.
-If $y$ decreases as $x$ increases, the slope is **negative** — it goes down instead.
-And if $y$ changes more sharply, the slope has a **larger** value — it’s steeper.
+If $y$ increases as $x$ increases, the slope is **positive**, the line (or stairs) goes up as you move right.
+If $y$ decreases as $x$ increases, the slope is **negative**, it goes down instead.
+And if $y$ changes more sharply, the slope has a **larger** value, it’s steeper.
 
-Each stairway above has a different amount of up-and-over change — a different slope.
+Each stairway above has a different amount of up-and-over change, a different slope.
 In the next section, we’ll place these same stairways on a coordinate grid so we can measure those changes exactly.
 
 :::{.think title="What do you notice about how the change in y compares to the change in x in each panel?"}
@@ -83,7 +83,7 @@ In the next section, we’ll place these same stairways on a coordinate grid so 
 
 Now that you’ve seen slope as the amount of change in $y$ compared to change in $x$, let’s put numbers to that idea.
 
-We’ll look at the same stairways again — this time drawn on a coordinate grid — so you can measure each change directly and see how slope connects to a line on a graph.
+We’ll look at the same stairways again, this time drawn on a coordinate grid, so you can measure each change directly and see how slope connects to a line on a graph.
 
 ![](/images/Unit_4/Lesson_2/stairs_xkcd_grid.png){width="500px" fig-align="center"}
 
@@ -111,7 +111,7 @@ Let's find the slope of this line like we did with the stairs.
 
 ![](/images/Unit_4/Lesson_2/Example2A.png){width="400px" fig-align="center"}
 
-First, we pick two clear points on the line — here, $(0,2)$ and $(5,6)$.
+First, we pick two clear points on the line, here, $(0,2)$ and $(5,6)$.
 
 ![](/images/Unit_4/Lesson_2/Example2B.png){width="400px" fig-align="center"}
 
@@ -149,7 +149,7 @@ In those cases, we use a formula to calculate slope exactly.
 
 ### 4.2.3 - Finding Slope Using the Slope Formula
 
-Whether we count boxes or use numbers directly, the idea is the same — slope measures how much $y$ changes for every change in $x$.
+Whether we count boxes or use numbers directly, the idea is the same, slope measures how much $y$ changes for every change in $x$.
 When counting is impractical, we can calculate slope using a simple formula.
 
 For the points $(x_1, y_1)$ and $(x_2, y_2)$, the slope is:
@@ -281,7 +281,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 4. A vertical line through $(x=-3)$.
 
-5. A line that goes down very slightly — almost flat — from left to right.
+5. A line that goes down very slightly, almost flat, from left to right.
 
 ***
 
