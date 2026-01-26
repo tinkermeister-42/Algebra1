@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit 4 - Slope-Intercept Form Investigation – DHS Algebra 1</title>
+<title>Unit 1 - Prime Factorization Game – DHS Algebra 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" rel="next">
-<link href="../../../chapters/Interactive/Unit_4/understanding_slope.html" rel="prev">
+<link href="../../../chapters/Interactive/Unit_4/understanding_slope.html" rel="next">
+<link href="../../../chapters/Interactive/index.html" rel="prev">
 <link href="../../../images/logo.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -92,35 +92,6 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../styles/custom-callouts.css">
@@ -148,7 +119,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html">Unit 4 - Slope-Intercept Form Investigation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_1/prime_factorization_game.html">Unit 1 - Prime Factorization Game</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -569,7 +540,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../chapters/Interactive/Unit_1/prime_factorization_game.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../chapters/Interactive/Unit_1/prime_factorization_game.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Unit 1 - Prime Factorization Game</span></a>
   </div>
 </li>
@@ -581,7 +552,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 4 - Slope-Intercept Form Investigation</span></a>
   </div>
 </li>
@@ -657,15 +628,21 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#how-the-game-works" id="toc-how-the-game-works" class="nav-link active" data-scroll-target="#how-the-game-works">How the game works</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html">Unit 4 - Slope-Intercept Form Investigation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_1/prime_factorization_game.html">Unit 1 - Prime Factorization Game</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Unit 4 - Slope-Intercept Form Investigation</h1>
+<h1 class="title">Unit 1 - Prime Factorization Game</h1>
 </div>
 
 
@@ -682,464 +659,1353 @@ window.Quarto = {
 </header>
 
 
-<p>Sometimes the best way to learn math is to <strong>play around with it</strong>.</p>
-<p>Try moving the sliders in the interactive chart below. Watch what happens as you change <span class="math inline">\(m\)</span> (slope) and <span class="math inline">\(b\)</span> (y-intercept).</p>
-<p>As you explore, think about these questions:</p>
+<p>Sometimes the best way to understand a number is to <strong>take it apart</strong>.</p>
+<p>In this game, you’ll break numbers down step by step using a <strong>factor tree</strong>. Your goal is to end with only <strong>prime numbers</strong> and correctly identify them.</p>
+<section id="how-the-game-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-game-works">How the game works</h3>
+<ul>
+<li><strong>Click a number</strong> to split it into two factors.</li>
+<li><strong>Right-click a number</strong> to mark it as <strong>prime</strong>.</li>
+<li>A number marked with <strong>P</strong> means it’s been identified as <strong>prime</strong>.</li>
+<li>A number marked with <strong>C</strong> means it’s <strong>composite</strong> and has already been expanded.</li>
+</ul>
+<p>Build the tree until every branch ends in primes. Each correct move builds your <strong>streak</strong>, while mistakes reset it.</p>
+<p>As you play, think about questions like these:</p>
 <ol type="1">
-<li>What happens when you increase the slope from zero?</li>
-<li>What happens when you decrease the slope from zero?</li>
-<li>How does the line move when you change the y-intercept <span class="math inline">\(b\)</span>?</li>
-<li>How would you describe two lines that have the same slope but different y-intercepts?</li>
-<li>Could you make a <strong>vertical</strong> line with a tool like this? Why or why not?</li>
+<li>How can you tell whether a number should be expanded or marked prime?</li>
+<li>Does the order you choose factors matter for the final prime factorization?</li>
+<li>What mistakes are easy to make when factoring larger numbers?</li>
+<li>How do prime numbers behave differently from composite numbers in the tree?</li>
+<li>What patterns do you notice when numbers have repeated prime factors?</li>
 </ol>
-<!-- widgets/line-equation.html (v8) : HiDPI + crisp 1px lines -->
-<div class="leq3-root" data-m="1.0" data-b="0.0">
+<p>Try to factor each number as cleanly and efficiently as you can.</p>
+<!-- factor_tree_build_mode.html -->
+<div id="ftg_root">
 
 </div>
-<style>
-  .leq3-root {
-    max-width: 600px;
-    /* increase if you want a larger plot */
-    /* border: 1px solid #e5e7eb; */
-    border-radius: 12px;
-    padding: 10px;
-    margin: 1rem 0;
-    background: #fff;
-  }
-
-  .leq3-grid {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 84px auto;
-    gap: 5px;
-    align-items: start;
-  }
-
-  .leq3-bline {
-    grid-column: 1;
-    grid-row: 2;
-    position: relative;
-  }
-
-  .leq3-mline {
-    grid-column: 2;
-    grid-row: 1;
-    position: relative;
-  }
-
-  .leq3-plot {
-    grid-column: 2;
-    grid-row: 2;
-    position: relative;
-  }
-
-  .leq3-nline-h {
-    width: 100%;
-    height: 80px;
-    display: block;
-    background: #fff;
-  }
-
-  .leq3-nline-v {
-    width: 100px;
-    height: 100%;
-    display: block;
-    background: #fff;
-  }
-
-  .leq3-nline-h,
-  .leq3-nline-v {
-    touch-action: none;
-    -ms-touch-action: none;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: pointer;
-  }
-
-  .leq3-canvas {
-    width: 100%;
-    height: auto;
-    display: block;
-    background: #fff;
-    /* border: 1px solid #e5e7eb; */
-    border-radius: 10px;
-  }
-
-  .leq3-label {
-    position: absolute;
-    pointer-events: none;
-    font: 600 13px ui-sans-serif, system-ui;
-    color: #0f172a;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    padding: 2px 8px;
-  }
-
-  .leq3-label.m {
-    left: -10px;
-    top: 45%;
-    transform: translateY(-50%);
-  }
-
-  /* left edge of horizontal slider */
-  .leq3-label.b {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* top edge of vertical slider */
-</style>
 <script>
-  (function () {
-    function initAll() {
-      document.querySelectorAll('.leq3-root').forEach(initWidget);
+(() => {
+  const rootEl = document.getElementById("ftg_root");
+  if (!rootEl) return;
+
+  /* ================= CONFIG ================= */
+  const CFG = {
+    canvasW: 640,
+    canvasH: 520,
+    padX: 46,
+    padY: 46,
+
+    nodeW: 68,
+    nodeH: 28,
+    minLeafGap: 34,
+    minRowGap: 52,
+
+    // When the tree must compress to fit (wide trees like 1024),
+    // shrink pills a bit instead of allowing overlap.
+    minNodeW: 44,
+    minNodeH: 24,
+
+    candidates: [
+      6, 8, 9, 10, 12, 14, 15, 16, 18, 20,
+      24, 27, 28, 30, 32, 36, 40, 42, 45, 48,
+      54, 56, 60, 63, 64, 70, 72, 75, 80, 84,
+      90, 96, 98, 100, 105, 108, 112, 120, 126, 128,
+      135, 140, 144, 150, 160, 168, 180, 192, 200, 210,
+      216, 224, 240, 252, 256, 280, 288, 300, 320, 336,
+      360, 420, 480, 512, 720, 840, 960, 1008, 1024
+    ],
+
+    // Hard mode
+    hardMaxN: 2048,
+    hardWeightPow: 2, // superlinear weighting by total prime factors
+
+    themes: [
+      { id: "theme-ocean", label: "Ocean" },
+      { id: "theme-midnight", label: "Midnight" },
+      { id: "theme-darcula", label: "Darcula" },
+      { id: "theme-terminal", label: "Terminal" }
+    ],
+
+    storageKeyTheme: "ftg_theme_v3",
+    storageKeyMode: "ftg_mode_v1" // "easy" | "hard"
+  };
+
+  /* ================= UTIL ================= */
+  const isInt = (n) => Number.isInteger(n);
+
+  function isPrime(n) {
+    if (!isInt(n) || n < 2) return false;
+    if (n % 2 === 0) return n === 2;
+    for (let d = 3; d * d <= n; d += 2) {
+      if (n % d === 0) return false;
     }
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initAll, { once: true });
-    } else {
-      initAll();
+    return true;
+  }
+
+  function factorPairs(n) {
+    const out = [];
+    if (!isInt(n) || n < 4) return out;
+    for (let a = 2; a * a <= n; a++) {
+      if (n % a === 0) out.push([a, n / a]);
     }
+    return out;
+  }
 
-    function initWidget(root) {
-      if (root.__init) return;
-      root.__init = true;
-
-      const state = {
-        m: round1(parseFloat(root.dataset.m ?? 1.0)),
-        b: round1(parseFloat(root.dataset.b ?? 0.0)),
-        xmin: -10, xmax: 10, ymin: -10, ymax: 10
-      };
-
-      const grid = el('div', 'leq3-grid');
-
-      const mWrap = el('div', 'leq3-mline');
-      const mCanvas = el('canvas', 'leq3-nline-h');
-      const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
-      mWrap.append(mCanvas, mLabel);
-
-      const bWrap = el('div', 'leq3-bline');
-      const bCanvas = el('canvas', 'leq3-nline-v');
-      const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
-      bWrap.append(bCanvas, bLabel);
-
-      const plot = el('div', 'leq3-plot');
-      const canvas = el('canvas', 'leq3-canvas');
-      plot.append(canvas);
-
-      grid.append(bWrap, mWrap, plot);
-      root.append(grid);
-
-      const M = { left: 40, right: 40, top: 64, bottom: 40 };
-
-      function worldToPix(x, y, W, H) {
-        const innerW = W - M.left - M.right;
-        const innerH = H - M.top - M.bottom;
-        const sx = innerW / (state.xmax - state.xmin);
-        const sy = innerH / (state.ymax - state.ymin);
-        const px = M.left + (x - state.xmin) * sx;
-        const py = M.top + innerH - (y - state.ymin) * sy;
-        return [px, py];
-      }
-
-      let rafId = null;
-      function scheduleDraw() {
-        if (rafId !== null) return;
-        rafId = requestAnimationFrame(() => { rafId = null; drawMain(); });
-      }
-
-      // --- HiDPI sizing helper: draw in CSS units, canvas scaled internally
-      function sizeForDPR(canvas, cssW, cssH) {
-        const dpr = window.devicePixelRatio || 1;
-        canvas.style.width = cssW + 'px';
-        canvas.style.height = cssH + 'px';
-        canvas.width = Math.max(1, Math.floor(cssW * dpr));
-        canvas.height = Math.max(1, Math.floor(cssH * dpr));
-        const ctx = canvas.getContext('2d');
-        // Use CSS pixel space for drawing
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        return { ctx, dpr };
-      }
-
-      function drawMain() {
-        const Wcss = canvas.clientWidth | 0;
-        const Hcss = canvas.clientHeight | 0;
-        if (!Wcss || !Hcss) return;
-
-        const ctx = canvas.getContext('2d'); // already scaled by sizeForDPR
-        ctx.clearRect(0, 0, Wcss, Hcss);
-
-        const gridCol = '#cbd5e1', axisCol = '#1e293b', tickCol = '#334155',
-          lineCol = '#0e7490', interceptCol = '#111827';
-
-        // Grid
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = gridCol;
-        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-          const [px0, py0] = worldToPix(x, state.ymin, Wcss, Hcss);
-          const [px1, py1] = worldToPix(x, state.ymax, Wcss, Hcss);
-          const X = Math.round(px0) + 0.5; // crisp 1px
-          ctx.beginPath();
-          ctx.moveTo(X, py0);
-          ctx.lineTo(X, py1);
-          ctx.stroke();
-        }
-        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-          const [px0, py0] = worldToPix(state.xmin, y, Wcss, Hcss);
-          const [px1, py1] = worldToPix(state.xmax, y, Wcss, Hcss);
-          const Y = Math.round(py0) + 0.5; // crisp 1px
-          ctx.beginPath();
-          ctx.moveTo(px0, Y);
-          ctx.lineTo(px1, Y);
-          ctx.stroke();
-        }
-
-        // Axes
-        ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8;
-        const [xL, y0] = worldToPix(state.xmin, 0, Wcss, Hcss);
-        const [xR] = worldToPix(state.xmax, 0, Wcss, Hcss);
-        const yAxisPx = Math.round(y0) + 0.5;
-        ctx.beginPath(); ctx.moveTo(xL, yAxisPx); ctx.lineTo(xR, yAxisPx); ctx.stroke();
-
-        const [x0, yB] = worldToPix(0, state.ymin, Wcss, Hcss);
-        const [, yT] = worldToPix(0, state.ymax, Wcss, Hcss);
-        const xAxisPx = Math.round(x0) + 0.5;
-        ctx.beginPath(); ctx.moveTo(xAxisPx, yB); ctx.lineTo(xAxisPx, yT); ctx.stroke();
-
-        // Ticks + labels
-        ctx.fillStyle = tickCol; ctx.font = '12px system-ui';
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1;
-        for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
-          const [px] = worldToPix(x, 0, Wcss, Hcss);
-          const X = Math.round(px) + 0.5;
-          ctx.beginPath(); ctx.moveTo(X, yAxisPx - 5); ctx.lineTo(X, yAxisPx + 5); ctx.stroke();
-          if (x !== 0) ctx.fillText(String(x), X - 4, yAxisPx + 18);
-        }
-        for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
-          const [, py] = worldToPix(0, y, Wcss, Hcss);
-          const Y = Math.round(py) + 0.5;
-          ctx.beginPath(); ctx.moveTo(xAxisPx - 5, Y); ctx.lineTo(xAxisPx + 5, Y); ctx.stroke();
-          if (y !== 0) ctx.fillText(String(y), xAxisPx + 8, Y + 4);
-        }
-
-        // Line segment within bounds
-        const m = state.m, b = state.b;
-        const pts = [];
-        const yL = m * state.xmin + b, yR = m * state.xmax + b;
-        addIf(state.xmin, yL); addIf(state.xmax, yR);
-        if (Math.abs(m) > 1e-12) {
-          const xB = (state.ymin - b) / m; addIf(xB, state.ymin);
-          const xT = (state.ymax - b) / m; addIf(xT, state.ymax);
-        }
-        function addIf(x, y) {
-          if (x >= state.xmin - 1e-9 && x <= state.xmax + 1e-9 && y >= state.ymin - 1e-9 && y <= state.ymax + 1e-9)
-            pts.push([x, y]);
-        }
-        if (pts.length >= 2) {
-          const [x1, y1] = worldToPix(pts[0][0], pts[0][1], Wcss, Hcss);
-          const [x2, y2] = worldToPix(pts[1][0], pts[1][1], Wcss, Hcss);
-          ctx.strokeStyle = lineCol; ctx.lineWidth = 2.2;
-          ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
-        }
-
-        // y-intercept dot
-        if (b >= state.ymin && b <= state.ymax) {
-          const [ix, iy] = worldToPix(0, b, Wcss, Hcss);
-          ctx.fillStyle = interceptCol;
-          ctx.beginPath(); ctx.arc(ix, iy, 4, 0, Math.PI * 2); ctx.fill();
-        }
-
-        // Equation badge
-        const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? '+' : '−'} ${Math.abs(b).toFixed(1)}`;
-        ctx.font = '14px system-ui';
-        const tw = ctx.measureText(eq).width;
-        const bx = Wcss - M.right - tw - 28;
-        const by = Math.max(18, Math.floor(M.top * 0.45) + 10);
-        ctx.fillStyle = 'rgba(14,116,144,0.18)';
-        roundRect(ctx, bx, by - 20, tw + 32, 28, 10, true, false);
-        ctx.fillStyle = lineCol; ctx.fillText(eq, bx + 14, by - 3);
-      }
-
-      function sizePlot() {
-        const rect = plot.getBoundingClientRect();
-        const Wcss = Math.max(460, Math.floor(rect.width));
-        const Hcss = Wcss; // keep square
-        sizeForDPR(canvas, Wcss, Hcss);
-      }
-
-      const h = { min: -10, max: 10, step: 0.1, cur: state.m };
-      function redrawH() {
-        const rect = mCanvas.getBoundingClientRect();
-        const Wcss = Math.max(300, Math.floor(rect.width));
-        const Hcss = 80;
-        const { ctx } = sizeForDPR(mCanvas, Wcss, Hcss);
-
-        const y = Math.floor(Hcss * 0.44) + 0.5; // crisp line
-        ctx.strokeStyle = '#e2e8f0';
-        ctx.lineWidth = 10; ctx.lineCap = 'round';
-        ctx.beginPath(); ctx.moveTo(34, y); ctx.lineTo(Wcss - 34, y); ctx.stroke();
-
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
-        for (let t = Math.ceil(h.min); t <= Math.floor(h.max); t++) {
-          const x = Math.round(h_valToPx(t, Wcss)) + 0.5;
-          ctx.beginPath(); ctx.moveTo(x, y - 12); ctx.lineTo(x, y + 12); ctx.stroke();
-          ctx.fillText(String(t), x - 6, y + 36);
-        }
-
-        const x0 = Math.round(h_valToPx(0, Wcss)) + 0.5;
-        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-        ctx.beginPath(); ctx.moveTo(x0, y - 18); ctx.lineTo(x0, y + 18); ctx.stroke();
-
-        const hx = h_valToPx(h.cur, Wcss);
-        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.stroke();
-      }
-      function h_valToPx(v, W) {
-        const pad = 34, L = pad, R = W - pad;
-        const t = (v - h.min) / (h.max - h.min);
-        return L + t * (R - L);
-      }
-      function h_pxToVal(px, W) {
-        const pad = 34, L = pad, R = W - pad;
-        const t = clamp((px - L) / (R - L), 0, 1);
-        const raw = h.min + t * (h.max - h.min);
-        return roundTo(raw, h.step);
-      }
-
-      const v = { min: -10, max: 10, step: 0.1, cur: state.b };
-      function redrawV() {
-        const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 320;
-        const Wcss = 100, Hcss = Math.max(240, Math.floor(graphHcss));
-        const { ctx } = sizeForDPR(bCanvas, Wcss, Hcss);
-
-        const x = Math.floor(Wcss / 2) + 0.5;
-        const top = M.top, bottom = Hcss - 32;
-
-        ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round';
-        ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke();
-
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
-        for (let t = Math.ceil(v.min); t <= Math.floor(v.max); t++) {
-          const y = Math.round(v_valToPx(t, Hcss, top, bottom)) + 0.5;
-          ctx.beginPath(); ctx.moveTo(x - 12, y); ctx.lineTo(x + 12, y); ctx.stroke();
-          ctx.fillText(String(t), x + 22, y + 4);
-        }
-
-        const y0 = Math.round(v_valToPx(0, Hcss, top, bottom)) + 0.5;
-        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-        ctx.beginPath(); ctx.moveTo(x - 16, y0); ctx.lineTo(x + 16, y0); ctx.stroke();
-
-        const hy = v_valToPx(v.cur, Hcss, top, bottom);
-        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.stroke();
-      }
-      function v_valToPx(val, Hc, top, bottom) {
-        const T = top, B = bottom;
-        const t = (val - v.min) / (v.max - v.min);
-        return B - t * (B - T);
-      }
-      function v_pxToVal(py, Hc, top, bottom) {
-        const T = top, B = bottom;
-        const t = clamp((B - py) / (B - T), 0, 1);
-        const raw = v.min + t * (v.max - v.min);
-        return roundTo(raw, v.step);
-      }
-
-      // Dragging — unified Pointer Events (works for mouse, touch, pen)
-      let dragMode = null; // 'h' or 'v'
-
-      function onPointerDownH(e) {
-        dragMode = 'h';
-        mCanvas.setPointerCapture?.(e.pointerId);
-        onMoveH(e);
-        e.preventDefault();
-      }
-      function onPointerDownV(e) {
-        dragMode = 'v';
-        bCanvas.setPointerCapture?.(e.pointerId);
-        onMoveV(e);
-        e.preventDefault();
-      }
-
-      function onPointerMove(e) {
-        if (dragMode === 'h') onMoveH(e);
-        else if (dragMode === 'v') onMoveV(e);
-      }
-
-      function onPointerUp(e) {
-        if (dragMode === 'h') mCanvas.releasePointerCapture?.(e.pointerId);
-        if (dragMode === 'v') bCanvas.releasePointerCapture?.(e.pointerId);
-        dragMode = null;
-      }
-
-      // attach listeners (non-passive so we can preventDefault on touch)
-      mCanvas.addEventListener('pointerdown', onPointerDownH, { passive: false });
-      bCanvas.addEventListener('pointerdown', onPointerDownV, { passive: false });
-      window.addEventListener('pointermove', onPointerMove, { passive: false });
-      window.addEventListener('pointerup', onPointerUp, { passive: true });
-
-      // update helpers to read from PointerEvent (works for mouse/touch/pen)
-      function onMoveH(e) {
-        if (dragMode !== 'h') return;
-        const rect = mCanvas.getBoundingClientRect();
-        const px = e.clientX - rect.left;
-        const newVal = h_pxToVal(px, rect.width);
-        if (Math.abs(newVal - h.cur) > 1e-9) {
-          h.cur = newVal; state.m = newVal;
-          scheduleDraw(); redrawH();
-        }
-      }
-
-      function onMoveV(e) {
-        if (dragMode !== 'v') return;
-        const rect = bCanvas.getBoundingClientRect();
-        const py = e.clientY - rect.top;
-        const top = M.top, bottom = rect.height - 32;
-        const newVal = v_pxToVal(py, rect.height, top, bottom);
-        if (Math.abs(newVal - v.cur) > 1e-9) {
-          v.cur = newVal; state.b = newVal;
-          scheduleDraw(); redrawV();
-        }
-      }
-
-
-      // Resize observer to keep things sharp as layout changes
-      const ro = new ResizeObserver(() => {
-        sizePlot(); redrawH(); redrawV(); scheduleDraw();
-      });
-      ro.observe(root);
-
-      // Initial draw
-      sizePlot(); redrawH(); redrawV(); scheduleDraw();
-
-      // --- utils ---
-      function round1(x) { return Math.round(x * 10) / 10; }
-      function roundTo(x, step) { return Math.round(x / step) * step; }
-      function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
-      function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
-      function roundRect(ctx, x, y, w, h, r, fill, stroke) {
-        if (typeof r === 'number') r = { tl: r, tr: r, br: r, bl: r };
-        ctx.beginPath();
-        ctx.moveTo(x + r.tl, y);
-        ctx.lineTo(x + w - r.tr, y);
-        ctx.quadraticCurveTo(x + w, y, x + w, y + r.tr);
-        ctx.lineTo(x + w, y + h - r.br);
-        ctx.quadraticCurveTo(x + w, y + h, x + w - r.br, y + h);
-        ctx.lineTo(x + r.bl, y + h);
-        ctx.quadraticCurveTo(x, y + h, x, y + h - r.bl);
-        ctx.lineTo(x, y + r.tl);
-        ctx.quadraticCurveTo(x, y, x + r.tl, y);
-        if (fill) ctx.fill();
-        if (stroke) ctx.stroke();
+  function primeFactorList(n) {
+    const out = [];
+    let x = n;
+    for (let p = 2; p * p <= x; p += (p === 2 ? 1 : 2)) {
+      while (x % p === 0) {
+        out.push(p);
+        x = x / p;
       }
     }
+    if (x > 1) out.push(x);
+    return out;
+  }
+
+  function primeFactorCount(n) {
+    return primeFactorList(n).length;
+  }
+
+  function parseInputInt(s) {
+    if (!s) return null;
+    const v = Number(s);
+    if (!isInt(v) || v < 2) return null;
+    return v;
+  }
+
+  function toSup(n) {
+    const map = {
+      "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴",
+      "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹"
+    };
+    return String(n).split("").map((ch) => map[ch] || "").join("");
+  }
+
+  function compressFactorStringSup(factors) {
+    if (!factors.length) return "";
+    factors.sort((a, b) => a - b);
+    const parts = [];
+    let cur = factors[0];
+    let k = 1;
+    const push = () => {
+      if (k === 1) parts.push(String(cur));
+      else parts.push(String(cur) + toSup(k));
+    };
+    for (let i = 1; i < factors.length; i++) {
+      if (factors[i] === cur) k++;
+      else {
+        push();
+        cur = factors[i];
+        k = 1;
+      }
+    }
+    push();
+    return parts.join(" × ");
+  }
+
+  function clear(el) {
+    while (el.firstChild) el.removeChild(el.firstChild);
+  }
+
+  function el(tag, props, kids) {
+    const e = document.createElement(tag);
+    if (props) {
+      for (const k of Object.keys(props)) {
+        if (k === "class") e.className = props[k];
+        else if (k === "text") e.textContent = props[k];
+        else if (k === "on") {
+          for (const ev of Object.keys(props.on)) e.addEventListener(ev, props.on[ev]);
+        } else if (k === "style") {
+          Object.assign(e.style, props.style);
+        } else {
+          e.setAttribute(k, props[k]);
+        }
+      }
+    }
+    if (kids) for (const c of kids) e.appendChild(c);
+    return e;
+  }
+
+  function svgEl(tag, attrs) {
+    const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    if (attrs) {
+      for (const k of Object.keys(attrs)) e.setAttribute(k, attrs[k]);
+    }
+    return e;
+  }
+
+  function fitFont(inputEl) {
+    const len = (inputEl.value || "").length;
+    if (len >= 5) inputEl.style.fontSize = "10px";
+    else if (len === 4) inputEl.style.fontSize = "11px";
+    else if (len === 3) inputEl.style.fontSize = "12px";
+    else inputEl.style.fontSize = "14px";
+  }
+
+  /* ================= HARD MODE SAMPLER (WEIGHTED) ================= */
+  function buildOmegaCounts(maxN) {
+    const spf = new Array(maxN + 1).fill(0);
+    for (let i = 2; i * i <= maxN; i++) {
+      if (spf[i] !== 0) continue;
+      for (let j = i * i; j <= maxN; j += i) {
+        if (spf[j] === 0) spf[j] = i;
+      }
+    }
+    const omega = new Array(maxN + 1).fill(0);
+    omega[0] = 0;
+    omega[1] = 0;
+    for (let n = 2; n <= maxN; n++) {
+      let x = n;
+      let c = 0;
+      while (x > 1) {
+        const p = spf[x] || x;
+        c += 1;
+        x = Math.floor(x / p);
+      }
+      omega[n] = c;
+    }
+    return omega;
+  }
+
+  function buildHardPicker(maxN, pow) {
+    const omega = buildOmegaCounts(maxN);
+    const weights = new Array(maxN + 1).fill(0);
+    let total = 0;
+
+    for (let n = 2; n <= maxN; n++) {
+      const c = omega[n];
+      const w = Math.max(1, Math.pow(c, pow)); // primes (c=1) still possible
+      weights[n] = w;
+      total += w;
+    }
+
+    // prefix sums for binary search
+    const prefix = new Float64Array(maxN + 1);
+    let run = 0;
+    prefix[0] = 0;
+    prefix[1] = 0;
+    for (let n = 2; n <= maxN; n++) {
+      run += weights[n];
+      prefix[n] = run;
+    }
+
+    function pick() {
+      const r = Math.random() * total;
+      // binary search on [2..maxN]
+      let lo = 2;
+      let hi = maxN;
+      while (lo < hi) {
+        const mid = Math.floor((lo + hi) / 2);
+        if (prefix[mid] >= r) hi = mid;
+        else lo = mid + 1;
+      }
+      return lo;
+    }
+
+    return { pick };
+  }
+
+  const HARD = buildHardPicker(CFG.hardMaxN, CFG.hardWeightPow);
+
+  function pickNumber(mode) {
+    if (mode === "hard") return HARD.pick();
+    return CFG.candidates[Math.floor(Math.random() * CFG.candidates.length)];
+  }
+
+  /* ================= STYLE ================= */
+  (function injectStyle() {
+    if (document.getElementById("ftg_style")) return;
+    const s = document.createElement("style");
+    s.id = "ftg_style";
+    s.textContent = `
+:root{
+  --bg-card:#f9fafb;
+  --bd-card:#e2e8f0;
+  --ink:#0f172a;
+  --accent:#2563eb;
+  --accent-strong:#1d4ed8;
+  --tile-bg:#ffffff;
+  --tile-bd:#e2e8f0;
+  --panel-bg:#ffffff;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.25);
+  --warn:#f59e0b;
+  --danger:#ef4444;
+  --ftg-font: system-ui, Segoe UI, Arial;
+  --ftg-mono:'Courier New',Courier,monospace;
+
+  /* IMPORTANT: pills stay light, so pill text must stay dark across themes */
+  --ftg-pill-ink:#0f172a;
+}
+
+.ftg-root{
+  max-width:720px;
+  margin:12px auto;
+  padding:10px;
+  font-family:var(--ftg-font);
+  color:var(--ink);
+  background:var(--bg-card);
+  border:1px solid var(--bd-card);
+  border-radius:14px;
+}
+
+.ftg-root.theme-midnight{
+  --bg-card:#020617;--bd-card:#111827;--ink:#e5e7eb;
+  --accent:#22d3ee;--accent-strong:#0ea5e9;
+  --tile-bg:#020617;--tile-bd:#111827;
+  --panel-bg:#020617;--panel-shadow:0 10px 30px rgba(0,0,0,.65);
+}
+.ftg-root.theme-ocean{
+  --bg-card:#ecfeff;--bd-card:#bae6fd;--ink:#0f172a;
+  --accent:#0ea5e9;--accent-strong:#0284c7;
+  --tile-bg:#f9feff;--tile-bd:#bae6fd;--panel-bg:#f9feff;
+}
+.ftg-root.theme-darcula{
+  --bg-card:#1e1f22;--bd-card:#2b2d31;--ink:#f8fafc;
+  --accent:#c084fc;--accent-strong:#a855f7;
+  --tile-bg:#1e1f22;--tile-bd:#2b2d31;
+  --panel-bg:#1e1f22;--panel-shadow:0 10px 30px rgba(0,0,0,.8);
+}
+.ftg-root.theme-terminal{
+  --bg-card:#020617;--bd-card:#064e3b;--ink:#bbf7d0;
+  --accent:#22c55e;--accent-strong:#16a34a;
+  --tile-bg:#020617;--tile-bd:#064e3b;
+  --panel-bg:#020617;--panel-shadow:0 10px 30px rgba(0,0,0,.85);
+}
+
+.ftg-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.ftg-title{font-family:var(--ftg-mono);font-weight:900;font-size:18px;}
+.ftg-actions{display:flex;gap:6px;align-items:center;position:relative;}
+
+.ftg-btn{
+  font-family:var(--ftg-mono);
+  border:1px solid var(--accent-strong);
+  background:var(--accent);
+  border-radius:8px;
+  padding:6px 10px;
+  font-weight:800;
+  color:#fff;
+  cursor:pointer;
+  font-size:12px;
+}
+.ftg-btn:hover{background:var(--accent-strong);}
+
+.ftg-gear{
+  font-family:var(--ftg-mono);
+  border:1px solid var(--tile-bd);
+  background:var(--tile-bg);
+  color:var(--ink);
+  border-radius:8px;
+  padding:6px 8px;
+  font-weight:900;
+  cursor:pointer;
+  font-size:12px;
+}
+.ftg-gear:hover{border-color:var(--accent-strong);}
+
+.ftg-panel{
+  position:absolute;
+  right:0;
+  top:36px;
+  background:var(--panel-bg);
+  border:1px solid var(--bd-card);
+  border-radius:12px;
+  box-shadow:var(--panel-shadow);
+  padding:8px;
+  display:none;
+  z-index:20;
+  min-width:180px;
+}
+.ftg-panel.show{display:block;}
+.ftg-panelTitle{
+  font-family:var(--ftg-mono);
+  font-weight:900;
+  font-size:12px;
+  margin:10px 0 8px;
+  color:#475569;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.ftg-panelTitle:first-child{margin-top:0;}
+.ftg-root.theme-midnight .ftg-panelTitle,
+.ftg-root.theme-darcula .ftg-panelTitle,
+.ftg-root.theme-terminal .ftg-panelTitle{color:#9aa5b1;}
+
+.ftg-tab{
+  margin:4px 0;
+  padding:6px 8px;
+  border-radius:10px;
+  border:1px solid var(--tile-bd);
+  cursor:pointer;
+  font-family:var(--ftg-mono);
+  font-size:12px;
+  font-weight:900;
+  user-select:none;
+}
+.ftg-tab.active{background:var(--accent);color:#fff;border-color:var(--accent-strong);}
+
+.ftg-score{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:8px;
+  margin-bottom:8px;
+}
+.ftg-tile{
+  border:1px solid var(--tile-bd);
+  background:var(--tile-bg);
+  border-radius:10px;
+  padding:8px 10px;
+  text-align:center;
+}
+.ftg-tile .lbl{
+  font-family:var(--ftg-mono);
+  font-weight:900;
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#475569;
+  text-transform:uppercase;
+}
+.ftg-root.theme-midnight .ftg-tile .lbl,
+.ftg-root.theme-darcula .ftg-tile .lbl,
+.ftg-root.theme-terminal .ftg-tile .lbl{color:#9aa5b1;}
+.ftg-tile .val{
+  font-family:var(--ftg-mono);
+  font-weight:900;
+  font-size:16px;
+  margin-top:2px;
+  font-variant-numeric:tabular-nums;
+}
+
+.ftg-factor{
+  border:1px solid var(--tile-bd);
+  background:var(--tile-bg);
+  border-radius:10px;
+  padding:8px 10px;
+  font-family:var(--ftg-mono);
+  font-weight:900;
+  font-size:13px;
+  text-align:center;
+}
+.ftg-factor .hint{opacity:.65;font-weight:900;font-size:12px;}
+
+.ftg-plot-wrap{
+  position:relative;
+  margin-top:8px;
+  border:1px solid var(--tile-bd);
+  border-radius:12px;
+  padding:10px;
+  background:var(--tile-bg);
+  overflow:hidden;
+}
+.ftg-svg{width:100%;height:auto;display:block;}
+
+.ftg-toast{
+  position:absolute;
+  bottom:14px;
+  left:50%;
+  transform:translateX(-50%) translateY(-6px);
+  background:var(--panel-bg);
+  color:var(--ink);
+  border:1px solid var(--bd-card);
+  border-radius:10px;
+  padding:8px 12px;
+  font-family:var(--ftg-mono);
+  font-weight:900;
+  font-size:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.20);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .16s, transform .16s;
+}
+.ftg-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+.ftg-win{
+  position:absolute;
+  inset:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,.92);
+  border-radius:10px;
+  border:1px dashed var(--bd-card);
+}
+.ftg-root.theme-midnight .ftg-win,
+.ftg-root.theme-darcula .ftg-win,
+.ftg-root.theme-terminal .ftg-win{background:rgba(15,23,42,.88);}
+
+.ftg-winCard{
+  width:min(420px, 92vw);
+  border:1px solid var(--bd-card);
+  background:var(--panel-bg);
+  border-radius:14px;
+  box-shadow:var(--panel-shadow);
+  padding:14px;
+  text-align:center;
+}
+.ftg-winCard .big{font-family:var(--ftg-mono);font-weight:900;font-size:22px;margin-bottom:6px;}
+.ftg-winCard .sub{font-family:var(--ftg-mono);font-weight:900;font-size:14px;opacity:.9;margin-bottom:12px;}
+
+/* Inputs sit on light pills, so always use pill ink */
+.ftg-pillInput{
+  font-family:var(--ftg-mono) !important;
+  font-weight:900;
+  color:var(--ftg-pill-ink) !important;
+  caret-color:var(--ftg-pill-ink) !important;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .ftg-toast{transition:none;}
+}
+`;
+    document.head.appendChild(s);
   })();
+
+  /* ================= LAYOUT ================= */
+  function computeGeometryForTree(root) {
+    const leaves = [];
+    let maxDepth = 1;
+
+    function walk(node, depth) {
+      if (!node) return;
+      maxDepth = Math.max(maxDepth, depth);
+      if (!node.left && !node.right) {
+        leaves.push(node);
+        return;
+      }
+      walk(node.left, depth + 1);
+      walk(node.right, depth + 1);
+    }
+    walk(root, 1);
+
+    const leafCount = Math.max(1, leaves.length);
+    const depthCount = Math.max(1, maxDepth);
+
+    const innerW = CFG.canvasW - 2 * CFG.padX;
+    const innerH = CFG.canvasH - 2 * CFG.padY;
+
+    const dxMin = CFG.nodeW + CFG.minLeafGap;
+    const dyMin = CFG.nodeH + CFG.minRowGap;
+
+    const requiredW = (leafCount <= 1) ? 0 : (leafCount - 1) * dxMin;
+    let nodeW = CFG.nodeW;
+    let nodeH = CFG.nodeH;
+    let dx = (leafCount <= 1) ? 0 : innerW / (leafCount - 1);
+
+    if (requiredW > innerW) {
+      const targetDx = innerW / Math.max(1, leafCount - 1);
+      nodeW = Math.max(CFG.minNodeW, Math.min(CFG.nodeW, Math.floor(targetDx - 10)));
+      dx = targetDx;
+    } else {
+      dx = Math.max(dx, dxMin);
+    }
+
+    const requiredH = (depthCount <= 1) ? 0 : (depthCount - 1) * dyMin;
+    let dy = (depthCount <= 1) ? 0 : innerH / (depthCount - 1);
+    if (requiredH > innerH) {
+      const targetDy = innerH / Math.max(1, depthCount - 1);
+      nodeH = Math.max(CFG.minNodeH, Math.min(CFG.nodeH, Math.floor(targetDy - 8)));
+      dy = targetDy;
+    } else {
+      dy = Math.max(dy, dyMin);
+    }
+
+    return { leaves, leafCount, depthCount, innerW, innerH, dx, dy, nodeW, nodeH };
+  }
+
+  function isLeaf(node) {
+    return node && !node.left && !node.right;
+  }
+
+  function collectNodes(node, arr) {
+    if (!node) return;
+    arr.push(node);
+    collectNodes(node.left, arr);
+    collectNodes(node.right, arr);
+  }
+
+  function layoutTree(root) {
+    const geom = computeGeometryForTree(root);
+
+    const leafX = new Map();
+    for (let i = 0; i < geom.leaves.length; i++) {
+      leafX.set(geom.leaves[i].id, CFG.padX + i * geom.dx);
+    }
+
+    const pos = new Map();
+
+    function setPos(node, level) {
+      if (!node) return { minX: 0, maxX: 0 };
+
+      const y = CFG.padY + (level - 1) * geom.dy;
+
+      if (isLeaf(node)) {
+        const x = leafX.get(node.id);
+        pos.set(node.id, { x, y, level });
+        return { minX: x, maxX: x };
+      }
+
+      const L = setPos(node.left, level + 1);
+      const R = setPos(node.right, level + 1);
+
+      const x = (L.minX + R.maxX) / 2;
+      pos.set(node.id, { x, y, level });
+
+      return { minX: Math.min(L.minX, R.minX), maxX: Math.max(L.maxX, R.maxX) };
+    }
+
+    const bounds = setPos(root, 1);
+
+    const innerLeft = CFG.padX;
+    const innerRight = CFG.canvasW - CFG.padX;
+    const innerCenter = (innerLeft + innerRight) / 2;
+
+    const treeCenter = (bounds.minX + bounds.maxX) / 2;
+    const shiftX = innerCenter - treeCenter;
+
+    for (const [id, p] of pos.entries()) {
+      pos.set(id, { x: p.x + shiftX, y: p.y, level: p.level });
+    }
+
+    return { pos, geom };
+  }
+
+  /* ================= GAME LOGIC ================= */
+  function makeNode(value) {
+    return {
+      id: crypto.randomUUID(),
+      value,
+      left: null,
+      right: null,
+      blank: false,
+      input: "",
+      userPrime: false,
+      locked: false,     // validated composite or marked prime
+      fixed: false,      // for root: value always locked
+      fx: null
+    };
+  }
+
+  function getFactorStatus(state) {
+    if (!state.tree || !isInt(state.target)) return { label: "Prime factors", value: "" };
+
+    const nodes = [];
+    collectNodes(state.tree, nodes);
+    const primes = [];
+
+    for (const n of nodes) {
+      if (!n) continue;
+      if (!isLeaf(n)) continue;
+      if (n.blank) continue;
+      if (!isInt(n.value)) continue;
+      if (n.userPrime && isPrime(n.value)) primes.push(n.value);
+    }
+
+    if (!primes.length) return { label: "Prime factors", value: "" };
+
+    const tentative = compressFactorStringSup(primes);
+    return { label: "Prime factors", value: tentative };
+  }
+
+  function drawCornerBadge(g, x, y, letter, color) {
+    const badge = svgEl("text", {
+      x,
+      y,
+      "text-anchor": "middle",
+      "font-size": "12",
+      "font-family": "'Courier New', Courier, monospace",
+      "font-weight": "900",
+      fill: color
+    });
+    badge.textContent = letter;
+    g.appendChild(badge);
+  }
+
+  function fxTransformAndOpacity(fx, cx, cy) {
+    const t = performance.now() - fx.t0;
+    const u = Math.max(0, Math.min(1, t / fx.dur));
+    const drop = 140 * (u * u);
+    const rot = (u * 20);
+    const opacity = 1 - u;
+    return {
+      transform: `translate(0 ${drop}) rotate(${rot} ${cx} ${cy})`,
+      opacity: String(opacity)
+    };
+  }
+
+  function clearLockSubtree(node) {
+    if (!node) return;
+    if (!node.fixed) node.locked = false;
+    node.userPrime = false;
+    clearLockSubtree(node.left);
+    clearLockSubtree(node.right);
+  }
+
+  function refreshCompositeLock(node) {
+    if (!node) return;
+    if (!node.left || !node.right) return;
+    if (node.left.blank || node.right.blank) return;
+    if (!isInt(node.value) || !isInt(node.left.value) || !isInt(node.right.value)) return;
+    if (node.left.value * node.right.value !== node.value) return;
+
+    node.locked = true;
+  }
+
+  function makeState() {
+    return {
+      tree: null,
+      target: null,
+      streak: 0,
+      best: 0,
+      solved: 0,
+      theme: localStorage.getItem(CFG.storageKeyTheme) || "theme-ocean",
+      mode: localStorage.getItem(CFG.storageKeyMode) || "easy",
+      toast: { text: "", t0: 0, ms: 0 },
+      _ui: null,
+
+      render() {
+        render(this);
+      },
+
+      setTheme(id) {
+        this.theme = id;
+        localStorage.setItem(CFG.storageKeyTheme, id);
+        this.render();
+      },
+
+      setMode(m) {
+        this.mode = (m === "hard") ? "hard" : "easy";
+        localStorage.setItem(CFG.storageKeyMode, this.mode);
+        this.newPuzzle();
+      },
+
+      showMistake(msg) {
+        this.toast = { text: msg, t0: performance.now(), ms: 3500 };
+        this.render();
+      },
+
+      resetStreak(msg) {
+        this.streak = 0;
+        this.showMistake(msg);
+      },
+
+      bumpStreak() {
+        this.streak += 1;
+        if (this.streak > this.best) this.best = this.streak;
+      },
+
+newPuzzle() {
+  this.target = pickNumber(this.mode);
+  this.tree = makeNode(this.target);
+  this.tree.blank = false;
+  this.tree.input = "";
+
+  // Root value is fixed, but NOT "locked" (so they can click / mark it)
+  this.tree.fixed = true;
+  this.tree.locked = false;
+  this.tree.userPrime = false;
+
+  this.render();
+},
+
+
+      checkDone() {
+        if (!this.tree || !isInt(this.target)) return { ok: false };
+
+        const nodes = [];
+        collectNodes(this.tree, nodes);
+
+        for (const n of nodes) {
+          if (!isLeaf(n)) continue;
+          if (n.blank) return { ok: false };
+          if (!isInt(n.value)) return { ok: false };
+          if (!isPrime(n.value)) return { ok: false };
+          if (!n.userPrime) return { ok: false };
+        }
+
+        return { ok: true };
+      }
+    };
+  }
+
+  /* ================= RENDER ================= */
+  function render(state) {
+    clear(rootEl);
+
+    const wrap = el("div", { class: `ftg-root ${state.theme}` });
+
+    const head = el("div", { class: "ftg-head" }, [
+      el("div", { class: "ftg-title", text: "Factor Tree" })
+    ]);
+
+    const actions = el("div", { class: "ftg-actions" });
+
+    const newBtn = el("button", {
+      class: "ftg-btn",
+      text: "New",
+      on: { click: () => state.newPuzzle() }
+    });
+
+    const gearBtn = el("button", { class: "ftg-gear", text: "⚙" });
+    const panel = el("div", { class: "ftg-panel" }, [
+      el("div", { class: "ftg-panelTitle", text: "Mode" })
+    ]);
+
+    const easyTab = el("div", { class: `ftg-tab ${state.mode === "easy" ? "active" : ""}`, text: "Easy" });
+    easyTab.addEventListener("click", () => state.setMode("easy"));
+    panel.appendChild(easyTab);
+
+    const hardTab = el("div", { class: `ftg-tab ${state.mode === "hard" ? "active" : ""}`, text: "Hard (to 2048)" });
+    hardTab.addEventListener("click", () => state.setMode("hard"));
+    panel.appendChild(hardTab);
+
+    panel.appendChild(el("div", { class: "ftg-panelTitle", text: "Theme" }));
+
+    for (const t of CFG.themes) {
+      const tab = el("div", { class: `ftg-tab ${state.theme === t.id ? "active" : ""}`, text: t.label });
+      tab.addEventListener("click", () => state.setTheme(t.id));
+      panel.appendChild(tab);
+    }
+
+    gearBtn.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      panel.classList.toggle("show");
+    });
+
+    actions.appendChild(newBtn);
+    actions.appendChild(gearBtn);
+    actions.appendChild(panel);
+    head.appendChild(actions);
+
+    const score = el("div", { class: "ftg-score" });
+
+    function tile(lbl, val) {
+      const t = el("div", { class: "ftg-tile" }, [
+        el("div", { class: "lbl", text: lbl }),
+        el("div", { class: "val", text: val })
+      ]);
+      return { tile: t, valEl: t.querySelector(".val") };
+    }
+
+    const tStreak = tile("Streak", String(state.streak));
+    const tBest = tile("Best", String(state.best));
+    const tSolved = tile("Solved", String(state.solved));
+
+    score.appendChild(tStreak.tile);
+    score.appendChild(tBest.tile);
+    score.appendChild(tSolved.tile);
+
+    const factor = el("div", { class: "ftg-factor" });
+    const fHint = el("div", { class: "hint", text: "Prime factors" });
+    const fVal = el("div", { text: "" });
+    factor.appendChild(fHint);
+    factor.appendChild(fVal);
+
+    const plotWrap = el("div", { class: "ftg-plot-wrap" });
+
+    const toast = el("div", { class: "ftg-toast", text: "" });
+    plotWrap.appendChild(toast);
+
+    const svg = svgEl("svg", {
+      width: String(CFG.canvasW),
+      height: String(CFG.canvasH),
+      viewBox: `0 0 ${CFG.canvasW} ${CFG.canvasH}`
+    });
+    svg.classList.add("ftg-svg");
+    plotWrap.appendChild(svg);
+
+    wrap.appendChild(head);
+    wrap.appendChild(score);
+    wrap.appendChild(factor);
+    wrap.appendChild(plotWrap);
+
+    rootEl.appendChild(wrap);
+
+    state._ui = {
+      wrap,
+      svg,
+      toast,
+      streakEl: tStreak.valEl,
+      bestEl: tBest.valEl,
+      solvedEl: tSolved.valEl,
+      fHint,
+      fVal,
+      plotWrap,
+      panel
+    };
+
+    function updateHUD() {
+      state._ui.streakEl.textContent = String(state.streak);
+      state._ui.bestEl.textContent = String(state.best);
+      state._ui.solvedEl.textContent = String(state.solved);
+
+      const status = getFactorStatus(state);
+      state._ui.fHint.textContent = status.label;
+      state._ui.fVal.textContent = status.value;
+
+if (state.toast.ms > 0) {
+  const dt = performance.now() - state.toast.t0;
+
+  if (dt <= state.toast.ms) {
+    state._ui.toast.textContent = state.toast.text;
+    state._ui.toast.classList.add("show");
+
+    // keep ticking until it expires
+    requestAnimationFrame(updateHUD);
+  } else {
+    state._ui.toast.textContent = "";
+    state._ui.toast.classList.remove("show");
+    state.toast.ms = 0;
+  }
+} else {
+  state._ui.toast.textContent = "";
+  state._ui.toast.classList.remove("show");
+}
+
+
+      const done = state.checkDone().ok;
+      if (done) {
+        const old = state._ui.plotWrap.querySelector(".ftg-win");
+        if (!old) {
+          const win = el("div", { class: "ftg-win" });
+          const card = el("div", { class: "ftg-winCard" });
+          const exact = compressFactorStringSup(primeFactorList(state.target));
+          card.appendChild(el("div", { class: "big", text: "Solved" }));
+          card.appendChild(el("div", { class: "sub", text: `${state.target} = ${exact}` }));
+          card.appendChild(el("button", {
+            class: "ftg-btn",
+            text: "Next",
+            on: {
+              click: () => {
+                state.solved += 1;
+                state.newPuzzle();
+              }
+            }
+          }));
+          win.appendChild(card);
+          state._ui.plotWrap.appendChild(win);
+        }
+      } else {
+        const old = state._ui.plotWrap.querySelector(".ftg-win");
+        if (old) old.remove();
+      }
+    }
+
+    function dropSubtreeAndReplace(node, parent, reason) {
+      if (reason) state.resetStreak(reason);
+
+      node.fx = { kind: "fall", t0: performance.now(), dur: 560 };
+
+      const start = performance.now();
+      const tick = () => {
+        const now = performance.now();
+        if (!node.fx) return;
+
+        if (now - start >= node.fx.dur + 30) {
+          node.fx = null;
+
+          const droppingRoot = (node === state.tree);
+
+          clearLockSubtree(node);
+
+          node.left = null;
+          node.right = null;
+
+          if (droppingRoot) {
+            node.value = state.target;
+            node.blank = false;
+            node.input = "";
+            node.userPrime = false;
+            node.fixed = true;
+            node.locked = false;
+          } else {
+            node.value = null;
+            node.blank = true;
+            node.input = "";
+            node.userPrime = false;
+            node.fixed = false;
+            node.locked = false;
+          }
+
+          if (parent && !parent.fixed) parent.locked = false;
+          state.render();
+          return;
+        }
+
+        state.render();
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+
+    function validateAtParent(par) {
+      if (!par) return { ok: true, msg: "" };
+      if (!par.left || !par.right) return { ok: true, msg: "" };
+
+      if (par.left.blank || par.right.blank) return { ok: true, msg: "" };
+      if (!isInt(par.value) || !isInt(par.left.value) || !isInt(par.right.value)) return { ok: true, msg: "" };
+
+      if (par.left.value * par.right.value !== par.value) {
+        return { ok: false, msg: `Those do not multiply to ${par.value}` };
+      }
+
+      refreshCompositeLock(par);
+      return { ok: true, msg: "" };
+    }
+
+    function drawLinks(pos, node, geom) {
+      if (!node || !node.left || !node.right) return;
+
+      const p = pos.get(node.id);
+      const L = pos.get(node.left.id);
+      const R = pos.get(node.right.id);
+
+      const y1 = p.y + geom.nodeH / 2;
+      const y2L = L.y - geom.nodeH / 2;
+      const y2R = R.y - geom.nodeH / 2;
+
+      const cY = (y1 + y2L) / 2;
+
+      svg.appendChild(svgEl("path", {
+        d: `M ${p.x} ${y1} C ${p.x} ${cY} ${L.x} ${cY} ${L.x} ${y2L}`,
+        fill: "none",
+        stroke: "rgba(115,132,150,.95)",
+        "stroke-width": "2.2",
+        "stroke-linecap": "round"
+      }));
+
+      svg.appendChild(svgEl("path", {
+        d: `M ${p.x} ${y1} C ${p.x} ${cY} ${R.x} ${cY} ${R.x} ${y2R}`,
+        fill: "none",
+        stroke: "rgba(115,132,150,.95)",
+        "stroke-width": "2.2",
+        "stroke-linecap": "round"
+      }));
+
+      drawLinks(pos, node.left, geom);
+      drawLinks(pos, node.right, geom);
+    }
+
+    function drawNode(pos, node, parent, inheritedFx, geom) {
+      if (!node) return;
+
+      const p = pos.get(node.id);
+      const g = svgEl("g", {});
+
+      const effectiveFx = node.fx || inheritedFx;
+      const disabled = !!effectiveFx || state.checkDone().ok;
+
+      const rect = svgEl("rect", {
+        x: p.x - geom.nodeW / 2,
+        y: p.y - geom.nodeH / 2,
+        width: geom.nodeW,
+        height: geom.nodeH,
+        rx: "9",
+        ry: "9",
+        fill: node.blank ? "rgb(255,252,230)" : "rgb(235,248,255)",
+        stroke: "rgba(90,110,130,.95)",
+        "stroke-width": "2"
+      });
+      g.appendChild(rect);
+
+      if (effectiveFx && effectiveFx.kind === "fall") {
+        const tf = fxTransformAndOpacity(effectiveFx, p.x, p.y);
+        g.setAttribute("transform", tf.transform);
+        g.setAttribute("opacity", tf.opacity);
+      }
+
+      const canInteract = !disabled;
+      const isRoot = (node === state.tree);
+
+      if (!node.blank && isInt(node.value)) {
+        const text = svgEl("text", {
+          x: p.x,
+          y: p.y + 5,
+          "text-anchor": "middle",
+          "font-size": "14",
+          "font-family": "'Courier New', Courier, monospace",
+          "font-weight": "900",
+          fill: "var(--ftg-pill-ink)"
+        });
+        text.textContent = String(node.value);
+        g.appendChild(text);
+
+        if (node.fixed) {
+          rect.setAttribute("fill", "rgb(255,255,255)");
+          rect.setAttribute("stroke", "rgb(20,140,60)");
+          rect.setAttribute("stroke-width", "3");
+          drawCornerBadge(g, p.x - geom.nodeW / 2 + 10, p.y - geom.nodeH / 2 + 13, "", "rgb(20,140,60)");
+        } else if (node.locked) {
+          rect.setAttribute("fill", "rgb(255,255,255)");
+          rect.setAttribute("stroke", "rgb(20,140,60)");
+          rect.setAttribute("stroke-width", "3");
+
+          if (node.userPrime && isPrime(node.value)) {
+            rect.setAttribute("fill", "rgb(230,255,238)");
+            drawCornerBadge(g, p.x + geom.nodeW / 2 - 10, p.y - geom.nodeH / 2 + 13, "P", "rgb(20,140,60)");
+          } else if (node.left && node.right) {
+            drawCornerBadge(g, p.x - geom.nodeW / 2 + 10, p.y - geom.nodeH / 2 + 13, "C", "rgb(20,140,60)");
+          }
+        }
+      }
+
+if (canInteract) {
+  g.addEventListener("contextmenu", (ev) => {
+    ev.preventDefault();
+
+    if (node.blank) return;
+    if (!isInt(node.value)) return;
+
+    // If it's already expanded, do not allow prime marking.
+    if (node.left || node.right) return;
+
+    // For non-root nodes, locked means hands off.
+    // For the root (fixed), allow toggling even if locked.
+    if (node.locked && !node.fixed) return;
+
+    const next = !node.userPrime;
+
+    if (next && !isPrime(node.value)) {
+      dropSubtreeAndReplace(node, parent, "That number is not prime");
+      return;
+    }
+
+    if (next && isPrime(node.value)) {
+      node.userPrime = true;
+      node.locked = true; // counts as confirmed prime
+      state.bumpStreak();
+      state.render();
+      return;
+    }
+
+    node.userPrime = false;
+    node.locked = false;
+    state.render();
+  });
+}
+
+
+      if (node.blank) {
+        rect.setAttribute("fill", "rgb(255,252,230)");
+
+        const fo = svgEl("foreignObject", {
+          x: String(p.x - geom.nodeW / 2 + 4),
+          y: String(p.y - geom.nodeH / 2 + 3),
+          width: String(geom.nodeW - 8),
+          height: String(geom.nodeH - 6)
+        });
+
+        const input = document.createElement("input");
+        input.className = "ftg-pillInput";
+        input.value = node.input;
+        input.inputMode = "numeric";
+        input.autocomplete = "off";
+        input.spellcheck = false;
+
+        input.style.width = "100%";
+        input.style.height = "100%";
+        input.style.border = "0";
+        input.style.outline = "none";
+        input.style.background = "transparent";
+        input.style.textAlign = "center";
+
+        fitFont(input);
+
+        function commit() {
+          const v = parseInputInt(node.input);
+          if (v === null) return;
+
+          if (parent && isInt(parent.value)) {
+            const pv = parent.value;
+
+            if (v === 1 || v === pv) {
+              node.input = "";
+              dropSubtreeAndReplace(node, parent, "Use a factor greater than 1 and smaller than the parent");
+              return;
+            }
+
+            if (pv % v !== 0) {
+              node.input = "";
+              dropSubtreeAndReplace(node, parent, `That is not a factor of ${pv}`);
+              return;
+            }
+          }
+
+          node.value = v;
+          node.blank = false;
+          node.input = "";
+          node.userPrime = false;
+          node.locked = false;
+          node.fixed = false;
+
+          const res = validateAtParent(parent);
+          if (parent && !res.ok) {
+            dropSubtreeAndReplace(parent, null, res.msg);
+            return;
+          }
+
+          if (parent && res.ok && parent.locked && !parent.fixed) {
+            state.bumpStreak();
+          }
+
+          state.render();
+        }
+
+        if (canInteract) {
+          function focusInput(ev) {
+            if (ev) {
+              ev.preventDefault();
+              ev.stopPropagation();
+            }
+            setTimeout(() => {
+              input.focus();
+              input.select();
+            }, 0);
+          }
+
+          g.style.cursor = "text";
+          g.addEventListener("pointerdown", focusInput);
+          rect.addEventListener("pointerdown", focusInput);
+          input.addEventListener("pointerdown", (ev) => ev.stopPropagation());
+
+          input.addEventListener("input", () => {
+            const cleaned = input.value.replace(/[^0-9]/g, "");
+            if (cleaned !== input.value) input.value = cleaned;
+            node.input = input.value;
+            fitFont(input);
+          });
+
+          input.addEventListener("keydown", (ev) => {
+            if (ev.key === "Enter") {
+              ev.preventDefault();
+              commit();
+            }
+          });
+
+          input.addEventListener("blur", () => commit());
+        } else {
+          input.disabled = true;
+        }
+
+        const div = document.createElement("div");
+        div.style.width = "100%";
+        div.style.height = "100%";
+        div.appendChild(input);
+
+        fo.appendChild(div);
+        g.appendChild(fo);
+
+      } else {
+        // Expand click: allow even if locked when it is root (root is always locked).
+        const canExpand =
+          canInteract &&
+          isLeaf(node) &&
+          isInt(node.value) &&
+          (!node.locked || isRoot) &&
+          !node.userPrime;
+
+        if (canExpand) {
+          rect.style.cursor = "pointer";
+          g.addEventListener("click", () => {
+            if (isPrime(node.value)) {
+              dropSubtreeAndReplace(node, parent, "That number is prime. Right click to mark it");
+              return;
+            }
+
+            const pairs = factorPairs(node.value);
+            if (!pairs.length) {
+              dropSubtreeAndReplace(node, parent, "That number cannot be expanded");
+              return;
+            }
+
+            node.left = makeNode(null);
+            node.right = makeNode(null);
+            node.left.blank = true;
+            node.right.blank = true;
+
+            // Lock the composite immediately on expand (root stays locked anyway).
+            if (!node.fixed) node.locked = true;
+
+            state.bumpStreak();
+            state.render();
+          });
+        }
+      }
+
+      svg.appendChild(g);
+      drawNode(pos, node.left, node, effectiveFx, geom);
+      drawNode(pos, node.right, node, effectiveFx, geom);
+    }
+
+    clear(svg);
+
+    if (state.tree) {
+      const { pos, geom } = layoutTree(state.tree);
+      drawLinks(pos, state.tree, geom);
+      drawNode(pos, state.tree, null, null, geom);
+    }
+
+    updateHUD();
+
+  }
+
+  /* ================= ONE TIME DOC HANDLERS ================= */
+  let docHandlersInstalled = false;
+  function ensureDocHandlers(state) {
+    if (docHandlersInstalled) return;
+    docHandlersInstalled = true;
+
+    document.addEventListener("pointerdown", (ev) => {
+      if (!state._ui || !state._ui.panel) return;
+      const panel = state._ui.panel;
+      if (!panel.classList.contains("show")) return;
+
+      const target = ev.target;
+      if (panel.contains(target)) return;
+      const gear = state._ui.wrap.querySelector(".ftg-gear");
+      if (gear && gear.contains(target)) return;
+
+      panel.classList.remove("show");
+    });
+  }
+
+  /* ================= TESTS ================= */
+  (function runTests() {
+    const assert = (cond, msg) => { if (!cond) throw new Error("Test failed: " + msg); };
+
+    assert(isPrime(2) === true, "2 prime");
+    assert(isPrime(97) === true, "97 prime");
+    assert(isPrime(1) === false, "1 not prime");
+    assert(isPrime(100) === false, "100 not prime");
+
+    assert(JSON.stringify(primeFactorList(12)) === JSON.stringify([2,2,3]), "pf 12");
+    assert(JSON.stringify(primeFactorList(2048)) === JSON.stringify(new Array(11).fill(2)), "pf 2048");
+
+    const fp6 = factorPairs(6);
+    assert(fp6.some(p => p[0] === 2 && p[1] === 3), "pairs 6 includes 2 and 3");
+    assert(fp6.every(p => p[0] >= 2 && p[1] >= 2), "pairs never include 1");
+
+    // Hard picker sanity: should always be within bounds.
+    for (let i = 0; i < 20; i++) {
+      const n = HARD.pick();
+      assert(n >= 2 && n <= CFG.hardMaxN, "hard pick bounds");
+    }
+
+    console.log("Factor tree tests passed");
+  })();
+
+  /* ================= BOOT ================= */
+  const state = makeState();
+  ensureDocHandlers(state);
+  state.newPuzzle();
+})();
 </script>
 <hr>
-<p>To learn more about slope-intercept form, take a look at <a href="../../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html">4.3 - The Equation of a Line</a></p>
+<p>To learn more about prime factorization and why it matters, see <a href="../../../chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html">1.2 – Factors, Multiples &amp; Prime Factorization</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script src="../../../scripts/popper.min.js"></script>
@@ -1548,13 +2414,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../chapters/Interactive/Unit_4/understanding_slope.html" class="pagination-link" aria-label="Unit 4 - Slope Explorer">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Unit 4 - Slope Explorer</span>
+      <a href="../../../chapters/Interactive/index.html" class="pagination-link" aria-label="Index">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Index</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="pagination-link" aria-label="Unit 4 - Intro to Correlation">
-        <span class="nav-page-text">Unit 4 - Intro to Correlation</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../chapters/Interactive/Unit_4/understanding_slope.html" class="pagination-link" aria-label="Unit 4 - Slope Explorer">
+        <span class="nav-page-text">Unit 4 - Slope Explorer</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -53,8 +53,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html",
-    "href": "chapters/Unit_1/1.1_Integers_&_Number_Lines.html",
+    "objectID": "chapters/Unit_1/1.1_Integers_and_Number_Lines.html",
+    "href": "chapters/Unit_1/1.1_Integers_and_Number_Lines.html",
     "title": "1.1 - Integers & Number Lines",
     "section": "",
     "text": "🔥 Warm-Up\nDid you know that all of mathematics is actually built up from simple things like counting? Even advanced topics like algebra and calculus are just clever ways of organizing and extending basic ideas (like moving forward and backward on a number line).\nIn this lesson, we’ll use the number line not just to count, but to add, subtract, and compare positive and negative numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.\nNegative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line (including things like opposites, absolute value, and comparison) you’ll be setting yourself up for success in the rest of the course.\nAnswer as best you can – even if you aren’t sure!",
@@ -64,8 +64,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html",
-    "href": "chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.html",
+    "objectID": "chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html",
+    "href": "chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html",
     "title": "1.2 - Factors, Multiples & Prime Factorization",
     "section": "",
     "text": "🔥 Warm-Up\nHave you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what factors are about: dividing numbers into equal parts.\nIn this lesson, you’ll learn how to:\nYou’ll use these skills again and again, from simplifying fractions to solving equations.",
@@ -75,8 +75,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html",
-    "href": "chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.html",
+    "objectID": "chapters/Unit_1/1.3_GCF_and_Simplifying_Fractions.html",
+    "href": "chapters/Unit_1/1.3_GCF_and_Simplifying_Fractions.html",
     "title": "1.3 - GCF & Simplifying Fractions",
     "section": "",
     "text": "🔥 Warm-Up\nSuppose you’re making snack packs and have 20 bags of chips and 35 cookies. What’s the greatest number of identical packs you can make with no leftovers? To figure that out, you’d use something called the greatest common factor (GCF).\nIn this lesson, you’ll learn how to use prime factorization to find the GCF, and how that can help you simplify fractions. Finding the GCF makes numbers easier to work with, whether you’re making snack packs or solving math problems.",
@@ -86,8 +86,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.4_Multiply_Divide_&_Compare_Fractions.html",
-    "href": "chapters/Unit_1/1.4_Multiply_Divide_&_Compare_Fractions.html",
+    "objectID": "chapters/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html",
+    "href": "chapters/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html",
     "title": "1.4 - Multiplying & Dividing Fractions",
     "section": "",
     "text": "🔥 Warm-Up\nIn previous lessons, you’ve learned how fractions, decimals, and percents relate to each other. But to solve real-world problems (like adjusting recipes, calculating discounts, or determining grades) you also need to multiply and divide these numbers.\nIn this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a reciprocal. These skills will help you tackle percent problems and practical applications in upcoming lessons.",
@@ -108,8 +108,8 @@
     ]
   },
   {
-    "objectID": "chapters/Unit_1/1.6_Fractions_Decimals_&_Percents.html",
-    "href": "chapters/Unit_1/1.6_Fractions_Decimals_&_Percents.html",
+    "objectID": "chapters/Unit_1/1.6_Fractions_Decimals_and_Percents.html",
+    "href": "chapters/Unit_1/1.6_Fractions_Decimals_and_Percents.html",
     "title": "1.6 - Fractions, Decimals & Percents: Conversions",
     "section": "",
     "text": "🔥 Warm-Up\nFractions, decimals, and percents are just different ways of showing the same thing (a part of a whole). Whether you’re splitting a pizza, measuring a distance, or shopping during a sale, these numbers are everywhere.\nIn this lesson, you’ll learn how to move between these forms and understand how they relate to each other. This will be an important skill for solving many types of problems that involve parts of a whole.",
@@ -739,7 +739,18 @@
     "href": "chapters/Interactive/index.html",
     "title": "Index",
     "section": "",
-    "text": "Unit 1 - Algebra Foundations\nComing Soon",
+    "text": "Unit 1 - Algebra Foundations",
+    "crumbs": [
+      "Interactive Learning",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "chapters/Interactive/index.html#unit-1---algebra-foundations",
+    "href": "chapters/Interactive/index.html#unit-1---algebra-foundations",
+    "title": "Index",
+    "section": "",
+    "text": "Prime Factorization Game\nBuild factor trees to find the prime factorization of numbers.",
     "crumbs": [
       "Interactive Learning",
       "Index"
@@ -776,6 +787,39 @@
     "crumbs": [
       "Interactive Learning",
       "Index"
+    ]
+  },
+  {
+    "objectID": "chapters/Interactive/index.html#unit-5---exponents-polynomials",
+    "href": "chapters/Interactive/index.html#unit-5---exponents-polynomials",
+    "title": "Index",
+    "section": "Unit 5 - Exponents & Polynomials",
+    "text": "Unit 5 - Exponents & Polynomials\nComing Soon",
+    "crumbs": [
+      "Interactive Learning",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "chapters/Interactive/index.html#unit-6---quadratic-equations-functions",
+    "href": "chapters/Interactive/index.html#unit-6---quadratic-equations-functions",
+    "title": "Index",
+    "section": "Unit 6 - Quadratic Equations & Functions",
+    "text": "Unit 6 - Quadratic Equations & Functions\n\nVertex Form Explorer\nMove sliders to see how parameters \\(a\\), \\(h\\), and \\(k\\) effect the shape and location of a parabola.",
+    "crumbs": [
+      "Interactive Learning",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "chapters/Interactive/Unit_1/prime_factorization_game.html",
+    "href": "chapters/Interactive/Unit_1/prime_factorization_game.html",
+    "title": "Unit 1 - Prime Factorization Game",
+    "section": "",
+    "text": "Sometimes the best way to understand a number is to take it apart.\nIn this game, you’ll break numbers down step by step using a factor tree. Your goal is to end with only prime numbers and correctly identify them.\n\nHow the game works\n\nClick a number to split it into two factors.\nRight-click a number to mark it as prime.\nA number marked with P means it’s been identified as prime.\nA number marked with C means it’s composite and has already been expanded.\n\nBuild the tree until every branch ends in primes. Each correct move builds your streak, while mistakes reset it.\nAs you play, think about questions like these:\n\nHow can you tell whether a number should be expanded or marked prime?\nDoes the order you choose factors matter for the final prime factorization?\nWhat mistakes are easy to make when factoring larger numbers?\nHow do prime numbers behave differently from composite numbers in the tree?\nWhat patterns do you notice when numbers have repeated prime factors?\n\nTry to factor each number as cleanly and efficiently as you can.\n\n\n\n\n\n\nTo learn more about prime factorization and why it matters, see 1.2 – Factors, Multiples & Prime Factorization",
+    "crumbs": [
+      "Interactive Learning",
+      "Unit 1 - Prime Factorization Game"
     ]
   },
   {
