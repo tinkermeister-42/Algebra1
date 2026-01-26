@@ -381,6 +381,11 @@ If you struggle to come up with the factors for a number, you should check out t
 I have only shown you 3 of the 60 unique factor trees for 360!
 :::
 
+{{< interact >}}
+
+Let's have some fun building factor trees to find the prime factorization of numbers. 
+
+Try using the [**Prime Factorization Game**](/chapters/Interactive/Unit_1/prime_factorization_game.qmd) 
 
 {{< practice >}}
 

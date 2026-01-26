@@ -1,0 +1,156 @@
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.5_Systems_of_Equations.qmd
+  needs more you try (has 2)
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.qmd
+  needs more you try (has 1)
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.4_Completing_the_Square.qmd
+  needs more you try (has 2)
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.5_The_Quadratic_Formula.qmd
+  needs more you try (has 2)
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.qmd
+  needs more you try (has 1)
+  needs remember
+  needs gotcha
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.5_Adding_and_Subtracting_Fractions.qmd
+  needs more you try (has 2)
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.qmd
+  needs more you try (has 2)
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.6_Solving_Inequalities.qmd
+  needs more you try (has 0)
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.7_Solving_Literal_Equations.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.4_Writing_Linear_Equations.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_5/5.2_Simplifying_Polynomials.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_5/5.3_Multiplying_Polynomials.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_5/5.5_Factoring_Polynomials_B.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.6_Applications_of_Quadratics.qmd
+  needs remember
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.1_Integers_&_Number_Lines.qmd
+  needs more you try (has 1)
+  needs remember
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_2/2.1_Expressions_and_Their_Parts.qmd
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_2/2.4_The_Distributive_Property.qmd
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.1_Solving_One-Step_Equations.qmd
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.2_Solving_Two-Step_Equations.qmd
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.2_Understanding_Slope.qmd
+  needs remember
+  needs gotcha
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.3_The_Equation_of_a_Line.qmd
+  needs gotcha
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd
+  needs remember
+  needs gotcha
+
+/home/andyross/Documents/Algebra1/chapters/Unit_5/5.1_Exponent_Rules.qmd
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_6/6.2_Graphing_Quadratics.qmd
+  needs remember
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.4_Multiply_Divide_&_Compare_Fractions.qmd
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_1/1.6_Fractions_Decimals_&_Percents.qmd
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd
+  needs remember
+
+/home/andyross/Documents/Algebra1/chapters/Unit_2/2.6_Equivalent_Expressions.qmd
+  needs gotcha
+
+/home/andyross/Documents/Algebra1/chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.qmd
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.1_Graphing_Function_Rules.qmd
+  needs gotcha
+
+/home/andyross/Documents/Algebra1/chapters/Unit_4/4.7_Graphing_Linear_Inequalities.qmd
+  needs think
+
+/home/andyross/Documents/Algebra1/chapters/Unit_5/5.4_Factoring_Polynomials_A.qmd
+  needs think
+

@@ -50,12 +50,12 @@ book:
     - part: "Unit 1: Foundations"
       chapters:
         - file: chapters/Unit_1/index.qmd
-        - file: chapters/Unit_1/1.1_Integers_&_Number_Lines.qmd
-        - file: chapters/Unit_1/1.2_Factors_Multiples_&_Prime_Factorization.qmd
-        - file: chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd
-        - file: chapters/Unit_1/1.4_Multiply_Divide_&_Compare_Fractions.qmd
+        - file: chapters/Unit_1/1.1_Integers_and_Number_Lines.qmd
+        - file: chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.qmd
+        - file: chapters/Unit_1/1.3_GCF_and_Simplifying_Fractions.qmd
+        - file: chapters/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.qmd
         - file: chapters/Unit_1/1.5_Adding_and_Subtracting_Fractions.qmd
-        - file: chapters/Unit_1/1.6_Fractions_Decimals_&_Percents.qmd
+        - file: chapters/Unit_1/1.6_Fractions_Decimals_and_Percents.qmd
         - file: chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.qmd
         - file: chapters/Unit_1/1.8_Order_of_Operations.qmd
         - file: chapters/Unit_1/Review.qmd
@@ -119,6 +119,7 @@ book:
     - part: "Interactive Learning"
       chapters:
         - file: chapters/Interactive/index.qmd
+        - file: chapters/Interactive/Unit_1/prime_factorization_game.qmd
         - file: chapters/Interactive/Unit_4/understanding_slope.qmd
         - file: chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd
         - file: chapters/Interactive/Unit_4/intro_to_correlation.qmd

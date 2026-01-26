@@ -1,0 +1,32 @@
+# Unit 1 - Prime Factorization Game {.unnumbered}
+
+Sometimes the best way to understand a number is to **take it apart**.
+
+In this game, you’ll break numbers down step by step using a **factor tree**.
+Your goal is to end with only **prime numbers** and correctly identify them.
+
+### How the game works
+
+* **Click a number** to split it into two factors.
+* **Right-click a number** to mark it as **prime**.
+* A number marked with **P** means it’s been identified as **prime**.
+* A number marked with **C** means it’s **composite** and has already been expanded.
+
+Build the tree until every branch ends in primes. Each correct move builds your **streak**, while mistakes reset it.
+
+As you play, think about questions like these:
+
+1. How can you tell whether a number should be expanded or marked prime?
+2. Does the order you choose factors matter for the final prime factorization?
+3. What mistakes are easy to make when factoring larger numbers?
+4. How do prime numbers behave differently from composite numbers in the tree?
+5. What patterns do you notice when numbers have repeated prime factors?
+
+Try to factor each number as cleanly and efficiently as you can.
+
+{{< include /assets/Unit_1/prime_factorization_game.html >}}
+
+---
+
+To learn more about prime factorization and why it matters, see
+[1.2 – Factors, Multiples & Prime Factorization](/chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.qmd)

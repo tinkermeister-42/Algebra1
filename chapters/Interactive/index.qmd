@@ -2,7 +2,9 @@
 
 ## Unit 1 - Algebra Foundations
 
-Coming Soon
+#### [Prime Factorization Game](Unit_1/prime_factorization_game.qmd)
+
+Build factor trees to find the prime factorization of numbers.
 
 ## Unit 2 - Algebraic Expressions
 
@@ -30,3 +32,13 @@ Try to get a high score matching slopes and intercepts in this fast-paced matchi
 #### [Intro to Correlation](Unit_4/intro_to_correlation.qmd)
 
 Move the slider to see the effect of different correlation values.
+
+## Unit 5 - Exponents & Polynomials
+
+Coming Soon
+
+## Unit 6 - Quadratic Equations & Functions
+
+#### [Vertex Form Explorer](Unit_6/vertex_form_explorer.qmd)
+
+Move sliders to see how parameters $a$, $h$, and $k$ effect the shape and location of a parabola.
