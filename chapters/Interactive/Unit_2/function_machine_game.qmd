@@ -1,0 +1,12 @@
+# Unit 2 - Guess the Function Rule Game {.unnumbered}
+
+!! THIS IS A WORK IN PROGRESS !!
+
+In this game, your goal is to figure out what rule the function machine is using by comparing inputs to outputs. 
+
+{{< include /assets/Unit_2/function_machine_guess.html >}}
+
+---
+
+To learn more about prime factorization and why it matters, see
+[2.5 – Inputs and Outputs of Functions](/chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd)

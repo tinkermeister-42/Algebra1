@@ -120,6 +120,7 @@ book:
       chapters:
         - file: chapters/Interactive/index.qmd
         - file: chapters/Interactive/Unit_1/prime_factorization_game.qmd
+        - file: chapters/Interactive/Unit_2/function_machine_game.qmd
         - file: chapters/Interactive/Unit_4/understanding_slope.qmd
         - file: chapters/Interactive/Unit_4/exploring_slope_intercept_form.qmd
         - file: chapters/Interactive/Unit_4/intro_to_correlation.qmd
