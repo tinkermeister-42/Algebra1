@@ -579,6 +579,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Interactive/Unit_2/function_machine_game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 2 - Guess the Function Rule Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Interactive/Unit_4/understanding_slope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 4 - Slope Explorer</span></a>
   </div>
@@ -666,14 +672,14 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li>🔥 Warm-Up</li>
-  <li>👥 Learn Together
+  <li><a href="#warmup" id="toc-warmup" class="nav-link active" data-scroll-target="#warmup">🔥 Warm Up</a></li>
+  <li><a href="#learn" id="toc-learn" class="nav-link" data-scroll-target="#learn">👥 Learn Together</a>
   <ul class="collapse">
-  <li><a href="#factoring-out-a-gcf" id="toc-factoring-out-a-gcf" class="nav-link active" data-scroll-target="#factoring-out-a-gcf">5.4.1 - Factoring Out a GCF</a></li>
+  <li><a href="#factoring-out-a-gcf" id="toc-factoring-out-a-gcf" class="nav-link" data-scroll-target="#factoring-out-a-gcf">5.4.1 - Factoring Out a GCF</a></li>
   <li><a href="#area-models-and-basic-trinomials" id="toc-area-models-and-basic-trinomials" class="nav-link" data-scroll-target="#area-models-and-basic-trinomials">5.4.2 – Area Models and Basic Trinomials</a></li>
   <li><a href="#mixed-expressions-gcf-and-area-model" id="toc-mixed-expressions-gcf-and-area-model" class="nav-link" data-scroll-target="#mixed-expressions-gcf-and-area-model">5.4.3 – Mixed Expressions (GCF and Area Model)</a></li>
   </ul></li>
-  <li>✍️ Practice On Your Own</li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">✍️ Practice On Your Own</a></li>
   </ul>
 </nav>
     </div>
@@ -699,18 +705,18 @@ window.Quarto = {
 </header>
 
 
-<p>You’ve spent a lot of time learning how to <a href="" class="glossary-link" data-original-href="#glossary-simplify" data-slug="simplify" data-term="simplify">simplify</a> expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.</p>
+<p>You’ve spent a lot of time learning how to <a href="" class="glossary-link" data-slug="simplify" data-term="simplify" data-original-href="#glossary-simplify">simplify</a> expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.</p>
 <p>Take something like:</p>
 <p><span class="math display">\[
 12x + 18.
 \]</span></p>
-<p>It looks simple, but there’s structure hidden inside it. Could this expression be written as a <a href="" class="glossary-link" data-original-href="#glossary-product" data-slug="product" data-term="product">product</a> of smaller pieces?</p>
+<p>It looks simple, but there’s structure hidden inside it. Could this expression be written as a <a href="" class="glossary-link" data-slug="product" data-term="product" data-original-href="#glossary-product">product</a> of smaller pieces?</p>
 <p>Now look at a trinomial such as</p>
 <p><span class="math display">\[
 x^2 + 11x + 24.
 \]</span></p>
 <p>Where did it come from? Could it be the result of multiplying two binomials? If so, how could we work backward to uncover them?</p>
-<p>In this lesson, we will find the answers to these questions by learning the basics of <a href="" class="glossary-link" data-original-href="#glossary-factoring" data-slug="factoring" data-term="factoring">factoring</a> polynomials.</p>
+<p>In this lesson, we will find the answers to these questions by learning the basics of <a href="" class="glossary-link" data-slug="factoring" data-term="factoring" data-original-href="#glossary-factoring">factoring</a> polynomials.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can factor a polynomial by taking out a greatest common factor (GCF).</label></li>
@@ -719,10 +725,10 @@ x^2 + 11x + 24.
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-coefficient" data-slug="coefficient" data-term="coefficient">coefficient</a>, <a href="" class="glossary-link" data-original-href="#glossary-factor" data-slug="factor" data-term="factor">factor</a>, <a href="" class="glossary-link" data-original-href="#glossary-greatest-common-factor" data-slug="greatest-common-factor" data-term="greatest common factor">greatest common factor</a>, <a href="" class="glossary-link" data-original-href="#glossary-polynomial" data-slug="polynomial" data-term="polynomial">polynomial</a>, <a href="" class="glossary-link" data-original-href="#glossary-term" data-slug="term" data-term="term">term</a>, <a href="" class="glossary-link" data-original-href="#glossary-trinomial" data-slug="trinomial" data-term="trinomial">trinomial</a></p>
+<p><a href="" class="glossary-link" data-slug="coefficient" data-term="coefficient" data-original-href="#glossary-coefficient">coefficient</a>, <a href="" class="glossary-link" data-slug="factor" data-term="factor" data-original-href="#glossary-factor">factor</a>, <a href="" class="glossary-link" data-slug="greatest-common-factor" data-term="greatest common factor" data-original-href="#glossary-greatest-common-factor">greatest common factor</a>, <a href="" class="glossary-link" data-slug="polynomial" data-term="polynomial" data-original-href="#glossary-polynomial">polynomial</a>, <a href="" class="glossary-link" data-slug="term" data-term="term" data-original-href="#glossary-term">term</a>, <a href="" class="glossary-link" data-slug="trinomial" data-term="trinomial" data-original-href="#glossary-trinomial">trinomial</a></p>
 </div>
-<section class="level2">
-<h2 class="anchored" data-anchor-id="">🔥 Warm-Up</h2>
+<section id="warmup" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
 <ol type="1">
 <li>Find the GCF of each pair:
 <ol type="a">
@@ -738,8 +744,8 @@ x^2 + 11x + 24.
 <li>What two numbers multiply to <span class="math inline">\(14\)</span> and add to <span class="math inline">\(9\)</span>?</li>
 </ol>
 </section>
-<section class="level2">
-<h2 class="anchored" data-anchor-id="">👥 Learn Together</h2>
+<section id="learn" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="factoring-out-a-gcf" class="level3">
 <h3 class="anchored" data-anchor-id="factoring-out-a-gcf">5.4.1 - Factoring Out a GCF</h3>
 <p>In <a href="../../chapters/Unit_1/1.3_GCF_&amp;_Simplifying_Fractions.qmd">Lesson 1.3</a>, you learned how to find a <strong>greatest common factor</strong> (GCF). The GCF is the largest number or expression that divides every term.</p>
@@ -1605,8 +1611,8 @@ x^2 + 9x + 14 = (x + 2)(x + 7)
 </div>
 </section>
 </section>
-<section class="level2 pagebreak-before">
-<h2 class="pagebreak-before anchored" data-anchor-id="">✍️ Practice On Your Own</h2>
+<section id="practice" class="level2 unnumbered pagebreak-before">
+<h2 class="unnumbered pagebreak-before anchored" data-anchor-id="practice">✍️ Practice On Your Own</h2>
 <p><strong>Factoring out a GCF</strong><br>
 Factor each polynomial by taking out a GCF.</p>
 <ol type="1">
