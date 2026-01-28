@@ -6,44 +6,247 @@
     if (root.dataset.gtfrInit === "1") return;
     root.dataset.gtfrInit = "1";
 
+    const STORAGE_KEY = "gtfr_theme_v1";
+
     function injectStyleOnce() {
-      if (document.getElementById("gtfr_style_v1")) return;
+      if (document.getElementById("gtfr_style_v2")) return;
       const s = document.createElement("style");
-      s.id = "gtfr_style_v1";
+      s.id = "gtfr_style_v2";
       s.textContent = `
-.gtfr-root{--bg:#fbfbfb;--panel:#ffffff;--ink:#1f1f1f;--muted:#6a6a6a;--line:#d2d2d2;--accent:#2c3e50;--shadow:0 10px 22px rgba(0,0,0,0.10);--radius:14px;--mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;--sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;color:var(--ink);font-family:var(--sans);}
-.gtfr-wrap{max-width:1100px;margin:0 auto;background:var(--bg);border:2px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
-.gtfr-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;background:linear-gradient(#ffffff,#f2f2f2);border-bottom:2px solid var(--line);}
-.gtfr-title{font-weight:900;font-size:16px;}
-.gtfr-stats{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted);justify-content:flex-end;}
-.gtfr-stats b{color:var(--ink);font-weight:900;}
+.gtfr-root{
+  --bg:#fbfbfb;--panel:#ffffff;--ink:#1f1f1f;--muted:#6a6a6a;--line:#d2d2d2;--accent:#2c3e50;
+  --good:#27ae60;--bad:#e74c3c;
+  --shadow:0 14px 28px rgba(0,0,0,0.12);
+  --radius:16px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);font-family:var(--sans);
+}
+
+.gtfr-root[data-theme="flatly"]{ --bg:#fbfbfb;--panel:#ffffff;--ink:#1f1f1f;--muted:#6a6a6a;--line:#d2d2d2;--accent:#2c3e50; }
+.gtfr-root[data-theme="dark"]{
+  --bg:#0f141a;--panel:#141b24;--ink:#e9eef6;--muted:#a8b3c2;--line:#2a3443;--accent:#18bc9c;
+  --shadow:0 18px 40px rgba(0,0,0,0.40);
+}
+.gtfr-root[data-theme="neon"]{
+  --bg:#0b0b12;--panel:#111227;--ink:#f0f4ff;--muted:#b7c0ff;--line:#2d2f66;--accent:#7cff6b;
+  --shadow:0 18px 42px rgba(0,0,0,0.44);
+}
+.gtfr-root[data-theme="candy"]{
+  --bg:#fff7fb;--panel:#ffffff;--ink:#2a2230;--muted:#7a6b86;--line:#f0cfe1;--accent:#9b59b6;
+  --shadow:0 16px 34px rgba(155,89,182,0.16);
+}
+
+.gtfr-wrap{
+  max-width:1100px;margin:0 auto;
+  background:linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.00)) , var(--bg);
+  border:2px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.gtfr-topbar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 14px;
+  background:
+    radial-gradient(900px 260px at 20% 0%, rgba(24,188,156,0.16), rgba(0,0,0,0)),
+    radial-gradient(900px 260px at 80% 0%, rgba(52,152,219,0.16), rgba(0,0,0,0)),
+    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.08));
+  border-bottom:2px solid var(--line);
+}
+
+.gtfr-leftHead{display:flex;align-items:center;gap:10px;min-width:260px;}
+.gtfr-mark{
+  width:34px;height:34px;border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.10)), color-mix(in srgb, var(--accent) 86%, #000 14%);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.16), 0 10px 22px rgba(0,0,0,0.10);
+  display:grid;place-items:center;color:#fff;font-weight:1000;
+  letter-spacing:0.3px;
+}
+.gtfr-title{font-weight:1000;font-size:16px;letter-spacing:0.2px;}
+
+.gtfr-stats{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  font-size:13px;color:var(--muted);justify-content:flex-end;
+}
+.gtfr-stats b{color:var(--ink);font-weight:1000;}
+
+.gtfr-gearBtn{
+  border:2px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,0.62), rgba(255,255,255,0.14));
+  border-radius:12px;
+  width:38px;height:38px;
+  display:grid;place-items:center;
+  cursor:pointer;
+  box-shadow:0 10px 18px rgba(0,0,0,0.08);
+  user-select:none;
+}
+.gtfr-gearBtn:active{transform:translateY(1px);}
+.gtfr-gearIcon{width:18px;height:18px;fill:var(--ink);opacity:0.86;}
+
 .gtfr-section{padding:10px 12px;border-bottom:2px solid var(--line);}
 .gtfr-panel{background:var(--panel);border:2px solid var(--line);border-radius:var(--radius);padding:10px;}
+
 .gtfr-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;flex-wrap:wrap;}
-.gtfr-toast{flex:1;min-width:240px;padding:10px 12px;border-radius:12px;border:2px solid var(--line);background:#fff;font-size:13px;color:var(--muted);}
-.gtfr-toast.good{border-color:rgba(39,174,96,0.45);background:rgba(39,174,96,0.10);color:#1f6b3e;}
-.gtfr-toast.bad{border-color:rgba(231,76,60,0.45);background:rgba(231,76,60,0.10);color:#7a1f17;}
+
+.gtfr-toast{
+  flex:1;min-width:240px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:2px solid var(--line);
+  background:
+    radial-gradient(700px 160px at 12% 0%, rgba(52,152,219,0.10), rgba(0,0,0,0)),
+    radial-gradient(700px 160px at 88% 0%, rgba(243,156,18,0.10), rgba(0,0,0,0)),
+    color-mix(in srgb, var(--panel) 92%, var(--bg) 8%);
+  font-size:13px;color:var(--muted);
+}
+.gtfr-toast.good{
+  border-color:color-mix(in srgb, var(--good) 55%, var(--line) 45%);
+  background:color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
+  color:color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
+}
+.gtfr-toast.bad{
+  border-color:color-mix(in srgb, var(--bad) 55%, var(--line) 45%);
+  background:color-mix(in srgb, var(--bad) 12%, var(--panel) 88%);
+  color:color-mix(in srgb, var(--bad) 70%, var(--ink) 30%);
+}
+
 .gtfr-history{margin-top:8px;font-family:var(--mono);font-size:13px;color:var(--muted);line-height:1.5;}
-.gtfr-options{background:var(--panel);border:2px solid var(--line);border-radius:var(--radius);padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;}
+
+.gtfr-options{
+  background:var(--panel);
+  border:2px solid var(--line);
+  border-radius:var(--radius);
+  padding:12px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px 12px;
+}
 @media (max-width:720px){.gtfr-options{grid-template-columns:1fr;}}
-.gtfr-opt{display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:14px;background:#fff;padding:12px 12px;cursor:pointer;user-select:none;}
-.gtfr-opt:active{transform:translateY(1px);}
-.gtfr-badge{width:32px;height:32px;border-radius:10px;border:2px solid rgba(44,62,80,0.45);background:rgba(44,62,80,0.08);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--accent);flex:0 0 auto;}
-.gtfr-expr{font-family:var(--mono);font-weight:900;font-size:16px;color:#2a2a2a;}
-.gtfr-opt.correctFlash{border-color:rgba(39,174,96,0.70);background:rgba(39,174,96,0.10);}
-.gtfr-opt.wrongFlash{border-color:rgba(231,76,60,0.70);background:rgba(231,76,60,0.10);}
-.gtfr-modalBack{position:fixed;inset:0;background:rgba(0,0,0,0.30);display:none;align-items:center;justify-content:center;padding:16px;z-index:9999;}
-.gtfr-modal{width:min(520px,96vw);background:#fff;border:2px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:14px;}
-.gtfr-modalTitle{font-weight:900;font-size:16px;margin-bottom:8px;}
-.gtfr-modalBody{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:12px;}
-.gtfr-modalRule{font-family:var(--mono);font-weight:900;color:var(--ink);background:#fafafa;border:2px solid var(--line);border-radius:12px;padding:10px 12px;margin:10px 0 12px 0;}
-.gtfr-modalBtnRow{display:flex;justify-content:flex-end;}
-.gtfr-modalBtn{border:2px solid var(--accent);background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-weight:900;cursor:pointer;}
-.gtfr-modalBtn:active{transform:translateY(1px);}
-.gtfr-stage{position:relative;overflow:hidden;display:inline-block;--stage-w:720px;--stage-h:340px;--belt-left:46px;--belt-right:46px;--belt-y:222px;--belt-top-h:12px;--belt-thickness:12px;--machine-w:290px;--machine-h:170px;--box-w:100px;--box-h:58px;--speed:150;--dir:1;--pad-x:10px;--pad-y:10px;padding:var(--pad-y) var(--pad-x) calc(var(--pad-y) + 4px);background:white;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.10);}
+
+.gtfr-opt{
+  position:relative;
+  display:flex;align-items:center;gap:12px;
+  border:2px solid var(--line);
+  border-radius:16px;
+  background:
+    radial-gradient(900px 200px at 0% 0%, rgba(255,255,255,0.50), rgba(0,0,0,0)),
+    color-mix(in srgb, var(--panel) 95%, var(--bg) 5%);
+  padding:12px 12px;
+  cursor:pointer;
+  user-select:none;
+  box-shadow:0 10px 16px rgba(0,0,0,0.06);
+  transition:transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.gtfr-opt:hover{transform:translateY(-1px);box-shadow:0 14px 22px rgba(0,0,0,0.10);}
+.gtfr-opt:active{transform:translateY(0px);}
+
+.gtfr-badge{
+  width:34px;height:34px;border-radius:12px;
+  border:2px solid color-mix(in srgb, var(--accent) 45%, var(--line) 55%);
+  background:color-mix(in srgb, var(--accent) 16%, var(--panel) 84%);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:1000;color:var(--accent);
+  flex:0 0 auto;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.55);
+}
+.gtfr-expr{font-family:var(--mono);font-weight:1000;font-size:16px;color:var(--ink);}
+
+.gtfr-opt.correctFlash{
+  border-color:color-mix(in srgb, var(--good) 70%, var(--line) 30%);
+  background:color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
+  animation:gtfrPop 240ms ease-out;
+}
+.gtfr-opt.wrongFlash{
+  border-color:color-mix(in srgb, var(--bad) 70%, var(--line) 30%);
+  background:color-mix(in srgb, var(--bad) 10%, var(--panel) 90%);
+  animation:gtfrWiggle 260ms ease-in-out;
+}
+@keyframes gtfrPop{ 0%{transform:translateY(0) scale(1);} 60%{transform:translateY(-2px) scale(1.02);} 100%{transform:translateY(0) scale(1);} }
+@keyframes gtfrWiggle{ 0%{transform:translateX(0);} 25%{transform:translateX(2px);} 50%{transform:translateX(-2px);} 75%{transform:translateX(2px);} 100%{transform:translateX(0);} }
+
+.gtfr-spark{
+  position:absolute;inset:-2px;border-radius:16px;pointer-events:none;
+  background:
+    radial-gradient(16px 16px at 18% 18%, rgba(255,255,255,0.90), rgba(255,255,255,0.00) 70%),
+    radial-gradient(18px 18px at 82% 22%, rgba(255,255,255,0.70), rgba(255,255,255,0.00) 70%),
+    radial-gradient(14px 14px at 60% 76%, rgba(255,255,255,0.70), rgba(255,255,255,0.00) 70%);
+  opacity:0;
+}
+.gtfr-opt.correctFlash .gtfr-spark{animation:gtfrSpark 520ms ease-out;}
+@keyframes gtfrSpark{ 0%{opacity:0;} 20%{opacity:0.85;} 100%{opacity:0;} }
+
+.gtfr-modalBack,
+.gtfr-settingsBack{
+  position:fixed;inset:0;background:rgba(0,0,0,0.34);
+  display:none;align-items:center;justify-content:center;
+  padding:16px;z-index:9999;
+}
+.gtfr-modal,
+.gtfr-settings{
+  width:min(560px,96vw);
+  background:var(--panel);
+  border:2px solid var(--line);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  padding:14px;
+}
+.gtfr-modalTitle,.gtfr-settingsTitle{font-weight:1000;font-size:16px;margin-bottom:8px;}
+.gtfr-modalBody,.gtfr-settingsBody{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:12px;}
+.gtfr-modalRule{
+  font-family:var(--mono);font-weight:1000;color:var(--ink);
+  background:color-mix(in srgb, var(--panel) 92%, var(--bg) 8%);
+  border:2px solid var(--line);
+  border-radius:12px;
+  padding:10px 12px;
+  margin:10px 0 12px 0;
+}
+.gtfr-modalBtnRow,.gtfr-settingsBtnRow{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;}
+.gtfr-modalBtn,.gtfr-settingsBtn{
+  border:2px solid var(--accent);
+  background:var(--accent);
+  color:#fff;
+  border-radius:12px;
+  padding:10px 14px;
+  font-weight:1000;
+  cursor:pointer;
+}
+.gtfr-modalBtn:active,.gtfr-settingsBtn:active{transform:translateY(1px);}
+.gtfr-settingsBtn.secondary{
+  background:transparent;
+  color:var(--ink);
+  border-color:var(--line);
+}
+
+.gtfr-themeGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px 12px;
+  margin-top:10px;
+}
+@media (max-width:720px){.gtfr-themeGrid{grid-template-columns:1fr;}}
+
+.gtfr-themeCard{
+  border:2px solid var(--line);
+  border-radius:16px;
+  background:color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);
+  padding:12px;
+  cursor:pointer;
+  user-select:none;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  box-shadow:0 10px 16px rgba(0,0,0,0.06);
+}
+.gtfr-themeCard:active{transform:translateY(1px);}
+.gtfr-themeName{font-weight:1000;}
+.gtfr-themeSwatches{display:flex;gap:8px;align-items:center;}
+.gtfr-swatch{width:18px;height:18px;border-radius:8px;border:2px solid rgba(0,0,0,0.12);}
+.gtfr-themeCard.selected{border-color:color-mix(in srgb, var(--accent) 60%, var(--line) 40%);}
+
+.gtfr-stage{position:relative;overflow:hidden;display:inline-block;--stage-w:720px;--stage-h:320px;--belt-left:42px;--belt-right:42px;--belt-y:212px;--belt-top-h:12px;--belt-thickness:12px;--machine-w:290px;--machine-h:170px;--box-w:100px;--box-h:58px;--speed:150;--dir:1;--pad-x:6px;--pad-y:6px;padding:var(--pad-y) var(--pad-x) calc(var(--pad-y) + 4px);background:color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);border-radius:18px;box-shadow:0 12px 28px rgba(0,0,0,0.10), inset 0 0 0 2px rgba(0,0,0,0.05);}
 .gtfr-sizer{width:var(--stage-w);height:var(--stage-h);}
 .gtfr-scene{position:absolute;left:var(--pad-x);top:var(--pad-y);width:var(--stage-w);height:var(--stage-h);transform-origin:top left;transform:scale(var(--scale,1));}
-.gtfr-belt-shadow{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y) + var(--belt-thickness) + 18px);height:22px;border-radius:999px;background:rgba(0,0,0,0.3);filter:blur(14px);opacity:0.3;z-index:1;pointer-events:none;}
+.gtfr-belt-shadow{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y) + var(--belt-thickness) + 18px);height:22px;border-radius:999px;background:rgba(0,0,0,0.3);filter:blur(14px);opacity:0.28;z-index:1;pointer-events:none;}
 .gtfr-leg{position:absolute;top:calc(var(--belt-y) + var(--belt-thickness) - 2px);width:10px;height:58px;background:#c2c8d6;border-radius:6px;z-index:2;}
 .gtfr-leg::before{content:"";position:absolute;left:50%;top:-3px;transform:translateX(-50%);width:26px;height:12px;border-radius:8px;background:#c2c8d9;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.04);}
 .gtfr-leg::after{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:18px;height:10px;border-radius:8px;background:#b5bbc9;box-shadow:inset 0 1px 0 rgba(255,255,255,0.35), inset 0 0 0 2px rgba(0,0,0,0.05);}
@@ -53,27 +256,46 @@
 .gtfr-belt-top.running .gtfr-tread{animation:gtfrTreadMove var(--tread-dur,0.28s) linear infinite;}
 @keyframes gtfrTreadMove{from{transform:translateX(0);}to{transform:translateX(calc(32px * var(--dir)));}}
 .gtfr-belt-wall{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y));height:var(--belt-thickness);border-radius:0 0 999px 999px;background:#c2c8d9;box-shadow:inset 0 2px 0 rgba(255,255,255,0.35), inset 0 0 0 2px rgba(0,0,0,0.04);z-index:25;}
-.gtfr-machine{position:absolute;width:var(--machine-w);height:var(--machine-h);left:50%;top:88px;transform:translateX(-50%);z-index:90;pointer-events:none;}
-.gtfr-machine .gtfr-ground-shadow{position:absolute;left:18px;right:18px;bottom:-14px;height:40px;border-radius:999px;background:rgba(0,0,0,0.22);filter:blur(18px);opacity:0.22;z-index:0;}
-.gtfr-machine .gtfr-contact-shadow{position:absolute;left:46px;right:46px;bottom:-6px;height:10px;border-radius:999px;background:rgba(0,0,0,0.28);filter:blur(6px);opacity:0.22;z-index:0;}
+
+.gtfr-machine{position:absolute;width:var(--machine-w);height:var(--machine-h);left:50%;top:78px;transform:translateX(-50%);z-index:90;pointer-events:none;}
+.gtfr-machine .gtfr-ground-shadow{position:absolute;left:18px;right:18px;bottom:-14px;height:40px;border-radius:999px;background:rgba(0,0,0,0.22);filter:blur(18px);opacity:0.20;z-index:0;}
+.gtfr-machine .gtfr-contact-shadow{position:absolute;left:46px;right:46px;bottom:-6px;height:10px;border-radius:999px;background:rgba(0,0,0,0.28);filter:blur(6px);opacity:0.20;z-index:0;}
 .gtfr-machine .gtfr-body{position:absolute;inset:0;border-radius:18px;background:#e3e7f2;box-shadow:0 20px 30px rgba(0,0,0,0.16), inset 0 0 0 2px rgba(0,0,0,0.10);z-index:1;}
+.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-body,
+.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-body{
+  background:color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
+}
 .gtfr-machine .gtfr-panel{position:absolute;left:18px;right:18px;top:18px;height:76px;border-radius:14px;background:#f7f9ff;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.05);z-index:2;}
-.gtfr-machine .gtfr-screen{position:absolute;left:34px;top:36px;width:120px;height:40px;border-radius:10px;background:#dff5e7;display:grid;place-items:center;font-weight:900;font-size:14px;color:#1f6b3d;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.06);user-select:none;z-index:3;letter-spacing:0.2px;}
-.gtfr-machine .gtfr-lights{position:absolute;right:34px;top:50px;display:flex;gap:10px;z-index:3;}
+.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-panel,
+.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-panel{
+  background:color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
+}
+
+.gtfr-machine .gtfr-screen{
+  position:absolute;left:34px;top:36px;width:120px;height:40px;border-radius:12px;
+  background:color-mix(in srgb, var(--good) 14%, #dff5e7 86%);
+  display:grid;place-items:center;
+  font-weight:1000;font-size:14px;
+  color:color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
+  box-shadow:inset 0 0 0 2px rgba(0,0,0,0.06);
+  user-select:none;z-index:3;letter-spacing:0.2px;
+}
+.gtfr-machine .gtfr-lights{position:absolute;right:34px;top:40px;display:flex;gap:10px;z-index:3;}
 .gtfr-light{width:14px;height:14px;border-radius:999px;background:#c9cfdd;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.06);}
 .gtfr-light.on{background:#ffd26a;box-shadow:0 0 0 2px rgba(0,0,0,0.06) inset, 0 0 12px rgba(255,210,106,0.75);}
-.gtfr-machine .gtfr-slot{position:absolute;left:18px;right:18px;top:108px;height:35px;border-radius:14px;background:rgba(0,0,0,0.18);box-shadow:inset 0 2px 0 rgba(255,255,255,0.20), inset 0 -2px 0 rgba(0,0,0,0.10), inset 0 0 0 2px rgba(255,255,255,0.14);z-index:2;overflow:hidden;}
-.gtfr-fx-emboss{position:absolute;left:18px;top:45%;transform:translateY(-35%);font-weight:900;font-size:14px;letter-spacing:0.3px;color:rgb(240,240,240);text-shadow:0 2px 0 rgba(46,46,46,0.28), 0 -2px 0 rgba(255,255,255,0.137);user-select:none;pointer-events:none;font-family:var(--mono);}
+.gtfr-machine .gtfr-slot{position:absolute;left:18px;right:18px;top:114px;height:35px;border-radius:14px;background:rgba(0,0,0,0.18);box-shadow:inset 0 2px 0 rgba(255,255,255,0.20), inset 0 -2px 0 rgba(0,0,0,0.10), inset 0 0 0 2px rgba(255,255,255,0.14);z-index:2;overflow:hidden;}
+.gtfr-fx-emboss{position:absolute;left:18px;top:60%;transform:translateY(-50%);font-weight:1000;font-size:14px;letter-spacing:0.3px;color:rgb(240,240,240);text-shadow:0 2px 0 rgba(46,46,46,0.28), 0 -2px 0 rgba(255,255,255,0.137);user-select:none;pointer-events:none;font-family:var(--mono);}
+
 .gtfr-boxes{position:absolute;inset:0;z-index:60;pointer-events:none;}
-.gtfr-box{position:absolute;width:var(--box-w);height:var(--box-h);top:calc(var(--belt-y) - var(--belt-top-h) - var(--box-h) + 6px);border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.28), rgba(0,0,0,0.00)), #c7cbd6;box-shadow:0 14px 18px rgba(0,0,0,0.10), inset 0 0 0 2px rgba(0,0,0,0.12);display:grid;place-items:center;pointer-events:none;}
+.gtfr-box{position:absolute;width:var(--box-w);height:var(--box-h);top:calc(var(--belt-y) - var(--belt-top-h) - var(--box-h) + 6px);border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.28), rgba(0,0,0,0.00)), #c7cbd6;box-shadow:0 14px 18px rgba(0,0,0,0.10), inset 0 0 0 2px rgba(0,0,0,0.12);display:grid;place-items:center;pointer-events:none;}
 .gtfr-box::before{content:"";position:absolute;left:10px;right:10px;top:8px;height:12px;border-radius:8px;background:rgba(255,255,255,0.18);box-shadow:inset 0 -2px 0 rgba(0,0,0,0.18);}
 .gtfr-box::after{content:"";position:absolute;left:14px;right:14px;bottom:-10px;height:12px;border-radius:999px;background:rgba(0,0,0,0.18);filter:blur(3px);opacity:0.14;z-index:-1;}
-.gtfr-box .gtfr-plaque{position:absolute;left:10px;right:10px;bottom:10px;height:26px;border-radius:6px;background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.30));box-shadow:inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(0,0,0,0.12), inset 0 0 0 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;pointer-events:auto;}
+.gtfr-box .gtfr-plaque{position:absolute;left:10px;right:10px;bottom:10px;height:26px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.30));box-shadow:inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(0,0,0,0.12), inset 0 0 0 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;pointer-events:auto;}
 .gtfr-box input,.gtfr-box .gtfr-value{width:74px;height:18px;box-sizing:border-box;border-radius:6px;border:2px solid rgba(0,0,0,0.14);background:rgba(255,255,255,0.92);box-shadow:0 2px 0 rgba(0,0,0,0.06);font-size:16px;text-align:center;padding:0;line-height:18px;font-family:var(--mono);}
-.gtfr-box .gtfr-value{display:flex;align-items:center;justify-content:center;line-height:1;padding:0;font-weight:900;color:rgba(0,0,0,0.65);user-select:none;}
-.gtfr-box input{outline:none;pointer-events:auto;font-weight:700;display:block;}
+.gtfr-box .gtfr-value{display:flex;align-items:center;justify-content:center;line-height:1;padding:0;font-weight:1000;color:rgba(0,0,0,0.65);user-select:none;}
+.gtfr-box input{outline:none;pointer-events:auto;font-weight:800;display:block;}
 .gtfr-box input:disabled{opacity:0.78;}
-.gtfr-box input::placeholder{color:rgba(0,0,0,0.295);opacity:1;font-weight:600;letter-spacing:0.3px;}
+.gtfr-box input::placeholder{color:rgba(0,0,0,0.295);opacity:1;font-weight:700;letter-spacing:0.3px;}
 .gtfr-box.fade-out{transition:opacity 220ms ease;opacity:0;}
 .gtfr-stageWrap{display:flex;justify-content:center;}
 `;
@@ -82,15 +304,41 @@
 
     injectStyleOnce();
 
+    function safeTheme(t) {
+      const ok = new Set(["flatly", "dark", "neon", "candy"]);
+      return ok.has(t) ? t : "flatly";
+    }
+
+    function applyTheme(t) {
+      root.dataset.theme = safeTheme(t);
+      try { localStorage.setItem(STORAGE_KEY, root.dataset.theme); } catch (e) {}
+      const cards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
+      cards.forEach(c => c.classList.toggle("selected", c.dataset.theme === root.dataset.theme));
+    }
+
+    let initialTheme = "flatly";
+    try { initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly"); } catch (e) {}
+
     root.innerHTML = `
 <div class="gtfr-wrap">
   <div class="gtfr-topbar">
-    <div class="gtfr-title">Guess The Function Rule</div>
+    <div class="gtfr-leftHead">
+      <div class="gtfr-mark">G</div>
+      <div>
+        <div class="gtfr-title">Guess The Function Rule</div>
+      </div>
+    </div>
+
     <div class="gtfr-stats">
       <div>Level <b class="gtfr-level">1</b></div>
       <div>Solved <b class="gtfr-solved">0</b></div>
       <div>Streak <b class="gtfr-streak">0</b></div>
       <div>Best <b class="gtfr-best">0</b></div>
+      <button class="gtfr-gearBtn" type="button" aria-label="Settings">
+        <svg class="gtfr-gearIcon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.2 7.2 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54c-.58.23-1.12.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.48a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.71 1.63.94l.36 2.54c.04.24.25.42.49.42h3.8c.24 0 .45-.18.49-.42l.36-2.54c.58-.23 1.12-.54 1.63-.94l2.39.96c.22.09.48 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5Z"></path>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -126,7 +374,11 @@
           </div>
         </div>
       </div>
-      <div class="gtfr-row"><div class="gtfr-toast">Type an input, press Enter, then click the rule you think is correct.</div></div>
+
+      <div class="gtfr-row">
+        <div class="gtfr-toast">Type an input, press Enter, then click the rule you think is correct.</div>
+      </div>
+
       <div class="gtfr-history">Last 5 tests:</div>
     </div>
   </div>
@@ -140,6 +392,67 @@
     <div class="gtfr-modalBody"></div>
     <div class="gtfr-modalRule"></div>
     <div class="gtfr-modalBtnRow"><button class="gtfr-modalBtn" type="button">Next round</button></div>
+  </div>
+</div>
+
+<div class="gtfr-settingsBack" aria-hidden="true">
+  <div class="gtfr-settings" role="dialog" aria-label="Settings">
+    <div class="gtfr-settingsTitle">Settings</div>
+    <div class="gtfr-settingsBody">Pick a theme. It will stick on this device.</div>
+
+    <div class="gtfr-themeGrid">
+      <div class="gtfr-themeCard" data-theme="flatly">
+        <div>
+          <div class="gtfr-themeName">Flatly</div>
+          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Clean classroom vibe</div>
+        </div>
+        <div class="gtfr-themeSwatches">
+          <div class="gtfr-swatch" style="background:#2C3E50;"></div>
+          <div class="gtfr-swatch" style="background:#18BC9C;"></div>
+          <div class="gtfr-swatch" style="background:#FFFFFF;"></div>
+        </div>
+      </div>
+
+      <div class="gtfr-themeCard" data-theme="dark">
+        <div>
+          <div class="gtfr-themeName">Dark</div>
+          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Low glare</div>
+        </div>
+        <div class="gtfr-themeSwatches">
+          <div class="gtfr-swatch" style="background:#141B24;"></div>
+          <div class="gtfr-swatch" style="background:#18BC9C;"></div>
+          <div class="gtfr-swatch" style="background:#E9EEF6;"></div>
+        </div>
+      </div>
+
+      <div class="gtfr-themeCard" data-theme="neon">
+        <div>
+          <div class="gtfr-themeName">Neon</div>
+          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Arcade mode</div>
+        </div>
+        <div class="gtfr-themeSwatches">
+          <div class="gtfr-swatch" style="background:#111227;"></div>
+          <div class="gtfr-swatch" style="background:#7CFF6B;"></div>
+          <div class="gtfr-swatch" style="background:#F0F4FF;"></div>
+        </div>
+      </div>
+
+      <div class="gtfr-themeCard" data-theme="candy">
+        <div>
+          <div class="gtfr-themeName">Candy</div>
+          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Friendly and bright</div>
+        </div>
+        <div class="gtfr-themeSwatches">
+          <div class="gtfr-swatch" style="background:#9B59B6;"></div>
+          <div class="gtfr-swatch" style="background:#F39C12;"></div>
+          <div class="gtfr-swatch" style="background:#FFFFFF;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gtfr-settingsBtnRow" style="margin-top:12px;">
+      <button class="gtfr-settingsBtn secondary" type="button">Close</button>
+    </div>
   </div>
 </div>
 `;
@@ -166,6 +479,31 @@
     const modalBody = root.querySelector(".gtfr-modalBody");
     const modalRule = root.querySelector(".gtfr-modalRule");
     const modalBtn = root.querySelector(".gtfr-modalBtn");
+
+    const gearBtn = root.querySelector(".gtfr-gearBtn");
+    const settingsBack = root.querySelector(".gtfr-settingsBack");
+    const closeSettingsBtn = root.querySelector(".gtfr-settingsBtn.secondary");
+    const themeCards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
+
+    applyTheme(initialTheme);
+
+    function openSettings() {
+      settingsBack.style.display = "flex";
+      settingsBack.setAttribute("aria-hidden", "false");
+      applyTheme(root.dataset.theme || "flatly");
+    }
+    function closeSettings() {
+      settingsBack.style.display = "none";
+      settingsBack.setAttribute("aria-hidden", "true");
+    }
+
+    gearBtn.addEventListener("click", openSettings);
+    closeSettingsBtn.addEventListener("click", closeSettings);
+    settingsBack.addEventListener("click", (e) => { if (e.target === settingsBack) closeSettings(); });
+
+    themeCards.forEach(card => {
+      card.addEventListener("click", () => applyTheme(card.dataset.theme));
+    });
 
     let running = false;
     let raf = 0;
@@ -238,7 +576,6 @@
       const maxW = Math.max(260, wrap.getBoundingClientRect().width - 24);
       const availW = Math.max(240, maxW - padX * 2);
 
-      // Scale only by available width, and allow it to grow a bit so the machine is not tiny.
       const scale = Math.min(1.6, availW / baseW);
       stage.style.setProperty("--scale", String(scale));
 
@@ -321,8 +658,7 @@
     }
 
     function setFunctionLetter() {
-      state.funcLetter = pick(["f", "g", "h", "p", "q"]);
-      fxEmboss.textContent = "== " + state.funcLetter + "(x) = ==============";
+      fxEmboss.textContent = "== f(x) ===============";
     }
 
     function createActiveBox(value) {
@@ -418,7 +754,6 @@
 
       const scale = Number(getComputedStyle(stage).getPropertyValue("--scale")) || 1;
 
-      // Use scene coordinates for all geometry so scaling does not break motion.
       const s = stage.getBoundingClientRect();
       const m = machine.getBoundingClientRect();
 
@@ -427,10 +762,8 @@
       const leftEdge = cssNum(stage, "--belt-left");
       const rightEdge = (s.width / scale) - cssNum(stage, "--belt-right") - boxW;
 
-      // Stop the box with the same inset it started with.
       const endInset = Math.max(0, START_X - leftEdge);
       const endEdge = Math.max(leftEdge, rightEdge - endInset);
-
 
       const slotLeft = ((m.left - s.left) / scale) + 18;
       const slotRight = ((m.right - s.left) / scale) - 18;
@@ -449,7 +782,6 @@
         const dx = (speed * dt * dir);
         let bx = getBoxLeft(activeBox) + dx;
 
-        // Only clamp on the left. On the right, let it travel past the belt so the run can finish.
         bx = Math.max(leftEdge, Math.min(rightEdge, bx));
         setBoxLeft(activeBox, bx);
 
@@ -462,7 +794,6 @@
           activeInput.value = String(outValue);
         }
 
-        // Finish once the box has clearly passed the machine.
         const done = dir > 0 ? bx >= endEdge : bx <= leftEdge;
         if (done) {
           setBoxLeft(activeBox, dir > 0 ? endEdge : leftEdge);
@@ -497,7 +828,7 @@
 
     function openWinModal() {
       modalBody.textContent = "Solved using " + String(state.tests.length) + " test" + (state.tests.length === 1 ? "" : "s") + ".";
-      modalRule.textContent = state.funcLetter + "(x) = " + exprToText(state.correctRule);
+      modalRule.textContent = "f(x) = " + exprToText(state.correctRule);
       modalBack.style.display = "flex";
       modalBack.setAttribute("aria-hidden", "false");
     }
@@ -519,6 +850,9 @@
         const div = document.createElement("div");
         div.className = "gtfr-opt";
 
+        const spark = document.createElement("div");
+        spark.className = "gtfr-spark";
+
         const badge = document.createElement("div");
         badge.className = "gtfr-badge";
         badge.textContent = letter;
@@ -527,6 +861,7 @@
         expr.className = "gtfr-expr";
         expr.textContent = exprToText(rule);
 
+        div.appendChild(spark);
         div.appendChild(badge);
         div.appendChild(expr);
 
