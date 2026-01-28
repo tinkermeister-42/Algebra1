@@ -57,7 +57,7 @@ In this lesson, we will find the answers to these questions by learning the basi
 
 ### 5.4.1 - Factoring Out a GCF
 
-In [Lesson 1.3](/chapters/Unit_1/1.3_GCF_&_Simplifying_Fractions.qmd), you learned how to find a **greatest common factor** (GCF). The GCF is the largest number or expression that divides every term.
+In [Lesson 1.3](/chapters/Unit_1/1.3_GCF_and_Simplifying_Fractions.qmd), you learned how to find a **greatest common factor** (GCF). The GCF is the largest number or expression that divides every term.
 
 When working with polynomials, writing an expression as a **product** is often the first step toward a cleaner or more useful form. Before jumping in, let’s quickly remind ourselves what a GCF looks like.
 
