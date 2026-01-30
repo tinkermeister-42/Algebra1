@@ -72,6 +72,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {
+  inlineMath: [["\\(", "\\)"]],
+  displayMath: [["\\[", "\\]"]]
+};
+window.MathJax.chtml = window.MathJax.chtml || {
+  fontCache: "global"
+};
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<script>
 window.MathJax = {
   tex: {
     packages: {'[+]': ['base', 'ams', 'color']},

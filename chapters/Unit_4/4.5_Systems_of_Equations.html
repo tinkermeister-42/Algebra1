@@ -72,6 +72,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {
+  inlineMath: [["\\(", "\\)"]],
+  displayMath: [["\\[", "\\]"]]
+};
+window.MathJax.chtml = window.MathJax.chtml || {
+  fontCache: "global"
+};
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<script>
 window.MathJax = {
   tex: {
     packages: {'[+]': ['base', 'ams', 'color']},
@@ -712,7 +726,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="elimination" data-term="elimination" data-original-href="#glossary-elimination">elimination</a>, <a href="" class="glossary-link" data-slug="intersection" data-term="intersection" data-original-href="#glossary-intersection">intersection</a>, <a href="" class="glossary-link" data-slug="solution" data-term="solution" data-original-href="#glossary-solution">solution</a>, <a href="" class="glossary-link" data-slug="substitution" data-term="substitution" data-original-href="#glossary-substitution">substitution</a>, <a href="" class="glossary-link" data-slug="system-of-equations" data-term="system of equations" data-original-href="#glossary-system-of-equations">system of equations</a></p>
+<p><a href="" class="glossary-link" data-term="elimination" data-slug="elimination" data-original-href="#glossary-elimination">elimination</a>, <a href="" class="glossary-link" data-term="intersection" data-slug="intersection" data-original-href="#glossary-intersection">intersection</a>, <a href="" class="glossary-link" data-term="solution" data-slug="solution" data-original-href="#glossary-solution">solution</a>, <a href="" class="glossary-link" data-term="substitution" data-slug="substitution" data-original-href="#glossary-substitution">substitution</a>, <a href="" class="glossary-link" data-term="system of equations" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations">system of equations</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -726,7 +740,7 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="graphing-systems-of-equations-and-interpreting-their-solutions" class="level3">
 <h3 class="anchored" data-anchor-id="graphing-systems-of-equations-and-interpreting-their-solutions">4.5.1 - Graphing Systems of Equations and Interpreting Their Solutions</h3>
-<p>A <a href="" class="glossary-link" data-slug="system-of-equations" data-term="system of equations" data-original-href="#glossary-system-of-equations">system of equations</a> is two or more equations that share the same variables.</p>
+<p>A <a href="" class="glossary-link" data-term="system of equations" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations">system of equations</a> is two or more equations that share the same variables.</p>
 <p>Each equation describes a rule or relationship, and the solution to the system is a point that satisfies <em>all</em> of those rules at the same time.</p>
 <p>In the following examples, we will see some systems of equations and learn how to interpret their solutions.</p>
 <hr>
@@ -746,7 +760,7 @@ y = -x + 4
 <p><strong>Interpretation:</strong></p>
 <p>The two lines cross at <span class="math inline">\((1, 3)\)</span>. This is the one point where both equations are true. We call this point the <strong>solution to the system</strong>.</p>
 <div class="note" title="Checking the Solution">
-<p>We can check it using <a href="" class="glossary-link" data-slug="substitution" data-term="substitution" data-original-href="#glossary-substitution">substitution</a>.</p>
+<p>We can check it using <a href="" class="glossary-link" data-term="substitution" data-slug="substitution" data-original-href="#glossary-substitution">substitution</a>.</p>
 <p><span class="math display">\[
 \begin{cases}
 \textcolor{blue}{3} = 2(\textcolor{red}{1})+1 = 3 ✔️ \\
@@ -790,7 +804,7 @@ y = 2x + 25
 </div>
 <p>The lines meet at <span class="math inline">\((5, 35)\)</span>.</p>
 <p><strong>Interpretation:</strong></p>
-<p>After <strong>5 classes</strong>, both plans cost <strong>$35</strong>. Before that, Plan A is cheaper; after that, Plan B is cheaper. The <a href="" class="glossary-link" data-slug="intersection" data-term="intersection" data-original-href="#glossary-intersection">intersection</a> shows exactly where the two plans balance.</p>
+<p>After <strong>5 classes</strong>, both plans cost <strong>$35</strong>. Before that, Plan A is cheaper; after that, Plan B is cheaper. The <a href="" class="glossary-link" data-term="intersection" data-slug="intersection" data-original-href="#glossary-intersection">intersection</a> shows exactly where the two plans balance.</p>
 <hr>
 <p><strong>Example 4:</strong> Plumbers and electricians</p>
 <p>A plumber charges a flat fee of $40 plus $60 per hour. An electrician charges $100 plus $50 per hour.</p>

@@ -72,6 +72,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {
+  inlineMath: [["\\(", "\\)"]],
+  displayMath: [["\\[", "\\]"]]
+};
+window.MathJax.chtml = window.MathJax.chtml || {
+  fontCache: "global"
+};
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<script>
 window.MathJax = {
   tex: {
     packages: {'[+]': ['base', 'ams', 'color']},
@@ -677,7 +691,7 @@ window.MathJax = {
 </section>
 <section id="factor-chart" class="level3">
 <h3 class="anchored" data-anchor-id="factor-chart">Factor Chart</h3>
-<p>Need help finding all the factor pairs of a number? This chart lists every <a href="" class="glossary-link" data-term="composite" data-slug="composite" data-original-href="#glossary-composite">composite</a> from 1 to 100 and lists all <a href="" class="glossary-link" data-term="prime" data-slug="prime" data-original-href="#glossary-prime">prime</a> up to 97. For each number, you’ll see a list of its factor pairs.</p>
+<p>Need help finding all the factor pairs of a number? This chart lists every <a href="" class="glossary-link" data-slug="composite" data-original-href="#glossary-composite" data-term="composite">composite</a> from 1 to 100 and lists all <a href="" class="glossary-link" data-slug="prime" data-original-href="#glossary-prime" data-term="prime">prime</a> up to 97. For each number, you’ll see a list of its factor pairs.</p>
 <p><a href="./resources/FactorChart.pdf">Download Chart</a></p>
 <hr>
 </section>

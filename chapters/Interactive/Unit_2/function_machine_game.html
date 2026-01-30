@@ -72,6 +72,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {
+  inlineMath: [["\\(", "\\)"]],
+  displayMath: [["\\[", "\\]"]]
+};
+window.MathJax.chtml = window.MathJax.chtml || {
+  fontCache: "global"
+};
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<script>
 window.MathJax = {
   tex: {
     packages: {'[+]': ['base', 'ams', 'color']},
@@ -659,341 +673,1178 @@ window.MathJax = {
 </header>
 
 
-<p>!! THIS IS A WORK IN PROGRESS !!</p>
-<p>In this game, your goal is to figure out what rule the function machine is using by comparing inputs to outputs.</p>
+<p>In this game, you will interact with a function machine that takes an input number and produces an output. Your job is to study the input output pairs, look for patterns, and guess the rule the machine is using. There may be more than one rule that seems possible at first, so try different inputs to test your ideas. When you think you know the rule, lock it in and see if the machine agrees.</p>
 <div class="gtfr-root">
 
 </div>
 <script>
   (() => {
-    const root = document.currentScript && document.currentScript.previousElementSibling;
+    const root =
+      document.currentScript && document.currentScript.previousElementSibling;
     if (!root || !root.classList.contains("gtfr-root")) return;
     if (root.dataset.gtfrInit === "1") return;
     root.dataset.gtfrInit = "1";
 
-    const STORAGE_KEY = "gtfr_theme_v1";
+    function renderMathInto(el, tex, display = false) {
+      tex = String(tex ?? "");
+      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
 
+      const MJ = window.MathJax;
+      if (!MJ) return Promise.resolve();
+
+      const doTypeset = () => {
+        if (typeof MJ.typesetPromise === "function")
+          return MJ.typesetPromise([el]);
+        if (typeof MJ.typeset === "function") {
+          MJ.typeset([el]);
+          return Promise.resolve();
+        }
+        return Promise.resolve();
+      };
+
+      if (MJ.startup && MJ.startup.promise) {
+        return MJ.startup.promise.then(doTypeset).catch(() => {});
+      }
+      return doTypeset().catch(() => {});
+    }
+
+    function fitExpr(el) {
+      if (!el) return;
+
+      el.style.transform = "";
+      el.style.transformOrigin = "center center";
+
+      const mj = el.querySelector("mjx-container");
+      if (!mj) return;
+
+      const w = mj.scrollWidth || mj.getBoundingClientRect().width || 0;
+      const cw = el.clientWidth || el.getBoundingClientRect().width || 1;
+
+      if (!w || !cw) return;
+
+      const cushion = 28;
+      const available = Math.max(10, cw - cushion);
+
+      // Only scale if it exceeds by a few pixels
+      if (w <= available + 3) return;
+
+      const s = Math.max(0.6, Math.min(1, available / w));
+      if (s >= 0.985) return;
+
+      el.style.transform = `scale(${s})`;
+    }
+
+    const STORAGE_KEY = "gtfr_theme_v1";
+    const DIFF_KEY = "gtfr_diff_v1";
     function injectStyleOnce() {
       if (document.getElementById("gtfr_style_v2")) return;
       const s = document.createElement("style");
       s.id = "gtfr_style_v2";
-      s.textContent = `
-.gtfr-root{
-  --bg:#fbfbfb;--panel:#ffffff;--ink:#1f1f1f;--muted:#6a6a6a;--line:#d2d2d2;--accent:#2c3e50;
-  --good:#27ae60;--bad:#e74c3c;
-  --shadow:0 14px 28px rgba(0,0,0,0.12);
-  --radius:16px;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      s.textContent = `.gtfr-root {
+  --bg: #fbfbfb;
+  --panel: #ffffff;
+  --ink: #1f1f1f;
+  --muted: #6a6a6a;
+  --line: #d2d2d2;
+  --accent: #2c3e50;
+  --good: #27ae60;
+  --bad: #e74c3c;
+  --shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  --radius: 16px;
+  --mono:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   --sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color:var(--ink);font-family:var(--sans);
+  color: var(--ink);
+  font-family: var(--sans);
 }
-
-.gtfr-root[data-theme="flatly"]{ --bg:#fbfbfb;--panel:#ffffff;--ink:#1f1f1f;--muted:#6a6a6a;--line:#d2d2d2;--accent:#2c3e50; }
-.gtfr-root[data-theme="dark"]{
-  --bg:#0f141a;--panel:#141b24;--ink:#e9eef6;--muted:#a8b3c2;--line:#2a3443;--accent:#18bc9c;
-  --shadow:0 18px 40px rgba(0,0,0,0.40);
+.gtfr-root[data-theme="flatly"] {
+  --bg: #fbfbfb;
+  --panel: #ffffff;
+  --ink: #1f1f1f;
+  --muted: #6a6a6a;
+  --line: #d2d2d2;
+  --accent: #2c3e50;
 }
-.gtfr-root[data-theme="neon"]{
-  --bg:#0b0b12;--panel:#111227;--ink:#f0f4ff;--muted:#b7c0ff;--line:#2d2f66;--accent:#7cff6b;
-  --shadow:0 18px 42px rgba(0,0,0,0.44);
+.gtfr-root[data-theme="dark"] {
+  --bg: #0f141a;
+  --panel: #141b24;
+  --ink: #e9eef6;
+  --muted: #a8b3c2;
+  --line: #2a3443;
+  --accent: #18bc9c;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
-.gtfr-root[data-theme="candy"]{
-  --bg:#fff7fb;--panel:#ffffff;--ink:#2a2230;--muted:#7a6b86;--line:#f0cfe1;--accent:#9b59b6;
-  --shadow:0 16px 34px rgba(155,89,182,0.16);
+.gtfr-root[data-theme="neon"] {
+  --bg: #0b0b12;
+  --panel: #111227;
+  --ink: #f0f4ff;
+  --muted: #b7c0ff;
+  --line: #2d2f66;
+  --accent: #7cff6b;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
 }
-
-.gtfr-wrap{
-  max-width:1100px;margin:0 auto;
-  background:linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.00)) , var(--bg);
-  border:2px solid var(--line);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  overflow:hidden;
+.gtfr-root[data-theme="candy"] {
+  --bg: #fff7fb;
+  --panel: #ffffff;
+  --ink: #2a2230;
+  --muted: #7a6b86;
+  --line: #f0cfe1;
+  --accent: #9b59b6;
+  --shadow: 0 16px 34px rgba(155, 89, 182, 0.16);
 }
-
-.gtfr-topbar{
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  padding:12px 14px;
+.gtfr-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
   background:
-    radial-gradient(900px 260px at 20% 0%, rgba(24,188,156,0.16), rgba(0,0,0,0)),
-    radial-gradient(900px 260px at 80% 0%, rgba(52,152,219,0.16), rgba(0,0,0,0)),
-    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.08));
-  border-bottom:2px solid var(--line);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)),
+    var(--bg);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
-
-.gtfr-leftHead{display:flex;align-items:center;gap:10px;min-width:260px;}
-.gtfr-mark{
-  width:34px;height:34px;border-radius:12px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.10)), color-mix(in srgb, var(--accent) 86%, #000 14%);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.16), 0 10px 22px rgba(0,0,0,0.10);
-  display:grid;place-items:center;color:#fff;font-weight:1000;
-  letter-spacing:0.3px;
-}
-.gtfr-title{font-weight:1000;font-size:16px;letter-spacing:0.2px;}
-
-.gtfr-stats{
-  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
-  font-size:13px;color:var(--muted);justify-content:flex-end;
-}
-.gtfr-stats b{color:var(--ink);font-weight:1000;}
-
-.gtfr-gearBtn{
-  border:2px solid var(--line);
-  background:linear-gradient(180deg, rgba(255,255,255,0.62), rgba(255,255,255,0.14));
-  border-radius:12px;
-  width:38px;height:38px;
-  display:grid;place-items:center;
-  cursor:pointer;
-  box-shadow:0 10px 18px rgba(0,0,0,0.08);
-  user-select:none;
-}
-.gtfr-gearBtn:active{transform:translateY(1px);}
-.gtfr-gearIcon{width:18px;height:18px;fill:var(--ink);opacity:0.86;}
-
-.gtfr-section{padding:10px 12px;border-bottom:2px solid var(--line);}
-.gtfr-panel{background:var(--panel);border:2px solid var(--line);border-radius:var(--radius);padding:10px;}
-
-.gtfr-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;flex-wrap:wrap;}
-
-.gtfr-toast{
-  flex:1;min-width:240px;
-  padding:10px 12px;
-  border-radius:14px;
-  border:2px solid var(--line);
+.gtfr-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
   background:
-    radial-gradient(700px 160px at 12% 0%, rgba(52,152,219,0.10), rgba(0,0,0,0)),
-    radial-gradient(700px 160px at 88% 0%, rgba(243,156,18,0.10), rgba(0,0,0,0)),
+    radial-gradient(
+      900px 260px at 20% 0%,
+      rgba(24, 188, 156, 0.16),
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(
+      900px 260px at 80% 0%,
+      rgba(52, 152, 219, 0.16),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.08)
+    );
+  border-bottom: 2px solid var(--line);
+}
+.gtfr-leftHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 260px;
+}
+.gtfr-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)),
+    color-mix(in srgb, var(--accent) 86%, #000 14%);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.16),
+    0 10px 22px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 1000;
+  letter-spacing: 0.3px;
+}
+.gtfr-title {
+  font-weight: 1000;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+.gtfr-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+  justify-content: flex-end;
+}
+.gtfr-stats b {
+  color: var(--ink);
+  font-weight: 1000;
+}
+.gtfr-gearBtn {
+  border: 2px solid var(--line);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.62),
+    rgba(255, 255, 255, 0.14)
+  );
+  border-radius: 12px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+.gtfr-gearBtn:active {
+  transform: translateY(1px);
+}
+.gtfr-gearIcon {
+  width: 18px;
+  height: 18px;
+  fill: var(--ink);
+  opacity: 0.86;
+}
+.gtfr-section {
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--line);
+}
+.gtfr-panel {
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px;
+}
+.gtfr-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.gtfr-toast {
+  flex: 1;
+  min-width: 240px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 2px solid var(--line);
+  background:
+    radial-gradient(
+      700px 160px at 12% 0%,
+      rgba(52, 152, 219, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(
+      700px 160px at 88% 0%,
+      rgba(243, 156, 18, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
     color-mix(in srgb, var(--panel) 92%, var(--bg) 8%);
-  font-size:13px;color:var(--muted);
+  font-size: 13px;
+  color: var(--muted);
 }
-.gtfr-toast.good{
-  border-color:color-mix(in srgb, var(--good) 55%, var(--line) 45%);
-  background:color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
-  color:color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
+.gtfr-toast.good {
+  border-color: color-mix(in srgb, var(--good) 55%, var(--line) 45%);
+  background: color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
+  color: color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
 }
-.gtfr-toast.bad{
-  border-color:color-mix(in srgb, var(--bad) 55%, var(--line) 45%);
-  background:color-mix(in srgb, var(--bad) 12%, var(--panel) 88%);
-  color:color-mix(in srgb, var(--bad) 70%, var(--ink) 30%);
+.gtfr-toast.bad {
+  border-color: color-mix(in srgb, var(--bad) 55%, var(--line) 45%);
+  background: color-mix(in srgb, var(--bad) 12%, var(--panel) 88%);
+  color: color-mix(in srgb, var(--bad) 70%, var(--ink) 30%);
 }
-
-.gtfr-history{margin-top:8px;font-family:var(--mono);font-size:13px;color:var(--muted);line-height:1.5;}
-
-.gtfr-options{
-  background:var(--panel);
-  border:2px solid var(--line);
-  border-radius:var(--radius);
-  padding:12px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px 12px;
+.gtfr-history {
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
 }
-@media (max-width:720px){.gtfr-options{grid-template-columns:1fr;}}
-
-.gtfr-opt{
-  position:relative;
-  display:flex;align-items:center;gap:12px;
-  border:2px solid var(--line);
-  border-radius:16px;
+.gtfr-options {
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+}
+@media (max-width: 720px) {
+  .gtfr-options {
+    grid-template-columns: 1fr;
+  }
+}
+.gtfr-opt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid var(--line);
+  border-radius: 16px;
   background:
-    radial-gradient(900px 200px at 0% 0%, rgba(255,255,255,0.50), rgba(0,0,0,0)),
+    radial-gradient(
+      900px 200px at 0% 0%,
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
     color-mix(in srgb, var(--panel) 95%, var(--bg) 5%);
-  padding:12px 12px;
-  cursor:pointer;
-  user-select:none;
-  box-shadow:0 10px 16px rgba(0,0,0,0.06);
-  transition:transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  padding: 12px 12px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 120ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 }
-.gtfr-opt:hover{transform:translateY(-1px);box-shadow:0 14px 22px rgba(0,0,0,0.10);}
-.gtfr-opt:active{transform:translateY(0px);}
+.gtfr-opt:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 22px rgba(0, 0, 0, 0.1);
+}
+.gtfr-opt:active {
+  transform: translateY(0px);
+}
+.gtfr-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--accent) 45%, var(--line) 55%);
+  background: color-mix(in srgb, var(--accent) 16%, var(--panel) 84%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 1000;
+  color: var(--accent);
+  flex: 0 0 auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+.gtfr-expr{
+  font-family:var(--mono);
+  font-weight:1000;
+  font-size:16px;
+  color:var(--ink);
+  line-height:1.1;
+  min-height:1.4em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.05em;
+  padding:0 12px;
+  overflow:visible;
+}
 
-.gtfr-badge{
-  width:34px;height:34px;border-radius:12px;
-  border:2px solid color-mix(in srgb, var(--accent) 45%, var(--line) 55%);
-  background:color-mix(in srgb, var(--accent) 16%, var(--panel) 84%);
-  display:flex;align-items:center;justify-content:center;
-  font-weight:1000;color:var(--accent);
-  flex:0 0 auto;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.55);
-}
-.gtfr-expr{font-family:var(--mono);font-weight:1000;font-size:16px;color:var(--ink);}
+.gtfr-expr mjx-container{ margin:0 !important }
 
-.gtfr-opt.correctFlash{
-  border-color:color-mix(in srgb, var(--good) 70%, var(--line) 30%);
-  background:color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
-  animation:gtfrPop 240ms ease-out;
+.gtfr-opt.correctFlash {
+  border-color: color-mix(in srgb, var(--good) 70%, var(--line) 30%);
+  background: color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
+  animation: gtfrPop 240ms ease-out; overflow: visible;
 }
-.gtfr-opt.wrongFlash{
-  border-color:color-mix(in srgb, var(--bad) 70%, var(--line) 30%);
-  background:color-mix(in srgb, var(--bad) 10%, var(--panel) 90%);
-  animation:gtfrWiggle 260ms ease-in-out;
+.gtfr-opt.wrongFlash {
+  border-color: color-mix(in srgb, var(--bad) 70%, var(--line) 30%);
+  background: color-mix(in srgb, var(--bad) 10%, var(--panel) 90%);
+  animation: gtfrWiggle 260ms ease-in-out;
 }
-@keyframes gtfrPop{ 0%{transform:translateY(0) scale(1);} 60%{transform:translateY(-2px) scale(1.02);} 100%{transform:translateY(0) scale(1);} }
-@keyframes gtfrWiggle{ 0%{transform:translateX(0);} 25%{transform:translateX(2px);} 50%{transform:translateX(-2px);} 75%{transform:translateX(2px);} 100%{transform:translateX(0);} }
-
-.gtfr-spark{
-  position:absolute;inset:-2px;border-radius:16px;pointer-events:none;
+@keyframes gtfrPop {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  60% {
+    transform: translateY(-2px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes gtfrWiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.gtfr-spark {
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  pointer-events: none;
   background:
-    radial-gradient(16px 16px at 18% 18%, rgba(255,255,255,0.90), rgba(255,255,255,0.00) 70%),
-    radial-gradient(18px 18px at 82% 22%, rgba(255,255,255,0.70), rgba(255,255,255,0.00) 70%),
-    radial-gradient(14px 14px at 60% 76%, rgba(255,255,255,0.70), rgba(255,255,255,0.00) 70%);
-  opacity:0;
+    radial-gradient(
+      16px 16px at 18% 18%,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0) 70%
+    ),
+    radial-gradient(
+      18px 18px at 82% 22%,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0) 70%
+    ),
+    radial-gradient(
+      14px 14px at 60% 76%,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0) 70%
+    );
+  opacity: 0;
 }
-.gtfr-opt.correctFlash .gtfr-spark{animation:gtfrSpark 520ms ease-out;}
-@keyframes gtfrSpark{ 0%{opacity:0;} 20%{opacity:0.85;} 100%{opacity:0;} }
-
+.gtfr-opt.correctFlash .gtfr-spark {
+  animation: gtfrSpark 520ms ease-out;
+}
+@keyframes gtfrSpark {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .gtfr-modalBack,
-.gtfr-settingsBack{
-  position:fixed;inset:0;background:rgba(0,0,0,0.34);
-  display:none;align-items:center;justify-content:center;
-  padding:16px;z-index:9999;
+.gtfr-settingsBack {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.34);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
 }
 .gtfr-modal,
-.gtfr-settings{
-  width:min(560px,96vw);
-  background:var(--panel);
-  border:2px solid var(--line);
-  border-radius:18px;
-  box-shadow:var(--shadow);
-  padding:14px;
+.gtfr-settings {
+  width: min(560px, 96vw);
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 14px;
 }
-.gtfr-modalTitle,.gtfr-settingsTitle{font-weight:1000;font-size:16px;margin-bottom:8px;}
-.gtfr-modalBody,.gtfr-settingsBody{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:12px;}
-.gtfr-modalRule{
-  font-family:var(--mono);font-weight:1000;color:var(--ink);
-  background:color-mix(in srgb, var(--panel) 92%, var(--bg) 8%);
-  border:2px solid var(--line);
-  border-radius:12px;
-  padding:10px 12px;
-  margin:10px 0 12px 0;
+.gtfr-modalTitle,
+.gtfr-settingsTitle {
+  font-weight: 1000;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
-.gtfr-modalBtnRow,.gtfr-settingsBtnRow{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;}
-.gtfr-modalBtn,.gtfr-settingsBtn{
-  border:2px solid var(--accent);
-  background:var(--accent);
-  color:#fff;
-  border-radius:12px;
-  padding:10px 14px;
-  font-weight:1000;
-  cursor:pointer;
+.gtfr-modalBody,
+.gtfr-settingsBody {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
-.gtfr-modalBtn:active,.gtfr-settingsBtn:active{transform:translateY(1px);}
-.gtfr-settingsBtn.secondary{
-  background:transparent;
-  color:var(--ink);
-  border-color:var(--line);
+.gtfr-modalRule {
+  font-family: var(--mono);
+  font-weight: 1000;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 92%, var(--bg) 8%);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 10px 0 12px 0;
 }
-
-.gtfr-themeGrid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px 12px;
-  margin-top:10px;
+.gtfr-modalBtnRow,
+.gtfr-settingsBtnRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-@media (max-width:720px){.gtfr-themeGrid{grid-template-columns:1fr;}}
-
-.gtfr-themeCard{
-  border:2px solid var(--line);
-  border-radius:16px;
-  background:color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);
-  padding:12px;
-  cursor:pointer;
-  user-select:none;
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  box-shadow:0 10px 16px rgba(0,0,0,0.06);
+.gtfr-modalBtn,
+.gtfr-settingsBtn {
+  border: 2px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 1000;
+  cursor: pointer;
 }
-.gtfr-themeCard:active{transform:translateY(1px);}
-.gtfr-themeName{font-weight:1000;}
-.gtfr-themeSwatches{display:flex;gap:8px;align-items:center;}
-.gtfr-swatch{width:18px;height:18px;border-radius:8px;border:2px solid rgba(0,0,0,0.12);}
-.gtfr-themeCard.selected{border-color:color-mix(in srgb, var(--accent) 60%, var(--line) 40%);}
-
-.gtfr-stage{position:relative;overflow:hidden;display:inline-block;--stage-w:720px;--stage-h:320px;--belt-left:42px;--belt-right:42px;--belt-y:212px;--belt-top-h:12px;--belt-thickness:12px;--machine-w:290px;--machine-h:170px;--box-w:100px;--box-h:58px;--speed:150;--dir:1;--pad-x:6px;--pad-y:6px;padding:var(--pad-y) var(--pad-x) calc(var(--pad-y) + 4px);background:color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);border-radius:18px;box-shadow:0 12px 28px rgba(0,0,0,0.10), inset 0 0 0 2px rgba(0,0,0,0.05);}
-.gtfr-sizer{width:var(--stage-w);height:var(--stage-h);}
-.gtfr-scene{position:absolute;left:var(--pad-x);top:var(--pad-y);width:var(--stage-w);height:var(--stage-h);transform-origin:top left;transform:scale(var(--scale,1));}
-.gtfr-belt-shadow{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y) + var(--belt-thickness) + 18px);height:22px;border-radius:999px;background:rgba(0,0,0,0.3);filter:blur(14px);opacity:0.28;z-index:1;pointer-events:none;}
-.gtfr-leg{position:absolute;top:calc(var(--belt-y) + var(--belt-thickness) - 2px);width:10px;height:58px;background:#c2c8d6;border-radius:6px;z-index:2;}
-.gtfr-leg::before{content:"";position:absolute;left:50%;top:-3px;transform:translateX(-50%);width:26px;height:12px;border-radius:8px;background:#c2c8d9;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.04);}
-.gtfr-leg::after{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:18px;height:10px;border-radius:8px;background:#b5bbc9;box-shadow:inset 0 1px 0 rgba(255,255,255,0.35), inset 0 0 0 2px rgba(0,0,0,0.05);}
-.gtfr-conveyor{position:absolute;inset:0;z-index:20;pointer-events:none;}
-.gtfr-belt-top{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y) - var(--belt-top-h));height:var(--belt-top-h);border-radius:999px;background:#d6dceb;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.08), inset 0 0 0 2px rgba(0,0,0,0.06);overflow:hidden;z-index:30;}
-.gtfr-belt-top .gtfr-tread{position:absolute;inset:0;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.45) 0px, rgba(255,255,255,0.45) 16px, rgba(255,255,255,0.0) 16px, rgba(255,255,255,0.0) 32px);transform:translateX(0);opacity:0.9;}
-.gtfr-belt-top.running .gtfr-tread{animation:gtfrTreadMove var(--tread-dur,0.28s) linear infinite;}
-@keyframes gtfrTreadMove{from{transform:translateX(0);}to{transform:translateX(calc(32px * var(--dir)));}}
-.gtfr-belt-wall{position:absolute;left:var(--belt-left);right:var(--belt-right);top:calc(var(--belt-y));height:var(--belt-thickness);border-radius:0 0 999px 999px;background:#c2c8d9;box-shadow:inset 0 2px 0 rgba(255,255,255,0.35), inset 0 0 0 2px rgba(0,0,0,0.04);z-index:25;}
-
-.gtfr-machine{position:absolute;width:var(--machine-w);height:var(--machine-h);left:50%;top:78px;transform:translateX(-50%);z-index:90;pointer-events:none;}
-.gtfr-machine .gtfr-ground-shadow{position:absolute;left:18px;right:18px;bottom:-14px;height:40px;border-radius:999px;background:rgba(0,0,0,0.22);filter:blur(18px);opacity:0.20;z-index:0;}
-.gtfr-machine .gtfr-contact-shadow{position:absolute;left:46px;right:46px;bottom:-6px;height:10px;border-radius:999px;background:rgba(0,0,0,0.28);filter:blur(6px);opacity:0.20;z-index:0;}
-.gtfr-machine .gtfr-body{position:absolute;inset:0;border-radius:18px;background:#e3e7f2;box-shadow:0 20px 30px rgba(0,0,0,0.16), inset 0 0 0 2px rgba(0,0,0,0.10);z-index:1;}
+.gtfr-modalBtn:active,
+.gtfr-settingsBtn:active {
+  transform: translateY(1px);
+}
+.gtfr-settingsBtn.secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.gtfr-themeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+  margin-top: 10px;
+}
+@media (max-width: 720px) {
+  .gtfr-themeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.gtfr-themeCard {
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);
+  padding: 12px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.06);
+}
+.gtfr-themeCard:active {
+  transform: translateY(1px);
+}
+.gtfr-themeName {
+  font-weight: 1000;
+}
+.gtfr-themeSwatches {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.gtfr-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+.gtfr-themeCard.selected {
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--line) 40%);
+}
+.gtfr-stage {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  --stage-w: 720px;
+  --stage-h: 300px;
+  --belt-left: 42px;
+  --belt-right: 42px;
+  --belt-y: 204px;
+  --belt-top-h: 12px;
+  --belt-thickness: 12px;
+  --machine-w: 290px;
+  --machine-h: 170px;
+  --box-w: 100px;
+  --box-h: 68px;
+  --speed: 150;
+  --dir: 1;
+  --pad-x: 6px;
+  --pad-y: 4px;
+  --stop-right-pad: 6px;
+  padding: var(--pad-y) var(--pad-x) calc(var(--pad-y) + 4px);
+  background: color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);
+  border-radius: 18px;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.05);
+  --scene-shift: -12px;
+}
+.gtfr-sizer {
+  width: var(--stage-w);
+  height: var(--stage-h);
+}
+.gtfr-scene {
+  position: absolute;
+  left: var(--pad-x);
+  top: var(--pad-y);
+  width: var(--stage-w);
+  height: var(--stage-h);
+  transform-origin: top left;
+  transform: translateX(var(--scene-shift, 0px)) scale(var(--scale, 1));
+}
+.gtfr-belt-shadow {
+  position: absolute;
+  left: var(--belt-left);
+  right: var(--belt-right);
+  top: calc(var(--belt-y) + var(--belt-thickness) + 18px);
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(14px);
+  opacity: 0.28;
+  z-index: 1;
+  pointer-events: none;
+}
+.gtfr-leg {
+  position: absolute;
+  top: calc(var(--belt-y) + var(--belt-thickness) - 2px);
+  width: 10px;
+  height: 58px;
+  background: #c2c8d6;
+  border-radius: 6px;
+  z-index: 2;
+}
+.gtfr-leg::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 12px;
+  border-radius: 8px;
+  background: #c2c8d9;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.04);
+}
+.gtfr-leg::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 10px;
+  border-radius: 8px;
+  background: #b5bbc9;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+.gtfr-conveyor {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+.gtfr-belt-top {
+  position: absolute;
+  left: var(--belt-left);
+  right: var(--belt-right);
+  top: calc(var(--belt-y) - var(--belt-top-h));
+  height: var(--belt-top-h);
+  border-radius: 999px;
+  background: #d6dceb;
+  box-shadow:
+    inset 0 -2px 0 rgba(0, 0, 0, 0.08),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  z-index: 30;
+}
+.gtfr-belt-top .gtfr-tread {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.45) 0px,
+    rgba(255, 255, 255, 0.45) 16px,
+    rgba(255, 255, 255, 0) 16px,
+    rgba(255, 255, 255, 0) 32px
+  );
+  transform: translateX(0);
+  opacity: 0.9;
+}
+.gtfr-belt-top.running .gtfr-tread {
+  animation: gtfrTreadMove var(--tread-dur, 0.28s) linear infinite;
+}
+@keyframes gtfrTreadMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(32px * var(--dir)));
+  }
+}
+.gtfr-belt-wall {
+  position: absolute;
+  left: var(--belt-left);
+  right: var(--belt-right);
+  top: calc(var(--belt-y));
+  height: var(--belt-thickness);
+  border-radius: 0 0 999px 999px;
+  background: #c2c8d9;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.04);
+  z-index: 25;
+}
+.gtfr-machine {
+  position: absolute;
+  width: var(--machine-w);
+  height: var(--machine-h);
+  left: 50%;
+  top: 86px;
+  transform: translateX(-50%);
+  z-index: 90;
+  pointer-events: none;
+}
+.gtfr-machine .gtfr-ground-shadow {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: -14px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  filter: blur(18px);
+  opacity: 0.2;
+  z-index: 0;
+}
+.gtfr-machine .gtfr-contact-shadow {
+  position: absolute;
+  left: 46px;
+  right: 46px;
+  bottom: -6px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  filter: blur(6px);
+  opacity: 0.2;
+  z-index: 0;
+}
+.gtfr-machine .gtfr-body {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: #e3e7f2;
+  box-shadow:
+    0 20px 30px rgba(0, 0, 0, 0.16),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
 .gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-body,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-body{
-  background:color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
+.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-body {
+  background: color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
 }
-.gtfr-machine .gtfr-panel{position:absolute;left:18px;right:18px;top:18px;height:76px;border-radius:14px;background:#f7f9ff;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.05);z-index:2;}
+.gtfr-machine .gtfr-panel {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 18px;
+  height: 76px;
+  border-radius: 14px;
+  background: #f7f9ff;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
 .gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-panel,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-panel{
-  background:color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
+.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-panel {
+  background: color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
+}
+.gtfr-machine .gtfr-screen {
+  position: absolute;
+  left: 34px;
+  top: 36px;
+  width: 120px;
+  height: 40px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--good) 14%, #dff5e7 86%);
+  display: grid;
+  place-items: center;
+  font-weight: 1000;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+  user-select: none;
+  z-index: 3;
+  letter-spacing: 0.2px;
+}
+.gtfr-machine .gtfr-lights {
+  position: absolute;
+  right: 34px;
+  top: 40px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+.gtfr-light {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #c9cfdd;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+.gtfr-light.on {
+  background: #ffd26a;
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.06) inset,
+    0 0 12px rgba(255, 210, 106, 0.75);
+}
+.gtfr-machine .gtfr-slot {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 114px;
+  height: 35px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.18);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.14);
+  z-index: 2;
+  overflow: hidden;
+}
+.gtfr-fx-emboss {
+  position: absolute;
+  left: 18px;
+  top: 60%;
+  transform: translateY(-50%);
+  font-weight: 1000;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: rgb(240, 240, 240);
+  text-shadow:
+    0 2px 0 rgba(46, 46, 46, 0.28),
+    0 -2px 0 rgba(255, 255, 255, 0.137);
+  user-select: none;
+  pointer-events: none;
+  font-family: var(--mono);
+}
+.gtfr-boxes {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+.gtfr-box {
+  position: absolute;
+  width: var(--box-w);
+  height: var(--box-h);
+  top: calc(var(--belt-y) - var(--belt-top-h) - var(--box-h) + 6px);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(0, 0, 0, 0)),
+    #c7cbd6;
+  box-shadow:
+    0 14px 18px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.12);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.gtfr-box::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 8px;
+  height: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+}
+.gtfr-box::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -10px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+  filter: blur(3px);
+  opacity: 0.14;
+  z-index: -1;
+}
+.gtfr-box .gtfr-plaque {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 12px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.14),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+.gtfr-box input,.gtfr-box .gtfr-value{
+  width:74px;
+  height:22px;
+  box-sizing:border-box;
+  border-radius:6px;
+  border:2px solid rgba(0,0,0,0.14);
+  background:rgba(255,255,255,0.92);
+  box-shadow:0 2px 0 rgba(0,0,0,0.06);
+  font-size:16px;
+  text-align:center;
+  padding:0;
+  font-family:var(--mono);
 }
 
-.gtfr-machine .gtfr-screen{
-  position:absolute;left:34px;top:36px;width:120px;height:40px;border-radius:12px;
-  background:color-mix(in srgb, var(--good) 14%, #dff5e7 86%);
-  display:grid;place-items:center;
-  font-weight:1000;font-size:14px;
-  color:color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
-  box-shadow:inset 0 0 0 2px rgba(0,0,0,0.06);
-  user-select:none;z-index:3;letter-spacing:0.2px;
+.gtfr-box input{
+  line-height:18px;
+  padding-top:4px;
 }
-.gtfr-machine .gtfr-lights{position:absolute;right:34px;top:40px;display:flex;gap:10px;z-index:3;}
-.gtfr-light{width:14px;height:14px;border-radius:999px;background:#c9cfdd;box-shadow:inset 0 0 0 2px rgba(0,0,0,0.06);}
-.gtfr-light.on{background:#ffd26a;box-shadow:0 0 0 2px rgba(0,0,0,0.06) inset, 0 0 12px rgba(255,210,106,0.75);}
-.gtfr-machine .gtfr-slot{position:absolute;left:18px;right:18px;top:114px;height:35px;border-radius:14px;background:rgba(0,0,0,0.18);box-shadow:inset 0 2px 0 rgba(255,255,255,0.20), inset 0 -2px 0 rgba(0,0,0,0.10), inset 0 0 0 2px rgba(255,255,255,0.14);z-index:2;overflow:hidden;}
-.gtfr-fx-emboss{position:absolute;left:18px;top:60%;transform:translateY(-50%);font-weight:1000;font-size:14px;letter-spacing:0.3px;color:rgb(240,240,240);text-shadow:0 2px 0 rgba(46,46,46,0.28), 0 -2px 0 rgba(255,255,255,0.137);user-select:none;pointer-events:none;font-family:var(--mono);}
 
-.gtfr-boxes{position:absolute;inset:0;z-index:60;pointer-events:none;}
-.gtfr-box{position:absolute;width:var(--box-w);height:var(--box-h);top:calc(var(--belt-y) - var(--belt-top-h) - var(--box-h) + 6px);border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.28), rgba(0,0,0,0.00)), #c7cbd6;box-shadow:0 14px 18px rgba(0,0,0,0.10), inset 0 0 0 2px rgba(0,0,0,0.12);display:grid;place-items:center;pointer-events:none;}
-.gtfr-box::before{content:"";position:absolute;left:10px;right:10px;top:8px;height:12px;border-radius:8px;background:rgba(255,255,255,0.18);box-shadow:inset 0 -2px 0 rgba(0,0,0,0.18);}
-.gtfr-box::after{content:"";position:absolute;left:14px;right:14px;bottom:-10px;height:12px;border-radius:999px;background:rgba(0,0,0,0.18);filter:blur(3px);opacity:0.14;z-index:-1;}
-.gtfr-box .gtfr-plaque{position:absolute;left:10px;right:10px;bottom:10px;height:26px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.30));box-shadow:inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(0,0,0,0.12), inset 0 0 0 2px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.12);display:flex;align-items:center;justify-content:center;pointer-events:auto;}
-.gtfr-box input,.gtfr-box .gtfr-value{width:74px;height:18px;box-sizing:border-box;border-radius:6px;border:2px solid rgba(0,0,0,0.14);background:rgba(255,255,255,0.92);box-shadow:0 2px 0 rgba(0,0,0,0.06);font-size:16px;text-align:center;padding:0;line-height:18px;font-family:var(--mono);}
-.gtfr-box .gtfr-value{display:flex;align-items:center;justify-content:center;line-height:1;padding:0;font-weight:1000;color:rgba(0,0,0,0.65);user-select:none;}
-.gtfr-box input{outline:none;pointer-events:auto;font-weight:800;display:block;}
-.gtfr-box input:disabled{opacity:0.78;}
-.gtfr-box input::placeholder{color:rgba(0,0,0,0.295);opacity:1;font-weight:700;letter-spacing:0.3px;}
-.gtfr-box.fade-out{transition:opacity 220ms ease;opacity:0;}
-.gtfr-stageWrap{display:flex;justify-content:center;}
+.gtfr-box .gtfr-value{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:22px;
+  padding-top:0;
+  font-weight:1000;
+  color:rgba(0,0,0,0.65);
+  user-select:none;
+}
+
+.gtfr-box input {
+  outline: none;
+  pointer-events: auto;
+  font-weight: 800;
+  display: block;
+}
+.gtfr-box input:disabled {
+  opacity: 0.78;
+}
+.gtfr-box input::placeholder {
+  color: rgba(0, 0, 0, 0.295);
+  opacity: 1;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.gtfr-box.fade-out {
+  transition: opacity 220ms ease;
+  opacity: 0;
+}
+.gtfr-stageWrap {
+  display: flex;
+  justify-content: center;
+}
+.gtfr-root {
+  --radius: 12px;
+  --shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+}
+.gtfr-wrap {
+  border-radius: 12px;
+}
+.gtfr-topbar {
+  background: var(--panel);
+  border-bottom: 2px solid var(--line);
+}
+.gtfr-mark {
+  border-radius: 10px;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.gtfr-gearBtn {
+  border-radius: 10px;
+  background: var(--panel);
+  box-shadow: none;
+}
+.gtfr-panel {
+  border-radius: 12px;
+}
+.gtfr-toast {
+  border-radius: 12px;
+  background: var(--panel);
+}
+.gtfr-options {
+  border-radius: 12px;
+}
+.gtfr-opt {
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: none;
+  transition:
+    transform 120ms ease,
+    border-color 160ms ease;
+}
+.gtfr-opt:hover {
+  transform: translateY(-1px);
+}
+.gtfr-badge {
+  border-radius: 10px;
+  box-shadow: none;
+}
+.gtfr-themeCard {
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: none;
+}
+.gtfr-wrap,
+.gtfr-section {
+  border-color: color-mix(in srgb, var(--line) 55%, transparent);
+}
+.gtfr-panel,
+.gtfr-toast,
+.gtfr-options,
+.gtfr-opt,
+.gtfr-themeCard,
+.gtfr-modal,
+.gtfr-settings {
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--line) 55%, transparent);
+}
+.gtfr-options {
+  background: transparent;
+  border-color: transparent;
+  padding: 8px;
+}
+.gtfr-gearBtn,
+.gtfr-badge {
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--line) 65%, transparent);
+}
+.gtfr-stage {
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.gtfr-diffRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.gtfr-diffPill {
+  border: 2px solid var(--line);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--ink);
+}
+.gtfr-diffPill.selected {
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--line) 40%);
+  background: color-mix(in srgb, var(--accent) 12%, var(--panel) 88%);
+}
+.gtfr-diffPill:active {
+  transform: translateY(1px);
+}
+@keyframes gtfrOverloadShake {
+  0%   { transform: translateX(-50%) translateY(0) rotate(0deg); }
+  8%   { transform: translateX(calc(-50% + 4px)) translateY(-2px) rotate(-1.2deg); }
+  16%  { transform: translateX(calc(-50% - 5px)) translateY(2px)  rotate(1.4deg); }
+  24%  { transform: translateX(calc(-50% + 7px)) translateY(-3px) rotate(-2.0deg); }
+  32%  { transform: translateX(calc(-50% - 7px)) translateY(3px)  rotate(2.0deg); }
+  40%  { transform: translateX(calc(-50% + 6px)) translateY(-2px) rotate(-1.6deg); }
+  48%  { transform: translateX(calc(-50% - 6px)) translateY(2px)  rotate(1.6deg); }
+  56%  { transform: translateX(calc(-50% + 4px)) translateY(-1px) rotate(-1.0deg); }
+  64%  { transform: translateX(calc(-50% - 4px)) translateY(1px)  rotate(1.0deg); }
+  72%  { transform: translateX(calc(-50% + 3px)) translateY(0px)  rotate(-0.6deg); }
+  80%  { transform: translateX(calc(-50% - 3px)) translateY(0px)  rotate(0.6deg); }
+  100% { transform: translateX(-50%) translateY(0) rotate(0deg); }
+}
+
+.gtfr-machine.gtfr-overload {
+  animation: gtfrOverloadShake 780ms ease-in-out;
+}
+
+.gtfr-machine.gtfr-overload {
+  animation: gtfrOverloadShake 300ms ease-in-out;
+}
+.gtfr-smoke {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 120;
+}
+
+.gtfr-smoke::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(80, 80, 80, 0.85);
+  box-shadow:
+    -14px 10px 0 rgba(70, 70, 70, 0.75),
+    14px 12px 0 rgba(60, 60, 60, 0.70),
+    0px 20px 0 rgba(75, 75, 75, 0.65);
+  filter: blur(0.6px);
+}
+
+@keyframes gtfrSmokePuff {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0) scale(1.0);
+    filter: blur(0px);
+  }
+  10% { opacity: 1; }
+  35% { opacity: 0.75; }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-70px) scale(3.2);
+    filter: blur(2px);
+  }
+}
+
+.gtfr-smoke.gtfr-smoke-go {
+  animation: gtfrSmokePuff 1100ms ease-out;
+}
+
+@keyframes gtfrOverloadFlicker {
+  0%   { filter: none; }
+  10%  { filter: brightness(1.30) contrast(1.15); }
+  20%  { filter: brightness(0.70) contrast(1.35); }
+  30%  { filter: brightness(1.35) contrast(1.10); }
+  40%  { filter: brightness(0.75) contrast(1.35); }
+  55%  { filter: brightness(1.25) contrast(1.15); }
+  70%  { filter: brightness(0.80) contrast(1.30); }
+  100% { filter: none; }
+}
+
+.gtfr-stage.gtfr-overload {
+  animation: gtfrOverloadFlicker 780ms steps(1, end);
+}
+
 `;
       document.head.appendChild(s);
     }
-
     injectStyleOnce();
-
     function safeTheme(t) {
       const ok = new Set(["flatly", "dark", "neon", "candy"]);
       return ok.has(t) ? t : "flatly";
     }
-
     function applyTheme(t) {
       root.dataset.theme = safeTheme(t);
-      try { localStorage.setItem(STORAGE_KEY, root.dataset.theme); } catch (e) {}
+      try {
+        localStorage.setItem(STORAGE_KEY, root.dataset.theme);
+      } catch (e) {}
       const cards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
-      cards.forEach(c => c.classList.toggle("selected", c.dataset.theme === root.dataset.theme));
+      cards.forEach((c) =>
+        c.classList.toggle("selected", c.dataset.theme === root.dataset.theme),
+      );
     }
-
     let initialTheme = "flatly";
-    try { initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly"); } catch (e) {}
-
-    root.innerHTML = `
-<div class="gtfr-wrap">
+    try {
+      initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly");
+    } catch (e) {}
+    function safeDiff(v) {
+      const ok = new Set(["0", "1", "2", "3", "auto"]);
+      return ok.has(String(v)) ? String(v) : "auto";
+    }
+    function getDiff() {
+      try {
+        return safeDiff(localStorage.getItem(DIFF_KEY) || "auto");
+      } catch (e) {
+        return "auto";
+      }
+    }
+    function setDiff(v) {
+      const d = safeDiff(v);
+      try {
+        localStorage.setItem(DIFF_KEY, d);
+      } catch (e) {}
+      root.dataset.diff = d;
+      const pills = Array.from(root.querySelectorAll(".gtfr-diffPill"));
+      pills.forEach((p) =>
+        p.classList.toggle("selected", p.dataset.diff === d),
+      );
+    }
+    root.innerHTML = `<div class="gtfr-wrap">
   <div class="gtfr-topbar">
     <div class="gtfr-leftHead">
       <div class="gtfr-mark">G</div>
-      <div>
-        <div class="gtfr-title">Guess The Function Rule</div>
-      </div>
+      <div><div class="gtfr-title">Guess The Function Rule</div></div>
     </div>
-
     <div class="gtfr-stats">
       <div>Level <b class="gtfr-level">1</b></div>
       <div>Solved <b class="gtfr-solved">0</b></div>
@@ -1001,12 +1852,13 @@ window.MathJax = {
       <div>Best <b class="gtfr-best">0</b></div>
       <button class="gtfr-gearBtn" type="button" aria-label="Settings">
         <svg class="gtfr-gearIcon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.2 7.2 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54c-.58.23-1.12.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.48a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.71 1.63.94l.36 2.54c.04.24.25.42.49.42h3.8c.24 0 .45-.18.49-.42l.36-2.54c.58-.23 1.12-.54 1.63-.94l2.39.96c.22.09.48 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5Z"></path>
+          <path
+            d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.2 7.2 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54c-.58.23-1.12.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.48a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.71 1.63.94l.36 2.54c.04.24.25.42.49.42h3.8c.24 0 .45-.18.49-.42l.36-2.54c.58-.23 1.12-.54 1.63-.94l2.39.96c.22.09.48 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5Z"
+          ></path>
         </svg>
       </button>
     </div>
   </div>
-
   <div class="gtfr-section">
     <div class="gtfr-panel">
       <div class="gtfr-stageWrap">
@@ -1017,12 +1869,14 @@ window.MathJax = {
             <div class="gtfr-conveyor">
               <div class="gtfr-belt-top"><div class="gtfr-tread"></div></div>
               <div class="gtfr-belt-wall"></div>
-              <div class="gtfr-leg" style="left:150px;"></div>
-              <div class="gtfr-leg" style="left:270px;"></div>
-              <div class="gtfr-leg" style="right:270px;"></div>
-              <div class="gtfr-leg" style="right:150px;"></div>
+              <div class="gtfr-leg" style="left: 150px"></div>
+              <div class="gtfr-leg" style="left: 270px"></div>
+              <div class="gtfr-leg" style="right: 270px"></div>
+              <div class="gtfr-leg" style="right: 150px"></div>
             </div>
+            <div class="gtfr-smoke" aria-hidden="true"></div>
             <div class="gtfr-machine">
+              <div class="gtfr-smoke" aria-hidden="true"></div>
               <div class="gtfr-ground-shadow"></div>
               <div class="gtfr-contact-shadow"></div>
               <div class="gtfr-body"></div>
@@ -1033,95 +1887,110 @@ window.MathJax = {
                 <div class="gtfr-light"></div>
                 <div class="gtfr-light"></div>
               </div>
-              <div class="gtfr-slot"><div class="gtfr-fx-emboss">== f(x) ==========</div></div>
+              <div class="gtfr-slot">
+                <div class="gtfr-fx-emboss">==f(x)==========</div>
+              </div>
             </div>
             <div class="gtfr-boxes"></div>
           </div>
         </div>
       </div>
-
       <div class="gtfr-row">
-        <div class="gtfr-toast">Type an input, press Enter, then click the rule you think is correct.</div>
+        <div class="gtfr-toast">
+          Type an input, press Enter, then click the rule you think is correct.
+        </div>
       </div>
-
       <div class="gtfr-history">Last 5 tests:</div>
     </div>
   </div>
-
   <div class="gtfr-section"><div class="gtfr-options"></div></div>
 </div>
-
 <div class="gtfr-modalBack" aria-hidden="true">
   <div class="gtfr-modal" role="dialog" aria-label="Round complete">
     <div class="gtfr-modalTitle">Round complete</div>
     <div class="gtfr-modalBody"></div>
     <div class="gtfr-modalRule"></div>
-    <div class="gtfr-modalBtnRow"><button class="gtfr-modalBtn" type="button">Next round</button></div>
+    <div class="gtfr-modalBtnRow">
+      <button class="gtfr-modalBtn" type="button">Next round</button>
+    </div>
   </div>
 </div>
-
 <div class="gtfr-settingsBack" aria-hidden="true">
   <div class="gtfr-settings" role="dialog" aria-label="Settings">
     <div class="gtfr-settingsTitle">Settings</div>
-    <div class="gtfr-settingsBody">Pick a theme. It will stick on this device.</div>
-
+    <div class="gtfr-settingsBody">
+      Pick a theme. It will stick on this device.
+    </div>
+    <div class="gtfr-settingsBody" style="margin-top: 10px">Difficulty</div>
+    <div class="gtfr-diffRow" role="group" aria-label="Difficulty">
+      <button class="gtfr-diffPill" type="button" data-diff="auto">Auto</button
+      ><button class="gtfr-diffPill" type="button" data-diff="0">Level 0</button
+      ><button class="gtfr-diffPill" type="button" data-diff="1">Level 1</button
+      ><button class="gtfr-diffPill" type="button" data-diff="2">Level 2</button
+      ><button class="gtfr-diffPill" type="button" data-diff="3">
+        Level 3
+      </button>
+    </div>
     <div class="gtfr-themeGrid">
       <div class="gtfr-themeCard" data-theme="flatly">
         <div>
           <div class="gtfr-themeName">Flatly</div>
-          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Clean classroom vibe</div>
+          <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
+            Clean classroom vibe
+          </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background:#2C3E50;"></div>
-          <div class="gtfr-swatch" style="background:#18BC9C;"></div>
-          <div class="gtfr-swatch" style="background:#FFFFFF;"></div>
+          <div class="gtfr-swatch" style="background: #2c3e50"></div>
+          <div class="gtfr-swatch" style="background: #18bc9c"></div>
+          <div class="gtfr-swatch" style="background: #ffffff"></div>
         </div>
       </div>
-
       <div class="gtfr-themeCard" data-theme="dark">
         <div>
           <div class="gtfr-themeName">Dark</div>
-          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Low glare</div>
+          <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
+            Low glare
+          </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background:#141B24;"></div>
-          <div class="gtfr-swatch" style="background:#18BC9C;"></div>
-          <div class="gtfr-swatch" style="background:#E9EEF6;"></div>
+          <div class="gtfr-swatch" style="background: #141b24"></div>
+          <div class="gtfr-swatch" style="background: #18bc9c"></div>
+          <div class="gtfr-swatch" style="background: #e9eef6"></div>
         </div>
       </div>
-
       <div class="gtfr-themeCard" data-theme="neon">
         <div>
           <div class="gtfr-themeName">Neon</div>
-          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Arcade mode</div>
+          <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
+            Arcade mode
+          </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background:#111227;"></div>
-          <div class="gtfr-swatch" style="background:#7CFF6B;"></div>
-          <div class="gtfr-swatch" style="background:#F0F4FF;"></div>
+          <div class="gtfr-swatch" style="background: #111227"></div>
+          <div class="gtfr-swatch" style="background: #7cff6b"></div>
+          <div class="gtfr-swatch" style="background: #f0f4ff"></div>
         </div>
       </div>
-
       <div class="gtfr-themeCard" data-theme="candy">
         <div>
           <div class="gtfr-themeName">Candy</div>
-          <div class="gtfr-settingsBody" style="margin:6px 0 0 0;">Friendly and bright</div>
+          <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
+            Friendly and bright
+          </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background:#9B59B6;"></div>
-          <div class="gtfr-swatch" style="background:#F39C12;"></div>
-          <div class="gtfr-swatch" style="background:#FFFFFF;"></div>
+          <div class="gtfr-swatch" style="background: #9b59b6"></div>
+          <div class="gtfr-swatch" style="background: #f39c12"></div>
+          <div class="gtfr-swatch" style="background: #ffffff"></div>
         </div>
       </div>
     </div>
-
-    <div class="gtfr-settingsBtnRow" style="margin-top:12px;">
+    <div class="gtfr-settingsBtnRow" style="margin-top: 12px">
       <button class="gtfr-settingsBtn secondary" type="button">Close</button>
     </div>
   </div>
 </div>
 `;
-
     const wrap = root.querySelector(".gtfr-wrap");
     const levelEl = root.querySelector(".gtfr-level");
     const solvedEl = root.querySelector(".gtfr-solved");
@@ -1130,61 +1999,74 @@ window.MathJax = {
     const toast = root.querySelector(".gtfr-toast");
     const historyEl = root.querySelector(".gtfr-history");
     const optionsEl = root.querySelector(".gtfr-options");
-
     const stage = root.querySelector(".gtfr-stage");
     const scene = root.querySelector(".gtfr-scene");
     const machine = root.querySelector(".gtfr-machine");
+    const smokeEl = root.querySelector(".gtfr-smoke");
     const beltTop = root.querySelector(".gtfr-belt-top");
     const boxesLayer = root.querySelector(".gtfr-boxes");
     const screenEl = root.querySelector(".gtfr-screen");
     const fxEmboss = root.querySelector(".gtfr-fx-emboss");
     const lightEls = Array.from(root.querySelectorAll(".gtfr-light"));
-
     const modalBack = root.querySelector(".gtfr-modalBack");
     const modalBody = root.querySelector(".gtfr-modalBody");
     const modalRule = root.querySelector(".gtfr-modalRule");
     const modalBtn = root.querySelector(".gtfr-modalBtn");
-
     const gearBtn = root.querySelector(".gtfr-gearBtn");
     const settingsBack = root.querySelector(".gtfr-settingsBack");
     const closeSettingsBtn = root.querySelector(".gtfr-settingsBtn.secondary");
     const themeCards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
-
+    const diffPills = Array.from(root.querySelectorAll(".gtfr-diffPill"));
     applyTheme(initialTheme);
-
+    setDiff(getDiff());
+    diffPills.forEach((p) => {
+      p.addEventListener("click", () => setDiff(p.dataset.diff));
+    });
     function openSettings() {
       settingsBack.style.display = "flex";
       settingsBack.setAttribute("aria-hidden", "false");
       applyTheme(root.dataset.theme || "flatly");
+      setDiff(getDiff());
     }
     function closeSettings() {
       settingsBack.style.display = "none";
       settingsBack.setAttribute("aria-hidden", "true");
     }
-
     gearBtn.addEventListener("click", openSettings);
     closeSettingsBtn.addEventListener("click", closeSettings);
-    settingsBack.addEventListener("click", (e) => { if (e.target === settingsBack) closeSettings(); });
-
-    themeCards.forEach(card => {
+    settingsBack.addEventListener("click", (e) => {
+      if (e.target === settingsBack) closeSettings();
+    });
+    themeCards.forEach((card) => {
       card.addEventListener("click", () => applyTheme(card.dataset.theme));
     });
-
     let running = false;
     let raf = 0;
     let lastT = 0;
     let lightTimer = 0;
-
     const START_X = 84;
-
     let activeBox = null;
     let activeInput = null;
     let parkedBox = null;
-
-    const state = { level: 1, solved: 0, streak: 0, best: 0, tests: [], locked: false, funcLetter: "f", correctRule: null, choices: [], correctLetter: null };
-
-    function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
-
+    const state = {
+      level: 1,
+      solved: 0,
+      streak: 0,
+      best: 0,
+      tests: [],
+      locked: false,
+      funcLetter: "f",
+      correctRule: null,
+      choices: [],
+      correctLetter: null,
+      autoLevel: 0,
+      autoFlawless: 0,
+      roundHadMistake: false,
+      roundLevel: 0,
+    };
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
     function setToast(msg, kind) {
       toast.classList.remove("good");
       toast.classList.remove("bad");
@@ -1192,28 +2074,26 @@ window.MathJax = {
       if (kind === "bad") toast.classList.add("bad");
       toast.textContent = msg;
     }
-
     function syncStats() {
-      levelEl.textContent = String(state.level);
+      const d = getDiff();
+      levelEl.textContent =
+        d === "auto" ? String(state.roundLevel ?? 0) : String(d);
       solvedEl.textContent = String(state.solved);
       streakEl.textContent = String(state.streak);
       bestEl.textContent = String(state.best);
     }
-
     function renderHistory() {
-      if (state.tests.length === 0) { historyEl.textContent = "Last 5 tests:"; return; }
-      const parts = state.tests.map(t => String(t.x) + " -> " + String(t.y));
+      if (state.tests.length === 0) {
+        historyEl.textContent = "Last 5 tests:";
+        return;
+      }
+      const parts = state.tests.map((t) => String(t.x) + " ->" + String(t.y));
       historyEl.textContent = "Last 5 tests: " + parts.join(", ");
     }
-
-    function clampIntRange(n) {
+    function clampToInt(n) {
       if (!Number.isFinite(n)) return null;
-      n = Math.round(n);
-      if (n < -10) n = -10;
-      if (n > 10) n = 10;
-      return n;
+      return Math.round(n);
     }
-
     function cleanSignedInt(s) {
       s = String(s || "").trim();
       s = s.replace(/[^0-9-]/g, "");
@@ -1225,149 +2105,681 @@ window.MathJax = {
       if (s === "") s = "0";
       return (neg ? "-" : "") + s;
     }
-
     function cssNum(el, name) {
       const v = getComputedStyle(el).getPropertyValue(name).trim();
       const n = Number(String(v).replace("px", ""));
       return Number.isFinite(n) ? n : 0;
     }
-
     function setScaleToFit() {
       const baseW = cssNum(stage, "--stage-w");
       const baseH = cssNum(stage, "--stage-h");
       const padX = cssNum(stage, "--pad-x");
       const padY = cssNum(stage, "--pad-y");
-
       const maxW = Math.max(260, wrap.getBoundingClientRect().width - 24);
       const availW = Math.max(240, maxW - padX * 2);
-
       const scale = Math.min(1.6, availW / baseW);
       stage.style.setProperty("--scale", String(scale));
-
-      stage.style.width = (baseW * scale + padX * 2) + "px";
-      stage.style.height = (baseH * scale + padY * 2) + "px";
-
+      stage.style.width = baseW * scale + padX * 2 + "px";
+      stage.style.height = baseH * scale + padY * 2 + "px";
       scene.style.width = baseW + "px";
       scene.style.height = baseH + "px";
     }
 
+    window.addEventListener(
+      "resize",
+      () => {
+        root.querySelectorAll(".gtfr-expr").forEach(fitExpr);
+      },
+      { passive: true },
+    );
+
+    if (window.ResizeObserver) {
+      const ro = new ResizeObserver(() => setScaleToFit());
+      ro.observe(wrap);
+    }
+
     window.addEventListener("resize", () => setScaleToFit(), { passive: true });
     setScaleToFit();
-
     function setLights(mode) {
-      lightEls.forEach(l => l.classList.remove("on"));
+      lightEls.forEach((l) => l.classList.remove("on"));
       if (mode === "idle") return;
-      if (mode === "done") { lightEls.forEach(l => l.classList.add("on")); return; }
+      if (mode === "done") {
+        lightEls.forEach((l) => l.classList.add("on"));
+        return;
+      }
       if (mode === "run") {
         let i = 0;
         clearInterval(lightTimer);
         lightTimer = setInterval(() => {
-          lightEls.forEach(l => l.classList.remove("on"));
+          lightEls.forEach((l) => l.classList.remove("on"));
           lightEls[i % lightEls.length].classList.add("on");
           i += 1;
           if (!running) clearInterval(lightTimer);
         }, 120);
       }
     }
+    function willTextFit(el, text) {
+      const cs = getComputedStyle(el);
+      const canvas =
+        willTextFit._c || (willTextFit._c = document.createElement("canvas"));
+      const ctx = canvas.getContext("2d");
+      ctx.font =
+        cs.font ||
+        `${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+      const w = ctx.measureText(String(text)).width;
+      const padL = parseFloat(cs.paddingLeft) || 0;
+      const padR = parseFloat(cs.paddingRight) || 0;
+      const usable = el.clientWidth - padL - padR;
+      return w <= Math.max(0, usable);
+    }
 
-    function exprToText(rule) {
-      if (rule.type === "mul") {
-        const a = rule.a;
-        if (a === 1) return "x";
-        if (a === -1) return "-x";
-        return String(a) + "x";
+    function smokeBurst() {
+      if (!smokeEl) return;
+
+      const puff = () => {
+        smokeEl.classList.remove("gtfr-smoke-go");
+        void smokeEl.offsetWidth;
+        smokeEl.classList.add("gtfr-smoke-go");
+      };
+
+      puff();
+      setTimeout(puff, 140);
+      setTimeout(puff, 280);
+    }
+
+    function triggerOverload() {
+      machine.classList.remove("gtfr-overload");
+      void machine.offsetWidth;
+      machine.classList.add("gtfr-overload");
+
+      // optional flicker if you added the CSS I gave you
+      stage.classList.remove("gtfr-overload");
+      void stage.offsetWidth;
+      stage.classList.add("gtfr-overload");
+
+      smokeBurst();
+
+      screenEl.textContent = "Overload";
+      setLights("done");
+
+      setTimeout(() => {
+        if (!running) {
+          screenEl.textContent = "Ready";
+          setLights("idle");
+        }
+        machine.classList.remove("gtfr-overload");
+        stage.classList.remove("gtfr-overload");
+      }, 780);
+    }
+
+    function randIntNonZero(minAbs = 1, maxAbs = 9) {
+      const a = Math.floor(Math.random() * (maxAbs - minAbs + 1)) + minAbs;
+      return Math.random() < 0.5 ? -a : a;
+    }
+    function clampNonZero(n) {
+      n = Math.round(n);
+      if (n === 0) n = 1;
+      if (n > 9) n = 9;
+      if (n < -9) n = -9;
+      return n;
+    }
+    const N = {
+      num: (k) => ({ t: "num", k }),
+      x: () => ({ t: "x" }),
+      add: (a, b) => ({ t: "add", a, b }),
+      mul: (a, b) => ({ t: "mul", a, b }),
+      pow: (base, e) => ({ t: "pow", base, e }),
+      paren: (e) => ({ t: "paren", e }),
+    };
+    function evalAst(node, x) {
+      switch (node.t) {
+        case "num":
+          return node.k;
+        case "x":
+          return x;
+        case "add":
+          return evalAst(node.a, x) + evalAst(node.b, x);
+        case "mul":
+          return evalAst(node.a, x) * evalAst(node.b, x);
+        case "pow": {
+          const v = evalAst(node.base, x);
+          const e = node.e;
+          if (e === 0) return 1;
+          if (e === 1) return v;
+          if (e === 2) return v * v;
+          return v * v * v;
+        }
+        case "paren":
+          return evalAst(node.e, x);
+        default:
+          return x;
       }
-      if (rule.type === "lin") {
-        const a = rule.a;
-        const b = rule.b;
-        const ax = (a === 1) ? "x" : (a === -1) ? "-x" : String(a) + "x";
-        if (b === 0) return ax;
-        if (b > 0) return ax + " + " + String(b);
-        return ax + " - " + String(Math.abs(b));
+    }
+    function fmtInt(k) {
+      return String(k);
+    }
+    function astToText(node) {
+      switch (node.t) {
+        case "num":
+          return fmtInt(node.k);
+        case "x":
+          return "x";
+        case "paren":
+          return "(" + astToText(node.e) + ")";
+        case "pow": {
+          const base = node.base;
+          const baseTxt =
+            base.t === "x" || base.t === "num" || base.t === "paren"
+              ? astToText(base)
+              : "(" + astToText(base) + ")";
+          if (node.e === 0) return "1";
+          if (node.e === 1) return baseTxt;
+          return baseTxt + "^" + String(node.e);
+        }
+        case "mul": {
+          const a = node.a;
+          const b = node.b;
+          const aTxt =
+            a.t === "num" || a.t === "x" || a.t === "pow" || a.t === "paren"
+              ? astToText(a)
+              : "(" + astToText(a) + ")";
+          const bTxt =
+            b.t === "num" || b.t === "x" || b.t === "pow" || b.t === "paren"
+              ? astToText(b)
+              : "(" + astToText(b) + ")";
+          if (a.t === "num" && b.t === "x") {
+            const k = a.k;
+            if (k === 1) return "x";
+            if (k === -1) return "-x";
+            return fmtInt(k) + "x";
+          }
+          if (a.t === "num" && b.t === "pow" && b.base.t === "x") {
+            const k = a.k;
+            const powTxt = astToText(b);
+            if (k === 1) return powTxt;
+            if (k === -1) return "-" + powTxt;
+            return fmtInt(k) + powTxt;
+          }
+          if (a.t === "num" && (b.t === "add" || b.t === "paren")) {
+            const k = a.k;
+            const inside =
+              b.t === "paren" ? astToText(b) : "(" + astToText(b) + ")";
+            if (k === 1) return inside;
+            if (k === -1) return "-" + inside;
+            return fmtInt(k) + inside;
+          }
+          return aTxt + bTxt;
+        }
+        case "add": {
+          const a = node.a;
+          const b = node.b;
+          const aTxt = astToText(a);
+          if (b.t === "num") {
+            const k = b.k;
+            if (k === 0) return aTxt;
+            if (k > 0) return aTxt + " + " + fmtInt(k);
+            return aTxt + " - " + fmtInt(Math.abs(k));
+          }
+          if (b.t === "mul" && b.a.t === "num" && b.a.k < 0) {
+            const pos = N.mul(N.num(-b.a.k), b.b);
+            return aTxt + " - " + astToText(pos);
+          }
+          return aTxt + " + " + astToText(b);
+        }
+        default:
+          return "x";
       }
-      return "x";
+    }
+    function astToLatex(node) {
+      switch (node.t) {
+        case "num":
+          return String(node.k);
+        case "x":
+          return "x";
+        case "paren":
+          return "(" + astToLatex(node.e) + ")";
+        case "pow": {
+          const base = node.base;
+          const baseNeedsParens = !(
+            base.t === "x" ||
+            base.t === "num" ||
+            base.t === "paren"
+          );
+          const baseTex = baseNeedsParens
+            ? "(" + astToLatex(base) + ")"
+            : astToLatex(base);
+          if (node.e === 0) return "1";
+          if (node.e === 1) return baseTex;
+          return baseTex + "^{" + String(node.e) + "}";
+        }
+        case "mul": {
+          const a = node.a;
+          const b = node.b;
+          if (a.t === "num") {
+            const k = a.k;
+            if (b.t === "x") {
+              if (k === 1) return "x";
+              if (k === -1) return "-x";
+              return String(k) + "x";
+            }
+            if (b.t === "pow" && b.base.t === "x") {
+              if (k === 1) return astToLatex(b);
+              if (k === -1) return "-" + astToLatex(b);
+              return String(k) + astToLatex(b);
+            }
+            if (b.t === "add" || b.t === "paren") {
+              const inner =
+                b.t === "paren" ? astToLatex(b) : "(" + astToLatex(b) + ")";
+              if (k === 1) return inner;
+              if (k === -1) return "-" + inner;
+              return String(k) + inner;
+            }
+          }
+          const aNeedsParens = a.t === "add";
+          const bNeedsParens = b.t === "add";
+          const aTex = aNeedsParens ? "(" + astToLatex(a) + ")" : astToLatex(a);
+          const bTex = bNeedsParens ? "(" + astToLatex(b) + ")" : astToLatex(b);
+          return aTex + bTex;
+        }
+        case "add": {
+          const a = node.a;
+          const b = node.b;
+          const aTex = astToLatex(a);
+          if (b.t === "num") {
+            const k = b.k;
+            if (k === 0) return aTex;
+            if (k > 0) return aTex + " + " + String(k);
+            return aTex + " - " + String(Math.abs(k));
+          }
+          if (b.t === "mul" && b.a.t === "num" && b.a.k < 0) {
+            const pos = N.mul(N.num(-b.a.k), b.b);
+            return aTex + " - " + astToLatex(pos);
+          }
+          return aTex + " + " + astToLatex(b);
+        }
+        default:
+          return "x";
+      }
+    }
+    function renderOptions() {
+      optionsEl.innerHTML = "";
+      const labels = ["A", "B", "C", "D"];
+      for (let i = 0; i < state.choices.length; i++) {
+        const letter = labels[i];
+        const rule = state.choices[i];
+        const div = document.createElement("div");
+        div.className = "gtfr-opt";
+        const spark = document.createElement("div");
+        spark.className = "gtfr-spark";
+        const badge = document.createElement("div");
+        badge.className = "gtfr-badge";
+        badge.textContent = letter;
+        const expr = document.createElement("div");
+        expr.className = "gtfr-expr";
+        div.appendChild(spark);
+        div.appendChild(badge);
+        div.appendChild(expr);
+        optionsEl.appendChild(div);
+        const tex = astToLatex(rule);
+        renderMathInto(expr, tex, false).then(() => fitExpr(expr));
+        div.addEventListener("click", () => {
+          if (state.locked) return;
+          if (letter === state.correctLetter) {
+            div.classList.add("correctFlash");
+            setToast("Correct.", "good");
+            state.locked = true;
+            state.solved += 1;
+            state.streak += 1;
+            if (state.streak > state.best) state.best = state.streak;
+            state.level = Math.max(0, Math.min(3, state.level));
+            syncStats();
+            if (getDiff() === "auto") {
+              if (!state.roundHadMistake) {
+                state.autoFlawless += 1;
+                const need = autoNeededFlawless(state.autoLevel);
+                if (state.autoFlawless >= need && state.autoLevel < 3) {
+                  state.autoLevel += 1;
+                  state.autoFlawless = 0;
+                }
+              } else {
+                state.autoFlawless = Math.max(0, state.autoFlawless - 1);
+              }
+            }
+
+            openWinModal();
+          } else {
+            state.roundHadMistake = true;
+            div.classList.add("wrongFlash");
+            setToast("Not yet. Feed more inputs, then try again.", "bad");
+            state.streak = 0;
+            syncStats();
+
+            setTimeout(() => {
+              div.classList.remove("wrongFlash");
+            }, 450);
+          }
+        });
+      }
+    }
+    function simplify(node) {
+      if (!node || !node.t) return node;
+      if (node.t === "add") {
+        const a = simplify(node.a);
+        const b = simplify(node.b);
+        if (a.t === "num" && b.t === "num") return N.num(a.k + b.k);
+        if (b.t === "num" && b.k === 0) return a;
+        if (a.t === "num" && a.k === 0) return b;
+        return N.add(a, b);
+      }
+      if (node.t === "mul") {
+        const a = simplify(node.a);
+        const b = simplify(node.b);
+        if (a.t === "num" && b.t === "num") return N.num(a.k * b.k);
+        if (a.t === "num" && a.k === 0) return N.num(0);
+        if (b.t === "num" && b.k === 0) return N.num(0);
+        if (a.t === "num" && a.k === 1) return b;
+        if (b.t === "num" && b.k === 1) return a;
+        if (a.t === "num" && a.k === -1) return N.mul(N.num(-1), b);
+        if (b.t === "num" && b.k === -1) return N.mul(N.num(-1), a);
+        return N.mul(a, b);
+      }
+      if (node.t === "pow") {
+        const base = simplify(node.base);
+        const e = node.e;
+        if (e === 0) return N.num(1);
+        if (e === 1) return base;
+        if (base.t === "num") {
+          const v = base.k;
+          if (e === 2) return N.num(v * v);
+          if (e === 3) return N.num(v * v * v);
+        }
+        return N.pow(base, e);
+      }
+      if (node.t === "paren") {
+        const e = simplify(node.e);
+        if (e.t === "num" || e.t === "x" || e.t === "pow") return e;
+        return N.paren(e);
+      }
+      return node;
+    }
+    const SIG_XS = [-3, -2, -1, 1, 2, 3];
+
+    function signature(node) {
+      return SIG_XS.map((x) => String(evalAst(node, x))).join("|");
     }
 
-    function evalRule(rule, x) {
-      if (rule.type === "mul") return rule.a * x;
-      if (rule.type === "lin") return rule.a * x + rule.b;
-      return x;
+    function looksTooLong(node) {
+      // quick guard using plain text length
+      const t = astToText(node);
+      return t.length > 20;
     }
 
-    function makeRule() {
-      const fam = (state.solved < 3) ? "mul" : "lin";
-      if (fam === "mul") return { type: "mul", a: pick([2, 3, 4, 5, -2, -3, -4, -5]) };
-      return { type: "lin", a: pick([2, 3, 4, 5, -2, -3, -4, -5]), b: pick([-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6]) };
+    function isReasonable(rule) {
+      // Keep outputs sane on small inputs, avoids trivial and avoids explosions
+      const xs = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
+      let maxAbs = 0;
+      for (const x of xs) {
+        const y = evalAst(rule, x);
+        if (!Number.isFinite(y)) return false;
+        maxAbs = Math.max(maxAbs, Math.abs(y));
+      }
+      return maxAbs <= 5000;
     }
 
-    function uniqueRules(correct, count) {
-      const out = [correct];
+    function autoNeededFlawless(level) {
+      // tune these numbers
+      if (level === 0) return 2; // tutorial
+      if (level === 1) return 3; // basic
+      if (level === 2) return 3; // intermediate
+      return 999; // level 3 is top
+    }
+
+    function pickAutoLevel() {
+      // Auto uses state.autoLevel, not state.solved
+      return Math.max(0, Math.min(3, state.autoLevel));
+    }
+
+    function genLevel0() {
+      const k = pick([1, 2, 3, 4, 5, -1, -2, -3, -4, -5]);
+      const b = pick([1, 2, 3, 4, 5, -1, -2, -3, -4, -5]);
+      const choices = [
+        () => N.num(k),
+        () => N.x(),
+        () => N.mul(N.num(k), N.x()),
+        () => N.add(N.x(), N.num(b)),
+        () => N.add(N.mul(N.num(k), N.x()), N.num(b)),
+      ];
+      return simplify(pick(choices)());
+    }
+
+    function smallInt(min = 1, max = 6) {
+      const a = Math.floor(Math.random() * (max - min + 1)) + min;
+      return Math.random() < 0.5 ? -a : a;
+    }
+
+    function genLevel1() {
+      // Only constants and linear, small numbers
+      // k, x, ax, x+b, ax+b
+      const a = smallInt(1, 6);
+      const b = smallInt(1, 6);
+      const k = smallInt(1, 6);
+
+      const choices = [
+        () => N.num(k),
+        () => N.x(),
+        () => N.mul(N.num(a), N.x()),
+        () => N.add(N.x(), N.num(b)),
+        () => N.add(N.mul(N.num(a), N.x()), N.num(b)),
+      ];
+      return simplify(pick(choices)());
+    }
+
+    function genLevel2() {
+      // Quadratic focused, no cubes, one set of parentheses max
+      // ax^2+bx+c, a(x+b)^2+c, a(x+b)(x+c)
+      const a = smallInt(1, 5);
+      const b = smallInt(1, 6);
+      const c = smallInt(1, 8);
+      const d = smallInt(1, 6);
+
+      const ax2 = () =>
+        N.add(
+          N.add(N.mul(N.num(a), N.pow(N.x(), 2)), N.mul(N.num(b), N.x())),
+          N.num(c),
+        );
+
+      const vertex = () =>
+        N.add(
+          N.mul(N.num(a), N.pow(N.paren(N.add(N.x(), N.num(b))), 2)),
+          N.num(c),
+        );
+
+      const prod2 = () =>
+        N.mul(
+          N.num(a),
+          N.mul(
+            N.paren(N.add(N.x(), N.num(b))),
+            N.paren(N.add(N.x(), N.num(d))),
+          ),
+        );
+
+      const choices = [ax2, vertex, prod2];
+      return simplify(pick(choices)());
+    }
+
+    function genLevel3() {
+      // Advanced but readable
+      // A: a(x+h)^2 + k
+      // B: a(x+p)(x+q)
+      // C: a(x+h)^3
+
+      const fam = pick(["shiftQuad", "factQuad", "shiftCube"]);
+
+      const a = pick([1, 2, 3, -1, -2, -3]);
+      const h = pick([1, 2, 3, -1, -2, -3]);
+      const k = pick([0, 1, 2, 3, 4, 5, -1, -2, -3, -4, -5]);
+
+      if (fam === "shiftQuad") {
+        const inner = N.paren(N.add(N.x(), N.num(h)));
+        return simplify(N.add(N.mul(N.num(a), N.pow(inner, 2)), N.num(k)));
+      }
+
+      if (fam === "factQuad") {
+        const p = pick([1, 2, 3, -1, -2, -3, -4, 4]);
+        const q = pick([1, 2, 3, -1, -2, -3, -4, 4]);
+        const left = N.paren(N.add(N.x(), N.num(p)));
+        const right = N.paren(N.add(N.x(), N.num(q)));
+        return simplify(N.mul(N.num(a), N.mul(left, right)));
+      }
+
+      // shiftCube
+      const a3 = pick([1, 2, -1, -2]);
+      const h3 = pick([1, 2, -1, -2]);
+      const inner3 = N.paren(N.add(N.x(), N.num(h3)));
+      return simplify(N.mul(N.num(a3), N.pow(inner3, 3)));
+    }
+
+    function makeRuleByLevel(level) {
+      if (level <= 0) return genLevel0();
+      if (level === 1) return genLevel1();
+      if (level === 2) return genLevel2();
+      return genLevel3();
+    }
+
+    function mutate(rule) {
+      const m = pick(["flipSign", "tweakCoeff", "tweakConst", "addOuterShift"]);
+      function tweakFirstNum(node, delta) {
+        if (!node) return node;
+        if (node.t === "mul" && node.a.t === "num") {
+          return simplify(N.mul(N.num(clampNonZero(node.a.k + delta)), node.b));
+        }
+        if (node.t === "add")
+          return simplify(N.add(tweakFirstNum(node.a, delta), node.b));
+        if (node.t === "mul")
+          return simplify(N.mul(tweakFirstNum(node.a, delta), node.b));
+        if (node.t === "pow")
+          return simplify(N.pow(tweakFirstNum(node.base, delta), node.e));
+        if (node.t === "paren")
+          return simplify(N.paren(tweakFirstNum(node.e, delta)));
+        return node;
+      }
+      function tweakConstInAdd(node, delta) {
+        if (!node) return node;
+        if (node.t === "add" && node.b.t === "num") {
+          return simplify(N.add(node.a, N.num(clampNonZero(node.b.k + delta))));
+        }
+        if (node.t === "add")
+          return simplify(N.add(tweakConstInAdd(node.a, delta), node.b));
+        if (node.t === "mul")
+          return simplify(N.mul(tweakConstInAdd(node.a, delta), node.b));
+        if (node.t === "pow")
+          return simplify(N.pow(tweakConstInAdd(node.base, delta), node.e));
+        if (node.t === "paren")
+          return simplify(N.paren(tweakConstInAdd(node.e, delta)));
+        return node;
+      }
+      if (m === "flipSign") {
+        return simplify(N.mul(N.num(-1), rule));
+      }
+      if (m === "tweakCoeff") {
+        return tweakFirstNum(rule, pick([-2, -1, 1, 2]));
+      }
+      if (m === "tweakConst") {
+        return tweakConstInAdd(rule, pick([-2, -1, 1, 2]));
+      }
+      return simplify(N.add(rule, N.num(randIntNonZero(1, 3))));
+    }
+
+    function generateChoices(level) {
+      let correct = makeRuleByLevel(level);
+
+      // If it looks too long, regenerate a few times
       let tries = 0;
-      while (out.length < count && tries < 400) {
+      while (looksTooLong(correct) && tries < 60) {
+        correct = makeRuleByLevel(level);
         tries += 1;
-        const r = makeRule();
-        const t = exprToText(r);
-        let dup = false;
-        for (let i = 0; i < out.length; i++) if (exprToText(out[i]) === t) dup = true;
-        if (!dup) out.push(r);
       }
-      return out;
-    }
 
-    function shuffle(arr) {
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        const tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+      const correctSig = signature(correct);
+      const out = [correct];
+      const usedSig = new Set([correctSig]);
+      const usedText = new Set([astToText(correct)]);
+
+      let guard = 0;
+      while (out.length < 4 && guard < 400) {
+        guard += 1;
+
+        let cand = mutate(correct);
+
+        // less swapping at higher levels, keeps options in family
+        const swapChance = level >= 3 ? 0.06 : 0.18;
+        if (Math.random() < swapChance) cand = makeRuleByLevel(level);
+
+        cand = simplify(cand);
+
+        // reject visually long options
+        if (looksTooLong(cand)) continue;
+
+        const sig = signature(cand);
+        const txt = astToText(cand);
+        if (usedSig.has(sig)) continue;
+        if (usedText.has(txt)) continue;
+
+        usedSig.add(sig);
+        usedText.add(txt);
+        out.push(cand);
       }
-      return arr;
+
+      for (let i = out.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const tmp = out[i];
+        out[i] = out[j];
+        out[j] = tmp;
+      }
+
+      return { correct, choices: out };
     }
 
     function setFunctionLetter() {
-      fxEmboss.textContent = "== f(x) ===============";
+      fxEmboss.textContent = "==f(x)===============";
     }
-
     function createActiveBox(value) {
       const el = document.createElement("div");
       el.className = "gtfr-box";
       el.style.left = START_X + "px";
-
       const plaque = document.createElement("div");
       plaque.className = "gtfr-plaque";
-
       const input = document.createElement("input");
       input.inputMode = "numeric";
       input.autocomplete = "off";
       input.placeholder = "x";
-      input.value = (value === undefined || value === null) ? "" : String(value);
-
-      input.addEventListener("input", () => { input.value = cleanSignedInt(input.value); });
-
+      input.value = value === undefined || value === null ? "" : String(value);
+      input.addEventListener("input", () => {
+        input.value = cleanSignedInt(input.value);
+      });
       input.addEventListener("keydown", (e) => {
         if (e.key !== "Enter") return;
         e.preventDefault();
         if (running) return;
-        if (state.locked) { setToast("Round complete. Start the next round.", "good"); return; }
-
+        if (state.locked) {
+          setToast("Round complete. Start the next round.", "good");
+          return;
+        }
         const cleaned = cleanSignedInt(input.value);
-        const parsed = clampIntRange(Number(cleaned));
+        const parsed = clampToInt(Number(cleaned));
         if (parsed === null) return;
-
         input.value = String(parsed);
-        const y = evalRule(state.correctRule, parsed);
+        const y = evalAst(state.correctRule, parsed);
         runMachine(parsed, y);
       });
-
       plaque.appendChild(input);
       el.appendChild(plaque);
       boxesLayer.appendChild(el);
-
       activeBox = el;
       activeInput = input;
-
       input.focus();
       input.select();
     }
-
     function parkCurrentBox(displayValue) {
       if (!activeBox) return;
       const plaque = activeBox.querySelector(".gtfr-plaque");
@@ -1382,19 +2794,18 @@ window.MathJax = {
       activeBox = null;
       activeInput = null;
     }
-
     function removeParkedBoxIfAny() {
       if (!parkedBox) return;
       const el = parkedBox;
       parkedBox = null;
       el.classList.add("fade-out");
-      setTimeout(() => { if (el.parentNode) el.parentNode.removeChild(el); }, 240);
+      setTimeout(() => {
+        if (el.parentNode) el.parentNode.removeChild(el);
+      }, 240);
     }
-
     function getBoxLeft(el) {
       return parseFloat(getComputedStyle(el).left) || 0;
     }
-
     function setBoxLeft(el, x) {
       el.style.left = x + "px";
     }
@@ -1407,56 +2818,103 @@ window.MathJax = {
 
       running = true;
       activeInput.disabled = true;
-
       beltTop.classList.add("running");
       screenEl.textContent = "Working...";
       setLights("run");
 
-      const speed = (cssNum(stage, "--speed") || 150);
-      stage.style.setProperty("--tread-dur", (32 / Math.max(1, Math.abs(speed))).toFixed(3) + "s");
-
+      const speed = cssNum(stage, "--speed") || 150;
       const dir = cssNum(stage, "--dir") || 1;
 
-      const scale = Number(getComputedStyle(stage).getPropertyValue("--scale")) || 1;
+      const treadDur = 32 / Math.max(1, Math.abs(speed));
+      stage.style.setProperty("--tread-dur", treadDur.toFixed(3) + "s");
+      stage.style.setProperty("--dir", String(dir > 0 ? 1 : -1));
 
-      const s = stage.getBoundingClientRect();
-      const m = machine.getBoundingClientRect();
-
-      const boxW = activeBox.getBoundingClientRect().width / scale;
-
+      const scale =
+        Number(getComputedStyle(stage).getPropertyValue("--scale")) || 1;
+      const stageW = cssNum(stage, "--stage-w");
+      const boxW = cssNum(stage, "--box-w");
       const leftEdge = cssNum(stage, "--belt-left");
-      const rightEdge = (s.width / scale) - cssNum(stage, "--belt-right") - boxW;
+      const rightEdge = stageW - cssNum(stage, "--belt-right");
+      const stopRightPad = cssNum(stage, "--stop-right-pad") || 0;
+      const maxX = rightEdge - boxW - stopRightPad;
 
-      const endInset = Math.max(0, START_X - leftEdge);
-      const endEdge = Math.max(leftEdge, rightEdge - endInset);
-
-      const slotLeft = ((m.left - s.left) / scale) + 18;
-      const slotRight = ((m.right - s.left) / scale) - 18;
+      const sceneRect = scene.getBoundingClientRect();
+      const mRect = machine.getBoundingClientRect();
+      const slotLeft = (mRect.left - sceneRect.left) / scale + 18;
+      const slotRight = (mRect.right - sceneRect.left) / scale - 18;
       const slotMid = (slotLeft + slotRight) / 2;
+
+      const gapFromMachine = slotLeft - START_X;
+      const desiredStopLeft = slotRight + gapFromMachine - boxW;
+      const endEdge = Math.max(leftEdge, Math.min(maxX, desiredStopLeft));
 
       let changed = false;
       let outValue = null;
-
+      let overloaded = false;
       lastT = 0;
+
+      function abortOverload() {
+        // mark and stop animation
+        overloaded = true;
+        cancelAnimationFrame(raf);
+
+        // stop belt and state
+        beltTop.classList.remove("running");
+        running = false;
+
+        // play effects
+        triggerOverload();
+
+        // remove the moving box completely (prevents stuck state)
+        if (activeBox && activeBox.parentNode)
+          activeBox.parentNode.removeChild(activeBox);
+        activeBox = null;
+        activeInput = null;
+
+        // clear any parked output box too
+        removeParkedBoxIfAny();
+
+        // reset UI and spawn a fresh input box
+        setLights("idle");
+        screenEl.textContent = "Ready";
+        setToast("Too much for this machine. Try a smaller input.", "bad");
+        createActiveBox("");
+      }
 
       function step(t) {
         if (!lastT) lastT = t;
-        const dt = (t - lastT) / 1000;
+        let dt = (t - lastT) / 1000;
+        if (dt > 0.05) dt = 0.05;
         lastT = t;
 
-        const dx = (speed * dt * dir);
-        let bx = getBoxLeft(activeBox) + dx;
+        const dx = speed * dt * dir;
 
-        bx = Math.max(leftEdge, Math.min(rightEdge, bx));
+        // if something removed the box, bail safely
+        if (!activeBox) return;
+
+        let bx = getBoxLeft(activeBox) + dx;
+        bx = Math.max(leftEdge, Math.min(maxX, bx));
         setBoxLeft(activeBox, bx);
 
-        const center = bx + (boxW / 2);
+        const center = bx + boxW / 2;
         const inside = center > slotLeft && center < slotRight;
 
-        if (!changed && inside && (dir > 0 ? center >= slotMid : center <= slotMid)) {
+        if (
+          !changed &&
+          inside &&
+          (dir > 0 ? center >= slotMid : center <= slotMid)
+        ) {
+          const s = String(forcedY);
+
+          // overflow check before committing
+          if (!willTextFit(activeInput, s)) {
+            abortOverload();
+            return;
+          }
+
           changed = true;
           outValue = forcedY;
-          activeInput.value = String(outValue);
+          activeInput.value = s;
         }
 
         const done = dir > 0 ? bx >= endEdge : bx <= leftEdge;
@@ -1470,13 +2928,16 @@ window.MathJax = {
       }
 
       function finish() {
+        if (overloaded) return;
+
         cancelAnimationFrame(raf);
         beltTop.classList.remove("running");
         running = false;
+
         screenEl.textContent = "Ready";
         setLights("idle");
 
-        const finalY = (outValue === null) ? Number(activeInput.value) : outValue;
+        const finalY = outValue === null ? Number(activeInput.value) : outValue;
 
         state.tests.unshift({ x: xEntered, y: finalY });
         if (state.tests.length > 5) state.tests.pop();
@@ -1484,7 +2945,6 @@ window.MathJax = {
 
         parkCurrentBox(finalY);
         createActiveBox("");
-
         setToast("Click a rule when you are ready.", "");
       }
 
@@ -1492,8 +2952,18 @@ window.MathJax = {
     }
 
     function openWinModal() {
-      modalBody.textContent = "Solved using " + String(state.tests.length) + " test" + (state.tests.length === 1 ? "" : "s") + ".";
-      modalRule.textContent = "f(x) = " + exprToText(state.correctRule);
+      modalBody.textContent =
+        "Solved using " +
+        String(state.tests.length) +
+        " test" +
+        (state.tests.length === 1 ? "" : "s") +
+        ".";
+      modalRule.textContent = "";
+      renderMathInto(
+        modalRule,
+        "f(x)=" + astToLatex(state.correctRule),
+        false,
+      ).then(() => fitExpr(modalRule));
       modalBack.style.display = "flex";
       modalBack.setAttribute("aria-hidden", "false");
     }
@@ -1504,97 +2974,45 @@ window.MathJax = {
       newRound();
     }
 
-    function renderOptions() {
-      optionsEl.innerHTML = "";
-      const labels = ["A", "B", "C", "D"];
-
-      for (let i = 0; i < state.choices.length; i++) {
-        const letter = labels[i];
-        const rule = state.choices[i];
-
-        const div = document.createElement("div");
-        div.className = "gtfr-opt";
-
-        const spark = document.createElement("div");
-        spark.className = "gtfr-spark";
-
-        const badge = document.createElement("div");
-        badge.className = "gtfr-badge";
-        badge.textContent = letter;
-
-        const expr = document.createElement("div");
-        expr.className = "gtfr-expr";
-        expr.textContent = exprToText(rule);
-
-        div.appendChild(spark);
-        div.appendChild(badge);
-        div.appendChild(expr);
-
-        div.addEventListener("click", () => {
-          if (state.locked) return;
-
-          if (letter === state.correctLetter) {
-            div.classList.add("correctFlash");
-            setToast("Correct.", "good");
-
-            state.locked = true;
-            state.solved += 1;
-            state.streak += 1;
-            if (state.streak > state.best) state.best = state.streak;
-            state.level = Math.max(1, Math.floor(state.solved / 3) + 1);
-            syncStats();
-
-            openWinModal();
-          } else {
-            div.classList.add("wrongFlash");
-            setToast("Not yet. Feed more inputs, then try again.", "bad");
-            state.streak = 0;
-            syncStats();
-            setTimeout(() => { div.classList.remove("wrongFlash"); }, 450);
-          }
-        });
-
-        optionsEl.appendChild(div);
-      }
-    }
-
     function newRound() {
       state.tests = [];
       state.locked = false;
-
+      state.roundHadMistake = false;
       removeParkedBoxIfAny();
-      if (activeBox && activeBox.parentNode) activeBox.parentNode.removeChild(activeBox);
+      if (activeBox && activeBox.parentNode)
+        activeBox.parentNode.removeChild(activeBox);
       activeBox = null;
       activeInput = null;
-
       setFunctionLetter();
-
-      state.correctRule = makeRule();
-      const pool = shuffle(uniqueRules(state.correctRule, 4));
-      state.choices = pool;
-
+      const d = getDiff();
+      const effectiveLevel = d === "auto" ? pickAutoLevel() : Number(d);
+      state.roundLevel = effectiveLevel;
+      const pack = generateChoices(effectiveLevel);
+      state.correctRule = pack.correct;
+      state.choices = pack.choices;
       const labels = ["A", "B", "C", "D"];
-      state.correctLetter = labels[pool.indexOf(state.correctRule)];
-
+      state.correctLetter = labels[state.choices.indexOf(state.correctRule)];
       renderOptions();
       renderHistory();
-      setToast("Type an input, press Enter, then click the rule you think is correct.", "");
-
+      setToast(
+        "Type an input, press Enter, then click the rule you think is correct.",
+        "",
+      );
       createActiveBox("");
     }
 
     modalBtn.addEventListener("click", closeWinModalAndNext);
-    modalBack.addEventListener("click", (e) => { if (e.target === modalBack) closeWinModalAndNext(); });
-
+    modalBack.addEventListener("click", (e) => {
+      if (e.target === modalBack) closeWinModalAndNext();
+    });
     setLights("idle");
     screenEl.textContent = "Ready";
-
     syncStats();
     newRound();
   })();
 </script>
 <hr>
-<p>To learn more about prime factorization and why it matters, see <a href="../../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html">2.5 – Inputs and Outputs of Functions</a></p>
+<p>To learn more about the basics of functions, see <a href="../../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html">2.5 – Inputs and Outputs of Functions</a></p>
 
 
 
