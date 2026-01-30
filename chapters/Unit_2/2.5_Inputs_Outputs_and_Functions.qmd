@@ -322,11 +322,10 @@ $P(40) = 12(40) + 15 = 480 + 15 = 495$
 You make **\$495**.
 :::
 
-***
 
-Awesome—here’s an updated **Practice** section with a new “Function or not?” tables block added, and a light trim to keep the length about the same. I also updated the **Answers** to match the new numbering.
+{{< interact >}}
 
-***
+Want some practice building your understanding of function rules? Check out the [Function Rule Guessing Game](/chapters/Interactive/Unit_2/function_machine_game.qmd).
 
 {{< practice >}}
 
