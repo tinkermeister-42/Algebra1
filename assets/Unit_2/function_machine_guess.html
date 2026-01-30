@@ -96,6 +96,7 @@
   --accent: #18bc9c;
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
+
 .gtfr-root[data-theme="neon"] {
   --bg: #0b0b12;
   --panel: #111227;
@@ -105,6 +106,13 @@
   --accent: #7cff6b;
   --shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
 }
+
+.gtfr-machine.gtfr-revealRule .gtfr-screen,
+.gtfr-machine.gtfr-revealRule .gtfr-lights{
+  opacity:0;
+  transition: opacity 160ms ease;
+}
+
 .gtfr-root[data-theme="candy"] {
   --bg: #fff7fb;
   --panel: #ffffff;
@@ -167,13 +175,29 @@
     0 10px 22px rgba(0, 0, 0, 0.1);
   display: grid;
   place-items: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.25),
+    0 -1px 0 rgba(255, 255, 255, 0.25);
   font-weight: 1000;
-  letter-spacing: 0.3px;
+  letter-spacing: -0.8px;
+  padding-left: 1px;
 }
+
+.gtfr-mark-fx{
+  font-family: var(--mono);
+  font-weight: 925;
+  font-size: 12px;
+  letter-spacing: -0.6px;
+}
+
+.gtfr-mark-fx span{
+  font-size: 0.9em;
+}
+
 .gtfr-title {
-  font-weight: 1000;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 18px;
   letter-spacing: 0.2px;
 }
 .gtfr-stats {
@@ -233,6 +257,10 @@
   flex-wrap: wrap;
 }
 .gtfr-toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   flex: 1;
   min-width: 240px;
   padding: 10px 12px;
@@ -263,6 +291,63 @@
   background: color-mix(in srgb, var(--bad) 12%, var(--panel) 88%);
   color: color-mix(in srgb, var(--bad) 70%, var(--ink) 30%);
 }
+
+/* Default */
+.gtfr-toast{
+  position: relative;
+}
+
+/* Only when solved */
+.gtfr-root[data-solved="1"] .gtfr-toast{
+  cursor: pointer;
+  user-select: none;
+  border-color: color-mix(in srgb, var(--good) 55%, var(--line) 45%);
+  background: color-mix(in srgb, var(--good) 12%, var(--panel) 88%);
+  color: color-mix(in srgb, var(--good) 70%, var(--ink) 30%);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+  transition: transform 120ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+/* Hover and press affordance */
+.gtfr-root[data-solved="1"] .gtfr-toast:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 22px rgba(0,0,0,0.10);
+  filter: brightness(1.02);
+}
+
+.gtfr-root[data-solved="1"] .gtfr-toast:active{
+  transform: translateY(0px);
+}
+
+/* A subtle "tap target" cue */
+.gtfr-root[data-solved="1"] .gtfr-toast::after{
+  content: "Click to start next round";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 1000;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+}
+
+.gtfr-nextBtn{
+  display:none;
+  border:2px solid var(--accent);
+  background:var(--accent);
+  color:#fff;
+  border-radius:999px;
+  padding:8px 12px;
+  font-weight:1000;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.gtfr-nextBtn:active{ transform:translateY(1px); }
+
+.gtfr-root[data-solved="1"] .gtfr-nextBtn{ display:inline-flex; }
+
 .gtfr-history {
   margin-top: 8px;
   font-family: var(--mono);
@@ -270,6 +355,53 @@
   color: var(--muted);
   line-height: 1.5;
 }
+
+.gtfr-history{
+  margin-top: 10px;
+  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  padding-top: 10px;
+}
+
+.gtfr-historyLabel{
+  font-size: 12px;
+  font-weight: 1000;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+}
+
+.gtfr-historyChips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.gtfr-hChip{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  background: color-mix(in srgb, var(--panel) 94%, var(--bg) 6%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
+  font-family: var(--mono);
+  font-weight: 1000;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.gtfr-hSep{
+  opacity: 0.55;
+}
+
+.gtfr-hEmpty{
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+  padding: 6px 2px;
+}
+
 .gtfr-options {
   background: var(--panel);
   border: 2px solid var(--line);
@@ -1117,6 +1249,71 @@
   animation: gtfrOverloadFlicker 780ms steps(1, end);
 }
 
+/* Rule reveal window sits on top of the machine panel */
+.gtfr-ruleWindow{
+  position:absolute;
+  left:34px;
+  top:30px;
+  width:222px;
+  height:58px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.55);
+  box-shadow:
+    inset 0 0 0 2px rgba(0,0,0,0.06),
+    0 10px 16px rgba(0,0,0,0.08);
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(6px);
+  transition:opacity 180ms ease, transform 220ms ease;
+  z-index:4;
+}
+
+.gtfr-ruleWindow{
+  background: color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
+}
+
+/* The math lives here */
+.gtfr-ruleTex{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 10px;
+  font-family:var(--mono);
+  font-weight:1000;
+  color:var(--ink);
+}
+
+/* Shutter that covers the rule */
+.gtfr-ruleShutter{
+  position:absolute;
+  inset:0;
+  border-radius:12px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.0)),
+    rgba(20,20,20,0.15);
+  box-shadow:
+    inset 0 0 0 2px rgba(0,0,0,0.10);
+  transform:translateY(0);
+}
+
+/* When revealed, window becomes visible */
+.gtfr-machine.gtfr-revealRule .gtfr-ruleWindow{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Shutter slides up to reveal */
+@keyframes gtfrShutterUp{
+  0%   { transform:translateY(0); }
+  100% { transform:translateY(-110%); }
+}
+
+.gtfr-machine.gtfr-revealRule .gtfr-ruleShutter{
+  animation:gtfrShutterUp 520ms cubic-bezier(0.2,0.9,0.2,1) forwards;
+}
+
 `;
       document.head.appendChild(s);
     }
@@ -1164,7 +1361,7 @@
     root.innerHTML = `<div class="gtfr-wrap">
   <div class="gtfr-topbar">
     <div class="gtfr-leftHead">
-      <div class="gtfr-mark">G</div>
+      <div class="gtfr-mark gtfr-mark-fx">f(x)</div>
       <div><div class="gtfr-title">Guess The Function Rule</div></div>
     </div>
     <div class="gtfr-stats">
@@ -1198,6 +1395,12 @@
             </div>
             <div class="gtfr-smoke" aria-hidden="true"></div>
             <div class="gtfr-machine">
+              <div class="gtfr-panel"></div>
+              <div class="gtfr-ruleWindow" aria-hidden="true">
+                <div class="gtfr-ruleTex"></div>
+                <div class="gtfr-ruleShutter"></div>
+              </div>
+              <div class="gtfr-screen">Ready</div>
               <div class="gtfr-smoke" aria-hidden="true"></div>
               <div class="gtfr-ground-shadow"></div>
               <div class="gtfr-contact-shadow"></div>
@@ -1217,12 +1420,18 @@
           </div>
         </div>
       </div>
-      <div class="gtfr-row">
-        <div class="gtfr-toast">
-          Type an input, press Enter, then click the rule you think is correct.
-        </div>
+      <div class="gtfr-history">
+        <div class="gtfr-historyLabel">Last 5 tests</div>
+        <div class="gtfr-historyChips" aria-live="polite"></div>
       </div>
-      <div class="gtfr-history">Last 5 tests:</div>
+      <div class="gtfr-row">
+      <div class="gtfr-toast">
+        <span class="gtfr-toastText">
+          Type an input, press Enter, then click the rule you think is correct.
+        </span>
+        <button class="gtfr-nextBtn" type="button">Next round</button>
+      </div>
+      </div>
     </div>
   </div>
   <div class="gtfr-section"><div class="gtfr-options"></div></div>
@@ -1319,7 +1528,9 @@
     const streakEl = root.querySelector(".gtfr-streak");
     const bestEl = root.querySelector(".gtfr-best");
     const toast = root.querySelector(".gtfr-toast");
-    const historyEl = root.querySelector(".gtfr-history");
+    const toastText = root.querySelector(".gtfr-toastText");
+    const nextBtn = root.querySelector(".gtfr-nextBtn");
+    const historyChips = root.querySelector(".gtfr-historyChips");
     const optionsEl = root.querySelector(".gtfr-options");
     const stage = root.querySelector(".gtfr-stage");
     const scene = root.querySelector(".gtfr-scene");
@@ -1329,6 +1540,7 @@
     const boxesLayer = root.querySelector(".gtfr-boxes");
     const screenEl = root.querySelector(".gtfr-screen");
     const fxEmboss = root.querySelector(".gtfr-fx-emboss");
+    const ruleTexEl = root.querySelector(".gtfr-ruleTex");
     const lightEls = Array.from(root.querySelectorAll(".gtfr-light"));
     const modalBack = root.querySelector(".gtfr-modalBack");
     const modalBody = root.querySelector(".gtfr-modalBody");
@@ -1396,6 +1608,19 @@
       if (kind === "bad") toast.classList.add("bad");
       toast.textContent = msg;
     }
+
+    function setSolvedUI(on) {
+      root.dataset.solved = on ? "1" : "0";
+    }
+
+    function setToastHTML(html, kind) {
+      toast.classList.remove("good");
+      toast.classList.remove("bad");
+      if (kind === "good") toast.classList.add("good");
+      if (kind === "bad") toast.classList.add("bad");
+      if (toastText) toastText.innerHTML = html;
+    }
+
     function syncStats() {
       const d = getDiff();
       levelEl.textContent =
@@ -1404,14 +1629,42 @@
       streakEl.textContent = String(state.streak);
       bestEl.textContent = String(state.best);
     }
+
     function renderHistory() {
+      if (!historyChips) return;
+
+      historyChips.innerHTML = "";
+
       if (state.tests.length === 0) {
-        historyEl.textContent = "Last 5 tests:";
+        const empty = document.createElement("div");
+        empty.className = "gtfr-hEmpty";
+        empty.textContent = "No tests yet. Try an input.";
+        historyChips.appendChild(empty);
         return;
       }
-      const parts = state.tests.map((t) => String(t.x) + " ->" + String(t.y));
-      historyEl.textContent = "Last 5 tests: " + parts.join(", ");
+
+      for (const t of state.tests) {
+        const chip = document.createElement("div");
+        chip.className = "gtfr-hChip";
+
+        const a = document.createElement("span");
+        a.textContent = String(t.x);
+
+        const sep = document.createElement("span");
+        sep.className = "gtfr-hSep";
+        sep.textContent = "→";
+
+        const b = document.createElement("span");
+        b.textContent = String(t.y);
+
+        chip.appendChild(a);
+        chip.appendChild(sep);
+        chip.appendChild(b);
+
+        historyChips.appendChild(chip);
+      }
     }
+
     function clampToInt(n) {
       if (!Number.isFinite(n)) return null;
       return Math.round(n);
@@ -1493,6 +1746,25 @@
       const padR = parseFloat(cs.paddingRight) || 0;
       const usable = el.clientWidth - padL - padR;
       return w <= Math.max(0, usable);
+    }
+
+    function revealRuleOnMachine() {
+      if (!ruleTexEl) return Promise.resolve();
+
+      ruleTexEl.innerHTML = "";
+      machine.classList.remove("gtfr-revealRule");
+      void machine.offsetWidth;
+      machine.classList.add("gtfr-revealRule");
+
+      const tex = "f(x)=" + astToLatex(state.correctRule);
+      return renderMathInto(ruleTexEl, tex, false).then(() =>
+        fitExpr(ruleTexEl),
+      );
+    }
+
+    function hideRuleOnMachine() {
+      machine.classList.remove("gtfr-revealRule");
+      if (ruleTexEl) ruleTexEl.innerHTML = "";
     }
 
     function smokeBurst() {
@@ -1768,7 +2040,13 @@
               }
             }
 
-            openWinModal();
+            setSolvedUI(true);
+
+            revealRuleOnMachine().then(() => {
+              setTimeout(() => {
+                setToastHTML("Solved. Click here for the next round.", "good");
+              }, 700);
+            });
           } else {
             state.roundHadMistake = true;
             div.classList.add("wrongFlash");
@@ -2296,7 +2574,14 @@
       newRound();
     }
 
+    toast.addEventListener("click", (e) => {
+      if (!state.locked) return;
+      newRound();
+    });
+
     function newRound() {
+      setSolvedUI(false);
+      hideRuleOnMachine();
       state.tests = [];
       state.locked = false;
       state.roundHadMistake = false;
@@ -2322,6 +2607,18 @@
       );
       createActiveBox("");
     }
+
+    if (nextBtn) nextBtn.addEventListener("click", () => newRound());
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      if (!state.locked) return;
+      // Only if they are not typing in an input
+      const tag =
+        (document.activeElement && document.activeElement.tagName) || "";
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      newRound();
+    });
 
     modalBtn.addEventListener("click", closeWinModalAndNext);
     modalBack.addEventListener("click", (e) => {
