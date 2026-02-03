@@ -1,9 +1,9 @@
-<div class="gtfr-root"></div>
+<div class="function_machine_widget"></div>
 <script>
   (() => {
     const root =
       document.currentScript && document.currentScript.previousElementSibling;
-    if (!root || !root.classList.contains("gtfr-root")) return;
+    if (!root || !root.classList.contains("function_machine_widget")) return;
     if (root.dataset.gtfrInit === "1") return;
     root.dataset.gtfrInit = "1";
 
@@ -62,7 +62,7 @@
       if (document.getElementById("gtfr_style_v2")) return;
       const s = document.createElement("style");
       s.id = "gtfr_style_v2";
-      s.textContent = `.gtfr-root {
+      s.textContent = `.function_machine_widget {
   --bg: #fbfbfb;
   --panel: #ffffff;
   --ink: #1f1f1f;
@@ -79,7 +79,7 @@
   color: var(--ink);
   font-family: var(--sans);
 }
-.gtfr-root[data-theme="flatly"] {
+.function_machine_widget[data-theme="flatly"] {
   --bg: #fbfbfb;
   --panel: #ffffff;
   --ink: #1f1f1f;
@@ -87,7 +87,7 @@
   --line: #d2d2d2;
   --accent: #2c3e50;
 }
-.gtfr-root[data-theme="dark"] {
+.function_machine_widget[data-theme="dark"] {
   --bg: #0f141a;
   --panel: #141b24;
   --ink: #e9eef6;
@@ -97,7 +97,7 @@
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
-.gtfr-root[data-theme="neon"] {
+.function_machine_widget[data-theme="neon"] {
   --bg: #0b0b12;
   --panel: #111227;
   --ink: #f0f4ff;
@@ -113,7 +113,7 @@
   transition: opacity 160ms ease;
 }
 
-.gtfr-root[data-theme="candy"] {
+.function_machine_widget[data-theme="candy"] {
   --bg: #fff7fb;
   --panel: #ffffff;
   --ink: #2a2230;
@@ -298,7 +298,7 @@
 }
 
 /* Only when solved */
-.gtfr-root[data-solved="1"] .gtfr-toast{
+.function_machine_widget[data-solved="1"] .gtfr-toast{
   cursor: pointer;
   user-select: none;
   border-color: color-mix(in srgb, var(--good) 55%, var(--line) 45%);
@@ -309,18 +309,18 @@
 }
 
 /* Hover and press affordance */
-.gtfr-root[data-solved="1"] .gtfr-toast:hover{
+.function_machine_widget[data-solved="1"] .gtfr-toast:hover{
   transform: translateY(-1px);
   box-shadow: 0 14px 22px rgba(0,0,0,0.10);
   filter: brightness(1.02);
 }
 
-.gtfr-root[data-solved="1"] .gtfr-toast:active{
+.function_machine_widget[data-solved="1"] .gtfr-toast:active{
   transform: translateY(0px);
 }
 
 /* A subtle "tap target" cue */
-.gtfr-root[data-solved="1"] .gtfr-toast::after{
+.function_machine_widget[data-solved="1"] .gtfr-toast::after{
   content: "Click to start next round";
   position: absolute;
   right: 12px;
@@ -346,7 +346,7 @@
 
 .gtfr-nextBtn:active{ transform:translateY(1px); }
 
-.gtfr-root[data-solved="1"] .gtfr-nextBtn{ display:inline-flex; }
+.function_machine_widget[data-solved="1"] .gtfr-nextBtn{ display:inline-flex; }
 
 .gtfr-history {
   margin-top: 8px;
@@ -855,8 +855,8 @@
     inset 0 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-body,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-body {
+.function_machine_widget[data-theme="dark"] .gtfr-machine .gtfr-body,
+.function_machine_widget[data-theme="neon"] .gtfr-machine .gtfr-body {
   background: color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
 }
 .gtfr-machine .gtfr-panel {
@@ -870,8 +870,8 @@
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.05);
   z-index: 2;
 }
-.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-panel,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-panel {
+.function_machine_widget[data-theme="dark"] .gtfr-machine .gtfr-panel,
+.function_machine_widget[data-theme="neon"] .gtfr-machine .gtfr-panel {
   background: color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
 }
 .gtfr-machine .gtfr-screen {
@@ -1065,7 +1065,7 @@
   display: flex;
   justify-content: center;
 }
-.gtfr-root {
+.function_machine_widget {
   --radius: 12px;
   --shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
 }

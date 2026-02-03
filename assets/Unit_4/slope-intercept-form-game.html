@@ -1,5 +1,5 @@
 <!-- Line Match Game – v6.2 -->
-<div class="lm9-root" data-max-moves="6" data-lives="3"></div>
+<div class="slope_intercept_form_game" data-max-moves="6" data-lives="3"></div>
 
 <style>
 :root{
@@ -35,7 +35,7 @@
 
 
 /* THEME: MIDNIGHT (high-contrast cyan/blue on deep navy) */
-.lm9-root.theme-midnight{
+.slope_intercept_form_game.theme-midnight{
   --bg-card:#020617;
   --bd-card:#111827;
   --ink:#e5e7eb;
@@ -61,7 +61,7 @@
 }
 
 /* THEME: OCEAN (unchanged, already good) */
-.lm9-root.theme-ocean{
+.slope_intercept_form_game.theme-ocean{
   --bg-card:#ecfeff;
   --bd-card:#bae6fd;
   --ink:#0f172a;
@@ -87,7 +87,7 @@
 }
 
 /* THEME: DARCULA – warm purple + neon accents */
-.lm9-root.theme-darcula{
+.slope_intercept_form_game.theme-darcula{
   --bg-card:#1e1f22;
   --bd-card:#2b2d31;
   --ink:#f8fafc;
@@ -113,7 +113,7 @@
 }
 
 /* THEME: TERMINAL GREEN – neon CRT-style */
-.lm9-root.theme-terminal{
+.slope_intercept_form_game.theme-terminal{
   --bg-card:#020617;
   --bd-card:#064e3b;
   --ink:#bbf7d0;
@@ -138,7 +138,7 @@
   --tick:#bbf7d0;
 }
 
-.lm9-root {
+.slope_intercept_form_game {
   max-width: 600px;
   margin: 16px auto;
   padding: 14px;
@@ -205,9 +205,9 @@
   font-weight:800;
   text-transform:uppercase;
 }
-.lm9-root.theme-midnight .tile .lbl,
-.lm9-root.theme-darcula .tile .lbl,
-.lm9-root.theme-terminal .tile .lbl{
+.slope_intercept_form_game.theme-midnight .tile .lbl,
+.slope_intercept_form_game.theme-darcula .tile .lbl,
+.slope_intercept_form_game.theme-terminal .tile .lbl{
   color:#9aa5b1;
 }
 .tile .val{
@@ -296,9 +296,9 @@
   border-radius:10px;
   border:1px dashed var(--bd-card);
 }
-.lm9-root.theme-midnight .start-overlay,
-.lm9-root.theme-darcula .start-overlay,
-.lm9-root.theme-terminal .start-overlay{
+.slope_intercept_form_game.theme-midnight .start-overlay,
+.slope_intercept_form_game.theme-darcula .start-overlay,
+.slope_intercept_form_game.theme-terminal .start-overlay{
   background:rgba(15,23,42,.92);
 }
 .start-overlay .msg{
@@ -311,9 +311,9 @@
   font-size:12px;
   color:#475569;
 }
-.lm9-root.theme-midnight .start-overlay .hint,
-.lm9-root.theme-darcula .start-overlay .hint,
-.lm9-root.theme-terminal .start-overlay .hint{
+.slope_intercept_form_game.theme-midnight .start-overlay .hint,
+.slope_intercept_form_game.theme-darcula .start-overlay .hint,
+.slope_intercept_form_game.theme-terminal .start-overlay .hint{
   color:#9aa5b1;
 }
 
@@ -358,9 +358,9 @@
   font-size:12px;
   color:#334155;
 }
-.lm9-root.theme-midnight .field label,
-.lm9-root.theme-darcula .field label,
-.lm9-root.theme-terminal .field label{
+.slope_intercept_form_game.theme-midnight .field label,
+.slope_intercept_form_game.theme-darcula .field label,
+.slope_intercept_form_game.theme-terminal .field label{
   color:#9aa5b1;
 }
 .input{
@@ -374,9 +374,9 @@
   background:#ffffff;
   color:#0f172a;
 }
-.lm9-root.theme-midnight .input,
-.lm9-root.theme-darcula .input,
-.lm9-root.theme-terminal .input{
+.slope_intercept_form_game.theme-midnight .input,
+.slope_intercept_form_game.theme-darcula .input,
+.slope_intercept_form_game.theme-terminal .input{
   background:#020617;
   color:#e5e7eb;
   border-color:#374151;
@@ -423,9 +423,9 @@
   font-size:12px;
   color:#64748b;
 }
-.lm9-root.theme-midnight .sp-row label,
-.lm9-root.theme-darcula .sp-row label,
-.lm9-root.theme-terminal .sp-row label{
+.slope_intercept_form_game.theme-midnight .sp-row label,
+.slope_intercept_form_game.theme-darcula .sp-row label,
+.slope_intercept_form_game.theme-terminal .sp-row label{
   color:#93a3b8;
 }
 
@@ -502,9 +502,9 @@
   color:#334155;
   font-weight:700;
 }
-.lm9-root.theme-midnight .lm-row .lm-label,
-.lm9-root.theme-darcula .lm-row .lm-label,
-.lm9-root.theme-terminal .lm-row .lm-label{
+.slope_intercept_form_game.theme-midnight .lm-row .lm-label,
+.slope_intercept_form_game.theme-darcula .lm-row .lm-label,
+.slope_intercept_form_game.theme-terminal .lm-row .lm-label{
   color:#9aa5b1;
 }
 .lm-modal-actions{
@@ -567,7 +567,7 @@
 
 <script>
 (function(){
-  function initAll(){document.querySelectorAll('.lm9-root').forEach(initWidget);}
+  function initAll(){document.querySelectorAll('.slope_intercept_form_game').forEach(initWidget);}
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded',initAll,{once:true});
   }else{initAll();}

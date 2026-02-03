@@ -1,17 +1,25 @@
 <!-- factor_tree_build_mode.html -->
-<div id="ftg_root"></div>
+<div id="factor_tree_widget"></div>
 
 <script>
 (() => {
-  const rootEl = document.getElementById("ftg_root");
+  const rootEl = document.getElementById("factor_tree_widget");
   if (!rootEl) return;
 
   /* ================= CONFIG ================= */
+  function computeCanvasH() {
+    const vh = window.innerHeight || 700;
+    const minH = 240;
+    const maxH = 520;
+    const frac = 0.52;
+    return Math.max(minH, Math.min(maxH, Math.round(vh * frac)));
+  }
+
   const CFG = {
     canvasW: 620,
-    canvasH: 500,
+    canvasH: computeCanvasH(),
     padX: 46,
-    padY: 46,
+    padY: 32,
 
     nodeW: 68,
     nodeH: 28,
@@ -1317,5 +1325,17 @@ if (canInteract) {
   const state = makeState();
   ensureDocHandlers(state);
   state.newPuzzle();
+
+  let _rzTimer = 0;
+  window.addEventListener("resize", () => {
+    clearTimeout(_rzTimer);
+    _rzTimer = setTimeout(() => {
+      const nextH = computeCanvasH();
+      if (nextH !== CFG.canvasH) {
+        CFG.canvasH = nextH;
+        state.render();
+      }
+    }, 120);
+  });
 })();
 </script>

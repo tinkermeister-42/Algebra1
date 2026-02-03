@@ -1,8 +1,8 @@
 <!-- widgets/line-equation.html (v8) : HiDPI + crisp 1px lines -->
-<div class="leq3-root" data-m="1.0" data-b="0.0"></div>
+<div class="slope_intercept_form_widget-root" data-m="1.0" data-b="0.0"></div>
 
 <style>
-  .leq3-root {
+  .slope_intercept_form_widget-root {
     max-width: 600px;
     /* increase if you want a larger plot */
     /* border: 1px solid #e5e7eb; */
@@ -12,7 +12,7 @@
     background: #fff;
   }
 
-  .leq3-grid {
+  .slope_intercept_form_widget-grid {
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 84px auto;
@@ -20,40 +20,40 @@
     align-items: start;
   }
 
-  .leq3-bline {
+  .slope_intercept_form_widget-bline {
     grid-column: 1;
     grid-row: 2;
     position: relative;
   }
 
-  .leq3-mline {
+  .slope_intercept_form_widget-mline {
     grid-column: 2;
     grid-row: 1;
     position: relative;
   }
 
-  .leq3-plot {
+  .slope_intercept_form_widget-plot {
     grid-column: 2;
     grid-row: 2;
     position: relative;
   }
 
-  .leq3-nline-h {
+  .slope_intercept_form_widget-nline-h {
     width: 100%;
     height: 80px;
     display: block;
     background: #fff;
   }
 
-  .leq3-nline-v {
+  .slope_intercept_form_widget-nline-v {
     width: 100px;
     height: 100%;
     display: block;
     background: #fff;
   }
 
-  .leq3-nline-h,
-  .leq3-nline-v {
+  .slope_intercept_form_widget-nline-h,
+  .slope_intercept_form_widget-nline-v {
     touch-action: none;
     -ms-touch-action: none;
     user-select: none;
@@ -61,7 +61,7 @@
     cursor: pointer;
   }
 
-  .leq3-canvas {
+  .slope_intercept_form_widget-canvas {
     width: 100%;
     height: auto;
     display: block;
@@ -70,7 +70,7 @@
     border-radius: 10px;
   }
 
-  .leq3-label {
+  .slope_intercept_form_widget-label {
     position: absolute;
     pointer-events: none;
     font: 600 13px ui-sans-serif, system-ui;
@@ -81,14 +81,14 @@
     padding: 2px 8px;
   }
 
-  .leq3-label.m {
+  .slope_intercept_form_widget-label.m {
     left: -10px;
     top: 45%;
     transform: translateY(-50%);
   }
 
   /* left edge of horizontal slider */
-  .leq3-label.b {
+  .slope_intercept_form_widget-label.b {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -100,7 +100,7 @@
 <script>
   (function () {
     function initAll() {
-      document.querySelectorAll('.leq3-root').forEach(initWidget);
+      document.querySelectorAll('.slope_intercept_form_widget-root').forEach(initWidget);
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initAll, { once: true });
@@ -118,20 +118,20 @@
         xmin: -10, xmax: 10, ymin: -10, ymax: 10
       };
 
-      const grid = el('div', 'leq3-grid');
+      const grid = el('div', 'slope_intercept_form_widget-grid');
 
-      const mWrap = el('div', 'leq3-mline');
-      const mCanvas = el('canvas', 'leq3-nline-h');
-      const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
+      const mWrap = el('div', 'slope_intercept_form_widget-mline');
+      const mCanvas = el('canvas', 'slope_intercept_form_widget-nline-h');
+      const mLabel = el('div', 'slope_intercept_form_widget-label m'); mLabel.textContent = 'm';
       mWrap.append(mCanvas, mLabel);
 
-      const bWrap = el('div', 'leq3-bline');
-      const bCanvas = el('canvas', 'leq3-nline-v');
-      const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
+      const bWrap = el('div', 'slope_intercept_form_widget-bline');
+      const bCanvas = el('canvas', 'slope_intercept_form_widget-nline-v');
+      const bLabel = el('div', 'slope_intercept_form_widget-label b'); bLabel.textContent = 'b';
       bWrap.append(bCanvas, bLabel);
 
-      const plot = el('div', 'leq3-plot');
-      const canvas = el('canvas', 'leq3-canvas');
+      const plot = el('div', 'slope_intercept_form_widget-plot');
+      const canvas = el('canvas', 'slope_intercept_form_widget-canvas');
       plot.append(canvas);
 
       grid.append(bWrap, mWrap, plot);
