@@ -713,21 +713,35 @@ window.Quarto = {
 <li>Could you make a <strong>vertical</strong> line with a tool like this? Why or why not?</li>
 </ol>
 <!-- widgets/line-equation.html (v8) : HiDPI + crisp 1px lines -->
-<div class="leq3-root" data-m="1.0" data-b="0.0">
+<div class="slope_intercept_form_widget-root" data-m="1.0" data-b="0.0">
 
 </div>
 <style>
-  .leq3-root {
+  .slope_intercept_form_widget-root {
     max-width: 600px;
-    /* increase if you want a larger plot */
-    /* border: 1px solid #e5e7eb; */
     border-radius: 12px;
     padding: 10px;
-    margin: 1rem 0;
+    margin: 0rem auto;
     background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   }
 
-  .leq3-grid {
+  @media (max-height: 650px) {
+    .slope_intercept_form_widget-root {
+      padding: 8px;
+      margin: 0.4rem auto;
+    }
+    .slope_intercept_form_widget-grid {
+      gap: 4px;
+      grid-template-rows: 72px auto;
+    }
+    .slope_intercept_form_widget-nline-h {
+      height: 68px;
+    }
+  }
+
+  .slope_intercept_form_widget-grid {
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 84px auto;
@@ -735,40 +749,40 @@ window.Quarto = {
     align-items: start;
   }
 
-  .leq3-bline {
+  .slope_intercept_form_widget-bline {
     grid-column: 1;
     grid-row: 2;
     position: relative;
   }
 
-  .leq3-mline {
+  .slope_intercept_form_widget-mline {
     grid-column: 2;
     grid-row: 1;
     position: relative;
   }
 
-  .leq3-plot {
+  .slope_intercept_form_widget-plot {
     grid-column: 2;
     grid-row: 2;
     position: relative;
   }
 
-  .leq3-nline-h {
+  .slope_intercept_form_widget-nline-h {
     width: 100%;
     height: 80px;
     display: block;
     background: #fff;
   }
 
-  .leq3-nline-v {
+  .slope_intercept_form_widget-nline-v {
     width: 100px;
     height: 100%;
     display: block;
     background: #fff;
   }
 
-  .leq3-nline-h,
-  .leq3-nline-v {
+  .slope_intercept_form_widget-nline-h,
+  .slope_intercept_form_widget-nline-v {
     touch-action: none;
     -ms-touch-action: none;
     user-select: none;
@@ -776,7 +790,7 @@ window.Quarto = {
     cursor: pointer;
   }
 
-  .leq3-canvas {
+  .slope_intercept_form_widget-canvas {
     width: 100%;
     height: auto;
     display: block;
@@ -785,10 +799,12 @@ window.Quarto = {
     border-radius: 10px;
   }
 
-  .leq3-label {
+  .slope_intercept_form_widget-label {
     position: absolute;
     pointer-events: none;
-    font: 600 13px ui-sans-serif, system-ui;
+    font:
+      600 13px ui-sans-serif,
+      system-ui;
     color: #0f172a;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #cbd5e1;
@@ -796,14 +812,14 @@ window.Quarto = {
     padding: 2px 8px;
   }
 
-  .leq3-label.m {
+  .slope_intercept_form_widget-label.m {
     left: -10px;
     top: 45%;
     transform: translateY(-50%);
   }
 
   /* left edge of horizontal slider */
-  .leq3-label.b {
+  .slope_intercept_form_widget-label.b {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -814,10 +830,12 @@ window.Quarto = {
 <script>
   (function () {
     function initAll() {
-      document.querySelectorAll('.leq3-root').forEach(initWidget);
+      document
+        .querySelectorAll(".slope_intercept_form_widget-root")
+        .forEach(initWidget);
     }
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initAll, { once: true });
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAll, { once: true });
     } else {
       initAll();
     }
@@ -829,23 +847,28 @@ window.Quarto = {
       const state = {
         m: round1(parseFloat(root.dataset.m ?? 1.0)),
         b: round1(parseFloat(root.dataset.b ?? 0.0)),
-        xmin: -10, xmax: 10, ymin: -10, ymax: 10
+        xmin: -10,
+        xmax: 10,
+        ymin: -10,
+        ymax: 10,
       };
 
-      const grid = el('div', 'leq3-grid');
+      const grid = el("div", "slope_intercept_form_widget-grid");
 
-      const mWrap = el('div', 'leq3-mline');
-      const mCanvas = el('canvas', 'leq3-nline-h');
-      const mLabel = el('div', 'leq3-label m'); mLabel.textContent = 'm';
+      const mWrap = el("div", "slope_intercept_form_widget-mline");
+      const mCanvas = el("canvas", "slope_intercept_form_widget-nline-h");
+      const mLabel = el("div", "slope_intercept_form_widget-label m");
+      mLabel.textContent = "m";
       mWrap.append(mCanvas, mLabel);
 
-      const bWrap = el('div', 'leq3-bline');
-      const bCanvas = el('canvas', 'leq3-nline-v');
-      const bLabel = el('div', 'leq3-label b'); bLabel.textContent = 'b';
+      const bWrap = el("div", "slope_intercept_form_widget-bline");
+      const bCanvas = el("canvas", "slope_intercept_form_widget-nline-v");
+      const bLabel = el("div", "slope_intercept_form_widget-label b");
+      bLabel.textContent = "b";
       bWrap.append(bCanvas, bLabel);
 
-      const plot = el('div', 'leq3-plot');
-      const canvas = el('canvas', 'leq3-canvas');
+      const plot = el("div", "slope_intercept_form_widget-plot");
+      const canvas = el("canvas", "slope_intercept_form_widget-canvas");
       plot.append(canvas);
 
       grid.append(bWrap, mWrap, plot);
@@ -866,17 +889,20 @@ window.Quarto = {
       let rafId = null;
       function scheduleDraw() {
         if (rafId !== null) return;
-        rafId = requestAnimationFrame(() => { rafId = null; drawMain(); });
+        rafId = requestAnimationFrame(() => {
+          rafId = null;
+          drawMain();
+        });
       }
 
       // --- HiDPI sizing helper: draw in CSS units, canvas scaled internally
       function sizeForDPR(canvas, cssW, cssH) {
         const dpr = window.devicePixelRatio || 1;
-        canvas.style.width = cssW + 'px';
-        canvas.style.height = cssH + 'px';
+        canvas.style.width = cssW + "px";
+        canvas.style.height = cssH + "px";
         canvas.width = Math.max(1, Math.floor(cssW * dpr));
         canvas.height = Math.max(1, Math.floor(cssH * dpr));
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext("2d");
         // Use CSS pixel space for drawing
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         return { ctx, dpr };
@@ -887,11 +913,14 @@ window.Quarto = {
         const Hcss = canvas.clientHeight | 0;
         if (!Wcss || !Hcss) return;
 
-        const ctx = canvas.getContext('2d'); // already scaled by sizeForDPR
+        const ctx = canvas.getContext("2d"); // already scaled by sizeForDPR
         ctx.clearRect(0, 0, Wcss, Hcss);
 
-        const gridCol = '#cbd5e1', axisCol = '#1e293b', tickCol = '#334155',
-          lineCol = '#0e7490', interceptCol = '#111827';
+        const gridCol = "#cbd5e1",
+          axisCol = "#1e293b",
+          tickCol = "#334155",
+          lineCol = "#0e7490",
+          interceptCol = "#111827";
 
         // Grid
         ctx.lineWidth = 1;
@@ -916,76 +945,107 @@ window.Quarto = {
         }
 
         // Axes
-        ctx.strokeStyle = axisCol; ctx.lineWidth = 1.8;
+        ctx.strokeStyle = axisCol;
+        ctx.lineWidth = 1.8;
         const [xL, y0] = worldToPix(state.xmin, 0, Wcss, Hcss);
         const [xR] = worldToPix(state.xmax, 0, Wcss, Hcss);
         const yAxisPx = Math.round(y0) + 0.5;
-        ctx.beginPath(); ctx.moveTo(xL, yAxisPx); ctx.lineTo(xR, yAxisPx); ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(xL, yAxisPx);
+        ctx.lineTo(xR, yAxisPx);
+        ctx.stroke();
 
         const [x0, yB] = worldToPix(0, state.ymin, Wcss, Hcss);
         const [, yT] = worldToPix(0, state.ymax, Wcss, Hcss);
         const xAxisPx = Math.round(x0) + 0.5;
-        ctx.beginPath(); ctx.moveTo(xAxisPx, yB); ctx.lineTo(xAxisPx, yT); ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(xAxisPx, yB);
+        ctx.lineTo(xAxisPx, yT);
+        ctx.stroke();
 
         // Ticks + labels
-        ctx.fillStyle = tickCol; ctx.font = '12px system-ui';
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1;
+        ctx.fillStyle = tickCol;
+        ctx.font = "12px system-ui";
+        ctx.strokeStyle = "#94a3b8";
+        ctx.lineWidth = 1;
         for (let x = Math.ceil(state.xmin); x <= Math.floor(state.xmax); x++) {
           const [px] = worldToPix(x, 0, Wcss, Hcss);
           const X = Math.round(px) + 0.5;
-          ctx.beginPath(); ctx.moveTo(X, yAxisPx - 5); ctx.lineTo(X, yAxisPx + 5); ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(X, yAxisPx - 5);
+          ctx.lineTo(X, yAxisPx + 5);
+          ctx.stroke();
           if (x !== 0) ctx.fillText(String(x), X - 4, yAxisPx + 18);
         }
         for (let y = Math.ceil(state.ymin); y <= Math.floor(state.ymax); y++) {
           const [, py] = worldToPix(0, y, Wcss, Hcss);
           const Y = Math.round(py) + 0.5;
-          ctx.beginPath(); ctx.moveTo(xAxisPx - 5, Y); ctx.lineTo(xAxisPx + 5, Y); ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(xAxisPx - 5, Y);
+          ctx.lineTo(xAxisPx + 5, Y);
+          ctx.stroke();
           if (y !== 0) ctx.fillText(String(y), xAxisPx + 8, Y + 4);
         }
 
         // Line segment within bounds
-        const m = state.m, b = state.b;
+        const m = state.m,
+          b = state.b;
         const pts = [];
-        const yL = m * state.xmin + b, yR = m * state.xmax + b;
-        addIf(state.xmin, yL); addIf(state.xmax, yR);
+        const yL = m * state.xmin + b,
+          yR = m * state.xmax + b;
+        addIf(state.xmin, yL);
+        addIf(state.xmax, yR);
         if (Math.abs(m) > 1e-12) {
-          const xB = (state.ymin - b) / m; addIf(xB, state.ymin);
-          const xT = (state.ymax - b) / m; addIf(xT, state.ymax);
+          const xB = (state.ymin - b) / m;
+          addIf(xB, state.ymin);
+          const xT = (state.ymax - b) / m;
+          addIf(xT, state.ymax);
         }
         function addIf(x, y) {
-          if (x >= state.xmin - 1e-9 && x <= state.xmax + 1e-9 && y >= state.ymin - 1e-9 && y <= state.ymax + 1e-9)
+          if (
+            x >= state.xmin - 1e-9 &&
+            x <= state.xmax + 1e-9 &&
+            y >= state.ymin - 1e-9 &&
+            y <= state.ymax + 1e-9
+          )
             pts.push([x, y]);
         }
         if (pts.length >= 2) {
           const [x1, y1] = worldToPix(pts[0][0], pts[0][1], Wcss, Hcss);
           const [x2, y2] = worldToPix(pts[1][0], pts[1][1], Wcss, Hcss);
-          ctx.strokeStyle = lineCol; ctx.lineWidth = 2.2;
-          ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+          ctx.strokeStyle = lineCol;
+          ctx.lineWidth = 2.2;
+          ctx.beginPath();
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
         }
 
         // y-intercept dot
         if (b >= state.ymin && b <= state.ymax) {
           const [ix, iy] = worldToPix(0, b, Wcss, Hcss);
           ctx.fillStyle = interceptCol;
-          ctx.beginPath(); ctx.arc(ix, iy, 4, 0, Math.PI * 2); ctx.fill();
+          ctx.beginPath();
+          ctx.arc(ix, iy, 4, 0, Math.PI * 2);
+          ctx.fill();
         }
 
         // Equation badge
-        const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? '+' : '−'} ${Math.abs(b).toFixed(1)}`;
-        ctx.font = '14px system-ui';
+        const eq = `y = ${m.toFixed(1)}x ${b >= 0 ? "+" : "-"} ${Math.abs(b).toFixed(1)}`;
+        ctx.font = "14px system-ui";
         const tw = ctx.measureText(eq).width;
         const bx = Wcss - M.right - tw - 28;
         const by = Math.max(18, Math.floor(M.top * 0.45) + 10);
-        ctx.fillStyle = 'rgba(14,116,144,0.18)';
+        ctx.fillStyle = "rgba(14,116,144,0.18)";
         roundRect(ctx, bx, by - 20, tw + 32, 28, 10, true, false);
-        ctx.fillStyle = lineCol; ctx.fillText(eq, bx + 14, by - 3);
+        ctx.fillStyle = lineCol;
+        ctx.fillText(eq, bx + 14, by - 3);
       }
 
       function sizePlot() {
         const rect = plot.getBoundingClientRect();
-        const Wcss = Math.max(460, Math.floor(rect.width));
-        const Hcss = Wcss; // keep square
-        sizeForDPR(canvas, Wcss, Hcss);
+        const S = clamp(Math.floor(rect.width), 280, 520);
+        sizeForDPR(canvas, S, S);
       }
 
       const h = { min: -10, max: 10, step: 0.1, cur: state.m };
@@ -996,32 +1056,64 @@ window.Quarto = {
         const { ctx } = sizeForDPR(mCanvas, Wcss, Hcss);
 
         const y = Math.floor(Hcss * 0.44) + 0.5; // crisp line
-        ctx.strokeStyle = '#e2e8f0';
-        ctx.lineWidth = 10; ctx.lineCap = 'round';
-        ctx.beginPath(); ctx.moveTo(34, y); ctx.lineTo(Wcss - 34, y); ctx.stroke();
+        ctx.strokeStyle = "#e2e8f0";
+        ctx.lineWidth = 10;
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(34, y);
+        ctx.lineTo(Wcss - 34, y);
+        ctx.stroke();
 
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
+        ctx.strokeStyle = "#94a3b8";
+        ctx.lineWidth = 1;
+        ctx.fillStyle = "#334155";
+        ctx.font = "12px system-ui";
+
+        const range = h.max - h.min;
+        const pxPerUnit = (Wcss - 68) / range;
+        const labelEvery = pxPerUnit < 14 ? 5 : pxPerUnit < 22 ? 2 : 1;
+
         for (let t = Math.ceil(h.min); t <= Math.floor(h.max); t++) {
           const x = Math.round(h_valToPx(t, Wcss)) + 0.5;
-          ctx.beginPath(); ctx.moveTo(x, y - 12); ctx.lineTo(x, y + 12); ctx.stroke();
-          ctx.fillText(String(t), x - 6, y + 36);
+          const major = t % labelEvery === 0;
+          const len = major ? 12 : 7;
+          ctx.beginPath();
+          ctx.moveTo(x, y - len);
+          ctx.lineTo(x, y + len);
+          ctx.stroke();
+          if (major) ctx.fillText(String(t), x - 6, y + 36);
         }
 
         const x0 = Math.round(h_valToPx(0, Wcss)) + 0.5;
-        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-        ctx.beginPath(); ctx.moveTo(x0, y - 18); ctx.lineTo(x0, y + 18); ctx.stroke();
+        ctx.strokeStyle = "#64748b";
+        ctx.lineWidth = 1.6;
+        ctx.beginPath();
+        ctx.moveTo(x0, y - 18);
+        ctx.lineTo(x0, y + 18);
+        ctx.stroke();
 
         const hx = h_valToPx(h.cur, Wcss);
-        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, y, 7, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = "#0ea5a6";
+        ctx.beginPath();
+        ctx.arc(hx, y, 7, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#155e75";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(hx, y, 7, 0, Math.PI * 2);
+        ctx.stroke();
       }
       function h_valToPx(v, W) {
-        const pad = 34, L = pad, R = W - pad;
+        const pad = 34,
+          L = pad,
+          R = W - pad;
         const t = (v - h.min) / (h.max - h.min);
         return L + t * (R - L);
       }
       function h_pxToVal(px, W) {
-        const pad = 34, L = pad, R = W - pad;
+        const pad = 34,
+          L = pad,
+          R = W - pad;
         const t = clamp((px - L) / (R - L), 0, 1);
         const raw = h.min + t * (h.max - h.min);
         return roundTo(raw, h.step);
@@ -1029,38 +1121,74 @@ window.Quarto = {
 
       const v = { min: -10, max: 10, step: 0.1, cur: state.b };
       function redrawV() {
-        const graphHcss = parseFloat(getComputedStyle(canvas).height) || canvas.clientHeight || 320;
-        const Wcss = 100, Hcss = Math.max(240, Math.floor(graphHcss));
+        const graphHcss =
+          parseFloat(getComputedStyle(canvas).height) ||
+          canvas.clientHeight ||
+          320;
+        const Wcss = 100,
+          Hcss = Math.max(240, Math.floor(graphHcss));
         const { ctx } = sizeForDPR(bCanvas, Wcss, Hcss);
 
         const x = Math.floor(Wcss / 2) + 0.5;
-        const top = M.top, bottom = Hcss - 32;
+        const top = M.top,
+          bottom = Hcss - 32;
 
-        ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 10; ctx.lineCap = 'round';
-        ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke();
+        ctx.strokeStyle = "#e2e8f0";
+        ctx.lineWidth = 10;
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(x, top);
+        ctx.lineTo(x, bottom);
+        ctx.stroke();
 
-        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 1; ctx.fillStyle = '#334155'; ctx.font = '12px system-ui';
+        ctx.strokeStyle = "#94a3b8";
+        ctx.lineWidth = 1;
+        ctx.fillStyle = "#334155";
+        ctx.font = "12px system-ui";
+
+        const range = v.max - v.min;
+        const pxPerUnit = (bottom - top) / range;
+        const labelEvery = pxPerUnit < 14 ? 5 : pxPerUnit < 22 ? 2 : 1;
+
         for (let t = Math.ceil(v.min); t <= Math.floor(v.max); t++) {
           const y = Math.round(v_valToPx(t, Hcss, top, bottom)) + 0.5;
-          ctx.beginPath(); ctx.moveTo(x - 12, y); ctx.lineTo(x + 12, y); ctx.stroke();
-          ctx.fillText(String(t), x + 22, y + 4);
+          const major = t % labelEvery === 0;
+          const len = major ? 12 : 7;
+          ctx.beginPath();
+          ctx.moveTo(x - len, y);
+          ctx.lineTo(x + len, y);
+          ctx.stroke();
+          if (major) ctx.fillText(String(t), x + 22, y + 4);
         }
 
         const y0 = Math.round(v_valToPx(0, Hcss, top, bottom)) + 0.5;
-        ctx.strokeStyle = '#64748b'; ctx.lineWidth = 1.6;
-        ctx.beginPath(); ctx.moveTo(x - 16, y0); ctx.lineTo(x + 16, y0); ctx.stroke();
+        ctx.strokeStyle = "#64748b";
+        ctx.lineWidth = 1.6;
+        ctx.beginPath();
+        ctx.moveTo(x - 16, y0);
+        ctx.lineTo(x + 16, y0);
+        ctx.stroke();
 
         const hy = v_valToPx(v.cur, Hcss, top, bottom);
-        ctx.fillStyle = '#0ea5a6'; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = '#155e75'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, hy, 7, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = "#0ea5a6";
+        ctx.beginPath();
+        ctx.arc(x, hy, 7, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#155e75";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(x, hy, 7, 0, Math.PI * 2);
+        ctx.stroke();
       }
       function v_valToPx(val, Hc, top, bottom) {
-        const T = top, B = bottom;
+        const T = top,
+          B = bottom;
         const t = (val - v.min) / (v.max - v.min);
         return B - t * (B - T);
       }
       function v_pxToVal(py, Hc, top, bottom) {
-        const T = top, B = bottom;
+        const T = top,
+          B = bottom;
         const t = clamp((B - py) / (B - T), 0, 1);
         const raw = v.min + t * (v.max - v.min);
         return roundTo(raw, v.step);
@@ -1070,76 +1198,111 @@ window.Quarto = {
       let dragMode = null; // 'h' or 'v'
 
       function onPointerDownH(e) {
-        dragMode = 'h';
+        dragMode = "h";
         mCanvas.setPointerCapture?.(e.pointerId);
         onMoveH(e);
         e.preventDefault();
       }
       function onPointerDownV(e) {
-        dragMode = 'v';
+        dragMode = "v";
         bCanvas.setPointerCapture?.(e.pointerId);
         onMoveV(e);
         e.preventDefault();
       }
 
       function onPointerMove(e) {
-        if (dragMode === 'h') onMoveH(e);
-        else if (dragMode === 'v') onMoveV(e);
+        if (dragMode === "h") onMoveH(e);
+        else if (dragMode === "v") onMoveV(e);
       }
 
       function onPointerUp(e) {
-        if (dragMode === 'h') mCanvas.releasePointerCapture?.(e.pointerId);
-        if (dragMode === 'v') bCanvas.releasePointerCapture?.(e.pointerId);
+        if (dragMode === "h") mCanvas.releasePointerCapture?.(e.pointerId);
+        if (dragMode === "v") bCanvas.releasePointerCapture?.(e.pointerId);
         dragMode = null;
       }
 
       // attach listeners (non-passive so we can preventDefault on touch)
-      mCanvas.addEventListener('pointerdown', onPointerDownH, { passive: false });
-      bCanvas.addEventListener('pointerdown', onPointerDownV, { passive: false });
-      window.addEventListener('pointermove', onPointerMove, { passive: false });
-      window.addEventListener('pointerup', onPointerUp, { passive: true });
+      mCanvas.addEventListener("pointerdown", onPointerDownH, {
+        passive: false,
+      });
+      bCanvas.addEventListener("pointerdown", onPointerDownV, {
+        passive: false,
+      });
+      window.addEventListener("pointermove", onPointerMove, { passive: false });
+      window.addEventListener("pointerup", onPointerUp, { passive: true });
 
       // update helpers to read from PointerEvent (works for mouse/touch/pen)
       function onMoveH(e) {
-        if (dragMode !== 'h') return;
+        if (dragMode !== "h") return;
         const rect = mCanvas.getBoundingClientRect();
         const px = e.clientX - rect.left;
         const newVal = h_pxToVal(px, rect.width);
         if (Math.abs(newVal - h.cur) > 1e-9) {
-          h.cur = newVal; state.m = newVal;
-          scheduleDraw(); redrawH();
+          h.cur = newVal;
+          state.m = newVal;
+          scheduleDraw();
+          redrawH();
         }
       }
 
       function onMoveV(e) {
-        if (dragMode !== 'v') return;
+        if (dragMode !== "v") return;
         const rect = bCanvas.getBoundingClientRect();
         const py = e.clientY - rect.top;
-        const top = M.top, bottom = rect.height - 32;
+        const top = M.top,
+          bottom = rect.height - 32;
         const newVal = v_pxToVal(py, rect.height, top, bottom);
         if (Math.abs(newVal - v.cur) > 1e-9) {
-          v.cur = newVal; state.b = newVal;
-          scheduleDraw(); redrawV();
+          v.cur = newVal;
+          state.b = newVal;
+          scheduleDraw();
+          redrawV();
         }
       }
 
-
       // Resize observer to keep things sharp as layout changes
       const ro = new ResizeObserver(() => {
-        sizePlot(); redrawH(); redrawV(); scheduleDraw();
+        sizePlot();
+        redrawH();
+        redrawV();
+        scheduleDraw();
       });
       ro.observe(root);
 
+      let _rz = 0;
+      window.addEventListener('resize', ()=> {
+        clearTimeout(_rz);
+        _rz = setTimeout(()=> {
+          sizePlot();
+          redrawH();
+          redrawV();
+          scheduleDraw();
+        }, 80);
+      });  
+      
       // Initial draw
-      sizePlot(); redrawH(); redrawV(); scheduleDraw();
+      sizePlot();
+      redrawH();
+      redrawV();
+      scheduleDraw();
 
       // --- utils ---
-      function round1(x) { return Math.round(x * 10) / 10; }
-      function roundTo(x, step) { return Math.round(x / step) * step; }
-      function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
-      function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
+      function round1(x) {
+        return Math.round(x * 10) / 10;
+      }
+      function roundTo(x, step) {
+        return Math.round(x / step) * step;
+      }
+      function clamp(v, min, max) {
+        return Math.max(min, Math.min(max, v));
+      }
+      function el(tag, cls) {
+        const n = document.createElement(tag);
+        if (cls) n.className = cls;
+        return n;
+      }
       function roundRect(ctx, x, y, w, h, r, fill, stroke) {
-        if (typeof r === 'number') r = { tl: r, tr: r, br: r, bl: r };
+        if (typeof r === "number") r = { tl: r, tr: r, br: r, bl: r };
         ctx.beginPath();
         ctx.moveTo(x + r.tl, y);
         ctx.lineTo(x + w - r.tr, y);
@@ -1162,10 +1325,211 @@ window.Quarto = {
 
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../../scripts/popper.min.js"></script>
 <script src="../../../scripts/tippy.min.js"></script>
 <script src="../../../scripts/glossary-tooltips.js"></script>
 <script src="../../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

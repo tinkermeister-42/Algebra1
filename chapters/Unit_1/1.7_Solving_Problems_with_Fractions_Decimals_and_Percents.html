@@ -725,7 +725,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="part" data-original-href="#glossary-part" data-term="part">part</a>, <a href="" class="glossary-link" data-slug="percent" data-original-href="#glossary-percent" data-term="percent">percent</a>, <a href="" class="glossary-link" data-slug="percent-of" data-original-href="#glossary-percent-of" data-term="percent of">percent of</a>, <a href="" class="glossary-link" data-slug="proportion" data-original-href="#glossary-proportion" data-term="proportion">proportion</a>, <a href="" class="glossary-link" data-slug="whole" data-original-href="#glossary-whole" data-term="whole">whole</a></p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-part" data-slug="part" data-term="part">part</a>, <a href="" class="glossary-link" data-original-href="#glossary-percent" data-slug="percent" data-term="percent">percent</a>, <a href="" class="glossary-link" data-original-href="#glossary-percent-of" data-slug="percent-of" data-term="percent of">percent of</a>, <a href="" class="glossary-link" data-original-href="#glossary-proportion" data-slug="proportion" data-term="proportion">proportion</a>, <a href="" class="glossary-link" data-original-href="#glossary-whole" data-slug="whole" data-term="whole">whole</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -877,7 +877,7 @@ window.Quarto = {
 <p><strong>Example 5:</strong> Sales &amp; Discounts</p>
 <p>A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off.</p>
 <p><strong>What’s the new price?</strong></p>
-<p>First, find the <a href="" class="glossary-link" data-slug="discount" data-original-href="#glossary-discount" data-term="discount">discount</a> by asking “What is 25% of $60?”:</p>
+<p>First, find the <a href="" class="glossary-link" data-original-href="#glossary-discount" data-slug="discount" data-term="discount">discount</a> by asking “What is 25% of $60?”:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -936,7 +936,7 @@ window.Quarto = {
 </div>
 <hr>
 <p><strong>Example 6:</strong> Surveys &amp; Data</p>
-<p>A <a href="" class="glossary-link" data-slug="survey" data-original-href="#glossary-survey" data-term="survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
+<p>A <a href="" class="glossary-link" data-original-href="#glossary-survey" data-slug="survey" data-term="survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
 <p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal: <span class="math display">\[
 75\% = 0.75
 \]</span> Then divide: <span class="math display">\[
@@ -1034,10 +1034,211 @@ What percent of students are in art class?</p></li>
 </section>
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../scripts/popper.min.js"></script>
 <script src="../../scripts/tippy.min.js"></script>
 <script src="../../scripts/glossary-tooltips.js"></script>
 <script src="../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

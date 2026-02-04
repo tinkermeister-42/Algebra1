@@ -731,7 +731,7 @@ x^2 + 2x = 8.
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="" class="glossary-link" data-slug="real-solution" data-original-href="#glossary-real-solution" data-term="real solution">real solution</a>, <a href="" class="glossary-link" data-slug="root" data-original-href="#glossary-root" data-term="root">root</a>, <a href="" class="glossary-link" data-slug="x-intercept" data-original-href="#glossary-x-intercept" data-term="x-intercept">x-intercept</a>, <a href="" class="glossary-link" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property" data-term="zero product property">zero product property</a></p>
+<p><a href="" class="glossary-link" data-slug="quadratic-equation" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a>, <a href="" class="glossary-link" data-slug="real-solution" data-term="real solution" data-original-href="#glossary-real-solution">real solution</a>, <a href="" class="glossary-link" data-slug="root" data-term="root" data-original-href="#glossary-root">root</a>, <a href="" class="glossary-link" data-slug="x-intercept" data-term="x-intercept" data-original-href="#glossary-x-intercept">x-intercept</a>, <a href="" class="glossary-link" data-slug="zero-product-property" data-term="zero product property" data-original-href="#glossary-zero-product-property">zero product property</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -763,7 +763,7 @@ x^2 - 9
 <li>The parabola in the middle crosses the x-axis twice.</li>
 <li>The parabola on the right never touches the x-axis.</li>
 </ul>
-<p>These values of <span class="math inline">\(x\)</span> are the <a href="" class="glossary-link" data-slug="root" data-original-href="#glossary-root" data-term="roots">roots</a> or <strong>zeros</strong> of the function. They occur exactly when the <strong>output</strong> of the function is zero.</p>
+<p>These values of <span class="math inline">\(x\)</span> are the <a href="" class="glossary-link" data-slug="root" data-term="roots" data-original-href="#glossary-root">roots</a> or <strong>zeros</strong> of the function. They occur exactly when the <strong>output</strong> of the function is zero.</p>
 <p>This idea is the key to why we solve equations by setting them equal to zero.</p>
 <hr>
 <p><strong>Example 1:</strong> Finding x-intercepts by graphing</p>
@@ -796,13 +796,13 @@ f(x) = x^2 + 2x - 15.
 </section>
 <section id="solving-quadratic-equations-by-factoring" class="level3">
 <h3 class="anchored" data-anchor-id="solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</h3>
-<p>To find the <strong>exact</strong> x-intercepts, we need an algebraic method. This is where the <a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a> comes in.</p>
+<p>To find the <strong>exact</strong> x-intercepts, we need an algebraic method. This is where the <a href="" class="glossary-link" data-slug="quadratic-equation" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a> comes in.</p>
 <p><span class="math display">\[
 ax^2 + bx + c = 0
 \]</span></p>
 <p>But why do we set the equation equal to zero?</p>
 <p>X-intercepts occur when the <strong>output is zero</strong>. So if we want to find where the graph hits the x-axis, we must solve the equation that results from setting the function equal to zero.</p>
-<p>This connects directly to Unit 5. Once a quadratic is written as an expression equal to zero, we can factor it and use the <a href="" class="glossary-link" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property" data-term="zero product property">zero product property</a>.</p>
+<p>This connects directly to Unit 5. Once a quadratic is written as an expression equal to zero, we can factor it and use the <a href="" class="glossary-link" data-slug="zero-product-property" data-term="zero product property" data-original-href="#glossary-zero-product-property">zero product property</a>.</p>
 <p>If a product equals zero, then at least one factor must be zero. Each factor gives a possible solution.</p>
 <hr>
 <p><strong>Example 2:</strong> Solving a quadratic equation by factoring</p>
@@ -1058,10 +1058,211 @@ Solve each equation.</p>
 </section>
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../scripts/popper.min.js"></script>
 <script src="../../scripts/tippy.min.js"></script>
 <script src="../../scripts/glossary-tooltips.js"></script>
 <script src="../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

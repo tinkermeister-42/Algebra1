@@ -713,7 +713,7 @@ window.Quarto = {
 <li>Run out of moves or lives and the game ends.</li>
 </ol>
 <!-- Line Match Game – v6.2 -->
-<div class="lm9-root" data-max-moves="6" data-lives="3">
+<div class="slope_intercept_form_game" data-max-moves="6" data-lives="3">
 
 </div>
 <style>
@@ -750,7 +750,7 @@ window.Quarto = {
 
 
 /* THEME: MIDNIGHT (high-contrast cyan/blue on deep navy) */
-.lm9-root.theme-midnight{
+.slope_intercept_form_game.theme-midnight{
   --bg-card:#020617;
   --bd-card:#111827;
   --ink:#e5e7eb;
@@ -776,7 +776,7 @@ window.Quarto = {
 }
 
 /* THEME: OCEAN (unchanged, already good) */
-.lm9-root.theme-ocean{
+.slope_intercept_form_game.theme-ocean{
   --bg-card:#ecfeff;
   --bd-card:#bae6fd;
   --ink:#0f172a;
@@ -802,7 +802,7 @@ window.Quarto = {
 }
 
 /* THEME: DARCULA – warm purple + neon accents */
-.lm9-root.theme-darcula{
+.slope_intercept_form_game.theme-darcula{
   --bg-card:#1e1f22;
   --bd-card:#2b2d31;
   --ink:#f8fafc;
@@ -828,7 +828,7 @@ window.Quarto = {
 }
 
 /* THEME: TERMINAL GREEN – neon CRT-style */
-.lm9-root.theme-terminal{
+.slope_intercept_form_game.theme-terminal{
   --bg-card:#020617;
   --bd-card:#064e3b;
   --ink:#bbf7d0;
@@ -853,9 +853,9 @@ window.Quarto = {
   --tick:#bbf7d0;
 }
 
-.lm9-root {
+.slope_intercept_form_game {
   max-width: 600px;
-  margin: 16px auto;
+  margin: 0px auto;
   padding: 14px;
   font-family: var(--lm-font);
   color: var(--ink);
@@ -920,9 +920,9 @@ window.Quarto = {
   font-weight:800;
   text-transform:uppercase;
 }
-.lm9-root.theme-midnight .tile .lbl,
-.lm9-root.theme-darcula .tile .lbl,
-.lm9-root.theme-terminal .tile .lbl{
+.slope_intercept_form_game.theme-midnight .tile .lbl,
+.slope_intercept_form_game.theme-darcula .tile .lbl,
+.slope_intercept_form_game.theme-terminal .tile .lbl{
   color:#9aa5b1;
 }
 .tile .val{
@@ -1011,9 +1011,9 @@ window.Quarto = {
   border-radius:10px;
   border:1px dashed var(--bd-card);
 }
-.lm9-root.theme-midnight .start-overlay,
-.lm9-root.theme-darcula .start-overlay,
-.lm9-root.theme-terminal .start-overlay{
+.slope_intercept_form_game.theme-midnight .start-overlay,
+.slope_intercept_form_game.theme-darcula .start-overlay,
+.slope_intercept_form_game.theme-terminal .start-overlay{
   background:rgba(15,23,42,.92);
 }
 .start-overlay .msg{
@@ -1026,9 +1026,9 @@ window.Quarto = {
   font-size:12px;
   color:#475569;
 }
-.lm9-root.theme-midnight .start-overlay .hint,
-.lm9-root.theme-darcula .start-overlay .hint,
-.lm9-root.theme-terminal .start-overlay .hint{
+.slope_intercept_form_game.theme-midnight .start-overlay .hint,
+.slope_intercept_form_game.theme-darcula .start-overlay .hint,
+.slope_intercept_form_game.theme-terminal .start-overlay .hint{
   color:#9aa5b1;
 }
 
@@ -1073,9 +1073,9 @@ window.Quarto = {
   font-size:12px;
   color:#334155;
 }
-.lm9-root.theme-midnight .field label,
-.lm9-root.theme-darcula .field label,
-.lm9-root.theme-terminal .field label{
+.slope_intercept_form_game.theme-midnight .field label,
+.slope_intercept_form_game.theme-darcula .field label,
+.slope_intercept_form_game.theme-terminal .field label{
   color:#9aa5b1;
 }
 .input{
@@ -1089,9 +1089,9 @@ window.Quarto = {
   background:#ffffff;
   color:#0f172a;
 }
-.lm9-root.theme-midnight .input,
-.lm9-root.theme-darcula .input,
-.lm9-root.theme-terminal .input{
+.slope_intercept_form_game.theme-midnight .input,
+.slope_intercept_form_game.theme-darcula .input,
+.slope_intercept_form_game.theme-terminal .input{
   background:#020617;
   color:#e5e7eb;
   border-color:#374151;
@@ -1138,9 +1138,9 @@ window.Quarto = {
   font-size:12px;
   color:#64748b;
 }
-.lm9-root.theme-midnight .sp-row label,
-.lm9-root.theme-darcula .sp-row label,
-.lm9-root.theme-terminal .sp-row label{
+.slope_intercept_form_game.theme-midnight .sp-row label,
+.slope_intercept_form_game.theme-darcula .sp-row label,
+.slope_intercept_form_game.theme-terminal .sp-row label{
   color:#93a3b8;
 }
 
@@ -1217,9 +1217,9 @@ window.Quarto = {
   color:#334155;
   font-weight:700;
 }
-.lm9-root.theme-midnight .lm-row .lm-label,
-.lm9-root.theme-darcula .lm-row .lm-label,
-.lm9-root.theme-terminal .lm-row .lm-label{
+.slope_intercept_form_game.theme-midnight .lm-row .lm-label,
+.slope_intercept_form_game.theme-darcula .lm-row .lm-label,
+.slope_intercept_form_game.theme-terminal .lm-row .lm-label{
   color:#9aa5b1;
 }
 .lm-modal-actions{
@@ -1281,7 +1281,7 @@ window.Quarto = {
 </style>
 <script>
 (function(){
-  function initAll(){document.querySelectorAll('.lm9-root').forEach(initWidget);}
+  function initAll(){document.querySelectorAll('.slope_intercept_form_game').forEach(initWidget);}
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded',initAll,{once:true});
   }else{initAll();}
@@ -2035,10 +2035,211 @@ function timeMult() {
 
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../../scripts/popper.min.js"></script>
 <script src="../../../scripts/tippy.min.js"></script>
 <script src="../../../scripts/glossary-tooltips.js"></script>
 <script src="../../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

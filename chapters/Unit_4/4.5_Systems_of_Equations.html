@@ -726,7 +726,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="elimination" data-slug="elimination" data-original-href="#glossary-elimination">elimination</a>, <a href="" class="glossary-link" data-term="intersection" data-slug="intersection" data-original-href="#glossary-intersection">intersection</a>, <a href="" class="glossary-link" data-term="solution" data-slug="solution" data-original-href="#glossary-solution">solution</a>, <a href="" class="glossary-link" data-term="substitution" data-slug="substitution" data-original-href="#glossary-substitution">substitution</a>, <a href="" class="glossary-link" data-term="system of equations" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations">system of equations</a></p>
+<p><a href="" class="glossary-link" data-slug="elimination" data-original-href="#glossary-elimination" data-term="elimination">elimination</a>, <a href="" class="glossary-link" data-slug="intersection" data-original-href="#glossary-intersection" data-term="intersection">intersection</a>, <a href="" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a>, <a href="" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a>, <a href="" class="glossary-link" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations" data-term="system of equations">system of equations</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -740,7 +740,7 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="graphing-systems-of-equations-and-interpreting-their-solutions" class="level3">
 <h3 class="anchored" data-anchor-id="graphing-systems-of-equations-and-interpreting-their-solutions">4.5.1 - Graphing Systems of Equations and Interpreting Their Solutions</h3>
-<p>A <a href="" class="glossary-link" data-term="system of equations" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations">system of equations</a> is two or more equations that share the same variables.</p>
+<p>A <a href="" class="glossary-link" data-slug="system-of-equations" data-original-href="#glossary-system-of-equations" data-term="system of equations">system of equations</a> is two or more equations that share the same variables.</p>
 <p>Each equation describes a rule or relationship, and the solution to the system is a point that satisfies <em>all</em> of those rules at the same time.</p>
 <p>In the following examples, we will see some systems of equations and learn how to interpret their solutions.</p>
 <hr>
@@ -760,7 +760,7 @@ y = -x + 4
 <p><strong>Interpretation:</strong></p>
 <p>The two lines cross at <span class="math inline">\((1, 3)\)</span>. This is the one point where both equations are true. We call this point the <strong>solution to the system</strong>.</p>
 <div class="note" title="Checking the Solution">
-<p>We can check it using <a href="" class="glossary-link" data-term="substitution" data-slug="substitution" data-original-href="#glossary-substitution">substitution</a>.</p>
+<p>We can check it using <a href="" class="glossary-link" data-slug="substitution" data-original-href="#glossary-substitution" data-term="substitution">substitution</a>.</p>
 <p><span class="math display">\[
 \begin{cases}
 \textcolor{blue}{3} = 2(\textcolor{red}{1})+1 = 3 ✔️ \\
@@ -804,7 +804,7 @@ y = 2x + 25
 </div>
 <p>The lines meet at <span class="math inline">\((5, 35)\)</span>.</p>
 <p><strong>Interpretation:</strong></p>
-<p>After <strong>5 classes</strong>, both plans cost <strong>$35</strong>. Before that, Plan A is cheaper; after that, Plan B is cheaper. The <a href="" class="glossary-link" data-term="intersection" data-slug="intersection" data-original-href="#glossary-intersection">intersection</a> shows exactly where the two plans balance.</p>
+<p>After <strong>5 classes</strong>, both plans cost <strong>$35</strong>. Before that, Plan A is cheaper; after that, Plan B is cheaper. The <a href="" class="glossary-link" data-slug="intersection" data-original-href="#glossary-intersection" data-term="intersection">intersection</a> shows exactly where the two plans balance.</p>
 <hr>
 <p><strong>Example 4:</strong> Plumbers and electricians</p>
 <p>A plumber charges a flat fee of $40 plus $60 per hour. An electrician charges $100 plus $50 per hour.</p>
@@ -1219,10 +1219,211 @@ x + 2y - z = 8
 </section>
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../scripts/popper.min.js"></script>
 <script src="../../scripts/tippy.min.js"></script>
 <script src="../../scripts/glossary-tooltips.js"></script>
 <script src="../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

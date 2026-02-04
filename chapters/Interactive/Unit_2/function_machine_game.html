@@ -674,14 +674,14 @@ window.MathJax = {
 
 
 <p>In this game, you will interact with a function machine that takes an input number and produces an output. Your job is to study the input output pairs, look for patterns, and guess the rule the machine is using. There may be more than one rule that seems possible at first, so try different inputs to test your ideas. When you think you know the rule, lock it in and see if the machine agrees.</p>
-<div class="gtfr-root">
+<div class="function_machine_widget">
 
 </div>
 <script>
   (() => {
     const root =
       document.currentScript && document.currentScript.previousElementSibling;
-    if (!root || !root.classList.contains("gtfr-root")) return;
+    if (!root || !root.classList.contains("function_machine_widget")) return;
     if (root.dataset.gtfrInit === "1") return;
     root.dataset.gtfrInit = "1";
 
@@ -740,7 +740,7 @@ window.MathJax = {
       if (document.getElementById("gtfr_style_v2")) return;
       const s = document.createElement("style");
       s.id = "gtfr_style_v2";
-      s.textContent = `.gtfr-root {
+      s.textContent = `.function_machine_widget {
   --bg: #fbfbfb;
   --panel: #ffffff;
   --ink: #1f1f1f;
@@ -757,7 +757,7 @@ window.MathJax = {
   color: var(--ink);
   font-family: var(--sans);
 }
-.gtfr-root[data-theme="flatly"] {
+.function_machine_widget[data-theme="flatly"] {
   --bg: #fbfbfb;
   --panel: #ffffff;
   --ink: #1f1f1f;
@@ -765,7 +765,7 @@ window.MathJax = {
   --line: #d2d2d2;
   --accent: #2c3e50;
 }
-.gtfr-root[data-theme="dark"] {
+.function_machine_widget[data-theme="dark"] {
   --bg: #0f141a;
   --panel: #141b24;
   --ink: #e9eef6;
@@ -775,7 +775,7 @@ window.MathJax = {
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
-.gtfr-root[data-theme="neon"] {
+.function_machine_widget[data-theme="neon"] {
   --bg: #0b0b12;
   --panel: #111227;
   --ink: #f0f4ff;
@@ -791,7 +791,7 @@ window.MathJax = {
   transition: opacity 160ms ease;
 }
 
-.gtfr-root[data-theme="candy"] {
+.function_machine_widget[data-theme="candy"] {
   --bg: #fff7fb;
   --panel: #ffffff;
   --ink: #2a2230;
@@ -976,7 +976,7 @@ window.MathJax = {
 }
 
 /* Only when solved */
-.gtfr-root[data-solved="1"] .gtfr-toast{
+.function_machine_widget[data-solved="1"] .gtfr-toast{
   cursor: pointer;
   user-select: none;
   border-color: color-mix(in srgb, var(--good) 55%, var(--line) 45%);
@@ -987,18 +987,18 @@ window.MathJax = {
 }
 
 /* Hover and press affordance */
-.gtfr-root[data-solved="1"] .gtfr-toast:hover{
+.function_machine_widget[data-solved="1"] .gtfr-toast:hover{
   transform: translateY(-1px);
   box-shadow: 0 14px 22px rgba(0,0,0,0.10);
   filter: brightness(1.02);
 }
 
-.gtfr-root[data-solved="1"] .gtfr-toast:active{
+.function_machine_widget[data-solved="1"] .gtfr-toast:active{
   transform: translateY(0px);
 }
 
 /* A subtle "tap target" cue */
-.gtfr-root[data-solved="1"] .gtfr-toast::after{
+.function_machine_widget[data-solved="1"] .gtfr-toast::after{
   content: "Click to start next round";
   position: absolute;
   right: 12px;
@@ -1024,7 +1024,7 @@ window.MathJax = {
 
 .gtfr-nextBtn:active{ transform:translateY(1px); }
 
-.gtfr-root[data-solved="1"] .gtfr-nextBtn{ display:inline-flex; }
+.function_machine_widget[data-solved="1"] .gtfr-nextBtn{ display:inline-flex; }
 
 .gtfr-history {
   margin-top: 8px;
@@ -1533,8 +1533,8 @@ window.MathJax = {
     inset 0 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-body,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-body {
+.function_machine_widget[data-theme="dark"] .gtfr-machine .gtfr-body,
+.function_machine_widget[data-theme="neon"] .gtfr-machine .gtfr-body {
   background: color-mix(in srgb, var(--panel) 92%, #ffffff 8%);
 }
 .gtfr-machine .gtfr-panel {
@@ -1548,8 +1548,8 @@ window.MathJax = {
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.05);
   z-index: 2;
 }
-.gtfr-root[data-theme="dark"] .gtfr-machine .gtfr-panel,
-.gtfr-root[data-theme="neon"] .gtfr-machine .gtfr-panel {
+.function_machine_widget[data-theme="dark"] .gtfr-machine .gtfr-panel,
+.function_machine_widget[data-theme="neon"] .gtfr-machine .gtfr-panel {
   background: color-mix(in srgb, var(--panel) 86%, #ffffff 14%);
 }
 .gtfr-machine .gtfr-screen {
@@ -1743,7 +1743,7 @@ window.MathJax = {
   display: flex;
   justify-content: center;
 }
-.gtfr-root {
+.function_machine_widget {
   --radius: 12px;
   --shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
 }
@@ -1990,6 +1990,15 @@ window.MathJax = {
 
 .gtfr-machine.gtfr-revealRule .gtfr-ruleShutter{
   animation:gtfrShutterUp 520ms cubic-bezier(0.2,0.9,0.2,1) forwards;
+}
+
+@media (max-height: 650px) {
+.gtfr-topbar {padding: 8px 10px;}
+.gtfr-title {font-size: 16px;}
+.gtfr-history {margin-top: 8px; padding-top: 8px; }
+.gtfr-options {padding: 8px; gap: 8px 10px; }
+.gtfr-opt {padding: 8px 10px; }
+.gtfr-badge { width: 28px; height: 28px; border-radius: 10px;}
 }
 
 `;
@@ -2260,6 +2269,7 @@ window.MathJax = {
     let activeBox = null;
     let activeInput = null;
     let parkedBox = null;
+    let pendingScaleApply = false;
     const state = {
       level: 1,
       solved: 0,
@@ -2364,13 +2374,37 @@ window.MathJax = {
       return Number.isFinite(n) ? n : 0;
     }
     function setScaleToFit() {
+      if (running || activeBox || parkedBox) {
+        pendingScaleApply = true;
+        return; 
+      }
+
       const baseW = cssNum(stage, "--stage-w");
       const baseH = cssNum(stage, "--stage-h");
       const padX = cssNum(stage, "--pad-x");
       const padY = cssNum(stage, "--pad-y");
-      const maxW = Math.max(260, wrap.getBoundingClientRect().width - 24);
-      const availW = Math.max(240, maxW - padX * 2);
-      const scale = Math.min(1.6, availW / baseW);
+      
+      const wrapRect = wrap.getBoundingClientRect();
+      const availW = Math.max(240, wrapRect.width - 24 - padX * 2);
+      const topbar = root.querySelector(".gtfr-topbar");
+      const history = root.querySelector(".gtfr-history");
+      const toastRow = root.querySelector(".gtfr-row");
+      const optionSection = root.querySelector(".gtfr-section");
+
+      const topH = topbar ? topbar.getBoundingClientRect().height : 0;
+      const histH = history ? history.getBoundingClientRect().height : 0;
+      const toastH = toastRow ? toastRow.getBoundingClientRect().height : 0;
+      const optH = optionSection
+        ? optionSection.getBoundingClientRect().height
+        : 0;
+      const safety = 18;
+      const availH = Math.max(220, (window.innerHeight || 700) - (topH + histH + toastH + optH + safety) - padY * 2);
+
+      const scaleW = availW / baseW;
+      const scaleH = availH / baseH;
+      const scale = Math.max(0.55, Math.min(1.6, Math.min(scaleW, scaleH)));
+
+
       stage.style.setProperty("--scale", String(scale));
       stage.style.width = baseW * scale + padX * 2 + "px";
       stage.style.height = baseH * scale + padY * 2 + "px";
@@ -3116,10 +3150,10 @@ window.MathJax = {
       const stopRightPad = cssNum(stage, "--stop-right-pad") || 0;
       const maxX = rightEdge - boxW - stopRightPad;
 
-      const sceneRect = scene.getBoundingClientRect();
-      const mRect = machine.getBoundingClientRect();
-      const slotLeft = (mRect.left - sceneRect.left) / scale + 18;
-      const slotRight = (mRect.right - sceneRect.left) / scale - 18;
+      const machineW = cssNum(stage, "--machine-w");
+      const machineLeft = stageW / 2 - machineW / 2;
+      const slotLeft = machineLeft + 18;
+      const slotRight = machineLeft + machineW - 18;
       const slotMid = (slotLeft + slotRight) / 2;
 
       const gapFromMachine = slotLeft - START_X;
@@ -3223,6 +3257,10 @@ window.MathJax = {
 
         parkCurrentBox(finalY);
         createActiveBox("");
+        if (pendingScaleApply) {
+          pendingScaleApply = false;
+          setScaleToFit();
+        }
         setToast("Click a rule when you are ready.", "");
       }
 
@@ -3283,6 +3321,12 @@ window.MathJax = {
         "Type an input, press Enter, then click the rule you think is correct.",
         "",
       );
+
+      if (pendingScaleApply) {
+        pendingScaleApply = false;
+        setScaleToFit();
+      }
+      
       createActiveBox("");
     }
 
@@ -3314,10 +3358,211 @@ window.MathJax = {
 
 
 </main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
 <script src="../../../scripts/popper.min.js"></script>
 <script src="../../../scripts/tippy.min.js"></script>
 <script src="../../../scripts/glossary-tooltips.js"></script>
 <script src="../../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
