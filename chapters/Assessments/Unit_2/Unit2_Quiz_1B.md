@@ -13,14 +13,13 @@ $$
 $$
 
 **Terms:**
-<br>
+\vspace{1cm}
 
 **Coefficients:**
-<br>
+\vspace{1cm}
 
 **Constants:**
-<br>
-<br>
+\vspace{1cm}
 
 **2. I can describe what a variable, constant, coefficient, and term are**
 
@@ -33,15 +32,8 @@ b. The coefficients are 8, -3, and -18 ______
 c. The constant is -18 ______
 
 d. Both x and y are variables in the expression ______
-<br>
-<br>
+\vspace{3cm}
 
-**3. I can write a simple expression to model a real-world situation**
-
-Your boss says she will pay you \$25 to show up to work plus \$15 for every hour you work. Write an expression that represents your total pay. Let $h$ be the number of hours you work.
-<br>
-<br>
-<br>
 
 ***
 
@@ -52,46 +44,29 @@ Your boss says she will pay you \$25 to show up to work plus \$15 for every hour
 Evaluate the following expressions.
 
 a. $2x - 8$ when $x = -10$
-<br>
-<br>
-<br>
+\vspace{2cm}
 
 b. $-a^3 + 2b - 3ab$ when $a = 4$ and $b=-2$
-<br>
-<br>
-<br>
+\vspace{2cm}
 
-**5. I can use the correct order of operations with variables and parentheses**
+**4. I can use the correct order of operations with variables and parentheses**
 
 Evaluate the following expressions.
 
 a. $3(2x - 1)^2 - x$ when $x = 3$
-<br>
-<br>
-<br>
+\vspace{3cm}
 
 b. $2|3y - x| + 6y$ when $x = 8$ and $y = -10$
-<br>
-<br>
-<br>
+\vspace{3cm}
 
 c. $\frac{1}{x}(3x - 2)^2 + x$ when $x = 2$
-<br>
-<br>
-
-
-**6. I can use substitution to test whether two expressions are equivalent**
-
-Test whether $9x - 3$ is equivalent to $3(x - 1) + 6x$. Try **2 different values** for $x$.
-<br>
-<br>
-<br>
+\vspace{3cm}
 
 ***
 
 ## 2.3 – Combining Like Terms
 
-**7. I can identify like terms in an expression**
+**5. I can identify like terms in an expression**
 
 For each of the following, indicate whether the terms are like terms (**true** or **false**).
 
@@ -102,32 +77,13 @@ b. $-x^3$ and $2x^3$ _____
 c. $-5xy$ and $3yx$ _____
 
 d. $5x^2y^2$ and $-9x^2y^2$ _____
-<br>
+\vspace{3cm}
 
-**8. I can combine like terms to simplify an expression**
+**6. I can combine like terms to simplify an expression**
 
 Simplify the following expressions by combining like terms.
 
 a. $22 - 8x^2 + 3x -11x + 21$
-<br>
-<br>
+\vspace{3cm}
 
 b. $2a + b - 3a + 5b^2 - 2 + 9b^2 - 1$
-<br>
-<br>
-
-**9. I can check my work by substitution or by reasoning about equivalence**
-
-Simplify the following expression
-
-$$
--x - 5y^2 + 3x - 2 - 6y
-$$
-<br>
-<br>
-<br>
-
-Test whether your answer is equivalent to the original expression.
-<br>
-<br>
-<br>
