@@ -1314,6 +1314,15 @@
   animation:gtfrShutterUp 520ms cubic-bezier(0.2,0.9,0.2,1) forwards;
 }
 
+@media (max-height: 650px) {
+.gtfr-topbar {padding: 8px 10px;}
+.gtfr-title {font-size: 16px;}
+.gtfr-history {margin-top: 8px; padding-top: 8px; }
+.gtfr-options {padding: 8px; gap: 8px 10px; }
+.gtfr-opt {padding: 8px 10px; }
+.gtfr-badge { width: 28px; height: 28px; border-radius: 10px;}
+}
+
 `;
       document.head.appendChild(s);
     }
@@ -1582,6 +1591,7 @@
     let activeBox = null;
     let activeInput = null;
     let parkedBox = null;
+    let pendingScaleApply = false;
     const state = {
       level: 1,
       solved: 0,
@@ -1686,13 +1696,37 @@
       return Number.isFinite(n) ? n : 0;
     }
     function setScaleToFit() {
+      if (running || activeBox || parkedBox) {
+        pendingScaleApply = true;
+        return; 
+      }
+
       const baseW = cssNum(stage, "--stage-w");
       const baseH = cssNum(stage, "--stage-h");
       const padX = cssNum(stage, "--pad-x");
       const padY = cssNum(stage, "--pad-y");
-      const maxW = Math.max(260, wrap.getBoundingClientRect().width - 24);
-      const availW = Math.max(240, maxW - padX * 2);
-      const scale = Math.min(1.6, availW / baseW);
+      
+      const wrapRect = wrap.getBoundingClientRect();
+      const availW = Math.max(240, wrapRect.width - 24 - padX * 2);
+      const topbar = root.querySelector(".gtfr-topbar");
+      const history = root.querySelector(".gtfr-history");
+      const toastRow = root.querySelector(".gtfr-row");
+      const optionSection = root.querySelector(".gtfr-section");
+
+      const topH = topbar ? topbar.getBoundingClientRect().height : 0;
+      const histH = history ? history.getBoundingClientRect().height : 0;
+      const toastH = toastRow ? toastRow.getBoundingClientRect().height : 0;
+      const optH = optionSection
+        ? optionSection.getBoundingClientRect().height
+        : 0;
+      const safety = 18;
+      const availH = Math.max(220, (window.innerHeight || 700) - (topH + histH + toastH + optH + safety) - padY * 2);
+
+      const scaleW = availW / baseW;
+      const scaleH = availH / baseH;
+      const scale = Math.max(0.55, Math.min(1.6, Math.min(scaleW, scaleH)));
+
+
       stage.style.setProperty("--scale", String(scale));
       stage.style.width = baseW * scale + padX * 2 + "px";
       stage.style.height = baseH * scale + padY * 2 + "px";
@@ -2438,10 +2472,10 @@
       const stopRightPad = cssNum(stage, "--stop-right-pad") || 0;
       const maxX = rightEdge - boxW - stopRightPad;
 
-      const sceneRect = scene.getBoundingClientRect();
-      const mRect = machine.getBoundingClientRect();
-      const slotLeft = (mRect.left - sceneRect.left) / scale + 18;
-      const slotRight = (mRect.right - sceneRect.left) / scale - 18;
+      const machineW = cssNum(stage, "--machine-w");
+      const machineLeft = stageW / 2 - machineW / 2;
+      const slotLeft = machineLeft + 18;
+      const slotRight = machineLeft + machineW - 18;
       const slotMid = (slotLeft + slotRight) / 2;
 
       const gapFromMachine = slotLeft - START_X;
@@ -2545,6 +2579,10 @@
 
         parkCurrentBox(finalY);
         createActiveBox("");
+        if (pendingScaleApply) {
+          pendingScaleApply = false;
+          setScaleToFit();
+        }
         setToast("Click a rule when you are ready.", "");
       }
 
@@ -2605,6 +2643,12 @@
         "Type an input, press Enter, then click the rule you think is correct.",
         "",
       );
+
+      if (pendingScaleApply) {
+        pendingScaleApply = false;
+        setScaleToFit();
+      }
+      
       createActiveBox("");
     }
 
