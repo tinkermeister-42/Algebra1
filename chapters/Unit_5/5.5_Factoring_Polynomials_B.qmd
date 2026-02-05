@@ -418,9 +418,13 @@ $$
 
 :::{.note title="Proving the Area Model"}
 
-Does our approach to factoring always work?  Let's prove it!
+Let’s prove it.
 
-Compute the product $(px + m)(qx + n)$.
+Start by multiplying two general binomials:
+
+(px + m)(qx + n)
+
+Using an area model:
 
 :::{.areabox}
 |      |  $px$  |  $m$   |
@@ -429,15 +433,52 @@ Compute the product $(px + m)(qx + n)$.
 |  $n$ | $pnx$   |  $nm$  |
 :::
 
-So,
+Adding the four pieces gives:
 
 $$
-(px + m)(qx + n) = pqx^2 + pnx + qmx + nm = pqx^2 + (pn + qm)x + nm
+\begin{aligned}
+(px + m)(qx + n)
+&= pqx^2 + pnx + qmx + nm \\
+&= pqx^2 + (pn + qm)x + nm
+\end{aligned}
 $$
 
-The coefficients for this polynomial in standard form are $a = pq$, $b = pn + qm$, and $c = nm$. 
+So the quadratic in standard form is:
 
-Factoring that requires that we find numbers $pq \cdot nm$ that add up to $pn + qm$. But this is true no matter what values we pick for $p$, $q$, $m$, and $n$. And so we have proven our method.
+$$
+ax^2 + bx + c
+$$
+
+with
+
+$$
+a = pq, \quad b = pn + qm, \quad c = nm.
+$$
+
+Now notice something important.
+
+When we use our factoring method, we look for two numbers that multiply to $ac$ and add up to $b$.
+
+Here,
+
+$$
+ac = (pq)(nm) = pqnm.
+$$
+
+The numbers
+
+$$
+pn \quad \text{and} \quad qm
+$$
+
+multiply to $pqnm$ **and** add to $pn + qm = b$.
+
+That means the two numbers we need always exist as long as the quadratic really came from multiplying two binomials.
+
+Because this works for *any* values of $p$, $q$, $m$, and $n$, our factoring method will always recover the original factors when a quadratic is factorable.
+
+And that’s why the method works.
+
 :::
 
 ### 5.5.2 - Special Patterns
