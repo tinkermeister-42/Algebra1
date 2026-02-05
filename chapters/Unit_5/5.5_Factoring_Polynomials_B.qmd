@@ -418,9 +418,7 @@ $$
 
 :::{.note title="Proving the Area Model"}
 
-Does our approach to factoring always work? 
-
-Let's prove it using 
+Does our approach to factoring always work?  Let's prove it!
 
 Compute the product $(px + m)(qx + n)$.
 
