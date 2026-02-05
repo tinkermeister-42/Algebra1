@@ -730,7 +730,7 @@ What would go in the first box then, and what would the first terms in the facto
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="difference-of-squares" data-term="difference of squares" data-original-href="#glossary-difference-of-squares">difference of squares</a>, <a href="" class="glossary-link" data-slug="factorable" data-term="factorable" data-original-href="#glossary-factorable">factorable</a>, <a href="" class="glossary-link" data-slug="over-the-integers" data-term="over the integers" data-original-href="#glossary-over-the-integers">over the integers</a>, <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-term="perfect-square trinomial" data-original-href="#glossary-perfect-square-trinomial">perfect-square trinomial</a>, <a href="" class="glossary-link" data-slug="trinomial" data-term="trinomial" data-original-href="#glossary-trinomial">trinomial</a></p>
+<p><a href="" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a>, <a href="" class="glossary-link" data-slug="factorable" data-original-href="#glossary-factorable" data-term="factorable">factorable</a>, <a href="" class="glossary-link" data-slug="over-the-integers" data-original-href="#glossary-over-the-integers" data-term="over the integers">over the integers</a>, <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect-square trinomial">perfect-square trinomial</a>, <a href="" class="glossary-link" data-slug="trinomial" data-original-href="#glossary-trinomial" data-term="trinomial">trinomial</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -1394,8 +1394,10 @@ GCF(4k, 4) &amp;= 4
 </div>
 <hr>
 <div class="note" title="Proving the Area Model">
-<p>Does our approach to factoring always work? Let’s prove it!</p>
-<p>Compute the product <span class="math inline">\((px + m)(qx + n)\)</span>.</p>
+<p>Let’s prove it.</p>
+<p>Start by multiplying two general binomials:</p>
+<p>(px + m)(qx + n)</p>
+<p>Using an area model:</p>
 <div class="areabox">
 <table class="caption-top table">
 <thead>
@@ -1419,12 +1421,36 @@ GCF(4k, 4) &amp;= 4
 </tbody>
 </table>
 </div>
-<p>So,</p>
+<p>Adding the four pieces gives:</p>
 <p><span class="math display">\[
-(px + m)(qx + n) = pqx^2 + pnx + qmx + nm = pqx^2 + (pn + qm)x + nm
+\begin{aligned}
+(px + m)(qx + n)
+&amp;= pqx^2 + pnx + qmx + nm \\
+&amp;= pqx^2 + (pn + qm)x + nm
+\end{aligned}
 \]</span></p>
-<p>The coefficients for this polynomial in standard form are <span class="math inline">\(a = pq\)</span>, <span class="math inline">\(b = pn + qm\)</span>, and <span class="math inline">\(c = nm\)</span>.</p>
-<p>Factoring that requires that we find numbers <span class="math inline">\(pq \cdot nm\)</span> that add up to <span class="math inline">\(pn + qm\)</span>. But this is true no matter what values we pick for <span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>, <span class="math inline">\(m\)</span>, and <span class="math inline">\(n\)</span>. And so we have proven our method.</p>
+<p>So the quadratic in standard form is:</p>
+<p><span class="math display">\[
+ax^2 + bx + c
+\]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+a = pq, \quad b = pn + qm, \quad c = nm.
+\]</span></p>
+<p>Now notice something important.</p>
+<p>When we use our factoring method, we look for two numbers that multiply to <span class="math inline">\(ac\)</span> and add up to <span class="math inline">\(b\)</span>.</p>
+<p>Here,</p>
+<p><span class="math display">\[
+ac = (pq)(nm) = pqnm.
+\]</span></p>
+<p>The numbers</p>
+<p><span class="math display">\[
+pn \quad \text{and} \quad qm
+\]</span></p>
+<p>multiply to <span class="math inline">\(pqnm\)</span> <strong>and</strong> add to <span class="math inline">\(pn + qm = b\)</span>.</p>
+<p>That means the two numbers we need always exist as long as the quadratic really came from multiplying two binomials.</p>
+<p>Because this works for <em>any</em> values of <span class="math inline">\(p\)</span>, <span class="math inline">\(q\)</span>, <span class="math inline">\(m\)</span>, and <span class="math inline">\(n\)</span>, our factoring method will always recover the original factors when a quadratic is factorable.</p>
+<p>And that’s why the method works.</p>
 </div>
 </section>
 <section id="special-patterns" class="level3">
@@ -1434,7 +1460,7 @@ GCF(4k, 4) &amp;= 4
 <li>Difference of squares</li>
 <li>Perfect square trinomials</li>
 </ul>
-<p>A <a href="" class="glossary-link" data-slug="difference-of-squares" data-term="difference of squares" data-original-href="#glossary-difference-of-squares">difference of squares</a> has the form:</p>
+<p>A <a href="" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a> has the form:</p>
 <p><span class="math display">\[
 (px)^2 - q^2
 \]</span></p>
@@ -1462,7 +1488,7 @@ GCF(4k, 4) &amp;= 4
 \]</span></p>
 </div>
 <hr>
-<p>Another special pattern is a <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-term="perfect square trinomial" data-original-href="#glossary-perfect-square-trinomial">perfect square trinomial</a>. These always have the form:</p>
+<p>Another special pattern is a <a href="" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect square trinomial">perfect square trinomial</a>. These always have the form:</p>
 <p><span class="math display">\[
 (px)^2 + 2pqx + q^2
 \]</span></p>
