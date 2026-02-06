@@ -652,7 +652,7 @@ Factor completely. If the polynomial cannot be factored, write **prime**.
 
 8. $16r^2 + 24r + 9$  
 
-9. $20k^2 + 17k - 21$  
+9. $20k^2 + 16k - 21$  
 
 10. $15g^2 - 14g + 3$
 
@@ -716,7 +716,7 @@ Factor completely. If the polynomial cannot be factored, write **prime**.
 6. $(2p-1)(9p+5)$  
 7. $prime$  
 8. $(4r + 3)^2$  
-9. $(5k-3)(4k+7)$  
+9. $(10k-7)(2k+3)$  
 10. $(3g - 1)(5g - 3)$  
 11. $(2s - 7)(2s + 7)$  
 12. $(9x - 4)(9x + 4)$  
