@@ -9,25 +9,32 @@
 
     function renderMathInto(el, tex, display = false) {
       tex = String(tex ?? "");
-      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
 
+      // Preferred path: use the global helper from inject-custom.html
+      if (typeof window.setMath === "function") {
+        window.setMath(el, tex, display);
+        return Promise.resolve();
+      }
+
+      // Fallback if the page somehow doesn't have setMath
+      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
+      if (typeof window.qwTypesetMath === "function") {
+        window.qwTypesetMath(el);
+        return Promise.resolve();
+      }
+
+      // Last resort fallback: direct MathJax call
       const MJ = window.MathJax;
       if (!MJ) return Promise.resolve();
 
       const doTypeset = () => {
-        if (typeof MJ.typesetPromise === "function")
-          return MJ.typesetPromise([el]);
-        if (typeof MJ.typeset === "function") {
-          MJ.typeset([el]);
-          return Promise.resolve();
-        }
+        if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise([el]);
+        if (typeof MJ.typeset === "function") { MJ.typeset([el]); }
         return Promise.resolve();
       };
 
-      if (MJ.startup && MJ.startup.promise) {
-        return MJ.startup.promise.then(doTypeset).catch(() => {});
-      }
-      return doTypeset().catch(() => {});
+      if (MJ.startup?.promise) return MJ.startup.promise.then(doTypeset).catch(() => { });
+      return Promise.resolve(doTypeset()).catch(() => { });
     }
 
     function fitExpr(el) {
@@ -1335,7 +1342,7 @@
       root.dataset.theme = safeTheme(t);
       try {
         localStorage.setItem(STORAGE_KEY, root.dataset.theme);
-      } catch (e) {}
+      } catch (e) { }
       const cards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
       cards.forEach((c) =>
         c.classList.toggle("selected", c.dataset.theme === root.dataset.theme),
@@ -1344,7 +1351,7 @@
     let initialTheme = "flatly";
     try {
       initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly");
-    } catch (e) {}
+    } catch (e) { }
     function safeDiff(v) {
       const ok = new Set(["0", "1", "2", "3", "auto"]);
       return ok.has(String(v)) ? String(v) : "auto";
@@ -1360,7 +1367,7 @@
       const d = safeDiff(v);
       try {
         localStorage.setItem(DIFF_KEY, d);
-      } catch (e) {}
+      } catch (e) { }
       root.dataset.diff = d;
       const pills = Array.from(root.querySelectorAll(".gtfr-diffPill"));
       pills.forEach((p) =>
@@ -1698,14 +1705,14 @@
     function setScaleToFit() {
       if (running || activeBox || parkedBox) {
         pendingScaleApply = true;
-        return; 
+        return;
       }
 
       const baseW = cssNum(stage, "--stage-w");
       const baseH = cssNum(stage, "--stage-h");
       const padX = cssNum(stage, "--pad-x");
       const padY = cssNum(stage, "--pad-y");
-      
+
       const wrapRect = wrap.getBoundingClientRect();
       const availW = Math.max(240, wrapRect.width - 24 - padX * 2);
       const topbar = root.querySelector(".gtfr-topbar");
@@ -2648,7 +2655,7 @@
         pendingScaleApply = false;
         setScaleToFit();
       }
-      
+
       createActiveBox("");
     }
 
