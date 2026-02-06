@@ -72,39 +72,27 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-window.MathJax = window.MathJax || {};
-window.MathJax.tex = window.MathJax.tex || {
-  inlineMath: [["\\(", "\\)"]],
-  displayMath: [["\\[", "\\]"]]
-};
-window.MathJax.chtml = window.MathJax.chtml || {
-  fontCache: "global"
-};
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
+      macros: {
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
+        steptag:  ['\\stepnote{#1}', 1],
+        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
+        snplus:   ['\\snboth{+\\,#1}', 1],
+        snminus:  ['\\snboth{-\\,#1}', 1],
+        sntimes:  ['\\snboth{\\times\\,#1}', 1],
+        sndiv:    ['\\snboth{\\div\\,#1}', 1]
+      }
+    },
+    chtml: { fontCache: 'global' }
+  };
 </script>
+
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
-<script>
-window.MathJax = {
-  tex: {
-    packages: {'[+]': ['base', 'ams', 'color']},
-    macros: {
-      // right-side "step note" that does NOT use \tag
-      // \hbox{} creates a zero-width box so the note does not affect alignment
-      // \hskip inserts spacing to the right
-      stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-
-      // helpers
-      snboth:   ['\\stepnote{$#1$\\ \\text{both sides}}', 1],
-      snplus:   ['\\snboth{+\\,#1}', 1],
-      snminus:  ['\\snboth{-\\,#1}', 1],
-      sntimes:  ['\\snboth{\\times\\,#1}', 1],
-      sndiv:    ['\\snboth{\\div\\,#1}', 1]
-    }
-  }
-};
-</script>
 
 
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
@@ -689,25 +677,32 @@ window.MathJax = {
 
     function renderMathInto(el, tex, display = false) {
       tex = String(tex ?? "");
-      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
 
+      // Preferred path: use the global helper from inject-custom.html
+      if (typeof window.setMath === "function") {
+        window.setMath(el, tex, display);
+        return Promise.resolve();
+      }
+
+      // Fallback if the page somehow doesn't have setMath
+      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
+      if (typeof window.qwTypesetMath === "function") {
+        window.qwTypesetMath(el);
+        return Promise.resolve();
+      }
+
+      // Last resort fallback: direct MathJax call
       const MJ = window.MathJax;
       if (!MJ) return Promise.resolve();
 
       const doTypeset = () => {
-        if (typeof MJ.typesetPromise === "function")
-          return MJ.typesetPromise([el]);
-        if (typeof MJ.typeset === "function") {
-          MJ.typeset([el]);
-          return Promise.resolve();
-        }
+        if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise([el]);
+        if (typeof MJ.typeset === "function") { MJ.typeset([el]); }
         return Promise.resolve();
       };
 
-      if (MJ.startup && MJ.startup.promise) {
-        return MJ.startup.promise.then(doTypeset).catch(() => {});
-      }
-      return doTypeset().catch(() => {});
+      if (MJ.startup?.promise) return MJ.startup.promise.then(doTypeset).catch(() => { });
+      return Promise.resolve(doTypeset()).catch(() => { });
     }
 
     function fitExpr(el) {
@@ -2015,7 +2010,7 @@ window.MathJax = {
       root.dataset.theme = safeTheme(t);
       try {
         localStorage.setItem(STORAGE_KEY, root.dataset.theme);
-      } catch (e) {}
+      } catch (e) { }
       const cards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
       cards.forEach((c) =>
         c.classList.toggle("selected", c.dataset.theme === root.dataset.theme),
@@ -2024,7 +2019,7 @@ window.MathJax = {
     let initialTheme = "flatly";
     try {
       initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly");
-    } catch (e) {}
+    } catch (e) { }
     function safeDiff(v) {
       const ok = new Set(["0", "1", "2", "3", "auto"]);
       return ok.has(String(v)) ? String(v) : "auto";
@@ -2040,7 +2035,7 @@ window.MathJax = {
       const d = safeDiff(v);
       try {
         localStorage.setItem(DIFF_KEY, d);
-      } catch (e) {}
+      } catch (e) { }
       root.dataset.diff = d;
       const pills = Array.from(root.querySelectorAll(".gtfr-diffPill"));
       pills.forEach((p) =>
@@ -2378,14 +2373,14 @@ window.MathJax = {
     function setScaleToFit() {
       if (running || activeBox || parkedBox) {
         pendingScaleApply = true;
-        return; 
+        return;
       }
 
       const baseW = cssNum(stage, "--stage-w");
       const baseH = cssNum(stage, "--stage-h");
       const padX = cssNum(stage, "--pad-x");
       const padY = cssNum(stage, "--pad-y");
-      
+
       const wrapRect = wrap.getBoundingClientRect();
       const availW = Math.max(240, wrapRect.width - 24 - padX * 2);
       const topbar = root.querySelector(".gtfr-topbar");
@@ -3328,7 +3323,7 @@ window.MathJax = {
         pendingScaleApply = false;
         setScaleToFit();
       }
-      
+
       createActiveBox("");
     }
 
@@ -3477,12 +3472,11 @@ window.MathJax = {
     init();
   }
 })();
-
 </script>
 
 <script>
 (function () {
-  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const UP_THRESHOLD = 200;     // scroll up this many px before navbar may appear
   const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
 
   function getHeader() {
@@ -3563,6 +3557,69 @@ window.MathJax = {
   } else {
     init();
   }
+})();
+</script>
+
+<!-- MathJax helpers for widgets (surgical typesetting only) -->
+<script>
+(function () {
+  // Typeset only the node(s) you pass in. Does nothing if MathJax is not present.
+  function qwTypesetMath(target) {
+    const MJ = window.MathJax;
+    if (!MJ) return Promise.resolve();
+
+    const els = Array.isArray(target) ? target : [target];
+    const doTypeset = () => {
+      if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise(els);
+      if (typeof MJ.typeset === "function") { MJ.typeset(els); }
+      return Promise.resolve();
+    };
+
+    if (MJ.startup && MJ.startup.promise) {
+      return MJ.startup.promise.then(doTypeset).catch(() => {});
+    }
+    return Promise.resolve(doTypeset()).catch(() => {});
+  }
+
+  // Expose low level helper
+  window.qwTypesetMath = qwTypesetMath;
+
+  // Debounce per element for widgets that update quickly
+  const pending = new Map(); // Element -> timer
+
+  function scheduleTypeset(el) {
+    if (!el || !(el instanceof Element)) return;
+    if (pending.has(el)) clearTimeout(pending.get(el));
+    pending.set(el, setTimeout(() => {
+      pending.delete(el);
+      qwTypesetMath(el);
+    }, 50));
+  }
+
+  // High level helper widgets call
+  window.setMath = function (el, tex, display) {
+    if (!el) return;
+    const t = String(tex ?? "");
+
+    // Use \( \) and \[ \] so widgets never introduce literal $ into their DOM
+    el.innerHTML = display ? `\\[${t}\\]` : `\\(${t}\\)`;
+
+    // Typeset only this element
+    scheduleTypeset(el);
+  };
+
+  // Optional batch helper
+  window.setMathAll = function (pairs) {
+    if (!Array.isArray(pairs)) return;
+    const els = [];
+    for (const p of pairs) {
+      if (!p || !p.el) continue;
+      const t = String(p.tex ?? "");
+      p.el.innerHTML = p.display ? `\\[${t}\\]` : `\\(${t}\\)`;
+      els.push(p.el);
+    }
+    if (els.length) qwTypesetMath(els);
+  };
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

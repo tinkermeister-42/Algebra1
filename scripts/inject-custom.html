@@ -115,12 +115,11 @@
     init();
   }
 })();
-
 </script>
 
 <script>
 (function () {
-  const UP_THRESHOLD = 200;      // scroll up this many px before navbar may appear
+  const UP_THRESHOLD = 200;     // scroll up this many px before navbar may appear
   const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
 
   function getHeader() {
@@ -201,5 +200,68 @@
   } else {
     init();
   }
+})();
+</script>
+
+<!-- MathJax helpers for widgets (surgical typesetting only) -->
+<script>
+(function () {
+  // Typeset only the node(s) you pass in. Does nothing if MathJax is not present.
+  function qwTypesetMath(target) {
+    const MJ = window.MathJax;
+    if (!MJ) return Promise.resolve();
+
+    const els = Array.isArray(target) ? target : [target];
+    const doTypeset = () => {
+      if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise(els);
+      if (typeof MJ.typeset === "function") { MJ.typeset(els); }
+      return Promise.resolve();
+    };
+
+    if (MJ.startup && MJ.startup.promise) {
+      return MJ.startup.promise.then(doTypeset).catch(() => {});
+    }
+    return Promise.resolve(doTypeset()).catch(() => {});
+  }
+
+  // Expose low level helper
+  window.qwTypesetMath = qwTypesetMath;
+
+  // Debounce per element for widgets that update quickly
+  const pending = new Map(); // Element -> timer
+
+  function scheduleTypeset(el) {
+    if (!el || !(el instanceof Element)) return;
+    if (pending.has(el)) clearTimeout(pending.get(el));
+    pending.set(el, setTimeout(() => {
+      pending.delete(el);
+      qwTypesetMath(el);
+    }, 50));
+  }
+
+  // High level helper widgets call
+  window.setMath = function (el, tex, display) {
+    if (!el) return;
+    const t = String(tex ?? "");
+
+    // Use \( \) and \[ \] so widgets never introduce literal $ into their DOM
+    el.innerHTML = display ? `\\[${t}\\]` : `\\(${t}\\)`;
+
+    // Typeset only this element
+    scheduleTypeset(el);
+  };
+
+  // Optional batch helper
+  window.setMathAll = function (pairs) {
+    if (!Array.isArray(pairs)) return;
+    const els = [];
+    for (const p of pairs) {
+      if (!p || !p.el) continue;
+      const t = String(p.tex ?? "");
+      p.el.innerHTML = p.display ? `\\[${t}\\]` : `\\(${t}\\)`;
+      els.push(p.el);
+    }
+    if (els.length) qwTypesetMath(els);
+  };
 })();
 </script>
