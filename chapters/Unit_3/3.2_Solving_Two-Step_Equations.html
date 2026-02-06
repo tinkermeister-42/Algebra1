@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -712,7 +711,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="equation" data-original-href="#glossary-equation" data-slug="equation">equation</a>, <a href="" class="glossary-link" data-term="inverse operations" data-original-href="#glossary-inverse-operations" data-slug="inverse-operations">inverse operations</a>, <a href="" class="glossary-link" data-term="solution" data-original-href="#glossary-solution" data-slug="solution">solution</a>, <a href="" class="glossary-link" data-term="variable" data-original-href="#glossary-variable" data-slug="variable">variable</a></p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-equation" data-term="equation" data-slug="equation">equation</a>, <a href="" class="glossary-link" data-original-href="#glossary-inverse-operations" data-term="inverse operations" data-slug="inverse-operations">inverse operations</a>, <a href="" class="glossary-link" data-original-href="#glossary-solution" data-term="solution" data-slug="solution">solution</a>, <a href="" class="glossary-link" data-original-href="#glossary-variable" data-term="variable" data-slug="variable">variable</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -743,7 +742,7 @@ window.Quarto = {
 <p><span class="math display">\[
 2a + 1 = 7
 \]</span></p>
-<p>Following the order of operations (<a href="" class="glossary-link" data-term="PEMDAS" data-original-href="#glossary-pemdas" data-slug="pemdas">PEMDAS</a>) in reverse, we start by undoing the addition.</p>
+<p>Following the order of operations (<a href="" class="glossary-link" data-original-href="#glossary-pemdas" data-term="PEMDAS" data-slug="pemdas">PEMDAS</a>) in reverse, we start by undoing the addition.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../..\images/Unit_3/Lesson_2/balance_2x_plus_1_equal_7_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>

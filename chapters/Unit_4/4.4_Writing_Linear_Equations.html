@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -721,7 +720,7 @@ y = mx + b
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-slug="equation-of-a-line" data-original-href="#glossary-equation-of-a-line" data-term="equation of a line">equation of a line</a>, <a href="" class="glossary-link" data-slug="parallel" data-original-href="#glossary-parallel" data-term="parallel">parallel</a>, <a href="" class="glossary-link" data-slug="perpendicular" data-original-href="#glossary-perpendicular" data-term="perpendicular">perpendicular</a>, <a href="" class="glossary-link" data-slug="point-slope-form" data-original-href="#glossary-point-slope-form" data-term="point-slope form">point-slope form</a>, <a href="" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="" class="glossary-link" data-slug="slope-intercept-form" data-original-href="#glossary-slope-intercept-form" data-term="slope-intercept form">slope-intercept form</a></p>
+<p><a href="" class="glossary-link" data-term="equation of a line" data-original-href="#glossary-equation-of-a-line" data-slug="equation-of-a-line">equation of a line</a>, <a href="" class="glossary-link" data-term="parallel" data-original-href="#glossary-parallel" data-slug="parallel">parallel</a>, <a href="" class="glossary-link" data-term="perpendicular" data-original-href="#glossary-perpendicular" data-slug="perpendicular">perpendicular</a>, <a href="" class="glossary-link" data-term="point-slope form" data-original-href="#glossary-point-slope-form" data-slug="point-slope-form">point-slope form</a>, <a href="" class="glossary-link" data-term="slope" data-original-href="#glossary-slope" data-slug="slope">slope</a>, <a href="" class="glossary-link" data-term="slope-intercept form" data-original-href="#glossary-slope-intercept-form" data-slug="slope-intercept-form">slope-intercept form</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>

@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -681,7 +680,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="factor-chart" class="level3">
 <h3 class="anchored" data-anchor-id="factor-chart">Factor Chart</h3>
-<p>Need help finding all the factor pairs of a number? This chart lists every <a href="" class="glossary-link" data-term="composite" data-slug="composite" data-original-href="#glossary-composite">composite</a> from 1 to 100 and lists all <a href="" class="glossary-link" data-term="prime" data-slug="prime" data-original-href="#glossary-prime">prime</a> up to 97. For each number, you’ll see a list of its factor pairs.</p>
+<p>Need help finding all the factor pairs of a number? This chart lists every <a href="" class="glossary-link" data-slug="composite" data-term="composite" data-original-href="#glossary-composite">composite</a> from 1 to 100 and lists all <a href="" class="glossary-link" data-slug="prime" data-term="prime" data-original-href="#glossary-prime">prime</a> up to 97. For each number, you’ll see a list of its factor pairs.</p>
 <p><a href=".\resources/FactorChart.pdf">Download Chart</a></p>
 <hr>
 </section>

@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -717,7 +716,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="intercept" data-slug="intercept" data-original-href="#glossary-intercept">intercept</a>, <a href="" class="glossary-link" data-term="slope" data-slug="slope" data-original-href="#glossary-slope">slope</a>, <a href="" class="glossary-link" data-term="slope-intercept form" data-slug="slope-intercept-form" data-original-href="#glossary-slope-intercept-form">slope-intercept form</a>, <a href="" class="glossary-link" data-term="x-intercept" data-slug="x-intercept" data-original-href="#glossary-x-intercept">x-intercept</a>, <a href="" class="glossary-link" data-term="y-intercept" data-slug="y-intercept" data-original-href="#glossary-y-intercept">y-intercept</a></p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-intercept" data-slug="intercept" data-term="intercept">intercept</a>, <a href="" class="glossary-link" data-original-href="#glossary-slope" data-slug="slope" data-term="slope">slope</a>, <a href="" class="glossary-link" data-original-href="#glossary-slope-intercept-form" data-slug="slope-intercept-form" data-term="slope-intercept form">slope-intercept form</a>, <a href="" class="glossary-link" data-original-href="#glossary-x-intercept" data-slug="x-intercept" data-term="x-intercept">x-intercept</a>, <a href="" class="glossary-link" data-original-href="#glossary-y-intercept" data-slug="y-intercept" data-term="y-intercept">y-intercept</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -846,7 +845,7 @@ y = mx + b
 <li><span class="math inline">\(m\)</span> is the <strong>slope</strong>, and</li>
 <li><span class="math inline">\(b\)</span> is the <strong>y-intercept</strong>: the point where the line crosses the y-axis.</li>
 </ul>
-<p>This is called the <a href="" class="glossary-link" data-term="slope-intercept form" data-slug="slope-intercept-form" data-original-href="#glossary-slope-intercept-form">slope-intercept form</a> of a line.</p>
+<p>This is called the <a href="" class="glossary-link" data-original-href="#glossary-slope-intercept-form" data-slug="slope-intercept-form" data-term="slope-intercept form">slope-intercept form</a> of a line.</p>
 <hr>
 <p><strong>Example 4:</strong> Graph from an equation</p>
 <p>Graph <span class="math inline">\(y = \tfrac{2}{3}x - 2\)</span>.</p>

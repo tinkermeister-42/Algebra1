@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -723,7 +722,7 @@ x=5
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="all real numbers" data-original-href="#glossary-all-real-numbers" data-slug="all-real-numbers">all real numbers</a>, <a href="" class="glossary-link" data-term="infinitely many solutions" data-original-href="#glossary-infinitely-many-solutions" data-slug="infinitely-many-solutions">infinitely many solutions</a>, <a href="" class="glossary-link" data-term="no solution" data-original-href="#glossary-no-solution" data-slug="no-solution">no solution</a></p>
+<p><a href="" class="glossary-link" data-slug="all-real-numbers" data-term="all real numbers" data-original-href="#glossary-all-real-numbers">all real numbers</a>, <a href="" class="glossary-link" data-slug="infinitely-many-solutions" data-term="infinitely many solutions" data-original-href="#glossary-infinitely-many-solutions">infinitely many solutions</a>, <a href="" class="glossary-link" data-slug="no-solution" data-term="no solution" data-original-href="#glossary-no-solution">no solution</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -807,7 +806,7 @@ x=5
 </section>
 <section id="determining-the-number-of-solutions" class="level3">
 <h3 class="anchored" data-anchor-id="determining-the-number-of-solutions">3.5.3 - Determining the Number of Solutions</h3>
-<p>There are some tricks for telling whether a <a href="" class="glossary-link" data-term="linear equation" data-original-href="#glossary-linear-equation" data-slug="linear-equation">linear equation</a> will have <strong>one</strong>, <strong>no</strong>, or <strong>infinitely many</strong> solutions. You can often see it without actually solving the equation all the way!</p>
+<p>There are some tricks for telling whether a <a href="" class="glossary-link" data-slug="linear-equation" data-term="linear equation" data-original-href="#glossary-linear-equation">linear equation</a> will have <strong>one</strong>, <strong>no</strong>, or <strong>infinitely many</strong> solutions. You can often see it without actually solving the equation all the way!</p>
 <hr>
 <p><strong>Equations With One Solution</strong> If a linear equation has a variable term on one side and a different constant term on the other side, it will have <strong>one solution</strong>.</p>
 <p><strong>Example 5:</strong> How many solutions are there?</p>

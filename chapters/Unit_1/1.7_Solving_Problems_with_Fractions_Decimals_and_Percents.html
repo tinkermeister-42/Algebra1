@@ -79,17 +79,16 @@ ul.task-list li input[type="checkbox"] {
       processEscapes: true,
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
-        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize #1}}', 1],
-        steptag:  ['\\stepnote{#1}', 1],
-        snboth:   ['\\stepnote{#1\\ \\text{both sides}}', 1],
-        snplus:   ['\\snboth{+\\,#1}', 1],
-        snminus:  ['\\snboth{-\\,#1}', 1],
-        sntimes:  ['\\snboth{\\times\\,#1}', 1],
-        sndiv:    ['\\snboth{\\div\\,#1}', 1]
-      }
-    },
-    chtml: { fontCache: 'global' }
-  };
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+      ,
+      chtml: { fontCache: 'global' }
+    };
 </script>
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -715,7 +714,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="part" data-original-href="#glossary-part" data-slug="part">part</a>, <a href="" class="glossary-link" data-term="percent" data-original-href="#glossary-percent" data-slug="percent">percent</a>, <a href="" class="glossary-link" data-term="percent of" data-original-href="#glossary-percent-of" data-slug="percent-of">percent of</a>, <a href="" class="glossary-link" data-term="proportion" data-original-href="#glossary-proportion" data-slug="proportion">proportion</a>, <a href="" class="glossary-link" data-term="whole" data-original-href="#glossary-whole" data-slug="whole">whole</a></p>
+<p><a href="" class="glossary-link" data-slug="part" data-original-href="#glossary-part" data-term="part">part</a>, <a href="" class="glossary-link" data-slug="percent" data-original-href="#glossary-percent" data-term="percent">percent</a>, <a href="" class="glossary-link" data-slug="percent-of" data-original-href="#glossary-percent-of" data-term="percent of">percent of</a>, <a href="" class="glossary-link" data-slug="proportion" data-original-href="#glossary-proportion" data-term="proportion">proportion</a>, <a href="" class="glossary-link" data-slug="whole" data-original-href="#glossary-whole" data-term="whole">whole</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -867,7 +866,7 @@ window.Quarto = {
 <p><strong>Example 5:</strong> Sales &amp; Discounts</p>
 <p>A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off.</p>
 <p><strong>What’s the new price?</strong></p>
-<p>First, find the <a href="" class="glossary-link" data-term="discount" data-original-href="#glossary-discount" data-slug="discount">discount</a> by asking “What is 25% of $60?”:</p>
+<p>First, find the <a href="" class="glossary-link" data-slug="discount" data-original-href="#glossary-discount" data-term="discount">discount</a> by asking “What is 25% of $60?”:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -926,7 +925,7 @@ window.Quarto = {
 </div>
 <hr>
 <p><strong>Example 6:</strong> Surveys &amp; Data</p>
-<p>A <a href="" class="glossary-link" data-term="survey" data-original-href="#glossary-survey" data-slug="survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
+<p>A <a href="" class="glossary-link" data-slug="survey" data-original-href="#glossary-survey" data-term="survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
 <p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal: <span class="math display">\[
 75\% = 0.75
 \]</span> Then divide: <span class="math display">\[
