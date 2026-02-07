@@ -11,6 +11,10 @@ Your goal is to end with only **prime numbers** and correctly identify them.
 * **Right-click a number** to mark it as **prime**.
 * A number marked with **P** means it’s been identified as **prime**.
 * A number marked with **C** means it’s **composite** and has already been expanded.
+* Click the gear to investigate other options
+  * Hard mode
+  * Include variables (Note: use "^" character for exponents)
+  * Themes
 
 Build the tree until every branch ends in primes. Each correct move builds your **streak**, while mistakes reset it.
 

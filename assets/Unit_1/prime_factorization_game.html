@@ -2,250 +2,410 @@
 <div id="factor_tree_widget"></div>
 
 <script>
-(() => {
-  const rootEl = document.getElementById("factor_tree_widget");
-  if (!rootEl) return;
+  (() => {
+    const rootEl = document.getElementById("factor_tree_widget");
+    if (!rootEl) return;
 
-  /* ================= CONFIG ================= */
-  function computeCanvasH() {
-    const vh = window.innerHeight || 700;
-    const minH = 240;
-    const maxH = 520;
-    const frac = 0.52;
-    return Math.max(minH, Math.min(maxH, Math.round(vh * frac)));
-  }
-
-  const CFG = {
-    canvasW: 620,
-    canvasH: computeCanvasH(),
-    padX: 46,
-    padY: 32,
-
-    nodeW: 68,
-    nodeH: 28,
-    minLeafGap: 34,
-    minRowGap: 52,
-
-    // When the tree must compress to fit (wide trees like 1024),
-    // shrink pills a bit instead of allowing overlap.
-    minNodeW: 44,
-    minNodeH: 24,
-
-    candidates: [
-      6, 8, 9, 10, 12, 14, 15, 16, 18, 20,
-      24, 27, 28, 30, 32, 36, 40, 42, 45, 48,
-      54, 56, 60, 63, 64, 70, 72, 75, 80, 84,
-      90, 96, 98, 100, 105, 108, 112, 120, 126, 128,
-      135, 140, 144, 150, 160, 168, 180, 192, 200, 210,
-      216, 224, 240, 252, 256, 280, 288, 300, 320, 336,
-      360, 420, 480, 512, 720, 840, 960, 1008, 1024
-    ],
-
-    // Hard mode
-    hardMaxN: 2048,
-    hardWeightPow: 2, // superlinear weighting by total prime factors
-
-    themes: [
-      { id: "theme-ocean", label: "Ocean" },
-      { id: "theme-midnight", label: "Midnight" },
-      { id: "theme-darcula", label: "Darcula" },
-      { id: "theme-terminal", label: "Terminal" }
-    ],
-
-    storageKeyTheme: "ftg_theme_v3",
-    storageKeyMode: "ftg_mode_v1" // "easy" | "hard"
-  };
-
-  /* ================= UTIL ================= */
-  const isInt = (n) => Number.isInteger(n);
-
-  function isPrime(n) {
-    if (!isInt(n) || n < 2) return false;
-    if (n % 2 === 0) return n === 2;
-    for (let d = 3; d * d <= n; d += 2) {
-      if (n % d === 0) return false;
+    /* ================= CONFIG ================= */
+    function computeCanvasH() {
+      const vh = window.innerHeight || 700;
+      const minH = 240;
+      const maxH = 520;
+      const frac = 0.52;
+      return Math.max(minH, Math.min(maxH, Math.round(vh * frac)));
     }
-    return true;
-  }
 
-  function factorPairs(n) {
-    const out = [];
-    if (!isInt(n) || n < 4) return out;
-    for (let a = 2; a * a <= n; a++) {
-      if (n % a === 0) out.push([a, n / a]);
-    }
-    return out;
-  }
+    const CFG = {
+      canvasW: 620,
+      canvasH: computeCanvasH(),
+      padX: 46,
+      padY: 32,
 
-  function primeFactorList(n) {
-    const out = [];
-    let x = n;
-    for (let p = 2; p * p <= x; p += (p === 2 ? 1 : 2)) {
-      while (x % p === 0) {
-        out.push(p);
-        x = x / p;
-      }
-    }
-    if (x > 1) out.push(x);
-    return out;
-  }
+      nodeW: 68,
+      nodeH: 28,
+      minLeafGap: 34,
+      minRowGap: 52,
 
-  function primeFactorCount(n) {
-    return primeFactorList(n).length;
-  }
+      // When the tree must compress to fit (wide trees like 1024),
+      // shrink pills a bit instead of allowing overlap.
+      minNodeW: 44,
+      minNodeH: 24,
 
-  function parseInputInt(s) {
-    if (!s) return null;
-    const v = Number(s);
-    if (!isInt(v) || v < 2) return null;
-    return v;
-  }
+      candidates: [
+        6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 24, 27, 28, 30, 32, 36, 40, 42, 45,
+        48, 54, 56, 60, 63, 64, 70, 72, 75, 80, 84, 90, 96, 98, 100, 105, 108,
+        112, 120, 126, 128, 135, 140, 144, 150, 160, 168, 180, 192, 200, 210,
+        216, 224, 240, 252, 256, 280, 288, 300, 320, 336, 360, 420, 480, 512,
+        720, 840, 960, 1008, 1024,
+      ],
 
-  function toSup(n) {
-    const map = {
-      "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴",
-      "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹"
+      // Hard mode
+      hardMaxN: 2048,
+      hardWeightPow: 2, // superlinear weighting by total prime factors
+
+      themes: [
+        { id: "theme-ocean", label: "Ocean" },
+        { id: "theme-midnight", label: "Midnight" },
+        { id: "theme-darcula", label: "Darcula" },
+        { id: "theme-terminal", label: "Terminal" },
+      ],
+
+      storageKeyTheme: "ftg_theme_v3",
+      storageKeyMode: "ftg_mode_v1", // "easy" | "hard"
+      storageKeyVars: "ftg_vars_v1", // "0" | "1"
     };
-    return String(n).split("").map((ch) => map[ch] || "").join("");
-  }
 
-  function compressFactorStringSup(factors) {
-    if (!factors.length) return "";
-    factors.sort((a, b) => a - b);
-    const parts = [];
-    let cur = factors[0];
-    let k = 1;
-    const push = () => {
-      if (k === 1) parts.push(String(cur));
-      else parts.push(String(cur) + toSup(k));
-    };
-    for (let i = 1; i < factors.length; i++) {
-      if (factors[i] === cur) k++;
-      else {
-        push();
-        cur = factors[i];
-        k = 1;
+    /* ================= UTIL ================= */
+    const isInt = (n) => Number.isInteger(n);
+
+    function isPrime(n) {
+      if (!isInt(n) || n < 2) return false;
+      if (n % 2 === 0) return n === 2;
+      for (let d = 3; d * d <= n; d += 2) {
+        if (n % d === 0) return false;
       }
+      return true;
     }
-    push();
-    return parts.join(" × ");
-  }
 
-  function clear(el) {
-    while (el.firstChild) el.removeChild(el.firstChild);
-  }
+    function term(n, xPow = 0, yPow = 0) {
+      return { n, xPow, yPow };
+    }
+    function isTerm(v) {
+      return (
+        v &&
+        typeof v === "object" &&
+        isInt(v.n) &&
+        isInt(v.xPow) &&
+        isInt(v.yPow)
+      );
+    }
+    function cloneTerm(t) {
+      return term(t.n, t.xPow, t.yPow);
+    }
+    function normalizeTerm(t) {
+      return term(
+        Math.max(1, t.n | 0),
+        Math.max(0, t.xPow | 0),
+        Math.max(0, t.yPow | 0),
+      );
+    }
+    function termEq(a, b) {
+      return (
+        isTerm(a) &&
+        isTerm(b) &&
+        a.n === b.n &&
+        a.xPow === b.xPow &&
+        a.yPow === b.yPow
+      );
+    }
+    function termMul(a, b) {
+      return term(a.n * b.n, a.xPow + b.xPow, a.yPow + b.yPow);
+    }
+    function termIsOne(t) {
+      return t.n === 1 && t.xPow === 0 && t.yPow === 0;
+    }
+    function termIsPrimeLeaf(t) {
+      // "Prime" means: prime integer OR exactly x OR exactly y
+      if (t.xPow === 0 && t.yPow === 0) return isPrime(t.n);
+      if (t.n !== 1) return false;
+      return (t.xPow === 1 && t.yPow === 0) || (t.xPow === 0 && t.yPow === 1);
+    }
+    function canExpandTerm(t) {
+      if (termIsOne(t)) return false;
+      return !termIsPrimeLeaf(t);
+    }
 
-  function el(tag, props, kids) {
-    const e = document.createElement(tag);
-    if (props) {
-      for (const k of Object.keys(props)) {
-        if (k === "class") e.className = props[k];
-        else if (k === "text") e.textContent = props[k];
-        else if (k === "on") {
-          for (const ev of Object.keys(props.on)) e.addEventListener(ev, props.on[ev]);
-        } else if (k === "style") {
-          Object.assign(e.style, props.style);
-        } else {
-          e.setAttribute(k, props[k]);
+    function parseInputTerm(s, allowVars) {
+      if (!s) return null;
+      let str = String(s).trim();
+      if (!str) return null;
+
+      // integers-only mode
+      if (!allowVars) {
+        const v = Number(str);
+        if (!isInt(v) || v < 2) return null;
+        return term(v, 0, 0);
+      }
+
+      // variables mode:
+      // accept forms like: 12, x, y, 3x, 4xy, 128xy^2, y^3, 2x^2y
+      str = str.replace(/\s+/g, "");
+
+      // must be only digits, x, y, and ^
+      if (!/^[0-9xy^]+$/i.test(str)) return null;
+      str = str.toLowerCase();
+
+      let i = 0;
+      let n = 0;
+
+      // leading coefficient
+      while (i < str.length && str[i] >= "0" && str[i] <= "9") {
+        n = n * 10 + (str.charCodeAt(i) - 48);
+        i++;
+      }
+      if (n === 0) n = 1;
+
+      let xPow = 0;
+      let yPow = 0;
+
+      function readPow() {
+        if (i < str.length && str[i] === "^") {
+          i++;
+          if (i >= str.length) return null;
+          const ch = str[i];
+          if (ch < "1" || ch > "3") return null;
+          i++;
+          return Number(ch);
+        }
+        return 1;
+      }
+
+      while (i < str.length) {
+        const v = str[i];
+        if (v !== "x" && v !== "y") return null;
+        i++;
+        const p = readPow();
+        if (p == null) return null;
+        if (v === "x") xPow += p;
+        else yPow += p;
+
+        // cap totals to keep it sane
+        if (xPow > 6 || yPow > 6) return null;
+      }
+
+      // disallow "1" as a factor entry (keeps gameplay consistent with your current n>=2 rule)
+      // allow x, y, and any term with coefficient >=2
+      if (n === 1 && xPow === 0 && yPow === 0) return null;
+
+      return normalizeTerm(term(n, xPow, yPow));
+    }
+
+    function termToDisplay(t) {
+      const parts = [];
+      if (t.n !== 1 || (t.xPow === 0 && t.yPow === 0)) parts.push(String(t.n));
+
+      if (t.xPow) parts.push("x" + (t.xPow === 1 ? "" : toSup(t.xPow)));
+      if (t.yPow) parts.push("y" + (t.yPow === 1 ? "" : toSup(t.yPow)));
+
+      return parts.join("");
+    }
+
+    function factorPairs(n) {
+      const out = [];
+      if (!isInt(n) || n < 4) return out;
+      for (let a = 2; a * a <= n; a++) {
+        if (n % a === 0) out.push([a, n / a]);
+      }
+      return out;
+    }
+
+    function primeFactorList(n) {
+      const out = [];
+      let x = n;
+      for (let p = 2; p * p <= x; p += p === 2 ? 1 : 2) {
+        while (x % p === 0) {
+          out.push(p);
+          x = x / p;
         }
       }
+      if (x > 1) out.push(x);
+      return out;
     }
-    if (kids) for (const c of kids) e.appendChild(c);
-    return e;
-  }
 
-  function svgEl(tag, attrs) {
-    const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
-    if (attrs) {
-      for (const k of Object.keys(attrs)) e.setAttribute(k, attrs[k]);
+    function primeFactorCount(n) {
+      return primeFactorList(n).length;
     }
-    return e;
-  }
 
-  function fitFont(inputEl) {
-    const len = (inputEl.value || "").length;
-    if (len >= 5) inputEl.style.fontSize = "10px";
-    else if (len === 4) inputEl.style.fontSize = "11px";
-    else if (len === 3) inputEl.style.fontSize = "12px";
-    else inputEl.style.fontSize = "14px";
-  }
+    function parseInputInt(s) {
+      if (!s) return null;
+      const v = Number(s);
+      if (!isInt(v) || v < 2) return null;
+      return v;
+    }
 
-  /* ================= HARD MODE SAMPLER (WEIGHTED) ================= */
-  function buildOmegaCounts(maxN) {
-    const spf = new Array(maxN + 1).fill(0);
-    for (let i = 2; i * i <= maxN; i++) {
-      if (spf[i] !== 0) continue;
-      for (let j = i * i; j <= maxN; j += i) {
-        if (spf[j] === 0) spf[j] = i;
+    function toSup(n) {
+      const map = {
+        0: "⁰",
+        1: "¹",
+        2: "²",
+        3: "³",
+        4: "⁴",
+        5: "⁵",
+        6: "⁶",
+        7: "⁷",
+        8: "⁸",
+        9: "⁹",
+      };
+      return String(n)
+        .split("")
+        .map((ch) => map[ch] || "")
+        .join("");
+    }
+
+    function compressFactorStringSup(factors) {
+      if (!factors.length) return "";
+      factors.sort((a, b) => a - b);
+      const parts = [];
+      let cur = factors[0];
+      let k = 1;
+      const push = () => {
+        if (k === 1) parts.push(String(cur));
+        else parts.push(String(cur) + toSup(k));
+      };
+      for (let i = 1; i < factors.length; i++) {
+        if (factors[i] === cur) k++;
+        else {
+          push();
+          cur = factors[i];
+          k = 1;
+        }
       }
+      push();
+      return parts.join(" ⋅ ");
     }
-    const omega = new Array(maxN + 1).fill(0);
-    omega[0] = 0;
-    omega[1] = 0;
-    for (let n = 2; n <= maxN; n++) {
-      let x = n;
-      let c = 0;
-      while (x > 1) {
-        const p = spf[x] || x;
-        c += 1;
-        x = Math.floor(x / p);
+
+    function clear(el) {
+      while (el.firstChild) el.removeChild(el.firstChild);
+    }
+
+    function el(tag, props, kids) {
+      const e = document.createElement(tag);
+      if (props) {
+        for (const k of Object.keys(props)) {
+          if (k === "class") e.className = props[k];
+          else if (k === "text") e.textContent = props[k];
+          else if (k === "on") {
+            for (const ev of Object.keys(props.on))
+              e.addEventListener(ev, props.on[ev]);
+          } else if (k === "style") {
+            Object.assign(e.style, props.style);
+          } else {
+            e.setAttribute(k, props[k]);
+          }
+        }
       }
-      omega[n] = c;
-    }
-    return omega;
-  }
-
-  function buildHardPicker(maxN, pow) {
-    const omega = buildOmegaCounts(maxN);
-    const weights = new Array(maxN + 1).fill(0);
-    let total = 0;
-
-    for (let n = 2; n <= maxN; n++) {
-      const c = omega[n];
-      const w = Math.max(1, Math.pow(c, pow)); // primes (c=1) still possible
-      weights[n] = w;
-      total += w;
+      if (kids) for (const c of kids) e.appendChild(c);
+      return e;
     }
 
-    // prefix sums for binary search
-    const prefix = new Float64Array(maxN + 1);
-    let run = 0;
-    prefix[0] = 0;
-    prefix[1] = 0;
-    for (let n = 2; n <= maxN; n++) {
-      run += weights[n];
-      prefix[n] = run;
-    }
-
-    function pick() {
-      const r = Math.random() * total;
-      // binary search on [2..maxN]
-      let lo = 2;
-      let hi = maxN;
-      while (lo < hi) {
-        const mid = Math.floor((lo + hi) / 2);
-        if (prefix[mid] >= r) hi = mid;
-        else lo = mid + 1;
+    function svgEl(tag, attrs) {
+      const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+      if (attrs) {
+        for (const k of Object.keys(attrs)) e.setAttribute(k, attrs[k]);
       }
-      return lo;
+      return e;
     }
 
-    return { pick };
-  }
+    function fitFont(inputEl) {
+      const len = (inputEl.value || "").length;
+      if (len >= 5) inputEl.style.fontSize = "10px";
+      else if (len === 4) inputEl.style.fontSize = "11px";
+      else if (len === 3) inputEl.style.fontSize = "12px";
+      else inputEl.style.fontSize = "14px";
+    }
 
-  const HARD = buildHardPicker(CFG.hardMaxN, CFG.hardWeightPow);
+    function primeFactorizationStringFromTree(root) {
+      const nodes = [];
+      collectNodes(root, nodes);
 
-  function pickNumber(mode) {
-    if (mode === "hard") return HARD.pick();
-    return CFG.candidates[Math.floor(Math.random() * CFG.candidates.length)];
-  }
+      const nums = [];
+      let xCount = 0;
+      let yCount = 0;
 
-  /* ================= STYLE ================= */
-  (function injectStyle() {
-    if (document.getElementById("ftg_style")) return;
-    const s = document.createElement("style");
-    s.id = "ftg_style";
-    s.textContent = `
+      for (const n of nodes) {
+        if (!isLeaf(n) || n.blank || !n.userPrime || !isTerm(n.value)) continue;
+        if (!termIsPrimeLeaf(n.value)) continue;
+
+        const t = n.value;
+        if (t.xPow === 0 && t.yPow === 0) nums.push(t.n);
+        else if (t.xPow === 1 && t.yPow === 0) xCount += 1;
+        else if (t.yPow === 1 && t.xPow === 0) yCount += 1;
+      }
+
+      const parts = [];
+      if (nums.length) parts.push(compressFactorStringSup(nums));
+      if (xCount) parts.push("x" + (xCount === 1 ? "" : toSup(xCount)));
+      if (yCount) parts.push("y" + (yCount === 1 ? "" : toSup(yCount)));
+
+      return parts.join(" ⋅ ");
+    }
+
+    /* ================= HARD MODE SAMPLER (WEIGHTED) ================= */
+    function buildOmegaCounts(maxN) {
+      const spf = new Array(maxN + 1).fill(0);
+      for (let i = 2; i * i <= maxN; i++) {
+        if (spf[i] !== 0) continue;
+        for (let j = i * i; j <= maxN; j += i) {
+          if (spf[j] === 0) spf[j] = i;
+        }
+      }
+      const omega = new Array(maxN + 1).fill(0);
+      omega[0] = 0;
+      omega[1] = 0;
+      for (let n = 2; n <= maxN; n++) {
+        let x = n;
+        let c = 0;
+        while (x > 1) {
+          const p = spf[x] || x;
+          c += 1;
+          x = Math.floor(x / p);
+        }
+        omega[n] = c;
+      }
+      return omega;
+    }
+
+    function buildHardPicker(maxN, pow) {
+      const omega = buildOmegaCounts(maxN);
+      const weights = new Array(maxN + 1).fill(0);
+      let total = 0;
+
+      for (let n = 2; n <= maxN; n++) {
+        const c = omega[n];
+        const w = Math.max(1, Math.pow(c, pow)); // primes (c=1) still possible
+        weights[n] = w;
+        total += w;
+      }
+
+      // prefix sums for binary search
+      const prefix = new Float64Array(maxN + 1);
+      let run = 0;
+      prefix[0] = 0;
+      prefix[1] = 0;
+      for (let n = 2; n <= maxN; n++) {
+        run += weights[n];
+        prefix[n] = run;
+      }
+
+      function pick() {
+        const r = Math.random() * total;
+        // binary search on [2..maxN]
+        let lo = 2;
+        let hi = maxN;
+        while (lo < hi) {
+          const mid = Math.floor((lo + hi) / 2);
+          if (prefix[mid] >= r) hi = mid;
+          else lo = mid + 1;
+        }
+        return lo;
+      }
+
+      return { pick };
+    }
+
+    const HARD = buildHardPicker(CFG.hardMaxN, CFG.hardWeightPow);
+
+    function pickNumber(mode) {
+      if (mode === "hard") return HARD.pick();
+      return CFG.candidates[Math.floor(Math.random() * CFG.candidates.length)];
+    }
+
+    /* ================= STYLE ================= */
+    (function injectStyle() {
+      if (document.getElementById("ftg_style")) return;
+      const s = document.createElement("style");
+      s.id = "ftg_style";
+      s.textContent = `
 :root{
   --bg-card:#f9fafb;
   --bd-card:#e2e8f0;
@@ -484,858 +644,1044 @@
   .ftg-toast{transition:none;}
 }
 `;
-    document.head.appendChild(s);
-  })();
-
-  /* ================= LAYOUT ================= */
-  function computeGeometryForTree(root) {
-    const leaves = [];
-    let maxDepth = 1;
-
-    function walk(node, depth) {
-      if (!node) return;
-      maxDepth = Math.max(maxDepth, depth);
-      if (!node.left && !node.right) {
-        leaves.push(node);
-        return;
-      }
-      walk(node.left, depth + 1);
-      walk(node.right, depth + 1);
-    }
-    walk(root, 1);
-
-    const leafCount = Math.max(1, leaves.length);
-    const depthCount = Math.max(1, maxDepth);
-
-    const innerW = CFG.canvasW - 2 * CFG.padX;
-    const innerH = CFG.canvasH - 2 * CFG.padY;
-
-    const dxMin = CFG.nodeW + CFG.minLeafGap;
-    const dyMin = CFG.nodeH + CFG.minRowGap;
-
-    const requiredW = (leafCount <= 1) ? 0 : (leafCount - 1) * dxMin;
-    let nodeW = CFG.nodeW;
-    let nodeH = CFG.nodeH;
-    let dx = (leafCount <= 1) ? 0 : innerW / (leafCount - 1);
-
-    if (requiredW > innerW) {
-      const targetDx = innerW / Math.max(1, leafCount - 1);
-      nodeW = Math.max(CFG.minNodeW, Math.min(CFG.nodeW, Math.floor(targetDx - 10)));
-      dx = targetDx;
-    } else {
-      dx = Math.max(dx, dxMin);
-    }
-
-    const requiredH = (depthCount <= 1) ? 0 : (depthCount - 1) * dyMin;
-    let dy = (depthCount <= 1) ? 0 : innerH / (depthCount - 1);
-    if (requiredH > innerH) {
-      const targetDy = innerH / Math.max(1, depthCount - 1);
-      nodeH = Math.max(CFG.minNodeH, Math.min(CFG.nodeH, Math.floor(targetDy - 8)));
-      dy = targetDy;
-    } else {
-      dy = Math.max(dy, dyMin);
-    }
-
-    return { leaves, leafCount, depthCount, innerW, innerH, dx, dy, nodeW, nodeH };
-  }
-
-  function isLeaf(node) {
-    return node && !node.left && !node.right;
-  }
-
-  function collectNodes(node, arr) {
-    if (!node) return;
-    arr.push(node);
-    collectNodes(node.left, arr);
-    collectNodes(node.right, arr);
-  }
-
-  function layoutTree(root) {
-    const geom = computeGeometryForTree(root);
-
-    const leafX = new Map();
-    for (let i = 0; i < geom.leaves.length; i++) {
-      leafX.set(geom.leaves[i].id, CFG.padX + i * geom.dx);
-    }
-
-    const pos = new Map();
-
-    function setPos(node, level) {
-      if (!node) return { minX: 0, maxX: 0 };
-
-      const y = CFG.padY + (level - 1) * geom.dy;
-
-      if (isLeaf(node)) {
-        const x = leafX.get(node.id);
-        pos.set(node.id, { x, y, level });
-        return { minX: x, maxX: x };
-      }
-
-      const L = setPos(node.left, level + 1);
-      const R = setPos(node.right, level + 1);
-
-      const x = (L.minX + R.maxX) / 2;
-      pos.set(node.id, { x, y, level });
-
-      return { minX: Math.min(L.minX, R.minX), maxX: Math.max(L.maxX, R.maxX) };
-    }
-
-    const bounds = setPos(root, 1);
-
-    const innerLeft = CFG.padX;
-    const innerRight = CFG.canvasW - CFG.padX;
-    const innerCenter = (innerLeft + innerRight) / 2;
-
-    const treeCenter = (bounds.minX + bounds.maxX) / 2;
-    const shiftX = innerCenter - treeCenter;
-
-    for (const [id, p] of pos.entries()) {
-      pos.set(id, { x: p.x + shiftX, y: p.y, level: p.level });
-    }
-
-    return { pos, geom };
-  }
-
-  /* ================= GAME LOGIC ================= */
-  function makeNode(value) {
-    return {
-      id: crypto.randomUUID(),
-      value,
-      left: null,
-      right: null,
-      blank: false,
-      input: "",
-      userPrime: false,
-      locked: false,     // validated composite or marked prime
-      fixed: false,      // for root: value always locked
-      fx: null
-    };
-  }
-
-  function getFactorStatus(state) {
-    if (!state.tree || !isInt(state.target)) return { label: "Prime factors", value: "" };
-
-    const nodes = [];
-    collectNodes(state.tree, nodes);
-    const primes = [];
-
-    for (const n of nodes) {
-      if (!n) continue;
-      if (!isLeaf(n)) continue;
-      if (n.blank) continue;
-      if (!isInt(n.value)) continue;
-      if (n.userPrime && isPrime(n.value)) primes.push(n.value);
-    }
-
-    if (!primes.length) return { label: "Prime factors", value: "" };
-
-    const tentative = compressFactorStringSup(primes);
-    return { label: "Prime factors", value: tentative };
-  }
-
-  function drawCornerBadge(g, x, y, letter, color) {
-    const badge = svgEl("text", {
-      x,
-      y,
-      "text-anchor": "middle",
-      "font-size": "12",
-      "font-family": "'Courier New', Courier, monospace",
-      "font-weight": "900",
-      fill: color
-    });
-    badge.textContent = letter;
-    g.appendChild(badge);
-  }
-
-  function fxTransformAndOpacity(fx, cx, cy) {
-    const t = performance.now() - fx.t0;
-    const u = Math.max(0, Math.min(1, t / fx.dur));
-    const drop = 140 * (u * u);
-    const rot = (u * 20);
-    const opacity = 1 - u;
-    return {
-      transform: `translate(0 ${drop}) rotate(${rot} ${cx} ${cy})`,
-      opacity: String(opacity)
-    };
-  }
-
-  function clearLockSubtree(node) {
-    if (!node) return;
-    if (!node.fixed) node.locked = false;
-    node.userPrime = false;
-    clearLockSubtree(node.left);
-    clearLockSubtree(node.right);
-  }
-
-  function refreshCompositeLock(node) {
-    if (!node) return;
-    if (!node.left || !node.right) return;
-    if (node.left.blank || node.right.blank) return;
-    if (!isInt(node.value) || !isInt(node.left.value) || !isInt(node.right.value)) return;
-    if (node.left.value * node.right.value !== node.value) return;
-
-    node.locked = true;
-  }
-
-  function makeState() {
-    return {
-      tree: null,
-      target: null,
-      streak: 0,
-      best: 0,
-      solved: 0,
-      theme: localStorage.getItem(CFG.storageKeyTheme) || "theme-ocean",
-      mode: localStorage.getItem(CFG.storageKeyMode) || "easy",
-      toast: { text: "", t0: 0, ms: 0 },
-      _ui: null,
-
-      render() {
-        render(this);
-      },
-
-      setTheme(id) {
-        this.theme = id;
-        localStorage.setItem(CFG.storageKeyTheme, id);
-        this.render();
-      },
-
-      setMode(m) {
-        this.mode = (m === "hard") ? "hard" : "easy";
-        localStorage.setItem(CFG.storageKeyMode, this.mode);
-        this.newPuzzle();
-      },
-
-      showMistake(msg) {
-        this.toast = { text: msg, t0: performance.now(), ms: 3500 };
-        this.render();
-      },
-
-      resetStreak(msg) {
-        this.streak = 0;
-        this.showMistake(msg);
-      },
-
-      bumpStreak() {
-        this.streak += 1;
-        if (this.streak > this.best) this.best = this.streak;
-      },
-
-newPuzzle() {
-  this.target = pickNumber(this.mode);
-  this.tree = makeNode(this.target);
-  this.tree.blank = false;
-  this.tree.input = "";
-
-  // Root value is fixed, but NOT "locked" (so they can click / mark it)
-  this.tree.fixed = true;
-  this.tree.locked = false;
-  this.tree.userPrime = false;
-
-  this.render();
-},
-
-
-      checkDone() {
-        if (!this.tree || !isInt(this.target)) return { ok: false };
-
-        const nodes = [];
-        collectNodes(this.tree, nodes);
-
-        for (const n of nodes) {
-          if (!isLeaf(n)) continue;
-          if (n.blank) return { ok: false };
-          if (!isInt(n.value)) return { ok: false };
-          if (!isPrime(n.value)) return { ok: false };
-          if (!n.userPrime) return { ok: false };
-        }
-
-        return { ok: true };
-      }
-    };
-  }
-
-  /* ================= RENDER ================= */
-  function render(state) {
-    clear(rootEl);
-
-    const wrap = el("div", { class: `ftg-root ${state.theme}` });
-
-    const head = el("div", { class: "ftg-head" }, [
-      el("div", { class: "ftg-title", text: "Prime Factorization" })
-    ]);
-
-    const actions = el("div", { class: "ftg-actions" });
-
-    const newBtn = el("button", {
-      class: "ftg-btn",
-      text: "New",
-      on: { click: () => state.newPuzzle() }
-    });
-
-    const gearBtn = el("button", { class: "ftg-gear", text: "⚙" });
-    const panel = el("div", { class: "ftg-panel" }, [
-      el("div", { class: "ftg-panelTitle", text: "Mode" })
-    ]);
-
-    const easyTab = el("div", { class: `ftg-tab ${state.mode === "easy" ? "active" : ""}`, text: "Easy" });
-    easyTab.addEventListener("click", () => state.setMode("easy"));
-    panel.appendChild(easyTab);
-
-    const hardTab = el("div", { class: `ftg-tab ${state.mode === "hard" ? "active" : ""}`, text: "Hard (to 2048)" });
-    hardTab.addEventListener("click", () => state.setMode("hard"));
-    panel.appendChild(hardTab);
-
-    panel.appendChild(el("div", { class: "ftg-panelTitle", text: "Theme" }));
-
-    for (const t of CFG.themes) {
-      const tab = el("div", { class: `ftg-tab ${state.theme === t.id ? "active" : ""}`, text: t.label });
-      tab.addEventListener("click", () => state.setTheme(t.id));
-      panel.appendChild(tab);
-    }
-
-    gearBtn.addEventListener("click", (ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      panel.classList.toggle("show");
-    });
-
-    actions.appendChild(newBtn);
-    actions.appendChild(gearBtn);
-    actions.appendChild(panel);
-    head.appendChild(actions);
-
-    const score = el("div", { class: "ftg-score" });
-
-    function tile(lbl, val) {
-      const t = el("div", { class: "ftg-tile" }, [
-        el("div", { class: "lbl", text: lbl }),
-        el("div", { class: "val", text: val })
-      ]);
-      return { tile: t, valEl: t.querySelector(".val") };
-    }
-
-    const tStreak = tile("Streak", String(state.streak));
-    const tBest = tile("Best", String(state.best));
-    const tSolved = tile("Solved", String(state.solved));
-
-    score.appendChild(tStreak.tile);
-    score.appendChild(tBest.tile);
-    score.appendChild(tSolved.tile);
-
-    const factor = el("div", { class: "ftg-factor" });
-    const fHint = el("div", { class: "hint", text: "Prime factors" });
-    const fVal = el("div", { text: "" });
-    factor.appendChild(fHint);
-    factor.appendChild(fVal);
-
-    const plotWrap = el("div", { class: "ftg-plot-wrap" });
-
-    const toast = el("div", { class: "ftg-toast", text: "" });
-    plotWrap.appendChild(toast);
-
-    const svg = svgEl("svg", {
-      width: String(CFG.canvasW),
-      height: String(CFG.canvasH),
-      viewBox: `0 0 ${CFG.canvasW} ${CFG.canvasH}`
-    });
-    svg.classList.add("ftg-svg");
-    plotWrap.appendChild(svg);
-
-    wrap.appendChild(head);
-    wrap.appendChild(score);
-    wrap.appendChild(factor);
-    wrap.appendChild(plotWrap);
-
-    rootEl.appendChild(wrap);
-
-    state._ui = {
-      wrap,
-      svg,
-      toast,
-      streakEl: tStreak.valEl,
-      bestEl: tBest.valEl,
-      solvedEl: tSolved.valEl,
-      fHint,
-      fVal,
-      plotWrap,
-      panel
-    };
-
-    function updateHUD() {
-      state._ui.streakEl.textContent = String(state.streak);
-      state._ui.bestEl.textContent = String(state.best);
-      state._ui.solvedEl.textContent = String(state.solved);
-
-      const status = getFactorStatus(state);
-      state._ui.fHint.textContent = status.label;
-      state._ui.fVal.textContent = status.value;
-
-if (state.toast.ms > 0) {
-  const dt = performance.now() - state.toast.t0;
-
-  if (dt <= state.toast.ms) {
-    state._ui.toast.textContent = state.toast.text;
-    state._ui.toast.classList.add("show");
-
-    // keep ticking until it expires
-    requestAnimationFrame(updateHUD);
-  } else {
-    state._ui.toast.textContent = "";
-    state._ui.toast.classList.remove("show");
-    state.toast.ms = 0;
-  }
-} else {
-  state._ui.toast.textContent = "";
-  state._ui.toast.classList.remove("show");
-}
-
-
-      const done = state.checkDone().ok;
-      if (done) {
-        const old = state._ui.plotWrap.querySelector(".ftg-win");
-        if (!old) {
-          const win = el("div", { class: "ftg-win" });
-          const card = el("div", { class: "ftg-winCard" });
-          const exact = compressFactorStringSup(primeFactorList(state.target));
-          card.appendChild(el("div", { class: "big", text: "Solved" }));
-          card.appendChild(el("div", { class: "sub", text: `${state.target} = ${exact}` }));
-          card.appendChild(el("button", {
-            class: "ftg-btn",
-            text: "Next",
-            on: {
-              click: () => {
-                state.solved += 1;
-                state.newPuzzle();
-              }
-            }
-          }));
-          win.appendChild(card);
-          state._ui.plotWrap.appendChild(win);
-        }
-      } else {
-        const old = state._ui.plotWrap.querySelector(".ftg-win");
-        if (old) old.remove();
-      }
-    }
-
-    function dropSubtreeAndReplace(node, parent, reason) {
-      if (reason) state.resetStreak(reason);
-
-      node.fx = { kind: "fall", t0: performance.now(), dur: 560 };
-
-      const start = performance.now();
-      const tick = () => {
-        const now = performance.now();
-        if (!node.fx) return;
-
-        if (now - start >= node.fx.dur + 30) {
-          node.fx = null;
-
-          const droppingRoot = (node === state.tree);
-
-          clearLockSubtree(node);
-
-          node.left = null;
-          node.right = null;
-
-          if (droppingRoot) {
-            node.value = state.target;
-            node.blank = false;
-            node.input = "";
-            node.userPrime = false;
-            node.fixed = true;
-            node.locked = false;
-          } else {
-            node.value = null;
-            node.blank = true;
-            node.input = "";
-            node.userPrime = false;
-            node.fixed = false;
-            node.locked = false;
-          }
-
-          if (parent && !parent.fixed) parent.locked = false;
-          state.render();
+      document.head.appendChild(s);
+    })();
+
+    /* ================= LAYOUT ================= */
+    function computeGeometryForTree(root) {
+      const leaves = [];
+      let maxDepth = 1;
+
+      function walk(node, depth) {
+        if (!node) return;
+        maxDepth = Math.max(maxDepth, depth);
+        if (!node.left && !node.right) {
+          leaves.push(node);
           return;
         }
+        walk(node.left, depth + 1);
+        walk(node.right, depth + 1);
+      }
+      walk(root, 1);
 
-        state.render();
-        requestAnimationFrame(tick);
+      const leafCount = Math.max(1, leaves.length);
+      const depthCount = Math.max(1, maxDepth);
+
+      const innerW = CFG.canvasW - 2 * CFG.padX;
+      const innerH = CFG.canvasH - 2 * CFG.padY;
+
+      const dxMin = CFG.nodeW + CFG.minLeafGap;
+      const dyMin = CFG.nodeH + CFG.minRowGap;
+
+      const requiredW = leafCount <= 1 ? 0 : (leafCount - 1) * dxMin;
+      let nodeW = CFG.nodeW;
+      let nodeH = CFG.nodeH;
+      let dx = leafCount <= 1 ? 0 : innerW / (leafCount - 1);
+
+      if (requiredW > innerW) {
+        const targetDx = innerW / Math.max(1, leafCount - 1);
+        nodeW = Math.max(
+          CFG.minNodeW,
+          Math.min(CFG.nodeW, Math.floor(targetDx - 10)),
+        );
+        dx = targetDx;
+      } else {
+        dx = Math.max(dx, dxMin);
+      }
+
+      const requiredH = depthCount <= 1 ? 0 : (depthCount - 1) * dyMin;
+      let dy = depthCount <= 1 ? 0 : innerH / (depthCount - 1);
+      if (requiredH > innerH) {
+        const targetDy = innerH / Math.max(1, depthCount - 1);
+        nodeH = Math.max(
+          CFG.minNodeH,
+          Math.min(CFG.nodeH, Math.floor(targetDy - 8)),
+        );
+        dy = targetDy;
+      } else {
+        dy = Math.max(dy, dyMin);
+      }
+
+      return {
+        leaves,
+        leafCount,
+        depthCount,
+        innerW,
+        innerH,
+        dx,
+        dy,
+        nodeW,
+        nodeH,
       };
-      requestAnimationFrame(tick);
     }
 
-    function validateAtParent(par) {
-      if (!par) return { ok: true, msg: "" };
-      if (!par.left || !par.right) return { ok: true, msg: "" };
-
-      if (par.left.blank || par.right.blank) return { ok: true, msg: "" };
-      if (!isInt(par.value) || !isInt(par.left.value) || !isInt(par.right.value)) return { ok: true, msg: "" };
-
-      if (par.left.value * par.right.value !== par.value) {
-        return { ok: false, msg: `Those do not multiply to ${par.value}` };
-      }
-
-      refreshCompositeLock(par);
-      return { ok: true, msg: "" };
+    function isLeaf(node) {
+      return node && !node.left && !node.right;
     }
 
-    function drawLinks(pos, node, geom) {
-      if (!node || !node.left || !node.right) return;
-
-      const p = pos.get(node.id);
-      const L = pos.get(node.left.id);
-      const R = pos.get(node.right.id);
-
-      const y1 = p.y + geom.nodeH / 2;
-      const y2L = L.y - geom.nodeH / 2;
-      const y2R = R.y - geom.nodeH / 2;
-
-      const cY = (y1 + y2L) / 2;
-
-      svg.appendChild(svgEl("path", {
-        d: `M ${p.x} ${y1} C ${p.x} ${cY} ${L.x} ${cY} ${L.x} ${y2L}`,
-        fill: "none",
-        stroke: "rgba(115,132,150,.95)",
-        "stroke-width": "2.2",
-        "stroke-linecap": "round"
-      }));
-
-      svg.appendChild(svgEl("path", {
-        d: `M ${p.x} ${y1} C ${p.x} ${cY} ${R.x} ${cY} ${R.x} ${y2R}`,
-        fill: "none",
-        stroke: "rgba(115,132,150,.95)",
-        "stroke-width": "2.2",
-        "stroke-linecap": "round"
-      }));
-
-      drawLinks(pos, node.left, geom);
-      drawLinks(pos, node.right, geom);
-    }
-
-    function drawNode(pos, node, parent, inheritedFx, geom) {
+    function collectNodes(node, arr) {
       if (!node) return;
+      arr.push(node);
+      collectNodes(node.left, arr);
+      collectNodes(node.right, arr);
+    }
 
-      const p = pos.get(node.id);
-      const g = svgEl("g", {});
+    function layoutTree(root) {
+      const geom = computeGeometryForTree(root);
 
-      const effectiveFx = node.fx || inheritedFx;
-      const disabled = !!effectiveFx || state.checkDone().ok;
-
-      const rect = svgEl("rect", {
-        x: p.x - geom.nodeW / 2,
-        y: p.y - geom.nodeH / 2,
-        width: geom.nodeW,
-        height: geom.nodeH,
-        rx: "9",
-        ry: "9",
-        fill: node.blank ? "rgb(255,252,230)" : "rgb(235,248,255)",
-        stroke: "rgba(90,110,130,.95)",
-        "stroke-width": "2"
-      });
-      g.appendChild(rect);
-
-      if (effectiveFx && effectiveFx.kind === "fall") {
-        const tf = fxTransformAndOpacity(effectiveFx, p.x, p.y);
-        g.setAttribute("transform", tf.transform);
-        g.setAttribute("opacity", tf.opacity);
+      const leafX = new Map();
+      for (let i = 0; i < geom.leaves.length; i++) {
+        leafX.set(geom.leaves[i].id, CFG.padX + i * geom.dx);
       }
 
-      const canInteract = !disabled;
-      const isRoot = (node === state.tree);
+      const pos = new Map();
 
-      if (!node.blank && isInt(node.value)) {
-        const text = svgEl("text", {
-          x: p.x,
-          y: p.y + 5,
-          "text-anchor": "middle",
-          "font-size": "14",
-          "font-family": "'Courier New', Courier, monospace",
-          "font-weight": "900",
-          fill: "var(--ftg-pill-ink)"
-        });
-        text.textContent = String(node.value);
-        g.appendChild(text);
+      function setPos(node, level) {
+        if (!node) return { minX: 0, maxX: 0 };
 
-        if (node.fixed) {
-          rect.setAttribute("fill", "rgb(255,255,255)");
-          rect.setAttribute("stroke", "rgb(20,140,60)");
-          rect.setAttribute("stroke-width", "3");
-          drawCornerBadge(g, p.x - geom.nodeW / 2 + 10, p.y - geom.nodeH / 2 + 13, "", "rgb(20,140,60)");
-        } else if (node.locked) {
-          rect.setAttribute("fill", "rgb(255,255,255)");
-          rect.setAttribute("stroke", "rgb(20,140,60)");
-          rect.setAttribute("stroke-width", "3");
+        const y = CFG.padY + (level - 1) * geom.dy;
 
-          if (node.userPrime && isPrime(node.value)) {
-            rect.setAttribute("fill", "rgb(230,255,238)");
-            drawCornerBadge(g, p.x + geom.nodeW / 2 - 10, p.y - geom.nodeH / 2 + 13, "P", "rgb(20,140,60)");
-          } else if (node.left && node.right) {
-            drawCornerBadge(g, p.x - geom.nodeW / 2 + 10, p.y - geom.nodeH / 2 + 13, "C", "rgb(20,140,60)");
+        if (isLeaf(node)) {
+          const x = leafX.get(node.id);
+          pos.set(node.id, { x, y, level });
+          return { minX: x, maxX: x };
+        }
+
+        const L = setPos(node.left, level + 1);
+        const R = setPos(node.right, level + 1);
+
+        const x = (L.minX + R.maxX) / 2;
+        pos.set(node.id, { x, y, level });
+
+        return {
+          minX: Math.min(L.minX, R.minX),
+          maxX: Math.max(L.maxX, R.maxX),
+        };
+      }
+
+      const bounds = setPos(root, 1);
+
+      const innerLeft = CFG.padX;
+      const innerRight = CFG.canvasW - CFG.padX;
+      const innerCenter = (innerLeft + innerRight) / 2;
+
+      const treeCenter = (bounds.minX + bounds.maxX) / 2;
+      const shiftX = innerCenter - treeCenter;
+
+      for (const [id, p] of pos.entries()) {
+        pos.set(id, { x: p.x + shiftX, y: p.y, level: p.level });
+      }
+
+      return { pos, geom };
+    }
+
+    /* ================= GAME LOGIC ================= */
+    function makeNode(value) {
+      return {
+        id: crypto.randomUUID(),
+        value,
+        left: null,
+        right: null,
+        blank: false,
+        input: "",
+        userPrime: false,
+        locked: false, // validated composite or marked prime
+        fixed: false, // for root: value always locked
+        fx: null,
+      };
+    }
+
+    function getFactorStatus(state) {
+      if (!state.tree || !isInt(state.target))
+        return { label: "Prime factors", value: "" };
+
+      const nodes = [];
+      collectNodes(state.tree, nodes);
+      const nums = [];
+      let xCount = 0;
+      let yCount = 0;
+
+      for (const n of nodes) {
+        if (!isLeaf(n) || n.blank || !n.userPrime || !isTerm(n.value)) continue;
+        if (!termIsPrimeLeaf(n.value)) continue;
+
+        const t = n.value;
+        if (t.xPow === 0 && t.yPow === 0) nums.push(t.n);
+        else if (t.xPow === 1) xCount += 1;
+        else if (t.yPow === 1) yCount += 1;
+      }
+
+      const parts = [];
+      if (nums.length) parts.push(compressFactorStringSup(nums));
+      if (xCount) parts.push("x" + (xCount === 1 ? "" : toSup(xCount)));
+      if (yCount) parts.push("y" + (yCount === 1 ? "" : toSup(yCount)));
+
+      return { label: "Prime factors", value: parts.join(" ⋅ ") };
+    }
+
+    function drawCornerBadge(g, x, y, letter, color) {
+      const badge = svgEl("text", {
+        x,
+        y,
+        "text-anchor": "middle",
+        "font-size": "12",
+        "font-family": "'Courier New', Courier, monospace",
+        "font-weight": "900",
+        fill: color,
+      });
+      badge.textContent = letter;
+      g.appendChild(badge);
+    }
+
+    function fxTransformAndOpacity(fx, cx, cy) {
+      const t = performance.now() - fx.t0;
+      const u = Math.max(0, Math.min(1, t / fx.dur));
+      const drop = 140 * (u * u);
+      const rot = u * 20;
+      const opacity = 1 - u;
+      return {
+        transform: `translate(0 ${drop}) rotate(${rot} ${cx} ${cy})`,
+        opacity: String(opacity),
+      };
+    }
+
+    function clearLockSubtree(node) {
+      if (!node) return;
+      if (!node.fixed) node.locked = false;
+      node.userPrime = false;
+      clearLockSubtree(node.left);
+      clearLockSubtree(node.right);
+    }
+
+    function refreshCompositeLock(node) {
+      if (!node) return;
+      if (!node.left || !node.right) return;
+      if (node.left.blank || node.right.blank) return;
+      if (
+        !isTerm(node.value) ||
+        !isTerm(node.left.value) ||
+        !isTerm(node.right.value)
+      )
+        return;
+      const prod = termMul(node.left.value, node.right.value);
+      if (!termEq(prod, node.value)) return;
+      node.locked = true;
+    }
+
+    function makeState() {
+      return {
+        tree: null,
+        target: null,
+        streak: 0,
+        best: 0,
+        solved: 0,
+        theme: localStorage.getItem(CFG.storageKeyTheme) || "theme-ocean",
+        mode: localStorage.getItem(CFG.storageKeyMode) || "easy",
+        varsEnabled: localStorage.getItem(CFG.storageKeyVars || "0") === "1",
+        toast: { text: "", t0: 0, ms: 0 },
+        _ui: null,
+
+        render() {
+          render(this);
+        },
+
+        setTheme(id) {
+          this.theme = id;
+          localStorage.setItem(CFG.storageKeyTheme, id);
+          this.render();
+        },
+
+        setVarsEnabled(on) {
+          this.varsEnabled = on;
+          localStorage.setItem(
+            CFG.storageKeyVars,
+            this.varsEnabled ? "1" : "0",
+          );
+          this.newPuzzle();
+        },
+
+        setMode(m) {
+          this.mode = m === "hard" ? "hard" : "easy";
+          localStorage.setItem(CFG.storageKeyMode, this.mode);
+          this.newPuzzle();
+        },
+
+        showMistake(msg) {
+          this.toast = { text: msg, t0: performance.now(), ms: 3500 };
+          this.render();
+        },
+
+        resetStreak(msg) {
+          this.streak = 0;
+          this.showMistake(msg);
+        },
+
+        bumpStreak() {
+          this.streak += 1;
+          if (this.streak > this.best) this.best = this.streak;
+        },
+
+        newPuzzle() {
+          if (!this.varsEnabled) {
+            this.target = term(pickNumber(this.mode), 0, 0);
+            this.tree = makeNode(cloneTerm(this.target));
+          } else {
+            const n = pickNumber(this.mode);
+
+            // choose xPow, yPow in [0..3], but not both 0
+            const xPow = Math.floor(Math.random() * 4);
+            const yPow = Math.floor(Math.random() * 4);
+            const xp = xPow === 0 && yPow === 0 ? 1 : xPow;
+            const yp = xPow === 0 && yPow === 0 ? 0 : yPow;
+
+            this.target = term(n, xp, yp);
+            this.tree = makeNode(cloneTerm(this.target));
           }
+
+          this.tree.blank = false;
+          this.tree.input = "";
+          this.tree.userPrime = false;
+          this.tree.fixed = true;
+          this.tree.locked = false;
+          this.render();
+        },
+        checkDone() {
+          if (!this.tree || !isTerm(this.target)) return { ok: false };
+
+          const nodes = [];
+          collectNodes(this.tree, nodes);
+
+          for (const n of nodes) {
+            if (!isLeaf(n)) continue;
+            if (n.blank) return { ok: false };
+            if (!isTerm(n.value)) return { ok: false };
+            if (!termIsPrimeLeaf(n.value)) return { ok: false };
+            if (!n.userPrime) return { ok: false };
+          }
+
+          return { ok: true };
+        },
+      };
+    }
+
+    /* ================= RENDER ================= */
+    function render(state) {
+      clear(rootEl);
+
+      const wrap = el("div", { class: `ftg-root ${state.theme}` });
+
+      const head = el("div", { class: "ftg-head" }, [
+        el("div", { class: "ftg-title", text: "Prime Factorization" }),
+      ]);
+
+      const actions = el("div", { class: "ftg-actions" });
+
+      const newBtn = el("button", {
+        class: "ftg-btn",
+        text: "New",
+        on: { click: () => state.newPuzzle() },
+      });
+
+      const gearBtn = el("button", { class: "ftg-gear", text: "⚙" });
+      const panel = el("div", { class: "ftg-panel" }, [
+        el("div", { class: "ftg-panelTitle", text: "Mode" }),
+      ]);
+
+      const easyTab = el("div", {
+        class: `ftg-tab ${state.mode === "easy" ? "active" : ""}`,
+        text: "Easy",
+      });
+      easyTab.addEventListener("click", () => state.setMode("easy"));
+      panel.appendChild(easyTab);
+
+      const hardTab = el("div", {
+        class: `ftg-tab ${state.mode === "hard" ? "active" : ""}`,
+        text: "Hard (to 2048)",
+      });
+      hardTab.addEventListener("click", () => state.setMode("hard"));
+      panel.appendChild(hardTab);
+
+      panel.appendChild(
+        el("div", { class: "ftg-panelTitle", text: "Variables" }),
+      );
+
+      const varsRow = el(
+        "label",
+        {
+          style: {
+            display: "flex",
+            gap: "8px",
+            alignItems: "center",
+            margin: "6px 2px",
+            fontFamily: "var(--ftg-mono)",
+            fontWeight: "900",
+            fontSize: "12px",
+            cursor: "pointer",
+            userSelect: "none",
+          },
+        },
+        [
+          el("input", { type: "checkbox" }), // <-- IMPORTANT: no { attr: ... }
+          el("span", { text: "Variables" }),
+        ],
+      );
+
+      const varsCb = varsRow.querySelector("input");
+      varsCb.checked = !!state.varsEnabled;
+      varsCb.addEventListener("change", () =>
+        state.setVarsEnabled(varsCb.checked),
+      );
+      panel.appendChild(varsRow);
+
+      panel.appendChild(el("div", { class: "ftg-panelTitle", text: "Theme" }));
+
+      for (const t of CFG.themes) {
+        const tab = el("div", {
+          class: `ftg-tab ${state.theme === t.id ? "active" : ""}`,
+          text: t.label,
+        });
+        tab.addEventListener("click", () => state.setTheme(t.id));
+        panel.appendChild(tab);
+      }
+
+      gearBtn.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        panel.classList.toggle("show");
+      });
+
+      actions.appendChild(newBtn);
+      actions.appendChild(gearBtn);
+      actions.appendChild(panel);
+      head.appendChild(actions);
+
+      const score = el("div", { class: "ftg-score" });
+
+      function tile(lbl, val) {
+        const t = el("div", { class: "ftg-tile" }, [
+          el("div", { class: "lbl", text: lbl }),
+          el("div", { class: "val", text: val }),
+        ]);
+        return { tile: t, valEl: t.querySelector(".val") };
+      }
+
+      const tStreak = tile("Streak", String(state.streak));
+      const tBest = tile("Best", String(state.best));
+      const tSolved = tile("Solved", String(state.solved));
+
+      score.appendChild(tStreak.tile);
+      score.appendChild(tBest.tile);
+      score.appendChild(tSolved.tile);
+
+      const factor = el("div", { class: "ftg-factor" });
+      const fHint = el("div", { class: "hint", text: "Prime factors" });
+      const fVal = el("div", { text: "" });
+      factor.appendChild(fHint);
+      factor.appendChild(fVal);
+
+      const plotWrap = el("div", { class: "ftg-plot-wrap" });
+
+      const toast = el("div", { class: "ftg-toast", text: "" });
+      plotWrap.appendChild(toast);
+
+      const svg = svgEl("svg", {
+        width: String(CFG.canvasW),
+        height: String(CFG.canvasH),
+        viewBox: `0 0 ${CFG.canvasW} ${CFG.canvasH}`,
+      });
+      svg.classList.add("ftg-svg");
+      plotWrap.appendChild(svg);
+
+      wrap.appendChild(head);
+      wrap.appendChild(score);
+      wrap.appendChild(factor);
+      wrap.appendChild(plotWrap);
+
+      rootEl.appendChild(wrap);
+
+      state._ui = {
+        wrap,
+        svg,
+        toast,
+        streakEl: tStreak.valEl,
+        bestEl: tBest.valEl,
+        solvedEl: tSolved.valEl,
+        fHint,
+        fVal,
+        plotWrap,
+        panel,
+      };
+
+      function updateHUD() {
+        state._ui.streakEl.textContent = String(state.streak);
+        state._ui.bestEl.textContent = String(state.best);
+        state._ui.solvedEl.textContent = String(state.solved);
+
+        const status = getFactorStatus(state);
+        state._ui.fHint.textContent = status.label;
+        state._ui.fVal.textContent = status.value;
+
+        if (state.toast.ms > 0) {
+          const dt = performance.now() - state.toast.t0;
+
+          if (dt <= state.toast.ms) {
+            state._ui.toast.textContent = state.toast.text;
+            state._ui.toast.classList.add("show");
+
+            // keep ticking until it expires
+            requestAnimationFrame(updateHUD);
+          } else {
+            state._ui.toast.textContent = "";
+            state._ui.toast.classList.remove("show");
+            state.toast.ms = 0;
+          }
+        } else {
+          state._ui.toast.textContent = "";
+          state._ui.toast.classList.remove("show");
+        }
+
+        const done = state.checkDone().ok;
+        if (done) {
+          const old = state._ui.plotWrap.querySelector(".ftg-win");
+          if (!old) {
+            const win = el("div", { class: "ftg-win" });
+            const card = el("div", { class: "ftg-winCard" });
+            const left = termToDisplay(state.target);
+
+            const exact = state.varsEnabled
+              ? primeFactorizationStringFromTree(state.tree)
+              : compressFactorStringSup(primeFactorList(state.target.n));
+
+            card.appendChild(el("div", { class: "big", text: "Solved" }));
+            card.appendChild(
+              el("div", { class: "sub", text: `${left} = ${exact}` }),
+            );
+
+            card.appendChild(
+              el("button", {
+                class: "ftg-btn",
+                text: "Next",
+                on: {
+                  click: () => {
+                    state.solved += 1;
+                    state.newPuzzle();
+                  },
+                },
+              }),
+            );
+            win.appendChild(card);
+            state._ui.plotWrap.appendChild(win);
+          }
+        } else {
+          const old = state._ui.plotWrap.querySelector(".ftg-win");
+          if (old) old.remove();
         }
       }
 
-if (canInteract) {
-  g.addEventListener("contextmenu", (ev) => {
-    ev.preventDefault();
+      function dropSubtreeAndReplace(node, parent, reason) {
+        if (reason) state.resetStreak(reason);
 
-    if (node.blank) return;
-    if (!isInt(node.value)) return;
+        node.fx = { kind: "fall", t0: performance.now(), dur: 560 };
 
-    // If it's already expanded, do not allow prime marking.
-    if (node.left || node.right) return;
+        const start = performance.now();
+        const tick = () => {
+          const now = performance.now();
+          if (!node.fx) return;
 
-    // For non-root nodes, locked means hands off.
-    // For the root (fixed), allow toggling even if locked.
-    if (node.locked && !node.fixed) return;
+          if (now - start >= node.fx.dur + 30) {
+            node.fx = null;
 
-    const next = !node.userPrime;
+            const droppingRoot = node === state.tree;
 
-    if (next && !isPrime(node.value)) {
-      dropSubtreeAndReplace(node, parent, "That number is not prime");
-      return;
-    }
+            clearLockSubtree(node);
 
-    if (next && isPrime(node.value)) {
-      node.userPrime = true;
-      node.locked = true; // counts as confirmed prime
-      state.bumpStreak();
-      state.render();
-      return;
-    }
+            node.left = null;
+            node.right = null;
 
-    node.userPrime = false;
-    node.locked = false;
-    state.render();
-  });
-}
-
-
-      if (node.blank) {
-        rect.setAttribute("fill", "rgb(255,252,230)");
-
-        const fo = svgEl("foreignObject", {
-          x: String(p.x - geom.nodeW / 2 + 4),
-          y: String(p.y - geom.nodeH / 2 + 3),
-          width: String(geom.nodeW - 8),
-          height: String(geom.nodeH - 6)
-        });
-
-        const input = document.createElement("input");
-        input.className = "ftg-pillInput";
-        input.value = node.input;
-        input.inputMode = "numeric";
-        input.autocomplete = "off";
-        input.spellcheck = false;
-
-        input.style.width = "100%";
-        input.style.height = "100%";
-        input.style.border = "0";
-        input.style.outline = "none";
-        input.style.background = "transparent";
-        input.style.textAlign = "center";
-
-        fitFont(input);
-
-        function commit() {
-          const v = parseInputInt(node.input);
-          if (v === null) return;
-
-          if (parent && isInt(parent.value)) {
-            const pv = parent.value;
-
-            if (v === 1 || v === pv) {
+            if (droppingRoot) {
+              node.value = state.target;
+              node.blank = false;
               node.input = "";
-              dropSubtreeAndReplace(node, parent, "Use a factor greater than 1 and smaller than the parent");
-              return;
+              node.userPrime = false;
+              node.fixed = true;
+              node.locked = false;
+            } else {
+              node.value = null;
+              node.blank = true;
+              node.input = "";
+              node.userPrime = false;
+              node.fixed = false;
+              node.locked = false;
             }
 
-            if (pv % v !== 0) {
-              node.input = "";
-              dropSubtreeAndReplace(node, parent, `That is not a factor of ${pv}`);
-              return;
-            }
-          }
-
-          node.value = v;
-          node.blank = false;
-          node.input = "";
-          node.userPrime = false;
-          node.locked = false;
-          node.fixed = false;
-
-          const res = validateAtParent(parent);
-          if (parent && !res.ok) {
-            dropSubtreeAndReplace(parent, null, res.msg);
+            if (parent && !parent.fixed) parent.locked = false;
+            state.render();
             return;
           }
 
-          if (parent && res.ok && parent.locked && !parent.fixed) {
-            state.bumpStreak();
-          }
-
           state.render();
+          requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+
+      function validateAtParent(par) {
+        if (!par) return { ok: true, msg: "" };
+        if (!par.left || !par.right) return { ok: true, msg: "" };
+
+        if (
+          !isTerm(par.value) ||
+          !isTerm(par.left.value) ||
+          !isTerm(par.right.value)
+        )
+          return { ok: true, msg: "" };
+
+        const prod = termMul(par.left.value, par.right.value);
+        if (!termEq(prod, par.value)) {
+          return {
+            ok: false,
+            msg: `Those do not multiply to ${termToDisplay(par.value)}`,
+          };
+        }
+
+        refreshCompositeLock(par);
+        return { ok: true, msg: "" };
+      }
+
+      function drawLinks(pos, node, geom) {
+        if (!node || !node.left || !node.right) return;
+
+        const p = pos.get(node.id);
+        const L = pos.get(node.left.id);
+        const R = pos.get(node.right.id);
+
+        const y1 = p.y + geom.nodeH / 2;
+        const y2L = L.y - geom.nodeH / 2;
+        const y2R = R.y - geom.nodeH / 2;
+
+        const cY = (y1 + y2L) / 2;
+
+        svg.appendChild(
+          svgEl("path", {
+            d: `M ${p.x} ${y1} C ${p.x} ${cY} ${L.x} ${cY} ${L.x} ${y2L}`,
+            fill: "none",
+            stroke: "rgba(115,132,150,.95)",
+            "stroke-width": "2.2",
+            "stroke-linecap": "round",
+          }),
+        );
+
+        svg.appendChild(
+          svgEl("path", {
+            d: `M ${p.x} ${y1} C ${p.x} ${cY} ${R.x} ${cY} ${R.x} ${y2R}`,
+            fill: "none",
+            stroke: "rgba(115,132,150,.95)",
+            "stroke-width": "2.2",
+            "stroke-linecap": "round",
+          }),
+        );
+
+        drawLinks(pos, node.left, geom);
+        drawLinks(pos, node.right, geom);
+      }
+
+      function fitSvgTextToWidth(textEl, maxW, minFont = 9) {
+        // Start at whatever font-size you already set on the text element
+        let fs = parseFloat(textEl.getAttribute("font-size")) || 14;
+
+        // Need the element in the DOM before this works
+        const w = textEl.getComputedTextLength();
+        if (!w || w <= maxW) return;
+
+        // Scale proportionally
+        const scale = maxW / w;
+        const newFs = Math.max(minFont, Math.floor(fs * scale));
+        textEl.setAttribute("font-size", String(newFs));
+
+        // One cleanup pass in case rounding was optimistic
+        while (textEl.getComputedTextLength() > maxW && newFs > minFont) {
+          const cur = parseFloat(textEl.getAttribute("font-size")) || newFs;
+          if (cur <= minFont) break;
+          textEl.setAttribute("font-size", String(cur - 1));
+        }
+      }
+
+      function drawNode(pos, node, parent, inheritedFx, geom) {
+        if (!node) return;
+
+        const p = pos.get(node.id);
+        const g = svgEl("g", {});
+
+        const effectiveFx = node.fx || inheritedFx;
+        const disabled = !!effectiveFx || state.checkDone().ok;
+
+        const rect = svgEl("rect", {
+          x: p.x - geom.nodeW / 2,
+          y: p.y - geom.nodeH / 2,
+          width: geom.nodeW,
+          height: geom.nodeH,
+          rx: "9",
+          ry: "9",
+          fill: node.blank ? "rgb(255,252,230)" : "rgb(235,248,255)",
+          stroke: "rgba(90,110,130,.95)",
+          "stroke-width": "2",
+        });
+        g.appendChild(rect);
+
+        if (effectiveFx && effectiveFx.kind === "fall") {
+          const tf = fxTransformAndOpacity(effectiveFx, p.x, p.y);
+          g.setAttribute("transform", tf.transform);
+          g.setAttribute("opacity", tf.opacity);
+        }
+
+        const canInteract = !disabled;
+        const isRoot = node === state.tree;
+
+        if (!node.blank && isTerm(node.value)) {
+          const text = svgEl("text", {
+            x: p.x,
+            y: p.y + 5,
+            "text-anchor": "middle",
+            "font-size": "14",
+            "font-family": "'Courier New', Courier, monospace",
+            "font-weight": "900",
+            fill: "var(--ftg-pill-ink)",
+          });
+          text.textContent = termToDisplay(node.value);
+          g.appendChild(text);
+          fitSvgTextToWidth(text, geom.nodeW - 14, 9);
+
+          if (node.fixed) {
+            rect.setAttribute("fill", "rgb(255,255,255)");
+            rect.setAttribute("stroke", "rgb(20,140,60)");
+            rect.setAttribute("stroke-width", "3");
+            drawCornerBadge(
+              g,
+              p.x - geom.nodeW / 2 + 10,
+              p.y - geom.nodeH / 2 + 13,
+              "",
+              "rgb(20,140,60)",
+            );
+          } else if (node.locked) {
+            rect.setAttribute("fill", "rgb(255,255,255)");
+            rect.setAttribute("stroke", "rgb(20,140,60)");
+            rect.setAttribute("stroke-width", "3");
+
+            if (
+              node.userPrime &&
+              isTerm(node.value) &&
+              termIsPrimeLeaf(node.value)
+            ) {
+              rect.setAttribute("fill", "rgb(230,255,238)");
+              drawCornerBadge(
+                g,
+                p.x + geom.nodeW / 2 - 10,
+                p.y - geom.nodeH / 2 + 13,
+                "P",
+                "rgb(20,140,60)",
+              );
+            } else if (node.left && node.right) {
+              drawCornerBadge(
+                g,
+                p.x - geom.nodeW / 2 + 10,
+                p.y - geom.nodeH / 2 + 13,
+                "C",
+                "rgb(20,140,60)",
+              );
+            }
+          }
         }
 
         if (canInteract) {
-          function focusInput(ev) {
-            if (ev) {
-              ev.preventDefault();
-              ev.stopPropagation();
-            }
-            setTimeout(() => {
-              input.focus();
-              input.select();
-            }, 0);
-          }
+          g.addEventListener("contextmenu", (ev) => {
+            ev.preventDefault();
 
-          g.style.cursor = "text";
-          g.addEventListener("pointerdown", focusInput);
-          rect.addEventListener("pointerdown", focusInput);
-          input.addEventListener("pointerdown", (ev) => ev.stopPropagation());
+            if (node.blank) return;
+            if (!isTerm(node.value)) return;
 
-          input.addEventListener("input", () => {
-            const cleaned = input.value.replace(/[^0-9]/g, "");
-            if (cleaned !== input.value) input.value = cleaned;
-            node.input = input.value;
-            fitFont(input);
-          });
+            // If it's already expanded, do not allow prime marking.
+            if (node.left || node.right) return;
 
-          input.addEventListener("keydown", (ev) => {
-            if (ev.key === "Enter") {
-              ev.preventDefault();
-              commit();
-            }
-          });
+            // For non-root nodes, locked means hands off.
+            // For the root (fixed), allow toggling even if locked.
+            if (node.locked && !node.fixed) return;
 
-          input.addEventListener("blur", () => commit());
-        } else {
-          input.disabled = true;
-        }
+            const next = !node.userPrime;
 
-        const div = document.createElement("div");
-        div.style.width = "100%";
-        div.style.height = "100%";
-        div.appendChild(input);
-
-        fo.appendChild(div);
-        g.appendChild(fo);
-
-      } else {
-        // Expand click: allow even if locked when it is root (root is always locked).
-        const canExpand =
-          canInteract &&
-          isLeaf(node) &&
-          isInt(node.value) &&
-          (!node.locked || isRoot) &&
-          !node.userPrime;
-
-        if (canExpand) {
-          rect.style.cursor = "pointer";
-          g.addEventListener("click", () => {
-            if (isPrime(node.value)) {
-              dropSubtreeAndReplace(node, parent, "That number is prime. Right click to mark it");
+            if (next && !termIsPrimeLeaf(node.value)) {
+              dropSubtreeAndReplace(node, parent, "That is not prime here");
               return;
             }
 
-            const pairs = factorPairs(node.value);
-            if (!pairs.length) {
-              dropSubtreeAndReplace(node, parent, "That number cannot be expanded");
+            if (next) {
+              node.userPrime = true;
+              node.locked = true; // confirmed prime leaf
+              state.bumpStreak();
+              state.render();
               return;
             }
 
-            node.left = makeNode(null);
-            node.right = makeNode(null);
-            node.left.blank = true;
-            node.right.blank = true;
-
-            // Lock the composite immediately on expand (root stays locked anyway).
-            if (!node.fixed) node.locked = true;
-
-            state.bumpStreak();
+            node.userPrime = false;
+            node.locked = false;
             state.render();
           });
         }
+
+        if (node.blank) {
+          rect.setAttribute("fill", "rgb(255,252,230)");
+
+          const fo = svgEl("foreignObject", {
+            x: String(p.x - geom.nodeW / 2 + 4),
+            y: String(p.y - geom.nodeH / 2 + 3),
+            width: String(geom.nodeW - 8),
+            height: String(geom.nodeH - 6),
+          });
+
+          const input = document.createElement("input");
+          input.className = "ftg-pillInput";
+          input.value = node.input;
+          input.inputMode = state.varsEnabled ? "text" : "numeric";
+          input.autocomplete = "off";
+          input.spellcheck = false;
+
+          input.style.width = "100%";
+          input.style.height = "100%";
+          input.style.border = "0";
+          input.style.outline = "none";
+          input.style.background = "transparent";
+          input.style.textAlign = "center";
+
+          fitFont(input);
+
+          function commit() {
+            const v = parseInputTerm(node.input, state.varsEnabled);
+            if (v === null) return;
+
+            if (parent && isTerm(parent.value)) {
+              const pv = parent.value;
+
+              // reject 1 and parent itself
+              if (termIsOne(v) || termEq(v, pv)) {
+                node.input = "";
+                dropSubtreeAndReplace(
+                  node,
+                  parent,
+                  "Use a factor greater than 1 and smaller than the parent",
+                );
+                return;
+              }
+
+              // v must divide pv (numbers divide, and exponents must not exceed parent)
+              const divides =
+                pv.n % v.n === 0 && v.xPow <= pv.xPow && v.yPow <= pv.yPow;
+
+              if (!divides) {
+                node.input = "";
+                dropSubtreeAndReplace(
+                  node,
+                  parent,
+                  `That is not a factor of ${termToDisplay(pv)}`,
+                );
+                return;
+              }
+            }
+
+            node.value = v;
+            node.blank = false;
+            node.input = "";
+            node.userPrime = false;
+            node.locked = false;
+            node.fixed = false;
+
+            const res = validateAtParent(parent);
+            if (parent && !res.ok) {
+              dropSubtreeAndReplace(parent, null, res.msg);
+              return;
+            }
+
+            if (parent && res.ok && parent.locked && !parent.fixed) {
+              state.bumpStreak();
+            }
+
+            state.render();
+          }
+
+          if (canInteract) {
+            function focusInput(ev) {
+              if (ev) {
+                ev.preventDefault();
+                ev.stopPropagation();
+              }
+              setTimeout(() => {
+                input.focus();
+                input.select();
+              }, 0);
+            }
+
+            g.style.cursor = "text";
+            g.addEventListener("pointerdown", focusInput);
+            rect.addEventListener("pointerdown", focusInput);
+            input.addEventListener("pointerdown", (ev) => ev.stopPropagation());
+
+            input.addEventListener("input", () => {
+              const cleaned = state.varsEnabled
+                ? input.value.toLowerCase().replace(/[^0-9xy^]/g, "")
+                : input.value.replace(/[^0-9]/g, "");
+
+              if (cleaned !== input.value) input.value = cleaned;
+              node.input = input.value;
+              fitFont(input);
+            });
+
+            input.addEventListener("keydown", (ev) => {
+              if (ev.key === "Enter") {
+                ev.preventDefault();
+                commit();
+              }
+            });
+
+            input.addEventListener("blur", () => commit());
+          } else {
+            input.disabled = true;
+          }
+
+          const div = document.createElement("div");
+          div.style.width = "100%";
+          div.style.height = "100%";
+          div.appendChild(input);
+
+          fo.appendChild(div);
+          g.appendChild(fo);
+        } else {
+          // Expand click: allow even if locked when it is root (root is always locked).
+          const canExpand =
+            canInteract &&
+            isLeaf(node) &&
+            isTerm(node.value) &&
+            (!node.locked || isRoot) &&
+            !node.userPrime;
+
+          if (canExpand) {
+            rect.style.cursor = "pointer";
+            g.addEventListener("click", () => {
+              if (termIsPrimeLeaf(node.value)) {
+                dropSubtreeAndReplace(
+                  node,
+                  parent,
+                  "That is prime here. Right click to mark it",
+                );
+                return;
+              }
+              if (!canExpandTerm(node.value)) {
+                dropSubtreeAndReplace(node, parent, "That cannot be expanded");
+                return;
+              }
+
+              node.left = makeNode(null);
+              node.right = makeNode(null);
+              node.left.blank = true;
+              node.right.blank = true;
+
+              // Lock the composite immediately on expand (root stays locked anyway).
+              if (!node.fixed) node.locked = true;
+
+              state.bumpStreak();
+              state.render();
+            });
+          }
+        }
+
+        svg.appendChild(g);
+        drawNode(pos, node.left, node, effectiveFx, geom);
+        drawNode(pos, node.right, node, effectiveFx, geom);
       }
 
-      svg.appendChild(g);
-      drawNode(pos, node.left, node, effectiveFx, geom);
-      drawNode(pos, node.right, node, effectiveFx, geom);
+      clear(svg);
+
+      if (state.tree) {
+        const { pos, geom } = layoutTree(state.tree);
+        drawLinks(pos, state.tree, geom);
+        drawNode(pos, state.tree, null, null, geom);
+      }
+
+      updateHUD();
     }
 
-    clear(svg);
+    /* ================= ONE TIME DOC HANDLERS ================= */
+    let docHandlersInstalled = false;
+    function ensureDocHandlers(state) {
+      if (docHandlersInstalled) return;
+      docHandlersInstalled = true;
 
-    if (state.tree) {
-      const { pos, geom } = layoutTree(state.tree);
-      drawLinks(pos, state.tree, geom);
-      drawNode(pos, state.tree, null, null, geom);
+      document.addEventListener("pointerdown", (ev) => {
+        if (!state._ui || !state._ui.panel) return;
+        const panel = state._ui.panel;
+        if (!panel.classList.contains("show")) return;
+
+        const target = ev.target;
+        if (panel.contains(target)) return;
+        const gear = state._ui.wrap.querySelector(".ftg-gear");
+        if (gear && gear.contains(target)) return;
+
+        panel.classList.remove("show");
+      });
     }
 
-    updateHUD();
+    /* ================= TESTS ================= */
+    (function runTests() {
+      const assert = (cond, msg) => {
+        if (!cond) throw new Error("Test failed: " + msg);
+      };
 
-  }
+      assert(isPrime(2) === true, "2 prime");
+      assert(isPrime(97) === true, "97 prime");
+      assert(isPrime(1) === false, "1 not prime");
+      assert(isPrime(100) === false, "100 not prime");
 
-  /* ================= ONE TIME DOC HANDLERS ================= */
-  let docHandlersInstalled = false;
-  function ensureDocHandlers(state) {
-    if (docHandlersInstalled) return;
-    docHandlersInstalled = true;
+      assert(
+        JSON.stringify(primeFactorList(12)) === JSON.stringify([2, 2, 3]),
+        "pf 12",
+      );
+      assert(
+        JSON.stringify(primeFactorList(2048)) ===
+          JSON.stringify(new Array(11).fill(2)),
+        "pf 2048",
+      );
 
-    document.addEventListener("pointerdown", (ev) => {
-      if (!state._ui || !state._ui.panel) return;
-      const panel = state._ui.panel;
-      if (!panel.classList.contains("show")) return;
+      const fp6 = factorPairs(6);
+      assert(
+        fp6.some((p) => p[0] === 2 && p[1] === 3),
+        "pairs 6 includes 2 and 3",
+      );
+      assert(
+        fp6.every((p) => p[0] >= 2 && p[1] >= 2),
+        "pairs never include 1",
+      );
 
-      const target = ev.target;
-      if (panel.contains(target)) return;
-      const gear = state._ui.wrap.querySelector(".ftg-gear");
-      if (gear && gear.contains(target)) return;
+      // Hard picker sanity: should always be within bounds.
+      for (let i = 0; i < 20; i++) {
+        const n = HARD.pick();
+        assert(n >= 2 && n <= CFG.hardMaxN, "hard pick bounds");
+      }
 
-      panel.classList.remove("show");
+      console.log("Factor tree tests passed");
+    })();
+
+    /* ================= BOOT ================= */
+    const state = makeState();
+    ensureDocHandlers(state);
+    state.newPuzzle();
+
+    let _rzTimer = 0;
+    window.addEventListener("resize", () => {
+      clearTimeout(_rzTimer);
+      _rzTimer = setTimeout(() => {
+        const nextH = computeCanvasH();
+        if (nextH !== CFG.canvasH) {
+          CFG.canvasH = nextH;
+          state.render();
+        }
+      }, 120);
     });
-  }
-
-  /* ================= TESTS ================= */
-  (function runTests() {
-    const assert = (cond, msg) => { if (!cond) throw new Error("Test failed: " + msg); };
-
-    assert(isPrime(2) === true, "2 prime");
-    assert(isPrime(97) === true, "97 prime");
-    assert(isPrime(1) === false, "1 not prime");
-    assert(isPrime(100) === false, "100 not prime");
-
-    assert(JSON.stringify(primeFactorList(12)) === JSON.stringify([2,2,3]), "pf 12");
-    assert(JSON.stringify(primeFactorList(2048)) === JSON.stringify(new Array(11).fill(2)), "pf 2048");
-
-    const fp6 = factorPairs(6);
-    assert(fp6.some(p => p[0] === 2 && p[1] === 3), "pairs 6 includes 2 and 3");
-    assert(fp6.every(p => p[0] >= 2 && p[1] >= 2), "pairs never include 1");
-
-    // Hard picker sanity: should always be within bounds.
-    for (let i = 0; i < 20; i++) {
-      const n = HARD.pick();
-      assert(n >= 2 && n <= CFG.hardMaxN, "hard pick bounds");
-    }
-
-    console.log("Factor tree tests passed");
   })();
-
-  /* ================= BOOT ================= */
-  const state = makeState();
-  ensureDocHandlers(state);
-  state.newPuzzle();
-
-  let _rzTimer = 0;
-  window.addEventListener("resize", () => {
-    clearTimeout(_rzTimer);
-    _rzTimer = setTimeout(() => {
-      const nextH = computeCanvasH();
-      if (nextH !== CFG.canvasH) {
-        CFG.canvasH = nextH;
-        state.render();
-      }
-    }, 120);
-  });
-})();
 </script>
