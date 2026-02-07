@@ -48,6 +48,6 @@
 
 **Real-World Problem**
 
-11. A bowling alley charges \$12 per person plus a one-time lane fee of $18.
-    If your group’s total was \$78, how many people bowled?
+11. A bowling alley charges $\$12$ per person plus a one-time lane fee of $\$18$.
+    If your group’s total was $\$78$, how many people bowled?
 <br><br><br><br><br><br>

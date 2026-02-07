@@ -48,7 +48,7 @@
 
 **Real-World Problem**
 
-11. A rideshare company charges \$4 to start a trip and \$2.50 per mile.
-    If your total cost was \$29, how many miles did you travel?
+11. A rideshare company charges $\$4$ to start a trip and $\$2.50$ per mile.
+    If your total cost was $\$29$, how many miles did you travel?
 
 <br><br><br><br><br><br>

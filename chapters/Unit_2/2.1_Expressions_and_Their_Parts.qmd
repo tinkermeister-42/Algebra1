@@ -20,7 +20,7 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 
 {{< warmup >}}
 
-1. A shirt costs $10. How do you find the total cost of several shirts?  
+1. A shirt costs $\$10$. How do you find the total cost of several shirts?  
 
 2. You have some cookies. You eat 3. How can you show how many are left?  
 
@@ -178,13 +178,13 @@ Constant: -1
 - You have 5 boxes of apples. Each box has **x** apples.  
   Number of apples: $5x$
 
-- You earn $12 per hour for **h** hours.  
+- You earn $\$12$ per hour for **h** hours.  
   Total earnings: $12h$
 
 - Your friend has **n** games. You have 3 more than your friend.  
   Your games: $n + 3$
 
-- A taxi charges $10 plus $2 for each mile **m**.  
+- A taxi charges $\$10$ plus $\$2$ for each mile **m**.  
   Total cost: $10 + 2m$
 
 - A plant starts at **g** inches tall and grows 8 inches.  
@@ -299,7 +299,7 @@ Stories:
 
 20. “Start at 10, then subtract 3 each day $d$.”  
 
-21. “$4 per ticket for $t$ tickets, plus a $6 fee.” 
+21. “$\$4$ per ticket for $t$ tickets, plus a $\$6$ fee.” 
 
 22. “Three groups of $x$, then add 1.” 
 

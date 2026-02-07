@@ -103,8 +103,8 @@ The solution to the system is $(2, 4)$. This is the one point where both equatio
 
 A local gym offers two membership plans:
 
-* **Plan A:** \$10 sign-up fee + \$5 per class
-* **Plan B:** \$25 sign-up fee + \$2 per class
+* **Plan A:** $\$10$ sign-up fee + $\$5$ per class
+* **Plan B:** $\$25$ sign-up fee + $\$2$ per class
 
 Here is a system of equations that models these two plans.
 $$
@@ -120,7 +120,7 @@ The lines meet at $(5, 35)$.
 
 **Interpretation:**
 
-After **5 classes**, both plans cost **\$35**.
+After **5 classes**, both plans cost **$\$35$**.
 Before that, Plan A is cheaper; after that, Plan B is cheaper.
 The {{< glink intersection >}} shows exactly where the two plans balance.
 
@@ -128,8 +128,8 @@ The {{< glink intersection >}} shows exactly where the two plans balance.
 
 **Example 4:** Plumbers and electricians
 
-A plumber charges a flat fee of \$40 plus \$60 per hour.
-An electrician charges \$100 plus \$50 per hour.
+A plumber charges a flat fee of $\$40$ plus $\$60$ per hour.
+An electrician charges $\$100$ plus $\$50$ per hour.
 
 Here is a system that models the service costs:
 
@@ -146,7 +146,7 @@ The lines intersect at $(6, 400)$.
 
 **Interpretation:**
 
-After **6 hours**, both services cost **\$400**.
+After **6 hours**, both services cost **$\$400$**.
 The $x$-value tells when they cost the same, and the $y$-value tells how much that shared cost is.
 
 ***
@@ -174,7 +174,7 @@ Find the solution to the system by graphing and then interpret the solution.
 
 The two lines cross at $(3, 85)$.
 
-That means after **3 months**, both plans cost **\$85**.
+That means after **3 months**, both plans cost **$\$85$**.
 Before that, the second plan is cheaper; after that, the first plan is cheaper.
 
 :::
@@ -481,33 +481,33 @@ Graph each system and find the solution.
 
 6. **Streaming Services**
    
-   One streaming service costs \$8 per month plus \$4 per movie.
-   Another costs \$20 per month plus \$2 per movie.
+   One streaming service costs $\$8$ per month plus $\$4$ per movie.
+   Another costs $\$20$ per month plus $\$2$ per movie.
    When will the two services cost the same?
 
 7. **Taxi vs. Ride-Share**
    
-   A taxi charges \$5 plus \$3 per mile.
-   A ride-share app charges \$2 plus \$4 per mile.
+   A taxi charges $\$5$ plus $\$3$ per mile.
+   A ride-share app charges $\$2$ plus $\$4$ per mile.
    How far do you have to travel before the cost is the same?
 
 8. **Concert Tickets**
    
-   Company A sells tickets for \$30 each plus a \$10 service fee.
-   Company B sells tickets for \$25 each plus a \$20 service fee.
+   Company A sells tickets for $\$30$ each plus a $\$10$ service fee.
+   Company B sells tickets for $\$25$ each plus a $\$20$ service fee.
    How many tickets make the cost equal?
 
 9.  **Gym Memberships**
     
-   Plan A costs \$15 to join and \$20 per month.
-   Plan B costs \$50 to join and \$15 per month.
+   Plan A costs $\$15$ to join and $\$20$ per month.
+   Plan B costs $\$50$ to join and $\$15$ per month.
    After how many months will both plans cost the same?
 
 10. **Movie Tickets**
     
     A group of friends is trying to decide which theater to go to.
-    * Theater A: Tickets cost \$12 each, plus a \$6 service fee.
-    * Theater B: Tickets cost \$10 each, plus a \$12 service fee.
+    * Theater A: Tickets cost $\$12$ each, plus a $\$6$ service fee.
+    * Theater B: Tickets cost $\$10$ each, plus a $\$12$ service fee.
    
     After how many tickets will the total cost be the same?
 
@@ -632,11 +632,11 @@ Graph each system and find the solution.
 3. $(4, 3)$  
 4. $(3, 2)$  
 5. $(3, 5)$
-6. After 6 movies, both cost \$32.
-7. After 3 miles, both cost \$14.
-8. At 2 tickets, cost \$70 each.
-9. After 7 months, both cost \$155.
-10. After 3 tickets, total cost \$42.
+6. After 6 movies, both cost $\$32$.
+7. After 3 miles, both cost $\$14$.
+8. At 2 tickets, cost $\$70$ each.
+9. After 7 months, both cost $\$155$.
+10. After 3 tickets, total cost $\$42$.
 11. $(3, 9)$   
 12. $(4, 0)$   
 13. $(4, 20)$  

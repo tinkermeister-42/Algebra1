@@ -1,6 +1,6 @@
 # 3.6 - Solving Inequalities {.unnumbered}
 
-You have \$20 in your pocket and want to buy some candy at the grocery store. You need to buy bread for \$3.50, and each package of candy costs \$1.25. How many packages of candy can you afford?
+You have $\$20$ in your pocket and want to buy some candy at the grocery store. You need to buy bread for $\$3.50$, and each package of candy costs $\$1.25$. How many packages of candy can you afford?
 
 We might try to model this problem with the following equation.
 
@@ -49,7 +49,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 
 2. Simplify: $3(2x - 5) - (x + 7)$
 
-3. You have \$50 to spend. After buying a \$12 game, you want to get as many \$8 accessories as possible.
+3. You have $\$50$ to spend. After buying a $\$12$ game, you want to get as many $\$8$ accessories as possible.
    How many could you afford *if you spent all your money*?
 
 
@@ -260,11 +260,11 @@ If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 
 Let's revisit the candy problem:
 
-You have \$20, break costs \$3.50, and candy is \$1.25 per package. How many packages can you afford?
+You have $\$20$, break costs $\$3.50$, and candy is $\$1.25$ per package. How many packages can you afford?
 
 Let $c$ be the number of packages you purchase. The expression $3.5 + 1.25c$ will give you the cost of purchasing the candy with a loaf of bread.
 
-To find the largest number of packages you can purchase, you have to set up the inequality so that the total spent is less than or equal to \$20.
+To find the largest number of packages you can purchase, you have to set up the inequality so that the total spent is less than or equal to $\$20$.
 
 $$
 3.5 + 1.25c \le 20
@@ -334,27 +334,27 @@ Write an inequality to model each situation, then solve.
 
 16. You must be at least 48 inches tall to ride the roller coaster. Let $h$ represent your height.
 
-17. You can spend no more than \$30 at the store. You buy a sandwich for \$6 and drinks that cost \$2 each. How many drinks can you buy?
+17. You can spend no more than $\$30$ at the store. You buy a sandwich for $\$6$ and drinks that cost $\$2$ each. How many drinks can you buy?
 
-18. A babysitter charges \$25 plus \$12 per hour. If you can spend up to \$85, how many hours can they work?
+18. A babysitter charges $\$25$ plus $\$12$ per hour. If you can spend up to $\$85$, how many hours can they work?
 
 19. You already have 14 stickers. You want at least 30 total. How many more do you need?
 
-20. A concert ticket costs \$42, and each parking pass costs \$8. You have \$90. How many parking passes can you buy?
+20. A concert ticket costs $\$42$, and each parking pass costs $\$8$. You have $\$90$. How many parking passes can you buy?
 
-21. A taxi ride costs \$3 plus \$0.75 per mile. You have \$15. How many miles can you ride?
+21. A taxi ride costs $\$3$ plus $\$0.75$ per mile. You have $\$15$. How many miles can you ride?
 
 22. A water tank starts with 20 gallons and drains 2 gallons per minute. After how many minutes will it have less than 8 gallons left?
 
-23. A group rents a bus for \$200 plus \$15 per person. If they can spend at most \$500, how many people can go?
+23. A group rents a bus for $\$200$ plus $\$15$ per person. If they can spend at most $\$500$, how many people can go?
 
 ***
 
 **Challenge Problems**
 
-24. You’re designing bracelets using beads that cost \$0.40 each plus a \$2 setup fee per bracelet. You have \$20. Write and solve an inequality to find the greatest number of beads you can use.
+24. You’re designing bracelets using beads that cost $\$0.40$ each plus a $\$2$ setup fee per bracelet. You have $\$20$. Write and solve an inequality to find the greatest number of beads you can use.
 
-25. A movie theater sells student tickets for \$7 and adult tickets for \$10. If the theater makes at least \$400 from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?
+25. A movie theater sells student tickets for $\$7$ and adult tickets for $\$10$. If the theater makes at least $\$400$ from a show and sells 20 adult tickets, what is the smallest number of student tickets sold?
 
 ***
 :::{.answers}

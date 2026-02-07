@@ -25,8 +25,8 @@
    <br><br>
 
 3. **Word Problem:**
-   A small catering order included a \$6 delivery fee.
-   The total cost for five identical meals was \$41.
+   A small catering order included a $\$6$ delivery fee.
+   The total cost for five identical meals was $\$41$.
    Write and solve an equation to find the price of each meal. <br><br><br>
 
 <div style="page-break-after: always;"></div>

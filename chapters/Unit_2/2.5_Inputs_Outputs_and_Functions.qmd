@@ -261,7 +261,7 @@ Functions don’t just show up in math class—they model real situations. In sc
 
 **Example 6:** Cellphone data plan
 
-A data plan charges a \$50 flat fee per month plus \$0.10 per Gb. How much will you pay if you use 80 Gb?
+A data plan charges a $\$50$ flat fee per month plus $\$0.10$ per Gb. How much will you pay if you use 80 Gb?
 
 We can model the total cost with the function
 
@@ -281,7 +281,7 @@ C(80) &= 50 + 0.1(80) \\
 \end{aligned}
 $$
 
-The total cost is **\$58**.
+The total cost is **$\$58$**.
 
 ***
 
@@ -306,7 +306,7 @@ $$
 25°C = **77°F**
 
 :::{.you-try-m title="How much will you earn?"}
-You are paid \$12 per hour plus a \$15 bonus. You can represent your pay using
+You are paid $\$12$ per hour plus a $\$15$ bonus. You can represent your pay using
 
 $$
 P(h) = 12h + 15
@@ -319,7 +319,7 @@ How much do you make if you work for 40 hours?
 
 :::{.answer title="Answer"}
 $P(40) = 12(40) + 15 = 480 + 15 = 495$
-You make **\$495**.
+You make **$\$495$**.
 :::
 
 
@@ -396,13 +396,13 @@ Want some practice building your understanding of function rules? Check out the 
 
 **Real-world applications:**
 
-16. A taxi charges \$4 plus \$2 per mile. Write a function $C(m)$ for the cost of a ride with $m$ miles. How much is a 10-mile ride?
+16. A taxi charges $\$4$ plus $\$2$ per mile. Write a function $C(m)$ for the cost of a ride with $m$ miles. How much is a 10-mile ride?
 
 17. A video game character earns 50 points per level plus a 100-point bonus. Write a function $P(\ell)$ for total points after $\ell$ levels. How many points after 6 levels?
 
 18. The temperature in Celsius is given. Use $F(C)=\tfrac{9}{5}C+32$ to convert $C=0$ and $C=100$.
 
-19. You earn \$15 per hour mowing lawns. Write a function $E(h)$. How much do you earn in 12 hours?
+19. You earn $\$15$ per hour mowing lawns. Write a function $E(h)$. How much do you earn in 12 hours?
 
 **Mixed practice:**
 
@@ -427,7 +427,7 @@ Want some practice building your understanding of function rules? Check out the 
     
     c. $f(g(x))$.
 
-25. A carnival charges \$5 to enter plus \$3 per ride.
+25. A carnival charges $\$5$ to enter plus $\$3$ per ride.
     a. Write a function $C(r)$ for cost after $r$ rides.
     b. Tickets are sold in multiples of 5 rides. Use your function to complete the table:
 

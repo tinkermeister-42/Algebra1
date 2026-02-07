@@ -169,21 +169,21 @@ Examples:
 ![](/images/Unit_1/Lesson_1/add_6_to_neg2.png)
 
 :::{.real-world}
-Imagine that you are \$2 in debt. If someone pays you \$6 you can pay off the debt and have \$$4$ left over.
+Imagine that you are $\$2$ in debt. If someone pays you $\$6$ you can pay off the debt and have $\$4$ left over.
 :::
 
 2. Adding a negative: $150 + (-5) = 145$
 ![](/images/Unit_1/Lesson_1/add_neg5_to_150.png)
 
 :::{.real-world}
-You have \$150 in the bank. The bank adds a fee for being under their \$200 minimum balance. You now have \$145.
+You have $\$150$ in the bank. The bank adds a fee for being under their $\$200$ minimum balance. You now have $\$145$.
 :::
 
 3. Subtraction: $400 - 450 = -50$ 
 ![](/images/Unit_1/Lesson_1/subtract_450_from_400.png)
 
 :::{.real-world}
-If you only have \$400 but spend \$450 on a credit card, you are now \$50 in debt.
+If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ in debt.
 :::
 
 4. Subtracting a negative: $201 - (-5) = 206$
@@ -192,7 +192,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 :::{.think title="What real-world scenario could $201 - (-5) = 206$ represent?"}
 
 > Example:
-> The bank made a mistake, you had \$$201$ in your account so they took off the \$$5$ fee. Now you have \$$206$.
+> The bank made a mistake, you had $\$201$ in your account so they took off the $\$5$ fee. Now you have $\$206$.
 :::
 
 {{< practice >}}
@@ -280,7 +280,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
 
     b. A diver is 45 feet below sea level. She dives 30 feet deeper. How far down is she?
 
-    c. Your bank account is at -\$8. You deposit \$5. What is your new balance?
+    c. Your bank account is at -$\$8$. You deposit $\$5$. What is your new balance?
 
 ***
 
@@ -374,7 +374,7 @@ If you only have \$400 but spend \$450 on a credit card, you are now \$50 in deb
     b.  75 feet down
         
         ![](/images/Unit_1/Lesson_1/answer_14_b.png)
-    c.  -\$3
+    c.  -$\$3$
         
         ![](/images/Unit_1/Lesson_1/answer_14_c.png)
 

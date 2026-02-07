@@ -27,9 +27,9 @@ c. $\tfrac{5}{6}$ — decimal: \_\_\_\_\_\_\_\_
 
 **3. I can compare and order fractions, decimals, and percents in real-world situations**
 
-Three stores are discounting jackets originally priced at **\$120**:
+Three stores are discounting jackets originally priced at **$\$120$**:
 
-* Store A: **\$20 off**
+* Store A: **$\$20$ off**
 * Store B: **15% off**
 * Store C: **“$\tfrac{1}{4}$ off”**
 
@@ -70,7 +70,7 @@ c. What percent is $35$ out of $56$? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **7. I can use percents to solve problems involving grades, sales, and survey results**
 
-a. An \$85 backpack is $20\%$ off. After the discount, $9\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
+a. An $\$85$ backpack is $20\%$ off. After the discount, $9\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
 Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 b. In a survey of $250$ students, $52\%$ prefer drama. How many students is that? \_\_\_\_\_\_

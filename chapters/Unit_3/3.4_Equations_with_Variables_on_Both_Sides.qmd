@@ -274,7 +274,7 @@ When two different plans or expressions both describe the **same total**, we oft
 
 **Example 6:** Two pay plans
 
-Alex earns a \$6 bonus plus \$15 per hour. Blair earns a \$18 bonus plus \$12 per hour.
+Alex earns a $\$6$ bonus plus $\$15$ per hour. Blair earns a $\$18$ bonus plus $\$12$ per hour.
 After how many hours will they earn the same amount?
 
 Let $h$ be the number of hours.
@@ -341,13 +341,13 @@ So **$x = 6$**.
 
 **Example 8:** Two vendors, same total
 
-Vendor A sells sweatshirts for \$18 each, includes **2 free**, and charges \$12 shipping.
-Vendor B sells sweatshirts for \$15 each with a flat \$42 shipping.
+Vendor A sells sweatshirts for $\$18$ each, includes **2 free**, and charges $\$12$ shipping.
+Vendor B sells sweatshirts for $\$15$ each with a flat $\$42$ shipping.
 For how many sweatshirts do the totals match?
 
 Let $s$ be the number of sweatshirts ordered.
 
-Vendor A total: pay for $(s-2)$ shirts (because 2 are free) and add \$12 shipping
+Vendor A total: pay for $(s-2)$ shirts (because 2 are free) and add $\$12$ shipping
 
 $$
 18(s - 2) + 12
@@ -390,8 +390,8 @@ The totals match at **22 sweatshirts**.
 ***
 
 :::{.you-try-m title="Break-Even Subscriptions"}
-Plan A costs \$8 per month plus \$3 per premium movie.
-Plan B costs \$2 per month plus \$5 per premium movie.
+Plan A costs $\$8$ per month plus $\$3$ per premium movie.
+Plan B costs $\$2$ per month plus $\$5$ per premium movie.
 For how many premium movies will the plans cost the same in a month?
 :::
 
@@ -477,16 +477,16 @@ They match at **3 movies**.
 
 21. Competing Streaming Plans
 
-    * Plan A charges $10 per month plus $4 per movie.
-    * Plan B charges $6 per month plus $5 per movie.
+    * Plan A charges $\$10$ per month plus $\$4$ per movie.
+    * Plan B charges $\$6$ per month plus $\$5$ per movie.
 
     After how many movies will the total monthly cost be the same?
 
 
 22. Two Lawn Services
 
-    * Service A charges $25 per visit plus $15 per hour of mowing.
-    * Service B charges $40 per visit plus $10 per hour.
+    * Service A charges $\$25$ per visit plus $\$15$ per hour of mowing.
+    * Service B charges $\$40$ per visit plus $\$10$ per hour.
 
     After how many hours will the total costs be equal?
 
@@ -506,8 +506,8 @@ They match at **3 movies**.
 
     Two contractors are bidding to build a concert stage.
 
-    * Contractor A charges a \$1,200 setup fee plus \$35 for every square meter more than the base design.
-    * Contractor B charges \$50 per square meter but offers a \$300 discount if the stage is small.
+    * Contractor A charges a $\$1200$ setup fee plus $\$35$ for every square meter more than the base design.
+    * Contractor B charges $\$50$ per square meter but offers a $\$300$ discount if the stage is small.
 
     For what size of stage (in square meters beyond the base design) will their total prices be the same?
 

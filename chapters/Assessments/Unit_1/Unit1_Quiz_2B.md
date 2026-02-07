@@ -27,9 +27,9 @@ c. $\tfrac{5}{24}$ — decimal: \_\_\_\_\_\_\_\_
 
 **3. I can compare and order fractions, decimals, and percents in real-world situations**
 
-Three stores are discounting headphones originally priced at **\$180**:
+Three stores are discounting headphones originally priced at **$\$180$**:
 
-* Store A: **\$60 off**
+* Store A: **$\$60$ off**
 * Store B: **35% off**
 * Store C: **“$\tfrac{1}{2}$ off”**
 
@@ -70,7 +70,7 @@ c. What percent is $18$ out of $24$? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **7. I can use percents to solve problems involving grades, sales, and survey results**
 
-a. A \$60 pair of shoes is $15\%$ off. After the discount, $8\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
+a. A $\$60$ pair of shoes is $15\%$ off. After the discount, $8\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
 Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 b. In a survey of $200$ students, $37\%$ prefer pizza. How many students is that? \_\_\_\_\_\_

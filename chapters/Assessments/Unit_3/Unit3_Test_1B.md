@@ -25,7 +25,7 @@
    <br><br>
 
 3. **Word Problem:**
-   After paying a \$5 service fee, the total for four identical sketchbooks was \$29.
+   After paying a $\$5$ service fee, the total for four identical sketchbooks was $\$29$.
    Write and solve an equation to find the price of each sketchbook. 
    
    <br><br><br>

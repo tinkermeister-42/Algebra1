@@ -194,14 +194,14 @@ John got an 80% which is a B.
 
 **Example 5:** Sales & Discounts
 
-A clothing store is having a back-to-school sale. A $60 jacket is on sale for 25% off. 
+A clothing store is having a back-to-school sale. A $\$60$ jacket is on sale for 25% off. 
 
 **What’s the new price?**
 
 
-First, find the {{< glink discount >}} by asking "What is 25% of $60?":
+First, find the {{< glink discount >}} by asking "What is 25% of $\$60$?":
 
-| what | is | 25%  | of | $60? |
+| what | is | 25%  | of | $\$60$? |
 | ---- | -- | ---- | -- | --- |
 | ?    | =  | 0.25 | ×  | 60  |
 
@@ -209,19 +209,19 @@ $$
 0.25 \times 60 = 15
 $$
 
-This tells us we will **save** $15. To find the new price we subtract:
+This tells us we will **save** $\$15$. To find the new price we subtract:
 
 $$
 60 - 15 = 45
 $$
 
-The jacket now costs **$45**.
+The jacket now costs **$\$45$**.
 
-:::{.you-try title="Swanhilda finds a $300 prom dress on sale at 65% off. What does the dress cost?"}
+:::{.you-try title="Swanhilda finds a $\$300$ prom dress on sale at 65% off. What does the dress cost?"}
 
 Find the discount:
 
-| what | is | 65%  | of | $300? |
+| what | is | 65%  | of | $\$300$? |
 | ---- | -- | ---- | -- | --- |
 | ?    | =  | 0.65 | ×  | 300  |
 
@@ -232,7 +232,7 @@ Now subtract to get the sale price:
 $$
 300 - 195 = 105
 $$
-Swanhilda pays $105 for the dress. What a steal!
+Swanhilda pays $\$105$ for the dress. What a steal!
 :::
 
 ***
@@ -295,9 +295,9 @@ $$
 
 10. A student scores 27 out of 30 on one test and 42 out of 50 on another. What percent of the total points did they earn?
 
-11. A backpack is 25% off. The original price was $80. What is the discount? What’s the new price?
+11. A backpack is 25% off. The original price was $\$80$. What is the discount? What’s the new price?
 
-12. A restaurant offers 30% off drinks during happy hour. A soda usually costs $3.50. What is the discount? What is the happy hour price?
+12. A restaurant offers 30% off drinks during happy hour. A soda usually costs $\$3.50$. What is the discount? What is the happy hour price?
 
 13. A survey shows 68% of people prefer cats to dogs. If 250 people were asked, how many chose dogs?
 
@@ -310,7 +310,7 @@ $$
 15. A class has 24 students. 1/3 are in choir, 25% are in band. The rest of the students are in art.  
 What percent of students are in art class?
 
-16. A shirt is marked down by 40%. It now costs $27. What was the original price?
+16. A shirt is marked down by 40%. It now costs $\$27$. What was the original price?
 
 17. You have 88% of 325 points in Algebra. The last exam has 50 questions and is worth 100 points. If it takes 90% to get an A, is it possible to get an A in the class? If so, how many points do you need to score on the exam?
 
@@ -345,8 +345,8 @@ What percent of students are in art class?
 
 9. 80% 
 10. 86.25%
-11. Discount: $20, Price: $60 
-12. Discount: $1.05, Price: $2.45
+11. Discount: $\$20$, Price: $\$60$ 
+12. Discount: $\$1.05$, Price: $\$2.45$
 13. 80 chose dogs 
 14. 2000 fidget spinners  
 

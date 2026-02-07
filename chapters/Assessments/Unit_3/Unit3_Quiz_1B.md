@@ -48,6 +48,6 @@
 
 **Real-World Problem**
 
-11. A cell-phone plan costs \$20 per month plus \$5 for each gigabyte of data.
-    If your total bill was \$65, how many gigabytes did you use?
+11. A cell-phone plan costs $\$20$ per month plus $\$5$ for each gigabyte of data.
+    If your total bill was $\$65$, how many gigabytes did you use?
 <br><br><br><br><br><br>

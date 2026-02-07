@@ -32,9 +32,9 @@ c. $\tfrac{6}{20}$ — decimal: \_\_\_\_\_\_\_\_
 
 **3. I can compare and order fractions, decimals, and percents in real-world situations**
 
-Three stores are having a sale on coats with an original price of \$250. Here are the deals they offer.
+Three stores are having a sale on coats with an original price of $\$250$. Here are the deals they offer.
 
-* Store A: **\$100 off**
+* Store A: **$\$100$ off**
 * Store B: **45% off**
 * Store C: **“$\tfrac{1}{2}$ off”**
 
@@ -81,7 +81,7 @@ c. What percent is $45$ out of $60$? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 **7. I can use percents to solve problems involving grades, sales, and survey results**
 
-a. A \$40 shirt is $25\%$ off. After the discount, $8\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
+a. A $\$40$ shirt is $25\%$ off. After the discount, $8\%$ sales tax is added. What is the final price? (Round to the nearest cent.)
 Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 b. In a survey of $120$ students, $45\%$ prefer soccer. How many students is that? \_\_\_\_\_\_

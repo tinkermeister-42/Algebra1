@@ -1,12 +1,12 @@
 # 2.4 - The Distributive Property {.unnumbered}
 
-Imagine your football (soccer) team wants to order new jerseys. Each jersey costs \$25, and to add your team’s logo it’s another \$5 per jersey.
+Imagine your football (soccer) team wants to order new jerseys. Each jersey costs $\$25$, and to add your team’s logo it’s another $\$5$ per jersey.
 
 Since there are 11 players on the team, you need 11 jerseys. You could figure out the total cost in two different ways:
 
-First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = \$330.
+First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = \$30.
 
-Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = \$330.
+Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = $\$330$.
 
 Either way, you get the same answer. What we just did actually followed a rule in algebra called the {{< glink "distributive property" >}}. Today, we’re going to see how this property helps us simplify expressions.
 

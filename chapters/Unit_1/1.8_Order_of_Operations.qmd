@@ -386,12 +386,12 @@ This might feel like just number-crunching, but it lays the foundation for Algeb
 Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you can’t simplify numbers correctly, the rest will fall apart.
 
 :::{.real-world title="Coupons and Gift Cards"}
-You get a 25% off coupon and a $10 gift card. The item costs $40.
+You get a $25\%$ off coupon and a $\$10$ gift card. The item costs $\$40$.
 
 Which should be applied first?
 
-* 25% off first → $40 × 0.75 = $30 → $30 - $10 = **$20**
-* Gift card first → $40 - $10 = $30 → 25% off = $22.50
+* $25\%$ off first → $\$40$ × $0.75$ = $\$30$ → $\$30$ - $\$10$ = **$\$20$**
+* Gift card first → $\$40$ - $\$10$ = $\$30$ → $25\%$ off = $\$22.50$
 
 Same ingredients, different result. Order matters!
 :::

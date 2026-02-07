@@ -422,7 +422,7 @@ A discount is an amount **taken off the original price**. It’s usually shown a
 
 > **Example:**  
 >   
-> A 25% discount on a $40 shirt means you save $10. You pay $30.
+> A 25% discount on a $40 shirt means you save $10. You pay $\$30$.
 
 **See Also:** {{< glink markup >}}
 
@@ -1221,7 +1221,7 @@ A markup is the **amount added to a cost** to set a higher selling price, usuall
 
 > **Example:**  
 >   
-> If a store buys a toy for $10 and adds a 50% markup, the price becomes $15.
+> If a store buys a toy for $10 and adds a 50% markup, the price becomes $\$15$.
 
 **See Also:** {{< glink discount >}}
 

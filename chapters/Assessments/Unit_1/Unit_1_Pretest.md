@@ -81,7 +81,7 @@ c) Order from least to greatest: $\tfrac{1}{2},\; 0.3,\; 25\%$
 
 ## 6. Solving with Fractions, Decimals & Percents
 
-a) A shirt is $25\%$ off and now costs \$18. What was the original price? 
+a) A shirt is $25\%$ off and now costs $\$18$. What was the original price? 
 <br>
 <br>
 

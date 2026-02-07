@@ -44,7 +44,7 @@ Check at least one of your answers by substitution.
 
 10. $7x - 4 = 3x + 12$
 
-11. A movie ticket costs $12 plus $3 for each snack. You spent $27.
+11. A movie ticket costs $12 plus $3 for each snack. You spent $\$27$.
 Write and solve an equation to find how many snacks you bought.
 
 ***
@@ -108,7 +108,7 @@ Solve and graph on a number line.
 
 29. $5(x - 3) > 10$
 
-30. You have $50. You buy a game for $14 and plan to get several snacks costing $4 each.
+30. You have $\$50$. You buy a game for $14 and plan to get several snacks costing $\$4$ each.
 Write and solve an inequality to find how many snacks you can afford.
 
 ***

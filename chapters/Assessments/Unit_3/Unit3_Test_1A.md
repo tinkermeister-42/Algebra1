@@ -25,7 +25,7 @@
    <br><br>
 
 3. **Word Problem:**
-   After paying a \$4 delivery fee, the total for three identical notebooks was \$19.
+   After paying a $\$4$ delivery fee, the total for three identical notebooks was $\$19$.
    Write and solve an equation to find the price of each notebook. 
    
    <br><br><br>

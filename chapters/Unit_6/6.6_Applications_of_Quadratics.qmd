@@ -321,9 +321,9 @@ Quadratics are also used to model revenue and profit.
 
 **Example 3**
 
-A school sells tickets to a play. If tickets cost $\$10$,  $80$ tickets are sold. For every $1 increase in price, $5$ fewer tickets are sold.
+A school sells tickets to a play. When tickets cost $\$10$ each,  $80$ tickets are sold. For every $1 increase in price, $5$ fewer tickets are sold.
 
-Let $x$ be the number of $1 increases.
+Let $x$ be the number of $\$1$ increases.
 
 Price: $10 + x$  
 Tickets sold: $80 - 5x$
@@ -362,7 +362,7 @@ $$
 R(3) = (13)(65) = 845
 $$
 
-So the maximum revenue is $845.
+So the maximum revenue is $\$845$.
 
 ***
 

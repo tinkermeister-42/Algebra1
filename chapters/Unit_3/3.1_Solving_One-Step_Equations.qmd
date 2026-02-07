@@ -354,7 +354,7 @@ For each, **solve and then check your solution** by substituting back into the o
 Set up and solve each situation with a one-step equation.
 
 23. **Paycheck problem:**
-    After buying a video game for \$38, Jasmine has \$25 left. Write and solve an equation to find how much money she had before buying the game.
+    After buying a video game for $\$38$, Jasmine has $\$25$ left. Write and solve an equation to find how much money she had before buying the game.
 
 24. **Distance problem:**
     A car is traveling at 65 miles per hour. After $h$ hours, the car traveled 325 miles. Write and solve an equation to find how many hours the trip was.

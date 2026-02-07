@@ -20,7 +20,7 @@ With one-step equations, we identified the operation and did the opposite to bot
 
 2. Solve $x - 3 = 10$ for $x$. Check your solution.
 
-3. A carnival charges \$5 for entry and \$2 per ride. Alice paid a total of \$35. Write an equation to find the number of rides Alice went on.
+3. A carnival charges $\$5$ for entry and $\$2$ per ride. Alice paid a total of $\$35$. Write an equation to find the number of rides Alice went on.
 
 {{< learn >}}
 
@@ -171,7 +171,7 @@ Equations are especially useful when a situation involves **two operations**. Le
 
 **Example 4:** Babysitting
 
-A babysitter charges \$10 for travel plus \$8 per hour. The total charge was \$42. How many hours did the babysitter work?
+A babysitter charges $\$10$ for travel plus $\$8$ per hour. The total charge was $\$42$. How many hours did the babysitter work?
 
 Let $h$ be the number of hours worked.
 
@@ -199,7 +199,7 @@ The babysitter worked **4 hours**.
 
 **Example 5:** Cellphone plan
 
-A phone plan charges \$25 each month plus \$0.05 per text. Last month the bill was \$32. How many texts were sent?
+A phone plan charges $\$25$ each month plus $\$0.05$ per text. Last month the bill was $\$32$. How many texts were sent?
 
 Let $t$ be the number of texts sent.
 
@@ -262,7 +262,7 @@ The width of the rectangle is **4cm**.
 
 :::{.you-try-m title="Gym Membership"}
 
-A gym membership is \$20 plus \$15 per class. Your total cost was \$65. How many classes did you attend?
+A gym membership is $\$20$ plus $\$15$ per class. Your total cost was $\$65$. How many classes did you attend?
 
 :::
 
@@ -330,9 +330,9 @@ You attended **3 classes**.
 
 **Word Problems**
 
-19. A taxi charges \$1.20 to start plus \$0.50 per mile. Your bill was \$6.20. How many miles did you travel?
+19. A taxi charges $\$1.20$ to start plus $\$0.50$ per mile. Your bill was $\$6.20$. How many miles did you travel?
 
-20. A movie theater charges \$9 for admission and \$4 for popcorn. If your total was \$25, how many popcorns did you buy?
+20. A movie theater charges $\$9$ for admission and $\$4$ for popcorn. If your total was $\$25$, how many popcorns did you buy?
 
 21. The temperature in Celsius is given by $C = \frac{5}{9}(F - 32)$. If $C=30$, what is the temperature in degrees Fahrenheit, $F$?
 

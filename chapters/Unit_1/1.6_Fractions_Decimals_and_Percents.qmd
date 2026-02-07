@@ -48,7 +48,7 @@ A **fraction** shows how many parts out of a total. We often use them when:
 
 A **decimal** uses place value and powers of 10. Decimals can be used for:
 
-- Dealing with money: "This costs $4.75."
+- Dealing with money: "This costs $\$4.75$."
 - Measuring length or weight: "The board is 2.5 feet long."
 - Reporting data or averages: "The average was 3.6 stars."
 
