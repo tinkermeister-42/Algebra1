@@ -29,23 +29,66 @@ They model real situations involving height, distance, area, revenue, and time. 
 
 {{< learn >}}
 
-### 6.6.1 : Quadratics as Models
+### 6.6.1 - Quadratics as Models
 
-A quadratic model is an equation of the form
+A quadratic model is a function of the form
 
 $$
-y = ax^2 + bx + c
+f(x) = ax^2 + bx + c
 $$
 
 that represents a real situation.
 
 Because parabolas curve, quadratic models are useful when something rises and then falls, increases and then decreases, or has a maximum or minimum value.
 
-The vertex plays a key role. It often represents the highest point, the lowest point, the maximum profit, or the minimum cost.
+The **vertex** plays a key role. It often represents the highest point, the lowest point, the maximum profit, or the minimum cost.
+
+The **intercepts** are important as well. In projectile motion, for example, the $y$-intercept is often the starting height, and the $x$-intercepts indicate when the projectile hits the ground.
+
+---
+
+#### Using Features of a Parabola in Real Situations
+
+When a quadratic is used as a model, different parts of the graph answer different questions. The table below shows what each feature often represents in real life.
+
+| Feature of the parabola    | What it tells us                                 | Example situations                                                     |
+| -------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------- |
+| **Vertex**                 | The highest or lowest value of the situation     | Maximum height of a ball, highest profit, minimum cost                 |
+| **$y$-intercept**          | The starting value when $x = 0$                  | Starting height, initial amount of money, starting population          |
+| **$x$-intercepts** | When the quantity becomes zero                   | When an object hits the ground, when profit is zero, break-even points |
+| **Axis of symmetry**       | The point where the situation switches direction | When something stops increasing and starts decreasing                  |
+| **Opening direction**      | Whether the situation has a maximum or minimum   | Downward opening for max height, upward opening for min cost           |
+
+
+:::{.you-try-m title="Pick a feature."}
+
+For each of the following, decide which feature of a parabola would be most useful.
+
+a. A ball is thrown from a cliff. How tall is the cliff?
+
+b. A skateboarder rides on a ramp. How long does it take to reach the bottom?
+
+c. A small business makes money selling shirts. How many shirts do they need to sell to break even?
+
+d. A rocket is fired into the air. How high does the rocket go before coming back down to earth?
+
+:::
+
+:::{.answer title="Answers"}
+
+a. The $y$-intercept
+
+b. The $x$ coordinate for the vertex
+
+c. The $x$-intercepts
+
+d. The $y$-coordinate of the vertex
+
+:::
 
 ***
 
-### 6.6.2 : Projectile Motion
+### 6.6.2 - Projectile Motion
 
 One common application of quadratics is projectile motion.
 
@@ -74,7 +117,7 @@ $$
 
 **Step 1 : Find when it hits the ground**
 
-Set the height equal to zero.
+The ball hits the ground when its height is zero. If we set $h(t) = 0$, we can solve for $t$ to find the time the ball hits the ground.
 
 $$
 -16t^2 + 20t + 5 = 0
@@ -94,13 +137,19 @@ $$
 t = \frac{-20 \pm 12\sqrt{5}}{-32}
 $$
 
-The positive time is:
+There are two solutions, one positive and one negative. In this situation, a negative time would mean the ball hit the ground in the past. That doesn't make sense so we ignore that solution.
+
+The postive time:
 
 $$
 t = \frac{-20 - 12\sqrt{5}}{-32} = \frac{5 + 3\sqrt{5}}{8} \approx 1.46
 $$
 
-So the ball hits the ground after about $1.46$ seconds. We ignore the negative time because time cannot be negative in this situation.
+So the ball hits the ground after about $1.46$ seconds.
+
+:::{.gotcha title="Interpreting solutions"}
+Quadratic equations often produce two solutions. In applications, you must decide which solutions make sense in context. Negative time, negative length, or negative area usually do not apply.
+:::
 
 ---
 
@@ -174,7 +223,7 @@ $$
 
 ***
 
-### 6.6.3 : Area Problems
+### 6.6.3 - Area Problems
 
 Quadratics also appear in area situations.
 
@@ -211,15 +260,60 @@ Only $x=8$ makes sense because a length cannot be negative.
 
 Width is $8$ feet and length is $12$ feet.
 
-***
+:::{.you-try-m title="Pool With a Walkway"}
 
-:::{.note title="Interpreting solutions"}
-Quadratic equations often produce two solutions. In applications, you must decide which solutions make sense in context. Negative time, negative length, or negative area usually do not apply.
+A rectangular pool is surrounded by a **2-foot-wide walkway** on all sides.  
+The total area of the pool **and** the walkway is **192 square feet**.  
+The pool itself is **4 feet longer than it is wide**.
+
+Find the dimensions of the pool.
+:::
+
+:::{.answer title="Answer"}
+
+Let the pool’s width be $w$ feet.  
+Then the pool’s length is $w + 4$ feet.
+
+The walkway is $2$ feet wide on all sides, so it adds $4$ feet to each dimension.
+
+Outside width: $w + 4$  
+Outside length: $(w + 4) + 4 = w + 8$
+
+The total area of the pool and walkway is $192$ square feet, so:
+
+$$
+(w + 4)(w + 8) = 192
+$$
+
+Expand:
+
+$$
+w^2 + 12w + 32 = 192
+$$
+
+Subtract $192$ from both sides:
+
+$$
+w^2 + 12w - 160 = 0
+$$
+
+Factor:
+
+$$
+(w + 20)(w - 8) = 0
+$$
+
+So $w = -20$ or $w = 8$.  
+Width can't be negative so we ignore $-20$.
+
+The pool’s width is $8$ feet.  
+The pool’s length is $8 + 4 = 12$ feet.
+
 :::
 
 ***
 
-### 6.6.4 : Revenue and Profit
+### 6.6.4 - Revenue and Profit
 
 Quadratics are also used to model revenue and profit.
 
@@ -227,7 +321,7 @@ Quadratics are also used to model revenue and profit.
 
 **Example 3**
 
-A school sells tickets to a play. If tickets cost $10$, $80$ tickets are sold. For every $1 increase in price, $5$ fewer tickets are sold.
+A school sells tickets to a play. If tickets cost $\$10$,  $80$ tickets are sold. For every $1 increase in price, $5$ fewer tickets are sold.
 
 Let $x$ be the number of $1 increases.
 
@@ -447,30 +541,5 @@ Explain what the vertex represents.
    Maximum area is $100$ square units.
 
 10. They could represent two times when a projectile is at ground height, or two times when a quantity equals zero, such as profit breaking even.
-
-**Challenge Problems**
-
-11. Example situation: the height of an object thrown upward.
-    The vertex represents the maximum height and when it occurs.
-
-12. Zeros at $t=0$ and $t=5$:
-    $$
-    h(t)=a t(t-5)
-    $$
-    Vertex time is midpoint:
-    $$
-    t=\frac{0+5}{2}=2.5
-    $$
-    Given maximum height $64$ at $t=2.5$:
-    $$
-    64=a(2.5)(-2.5)=a(-6.25)
-    $$
-    $$
-    a=-\frac{64}{6.25}=-\frac{256}{25}
-    $$
-    One possible model:
-    $$
-    h(t)=-\frac{256}{25}t(t-5)
-    $$
 
 :::

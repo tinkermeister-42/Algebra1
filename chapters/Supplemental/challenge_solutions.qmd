@@ -511,3 +511,31 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 27. $4x^2 - 6x - 1 = 0$  
 
 :::
+
+### 6.6 - Applications of Quadratics
+
+:::{.answers}
+
+11. Example situation: the height of an object thrown upward.
+    The vertex represents the maximum height and when it occurs.
+
+12. Zeros at $t=0$ and $t=5$:
+    $$
+    h(t)=a t(t-5)
+    $$
+    Vertex time is midpoint:
+    $$
+    t=\frac{0+5}{2}=2.5
+    $$
+    Given maximum height $64$ at $t=2.5$:
+    $$
+    64=a(2.5)(-2.5)=a(-6.25)
+    $$
+    $$
+    a=-\frac{64}{6.25}=-\frac{256}{25}
+    $$
+    One possible model:
+    $$
+    h(t)=-\frac{256}{25}t(t-5)
+    $$
+:::
