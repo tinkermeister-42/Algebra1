@@ -95,3 +95,9 @@
   page-break-before: always;
   break-before: page;
 }
+
+/* Don't allow line breaks in inline math */
+
+.math.inline {
+  white-space: nowrap;
+} 
