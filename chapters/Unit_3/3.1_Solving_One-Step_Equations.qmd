@@ -97,7 +97,7 @@ a &= 3
 \end{aligned}
 $$
 
-:::{.you-try title="Solve $x + 9 = 11$."}
+:::{.you-try title="Solve $x + 9 = 11$"}
 
 $$
 \begin{aligned}
