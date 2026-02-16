@@ -16,6 +16,7 @@ format:
     theme:
       - flatly
     css:
+      - styles/widget-themes.css
       - styles/glossary-tooltips.css
       - styles/custom-callouts.css
       - styles/custom-general.css

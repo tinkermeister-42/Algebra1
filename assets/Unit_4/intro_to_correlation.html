@@ -7,7 +7,7 @@
     --cw-track-h: 28px;
     --cw-thumb:   18px;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    background: #fff !important;
+    background: #f9fafb !important;
     max-width: 600px;
     margin: 0rem auto;
   }
@@ -23,7 +23,7 @@
     align-items: center;
     column-gap: 10px;
     row-gap: 6px;
-    border: 1px solid #eee;
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
     padding: 6px 8px;
     margin-bottom: 8px;
@@ -32,7 +32,7 @@
 
   .correlation-widget .cw-label {
     grid-area: label;
-    color: #555;
+    color: #475569;
     font-size: .95rem;
     white-space: nowrap;
   }
@@ -66,9 +66,9 @@
   /* Thicker track & larger thumb — WebKit/Blink */
   .correlation-widget .cw-slider::-webkit-slider-runnable-track {
     height: var(--cw-track-h);
-    background: #e9ecef;
+    background: #e2e8f0;
     border-radius: 999px;
-    border: 1px solid #dde2e6;
+    border: 1px solid #e2e8f0;
   }
   .correlation-widget .cw-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -77,24 +77,24 @@
     width: var(--cw-thumb);
     border-radius: 50%;
     margin-top: calc((var(--cw-track-h) - var(--cw-thumb)) / 2);
-    background: #1976d2;
-    border: 2px solid #125a9e;
+    background: #2563eb;
+    border: 2px solid #1d4ed8;
     box-sizing: border-box;
   }
 
   /* Firefox */
   .correlation-widget .cw-slider::-moz-range-track {
     height: var(--cw-track-h);
-    background: #e9ecef;
+    background: #e2e8f0;
     border-radius: 999px;
-    border: 1px solid #dde2e6;
+    border: 1px solid #e2e8f0;
   }
   .correlation-widget .cw-slider::-moz-range-thumb {
     height: var(--cw-thumb);
     width: var(--cw-thumb);
     border-radius: 50%;
-    background: #1976d2;
-    border: 2px solid #125a9e;
+    background: #2563eb;
+    border: 2px solid #1d4ed8;
   }
 
   .correlation-widget .cw-pill {
@@ -119,7 +119,7 @@
     display: flex;
     gap: 8px;
     align-items: baseline;
-    color: #666;
+    color: #475569;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-size: .95rem;
   }
@@ -298,7 +298,7 @@
 
       // Grid
       ctx.lineWidth = PX;
-      ctx.strokeStyle = '#e6e6e6';
+      ctx.strokeStyle = '#e2e8f0';
       for (let x = -3; x <= 3; x++) {
         const X = Math.round(sx(x));
         ctx.beginPath(); ctx.moveTo(X, sy(-3)); ctx.lineTo(X, sy(3)); ctx.stroke();
@@ -310,21 +310,21 @@
 
       // Axes
       ctx.lineWidth = 2 * PX;
-      ctx.strokeStyle = '#bdbdbd';
+      ctx.strokeStyle = '#94a3b8';
       const Y0 = Math.round(sy(0));
       ctx.beginPath(); ctx.moveTo(sx(-3), Y0); ctx.lineTo(sx(3), Y0); ctx.stroke();
       const X0 = Math.round(sx(0));
       ctx.beginPath(); ctx.moveTo(X0, sy(-3)); ctx.lineTo(X0, sy(3)); ctx.stroke();
 
       // Ticks / labels
-      ctx.fillStyle = '#6a6a6a';
+      ctx.fillStyle = '#475569';
       ctx.font = '12px system-ui, sans-serif';
       for (let x = -3; x <= 3; x++) ctx.fillText(String(x), sx(x) - 3, Y0 + 14);
       for (let y = -3; y <= 3; y++) if (y !== 0) ctx.fillText(String(y), X0 + 6, sy(y) + 4);
 
       // Points
       const r = dragging ? 1.5 : 2;
-      ctx.fillStyle = '#3777c2';
+      ctx.fillStyle = '#2563eb';
       for (let i = 0; i < N; i++) {
         const x = XY[2 * i], y = XY[2 * i + 1];
         if (x < -3 || x > 3 || y < -3 || y > 3) continue;

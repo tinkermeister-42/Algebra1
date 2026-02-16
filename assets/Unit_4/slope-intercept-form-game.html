@@ -595,7 +595,7 @@
       roundTimeSnap: null,
       timer:null,deadline:0,lastShownSec:null,
       timerRoundEnabled:null,
-      theme:saved.theme||'classic',
+      theme:(function(){try{var q=localStorage.getItem('qw_theme_v1');if(['classic','ocean','midnight','darcula','terminal'].includes(q))return q;}catch(e){}return saved.theme||'classic';})(),
       hoverPoint:null
     };
 

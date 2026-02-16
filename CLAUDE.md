@@ -1,0 +1,58 @@
+# Algebra 1 Textbook — Project Context
+
+## Build & Deploy
+- **Render:** `quarto render --to html`
+- **Deploy:** `./deploy.sh` (git worktree → gh-pages branch)
+- **Watch assets:** `./scripts/watch-assets.sh` (run alongside `quarto preview`)
+
+## Structure
+```
+chapters/Unit_1…6/   # Lessons: #.#_Topic.qmd, index.qmd, Review.qmd
+chapters/Interactive/ # Gamified/exploratory lessons
+assets/Unit_1…6/     # Standalone HTML widgets (included via {{< include >}})
+scripts/             # JS helpers, Lua filters, build scripts
+styles/              # CSS files
+_extensions/         # glossary, headings
+glossary.qmd         # Source → auto-built glossary.json on render
+_quarto.yml          # Quarto config (Flatly theme, MathJax, custom CSS/JS)
+```
+
+## Callout Types
+| Class | Purpose |
+|---|---|
+| `.objectives` | Learning objectives (checkboxes) |
+| `.vocab` | Vocabulary |
+| `.remember` | Key facts (red) |
+| `.real-world` | Applications (teal) |
+| `.you-try` | Practice + collapsible solution (blue) |
+| `.you-try-m` | Multi-part practice (no collapse) |
+| `.think` | Reflective prompt + collapsible answer (purple) |
+| `.gotcha` | Common mistakes (orange) |
+| `.answers` / `.answer` | Answer keys (green) |
+| `.note` | Info note (purple) |
+
+Syntax: `:::{.callout-type title="Title"} … :::`
+
+## Glossary
+- Link: `{{< glink "term" >}}` or `{{< glink slug="slug" text="display" >}}`
+- Add terms to `glossary.qmd`: H3 heading with `{#slug}`, first paragraph = tooltip text
+- Format: Definition → optional `> **Example:** …` → optional `**See Also:** …`
+
+## Widgets
+- Embed: `{{< include /assets/Unit_X/widget.html >}}`
+- Math API (from `scripts/inject-custom.html`): `window.setMath(el, tex, display)`, `window.qwTypesetMath(el)`
+- **Themes — 5 canonical names:** `classic` (default/flatly-style), `ocean`, `midnight`, `darcula`, `terminal`
+- Theme storage key: `qw_theme_v1` in localStorage (no "theme-" prefix)
+- Widgets with pickers: prime_factorization_game, slope-intercept-form-game, function_machine_guess
+- Widgets without pickers (read default on init only): vertex_form-widget, slope-intercept-form-widget, correlation, slope-widget
+
+## Math
+- Inline `$…$`, display `$$…$$` (MathJax 3)
+- Step macros: `\stepnote{text}`, `\snplus{3}`, `\snminus{5}`
+- Macros defined in `macros.tex` and `mathjax-macros.html`
+
+## Cost/Workflow Preferences
+- **No Task/Explore subagents** — use Grep and Glob directly for code searches
+- Start a **new session** when switching to a different task area
+- Run `/compact` when context grows long (after completing a chunk of work)
+- Use **Haiku** (`/model claude-haiku-4-5-20251001`) for simple questions; switch back to Sonnet for complex edits
