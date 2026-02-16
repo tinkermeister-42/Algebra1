@@ -121,6 +121,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../styles/custom-general.css">
@@ -713,7 +714,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="equivalent" data-slug="equivalent" data-original-href="#glossary-equivalent">equivalent</a>, <a href="" class="glossary-link" data-term="place value" data-slug="place-value" data-original-href="#glossary-place-value">place value</a>, <a href="" class="glossary-link" data-term="repeating decimal" data-slug="repeating-decimal" data-original-href="#glossary-repeating-decimal">repeating decimal</a></p>
+<p><a href="" class="glossary-link" data-original-href="#glossary-equivalent" data-term="equivalent" data-slug="equivalent">equivalent</a>, <a href="" class="glossary-link" data-original-href="#glossary-place-value" data-term="place value" data-slug="place-value">place value</a>, <a href="" class="glossary-link" data-original-href="#glossary-repeating-decimal" data-term="repeating decimal" data-slug="repeating-decimal">repeating decimal</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -881,7 +882,7 @@ window.Quarto = {
 </section>
 <section id="converting-decimals-to-fractions" class="level3">
 <h3 class="anchored" data-anchor-id="converting-decimals-to-fractions">1.6.4 Converting Decimals to Fractions</h3>
-<p>What if we want to go the other direction and convert a decimal to a fraction? The key to doing this is understanding <a href="" class="glossary-link" data-term="place value" data-slug="place-value" data-original-href="#glossary-place-value">place value</a>.</p>
+<p>What if we want to go the other direction and convert a decimal to a fraction? The key to doing this is understanding <a href="" class="glossary-link" data-original-href="#glossary-place-value" data-term="place value" data-slug="place-value">place value</a>.</p>
 <p>Suppose we have the number 123.456. The following table shows the place value for each digit.</p>
 <table class="caption-top table">
 <thead>
@@ -943,7 +944,7 @@ window.Quarto = {
 0.1 = \text{1 tenth} \Rightarrow \frac{1}{10}
 \]</span></p>
 <p><strong>What if we have a number bigger than one?</strong></p>
-<p>If the number is bigger than one (like we saw with 4.23) we do the same thing, but we end up with a <a href="" class="glossary-link" data-term="mixed number" data-slug="mixed-number" data-original-href="#glossary-mixed-number">mixed number</a>.</p>
+<p>If the number is bigger than one (like we saw with 4.23) we do the same thing, but we end up with a <a href="" class="glossary-link" data-original-href="#glossary-mixed-number" data-term="mixed number" data-slug="mixed-number">mixed number</a>.</p>
 <p><span class="math display">\[
 4.23 = \text{4 and 23 hundredths} \Rightarrow 4\dfrac{23}{100}
 \]</span></p>
@@ -1446,6 +1447,26 @@ Tip
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

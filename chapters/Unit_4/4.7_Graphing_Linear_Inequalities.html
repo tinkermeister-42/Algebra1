@@ -121,6 +121,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../styles/custom-general.css">
@@ -710,7 +711,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-original-href="#glossary-inequality" data-term="inequality" data-slug="inequality">inequality</a>, <a href="" class="glossary-link" data-original-href="#glossary-solution-set" data-term="solution set" data-slug="solution-set">solution set</a></p>
+<p><a href="" class="glossary-link" data-slug="inequality" data-original-href="#glossary-inequality" data-term="inequality">inequality</a>, <a href="" class="glossary-link" data-slug="solution-set" data-original-href="#glossary-solution-set" data-term="solution set">solution set</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -1350,6 +1351,26 @@ y &amp;\le 4
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

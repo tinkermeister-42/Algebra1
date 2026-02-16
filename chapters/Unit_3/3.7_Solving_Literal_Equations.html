@@ -121,6 +121,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../styles/custom-general.css">
@@ -712,7 +713,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="equation" data-original-href="#glossary-equation" data-slug="equation">equation</a>, <a href="" class="glossary-link" data-term="isolate" data-original-href="#glossary-isolate" data-slug="isolate">isolate</a>, <a href="" class="glossary-link" data-term="literal equation" data-original-href="#glossary-literal-equation" data-slug="literal-equation">literal equation</a>, <a href="" class="glossary-link" data-term="variable" data-original-href="#glossary-variable" data-slug="variable">variable</a></p>
+<p><a href="" class="glossary-link" data-term="equation" data-slug="equation" data-original-href="#glossary-equation">equation</a>, <a href="" class="glossary-link" data-term="isolate" data-slug="isolate" data-original-href="#glossary-isolate">isolate</a>, <a href="" class="glossary-link" data-term="literal equation" data-slug="literal-equation" data-original-href="#glossary-literal-equation">literal equation</a>, <a href="" class="glossary-link" data-term="variable" data-slug="variable" data-original-href="#glossary-variable">variable</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -1151,6 +1152,26 @@ PV \textcolor{red}{\div nR} &amp;= nR(T + 2) \textcolor{red}{\div nR} \sndiv{nR}
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

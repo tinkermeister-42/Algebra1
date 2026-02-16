@@ -92,6 +92,7 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
+<link rel="stylesheet" href="../../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../../styles/custom-general.css">
@@ -737,13 +738,14 @@ ul.task-list li input[type="checkbox"] {
       hardWeightPow: 2, // superlinear weighting by total prime factors
 
       themes: [
+        { id: "theme-classic", label: "Classic" },
         { id: "theme-ocean", label: "Ocean" },
         { id: "theme-midnight", label: "Midnight" },
         { id: "theme-darcula", label: "Darcula" },
         { id: "theme-terminal", label: "Terminal" },
       ],
 
-      storageKeyTheme: "ftg_theme_v3",
+      storageKeyTheme: "qw_theme_v1",
       storageKeyMode: "ftg_mode_v1", // "easy" | "hard"
       storageKeyVars: "ftg_vars_v1", // "0" | "1"
     };
@@ -1129,16 +1131,21 @@ ul.task-list li input[type="checkbox"] {
   border-radius:14px;
 }
 
-.ftg-root.theme-midnight{
-  --bg-card:#020617;--bd-card:#111827;--ink:#e5e7eb;
-  --accent:#22d3ee;--accent-strong:#0ea5e9;
-  --tile-bg:#020617;--tile-bd:#111827;
-  --panel-bg:#020617;--panel-shadow:0 10px 30px rgba(0,0,0,.65);
+.ftg-root.theme-classic{
+  --bg-card:#f9fafb;--bd-card:#e2e8f0;--ink:#0f172a;
+  --accent:#2563eb;--accent-strong:#1d4ed8;
+  --tile-bg:#ffffff;--tile-bd:#e2e8f0;--panel-bg:#ffffff;
 }
 .ftg-root.theme-ocean{
   --bg-card:#ecfeff;--bd-card:#bae6fd;--ink:#0f172a;
   --accent:#0ea5e9;--accent-strong:#0284c7;
   --tile-bg:#f9feff;--tile-bd:#bae6fd;--panel-bg:#f9feff;
+}
+.ftg-root.theme-midnight{
+  --bg-card:#020617;--bd-card:#111827;--ink:#e5e7eb;
+  --accent:#22d3ee;--accent-strong:#0ea5e9;
+  --tile-bg:#020617;--tile-bd:#111827;
+  --panel-bg:#020617;--panel-shadow:0 10px 30px rgba(0,0,0,.65);
 }
 .ftg-root.theme-darcula{
   --bg-card:#1e1f22;--bd-card:#2b2d31;--ink:#f8fafc;
@@ -1568,7 +1575,7 @@ ul.task-list li input[type="checkbox"] {
         streak: 0,
         best: 0,
         solved: 0,
-        theme: localStorage.getItem(CFG.storageKeyTheme) || "theme-ocean",
+        theme: "theme-" + (localStorage.getItem(CFG.storageKeyTheme) || "classic"),
         mode: localStorage.getItem(CFG.storageKeyMode) || "easy",
         varsEnabled: localStorage.getItem(CFG.storageKeyVars || "0") === "1",
         toast: { text: "", t0: 0, ms: 0 },
@@ -1580,7 +1587,8 @@ ul.task-list li input[type="checkbox"] {
 
         setTheme(id) {
           this.theme = id;
-          localStorage.setItem(CFG.storageKeyTheme, id);
+          const qwName = id.replace("theme-", "");
+          try { localStorage.setItem(CFG.storageKeyTheme, qwName); } catch (e) {}
           this.render();
         },
 
@@ -1832,7 +1840,7 @@ ul.task-list li input[type="checkbox"] {
           state._ui.toast.textContent = "";
           state._ui.toast.classList.remove("show");
         }
-
+        
         const done = state.checkDone().ok;
         if (done) {
           const old = state._ui.plotWrap.querySelector(".ftg-win");
@@ -2587,6 +2595,26 @@ ul.task-list li input[type="checkbox"] {
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

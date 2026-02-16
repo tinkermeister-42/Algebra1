@@ -92,6 +92,7 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
+<link rel="stylesheet" href="../../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../../styles/custom-general.css">
@@ -672,32 +673,12 @@ ul.task-list li input[type="checkbox"] {
 
     function renderMathInto(el, tex, display = false) {
       tex = String(tex ?? "");
-
-      // Preferred path: use the global helper from inject-custom.html
       if (typeof window.setMath === "function") {
         window.setMath(el, tex, display);
-        return Promise.resolve();
+      } else {
+        el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
       }
-
-      // Fallback if the page somehow doesn't have setMath
-      el.innerHTML = display ? `\\[${tex}\\]` : `\\(${tex}\\)`;
-      if (typeof window.qwTypesetMath === "function") {
-        window.qwTypesetMath(el);
-        return Promise.resolve();
-      }
-
-      // Last resort fallback: direct MathJax call
-      const MJ = window.MathJax;
-      if (!MJ) return Promise.resolve();
-
-      const doTypeset = () => {
-        if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise([el]);
-        if (typeof MJ.typeset === "function") { MJ.typeset([el]); }
-        return Promise.resolve();
-      };
-
-      if (MJ.startup?.promise) return MJ.startup.promise.then(doTypeset).catch(() => { });
-      return Promise.resolve(doTypeset()).catch(() => { });
+      return Promise.resolve();
     }
 
     function fitExpr(el) {
@@ -749,7 +730,7 @@ ul.task-list li input[type="checkbox"] {
   color: var(--ink);
   font-family: var(--sans);
 }
-.function_machine_widget[data-theme="flatly"] {
+.function_machine_widget[data-theme="classic"] {
   --bg: #fbfbfb;
   --panel: #ffffff;
   --ink: #1f1f1f;
@@ -757,24 +738,22 @@ ul.task-list li input[type="checkbox"] {
   --line: #d2d2d2;
   --accent: #2c3e50;
 }
-.function_machine_widget[data-theme="dark"] {
-  --bg: #0f141a;
-  --panel: #141b24;
-  --ink: #e9eef6;
-  --muted: #a8b3c2;
-  --line: #2a3443;
-  --accent: #18bc9c;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+.function_machine_widget[data-theme="ocean"] {
+  --bg: #f0f9ff;
+  --panel: #f9feff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #bae6fd;
+  --accent: #0ea5e9;
 }
-
-.function_machine_widget[data-theme="neon"] {
-  --bg: #0b0b12;
-  --panel: #111227;
-  --ink: #f0f4ff;
-  --muted: #b7c0ff;
-  --line: #2d2f66;
-  --accent: #7cff6b;
-  --shadow: 0 18px 42px rgba(0, 0, 0, 0.44);
+.function_machine_widget[data-theme="midnight"] {
+  --bg: #020617;
+  --panel: #0f172a;
+  --ink: #e2e8f0;
+  --muted: #94a3b8;
+  --line: #1e293b;
+  --accent: #22d3ee;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
 }
 
 .gtfr-machine.gtfr-revealRule .gtfr-screen,
@@ -783,14 +762,23 @@ ul.task-list li input[type="checkbox"] {
   transition: opacity 160ms ease;
 }
 
-.function_machine_widget[data-theme="candy"] {
-  --bg: #fff7fb;
-  --panel: #ffffff;
-  --ink: #2a2230;
-  --muted: #7a6b86;
-  --line: #f0cfe1;
-  --accent: #9b59b6;
-  --shadow: 0 16px 34px rgba(155, 89, 182, 0.16);
+.function_machine_widget[data-theme="darcula"] {
+  --bg: #1e1f22;
+  --panel: #2b2d31;
+  --ink: #f8fafc;
+  --muted: #9aa5b1;
+  --line: #3a3d41;
+  --accent: #c084fc;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
+}
+.function_machine_widget[data-theme="terminal"] {
+  --bg: #020617;
+  --panel: #031505;
+  --ink: #bbf7d0;
+  --muted: #4ade80;
+  --line: #064e3b;
+  --accent: #22c55e;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
 }
 .gtfr-wrap {
   max-width: 1100px;
@@ -1997,23 +1985,27 @@ ul.task-list li input[type="checkbox"] {
       document.head.appendChild(s);
     }
     injectStyleOnce();
+    const VALID_THEMES = new Set(["classic", "ocean", "midnight", "darcula", "terminal"]);
     function safeTheme(t) {
-      const ok = new Set(["flatly", "dark", "neon", "candy"]);
-      return ok.has(t) ? t : "flatly";
+      return VALID_THEMES.has(t) ? t : "classic";
     }
+
     function applyTheme(t) {
       root.dataset.theme = safeTheme(t);
       try {
         localStorage.setItem(STORAGE_KEY, root.dataset.theme);
+        localStorage.setItem('qw_theme_v1', root.dataset.theme);
       } catch (e) { }
       const cards = Array.from(root.querySelectorAll(".gtfr-themeCard"));
       cards.forEach((c) =>
         c.classList.toggle("selected", c.dataset.theme === root.dataset.theme),
       );
     }
-    let initialTheme = "flatly";
+
+    let initialTheme = "classic";
     try {
-      initialTheme = safeTheme(localStorage.getItem(STORAGE_KEY) || "flatly");
+      const saved = localStorage.getItem('qw_theme_v1') || localStorage.getItem(STORAGE_KEY);
+      initialTheme = safeTheme(saved || "classic");
     } catch (e) { }
     function safeDiff(v) {
       const ok = new Set(["0", "1", "2", "3", "auto"]);
@@ -2142,56 +2134,69 @@ ul.task-list li input[type="checkbox"] {
       </button>
     </div>
     <div class="gtfr-themeGrid">
-      <div class="gtfr-themeCard" data-theme="flatly">
+      <div class="gtfr-themeCard" data-theme="classic">
         <div>
-          <div class="gtfr-themeName">Flatly</div>
+          <div class="gtfr-themeName">Classic</div>
           <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
             Clean classroom vibe
           </div>
         </div>
         <div class="gtfr-themeSwatches">
           <div class="gtfr-swatch" style="background: #2c3e50"></div>
-          <div class="gtfr-swatch" style="background: #18bc9c"></div>
+          <div class="gtfr-swatch" style="background: #d2d2d2"></div>
           <div class="gtfr-swatch" style="background: #ffffff"></div>
         </div>
       </div>
-      <div class="gtfr-themeCard" data-theme="dark">
+      <div class="gtfr-themeCard" data-theme="ocean">
         <div>
-          <div class="gtfr-themeName">Dark</div>
+          <div class="gtfr-themeName">Ocean</div>
+          <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
+            Sky blue
+          </div>
+        </div>
+        <div class="gtfr-themeSwatches">
+          <div class="gtfr-swatch" style="background: #0ea5e9"></div>
+          <div class="gtfr-swatch" style="background: #bae6fd"></div>
+          <div class="gtfr-swatch" style="background: #f0f9ff"></div>
+        </div>
+      </div>
+      <div class="gtfr-themeCard" data-theme="midnight">
+        <div>
+          <div class="gtfr-themeName">Midnight</div>
           <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
             Low glare
           </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background: #141b24"></div>
-          <div class="gtfr-swatch" style="background: #18bc9c"></div>
-          <div class="gtfr-swatch" style="background: #e9eef6"></div>
+          <div class="gtfr-swatch" style="background: #0f172a"></div>
+          <div class="gtfr-swatch" style="background: #22d3ee"></div>
+          <div class="gtfr-swatch" style="background: #e2e8f0"></div>
         </div>
       </div>
-      <div class="gtfr-themeCard" data-theme="neon">
+      <div class="gtfr-themeCard" data-theme="darcula">
         <div>
-          <div class="gtfr-themeName">Neon</div>
+          <div class="gtfr-themeName">Darcula</div>
           <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
-            Arcade mode
+            Dark purple
           </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background: #111227"></div>
-          <div class="gtfr-swatch" style="background: #7cff6b"></div>
-          <div class="gtfr-swatch" style="background: #f0f4ff"></div>
+          <div class="gtfr-swatch" style="background: #2b2d31"></div>
+          <div class="gtfr-swatch" style="background: #c084fc"></div>
+          <div class="gtfr-swatch" style="background: #f8fafc"></div>
         </div>
       </div>
-      <div class="gtfr-themeCard" data-theme="candy">
+      <div class="gtfr-themeCard" data-theme="terminal">
         <div>
-          <div class="gtfr-themeName">Candy</div>
+          <div class="gtfr-themeName">Terminal</div>
           <div class="gtfr-settingsBody" style="margin: 6px 0 0 0">
-            Friendly and bright
+            Matrix green
           </div>
         </div>
         <div class="gtfr-themeSwatches">
-          <div class="gtfr-swatch" style="background: #9b59b6"></div>
-          <div class="gtfr-swatch" style="background: #f39c12"></div>
-          <div class="gtfr-swatch" style="background: #ffffff"></div>
+          <div class="gtfr-swatch" style="background: #031505"></div>
+          <div class="gtfr-swatch" style="background: #22c55e"></div>
+          <div class="gtfr-swatch" style="background: #bbf7d0"></div>
         </div>
       </div>
     </div>
@@ -3552,6 +3557,26 @@ ul.task-list li input[type="checkbox"] {
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

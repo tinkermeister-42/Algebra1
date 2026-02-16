@@ -1,0 +1,122 @@
+/* ============================================================
+   Widget Themes — shared color tokens for all interactive widgets
+   Themes: classic (default/light), ocean, midnight, darcula, terminal
+
+   Games (prime factorization, slope-intercept, function machine)
+   manage their own theme classes via JS. This file provides:
+     • Default classic look for vertex-form-widget (no picker)
+     • Theme overrides for vertex-form-widget
+   ============================================================ */
+
+/* ── Vertex Form Widget ─────────────────────────────────────
+   Default = classic: clean white, slate text, solid blue accent.
+   Matches the flatly Bootstrap theme used by the book.
+   ──────────────────────────────────────────────────────────── */
+.vertex-form-widget {
+  --vfw-bg:         #f9fafb;
+  --vfw-tile:       #ffffff;
+  --vfw-border:     #e2e8f0;
+  --vfw-border-lt:  #f1f5f9;
+  --vfw-ink:        #0f172a;
+  --vfw-ink-muted:  #475569;
+  --vfw-accent:     #2563eb;
+  --vfw-formula-bg: rgba(255,255,255,0.95);
+  --vfw-formula-ink:#0f172a;
+  --vfw-curve:      #2563eb;
+  --vfw-vertex:     #1d4ed8;
+  --vfw-axis:       rgba(15,23,42,0.55);
+  --vfw-grid:       rgba(15,23,42,0.10);
+  --vfw-tick:       #0f172a;
+  --vfw-label-bg:   rgba(249,250,251,0.90);
+}
+
+.vertex-form-widget.theme-classic {
+  /* explicit override when class is applied — same as default */
+  --vfw-bg:         #f9fafb;
+  --vfw-tile:       #ffffff;
+  --vfw-border:     #e2e8f0;
+  --vfw-border-lt:  #f1f5f9;
+  --vfw-ink:        #0f172a;
+  --vfw-ink-muted:  #475569;
+  --vfw-accent:     #2563eb;
+  --vfw-formula-bg: rgba(255,255,255,0.95);
+  --vfw-formula-ink:#0f172a;
+  --vfw-curve:      #2563eb;
+  --vfw-vertex:     #1d4ed8;
+  --vfw-axis:       rgba(15,23,42,0.55);
+  --vfw-grid:       rgba(15,23,42,0.10);
+  --vfw-tick:       #0f172a;
+  --vfw-label-bg:   rgba(249,250,251,0.90);
+}
+
+.vertex-form-widget.theme-ocean {
+  --vfw-bg:         #f0f9ff;
+  --vfw-tile:       #f9feff;
+  --vfw-border:     #bae6fd;
+  --vfw-border-lt:  #e0f2fe;
+  --vfw-ink:        #0f172a;
+  --vfw-ink-muted:  #475569;
+  --vfw-accent:     #0ea5e9;
+  --vfw-formula-bg: rgba(240,249,255,0.92);
+  --vfw-formula-ink:#0f172a;
+  --vfw-curve:      #0ea5e9;
+  --vfw-vertex:     #0284c7;
+  --vfw-axis:       rgba(15,23,42,0.55);
+  --vfw-grid:       rgba(15,23,42,0.10);
+  --vfw-tick:       #0f172a;
+  --vfw-label-bg:   rgba(240,249,255,0.85);
+}
+
+.vertex-form-widget.theme-midnight {
+  --vfw-bg:         #020617;
+  --vfw-tile:       #0f172a;
+  --vfw-border:     #1e293b;
+  --vfw-border-lt:  #1e293b;
+  --vfw-ink:        #e2e8f0;
+  --vfw-ink-muted:  #94a3b8;
+  --vfw-accent:     #22d3ee;
+  --vfw-formula-bg: rgba(2,6,23,0.90);
+  --vfw-formula-ink:#e2e8f0;
+  --vfw-curve:      #22d3ee;
+  --vfw-vertex:     #0ea5e9;
+  --vfw-axis:       rgba(226,232,240,0.55);
+  --vfw-grid:       rgba(226,232,240,0.10);
+  --vfw-tick:       #94a3b8;
+  --vfw-label-bg:   rgba(15,23,42,0.88);
+}
+
+.vertex-form-widget.theme-darcula {
+  --vfw-bg:         #1e1f22;
+  --vfw-tile:       #2b2d31;
+  --vfw-border:     #3a3d41;
+  --vfw-border-lt:  #3a3d41;
+  --vfw-ink:        #f8fafc;
+  --vfw-ink-muted:  #9aa5b1;
+  --vfw-accent:     #c084fc;
+  --vfw-formula-bg: rgba(30,31,34,0.92);
+  --vfw-formula-ink:#f8fafc;
+  --vfw-curve:      #c084fc;
+  --vfw-vertex:     #a855f7;
+  --vfw-axis:       rgba(248,250,252,0.55);
+  --vfw-grid:       rgba(248,250,252,0.08);
+  --vfw-tick:       #9aa5b1;
+  --vfw-label-bg:   rgba(30,31,34,0.90);
+}
+
+.vertex-form-widget.theme-terminal {
+  --vfw-bg:         #020617;
+  --vfw-tile:       #031505;
+  --vfw-border:     #064e3b;
+  --vfw-border-lt:  #064e3b;
+  --vfw-ink:        #bbf7d0;
+  --vfw-ink-muted:  #4ade80;
+  --vfw-accent:     #22c55e;
+  --vfw-formula-bg: rgba(2,6,23,0.92);
+  --vfw-formula-ink:#bbf7d0;
+  --vfw-curve:      #22c55e;
+  --vfw-vertex:     #16a34a;
+  --vfw-axis:       rgba(187,247,208,0.55);
+  --vfw-grid:       rgba(187,247,208,0.08);
+  --vfw-tick:       #4ade80;
+  --vfw-label-bg:   rgba(3,21,5,0.90);
+}

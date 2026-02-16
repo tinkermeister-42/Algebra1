@@ -121,6 +121,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../../styles/custom-general.css">
@@ -701,11 +702,12 @@ f(x) = a(x - h)^2 + k
   }
 
   .vfw-card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--vfw-border);
     border-radius: 12px;
     padding: 14px;
-    background: #fff;
+    background: var(--vfw-bg);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    color: var(--vfw-ink);
   }
 
   .vfw-title {
@@ -715,7 +717,7 @@ f(x) = a(x - h)^2 + k
   }
 
   .vfw-sub {
-    color: #6b7280;
+    color: var(--vfw-ink-muted);
     font-size: 0.95rem;
     margin-bottom: 10px;
   }
@@ -726,10 +728,10 @@ f(x) = a(x - h)^2 + k
   }
 
   .vfw-fig {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--vfw-border);
     border-radius: 12px;
     overflow: hidden;
-    background: #fff;
+    background: var(--vfw-bg);
     width: 100%;
     max-width: none;
     margin: 0;
@@ -745,10 +747,10 @@ f(x) = a(x - h)^2 + k
 
 
   .vfw-controls {
-    border: 1px solid #eef2f7;
+    border: 1px solid var(--vfw-border-lt);
     border-radius: 12px;
     padding: 10px;
-    background: #fafafa;
+    background: var(--vfw-tile);
   }
 
   .vfw-controlsTop {
@@ -761,8 +763,9 @@ f(x) = a(x - h)^2 + k
   }
 
   .vfw-btn {
-    border: 1px solid #e5e7eb;
-    background: #fff;
+    border: 1px solid var(--vfw-border);
+    background: var(--vfw-bg);
+    color: var(--vfw-ink);
     border-radius: 10px;
     padding: 6px 10px;
     font-weight: 750;
@@ -801,10 +804,10 @@ f(x) = a(x - h)^2 + k
   }
 
   .vfw-row {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--vfw-border);
     border-radius: 10px;
     padding: 8px 10px 6px;
-    background: #fff;
+    background: var(--vfw-bg);
   }
 
   .vfw-rowHead {
@@ -823,32 +826,33 @@ f(x) = a(x - h)^2 + k
   .vfw-val {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-variant-numeric: tabular-nums;
-    color: #374151;
+    color: var(--vfw-ink-muted);
     min-width: 64px;
     text-align: right;
   }
 
   .vfw-controls input[type="range"] {
     width: 100%;
-    accent-color: #2c3e50;
+    accent-color: var(--vfw-accent);
     touch-action: none;
   }
 
   .vfw-readout {
-    border: 1px solid #eef2f7;
+    border: 1px solid var(--vfw-border-lt);
     border-radius: 12px;
     padding: 10px 12px;
-    background: #fafafa;
+    background: var(--vfw-tile);
+    color: var(--vfw-ink);
   }
 
   .vfw-readout ul {
     margin: 6px 0 0 18px;
-    color: #374151;
+    color: var(--vfw-ink-muted);
   }
 
   .vfw-hint {
     margin-top: 8px;
-    color: #6b7280;
+    color: var(--vfw-ink-muted);
     font-size: 0.95rem;
   }
 
@@ -869,8 +873,8 @@ f(x) = a(x - h)^2 + k
     left: 10px;
     padding: 6px 10px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.88);
-    color: #111827;
+    background: var(--vfw-formula-bg);
+    color: var(--vfw-formula-ink);
     font-weight: 650;
     font-size: 1.4rem;
     line-height: 1.2;
@@ -1040,6 +1044,8 @@ f(x) = a(x - h)^2 + k
 
       function drawGridAxes() {
         ctx.clearRect(0, 0, W, H);
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, W, H);
 
         // Choose a step so grid is not a barcode
         function chooseStep(pxPerUnit) {
@@ -1056,7 +1062,13 @@ f(x) = a(x - h)^2 + k
 
         // grid
         ctx.save();
-        ctx.globalAlpha = 0.10;
+        const cs = getComputedStyle(container);
+        const gridColor = cs.getPropertyValue('--vfw-grid').trim() || 'rgba(15,23,42,0.10)';
+        const axisColor = cs.getPropertyValue('--vfw-axis').trim() || 'rgba(15,23,42,0.55)';
+        const tickColor = cs.getPropertyValue('--vfw-tick').trim() || '#0f172a';
+
+        ctx.strokeStyle = gridColor;
+        ctx.globalAlpha = 1;
         ctx.lineWidth = 1;
 
         // vertical grid lines
@@ -1081,7 +1093,8 @@ f(x) = a(x - h)^2 + k
 
         // axes
         ctx.save();
-        ctx.globalAlpha = 0.55;
+        ctx.strokeStyle = axisColor;
+        ctx.globalAlpha = 1;
         ctx.lineWidth = 2;
 
         const [x0] = worldToCanvas(0, 0);
@@ -1101,7 +1114,7 @@ f(x) = a(x - h)^2 + k
         // labels
         ctx.save();
         ctx.globalAlpha = 0.65;
-        ctx.fillStyle = "#111827";
+        ctx.fillStyle = tickColor;
         ctx.font = "12px system-ui, -apple-system, Segoe UI, Roboto, Arial";
 
         // label every grid line, but skip zero
@@ -1121,7 +1134,10 @@ f(x) = a(x - h)^2 + k
       }
 
       function drawParabola(a, h, k) {
+        const cs = getComputedStyle(container);
+        const curveColor = cs.getPropertyValue('--vfw-curve').trim() || '#0ea5e9';
         ctx.save();
+        ctx.strokeStyle = curveColor;
         ctx.globalAlpha = 0.95;
         ctx.lineWidth = 3;
         ctx.lineJoin = "round";
@@ -1150,9 +1166,12 @@ f(x) = a(x - h)^2 + k
       }
 
       function drawVertexAxis(h, k) {
+        const cs = getComputedStyle(container);
+        const vertexColor = cs.getPropertyValue('--vfw-vertex').trim() || '#0284c7';
         const [px, py] = worldToCanvas(h, k);
 
         ctx.save();
+        ctx.strokeStyle = vertexColor;
         ctx.globalAlpha = 0.25;
         ctx.setLineDash([8, 8]);
         ctx.lineWidth = 2;
@@ -1163,6 +1182,7 @@ f(x) = a(x - h)^2 + k
         ctx.restore();
 
         ctx.save();
+        ctx.fillStyle = vertexColor;
         ctx.globalAlpha = 0.95;
         ctx.beginPath();
         ctx.arc(px, py, 5, 0, Math.PI * 2);
@@ -1205,13 +1225,13 @@ f(x) = a(x - h)^2 + k
       }
 
       function typesetMath(el) {
-        const MJ = window.MathJax;
-        if (!MJ) return;
-        if (MJ.typesetPromise) MJ.typesetPromise([el]);
-        else if (MJ.typeset) MJ.typeset([el]);
+        if (typeof window.qwTypesetMath === "function") window.qwTypesetMath(el);
       }
 
       function drawPlotTitle(a, h, k) {
+        const cs = getComputedStyle(container);
+        const labelBg  = cs.getPropertyValue('--vfw-label-bg').trim()   || 'rgba(240,249,255,0.85)';
+        const labelInk = cs.getPropertyValue('--vfw-formula-ink').trim() || '#0f172a';
         const text = prettyFormulaText(a, h, k);
 
         ctx.save();
@@ -1227,11 +1247,11 @@ f(x) = a(x - h)^2 + k
         const boxH = 20 + pad;
 
         ctx.globalAlpha = 0.85;
-        ctx.fillStyle = "#ffffff";
+        ctx.fillStyle = labelBg;
         ctx.fillRect(x, y, boxW, boxH);
 
         ctx.globalAlpha = 1;
-        ctx.fillStyle = "#111827";
+        ctx.fillStyle = labelInk;
         ctx.fillText(text, x + pad, y + 5);
 
         ctx.restore();
@@ -1269,7 +1289,10 @@ f(x) = a(x - h)^2 + k
         if (Math.abs(a) > 1e-12) {
           drawParabola(a, h, k);
         } else {
+          const cs2 = getComputedStyle(container);
+          const curveColor2 = cs2.getPropertyValue('--vfw-curve').trim() || '#0ea5e9';
           ctx.save();
+          ctx.strokeStyle = curveColor2;
           ctx.globalAlpha = 0.95;
           ctx.lineWidth = 3;
           const [p1x, p1y] = worldToCanvas(xmin, k);
@@ -1361,6 +1384,17 @@ f(x) = a(x - h)^2 + k
 
       setCanvasDPI();
       render();
+
+      // Apply saved global theme on init (one-time; no cross-widget sync)
+      const QW_THEMES = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+      try {
+        var saved = localStorage.getItem('qw_theme_v1');
+        if (QW_THEMES.includes(saved)) {
+          QW_THEMES.forEach(function (t) { container.classList.remove('theme-' + t); });
+          container.classList.add('theme-' + saved);
+          render();
+        }
+      } catch (e) {}
     }
   })();
 </script>
@@ -1572,6 +1606,26 @@ f(x) = a(x - h)^2 + k
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

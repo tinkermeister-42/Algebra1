@@ -121,6 +121,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../styles/custom-general.css">
@@ -735,7 +736,7 @@ x^2 + 6x + 5 &amp;= 0 \\
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="completing the square" data-original-href="#glossary-completing-the-square" data-slug="completing-the-square">completing the square</a>, <a href="" class="glossary-link" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation" data-slug="quadratic-equation">quadratic equation</a>, <a href="" class="glossary-link" data-term="perfect square" data-original-href="#glossary-perfect-square" data-slug="perfect-square">perfect square</a>, <a href="" class="glossary-link" data-term="square root" data-original-href="#glossary-square-root" data-slug="square-root">square root</a></p>
+<p><a href="" class="glossary-link" data-slug="completing-the-square" data-original-href="#glossary-completing-the-square" data-term="completing the square">completing the square</a>, <a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="" class="glossary-link" data-slug="perfect-square" data-original-href="#glossary-perfect-square" data-term="perfect square">perfect square</a>, <a href="" class="glossary-link" data-slug="square-root" data-original-href="#glossary-square-root" data-term="square root">square root</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -974,7 +975,7 @@ x^2 + 4x + 4 = -\tfrac{3}{2} + 4
 <p><span class="math display">\[
 (x - h)^2 = k
 \]</span></p>
-<p>we can solve it by taking <a href="" class="glossary-link" data-term="square roots" data-original-href="#glossary-square-root" data-slug="square-root">square roots</a> of both sides.</p>
+<p>we can solve it by taking <a href="" class="glossary-link" data-slug="square-root" data-original-href="#glossary-square-root" data-term="square roots">square roots</a> of both sides.</p>
 <hr>
 <p><strong>Example 6:</strong> Solving by taking square roots</p>
 <p>Solve:</p>
@@ -1426,6 +1427,26 @@ x^2 + bx + 9 = 0.
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 

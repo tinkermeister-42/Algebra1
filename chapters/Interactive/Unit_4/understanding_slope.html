@@ -92,6 +92,7 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
+<link rel="stylesheet" href="../../../styles/widget-themes.css">
 <link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
 <link rel="stylesheet" href="../../../styles/custom-callouts.css">
 <link rel="stylesheet" href="../../../styles/custom-general.css">
@@ -680,7 +681,7 @@ ul.task-list li input[type="checkbox"] {
   }
 
   .legend {
-    color: #4b5563;
+    color: #475569;
     font-size: 0.95rem
   }
 
@@ -688,7 +689,7 @@ ul.task-list li input[type="checkbox"] {
     display: flex;
     gap: 10px;
     align-items: baseline;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 8px 10px;
     background: #fff
@@ -705,13 +706,13 @@ ul.task-list li input[type="checkbox"] {
   }
 
   .muted {
-    color: #6b7280;
+    color: #475569;
     font-size: 0.9rem
   }
 
   /* Big, uncluttered graph */
   .slope-fig {
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e2e8f0;
     border-radius: 0.5rem;
     background: #fff;
   }
@@ -1259,6 +1260,26 @@ ul.task-list li input[type="checkbox"] {
   } else {
     init();
   }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
 })();
 </script>
 
