@@ -35,7 +35,8 @@ Literal equations use letters (or “literals”) to represent variables, so sol
    * $d = rt$
    * $F = ma$
    * $P = 2l + 2w$
-     What do all of these have in common?
+  
+   What do all of these have in common?
 
 3. Think about how you get $x$ by itself in $3x + 5 = 20$.
    What would you *do first*? How could you apply that same idea in $3x + a = b$?
