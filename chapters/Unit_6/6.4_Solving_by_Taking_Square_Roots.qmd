@@ -1,0 +1,617 @@
+# 6.4 - Solving Quadratic Equations by Taking Square Roots {.unnumbered}
+
+In the last lesson, we solved quadratic equations by factoring. That method works well when a quadratic factors nicely over the integers.
+
+But consider this equation:
+
+$$
+x^2 = 7.
+$$
+
+There are no integers that multiply to $7$ and add to $0$, so we cannot factor this. Yet the equation clearly *has* solutions — after all, it is asking what number, when squared, gives $7$. The answer is $\sqrt{7}$, and also $-\sqrt{7}$, since squaring a negative gives a positive.
+
+In this lesson, we will formalize this idea into a reliable solving method called the **square root property**. It works whenever a quadratic can be written with a perfect square on one side and a number on the other.
+
+***
+
+:::{.objectives}
+- [ ] I can solve equations of the form $x^2 = k$ using the square root property.
+- [ ] I can solve equations of the form $(x - h)^2 = k$ by taking square roots.
+- [ ] I can determine whether a quadratic equation has two, one, or no real solutions.
+:::
+
+:::{.vocab}
+{{< glink "square root" >}},
+{{< glink "quadratic equation" >}},
+{{< glink "real solution" >}}
+:::
+
+{{< warmup >}}
+
+**Warm-Up**
+
+1. Evaluate each expression.
+
+   a. $\sqrt{49}$
+   b. $\sqrt{75}$ (simplify completely)
+   c. $(-8)^2$
+
+2. A student says "the square root of $25$ is $5$." Is that the complete answer?
+   What is missing?
+
+3. Think about it: what values of $x$ make the equation $x^2 = 49$ true?
+   How many values are there?
+
+{{< learn >}}
+
+***
+
+### 6.4.1 - The Square Root Property
+
+When a quadratic equation is already in the form
+
+$$
+x^2 = k,
+$$
+
+we do not need to factor. We can solve it directly.
+
+**The Square Root Property:** If $x^2 = k$, then
+
+$$
+x = \sqrt{k} \quad \text{or} \quad x = -\sqrt{k},
+$$
+
+which we write compactly as $x = \pm\sqrt{k}$.
+
+The reason for the $\pm$ is that both a positive number and its opposite square to the same value. For example:
+
+$$
+5^2 = 25 \quad \text{and} \quad (-5)^2 = 25.
+$$
+
+Both are solutions to $x^2 = 25$.
+
+***
+
+**Example 1:** Integer solutions
+
+Solve
+
+$$
+x^2 = 36.
+$$
+
+Apply the square root property:
+
+$$
+x = \pm\sqrt{36} = \pm 6.
+$$
+
+The solutions are $x = 6$ and $x = -6$.
+
+***
+
+**Example 2:** Irrational solutions
+
+Solve
+
+$$
+x^2 = 11.
+$$
+
+Since $11$ is not a perfect square, the solutions are irrational:
+
+$$
+x = \pm\sqrt{11}.
+$$
+
+These are exact values. A decimal approximation is $x \approx \pm 3.317$.
+
+***
+
+**Example 3:** One solution
+
+Solve
+
+$$
+x^2 = 0.
+$$
+
+$$
+x = \pm\sqrt{0} = 0.
+$$
+
+There is only one solution: $x = 0$.
+
+***
+
+**Example 4:** No real solutions
+
+Solve
+
+$$
+x^2 = -9.
+$$
+
+We would write $x = \pm\sqrt{-9}$, but $\sqrt{-9}$ is not a real number.
+No real number, when squared, gives a negative result.
+
+This equation has **no real solutions**.
+
+***
+
+#### Summary
+
+| Equation | Solutions |
+|---|---|
+| $x^2 = k$, $\;k > 0$ | Two solutions: $x = \pm\sqrt{k}$ |
+| $x^2 = 0$ | One solution: $x = 0$ |
+| $x^2 = k$, $\;k < 0$ | No real solutions |
+
+***
+
+:::{.you-try title="Solve $x^2 = 50$."}
+$$
+x = \pm\sqrt{50} = \pm 5\sqrt{2}
+$$
+:::
+
+***
+
+### 6.4.2 - Equations of the Form $(x - h)^2 = k$
+
+The square root property also applies when a **binomial** is squared.
+
+If $(x - h)^2 = k$, we treat the entire binomial as a single unit and take the square root of both sides:
+
+$$
+x - h = \pm\sqrt{k}.
+$$
+
+Then we solve for $x$ by adding $h$ to both sides.
+
+***
+
+**Example 5:** Perfect-square result
+
+Solve
+
+$$
+(x - 3)^2 = 16.
+$$
+
+Take the square root of both sides:
+
+$$
+x - 3 = \pm\sqrt{16} = \pm 4.
+$$
+
+Solve each case:
+
+* $x - 3 = 4 \Rightarrow x = 7$
+* $x - 3 = -4 \Rightarrow x = -1$
+
+The solutions are $x = 7$ and $x = -1$.
+
+***
+
+**Example 6:** Irrational result
+
+Solve
+
+$$
+(x + 5)^2 = 3.
+$$
+
+Take the square root of both sides:
+
+$$
+x + 5 = \pm\sqrt{3}.
+$$
+
+Solve for $x$:
+
+$$
+x = -5 \pm \sqrt{3}.
+$$
+
+***
+
+**Example 7:** No real solutions
+
+Solve
+
+$$
+(x - 2)^2 = -4.
+$$
+
+We would need $\sqrt{-4}$, which is not a real number.
+
+This equation has **no real solutions**.
+
+***
+
+:::{.you-try title="Solve $(x + 1)^2 = 25$."}
+$$
+\begin{aligned}
+x + 1 &= \pm 5 \\
+x &= -1 \pm 5
+\end{aligned}
+$$
+
+The solutions are $x = 4$ and $x = -6$.
+:::
+
+***
+
+### 6.4.3 - Rearranging to Use the Square Root Property
+
+Sometimes the equation is not yet written in one of these forms.
+We need to isolate the squared expression first, then apply the square root property.
+
+***
+
+**Example 8:** Moving the constant
+
+Solve
+
+$$
+x^2 - 20 = 0.
+$$
+
+Isolate $x^2$:
+
+$$
+x^2 = 20.
+$$
+
+Apply the square root property:
+
+$$
+x = \pm\sqrt{20} = \pm 2\sqrt{5}.
+$$
+
+***
+
+**Example 9:** Removing a coefficient
+
+Solve
+
+$$
+3x^2 = 48.
+$$
+
+Divide both sides by $3$:
+
+$$
+x^2 = 16.
+$$
+
+Apply the square root property:
+
+$$
+x = \pm 4.
+$$
+
+***
+
+**Example 10:** Isolating a squared binomial
+
+Solve
+
+$$
+2(x - 1)^2 - 8 = 0.
+$$
+
+First, isolate the squared expression:
+
+$$
+\begin{aligned}
+2(x - 1)^2 &= 8 \\
+(x - 1)^2 &= 4.
+\end{aligned}
+$$
+
+Now apply the square root property:
+
+$$
+x - 1 = \pm 2.
+$$
+
+Solve each case:
+
+* $x = 1 + 2 = 3$
+* $x = 1 - 2 = -1$
+
+***
+
+**Example 11:** A binomial inside the square
+
+Solve
+
+$$
+(2x + 3)^2 = 25.
+$$
+
+Take the square root of both sides:
+
+$$
+2x + 3 = \pm 5.
+$$
+
+Solve each case:
+
+* $2x + 3 = 5 \Rightarrow 2x = 2 \Rightarrow x = 1$
+* $2x + 3 = -5 \Rightarrow 2x = -8 \Rightarrow x = -4$
+
+The solutions are $x = 1$ and $x = -4$.
+
+***
+
+:::{.you-try title="Solve $4x^2 - 100 = 0$."}
+$$
+\begin{aligned}
+4x^2 &= 100 \\
+x^2 &= 25 \\
+x &= \pm 5
+\end{aligned}
+$$
+:::
+
+***
+
+:::{.gotcha title="Don't forget the $\pm$"}
+A common mistake is to take only the positive square root.
+
+**Wrong:** $x^2 = 9 \Rightarrow x = 3$
+
+**Right:** $x^2 = 9 \Rightarrow x = \pm 3$
+
+Since both $3$ and $-3$ square to $9$, both are valid solutions.
+The only exception is $k = 0$, where both roots give the same value.
+:::
+
+***
+
+### 6.4.4 - Simplifying Radical Expressions
+
+When we apply the square root property, we often get answers involving square roots. These answers can sometimes be written in a simpler form.
+
+A radical $\sqrt{n}$ is in **simplest form** when the radicand has no perfect square factors other than $1$.
+
+**The product rule for square roots:** For non-negative numbers $a$ and $b$,
+
+$$
+\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}.
+$$
+
+To simplify, find the **largest perfect square factor** of the radicand and factor it out.
+
+***
+
+**Example 12:** Simplify $\sqrt{50}$.
+
+The largest perfect square that divides $50$ is $25$:
+
+$$
+\sqrt{50} = \sqrt{25 \cdot 2} = \sqrt{25} \cdot \sqrt{2} = 5\sqrt{2}.
+$$
+
+***
+
+**Example 13:** Simplify $\sqrt{72}$.
+
+$$
+\sqrt{72} = \sqrt{36 \cdot 2} = 6\sqrt{2}.
+$$
+
+***
+
+**Example 14:** Simplify $\sqrt{75}$.
+
+$$
+\sqrt{75} = \sqrt{25 \cdot 3} = 5\sqrt{3}.
+$$
+
+***
+
+:::{.you-try title="Simplify $\\sqrt{98}$."}
+$$
+\sqrt{98} = \sqrt{49 \cdot 2} = 7\sqrt{2}.
+$$
+:::
+
+***
+
+:::{.gotcha title="Use the largest perfect square factor"}
+If you factor out a smaller perfect square, you will need to simplify again.
+
+$$
+\sqrt{72} = \sqrt{4 \cdot 18} = 2\sqrt{18} \quad \leftarrow \text{still not simplified}
+$$
+
+$$
+2\sqrt{18} = 2\sqrt{9 \cdot 2} = 2 \cdot 3\sqrt{2} = 6\sqrt{2} \quad \checkmark
+$$
+
+Finding the **largest** perfect square factor (here, $36$) gets you there in one step.
+:::
+
+:::{.note}
+In this course, you may leave radical answers in unsimplified form (such as $\sqrt{50}$) unless a problem specifically asks you to simplify.
+:::
+
+***
+
+{{< practice >}}
+
+**Conceptual Questions**
+Answer in your own words.
+
+1. Why does the square root property give two solutions when $k > 0$?
+
+2. When does $x^2 = k$ have exactly one solution? What is that solution?
+
+3. Why does $x^2 = k$ have no real solutions when $k < 0$?
+
+4. A student solves $(x - 4)^2 = 9$ and gets only $x = 7$. What did they miss?
+
+5. Without solving, how many real solutions does each equation have?
+
+   a. $x^2 = 5$
+   b. $(x + 3)^2 = 0$
+   c. $x^2 = -1$
+   d. $(x - 2)^2 = 100$
+
+***
+
+**Apply the Square Root Property**
+Solve each equation.
+
+6. $x^2 = 81$
+
+7. $x^2 = 5$
+
+8. $x^2 = 0$
+
+9. $x^2 = -16$
+
+10. $x^2 = 72$
+
+11. $x^2 - 13 = 0$
+
+12. $5x^2 = 45$
+
+13. $3x^2 - 27 = 0$
+
+***
+
+**Solve $(x - h)^2 = k$**
+Solve each equation.
+
+14. $(x - 4)^2 = 9$
+
+15. $(x + 2)^2 = 25$
+
+16. $(x - 1)^2 = 8$
+
+17. $(x + 6)^2 = 0$
+
+18. $(x - 3)^2 = -4$
+
+19. $(x + 7)^2 = 2$
+
+20. $2(x - 3)^2 = 18$
+
+21. $3(x + 4)^2 - 12 = 0$
+
+***
+
+**Equations Requiring Rearranging**
+Solve each equation.
+
+22. $x^2 - 7 = 0$
+
+23. $4x^2 = 100$
+
+24. $2x^2 + 10 = 0$
+
+25. $(2x - 1)^2 = 9$
+
+26. $(3x + 2)^2 = 16$
+
+27. $5(x - 2)^2 = 20$
+
+28. $(x + 1)^2 - 3 = 13$
+
+***
+
+**Simplify each radical.**
+
+29. $\sqrt{18}$
+
+30. $\sqrt{45}$
+
+31. $\sqrt{200}$
+
+32. $\sqrt{48}$
+
+***
+
+**Challenge Problems**
+
+33. The equation $x^2 = c$ has two positive solutions when $c > 0$.
+    For what values of $c$ are both solutions greater than $5$?
+
+34. Solve $(x^2 - 1)^2 = 9$.
+
+    *(Hint: Let $u = x^2 - 1$ and apply the square root property, then solve again.)*
+
+:::{.answers}
+
+1. Because both $\sqrt{k}$ and $-\sqrt{k}$ square to $k$, so both satisfy the equation.
+
+2. When $k = 0$. The only solution is $x = 0$.
+
+3. No real number, when squared, gives a negative result.
+
+4. They forgot the negative case: $x - 4 = \pm 3$, giving $x = 7$ or $x = 1$.
+
+5. a. Two  b. One  c. None  d. Two
+
+6. $x = \pm 9$
+
+7. $x = \pm\sqrt{5}$
+
+8. $x = 0$
+
+9. No real solutions
+
+10. $x = \pm 6\sqrt{2}$
+
+11. $x = \pm\sqrt{13}$
+
+12. $x = \pm 3$
+
+13. $x = \pm 3$
+
+14. $x = 7,\, 1$
+
+15. $x = 3,\, -7$
+
+16. $x = 1 \pm 2\sqrt{2}$
+
+17. $x = -6$
+
+18. No real solutions
+
+19. $x = -7 \pm \sqrt{2}$
+
+20. $x = 6,\, 0$
+
+21. $x = -2,\, -6$
+
+22. $x = \pm\sqrt{7}$
+
+23. $x = \pm 5$
+
+24. No real solutions
+
+25. $x = 2,\, -1$
+
+26. $x = \tfrac{2}{3},\, -2$
+
+27. $x = 4,\, 0$
+
+28. $x = 3,\, -5$
+
+29. $3\sqrt{2}$
+
+30. $3\sqrt{5}$
+
+31. $10\sqrt{2}$
+
+32. $4\sqrt{3}$
+
+:::

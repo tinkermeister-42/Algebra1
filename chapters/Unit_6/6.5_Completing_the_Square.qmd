@@ -1,4 +1,4 @@
-# 6.4 - Completing the Square {.unnumbered}
+# 6.5 - Completing the Square {.unnumbered}
 
 In the last lesson, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.
 
@@ -69,7 +69,7 @@ In this lesson, we will learn a method called **completing the square**. This me
 
 {{< learn >}}
 
-### 6.4.1 - Turning $x^2 + bx$ into a Perfect Square
+### 6.5.1 - Turning $x^2 + bx$ into a Perfect Square
 
 In Unit 5, we learned how to recognize and factor **perfect square trinomials**.
 
@@ -194,7 +194,7 @@ $$
 
 ***
 
-### 6.4.2 - Completing the Square When a ≠ 1
+### 6.5.2 - Completing the Square When a ≠ 1
 
 Completing the square works best when the coefficient of $x^2$ is $1$.
 If it is not, we fix that first.
@@ -290,30 +290,24 @@ $$
 
 ***
 
-### 6.4.3 - Solving by Taking Square Roots
+### 6.5.3 - Solving a Quadratic Equation
 
 The reason we complete the square is not just to rewrite expressions.
 We do it because it puts a quadratic equation into a form that is **easy to solve**.
 
-Once an equation is written as
-
-$$
-(x - h)^2 = k
-$$
-
-we can solve it by taking {{< glink slug="square-root" text="square roots" >}} of both sides.
+In Lesson 6.4, we learned that once an equation is in the form $(x - h)^2 = k$, we can find the solutions by taking square roots. Completing the square is how we get there.
 
 ***
 
-**Example 6:** Solving by taking square roots
+**Example 6:** Completing the solve from Example 5
 
-Solve:
+In Example 5, we completed the square on $2x^2 + 8x + 3 = 0$ and arrived at:
 
 $$
 (x + 2)^2 = \tfrac{5}{2}
 $$
 
-Take the square root of both sides:
+Applying the square root property from Lesson 6.4:
 
 $$
 \begin{aligned}
@@ -321,18 +315,6 @@ x + 2 &= \pm \sqrt{\tfrac{5}{2}} \\
 x &= -2 \pm \sqrt{\tfrac{5}{2}}
 \end{aligned}
 $$
-
-:::{.note title="Why do we use $\pm$?"}
-When we undo a square, we must include both possibilities.
-
-For example,
-
-$$
-5^2 = 25 \quad \text{and} \quad (-5)^2 = 25
-$$
-
-Both values square to the same result, so both must be included when taking a square root.
-:::
 
 ***
 
@@ -402,19 +384,9 @@ $$
 (x + 1)^2 = -6
 $$
 
-We would normally solve this by taking the square root of both sides:
+Since $-6 < 0$, there is no real number whose square equals $-6$.
 
-$$
-x + 1 = \pm \sqrt{-6}
-$$
-
-But $\sqrt{-6}$ is not a real number.
-
-A square represents a real number multiplied by itself, and any real number squared is **zero or positive**.
-
-Since $-6$ is negative, there is no real number whose square equals $-6$.
-
-So this equation has **no real solutions**.
+This equation has **no real solutions**.
 
 ***
 
@@ -502,49 +474,37 @@ $$
 
 ***
 
-**Solve by taking square roots**
-
-10. $(x - 3)^2 = 25$
-
-11. $(x + 2)^2 = 7$
-
-12. $(x - 5)^2 = 0$
-
-13. $(x + 1)^2 = -6$
-
-***
-
 **Solve by completing the square**
 
-14. $x^2 + 6x + 5 = 0$
+10. $x^2 + 6x + 5 = 0$
 
-15. $x^2 + 6x + 2 = 0$
+11. $x^2 + 6x + 2 = 0$
 
-16. $x^2 - 4x - 1 = 0$
+12. $x^2 - 4x - 1 = 0$
 
-17. $x^2 + 10x + 9 = 0$
+13. $x^2 + 10x + 9 = 0$
 
-18. $x^2 + 10x + 30 = 0$
+14. $x^2 + 10x + 30 = 0$
 
 ***
 
 **Solve by completing the square (a ≠ 1)**
 
-19. $2x^2 + 8x + 3 = 0$
+15. $2x^2 + 8x + 3 = 0$
 
-20. $3x^2 + 12x = 0$
+16. $3x^2 + 12x = 0$
 
-21. $2x^2 - 4x + 1 = 0$
+17. $2x^2 - 4x + 1 = 0$
 
-22. $3x^2 + 6x + 1 = 0$
+18. $3x^2 + 6x + 1 = 0$
 
-23. $4x^2 - 12x + 5 = 0$
+19. $4x^2 - 12x + 5 = 0$
 
 ***
 
 **Challenge Problems**
 
-24. A quadratic expression is completed to the square and rewritten as  
+20. A quadratic expression is completed to the square and rewritten as
     $$
     (x + k)^2 - 16
     $$
@@ -560,8 +520,8 @@ $$
 
 ***
 
-25. Consider the equation
-    
+21. Consider the equation
+
     $$
     x^2 + bx + 9 = 0.
     $$
@@ -582,21 +542,16 @@ $$
 8. $(x+\tfrac{5}{2})^2 - \tfrac{25}{4}$
 9. $(x+5)^2 - 25$
 
-10. $x=8,\,-2$
-11. $x=-2 \pm \sqrt{7}$
-12. $x=5$
-13. No real solutions
+10. $x=-1,\,-5$
+11. $x=-3 \pm \sqrt{7}$
+12. $x=2 \pm \sqrt{5}$
+13. $x=-1,\,-9$
+14. No real solutions
 
-14. $x=-1,\,-5$
-15. $x=-3 \pm \sqrt{7}$
-16. $x=2 \pm \sqrt{5}$
-17. $x=-1,\,-9$
-18. No real solutions
-
-19. $x=-2 \pm \sqrt{\tfrac{5}{2}}$
-20. $x=0,\,-4$
-21. $x=1 \pm \sqrt{\tfrac{1}{2}}$
-22. $x=-1 \pm \sqrt{\tfrac{2}{3}}$
-23. $x=\tfrac{1}{2},\,\tfrac{5}{2}$
+15. $x=-2 \pm \sqrt{\tfrac{5}{2}}$
+16. $x=0,\,-4$
+17. $x=1 \pm \sqrt{\tfrac{1}{2}}$
+18. $x=-1 \pm \sqrt{\tfrac{2}{3}}$
+19. $x=\tfrac{1}{2},\,\tfrac{5}{2}$
     
 :::

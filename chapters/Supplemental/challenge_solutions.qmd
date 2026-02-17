@@ -492,27 +492,41 @@ e) Point $(4300,62)$ is far above the trend at high weight → slope becomes **l
 
 :::
 
-### 6.4 - Completing the Square
+### 6.4 - Solving by Taking Square Roots
 
 :::{.answers}
 
-24. $b=8$ or $b=-8$
+33. $c > 25$
 
-25. $b=6$ or $b=-6$
+34. Let $u = x^2 - 1$. Then $u^2 = 9$, so $u = \pm 3$.
+    - If $u = 3$: $x^2 - 1 = 3 \Rightarrow x^2 = 4 \Rightarrow x = \pm 2$
+    - If $u = -3$: $x^2 - 1 = -3 \Rightarrow x^2 = -2$, no real solutions
+
+    The solutions are $x = \pm 2$.
 
 :::
 
-### 6.5 - The Quadratic Formula
+### 6.5 - Completing the Square
 
 :::{.answers}
 
-26. $k = -6, 6$  
+20. $b=8$ or $b=-8$
 
-27. $4x^2 - 6x - 1 = 0$  
+21. $b=6$ or $b=-6$
 
 :::
 
-### 6.6 - Applications of Quadratics
+### 6.6 - The Quadratic Formula
+
+:::{.answers}
+
+26. $k = -6, 6$
+
+27. $4x^2 - 6x - 1 = 0$
+
+:::
+
+### 6.7 - Applications of Quadratics
 
 :::{.answers}
 

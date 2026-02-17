@@ -1,4 +1,4 @@
-# 6.5 - The Quadratic Formula {.unnumbered}
+# 6.6 - The Quadratic Formula {.unnumbered}
 
 By now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.
 
@@ -42,7 +42,7 @@ What makes this one harder than the others?
 
 {{< learn >}}
 
-### 6.5.1 - Deriving the Quadratic Formula
+### 6.6.1 - Deriving the Quadratic Formula
 
 Suppose we want to solve a quadratic equation, but we do not know anything special about it.  
 
@@ -132,7 +132,7 @@ This formula is called the **quadratic formula**, and it works for **every** qua
 
 ***
 
-### 6.5.2 - Solving Equations with the Quadratic Formula
+### 6.6.2 - Solving Equations with the Quadratic Formula
 
 Once the quadratic formula has been derived, using it is a **consistent, mechanical process**.
 
@@ -255,7 +255,7 @@ $$
 
 :::
 
-### 6.5.3 - Understanding the Discriminant
+### 6.6.3 - Understanding the Discriminant
 
 The expression under the square root in the quadratic formula,
 

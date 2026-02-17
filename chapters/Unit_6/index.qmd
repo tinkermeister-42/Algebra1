@@ -20,6 +20,8 @@ By the end of this unit, you’ll be able to:
 
 * **Solve quadratic equations by factoring** and interpret the solutions.
 
+* **Solve quadratics by taking square roots** when an equation is in the right form.
+
 * **Solve quadratics by completing the square** and see how vertex form is created.
 
 * **Use the quadratic formula** to solve any quadratic equation.
@@ -36,14 +38,17 @@ Learn what makes a function quadratic and explore the basic shape and features o
 [**Graphing Quadratics**](6.2_Graphing_Quadratics.html)  
 Graph quadratic functions and identify key features like the vertex, axis of symmetry, and intercepts.
 
-[**Solving Quadratic Equations by Factoring**](6.3_Solving_Quadratic_Equations_by_Factoring.html)  
+[**Solving Quadratic Equations by Factoring**](6.3_Solving_Quadratic_Equations_by_Factoring.html)
 Solve quadratic equations by rewriting them as products and finding their zeros.
 
-[**Completing the Square**](6.4_Completing_the_Square.html)  
+[**Solving by Taking Square Roots**](6.4_Solving_by_Taking_Square_Roots.html)
+Solve equations directly when a perfect square is isolated on one side.
+
+[**Completing the Square**](6.5_Completing_the_Square.html)
 Rewrite quadratics to reveal the vertex and solve equations using a structured process.
 
-[**The Quadratic Formula**](6.5_The_Quadratic_Formula.html)  
+[**The Quadratic Formula**](6.6_The_Quadratic_Formula.html)
 Use a single formula that works for every quadratic equation.
 
-[**Applications of Quadratics**](6.6_Applications_of_Quadratics.html)  
+[**Applications of Quadratics**](6.7_Applications_of_Quadratics.html)
 Model and solve real world problems involving area, motion, and maximum or minimum values.

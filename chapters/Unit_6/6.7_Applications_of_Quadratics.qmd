@@ -1,4 +1,4 @@
-# 6.6 - Applications of Quadratics {.unnumbered}
+# 6.7 - Applications of Quadratics {.unnumbered}
 
 So far, we have focused on how to work with quadratic equations. We have learned how to factor them, complete the square, use square roots, and apply the quadratic formula.
 
@@ -29,7 +29,7 @@ They model real situations involving height, distance, area, revenue, and time. 
 
 {{< learn >}}
 
-### 6.6.1 - Quadratics as Models
+### 6.7.1 - Quadratics as Models
 
 A quadratic model is a function of the form
 
@@ -88,7 +88,7 @@ d. The $y$-coordinate of the vertex
 
 ***
 
-### 6.6.2 - Projectile Motion
+### 6.7.2 - Projectile Motion
 
 One common application of quadratics is projectile motion.
 
@@ -223,7 +223,7 @@ $$
 
 ***
 
-### 6.6.3 - Area Problems
+### 6.7.3 - Area Problems
 
 Quadratics also appear in area situations.
 
@@ -313,7 +313,7 @@ The pool’s length is $8 + 4 = 12$ feet.
 
 ***
 
-### 6.6.4 - Revenue and Profit
+### 6.7.4 - Revenue and Profit
 
 Quadratics are also used to model revenue and profit.
 

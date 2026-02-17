@@ -7,9 +7,10 @@ It focuses on understanding parabolas, graphing quadratics, and solving quadrati
 
 * Recognizing and describing quadratic functions  
 * Graphing quadratics and identifying key features  
-* Solving quadratic equations by factoring  
-* Solving quadratics by completing the square  
-* Using the quadratic formula and the discriminant  
+* Solving quadratic equations by factoring
+* Solving quadratics by taking square roots
+* Solving quadratics by completing the square
+* Using the quadratic formula and the discriminant
 
 ***
 
@@ -103,23 +104,29 @@ Solve each equation.
 
 ***
 
-### Completing the Square (6.4)
+### Solving by Taking Square Roots (6.4)
 
-Solve each equation by completing the square.
+Solve each equation.
 
-20. $x^2 + 6x = 4$
+20. $(x - 3)^2 = 11$
 
-21. $x^2 - 8x + 7 = 0$
-
-22. $x^2 + 10x + 9 = 0$
-
-23. $(x - 3)^2 = 11$
-
-24. $(x + 2)^2 = -5$
+21. $(x + 2)^2 = -5$
 
 ***
 
-### The Quadratic Formula (6.5)
+### Completing the Square (6.5)
+
+Solve each equation by completing the square.
+
+22. $x^2 + 6x = 4$
+
+23. $x^2 - 8x + 7 = 0$
+
+24. $x^2 + 10x + 9 = 0$
+
+***
+
+### The Quadratic Formula (6.6)
 
 Solve each equation using the quadratic formula.
 
@@ -135,7 +142,7 @@ Solve each equation using the quadratic formula.
 
 ***
 
-### Applications of Quadratics (6.6)
+### Applications of Quadratics (6.7)
 
 Solve each problem. Show your work and interpret your answers in context.
 
@@ -200,11 +207,12 @@ b. At what time does it reach its maximum height?
 18. $x = 0, -1, -2$  
 19. $x = 0, -5, 1$  
 
-20. $x = -3 \pm \sqrt{13}$  
-21. $x = 1, 7$  
-22. $x = -1, -9$  
-23. $x = 3 \pm \sqrt{11}$  
-24. No real solutions  
+20. $x = 3 \pm \sqrt{11}$
+21. No real solutions
+
+22. $x = -3 \pm \sqrt{13}$
+23. $x = 1, 7$
+24. $x = -1, -9$
 
 25. $x = 5, 2$  
 26. $x = 1, -\dfrac{3}{2}$  
