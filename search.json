@@ -2026,7 +2026,7 @@
     "href": "chapters/Unit_6/6.6_The_Quadratic_Formula.html",
     "title": "6.6 - The Quadratic Formula",
     "section": "",
-    "text": "🔥 Warm Up\nBy now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.\nBut not all quadratic equations cooperate.\nIn this lesson, we will develop a general method that works for every quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the quadratic formula.\n\\[\nx^2 - 9 = 0\n\\]\n\\[\nx^2 - 6x + 9 = 0\n\\]\n\\[\nx^2 + 3x + 1 = 0\n\\]\nWhat method would you normally try first? What makes this one harder than the others?",
+    "text": "🔥 Warm Up\nBy now, you’ve seen several ways to solve quadratic equations. Some factor nicely. Some can be solved using square roots. Some can be rewritten by completing the square.\nBut not all quadratic equations cooperate.\nIn this lesson, we will develop a general method that works for every quadratic equation. This method leads to a single formula that packages all of the algebra into one place: the quadratic formula.",
     "crumbs": [
       "Unit 6: Quadratic Equations & Functions",
       "6.6 - The Quadratic Formula"
@@ -2037,7 +2037,7 @@
     "href": "chapters/Unit_6/6.6_The_Quadratic_Formula.html#warmup",
     "title": "6.6 - The Quadratic Formula",
     "section": "",
-    "text": "Solve the equation:\n\n\n\nSolve the equation:\n\n\n\nTry to solve the equation:",
+    "text": "Solve by completing the square: \\[\nx^2 + 6x + 5 = 0\n\\]\nTry to factor:\n\\[\nx^2 + 5x + 1 = 0\n\\]\nCan you still solve it another way?\nThree equations were solved by completing the square:\n\n\\(x^2 + 4x - 1 = 0 \\Rightarrow x = \\dfrac{-4 \\pm \\sqrt{20}}{2}\\)\n\\(2x^2 - 6x + 1 = 0 \\Rightarrow x = \\dfrac{6 \\pm \\sqrt{28}}{4}\\)\n\\(x^2 - 2x - 4 = 0 \\Rightarrow x = \\dfrac{2 \\pm \\sqrt{20}}{2}\\)\n\nLook at the original equations and the answers. What pattern do you notice in where the numbers end up?",
     "crumbs": [
       "Unit 6: Quadratic Equations & Functions",
       "6.6 - The Quadratic Formula"
