@@ -19,26 +19,26 @@ In this lesson, we will develop a **general method** that works for *every* quad
 
 {{< warmup >}}
 
-1. Solve the equation:
+1. Solve by completing the square:
+   $$
+   x^2 + 6x + 5 = 0
+   $$
+
+2. Try to factor: 
    
-$$
-x^2 - 9 = 0
-$$
-
-2. Solve the equation:
+   $$
+   x^2 + 5x + 1 = 0
+   $$ 
    
-$$
-x^2 - 6x + 9 = 0
-$$
+   Can you still solve it another way?
 
-3. Try to solve the equation:
+3. Three equations were solved by completing the square:
+   
+   - $x^2 + 4x - 1 = 0 \Rightarrow x = \dfrac{-4 \pm \sqrt{20}}{2}$
+   - $2x^2 - 6x + 1 = 0 \Rightarrow x = \dfrac{6 \pm \sqrt{28}}{4}$
+   - $x^2 - 2x - 4 = 0 \Rightarrow x = \dfrac{2 \pm \sqrt{20}}{2}$
 
-$$
-x^2 + 3x + 1 = 0
-$$
-
-What method would you normally try first?
-What makes this one harder than the others?
+   Look at the original equations and the answers. What pattern do you notice in where the numbers end up?
 
 {{< learn >}}
 
