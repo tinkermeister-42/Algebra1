@@ -721,7 +721,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="" class="glossary-link" data-term="zeros" data-original-href="#glossary-zeros" data-slug="zeros">zeros</a>, <a href="" class="glossary-link" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation" data-slug="quadratic-equation">quadratic equation</a>, <a href="" class="glossary-link" data-term="quadratic model" data-original-href="#glossary-quadratic-model" data-slug="quadratic-model">quadratic model</a>, <a href="" class="glossary-link" data-term="solution" data-original-href="#glossary-solution" data-slug="solution">solution</a></p>
+<p><a href="" class="glossary-link" data-slug="zeros" data-original-href="#glossary-zeros" data-term="zeros">zeros</a>, <a href="" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="" class="glossary-link" data-slug="quadratic-model" data-original-href="#glossary-quadratic-model" data-term="quadratic model">quadratic model</a>, <a href="" class="glossary-link" data-slug="solution" data-original-href="#glossary-solution" data-term="solution">solution</a></p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -962,7 +962,7 @@ The pool’s length is <span class="math inline">\(8 + 4 = 12\)</span> feet.</p>
 <p>Quadratics are also used to model revenue and profit.</p>
 <hr>
 <p><strong>Example 3</strong></p>
-<p>A school sells tickets to a play. When tickets cost <span class="math inline">\(\$10\)</span> each, <span class="math inline">\(80\)</span> tickets are sold. For every $1 increase in price, <span class="math inline">\(5\)</span> fewer tickets are sold.</p>
+<p>A school sells tickets to a play. When tickets cost <span class="math inline">\(\$10\)</span> each, <span class="math inline">\(80\)</span> tickets are sold. For every <span class="math inline">\(\$1\)</span> increase in price, <span class="math inline">\(5\)</span> fewer tickets are sold.</p>
 <p>Let <span class="math inline">\(x\)</span> be the number of <span class="math inline">\(\$1\)</span> increases.</p>
 <p>Price: <span class="math inline">\(10 + x\)</span><br>
 Tickets sold: <span class="math inline">\(80 - 5x\)</span></p>
@@ -992,14 +992,31 @@ R(3) = (13)(65) = 845
 <p>So the maximum revenue is <span class="math inline">\(\$845\)</span>.</p>
 <hr>
 <div class="you-try-m" title="Maximize Revenue">
-<p>The revenue equation is <span class="math inline">\(R(x) = -2x^2 + 20x + 100\)</span>. How many items should be sold to maximize revenue?</p>
+<p>A food truck sells lunch specials. When the price is <span class="math inline">\(\$8\)</span>, they sell <span class="math inline">\(60\)</span> meals per day. For every <span class="math inline">\(\$1\)</span> increase in price, they sell <span class="math inline">\(4\)</span> fewer meals.</p>
+<p>Let <span class="math inline">\(x\)</span> be the number of <span class="math inline">\(\$1\)</span> price increases.</p>
+<p>Write the revenue equation and find the price that maximizes daily revenue.</p>
 </div>
 <div class="answer" title="Answer">
+<p>Price: <span class="math inline">\(8 + x\)</span><br>
+Meals sold: <span class="math inline">\(60 - 4x\)</span></p>
+<p><span class="math display">\[
+R(x) = (8 + x)(60 - 4x)
+\]</span></p>
+<p><span class="math display">\[
+R(x) = -4x^2 + 28x + 480
+\]</span></p>
 <p>Vertex:</p>
 <p><span class="math display">\[
-x = -\frac{b}{2a} = -\frac{20}{2(-2)} = 5
+x = -\frac{b}{2a} = -\frac{28}{2(-4)} = 3.5
 \]</span></p>
-<p>So <span class="math inline">\(5\)</span> items should be sold to maximize revenue.</p>
+<p>Since <span class="math inline">\(x\)</span> must be a whole dollar amount, check <span class="math inline">\(x = 3\)</span> and <span class="math inline">\(x = 4\)</span>:</p>
+<p><span class="math display">\[
+R(3) = (11)(48) = 528
+\]</span></p>
+<p><span class="math display">\[
+R(4) = (12)(44) = 528
+\]</span></p>
+<p>Both give the same maximum revenue of <span class="math inline">\(\$528\)</span>. The optimal price is <span class="math inline">\(\$11\)</span> or <span class="math inline">\(\$12\)</span> per meal.</p>
 </div>
 <hr>
 </section>
@@ -1020,7 +1037,7 @@ x = -\frac{b}{2a} = -\frac{20}{2(-2)} = 5
 h(t) = -16t^2 + 32t
 \]</span><br>
 When does it hit the ground?</p></li>
-<li><p>A rectangle has area <span class="math inline">\(45\)</span> square feet. Its length is <span class="math inline">\(3\)</span> feet longer than its width. Find the dimensions.</p></li>
+<li><p>A rectangle has area <span class="math inline">\(40\)</span> square feet. Its length is <span class="math inline">\(3\)</span> feet longer than its width. Find the dimensions.</p></li>
 <li><p>The height of a firework is given by<br>
 <span class="math display">\[
 h(t) = -16t^2 + 48t + 10
@@ -1040,7 +1057,7 @@ How many items should be sold to maximize profit?</p></li>
 h(t) = -16t^2 + 16t + 40
 \]</span><br>
 When does it hit the ground?</p></li>
-<li><p>A rectangle has perimeter <span class="math inline">\(40\)</span> units. Write an equation for its area in terms of <span class="math inline">\(x\)</span> and find the maximum possible area.</p></li>
+<li><p>A rectangle has a perimeter of <span class="math inline">\(40\)</span> units. If the width is <span class="math inline">\(x\)</span>, show that the length must be <span class="math inline">\(20 - x\)</span>. Then find the value of <span class="math inline">\(x\)</span> that maximizes the area.</p></li>
 <li><p>A quadratic model has zeros at <span class="math inline">\(t = 1\)</span> and <span class="math inline">\(t = 5\)</span>. What might those values represent in a real situation?</p></li>
 </ol>
 <hr>
@@ -1073,11 +1090,11 @@ Explain what the vertex represents.</p></li>
 t=0 \text{ or } t=2
 \]</span> The ball hits the ground at <span class="math inline">\(t=2\)</span> seconds.</p></li>
 <li><p>Let width be <span class="math inline">\(x\)</span>, length is <span class="math inline">\(x+3\)</span>: <span class="math display">\[
-x(x+3)=45
+x(x+3)=40
 \]</span> <span class="math display">\[
-x^2+3x-45=0
+x^2+3x-40=0
 \]</span> <span class="math display">\[
-(x+9)(x-5)=0
+(x+8)(x-5)=0
 \]</span> Width is <span class="math inline">\(5\)</span> ft and length is <span class="math inline">\(8\)</span> ft.</p></li>
 <li><p>Vertex time: <span class="math display">\[
 t=-\frac{b}{2a}=-\frac{48}{2(-16)}=\frac{3}{2}
@@ -1105,13 +1122,17 @@ t=\frac{2\pm\sqrt{44}}{4}=\frac{2\pm 2\sqrt{11}}{4}=\frac{1\pm\sqrt{11}}{2}
 \]</span> Positive time: <span class="math display">\[
 t=\frac{1+\sqrt{11}}{2}\approx 2.16
 \]</span></p></li>
-<li><p>Let width be <span class="math inline">\(x\)</span>, length is <span class="math inline">\(20-x\)</span> because <span class="math inline">\(2x+2(20-x)=40\)</span>. Area: <span class="math display">\[
-A(x)=x(20-x)=-x^2+20x
-\]</span> Vertex at: <span class="math display">\[
-x=-\frac{20}{2(-1)}=10
-\]</span> Maximum area: <span class="math display">\[
-A(10)=10(10)=100
-\]</span> Maximum area is <span class="math inline">\(100\)</span> square units.</p></li>
+<li><p>Perimeter gives <span class="math inline">\(2x + 2l = 40\)</span>, so <span class="math inline">\(l = 20 - x\)</span>.</p>
+<p>Area: <span class="math display">\[
+A(x) = x(20 - x) = -x^2 + 20x
+\]</span></p>
+<p>Vertex: <span class="math display">\[
+x = -\frac{20}{2(-1)} = 10
+\]</span></p>
+<p>Maximum area: <span class="math display">\[
+A(10) = 10(10) = 100
+\]</span></p>
+<p>Maximum area is <span class="math inline">\(100\)</span> square units when the rectangle is <span class="math inline">\(10 \times 10\)</span>.</p></li>
 <li><p>They could represent two times when a projectile is at ground height, or two times when a quantity equals zero, such as profit breaking even.</p></li>
 </ol>
 </div>
