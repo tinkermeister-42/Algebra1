@@ -321,7 +321,7 @@ Quadratics are also used to model revenue and profit.
 
 **Example 3**
 
-A school sells tickets to a play. When tickets cost $\$10$ each,  $80$ tickets are sold. For every $1 increase in price, $5$ fewer tickets are sold.
+A school sells tickets to a play. When tickets cost $\$10$ each,  $80$ tickets are sold. For every $\$1$ increase in price, $5$ fewer tickets are sold.
 
 Let $x$ be the number of $\$1$ increases.
 
@@ -368,19 +368,45 @@ So the maximum revenue is $\$845$.
 
 :::{.you-try-m title="Maximize Revenue"}
 
-The revenue equation is $R(x) = -2x^2 + 20x + 100$. How many items should be sold to maximize revenue?
+A food truck sells lunch specials. When the price is $\$8$, they sell $60$ meals per day.
+For every $\$1$ increase in price, they sell $4$ fewer meals.
+
+Let $x$ be the number of $\$1$ price increases.
+
+Write the revenue equation and find the price that maximizes daily revenue.
 
 :::
 
 :::{.answer title="Answer"}
 
+Price: $8 + x$  
+Meals sold: $60 - 4x$
+
+$$
+R(x) = (8 + x)(60 - 4x)
+$$
+
+$$
+R(x) = -4x^2 + 28x + 480
+$$
+
 Vertex:
 
 $$
-x = -\frac{b}{2a} = -\frac{20}{2(-2)} = 5
+x = -\frac{b}{2a} = -\frac{28}{2(-4)} = 3.5
 $$
 
-So $5$ items should be sold to maximize revenue.
+Since $x$ must be a whole dollar amount, check $x = 3$ and $x = 4$:
+
+$$
+R(3) = (11)(48) = 528
+$$
+
+$$
+R(4) = (12)(44) = 528
+$$
+
+Both give the same maximum revenue of $\$528$. The optimal price is $\$11$ or $\$12$ per meal.
 
 :::
 
@@ -404,7 +430,7 @@ h(t) = -16t^2 + 32t
 $$  
 When does it hit the ground?
 
-5. A rectangle has area $45$ square feet. Its length is $3$ feet longer than its width. Find the dimensions.
+5. A rectangle has area $40$ square feet. Its length is $3$ feet longer than its width. Find the dimensions.
 
 6. The height of a firework is given by  
 $$
@@ -428,9 +454,9 @@ h(t) = -16t^2 + 16t + 40
 $$  
 When does it hit the ground?
 
-9. A rectangle has perimeter $40$ units. Write an equation for its area in terms of $x$ and find the maximum possible area.
+9. A rectangle has a perimeter of $40$ units. If the width is $x$, show that the length must be $20 - x$. Then find the value of $x$ that maximizes the area.
 
-10. A quadratic model has zeros at $t = 1$ and $t = 5$. What might those values represent in a real situation?
+10.  A quadratic model has zeros at $t = 1$ and $t = 5$. What might those values represent in a real situation?
 
 ***
 
@@ -470,13 +496,13 @@ Explain what the vertex represents.
 
 5. Let width be $x$, length is $x+3$:
    $$
-   x(x+3)=45
+   x(x+3)=40
    $$
    $$
-   x^2+3x-45=0
+   x^2+3x-40=0
    $$
    $$
-   (x+9)(x-5)=0
+   (x+8)(x-5)=0
    $$
    Width is $5$ ft and length is $8$ ft.
 
@@ -525,21 +551,25 @@ Explain what the vertex represents.
    t=\frac{1+\sqrt{11}}{2}\approx 2.16
    $$
 
-9. Let width be $x$, length is $20-x$ because $2x+2(20-x)=40$.
+9. Perimeter gives $2x + 2l = 40$, so $l = 20 - x$.
+
    Area:
    $$
-   A(x)=x(20-x)=-x^2+20x
+   A(x) = x(20 - x) = -x^2 + 20x
    $$
-   Vertex at:
+
+   Vertex:
    $$
-   x=-\frac{20}{2(-1)}=10
+   x = -\frac{20}{2(-1)} = 10
    $$
+
    Maximum area:
    $$
-   A(10)=10(10)=100
+   A(10) = 10(10) = 100
    $$
-   Maximum area is $100$ square units.
 
+   Maximum area is $100$ square units when the rectangle is $10 \times 10$.
+   
 10. They could represent two times when a projectile is at ground height, or two times when a quantity equals zero, such as profit breaking even.
 
 :::
