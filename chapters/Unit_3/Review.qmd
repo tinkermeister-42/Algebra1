@@ -44,7 +44,7 @@ Check at least one of your answers by substitution.
 
 10. $7x - 4 = 3x + 12$
 
-11. A movie ticket costs $12 plus $3 for each snack. You spent $\$27$.
+11. A movie ticket costs $\$12$ plus $\$3$ for each snack. You spent $\$27$.
 Write and solve an equation to find how many snacks you bought.
 
 ***
