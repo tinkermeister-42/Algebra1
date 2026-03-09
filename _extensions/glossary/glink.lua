@@ -1,14 +1,11 @@
--- glink.lua — stable: single positional OR keyword overrides
--- Supports:
---   {{< glink axis >}}                         -- simple: display="axis", slug="axis"
---   {{< glink "coordinate plane" >}}           -- simple: display="coordinate plane", slug="coordinate-plane"
---   {{< glink slug="axis" text="axes" >}}      -- override display text, keep slug
---   {{< glink text="coordinate plane" >}}      -- display given; slug auto from text
+-- glink.lua
+-- {{< glink axis >}}                        -- href=#glossary-axis, display="axis"
+-- {{< glink "like terms" >}}                -- href=#glossary-like_terms, display="like terms"
+-- {{< glink slug="axis" text="axes" >}}     -- href=#glossary-axis, display="axes"
 
-local function slugify(s)
+local function normalize(s)
   s = string.lower(s or "")
-  s = s:gsub("[^a-z0-9]+","-")
-  s = s:gsub("^-+",""):gsub("-+$","")
+  s = s:gsub("%s+", "-")
   return s
 end
 
@@ -22,33 +19,32 @@ return {
   ['glink'] = function(args, kwargs, meta)
     kwargs = kwargs or {}
 
-    -- Prefer named params when present
-    local display = to_text(kwargs["text"] or kwargs["label"] or kwargs["term"])
     local slug    = to_text(kwargs["slug"])
+    local display = to_text(kwargs["text"] or kwargs["label"] or kwargs["term"])
 
-    -- Fall back to single positional for the common case
-    if (not display or display == "") and #args >= 1 then
-      display = to_text(args[1])
+    if #args >= 1 then
+      local positional = to_text(args[1])
+      if not slug    or slug    == "" then slug    = normalize(positional) end
+      if not display or display == "" then display = positional end
     end
 
-    -- If still nothing, fail loudly
     if not display or display == "" then
       return pandoc.Span({ pandoc.Str("{{glink:missing-term}}") }, pandoc.Attr("", { "glink-error" }, {}))
     end
 
     if not slug or slug == "" then
-      slug = slugify(display)
+      slug = normalize(display)
     end
 
     local href = "#glossary-" .. slug
     local attr = {
-      class = "glossary-link",
-      ["data-slug"] = slug,
-      ["data-term"] = display,
+      class              = "glossary-link",
+      ["data-slug"]      = slug,
+      ["data-term"]      = display,
       ["data-original-href"] = href,
-      href = href
+      href               = href
     }
 
-    return pandoc.Link({pandoc.Str(display)}, "", "", attr)
+    return pandoc.Link({ pandoc.Str(display) }, href, "", attr)
   end
 }

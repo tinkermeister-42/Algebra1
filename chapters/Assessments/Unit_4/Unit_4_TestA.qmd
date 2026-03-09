@@ -1,0 +1,136 @@
+# Algebra 1 – Unit 4 Test A
+
+**Name: ____________________________**
+
+```{=latex}
+\vspace{0.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Evaluate each function. Show your work.**
+
+1. $y = 2x + 3$ when $x = 4$
+
+```{=latex}
+\vspace{1.5cm}
+```
+
+2. $f(x) = -3x + 1$ when $x = -2$
+
+```{=latex}
+\vspace{1.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Find the slope. Show your work.**
+
+3. $(2, 5)$ and $(6, 13)$
+
+```{=latex}
+\vspace{2.5cm}
+```
+
+**Identify the slope type (positive, negative, zero, or undefined). No work needed.**
+
+4. $(4, 1)$ and $(4, -5)$ \_\_\_\_\_\_\_\_\_\_
+
+5. $(-3, 2)$ and $(5, 2)$ \_\_\_\_\_\_\_\_\_\_
+
+```{=latex}
+\vspace{0.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Answer each question. Show your work.**
+
+6. Find the $x$-intercept and $y$-intercept of $y = 2x - 4$.
+
+```{=latex}
+\vspace{2.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Write an equation for each line. Show your work.**
+
+7. Slope $m = 3$, through $(0, -2)$
+
+```{=latex}
+\vspace{2.5cm}
+```
+
+8. Through $(0, 4)$ and $(2, 8)$
+
+```{=latex}
+\vspace{2.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Solve each system. Show your work.**
+
+9. $\begin{cases} y = 2x - 1 \\ y = -x + 5 \end{cases}$
+
+```{=latex}
+\vspace{3.5cm}
+```
+
+10. $\begin{cases} x + y = 8 \\ x - y = 2 \end{cases}$
+
+```{=latex}
+\vspace{3.5cm}
+\vspace{0pt}\pagebreak[2]
+```
+
+**Real-World Problems**
+
+11. A car is worth $\$12{,}000$ when purchased and loses $\$1{,}500$ per year. Write an equation for its value $y$ after $x$ years. What do the slope and $y$-intercept each mean in this situation?
+
+```{=latex}
+\vspace{3cm}
+```
+
+12. Using your equation from problem 11, what is the car worth after 4 years?
+
+```{=latex}
+\vspace{2cm}
+```
+
+```{=latex}
+\newpage
+```
+
+**Complete the table of values and graph the line.**
+
+13. $y = -\dfrac{1}{2}x + 2$
+
+:::{layout-ncol=2}
+
+:::{#a-table}
+| $x$ | $y$ |
+| :-: | :-: |
+| $-2$ | |
+| $0$  | |
+| $2$  | |
+| $4$  | |
+:::
+
+:::{#a-graph}
+![](images/Blank.png){width="300px" fig-align="center"}
+:::
+
+:::
+
+```{=latex}
+\newpage
+```
+
+**Graph the solution region.**
+
+14. You are selling candles for $\$5$ each and soaps for $\$3$ each. You need to earn at least $\$30$. Write an inequality for this situation.
+
+```{=latex}
+\vspace{2.5cm}
+```
+
+15. Graph the solution region from problem 14. Label your axes.
+
+![](images/Blank.png){width="400px" fig-align="center"}

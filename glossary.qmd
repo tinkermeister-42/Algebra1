@@ -1,6 +1,6 @@
 # Glossary {.unnumbered}
 
-### absolute value {#glossary-absolute_value}
+### absolute value {#glossary-absolute-value}
 
 The distance a number is from zero on a number line, always expressed as a positive number or zero.
 
@@ -231,7 +231,7 @@ A **common factor** is a number or variable that divides evenly into **two or mo
 
 ***
 
-### composite number {#glossary-composite_number}
+### composite number {#glossary-composite-number}
 
 A composite number has more than two factors.
 
@@ -582,7 +582,7 @@ Two numbers are equivalent if they have **the same value**, even if they look di
 
 ***
 
-### equivalent expressions {#glossary-equivalent_expressions}
+### equivalent expressions {#glossary-equivalent-expressions}
 
 Two expressions are equivalent if they have the same value for every number you substitute or if they can be transformed into the same expression using properties of operations.
 
@@ -727,7 +727,7 @@ Factoring means breaking something down into smaller parts that multiply togethe
 
 ***
 
-### factor tree {#glossary-factor_tree}
+### factor tree {#glossary-factor-tree}
 
 A factor tree is a way to break a number into its smallest building blocks — the prime numbers that multiply to make it.
 
@@ -840,7 +840,7 @@ For functions, a graph shows how each input value matches with exactly one outpu
 
 ***
 
-### greater than {#glossary-greater_than}
+### greater than {#glossary-greater-than}
 
 A number is greater than (**>**) another number if it is further to the right on the number line.
 
@@ -855,7 +855,7 @@ A number is greater than (**>**) another number if it is further to the right on
 
 ***
 
-### greatest common factor {#glossary-greatest_common_factor}
+### greatest common factor {#glossary-greatest-common-factor}
 
 The **greatest common factor** (GCF) is the biggest number that divides evenly into two or more numbers. It is the largest factor they have in common. 
 
@@ -927,7 +927,7 @@ In an experiment, if you find a case where the hypothesis **is not true** you ca
 
 ***
 
-### improper fraction {#glossary-improper_fraction}
+### improper fraction {#glossary-improper-fraction}
 
 An improper fraction is a fraction where the top number (numerator) is equal to or greater than the bottom number (denominator). That means the value is 1 or more.
 
@@ -1121,7 +1121,7 @@ When you isolate a variable, you use inverse operations to undo everything attac
 
 ***
 
-### less than {#glossary-less_than}
+### less than {#glossary-less-than}
 
 A number is less than (**<**) another number if it is further to the left on the number line.
 
@@ -1136,7 +1136,7 @@ A number is less than (**<**) another number if it is further to the left on the
 
 ***
 
-### like terms {#glossary-like_terms}
+### like terms {#glossary-like-terms}
 
 Terms whose variable part matches exactly — same variables with the same exponents (order doesn’t matter). You can combine like terms by adding or subtracting their coefficients. Constants (no variables) are like terms with other constants.
 
@@ -1272,7 +1272,7 @@ A minimum is the smallest value a function or data set reaches. It is the lowest
 
 ***
 
-### mixed number {#glossary-mixed_number}
+### mixed number {#glossary-mixed-number}
 
 A mixed number has a **whole number and a fraction** combined into one value.
 
@@ -1331,7 +1331,7 @@ A math operation that means repeated addition or combining equal groups.
 
 ***
 
-### multiplication by proximity {#glossary-multiplication_by_proximity}
+### multiplication by proximity {#glossary-multiplication-by-proximity}
 
 Multiplication by **proximity** means to multiply two things that are next to each other but with no symbol like $\times$, $\cdot$, or $*$.
 
@@ -1385,7 +1385,7 @@ Often, mathematicians use $\varnothing$ in place of "no solution". It means the 
 
 ***
 
-### number line {#glossary-number_line}
+### number line {#glossary-number-line}
 
 A straight line used to show numbers in order. It usually has zero in the middle, with positive numbers to the right and negative numbers to the left.
 
@@ -1400,7 +1400,7 @@ Number lines help you visualize math operations and compare values.
 
 ***
 
-### number sense {#glossary-number_sense}
+### number sense {#glossary-number-sense}
 
 Number sense is a person’s feel for how numbers work. It means you understand what numbers mean, how they relate to each other, and what answers seem reasonable.
 
@@ -1490,7 +1490,7 @@ The first number is the x-coordinate (horizontal position), and the second is th
 
 ***
 
-### order of operations {#glossary-order_of_operations}
+### order of operations {#glossary-order-of-operations}
 
 The specific order you follow to simplify expressions:
 **P**arentheses &rarr; **E**xponents &rarr; **M**ultiply/**D**ivide &rarr; **A**dd/**S**ubtract, or **PEMDAS**.
@@ -1604,7 +1604,7 @@ A **partial product** is the result of multiplying one part of an expression by 
 
 ***
 
-### place value {#glossary-place_value}
+### place value {#glossary-place-value}
 
 Place value tells you **how much each digit is worth** based on where it is in the number.
 
@@ -1795,7 +1795,7 @@ $(a^m)^n=a^{m\cdot n}$.
 
 ***
 
-### prime number {#glossary-prime_number}
+### prime number {#glossary-prime-number}
 
 A number is prime if it has exactly two factors: 1 and itself.
 
@@ -1807,7 +1807,7 @@ A number is prime if it has exactly two factors: 1 and itself.
 
 ***
 
-### prime factorization {#glossary-prime_factorization}
+### prime factorization {#glossary-prime-factorization}
 
 Prime factorization means writing a number as a product of prime numbers.
 
@@ -2040,7 +2040,7 @@ A **ratio** compares two amounts to show how much of one thing there is compared
 
 ***
 
-### real number {#glossary-real_number}
+### real number {#glossary-real-number}
 
 A **real number** is any number that can be placed on the **number line**. This includes whole numbers (integers), fractions, and decimals. Some decimals end or repeat (like 2.75 or 0.333…), and some never repeat (like √2 or π). All of these are real numbers.
 
@@ -2099,7 +2099,7 @@ Some relations are functions, and some are not.
 
 ***
 
-### relatively prime {#glossary-relatively_prime}
+### relatively prime {#glossary-relatively-prime}
 
 Two numbers are relatively prime if they have **no common factors** other than 1.
 
@@ -2196,7 +2196,7 @@ A scatter plot is a graph that shows pairs of data points as dots on a coordinat
 
 ***
 
-### simplest form {#glossary-simplest_form}
+### simplest form {#glossary-simplest-form}
 
 A fraction is in simplest form when the numerator and denominator have **no common factors** except 1.
 
@@ -2227,7 +2227,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 
 ***
 
-### skip count {#glossary-skip_count}
+### skip count {#glossary-skip-count}
 
 Skip counting means **counting forward (or backward) by a number other than 1** — like 2, 5, or 10. It’s a way to count faster using patterns.
 
@@ -2406,7 +2406,7 @@ An operation that finds the difference between two numbers.
 
 ### substitute {#glossary-substitute}
 
-To **substitute** means to replace a variable with a number (or another expression) in an expression or an equation. We often say “**plug in**.” Use parentheses when you plug in, especially with negative numbers.
+To **substitute** means to replace a variable with a number (or another expression) in an expression or an equation. We often say \"**plug in**.\" Use parentheses when you plug in, especially with negative numbers.
 
 > **Example:**
 >
@@ -2598,7 +2598,7 @@ The whole is the **total amount** — it’s everything being considered before 
 
 ***
 
-### whole number {#glossary-whole_number}
+### whole number {#glossary-whole-number}
 
 A **whole number** is a number with **no fractions or decimals**. These are **0, 1, 2, 3, …** (zero and the positive integers). Whole numbers do **not** include negatives, decimals, or fractions. They are a subset of **integers**.
 
