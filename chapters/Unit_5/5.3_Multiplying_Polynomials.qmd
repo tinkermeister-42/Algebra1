@@ -48,18 +48,20 @@ Multiply $(2x + 3)(3x - 5)$ using only distribution.
 
 Break the second polynomial into its parts and distribute the **first** polynomial over them:
 
+
 $$
 \begin{aligned}
 (2x + 3)(3x - 5)
-&= (2x + 3)\,\textcolor[HTML]{3366CC}{\cdot\;3x}
+&= (2x + 3)\,\textcolor{#3366CC}{\cdot\;3x}
 \;+\;
-(2x + 3)\,\textcolor[HTML]{cc3333}{\cdot\;(-5)} \\[6pt]
-&= \big(\textcolor[HTML]{3366CC}{6x^2 + 9x}\big)
+(2x + 3)\,\textcolor{#CC3333}{\cdot\;(-5)} \\[6pt]
+&= \big(\textcolor{#3366CC}{6x^2 + 9x}\big)
 \;+\;
-\big(\textcolor[HTML]{cc3333}{-10x - 15}\big) \\[6pt]
+\big(\textcolor{#CC3333}{-10x - 15}\big) \\[6pt]
 &= 6x^2 - x - 15
 \end{aligned}
 $$
+
 
 This works, but we already had to distribute twice. As the polynomials get bigger, the number of {{< glink slug="partial-product" text="partial products" >}} grows quickly, and it’s easy to lose track.
 
