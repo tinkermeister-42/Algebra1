@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rational Root Theorem &amp; Synthetic Division</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --surface-alt: #f3f0eb;
+    --border: #d4cfc7;
+    --border-light: #e8e4dd;
+    --text: #2c2a26;
+    --text-muted: #6b6760;
+    --accent: #b44a2f;
+    --accent-light: #f0ddd6;
+    --accent-dark: #8c3720;
+    --success: #2d7a4f;
+    --success-bg: #e1f2e8;
+    --info: #3a6b8c;
+    --info-bg: #deeaf2;
+    --mono: 'JetBrains Mono', monospace;
+    --serif: 'Crimson Pro', Georgia, serif;
+    --sans: 'Source Sans 3', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+  }
+
+  header p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+  }
+
+  .input-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-section h2 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--accent-dark);
+  }
+
+  .theorem-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .field input {
+    font-family: var(--mono);
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--bg);
+    color: var(--text);
+    width: 120px;
+    transition: border-color 0.2s;
+  }
+
+  .field input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+
+  .field-wide input { width: 100%; }
+  .field-wide { flex: 1; min-width: 200px; }
+
+  button {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.55rem 1.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+  }
+  .btn-primary:hover { background: var(--accent-dark); }
+
+  .btn-secondary {
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover { background: var(--border-light); }
+
+  .poly-input-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .help-text {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  /* Results */
+  .results { margin-top: 1.5rem; }
+
+  .result-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .result-card h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .factor-list {
+    font-family: var(--mono);
+    font-size: 1rem;
+    color: var(--text);
+    padding: 0.5rem 0.75rem;
+    background: var(--surface-alt);
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0.25rem 0;
+  }
+
+  .pq-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .pq-chip {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--surface-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    cursor: default;
+    transition: all 0.15s;
+  }
+
+  .pq-chip.is-root {
+    background: var(--success-bg);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 600;
+  }
+
+  /* Synthetic Division */
+  .synth-division {
+    margin-top: 0.75rem;
+  }
+
+  .synth-block {
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .synth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background: var(--surface-alt);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+
+  .synth-header:hover { background: var(--border-light); }
+
+  .synth-header .candidate {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .synth-header .verdict {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .verdict.root {
+    background: var(--success-bg);
+    color: var(--success);
+  }
+
+  .verdict.not-root {
+    background: var(--surface);
+    color: var(--text-muted);
+  }
+
+  .synth-body {
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .synth-table {
+    font-family: var(--mono);
+    font-size: 0.95rem;
+    border-collapse: collapse;
+    min-width: fit-content;
+  }
+
+  .synth-table td {
+    padding: 0.3rem 0.7rem;
+    text-align: center;
+    min-width: 3.5rem;
+  }
+
+  .synth-table .divisor-cell {
+    border-right: 2px solid var(--text);
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent);
+    padding-right: 0.9rem;
+    vertical-align: top;
+    padding-top: 0.3rem;
+  }
+
+  .synth-table .coeff-row td:not(.divisor-cell) {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 0.45rem;
+  }
+
+  .synth-table .carry-row td {
+    color: var(--info);
+    padding-top: 0.2rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .synth-table .result-row td {
+    padding-top: 0.45rem;
+    font-weight: 600;
+  }
+
+  .synth-table .remainder {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .synth-table .remainder.zero {
+    color: var(--success);
+  }
+
+  .quotient-line {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .quotient-line span {
+    font-family: var(--mono);
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .polynomial-display {
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    padding: 0.6rem 1rem;
+    background: var(--surface-alt);
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    color: var(--text);
+  }
+
+  .toggle-all {
+    font-size: 0.85rem;
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+  }
+
+  .toggle-all:hover { color: var(--accent-dark); }
+
+  .collapsed .synth-body { display: none; }
+
+  .arrow {
+    transition: transform 0.2s;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-left: 0.5rem;
+  }
+
+  .collapsed .arrow { transform: rotate(-90deg); }
+
+  /* Sort controls */
+  .sort-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .sort-controls label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .sort-btn {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+  }
+
+  .sort-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 1rem; }
+    h1 { font-size: 1.7rem; }
+    .theorem-form { flex-direction: column; }
+    .field input { width: 100%; }
+    .synth-table { font-size: 0.82rem; }
+    .synth-table td { padding: 0.25rem 0.4rem; min-width: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Rational Root Theorem</h1>
+    <p>Find candidates, test with synthetic division</p>
+  </header>
+
+  <div class="input-section">
+    <h2>Step 1 — Enter Coefficients</h2>
+    <div class="theorem-form">
+      <div class="field">
+        <label>Leading coeff (aₙ)</label>
+        <input type="number" id="leading" value="1" />
+      </div>
+      <div class="field">
+        <label>Constant term (a₀)</label>
+        <input type="number" id="constant" value="" placeholder="e.g. 6" />
+      </div>
+      <button class="btn-primary" onclick="generateCandidates()">Find p/q candidates</button>
+    </div>
+  </div>
+
+  <div class="input-section">
+    <h2>Step 2 — Full Polynomial (for synthetic division)</h2>
+    <div class="poly-input-row">
+      <div class="field field-wide">
+        <label>Coefficients (highest → lowest degree)</label>
+        <input type="text" id="coefficients" placeholder="e.g. 1, -6, 11, -6" />
+      </div>
+      <button class="btn-primary" onclick="runSyntheticDivision()">Run Synthetic Division</button>
+    </div>
+    <p class="help-text">Enter all coefficients separated by commas, including zeros for missing terms. Example: x³ − 6x² + 11x − 6 → 1, -6, 11, -6</p>
+  </div>
+
+  <div class="results" id="results"></div>
+</div>
+
+<script>
+function getFactors(n) {
+  n = Math.abs(n);
+  if (n === 0) return [0];
+  const factors = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) factors.push(i);
+  }
+  return factors;
+}
+
+function gcd(a, b) {
+  a = Math.abs(a); b = Math.abs(b);
+  while (b) { [a, b] = [b, a % b]; }
+  return a;
+}
+
+function getCandidates(constant, leading) {
+  const pFactors = getFactors(constant);
+  const qFactors = getFactors(leading);
+  const seen = new Set();
+  const candidates = [];
+
+  for (const p of pFactors) {
+    for (const q of qFactors) {
+      const g = gcd(p, q);
+      const num = p / g;
+      const den = q / g;
+      const key = `${num}/${den}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        candidates.push({ num, den, value: num / den });
+        if (num !== 0) {
+          candidates.push({ num: -num, den, value: -num / den });
+        }
+      }
+    }
+  }
+
+  // Sort by absolute value, then positive before negative
+  candidates.sort((a, b) => {
+    const av = Math.abs(a.value), bv = Math.abs(b.value);
+    if (av !== bv) return av - bv;
+    return b.value - a.value; // positive first
+  });
+
+  return candidates;
+}
+
+function formatCandidate(c) {
+  if (c.den === 1) return `${c.num}`;
+  return `${c.num}/${c.den}`;
+}
+
+function formatPoly(coeffs) {
+  const deg = coeffs.length - 1;
+  let parts = [];
+  for (let i = 0; i < coeffs.length; i++) {
+    const c = coeffs[i];
+    const exp = deg - i;
+    if (c === 0) continue;
+    let term = '';
+    const absC = Math.abs(c);
+
+    if (i === 0) {
+      term += c < 0 ? '−' : '';
+    } else {
+      term += c < 0 ? ' − ' : ' + ';
+    }
+
+    if (exp === 0) {
+      term += absC;
+    } else if (exp === 1) {
+      term += (absC === 1 ? '' : absC) + 'x';
+    } else {
+      term += (absC === 1 ? '' : absC) + 'x' + superscript(exp);
+    }
+    parts.push(term);
+  }
+  return parts.join('') || '0';
+}
+
+function superscript(n) {
+  const map = { '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹' };
+  return String(n).split('').map(d => map[d] || d).join('');
+}
+
+function formatQuotient(resultCoeffs) {
+  // resultCoeffs are the synthetic division result row minus the last (remainder)
+  return formatPoly(resultCoeffs);
+}
+
+function syntheticDivide(coeffs, candidate) {
+  const val = candidate.value;
+  const n = coeffs.length;
+  const result = [coeffs[0]];
+  const carry = [0]; // carry[0] is unused but keeps alignment
+
+  for (let i = 1; i < n; i++) {
+    const c = result[i - 1] * val;
+    carry.push(c);
+    result.push(coeffs[i] + c);
+  }
+
+  const remainder = result[n - 1];
+  return { result, carry, remainder };
+}
+
+function isEffectivelyZero(val) {
+  return Math.abs(val) < 1e-10;
+}
+
+function formatNum(val) {
+  if (isEffectivelyZero(val)) return '0';
+  if (Number.isInteger(val)) return val.toString();
+  // Check if it's a "nice" fraction
+  for (let den = 1; den <= 100; den++) {
+    const num = val * den;
+    if (Math.abs(num - Math.round(num)) < 1e-9) {
+      const n = Math.round(num);
+      const g = gcd(Math.abs(n), den);
+      const rn = n / g, rd = den / g;
+      if (rd === 1) return rn.toString();
+      return `${rn}/${rd}`;
+    }
+  }
+  return val.toFixed(4);
+}
+
+let currentCandidates = [];
+
+function generateCandidates() {
+  const leading = parseInt(document.getElementById('leading').value);
+  const constant = parseInt(document.getElementById('constant').value);
+
+  if (isNaN(leading) || isNaN(constant)) {
+    alert('Please enter valid integers for both coefficients.');
+    return;
+  }
+  if (leading === 0) {
+    alert('Leading coefficient cannot be zero.');
+    return;
+  }
+  if (constant === 0) {
+    alert('If the constant term is 0, then x = 0 is a root. Factor out x first, then apply the theorem to the remaining polynomial.');
+    return;
+  }
+
+  const pFactors = getFactors(constant);
+  const qFactors = getFactors(leading);
+  currentCandidates = getCandidates(constant, leading);
+
+  // Auto-fill the leading and constant into coefficient field if empty
+  const coeffField = document.getElementById('coefficients');
+  if (!coeffField.value.trim()) {
+    // Don't auto-fill — user needs to provide all coefficients
+  }
+
+  let html = `
+    <div class="result-card">
+      <h3>Factors &amp; Candidates</h3>
+      <p style="margin-bottom:0.4rem;">Factors of <strong>a₀ = ${constant}</strong> (p):</p>
+      <div class="factor-list">±{ ${pFactors.join(', ')} }</div>
+      <p style="margin:0.6rem 0 0.4rem;">Factors of <strong>aₙ = ${leading}</strong> (q):</p>
+      <div class="factor-list">±{ ${qFactors.join(', ')} }</div>
+      <p style="margin:0.8rem 0 0.4rem;">Possible rational roots <strong>p/q</strong>:</p>
+      <div class="pq-grid" id="pq-grid">
+        ${currentCandidates.map(c => `<span class="pq-chip">${formatCandidate(c)}</span>`).join('')}
+      </div>
+      <p style="margin-top:0.6rem;font-size:0.88rem;color:var(--text-muted);">${currentCandidates.length} candidates total</p>
+    </div>
+  `;
+
+  document.getElementById('results').innerHTML = html;
+}
+
+function runSyntheticDivision() {
+  const coeffStr = document.getElementById('coefficients').value.trim();
+  if (!coeffStr) {
+    alert('Enter the polynomial coefficients first.');
+    return;
+  }
+
+  const coeffs = coeffStr.split(/[,\s]+/).map(Number);
+  if (coeffs.some(isNaN)) {
+    alert('Invalid coefficients. Use numbers separated by commas.');
+    return;
+  }
+  if (coeffs.length < 2) {
+    alert('Need at least two coefficients (degree ≥ 1).');
+    return;
+  }
+
+  // Derive leading and constant from coefficients
+  const leading = coeffs[0];
+  const constant = coeffs[coeffs.length - 1];
+
+  if (leading === 0) {
+    alert('Leading coefficient cannot be zero.');
+    return;
+  }
+
+  // Update the input fields to match
+  document.getElementById('leading').value = leading;
+  document.getElementById('constant').value = constant;
+
+  // Generate candidates from the polynomial's own coefficients
+  if (constant === 0) {
+    alert('Constant term is 0, so x = 0 is a root. Factor out x first.');
+    return;
+  }
+
+  const pFactors = getFactors(constant);
+  const qFactors = getFactors(leading);
+  currentCandidates = getCandidates(constant, leading);
+
+  // Run synthetic division for each candidate
+  const divisions = currentCandidates.map(c => {
+    const div = syntheticDivide(coeffs, c);
+    return { candidate: c, ...div };
+  });
+
+  const roots = divisions.filter(d => isEffectivelyZero(d.remainder));
+
+  // Build output
+  let html = `
+    <div class="result-card">
+      <h3>Factors &amp; Candidates</h3>
+      <p style="margin-bottom:0.4rem;">Factors of <strong>a₀ = ${constant}</strong> (p):</p>
+      <div class="factor-list">±{ ${pFactors.join(', ')} }</div>
+      <p style="margin:0.6rem 0 0.4rem;">Factors of <strong>aₙ = ${leading}</strong> (q):</p>
+      <div class="factor-list">±{ ${qFactors.join(', ')} }</div>
+      <p style="margin:0.8rem 0 0.4rem;">Possible rational roots <strong>p/q</strong>:</p>
+      <div class="pq-grid">
+        ${currentCandidates.map(c => {
+          const isRoot = roots.some(r => r.candidate.value === c.value);
+          return `<span class="pq-chip${isRoot ? ' is-root' : ''}">${formatCandidate(c)}</span>`;
+        }).join('')}
+      </div>
+      <p style="margin-top:0.6rem;font-size:0.88rem;color:var(--text-muted);">${currentCandidates.length} candidates · ${roots.length} confirmed root${roots.length !== 1 ? 's' : ''}</p>
+    </div>
+
+    <div class="result-card">
+      <h3>Synthetic Division</h3>
+      <div class="polynomial-display">f(x) = ${formatPoly(coeffs)}</div>
+      <div class="sort-controls">
+        <label>Sort:</label>
+        <button class="btn-secondary sort-btn active" onclick="sortDivisions('default', this)">|p/q| order</button>
+        <button class="btn-secondary sort-btn" onclick="sortDivisions('roots-first', this)">Roots first</button>
+      </div>
+      <span class="toggle-all" onclick="toggleAll()">Expand / Collapse all</span>
+      <div class="synth-division" id="synth-container">
+        ${renderDivisions(divisions, coeffs)}
+      </div>
+    </div>
+  `;
+
+  document.getElementById('results').innerHTML = html;
+
+  // Store for sorting
+  window._divisions = divisions;
+  window._coeffs = coeffs;
+}
+
+function renderDivisions(divisions, coeffs) {
+  return divisions.map((d, idx) => {
+    const isRoot = isEffectivelyZero(d.remainder);
+    const label = formatCandidate(d.candidate);
+    const startCollapsed = !isRoot;
+
+    // Build the synthetic division table
+    let tableHTML = `<table class="synth-table">`;
+
+    // Row 1: divisor | coefficients
+    tableHTML += `<tr class="coeff-row"><td class="divisor-cell">${label}</td>`;
+    for (let i = 0; i < coeffs.length; i++) {
+      tableHTML += `<td>${formatNum(coeffs[i])}</td>`;
+    }
+    tableHTML += `</tr>`;
+
+    // Row 2: carry values (blank under first coeff)
+    tableHTML += `<tr class="carry-row"><td class="divisor-cell" style="border-right:2px solid var(--text);"></td>`;
+    for (let i = 0; i < coeffs.length; i++) {
+      tableHTML += `<td>${i === 0 ? '' : formatNum(d.carry[i])}</td>`;
+    }
+    tableHTML += `</tr>`;
+
+    // Row 3: result
+    tableHTML += `<tr class="result-row"><td></td>`;
+    for (let i = 0; i < d.result.length; i++) {
+      const isLast = i === d.result.length - 1;
+      const cls = isLast ? (isEffectivelyZero(d.result[i]) ? 'remainder zero' : 'remainder') : '';
+      tableHTML += `<td class="${cls}">${formatNum(d.result[i])}</td>`;
+    }
+    tableHTML += `</tr>`;
+    tableHTML += `</table>`;
+
+    // Quotient display
+    const quotientCoeffs = d.result.slice(0, -1);
+    let quotientHTML = '';
+    if (isRoot) {
+      quotientHTML = `<div class="quotient-line">Quotient: <span>${formatQuotient(quotientCoeffs)}</span></div>`;
+    }
+
+    return `
+      <div class="synth-block${startCollapsed ? ' collapsed' : ''}" data-is-root="${isRoot}" data-abs-val="${Math.abs(d.candidate.value)}">
+        <div class="synth-header" onclick="this.parentElement.classList.toggle('collapsed')">
+          <span>
+            <span class="candidate">f(${label})</span>
+          </span>
+          <span>
+            <span class="verdict ${isRoot ? 'root' : 'not-root'}">${isRoot ? '✓ ROOT' : `remainder ${formatNum(d.remainder)}`}</span>
+            <span class="arrow">▼</span>
+          </span>
+        </div>
+        <div class="synth-body">
+          ${tableHTML}
+          ${quotientHTML}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function sortDivisions(mode, btn) {
+  if (!window._divisions) return;
+
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  let sorted = [...window._divisions];
+  if (mode === 'roots-first') {
+    sorted.sort((a, b) => {
+      const aRoot = isEffectivelyZero(a.remainder) ? 0 : 1;
+      const bRoot = isEffectivelyZero(b.remainder) ? 0 : 1;
+      if (aRoot !== bRoot) return aRoot - bRoot;
+      return Math.abs(a.candidate.value) - Math.abs(b.candidate.value);
+    });
+  }
+  // default is already sorted by |p/q|
+
+  document.getElementById('synth-container').innerHTML = renderDivisions(sorted, window._coeffs);
+}
+
+function toggleAll() {
+  const blocks = document.querySelectorAll('.synth-block');
+  const allExpanded = [...blocks].every(b => !b.classList.contains('collapsed'));
+  blocks.forEach(b => {
+    if (allExpanded) b.classList.add('collapsed');
+    else b.classList.remove('collapsed');
+  });
+}
+
+// Allow Enter key to trigger actions
+document.getElementById('constant').addEventListener('keydown', e => {
+  if (e.key === 'Enter') generateCandidates();
+});
+document.getElementById('coefficients').addEventListener('keydown', e => {
+  if (e.key === 'Enter') runSyntheticDivision();
+});
+</script>
+</body>
+</html>
