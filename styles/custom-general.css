@@ -90,6 +90,27 @@
 }
 
 
+/* Force backgrounds to print */
+.areabox table,
+.areabox th,
+.areabox td {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Use a visible border color instead of white */
+.areabox th,
+.areabox td {
+  border: 2px solid #fff;
+}
+
+@media print {
+  .areabox th,
+  .areabox td {
+    border-color: #b0b0b0;
+  }
+}
+
 /* Force a page break before Practice headings when printing / PDF */
 .pagebreak-before {
   page-break-before: always;
