@@ -196,3 +196,12 @@ var, .v { font-family: "Times New Roman", Georgia, serif; font-style: italic; }
   padding: 1px 0 1px 8px; margin: 3px 0;
 }
 .sys > span { display: block; line-height: 1.5; }
+
+/* area model ("box method") grid the student fills in */
+table.area { border-collapse: collapse; margin: 5px 0; }
+table.area td, table.area th {
+  border: 1px solid var(--ink); height: .42in; min-width: .95in; text-align: center;
+  padding: 3px 6px;
+}
+table.area td.hdr, table.area th { background: var(--tint); font-weight: bold; }
+table.area td.corner { border: none; background: transparent; }
