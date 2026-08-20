@@ -189,3 +189,10 @@ var, .v { font-family: "Times New Roman", Georgia, serif; font-style: italic; }
 
 /* long-division / vertical work space */
 .tallbox { border: 1px solid var(--faint); border-radius: 2px; min-height: 1in; margin: 4px 0; }
+
+/* a system of equations:  <div class="sys"><span>…</span><span>…</span></div> */
+.sys {
+  display: inline-block; border-left: 2px solid var(--ink);
+  padding: 1px 0 1px 8px; margin: 3px 0;
+}
+.sys > span { display: block; line-height: 1.5; }

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guided Notes 4.6 — Linear Models in the Real World</title>
+<link rel="stylesheet" href="../assets/guided-notes.css">
+</head>
+<body>
+<section class="sheet">
+
+  <div class="masthead">
+    <h1>4.6 &nbsp;Linear Models in the Real World</h1>
+    <div class="sub">Guided Notes &mdash; Unit 4: Linear Functions &amp; Graphs &mdash; DHS Algebra 1</div>
+    <div class="idline"><span>Name</span><span class="small">Date</span><span class="small">Period</span></div>
+  </div>
+
+<div class="box tint">
+    <div class="lbl">Objectives</div>
+    <ul class="obj">
+      <li>Represent real-world situations using linear equations or functions</li>
+      <li>Identify and interpret the slope and intercept in context</li>
+      <li>Describe what a best-fit line shows about a data trend</li>
+    </ul>
+  </div>
+
+  <h2>Warm-Up</h2>
+  <div class="ex">
+    <div class="work">
+      <div class="cols3">
+        <div>
+          <p>1. Complete the table for <var>g</var>(<var>x</var>) = 3<var>x</var> &minus; 2.</p>
+          <table class="fill">
+            <tr><th><var>x</var></th><th><var>g</var>(<var>x</var>)</th></tr>
+            <tr><td>&minus;2</td><td></td></tr>
+            <tr><td>0</td><td></td></tr>
+            <tr><td>2</td><td></td></tr>
+          </table>
+        </div>
+        <div>
+          <p>2. A car goes 150 miles in 3 hours at a constant rate. How fast?</p>
+          <div class="ruled"></div><div class="ruled"></div>
+        </div>
+        <div>
+          <p>3. Murphy made $950 in 30 hours; Katie made $780 in 25 hours. Who earns more
+            per hour?</p>
+          <div class="ruled"></div><div class="ruled"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2><span class="num">4.6.1</span>Solving Problems with Linear Models</h2>
+
+  <div class="keys">
+    Every linear model has two pieces.
+    <div class="cols2" style="margin-top:3px">
+      <p>The <b>slope</b> (<var>m</var>) tells how fast something
+        <span class="b m"></span>.</p>
+      <p>The <b><var>y</var>-intercept</b> (<var>b</var>) tells where it
+        <span class="b m"></span>.</p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 1. Streaming.</b> $2 per episode rented plus a $7.99
+      monthly fee.</div>
+    <div class="work h16">
+      <p>Let <var>e</var> = <span class="b m"></span> and
+        <var>P</var>(<var>e</var>) = <span class="b m"></span></p>
+      <p><var>m</var> = <span class="b s"></span> because <span class="b m"></span>
+        &nbsp;&nbsp; <var>b</var> = <span class="b s"></span> because <span class="b m"></span></p>
+      <p class="ans">Model: <var>P</var>(<var>e</var>) = <span class="b m"></span>
+        &nbsp;&nbsp; Cost for 10 episodes: <span class="b s"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 2. Cooling soup.</b> Soup cools from 90&deg;C to 60&deg;C
+      in 10 minutes at a constant rate.</div>
+    <div class="work h16">
+      <p><var>m</var> = <span class="b s"></span> &nbsp;&nbsp;
+        <var>b</var> = <span class="b s"></span></p>
+      <p class="ans">Model: <var>T</var>(<var>t</var>) = <span class="b m"></span>
+        &nbsp;&nbsp; Temperature after 15 minutes: <span class="b s"></span></p>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">How much should I graph?</div>
+    A model only makes sense for certain values. For the soup, times before
+    <span class="b s"></span> would mean <span class="b m"></span>, and after about 20 minutes
+    the soup would be <span class="b m"></span>. Graph only the part that fits the situation.
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 3. Taxi.</b> $3 to start plus $2.25 per mile.</div>
+    <div class="work h13">
+      <p class="ans">Model: <var>C</var>(<var>d</var>) = <span class="b m"></span>
+        &nbsp;&nbsp; Cost of a 20-mile ride: <span class="b s"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 4. Comparing services.</b> A ride-share charges no fee but
+      $3.75 per mile. When is the taxi from EX 3 the better deal?</div>
+    <div class="work">
+      <div class="cols2">
+        <div>
+          <p>Ride-share model: <var>R</var>(<var>d</var>) = <span class="b m"></span></p>
+          <p class="ans">The lines cross near <span class="b s"></span> miles.</p>
+          <p class="ans">Break-even cost: <span class="b s"></span></p>
+          <p class="ans">For trips longer than that, <span class="b m"></span> is cheaper.</p>
+        </div>
+        <div><img class="grid" src="../assets/grid-q1.svg" alt="first quadrant grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 5. Babysitting.</b> Estrella charges an hourly rate plus a
+      minimum fee. She charged $70 for 5 hours and $46 for 3 hours.</div>
+    <div class="work h25">
+      <p>Why can't we just divide money by hours? <span class="b l"></span></p>
+      <p>Rate (slope): <var>m</var> = <span class="b m"></span></p>
+      <p>Minimum fee: substitute a point and solve for <var>b</var>: <span class="b m"></span></p>
+      <p class="ans">Model: <var>C</var>(<var>h</var>) = <span class="b m"></span>
+        &nbsp;&nbsp; Charge for 12 hours: <span class="b s"></span></p>
+    </div>
+  </div>
+
+  <h2><span class="num">4.6.2</span>Seeing Patterns in Data</h2>
+
+  <div class="keys">
+    Real data rarely lands in a perfect line, but it often shows a
+    <span class="b m"></span>. When that pattern looks roughly straight we draw a
+    <b>best-fit line</b>.
+    <div class="cols3" style="margin-top:3px">
+      <p><b>Positive</b> correlation: <span class="b m"></span></p>
+      <p><b>Negative</b> correlation: <span class="b m"></span></p>
+      <p><b>No</b> correlation: <span class="b m"></span></p>
+    </div>
+    <div style="margin-top:3px">The <b>closer</b> the points are to the line, the
+      <span class="b m"></span> the correlation.</div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 6. Study time vs. test score.</b> The best-fit line is
+      <var>G</var>(<var>h</var>) = 4.5<var>h</var> + 49.5.</div>
+    <div class="work h16">
+      <p>What does the slope 4.5 mean? <span class="b xl"></span></p>
+      <p>What does the intercept 49.5 mean? <span class="b xl"></span></p>
+      <p class="ans">Predicted score after 7 hours of study: <span class="b s"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 7. Car weight vs. fuel economy.</b> The best-fit line is
+      <var>F</var>(<var>w</var>) = &minus;0.007<var>w</var> + 70.</div>
+    <div class="work h16">
+      <p>What does the negative slope mean? <span class="b xl"></span></p>
+      <p>Does the intercept describe a real car? <span class="b m"></span> Why?
+        <span class="b m"></span></p>
+      <p class="ans">Predicted mpg for a 3450 lb car: <span class="b s"></span></p>
+    </div>
+  </div>
+
+<div class="pagebreak"></div>
+  <div class="parthead"><b>4.6 Linear Models in the Real World &mdash; Practice</b><span class="nm">Name</span></div>
+
+  <h2>Practice</h2>
+  <h3>Write a Linear Model</h3>
+
+  <div class="ex">
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:3.2in">Situation</th><th>Model</th><th style="width:1.3in">Answer</th></tr>
+        <tr><td>1. A phone plan costs $25 per month plus $0.10 per text.
+          Find the cost for 150 texts.</td><td></td><td></td></tr>
+        <tr><td>2. A rental car is $60 per day plus $0.30 per mile.
+          Find the cost of 200 miles in one day.</td><td></td><td></td></tr>
+        <tr><td>3. A plumber charges $50 for a house call plus $65 per hour.
+          Write <var>C</var>(<var>h</var>).</td><td></td><td></td></tr>
+        <tr><td>4. It is 72&deg;F at noon and drops steadily to 54&deg;F by 8 p.m.
+          Write <var>T</var>(<var>t</var>), <var>t</var> = hours after noon.</td><td></td><td></td></tr>
+        <tr><td>5. A musician earns $75 per hour plus a $100 setup fee.
+          Write <var>E</var>(<var>h</var>) and find <var>E</var>(3.5).</td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Interpret the Slope and Intercept</h3>
+
+  <div class="ex">
+    <div class="q">6. <var>C</var>(<var>x</var>) = 40<var>x</var> + 200 models the cost of making
+      <var>x</var> items.</div>
+    <div class="work h1">
+      <p>The 40 means: <span class="b xl"></span></p>
+      <p>The 200 means: <span class="b xl"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q">7. <var>T</var>(<var>d</var>) = 85 &minus; 2<var>d</var> models temperature
+      at <var>d</var> thousand feet.</div>
+    <div class="work h1">
+      <p>Slope: <span class="b xl"></span></p>
+      <p>Intercept: <span class="b xl"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q">8. <var>P</var>(<var>h</var>) = 10.5<var>h</var> + 35 gives a dog walker's
+      total pay.</div>
+    <div class="work h1">
+      <p>Slope: <span class="b xl"></span></p>
+      <p>Intercept: <span class="b xl"></span></p>
+    </div>
+  </div>
+
+  <h3>Compare Two Models</h3>
+
+  <div class="ex">
+    <div class="q">9. One gym charges $30 per month plus $5 per visit. Another has no monthly fee
+      but $9 per visit. After how many visits is the cost the same?</div>
+    <div class="work h2"></div>
+  </div>
+
+  <div class="ex">
+    <div class="q">10. Company A charges $12 per poster. Company B charges an $80 setup fee plus
+      $8 per poster. At how many posters is the cost equal?</div>
+    <div class="work h2"></div>
+  </div>
+
+  <div class="ex">
+    <div class="q">11. One streaming plan is $6.50 per month plus $1 per episode. Another is $12
+      per month plus $0.50 per episode. Which is cheaper for 15 episodes?</div>
+    <div class="work h2"></div>
+  </div>
+
+  <h3>Trend Interpretation</h3>
+
+  <div class="ex">
+    <div class="q">For 12&ndash;15, give the <b>direction</b>, the <b>strength</b>, the meaning of
+      the <b>slope</b>, and the meaning of the <b><var>y</var>-intercept</b>.</div>
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:2.6in">Situation</th><th>Direction / strength</th>
+          <th>Slope means</th><th>Intercept means</th></tr>
+        <tr><td>12. As outdoor temperature rises, cups of hot chocolate sold falls.</td><td></td><td></td><td></td></tr>
+        <tr><td>13. More time on review videos goes with higher quiz scores.</td><td></td><td></td><td></td></tr>
+        <tr><td>14. As screen time rises, sleep hours fall &mdash; with a lot of scatter.</td><td></td><td></td><td></td></tr>
+        <tr><td>15. Practice hours vs. race time, with a negative slope.</td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Challenge</h3>
+
+  <div class="ex">
+    <div class="q">16. <var>F</var>(<var>w</var>) = &minus;0.007<var>w</var> + 70, valid for
+      2500 &le; <var>w</var> &le; 4500.</div>
+    <div class="work h25">
+      <p>a. Predict the mpg for a 3600 lb car. <span class="b m"></span></p>
+      <p>b. A real 3600 lb car gets 51.5 mpg. Residual (actual &minus; predicted) =
+        <span class="b s"></span>, so the point is <span class="b m"></span> the line.</p>
+      <p>c. A package adds 180 lb and its tires cost another 1.3 mpg. New prediction:
+        <span class="b m"></span></p>
+      <p>d. What weight would reach 55 mpg? <span class="b m"></span>
+        Is that inside the valid range? <span class="b m"></span></p>
+      <p>e. A bad data point appears at (4300 lb, 62 mpg). How would it change the slope?
+        <span class="b m"></span> The strength? <span class="b m"></span></p>
+    </div>
+  </div>
+
+  <div class="box tint">
+    <div class="lbl">Questions I still have</div>
+    <div class="ruled"></div><div class="ruled"></div><div class="ruled"></div>
+  </div>
+
+</section>
+</body>
+</html>
