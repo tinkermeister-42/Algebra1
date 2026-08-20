@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +104,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -134,8 +133,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -165,8 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -642,6 +638,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -714,7 +716,7 @@ window.Quarto = {
 
 <p>So far in this unit, you’ve learned how to evaluate expressions by plugging in values for variables. You’ve also simplified expressions using distribution and by combining like terms. In this lesson, we will use those same skills in a new way.</p>
 <p>Picture a small mystery machine on a desk with a sign that says “Feed me.” On the machine is a big letter “f” and on the table are number cards. You slide a 5 into the top, and out comes 13. You try 7, and out comes 17. When you feed the same number again, you get the same result again. The machine always behaves the same way.</p>
-<p>What could the machine be doing to the numbers? How could we describe that process so someone else could use it too? Machines like this, where each input leads to one specific output, are called <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-href="#glossary-function" data-term="functions" data-slug="function">functions</a>.</p>
+<p>What could the machine be doing to the numbers? How could we describe that process so someone else could use it too? Machines like this, where each input leads to one specific output, are called <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-href="#glossary-function" data-slug="function" data-term="functions">functions</a>.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can read and use function notation like <span class="math inline">\(f(x) = 2x+3\)</span>.</label></li>
@@ -724,7 +726,10 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-evaluate" class="glossary-link" data-original-href="#glossary-evaluate" data-term="evaluate" data-slug="evaluate">evaluate</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-href="#glossary-function" data-term="function" data-slug="function">function</a>, <a href="../../glossary.html#glossary-input" class="glossary-link" data-original-href="#glossary-input" data-term="input" data-slug="input">input</a>, <a href="../../glossary.html#glossary-output" class="glossary-link" data-original-href="#glossary-output" data-term="output" data-slug="output">output</a>, <a href="../../glossary.html#glossary-relation" class="glossary-link" data-original-href="#glossary-relation" data-term="relation" data-slug="relation">relation</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-href="#glossary-simplify" data-term="simplify" data-slug="simplify">simplify</a></p>
+<p><a href="../../glossary.html#glossary-evaluate" class="glossary-link" data-original-href="#glossary-evaluate" data-slug="evaluate" data-term="evaluate">evaluate</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-href="#glossary-function" data-slug="function" data-term="function">function</a>, <a href="../../glossary.html#glossary-input" class="glossary-link" data-original-href="#glossary-input" data-slug="input" data-term="input">input</a>, <a href="../../glossary.html#glossary-output" class="glossary-link" data-original-href="#glossary-output" data-slug="output" data-term="output">output</a>, <a href="../../glossary.html#glossary-relation" class="glossary-link" data-original-href="#glossary-relation" data-slug="relation" data-term="relation">relation</a>, <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-href="#glossary-simplify" data-slug="simplify" data-term="simplify">simplify</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -768,7 +773,7 @@ window.Quarto = {
 <p>Imagine our “mystery machine” from the introduction.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_2/Lesson_5/function_machine.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="../../images/Unit_2/Lesson_5/function_machine.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>The mystery machine</figcaption>
 </figure>
 </div>
@@ -1621,14 +1626,13 @@ P(h) = 12h + 15
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

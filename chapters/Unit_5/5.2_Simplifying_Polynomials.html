@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +104,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -134,8 +133,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -165,8 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -642,6 +638,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -712,13 +714,16 @@ window.Quarto = {
 <p>When we simplify polynomials, we are really just doing what we have always done: <strong>organize, combine, and clean things up</strong>, but now with variables and exponents.</p>
 <div class="objectives">
 <ul class="task-list">
-<li><label><input type="checkbox">I can identify and name a <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-original-href="#glossary-polynomial" data-slug="polynomial">polynomial</a> by its degree and number of terms.</label></li>
-<li><label><input type="checkbox">I can write a polynomial in <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-original-href="#glossary-standard-form" data-slug="standard-form">standard form</a>.</label></li>
-<li><label><input type="checkbox">I can simplify a polynomial by distributing and combining <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-original-href="#glossary-like-terms" data-slug="like-terms">like terms</a>.</label></li>
+<li><label><input type="checkbox">I can identify and name a <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-slug="polynomial" data-original-href="#glossary-polynomial">polynomial</a> by its degree and number of terms.</label></li>
+<li><label><input type="checkbox">I can write a polynomial in <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-slug="standard-form" data-original-href="#glossary-standard-form">standard form</a>.</label></li>
+<li><label><input type="checkbox">I can simplify a polynomial by distributing and combining <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-slug="like-terms" data-original-href="#glossary-like-terms">like terms</a>.</label></li>
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-binomial" class="glossary-link" data-term="binomial" data-original-href="#glossary-binomial" data-slug="binomial">binomial</a>, <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-original-href="#glossary-degree" data-slug="degree">degree</a>, <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-original-href="#glossary-like-terms" data-slug="like-terms">like terms</a>, <a href="../../glossary.html#glossary-monomial" class="glossary-link" data-term="monomial" data-original-href="#glossary-monomial" data-slug="monomial">monomial</a>, <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-original-href="#glossary-polynomial" data-slug="polynomial">polynomial</a>, <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-original-href="#glossary-standard-form" data-slug="standard-form">standard form</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-term="trinomial" data-original-href="#glossary-trinomial" data-slug="trinomial">trinomial</a></p>
+<p><a href="../../glossary.html#glossary-binomial" class="glossary-link" data-term="binomial" data-slug="binomial" data-original-href="#glossary-binomial">binomial</a>, <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-slug="degree" data-original-href="#glossary-degree">degree</a>, <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-slug="like-terms" data-original-href="#glossary-like-terms">like terms</a>, <a href="../../glossary.html#glossary-monomial" class="glossary-link" data-term="monomial" data-slug="monomial" data-original-href="#glossary-monomial">monomial</a>, <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-slug="polynomial" data-original-href="#glossary-polynomial">polynomial</a>, <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-slug="standard-form" data-original-href="#glossary-standard-form">standard form</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-term="trinomial" data-slug="trinomial" data-original-href="#glossary-trinomial">trinomial</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_5/5.2_Simplifying_Polynomials.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -732,10 +737,10 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="understanding-polynomials" class="level3">
 <h3 class="anchored" data-anchor-id="understanding-polynomials">5.2.1 - Understanding Polynomials</h3>
-<p>A <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-original-href="#glossary-polynomial" data-slug="polynomial">polynomial</a> is a sum or difference of <a href="../../glossary.html#glossary-term" class="glossary-link" data-term="terms" data-original-href="#glossary-term" data-slug="term">terms</a>. Each term includes a <a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-term="coefficient" data-original-href="#glossary-coefficient" data-slug="coefficient">coefficient</a> (a number), a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-href="#glossary-variable" data-slug="variable">variable</a>, and a <a href="../../glossary.html#glossary-whole-number" class="glossary-link" data-term="whole number" data-original-href="#glossary-whole-number" data-slug="whole-number">whole number</a> exponent.</p>
+<p>A <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomial" data-slug="polynomial" data-original-href="#glossary-polynomial">polynomial</a> is a sum or difference of <a href="../../glossary.html#glossary-term" class="glossary-link" data-term="terms" data-slug="term" data-original-href="#glossary-term">terms</a>. Each term includes a <a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-term="coefficient" data-slug="coefficient" data-original-href="#glossary-coefficient">coefficient</a> (a number), a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-slug="variable" data-original-href="#glossary-variable">variable</a>, and a <a href="../../glossary.html#glossary-whole-number" class="glossary-link" data-term="whole number" data-slug="whole-number" data-original-href="#glossary-whole-number">whole number</a> exponent.</p>
 <p>Every term like <span class="math inline">\(7x^3\)</span>, <span class="math inline">\(-4x^2\)</span>, or <span class="math inline">\(5\)</span> follows this pattern.</p>
 <blockquote class="blockquote">
-<p>The number <span class="math inline">\(5\)</span> is a <a href="../../glossary.html#glossary-constant" class="glossary-link" data-term="constant" data-original-href="#glossary-constant" data-slug="constant">constant</a>, but it still fits the rule because we can think of it as <span class="math inline">\(5x^0\)</span>.<br>
+<p>The number <span class="math inline">\(5\)</span> is a <a href="../../glossary.html#glossary-constant" class="glossary-link" data-term="constant" data-slug="constant" data-original-href="#glossary-constant">constant</a>, but it still fits the rule because we can think of it as <span class="math inline">\(5x^0\)</span>.<br>
 Since any number to the zero power equals 1, <span class="math inline">\(5x^0\)</span> is the same as <span class="math inline">\(5\)</span>.</p>
 </blockquote>
 <p><strong>These are polynomials:</strong></p>
@@ -755,10 +760,10 @@ Since any number to the zero power equals 1, <span class="math inline">\(5x^0\)<
 <li><span class="math inline">\(\sqrt{x} + 5\)</span> (fractional exponent)</li>
 </ul>
 <blockquote class="blockquote">
-<p>We only allow <a href="../../glossary.html#glossary-whole-number" class="glossary-link" data-term="whole number" data-original-href="#glossary-whole-number" data-slug="whole-number">whole number</a> exponents so the variable never ends up in a denominator or under a root.</p>
+<p>We only allow <a href="../../glossary.html#glossary-whole-number" class="glossary-link" data-term="whole number" data-slug="whole-number" data-original-href="#glossary-whole-number">whole number</a> exponents so the variable never ends up in a denominator or under a root.</p>
 </blockquote>
 <hr>
-<p>Some polynomials have special names based on the number of <a href="../../glossary.html#glossary-term" class="glossary-link" data-term="terms" data-original-href="#glossary-term" data-slug="term">terms</a> they contain.</p>
+<p>Some polynomials have special names based on the number of <a href="../../glossary.html#glossary-term" class="glossary-link" data-term="terms" data-slug="term" data-original-href="#glossary-term">terms</a> they contain.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -770,25 +775,25 @@ Since any number to the zero power equals 1, <span class="math inline">\(5x^0\)<
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td><p><a href="../../glossary.html#glossary-monomial" class="glossary-link" data-term="monomial" data-original-href="#glossary-monomial" data-slug="monomial">monomial</a></p></td>
+<td><p><a href="../../glossary.html#glossary-monomial" class="glossary-link" data-term="monomial" data-slug="monomial" data-original-href="#glossary-monomial">monomial</a></p></td>
 <td><span class="math inline">\(7x^3\)</span></td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td><p><a href="../../glossary.html#glossary-binomial" class="glossary-link" data-term="binomial" data-original-href="#glossary-binomial" data-slug="binomial">binomial</a></p></td>
+<td><p><a href="../../glossary.html#glossary-binomial" class="glossary-link" data-term="binomial" data-slug="binomial" data-original-href="#glossary-binomial">binomial</a></p></td>
 <td><span class="math inline">\(4x + 1\)</span></td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><p><a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-term="trinomial" data-original-href="#glossary-trinomial" data-slug="trinomial">trinomial</a></p></td>
+<td><p><a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-term="trinomial" data-slug="trinomial" data-original-href="#glossary-trinomial">trinomial</a></p></td>
 <td><span class="math inline">\(x^2 + 3x + 2\)</span></td>
 </tr>
 </tbody>
 </table>
 <blockquote class="blockquote">
-<p>Polynomials with more than three terms do not have a special name. We just call them <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomials" data-original-href="#glossary-polynomial" data-slug="polynomial">polynomials</a>.</p>
+<p>Polynomials with more than three terms do not have a special name. We just call them <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-term="polynomials" data-slug="polynomial" data-original-href="#glossary-polynomial">polynomials</a>.</p>
 </blockquote>
-<p>The exponent on a term is called its <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-original-href="#glossary-degree" data-slug="degree">degree</a>. Polynomials have a degree as well. The <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-original-href="#glossary-degree" data-slug="degree">degree</a> of a polynomial is the largest exponent in the expression.</p>
+<p>The exponent on a term is called its <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-slug="degree" data-original-href="#glossary-degree">degree</a>. Polynomials have a degree as well. The <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-slug="degree" data-original-href="#glossary-degree">degree</a> of a polynomial is the largest exponent in the expression.</p>
 <hr>
 <p><strong>Example 1:</strong> A matter of degree</p>
 <p>Find the special name and degree of each of the following polynomial:</p>
@@ -825,7 +830,7 @@ Since any number to the zero power equals 1, <span class="math inline">\(5x^0\)<
 </tbody>
 </table>
 <hr>
-<p>Polynomials can get quite large and messy. To keep polynomials organized, we usually write them in what is called <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-original-href="#glossary-standard-form" data-slug="standard-form">standard form</a>. This means arranging the terms from highest degree to lowest.</p>
+<p>Polynomials can get quite large and messy. To keep polynomials organized, we usually write them in what is called <a href="../../glossary.html#glossary-standard-form" class="glossary-link" data-term="standard form" data-slug="standard-form" data-original-href="#glossary-standard-form">standard form</a>. This means arranging the terms from highest degree to lowest.</p>
 <p>Writing in standard form does not change the value of the expression, but it makes it easier to read, compare, and simplify. When every polynomial follows the same order, it is also easier to spot patterns.</p>
 <hr>
 <p><strong>Example 2:</strong> Standardizing polynomials</p>
@@ -929,7 +934,7 @@ We will use the exponent and combining rules from last time to tidy up polynomia
 <ol type="1">
 <li><strong>Distribute</strong> if parentheses are present.</li>
 <li>Apply <strong>exponent rules</strong> when needed.</li>
-<li><strong>Combine</strong> <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-original-href="#glossary-like-terms" data-slug="like-terms">like terms</a>.</li>
+<li><strong>Combine</strong> <a href="../../glossary.html#glossary-like-terms" class="glossary-link" data-term="like terms" data-slug="like-terms" data-original-href="#glossary-like-terms">like terms</a>.</li>
 <li>Rewrite the answer in <strong>standard form</strong> (highest power to lowest).</li>
 </ol>
 <hr>
@@ -1405,14 +1410,13 @@ We will use the exponent and combining rules from last time to tidy up polynomia
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

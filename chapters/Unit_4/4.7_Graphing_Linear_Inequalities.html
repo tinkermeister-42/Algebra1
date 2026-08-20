@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +104,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -134,8 +133,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -165,8 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -642,6 +638,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -719,7 +721,10 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-original-href="#glossary-inequality" data-slug="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-term="solution set" data-original-href="#glossary-solution-set" data-slug="solution-set">solution set</a></p>
+<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-original-href="#glossary-inequality" data-slug="inequality" data-term="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-original-href="#glossary-solution-set" data-slug="solution-set" data-term="solution set">solution set</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_4/4.7_Graphing_Linear_Inequalities.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -745,13 +750,13 @@ window.Quarto = {
 <p>When you graph <span class="math inline">\(x &gt; 5\)</span>, you use an <strong>open circle</strong> at 5 and shade to the right:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/xgt5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+<p><img src="../../images/Unit_4/Lesson_7/xgt5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
 </figure>
 </div>
 <p>If the inequality is <span class="math inline">\(x \ge 5\)</span>, you use a <strong>closed circle</strong> at 5 and again shade to the right:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/xgte5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+<p><img src="../../images/Unit_4/Lesson_7/xgte5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
 </figure>
 </div>
 <hr>
@@ -791,7 +796,7 @@ window.Quarto = {
 <p>Graph the inequality <span class="math inline">\(y \le \tfrac{1}{2}x + 2\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <p>The shaded region shows all points <strong>below</strong> the line. The line is <strong>solid</strong>, so points on the line are <strong>included</strong> in the solution set.</p>
@@ -813,7 +818,7 @@ window.Quarto = {
 <p>Graph the inequality <span class="math inline">\(y &lt; \tfrac{1}{2}x + 2\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <p>The shaded region shows all points <strong>below</strong> the line. The line is <strong>dashed</strong>, so points on the line are <strong>not included</strong>.</p>
@@ -822,7 +827,7 @@ window.Quarto = {
 <p>Graph the inequality <span class="math inline">\(y &gt; \tfrac{1}{2}x + 2\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <p>The shaded region shows all points <strong>above</strong> the line. The line is <strong>dashed</strong>, so points on the line are <strong>not included</strong>.</p>
@@ -831,14 +836,14 @@ window.Quarto = {
 <p>Graph the inequality <span class="math inline">\(y \ge \tfrac{1}{2}x + 2\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <p>The shaded region shows all points <strong>above</strong> the line. The line is <strong>solid</strong>, so points on the line are <strong>included</strong>.</p>
 <div class="you-try" title="Graph the inequality $y < 3x - 5$">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/YouTry1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/YouTry1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 </div>
@@ -870,7 +875,7 @@ y &amp;&lt; -2x + 4
 \]</span> The line <span class="math inline">\(y = -2x + 4\)</span> is <strong>dashed</strong> and shaded <strong>below</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <hr>
@@ -884,7 +889,7 @@ y &amp;\ge \tfrac{3}{2}x - 3 \quad \text{(flip the sign when dividing by -2)}
 \]</span> The line <span class="math inline">\(y = \tfrac{3}{2}x - 3\)</span> is <strong>solid</strong> and shaded <strong>above</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <div class="gotcha" title="Don’t forget to flip the sign!">
@@ -896,7 +901,7 @@ y \ge 2x - 4
 \]</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/YouTry2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/YouTry2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 </div>
@@ -923,7 +928,7 @@ y &amp;&gt; -x + 1
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <p>Any point in that shaded overlap makes both inequalities true. For example, <span class="math inline">\((4, 2)\)</span> works because: <span class="math display">\[
@@ -944,7 +949,7 @@ y &amp;\ge 0
 <p>The steps for graphing this larger system are exactly the same as before. We are looking for the region that makes <strong>all</strong> inequalities true. The highlighted region shows the solution.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Example8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Example8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 <hr>
@@ -959,7 +964,7 @@ y &amp;&lt; 3x + 6
 <div class="answer" title="Answer">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/YouTry3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/YouTry3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div>
 </div>
@@ -1000,25 +1005,25 @@ y &amp;&lt; 3x + 6
 <li><p><span class="math inline">\(y &gt; -3x + 4\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(y \ge -x\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(y &gt; 4\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(y \ge \tfrac{4}{3}x - 3\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 </ol>
@@ -1027,25 +1032,25 @@ y &amp;&lt; 3x + 6
 <li><p><span class="math inline">\(-x + 2y &lt; - 2\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(3y - 3x &lt; y + 8\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(5(2y - 3) \ge -2x + 5y\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 <li><p><span class="math inline">\(-2(y + 4) &lt; -3(x - y) - 18\)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Blank.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
 </figure>
 </div></li>
 </ol>
@@ -1109,42 +1114,42 @@ y &amp;\le 4
 </ol></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_4/Lesson_7/Answer11.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="../../images/Unit_4/Lesson_7/Answer11.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div></li>
 <li><p>yes</p></li>
@@ -1495,14 +1500,13 @@ y &amp;\le 4
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

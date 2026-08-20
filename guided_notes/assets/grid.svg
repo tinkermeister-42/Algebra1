@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340">
+  <line x1="16.00" y1="16" x2="16.00" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="16.00" x2="324" y2="16.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="31.40" y1="16" x2="31.40" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="31.40" x2="324" y2="31.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="46.80" y1="16" x2="46.80" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="46.80" x2="324" y2="46.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="62.20" y1="16" x2="62.20" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="62.20" x2="324" y2="62.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="77.60" y1="16" x2="77.60" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="77.60" x2="324" y2="77.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="93.00" y1="16" x2="93.00" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="93.00" x2="324" y2="93.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="108.40" y1="16" x2="108.40" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="108.40" x2="324" y2="108.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="123.80" y1="16" x2="123.80" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="123.80" x2="324" y2="123.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="139.20" y1="16" x2="139.20" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="139.20" x2="324" y2="139.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="154.60" y1="16" x2="154.60" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="154.60" x2="324" y2="154.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="170.00" y1="16" x2="170.00" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="170.00" x2="324" y2="170.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="185.40" y1="16" x2="185.40" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="185.40" x2="324" y2="185.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="200.80" y1="16" x2="200.80" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="200.80" x2="324" y2="200.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="216.20" y1="16" x2="216.20" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="216.20" x2="324" y2="216.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="231.60" y1="16" x2="231.60" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="231.60" x2="324" y2="231.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="247.00" y1="16" x2="247.00" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="247.00" x2="324" y2="247.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="262.40" y1="16" x2="262.40" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="262.40" x2="324" y2="262.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="277.80" y1="16" x2="277.80" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="277.80" x2="324" y2="277.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="293.20" y1="16" x2="293.20" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="293.20" x2="324" y2="293.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="308.60" y1="16" x2="308.60" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="308.60" x2="324" y2="308.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="324.00" y1="16" x2="324.00" y2="324" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="16" y1="324.00" x2="324" y2="324.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="10" y1="170.00" x2="330" y2="170.00" stroke="#111" stroke-width="1.4"/>
+  <line x1="170.00" y1="10" x2="170.00" y2="330" stroke="#111" stroke-width="1.4"/>
+  <polygon points="335,170.00 326,166.00 326,174.00" fill="#111"/>
+  <polygon points="5,170.00 14,166.00 14,174.00" fill="#111"/>
+  <polygon points="170.00,5 166.00,14 174.00,14" fill="#111"/>
+  <polygon points="170.00,335 166.00,326 174.00,326" fill="#111"/>
+  <text x="16.00" y="183.00" text-anchor="middle" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">-10</text>
+  <text x="165.00" y="327.00" text-anchor="end" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">-10</text>
+  <text x="93.00" y="183.00" text-anchor="middle" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">-5</text>
+  <text x="165.00" y="250.00" text-anchor="end" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">-5</text>
+  <text x="247.00" y="183.00" text-anchor="middle" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">5</text>
+  <text x="165.00" y="96.00" text-anchor="end" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">5</text>
+  <text x="324.00" y="183.00" text-anchor="middle" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">10</text>
+  <text x="165.00" y="19.00" text-anchor="end" font-size="9" font-family="Georgia, 'Times New Roman', serif" fill="#333">10</text>
+  <text x="328" y="164.00" font-size="10" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#333">x</text>
+  <text x="176.00" y="18" font-size="10" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#333">y</text>
+</svg>

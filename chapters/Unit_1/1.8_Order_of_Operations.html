@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +104,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -134,8 +133,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -165,8 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -642,6 +638,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -716,7 +718,7 @@ window.Quarto = {
 <p><span class="math display">\[
 6 + 2 \times 3
 \]</span></p>
-<p>If you said 24, you’re not alone, but that’s not the correct answer. Math has specific rules for what to do first. These rules are called the <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-slug="order-of-operations" data-term="order of operations" data-original-href="#glossary-order-of-operations">order of operations</a>, and they help make sure everyone simplifies <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-term="expressions" data-original-href="#glossary-expression">expressions</a> the same way.</p>
+<p>If you said 24, you’re not alone, but that’s not the correct answer. Math has specific rules for what to do first. These rules are called the <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-slug="order-of-operations" data-original-href="#glossary-order-of-operations" data-term="order of operations">order of operations</a>, and they help make sure everyone simplifies <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-original-href="#glossary-expression" data-term="expressions">expressions</a> the same way.</p>
 <p>In this lesson, you’ll learn how to follow those rules correctly, even when negatives, fractions, and grouping symbols are involved.</p>
 <div class="objectives">
 <ul class="task-list">
@@ -726,7 +728,10 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-term="expression" data-original-href="#glossary-expression">expression</a>, <a href="../../glossary.html#glossary-grouping-symbols" class="glossary-link" data-slug="grouping-symbols" data-term="grouping symbols" data-original-href="#glossary-grouping-symbols">grouping symbols</a>, <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-slug="order-of-operations" data-term="order of operations" data-original-href="#glossary-order-of-operations">order of operations</a>, <a href="../../glossary.html#glossary-parentheses" class="glossary-link" data-slug="parentheses" data-term="parentheses" data-original-href="#glossary-parentheses">parentheses</a>, <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-slug="exponent" data-term="exponent" data-original-href="#glossary-exponent">exponent</a></p>
+<p><a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-original-href="#glossary-expression" data-term="expression">expression</a>, <a href="../../glossary.html#glossary-grouping-symbols" class="glossary-link" data-slug="grouping-symbols" data-original-href="#glossary-grouping-symbols" data-term="grouping symbols">grouping symbols</a>, <a href="../../glossary.html#glossary-order-of-operations" class="glossary-link" data-slug="order-of-operations" data-original-href="#glossary-order-of-operations" data-term="order of operations">order of operations</a>, <a href="../../glossary.html#glossary-parentheses" class="glossary-link" data-slug="parentheses" data-original-href="#glossary-parentheses" data-term="parentheses">parentheses</a>, <a href="../../glossary.html#glossary-exponent" class="glossary-link" data-slug="exponent" data-original-href="#glossary-exponent" data-term="exponent">exponent</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_1/1.8_Order_of_Operations.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -755,7 +760,7 @@ window.Quarto = {
 10 + \textcolor{red}{3 \times 5} = 10 + \textcolor{red}{15} = 25
 \]</span></p>
 <p>So which one is correct, <strong>65 or 25</strong>?</p>
-<p>✅ The correct answer is <strong>25</strong>, because we follow a specific order of <a href="../../glossary.html#glossary-operation" class="glossary-link" data-slug="operation" data-term="operations" data-original-href="#glossary-operation">operations</a>. Without these rules, people could get different answers to the same problem!</p>
+<p>✅ The correct answer is <strong>25</strong>, because we follow a specific order of <a href="../../glossary.html#glossary-operation" class="glossary-link" data-slug="operation" data-original-href="#glossary-operation" data-term="operations">operations</a>. Without these rules, people could get different answers to the same problem!</p>
 <p>Let’s look at the rules:</p>
 <div class="remember" title="The Order of Operations">
 <p>We often remember the order using <strong>PEMDAS</strong>:</p>
@@ -786,7 +791,7 @@ window.Quarto = {
 </section>
 <section id="examples-with-integers" class="level3">
 <h3 class="anchored" data-anchor-id="examples-with-integers">1.8.2 - Examples with Integers</h3>
-<p>Let’s look at some <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-term="expressions" data-original-href="#glossary-expression">expressions</a> that follow the order of operations. These use only whole numbers (no fractions or negatives yet).</p>
+<p>Let’s look at some <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-original-href="#glossary-expression" data-term="expressions">expressions</a> that follow the order of operations. These use only whole numbers (no fractions or negatives yet).</p>
 <p><strong>Example 1:</strong> <span class="math inline">\(5 + 3 \times 2\)</span></p>
 <p>First, do the multiplication:</p>
 <p><span class="math display">\[
@@ -1418,14 +1423,13 @@ Swap with a partner, can they simplify it correctly?</p></li>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

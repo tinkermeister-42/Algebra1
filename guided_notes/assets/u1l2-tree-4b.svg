@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 256" width="400" height="256">
+  <line x1="112.9" y1="31.0" x2="41.7" y2="55.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="112.9" y1="31.0" x2="184.2" y2="55.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="184.2" y1="85.0" x2="105.0" y2="109.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="184.2" y1="85.0" x2="263.3" y2="109.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="263.3" y1="139.0" x2="200.0" y2="163.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="200.0" y1="193.0" x2="168.3" y2="217.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="200.0" y1="193.0" x2="231.7" y2="217.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="263.3" y1="139.0" x2="326.7" y2="163.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="326.7" y1="193.0" x2="295.0" y2="217.0" stroke="#111" stroke-width="1.2"/>
+  <line x1="326.7" y1="193.0" x2="358.3" y2="217.0" stroke="#111" stroke-width="1.2"/>
+  <circle cx="41.7" cy="70.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="41.7" y="74.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">-1</text>
+  <circle cx="105.0" cy="124.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="105.0" y="128.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">2</text>
+  <circle cx="168.3" cy="232.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="168.3" y="236.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">2</text>
+  <circle cx="231.7" cy="232.0" r="17" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <circle cx="200.0" cy="178.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="200.0" y="182.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">6</text>
+  <circle cx="295.0" cy="232.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="295.0" y="236.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">2</text>
+  <circle cx="358.3" cy="232.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="358.3" y="236.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">5</text>
+  <circle cx="326.7" cy="178.0" r="17" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <circle cx="263.3" cy="124.0" r="17" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <circle cx="184.2" cy="70.0" r="17" fill="#fff" stroke="#111" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <circle cx="112.9" cy="16.0" r="17" fill="#fff" stroke="#111" stroke-width="1.1"/>
+  <text x="112.9" y="20.0" text-anchor="middle" font-size="14" font-family="Georgia, 'Times New Roman', serif" fill="#111">-120</text>
+</svg>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +104,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -134,8 +133,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -165,8 +162,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -642,6 +638,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -712,7 +714,7 @@ window.Quarto = {
 
 
 <p>Learning mathematics is about more than number crunching, you’re learning a new language. Like any language, mathematics uses words and phrases to communicate ideas. In algebra, we call those words and phrases <strong>expressions</strong>.</p>
-<p>In this lesson, you’ll learn to <strong>read</strong> expressions to understand the ideas they communicate and to <strong>write</strong> expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-original-href="#glossary-variable" data-term="variables">variables</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-original-href="#glossary-term" data-term="terms">terms</a>, <a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-slug="coefficient" data-original-href="#glossary-coefficient" data-term="coefficients">coefficients</a>, and <a href="../../glossary.html#glossary-constant" class="glossary-link" data-slug="constant" data-original-href="#glossary-constant" data-term="constants">constants</a>.</p>
+<p>In this lesson, you’ll learn to <strong>read</strong> expressions to understand the ideas they communicate and to <strong>write</strong> expressions to communicate your own ideas. To take the next step in the language of algebra, we’ll start with the basic building blocks of expressions: <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-term="variables" data-original-href="#glossary-variable">variables</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-term="terms" data-original-href="#glossary-term">terms</a>, <a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-slug="coefficient" data-term="coefficients" data-original-href="#glossary-coefficient">coefficients</a>, and <a href="../../glossary.html#glossary-constant" class="glossary-link" data-slug="constant" data-term="constants" data-original-href="#glossary-constant">constants</a>.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can identify the parts of an algebraic expression.<br>
@@ -724,7 +726,10 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-slug="coefficient" data-original-href="#glossary-coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-slug="constant" data-original-href="#glossary-constant" data-term="constant">constant</a>, <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-original-href="#glossary-expression" data-term="expression">expression</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-original-href="#glossary-term" data-term="term">term</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-original-href="#glossary-variable" data-term="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-slug="coefficient" data-term="coefficient" data-original-href="#glossary-coefficient">coefficient</a>, <a href="../../glossary.html#glossary-constant" class="glossary-link" data-slug="constant" data-term="constant" data-original-href="#glossary-constant">constant</a>, <a href="../../glossary.html#glossary-expression" class="glossary-link" data-slug="expression" data-term="expression" data-original-href="#glossary-expression">expression</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-term="term" data-original-href="#glossary-term">term</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-term="variable" data-original-href="#glossary-variable">variable</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -738,8 +743,8 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="what-is-a-variable" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-a-variable">2.1.1 - What Is a Variable?</h3>
-<p>Sometimes we need to talk about a number we don’t know yet, or one that can change. For that, we use a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-original-href="#glossary-variable" data-term="variable">variable</a>.</p>
-<p>A variable is a letter or <a href="../../glossary.html#glossary-symbol" class="glossary-link" data-slug="symbol" data-original-href="#glossary-symbol" data-term="symbol">symbol</a> that stands for an unknown or changing number. Algebra often uses <strong>x</strong>, but other letters work too.</p>
+<p>Sometimes we need to talk about a number we don’t know yet, or one that can change. For that, we use a <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-term="variable" data-original-href="#glossary-variable">variable</a>.</p>
+<p>A variable is a letter or <a href="../../glossary.html#glossary-symbol" class="glossary-link" data-slug="symbol" data-term="symbol" data-original-href="#glossary-symbol">symbol</a> that stands for an unknown or changing number. Algebra often uses <strong>x</strong>, but other letters work too.</p>
 <p>Think of <strong>x</strong> as the label on a mystery box: you know there’s a number inside, but you don’t know which one.</p>
 <p><strong>Example 1:</strong> Boxes of apples</p>
 <p>You work at a grocery store. Your boss gives you labels and points to boxes of apples:<br>
@@ -747,19 +752,19 @@ window.Quarto = {
 <p>You pick up a sealed box. You can’t see inside, so you write <strong>x</strong> on the label, x means “the number of apples in this box (unknown).”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+<p><img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
 </figure>
 </div>
 <p>Your boss says, “Check inside.” You open the box: there are 3 apples.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_2/Lesson_1/AppleBoxOpen.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+<p><img src="../../images/Unit_2/Lesson_1/AppleBoxOpen.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
 </figure>
 </div>
 <p>Now you know the number, so you change the label to 3.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\images/Unit_2/Lesson_1/AppleBox3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
+<p><img src="../../images/Unit_2/Lesson_1/AppleBox3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:35.0%"></p>
 </figure>
 </div>
 <p>Before opening it, <strong>x</strong> was a variable, a placeholder for an unknown number. After looking, you found <span class="math inline">\(x = 3\)</span>.</p>
@@ -767,7 +772,7 @@ window.Quarto = {
 </section>
 <section id="what-is-an-expression" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-an-expression">2.1.2 - What Is an Expression?</h3>
-<p>An <strong>expression</strong> is a math phrase made of numbers, variables, and <a href="../../glossary.html#glossary-operation" class="glossary-link" data-slug="operation" data-original-href="#glossary-operation" data-term="operations">operations</a>. Expressions do <strong>not</strong> compare values, so <span class="math inline">\(2x\)</span> and <span class="math inline">\(5\)</span> are expressions, but <span class="math inline">\(2x = 5\)</span> is not (that’s an equation).</p>
+<p>An <strong>expression</strong> is a math phrase made of numbers, variables, and <a href="../../glossary.html#glossary-operation" class="glossary-link" data-slug="operation" data-term="operations" data-original-href="#glossary-operation">operations</a>. Expressions do <strong>not</strong> compare values, so <span class="math inline">\(2x\)</span> and <span class="math inline">\(5\)</span> are expressions, but <span class="math inline">\(2x = 5\)</span> is not (that’s an equation).</p>
 <p><strong>Examples of expressions:</strong></p>
 <ul>
 <li><span class="math inline">\(3x\)</span></li>
@@ -804,7 +809,7 @@ window.Quarto = {
 <p><strong>Example 2:</strong> Multiple boxes of apples</p>
 <p>Back to the apple boxes: before, you had one box. Now suppose you have 5 boxes, each with <strong>x</strong> apples.</p>
 <div class="text-center">
-<p><img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../..\images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"></p>
+<p><img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"> <img src="../../images/Unit_2/Lesson_1/AppleBoxX.png" class="img-fluid" width="100"></p>
 </div>
 <p>If each box has <strong>x</strong> apples, then the total is <span class="math inline">\(5 \cdot x\)</span> or simply <span class="math inline">\(5x\)</span>.</p>
 <div class="you-try" title="Write an expression that represents 10 boxes of pencils">
@@ -812,7 +817,7 @@ window.Quarto = {
 Total pencils = <span class="math inline">\(10p\)</span></p>
 </div>
 <div class="gotcha" title="Where did the multiply sign go?">
-<p>In algebra, we usually don’t use <span class="math inline">\(\times\)</span> for multiplication. Instead, we use a dot “<span class="math inline">\(\cdot\)</span>” or simply place terms next to each other (<a href="../../glossary.html#glossary-multiplication-by-proximity" class="glossary-link" data-slug="multiplication-by-proximity" data-original-href="#glossary-multiplication-by-proximity" data-term="multiplication by proximity">multiplication by proximity</a>).</p>
+<p>In algebra, we usually don’t use <span class="math inline">\(\times\)</span> for multiplication. Instead, we use a dot “<span class="math inline">\(\cdot\)</span>” or simply place terms next to each other (<a href="../../glossary.html#glossary-multiplication-by-proximity" class="glossary-link" data-slug="multiplication-by-proximity" data-term="multiplication by proximity" data-original-href="#glossary-multiplication-by-proximity">multiplication by proximity</a>).</p>
 <p><strong>Three ways to write “3 times x”:</strong></p>
 <ul>
 <li><span class="math inline">\(3 \times x\)</span> <em>(rarely used)</em><br>
@@ -984,7 +989,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Need more examples? Download <a href="../..\resources/KeywordTranslations.pdf">this sheet</a> that has many more examples!</p>
+<p>Need more examples? Download <a href="../../resources/KeywordTranslations.pdf">this sheet</a> that has many more examples!</p>
 </div>
 </div>
 </section>
@@ -1436,14 +1441,13 @@ Tip
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

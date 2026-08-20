@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 58" width="700" height="58">
+  <line x1="8" y1="24" x2="692" y2="24" stroke="#111" stroke-width="1.8"/>
+  <polygon points="2,24 14,19 14,29" fill="#111"/>
+  <polygon points="698,24 686,19 686,29" fill="#111"/>
+  <line x1="22.0" y1="18" x2="22.0" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="87.6" y1="18" x2="87.6" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="153.2" y1="18" x2="153.2" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="218.8" y1="18" x2="218.8" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="284.4" y1="18" x2="284.4" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="350.0" y1="15" x2="350.0" y2="33" stroke="#111" stroke-width="2.5"/>
+  <line x1="415.6" y1="18" x2="415.6" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="481.2" y1="18" x2="481.2" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="546.8" y1="18" x2="546.8" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="612.4" y1="18" x2="612.4" y2="30" stroke="#111" stroke-width="1.6"/>
+  <line x1="678.0" y1="18" x2="678.0" y2="30" stroke="#111" stroke-width="1.6"/>
+</svg>

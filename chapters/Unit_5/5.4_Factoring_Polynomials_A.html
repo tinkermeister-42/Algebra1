@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2641b481724464e61c86985d8c912b6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +108,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -138,8 +137,6 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">DHS Algebra 1</span>
     </a>
@@ -169,8 +166,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -646,6 +642,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/Supplemental/guided_notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Extra Practice Worksheets</span></a>
   </div>
@@ -713,18 +715,18 @@ window.Quarto = {
 </header>
 
 
-<p>You’ve spent a lot of time learning how to <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-slug="simplify" data-original-href="#glossary-simplify" data-term="simplify">simplify</a> expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.</p>
+<p>You’ve spent a lot of time learning how to <a href="../../glossary.html#glossary-simplify" class="glossary-link" data-original-href="#glossary-simplify" data-slug="simplify" data-term="simplify">simplify</a> expressions: distribute, combine like terms, and rewrite things in cleaner forms. But sometimes we want to go in the opposite direction.</p>
 <p>Take something like:</p>
 <p><span class="math display">\[
 12x + 18.
 \]</span></p>
-<p>It looks simple, but there’s structure hidden inside it. Could this expression be written as a <a href="../../glossary.html#glossary-product" class="glossary-link" data-slug="product" data-original-href="#glossary-product" data-term="product">product</a> of smaller pieces?</p>
+<p>It looks simple, but there’s structure hidden inside it. Could this expression be written as a <a href="../../glossary.html#glossary-product" class="glossary-link" data-original-href="#glossary-product" data-slug="product" data-term="product">product</a> of smaller pieces?</p>
 <p>Now look at a trinomial such as</p>
 <p><span class="math display">\[
 x^2 + 11x + 24.
 \]</span></p>
 <p>Where did it come from? Could it be the result of multiplying two binomials? If so, how could we work backward to uncover them?</p>
-<p>In this lesson, we will find the answers to these questions by learning the basics of <a href="../../glossary.html#glossary-factoring" class="glossary-link" data-slug="factoring" data-original-href="#glossary-factoring" data-term="factoring">factoring</a> polynomials.</p>
+<p>In this lesson, we will find the answers to these questions by learning the basics of <a href="../../glossary.html#glossary-factoring" class="glossary-link" data-original-href="#glossary-factoring" data-slug="factoring" data-term="factoring">factoring</a> polynomials.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can factor a polynomial by taking out a greatest common factor (GCF).</label></li>
@@ -733,7 +735,10 @@ x^2 + 11x + 24.
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-slug="coefficient" data-original-href="#glossary-coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-factor" class="glossary-link" data-slug="factor" data-original-href="#glossary-factor" data-term="factor">factor</a>, <a href="../../glossary.html#glossary-greatest-common-factor" class="glossary-link" data-slug="greatest-common-factor" data-original-href="#glossary-greatest-common-factor" data-term="greatest common factor">greatest common factor</a>, <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-slug="polynomial" data-original-href="#glossary-polynomial" data-term="polynomial">polynomial</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-slug="term" data-original-href="#glossary-term" data-term="term">term</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-slug="trinomial" data-original-href="#glossary-trinomial" data-term="trinomial">trinomial</a></p>
+<p><a href="../../glossary.html#glossary-coefficient" class="glossary-link" data-original-href="#glossary-coefficient" data-slug="coefficient" data-term="coefficient">coefficient</a>, <a href="../../glossary.html#glossary-factor" class="glossary-link" data-original-href="#glossary-factor" data-slug="factor" data-term="factor">factor</a>, <a href="../../glossary.html#glossary-greatest-common-factor" class="glossary-link" data-original-href="#glossary-greatest-common-factor" data-slug="greatest-common-factor" data-term="greatest common factor">greatest common factor</a>, <a href="../../glossary.html#glossary-polynomial" class="glossary-link" data-original-href="#glossary-polynomial" data-slug="polynomial" data-term="polynomial">polynomial</a>, <a href="../../glossary.html#glossary-term" class="glossary-link" data-original-href="#glossary-term" data-slug="term" data-term="term">term</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-original-href="#glossary-trinomial" data-slug="trinomial" data-term="trinomial">trinomial</a></p>
+</div>
+<div class="guided-notes-link">
+<p><a href="../../guided_notes/Unit_5/5.4_Factoring_Polynomials_A.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
 </div>
 <section id="warmup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="warmup">🔥 Warm Up</h2>
@@ -2049,14 +2054,13 @@ Factor each expression completely.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

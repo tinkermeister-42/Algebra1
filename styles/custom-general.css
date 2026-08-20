@@ -122,3 +122,15 @@
 .math.inline {
   white-space: nowrap;
 } 
+/* Link from a lesson to its printable guided-notes handout */
+.guided-notes-link {
+  margin: 1rem 0;
+  padding: 0.5rem 0.85rem;
+  border-left: 4px solid #2c5f8a;
+  background: #f2f5f8;
+  border-radius: 2px;
+  font-size: 0.95rem;
+}
+.guided-notes-link p { margin: 0; }
+.guided-notes-link a { font-weight: bold; }
+.guided-notes-link a::before { content: "\1F4C4\00a0"; }

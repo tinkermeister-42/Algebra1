@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340">
+  <line x1="24.00" y1="12" x2="24.00" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="54.40" y1="12" x2="54.40" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="84.80" y1="12" x2="84.80" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="115.20" y1="12" x2="115.20" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="145.60" y1="12" x2="145.60" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="176.00" y1="12" x2="176.00" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="206.40" y1="12" x2="206.40" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="236.80" y1="12" x2="236.80" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="267.20" y1="12" x2="267.20" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="297.60" y1="12" x2="297.60" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="328.00" y1="12" x2="328.00" y2="316" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="12.00" x2="328" y2="12.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="42.40" x2="328" y2="42.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="72.80" x2="328" y2="72.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="103.20" x2="328" y2="103.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="133.60" x2="328" y2="133.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="164.00" x2="328" y2="164.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="194.40" x2="328" y2="194.40" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="224.80" x2="328" y2="224.80" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="255.20" x2="328" y2="255.20" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="285.60" x2="328" y2="285.60" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="316.00" x2="328" y2="316.00" stroke="#c9d2da" stroke-width="0.6"/>
+  <line x1="24" y1="316" x2="336" y2="316" stroke="#111" stroke-width="1.4"/>
+  <line x1="24" y1="4" x2="24" y2="316" stroke="#111" stroke-width="1.4"/>
+  <polygon points="341,316 332,312 332,320" fill="#111"/>
+  <polygon points="24,-1 20,8 28,8" fill="#111"/>
+</svg>
