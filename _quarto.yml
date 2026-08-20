@@ -6,6 +6,8 @@ project:
 resources:
   - glossary.json
   - scripts/*
+  - guided_notes/Unit_*/*.html
+  - guided_notes/assets/*
 
 extensions:
   - glossary
@@ -133,6 +135,7 @@ book:
       chapters:
         - file: chapters/Supplemental/index.qmd
         - file: chapters/Supplemental/math_games_and_puzzles/index.md
+        - file: chapters/Supplemental/guided_notes.qmd
         - file: chapters/Supplemental/worksheets/index.qmd
         - file: chapters/Supplemental/challenge_solutions.qmd
 

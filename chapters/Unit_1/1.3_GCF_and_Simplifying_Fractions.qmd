@@ -18,6 +18,10 @@ In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to
 {{< glink simplify >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.3_GCF_and_Simplifying_Fractions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Which number do you *think* has the most prime factors? What makes you think so?

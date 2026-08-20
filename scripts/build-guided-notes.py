@@ -30,6 +30,7 @@ SHELL = """<!DOCTYPE html>
 <section class="sheet">
 
   <div class="masthead">
+    <a class="backlink" href="../../chapters/Unit_{unit}/{lesson}_{slug}.html">&larr; back to the lesson</a>
     <h1>{lesson} &nbsp;{title}</h1>
     <div class="sub">Guided Notes &mdash; Unit {unit}: {unit_title} &mdash; DHS Algebra 1</div>
     <div class="idline"><span>Name</span><span class="small">Date</span><span class="small">Period</span></div>

@@ -205,3 +205,11 @@ table.area td, table.area th {
 }
 table.area td.hdr, table.area th { background: var(--tint); font-weight: bold; }
 table.area td.corner { border: none; background: transparent; }
+
+/* link back to the lesson — on screen only, never on the printed handout */
+.backlink {
+  float: right; font-family: Verdana, Geneva, sans-serif; font-size: 8.5pt;
+  color: var(--accent); text-decoration: none;
+}
+.backlink:hover { text-decoration: underline; }
+@media print { .backlink { display: none; } }

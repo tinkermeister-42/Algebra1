@@ -25,6 +25,10 @@ Now we ask a similar question for quadratics:
 {{< glink slug="vertex-form-quadratic" text="vertex form" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Find the slope and y-intercept for the line $y = 3x - 2$. How can you use those to graph the line?

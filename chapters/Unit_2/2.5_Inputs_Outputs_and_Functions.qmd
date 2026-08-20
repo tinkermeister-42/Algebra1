@@ -22,6 +22,10 @@ What could the machine be doing to the numbers? How could we describe that proce
 {{< glink simplify >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Evaluate these expressions when $x=4$:

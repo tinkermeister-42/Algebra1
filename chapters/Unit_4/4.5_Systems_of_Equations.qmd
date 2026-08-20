@@ -26,6 +26,10 @@ That’s the idea behind a **system of equations**.
 {{< glink "system of equations" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Graph $y = 2x + 1$ and $y = -x + 4$ on the same axes.

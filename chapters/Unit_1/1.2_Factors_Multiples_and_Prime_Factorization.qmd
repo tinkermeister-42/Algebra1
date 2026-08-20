@@ -27,6 +27,10 @@ You’ll use these skills again and again, from simplifying fractions to solving
 {{< glink "prime number" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. How many different pairs of whole numbers can you multiply to get 36?

@@ -16,6 +16,10 @@ When we switch from **equations** to **inequalities**, we’re no longer looking
 {{< glink "solution set" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.7_Graphing_Linear_Inequalities.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Solve for $x$: $4x - 7 < 13$

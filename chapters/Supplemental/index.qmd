@@ -13,6 +13,10 @@ Use these resources to:
 
   Number grids, logic puzzles, equation word searches, and more.
 
+### [Printable Guided Notes](guided_notes.qmd)
+
+  Fill-in notes for every lesson, ready to print.
+
 ### [Extra Practice Worksheets](worksheets/index.qmd)
 
   Targeted drills and alternative problem sets.

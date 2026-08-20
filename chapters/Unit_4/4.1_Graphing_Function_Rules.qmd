@@ -20,6 +20,10 @@ It’s time to move from numbers to shapes, and start seeing how a function beha
 {{< glink "ordered pair" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.1_Graphing_Function_Rules.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Complete the table for the function $f(x) = 2x + 1$

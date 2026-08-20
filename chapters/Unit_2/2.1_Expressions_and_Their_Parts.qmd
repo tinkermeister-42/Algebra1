@@ -18,6 +18,10 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 {{< glink variable >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. A shirt costs $\$10$. How do you find the total cost of several shirts?  

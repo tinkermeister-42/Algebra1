@@ -41,6 +41,10 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 {{< glink variable >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Without solving, decide which is larger: 

@@ -22,6 +22,10 @@ In this lesson, we’ll learn the rules, unpack *why* they work, and learn how t
 {{< glink "zero exponent" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 Simplify each expression.

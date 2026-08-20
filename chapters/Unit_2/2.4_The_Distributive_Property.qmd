@@ -24,6 +24,10 @@ Either way, you get the same answer. What we just did actually followed a rule i
 {{< glink factor >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.4_The_Distributive_Property.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1.  Here are the individual orders for 5 friends going through a drive through.

@@ -20,6 +20,10 @@ In this lesson, you will learn how to use these linear models to solve real-worl
 :::
 
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.6_Linear_Models_in_the_Real_World.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Complete the table for the function $g(x) = 3x - 2$.

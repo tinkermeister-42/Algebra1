@@ -16,6 +16,10 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 {{< glink "repeating decimal" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.6_Fractions_Decimals_and_Percents.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Which one doesn’t belong?

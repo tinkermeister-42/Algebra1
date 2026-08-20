@@ -20,6 +20,10 @@ That rate of change is called the **slope**, one of the most important ideas in 
 {{< glink vertical >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Plot the function $f(x)=2x+1$.

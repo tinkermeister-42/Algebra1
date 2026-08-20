@@ -38,6 +38,16 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Add terms to `glossary.qmd`: H3 heading with `{#slug}`, first paragraph = tooltip text
 - Format: Definition → optional `> **Example:** …` → optional `**See Also:** …`
 
+## Guided Notes
+- Printable fill-in handout per lesson: `guided_notes/Unit_X/#.#_Slug.html`
+- **Edit** the body fragment in `guided_notes/src/#.#.html`, then rebuild:
+  `python3 scripts/build-guided-notes.py [lesson...]`
+- Shared styles/figures in `guided_notes/assets/`; regenerate figures with
+  `python3 scripts/make-guided-notes-assets.py`
+- Self-contained: no JS, no CDN, math is HTML/CSS. Figures are `<img>` so they print.
+- Each lesson `.qmd` links to its handout via a `.guided-notes-link` div above `{{< warmup >}}`
+- See `guided_notes/README.md` for the shorthand tokens and building blocks
+
 ## Widgets
 - Embed: `{{< include /assets/Unit_X/widget.html >}}`
 - Math API (from `scripts/inject-custom.html`): `window.setMath(el, tex, display)`, `window.qwTypesetMath(el)`

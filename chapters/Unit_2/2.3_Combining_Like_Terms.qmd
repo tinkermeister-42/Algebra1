@@ -20,6 +20,10 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 {{< glink variable >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. What do you get when you add:

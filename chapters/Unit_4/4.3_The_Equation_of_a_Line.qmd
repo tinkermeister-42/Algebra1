@@ -21,6 +21,10 @@ Once you know those, you can write an equation, make predictions, and see how th
 {{< glink "y-intercept" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.3_The_Equation_of_a_Line.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Graph the line $y = 3x + 2$ using $x = 1$ and $x = -1$.

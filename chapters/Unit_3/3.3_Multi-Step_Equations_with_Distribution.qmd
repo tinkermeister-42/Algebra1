@@ -20,6 +20,10 @@ In this lesson, you’ll learn how to simplify first (by using the distributive 
 {{< glink "inverse operations" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Solve $3x - 5 = 19$

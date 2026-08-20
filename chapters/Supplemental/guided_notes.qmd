@@ -1,0 +1,75 @@
+# Printable Guided Notes {.unnumbered}
+
+Every lesson has a **guided notes** handout: the lesson with the prose stripped out.
+Objectives, a warm-up, the key ideas as fill-in-the-blank statements, and every example
+and practice problem with room to work them out. Nothing is pre-solved.
+
+Open one and use your browser's **Print** command (choose *Save as PDF* for a digital
+copy). They are laid out for letter-size paper.
+
+***
+
+
+## Unit 1 &mdash; Foundations
+
+  - [1.1 &mdash; Integers &amp; Number Lines](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"}
+  - [1.2 &mdash; Factors, Multiples &amp; Prime Factorization](/guided_notes/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html){target="_blank"}
+  - [1.3 &mdash; GCF &amp; Simplifying Fractions](/guided_notes/Unit_1/1.3_GCF_and_Simplifying_Fractions.html){target="_blank"}
+  - [1.4 &mdash; Multiplying &amp; Dividing Fractions](/guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html){target="_blank"}
+  - [1.5 &mdash; Adding &amp; Subtracting Fractions](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"}
+  - [1.6 &mdash; Fractions, Decimals &amp; Percents](/guided_notes/Unit_1/1.6_Fractions_Decimals_and_Percents.html){target="_blank"}
+  - [1.7 &mdash; Solving Problems With Fractions, Decimals &amp; Percents](/guided_notes/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html){target="_blank"}
+  - [1.8 &mdash; Order of Operations](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"}
+
+## Unit 2 &mdash; Algebraic Expressions
+
+  - [2.1 &mdash; Expressions &amp; Their Parts](/guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html){target="_blank"}
+  - [2.2 &mdash; Evaluating Expressions](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"}
+  - [2.3 &mdash; Combining Like Terms](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"}
+  - [2.4 &mdash; The Distributive Property](/guided_notes/Unit_2/2.4_The_Distributive_Property.html){target="_blank"}
+  - [2.5 &mdash; Inputs and Outputs of Functions](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"}
+  - [2.6 &mdash; Equivalent Expressions](/guided_notes/Unit_2/2.6_Equivalent_Expressions.html){target="_blank"}
+
+## Unit 3 &mdash; Solving Linear Equations
+
+  - [3.1 &mdash; Solving One-Step Equations](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"}
+  - [3.2 &mdash; Solving Two-Step Equations](/guided_notes/Unit_3/3.2_Solving_Two-Step_Equations.html){target="_blank"}
+  - [3.3 &mdash; Multi-Step Equations with Distribution](/guided_notes/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html){target="_blank"}
+  - [3.4 &mdash; Equations With Variables on Both Sides](/guided_notes/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html){target="_blank"}
+  - [3.5 &mdash; Equations With No or Infinite Solutions](/guided_notes/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html){target="_blank"}
+  - [3.6 &mdash; Solving Inequalities](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"}
+  - [3.7 &mdash; Solving Literal Equations](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"}
+
+## Unit 4 &mdash; Linear Functions &amp; Graphs
+
+  - [4.1 &mdash; Graphing Function Rules](/guided_notes/Unit_4/4.1_Graphing_Function_Rules.html){target="_blank"}
+  - [4.2 &mdash; Understanding Slope](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"}
+  - [4.3 &mdash; The Equation of a Line](/guided_notes/Unit_4/4.3_The_Equation_of_a_Line.html){target="_blank"}
+  - [4.4 &mdash; Writing Linear Equations](/guided_notes/Unit_4/4.4_Writing_Linear_Equations.html){target="_blank"}
+  - [4.5 &mdash; Systems of Equations](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"}
+  - [4.6 &mdash; Linear Models in the Real World](/guided_notes/Unit_4/4.6_Linear_Models_in_the_Real_World.html){target="_blank"}
+  - [4.7 &mdash; Graphing Linear Inequalities](/guided_notes/Unit_4/4.7_Graphing_Linear_Inequalities.html){target="_blank"}
+
+## Unit 5 &mdash; Exponents &amp; Polynomials
+
+  - [5.1 &mdash; Exponent Rules](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"}
+  - [5.2 &mdash; Simplifying Polynomials](/guided_notes/Unit_5/5.2_Simplifying_Polynomials.html){target="_blank"}
+  - [5.3 &mdash; Multiplying Polynomials](/guided_notes/Unit_5/5.3_Multiplying_Polynomials.html){target="_blank"}
+  - [5.4 &mdash; Factoring &mdash; GCF &amp; Basic Trinomials](/guided_notes/Unit_5/5.4_Factoring_Polynomials_A.html){target="_blank"}
+  - [5.5 &mdash; Factoring &mdash; General Trinomials &amp; Special Patterns](/guided_notes/Unit_5/5.5_Factoring_Polynomials_B.html){target="_blank"}
+
+## Unit 6 &mdash; Quadratic Equations &amp; Functions
+
+  - [6.1 &mdash; Introduction to Quadratics](/guided_notes/Unit_6/6.1_Introduction_to_Quadratic_Functions.html){target="_blank"}
+  - [6.2 &mdash; Graphing Quadratics](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"}
+  - [6.3 &mdash; Solving Quadratic Equations by Factoring](/guided_notes/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html){target="_blank"}
+  - [6.4 &mdash; Solving Quadratics by Taking Square Roots](/guided_notes/Unit_6/6.4_Solving_by_Taking_Square_Roots.html){target="_blank"}
+  - [6.5 &mdash; Completing the Square](/guided_notes/Unit_6/6.5_Completing_the_Square.html){target="_blank"}
+  - [6.6 &mdash; The Quadratic Formula](/guided_notes/Unit_6/6.6_The_Quadratic_Formula.html){target="_blank"}
+  - [6.7 &mdash; Applications of Quadratics](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"}
+
+***
+
+*Teachers: the handouts are generated from the sources in `guided_notes/src/`.
+Edit one there and run `python3 scripts/build-guided-notes.py` to rebuild.*
+

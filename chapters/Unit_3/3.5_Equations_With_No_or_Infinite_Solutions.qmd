@@ -26,6 +26,10 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 {{< glink "no solution" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. Solve $5x + 2 = 3x - 12$.

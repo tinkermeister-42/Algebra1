@@ -27,6 +27,10 @@ These questions will guide us as we look at trinomials that do not follow the fa
 {{< glink "trinomial" >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.5_Factoring_Polynomials_B.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}}
 
 1. When you factored trinomials like $x^2 + 9x + 20$, what made the process predictable?

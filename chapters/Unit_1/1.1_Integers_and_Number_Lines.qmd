@@ -25,6 +25,10 @@ Negative numbers can be tricky, especially when the rules don’t always match w
 {{< glink positive >}}
 :::
 
+::: {.guided-notes-link}
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"} &mdash; fill-in notes to print and write on.
+:::
+
 {{< warmup >}} 
 
 Answer as best you can -- even if you aren't sure!
