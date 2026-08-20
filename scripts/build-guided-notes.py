@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+"""Build the printable guided-notes handouts.
+
+Each lesson's content lives in guided_notes/src/<lesson>.html as a body
+fragment with a small metadata header.  This script wraps every fragment in
+the shared page shell (head, MathJax, masthead, footer) and writes the
+finished handout to guided_notes/Unit_<n>/<lesson>_<Slug>.html.
+
+    python3 scripts/build-guided-notes.py            # build everything
+    python3 scripts/build-guided-notes.py 3.4 3.5    # build just these
+"""
+import glob
+import os
+import re
+import sys
+
+ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
+SRC = os.path.join(ROOT, "guided_notes", "src")
+OUT = os.path.join(ROOT, "guided_notes")
+
+SHELL = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guided Notes {lesson} — {title}</title>
+<link rel="stylesheet" href="../assets/guided-notes.css">
+</head>
+<body>
+<section class="sheet">
+
+  <div class="masthead">
+    <h1>{lesson} &nbsp;{title}</h1>
+    <div class="sub">Guided Notes &mdash; Unit {unit}: {unit_title} &mdash; DHS Algebra 1</div>
+    <div class="idline"><span>Name</span><span class="small">Date</span><span class="small">Period</span></div>
+  </div>
+
+{body}
+</section>
+</body>
+</html>
+"""
+
+# Lightweight shorthands so the fragments stay readable.  Expanded here.
+SHORTHAND = {
+    "{{nl}}":       '<img class="nl" src="../assets/nl.svg" alt="number line from -10 to 10">',
+    "{{nl-blank}}": '<img class="nl" src="../assets/nl-blank.svg" alt="blank number line">',
+    "{{nl-11}}":    '<img class="nl" src="../assets/nl-blank-11.svg" alt="blank number line">',
+    "{{grid}}":     '<img class="grid" src="../assets/grid.svg" alt="coordinate grid">',
+    "{{grid-sm}}":  '<img class="grid sm" src="../assets/grid.svg" alt="coordinate grid">',
+    "{{grid-lg}}":  '<img class="grid lg" src="../assets/grid.svg" alt="coordinate grid">',
+    "{{grid-blank}}": '<img class="grid" src="../assets/grid-blank.svg" alt="blank coordinate grid">',
+    "{{grid-q1}}":  '<img class="grid" src="../assets/grid-q1.svg" alt="first quadrant grid">',
+    "{{break}}":    '<div class="pagebreak"></div>',
+}
+
+HEADER_RE = re.compile(r"\A<!--(.*?)-->\s*", re.S)
+# {{f 3/4}} -> a stacked fraction (no braces or slashes inside the parts)
+FRAC_RE = re.compile(r"\{\{f ([^/{}]+)/([^/{}]+)\}\}")
+
+
+def parse(path):
+    raw = open(path).read()
+    m = HEADER_RE.match(raw)
+    if not m:
+        raise SystemExit(f"{path}: missing metadata header comment")
+    meta = {}
+    for line in m.group(1).strip().splitlines():
+        if ":" in line:
+            k, v = line.split(":", 1)
+            meta[k.strip()] = v.strip()
+    for key in ("lesson", "title", "unit", "unit_title", "slug"):
+        if key not in meta:
+            raise SystemExit(f"{path}: metadata is missing '{key}'")
+    return meta, raw[m.end():]
+
+
+def build(path):
+    meta, body = parse(path)
+    for token, html in SHORTHAND.items():
+        body = body.replace(token, html)
+    body = FRAC_RE.sub(lambda m: '<span class="f"><b>%s</b><b>%s</b></span>'
+                                 % (m.group(1).strip(), m.group(2).strip()), body)
+    # a practice section always starts on a fresh page, with its own name line
+    body = body.replace("{{practice-head}}",
+                        '<div class="pagebreak"></div>\n'
+                        '  <div class="parthead"><b>%s %s &mdash; Practice</b>'
+                        '<span class="nm">Name</span></div>' % (meta["lesson"], meta["title"]))
+    page = SHELL.format(body=body.rstrip() + "\n", **meta)
+    unit_dir = os.path.join(OUT, "Unit_%s" % meta["unit"])
+    os.makedirs(unit_dir, exist_ok=True)
+    dest = os.path.join(unit_dir, "%s_%s.html" % (meta["lesson"], meta["slug"]))
+    with open(dest, "w") as f:
+        f.write(page)
+    return os.path.relpath(dest, ROOT)
+
+
+if __name__ == "__main__":
+    wanted = set(sys.argv[1:])
+    made = []
+    for path in sorted(glob.glob(os.path.join(SRC, "*.html"))):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        if wanted and stem not in wanted:
+            continue
+        made.append(build(path))
+    for m in made:
+        print("built", m)
+    print("%d handout(s)" % len(made))
