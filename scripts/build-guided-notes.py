@@ -55,8 +55,23 @@ SHORTHAND = {
 }
 
 HEADER_RE = re.compile(r"\A<!--(.*?)-->\s*", re.S)
-# {{f 3/4}} -> a stacked fraction (no braces or slashes inside the parts)
-FRAC_RE = re.compile(r"\{\{f ([^/{}]+)/([^/{}]+)\}\}")
+# {{f 3/4}} -> a stacked fraction.  The parts may contain markup, so the
+# dividing slash is the first one that is not part of a "</" or "/>" tag.
+FRAC_RE = re.compile(r"\{\{f (.+?)\}\}", re.S)
+
+
+def _fraction(match):
+    body = match.group(1)
+    for i, ch in enumerate(body):
+        if ch != "/":
+            continue
+        if i > 0 and body[i - 1] == "<":       # closing tag, e.g. </var>
+            continue
+        if i + 1 < len(body) and body[i + 1] == ">":   # self-closing tag
+            continue
+        return ('<span class="f"><b>%s</b><b>%s</b></span>'
+                % (body[:i].strip(), body[i + 1:].strip()))
+    raise SystemExit("no dividing slash in {{f %s}}" % body)
 
 
 def parse(path):
@@ -79,8 +94,7 @@ def build(path):
     meta, body = parse(path)
     for token, html in SHORTHAND.items():
         body = body.replace(token, html)
-    body = FRAC_RE.sub(lambda m: '<span class="f"><b>%s</b><b>%s</b></span>'
-                                 % (m.group(1).strip(), m.group(2).strip()), body)
+    body = FRAC_RE.sub(_fraction, body)
     # a practice section always starts on a fresh page, with its own name line
     body = body.replace("{{practice-head}}",
                         '<div class="pagebreak"></div>\n'
