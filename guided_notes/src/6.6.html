@@ -1,0 +1,252 @@
+<!--
+lesson: 6.6
+title: The Quadratic Formula
+unit: 6
+unit_title: Quadratic Equations &amp; Functions
+slug: The_Quadratic_Formula
+-->
+  <div class="box tint">
+    <div class="lbl">Objectives</div>
+    <ul class="obj">
+      <li>Use the quadratic formula to solve any quadratic</li>
+      <li>Use the discriminant to determine how many solutions there are</li>
+      <li>Choose which solving method is most efficient</li>
+    </ul>
+  </div>
+
+  <h2>Warm-Up</h2>
+  <div class="ex">
+    <div class="work">
+      <div class="cols2">
+        <div>
+          <p>1. Solve by completing the square: <var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0</p>
+          <div class="ruled"></div><div class="ruled"></div>
+          <p>2. Try to factor <var>x</var><sup>2</sup> + 5<var>x</var> + 1 = 0. Can you still
+            solve it another way?</p>
+          <div class="ruled"></div>
+        </div>
+        <div>
+          <p>3. Three equations were solved by completing the square. What pattern do you see
+            in where the numbers end up?</p>
+          <p style="font-size:10pt"><var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1 = 0
+            &rArr; <var>x</var> = {{f &minus;4 &plusmn; &radic;20/2}}<br>
+            2<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 1 = 0 &rArr; <var>x</var> =
+            {{f 6 &plusmn; &radic;28/4}}<br>
+            <var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 4 = 0 &rArr; <var>x</var> =
+            {{f 2 &plusmn; &radic;20/2}}</p>
+          <div class="ruled"></div><div class="ruled"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2><span class="num">6.6.1</span>Deriving the Quadratic Formula</h2>
+
+  <div class="keys">
+    Start with the most general quadratic there is:
+    <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var> = 0, where <var>a</var>
+    <span class="b s"></span> 0. Solve <i>that</i>, and you can solve
+    <span class="b m"></span>.
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 1.</b> Complete the square on the general equation.</div>
+    <div class="work">
+      <div class="cols2">
+        <div>
+          <table class="steps">
+            <tr><td class="why">Divide by <var>a</var></td><td></td></tr>
+            <tr><td class="why">Move the constant</td><td></td></tr>
+            <tr><td class="why">Add to both sides</td><td></td></tr>
+            <tr><td class="why">Write as a square</td><td></td></tr>
+            <tr><td class="why">Take square roots</td><td></td></tr>
+            <tr><td class="why">Solve for <var>x</var></td><td></td></tr>
+          </table>
+        </div>
+        <div>
+          <table class="area">
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td>
+              <td class="hdr">{{f <var>b</var>/2<var>a</var>}}</td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td></td></tr>
+            <tr><td class="hdr">{{f <var>b</var>/2<var>a</var>}}</td><td></td><td></td></tr>
+          </table>
+          <p class="ans">The missing corner is <span class="b m"></span></p>
+        </div>
+      </div>
+      <p class="ans" style="text-align:center;font-size:13pt"><b>The quadratic formula:</b>
+        &nbsp; <var>x</var> = <span class="b l"></span></p>
+    </div>
+  </div>
+
+  <h2><span class="num">6.6.2</span>Using the Formula</h2>
+
+  <div class="box tint">
+    <div class="lbl">The steps never change</div>
+    <ol>
+      <li>Identify <span class="b s"></span>, <span class="b s"></span>, and
+        <span class="b s"></span> &mdash; the equation must be in
+        <span class="b m"></span> first.</li>
+      <li>Substitute <span class="b m"></span>.</li>
+      <li>Simplify step by step.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 2.</b> Solve <var>x</var><sup>2</sup> + 3<var>x</var>
+      + 1 = 0.</div>
+    <div class="work h2">
+      <p><var>a</var> = <span class="b s"></span> &nbsp; <var>b</var> = <span class="b s"></span>
+        &nbsp; <var>c</var> = <span class="b s"></span></p>
+      <p class="ans">Solutions: <span class="b m"></span></p>
+      <p class="ans">This one does not factor &mdash; but the formula still gives
+        <span class="b m"></span> answers.</p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 3.</b> Solve 2<var>x</var><sup>2</sup> &minus;
+      5<var>x</var> + 2 = 0.</div>
+    <div class="work h2">
+      <p><var>a</var> = <span class="b s"></span> &nbsp; <var>b</var> = <span class="b s"></span>
+        &nbsp; <var>c</var> = <span class="b s"></span></p>
+      <p class="ans">Solutions: <span class="b m"></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 4.</b> Solve 3<var>x</var><sup>2</sup> + 4<var>x</var>
+      + 7 = 0.</div>
+    <div class="work h2">
+      <p class="ans">What went wrong under the square root? <span class="b l"></span></p>
+      <p class="ans">So this equation has <span class="b m"></span>.</p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 5.</b> Solve 4<var>x</var><sup>2</sup> &minus;
+      5<var>x</var> &minus; 12 = 0.</div>
+    <div class="work h25"></div>
+  </div>
+
+  <h2><span class="num">6.6.3</span>The Discriminant</h2>
+
+  <div class="keys">
+    The <b>discriminant</b> is the part under the square root:
+    <span class="b m"></span>. It tells you what <i>kind</i> of solutions you will get
+    <span class="b m"></span> you finish solving.
+    <table class="steps" style="margin-top:4px">
+      <tr><th style="width:2.4in">Discriminant</th><th>Number of real solutions</th>
+        <th>What the graph does</th></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td></td><td></td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td></td><td></td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 6.</b> Find the discriminant and the number of solutions.</div>
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:2.4in">Equation</th><th>Discriminant</th>
+          <th style="width:1.6in"># of solutions</th></tr>
+        <tr><td>2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0</td><td></td><td></td></tr>
+        <tr><td><var>x</var><sup>2</sup> &minus; 2<var>x</var> + 1 = 0</td><td></td><td></td></tr>
+        <tr><td><var>x</var><sup>2</sup> &minus; 2<var>x</var> + 6 = 0</td><td></td><td></td></tr>
+        <tr><td><var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">Is it factorable?</div>
+    If the discriminant is a <span class="b m"></span>, the quadratic factors over the
+    integers.
+    <div style="margin-top:3px">Check 2<var>x</var><sup>2</sup> + 5<var>x</var> &minus; 3:
+      discriminant = <span class="b s"></span>, which
+      <span class="b m"></span> a perfect square, so it factors as
+      <span class="b m"></span>.</div>
+  </div>
+
+{{practice-head}}
+
+  <h2>Practice</h2>
+  <h3>Level 1 &mdash; Basic</h3>
+
+  <div class="ex">
+    <div class="work">
+      <div class="cols4">
+        <p>1. &nbsp;<var>x</var><sup>2</sup> &minus; 16 = 0</p>
+        <p>2. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 25 = 0</p>
+        <p>3. &nbsp;<var>x</var><sup>2</sup> &minus; 5<var>x</var> + 6 = 0</p>
+        <p>4. &nbsp;<var>x</var><sup>2</sup> + 4<var>x</var> + 3 = 0</p>
+        <p>5. &nbsp;<var>x</var><sup>2</sup> + 2<var>x</var> + 1 = 0</p>
+        <p>6. &nbsp;4<var>x</var><sup>2</sup> &minus; 9 = 0</p>
+        <p>7. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 3 = 0</p>
+        <p>8. &nbsp;9<var>x</var><sup>2</sup> + 12<var>x</var> + 4 = 0</p>
+      </div>
+      <div class="tallbox h25"></div>
+    </div>
+  </div>
+
+  <h3>Level 2 &mdash; Intermediate</h3>
+  <div class="box tint">Give the number of solutions first, then solve.</div>
+
+  <div class="ex">
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:2.2in">Equation</th><th style="width:1.4in">Discriminant</th>
+          <th>Solutions</th></tr>
+        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td></td><td></td></tr>
+        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td></td><td></td></tr>
+        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td></td><td></td></tr>
+        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td></td><td></td></tr>
+        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td></td><td></td></tr>
+        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td></td><td></td></tr>
+        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td></td><td></td></tr>
+        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Level 3 &mdash; Challenging</h3>
+  <div class="box tint">You may need to rearrange or simplify first.</div>
+
+  <div class="ex">
+    <div class="work">
+      <div class="cols3">
+        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 8<var>x</var> = 0</p>
+        <p>18. &nbsp;<var>x</var>(3<var>x</var> &minus; 5) = 4</p>
+        <p>19. &nbsp;2(<var>x</var> &minus; 3)<sup>2</sup> = 8</p>
+        <p>20. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> = &minus;11</p>
+        <p>21. &nbsp;4<var>x</var><sup>2</sup> + 1 = 8<var>x</var></p>
+        <p>22. &nbsp;5<var>x</var><sup>2</sup> &minus; 20<var>x</var> + 20 = 0</p>
+      </div>
+      <div class="tallbox h25"></div>
+      <div class="cols3">
+        <p>23. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 4 = 0</p>
+        <p>24. &nbsp;<var>x</var><sup>2</sup> &minus; (<var>k</var> &minus; 2)<var>x</var> +
+          <var>k</var> = 0, with <var>k</var> = 3</p>
+        <p>25. &nbsp;3<var>x</var><sup>2</sup> + 4<var>x</var> + 7 = 0</p>
+      </div>
+      <div class="tallbox h25"></div>
+    </div>
+  </div>
+
+  <h3>Challenge</h3>
+
+  <div class="ex">
+    <div class="q">26. Find all values of <var>k</var> for which <var>x</var><sup>2</sup> +
+      <var>kx</var> + 9 = 0 has <b>exactly one</b> real solution.</div>
+    <div class="work h2"></div>
+  </div>
+
+  <div class="ex">
+    <div class="q">27. A quadratic equation has solutions <var>x</var> =
+      {{f 3 &plusmn; &radic;13/4}}. Write the original equation in standard form.</div>
+    <div class="work h25"></div>
+  </div>
+
+  <div class="box tint">
+    <div class="lbl">Questions I still have</div>
+    <div class="ruled"></div><div class="ruled"></div><div class="ruled"></div>
+  </div>
