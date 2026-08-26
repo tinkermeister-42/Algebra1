@@ -19,16 +19,19 @@ slug: Factoring_Polynomials_B
     <div>
       <p>1. When you factored <var>x</var><sup>2</sup> + 9<var>x</var> + 20, what made the
         process predictable?</p>
+      {{a}}<p><var>a</var> = 1, so both factors start with <var>x</var> &mdash; you only had to find factors of <var>c</var> that add to <var>b</var>.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. Look at 6<var>x</var><sup>2</sup> + 11<var>x</var> + 3. What is different about
         its structure?</p>
+      {{a}}<p>The leading coefficient is not 1, so the first terms of the factors are not both <var>x</var>.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. Swanhilda says 6<var>x</var><sup>2</sup> + 7<var>x</var> + 10 =
         (<var>x</var> + 2)(<var>x</var> + 5). Why can't that be right?</p>
+      {{a}}<p>(<var>x</var>+2)(<var>x</var>+5) = <var>x</var><sup>2</sup> + 7<var>x</var> + 10 &mdash; the leading coefficient is 1, not 6.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -37,13 +40,13 @@ slug: Factoring_Polynomials_B
 
   <div class="keys">
     Before, every trinomial started with <var>x</var><sup>2</sup>, so the first terms of the
-    factors were <span class="b m"></span> automatically. With
+    factors were <span class="b m">{{a}}<var>x</var>{{/a}}</span> automatically. With
     <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var> they are not.
     <div style="margin-top:4px"><b>The one change:</b> instead of factors of <var>c</var> that
-      add to <var>b</var>, look for factors of <span class="b m"></span> that add to
-      <span class="b s"></span>.</div>
+      add to <var>b</var>, look for factors of <span class="b m">{{a}}<var>a</var> &middot; <var>c</var>{{/a}}</span> that add to
+      <span class="b s">{{a}}<var>b</var>{{/a}}</span>.</div>
     <div style="margin-top:3px">Then fill in the outside of the model by taking the
-      <span class="b m"></span> of each row and each column.</div>
+      <span class="b m">{{a}}GCF{{/a}}</span> of each row and each column.</div>
   </div>
 
   <div class="ex">
@@ -51,25 +54,25 @@ slug: Factoring_Polynomials_B
     <div class="work">
       <div class="cols3">
         <div>
-          <p><var>a</var> &middot; <var>c</var> = <span class="b s"></span></p>
+          <p><var>a</var> &middot; <var>c</var> = <span class="b s">{{a}}18{{/a}}</span></p>
           <table class="fill">
             <tr><th>Factors</th><th>Sum</th></tr>
-            <tr><td>1 &times; 18</td><td></td></tr>
-            <tr><td>2 &times; 9</td><td></td></tr>
-            <tr><td>3 &times; 6</td><td></td></tr>
+            <tr><td>1 &times; 18</td><td>{{a}}19{{/a}}</td></tr>
+            <tr><td>2 &times; 9</td><td>{{a}}11{{/a}}</td></tr>
+            <tr><td>3 &times; 6</td><td>{{a}}9{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"></td><td>6<var>x</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td>3</td></tr>
+            <tr><td class="corner"></td><td class="hdr">{{a}}2<var>x</var>{{/a}}</td><td class="hdr">{{a}}3{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}3<var>x</var>{{/a}}</td><td>6<var>x</var><sup>2</sup></td><td>{{a}}9<var>x</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}1{{/a}}</td><td>{{a}}2<var>x</var>{{/a}}</td><td>3</td></tr>
           </table>
         </div>
         <div>
-          <p>GCF of row 1 = <span class="b s"></span> &nbsp; row 2 = <span class="b s"></span></p>
-          <p>GCF of col 1 = <span class="b s"></span> &nbsp; col 2 = <span class="b s"></span></p>
-          <p class="ans">= <span class="b m"></span></p>
+          <p>GCF of row 1 = <span class="b s">{{a}}3<var>x</var>{{/a}}</span> &nbsp; row 2 = <span class="b s">{{a}}1{{/a}}</span></p>
+          <p>GCF of col 1 = <span class="b s">{{a}}2<var>x</var>{{/a}}</span> &nbsp; col 2 = <span class="b s">{{a}}3{{/a}}</span></p>
+          <p class="ans">= <span class="b m">{{a}}(3<var>x</var> + 1)(2<var>x</var> + 3){{/a}}</span></p>
         </div>
       </div>
     </div>
@@ -80,22 +83,22 @@ slug: Factoring_Polynomials_B
     <div class="work">
       <div class="cols3">
         <div>
-          <p><var>a</var> &middot; <var>c</var> = <span class="b s"></span></p>
+          <p><var>a</var> &middot; <var>c</var> = <span class="b s">{{a}}30{{/a}}</span></p>
           <table class="fill">
             <tr><th>Factors</th><th>Sum</th></tr>
-            <tr><td></td><td></td></tr>
-            <tr><td></td><td></td></tr>
-            <tr><td></td><td></td></tr>
+            <tr><td>{{a}}1 &times; 30{{/a}}</td><td>{{a}}31{{/a}}</td></tr>
+            <tr><td>{{a}}2 &times; 15{{/a}}</td><td>{{a}}17{{/a}}</td></tr>
+            <tr><td>{{a}}3 &times; 10{{/a}}</td><td>{{a}}13{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr">{{a}}<var>y</var>{{/a}}</td><td class="hdr">{{a}}1{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}10<var>y</var>{{/a}}</td><td>{{a}}10<var>y</var><sup>2</sup>{{/a}}</td><td>{{a}}10<var>y</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}3{{/a}}</td><td>{{a}}3<var>y</var>{{/a}}</td><td>{{a}}3{{/a}}</td></tr>
           </table>
         </div>
-        <div><p class="ans">= <span class="b m"></span></p></div>
+        <div><p class="ans">= <span class="b m">{{a}}(10<var>y</var> + 3)(<var>y</var> + 1){{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -106,23 +109,23 @@ slug: Factoring_Polynomials_B
     <div class="work">
       <div class="cols3">
         <div>
-          <p><var>a</var> &middot; <var>c</var> = <span class="b s"></span></p>
+          <p><var>a</var> &middot; <var>c</var> = <span class="b s">{{a}}&minus;24{{/a}}</span></p>
           <table class="fill">
             <tr><th>Factors</th><th>Sum</th></tr>
-            <tr><td>&minus;1 &times; 24</td><td></td></tr>
-            <tr><td>&minus;2 &times; 12</td><td></td></tr>
-            <tr><td>&minus;3 &times; 8</td><td></td></tr>
-            <tr><td>&minus;4 &times; 6</td><td></td></tr>
+            <tr><td>&minus;1 &times; 24</td><td>{{a}}23{{/a}}</td></tr>
+            <tr><td>&minus;2 &times; 12</td><td>{{a}}10{{/a}}</td></tr>
+            <tr><td>&minus;3 &times; 8</td><td>{{a}}5{{/a}}</td></tr>
+            <tr><td>&minus;4 &times; 6</td><td>{{a}}2{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"></td><td>8<var>m</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td>&minus;3</td></tr>
+            <tr><td class="corner"></td><td class="hdr">{{a}}4<var>m</var>{{/a}}</td><td class="hdr">{{a}}3{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}2<var>m</var>{{/a}}</td><td>8<var>m</var><sup>2</sup></td><td>{{a}}6<var>m</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}&minus;1{{/a}}</td><td>{{a}}&minus;4<var>m</var>{{/a}}</td><td>&minus;3</td></tr>
           </table>
         </div>
-        <div><p class="ans">= <span class="b m"></span></p></div>
+        <div><p class="ans">= <span class="b m">{{a}}(2<var>m</var> &minus; 1)(4<var>m</var> + 3){{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -130,7 +133,7 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Factor 14<var>w</var><sup>2</sup> + 3<var>w</var>
       &minus; 2.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p><var>a</var>&middot;<var>c</var> = &minus;28; 7 and &minus;4 add to 3.</p><p>14<var>w</var><sup>2</sup> + 7<var>w</var> &minus; 4<var>w</var> &minus; 2 = 7<var>w</var>(2<var>w</var>+1) &minus; 2(2<var>w</var>+1)</p><p>= (7<var>w</var> &minus; 2)(2<var>w</var> + 1)</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -139,23 +142,23 @@ slug: Factoring_Polynomials_B
     <div class="work">
       <div class="cols3">
         <div>
-          <p><var>a</var> &middot; <var>c</var> = <span class="b s"></span></p>
+          <p><var>a</var> &middot; <var>c</var> = <span class="b s">{{a}}24{{/a}}</span></p>
           <table class="fill">
             <tr><th>Factors</th><th>Sum</th></tr>
-            <tr><td>&minus;1 &times; &minus;24</td><td></td></tr>
-            <tr><td>&minus;2 &times; &minus;12</td><td></td></tr>
-            <tr><td>&minus;3 &times; &minus;8</td><td></td></tr>
-            <tr><td>&minus;4 &times; &minus;6</td><td></td></tr>
+            <tr><td>&minus;1 &times; &minus;24</td><td>{{a}}&minus;25{{/a}}</td></tr>
+            <tr><td>&minus;2 &times; &minus;12</td><td>{{a}}&minus;14{{/a}}</td></tr>
+            <tr><td>&minus;3 &times; &minus;8</td><td>{{a}}&minus;11{{/a}}</td></tr>
+            <tr><td>&minus;4 &times; &minus;6</td><td>{{a}}&minus;10{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"></td><td>12<var>n</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td>2</td></tr>
+            <tr><td class="corner"></td><td class="hdr">{{a}}<var>n</var>{{/a}}</td><td class="hdr">{{a}}&minus;2{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}12<var>n</var>{{/a}}</td><td>12<var>n</var><sup>2</sup></td><td>{{a}}&minus;24<var>n</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}&minus;1{{/a}}</td><td>{{a}}&minus;<var>n</var>{{/a}}</td><td>2</td></tr>
           </table>
         </div>
-        <div><p class="ans">= <span class="b m"></span></p></div>
+        <div><p class="ans">= <span class="b m">{{a}}(12<var>n</var> &minus; 1)(<var>n</var> &minus; 2){{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -163,7 +166,7 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> Factor 18<var>p</var><sup>2</sup> &minus;
       13<var>p</var> &minus; 5.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p><var>a</var>&middot;<var>c</var> = &minus;90; &minus;18 and 5 add to &minus;13.</p><p>18<var>p</var><sup>2</sup> &minus; 18<var>p</var> + 5<var>p</var> &minus; 5 = 18<var>p</var>(<var>p</var>&minus;1) + 5(<var>p</var>&minus;1)</p><p>= (18<var>p</var> + 5)(<var>p</var> &minus; 1)</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -172,15 +175,15 @@ slug: Factoring_Polynomials_B
     <div class="work">
       <div class="cols2">
         <div>
-          <p>GCF = <span class="b s"></span> &nbsp;&rarr;&nbsp; <span class="b m"></span></p>
+          <p>GCF = <span class="b s">{{a}}3{{/a}}</span> &nbsp;&rarr;&nbsp; <span class="b m">{{a}}3(5<var>k</var><sup>2</sup> + 9<var>k</var> + 4){{/a}}</span></p>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr">{{a}}<var>k</var>{{/a}}</td><td class="hdr">{{a}}1{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}5<var>k</var>{{/a}}</td><td>{{a}}5<var>k</var><sup>2</sup>{{/a}}</td><td>{{a}}5<var>k</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}4{{/a}}</td><td>{{a}}4<var>k</var>{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
           </table>
         </div>
-        <div><p class="ans">Final answer: <span class="b m"></span></p>
-          <p class="ans">Did you put the GCF back? <span class="b s"></span></p></div>
+        <div><p class="ans">Final answer: <span class="b m">{{a}}3(5<var>k</var> + 4)(<var>k</var> + 1){{/a}}</span></p>
+          <p class="ans">Did you put the GCF back? <span class="b s">{{a}}yes{{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -188,40 +191,40 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> Factor 21<var>r</var><sup>2</sup> + 30<var>r</var>
       + 9 completely.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p>GCF = 3: &nbsp;3(7<var>r</var><sup>2</sup> + 10<var>r</var> + 3)</p><p>7 and 3 add to 10, so 7<var>r</var><sup>2</sup> + 7<var>r</var> + 3<var>r</var> + 3 = (7<var>r</var> + 3)(<var>r</var> + 1)</p><p>= 3(7<var>r</var> + 3)(<var>r</var> + 1)</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">5.5.2</span>Special Patterns</h2>
 
   <div class="keys">
-    <b>Difference of squares</b> &mdash; there is <span class="b m"></span> middle term,
-    because the two middle boxes <span class="b m"></span>.
+    <b>Difference of squares</b> &mdash; there is <span class="b m">{{a}}no{{/a}}</span> middle term,
+    because the two middle boxes <span class="b m">{{a}}cancel{{/a}}</span>.
     <p style="text-align:center;margin:4px 0"><b>(<var>px</var>)<sup>2</sup> &minus;
-      <var>q</var><sup>2</sup> = <span class="b m"></span></b></p>
+      <var>q</var><sup>2</sup> = <span class="b m">{{a}}(<var>px</var> &minus; <var>q</var>)(<var>px</var> + <var>q</var>){{/a}}</span></b></p>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> Factor 16<var>x</var><sup>2</sup> &minus; 9
       &nbsp;&nbsp;&nbsp; <b class="tag">EX 10.</b> Factor 49<var>p</var><sup>2</sup> &minus; 25</div>
     <div class="work h16">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>16<var>x</var><sup>2</sup> &minus; 9 = (4<var>x</var> &minus; 3)(4<var>x</var> + 3)</p>{{/a}}</div><div>{{a}}<p>49<var>p</var><sup>2</sup> &minus; 25 = (7<var>p</var> &minus; 5)(7<var>p</var> + 5)</p>{{/a}}</div></div>
     </div>
   </div>
 
   <div class="keys">
     <b>Perfect-square trinomial</b> &mdash; the middle term is exactly
-    <span class="b m"></span>.
+    <span class="b m">{{a}}twice the product of the two roots, 2<var>pq</var>{{/a}}</span>.
     <p style="text-align:center;margin:4px 0"><b>(<var>px</var>)<sup>2</sup> &plusmn;
-      2<var>pqx</var> + <var>q</var><sup>2</sup> = <span class="b m"></span></b></p>
+      2<var>pqx</var> + <var>q</var><sup>2</sup> = <span class="b m">{{a}}(<var>px</var> &plusmn; <var>q</var>)<sup>2</sup>{{/a}}</span></b></p>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 11.</b> Factor 25<var>m</var><sup>2</sup> + 30<var>m</var> + 9.</div>
     <div class="work h16">
-      <p>Rewrite it in the pattern: (<span class="b s"></span>)<sup>2</sup> + (2 &middot;
-        <span class="b s"></span> &middot; <span class="b s"></span>)<var>m</var> +
-        <span class="b s"></span><sup>2</sup></p>
-      <p class="ans">= <span class="b m"></span></p>
+      <p>Rewrite it in the pattern: (<span class="b s">{{a}}5<var>m</var>{{/a}}</span>)<sup>2</sup> + (2 &middot;
+        <span class="b s">{{a}}5{{/a}}</span> &middot; <span class="b s">{{a}}3{{/a}}</span>)<var>m</var> +
+        <span class="b s">{{a}}3{{/a}}</span><sup>2</sup></p>
+      <p class="ans">= <span class="b m">{{a}}(5<var>m</var> + 3)<sup>2</sup>{{/a}}</span></p>
     </div>
   </div>
 
@@ -230,7 +233,7 @@ slug: Factoring_Polynomials_B
       12<var>z</var> + 1 &nbsp;&nbsp;&nbsp; <b class="tag">EX 13.</b> Factor
       9<var>a</var><sup>2</sup> &minus; 30<var>a</var> + 25</div>
     <div class="work h2">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>36<var>z</var><sup>2</sup> &minus; 12<var>z</var> + 1 = (6<var>z</var> &minus; 1)<sup>2</sup></p>{{/a}}</div><div>{{a}}<p>9<var>a</var><sup>2</sup> &minus; 30<var>a</var> + 25 = (3<var>a</var> &minus; 5)<sup>2</sup></p>{{/a}}</div></div>
     </div>
   </div>
 
@@ -242,12 +245,12 @@ slug: Factoring_Polynomials_B
       <div>
         <table class="fill">
           <tr><th>Factors of 15</th><th>Sum</th></tr>
-          <tr><td>1 &times; 15</td><td></td></tr>
-          <tr><td>3 &times; 5</td><td></td></tr>
+          <tr><td>1 &times; 15</td><td>{{a}}16{{/a}}</td></tr>
+          <tr><td>3 &times; 5</td><td>{{a}}8{{/a}}</td></tr>
         </table>
       </div>
-      <div><p>No pair adds to <span class="b s"></span>, so this polynomial is
-        <span class="b m"></span>.</p></div>
+      <div><p>No pair adds to <span class="b s">{{a}}10{{/a}}</span>, so this polynomial is
+        <span class="b m">{{a}}prime{{/a}}</span>.</p></div>
     </div>
   </div>
 
@@ -262,19 +265,19 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="work">
       <div class="cols2">
-        <p>1. &nbsp;6<var>x</var><sup>2</sup> + 19<var>x</var> + 10</p>
-        <p>2. &nbsp;15<var>y</var><sup>2</sup> + 29<var>y</var> + 14</p>
-        <p>3. &nbsp;8<var>m</var><sup>2</sup> + 2<var>m</var> &minus; 3</p>
-        <p>4. &nbsp;12<var>n</var><sup>2</sup> + 7<var>n</var> &minus; 10</p>
-        <p>5. &nbsp;9<var>a</var><sup>2</sup> + 12<var>a</var> + 4</p>
+        <p>1. &nbsp;6<var>x</var><sup>2</sup> + 19<var>x</var> + 10{{a}} &nbsp; = (3<var>x</var> + 2)(2<var>x</var> + 5){{/a}}</p>
+        <p>2. &nbsp;15<var>y</var><sup>2</sup> + 29<var>y</var> + 14{{a}} &nbsp; = (15<var>y</var> + 14)(<var>y</var> + 1){{/a}}</p>
+        <p>3. &nbsp;8<var>m</var><sup>2</sup> + 2<var>m</var> &minus; 3{{a}} &nbsp; = (2<var>m</var> &minus; 1)(4<var>m</var> + 3){{/a}}</p>
+        <p>4. &nbsp;12<var>n</var><sup>2</sup> + 7<var>n</var> &minus; 10{{a}} &nbsp; = (3<var>n</var> &minus; 2)(4<var>n</var> + 5){{/a}}</p>
+        <p>5. &nbsp;9<var>a</var><sup>2</sup> + 12<var>a</var> + 4{{a}} &nbsp; = (3<var>a</var> + 2)<sup>2</sup>{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols2">
-        <p>6. &nbsp;18<var>p</var><sup>2</sup> + <var>p</var> &minus; 5</p>
-        <p>7. &nbsp;14<var>w</var><sup>2</sup> &minus; 9<var>w</var> &minus; 2</p>
-        <p>8. &nbsp;16<var>r</var><sup>2</sup> + 24<var>r</var> + 9</p>
-        <p>9. &nbsp;20<var>k</var><sup>2</sup> + 16<var>k</var> &minus; 21</p>
-        <p>10. &nbsp;15<var>g</var><sup>2</sup> &minus; 14<var>g</var> + 3</p>
+        <p>6. &nbsp;18<var>p</var><sup>2</sup> + <var>p</var> &minus; 5{{a}} &nbsp; = (2<var>p</var> &minus; 1)(9<var>p</var> + 5){{/a}}</p>
+        <p>7. &nbsp;14<var>w</var><sup>2</sup> &minus; 9<var>w</var> &minus; 2{{a}} &nbsp; = <b>prime</b> (no integer pair works){{/a}}</p>
+        <p>8. &nbsp;16<var>r</var><sup>2</sup> + 24<var>r</var> + 9{{a}} &nbsp; = (4<var>r</var> + 3)<sup>2</sup>{{/a}}</p>
+        <p>9. &nbsp;20<var>k</var><sup>2</sup> + 16<var>k</var> &minus; 21{{a}} &nbsp; = (10<var>k</var> &minus; 7)(2<var>k</var> + 3){{/a}}</p>
+        <p>10. &nbsp;15<var>g</var><sup>2</sup> &minus; 14<var>g</var> + 3{{a}} &nbsp; = (5<var>g</var> &minus; 3)(3<var>g</var> &minus; 1){{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -285,11 +288,11 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>11. &nbsp;4<var>s</var><sup>2</sup> &minus; 49</p>
-        <p>12. &nbsp;81<var>x</var><sup>2</sup> &minus; 16</p>
-        <p>13. &nbsp;100<var>m</var><sup>2</sup> + 40<var>m</var> + 4</p>
-        <p>14. &nbsp;49<var>t</var><sup>2</sup> + 14<var>t</var> + 1</p>
-        <p>15. &nbsp;64<var>u</var><sup>2</sup> &minus; 121</p>
+        <p>11. &nbsp;4<var>s</var><sup>2</sup> &minus; 49{{a}} &nbsp; = (2<var>s</var> &minus; 7)(2<var>s</var> + 7){{/a}}</p>
+        <p>12. &nbsp;81<var>x</var><sup>2</sup> &minus; 16{{a}} &nbsp; = (9<var>x</var> &minus; 4)(9<var>x</var> + 4){{/a}}</p>
+        <p>13. &nbsp;100<var>m</var><sup>2</sup> + 40<var>m</var> + 4{{a}} &nbsp; = 4(5<var>m</var> + 1)<sup>2</sup>{{/a}}</p>
+        <p>14. &nbsp;49<var>t</var><sup>2</sup> + 14<var>t</var> + 1{{a}} &nbsp; = (7<var>t</var> + 1)<sup>2</sup>{{/a}}</p>
+        <p>15. &nbsp;64<var>u</var><sup>2</sup> &minus; 121{{a}} &nbsp; = (8<var>u</var> &minus; 11)(8<var>u</var> + 11){{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -300,27 +303,27 @@ slug: Factoring_Polynomials_B
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 5<var>x</var> + 8</p>
-        <p>17. &nbsp;10<var>y</var><sup>2</sup> + 11<var>y</var> + 3</p>
-        <p>18. &nbsp;7<var>v</var><sup>2</sup> &minus; 2<var>v</var> &minus; 3</p>
-        <p>19. &nbsp;4<var>p</var><sup>2</sup> + <var>p</var> + 1</p>
-        <p>20. &nbsp;15<var>z</var><sup>2</sup> &minus; <var>z</var> &minus; 2</p>
-        <p>21. &nbsp;6<var>x</var><sup>2</sup> + 9<var>x</var> + 3</p>
+        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 5<var>x</var> + 8{{a}} &nbsp; = <b>prime</b>{{/a}}</p>
+        <p>17. &nbsp;10<var>y</var><sup>2</sup> + 11<var>y</var> + 3{{a}} &nbsp; = (5<var>y</var> + 3)(2<var>y</var> + 1){{/a}}</p>
+        <p>18. &nbsp;7<var>v</var><sup>2</sup> &minus; 2<var>v</var> &minus; 3{{a}} &nbsp; = <b>prime</b>{{/a}}</p>
+        <p>19. &nbsp;4<var>p</var><sup>2</sup> + <var>p</var> + 1{{a}} &nbsp; = <b>prime</b>{{/a}}</p>
+        <p>20. &nbsp;15<var>z</var><sup>2</sup> &minus; <var>z</var> &minus; 2{{a}} &nbsp; = (5<var>z</var> &minus; 2)(3<var>z</var> + 1){{/a}}</p>
+        <p>21. &nbsp;6<var>x</var><sup>2</sup> + 9<var>x</var> + 3{{a}} &nbsp; = 3(2<var>x</var> + 1)(<var>x</var> + 1){{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>22. &nbsp;6 + <var>m</var><sup>2</sup> + 5<var>m</var></p>
-        <p>23. &nbsp;&minus;2<var>a</var><sup>2</sup> + 7<var>a</var> &minus; 3</p>
-        <p>24. &nbsp;&minus;9<var>p</var><sup>2</sup> &minus; 3<var>p</var> + 6</p>
-        <p>25. &nbsp;4<var>q</var> &minus; 5 + <var>q</var><sup>2</sup></p>
-        <p>26. &nbsp;12<var>r</var><sup>2</sup> &minus; 27</p>
-        <p>27. &nbsp;21<var>t</var><sup>2</sup> + 22<var>t</var> &minus; 8</p>
+        <p>22. &nbsp;6 + <var>m</var><sup>2</sup> + 5<var>m</var>{{a}} &nbsp; = (<var>m</var> + 2)(<var>m</var> + 3){{/a}}</p>
+        <p>23. &nbsp;&minus;2<var>a</var><sup>2</sup> + 7<var>a</var> &minus; 3{{a}} &nbsp; = &minus;(2<var>a</var> &minus; 1)(<var>a</var> &minus; 3){{/a}}</p>
+        <p>24. &nbsp;&minus;9<var>p</var><sup>2</sup> &minus; 3<var>p</var> + 6{{a}} &nbsp; = &minus;3(3<var>p</var> &minus; 2)(<var>p</var> + 1){{/a}}</p>
+        <p>25. &nbsp;4<var>q</var> &minus; 5 + <var>q</var><sup>2</sup>{{a}} &nbsp; = (<var>q</var> + 5)(<var>q</var> &minus; 1){{/a}}</p>
+        <p>26. &nbsp;12<var>r</var><sup>2</sup> &minus; 27{{a}} &nbsp; = 3(2<var>r</var> &minus; 3)(2<var>r</var> + 3){{/a}}</p>
+        <p>27. &nbsp;21<var>t</var><sup>2</sup> + 22<var>t</var> &minus; 8{{a}} &nbsp; = (7<var>t</var> &minus; 2)(3<var>t</var> + 4){{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>28. &nbsp;4<var>x</var><sup>2</sup> &minus; 20<var>x</var> + 24</p>
-        <p>29. &nbsp;11<var>y</var><sup>2</sup> + 7<var>y</var> + 2</p>
-        <p>30. &nbsp;5 &minus; 30<var>z</var> + 25<var>z</var><sup>2</sup></p>
+        <p>28. &nbsp;4<var>x</var><sup>2</sup> &minus; 20<var>x</var> + 24{{a}} &nbsp; = 4(<var>x</var> &minus; 2)(<var>x</var> &minus; 3){{/a}}</p>
+        <p>29. &nbsp;11<var>y</var><sup>2</sup> + 7<var>y</var> + 2{{a}} &nbsp; = <b>prime</b>{{/a}}</p>
+        <p>30. &nbsp;5 &minus; 30<var>z</var> + 25<var>z</var><sup>2</sup>{{a}} &nbsp; = 5(5<var>z</var> &minus; 1)(<var>z</var> &minus; 1){{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -334,7 +337,7 @@ slug: Factoring_Polynomials_B
       32. Identify the pattern and factor: 121<var>a</var><sup>4</sup> &minus;
       64<var>b</var><sup>4</sup></div>
     <div class="work h25">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>24<var>x</var><sup>3</sup> + 38<var>x</var><sup>2</sup> + 15<var>x</var> = <var>x</var>(24<var>x</var><sup>2</sup> + 38<var>x</var> + 15)</p><p>18 and 20 add to 38, so = <var>x</var>(6<var>x</var> + 5)(4<var>x</var> + 3)</p>{{/a}}</div><div>{{a}}<p>Difference of squares: 121<var>a</var><sup>4</sup> &minus; 64<var>b</var><sup>4</sup> = (11<var>a</var><sup>2</sup>)<sup>2</sup> &minus; (8<var>b</var><sup>2</sup>)<sup>2</sup></p><p>= (11<var>a</var><sup>2</sup> &minus; 8<var>b</var><sup>2</sup>)(11<var>a</var><sup>2</sup> + 8<var>b</var><sup>2</sup>)</p>{{/a}}</div></div>
     </div>
   </div>
 
