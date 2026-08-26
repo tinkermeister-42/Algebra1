@@ -2121,6 +2121,76 @@
     ]
   },
   {
+    "objectID": "guided-notes.html",
+    "href": "guided-notes.html",
+    "title": "Printable Guided Notes",
+    "section": "",
+    "text": "Unit 1 — Foundations\nEvery lesson has a guided notes handout: the lesson with the prose stripped out. Objectives, a warm-up, the key ideas as fill-in-the-blank statements, and every example and practice problem with room to work them out. Nothing is pre-solved.\nOpen one and use your browser’s Print command (choose Save as PDF for a digital copy). They are laid out for letter-size paper.",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-1-foundations",
+    "href": "guided-notes.html#unit-1-foundations",
+    "title": "Printable Guided Notes",
+    "section": "",
+    "text": "1.1 — Integers & Number Lines\n1.2 — Factors, Multiples & Prime Factorization\n1.3 — GCF & Simplifying Fractions\n1.4 — Multiplying & Dividing Fractions\n1.5 — Adding & Subtracting Fractions\n1.6 — Fractions, Decimals & Percents\n1.7 — Solving Problems With Fractions, Decimals & Percents\n1.8 — Order of Operations",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-2-algebraic-expressions",
+    "href": "guided-notes.html#unit-2-algebraic-expressions",
+    "title": "Printable Guided Notes",
+    "section": "Unit 2 — Algebraic Expressions",
+    "text": "Unit 2 — Algebraic Expressions\n\n2.1 — Expressions & Their Parts\n2.2 — Evaluating Expressions\n2.3 — Combining Like Terms\n2.4 — The Distributive Property\n2.5 — Inputs and Outputs of Functions\n2.6 — Equivalent Expressions",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-3-solving-linear-equations",
+    "href": "guided-notes.html#unit-3-solving-linear-equations",
+    "title": "Printable Guided Notes",
+    "section": "Unit 3 — Solving Linear Equations",
+    "text": "Unit 3 — Solving Linear Equations\n\n3.1 — Solving One-Step Equations\n3.2 — Solving Two-Step Equations\n3.3 — Multi-Step Equations with Distribution\n3.4 — Equations With Variables on Both Sides\n3.5 — Equations With No or Infinite Solutions\n3.6 — Solving Inequalities\n3.7 — Solving Literal Equations",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-4-linear-functions-graphs",
+    "href": "guided-notes.html#unit-4-linear-functions-graphs",
+    "title": "Printable Guided Notes",
+    "section": "Unit 4 — Linear Functions & Graphs",
+    "text": "Unit 4 — Linear Functions & Graphs\n\n4.1 — Graphing Function Rules\n4.2 — Understanding Slope\n4.3 — The Equation of a Line\n4.4 — Writing Linear Equations\n4.5 — Systems of Equations\n4.6 — Linear Models in the Real World\n4.7 — Graphing Linear Inequalities",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-5-exponents-polynomials",
+    "href": "guided-notes.html#unit-5-exponents-polynomials",
+    "title": "Printable Guided Notes",
+    "section": "Unit 5 — Exponents & Polynomials",
+    "text": "Unit 5 — Exponents & Polynomials\n\n5.1 — Exponent Rules\n5.2 — Simplifying Polynomials\n5.3 — Multiplying Polynomials\n5.4 — Factoring — GCF & Basic Trinomials\n5.5 — Factoring — General Trinomials & Special Patterns",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
+    "objectID": "guided-notes.html#unit-6-quadratic-equations-functions",
+    "href": "guided-notes.html#unit-6-quadratic-equations-functions",
+    "title": "Printable Guided Notes",
+    "section": "Unit 6 — Quadratic Equations & Functions",
+    "text": "Unit 6 — Quadratic Equations & Functions\n\n6.1 — Introduction to Quadratics\n6.2 — Graphing Quadratics\n6.3 — Solving Quadratic Equations by Factoring\n6.4 — Solving Quadratics by Taking Square Roots\n6.5 — Completing the Square\n6.6 — The Quadratic Formula\n6.7 — Applications of Quadratics\n\n\nTeachers: the handouts are generated from the sources in guided_notes/src/. Edit one there and run python3 scripts/build-guided-notes.py to rebuild.",
+    "crumbs": [
+      "Printable Guided Notes"
+    ]
+  },
+  {
     "objectID": "chapters/Interactive/index.html",
     "href": "chapters/Interactive/index.html",
     "title": "Index",
@@ -2279,7 +2349,7 @@
     "href": "chapters/Supplemental/index.html",
     "title": "Supplemental Materials",
     "section": "",
-    "text": "Welcome to the Supplemental Materials section of this course! This is where you’ll find all the fun, extra, and just plain interesting math content that doesn’t quite fit into the main units, but still helps build understanding, spark curiosity, or offer a little challenge.\nUse these resources to: - Practice your skills in new and creative ways - Explore math puzzles and logic games - Reinforce key concepts from class - Take a brain break with something still mathy (but fun!)\n\nMath Games & Puzzles\nNumber grids, logic puzzles, equation word searches, and more.\n\n\nPrintable Guided Notes\nFill-in notes for every lesson, ready to print.\n\n\nExtra Practice Worksheets\nTargeted drills and alternative problem sets.\n\n\nChallenge Problem Solutions\nSolutions to all of the challenge problems.\n\n\nMath Activities\nOpen-ended or interactive things to try out &lt; Coming Soon!&gt;\n\nHappy exploring!",
+    "text": "Welcome to the Supplemental Materials section of this course! This is where you’ll find all the fun, extra, and just plain interesting math content that doesn’t quite fit into the main units, but still helps build understanding, spark curiosity, or offer a little challenge.\nUse these resources to: - Practice your skills in new and creative ways - Explore math puzzles and logic games - Reinforce key concepts from class - Take a brain break with something still mathy (but fun!)\n\nMath Games & Puzzles\nNumber grids, logic puzzles, equation word searches, and more.\n\n\nExtra Practice Worksheets\nTargeted drills and alternative problem sets.\n\n\nChallenge Problem Solutions\nSolutions to all of the challenge problems.\n\n\nMath Activities\nOpen-ended or interactive things to try out &lt; Coming Soon!&gt;\n\nHappy exploring!",
     "crumbs": [
       "Supplemental",
       "Supplemental Materials"
@@ -2305,83 +2375,6 @@
     "crumbs": [
       "Supplemental",
       "Math Games and Puzzles"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html",
-    "href": "chapters/Supplemental/guided_notes.html",
-    "title": "Printable Guided Notes",
-    "section": "",
-    "text": "Unit 1 — Foundations\nEvery lesson has a guided notes handout: the lesson with the prose stripped out. Objectives, a warm-up, the key ideas as fill-in-the-blank statements, and every example and practice problem with room to work them out. Nothing is pre-solved.\nOpen one and use your browser’s Print command (choose Save as PDF for a digital copy). They are laid out for letter-size paper.",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-1-foundations",
-    "href": "chapters/Supplemental/guided_notes.html#unit-1-foundations",
-    "title": "Printable Guided Notes",
-    "section": "",
-    "text": "1.1 — Integers & Number Lines\n1.2 — Factors, Multiples & Prime Factorization\n1.3 — GCF & Simplifying Fractions\n1.4 — Multiplying & Dividing Fractions\n1.5 — Adding & Subtracting Fractions\n1.6 — Fractions, Decimals & Percents\n1.7 — Solving Problems With Fractions, Decimals & Percents\n1.8 — Order of Operations",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-2-algebraic-expressions",
-    "href": "chapters/Supplemental/guided_notes.html#unit-2-algebraic-expressions",
-    "title": "Printable Guided Notes",
-    "section": "Unit 2 — Algebraic Expressions",
-    "text": "Unit 2 — Algebraic Expressions\n\n2.1 — Expressions & Their Parts\n2.2 — Evaluating Expressions\n2.3 — Combining Like Terms\n2.4 — The Distributive Property\n2.5 — Inputs and Outputs of Functions\n2.6 — Equivalent Expressions",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-3-solving-linear-equations",
-    "href": "chapters/Supplemental/guided_notes.html#unit-3-solving-linear-equations",
-    "title": "Printable Guided Notes",
-    "section": "Unit 3 — Solving Linear Equations",
-    "text": "Unit 3 — Solving Linear Equations\n\n3.1 — Solving One-Step Equations\n3.2 — Solving Two-Step Equations\n3.3 — Multi-Step Equations with Distribution\n3.4 — Equations With Variables on Both Sides\n3.5 — Equations With No or Infinite Solutions\n3.6 — Solving Inequalities\n3.7 — Solving Literal Equations",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-4-linear-functions-graphs",
-    "href": "chapters/Supplemental/guided_notes.html#unit-4-linear-functions-graphs",
-    "title": "Printable Guided Notes",
-    "section": "Unit 4 — Linear Functions & Graphs",
-    "text": "Unit 4 — Linear Functions & Graphs\n\n4.1 — Graphing Function Rules\n4.2 — Understanding Slope\n4.3 — The Equation of a Line\n4.4 — Writing Linear Equations\n4.5 — Systems of Equations\n4.6 — Linear Models in the Real World\n4.7 — Graphing Linear Inequalities",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-5-exponents-polynomials",
-    "href": "chapters/Supplemental/guided_notes.html#unit-5-exponents-polynomials",
-    "title": "Printable Guided Notes",
-    "section": "Unit 5 — Exponents & Polynomials",
-    "text": "Unit 5 — Exponents & Polynomials\n\n5.1 — Exponent Rules\n5.2 — Simplifying Polynomials\n5.3 — Multiplying Polynomials\n5.4 — Factoring — GCF & Basic Trinomials\n5.5 — Factoring — General Trinomials & Special Patterns",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
-    ]
-  },
-  {
-    "objectID": "chapters/Supplemental/guided_notes.html#unit-6-quadratic-equations-functions",
-    "href": "chapters/Supplemental/guided_notes.html#unit-6-quadratic-equations-functions",
-    "title": "Printable Guided Notes",
-    "section": "Unit 6 — Quadratic Equations & Functions",
-    "text": "Unit 6 — Quadratic Equations & Functions\n\n6.1 — Introduction to Quadratics\n6.2 — Graphing Quadratics\n6.3 — Solving Quadratic Equations by Factoring\n6.4 — Solving Quadratics by Taking Square Roots\n6.5 — Completing the Square\n6.6 — The Quadratic Formula\n6.7 — Applications of Quadratics\n\n\nTeachers: the handouts are generated from the sources in guided_notes/src/. Edit one there and run python3 scripts/build-guided-notes.py to rebuild.",
-    "crumbs": [
-      "Supplemental",
-      "Printable Guided Notes"
     ]
   },
   {
