@@ -18,11 +18,13 @@ slug: Order_of_Operations
   <div class="cols2">
     <div>
       <p>1. You simplify 10 &minus; 4 &times; 2 and get 2. Your friend gets 12. Who is right?</p>
+      {{a}}<p>You are. 10 &minus; 4 &times; 2 = 10 &minus; 8 = 2. Your friend worked left to right instead of multiplying first.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. This one went viral &mdash; 9 out of 10 people miss it. &nbsp;
         6 &divide; 2(1 + 2)</p>
+      {{a}}<p>6 &divide; 2(1 + 2) = 6 &divide; 2 &times; 3 = 3 &times; 3 = <b>9</b> &mdash; &divide; and &times; are done left to right.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -34,33 +36,33 @@ slug: Order_of_Operations
       Which one is correct?</div>
     <div class="work h13">
       <div class="cols2">
-        <p>Left to right: <span class="b xl"></span></p>
-        <p>Multiplication first: <span class="b xl"></span></p>
+        <p>Left to right: <span class="b xl">{{a}}13 &times; 5 = 65{{/a}}</span></p>
+        <p>Multiplication first: <span class="b xl">{{a}}10 + 15 = 25{{/a}}</span></p>
       </div>
-      <p class="ans">Correct answer: <span class="b s"></span> &nbsp;&nbsp; Why?
-        <span class="b l"></span></p>
+      <p class="ans">Correct answer: <span class="b s">{{a}}25{{/a}}</span> &nbsp;&nbsp; Why?
+        <span class="b l">{{a}}PEMDAS says multiply before you add{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box tint">
     <div class="lbl">Remember &mdash; PEMDAS</div>
     <table class="steps">
-      <tr><td style="width:.5in"><b>P</b></td><td class="why">Parentheses</td><td></td></tr>
-      <tr><td><b>E</b></td><td class="why">Exponents</td><td></td></tr>
-      <tr><td><b>M / D</b></td><td class="why">Multiply and Divide</td><td></td></tr>
-      <tr><td><b>A / S</b></td><td class="why">Add and Subtract</td><td></td></tr>
+      <tr><td style="width:.5in"><b>P</b></td><td class="why">Parentheses</td><td>{{a}}work inside grouping symbols first{{/a}}</td></tr>
+      <tr><td><b>E</b></td><td class="why">Exponents</td><td>{{a}}powers and roots{{/a}}</td></tr>
+      <tr><td><b>M / D</b></td><td class="why">Multiply and Divide</td><td>{{a}}left to right{{/a}}</td></tr>
+      <tr><td><b>A / S</b></td><td class="why">Add and Subtract</td><td>{{a}}left to right{{/a}}</td></tr>
     </table>
     <div style="margin-top:4px">M and D are on the <b>same level</b> &mdash; do them
-      <span class="b m"></span>. Same for A and S.</div>
+      <span class="b m">{{a}}left to right{{/a}}</span>. Same for A and S.</div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Why are &times; and &divide; grouped together?</div>
     Because they are two sides of the same operation. Dividing by a number is the same as
-    multiplying by its <span class="b m"></span>: 12 &divide; {{f 3/2}} = 12 &times;
-    {{f ___/___}} = <span class="b s"></span>
+    multiplying by its <span class="b m">{{a}}reciprocal{{/a}}</span>: 12 &divide; {{f 3/2}} = 12 &times;
+    {{f ___/___}} = <span class="b s">{{a}}8{{/a}}</span>
     <div style="margin-top:3px">In the same way, subtracting is adding the
-      <span class="b m"></span>: 5 &minus; 2 = 5 + (<span class="b s"></span>)</div>
+      <span class="b m">{{a}}opposite{{/a}}</span>: 5 &minus; 2 = 5 + (<span class="b s">{{a}}&minus;2{{/a}}</span>)</div>
   </div>
 
   <h2><span class="num">1.8.2</span>Examples with Integers</h2>
@@ -70,8 +72,8 @@ slug: Order_of_Operations
       <b class="tag">EX 3.</b> (5 + 3) &times; 2 &nbsp;&nbsp;&nbsp;&nbsp;
       <b class="tag">EX 4.</b> 8 &minus; 12 &divide; 3</div>
     <div class="work h16">
-      <div class="cols3"><div></div><div></div><div></div></div>
-      <p class="ans">What single change made EX 2 and EX 3 different? <span class="b l"></span></p>
+      <div class="cols3"><div>{{a}}<p>5 + 3 &times; 2 = 5 + 6 = 11</p>{{/a}}</div><div>{{a}}<p>(5 + 3) &times; 2 = 8 &times; 2 = 16</p>{{/a}}</div><div>{{a}}<p>8 &minus; 12 &divide; 3 = 8 &minus; 4 = 4</p>{{/a}}</div></div>
+      <p class="ans">What single change made EX 2 and EX 3 different? <span class="b l">{{a}}the parentheses &mdash; they force the addition to happen first{{/a}}</span></p>
     </div>
   </div>
 
@@ -81,9 +83,9 @@ slug: Order_of_Operations
     <div class="work">
       <table class="steps">
         <tr><th>Step</th><th class="why">Why</th></tr>
-        <tr><td></td><td class="why"></td></tr>
-        <tr><td></td><td class="why"></td></tr>
-        <tr><td></td><td class="why"></td></tr>
+        <tr><td>{{a}}5(7) + 2 &times; 3{{/a}}</td><td class="why">{{a}}parentheses{{/a}}</td></tr>
+        <tr><td>{{a}}35 + 6{{/a}}</td><td class="why">{{a}}multiply{{/a}}</td></tr>
+        <tr><td>{{a}}41{{/a}}</td><td class="why">{{a}}add{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -93,23 +95,23 @@ slug: Order_of_Operations
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> &minus;3 &times; (4 &minus; 7)</div>
     <div class="work h13">
-      <p class="ans">Answer: <span class="b s"></span> &nbsp;&nbsp;
-        A negative times a negative is <span class="b m"></span>, because multiplying by a
-        negative <span class="b m"></span> the sign.</p>
+      <p class="ans">Answer: <span class="b s">{{a}}9{{/a}}</span> &nbsp;&nbsp;
+        A negative times a negative is <span class="b m">{{a}}positive{{/a}}</span>, because multiplying by a
+        negative <span class="b m">{{a}}flips{{/a}}</span> the sign.</p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> {{f 1/2}} &times; (6 + 2)</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>{{f 1/2}} &times; 8 = 4</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> {{f 3 + 5/2}} &nbsp;&mdash;&nbsp; there are no
       parentheses, so why do you add first?</div>
     <div class="work h13">
-      <p>The <b>fraction bar</b> acts like <span class="b m"></span>.</p>
-      <p class="ans">Answer: <span class="b s"></span></p>
+      <p>The <b>fraction bar</b> acts like <span class="b m">{{a}}a grouping symbol &mdash; parentheses{{/a}}</span>.</p>
+      <p class="ans">Answer: <span class="b s">{{a}}4{{/a}}</span></p>
     </div>
   </div>
 
@@ -120,10 +122,10 @@ slug: Order_of_Operations
     <div class="work">
       <table class="steps">
         <tr><th>Step</th><th class="why">PEMDAS letter</th></tr>
-        <tr><td></td><td class="why">P</td></tr>
-        <tr><td></td><td class="why">E</td></tr>
-        <tr><td></td><td class="why">M</td></tr>
-        <tr><td></td><td class="why">A</td></tr>
+        <tr><td>{{a}}4 + {{f 1/2}} &times; 4<sup>2</sup>{{/a}}</td><td class="why">P</td></tr>
+        <tr><td>{{a}}4 + {{f 1/2}} &times; 16{{/a}}</td><td class="why">E</td></tr>
+        <tr><td>{{a}}4 + 8{{/a}}</td><td class="why">M</td></tr>
+        <tr><td>{{a}}12{{/a}}</td><td class="why">A</td></tr>
       </table>
     </div>
   </div>
@@ -131,36 +133,36 @@ slug: Order_of_Operations
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; negatives and exponents</div>
     <div class="cols2">
-      <p>&minus;3<sup>2</sup> means <span class="b m"></span>, which equals
-        <span class="b s"></span></p>
-      <p>(&minus;3)<sup>2</sup> means <span class="b m"></span>, which equals
-        <span class="b s"></span></p>
+      <p>&minus;3<sup>2</sup> means <span class="b m">{{a}}the opposite of 3<sup>2</sup>{{/a}}</span>, which equals
+        <span class="b s">{{a}}&minus;9{{/a}}</span></p>
+      <p>(&minus;3)<sup>2</sup> means <span class="b m">{{a}}(&minus;3)(&minus;3){{/a}}</span>, which equals
+        <span class="b s">{{a}}9{{/a}}</span></p>
     </div>
   </div>
 
   <h3>Nested Parentheses</h3>
 
   <div class="keys">
-    Work from the <span class="b m"></span> out. Brackets [ ] and braces { } keep the layers clear.
+    Work from the <span class="b m">{{a}}inside{{/a}}</span> out. Brackets [ ] and braces { } keep the layers clear.
     <div style="margin-top:4px"><b>What counts as grouping?</b>
-      <span class="b m"></span>, <span class="b m"></span>,
-      <span class="b m"></span>, and <span class="b m"></span>.</div>
+      <span class="b m">{{a}}parentheses ( ){{/a}}</span>, <span class="b m">{{a}}brackets [ ]{{/a}}</span>,
+      <span class="b m">{{a}}braces { }{{/a}}</span>, and <span class="b m">{{a}}the fraction bar{{/a}}</span>.</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> [ 3 + (2<sup>2</sup> + 1) ] &times; 2</div>
     <div class="work">
       <table class="steps">
-        <tr><td></td><td class="why">inner parentheses</td></tr>
-        <tr><td></td><td class="why">brackets</td></tr>
-        <tr><td></td><td class="why">multiply</td></tr>
+        <tr><td>{{a}}[ 3 + 5 ] &times; 2{{/a}}</td><td class="why">inner parentheses</td></tr>
+        <tr><td>{{a}}8 &times; 2{{/a}}</td><td class="why">brackets</td></tr>
+        <tr><td>{{a}}16{{/a}}</td><td class="why">multiply</td></tr>
       </table>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 11.</b> [ 5 + (3<sup>2</sup> &minus; 1) ] &times; 2</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>[ 5 + 8 ] &times; 2 = 13 &times; 2 = 26</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">1.8.5</span>Why This Matters</h2>
@@ -169,9 +171,9 @@ slug: Order_of_Operations
     <div class="q"><b class="tag">EX 12.</b> You have a 25%-off coupon <i>and</i> a $10 gift card.
       The item costs $40. Which order is better for you?</div>
     <div class="work h16">
-      <p>Coupon first: <span class="b xl"></span></p>
-      <p>Gift card first: <span class="b xl"></span></p>
-      <p class="ans">Better deal: <span class="b m"></span> &mdash; order matters!</p>
+      <p>Coupon first: <span class="b xl">{{a}}40 &times; 0.75 = 30, then 30 &minus; 10 = $20{{/a}}</span></p>
+      <p>Gift card first: <span class="b xl">{{a}}40 &minus; 10 = 30, then 30 &times; 0.75 = $22.50{{/a}}</span></p>
+      <p class="ans">Better deal: <span class="b m">{{a}}coupon first, at $20{{/a}}</span> &mdash; order matters!</p>
     </div>
   </div>
 
@@ -184,10 +186,10 @@ slug: Order_of_Operations
     <div class="q">1. Simplify.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;4 + 6 &times; 2</p>
-        <p>b. &nbsp;(4 + 6) &times; 2</p>
-        <p>c. &nbsp;12 &divide; 4 &times; 3</p>
-        <p>d. &nbsp;12 &divide; (4 &times; 3)</p>
+        <p>a. &nbsp;4 + 6 &times; 2{{a}} &nbsp; = 4 + 12 = 16{{/a}}</p>
+        <p>b. &nbsp;(4 + 6) &times; 2{{a}} &nbsp; = 10 &times; 2 = 20{{/a}}</p>
+        <p>c. &nbsp;12 &divide; 4 &times; 3{{a}} &nbsp; = 3 &times; 3 = 9{{/a}}</p>
+        <p>d. &nbsp;12 &divide; (4 &times; 3){{a}} &nbsp; = 12 &divide; 12 = 1{{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -199,10 +201,10 @@ slug: Order_of_Operations
     <div class="q">2. Simplify.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;&minus;2 &times; (3 &minus; 5)</p>
-        <p>b. &nbsp;{{f 1/2}} &times; (8 + 4)</p>
-        <p>c. &nbsp;(6 &minus; 2)<sup>2</sup> &divide; 2</p>
-        <p>d. &nbsp;(3 + 5) &divide; 2</p>
+        <p>a. &nbsp;&minus;2 &times; (3 &minus; 5){{a}} &nbsp; = &minus;2 &times; (&minus;2) = 4{{/a}}</p>
+        <p>b. &nbsp;{{f 1/2}} &times; (8 + 4){{a}} &nbsp; = {{f 1/2}} &times; 12 = 6{{/a}}</p>
+        <p>c. &nbsp;(6 &minus; 2)<sup>2</sup> &divide; 2{{a}} &nbsp; = 16 &divide; 2 = 8{{/a}}</p>
+        <p>d. &nbsp;(3 + 5) &divide; 2{{a}} &nbsp; = 8 &divide; 2 = 4{{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -214,10 +216,10 @@ slug: Order_of_Operations
     <div class="q">3. Simplify.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;5 + 2 &times; (6 &minus; 1)</p>
-        <p>b. &nbsp;(12 &minus; 4)<sup>2</sup> &divide; 4</p>
-        <p>c. &nbsp;10 &minus; 3 &times; (2 + 1)</p>
-        <p>d. &nbsp;{{f 3/4}} &times; (12 &minus; 4)</p>
+        <p>a. &nbsp;5 + 2 &times; (6 &minus; 1){{a}} &nbsp; = 5 + 10 = 15{{/a}}</p>
+        <p>b. &nbsp;(12 &minus; 4)<sup>2</sup> &divide; 4{{a}} &nbsp; = 64 &divide; 4 = 16{{/a}}</p>
+        <p>c. &nbsp;10 &minus; 3 &times; (2 + 1){{a}} &nbsp; = 10 &minus; 9 = 1{{/a}}</p>
+        <p>d. &nbsp;{{f 3/4}} &times; (12 &minus; 4){{a}} &nbsp; = {{f 3/4}} &times; 8 = 6{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -227,15 +229,15 @@ slug: Order_of_Operations
     <div class="q">4. Two students simplified 8 &minus; 3 + 2 differently. &nbsp;
       <b>A:</b> (8 &minus; 3) + 2 = 7 &nbsp;&nbsp; <b>B:</b> 8 &minus; (3 + 2) = 3</div>
     <div class="work h13">
-      <p>Who is correct? <span class="b"></span></p>
-      <p>What mistake did the other one make? <span class="b xl"></span></p>
+      <p>Who is correct? <span class="b">{{a}}A{{/a}}</span></p>
+      <p>What mistake did the other one make? <span class="b xl">{{a}}B grouped 3 + 2 first; addition and subtraction are done left to right{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q">5. Simplify. Watch the grouping and the exponent. &nbsp;
       6 + {{f 4 &times; (2 + 1) + 6/3<sup>2</sup>}}</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>Top: 4 &times; 3 + 6 = 18. Bottom: 3<sup>2</sup> = 9.</p><p>6 + {{f 18/9}} = 6 + 2 = <b>8</b></p>{{/a}}</div>
   </div>
 
   <h3>Challenge</h3>
@@ -243,8 +245,8 @@ slug: Order_of_Operations
   <div class="ex">
     <div class="q">6. A student simplified 2 + 3<sup>2</sup> &times; (4 &minus; 1) and got <b>33</b>.</div>
     <div class="work h16">
-      <p>Correct answer: <span class="b"></span></p>
-      <p>What mistake did they make? <span class="b xl"></span></p>
+      <p>Correct answer: <span class="b">{{a}}29{{/a}}</span></p>
+      <p>What mistake did they make? <span class="b xl">{{a}}they added 2 + 3<sup>2</sup> = 11 first, then multiplied by 3{{/a}}</span></p>
     </div>
   </div>
 
@@ -252,9 +254,9 @@ slug: Order_of_Operations
     <div class="q">7. Write your own expression with <b>at least three operations</b>,
       <b>one fraction</b>, and <b>a set of parentheses</b>. Trade with a partner.</div>
     <div class="work h16">
-      <p>My expression: <span class="b xl"></span></p>
-      <p>My answer: <span class="b xl"></span></p>
-      <p>Partner's answer: <span class="b xl"></span></p>
+      <p>My expression: <span class="b xl">{{a}}answers vary{{/a}}</span></p>
+      <p>My answer: <span class="b xl">{{a}}answers vary{{/a}}</span></p>
+      <p>Partner's answer: <span class="b xl">{{a}}should match the student&rsquo;s own answer{{/a}}</span></p>
     </div>
   </div>
 

@@ -18,14 +18,17 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="cols3">
     <div>
       <p>1. Is 10% of 60 bigger or smaller than 30?</p>
+      {{a}}<p>Smaller &mdash; 10% of 60 is 6.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. Is 21 out of 35 a good test score?</p>
+      {{a}}<p>{{f 21/35}} = 60% &mdash; not great.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. What does &ldquo;25% off&rdquo; mean?</p>
+      {{a}}<p>Take 25% of the price off, so you pay 75% of it.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -35,15 +38,15 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="keys">
     Every percent problem has three pieces. Know two, find the third.
     <div class="cols3" style="margin-top:3px">
-      <p><b>part</b> &mdash; <span class="b m"></span></p>
-      <p><b>whole</b> &mdash; <span class="b m"></span></p>
-      <p><b>percent</b> &mdash; <span class="b m"></span></p>
+      <p><b>part</b> &mdash; <span class="b m">{{a}}the piece you are looking at{{/a}}</span></p>
+      <p><b>whole</b> &mdash; <span class="b m">{{a}}the total amount{{/a}}</span></p>
+      <p><b>percent</b> &mdash; <span class="b m">{{a}}how many out of 100{{/a}}</span></p>
     </div>
-    <p style="margin-top:4px; text-align:center"><b>part = <span class="b s"></span> &times;
-      <span class="b s"></span></b></p>
-    <div>Always convert the percent to a <span class="b m"></span> first.</div>
+    <p style="margin-top:4px; text-align:center"><b>part = <span class="b s">{{a}}percent{{/a}}</span> &times;
+      <span class="b s">{{a}}whole{{/a}}</span></b></p>
+    <div>Always convert the percent to a <span class="b m">{{a}}decimal{{/a}}</span> first.</div>
     <div style="margin-top:3px">Translating words: &ldquo;is&rdquo; becomes
-      <span class="b s"></span> and &ldquo;of&rdquo; becomes <span class="b s"></span>.</div>
+      <span class="b s">{{a}}={{/a}}</span> and &ldquo;of&rdquo; becomes <span class="b s">{{a}}&times;{{/a}}</span>.</div>
   </div>
 
   <div class="ex">
@@ -51,31 +54,31 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
     <div class="work h13">
       <table class="fill">
         <tr><th>what</th><th>is</th><th>15%</th><th>of</th><th>80?</th></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>{{a}}<var>x</var>{{/a}}</td><td>{{a}}={{/a}}</td><td>{{a}}0.15{{/a}}</td><td>{{a}}&times;{{/a}}</td><td>{{a}}80{{/a}}</td></tr>
       </table>
-      <p class="ans">Answer: <span class="b"></span></p>
+      <p class="ans">Answer: <span class="b">{{a}}12{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> What is 10% of 50?</div>
-    <div class="work h08"></div>
+    <div class="work h08">{{a}}<p>0.10 &times; 50 = 5</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 3.</b> Finding the <b>percent</b>: Out of 50 students,
       30 like soccer. What percent is that?</div>
     <div class="work h13">
-      <p>&ldquo;Out of&rdquo; tells you 50 is the <span class="b"></span> and 30 is the
-        <span class="b"></span>.</p>
-      <p>{{f part/whole}} = {{f ___/___}} = <span class="b s"></span> = <span class="b s"></span></p>
-    </div>
+      <p>&ldquo;Out of&rdquo; tells you 50 is the <span class="b">{{a}}whole{{/a}}</span> and 30 is the
+        <span class="b">{{a}}part{{/a}}</span>.</p>
+      <p>{{f part/whole}} = {{f ___/___}} = <span class="b s">{{a}}0.6{{/a}}</span> = <span class="b s">{{a}}60%{{/a}}</span></p>
+    {{a}}<p>{{f 30/50}} = 0.6</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> If 3 out of 75 students get enough sleep,
       what percent is that?</div>
-    <div class="work h08"></div>
+    <div class="work h08">{{a}}<p>{{f 3/75}} = 0.04 = 4%</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -83,14 +86,14 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
       What is the number?</div>
     <div class="work h16">
       <p>Way 1 &mdash; think in parts: 25% = {{f 1/4}}, so the whole is
-        <span class="b s"></span> groups of 10 = <span class="b s"></span></p>
-      <p>Way 2 &mdash; divide: 10 &divide; <span class="b s"></span> = <span class="b s"></span></p>
+        <span class="b s">{{a}}4{{/a}}</span> groups of 10 = <span class="b s">{{a}}40{{/a}}</span></p>
+      <p>Way 2 &mdash; divide: 10 &divide; <span class="b s">{{a}}0.25{{/a}}</span> = <span class="b s">{{a}}40{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> 20% of a number is 12. What is the number?</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>12 &divide; 0.20 = 60</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">1.7.2</span>Real-Life Examples</h2>
@@ -98,52 +101,52 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="ex">
     <div class="q"><b class="tag">EX 7. Grades.</b> You got 19 out of 20 points. What is your grade?</div>
     <div class="work h1">
-      <p class="ans">{{f 19/20}} = <span class="b s"></span> = <span class="b s"></span>
-        &nbsp;&nbsp; Letter grade: <span class="b s"></span></p>
+      <p class="ans">{{f 19/20}} = <span class="b s">{{a}}0.95{{/a}}</span> = <span class="b s">{{a}}95%{{/a}}</span>
+        &nbsp;&nbsp; Letter grade: <span class="b s">{{a}}A{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> John got 20 out of 25 questions correct.
       What is his grade?</div>
-    <div class="work h08"></div>
+    <div class="work h08">{{a}}<p>{{f 20/25}} = 0.8 = 80% &mdash; a B</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9. Sales.</b> A $60 jacket is 25% off. What is the new price?</div>
     <div class="work h16">
-      <p>Step 1 &mdash; find the discount: <span class="b l"></span></p>
-      <p>Step 2 &mdash; <span class="b m"></span> it from the original price:
-        <span class="b l"></span></p>
-      <p class="ans">New price: <span class="b"></span></p>
+      <p>Step 1 &mdash; find the discount: <span class="b l">{{a}}0.25 &times; 60 = $15{{/a}}</span></p>
+      <p>Step 2 &mdash; <span class="b m">{{a}}subtract{{/a}}</span> it from the original price:
+        <span class="b l">{{a}}60 &minus; 15 = 45{{/a}}</span></p>
+      <p class="ans">New price: <span class="b">{{a}}$45{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> Swanhilda finds a $300 prom dress at 65% off.
       What does it cost?</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>Discount: 0.65 &times; 300 = $195, so the dress costs 300 &minus; 195 = <b>$105</b> (or 35% of 300 straight away).</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 11. Surveys.</b> 75% of teachers surveyed prefer cookies.
       If 120 preferred cookies, how many teachers were surveyed?</div>
     <div class="work h13">
-      <p>Are you looking for the part, the whole, or the percent? <span class="b m"></span></p>
-      <p class="ans">Work: <span class="b l"></span> &nbsp;&nbsp; Answer: <span class="b"></span></p>
+      <p>Are you looking for the part, the whole, or the percent? <span class="b m">{{a}}the whole{{/a}}</span></p>
+      <p class="ans">Work: <span class="b l">{{a}}120 &divide; 0.75{{/a}}</span> &nbsp;&nbsp; Answer: <span class="b">{{a}}160 teachers{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Tip &mdash; check yourself</div>
     Before you compute, ask: <b>what answer do I expect?</b> Then check that your answer
-    <span class="b m"></span>.
+    <span class="b m">{{a}}is close to it{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 12.</b> A survey found 550 students &mdash; which is 55% &mdash;
       like cucumbers. How many students were surveyed?</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>550 &divide; 0.55 = <b>1000 students</b></p>{{/a}}</div>
   </div>
 
 {{practice-head}}
@@ -154,14 +157,14 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="ex">
     <div class="work">
       <div class="cols2">
-        <p>1. What is 60% of 95? <span class="b"></span></p>
-        <p>2. Eight is what percent of 64? <span class="b"></span></p>
-        <p>3. One is what percent of 6? <span class="b"></span></p>
-        <p>4. What percent of 40 is 25? <span class="b"></span></p>
-        <p>5. Fifteen is what percent of 40? <span class="b"></span></p>
-        <p>6. What number is 85% of 40? <span class="b"></span></p>
-        <p>7. 85% of a number is 510. Find it. <span class="b"></span></p>
-        <p>8. 20% of a number is 150. Find it. <span class="b"></span></p>
+        <p>1. What is 60% of 95? <span class="b">{{a}}57{{/a}}</span></p>
+        <p>2. Eight is what percent of 64? <span class="b">{{a}}12.5%{{/a}}</span></p>
+        <p>3. One is what percent of 6? <span class="b">{{a}}16.<span class="rep">6</span>%{{/a}}</span></p>
+        <p>4. What percent of 40 is 25? <span class="b">{{a}}62.5%{{/a}}</span></p>
+        <p>5. Fifteen is what percent of 40? <span class="b">{{a}}37.5%{{/a}}</span></p>
+        <p>6. What number is 85% of 40? <span class="b">{{a}}34{{/a}}</span></p>
+        <p>7. 85% of a number is 510. Find it. <span class="b">{{a}}600{{/a}}</span></p>
+        <p>8. 20% of a number is 150. Find it. <span class="b">{{a}}750{{/a}}</span></p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -172,19 +175,19 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="ex">
     <div class="q">9. A driver's test has 30 questions. You need at least 24 points to pass.
       What percent do you need?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}80%{{/a}}</span></p></div>
   </div>
 
   <div class="ex">
     <div class="q">10. A student scores 27 out of 30 on one test and 42 out of 50 on another.
       What percent of the total points did they earn?</div>
-    <div class="work h13"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h13"><p class="ans">Answer: <span class="b">{{a}}86.25%{{/a}}</span></p>{{a}}<p>{{f 27 + 42/30 + 50}} = {{f 69/80}} = 0.8625</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">11. A backpack is 25% off. It was $80. Find the discount and the new price.</div>
     <div class="work h13">
-      <p class="ans">Discount: <span class="b"></span> &nbsp;&nbsp; New price: <span class="b"></span></p>
+      <p class="ans">Discount: <span class="b">{{a}}$20{{/a}}</span> &nbsp;&nbsp; New price: <span class="b">{{a}}$60{{/a}}</span></p>
     </div>
   </div>
 
@@ -192,20 +195,20 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
     <div class="q">12. Happy hour takes 30% off drinks. A soda usually costs $3.50.
       Find the discount and the happy hour price.</div>
     <div class="work h13">
-      <p class="ans">Discount: <span class="b"></span> &nbsp;&nbsp; Price: <span class="b"></span></p>
+      <p class="ans">Discount: <span class="b">{{a}}$1.05{{/a}}</span> &nbsp;&nbsp; Price: <span class="b">{{a}}$2.45{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q">13. A survey shows 68% of people prefer cats to dogs. If 250 people were asked,
       how many chose dogs?</div>
-    <div class="work h13"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h13"><p class="ans">Answer: <span class="b">{{a}}80 people{{/a}}</span></p>{{a}}<p>100% &minus; 68% = 32% chose dogs, and 0.32 &times; 250 = 80</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">14. In a quality test, 3% of fidget spinners were defective. If 60 were
       defective, how many were tested?</div>
-    <div class="work h13"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h13"><p class="ans">Answer: <span class="b">{{a}}2000 spinners{{/a}}</span></p>{{a}}<p>60 &divide; 0.03 = 2000</p>{{/a}}</div>
   </div>
 
   <h3>Challenge</h3>
@@ -213,18 +216,18 @@ slug: Solving_Problems_with_Fractions_Decimals_and_Percents
   <div class="ex">
     <div class="q">15. A class has 24 students. {{f 1/3}} are in choir and 25% are in band.
       The rest are in art. What percent are in art?</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>Choir {{f 1/3}} &times; 24 = 8, band 0.25 &times; 24 = 6, so art gets 24 &minus; 8 &minus; 6 = 10 students.</p><p>{{f 10/24}} &asymp; <b>41.7%</b></p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">16. A shirt is marked down 40% and now costs $27. What was the original price?</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>$27 is 60% of the original: 27 &divide; 0.60 = <b>$45</b></p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">17. You have 88% of 325 points in Algebra. The last exam is worth 100 points.
       An A takes 90%. Is an A possible? If so, how many points do you need on the exam?</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p>Points so far: 0.88 &times; 325 = 286. After the exam the total is 425.</p><p>An A needs 0.90 &times; 425 = 382.5, so you need 382.5 &minus; 286 = 96.5 &rarr; <b>97 points</b>. Yes, an A is still possible.</p>{{/a}}</div>
   </div>
 
   <div class="box tint">
