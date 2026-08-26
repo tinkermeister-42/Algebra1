@@ -19,14 +19,17 @@ slug: Completing_the_Square
   <div class="cols3">
     <div>
       <p>1. Expand (<var>x</var> + 4)<sup>2</sup></p>
+      {{a}}<p><var>x</var><sup>2</sup> + 8<var>x</var> + 16</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. Expand (<var>x</var> &minus; 5)<sup>2</sup></p>
+      {{a}}<p><var>x</var><sup>2</sup> &minus; 10<var>x</var> + 25</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. In both, how is the middle term related to the number inside the parentheses?</p>
+      {{a}}<p>The middle term is twice the number inside, and the constant is its square.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -34,18 +37,18 @@ slug: Completing_the_Square
   <div class="box warn">
     <div class="lbl">Why we need a new method</div>
     <var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0 factors easily, but
-    <var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0 <span class="b m"></span>.
-    Both graphs cross the <var>x</var>-axis <span class="b m"></span>, so both
-    <i>have</i> solutions. We need a method that works <span class="b m"></span>.
+    <var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0 <span class="b m">{{a}}does not factor over the integers{{/a}}</span>.
+    Both graphs cross the <var>x</var>-axis <span class="b m">{{a}}twice{{/a}}</span>, so both
+    <i>have</i> solutions. We need a method that works <span class="b m">{{a}}every time{{/a}}</span>.
   </div>
 
   <h2><span class="num">6.5.1</span>Turning <var>x</var><sup>2</sup> + <var>bx</var> into a Perfect Square</h2>
 
   <div class="keys">
-    A perfect square trinomial comes from squaring <span class="b s"></span> binomial, used
-    <span class="b m"></span>. So in the area model the two diagonal terms must be
-    <span class="b m"></span> &mdash; which means the middle term gets split
-    <span class="b m"></span>.
+    A perfect square trinomial comes from squaring <span class="b s">{{a}}one{{/a}}</span> binomial, used
+    <span class="b m">{{a}}twice{{/a}}</span>. So in the area model the two diagonal terms must be
+    <span class="b m">{{a}}equal{{/a}}</span> &mdash; which means the middle term gets split
+    <span class="b m">{{a}}in half{{/a}}</span>.
   </div>
 
   <div class="ex">
@@ -54,19 +57,19 @@ slug: Completing_the_Square
     <div class="work">
       <div class="cols2">
         <div>
-          <p>Split the middle: 10<var>x</var> = <span class="b s"></span> +
-            <span class="b s"></span></p>
+          <p>Split the middle: 10<var>x</var> = <span class="b s">{{a}}5<var>x</var>{{/a}}</span> +
+            <span class="b s">{{a}}5<var>x</var>{{/a}}</span></p>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr">{{a}}5{{/a}}</td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td>{{a}}5<var>x</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}5{{/a}}</td><td>{{a}}5<var>x</var>{{/a}}</td><td>{{a}}25{{/a}}</td></tr>
           </table>
         </div>
         <div>
-          <p>The missing corner is <span class="b s"></span>.</p>
-          <p>But we <span class="b m"></span> that amount, so to keep the value the same we
-            must <span class="b m"></span> it back out.</p>
-          <p class="ans"><var>x</var><sup>2</sup> + 10<var>x</var> = <span class="b m"></span></p>
+          <p>The missing corner is <span class="b s">{{a}}25{{/a}}</span>.</p>
+          <p>But we <span class="b m">{{a}}added{{/a}}</span> that amount, so to keep the value the same we
+            must <span class="b m">{{a}}subtract{{/a}}</span> it back out.</p>
+          <p class="ans"><var>x</var><sup>2</sup> + 10<var>x</var> = <span class="b m">{{a}}(<var>x</var> + 5)<sup>2</sup> &minus; 25{{/a}}</span></p>
         </div>
       </div>
     </div>
@@ -79,12 +82,12 @@ slug: Completing_the_Square
       <div class="cols2">
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr">{{a}}&minus;3{{/a}}</td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td>{{a}}&minus;3<var>x</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}&minus;3{{/a}}</td><td>{{a}}&minus;3<var>x</var>{{/a}}</td><td>{{a}}9{{/a}}</td></tr>
           </table>
         </div>
-        <div><p class="ans">= <span class="b m"></span></p></div>
+        <div><p class="ans">= <span class="b m">{{a}}(<var>x</var> &minus; 3)<sup>2</sup> &minus; 9{{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -93,31 +96,31 @@ slug: Completing_the_Square
     <div class="q"><b class="tag">EX 3.</b> Rewrite <var>x</var><sup>2</sup> + 3<var>x</var>
       without drawing the model. <i>What is half of 3?</i></div>
     <div class="work h13">
-      <p>Half of <var>b</var> is <span class="b s"></span>, and its square is
-        <span class="b s"></span>.</p>
-      <p class="ans">= <span class="b m"></span></p>
+      <p>Half of <var>b</var> is <span class="b s">{{a}}{{f 3/2}}{{/a}}</span>, and its square is
+        <span class="b s">{{a}}{{f 9/4}}{{/a}}</span>.</p>
+      <p class="ans">= <span class="b m">{{a}}(<var>x</var> + {{f 3/2}})<sup>2</sup> &minus; {{f 9/4}}{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Rewrite <var>x</var><sup>2</sup> + 8<var>x</var>.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>Half of 8 is 4, and 4<sup>2</sup> = 16, so <var>x</var><sup>2</sup> + 8<var>x</var> = (<var>x</var> + 4)<sup>2</sup> &minus; 16</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">6.5.2</span>When <var>a</var> &ne; 1</h2>
 
   <div class="keys">
     Completing the square works best when the coefficient of <var>x</var><sup>2</sup> is
-    <span class="b s"></span>. If it is not, <span class="b m"></span> it out first.
+    <span class="b s">{{a}}1{{/a}}</span>. If it is not, <span class="b m">{{a}}factor{{/a}}</span> it out first.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Rewrite 3<var>x</var><sup>2</sup> + 12<var>x</var>.</div>
     <div class="work">
       <table class="steps">
-        <tr><td class="why">Factor out the leading coefficient</td><td></td></tr>
-        <tr><td class="why">Complete the square inside</td><td></td></tr>
-        <tr><td class="why">Substitute back and simplify</td><td></td></tr>
+        <tr><td class="why">Factor out the leading coefficient</td><td>{{a}}3(<var>x</var><sup>2</sup> + 4<var>x</var>){{/a}}</td></tr>
+        <tr><td class="why">Complete the square inside</td><td>{{a}}3[(<var>x</var> + 2)<sup>2</sup> &minus; 4]{{/a}}</td></tr>
+        <tr><td class="why">Substitute back and simplify</td><td>{{a}}3(<var>x</var> + 2)<sup>2</sup> &minus; 12{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -129,18 +132,18 @@ slug: Completing_the_Square
       <div class="cols2">
         <div>
           <table class="steps">
-            <tr><td class="why">Factor out and isolate</td><td></td></tr>
-            <tr><td class="why">Divide</td><td></td></tr>
-            <tr><td class="why">Add to both sides</td><td></td></tr>
+            <tr><td class="why">Factor out and isolate</td><td>{{a}}2(<var>x</var><sup>2</sup> + 4<var>x</var>) = &minus;3{{/a}}</td></tr>
+            <tr><td class="why">Divide</td><td>{{a}}<var>x</var><sup>2</sup> + 4<var>x</var> = &minus;{{f 3/2}}{{/a}}</td></tr>
+            <tr><td class="why">Add to both sides</td><td>{{a}}<var>x</var><sup>2</sup> + 4<var>x</var> + 4 = {{f 5/2}}{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr">{{a}}2{{/a}}</td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td>{{a}}2<var>x</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}2{{/a}}</td><td>{{a}}2<var>x</var>{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
           </table>
-          <p class="ans">Result: <span class="b m"></span></p>
+          <p class="ans">Result: <span class="b m">{{a}}(<var>x</var> + 2)<sup>2</sup> = {{f 5/2}}{{/a}}</span></p>
         </div>
       </div>
     </div>
@@ -150,14 +153,14 @@ slug: Completing_the_Square
 
   <div class="keys">
     Once an equation is in the form (<var>x</var> &minus; <var>h</var>)<sup>2</sup> =
-    <var>k</var>, you finish with the <span class="b m"></span> from Lesson 6.4.
-    Completing the square is how you <span class="b m"></span>.
+    <var>k</var>, you finish with the <span class="b m">{{a}}square root property{{/a}}</span> from Lesson 6.4.
+    Completing the square is how you <span class="b m">{{a}}get it into that form{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> Finish EX 6: solve
       (<var>x</var> + 2)<sup>2</sup> = {{f 5/2}}.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p><var>x</var> + 2 = &plusmn;&radic;{{f 5/2}} = &plusmn;{{f &radic;10/2}}</p><p><var>x</var> = &minus;2 &plusmn; {{f &radic;10/2}} &asymp; &minus;0.42 or &minus;3.58</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -167,18 +170,18 @@ slug: Completing_the_Square
       <div class="cols2">
         <div>
           <table class="steps">
-            <tr><td class="why">Isolate the <var>x</var> terms</td><td></td></tr>
-            <tr><td class="why">Add to both sides</td><td></td></tr>
-            <tr><td class="why">Write as a square</td><td></td></tr>
-            <tr><td class="why">Take square roots</td><td></td></tr>
-            <tr><td class="why">Solve</td><td></td></tr>
+            <tr><td class="why">Isolate the <var>x</var> terms</td><td>{{a}}<var>x</var><sup>2</sup> + 4<var>x</var> = 1{{/a}}</td></tr>
+            <tr><td class="why">Add to both sides</td><td>{{a}}<var>x</var><sup>2</sup> + 4<var>x</var> + 4 = 5{{/a}}</td></tr>
+            <tr><td class="why">Write as a square</td><td>{{a}}(<var>x</var> + 2)<sup>2</sup> = 5{{/a}}</td></tr>
+            <tr><td class="why">Take square roots</td><td>{{a}}<var>x</var> + 2 = &plusmn;&radic;5{{/a}}</td></tr>
+            <tr><td class="why">Solve</td><td>{{a}}<var>x</var> = &minus;2 &plusmn; &radic;5{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <table class="area">
-            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr"></td></tr>
-            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td></td></tr>
-            <tr><td class="hdr"></td><td></td><td></td></tr>
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td><td class="hdr">{{a}}2{{/a}}</td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td>{{a}}2<var>x</var>{{/a}}</td></tr>
+            <tr><td class="hdr">{{a}}2{{/a}}</td><td>{{a}}2<var>x</var>{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
           </table>
         </div>
       </div>
@@ -188,15 +191,15 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> Solve (<var>x</var> + 1)<sup>2</sup> = &minus;6.</div>
     <div class="work h1">
-      <p class="ans">Since &minus;6 <span class="b m"></span> 0, there are
-        <span class="b m"></span>.</p>
+      <p class="ans">Since &minus;6 <span class="b m">{{a}}&lt;{{/a}}</span> 0, there are
+        <span class="b m">{{a}}no real solutions{{/a}}</span>.</p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> Solve <var>x</var><sup>2</sup> &minus;
       10<var>x</var> + 16 = 0 by completing the square.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p><var>x</var><sup>2</sup> &minus; 10<var>x</var> = &minus;16</p><p><var>x</var><sup>2</sup> &minus; 10<var>x</var> + 25 = 9 &rarr; (<var>x</var> &minus; 5)<sup>2</sup> = 9</p><p><var>x</var> &minus; 5 = &plusmn;3, so <var>x</var> = 8 or 2</p>{{/a}}</div>
   </div>
 
 {{practice-head}}
@@ -207,18 +210,18 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="work">
       <p>1. What does it mean for a trinomial to be a <b>perfect square</b>?
-        <span class="b xl"></span></p>
+        <span class="b xl">{{a}}it is what you get from squaring a binomial, so it factors as (<var>x</var> &plusmn; <var>p</var>)<sup>2</sup>{{/a}}</span></p>
       <p>2. Why must the middle term be split into two <b>equal</b> parts?
-        <span class="b xl"></span></p>
+        <span class="b xl">{{a}}the two diagonal boxes must match for the side lengths to be the same{{/a}}</span></p>
       <p>3. In the area model, what does the missing corner represent?
-        <span class="b xl"></span></p>
-      <p>4. Why do we subtract the number we added? <span class="b xl"></span></p>
+        <span class="b xl">{{a}}the constant that completes the square, (<var>b</var>/2)<sup>2</sup>{{/a}}</span></p>
+      <p>4. Why do we subtract the number we added? <span class="b xl">{{a}}so the value does not change &mdash; we add and subtract the same amount{{/a}}</span></p>
       <p>5. Without solving, what can you say about the solutions of
         (<var>x</var> &minus; <var>h</var>)<sup>2</sup> = <var>k</var> when&hellip;</p>
       <div class="cols3">
-        <p><var>k</var> &gt; 0 &nbsp;<span class="b m"></span></p>
-        <p><var>k</var> = 0 &nbsp;<span class="b m"></span></p>
-        <p><var>k</var> &lt; 0 &nbsp;<span class="b m"></span></p>
+        <p><var>k</var> &gt; 0 &nbsp;<span class="b m">{{a}}two real solutions{{/a}}</span></p>
+        <p><var>k</var> = 0 &nbsp;<span class="b m">{{a}}one real solution{{/a}}</span></p>
+        <p><var>k</var> &lt; 0 &nbsp;<span class="b m">{{a}}no real solutions{{/a}}</span></p>
       </div>
     </div>
   </div>
@@ -228,10 +231,10 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>6. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> = <span class="b m"></span></p>
-        <p>7. &nbsp;<var>x</var><sup>2</sup> &minus; 8<var>x</var> = <span class="b m"></span></p>
-        <p>8. &nbsp;<var>x</var><sup>2</sup> + 5<var>x</var> = <span class="b m"></span></p>
-        <p>9. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> = <span class="b m"></span></p>
+        <p>6. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> = <span class="b m">{{a}}(<var>x</var> + 3)<sup>2</sup> &minus; 9{{/a}}</span></p>
+        <p>7. &nbsp;<var>x</var><sup>2</sup> &minus; 8<var>x</var> = <span class="b m">{{a}}(<var>x</var> &minus; 4)<sup>2</sup> &minus; 16{{/a}}</span></p>
+        <p>8. &nbsp;<var>x</var><sup>2</sup> + 5<var>x</var> = <span class="b m">{{a}}(<var>x</var> + {{f 5/2}})<sup>2</sup> &minus; {{f 25/4}}{{/a}}</span></p>
+        <p>9. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> = <span class="b m">{{a}}(<var>x</var> + 5)<sup>2</sup> &minus; 25{{/a}}</span></p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -242,11 +245,11 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>10. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0</p>
-        <p>11. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0</p>
-        <p>12. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> &minus; 1 = 0</p>
-        <p>13. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 9 = 0</p>
-        <p>14. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 30 = 0</p>
+        <p>10. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0{{a}} &nbsp; <var>x</var> = &minus;1, &minus;5{{/a}}</p>
+        <p>11. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0{{a}} &nbsp; <var>x</var> = &minus;3 &plusmn; &radic;7{{/a}}</p>
+        <p>12. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> &minus; 1 = 0{{a}} &nbsp; <var>x</var> = 2 &plusmn; &radic;5{{/a}}</p>
+        <p>13. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 9 = 0{{a}} &nbsp; <var>x</var> = &minus;1, &minus;9{{/a}}</p>
+        <p>14. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 30 = 0{{a}} &nbsp; no real solutions{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -257,11 +260,11 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>15. &nbsp;2<var>x</var><sup>2</sup> + 8<var>x</var> + 3 = 0</p>
-        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 12<var>x</var> = 0</p>
-        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0</p>
-        <p>18. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 1 = 0</p>
-        <p>19. &nbsp;4<var>x</var><sup>2</sup> &minus; 12<var>x</var> + 5 = 0</p>
+        <p>15. &nbsp;2<var>x</var><sup>2</sup> + 8<var>x</var> + 3 = 0{{a}} &nbsp; <var>x</var> = &minus;2 &plusmn; {{f &radic;10/2}}{{/a}}</p>
+        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 12<var>x</var> = 0{{a}} &nbsp; <var>x</var> = 0, &minus;4{{/a}}</p>
+        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = 1 &plusmn; {{f &radic;2/2}}{{/a}}</p>
+        <p>18. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = &minus;1 &plusmn; {{f &radic;6/3}}{{/a}}</p>
+        <p>19. &nbsp;4<var>x</var><sup>2</sup> &minus; 12<var>x</var> + 5 = 0{{a}} &nbsp; <var>x</var> = {{f 5/2}}, {{f 1/2}}{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -273,14 +276,14 @@ slug: Completing_the_Square
     <div class="q">20. A quadratic <var>x</var><sup>2</sup> + <var>bx</var> gets rewritten as
       (<var>x</var> + <var>k</var>)<sup>2</sup> &minus; 16. Find <var>b</var> and explain how
       you know <b>without expanding</b>.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>The amount subtracted is always (<var>b</var>/2)<sup>2</sup>, so (<var>b</var>/2)<sup>2</sup> = 16.</p><p><var>b</var>/2 = &plusmn;4, so <b><var>b</var> = &plusmn;8</b> (and <var>k</var> = &plusmn;4 to match).</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">21. For what value of <var>b</var> does <var>x</var><sup>2</sup> +
       <var>bx</var> + 9 = 0 have <b>exactly one</b> real solution? Solve by completing the
       square and explain why your answer makes sense.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p><var>x</var><sup>2</sup> + <var>bx</var> = &minus;9 &rarr; (<var>x</var> + {{f <var>b</var>/2}})<sup>2</sup> = {{f <var>b</var><sup>2</sup>/4}} &minus; 9</p><p>One solution needs the right side to be 0: <var>b</var><sup>2</sup> = 36, so <b><var>b</var> = &plusmn;6</b>.</p><p>That makes sense &mdash; those are exactly the cases where it is already a perfect square, (<var>x</var> &plusmn; 3)<sup>2</sup>.</p>{{/a}}</div>
   </div>
 
   <div class="box tint">
