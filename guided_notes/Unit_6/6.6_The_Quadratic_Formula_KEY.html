@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guided Notes 6.6 — The Quadratic Formula (Teacher Key)</title>
+<link rel="stylesheet" href="../assets/guided-notes.css">
+</head>
+<body>
+<section class="sheet">
+
+  <div class="masthead">
+    <a class="backlink" href="../../chapters/Unit_6/6.6_The_Quadratic_Formula.html">&larr; back to the lesson</a>
+    <h1>6.6 &nbsp;The Quadratic Formula</h1>
+    <div class="sub">Guided Notes &mdash; Unit 6: Quadratic Equations &amp; Functions &mdash; DHS Algebra 1</div>
+    <div class="keybadge">Teacher Key &mdash; answers in red</div>
+  </div>
+
+<div class="box tint">
+    <div class="lbl">Objectives</div>
+    <ul class="obj">
+      <li>Use the quadratic formula to solve any quadratic</li>
+      <li>Use the discriminant to determine how many solutions there are</li>
+      <li>Choose which solving method is most efficient</li>
+    </ul>
+  </div>
+
+  <h2>Warm-Up</h2>
+  <div class="ex">
+    <div class="work">
+      <div class="cols2">
+        <div>
+          <p>1. Solve by completing the square: <var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0</p>
+          <div class="ans-key"><p>(<var>x</var> + 3)<sup>2</sup> = 4, so <var>x</var> = &minus;1 or &minus;5</p></div>
+          <div class="ruled"></div><div class="ruled"></div>
+          <p>2. Try to factor <var>x</var><sup>2</sup> + 5<var>x</var> + 1 = 0. Can you still
+            solve it another way?</p>
+          <div class="ans-key"><p>It does not factor, but completing the square still works: <var>x</var> = <span class="f"><b>&minus;5 &plusmn; &radic;21</b><b>2</b></span></p></div>
+          <div class="ruled"></div>
+        </div>
+        <div>
+          <p>3. Three equations were solved by completing the square. What pattern do you see
+            in where the numbers end up?</p>
+          <p style="font-size:10pt"><var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1 = 0
+            &rArr; <var>x</var> = <span class="f"><b>&minus;4 &plusmn; &radic;20</b><b>2</b></span><br>
+            2<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 1 = 0 &rArr; <var>x</var> =
+            <span class="f"><b>6 &plusmn; &radic;28</b><b>4</b></span><br>
+            <var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 4 = 0 &rArr; <var>x</var> =
+            <span class="f"><b>2 &plusmn; &radic;20</b><b>2</b></span></p>
+          <div class="ans-key"><p>Every answer has the shape <span class="f"><b>&minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)</b><b>2<var>a</var></b></span> &mdash; that is the quadratic formula.</p></div>
+          <div class="ruled"></div><div class="ruled"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2><span class="num">6.6.1</span>Deriving the Quadratic Formula</h2>
+
+  <div class="keys">
+    Start with the most general quadratic there is:
+    <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var> = 0, where <var>a</var>
+    <span class="b s"><span class="ans-key">&ne;</span></span> 0. Solve <i>that</i>, and you can solve
+    <span class="b m"><span class="ans-key">any quadratic</span></span>.
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 1.</b> Complete the square on the general equation.</div>
+    <div class="work">
+      <div class="cols2">
+        <div>
+          <table class="steps">
+            <tr><td class="why">Divide by <var>a</var></td><td><span class="ans-key"><var>x</var><sup>2</sup> + <span class="f"><b><var>b</var></b><b><var>a</var></b></span><var>x</var> + <span class="f"><b><var>c</var></b><b><var>a</var></b></span> = 0</span></td></tr>
+            <tr><td class="why">Move the constant</td><td><span class="ans-key"><var>x</var><sup>2</sup> + <span class="f"><b><var>b</var></b><b><var>a</var></b></span><var>x</var> = &minus;<span class="f"><b><var>c</var></b><b><var>a</var></b></span></span></td></tr>
+            <tr><td class="why">Add to both sides</td><td><span class="ans-key"><var>x</var><sup>2</sup> + <span class="f"><b><var>b</var></b><b><var>a</var></b></span><var>x</var> + <span class="f"><b><var>b</var><sup>2</sup></b><b>4<var>a</var><sup>2</sup></b></span> = &minus;<span class="f"><b><var>c</var></b><b><var>a</var></b></span> + <span class="f"><b><var>b</var><sup>2</sup></b><b>4<var>a</var><sup>2</sup></b></span></span></td></tr>
+            <tr><td class="why">Write as a square</td><td><span class="ans-key">(<var>x</var> + <span class="f"><b><var>b</var></b><b>2<var>a</var></b></span>)<sup>2</sup> = <span class="f"><b><var>b</var><sup>2</sup> &minus; 4<var>ac</var></b><b>4<var>a</var><sup>2</sup></b></span></span></td></tr>
+            <tr><td class="why">Take square roots</td><td><span class="ans-key"><var>x</var> + <span class="f"><b><var>b</var></b><b>2<var>a</var></b></span> = &plusmn;<span class="f"><b>&radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)</b><b>2<var>a</var></b></span></span></td></tr>
+            <tr><td class="why">Solve for <var>x</var></td><td><span class="ans-key"><var>x</var> = <span class="f"><b>&minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)</b><b>2<var>a</var></b></span></span></td></tr>
+          </table>
+        </div>
+        <div>
+          <table class="area">
+            <tr><td class="corner"></td><td class="hdr"><var>x</var></td>
+              <td class="hdr"><span class="f"><b><var>b</var></b><b>2<var>a</var></b></span></td></tr>
+            <tr><td class="hdr"><var>x</var></td><td><var>x</var><sup>2</sup></td><td><span class="ans-key"><span class="f"><b><var>b</var></b><b>2<var>a</var></b></span><var>x</var></span></td></tr>
+            <tr><td class="hdr"><span class="f"><b><var>b</var></b><b>2<var>a</var></b></span></td><td><span class="ans-key"><span class="f"><b><var>b</var></b><b>2<var>a</var></b></span><var>x</var></span></td><td><span class="ans-key"><span class="f"><b><var>b</var><sup>2</sup></b><b>4<var>a</var><sup>2</sup></b></span></span></td></tr>
+          </table>
+          <p class="ans">The missing corner is <span class="b m"><span class="ans-key"><span class="f"><b><var>b</var><sup>2</sup></b><b>4<var>a</var><sup>2</sup></b></span></span></span></p>
+        </div>
+      </div>
+      <p class="ans" style="text-align:center;font-size:13pt"><b>The quadratic formula:</b>
+        &nbsp; <var>x</var> = <span class="b l"><span class="ans-key"><span class="f"><b>&minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)</b><b>2<var>a</var></b></span></span></span></p>
+    </div>
+  </div>
+
+  <h2><span class="num">6.6.2</span>Using the Formula</h2>
+
+  <div class="box tint">
+    <div class="lbl">The steps never change</div>
+    <ol>
+      <li>Identify <span class="b s"><span class="ans-key"><var>a</var></span></span>, <span class="b s"><span class="ans-key"><var>b</var></span></span>, and
+        <span class="b s"><span class="ans-key"><var>c</var></span></span> &mdash; the equation must be in
+        <span class="b m"><span class="ans-key">standard form</span></span> first.</li>
+      <li>Substitute <span class="b m"><span class="ans-key">carefully, using parentheses</span></span>.</li>
+      <li>Simplify step by step.</li>
+    </ol>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 2.</b> Solve <var>x</var><sup>2</sup> + 3<var>x</var>
+      + 1 = 0.</div>
+    <div class="work h2">
+      <p><var>a</var> = <span class="b s"><span class="ans-key">1</span></span> &nbsp; <var>b</var> = <span class="b s"><span class="ans-key">3</span></span>
+        &nbsp; <var>c</var> = <span class="b s"><span class="ans-key">1</span></span></p>
+      <p class="ans">Solutions: <span class="b m"><span class="ans-key"><var>x</var> = <span class="f"><b>&minus;3 &plusmn; &radic;5</b><b>2</b></span> &asymp; &minus;0.38 or &minus;2.62</span></span></p>
+      <p class="ans">This one does not factor &mdash; but the formula still gives
+        <span class="b m"><span class="ans-key">exact</span></span> answers.</p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 3.</b> Solve 2<var>x</var><sup>2</sup> &minus;
+      5<var>x</var> + 2 = 0.</div>
+    <div class="work h2">
+      <p><var>a</var> = <span class="b s"><span class="ans-key">2</span></span> &nbsp; <var>b</var> = <span class="b s"><span class="ans-key">&minus;5</span></span>
+        &nbsp; <var>c</var> = <span class="b s"><span class="ans-key">2</span></span></p>
+      <p class="ans">Solutions: <span class="b m"><span class="ans-key">disc = 9, so <var>x</var> = <span class="f"><b>5 &plusmn; 3</b><b>4</b></span> = 2 or <span class="f"><b>1</b><b>2</b></span></span></span></p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 4.</b> Solve 3<var>x</var><sup>2</sup> + 4<var>x</var>
+      + 7 = 0.</div>
+    <div class="work h2">
+      <p class="ans">What went wrong under the square root? <span class="b l"><span class="ans-key">the discriminant is 16 &minus; 84 = &minus;68, and you cannot take the square root of a negative</span></span></p>
+      <p class="ans">So this equation has <span class="b m"><span class="ans-key">no real solutions</span></span>.</p>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 5.</b> Solve 4<var>x</var><sup>2</sup> &minus;
+      5<var>x</var> &minus; 12 = 0.</div>
+    <div class="work h25"><div class="ans-key"><p><var>a</var> = 4, <var>b</var> = &minus;5, <var>c</var> = &minus;12; disc = 25 + 192 = 217</p><p><var>x</var> = <span class="f"><b>5 &plusmn; &radic;217</b><b>8</b></span> &asymp; 2.47 or &minus;1.22</p></div></div>
+  </div>
+
+  <h2><span class="num">6.6.3</span>The Discriminant</h2>
+
+  <div class="keys">
+    The <b>discriminant</b> is the part under the square root:
+    <span class="b m"><span class="ans-key"><var>b</var><sup>2</sup> &minus; 4<var>ac</var></span></span>. It tells you what <i>kind</i> of solutions you will get
+    <span class="b m"><span class="ans-key">before</span></span> you finish solving.
+    <table class="steps" style="margin-top:4px">
+      <tr><th style="width:2.4in">Discriminant</th><th>Number of real solutions</th>
+        <th>What the graph does</th></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td><span class="ans-key">two</span></td><td><span class="ans-key">crosses the <var>x</var>-axis twice</span></td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td><span class="ans-key">one</span></td><td><span class="ans-key">touches the <var>x</var>-axis at the vertex</span></td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td><span class="ans-key">none</span></td><td><span class="ans-key">never touches the <var>x</var>-axis</span></td></tr>
+    </table>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 6.</b> Find the discriminant and the number of solutions.</div>
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:2.4in">Equation</th><th>Discriminant</th>
+          <th style="width:1.6in"># of solutions</th></tr>
+        <tr><td>2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0</td><td><span class="ans-key">16 &minus; 8 = 8</span></td><td><span class="ans-key">two</span></td></tr>
+        <tr><td><var>x</var><sup>2</sup> &minus; 2<var>x</var> + 1 = 0</td><td><span class="ans-key">4 &minus; 4 = 0</span></td><td><span class="ans-key">one</span></td></tr>
+        <tr><td><var>x</var><sup>2</sup> &minus; 2<var>x</var> + 6 = 0</td><td><span class="ans-key">4 &minus; 24 = &minus;20</span></td><td><span class="ans-key">none</span></td></tr>
+        <tr><td><var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td><span class="ans-key">1 + 8 = 9</span></td><td><span class="ans-key">two</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">Is it factorable?</div>
+    If the discriminant is a <span class="b m"><span class="ans-key">perfect square</span></span>, the quadratic factors over the
+    integers.
+    <div style="margin-top:3px">Check 2<var>x</var><sup>2</sup> + 5<var>x</var> &minus; 3:
+      discriminant = <span class="b s"><span class="ans-key">49</span></span>, which
+      <span class="b m"><span class="ans-key">is</span></span> a perfect square, so it factors as
+      <span class="b m"><span class="ans-key">(2<var>x</var> &minus; 1)(<var>x</var> + 3)</span></span>.</div>
+  </div>
+
+<div class="pagebreak"></div>
+  <div class="parthead"><b>6.6 The Quadratic Formula &mdash; Practice</b></div>
+
+  <h2>Practice</h2>
+  <h3>Level 1 &mdash; Basic</h3>
+
+  <div class="ex">
+    <div class="work">
+      <div class="cols4">
+        <p>1. &nbsp;<var>x</var><sup>2</sup> &minus; 16 = 0<span class="ans-key"> &nbsp; <var>x</var> = &plusmn;4</span></p>
+        <p>2. &nbsp;<var>x</var><sup>2</sup> + 10<var>x</var> + 25 = 0<span class="ans-key"> &nbsp; <var>x</var> = &minus;5</span></p>
+        <p>3. &nbsp;<var>x</var><sup>2</sup> &minus; 5<var>x</var> + 6 = 0<span class="ans-key"> &nbsp; <var>x</var> = 2, 3</span></p>
+        <p>4. &nbsp;<var>x</var><sup>2</sup> + 4<var>x</var> + 3 = 0<span class="ans-key"> &nbsp; <var>x</var> = &minus;1, &minus;3</span></p>
+        <p>5. &nbsp;<var>x</var><sup>2</sup> + 2<var>x</var> + 1 = 0<span class="ans-key"> &nbsp; <var>x</var> = &minus;1</span></p>
+        <p>6. &nbsp;4<var>x</var><sup>2</sup> &minus; 9 = 0<span class="ans-key"> &nbsp; <var>x</var> = &plusmn;<span class="f"><b>3</b><b>2</b></span></span></p>
+        <p>7. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 3 = 0<span class="ans-key"> &nbsp; <var>x</var> = &minus;1</span></p>
+        <p>8. &nbsp;9<var>x</var><sup>2</sup> + 12<var>x</var> + 4 = 0<span class="ans-key"> &nbsp; <var>x</var> = &minus;<span class="f"><b>2</b><b>3</b></span></span></p>
+      </div>
+      <div class="tallbox h25"></div>
+    </div>
+  </div>
+
+  <h3>Level 2 &mdash; Intermediate</h3>
+  <div class="box tint">Give the number of solutions first, then solve.</div>
+
+  <div class="ex">
+    <div class="work">
+      <table class="steps">
+        <tr><th style="width:2.2in">Equation</th><th style="width:1.4in">Discriminant</th>
+          <th>Solutions</th></tr>
+        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td><span class="ans-key">5</span></td><td><span class="ans-key"><var>x</var> = <span class="f"><b>&minus;3 &plusmn; &radic;5</b><b>2</b></span></span></td></tr>
+        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td><span class="ans-key">24</span></td><td><span class="ans-key"><var>x</var> = 1 &plusmn; &radic;6</span></td></tr>
+        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td><span class="ans-key">25</span></td><td><span class="ans-key"><var>x</var> = &minus;<span class="f"><b>1</b><b>2</b></span>, &minus;3</span></td></tr>
+        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td><span class="ans-key">49</span></td><td><span class="ans-key"><var>x</var> = <span class="f"><b>1</b><b>2</b></span>, &minus;<span class="f"><b>2</b><b>3</b></span></span></td></tr>
+        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td><span class="ans-key">24</span></td><td><span class="ans-key"><var>x</var> = <span class="f"><b>&minus;1 &plusmn; &radic;6</b><b>5</b></span></span></td></tr>
+        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td><span class="ans-key">&minus;84</span></td><td><span class="ans-key">no real solutions</span></td></tr>
+        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td><span class="ans-key">&minus;56</span></td><td><span class="ans-key">no real solutions</span></td></tr>
+        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td><span class="ans-key">&minus;24</span></td><td><span class="ans-key">no real solutions</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Level 3 &mdash; Challenging</h3>
+  <div class="box tint">You may need to rearrange or simplify first.</div>
+
+  <div class="ex">
+    <div class="work">
+      <div class="cols3">
+        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 8<var>x</var> = 0<span class="ans-key"> &nbsp; <var>x</var> = 0, 4</span></p>
+        <p>18. &nbsp;<var>x</var>(3<var>x</var> &minus; 5) = 4<span class="ans-key"> &nbsp; <var>x</var> = <span class="f"><b>5 &plusmn; &radic;73</b><b>6</b></span></span></p>
+        <p>19. &nbsp;2(<var>x</var> &minus; 3)<sup>2</sup> = 8<span class="ans-key"> &nbsp; <var>x</var> = 5, 1</span></p>
+        <p>20. &nbsp;<var>x</var><sup>2</sup> + 6<var>x</var> = &minus;11<span class="ans-key"> &nbsp; no real solutions (disc &minus;8)</span></p>
+        <p>21. &nbsp;4<var>x</var><sup>2</sup> + 1 = 8<var>x</var><span class="ans-key"> &nbsp; <var>x</var> = <span class="f"><b>2 &plusmn; &radic;3</b><b>2</b></span></span></p>
+        <p>22. &nbsp;5<var>x</var><sup>2</sup> &minus; 20<var>x</var> + 20 = 0<span class="ans-key"> &nbsp; <var>x</var> = 2</span></p>
+      </div>
+      <div class="tallbox h25"></div>
+      <div class="cols3">
+        <p>23. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 4 = 0<span class="ans-key"> &nbsp; <var>x</var> = 2</span></p>
+        <p>24. &nbsp;<var>x</var><sup>2</sup> &minus; (<var>k</var> &minus; 2)<var>x</var> +
+          <var>k</var> = 0, with <var>k</var> = 3<span class="ans-key"> &nbsp; <var>x</var><sup>2</sup> &minus; <var>x</var> + 3 = 0, disc &minus;11 &rarr; no real solutions</span></p>
+        <p>25. &nbsp;3<var>x</var><sup>2</sup> + 4<var>x</var> + 7 = 0<span class="ans-key"> &nbsp; no real solutions (disc &minus;68)</span></p>
+      </div>
+      <div class="tallbox h25"></div>
+    </div>
+  </div>
+
+  <h3>Challenge</h3>
+
+  <div class="ex">
+    <div class="q">26. Find all values of <var>k</var> for which <var>x</var><sup>2</sup> +
+      <var>kx</var> + 9 = 0 has <b>exactly one</b> real solution.</div>
+    <div class="work h2"><div class="ans-key"><p>Exactly one solution means the discriminant is 0: <var>k</var><sup>2</sup> &minus; 36 = 0</p><p><b><var>k</var> = &plusmn;6</b></p></div></div>
+  </div>
+
+  <div class="ex">
+    <div class="q">27. A quadratic equation has solutions <var>x</var> =
+      <span class="f"><b>3 &plusmn; &radic;13</b><b>4</b></span>. Write the original equation in standard form.</div>
+    <div class="work h25"><div class="ans-key"><p>Matching <span class="f"><b>&minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)</b><b>2<var>a</var></b></span>: 2<var>a</var> = 4 so <var>a</var> = 2, and &minus;<var>b</var> = 3 so <var>b</var> = &minus;3.</p><p><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 13 &rarr; 9 &minus; 8<var>c</var> = 13 &rarr; <var>c</var> = &minus;<span class="f"><b>1</b><b>2</b></span></p><p>2<var>x</var><sup>2</sup> &minus; 3<var>x</var> &minus; <span class="f"><b>1</b><b>2</b></span> = 0, or doubling: <b>4<var>x</var><sup>2</sup> &minus; 6<var>x</var> &minus; 1 = 0</b></p></div></div>
+  </div>
+
+  <div class="box tint">
+    <div class="lbl">Questions I still have</div>
+    <div class="ruled"></div><div class="ruled"></div><div class="ruled"></div>
+  </div>
+
+</section>
+</body>
+</html>
