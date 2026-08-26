@@ -29,6 +29,7 @@ slug: The_Distributive_Property
         </div>
         <div>
           <p>Combined order:</p>
+          {{a}}<p>3 cheeseburgers, 2 chicken nuggets, 2 breakfast burritos, 4 med fries, 5 hash browns, 2 lg drinks, 2 med drinks, 1 coffee</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div><div class="ruled"></div>
         </div>
       </div>
@@ -40,11 +41,12 @@ slug: The_Distributive_Property
       3. Test whether 3(2<var>x</var> &minus; 1) and 6<var>x</var> &minus; 3 are equivalent.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;6 &times; 45 = <span class="b s"></span></p>
-        <p>b. &nbsp;3 &times; 32 = <span class="b s"></span></p>
-        <p>c. &nbsp;11 &times; 25 = <span class="b s"></span></p>
-        <p>d. &nbsp;19 &times; 5 = <span class="b s"></span></p>
+        <p>a. &nbsp;6 &times; 45 = <span class="b s">{{a}}270{{/a}}</span></p>
+        <p>b. &nbsp;3 &times; 32 = <span class="b s">{{a}}96{{/a}}</span></p>
+        <p>c. &nbsp;11 &times; 25 = <span class="b s">{{a}}275{{/a}}</span></p>
+        <p>d. &nbsp;19 &times; 5 = <span class="b s">{{a}}95{{/a}}</span></p>
       </div>
+      {{a}}<p>Equivalent &mdash; 3(2<var>x</var> &minus; 1) = 6<var>x</var> &minus; 3. Mental math above uses the same idea: 6 &times; 45 = 6(40 + 5).</p>{{/a}}
       <div class="ruled"></div>
     </div>
   </div>
@@ -52,11 +54,11 @@ slug: The_Distributive_Property
   <h2><span class="num">2.4.1</span>What Is the Distributive Property?</h2>
 
   <div class="keys">
-    To <b>distribute</b> is to hand the multiplier to <span class="b m"></span> term inside
+    To <b>distribute</b> is to hand the multiplier to <span class="b m">{{a}}every{{/a}}</span> term inside
     the parentheses.
     <p style="text-align:center;margin-top:4px"><b><var>a</var>(<var>b</var> + <var>c</var>) =
-      <span class="b m"></span> &nbsp;&nbsp;and&nbsp;&nbsp;
-      <var>a</var>(<var>b</var> &minus; <var>c</var>) = <span class="b m"></span></b></p>
+      <span class="b m">{{a}}<var>ab</var> + <var>ac</var>{{/a}}</span> &nbsp;&nbsp;and&nbsp;&nbsp;
+      <var>a</var>(<var>b</var> &minus; <var>c</var>) = <span class="b m">{{a}}<var>ab</var> &minus; <var>ac</var>{{/a}}</span></b></p>
   </div>
 
   <div class="ex">
@@ -64,41 +66,41 @@ slug: The_Distributive_Property
       3 to each term.</div>
     <div class="work h13">
       <p style="font-size:14pt; margin:14px 0 4px">3( <var>x</var> &nbsp; + &nbsp; 2 ) &nbsp;=&nbsp;
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}3<var>x</var> + 6{{/a}}</span></p>
       <p class="ans">With algebra tiles: 3 groups of (<var>x</var> + 2) gives
-        <span class="b s"></span> <var>x</var>-tiles and <span class="b s"></span> unit tiles.</p>
+        <span class="b s">{{a}}3{{/a}}</span> <var>x</var>-tiles and <span class="b s">{{a}}6{{/a}}</span> unit tiles.</p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; do not skip a term</div>
     Multiply <b>every</b> term inside. &nbsp;
-    4(<var>x</var> + 2<var>y</var> + 5) = <span class="b l"></span>
+    4(<var>x</var> + 2<var>y</var> + 5) = <span class="b l">{{a}}4<var>x</var> + 8<var>y</var> + 20{{/a}}</span>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> Expand 5(<var>x</var> + 7).</div>
-    <div class="work h08"></div>
+    <div class="work h08">{{a}}<p>5<var>x</var> + 35</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">2.4.2</span>Distributing with Negatives</h2>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 3.</b> Expand &minus;3(<var>x</var> &minus; 4).</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>&minus;3<var>x</var> + 12</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Expand &minus;(2<var>x</var> &minus; 7).
       <i>What number is hiding in front of the parentheses?</i></div>
     <div class="work h13">
-      <p>A lone negative sign means multiply by <span class="b s"></span>.</p>
-    </div>
+      <p>A lone negative sign means multiply by <span class="b s">{{a}}&minus;1{{/a}}</span>.</p>
+    {{a}}<p>&minus;1(2<var>x</var> &minus; 7) = &minus;2<var>x</var> + 7</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Expand &minus;2(3 &minus; <var>y</var>).</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>&minus;6 + 2<var>y</var> &nbsp; (or 2<var>y</var> &minus; 6)</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">2.4.3</span>Distribute, Then Combine Like Terms</h2>
@@ -107,42 +109,42 @@ slug: The_Distributive_Property
     <div class="q"><b class="tag">EX 6.</b> Simplify 4(<var>x</var> + 2) + 3(<var>x</var> &minus; 5).</div>
     <div class="work">
       <table class="steps">
-        <tr><td class="why">Distribute</td><td></td></tr>
-        <tr><td class="why">Combine like terms</td><td></td></tr>
+        <tr><td class="why">Distribute</td><td>{{a}}4<var>x</var> + 8 + 3<var>x</var> &minus; 15{{/a}}</td></tr>
+        <tr><td class="why">Combine like terms</td><td>{{a}}7<var>x</var> &minus; 7{{/a}}</td></tr>
       </table>
     </div>
   </div>
 
   <div class="box tint">
     <div class="lbl">Tip &mdash; make it simpler first</div>
-    If you can simplify <span class="b m"></span> the parentheses first, do that before you
+    If you can simplify <span class="b m">{{a}}inside{{/a}}</span> the parentheses first, do that before you
     distribute. &nbsp; 2(4<var>x</var> + 3 &minus; 2<var>x</var> &minus; 1) =
-    2(<span class="b m"></span>) = <span class="b m"></span>
+    2(<span class="b m">{{a}}2<var>x</var> + 2{{/a}}</span>) = <span class="b m">{{a}}4<var>x</var> + 4{{/a}}</span>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; the sign travels with the multiplier</div>
     In 3(<var>x</var> &minus; 2) <b>&minus; 5</b>(4<var>x</var> + 5) you must multiply the second
-    group by <span class="b s"></span>, not 5.
-    <div style="margin-top:4px">Result: <span class="b l"></span></div>
+    group by <span class="b s">{{a}}&minus;5{{/a}}</span>, not 5.
+    <div style="margin-top:4px">Result: <span class="b l">{{a}}3<var>x</var> &minus; 6 &minus; 20<var>x</var> &minus; 25 = &minus;17<var>x</var> &minus; 31{{/a}}</span></div>
   </div>
 
   <h2><span class="num">2.4.4</span>Reverse It: Factoring Out a Common Factor</h2>
 
   <div class="keys">
     If <var>ab</var> + <var>ac</var> = <var>a</var>(<var>b</var> + <var>c</var>), then we can
-    <b>factor out</b> the <span class="b m"></span>. This is the distributive property
-    <span class="b m"></span>.
+    <b>factor out</b> the <span class="b m">{{a}}common factor (the GCF){{/a}}</span>. This is the distributive property
+    <span class="b m">{{a}}in reverse{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> Factor out the GCF.</div>
     <div class="work">
       <div class="cols2">
-        <p>8<var>x</var> + 12 = <span class="b m"></span></p>
-        <p>15<var>x</var> &minus; 9 = <span class="b m"></span></p>
-        <p>3<var>x</var> + 6<var>y</var> = <span class="b m"></span></p>
-        <p>12<var>x</var> + 18 = <span class="b m"></span></p>
+        <p>8<var>x</var> + 12 = <span class="b m">{{a}}4(2<var>x</var> + 3){{/a}}</span></p>
+        <p>15<var>x</var> &minus; 9 = <span class="b m">{{a}}3(5<var>x</var> &minus; 3){{/a}}</span></p>
+        <p>3<var>x</var> + 6<var>y</var> = <span class="b m">{{a}}3(<var>x</var> + 2<var>y</var>){{/a}}</span></p>
+        <p>12<var>x</var> + 18 = <span class="b m">{{a}}6(2<var>x</var> + 3){{/a}}</span></p>
       </div>
     </div>
   </div>
@@ -156,12 +158,12 @@ slug: The_Distributive_Property
       &nbsp;&nbsp; Step 2: 9<var>x</var> &minus; 7</div>
     <div class="work h2">
       <div class="cols2">
-        <div><p>Test the original at <var>x</var> = 3:</p></div>
-        <div><p>Test his answer at <var>x</var> = 3:</p></div>
+        <div><p>Test the original at <var>x</var> = 3:{{a}} &nbsp; 5(3) &minus; (&minus;1) = 15 + 1 = 16{{/a}}</p></div>
+        <div><p>Test his answer at <var>x</var> = 3:{{a}} &nbsp; 9(3) &minus; 7 = 20{{/a}}</p></div>
       </div>
-      <p class="ans">Did he make a mistake? <span class="b s"></span>
-        &nbsp; What was it? <span class="b l"></span></p>
-      <p class="ans">Correct answer: <span class="b"></span></p>
+      <p class="ans">Did he make a mistake? <span class="b s">{{a}}yes{{/a}}</span>
+        &nbsp; What was it? <span class="b l">{{a}}he never multiplied the 5 by &minus;3, and he did not distribute the &minus; across (<var>x</var> &minus; 4){{/a}}</span></p>
+      <p class="ans">Correct answer: <span class="b">{{a}}9<var>x</var> &minus; 11{{/a}}</span></p>
     </div>
   </div>
 
@@ -170,9 +172,9 @@ slug: The_Distributive_Property
       3(<var>x</var> &minus; 7), then check your work with a substitution.</div>
     <div class="work h25">
       <table class="steps">
-        <tr><td class="why">Distribute</td><td></td></tr>
-        <tr><td class="why">Combine</td><td></td></tr>
-        <tr><td class="why">Check (pick a value)</td><td></td></tr>
+        <tr><td class="why">Distribute</td><td>{{a}}&minus;10 + 4<var>x</var> + 3<var>x</var> &minus; 21{{/a}}</td></tr>
+        <tr><td class="why">Combine</td><td>{{a}}7<var>x</var> &minus; 31{{/a}}</td></tr>
+        <tr><td class="why">Check (pick a value)</td><td>{{a}}at <var>x</var> = 1: &minus;2(3) + 3(&minus;6) = &minus;24 and 7(1) &minus; 31 = &minus;24 &#10003;{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -185,12 +187,12 @@ slug: The_Distributive_Property
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>1. &nbsp;6(<var>x</var> + 5)</p>
-        <p>2. &nbsp;7(<var>y</var> &minus; 2)</p>
-        <p>3. &nbsp;4(3<var>a</var> + <var>b</var>)</p>
-        <p>4. &nbsp;10(<var>m</var> + 0.3)</p>
-        <p>5. &nbsp;&minus;3(<var>p</var> + 9)</p>
-        <p>6. &nbsp;&minus;(<var>k</var> &minus; 8)</p>
+        <p>1. &nbsp;6(<var>x</var> + 5){{a}} &nbsp; = 6<var>x</var> + 30{{/a}}</p>
+        <p>2. &nbsp;7(<var>y</var> &minus; 2){{a}} &nbsp; = 7<var>y</var> &minus; 14{{/a}}</p>
+        <p>3. &nbsp;4(3<var>a</var> + <var>b</var>){{a}} &nbsp; = 12<var>a</var> + 4<var>b</var>{{/a}}</p>
+        <p>4. &nbsp;10(<var>m</var> + 0.3){{a}} &nbsp; = 10<var>m</var> + 3{{/a}}</p>
+        <p>5. &nbsp;&minus;3(<var>p</var> + 9){{a}} &nbsp; = &minus;3<var>p</var> &minus; 27{{/a}}</p>
+        <p>6. &nbsp;&minus;(<var>k</var> &minus; 8){{a}} &nbsp; = &minus;<var>k</var> + 8{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -201,10 +203,10 @@ slug: The_Distributive_Property
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>7. &nbsp;2(<var>x</var> + 3) + 5(<var>x</var> &minus; 1)</p>
-        <p>8. &nbsp;4<var>y</var> &minus; 2(3<var>y</var> &minus; 7)</p>
-        <p>9. &nbsp;3(<var>a</var> + 2<var>b</var>) &minus; 5(2<var>a</var> &minus; <var>b</var>)</p>
-        <p>10. &nbsp;&minus;2(<var>t</var> &minus; 5) + 3(<var>t</var> + 1)</p>
+        <p>7. &nbsp;2(<var>x</var> + 3) + 5(<var>x</var> &minus; 1){{a}} &nbsp; = 7<var>x</var> + 1{{/a}}</p>
+        <p>8. &nbsp;4<var>y</var> &minus; 2(3<var>y</var> &minus; 7){{a}} &nbsp; = &minus;2<var>y</var> + 14{{/a}}</p>
+        <p>9. &nbsp;3(<var>a</var> + 2<var>b</var>) &minus; 5(2<var>a</var> &minus; <var>b</var>){{a}} &nbsp; = &minus;7<var>a</var> + 11<var>b</var>{{/a}}</p>
+        <p>10. &nbsp;&minus;2(<var>t</var> &minus; 5) + 3(<var>t</var> + 1){{a}} &nbsp; = <var>t</var> + 13{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -215,10 +217,10 @@ slug: The_Distributive_Property
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>11. &nbsp;0.5(8<var>x</var> &minus; 6)</p>
-        <p>12. &nbsp;1.2(<var>y</var> + 5) &minus; 0.2<var>y</var></p>
-        <p>13. &nbsp;{{f 3/4}}(4<var>x</var> &minus; 8)</p>
-        <p>14. &nbsp;&minus;{{f 1/2}}(6<var>a</var> + 10)</p>
+        <p>11. &nbsp;0.5(8<var>x</var> &minus; 6){{a}} &nbsp; = 4<var>x</var> &minus; 3{{/a}}</p>
+        <p>12. &nbsp;1.2(<var>y</var> + 5) &minus; 0.2<var>y</var>{{a}} &nbsp; = <var>y</var> + 6{{/a}}</p>
+        <p>13. &nbsp;{{f 3/4}}(4<var>x</var> &minus; 8){{a}} &nbsp; = 3<var>x</var> &minus; 6{{/a}}</p>
+        <p>14. &nbsp;&minus;{{f 1/2}}(6<var>a</var> + 10){{a}} &nbsp; = &minus;3<var>a</var> &minus; 5{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -229,10 +231,10 @@ slug: The_Distributive_Property
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>15. &nbsp;18<var>x</var> + 27</p>
-        <p>16. &nbsp;20<var>m</var> &minus; 12</p>
-        <p>17. &nbsp;8<var>p</var> + 12<var>q</var></p>
-        <p>18. &nbsp;14<var>x</var> &minus; 21<var>x</var><sup>2</sup></p>
+        <p>15. &nbsp;18<var>x</var> + 27{{a}} &nbsp; = 9(2<var>x</var> + 3){{/a}}</p>
+        <p>16. &nbsp;20<var>m</var> &minus; 12{{a}} &nbsp; = 4(5<var>m</var> &minus; 3){{/a}}</p>
+        <p>17. &nbsp;8<var>p</var> + 12<var>q</var>{{a}} &nbsp; = 4(2<var>p</var> + 3<var>q</var>){{/a}}</p>
+        <p>18. &nbsp;14<var>x</var> &minus; 21<var>x</var><sup>2</sup>{{a}} &nbsp; = 7<var>x</var>(2 &minus; 3<var>x</var>){{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -244,10 +246,10 @@ slug: The_Distributive_Property
     <div class="work">
       <table class="steps">
         <tr><th style="width:2.8in">Pair</th><th>Expand and simplify</th><th style="width:1in">Equivalent?</th></tr>
-        <tr><td>19. &nbsp;3(<var>x</var> + 4) + 2<var>x</var> &nbsp;and&nbsp; 5<var>x</var> + 12</td><td></td><td></td></tr>
-        <tr><td>20. &nbsp;6 &minus; 2(<var>x</var> + 3) &nbsp;and&nbsp; &minus;2<var>x</var></td><td></td><td></td></tr>
-        <tr><td>21. &nbsp;5(<var>a</var> &minus; 1) + <var>a</var> &nbsp;and&nbsp; 6<var>a</var> &minus; 5</td><td></td><td></td></tr>
-        <tr><td>22. &nbsp;4(<var>y</var> + 2) &minus; 3(<var>y</var> &minus; 1) &nbsp;and&nbsp; <var>y</var> + 11</td><td></td><td></td></tr>
+        <tr><td>19. &nbsp;3(<var>x</var> + 4) + 2<var>x</var> &nbsp;and&nbsp; 5<var>x</var> + 12</td><td>{{a}}5<var>x</var> + 12 &nbsp;|&nbsp; 5<var>x</var> + 12{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
+        <tr><td>20. &nbsp;6 &minus; 2(<var>x</var> + 3) &nbsp;and&nbsp; &minus;2<var>x</var></td><td>{{a}}&minus;2<var>x</var> &nbsp;|&nbsp; &minus;2<var>x</var>{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
+        <tr><td>21. &nbsp;5(<var>a</var> &minus; 1) + <var>a</var> &nbsp;and&nbsp; 6<var>a</var> &minus; 5</td><td>{{a}}6<var>a</var> &minus; 5 &nbsp;|&nbsp; 6<var>a</var> &minus; 5{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
+        <tr><td>22. &nbsp;4(<var>y</var> + 2) &minus; 3(<var>y</var> &minus; 1) &nbsp;and&nbsp; <var>y</var> + 11</td><td>{{a}}<var>y</var> + 11 &nbsp;|&nbsp; <var>y</var> + 11{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -260,9 +262,10 @@ slug: The_Distributive_Property
       Why do both give the same result?</div>
     <div class="work h25">
       <div class="cols2">
-        <div><p>Distribute first:</p></div>
-        <div><p>Factor first:</p></div>
+        <div><p>Distribute first:{{a}} &nbsp; 8<var>x</var> + 12 &minus; 2<var>x</var> &minus; 3 = 6<var>x</var> + 9{{/a}}</p></div>
+        <div><p>Factor first:{{a}} &nbsp; (2<var>x</var> + 3)(4 &minus; 1) = 3(2<var>x</var> + 3) = 6<var>x</var> + 9{{/a}}</p></div>
       </div>
+      {{a}}<p>Both work because factoring is just the distributive property read backwards.</p>{{/a}}
       <div class="ruled"></div>
     </div>
   </div>
@@ -270,7 +273,7 @@ slug: The_Distributive_Property
   <div class="ex">
     <div class="q">24. Use the distributive property to multiply
       (3<var>x</var> &minus; 1)(2<var>x</var> + 3). Show each step.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>(3<var>x</var> &minus; 1)(2<var>x</var> + 3) = 3<var>x</var>(2<var>x</var> + 3) &minus; 1(2<var>x</var> + 3)</p><p>= 6<var>x</var><sup>2</sup> + 9<var>x</var> &minus; 2<var>x</var> &minus; 3 = 6<var>x</var><sup>2</sup> + 7<var>x</var> &minus; 3</p>{{/a}}</div>
   </div>
 
   <div class="box tint">

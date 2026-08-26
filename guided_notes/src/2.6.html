@@ -20,8 +20,8 @@ slug: Equivalent_Expressions
     <div class="q">1. <b>Do it two ways.</b> Compute 3(7 + 4).</div>
     <div class="work h1">
       <div class="cols2">
-        <p>Way A &mdash; add first, then multiply: <span class="b m"></span></p>
-        <p>Way B &mdash; distribute first, then add: <span class="b m"></span></p>
+        <p>Way A &mdash; add first, then multiply: <span class="b m">{{a}}3(11) = 33{{/a}}</span></p>
+        <p>Way B &mdash; distribute first, then add: <span class="b m">{{a}}21 + 12 = 33{{/a}}</span></p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@ slug: Equivalent_Expressions
     <div class="q">2. Simplify 4<var>x</var> + <var>x</var> + 6, then find its value at
       <var>x</var> = 0 and <var>x</var> = 3. Try substituting <i>before</i> simplifying too.
       Same answer?</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>4<var>x</var> + <var>x</var> + 6 = 5<var>x</var> + 6</p><p>At <var>x</var> = 0: 6 &nbsp;&nbsp; At <var>x</var> = 3: 21</p><p>Substituting first gives the same answers &mdash; simplifying does not change the value.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -39,9 +39,9 @@ slug: Equivalent_Expressions
     <div class="work">
       <table class="fill">
         <tr><th><var>x</var></th><th><var>A</var>(<var>x</var>)</th><th><var>B</var>(<var>x</var>)</th></tr>
-        <tr><td>0</td><td></td><td></td></tr>
-        <tr><td>2</td><td></td><td></td></tr>
-        <tr><td>&minus;1</td><td></td><td></td></tr>
+        <tr><td>0</td><td>{{a}}&minus;4{{/a}}</td><td>{{a}}&minus;4{{/a}}</td></tr>
+        <tr><td>2</td><td>{{a}}4{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
+        <tr><td>&minus;1</td><td>{{a}}&minus;8{{/a}}</td><td>{{a}}&minus;8{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -50,8 +50,8 @@ slug: Equivalent_Expressions
 
   <div class="keys">
     Two expressions are <b>equivalent</b> if they give the same value for
-    <span class="b m"></span> input. They do <b>not</b> have to
-    <span class="b m"></span> the same.
+    <span class="b m">{{a}}every{{/a}}</span> input. They do <b>not</b> have to
+    <span class="b m">{{a}}look{{/a}}</span> the same.
   </div>
 
   <div class="ex">
@@ -60,26 +60,26 @@ slug: Equivalent_Expressions
     <div class="work">
       <table class="fill">
         <tr><th><var>x</var></th><th>3(<var>x</var> + 4)</th><th>3<var>x</var> + 12</th></tr>
-        <tr><td>0</td><td></td><td></td></tr>
-        <tr><td>5</td><td></td><td></td></tr>
+        <tr><td>0</td><td>{{a}}12{{/a}}</td><td>{{a}}12{{/a}}</td></tr>
+        <tr><td>5</td><td>{{a}}27{{/a}}</td><td>{{a}}27{{/a}}</td></tr>
       </table>
-      <p class="ans">The outputs match. This is <span class="b m"></span> that they are equivalent.</p>
+      <p class="ans">The outputs match. This is <span class="b m">{{a}}evidence{{/a}}</span> that they are equivalent.</p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Remember &mdash; evidence is not proof</div>
-    Testing a few values gives <span class="b m"></span>. A <b>proof</b> shows it is true for
-    <span class="b m"></span> inputs.
+    Testing a few values gives <span class="b m">{{a}}evidence{{/a}}</span>. A <b>proof</b> shows it is true for
+    <span class="b m">{{a}}all{{/a}}</span> inputs.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> Are <var>C</var>(<var>x</var>) = 4<var>x</var> + 1
       and <var>D</var>(<var>x</var>) = 4(<var>x</var> + 1) equivalent? Try <var>x</var> = 2.</div>
     <div class="work h13">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p><var>C</var>(2) = 8 + 1 = 9</p>{{/a}}</div><div>{{a}}<p><var>D</var>(2) = 4(3) = 12</p>{{/a}}</div></div>
       <p class="ans">A single value that makes the outputs differ is called a
-        <span class="b m"></span>.</p>
+        <span class="b m">{{a}}counterexample{{/a}}</span>.</p>
     </div>
   </div>
 
@@ -89,11 +89,11 @@ slug: Equivalent_Expressions
     <div class="work">
       <table class="fill">
         <tr><th><var>x</var></th><th><var>x</var></th><th><var>x</var><sup>2</sup></th><th>match?</th></tr>
-        <tr><td>0</td><td></td><td></td><td></td></tr>
-        <tr><td>1</td><td></td><td></td><td></td></tr>
-        <tr><td>2</td><td></td><td></td><td></td></tr>
+        <tr><td>0</td><td>{{a}}0{{/a}}</td><td>{{a}}0{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
+        <tr><td>1</td><td>{{a}}1{{/a}}</td><td>{{a}}1{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
+        <tr><td>2</td><td>{{a}}2{{/a}}</td><td>{{a}}4{{/a}}</td><td>{{a}}no{{/a}}</td></tr>
       </table>
-      <p class="ans">So matching a few times is only <span class="b m"></span>.</p>
+      <p class="ans">So matching a few times is only <span class="b m">{{a}}evidence, never proof{{/a}}</span>.</p>
     </div>
   </div>
 
@@ -102,9 +102,9 @@ slug: Equivalent_Expressions
       <b>evidence</b> or <b>counterexample</b>.</div>
     <div class="work h16">
       <div class="cols3">
-        <p>a. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> and 3<var>x</var></p>
-        <p>b. &nbsp;5(<var>x</var> &minus; 2) and 5<var>x</var> &minus; 10</p>
-        <p>c. &nbsp;2<var>x</var> + 3 and 2(<var>x</var> + 3)</p>
+        <p>a. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> and 3<var>x</var>{{a}} &nbsp; &mdash; evidence (equivalent){{/a}}</p>
+        <p>b. &nbsp;5(<var>x</var> &minus; 2) and 5<var>x</var> &minus; 10{{a}} &nbsp; &mdash; evidence (equivalent){{/a}}</p>
+        <p>c. &nbsp;2<var>x</var> + 3 and 2(<var>x</var> + 3){{a}} &nbsp; &mdash; counterexample at <var>x</var> = 0: 3 vs 6{{/a}}</p>
       </div>
     </div>
   </div>
@@ -112,30 +112,30 @@ slug: Equivalent_Expressions
   <div class="box warn">
     <div class="lbl">Think about it</div>
     Can testing values <i>prove</i> two expressions are <b>not</b> equivalent?
-    <span class="b s"></span> &mdash; because <span class="b l"></span>
+    <span class="b s">{{a}}yes{{/a}}</span> &mdash; because <span class="b l">{{a}}one counterexample is enough to disprove it{{/a}}</span>
   </div>
 
   <h2><span class="num">2.6.2</span>Proving Equivalence</h2>
 
   <div class="keys">
     We cannot test every value, so to <b>prove</b> equivalence we use
-    <span class="b m"></span> to rewrite each expression until they
-    <span class="b m"></span>.
-    <div style="margin-top:3px">The tools: <span class="b m"></span>,
-      <span class="b m"></span>, and <span class="b m"></span>.</div>
+    <span class="b m">{{a}}the properties of algebra{{/a}}</span> to rewrite each expression until they
+    <span class="b m">{{a}}match{{/a}}</span>.
+    <div style="margin-top:3px">The tools: <span class="b m">{{a}}the distributive property{{/a}}</span>,
+      <span class="b m">{{a}}combining like terms{{/a}}</span>, and <span class="b m">{{a}}factoring{{/a}}</span>.</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5. Distribute.</b> Prove 2(3 &minus; <var>y</var>) and
       6 &minus; 2<var>y</var> are equivalent.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>2(3 &minus; <var>y</var>) = 6 &minus; 2<var>y</var> &#10003;</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6. Combine like terms.</b> Prove
       2<var>x</var> &minus; 3<var>y</var> + 7 and 2 &minus; 3<var>x</var> + 5 &minus;
       3<var>y</var> + 5<var>x</var> are equivalent.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>2 &minus; 3<var>x</var> + 5 &minus; 3<var>y</var> + 5<var>x</var></p><p>= (&minus;3<var>x</var> + 5<var>x</var>) &minus; 3<var>y</var> + (2 + 5) = 2<var>x</var> &minus; 3<var>y</var> + 7 &#10003;</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -143,7 +143,7 @@ slug: Equivalent_Expressions
       2(<var>x</var> &minus; 1) + 3<var>x</var> and 2<var>x</var> +
       3(<var>x</var> &minus; 2) + 4 are equivalent.</div>
     <div class="work h16">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>2(<var>x</var> &minus; 1) + 3<var>x</var> = 2<var>x</var> &minus; 2 + 3<var>x</var> = 5<var>x</var> &minus; 2</p>{{/a}}</div><div>{{a}}<p>2<var>x</var> + 3(<var>x</var> &minus; 2) + 4 = 2<var>x</var> + 3<var>x</var> &minus; 6 + 4 = 5<var>x</var> &minus; 2</p>{{/a}}</div></div>
     </div>
   </div>
 
@@ -151,21 +151,21 @@ slug: Equivalent_Expressions
     <div class="q"><b class="tag">EX 8. Factor.</b> Prove 6<var>z</var> &minus; 2 and
       2(3<var>z</var> &minus; 1) are equivalent.</div>
     <div class="work h1">
-      <p>The GCF of 6<var>z</var> and &minus;2 is <span class="b s"></span>.</p>
-    </div>
+      <p>The GCF of 6<var>z</var> and &minus;2 is <span class="b s">{{a}}2{{/a}}</span>.</p>
+    {{a}}<p>6<var>z</var> &minus; 2 = 2(3<var>z</var> &minus; 1) &#10003;</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9. Disprove.</b> Show 2<var>x</var> + 3 and
       2(<var>x</var> + 3) are <b>not</b> equivalent, using algebra.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>2(<var>x</var> + 3) = 2<var>x</var> + 6, and 2<var>x</var> + 6 &ne; 2<var>x</var> + 3 &mdash; the constants differ by 3 for every <var>x</var>.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> Prove 3 &minus; 2(<var>x</var> + 1) and
       <var>x</var> + 1 &minus; 3<var>x</var> are equivalent.</div>
     <div class="work h16">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>3 &minus; 2(<var>x</var> + 1) = 3 &minus; 2<var>x</var> &minus; 2 = 1 &minus; 2<var>x</var></p>{{/a}}</div><div>{{a}}<p><var>x</var> + 1 &minus; 3<var>x</var> = &minus;2<var>x</var> + 1</p>{{/a}}</div></div>
     </div>
   </div>
 
@@ -182,19 +182,19 @@ slug: Equivalent_Expressions
     <div class="work">
       <table class="steps">
         <tr><th style="width:3in">Pair</th><th>Work</th><th style="width:1.2in">Verdict</th></tr>
-        <tr><td>1. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> &nbsp;vs&nbsp; 3<var>x</var></td><td></td><td></td></tr>
-        <tr><td>2. &nbsp;5(<var>x</var> &minus; 2) &nbsp;vs&nbsp; 5<var>x</var> &minus; 10</td><td></td><td></td></tr>
-        <tr><td>3. &nbsp;2<var>x</var> + 3 &nbsp;vs&nbsp; 2(<var>x</var> + 3)</td><td></td><td></td></tr>
-        <tr><td>4. &nbsp;4(<var>x</var> + {{f 1/2}}) &nbsp;vs&nbsp; 4<var>x</var> + 2</td><td></td><td></td></tr>
-        <tr><td>5. &nbsp;<var>x</var><sup>2</sup> + <var>x</var> &nbsp;vs&nbsp; <var>x</var>(<var>x</var> + 2)</td><td></td><td></td></tr>
-        <tr><td>6. &nbsp;7 &minus; (2<var>x</var> + 3) &nbsp;vs&nbsp; 4 &minus; 2<var>x</var></td><td></td><td></td></tr>
-        <tr><td>7. &nbsp;3(<var>x</var> &minus; <var>y</var>) &nbsp;vs&nbsp; 3<var>x</var> &minus; <var>y</var></td><td></td><td></td></tr>
-        <tr><td>8. &nbsp;2(<var>x</var> + <var>y</var>) + 3(<var>x</var> + <var>y</var>) &nbsp;vs&nbsp; 5(<var>x</var> + <var>y</var>)</td><td></td><td></td></tr>
-        <tr><td>9. &nbsp;6<var>z</var> &minus; 2 &nbsp;vs&nbsp; 2(3<var>z</var> &minus; 1)</td><td></td><td></td></tr>
-        <tr><td>10. &nbsp;5<var>x</var> &minus; 2<var>x</var> + 4 &nbsp;vs&nbsp; 5(<var>x</var> &minus; 2<var>x</var>) + 4</td><td></td><td></td></tr>
-        <tr><td>11. &nbsp;{{f 1/2}}(10<var>x</var> &minus; 6) &nbsp;vs&nbsp; 5<var>x</var> &minus; 3</td><td></td><td></td></tr>
+        <tr><td>1. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> &nbsp;vs&nbsp; 3<var>x</var></td><td>{{a}}3<var>x</var> = 3<var>x</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>2. &nbsp;5(<var>x</var> &minus; 2) &nbsp;vs&nbsp; 5<var>x</var> &minus; 10</td><td>{{a}}5<var>x</var> &minus; 10{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>3. &nbsp;2<var>x</var> + 3 &nbsp;vs&nbsp; 2(<var>x</var> + 3)</td><td>{{a}}2<var>x</var> + 6 &ne; 2<var>x</var> + 3{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=0: 3 vs 6){{/a}}</td></tr>
+        <tr><td>4. &nbsp;4(<var>x</var> + {{f 1/2}}) &nbsp;vs&nbsp; 4<var>x</var> + 2</td><td>{{a}}4<var>x</var> + 2{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>5. &nbsp;<var>x</var><sup>2</sup> + <var>x</var> &nbsp;vs&nbsp; <var>x</var>(<var>x</var> + 2)</td><td>{{a}}<var>x</var>(<var>x</var>+2) = <var>x</var><sup>2</sup> + 2<var>x</var>{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=1: 2 vs 3){{/a}}</td></tr>
+        <tr><td>6. &nbsp;7 &minus; (2<var>x</var> + 3) &nbsp;vs&nbsp; 4 &minus; 2<var>x</var></td><td>{{a}}7 &minus; 2<var>x</var> &minus; 3 = 4 &minus; 2<var>x</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>7. &nbsp;3(<var>x</var> &minus; <var>y</var>) &nbsp;vs&nbsp; 3<var>x</var> &minus; <var>y</var></td><td>{{a}}3<var>x</var> &minus; 3<var>y</var> &ne; 3<var>x</var> &minus; <var>y</var>{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=0, <var>y</var>=1){{/a}}</td></tr>
+        <tr><td>8. &nbsp;2(<var>x</var> + <var>y</var>) + 3(<var>x</var> + <var>y</var>) &nbsp;vs&nbsp; 5(<var>x</var> + <var>y</var>)</td><td>{{a}}5(<var>x</var> + <var>y</var>){{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>9. &nbsp;6<var>z</var> &minus; 2 &nbsp;vs&nbsp; 2(3<var>z</var> &minus; 1)</td><td>{{a}}2(3<var>z</var> &minus; 1) = 6<var>z</var> &minus; 2{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>10. &nbsp;5<var>x</var> &minus; 2<var>x</var> + 4 &nbsp;vs&nbsp; 5(<var>x</var> &minus; 2<var>x</var>) + 4</td><td>{{a}}3<var>x</var> + 4 vs &minus;5<var>x</var> + 4{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=1: 7 vs &minus;1){{/a}}</td></tr>
+        <tr><td>11. &nbsp;{{f 1/2}}(10<var>x</var> &minus; 6) &nbsp;vs&nbsp; 5<var>x</var> &minus; 3</td><td>{{a}}5<var>x</var> &minus; 3{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
         <tr><td>12. &nbsp;2<var>x</var><sup>2</sup> &minus; 4 &minus; 3<var>x</var> + 2 &nbsp;vs&nbsp;
-          <var>x</var><sup>2</sup> &minus; 2 &minus; 3<var>x</var> + <var>x</var><sup>2</sup></td><td></td><td></td></tr>
+          <var>x</var><sup>2</sup> &minus; 2 &minus; 3<var>x</var> + <var>x</var><sup>2</sup></td><td>{{a}}both give 2<var>x</var><sup>2</sup> &minus; 3<var>x</var> &minus; 2{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -203,18 +203,18 @@ slug: Equivalent_Expressions
     <div class="work">
       <table class="steps">
         <tr><th style="width:3in">Pair</th><th>Work</th><th style="width:1.2in">Verdict</th></tr>
-        <tr><td>13. &nbsp;9 &minus; 3(<var>x</var> + 2) &nbsp;vs&nbsp; 3 &minus; 3<var>x</var></td><td></td><td></td></tr>
-        <tr><td>14. &nbsp;2(<var>x</var> &minus; 3<var>y</var>) + 4<var>y</var> &nbsp;vs&nbsp; 2<var>x</var> &minus; 2<var>y</var></td><td></td><td></td></tr>
-        <tr><td>15. &nbsp;4(<var>x</var> + <var>y</var>) &minus; (<var>x</var> + <var>y</var>) &nbsp;vs&nbsp; 3<var>x</var> + <var>y</var></td><td></td><td></td></tr>
-        <tr><td>16. &nbsp;2<var>x</var> + 3<var>x</var> &minus; 4 + 1 &nbsp;vs&nbsp; 5<var>x</var> &minus; 3</td><td></td><td></td></tr>
-        <tr><td>17. &nbsp;3(<var>x</var> + 1) + 2 &nbsp;vs&nbsp; 3<var>x</var> + 3 + 2<var>x</var></td><td></td><td></td></tr>
-        <tr><td>18. &nbsp;{{f <var>x</var>/3}} + {{f 2<var>x</var>/3}} &nbsp;vs&nbsp; <var>x</var></td><td></td><td></td></tr>
-        <tr><td>19. &nbsp;2<var>x</var><sup>2</sup> + <var>x</var> &nbsp;vs&nbsp; (2<var>x</var>)<sup>2</sup> + <var>x</var></td><td></td><td></td></tr>
-        <tr><td>20. &nbsp;(<var>m</var> &minus; <var>n</var>) + (<var>n</var> &minus; <var>m</var>) &nbsp;vs&nbsp; 0</td><td></td><td></td></tr>
-        <tr><td>21. &nbsp;7(<var>x</var> &minus; 1) &nbsp;vs&nbsp; 7<var>x</var> &minus; 1</td><td></td><td></td></tr>
-        <tr><td>22. &nbsp;4 &minus; (<var>x</var> &minus; 5) &nbsp;vs&nbsp; 9 &minus; <var>x</var></td><td></td><td></td></tr>
+        <tr><td>13. &nbsp;9 &minus; 3(<var>x</var> + 2) &nbsp;vs&nbsp; 3 &minus; 3<var>x</var></td><td>{{a}}9 &minus; 3<var>x</var> &minus; 6 = 3 &minus; 3<var>x</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>14. &nbsp;2(<var>x</var> &minus; 3<var>y</var>) + 4<var>y</var> &nbsp;vs&nbsp; 2<var>x</var> &minus; 2<var>y</var></td><td>{{a}}2<var>x</var> &minus; 6<var>y</var> + 4<var>y</var> = 2<var>x</var> &minus; 2<var>y</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>15. &nbsp;4(<var>x</var> + <var>y</var>) &minus; (<var>x</var> + <var>y</var>) &nbsp;vs&nbsp; 3<var>x</var> + <var>y</var></td><td>{{a}}3(<var>x</var> + <var>y</var>) = 3<var>x</var> + 3<var>y</var>{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=0, <var>y</var>=1){{/a}}</td></tr>
+        <tr><td>16. &nbsp;2<var>x</var> + 3<var>x</var> &minus; 4 + 1 &nbsp;vs&nbsp; 5<var>x</var> &minus; 3</td><td>{{a}}5<var>x</var> &minus; 3{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>17. &nbsp;3(<var>x</var> + 1) + 2 &nbsp;vs&nbsp; 3<var>x</var> + 3 + 2<var>x</var></td><td>{{a}}3<var>x</var> + 5 vs 5<var>x</var> + 3{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=0: 5 vs 3){{/a}}</td></tr>
+        <tr><td>18. &nbsp;{{f <var>x</var>/3}} + {{f 2<var>x</var>/3}} &nbsp;vs&nbsp; <var>x</var></td><td>{{a}}{{f 3<var>x</var>/3}} = <var>x</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>19. &nbsp;2<var>x</var><sup>2</sup> + <var>x</var> &nbsp;vs&nbsp; (2<var>x</var>)<sup>2</sup> + <var>x</var></td><td>{{a}}(2<var>x</var>)<sup>2</sup> = 4<var>x</var><sup>2</sup>{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=1: 3 vs 5){{/a}}</td></tr>
+        <tr><td>20. &nbsp;(<var>m</var> &minus; <var>n</var>) + (<var>n</var> &minus; <var>m</var>) &nbsp;vs&nbsp; 0</td><td>{{a}}<var>m</var> &minus; <var>n</var> + <var>n</var> &minus; <var>m</var> = 0{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
+        <tr><td>21. &nbsp;7(<var>x</var> &minus; 1) &nbsp;vs&nbsp; 7<var>x</var> &minus; 1</td><td>{{a}}7<var>x</var> &minus; 7 &ne; 7<var>x</var> &minus; 1{{/a}}</td><td>{{a}}Not equivalent (<var>x</var>=0){{/a}}</td></tr>
+        <tr><td>22. &nbsp;4 &minus; (<var>x</var> &minus; 5) &nbsp;vs&nbsp; 9 &minus; <var>x</var></td><td>{{a}}4 &minus; <var>x</var> + 5 = 9 &minus; <var>x</var>{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
         <tr><td>23. &nbsp;2<var>x</var><sup>2</sup> &minus; 2(<var>x</var> + 1) &nbsp;vs&nbsp;
-          4 &minus; 2(<var>x</var> + 3) + 2<var>x</var><sup>2</sup></td><td></td><td></td></tr>
+          4 &minus; 2(<var>x</var> + 3) + 2<var>x</var><sup>2</sup></td><td>{{a}}both give 2<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 2{{/a}}</td><td>{{a}}Equivalent{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -224,7 +224,7 @@ slug: Equivalent_Expressions
   <div class="ex">
     <div class="q">24. Find <var>k</var> so that 3(<var>x</var> + <var>k</var>) is equivalent to
       3<var>x</var> + 12.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>3(<var>x</var> + <var>k</var>) = 3<var>x</var> + 3<var>k</var>, so 3<var>k</var> = 12 and <var>k</var> = <b>4</b>.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -232,7 +232,7 @@ slug: Equivalent_Expressions
       <br><var>E</var><sub>1</sub>(<var>x</var>) = (<var>x</var> + 2)(4<var>x</var> &minus; 1) +
       3(<var>x</var> + 2) &nbsp;&nbsp;
       <var>E</var><sub>2</sub>(<var>x</var>) = 2(<var>x</var> + 2)(2<var>x</var> + 1)</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p>Factor (<var>x</var> + 2) out of <var>E</var><sub>1</sub>:</p><p><var>E</var><sub>1</sub> = (<var>x</var> + 2)[(4<var>x</var> &minus; 1) + 3] = (<var>x</var> + 2)(4<var>x</var> + 2) = 2(<var>x</var> + 2)(2<var>x</var> + 1)</p><p>That is exactly <var>E</var><sub>2</sub> &mdash; equivalent for all <var>x</var>.</p>{{/a}}</div>
   </div>
 
   <div class="box tint">
