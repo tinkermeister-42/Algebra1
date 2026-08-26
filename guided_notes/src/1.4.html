@@ -18,14 +18,17 @@ slug: Multiply_Divide_and_Compare_Fractions
   <div class="cols3">
     <div>
       <p>1. What is half of a half?</p>
+      {{a}}<p>{{f 1/4}}</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. What happens when you multiply two positive numbers that are both less than 1?</p>
+      {{a}}<p>The product is smaller than either one.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. If you divide 1 by {{f 1/2}}, is the answer bigger or smaller?</p>
+      {{a}}<p>Bigger &mdash; 1 &divide; {{f 1/2}} = 2</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -35,9 +38,9 @@ slug: Multiply_Divide_and_Compare_Fractions
   <div class="keys">
     Multiplying by a fraction means finding a <b>part of a part</b>.
     <ul style="margin-top:3px">
-      <li>Multiply the <span class="b m"></span> together.</li>
-      <li>Multiply the <span class="b m"></span> together.</li>
-      <li>Then <span class="b m"></span> if you can.</li>
+      <li>Multiply the <span class="b m">{{a}}numerators{{/a}}</span> together.</li>
+      <li>Multiply the <span class="b m">{{a}}denominators{{/a}}</span> together.</li>
+      <li>Then <span class="b m">{{a}}simplify{{/a}}</span> if you can.</li>
     </ul>
   </div>
 
@@ -47,26 +50,26 @@ slug: Multiply_Divide_and_Compare_Fractions
     <div class="work h13">
       <img class="fig" src="../../images/Unit_1/Lesson_5/fourth_of_a_half.png"
            alt="circle split into halves and fourths" style="width:2.2in">
-      <p class="ans">{{f 1/4}} &times; {{f 1/2}} = {{f 1 &times; 1/4 &times; 2}} = <span class="b"></span></p>
+      <p class="ans">{{f 1/4}} &times; {{f 1/2}} = {{f 1 &times; 1/4 &times; 2}} = <span class="b">{{a}}{{f 1/8}}{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> {{f 3/5}} &times; {{f 4/7}}</div>
-    <div class="work h08"></div>
+    <div class="work h08">{{a}}<p>{{f 3/5}} &times; {{f 4/7}} = {{f 12/35}}</p>{{/a}}</div>
   </div>
 
   <h3>Multiplying a Whole Number by a Fraction</h3>
 
   <div class="keys">
-    No denominator? Put a <span class="b s"></span> underneath it.
+    No denominator? Put a <span class="b s">{{a}}1{{/a}}</span> underneath it.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 3.</b> 3 &times; {{f 2/5}} &nbsp;&nbsp;&nbsp;&nbsp;
       <b class="tag">EX 4.</b> 5 &times; {{f 3/4}}</div>
     <div class="work h1">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>3 &times; {{f 2/5}} = {{f 3/1}} &times; {{f 2/5}} = {{f 6/5}} = 1{{f 1/5}}</p>{{/a}}</div><div>{{a}}<p>5 &times; {{f 3/4}} = {{f 15/4}} = 3{{f 3/4}}</p>{{/a}}</div></div>
     </div>
   </div>
 
@@ -77,18 +80,18 @@ slug: Multiply_Divide_and_Compare_Fractions
       multiply first, then cancel common factors.</div>
     <div class="work h1">
       <p>{{f 2/3}} &times; {{f 9/4}} = {{f 2 &times; 9/3 &times; 4}} = {{f ___/___}} =
-        <span class="b"></span></p>
-    </div>
+        <span class="b">{{a}}{{f 3/2}} = 1{{f 1/2}}{{/a}}</span></p>
+    {{a}}<p>{{f 2 &times; 9/3 &times; 4}} = {{f 18/12}}, and 18 and 12 share a GCF of 6.</p>{{/a}}</div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Shortcut</div>
-    If you <span class="b m"></span> <i>before</i> you multiply, you get to skip a step.
+    If you <span class="b m">{{a}}cancel common factors{{/a}}</span> <i>before</i> you multiply, you get to skip a step.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> {{f 8/9}} &times; {{f 3/4}} &nbsp;&mdash;&nbsp; cancel first.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>Cancel 8 with 4 and 3 with 9: {{f 2/3}} &times; {{f 1/1}} = {{f 2/3}}</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">1.4.2</span>Multiplying Mixed Numbers</h2>
@@ -96,58 +99,58 @@ slug: Multiply_Divide_and_Compare_Fractions
   <div class="keys">
     To turn a mixed number into an <b>improper fraction</b>:
     <ol style="margin-top:3px">
-      <li>Multiply the whole number by the <span class="b m"></span>.</li>
-      <li>Add the <span class="b m"></span>.</li>
-      <li>Keep the same <span class="b m"></span>.</li>
+      <li>Multiply the whole number by the <span class="b m">{{a}}denominator{{/a}}</span>.</li>
+      <li>Add the <span class="b m">{{a}}numerator{{/a}}</span>.</li>
+      <li>Keep the same <span class="b m">{{a}}denominator{{/a}}</span>.</li>
     </ol>
-    <div>To go back: <span class="b m"></span>, and the remainder becomes the new numerator.</div>
+    <div>To go back: <span class="b m">{{a}}divide the numerator by the denominator{{/a}}</span>, and the remainder becomes the new numerator.</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> 4{{f 2/3}} &times; {{f 5/6}}</div>
     <div class="work h13">
-      <p>Convert: 4 &times; 3 = <span class="b s"></span>, then + 2 = <span class="b s"></span>,
-        so 4{{f 2/3}} = <span class="b s"></span></p>
-      <p class="ans">Multiply: <span class="b l"></span>
-        &nbsp;&nbsp; Back to a mixed number: <span class="b"></span></p>
+      <p>Convert: 4 &times; 3 = <span class="b s">{{a}}12{{/a}}</span>, then + 2 = <span class="b s">{{a}}14{{/a}}</span>,
+        so 4{{f 2/3}} = <span class="b s">{{a}}{{f 14/3}}{{/a}}</span></p>
+      <p class="ans">Multiply: <span class="b l">{{a}}{{f 14/3}} &times; {{f 5/6}} = {{f 70/18}} = {{f 35/9}}{{/a}}</span>
+        &nbsp;&nbsp; Back to a mixed number: <span class="b">{{a}}3{{f 8/9}}{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> 2{{f 1/4}} &times; {{f 4/5}}</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>{{f 9/4}} &times; {{f 4/5}} = {{f 36/20}} = {{f 9/5}} = 1{{f 4/5}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> A recipe for 12 needs 3{{f 1/2}} cups of flour.
       You only want half of it. How much flour?</div>
     <div class="work h1">
-      <p class="ans">Answer: <span class="b"></span> cups</p>
-    </div>
+      <p class="ans">Answer: <span class="b">{{a}}1{{f 3/4}}{{/a}}</span> cups</p>
+    {{a}}<p>3{{f 1/2}} &times; {{f 1/2}} = {{f 7/2}} &times; {{f 1/2}} = {{f 7/4}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> 3{{f 2/3}} &times; 4{{f 1/2}}</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>{{f 11/3}} &times; {{f 9/2}} = {{f 99/6}} = {{f 33/2}} = 16{{f 1/2}}</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">1.4.3</span>Division &amp; Reciprocals</h2>
 
   <div class="keys">
-    The <b>reciprocal</b> of a fraction is the fraction <span class="b m"></span>.
+    The <b>reciprocal</b> of a fraction is the fraction <span class="b m">{{a}}flipped upside down{{/a}}</span>.
     <div class="cols3" style="margin-top:3px">
-      <p>reciprocal of {{f 3/4}} = <span class="b s"></span></p>
-      <p>reciprocal of 5 = <span class="b s"></span></p>
-      <p>reciprocal of 0 = <span class="b s"></span></p>
+      <p>reciprocal of {{f 3/4}} = <span class="b s">{{a}}{{f 4/3}}{{/a}}</span></p>
+      <p>reciprocal of 5 = <span class="b s">{{a}}{{f 1/5}}{{/a}}</span></p>
+      <p>reciprocal of 0 = <span class="b s">{{a}}none &mdash; undefined{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box tint">
     <div class="lbl">Remember &mdash; Keep, Change, Flip</div>
     <div class="cols3">
-      <p>1. <b>Keep</b> the <span class="b s"></span> fraction.</p>
-      <p>2. <b>Change</b> &divide; to <span class="b s"></span>.</p>
-      <p>3. <b>Flip</b> the <span class="b s"></span> fraction.</p>
+      <p>1. <b>Keep</b> the <span class="b s">{{a}}first{{/a}}</span> fraction.</p>
+      <p>2. <b>Change</b> &divide; to <span class="b s">{{a}}&times;{{/a}}</span>.</p>
+      <p>3. <b>Flip</b> the <span class="b s">{{a}}second{{/a}}</span> fraction.</p>
     </div>
   </div>
 
@@ -155,14 +158,14 @@ slug: Multiply_Divide_and_Compare_Fractions
     <div class="q"><b class="tag">EX 11.</b> {{f 2/3}} &divide; {{f 1/4}} &nbsp;&mdash;&nbsp;
       this asks: how many fourths fit inside {{f 2/3}}?</div>
     <div class="work h1">
-      <p>{{f 2/3}} &divide; {{f 1/4}} = {{f 2/3}} &times; {{f ___/___}} = <span class="b"></span></p>
-    </div>
+      <p>{{f 2/3}} &divide; {{f 1/4}} = {{f 2/3}} &times; {{f ___/___}} = <span class="b">{{a}}{{f 8/3}} = 2{{f 2/3}}{{/a}}</span></p>
+    {{a}}<p>The flipped fraction is {{f 4/1}}.</p>{{/a}}</div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha</div>
-    Zero has <span class="b m"></span> reciprocal. And with mixed numbers, convert to an
-    improper fraction <span class="b m"></span> you flip.
+    Zero has <span class="b m">{{a}}no{{/a}}</span> reciprocal. And with mixed numbers, convert to an
+    improper fraction <span class="b m">{{a}}before{{/a}}</span> you flip.
   </div>
 
 {{practice-head}}
@@ -174,10 +177,10 @@ slug: Multiply_Divide_and_Compare_Fractions
     <div class="q">1. Multiply.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;{{f 2/5}} &times; {{f 3/4}}</p>
-        <p>b. &nbsp;3 &times; {{f 4/7}}</p>
-        <p>c. &nbsp;{{f 5/6}} &times; {{f 1/2}}</p>
-        <p>d. &nbsp;{{f 3/8}} &times; {{f 4/9}}</p>
+        <p>a. &nbsp;{{f 2/5}} &times; {{f 3/4}}{{a}} &nbsp; = {{f 3/10}}{{/a}}</p>
+        <p>b. &nbsp;3 &times; {{f 4/7}}{{a}} &nbsp; = {{f 12/7}} = 1{{f 5/7}}{{/a}}</p>
+        <p>c. &nbsp;{{f 5/6}} &times; {{f 1/2}}{{a}} &nbsp; = {{f 5/12}}{{/a}}</p>
+        <p>d. &nbsp;{{f 3/8}} &times; {{f 4/9}}{{a}} &nbsp; = {{f 1/6}}{{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -187,10 +190,10 @@ slug: Multiply_Divide_and_Compare_Fractions
     <div class="q">2. Multiply (mixed numbers).</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;1{{f 1/2}} &times; {{f 2/3}}</p>
-        <p>b. &nbsp;2{{f 2/5}} &times; 3</p>
-        <p>c. &nbsp;1{{f 3/4}} &times; {{f 2/3}}</p>
-        <p>d. &nbsp;5{{f 2/9}} &times; 4{{f 3/8}}</p>
+        <p>a. &nbsp;1{{f 1/2}} &times; {{f 2/3}}{{a}} &nbsp; = {{f 3/2}} &times; {{f 2/3}} = 1{{/a}}</p>
+        <p>b. &nbsp;2{{f 2/5}} &times; 3{{a}} &nbsp; = {{f 36/5}} = 7{{f 1/5}}{{/a}}</p>
+        <p>c. &nbsp;1{{f 3/4}} &times; {{f 2/3}}{{a}} &nbsp; = {{f 7/6}} = 1{{f 1/6}}{{/a}}</p>
+        <p>d. &nbsp;5{{f 2/9}} &times; 4{{f 3/8}}{{a}} &nbsp; = {{f 47/9}} &times; {{f 35/8}} = {{f 1645/72}} = 22{{f 61/72}}{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -200,10 +203,10 @@ slug: Multiply_Divide_and_Compare_Fractions
     <div class="q">3. Divide.</div>
     <div class="work">
       <div class="cols4">
-        <p>a. &nbsp;{{f 3/4}} &divide; {{f 1/2}}</p>
-        <p>b. &nbsp;2 &divide; {{f 2/5}}</p>
-        <p>c. &nbsp;{{f 5/6}} &divide; {{f 1/3}}</p>
-        <p>d. &nbsp;{{f 7/8}} &divide; {{f 7/8}}</p>
+        <p>a. &nbsp;{{f 3/4}} &divide; {{f 1/2}}{{a}} &nbsp; = {{f 3/2}} = 1{{f 1/2}}{{/a}}</p>
+        <p>b. &nbsp;2 &divide; {{f 2/5}}{{a}} &nbsp; = 5{{/a}}</p>
+        <p>c. &nbsp;{{f 5/6}} &divide; {{f 1/3}}{{a}} &nbsp; = {{f 5/2}} = 2{{f 1/2}}{{/a}}</p>
+        <p>d. &nbsp;{{f 7/8}} &divide; {{f 7/8}}{{a}} &nbsp; = 1{{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
     </div>
@@ -214,19 +217,19 @@ slug: Multiply_Divide_and_Compare_Fractions
   <div class="ex">
     <div class="q">4a. You have {{f 3/4}} of a pie. If everyone gets {{f 1/8}} of a pie,
       how many people can you serve?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}6 people{{/a}}</span></p>{{a}}<p>{{f 3/4}} &divide; {{f 1/8}} = {{f 3/4}} &times; {{f 8/1}} = 6</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">4b. A recipe calls for {{f 2/3}} cup of flour. You are making {{f 1/2}} of
       the recipe. How much flour?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}{{f 1/3}} cup{{/a}}</span></p></div>
   </div>
 
   <div class="ex">
     <div class="q">4c. A board is 6 feet long. Each shelf needs {{f 3/4}} of a foot.
       How many shelves can you cut?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}8 shelves{{/a}}</span></p>{{a}}<p>6 &divide; {{f 3/4}} = 6 &times; {{f 4/3}} = 8</p>{{/a}}</div>
   </div>
 
   <h3>Challenge</h3>
@@ -234,13 +237,13 @@ slug: Multiply_Divide_and_Compare_Fractions
   <div class="ex">
     <div class="q">5. Two fractions multiply to give exactly {{f 3/8}}. One of them is {{f 3/4}}.
       What is the other?</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>{{f 3/8}} &divide; {{f 3/4}} = {{f 3/8}} &times; {{f 4/3}} = {{f 1/2}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">6. Pancakes need 2{{f 1/4}} cups of sugar per batch. You have exactly 9 cups.
       What is the greatest number of full batches?</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>9 &divide; 2{{f 1/4}} = 9 &divide; {{f 9/4}} = 9 &times; {{f 4/9}} = <b>4 batches</b>, with nothing left over.</p>{{/a}}</div>
   </div>
 
   <div class="box tint">

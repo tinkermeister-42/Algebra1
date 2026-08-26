@@ -20,8 +20,8 @@ slug: Adding_and_Subtracting_Fractions
     <div class="q">1. Monique ate <b>1 slice of pepperoni</b> and <b>2 slices of cheese</b>.
       Both pizzas were cut into <b>8 equal slices</b>. How much pizza did she eat?</div>
     <div class="work h1">
-      <p class="ans">Answer: <span class="b"></span> &nbsp;&nbsp;
-        How did you know? <span class="b l"></span></p>
+      <p class="ans">Answer: <span class="b">{{a}}{{f 3/8}}{{/a}}</span> &nbsp;&nbsp;
+        How did you know? <span class="b l">{{a}}the slices are the same size, so just add the numerators{{/a}}</span></p>
     </div>
   </div>
 
@@ -29,18 +29,18 @@ slug: Adding_and_Subtracting_Fractions
     <div class="q">2. Jack ate <b>1 slice</b> of a pepperoni pizza cut into <b>3</b> pieces and
       <b>1 slice</b> of a cheese pizza cut into <b>4</b> pieces. How much pizza did he eat?</div>
     <div class="work h1">
-      <p class="ans">Answer: <span class="b"></span> &nbsp;&nbsp;
-        Why is this one harder? <span class="b l"></span></p>
+      <p class="ans">Answer: <span class="b">{{a}}{{f 7/12}}{{/a}}</span> &nbsp;&nbsp;
+        Why is this one harder? <span class="b l">{{a}}the pieces are different sizes, so they must be rewritten first{{/a}}</span></p>
     </div>
   </div>
 
   <h2><span class="num">1.5.1</span>Like Denominators</h2>
 
   <div class="keys">
-    Same denominator means the pieces are the <span class="b m"></span>.
+    Same denominator means the pieces are the <span class="b m">{{a}}same size{{/a}}</span>.
     <ul style="margin-top:3px">
-      <li><span class="b m"></span> the denominator.</li>
-      <li>Add or subtract the <span class="b m"></span> only.</li>
+      <li><span class="b m">{{a}}Keep{{/a}}</span> the denominator.</li>
+      <li>Add or subtract the <span class="b m">{{a}}numerators{{/a}}</span> only.</li>
     </ul>
   </div>
 
@@ -54,21 +54,21 @@ slug: Adding_and_Subtracting_Fractions
       &nbsp;&nbsp;&nbsp;&nbsp; <b class="tag">EX 2.</b> {{f 11/12}} &minus; {{f 5/12}}
       &nbsp;&nbsp;&nbsp;&nbsp; <b class="tag">EX 3.</b> {{f 10/15}} &minus; {{f 4/15}}</div>
     <div class="work h13">
-      <div class="cols3"><div></div><div></div><div></div></div>
-      <p class="ans">Remember to <span class="b m"></span> your answer.</p>
+      <div class="cols3"><div>{{a}}<p>{{f 2/7}} + {{f 3/7}} = {{f 5/7}}</p>{{/a}}</div><div>{{a}}<p>{{f 11/12}} &minus; {{f 5/12}} = {{f 6/12}} = {{f 1/2}}</p>{{/a}}</div><div>{{a}}<p>{{f 10/15}} &minus; {{f 4/15}} = {{f 6/15}} = {{f 2/5}}</p>{{/a}}</div></div>
+      <p class="ans">Remember to <span class="b m">{{a}}simplify{{/a}}</span> your answer.</p>
     </div>
   </div>
 
   <h2><span class="num">1.5.2</span>Unlike Denominators</h2>
 
   <div class="keys">
-    Different denominators mean the pieces are <span class="b m"></span>, so we rewrite them first.
+    Different denominators mean the pieces are <span class="b m">{{a}}different sizes{{/a}}</span>, so we rewrite them first.
     <div style="margin-top:4px"><b>Finding a common denominator</b></div>
     <ul>
       <li><b>Method A</b> (quick): if one denominator divides into the other, use the
-          <span class="b m"></span> one.</li>
-      <li><b>Method B</b> (always works): list <span class="b m"></span> of each denominator
-          and take the <span class="b m"></span> one they share.</li>
+          <span class="b m">{{a}}larger{{/a}}</span> one.</li>
+      <li><b>Method B</b> (always works): list <span class="b m">{{a}}multiples{{/a}}</span> of each denominator
+          and take the <span class="b m">{{a}}smallest{{/a}}</span> one they share.</li>
     </ul>
   </div>
 
@@ -76,11 +76,11 @@ slug: Adding_and_Subtracting_Fractions
     <div class="q"><b class="tag">EX 4.</b> Find a common denominator for {{f 1/3}} and {{f 1/4}}
       by listing multiples.</div>
     <div class="work h1">
-      <p>Multiples of 3: <span class="b xl"></span></p>
-      <p>Multiples of 4: <span class="b xl"></span></p>
-      <p class="ans">Common denominator: <span class="b s"></span>
-        &nbsp;&nbsp; Each third becomes <span class="b s"></span> pieces;
-        each fourth becomes <span class="b s"></span> pieces.</p>
+      <p>Multiples of 3: <span class="b xl">{{a}}3, 6, 9, 12, 15, 18&hellip;{{/a}}</span></p>
+      <p>Multiples of 4: <span class="b xl">{{a}}4, 8, 12, 16, 20&hellip;{{/a}}</span></p>
+      <p class="ans">Common denominator: <span class="b s">{{a}}12{{/a}}</span>
+        &nbsp;&nbsp; Each third becomes <span class="b s">{{a}}4{{/a}}</span> pieces;
+        each fourth becomes <span class="b s">{{a}}3{{/a}}</span> pieces.</p>
     </div>
   </div>
 
@@ -88,31 +88,31 @@ slug: Adding_and_Subtracting_Fractions
     <div class="q"><b class="tag">EX 5.</b> {{f 1/3}} + {{f 1/4}}</div>
     <div class="work h13">
       <p>Rewrite: {{f 1/3}} = {{f ___/12}} &nbsp;&nbsp;&nbsp; {{f 1/4}} = {{f ___/12}}</p>
-      <p class="ans">Add: <span class="b"></span></p>
-    </div>
+      <p class="ans">Add: <span class="b">{{a}}{{f 7/12}}{{/a}}</span></p>
+    {{a}}<p>{{f 1/3}} = {{f 4/12}} &nbsp;&nbsp; {{f 1/4}} = {{f 3/12}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> {{f 7/8}} &minus; {{f 1/4}} &nbsp;&mdash;&nbsp;
       use the quick check.</div>
     <div class="work h1">
-      <p class="ans">Common denominator: <span class="b s"></span>
-        &nbsp;&nbsp; Answer: <span class="b"></span></p>
-    </div>
+      <p class="ans">Common denominator: <span class="b s">{{a}}8{{/a}}</span>
+        &nbsp;&nbsp; Answer: <span class="b">{{a}}{{f 5/8}}{{/a}}</span></p>
+    {{a}}<p>{{f 7/8}} &minus; {{f 2/8}} = {{f 5/8}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> {{f 2/3}} + {{f 1/6}}</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>{{f 4/6}} + {{f 1/6}} = {{f 5/6}}</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">1.5.3</span>Adding &amp; Subtracting Mixed Numbers</h2>
 
   <div class="keys">
     <ol>
-      <li>Convert each mixed number to an <span class="b m"></span>.</li>
-      <li>Get a <span class="b m"></span> denominator, then add or subtract.</li>
-      <li>Convert <span class="b m"></span> to a mixed number if you need to.</li>
+      <li>Convert each mixed number to an <span class="b m">{{a}}improper fraction{{/a}}</span>.</li>
+      <li>Get a <span class="b m">{{a}}common{{/a}}</span> denominator, then add or subtract.</li>
+      <li>Convert <span class="b m">{{a}}back{{/a}}</span> to a mixed number if you need to.</li>
     </ol>
   </div>
 
@@ -121,15 +121,15 @@ slug: Adding_and_Subtracting_Fractions
     <div class="work h16">
       <p>Convert: 2{{f 1/3}} = {{f ___/3}} &nbsp;&nbsp;&nbsp; 1{{f 5/6}} = {{f ___/6}}</p>
       <p>Match denominators: {{f ___/6}} + {{f ___/6}} = {{f ___/6}}</p>
-      <p class="ans">Back to a mixed number: <span class="b"></span></p>
-    </div>
+      <p class="ans">Back to a mixed number: <span class="b">{{a}}4{{f 1/6}}{{/a}}</span></p>
+    {{a}}<p>2{{f 1/3}} = {{f 7/3}} = {{f 14/6}} &nbsp;&nbsp; 1{{f 5/6}} = {{f 11/6}} &nbsp;&nbsp; {{f 14/6}} + {{f 11/6}} = {{f 25/6}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> 4{{f 1/2}} &minus; 2{{f 3/4}}</div>
     <div class="work h16">
-      <p class="ans">Answer: <span class="b"></span></p>
-    </div>
+      <p class="ans">Answer: <span class="b">{{a}}1{{f 3/4}}{{/a}}</span></p>
+    {{a}}<p>{{f 9/2}} &minus; {{f 11/4}} = {{f 18/4}} &minus; {{f 11/4}} = {{f 7/4}}</p>{{/a}}</div>
   </div>
 
 {{practice-head}}
@@ -140,17 +140,17 @@ slug: Adding_and_Subtracting_Fractions
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>1. &nbsp;{{f 3/8}} + {{f 1/8}}</p>
-        <p>2. &nbsp;{{f 5/6}} &minus; {{f 1/6}}</p>
-        <p>3. &nbsp;{{f 2/9}} + {{f 4/9}}</p>
-        <p>4. &nbsp;{{f 11/12}} &minus; {{f 7/12}}</p>
+        <p>1. &nbsp;{{f 3/8}} + {{f 1/8}}{{a}} &nbsp; = {{f 4/8}} = {{f 1/2}}{{/a}}</p>
+        <p>2. &nbsp;{{f 5/6}} &minus; {{f 1/6}}{{a}} &nbsp; = {{f 4/6}} = {{f 2/3}}{{/a}}</p>
+        <p>3. &nbsp;{{f 2/9}} + {{f 4/9}}{{a}} &nbsp; = {{f 6/9}} = {{f 2/3}}{{/a}}</p>
+        <p>4. &nbsp;{{f 11/12}} &minus; {{f 7/12}}{{a}} &nbsp; = {{f 4/12}} = {{f 1/3}}{{/a}}</p>
       </div>
       <div class="tallbox h16"></div>
       <div class="cols4">
-        <p>5. &nbsp;{{f 1/4}} + {{f 1/6}}</p>
-        <p>6. &nbsp;{{f 5/8}} &minus; {{f 1/4}}</p>
-        <p>7. &nbsp;{{f 3/5}} + {{f 7/10}}</p>
-        <p>8. &nbsp;{{f 9/10}} &minus; {{f 2/15}}</p>
+        <p>5. &nbsp;{{f 1/4}} + {{f 1/6}}{{a}} &nbsp; = {{f 3/12}} + {{f 2/12}} = {{f 5/12}}{{/a}}</p>
+        <p>6. &nbsp;{{f 5/8}} &minus; {{f 1/4}}{{a}} &nbsp; = {{f 5/8}} &minus; {{f 2/8}} = {{f 3/8}}{{/a}}</p>
+        <p>7. &nbsp;{{f 3/5}} + {{f 7/10}}{{a}} &nbsp; = {{f 13/10}} = 1{{f 3/10}}{{/a}}</p>
+        <p>8. &nbsp;{{f 9/10}} &minus; {{f 2/15}}{{a}} &nbsp; = {{f 27/30}} &minus; {{f 4/30}} = {{f 23/30}}{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -161,10 +161,10 @@ slug: Adding_and_Subtracting_Fractions
   <div class="ex">
     <div class="work">
       <div class="cols4">
-        <p>9. &nbsp;1{{f 1/2}} + 2{{f 1/4}}</p>
-        <p>10. &nbsp;4{{f 3/5}} &minus; 1{{f 2/5}}</p>
-        <p>11. &nbsp;3{{f 1/6}} + 2{{f 5/6}}</p>
-        <p>12. &nbsp;6{{f 1/4}} &minus; 3{{f 3/8}}</p>
+        <p>9. &nbsp;1{{f 1/2}} + 2{{f 1/4}}{{a}} &nbsp; = 3{{f 3/4}}{{/a}}</p>
+        <p>10. &nbsp;4{{f 3/5}} &minus; 1{{f 2/5}}{{a}} &nbsp; = 3{{f 1/5}}{{/a}}</p>
+        <p>11. &nbsp;3{{f 1/6}} + 2{{f 5/6}}{{a}} &nbsp; = 6{{/a}}</p>
+        <p>12. &nbsp;6{{f 1/4}} &minus; 3{{f 3/8}}{{a}} &nbsp; = {{f 23/8}} = 2{{f 7/8}}{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -175,19 +175,19 @@ slug: Adding_and_Subtracting_Fractions
   <div class="ex">
     <div class="q">13. You drink {{f 3/4}} of a liter of water in the morning and {{f 1/8}} of a
       liter in the afternoon. How much did you drink in all?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}{{f 7/8}} of a liter{{/a}}</span></p></div>
   </div>
 
   <div class="ex">
     <div class="q">14. A rope is 5{{f 1/2}} meters long. If 2{{f 3/4}} meters are cut off,
       how much remains?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}2{{f 3/4}} meters{{/a}}</span></p></div>
   </div>
 
   <div class="ex">
     <div class="q">15. A recipe needs {{f 2/3}} cup of sugar. You already added {{f 1/4}} cup.
       How much more do you need?</div>
-    <div class="work h1"><p class="ans">Answer: <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans">Answer: <span class="b">{{a}}{{f 5/12}} cup{{/a}}</span></p></div>
   </div>
 
   <h3>Challenge</h3>
@@ -195,13 +195,13 @@ slug: Adding_and_Subtracting_Fractions
   <div class="ex">
     <div class="q">16. Two fractions add to exactly 1. One of them is {{f 3/8}}.
       What is the other?</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>1 &minus; {{f 3/8}} = {{f 8/8}} &minus; {{f 3/8}} = {{f 5/8}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">17. A runner goes 4{{f 2/3}} miles Monday and 3{{f 5/6}} miles Tuesday.
       How far in total?</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>{{f 14/3}} + {{f 23/6}} = {{f 28/6}} + {{f 23/6}} = {{f 51/6}} = 8{{f 1/2}} miles</p>{{/a}}</div>
   </div>
 
   <div class="box tint">
