@@ -63,6 +63,11 @@ after editing and the student file should come back byte-identical.
 
 Keys are named `<lesson>_<Slug>_KEY.html` alongside the student handout.
 
+They are published with the site but nothing links to them, so students browsing
+the guided notes page will not see them. To open one, take the handout's URL and
+add `_KEY` before the `.html` — for example
+`/guided_notes/Unit_3/3.2_Solving_Two-Step_Equations_KEY.html`.
+
 ## Conventions
 
 - **Self-contained** — no JavaScript and no CDN. Math is plain HTML/CSS, so a handout
