@@ -21,6 +21,8 @@ guided_notes/
   src/<lesson>.html      # what you edit — one body fragment per lesson
   assets/                # shared stylesheet + SVG figures
   Unit_<n>/              # generated handouts (committed; do not hand-edit)
+                         #   <lesson>_<Slug>.html      student handout
+                         #   <lesson>_<Slug>_KEY.html  teacher key
 ```
 
 ## Editing a handout
@@ -28,8 +30,9 @@ guided_notes/
 Edit the fragment in `src/`, then rebuild:
 
 ```bash
-python3 scripts/build-guided-notes.py          # all lessons
-python3 scripts/build-guided-notes.py 3.4 3.5  # just these
+python3 scripts/build-guided-notes.py            # all lessons
+python3 scripts/build-guided-notes.py 3.4 3.5    # just these
+python3 scripts/build-guided-notes.py --keys-only  # skip the student handouts
 ```
 
 The builder wraps each fragment in the shared page shell (head, masthead, name/date line)
@@ -37,6 +40,28 @@ using the metadata comment at the top of the fragment.
 
 To change the shared figures — number lines, coordinate grids, factor trees — edit
 `scripts/make-guided-notes-assets.py` and run it.
+
+## Teacher keys
+
+Answers live in the same fragment as the questions, wrapped in `{{a}}`&hellip;`{{/a}}`.
+The student handout drops them; the teacher key renders them in red.
+
+```html
+<p>Let <var>h</var> = <span class="b m">{{a}}the number of hours{{/a}}</span></p>
+<div class="work h13">{{a}}<p>3<var>x</var> = 9 &nbsp;&rarr;&nbsp; <var>x</var> = 3</p>{{/a}}</div>
+```
+
+Put the answer wherever it belongs: inside a `.b` blank so it sits on the line, inside
+a `.work` area, or inside the empty `<td>`s of a `table.steps`. An answer holding block
+markup (a `<p>`, a `<table>`) is wrapped in a `<div>`, otherwise a `<span>` — so it stays
+valid either way.
+
+A key is written only for lessons whose fragment has at least one answer in it; the
+builder lists the lessons still without any. Since a stripped answer takes its whole line
+with it when it stands alone, adding answers never changes the student handout — rebuild
+after editing and the student file should come back byte-identical.
+
+Keys are named `<lesson>_<Slug>_KEY.html` alongside the student handout.
 
 ## Conventions
 

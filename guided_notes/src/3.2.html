@@ -17,15 +17,18 @@ slug: Solving_Two-Step_Equations
   <div class="cols3">
     <div>
       <p>1. Solve 5<var>x</var> = 15 and check.</p>
+      {{a}}<p><var>x</var> = 3 &nbsp;&nbsp; check: 5(3) = 15 &#10003;</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. Solve <var>x</var> &minus; 3 = 10 and check.</p>
+      {{a}}<p><var>x</var> = 13 &nbsp;&nbsp; check: 13 &minus; 3 = 10 &#10003;</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. A carnival charges $5 entry plus $2 per ride. Alice paid $35. Write an equation
         for the number of rides.</p>
+      {{a}}<p>2<var>r</var> + 5 = 35, so <var>r</var> = 15 rides</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -35,11 +38,11 @@ slug: Solving_Two-Step_Equations
   <div class="keys">
     Two operations means one new decision: <b>which one do I undo first?</b>
     <div style="margin-top:3px">To <b>simplify</b> an expression you follow
-      <span class="b m"></span>. To <b>solve</b> an equation you go the
-      <span class="b m"></span> direction.</div>
-    <div style="margin-top:3px">So undo <span class="b m"></span> and
-      <span class="b m"></span> first, then <span class="b m"></span> and
-      <span class="b m"></span>.</div>
+      <span class="b m">{{a}}the order of operations{{/a}}</span>. To <b>solve</b> an equation you go the
+      <span class="b m">{{a}}opposite{{/a}}</span> direction.</div>
+    <div style="margin-top:3px">So undo <span class="b m">{{a}}addition{{/a}}</span> and
+      <span class="b m">{{a}}subtraction{{/a}}</span> first, then <span class="b m">{{a}}multiplication{{/a}}</span> and
+      <span class="b m">{{a}}division{{/a}}</span>.</div>
   </div>
 
   <div class="ex">
@@ -49,16 +52,16 @@ slug: Solving_Two-Step_Equations
       <table class="steps">
         <tr><th>Step</th><th class="why">What I did to both sides</th></tr>
         <tr><td>2<var>a</var> + 1 = 7</td><td class="why">the equation</td></tr>
-        <tr><td></td><td class="why"></td></tr>
-        <tr><td></td><td class="why"></td></tr>
-        <tr><td></td><td class="why"></td></tr>
+        <tr><td>{{a}}2<var>a</var> + 1 &minus; 1 = 7 &minus; 1{{/a}}</td><td class="why">{{a}}subtract 1 from both sides{{/a}}</td></tr>
+        <tr><td>{{a}}2<var>a</var> = 6{{/a}}</td><td class="why">{{a}}simplify{{/a}}</td></tr>
+        <tr><td>{{a}}<var>a</var> = 3{{/a}}</td><td class="why">{{a}}divide both sides by 2{{/a}}</td></tr>
       </table>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> Solve 3<var>x</var> &minus; 2 = 7.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>3<var>x</var> &minus; 2 + 2 = 7 + 2 &nbsp;&rarr;&nbsp; 3<var>x</var> = 9</p><p>3<var>x</var> &divide; 3 = 9 &divide; 3 &nbsp;&rarr;&nbsp; <var>x</var> = 3</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -66,31 +69,31 @@ slug: Solving_Two-Step_Equations
     <div class="work">
       <table class="steps">
         <tr><td>{{f <var>x</var>/8}} &minus; 3 = 7</td><td class="why">the equation</td></tr>
-        <tr><td></td><td class="why"></td></tr>
-        <tr><td></td><td class="why"></td></tr>
+        <tr><td>{{a}}{{f <var>x</var>/8}} = 10{{/a}}</td><td class="why">{{a}}add 3 to both sides{{/a}}</td></tr>
+        <tr><td>{{a}}<var>x</var> = 80{{/a}}</td><td class="why">{{a}}multiply both sides by 8{{/a}}</td></tr>
       </table>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Solve {{f <var>x</var>/2}} + 6 = 10.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>{{f <var>x</var>/2}} + 6 &minus; 6 = 10 &minus; 6 &nbsp;&rarr;&nbsp; {{f <var>x</var>/2}} = 4</p><p>{{f <var>x</var>/2}} &times; 2 = 4 &times; 2 &nbsp;&rarr;&nbsp; <var>x</var> = 8</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Solve &minus;<var>x</var> + 5 = 3.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>&minus;<var>x</var> + 5 &minus; 5 = 3 &minus; 5 &nbsp;&rarr;&nbsp; &minus;<var>x</var> = &minus;2</p><p>The coefficient is &minus;1, so divide both sides by &minus;1:</p><p>&minus;<var>x</var> &divide; (&minus;1) = &minus;2 &divide; (&minus;1) &nbsp;&rarr;&nbsp; <var>x</var> = 2</p>{{/a}}</div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Remember &mdash; do not forget the &minus;1</div>
-    A variable with no number in front has a coefficient of <span class="b s"></span>.
-    A variable with only a minus sign has a coefficient of <span class="b s"></span>.
+    A variable with no number in front has a coefficient of <span class="b s">{{a}}1{{/a}}</span>.
+    A variable with only a minus sign has a coefficient of <span class="b s">{{a}}&minus;1{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> Solve 3 &minus; <var>x</var> = 7.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>3 &minus; 3 &minus; <var>x</var> = 7 &minus; 3 &nbsp;&rarr;&nbsp; &minus;<var>x</var> = 4</p><p>&minus;<var>x</var> &divide; (&minus;1) = 4 &divide; (&minus;1) &nbsp;&rarr;&nbsp; <var>x</var> = &minus;4</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">3.2.2</span>Word Problems with Two-Step Equations</h2>
@@ -99,9 +102,9 @@ slug: Solving_Two-Step_Equations
     <div class="q"><b class="tag">EX 7. Babysitting.</b> A sitter charges $10 for travel plus
       $8 per hour. The total was $42. How many hours?</div>
     <div class="work h2">
-      <p>Let <var>h</var> = <span class="b m"></span> &nbsp;&nbsp;
-        Equation: <span class="b m"></span></p>
-      <p class="ans">Answer: <span class="b"></span></p>
+      <p>Let <var>h</var> = <span class="b m">{{a}}the number of hours{{/a}}</span> &nbsp;&nbsp;
+        Equation: <span class="b m">{{a}}8<var>h</var> + 10 = 42{{/a}}</span></p>
+      <p class="ans">Answer: <span class="b">{{a}}4 hours{{/a}}</span></p>
     </div>
   </div>
 
@@ -109,9 +112,9 @@ slug: Solving_Two-Step_Equations
     <div class="q"><b class="tag">EX 8. Phone plan.</b> $25 per month plus $0.05 per text.
       The bill was $32. How many texts?</div>
     <div class="work h2">
-      <p>Let <var>t</var> = <span class="b m"></span> &nbsp;&nbsp;
-        Equation: <span class="b m"></span></p>
-      <p class="ans">Answer: <span class="b"></span></p>
+      <p>Let <var>t</var> = <span class="b m">{{a}}the number of texts{{/a}}</span> &nbsp;&nbsp;
+        Equation: <span class="b m">{{a}}0.05<var>t</var> + 25 = 32{{/a}}</span></p>
+      <p class="ans">Answer: <span class="b">{{a}}140 texts{{/a}}</span></p>
     </div>
   </div>
 
@@ -119,17 +122,17 @@ slug: Solving_Two-Step_Equations
     <div class="q"><b class="tag">EX 9. Geometry.</b> A rectangle has perimeter 28 cm.
       Its length is 2 more than twice its width. Find the width.</div>
     <div class="work h25">
-      <p>Let <var>W</var> = width, so <var>L</var> = <span class="b m"></span></p>
-      <p>Perimeter formula: <span class="b m"></span></p>
-      <p>Substitute and simplify: <span class="b l"></span></p>
-      <p class="ans">Answer: <span class="b"></span></p>
+      <p>Let <var>W</var> = width, so <var>L</var> = <span class="b m">{{a}}2<var>W</var> + 2{{/a}}</span></p>
+      <p>Perimeter formula: <span class="b m">{{a}}<var>P</var> = 2<var>L</var> + 2<var>W</var>{{/a}}</span></p>
+      <p>Substitute and simplify: <span class="b l">{{a}}2(2<var>W</var> + 2) + 2<var>W</var> = 28 &nbsp;&rarr;&nbsp; 6<var>W</var> + 4 = 28{{/a}}</span></p>
+      <p class="ans">Answer: <span class="b">{{a}}<var>W</var> = 4 cm{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10. Gym membership.</b> $20 to join plus $15 per class.
       Your total was $65. How many classes?</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>Let <var>c</var> = the number of classes: 15<var>c</var> + 20 = 65</p><p>15<var>c</var> = 45 &nbsp;&rarr;&nbsp; <var>c</var> = 3 classes</p>{{/a}}</div>
   </div>
 
 {{practice-head}}
@@ -140,21 +143,21 @@ slug: Solving_Two-Step_Equations
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>1. &nbsp;4<var>x</var> + 3 = 19</p>
-        <p>2. &nbsp;5<var>x</var> &minus; 12 = 8</p>
-        <p>3. &nbsp;2<var>y</var> + 7 = &minus;9</p>
-        <p>4. &nbsp;&minus;3<var>z</var> + 10 = 1</p>
-        <p>5. &nbsp;{{f <var>x</var>/4}} + 6 = 1</p>
-        <p>6. &nbsp;{{f <var>w</var>/5}} &minus; 3 = 9</p>
+        <p>1. &nbsp;4<var>x</var> + 3 = 19{{a}} &nbsp; <var>x</var> = 4{{/a}}</p>
+        <p>2. &nbsp;5<var>x</var> &minus; 12 = 8{{a}} &nbsp; <var>x</var> = 4{{/a}}</p>
+        <p>3. &nbsp;2<var>y</var> + 7 = &minus;9{{a}} &nbsp; <var>y</var> = &minus;8{{/a}}</p>
+        <p>4. &nbsp;&minus;3<var>z</var> + 10 = 1{{a}} &nbsp; <var>z</var> = 3{{/a}}</p>
+        <p>5. &nbsp;{{f <var>x</var>/4}} + 6 = 1{{a}} &nbsp; <var>x</var> = &minus;20{{/a}}</p>
+        <p>6. &nbsp;{{f <var>w</var>/5}} &minus; 3 = 9{{a}} &nbsp; <var>w</var> = 60{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>7. &nbsp;{{f <var>x</var> &minus; 5/3}} = 4</p>
-        <p>8. &nbsp;{{f 2<var>x</var> + 1/5}} = 7</p>
-        <p>9. &nbsp;0.5<var>t</var> &minus; 1.2 = 3.8</p>
-        <p>10. &nbsp;&minus;0.4<var>p</var> + 2.6 = 0.6</p>
-        <p>11. &nbsp;{{f 3/4}}<var>m</var> + 2 = 11</p>
-        <p>12. &nbsp;{{f 2/3}}<var>k</var> &minus; 5 = &minus;1</p>
+        <p>7. &nbsp;{{f <var>x</var> &minus; 5/3}} = 4{{a}} &nbsp; <var>x</var> = 17{{/a}}</p>
+        <p>8. &nbsp;{{f 2<var>x</var> + 1/5}} = 7{{a}} &nbsp; <var>x</var> = 17{{/a}}</p>
+        <p>9. &nbsp;0.5<var>t</var> &minus; 1.2 = 3.8{{a}} &nbsp; <var>t</var> = 10{{/a}}</p>
+        <p>10. &nbsp;&minus;0.4<var>p</var> + 2.6 = 0.6{{a}} &nbsp; <var>p</var> = 5{{/a}}</p>
+        <p>11. &nbsp;{{f 3/4}}<var>m</var> + 2 = 11{{a}} &nbsp; <var>m</var> = 12{{/a}}</p>
+        <p>12. &nbsp;{{f 2/3}}<var>k</var> &minus; 5 = &minus;1{{a}} &nbsp; <var>k</var> = 6{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -165,12 +168,12 @@ slug: Solving_Two-Step_Equations
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>13. &nbsp;{{f <var>x</var> + 7/&minus;2}} = 9</p>
-        <p>14. &nbsp;{{f <var>x</var> &minus; 4/6}} = &minus;2</p>
-        <p>15. &nbsp;&minus;5<var>x</var> &minus; 4 = 36</p>
-        <p>16. &nbsp;{{f <var>x</var>/3}} + {{f 1/2}} = {{f 5/2}}</p>
-        <p>17. &nbsp;{{f 5/6}}<var>a</var> &minus; {{f 1/3}} = {{f 1/3}}</p>
-        <p>18. &nbsp;{{f <var>x</var> &minus; 3/4}} = 2.5</p>
+        <p>13. &nbsp;{{f <var>x</var> + 7/&minus;2}} = 9{{a}} &nbsp; <var>x</var> = &minus;25{{/a}}</p>
+        <p>14. &nbsp;{{f <var>x</var> &minus; 4/6}} = &minus;2{{a}} &nbsp; <var>x</var> = &minus;8{{/a}}</p>
+        <p>15. &nbsp;&minus;5<var>x</var> &minus; 4 = 36{{a}} &nbsp; <var>x</var> = &minus;8{{/a}}</p>
+        <p>16. &nbsp;{{f <var>x</var>/3}} + {{f 1/2}} = {{f 5/2}}{{a}} &nbsp; <var>x</var> = 6{{/a}}</p>
+        <p>17. &nbsp;{{f 5/6}}<var>a</var> &minus; {{f 1/3}} = {{f 1/3}}{{a}} &nbsp; <var>a</var> = {{f 4/5}}{{/a}}</p>
+        <p>18. &nbsp;{{f <var>x</var> &minus; 3/4}} = 2.5{{a}} &nbsp; <var>x</var> = 13{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -181,19 +184,19 @@ slug: Solving_Two-Step_Equations
   <div class="ex">
     <div class="q">19. A taxi charges $1.20 to start plus $0.50 per mile. Your bill was $6.20.
       How many miles?</div>
-    <div class="work h16"><p>Equation: <span class="b m"></span></p></div>
+    <div class="work h16"><p>Equation: <span class="b m">{{a}}0.5<var>m</var> + 1.2 = 6.2{{/a}}</span></p>{{a}}<p>0.5<var>m</var> = 5 &nbsp;&rarr;&nbsp; <var>m</var> = 10 miles</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">20. A theater charges $9 for admission and $4 per popcorn. Your total was $25.
       How many popcorns?</div>
-    <div class="work h16"><p>Equation: <span class="b m"></span></p></div>
+    <div class="work h16"><p>Equation: <span class="b m">{{a}}4<var>p</var> + 9 = 25{{/a}}</span></p>{{a}}<p>4<var>p</var> = 16 &nbsp;&rarr;&nbsp; <var>p</var> = 4 popcorns</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">21. Celsius is <var>C</var> = {{f 5/9}}(<var>F</var> &minus; 32).
       If <var>C</var> = 30, what is <var>F</var>?</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>30 = {{f 5/9}}(<var>F</var> &minus; 32)</p><p>30 &times; {{f 9/5}} = <var>F</var> &minus; 32 &nbsp;&rarr;&nbsp; 54 = <var>F</var> &minus; 32</p><p><var>F</var> = 86&deg;F</p>{{/a}}</div>
   </div>
 
   <h3>Challenge</h3>
@@ -201,13 +204,13 @@ slug: Solving_Two-Step_Equations
   <div class="ex">
     <div class="q">22. Solve {{f 3<var>x</var>/2}} &minus; 2<var>y</var> =
       {{f 2<var>y</var>/3}} for <var>x</var>. Check your answer.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p>{{f 3<var>x</var>/2}} = {{f 2<var>y</var>/3}} + 2<var>y</var> = {{f 8<var>y</var>/3}}</p><p>Multiply both sides by {{f 2/3}}: &nbsp; <var>x</var> = {{f 16<var>y</var>/9}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">23. Solve {{f 3<var>x</var>/2}} &minus; 2<var>y</var> =
       {{f 2<var>y</var>/3}} for <var>y</var>. Check your answer.</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p>{{f 3<var>x</var>/2}} = {{f 2<var>y</var>/3}} + 2<var>y</var> = {{f 8<var>y</var>/3}}</p><p>Multiply both sides by 3: &nbsp; {{f 9<var>x</var>/2}} = 8<var>y</var> &nbsp;&rarr;&nbsp; <var>y</var> = {{f 9<var>x</var>/16}}</p>{{/a}}</div>
   </div>
 
   <div class="box tint">

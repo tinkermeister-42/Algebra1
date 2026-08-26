@@ -45,6 +45,8 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Shared styles/figures in `guided_notes/assets/`; regenerate figures with
   `python3 scripts/make-guided-notes-assets.py`
 - Self-contained: no JS, no CDN, math is HTML/CSS. Figures are `<img>` so they print.
+- **Teacher keys:** answers go in the same fragment wrapped in `{{a}}`…`{{/a}}`;
+  builder emits `#.#_Slug_KEY.html` with the answers in red (`.ans-key`)
 - Each lesson `.qmd` links to its handout via a `.guided-notes-link` div above `{{< warmup >}}`
 - See `guided_notes/README.md` for the shorthand tokens and building blocks
 
