@@ -21,9 +21,10 @@ slug: Writing_Linear_Equations
         <div>
           <p>1. Line A goes through (0, 2) and (3, 5). Line B goes through (0, 2) and (3, 4).
             Which is steeper, and how can you tell <i>without graphing</i>?</p>
+          {{a}}<p>Line A: <var>m</var> = 1. Line B: <var>m</var> = {{f 2/3}}. A is steeper &mdash; compare the slopes, no graph needed.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
           <p>3. In <var>y</var> = 2<var>x</var> + 1, what does the 2 mean?
-            <span class="b m"></span> What does the 1 mean? <span class="b m"></span></p>
+            <span class="b m">{{a}}the slope &mdash; up 2 for every 1 across{{/a}}</span> What does the 1 mean? <span class="b m">{{a}}the <var>y</var>-intercept &mdash; the starting value{{/a}}</span></p>
         </div>
         <div>
           <p>2. Graph <var>y</var> = {{f 2/3}}<var>x</var> + 3.</p>
@@ -44,9 +45,9 @@ slug: Writing_Linear_Equations
     <div class="q"><b class="tag">EX 1.</b> Write the equation for each.</div>
     <div class="work">
       <div class="cols3">
-        <p><var>m</var> = 4, <var>b</var> = &minus;2 &nbsp;&rarr;&nbsp; <span class="b m"></span></p>
-        <p><var>m</var> = &minus;{{f 3/4}}, <var>b</var> = 5 &nbsp;&rarr;&nbsp; <span class="b m"></span></p>
-        <p><var>m</var> = 2, <var>b</var> = 7 &nbsp;&rarr;&nbsp; <span class="b m"></span></p>
+        <p><var>m</var> = 4, <var>b</var> = &minus;2 &nbsp;&rarr;&nbsp; <span class="b m">{{a}}<var>y</var> = 4<var>x</var> &minus; 2{{/a}}</span></p>
+        <p><var>m</var> = &minus;{{f 3/4}}, <var>b</var> = 5 &nbsp;&rarr;&nbsp; <span class="b m">{{a}}<var>y</var> = &minus;{{f 3/4}}<var>x</var> + 5{{/a}}</span></p>
+        <p><var>m</var> = 2, <var>b</var> = 7 &nbsp;&rarr;&nbsp; <span class="b m">{{a}}<var>y</var> = 2<var>x</var> + 7{{/a}}</span></p>
       </div>
     </div>
   </div>
@@ -57,10 +58,10 @@ slug: Writing_Linear_Equations
     <div class="lbl">Steps</div>
     <ol>
       <li>Find where the line crosses the <var>y</var>-axis &mdash; that is
-        <span class="b s"></span>.</li>
+        <span class="b s">{{a}}<var>b</var>{{/a}}</span>.</li>
       <li>Pick two clear points and count rise over run to get
-        <span class="b s"></span>.</li>
-      <li>Substitute both into <span class="b m"></span>.</li>
+        <span class="b s">{{a}}<var>m</var>{{/a}}</span>.</li>
+      <li>Substitute both into <span class="b m">{{a}}<var>y</var> = <var>mx</var> + <var>b</var>{{/a}}</span>.</li>
     </ol>
   </div>
 
@@ -70,9 +71,9 @@ slug: Writing_Linear_Equations
     <div class="work">
       <div class="cols2">
         <div>
-          <p><var>b</var> = <span class="b s"></span> &nbsp;&nbsp;
-            <var>m</var> = <span class="b s"></span></p>
-          <p class="ans">Equation: <span class="b m"></span></p>
+          <p><var>b</var> = <span class="b s">{{a}}1{{/a}}</span> &nbsp;&nbsp;
+            <var>m</var> = <span class="b s">{{a}}2{{/a}}</span></p>
+          <p class="ans">Equation: <span class="b m">{{a}}<var>y</var> = 2<var>x</var> + 1{{/a}}</span></p>
         </div>
         <div>{{grid}}</div>
       </div>
@@ -84,7 +85,7 @@ slug: Writing_Linear_Equations
       slope &minus;{{f 1/2}}. Graph it and write its equation.</div>
     <div class="work">
       <div class="cols2">
-        <div><p class="ans">Equation: <span class="b m"></span></p></div>
+        <div><p class="ans">Equation: <span class="b m">{{a}}<var>y</var> = &minus;{{f 1/2}}<var>x</var> &minus; 3{{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -96,8 +97,8 @@ slug: Writing_Linear_Equations
     <div class="lbl">Steps</div>
     <ol>
       <li>Start with <var>y</var> = <var>mx</var> + <var>b</var>.</li>
-      <li>Substitute the slope and the <span class="b m"></span> of the point.</li>
-      <li>Solve for <span class="b s"></span>.</li>
+      <li>Substitute the slope and the <span class="b m">{{a}}<var>x</var> and <var>y</var>{{/a}}</span> of the point.</li>
+      <li>Solve for <span class="b s">{{a}}<var>b</var>{{/a}}</span>.</li>
       <li>Write the final equation.</li>
     </ol>
   </div>
@@ -105,20 +106,20 @@ slug: Writing_Linear_Equations
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Slope <var>m</var> = 3 through (2, 5).</div>
     <div class="work h16">
-      <p>Substitute: <span class="b l"></span></p>
-      <p class="ans"><var>b</var> = <span class="b s"></span> &nbsp;&nbsp;
-        Equation: <span class="b m"></span></p>
+      <p>Substitute: <span class="b l">{{a}}5 = 3(2) + <var>b</var>{{/a}}</span></p>
+      <p class="ans"><var>b</var> = <span class="b s">{{a}}&minus;1{{/a}}</span> &nbsp;&nbsp;
+        Equation: <span class="b m">{{a}}<var>y</var> = 3<var>x</var> &minus; 1{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Slope <var>m</var> = &minus;2 through (1, 4).</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>4 = &minus;2(1) + <var>b</var> &nbsp;&rarr;&nbsp; <var>b</var> = 6</p><p><var>y</var> = &minus;2<var>x</var> + 6</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> Slope <var>m</var> = {{f 1/2}} through (4, 3).</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>3 = {{f 1/2}}(4) + <var>b</var> = 2 + <var>b</var> &nbsp;&rarr;&nbsp; <var>b</var> = 1</p><p><var>y</var> = {{f 1/2}}<var>x</var> + 1</p>{{/a}}</div>
   </div>
 
   <div class="box warn">
@@ -126,6 +127,7 @@ slug: Writing_Linear_Equations
     <p style="text-align:center;font-size:13pt;margin:4px 0"><var>y</var> &minus;
       <var>y</var><sub>1</sub> = <var>m</var>(<var>x</var> &minus; <var>x</var><sub>1</sub>)</p>
     Redo EX 5 with point-slope form, then rewrite it in slope-intercept form:
+    {{a}}<p><var>y</var> &minus; 4 = &minus;2(<var>x</var> &minus; 1) &nbsp;&rarr;&nbsp; <var>y</var> &minus; 4 = &minus;2<var>x</var> + 2 &nbsp;&rarr;&nbsp; <var>y</var> = &minus;2<var>x</var> + 6 &mdash; same answer.</p>{{/a}}
     <div class="ruled"></div><div class="ruled"></div>
   </div>
 
@@ -136,8 +138,8 @@ slug: Writing_Linear_Equations
     <ol>
       <li>Label the points (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) and
         (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>).</li>
-      <li>Find the slope: <var>m</var> = <span class="b m"></span></li>
-      <li>Substitute <span class="b m"></span> of the points into
+      <li>Find the slope: <var>m</var> = <span class="b m">{{a}}{{f <var>y</var><sub>2</sub> &minus; <var>y</var><sub>1</sub>/<var>x</var><sub>2</sub> &minus; <var>x</var><sub>1</sub>}}{{/a}}</span></li>
+      <li>Substitute <span class="b m">{{a}}either one{{/a}}</span> of the points into
         <var>y</var> = <var>mx</var> + <var>b</var>.</li>
       <li>Solve for <var>b</var> and write the equation.</li>
     </ol>
@@ -146,31 +148,31 @@ slug: Writing_Linear_Equations
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> Through (1, 2) and (4, 5).</div>
     <div class="work h16">
-      <p><var>m</var> = <span class="b s"></span></p>
-      <p class="ans"><var>b</var> = <span class="b s"></span> &nbsp;&nbsp;
-        Equation: <span class="b m"></span></p>
+      <p><var>m</var> = <span class="b s">{{a}}1{{/a}}</span></p>
+      <p class="ans"><var>b</var> = <span class="b s">{{a}}1{{/a}}</span> &nbsp;&nbsp;
+        Equation: <span class="b m">{{a}}<var>y</var> = <var>x</var> + 1{{/a}}</span></p>
       <p class="ans">Check: does the <i>other</i> point fit your equation?
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}yes &mdash; 5 = 4 + 1 &#10003;{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> Through (&minus;2, 3) and (2, &minus;1).</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p><var>m</var> = {{f &minus;1 &minus; 3/2 &minus; (&minus;2)}} = &minus;1</p><p>3 = &minus;1(&minus;2) + <var>b</var> &nbsp;&rarr;&nbsp; <var>b</var> = 1, so <var>y</var> = &minus;<var>x</var> + 1</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> Through (0, &minus;2) and (3, 4).</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p><var>m</var> = {{f 4 &minus; (&minus;2)/3 &minus; 0}} = 2, and <var>b</var> = &minus;2 (the point is already on the <var>y</var>-axis)</p><p><var>y</var> = 2<var>x</var> &minus; 2</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">4.4.5</span>Parallel and Perpendicular Lines</h2>
 
   <div class="keys">
     <div class="cols2">
-      <p><b>Parallel</b> lines have <span class="b m"></span> slopes.</p>
-      <p><b>Perpendicular</b> lines have <span class="b m"></span> slopes:
-        <var>m</var><sub>&perp;</sub> = <span class="b m"></span></p>
+      <p><b>Parallel</b> lines have <span class="b m">{{a}}equal{{/a}}</span> slopes.</p>
+      <p><b>Perpendicular</b> lines have <span class="b m">{{a}}opposite reciprocal{{/a}}</span> slopes:
+        <var>m</var><sub>&perp;</sub> = <span class="b m">{{a}}&minus;{{f 1/<var>m</var>}}{{/a}}</span></p>
     </div>
   </div>
 
@@ -180,8 +182,8 @@ slug: Writing_Linear_Equations
     <div class="work">
       <div class="cols2">
         <div>
-          <p>New slope: <span class="b s"></span></p>
-          <p class="ans">Equation: <span class="b m"></span></p>
+          <p>New slope: <span class="b s">{{a}}3{{/a}}</span></p>
+          <p class="ans">Equation: <span class="b m">{{a}}<var>y</var> = 3<var>x</var> &minus; 5{{/a}}</span></p>
         </div>
         <div>{{grid}}</div>
       </div>
@@ -194,8 +196,8 @@ slug: Writing_Linear_Equations
     <div class="work">
       <div class="cols2">
         <div>
-          <p>New slope: <span class="b s"></span></p>
-          <p class="ans">Equation: <span class="b m"></span></p>
+          <p>New slope: <span class="b s">{{a}}2{{/a}}</span></p>
+          <p class="ans">Equation: <span class="b m">{{a}}<var>y</var> = 2<var>x</var> &minus; 6{{/a}}</span></p>
         </div>
         <div>{{grid}}</div>
       </div>
@@ -207,7 +209,7 @@ slug: Writing_Linear_Equations
       <var>y</var> = &minus;2<var>x</var> + 5 through (0, &minus;3). &nbsp;&nbsp;
       (b) Perpendicular to <var>y</var> = {{f 1/3}}<var>x</var> &minus; 1 through (3, 4).</div>
     <div class="work h2">
-      <div class="cols2"><div></div><div></div></div>
+      <div class="cols2"><div>{{a}}<p>(a) <var>m</var> = &minus;2 and the point is the intercept, so <var>y</var> = &minus;2<var>x</var> &minus; 3</p>{{/a}}</div><div>{{a}}<p>(b) <var>m</var> = &minus;3; 4 = &minus;3(3) + <var>b</var> &rarr; <var>b</var> = 13, so <var>y</var> = &minus;3<var>x</var> + 13</p>{{/a}}</div></div>
     </div>
   </div>
 
@@ -219,11 +221,11 @@ slug: Writing_Linear_Equations
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>1. &nbsp;<var>m</var> = 3, <var>b</var> = &minus;1 &nbsp;<span class="b m"></span></p>
-        <p>2. &nbsp;<var>m</var> = &minus;2, <var>b</var> = 4 &nbsp;<span class="b m"></span></p>
-        <p>3. &nbsp;<var>m</var> = {{f 1/2}}, <var>b</var> = 0 &nbsp;<span class="b m"></span></p>
-        <p>4. &nbsp;<var>m</var> = &minus;{{f 3/4}}, <var>b</var> = 5 &nbsp;<span class="b m"></span></p>
-        <p>5. &nbsp;<var>m</var> = 0, <var>b</var> = &minus;6 &nbsp;<span class="b m"></span></p>
+        <p>1. &nbsp;<var>m</var> = 3, <var>b</var> = &minus;1 &nbsp;<span class="b m">{{a}}<var>y</var> = 3<var>x</var> &minus; 1{{/a}}</span></p>
+        <p>2. &nbsp;<var>m</var> = &minus;2, <var>b</var> = 4 &nbsp;<span class="b m">{{a}}<var>y</var> = &minus;2<var>x</var> + 4{{/a}}</span></p>
+        <p>3. &nbsp;<var>m</var> = {{f 1/2}}, <var>b</var> = 0 &nbsp;<span class="b m">{{a}}<var>y</var> = {{f 1/2}}<var>x</var>{{/a}}</span></p>
+        <p>4. &nbsp;<var>m</var> = &minus;{{f 3/4}}, <var>b</var> = 5 &nbsp;<span class="b m">{{a}}<var>y</var> = &minus;{{f 3/4}}<var>x</var> + 5{{/a}}</span></p>
+        <p>5. &nbsp;<var>m</var> = 0, <var>b</var> = &minus;6 &nbsp;<span class="b m">{{a}}<var>y</var> = &minus;6{{/a}}</span></p>
       </div>
     </div>
   </div>
@@ -236,21 +238,21 @@ slug: Writing_Linear_Equations
       <div class="cols3">
         <div><p style="margin-bottom:0">6.</p>
           <img class="fig" src="../../images/Unit_4/Lesson_4/Question6.png" alt="graphed line 6">
-          <p><span class="b xl"></span></p></div>
+          <p><span class="b xl">{{a}}<var>y</var> = 3<var>x</var> + 2{{/a}}</span></p></div>
         <div><p style="margin-bottom:0">7.</p>
           <img class="fig" src="../../images/Unit_4/Lesson_4/Question7.png" alt="graphed line 7">
-          <p><span class="b xl"></span></p></div>
+          <p><span class="b xl">{{a}}<var>y</var> = &minus;{{f 1/2}}<var>x</var> &minus; 4{{/a}}</span></p></div>
         <div><p style="margin-bottom:0">8.</p>
           <img class="fig" src="../../images/Unit_4/Lesson_4/Question8.png" alt="graphed line 8">
-          <p><span class="b xl"></span></p></div>
+          <p><span class="b xl">{{a}}<var>y</var> = 2<var>x</var> + 3{{/a}}</span></p></div>
       </div>
       <div class="cols3">
         <div><p style="margin-bottom:0">9.</p>
           <img class="fig" src="../../images/Unit_4/Lesson_4/Question9.png" alt="graphed line 9">
-          <p><span class="b xl"></span></p></div>
+          <p><span class="b xl">{{a}}<var>y</var> = &minus;{{f 1/3}}<var>x</var> &minus; 2{{/a}}</span></p></div>
         <div><p style="margin-bottom:0">10.</p>
           <img class="fig" src="../../images/Unit_4/Lesson_4/Question10.png" alt="graphed line 10">
-          <p><span class="b xl"></span></p></div>
+          <p><span class="b xl">{{a}}<var>y</var> = {{f 1/2}}<var>x</var> + 1{{/a}}</span></p></div>
         <div></div>
       </div>
     </div>
@@ -263,16 +265,16 @@ slug: Writing_Linear_Equations
       <table class="steps">
         <tr><th style="width:2.2in">Points</th><th>Find <var>m</var>, then <var>b</var></th>
           <th style="width:1.5in">Equation</th></tr>
-        <tr><td>11. &nbsp;(1, 3) and (5, 7)</td><td></td><td></td></tr>
-        <tr><td>12. &nbsp;(&minus;2, 3) and (2, &minus;1)</td><td></td><td></td></tr>
-        <tr><td>13. &nbsp;(3, &minus;1) and (7, 5)</td><td></td><td></td></tr>
-        <tr><td>14. &nbsp;(0, &minus;3) and (6, 9)</td><td></td><td></td></tr>
-        <tr><td>15. &nbsp;(5, 2) and (1, &minus;2)</td><td></td><td></td></tr>
-        <tr><td>16. &nbsp;(0, 4) and (4, 0)</td><td></td><td></td></tr>
-        <tr><td>17. &nbsp;(&minus;3, 6) and (0, &minus;3)</td><td></td><td></td></tr>
-        <tr><td>18. &nbsp;(1, 1) and (3, 5)</td><td></td><td></td></tr>
-        <tr><td>19. &nbsp;(0, &minus;2) and (4, &minus;2)</td><td></td><td></td></tr>
-        <tr><td>20. &nbsp;(10, 0) and (0, 5)</td><td></td><td></td></tr>
+        <tr><td>11. &nbsp;(1, 3) and (5, 7)</td><td>{{a}}<var>m</var> = 1, <var>b</var> = 2{{/a}}</td><td>{{a}}<var>y</var> = <var>x</var> + 2{{/a}}</td></tr>
+        <tr><td>12. &nbsp;(&minus;2, 3) and (2, &minus;1)</td><td>{{a}}<var>m</var> = &minus;1, <var>b</var> = 1{{/a}}</td><td>{{a}}<var>y</var> = &minus;<var>x</var> + 1{{/a}}</td></tr>
+        <tr><td>13. &nbsp;(3, &minus;1) and (7, 5)</td><td>{{a}}<var>m</var> = {{f 3/2}}, <var>b</var> = &minus;{{f 11/2}}{{/a}}</td><td>{{a}}<var>y</var> = {{f 3/2}}<var>x</var> &minus; {{f 11/2}}{{/a}}</td></tr>
+        <tr><td>14. &nbsp;(0, &minus;3) and (6, 9)</td><td>{{a}}<var>m</var> = 2, <var>b</var> = &minus;3{{/a}}</td><td>{{a}}<var>y</var> = 2<var>x</var> &minus; 3{{/a}}</td></tr>
+        <tr><td>15. &nbsp;(5, 2) and (1, &minus;2)</td><td>{{a}}<var>m</var> = 1, <var>b</var> = &minus;3{{/a}}</td><td>{{a}}<var>y</var> = <var>x</var> &minus; 3{{/a}}</td></tr>
+        <tr><td>16. &nbsp;(0, 4) and (4, 0)</td><td>{{a}}<var>m</var> = &minus;1, <var>b</var> = 4{{/a}}</td><td>{{a}}<var>y</var> = &minus;<var>x</var> + 4{{/a}}</td></tr>
+        <tr><td>17. &nbsp;(&minus;3, 6) and (0, &minus;3)</td><td>{{a}}<var>m</var> = &minus;3, <var>b</var> = &minus;3{{/a}}</td><td>{{a}}<var>y</var> = &minus;3<var>x</var> &minus; 3{{/a}}</td></tr>
+        <tr><td>18. &nbsp;(1, 1) and (3, 5)</td><td>{{a}}<var>m</var> = 2, <var>b</var> = &minus;1{{/a}}</td><td>{{a}}<var>y</var> = 2<var>x</var> &minus; 1{{/a}}</td></tr>
+        <tr><td>19. &nbsp;(0, &minus;2) and (4, &minus;2)</td><td>{{a}}<var>m</var> = 0, <var>b</var> = &minus;2{{/a}}</td><td>{{a}}<var>y</var> = &minus;2{{/a}}</td></tr>
+        <tr><td>20. &nbsp;(10, 0) and (0, 5)</td><td>{{a}}<var>m</var> = &minus;{{f 1/2}}, <var>b</var> = 5{{/a}}</td><td>{{a}}<var>y</var> = &minus;{{f 1/2}}<var>x</var> + 5{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -284,14 +286,14 @@ slug: Writing_Linear_Equations
       <table class="steps">
         <tr><th style="width:2.8in">Line</th><th>New slope, then <var>b</var></th>
           <th style="width:1.5in">Equation</th></tr>
-        <tr><td>21. &nbsp;Parallel to <var>y</var> = 2<var>x</var> + 1 through (0, &minus;3)</td><td></td><td></td></tr>
+        <tr><td>21. &nbsp;Parallel to <var>y</var> = 2<var>x</var> + 1 through (0, &minus;3)</td><td>{{a}}<var>m</var> = 2, <var>b</var> = &minus;3{{/a}}</td><td>{{a}}<var>y</var> = 2<var>x</var> &minus; 3{{/a}}</td></tr>
         <tr><td>22. &nbsp;Perpendicular to <var>y</var> = &minus;{{f 1/2}}<var>x</var> + 5
-          through (4, 2)</td><td></td><td></td></tr>
-        <tr><td>23. &nbsp;Parallel to <var>y</var> = <var>x</var> &minus; 4 through (0, 6)</td><td></td><td></td></tr>
+          through (4, 2)</td><td>{{a}}<var>m</var> = 2, <var>b</var> = &minus;6{{/a}}</td><td>{{a}}<var>y</var> = 2<var>x</var> &minus; 6{{/a}}</td></tr>
+        <tr><td>23. &nbsp;Parallel to <var>y</var> = <var>x</var> &minus; 4 through (0, 6)</td><td>{{a}}<var>m</var> = 1, <var>b</var> = 6{{/a}}</td><td>{{a}}<var>y</var> = <var>x</var> + 6{{/a}}</td></tr>
         <tr><td>24. &nbsp;Perpendicular to <var>y</var> = {{f 1/3}}<var>x</var> + 2
-          through (3, 1)</td><td></td><td></td></tr>
+          through (3, 1)</td><td>{{a}}<var>m</var> = &minus;3, <var>b</var> = 10{{/a}}</td><td>{{a}}<var>y</var> = &minus;3<var>x</var> + 10{{/a}}</td></tr>
         <tr><td>25. &nbsp;Parallel to 3<var>x</var> + 2<var>y</var> = 6 through (2, &minus;1)
-          <i>(solve for <var>y</var> first)</i></td><td></td><td></td></tr>
+          <i>(solve for <var>y</var> first)</i></td><td>{{a}}<var>y</var> = &minus;{{f 3/2}}<var>x</var> + 3, so <var>m</var> = &minus;{{f 3/2}}, <var>b</var> = 2{{/a}}</td><td>{{a}}<var>y</var> = &minus;{{f 3/2}}<var>x</var> + 2{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -303,7 +305,7 @@ slug: Writing_Linear_Equations
       (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) and
       (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>). What is the
       <var>y</var>-intercept?</div>
-    <div class="work h25"></div>
+    <div class="work h25">{{a}}<p><var>m</var> = {{f <var>y</var><sub>2</sub> &minus; <var>y</var><sub>1</sub>/<var>x</var><sub>2</sub> &minus; <var>x</var><sub>1</sub>}}, and <var>y</var> &minus; <var>y</var><sub>1</sub> = <var>m</var>(<var>x</var> &minus; <var>x</var><sub>1</sub>)</p><p>The <var>y</var>-intercept is <var>b</var> = <var>y</var><sub>1</sub> &minus; <var>mx</var><sub>1</sub>.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -311,9 +313,9 @@ slug: Writing_Linear_Equations
       perpendicular line through (5, &minus;3).</div>
     <div class="work">
       <div class="cols2">
-        <div><p>Perpendicular slope: <span class="b s"></span></p>
-          <p>Its equation: <span class="b m"></span></p>
-          <p class="ans">Intersection: <span class="b m"></span></p></div>
+        <div><p>Perpendicular slope: <span class="b s">{{a}}3{{/a}}</span></p>
+          <p>Its equation: <span class="b m">{{a}}<var>y</var> = 3<var>x</var> &minus; 18{{/a}}</span></p>
+          <p class="ans">Intersection: <span class="b m">{{a}}({{f 21/5}}, &minus;{{f 27/5}}) = (4.2, &minus;5.4){{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
