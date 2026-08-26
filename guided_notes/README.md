@@ -12,7 +12,7 @@ example boxes from splitting across a page break, and starts the Practice sectio
 fresh page.
 
 Online they live alongside the book: every lesson links to its handout just above the
-warm-up, and `chapters/Supplemental/guided_notes.qmd` lists all of them.
+warm-up, and `guided-notes.qmd` lists all of them.
 
 ## Layout
 

@@ -120,6 +120,8 @@ book:
         - file: chapters/Unit_6/6.7_Applications_of_Quadratics.qmd
         - file: chapters/Unit_6/Review.qmd
 
+    - file: guided-notes.qmd
+
     - part: "Interactive Learning"
       chapters:
         - file: chapters/Interactive/index.qmd
@@ -135,7 +137,6 @@ book:
       chapters:
         - file: chapters/Supplemental/index.qmd
         - file: chapters/Supplemental/math_games_and_puzzles/index.md
-        - file: chapters/Supplemental/guided_notes.qmd
         - file: chapters/Supplemental/worksheets/index.qmd
         - file: chapters/Supplemental/challenge_solutions.qmd
 
