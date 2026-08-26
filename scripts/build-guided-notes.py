@@ -6,8 +6,13 @@ fragment with a small metadata header.  This script wraps every fragment in
 the shared page shell (head, MathJax, masthead, footer) and writes the
 finished handout to guided_notes/Unit_<n>/<lesson>_<Slug>.html.
 
+Answers live in the same fragment, wrapped in {{a}}...{{/a}}.  The student
+handout drops them; the teacher key renders them in red.  A key is written
+only for lessons whose fragment actually contains answers.
+
     python3 scripts/build-guided-notes.py            # build everything
     python3 scripts/build-guided-notes.py 3.4 3.5    # build just these
+    python3 scripts/build-guided-notes.py --keys-only
 """
 import glob
 import os
@@ -23,7 +28,7 @@ SHELL = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guided Notes {lesson} — {title}</title>
+<title>Guided Notes {lesson} — {title}{title_suffix}</title>
 <link rel="stylesheet" href="../assets/guided-notes.css">
 </head>
 <body>
@@ -33,7 +38,7 @@ SHELL = """<!DOCTYPE html>
     <a class="backlink" href="../../chapters/Unit_{unit}/{lesson}_{slug}.html">&larr; back to the lesson</a>
     <h1>{lesson} &nbsp;{title}</h1>
     <div class="sub">Guided Notes &mdash; Unit {unit}: {unit_title} &mdash; DHS Algebra 1</div>
-    <div class="idline"><span>Name</span><span class="small">Date</span><span class="small">Period</span></div>
+    {idline}
   </div>
 
 {body}
@@ -56,22 +61,63 @@ SHORTHAND = {
 }
 
 HEADER_RE = re.compile(r"\A<!--(.*?)-->\s*", re.S)
+# {{a}}...{{/a}} marks answer content: dropped from the student handout,
+# shown in red on the teacher key.
+ANS_RE = re.compile(r"\{\{a\}\}(.*?)\{\{/a\}\}", re.S)
+# an answer holding block-level markup needs a block wrapper, not a <span>
+BLOCK_RE = re.compile(r"<(table|div|p|ul|ol|h[1-6])\b", re.I)
+
+IDLINE = ('<div class="idline"><span>Name</span>'
+          '<span class="small">Date</span><span class="small">Period</span></div>')
+KEYLINE = '<div class="keybadge">Teacher Key &mdash; answers in red</div>'
+
+
+def _drop_answers(body):
+    # An answer sitting alone on its line takes the whole line with it, so the
+    # student handout is byte-identical to one built from a fragment carrying no
+    # answers at all.  Each answer collapses to a sentinel first: a line left
+    # holding nothing but sentinels goes, anything else just loses them.
+    sent = "\x00"
+    lines = []
+    for line in ANS_RE.sub(sent, body).split("\n"):
+        if sent in line and not line.replace(sent, "").strip():
+            continue
+        lines.append(line.replace(sent, ""))
+    return "\n".join(lines)
+
+
+def _show_answers(body):
+    def repl(m):
+        inner = m.group(1)
+        tag = "div" if BLOCK_RE.search(inner) else "span"
+        return '<%s class="ans-key">%s</%s>' % (tag, inner, tag)
+    return ANS_RE.sub(repl, body)
 # {{f 3/4}} -> a stacked fraction.  The parts may contain markup, so the
 # dividing slash is the first one that is not part of a "</" or "/>" tag.
 FRAC_RE = re.compile(r"\{\{f (.+?)\}\}", re.S)
 
 
 def _fraction(match):
+    """Split {{f a/b}} at its dividing slash.
+
+    Slashes inside a tag (</var>, />) or inside a <sup> (a fractional exponent
+    like x^{5/4}) are not the fraction bar, so they are skipped.
+    """
     body = match.group(1)
-    for i, ch in enumerate(body):
-        if ch != "/":
+    sup, i, n = 0, 0, len(body)
+    while i < n:
+        if body.startswith("<sup", i):
+            sup += 1
+        elif body.startswith("</sup>", i):
+            sup -= 1
+        if body[i] == "<":                     # step over the whole tag
+            close = body.find(">", i)
+            i = close + 1 if close >= 0 else i + 1
             continue
-        if i > 0 and body[i - 1] == "<":       # closing tag, e.g. </var>
-            continue
-        if i + 1 < len(body) and body[i + 1] == ">":   # self-closing tag
-            continue
-        return ('<span class="f"><b>%s</b><b>%s</b></span>'
-                % (body[:i].strip(), body[i + 1:].strip()))
+        if body[i] == "/" and sup == 0:
+            return ('<span class="f"><b>%s</b><b>%s</b></span>'
+                    % (body[:i].strip(), body[i + 1:].strip()))
+        i += 1
     raise SystemExit("no dividing slash in {{f %s}}" % body)
 
 
@@ -91,33 +137,53 @@ def parse(path):
     return meta, raw[m.end():]
 
 
-def build(path):
+def build(path, key=False):
+    """Render one fragment.  key=True produces the teacher answer key."""
     meta, body = parse(path)
+    body = _show_answers(body) if key else _drop_answers(body)
     for token, html in SHORTHAND.items():
         body = body.replace(token, html)
     body = FRAC_RE.sub(_fraction, body)
     # a practice section always starts on a fresh page, with its own name line
     body = body.replace("{{practice-head}}",
                         '<div class="pagebreak"></div>\n'
-                        '  <div class="parthead"><b>%s %s &mdash; Practice</b>'
-                        '<span class="nm">Name</span></div>' % (meta["lesson"], meta["title"]))
-    page = SHELL.format(body=body.rstrip() + "\n", **meta)
+                        '  <div class="parthead"><b>%s %s &mdash; Practice</b>%s</div>'
+                        % (meta["lesson"], meta["title"],
+                           "" if key else '<span class="nm">Name</span>'))
+    page = SHELL.format(body=body.rstrip() + "\n",
+                        title_suffix=" (Teacher Key)" if key else "",
+                        idline=KEYLINE if key else IDLINE,
+                        **meta)
     unit_dir = os.path.join(OUT, "Unit_%s" % meta["unit"])
     os.makedirs(unit_dir, exist_ok=True)
-    dest = os.path.join(unit_dir, "%s_%s.html" % (meta["lesson"], meta["slug"]))
+    dest = os.path.join(unit_dir, "%s_%s%s.html"
+                        % (meta["lesson"], meta["slug"], "_KEY" if key else ""))
     with open(dest, "w") as f:
         f.write(page)
     return os.path.relpath(dest, ROOT)
 
 
+def has_answers(path):
+    return bool(ANS_RE.search(open(path).read()))
+
+
 if __name__ == "__main__":
-    wanted = set(sys.argv[1:])
-    made = []
+    args = sys.argv[1:]
+    keys_only = "--keys-only" in args
+    wanted = set(a for a in args if not a.startswith("--"))
+    made, keys, no_key = [], [], []
     for path in sorted(glob.glob(os.path.join(SRC, "*.html"))):
         stem = os.path.splitext(os.path.basename(path))[0]
         if wanted and stem not in wanted:
             continue
-        made.append(build(path))
-    for m in made:
+        if not keys_only:
+            made.append(build(path))
+        if has_answers(path):
+            keys.append(build(path, key=True))
+        else:
+            no_key.append(stem)
+    for m in made + keys:
         print("built", m)
-    print("%d handout(s)" % len(made))
+    print("%d handout(s), %d teacher key(s)" % (len(made), len(keys)))
+    if no_key:
+        print("no answers yet (no key written): %s" % " ".join(sorted(no_key)))

@@ -11,6 +11,7 @@
 
 :root {
   --ink:   #111;
+  --key:   #c0192b;
   --rule:  #9aa3ab;
   --faint: #dde2e7;
   --tint:  #f2f5f8;
@@ -213,3 +214,27 @@ table.area td.corner { border: none; background: transparent; }
 }
 .backlink:hover { text-decoration: underline; }
 @media print { .backlink { display: none; } }
+
+/* ---- teacher key --------------------------------------------------------
+   Answers are dropped from the student handout by the builder; here they are
+   what makes the key a key.  Colour is the signal, weight is the fallback so
+   the key still reads on a black-and-white printer. */
+.ans-key { color: var(--key); font-weight: 600; }
+div.ans-key { margin: 2px 0; }
+/* an answer sitting on a fill-in blank */
+.b > .ans-key, .b .ans-key { padding: 0 3px; font-weight: 600; }
+/* answers inside the step/fill tables and work areas */
+.steps .ans-key, .fill .ans-key, .area .ans-key { font-weight: 600; }
+.ans-key var { color: inherit; }
+
+.keybadge {
+  margin-top: 6px; padding: 2px 8px; display: inline-block;
+  font-family: Verdana, Geneva, sans-serif; font-size: 8.5pt;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--key); border: 1.5px solid var(--key); border-radius: 3px;
+}
+
+@media print {
+  /* keep the red when the browser is asked to print backgrounds/colours */
+  .ans-key, .keybadge { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
