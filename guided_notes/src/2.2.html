@@ -18,14 +18,17 @@ slug: Evaluating_Expressions
   <div class="cols3">
     <div>
       <p>1. Simplify 3<sup>2</sup> + 2 &middot; 4 &minus; 1</p>
+      {{a}}<p>9 + 8 &minus; 1 = 16</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. How are 2<var>x</var> + 5 and 5 + 2<var>x</var> different? How are they the same?</p>
+      {{a}}<p>Same value for every <var>x</var> &mdash; addition can be done in either order.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. A student evaluates (&minus;3)<sup>2</sup> and gets &minus;9. Correct? Why?</p>
+      {{a}}<p>No &mdash; (&minus;3)<sup>2</sup> = 9. The parentheses square the negative too. &minus;3<sup>2</sup> is the one that equals &minus;9.</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -34,9 +37,9 @@ slug: Evaluating_Expressions
 
   <div class="keys">
     To <b>evaluate</b> an expression means to find its value by
-    <span class="b m"></span> a number for the variable and then
-    <span class="b m"></span>.
-    <div style="margin-top:3px">When you see <b>=</b>, think &ldquo;<span class="b m"></span>&rdquo;.</div>
+    <span class="b m">{{a}}substituting{{/a}}</span> a number for the variable and then
+    <span class="b m">{{a}}simplifying{{/a}}</span>.
+    <div style="margin-top:3px">When you see <b>=</b>, think &ldquo;<span class="b m">{{a}}is{{/a}}</span>&rdquo;.</div>
   </div>
 
   <div class="ex">
@@ -45,10 +48,10 @@ slug: Evaluating_Expressions
     <div class="work">
       <table class="steps">
         <tr><th style="width:2.8in">Story</th><th>Math</th></tr>
-        <tr><td>A thief stole the cookies.</td><td></td></tr>
-        <tr><td>&ldquo;The thief&rdquo; &mdash; we do not know who.</td><td></td></tr>
-        <tr><td>A witness says the thief <i>is</i> Bob.</td><td></td></tr>
-        <tr><td>Bob stole the cookies.</td><td></td></tr>
+        <tr><td>A thief stole the cookies.</td><td>{{a}}an expression with a variable in it{{/a}}</td></tr>
+        <tr><td>&ldquo;The thief&rdquo; &mdash; we do not know who.</td><td>{{a}}<var>x</var> &mdash; the unknown{{/a}}</td></tr>
+        <tr><td>A witness says the thief <i>is</i> Bob.</td><td>{{a}}<var>x</var> = Bob &mdash; substitution{{/a}}</td></tr>
+        <tr><td>Bob stole the cookies.</td><td>{{a}}the evaluated expression{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -56,89 +59,89 @@ slug: Evaluating_Expressions
   <div class="ex">
     <div class="q"><b class="tag">EX 2.</b> Evaluate 4<var>x</var> + 1 when <var>x</var> = 3.</div>
     <div class="work h13">
-      <p>Substitute: 4( <span class="b s"></span> ) + 1</p>
-      <p class="ans">Simplify: <span class="b l"></span></p>
+      <p>Substitute: 4( <span class="b s">{{a}}3{{/a}}</span> ) + 1</p>
+      <p class="ans">Simplify: <span class="b l">{{a}}4(3) + 1 = 13{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; negatives</div>
-    Before you substitute, put <span class="b m"></span> where the variable was.
+    Before you substitute, put <span class="b m">{{a}}parentheses{{/a}}</span> where the variable was.
     That keeps the negative signs from getting lost.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 3.</b> Evaluate 3 &minus; 2<var>x</var> when <var>x</var> = &minus;4.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>3 &minus; 2(&minus;4) = 3 + 8 = 11</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 4.</b> Evaluate 5<var>x</var> &minus; 2 when <var>x</var> = &minus;3.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>5(&minus;3) &minus; 2 = &minus;15 &minus; 2 = &minus;17</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">2.2.2</span>Using PEMDAS with Substitution</h2>
 
   <div class="keys">
     Evaluating is just one extra step on top of the order of operations:
-    first <span class="b m"></span>, then apply <span class="b m"></span>.
+    first <span class="b m">{{a}}substitute{{/a}}</span>, then apply <span class="b m">{{a}}PEMDAS{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Evaluate 2(<var>x</var> + 3)<sup>2</sup>
       when <var>x</var> = 1.</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>2(1 + 3)<sup>2</sup> = 2(4)<sup>2</sup> = 2(16) = 32</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> The variable appears twice. Evaluate
       3(2 &minus; <var>y</var>) + 5(<var>y</var> &minus; 2) when <var>y</var> = &minus;4.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>3(2 &minus; (&minus;4)) + 5((&minus;4) &minus; 2)</p><p>= 3(6) + 5(&minus;6) = 18 &minus; 30 = &minus;12</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> Evaluate 20(<var>x</var> &minus; 2) +
       2<var>x</var><sup>2</sup> when <var>x</var> = 5.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>20(5 &minus; 2) + 2(5)<sup>2</sup> = 20(3) + 2(25) = 60 + 50 = 110</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">2.2.3</span>Expressions With More Than One Variable</h2>
 
   <div class="keys">
-    Nothing changes &mdash; substitute for <span class="b m"></span> variable, then simplify.
+    Nothing changes &mdash; substitute for <span class="b m">{{a}}every{{/a}}</span> variable, then simplify.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> Evaluate 2<var>a</var> &minus; 3<var>b</var>
       when <var>a</var> = 2 and <var>b</var> = 1.</div>
-    <div class="work h1"></div>
+    <div class="work h1">{{a}}<p>2(2) &minus; 3(1) = 4 &minus; 3 = 1</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> Evaluate 12<var>x</var> &minus; 3<var>y</var><sup>2</sup>
       when <var>x</var> = 7 and <var>y</var> = &minus;3. <i>Careful with the negative.</i></div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>12(7) &minus; 3(&minus;3)<sup>2</sup> = 84 &minus; 3(9) = 84 &minus; 27 = 57</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 10.</b> Evaluate {{f 1/2}}<var>x</var><sup>2</sup> &minus;
       3<var>y</var> when <var>x</var> = 4 and <var>y</var> = 3.</div>
-    <div class="work h16"></div>
+    <div class="work h16">{{a}}<p>{{f 1/2}}(4)<sup>2</sup> &minus; 3(3) = 8 &minus; 9 = &minus;1</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">2.2.4</span>Testing for Equivalence</h2>
 
   <div class="keys">
     Two expressions are <b>equivalent</b> if they always give the
-    <span class="b m"></span> result. Substitute the same number into both and compare.
+    <span class="b m">{{a}}same{{/a}}</span> result. Substitute the same number into both and compare.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 11.</b> Are 5<var>x</var> &minus; 25 and
       5(<var>x</var> &minus; 5) equivalent? Test <var>x</var> = 9.</div>
     <div class="work h13">
-      <div class="cols2"><div></div><div></div></div>
-      <p class="ans">Conclusion: <span class="b l"></span></p>
+      <div class="cols2"><div>{{a}}<p>5(9) &minus; 25 = 45 &minus; 25 = 20</p>{{/a}}</div><div>{{a}}<p>5(9 &minus; 5) = 5(4) = 20</p>{{/a}}</div></div>
+      <p class="ans">Conclusion: <span class="b l">{{a}}both give 20 &mdash; equivalent (and 5(<var>x</var>&minus;5) expands to 5<var>x</var>&minus;25){{/a}}</span></p>
     </div>
   </div>
 
@@ -146,18 +149,18 @@ slug: Evaluating_Expressions
     <div class="q"><b class="tag">EX 12.</b> Are 3(<var>x</var> &minus; 1) and
       3<var>x</var> &minus; 2 equivalent? Test <var>x</var> = 2.</div>
     <div class="work h13">
-      <div class="cols2"><div></div><div></div></div>
-      <p class="ans">Conclusion: <span class="b l"></span></p>
+      <div class="cols2"><div>{{a}}<p>3(2 &minus; 1) = 3(1) = 3</p>{{/a}}</div><div>{{a}}<p>3(2) &minus; 2 = 6 &minus; 2 = 4</p>{{/a}}</div></div>
+      <p class="ans">Conclusion: <span class="b l">{{a}}3 &ne; 4, so they are <b>not</b> equivalent{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; what does a test actually prove?</div>
-    Different results &rarr; the expressions are <span class="b m"></span>.
-    <div>Same result &rarr; this is only <span class="b m"></span> that they might be
+    Different results &rarr; the expressions are <span class="b m">{{a}}not equivalent{{/a}}</span>.
+    <div>Same result &rarr; this is only <span class="b m">{{a}}evidence{{/a}}</span> that they might be
       equivalent. It does <b>not</b> prove it.</div>
     <div style="margin-top:4px">Try 6<var>y</var> and 2<var>y</var> at <var>y</var> = 0:
-      <span class="b m"></span> &nbsp;&nbsp; Now try <var>y</var> = 3: <span class="b m"></span></div>
+      <span class="b m">{{a}}both give 0{{/a}}</span> &nbsp;&nbsp; Now try <var>y</var> = 3: <span class="b m">{{a}}18 and 6 &mdash; different, so not equivalent{{/a}}</span></div>
   </div>
 
   <div class="ex">
@@ -165,8 +168,8 @@ slug: Evaluating_Expressions
       3(3<var>y</var> &minus; 2) + 3 are equivalent using <var>y</var> = 2.
       What does your answer tell you?</div>
     <div class="work h16">
-      <div class="cols2"><div></div><div></div></div>
-      <p class="ans">This tells me: <span class="b l"></span></p>
+      <div class="cols2"><div>{{a}}<p>9(2) &minus; 3 = 15</p>{{/a}}</div><div>{{a}}<p>3(3(2) &minus; 2) + 3 = 3(4) + 3 = 15</p>{{/a}}</div></div>
+      <p class="ans">This tells me: <span class="b l">{{a}}they match here, and expanding gives 9<var>y</var> &minus; 6 + 3 = 9<var>y</var> &minus; 3 &mdash; so they really are equivalent{{/a}}</span></p>
     </div>
   </div>
 
@@ -178,11 +181,11 @@ slug: Evaluating_Expressions
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>1. &nbsp;3<var>x</var> + 4 when <var>x</var> = 5</p>
-        <p>2. &nbsp;7 &minus; 2<var>x</var> when <var>x</var> = &minus;3</p>
-        <p>3. &nbsp;2<var>x</var><sup>2</sup> when <var>x</var> = 2</p>
-        <p>4. &nbsp;{{f 1/2}}<var>x</var> + 3 when <var>x</var> = 6</p>
-        <p>5. &nbsp;&minus;<var>x</var> + 7 when <var>x</var> = &minus;2</p>
+        <p>1. &nbsp;3<var>x</var> + 4 when <var>x</var> = 5{{a}} &nbsp; = 3(5) + 4 = 19{{/a}}</p>
+        <p>2. &nbsp;7 &minus; 2<var>x</var> when <var>x</var> = &minus;3{{a}} &nbsp; = 7 + 6 = 13{{/a}}</p>
+        <p>3. &nbsp;2<var>x</var><sup>2</sup> when <var>x</var> = 2{{a}} &nbsp; = 2(4) = 8{{/a}}</p>
+        <p>4. &nbsp;{{f 1/2}}<var>x</var> + 3 when <var>x</var> = 6{{a}} &nbsp; = 3 + 3 = 6{{/a}}</p>
+        <p>5. &nbsp;&minus;<var>x</var> + 7 when <var>x</var> = &minus;2{{a}} &nbsp; = 2 + 7 = 9{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -193,11 +196,11 @@ slug: Evaluating_Expressions
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>6. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> when <var>x</var> = 4</p>
-        <p>7. &nbsp;2<var>x</var> + 3<var>x</var> when <var>x</var> = 2</p>
-        <p>8. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var><sup>2</sup> when <var>x</var> = 1</p>
-        <p>9. &nbsp;5<var>x</var> &minus; 2<var>x</var> + 4 when <var>x</var> = 3</p>
-        <p>10. &nbsp;2(<var>x</var> + <var>x</var>) + 1 when <var>x</var> = &minus;1</p>
+        <p>6. &nbsp;<var>x</var> + <var>x</var> + <var>x</var> when <var>x</var> = 4{{a}} &nbsp; = 12{{/a}}</p>
+        <p>7. &nbsp;2<var>x</var> + 3<var>x</var> when <var>x</var> = 2{{a}} &nbsp; = 4 + 6 = 10{{/a}}</p>
+        <p>8. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var><sup>2</sup> when <var>x</var> = 1{{a}} &nbsp; = 1 + 3 = 4{{/a}}</p>
+        <p>9. &nbsp;5<var>x</var> &minus; 2<var>x</var> + 4 when <var>x</var> = 3{{a}} &nbsp; = 15 &minus; 6 + 4 = 13{{/a}}</p>
+        <p>10. &nbsp;2(<var>x</var> + <var>x</var>) + 1 when <var>x</var> = &minus;1{{a}} &nbsp; = 2(&minus;2) + 1 = &minus;3{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -208,11 +211,11 @@ slug: Evaluating_Expressions
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>11. &nbsp;2(<var>x</var> + 3)<sup>2</sup> when <var>x</var> = 1</p>
-        <p>12. &nbsp;3(<var>x</var> &minus; 2)<sup>2</sup> + 4 when <var>x</var> = 3</p>
-        <p>13. &nbsp;(2<var>x</var> + 1)(<var>x</var> &minus; 1) when <var>x</var> = 2</p>
-        <p>14. &nbsp;(<var>x</var> + 2)<sup>2</sup> &minus; 3<var>x</var> when <var>x</var> = 1</p>
-        <p>15. &nbsp;{{f 3(<var>x</var> + 4)/2}} when <var>x</var> = 2</p>
+        <p>11. &nbsp;2(<var>x</var> + 3)<sup>2</sup> when <var>x</var> = 1{{a}} &nbsp; = 2(16) = 32{{/a}}</p>
+        <p>12. &nbsp;3(<var>x</var> &minus; 2)<sup>2</sup> + 4 when <var>x</var> = 3{{a}} &nbsp; = 3(1) + 4 = 7{{/a}}</p>
+        <p>13. &nbsp;(2<var>x</var> + 1)(<var>x</var> &minus; 1) when <var>x</var> = 2{{a}} &nbsp; = (5)(1) = 5{{/a}}</p>
+        <p>14. &nbsp;(<var>x</var> + 2)<sup>2</sup> &minus; 3<var>x</var> when <var>x</var> = 1{{a}} &nbsp; = 9 &minus; 3 = 6{{/a}}</p>
+        <p>15. &nbsp;{{f 3(<var>x</var> + 4)/2}} when <var>x</var> = 2{{a}} &nbsp; = {{f 18/2}} = 9{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -223,13 +226,13 @@ slug: Evaluating_Expressions
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>16. &nbsp;2<var>a</var> &minus; 3<var>b</var>; <var>a</var> = 3, <var>b</var> = 5</p>
-        <p>17. &nbsp;4<var>x</var> + 2<var>y</var>; <var>x</var> = 2, <var>y</var> = &minus;1</p>
-        <p>18. &nbsp;{{f 1/2}}<var>x</var><sup>2</sup> &minus; 3<var>y</var>; <var>x</var> = 4, <var>y</var> = 3</p>
+        <p>16. &nbsp;2<var>a</var> &minus; 3<var>b</var>; <var>a</var> = 3, <var>b</var> = 5{{a}} &nbsp; = 6 &minus; 15 = &minus;9{{/a}}</p>
+        <p>17. &nbsp;4<var>x</var> + 2<var>y</var>; <var>x</var> = 2, <var>y</var> = &minus;1{{a}} &nbsp; = 8 &minus; 2 = 6{{/a}}</p>
+        <p>18. &nbsp;{{f 1/2}}<var>x</var><sup>2</sup> &minus; 3<var>y</var>; <var>x</var> = 4, <var>y</var> = 3{{a}} &nbsp; = 8 &minus; 9 = &minus;1{{/a}}</p>
         <p>19. &nbsp;3<var>x</var> &minus; 2<var>y</var> + <var>z</var>;
-          <var>x</var> = 1, <var>y</var> = 2, <var>z</var> = 5</p>
+          <var>x</var> = 1, <var>y</var> = 2, <var>z</var> = 5{{a}} &nbsp; = 3 &minus; 4 + 5 = 4{{/a}}</p>
         <p>20. &nbsp;(<var>x</var> + <var>y</var>)<sup>2</sup> &minus; <var>xy</var>;
-          <var>x</var> = 2, <var>y</var> = 3</p>
+          <var>x</var> = 2, <var>y</var> = 3{{a}} &nbsp; = 25 &minus; 6 = 19{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>
@@ -242,10 +245,10 @@ slug: Evaluating_Expressions
     <div class="work">
       <table class="steps">
         <tr><th style="width:2.6in">Pair</th><th>Work</th><th style="width:1.6in">Conclusion</th></tr>
-        <tr><td>21. &nbsp;2(<var>x</var> + 3) and 2<var>x</var> + 6; <var>x</var> = 4</td><td></td><td></td></tr>
-        <tr><td>22. &nbsp;4<var>x</var> + 2<var>x</var> and 6<var>x</var>; <var>x</var> = &minus;1</td><td></td><td></td></tr>
+        <tr><td>21. &nbsp;2(<var>x</var> + 3) and 2<var>x</var> + 6; <var>x</var> = 4</td><td>{{a}}2(7) = 14 and 2(4) + 6 = 14{{/a}}</td><td>{{a}}equivalent{{/a}}</td></tr>
+        <tr><td>22. &nbsp;4<var>x</var> + 2<var>x</var> and 6<var>x</var>; <var>x</var> = &minus;1</td><td>{{a}}&minus;4 + (&minus;2) = &minus;6 and 6(&minus;1) = &minus;6{{/a}}</td><td>{{a}}equivalent{{/a}}</td></tr>
         <tr><td>23. &nbsp;<var>x</var><sup>2</sup> + 2<var>x</var> + 1 and
-          (<var>x</var> + 1)<sup>2</sup>; <var>x</var> = 2</td><td></td><td></td></tr>
+          (<var>x</var> + 1)<sup>2</sup>; <var>x</var> = 2</td><td>{{a}}4 + 4 + 1 = 9 and (3)<sup>2</sup> = 9{{/a}}</td><td>{{a}}equivalent{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -256,14 +259,14 @@ slug: Evaluating_Expressions
     <div class="q">24. Test whether 3(<var>a</var> + <var>b</var>) &minus;
       2(<var>a</var> &minus; <var>b</var>) and <var>a</var> + 5<var>b</var> are equivalent.
       Use at least two different pairs of values.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p><var>a</var>=1, <var>b</var>=1: 3(2) &minus; 2(0) = 6 &nbsp;and&nbsp; 1 + 5 = 6</p><p><var>a</var>=2, <var>b</var>=&minus;1: 3(1) &minus; 2(3) = &minus;3 &nbsp;and&nbsp; 2 &minus; 5 = &minus;3</p><p>Equivalent &mdash; expanding gives 3<var>a</var> + 3<var>b</var> &minus; 2<var>a</var> + 2<var>b</var> = <var>a</var> + 5<var>b</var>.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">25. Test whether 2(<var>a</var> + <var>b</var>)<sup>2</sup> &minus;
       2<var>a</var><sup>2</sup> &minus; 4<var>ab</var> and 2<var>b</var><sup>2</sup> are
       equivalent. Use at least two different pairs of values.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p><var>a</var>=1, <var>b</var>=2: 2(9) &minus; 2 &minus; 8 = 8 &nbsp;and&nbsp; 2(4) = 8</p><p><var>a</var>=2, <var>b</var>=1: 2(9) &minus; 8 &minus; 8 = 2 &nbsp;and&nbsp; 2(1) = 2</p><p>Equivalent &mdash; the 2<var>a</var><sup>2</sup> and 4<var>ab</var> terms cancel, leaving 2<var>b</var><sup>2</sup>.</p>{{/a}}</div>
   </div>
 
   <div class="box tint">

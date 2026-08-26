@@ -18,14 +18,17 @@ slug: Expressions_and_Their_Parts
   <div class="cols3">
     <div>
       <p>1. A shirt costs $10. How do you find the cost of several shirts?</p>
+      {{a}}<p>Multiply $10 by the number of shirts &mdash; 10<var>s</var></p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>2. You have some cookies and eat 3. How can you show how many are left?</p>
+      {{a}}<p><var>c</var> &minus; 3, where <var>c</var> is how many you started with</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
     <div>
       <p>3. A car drives 50 miles every hour. How do you find the distance for many hours?</p>
+      {{a}}<p>50<var>h</var>, where <var>h</var> is the number of hours</p>{{/a}}
       <div class="ruled"></div><div class="ruled"></div>
     </div>
   </div>
@@ -33,8 +36,8 @@ slug: Expressions_and_Their_Parts
   <h2><span class="num">2.1.1</span>What Is a Variable?</h2>
 
   <div class="keys">
-    A <b>variable</b> is a <span class="b m"></span> that stands for a number that is
-    <span class="b m"></span> or that can <span class="b m"></span>.
+    A <b>variable</b> is a <span class="b m">{{a}}letter or symbol{{/a}}</span> that stands for a number that is
+    <span class="b m">{{a}}unknown{{/a}}</span> or that can <span class="b m">{{a}}change{{/a}}</span>.
     <div style="margin-top:3px">Think of it as the label on a sealed box &mdash; you know a number
       is inside, you just do not know which one yet.</div>
   </div>
@@ -43,16 +46,16 @@ slug: Expressions_and_Their_Parts
     <div class="q"><b class="tag">EX 1.</b> A sealed box of apples gets the label <var>x</var>.
       You open it and count 3 apples. What changed?</div>
     <div class="work h1">
-      <p>Before opening, <var>x</var> was a <span class="b m"></span>.</p>
-      <p>After opening, you know <var>x</var> = <span class="b s"></span>.</p>
+      <p>Before opening, <var>x</var> was a <span class="b m">{{a}}variable &mdash; an unknown number{{/a}}</span>.</p>
+      <p>After opening, you know <var>x</var> = <span class="b s">{{a}}3{{/a}}</span>.</p>
     </div>
   </div>
 
   <h2><span class="num">2.1.2</span>What Is an Expression?</h2>
 
   <div class="keys">
-    An <b>expression</b> is a math <span class="b m"></span> made of numbers, variables, and
-    operations. Expressions do <b>not</b> <span class="b m"></span> values &mdash; so no
+    An <b>expression</b> is a math <span class="b m">{{a}}phrase{{/a}}</span> made of numbers, variables, and
+    operations. Expressions do <b>not</b> <span class="b m">{{a}}compare{{/a}}</span> values &mdash; so no
     = and no &lt; or &gt;.
   </div>
 
@@ -69,7 +72,7 @@ slug: Expressions_and_Their_Parts
         <p>9</p>
         <p></p>
       </div>
-      <p class="ans">What makes the crossed-out ones different? <span class="b xl"></span></p>
+      <p class="ans">What makes the crossed-out ones different? <span class="b xl">{{a}}they use = or an inequality sign, so they compare two things{{/a}}</span></p>
     </div>
   </div>
 
@@ -77,8 +80,8 @@ slug: Expressions_and_Their_Parts
     <div class="q"><b class="tag">EX 3.</b> Which of these can be written as a single expression?
       <br>(a) the total pencils in 7 boxes &nbsp;&nbsp; (b) whether the total pencils equals 20</div>
     <div class="work h1">
-      <p>(a) <span class="b xl"></span></p>
-      <p>(b) <span class="b xl"></span></p>
+      <p>(a) <span class="b xl">{{a}}7<var>p</var> &mdash; an expression{{/a}}</span></p>
+      <p>(b) <span class="b xl">{{a}}7<var>p</var> = 20 &mdash; an equation, not an expression{{/a}}</span></p>
     </div>
   </div>
 
@@ -86,26 +89,26 @@ slug: Expressions_and_Their_Parts
     <div class="q"><b class="tag">EX 4.</b> You have 5 boxes and each holds <var>x</var> apples.
       Write an expression for the total. Then do 10 boxes of pencils.</div>
     <div class="work h1">
-      <p class="ans">5 boxes: <span class="b"></span> &nbsp;&nbsp;&nbsp;
-        10 boxes of pencils (let <var>p</var> = pencils per box): <span class="b"></span></p>
+      <p class="ans">5 boxes: <span class="b">{{a}}5<var>x</var>{{/a}}</span> &nbsp;&nbsp;&nbsp;
+        10 boxes of pencils (let <var>p</var> = pencils per box): <span class="b">{{a}}10<var>p</var>{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; where did the multiplication sign go?</div>
-    Three ways to write &ldquo;3 times <var>x</var>&rdquo;: <span class="b m"></span>,
-    <span class="b m"></span>, <span class="b m"></span>.
+    Three ways to write &ldquo;3 times <var>x</var>&rdquo;: <span class="b m">{{a}}3<var>x</var>{{/a}}</span>,
+    <span class="b m">{{a}}3 &middot; <var>x</var>{{/a}}</span>, <span class="b m">{{a}}3(<var>x</var>){{/a}}</span>.
     <div style="margin-top:3px">We avoid &times; because it looks like the variable
-      <span class="b s"></span>.</div>
+      <span class="b s">{{a}}<var>x</var>{{/a}}</span>.</div>
   </div>
 
   <h2><span class="num">2.1.3</span>Terms, Coefficients, and Constants</h2>
 
   <div class="keys">
     <ul>
-      <li><b>Terms</b> are separated by <span class="b s"></span> or <span class="b s"></span>.</li>
-      <li>A <b>coefficient</b> is the number that <span class="b m"></span> a variable.</li>
-      <li>A <b>constant</b> is a number <span class="b m"></span> a variable.</li>
+      <li><b>Terms</b> are separated by <span class="b s">{{a}}+{{/a}}</span> or <span class="b s">{{a}}&minus;{{/a}}</span>.</li>
+      <li>A <b>coefficient</b> is the number that <span class="b m">{{a}}multiplies{{/a}}</span> a variable.</li>
+      <li>A <b>constant</b> is a number <span class="b m">{{a}}without{{/a}}</span> a variable.</li>
     </ul>
   </div>
 
@@ -113,26 +116,26 @@ slug: Expressions_and_Their_Parts
     <div class="q"><b class="tag">EX 5.</b> Break apart 4<var>x</var><sup>2</sup> + 2<var>y</var> &minus; 7.</div>
     <div class="work">
       <table class="steps">
-        <tr><td class="why">Terms</td><td></td></tr>
-        <tr><td class="why">Coefficients</td><td></td></tr>
-        <tr><td class="why">Constant</td><td></td></tr>
+        <tr><td class="why">Terms</td><td>{{a}}4<var>x</var><sup>2</sup>, &nbsp;2<var>y</var>, &nbsp;&minus;7{{/a}}</td></tr>
+        <tr><td class="why">Coefficients</td><td>{{a}}4 and 2{{/a}}</td></tr>
+        <tr><td class="why">Constant</td><td>{{a}}&minus;7{{/a}}</td></tr>
       </table>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha &mdash; do not forget the sign</div>
-    The + or &minus; in front <span class="b m"></span> to the term.
-    A lone variable has an <b>implied coefficient</b> of <span class="b s"></span>.
+    The + or &minus; in front <span class="b m">{{a}}belongs{{/a}}</span> to the term.
+    A lone variable has an <b>implied coefficient</b> of <span class="b s">{{a}}1{{/a}}</span>.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> List the terms and coefficients.</div>
     <div class="work h13">
       <p>&minus;5<var>x</var><sup>2</sup> &minus; 2<var>x</var> &nbsp;&rarr;&nbsp;
-        terms: <span class="b m"></span> &nbsp; coefficients: <span class="b m"></span></p>
+        terms: <span class="b m">{{a}}&minus;5<var>x</var><sup>2</sup>, &minus;2<var>x</var>{{/a}}</span> &nbsp; coefficients: <span class="b m">{{a}}&minus;5, &minus;2{{/a}}</span></p>
       <p>3<var>x</var><sup>2</sup> + <var>x</var> &minus; <var>y</var> &nbsp;&rarr;&nbsp;
-        terms: <span class="b m"></span> &nbsp; coefficients: <span class="b m"></span></p>
+        terms: <span class="b m">{{a}}3<var>x</var><sup>2</sup>, <var>x</var>, &minus;<var>y</var>{{/a}}</span> &nbsp; coefficients: <span class="b m">{{a}}3, 1, &minus;1{{/a}}</span></p>
     </div>
   </div>
 
@@ -140,9 +143,9 @@ slug: Expressions_and_Their_Parts
     <div class="q"><b class="tag">EX 7.</b> Write your own expression with 4 or more terms,
       then list its parts.</div>
     <div class="work h13">
-      <p>My expression: <span class="b xl"></span></p>
-      <p>Terms: <span class="b xl"></span></p>
-      <p>Coefficients: <span class="b m"></span> &nbsp;&nbsp; Constant: <span class="b m"></span></p>
+      <p>My expression: <span class="b xl">{{a}}answers vary{{/a}}</span></p>
+      <p>Terms: <span class="b xl">{{a}}answers vary{{/a}}</span></p>
+      <p>Coefficients: <span class="b m">{{a}}answers vary{{/a}}</span> &nbsp;&nbsp; Constant: <span class="b m">{{a}}answers vary{{/a}}</span></p>
     </div>
   </div>
 
@@ -151,18 +154,18 @@ slug: Expressions_and_Their_Parts
   <div class="ex">
     <div class="q"><b class="tag">EX 8.</b> Write an expression for each situation.</div>
     <div class="work">
-      <p>5 boxes of apples, <var>x</var> apples each: <span class="b m"></span></p>
-      <p>$12 per hour for <var>h</var> hours: <span class="b m"></span></p>
-      <p>3 more games than your friend, who has <var>n</var>: <span class="b m"></span></p>
-      <p>A taxi charges $10 plus $2 per mile <var>m</var>: <span class="b m"></span></p>
-      <p>A plant starts at <var>g</var> inches and grows 8 inches: <span class="b m"></span></p>
+      <p>5 boxes of apples, <var>x</var> apples each: <span class="b m">{{a}}5<var>x</var>{{/a}}</span></p>
+      <p>$12 per hour for <var>h</var> hours: <span class="b m">{{a}}12<var>h</var>{{/a}}</span></p>
+      <p>3 more games than your friend, who has <var>n</var>: <span class="b m">{{a}}<var>n</var> + 3{{/a}}</span></p>
+      <p>A taxi charges $10 plus $2 per mile <var>m</var>: <span class="b m">{{a}}2<var>m</var> + 10{{/a}}</span></p>
+      <p>A plant starts at <var>g</var> inches and grows 8 inches: <span class="b m">{{a}}<var>g</var> + 8{{/a}}</span></p>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 9.</b> A rectangle has length <var>L</var>. Its width is
       2 more than 4 times the length. Write an expression for the width <var>W</var>.</div>
-    <div class="work h1"><p class="ans"><var>W</var> = <span class="b"></span></p></div>
+    <div class="work h1"><p class="ans"><var>W</var> = <span class="b">{{a}}4<var>L</var> + 2{{/a}}</span></p></div>
   </div>
 
   <div class="ex">
@@ -171,17 +174,17 @@ slug: Expressions_and_Their_Parts
     <div class="work">
       <table class="steps">
         <tr><th style="width:2.6in">Words / phrase</th><th>Symbol or example</th></tr>
-        <tr><td>sum of / added to / increased by</td><td></td></tr>
-        <tr><td>difference of / minus / decreased by</td><td></td></tr>
-        <tr><td>product of / multiplied by</td><td></td></tr>
-        <tr><td>per / each / times</td><td></td></tr>
-        <tr><td>double / twice</td><td></td></tr>
-        <tr><td>half of</td><td></td></tr>
-        <tr><td>squared / cubed</td><td></td></tr>
-        <tr><td>add 3 to <var>x</var>, <b>then</b> double</td><td></td></tr>
-        <tr><td>double <var>x</var>, <b>then</b> add 3</td><td></td></tr>
+        <tr><td>sum of / added to / increased by</td><td>{{a}}+ &nbsp; (<var>x</var> + 3){{/a}}</td></tr>
+        <tr><td>difference of / minus / decreased by</td><td>{{a}}&minus; &nbsp; (<var>x</var> &minus; 3){{/a}}</td></tr>
+        <tr><td>product of / multiplied by</td><td>{{a}}&times; &nbsp; (3<var>x</var>){{/a}}</td></tr>
+        <tr><td>per / each / times</td><td>{{a}}&times; &nbsp; ($4 each for <var>t</var> &rarr; 4<var>t</var>){{/a}}</td></tr>
+        <tr><td>double / twice</td><td>{{a}}2<var>x</var>{{/a}}</td></tr>
+        <tr><td>half of</td><td>{{a}}{{f 1/2}}<var>x</var> &nbsp; or &nbsp; {{f <var>x</var>/2}}{{/a}}</td></tr>
+        <tr><td>squared / cubed</td><td>{{a}}<var>x</var><sup>2</sup>, &nbsp;<var>x</var><sup>3</sup>{{/a}}</td></tr>
+        <tr><td>add 3 to <var>x</var>, <b>then</b> double</td><td>{{a}}2(<var>x</var> + 3){{/a}}</td></tr>
+        <tr><td>double <var>x</var>, <b>then</b> add 3</td><td>{{a}}2<var>x</var> + 3{{/a}}</td></tr>
       </table>
-      <p class="ans">Which two rows show why <span class="b m"></span> matter so much?</p>
+      <p class="ans">Which two rows show why <span class="b m">{{a}}parentheses and order{{/a}}</span> matter so much?</p>
     </div>
   </div>
 
@@ -195,11 +198,11 @@ slug: Expressions_and_Their_Parts
     <div class="work">
       <table class="steps">
         <tr><th style="width:1.5in">Expression</th><th>Terms</th><th>Coefficients</th><th>Constant</th></tr>
-        <tr><td>1. &nbsp;7<var>x</var> &minus; 5</td><td></td><td></td><td></td></tr>
-        <tr><td>2. &nbsp;3<var>a</var> + 4<var>b</var> &minus; 9</td><td></td><td></td><td></td></tr>
-        <tr><td>3. &nbsp;5<var>x</var> + 2<var>y</var> &minus; 6</td><td></td><td></td><td></td></tr>
-        <tr><td>4. &nbsp;&minus;<var>y</var> + 12</td><td></td><td></td><td></td></tr>
-        <tr><td>5. &nbsp;{{f 1/2}}<var>m</var> + 4 &minus; 3<var>n</var></td><td></td><td></td><td></td></tr>
+        <tr><td>1. &nbsp;7<var>x</var> &minus; 5</td><td>{{a}}7<var>x</var>, &minus;5{{/a}}</td><td>{{a}}7{{/a}}</td><td>{{a}}&minus;5{{/a}}</td></tr>
+        <tr><td>2. &nbsp;3<var>a</var> + 4<var>b</var> &minus; 9</td><td>{{a}}3<var>a</var>, 4<var>b</var>, &minus;9{{/a}}</td><td>{{a}}3, 4{{/a}}</td><td>{{a}}&minus;9{{/a}}</td></tr>
+        <tr><td>3. &nbsp;5<var>x</var> + 2<var>y</var> &minus; 6</td><td>{{a}}5<var>x</var>, 2<var>y</var>, &minus;6{{/a}}</td><td>{{a}}5, 2{{/a}}</td><td>{{a}}&minus;6{{/a}}</td></tr>
+        <tr><td>4. &nbsp;&minus;<var>y</var> + 12</td><td>{{a}}&minus;<var>y</var>, 12{{/a}}</td><td>{{a}}&minus;1{{/a}}</td><td>{{a}}12{{/a}}</td></tr>
+        <tr><td>5. &nbsp;{{f 1/2}}<var>m</var> + 4 &minus; 3<var>n</var></td><td>{{a}}{{f 1/2}}<var>m</var>, 4, &minus;3<var>n</var>{{/a}}</td><td>{{a}}{{f 1/2}}, &minus;3{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -210,11 +213,11 @@ slug: Expressions_and_Their_Parts
     <div class="q">Write a sentence describing each expression.
       <i>(Example: <var>x</var> &minus; 3 is &ldquo;three less than a number&rdquo;.)</i></div>
     <div class="work">
-      <p>6. &nbsp;9 + <var>t</var> &nbsp; <span class="b xl"></span></p>
-      <p>7. &nbsp;0.5<var>x</var> &nbsp; <span class="b xl"></span></p>
-      <p>8. &nbsp;4(<var>n</var> &minus; 1) &nbsp; <span class="b xl"></span></p>
-      <p>9. &nbsp;3<var>p</var> + 7 &nbsp; <span class="b xl"></span></p>
-      <p>10. &nbsp;2(<var>x</var> + 3) &nbsp; <span class="b xl"></span></p>
+      <p>6. &nbsp;9 + <var>t</var> &nbsp; <span class="b xl">{{a}}nine more than a number <var>t</var>{{/a}}</span></p>
+      <p>7. &nbsp;0.5<var>x</var> &nbsp; <span class="b xl">{{a}}half of a number <var>x</var>{{/a}}</span></p>
+      <p>8. &nbsp;4(<var>n</var> &minus; 1) &nbsp; <span class="b xl">{{a}}four times one less than a number <var>n</var>{{/a}}</span></p>
+      <p>9. &nbsp;3<var>p</var> + 7 &nbsp; <span class="b xl">{{a}}seven more than three times <var>p</var>{{/a}}</span></p>
+      <p>10. &nbsp;2(<var>x</var> + 3) &nbsp; <span class="b xl">{{a}}twice the sum of <var>x</var> and 3{{/a}}</span></p>
     </div>
   </div>
 
@@ -222,15 +225,16 @@ slug: Expressions_and_Their_Parts
 
   <div class="ex">
     <div class="work">
-      <p>11. You have <var>x</var> stickers and a friend gives you 6 more. <span class="b m"></span></p>
-      <p>12. A gym costs $20 plus $8 per month for <var>m</var> months. <span class="b m"></span></p>
+      <p>11. You have <var>x</var> stickers and a friend gives you 6 more. <span class="b m">{{a}}<var>x</var> + 6{{/a}}</span></p>
+      <p>12. A gym costs $20 plus $8 per month for <var>m</var> months. <span class="b m">{{a}}8<var>m</var> + 20{{/a}}</span></p>
       <p>13. A tank starts with 50 liters and drains 3 liters per minute for <var>t</var> minutes.
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}50 &minus; 3<var>t</var>{{/a}}</span></p>
       <p>14. A rectangle's width is <var>w</var> and its length is 5 more than its width.
         Write the <b>perimeter</b>.</p>
+      {{a}}<p>2<var>w</var> + 2(<var>w</var> + 5) = 4<var>w</var> + 10</p>{{/a}}
       <div class="ruled"></div>
       <p>15. A phone plan includes 2 GB free, then $5 per extra GB <var>g</var>.
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}5<var>g</var>, where <var>g</var> is the GB past the free 2{{/a}}</span></p>
     </div>
   </div>
 
@@ -239,11 +243,11 @@ slug: Expressions_and_Their_Parts
   <div class="ex">
     <div class="work h16">
       <p>16. An expression for the sum of the absolute values of &minus;3 and <var>n</var>.
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}|&minus;3| + |<var>n</var>| = 3 + |<var>n</var>|{{/a}}</span></p>
       <p>17. Make a factor tree for the product of 12 and <var>p</var>.</p>
-      <div class="tallbox h13"></div>
+      <div class="tallbox h13">{{a}}<p>12<var>p</var> = 2 &times; 2 &times; 3 &times; <var>p</var></p>{{/a}}</div>
       <p>18. An expression for half the distance from 2 to <var>x</var> on the number line.
-        <span class="b m"></span></p>
+        <span class="b m">{{a}}{{f 1/2}}|<var>x</var> &minus; 2|{{/a}}</span></p>
     </div>
   </div>
 
@@ -254,11 +258,11 @@ slug: Expressions_and_Their_Parts
     <div class="work">
       <div class="cols2">
         <div>
-          <p>19. &ldquo;Double the amount after adding 2.&rdquo; <span class="b s"></span></p>
-          <p>20. &ldquo;Start at 10, then subtract 3 each day <var>d</var>.&rdquo; <span class="b s"></span></p>
-          <p>21. &ldquo;$4 per ticket for <var>t</var> tickets, plus a $6 fee.&rdquo; <span class="b s"></span></p>
-          <p>22. &ldquo;Three groups of <var>x</var>, then add 1.&rdquo; <span class="b s"></span></p>
-          <p>23. &ldquo;Half of <var>m</var>, then add 5.&rdquo; <span class="b s"></span></p>
+          <p>19. &ldquo;Double the amount after adding 2.&rdquo; <span class="b s">{{a}}A{{/a}}</span></p>
+          <p>20. &ldquo;Start at 10, then subtract 3 each day <var>d</var>.&rdquo; <span class="b s">{{a}}C{{/a}}</span></p>
+          <p>21. &ldquo;$4 per ticket for <var>t</var> tickets, plus a $6 fee.&rdquo; <span class="b s">{{a}}D{{/a}}</span></p>
+          <p>22. &ldquo;Three groups of <var>x</var>, then add 1.&rdquo; <span class="b s">{{a}}E{{/a}}</span></p>
+          <p>23. &ldquo;Half of <var>m</var>, then add 5.&rdquo; <span class="b s">{{a}}B{{/a}}</span></p>
         </div>
         <div>
           <p>A) &nbsp;2(<var>x</var> + 2)</p>
@@ -276,13 +280,13 @@ slug: Expressions_and_Their_Parts
   <div class="ex">
     <div class="q">24. Write an expression for &ldquo;the quotient of 3 more than <var>x</var> and
       twice 2 fewer than <var>y</var>.&rdquo;</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>{{f <var>x</var> + 3/2(<var>y</var> &minus; 2)}}</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">25. Write an expression for &ldquo;the distance from 5 to <var>x</var> on the
       number line, increased by 3 and then squared.&rdquo;</div>
-    <div class="work h13"></div>
+    <div class="work h13">{{a}}<p>(|<var>x</var> &minus; 5| + 3)<sup>2</sup></p>{{/a}}</div>
   </div>
 
   <div class="box tint">
