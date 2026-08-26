@@ -20,11 +20,13 @@ slug: Solving_Quadratic_Equations_by_Factoring
       <div class="cols3">
         <div>
           <p>1. Factor completely: <var>x</var><sup>2</sup> &minus; 9</p>
+          {{a}}<p>(<var>x</var> &minus; 3)(<var>x</var> + 3)</p>{{/a}}
           <div class="ruled"></div>
         </div>
         <div>
           <p>2. A graph crosses the <var>x</var>-axis at <var>x</var> = &minus;3 and
             <var>x</var> = 3. What is the value of the function there?</p>
+          {{a}}<p>The function value is 0 at both.</p>{{/a}}
           <div class="ruled"></div>
         </div>
         <div>
@@ -39,11 +41,11 @@ slug: Solving_Quadratic_Equations_by_Factoring
   <h2><span class="num">6.3.1</span>The <var>x</var>-Intercepts of a Quadratic</h2>
 
   <div class="keys">
-    Unlike a line, a parabola can have <span class="b s"></span>,
-    <span class="b s"></span>, or <span class="b s"></span> <var>x</var>-intercepts.
+    Unlike a line, a parabola can have <span class="b s">{{a}}0{{/a}}</span>,
+    <span class="b s">{{a}}1{{/a}}</span>, or <span class="b s">{{a}}2{{/a}}</span> <var>x</var>-intercepts.
     <div style="margin-top:3px">These <var>x</var>-values are the <b>roots</b> or
       <b>zeros</b> of the function. They happen exactly when the
-      <span class="b m"></span> is zero.</div>
+      <span class="b m">{{a}}output{{/a}}</span> is zero.</div>
   </div>
 
   <div class="ex">
@@ -53,12 +55,12 @@ slug: Solving_Quadratic_Equations_by_Factoring
     <div class="work">
       <div class="cols2">
         <div>
-          <p>The vertex is <span class="b m"></span> the <var>x</var>-axis and the parabola
-            opens <span class="b m"></span>, so it must cross <span class="b m"></span>.</p>
-          <p class="ans">From the graph, roughly <var>x</var> &asymp; <span class="b s"></span>
-            and <var>x</var> &asymp; <span class="b s"></span></p>
+          <p>The vertex is <span class="b m">{{a}}below{{/a}}</span> the <var>x</var>-axis and the parabola
+            opens <span class="b m">{{a}}upward{{/a}}</span>, so it must cross <span class="b m">{{a}}twice{{/a}}</span>.</p>
+          <p class="ans">From the graph, roughly <var>x</var> &asymp; <span class="b s">{{a}}&minus;5{{/a}}</span>
+            and <var>x</var> &asymp; <span class="b s">{{a}}3{{/a}}</span></p>
           <p class="ans">Why don't we trust graphing for exact answers?
-            <span class="b m"></span></p>
+            <span class="b m">{{a}}the roots are often not whole numbers, so a graph only gives an estimate{{/a}}</span></p>
         </div>
         <div>{{grid}}</div>
       </div>
@@ -69,11 +71,11 @@ slug: Solving_Quadratic_Equations_by_Factoring
 
   <div class="keys">
     A <b>quadratic equation</b> looks like <var>ax</var><sup>2</sup> + <var>bx</var> +
-    <var>c</var> = <span class="b s"></span>.
+    <var>c</var> = <span class="b s">{{a}}0{{/a}}</span>.
     <div style="margin-top:3px"><b>Why zero?</b> Because <var>x</var>-intercepts happen when
-      the output is <span class="b m"></span>.</div>
+      the output is <span class="b m">{{a}}zero{{/a}}</span>.</div>
     <div style="margin-top:3px"><b>Zero product property:</b> if a product equals zero, then
-      <span class="b l"></span>.</div>
+      <span class="b l">{{a}}at least one of the factors must be zero{{/a}}</span>.</div>
   </div>
 
   <div class="ex">
@@ -81,9 +83,9 @@ slug: Solving_Quadratic_Equations_by_Factoring
       &minus; 15 = 0 algebraically. Do your answers match EX 1?</div>
     <div class="work">
       <table class="steps">
-        <tr><td class="why">Factor</td><td></td></tr>
-        <tr><td class="why">Set each factor to 0</td><td></td></tr>
-        <tr><td class="why">Solve each</td><td></td></tr>
+        <tr><td class="why">Factor</td><td>{{a}}(<var>x</var> + 5)(<var>x</var> &minus; 3) = 0{{/a}}</td></tr>
+        <tr><td class="why">Set each factor to 0</td><td>{{a}}<var>x</var> + 5 = 0 &nbsp;or&nbsp; <var>x</var> &minus; 3 = 0{{/a}}</td></tr>
+        <tr><td class="why">Solve each</td><td>{{a}}<var>x</var> = &minus;5 or <var>x</var> = 3 &mdash; yes, they match EX 1{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -93,9 +95,9 @@ slug: Solving_Quadratic_Equations_by_Factoring
       <i>Not in standard form yet.</i></div>
     <div class="work">
       <table class="steps">
-        <tr><td class="why">Move everything to one side</td><td></td></tr>
-        <tr><td class="why">Factor</td><td></td></tr>
-        <tr><td class="why">Solutions</td><td></td></tr>
+        <tr><td class="why">Move everything to one side</td><td>{{a}}2<var>x</var><sup>2</sup> &minus; 3<var>x</var> &minus; 4 = 0{{/a}}</td></tr>
+        <tr><td class="why">Factor</td><td>{{a}}it does not factor over the integers &mdash; <var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 9 + 32 = 41 is not a perfect square{{/a}}</td></tr>
+        <tr><td class="why">Solutions</td><td>{{a}}<var>x</var> = {{f 3 &plusmn; &radic;41/4}} &asymp; 2.35 or &minus;0.85 (quadratic formula, 6.6). Note: as 2<var>x</var><sup>2</sup> = 7<var>x</var> + 4 it would factor as (2<var>x</var> + 1)(<var>x</var> &minus; 4) = 0, giving <var>x</var> = &minus;{{f 1/2}}, 4{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -104,24 +106,24 @@ slug: Solving_Quadratic_Equations_by_Factoring
     <div class="q"><b class="tag">EX 4.</b> Solve 8<var>x</var><sup>2</sup> + 60<var>x</var>
       + 72 = 0. <i>Take out the GCF first.</i></div>
     <div class="work h2">
-      <p>GCF = <span class="b s"></span>. Dividing both sides by it
-        <span class="b m"></span> the solutions.</p>
-      <p class="ans">Solutions: <span class="b m"></span></p>
-    </div>
+      <p>GCF = <span class="b s">{{a}}4{{/a}}</span>. Dividing both sides by it
+        <span class="b m">{{a}}does not change{{/a}}</span> the solutions.</p>
+      <p class="ans">Solutions: <span class="b m">{{a}}<var>x</var> = &minus;6, &minus;{{f 3/2}}{{/a}}</span></p>
+    {{a}}<p>4(2<var>x</var><sup>2</sup> + 15<var>x</var> + 18) = 0 &rarr; (2<var>x</var> + 3)(<var>x</var> + 6) = 0</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Solve 3<var>x</var><sup>3</sup> = 9<var>x</var> +
       6<var>x</var><sup>2</sup>. <i>Higher degree, same strategy.</i></div>
     <div class="work h25">
-      <p class="ans">How many solutions did you get? <span class="b s"></span></p>
-    </div>
+      <p class="ans">How many solutions did you get? <span class="b s">{{a}}3{{/a}}</span></p>
+    {{a}}<p>3<var>x</var><sup>3</sup> &minus; 6<var>x</var><sup>2</sup> &minus; 9<var>x</var> = 0 &rarr; 3<var>x</var>(<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 3) = 0</p><p>3<var>x</var>(<var>x</var> &minus; 3)(<var>x</var> + 1) = 0, so <var>x</var> = 0, 3, &minus;1</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6.</b> Solve 3<var>x</var><sup>2</sup> &minus;
       7<var>x</var> = 6.</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>3<var>x</var><sup>2</sup> &minus; 7<var>x</var> &minus; 6 = 0 &rarr; (3<var>x</var> + 2)(<var>x</var> &minus; 3) = 0</p><p><var>x</var> = &minus;{{f 2/3}}, 3</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">6.3.3</span>How Many Solutions?</h2>
@@ -131,8 +133,8 @@ slug: Solving_Quadratic_Equations_by_Factoring
       5<var>x</var> + 6 = 0, then sketch.</div>
     <div class="work">
       <div class="cols2">
-        <div><p class="ans">Solutions: <span class="b m"></span></p>
-          <p class="ans">The graph crosses the <var>x</var>-axis <span class="b s"></span>
+        <div><p class="ans">Solutions: <span class="b m">{{a}}<var>x</var> = 2, 3{{/a}}</span></p>
+          <p class="ans">The graph crosses the <var>x</var>-axis <span class="b s">{{a}}2{{/a}}</span>
             times.</p></div>
         <div>{{grid}}</div>
       </div>
@@ -144,10 +146,10 @@ slug: Solving_Quadratic_Equations_by_Factoring
       6<var>x</var> + 9 = 0, then sketch.</div>
     <div class="work">
       <div class="cols2">
-        <div><p>Factors as <span class="b m"></span></p>
-          <p class="ans">Both factors give the <span class="b m"></span> solution, so there is
-            only <span class="b s"></span>.</p>
-          <p class="ans">The graph <span class="b m"></span> the <var>x</var>-axis.</p></div>
+        <div><p>Factors as <span class="b m">{{a}}(<var>x</var> &minus; 3)<sup>2</sup> = 0{{/a}}</span></p>
+          <p class="ans">Both factors give the <span class="b m">{{a}}same{{/a}}</span> solution, so there is
+            only <span class="b s">{{a}}one{{/a}}</span>.</p>
+          <p class="ans">The graph <span class="b m">{{a}}touches{{/a}}</span> the <var>x</var>-axis.</p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -159,9 +161,9 @@ slug: Solving_Quadratic_Equations_by_Factoring
     <div class="work">
       <div class="cols2">
         <div><p>Are there two numbers that multiply to 7 and add to 4?
-          <span class="b s"></span></p>
-          <p class="ans">So there are <span class="b m"></span> real solutions.</p>
-          <p class="ans">The graph <span class="b m"></span> the <var>x</var>-axis.</p></div>
+          <span class="b s">{{a}}no{{/a}}</span></p>
+          <p class="ans">So there are <span class="b m">{{a}}no{{/a}}</span> real solutions.</p>
+          <p class="ans">The graph <span class="b m">{{a}}never touches{{/a}}</span> the <var>x</var>-axis.</p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -171,9 +173,9 @@ slug: Solving_Quadratic_Equations_by_Factoring
     <div class="lbl">Putting it together</div>
     <table class="steps">
       <tr><th style="width:3in">What the factoring looks like</th><th>How many solutions</th></tr>
-      <tr><td>Two different linear factors</td><td></td></tr>
-      <tr><td>A repeated factor</td><td></td></tr>
-      <tr><td>No real factors</td><td></td></tr>
+      <tr><td>Two different linear factors</td><td>{{a}}two real solutions{{/a}}</td></tr>
+      <tr><td>A repeated factor</td><td>{{a}}one real solution (a repeated root){{/a}}</td></tr>
+      <tr><td>No real factors</td><td>{{a}}no real solutions{{/a}}</td></tr>
     </table>
   </div>
 
@@ -184,13 +186,13 @@ slug: Solving_Quadratic_Equations_by_Factoring
 
   <div class="ex">
     <div class="work">
-      <p>1. How can you tell that an equation is quadratic? <span class="b xl"></span></p>
-      <p>2. Why do we set a quadratic equal to zero before factoring? <span class="b xl"></span></p>
-      <p>3. What does it mean if a quadratic has only one real solution? <span class="b xl"></span></p>
+      <p>1. How can you tell that an equation is quadratic? <span class="b xl">{{a}}the variable is raised to the 2nd power and no higher{{/a}}</span></p>
+      <p>2. Why do we set a quadratic equal to zero before factoring? <span class="b xl">{{a}}<var>x</var>-intercepts happen when the output is 0, and the zero product property only works against 0{{/a}}</span></p>
+      <p>3. What does it mean if a quadratic has only one real solution? <span class="b xl">{{a}}the parabola touches the <var>x</var>-axis at exactly one point &mdash; a repeated root{{/a}}</span></p>
       <p>4. If a parabola never touches the <var>x</var>-axis, what does that say about its
-        solutions? <span class="b xl"></span></p>
+        solutions? <span class="b xl">{{a}}it has no real solutions, so no real <var>x</var>-intercept{{/a}}</span></p>
       <p>5. Why does (<var>x</var> &minus; 4)<sup>2</sup> = 0 have only one solution even though
-        it is a product? <span class="b xl"></span></p>
+        it is a product? <span class="b xl">{{a}}(<var>x</var>&minus;4)(<var>x</var>&minus;4) &mdash; both factors give the same solution{{/a}}</span></p>
     </div>
   </div>
 
@@ -199,45 +201,45 @@ slug: Solving_Quadratic_Equations_by_Factoring
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>6. &nbsp;<var>x</var><sup>2</sup> &minus; 9 = 0</p>
-        <p>7. &nbsp;<var>x</var><sup>2</sup> + 8<var>x</var> + 15 = 0</p>
-        <p>8. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 4 = 0</p>
-        <p>9. &nbsp;4<var>y</var><sup>2</sup> + 12<var>y</var> = 0</p>
-        <p>10. &nbsp;<var>x</var><sup>2</sup> = 6<var>x</var> &minus; 11</p>
-        <p>11. &nbsp;<var>m</var><sup>2</sup> &minus; 7<var>m</var> + 10 = 0</p>
+        <p>6. &nbsp;<var>x</var><sup>2</sup> &minus; 9 = 0{{a}} &nbsp; <var>x</var> = &minus;3, 3{{/a}}</p>
+        <p>7. &nbsp;<var>x</var><sup>2</sup> + 8<var>x</var> + 15 = 0{{a}} &nbsp; <var>x</var> = &minus;5, &minus;3{{/a}}</p>
+        <p>8. &nbsp;<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 4 = 0{{a}} &nbsp; <var>x</var> = 2{{/a}}</p>
+        <p>9. &nbsp;4<var>y</var><sup>2</sup> + 12<var>y</var> = 0{{a}} &nbsp; <var>y</var> = &minus;3, 0{{/a}}</p>
+        <p>10. &nbsp;<var>x</var><sup>2</sup> = 6<var>x</var> &minus; 11{{a}} &nbsp; no real solutions{{/a}}</p>
+        <p>11. &nbsp;<var>m</var><sup>2</sup> &minus; 7<var>m</var> + 10 = 0{{a}} &nbsp; <var>m</var> = 2, 5{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>12. &nbsp;5<var>p</var><sup>2</sup> + 20<var>p</var> = 0</p>
-        <p>13. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> &minus; 18 = 0</p>
-        <p>14. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 8 = 0</p>
-        <p>15. &nbsp;<var>x</var><sup>2</sup> + 12 = 6<var>x</var></p>
-        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 10<var>x</var> + 8 = 0</p>
-        <p>17. &nbsp;2<var>x</var><sup>2</sup> = 14<var>x</var></p>
+        <p>12. &nbsp;5<var>p</var><sup>2</sup> + 20<var>p</var> = 0{{a}} &nbsp; <var>p</var> = &minus;4, 0{{/a}}</p>
+        <p>13. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> &minus; 18 = 0{{a}} &nbsp; <var>x</var> = &minus;6, 3{{/a}}</p>
+        <p>14. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 8 = 0{{a}} &nbsp; <var>x</var> = &minus;{{f 4/3}}, 2{{/a}}</p>
+        <p>15. &nbsp;<var>x</var><sup>2</sup> + 12 = 6<var>x</var>{{a}} &nbsp; no real solutions{{/a}}</p>
+        <p>16. &nbsp;3<var>x</var><sup>2</sup> + 10<var>x</var> + 8 = 0{{a}} &nbsp; <var>x</var> = &minus;2, &minus;{{f 4/3}}{{/a}}</p>
+        <p>17. &nbsp;2<var>x</var><sup>2</sup> = 14<var>x</var>{{a}} &nbsp; <var>x</var> = 0, 7{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>18. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 35 = 0</p>
-        <p>19. &nbsp;4<var>x</var><sup>2</sup> + 4<var>x</var> = 8</p>
-        <p>20. &nbsp;<var>x</var><sup>2</sup> &minus; 10<var>x</var> + 21 = 0</p>
-        <p>21. &nbsp;6<var>r</var><sup>2</sup> = 15<var>r</var></p>
-        <p>22. &nbsp;7<var>t</var><sup>2</sup> &minus; 28<var>t</var> + 28 = 0</p>
-        <p>23. &nbsp;<var>x</var><sup>2</sup> = 5<var>x</var> &minus; 6</p>
+        <p>18. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 35 = 0{{a}} &nbsp; <var>x</var> = &minus;5, 7{{/a}}</p>
+        <p>19. &nbsp;4<var>x</var><sup>2</sup> + 4<var>x</var> = 8{{a}} &nbsp; <var>x</var> = &minus;2, 1{{/a}}</p>
+        <p>20. &nbsp;<var>x</var><sup>2</sup> &minus; 10<var>x</var> + 21 = 0{{a}} &nbsp; <var>x</var> = 3, 7{{/a}}</p>
+        <p>21. &nbsp;6<var>r</var><sup>2</sup> = 15<var>r</var>{{a}} &nbsp; <var>r</var> = 0, {{f 5/2}}{{/a}}</p>
+        <p>22. &nbsp;7<var>t</var><sup>2</sup> &minus; 28<var>t</var> + 28 = 0{{a}} &nbsp; <var>t</var> = 2{{/a}}</p>
+        <p>23. &nbsp;<var>x</var><sup>2</sup> = 5<var>x</var> &minus; 6{{a}} &nbsp; <var>x</var> = 2, 3{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>24. &nbsp;<var>x</var><sup>2</sup> &minus; 9<var>x</var> = 0</p>
-        <p>25. &nbsp;2<var>x</var><sup>2</sup> &minus; 9<var>x</var> &minus; 5 = 0</p>
-        <p>26. &nbsp;<var>x</var><sup>2</sup> + 4<var>x</var> + 7 = 0</p>
-        <p>27. &nbsp;3<var>x</var><sup>2</sup> = 9<var>x</var> + 6<var>x</var><sup>2</sup></p>
-        <p>28. &nbsp;8<var>x</var><sup>2</sup> + 60<var>x</var> + 72 = 0</p>
-        <p>29. &nbsp;<var>x</var><sup>2</sup> + 2<var>x</var> = 8</p>
+        <p>24. &nbsp;<var>x</var><sup>2</sup> &minus; 9<var>x</var> = 0{{a}} &nbsp; <var>x</var> = 0, 9{{/a}}</p>
+        <p>25. &nbsp;2<var>x</var><sup>2</sup> &minus; 9<var>x</var> &minus; 5 = 0{{a}} &nbsp; <var>x</var> = &minus;{{f 1/2}}, 5{{/a}}</p>
+        <p>26. &nbsp;<var>x</var><sup>2</sup> + 4<var>x</var> + 7 = 0{{a}} &nbsp; no real solutions{{/a}}</p>
+        <p>27. &nbsp;3<var>x</var><sup>2</sup> = 9<var>x</var> + 6<var>x</var><sup>2</sup>{{a}} &nbsp; <var>x</var> = &minus;3, 0{{/a}}</p>
+        <p>28. &nbsp;8<var>x</var><sup>2</sup> + 60<var>x</var> + 72 = 0{{a}} &nbsp; <var>x</var> = &minus;6, &minus;{{f 3/2}}{{/a}}</p>
+        <p>29. &nbsp;<var>x</var><sup>2</sup> + 2<var>x</var> = 8{{a}} &nbsp; <var>x</var> = &minus;4, 2{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
       <div class="cols3">
-        <p>30. &nbsp;<var>x</var>(<var>x</var> &minus; 4) = 0</p>
-        <p>31. &nbsp;<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 9 = 0</p>
-        <p>32. &nbsp;<var>x</var><sup>2</sup> + 1 = 0</p>
+        <p>30. &nbsp;<var>x</var>(<var>x</var> &minus; 4) = 0{{a}} &nbsp; <var>x</var> = 0, 4{{/a}}</p>
+        <p>31. &nbsp;<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 9 = 0{{a}} &nbsp; <var>x</var> = 3{{/a}}</p>
+        <p>32. &nbsp;<var>x</var><sup>2</sup> + 1 = 0{{a}} &nbsp; no real solutions{{/a}}</p>
       </div>
       <div class="tallbox h2"></div>
     </div>
@@ -248,7 +250,7 @@ slug: Solving_Quadratic_Equations_by_Factoring
   <div class="ex">
     <div class="q">33. Solve (<var>x</var> &minus; 3)(<var>x</var> + 2) =
       (<var>x</var> &minus; 1)(<var>x</var> + 4).</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p><var>x</var><sup>2</sup> &minus; <var>x</var> &minus; 6 = <var>x</var><sup>2</sup> + 3<var>x</var> &minus; 4</p><p>The <var>x</var><sup>2</sup> terms cancel, leaving &minus;4<var>x</var> = 2, so <var>x</var> = &minus;{{f 1/2}}.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -259,9 +261,9 @@ slug: Solving_Quadratic_Equations_by_Factoring
           <img class="fig" src="../../images/Unit_6/Lesson_3/RootsGraph.png"
                alt="parabola with two roots" style="max-width:2.6in">
         </div>
-        <div><p>Roots: <span class="b m"></span></p>
-          <p>Factors: <span class="b m"></span></p>
-          <p class="ans">Equation: <span class="b m"></span></p></div>
+        <div><p>Roots: <span class="b m">{{a}}<var>x</var> = 1 and <var>x</var> = 4{{/a}}</span></p>
+          <p>Factors: <span class="b m">{{a}}(<var>x</var> &minus; 1)(<var>x</var> &minus; 4){{/a}}</span></p>
+          <p class="ans">Equation: <span class="b m">{{a}}<var>y</var> = <var>x</var><sup>2</sup> &minus; 5<var>x</var> + 4 &nbsp;(the <var>y</var>-intercept 4 confirms <var>a</var> = 1){{/a}}</span></p></div>
       </div>
     </div>
   </div>
