@@ -20,10 +20,12 @@ slug: Graphing_Linear_Inequalities
       <div class="cols3">
         <div>
           <p>1. Solve for <var>x</var>: 4<var>x</var> &minus; 7 &lt; 13</p>
+          {{a}}<p>4<var>x</var> &lt; 20, so <var>x</var> &lt; 5</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
         <div>
           <p>2. Solve for <var>y</var>: &minus;3<var>y</var> + 6 &ge; 9</p>
+          {{a}}<p>&minus;3<var>y</var> &ge; 3, and dividing by &minus;3 flips it: <var>y</var> &le; &minus;1</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
         <div>
@@ -38,7 +40,7 @@ slug: Graphing_Linear_Inequalities
 
   <div class="keys">
     An inequality's solution is not a single line &mdash; it is a whole
-    <span class="b m"></span> of the plane.
+    <span class="b m">{{a}}region{{/a}}</span> of the plane.
   </div>
 
   <div class="ex">
@@ -47,10 +49,10 @@ slug: Graphing_Linear_Inequalities
     <div class="work">
       <table class="steps">
         <tr><th style="width:2.8in">On a number line</th><th>On a coordinate plane</th></tr>
-        <tr><td>Open circle &rarr; point not included</td><td></td></tr>
-        <tr><td>Closed circle &rarr; point included</td><td></td></tr>
-        <tr><td>Arrow to the right &rarr; greater than</td><td></td></tr>
-        <tr><td>Arrow to the left &rarr; less than</td><td></td></tr>
+        <tr><td>Open circle &rarr; point not included</td><td>{{a}}dashed line &mdash; the line itself is not included{{/a}}</td></tr>
+        <tr><td>Closed circle &rarr; point included</td><td>{{a}}solid line &mdash; the line is included{{/a}}</td></tr>
+        <tr><td>Arrow to the right &rarr; greater than</td><td>{{a}}shade above the line{{/a}}</td></tr>
+        <tr><td>Arrow to the left &rarr; less than</td><td>{{a}}shade below the line{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -61,15 +63,15 @@ slug: Graphing_Linear_Inequalities
     <div class="work">
       <div class="cols2">
         <div><p><var>y</var> &le; {{f 1/2}}<var>x</var> + 2</p>{{grid-sm}}
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+          <p>Line: <span class="b m">{{a}}solid{{/a}}</span> Shade: <span class="b m">{{a}}below{{/a}}</span></p></div>
         <div><p><var>y</var> &lt; {{f 1/2}}<var>x</var> + 2</p>{{grid-sm}}
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+          <p>Line: <span class="b m">{{a}}dashed{{/a}}</span> Shade: <span class="b m">{{a}}below{{/a}}</span></p></div>
       </div>
       <div class="cols2">
         <div><p><var>y</var> &gt; {{f 1/2}}<var>x</var> + 2</p>{{grid-sm}}
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+          <p>Line: <span class="b m">{{a}}dashed{{/a}}</span> Shade: <span class="b m">{{a}}above{{/a}}</span></p></div>
         <div><p><var>y</var> &ge; {{f 1/2}}<var>x</var> + 2</p>{{grid-sm}}
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+          <p>Line: <span class="b m">{{a}}solid{{/a}}</span> Shade: <span class="b m">{{a}}above{{/a}}</span></p></div>
       </div>
     </div>
   </div>
@@ -78,8 +80,8 @@ slug: Graphing_Linear_Inequalities
     <div class="lbl">Tip &mdash; use a test point</div>
     Pick a point and check it. For <var>y</var> &le; {{f 1/2}}<var>x</var> + 2:
     <div class="cols2" style="margin-top:3px">
-      <p>(&minus;4, 6): <span class="b m"></span> &rarr; <span class="b s"></span></p>
-      <p>(6, &minus;4): <span class="b m"></span> &rarr; <span class="b s"></span></p>
+      <p>(&minus;4, 6): <span class="b m">{{a}}6 &le; {{f 1/2}}(&minus;4) + 2 = 0?{{/a}}</span> &rarr; <span class="b s">{{a}}no{{/a}}</span></p>
+      <p>(6, &minus;4): <span class="b m">{{a}}&minus;4 &le; {{f 1/2}}(6) + 2 = 5?{{/a}}</span> &rarr; <span class="b s">{{a}}yes{{/a}}</span></p>
     </div>
   </div>
 
@@ -87,8 +89,8 @@ slug: Graphing_Linear_Inequalities
     <div class="q"><b class="tag">EX 3.</b> Graph <var>y</var> &lt; 3<var>x</var> &minus; 5.</div>
     <div class="work">
       <div class="cols2">
-        <div><p>Line: <span class="b m"></span></p><p>Shade: <span class="b m"></span></p>
-          <p>My test point: <span class="b m"></span></p></div>
+        <div><p>Line: <span class="b m">{{a}}dashed{{/a}}</span></p><p>Shade: <span class="b m">{{a}}below the line{{/a}}</span></p>
+          <p>My test point: <span class="b m">{{a}}(0, 0): 0 &lt; &minus;5 is false, so shade the other side{{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -100,10 +102,10 @@ slug: Graphing_Linear_Inequalities
     <div class="lbl">Steps</div>
     <ol>
       <li>Move terms just like in an equation.</li>
-      <li>If you multiply or divide by a <b>negative</b>, <span class="b m"></span>
+      <li>If you multiply or divide by a <b>negative</b>, <span class="b m">{{a}}flip{{/a}}</span>
         the inequality sign.</li>
-      <li>Then graph: <span class="b m"></span> line for &lt; or &gt;,
-        <span class="b m"></span> line for &le; or &ge;.</li>
+      <li>Then graph: <span class="b m">{{a}}dashed{{/a}}</span> line for &lt; or &gt;,
+        <span class="b m">{{a}}solid{{/a}}</span> line for &le; or &ge;.</li>
     </ol>
   </div>
 
@@ -111,8 +113,8 @@ slug: Graphing_Linear_Inequalities
     <div class="q"><b class="tag">EX 4.</b> Solve and graph 2<var>x</var> + <var>y</var> &lt; 4.</div>
     <div class="work">
       <div class="cols2">
-        <div><p>Slope-intercept form: <span class="b m"></span></p>
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+        <div><p>Slope-intercept form: <span class="b m">{{a}}<var>y</var> &lt; &minus;2<var>x</var> + 4{{/a}}</span></p>
+          <p>Line: <span class="b m">{{a}}dashed{{/a}}</span> Shade: <span class="b m">{{a}}below{{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -123,9 +125,9 @@ slug: Graphing_Linear_Inequalities
       2<var>y</var> &le; 6. <i>Watch the sign!</i></div>
     <div class="work">
       <div class="cols2">
-        <div><p>Step 1: <span class="b m"></span></p>
-          <p>Step 2 (divide by &minus;2): <span class="b m"></span></p>
-          <p>Line: <span class="b m"></span> Shade: <span class="b m"></span></p></div>
+        <div><p>Step 1: <span class="b m">{{a}}&minus;2<var>y</var> &le; &minus;3<var>x</var> + 6{{/a}}</span></p>
+          <p>Step 2 (divide by &minus;2): <span class="b m">{{a}}<var>y</var> &ge; {{f 3/2}}<var>x</var> &minus; 3 &nbsp;(sign flips){{/a}}</span></p>
+          <p>Line: <span class="b m">{{a}}solid{{/a}}</span> Shade: <span class="b m">{{a}}above{{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -136,7 +138,7 @@ slug: Graphing_Linear_Inequalities
       2<var>y</var> &le; 8.</div>
     <div class="work">
       <div class="cols2">
-        <div><p>Slope-intercept form: <span class="b m"></span></p></div>
+        <div><p>Slope-intercept form: <span class="b m">{{a}}<var>y</var> &ge; 2<var>x</var> &minus; 4 &nbsp;(sign flips){{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -146,8 +148,8 @@ slug: Graphing_Linear_Inequalities
 
   <div class="keys">
     With two or more inequalities, each one shades its own region. The <b>solution set</b> is
-    where the regions <span class="b m"></span> &mdash; every point there makes
-    <span class="b m"></span> inequality true.
+    where the regions <span class="b m">{{a}}overlap{{/a}}</span> &mdash; every point there makes
+    <span class="b m">{{a}}every{{/a}}</span> inequality true.
   </div>
 
   <div class="ex">
@@ -157,9 +159,9 @@ slug: Graphing_Linear_Inequalities
     <div class="work">
       <div class="cols2">
         <div>
-          <p>First line: <span class="b m"></span>, shade <span class="b m"></span></p>
-          <p>Second line: <span class="b m"></span>, shade <span class="b m"></span></p>
-          <p class="ans">Test (4, 2) in both: <span class="b m"></span></p>
+          <p>First line: <span class="b m">{{a}}solid{{/a}}</span>, shade <span class="b m">{{a}}below{{/a}}</span></p>
+          <p>Second line: <span class="b m">{{a}}dashed{{/a}}</span>, shade <span class="b m">{{a}}above{{/a}}</span></p>
+          <p class="ans">Test (4, 2) in both: <span class="b m">{{a}}2 &le; 11 &#10003; and 2 &gt; &minus;3 &#10003; &mdash; yes, it is a solution{{/a}}</span></p>
         </div>
         <div>{{grid}}</div>
       </div>
@@ -173,7 +175,7 @@ slug: Graphing_Linear_Inequalities
         <span><var>y</var> &ge; 0</span></div></div>
     <div class="work">
       <div class="cols2">
-        <div><p>Describe the solution region:</p><div class="ruled"></div><div class="ruled"></div></div>
+        <div><p>Describe the solution region:</p>{{a}}<p>Above the dashed <var>y</var> = <var>x</var> + 1, on or above the <var>x</var>-axis, and on or below <var>y</var> = &minus;<var>x</var> + 5. The boundaries meet at (2, 3); the region opens out to the left, so it is unbounded.</p>{{/a}}<div class="ruled"></div><div class="ruled"></div></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -185,7 +187,7 @@ slug: Graphing_Linear_Inequalities
         <span><var>y</var> &lt; 3<var>x</var> + 6</span></div></div>
     <div class="work">
       <div class="cols2">
-        <div><div class="ruled"></div><div class="ruled"></div></div>
+        <div>{{a}}<p>A wedge opening to the right from the vertex (&minus;1, 3): above the dashed <var>y</var> = &minus;<var>x</var> + 2 and below the dashed <var>y</var> = 3<var>x</var> + 6.</p>{{/a}}<div class="ruled"></div><div class="ruled"></div></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -202,13 +204,13 @@ slug: Graphing_Linear_Inequalities
         <tr><th>Inequality</th><th>a</th><th>b</th><th>c</th><th>d</th></tr>
         <tr><td>1. &nbsp;<var>y</var> &le; &minus;3<var>x</var> + 2</td>
           <td>(0, 1)</td><td>(1, 0)</td><td>(&minus;2, 8)</td><td>(&minus;1, 6)</td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>{{a}}answer{{/a}}</td><td>{{a}}yes{{/a}}</td><td>{{a}}no{{/a}}</td><td>{{a}}yes{{/a}}</td><td>{{a}}no{{/a}}</td></tr>
         <tr><td>2. &nbsp;<var>y</var> &gt; {{f 1/2}}<var>x</var> &minus; 4</td>
           <td>(0, &minus;4)</td><td>(8, 0)</td><td>(0, &minus;3)</td><td>(&minus;7, &minus;7)</td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>{{a}}answer{{/a}}</td><td>{{a}}no{{/a}}</td><td>{{a}}no{{/a}}</td><td>{{a}}yes{{/a}}</td><td>{{a}}yes{{/a}}</td></tr>
         <tr><td>3. &nbsp;3<var>x</var> + <var>y</var> &gt; 5</td>
           <td>(2, 4)</td><td>(3, &minus;3)</td><td>(0, 5)</td><td>(1, 1)</td></tr>
-        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>{{a}}answer{{/a}}</td><td>{{a}}yes{{/a}}</td><td>{{a}}yes{{/a}}</td><td>{{a}}no{{/a}}</td><td>{{a}}no{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -234,18 +236,18 @@ slug: Graphing_Linear_Inequalities
     <div class="work">
       <div class="cols2">
         <div><p>8. &nbsp;&minus;<var>x</var> + 2<var>y</var> &lt; &minus;2</p>
-          <p><span class="b xl"></span></p>{{grid}}</div>
+          <p><span class="b xl">{{a}}<var>y</var> &lt; {{f 1/2}}<var>x</var> &minus; 1 &mdash; dashed, shade below{{/a}}</span></p>{{grid}}</div>
         <div><p>9. &nbsp;3<var>y</var> &minus; 3<var>x</var> &lt; <var>y</var> + 8</p>
-          <p><span class="b xl"></span></p>{{grid}}</div>
+          <p><span class="b xl">{{a}}<var>y</var> &lt; {{f 3/2}}<var>x</var> + 4 &mdash; dashed, shade below{{/a}}</span></p>{{grid}}</div>
       </div>
       <div class="cols2">
         <div><p>10. &nbsp;5(2<var>y</var> &minus; 3) &ge; &minus;2<var>x</var> + 5<var>y</var></p>
-          <p><span class="b xl"></span></p>{{grid}}</div>
+          <p><span class="b xl">{{a}}<var>y</var> &ge; &minus;{{f 2/5}}<var>x</var> + 3 &mdash; solid, shade above{{/a}}</span></p>{{grid}}</div>
         <div><p>11. &nbsp;&minus;2(<var>y</var> + 4) &lt; &minus;3(<var>x</var> &minus;
           <var>y</var>) &minus; 18</p>
-          <p><span class="b xl"></span></p>{{grid}}</div>
+          <p><span class="b xl">{{a}}<var>y</var> &gt; {{f 3/5}}<var>x</var> + 2 &mdash; dashed, shade above (sign flips){{/a}}</span></p>{{grid}}</div>
       </div>
-    </div>
+    {{a}}<p>4. dashed, shade above &nbsp;&nbsp; 5. solid, shade above &nbsp;&nbsp; 6. dashed horizontal at 4, shade above &nbsp;&nbsp; 7. solid, shade above</p>{{/a}}</div>
   </div>
 
   <h3>Solutions to Systems</h3>
@@ -257,18 +259,21 @@ slug: Graphing_Linear_Inequalities
           <p>12. Is (2, 4) a solution?
             <div class="sys"><span><var>y</var> &ge; &minus;<var>x</var> + 1</span>
               <span><var>y</var> &lt; 2<var>x</var> + 5</span></div></p>
+          {{a}}<p>4 &ge; &minus;1 &#10003; and 4 &lt; 9 &#10003; &mdash; yes.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
         <div>
           <p>13. Is (5, &minus;1) a solution?
             <div class="sys"><span><var>y</var> &le; 3 &minus; <var>x</var></span>
               <span><var>y</var> &ge; &minus;2</span></div></p>
+          {{a}}<p>&minus;1 &le; &minus;2 is false &mdash; no.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
         <div>
           <p>14. Is (5, 1) a solution?
             <div class="sys"><span><var>y</var> &ge; 0</span><span><var>x</var> &ge; 0</span>
               <span><var>y</var> &le; &minus;<var>x</var> + 6</span></div></p>
+          {{a}}<p>1 &ge; 0 &#10003;, 5 &ge; 0 &#10003;, 1 &le; 1 &#10003; &mdash; yes.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
       </div>
@@ -284,7 +289,7 @@ slug: Graphing_Linear_Inequalities
         <span><var>y</var> &le; 4</span></div></div>
     <div class="work">
       <div class="cols2">
-        <div><div class="ruled"></div><div class="ruled"></div><div class="ruled"></div></div>
+        <div>{{a}}<p>Vertices (0, &minus;1), (5, 4), (&minus;5, 4). The two slanted sides are each &radic;50 long and the top is 10 &mdash; yes, isosceles.</p>{{/a}}<div class="ruled"></div><div class="ruled"></div><div class="ruled"></div></div>
         <div>{{grid}}</div>
       </div>
     </div>
@@ -296,8 +301,8 @@ slug: Graphing_Linear_Inequalities
       that triangle, edges included.</div>
     <div class="work">
       <div class="cols2">
-        <div><p><span class="b xl"></span></p><p><span class="b xl"></span></p>
-          <p><span class="b xl"></span></p></div>
+        <div><p><span class="b xl">{{a}}<var>y</var> &ge; 0{{/a}}</span></p><p><span class="b xl">{{a}}<var>y</var> &le; 3<var>x</var>{{/a}}</span></p>
+          <p><span class="b xl">{{a}}<var>y</var> &le; &minus;<var>x</var> + 4{{/a}}</span></p></div>
         <div>{{grid}}</div>
       </div>
     </div>

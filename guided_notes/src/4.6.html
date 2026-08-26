@@ -22,18 +22,20 @@ slug: Linear_Models_in_the_Real_World
           <p>1. Complete the table for <var>g</var>(<var>x</var>) = 3<var>x</var> &minus; 2.</p>
           <table class="fill">
             <tr><th><var>x</var></th><th><var>g</var>(<var>x</var>)</th></tr>
-            <tr><td>&minus;2</td><td></td></tr>
-            <tr><td>0</td><td></td></tr>
-            <tr><td>2</td><td></td></tr>
+            <tr><td>&minus;2</td><td>{{a}}&minus;8{{/a}}</td></tr>
+            <tr><td>0</td><td>{{a}}&minus;2{{/a}}</td></tr>
+            <tr><td>2</td><td>{{a}}4{{/a}}</td></tr>
           </table>
         </div>
         <div>
           <p>2. A car goes 150 miles in 3 hours at a constant rate. How fast?</p>
+          {{a}}<p>150 &divide; 3 = 50 mph</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
         <div>
           <p>3. Murphy made $950 in 30 hours; Katie made $780 in 25 hours. Who earns more
             per hour?</p>
+          {{a}}<p>Murphy {{f 950/30}} &asymp; $31.67/hr; Katie {{f 780/25}} = $31.20/hr &mdash; Murphy earns more.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
       </div>
@@ -46,9 +48,9 @@ slug: Linear_Models_in_the_Real_World
     Every linear model has two pieces.
     <div class="cols2" style="margin-top:3px">
       <p>The <b>slope</b> (<var>m</var>) tells how fast something
-        <span class="b m"></span>.</p>
+        <span class="b m">{{a}}changes{{/a}}</span>.</p>
       <p>The <b><var>y</var>-intercept</b> (<var>b</var>) tells where it
-        <span class="b m"></span>.</p>
+        <span class="b m">{{a}}starts{{/a}}</span>.</p>
     </div>
   </div>
 
@@ -56,12 +58,12 @@ slug: Linear_Models_in_the_Real_World
     <div class="q"><b class="tag">EX 1. Streaming.</b> $2 per episode rented plus a $7.99
       monthly fee.</div>
     <div class="work h16">
-      <p>Let <var>e</var> = <span class="b m"></span> and
-        <var>P</var>(<var>e</var>) = <span class="b m"></span></p>
-      <p><var>m</var> = <span class="b s"></span> because <span class="b m"></span>
-        &nbsp;&nbsp; <var>b</var> = <span class="b s"></span> because <span class="b m"></span></p>
-      <p class="ans">Model: <var>P</var>(<var>e</var>) = <span class="b m"></span>
-        &nbsp;&nbsp; Cost for 10 episodes: <span class="b s"></span></p>
+      <p>Let <var>e</var> = <span class="b m">{{a}}the number of episodes rented{{/a}}</span> and
+        <var>P</var>(<var>e</var>) = <span class="b m">{{a}}the total cost for the month{{/a}}</span></p>
+      <p><var>m</var> = <span class="b s">{{a}}2{{/a}}</span> because <span class="b m">{{a}}each episode adds $2{{/a}}</span>
+        &nbsp;&nbsp; <var>b</var> = <span class="b s">{{a}}7.99{{/a}}</span> because <span class="b m">{{a}}the fee is charged even with 0 episodes{{/a}}</span></p>
+      <p class="ans">Model: <var>P</var>(<var>e</var>) = <span class="b m">{{a}}2<var>e</var> + 7.99{{/a}}</span>
+        &nbsp;&nbsp; Cost for 10 episodes: <span class="b s">{{a}}$27.99{{/a}}</span></p>
     </div>
   </div>
 
@@ -69,25 +71,25 @@ slug: Linear_Models_in_the_Real_World
     <div class="q"><b class="tag">EX 2. Cooling soup.</b> Soup cools from 90&deg;C to 60&deg;C
       in 10 minutes at a constant rate.</div>
     <div class="work h16">
-      <p><var>m</var> = <span class="b s"></span> &nbsp;&nbsp;
-        <var>b</var> = <span class="b s"></span></p>
-      <p class="ans">Model: <var>T</var>(<var>t</var>) = <span class="b m"></span>
-        &nbsp;&nbsp; Temperature after 15 minutes: <span class="b s"></span></p>
+      <p><var>m</var> = <span class="b s">{{a}}&minus;3{{/a}}</span> &nbsp;&nbsp;
+        <var>b</var> = <span class="b s">{{a}}90{{/a}}</span></p>
+      <p class="ans">Model: <var>T</var>(<var>t</var>) = <span class="b m">{{a}}&minus;3<var>t</var> + 90{{/a}}</span>
+        &nbsp;&nbsp; Temperature after 15 minutes: <span class="b s">{{a}}45&deg;C{{/a}}</span></p>
     </div>
   </div>
 
   <div class="box warn">
     <div class="lbl">How much should I graph?</div>
     A model only makes sense for certain values. For the soup, times before
-    <span class="b s"></span> would mean <span class="b m"></span>, and after about 20 minutes
-    the soup would be <span class="b m"></span>. Graph only the part that fits the situation.
+    <span class="b s">{{a}}0{{/a}}</span> would mean <span class="b m">{{a}}before the soup was made{{/a}}</span>, and after about 20 minutes
+    the soup would be <span class="b m">{{a}}colder than the room, which cannot happen{{/a}}</span>. Graph only the part that fits the situation.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 3. Taxi.</b> $3 to start plus $2.25 per mile.</div>
     <div class="work h13">
-      <p class="ans">Model: <var>C</var>(<var>d</var>) = <span class="b m"></span>
-        &nbsp;&nbsp; Cost of a 20-mile ride: <span class="b s"></span></p>
+      <p class="ans">Model: <var>C</var>(<var>d</var>) = <span class="b m">{{a}}2.25<var>d</var> + 3{{/a}}</span>
+        &nbsp;&nbsp; Cost of a 20-mile ride: <span class="b s">{{a}}$48{{/a}}</span></p>
     </div>
   </div>
 
@@ -97,10 +99,10 @@ slug: Linear_Models_in_the_Real_World
     <div class="work">
       <div class="cols2">
         <div>
-          <p>Ride-share model: <var>R</var>(<var>d</var>) = <span class="b m"></span></p>
-          <p class="ans">The lines cross near <span class="b s"></span> miles.</p>
-          <p class="ans">Break-even cost: <span class="b s"></span></p>
-          <p class="ans">For trips longer than that, <span class="b m"></span> is cheaper.</p>
+          <p>Ride-share model: <var>R</var>(<var>d</var>) = <span class="b m">{{a}}3.75<var>d</var>{{/a}}</span></p>
+          <p class="ans">The lines cross near <span class="b s">{{a}}2{{/a}}</span> miles.</p>
+          <p class="ans">Break-even cost: <span class="b s">{{a}}$7.50{{/a}}</span></p>
+          <p class="ans">For trips longer than that, <span class="b m">{{a}}the taxi{{/a}}</span> is cheaper.</p>
         </div>
         <div>{{grid-q1}}</div>
       </div>
@@ -111,11 +113,11 @@ slug: Linear_Models_in_the_Real_World
     <div class="q"><b class="tag">EX 5. Babysitting.</b> Estrella charges an hourly rate plus a
       minimum fee. She charged $70 for 5 hours and $46 for 3 hours.</div>
     <div class="work h25">
-      <p>Why can't we just divide money by hours? <span class="b l"></span></p>
-      <p>Rate (slope): <var>m</var> = <span class="b m"></span></p>
-      <p>Minimum fee: substitute a point and solve for <var>b</var>: <span class="b m"></span></p>
-      <p class="ans">Model: <var>C</var>(<var>h</var>) = <span class="b m"></span>
-        &nbsp;&nbsp; Charge for 12 hours: <span class="b s"></span></p>
+      <p>Why can't we just divide money by hours? <span class="b l">{{a}}there is a flat minimum fee on top of the hourly rate, so the total is not proportional to the hours{{/a}}</span></p>
+      <p>Rate (slope): <var>m</var> = <span class="b m">{{a}}{{f 70 &minus; 46/5 &minus; 3}} = $12 per hour{{/a}}</span></p>
+      <p>Minimum fee: substitute a point and solve for <var>b</var>: <span class="b m">{{a}}46 = 12(3) + <var>b</var>, so <var>b</var> = 10{{/a}}</span></p>
+      <p class="ans">Model: <var>C</var>(<var>h</var>) = <span class="b m">{{a}}12<var>h</var> + 10{{/a}}</span>
+        &nbsp;&nbsp; Charge for 12 hours: <span class="b s">{{a}}$154{{/a}}</span></p>
     </div>
   </div>
 
@@ -123,24 +125,24 @@ slug: Linear_Models_in_the_Real_World
 
   <div class="keys">
     Real data rarely lands in a perfect line, but it often shows a
-    <span class="b m"></span>. When that pattern looks roughly straight we draw a
+    <span class="b m">{{a}}trend{{/a}}</span>. When that pattern looks roughly straight we draw a
     <b>best-fit line</b>.
     <div class="cols3" style="margin-top:3px">
-      <p><b>Positive</b> correlation: <span class="b m"></span></p>
-      <p><b>Negative</b> correlation: <span class="b m"></span></p>
-      <p><b>No</b> correlation: <span class="b m"></span></p>
+      <p><b>Positive</b> correlation: <span class="b m">{{a}}as <var>x</var> goes up, <var>y</var> goes up{{/a}}</span></p>
+      <p><b>Negative</b> correlation: <span class="b m">{{a}}as <var>x</var> goes up, <var>y</var> goes down{{/a}}</span></p>
+      <p><b>No</b> correlation: <span class="b m">{{a}}no clear pattern{{/a}}</span></p>
     </div>
     <div style="margin-top:3px">The <b>closer</b> the points are to the line, the
-      <span class="b m"></span> the correlation.</div>
+      <span class="b m">{{a}}stronger{{/a}}</span> the correlation.</div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 6. Study time vs. test score.</b> The best-fit line is
       <var>G</var>(<var>h</var>) = 4.5<var>h</var> + 49.5.</div>
     <div class="work h16">
-      <p>What does the slope 4.5 mean? <span class="b xl"></span></p>
-      <p>What does the intercept 49.5 mean? <span class="b xl"></span></p>
-      <p class="ans">Predicted score after 7 hours of study: <span class="b s"></span></p>
+      <p>What does the slope 4.5 mean? <span class="b xl">{{a}}each extra hour of study is worth about 4.5 more points{{/a}}</span></p>
+      <p>What does the intercept 49.5 mean? <span class="b xl">{{a}}the predicted score with no studying at all{{/a}}</span></p>
+      <p class="ans">Predicted score after 7 hours of study: <span class="b s">{{a}}81{{/a}}</span></p>
     </div>
   </div>
 
@@ -148,10 +150,10 @@ slug: Linear_Models_in_the_Real_World
     <div class="q"><b class="tag">EX 7. Car weight vs. fuel economy.</b> The best-fit line is
       <var>F</var>(<var>w</var>) = &minus;0.007<var>w</var> + 70.</div>
     <div class="work h16">
-      <p>What does the negative slope mean? <span class="b xl"></span></p>
-      <p>Does the intercept describe a real car? <span class="b m"></span> Why?
-        <span class="b m"></span></p>
-      <p class="ans">Predicted mpg for a 3450 lb car: <span class="b s"></span></p>
+      <p>What does the negative slope mean? <span class="b xl">{{a}}heavier cars get fewer mpg &mdash; about 0.007 mpg less per pound{{/a}}</span></p>
+      <p>Does the intercept describe a real car? <span class="b m">{{a}}no{{/a}}</span> Why?
+        <span class="b m">{{a}}a car cannot weigh 0 lb{{/a}}</span></p>
+      <p class="ans">Predicted mpg for a 3450 lb car: <span class="b s">{{a}}45.85 mpg{{/a}}</span></p>
     </div>
   </div>
 
@@ -165,15 +167,15 @@ slug: Linear_Models_in_the_Real_World
       <table class="steps">
         <tr><th style="width:3.2in">Situation</th><th>Model</th><th style="width:1.3in">Answer</th></tr>
         <tr><td>1. A phone plan costs $25 per month plus $0.10 per text.
-          Find the cost for 150 texts.</td><td></td><td></td></tr>
+          Find the cost for 150 texts.</td><td>{{a}}<var>C</var>(<var>t</var>) = 0.10<var>t</var> + 25{{/a}}</td><td>{{a}}$40{{/a}}</td></tr>
         <tr><td>2. A rental car is $60 per day plus $0.30 per mile.
-          Find the cost of 200 miles in one day.</td><td></td><td></td></tr>
+          Find the cost of 200 miles in one day.</td><td>{{a}}<var>C</var>(<var>m</var>) = 0.30<var>m</var> + 60{{/a}}</td><td>{{a}}$120{{/a}}</td></tr>
         <tr><td>3. A plumber charges $50 for a house call plus $65 per hour.
-          Write <var>C</var>(<var>h</var>).</td><td></td><td></td></tr>
+          Write <var>C</var>(<var>h</var>).</td><td>{{a}}<var>C</var>(<var>h</var>) = 65<var>h</var> + 50{{/a}}</td><td>{{a}}&mdash;{{/a}}</td></tr>
         <tr><td>4. It is 72&deg;F at noon and drops steadily to 54&deg;F by 8 p.m.
-          Write <var>T</var>(<var>t</var>), <var>t</var> = hours after noon.</td><td></td><td></td></tr>
+          Write <var>T</var>(<var>t</var>), <var>t</var> = hours after noon.</td><td>{{a}}<var>T</var>(<var>t</var>) = 72 &minus; 2.25<var>t</var>{{/a}}</td><td>{{a}}&minus;18&deg; over 8 h{{/a}}</td></tr>
         <tr><td>5. A musician earns $75 per hour plus a $100 setup fee.
-          Write <var>E</var>(<var>h</var>) and find <var>E</var>(3.5).</td><td></td><td></td></tr>
+          Write <var>E</var>(<var>h</var>) and find <var>E</var>(3.5).</td><td>{{a}}<var>E</var>(<var>h</var>) = 75<var>h</var> + 100{{/a}}</td><td>{{a}}$362.50{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -184,8 +186,8 @@ slug: Linear_Models_in_the_Real_World
     <div class="q">6. <var>C</var>(<var>x</var>) = 40<var>x</var> + 200 models the cost of making
       <var>x</var> items.</div>
     <div class="work h1">
-      <p>The 40 means: <span class="b xl"></span></p>
-      <p>The 200 means: <span class="b xl"></span></p>
+      <p>The 40 means: <span class="b xl">{{a}}each item costs $40 to make{{/a}}</span></p>
+      <p>The 200 means: <span class="b xl">{{a}}a fixed $200 of start-up cost, even for zero items{{/a}}</span></p>
     </div>
   </div>
 
@@ -193,8 +195,8 @@ slug: Linear_Models_in_the_Real_World
     <div class="q">7. <var>T</var>(<var>d</var>) = 85 &minus; 2<var>d</var> models temperature
       at <var>d</var> thousand feet.</div>
     <div class="work h1">
-      <p>Slope: <span class="b xl"></span></p>
-      <p>Intercept: <span class="b xl"></span></p>
+      <p>Slope: <span class="b xl">{{a}}the temperature drops 2&deg; for every thousand feet of altitude{{/a}}</span></p>
+      <p>Intercept: <span class="b xl">{{a}}85&deg; at sea level{{/a}}</span></p>
     </div>
   </div>
 
@@ -202,8 +204,8 @@ slug: Linear_Models_in_the_Real_World
     <div class="q">8. <var>P</var>(<var>h</var>) = 10.5<var>h</var> + 35 gives a dog walker's
       total pay.</div>
     <div class="work h1">
-      <p>Slope: <span class="b xl"></span></p>
-      <p>Intercept: <span class="b xl"></span></p>
+      <p>Slope: <span class="b xl">{{a}}$10.50 for each hour walked{{/a}}</span></p>
+      <p>Intercept: <span class="b xl">{{a}}a $35 flat fee no matter how long the walk{{/a}}</span></p>
     </div>
   </div>
 
@@ -212,19 +214,19 @@ slug: Linear_Models_in_the_Real_World
   <div class="ex">
     <div class="q">9. One gym charges $30 per month plus $5 per visit. Another has no monthly fee
       but $9 per visit. After how many visits is the cost the same?</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>30 + 5<var>v</var> = 9<var>v</var> &nbsp;&rarr;&nbsp; 30 = 4<var>v</var></p><p><var>v</var> = 7.5 visits &mdash; so at 8 visits the flat-fee gym pulls ahead.</p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">10. Company A charges $12 per poster. Company B charges an $80 setup fee plus
       $8 per poster. At how many posters is the cost equal?</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>12<var>p</var> = 80 + 8<var>p</var> &nbsp;&rarr;&nbsp; 4<var>p</var> = 80</p><p><var>p</var> = <b>20 posters</b></p>{{/a}}</div>
   </div>
 
   <div class="ex">
     <div class="q">11. One streaming plan is $6.50 per month plus $1 per episode. Another is $12
       per month plus $0.50 per episode. Which is cheaper for 15 episodes?</div>
-    <div class="work h2"></div>
+    <div class="work h2">{{a}}<p>6.50 + 1(15) = $21.50 &nbsp;&nbsp; 12 + 0.50(15) = $19.50</p><p>The $12/month plan is cheaper for 15 episodes.</p>{{/a}}</div>
   </div>
 
   <h3>Trend Interpretation</h3>
@@ -236,10 +238,10 @@ slug: Linear_Models_in_the_Real_World
       <table class="steps">
         <tr><th style="width:2.6in">Situation</th><th>Direction / strength</th>
           <th>Slope means</th><th>Intercept means</th></tr>
-        <tr><td>12. As outdoor temperature rises, cups of hot chocolate sold falls.</td><td></td><td></td><td></td></tr>
-        <tr><td>13. More time on review videos goes with higher quiz scores.</td><td></td><td></td><td></td></tr>
-        <tr><td>14. As screen time rises, sleep hours fall &mdash; with a lot of scatter.</td><td></td><td></td><td></td></tr>
-        <tr><td>15. Practice hours vs. race time, with a negative slope.</td><td></td><td></td><td></td></tr>
+        <tr><td>12. As outdoor temperature rises, cups of hot chocolate sold falls.</td><td>{{a}}negative, fairly strong{{/a}}</td><td>{{a}}each degree warmer, fewer cups sold{{/a}}</td><td>{{a}}cups sold when it is 0&deg; out{{/a}}</td></tr>
+        <tr><td>13. More time on review videos goes with higher quiz scores.</td><td>{{a}}positive, moderate to strong{{/a}}</td><td>{{a}}more review time goes with a higher score{{/a}}</td><td>{{a}}the predicted score with no review time{{/a}}</td></tr>
+        <tr><td>14. As screen time rises, sleep hours fall &mdash; with a lot of scatter.</td><td>{{a}}negative, weak &mdash; lots of scatter{{/a}}</td><td>{{a}}more screen time goes with less sleep{{/a}}</td><td>{{a}}predicted sleep with no screen time{{/a}}</td></tr>
+        <tr><td>15. Practice hours vs. race time, with a negative slope.</td><td>{{a}}negative{{/a}}</td><td>{{a}}each hour of practice lowers the race time{{/a}}</td><td>{{a}}the predicted race time with no practice{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -250,15 +252,15 @@ slug: Linear_Models_in_the_Real_World
     <div class="q">16. <var>F</var>(<var>w</var>) = &minus;0.007<var>w</var> + 70, valid for
       2500 &le; <var>w</var> &le; 4500.</div>
     <div class="work h25">
-      <p>a. Predict the mpg for a 3600 lb car. <span class="b m"></span></p>
+      <p>a. Predict the mpg for a 3600 lb car. <span class="b m">{{a}}44.8 mpg{{/a}}</span></p>
       <p>b. A real 3600 lb car gets 51.5 mpg. Residual (actual &minus; predicted) =
-        <span class="b s"></span>, so the point is <span class="b m"></span> the line.</p>
+        <span class="b s">{{a}}+6.7{{/a}}</span>, so the point is <span class="b m">{{a}}above{{/a}}</span> the line.</p>
       <p>c. A package adds 180 lb and its tires cost another 1.3 mpg. New prediction:
-        <span class="b m"></span></p>
-      <p>d. What weight would reach 55 mpg? <span class="b m"></span>
-        Is that inside the valid range? <span class="b m"></span></p>
+        <span class="b m">{{a}}<var>w</var> = 3780 &rarr; 43.54, minus 1.3 = 42.24 mpg{{/a}}</span></p>
+      <p>d. What weight would reach 55 mpg? <span class="b m">{{a}}55 = &minus;0.007<var>w</var> + 70 &rarr; <var>w</var> &asymp; 2143 lb{{/a}}</span>
+        Is that inside the valid range? <span class="b m">{{a}}no &mdash; it is below the 2500 lb limit{{/a}}</span></p>
       <p>e. A bad data point appears at (4300 lb, 62 mpg). How would it change the slope?
-        <span class="b m"></span> The strength? <span class="b m"></span></p>
+        <span class="b m">{{a}}it sits well above the trend at a heavy weight, so it would pull that end up and make the slope less negative{{/a}}</span> The strength? <span class="b m">{{a}}it would weaken the correlation{{/a}}</span></p>
     </div>
   </div>
 
