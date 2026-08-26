@@ -64,7 +64,6 @@ HEADER_RE = re.compile(r"\A<!--(.*?)-->\s*", re.S)
 # {{a}}...{{/a}} marks answer content: dropped from the student handout,
 # shown in red on the teacher key.
 ANS_RE = re.compile(r"\{\{a\}\}(.*?)\{\{/a\}\}", re.S)
-ANS_LINE_RE = re.compile(r"^[ \t]*\{\{a\}\}.*?\{\{/a\}\}[ \t]*\n", re.S | re.M)
 # an answer holding block-level markup needs a block wrapper, not a <span>
 BLOCK_RE = re.compile(r"<(table|div|p|ul|ol|h[1-6])\b", re.I)
 
@@ -74,10 +73,17 @@ KEYLINE = '<div class="keybadge">Teacher Key &mdash; answers in red</div>'
 
 
 def _drop_answers(body):
-    # an answer sitting alone on its line takes the whole line with it, so the
-    # student handout is byte-identical to one built from a fragment with no
-    # answers in it at all
-    return ANS_RE.sub("", ANS_LINE_RE.sub("", body))
+    # An answer sitting alone on its line takes the whole line with it, so the
+    # student handout is byte-identical to one built from a fragment carrying no
+    # answers at all.  Each answer collapses to a sentinel first: a line left
+    # holding nothing but sentinels goes, anything else just loses them.
+    sent = "\x00"
+    lines = []
+    for line in ANS_RE.sub(sent, body).split("\n"):
+        if sent in line and not line.replace(sent, "").strip():
+            continue
+        lines.append(line.replace(sent, ""))
+    return "\n".join(lines)
 
 
 def _show_answers(body):
