@@ -98,16 +98,26 @@ FRAC_RE = re.compile(r"\{\{f (.+?)\}\}", re.S)
 
 
 def _fraction(match):
+    """Split {{f a/b}} at its dividing slash.
+
+    Slashes inside a tag (</var>, />) or inside a <sup> (a fractional exponent
+    like x^{5/4}) are not the fraction bar, so they are skipped.
+    """
     body = match.group(1)
-    for i, ch in enumerate(body):
-        if ch != "/":
+    sup, i, n = 0, 0, len(body)
+    while i < n:
+        if body.startswith("<sup", i):
+            sup += 1
+        elif body.startswith("</sup>", i):
+            sup -= 1
+        if body[i] == "<":                     # step over the whole tag
+            close = body.find(">", i)
+            i = close + 1 if close >= 0 else i + 1
             continue
-        if i > 0 and body[i - 1] == "<":       # closing tag, e.g. </var>
-            continue
-        if i + 1 < len(body) and body[i + 1] == ">":   # self-closing tag
-            continue
-        return ('<span class="f"><b>%s</b><b>%s</b></span>'
-                % (body[:i].strip(), body[i + 1:].strip()))
+        if body[i] == "/" and sup == 0:
+            return ('<span class="f"><b>%s</b><b>%s</b></span>'
+                    % (body[:i].strip(), body[i + 1:].strip()))
+        i += 1
     raise SystemExit("no dividing slash in {{f %s}}" % body)
 
 
