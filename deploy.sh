@@ -43,7 +43,9 @@ echo "Preparing worktree for $DEPLOY_BRANCH..."
 if git show-ref --verify --quiet "refs/heads/$DEPLOY_BRANCH"; then
   git worktree add "$ABS_TEMP_DIR" "$DEPLOY_BRANCH"
 elif git ls-remote --exit-code --heads origin "$DEPLOY_BRANCH" >/dev/null 2>&1; then
-  git worktree add "$ABS_TEMP_DIR" "origin/$DEPLOY_BRANCH"
+  # -B creates the local branch at the remote tip; without it the worktree is on a
+  # detached HEAD and the push at the end has no "$DEPLOY_BRANCH" ref to push.
+  git worktree add -B "$DEPLOY_BRANCH" "$ABS_TEMP_DIR" "origin/$DEPLOY_BRANCH"
 else
   # First deploy: create orphan branch
   git worktree add --detach "$ABS_TEMP_DIR"

@@ -165,13 +165,13 @@ These solutions match the x-intercepts we saw on the graph.
 Solve
 
 $$
-2x^2 = 3x + 4.
+2x^2 = 7x + 4.
 $$
 
 Before factoring, we move all terms to one side so the equation equals zero.
 
 $$
-2x^2 - 3x - 4 = 0
+2x^2 - 7x - 4 = 0
 $$
 
 Now we factor.

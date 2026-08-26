@@ -22,22 +22,22 @@ By the end of this unit, you’ll be able to:
 
 ## Topics in This Unit
 
-[**Integers & Number Lines**](1.1_Integers_&_Number_Lines.html)  
+[**Integers & Number Lines**](1.1_Integers_and_Number_Lines.html)  
 Understand and use positive and negative numbers, and how to place them on a number line.
 
-[**Factors, Multiples & Prime Factorization**](1.2_Factors_Multiples_&_Prime_Factorization.html)  
+[**Factors, Multiples & Prime Factorization**](1.2_Factors_Multiples_and_Prime_Factorization.html)  
 Break numbers into their prime building blocks using factor trees.
 
-[**GCF & Simplifying Fractions**](1.3_GCF_&_Simplifying_Fractions.html)  
+[**GCF & Simplifying Fractions**](1.3_GCF_and_Simplifying_Fractions.html)  
 Use prime factorization to find the GCF and simplify fractions to their simplest form.
 
-[**Multiply, Divide & Compare Fractions**](1.4_Multiply_Divide_&_Compare_Fractions.html)  
+[**Multiply, Divide & Compare Fractions**](1.4_Multiply_Divide_and_Compare_Fractions.html)  
 Work with fractions in ways that actually show up in Algebra (simplify, multiply, divide, and compare).
 
 [**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.qmd)
 Learn to add and subtract fractions by finding a common denominator.
 
-[**Fractions, Decimals & Percents – Conversions**](1.6_Fractions_Decimals_&_Percents.html)  
+[**Fractions, Decimals & Percents – Conversions**](1.6_Fractions_Decimals_and_Percents.html)  
 Convert between different number forms and compare them.
 
 [**Solving Problems with Fractions, Decimals & Percents**](1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html)  
