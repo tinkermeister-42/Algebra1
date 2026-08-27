@@ -21,7 +21,7 @@ In this lesson, you’ll learn how to simplify first (by using the {{< glink "di
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

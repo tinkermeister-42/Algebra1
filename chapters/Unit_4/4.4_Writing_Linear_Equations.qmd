@@ -26,7 +26,7 @@ The key is to recognize what you already know (the **slope**, a **point**, or bo
 {{< glink "slope-intercept form" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.4_Writing_Linear_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

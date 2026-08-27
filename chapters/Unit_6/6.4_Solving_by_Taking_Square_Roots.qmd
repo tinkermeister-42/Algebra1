@@ -26,7 +26,7 @@ In this lesson, we will formalize this idea into a reliable solving method calle
 {{< glink "real solution" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.4_Solving_by_Taking_Square_Roots.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

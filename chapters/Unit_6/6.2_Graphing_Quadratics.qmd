@@ -25,7 +25,7 @@ Now we ask a similar question for quadratics:
 {{< glink slug="vertex-form-quadratic" text="vertex form" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -132,7 +132,7 @@ Connect the points smoothly to complete the parabola:
 
 When graphing by hand, you might add a couple more points to improve accuracy. If you need very precise graphs, calculators or computer programs are usually better.
 
-::: {.note title="Reading the Graph"}
+:::{.note title="Reading the Graph"}
 A graph can tell us a lot about how a function behaves.
 
 ![](/images/Unit_6/Lesson_2/QuadraticFeatures.png){width="320px" fig-align="center"}
@@ -149,7 +149,7 @@ Because the graph crosses the x-axis twice, the function is:
 These ideas help us describe the function’s behavior just by looking at the graph.
 :::
 
-::: {.you-try-m title="Graph the quadratic from its features."}
+:::{.you-try-m title="Graph the quadratic from its features."}
 Graph the quadratic
 
 $$
@@ -163,7 +163,7 @@ with features:
 - Opening direction: upward  
 :::
 
-::: {.answer title="Answer"}
+:::{.answer title="Answer"}
 ![](/images/Unit_6/Lesson_2/YouTry1.png){width="320px" fig-align="center"}
 :::
 
@@ -250,7 +250,7 @@ The vertex is **not** $(3, -2)$. It is $(-3, -2)$.
 Always switch the sign on the $h$ value and keep the sign for the $k$ value.
 :::
 
-::: {.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
+:::{.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
 - Vertex: $(-1, 3)$  
 - Axis of symmetry: $x = -1$  
 - Opening direction: upward  
@@ -306,7 +306,7 @@ Axis of symmetry: $x = 2$
 
 ***
 
-::: {.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
+:::{.you-try title="Find the axis of symmetry for $f(x) = 2x^2 + 4x - 1$"}
 $a=2$, $b=4$
 
 $$
@@ -351,7 +351,7 @@ Vertex: $(3, 1)$
 
 ***
 
-::: {.you-try title="Find the vertex of $f(x) = 2x^2 + 8x - 5$."}
+:::{.you-try title="Find the vertex of $f(x) = 2x^2 + 8x - 5$."}
 Axis:  
 $$x = \frac{-8}{2(2)} = -2$$
 

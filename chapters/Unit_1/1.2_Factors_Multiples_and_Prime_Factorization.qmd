@@ -27,7 +27,7 @@ You’ll use these skills again and again, from simplifying fractions to solving
 {{< glink "prime number" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -487,7 +487,7 @@ flowchart TB
 
 ***
 
-**Challenge**
+**Challenge Problems**
 
 6. Can two different numbers have the same prime factorization? Why or why not?
 

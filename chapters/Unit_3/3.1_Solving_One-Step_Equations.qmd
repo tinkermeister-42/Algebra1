@@ -30,7 +30,7 @@ Later lessons will build on these rules to solve more complicated equations.
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

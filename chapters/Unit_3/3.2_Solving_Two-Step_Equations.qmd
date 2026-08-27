@@ -14,7 +14,7 @@ With one-step equations, we identified the operation and did the opposite to bot
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.2_Solving_Two-Step_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

@@ -25,7 +25,7 @@ In this lesson, you’ll learn how to recognize when expressions are equivalent 
 
 ***
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.6_Equivalent_Expressions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

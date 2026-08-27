@@ -18,7 +18,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 {{< glink numerator >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -107,13 +107,13 @@ Let’s return to **Jack’s pizza**. Jack ate
 
 At first, these pieces don’t match.
 
-:::: {.columns}
-::: {.column width="50%"}
+::::{.columns}
+:::{.column width="50%"}
 **Pepperoni (cut into thirds)**  
 ![](/images/Unit_1/Lesson_6/pepperoni_pizza2of3.svg)
 :::
 
-::: {.column width="50%"}
+:::{.column width="50%"}
 **Cheese (cut into fourths)**  
 ![](/images/Unit_1/Lesson_6/cheese_pizza_3of4.svg)
 :::
@@ -161,13 +161,13 @@ That means:
 
 Now both pizzas can be described using **twelfths**.
 
-:::: {.columns}
-::: {.column width="50%"}
+::::{.columns}
+:::{.column width="50%"}
 **Pepperoni in twelfths**  
 ![](/images/Unit_1/Lesson_6/pepperoni_pizza8of12.svg)
 :::
 
-::: {.column width="50%"}
+:::{.column width="50%"}
 **Cheese in twelfths**  
 ![](/images/Unit_1/Lesson_6/cheese_pizza_9of12.svg)
 :::
@@ -375,7 +375,7 @@ How many miles did they run total?
 
 ***
 
-::: {.answers}
+:::{.answers}
 
 1. $\frac{1}{2}$  
 2. $\frac{2}{3}$  

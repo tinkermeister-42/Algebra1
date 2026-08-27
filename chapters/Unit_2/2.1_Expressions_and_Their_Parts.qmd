@@ -18,7 +18,7 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -79,7 +79,7 @@ An **expression** is a math phrase made of numbers, variables, and {{< glink slu
 - $3x + 5 = 20$ *(equation: has an equals sign)*  
 - $x > 7$ *(comparison)*  
 
-::: {.you-try-m title="Think about this."}
+:::{.you-try-m title="Think about this."}
 You have two situations:
 
 1. The total number of pencils in 7 boxes.
@@ -89,7 +89,7 @@ You have two situations:
 - How about situation 2? 
 - Explain your reasoning.
 :::
-::: {.answer title="Answer"}
+:::{.answer title="Answer"}
 - Situation 1: Yes: you can write **7p** if **p** is pencils per box.
 - Situation 2: No: this is a comparison, not a single expression. 
 
@@ -102,7 +102,7 @@ Expressions describe quantities; they don’t make comparisons.
 
 Back to the apple boxes: before, you had one box. Now suppose you have 5 boxes, each with **x** apples.
 
-::: {.text-center}
+:::{.text-center}
 ![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
 ![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
 ![](/images/Unit_2/Lesson_1/AppleBoxX.png){ width=100px } 
@@ -112,12 +112,12 @@ Back to the apple boxes: before, you had one box. Now suppose you have 5 boxes, 
 
 If each box has **x** apples, then the total is $5 \cdot x$ or simply $5x$.
 
-::: {.you-try title="Write an expression that represents 10 boxes of pencils"}
+:::{.you-try title="Write an expression that represents 10 boxes of pencils"}
 Let $p$ = pencils per box.  
 Total pencils = $10p$
 :::
 
-::: {.gotcha title="Where did the multiply sign go?"}
+:::{.gotcha title="Where did the multiply sign go?"}
 In algebra, we usually don’t use $\times$ for multiplication. Instead, we use a dot "$\cdot$" or simply place terms next to each other ({{< glink "multiplication by proximity" >}}).
 
 **Three ways to write “3 times x”:**
@@ -151,7 +151,7 @@ $$
 - **Coefficients** multiply a variable: $\color{blue}{4}$ and $\color{blue}{2}$  
 - **Constants** are numbers that don’t change: $\color{red}{-7}$
 
-::: {.gotcha title="Don’t forget the sign!"}
+:::{.gotcha title="Don’t forget the sign!"}
 - The sign (+ or −) belongs to the term.  
 - A lone variable has an **implied coefficient** of 1.
 
@@ -162,7 +162,7 @@ $-5x^2 - 2x$ → terms: $-5x^2$, $-2x$; coefficients: -5, -2
 $3x^2 + x - y$ → terms: $3x^2$, $x$, $-y$; coefficients: 3, 1, -1
 :::
 
-::: {.you-try collapse=true title="Make your own expression with 4+ terms. List the parts."}
+:::{.you-try collapse=true title="Make your own expression with 4+ terms. List the parts."}
 Example: $18x - 2y + 3z - 1$  
 Terms: $18x$, $-2y$, $3z$, $-1$  
 Coefficients: 18, -2, 3  
@@ -196,7 +196,7 @@ Constant: -1
 
 ***
 
-::: {.you-try-m title="Rectangle width from length"}
+:::{.you-try-m title="Rectangle width from length"}
 A rectangle has length **L**. The width is 2 more than 4 times the length.  
 Find an expression for the width **W** in terms of the length **L**,
 :::

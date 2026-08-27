@@ -17,7 +17,7 @@ In this lesson, you’ll learn how to bring all the variable terms together, sim
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

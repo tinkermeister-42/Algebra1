@@ -20,7 +20,7 @@ It’s time to move from numbers to shapes, and start seeing how a function beha
 {{< glink "ordered pair" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.1_Graphing_Function_Rules.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -140,7 +140,7 @@ When an equation has one variable, its answer is just one number. On a number li
 But when an equation has two variables, it doesn’t have just one answer, it has many! In fact, all of the (x, y) pairs that make the equation true line up to form a straight line. That’s why we graph the equation, the line shows all the solutions.
 :::
 
-::: {.remember}
+:::{.remember}
 
 $f(x)$ means the same thing as $y$.  
 It’s just a different way to name the output of a function.  

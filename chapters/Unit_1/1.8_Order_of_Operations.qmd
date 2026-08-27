@@ -26,7 +26,7 @@ In this lesson, you'll learn how to follow those rules correctly, even when nega
 {{< glink exponent >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -247,7 +247,7 @@ $$
 
 ***
 
-::: {.you-try title="$-3 \times (4 - 7)$"}
+:::{.you-try title="$-3 \times (4 - 7)$"}
 
 First do the parentheses:
 $$
@@ -299,7 +299,7 @@ Without parentheses, you might square the wrong number. Always follow PEMDAS and
 
 :::
 
-::: {.gotcha title="Be careful with negatives!"}
+:::{.gotcha title="Be careful with negatives!"}
 
 $-3^2$ means $-(3^2)$, which is:
 $$
@@ -350,7 +350,7 @@ $$
 
 ***
 
-::: {.remember  title="What counts as grouping?"}
+:::{.remember title="What counts as grouping?"}
 
 PEMDAS starts with **grouping**, and that means more than just parentheses!
 
@@ -365,7 +365,7 @@ Always simplify **grouped expressions** before applying exponents or multiplying
 
 :::
 
-::: {.you-try title="$\left[ 5 + (3^2 - 1) \right] \times 2$"}
+:::{.you-try title="$\left[ 5 + (3^2 - 1) \right] \times 2$"}
 
 **Step 1: Inner parentheses**  
 $$

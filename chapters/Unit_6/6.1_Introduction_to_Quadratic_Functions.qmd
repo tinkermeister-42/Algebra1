@@ -28,7 +28,7 @@ In this lesson, we will learn a new type of function that can model curved paths
 {{< glink vertex >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.1_Introduction_to_Quadratic_Functions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

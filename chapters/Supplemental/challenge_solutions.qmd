@@ -266,9 +266,9 @@ No Challenge Questions
 
 :::{.answers}
 
-1.  If $x = 2$ there will be no solution. For all other values, there will be one solution.
+24.  If $k = 2$ there will be no solution. For all other values, there will be one solution.
 
-2.   $x = -6y + 4$. One solution in terms of $y$.
+25.  $x = -6y + 4$. One solution in terms of $y$.
 
 :::
 

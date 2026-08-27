@@ -18,7 +18,7 @@ In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to
 {{< glink simplify >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.3_GCF_and_Simplifying_Fractions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -680,7 +680,7 @@ Or double that:
 
 Simplifying the original recipe helped you find a cleaner ratio, one that’s easier to scale up or down, depending on how many cookies you want.
 
-::: {.real-world}
+:::{.real-world}
 Simplifying helps you work with numbers more easily in the real world. Whether you’re adjusting recipes, mixing paint, or scaling blueprints, understanding fractions and simplifying them makes life easier.
 :::
 
@@ -753,7 +753,7 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 
 ***
 
-::: {.answers}
+:::{.answers}
 
 **Warm-Up**
 

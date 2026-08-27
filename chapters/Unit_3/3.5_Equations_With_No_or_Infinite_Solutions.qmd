@@ -15,7 +15,7 @@ But equations don’t always behave that way. Sometimes:
 
 These are called **special cases**. In this lesson, we’ll see what they look like and how to spot them.
 
-::: {.objectives}
+:::{.objectives}
 - [ ] I can recognize when an equation has **no solution**.
 - [ ] I can recognize when an equation has **infinitely many solutions**.
 :::
@@ -26,7 +26,7 @@ These are called **special cases**. In this lesson, we’ll see what they look l
 {{< glink "no solution" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

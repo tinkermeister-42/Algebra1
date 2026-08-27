@@ -37,7 +37,7 @@ In this lesson, we will find the answers to these questions by learning the basi
 :::
 
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.4_Factoring_Polynomials_A.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

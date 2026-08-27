@@ -24,7 +24,7 @@ Either way, you get the same answer. What we just did actually followed a rule i
 {{< glink factor >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.4_The_Distributive_Property.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -126,7 +126,7 @@ $$
 
 :::
 
-::: {.you-try title="Expand $5(x+7)$ using the distributive property."}
+:::{.you-try title="Expand $5(x+7)$ using the distributive property."}
 $$
 5(x+7) = 5(x) + 5(7) = 5x + 35
 $$
@@ -159,7 +159,7 @@ $$
 $$
 
 
-::: {.you-try title="Expand $-2(3-y)$"}
+:::{.you-try title="Expand $-2(3-y)$"}
 $$
 -2(3 - y) = -2(3) - 2(-y) = -6 + 2y
 $$
@@ -199,7 +199,7 @@ $$
 $$
 :::
 
-::: {.gotcha title="Watch those signs!"}
+:::{.gotcha title="Watch those signs!"}
 Students often forget to keep the sign with the multiplier.
 
 **Example:**
@@ -237,7 +237,7 @@ Factor out the {{< glink "greatest common factor" >}} from each expression.
 
 We call this process {{< glink factoring >}}.
 
-::: {.you-try title="Factor the expression $12x + 18$."}
+:::{.you-try title="Factor the expression $12x + 18$."}
 
 The **GCF** is $6$.
 

@@ -5,7 +5,7 @@ project:
 
 resources:
   - glossary.json
-  - scripts/*
+  - scripts/*.js
   - guided_notes/Unit_*/*.html
   - guided_notes/assets/*
 

@@ -28,7 +28,7 @@ In this lesson, we will see that we already have all of the tools we need.
 {{< glink "zero product property" >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

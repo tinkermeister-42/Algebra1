@@ -20,7 +20,7 @@ In this lesson, you’ll practice choosing the right form for the situation, est
 {{< glink whole >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
@@ -320,7 +320,7 @@ What percent of students are in art class?
 
 ***
 
-::: {.answers}
+:::{.answers}
 
 **Warm-Up**
 

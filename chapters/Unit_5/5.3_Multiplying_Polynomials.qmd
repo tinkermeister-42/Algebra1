@@ -24,7 +24,7 @@ In this lesson, you’ll learn a method that keeps everything in order and works
 :::
 
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.3_Multiplying_Polynomials.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 

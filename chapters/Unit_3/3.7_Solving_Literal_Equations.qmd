@@ -23,7 +23,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 {{< glink variable >}}
 :::
 
-::: {.guided-notes-link}
+:::{.guided-notes-link}
 [Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
 :::
 
