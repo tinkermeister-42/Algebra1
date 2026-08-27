@@ -233,15 +233,38 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
 ***
 
+**Absolute Value**
+
+7. Find each absolute value.
+
+    a. $|-9|$
+
+    b. $|6|$
+
+    c. $|0|$
+
+    d. $|-2.5|$
+
+8. Two different numbers both have an absolute value of 12. What are they?
+
+9. A hiker is 400 feet below the rim of a canyon. Her friend is 250 feet above the rim.
+   Who is farther from the rim?
+
+:::{.daybreak}
+Day 2 practice starts here
+:::
+
+***
+
 **Comparing Numbers**
 
-7. Which number is **greater**, 5 or -10?
+10. Which number is **greater**, 5 or -10?
 
-8. Which number has the greater absolute value, 5 or -10?
+11. Which number has the greater absolute value, 5 or -10?
 
-9. Is 28 bigger than -30?
+12. Is 28 bigger than -30?
 
-10. Use (**&gt;**) or (**&lt;**) to compare:
+13. Use (**&gt;**) or (**&lt;**) to compare:
 
     a. -11\ \___\ -13
 
@@ -249,7 +272,7 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
     c. |-3|\ \___\ |5|
 
-11. Which is bigger?
+14. Which is bigger?
 
     a. -4 or -5
 
@@ -257,7 +280,7 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
     c. |-5| or |4|
 
-12. Use a number line to compare:
+15. Use a number line to compare:
 
     a. -7 to 2.
  
@@ -267,7 +290,7 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
 **Addition and Subtraction**
 
-13. Show these on a number line:
+16. Show these on a number line:
 
     a. $-3 + 5$
 
@@ -282,7 +305,7 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
 **Word Problems**
 
-14. Solve using a number line
+17. Solve using a number line
 
     a. The temperature was -12°F. It warms up by 20°. What is the new temperature?
 
@@ -334,56 +357,69 @@ If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ 
 
 ***
 
+**Absolute Value**
+
+7. a. 9
+   b. 6
+   c. 0
+   d. 2.5
+
+8. 12 and -12
+
+9. The hiker. She is $|-400| = 400$ feet from the rim; her friend is $|250| = 250$ feet from it.
+
+***
+
 **Comparing Numbers**
 
-7. 5 is greater (farther right on the number line)
+10. 5 is greater (farther right on the number line)
 
-8. -10 has the greater absolute value (10 > 5)
+11. -10 has the greater absolute value (10 > 5)
 
-9. Yes (28 is greater because it is to the right of -30)
+12. Yes (28 is greater because it is to the right of -30)
 
-10. a. -11 > -13
+13. a. -11 > -13
     b. 7 > -2
     c. |-3| < |5| (3 < 5)
 
-11. a. -4 > -5
+14. a. -4 > -5
     b. 3 > -7
     c. |-5| > |4| (5 > 4)
 
-12. a. 2 > -7
+15. a. 2 > -7
     b. *Answers vary: for example, 2025 > 1985*
        
-       ![](/images/Unit_1/Lesson_1/answer_12_b.png)
+       ![](/images/Unit_1/Lesson_1/answer_15_b.png)
 
 ***
 
 **Addition and Subtraction**
 
-13. a. 
+16. a. 
 
-       ![](/images/Unit_1/Lesson_1/answer_13_a.png)
+       ![](/images/Unit_1/Lesson_1/answer_16_a.png)
     b. 
 
-       ![](/images/Unit_1/Lesson_1/answer_13_b.png)
+       ![](/images/Unit_1/Lesson_1/answer_16_b.png)
     c. 
 
-       ![](/images/Unit_1/Lesson_1/answer_13_c.png)
+       ![](/images/Unit_1/Lesson_1/answer_16_c.png)
     d. 
 
-       ![](/images/Unit_1/Lesson_1/answer_13_d.png)
+       ![](/images/Unit_1/Lesson_1/answer_16_d.png)
 
 ***
 
 **Word Problems**
 
-14. a.  8°F
+17. a.  8°F
         
-        ![](/images/Unit_1/Lesson_1/answer_14_a.png)
+        ![](/images/Unit_1/Lesson_1/answer_17_a.png)
     b.  75 feet down
         
-        ![](/images/Unit_1/Lesson_1/answer_14_b.png)
+        ![](/images/Unit_1/Lesson_1/answer_17_b.png)
     c.  -$\$3$
         
-        ![](/images/Unit_1/Lesson_1/answer_14_c.png)
+        ![](/images/Unit_1/Lesson_1/answer_17_c.png)
 
 :::
