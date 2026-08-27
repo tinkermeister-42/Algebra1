@@ -134,3 +134,24 @@
 .guided-notes-link p { margin: 0; }
 .guided-notes-link a { font-weight: bold; }
 .guided-notes-link a::before { content: "\1F4C4\00a0"; }
+
+/* Where a two-day lesson divides.  Mirrors .daybreak in the guided notes so
+   the lesson page and the printed handout break at the same place. */
+.daybreak {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 2rem 0 1.25rem;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #2c5f8a;
+}
+.daybreak::before,
+.daybreak::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dashed #9aa3ab;
+}
+.daybreak p { margin: 0; }

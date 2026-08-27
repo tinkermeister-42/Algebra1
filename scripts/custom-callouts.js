@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isOuterCollapsible = collapsible.has(calloutType);
     const userTitle = div.getAttribute("title");
+    // The title is rendered into .callout-title below; leaving the attribute
+    // in place would also show it as a native tooltip, raw TeX and all.
+    if (userTitle !== null) div.removeAttribute("title");
     const defaultLabel = iconMap[calloutType] ?? "ℹ️";
 
     const titleDiv = document.createElement("div");

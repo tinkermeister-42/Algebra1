@@ -113,6 +113,29 @@ table.vocab td.def { height: .38in; }
   letter-spacing: .03em;
 }
 .ex > .work { padding: 5px 9px 7px; }
+
+/* A demoted example: same slot, but the student works it rather than watching.
+   Dashed edge + a small pill, so it reads as different without adding a box. */
+.ex.yours { border-style: dashed; }
+.ex.yours > .q { background: #fff; }
+.yt {
+  float: right; margin-left: 8px;
+  font-family: Verdana, Geneva, sans-serif; font-size: 7.5pt;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 2px; padding: 0 4px;
+}
+
+/* Where a two-day lesson divides.  Day 2 starts on a fresh sheet so the
+   handout can be given out in halves. */
+.daybreak {
+  display: flex; align-items: center; gap: 9px; margin: 15px 0 11px;
+  font-family: Verdana, Geneva, sans-serif; font-size: 8.5pt;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--accent);
+  page-break-before: always;
+}
+.daybreak::before, .daybreak::after {
+  content: ""; flex: 1; border-top: 2px dashed var(--rule);
+}
 .h05 { min-height: .5in; }  .h08 { min-height: .8in; }  .h1  { min-height: 1in; }
 .h13 { min-height: 1.3in; } .h16 { min-height: 1.6in; } .h2  { min-height: 2in; }
 .h25 { min-height: 2.5in; }
