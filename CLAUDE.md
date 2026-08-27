@@ -48,6 +48,9 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - **Teacher keys:** answers go in the same fragment wrapped in `{{a}}`…`{{/a}}`;
   builder emits `#.#_Slug_KEY.html` with the answers in red (`.ans-key`)
 - Each lesson `.qmd` links to its handout via a `.guided-notes-link` div above `{{< warmup >}}`
+- **Lesson and handout are one change.** Editing an example, a practice problem, or an
+  answer in a lesson `.qmd` means editing `guided_notes/src/#.#.html` to match and
+  rebuilding — the handout restates the same problems, so the two drift silently.
 - See `guided_notes/README.md` for the shorthand tokens and building blocks
 
 ## Widgets

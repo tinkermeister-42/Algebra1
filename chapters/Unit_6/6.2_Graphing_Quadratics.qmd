@@ -461,7 +461,7 @@ Find the axis of symmetry and vertex to graph each quadratic.
 
 ***
 
-::: answers
+:::{.answers}
 1. The graph is
    
    ![](/images/Unit_6/Lesson_2/Problem1.png){width="250px" fig-align="center"}
