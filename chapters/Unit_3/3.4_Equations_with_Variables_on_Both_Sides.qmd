@@ -1,4 +1,4 @@
-#  3.4 - Solving Equations With Variables on Both Sides {.unnumbered}
+# 3.4 - Solving Equations With Variables on Both Sides {.unnumbered}
 
 So far, every equation we solved had the variable on one side only. That made it clear where to “aim” our work, get the variable by itself on that side. But in real problems, equations aren’t always so neat. Sometimes the variable shows up on both sides of the equal sign.
 
@@ -270,7 +270,7 @@ When solving an equation with variables on both sides:
 
 ***
 
-## 3.4.3 - Word Problems with Variables on Both Sides
+### 3.4.3 - Word Problems with Variables on Both Sides
 
 When two different plans or expressions both describe the **same total**, we often get equations with the variable on **both sides**. Simplify each side (distribute, combine like terms), then move all variable terms to one side.
 

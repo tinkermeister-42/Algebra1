@@ -449,7 +449,7 @@ Graph each system and find the solution.
    
    ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
-4. 
+3. 
    $$
    \begin{cases}
    y = \tfrac{1}{2}x + 1 \\
@@ -459,7 +459,7 @@ Graph each system and find the solution.
    
    ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
-5. 
+4. 
    $$
    \begin{cases}
    y = -2x + 8 \\
@@ -469,7 +469,7 @@ Graph each system and find the solution.
    
    ![](/images/Unit_4/Blank.png){width="350px" fig-align="center"}
 
-6. 
+5. 
    $$
    \begin{cases}
    y = 3x - 4 \\

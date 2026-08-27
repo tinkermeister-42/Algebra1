@@ -1,4 +1,4 @@
-#  3.5 - Equations With No or Infinite Solutions {.unnumbered}
+# 3.5 - Equations With No or Infinite Solutions {.unnumbered}
 
 So far, every equation we solved had exactly one solution. After simplifying and moving terms, we always ended with something like
 

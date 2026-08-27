@@ -186,7 +186,7 @@ Now plot it.
 
 ***
 
-### 3.6.3 -- Solving Inequalities with Multiplication and Division
+### 3.6.3 - Solving Inequalities with Multiplication and Division
 
 If you multiply or divide by a positive number, then you solve just like an equation.
 
@@ -260,7 +260,7 @@ If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 
 ***
 
-### 3.6.4 -- Real-World Problems With Inequalities
+### 3.6.4 - Real-World Problems With Inequalities
 
 Let's revisit the candy problem:
 

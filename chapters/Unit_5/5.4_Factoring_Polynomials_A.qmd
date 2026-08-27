@@ -163,7 +163,7 @@ We have now learned the important first step in factoring polynomials: take out 
 
 ***
 
-### 5.4.2 – Area Models and Basic Trinomials
+### 5.4.2 - Area Models and Basic Trinomials
 
 Before we learn how to factor trinomials, it helps to understand how they are created when we multiply two binomials.  
 An area model organizes the multiplication so we can clearly see where each term comes from.
@@ -462,7 +462,7 @@ For a trinomial $x^2 + bx + c$:
 These patterns help you choose the correct factors quickly.
 :::
 
-### 5.4.3 – Mixed Expressions (GCF and Area Model)
+### 5.4.3 - Mixed Expressions (GCF and Area Model)
 
 Sometimes a polynomial needs more than one step to be completely factored.  
 If every term has a common factor, we take out the **GCF first**, then use the **area model** to factor the remaining trinomial.

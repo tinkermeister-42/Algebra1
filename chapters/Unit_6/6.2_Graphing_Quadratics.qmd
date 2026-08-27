@@ -39,7 +39,7 @@ Now we ask a similar question for quadratics:
 
 {{< learn >}}
 
-### 6.2.1 – Graphing With a Table of Values
+### 6.2.1 - Graphing With a Table of Values
 
 You first graphed linear equations by making a table of values, plotting the points, and drawing the line through them. This was easy because you only need **two** points to make a straight line.
 
@@ -90,7 +90,7 @@ For quadratics, we can graph much faster by using a few key features of the equa
 
 ***
 
-### 6.2.2 – Graphing Using Key Features
+### 6.2.2 - Graphing Using Key Features
 
 A parabola becomes much easier to sketch when you know three important features:
 
@@ -169,7 +169,7 @@ with features:
 
 ***
 
-### 6.2.3 – Graphing From Vertex Form
+### 6.2.3 - Graphing From Vertex Form
 
 As we saw in earlier units, a function can be written in different forms. One useful form for quadratics is {{< glink slug="vertex-form-quadratic" text="vertex form" >}}:
 
@@ -269,7 +269,7 @@ This means you can graph any quadratic, no matter how it’s written.
 
 ***
 
-### 6.2.4 – Finding the Axis of Symmetry (Standard Form)
+### 6.2.4 - Finding the Axis of Symmetry (Standard Form)
 
 A quadratic in {{< glink "standard form" >}} is written:
 
@@ -318,7 +318,7 @@ Axis of symmetry: $x = -1$
 
 ***
 
-### 6.2.5 – Finding the Vertex (Standard Form)
+### 6.2.5 - Finding the Vertex (Standard Form)
 
 Once we know the axis of symmetry $x = h$, finding the vertex is easy: it always has the form $(h, f(h))$.
 

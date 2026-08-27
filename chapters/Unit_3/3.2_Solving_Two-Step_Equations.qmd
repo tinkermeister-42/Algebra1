@@ -167,7 +167,7 @@ $$
 
 ***
 
-## 3.2.2 - Word Problems with Two-Step Equations
+### 3.2.2 - Word Problems with Two-Step Equations
 
 Equations are especially useful when a situation involves **two operations**. Let's look at some examples.
 

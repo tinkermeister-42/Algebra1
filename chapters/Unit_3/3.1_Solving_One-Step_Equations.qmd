@@ -145,7 +145,7 @@ $$
 
 ***
 
-### 3.1.2 -- One-Step Equations (Multiplication and Division)
+### 3.1.2 - One-Step Equations (Multiplication and Division)
 
 Solving one-step equations with multiplication and division is very similar to solving them with addition and subtraction.
 
