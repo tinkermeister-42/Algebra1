@@ -141,24 +141,27 @@ Day 2 starts here
 
 ### 1.1.4 - Comparing Integers
 
-We can also use the number line to compare values. 
+There is only one rule, and the number line gives it to you: **whichever number sits farther to the right is the greater one.**
 
-Let’s compare 2 to -7.
-![](/images/Unit_1/Lesson_1/compare_2_to_neg7.png)
+Compare 2 to -7.
+![](/images/Unit_1/Lesson_1/order_2_and_neg7.png)
 
+2 is to the right of -7, so 2 is {{< glink "greater than" >}} -7. We write that $2 > -7$, or the same thing the other way round, $-7 < 2$.
 
-You can see from the number line that 2 is {{< glink "greater than" >}} (&gt;) -7 because 2 is to the right of -7.  
+**Two negatives take a second look.** Compare -4 to -5.
+![](/images/Unit_1/Lesson_1/order_neg4_and_neg5.png)
 
-You can also see that -7 is farther from zero than 2 and so |-7| > |2|.
+-4 is to the right of -5, so $-4 > -5$ — even though 5 sounds like the bigger number. Going left to right, the negatives count *up*: $-5 < -4 < -3$.
 
 :::{.gotcha title="Which is bigger?"}
-It is easy to get confused here. When we say which number is "bigger" (or greater than), we are asking which number is farther to the right on the number line. This is **not** the same as absolute value, which asks which one is furthest from zero.
-:::
+Two questions sound alike but are not:
 
-:::{.you-try title="Compare 3 to -8 using a number line."}
-3 > -8 because it is farther to the right but |-8| > |3| because -8 is farther from zero.
+- **Which is greater?** asks which number is farther to the **right**.
+- **Which has the greater absolute value?** asks which number is farther **from zero**.
 
-![](/images/Unit_1/Lesson_1/compare_3_to_neg8.png)
+They can disagree. Here $-7 < 2$, but $|-7| > |2|$:
+
+![](/images/Unit_1/Lesson_1/compare_2_to_neg7.png)
 :::
 
 ***
