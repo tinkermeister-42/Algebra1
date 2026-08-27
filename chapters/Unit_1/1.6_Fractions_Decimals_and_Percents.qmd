@@ -119,7 +119,7 @@ This can cause small errors if you're not careful, especially when comparing val
 :::
 
 
-:::{.callout-tip title="What fractions have repeating decimals?"}
+:::{.note title="What fractions have repeating decimals?"}
 
 After you simplify the fraction, look at the denominator. If it’s made only from 2s and/or 5s (like 2, 4, 5, 8, 10, 20), the decimal ends. If it has any other factor (like 3 or 7), the decimal repeats.
 
@@ -244,7 +244,7 @@ $$
 4.23 = \text{4 and 23 hundredths} \Rightarrow 4\dfrac{23}{100}
 $$
 
-:::{.callout-tip}
+:::{.note}
 If you struggle with words like "hundredths" here is another way to think about it. To convert a decimal to a fraction, count the number of digits to the **right** of the decimal. You will divide by 1 with that many zeros after it.
 
 **Example:** 0.5431

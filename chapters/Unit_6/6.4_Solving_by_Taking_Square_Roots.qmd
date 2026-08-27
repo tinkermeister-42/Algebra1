@@ -420,7 +420,7 @@ $$
 
 ***
 
-:::{.you-try title="Simplify $\\sqrt{98}$."}
+:::{.you-try title="Simplify $\sqrt{98}$."}
 $$
 \sqrt{98} = \sqrt{49 \cdot 2} = 7\sqrt{2}.
 $$

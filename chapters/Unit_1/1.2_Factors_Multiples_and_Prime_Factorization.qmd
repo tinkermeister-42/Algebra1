@@ -1,10 +1,10 @@
 # 1.2 - Factors, Multiples & Prime Factorization {.unnumbered}
 
-Have you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what {{< glink slug=factor text="factors" >}} are about: dividing numbers into equal parts.
+Have you ever had to split something up evenly, like slices of pizza or players on a team? That’s really what {{< glink slug="factor" text="factors" >}} are about: dividing numbers into equal parts.
 
 In this lesson, you’ll learn how to:
 
-  - Spot factors and {{< glink slug=multiple text="multiples" >}}.
+  - Spot factors and {{< glink slug="multiple" text="multiples" >}}.
 
   - Tell if a number is {{< glink "prime number" >}} or {{< glink "composite number" >}}.
 
@@ -92,7 +92,7 @@ If a bus comes every 15 minutes, the arrival times are multiples of 15.
 
 ### 1.2.3 - Prime vs. Composite
 
-Some numbers can only be divided evenly two ways, others can be broken into many parts. Let's explore the difference between {{< glink slug=prime-number text="prime numbers" >}} and {{< glink slug=composite-number text="composite numbers" >}}.
+Some numbers can only be divided evenly two ways, others can be broken into many parts. Let's explore the difference between {{< glink slug="prime-number" text="prime numbers" >}} and {{< glink slug="composite-number" text="composite numbers" >}}.
 
 A **prime number** has only 2 factors: 1 and itself.
 
@@ -232,7 +232,7 @@ flowchart TB
 <br>
 5. The prime factorization is the product of the leaves of the tree: <br> 
 $$2 * 2 * 2 * 3 * 3 * 5 = 360$$
-This can be written more compactly by using the factor counts as {{< glink slug=exponent text="exponents" >}}. There are three 2s and two 3s in this case and so we get...<br>
+This can be written more compactly by using the factor counts as {{< glink slug="exponent" text="exponents" >}}. There are three 2s and two 3s in this case and so we get...<br>
 $$2^3 * 3^2 * 5 = 360$$
 
 ***
@@ -284,7 +284,7 @@ As long as you end up with the same prime numbers, the tree is correct!
 
 ***
 
-:::{.callout-tip title="Which factors should I start with?"}
+:::{.note title="Which factors should I start with?"}
 
 There is no one right answer to this question. It depends on your goal. If your goal is finding easy numbers, you might start small.  Notice that 360 is {{< glink even >}}, that means it is divisible by 2. We could divide by 2 and keep going that way.
 
@@ -373,7 +373,7 @@ So, the prime factorization of -24 is...
 $$-1 * 2^3 * 3 = -24$$
 
 
-This will come in handy later when we factor algebraic {{< glink slug=expression text="expressions" >}} like $-x^2 + 4x$. It’s often helpful to pull out a negative first!
+This will come in handy later when we factor algebraic {{< glink slug="expression" text="expressions" >}} like $-x^2 + 4x$. It’s often helpful to pull out a negative first!
 
 **Feeling overwhelmed?**
 

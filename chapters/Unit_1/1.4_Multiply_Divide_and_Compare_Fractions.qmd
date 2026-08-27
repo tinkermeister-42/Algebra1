@@ -92,7 +92,7 @@ $$
 = \frac{3}{2}
 $$
 
-:::{.callout-tip}
+:::{.note}
 If you factor before you multiply, you get to skip a step.
 $$
 \frac{2}{3} \times \frac{9}{4} = \frac{2 \times 9}{3 \times 4} = \frac{\cancel{\color{red}2} \times (3 \times \cancel{\color{red}3})}{\cancel{\color{red}3}  \times (\cancel{\color{red}2} \times 2)}

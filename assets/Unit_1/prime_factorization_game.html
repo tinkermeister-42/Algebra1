@@ -883,7 +883,7 @@
         solved: 0,
         theme: "theme-" + (localStorage.getItem(CFG.storageKeyTheme) || "classic"),
         mode: localStorage.getItem(CFG.storageKeyMode) || "easy",
-        varsEnabled: localStorage.getItem(CFG.storageKeyVars || "0") === "1",
+        varsEnabled: (localStorage.getItem(CFG.storageKeyVars) || "0") === "1",
         toast: { text: "", t0: 0, ms: 0 },
         _ui: null,
 

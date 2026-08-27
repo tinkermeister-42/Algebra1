@@ -14,7 +14,7 @@ This is a table of multiplication facts for integers from 1 to 12. Being too rel
 
 ### Factor Chart
 
-Need help finding all the factor pairs of a number? This chart lists every {{< glink composite number >}} from 1 to 100 and lists all {{< glink prime numbers >}} up to 97. For each number, you'll see a list of its factor pairs.
+Need help finding all the factor pairs of a number? This chart lists every {{< glink "composite number" >}} from 1 to 100 and lists all {{< glink slug="prime-number" text="prime numbers" >}} up to 97. For each number, you'll see a list of its factor pairs.
 
 [Download Chart](/resources/FactorChart.pdf)
 

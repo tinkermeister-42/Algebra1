@@ -8,7 +8,7 @@ Other values didn’t.
 
 This brings us to **equations**. In this unit, we do the opposite: instead of trying numbers to check if two expressions are equal, we will learn to **find the numbers that make them equal**.
 
-Those values are called the {{< glink slug=solution text=solutions >}} of the equation.
+Those values are called the {{< glink slug="solution" text="solutions" >}} of the equation.
 
 In this lesson, we begin with the basic rules for solving equations:
 

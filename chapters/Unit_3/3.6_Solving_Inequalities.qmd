@@ -118,7 +118,7 @@ Plot the solution to $x \le 3$ on a number line.
 
 The dot is filled again, showing 3 is part of the solution. The arrow points left for "less than".
 
-:::{.callout-tip title="Test a value"}
+:::{.note title="Test a value"}
 
 Not sure which way the arrow goes? Test a number that makes the inequality true.
 

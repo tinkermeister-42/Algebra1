@@ -243,7 +243,7 @@ Swanhilda pays $\$105$ for the dress. What a steal!
 
 **Example 6:** Surveys & Data
 
-A {{<glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?
+A {{< glink survey >}} of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?
 
 Here we want to know the **whole** when we have a percent. First, convert 75% to a decimal:
 $$
@@ -255,7 +255,7 @@ $$
 $$
 **160 teachers** were surveyed.
 
-:::{.callout-tip}
+:::{.note}
 To help avoid silly mistakes, ask yourself first, **"What answer do I expect?"**. This will help you decide if the answer you get makes sense.
 :::
 

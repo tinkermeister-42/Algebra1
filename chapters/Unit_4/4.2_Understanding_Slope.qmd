@@ -241,7 +241,7 @@ It means the line is **vertical**. You move up and down but not left and right.
 
 ***
 
-:::{.callout-tip title="Straight up or straight down?"}
+:::{.note title="Straight up or straight down?"}
 
 
 There is another way to think about the slope of vertical lines. Look at the picture below. One person is at the top of a cliff looking down at someone on the ground.

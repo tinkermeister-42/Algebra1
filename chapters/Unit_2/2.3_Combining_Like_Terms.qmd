@@ -54,7 +54,7 @@ You can see what fruit is there, but it’s **messy**. Let’s **group by type**
 
 Now it’s easy to see how many you have of each kind (and it looks better for customers).
 
-Algebraic expressions can be messy in the same way. Different kinds of {{< glink slug=term text=terms >}} get mixed together. To **simplify**, we first **group by type** before adding things up.
+Algebraic expressions can be messy in the same way. Different kinds of {{< glink slug="term" text="terms" >}} get mixed together. To **simplify**, we first **group by type** before adding things up.
 
 **What do we mean by “type”?**  
 Two terms are the same type if their **variable part** (letters and exponents) matches exactly. We call these **{{< glink "like terms" >}}**.
@@ -62,7 +62,7 @@ Two terms are the same type if their **variable part** (letters and exponents) m
 **Like terms**
 
 - $5x$ and $3x$
-- $7$ and $-3$ *(both are {{< glink slug=constant text=constants >}})*
+- $7$ and $-3$ *(both are {{< glink slug="constant" text="constants" >}})*
 - $2y^3$ and $y^3$
 - $8xy$ and $2yx$ *(the order of the variables doesn't matter)*
 

@@ -455,7 +455,7 @@ You can also use it **in reverse** to **factor**: if $ab+ac$, you can write $a(b
 > With subtraction: $-2(y-5)=-2y+10$
 > Reverse (factoring): $8x+12=4(2x+3)$
 
-**See Also:** {{< glink "associative property" >}}, {{< glink multiplication >}}
+**See Also:** {{< glink slug="associative" text="associative property" >}}, {{< glink multiplication >}}
 
 ***
 
@@ -693,7 +693,7 @@ If you can split something into equal groups with no leftovers, the group size i
 >
 > 3 is a factor of 12 because 3 × 4 = 12.
 
-*Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{<glink "greatest common factor" >}} giving $2(x-1)$*.
+*Note: Factor can also be used as a command. For example, "factor the expression $2x-2$" asks you to take out the {{< glink "greatest common factor" >}} giving $2(x-1)$*.
 
 **See Also:** {{< glink "factor tree" >}}, {{< glink factoring >}}, {{< glink "whole number" >}}, {{< glink multiple >}}, {{< glink "greatest common factor" >}}
 

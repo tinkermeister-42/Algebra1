@@ -32,7 +32,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
    Both pizzas were cut into **8 equal slices**. How much pizza did Monique eat in total?
 
    :::: {.columns}
-   ::: {.column width ="50%"}
+   ::: {.column width="50%"}
    ![](/images/Unit_1/Lesson_6/pepperoni_pizza7of8.svg)
    :::
 
@@ -51,7 +51,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
    How much pizza did Jack eat in total?
 
    :::: {.columns}
-   ::: {.column width ="50%"}
+   ::: {.column width="50%"}
    ![](/images/Unit_1/Lesson_6/pepperoni_pizza2of3.svg)
    :::
 
@@ -108,7 +108,7 @@ Let’s return to **Jack’s pizza**. Jack ate
 At first, these pieces don’t match.
 
 :::: {.columns}
-::: {.column width ="50%"}
+::: {.column width="50%"}
 **Pepperoni (cut into thirds)**  
 ![](/images/Unit_1/Lesson_6/pepperoni_pizza2of3.svg)
 :::
@@ -162,7 +162,7 @@ That means:
 Now both pizzas can be described using **twelfths**.
 
 :::: {.columns}
-::: {.column width ="50%"}
+::: {.column width="50%"}
 **Pepperoni in twelfths**  
 ![](/images/Unit_1/Lesson_6/pepperoni_pizza8of12.svg)
 :::

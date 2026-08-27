@@ -67,7 +67,7 @@ But unlike lines, a parabola can have **two**, **one**, or **zero** x-intercepts
 * The parabola in the middle crosses the x-axis twice.
 * The parabola on the right never touches the x-axis.
 
-These values of $x$ are the {{< glink slug=root text=roots >}} or **zeros** of the function.
+These values of $x$ are the {{< glink slug="root" text="roots" >}} or **zeros** of the function.
 They occur exactly when the **output** of the function is zero.
 
 This idea is the key to why we solve equations by setting them equal to zero.

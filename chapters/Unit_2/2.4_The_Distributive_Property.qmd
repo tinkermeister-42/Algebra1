@@ -186,7 +186,7 @@ $$
 \color{red}4x \color{black}+ \color{blue}8 \color{black}+ \color{red}3x \color{black}- \color{blue}15 \color{black}= \color{red}7x \color{black}- \color{blue}7
 $$
 
-:::{.callout-tip title="Make it simpler"}
+:::{.note title="Make it simpler"}
 When possible, you should simplify what is inside the parentheses before distributing.
 
 **Example:**

@@ -4,7 +4,7 @@ So far in this unit, you’ve learned how to evaluate expressions by plugging in
 
 Picture a small mystery machine on a desk with a sign that says “Feed me.” On the machine is a big letter "f" and on the table are number cards. You slide a 5 into the top, and out comes 13. You try 7, and out comes 17. When you feed the same number again, you get the same result again. The machine always behaves the same way.
 
-What could the machine be doing to the numbers? How could we describe that process so someone else could use it too? Machines like this, where each input leads to one specific output, are called {{< glink slug=function text=functions >}}.
+What could the machine be doing to the numbers? How could we describe that process so someone else could use it too? Machines like this, where each input leads to one specific output, are called {{< glink slug="function" text="functions" >}}.
 
 :::{.objectives}
 - [ ] I can read and use function notation like $f(x) = 2x+3$.

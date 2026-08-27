@@ -322,7 +322,7 @@ y = x + 1
 $$
 
 
-:::{.callout-tip title="Use Either Point"}
+:::{.note title="Use Either Point"}
 You can use **either** of the two points when solving for $b$.
 If your slope is correct, both points will fit the same equation.
 Try plugging in the second point to check your answer!

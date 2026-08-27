@@ -6,7 +6,7 @@ $$
 6 + 2 \times 3
 $$
 
-If you said 24, you're not alone, but that's not the correct answer. Math has specific rules for what to do first. These rules are called the {{< glink "order of operations" >}}, and they help make sure everyone simplifies {{< glink slug=expression text="expressions" >}} the same way.
+If you said 24, you're not alone, but that's not the correct answer. Math has specific rules for what to do first. These rules are called the {{< glink "order of operations" >}}, and they help make sure everyone simplifies {{< glink slug="expression" text="expressions" >}} the same way.
 
 In this lesson, you'll learn how to follow those rules correctly, even when negatives, fractions, and grouping symbols are involved.
 
@@ -65,7 +65,7 @@ $$
 
 So which one is correct, **65 or 25**?
 
-✅ The correct answer is **25**, because we follow a specific order of {{< glink slug=operation text="operations" >}}. Without these rules, people could get different answers to the same problem!
+✅ The correct answer is **25**, because we follow a specific order of {{< glink slug="operation" text="operations" >}}. Without these rules, people could get different answers to the same problem!
 
 Let’s look at the rules:
 
@@ -108,7 +108,7 @@ The same is true for addition and subtraction. Subtraction is really just adding
 
 ### 1.8.2 - Examples with Integers
 
-Let’s look at some {{< glink slug=expression text="expressions" >}} that follow the order of operations. These use only whole numbers (no fractions or negatives yet).
+Let’s look at some {{< glink slug="expression" text="expressions" >}} that follow the order of operations. These use only whole numbers (no fractions or negatives yet).
 
 
 **Example 1:** $5 + 3 \times 2$
