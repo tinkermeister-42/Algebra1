@@ -135,6 +135,10 @@ Absolute value is **never** negative, because distance is never negative.
 ***
 
 
+:::{.daybreak}
+Day 2 starts here
+:::
+
 ### 1.1.4 - Comparing Integers
 
 We can also use the number line to compare values. 
