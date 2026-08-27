@@ -535,7 +535,7 @@ Graph each system and find the solution.
    \end{cases}
    $$
 
-3.   
+13.   
    $$
    \begin{cases}
    y = 5x \\
@@ -543,7 +543,7 @@ Graph each system and find the solution.
    \end{cases}
    $$
 
-4.   
+14.   
    $$
    \begin{cases}
    y = 4x + 1 \\
@@ -551,7 +551,7 @@ Graph each system and find the solution.
    \end{cases}
    $$
 
-5.   
+15.   
    $$
    \begin{cases}
    y = -x + 7 \\
@@ -638,17 +638,17 @@ Graph each system and find the solution.
 5. $(3, 5)$
 6. After 6 movies, both cost $\$32$.
 7. After 3 miles, both cost $\$14$.
-8. At 2 tickets, cost $\$70$ each.
+8. At 2 tickets, total cost $\$70$.
 9. After 7 months, both cost $\$155$.
 10. After 3 tickets, total cost $\$42$.
-11. $(3, 9)$   
+11. $(2, 7)$   
 12. $(4, 0)$   
-13. $(4, 20)$  
-14. $(3, 13)$  
-15. $(2, 5)$
+13. $(3, 15)$  
+14. $(2, 9)$  
+15. $(4, 3)$
 16. $(6, 3)$  
 17. $(3, 4)$  
-18. $(3, 3)$  
-19. $(4, -1)$  
+18. $\left(\tfrac{10}{3},\ 3\right)$  
+19. $\left(\tfrac{10}{3},\ \tfrac{7}{3}\right)$  
 20. $(2, 3)$
 :::
