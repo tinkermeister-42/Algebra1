@@ -20,25 +20,25 @@ By the end of this unit, you’ll be able to:
 
 ## Topics in This Unit
 
-[**Solving One-Step Equations**](3.1_Solving_One-Step_Equations.html)
+[**Solving One-Step Equations**](3.1_Solving_One-Step_Equations.html)  
 Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.
 
-[**Solving Two-Step Equations**](3.2_Solving_Two-Step_Equations.html)
+[**Solving Two-Step Equations**](3.2_Solving_Two-Step_Equations.html)  
 Add or subtract first, then multiply or divide. Practice solving short, real-world problems.
 
-[**Multi-Step Equations with Distribution**](3.3_Multi-Step_Equations_with_Distribution.html)
+[**Multi-Step Equations with Distribution**](3.3_Multi-Step_Equations_with_Distribution.html)  
 Simplify before you solve. Distribute to remove parentheses, combine like terms, and check your solution.
 
-[**Equations with Variables on Both Sides**](3.4_Equations_with_Variables_on_Both_Sides.html)
+[**Equations with Variables on Both Sides**](3.4_Equations_with_Variables_on_Both_Sides.html)  
 Gather all variables to one side, numbers to the other. Learn to spot when equations have no or infinite solutions.
 
-[**Equations with No or Infinite Solutions**](3.5_Equations_With_No_or_Infinite_Solutions.html)
+[**Equations with No or Infinite Solutions**](3.5_Equations_With_No_or_Infinite_Solutions.html)  
 Recognize when both sides match perfectly (or never will) and explain what that means.
 
-[**Solving Inequalities**](3.6_Solving_Inequalities.html)
+[**Solving Inequalities**](3.6_Solving_Inequalities.html)  
 Represent ranges of solutions on a number line and remember to **flip the sign** when multiplying or dividing by a negative.
 
-[**Solving Literal Equations**](3.7_Solving_Literal_Equations.html)
+[**Solving Literal Equations**](3.7_Solving_Literal_Equations.html)  
 Work with formulas like $A = lw$ or $C = 2\pi r$. Rearrange them to solve for any variable you need.
 
 ***

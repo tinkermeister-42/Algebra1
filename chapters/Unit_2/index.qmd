@@ -20,21 +20,21 @@ By the end of this unit, you’ll be able to:
 
 ## Topics in This Unit
 
-[**Expressions & Their Parts**](2.1_Expressions_and_Their_Parts.html)
+[**Expressions & Their Parts**](2.1_Expressions_and_Their_Parts.html)  
 What expressions are made of, and how to **translate** short phrases into algebraic expressions (and back).
 
-[**Evaluating Expressions**](2.2_Evaluating_Expressions.html)
+[**Evaluating Expressions**](2.2_Evaluating_Expressions.html)  
 Plug in values and simplify with the correct order of operations. See why parentheses matter.
 
-[**Combining Like Terms**](2.3_Combining_Like_Terms.html)
+[**Combining Like Terms**](2.3_Combining_Like_Terms.html)  
 Put “like with like” (same variable and power) to clean up expressions.
 
-[**The Distributive Property**](2.4_The_Distributive_Property.html)
+[**The Distributive Property**](2.4_The_Distributive_Property.html)  
 Distribute to remove parentheses and simplify. Learn common slips to avoid (like trying to distribute over exponents).
 
-[**Inputs, Outputs & Functions**](2.5_Inputs_Outputs_and_Functions.html)
+[**Inputs, Outputs & Functions**](2.5_Inputs_Outputs_and_Functions.html)  
 Use rules, tables, and expressions to map inputs to outputs. Decide if a relation is a function and practice simple function notation.
 
-[**Equivalent Expressions**](2.6_Equivalent_Expressions.html)
+[**Equivalent Expressions**](2.6_Equivalent_Expressions.html)  
 Different forms, same value. Use simplification and substitution to test for equivalence, and see what counts as a proof.
 

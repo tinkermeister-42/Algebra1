@@ -28,29 +28,29 @@ By the end of this unit, you’ll be able to:
 
 ## Topics in This Unit
 
-[**Graphing Function Rules**](4.1_Graphing_Function_Rules.html)
+[**Graphing Function Rules**](4.1_Graphing_Function_Rules.html)  
 Use equations like $y = 2x + 1$ as rules to generate points.
 Plot those points to see how linear functions make straight-line graphs.
 
-[**Understanding Slope**](4.2_Understanding_Slope.html)
+[**Understanding Slope**](4.2_Understanding_Slope.html)  
 Explore slope as *rate of change*.
 Find slope from graphs or points, compare positive, negative, zero, and undefined slopes, and connect to real-world rates.
 
-[**The Equation of a Line ($y = mx + b$)**](4.3_The_Equation_of_a_Line.html)
+[**The Equation of a Line ($y = mx + b$)**](4.3_The_Equation_of_a_Line.html)  
 Discover how slope ($m$) and intercept ($b$) shape a line.
 Graph quickly from slope and intercept, and see how changing them moves the line.
 
-[**Writing Linear Equations**](4.4_Writing_Linear_Equations.html)
+[**Writing Linear Equations**](4.4_Writing_Linear_Equations.html)  
 Write equations from graphs, data, or descriptions.
 Use slope-intercept and point-slope form, and explain what $m$ and $b$ mean in context.
 
-[**Systems of Equations**](4.5_Systems_of_Equations.qmd)
+[**Systems of Equations**](4.5_Systems_of_Equations.html)  
 Find points of intersection between two lines. These points of intersection are solutions to a system of equations.
 
-[**Linear Models in the Real World**](4.6_Linear_Models_in_the_Real_World.html)
+[**Linear Models in the Real World**](4.6_Linear_Models_in_the_Real_World.html)  
 Model real situations like costs, temperature changes, or speed.
 Interpret slope and intercept in units, and sketch best-fit lines to describe data trends.
 
-[**Graphing Linear Inequalities**](4.7_Graphing_Linear_Inequalities.html)
+[**Graphing Linear Inequalities**](4.7_Graphing_Linear_Inequalities.html)  
 Extend linear models to show ranges of solutions.
 Graph inequalities, shade solution regions, and interpret what the shaded area means in real-world terms.

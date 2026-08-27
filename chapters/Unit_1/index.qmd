@@ -34,7 +34,7 @@ Use prime factorization to find the GCF and simplify fractions to their simplest
 [**Multiply, Divide & Compare Fractions**](1.4_Multiply_Divide_and_Compare_Fractions.html)  
 Work with fractions in ways that actually show up in Algebra (simplify, multiply, divide, and compare).
 
-[**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.qmd)
+[**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.html)  
 Learn to add and subtract fractions by finding a common denominator.
 
 [**Fractions, Decimals & Percents – Conversions**](1.6_Fractions_Decimals_and_Percents.html)  
