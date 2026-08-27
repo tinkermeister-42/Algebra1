@@ -79,6 +79,7 @@ ul.task-list li input[type="checkbox"] {
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
         stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        steptag: ['\\stepnote{#1}', 1],
         snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
         snplus: ['\\snboth{+\\,#1}', 1],
         snminus: ['\\snboth{-\\,#1}', 1],
@@ -1198,18 +1199,18 @@ x + 2y - z = 8
 <li><span class="math inline">\((3, 5)\)</span></li>
 <li>After 6 movies, both cost <span class="math inline">\(\$32\)</span>.</li>
 <li>After 3 miles, both cost <span class="math inline">\(\$14\)</span>.</li>
-<li>At 2 tickets, cost <span class="math inline">\(\$70\)</span> each.</li>
+<li>At 2 tickets, total cost <span class="math inline">\(\$70\)</span>.</li>
 <li>After 7 months, both cost <span class="math inline">\(\$155\)</span>.</li>
 <li>After 3 tickets, total cost <span class="math inline">\(\$42\)</span>.</li>
-<li><span class="math inline">\((3, 9)\)</span>  </li>
+<li><span class="math inline">\((2, 7)\)</span>  </li>
 <li><span class="math inline">\((4, 0)\)</span>  </li>
-<li><span class="math inline">\((4, 20)\)</span>  </li>
-<li><span class="math inline">\((3, 13)\)</span>  </li>
-<li><span class="math inline">\((2, 5)\)</span></li>
+<li><span class="math inline">\((3, 15)\)</span>  </li>
+<li><span class="math inline">\((2, 9)\)</span>  </li>
+<li><span class="math inline">\((4, 3)\)</span></li>
 <li><span class="math inline">\((6, 3)\)</span>  </li>
 <li><span class="math inline">\((3, 4)\)</span>  </li>
-<li><span class="math inline">\((3, 3)\)</span>  </li>
-<li><span class="math inline">\((4, -1)\)</span>  </li>
+<li><span class="math inline">\(\left(\tfrac{10}{3},\ 3\right)\)</span>  </li>
+<li><span class="math inline">\(\left(\tfrac{10}{3},\ \tfrac{7}{3}\right)\)</span>  </li>
 <li><span class="math inline">\((2, 3)\)</span></li>
 </ol>
 </div>

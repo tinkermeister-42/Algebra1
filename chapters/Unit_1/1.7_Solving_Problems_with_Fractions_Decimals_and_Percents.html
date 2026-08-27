@@ -79,6 +79,7 @@ ul.task-list li input[type="checkbox"] {
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
         stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        steptag: ['\\stepnote{#1}', 1],
         snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
         snplus: ['\\snboth{+\\,#1}', 1],
         snminus: ['\\snboth{-\\,#1}', 1],
@@ -721,7 +722,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-part" class="glossary-link" data-slug="part" data-term="part" data-original-href="#glossary-part">part</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-slug="percent" data-term="percent" data-original-href="#glossary-percent">percent</a>, <a href="../../glossary.html#glossary-percent-of" class="glossary-link" data-slug="percent-of" data-term="percent of" data-original-href="#glossary-percent-of">percent of</a>, <a href="../../glossary.html#glossary-proportion" class="glossary-link" data-slug="proportion" data-term="proportion" data-original-href="#glossary-proportion">proportion</a>, <a href="../../glossary.html#glossary-whole" class="glossary-link" data-slug="whole" data-term="whole" data-original-href="#glossary-whole">whole</a></p>
+<p><a href="../../glossary.html#glossary-part" class="glossary-link" data-original-href="#glossary-part" data-slug="part" data-term="part">part</a>, <a href="../../glossary.html#glossary-percent" class="glossary-link" data-original-href="#glossary-percent" data-slug="percent" data-term="percent">percent</a>, <a href="../../glossary.html#glossary-percent-of" class="glossary-link" data-original-href="#glossary-percent-of" data-slug="percent-of" data-term="percent of">percent of</a>, <a href="../../glossary.html#glossary-proportion" class="glossary-link" data-original-href="#glossary-proportion" data-slug="proportion" data-term="proportion">proportion</a>, <a href="../../glossary.html#glossary-whole" class="glossary-link" data-original-href="#glossary-whole" data-slug="whole" data-term="whole">whole</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
@@ -876,7 +877,7 @@ window.Quarto = {
 <p><strong>Example 5:</strong> Sales &amp; Discounts</p>
 <p>A clothing store is having a back-to-school sale. A <span class="math inline">\(\$60\)</span> jacket is on sale for 25% off.</p>
 <p><strong>What’s the new price?</strong></p>
-<p>First, find the <a href="../../glossary.html#glossary-discount" class="glossary-link" data-slug="discount" data-term="discount" data-original-href="#glossary-discount">discount</a> by asking “What is 25% of <span class="math inline">\(\$60\)</span>?”:</p>
+<p>First, find the <a href="../../glossary.html#glossary-discount" class="glossary-link" data-original-href="#glossary-discount" data-slug="discount" data-term="discount">discount</a> by asking “What is 25% of <span class="math inline">\(\$60\)</span>?”:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -935,24 +936,14 @@ window.Quarto = {
 </div>
 <hr>
 <p><strong>Example 6:</strong> Surveys &amp; Data</p>
-<p>A <a href="../../glossary.html#glossary-survey" class="glossary-link" data-slug="survey" data-term="survey" data-original-href="#glossary-survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
+<p>A <a href="../../glossary.html#glossary-survey" class="glossary-link" data-original-href="#glossary-survey" data-slug="survey" data-term="survey">survey</a> of teachers asked whether they prefer cookies or cake. The survey found that 75% prefer cookies. If 120 of the teachers preferred cookies, how many teachers were surveyed?</p>
 <p>Here we want to know the <strong>whole</strong> when we have a percent. First, convert 75% to a decimal: <span class="math display">\[
 75\% = 0.75
 \]</span> Then divide: <span class="math display">\[
 120 \div 0.75 = 160
 \]</span> <strong>160 teachers</strong> were surveyed.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="note">
 <p>To help avoid silly mistakes, ask yourself first, <strong>“What answer do I expect?”</strong>. This will help you decide if the answer you get makes sense.</p>
-</div>
 </div>
 <div class="you-try" title="If a survey found 550 -- which is 55% -- like cucumbers. How many students were surveyed?">
 <p>First, convert to a decimal: <span class="math display">\[

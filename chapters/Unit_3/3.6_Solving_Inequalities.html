@@ -79,6 +79,7 @@ ul.task-list li input[type="checkbox"] {
       packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
       macros: {
         stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        steptag: ['\\stepnote{#1}', 1],
         snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
         snplus: ['\\snboth{+\\,#1}', 1],
         snminus: ['\\snboth{-\\,#1}', 1],
@@ -739,7 +740,7 @@ c &amp;= 13.2
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-slug="inequality" data-original-href="#glossary-inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-slug="solution" data-original-href="#glossary-solution">solution</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-term="solution set" data-slug="solution-set" data-original-href="#glossary-solution-set">solution set</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-slug="variable" data-original-href="#glossary-variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-term="inequality" data-original-href="#glossary-inequality" data-slug="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-href="#glossary-solution" data-slug="solution">solution</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-term="solution set" data-original-href="#glossary-solution-set" data-slug="solution-set">solution set</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-term="variable" data-original-href="#glossary-variable" data-slug="variable">variable</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_3/3.6_Solving_Inequalities.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
@@ -817,21 +818,11 @@ c &amp;= 13.2
 <p>Plot the solution to <span class="math inline">\(x \le 3\)</span> on a number line.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
 <p>The dot is filled again, showing 3 is part of the solution. The arrow points left for “less than”.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Test a value">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Test a value
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="note" title="Test a value">
 <p>Not sure which way the arrow goes? Test a number that makes the inequality true.</p>
 <p>For <span class="math inline">\(x \le -1\)</span> we could try <span class="math inline">\(x = -4\)</span>.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
 <p>Since <span class="math inline">\(-4 \le -1\)</span> is true, shade the side containing <span class="math inline">\(-4\)</span>.</p>
-</div>
 </div>
 <hr>
 </section>
