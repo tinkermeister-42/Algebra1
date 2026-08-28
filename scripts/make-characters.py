@@ -11,7 +11,7 @@ import os
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "images")
 INK = "#111"
-LW = 3.2                      # one stroke weight everywhere, as in the originals
+LW = 2.2                      # thin and uniform, as in the originals
 # The originals were hand-lettered.  No such face is guaranteed on a printing
 # machine, so these use the same serif as the handout body and let the figures
 # carry the character instead of a font imitation.
@@ -19,11 +19,20 @@ FONT = "Georgia,'Times New Roman',serif"
 
 
 def line(x1, y1, x2, y2, w=LW):
-    return f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{INK}" stroke-width="{w}" stroke-linecap="round"/>'
+    return (f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
+            f'stroke="{INK}" stroke-width="{w}" stroke-linecap="round"/>')
 
 
 def circle(cx, cy, r, w=LW, fill="none"):
-    return f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{fill}" stroke="{INK}" stroke-width="{w}"/>'
+    return (f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{fill}" '
+            f'stroke="{INK}" stroke-width="{w}"/>')
+
+
+def head(cx, cy, rx, ry, tilt=0, w=LW):
+    """A slightly oval head, tilted into the direction of travel."""
+    return (f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" '
+            f'transform="rotate({tilt} {cx:.1f} {cy:.1f})" fill="#fff" '
+            f'stroke="{INK}" stroke-width="{w}"/>')
 
 
 def text(x, y, s, size=20, anchor="middle", weight="normal"):
@@ -31,36 +40,38 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
-def person(x, y, arms=((-22, 14, -38, 26), (22, 14, 38, 26)),
-           legs=((-17, 46, -14, 84), (17, 46, 14, 84)), s=1.0):
-    """A figure with feet at (x, y).
+def limb(jx, jy, segs, s):
+    """A limb as a run of segments from the junction; sharp corners, no easing."""
+    pts, x, y, out = [], jx, jy, []
+    for dx, dy in segs:
+        nx, ny = jx + dx * s, jy + dy * s
+        out.append(line(x, y, nx, ny))
+        x, y = nx, ny
+    return "".join(out), (x, y)
 
-    Limbs bend.  Each one is (elbow_dx, elbow_dy, hand_dx, hand_dy) measured
-    from the shoulder or hip, so the joint is what gives the figure motion -
-    straight single-segment limbs read as a scarecrow, not an xkcd person.
-    No neck: the head sits on the shoulders.
 
-    Returns the drawing, the top of the head (for a speech-bubble tail) and
-    where each hand ended up (so a prop can be put in one)."""
-    head_r = 19 * s
-    # legs are about half the figure's height; short legs read as a toddler
-    leg_h, torso = 84 * s, 54 * s
-    hip_y = y - leg_h
-    sh_y = hip_y - torso
-    head_cy = sh_y - head_r + 3 * s
-    # torso first, head last and filled, so the line cannot poke into the face
-    p = [line(x, sh_y, x, hip_y)]
-    hands = []
-    for ex, ey, hx, hy in arms:
-        jx, jy = x + ex * s, sh_y + (6 + ey) * s
-        ax, ay = x + hx * s, sh_y + (6 + hy) * s
-        p += [line(x, sh_y + 6 * s, jx, jy), line(jx, jy, ax, ay)]
-        hands.append((ax, ay))
-    for ex, ey, fx, fy in legs:
-        jx, jy = x + ex * s, hip_y + ey * s
-        p += [line(x, hip_y, jx, jy), line(jx, jy, x + fx * s, hip_y + fy * s)]
-    p.append(circle(x, head_cy, head_r, fill="#fff"))
-    return "".join(p), head_cy - head_r, hands
+def person(x, y, arms, legs, tilt=0, torso=(0, 46), head_r=(25, 23), s=1.0):
+    """A figure whose neck is the only joint that matters.
+
+    The torso and both arms all leave one junction just under the head - there
+    are no shoulders.  Every limb is a run of (dx, dy) segments from that
+    junction (arms) or from the far end of the torso (legs), so poses are
+    asymmetric by construction and the corners stay sharp.
+
+    (x, y) is the junction.  Returns the drawing, the top of the head, and
+    where each hand ended up."""
+    tx, ty = x + torso[0] * s, y + torso[1] * s
+    parts, hands = [line(x, y, tx, ty)], []
+    for segs in arms:
+        d, hand = limb(x, y, segs, s)
+        parts.append(d); hands.append(hand)
+    for segs in legs:
+        d, _ = limb(tx, ty, segs, s)
+        parts.append(d)
+    rx, ry = head_r[0] * s, head_r[1] * s
+    hcy = y - ry + 2 * s
+    parts.append(head(x, hcy, rx, ry, tilt))
+    return "".join(parts), hcy - ry, hands
 
 
 def bubble(x, y, w, h, tail_to, lines, size=17):
@@ -103,28 +114,38 @@ def sheet(x, y, w=17, h=22, tilt=0):
 def distribute():
     """2.4 - the lesson's own opening story: the teacher hands one worksheet to
     every student, which is exactly what a(b + c) does to each term."""
-    W, H = 660, 276
+    W, H = 520, 282
+    FLOOR = 240
     b = []
 
+    # Relaxed stand: weight on the near leg, which drops almost straight, while
+    # the far one sets down a little wider.  Not a stride, not a wide stance.
+    def stand(flip=1):
+        return [[(-7 * flip, 36), (-11 * flip, 74)],
+                [(11 * flip, 34), (17 * flip, 74)]]
+
     fig, head_top, hands = person(
-        96, 250,
-        arms=((-20, 20, -30, 40), (30, 4, 58, -4)),      # left down, right offering
-        legs=((-18, 46, -15, 84), (19, 46, 17, 84)), s=1.05)
+        96, 108,
+        arms=[[(-15, 27), (-27, 53)],           # trailing arm, relaxed
+              [(36, 13), (68, 8)]],             # offering arm
+        legs=stand(1), tilt=12, torso=(16, 56), s=1.02)
     b.append(fig)
-    b.append(sheet(*hands[1], tilt=-14))          # the sheet is in the outstretched hand
-    b.append(bubble(214, 42, 300, 50, (head_top and 108, head_top - 6),
-                    ["Distribute these, please."]))
+    b.append(sheet(*hands[1], tilt=-17, w=19, h=25))
+    b.append(bubble(228, 30, 264, 40, (108, head_top - 2), ["Distribute these, please."], size=15))
 
-    for x, tilt in ((336, 7), (456, -6), (576, 9)):
-        f, _, hs = person(
-            x, 256,
-            arms=((-20, 14, -32, 26), (22, 10, 38, 2)),   # hand below the elbow, not hooked up
-            legs=((-17, 46, -14, 84), (18, 46, 16, 84)), s=0.92)
+    for kw, px, tilt in [
+        (dict(arms=[[(-19, 29), (-32, 52)], [(29, 11), (53, 21)]],
+              legs=stand(-1), tilt=-8, torso=(-11, 56)), 302, 9),
+        (dict(arms=[[(-23, 25), (-36, 50)], [(27, 15), (51, 13)]],
+              legs=stand(1), tilt=9, torso=(8, 55)), 420, -8),
+    ]:
+        f, _, hs = person(px, 115, s=0.96, **kw)
         b.append(f)
-        b.append(sheet(*hs[1], tilt=tilt))
+        b.append(sheet(*hs[1], tilt=tilt, w=18, h=24))
 
+    b.append(line(28, FLOOR, W - 22, FLOOR, 2.0))
     return svg(W, H, "".join(b),
-               "A teacher handing one worksheet to each of three students")
+               "A teacher handing one worksheet to each of two students")
 
 
 if __name__ == "__main__":
