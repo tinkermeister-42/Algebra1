@@ -8,6 +8,8 @@ That’s what we call a **literal equation**.
 
 Literal equations use letters (or “literals”) to represent variables, so solving them means isolating one variable in terms of the others.
 
+![](/images/Unit_3/Lesson_7/formula_three_ways.svg){width="420px" fig-align="center"}
+
 ***
 
 :::{.objectives}

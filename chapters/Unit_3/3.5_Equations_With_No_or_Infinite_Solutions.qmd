@@ -146,6 +146,8 @@ If you solve an equation and get the same thing on each side of the equal sign, 
 
 There are some tricks for telling whether a {{< glink "linear equation" >}} will have **one**, **no**, or **infinitely many** solutions. You can often see it without actually solving the equation all the way!
 
+![](/images/Unit_3/Lesson_5/no_solution_or_all.svg){width="440px" fig-align="center"}
+
 ***
 
 **Equations With One Solution**

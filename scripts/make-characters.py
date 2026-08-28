@@ -183,6 +183,38 @@ def sheet(x, y, w=17, h=22, tilt=0):
     return g + "</g>"
 
 
+def dot(x, y, r=3.2):
+    return f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{INK}"/>'
+
+
+def dashed(d, w=LW, dash="5 4"):
+    return (f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w}" '
+            f'stroke-dasharray="{dash}"/>')
+
+
+def card(x, y, w, h, inner, tilt=0):
+    """A held card - a coupon, a sign, a formula on an index card.
+
+    `inner` is drawn in the card's own space, centred on (x, y), so the box and
+    what is written on it tilt together."""
+    g = f'<g transform="rotate({tilt} {x:.1f} {y:.1f})">' if tilt else "<g>"
+    return (g + f'<rect x="{x-w/2:.1f}" y="{y-h/2:.1f}" width="{w}" height="{h}" '
+            f'fill="#fff" stroke="{INK}" stroke-width="{LW}"/>' + inner + "</g>")
+
+
+def frac(x, y, num, den, size=15):
+    """A stacked fraction, since that is how the book writes them."""
+    half = size * .62
+    return (text(x, y - size * .28, num, size, family=SANS, weight="bold") +
+            line(x - half, y, x + half, y, 1.1) +
+            text(x, y + size * .95, den, size, family=SANS, weight="bold"))
+
+
+def label(x, y, s, size=15):
+    """A caption under a panel - the same bold sans the balloons use."""
+    return text(x, y, s, size, weight="bold", family=SANS)
+
+
 def distribute():
     """2.4 - the lesson's own opening story: the teacher hands one worksheet to
     every student, which is exactly what a(b + c) does to each term.
@@ -239,13 +271,244 @@ def distribute():
                "A teacher handing a worksheet to one student while another reads hers")
 
 
+def coupon_order(blank=False):
+    """1.8 - the lesson's own Coupons and Gift Cards box.  Same $40 item, same
+    coupon, same card, two orders, two totals.  The point of order of
+    operations in one look, and the arithmetic is already in the callout.
+
+    `blank` leaves the two totals as ruled blanks: in the handout this same
+    comparison is EX 12, so the printed figure must not answer it."""
+    TOP = 14
+    W, H = 580, 300 + TOP
+    FLOOR = 252
+    b = []
+
+    # the second balloon hangs off the figure's inside shoulder, or it would
+    # run off the edge of the frame
+    for x, said, tag, total, sgn in (
+            (150, "Coupon first.", "25% off", "$20.00", 1),
+            (430, "Gift card first.", "$10 card", "$22.50", -1)):
+        f, head_top, hands = person(
+            x, 120,
+            arms=[[(-10, 32, 1.2), (-8, 61, 0.8)],
+                  [(17, 18, -1.3), (34, 6, -1.5)]],
+            spine_leg=([(3, 32), (8, 62), (3, 104), (-2, 146)], 2),
+            other_leg=[(20, 44), (25, 84)],
+            spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=6, s=0.86)
+        b.append(f)
+        b.append(bubble(x + sgn * 62, 40, 152, 30, (x + sgn * 12, head_top - 3),
+                        [said], size=14))
+        hx, hy = hands[1]
+        b.append(card(hx + 24, hy - 4, 54, 26,
+                      text(hx + 24, hy + 1, tag, 12, family=SANS, weight="bold"),
+                      tilt=-7))
+        if blank:
+            b.append(line(x - 46, FLOOR + 34, x + 46, FLOOR + 34, LW))
+        else:
+            b.append(label(x, FLOOR + 34, total, 26))
+
+    b.append(line(40, FLOOR, W - 40, FLOOR, LW))
+    # without a divider the two cases read as two people talking to each other
+    b.append(dashed(f"M290,26 L290,{FLOOR + 46}", 1.0, "4 5"))
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
+               "The same item bought two ways: coupon first costs $20, gift card first costs $22.50")
+
+
+def special_cases():
+    """3.5 - what you are left holding when the variables cancel.  One ends up
+    with something that is never true, the other with something always true;
+    students routinely swap the two, and the difference is easier to feel as
+    two attitudes than to read as two paragraphs."""
+    TOP = 14
+    W, H = 540, 290 + TOP
+    FLOOR = 244
+    b = []
+
+    # nothing works - arms out, holding up the contradiction
+    f, head_top, hands = person(
+        132, 116,
+        arms=[[(-24, 14, 1.4), (-46, 26, 1.6)],
+              [(20, 16, -1.2), (38, 4, -1.4)]],
+        spine_leg=([(2, 32), (6, 62), (2, 104), (-3, 142)], 2),
+        other_leg=[(19, 44), (24, 82)], spine_bow=[1.3, 1.5, -0.8, -0.4],
+        tilt=-8, s=0.88)
+    b.append(f)
+    b.append(bubble(186, 38, 140, 30, (146, head_top - 3), ["Nothing works."], size=14))
+    hx, hy = hands[1]
+    b.append(card(hx + 26, hy - 6, 62, 30,
+                  text(hx + 26, hy, "\u22129 = 3", 15, family=SANS, weight="bold"),
+                  tilt=-6))
+    b.append(label(132, FLOOR + 32, "no solution", 15))
+
+    # everything works - an easy shrug
+    f, head_top, hands = person(
+        396, 116,
+        arms=[[(24, 14, -1.4), (46, 26, -1.6)],
+              [(-20, 16, 1.2), (-38, 4, 1.4)]],
+        spine_leg=([(-2, 32), (-6, 62), (-2, 104), (3, 142)], 2),
+        other_leg=[(-19, 44), (-24, 82)], spine_bow=[-1.3, -1.5, 0.8, 0.4],
+        tilt=8, s=0.88)
+    b.append(f)
+    b.append(bubble(356, 38, 162, 30, (382, head_top - 3), ["Everything works."], size=14))
+    hx, hy = hands[1]
+    b.append(card(hx - 26, hy - 6, 62, 30,
+                  text(hx - 26, hy, "5 = 5", 15, family=SANS, weight="bold"),
+                  tilt=6))
+    b.append(label(396, FLOOR + 32, "infinitely many solutions", 15))
+
+    b.append(line(34, FLOOR, W - 34, FLOOR, LW))
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
+               "One figure holding minus nine equals three, the other holding five equals five")
+
+
+def three_ways(blank=False):
+    """3.7 - the lesson opens on d = rt and asks what happens when the letter
+    you want is not already alone.  Three cards, one formula.
+
+    `blank` empties the two rearranged cards, since solving d = rt for t is
+    the handout's own exercise."""
+    TOP = 14
+    W, H = 500, 280 + TOP
+    FLOOR = 240
+    b = []
+
+    f, head_top, hands = person(
+        118, 116,
+        arms=[[(-10, 32, 1.2), (-8, 60, 0.8)],
+              [(20, 12, -1.2), (42, 2, -1.5)]],
+        spine_leg=([(3, 32), (8, 62), (3, 104), (-2, 138)], 2),
+        other_leg=[(20, 42), (25, 80)],
+        spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=8, s=0.9)
+    b.append(f)
+    b.append(bubble(268, 38, 236, 30, (140, head_top - 3),
+                    ["Same formula. Pick your letter."], size=14))
+
+    cx, cy = 296, 138
+    b.append(card(cx - 88, cy - 2, 76, 54,
+                  text(cx - 88, cy + 4, "d = rt", 16, family=SANS, weight="bold"), tilt=-11))
+    def rearranged(ox, oy, want, num, den, tilt):
+        inner = text(ox - 20, oy + 6, want + " =", 16, family=SANS, weight="bold")
+        inner += (line(ox + 6, oy + 10, ox + 34, oy + 10, LW) if blank
+                  else frac(ox + 26, oy, num, den))
+        return card(ox, oy, 76, 54, inner, tilt=tilt)
+
+    b.append(rearranged(cx + 4, cy - 10, "r", "d", "t", -2))
+    b.append(rearranged(cx + 96, cy - 2, "t", "d", "r", 9))
+
+    b.append(line(30, FLOOR, W - 30, FLOOR, LW))
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
+               "One figure holding three cards: d equals rt, r equals d over t, t equals d over r")
+
+
+def thrown_ball():
+    """6.7 Example 1 - h(t) = -16t^2 + 20t + 5.  The example asks two questions
+    that sound unrelated until you see they are two points on one arc: where it
+    lands, and how high it gets.  The curve here is the real function, sampled,
+    not a freehand swoosh."""
+    TOP = 14
+    W, H = 520, 300 + TOP
+    FLOOR = 258
+    b = []
+
+    # the function, and the frame it is drawn in
+    def h(t):
+        return -16 * t * t + 20 * t + 5
+    t_land = (20 + (400 + 320) ** .5) / 32
+    t_peak = 20 / 32.0
+    X0, X1 = 118, 468
+    PX_PER_FT = 150.0 / h(t_peak)
+
+    def pt(t):
+        return (X0 + (t / t_land) * (X1 - X0), FLOOR - h(t) * PX_PER_FT)
+
+    s = 0.55
+    hand_y = FLOOR - 5 * PX_PER_FT
+    neck_y = FLOOR - 146 * s
+    f, head_top, hands = person(
+        86, neck_y,
+        arms=[[(-16, 26, 1.6), (-30, 46, 1.2)],
+              [(24, 6, -1.4), (52, round((hand_y - neck_y) / s) - 6, -1.0)]],
+        spine_leg=([(3, 32), (8, 62), (3, 104), (-2, 146)], 2),
+        other_leg=[(22, 44), (30, 84)],
+        spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=10, s=s)
+    b.append(f)
+
+    n = 48
+    path = "M" + " L".join("%.1f,%.1f" % pt(t_land * k / n) for k in range(n + 1))
+    b.append(dashed(path))
+
+    rx, ry = pt(0)
+    b.append(dashed(f"M{rx:.1f},{ry:.1f} L{rx:.1f},{FLOOR:.1f}", 1.0, "3 4"))
+    b.append(text(rx + 9, (ry + FLOOR) / 2 + 4, "5 ft", 14, anchor="start",
+                  weight="bold", family=SANS))
+    b.append(dot(rx, ry))
+
+    px, py = pt(t_peak)
+    b.append(dot(px, py))
+    b.append(text(px, py - 12, "maximum height", 14, weight="bold", family=SANS))
+
+    lx, ly = pt(t_land)
+    b.append(dot(lx, ly))
+    b.append(text(lx - 4, ly + 22, "hits the ground", 14, anchor="end",
+                  weight="bold", family=SANS))
+
+    b.append(line(30, FLOOR, W - 24, FLOOR, LW))
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
+               "A thrown ball on its parabolic path, released at five feet, "
+               "with the maximum height and the landing point marked")
+
+
+def shorthand():
+    """5.1 - the lesson's first sentence: rather than writing x times x times x
+    times x, write x to the fourth.  An exponent is shorthand before it is a
+    rule, and that is easier to see than to say."""
+    TOP = 14
+    W, H = 530, 260 + TOP
+    FLOOR = 224
+    b = []
+
+    f, head_top, hands = person(
+        256, 106,
+        arms=[[(-22, 30, 1.4), (-52, 40, 1.0)],
+              [(20, 10, -1.2), (44, -2, -1.5)]],
+        spine_leg=([(3, 32), (8, 62), (3, 100), (-2, 132)], 2),
+        other_leg=[(20, 42), (25, 78)],
+        spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=9, s=0.86)
+    b.append(f)
+    b.append(bubble(382, 34, 216, 30, (278, head_top - 3),
+                    ["Same thing. Less writing."], size=14))
+
+    # the long way, drooping from the low hand
+    lx, ly = hands[0]
+    b.append(card(lx - 70, ly + 10, 150, 30,
+                  text(lx - 70, ly + 16, "x \u00b7 x \u00b7 x \u00b7 x", 16,
+                       family=SANS, weight="bold"), tilt=6))
+    # the short way, held up
+    rx, ry = hands[1]
+    b.append(card(rx + 24, ry - 2, 50, 34,
+                  text(rx + 24, ry + 5,
+                       'x<tspan dy="-7" font-size="11">4</tspan>', 17,
+                       family=SANS, weight="bold"), tilt=-6))
+
+    b.append(line(40, FLOOR, W - 40, FLOOR, LW))
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
+               "A figure holding x times x times x times x in one hand and x to the fourth in the other")
+
+
 # ---------------------------------------------------------- contact sheet ----
 
 # Every scene in the file: where its SVG belongs under images/, and how to draw
 # it.  Add a scene by writing the function and adding one line here - both the
 # write and the contact sheet pick it up from this.
 SCENES = [
+    ("Unit_1/Lesson_8/coupon_order.svg", coupon_order),
+    ("Unit_1/Lesson_8/coupon_order_blank.svg", lambda: coupon_order(blank=True)),
     ("Unit_2/Lesson_4/distribute_worksheets.svg", distribute),
+    ("Unit_3/Lesson_5/no_solution_or_all.svg", special_cases),
+    ("Unit_3/Lesson_7/formula_three_ways.svg", three_ways),
+    ("Unit_3/Lesson_7/formula_three_ways_blank.svg", lambda: three_ways(blank=True)),
+    ("Unit_5/Lesson_1/exponent_shorthand.svg", shorthand),
+    ("Unit_6/Lesson_7/thrown_ball.svg", thrown_ball),
 ]
 
 

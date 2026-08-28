@@ -5,6 +5,8 @@ When we start working with algebraic expressions, we quickly see powers like $x^
 Instead of writing $x \cdot x \cdot x \cdot x$, we can write $x^4$.
 This shorthand makes it much easier to work with larger problems, but it also means we need to know how powers behave when we multiply, divide, or raise them to other powers.
 
+![](/images/Unit_5/Lesson_1/exponent_shorthand.svg){width="420px" fig-align="center"}
+
 In this lesson, we’ll learn the rules, unpack *why* they work, and learn how to use them to simplify expressions.
 
 :::{.objectives}

@@ -398,6 +398,8 @@ Which should be applied first?
 * Gift card first → $\$40$ - $\$10$ = $\$30$ → $25\%$ off = $\$22.50$
 
 Same ingredients, different result. Order matters!
+
+![](/images/Unit_1/Lesson_8/coupon_order.svg){width="460px" fig-align="center"}
 :::
 
 {{< practice >}}
