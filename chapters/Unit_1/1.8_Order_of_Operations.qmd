@@ -65,7 +65,7 @@ $$
 
 So which one is correct, **65 or 25**?
 
-✅ The correct answer is **25**, because we follow a specific order of {{< glink slug="operation" text="operations" >}}. Without these rules, people could get different answers to the same problem!
+✓ The correct answer is **25**, because we follow a specific order of {{< glink slug="operation" text="operations" >}}. Without these rules, people could get different answers to the same problem!
 
 Let’s look at the rules:
 
@@ -379,7 +379,7 @@ $$
 $$
 \textcolor{red}{13 \times 2} = 26
 $$
-✅ Final Answer: **26**
+✓ Final Answer: **26**
 :::
 ***
 

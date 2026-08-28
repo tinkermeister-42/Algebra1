@@ -62,8 +62,7 @@ $$
 $$
 :::
 
-#### **Multiplying Whole Numbers by Fractions**
-
+#### Multiplying Whole Numbers by Fractions
 No denominator? No problem! Just put a 1 underneath:
 
 **Example 2:** $3 \times \frac{2}{5}$
@@ -77,8 +76,7 @@ $$
 $$
 :::
 
-#### **Simplifying After Multiplying**
-
+#### Simplifying After Multiplying
 The smaller the numbers are, the easier they are to work with. Always simplify fractions when you can.
 
 **Example 3:** $\frac{2}{3} \times \frac{9}{4}$

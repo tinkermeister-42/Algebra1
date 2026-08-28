@@ -52,8 +52,7 @@ So how do you recognize a quadratic function?
 
 There are a few ways to tell, depending on whether you see an equation, a table, or a graph. Let’s start with equations.
 
-#### **From an Equation**
-
+#### From an Equation
 When you look at an equation, the fastest way to recognize a quadratic is to check the **highest power of $x$**.  
 If the highest power is $2$, the function is quadratic.
 

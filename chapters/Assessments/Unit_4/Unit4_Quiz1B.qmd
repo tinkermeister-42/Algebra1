@@ -21,14 +21,14 @@
  
 :::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 |  x  |  y  |
 | --- | --- |
 | -2  |     |
 | 2   |     |
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 ![](images/Blank.png){width="300px" fig-align="center"}
 :::
 

@@ -56,7 +56,7 @@ Let's try it with 36 and 60:
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -79,7 +79,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -108,7 +108,7 @@ Now that we have the factor trees, we can use them to easily find the GCF by cir
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -139,7 +139,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -175,7 +175,7 @@ flowchart TB
 
 The numbers 36 and 60 share two 2s and one 3. We find the GCF by multiplying those shared factors.
 $$
-2 * 2 * 3 = 12
+2 \times 2 \times 3 = 12
 $$
 The GCF for 36 and 60 is 12!
 
@@ -183,7 +183,7 @@ The GCF for 36 and 60 is 12!
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| mermaid-format: png
@@ -209,7 +209,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| mermaid-format: png
@@ -252,7 +252,7 @@ flowchart TB
 
 Both 45 and 180 share two 3s and one 5. So the GCF for 45 and 180 is:
 
-$$3 * 3 * 5 = 45$$
+$$3 \times 3 \times 5 = 45$$
 
 :::
 
@@ -264,7 +264,7 @@ You might have noticed that we did not circle **all** of the prime factors for 3
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -295,7 +295,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -339,7 +339,7 @@ This time we will divide 90 by 15. Here are some factor trees to help us.
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -364,7 +364,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -412,7 +412,7 @@ flowchart TB
 
 After crossing out 3 and 5 (the factors of 15) we are left with one 3 and one 2. This gives us...
 
-$$90 \div 15 = 3 * 2 = 6$$
+$$90 \div 15 = 3 \times 2 = 6$$
 
 :::{.you-try title="Use factor trees to divide 480 by 60."}
 
@@ -420,7 +420,7 @@ $$90 \div 15 = 3 * 2 = 6$$
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| mermaid-format: png
@@ -456,7 +456,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| mermaid-format: png
@@ -532,7 +532,7 @@ flowchart TB
 
 3. Multiply the remaining prime factors to get the answer.
 
-$$2 * 2 * 2 = 8$$
+$$2 \times 2 \times 2 = 8$$
 
 :::
 ***
@@ -593,7 +593,7 @@ If the numerator and denominator of a fraction share no common factors (besides 
 
 ::::{layout-ncol=2}
 
-:::{#diagram-1}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -608,7 +608,7 @@ flowchart TB
 ```
 :::
 
-:::{#diagram-2}
+:::{.diagram}
 
 ```{mermaid}
 %%| label: mermaid-diagram
@@ -638,7 +638,7 @@ $$
 
 ***
 
-### 1.3.4  Application: Simplifying with Recipes
+### 1.3.4 - Application: Simplifying with Recipes
 
 Imagine you’re following a recipe that makes a giant batch of cookies (way more than you need). You decide to cut the recipe down to a smaller size, but the measurements are a little awkward.
 

@@ -143,10 +143,10 @@ Look for factors of $10 \cdot 3 = 30$ that sum to $13$.
 
 |     Factors    |    Factor Sum    |
 | -------------- | ---------------- |
-|    $1 x 30$    |       $31$       |
-|    $2 x 15$    |       $17$       |
-|    $3 x 10$    |       $13$ ✓     |
-|    $5 x 6$     |       $11$       |
+|    $1 \times 30$    |       $31$       |
+|    $2 \times 15$    |       $17$       |
+|    $3 \times 10$    |       $13$ ✓     |
+|    $5 \times 6$     |       $11$       |
 
 Now complete the area model.
 

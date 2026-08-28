@@ -276,7 +276,7 @@ $$
 3(\textcolor{red}{7}) = 21
 $$
 
-Since both sides equal 21, the solution $x = 7$ is correct. ✅
+Since both sides equal 21, the solution $x = 7$ is correct. ✓
 
 ***
 
@@ -379,15 +379,15 @@ Set up and solve each situation with a one-step equation.
 10. $y = 7$
 11. $z = -14$
 12. $x = -8$
-13. $n = -27$ ✔ check: $-27/3 = -9$
-14. $k = 12$ ✔ check: $(3/4)(12) = 9$
-15. $x = 7$ ✔ check: $-8(7) = -56$
-16. $w = 36$ ✔ check: $36 / -12 = -3$
-17. $y = 0.3$ ✔ check: $1.2(0.3) = 0.36$
-18. $c = -12.2$ ✔ check: $-12.2 + 14.5 = 2.3$
-19. $m = -15$ ✔ check: $(2/5)(-15) = -6$
-20. $x = -28$ ✔ check: $-28 / -4 = 7$
-21. $n = 0.3$ ✔ check: $2.5(0.3) = 0.75$
-22. $p = -24$ ✔ check: $-18 = 6 + (-24)$
+13. $n = -27$ ✓ check: $-27/3 = -9$
+14. $k = 12$ ✓ check: $(3/4)(12) = 9$
+15. $x = 7$ ✓ check: $-8(7) = -56$
+16. $w = 36$ ✓ check: $36 / -12 = -3$
+17. $y = 0.3$ ✓ check: $1.2(0.3) = 0.36$
+18. $c = -12.2$ ✓ check: $-12.2 + 14.5 = 2.3$
+19. $m = -15$ ✓ check: $(2/5)(-15) = -6$
+20. $x = -28$ ✓ check: $-28 / -4 = 7$
+21. $n = 0.3$ ✓ check: $2.5(0.3) = 0.75$
+22. $p = -24$ ✓ check: $-18 = 6 + (-24)$
 
 :::

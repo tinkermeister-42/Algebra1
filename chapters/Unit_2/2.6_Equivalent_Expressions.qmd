@@ -155,7 +155,7 @@ Yes. You can never prove that two expressions **are** equivalent by testing valu
 
 ***
 
-### 2.6.2 Proving Equivalence
+### 2.6.2 - Proving Equivalence
 
 We've talked a lot about **testing** whether expressions are equivalent. But how do we *prove* they are equivalent?
 

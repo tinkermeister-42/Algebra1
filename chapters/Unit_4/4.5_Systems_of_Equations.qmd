@@ -75,8 +75,8 @@ We can check it using {{< glink substitution >}}.
 
 $$
 \begin{cases}
-\textcolor{blue}{3} = 2(\textcolor{red}{1})+1 = 3 ✔️ \\
-\textcolor{blue}{3} = -(\textcolor{red}{1}) + 4 = 3 ✔️
+\textcolor{blue}{3} = 2(\textcolor{red}{1})+1 = 3 ✓ \\
+\textcolor{blue}{3} = -(\textcolor{red}{1}) + 4 = 3 ✓
 \end{cases}
 $$
 
@@ -200,8 +200,7 @@ Let’s look at each one.
 
 ***
 
-#### **Solving by Substitution**
-
+#### Solving by Substitution
 Substitution works because if two expressions are equal, you can replace one with the other.
 That turns a two-variable system into a single equation you already know how to solve.
 
@@ -290,8 +289,7 @@ $$
 
 ***
 
-#### **Solving by Elimination**
-
+#### Solving by Elimination
 Elimination works by stacking the two equations and **adding or subtracting** them so that one variable cancels out.
 This method is especially convenient when both equations already have similar $x$ or $y$ coefficients.
 

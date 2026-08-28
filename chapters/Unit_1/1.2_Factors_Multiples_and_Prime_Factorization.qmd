@@ -144,7 +144,7 @@ flowchart TB
 ```
 </div>
 <br>
-2. Find any two numbers that multiply to give the number: $360 = 18 × 20$
+2. Find any two numbers that multiply to give the number: $360 = 18 \times 20$
 
 <div style="display: flex; justify-content: center;">
 
@@ -163,8 +163,8 @@ flowchart TB
 <br>
 3. Break each of those numbers down further:
 
-   - $18 = 3 × 6$
-   - $20 = 4 × 5$
+   - $18 = 3 \times 6$
+   - $20 = 4 \times 5$
 
 <div style="display: flex; justify-content: center;">
 
@@ -231,13 +231,13 @@ flowchart TB
 </div>
 <br>
 5. The prime factorization is the product of the leaves of the tree: <br> 
-$$2 * 2 * 2 * 3 * 3 * 5 = 360$$
+$$2 \times 2 \times 2 \times 3 \times 3 \times 5 = 360$$
 This can be written more compactly by using the factor counts as {{< glink slug="exponent" text="exponents" >}}. There are three 2s and two 3s in this case and so we get...<br>
-$$2^3 * 3^2 * 5 = 360$$
+$$2^3 \times 3^2 \times 5 = 360$$
 
 ***
 
-There are *many* factor trees for the number 360. For example, you could also have started with $360 = 3 * 120$.
+There are *many* factor trees for the number 360. For example, you could also have started with $360 = 3 \times 120$.
 
 <div style="display: flex; justify-content: center;">
 
@@ -279,7 +279,7 @@ flowchart TB
 </div>
 <br>
 There are still three 2s, two 3s, and one 5, so the prime factorization does not change!
-$$2^3 * 3^2 * 5 = 360$$
+$$2^3 \times 3^2 \times 5 = 360$$
 As long as you end up with the same prime numbers, the tree is correct!
 
 ***
@@ -370,7 +370,7 @@ flowchart TB
 
 So, the prime factorization of -24 is...
 
-$$-1 * 2^3 * 3 = -24$$
+$$-1 \times 2^3 \times 3 = -24$$
 
 
 This will come in handy later when we factor algebraic {{< glink slug="expression" text="expressions" >}} like $-x^2 + 4x$. It’s often helpful to pull out a negative first!

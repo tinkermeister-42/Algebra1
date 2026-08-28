@@ -168,8 +168,7 @@ We have now learned the important first step in factoring polynomials: take out 
 Before we learn how to factor trinomials, it helps to understand how they are created when we multiply two binomials.  
 An area model organizes the multiplication so we can clearly see where each term comes from.
 
-#### **A closer look at multiplying binomials**
-
+#### A closer look at multiplying binomials
 Consider the product
 
 $$
@@ -202,8 +201,7 @@ Factoring works by reversing this structure.
 
 ***
 
-#### **Using the area model to factor**
-
+#### Using the area model to factor
 To factor a trinomial like
 
 $$
