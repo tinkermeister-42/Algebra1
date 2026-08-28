@@ -150,6 +150,21 @@ img.grid.sm  { width: 2.3in; }
 img.grid.lg  { width: 3.6in; }
 img.fig  { display: block; max-width: 100%; height: auto; margin: 4px 0; }
 
+/* A story figure sitting beside its question: the pizzas in 1.5, the stairs in
+   4.2.  Capped so a picture never pushes the writing space off the page. */
+.figrow { display: flex; gap: 16px; align-items: flex-start; margin: 4px 0 2px; }
+.figrow img { display: block; height: auto; max-width: 100%; }
+.figrow figure { margin: 0; text-align: center; }
+.figrow figcaption { font-size: 8.5pt; color: #555; margin-top: 1px; }
+.fig-s img { max-height: 1.05in; }
+.fig-m img { max-height: 1.6in; }
+/* Multi-panel figures students have to read: size by width, and by shape, so a
+   square 2x2 panel does not swallow the page. */
+.fig-w  { display: block; }
+.fig-w  img { width: 100%; max-width: 5.4in; max-height: none; margin: 3px auto; }
+.fig-sq { display: block; }
+.fig-sq img { width: 100%; max-width: 3.3in; max-height: none; margin: 3px auto; }
+
 /* ---------- layout helpers ---------- */
 .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; }
 .cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 18px; }
