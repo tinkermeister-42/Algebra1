@@ -185,7 +185,7 @@ Before that, the second plan is cheaper; after that, the first plan is cheaper.
 
 ***
 
-### 4.5.2 - Other Solving Methods (Optional)
+### 4.5.2 - Other Solving Methods
 
 Graphing is a great way to see where two lines meet, but sometimes the intersection doesn’t fall on clean grid points.
 Or maybe the lines are difficult to draw accurately.
