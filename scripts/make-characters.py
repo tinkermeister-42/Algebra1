@@ -40,6 +40,24 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
+def spine(x0, y0, x1, y1, bend=0.0, w_top=0.9, w_hip=2.5):
+    """The torso, as a filled calligraphic wedge rather than a stroked line.
+
+    In the originals it leaves the base of the head as a point and widens as it
+    drops, thickest at the hip, with a gentle bend.  That taper is most of what
+    makes the figure read as a body with mass instead of a stick."""
+    dx, dy = x1 - x0, y1 - y0
+    L = (dx * dx + dy * dy) ** 0.5 or 1.0
+    px, py = -dy / L, dx / L                     # unit perpendicular
+    mx, my = (x0 + x1) / 2 + px * bend, (y0 + y1) / 2 + py * bend
+    return (f'<path d="M{x0 + px * w_top:.1f},{y0 + py * w_top:.1f} '
+            f'Q{mx + px * w_hip * .6:.1f},{my + py * w_hip * .6:.1f} '
+            f'{x1 + px * w_hip:.1f},{y1 + py * w_hip:.1f} '
+            f'L{x1 - px * w_hip:.1f},{y1 - py * w_hip:.1f} '
+            f'Q{mx - px * w_hip * .2:.1f},{my - py * w_hip * .2:.1f} '
+            f'{x0 - px * w_top:.1f},{y0 - py * w_top:.1f} Z" fill="{INK}"/>')
+
+
 def limb(jx, jy, segs, s):
     """A limb as a run of segments from the junction; sharp corners, no easing."""
     pts, x, y, out = [], jx, jy, []
@@ -50,7 +68,7 @@ def limb(jx, jy, segs, s):
     return "".join(out), (x, y)
 
 
-def person(x, y, arms, legs, tilt=0, torso=(0, 46), head_r=(25, 23), s=1.0):
+def person(x, y, arms, legs, tilt=0, torso=(0, 46), head_r=(25, 23), bend=0.0, s=1.0):
     """A figure whose neck is the only joint that matters.
 
     The torso and both arms all leave one junction just under the head - there
@@ -61,7 +79,7 @@ def person(x, y, arms, legs, tilt=0, torso=(0, 46), head_r=(25, 23), s=1.0):
     (x, y) is the junction.  Returns the drawing, the top of the head, and
     where each hand ended up."""
     tx, ty = x + torso[0] * s, y + torso[1] * s
-    parts, hands = [line(x, y, tx, ty)], []
+    parts, hands = [spine(x, y, tx, ty, bend * s, 0.9 * s, 2.5 * s)], []
     for segs in arms:
         d, hand = limb(x, y, segs, s)
         parts.append(d); hands.append(hand)
@@ -128,16 +146,16 @@ def distribute():
         96, 108,
         arms=[[(-15, 27), (-27, 53)],           # trailing arm, relaxed
               [(36, 13), (68, 8)]],             # offering arm
-        legs=stand(1), tilt=12, torso=(16, 56), s=1.02)
+        legs=stand(1), tilt=12, torso=(16, 56), bend=3.5, s=1.02)
     b.append(fig)
     b.append(sheet(*hands[1], tilt=-17, w=19, h=25))
     b.append(bubble(228, 30, 264, 40, (108, head_top - 2), ["Distribute these, please."], size=15))
 
     for kw, px, tilt in [
         (dict(arms=[[(-19, 29), (-32, 52)], [(29, 11), (53, 21)]],
-              legs=stand(-1), tilt=-8, torso=(-11, 56)), 302, 9),
+              legs=stand(-1), tilt=-8, torso=(-11, 56), bend=-3.0), 302, 9),
         (dict(arms=[[(-23, 25), (-36, 50)], [(27, 15), (51, 13)]],
-              legs=stand(1), tilt=9, torso=(8, 55)), 420, -8),
+              legs=stand(1), tilt=9, torso=(8, 55), bend=2.8), 420, -8),
     ]:
         f, _, hs = person(px, 115, s=0.96, **kw)
         b.append(f)
