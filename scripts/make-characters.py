@@ -173,7 +173,11 @@ def distribute():
     already reading hers.  The bows and leans are deliberately small - just
     enough to stop a correct pose reading as a mannequin, not so much that it
     turns into mime."""
-    W, H = 520, 292
+    # The bubble is the top of the drawing, and it sat all but on the edge of
+    # the frame.  Everything is laid out from the floor up, so the room is made
+    # by growing the frame and dropping the whole scene into it.
+    TOP = 14
+    W, H = 520, 292 + TOP
     FLOOR = 250
     b = []
 
@@ -212,7 +216,7 @@ def distribute():
     b.append(sheet(hs[1][0] + 6, hs[1][1] - 3, tilt=6, w=19, h=25))
 
     b.append(line(30, FLOOR, W - 24, FLOOR, 1.3))
-    return svg(W, H, "".join(b),
+    return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
                "A teacher handing a worksheet to one student while another reads hers")
 
 
