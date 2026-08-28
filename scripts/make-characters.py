@@ -42,17 +42,40 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
+def arc(x1, y1, x2, y2, bow=0.0, w=LW):
+    """A line with a slight bow to it.
+
+    Nothing in a body is straight in silhouette.  A rigid segment reads as a
+    stick; the same segment bowed a couple of percent of its length reads as an
+    arm.  This is most of the difference between a stick figure and a stick
+    figure that looks alive, and it is deliberately small - too much and it
+    stops looking like a stick figure at all."""
+    if not bow:
+        return line(x1, y1, x2, y2, w)
+    dx, dy = x2 - x1, y2 - y1
+    L = (dx * dx + dy * dy) ** 0.5 or 1.0
+    cx = (x1 + x2) / 2 - dy / L * bow
+    cy = (y1 + y2) / 2 + dx / L * bow
+    return (f'<path d="M{x1:.1f},{y1:.1f} Q{cx:.1f},{cy:.1f} {x2:.1f},{y2:.1f}" '
+            f'fill="none" stroke="{INK}" stroke-width="{w}" stroke-linecap="round"/>')
+
+
 def limb(jx, jy, segs, s):
-    """A limb as a run of segments from the junction; sharp corners, no easing."""
-    pts, x, y, out = [], jx, jy, []
-    for dx, dy in segs:
+    """A limb as a run of segments from the junction, each optionally bowed.
+
+    A segment is (dx, dy) or (dx, dy, bow); the corner at the joint stays sharp."""
+    x, y, out = jx, jy, []
+    for seg in segs:
+        dx, dy = seg[0], seg[1]
+        bow = seg[2] if len(seg) > 2 else 0.0
         nx, ny = jx + dx * s, jy + dy * s
-        out.append(line(x, y, nx, ny))
+        out.append(arc(x, y, nx, ny, bow * s))
         x, y = nx, ny
     return "".join(out), (x, y)
 
 
-def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23), s=1.0):
+def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23),
+           spine_bow=None, s=1.0):
     """A figure built the way the originals are.
 
     `spine_leg` is the single continuous run from the neck, down the back and
@@ -72,7 +95,8 @@ def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23), s=1.0):
     for dx, dy in segs:
         pts.append((x + dx * s, y + dy * s))
     # one uniform stroke the whole way, head to foot; the far leg branches off it
-    parts = [line(*pts[k], *pts[k + 1]) for k in range(len(pts) - 1)]
+    bows = spine_bow if spine_bow else [0] * (len(pts) - 1)
+    parts = [arc(*pts[k], *pts[k + 1], bows[k] * s) for k in range(len(pts) - 1)]
 
     bx, by = pts[branch]
     px_, py_ = bx, by
@@ -131,42 +155,53 @@ def sheet(x, y, w=17, h=22, tilt=0):
 
 def distribute():
     """2.4 - the lesson's own opening story: the teacher hands one worksheet to
-    every student, which is exactly what a(b + c) does to each term."""
-    W, H = 520, 282
-    FLOOR = 240
+    every student, which is exactly what a(b + c) does to each term.
+
+    Three attitudes rather than three copies: one offering, one taking, one
+    already reading hers.  The bows and leans are deliberately small - just
+    enough to stop a correct pose reading as a mannequin, not so much that it
+    turns into mime."""
+    W, H = 520, 292
+    FLOOR = 250
     b = []
 
-    # neck -> down the back -> hip -> knee -> foot, all one stroke; the second
-    # leg branches at the hip, which is index 1 in that run
-    def body(lean, kick):
-        # points: mid-back, hip, knee, foot - the far leg branches at the hip
-        return ([(lean, 30), (lean + 6, 58), (lean + 1, 96), (lean + 5, 132)], 2)
-
-    def far_leg(kick):
-        return [(kick * 13, 34), (kick * 20, 74)]
-
+    # --- offering ------------------------------------------------------------
     fig, head_top, hands = person(
-        96, 108,
-        arms=[[(-15, 27), (-27, 53)],
-              [(36, 13), (68, 8)]],
-        spine_leg=body(9, 1), other_leg=far_leg(1), tilt=12, s=1.02)
+        104, 100,
+        arms=[[(-9, 33, 1.2), (-7, 63, 0.8)],
+              [(18, 22, -1.4), (46, 16, -1.8)]],
+        spine_leg=([(3, 32), (8, 62), (3, 104), (-2, 146)], 2),
+        other_leg=[(20, 44), (25, 84)],
+        spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=7, s=1.0)
     b.append(fig)
-    b.append(sheet(*hands[1], tilt=-17, w=19, h=25))
-    b.append(bubble(228, 30, 264, 40, (108, head_top - 2), ["Distribute these, please."], size=15))
+    b.append(bubble(240, 30, 258, 38, (114, head_top - 2), ["Distribute these, please."], size=15))
+    gx, gy = hands[1]
+    b.append(sheet(gx + 8, gy + 1, tilt=-9, w=18, h=24))     # held in the giving hand
 
-    for kw, px, tilt in [
-        (dict(arms=[[(-19, 29), (-32, 52)], [(29, 11), (53, 21)]],
-              spine_leg=body(-7, -1), other_leg=far_leg(-1), tilt=-8), 302, 9),
-        (dict(arms=[[(-23, 25), (-36, 50)], [(27, 15), (51, 13)]],
-              spine_leg=body(6, 1), other_leg=far_leg(1), tilt=9), 420, -8),
-    ]:
-        f, _, hs = person(px, 115, s=0.96, **kw)
-        b.append(f)
-        b.append(sheet(*hs[1], tilt=tilt, w=18, h=24))
+    # --- taking it -----------------------------------------------------------
+    f, _, hs = person(
+        226, 106,
+        arms=[[(10, 33, -1.1), (8, 63, -0.7)],
+              [(-17, 22, 1.4), (-42, 17, 1.8)]],
+        spine_leg=([(-3, 32), (-8, 62), (-3, 104), (2, 146)], 2),
+        other_leg=[(-20, 44), (-25, 84)],
+        spine_bow=[-1.3, -1.5, 0.8, 0.5], tilt=-6, s=0.95)
+    b.append(f)
 
-    b.append(line(28, FLOOR, W - 22, FLOOR, 1.3))
+    # --- already has one, reading it ----------------------------------------
+    f, _, hs = person(
+        392, 110,
+        arms=[[(-13, 32, 1.3), (-14, 61, 0.9)],      # hanging, swung clear of the back
+              [(17, 17, -1.0), (33, 15, -1.3)]],      # up in front, holding it to read
+        spine_leg=([(3, 32), (7, 62), (2, 104), (-3, 146)], 2),
+        other_leg=[(19, 44), (24, 84)],
+        spine_bow=[1.4, 1.6, -0.8, -0.4], tilt=9, s=0.93)
+    b.append(f)
+    b.append(sheet(hs[1][0] + 6, hs[1][1] - 3, tilt=6, w=19, h=25))
+
+    b.append(line(30, FLOOR, W - 24, FLOOR, 1.3))
     return svg(W, H, "".join(b),
-               "A teacher handing one worksheet to each of two students")
+               "A teacher handing a worksheet to one student while another reads hers")
 
 
 if __name__ == "__main__":
