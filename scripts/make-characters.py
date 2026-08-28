@@ -49,9 +49,13 @@ def head(cx, cy, rx, ry, tilt=0, w=LW):
             f'stroke="{INK}" stroke-width="{w}"/>')
 
 
-def text(x, y, s, size=20, anchor="middle", weight="normal"):
-    return (f'<text x="{x:.1f}" y="{y:.1f}" font-family="{FONT}" font-size="{size}" '
-            f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
+SANS = "'Open Sans',Helvetica,Arial,sans-serif"
+
+
+def text(x, y, s, size=20, anchor="middle", weight="normal", family=None):
+    return (f'<text x="{x:.1f}" y="{y:.1f}" font-family="{family or FONT}" '
+            f'font-size="{size}" font-weight="{weight}" text-anchor="{anchor}" '
+            f'fill="{INK}">{s}</text>')
 
 
 def arc(x1, y1, x2, y2, bow=0.0, w=LW):
@@ -128,15 +132,29 @@ def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23),
     return "".join(parts), hcy - ry, hands
 
 
-def bubble(x, y, w, h, tail_to, lines, size=17):
-    """A rounded speech bubble with a straight tail."""
+def bubble(x, y, w, h, tail_to, lines, size=17, side=None):
+    """A rounded balloon with a short wedge tail - the book's own convention,
+    as in the cliff drawing in 4.2.
+
+    The tail is a stubby triangle off the underside of the balloon, not a long
+    needle reaching across the panel: it should read as attached to the balloon
+    and merely pointing, so it starts wide and ends near the speaker."""
     tx, ty = tail_to
+    bx = side if side is not None else max(x - w / 2 + 16, min(x + w / 2 - 16, tx))
+    by = y + h / 2
+    half = 9
     parts = [f'<rect x="{x-w/2:.1f}" y="{y-h/2:.1f}" width="{w}" height="{h}" rx="10" '
              f'fill="#fff" stroke="{INK}" stroke-width="{LW}"/>',
-             line(x, y + h / 2, tx, ty, LW)]
+             f'<path d="M{bx-half:.1f},{by:.1f} L{tx:.1f},{ty:.1f} '
+             f'L{bx+half:.1f},{by:.1f} Z" fill="#fff" stroke="{INK}" '
+             f'stroke-width="{LW}" stroke-linejoin="round"/>',
+             # hide the balloon edge the tail now opens into
+             f'<line x1="{bx-half+1.4:.1f}" y1="{by:.1f}" x2="{bx+half-1.4:.1f}" '
+             f'y2="{by:.1f}" stroke="#fff" stroke-width="{LW+1.2}"/>']
     n = len(lines)
-    for i, s in enumerate(lines):
-        parts.append(text(x, y - (n - 1) * (size * .62) + i * (size * 1.24) + size * .34, s, size))
+    for i, ln in enumerate(lines):
+        parts.append(text(x, y - (n - 1) * (size * .62) + i * (size * 1.24) + size * .34,
+                          ln, size, weight="bold", family=SANS))
     return "".join(parts)
 
 
@@ -190,7 +208,8 @@ def distribute():
         other_leg=[(20, 44), (25, 84)],
         spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=7, s=1.0)
     b.append(fig)
-    b.append(bubble(240, 30, 258, 38, (114, head_top - 2), ["Distribute these, please."], size=15))
+    b.append(bubble(206, 24, 196, 32, (116, head_top - 3),
+                    ["Distribute these, please."], size=15))
     gx, gy = hands[1]
     b.append(sheet(gx + 8, gy + 1, tilt=-9, w=18, h=24))     # held in the giving hand
 
