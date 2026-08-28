@@ -32,7 +32,7 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
 
 
 def person(x, y, arms=((-22, 14, -38, 26), (22, 14, 38, 26)),
-           legs=((-14, 30, -20, 58), (14, 30, 20, 58)), s=1.0):
+           legs=((-17, 46, -14, 84), (17, 46, 14, 84)), s=1.0):
     """A figure with feet at (x, y).
 
     Limbs bend.  Each one is (elbow_dx, elbow_dy, hand_dx, hand_dy) measured
@@ -42,12 +42,14 @@ def person(x, y, arms=((-22, 14, -38, 26), (22, 14, 38, 26)),
 
     Returns the drawing, the top of the head (for a speech-bubble tail) and
     where each hand ended up (so a prop can be put in one)."""
-    head_r = 20 * s
-    leg_h, torso = 58 * s, 62 * s
+    head_r = 19 * s
+    # legs are about half the figure's height; short legs read as a toddler
+    leg_h, torso = 84 * s, 54 * s
     hip_y = y - leg_h
     sh_y = hip_y - torso
-    head_cy = sh_y - head_r + 2 * s
-    p = [circle(x, head_cy, head_r), line(x, sh_y, x, hip_y)]
+    head_cy = sh_y - head_r + 3 * s
+    # torso first, head last and filled, so the line cannot poke into the face
+    p = [line(x, sh_y, x, hip_y)]
     hands = []
     for ex, ey, hx, hy in arms:
         jx, jy = x + ex * s, sh_y + (6 + ey) * s
@@ -57,6 +59,7 @@ def person(x, y, arms=((-22, 14, -38, 26), (22, 14, 38, 26)),
     for ex, ey, fx, fy in legs:
         jx, jy = x + ex * s, hip_y + ey * s
         p += [line(x, hip_y, jx, jy), line(jx, jy, x + fx * s, hip_y + fy * s)]
+    p.append(circle(x, head_cy, head_r, fill="#fff"))
     return "".join(p), head_cy - head_r, hands
 
 
@@ -106,7 +109,7 @@ def distribute():
     fig, head_top, hands = person(
         96, 250,
         arms=((-20, 20, -30, 40), (30, 4, 58, -4)),      # left down, right offering
-        legs=((-12, 30, -22, 58), (14, 30, 20, 58)), s=1.05)
+        legs=((-18, 46, -15, 84), (19, 46, 17, 84)), s=1.05)
     b.append(fig)
     b.append(sheet(*hands[1], tilt=-14))          # the sheet is in the outstretched hand
     b.append(bubble(214, 42, 300, 50, (head_top and 108, head_top - 6),
@@ -116,7 +119,7 @@ def distribute():
         f, _, hs = person(
             x, 256,
             arms=((-20, 14, -32, 26), (22, 10, 38, 2)),   # hand below the elbow, not hooked up
-            legs=((-11, 27, -18, 52), (12, 27, 19, 52)), s=0.92)
+            legs=((-17, 46, -14, 84), (18, 46, 16, 84)), s=0.92)
         b.append(f)
         b.append(sheet(*hs[1], tilt=tilt))
 
