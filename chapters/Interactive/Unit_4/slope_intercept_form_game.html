@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Unit 4 - Line Matching Game – DHS Algebra 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../chapters/Interactive/Unit_6/vertex_form_explorer.html" rel="next">
+<link href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" rel="prev">
+<link href="../../../images/logo.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      packages: { '[+]': ['ams', 'color', 'cancel', 'html'] },
+      macros: {
+        stepnote: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{#1}}}', 1],
+        steptag: ['\\stepnote{#1}', 1],
+        snboth: ['\\hbox{}\\hskip 1em\\class{stepnote}{\\textcolor{gray}{\\scriptsize\\hbox{$#1$ both sides}}}', 1],
+        snplus: ['\\snboth{+\\,#1}', 1],
+        snminus: ['\\snboth{-\\,#1}', 1],
+        sntimes: ['\\snboth{\\times\\,#1}', 1],
+        sndiv: ['\\snboth{\\div\\,#1}', 1]
+      }}
+    };
+</script>
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles/widget-themes.css">
+<link rel="stylesheet" href="../../../styles/glossary-tooltips.css">
+<link rel="stylesheet" href="../../../styles/custom-callouts.css">
+<link rel="stylesheet" href="../../../styles/custom-general.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">DHS Algebra 1</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/slope_intercept_form_game.html">Unit 4 - Line Matching Game</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      <img src="../../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to Algebra 1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 1: Foundations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.1_Integers_and_Number_Lines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 - Integers &amp; Number Lines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 - Factors, Multiples &amp; Prime Factorization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.3_GCF_and_Simplifying_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 - GCF &amp; Simplifying Fractions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 - Multiplying &amp; Dividing Fractions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.5_Adding_and_Subtracting_Fractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 - Adding &amp; Subtracting Fractions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.6_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 - Fractions, Decimals &amp; Percents: Conversions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.7 - Solving Problems With Fractions, Decimals &amp; Percents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/1.8_Order_of_Operations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.8 - Order of Operations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_1/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 2: Algebraic Expressions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.1_Expressions_and_Their_Parts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 - Expressions &amp; Their Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.2_Evaluating_Expressions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 - Evaluating Expressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.3_Combining_Like_Terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 - Combining Like Terms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.4_The_Distributive_Property.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 - The Distributive Property</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 - Inputs and Outputs of Functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/2.6_Equivalent_Expressions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.6 - Equivalent Expressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_2/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 3: Solving Linear Equations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.1_Solving_One-Step_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 - Solving One-Step Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.2_Solving_Two-Step_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 - Solving Two-Step Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.3_Multi-Step_Equations_with_Distribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 - Multi-Step Equations with Distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.4_Equations_with_Variables_on_Both_Sides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 - Solving Equations With Variables on Both Sides</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.5_Equations_With_No_or_Infinite_Solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 - Equations With No or Infinite Solutions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.6_Solving_Inequalities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 - Solving Inequalities</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/3.7_Solving_Literal_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 - Solving Literal Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_3/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 4: Linear Functions &amp; Graphs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.1_Graphing_Function_Rules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 - Graphing Function Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.2_Understanding_Slope.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 - Understanding Slope</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.3_The_Equation_of_a_Line.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 - The Equation of a Line</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.4_Writing_Linear_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 - Writing Linear Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.5_Systems_of_Equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 - Systems of Equations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 - Linear Models in the Real World</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/4.7_Graphing_Linear_Inequalities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 - Graphing Linear Inequalities</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_4/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 5: Exponents &amp; Polynomials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/5.1_Exponent_Rules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 - Exponent Rules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/5.2_Simplifying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 - Simplifying Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/5.3_Multiplying_Polynomials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 - Multiplying Polynomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/5.4_Factoring_Polynomials_A.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 - Factoring: GCF &amp; Basic Trinomials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/5.5_Factoring_Polynomials_B.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 - Factoring: General Trinomials &amp; Special Patterns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_5/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Unit 6: Quadratic Equations &amp; Functions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 - Introduction to Quadratics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.2_Graphing_Quadratics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 – Graphing Quadratics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 - Solving Quadratic Equations by Factoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.4_Solving_by_Taking_Square_Roots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 - Solving Quadratic Equations by Taking Square Roots</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.5_Completing_the_Square.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 - Completing the Square</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.6_The_Quadratic_Formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 - The Quadratic Formula</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/6.7_Applications_of_Quadratics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7 - Applications of Quadratics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Unit_6/Review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../guided-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Printable Guided Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interactive Learning</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_1/prime_factorization_game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 1 - Prime Factorization Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_2/function_machine_game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 2 - Guess the Function Rule Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_4/understanding_slope.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4 - Slope Explorer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_4/exploring_slope_intercept_form.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4 - Slope-Intercept Form Investigation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4 - Intro to Correlation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_4/slope_intercept_form_game.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Unit 4 - Line Matching Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Interactive/Unit_6/vertex_form_explorer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 6 - Vertex Form Explorer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Supplemental</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Supplemental/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Supplemental Materials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Supplemental/math_games_and_puzzles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Math Games and Puzzles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Supplemental/worksheets/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Extra Practice Worksheets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../chapters/Supplemental/challenge_solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Problem Solutions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../chapters/Interactive/index.html">Interactive Learning</a></li><li class="breadcrumb-item"><a href="../../../chapters/Interactive/Unit_4/slope_intercept_form_game.html">Unit 4 - Line Matching Game</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Unit 4 - Line Matching Game</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A quick way to build intuition for how slope and intercept shape a line.</p>
+<p>Match the <strong>hidden target line</strong> using slope–intercept form (<span class="math inline">\(y = mx + b\)</span>).</p>
+<p><strong>How to play:</strong></p>
+<ol type="1">
+<li>Hit <strong>Start</strong> to begin a round.</li>
+<li>Enter your <strong><span class="math inline">\(m\)</span></strong> and <strong><span class="math inline">\(b\)</span></strong>, then press <strong>Apply</strong> to reveal your guess.</li>
+<li>You have limited <strong>moves</strong>, and (if enabled) a <strong>timer</strong>, faster matches earn bigger multipliers.</li>
+<li>Correct answers give points; every <strong>100 points</strong> = <strong>+1 life</strong>.</li>
+<li>Run out of moves or lives and the game ends.</li>
+</ol>
+<!-- Line Match Game – v6.2 -->
+<div class="slope_intercept_form_game" data-max-moves="6" data-lives="3">
+
+</div>
+<style>
+:root{
+  --plot-pad:12px;
+  --bg-card:#f9fafb;
+  --bd-card:#e2e8f0;
+  --ink:#0f172a;
+  --accent:#2563eb;
+  --accent-strong:#1d4ed8;
+  --grid:#e2e8f0;
+  --axis:#111827;
+  --plot-bg:#ffffff;
+  --target:#10b981;
+  --player:#2563eb;
+  --warn:#f59e0b;
+  --danger:#ef4444;
+  --tile-bg:#ffffff;
+  --tile-bd:#e2e8f0;
+  --panel-bg:#ffffff;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.25);
+  --tab-bg:#ffffff;
+  --tab-bd:#e2e8f0;
+  --tab-ink:#334155;
+  --tab-active:#2563eb;
+  --tab-active-ink:#ffffff;
+  --tick:#0f172a;
+}
+
+/* Global monospace override for the whole widget system */
+:root {
+  --lm-font: 'Courier New', Courier, monospace !important;
+}
+
+
+/* THEME: MIDNIGHT (high-contrast cyan/blue on deep navy) */
+.slope_intercept_form_game.theme-midnight{
+  --bg-card:#020617;
+  --bd-card:#111827;
+  --ink:#e5e7eb;
+  --accent:#22d3ee;
+  --accent-strong:#0ea5e9;
+  --grid:#111827;
+  --axis:#e5e7eb;
+  --plot-bg:#020617;
+  --target:#4ade80;   /* bright green */
+  --player:#38bdf8;   /* bright cyan */
+  --warn:#facc15;
+  --danger:#fb7185;
+  --tile-bg:#020617;
+  --tile-bd:#111827;
+  --panel-bg:#020617;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.65);
+  --tab-bg:#020617;
+  --tab-bd:#111827;
+  --tab-ink:#9ca3af;
+  --tab-active:#0ea5e9;
+  --tab-active-ink:#0b1120;
+  --tick:#e5e7eb;
+}
+
+/* THEME: OCEAN (unchanged, already good) */
+.slope_intercept_form_game.theme-ocean{
+  --bg-card:#ecfeff;
+  --bd-card:#bae6fd;
+  --ink:#0f172a;
+  --accent:#0ea5e9;
+  --accent-strong:#0284c7;
+  --grid:#e0f2fe;
+  --axis:#0f172a;
+  --plot-bg:#f0f9ff;
+  --target:#22c55e;
+  --player:#0369a1;
+  --warn:#f97316;
+  --danger:#ef4444;
+  --tile-bg:#f9feff;
+  --tile-bd:#bae6fd;
+  --panel-bg:#f9feff;
+  --panel-shadow:0 10px 30px rgba(15,23,42,.18);
+  --tab-bg:#e0f2fe;
+  --tab-bd:#bae6fd;
+  --tab-ink:#0f172a;
+  --tab-active:#0ea5e9;
+  --tab-active-ink:#ffffff;
+  --tick:#0f172a;
+}
+
+/* THEME: DARCULA – warm purple + neon accents */
+.slope_intercept_form_game.theme-darcula{
+  --bg-card:#1e1f22;
+  --bd-card:#2b2d31;
+  --ink:#f8fafc;
+  --accent:#c084fc;          /* purple accent */
+  --accent-strong:#a855f7;
+  --grid:#2b2d31;
+  --axis:#e5e7eb;
+  --plot-bg:#1e1f22;
+  --target:#facc15;          /* gold target line */
+  --player:#c084fc;          /* purple player line */
+  --warn:#fbbf24;
+  --danger:#fb7185;
+  --tile-bg:#1e1f22;
+  --tile-bd:#2b2d31;
+  --panel-bg:#1e1f22;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.8);
+  --tab-bg:#1e1f22;
+  --tab-bd:#2b2d31;
+  --tab-ink:#cbd5e1;
+  --tab-active:#a855f7;
+  --tab-active-ink:#1e1f22;
+  --tick:#e2e8f0;
+}
+
+/* THEME: TERMINAL GREEN – neon CRT-style */
+.slope_intercept_form_game.theme-terminal{
+  --bg-card:#020617;
+  --bd-card:#064e3b;
+  --ink:#bbf7d0;
+  --accent:#22c55e;
+  --accent-strong:#16a34a;
+  --grid:#022c22;
+  --axis:#22c55e;
+  --plot-bg:#020617;
+  --target:#39ff14;          /* bright neon green */
+  --player:#a7f3d0;          /* softer mint for player line */
+  --warn:#f97316;
+  --danger:#ef4444;
+  --tile-bg:#020617;
+  --tile-bd:#064e3b;
+  --panel-bg:#020617;
+  --panel-shadow:0 10px 30px rgba(0,0,0,.85);
+  --tab-bg:#020617;
+  --tab-bd:#064e3b;
+  --tab-ink:#a7f3d0;
+  --tab-active:#16a34a;
+  --tab-active-ink:#02130c;
+  --tick:#bbf7d0;
+}
+
+.slope_intercept_form_game {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 14px;
+  font-family: var(--lm-font);
+  color: var(--ink);
+}
+
+/* TABS */
+.tabs{
+  display:flex;
+  gap:8px;
+  margin-bottom:8px;
+}
+.tab{
+  background:var(--tab-bg);
+  border:1px solid var(--tab-bd);
+  color:var(--tab-ink);
+  padding:6px 10px;
+  border-radius:10px;
+  font-weight:800;
+  font-size:12px;
+  cursor:pointer;
+  user-select:none;
+}
+.tab.active{
+  border-color:var(--accent-strong);
+  background:var(--accent);
+  color:var(--tab-active-ink);
+}
+
+.lm9-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-auto-rows:auto;
+  gap:10px;
+}
+
+/* SCOREBOARD */
+.scoreboard{
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:6px 8px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  align-items:stretch;
+}
+.tile{
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:10px 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  transition:border-color .2s,color .2s;
+}
+.tile .lbl{
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#475569;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.slope_intercept_form_game.theme-midnight .tile .lbl,
+.slope_intercept_form_game.theme-darcula .tile .lbl,
+.slope_intercept_form_game.theme-terminal .tile .lbl{
+  color:#9aa5b1;
+}
+.tile .val{
+  font-variant-numeric:tabular-nums;
+  font-size:18px;
+  font-weight:900;
+  margin-top:2px;
+}
+.tile.time.warn,
+.tile.moves.warn{
+  border-color:var(--warn);
+  animation:pulseRing 1.3s ease-out infinite;
+}
+.tile.time.danger,
+.tile.moves.danger{
+  border-color:var(--danger);
+  animation:pulseRing .85s ease-out infinite;
+}
+.tile.life{
+  position:relative;
+}
+.life-toast{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  background:#10b981;
+  color:#fff;
+  border-radius:9999px;
+  padding:2px 6px;
+  font-weight:800;
+  font-size:11px;
+  opacity:0;
+  transform:translateY(-6px);
+  transition:opacity .18s,transform .18s;
+  box-shadow:0 2px 6px rgba(16,185,129,.35);
+}
+.life-toast.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* GRAPH */
+.plot-wrap{
+  position:relative;
+  padding:10px;
+  overflow:hidden;
+  border-radius:12px;
+  background:var(--tile-bg);
+  border:1px solid var(--bd-card);
+}
+.plot{
+  width:100%;
+  aspect-ratio:1/1;
+  height:auto;
+  display:block;
+  background:transparent;
+  border-radius:10px;
+  border:0;
+}
+.eq-badge{
+  position:absolute;
+  z-index:2;
+  top:var(--plot-pad);
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--panel-bg);
+  color:var(--ink);
+  border:1px solid var(--bd-card);
+  border-radius:8px;
+  padding:6px 10px;
+  font-weight:700;
+  font-size:13px;
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+  display:none;
+  animation:popIn .18s ease-out;
+}
+
+.start-overlay{
+  position:absolute;
+  inset:10px;
+  background:rgba(255,255,255,.96);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:3;
+  border-radius:10px;
+  border:1px dashed var(--bd-card);
+}
+.slope_intercept_form_game.theme-midnight .start-overlay,
+.slope_intercept_form_game.theme-darcula .start-overlay,
+.slope_intercept_form_game.theme-terminal .start-overlay{
+  background:rgba(15,23,42,.92);
+}
+.start-overlay .msg{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+}
+.start-overlay .hint{
+  font-size:12px;
+  color:#475569;
+}
+.slope_intercept_form_game.theme-midnight .start-overlay .hint,
+.slope_intercept_form_game.theme-darcula .start-overlay .hint,
+.slope_intercept_form_game.theme-terminal .start-overlay .hint{
+  color:#9aa5b1;
+}
+
+.confetti{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  border-radius:10px;
+}
+.confetti .p{
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:3px;
+  opacity:0;
+  will-change:transform,opacity;
+}
+
+/* CONTROLS */
+.controls{
+  font-family: 'Courier New', Courier, monospace;
+  background:var(--tile-bg);
+  border:1px solid var(--tile-bd);
+  border-radius:10px;
+  padding:8px 10px;
+  display:grid;
+  grid-template-columns:1fr 1fr auto;
+  gap:8px 10px;
+  align-items:end;
+}
+.field{
+  font-family:var(--lm-font);
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.field label{
+  font-family:var(--lm-font);
+  font-weight:800;
+  min-width:22px;
+  font-size:12px;
+  color:#334155;
+}
+.slope_intercept_form_game.theme-midnight .field label,
+.slope_intercept_form_game.theme-darcula .field label,
+.slope_intercept_form_game.theme-terminal .field label{
+  color:#9aa5b1;
+}
+.input{
+  font-family:var(--lm-font);
+  height:32px;
+  width:100%;
+  padding:0 10px;
+  border:1px solid #cbd5e1;
+  border-radius:8px;
+  font-size:13px;
+  background:#ffffff;
+  color:#0f172a;
+}
+.slope_intercept_form_game.theme-midnight .input,
+.slope_intercept_form_game.theme-darcula .input,
+.slope_intercept_form_game.theme-terminal .input{
+  background:#020617;
+  color:#e5e7eb;
+  border-color:#374151;
+}
+.actions{
+  display:flex;
+  justify-content:flex-end;
+}
+.btn{
+  font-family:var(--lm-font);
+  border:1px solid var(--accent-strong);
+  background:var(--accent);
+  border-radius:8px;
+  padding:7px 12px;
+  font-weight:800;
+  color:#ffffff;
+  cursor:pointer;
+  font-size:12px;
+}
+.btn:hover{
+  background:var(--accent-strong);
+  border-color:var(--accent-strong);
+}
+.btn:active{
+  transform:translateY(1px);
+}
+
+/* SETTINGS PANEL */
+.settings-card{
+  background:var(--panel-bg);
+  border:1px solid var(--bd-card);
+  border-radius:10px;
+  padding:10px;
+}
+.sp-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:6px 0;
+}
+.sp-row label{
+  font-weight:800;
+  font-size:12px;
+  color:#64748b;
+}
+.slope_intercept_form_game.theme-midnight .sp-row label,
+.slope_intercept_form_game.theme-darcula .sp-row label,
+.slope_intercept_form_game.theme-terminal .sp-row label{
+  color:#93a3b8;
+}
+
+.toggle-group button{
+  font-family:var(--lm-font);
+  border:1px solid var(--bd-card);
+  padding:5px 8px;
+  border-radius:8px;
+  background:var(--tile-bg);
+  color:var(--ink);
+  font-weight:800;
+  font-size:12px;
+  margin-left:6px;
+  cursor:pointer;
+}
+.toggle-group button.active{
+  font-family:var(--lm-font);
+  background:var(--accent);
+  color:#ffffff;
+  border-color:var(--accent-strong);
+}
+
+/* MODAL & ANIMS */
+.lm-modal-bg{
+  font-family:var(--lm-font);
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:radial-gradient(1000px 600px at 50% -20%, rgba(99,102,241,.35), rgba(15,23,42,.70));
+  z-index:2147483000;
+}
+.lm-modal{
+  width:min(420px,92vw);
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--panel-bg);
+  box-shadow:var(--panel-shadow);
+  color:var(--ink);
+  border:1px solid var(--bd-card);
+}
+.lm-modal *{
+  font-family:var(--lm-font);
+}
+.lm-modal-header{
+  font-family:var(--lm-font);
+  padding:12px;
+  background:var(--panel-bg);
+  color:var(--ink);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--bd-card);
+}
+.lm-modal-header h4{
+  font-family:var(--lm-font);
+  margin:0;
+  font-size:19px;
+}
+.lm-modal-body{
+  font-family:var(--lm-font);
+  padding:12px;
+}
+.lm-row{
+  font-family:var(--lm-font);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin:6px 0;
+}
+.lm-row .lm-label{
+  font-family:var(--lm-font);
+  color:#334155;
+  font-weight:700;
+}
+.slope_intercept_form_game.theme-midnight .lm-row .lm-label,
+.slope_intercept_form_game.theme-darcula .lm-row .lm-label,
+.slope_intercept_form_game.theme-terminal .lm-row .lm-label{
+  color:#9aa5b1;
+}
+.lm-modal-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  padding:10px 12px;
+  background:var(--panel-bg);
+  border-top:1px solid var(--bd-card);
+}
+.celebrate{
+  font-size:22px;
+}
+
+@keyframes pulseRing{
+  0%{box-shadow:0 0 0 0 rgba(37,99,235,.35);}
+  100%{box-shadow:0 0 0 14px rgba(37,99,235,0);}
+}
+@keyframes bump{
+  0%{transform:scale(1);}
+  35%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+.val.bump{
+  animation:bump .26s ease-out;
+}
+@keyframes popIn{
+  0%{transform:translateY(-6px) scale(.96);opacity:0;}
+  100%{transform:translateY(0) scale(1);opacity:1;}
+}
+.start-overlay .btn{
+  position:relative;
+  overflow:hidden;
+}
+.start-overlay .btn::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.35) 20%, transparent 40%);
+  background-size:200% 100%;
+  animation:shine 2.4s linear infinite;
+}
+@keyframes shine{
+  0%{background-position:-200% 0;}
+  100%{background-position:200% 0;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .tile.time.warn,
+  .tile.time.danger,
+  .tile.moves.warn,
+  .tile.moves.danger,
+  .val.bump,
+  .eq-badge,
+  .start-overlay .btn::after{
+    animation:none;
+  }
+}
+</style>
+<script>
+(function(){
+  function initAll(){document.querySelectorAll('.slope_intercept_form_game').forEach(initWidget);}
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',initAll,{once:true});
+  }else{initAll();}
+
+  function initWidget(root){
+    if(root.__init) return; root.__init=true;
+    const maxMoves=parseInt(root.dataset.maxMoves||'6',10);
+    const maxLives=parseInt(root.dataset.lives||'3',10);
+
+    const saved=safeJSON(localStorage.getItem('lm9-settings'))||{};
+    const defaultRoundTime=90;
+    const validTimes=['off',15,30,60,90,120];
+    let roundTime = saved.roundTime;
+    if(!validTimes.includes(roundTime)){
+      roundTime = defaultRoundTime;
+    }
+
+    const state={
+      xmin:-10,xmax:10,ymin:-10,ymax:10,
+      m:0,mFrac:{n:0,d:1},b:0,mSet:false,bSet:false,
+      animM:null,animB:null,pulse:null,
+      tdy:1,tdx:1,tb:0,moves:0,score:0,lives:maxLives,
+      turnLimitSec: typeof roundTime === 'number' ? roundTime : defaultRoundTime,
+      roundTime: roundTime,
+      roundTimeSnap: null,
+      timer:null,deadline:0,lastShownSec:null,
+      timerRoundEnabled:null,
+      theme:(function(){try{var q=localStorage.getItem('qw_theme_v1');if(['classic','ocean','midnight','darcula','terminal'].includes(q))return q;}catch(e){}return saved.theme||'classic';})(),
+      hoverPoint:null
+    };
+
+    function getVar(name) {
+      return getComputedStyle(root).getPropertyValue(name).trim();
+    };
+
+    applyTheme(root,state.theme);
+
+    /* Tabs */
+    const tabs=el('div','tabs');
+    const tabGame=el('div','tab active'); tabGame.textContent='Game';
+    const tabSettings=el('div','tab'); tabSettings.textContent='Settings';
+    tabs.append(tabGame,tabSettings);
+    root.append(tabs);
+
+    const grid=el('div','lm9-grid');
+    root.append(grid);
+
+    /* Settings card */
+    const settingsCard=el('div','settings-card');
+
+    const timeValues=['off',15, 30, 60, 90, 120];
+    const timeLabels=['Off','15s','30s','60s','90s','120s'];
+    let timeIdx=timeValues.findIndex(v=>v===state.roundTime);
+    if(timeIdx<0) timeIdx=timeValues.indexOf(90);
+    const rowTimer=spRow('Round time', toggleGroup(timeLabels,timeIdx));
+
+    const themeNames=['classic','midnight','ocean','darcula','terminal'];
+    let themeIdx=themeNames.indexOf(state.theme);
+    if(themeIdx<0) themeIdx=0;
+    const rowTheme=spRow('Theme', toggleGroup(['Classic','Midnight','Ocean','Darcula','Terminal'], themeIdx));
+
+    settingsCard.append(rowTimer.wrap,rowTheme.wrap);
+
+    /* Scoreboard */
+    const board=el('div','scoreboard');
+    const tMoves=tile('Moves'); tMoves.wrap.classList.add('moves');
+    const tTime=tile('Time'); tTime.wrap.classList.add('time');
+    tTime.val.textContent = state.roundTime==='off' ? 'Off' : state.roundTime+'s';
+    const tLives=tile('Lives'); tLives.wrap.classList.add('life');
+    const tScore=tile('Score');
+    board.append(tMoves.wrap,tTime.wrap,tLives.wrap,tScore.wrap);
+
+    /* Graph */
+    const wrap=el('div','plot-wrap');
+    const canvas=el('canvas','plot');
+    const eqBadge=el('div','eq-badge');
+    const overlay=el('div','start-overlay');
+    const ovMsg=el('div','msg');
+    const ovHint=el('div','hint'); ovHint.textContent="Press Start when you're ready.";
+    const ovBtn=button('Start','btn');
+    ovMsg.append(ovBtn,ovHint); overlay.append(ovMsg);
+    const confetti=el('div','confetti');
+    wrap.append(canvas,eqBadge,overlay,confetti);
+
+    /* Controls */
+    const controls=el('div','controls');
+    const slopeField=field('m', input('text','e.g., -3/2','slope'));
+    const bField=inputField('b','number','integer','b');
+    const actions=el('div','actions');
+    const applyBtn=button('Apply','btn');
+    actions.append(applyBtn);
+    controls.append(slopeField.wrap,bField.wrap,actions);
+
+    /* Default view */
+    grid.append(board,wrap,controls);
+
+    /* Modal */
+    const modalBg=el('div','lm-modal-bg');
+    const modal=el('div','lm-modal');
+    const mh=el('div','lm-modal-header');
+    const mhTitle=el('h4'); mhTitle.textContent='Round result';
+    const mhCele=el('div','celebrate'); mh.append(mhTitle,mhCele);
+    const mb=el('div','lm-modal-body');
+    const rEq=row('Equation:'), rBonus=row('Time bonus:'), rPts=row('Points earned:'), rMoves=row('Moves used:'), rLives=row('Lives left:');
+    mb.append(rEq.wrap,rBonus.wrap,rPts.wrap,rMoves.wrap,rLives.wrap);
+    const ma=el('div','lm-modal-actions');
+    const mNext=button('Next line','btn'), mReset=button('New game','btn');
+    ma.append(mNext,mReset); modal.append(mh,mb,ma); modalBg.append(modal); document.body.append(modalBg); modalBg.style.display='none';
+
+    /* Tabs behavior */
+    function showGame(){
+      tabGame.classList.add('active'); tabSettings.classList.remove('active');
+      grid.innerHTML=''; grid.append(board,wrap,controls);
+    }
+    function showSettings(){
+      tabSettings.classList.add('active'); tabGame.classList.remove('active');
+      grid.innerHTML=''; grid.append(settingsCard);
+    }
+    tabGame.addEventListener('click',showGame);
+    tabSettings.addEventListener('click',showSettings);
+
+    /* Drawing & clipping */
+    let raf=null; const M={left:34,right:34,top:56,bottom:36}; let lastW=0,lastH=0;
+    function worldToPix(x,y,W,H){
+      const innerW=W-M.left-M.right, innerH=H-M.top-M.bottom;
+      const sx=innerW/(state.xmax-state.xmin), sy=innerH/(state.ymax-state.ymin);
+      const px=M.left+(x-state.xmin)*sx;
+      const py=M.top+innerH-(y-state.ymin)*sy;
+      return[px,py];
+    }
+    function sizeForDPR(c,w,h){
+      const base=window.devicePixelRatio||1; const dpr=Math.min(4,base*3);
+      c.width=Math.max(1,Math.floor(w*dpr));
+      c.height=Math.max(1,Math.floor(h*dpr));
+      const ctx=c.getContext('2d');
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      ctx.imageSmoothingEnabled=false;
+      return ctx;
+    }
+
+    function clipLineToRect(xmin,xmax,ymin,ymax,m,b){
+      const pts=[];
+      function add(x,y){
+        if(Number.isFinite(x)&&Number.isFinite(y)&&
+           x>=xmin-1e-9&&x<=xmax+1e-9 &&
+           y>=ymin-1e-9&&y<=ymax+1e-9) pts.push([x,y]);
+      }
+      const yL=m*xmin+b; add(xmin,yL);
+      const yR=m*xmax+b; add(xmax,yR);
+      if(Math.abs(m)>1e-12){
+        const xB=(ymin-b)/m; add(xB,ymin);
+        const xT=(ymax-b)/m; add(xT,ymax);
+      }
+      const out=[];
+      for(const p of pts){
+        let dup=false;
+        for(const q of out){
+          if(Math.hypot(p[0]-q[0],p[1]-q[1])<1e-6){dup=true;break;}
+        }
+        if(!dup) out.push(p);
+      }
+      if(out.length<2) return null;
+      let best=[out[0],out[1]], bestd=-1;
+      for(let i=0;i<out.length;i++)for(let j=i+1;j<out.length;j++){
+        const d=(out[i][0]-out[j][0])**2+(out[i][1]-out[j][1])**2;
+        if(d>bestd){bestd=d;best=[out[i],out[j]];}
+      }
+      return best;
+    }
+
+    function draw(){
+      const W=Math.max(1,Math.round(wrap.clientWidth||root.clientWidth||300));
+      if(W<10){schedule();return;}
+      const H=W;
+      const ctx=sizeForDPR(canvas,W,H);
+      lastW=W; lastH=H;
+      ctx.clearRect(0,0,W,H);
+      ctx.fillStyle=getCSS('--plot-bg');
+      ctx.fillRect(0,0,W,H);
+
+      const gridCol=getCSS('--grid'), axisCol=getCSS('--axis');
+      const overlayVisible = overlay.style.display !== 'none';
+
+      // grid
+      ctx.lineWidth=1; ctx.strokeStyle=gridCol;
+      for(let x=Math.ceil(state.xmin);x<=Math.floor(state.xmax);x++){
+        const[px0,py0]=worldToPix(x,state.ymin,W,H);
+        const[px1,py1]=worldToPix(x,state.ymax,W,H);
+        const X=Math.round(px0)+0.5;
+        ctx.beginPath(); ctx.moveTo(X,py0); ctx.lineTo(X,py1); ctx.stroke();
+      }
+      for(let y=Math.ceil(state.ymin);y<=Math.floor(state.ymax);y++){
+        const[px0,py0]=worldToPix(state.xmin,y,W,H);
+        const[px1,py1]=worldToPix(state.xmax,y,W,H);
+        const Y=Math.round(py0)+0.5;
+        ctx.beginPath(); ctx.moveTo(px0,Y); ctx.lineTo(px1,Y); ctx.stroke();
+      }
+
+      // axes
+      ctx.strokeStyle=axisCol; ctx.lineWidth=1.8;
+      const[xL,y0]=worldToPix(state.xmin,0,W,H);
+      const[xR]=worldToPix(state.xmax,0,W,H);
+      const yAxisPx=Math.round(y0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xL,yAxisPx); ctx.lineTo(xR,yAxisPx); ctx.stroke();
+      const[x0,yB]=worldToPix(0,state.ymin,W,H);
+      const[,yT]=worldToPix(0,state.ymax,W,H);
+      const xAxisPx=Math.round(x0)+0.5;
+      ctx.beginPath(); ctx.moveTo(xAxisPx,yB); ctx.lineTo(xAxisPx,yT); ctx.stroke();
+
+      // ticks + labels
+      ctx.fillStyle=getCSS('--tick');
+      ctx.strokeStyle=getCSS('--tick');
+      ctx.lineWidth=1.25;
+      ctx.font='12px system-ui';
+      for(let x=Math.ceil(state.xmin);x<=Math.floor(state.xmax);x++){
+        const[px]=worldToPix(x,0,W,H);
+        const X=Math.round(px)+0.5;
+        ctx.beginPath(); ctx.moveTo(X,yAxisPx-5); ctx.lineTo(X,yAxisPx+5); ctx.stroke();
+        if(x!==0) ctx.fillText(String(x),X-4,yAxisPx+16);
+      }
+      for(let y=Math.ceil(state.ymin);y<=Math.floor(state.ymax);y++){
+        const[,py]=worldToPix(0,y,W,H);
+        const Y=Math.round(py)+0.5;
+        ctx.beginPath(); ctx.moveTo(xAxisPx-5,Y); ctx.lineTo(xAxisPx+5,Y); ctx.stroke();
+        if(y!==0) ctx.fillText(String(y),xAxisPx+8,Y+4);
+      }
+
+      function lineWithHalo(m,b,color,width,glow=false){
+        const seg=clipLineToRect(state.xmin,state.xmax,state.ymin,state.ymax,m,b);
+        if(!seg) return;
+        const[x1,y1]=worldToPix(seg[0][0],seg[0][1],W,H);
+        const[x2,y2]=worldToPix(seg[1][0],seg[1][1],W,H);
+        ctx.save(); ctx.lineCap='round'; ctx.lineJoin='round';
+        const dark = root.classList.contains('theme-midnight') ||
+                     root.classList.contains('theme-darcula') ||
+                     root.classList.contains('theme-terminal');
+        let coreW = width;
+        if(dark) coreW = Math.max(1.8, width - 0.6);
+        const haloColor = dark ? 'rgba(15,23,42,0.95)' : 'rgba(255,255,255,0.92)';
+        ctx.lineWidth=coreW+2;
+        ctx.strokeStyle=haloColor;
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+        ctx.lineWidth=coreW;
+        ctx.strokeStyle=color;
+        if(glow){ctx.shadowColor=color; ctx.shadowBlur=dark?12:6;}
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+        ctx.shadowBlur=0;
+        ctx.restore();
+      }
+
+      if(!overlayVisible){
+        const targetM=slopeFromFrac(state.tdy,state.tdx);
+        lineWithHalo(targetM,state.tb,getVar('--target'),2.25);
+
+        if(state.mSet&&state.bSet){
+          const pulsing=state.pulse&&(performance.now()-state.pulse.start<state.pulse.dur);
+          if(pulsing) lineWithHalo(currentM(),currentB(),getVar('--target') + 'cc',7);
+          lineWithHalo(currentM(),currentB(),getVar('--player'),3.1,true);
+        }
+
+        if(state.mSet&&state.bSet){
+          eqBadge.textContent=formatEquation(state.mFrac,state.b);
+          eqBadge.style.display='block';
+        }else{
+          eqBadge.style.display='none';
+        }
+      }else{
+        eqBadge.style.display='none';
+      }
+
+      // Hover snap + drop lines
+      if(state.hoverPoint && !overlayVisible){
+        const hx=state.hoverPoint.x, hy=state.hoverPoint.y;
+        const[px,py]=worldToPix(hx,hy,W,H);
+        const[pxAxis,py0]=worldToPix(hx,0,W,H);
+        const[px0Axis,pyAxis]=worldToPix(0,hy,W,H);
+        ctx.save();
+        ctx.setLineDash([5,4]);
+        ctx.lineWidth=1.3;
+        ctx.strokeStyle='rgba(148,163,184,0.9)';
+
+        ctx.beginPath();
+        ctx.moveTo(px,py);
+        ctx.lineTo(pxAxis,py0);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(px,py);
+        ctx.lineTo(px0Axis,pyAxis);
+        ctx.stroke();
+
+        ctx.setLineDash([]);
+
+        ctx.fillStyle=getCSS('--player');
+        ctx.beginPath();
+        ctx.arc(px,py,4,0,Math.PI*2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+    }
+
+    function schedule(){if(raf)return;raf=requestAnimationFrame(()=>{raf=null;draw();});}
+    function startAnimM(from,to,dur=300){state.animM={from,to,start:performance.now(),dur};schedule();}
+    function startAnimB(from,to,dur=300){state.animB={from,to,start:performance.now(),dur};schedule();}
+    function ease(t){return t<.5?2*t*t:-1+(4-2*t)*t;}
+    function animValue(a){const t=Math.min(1,(performance.now()-a.start)/a.dur);const e=ease(t);return a.from+(a.to-a.from)*e;}
+    function currentM(){return state.animM?animValue(state.animM):state.m;}
+    function currentB(){return state.animB?animValue(state.animB):state.b;}
+
+    /* Math helpers */
+    function gcd(a,b){a=Math.abs(a);b=Math.abs(b);while(b){const t=b;b=a%b;a=t;}return a||1;}
+    function simplify(n,d){if(d===0)return{n:1,d:0};if(d<0){n=-n;d=-d;}const g=gcd(n,d);return{n:n/g,d:d/g};}
+    function fracStr(n,d){const s=simplify(n,d);return s.d===1?String(s.n):`(${s.n}/${s.d})`;}
+    function slopeFromFrac(n,d){return d===0?Infinity:n/d;}
+    function decimalToFrac(x,maxDen=100){const s=Math.sign(x),ax=Math.abs(x);const num=Math.round(ax*maxDen);const g=gcd(num,maxDen);return simplify(s*num/g,maxDen/g);}
+    function parseSlope(str){
+      const raw=(str||'').trim(); if(!raw) return null;
+      if(raw.includes('/')){
+        const parts=raw.split('/'); if(parts.length!==2) return null;
+        const a=parseInt(parts[0],10), b=parseInt(parts[1],10);
+        if(!Number.isFinite(a)||!Number.isFinite(b)||b===0) return null;
+        const s=simplify(a,b); return{m:slopeFromFrac(s.n,s.d),frac:s};
+      }
+      const m=Number(raw); if(Number.isFinite(m)) return{m,frac:decimalToFrac(m,100)};
+      return null;
+    }
+    function fmtB(b){return`${b>=0?'+':'−'} ${Math.abs(b)}`;}
+    function formatEquation(frac,b){
+      const s=simplify(frac.n,frac.d);
+      let mStr='';
+      if(s.n===1&&s.d===1)mStr='x';
+      else if(s.n===-1&&s.d===1)mStr='− x';
+      else{
+        const core=s.d===1?String(s.n):`(${s.n}/${s.d})`;
+        mStr=`${core}x`;
+      }
+      let bStr='';
+      if(b>0)bStr=` + ${Math.abs(b)}`;
+      else if(b<0)bStr=` − ${Math.abs(b)}`;
+      return`y = ${mStr}${bStr}`;
+    }
+
+function timeMult() {
+  const rtRaw = state.roundTimeSnap;
+
+  // Timer disabled or "off" → no bonus.
+  if (!state.timerRoundEnabled || rtRaw === 'off') return 1;
+
+  // Coerce roundTimeSnap to a number (handles "30", "60", etc).
+  const total = typeof rtRaw === 'string' ? parseInt(rtRaw, 10) : rtRaw;
+  if (!Number.isFinite(total) || total <= 0) return 1;
+
+  // Max multipliers by round length
+  const caps = {
+    120: 3,
+    90: 4,
+    60: 5,
+    30: 6,
+    15: 10
+  };
+  const maxMult = caps[total] || 1;
+
+  // Figure out how much time is left based on the game's deadline
+  let remaining = total;
+  if (state.deadline) {
+    const remainingMs = state.deadline - performance.now();
+    remaining = Math.max(0, Math.min(total, remainingMs / 1000));
+  }
+
+  // Scale from 1 → maxMult as time goes from 0 → total
+  // remaining = total  → multiplier ~ maxMult
+  // remaining = 0      → multiplier = 1
+  const scaled = 1 + (maxMult - 1) * (remaining / total);
+
+  // Floor to a clean integer, never below 1
+  return Math.max(1, Math.floor(scaled + 1e-9));
+}
+
+
+
+    function updateIndicators(){
+      const left=Math.max(0,Math.ceil((state.deadline-performance.now())/1000));
+      if(!state.timerRoundEnabled){
+        tTime.wrap.classList.remove('warn','danger');
+      }else{
+        tTime.wrap.classList.toggle('warn',left<=10&&left>5);
+        tTime.wrap.classList.toggle('danger',left<=5);
+      }
+      const movesLeft=maxMoves-state.moves;
+      tMoves.wrap.classList.toggle('warn',movesLeft<=2&&movesLeft>1);
+      tMoves.wrap.classList.toggle('danger',movesLeft<=1);
+    }
+
+    /* Timer */
+    function startTimer(){
+      stopTimer();
+      if(!state.timerRoundEnabled){
+        tTime.val.textContent = state.roundTimeSnap === 'off'
+          ? 'Off'
+          : state.turnLimitSec+'s';
+        return;
+      }
+      state.deadline=performance.now()+state.turnLimitSec*1000;
+      state.lastShownSec=null;
+      tTime.wrap.classList.remove('warn','danger');
+      tTime.val.textContent=state.turnLimitSec+'s';
+      state.timer=setInterval(()=>{
+        const left=Math.max(0,Math.ceil((state.deadline-performance.now())/1000));
+        if(left!==state.lastShownSec){
+          state.lastShownSec=left;
+          tTime.val.textContent=left+'s';
+          updateIndicators();
+        }
+        if(left<=0){
+          stopTimer();
+          handleTimeout();
+        }
+      },200);
+    }
+    function stopTimer(){if(state.timer){clearInterval(state.timer);state.timer=null;}}
+    function handleTimeout(){
+      if(!state.timerRoundEnabled) return;
+      if(state.lives<=0) return;
+      if(state.lives>0) state.lives-=1;
+      if(state.lives<0) state.lives=0;
+      updateBoard();
+      if(state.lives<=0) setControlsEnabled(false);
+      showModal(false,0,'time');
+    }
+
+    /* Target generation */
+    function randint(a,b){return Math.floor(Math.random()*(b-a+1))+a;}
+    function fitsWithinView(m,b){return !!clipLineToRect(state.xmin,state.xmax,state.ymin,state.ymax,m,b);}
+    function prepareTarget(){
+      let tries=0;
+      do{
+        state.tb=randint(-8,8);
+        let dx=randint(1,6), dy=randint(-6,6); // dx>=1 => no vertical slopes
+        while(dy===0) dy=randint(-6,6);
+        const s=simplify(dy,dx);
+        state.tdy=Math.max(-8,Math.min(8,s.n));
+        state.tdx=Math.max(1,Math.min(8,s.d));
+        tries++;
+      }while(tries<80 && !fitsWithinView(slopeFromFrac(state.tdy,state.tdx),state.tb));
+
+      state.moves=0;
+      state.mSet=false; state.bSet=false;
+      state.pulse=null; state.animM=null; state.animB=null;
+      slopeField.input.value=''; bField.input.value='';
+      setControlsEnabled(false);
+      updateBoard();
+      schedule();
+    }
+
+    function newTarget(){if(state.lives<=0)return;prepareTarget();showOverlay();}
+    function startRound(){
+      showGame();
+      state.roundTimeSnap = state.roundTime;
+      state.turnLimitSec = typeof state.roundTimeSnap === 'number' ? state.roundTimeSnap : 90;
+      state.timerRoundEnabled = state.roundTimeSnap !== 'off';
+      hideOverlay();
+      setControlsEnabled(true);
+      startTimer();
+    }
+    function showOverlay(){overlay.style.display='flex'; schedule();}
+    function hideOverlay(){overlay.style.display='none'; schedule();}
+
+    function isMatch(){
+      const tm=slopeFromFrac(state.tdy,state.tdx);
+      return state.mSet&&state.bSet && Math.abs(state.m-tm)<1e-9 && state.b===state.tb;
+    }
+
+    function updateBoard(){
+      setVal(tMoves,`${state.moves}/${maxMoves}`);
+      setVal(tLives,`${state.lives}`);
+      setVal(tScore,`${state.score}`);
+      if(!state.timer){
+        if(state.roundTime==='off') tTime.val.textContent='Off';
+        else tTime.val.textContent = (typeof state.roundTime === 'number' ? state.roundTime : 90) + 's';
+      }
+      updateIndicators();
+    }
+
+    /* Modal + scoring */
+    let lifeToast=null;
+    function showLifeToast(n){
+      if(!lifeToast){
+        lifeToast=el('div','life-toast');
+        tLives.wrap.append(lifeToast);
+      }
+      lifeToast.textContent=`+${n}`;
+      lifeToast.classList.remove('show');
+      void lifeToast.offsetWidth;
+      lifeToast.classList.add('show');
+      tLives.val.classList.remove('bump');
+      void tLives.val.offsetWidth;
+      tLives.val.classList.add('bump');
+      setTimeout(()=>lifeToast&&lifeToast.classList.remove('show'),1200);
+    }
+
+    function showModal(success,points,cause){
+      stopTimer();
+      const outOfLives=state.lives<=0&&!success;
+      if(success){mhTitle.textContent='Nailed It!';mhCele.textContent='✨🏆';}
+      else if(outOfLives){mhTitle.textContent='Game Over';mhCele.textContent='💥';}
+      else if(cause==='time'){mhTitle.textContent='Out of Time';mhCele.textContent='⏰';}
+      else{mhTitle.textContent='Out of Moves';mhCele.textContent='😬⏳';}
+
+      const mT=fracStr(state.tdy,state.tdx);
+      const eqTarget=`y = ${mT}x ${fmtB(state.tb)}`;
+      const eqPlayer=(state.mSet&&state.bSet)?`y = ${fracStr(state.mFrac.n,state.mFrac.d)}x ${fmtB(state.b)}`:'—';
+
+      rEq.val.textContent=success
+        ? eqPlayer
+        : (cause==='time'
+            ? `Time's up! The equation was ${eqTarget}`
+            : `Oh no! You ran out of moves. The equation was ${eqTarget}`);
+
+      rBonus.val.textContent=success ? rBonus.val.textContent : '—';
+      rPts.val.textContent=success ? rPts.val.textContent : '0';
+      rMoves.val.textContent=String(state.moves);
+      rLives.val.textContent=String(state.lives);
+
+      modalBg.style.display='flex';
+      if(success){mNext.style.display='';mReset.style.display='';}
+      else if(state.lives>0){mNext.style.display='';mReset.style.display='none';}
+      else{mNext.style.display='none';mReset.style.display='';}
+
+      mNext.onclick=()=>{modalBg.style.display='none';newTarget();};
+      mReset.onclick=()=>{state.score=0;state.lives=maxLives;modalBg.style.display='none';newTarget();};
+    }
+
+    function commitBoth(){
+      if(state.lives<=0 || overlay.style.display!=='none') return;
+      const mP=parseSlope(slopeField.input.value);
+      const bVal=parseInt(bField.input.value,10);
+      if(!mP || !Number.isFinite(bVal)) return;
+
+      const newM=mP.m, newFrac=mP.frac||decimalToFrac(mP.m,100);
+      const fromM=state.mSet?state.m:newM;
+      const fromB=state.bSet?state.b:bVal;
+      state.m=newM; state.mFrac=newFrac; state.mSet=true;
+      startAnimM(fromM,newM,320);
+      state.b=bVal; state.bSet=true;
+      startAnimB(fromB,bVal,320);
+
+      if(state.moves<maxMoves) state.moves+=1;
+      updateBoard();
+      tMoves.val.classList.remove('bump');
+      void tMoves.val.offsetWidth;
+      tMoves.val.classList.add('bump');
+
+      setTimeout(()=>{
+        if(isMatch()){
+          state.pulse={start:performance.now(),dur:900};
+          schedule();
+          launchConfetti(40);
+
+          const mult=timeMult();
+          const base=Math.max(0,maxMoves-state.moves);
+          const points=base*mult;
+          rBonus.val.textContent = state.timerRoundEnabled
+            ? `×${mult}`
+            : 'Timer off (×1)';
+          rPts.val.textContent   = String(points);
+
+          const prevHundreds=Math.floor(state.score/100);
+          state.score+=points;
+          const newHundreds=Math.floor(state.score/100);
+          const gained=Math.max(0,newHundreds-prevHundreds);
+          if(gained>0){state.lives+=gained;showLifeToast(gained);}
+
+          tScore.val.classList.remove('bump');
+          void tScore.val.offsetWidth;
+          tScore.val.classList.add('bump');
+          updateBoard();
+          setTimeout(()=>showModal(true,points,null),950);
+        }else if(state.moves>=maxMoves){
+          if(state.lives>0) state.lives-=1;
+          if(state.lives<0) state.lives=0;
+          updateBoard();
+          if(state.lives<=0) setControlsEnabled(false);
+          showModal(false,0,'moves');
+        }
+      },340);
+    }
+
+    /* Hover snap handlers */
+    canvas.addEventListener('pointermove',e=>{
+      const rect=canvas.getBoundingClientRect();
+      const px=e.clientX-rect.left;
+      const py=e.clientY-rect.top;
+      if(!lastW||!lastH){state.hoverPoint=null;return;}
+      const innerW=lastW-M.left-M.right;
+      const innerH=lastH-M.top-M.bottom;
+      if(px<M.left||px>lastW-M.right||py<M.top||py>lastH-M.bottom){
+        if(state.hoverPoint){state.hoverPoint=null;schedule();}
+        return;
+      }
+      const sx=innerW/(state.xmax-state.xmin);
+      const sy=innerH/(state.ymax-state.ymin);
+      const x=state.xmin+(px-M.left)/sx;
+      const y=state.ymin+((innerH-(py-M.top))/sy);
+      const snapX=Math.round(x);
+      const snapY=Math.round(y);
+      if(snapX<state.xmin||snapX>state.xmax||snapY<state.ymin||snapY>state.ymax){
+        if(state.hoverPoint){state.hoverPoint=null;schedule();}
+        return;
+      }
+      const hpPrev=state.hoverPoint;
+      if(!hpPrev || hpPrev.x!==snapX || hpPrev.y!==snapY){
+        state.hoverPoint={x:snapX,y:snapY};
+        schedule();
+      }
+    });
+    canvas.addEventListener('pointerleave',()=>{
+      if(state.hoverPoint){state.hoverPoint=null;schedule();}
+    });
+
+    /* Events */
+    applyBtn.addEventListener('click',commitBoth);
+    slopeField.input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();commitBoth();}});
+    bField.input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();commitBoth();}});
+    ovBtn.addEventListener('click',()=>{
+      startRound();
+      tTime.val.classList.remove('bump');
+      void tTime.val.offsetWidth;
+      tTime.val.classList.add('bump');
+    });
+
+    /* Settings interactions */
+    rowTimer.ctrl.addEventListener('click',()=>{
+      const idx=Number(rowTimer.ctrl.dataset.idx||0);
+      const val=timeValues[idx] ?? 90;
+      state.roundTime = val;
+      state.turnLimitSec = typeof val === 'number' ? val : 90;
+      stopTimer();
+      state.score=0;
+      state.lives=maxLives;
+      state.timerRoundEnabled=null;
+      tTime.val.textContent = val==='off' ? 'Off' : `${state.turnLimitSec}s`;
+      updateBoard();
+      setControlsEnabled(false);
+      showGame();
+      newTarget();
+      persist();
+    });
+
+    rowTheme.ctrl.addEventListener('click',()=>{
+      const idx=Number(rowTheme.ctrl.dataset.idx||0);
+      const theme=themeNames[idx] || 'classic';
+      state.theme=theme;
+      applyTheme(root,theme);
+      persist();
+      schedule();
+    });
+
+    /* Resize */
+    const ro=new ResizeObserver(()=>{
+      const w=Math.round(wrap.clientWidth||0);
+      if(w!==lastW){schedule();}
+    });
+    ro.observe(wrap);
+
+    /* Confetti "fireworks" */
+    function launchConfetti(count){
+      const W = wrap.clientWidth || 300;
+      const H = wrap.clientHeight || W;
+      const originX = W/2;
+      const originY = M.top + (H-M.top-M.bottom)/3;
+
+      for(let i=0;i<count;i++){
+        const p=el('div','p');
+        const hue=Math.floor(rand(180,330));
+        const sat=80+rand(-10,10);
+        const light=55+rand(-10,10);
+        p.style.background=`hsl(${hue} ${sat}% ${light}%)`;
+        p.style.left=originX+'px';
+        p.style.top=originY+'px';
+        confetti.append(p);
+        const angle = rand(-Math.PI, Math.PI);
+        const speed = rand(90,190);
+        const dx = Math.cos(angle)*speed;
+        const dy = Math.sin(angle)*speed + 40;
+        const rot = rand(-360,360);
+        const dur = 900+Math.random()*700;
+        p.animate(
+          [
+            {transform:`translate(0,0) rotate(0deg)`,opacity:1},
+            {transform:`translate(${dx}px, ${dy}px) rotate(${rot}deg)`,opacity:0}
+          ],
+          {duration:dur,easing:'cubic-bezier(.15,.7,.2,1)'}
+        ).onfinish=()=>p.remove();
+      }
+    }
+    function rand(a,b){return Math.random()*(b-a)+a;}
+
+    /* Helpers */
+    function field(labelText,inputEl){const wrap=el('div','field');const lab=el('label');lab.textContent=labelText;wrap.append(lab,inputEl);return{wrap,input:inputEl};}
+    function inputField(label,type,ph,id){const i=input(type,ph,id);const wrap=el('div','field');const lab=el('label');lab.textContent=label;wrap.append(lab,i);return{wrap,input:i};}
+    function input(type,ph,id){const i=el('input','input');i.type=type;i.placeholder=ph;if(id)i.id=id;return i;}
+    function button(text,cls){const b=el('button',cls||'btn');b.textContent=text;return b;}
+    function row(label){const wrap=el('div','lm-row');const l=el('div','lm-label');l.textContent=label;const v=document.createElement('div');wrap.append(l,v);return{wrap,val:v};}
+    function el(tag,cls){const n=document.createElement(tag);if(cls)n.className=cls;return n;}
+    function tile(label){const wrap=el('div','tile');const lbl=el('div','lbl');lbl.textContent=label;const val=el('div','val');val.textContent='—';wrap.append(lbl,val);return{wrap,val};}
+    function setVal(tile,txt){if(tile.val.textContent!==txt){tile.val.textContent=txt;tile.val.classList.remove('bump');void tile.val.offsetWidth;tile.val.classList.add('bump');}}
+    function getCSS(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+    function setControlsEnabled(enabled){slopeField.input.disabled=!enabled;bField.input.disabled=!enabled;applyBtn.disabled=!enabled;}
+    function spRow(label,ctrl){const wrap=el('div','sp-row');const l=document.createElement('label');l.textContent=label;wrap.append(l,ctrl);return{wrap,ctrl};}
+    function toggleGroup(opts,activeIdx){
+      const w=el('div','toggle-group');w.dataset.idx=String(activeIdx|0);
+      opts.forEach((t,i)=>{
+        const b=document.createElement('button');b.textContent=t;b.type='button';
+        if(i===activeIdx)b.classList.add('active');
+        b.addEventListener('click',()=>{
+          w.dataset.idx=String(i);
+          w.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+          b.classList.add('active');
+          w.dispatchEvent(new Event("click"));
+        });
+        w.appendChild(b);
+      });
+      return w;
+    }
+    function persist(){localStorage.setItem('lm9-settings',JSON.stringify({roundTime:state.roundTime,theme:state.theme}));}
+    function safeJSON(s){try{return JSON.parse(s);}catch{return null;}}
+    function applyTheme(root,theme){
+      root.classList.remove('theme-classic','theme-midnight','theme-ocean','theme-darcula','theme-terminal');
+      if(theme==='midnight') root.classList.add('theme-midnight');
+      else if(theme==='ocean') root.classList.add('theme-ocean');
+      else if(theme==='darcula') root.classList.add('theme-darcula');
+      else if(theme==='terminal') root.classList.add('theme-terminal');
+      else root.classList.add('theme-classic');
+    }
+
+    /* Sanity tests */
+    try{
+      (function(){const g=(a,b)=>{while(b){[a,b]=[b,a%b]}return a};const s=(n,d)=>{const G=g(Math.abs(n),Math.abs(d));return[n/G,d/G]};console.assert(JSON.stringify(s(6,8))===JSON.stringify([3,4]),'simplify 6/8');})();
+      (function(){const p=(s)=>{s=s.trim();if(s.includes('/')){const[a,b]=s.split('/').map(Number);return a/b;}return Number(s);};console.assert(p('-3/2')===-1.5,'parse -3/2');})();
+    }catch(e){console.warn('tests failed',e);}
+
+    /* Kick off */
+    newTarget();
+  }
+})();
+</script>
+<hr>
+<p>To learn more, take a look at <a href="../../../chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.html">4.6 – Linear Models in the Real World</a></p>
+
+
+
+</main> <!-- /main -->
+<!-- Global widget auto fit wrapper -->
+<style>
+.qw-autofit{
+  width: 100%;
+  display: block;
+  contain: layout paint;
+}
+
+.qw-autofit > .qw-autofit-inner{
+  transform-origin: top center;
+  will-change: transform;
+}
+</style>
+
+<script src="../../../scripts/popper.min.js"></script>
+<script src="../../../scripts/tippy.min.js"></script>
+<script src="../../../scripts/glossary-tooltips.js"></script>
+<script src="../../../scripts/custom-callouts.js"></script>
+
+<!-- Auto fit widgets to viewport height -->
+<script>
+(function () {
+  const SELECTORS = [
+    ".function_machine_widget",
+    // ".slope_intercept_form_widget-root",
+    ".factor_tree_widget",
+    ".correlation-widget",
+    ".slope_intercept_form_game",
+    ".slope-widget",
+    ".vertex-form-widget"
+  ];
+
+  function findWidgetRoots() {
+    const roots = [];
+    SELECTORS.forEach((sel) => {
+      document.querySelectorAll(sel).forEach((el) => roots.push(el));
+    });
+    return roots;
+  }
+
+  function wrapOnce(root) {
+    if (!root || root.closest(".qw-autofit")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "qw-autofit";
+
+    const inner = document.createElement("div");
+    inner.className = "qw-autofit-inner";
+
+    root.parentNode.insertBefore(wrap, root);
+    wrap.appendChild(inner);
+    inner.appendChild(root);
+  }
+
+  function getViewportH() {
+    return window.visualViewport ? window.visualViewport.height : window.innerHeight;
+  }
+
+  function fitOne(root) {
+    const wrap = root.closest(".qw-autofit");
+    const inner = wrap && wrap.querySelector(".qw-autofit-inner");
+    if (!wrap || !inner) return;
+
+    inner.style.transform = "";
+    wrap.style.height = "";
+
+    const rect = inner.getBoundingClientRect();
+    const widgetH = rect.height || 1;
+
+    const vpH = getViewportH();
+    const topPad = 28;
+    const bottomPad = 28;
+
+    // Leave breathing room so controls above and below still fit
+    const usableH = Math.max(240, vpH - topPad - bottomPad);
+
+    // Only scale down, never up
+    const s = Math.min(1, usableH / widgetH);
+
+    // Don’t do micro scaling. Only kick in when it helps.
+    if (s > 0.985) {
+      wrap.style.height = widgetH + "px";
+      return;
+    }
+
+    // Clamp so it never becomes unreadable
+    const sClamped = Math.max(0.78, s);
+
+    inner.style.transform = "scale(" + sClamped.toFixed(3) + ")";
+    wrap.style.height = (widgetH * sClamped) + "px";
+  }
+
+  function fitAll() {
+    findWidgetRoots().forEach((root) => fitOne(root));
+  }
+
+  function init() {
+    findWidgetRoots().forEach(wrapOnce);
+    fitAll();
+
+    window.addEventListener("resize", fitAll, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", fitAll, { passive: true });
+    }
+
+    // Fonts and MathJax can change heights after load
+    setTimeout(fitAll, 60);
+    setTimeout(fitAll, 250);
+    setTimeout(fitAll, 600);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
+
+<script>
+(function () {
+  const UP_THRESHOLD = 200;     // scroll up this many px before navbar may appear
+  const NEAR_TOP_ALLOW = 20;    // always allow navbar near top of page
+
+  function getHeader() {
+    return document.querySelector("header#quarto-header")
+      || document.querySelector("header.headroom")
+      || document.querySelector(".headroom");
+  }
+
+  let lastY = window.scrollY;
+  let upStartY = window.scrollY;
+  let dir = "down";
+  let lockedHidden = false;
+
+  function hideHeader(header) {
+    if (!header) return;
+    const h = header.getBoundingClientRect().height || 0;
+    header.style.transform = "translateY(" + (-h - 2) + "px)";
+    header.style.willChange = "transform";
+    lockedHidden = true;
+  }
+
+  function releaseHeader(header) {
+    if (!header) return;
+    header.style.transform = "";
+    header.style.willChange = "";
+    lockedHidden = false;
+  }
+
+  function onScroll(header) {
+    const y = window.scrollY;
+    const dy = y - lastY;
+
+    if (y <= NEAR_TOP_ALLOW) {
+      releaseHeader(header);
+      lastY = y;
+      return;
+    }
+
+    if (dy < 0) {
+      if (dir !== "up") {
+        dir = "up";
+        upStartY = lastY;
+      }
+
+      const upDist = upStartY - y;
+
+      if (upDist < UP_THRESHOLD) {
+        hideHeader(header);
+      } else {
+        releaseHeader(header);
+      }
+    }
+
+    if (dy > 0) {
+      dir = "down";
+      releaseHeader(header);
+    }
+
+    lastY = y;
+  }
+
+  function init() {
+    const header = getHeader();
+    if (!header) return;
+
+    window.addEventListener("scroll", () => onScroll(header), { passive: true });
+
+    // If Headroom toggles classes and tries to show it early, keep it hidden until threshold
+    const obs = new MutationObserver(() => {
+      if (!lockedHidden) return;
+      hideHeader(header);
+    });
+    obs.observe(header, { attributes: true, attributeFilter: ["class", "style"] });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
+
+<!-- Global widget theme helpers (read/write only — no cross-widget push) -->
+<script>
+(function () {
+  const THEME_KEY = 'qw_theme_v1';
+  const VALID = ['classic', 'ocean', 'midnight', 'darcula', 'terminal'];
+
+  // Read the saved global theme (widgets without pickers use this on init)
+  window.qwGetTheme = function () {
+    try { return VALID.includes(localStorage.getItem(THEME_KEY)) ? localStorage.getItem(THEME_KEY) : 'ocean'; }
+    catch (e) { return 'ocean'; }
+  };
+
+  // Write the global theme (widgets with pickers call this when user changes theme)
+  window.qwSetTheme = function (name) {
+    if (!VALID.includes(name)) return;
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) {}
+  };
+})();
+</script>
+
+<!-- MathJax helpers for widgets (surgical typesetting only) -->
+<script>
+(function () {
+  // Typeset only the node(s) you pass in. Does nothing if MathJax is not present.
+  function qwTypesetMath(target) {
+    const MJ = window.MathJax;
+    if (!MJ) return Promise.resolve();
+
+    const els = Array.isArray(target) ? target : [target];
+    const doTypeset = () => {
+      if (typeof MJ.typesetPromise === "function") return MJ.typesetPromise(els);
+      if (typeof MJ.typeset === "function") { MJ.typeset(els); }
+      return Promise.resolve();
+    };
+
+    if (MJ.startup && MJ.startup.promise) {
+      return MJ.startup.promise.then(doTypeset).catch(() => {});
+    }
+    return Promise.resolve(doTypeset()).catch(() => {});
+  }
+
+  // Expose low level helper
+  window.qwTypesetMath = qwTypesetMath;
+
+  // Debounce per element for widgets that update quickly
+  const pending = new Map(); // Element -> timer
+
+  function scheduleTypeset(el) {
+    if (!el || !(el instanceof Element)) return;
+    if (pending.has(el)) clearTimeout(pending.get(el));
+    pending.set(el, setTimeout(() => {
+      pending.delete(el);
+      qwTypesetMath(el);
+    }, 50));
+  }
+
+  // High level helper widgets call
+  window.setMath = function (el, tex, display) {
+    if (!el) return;
+    const t = String(tex ?? "");
+
+    // Use \( \) and \[ \] so widgets never introduce literal $ into their DOM
+    el.innerHTML = display ? `\\[${t}\\]` : `\\(${t}\\)`;
+
+    // Typeset only this element
+    scheduleTypeset(el);
+  };
+
+  // Optional batch helper
+  window.setMathAll = function (pairs) {
+    if (!Array.isArray(pairs)) return;
+    const els = [];
+    for (const p of pairs) {
+      if (!p || !p.el) continue;
+      const t = String(p.tex ?? "");
+      p.el.innerHTML = p.display ? `\\[${t}\\]` : `\\(${t}\\)`;
+      els.push(p.el);
+    }
+    if (els.length) qwTypesetMath(els);
+  };
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../chapters/Interactive/Unit_4/intro_to_correlation.html" class="pagination-link" aria-label="Unit 4 - Intro to Correlation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Unit 4 - Intro to Correlation</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../chapters/Interactive/Unit_6/vertex_form_explorer.html" class="pagination-link" aria-label="Unit 6 - Vertex Form Explorer">
+        <span class="nav-page-text">Unit 6 - Vertex Form Explorer</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
