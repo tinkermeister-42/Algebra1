@@ -57,6 +57,8 @@ At the beginning of Algebra class, your teacher hands you a stack of worksheets 
 
 To **distribute** the worksheets, you hand one to each student.  
 
+![](/images/Unit_2/Lesson_4/distribute_worksheets.svg){width="440px" fig-align="center" fig-alt="A teacher handing one worksheet to each of three students"}
+
 In math, distribution works the same way. When we multiply an expression by a number, we "give" that number to each term in the expression.
 
 The {{< glink "distributive property" >}} says:
