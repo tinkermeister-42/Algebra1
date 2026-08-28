@@ -5,9 +5,21 @@ Cookie Caper: plain black outlines, circle head, straight limbs, no fill.
 SVG rather than PNG so they stay crisp in print and stay small - the same
 choice already made for the pizzas in 1.5.
 
-Run from the repo root:  python3 scripts/make-characters.py
+Run from the repo root:
+
+    python3 scripts/make-characters.py            # write every scene's SVG
+    python3 scripts/make-characters.py --sheet    # ...and open a contact sheet
+
+The poses are hand-tuned coordinates, so drawing is write-numbers, look,
+adjust, repeat.  --sheet renders every scene into one PNG so a pass over the
+whole set is one look instead of one screenshot per file.
 """
+import glob
 import os
+import shutil
+import subprocess
+import sys
+import tempfile
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "images")
 INK = "#111"
@@ -204,5 +216,109 @@ def distribute():
                "A teacher handing a worksheet to one student while another reads hers")
 
 
+# ---------------------------------------------------------- contact sheet ----
+
+# Every scene in the file: where its SVG belongs under images/, and how to draw
+# it.  Add a scene by writing the function and adding one line here - both the
+# write and the contact sheet pick it up from this.
+SCENES = [
+    ("Unit_2/Lesson_4/distribute_worksheets.svg", distribute),
+]
+
+
+def find_chromium():
+    """Whatever Chrome this machine has.  Quarto's own is the first guess
+    because a machine that can render the book already has one."""
+    cand = [os.environ.get("QUARTO_CHROMIUM")]
+    cand += sorted(glob.glob("/opt/pw-browsers/chromium*/chrome-linux/chrome"))
+    cand += [shutil.which(n) for n in
+             ("chromium", "chromium-browser", "google-chrome", "chrome")]
+    cand += ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"]
+    for c in cand:
+        if c and os.path.exists(c):
+            return c
+    return None
+
+
+def dims(svg_text):
+    """The width and height off the <svg> tag."""
+    def n(attr):
+        i = svg_text.index(attr + '="') + len(attr) + 2
+        return int(float(svg_text[i:svg_text.index('"', i)]))
+    return n("width"), n("height")
+
+
+# Headless Chrome still reserves room for browser UI it never draws: the
+# viewport comes out exactly this much shorter than --window-size, and anything
+# past it is cut.  Measured, not guessed - ask a page for its own innerHeight
+# and the difference is the same at every window size.
+CHROME_UI = 87
+
+
+def contact_sheet(scenes, out, scale=2):
+    """Render every scene into one PNG, captioned, one above the next.
+
+    Chrome shoots the viewport, not the page, so the window is sized to the
+    laid-out height (plus the UI it withholds) rather than trusting it to
+    capture past the fold.  That leaves a blank band at the bottom, which is
+    cropped back off if Pillow is around to do it."""
+    chrome = find_chromium()
+    if not chrome:
+        print("no chrome found - set QUARTO_CHROMIUM to one", file=sys.stderr)
+        return None
+
+    PAD, GAP, CAP = 20, 26, 22
+    blocks, width, height = [], 0, PAD
+    for rel, content in scenes:
+        w, h = dims(content)
+        width = max(width, w)
+        height += CAP + h + GAP
+        blocks.append(
+            f'<figure><figcaption>{rel}</figcaption>{content}</figure>')
+    height += PAD - GAP
+    width += 2 * PAD + 4          # slack so the frame's right edge isn't clipped
+
+    html = (
+        '<meta charset="utf-8"><style>'
+        f'body{{margin:0;padding:{PAD}px;background:#fff;'
+        "font:12px/1 ui-monospace,Menlo,Consolas,monospace;color:#666}}"
+        f"figure{{margin:0 0 {GAP}px}}"
+        f"figcaption{{height:{CAP}px}}"
+        "svg{display:block;outline:1px solid #e3e3e3}"
+        "</style>" + "".join(blocks))
+
+    with tempfile.TemporaryDirectory() as d:
+        page = os.path.join(d, "sheet.html")
+        open(page, "w").write(html)
+        subprocess.run(
+            [chrome, "--headless", "--disable-gpu", "--no-sandbox",
+             "--hide-scrollbars", f"--force-device-scale-factor={scale}",
+             f"--window-size={width},{height + CHROME_UI}",
+             f"--screenshot={out}", "file://" + page],
+            capture_output=True)
+    if not os.path.exists(out):
+        return None
+    try:
+        from PIL import Image
+        im = Image.open(out)
+        im.crop((0, 0, im.width, min(im.height, height * scale))).save(out)
+    except ImportError:
+        pass
+    return out
+
+
 if __name__ == "__main__":
-    write("Unit_2/Lesson_4/distribute_worksheets.svg", distribute())
+    args = [a for a in sys.argv[1:] if a != "--sheet"]
+    drawn = [(rel, fn()) for rel, fn in SCENES
+             if not args or any(a in rel for a in args)]
+    if not drawn:
+        print("no scene matches %s" % " ".join(args), file=sys.stderr)
+        raise SystemExit(1)
+    for rel, content in drawn:
+        write(rel, content)
+
+    if "--sheet" in sys.argv[1:]:
+        out = os.path.join(tempfile.gettempdir(), "characters-sheet.png")
+        got = contact_sheet(drawn, out)
+        if got:
+            print("contact sheet: %s" % got)
