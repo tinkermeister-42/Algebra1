@@ -288,28 +288,30 @@ def coupon_order(blank=False):
     for x, said, tag, total, sgn in (
             (140, "Coupon first.", "25% off", "$20.00", 1),
             (500, "Gift card first.", "$10 card", "$22.50", -1)):
+        # sgn mirrors the second one so the two square off and read as an
+        # argument rather than as two strangers facing the same way
         f, head_top, hands = person(
             x, 120,
-            arms=[[(-10, 32, 1.2), (-8, 61, 0.8)],
-                  [(17, 18, -1.3), (34, 6, -1.5)]],
-            spine_leg=([(3, 32), (8, 62), (3, 104), (-2, 146)], 2),
-            other_leg=[(20, 44), (25, 84)],
-            spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=6, s=0.86)
+            arms=[[(-10 * sgn, 32, 1.2 * sgn), (-8 * sgn, 61, 0.8 * sgn)],
+                  [(17 * sgn, 18, -1.3 * sgn), (34 * sgn, 6, -1.5 * sgn)]],
+            spine_leg=([(3 * sgn, 32), (8 * sgn, 62), (3 * sgn, 104),
+                        (-2 * sgn, 146)], 2),
+            other_leg=[(20 * sgn, 44), (25 * sgn, 84)],
+            spine_bow=[1.4 * sgn, 1.6 * sgn, -0.9 * sgn, -0.5 * sgn],
+            tilt=6 * sgn, s=0.86)
         b.append(f)
         b.append(bubble(x + sgn * 62, 40, 152, 30, (x + sgn * 12, head_top - 3),
                         [said], size=14))
         hx, hy = hands[1]
-        b.append(card(hx + 24, hy - 4, 54, 26,
-                      text(hx + 24, hy + 1, tag, 12, family=SANS, weight="bold"),
-                      tilt=-7))
+        b.append(card(hx + 24 * sgn, hy - 4, 54, 26,
+                      text(hx + 24 * sgn, hy + 1, tag, 12, family=SANS,
+                           weight="bold"), tilt=-7 * sgn))
         if blank:
             b.append(line(x - 46, FLOOR + 34, x + 46, FLOOR + 34, LW))
         else:
             b.append(label(x, FLOOR + 34, total, 26))
 
     b.append(line(40, FLOOR, W - 40, FLOOR, LW))
-    # without a divider the two cases read as two people talking to each other
-    b.append(dashed(f"M320,26 L320,{FLOOR + 46}", 1.0, "4 5"))
     return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
                "The same item bought two ways: coupon first costs $20, gift card first costs $22.50")
 
@@ -405,61 +407,64 @@ def thrown_ball():
     that sound unrelated until you see they are two points on one arc: where it
     lands, and how high it gets.
 
-    The curve is the example's own function sampled, not a freehand swoosh, and
-    the vertical scale is honest, so a thirty-foot throw really does dwarf the
-    thrower.  That is what makes it read as a throw rather than a lob - the old
-    numbers only carried the ball six feet above the hand."""
-    TOP = 16
-    W, H = 500, 356 + TOP
-    FLOOR = 314
-    b = []
+    Both axes use the same scale, 15px to the foot, which is what makes the
+    throw read.  A taller figure cannot release at five feet with its hand up -
+    the arm ends up pointing down at the ball and the whole pose looks broken -
+    so the thrower is drawn five feet tall and lets go at the top of the swing,
+    hand level with the top of the head.  The arc is the function sampled, not
+    a freehand swoosh, and at the same scale it towers over him, which is what
+    thirty feet actually looks like."""
+    TOP = 22
+    W, H = 560, 540 + TOP
+    FLOOR = 498
+    PX_PER_FT = 15.0
 
     def h(t):
         return -16 * t * t + 40 * t + 5
     t_peak = 40 / 32.0
     t_land = (40 + 1920 ** .5) / 32
-    PX_PER_FT = 256.0 / h(t_peak)
-    X0, X1 = 108, 452
+    RANGE_FT = 26.0                       # how far downrange it travels
+    X0 = 92
 
     def pt(t):
-        return (X0 + (t / t_land) * (X1 - X0), FLOOR - h(t) * PX_PER_FT)
+        return (X0 + (t / t_land) * RANGE_FT * PX_PER_FT,
+                FLOOR - h(t) * PX_PER_FT)
 
-    # the thrower, sized so the release really is at five feet: hand at
-    # shoulder height, front foot planted, back leg trailing in a lunge
+    b = []
     rx, ry = pt(0)
-    s_ = 0.36
-    neck = (rx - 34, FLOOR - 150 * s_)
+
+    # five feet tall, hand at five feet: at the top of the throw the hand is
+    # level with the top of the head, which is the pose that reads as a throw
+    s_ = 5 * PX_PER_FT / 190.0
+    nx, ny = rx - 30, FLOOR - 146 * s_
     f, head_top, hands = person(
-        neck[0], neck[1],
-        arms=[[(-34, 16, 2.4), (-66, 30, 1.8)],          # trailing arm, swung back
-              [(24, -16, -1.6), (round((rx - neck[0]) / s_),
-                                 round((ry - neck[1]) / s_), -1.0)]],
-        spine_leg=([(12, 34), (22, 66), (44, 108), (60, 146)], 2),
-        # the trailing foot has to reach the floor too, or the lunge reads as a kneel
-        other_leg=[(-26, 44), (-62, 83)],
-        spine_bow=[2.2, 2.4, -1.2, -0.8], tilt=15, s=s_)
+        nx, ny,
+        arms=[[(-32, 18, 2.2), (-60, 34, 1.6)],            # trailing arm, swung back
+              [(34, -30, -2.0), (round((rx - nx) / s_),
+                                 round((ry - ny) / s_), -1.4)]],   # up and through
+        spine_leg=([(10, 34), (18, 66), (38, 110), (52, 146)], 2),
+        other_leg=[(-24, 44), (-56, 81)],   # back foot planted, not floating
+        spine_bow=[2.0, 2.2, -1.2, -0.8], tilt=12, s=s_)
     b.append(f)
 
-    n = 60
+    n = 64
     b.append(dashed("M" + " L".join("%.1f,%.1f" % pt(t_land * k / n)
                                     for k in range(n + 1))))
 
     b.append(dashed(f"M{rx:.1f},{ry:.1f} L{rx:.1f},{FLOOR:.1f}", 1.0, "3 4"))
-    b.append(text(rx + 8, (ry + FLOOR) / 2 + 4, "5 ft", 13, anchor="start",
+    b.append(text(rx + 9, (ry + FLOOR) / 2 + 4, "5 ft", 14, anchor="start",
                   weight="bold", family=SANS))
 
     px, py = pt(t_peak)
     b.append(dot(px, py))
-    b.append(text(px, py - 12, "maximum height", 13, weight="bold", family=SANS))
+    b.append(text(px, py - 13, "maximum height", 14, weight="bold", family=SANS))
 
     lx, ly = pt(t_land)
-    b.append(dot(lx, ly, 4.2))          # the ball itself, where it lands
-    # below the floor: up beside the ball it would sit on top of the curve,
-    # which comes down steeply here
-    b.append(text(lx - 6, ly + 20, "hits the ground", 13, anchor="end",
+    b.append(dot(lx, ly, 4.4))            # the ball itself, where it lands
+    b.append(text(lx - 8, ly + 21, "hits the ground", 14, anchor="end",
                   weight="bold", family=SANS))
 
-    b.append(line(28, FLOOR, W - 22, FLOOR, LW))
+    b.append(line(30, FLOOR, W - 26, FLOOR, LW))
     return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
                "A thrown ball on its parabolic path, released at five feet, "
                "with the maximum height and the landing point marked")

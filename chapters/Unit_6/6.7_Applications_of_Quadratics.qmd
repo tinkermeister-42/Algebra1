@@ -117,7 +117,7 @@ $$
 1. When does the ball hit the ground?
 2. What is the maximum height of the ball?
 
-![](/images/Unit_6/Lesson_7/thrown_ball.svg){width="440px" fig-align="center"}
+![](/images/Unit_6/Lesson_7/thrown_ball.svg){width="360px" fig-align="center"}
 
 ---
 

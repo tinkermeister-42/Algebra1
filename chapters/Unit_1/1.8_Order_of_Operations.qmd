@@ -399,7 +399,7 @@ Which should be applied first?
 
 Same ingredients, different result. Order matters!
 
-![](/images/Unit_1/Lesson_8/coupon_order.svg){width="460px" fig-align="center"}
+![](/images/Unit_1/Lesson_8/coupon_order.svg){width="500px" fig-align="center"}
 :::
 
 {{< practice >}}
