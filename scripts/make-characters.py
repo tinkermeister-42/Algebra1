@@ -31,10 +31,14 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
-def person(x, y, arms=((-30, -18), (30, -18)), legs=((-18, 42), (18, 42)), s=1.0):
-    """A figure with feet at (x, y).  Arm and leg tuples are offsets from the
-    shoulder and hip, so a pose is just two pairs of numbers.  Proportions are
-    the usual stick-figure ones: the head is about a sixth of the height.
+def person(x, y, arms=((-22, 14, -38, 26), (22, 14, 38, 26)),
+           legs=((-14, 30, -20, 58), (14, 30, 20, 58)), s=1.0):
+    """A figure with feet at (x, y).
+
+    Limbs bend.  Each one is (elbow_dx, elbow_dy, hand_dx, hand_dy) measured
+    from the shoulder or hip, so the joint is what gives the figure motion -
+    straight single-segment limbs read as a scarecrow, not an xkcd person.
+    No neck: the head sits on the shoulders.
 
     Returns the drawing, the top of the head (for a speech-bubble tail) and
     where each hand ended up (so a prop can be put in one)."""
@@ -42,13 +46,17 @@ def person(x, y, arms=((-30, -18), (30, -18)), legs=((-18, 42), (18, 42)), s=1.0
     leg_h, torso = 58 * s, 62 * s
     hip_y = y - leg_h
     sh_y = hip_y - torso
-    head_cy = sh_y - head_r - 6 * s
+    head_cy = sh_y - head_r + 2 * s
     p = [circle(x, head_cy, head_r), line(x, sh_y, x, hip_y)]
-    for dx, dy in arms:
-        p.append(line(x, sh_y + 6 * s, x + dx * s, sh_y + (6 + dy) * s))
-    for dx, dy in legs:
-        p.append(line(x, hip_y, x + dx * s, hip_y + dy * s))
-    hands = [(x + dx * s, sh_y + (6 + dy) * s) for dx, dy in arms]
+    hands = []
+    for ex, ey, hx, hy in arms:
+        jx, jy = x + ex * s, sh_y + (6 + ey) * s
+        ax, ay = x + hx * s, sh_y + (6 + hy) * s
+        p += [line(x, sh_y + 6 * s, jx, jy), line(jx, jy, ax, ay)]
+        hands.append((ax, ay))
+    for ex, ey, fx, fy in legs:
+        jx, jy = x + ex * s, hip_y + ey * s
+        p += [line(x, hip_y, jx, jy), line(jx, jy, x + fx * s, hip_y + fy * s)]
     return "".join(p), head_cy - head_r, hands
 
 
@@ -95,16 +103,20 @@ def distribute():
     W, H = 660, 276
     b = []
 
-    fig, head_top, hands = person(96, 250, arms=((-28, 22), (58, -2)),
-                                  legs=((-22, 58), (22, 58)), s=1.05)
+    fig, head_top, hands = person(
+        96, 250,
+        arms=((-20, 20, -30, 40), (30, 4, 58, -4)),      # left down, right offering
+        legs=((-12, 30, -22, 58), (14, 30, 20, 58)), s=1.05)
     b.append(fig)
     b.append(sheet(*hands[1], tilt=-14))          # the sheet is in the outstretched hand
     b.append(bubble(214, 42, 300, 50, (head_top and 108, head_top - 6),
                     ["Distribute these, please."]))
 
     for x, tilt in ((336, 7), (456, -6), (576, 9)):
-        f, _, hs = person(x, 256, arms=((-40, 6), (40, 6)),
-                          legs=((-19, 52), (19, 52)), s=0.92)
+        f, _, hs = person(
+            x, 256,
+            arms=((-20, 14, -32, 26), (22, 10, 38, 2)),   # hand below the elbow, not hooked up
+            legs=((-11, 27, -18, 52), (12, 27, 19, 52)), s=0.92)
         b.append(f)
         b.append(sheet(*hs[1], tilt=tilt))
 
