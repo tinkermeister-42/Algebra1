@@ -11,7 +11,9 @@ import os
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "images")
 INK = "#111"
-LW = 2.2                      # thin and uniform, as in the originals
+# Measured off the originals: the limb stroke is about 2.5% of the head's
+# width, and the spine at its thickest is about 2.5 times the limb.
+LW = 1.3
 # The originals were hand-lettered.  No such face is guaranteed on a printing
 # machine, so these use the same serif as the handout body and let the figures
 # carry the character instead of a font imitation.
@@ -87,7 +89,7 @@ def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23), s=1.0):
     pts = [(x, y)]
     for dx, dy in segs:
         pts.append((x + dx * s, y + dy * s))
-    parts = [ribbon(pts, 0.9 * s, 2.2 * s)]
+    parts = [ribbon(pts, 0.45 * s, 1.6 * s)]
 
     bx, by = pts[branch]
     px_, py_ = bx, by
@@ -138,9 +140,9 @@ def sheet(x, y, w=17, h=22, tilt=0):
     """A worksheet: a small page with two ruled lines."""
     g = (f'<g transform="rotate({tilt} {x} {y})">'
          f'<rect x="{x-w/2:.1f}" y="{y-h/2:.1f}" width="{w}" height="{h}" fill="#fff" '
-         f'stroke="{INK}" stroke-width="2"/>')
+         f'stroke="{INK}" stroke-width="1.3"/>')
     for k in (0.34, 0.62):
-        g += line(x - w * .3, y - h / 2 + h * k, x + w * .3, y - h / 2 + h * k, 1.4)
+        g += line(x - w * .3, y - h / 2 + h * k, x + w * .3, y - h / 2 + h * k, 0.9)
     return g + "</g>"
 
 
@@ -179,7 +181,7 @@ def distribute():
         b.append(f)
         b.append(sheet(*hs[1], tilt=tilt, w=18, h=24))
 
-    b.append(line(28, FLOOR, W - 22, FLOOR, 2.0))
+    b.append(line(28, FLOOR, W - 22, FLOOR, 1.3))
     return svg(W, H, "".join(b),
                "A teacher handing one worksheet to each of two students")
 
