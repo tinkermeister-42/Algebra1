@@ -13,6 +13,9 @@ Run from the repo root:
 The poses are hand-tuned coordinates, so drawing is write-numbers, look,
 adjust, repeat.  --sheet renders every scene into one PNG so a pass over the
 whole set is one look instead of one screenshot per file.
+
+Needs Pillow: the 6.7 scene reuses the thrower drawn for 6.1 rather than
+redrawing him, which means cropping that PNG and embedding it.
 """
 import glob
 import os
@@ -285,20 +288,35 @@ def coupon_order(blank=False):
 
     # the second balloon hangs off the figure's inside shoulder, or it would
     # run off the edge of the frame
-    for x, said, tag, total, sgn in (
-            (140, "Coupon first.", "25% off", "$20.00", 1),
-            (500, "Gift card first.", "$10 card", "$22.50", -1)):
-        # sgn mirrors the second one so the two square off and read as an
-        # argument rather than as two strangers facing the same way
+    # one holds his coupon up and stands square; the other has the card down
+    # and the free hand thrown out, mid-objection.  Mirrored they would read as
+    # one drawing twice.
+    coupon_pose = dict(arms=[[(-10, 32, 1.2), (-8, 61, 0.8)],
+                        [(17, 18, -1.3), (34, 6, -1.5)]],
+                  spine_leg=[(3, 32), (8, 62), (3, 104), (-2, 146)],
+                  other_leg=[(20, 44), (25, 84)],
+                  spine_bow=[1.4, 1.6, -0.9, -0.5], tilt=6)
+    card_pose = dict(arms=[[(-16, 12, 1.6), (-34, 2, 2.0)],
+                      [(15, 30, -1.1), (32, 26, -1.3)]],
+                spine_leg=[(5, 32), (11, 62), (12, 104), (10, 146)],
+                other_leg=[(-14, 46), (-22, 84)],
+                spine_bow=[1.0, 1.2, -1.4, -1.0], tilt=11)
+
+    for x, said, tag, total, sgn, pose in (
+            (140, "Coupon first.", "25% off", "$20.00", 1, coupon_pose),
+            (500, "Gift card first.", "$10 card", "$22.50", -1, card_pose)):
+        # sgn turns the second one to face the first, so they square off
+        def mx(seq):
+            return [tuple([v[0] * sgn] + list(v[1:])) if len(v) == 2 else
+                    (v[0] * sgn, v[1], v[2] * sgn) for v in seq]
+
         f, head_top, hands = person(
             x, 120,
-            arms=[[(-10 * sgn, 32, 1.2 * sgn), (-8 * sgn, 61, 0.8 * sgn)],
-                  [(17 * sgn, 18, -1.3 * sgn), (34 * sgn, 6, -1.5 * sgn)]],
-            spine_leg=([(3 * sgn, 32), (8 * sgn, 62), (3 * sgn, 104),
-                        (-2 * sgn, 146)], 2),
-            other_leg=[(20 * sgn, 44), (25 * sgn, 84)],
-            spine_bow=[1.4 * sgn, 1.6 * sgn, -0.9 * sgn, -0.5 * sgn],
-            tilt=6 * sgn, s=0.86)
+            arms=[mx(a) for a in pose["arms"]],
+            spine_leg=(mx(pose["spine_leg"]), 2),
+            other_leg=mx(pose["other_leg"]),
+            spine_bow=[v * sgn for v in pose["spine_bow"]],
+            tilt=pose["tilt"] * sgn, s=0.86)
         b.append(f)
         b.append(bubble(x + sgn * 62, 40, 152, 30, (x + sgn * 12, head_top - 3),
                         [said], size=14))
@@ -389,9 +407,11 @@ def three_ways(blank=False):
     b.append(card(cx - 88, cy - 2, 76, 54,
                   text(cx - 88, cy + 4, "d = rt", 16, family=SANS, weight="bold"), tilt=-11))
     def rearranged(ox, oy, want, num, den, tilt):
-        inner = text(ox - 20, oy + 6, want + " =", 16, family=SANS, weight="bold")
-        inner += (line(ox + 6, oy + 10, ox + 34, oy + 10, LW) if blank
-                  else frac(ox + 26, oy, num, den))
+        # "r =" and the fraction are one group, centred together: pushed apart
+        # they leave a hole in the middle and crowd the fraction into the border
+        inner = text(ox - 14, oy + 6, want + " =", 16, family=SANS, weight="bold")
+        inner += (line(ox + 2, oy + 7, ox + 26, oy + 7, LW) if blank
+                  else frac(ox + 14, oy + 1, num, den))
         return card(ox, oy, 76, 54, inner, tilt=tilt)
 
     b.append(rearranged(cx + 4, cy - 10, "r", "d", "t", -2))
@@ -402,20 +422,38 @@ def three_ways(blank=False):
                "One figure holding three cards: d equals rt, r equals d over t, t equals d over r")
 
 
+# The thrower in 6.1's BallArc, lifted rather than redrawn.  It already has the
+# stance - the arm angled up and away with the hand at about head height, which
+# is what a throw looks like - and it is the book's own artwork.
+BALLARC = ("Unit_6/Lesson_1/BallArc.png", (28, 458, 228, 676))
+BALLARC_HAND = (193, 37)      # where the ball leaves, in crop coordinates
+BALLARC_FEET = 213            # the lower foot, same coordinates
+
+
+def lifted_figure():
+    """The cropped thrower as a data URI, so the SVG stays self-contained -
+    an SVG shown through <img>, as the handouts do, cannot fetch anything."""
+    import base64
+    import io
+    from PIL import Image
+    rel, box = BALLARC
+    im = Image.open(os.path.join(OUT, *rel.split("/"))).convert("RGBA").crop(box)
+    buf = io.BytesIO()
+    im.save(buf, "PNG", optimize=True)
+    return base64.b64encode(buf.getvalue()).decode(), im.size
+
+
 def thrown_ball():
     """6.7 Example 1 - h(t) = -16t^2 + 40t + 5.  The example asks two questions
     that sound unrelated until you see they are two points on one arc: where it
     lands, and how high it gets.
 
-    Both axes use the same scale, 15px to the foot, which is what makes the
-    throw read.  A taller figure cannot release at five feet with its hand up -
-    the arm ends up pointing down at the ball and the whole pose looks broken -
-    so the thrower is drawn five feet tall and lets go at the top of the swing,
-    hand level with the top of the head.  The arc is the function sampled, not
-    a freehand swoosh, and at the same scale it towers over him, which is what
-    thirty feet actually looks like."""
-    TOP = 22
-    W, H = 560, 540 + TOP
+    The thrower is the one from 6.1, scaled so his hand really is at the five
+    feet the example starts from and his feet really are on the ground.  The
+    arc is the example's own function sampled at one scale with the figure,
+    15px to the foot, so thirty feet towers over him the way it should."""
+    TOP = 26
+    W, H = 880, 540 + TOP
     FLOOR = 498
     PX_PER_FT = 15.0
 
@@ -423,8 +461,10 @@ def thrown_ball():
         return -16 * t * t + 40 * t + 5
     t_peak = 40 / 32.0
     t_land = (40 + 1920 ** .5) / 32
-    RANGE_FT = 26.0                       # how far downrange it travels
-    X0 = 92
+    # far enough downrange to give the frame a landscape shape: portrait, it
+    # has to be printed small, and small is where the labels stop being legible
+    RANGE_FT = 46.0
+    X0 = 96
 
     def pt(t):
         return (X0 + (t / t_land) * RANGE_FT * PX_PER_FT,
@@ -433,38 +473,34 @@ def thrown_ball():
     b = []
     rx, ry = pt(0)
 
-    # five feet tall, hand at five feet: at the top of the throw the hand is
-    # level with the top of the head, which is the pose that reads as a throw
-    s_ = 5 * PX_PER_FT / 190.0
-    nx, ny = rx - 30, FLOOR - 146 * s_
-    f, head_top, hands = person(
-        nx, ny,
-        arms=[[(-32, 18, 2.2), (-60, 34, 1.6)],            # trailing arm, swung back
-              [(34, -30, -2.0), (round((rx - nx) / s_),
-                                 round((ry - ny) / s_), -1.4)]],   # up and through
-        spine_leg=([(10, 34), (18, 66), (38, 110), (52, 146)], 2),
-        other_leg=[(-24, 44), (-56, 81)],   # back foot planted, not floating
-        spine_bow=[2.0, 2.2, -1.2, -0.8], tilt=12, s=s_)
-    b.append(f)
+    # scale him by the one measurement that has to be right: hand to feet is
+    # the release height, five feet
+    data, (iw, ih) = lifted_figure()
+    hx, hy = BALLARC_HAND
+    k = (5 * PX_PER_FT) / (BALLARC_FEET - hy)
+    x = rx - hx * k
+    y = FLOOR - BALLARC_FEET * k
+    b.append(f'<image x="{x:.1f}" y="{y:.1f}" width="{iw * k:.1f}" '
+             f'height="{ih * k:.1f}" href="data:image/png;base64,{data}"/>')
 
     n = 64
-    b.append(dashed("M" + " L".join("%.1f,%.1f" % pt(t_land * k / n)
-                                    for k in range(n + 1))))
+    b.append(dashed("M" + " L".join("%.1f,%.1f" % pt(t_land * k2 / n)
+                                    for k2 in range(n + 1))))
 
     b.append(dashed(f"M{rx:.1f},{ry:.1f} L{rx:.1f},{FLOOR:.1f}", 1.0, "3 4"))
-    b.append(text(rx + 9, (ry + FLOOR) / 2 + 4, "5 ft", 14, anchor="start",
+    b.append(text(rx + 11, (ry + FLOOR) / 2 + 6, "5 ft", 20, anchor="start",
                   weight="bold", family=SANS))
 
     px, py = pt(t_peak)
     b.append(dot(px, py))
-    b.append(text(px, py - 13, "maximum height", 14, weight="bold", family=SANS))
+    b.append(text(px, py - 15, "maximum height", 22, weight="bold", family=SANS))
 
     lx, ly = pt(t_land)
     b.append(dot(lx, ly, 4.4))            # the ball itself, where it lands
-    b.append(text(lx - 8, ly + 21, "hits the ground", 14, anchor="end",
+    b.append(text(lx - 10, ly + 26, "hits the ground", 22, anchor="end",
                   weight="bold", family=SANS))
 
-    b.append(line(30, FLOOR, W - 26, FLOOR, LW))
+    b.append(line(10, FLOOR, W - 26, FLOOR, LW))
     return svg(W, H, f'<g transform="translate(0,{TOP})">' + "".join(b) + "</g>",
                "A thrown ball on its parabolic path, released at five feet, "
                "with the maximum height and the landing point marked")
