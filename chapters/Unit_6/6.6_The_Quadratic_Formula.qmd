@@ -310,7 +310,7 @@ $$
 
 The discriminant is positive, so the quadratic has **two real solutions**. The parabola intersects the $x$-axis at two points. 
 
-![](/images/Unit_6/Lesson_5/Example4.png){width="350px" fig-align="center"}
+![](/images/Unit_6/Lesson_6/Example4.png){width="350px" fig-align="center"}
 
 ***
 
@@ -330,7 +330,7 @@ $$
 
 The discriminant is zero, so the quadratic has **one real solution**. The parabola intersects the $x$-axis at one point only.
 
-![](/images/Unit_6/Lesson_5/Example5.png){width="350px" fig-align="center"}
+![](/images/Unit_6/Lesson_6/Example5.png){width="350px" fig-align="center"}
 
 ***
 
@@ -350,7 +350,7 @@ $$
 
 The discriminant is negative, so the quadratic has **no real solutions**. The parabola does not cross the $x$-axis at all. 
 
-![](/images/Unit_6/Lesson_5/Example6.png){width="350px" fig-align="center"}
+![](/images/Unit_6/Lesson_6/Example6.png){width="350px" fig-align="center"}
 
 ***
 

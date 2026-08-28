@@ -43,7 +43,7 @@ This means:
 
 Here is what it looks like to find how many fourths are in one half:
 
-![](/images/Unit_1/Lesson_5/fourth_of_a_half.png){width=50%}
+![](/images/Unit_1/Lesson_4/fourth_of_a_half.png){width=50%}
 
 That blue slice shows one of the four parts of the darker half.  
 Since there are 8 total pieces, and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.

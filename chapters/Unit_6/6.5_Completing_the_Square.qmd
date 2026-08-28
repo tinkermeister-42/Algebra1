@@ -18,7 +18,7 @@ $$
 
 does not.
 
-![](/images/Unit_6/Lesson_4/IntroExample.png){width="400px" fig-align="center"}
+![](/images/Unit_6/Lesson_5/IntroExample.png){width="400px" fig-align="center"}
 
 Both parabolas cross the $x$-axis twice, so both equations have two solutions.
 We can find the solutions to the first equation by factoring:

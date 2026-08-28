@@ -66,13 +66,13 @@ A **percent** means “per 100”. Percents are used when:
 We think about and visualize fractions, decimals, and percents differently too. Here is the same number shown in three different ways!
 
 
-![The fraction $\frac{2}{5}$](/images/Unit_1/Lesson_4/fraction_2_fifths.png){fig-align=center fig-alt="A grid with $\frac{2}{5}$ of the boxes shaded" width=33%}
+![The fraction $\frac{2}{5}$](/images/Unit_1/Lesson_6/fraction_2_fifths.png){fig-align=center fig-alt="A grid with $\frac{2}{5}$ of the boxes shaded" width=33%}
 
 
-![The decimal 0.4](/images/Unit_1/Lesson_4/linechart_point_4.png){fig-align=center fig-alt="Number line with a point at 0.4" width=75%}
+![The decimal 0.4](/images/Unit_1/Lesson_6/linechart_point_4.png){fig-align=center fig-alt="Number line with a point at 0.4" width=75%}
 
 
-![The percentage 40%](/images/Unit_1/Lesson_4/pie_chart_40_percent.png){fig-align=center fig-alt="A pie chart with 40% taken out." width=50%}
+![The percentage 40%](/images/Unit_1/Lesson_6/pie_chart_40_percent.png){fig-align=center fig-alt="A pie chart with 40% taken out." width=50%}
 
 
 Fractions, decimals, and percents all show the same thing in different ways. You can change one form into another. Choose the form that fits the situation. In the next sections, you’ll learn how to switch between them.
@@ -151,19 +151,19 @@ Turning a decimal into a percent is easy. We simply move the decimal point to th
 
 To do this, we move the decimal two places to the right and then add a % sign. This gives us 23.4%. 
 
-![](/images/Unit_1/Lesson_4/convert_point_234.png){height=50 fig-alt="Converting 0.234 to 23.4%"}
+![](/images/Unit_1/Lesson_6/convert_point_234.png){height=50 fig-alt="Converting 0.234 to 23.4%"}
 
 But what if there isn't a digit in the hundredths place? When we don't have enough digits to the right of the decimal, we just fill them in with zeros. 
 
 **Example 4:** Convert 0.4 to a percent.
 
-![](/images/Unit_1/Lesson_4/convert_point_4.png){height=50 fig-alt="Converting 0.4 to 40%"}
+![](/images/Unit_1/Lesson_6/convert_point_4.png){height=50 fig-alt="Converting 0.4 to 40%"}
 
 But what if the number is bigger than 1? When the number is bigger than 1.0, we do exactly the same thing and end up with a percentage that is larger than 100%! 
 
 **Example 5:** Convert 3.2 to a percent.
 
-![](/images/Unit_1/Lesson_4/convert_3_point_2.png){height=50 fig-alt="Converting 3.2 to 320%"}
+![](/images/Unit_1/Lesson_6/convert_3_point_2.png){height=50 fig-alt="Converting 3.2 to 320%"}
 
 :::{.you-try title="What is 1.342 as a percent?"}
 
@@ -269,7 +269,7 @@ To convert a percent to a decimal simply move the decimal two places left (the s
 
 For example, here is what it looks like to convert 41% to a decimal. Notice that we sometimes have to add zeros to the left so the decimal has a place to go. Also notice that if there is no decimal, we put it just after the number before moving to the left.
 
-![](/images/Unit_1/Lesson_4/convert_41_percent.png){height=50 fig-alt="Converting 41% to 0.41"}
+![](/images/Unit_1/Lesson_6/convert_41_percent.png){height=50 fig-alt="Converting 41% to 0.41"}
 
 Here are some more examples:
 
@@ -478,7 +478,7 @@ Some conversions are so common that it helps to **memorize** them. These are cal
 
 **Comparison Questions**
 
-5. ![](/images/Unit_1/Lesson_4/answer_5.png)
+5. ![](/images/Unit_1/Lesson_6/answer_5.png)
 
 
 6. $\frac{2}{3}$ is greatest because it equals $0.\overline{6}$ all of the others are equal to 0.65.
