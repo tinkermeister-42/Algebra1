@@ -40,22 +40,26 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
-def spine(x0, y0, x1, y1, bend=0.0, w_top=0.9, w_hip=2.5):
-    """The torso, as a filled calligraphic wedge rather than a stroked line.
+def ribbon(pts, w0, w1):
+    """A filled stroke of varying width along a polyline.
 
-    In the originals it leaves the base of the head as a point and widens as it
-    drops, thickest at the hip, with a gentle bend.  That taper is most of what
-    makes the figure read as a body with mass instead of a stick."""
-    dx, dy = x1 - x0, y1 - y0
-    L = (dx * dx + dy * dy) ** 0.5 or 1.0
-    px, py = -dy / L, dx / L                     # unit perpendicular
-    mx, my = (x0 + x1) / 2 + px * bend, (y0 + y1) / 2 + py * bend
-    return (f'<path d="M{x0 + px * w_top:.1f},{y0 + py * w_top:.1f} '
-            f'Q{mx + px * w_hip * .6:.1f},{my + py * w_hip * .6:.1f} '
-            f'{x1 + px * w_hip:.1f},{y1 + py * w_hip:.1f} '
-            f'L{x1 - px * w_hip:.1f},{y1 - py * w_hip:.1f} '
-            f'Q{mx - px * w_hip * .2:.1f},{my - py * w_hip * .2:.1f} '
-            f'{x0 - px * w_top:.1f},{y0 - py * w_top:.1f} Z" fill="{INK}"/>')
+    The body is one of these: it starts as a point at the base of the head,
+    widens down the back and carries straight on into a leg without stopping at
+    a hip.  The hip is a bend in the line, not a junction."""
+    n = len(pts) - 1
+    norms = []
+    for k, (x, y) in enumerate(pts):
+        ax, ay = pts[max(k - 1, 0)]
+        bx, by = pts[min(k + 1, n)]
+        dx, dy = bx - ax, by - ay
+        L = (dx * dx + dy * dy) ** 0.5 or 1.0
+        norms.append((-dy / L, dx / L))
+    w = [w0 + (w1 - w0) * (k / n) for k in range(n + 1)]
+    left = [(x + nx * w[k], y + ny * w[k]) for k, ((x, y), (nx, ny)) in enumerate(zip(pts, norms))]
+    right = [(x - nx * w[k], y - ny * w[k]) for k, ((x, y), (nx, ny)) in enumerate(zip(pts, norms))]
+    d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in left)
+    d += " L" + " L".join(f"{x:.1f},{y:.1f}" for x, y in reversed(right)) + " Z"
+    return f'<path d="{d}" fill="{INK}"/>'
 
 
 def limb(jx, jy, segs, s):
@@ -68,24 +72,35 @@ def limb(jx, jy, segs, s):
     return "".join(out), (x, y)
 
 
-def person(x, y, arms, legs, tilt=0, torso=(0, 46), head_r=(25, 23), bend=0.0, s=1.0):
-    """A figure whose neck is the only joint that matters.
+def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23), s=1.0):
+    """A figure built the way the originals are.
 
-    The torso and both arms all leave one junction just under the head - there
-    are no shoulders.  Every limb is a run of (dx, dy) segments from that
-    junction (arms) or from the far end of the torso (legs), so poses are
-    asymmetric by construction and the corners stay sharp.
+    `spine_leg` is the single continuous run from the neck, down the back and
+    on into one leg - given as (dx, dy) offsets from the neck.  `other_leg`
+    branches off it at `branch`, an index into that run.  Both arms leave the
+    neck point.  There is no shoulder and no hip: the neck is the only junction
+    and the hip is just a bend.
 
-    (x, y) is the junction.  Returns the drawing, the top of the head, and
-    where each hand ended up."""
-    tx, ty = x + torso[0] * s, y + torso[1] * s
-    parts, hands = [spine(x, y, tx, ty, bend * s, 0.9 * s, 2.5 * s)], []
-    for segs in arms:
-        d, hand = limb(x, y, segs, s)
+    (x, y) is the neck.  Returns the drawing, the top of the head, and where
+    each hand ended up."""
+    segs, branch = spine_leg
+    pts = [(x, y)]
+    for dx, dy in segs:
+        pts.append((x + dx * s, y + dy * s))
+    parts = [ribbon(pts, 0.9 * s, 2.2 * s)]
+
+    bx, by = pts[branch]
+    px_, py_ = bx, by
+    for dx, dy in other_leg:
+        nx, ny = bx + dx * s, by + dy * s
+        parts.append(line(px_, py_, nx, ny))
+        px_, py_ = nx, ny
+
+    hands = []
+    for a in arms:
+        d, hand = limb(x, y, a, s)
         parts.append(d); hands.append(hand)
-    for segs in legs:
-        d, _ = limb(tx, ty, segs, s)
-        parts.append(d)
+
     rx, ry = head_r[0] * s, head_r[1] * s
     hcy = y - ry + 2 * s
     parts.append(head(x, hcy, rx, ry, tilt))
@@ -136,26 +151,29 @@ def distribute():
     FLOOR = 240
     b = []
 
-    # Relaxed stand: weight on the near leg, which drops almost straight, while
-    # the far one sets down a little wider.  Not a stride, not a wide stance.
-    def stand(flip=1):
-        return [[(-7 * flip, 36), (-11 * flip, 74)],
-                [(11 * flip, 34), (17 * flip, 74)]]
+    # neck -> down the back -> hip -> knee -> foot, all one stroke; the second
+    # leg branches at the hip, which is index 1 in that run
+    def body(lean, kick):
+        # points: mid-back, hip, knee, foot - the far leg branches at the hip
+        return ([(lean, 30), (lean + 6, 58), (lean + 1, 96), (lean + 5, 132)], 2)
+
+    def far_leg(kick):
+        return [(kick * 13, 34), (kick * 20, 74)]
 
     fig, head_top, hands = person(
         96, 108,
-        arms=[[(-15, 27), (-27, 53)],           # trailing arm, relaxed
-              [(36, 13), (68, 8)]],             # offering arm
-        legs=stand(1), tilt=12, torso=(16, 56), bend=3.5, s=1.02)
+        arms=[[(-15, 27), (-27, 53)],
+              [(36, 13), (68, 8)]],
+        spine_leg=body(9, 1), other_leg=far_leg(1), tilt=12, s=1.02)
     b.append(fig)
     b.append(sheet(*hands[1], tilt=-17, w=19, h=25))
     b.append(bubble(228, 30, 264, 40, (108, head_top - 2), ["Distribute these, please."], size=15))
 
     for kw, px, tilt in [
         (dict(arms=[[(-19, 29), (-32, 52)], [(29, 11), (53, 21)]],
-              legs=stand(-1), tilt=-8, torso=(-11, 56), bend=-3.0), 302, 9),
+              spine_leg=body(-7, -1), other_leg=far_leg(-1), tilt=-8), 302, 9),
         (dict(arms=[[(-23, 25), (-36, 50)], [(27, 15), (51, 13)]],
-              legs=stand(1), tilt=9, torso=(8, 55), bend=2.8), 420, -8),
+              spine_leg=body(6, 1), other_leg=far_leg(1), tilt=9), 420, -8),
     ]:
         f, _, hs = person(px, 115, s=0.96, **kw)
         b.append(f)
