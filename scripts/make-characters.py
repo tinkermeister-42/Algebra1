@@ -11,8 +11,8 @@ import os
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "images")
 INK = "#111"
-# Measured off the originals: the limb stroke is about 2.5% of the head's
-# width, and the spine at its thickest is about 2.5 times the limb.
+# Measured off the originals: the stroke is about 2.5% of the head's width,
+# and it is the same everywhere - body, limbs and head alike.
 LW = 1.3
 # The originals were hand-lettered.  No such face is guaranteed on a printing
 # machine, so these use the same serif as the handout body and let the figures
@@ -42,28 +42,6 @@ def text(x, y, s, size=20, anchor="middle", weight="normal"):
             f'font-weight="{weight}" text-anchor="{anchor}" fill="{INK}">{s}</text>')
 
 
-def ribbon(pts, w0, w1):
-    """A filled stroke of varying width along a polyline.
-
-    The body is one of these: it starts as a point at the base of the head,
-    widens down the back and carries straight on into a leg without stopping at
-    a hip.  The hip is a bend in the line, not a junction."""
-    n = len(pts) - 1
-    norms = []
-    for k, (x, y) in enumerate(pts):
-        ax, ay = pts[max(k - 1, 0)]
-        bx, by = pts[min(k + 1, n)]
-        dx, dy = bx - ax, by - ay
-        L = (dx * dx + dy * dy) ** 0.5 or 1.0
-        norms.append((-dy / L, dx / L))
-    w = [w0 + (w1 - w0) * (k / n) for k in range(n + 1)]
-    left = [(x + nx * w[k], y + ny * w[k]) for k, ((x, y), (nx, ny)) in enumerate(zip(pts, norms))]
-    right = [(x - nx * w[k], y - ny * w[k]) for k, ((x, y), (nx, ny)) in enumerate(zip(pts, norms))]
-    d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in left)
-    d += " L" + " L".join(f"{x:.1f},{y:.1f}" for x, y in reversed(right)) + " Z"
-    return f'<path d="{d}" fill="{INK}"/>'
-
-
 def limb(jx, jy, segs, s):
     """A limb as a run of segments from the junction; sharp corners, no easing."""
     pts, x, y, out = [], jx, jy, []
@@ -83,13 +61,18 @@ def person(x, y, arms, spine_leg, other_leg, tilt=0, head_r=(25, 23), s=1.0):
     neck point.  There is no shoulder and no hip: the neck is the only junction
     and the hip is just a bend.
 
+    Every line is the same width.  What is distinctive is only how it is
+    constructed - one unbroken run from head to foot with a leg branching off -
+    not any difference in weight.
+
     (x, y) is the neck.  Returns the drawing, the top of the head, and where
     each hand ended up."""
     segs, branch = spine_leg
     pts = [(x, y)]
     for dx, dy in segs:
         pts.append((x + dx * s, y + dy * s))
-    parts = [ribbon(pts, 0.45 * s, 1.6 * s)]
+    # one uniform stroke the whole way, head to foot; the far leg branches off it
+    parts = [line(*pts[k], *pts[k + 1]) for k in range(len(pts) - 1)]
 
     bx, by = pts[branch]
     px_, py_ = bx, by
