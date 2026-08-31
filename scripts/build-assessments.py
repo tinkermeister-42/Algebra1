@@ -14,6 +14,11 @@ you know the URL.
 
 Math is converted to MathML by pandoc, so a page needs no JavaScript and no
 CDN - the same rule the guided notes follow.
+
+An index is written to assessments/index.html listing everything.  It is a
+resource like the pages it lists: nothing in the book links to it and it is
+not in the search index, so it is a bookmark for the teacher, not a way in for
+students.
 """
 import glob
 import html
@@ -141,6 +146,84 @@ def build(path, key_md=None):
     print("built", os.path.relpath(out, ROOT))
 
 
+
+INDEX_SHELL = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assessments &mdash; DHS Algebra 1</title>
+<link rel="stylesheet" href="assets/assessments.css">
+<style>
+  .sheet {{ width: 8in; }}
+  .idx {{ width: 100%; border-collapse: collapse; margin: 4px 0 18px; }}
+  .idx th, .idx td {{ border: 0; border-bottom: 1px solid var(--faint);
+                      padding: 5px 8px; text-align: left; }}
+  .idx th {{ background: none; font-size: 9.5pt; letter-spacing: .04em;
+             text-transform: uppercase; color: #555; border-bottom: 1.5px solid var(--ink); }}
+  .idx td.k {{ text-align: right; white-space: nowrap; }}
+  .idx a {{ color: var(--accent); text-decoration: none; }}
+  .idx a:hover {{ text-decoration: underline; }}
+  .idx a.key {{ color: var(--key); }}
+  .note {{ font-size: 10pt; color: #555; margin: 0 0 14px; }}
+  @media print {{ .sheet {{ width: auto; }} }}
+</style>
+</head>
+<body>
+<section class="sheet">
+  <div class="masthead">
+    <h1>Assessments</h1>
+    <div class="sub">DHS Algebra 1 &mdash; quizzes, tests and answer keys</div>
+  </div>
+  <p class="note">Nothing in the book links here. Bookmark this page.
+  Every sheet is laid out for letter paper &mdash; use your browser's
+  <b>Print</b> command, and choose <i>Save as PDF</i> for a digital copy.</p>
+{body}
+</section>
+</body>
+</html>
+"""
+
+
+def write_index(built):
+    """One page listing every assessment, for the teacher to bookmark."""
+    rows = {}
+    for unit, name, has_key in built:
+        rows.setdefault(unit, []).append((name, has_key))
+
+    body = []
+    for unit in sorted(rows):
+        body.append("  <h2>Unit %s</h2>\n  <table class=\"idx\">" % unit)
+        body.append("    <tr><th>Assessment</th><th>Answer key</th></tr>")
+        for name, has_key in sorted(rows[unit]):
+            key = ('<a class="key" href="Unit_%s/%s_KEY.html">key</a>' % (unit, name)
+                   if has_key else "&mdash;")
+            body.append('    <tr><td><a href="Unit_%s/%s.html">%s</a></td>'
+                        '<td class="k">%s</td></tr>' % (unit, name, name, key))
+        body.append("  </table>")
+
+    # Only the ones with no markdown source.  The rest are the teacher's own
+    # older exports of assessments that now build to HTML, and they predate
+    # every correction made since - listing them would hand out stale papers.
+    have = {n.lower() for _, n, _ in built}
+    pdfs = [f for f in sorted(glob.glob(os.path.join(SRC, "Unit_*", "*.pdf")))
+            if os.path.splitext(os.path.basename(f))[0].lower() not in have]
+    if pdfs:
+        body.append("  <h2>PDF only</h2>")
+        body.append("  <p class=\"note\">These exist only as PDF, so there is no "
+                    "HTML version and no key.</p>")
+        body.append("  <table class=\"idx\">")
+        for f in pdfs:
+            rel = os.path.relpath(f, ROOT)
+            body.append('    <tr><td><a href="../%s">%s</a></td><td class="k">&mdash;</td></tr>'
+                        % (rel, os.path.basename(f)))
+        body.append("  </table>")
+
+    out = os.path.join(OUT, "index.html")
+    open(out, "w", encoding="utf-8").write(INDEX_SHELL.format(body="\n".join(body)))
+    print("built", os.path.relpath(out, ROOT))
+
+
 def main(argv):
     paths = sorted(glob.glob(os.path.join(SRC, "Unit_*", "*.md")) +
                    glob.glob(os.path.join(SRC, "Unit_*", "*.qmd")))
@@ -148,11 +231,17 @@ def main(argv):
         paths = [p for p in paths if any(a in os.path.basename(p) for a in argv)]
         if not paths:
             raise SystemExit("no assessment matches %s" % " ".join(argv))
+    built = []
     for p in paths:
         build(p)
-        k = os.path.join(KEYS, os.path.splitext(os.path.basename(p))[0] + ".md")
-        if os.path.exists(k):
+        name = os.path.splitext(os.path.basename(p))[0]
+        k = os.path.join(KEYS, name + ".md")
+        has_key = os.path.exists(k)
+        if has_key:
             build(p, open(k, encoding="utf-8").read())
+        built.append((re.search(r"Unit_(\d)", p).group(1), name, has_key))
+    if not argv:                      # a partial build must not shrink the index
+        write_index(built)
 
 
 if __name__ == "__main__":

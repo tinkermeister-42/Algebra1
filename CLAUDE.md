@@ -64,6 +64,8 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
   `resources:` but nothing links to them and they are not in the search index.
   URLs are `/assessments/Unit_X/<Name>.html`
+- `/assessments/index.html` lists everything &mdash; also unlisted, a bookmark
+  for the teacher. Built by the same script; a partial build leaves it alone
 - Assessments that exist only as PDF are exposed at
   `/chapters/Assessments/Unit_X/<Name>.pdf`
 

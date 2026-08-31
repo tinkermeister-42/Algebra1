@@ -11,6 +11,7 @@ resources:
   # Quizzes, tests and answer keys.  Copied into the site so the book is
   # self-contained, but deliberately not linked from any page: they are
   # reachable only by typing the URL.  Built by scripts/build-assessments.py.
+  - assessments/index.html
   - assessments/Unit_*/*.html
   - assessments/Unit_*/images/*
   - assessments/assets/*
