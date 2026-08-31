@@ -55,20 +55,11 @@ Write your answers in **simplest form**.
 10. Add: $\tfrac{2}{3} + \tfrac{1}{4}$.
 <br><br><br><br><br><br><br><br><br><br>
 
-11. Subtract: $4\tfrac{1}{6} - 1\tfrac{2}{3}$. Write your answer as a mixed number.
-<br><br><br><br><br><br><br><br><br><br>
-
-<div style="page-break-after: always;"></div>
-
-
-### Order of Operations
-<br>
-
-12. Simplify: $6 + 4 \times (3 - 7)$.
+11. Simplify: $6 + 4 \times (3 - 7)$.
 <br><br><br><br><br><br><br><br><br>
 
-13. Simplify: $\dfrac{20}{5} + 3^2 \times 2$.
+12. Simplify: $\dfrac{20}{5} + 3^2 \times 2$.
 <br><br><br><br><br><br><br><br><br>
 
-14. Simplify: $[(2+5)\div 7] \times (4-9)$.
+13. Simplify: $[(2+5)\div 7] \times (4-9)$.
 <br><br><br><br><br><br><br><br>

@@ -55,20 +55,11 @@ Write your answers in **simplest form**.
 10. Add: $\tfrac{5}{6} + \tfrac{3}{4}$.
 <br><br><br><br><br><br><br><br><br><br>
 
-11. Subtract: $6\tfrac{1}{5} - 2\tfrac{7}{10}$. Write your answer as a mixed number.
-<br><br><br><br><br><br><br><br><br><br>
-
-<div style="page-break-after: always;"></div>
-
-
-### Order of Operations
-<br>
-
-12. Simplify: $8 + 7 \times (3 - 9)$.
+11. Simplify: $8 + 7 \times (3 - 9)$.
 <br><br><br><br><br><br><br><br><br>
 
-13. Simplify: $\dfrac{50}{25} + 5^2 \times 3$.
+12. Simplify: $\dfrac{50}{25} + 5^2 \times 3$.
 <br><br><br><br><br><br><br><br><br>
 
-14. Simplify: $[(6+12)\div 3] \times (2-7)$.
+13. Simplify: $[(6+12)\div 3] \times (2-7)$.
 <br><br><br><br><br><br><br><br>

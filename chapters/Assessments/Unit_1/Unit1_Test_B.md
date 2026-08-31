@@ -55,20 +55,11 @@ Write your answers in **simplest form**.
 10. Add: $\tfrac{3}{5} + \tfrac{1}{2}$.
 <br><br><br><br><br><br><br><br><br><br>
 
-11. Subtract: $5\tfrac{1}{4} - 2\tfrac{5}{8}$. Write your answer as a mixed number.
-<br><br><br><br><br><br><br><br><br><br>
-
-<div style="page-break-after: always;"></div>
-
-
-### Order of Operations
-<br>
-
-12. Simplify: $9 + 3 \times (3 - 11)$.
+11. Simplify: $9 + 3 \times (3 - 11)$.
 <br><br><br><br><br><br><br><br><br>
 
-13. Simplify: $\dfrac{30}{6} + 7^2 \times 3$.
+12. Simplify: $\dfrac{30}{6} + 7^2 \times 3$.
 <br><br><br><br><br><br><br><br><br>
 
-14. Simplify: $[(12+3)\div 5] \times (3-9)$.
+13. Simplify: $[(12+3)\div 5] \times (3-9)$.
 <br><br><br><br><br><br><br><br>
