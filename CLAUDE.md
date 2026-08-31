@@ -61,6 +61,10 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Answer keys are authored separately in `assessments/keys/<Name>.md` so the
   quiz sources stay exactly as written; a key file is optional
 - Self-contained: no JS, no CDN. Math is MathML, converted by pandoc
+- **Work space is measured, not trusted.** Sources mark out room three ways
+  (`<br>` runs, `\vspace`, raw `{=latex}`) and some not at all, so the builder
+  tops every question up: 3cm to work in, 0.8cm if it is answered on a rule in
+  its own text, none for a figure or a question stem introducing its parts
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
   `resources:` but nothing links to them and they are not in the search index.
   URLs are `/assessments/Unit_X/<Name>.html`

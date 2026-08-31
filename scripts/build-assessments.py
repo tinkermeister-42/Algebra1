@@ -85,11 +85,11 @@ def prepare(text):
     text = re.sub(r"```\{=latex\}(.*?)```", latex_block, text, flags=re.S)
     text = re.sub(r"\\vspace\{([\d.]+)cm\}", lambda m: space(float(m.group(1))), text)
 
-    # runs of <br> - four or more means "work here", not a line break
+    # runs of <br> - in these sources even a doubled break after a question
+    # means "room to work", not a line break
     def brs(m):
-        n = m.group(0).lower().count("<br")
-        return space(n * 0.55) if n >= 3 else m.group(0)
-    text = re.sub(r"(?:\s*<br\s*/?>){3,}", brs, text)
+        return space(m.group(0).lower().count("<br") * 0.6)
+    text = re.sub(r"(?:\s*<br\s*/?>){2,}", brs, text)
 
     # the sources' own page breaks
     text = text.replace('<div style="page-break-after: always;"></div>',
@@ -103,6 +103,48 @@ def prepare(text):
 
 def space(cm):
     return '\n<div class="space" style="height:%.2fcm"></div>\n' % max(cm, 0.4)
+
+
+# What a question needs underneath it if the source did not say.  Some sources
+# mark out room and some leave it entirely to the page, so the room is measured
+# after conversion and topped up rather than trusted.
+WORK_CM = 3.0        # anything you have to work out
+BLANK_CM = 0.8       # a question answered on a rule in its own text
+SPACE_RE = re.compile(r'height:([\d.]+)cm')
+# a question starts at a list item or at a bold "12." at the head of a paragraph
+QUESTION_RE = re.compile(r'<li>|<p><strong>\d+\.')
+
+
+def ensure_room(body):
+    """Top every question up to a workable amount of space.
+
+    A question that is answered on a rule inside its own text needs very
+    little; one that says solve, simplify or explain needs room to show the
+    work; one that already carries a figure needs none."""
+    marks = [m.start() for m in QUESTION_RE.finditer(body)]
+    if not marks:
+        return body
+    out, prev = [body[:marks[0]]], None
+    for i, start in enumerate(marks):
+        end = marks[i + 1] if i + 1 < len(marks) else len(body)
+        chunk = body[start:end]
+        have = sum(float(v) for v in SPACE_RE.findall(chunk))
+        # a stem that only introduces its own a/b/c parts gets nothing: the
+        # room belongs under the parts, not between them and the question
+        opens = len(re.findall(r"<[ou]l[ >]", chunk)) - len(re.findall(r"</[ou]l>", chunk))
+        if opens > 0 or "<img" in chunk or "<table" in chunk:
+            want = 0.0
+        elif re.search(r"_{3,}", chunk):
+            want = BLANK_CM
+        else:
+            want = WORK_CM
+        if have < want:
+            pad = space(want - have)
+            # inside the list item, not after it
+            j = chunk.rfind("</li>")
+            chunk = chunk[:j] + pad + chunk[j:] if j != -1 else chunk + pad
+        out.append(chunk)
+    return "".join(out)
 
 
 def meta(path, text):
@@ -125,6 +167,7 @@ def build(path, key_md=None):
     body = text.split("\n", 1)[1] if text.startswith("#") else text
     body = pandoc(prepare(strip_name_line(body)))
     body = re.sub(r"^\s*<hr\s*/?>\s*", "", body)   # the masthead already rules off
+    body = ensure_room(body)
 
     tag = ""
     if key_md is not None:
