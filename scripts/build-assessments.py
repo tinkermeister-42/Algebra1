@@ -124,6 +124,7 @@ def build(path, key_md=None):
     heading, unit = meta(path, text)
     body = text.split("\n", 1)[1] if text.startswith("#") else text
     body = pandoc(prepare(strip_name_line(body)))
+    body = re.sub(r"^\s*<hr\s*/?>\s*", "", body)   # the masthead already rules off
 
     tag = ""
     if key_md is not None:
@@ -206,17 +207,23 @@ def write_index(built):
     # older exports of assessments that now build to HTML, and they predate
     # every correction made since - listing them would hand out stale papers.
     have = {n.lower() for _, n, _ in built}
-    pdfs = [f for f in sorted(glob.glob(os.path.join(SRC, "Unit_*", "*.pdf")))
-            if os.path.splitext(os.path.basename(f))[0].lower() not in have]
+    pdfs = []
+    for f in sorted(glob.glob(os.path.join(SRC, "Unit_*", "*.pdf"))):
+        if os.path.splitext(os.path.basename(f))[0].lower() in have:
+            continue
+        unit = re.search(r"Unit_(\d)", f).group(1)
+        dest = os.path.join(OUT, "Unit_%s" % unit, os.path.basename(f))
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        shutil.copyfile(f, dest)
+        pdfs.append((unit, os.path.basename(f)))
     if pdfs:
         body.append("  <h2>PDF only</h2>")
         body.append("  <p class=\"note\">These exist only as PDF, so there is no "
                     "HTML version and no key.</p>")
         body.append("  <table class=\"idx\">")
-        for f in pdfs:
-            rel = os.path.relpath(f, ROOT)
-            body.append('    <tr><td><a href="../%s">%s</a></td><td class="k">&mdash;</td></tr>'
-                        % (rel, os.path.basename(f)))
+        for unit, base in pdfs:
+            body.append('    <tr><td><a href="Unit_%s/%s">%s</a></td>'
+                        '<td class="k">&mdash;</td></tr>' % (unit, base, base))
         body.append("  </table>")
 
     out = os.path.join(OUT, "index.html")

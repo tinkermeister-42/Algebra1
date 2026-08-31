@@ -15,8 +15,10 @@ resources:
   - assessments/Unit_*/*.html
   - assessments/Unit_*/images/*
   - assessments/assets/*
-  # the assessments that exist only as PDF, exposed at the same kind of URL
-  - chapters/Assessments/Unit_*/*.pdf
+  # only the assessments that exist ONLY as PDF; the builder copies those in.
+  # The teacher's older PDF exports of everything else are not served - the
+  # HTML prints, and those exports predate every correction since.
+  - assessments/Unit_*/*.pdf
 
 extensions:
   - glossary

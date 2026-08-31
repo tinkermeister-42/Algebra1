@@ -66,8 +66,9 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   URLs are `/assessments/Unit_X/<Name>.html`
 - `/assessments/index.html` lists everything &mdash; also unlisted, a bookmark
   for the teacher. Built by the same script; a partial build leaves it alone
-- Assessments that exist only as PDF are exposed at
-  `/chapters/Assessments/Unit_X/<Name>.pdf`
+- Assessments that exist **only** as PDF are copied to
+  `/assessments/Unit_X/<Name>.pdf`. The teacher's older PDF exports of the
+  rest are not served: the HTML prints, and those exports are stale
 
 ## Widgets
 - Embed: `{{< include /assets/Unit_X/widget.html >}}`
