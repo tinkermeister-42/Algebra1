@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Assessments — shared print stylesheet
+   Deliberately the same furniture as guided-notes.css: same page size, same
+   serif, same masthead, same "structure comes from borders, not fills" rule
+   so a quiz still reads when a browser prints without background graphics.
+   ========================================================================== */
+
+@page { size: letter; margin: 0.5in; }
+* { box-sizing: border-box; }
+
+:root {
+  --ink:   #111;
+  --key:   #c0192b;
+  --rule:  #9aa3ab;
+  --faint: #dde2e7;
+  --tint:  #f2f5f8;
+  --accent:#2c5f8a;
+}
+
+body {
+  margin: 0;
+  background: #e9ecef;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11.5pt;
+  line-height: 1.45;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.sheet {
+  width: 7.5in;
+  margin: .35in auto;
+  padding: .3in .3in .35in;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.18);
+}
+
+/* ---------- masthead ---------- */
+.masthead { border-bottom: 2.5px solid var(--ink); padding-bottom: 6px; margin-bottom: 12px; }
+.masthead h1 { font-size: 16pt; margin: 0 0 2px; }
+.masthead .sub { font-size: 9.5pt; color: #444; font-style: italic; }
+.idline { display: flex; gap: 14px; font-size: 10pt; margin-top: 10px; }
+.idline span { flex: 1; border-bottom: 1px solid var(--ink); padding-bottom: 1px; }
+.idline span.small { flex: 0 0 1.3in; }
+
+/* ---------- section headings ---------- */
+h2 {
+  font-size: 11.5pt; margin: 16px 0 8px; padding: 3px 0 3px 9px;
+  border-left: 5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+}
+h3 { font-size: 11pt; margin: 14px 0 6px; color: var(--accent); }
+
+/* ---------- questions ---------- */
+ol { margin: 6px 0 0; padding-left: 1.9em; }
+ol > li { margin: 0 0 10px; }
+ol > li::marker { font-weight: bold; }
+p { margin: 6px 0; }
+hr { border: 0; border-top: 1px solid var(--faint); margin: 14px 0; }
+
+/* Work space.  The sources ask for it three different ways - runs of <br>,
+   LaTeX \vspace, and raw {=latex} blocks - and all three land here. */
+.space { display: block; }
+.rule  { border-bottom: 1px solid var(--faint); margin: 0 0 10px; }
+
+/* ---------- tables ---------- */
+table { border-collapse: collapse; margin: 8px 0; font-size: 11pt; }
+th, td { border: 1px solid var(--ink); padding: 4px 12px; text-align: center; }
+th { background: var(--tint); }
+
+/* ---------- figures ---------- */
+img { max-width: 100%; height: auto; }
+figure { margin: 8px 0; text-align: center; }
+
+/* two-up blocks (a table beside a blank grid) */
+.columns { display: flex; gap: 22px; align-items: flex-start; }
+.columns > * { flex: 1; }
+
+/* ---------- answer key ---------- */
+.answer-key { margin-top: 18px; border-top: 2.5px solid var(--key); padding-top: 10px; }
+.answer-key h2 {
+  color: var(--key); border-left-color: var(--key); border-bottom-color: var(--key);
+}
+.answer-key ol > li { margin-bottom: 4px; }
+.answer-key, .answer-key p, .answer-key li { color: var(--key); }
+.keytag {
+  display: inline-block; border: 1.5px solid var(--key); color: var(--key);
+  font-family: system-ui, sans-serif; font-size: 8.5pt; font-weight: 700;
+  letter-spacing: .06em; padding: 1px 7px; border-radius: 3px; vertical-align: 3px;
+}
+
+/* keep a question and its work space together */
+ol > li, table, figure, .answer-key { break-inside: avoid; page-break-inside: avoid; }
+.pagebreak { break-before: page; page-break-before: always; }
+
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .sheet { width: auto; margin: 0; padding: 0; box-shadow: none; }
+}

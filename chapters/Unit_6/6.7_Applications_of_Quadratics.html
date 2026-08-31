@@ -724,7 +724,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-zeros" class="glossary-link" data-term="zeros" data-original-href="#glossary-zeros" data-slug="zeros">zeros</a>, <a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation" data-slug="quadratic-equation">quadratic equation</a>, <a href="../../glossary.html#glossary-quadratic-model" class="glossary-link" data-term="quadratic model" data-original-href="#glossary-quadratic-model" data-slug="quadratic-model">quadratic model</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-term="solution" data-original-href="#glossary-solution" data-slug="solution">solution</a></p>
+<p><a href="../../glossary.html#glossary-zeros" class="glossary-link" data-slug="zeros" data-term="zeros" data-original-href="#glossary-zeros">zeros</a>, <a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-slug="quadratic-equation" data-term="quadratic equation" data-original-href="#glossary-quadratic-equation">quadratic equation</a>, <a href="../../glossary.html#glossary-quadratic-model" class="glossary-link" data-slug="quadratic-model" data-term="quadratic model" data-original-href="#glossary-quadratic-model">quadratic model</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-slug="solution" data-term="solution" data-original-href="#glossary-solution">solution</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_6/6.7_Applications_of_Quadratics.html" target="_blank">Printable Guided Notes for this lesson</a> — fill-in notes to print and write on.</p>
@@ -826,34 +826,39 @@ h(t) = at^2 + bt + c
 <p><strong>Example 1</strong></p>
 <p>A ball is thrown upward from a height of <span class="math inline">\(5\)</span> feet. Its height after <span class="math inline">\(t\)</span> seconds is given by</p>
 <p><span class="math display">\[
-h(t) = -16t^2 + 20t + 5
+h(t) = -16t^2 + 40t + 5
 \]</span></p>
 <ol type="1">
 <li>When does the ball hit the ground?</li>
 <li>What is the maximum height of the ball?</li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Unit_6/Lesson_7/thrown_ball.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="520"></p>
+</figure>
+</div>
 <hr>
 <p><strong>Step 1 : Find when it hits the ground</strong></p>
 <p>The ball hits the ground when its height is zero. If we set <span class="math inline">\(h(t) = 0\)</span>, we can solve for <span class="math inline">\(t\)</span> to find the time the ball hits the ground.</p>
 <p><span class="math display">\[
--16t^2 + 20t + 5 = 0
+-16t^2 + 40t + 5 = 0
 \]</span></p>
 <p>Use the quadratic formula.</p>
 <p><span class="math display">\[
-t = \frac{-20 \pm \sqrt{20^2 - 4(-16)(5)}}{2(-16)}
+t = \frac{-40 \pm \sqrt{40^2 - 4(-16)(5)}}{2(-16)}
 \]</span></p>
 <p><span class="math display">\[
-t = \frac{-20 \pm \sqrt{720}}{-32}
+t = \frac{-40 \pm \sqrt{1920}}{-32}
 \]</span></p>
 <p><span class="math display">\[
-t = \frac{-20 \pm 12\sqrt{5}}{-32}
+t = \frac{-40 \pm 8\sqrt{30}}{-32}
 \]</span></p>
 <p>There are two solutions, one positive and one negative. In this situation, a negative time would mean the ball hit the ground in the past. That doesn’t make sense so we ignore that solution.</p>
 <p>The postive time:</p>
 <p><span class="math display">\[
-t = \frac{-20 - 12\sqrt{5}}{-32} = \frac{5 + 3\sqrt{5}}{8} \approx 1.46
+t = \frac{-40 - 8\sqrt{30}}{-32} = \frac{5 + \sqrt{30}}{4} \approx 2.62
 \]</span></p>
-<p>So the ball hits the ground after about <span class="math inline">\(1.46\)</span> seconds.</p>
+<p>So the ball hits the ground after about <span class="math inline">\(2.62\)</span> seconds.</p>
 <div class="gotcha" title="Interpreting solutions">
 <p>Quadratic equations often produce two solutions. In applications, you must decide which solutions make sense in context. Negative time, negative length, or negative area usually do not apply.</p>
 </div>
@@ -861,19 +866,19 @@ t = \frac{-20 - 12\sqrt{5}}{-32} = \frac{5 + 3\sqrt{5}}{8} \approx 1.46
 <p><strong>Step 2 : Find the maximum height</strong></p>
 <p>The maximum happens at the vertex time:</p>
 <p><span class="math display">\[
-t = -\frac{b}{2a} = -\frac{20}{2(-16)} = \frac{5}{8} = 0.625
+t = -\frac{b}{2a} = -\frac{40}{2(-16)} = \frac{5}{4} = 1.25
 \]</span></p>
 <p>Now find the height:</p>
 <p><span class="math display">\[
-h\left(\frac{5}{8}\right) = -16\left(\frac{25}{64}\right) + 20\left(\frac{5}{8}\right) + 5
+h\left(\frac{5}{4}\right) = -16\left(\frac{25}{16}\right) + 40\left(\frac{5}{4}\right) + 5
 \]</span></p>
 <p><span class="math display">\[
-h\left(\frac{5}{8}\right) = -\frac{25}{4} + \frac{25}{2} + 5
+h\left(\frac{5}{4}\right) = -25 + 50 + 5
 \]</span></p>
 <p><span class="math display">\[
-h\left(\frac{5}{8}\right) = \frac{45}{4} = 11.25
+h\left(\frac{5}{4}\right) = 30
 \]</span></p>
-<p>Maximum height is <span class="math inline">\(11.25\)</span> feet.</p>
+<p>Maximum height is <span class="math inline">\(30\)</span> feet.</p>
 <hr>
 <div class="you-try-m" title="When does the ball hit the ground?">
 <p>A ball is thrown from a height of <span class="math inline">\(6\)</span> feet with equation <span class="math inline">\(h(t) = -16t^2 + 24t + 6\)</span>. When does it hit the ground?</p>
