@@ -2,7 +2,7 @@
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
-## 1.4 – Fractions, Decimals & Percents
+## 1.6 – Fractions, Decimals & Percents
 
 **1. I can convert between fractions, decimals, and percents**
 
@@ -37,7 +37,7 @@ Which store gives the **biggest discount**? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
 
-## 1.5 – Multiply, Divide & Compare Fractions
+## 1.4 – Multiply, Divide & Compare Fractions
 
 **4. I can multiply fractions and mixed numbers**
 
@@ -58,7 +58,7 @@ b. $9\div \tfrac{4}{7} =$ \_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
 
-## 1.6 – Solving Problems with Fractions, Decimals & Percents
+## 1.7 – Solving Problems with Fractions, Decimals & Percents
 
 **6. I can find a part, a whole, or a percent**
 
@@ -84,7 +84,7 @@ Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ cup(s)
 
 <div style="page-break-after: always;"></div>
 
-## 1.7 – Order of Operations (PEMDAS)
+## 1.8 – Order of Operations (PEMDAS)
 
 **9. I follow the correct order of operations (including fractions and negatives)**
 

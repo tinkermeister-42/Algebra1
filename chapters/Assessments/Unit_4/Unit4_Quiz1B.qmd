@@ -87,5 +87,5 @@
 
 **Real-World Problem**
 
-14.  A rental shop charges a flat fee of $12$ plus $3$ dollars per hour for use of a bike.
-    If you paid $39$, how many hours did you rent the bike?
+14.  A rental shop charges a flat fee of $\$12$ plus $\$3$ per hour for use of a bike.
+    If you paid $\$39$, how many hours did you rent the bike?

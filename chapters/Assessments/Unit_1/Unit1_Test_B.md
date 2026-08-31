@@ -19,7 +19,7 @@
 3. Write $0.215$ as a percent **and** as a fraction in simplest form.
 <br><br><br><br><br>
 
-4. A sweater is on sale for $40\%$ off. It originally cost $$\$95$$. What is the new price?
+4. A sweater is on sale for $40\%$ off. It originally cost $\$95$. What is the new price?
 <br><br><br><br><br>
 
 <div style="page-break-after: always;"></div>

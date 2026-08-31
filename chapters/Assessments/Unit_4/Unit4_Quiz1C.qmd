@@ -87,5 +87,5 @@
 
 **Real-World Problem**
 
-14. A moving company charges $50$ plus $15$ dollars per hour of work.
-    If your total bill was $155$, how many hours did the job take?
+14. A moving company charges $\$50$ plus $\$15$ per hour of work.
+    If your total bill was $\$155$, how many hours did the job take?

@@ -87,6 +87,6 @@
 
 **Real-World Problem**
 
-14.   A phone plan costs $20$ plus $5$ dollars per gigabyte of data.
-    If your bill was $65$, how many gigabytes did you use?
+14.   A phone plan costs $\$20$ plus $\$5$ per gigabyte of data.
+    If your bill was $\$65$, how many gigabytes did you use?
 

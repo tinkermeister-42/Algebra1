@@ -38,7 +38,7 @@ d. The variables are x, y and z ______
 
 ## 2.2 – Evaluating Expressions
 
-**4. I can substitute values into expressions and simplify them**
+**3. I can substitute values into expressions and simplify them**
 
 Evaluate the following expressions.
 

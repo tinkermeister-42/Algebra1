@@ -6,7 +6,7 @@
 
 **1. I know how to read and use a number line**
 
-Plot the following numbers on a number line: $–3, –2, 1, 3, 5$.
+Plot the following numbers on a number line: $-3, -2, 1, 3, 5$.
 <br>
 <br>
 <br>
@@ -27,11 +27,11 @@ Write the opposite of each number:
 
 Fill in the blank with \>, \<, or =.
 
-  a. $–6$ \_\_\_ $–2$
+  a. $-6$ \_\_\_ $-2$
 
-  b. $3$ \_\_\_ $–7$
+  b. $3$ \_\_\_ $-7$
 
-  c. $|3|$ \_\_\_ $|–2|$
+  c. $|3|$ \_\_\_ $|-2|$
 
   d. $|4|$ \_\_\_ $|-4|$
 

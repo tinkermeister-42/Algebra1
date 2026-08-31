@@ -8,7 +8,7 @@
 
 **Solve each equation. Show your work.**
 
-1. $s – 15 = 4$ <br><br><br><br><br>
+1. $s - 15 = 4$ <br><br><br><br><br>
 
 2. $-9w = 63$ <br><br><br><br><br>
 
@@ -24,11 +24,11 @@
 
 4. $3k + 4 = 19$ <br><br><br><br><br>
 
-5. $-2m – 7 = 9$ <br><br><br><br><br>
+5. $-2m - 7 = 9$ <br><br><br><br><br>
 
 6. $\dfrac{1}{4}x + 6 = 11$ <br><br><br><br><br>
 
-7. $0.5y – 1.5 = 2.5$ <br><br><br><br><br>
+7. $0.5y - 1.5 = 2.5$ <br><br><br><br><br>
 
 ***
 
@@ -38,11 +38,11 @@
 
 **Simplify and solve each equation.**
 
-8. $6a + 10 – 2a = 22$ <br><br><br><br><br>
+8. $6a + 10 - 2a = 22$ <br><br><br><br><br>
 
-9. $2(3r – 5) - 8r = – 10$ <br><br><br><br><br>
+9. $2(3r - 5) - 8r = - 10$ <br><br><br><br><br>
 
-10. $4(t + 2) – 3t = 9$ <br><br><br><br><br>
+10. $4(t + 2) - 3t = 9$ <br><br><br><br><br>
 
 ***
 

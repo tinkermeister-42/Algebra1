@@ -8,6 +8,14 @@ resources:
   - scripts/*.js
   - guided_notes/Unit_*/*.html
   - guided_notes/assets/*
+  # Quizzes, tests and answer keys.  Copied into the site so the book is
+  # self-contained, but deliberately not linked from any page: they are
+  # reachable only by typing the URL.  Built by scripts/build-assessments.py.
+  - assessments/Unit_*/*.html
+  - assessments/Unit_*/images/*
+  - assessments/assets/*
+  # the assessments that exist only as PDF, exposed at the same kind of URL
+  - chapters/Assessments/Unit_*/*.pdf
 
 extensions:
   - glossary

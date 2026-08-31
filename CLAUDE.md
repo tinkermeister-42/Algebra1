@@ -14,6 +14,7 @@ scripts/             # JS helpers, Lua filters, build scripts
 styles/              # CSS files
 _extensions/         # glossary, headings
 glossary.qmd         # Source → auto-built glossary.json on render
+chapters/Assessments/ # Quiz & test sources; built to assessments/ (unlisted)
 _quarto.yml          # Quarto config (Flatly theme, MathJax, custom CSS/JS)
 ```
 
@@ -52,6 +53,19 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   answer in a lesson `.qmd` means editing `guided_notes/src/#.#.html` to match and
   rebuilding — the handout restates the same problems, so the two drift silently.
 - See `guided_notes/README.md` for the shorthand tokens and building blocks
+
+## Assessments
+- Sources are the teacher's markdown in `chapters/Assessments/Unit_X/` (`.md`, some `.qmd`)
+- **Build:** `python3 scripts/build-assessments.py [name...]` &rarr;
+  `assessments/Unit_X/<Name>.html` and `<Name>_KEY.html`
+- Answer keys are authored separately in `assessments/keys/<Name>.md` so the
+  quiz sources stay exactly as written; a key file is optional
+- Self-contained: no JS, no CDN. Math is MathML, converted by pandoc
+- **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
+  `resources:` but nothing links to them and they are not in the search index.
+  URLs are `/assessments/Unit_X/<Name>.html`
+- Assessments that exist only as PDF are exposed at
+  `/chapters/Assessments/Unit_X/<Name>.pdf`
 
 ## Widgets
 - Embed: `{{< include /assets/Unit_X/widget.html >}}`
