@@ -1,10 +1,34 @@
-# Algebra 1 – Q1.4\_1.7 A
+# Algebra 1 – Q1.5\_1.8 A
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
+## 1.5 – Adding & Subtracting Fractions
+
+**1. I can add and subtract fractions with like and unlike denominators**
+
+Write each answer in simplest form.
+
+a. $\tfrac{3}{8} + \tfrac{1}{8} =$ \_\_\_\_\_\_
+
+b. $\tfrac{3}{4} - \tfrac{1}{8} =$ \_\_\_\_\_\_
+
+c. $\tfrac{2}{3} + \tfrac{1}{5} =$ \_\_\_\_\_\_
+<br><br>
+
+**2. I can add and subtract mixed numbers**
+
+Write each answer as a mixed number in simplest form.
+
+a. $2\tfrac{1}{4} + 1\tfrac{1}{2} =$ \_\_\_\_\_\_
+
+b. $5\tfrac{1}{3} - 2\tfrac{2}{3} =$ \_\_\_\_\_\_
+<br><br>
+
+<div style="page-break-after: always;"></div>
+
 ## 1.6 – Fractions, Decimals & Percents
 
-**1. I can convert between fractions, decimals, and percents**
+**3. I can convert between fractions, decimals, and percents**
 
 Convert as directed. Write answers in simplest form.
 
@@ -18,7 +42,7 @@ d. $1.25$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 <br><br>
 
-**2. I can decide if a fraction’s decimal ends or repeats (and write it).**
+**4. I can decide if a fraction’s decimal ends or repeats (and write it).**
 
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
@@ -30,7 +54,7 @@ c. $\tfrac{6}{20}$ — decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
 
-**3. I can compare and order fractions, decimals, and percents in real-world situations**
+**5. I can compare and order fractions, decimals, and percents in real-world situations**
 
 Three stores are having a sale on coats with an original price of $\$250$. Here are the deals they offer.
 
@@ -40,30 +64,6 @@ Three stores are having a sale on coats with an original price of $\$250$. Here 
 
 Which store gives the **biggest discount**? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-
-<div style="page-break-after: always;"></div>
-
-## 1.4 – Multiply, Divide & Compare Fractions
-
-**4. I can multiply fractions and mixed numbers**
-
-Simplify your answers.
-
-a. $\tfrac{3}{5}\times 10 =$ \_\_\_\_\_\_
-
-b. $\tfrac{2}{3}\times \tfrac{3}{4} =$ \_\_\_\_\_\_
-
-c. $1\tfrac{1}{2}\times 2\tfrac{2}{3} =$ \_\_\_\_\_\_
-
-<br><br>
-
-**5. I can divide fractions by using reciprocals**
-
-Find the following quotients.
-
-a. $\tfrac{3}{4}\div \tfrac{2}{5} =$ \_\_\_\_\_\_
-
-b. $5\div \tfrac{2}{3} =$ \_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
 

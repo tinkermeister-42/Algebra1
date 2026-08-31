@@ -1,8 +1,8 @@
-1. a. $0.4$, $40\%$  b. $\tfrac{3}{8}$, $37.5\%$  c. $\tfrac{3}{25}$, $0.12$  d. $\tfrac{12}{5}$, $240\%$
-2. a. $0.4375$  b. $0.\overline{72}$  c. $0.8\overline{3}$
-3. **Store C.** A takes off $\$20$; B takes off $\$18$; C takes off $\$30$.
-4. a. $6$  b. $\tfrac{1}{2}$  c. $\tfrac{35}{8} = 4\tfrac{3}{8}$
-5. a. $\tfrac{6}{5} = 1\tfrac{1}{5}$  b. $\tfrac{63}{4} = 15\tfrac{3}{4}$
+1. a. $\tfrac{1}{2}$  b. $\tfrac{5}{8}$  c. $\tfrac{11}{14}$
+2. a. $5\tfrac{1}{2}$  b. $3\tfrac{1}{2}$ &mdash; borrow: $6\tfrac{1}{4} = 5\tfrac{5}{4}$
+3. a. $0.4$, $40\%$  b. $\tfrac{3}{8}$, $37.5\%$  c. $\tfrac{3}{25}$, $0.12$  d. $\tfrac{12}{5}$, $240\%$
+4. a. $0.4375$  b. $0.\overline{72}$  c. $0.8\overline{3}$
+5. **Store C.** A takes off $\$20$; B takes off $\$18$; C takes off $\$30$.
 6. a. $130$  b. $70$  c. $62.5\%$
 7. a. $\$74.12$ ($\$85 \to \$68$ after the discount, then $9\%$ tax)  b. $130$ students
 8. $\tfrac{21}{20} = 1.05$ cups ($1\tfrac{1}{2}\times 0.7$)

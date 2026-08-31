@@ -8,3 +8,5 @@
 8. $24 = 2^3\cdot 3$, $36 = 2^2\cdot 3^2$, so $\text{GCF} = 2^2\cdot 3 = 12$
 9. $\tfrac{42}{56} = \tfrac{3}{4}$ (divide by the GCF, $14$)
 10. a. $8$ packs (the GCF of $32$ and $24$)  b. $4$ pencils and $3$ erasers in each
+11. a. $6$  b. $\tfrac{1}{2}$  c. $4$
+12. a. $\tfrac{15}{8} = 1\tfrac{7}{8}$  b. $\tfrac{15}{2} = 7\tfrac{1}{2}$

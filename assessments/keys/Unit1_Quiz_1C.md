@@ -8,3 +8,5 @@
 8. $96 = 2^5\cdot 3$, $60 = 2^2\cdot 3\cdot 5$, so $\text{GCF} = 2^2\cdot 3 = 12$
 9. $\tfrac{36}{54} = \tfrac{2}{3}$ (divide by the GCF, $18$)
 10. a. $8$ packs (the GCF of $80$ and $24$)  b. $10$ pencils and $3$ erasers in each
+11. a. $6$  b. $\tfrac{1}{2}$  c. $\tfrac{35}{8} = 4\tfrac{3}{8}$
+12. a. $\tfrac{6}{5} = 1\tfrac{1}{5}$  b. $\tfrac{63}{4} = 15\tfrac{3}{4}$

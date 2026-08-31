@@ -8,3 +8,5 @@
 8. $42 = 2\cdot 3\cdot 7$, $70 = 2\cdot 5\cdot 7$, so $\text{GCF} = 2\cdot 7 = 14$
 9. $\tfrac{48}{60} = \tfrac{4}{5}$ (divide by the GCF, $12$)
 10. a. $12$ packs (the GCF of $60$ and $24$)  b. $5$ pencils and $2$ erasers in each
+11. a. $8$  b. $\tfrac{3}{4}$  c. $\tfrac{15}{4} = 3\tfrac{3}{4}$
+12. a. $\tfrac{20}{9} = 2\tfrac{2}{9}$  b. $\tfrac{35}{3} = 11\tfrac{2}{3}$

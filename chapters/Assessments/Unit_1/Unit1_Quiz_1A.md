@@ -1,4 +1,4 @@
-# Algebra 1 - Q1.1_1.3 A
+# Algebra 1 - Q1.1_1.4 A
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
@@ -147,3 +147,27 @@ b. How many pencils and erasers will be in each pack?
 <br>
 <br>
 <br>
+
+------------------------------------------------------------------------
+
+## 1.4 – Multiply, Divide & Compare Fractions
+
+**11. I can multiply fractions and mixed numbers**
+
+Simplify your answers.
+
+a. $\tfrac{3}{5}\times 10 =$ \_\_\_\_\_\_
+
+b. $\tfrac{2}{3}\times \tfrac{3}{4} =$ \_\_\_\_\_\_
+
+c. $1\tfrac{1}{2}\times 2\tfrac{2}{3} =$ \_\_\_\_\_\_
+
+<br><br>
+
+**12. I can divide fractions by using reciprocals**
+
+Find the following quotients.
+
+a. $\tfrac{3}{4}\div \tfrac{2}{5} =$ \_\_\_\_\_\_
+
+b. $5\div \tfrac{2}{3} =$ \_\_\_\_\_\_

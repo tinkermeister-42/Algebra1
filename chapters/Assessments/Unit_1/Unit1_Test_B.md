@@ -40,7 +40,7 @@
 <div style="page-break-after: always;"></div>
 
 
-### Multiply & Divide Fractions
+### Operations with Fractions
 <br>
 
 Write your answers in **simplest form**.
@@ -52,17 +52,23 @@ Write your answers in **simplest form**.
 9. Divide: $\tfrac{8}{5} \div \tfrac{4}{3}$.
 <br><br><br><br><br><br><br><br><br><br>
 
+10. Add: $\tfrac{3}{5} + \tfrac{1}{2}$.
+<br><br><br><br><br><br><br><br><br><br>
+
+11. Subtract: $5\tfrac{1}{4} - 2\tfrac{5}{8}$. Write your answer as a mixed number.
+<br><br><br><br><br><br><br><br><br><br>
+
 <div style="page-break-after: always;"></div>
 
 
 ### Order of Operations
 <br>
 
-10. Simplify: $9 + 3 \times (3 - 11)$.
+12. Simplify: $9 + 3 \times (3 - 11)$.
 <br><br><br><br><br><br><br><br><br>
 
-11. Simplify: $\dfrac{30}{6} + 7^2 \times 3$.
+13. Simplify: $\dfrac{30}{6} + 7^2 \times 3$.
 <br><br><br><br><br><br><br><br><br>
 
-12. Simplify: $[(12+3)\div 5] \times (3-9)$.
+14. Simplify: $[(12+3)\div 5] \times (3-9)$.
 <br><br><br><br><br><br><br><br>
