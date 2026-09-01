@@ -8,6 +8,10 @@ resources:
   - scripts/*.js
   - guided_notes/Unit_*/*.html
   - guided_notes/assets/*
+  # Figures used only by a handout.  Quarto copies images/ files it finds
+  # referenced from a rendered .qmd; a figure that only ever appears in a
+  # handout is invisible to it, so the blank variants have to be named here.
+  - images/Unit_*/Lesson_*/*_blank.*
   # Quizzes, tests and answer keys.  Copied into the site so the book is
   # self-contained, but deliberately not linked from any page: they are
   # reachable only by typing the URL.  Built by scripts/build-assessments.py.

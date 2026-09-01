@@ -28,6 +28,11 @@ quarto render --to html
 
 [[ -d "$BOOK_DIR" ]] || { echo "'$BOOK_DIR' not found after render."; exit 1; }
 
+# The handouts and assessments are static resources, so a figure only they use
+# is copied only if _quarto.yml names it.  Catch that here rather than on the
+# live site.
+python3 scripts/check-site-assets.py
+
 # ---------- Temp worktree ----------
 git worktree prune || true
 TEMP_WORKTREE_DIR="$(mktemp -d -t gh-pages-XXXXXX)"
