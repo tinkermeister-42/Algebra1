@@ -1,0 +1,94 @@
+# Algebra 1 - Unit 4 Test B
+
+**Name: ____________________________**
+
+**Evaluate each function. Show your work.**
+
+1. $y = 3x - 5$ when $x = 4$
+<br><br><br><br><br><br>
+
+2. $f(x) = -2x + 7$ when $x = -3$
+<br><br><br><br><br><br>
+
+**Find the slope. Show your work.**
+
+3. $(1, 4)$ and $(5, 16)$
+<br><br><br><br><br><br><br><br>
+
+**Identify the slope type (positive, negative, zero, or undefined). No work needed.**
+
+4. $(3, -4)$ and $(9, -4)$ \_\_\_\_\_\_\_\_\_\_
+
+5. $(0, 5)$ and $(2, 1)$ \_\_\_\_\_\_\_\_\_\_
+
+<div style="page-break-after: always;"></div>
+
+**Answer each question. Show your work.**
+
+6. Find the $x$-intercept and $y$-intercept of $y = 3x - 9$.
+<br><br><br><br><br><br><br><br>
+
+**Write an equation for each line. Show your work.**
+
+7. Slope $m = -2$, through $(0, 5)$
+<br><br><br><br><br><br><br><br>
+
+8. Through $(0, -3)$ and $(4, 5)$
+<br><br><br><br><br><br><br><br>
+
+<div style="page-break-after: always;"></div>
+
+**Solve each system. Show your work.**
+
+9. $\begin{cases} y = 3x + 2 \\ y = -x + 10 \end{cases}$
+<br><br><br><br><br><br><br><br><br><br>
+
+10. $\begin{cases} x + y = 10 \\ x - y = 4 \end{cases}$
+<br><br><br><br><br><br><br><br><br><br>
+
+<div style="page-break-after: always;"></div>
+
+**Real-World Problems**
+
+11. A laptop is worth $\$900$ when purchased and loses $\$150$ per year. Write an
+    equation for its value $y$ after $x$ years. What do the slope and the
+    $y$-intercept each mean in this situation?
+<br><br><br><br><br><br><br><br>
+
+12. Using your equation from problem 11, what is the laptop worth after 3 years?
+<br><br><br><br><br><br>
+
+<div style="page-break-after: always;"></div>
+
+**Complete the table of values and graph the line.**
+
+13. $y = 2x - 3$
+
+:::{layout-ncol=2}
+
+:::{#a-table}
+| $x$ | $y$ |
+| :-: | :-: |
+| $-2$ | |
+| $0$ | |
+| $2$ | |
+| $4$ | |
+:::
+
+:::{#a-graph}
+![](images/Blank.png){width="300px" fig-align="center"}
+:::
+
+:::
+
+<div style="page-break-after: always;"></div>
+
+**Graph the solution region.**
+
+14. You are selling tickets for $\$8$ each and snacks for $\$2$ each. You need to earn
+    at least $\$40$. Write an inequality for this situation.
+<br><br><br><br><br><br><br><br>
+
+15. Graph the solution region from problem 14. Label your axes.
+
+![](images/Blank.png){width="400px" fig-align="center"}
