@@ -70,6 +70,10 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   URLs are `/assessments/Unit_X/<Name>.html`
 - `/assessments/index.html` lists everything &mdash; also unlisted, a bookmark
   for the teacher. Built by the same script; a partial build leaves it alone
+- **Assessment rhythm:** one quiz about 3-4 lessons into a unit, then a test
+  over the whole unit. A second quiz would sit back to back with the test, so
+  don't add one (Unit 1 is the exception: eight lessons, two quizzes)
+- Every quiz has a matching `*_Quiz_*_Review` at 2-3x the problems
 - Assessments that exist **only** as PDF are copied to
   `/assessments/Unit_X/<Name>.pdf`. The teacher's older PDF exports of the
   rest are not served: the HTML prints, and those exports are stale
