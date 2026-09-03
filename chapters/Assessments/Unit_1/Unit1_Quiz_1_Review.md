@@ -60,20 +60,26 @@ Fill in the blank with \>, \<, or =.
 
   j. $|0|$ \_\_\_ $0$
 
-**4. I can add and subtract integers on a number line**
+**4. I can rewrite a subtraction as an addition and find the value**
 
-Draw a number line that shows each.
+Rewrite each subtraction as an addition, then find the value.
 
-  a. $-4 + 6 = 2$
+  a. $-5 - 6 =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  b. $4 - 9 =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  c. $-2 - (-7) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  d. $8 - (-3) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  e. $-10 - (-4) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  f. $-1 + (-6) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+  g. Write a money story for $-3 - (-9)$.
 <br><br><br>
 
-  b. $3 - 7 = -4$
-<br><br><br>
-
-  c. $-2 - 5 = -7$
-<br><br><br>
-
-  d. $-8 + 3 = -5$
+  h. A student says $6 - (-2) = 4$. Explain the mistake and give the right answer.
 <br><br><br>
 
 <div style="page-break-after: always;"></div>

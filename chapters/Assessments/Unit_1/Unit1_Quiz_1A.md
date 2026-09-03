@@ -36,18 +36,16 @@ Fill in the blank with \>, \<, or =.
   d. $|5|$ \_\_\_ $-3$
 
 
-**4. I can add and subtract integers on a number line**
+**4. I can rewrite a subtraction as an addition and find the value**
 
-a. Draw a number line that shows $-2 + 5 = 3$.
-<br>
-<br>
-<br>
+Rewrite each subtraction as an addition, then find the value.
 
-b. Draw a number line that shows $6 - 2 = 4$.
+a. $-4 - 7 =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
 
-<br>
-<br>
-<br>
+b. $3 - (-8) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
+
+c. Explain, using money, why subtracting a negative makes the answer bigger.
+<br><br><br>
 
 ***
 

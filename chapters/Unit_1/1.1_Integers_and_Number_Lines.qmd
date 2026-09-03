@@ -166,44 +166,104 @@ They can disagree. Here $-7 < 2$, but $|-7| > |2|$:
 
 ***
 
-### 1.1.5 - Number Lines and Arithmetic
+### 1.1.5 - Adding and Subtracting Negatives
 
-We can also use the number line to model **adding and subtracting** integers.
+Money is the easiest way to think about a negative number. A positive number is
+money you **have**. A negative number is money you **owe**.
 
-* To add a {{< glink positive >}} number, move **right**
-* To add a {{< glink negative >}} number, move **left**
+* $+6$ &mdash; six dollars in your pocket
+* $-6$ &mdash; a six dollar debt
 
+Adding is what happens when something is **given** to you. Subtracting is what
+happens when something is **taken away**.
 
-Examples:
+***
 
-1. Addition: $-2 + 6 = 4$
+**Adding**
+
+Adding a positive makes you richer. Adding a negative &mdash; a debt &mdash;
+makes you poorer.
+
+$$
+-2 + 6 = 4
+$$
+
+You are $\$2$ in debt. Someone pays you $\$6$. The debt is cleared and you have
+$\$4$ left over.
+
 ![](/images/Unit_1/Lesson_1/add_6_to_neg2.png)
 
-:::{.real-world}
-Imagine that you are $\$2$ in debt. If someone pays you $\$6$ you can pay off the debt and have $\$4$ left over.
+On the number line, adding $6$ moves you six steps to the right, from $-2$ to $4$.
+
+***
+
+**Subtracting**
+
+Here is the move that makes all of this easier:
+
+:::{.remember}
+**Subtracting is the same as adding the opposite.**
+
+$$
+a - b = a + (-b)
+$$
 :::
 
-2. Adding a negative: $150 + (-5) = 145$
-![](/images/Unit_1/Lesson_1/add_neg5_to_150.png)
+You met {{< glink "opposite" >}}s back in 1.1.2. This is where they earn their keep.
+Instead of two operations with four separate rules to remember, there is only
+**one** operation &mdash; addition. Every subtraction gets rewritten first.
 
-:::{.real-world}
-You have $\$150$ in the bank. The bank adds a fee for being under their $\$200$ minimum balance. You now have $\$145$.
+$$
+400 - 450 = 400 + (-450) = -50
+$$
+
+You had $\$400$ and spent $\$450$. You are $\$50$ overdrawn.
+
+***
+
+**Subtracting a negative**
+
+This is the one that feels strange, and the money story settles it.
+
+$$
+201 - (-5) = 201 + 5 = 206
+$$
+
+You had $\$201$. The bank had charged you a $\$5$ fee &mdash; a $-5$ sitting in
+your account. Then they admitted the mistake and **took the fee away**.
+
+Taking away a debt leaves you better off. That is the whole reason subtracting a
+negative makes the answer **bigger**.
+
+:::{.gotcha title="Two signs in a row"}
+When two signs end up next to each other, rewrite **before** you compute.
+
+* $7 - (-3)$ becomes $7 + 3 = 10$
+* $7 + (-3)$ becomes $7 - 3 = 4$
+
+Rewriting first is what keeps these two apart. Do not try to do it in your head.
 :::
 
-3. Subtraction: $400 - 450 = -50$ 
-![](/images/Unit_1/Lesson_1/subtract_450_from_400.png)
+***
 
-:::{.real-world}
-If you only have $\$400$ but spend $\$450$ on a credit card, you are now $\$50$ in debt.
-:::
+**More examples**
 
-4. Subtracting a negative: $201 - (-5) = 206$
-![](/images/Unit_1/Lesson_1/subtract_neg5_from_201.png)
+Rewrite each as an addition, then find the value.
 
-:::{.think title="What real-world scenario could $201 - (-5) = 206$ represent?"}
+| | Rewrite | Value | What it means |
+|---|---|---|---|
+| $5 - 8$ | $5 + (-8)$ | $-3$ | had $\$5$, spent $\$8$, now $\$3$ overdrawn |
+| $-4 - 3$ | $-4 + (-3)$ | $-7$ | owed $\$4$, borrowed $\$3$ more |
+| $-6 - (-10)$ | $-6 + 10$ | $4$ | owed $\$6$, a $\$10$ debt was cancelled |
+| $-9 + 4$ | already an addition | $-5$ | owed $\$9$, paid back $\$4$ |
 
-> Example:
-> The bank made a mistake, you had $\$201$ in your account so they took off the $\$5$ fee. Now you have $\$206$.
+:::{.think title="Why does the number line stop helping here?"}
+
+For $-2 + 6$ you can count six steps and see the answer appear. For
+$201 - (-5)$ there is nothing to count &mdash; you would have to know the answer
+before you could draw the picture. The number line is good for showing you
+**what a negative number is**; the money story is what explains **what happens
+when you add and subtract them**.
 :::
 
 {{< practice >}}

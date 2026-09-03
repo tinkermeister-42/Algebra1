@@ -1,7 +1,7 @@
 1. Marks in order, evenly spaced, with $0$ labelled: a. $-6, -3, 0, 2, 5$ &nbsp; b. $-8, -5, -1, 1, 4$ &nbsp; c. $-4, -2, 3, 6, 7$
 2. a. $-12$ &nbsp; b. $15$ &nbsp; c. $0$ &nbsp; d. $1$ &nbsp; e. $-40$ &nbsp; f. $7$
 3. a. $>$ &nbsp; b. $>$ &nbsp; c. $=$ &nbsp; d. $<$ &nbsp; e. $<$ &nbsp; f. $>$ &nbsp; g. $>$ &nbsp; h. $>$ &nbsp; i. $<$ &nbsp; j. $=$
-4. a. Start at $-4$, move $6$ right, land on $2$. &nbsp; b. Start at $3$, move $7$ left, land on $-4$. &nbsp; c. Start at $-2$, move $5$ left, land on $-7$. &nbsp; d. Start at $-8$, move $3$ right, land on $-5$.
+4. a. $-5 + (-6) = -11$ &nbsp; b. $4 + (-9) = -5$ &nbsp; c. $-2 + 7 = 5$ &nbsp; d. $8 + 3 = 11$ &nbsp; e. $-10 + 4 = -6$ &nbsp; f. already an addition, $-7$ &nbsp; g. e.g. you owed $\$3$ and a $\$9$ debt was cancelled, leaving you $\$6$ ahead: $-3 + 9 = 6$ &nbsp; h. They subtracted instead of rewriting. $6 - (-2)$ is $6 + 2 = 8$ &mdash; taking away a debt makes the total bigger, not smaller.
 5. a. $1, 2, 4, 7, 14, 28$ &nbsp; b. $1, 3, 5, 9, 15, 45$ &nbsp; c. $1, 2, 5, 10, 25, 50$
 6. a. $7, 14, 21, 28, 35$ &nbsp; b. $9, 18, 27, 36, 45$ &nbsp; c. $12, 24, 36, 48, 60$
 7. a. prime &nbsp; b. composite ($3^3$) &nbsp; c. prime &nbsp; d. composite ($3 \times 13$) &nbsp; e. prime &nbsp; f. composite ($7 \times 13$) &nbsp; g. prime &mdash; the only even prime &nbsp; h. **neither** &mdash; $1$ has just one factor, so it is neither prime nor composite
