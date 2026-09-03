@@ -54,8 +54,8 @@ c. $\tfrac{5}{24}$ — decimal: \_\_\_\_\_\_\_\_
 Three stores are discounting headphones originally priced at **$\$180$**:
 
 * Store A: **$\$60$ off**
-* Store B: **35% off**
-* Store C: **“$\tfrac{1}{2}$ off”**
+* Store B: **40% off**
+* Store C: **“$\tfrac{1}{4}$ off”**
 
 Which store gives the **biggest discount**? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 

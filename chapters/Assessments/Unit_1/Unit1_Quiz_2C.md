@@ -53,7 +53,7 @@ c. $\tfrac{5}{6}$ — decimal: \_\_\_\_\_\_\_\_
 
 Three stores are discounting jackets originally priced at **$\$120$**:
 
-* Store A: **$\$20$ off**
+* Store A: **$\$40$ off**
 * Store B: **15% off**
 * Store C: **“$\tfrac{1}{4}$ off”**
 

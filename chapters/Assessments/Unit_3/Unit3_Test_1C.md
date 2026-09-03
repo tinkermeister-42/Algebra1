@@ -54,7 +54,7 @@
 6. Solve for $r$.
    
    $$
-   7r - 4 = 3r + 12
+   7r - 4 = 3r + 20
    $$ 
    
    <br><br>
@@ -105,7 +105,7 @@
 11. Solve for $h$.
 
     $$
-    V = \pi r^2 h
+    A = \tfrac{1}{2}bh
     $$ 
     
     <br><br>

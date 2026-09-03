@@ -16,7 +16,7 @@
 2. Convert $\tfrac{11}{20}$ to a decimal and a percent.
 <br><br><br><br><br>
 
-3. Write $0.175$ as a percent **and** as a fraction in simplest form.
+3. Write $0.625$ as a percent **and** as a fraction in simplest form.
 <br><br><br><br><br>
 
 4. A sweater is on sale for $30\%$ off. It originally cost $\$120$. What is the new price?

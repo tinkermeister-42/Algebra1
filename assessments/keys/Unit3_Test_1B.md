@@ -3,7 +3,7 @@
 3. $4s + 5 = 29$, so $s = 6$: each sketchbook costs $\$6$.
 4. $x = 6$
 5. $p = 3$
-6. $r = 4$
+6. $r = 7$
 7. $m = 14$
 8. **No solution.** Both sides simplify to $5t$, leaving $2 = -3$, which is never true.
 9. $x > 3$ &mdash; open circle at $3$, shaded to the right.
