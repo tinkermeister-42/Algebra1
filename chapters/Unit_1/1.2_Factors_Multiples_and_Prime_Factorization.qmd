@@ -28,7 +28,7 @@ You’ll use these skills again and again, from simplifying fractions to solving
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -100,7 +100,7 @@ A **composite number** has more than 2 factors.
 
 Examples: 4, 6, 8, 9, 10...
 
-The number 1 is **neither** prime nor composite. It has only one factor — itself — so it does not have the 2 factors a prime needs, and it does not have more than 2 either.
+The number 1 is **neither** prime nor composite. It has only one factor - itself - so it does not have the 2 factors a prime needs, and it does not have more than 2 either.
 
 :::{.real-world}
 People around the world spend years searching for giant prime numbers. The largest ones we’ve found so far have over 24 million digits!
@@ -120,7 +120,7 @@ Every number can be broken into a {{< glink product >}} of prime numbers. These 
 
 We use **factor trees** to find these prime factors. This isn’t just a fun trick, it builds your {{< glink "number sense" >}}, your ability to see patterns, understand how numbers are structured, and work confidently with them.
 
-That number sense will come in handy later when you:
+That number sense will be useful later when you:
 
 * Simplify fractions
 * Solve equations
@@ -373,7 +373,7 @@ So, the prime factorization of -24 is...
 $$-1 \times 2^3 \times 3 = -24$$
 
 
-This will come in handy later when we factor algebraic {{< glink slug="expression" text="expressions" >}} like $-x^2 + 4x$. It’s often helpful to pull out a negative first!
+This will be useful later when we factor algebraic {{< glink slug="expression" text="expressions" >}} like $-x^2 + 4x$. It’s often helpful to pull out a negative first!
 
 **Feeling overwhelmed?**
 

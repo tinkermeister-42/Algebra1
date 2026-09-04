@@ -75,7 +75,7 @@ def grid(width=340, half=10, labelled=True, axis_step=5):
 
 
 def quadrant1(width=340, nx=10, ny=10):
-    """First-quadrant grid — for tables of values, growth models, projectile heights."""
+    """First-quadrant grid - for tables of values, growth models, projectile heights."""
     pad_l, pad_b, pad_t, pad_r = 24, 24, 12, 12
     w = width - pad_l - pad_r
     h = width - pad_t - pad_b

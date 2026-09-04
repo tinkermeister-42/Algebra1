@@ -23,7 +23,7 @@ When we simplify polynomials, we are really just doing what we have always done:
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.2_Simplifying_Polynomials.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.2_Simplifying_Polynomials.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

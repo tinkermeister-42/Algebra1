@@ -1,10 +1,10 @@
-# Algebra 1 – Q3.1_3.3 A
+# Algebra 1 - Q3.1_3.3 A
 
 **Name: ____________________________**
 
 ***
 
-## 3.1 – One-Step Equations
+## 3.1 - One-Step Equations
 
 **Solve each equation. Show your work.**
 
@@ -18,7 +18,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## 3.2 – Two-Step Equations
+## 3.2 - Two-Step Equations
 
 **Solve each equation for the variable.**
 
@@ -34,7 +34,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## 3.3 – Multi-Step Equations
+## 3.3 - Multi-Step Equations
 
 **Simplify and solve each equation.**
 

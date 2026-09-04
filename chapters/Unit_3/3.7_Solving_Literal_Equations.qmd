@@ -26,7 +26,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

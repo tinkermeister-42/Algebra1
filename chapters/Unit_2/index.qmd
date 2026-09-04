@@ -27,7 +27,7 @@ What expressions are made of, and how to **translate** short phrases into algebr
 Plug in values and simplify with the correct order of operations. See why parentheses matter.
 
 [**Combining Like Terms**](2.3_Combining_Like_Terms.html)  
-Put “like with like” (same variable and power) to clean up expressions.
+Put “like with like” (same variable and power) to simplify expressions.
 
 [**The Distributive Property**](2.4_The_Distributive_Property.html)  
 Distribute to remove parentheses and simplify. Learn common slips to avoid (like trying to distribute over exponents).

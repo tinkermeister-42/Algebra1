@@ -2,7 +2,7 @@
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
-## 2.1 – Expressions and Their Parts
+## 2.1 - Expressions and Their Parts
 
 **1. I can identify the parts of an algebraic expression**
 
@@ -36,7 +36,7 @@ d. The variables are x, y and z ______
 
 ***
 
-## 2.2 – Evaluating Expressions
+## 2.2 - Evaluating Expressions
 
 **3. I can substitute values into expressions and simplify them**
 
@@ -63,7 +63,7 @@ c. $\frac{1}{x}(x - 10)^2 + x$ when $x = -5$
 
 ***
 
-## 2.3 – Combining Like Terms
+## 2.3 - Combining Like Terms
 
 **5. I can identify like terms in an expression**
 

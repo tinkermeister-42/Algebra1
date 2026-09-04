@@ -1,8 +1,8 @@
 1. $y = 11$
 2. $f(-2) = 7$
 3. $m = \dfrac{13 - 5}{6 - 2} = 2$
-4. undefined &mdash; both points have $x = 4$, so the line is vertical.
-5. zero &mdash; both points have $y = 2$, so the line is horizontal.
+4. undefined - both points have $x = 4$, so the line is vertical.
+5. zero - both points have $y = 2$, so the line is horizontal.
 6. $x$-intercept $(2, 0)$; $y$-intercept $(0, -4)$
 7. $y = 3x - 2$
 8. $m = \dfrac{8 - 4}{2 - 0} = 2$ and the line already passes through $(0, 4)$, so $y = 2x + 4$.

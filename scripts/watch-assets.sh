@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# watch-assets.sh — Re-trigger Quarto preview when widget HTML files change.
+# watch-assets.sh - Re-trigger Quarto preview when widget HTML files change.
 #
 # Run this in a second terminal alongside `quarto preview`:
 #   ./scripts/watch-assets.sh
@@ -15,7 +15,7 @@ CHAPTERS_DIR="$ROOT/chapters"
 
 # Fallback: polling loop (used if inotifywait is unavailable)
 poll_loop() {
-  echo "inotifywait not found — falling back to 1-second polling."
+  echo "inotifywait not found - falling back to 1-second polling."
   echo "Install inotify-tools for instant response: sudo dnf install inotify-tools"
   echo ""
   declare -A mtimes
@@ -45,7 +45,7 @@ on_change() {
     found=1
   done < <(grep -rl "$filename" "$CHAPTERS_DIR" 2>/dev/null || true)
   if [[ $found -eq 0 ]]; then
-    echo "  (no .qmd includes $filename — nothing touched)"
+    echo "  (no .qmd includes $filename - nothing touched)"
   fi
 }
 

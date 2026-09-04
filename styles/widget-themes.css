@@ -1,5 +1,5 @@
 /* ============================================================
-   Widget Themes — shared color tokens for all interactive widgets
+   Widget Themes - shared color tokens for all interactive widgets
    Themes: classic (default/light), ocean, midnight, darcula, terminal
 
    Games (prime factorization, slope-intercept, function machine)
@@ -31,7 +31,7 @@
 }
 
 .vertex-form-widget.theme-classic {
-  /* explicit override when class is applied — same as default */
+  /* explicit override when class is applied - same as default */
   --vfw-bg:         #f9fafb;
   --vfw-tile:       #ffffff;
   --vfw-border:     #e2e8f0;

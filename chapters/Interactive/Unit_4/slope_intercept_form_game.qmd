@@ -2,7 +2,7 @@
 
 A quick way to build intuition for how slope and intercept shape a line.
 
-Match the **hidden target line** using slope–intercept form ($y = mx + b$).
+Match the **hidden target line** using slope-intercept form ($y = mx + b$).
 
 **How to play:**
 
@@ -19,5 +19,5 @@ Match the **hidden target line** using slope–intercept form ($y = mx + b$).
 
 ***
 
-To learn more, take a look at [4.6 – Linear Models in the Real World](/chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd)
+To learn more, take a look at [4.6 - Linear Models in the Real World](/chapters/Unit_4/4.6_Linear_Models_in_the_Real_World.qmd)
 

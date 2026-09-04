@@ -1,4 +1,4 @@
-# Algebra 1 – Unit 1 Pre-Test
+# Algebra 1 - Unit 1 Pre-Test
 <br>
 
 **Name:** _________________________________

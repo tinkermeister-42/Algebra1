@@ -1,4 +1,4 @@
-# Algebra 1 – Unit 3 Test B
+# Algebra 1 - Unit 3 Test B
 
 **Name: __________________________________________**
 

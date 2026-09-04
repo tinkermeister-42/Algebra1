@@ -8,7 +8,7 @@ $$
 x^2 = 7.
 $$
 
-There are no integers that multiply to $7$ and add to $0$, so we cannot factor this. Yet the equation clearly *has* solutions — after all, it is asking what number, when squared, gives $7$. The answer is $\sqrt{7}$, and also $-\sqrt{7}$, since squaring a negative gives a positive.
+There are no integers that multiply to $7$ and add to $0$, so we cannot factor this. Yet the equation clearly *has* solutions - after all, it is asking what number, when squared, gives $7$. The answer is $\sqrt{7}$, and also $-\sqrt{7}$, since squaring a negative gives a positive.
 
 In this lesson, we will formalize this idea into a reliable solving method called the **square root property**. It works whenever a quadratic can be written with a perfect square on one side and a number on the other.
 
@@ -27,7 +27,7 @@ In this lesson, we will formalize this idea into a reliable solving method calle
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.4_Solving_by_Taking_Square_Roots.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.4_Solving_by_Taking_Square_Roots.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

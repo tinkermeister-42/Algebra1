@@ -1,4 +1,4 @@
-# Algebra 1 – Unit 2 Test B
+# Algebra 1 - Unit 2 Test B
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 

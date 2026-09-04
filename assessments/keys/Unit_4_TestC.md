@@ -1,8 +1,8 @@
 1. $y = 1$
 2. $f(-1) = -7$
 3. $m = \dfrac{-1 - 5}{4 - 1} = -2$
-4. undefined &mdash; both points have $x = 5$, so the line is vertical.
-5. positive &mdash; $m = \dfrac{8 - 2}{4 - 1} = 2$.
+4. undefined - both points have $x = 5$, so the line is vertical.
+5. positive - $m = \dfrac{8 - 2}{4 - 1} = 2$.
 6. $x$-intercept $(4, 0)$; $y$-intercept $(0, 8)$
 7. $y = 4x - 1$
 8. $m = \dfrac{0 - 6}{3 - 0} = -2$ and the line passes through $(0, 6)$, so $y = -2x + 6$.

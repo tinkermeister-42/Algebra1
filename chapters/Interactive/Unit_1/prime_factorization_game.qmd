@@ -33,4 +33,4 @@ Try to factor each number as cleanly and efficiently as you can.
 ---
 
 To learn more about prime factorization and why it matters, see
-[1.2 – Factors, Multiples & Prime Factorization](/chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.qmd)
+[1.2 - Factors, Multiples & Prime Factorization](/chapters/Unit_1/1.2_Factors_Multiples_and_Prime_Factorization.qmd)

@@ -1,4 +1,4 @@
-# Algebra 1 – Unit 1 Test C
+# Algebra 1 - Unit 1 Test C
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 

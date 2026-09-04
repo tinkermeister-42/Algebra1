@@ -198,7 +198,7 @@ $$
     b. As one decreases, the other increases.
     c. There is no linear relationship between them
 
-24. Slope = –5 (decreasing 5° per min); intercept = 120 (start temperature)
+24. Slope = -5 (decreasing 5° per min); intercept = 120 (start temperature)
 25. Dashed line with slope -1 and intercept 3. Shaded below the line.
 26. Solid line with slope 2 and intercept -1. Shaded above the line.
 27. Solid line with slope -1/2 and intercept 4. Shaded below the line.

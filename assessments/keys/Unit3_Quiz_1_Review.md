@@ -5,7 +5,7 @@
 5. $k = -35$
 6. $p = -32$
 7. $t = 6$
-8. $w = 15$ &mdash; multiply both sides by $\tfrac{3}{2}$
+8. $w = 15$ - multiply both sides by $\tfrac{3}{2}$
 9. $p = 6$
 10. $k = 5$
 11. $h = -5$
@@ -14,7 +14,7 @@
 14. $x = 12$
 15. $b = 7$
 16. $c = 20$
-17. $x = 10$ &mdash; multiply both sides by $\tfrac{5}{3}$ after subtracting $4$
+17. $x = 10$ - multiply both sides by $\tfrac{5}{3}$ after subtracting $4$
 18. $n = 5$
 19. $a = 7$
 20. $x = 3$

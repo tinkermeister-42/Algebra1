@@ -31,7 +31,7 @@ Later lessons will build on these rules to solve more complicated equations.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

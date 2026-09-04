@@ -4,7 +4,7 @@
 4. Vertex $(-1, -9)$; $x$-intercepts $(-4, 0)$ and $(2, 0)$; $y$-intercept $(0, -8)$. Opens up.
 5. $(x + 2)(x + 5) = 0$, so $x = -2$ and $x = -5$.
 6. $(x - 4)(x + 2) = 0$, so the $x$-intercepts are $(4, 0)$ and $(-2, 0)$.
-7. $x = \pm 6$ &mdash; both roots, not just the positive one.
+7. $x = \pm 6$ - both roots, not just the positive one.
 8. $x + 2 = \pm 5$, so $x = 3$ and $x = -7$.
 9. Add $25$: $x^2 + 10x + 25 = (x + 5)^2$. (Half of $10$ is $5$; $5^2 = 25$.)
 10. $x^2 - 4x = 12 \Rightarrow (x - 2)^2 = 16 \Rightarrow x - 2 = \pm 4$, so $x = 6$ and $x = -2$.

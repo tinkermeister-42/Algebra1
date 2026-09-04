@@ -2,7 +2,7 @@
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
-## 1.1 – Integers and Number Lines
+## 1.1 - Integers and Number Lines
 
 **1. I know how to read and use a number line**
 
@@ -49,7 +49,7 @@ c. Explain, using money, why subtracting a negative makes the answer bigger.
 
 ***
 
-## 1.2 – Factors, Multiples, and Prime Factorization
+## 1.2 - Factors, Multiples, and Prime Factorization
 
 **5. I can find the factors and multiples of integers**
 
@@ -100,7 +100,7 @@ Complete the factor tree for $84$ and write its prime factorization.
 
 ------------------------------------------------------------------------
 
-## 1.3 – GCF and Simplifying Fractions
+## 1.3 - GCF and Simplifying Fractions
 
 **8. I can find the GCF using factor trees**
 Use factor trees to find the GCF of $24$ and $36$.
@@ -148,7 +148,7 @@ b. How many pencils and erasers will be in each pack?
 
 ------------------------------------------------------------------------
 
-## 1.4 – Multiply, Divide & Compare Fractions
+## 1.4 - Multiply, Divide & Compare Fractions
 
 **11. I can multiply fractions and mixed numbers**
 

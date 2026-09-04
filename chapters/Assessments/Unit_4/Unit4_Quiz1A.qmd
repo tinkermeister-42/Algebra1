@@ -1,8 +1,8 @@
-# Algebra 1 – Q4.1_4.3 A
+# Algebra 1 - Q4.1_4.3 A
 
 **Name: ____________________________**
 
-## 4.1 – Graphing Function Rules
+## 4.1 - Graphing Function Rules
 
 **Find the value of $y$ for each function rule. Show your work.**
 
@@ -37,7 +37,7 @@
 <div style="page-break-after: always;"></div>
 
 
-## 4.2 – Understanding Slope
+## 4.2 - Understanding Slope
 
 **Find the slope. Show your work.**
 
@@ -60,7 +60,7 @@
 <div style="page-break-after: always;"></div>
 
 
-## 4.3 – The Equation of a Line
+## 4.3 - The Equation of a Line
 
 **Graph the line using the given point and slope.**
 

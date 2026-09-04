@@ -52,7 +52,7 @@ In this lesson, we will learn a method called **completing the square**. This me
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.5_Completing_the_Square.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.5_Completing_the_Square.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

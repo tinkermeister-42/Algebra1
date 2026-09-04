@@ -25,7 +25,7 @@ In this lesson, we’ll learn the rules, unpack *why* they work, and learn how t
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -463,7 +463,7 @@ $$
 
 ***
 
-**Example 10:** Getting tricky
+**Example 10:** A harder one
 
 Simplify $(3a^2b^{-3})^{-2}$
 

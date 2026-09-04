@@ -20,7 +20,7 @@ They model real situations involving height, distance, area, revenue, and time. 
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

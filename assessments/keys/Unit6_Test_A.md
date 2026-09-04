@@ -4,7 +4,7 @@
 4. Vertex $(1, -4)$; $x$-intercepts $(-1, 0)$ and $(3, 0)$; $y$-intercept $(0, -3)$. Opens up.
 5. $(x + 2)(x + 3) = 0$, so $x = -2$ and $x = -3$.
 6. $(x - 5)(x + 1) = 0$, so the $x$-intercepts are $(5, 0)$ and $(-1, 0)$.
-7. $x = \pm 7$ &mdash; both roots, not just the positive one.
+7. $x = \pm 7$ - both roots, not just the positive one.
 8. $x - 3 = \pm 4$, so $x = 7$ and $x = -1$.
 9. Add $16$: $x^2 + 8x + 16 = (x + 4)^2$. (Half of $8$ is $4$; $4^2 = 16$.)
 10. $x^2 + 6x = 7 \Rightarrow (x + 3)^2 = 16 \Rightarrow x + 3 = \pm 4$, so $x = 1$ and $x = -7$.

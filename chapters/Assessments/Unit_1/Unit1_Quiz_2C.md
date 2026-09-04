@@ -1,8 +1,8 @@
-# Algebra 1 – Q1.5\_1.8 **C**
+# Algebra 1 - Q1.5\_1.8 **C**
 
 **Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
-## 1.5 – Adding & Subtracting Fractions
+## 1.5 - Adding & Subtracting Fractions
 
 **1. I can add and subtract fractions with like and unlike denominators**
 
@@ -26,7 +26,7 @@ b. $6\tfrac{1}{4} - 2\tfrac{3}{4} =$ \_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
 
-## 1.6 – Fractions, Decimals & Percents
+## 1.6 - Fractions, Decimals & Percents
 
 **3. I can convert between fractions, decimals, and percents**
 
@@ -43,9 +43,9 @@ d. $2.4$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
-a. $\tfrac{7}{16}$ — decimal: \_\_\_\_\_\_\_\_
-b. $\tfrac{8}{11}$ — decimal: \_\_\_\_\_\_\_\_
-c. $\tfrac{5}{6}$ — decimal: \_\_\_\_\_\_\_\_
+a. $\tfrac{7}{16}$ - decimal: \_\_\_\_\_\_\_\_
+b. $\tfrac{8}{11}$ - decimal: \_\_\_\_\_\_\_\_
+c. $\tfrac{5}{6}$ - decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
 
@@ -61,7 +61,7 @@ Which store gives the **biggest discount**? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 <div style="page-break-after: always;"></div>
 
-## 1.7 – Solving Problems with Fractions, Decimals & Percents
+## 1.7 - Solving Problems with Fractions, Decimals & Percents
 
 **6. I can find a part, a whole, or a percent**
 
@@ -87,7 +87,7 @@ Answer: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ cup(s)
 
 <div style="page-break-after: always;"></div>
 
-## 1.8 – Order of Operations (PEMDAS)
+## 1.8 - Order of Operations (PEMDAS)
 
 **9. I follow the correct order of operations (including fractions and negatives)**
 

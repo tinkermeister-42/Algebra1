@@ -6,4 +6,4 @@
 6. $(x - 3)(x + 3) = 0$, so the $x$-intercepts are $(3, 0)$ and $(-3, 0)$.
 7. a. $x = \pm 8$ &nbsp; b. $x = \pm\sqrt{12} = \pm 2\sqrt{3}$
 8. a. $x - 2 = \pm 5$, so $x = 7$ and $x = -3$. &nbsp; b. $x + 5 = \pm 3$, so $x = -2$ and $x = -8$.
-9. a. **No real solutions** &mdash; no real number squares to a negative. &nbsp; b. **Exactly one**, $x = 3$ &mdash; the only square root of $0$ is $0$.
+9. a. **No real solutions** - no real number squares to a negative. &nbsp; b. **Exactly one**, $x = 3$ - the only square root of $0$ is $0$.

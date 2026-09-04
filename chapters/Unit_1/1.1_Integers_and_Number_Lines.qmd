@@ -4,7 +4,7 @@ Did you know that all of mathematics is actually built up from simple things lik
 
 In this lesson, we’ll use the number line not just to count, but to add, subtract, and compare {{< glink positive >}} and {{< glink negative >}} numbers. That might sound basic, but it’s the foundation of nearly everything else you’ll do in Algebra.
 
-Negative numbers can be tricky, especially when the rules don’t always match what your gut tells you. But if you can master the way they work on the number line (including things like {{< glink slug="opposite" text="opposites" >}}, {{< glink "absolute value" >}}, and comparison) you’ll be setting yourself up for success in the rest of the course.
+Negative numbers can be confusing, especially when the rules do not match what you expect. But if you can master the way they work on the number line (including things like {{< glink slug="opposite" text="opposites" >}}, {{< glink "absolute value" >}}, and comparison) you’ll be setting yourself up for success in the rest of the course.
 
 :::{.objectives}
 - [ ] I know how to read and use a number line
@@ -26,7 +26,7 @@ Negative numbers can be tricky, especially when the rules don’t always match w
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}} 
@@ -151,7 +151,7 @@ Compare 2 to -7.
 **Two negatives take a second look.** Compare -4 to -5.
 ![](/images/Unit_1/Lesson_1/order_neg4_and_neg5.png)
 
--4 is to the right of -5, so $-4 > -5$ — even though 5 sounds like the bigger number. Going left to right, the negatives count *up*: $-5 < -4 < -3$.
+-4 is to the right of -5, so $-4 > -5$ - even though 5 sounds like the bigger number. Going left to right, the negatives count *up*: $-5 < -4 < -3$.
 
 :::{.gotcha title="Which is bigger?"}
 Two questions sound alike but are not:
@@ -171,8 +171,8 @@ They can disagree. Here $-7 < 2$, but $|-7| > |2|$:
 Money is the easiest way to think about a negative number. A positive number is
 money you **have**. A negative number is money you **owe**.
 
-* $+6$ &mdash; six dollars in your pocket
-* $-6$ &mdash; a six dollar debt
+* $+6$ - six dollars in your pocket
+* $-6$ - a six dollar debt
 
 Adding is what happens when something is **given** to you. Subtracting is what
 happens when something is **taken away**.
@@ -181,8 +181,7 @@ happens when something is **taken away**.
 
 **Adding**
 
-Adding a positive makes you richer. Adding a negative &mdash; a debt &mdash;
-makes you poorer.
+Adding a positive makes you richer. Adding a negative - a debt - makes you poorer.
 
 $$
 -2 + 6 = 4
@@ -209,9 +208,9 @@ a - b = a + (-b)
 $$
 :::
 
-You met {{< glink "opposite" >}}s back in 1.1.2. This is where they earn their keep.
+You met {{< glink "opposite" >}}s back in 1.1.2. This is where opposites become useful.
 Instead of two operations with four separate rules to remember, there is only
-**one** operation &mdash; addition. Every subtraction gets rewritten first.
+**one** operation - addition. Every subtraction gets rewritten first.
 
 $$
 400 - 450 = 400 + (-450) = -50
@@ -229,7 +228,7 @@ $$
 201 - (-5) = 201 + 5 = 206
 $$
 
-You had $\$201$. The bank had charged you a $\$5$ fee &mdash; a $-5$ sitting in
+You had $\$201$. The bank had charged you a $\$5$ fee - a $-5$ sitting in
 your account. Then they admitted the mistake and **took the fee away**.
 
 Taking away a debt leaves you better off. That is the whole reason subtracting a
@@ -260,7 +259,7 @@ Rewrite each as an addition, then find the value.
 :::{.think title="Why does the number line stop helping here?"}
 
 For $-2 + 6$ you can count six steps and see the answer appear. For
-$201 - (-5)$ there is nothing to count &mdash; you would have to know the answer
+$201 - (-5)$ there is nothing to count - you would have to know the answer
 before you could draw the picture. The number line is good for showing you
 **what a negative number is**; the money story is what explains **what happens
 when you add and subtract them**.

@@ -28,7 +28,7 @@ SHELL = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guided Notes {lesson} — {title}{title_suffix}</title>
+<title>Guided Notes {lesson} - {title}{title_suffix}</title>
 <link rel="stylesheet" href="../assets/guided-notes.css">
 </head>
 <body>
@@ -37,7 +37,7 @@ SHELL = """<!DOCTYPE html>
   <div class="masthead">
     <a class="backlink" href="../../chapters/Unit_{unit}/{lesson}_{slug}.html">&larr; back to the lesson</a>
     <h1>{lesson} &nbsp;{title}</h1>
-    <div class="sub">Guided Notes &mdash; Unit {unit}: {unit_title} &mdash; DHS Algebra 1</div>
+    <div class="sub">Guided Notes - Unit {unit}: {unit_title} - DHS Algebra 1</div>
     {idline}
   </div>
 
@@ -69,7 +69,7 @@ BLOCK_RE = re.compile(r"<(table|div|p|ul|ol|h[1-6])\b", re.I)
 
 IDLINE = ('<div class="idline"><span>Name</span>'
           '<span class="small">Date</span><span class="small">Period</span></div>')
-KEYLINE = '<div class="keybadge">Teacher Key &mdash; answers in red</div>'
+KEYLINE = '<div class="keybadge">Teacher Key - answers in red</div>'
 
 
 def _drop_answers(body):
@@ -147,7 +147,7 @@ def build(path, key=False):
     # a practice section always starts on a fresh page, with its own name line
     body = body.replace("{{practice-head}}",
                         '<div class="pagebreak"></div>\n'
-                        '  <div class="parthead"><b>%s %s &mdash; Practice</b>%s</div>'
+                        '  <div class="parthead"><b>%s %s - Practice</b>%s</div>'
                         % (meta["lesson"], meta["title"],
                            "" if key else '<span class="nm">Name</span>'))
     page = SHELL.format(body=body.rstrip() + "\n",

@@ -18,7 +18,7 @@ In this lesson, you’ll learn how to multiply and divide fractions and mixed nu
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -48,7 +48,7 @@ Here is what it looks like to find how many fourths are in one half:
 That blue slice shows one of the four parts of the darker half.  
 Since there are 8 total pieces, and only 1 is blue, the answer is $\frac{1}{8}$ of the whole.
 
-Drawing pie charts every time we multiply would take forever, so here's the shortcut:
+Drawing pie charts every time we multiply would take too long, so here is the shortcut:
 
 - Multiply numerators together.
 - Multiply denominators together.

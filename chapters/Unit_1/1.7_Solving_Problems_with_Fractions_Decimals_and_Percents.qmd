@@ -21,7 +21,7 @@ In this lesson, you’ll practice choosing the right form for the situation, est
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -54,7 +54,7 @@ $$
 \text{part} = \text{percent} \times \text{whole}
 $$
 
-You can also rearrange it to solve for the percent or the whole. We’ll walk through all three types of problems step by step.
+You can also rearrange it to solve for the percent or the whole. We will go through all three types of problems step by step.
 
 
 :::{.remember}

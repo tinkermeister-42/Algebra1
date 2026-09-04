@@ -22,7 +22,7 @@ c &= 13.2
 \end{aligned}
 $$
 
-This tells us you can afford 13.2 packages of candy—but you can’t just buy part of a package.
+This tells us you can afford 13.2 packages of candy-but you can’t just buy part of a package.
 
 Problems like this one show the limitations of equations. Equations are great when there’s a single exact answer, but real situations often have **ranges** of possible answers. To describe those ranges, we use **inequalities**.
 
@@ -42,7 +42,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

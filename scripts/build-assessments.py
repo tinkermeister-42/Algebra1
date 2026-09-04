@@ -46,7 +46,7 @@ SHELL = """<!DOCTYPE html>
 
   <div class="masthead">
     <h1>{heading}{keytag}</h1>
-    <div class="sub">DHS Algebra 1 &mdash; Unit {unit}</div>
+    <div class="sub">DHS Algebra 1 - Unit {unit}</div>
 {idline}  </div>
 
 {body}
@@ -184,7 +184,7 @@ def build(path, key_md=None):
         shutil.copytree(img_src, os.path.join(out_dir, "images"), dirs_exist_ok=True)
     out = os.path.join(out_dir, name + ("_KEY" if key_md else "") + ".html")
     open(out, "w", encoding="utf-8").write(SHELL.format(
-        title=html.escape(heading + (" — Answer Key" if key_md else "")),
+        title=html.escape(heading + (" - Answer Key" if key_md else "")),
         heading=html.escape(heading), keytag=tag, unit=unit,
         idline="" if key_md else IDLINE, body=body))
     print("built", os.path.relpath(out, ROOT))
@@ -196,7 +196,7 @@ INDEX_SHELL = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assessments &mdash; DHS Algebra 1</title>
+<title>Assessments - DHS Algebra 1</title>
 <link rel="stylesheet" href="assets/assessments.css">
 <style>
   .sheet {{ width: 8in; }}
@@ -217,10 +217,10 @@ INDEX_SHELL = """<!DOCTYPE html>
 <section class="sheet">
   <div class="masthead">
     <h1>Assessments</h1>
-    <div class="sub">DHS Algebra 1 &mdash; quizzes, tests and answer keys</div>
+    <div class="sub">DHS Algebra 1 - quizzes, tests and answer keys</div>
   </div>
   <p class="note">Nothing in the book links here. Bookmark this page.
-  Every sheet is laid out for letter paper &mdash; use your browser's
+  Every sheet is laid out for letter paper - use your browser's
   <b>Print</b> command, and choose <i>Save as PDF</i> for a digital copy.</p>
 {body}
 </section>
@@ -241,7 +241,7 @@ def write_index(built):
         body.append("    <tr><th>Assessment</th><th>Answer key</th></tr>")
         for name, has_key in sorted(rows[unit]):
             key = ('<a class="key" href="Unit_%s/%s_KEY.html">key</a>' % (unit, name)
-                   if has_key else "&mdash;")
+                   if has_key else " - ")
             body.append('    <tr><td><a href="Unit_%s/%s.html">%s</a></td>'
                         '<td class="k">%s</td></tr>' % (unit, name, name, key))
         body.append("  </table>")
@@ -266,7 +266,7 @@ def write_index(built):
         body.append("  <table class=\"idx\">")
         for unit, base in pdfs:
             body.append('    <tr><td><a href="Unit_%s/%s">%s</a></td>'
-                        '<td class="k">&mdash;</td></tr>' % (unit, base, base))
+                        '<td class="k"> - </td></tr>' % (unit, base, base))
         body.append("  </table>")
 
     out = os.path.join(OUT, "index.html")

@@ -6,4 +6,4 @@
 6. $(x - 7)(x + 7) = 0$, so the $x$-intercepts are $(7, 0)$ and $(-7, 0)$.
 7. a. $x = \pm 10$ &nbsp; b. $x = \pm\sqrt{50} = \pm 5\sqrt{2}$
 8. a. $x - 6 = \pm 2$, so $x = 8$ and $x = 4$. &nbsp; b. $x + 3 = \pm 7$, so $x = 4$ and $x = -10$.
-9. a. **No real solutions** &mdash; no real number squares to a negative. &nbsp; b. **Exactly one**, $x = 1$ &mdash; the only square root of $0$ is $0$.
+9. a. **No real solutions** - no real number squares to a negative. &nbsp; b. **Exactly one**, $x = 1$ - the only square root of $0$ is $0$.

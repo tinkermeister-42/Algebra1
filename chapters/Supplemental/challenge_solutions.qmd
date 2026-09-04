@@ -328,7 +328,7 @@ No Challenge Questions
     $$
 
     Keeping the same $x$ (i.e., $x'=x$) forces $y'=2y$.
-    **Conclusion:** doubling the slope (with the same $x$) doubles the vertical change — the line becomes twice as steep by stretching the $y$-values while $x$ stays fixed.
+    **Conclusion:** doubling the slope (with the same $x$) doubles the vertical change - the line becomes twice as steep by stretching the $y$-values while $x$ stays fixed.
     
 :::
 

@@ -21,7 +21,7 @@ That rate of change is called the **slope**, one of the most important ideas in 
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

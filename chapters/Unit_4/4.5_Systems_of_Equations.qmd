@@ -27,7 +27,7 @@ That’s the idea behind a **system of equations**.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

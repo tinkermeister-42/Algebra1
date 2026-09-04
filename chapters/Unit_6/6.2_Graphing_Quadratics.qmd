@@ -1,4 +1,4 @@
-# 6.2 – Graphing Quadratics {.unnumbered}
+# 6.2 - Graphing Quadratics {.unnumbered}
 
 In the last lesson, you looked at graphs of quadratic functions and learned the key features of a parabola: the vertex, the axis of symmetry, and how the graph can have a maximum or a minimum.
 
@@ -26,7 +26,7 @@ Now we ask a similar question for quadratics:
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -381,7 +381,7 @@ Give the [**Vertex Form Explorer**](/chapters/Interactive/Unit_6/vertex_form_exp
 
 **Graphing Quadratics and Describing Their Behavior**
 
-For Problems 2–6, graph the quadratic. Then identify:
+For Problems 2-6, graph the quadratic. Then identify:
 
 - where the function is increasing  
 - where it is decreasing  

@@ -1,10 +1,10 @@
 1. Opens **up** and the vertex is a **minimum**, because $a = 1$ is positive.
-2. Domain: all real numbers. Range: $y \le 5$ &mdash; it opens **down**, so $5$ is a maximum.
+2. Domain: all real numbers. Range: $y \le 5$ - it opens **down**, so $5$ is a maximum.
 3. Axis of symmetry $x = -5$; vertex $(-5, -9)$.
 4. Vertex $(2, -1)$; $x$-intercepts $(1, 0)$ and $(3, 0)$; $y$-intercept $(0, 3)$. Opens up.
 5. $(x - 3)(x - 5) = 0$, so $x = 3$ and $x = 5$.
 6. $(x + 5)(x - 2) = 0$, so the $x$-intercepts are $(-5, 0)$ and $(2, 0)$.
-7. $x = \pm 11$ &mdash; both roots, not just the positive one.
+7. $x = \pm 11$ - both roots, not just the positive one.
 8. $x - 1 = \pm 3$, so $x = 4$ and $x = -2$.
 9. Add $36$: $x^2 - 12x + 36 = (x - 6)^2$. (Half of $-12$ is $-6$; $(-6)^2 = 36$.)
 10. $x^2 + 2x = 15 \Rightarrow (x + 1)^2 = 16 \Rightarrow x + 1 = \pm 4$, so $x = 3$ and $x = -5$.

@@ -37,7 +37,7 @@ Work with fractions in ways that actually show up in Algebra (simplify, multiply
 [**Adding & Subtracting Fractions**](1.5_Adding_and_Subtracting_Fractions.html)  
 Learn to add and subtract fractions by finding a common denominator.
 
-[**Fractions, Decimals & Percents – Conversions**](1.6_Fractions_Decimals_and_Percents.html)  
+[**Fractions, Decimals & Percents - Conversions**](1.6_Fractions_Decimals_and_Percents.html)  
 Convert between different number forms and compare them.
 
 [**Solving Problems with Fractions, Decimals & Percents**](1.7_Solving_Problems_with_Fractions_Decimals_and_Percents.html)  

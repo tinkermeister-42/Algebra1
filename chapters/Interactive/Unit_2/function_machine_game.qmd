@@ -9,4 +9,4 @@ In this game, you will interact with a function machine that takes an input numb
 ---
 
 To learn more about the basics of functions, see
-[2.5 – Inputs and Outputs of Functions](/chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd)
+[2.5 - Inputs and Outputs of Functions](/chapters/Unit_2/2.5_Inputs_Outputs_and_Functions.qmd)

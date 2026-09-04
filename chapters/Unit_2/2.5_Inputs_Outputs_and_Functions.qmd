@@ -23,7 +23,7 @@ What could the machine be doing to the numbers? How could we describe that proce
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -154,14 +154,14 @@ It’s okay if **different inputs** give the **same output**. For example, two d
 :::{.answer title="Answers"}
 (a) Function (repeated input has the same output).
 (b) **Not** a function (input 4 maps to two different outputs).
-(c) Function (different inputs share one output—allowed).
+(c) Function (different inputs share one output-allowed).
 :::
 
 ***
 
 ### 2.5.3 - Evaluating Functions
 
-Function notation is a handy way to describe expression evaluation.
+Function notation is a short way to describe expression evaluation.
 
 Suppose we are asked to evaluate the expression $2x + 3$ when $x = 5$. We would do this:
 
@@ -249,7 +249,7 @@ $$
 A shorter rule makes evaluation quicker and reduces mistakes.
 :::
 
-Whenever possible, simplify before substituting—then you only have to do it once, no matter what input you plug in.
+Whenever possible, simplify before substituting-then you only have to do it once, no matter what input you plug in.
 
 :::{.you-try title="Simplify $q(x) = 2(x+5) + 3x$. Then find $q(3)$."}
 $q(x) = 5x+10$, so $q(3)=25$.
@@ -259,7 +259,7 @@ $q(x) = 5x+10$, so $q(3)=25$.
 
 ### 2.5.5 - Function Evaluation in Real Life
 
-Functions don’t just show up in math class—they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
+Functions don’t just show up in math class-they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
 
 ***
 

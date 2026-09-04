@@ -1,5 +1,5 @@
 1. a. $\tfrac{1}{2}$  b. $\tfrac{5}{8}$  c. $\tfrac{11}{14}$
-2. a. $5\tfrac{1}{2}$  b. $3\tfrac{1}{2}$ &mdash; borrow: $6\tfrac{1}{4} = 5\tfrac{5}{4}$
+2. a. $5\tfrac{1}{2}$  b. $3\tfrac{1}{2}$ - borrow: $6\tfrac{1}{4} = 5\tfrac{5}{4}$
 3. a. $0.4$, $40\%$  b. $\tfrac{3}{8}$, $37.5\%$  c. $\tfrac{3}{25}$, $0.12$  d. $\tfrac{12}{5}$, $240\%$
 4. a. $0.4375$  b. $0.\overline{72}$  c. $0.8\overline{3}$
 5. **Store A.** A takes off $\$40$; B takes off $\$18$; C takes off $\$30$.

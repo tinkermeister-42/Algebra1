@@ -1,4 +1,4 @@
-# Algebra 1 – Unit 3 Test C
+# Algebra 1 - Unit 3 Test C
 
 **Name: __________________________________________**
 

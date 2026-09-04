@@ -4,7 +4,7 @@ Welcome to **Unit 4!**
 
 Here we take what you’ve learned about equations and bring them to life on the **coordinate plane**.
 
-You’ll learn how equations like $y = mx + b$ represent straight lines, what slope and intercept mean, and how these simple rules can **model real situations**—from earnings to motion to limits on spending.
+You’ll learn how equations like $y = mx + b$ represent straight lines, what slope and intercept mean, and how these simple rules can **model real situations**-from earnings to motion to limits on spending.
 
 You’ll also extend this idea to **inequalities**, showing not just one solution but entire **regions** of possibilities.
 

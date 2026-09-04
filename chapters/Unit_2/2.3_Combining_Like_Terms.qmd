@@ -1,6 +1,6 @@
 # 2.3 - Combining Like Terms {.unnumbered}
 
-When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be messy, so we **clean them up** by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink "like terms" >}}**.
+When we speak, we sometimes **shorten** a sentence without changing its meaning. We can do the same in algebra. Expressions can be disorganized, so we **simplify** them by putting **like things with like things** and then adding or subtracting. This is called **combining {{< glink "like terms" >}}**.
 
 Think of a cashier counting money in a mixed drawer. They put tens with tens, fives with fives, quarters with quarters. Once things are **sorted**, they’re easy to **count**. In algebra, we sort by the **variable part** and then add the **coefficients**.
 
@@ -21,7 +21,7 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -48,7 +48,7 @@ Suppose you have apples, oranges, and bananas to sell.
 
 ![](/images/Unit_2/Lesson_3/mixed_fruit.png){width="300px"}
 
-You can see what fruit is there, but it’s **messy**. Let’s **group by type** to clean it up.
+You can see what fruit is there, but it’s **messy**. Let’s **group by type** to organize it.
 
 ![](/images/Unit_2/Lesson_3/sorted_fruit.png){width="400px"}
 
@@ -116,7 +116,7 @@ $$
 9a + 4c + 8b - 3a + b - 2c + 2a - 6b - 4a
 $$
 
-**Step 1:** To clean it up, let's **sort** by type.
+**Step 1:** To organize it, let's **sort** by type.
 
 $$
 9a -3a +2a -4a + 4c - 2c + 8b + b - 6b
@@ -191,7 +191,7 @@ $$
 :::
 
 :::{.real-world title="Lunch orders"}
-Imagine you are on a field trip with your class and the bus stops to order fast food. If there are 50 people on the bus, it would be crazy to place each order individually, it would take forever. 
+Imagine you are on a field trip with your class and the bus stops to order fast food. If there are 50 people on the bus, placing each order separately would take far too long. 
 
 So, instead of making individual orders like, "One cheeseburger with fries and a drink." 50 times. It would make more sense to group by type and make one order.
 

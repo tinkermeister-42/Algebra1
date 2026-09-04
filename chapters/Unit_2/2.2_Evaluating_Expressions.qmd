@@ -2,7 +2,7 @@
 
 In the last lessons, you learned how to solve one-step and two-step {{< glink slug="equation" text="equations" >}}. Those were like solving simple puzzles: one or two moves and you had the answer.
 
-But not every equation is that neat. Sometimes parentheses get in the way, or extra terms make things look messy. These are called multi-step equations.
+But not every equation is that neat. Sometimes parentheses make the equation harder to read, or extra terms make it look disorganized. These are called multi-step equations.
 
 In this lesson, you’ll learn how to simplify first (by using the {{< glink "distributive property" >}} and combining like terms) and then solve the equation step by step. We’ll also practice checking our solutions to be sure they really work.
 
@@ -22,7 +22,7 @@ In this lesson, you’ll learn how to simplify first (by using the {{< glink "di
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

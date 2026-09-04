@@ -17,7 +17,7 @@ In this lesson, you’ll learn how to move between these forms and understand ho
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.6_Fractions_Decimals_and_Percents.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.6_Fractions_Decimals_and_Percents.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

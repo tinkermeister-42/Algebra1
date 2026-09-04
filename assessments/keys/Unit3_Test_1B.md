@@ -6,8 +6,8 @@
 6. $r = 7$
 7. $m = 14$
 8. **No solution.** Both sides simplify to $5t$, leaving $2 = -3$, which is never true.
-9. $x > 3$ &mdash; open circle at $3$, shaded to the right.
-10. $z \le -3$ &mdash; closed circle at $-3$, shaded to the left. (Dividing by $-2$ **flips** the inequality.)
+9. $x > 3$ - open circle at $3$, shaded to the right.
+10. $z \le -3$ - closed circle at $-3$, shaded to the left. (Dividing by $-2$ **flips** the inequality.)
 11. $h = \dfrac{3V}{\pi r^2}$
 12. $t = \dfrac{C - 4h}{2}$
 13. $x = \dfrac{y}{m} + b$

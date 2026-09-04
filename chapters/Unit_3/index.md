@@ -21,7 +21,7 @@ By the end of this unit, you’ll be able to:
 ## Topics in This Unit
 
 [**Solving One-Step Equations**](3.1_Solving_One-Step_Equations.html)  
-Start small—use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.
+Start small-use opposite operations to undo addition, subtraction, multiplication, or division and get the variable alone.
 
 [**Solving Two-Step Equations**](3.2_Solving_Two-Step_Equations.html)  
 Add or subtract first, then multiply or divide. Practice solving short, real-world problems.

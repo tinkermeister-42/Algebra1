@@ -1,4 +1,4 @@
-# Algebra 1 Textbook — Project Context
+# Algebra 1 Textbook - Project Context
 
 ## Build & Deploy
 - **Render:** `quarto render --to html`
@@ -51,7 +51,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Each lesson `.qmd` links to its handout via a `.guided-notes-link` div above `{{< warmup >}}`
 - **Lesson and handout are one change.** Editing an example, a practice problem, or an
   answer in a lesson `.qmd` means editing `guided_notes/src/#.#.html` to match and
-  rebuilding — the handout restates the same problems, so the two drift silently.
+  rebuilding - the handout restates the same problems, so the two drift silently.
 - See `guided_notes/README.md` for the shorthand tokens and building blocks
 
 ## Assessments
@@ -68,7 +68,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
   `resources:` but nothing links to them and they are not in the search index.
   URLs are `/assessments/Unit_X/<Name>.html`
-- `/assessments/index.html` lists everything &mdash; also unlisted, a bookmark
+- `/assessments/index.html` lists everything - also unlisted, a bookmark
   for the teacher. Built by the same script; a partial build leaves it alone
 - **Assessment rhythm:** one quiz about 3-4 lessons into a unit, then a test
   over the whole unit. A second quiz would sit back to back with the test, so
@@ -81,7 +81,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 ## Widgets
 - Embed: `{{< include /assets/Unit_X/widget.html >}}`
 - Math API (from `scripts/inject-custom.html`): `window.setMath(el, tex, display)`, `window.qwTypesetMath(el)`
-- **Themes — 5 canonical names:** `classic` (default/flatly-style), `ocean`, `midnight`, `darcula`, `terminal`
+- **Themes - 5 canonical names:** `classic` (default/flatly-style), `ocean`, `midnight`, `darcula`, `terminal`
 - Theme storage key: `qw_theme_v1` in localStorage (no "theme-" prefix)
 - Widgets with pickers: prime_factorization_game, slope-intercept-form-game, function_machine_guess
 - Widgets without pickers (read default on init only): vertex_form-widget, slope-intercept-form-widget, correlation, slope-widget
@@ -91,8 +91,42 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Step macros: `\stepnote{text}`, `\snplus{3}`, `\snminus{5}`
 - Macros defined in `macros.tex` and `mathjax-macros.html`
 
+## Writing Style
+
+**Who is reading this.** About 80% of the students are not native English
+speakers. Many read well below grade level, and some have never been to school
+before and are placed in Algebra 1 because of their age. Reading is the barrier,
+not the mathematics. Every sentence a student has to decode twice is a sentence
+that costs them the math.
+
+Write for that reader:
+
+- **Short sentences.** One idea each. Split a sentence before adding a clause
+- **Common words.** Prefer "use" to "utilize", "shows" to "demonstrates",
+  "same" to "equivalent" outside the glossary term itself
+- **No colloquialisms or figurative idioms**, where the literal words do not
+  give the meaning: "earns its keep", "comes in handy", "takes forever",
+  "falls apart", "gets in the way", "what your gut tells you". Plain phrasal
+  verbs ("show up", "figure out") are fine
+- **No en dashes or em dashes** anywhere, including `&mdash;` entities. Use a
+  spaced hyphen, a comma, or a new sentence
+- **Lead with the concrete.** A number, a picture, or a story first; the general
+  rule after. The money model in 1.1.5 is the pattern to copy
+- **Do not let prose carry the math.** If a step matters, it belongs in a
+  worked example, a labelled figure, or a fill-in blank, not buried in a
+  paragraph
+
+**The mathematics does not get easier.** These students still sit the EOC, and
+it is written at full difficulty in dense language. Simplify the sentence, never
+the problem: keep the multi-step work, the negatives, the word problems, the
+rigour. The goal is that reading stops hiding what a student actually knows.
+
+Because EOC items are wordy, the book should also build that reading up rather
+than avoid it: introduce a type of problem in plain language first, then show
+the same problem worded the way the test words it.
+
 ## Cost/Workflow Preferences
-- **No Task/Explore subagents** — use Grep and Glob directly for code searches
+- **No Task/Explore subagents** - use Grep and Glob directly for code searches
 - Start a **new session** when switching to a different task area
 - Run `/compact` when context grows long (after completing a chunk of work)
 - Use **Haiku** (`/model claude-haiku-4-5-20251001`) for simple questions; switch back to Sonnet for complex edits

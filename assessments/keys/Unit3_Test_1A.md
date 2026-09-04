@@ -6,8 +6,8 @@
 6. $r = 4$
 7. $m = 10$
 8. **No solution.** Both sides simplify to $4t$, leaving $-7 = 2$, which is never true.
-9. $x > 6$ &mdash; open circle at $6$, shaded to the right.
-10. $z \ge -3$ &mdash; closed circle at $-3$, shaded to the right. (Dividing by $-3$ **flips** the inequality.)
+9. $x > 6$ - open circle at $6$, shaded to the right.
+10. $z \ge -3$ - closed circle at $-3$, shaded to the right. (Dividing by $-3$ **flips** the inequality.)
 11. $h = \dfrac{V}{\pi r^2}$
 12. $t = \dfrac{P - 2h}{3}$
 13. $x = \dfrac{2y - b}{a}$

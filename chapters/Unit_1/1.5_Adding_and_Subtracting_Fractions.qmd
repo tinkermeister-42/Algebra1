@@ -19,7 +19,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}

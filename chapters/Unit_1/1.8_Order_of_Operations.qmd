@@ -27,7 +27,7 @@ In this lesson, you'll learn how to follow those rules correctly, even when nega
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"} &mdash; fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"} - fill-in notes to print and write on.
 :::
 
 {{< warmup >}}
@@ -387,7 +387,7 @@ $$
 
 This might feel like just number-crunching, but it lays the foundation for Algebra. You’ll need these skills to simplify expressions, solve equations, and understand formulas.
 
-Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you can’t simplify numbers correctly, the rest will fall apart.
+Later in Algebra, you’ll see variables, combining like terms, and the distributive property. If you cannot simplify numbers correctly, the rest will not work.
 
 :::{.real-world title="Coupons and Gift Cards"}
 You get a $25\%$ off coupon and a $\$10$ gift card. The item costs $\$40$.
