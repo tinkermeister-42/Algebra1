@@ -97,3 +97,12 @@ ol > li, table, figure, .answer-key { break-inside: avoid; page-break-inside: av
   body { background: #fff; font-size: 11pt; }
   .sheet { width: auto; margin: 0; padding: 0; box-shadow: none; }
 }
+
+/* ---------- answers, next to their question ---------- */
+.ans {
+  color: var(--key); margin: 2px 0 10px; padding-left: 10px;
+  border-left: 2.5px solid var(--key);
+}
+.ans > :first-child { margin-top: 0; }
+.ans > :last-child  { margin-bottom: 0; }
+.ans ol { margin: 0; }
