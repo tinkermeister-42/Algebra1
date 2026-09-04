@@ -138,6 +138,28 @@ Because EOC items are wordy, the book should also build that reading up rather
 than avoid it: introduce a type of problem in plain language first, then show
 the same problem worded the way the test words it.
 
+## Curriculum Judgment
+
+**Do not propose cutting a lesson.** The teacher has taught geometry, statistics,
+Algebra 2 and Algebra 1, and did mathematics professionally for twenty years
+before that. Scope decisions are his.
+
+Analysis that ranked lessons by EOC standards coverage got three cuts wrong in
+a row, because what a lesson is for is not visible in its text:
+
+- **1.6 and 1.7 (percents)** looked unused: zero downstream references, no
+  standard names it. They are the most transferable content in the book, and
+  percent is what `A1.DS.A.4` calls relative frequency
+- **1.2 (prime factorization)** looked unused because Units 5 and 6 call the
+  same skill "factoring". Its numeric rehearsal is a prerequisite for nine of
+  the twenty-six lessons that follow. It is also how multiplication facts get
+  retaught to students who never learned them, in a form a fifteen-year-old
+  will accept
+
+A grep measures vocabulary, not dependency, and never measures purpose. A
+lesson may exist for fluency, for confidence, or for a student who leaves
+school this year. Report what the measurements say and let him decide.
+
 ## Cost/Workflow Preferences
 - **No Task/Explore subagents**: use Grep and Glob directly for code searches
 - Start a **new session** when switching to a different task area
