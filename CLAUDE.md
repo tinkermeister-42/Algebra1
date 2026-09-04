@@ -60,6 +60,12 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   `assessments/Unit_X/<Name>.html` and `<Name>_KEY.html`
 - Answer keys are authored separately in `assessments/keys/<Name>.md` so the
   quiz sources stay exactly as written; a key file is optional
+- **A key shows each answer under its own question**, in red, and carries no
+  work space. The builder matches the key's `12.` to question 12 in the paper
+  (a bold `**12.**`, an `<ol>` item, or an `## 12.` section) and drops the
+  answer in there. Anything it cannot match falls back to a block at the end,
+  so a key that grows a trailing "Answer Key" heading means the numbering
+  stopped lining up
 - Self-contained: no JS, no CDN. Math is MathML, converted by pandoc
 - **Work space is measured, not trusted.** Sources mark out room three ways
   (`<br>` runs, `\vspace`, raw `{=latex}`) and some not at all, so the builder

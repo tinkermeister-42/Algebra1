@@ -147,6 +147,118 @@ def ensure_room(body):
     return "".join(out)
 
 
+ANS_SPLIT = "<!--ANSSPLIT-->"
+
+
+def split_key(key_md):
+    """The key markdown as {question number: markdown for that answer}.
+
+    A key is a numbered list, one entry per question, so an entry runs from
+    its own "12." to the next one at the start of a line."""
+    starts = [(m.start(), int(m.group(1)))
+              for m in re.finditer(r"^(\d+)\.[ \t]", key_md, re.M)]
+    if not starts:
+        return {}, key_md
+    out, before = {}, key_md[:starts[0][0]].strip()
+    for i, (pos, n) in enumerate(starts):
+        end = starts[i + 1][0] if i + 1 < len(starts) else len(key_md)
+        out[n] = re.sub(r"^\d+\.[ \t]+", "", key_md[pos:end].strip())
+    return out, before
+
+
+def render_answers(answers):
+    """One pandoc run for the lot, split back apart on a marker."""
+    if not answers:
+        return {}
+    nums = sorted(answers)
+    joined = ("\n\n" + ANS_SPLIT + "\n\n").join(answers[n] for n in nums)
+    parts = pandoc(joined).split(ANS_SPLIT)
+    if len(parts) != len(nums):       # a stray marker collision; give up cleanly
+        return {}
+    return {n: parts[i].strip() for i, n in enumerate(nums)}
+
+
+def questions(body):
+    """Where each numbered question ends, so an answer can be dropped there.
+
+    Three shapes come out of pandoc: a bold "12." heading the question, a real
+    ordered list, which pandoc restarts with start="12" whenever the source
+    breaks the numbering, and, on a paper whose sections are the questions, an
+    "## 12." heading.  Sub-parts are an <ol type="a"> inside one of those, and
+    never a question of their own."""
+    spots = {}
+    tag = re.compile(r'<(ol|ul)\b[^>]*>|</(ol|ul)>|<li>|</li>'
+                     r'|(?:<p>)?<strong>(\d+)\.(?!\d)')
+    stack, pending = [], []
+    for m in tag.finditer(body):
+        s = m.group(0)
+        if m.group(3):                            # a bold "12." question
+            if not stack:
+                spots[int(m.group(3))] = None     # closed by the next question
+            continue
+        if s.startswith("<ol") or s.startswith("<ul"):
+            start = re.search(r'start="(\d+)"', s)
+            typ = re.search(r'type="([^"]+)"', s)
+            numbered = s.startswith("<ol") and (not typ or typ.group(1) == "1")
+            stack.append([numbered, int(start.group(1)) if start else 1])
+            continue
+        if s in ("</ol>", "</ul>"):
+            if stack:
+                stack.pop()
+            continue
+        if s == "<li>":
+            if len(stack) == 1 and stack[0][0]:
+                pending.append(stack[0][1])
+                stack[0][1] += 1
+            continue
+        if s == "</li>":
+            if len(stack) == 1 and pending:
+                spots[pending.pop()] = m.start()
+
+    heads = r'(?:<p>)?<strong>\d+\.(?!\d)|<h2\b'
+    if not spots:
+        # a paper whose sections are its questions: "## 3. Fractions"
+        for m in re.finditer(r'<h2\b[^>]*>(\d+)\.(?!\d)', body):
+            spots[int(m.group(1))] = None
+        heads = r'<h2\b'
+
+    # a question with no list to close ends where the next one starts
+    opens = sorted(n for n, at in spots.items() if at is None)
+    if opens:
+        marks = [m.start() for m in re.finditer(heads, body)] + [len(body)]
+        for n in opens:
+            here = re.search(r'(?:<p>)?<strong>%d\.(?!\d)' % n, body) \
+                or re.search(r'<h2\b[^>]*>%d\.(?!\d)' % n, body)
+            if here is None:
+                del spots[n]
+                continue
+            spots[n] = next(x for x in marks if x > here.start())
+    return spots
+
+
+def inline_key(body, key_md):
+    """Put each answer under its own question, in red, instead of in a heap
+    at the end of the paper where nobody looks."""
+    answers, preamble = split_key(key_md)
+    rendered = render_answers(answers)
+    spots = questions(body)
+    used, edits = set(), []
+    for n, htm in rendered.items():
+        if n in spots:
+            edits.append((spots[n], '\n<div class="ans">%s</div>\n' % htm))
+            used.add(n)
+    for at, chunk in sorted(edits, reverse=True):
+        body = body[:at] + chunk + body[at:]
+
+    left = [n for n in sorted(rendered) if n not in used]
+    if preamble or left:
+        rest = ("\n".join('<div class="ans"><b>%d.</b> %s</div>' % (n, rendered[n])
+                           for n in left))
+        body += ('\n<div class="answer-key">\n<h2>Answer Key</h2>\n'
+                 + (pandoc(preamble) if preamble else "") + rest + "</div>\n")
+    return body
+
+
 def meta(path, text):
     """Title from the file's own H1, unit from the folder."""
     m = re.search(r"^#\s+(.+?)\s*$", text, re.M)
@@ -167,13 +279,18 @@ def build(path, key_md=None):
     body = text.split("\n", 1)[1] if text.startswith("#") else text
     body = pandoc(prepare(strip_name_line(body)))
     body = re.sub(r"^\s*<hr\s*/?>\s*", "", body)   # the masthead already rules off
-    body = ensure_room(body)
 
     tag = ""
-    if key_md is not None:
+    if key_md is None:
+        body = ensure_room(body)
+    else:
+        # A key is read, not written on, so it keeps none of the work space.
+        # Dropping it is what lets an answer sit next to its question instead
+        # of three pages below it.
         tag = ' <span class="keytag">ANSWER KEY</span>'
-        body += ('\n<div class="answer-key">\n<h2>Answer Key</h2>\n'
-                 + pandoc(key_md) + "</div>\n")
+        body = re.sub(r'\n?<div class="space"[^>]*></div>\n?', "", body)
+        body = re.sub(r'<div class="space"[^>]*>\s*</div>', "", body)
+        body = inline_key(body, key_md)
 
     name = os.path.splitext(os.path.basename(path))[0]
     out_dir = os.path.join(OUT, "Unit_%s" % unit)
