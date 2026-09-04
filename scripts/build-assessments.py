@@ -102,7 +102,9 @@ def prepare(text):
 
 
 def space(cm):
-    return '\n<div class="space" style="height:%.2fcm"></div>\n' % max(cm, 0.4)
+    # min-height, not height: on a key the answer is written into this block,
+    # and a long one must push the page down rather than run over what follows
+    return '\n<div class="space" style="min-height:%.2fcm"></div>\n' % max(cm, 0.4)
 
 
 # What a question needs underneath it if the source did not say.  Some sources
@@ -110,7 +112,7 @@ def space(cm):
 # after conversion and topped up rather than trusted.
 WORK_CM = 3.0        # anything you have to work out
 BLANK_CM = 0.8       # a question answered on a rule in its own text
-SPACE_RE = re.compile(r'height:([\d.]+)cm')
+SPACE_RE = re.compile(r'(?:min-)?height:([\d.]+)cm')
 # a question starts at a list item or at a bold "12." at the head of a paragraph
 QUESTION_RE = re.compile(r'<li>|<p><strong>\d+\.')
 
@@ -124,27 +126,63 @@ def ensure_room(body):
     marks = [m.start() for m in QUESTION_RE.finditer(body)]
     if not marks:
         return body
-    out, prev = [body[:marks[0]]], None
+    depth = list_depth(body)
+    out = [body[:marks[0]]]
     for i, start in enumerate(marks):
         end = marks[i + 1] if i + 1 < len(marks) else len(body)
         chunk = body[start:end]
-        have = sum(float(v) for v in SPACE_RE.findall(chunk))
+        # A sub-part is measured on its own content only.  Room that sits
+        # after the part belongs to the question as a whole, and counting it
+        # would leave the last part with no room at all.  A top-level question
+        # keeps the old reading: room after its </li> is still its own.
+        j = own_li_end(chunk) if chunk.startswith("<li>") and depth[start] > 1 else -1
+        mine = chunk[:j] if j != -1 else chunk
+        have = sum(float(v) for v in SPACE_RE.findall(mine))
         # a stem that only introduces its own a/b/c parts gets nothing: the
         # room belongs under the parts, not between them and the question
-        opens = len(re.findall(r"<[ou]l[ >]", chunk)) - len(re.findall(r"</[ou]l>", chunk))
-        if opens > 0 or "<img" in chunk or "<table" in chunk:
+        opens = len(re.findall(r"<[ou]l[ >]", mine)) - len(re.findall(r"</[ou]l>", mine))
+        if opens > 0 or "<img" in mine or "<table" in mine:
             want = 0.0
-        elif re.search(r"_{3,}", chunk):
+        elif re.search(r"_{3,}", mine):
             want = BLANK_CM
         else:
             want = WORK_CM
         if have < want:
             pad = space(want - have)
-            # inside the list item, not after it
-            j = chunk.rfind("</li>")
-            chunk = chunk[:j] + pad + chunk[j:] if j != -1 else chunk + pad
+            k = j if j != -1 else chunk.rfind("</li>")
+            chunk = chunk[:k] + pad + chunk[k:] if k != -1 else chunk + pad
         out.append(chunk)
     return "".join(out)
+
+
+def list_depth(body):
+    """How deep in <ol>/<ul> every offset of the body is."""
+    out, depth, at = {}, 0, 0
+    events = []
+    for m in re.finditer(r"<(?:ol|ul)\b[^>]*>|</(?:ol|ul)>", body):
+        events.append((m.start(), m.end(), m.group(0).startswith("</")))
+    class D(dict):
+        def __missing__(self, pos):
+            d = 0
+            for s, e, closing in events:
+                if s >= pos:
+                    break
+                d += -1 if closing else 1
+            return d
+    return D()
+
+
+def own_li_end(chunk):
+    """Where the list item this chunk opens with closes, skipping nested ones."""
+    depth = 0
+    for m in re.finditer(r"<li>|</li>", chunk):
+        if m.group(0) == "<li>":
+            depth += 1
+        else:
+            depth -= 1
+            if depth == 0:
+                return m.start()
+    return -1
 
 
 ANS_SPLIT = "<!--ANSSPLIT-->"
@@ -178,15 +216,61 @@ def render_answers(answers):
     return {n: parts[i].strip() for i, n in enumerate(nums)}
 
 
+def split_parts(md):
+    """An answer written "a. ... b. ... c. ..." split into its parts.
+
+    Returns None unless the letters run a, b, c... in order, which keeps an
+    "e.g." or a stray initial from being mistaken for a part label."""
+    marks = [(m.start(), m.end(), m.group(1))
+             for m in re.finditer(r"(?<![A-Za-z0-9])([a-h])\.[ \t]", md)]
+    if len(marks) < 2:
+        return None
+    for k, (_, _, letter) in enumerate(marks):
+        if letter != chr(ord("a") + k):
+            return None
+    out = []
+    for k, (_, end, _) in enumerate(marks):
+        stop = marks[k + 1][0] if k + 1 < len(marks) else len(md)
+        out.append(md[end:stop].strip().rstrip("&nbsp;").strip())
+    return out
+
+
+def part_blanks(body, start, end):
+    """The blank belonging to each lettered part of one question.
+
+    Only a blank inside a part's own list item counts.  A question often also
+    has room after its parts, and pairing an answer with that would push every
+    part's answer one place along."""
+    out, depth, here = [], 0, None
+    tag = re.compile(r'<(?:ol|ul)\b[^>]*>|</(?:ol|ul)>|<li>|</li>'
+                     r'|<div class="space"[^>]*>\s*</div>')
+    for m in tag.finditer(body, start, end):
+        s = m.group(0)
+        if s.startswith("<ol") or s.startswith("<ul"):
+            depth += 1
+        elif s in ("</ol>", "</ul>"):
+            depth -= 1
+        elif s == "<li>":
+            if depth == 1:
+                here = None
+                out.append(None)
+        elif s == "</li>":
+            pass
+        elif depth == 1 and out and out[-1] is None:
+            out[-1] = (m.start(), m.end(),
+                       re.match(r'<div class="space"[^>]*>', s).group(0))
+    return out if out and all(b is not None for b in out) else []
+
+
 def questions(body):
-    """Where each numbered question ends, so an answer can be dropped there.
+    """The span of each numbered question, so its answer can go inside it.
 
     Three shapes come out of pandoc: a bold "12." heading the question, a real
     ordered list, which pandoc restarts with start="12" whenever the source
     breaks the numbering, and, on a paper whose sections are the questions, an
     "## 12." heading.  Sub-parts are an <ol type="a"> inside one of those, and
     never a question of their own."""
-    spots = {}
+    spans = {}
     tag = re.compile(r'<(ol|ul)\b[^>]*>|</(ol|ul)>|<li>|</li>'
                      r'|(?:<p>)?<strong>(\d+)\.(?!\d)')
     stack, pending = [], []
@@ -194,7 +278,7 @@ def questions(body):
         s = m.group(0)
         if m.group(3):                            # a bold "12." question
             if not stack:
-                spots[int(m.group(3))] = None     # closed by the next question
+                spans[int(m.group(3))] = [m.start(), None]
             continue
         if s.startswith("<ol") or s.startswith("<ul"):
             start = re.search(r'start="(\d+)"', s)
@@ -208,54 +292,80 @@ def questions(body):
             continue
         if s == "<li>":
             if len(stack) == 1 and stack[0][0]:
-                pending.append(stack[0][1])
+                pending.append((stack[0][1], m.end()))
                 stack[0][1] += 1
             continue
         if s == "</li>":
             if len(stack) == 1 and pending:
-                spots[pending.pop()] = m.start()
+                n, at = pending.pop()
+                spans[n] = [at, m.start()]
 
     heads = r'(?:<p>)?<strong>\d+\.(?!\d)|<h2\b'
-    if not spots:
+    if not spans:
         # a paper whose sections are its questions: "## 3. Fractions"
         for m in re.finditer(r'<h2\b[^>]*>(\d+)\.(?!\d)', body):
-            spots[int(m.group(1))] = None
+            spans[int(m.group(1))] = [m.start(), None]
         heads = r'<h2\b'
 
-    # a question with no list to close ends where the next one starts
-    opens = sorted(n for n, at in spots.items() if at is None)
-    if opens:
-        marks = [m.start() for m in re.finditer(heads, body)] + [len(body)]
-        for n in opens:
-            here = re.search(r'(?:<p>)?<strong>%d\.(?!\d)' % n, body) \
-                or re.search(r'<h2\b[^>]*>%d\.(?!\d)' % n, body)
-            if here is None:
-                del spots[n]
-                continue
-            spots[n] = next(x for x in marks if x > here.start())
-    return spots
+    # a question with no list to close runs until the next one starts
+    marks = [m.start() for m in re.finditer(heads, body)] + [len(body)]
+    for n, span in list(spans.items()):
+        if span[1] is None:
+            span[1] = next(x for x in marks if x > span[0])
+    return spans
 
 
 def inline_key(body, key_md):
-    """Put each answer under its own question, in red, instead of in a heap
-    at the end of the paper where nobody looks."""
-    answers, preamble = split_key(key_md)
-    rendered = render_answers(answers)
-    spots = questions(body)
-    used, edits = set(), []
-    for n, htm in rendered.items():
-        if n in spots:
-            edits.append((spots[n], '\n<div class="ans">%s</div>\n' % htm))
-            used.add(n)
-    for at, chunk in sorted(edits, reverse=True):
-        body = body[:at] + chunk + body[at:]
+    """Answer the paper in the space provided.
 
-    left = [n for n in sorted(rendered) if n not in used]
+    The key keeps the quiz's own work space and the answer is written into it,
+    so a key sits page for page beside a student's copy.  Where a question has
+    lettered parts and each part has its own blank, each part is answered in
+    its own blank."""
+    answers, preamble = split_key(key_md)
+    spans = questions(body)
+
+    # one pandoc run for everything: whole answers, and the parts of any
+    # answer whose letters line up with that question's blanks
+    space_re = re.compile(r'(<div class="space"[^>]*>)\s*</div>')
+    jobs, plan = [], []
+    for n in sorted(answers):
+        if n not in spans:
+            continue
+        start, end = spans[n]
+        blanks = [(m.start(), m.end(), m.group(1))
+                  for m in space_re.finditer(body, start, end)]
+        lettered = part_blanks(body, start, end)
+        parts = split_parts(answers[n]) if lettered else None
+        if parts and len(parts) == len(lettered):
+            for blank, md in zip(lettered, parts):
+                plan.append((blank, len(jobs)))
+                jobs.append(md)
+        else:
+            plan.append((blanks[0] if blanks else (end, end, None), len(jobs)))
+            jobs.append(answers[n])
+
+    rendered = render_answers(dict(enumerate(jobs)))
+    if not rendered and jobs:                     # marker collision; fall back
+        plan = []
+
+    edits = []
+    for (a, b, open_tag), k in plan:
+        ans = '<div class="ans">%s</div>' % rendered[k]
+        # written inside the blank, so the key keeps the quiz's own layout
+        edits.append((a, b, open_tag + ans + "</div>" if open_tag
+                      else "\n" + ans + "\n"))
+    for a, b, chunk in sorted(edits, reverse=True):
+        body = body[:a] + chunk + body[b:]
+
+    placed = {n for n in answers if n in spans}
+    left = [n for n in sorted(answers) if n not in placed]
     if preamble or left:
-        rest = ("\n".join('<div class="ans"><b>%d.</b> %s</div>' % (n, rendered[n])
-                           for n in left))
+        rest = render_answers({n: answers[n] for n in left})
         body += ('\n<div class="answer-key">\n<h2>Answer Key</h2>\n'
-                 + (pandoc(preamble) if preamble else "") + rest + "</div>\n")
+                 + (pandoc(preamble) if preamble else "")
+                 + "\n".join('<div class="ans"><b>%d.</b> %s</div>' % (n, rest[n])
+                              for n in sorted(rest)) + "</div>\n")
     return body
 
 
@@ -280,16 +390,11 @@ def build(path, key_md=None):
     body = pandoc(prepare(strip_name_line(body)))
     body = re.sub(r"^\s*<hr\s*/?>\s*", "", body)   # the masthead already rules off
 
+    body = ensure_room(body)
+
     tag = ""
-    if key_md is None:
-        body = ensure_room(body)
-    else:
-        # A key is read, not written on, so it keeps none of the work space.
-        # Dropping it is what lets an answer sit next to its question instead
-        # of three pages below it.
+    if key_md is not None:
         tag = ' <span class="keytag">ANSWER KEY</span>'
-        body = re.sub(r'\n?<div class="space"[^>]*></div>\n?', "", body)
-        body = re.sub(r'<div class="space"[^>]*>\s*</div>', "", body)
         body = inline_key(body, key_md)
 
     name = os.path.splitext(os.path.basename(path))[0]
