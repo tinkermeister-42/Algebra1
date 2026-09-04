@@ -1,5 +1,5 @@
 1. Opens **up** and the vertex is a **minimum**, because $a = 1$ is positive.
-2. Domain: all real numbers. Range: $y \le 5$ - it opens **down**, so $5$ is a maximum.
+2. Domain: all real numbers. Range: $y \le 5$. It opens **down**, so $5$ is a maximum.
 3. Axis of symmetry $x = -5$; vertex $(-5, -9)$.
 4. Vertex $(2, -1)$; $x$-intercepts $(1, 0)$ and $(3, 0)$; $y$-intercept $(0, 3)$. Opens up.
 5. $(x - 3)(x - 5) = 0$, so $x = 3$ and $x = 5$.

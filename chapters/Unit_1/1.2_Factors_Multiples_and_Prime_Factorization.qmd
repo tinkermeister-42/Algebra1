@@ -100,7 +100,7 @@ A **composite number** has more than 2 factors.
 
 Examples: 4, 6, 8, 9, 10...
 
-The number 1 is **neither** prime nor composite. It has only one factor - itself - so it does not have the 2 factors a prime needs, and it does not have more than 2 either.
+The number 1 is **neither** prime nor composite. Its only factor is itself. A prime has exactly 2 factors and a composite has more than 2, so 1 is neither.
 
 :::{.real-world}
 People around the world spend years searching for giant prime numbers. The largest ones we’ve found so far have over 24 million digits!

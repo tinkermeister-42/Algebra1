@@ -43,9 +43,9 @@ d. $0.875$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
-a. $\tfrac{13}{40}$ - decimal: \_\_\_\_\_\_\_\_
-b. $\tfrac{2}{9}$ - decimal: \_\_\_\_\_\_\_\_
-c. $\tfrac{5}{24}$ - decimal: \_\_\_\_\_\_\_\_
+a. $\tfrac{13}{40}$ → decimal: \_\_\_\_\_\_\_\_
+b. $\tfrac{2}{9}$ → decimal: \_\_\_\_\_\_\_\_
+c. $\tfrac{5}{24}$ → decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
 

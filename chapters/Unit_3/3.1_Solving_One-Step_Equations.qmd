@@ -89,7 +89,7 @@ $$
 
 The weight of the apple is **3**.
 
-To {{< glink solve >}} the equation, we only needed one step -- subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink slug="inverse-operations" text="inverse operation" >}} for addition.
+To {{< glink solve >}} the equation, we only needed one step, subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink slug="inverse-operations" text="inverse operation" >}} for addition.
 
 We don't usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.
 

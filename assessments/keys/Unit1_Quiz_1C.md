@@ -1,7 +1,7 @@
 1. Marks in order at $-7,\,-2,\,-1,\,3,\,5$.
 2. a. $-9$  b. $7$  c. $0$
 3. a. $<$  b. $>$  c. $=$  d. $<$
-4. a. $-3 + (-9) = -12$ &nbsp; b. $6 + 2 = 8$ &nbsp; c. A negative is a debt. Taking a debt away leaves you better off, so the total goes **up** - removing a $\$5$ fee is the same as being handed $\$5$.
+4. a. $-3 + (-9) = -12$ &nbsp; b. $6 + 2 = 8$ &nbsp; c. A negative is a debt. Taking a debt away leaves you better off, so the total goes **up**. Removing a $\$5$ fee is the same as being handed $\$5$.
 5. a. $1, 2, 3, 4, 6, 8, 12, 24$  b. $3, 6, 9, 12, 15$
 6. a. prime  b. composite ($3\times 17$)  c. composite ($7\times 7$)
 7. $60 = 2^2 \cdot 3 \cdot 5$

@@ -96,7 +96,7 @@ Plot the solution to $x < 3$ on a number line.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_3.png)
 
-The arrow points left -- toward smaller numbers. The open circle again shows that 3 itself is not included.
+The arrow points left, toward smaller numbers. The open circle again shows that 3 itself is not included.
 
 ***
 

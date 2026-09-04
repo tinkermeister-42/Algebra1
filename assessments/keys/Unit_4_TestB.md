@@ -1,8 +1,8 @@
 1. $y = 7$
 2. $f(-3) = 13$
 3. $m = \dfrac{16 - 4}{5 - 1} = 3$
-4. zero - both points have $y = -4$, so the line is horizontal.
-5. negative - $m = \dfrac{1 - 5}{2 - 0} = -2$.
+4. zero. Both points have $y = -4$, so the line is horizontal.
+5. negative. $m = \dfrac{1 - 5}{2 - 0} = -2$.
 6. $x$-intercept $(3, 0)$; $y$-intercept $(0, -9)$
 7. $y = -2x + 5$
 8. $m = \dfrac{5 - (-3)}{4 - 0} = 2$ and the line passes through $(0, -3)$, so $y = 2x - 3$.

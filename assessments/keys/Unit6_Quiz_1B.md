@@ -6,4 +6,4 @@
 6. $(x - 5)(x + 5) = 0$, so the $x$-intercepts are $(5, 0)$ and $(-5, 0)$.
 7. a. $x = \pm 9$ &nbsp; b. $x = \pm\sqrt{18} = \pm 3\sqrt{2}$
 8. a. $x + 1 = \pm 6$, so $x = 5$ and $x = -7$. &nbsp; b. $x - 4 = \pm 4$, so $x = 8$ and $x = 0$.
-9. a. **Exactly one**, $x = -2$ - the only square root of $0$ is $0$. &nbsp; b. **No real solutions** - no real number squares to a negative.
+9. a. **Exactly one**, $x = -2$. The only square root of $0$ is $0$. &nbsp; b. **No real solutions**. No real number squares to a negative.

@@ -43,9 +43,9 @@ d. $2.4$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
-a. $\tfrac{7}{16}$ - decimal: \_\_\_\_\_\_\_\_
-b. $\tfrac{8}{11}$ - decimal: \_\_\_\_\_\_\_\_
-c. $\tfrac{5}{6}$ - decimal: \_\_\_\_\_\_\_\_
+a. $\tfrac{7}{16}$ → decimal: \_\_\_\_\_\_\_\_
+b. $\tfrac{8}{11}$ → decimal: \_\_\_\_\_\_\_\_
+c. $\tfrac{5}{6}$ → decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
 

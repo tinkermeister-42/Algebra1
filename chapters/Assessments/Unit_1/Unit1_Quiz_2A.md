@@ -46,11 +46,11 @@ d. $1.25$ → fraction: \_\_\_\_\_\_  percent: \_\_\_\_\_\_
 
 For each fraction: **write the decimal** (use a bar for repeating digits).
 
-a. $\tfrac{11}{25}$ - decimal: \_\_\_\_\_\_\_\_
+a. $\tfrac{11}{25}$ → decimal: \_\_\_\_\_\_\_\_
 
-b. $\tfrac{7}{12}$ - decimal: \_\_\_\_\_\_\_\_
+b. $\tfrac{7}{12}$ → decimal: \_\_\_\_\_\_\_\_
 
-c. $\tfrac{6}{20}$ - decimal: \_\_\_\_\_\_\_\_
+c. $\tfrac{6}{20}$ → decimal: \_\_\_\_\_\_\_\_
 
 <br><br>
 

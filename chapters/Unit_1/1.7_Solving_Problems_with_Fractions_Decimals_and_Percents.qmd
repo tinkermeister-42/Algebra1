@@ -259,7 +259,7 @@ $$
 To help avoid silly mistakes, ask yourself first, **"What answer do I expect?"**. This will help you decide if the answer you get makes sense.
 :::
 
-:::{.you-try title="If a survey found 550 -- which is 55% -- like cucumbers. How many students were surveyed?"}
+:::{.you-try title="A survey found that 550 students like cucumbers. That is 55% of the students surveyed. How many students were surveyed?"}
 First, convert to a decimal:
 $$
 55\% = 0.55

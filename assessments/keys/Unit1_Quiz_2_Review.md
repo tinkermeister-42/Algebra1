@@ -1,7 +1,7 @@
 1. a. $\tfrac{7}{9}$ &nbsp; b. $\tfrac{1}{2}$ &nbsp; c. $\tfrac{1}{3}$ &nbsp; d. $\tfrac{7}{8}$ &nbsp; e. $\tfrac{11}{12}$ &nbsp; f. $\tfrac{7}{15}$ &nbsp; g. $\tfrac{13}{30}$ &nbsp; h. $\tfrac{19}{12} = 1\tfrac{7}{12}$
-2. a. $3\tfrac{3}{5}$ &nbsp; b. $4\tfrac{3}{4}$ &nbsp; c. $3\tfrac{1}{3}$ &nbsp; d. $2\tfrac{1}{2}$ - borrow: $5\tfrac{1}{4} = 4\tfrac{5}{4}$ &nbsp; e. $3\tfrac{1}{2}$ - borrow: $7\tfrac{1}{8} = 6\tfrac{9}{8}$
+2. a. $3\tfrac{3}{5}$ &nbsp; b. $4\tfrac{3}{4}$ &nbsp; c. $3\tfrac{1}{3}$ &nbsp; d. $2\tfrac{1}{2}$ (borrow: $5\tfrac{1}{4} = 4\tfrac{5}{4}$) &nbsp; e. $3\tfrac{1}{2}$ (borrow: $7\tfrac{1}{8} = 6\tfrac{9}{8}$)
 3. a. $0.7$, $70\%$ &nbsp; b. $0.375$, $37.5\%$ &nbsp; c. $\tfrac{7}{20}$, $35\%$ &nbsp; d. $\tfrac{2}{25}$, $8\%$ &nbsp; e. $\tfrac{3}{5}$, $0.6$ &nbsp; f. $\tfrac{17}{20}$, $0.85$ &nbsp; g. $\tfrac{7}{5} = 1\tfrac{2}{5}$, $140\%$ &nbsp; h. $\tfrac{3}{2} = 1\tfrac{1}{2}$, $1.5$
-4. a. $0.45$ ends &nbsp; b. $0.\overline{4}$ repeats &nbsp; c. $0.875$ ends &nbsp; d. $0.1\overline{6}$ repeats &nbsp; e. $0.\overline{45}$ repeats &nbsp; f. $0.52$ ends - a fraction ends exactly when its simplified denominator has only $2$s and $5$s in it
+4. a. $0.45$ ends &nbsp; b. $0.\overline{4}$ repeats &nbsp; c. $0.875$ ends &nbsp; d. $0.1\overline{6}$ repeats &nbsp; e. $0.\overline{45}$ repeats &nbsp; f. $0.52$ ends. A fraction ends exactly when its simplified denominator has only $2$s and $5$s in it
 5. a. **Store B.** A takes off $\$80$; B takes off $\$90$; C takes off about $\$66.67$. &nbsp; b. $\tfrac{1}{2},\; 0.55,\; 58\%,\; \tfrac{3}{5}$ &nbsp; c. The **project**, at $0.9$ - the test is $0.85$ and the quiz $0.82$.
 6. a. $28$ &nbsp; b. $36$ &nbsp; c. $80$ &nbsp; d. $60$ &nbsp; e. $75\%$ &nbsp; f. $25\%$
 7. a. $\$37.10$ - $\$50 \to \$35$ after the discount, then $6\%$ tax &nbsp; b. $192$ students &nbsp; c. $92\%$

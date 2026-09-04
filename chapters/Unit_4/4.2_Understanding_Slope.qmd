@@ -105,8 +105,8 @@ These numbers match what your eyes already noticed in the stairways:
 
 * A and C go up (positive slope).
 * B and D go down (negative slope).
-* B and C are steep - $y$ changes more for them.
-* A and D are less steep - $y$ changes less for them.
+* B and C are steep. $y$ changes more for them.
+* A and D are less steep. $y$ changes less for them.
 
 ***
 

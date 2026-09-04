@@ -449,9 +449,13 @@ $$
 
 For a trinomial $x^2 + bx + c$:
 
-* If $c$ is positive, both factors have the same sign - If $b$ is positive → both positive - If $b$ is negative → both negative  
+* If $c$ is positive, both factors have the same sign.
+    * If $b$ is positive, both are positive.
+    * If $b$ is negative, both are negative.
 
-* If $c$ is negative, the factors have opposite signs - If $b$ is positive → the larger factor is positive - If $b$ is negative → the larger factor is negative  
+* If $c$ is negative, the factors have opposite signs.
+    * If $b$ is positive, the larger factor is positive.
+    * If $b$ is negative, the larger factor is negative.
 
 These patterns help you choose the correct factors quickly.
 :::

@@ -91,13 +91,13 @@ When you see "**=**", think "**is**". In the previous example, we could say "x *
 
 :::{.think title="How is this example like *The Great Cookie Caper*?"}
 
-- $4x + 1$ -- The story
+- $4x + 1$: the story
 
-- The variable $x$ -- The unknown thief
+- The variable $x$: the unknown thief
 
-- $x=3$ -- The thief *is* Bob.
+- $x=3$: the thief *is* Bob.
 
-- $4x + 1=13$ -- Bob stole the cookies.
+- $4x + 1=13$: Bob stole the cookies.
 
 :::
 

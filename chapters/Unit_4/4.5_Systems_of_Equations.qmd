@@ -193,8 +193,8 @@ In those cases, we can solve the system using **algebra** instead of a graph.
 
 There are two main algebraic methods:
 
-* **Substitution** - replace one variable with an equivalent expression
-* **Elimination** - add or subtract equations so one variable cancels out
+* **Substitution**: replace one variable with an equivalent expression
+* **Elimination**: add or subtract equations so one variable cancels out
 
 Let’s look at each one.
 

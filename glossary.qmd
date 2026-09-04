@@ -323,7 +323,7 @@ A flat grid formed by the intersection of the x-axis and y-axis at the origin. I
 Correlation describes how two variables are related. It tells you whether they tend to increase together, decrease together, or move in opposite ways. Correlation can be positive, negative, or close to zero if there is no clear pattern.
 
 > **Example:**  
-> As the number of hours you practice a skill increases, your performance often improves - this is a positive correlation.
+> As the number of hours you practice a skill increases, your performance often improves. That is a positive correlation.
 
 **See Also:** {{< glink "best-fit line" >}}, {{< glink "scatter plot" >}}
 
@@ -668,7 +668,7 @@ In $5^3$, the exponent is $3$, which means $5\cdot5\cdot5$.
 
 ### expression {#glossary-expression}
 
-A math sentence made up of numbers, variables, operations, and sometimes parentheses - but **no equals sign**.
+A math sentence made up of numbers, variables, operations, and sometimes parentheses. It has **no equals sign**.
 
 > **Example:**
 >
@@ -685,7 +685,7 @@ A math sentence made up of numbers, variables, operations, and sometimes parenth
 
 ### factor {#glossary-factor}
 
-A **factor** is a whole number that divides another number evenly - with no remainder.
+A **factor** is a whole number that divides another number evenly, with no remainder.
 
 If you can split something into equal groups with no leftovers, the group size is a factor.
 
@@ -729,7 +729,7 @@ Factoring means breaking something down into smaller parts that multiply togethe
 
 ### factor tree {#glossary-factor-tree}
 
-A factor tree is a way to break a number into its smallest building blocks - the prime numbers that multiply to make it.
+A factor tree is a way to break a number into its smallest building blocks. Those blocks are the prime numbers that multiply to make it.
 
 You keep splitting the number into smaller factors until you can’t go any further.
 
@@ -1005,11 +1005,11 @@ This usually happens when both sides of the equation simplify to the same expres
 
 ### infinity {#glossary-infinity}
 
-**Infinity** is not a number - it’s the idea of something that goes on forever without ending. In math, we use the symbol ∞ to represent infinity.
+**Infinity** is not a number. It is the idea of something that goes on forever without ending. In math, we use the symbol ∞ to represent infinity.
 
 > **Example:**
 > The number line keeps going toward **infinity** in both directions.
-> You can keep counting forever - there's no biggest number because numbers go on to **infinity**.
+> You can keep counting forever. There is no biggest number, because numbers go on to **infinity**.
 
 **See Also:** {{< glink "all real numbers" >}}
 
@@ -1047,7 +1047,7 @@ An integer is a whole number (not a fraction or decimal) that can be positive, n
 
 ### intersection {#glossary-intersection}
 
-An **intersection** is the point where two lines (or curves) meet on a graph. In a system of equations, the intersection represents the solution - the values that work in both equations.
+An **intersection** is the point where two lines (or curves) meet on a graph. In a system of equations, the intersection represents the solution. It gives the values that work in both equations.
 
 > **Example:**
 > The lines $y = 2x + 1$ and $y = -x + 4$ intersect at $(1, 3)$, meaning that $(1, 3)$ makes both equations true.
@@ -1138,7 +1138,7 @@ A number is less than (**<**) another number if it is further to the left on the
 
 ### like terms {#glossary-like-terms}
 
-Terms whose variable part matches exactly - same variables with the same exponents (order doesn’t matter). You can combine like terms by adding or subtracting their coefficients. Constants (no variables) are like terms with other constants.
+Terms whose variable part matches exactly. They have the same variables with the same exponents, and the order does not matter. You can combine like terms by adding or subtracting their coefficients. Constants (no variables) are like terms with other constants.
 
 > **Examples:**
 >
@@ -1453,7 +1453,7 @@ An **odd number** is a whole number that **cannot** be divided evenly by 2. It a
 
 ### operation {#glossary-operation}
 
-An operation is a **math action** you do with numbers - like adding, subtracting, multiplying, or dividing.
+An operation is a **math action** you do with numbers, such as adding, subtracting, multiplying, or dividing.
 
 > **Example:**  
 >   
@@ -1495,7 +1495,7 @@ The first number is the x-coordinate (horizontal position), and the second is th
 The specific order you follow to simplify expressions:
 **P**arentheses &rarr; **E**xponents &rarr; **M**ultiply/**D**ivide &rarr; **A**dd/**S**ubtract, or **PEMDAS**.
 
-Multiplication and division are done **left to right**, whichever comes first. Same with addition and subtraction - they are also done **left to right**.
+Multiplication and division are done **left to right**, whichever comes first. Addition and subtraction work the same way. They are also done **left to right**.
 
 > **Example:**
 >
@@ -1510,7 +1510,7 @@ Multiplication and division are done **left to right**, whichever comes first. S
 The point where the x-axis and y-axis intersect, written as (0, 0). It’s the “starting point” for locating all other points on the coordinate plane.
 
 > **Example:**
-> The origin is where both coordinates are zero - right in the center of the grid.
+> The origin is where both coordinates are zero. It sits right in the center of the grid.
 
 **See Also:** {{< glink "coordinate plane" >}}, {{< glink "ordered pair" >}}, {{< glink axis >}}
 
@@ -1620,12 +1620,12 @@ Place value tells you **how much each digit is worth** based on where it is in t
 
 **PEMDAS** is an acronym that helps us remember the order of operations.
 
-**P** - parentheses
-**E** - exponents
-**M** - multiplication
-**D** - division
-**A** - addition
-**S** - subtraction
+**P**: parentheses
+**E**: exponents
+**M**: multiplication
+**D**: division
+**A**: addition
+**S**: subtraction
 
 Some people remember PEMDAS as "**P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally".
 
@@ -1668,7 +1668,7 @@ In percent problems, **percent of** tells you to find a part of a whole using a 
 ### perpendicular {#glossary-perpendicular}
 
 Two lines that **intersect to form a right angle (90°)**.
-Their slopes are **negative reciprocals** - their products multiply to $-1$.
+Their slopes are **negative reciprocals**. The two slopes multiply to $-1$.
 
 > **Example:**
 > The line $y = 2x + 1$ is perpendicular to $y = -\tfrac{1}{2}x + 4$ because $2 \times (-\tfrac{1}{2}) = -1$.
@@ -2213,7 +2213,7 @@ In other words, the fraction can’t be reduced any further.
 
 ### simplify {#glossary-simplify}
 
-To **simplify** a number or expression means to **rewrite it in a cleaner or shorter way** - without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.
+To **simplify** a number or expression means to **rewrite it in a cleaner or shorter way**, without changing its value. In math, we often simplify fractions, expressions, or equations to make them easier to work with.
 
 > **Example:**
 >
@@ -2221,7 +2221,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 > 
 > $$\frac{12}{20} = \frac{3}{5}$$
 >
-> This simpler fraction means the same thing - it's just written with smaller numbers.
+> This simpler fraction means the same thing. It is just written with smaller numbers.
 
 **See Also:** {{< glink "simplest form" >}}, {{< glink expression >}}, {{< glink "combine like terms" >}}, {{< glink "distributive property" >}}, {{< glink expand >}}
 
@@ -2229,7 +2229,7 @@ To **simplify** a number or expression means to **rewrite it in a cleaner or sho
 
 ### skip count {#glossary-skip-count}
 
-Skip counting means **counting forward (or backward) by a number other than 1** - like 2, 5, or 10. It’s a way to count faster using patterns.
+Skip counting means **counting forward (or backward) by a number other than 1**, such as 2, 5, or 10. It’s a way to count faster using patterns.
 
 > **Example:**
 
@@ -2245,7 +2245,7 @@ Skip counting means **counting forward (or backward) by a number other than 1** 
 
 ### slope {#glossary-slope}
 
-A number that shows how a line tilts - how much it goes **up or down** as you move **left or right** on a graph.
+A number that shows how a line tilts. It tells how much the line goes **up or down** as you move **left or right** on a graph.
 It describes both the **direction** and the **steepness** of a line.
 
 If the line goes **up** from left to right, the slope is **positive**.
@@ -2328,7 +2328,7 @@ For an inequality, the solution set is often many numbers, like all numbers grea
 
 ### solve {#glossary-solve}
 
-To **solve** an equation means to find every value of the variable that makes the equation true - so both sides are equal. The answer(s) you find are the solution (or **solution set**).
+To **solve** an equation means to find every value of the variable that makes the equation true, so both sides are equal. The answer(s) you find are the solution (or **solution set**).
 
 > **Example:**
 >
@@ -2588,7 +2588,7 @@ Up and down, like a flagpole.
 
 ### whole {#glossary-whole}
 
-The whole is the **total amount** - it’s everything being considered before taking parts.
+The whole is the **total amount**. It is everything being considered before taking parts.
 
 > **Example:**  
 >   

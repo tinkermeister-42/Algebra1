@@ -73,10 +73,10 @@ Let’s look at the rules:
 
 We often remember the order using **PEMDAS**:
 
-* **P** - Parentheses $(...)$
-* **E** - Exponents (like $3^2$)
-* **M/D** - Multiplication ($\times$) and Division ($\div$)
-* **A/S** - Addition ($+$) and Subtraction ($-$)
+* **P**: Parentheses $(...)$
+* **E**: Exponents (like $3^2$)
+* **M/D**: Multiplication ($\times$) and Division ($\div$)
+* **A/S**: Addition ($+$) and Subtraction ($-$)
 
 **Note:**
 

@@ -1,4 +1,4 @@
-# Algebra 1 Textbook - Project Context
+# Algebra 1 Textbook: Project Context
 
 ## Build & Deploy
 - **Render:** `quarto render --to html`
@@ -51,7 +51,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - Each lesson `.qmd` links to its handout via a `.guided-notes-link` div above `{{< warmup >}}`
 - **Lesson and handout are one change.** Editing an example, a practice problem, or an
   answer in a lesson `.qmd` means editing `guided_notes/src/#.#.html` to match and
-  rebuilding - the handout restates the same problems, so the two drift silently.
+  rebuilding. The handout restates the same problems, so the two drift silently.
 - See `guided_notes/README.md` for the shorthand tokens and building blocks
 
 ## Assessments
@@ -68,7 +68,7 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
   `resources:` but nothing links to them and they are not in the search index.
   URLs are `/assessments/Unit_X/<Name>.html`
-- `/assessments/index.html` lists everything - also unlisted, a bookmark
+- `/assessments/index.html` lists everything. It is also unlisted, a bookmark
   for the teacher. Built by the same script; a partial build leaves it alone
 - **Assessment rhythm:** one quiz about 3-4 lessons into a unit, then a test
   over the whole unit. A second quiz would sit back to back with the test, so
@@ -108,8 +108,12 @@ Write for that reader:
   give the meaning: "earns its keep", "comes in handy", "takes forever",
   "falls apart", "gets in the way", "what your gut tells you". Plain phrasal
   verbs ("show up", "figure out") are fine
-- **No en dashes or em dashes** anywhere, including `&mdash;` entities. Use a
-  spaced hyphen, a comma, or a new sentence
+- **No dash asides.** AI writes "the total goes up - removing a fee is like
+  being handed the money" constantly; this teacher almost never does. The fix is
+  not a different dash character, it is a different sentence. Split it in two,
+  use a comma, or put a short aside in parentheses. Labels in a list take a
+  colon ("**Substitution**: replace one variable"). Section headings keep the
+  spaced hyphen they already use
 - **Lead with the concrete.** A number, a picture, or a story first; the general
   rule after. The money model in 1.1.5 is the pattern to copy
 - **Do not let prose carry the math.** If a step matters, it belongs in a
@@ -126,7 +130,7 @@ than avoid it: introduce a type of problem in plain language first, then show
 the same problem worded the way the test words it.
 
 ## Cost/Workflow Preferences
-- **No Task/Explore subagents** - use Grep and Glob directly for code searches
+- **No Task/Explore subagents**: use Grep and Glob directly for code searches
 - Start a **new session** when switching to a different task area
 - Run `/compact` when context grows long (after completing a chunk of work)
 - Use **Haiku** (`/model claude-haiku-4-5-20251001`) for simple questions; switch back to Sonnet for complex edits

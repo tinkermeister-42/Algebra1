@@ -15,8 +15,8 @@
 15. negative
 16. zero
 17. undefined
-18. undefined - both points have $x = 5$, so the line is vertical
-19. zero - both points have $y = 6$, so the line is horizontal
+18. undefined. Both points have $x = 5$, so the line is vertical
+19. zero. Both points have $y = 6$, so the line is horizontal
 20. From $(1, 2)$: down $1$, right $3$, repeatedly (and up $1$, left $3$ the other way).
 21. From $(-2, 1)$: up $2$, right $1$, repeatedly.
 22. From $(0, -3)$: up $3$, right $4$, repeatedly.
