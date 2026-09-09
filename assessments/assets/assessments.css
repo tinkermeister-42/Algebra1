@@ -134,3 +134,11 @@ h2, h3 { break-after: avoid; page-break-after: avoid; break-inside: avoid; }
 .ans > :first-child { margin-top: 0; }
 .ans > :last-child  { margin-bottom: 0; }
 .ans ol { margin: 0; }
+
+/* An answer written into the quiz's own work space carries no box of its own.
+   The space is a min-height, so every margin the answer adds is height the
+   quiz did not ask for, and a page of them is what stops a key sitting page
+   for page beside a student's copy.  A student writes bigger than 11pt type,
+   so an answer that still does not fit is a question with too little room. */
+.space > .ans { margin: 0; line-height: 1.3; }
+.space > .ans p { margin: 1px 0; }

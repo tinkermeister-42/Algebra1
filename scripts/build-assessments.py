@@ -91,7 +91,7 @@ def prepare(text):
     # runs of <br> - in these sources even a doubled break after a question
     # means "room to work", not a line break
     def brs(m):
-        return space(m.group(0).lower().count("<br") * 0.6)
+        return space(br_room(m.group(0).lower().count("<br")))
     text = re.sub(r"(?:\s*<br\s*/?>){2,}", brs, text)
 
     # The sources' own page breaks go, for the same reason the work space is
@@ -106,6 +106,27 @@ def prepare(text):
     text = re.sub(r":::\{[^}]*\}", "<div>", text)
     text = re.sub(r"^:::\s*$", "</div>", text, flags=re.M)
     return text
+
+
+BR_CM = 0.6          # one line of a student's handwriting
+BR_FULL = 5          # lines of a run taken at face value
+
+
+def br_room(n):
+    """How much room a run of n <br> is really asking for.
+
+    The run lengths across the sources cluster on 5, 6, 8 and 10 - 254 runs at
+    those against 9 at four and 6 at nine.  Somebody measuring what a question
+    needs does not land on round numbers, and the same ten lines sit under
+    "give the domain" and under "solve with the quadratic formula".  Past a
+    handful of lines the run was filling out the page, not the answer, and the
+    page is the builder's job now, so the tail of a long run counts for half.
+    Short runs, which are the ones that were measured, are untouched.
+
+    The drawn answers on these sheets are factor trees and number lines - the
+    graph grids are all images, which are measured as they stand - and the
+    curve still leaves those 3cm to 7.5cm, which is a tree of four levels."""
+    return BR_CM * min(n, BR_FULL) + BR_CM * 0.5 * max(0, n - BR_FULL)
 
 
 def space(cm):

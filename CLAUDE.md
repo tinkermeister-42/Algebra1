@@ -69,12 +69,22 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   underneath. Anything it cannot match at all falls back to a block at the end,
   so a key that grows a trailing "Answer Key" heading means the numbering
   stopped lining up
+- **Page for page holds by page, not by page count.** Key page N carries the
+  same questions as sheet page N. A key still runs a page longer where the
+  answers it adds outweigh the name line it drops, and that is fine; buying
+  the count back would mean taking room away from the student
 - Self-contained: no JS, no CDN. Math is MathML, converted by pandoc
 - **Work space is measured, not trusted.** Sources mark out room three ways
   (`<br>` runs, `\vspace`, raw `{=latex}`) and some not at all, so the builder
   tops every question up: 3cm to work in, 0.8cm if it is answered on a rule in
   its own text, 0.4cm if it is answered by circling a choice already printed,
   none for a figure or a question stem introducing its parts
+- **A long `<br>` run counts for less.** The run lengths cluster on 5, 6, 8 and
+  10 (254 runs) against 9 at four and 6 at nine, and the same ten lines sit
+  under "give the domain" and under "solve with the quadratic formula". Round
+  numbers mean somebody filling out a page, not measuring a question, so a run
+  earns 0.6cm a line for five lines and 0.3cm a line after that. `\vspace`,
+  which is written in cm and so is deliberate, is taken as it stands
 - **Page breaks are measured too, and the sources' own are dropped.** They were
   placed against the teacher's older PDF export, where a page held different
   amounts. Kept, they fired after the content had already run onto the next
