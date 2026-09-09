@@ -44,8 +44,6 @@ a. $-4 - 7 =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
 
 b. $3 - (-8) =$ \_\_\_\_\_\_\_\_\_\_\_ $=$ \_\_\_\_\_\_
 
-c. Explain, using money, why subtracting a negative makes the answer bigger.
-<br><br><br>
 
 ***
 
@@ -103,6 +101,7 @@ Complete the factor tree for $84$ and write its prime factorization.
 ## 1.3 - GCF and Simplifying Fractions
 
 **8. I can find the GCF using factor trees**
+
 Use factor trees to find the GCF of $24$ and $36$.
 <br>
 <br>
@@ -115,6 +114,7 @@ Use factor trees to find the GCF of $24$ and $36$.
 <br>
 
 **9. I can simplify fractions using the GCF**
+
 Write the fraction $\frac{42}{56}$ in simplest form.
 <br>
 <br>
@@ -127,6 +127,7 @@ Write the fraction $\frac{42}{56}$ in simplest form.
 <br>
 
 **10. I can solve real-world problems using the GCF**
+
 A teacher has $32$ pencils and $24$ erasers. She wants to make identical prize packs with no leftovers.
 
 a. What is the greatest number of packs she can make?

@@ -73,7 +73,21 @@ Syntax: `:::{.callout-type title="Title"} … :::`
 - **Work space is measured, not trusted.** Sources mark out room three ways
   (`<br>` runs, `\vspace`, raw `{=latex}`) and some not at all, so the builder
   tops every question up: 3cm to work in, 0.8cm if it is answered on a rule in
-  its own text, none for a figure or a question stem introducing its parts
+  its own text, 0.4cm if it is answered by circling a choice already printed,
+  none for a figure or a question stem introducing its parts
+- **Page breaks are measured too, and the sources' own are dropped.** They were
+  placed against the teacher's older PDF export, where a page held different
+  amounts. Kept, they fired after the content had already run onto the next
+  page and left it nearly blank. Write `<div class="pagebreak"></div>` if a
+  sheet ever has to start a part on a fresh page on purpose
+- **A question and the room to answer it stay on one page.** A page ending
+  between them hands the student a stem with nowhere to work. So the builder
+  wraps a loose `**4.**` question and everything under it in one `.q` block,
+  pulls a figure that fell out of its list item back inside, and tags a bold
+  line that only introduces the questions below it `.lead`; the stylesheet
+  keeps each whole. A question split into `a, b, c` is the exception: it may
+  break between parts, since each part is its own item with its own room, and
+  only the stem and the first part have to stay together
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`
   `resources:` but nothing links to them and they are not in the search index.
   URLs are `/assessments/Unit_X/<Name>.html`

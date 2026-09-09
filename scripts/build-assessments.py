@@ -15,6 +15,11 @@ you know the URL.
 Math is converted to MathML by pandoc, so a page needs no JavaScript and no
 CDN - the same rule the guided notes follow.
 
+The page is laid out for paper.  A question and the room to answer it are one
+thing: the builder makes each question a single block so a page cannot end
+between them, drops the page breaks the sources placed against the teacher's
+older PDF export, and lets the page fill instead.
+
 An index is written to assessments/index.html listing everything.  It is a
 resource like the pages it lists: nothing in the book links to it and it is
 not in the search index, so it is a bookmark for the teacher, not a way in for
@@ -78,9 +83,7 @@ def prepare(text):
     # ```{=latex} ... ``` blocks: keep the \vspace inside, drop the rest
     def latex_block(m):
         cm = sum(float(v) for v in re.findall(r"\\vspace\{([\d.]+)cm\}", m.group(1)))
-        brk = "\\newpage" in m.group(1)
-        out = ('\n<div class="pagebreak"></div>\n' if brk else "")
-        return out + (space(cm) if cm else "")
+        return space(cm) if cm else ""
 
     text = re.sub(r"```\{=latex\}(.*?)```", latex_block, text, flags=re.S)
     text = re.sub(r"\\vspace\{([\d.]+)cm\}", lambda m: space(float(m.group(1))), text)
@@ -91,9 +94,13 @@ def prepare(text):
         return space(m.group(0).lower().count("<br") * 0.6)
     text = re.sub(r"(?:\s*<br\s*/?>){2,}", brs, text)
 
-    # the sources' own page breaks
-    text = text.replace('<div style="page-break-after: always;"></div>',
-                        '<div class="pagebreak"></div>')
+    # The sources' own page breaks go, for the same reason the work space is
+    # measured rather than trusted: they were placed against the teacher's
+    # older PDF export, where a page held different amounts.  Kept, they fire
+    # after the content has already run onto the next page and leave it nearly
+    # blank - 27 sheets of it across the set.  Questions are whole blocks now,
+    # so the page can only break between them anyway.
+    text = re.sub(r'<div style="page-break-after: *always;?"> *</div>', "", text)
     # Quarto column layout -> a plain two-up row
     text = re.sub(r":::\{layout-ncol=2\}", '<div class="columns">', text)
     text = re.sub(r":::\{[^}]*\}", "<div>", text)
@@ -112,21 +119,27 @@ def space(cm):
 # after conversion and topped up rather than trusted.
 WORK_CM = 3.0        # anything you have to work out
 BLANK_CM = 0.8       # a question answered on a rule in its own text
+PICK_CM = 0.4        # a question answered by circling one of the choices given
 SPACE_RE = re.compile(r'(?:min-)?height:([\d.]+)cm')
 # a question starts at a list item or at a bold "12." at the head of a paragraph
 QUESTION_RE = re.compile(r'<li>|<p><strong>\d+\.')
+# "Circle one", "circle the correct answer", "underline the ..." - the student
+# marks the paper where it stands, so there is nothing to work out underneath
+PICK_RE = re.compile(r'\b(circle|underline)\b', re.I)
 
 
 def ensure_room(body):
     """Top every question up to a workable amount of space.
 
     A question that is answered on a rule inside its own text needs very
-    little; one that says solve, simplify or explain needs room to show the
-    work; one that already carries a figure needs none."""
+    little; one that is answered by circling a choice already printed needs
+    almost none; one that says solve, simplify or explain needs room to show
+    the work; one that already carries a figure needs none."""
     marks = [m.start() for m in QUESTION_RE.finditer(body)]
     if not marks:
         return body
     depth = list_depth(body)
+    picks = pick_spans(body)
     out = [body[:marks[0]]]
     for i, start in enumerate(marks):
         end = marks[i + 1] if i + 1 < len(marks) else len(body)
@@ -143,6 +156,8 @@ def ensure_room(body):
         opens = len(re.findall(r"<[ou]l[ >]", mine)) - len(re.findall(r"</[ou]l>", mine))
         if opens > 0 or "<img" in mine or "<table" in mine:
             want = 0.0
+        elif any(a <= start < b for a, b in picks):
+            want = PICK_CM
         elif re.search(r"_{3,}", mine):
             want = BLANK_CM
         else:
@@ -153,6 +168,23 @@ def ensure_room(body):
             chunk = chunk[:k] + pad + chunk[k:] if k != -1 else chunk + pad
         out.append(chunk)
     return "".join(out)
+
+
+def pick_spans(body):
+    """Where a "Circle one" instruction is in force.
+
+    It runs from the instruction to the next question or section heading, so
+    the parts it introduces are marked as answered on the paper as printed."""
+    stops = [m.start() for m in
+             re.finditer(r'(?:<p>)?<strong>\d+\.(?!\d)|<h[1-4]\b|<hr\b', body)]
+    out = []
+    for m in PICK_RE.finditer(body):
+        # the word inside a heading names the question, it does not instruct
+        line = body.rfind("\n", 0, m.start())
+        if re.match(r"\s*<h[1-4]\b", body[line + 1:m.start() + 1]):
+            continue
+        out.append((m.start(), next((s for s in stops if s > m.start()), len(body))))
+    return out
 
 
 def list_depth(body):
@@ -183,6 +215,89 @@ def own_li_end(chunk):
             if depth == 0:
                 return m.start()
     return -1
+
+
+# A question taller than this cannot be kept whole on a page it does not
+# start, so asking for it only buys a mostly blank page ahead of it.
+LOOSE_CM = 16.0
+
+
+def absorb_trailing(body):
+    """Pull a question's trailing blocks back inside its list item.
+
+    A source that leaves a blank line before a figure ends the list, so the
+    figure lands after </ol> as a sibling of the question it belongs to and
+    the page is free to break between them.  Everything from </ol> up to the
+    next heading, rule or list belongs to the last item, so put it there."""
+    out, at = [], 0
+    depth = list_depth(body)
+    for m in re.finditer(r"</(?:ol|ul)>", body):
+        if m.start() < at:                        # already moved with an earlier one
+            continue
+        if depth[m.start()] != 1:                 # a nested list, not a question
+            continue
+        rest = body[m.end():]
+        stop = re.search(r"<h[1-4]\b|<hr\b|<[ou]l\b|<div class=\"pagebreak\"", rest)
+        tail = rest[:stop.start() if stop else len(rest)]
+        # only content, and only a question's own: a numbered head starts a new one
+        if not tail.strip() or re.search(r"<strong>\d+\.(?!\d)", tail):
+            continue
+        close = body.rfind("</li>", at, m.start())
+        if close == -1:
+            continue
+        out.append(body[at:close])
+        out.append(tail.strip() + "\n")
+        out.append(body[close:m.end()])
+        at = m.end() + len(tail)
+    out.append(body[at:])
+    return "".join(out)
+
+
+def mark_leads(body):
+    """Tag a bold line that introduces the questions under it.
+
+    "**Solve each system. Show your work.**" is not a question, so nothing
+    held it to the ones it sets up and it could be left alone at the foot of a
+    page.  The stylesheet keeps a .lead with what follows."""
+    def one(m):
+        if re.match(r"\s*\d+\.(?!\d)", m.group(1)):    # a question, not a lead
+            return m.group(0)
+        return '<p class="lead"><strong>%s</strong></p>' % m.group(1)
+    return re.sub(r"<p><strong>([^<]*)</strong></p>", one, body)
+
+
+def group_questions(body):
+    """Wrap each loose question in one block, so a page cannot break inside it.
+
+    A question written as a list item is already one block and the stylesheet
+    keeps it whole.  One written as a bold "4." is a run of loose siblings -
+    the stem, the sentence setting it up, its lettered parts, its work space -
+    with nothing to hold them together, so a page can end between the question
+    and the room to answer it."""
+    heads = [m for m in re.finditer(r'(?:<p>)?<strong>(\d+)\.(?!\d)', body)]
+    depth = list_depth(body)
+    heads = [m for m in heads if depth[m.start()] == 0]
+    if not heads:
+        return body
+    bounds = sorted({m.start() for m in heads}
+                    | {m.start() for m in re.finditer(r'<h[1-4]\b|<hr\b', body)}
+                    | {m.start() for m in re.finditer(r'<div class="pagebreak"', body)})
+    out, at = [], 0
+    for m in heads:
+        end = next((b for b in bounds if b > m.start()), len(body))
+        chunk = body[m.start():end]
+        room = sum(float(v) for v in SPACE_RE.findall(chunk))
+        # a question broken into a, b, c may break between its parts: each part
+        # is its own item with its own room, and holding eight of them together
+        # only pushes the lot onto a fresh page
+        cls = "q parts" if re.search(r"<[ou]l\b", chunk) else "q"
+        if room > LOOSE_CM:
+            cls += " loose"
+        out.append(body[at:m.start()])
+        out.append('<div class="%s">\n%s\n</div>\n' % (cls, chunk.strip()))
+        at = end
+    out.append(body[at:])
+    return "".join(out)
 
 
 ANS_SPLIT = "<!--ANSSPLIT-->"
@@ -390,7 +505,8 @@ def build(path, key_md=None):
     body = pandoc(prepare(strip_name_line(body)))
     body = re.sub(r"^\s*<hr\s*/?>\s*", "", body)   # the masthead already rules off
 
-    body = ensure_room(body)
+    body = ensure_room(absorb_trailing(body))
+    body = group_questions(mark_leads(body))
 
     tag = ""
     if key_md is not None:

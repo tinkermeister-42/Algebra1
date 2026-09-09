@@ -89,8 +89,36 @@ figure { margin: 8px 0; text-align: center; }
   letter-spacing: .06em; padding: 1px 7px; border-radius: 3px; vertical-align: 3px;
 }
 
-/* keep a question and its work space together */
-ol > li, table, figure, .answer-key { break-inside: avoid; page-break-inside: avoid; }
+/* ---------- pagination ----------
+   A question and the room to answer it are one thing on paper.  A page that
+   ends between them hands the student a stem with nowhere to work, so every
+   question is one block that will not split: a list item, or the .q the
+   builder wraps a loose "4." in.  A question too tall to fit a page anyway is
+   marked .loose, because asking to keep that one whole only buys a blank page
+   in front of it. */
+.q, ol > li, table, figure, .answer-key { break-inside: avoid; page-break-inside: avoid; }
+.q { margin-bottom: 4px; }
+
+/* A question split into a, b, c is different: each part is its own item with
+   its own room, so the page may break between parts.  Holding all eight of a
+   review question's parts together only pushes the lot onto a fresh page and
+   leaves half of this one empty.  What must not come apart is the question and
+   the first part - a stem alone at the foot of a page. */
+.q.parts, .q.loose { break-inside: auto; page-break-inside: auto; }
+.q.parts > p, .q.parts > h3 { break-after: avoid; page-break-after: avoid; }
+
+/* work space never splits: half of it at the foot of one page and half at the
+   head of the next is not room to work in */
+.space { break-inside: avoid; page-break-inside: avoid; }
+
+/* a heading, or a bold line setting up the questions under it, is no use at
+   the foot of a page on its own */
+h2, h3 { break-after: avoid; page-break-after: avoid; break-inside: avoid; }
+.lead  { break-after: avoid; page-break-after: avoid; break-inside: avoid; }
+
+/* A source no longer places its own page breaks - the builder drops them and
+   lets the page fill.  This is here for a sheet that one day has to start a
+   part on a fresh page on purpose: write <div class="pagebreak"></div>. */
 .pagebreak { break-before: page; page-break-before: always; }
 
 @media print {
