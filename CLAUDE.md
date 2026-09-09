@@ -5,6 +5,30 @@
 - **Deploy:** `./deploy.sh` (git worktree → gh-pages branch)
 - **Watch assets:** `./scripts/watch-assets.sh` (run alongside `quarto preview`)
 
+**Every change gets deployed, so a container has to be able to run `./deploy.sh`.**
+A fresh Claude Code container has none of the four things it needs. Set them
+up before saying a change is done:
+
+| Need | Why | Get it |
+|---|---|---|
+| **quarto &ge; 1.7.0** | the Glossary extension refuses anything older, and the render dies before writing a file | tarball from `github.com/quarto-dev/quarto-cli/releases/download/v<V>/quarto-<V>-linux-amd64.tar.gz` into `/opt/quarto`, symlink `bin/quarto` onto the path |
+| **Chromium** | a Unit 1 lesson has a diagram quarto renders through Chrome; without it the render stops at file 5 with "Chrome not found" | already at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`; export `QUARTO_CHROMIUM` to point at it. Do **not** run `quarto install chromium` |
+| **pandoc** | `scripts/build-assessments.py` shells out to it | `apt-get install -y pandoc` |
+| **a clean tree** | `deploy.sh` refuses to run with uncommitted or staged changes | commit first |
+
+- **Downloads:** the sandbox proxy only serves GitHub for repos in this
+  session's scope. `add_repo` for `quarto-dev/quarto-cli` (read) opens the
+  release download. PyPI and npm are already allowed, `pip install quarto-cli`
+  is not (the classifier blocks it)
+- `deploy.sh` renders, runs `scripts/check-site-assets.py`, then force-pushes
+  the built `_book` to `gh-pages`. It takes a few minutes, so start it in the
+  background and wait on the log rather than a tool timeout
+- The push reports **"Bypassed rule violations ... Commits must have verified
+  signatures"**. That is the branch rule being waived, not a failure. Set
+  `SIGN_COMMITS=true` to sign the deploy commit instead
+- `main` and `gh-pages` are separate. Pushing to `main` publishes nothing;
+  only `./deploy.sh` moves the site
+
 ## Structure
 ```
 chapters/Unit_1…6/   # Lessons: #.#_Topic.qmd, index.qmd, Review.qmd
