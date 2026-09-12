@@ -162,7 +162,7 @@ $$
 There’s a variable term, $6x$, on one side and a constant, $42$, on the other. Solve to see:
 
 $$
-x = 7 \quad \text{(divide both sides by 6)}
+x = 7 \stepnote{divide both sides by 6}
 $$
 
 So this equation has one solution: $x = 7$.
@@ -181,7 +181,7 @@ $$
 The variable part $3x$ matches on both sides, but the constants $8$ and $1$ don’t.
 
 $$
-8 = 1 \quad \text{(after subtracting $3x$ from both sides)}
+8 = 1 \stepnote{after subtracting $3x$ from both sides}
 $$
 
 This is false, so the equation has no solution.
@@ -200,7 +200,7 @@ $$
 Both sides are identical.
 
 $$
-9 = 9 \quad \text{(after subtracting $7x$ from both sides)}
+9 = 9 \stepnote{after subtracting $7x$ from both sides}
 $$
 
 This is always true, so every value of $x$ works.
