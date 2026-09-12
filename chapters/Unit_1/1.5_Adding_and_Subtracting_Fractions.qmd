@@ -134,15 +134,15 @@ $$
 
 ### 1.5.2 - Adding Fractions with Unlike Denominators
 
-When fractions have **different denominators**, they describe pieces of **different sizes**.  
-Before we can combine them, we need to rewrite them so the pieces match.
+When two fractions have **different denominators**, their pieces are **different sizes**. We cannot count pieces of two different sizes together.
 
-Let's return to **Jack's pizza**. Jack ate
+So before we combine them, we make the pieces match.
 
-- $\frac{1}{3}$ of a pepperoni pizza  
-- $\frac{1}{4}$ of a cheese pizza  
+***
 
-At first, these pieces don't match.
+**Example 5:** $\frac{1}{3} + \frac{1}{4}$
+
+Look again at Jack's pizza. He ate $\frac{1}{3}$ of the pepperoni and $\frac{1}{4}$ of the cheese.
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -156,24 +156,12 @@ At first, these pieces don't match.
 :::
 ::::
 
-Even though Jack ate **one slice** of each pizza, those slices are **not the same size**.  
-So we can't just add $\frac{1}{3} + \frac{1}{4}$ yet.
+Jack ate **one slice** of each pizza, but a third is bigger than a fourth. Counting slices would say he ate "2 slices," and that does not tell us how much pizza.
 
-***
+So cut both pizzas again until every piece is the same size.
 
-A {{< glink "common denominator" >}} is a number that **both denominators divide into evenly**.
-
-To find one, list the multiples of each denominator and look for the first number that shows up in both lists.
-
-Multiples of $3$: $3, 6, 9, \mathbf{12}, 15, \dots$  
-Multiples of $4$: $4, 8, \mathbf{12}, 16, \dots$
-
-The first number they share is $12$, so $12$ is the **smallest** common denominator.
-
-Now divide to find what each fraction gets multiplied by:
-
-- $12 \div 3 = 4$, so each third becomes **4 equal pieces**
-- $12 \div 4 = 3$, so each fourth becomes **3 equal pieces**
+- Cut each third into $\color{red}4$ pieces. The pepperoni pizza now has $12$ pieces.
+- Cut each fourth into $\color{red}3$ pieces. The cheese pizza now has $12$ pieces.
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -187,25 +175,13 @@ Now divide to find what each fraction gets multiplied by:
 :::
 ::::
 
-Once the pieces match, the math works the same way as before.
+Now the pieces match. Jack's pepperoni slice is $4$ twelfths. His cheese slice is $3$ twelfths. Together that is $7$ twelfths.
 
-***
+Cutting a pizza into more pieces does not change how much pizza there is. It only changes how we count it.
 
-**Example 5:** $\frac{1}{3} + \frac{1}{4}$
-
-Multiples of $3$: $3, 6, 9, \mathbf{12}, \dots$  
-Multiples of $4$: $4, 8, \mathbf{12}, \dots$
-
-The common denominator is $12$. Now $12 \div 3 = 4$ and $12 \div 4 = 3$.
+We do not have to draw the pizzas. Here is the same problem done with math.
 $$
-\frac{1}{3} = \frac{\color{red}4}{\color{red}4} \times \frac{1}{3} = \frac{4}{12}
-\qquad
-\frac{1}{4} = \frac{\color{red}3}{\color{red}3} \times \frac{1}{4} = \frac{3}{12}
-$$
-
-Now combine:
-$$
-\frac{4}{12} + \frac{3}{12} = \frac{7}{12}
+\frac{\color{red}4}{\color{red}4} \times \frac{1}{3} + \frac{1}{4} \times \frac{\color{red}3}{\color{red}3} = \frac{4}{12} + \frac{3}{12} = \frac{7}{12}
 $$
 
 Jack ate $\frac{7}{12}$ of a pizza.
@@ -218,30 +194,39 @@ If you multiply only the bottom, you have changed it into a different number.
 
 ***
 
+The $12$ we cut both pizzas into is called a {{< glink "common denominator" >}}. It is a number that **both denominators divide into evenly**.
+
+To find one, list the multiples of each denominator and take the first number that shows up in both lists.
+
+Multiples of $3$: $3, 6, 9, \mathbf{12}, 15, \dots$  
+Multiples of $4$: $4, 8, \mathbf{12}, 16, \dots$
+
+The first number they share is $12$, so $12$ is the **smallest** common denominator.
+
+Then divide to find the red multipliers:
+
+- $12 \div 3 = \color{red}4$
+- $12 \div 4 = \color{red}3$
+
+Those are the same numbers we cut the slices into.
+
+***
+
 **Example 6:** $\frac{7}{8} - \frac{1}{4}$
 
 Multiples of $8$: $\mathbf{8}, 16, \dots$  
 Multiples of $4$: $4, \mathbf{8}, \dots$
 
-The common denominator is $8$. Now $8 \div 8 = 1$ and $8 \div 4 = 2$.
+The common denominator is $8$. Now $8 \div 4 = 2$. The first fraction is already in eighths, so only the second one changes.
 $$
-\frac{7}{8} = \frac{\color{red}1}{\color{red}1} \times \frac{7}{8} = \frac{7}{8}
-\qquad
-\frac{1}{4} = \frac{\color{red}2}{\color{red}2} \times \frac{1}{4} = \frac{2}{8}
-$$
-
-Now combine:
-$$
-\frac{7}{8} - \frac{2}{8} = \frac{5}{8}
+\frac{7}{8} - \frac{1}{4} \times \frac{\color{red}2}{\color{red}2} = \frac{7}{8} - \frac{2}{8} = \frac{5}{8}
 $$
 
 :::{.you-try title="Add $\frac{2}{3} + \frac{1}{6}$"}
 Multiples of $3$: $3, \mathbf{6}, \dots$  
 Multiples of $6$: $\mathbf{6}, 12, \dots$
 $$
-\frac{2}{3} = \frac{\color{red}2}{\color{red}2} \times \frac{2}{3} = \frac{4}{6}
-\qquad
-\frac{4}{6} + \frac{1}{6} = \frac{5}{6}
+\frac{\color{red}2}{\color{red}2} \times \frac{2}{3} + \frac{1}{6} = \frac{4}{6} + \frac{1}{6} = \frac{5}{6}
 $$
 :::
 
@@ -254,14 +239,7 @@ Multiples of $5$: $5, 10, 15, \mathbf{20}$
 
 The common denominator is $20$. Now $20 \div 4 = 5$ and $20 \div 5 = 4$.
 $$
-\frac{3}{4} = \frac{\color{red}5}{\color{red}5} \times \frac{3}{4} = \frac{15}{20}
-\qquad
-\frac{2}{5} = \frac{\color{red}4}{\color{red}4} \times \frac{2}{5} = \frac{8}{20}
-$$
-
-Now combine:
-$$
-\frac{15}{20} - \frac{8}{20} = \frac{7}{20}
+\frac{\color{red}5}{\color{red}5} \times \frac{3}{4} - \frac{2}{5} \times \frac{\color{red}4}{\color{red}4} = \frac{15}{20} - \frac{8}{20} = \frac{7}{20}
 $$
 
 ***
@@ -273,14 +251,7 @@ Multiples of $9$: $9, \mathbf{18}$
 
 The common denominator is $18$. Now $18 \div 6 = 3$ and $18 \div 9 = 2$.
 $$
-\frac{5}{6} = \frac{\color{red}3}{\color{red}3} \times \frac{5}{6} = \frac{15}{18}
-\qquad
-\frac{7}{9} = \frac{\color{red}2}{\color{red}2} \times \frac{7}{9} = \frac{14}{18}
-$$
-
-Now combine:
-$$
-\frac{15}{18} + \frac{14}{18} = \frac{29}{18} = 1\tfrac{11}{18}
+\frac{\color{red}3}{\color{red}3} \times \frac{5}{6} + \frac{7}{9} \times \frac{\color{red}2}{\color{red}2} = \frac{15}{18} + \frac{14}{18} = \frac{29}{18} = 1\tfrac{11}{18}
 $$
 
 ***
@@ -292,27 +263,15 @@ Multiples of $3$: $3, 6, 9, \mathbf{12}, \dots$
 
 The common denominator is $12$. Now $12 \div 4 = 3$ and $12 \div 3 = 4$.
 $$
-\frac{1}{4} = \frac{\color{red}3}{\color{red}3} \times \frac{1}{4} = \frac{3}{12}
-\qquad
-\frac{2}{3} = \frac{\color{red}4}{\color{red}4} \times \frac{2}{3} = \frac{8}{12}
+\frac{\color{red}3}{\color{red}3} \times \frac{1}{4} - \frac{2}{3} \times \frac{\color{red}4}{\color{red}4} = \frac{3}{12} - \frac{8}{12} = -\frac{5}{12}
 $$
 
 Here the first numerator is the smaller one, so the answer comes out negative.
 
-Now combine:
-$$
-\frac{3}{12} - \frac{8}{12} = -\frac{5}{12}
-$$
-
 :::{.you-try title="Subtract $\frac{2}{5} - \frac{3}{4}$"}
 Multiples of $5$: $5, 10, 15, \mathbf{20}$. Multiples of $4$: $4, 8, 12, 16, \mathbf{20}$.
 $$
-\frac{2}{5} = \frac{8}{20}
-\qquad
-\frac{3}{4} = \frac{15}{20}
-$$
-$$
-\frac{8}{20} - \frac{15}{20} = -\frac{7}{20}
+\frac{\color{red}4}{\color{red}4} \times \frac{2}{5} - \frac{3}{4} \times \frac{\color{red}5}{\color{red}5} = \frac{8}{20} - \frac{15}{20} = -\frac{7}{20}
 $$
 :::
 
@@ -354,14 +313,9 @@ $$
 1\tfrac{5}{6} = \frac{11}{6}
 $$
 
-The common denominator is $6$:
+The common denominator is $6$. Now $6 \div 3 = 2$:
 $$
-\frac{7}{3} = \frac{14}{6}
-$$
-
-Now combine:
-$$
-\frac{14}{6} + \frac{11}{6} = \frac{25}{6}
+\frac{\color{red}2}{\color{red}2} \times \frac{7}{3} + \frac{11}{6} = \frac{14}{6} + \frac{11}{6} = \frac{25}{6}
 $$
 
 Convert back to a mixed number by dividing:
@@ -388,14 +342,9 @@ $$
 2\tfrac{3}{4} = \frac{11}{4}
 $$
 
-The common denominator is $4$:
+The common denominator is $4$. Now $4 \div 2 = 2$:
 $$
-\frac{9}{2} = \frac{18}{4}
-$$
-
-Now combine:
-$$
-\frac{18}{4} - \frac{11}{4} = \frac{7}{4}
+\frac{\color{red}2}{\color{red}2} \times \frac{9}{2} - \frac{11}{4} = \frac{18}{4} - \frac{11}{4} = \frac{7}{4}
 $$
 
 Convert back:
@@ -416,14 +365,9 @@ $$
 3\tfrac{4}{7} = \frac{25}{7}
 $$
 
-The common denominator is $7$:
+The common denominator is $7$. Now $7 \div 1 = 7$:
 $$
-\frac{8}{1} = \frac{56}{7}
-$$
-
-Now combine:
-$$
-\frac{56}{7} - \frac{25}{7} = \frac{31}{7} = 4\tfrac{3}{7}
+\frac{\color{red}7}{\color{red}7} \times \frac{8}{1} - \frac{25}{7} = \frac{56}{7} - \frac{25}{7} = \frac{31}{7} = 4\tfrac{3}{7}
 $$
 
 :::{.you-try title="Subtract $5\tfrac{1}{2} - 2\tfrac{3}{5}$"}
@@ -435,7 +379,7 @@ $$
 
 The common denominator is $10$:
 $$
-\frac{55}{10} - \frac{26}{10} = \frac{29}{10} = 2\tfrac{9}{10}
+\frac{\color{red}5}{\color{red}5} \times \frac{11}{2} - \frac{13}{5} \times \frac{\color{red}2}{\color{red}2} = \frac{55}{10} - \frac{26}{10} = \frac{29}{10} = 2\tfrac{9}{10}
 $$
 :::
 
