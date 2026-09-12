@@ -66,10 +66,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 
 Look again at Monique's pizza. She ate **1 slice** of pepperoni and **2 slices** of cheese, and both pizzas were cut into **8 slices**.
 
-Both pizzas were cut the same way, so every slice is the same size. That means we can just count slices.
-$$
-1 \text{ slice} + 2 \text{ slices} = 3 \text{ slices}
-$$
+Both pizzas were cut the same way, so every slice is the same size. That means we can just count slices. 1 slice plus 2 slices is 3 slices.
 
 Each slice is one eighth of a pizza. Nothing was cut again, so the slices are still eighths. Monique ate **3 eighths**.
 $$
@@ -318,10 +315,8 @@ $$
 \frac{\color{red}2}{\color{red}2} \times \frac{7}{3} + \frac{11}{6} = \frac{14}{6} + \frac{11}{6} = \frac{25}{6}
 $$
 
-Convert back to a mixed number by dividing:
+Convert back to a mixed number by dividing. $25 \div 6 = 4$ with $1$ left over.
 $$
-25 \div 6 = 4 \text{ remainder } 1
-\qquad
 \frac{25}{6} = 4\tfrac{1}{6}
 $$
 
@@ -347,10 +342,8 @@ $$
 \frac{\color{red}2}{\color{red}2} \times \frac{9}{2} - \frac{11}{4} = \frac{18}{4} - \frac{11}{4} = \frac{7}{4}
 $$
 
-Convert back:
+Convert back. $7 \div 4 = 1$ with $3$ left over.
 $$
-7 \div 4 = 1 \text{ remainder } 3
-\qquad
 \frac{7}{4} = 1\tfrac{3}{4}
 $$
 
