@@ -268,3 +268,18 @@
   white-space: nowrap;
 }
 
+/* Emoji in its own column, everything else in a block that fills the rest of
+   the bar. Wrapped lines then line up under the label, not under the emoji. */
+.callout-title.has-icon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.4em;
+  align-items: baseline;
+}
+.callout-title .callout-icon {
+  white-space: nowrap;
+}
+.callout-title-body {
+  min-width: 0;
+}
+

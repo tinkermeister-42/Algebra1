@@ -48,24 +48,42 @@ document.addEventListener("DOMContentLoaded", () => {
     titleDiv.className = "callout-title";
 
     const insertTitle = (label, titleTextOrNodes) => {
+      // Everything except the emoji goes in one block so a long title wraps
+      // under the label's first letter instead of under the emoji.
+      const body = document.createElement("div");
+      body.className = "callout-title-body";
+
       // Only add a label chip if non-empty
       if (label && label.trim().length > 0) {
+        const firstSpace = label.indexOf(" ");
+        const icon = firstSpace > 0 ? label.slice(0, firstSpace) : "";
+        const words = firstSpace > 0 ? label.slice(firstSpace + 1) : label;
+
+        if (icon) {
+          const iconSpan = document.createElement("span");
+          iconSpan.className = "callout-icon";
+          iconSpan.textContent = icon;
+          titleDiv.appendChild(iconSpan);
+          titleDiv.classList.add("has-icon");
+        }
+
         const labelSpan = document.createElement("span");
         labelSpan.className = "callout-label";
-        labelSpan.textContent = label;
-        titleDiv.appendChild(labelSpan);
-        titleDiv.appendChild(document.createTextNode("⠀")); // spacer
+        labelSpan.textContent = words;
+        body.appendChild(labelSpan);
+        body.appendChild(document.createTextNode("⠀")); // spacer
       }
 
       if (Array.isArray(titleTextOrNodes)) {
-        titleTextOrNodes.forEach((node) => titleDiv.appendChild(node));
+        titleTextOrNodes.forEach((node) => body.appendChild(node));
       } else {
         const span = document.createElement("span");
         span.className = "callout-title-sub";
         span.textContent = titleTextOrNodes ?? "";
-        titleDiv.appendChild(span);
+        body.appendChild(span);
       }
 
+      titleDiv.appendChild(body);
       div.insertBefore(titleDiv, div.firstChild);
 
       if (isOuterCollapsible) {
