@@ -53,12 +53,22 @@ Two things that bite:
   --delete` returns HTTP 403. That is a permission limit, not a safety
   refusal, so branch removal is the teacher's to do
 
-Before calling a branch safe to delete, use
-`git merge-base --is-ancestor origin/<branch> origin/main`. A commit count of
-zero from `git rev-list origin/main..origin/<branch>` says the same thing, but
-`git diff --name-only main branch` does **not**: it reports differences in
-both directions, so a fully merged branch can look like it carries hundreds of
-unmerged files when those files are `main`'s own later work.
+**Checking a branch is safe to delete.** Because the convention here is to
+squash, the branch's own commits never become ancestors of `main`, so
+`git merge-base --is-ancestor` and a zero count from `git rev-list
+origin/main..origin/<branch>` both report a squash-merged branch as unmerged.
+They are the right check only for a branch merged the ordinary way.
+
+What settles it for a squashed branch is the content:
+
+```
+git diff origin/main origin/<branch>      # empty output means nothing would be lost
+```
+
+Do not judge by `git diff --name-only main branch` and count the files. That
+reports differences in both directions, so a branch long since merged can look
+like it carries hundreds of unmerged files when those files are `main`'s own
+later work.
 
 ## Structure
 ```
