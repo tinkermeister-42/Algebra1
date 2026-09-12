@@ -144,7 +144,7 @@ Sometimes we need to **convert back** to a mixed number. Here is how we do that:
 
 First, **divide**: 
 $$
-35 \div 9 = 3 \text{ r } 8
+35 \div 9 = 3 \text{ R } 8
 $$
 Now we know we have 3 wholes and 8 remaining ninths. Together that is $3 \tfrac{8}{9}$.
 

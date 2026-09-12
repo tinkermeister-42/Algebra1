@@ -317,7 +317,7 @@ $$
 
 Convert back to a mixed number by dividing:
 $$
-25 \div 6 = 4 \text{ r } 1
+25 \div 6 = 4 \text{ R } 1
 \qquad
 \frac{25}{6} = 4\tfrac{1}{6}
 $$
@@ -346,7 +346,7 @@ $$
 
 Convert back:
 $$
-7 \div 4 = 1 \text{ r } 3
+7 \div 4 = 1 \text{ R } 3
 \qquad
 \frac{7}{4} = 1\tfrac{3}{4}
 $$
