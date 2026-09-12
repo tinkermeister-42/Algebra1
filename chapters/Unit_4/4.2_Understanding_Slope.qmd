@@ -184,7 +184,7 @@ $$
 
 Compute the slope of the line between the points $(3, -2)$ and $(5, -5)$.
 
-Here $x_1=3$, $x_2=-2$, $y_1=5$, and $y_2=-5$.
+Here $x_1=3$, $y_1=-2$, $x_2=5$, and $y_2=-5$.
 
 $$
 \begin{aligned}
@@ -221,12 +221,12 @@ It means the line is **horizontal**. If $y$-values don't change as $x$ changes, 
 
 Find the slope of the line containing $(5, -3)$ and $(5, 6)$.
 
-Here $x_1=5$, $x_2=5$, $y_1=3$, and $y_2=6$.
+Here $x_1=5$, $y_1=-3$, $x_2=5$, and $y_2=6$.
 
 $$
 \begin{aligned}
-m &= \frac{6 - 3}{5 - 5} \\
-&= \frac{3}{0} \\
+m &= \frac{6 - (-3)}{5 - 5} \\
+&= \frac{9}{0} \\
 \end{aligned}
 $$
 

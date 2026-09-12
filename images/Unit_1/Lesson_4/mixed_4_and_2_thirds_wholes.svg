@@ -1,0 +1,13 @@
+<svg width="592" height="120" viewBox="0 0 592 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four whole circles and two thirds of a circle">
+<circle cx="60" cy="60" r="46" fill="#f6d87a" stroke="#000000" stroke-width="2"/>
+<circle cx="178" cy="60" r="46" fill="#f6d87a" stroke="#000000" stroke-width="2"/>
+<circle cx="296" cy="60" r="46" fill="#f6d87a" stroke="#000000" stroke-width="2"/>
+<circle cx="414" cy="60" r="46" fill="#f6d87a" stroke="#000000" stroke-width="2"/>
+<circle cx="532" cy="60" r="46" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<path d="M532,60 L532.00,14.00 A46,46 0 0,1 571.84,83.00 Z" fill="#f6d87a" stroke="none"/>
+<path d="M532,60 L571.84,83.00 A46,46 0 0,1 492.16,83.00 Z" fill="#f6d87a" stroke="none"/>
+<line x1="532" y1="60" x2="532.00" y2="14.00" stroke="#000000" stroke-width="2"/>
+<line x1="532" y1="60" x2="571.84" y2="83.00" stroke="#000000" stroke-width="2"/>
+<line x1="532" y1="60" x2="492.16" y2="83.00" stroke="#000000" stroke-width="2"/>
+<circle cx="532" cy="60" r="46" fill="none" stroke="#000000" stroke-width="2"/>
+</svg>

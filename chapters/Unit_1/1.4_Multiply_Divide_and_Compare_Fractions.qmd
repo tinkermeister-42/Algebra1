@@ -112,10 +112,19 @@ A {{< glink "mixed number" >}} is a number that has a whole part and a fraction 
 Before multiplying, we first need to convert to an {{< glink "improper fraction" >}}.
 
 
-**Example 4:**
-Multiply $4\tfrac{2}{3} \times \frac{5}{6}$
+**Example 4:** Multiply $4\tfrac{2}{3} \times \frac{5}{6}$
 
-We have 2 thirds, but how many thirds are in 4? To find out, multiply the whole number by the denominator:
+We have 2 thirds, but how many thirds are in 4?
+
+![](/images/Unit_1/Lesson_4/mixed_4_and_2_thirds_wholes.svg){width=100%}
+
+Cut every whole into thirds, so all the pieces are the same size.
+
+![](/images/Unit_1/Lesson_4/mixed_4_and_2_thirds_divided.svg){width=100%}
+
+Count them: $3 + 3 + 3 + 3 + 2 = 14$. An improper fraction is just a way of saying how many equal pieces we have.
+
+To find out without drawing, multiply the whole number by the denominator:
 $$
 4 \times 3 = 12
 $$
@@ -141,15 +150,15 @@ Now we know we have 3 wholes and 8 remaining ninths. Together that is $3 \tfrac{
 
 ***
 
-**Another Example:** $2\tfrac{1}{4} \times \frac{4}{5}$
+**Example 5:** $2\tfrac{1}{4} \times \frac{4}{5}$
 
-Step 1: Convert the mixed number.
+Convert the mixed number:
 $$
 2 \times 4 = 8,\quad 8 + 1 = 9 \Rightarrow 2\tfrac{1}{4} = \frac{9}{4}
 $$
-Step 2: Multiply:
+Multiply:
 $$
-\frac{9}{4} \times \frac{4}{5} = \frac{9 \times \cancel{\color{red}4}}{\cancel{\color{red}4} \times 5} = \frac{9}{5} = 1\frac{4}{5}
+\frac{9}{4} \times \frac{4}{5} = \frac{9 \times \cancel{\color{red}4}}{\cancel{\color{red}4} \times 5} = \frac{9}{5} = 1\tfrac{4}{5}
 $$
 
 :::{.real-world}
@@ -159,7 +168,7 @@ $$
 $$
 Instead of measuring 7 times with a $\frac{1}{4}$ cup, convert back to a mixed number:
 $$
-\frac{7}{4} = 1\frac{3}{4} \text{ cups}
+\frac{7}{4} = 1\tfrac{3}{4} \text{ cups}
 $$
 :::
 

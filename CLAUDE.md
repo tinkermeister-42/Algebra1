@@ -29,6 +29,37 @@ up before saying a change is done:
 - `main` and `gh-pages` are separate. Pushing to `main` publishes nothing;
   only `./deploy.sh` moves the site
 
+## Branches
+
+Keep the repository clean. Dead branches are clutter.
+
+- Work happens on a feature branch. Granular commits there are fine and
+  wanted while the feature is still being worked on, which is exactly when
+  the branch still exists
+- When a feature is finished it goes to `main` as **one squashed commit**
+  naming the feature. `main` keeps a history of what was added, not of every
+  step it took to get there
+- The branch is deleted once it is merged
+- **Nothing is merged or deleted without the teacher signing off on it.**
+  Propose it, show what would land, and wait
+
+Two things that bite:
+
+- **Deploying is not merging.** `deploy.sh` force-pushes the built `_book` to
+  `gh-pages` and touches nothing else, so a change can be live on the site
+  while its source exists only on a feature branch. Check
+  `git rev-list --count origin/main..HEAD` before assuming work is safe
+- **This session's credentials cannot delete branches.** `git push origin
+  --delete` returns HTTP 403. That is a permission limit, not a safety
+  refusal, so branch removal is the teacher's to do
+
+Before calling a branch safe to delete, use
+`git merge-base --is-ancestor origin/<branch> origin/main`. A commit count of
+zero from `git rev-list origin/main..origin/<branch>` says the same thing, but
+`git diff --name-only main branch` does **not**: it reports differences in
+both directions, so a fully merged branch can look like it carries hundreds of
+unmerged files when those files are `main`'s own later work.
+
 ## Structure
 ```
 chapters/Unit_1…6/   # Lessons: #.#_Topic.qmd, index.qmd, Review.qmd

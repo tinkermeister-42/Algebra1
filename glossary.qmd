@@ -194,9 +194,11 @@ If the denominators are different, you must rewrite the fractions so they share 
 
 > **Example:**
 >
-> To add $\frac{1}{4}$ and $\frac{1}{6}$, you can rewrite them as $\frac{3}{12}$ and $\frac{2}{12}$.
+> To add $\frac{1}{4}$ and $\frac{1}{6}$, multiply the denominators: $4 \times 6 = 24$.
 >
-> Since both fractions now have the denominator 12, they have a common denominator and can be added.
+> Rewrite them as $\frac{6}{24}$ and $\frac{4}{24}$. Both fractions now have the denominator 24, so they can be added.
+>
+> $12$ is also a common denominator, and it is the smallest one. Either works. A common denominator does not have to be the smallest.
 
 ***
 

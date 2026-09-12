@@ -64,12 +64,27 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 
 ### 1.5.1 - Adding Fractions with Like Denominators
 
-When fractions have the **same denominator**, they describe pieces of the **same size**.
+Look again at Monique's pizza. She ate **1 slice** of pepperoni and **2 slices** of cheese, and both pizzas were cut into **8 slices**.
 
-That’s exactly what happened with Monique’s pizza.
+Both pizzas were cut the same way, so every slice is the same size. That means we can just count slices.
+$$
+1 \text{ slice} + 2 \text{ slices} = 3 \text{ slices}
+$$
+
+Each slice is one eighth of a pizza. Nothing was cut again, so the slices are still eighths. Monique ate **3 eighths**.
+$$
+\frac{1}{8} + \frac{2}{8} = \frac{3}{8}
+$$
+
+Look at what moved and what did not:
+
+- The **denominator** says how big each piece is. The pieces never changed size, so it stays.
+- The **numerator** counts how many pieces you have. That is the part that changes.
+
+So when fractions have the **same denominator**:
 
 - Keep the denominator.
-- Add or subtract the numerators.
+- **Combine** the numerators.
 
 **Example 1:** $\frac{2}{7} + \frac{3}{7}$
 $$
@@ -77,7 +92,7 @@ $$
 $$
 
 :::{.gotcha title="Numerators only"}
-A common mistake students make is to add the numerators together **and** the denominators together. **Only add the numerators!**
+Only combine the numerators. $\frac{2}{7} + \frac{3}{7}$ is **not** $\frac{5}{14}$.
 :::
 
 ***
@@ -86,6 +101,28 @@ A common mistake students make is to add the numerators together **and** the den
 $$
 \frac{11}{12} - \frac{5}{12} = \frac{6}{12} = \frac{1}{2}
 $$
+
+Always check whether you can simplify. Here $6$ and $12$ both divide by $6$.
+
+***
+
+**Example 3:** $\frac{5}{9} + \frac{7}{9}$
+$$
+\frac{5}{9} + \frac{7}{9} = \frac{12}{9} = \frac{4}{3} = 1\tfrac{1}{3}
+$$
+
+The answer came out bigger than 1. That is fine. Simplify it, then write it as a mixed number.
+
+***
+
+**Example 4:** $\frac{3}{8} - \frac{7}{8}$
+
+Here the first fraction is smaller than the second one, so the answer will be negative. Nothing else changes.
+$$
+\frac{3}{8} - \frac{7}{8} = \frac{3 - 7}{8} = \frac{-4}{8} = -\frac{1}{2}
+$$
+
+We write the negative sign in front: $-\frac{1}{2}$.
 
 :::{.you-try title="$\frac{10}{15} - \frac{4}{15}$"}
 $$
@@ -98,14 +135,14 @@ $$
 ### 1.5.2 - Adding Fractions with Unlike Denominators
 
 When fractions have **different denominators**, they describe pieces of **different sizes**.  
-Before we can add or subtract, we need to rewrite them so the pieces match.
+Before we can combine them, we need to rewrite them so the pieces match.
 
-Let’s return to **Jack’s pizza**. Jack ate
+Let's return to **Jack's pizza**. Jack ate
 
 - $\frac{1}{3}$ of a pepperoni pizza  
 - $\frac{1}{4}$ of a cheese pizza  
 
-At first, these pieces don’t match.
+At first, these pieces don't match.
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -120,46 +157,23 @@ At first, these pieces don’t match.
 ::::
 
 Even though Jack ate **one slice** of each pizza, those slices are **not the same size**.  
-So we can’t just add $\frac{1}{3} + \frac{1}{4}$ yet.
+So we can't just add $\frac{1}{3} + \frac{1}{4}$ yet.
 
 ***
 
-#### How to Find a Common Denominator
+A {{< glink "common denominator" >}} is a number that **both denominators divide into evenly**.
 
-A common denominator is a number that **both denominators divide into evenly**.
+To find one, list the multiples of each denominator and look for the first number that shows up in both lists.
 
-Here are two reliable ways to find one.
+Multiples of $3$: $3, 6, 9, \mathbf{12}, 15, \dots$  
+Multiples of $4$: $4, 8, \mathbf{12}, 16, \dots$
 
-**Method A: Quick check (fastest when it works)**  
-If one denominator divides into the other, the larger denominator works.
+The first number they share is $12$, so $12$ is the **smallest** common denominator.
 
-Example: for $\frac{7}{8}$ and $\frac{1}{4}$, $8$ works because $8 \div 4 = 2$.
+Now divide to find what each fraction gets multiplied by:
 
-**Method B: List multiples (always works)**  
-1. Write a few multiples of each denominator.  
-2. Find the first number that appears in both lists.  
-3. Use that number as the common denominator.
-
-Example: for $\frac{1}{3}$ and $\frac{1}{4}$
-
-Multiples of $3$: $3, 6, 9, 12, \dots$  
-Multiples of $4$: $4, 8, 12, \dots$
-
-The first number that appears in both lists is $12$.
-
-***
-
-#### Making the Pieces Match
-
-To combine these amounts, we need to cut **both pizzas into pieces that line up**.
-
-For thirds and fourths, we found the common denominator $12$.
-
-That means:
 - $12 \div 3 = 4$, so each third becomes **4 equal pieces**
 - $12 \div 4 = 3$, so each fourth becomes **3 equal pieces**
-
-Now both pizzas can be described using **twelfths**.
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -177,106 +191,175 @@ Once the pieces match, the math works the same way as before.
 
 ***
 
-**Example 3:** $\frac{1}{3} + \frac{1}{4}$
+**Example 5:** $\frac{1}{3} + \frac{1}{4}$
 
-First, find a number that **both denominators divide into**.  
-Both 3 and 4 divide into 12.
+Multiples of $3$: $3, 6, 9, \mathbf{12}, \dots$  
+Multiples of $4$: $4, 8, \mathbf{12}, \dots$
 
-Rewrite each fraction:
+The common denominator is $12$. Now $12 \div 3 = 4$ and $12 \div 4 = 3$.
 $$
-\frac{1}{3} = \frac{4}{4}\cdot\frac{1}{3} = \frac{4}{12}
-$$
-
-and
-$$
-\frac{1}{4} = \frac{3}{3}\cdot\frac{1}{4} = \frac{3}{12}
+\frac{1}{3} = \frac{\color{red}4}{\color{red}4} \times \frac{1}{3} = \frac{4}{12}
+\qquad
+\frac{1}{4} = \frac{\color{red}3}{\color{red}3} \times \frac{1}{4} = \frac{3}{12}
 $$
 
-Now add:
+Now combine:
 $$
 \frac{4}{12} + \frac{3}{12} = \frac{7}{12}
 $$
 
+Jack ate $\frac{7}{12}$ of a pizza.
+
+:::{.gotcha title="Top and bottom"}
+$\frac{4}{4} = 1$, so multiplying by it does not change the value of the fraction.
+
+If you multiply only the bottom, you have changed it into a different number.
+:::
+
 ***
 
-**Example 4:** $\frac{7}{8} - \frac{1}{4}$
+**Example 6:** $\frac{7}{8} - \frac{1}{4}$
 
-The denominators are different, so we need matching pieces.
+Multiples of $8$: $\mathbf{8}, 16, \dots$  
+Multiples of $4$: $4, \mathbf{8}, \dots$
 
-Here, we can use the quick check.  
-$8$ works because $8 \div 4 = 2$.
-
-Rewrite:
+The common denominator is $8$. Now $8 \div 8 = 1$ and $8 \div 4 = 2$.
 $$
-\frac{1}{4} = \frac{2}{8}
+\frac{7}{8} = \frac{\color{red}1}{\color{red}1} \times \frac{7}{8} = \frac{7}{8}
+\qquad
+\frac{1}{4} = \frac{\color{red}2}{\color{red}2} \times \frac{1}{4} = \frac{2}{8}
 $$
 
-Now subtract:
+Now combine:
 $$
 \frac{7}{8} - \frac{2}{8} = \frac{5}{8}
 $$
 
 :::{.you-try title="Add $\frac{2}{3} + \frac{1}{6}$"}
-A common denominator is $6$ because $6 \div 3 = 2$ and $6 \div 6 = 1$.
-
+Multiples of $3$: $3, \mathbf{6}, \dots$  
+Multiples of $6$: $\mathbf{6}, 12, \dots$
 $$
-\frac{2}{3} = \frac{4}{6}
+\frac{2}{3} = \frac{\color{red}2}{\color{red}2} \times \frac{2}{3} = \frac{4}{6}
 \qquad
 \frac{4}{6} + \frac{1}{6} = \frac{5}{6}
 $$
 :::
 
+***
+
+**Example 7:** $\frac{3}{4} - \frac{2}{5}$
+
+Multiples of $4$: $4, 8, 12, 16, \mathbf{20}$  
+Multiples of $5$: $5, 10, 15, \mathbf{20}$
+
+The common denominator is $20$. Now $20 \div 4 = 5$ and $20 \div 5 = 4$.
+$$
+\frac{3}{4} = \frac{\color{red}5}{\color{red}5} \times \frac{3}{4} = \frac{15}{20}
+\qquad
+\frac{2}{5} = \frac{\color{red}4}{\color{red}4} \times \frac{2}{5} = \frac{8}{20}
+$$
+
+Now combine:
+$$
+\frac{15}{20} - \frac{8}{20} = \frac{7}{20}
+$$
+
+***
+
+**Example 8:** $\frac{5}{6} + \frac{7}{9}$
+
+Multiples of $6$: $6, 12, \mathbf{18}$  
+Multiples of $9$: $9, \mathbf{18}$
+
+The common denominator is $18$. Now $18 \div 6 = 3$ and $18 \div 9 = 2$.
+$$
+\frac{5}{6} = \frac{\color{red}3}{\color{red}3} \times \frac{5}{6} = \frac{15}{18}
+\qquad
+\frac{7}{9} = \frac{\color{red}2}{\color{red}2} \times \frac{7}{9} = \frac{14}{18}
+$$
+
+Now combine:
+$$
+\frac{15}{18} + \frac{14}{18} = \frac{29}{18} = 1\tfrac{11}{18}
+$$
+
+***
+
+**Example 9:** $\frac{1}{4} - \frac{2}{3}$
+
+Multiples of $4$: $4, 8, \mathbf{12}, \dots$  
+Multiples of $3$: $3, 6, 9, \mathbf{12}, \dots$
+
+The common denominator is $12$. Now $12 \div 4 = 3$ and $12 \div 3 = 4$.
+$$
+\frac{1}{4} = \frac{\color{red}3}{\color{red}3} \times \frac{1}{4} = \frac{3}{12}
+\qquad
+\frac{2}{3} = \frac{\color{red}4}{\color{red}4} \times \frac{2}{3} = \frac{8}{12}
+$$
+
+Here the first numerator is the smaller one, so the answer comes out negative.
+
+Now combine:
+$$
+\frac{3}{12} - \frac{8}{12} = -\frac{5}{12}
+$$
+
+:::{.you-try title="Subtract $\frac{2}{5} - \frac{3}{4}$"}
+Multiples of $5$: $5, 10, 15, \mathbf{20}$. Multiples of $4$: $4, 8, 12, 16, \mathbf{20}$.
+$$
+\frac{2}{5} = \frac{8}{20}
+\qquad
+\frac{3}{4} = \frac{15}{20}
+$$
+$$
+\frac{8}{20} - \frac{15}{20} = -\frac{7}{20}
+$$
+:::
+
+:::{.note}
+If you are ok having to do more work simplifying your answer, you can skip the step of writing out multiples by **multiplying the two denominators together** instead. That always gives a common denominator, because multiplying any two numbers gives a multiple of each one.
+
+For $\frac{5}{6} + \frac{7}{9}$ that gives $6 \times 9 = 54$ instead of $18$:
+$$
+\frac{45}{54} + \frac{42}{54} = \frac{87}{54} = \frac{29}{18}
+$$
+
+Same answer, but bigger numbers to simplify at the end.
+:::
+
+***
+
 ### 1.5.3 - Adding & Subtracting Mixed Numbers
 
 A {{< glink "mixed number" >}} has a whole number and a fraction, like $2\tfrac{1}{3}$.
 
-To add or subtract mixed numbers, we will use this method:
+Why not combine the whole numbers, then the fractions? Try that on $6\tfrac{1}{4} - 3\tfrac{3}{8}$. You cannot take $\frac{3}{8}$ away from $\frac{1}{4}$, so you would have to borrow from the $6$.
 
-1. Convert each mixed number to an improper fraction.  
-2. Add or subtract the fractions.  
-3. If needed, convert back to a mixed number.
+Instead, we turn each mixed number into an {{< glink "improper fraction" >}} first, the same way you did in 1.4. Then there is nothing to borrow.
 
 ***
 
-#### Converting a Mixed Number to an Improper Fraction
-
-To convert $a\tfrac{b}{c}$ into an improper fraction:
-
-1. Multiply: $a \cdot c$  
-2. Add the numerator: $a \cdot c + b$  
-3. Put it over the same denominator $c$
-
-So:
-$$
-a\tfrac{b}{c} = \frac{a\cdot c + b}{c}
-$$
-
-***
-
-**Example 5:** $2\tfrac{1}{3} + 1\tfrac{5}{6}$
+**Example 10:** $2\tfrac{1}{3} + 1\tfrac{5}{6}$
 
 Convert each mixed number:
-
-For $2\tfrac{1}{3}$:
 $$
-2\cdot 3 + 1 = 7
+2 \times 3 + 1 = 7
 \qquad
 2\tfrac{1}{3} = \frac{7}{3}
 $$
 
-For $1\tfrac{5}{6}$:
 $$
-1\cdot 6 + 5 = 11
+1 \times 6 + 5 = 11
 \qquad
 1\tfrac{5}{6} = \frac{11}{6}
 $$
 
-Match denominators:
+The common denominator is $6$:
 $$
 \frac{7}{3} = \frac{14}{6}
 $$
 
-Add:
+Now combine:
 $$
 \frac{14}{6} + \frac{11}{6} = \frac{25}{6}
 $$
@@ -290,30 +373,27 @@ $$
 
 ***
 
-**Example 6:** $4\tfrac{1}{2} - 2\tfrac{3}{4}$
+**Example 11:** $4\tfrac{1}{2} - 2\tfrac{3}{4}$
 
 Convert each mixed number:
-
-For $4\tfrac{1}{2}$:
 $$
-4\cdot 2 + 1 = 9
+4 \times 2 + 1 = 9
 \qquad
 4\tfrac{1}{2} = \frac{9}{2}
 $$
 
-For $2\tfrac{3}{4}$:
 $$
-2\cdot 4 + 3 = 11
+2 \times 4 + 3 = 11
 \qquad
 2\tfrac{3}{4} = \frac{11}{4}
 $$
 
-Match denominators:
+The common denominator is $4$:
 $$
 \frac{9}{2} = \frac{18}{4}
 $$
 
-Subtract:
+Now combine:
 $$
 \frac{18}{4} - \frac{11}{4} = \frac{7}{4}
 $$
@@ -324,6 +404,40 @@ $$
 \qquad
 \frac{7}{4} = 1\tfrac{3}{4}
 $$
+
+***
+
+**Example 12:** $8 - 3\tfrac{4}{7}$
+
+No denominator? No problem. A whole number is a fraction over 1.
+$$
+8 = \frac{8}{\color{red}1}
+\qquad
+3\tfrac{4}{7} = \frac{25}{7}
+$$
+
+The common denominator is $7$:
+$$
+\frac{8}{1} = \frac{56}{7}
+$$
+
+Now combine:
+$$
+\frac{56}{7} - \frac{25}{7} = \frac{31}{7} = 4\tfrac{3}{7}
+$$
+
+:::{.you-try title="Subtract $5\tfrac{1}{2} - 2\tfrac{3}{5}$"}
+$$
+5\tfrac{1}{2} = \frac{11}{2}
+\qquad
+2\tfrac{3}{5} = \frac{13}{5}
+$$
+
+The common denominator is $10$:
+$$
+\frac{55}{10} - \frac{26}{10} = \frac{29}{10} = 2\tfrac{9}{10}
+$$
+:::
 
 {{< practice >}}
 
@@ -337,61 +451,86 @@ $$
 
 4. $\frac{11}{12} - \frac{7}{12}$
 
-5. $\frac{1}{4} + \frac{1}{6}$
+5. $\frac{2}{9} - \frac{5}{9}$
 
-6. $\frac{5}{8} - \frac{1}{4}$
+6. $\frac{1}{4} + \frac{1}{6}$
 
-7. $\frac{3}{5} + \frac{7}{10}$
+7. $\frac{5}{8} - \frac{1}{4}$
 
-8. $\frac{9}{10} - \frac{2}{15}$
+8. $\frac{3}{5} + \frac{7}{10}$
 
-9. $1\tfrac{1}{2} + 2\tfrac{1}{4}$
+9. $\frac{9}{10} - \frac{2}{15}$
 
-10. $4\tfrac{3}{5} - 1\tfrac{2}{5}$
+10. $\frac{1}{3} - \frac{4}{5}$
 
-11. $3\tfrac{1}{6} + 2\tfrac{5}{6}$
+11. $\frac{5}{9} - \frac{11}{12}$
 
-12. $6\tfrac{1}{4} - 3\tfrac{3}{8}$
+12. $1\tfrac{1}{2} + 2\tfrac{1}{4}$
+
+13. $4\tfrac{3}{5} - 1\tfrac{2}{5}$
+
+14. $3\tfrac{1}{6} + 2\tfrac{5}{6}$
+
+15. $6\tfrac{1}{4} - 3\tfrac{3}{8}$
+
+16. $2\tfrac{1}{3} - 5\tfrac{5}{6}$
 
 ***
 
 **Word Problems**
 
-13. You drink $\frac{3}{4}$ of a liter of water in the morning and $\frac{1}{8}$ of a liter in the afternoon.  
+17. You drink $\frac{3}{4}$ of a liter of water in the morning and $\frac{1}{8}$ of a liter in the afternoon.  
 How much water did you drink total?
 
-14. A rope is $5\tfrac{1}{2}$ meters long. If $2\tfrac{3}{4}$ meters are cut off, how much remains?
+18. A rope is $5\tfrac{1}{2}$ meters long. If $2\tfrac{3}{4}$ meters are cut off, how much remains?
 
-15. A recipe needs $\frac{2}{3}$ cup of sugar. If you already added $\frac{1}{4}$ cup, how much more do you need?
+19. A recipe needs $\frac{2}{3}$ cup of sugar. If you already added $\frac{1}{4}$ cup, how much more do you need?
+
+20. On Monday the temperature rose $\frac{3}{4}$ of a degree. On Tuesday it fell $1\tfrac{1}{2}$ degrees.  
+What was the total change in temperature over the two days?
 
 ***
 
 **Challenge Problems**
 
-16. Two fractions have a sum of exactly 1. One of them is $\frac{3}{8}$. What is the other fraction?
+21. Two fractions have a sum of exactly 1. One of them is $\frac{3}{8}$. What is the other fraction?
 
-17. A runner completes $4\tfrac{2}{3}$ miles on Monday and $3\tfrac{5}{6}$ miles on Tuesday.  
+22. A runner completes $4\tfrac{2}{3}$ miles on Monday and $3\tfrac{5}{6}$ miles on Tuesday.  
 How many miles did they run total?
 
 ***
 
 :::{.answers}
 
+**Warm-Up**
+
+1. $\frac{3}{8}$  
+2. $\frac{7}{12}$  
+
+***
+
+**Add and Subtract Fractions**
+
 1. $\frac{1}{2}$  
 2. $\frac{2}{3}$  
 3. $\frac{2}{3}$  
 4. $\frac{1}{3}$  
-5. $\frac{5}{12}$  
-6. $\frac{3}{8}$  
-7. $1\tfrac{3}{10}$  
-8. $\frac{23}{30}$  
-9. $3\tfrac{3}{4}$  
-10. $3\tfrac{1}{5}$  
-11. 6  
-12. $2\tfrac{7}{8}$  
+5. $-\frac{1}{3}$  
+6. $\frac{5}{12}$  
+7. $\frac{3}{8}$  
+8. $1\tfrac{3}{10}$  
+9. $\frac{23}{30}$  
+10. $-\frac{7}{15}$  
+11. $-\frac{13}{36}$  
+12. $3\tfrac{3}{4}$  
+13. $3\tfrac{1}{5}$  
+14. 6  
+15. $2\tfrac{7}{8}$  
+16. $-3\tfrac{1}{2}$  
 
-13. $\frac{7}{8}$  
-14. $2\tfrac{3}{4}$  
-15. $\frac{5}{12}$  
+17. $\frac{7}{8}$  
+18. $2\tfrac{3}{4}$  
+19. $\frac{5}{12}$  
+20. $-\frac{3}{4}$  
 
 :::

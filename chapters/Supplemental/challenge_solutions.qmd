@@ -45,9 +45,9 @@ No Challenge Questions
 
 :::{.answers}
 
-16. $\frac{5}{8}$ 
+21. $\frac{5}{8}$ 
      
-17. $8\tfrac{1}{2}$  
+22. $8\tfrac{1}{2}$  
     
 :::
 
