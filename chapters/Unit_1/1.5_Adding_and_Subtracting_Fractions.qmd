@@ -179,7 +179,7 @@ Now the pieces match. Jack's pepperoni slice is $4$ twelfths. His cheese slice i
 
 Cutting a pizza into more pieces does not change how much pizza there is. It only changes how we count it.
 
-We don't cut up pizzas to add fractions. Here is the same problem showing just the math.
+We do not have to draw the pizzas. Here is the same problem done with math.
 $$
 \frac{\color{red}4}{\color{red}4} \times \frac{1}{3} + \frac{1}{4} \times \frac{\color{red}3}{\color{red}3} = \frac{4}{12} + \frac{3}{12} = \frac{7}{12}
 $$
