@@ -74,11 +74,13 @@
 }
 
 /* === Title Bar Styling === */
+/* Block, not flex. A title is a sentence: the label chip, the words and any
+   inline math have to wrap together and keep the spaces between them. As flex
+   items each piece became its own column and the spaces around math collapsed. */
 .callout-title {
   font-weight: bold;
   padding: 0.2em 0.65em;
-  display: flex;
-  align-items: center;
+  display: block;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   font-size: 0.95em;
@@ -118,9 +120,16 @@
 [data-collapse="true"] > .callout-title {
   cursor: pointer;
 }
+/* The arrow sits in the top right corner and stays there while the title wraps */
+.callout[data-collapse="true"] > .callout-title {
+  position: relative;
+  padding-right: 1.9em;
+}
 .callout[data-collapse="true"] > .callout-title::after {
   content: "▶";
-  margin-left: auto;
+  position: absolute;
+  right: 0.65em;
+  top: 0.2em;
   font-size: 1em;
   transition: transform 0.2s ease;
 }
@@ -252,9 +261,10 @@
   font-size: 0.95em;
 }
 .callout .callout-title > mjx-container {
-  padding-top: 0.2em;
+  padding-top: 0;
 }
 .callout-title .callout-label {
+  display: inline-block;
   white-space: nowrap;
 }
 
