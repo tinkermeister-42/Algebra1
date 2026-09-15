@@ -1,8 +1,10 @@
 # 1.4 - Multiplying & Dividing Fractions {.unnumbered}
 
-In previous lessons, you've learned how fractions, decimals, and percents relate to each other. But to solve real-world problems (like adjusting recipes, calculating discounts, or determining grades) you also need to multiply and divide these numbers.
+In the last lesson, you found the greatest common factor and used it to simplify fractions. Now we start doing arithmetic with them.
 
-In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. We’ll explore why multiplying fractions is actually simpler than it seems, and why dividing by a fraction is the same as multiplying by something called a {{< glink reciprocal >}}. These skills will help you tackle percent problems and practical applications in upcoming lessons.
+In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. Multiplying fractions turns out to be easier than it looks. Dividing looks harder, but it becomes a multiplication problem once you know about the {{< glink reciprocal >}}.
+
+You need these skills any time you scale a recipe, split something into equal parts, or work with percents later in this unit.
 
 :::{.objectives}
 - [ ] I can multiply fractions.
