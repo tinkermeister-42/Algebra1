@@ -47,3 +47,16 @@ Thumbs.db
 /.luarc.json
 
 **/*.quarto_ipynb
+
+# --------------------
+# Stray render output. A single-file `quarto render` writes the page and
+# site_libs beside the sources instead of into _book/, and deploy.sh cleans
+# them up when it finishes. Committing one mid-render put 86 of them in main.
+# --------------------
+/index.html
+/guided-notes.html
+/site_libs/
+/chapters/Unit_[1-6]/*.html
+/chapters/Interactive/**/*.html
+/chapters/Supplemental/**/*.html
+!/chapters/Interactive/Unit_5/rational-roots.html
