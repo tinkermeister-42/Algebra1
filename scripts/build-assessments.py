@@ -578,8 +578,7 @@ INDEX_SHELL = """<!DOCTYPE html>
     <h1>Assessments</h1>
     <div class="sub">DHS Algebra 1 - quizzes and tests</div>
   </div>
-  <p class="note">Nothing in the book links here. Bookmark this page.
-  Every sheet is laid out for letter paper - use your browser's
+  <p class="note">Every sheet is laid out for letter paper - use your browser's
   <b>Print</b> command, and choose <i>Save as PDF</i> for a digital copy.</p>
 {body}
 </section>
