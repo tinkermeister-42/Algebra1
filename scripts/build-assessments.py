@@ -576,7 +576,7 @@ INDEX_SHELL = """<!DOCTYPE html>
 <section class="sheet">
   <div class="masthead">
     <h1>Assessments</h1>
-    <div class="sub">DHS Algebra 1 - quizzes, tests and answer keys</div>
+    <div class="sub">DHS Algebra 1 - quizzes and tests</div>
   </div>
   <p class="note">Nothing in the book links here. Bookmark this page.
   Every sheet is laid out for letter paper - use your browser's
@@ -597,12 +597,11 @@ def write_index(built):
     body = []
     for unit in sorted(rows):
         body.append("  <h2>Unit %s</h2>\n  <table class=\"idx\">" % unit)
-        body.append("    <tr><th>Assessment</th><th>Answer key</th></tr>")
-        for name, has_key in sorted(rows[unit]):
-            key = ('<a class="key" href="Unit_%s/%s_KEY.html">key</a>' % (unit, name)
-                   if has_key else " - ")
-            body.append('    <tr><td><a href="Unit_%s/%s.html">%s</a></td>'
-                        '<td class="k">%s</td></tr>' % (unit, name, name, key))
+        body.append("    <tr><th>Assessment</th></tr>")
+        # Keys are built but not linked: students use this page too.
+        for name, _ in sorted(rows[unit]):
+            body.append('    <tr><td><a href="Unit_%s/%s.html">%s</a></td></tr>'
+                        % (unit, name, name))
         body.append("  </table>")
 
     # Only the ones with no markdown source.  The rest are the teacher's own
@@ -621,11 +620,11 @@ def write_index(built):
     if pdfs:
         body.append("  <h2>PDF only</h2>")
         body.append("  <p class=\"note\">These exist only as PDF, so there is no "
-                    "HTML version and no key.</p>")
+                    "HTML version.</p>")
         body.append("  <table class=\"idx\">")
         for unit, base in pdfs:
             body.append('    <tr><td><a href="Unit_%s/%s">%s</a></td>'
-                        '<td class="k"> - </td></tr>' % (unit, base, base))
+                        '</tr>' % (unit, base, base))
         body.append("  </table>")
 
     out = os.path.join(OUT, "index.html")
