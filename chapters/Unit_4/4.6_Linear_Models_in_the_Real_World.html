@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +107,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -164,7 +165,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -723,7 +725,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-best-fit-line" class="glossary-link" data-term="best-fit line" data-original-href="#glossary-best-fit-line" data-slug="best-fit-line">best-fit line</a>, <a href="../../glossary.html#glossary-linear-model" class="glossary-link" data-term="linear model" data-original-href="#glossary-linear-model" data-slug="linear-model">linear model</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-term="slope" data-original-href="#glossary-slope" data-slug="slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-term="y-intercept" data-original-href="#glossary-y-intercept" data-slug="y-intercept">y-intercept</a></p>
+<p><a href="../../glossary.html#glossary-best-fit-line" class="glossary-link" data-slug="best-fit-line" data-original-href="#glossary-best-fit-line" data-term="best-fit line">best-fit line</a>, <a href="../../glossary.html#glossary-linear-model" class="glossary-link" data-slug="linear-model" data-original-href="#glossary-linear-model" data-term="linear model">linear model</a>, <a href="../../glossary.html#glossary-slope" class="glossary-link" data-slug="slope" data-original-href="#glossary-slope" data-term="slope">slope</a>, <a href="../../glossary.html#glossary-y-intercept" class="glossary-link" data-slug="y-intercept" data-original-href="#glossary-y-intercept" data-term="y-intercept">y-intercept</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_4/4.6_Linear_Models_in_the_Real_World.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -1473,13 +1475,14 @@ F(w) = -0.007w + 70 \quad \text{(valid for } 2500 \le w \le 4500\text{)}
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

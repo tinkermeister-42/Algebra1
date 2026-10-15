@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +107,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -164,7 +165,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -726,7 +728,7 @@ What would go in the first box then, and what would the first terms in the facto
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-difference-of-squares" class="glossary-link" data-original-href="#glossary-difference-of-squares" data-slug="difference-of-squares" data-term="difference of squares">difference of squares</a>, <a href="../../glossary.html#glossary-factorable" class="glossary-link" data-original-href="#glossary-factorable" data-slug="factorable" data-term="factorable">factorable</a>, <a href="../../glossary.html#glossary-over-the-integers" class="glossary-link" data-original-href="#glossary-over-the-integers" data-slug="over-the-integers" data-term="over the integers">over the integers</a>, <a href="../../glossary.html#glossary-perfect-square-trinomial" class="glossary-link" data-original-href="#glossary-perfect-square-trinomial" data-slug="perfect-square-trinomial" data-term="perfect-square trinomial">perfect-square trinomial</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-original-href="#glossary-trinomial" data-slug="trinomial" data-term="trinomial">trinomial</a></p>
+<p><a href="../../glossary.html#glossary-difference-of-squares" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a>, <a href="../../glossary.html#glossary-factorable" class="glossary-link" data-slug="factorable" data-original-href="#glossary-factorable" data-term="factorable">factorable</a>, <a href="../../glossary.html#glossary-over-the-integers" class="glossary-link" data-slug="over-the-integers" data-original-href="#glossary-over-the-integers" data-term="over the integers">over the integers</a>, <a href="../../glossary.html#glossary-perfect-square-trinomial" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect-square trinomial">perfect-square trinomial</a>, <a href="../../glossary.html#glossary-trinomial" class="glossary-link" data-slug="trinomial" data-original-href="#glossary-trinomial" data-term="trinomial">trinomial</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_5/5.5_Factoring_Polynomials_B.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -1459,7 +1461,7 @@ pn \quad \text{and} \quad qm
 <li>Difference of squares</li>
 <li>Perfect square trinomials</li>
 </ul>
-<p>A <a href="../../glossary.html#glossary-difference-of-squares" class="glossary-link" data-original-href="#glossary-difference-of-squares" data-slug="difference-of-squares" data-term="difference of squares">difference of squares</a> has the form:</p>
+<p>A <a href="../../glossary.html#glossary-difference-of-squares" class="glossary-link" data-slug="difference-of-squares" data-original-href="#glossary-difference-of-squares" data-term="difference of squares">difference of squares</a> has the form:</p>
 <p><span class="math display">\[
 (px)^2 - q^2
 \]</span></p>
@@ -1487,7 +1489,7 @@ pn \quad \text{and} \quad qm
 \]</span></p>
 </div>
 <hr>
-<p>Another special pattern is a <a href="../../glossary.html#glossary-perfect-square-trinomial" class="glossary-link" data-original-href="#glossary-perfect-square-trinomial" data-slug="perfect-square-trinomial" data-term="perfect square trinomial">perfect square trinomial</a>. These always have the form:</p>
+<p>Another special pattern is a <a href="../../glossary.html#glossary-perfect-square-trinomial" class="glossary-link" data-slug="perfect-square-trinomial" data-original-href="#glossary-perfect-square-trinomial" data-term="perfect square trinomial">perfect square trinomial</a>. These always have the form:</p>
 <p><span class="math display">\[
 (px)^2 + 2pqx + q^2
 \]</span></p>
@@ -2018,13 +2020,14 @@ Factor completely. If the polynomial cannot be factored, write <strong>prime</st
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

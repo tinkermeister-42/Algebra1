@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +107,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -164,7 +165,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -741,7 +743,7 @@ c &amp;= 13.2
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-original-href="#glossary-inequality" data-term="inequality" data-slug="inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-original-href="#glossary-solution" data-term="solution" data-slug="solution">solution</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-original-href="#glossary-solution-set" data-term="solution set" data-slug="solution-set">solution set</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-original-href="#glossary-variable" data-term="variable" data-slug="variable">variable</a></p>
+<p><a href="../../glossary.html#glossary-inequality" class="glossary-link" data-slug="inequality" data-term="inequality" data-original-href="#glossary-inequality">inequality</a>, <a href="../../glossary.html#glossary-solution" class="glossary-link" data-slug="solution" data-term="solution" data-original-href="#glossary-solution">solution</a>, <a href="../../glossary.html#glossary-solution-set" class="glossary-link" data-slug="solution-set" data-term="solution set" data-original-href="#glossary-solution-set">solution set</a>, <a href="../../glossary.html#glossary-variable" class="glossary-link" data-slug="variable" data-term="variable" data-original-href="#glossary-variable">variable</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_3/3.6_Solving_Inequalities.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -825,6 +827,11 @@ c &amp;= 13.2
 <p><img src="../../images/Unit_3/Lesson_6/x_leq_neg1_test_value.png" class="img-fluid"></p>
 <p>Since <span class="math inline">\(-4 \le -1\)</span> is true, shade the side containing <span class="math inline">\(-4\)</span>.</p>
 </div>
+<div class="you-try" title="Graph $x < -2$ on a number line.">
+<p><img src="../../images/Unit_3/Lesson_6/x_less_than_neg2.png" class="img-fluid"></p>
+<p>Use an <strong>open</strong> circle at <span class="math inline">\(-2\)</span>, because <span class="math inline">\(-2\)</span> is not included. The arrow points <strong>left</strong>, toward the smaller numbers.</p>
+<p>Test a value: <span class="math inline">\(-5 &lt; -2\)</span> is true, and <span class="math inline">\(-5\)</span> is on the left.</p>
+</div>
 <hr>
 </section>
 <section id="solving-inequalities-using-addition-and-subtraction" class="level3">
@@ -861,6 +868,16 @@ x &amp;\le 3
 \]</span></p>
 <p>Now plot it.</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png" class="img-fluid"></p>
+<div class="you-try" title="Solve $x + 4 \ge 1$ and graph the solution.">
+<p><span class="math display">\[
+\begin{aligned}
+x + 4 \textcolor{red}{-4} &amp;\ge 1 \textcolor{red}{-4} \snminus{4} \\
+x &amp;\ge -3
+\end{aligned}
+\]</span></p>
+<p><img src="../../images/Unit_3/Lesson_6/x_geq_neg3.png" class="img-fluid"></p>
+<p>The dot is <strong>filled</strong> because <span class="math inline">\(-3\)</span> is included. The arrow points right.</p>
+</div>
 <hr>
 </section>
 <section id="solving-inequalities-with-multiplication-and-division" class="level3">
@@ -883,6 +900,19 @@ x &amp;&gt; 3
 \]</span></p>
 <p>Now plot it:</p>
 <p><img src="../../images/Unit_3/Lesson_6/x_greater_than_3.png" class="img-fluid"></p>
+<div class="you-try" title="Solve $4x - 1 \le 19$ and graph the solution.">
+<p><span class="math display">\[
+\begin{aligned}
+4x - 1 \textcolor{red}{+1} &amp;\le 19 \textcolor{red}{+1} \snplus{1} \\
+4x &amp;\le 20 \\
+\\
+4x \textcolor{red}{\div 4} &amp;\le 20 \textcolor{red}{\div 4} \sndiv{4} \\
+x &amp;\le 5
+\end{aligned}
+\]</span></p>
+<p><img src="../../images/Unit_3/Lesson_6/x_leq_5.png" class="img-fluid"></p>
+<p>We divided by a <strong>positive</strong> number, so the sign stays the same.</p>
+</div>
 <hr>
 <p>The one big difference between solving equations and inequalities comes when you multiply or divide by a <strong>negative</strong> number. In that case, you have to <strong>flip the sign</strong>.</p>
 <p><strong>Example 8:</strong> Flipping the sign</p>
@@ -914,6 +944,26 @@ x &amp;&gt; 4 \stepnote{Flip the sign}
 \]</span></p>
 <p>If we hadn’t flipped the sign, we’d get <span class="math inline">\(-5 &gt; -3\)</span> (false).</p>
 </div>
+<div class="you-try" title="Solve $-3x + 2 \ge 14$ and graph the solution.">
+<p><span class="math display">\[
+\begin{aligned}
+-3x + 2 \textcolor{red}{-2} &amp;\ge 14 \textcolor{red}{-2} \snminus{2} \\
+-3x &amp;\ge 12 \\
+\\
+-3x \textcolor{red}{\div -3} &amp;\ge 12 \textcolor{red}{\div -3} \sndiv{-3} \\
+x &amp;\le -4 \stepnote{Flip the sign}
+\end{aligned}
+\]</span></p>
+<p><img src="../../images/Unit_3/Lesson_6/x_leq_neg4.png" class="img-fluid"></p>
+<p>Test <span class="math inline">\(x = -5\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+-3(\textcolor{red}{-5}) + 2 &amp;\ge 14 \stepnote{substitute $-5$} \\
+15 + 2 &amp;\ge 14 \\
+17 &amp;\ge 14 \stepnote{$\leftarrow$ a true statement}
+\end{aligned}
+\]</span></p>
+</div>
 <hr>
 </section>
 <section id="real-world-problems-with-inequalities" class="level3">
@@ -936,6 +986,27 @@ c &amp;\le 13.2
 \end{aligned}
 \]</span></p>
 <p>Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is <strong>13 packages</strong>.</p>
+<hr>
+<div class="you-try-m" title="Saving for Shoes">
+<p>You have <span class="math inline">\(\$40\)</span> saved. You earn <span class="math inline">\(\$9\)</span> per hour at your job. You want <strong>at least</strong> <span class="math inline">\(\$100\)</span> for a new pair of shoes.</p>
+<p>Write and solve an inequality. How many whole hours must you work?</p>
+</div>
+<div class="answer" title="Answer">
+<p>Let <span class="math inline">\(h\)</span> be the number of hours you work.</p>
+<p><span class="math display">\[
+40 + 9h \ge 100
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+40 + 9h \textcolor{red}{-40} &amp;\ge 100 \textcolor{red}{-40} \snminus{40} \\
+9h &amp;\ge 60 \\
+\\
+9h \textcolor{red}{\div 9} &amp;\ge 60 \textcolor{red}{\div 9} \sndiv{9} \\
+h &amp;\ge 6.\overline{6}
+\end{aligned}
+\]</span></p>
+<p>You must work <strong>7 hours</strong>. This time we round <strong>up</strong>. After 6 hours you only have <span class="math inline">\(40 + 9(6) = \$94\)</span>, which is not enough.</p>
+</div>
 </section>
 </section>
 <section id="practice" class="level2 unnumbered pagebreak-before">
@@ -1354,13 +1425,14 @@ c &amp;\le 13.2
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

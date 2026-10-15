@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +107,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -164,7 +165,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -721,7 +723,7 @@ window.Quarto = {
 </figure>
 </div>
 <p>How could we model something like this?</p>
-<p>In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions <a href="../../glossary.html#glossary-quadratic" class="glossary-link" data-original-href="#glossary-quadratic" data-slug="quadratic" data-term="quadratics">quadratics</a>.</p>
+<p>In this lesson, we will learn a new type of function that can model curved paths like the one above. We call these functions <a href="../../glossary.html#glossary-quadratic" class="glossary-link" data-term="quadratics" data-slug="quadratic" data-original-href="#glossary-quadratic">quadratics</a>.</p>
 <div class="objectives">
 <ul class="task-list">
 <li><label><input type="checkbox">I can recognize a quadratic function from an equation or graph.</label></li>
@@ -731,7 +733,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-domain" class="glossary-link" data-original-href="#glossary-domain" data-slug="domain" data-term="domain">domain</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-original-href="#glossary-function" data-slug="function" data-term="function">function</a>, <a href="../../glossary.html#glossary-maximum" class="glossary-link" data-original-href="#glossary-maximum" data-slug="maximum" data-term="maximum">maximum</a>, <a href="../../glossary.html#glossary-minimum" class="glossary-link" data-original-href="#glossary-minimum" data-slug="minimum" data-term="minimum">minimum</a>, <a href="../../glossary.html#glossary-parabola" class="glossary-link" data-original-href="#glossary-parabola" data-slug="parabola" data-term="parabola">parabola</a>, <a href="../../glossary.html#glossary-quadratic-function" class="glossary-link" data-original-href="#glossary-quadratic-function" data-slug="quadratic-function" data-term="quadratic function">quadratic function</a>, <a href="../../glossary.html#glossary-range" class="glossary-link" data-original-href="#glossary-range" data-slug="range" data-term="range">range</a>, <a href="../../glossary.html#glossary-vertex" class="glossary-link" data-original-href="#glossary-vertex" data-slug="vertex" data-term="vertex">vertex</a></p>
+<p><a href="../../glossary.html#glossary-domain" class="glossary-link" data-term="domain" data-slug="domain" data-original-href="#glossary-domain">domain</a>, <a href="../../glossary.html#glossary-function" class="glossary-link" data-term="function" data-slug="function" data-original-href="#glossary-function">function</a>, <a href="../../glossary.html#glossary-maximum" class="glossary-link" data-term="maximum" data-slug="maximum" data-original-href="#glossary-maximum">maximum</a>, <a href="../../glossary.html#glossary-minimum" class="glossary-link" data-term="minimum" data-slug="minimum" data-original-href="#glossary-minimum">minimum</a>, <a href="../../glossary.html#glossary-parabola" class="glossary-link" data-term="parabola" data-slug="parabola" data-original-href="#glossary-parabola">parabola</a>, <a href="../../glossary.html#glossary-quadratic-function" class="glossary-link" data-term="quadratic function" data-slug="quadratic-function" data-original-href="#glossary-quadratic-function">quadratic function</a>, <a href="../../glossary.html#glossary-range" class="glossary-link" data-term="range" data-slug="range" data-original-href="#glossary-range">range</a>, <a href="../../glossary.html#glossary-vertex" class="glossary-link" data-term="vertex" data-slug="vertex" data-original-href="#glossary-vertex">vertex</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_6/6.1_Introduction_to_Quadratic_Functions.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -748,7 +750,7 @@ window.Quarto = {
 <h2 class="unnumbered anchored" data-anchor-id="learn">👥 Learn Together</h2>
 <section id="identifying-quadratic-functions" class="level3">
 <h3 class="anchored" data-anchor-id="identifying-quadratic-functions">6.1.1 - Identifying Quadratic Functions</h3>
-<p>In Unit 5 you learned that the <a href="../../glossary.html#glossary-degree" class="glossary-link" data-original-href="#glossary-degree" data-slug="degree" data-term="degree">degree</a> of a polynomial tells us how the expression behaves. Linear functions have degree <span class="math inline">\(1\)</span>, which means their graphs can only move in one direction at a time. They never bend, so the result is always a straight line.</p>
+<p>In Unit 5 you learned that the <a href="../../glossary.html#glossary-degree" class="glossary-link" data-term="degree" data-slug="degree" data-original-href="#glossary-degree">degree</a> of a polynomial tells us how the expression behaves. Linear functions have degree <span class="math inline">\(1\)</span>, which means their graphs can only move in one direction at a time. They never bend, so the result is always a straight line.</p>
 <p>Quadratic functions raise the degree to <span class="math inline">\(2\)</span>, and that single change gives the graph the ability to curve once. This allows them to model situations that bend instead of moving in a straight path.</p>
 <p>So how do you recognize a quadratic function?</p>
 <p>There are a few ways to tell, depending on whether you see an equation, a table, or a graph. Let’s start with equations.</p>
@@ -805,7 +807,7 @@ There is no <span class="math inline">\(x^2\)</span> term.</p>
 <section id="from-a-graph" class="level4">
 <h4 class="anchored" data-anchor-id="from-a-graph">From a Graph</h4>
 <p>Now let’s look at how to identify a quadratic from its graph.</p>
-<p>Quadratic functions create a smooth U-shaped curve called a <a href="../../glossary.html#glossary-parabola" class="glossary-link" data-original-href="#glossary-parabola" data-slug="parabola" data-term="parabola">parabola</a>. A parabola has exactly one turning point. Both sides match if you imagine folding it in half.</p>
+<p>Quadratic functions create a smooth U-shaped curve called a <a href="../../glossary.html#glossary-parabola" class="glossary-link" data-term="parabola" data-slug="parabola" data-original-href="#glossary-parabola">parabola</a>. A parabola has exactly one turning point. Both sides match if you imagine folding it in half.</p>
 <p>The following example shows three different parabolas.</p>
 <hr>
 <p><strong>Example 4:</strong> Three Parabolas</p>
@@ -888,7 +890,7 @@ There is no <span class="math inline">\(x^2\)</span> term.</p>
 </section>
 <section id="axis-of-symmetry" class="level4">
 <h4 class="anchored" data-anchor-id="axis-of-symmetry">Axis of Symmetry</h4>
-<p>Every parabola has a vertical line, passing through the vertex, that splits it into two matching halves. This vertical line is called the <a href="../../glossary.html#glossary-axis-of-symmetry" class="glossary-link" data-original-href="#glossary-axis-of-symmetry" data-slug="axis-of-symmetry" data-term="axis of symmetry">axis of symmetry</a>.</p>
+<p>Every parabola has a vertical line, passing through the vertex, that splits it into two matching halves. This vertical line is called the <a href="../../glossary.html#glossary-axis-of-symmetry" class="glossary-link" data-term="axis of symmetry" data-slug="axis-of-symmetry" data-original-href="#glossary-axis-of-symmetry">axis of symmetry</a>.</p>
 <p>The axis of symmetry is always <span class="math inline">\(x = h\)</span>, where <span class="math inline">\(h\)</span> is the <span class="math inline">\(x\)</span>-value of the vertex.</p>
 <hr>
 <p><strong>Example 9:</strong> The axis of symmetry of a parabola</p>
@@ -927,9 +929,9 @@ There is no <span class="math inline">\(x^2\)</span> term.</p>
 </section>
 <section id="domain-and-range-of-quadratics" class="level3">
 <h3 class="anchored" data-anchor-id="domain-and-range-of-quadratics">6.1.3 - Domain and Range of Quadratics</h3>
-<p>As is true for linear functions, a parabola goes on forever in both directions along the <span class="math inline">\(x\)</span>-axis. So the <a href="../../glossary.html#glossary-domain" class="glossary-link" data-original-href="#glossary-domain" data-slug="domain" data-term="domain">domain</a> (all things <span class="math inline">\(x\)</span> can be) is <a href="../../glossary.html#glossary-all-real-numbers" class="glossary-link" data-original-href="#glossary-all-real-numbers" data-slug="all-real-numbers" data-term="all real numbers">all real numbers</a>, written <span class="math inline">\((-\infty, \infty)\)</span>.</p>
+<p>As is true for linear functions, a parabola goes on forever in both directions along the <span class="math inline">\(x\)</span>-axis. So the <a href="../../glossary.html#glossary-domain" class="glossary-link" data-term="domain" data-slug="domain" data-original-href="#glossary-domain">domain</a> (all things <span class="math inline">\(x\)</span> can be) is <a href="../../glossary.html#glossary-all-real-numbers" class="glossary-link" data-term="all real numbers" data-slug="all-real-numbers" data-original-href="#glossary-all-real-numbers">all real numbers</a>, written <span class="math inline">\((-\infty, \infty)\)</span>.</p>
 <p>Unlike linear functions, a quadratic function does not take all possible <span class="math inline">\(y\)</span> values. Recall that when a parabola <strong>opens upward</strong>, its vertex is a <strong>minimum</strong>. When a parabola <strong>opens downward</strong>, its vertex is a <strong>maximum</strong>.</p>
-<p>The set of possible <span class="math inline">\(y\)</span> values is called the <a href="../../glossary.html#glossary-range" class="glossary-link" data-original-href="#glossary-range" data-slug="range" data-term="range">range</a>. For any quadratic function with vertex <span class="math inline">\((h, k)\)</span>, its <strong>range</strong> is</p>
+<p>The set of possible <span class="math inline">\(y\)</span> values is called the <a href="../../glossary.html#glossary-range" class="glossary-link" data-term="range" data-slug="range" data-original-href="#glossary-range">range</a>. For any quadratic function with vertex <span class="math inline">\((h, k)\)</span>, its <strong>range</strong> is</p>
 <ul>
 <li><span class="math inline">\([k, \infty)\)</span> if it opens upward<br>
 </li>
@@ -1431,13 +1433,14 @@ Give a possible vertex and matching quadratic equation.</p></li>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
