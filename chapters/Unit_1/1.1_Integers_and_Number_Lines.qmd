@@ -66,6 +66,14 @@ In fact, number lines don't even have to be {{< glink horizontal >}}. Here is a 
 
 ![](/images/Unit_1/Lesson_1/vertical_by_tens.png)
 
+:::{.you-try title="Draw a number line from -50 to 50, counting by 5s."}
+
+![](/images/Unit_1/Lesson_1/neg50_to_50_by_5s.png)
+
+Every tick mark is 5 more than the one to its left. Zero is in the middle.
+
+:::
+
 :::{.gotcha title="How many numbers are between any two numbers on the number line?"}
 
 **Example 1:** How many numbers between 3 and 5?
@@ -105,6 +113,14 @@ These are called {{< glink opposite >}} numbers. They are the **same distance** 
 The opposite of zero is zero. Zero is the only number that is its own opposite!
 :::
 
+:::{.you-try title="What is the opposite of -8?"}
+
+The opposite of $-8$ is $8$.
+
+Both numbers are 8 units from zero. $-8$ is on the left side and $8$ is on the right side.
+
+:::
+
 ***
 
 ### 1.1.3 - What Is Absolute Value?
@@ -130,6 +146,14 @@ You can compute your distances by adding |-5| + |3|, by |-5 - 3|, or by |3 - (-5
 :::{.think title="Can the absolute value ever be negative?"}
 
 Absolute value is **never** negative, because distance is never negative.
+:::
+
+:::{.you-try title="Find $|-12|$ and $|7|$."}
+
+$|-12| = 12$, because $-12$ is 12 units from zero.
+
+$|7| = 7$, because $7$ is 7 units from zero.
+
 :::
 
 ***
@@ -162,6 +186,16 @@ Two questions sound alike but are not:
 They can disagree. Here $-7 < 2$, but $|-7| > |2|$:
 
 ![](/images/Unit_1/Lesson_1/compare_2_to_neg7.png)
+:::
+
+:::{.you-try title="Use $>$ or $<$ to compare $-6$ and $-2$. Then compare $|-6|$ and $|-2|$."}
+
+![](/images/Unit_1/Lesson_1/order_neg6_and_neg2.png)
+
+$-2$ is to the right of $-6$, so $-6 < -2$.
+
+$-6$ is farther from zero, so $|-6| > |-2|$ (because $6 > 2$).
+
 :::
 
 ***
@@ -255,6 +289,24 @@ Rewrite each as an addition, then find the value.
 | $-4 - 3$ | $-4 + (-3)$ | $-7$ | owed $\$4$, borrowed $\$3$ more |
 | $-6 - (-10)$ | $-6 + 10$ | $4$ | owed $\$6$, a $\$10$ debt was cancelled |
 | $-9 + 4$ | already an addition | $-5$ | owed $\$9$, paid back $\$4$ |
+
+:::{.you-try-m title="Rewrite, then find the value"}
+Rewrite each as an addition. Then find the value.
+
+a. $2 - 9$
+
+b. $-5 - 3$
+
+c. $-3 - (-8)$
+:::
+
+:::{.answer title="Answer"}
+a. $2 + (-9) = -7$. You had $\$2$ and spent $\$9$. Now you are $\$7$ overdrawn.
+
+b. $-5 + (-3) = -8$. You owed $\$5$ and borrowed $\$3$ more.
+
+c. $-3 + 8 = 5$. You owed $\$3$. Then an $\$8$ debt was cancelled.
+:::
 
 :::{.think title="Why does the number line stop helping here?"}
 

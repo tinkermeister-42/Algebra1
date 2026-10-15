@@ -56,3 +56,4 @@ def figure(name, marks, arrow=None):
 if __name__ == "__main__":
     figure("order_2_and_neg7.png",  [(-7, RED), (2, BLUE)],  "greater this way")
     figure("order_neg4_and_neg5.png", [(-5, RED), (-4, BLUE)], "greater this way")
+    figure("order_neg6_and_neg2.png", [(-6, RED), (-2, BLUE)], "greater this way")

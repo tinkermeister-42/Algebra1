@@ -130,6 +130,16 @@ Since $-4 \le -1$ is true, shade the side containing $-4$.
 
 :::
 
+:::{.you-try title="Graph $x < -2$ on a number line."}
+
+![](/images/Unit_3/Lesson_6/x_less_than_neg2.png)
+
+Use an **open** circle at $-2$, because $-2$ is not included. The arrow points **left**, toward the smaller numbers.
+
+Test a value: $-5 < -2$ is true, and $-5$ is on the left.
+
+:::
+
 ***
 
 ### 3.6.2 - Solving Inequalities Using Addition and Subtraction
@@ -184,6 +194,21 @@ Now plot it.
 
 ![](/images/Unit_3/Lesson_6/x_less_than_or_equal_to_3.png)
 
+:::{.you-try title="Solve $x + 4 \ge 1$ and graph the solution."}
+
+$$
+\begin{aligned}
+x + 4 \textcolor{red}{-4} &\ge 1 \textcolor{red}{-4} \snminus{4} \\
+x &\ge -3
+\end{aligned}
+$$
+
+![](/images/Unit_3/Lesson_6/x_geq_neg3.png)
+
+The dot is **filled** because $-3$ is included. The arrow points right.
+
+:::
+
 ***
 
 ### 3.6.3 - Solving Inequalities with Multiplication and Division
@@ -213,6 +238,24 @@ $$
 Now plot it:
 
 ![](/images/Unit_3/Lesson_6/x_greater_than_3.png)
+
+:::{.you-try title="Solve $4x - 1 \le 19$ and graph the solution."}
+
+$$
+\begin{aligned}
+4x - 1 \textcolor{red}{+1} &\le 19 \textcolor{red}{+1} \snplus{1} \\
+4x &\le 20 \\
+\\
+4x \textcolor{red}{\div 4} &\le 20 \textcolor{red}{\div 4} \sndiv{4} \\
+x &\le 5
+\end{aligned}
+$$
+
+![](/images/Unit_3/Lesson_6/x_leq_5.png)
+
+We divided by a **positive** number, so the sign stays the same.
+
+:::
 
 ***
 
@@ -258,6 +301,32 @@ $$
 If we hadn't flipped the sign, we'd get $-5 > -3$ (false).
 :::
 
+:::{.you-try title="Solve $-3x + 2 \ge 14$ and graph the solution."}
+
+$$
+\begin{aligned}
+-3x + 2 \textcolor{red}{-2} &\ge 14 \textcolor{red}{-2} \snminus{2} \\
+-3x &\ge 12 \\
+\\
+-3x \textcolor{red}{\div -3} &\ge 12 \textcolor{red}{\div -3} \sndiv{-3} \\
+x &\le -4 \stepnote{Flip the sign}
+\end{aligned}
+$$
+
+![](/images/Unit_3/Lesson_6/x_leq_neg4.png)
+
+Test $x = -5$:
+
+$$
+\begin{aligned}
+-3(\textcolor{red}{-5}) + 2 &\ge 14 \stepnote{substitute $-5$} \\
+15 + 2 &\ge 14 \\
+17 &\ge 14 \stepnote{$\leftarrow$ a true statement}
+\end{aligned}
+$$
+
+:::
+
 ***
 
 ### 3.6.4 - Real-World Problems With Inequalities
@@ -287,6 +356,34 @@ c &\le 13.2
 $$
 
 Since you can only purchase whole packages of candy, the closest whole number of packages that is less than or equal to 13.2 is **13 packages**.
+
+***
+
+:::{.you-try-m title="Saving for Shoes"}
+You have $\$40$ saved. You earn $\$9$ per hour at your job. You want **at least** $\$100$ for a new pair of shoes.
+
+Write and solve an inequality. How many whole hours must you work?
+:::
+
+:::{.answer title="Answer"}
+Let $h$ be the number of hours you work.
+
+$$
+40 + 9h \ge 100
+$$
+
+$$
+\begin{aligned}
+40 + 9h \textcolor{red}{-40} &\ge 100 \textcolor{red}{-40} \snminus{40} \\
+9h &\ge 60 \\
+\\
+9h \textcolor{red}{\div 9} &\ge 60 \textcolor{red}{\div 9} \sndiv{9} \\
+h &\ge 6.\overline{6}
+\end{aligned}
+$$
+
+You must work **7 hours**. This time we round **up**. After 6 hours you only have $40 + 9(6) = \$94$, which is not enough.
+:::
 
 {{< practice >}}
 
