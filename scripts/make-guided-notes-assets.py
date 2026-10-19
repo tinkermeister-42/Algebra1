@@ -27,7 +27,7 @@ def number_line(labels=None, n_ticks=21, width=700, height=58):
         h, sw = (9, 2.5) if big else (6, 1.6)
         parts.append(f'<line x1="{x:.1f}" y1="{y-h}" x2="{x:.1f}" y2="{y+h}" '
                      f'stroke="#111" stroke-width="{sw}"/>')
-        if labels:
+        if labels and labels[i]:
             parts.append(f'<text x="{x:.1f}" y="{y+24}" text-anchor="middle" font-size="12" '
                          f'font-family="{FONT}" fill="#111">{labels[i]}</text>')
     return svg(width, height, parts)
@@ -176,6 +176,7 @@ if __name__ == "__main__":
     write("nl.svg",        number_line(labels=[str(v) for v in range(-10, 11)]))
     write("nl-blank.svg",  number_line(labels=None, n_ticks=21))
     write("nl-blank-11.svg", number_line(labels=None, n_ticks=11))
+    write("nl-zero.svg",   number_line(labels=["0" if v == 0 else "" for v in range(-10, 11)]))
     write("grid.svg",      grid(labelled=True))
     write("grid-blank.svg", grid(labelled=False))
     write("grid-q1.svg",   quadrant1())
