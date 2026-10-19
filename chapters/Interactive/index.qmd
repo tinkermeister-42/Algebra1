@@ -8,12 +8,13 @@ Build factor trees to find the prime factorization of numbers.
 
 ## Unit 2 - Algebraic Expressions
 
-Coming Soon
+#### [Guess the Function Rule Game](Unit_2/function_machine_game.qmd)
+
+Try inputs, look for patterns, and find the rule the function machine uses.
 
 ## Unit 3 - Solving Linear Equations
 
-Coming Soon
-
+*Coming soon.*
 
 ## Unit 4 - Linear Functions & Graphs
 
@@ -35,7 +36,7 @@ Move the slider to see the effect of different correlation values.
 
 ## Unit 5 - Exponents & Polynomials
 
-Coming Soon
+*Coming soon.*
 
 ## Unit 6 - Quadratic Equations & Functions
 
