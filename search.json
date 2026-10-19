@@ -2163,7 +2163,7 @@
     "href": "guided-notes.html#unit-6---quadratic-equations-functions",
     "title": "Printable Guided Notes",
     "section": "Unit 6 - Quadratic Equations & Functions",
-    "text": "Unit 6 - Quadratic Equations & Functions\n\n6.1 - Introduction to Quadratics\n6.2 - Graphing Quadratics\n6.3 - Solving Quadratic Equations by Factoring\n6.4 - Solving Quadratics by Taking Square Roots\n6.5 - Completing the Square\n6.6 - The Quadratic Formula\n6.7 - Applications of Quadratics\n\n\nTeachers: the handouts are generated from the sources in guided_notes/src/. Edit one there and run python3 scripts/build-guided-notes.py to rebuild.",
+    "text": "Unit 6 - Quadratic Equations & Functions\n\n6.1 - Introduction to Quadratics\n6.2 - Graphing Quadratics\n6.3 - Solving Quadratic Equations by Factoring\n6.4 - Solving Quadratics by Taking Square Roots\n6.5 - Completing the Square\n6.6 - The Quadratic Formula\n6.7 - Applications of Quadratics",
     "crumbs": [
       "Printable Guided Notes"
     ]
@@ -2195,7 +2195,7 @@
     "href": "chapters/Interactive/index.html#unit-2---algebraic-expressions",
     "title": "Index",
     "section": "Unit 2 - Algebraic Expressions",
-    "text": "Unit 2 - Algebraic Expressions\nComing Soon",
+    "text": "Unit 2 - Algebraic Expressions\n\nGuess the Function Rule Game\nTry inputs, look for patterns, and find the rule the function machine uses.",
     "crumbs": [
       "Interactive Learning",
       "Index"
@@ -2206,7 +2206,7 @@
     "href": "chapters/Interactive/index.html#unit-3---solving-linear-equations",
     "title": "Index",
     "section": "Unit 3 - Solving Linear Equations",
-    "text": "Unit 3 - Solving Linear Equations\nComing Soon",
+    "text": "Unit 3 - Solving Linear Equations\nComing soon.",
     "crumbs": [
       "Interactive Learning",
       "Index"
@@ -2228,7 +2228,7 @@
     "href": "chapters/Interactive/index.html#unit-5---exponents-polynomials",
     "title": "Index",
     "section": "Unit 5 - Exponents & Polynomials",
-    "text": "Unit 5 - Exponents & Polynomials\nComing Soon",
+    "text": "Unit 5 - Exponents & Polynomials\nComing soon.",
     "crumbs": [
       "Interactive Learning",
       "Index"
@@ -2327,7 +2327,7 @@
     "href": "chapters/Supplemental/index.html",
     "title": "Supplemental Materials",
     "section": "",
-    "text": "Welcome to the Supplemental Materials section of this course! This is where you’ll find all the fun, extra, and just plain interesting math content that doesn’t quite fit into the main units, but still helps build understanding, spark curiosity, or offer a little challenge.\nUse these resources to: - Practice your skills in new and creative ways - Explore math puzzles and logic games - Reinforce key concepts from class - Take a brain break with something still mathy (but fun!)\n\nMath Games & Puzzles\nNumber grids, logic puzzles, equation word searches, and more.\n\n\nExtra Practice Worksheets\nTargeted drills and alternative problem sets.\n\n\nChallenge Problem Solutions\nSolutions to all of the challenge problems.\n\n\nMath Activities\nOpen-ended or interactive things to try out &lt; Coming Soon!&gt;\n\nHappy exploring!",
+    "text": "Welcome to the Supplemental Materials section of this course! This is where you’ll find all the fun, extra, and just plain interesting math content that doesn’t quite fit into the main units, but still helps build understanding, spark curiosity, or offer a little challenge.\nUse these resources to: - Practice your skills in new and creative ways - Explore math puzzles and logic games - Reinforce key concepts from class - Take a brain break with something still mathy (but fun!)\n\nMath Games & Puzzles\nNumber grids, logic puzzles, equation word searches, and more.\n\n\nExtra Practice Worksheets\nTargeted drills and alternative problem sets.\n\n\nChallenge Problem Solutions\nSolutions to all of the challenge problems.\n\n\nMath Activities\nOpen-ended or interactive things to try out.\nComing soon.\n\nHappy exploring!",
     "crumbs": [
       "Supplemental",
       "Supplemental Materials"
