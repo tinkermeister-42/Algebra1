@@ -68,8 +68,4 @@ copy). They are laid out for letter-size paper.
   - [6.6 - The Quadratic Formula](/guided_notes/Unit_6/6.6_The_Quadratic_Formula.html){target="_blank"}
   - [6.7 - Applications of Quadratics](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"}
 
-***
-
-*Teachers: the handouts are generated from the sources in `guided_notes/src/`.
-Edit one there and run `python3 scripts/build-guided-notes.py` to rebuild.*
 
