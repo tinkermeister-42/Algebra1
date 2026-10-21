@@ -51,6 +51,7 @@ SHELL = """<!DOCTYPE html>
 SHORTHAND = {
     "{{nl}}":       '<img class="nl" src="../assets/nl.svg" alt="number line from -10 to 10">',
     "{{nl-blank}}": '<img class="nl" src="../assets/nl-blank.svg" alt="blank number line">',
+    "{{nl-0}}":     '<img class="nl" src="../assets/nl-zero.svg" alt="number line with only zero labeled">',
     "{{nl-11}}":    '<img class="nl" src="../assets/nl-blank-11.svg" alt="blank number line">',
     "{{grid}}":     '<img class="grid" src="../assets/grid.svg" alt="coordinate grid">',
     "{{grid-sm}}":  '<img class="grid sm" src="../assets/grid.svg" alt="coordinate grid">',
