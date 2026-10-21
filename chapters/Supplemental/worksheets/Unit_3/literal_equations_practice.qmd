@@ -1,0 +1,368 @@
+# Unit 3 - Literal Equations Practice {.unnumbered}
+
+This page gives you extra practice with [3.7 - Solving Literal Equations](/chapters/Unit_3/3.7_Solving_Literal_Equations.qmd).
+
+There are four sections.
+Each section starts with one example that is worked out for you.
+Then you try the problems.
+The answers are at the end of each section.
+
+Your answer may look different from the answer key and still be correct.
+If you are not sure, check it with numbers.
+
+***
+
+## Section 1 - Multiply or Divide
+
+These formulas need only one step.
+
+**Example:** Density
+
+The density of an object is $D = \dfrac{m}{V}$, where $m$ is the mass and $V$ is the volume. Solve for the mass $m$.
+
+$m$ is divided by $V$. To undo division, multiply both sides by $V$.
+
+$$
+\begin{aligned}
+D &= \frac{m}{V} \\
+\\
+D \textcolor{red}{\times V} &= \frac{m}{V} \textcolor{red}{\times V} \sntimes{V} \\
+DV &= m
+\end{aligned}
+$$
+
+So $m = DV$.
+
+**Check with numbers.** Pick $m = 20$ and $V = 4$.
+Then $D = \dfrac{20}{4} = 5$.
+Our answer says $m = DV = 5 \times 4 = 20$.
+That is the mass we started with, so the answer works.
+
+***
+
+**Solve each formula for the indicated variable.**
+
+1. $W = Fd$; solve for $F$
+
+2. $P = IV$; solve for $V$
+
+3. $C = \pi d$; solve for $d$
+
+4. $V = lwh$; solve for $w$
+
+5. $a = \frac{v}{t}$; solve for $v$
+
+6. $\frac{2}{3}x = y$; solve for $x$
+
+7. $ax = c$; solve for $x$
+
+8. $5x = 2y$; solve for $x$
+
+9. $-4y = 3x$; solve for $y$
+
+10. $\frac{x}{k} = y$; solve for $x$
+
+:::{.answers}
+
+1. $F = \frac{W}{d}$
+
+2. $V = \frac{P}{I}$
+
+3. $d = \frac{C}{\pi}$
+
+4. $w = \frac{V}{lh}$
+
+5. $v = at$
+
+6. $x = \frac{3y}{2}$
+
+7. $x = \frac{c}{a}$
+
+8. $x = \frac{2y}{5}$
+
+9. $y = -\frac{3x}{4}$
+
+10. $x = ky$
+
+:::
+
+***
+
+## Section 2 - Add or Subtract First
+
+These formulas need two steps.
+Move the terms you do not want with addition or subtraction.
+Then multiply or divide.
+
+**Example:** From standard form
+
+Solve $3x + 2y = 12$ for $y$.
+
+$$
+\begin{aligned}
+3x + 2y &= 12 \\
+\\
+3x + 2y \textcolor{red}{-3x} &= 12 \textcolor{red}{-3x} \snminus{3x} \\
+2y &= 12 - 3x \\
+\\
+2y \textcolor{red}{\div 2} &= (12 - 3x) \textcolor{red}{\div 2} \sndiv{2} \\
+y &= \frac{12 - 3x}{2}
+\end{aligned}
+$$
+
+So $y = \dfrac{12 - 3x}{2}$.
+
+You can also split the fraction. Divide **each** term by 2.
+
+$$
+y = \frac{12}{2} - \frac{3x}{2} = 6 - \frac{3}{2}x
+$$
+
+Both answers are correct. They are equivalent expressions.
+
+:::{.gotcha title="Divide every term"}
+
+When you divide $12 - 3x$ by 2, **both** terms are divided by 2.
+
+$\dfrac{12 - 3x}{2}$ is **not** the same as $6 - 3x$.
+
+Test it with $x = 2$.
+The first one gives $\dfrac{12 - 6}{2} = 3$.
+The second one gives $6 - 6 = 0$.
+They are different, so $6 - 3x$ is wrong.
+
+:::
+
+***
+
+**Solve each formula for the indicated variable.**
+
+11. $P = a + b + c$; solve for $b$
+
+12. $y = 4x - k$; solve for $k$
+
+13. $2x + y = 9$; solve for $y$
+
+14. $x + 3y = 6$; solve for $y$
+
+15. $4x - 2y = 10$; solve for $y$
+
+16. $ax - b = c$; solve for $x$
+
+17. $v = u + at$; solve for $t$
+
+18. $S = 180n - 360$; solve for $n$
+
+19. $8 - 2x = y$; solve for $x$
+
+20. $mx + ny = p$; solve for $y$
+
+:::{.answers}
+
+11. $b = P - a - c$
+
+12. $k = 4x - y$
+
+13. $y = 9 - 2x$
+
+14. $y = \frac{6 - x}{3}$, which is the same as $y = 2 - \frac{1}{3}x$
+
+15. $y = 2x - 5$
+
+16. $x = \frac{c + b}{a}$
+
+17. $t = \frac{v - u}{a}$
+
+18. $n = \frac{S + 360}{180}$
+
+19. $x = \frac{8 - y}{2}$
+
+20. $y = \frac{p - mx}{n}$
+
+:::
+
+***
+
+## Section 3 - Multi-Step Formulas
+
+These formulas have fractions, parentheses, or more than two steps.
+
+**Example:** Undo in reverse order
+
+Solve $y = \dfrac{3x - a}{4}$ for $x$.
+
+First, look at what happens to $x$.
+To get $x$ back, undo each step in the **reverse order**.
+
+| What happens to $x$ | How to undo it |
+|:--|:--|
+| 1. Multiply by 3 | 3. Divide by 3 |
+| 2. Subtract $a$ | 2. Add $a$ |
+| 3. Divide by 4 | 1. Multiply by 4 |
+
+$$
+\begin{aligned}
+y &= \frac{3x - a}{4} \\
+\\
+y \textcolor{red}{\times 4} &= \frac{3x - a}{4} \textcolor{red}{\times 4} \sntimes{4} \\
+4y &= 3x - a \\
+\\
+4y \textcolor{red}{+a} &= 3x - a \textcolor{red}{+a} \snplus{a} \\
+4y + a &= 3x \\
+\\
+(4y + a) \textcolor{red}{\div 3} &= 3x \textcolor{red}{\div 3} \sndiv{3} \\
+\frac{4y + a}{3} &= x
+\end{aligned}
+$$
+
+So $x = \dfrac{4y + a}{3}$.
+
+***
+
+**Solve each formula for the indicated variable.**
+
+21. $\frac{x + a}{b} = c$; solve for $x$
+
+22. $t = \frac{d}{r}$; solve for $r$
+
+23. $a(x + b) = c$; solve for $x$
+
+24. $3(y - 2) = x$; solve for $y$
+
+25. $E = \frac{1}{2}mv^2$; solve for $m$
+
+26. $F = \frac{9}{5}C + 32$; solve for $C$
+
+27. $y - 3 = m(x + 2)$; solve for $x$
+
+28. $\frac{2}{3}x - a = b$; solve for $x$
+
+29. $S = 2\pi r^2 + 2\pi rh$; solve for $h$
+
+30. $\frac{1}{2}(x + y) = 3x - k$; solve for $x$
+
+:::{.answers}
+
+21. $x = bc - a$
+
+22. $r = \frac{d}{t}$
+
+23. $x = \frac{c}{a} - b$, which is the same as $x = \frac{c - ab}{a}$
+
+24. $y = \frac{x}{3} + 2$, which is the same as $y = \frac{x + 6}{3}$
+
+25. $m = \frac{2E}{v^2}$
+
+26. $C = \frac{5}{9}(F - 32)$
+
+27. $x = \frac{y - 3}{m} - 2$
+
+28. $x = \frac{3(a + b)}{2}$
+
+29. $h = \frac{S - 2\pi r^2}{2\pi r}$
+
+30. $x = \frac{y + 2k}{5}$
+
+:::
+
+***
+
+## Section 4 - Test-Style Questions
+
+Tests often ask about literal equations with different words.
+The math is the same.
+
+**Example:** "Which equation is equivalent?"
+
+Which equation is equivalent to $2x - 5y = 10$?
+
+a. $y = \dfrac{2}{5}x - 2$
+b. $y = -\dfrac{2}{5}x + 2$
+c. $y = \dfrac{2}{5}x + 10$
+d. $y = -2x - 2$
+
+*Equivalent* means the same equation written a different way.
+Every choice has $y$ by itself.
+So the question is asking you to solve for $y$.
+
+$$
+\begin{aligned}
+2x - 5y &= 10 \\
+\\
+2x - 5y \textcolor{red}{-2x} &= 10 \textcolor{red}{-2x} \snminus{2x} \\
+-5y &= 10 - 2x \\
+\\
+-5y \textcolor{red}{\div (-5)} &= (10 - 2x) \textcolor{red}{\div (-5)} \sndiv{(-5)} \\
+y &= -2 + \frac{2}{5}x
+\end{aligned}
+$$
+
+So $y = \frac{2}{5}x - 2$. The answer is **a**.
+
+The wrong choices come from common mistakes.
+Choice **b** divides by $5$ instead of $-5$.
+Choice **c** divides only the $x$ term.
+Choice **d** divides only the 10.
+
+***
+
+31. The volume of a pyramid is $V = \frac{1}{3}Bh$. Which equation can be used to find the height $h$?
+
+    a. $h = \dfrac{V}{3B}$
+    b. $h = \dfrac{3V}{B}$
+    c. $h = 3VB$
+    d. $h = \dfrac{B}{3V}$
+
+32. Which equation is equivalent to $6x + 3y = 9$?
+
+    a. $y = 9 - 2x$
+    b. $y = 3 - 6x$
+    c. $y = -2x + 3$
+    d. $y = 2x + 3$
+
+33. The equation $ax + by = c$ is solved for $y$. Which expression is equal to $y$?
+
+    a. $\dfrac{c - ax}{b}$
+    b. $\dfrac{c + ax}{b}$
+    c. $c - \dfrac{ax}{b}$
+    d. $\dfrac{c}{b} - ax$
+
+34. A car rental costs $\$25$ plus $\$0.50$ for each mile you drive.
+    The total cost is $C = 25 + 0.5m$, where $m$ is the number of miles.
+
+    a. Solve the formula for $m$.
+    b. You have $\$60$. How many miles can you drive?
+
+35. Ana solved $4x + 8y = 12$ for $y$. Here is her work.
+
+    $$
+    \begin{aligned}
+    4x + 8y &= 12 \\
+    8y &= 12 - 4x \\
+    y &= 12 - \frac{4x}{8} \\
+    y &= 12 - \frac{1}{2}x
+    \end{aligned}
+    $$
+
+    What mistake did Ana make? What is the correct answer?
+
+:::{.answers}
+
+31. **b.** $h = \frac{3V}{B}$
+
+32. **c.** $y = -2x + 3$
+
+33. **a.** $\frac{c - ax}{b}$
+
+34. a. $m = \frac{C - 25}{0.5}$, which is the same as $m = 2C - 50$
+
+    b. $m = 2(60) - 50 = 70$ miles
+
+35. Ana divided only $4x$ by 8. She needed to divide **every** term by 8.
+    The correct answer is $y = \frac{12 - 4x}{8}$, which is the same as $y = \frac{3}{2} - \frac{1}{2}x$.
+
+:::
+
+***
+
+To review the lesson, see [3.7 - Solving Literal Equations](/chapters/Unit_3/3.7_Solving_Literal_Equations.qmd).
