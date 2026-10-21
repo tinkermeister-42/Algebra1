@@ -12,6 +12,11 @@ Here are some worksheets that will give you practice on various topics.
 ## Unit 2 - Algebraic Expressions
 
   - [Paint by Like Term](Unit_2/PaintByLikeTerm.pdf)
-  
+
+
+## Unit 3 - Solving Linear Equations
+
+  - [Literal Equations Practice](Unit_3/literal_equations_practice.qmd)
+
 ***
 
