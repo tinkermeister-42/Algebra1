@@ -2389,6 +2389,72 @@
     ]
   },
   {
+    "objectID": "chapters/Supplemental/worksheets/index.html#unit-3---solving-linear-equations",
+    "href": "chapters/Supplemental/worksheets/index.html#unit-3---solving-linear-equations",
+    "title": "Extra Practice Worksheets",
+    "section": "Unit 3 - Solving Linear Equations",
+    "text": "Unit 3 - Solving Linear Equations\n\nLiteral Equations Practice",
+    "crumbs": [
+      "Supplemental",
+      "Extra Practice Worksheets"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html",
+    "title": "Unit 3 - Literal Equations Practice",
+    "section": "",
+    "text": "Section 1 - Multiply or Divide\nThis page gives you extra practice with 3.7 - Solving Literal Equations.\nThere are four sections. Each section starts with one example that is worked out for you. Then you try the problems. The answers are at the end of each section.\nYour answer may look different from the answer key and still be correct. If you are not sure, check it with numbers.\nThese formulas need only one step.\nExample: Density\nThe density of an object is \\(D = \\dfrac{m}{V}\\), where \\(m\\) is the mass and \\(V\\) is the volume. Solve for the mass \\(m\\).\n\\(m\\) is divided by \\(V\\). To undo division, multiply both sides by \\(V\\).\n\\[\n\\begin{aligned}\nD &= \\frac{m}{V} \\\\\n\\\\\nD \\textcolor{red}{\\times V} &= \\frac{m}{V} \\textcolor{red}{\\times V} \\sntimes{V} \\\\\nDV &= m\n\\end{aligned}\n\\]\nSo \\(m = DV\\).\nCheck with numbers. Pick \\(m = 20\\) and \\(V = 4\\). Then \\(D = \\dfrac{20}{4} = 5\\). Our answer says \\(m = DV = 5 \\times 4 = 20\\). That is the mass we started with, so the answer works.\nSolve each formula for the indicated variable.",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-1---multiply-or-divide",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-1---multiply-or-divide",
+    "title": "Unit 3 - Literal Equations Practice",
+    "section": "",
+    "text": "\\(W = Fd\\); solve for \\(F\\)\n\\(P = IV\\); solve for \\(V\\)\n\\(C = \\pi d\\); solve for \\(d\\)\n\\(V = lwh\\); solve for \\(w\\)\n\\(a = \\frac{v}{t}\\); solve for \\(v\\)\n\\(\\frac{2}{3}x = y\\); solve for \\(x\\)\n\\(ax = c\\); solve for \\(x\\)\n\\(5x = 2y\\); solve for \\(x\\)\n\\(-4y = 3x\\); solve for \\(y\\)\n\\(\\frac{x}{k} = y\\); solve for \\(x\\)\n\n\n\n\\(F = \\frac{W}{d}\\)\n\\(V = \\frac{P}{I}\\)\n\\(d = \\frac{C}{\\pi}\\)\n\\(w = \\frac{V}{lh}\\)\n\\(v = at\\)\n\\(x = \\frac{3y}{2}\\)\n\\(x = \\frac{c}{a}\\)\n\\(x = \\frac{2y}{5}\\)\n\\(y = -\\frac{3x}{4}\\)\n\\(x = ky\\)",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-2---add-or-subtract-first",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-2---add-or-subtract-first",
+    "title": "Unit 3 - Literal Equations Practice",
+    "section": "Section 2 - Add or Subtract First",
+    "text": "Section 2 - Add or Subtract First\nThese formulas need two steps. Move the terms you do not want with addition or subtraction. Then multiply or divide.\nExample: From standard form\nSolve \\(3x + 2y = 12\\) for \\(y\\).\n\\[\n\\begin{aligned}\n3x + 2y &= 12 \\\\\n\\\\\n3x + 2y \\textcolor{red}{-3x} &= 12 \\textcolor{red}{-3x} \\snminus{3x} \\\\\n2y &= 12 - 3x \\\\\n\\\\\n2y \\textcolor{red}{\\div 2} &= (12 - 3x) \\textcolor{red}{\\div 2} \\sndiv{2} \\\\\ny &= \\frac{12 - 3x}{2}\n\\end{aligned}\n\\]\nSo \\(y = \\dfrac{12 - 3x}{2}\\).\nYou can also split the fraction. Divide each term by 2.\n\\[\ny = \\frac{12}{2} - \\frac{3x}{2} = 6 - \\frac{3}{2}x\n\\]\nBoth answers are correct. They are equivalent expressions.\n\nWhen you divide \\(12 - 3x\\) by 2, both terms are divided by 2.\n\\(\\dfrac{12 - 3x}{2}\\) is not the same as \\(6 - 3x\\).\nTest it with \\(x = 2\\). The first one gives \\(\\dfrac{12 - 6}{2} = 3\\). The second one gives \\(6 - 6 = 0\\). They are different, so \\(6 - 3x\\) is wrong.\n\n\nSolve each formula for the indicated variable.\n\n\\(P = a + b + c\\); solve for \\(b\\)\n\\(y = 4x - k\\); solve for \\(k\\)\n\\(2x + y = 9\\); solve for \\(y\\)\n\\(x + 3y = 6\\); solve for \\(y\\)\n\\(4x - 2y = 10\\); solve for \\(y\\)\n\\(ax - b = c\\); solve for \\(x\\)\n\\(v = u + at\\); solve for \\(t\\)\n\\(S = 180n - 360\\); solve for \\(n\\)\n\\(8 - 2x = y\\); solve for \\(x\\)\n\\(mx + ny = p\\); solve for \\(y\\)\n\n\n\n\\(b = P - a - c\\)\n\\(k = 4x - y\\)\n\\(y = 9 - 2x\\)\n\\(y = \\frac{6 - x}{3}\\), which is the same as \\(y = 2 - \\frac{1}{3}x\\)\n\\(y = 2x - 5\\)\n\\(x = \\frac{c + b}{a}\\)\n\\(t = \\frac{v - u}{a}\\)\n\\(n = \\frac{S + 360}{180}\\)\n\\(x = \\frac{8 - y}{2}\\)\n\\(y = \\frac{p - mx}{n}\\)",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-3---multi-step-formulas",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-3---multi-step-formulas",
+    "title": "Unit 3 - Literal Equations Practice",
+    "section": "Section 3 - Multi-Step Formulas",
+    "text": "Section 3 - Multi-Step Formulas\nThese formulas have fractions, parentheses, or more than two steps.\nExample: Undo in reverse order\nSolve \\(y = \\dfrac{3x - a}{4}\\) for \\(x\\).\nFirst, look at what happens to \\(x\\). To get \\(x\\) back, undo each step in the reverse order.\n\n\n\nWhat happens to \\(x\\)\nHow to undo it\n\n\n\n\n1. Multiply by 3\n3. Divide by 3\n\n\n2. Subtract \\(a\\)\n2. Add \\(a\\)\n\n\n3. Divide by 4\n1. Multiply by 4\n\n\n\n\\[\n\\begin{aligned}\ny &= \\frac{3x - a}{4} \\\\\n\\\\\ny \\textcolor{red}{\\times 4} &= \\frac{3x - a}{4} \\textcolor{red}{\\times 4} \\sntimes{4} \\\\\n4y &= 3x - a \\\\\n\\\\\n4y \\textcolor{red}{+a} &= 3x - a \\textcolor{red}{+a} \\snplus{a} \\\\\n4y + a &= 3x \\\\\n\\\\\n(4y + a) \\textcolor{red}{\\div 3} &= 3x \\textcolor{red}{\\div 3} \\sndiv{3} \\\\\n\\frac{4y + a}{3} &= x\n\\end{aligned}\n\\]\nSo \\(x = \\dfrac{4y + a}{3}\\).\n\nSolve each formula for the indicated variable.\n\n\\(\\frac{x + a}{b} = c\\); solve for \\(x\\)\n\\(t = \\frac{d}{r}\\); solve for \\(r\\)\n\\(a(x + b) = c\\); solve for \\(x\\)\n\\(3(y - 2) = x\\); solve for \\(y\\)\n\\(E = \\frac{1}{2}mv^2\\); solve for \\(m\\)\n\\(F = \\frac{9}{5}C + 32\\); solve for \\(C\\)\n\\(y - 3 = m(x + 2)\\); solve for \\(x\\)\n\\(\\frac{2}{3}x - a = b\\); solve for \\(x\\)\n\\(S = 2\\pi r^2 + 2\\pi rh\\); solve for \\(h\\)\n\\(\\frac{1}{2}(x + y) = 3x - k\\); solve for \\(x\\)\n\n\n\n\\(x = bc - a\\)\n\\(r = \\frac{d}{t}\\)\n\\(x = \\frac{c}{a} - b\\), which is the same as \\(x = \\frac{c - ab}{a}\\)\n\\(y = \\frac{x}{3} + 2\\), which is the same as \\(y = \\frac{x + 6}{3}\\)\n\\(m = \\frac{2E}{v^2}\\)\n\\(C = \\frac{5}{9}(F - 32)\\)\n\\(x = \\frac{y - 3}{m} - 2\\)\n\\(x = \\frac{3(a + b)}{2}\\)\n\\(h = \\frac{S - 2\\pi r^2}{2\\pi r}\\)\n\\(x = \\frac{y + 2k}{5}\\)",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-4---test-style-questions",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.html#section-4---test-style-questions",
+    "title": "Unit 3 - Literal Equations Practice",
+    "section": "Section 4 - Test-Style Questions",
+    "text": "Section 4 - Test-Style Questions\nTests often ask about literal equations with different words. The math is the same.\nExample: “Which equation is equivalent?”\nWhich equation is equivalent to \\(2x - 5y = 10\\)?\n\n\\(y = \\dfrac{2}{5}x - 2\\)\n\\(y = -\\dfrac{2}{5}x + 2\\)\n\\(y = \\dfrac{2}{5}x + 10\\)\n\\(y = -2x - 2\\)\n\nEquivalent means the same equation written a different way. Every choice has \\(y\\) by itself. So the question is asking you to solve for \\(y\\).\n\\[\n\\begin{aligned}\n2x - 5y &= 10 \\\\\n\\\\\n2x - 5y \\textcolor{red}{-2x} &= 10 \\textcolor{red}{-2x} \\snminus{2x} \\\\\n-5y &= 10 - 2x \\\\\n\\\\\n-5y \\textcolor{red}{\\div (-5)} &= (10 - 2x) \\textcolor{red}{\\div (-5)} \\sndiv{(-5)} \\\\\ny &= -2 + \\frac{2}{5}x\n\\end{aligned}\n\\]\nSo \\(y = \\frac{2}{5}x - 2\\). The answer is a.\nThe wrong choices come from common mistakes. Choice b divides by \\(5\\) instead of \\(-5\\). Choice c divides only the \\(x\\) term. Choice d divides only the 10.\n\n\nThe volume of a pyramid is \\(V = \\frac{1}{3}Bh\\). Which equation can be used to find the height \\(h\\)?\n\n\\(h = \\dfrac{V}{3B}\\)\n\\(h = \\dfrac{3V}{B}\\)\n\\(h = 3VB\\)\n\\(h = \\dfrac{B}{3V}\\)\n\nWhich equation is equivalent to \\(6x + 3y = 9\\)?\n\n\\(y = 9 - 2x\\)\n\\(y = 3 - 6x\\)\n\\(y = -2x + 3\\)\n\\(y = 2x + 3\\)\n\nThe equation \\(ax + by = c\\) is solved for \\(y\\). Which expression is equal to \\(y\\)?\n\n\\(\\dfrac{c - ax}{b}\\)\n\\(\\dfrac{c + ax}{b}\\)\n\\(c - \\dfrac{ax}{b}\\)\n\\(\\dfrac{c}{b} - ax\\)\n\nA car rental costs \\(\\$25\\) plus \\(\\$0.50\\) for each mile you drive. The total cost is \\(C = 25 + 0.5m\\), where \\(m\\) is the number of miles.\n\nSolve the formula for \\(m\\).\nYou have \\(\\$60\\). How many miles can you drive?\n\nAna solved \\(4x + 8y = 12\\) for \\(y\\). Here is her work.\n\\[\n\\begin{aligned}\n4x + 8y &= 12 \\\\\n8y &= 12 - 4x \\\\\ny &= 12 - \\frac{4x}{8} \\\\\ny &= 12 - \\frac{1}{2}x\n\\end{aligned}\n\\]\nWhat mistake did Ana make? What is the correct answer?\n\n\n\nb. \\(h = \\frac{3V}{B}\\)\nc. \\(y = -2x + 3\\)\na. \\(\\frac{c - ax}{b}\\)\n\n\\(m = \\frac{C - 25}{0.5}\\), which is the same as \\(m = 2C - 50\\)\n\\(m = 2(60) - 50 = 70\\) miles\n\nAna divided only \\(4x\\) by 8. She needed to divide every term by 8. The correct answer is \\(y = \\frac{12 - 4x}{8}\\), which is the same as \\(y = \\frac{3}{2} - \\frac{1}{2}x\\).\n\n\n\nTo review the lesson, see 3.7 - Solving Literal Equations.",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
     "objectID": "chapters/Supplemental/challenge_solutions.html",
     "href": "chapters/Supplemental/challenge_solutions.html",
     "title": "Challenge Problem Solutions",
