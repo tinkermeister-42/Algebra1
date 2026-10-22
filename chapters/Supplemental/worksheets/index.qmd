@@ -17,6 +17,7 @@ Here are some worksheets that will give you practice on various topics.
 ## Unit 3 - Solving Linear Equations
 
   - [Literal Equations Practice](Unit_3/literal_equations_practice.qmd)
+  - [Literal Equations Mixed Practice](Unit_3/literal_equations_mixed_practice.qmd)
 
 ***
 

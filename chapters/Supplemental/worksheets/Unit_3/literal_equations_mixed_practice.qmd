@@ -1,0 +1,87 @@
+# Unit 3 - Literal Equations Mixed Practice {.unnumbered}
+
+This page gives you mixed practice with [3.7 - Solving Literal Equations](/chapters/Unit_3/3.7_Solving_Literal_Equations.qmd).
+
+Solve each equation for the variable it asks for.
+Show your work.
+Check your answer with numbers.
+
+***
+
+1. $d = 2r$; solve for $r$
+
+2. $5x + y = 8$; solve for $y$
+
+3. $\dfrac{x - 4}{3} = y$; solve for $x$
+
+4. Which equation is equivalent to $2x + 4y = 8$?
+
+    a. $y = 8 - 2x$
+    b. $y = 2 - \dfrac{1}{2}x$
+    c. $y = 2 - 2x$
+    d. $y = \dfrac{1}{2}x + 2$
+
+5. $P = \dfrac{F}{A}$; solve for $A$
+
+6. $3x - 2y = 6$; solve for $y$
+
+7. $y = \dfrac{2}{3}(x - 6)$; solve for $x$
+
+8. A taxi charges $\$3$ plus $\$2.50$ for each mile.
+    The cost is $C = 3 + 2.5m$, where $m$ is the number of miles.
+
+    a. Solve the formula for $m$.
+    b. A ride costs $\$23$. How many miles was the ride?
+
+9. $E = mc^2$; solve for $m$
+
+10. $y = -\dfrac{3}{4}x + b$; solve for $x$
+
+11. $3(x + 2y) = 5x - 4$; solve for $x$
+
+12. Marco solved $y = \dfrac{x + 5}{2}$ for $x$. Here is his work.
+
+    $$
+    \begin{aligned}
+    y &= \frac{x + 5}{2} \\
+    2y &= x + 5 \\
+    2y + 5 &= x
+    \end{aligned}
+    $$
+
+    What mistake did Marco make? What is the correct answer?
+
+:::{.answers}
+
+1. $r = \frac{d}{2}$
+
+2. $y = 8 - 5x$
+
+3. $x = 3y + 4$
+
+4. **b.** $y = 2 - \frac{1}{2}x$
+
+5. $A = \frac{F}{P}$
+
+6. $y = \frac{3x - 6}{2}$, which is the same as $y = \frac{3}{2}x - 3$
+
+7. $x = \frac{3}{2}y + 6$, which is the same as $x = \frac{3y + 12}{2}$
+
+8. a. $m = \frac{C - 3}{2.5}$
+
+    b. $m = \frac{23 - 3}{2.5} = 8$ miles
+
+9. $m = \frac{E}{c^2}$
+
+10. $x = -\frac{4}{3}(y - b)$, which is the same as $x = \frac{4(b - y)}{3}$
+
+11. $x = 3y + 2$
+
+12. Marco added 5 to both sides. He needed to subtract 5.
+    The correct answer is $x = 2y - 5$.
+
+:::
+
+***
+
+For worked examples, see the [Literal Equations Practice](literal_equations_practice.qmd) page.
