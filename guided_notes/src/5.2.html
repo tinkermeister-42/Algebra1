@@ -38,49 +38,26 @@ slug: Simplifying_Polynomials
   <h2><span class="num">5.2.1</span>Understanding Polynomials</h2>
 
   <div class="keys">
-    A <b>polynomial</b> is a sum or difference of <span class="b m">{{a}}terms{{/a}}</span>. Each term has a
-    <span class="b m">{{a}}coefficient{{/a}}</span>, a <span class="b m">{{a}}variable{{/a}}</span>, and a
-    <span class="b m">{{a}}whole-number{{/a}}</span> exponent.
-    <div style="margin-top:3px">A constant like 5 still fits, because we can think of it as
-      <span class="b m">{{a}}5<var>x</var><sup>0</sup>{{/a}}</span>.</div>
-    <div style="margin-top:3px">We only allow whole-number exponents so the variable never ends
-      up <span class="b m">{{a}}in a denominator{{/a}}</span> or <span class="b m">{{a}}under a radical{{/a}}</span>.</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 1.</b> Polynomial or not? Write P or N and say why not.</div>
-    <div class="work">
-      <div class="cols3">
-        <p>3<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 5 <span class="b s">{{a}}P{{/a}}</span></p>
-        <p>{{f 2/<var>x</var>}} <span class="b s">{{a}}N{{/a}}</span></p>
-        <p><var>x</var><sup>&minus;3</sup> + 4 <span class="b s">{{a}}N{{/a}}</span></p>
-        <p>7<var>y</var><sup>3</sup> &minus; 4<var>y</var> <span class="b s">{{a}}P{{/a}}</span></p>
-        <p>&radic;<var>x</var> + 5 <span class="b s">{{a}}N{{/a}}</span></p>
-        <p>9 <span class="b s">{{a}}P{{/a}}</span></p>
-      </div>
-      <p class="ans">What disqualifies the ones you marked N? <span class="b xl">{{a}}the variable sits in a denominator or under a radical, so the exponents are not whole numbers{{/a}}</span></p>
+    A <b>polynomial</b> is a sum or difference of terms. Each term has a coefficient (a number),
+    a variable, and a whole number exponent. The constant 5 fits too, because 5 = 5<var>x</var><sup>0</sup>.
+    <div class="cols2" style="margin-top:4px">
+      <div><b>Polynomials</b>: &nbsp;3<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 5, &nbsp;
+        7<var>y</var><sup>3</sup> &minus; 4<var>y</var>, &nbsp; 9</div>
+      <div><b>Not polynomials</b>: &nbsp;{{f 2/<var>x</var>}} and <var>x</var><sup>&minus;3</sup> + 4 (negative exponent),
+        &nbsp;&radic;<var>x</var> + 5 (fractional exponent)</div>
     </div>
+    <div style="margin-top:4px"><b>1 term</b>: monomial (7<var>x</var><sup>3</sup>). &nbsp;
+      <b>2 terms</b>: binomial (4<var>x</var> + 1). &nbsp;
+      <b>3 terms</b>: trinomial (<var>x</var><sup>2</sup> + 3<var>x</var> + 2). &nbsp;
+      More than 3 terms: no special name.</div>
+    <div style="margin-top:3px">The <b>degree</b> of a polynomial is the largest exponent in it.</div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 2.</b> Names by number of terms, and what degree means.</div>
-    <div class="work">
-      <table class="steps">
-        <tr><th style="width:1.4in"># of terms</th><th style="width:1.8in">Name</th><th>Example</th></tr>
-        <tr><td>1</td><td>{{a}}monomial{{/a}}</td><td>{{a}}5<var>x</var><sup>2</sup>{{/a}}</td></tr>
-        <tr><td>2</td><td>{{a}}binomial{{/a}}</td><td>{{a}}<var>x</var> + 3{{/a}}</td></tr>
-        <tr><td>3</td><td>{{a}}trinomial{{/a}}</td><td>{{a}}<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1{{/a}}</td></tr>
-        <tr><td>4 or more</td><td>{{a}}polynomial{{/a}}</td><td>{{a}}<var>x</var><sup>3</sup> + <var>x</var><sup>2</sup> + <var>x</var> + 1{{/a}}</td></tr>
-      </table>
-      <p class="ans">The <b>degree</b> of a polynomial is <span class="b l">{{a}}the largest exponent on the variable{{/a}}</span></p>
-    </div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 3.</b> Name each polynomial and give its degree.</div>
+    <div class="q"><b class="tag">EX 1.</b> Find the special name and degree of each polynomial.</div>
     <div class="work">
       <table class="fill">
-        <tr><th>Polynomial</th><th>Name</th><th>Degree</th></tr>
+        <tr><th>Polynomial</th><th>Special name</th><th>Degree</th></tr>
         <tr><td>5<var>z</var><sup>6</sup> &minus; 2<var>z</var><sup>2</sup> &minus; 3</td><td>{{a}}trinomial{{/a}}</td><td>{{a}}6{{/a}}</td></tr>
         <tr><td>2</td><td>{{a}}monomial{{/a}}</td><td>{{a}}0{{/a}}</td></tr>
         <tr><td>3<var>x</var> &minus; 1</td><td>{{a}}binomial{{/a}}</td><td>{{a}}1{{/a}}</td></tr>
@@ -89,13 +66,11 @@ slug: Simplifying_Polynomials
   </div>
 
   <div class="keys">
-    <b>Standard form</b> means arranging the terms from <span class="b m">{{a}}highest{{/a}}</span> degree to
-    <span class="b m">{{a}}lowest{{/a}}</span>. It does not change the value. It just makes the
-    polynomial easier to <span class="b m">{{a}}read and compare{{/a}}</span>.
+    <b>Standard form</b> arranges the terms from highest degree to lowest. It does not change the value.
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 4.</b> Write each in standard form.</div>
+    <div class="q"><b class="tag">EX 2.</b> Write each in standard form.</div>
     <div class="work">
       <p>a. &nbsp;2<var>y</var><sup>2</sup> &minus; 3<var>y</var><sup>3</sup> &minus; 3
         &nbsp;&rarr;&nbsp; <span class="b l">{{a}}&minus;3<var>y</var><sup>3</sup> + 2<var>y</var><sup>2</sup> &minus; 3{{/a}}</span></p>
@@ -106,17 +81,17 @@ slug: Simplifying_Polynomials
     </div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 5.</b> For each, give the name, standard form, and degree.</div>
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 3.</b> For each, give the special name (if it has one), the standard form, and the degree.<span class="yt">your turn</span></div>
     <div class="work">
       <table class="steps">
-        <tr><th style="width:2in">Polynomial</th><th style="width:1.2in">Name</th>
+        <tr><th style="width:2in">Polynomial</th><th style="width:1.2in">Special name</th>
           <th>Standard form</th><th style="width:.8in">Degree</th></tr>
-        <tr><td>3 &minus; 2<var>x</var><sup>4</sup></td><td>{{a}}binomial{{/a}}</td><td>{{a}}&minus;2<var>x</var><sup>4</sup> + 3{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
-        <tr><td>&minus;5<var>x</var><sup>7</sup> + 2<var>x</var> &minus; 6</td><td>{{a}}trinomial{{/a}}</td><td>{{a}}&minus;5<var>x</var><sup>7</sup> + 2<var>x</var> &minus; 6{{/a}}</td><td>{{a}}7{{/a}}</td></tr>
-        <tr><td>42</td><td>{{a}}monomial{{/a}}</td><td>{{a}}42{{/a}}</td><td>{{a}}0{{/a}}</td></tr>
-        <tr><td>{{f 1/3}}<var>a</var><sup>9</sup> &minus; {{f 2/9}}<var>a</var><sup>3</sup> +
-          {{f 3/5}}<var>a</var><sup>7</sup> &minus; 4</td><td>{{a}}polynomial{{/a}}</td><td>{{a}}{{f 1/3}}<var>a</var><sup>9</sup> + {{f 3/5}}<var>a</var><sup>7</sup> &minus; {{f 2/9}}<var>a</var><sup>3</sup> &minus; 4{{/a}}</td><td>{{a}}9{{/a}}</td></tr>
+        <tr><td>1. &nbsp;3 &minus; 2<var>x</var><sup>4</sup></td><td>{{a}}binomial{{/a}}</td><td>{{a}}&minus;2<var>x</var><sup>4</sup> + 3{{/a}}</td><td>{{a}}4{{/a}}</td></tr>
+        <tr><td>2. &nbsp;&minus;5<var>x</var><sup>7</sup> + 2<var>x</var> &minus; 6</td><td>{{a}}trinomial{{/a}}</td><td>{{a}}&minus;5<var>x</var><sup>7</sup> + 2<var>x</var> &minus; 6{{/a}}</td><td>{{a}}7{{/a}}</td></tr>
+        <tr><td>3. &nbsp;42</td><td>{{a}}monomial{{/a}}</td><td>{{a}}42{{/a}}</td><td>{{a}}0{{/a}}</td></tr>
+        <tr><td>4. &nbsp;{{f 1/3}}<var>a</var><sup>9</sup> &minus; {{f 2/9}}<var>a</var><sup>3</sup> +
+          {{f 3/5}}<var>a</var><sup>7</sup> &minus; 4</td><td>{{a}}none{{/a}}</td><td>{{a}}{{f 1/3}}<var>a</var><sup>9</sup> + {{f 3/5}}<var>a</var><sup>7</sup> &minus; {{f 2/9}}<var>a</var><sup>3</sup> &minus; 4{{/a}}</td><td>{{a}}9{{/a}}</td></tr>
       </table>
     </div>
   </div>
@@ -124,53 +99,55 @@ slug: Simplifying_Polynomials
   <h2><span class="num">5.2.2</span>Simplifying Polynomials</h2>
 
   <div class="box tint">
-    <div class="lbl">The process: always the same four steps</div>
-    <ol>
-      <li><span class="b m">{{a}}Distribute{{/a}}</span> if there are parentheses.</li>
-      <li>Apply <span class="b m">{{a}}the exponent rules{{/a}}</span> when needed.</li>
-      <li>Combine <span class="b m">{{a}}like terms{{/a}}</span>.</li>
-      <li>Rewrite in <span class="b m">{{a}}standard form{{/a}}</span>.</li>
-    </ol>
+    <div class="lbl">The process</div>
+    <div class="cols2">
+      <p>1. <b>Distribute</b> if parentheses are present.</p>
+      <p>3. <b>Combine</b> like terms.</p>
+      <p>2. Apply <b>exponent rules</b> when needed.</p>
+      <p>4. Rewrite in <b>standard form</b>.</p>
+    </div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 6.</b> Simplify 3<var>x</var><sup>2</sup> +
-      5<var>x</var><sup>2</sup> &minus; 4<var>x</var></div>
-    <div class="work h1">{{a}}<p>8<var>x</var><sup>2</sup> &minus; 4<var>x</var></p>{{/a}}</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 7.</b> Simplify (2<var>x</var><sup>3</sup> +
-      4<var>x</var><sup>2</sup>) + (<var>x</var><sup>3</sup> &minus; 5<var>x</var>)</div>
-    <div class="work h13">{{a}}<p>3<var>x</var><sup>3</sup> + 4<var>x</var><sup>2</sup> &minus; 5<var>x</var></p>{{/a}}</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 8.</b> Simplify 3<var>x</var>(2<var>x</var><sup>2</sup> +
-      5<var>x</var> &minus; 4)</div>
-    <div class="work h16">
-      <p class="ans">Which exponent rule did you use? <span class="b m">{{a}}the product rule, add exponents on like bases{{/a}}</span></p>
-    {{a}}<p>6<var>x</var><sup>3</sup> + 15<var>x</var><sup>2</sup> &minus; 12<var>x</var></p>{{/a}}</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 9.</b> Simplify 3(2<var>x</var><sup>2</sup> &minus;
-      <var>x</var> + 5) &minus; (<var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1)
-      <i>Watch the subtraction.</i></div>
-    <div class="work">
-      <table class="steps">
-        <tr><td class="why">Distribute both</td><td>{{a}}6<var>x</var><sup>2</sup> &minus; 3<var>x</var> + 15 &minus; <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1{{/a}}</td></tr>
-        <tr><td class="why">Group like terms</td><td>{{a}}(6<var>x</var><sup>2</sup> &minus; <var>x</var><sup>2</sup>) + (&minus;3<var>x</var> &minus; 4<var>x</var>) + (15 + 1){{/a}}</td></tr>
-        <tr><td class="why">Combine</td><td>{{a}}5<var>x</var><sup>2</sup> &minus; 7<var>x</var> + 16{{/a}}</td></tr>
-      </table>
+  <div class="cols2">
+    <div class="ex">
+      <div class="q"><b class="tag">EX 4.</b> Simplify 3<var>x</var><sup>2</sup> +
+        5<var>x</var><sup>2</sup> &minus; 4<var>x</var></div>
+      <div class="work h1">{{a}}<p>(3<var>x</var><sup>2</sup> + 5<var>x</var><sup>2</sup>) &minus; 4<var>x</var></p><p>= 8<var>x</var><sup>2</sup> &minus; 4<var>x</var></p>{{/a}}</div>
+    </div>
+    <div class="ex">
+      <div class="q"><b class="tag">EX 5.</b> Simplify (2<var>x</var><sup>3</sup> +
+        4<var>x</var><sup>2</sup>) + (<var>x</var><sup>3</sup> &minus; 5<var>x</var>)</div>
+      <div class="work h1">{{a}}<p>(2<var>x</var><sup>3</sup> + <var>x</var><sup>3</sup>) + 4<var>x</var><sup>2</sup> &minus; 5<var>x</var></p><p>= 3<var>x</var><sup>3</sup> + 4<var>x</var><sup>2</sup> &minus; 5<var>x</var></p>{{/a}}</div>
     </div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 10.</b> Simplify &minus;3<var>x</var>(2 &minus;
+    <div class="q"><b class="tag">EX 6.</b> Simplify 3<var>x</var>(2<var>x</var><sup>2</sup> +
+      5<var>x</var> &minus; 4)</div>
+    <div class="work h08">{{a}}<p>3<var>x</var> &middot; 2<var>x</var><sup>2</sup> + 3<var>x</var> &middot; 5<var>x</var> &minus; 3<var>x</var> &middot; 4 = 6<var>x</var><sup>3</sup> + 15<var>x</var><sup>2</sup> &minus; 12<var>x</var></p>{{/a}}</div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 7.</b> Simplify 3(2<var>x</var><sup>2</sup> &minus;
+      <var>x</var> + 5) &minus; (<var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1)</div>
+    <div class="work h13">{{a}}<p>6<var>x</var><sup>2</sup> &minus; 3<var>x</var> + 15 &minus; <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1</p><p>= (6<var>x</var><sup>2</sup> &minus; <var>x</var><sup>2</sup>) + (&minus;3<var>x</var> &minus; 4<var>x</var>) + (15 + 1)</p><p>= 5<var>x</var><sup>2</sup> &minus; 7<var>x</var> + 16</p>{{/a}}</div>
+  </div>
+
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 8.</b> Simplify &minus;3<var>x</var>(2 &minus;
       5<var>x</var> &minus; <var>x</var><sup>2</sup>) + 4<var>x</var> &minus; 1
-      and write it in standard form.</div>
-    <div class="work h2">{{a}}<p>&minus;6<var>x</var> + 15<var>x</var><sup>2</sup> + 3<var>x</var><sup>3</sup> + 4<var>x</var> &minus; 1</p><p>= 3<var>x</var><sup>3</sup> + 15<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 1</p>{{/a}}</div>
+      and write it in standard form.<span class="yt">your turn</span></div>
+    <div class="work h13">{{a}}<p>&minus;6<var>x</var> + 15<var>x</var><sup>2</sup> + 3<var>x</var><sup>3</sup> + 4<var>x</var> &minus; 1</p><p>= &minus;2<var>x</var> + 15<var>x</var><sup>2</sup> + 3<var>x</var><sup>3</sup> &minus; 1</p><p>= 3<var>x</var><sup>3</sup> + 15<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 1</p>{{/a}}</div>
+  </div>
+
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>binomial</span><span>highest</span><span>lowest</span><span>negative</span><span>terms</span><span>trinomial</span><span>2</span><span>6</span></div>
+    <p>1. A polynomial with 3 terms is a <span class="b m">{{a}}trinomial{{/a}}</span>.</p>
+    <p>2. The degree of 5<var>z</var><sup>6</sup> &minus; 2<var>z</var><sup>2</sup> &minus; 3 is <span class="b s">{{a}}6{{/a}}</span>.</p>
+    <p>3. <var>x</var><sup>&minus;3</sup> + 4 is not a polynomial. It has a <span class="b m">{{a}}negative{{/a}}</span> exponent.</p>
+    <p>4. In standard form, the terms go from the highest degree to the <span class="b m">{{a}}lowest{{/a}}</span>.</p>
+    <p>5. In 3<var>x</var><sup>2</sup> + 5<var>x</var><sup>2</sup> &minus; 4<var>x</var>, 3<var>x</var><sup>2</sup> and 5<var>x</var><sup>2</sup> are like <span class="b m">{{a}}terms{{/a}}</span>.</p>
   </div>
 
 {{practice-head}}
