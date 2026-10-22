@@ -94,6 +94,15 @@ i, em { color: #333; }
 .box.warn { border-color: var(--warn); border-left-width: 4px; background: #fffaf3; }
 .box.warn > .lbl { color: var(--warn); }
 
+/* End-of-lesson summary: sentences to complete from a word bank.  The bank
+   carries a couple of extra words so the last blanks are not free. */
+.wordbank {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px;
+  border: 1px dashed var(--rule); border-radius: 3px; padding: 4px 8px; margin: 4px 0 8px;
+  font-weight: bold;
+}
+.summary p { margin: 7px 0; }
+
 /* ---------- objectives & vocabulary ---------- */
 .obj li { list-style: none; margin-left: -20px; }
 .obj li::before {
