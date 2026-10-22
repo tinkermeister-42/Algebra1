@@ -2393,7 +2393,7 @@
     "href": "chapters/Supplemental/worksheets/index.html#unit-3---solving-linear-equations",
     "title": "Extra Practice Worksheets",
     "section": "Unit 3 - Solving Linear Equations",
-    "text": "Unit 3 - Solving Linear Equations\n\nLiteral Equations Practice",
+    "text": "Unit 3 - Solving Linear Equations\n\nLiteral Equations Practice\nLiteral Equations Mixed Practice",
     "crumbs": [
       "Supplemental",
       "Extra Practice Worksheets"
@@ -2452,6 +2452,17 @@
     "crumbs": [
       "Supplemental",
       "Unit 3 - Literal Equations Practice"
+    ]
+  },
+  {
+    "objectID": "chapters/Supplemental/worksheets/Unit_3/literal_equations_mixed_practice.html",
+    "href": "chapters/Supplemental/worksheets/Unit_3/literal_equations_mixed_practice.html",
+    "title": "Unit 3 - Literal Equations Mixed Practice",
+    "section": "",
+    "text": "This page gives you mixed practice with 3.7 - Solving Literal Equations.\nSolve each equation for the variable it asks for. Show your work. Check your answer with numbers.\n\n\n\\(d = 2r\\); solve for \\(r\\)\n\\(5x + y = 8\\); solve for \\(y\\)\n\\(\\dfrac{x - 4}{3} = y\\); solve for \\(x\\)\nWhich equation is equivalent to \\(2x + 4y = 8\\)?\n\n\\(y = 8 - 2x\\)\n\\(y = 2 - \\dfrac{1}{2}x\\)\n\\(y = 2 - 2x\\)\n\\(y = \\dfrac{1}{2}x + 2\\)\n\n\\(P = \\dfrac{F}{A}\\); solve for \\(A\\)\n\\(3x - 2y = 6\\); solve for \\(y\\)\n\\(y = \\dfrac{2}{3}(x - 6)\\); solve for \\(x\\)\nA taxi charges \\(\\$3\\) plus \\(\\$2.50\\) for each mile. The cost is \\(C = 3 + 2.5m\\), where \\(m\\) is the number of miles.\n\nSolve the formula for \\(m\\).\nA ride costs \\(\\$23\\). How many miles was the ride?\n\n\\(E = mc^2\\); solve for \\(m\\)\n\\(y = -\\dfrac{3}{4}x + b\\); solve for \\(x\\)\n\\(3(x + 2y) = 5x - 4\\); solve for \\(x\\)\nMarco solved \\(y = \\dfrac{x + 5}{2}\\) for \\(x\\). Here is his work.\n\\[\n\\begin{aligned}\ny &= \\frac{x + 5}{2} \\\\\n2y &= x + 5 \\\\\n2y + 5 &= x\n\\end{aligned}\n\\]\nWhat mistake did Marco make? What is the correct answer?\n\n\n\n\\(r = \\frac{d}{2}\\)\n\\(y = 8 - 5x\\)\n\\(x = 3y + 4\\)\nb. \\(y = 2 - \\frac{1}{2}x\\)\n\\(A = \\frac{F}{P}\\)\n\\(y = \\frac{3x - 6}{2}\\), which is the same as \\(y = \\frac{3}{2}x - 3\\)\n\\(x = \\frac{3}{2}y + 6\\), which is the same as \\(x = \\frac{3y + 12}{2}\\)\n\n\\(m = \\frac{C - 3}{2.5}\\)\n\\(m = \\frac{23 - 3}{2.5} = 8\\) miles\n\n\\(m = \\frac{E}{c^2}\\)\n\\(x = -\\frac{4}{3}(y - b)\\), which is the same as \\(x = \\frac{4(b - y)}{3}\\)\n\\(x = 3y + 2\\)\nMarco added 5 to both sides. He needed to subtract 5. The correct answer is \\(x = 2y - 5\\).\n\n\n\nFor worked examples, see the Literal Equations Practice page.",
+    "crumbs": [
+      "Supplemental",
+      "Unit 3 - Literal Equations Mixed Practice"
     ]
   },
   {
