@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,7 +106,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -165,8 +164,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -728,7 +726,7 @@ window.Quarto = {
 
 
 <p>In the last lesson, you found the greatest common factor and used it to simplify fractions. Now we start doing arithmetic with them.</p>
-<p>In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. Multiplying fractions turns out to be easier than it looks. Dividing looks harder, but it becomes a multiplication problem once you know about the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-original-href="#glossary-reciprocal" data-slug="reciprocal" data-term="reciprocal">reciprocal</a>.</p>
+<p>In this lesson, you’ll learn how to multiply and divide fractions and mixed numbers. Multiplying fractions turns out to be easier than it looks. Dividing looks harder, but it becomes a multiplication problem once you know about the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a>.</p>
 <p>You need these skills any time you scale a recipe, split something into equal parts, or work with percents later in this unit.</p>
 <div class="objectives">
 <ul class="task-list">
@@ -738,7 +736,7 @@ window.Quarto = {
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-improper-fraction" class="glossary-link" data-original-href="#glossary-improper-fraction" data-slug="improper-fraction" data-term="improper fraction">improper fraction</a>, <a href="../../glossary.html#glossary-mixed-number" class="glossary-link" data-original-href="#glossary-mixed-number" data-slug="mixed-number" data-term="mixed number">mixed number</a>, <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-original-href="#glossary-reciprocal" data-slug="reciprocal" data-term="reciprocal">reciprocal</a></p>
+<p><a href="../../glossary.html#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-original-href="#glossary-improper-fraction" data-term="improper fraction">improper fraction</a>, <a href="../../glossary.html#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a>, <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -815,7 +813,7 @@ Since there are 8 total pieces, and only 1 is blue, the answer is <span class="m
 </section>
 <section id="multiplying-mixed-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="multiplying-mixed-numbers">1.4.2 - Multiplying Mixed Numbers</h3>
-<p>A <a href="../../glossary.html#glossary-mixed-number" class="glossary-link" data-original-href="#glossary-mixed-number" data-slug="mixed-number" data-term="mixed number">mixed number</a> is a number that has a whole part and a fraction part, like <span class="math inline">\(4\tfrac{2}{3}\)</span>. Before multiplying, we first need to convert to an <a href="../../glossary.html#glossary-improper-fraction" class="glossary-link" data-original-href="#glossary-improper-fraction" data-slug="improper-fraction" data-term="improper fraction">improper fraction</a>.</p>
+<p>A <a href="../../glossary.html#glossary-mixed-number" class="glossary-link" data-slug="mixed-number" data-original-href="#glossary-mixed-number" data-term="mixed number">mixed number</a> is a number that has a whole part and a fraction part, like <span class="math inline">\(4\tfrac{2}{3}\)</span>. Before multiplying, we first need to convert to an <a href="../../glossary.html#glossary-improper-fraction" class="glossary-link" data-slug="improper-fraction" data-original-href="#glossary-improper-fraction" data-term="improper fraction">improper fraction</a>.</p>
 <p><strong>Example 4:</strong> Multiply <span class="math inline">\(4\tfrac{2}{3} \times \frac{5}{6}\)</span></p>
 <p>We have 2 thirds, but how many thirds are in 4?</p>
 <p><img src="../../images/Unit_1/Lesson_4/mixed_4_and_2_thirds_wholes.svg" class="img-fluid" style="width:100.0%"></p>
@@ -857,12 +855,12 @@ Since there are 8 total pieces, and only 1 is blue, the answer is <span class="m
 </section>
 <section id="division-reciprocals" class="level3">
 <h3 class="anchored" data-anchor-id="division-reciprocals">1.4.3 - Division &amp; Reciprocals</h3>
-<p>If you can multiply fractions, you just need one more simple tool to divide them, the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-original-href="#glossary-reciprocal" data-slug="reciprocal" data-term="reciprocal">reciprocal</a>. The reciprocal of a fraction flips it upside down.</p>
+<p>If you can multiply fractions, you just need one more simple tool to divide them, the <a href="../../glossary.html#glossary-reciprocal" class="glossary-link" data-slug="reciprocal" data-original-href="#glossary-reciprocal" data-term="reciprocal">reciprocal</a>. The reciprocal of a fraction flips it upside down.</p>
 <ul>
 <li>Reciprocal of <span class="math inline">\(\frac{3}{4}\)</span> is <span class="math inline">\(\frac{4}{3}\)</span></li>
 <li>Reciprocal of 5 is <span class="math inline">\(\frac{1}{5}\)</span></li>
 </ul>
-<p>To divide fractions, multiply by the reciprocal of the <a href="../../glossary.html#glossary-divisor" class="glossary-link" data-original-href="#glossary-divisor" data-slug="divisor" data-term="divisor">divisor</a>:</p>
+<p>To divide fractions, multiply by the reciprocal of the <a href="../../glossary.html#glossary-divisor" class="glossary-link" data-slug="divisor" data-original-href="#glossary-divisor" data-term="divisor">divisor</a>:</p>
 <p><strong>Example 6:</strong> <span class="math inline">\(\frac{2}{3} \div \frac{1}{4}\)</span> <span class="math display">\[
 \frac{2}{3} \div \frac{1}{4} = \frac{2}{3} \times \frac{\color{red}4}{\color{red}1} = \frac{8}{3}
 \]</span> Dividing by <span class="math inline">\(\frac{1}{4}\)</span> asks, “How many fourths are there in <span class="math inline">\(\frac{2}{3}\)</span>?”</p>
@@ -1317,14 +1315,13 @@ Since there are 8 total pieces, and only 1 is blue, the answer is <span class="m
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8b9bb9c0cd37490f70bdcbdbd9161a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-859b66b35598d39ec8aae4cd3ab271c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,7 +106,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -165,8 +164,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -743,7 +741,7 @@ x^2 + 2x = 8.
 </ul>
 </div>
 <div class="vocab">
-<p><a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="../../glossary.html#glossary-real-solution" class="glossary-link" data-slug="real-solution" data-original-href="#glossary-real-solution" data-term="real solution">real solution</a>, <a href="../../glossary.html#glossary-root" class="glossary-link" data-slug="root" data-original-href="#glossary-root" data-term="root">root</a>, <a href="../../glossary.html#glossary-x-intercept" class="glossary-link" data-slug="x-intercept" data-original-href="#glossary-x-intercept" data-term="x-intercept">x-intercept</a>, <a href="../../glossary.html#glossary-zero-product-property" class="glossary-link" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property" data-term="zero product property">zero product property</a></p>
+<p><a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-original-href="#glossary-quadratic-equation" data-slug="quadratic-equation" data-term="quadratic equation">quadratic equation</a>, <a href="../../glossary.html#glossary-real-solution" class="glossary-link" data-original-href="#glossary-real-solution" data-slug="real-solution" data-term="real solution">real solution</a>, <a href="../../glossary.html#glossary-root" class="glossary-link" data-original-href="#glossary-root" data-slug="root" data-term="root">root</a>, <a href="../../glossary.html#glossary-x-intercept" class="glossary-link" data-original-href="#glossary-x-intercept" data-slug="x-intercept" data-term="x-intercept">x-intercept</a>, <a href="../../glossary.html#glossary-zero-product-property" class="glossary-link" data-original-href="#glossary-zero-product-property" data-slug="zero-product-property" data-term="zero product property">zero product property</a></p>
 </div>
 <div class="guided-notes-link">
 <p><a href="../../guided_notes/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html" target="_blank">Printable Guided Notes for this lesson</a> - fill-in notes to print and write on.</p>
@@ -778,7 +776,7 @@ x^2 - 9
 <li>The parabola in the middle crosses the x-axis twice.</li>
 <li>The parabola on the right never touches the x-axis.</li>
 </ul>
-<p>These values of <span class="math inline">\(x\)</span> are the <a href="../../glossary.html#glossary-root" class="glossary-link" data-slug="root" data-original-href="#glossary-root" data-term="roots">roots</a> or <strong>zeros</strong> of the function. They occur exactly when the <strong>output</strong> of the function is zero.</p>
+<p>These values of <span class="math inline">\(x\)</span> are the <a href="../../glossary.html#glossary-root" class="glossary-link" data-original-href="#glossary-root" data-slug="root" data-term="roots">roots</a> or <strong>zeros</strong> of the function. They occur exactly when the <strong>output</strong> of the function is zero.</p>
 <p>This idea is the key to why we solve equations by setting them equal to zero.</p>
 <hr>
 <p><strong>Example 1:</strong> Finding x-intercepts by graphing</p>
@@ -811,13 +809,13 @@ f(x) = x^2 + 2x - 15.
 </section>
 <section id="solving-quadratic-equations-by-factoring" class="level3">
 <h3 class="anchored" data-anchor-id="solving-quadratic-equations-by-factoring">6.3.2 - Solving quadratic equations by factoring</h3>
-<p>To find the <strong>exact</strong> x-intercepts, we need an algebraic method. This is where the <a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-slug="quadratic-equation" data-original-href="#glossary-quadratic-equation" data-term="quadratic equation">quadratic equation</a> comes in.</p>
+<p>To find the <strong>exact</strong> x-intercepts, we need an algebraic method. This is where the <a href="../../glossary.html#glossary-quadratic-equation" class="glossary-link" data-original-href="#glossary-quadratic-equation" data-slug="quadratic-equation" data-term="quadratic equation">quadratic equation</a> comes in.</p>
 <p><span class="math display">\[
 ax^2 + bx + c = 0
 \]</span></p>
 <p>But why do we set the equation equal to zero?</p>
 <p>X-intercepts occur when the <strong>output is zero</strong>. So if we want to find where the graph hits the x-axis, we must solve the equation that results from setting the function equal to zero.</p>
-<p>This connects directly to Unit 5. Once a quadratic is written as an expression equal to zero, we can factor it and use the <a href="../../glossary.html#glossary-zero-product-property" class="glossary-link" data-slug="zero-product-property" data-original-href="#glossary-zero-product-property" data-term="zero product property">zero product property</a>.</p>
+<p>This connects directly to Unit 5. Once a quadratic is written as an expression equal to zero, we can factor it and use the <a href="../../glossary.html#glossary-zero-product-property" class="glossary-link" data-original-href="#glossary-zero-product-property" data-slug="zero-product-property" data-term="zero product property">zero product property</a>.</p>
 <p>If a product equals zero, then at least one factor must be zero. Each factor gives a possible solution.</p>
 <hr>
 <p><strong>Example 2:</strong> Solving a quadratic equation by factoring</p>
@@ -1411,14 +1409,13 @@ Solve each equation.</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
