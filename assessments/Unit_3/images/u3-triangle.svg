@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 136" width="280" height="136">
+  <polygon points="20,110 260,110 102.5,22.9" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="44" y="64" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="17">x</text>
+  <text x="190" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="17"><tspan font-style="italic">x</tspan> + 3</text>
+  <text x="128" y="131" font-family="Georgia, 'Times New Roman', serif" font-size="17">2<tspan font-style="italic">x</tspan></text>
+</svg>
