@@ -198,7 +198,9 @@ What do you notice about the pattern?
 
 2. Add one more point that continues the same pattern. Write its coordinates.
 
-3. Each point from Question 1 fits a rule. Find a simple equation that could describe it using $y$ and $x$.
+3. Every point from Question 1 fits one of these rules. Which one? Check each point.
+
+    $y = x + 1 \qquad y = 2x \qquad y = x + 2$
 
 ***
 
@@ -288,7 +290,9 @@ What kind of lines do they make?
 Then check your prediction by graphing.
 
 15. A mystery function passes through the points $(0, 2)$ and $(2, 6)$.
-Write a possible rule for the function and plot one more point that fits your rule.
+Which of these rules could it be? Plot one more point that fits that rule.
+
+    $y = x + 2 \qquad y = 3x \qquad y = 2x + 2$
 
 
 
