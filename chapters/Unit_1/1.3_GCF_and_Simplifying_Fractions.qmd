@@ -19,7 +19,7 @@ In this lesson, you’ll learn how to use {{< glink "prime factorization" >}} to
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.3_GCF_and_Simplifying_Fractions.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.3_GCF_and_Simplifying_Fractions.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -757,27 +757,11 @@ Simplifying helps you work with numbers more easily in the real world. Whether y
 
 **Warm-Up**
 
-1. Which number do you *think* has the most prime factors? What makes you think so?
+1. 20, 30, and 45 each have 3 prime factors ($2 \times 2 \times 5$, $2 \times 3 \times 5$, $3 \times 3 \times 5$). If you count only different primes, 30 has the most (2, 3, and 5). 53 is prime, so it has only 1.
 
-   a. 20
+2. 6
 
-   b. 30
-
-   c. 45
-
-   d. 53
-
-2. What’s the largest number that you think might divide **both** 12 and 18 evenly?
-
-3. Here are four fractions. Which one doesn't belong and why?
-
-   a. $\frac{12}{18}$
-
-   b. $\frac{4}{9}$
-
-   c. $\frac{2}{3}$
-
-   d. $\frac{24}{36}$
+3. $\frac{4}{9}$. The other three all simplify to $\frac{2}{3}$.
 
 ***
 

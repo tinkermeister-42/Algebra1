@@ -21,7 +21,7 @@ In this lesson, you will learn how to use these linear models to solve real-worl
 
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.6_Linear_Models_in_the_Real_World.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.6_Linear_Models_in_the_Real_World.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -60,11 +60,11 @@ Let $e$ = number of episodes and $P(e)$ = total price (dollars).
 
 First, we need to know **what is changing**.
 
-* The cost **increases** $\$2$ per episode - that’s the **slope** ($m = 2$).
+* The cost **increases** $\$2$ per episode. That is the **slope** ($m = 2$).
 
 Next, we need to know **where we start**.
 
-* The **minimum** you pay is $\$7.99$ - that’s the **y-intercept** ($b = 7.99$).
+* The **minimum** you pay is $\$7.99$. That is the **y-intercept** ($b = 7.99$).
 
 Putting it together:
 
@@ -135,7 +135,7 @@ So even though the line continues forever, we only graph the part that fits the 
 
 A taxi charges $\$3$ to start the ride and $\$2.25$ per mile. Write a function that gives the total cost based on the number of miles traveled.
 
-Let $d$ be the distances in miles, and $C(d)$ = total cost (dollars).
+Let $d$ be the distance in miles, and $C(d)$ = total cost (dollars).
 
 * The cost **increases** $\$2.25$ each mile ($m = 2.25$)
 * The minimum cost is $\$3$ ($b = 3$)
@@ -382,7 +382,7 @@ A 3450 lb car will get **about 46 mpg**.
 **Compare or Solve with Two Models**
 
 9. A gym charges $\$30$ per month plus $\$5$ per visit.
-   Another gym charges no monthly fee but $\$9$ per visit.
+   Another gym charges no monthly fee but $\$8$ per visit.
    
    After how many visits will the total cost be the same?
 
@@ -475,11 +475,11 @@ For numbers 12-15, describe the trend by giving:
 
 8. Slope $10.5$: $10.50 per hour. Intercept $35$: base fee before any hours.
 
-9. $30+5v=9v \Rightarrow v=7.5$ visits (break-even). For $v\ge 8$, Gym A is cheaper; for $v\le 7$, Gym B is cheaper.
+9. $30+5v=8v \Rightarrow v=10$ visits (break-even), and both gyms cost $\$80$. For $v>10$, Gym A is cheaper; for $v<10$, Gym B is cheaper.
 
 10. $12n=80+8n \Rightarrow n=20$ posters.
 
-11. Plan 1: **$21.50**; Plan 2: **$\$19.50$** → Plan 2 is cheaper.
+11. Plan 1: **$\$21.50$**; Plan 2: **$\$19.50$** → Plan 2 is cheaper.
 
 12.
 

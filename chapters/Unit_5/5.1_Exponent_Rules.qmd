@@ -25,7 +25,7 @@ In this lesson, we’ll learn the rules, unpack *why* they work, and learn how t
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.1_Exponent_Rules.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -58,7 +58,7 @@ That’s when these exponent rules apply.
 
 #### Rule 1 - Product Rule
 
-To understand how to multiplying powers with like bases works, let's take an example and expand it out.
+To understand how multiplying powers with like bases works, let's take an example and expand it out.
 
 If we multiply $x^3$ by $x^5$, here’s what’s really happening:
 
@@ -166,7 +166,7 @@ $$
 A simpler way to do this is to multiply the exponents.
 
 $$
-(x^3)^2 = x^(3 \times 2) = x^6
+(x^3)^2 = x^{3 \times 2} = x^6
 $$
 
 In general, when you **raise a power to a power** you **multiply the exponents**.
@@ -209,7 +209,7 @@ $$
 \end{aligned}
 $$
 
-This is an extension of the “power of a power” idea to two factors.
+Each factor is used $n$ times.
 
 $$
 (ab)^n = a^n b^n
@@ -371,7 +371,7 @@ $$
 :::{.you-try title="Rewrite with positive exponents: $\dfrac{3x^{-2}y^3}{6x^5y^{-1}}$"}
 
 $$
-\dfrac{3}{6},x^{-7},y^4=\dfrac{1}{2}\cdot\dfrac{y^4}{x^7}=\dfrac{y^4}{2x^7}
+\dfrac{3}{6} \cdot x^{-7} \cdot y^4=\dfrac{1}{2}\cdot\dfrac{y^4}{x^7}=\dfrac{y^4}{2x^7}
 $$
 
 :::
@@ -411,7 +411,7 @@ $$
 
 :::
 
-:::{.you-try title="Rewrite with positive rational exponents: $\sqrt[5]{x^2}$ and $\dfrac{1}{\sqrt[3]{y^4}}$"}
+:::{.you-try title="Rewrite with rational exponents: $\sqrt[5]{x^2}$ and $\dfrac{1}{\sqrt[3]{y^4}}$"}
 
 $$
 \sqrt[5]{x^2}=x^{\tfrac{2}{5}} \quad\text{and}\quad \dfrac{1}{\sqrt[3]{y^4}}=y^{-\tfrac{4}{3}}
@@ -611,11 +611,11 @@ Simplify and rewrite using only positive exponents:
 10. $\tfrac{m^6}{k^4}$
 11. $\tfrac{4y^{11}}{x^{12}}$
 12. $\tfrac{a^6}{27b^{12}}$
-13. $\dfrac{54,p^{12}}{q^{11}}$
+13. $\dfrac{54p^{12}}{q^{11}}$
 14. $\dfrac{x^8}{y^9}$
 15. $\dfrac{m^3}{n^2}$
 16. $\dfrac{3s^7}{r^7}$
-17. $\dfrac{25,y^{11}}{2x^{13}}$
+17. $\dfrac{25y^{11}}{2x^{13}}$
 18. $\dfrac{a^6c^2}{4b^4}$
 19. $\dfrac{y^{6}}{x}$
 20. $\dfrac{125}{u^9}$
@@ -624,5 +624,4 @@ Simplify and rewrite using only positive exponents:
 23. $x^{2}$
 24. $y^{\tfrac{3}{4}}$
 25. $z^{1} = z$
-
 :::

@@ -26,7 +26,7 @@ Negative numbers can be confusing, especially when the rules do not match what y
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.1_Integers_and_Number_Lines.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}} 
@@ -140,7 +140,7 @@ Absolute value is often used for describing the distance between two points. Sup
 
 ![](/images/Unit_1/Lesson_1/east_to_west.png)
 
-You can compute your distances by adding |-5| + |3|, by |-5 - 3|, or by |3 - (-5)|. All three of these give the same answer, 8 miles. What would change if we did not use absolute value?
+You can find the distance by adding |-5| + |3|. The answer is 8 miles. What would change if we did not use absolute value?
 :::
 
 :::{.think title="Can the absolute value ever be negative?"}

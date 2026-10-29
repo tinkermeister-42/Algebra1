@@ -21,7 +21,7 @@ That rate of change is called the **slope**, one of the most important ideas in 
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.2_Understanding_Slope.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -99,7 +99,7 @@ In each panel, count how far the person moves *up or down* (Δy) and *right* (Δ
 |   A   |  +2 |  3  |      $\tfrac{2}{3}$      |
 |   B   |  -3 |  3  |            -1            |
 |   C   |  +3 |  3  |             1            |
-|   D   |  -2 |  3  |      -$\tfrac{2}{3}$     |
+|   D   |  -2 |  3  |     $-\tfrac{2}{3}$     |
 
 These numbers match what your eyes already noticed in the stairways: 
 
@@ -284,7 +284,7 @@ Is the slope **positive**, **negative**, **zero**, or **undefined.**
 
 3. A horizontal line through $(0,4)$.
 
-4. A vertical line through $(x=-3)$.
+4. A vertical line through $(-3, 0)$.
 
 5. A line that goes down very slightly, almost flat, from left to right.
 

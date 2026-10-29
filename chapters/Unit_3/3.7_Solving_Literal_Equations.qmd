@@ -26,7 +26,7 @@ Literal equations use letters (or “literals”) to represent variables, so sol
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.7_Solving_Literal_Equations.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -108,8 +108,8 @@ So $I = \tfrac{V}{R}$.
 
 ### 3.7.2 - Literal Equations with Addition or Subtraction
 
-Sometimes a variable appears in a longer expression.
-We can move terms using addition or subtraction before dividing or multiplying.
+First get the term with the variable by itself, using addition or subtraction. Then divide or multiply.
+Undo one operation at a time, like a two-step equation.
 
 ***
 
@@ -135,7 +135,7 @@ So $w = \dfrac{P - 2l}{2}$.
 
 **Example 4:** A linear equation
 
-A line has the equation $y = mx + b$. Solve for $x$.
+Solve $y = mx + b$ for $x$.
 
 $$
 \begin{aligned}
@@ -213,8 +213,8 @@ $$
 
 **Example 7:** Converting Celsius to Fahrenheit.
 
-The formula for convering form Celsius to Fahrenheit is $C = \frac{5}{9}(F - 32)$.
-Solve for the temperature in Fahrenheit $F$.
+The formula $C = \frac{5}{9}(F - 32)$ changes Fahrenheit to Celsius.
+Solve for $F$ to get a formula that changes Celsius to Fahrenheit.
 
 $$
 \begin{aligned}

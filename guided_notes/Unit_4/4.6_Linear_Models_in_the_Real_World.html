@@ -69,8 +69,8 @@
     <div class="work h16">
       <p>Let <var>e</var> = <span class="b m"></span> and
         <var>P</var>(<var>e</var>) = <span class="b m"></span></p>
-      <p><var>m</var> = <span class="b s"></span> because <span class="b m"></span>
-        &nbsp;&nbsp; <var>b</var> = <span class="b s"></span> because <span class="b m"></span></p>
+      <p><var>m</var> = <span class="b s"></span> because the cost increases $2 per episode.</p>
+      <p><var>b</var> = <span class="b s"></span> because the minimum you pay is $7.99.</p>
       <p class="ans">Model: <var>P</var>(<var>e</var>) = <span class="b m"></span>
         &nbsp;&nbsp; Cost for 10 episodes: <span class="b s"></span></p>
     </div>
@@ -89,9 +89,9 @@
 
   <div class="box warn">
     <div class="lbl">How much should I graph?</div>
-    A model only makes sense for certain values. For the soup, times before
-    <span class="b s"></span> would mean <span class="b m"></span>, and after about 20 minutes
-    the soup would be <span class="b m"></span>. Graph only the part that fits the situation.
+    A model only makes sense for certain values. For the soup, time before 0 minutes would be
+    negative, like going back in time. After 20 minutes, the soup would drop below room temperature,
+    which is not realistic here. Graph only the part that fits the situation.
   </div>
 
   <div class="ex">
@@ -121,8 +121,8 @@
   <div class="ex">
     <div class="q"><b class="tag">EX 5. Babysitting.</b> Estrella charges an hourly rate plus a
       minimum fee. She charged $70 for 5 hours and $46 for 3 hours.</div>
-    <div class="work h25">
-      <p>Why can't we just divide money by hours? <span class="b l"></span></p>
+    <div class="work h16">
+      <p>Why can't we just divide money by hours? <span class="b m"></span></p>
       <p>Rate (slope): <var>m</var> = <span class="b m"></span></p>
       <p>Minimum fee: substitute a point and solve for <var>b</var>: <span class="b m"></span></p>
       <p class="ans">Model: <var>C</var>(<var>h</var>) = <span class="b m"></span>
@@ -133,13 +133,12 @@
   <h2><span class="num">4.6.2</span>Seeing Patterns in Data</h2>
 
   <div class="keys">
-    Real data rarely lands in a perfect line, but it often shows a
-    <span class="b m"></span>. When that pattern looks roughly straight we draw a
-    <b>best-fit line</b>.
+    Real data rarely lands in a perfect line, but it often shows a pattern.
+    When that pattern looks roughly straight we draw a <b>best-fit line</b>.
     <div class="cols3" style="margin-top:3px">
-      <p><b>Positive</b> correlation: <span class="b m"></span></p>
-      <p><b>Negative</b> correlation: <span class="b m"></span></p>
-      <p><b>No</b> correlation: <span class="b m"></span></p>
+      <p><b>Positive</b> correlation: both variables increase together.</p>
+      <p><b>Negative</b> correlation: one increases while the other decreases.</p>
+      <p><b>No</b> correlation: no clear pattern appears.</p>
     </div>
     <div style="margin-top:3px">The <b>closer</b> the points are to the line, the
       <span class="b m"></span> the correlation.</div>
@@ -148,22 +147,42 @@
   <div class="ex">
     <div class="q"><b class="tag">EX 6. Study time vs. test score.</b> The best-fit line is
       <var>G</var>(<var>h</var>) = 4.5<var>h</var> + 49.5.</div>
-    <div class="work h16">
-      <p>What does the slope 4.5 mean? <span class="b xl"></span></p>
-      <p>What does the intercept 49.5 mean? <span class="b xl"></span></p>
-      <p class="ans">Predicted score after 7 hours of study: <span class="b s"></span></p>
+    <div class="work">
+      <div class="cols2" style="grid-template-columns:1fr 3in">
+        <div>
+          <p>What does the slope 4.5 mean? <span class="b xl"></span></p>
+          <p>What does the intercept 49.5 mean? <span class="b xl"></span></p>
+          <p class="ans">Predicted score after 7 hours of study: <span class="b s"></span></p>
+        </div>
+        <img class="fig" src="../../images/Unit_4/Lesson_6/Example6.png" alt="scatter plot of grades against hours studied with a best-fit line" style="width:3in">
+      </div>
     </div>
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7. Car weight vs. fuel economy.</b> The best-fit line is
       <var>F</var>(<var>w</var>) = &minus;0.007<var>w</var> + 70.</div>
-    <div class="work h16">
-      <p>What does the negative slope mean? <span class="b xl"></span></p>
-      <p>Does the intercept describe a real car? <span class="b m"></span> Why?
-        <span class="b m"></span></p>
-      <p class="ans">Predicted mpg for a 3450 lb car: <span class="b s"></span></p>
+    <div class="work">
+      <div class="cols2" style="grid-template-columns:1fr 3in">
+        <div>
+          <p>What does the negative slope mean? <span class="b xl"></span></p>
+          <p>Does the intercept describe a real car? <span class="b m"></span> Why?
+            <span class="b m"></span></p>
+          <p class="ans">Predicted mpg for a 3450 lb car: <span class="b s"></span></p>
+        </div>
+        <img class="fig" src="../../images/Unit_4/Lesson_6/Example7.png" alt="scatter plot of fuel economy against car weight with a best-fit line" style="width:3in">
+      </div>
     </div>
+  </div>
+
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>negative</span><span>none</span><span>positive</span><span>slope</span><span>stronger</span><span>weaker</span><span>y-intercept</span></div>
+    <p>1. In a linear model, the <span class="b m"></span> tells how fast something changes.</p>
+    <p>2. The <span class="b m"></span> tells where it starts.</p>
+    <p>3. When both variables increase together, the correlation is <span class="b m"></span>.</p>
+    <p>4. When one goes up as the other goes down, the correlation is <span class="b m"></span>.</p>
+    <p>5. The closer the points are to the best-fit line, the <span class="b m"></span> the correlation.</p>
   </div>
 
 <div class="pagebreak"></div>
@@ -223,7 +242,7 @@
 
   <div class="ex">
     <div class="q">9. One gym charges $30 per month plus $5 per visit. Another has no monthly fee
-      but $9 per visit. After how many visits is the cost the same?</div>
+      but $8 per visit. After how many visits is the cost the same?</div>
     <div class="work h2"></div>
   </div>
 
@@ -242,9 +261,19 @@
   <h3>Trend Interpretation</h3>
 
   <div class="ex">
-    <div class="q">For 12 - 15, give the <b>direction</b>, the <b>strength</b>, the meaning of
+    <div class="q">For 12 to 15, give the <b>direction</b>, the <b>strength</b>, the meaning of
       the <b>slope</b>, and the meaning of the <b><var>y</var>-intercept</b>.</div>
     <div class="work">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0 8px">
+        <div><p style="margin:0">12.</p>
+          <img class="fig" src="../../images/Unit_4/Lesson_6/Practice12.png" alt="scatter plot 12: hot chocolate sales against temperature"></div>
+        <div><p style="margin:0">13.</p>
+          <img class="fig" src="../../images/Unit_4/Lesson_6/Practice13.png" alt="scatter plot 13: quiz score against review video time"></div>
+        <div><p style="margin:0">14.</p>
+          <img class="fig" src="../../images/Unit_4/Lesson_6/Practice14.png" alt="scatter plot 14: sleep hours against evening screen time"></div>
+        <div><p style="margin:0">15.</p>
+          <img class="fig" src="../../images/Unit_4/Lesson_6/Practice15.png" alt="scatter plot 15: race time against weekly practice hours"></div>
+      </div>
       <table class="steps">
         <tr><th style="width:2.6in">Situation</th><th>Direction / strength</th>
           <th>Slope means</th><th>Intercept means</th></tr>

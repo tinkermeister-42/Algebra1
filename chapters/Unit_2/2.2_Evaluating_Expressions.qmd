@@ -22,7 +22,7 @@ You’ll also use this to test whether two expressions are {{< glink slug="equiv
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.2_Evaluating_Expressions.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}

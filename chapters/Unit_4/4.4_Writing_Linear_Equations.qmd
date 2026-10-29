@@ -27,7 +27,7 @@ The key is to recognize what you already know (the **slope**, a **point**, or bo
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.4_Writing_Linear_Equations.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.4_Writing_Linear_Equations.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -119,7 +119,7 @@ So, if you can find $m$ and $b$ from the graph, you can write its equation immed
 
 **Example 3:** Equation from a graph
 
-Find the equation for the line line pictured below:
+Find the equation for the line pictured below:
 
 ![](/images/Unit_4/Lesson_4/Example3A.png){width="340px" fig-align="center"}
 
@@ -478,9 +478,6 @@ Write the equation for each line.
 ***
 
 **From a Graph**
-
-A line crosses the y-axis at $1$ and the x-axis at $-2$.
-Find its slope and equation.
 
 Write the equation for each line.
 

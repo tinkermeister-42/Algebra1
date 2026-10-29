@@ -21,7 +21,7 @@ Think of a cashier counting money in a mixed drawer. They put tens with tens, fi
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.3_Combining_Like_Terms.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -144,7 +144,7 @@ We can then group terms together because addition is {{< glink associative >}}.
 
 :::
 
-**Example 2:** Combining like terms with decimal coefficents
+**Example 2:** Combining like terms with decimal coefficients
 
 Simplify the following expression.
 
@@ -296,8 +296,8 @@ $$
 **With parentheses**
 
 11. $(2x + 5) + (x - 3)$
-12. $(4y - 7) - (2y + 1)$
-13. $-(3x - 2) + (x + 5)$
+12. $(4y - 7) + (2y + 1)$
+13. $(-3x + 2) + (x + 5)$
 14. $(6 - 2m) + (m - 9)$
 
 **With mixed powers and variables**
@@ -342,7 +342,7 @@ $$
 **With parentheses**
 
 11. $3x + 2$
-12. $2y - 8$
+12. $6y - 6$
 13. $-2x + 7$
 14. $-m - 3$
 

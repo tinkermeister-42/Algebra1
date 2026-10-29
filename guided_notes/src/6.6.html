@@ -36,7 +36,7 @@ slug: The_Quadratic_Formula
             {{f 6 &plusmn; &radic;28/4}}<br>
             <var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 4 = 0 &rArr; <var>x</var> =
             {{f 2 &plusmn; &radic;20/2}}</p>
-          {{a}}<p>Every answer has the shape {{f &minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)/2<var>a</var>}} - that is the quadratic formula.</p>{{/a}}
+          {{a}}<p>Every answer has the shape {{f &minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)/2<var>a</var>}}. That is the quadratic formula.</p>{{/a}}
           <div class="ruled"></div><div class="ruled"></div>
         </div>
       </div>
@@ -59,9 +59,9 @@ slug: The_Quadratic_Formula
         <div>
           <table class="steps">
             <tr><td class="why">Divide by <var>a</var></td><td>{{a}}<var>x</var><sup>2</sup> + {{f <var>b</var>/<var>a</var>}}<var>x</var> + {{f <var>c</var>/<var>a</var>}} = 0{{/a}}</td></tr>
-            <tr><td class="why">Move the constant</td><td>{{a}}<var>x</var><sup>2</sup> + {{f <var>b</var>/<var>a</var>}}<var>x</var> = &minus;{{f <var>c</var>/<var>a</var>}}{{/a}}</td></tr>
+            <tr><td class="why">Constant to the other side (subtract {{f <var>c</var>/<var>a</var>}})</td><td>{{a}}<var>x</var><sup>2</sup> + {{f <var>b</var>/<var>a</var>}}<var>x</var> = &minus;{{f <var>c</var>/<var>a</var>}}{{/a}}</td></tr>
             <tr><td class="why">Add to both sides</td><td>{{a}}<var>x</var><sup>2</sup> + {{f <var>b</var>/<var>a</var>}}<var>x</var> + {{f <var>b</var><sup>2</sup>/4<var>a</var><sup>2</sup>}} = &minus;{{f <var>c</var>/<var>a</var>}} + {{f <var>b</var><sup>2</sup>/4<var>a</var><sup>2</sup>}}{{/a}}</td></tr>
-            <tr><td class="why">Write as a square</td><td>{{a}}(<var>x</var> + {{f <var>b</var>/2<var>a</var>}})<sup>2</sup> = {{f <var>b</var><sup>2</sup> &minus; 4<var>ac</var>/4<var>a</var><sup>2</sup>}}{{/a}}</td></tr>
+            <tr><td class="why">Write as a square</td><td>(<var>x</var> + {{f <var>b</var>/2<var>a</var>}})<sup>2</sup> = {{f <var>b</var><sup>2</sup> &minus; 4<var>ac</var>/4<var>a</var><sup>2</sup>}}</td></tr>
             <tr><td class="why">Take square roots</td><td>{{a}}<var>x</var> + {{f <var>b</var>/2<var>a</var>}} = &plusmn;{{f &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)/2<var>a</var>}}{{/a}}</td></tr>
             <tr><td class="why">Solve for <var>x</var></td><td>{{a}}<var>x</var> = {{f &minus;<var>b</var> &plusmn; &radic;(<var>b</var><sup>2</sup> &minus; 4<var>ac</var>)/2<var>a</var>}}{{/a}}</td></tr>
           </table>
@@ -86,10 +86,9 @@ slug: The_Quadratic_Formula
   <div class="box tint">
     <div class="lbl">The steps never change</div>
     <ol>
-      <li>Identify <span class="b s">{{a}}<var>a</var>{{/a}}</span>, <span class="b s">{{a}}<var>b</var>{{/a}}</span>, and
-        <span class="b s">{{a}}<var>c</var>{{/a}}</span>. The equation must be in
+      <li>Identify <var>a</var>, <var>b</var>, and <var>c</var>. The equation must be in
         <span class="b m">{{a}}standard form{{/a}}</span> first.</li>
-      <li>Substitute <span class="b m">{{a}}carefully, using parentheses{{/a}}</span>.</li>
+      <li>Substitute carefully, using parentheses.</li>
       <li>Simplify step by step.</li>
     </ol>
   </div>
@@ -112,7 +111,7 @@ slug: The_Quadratic_Formula
     <div class="work h2">
       <p><var>a</var> = <span class="b s">{{a}}2{{/a}}</span> &nbsp; <var>b</var> = <span class="b s">{{a}}&minus;5{{/a}}</span>
         &nbsp; <var>c</var> = <span class="b s">{{a}}2{{/a}}</span></p>
-      <p class="ans">Solutions: <span class="b m">{{a}}disc = 9, so <var>x</var> = {{f 5 &plusmn; 3/4}} = 2 or {{f 1/2}}{{/a}}</span></p>
+      <p class="ans">Solutions: <span class="b m">{{a}}<var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 9, so <var>x</var> = {{f 5 &plusmn; 3/4}} = 2 or {{f 1/2}}{{/a}}</span></p>
     </div>
   </div>
 
@@ -120,7 +119,7 @@ slug: The_Quadratic_Formula
     <div class="q"><b class="tag">EX 4.</b> Solve 3<var>x</var><sup>2</sup> + 4<var>x</var>
       + 7 = 0.</div>
     <div class="work h2">
-      <p class="ans">What went wrong under the square root? <span class="b l">{{a}}the discriminant is 16 &minus; 84 = &minus;68, and you cannot take the square root of a negative{{/a}}</span></p>
+      <p class="ans">Under the square root: 16 &minus; 84 = &minus;68. The square root of a negative number is not real.</p>
       <p class="ans">So this equation has <span class="b m">{{a}}no real solutions{{/a}}</span>.</p>
     </div>
   </div>
@@ -128,7 +127,7 @@ slug: The_Quadratic_Formula
   <div class="ex">
     <div class="q"><b class="tag">EX 5.</b> Solve 4<var>x</var><sup>2</sup> &minus;
       5<var>x</var> &minus; 12 = 0.</div>
-    <div class="work h25">{{a}}<p><var>a</var> = 4, <var>b</var> = &minus;5, <var>c</var> = &minus;12; disc = 25 + 192 = 217</p><p><var>x</var> = {{f 5 &plusmn; &radic;217/8}} &asymp; 2.47 or &minus;1.22</p>{{/a}}</div>
+    <div class="work h16">{{a}}<p><var>a</var> = 4, <var>b</var> = &minus;5, <var>c</var> = &minus;12; <var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 25 + 192 = 217</p><p><var>x</var> = {{f 5 &plusmn; &radic;217/8}} &asymp; 2.47 or &minus;1.22</p>{{/a}}</div>
   </div>
 
   <h2><span class="num">6.6.3</span>The Discriminant</h2>
@@ -140,9 +139,9 @@ slug: The_Quadratic_Formula
     <table class="steps" style="margin-top:4px">
       <tr><th style="width:2.4in">Discriminant</th><th>Number of real solutions</th>
         <th>What the graph does</th></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td>{{a}}two{{/a}}</td><td>{{a}}crosses the <var>x</var>-axis twice{{/a}}</td></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td>{{a}}one{{/a}}</td><td>{{a}}touches the <var>x</var>-axis at the vertex{{/a}}</td></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td>{{a}}none{{/a}}</td><td>{{a}}never touches the <var>x</var>-axis{{/a}}</td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td>{{a}}two{{/a}}</td><td>The parabola intersects the <var>x</var>-axis at two points.</td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td>{{a}}one{{/a}}</td><td>The parabola intersects the <var>x</var>-axis at one point only.</td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td>{{a}}none{{/a}}</td><td>The parabola does not cross the <var>x</var>-axis at all.</td></tr>
     </table>
   </div>
 
@@ -166,8 +165,18 @@ slug: The_Quadratic_Formula
     integers.
     <div style="margin-top:3px">Check 2<var>x</var><sup>2</sup> + 5<var>x</var> &minus; 3:
       discriminant = <span class="b s">{{a}}49{{/a}}</span>, which
-      <span class="b m">{{a}}is{{/a}}</span> a perfect square, so it factors as
+      is a perfect square, so it factors as
       <span class="b m">{{a}}(2<var>x</var> &minus; 1)(<var>x</var> + 3){{/a}}</span>.</div>
+  </div>
+
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>discriminant</span><span>every</span><span>factored</span><span>parentheses</span><span>real</span><span>some</span><span>standard</span><span>vertex</span></div>
+    <p>1. Before using the quadratic formula, write the equation in <span class="b m">{{a}}standard{{/a}}</span> form.</p>
+    <p>2. When you substitute <var>a</var>, <var>b</var> and <var>c</var>, put each number in <span class="b m">{{a}}parentheses{{/a}}</span>.</p>
+    <p>3. The part under the square root, <var>b</var><sup>2</sup> &minus; 4<var>ac</var>, is called the <span class="b m">{{a}}discriminant{{/a}}</span>.</p>
+    <p>4. If the discriminant is negative, there are no <span class="b m">{{a}}real{{/a}}</span> solutions.</p>
+    <p>5. The quadratic formula works for <span class="b m">{{a}}every{{/a}}</span> quadratic equation.</p>
   </div>
 
 {{practice-head}}
@@ -197,22 +206,22 @@ slug: The_Quadratic_Formula
   <div class="ex">
     <div class="work">
       <table class="steps">
-        <tr><th style="width:2.2in">Equation</th><th style="width:1.4in">Discriminant</th>
-          <th>Solutions</th></tr>
-        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td>{{a}}5{{/a}}</td><td>{{a}}<var>x</var> = {{f &minus;3 &plusmn; &radic;5/2}}{{/a}}</td></tr>
-        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td>{{a}}24{{/a}}</td><td>{{a}}<var>x</var> = 1 &plusmn; &radic;6{{/a}}</td></tr>
-        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td>{{a}}25{{/a}}</td><td>{{a}}<var>x</var> = &minus;{{f 1/2}}, &minus;3{{/a}}</td></tr>
-        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td>{{a}}49{{/a}}</td><td>{{a}}<var>x</var> = {{f 1/2}}, &minus;{{f 2/3}}{{/a}}</td></tr>
-        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td>{{a}}24{{/a}}</td><td>{{a}}<var>x</var> = {{f &minus;1 &plusmn; &radic;6/5}}{{/a}}</td></tr>
-        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td>{{a}}&minus;84{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
-        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td>{{a}}&minus;56{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
-        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td>{{a}}&minus;24{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
+        <tr><th style="width:2.2in">Equation</th><th style="width:1.3in">Discriminant</th>
+          <th style="width:1.2in"># of solutions</th><th>Solutions</th></tr>
+        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td>{{a}}5{{/a}}</td><td>{{a}}two{{/a}}</td><td>{{a}}<var>x</var> = {{f &minus;3 &plusmn; &radic;5/2}}{{/a}}</td></tr>
+        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td>{{a}}24{{/a}}</td><td>{{a}}two{{/a}}</td><td>{{a}}<var>x</var> = 1 &plusmn; &radic;6{{/a}}</td></tr>
+        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td>{{a}}25{{/a}}</td><td>{{a}}two{{/a}}</td><td>{{a}}<var>x</var> = &minus;{{f 1/2}}, &minus;3{{/a}}</td></tr>
+        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td>{{a}}49{{/a}}</td><td>{{a}}two{{/a}}</td><td>{{a}}<var>x</var> = {{f 1/2}}, &minus;{{f 2/3}}{{/a}}</td></tr>
+        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td>{{a}}24{{/a}}</td><td>{{a}}two{{/a}}</td><td>{{a}}<var>x</var> = {{f &minus;1 &plusmn; &radic;6/5}}{{/a}}</td></tr>
+        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td>{{a}}&minus;84{{/a}}</td><td>{{a}}none{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
+        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td>{{a}}&minus;56{{/a}}</td><td>{{a}}none{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
+        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td>{{a}}&minus;24{{/a}}</td><td>{{a}}none{{/a}}</td><td>{{a}}no real solutions{{/a}}</td></tr>
       </table>
     </div>
   </div>
 
   <h3>Level 3 - Challenging</h3>
-  <div class="box tint">You may need to rearrange or simplify first.</div>
+  <div class="box tint">Identify the number of solutions, then solve. You may need to rearrange or simplify first.</div>
 
   <div class="ex">
     <div class="work">

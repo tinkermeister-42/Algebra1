@@ -27,7 +27,7 @@ That’s the idea behind a **system of equations**.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.5_Systems_of_Equations.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -296,7 +296,7 @@ This method is especially convenient when both equations already have similar $x
 **Steps for Solving by Elimination**
 
 1. **Line up** both equations.
-2. **Add or subtract** the equations to eliminate that variable.
+2. **Add or subtract** the equations to eliminate one variable.
 3. **Solve** for the remaining variable.
 4. **Substitute back** to find the other variable.
 
@@ -501,9 +501,9 @@ Graph each system and find the solution.
 
 9.  **Gym Memberships**
     
-   Plan A costs $\$15$ to join and $\$20$ per month.
-   Plan B costs $\$50$ to join and $\$15$ per month.
-   After how many months will both plans cost the same?
+    Plan A costs $\$15$ to join and $\$20$ per month.
+    Plan B costs $\$50$ to join and $\$15$ per month.
+    After how many months will both plans cost the same?
 
 10. **Movie Tickets**
     
@@ -564,16 +564,16 @@ Graph each system and find the solution.
 16. 
     $$
     \begin{cases}
-    x + y = 9 \\
-    x - y = 3
+    x + y = 10 \\
+    x - y = 4
     \end{cases}
     $$
 
 17. 
     $$
     \begin{cases}
-    2x + y = 10 \\
-    2x - y = 2
+    3x + y = 11 \\
+    3x - y = 7
     \end{cases}
     $$
 
@@ -644,8 +644,8 @@ Graph each system and find the solution.
 13. $(3, 15)$  
 14. $(2, 9)$  
 15. $(4, 3)$
-16. $(6, 3)$  
-17. $(3, 4)$  
+16. $(7, 3)$  
+17. $(3, 2)$  
 18. $\left(\tfrac{10}{3},\ 3\right)$  
 19. $\left(\tfrac{10}{3},\ \tfrac{7}{3}\right)$  
 20. $(2, 3)$

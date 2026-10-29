@@ -38,7 +38,7 @@ In this lesson, we will find the answers to these questions by learning the basi
 
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.4_Factoring_Polynomials_A.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.4_Factoring_Polynomials_A.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -116,11 +116,11 @@ Break each term into its pieces:
 * $12x^3 = 3 \cdot 2 \cdot 2 \cdot x \cdot x \cdot x$
 * $3x^2 = 3 \cdot x \cdot x$
 
-The shared part is $3x$, so that becomes the GCF:
+The shared part is $3 \cdot x \cdot x = 3x^2$, so that becomes the GCF:
 
 $$
 \begin{aligned}
-12x^3 - 3x^2 &= 3x(4x^2 - 1)
+12x^3 - 3x^2 &= 3x^2(4x - 1)
 \end{aligned}
 $$
 
@@ -701,21 +701,21 @@ Factor each polynomial completely.
 
 22. $-4m^2 - 12m$
 
-23. $15r^2 + 5r - 20$
+23. $5r^2 + 5r - 60$
 
-24. $12k^2 - 3k - 15$
+24. $3k^2 - 3k - 36$
 
-25. $-18t^2 + 24t - 6$
+25. $-6t^2 + 24t - 18$
 
-26. $21y + 14y^2 + 7y^3$
+26. $14y + 21y^2 + 7y^3$
 
-27. $-10a^2 + 35a - 25$
+27. $-5a^2 + 35a - 50$
 
-28. $8c^2 + 2c - 3$
+28. $4c^2 + 8c - 32$
 
-29. $5x - 15x^2 + 10$
+29. $10x - 5x^2 + 15$
 
-30. $-9n^2 - 6 - 15n$
+30. $-3n^2 - 6 - 9n$
 
 ***
 
@@ -739,7 +739,7 @@ Factor each expression completely.
 
 5. $-4t(2t - 3)$
 
-6. $7y(2y + 1)(y + 1)$
+6. $7y(2y^2 + 3y + 1)$
 
 7. $5ab(4a - 3)$
 
@@ -773,20 +773,20 @@ Factor each expression completely.
 
 22. $-4m(m + 3)$
 
-23. $5(3r + 4)(r - 1)$
+23. $5(r + 4)(r - 3)$
 
-24. $3(4k - 5)(k + 1)$
+24. $3(k - 4)(k + 3)$
 
-25. $-6(3t - 1)(t - 1)$
+25. $-6(t - 1)(t - 3)$
 
-26. $7y(y^2 + 2y + 3)$
+26. $7y(y + 1)(y + 2)$
 
-27. $-5(2a - 5)(a - 1)$
+27. $-5(a - 2)(a - 5)$
 
-28. $(2c - 1)(4c + 3)$
+28. $4(c + 4)(c - 2)$
 
-29. $-5(3x + 2)(x - 1)$
+29. $-5(x - 3)(x + 1)$
 
-30. $-3(3n + 2)(n + 1)$
+30. $-3(n + 1)(n + 2)$
 
 :::

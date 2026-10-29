@@ -36,19 +36,21 @@ slug: Completing_the_Square
 
   <div class="box warn">
     <div class="lbl">Why we need a new method</div>
-    <var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0 factors easily, but
-    <var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0 <span class="b m">{{a}}does not factor over the integers{{/a}}</span>.
-    Both graphs cross the <var>x</var>-axis <span class="b m">{{a}}twice{{/a}}</span>, so both
-    <i>have</i> solutions. We need a method that works <span class="b m">{{a}}every time{{/a}}</span>.
+    <div class="figrow fig-m">
+      <img src="../../images/Unit_6/Lesson_5/IntroExample.png" alt="graphs of y = x squared plus 6x plus 5 and y = x squared plus 6x plus 2, both crossing the x-axis twice">
+      <div><var>x</var><sup>2</sup> + 6<var>x</var> + 5 = 0 factors easily, but
+        <var>x</var><sup>2</sup> + 6<var>x</var> + 2 = 0 does not.
+        Both parabolas cross the <var>x</var>-axis twice, so both equations have two solutions.
+        We need a method that works every time, even when factoring fails.</div>
+    </div>
   </div>
 
   <h2><span class="num">6.5.1</span>Turning <var>x</var><sup>2</sup> + <var>bx</var> into a Perfect Square</h2>
 
   <div class="keys">
-    A perfect square trinomial comes from squaring <span class="b s">{{a}}one{{/a}}</span> binomial, used
-    <span class="b m">{{a}}twice{{/a}}</span>. So in the area model the two diagonal terms must be
-    <span class="b m">{{a}}equal{{/a}}</span>, which means the middle term gets split
-    <span class="b m">{{a}}in half{{/a}}</span>.
+    A perfect square trinomial comes from squaring one binomial, used twice.
+    So in the area model the two diagonal terms must be the same, which means the middle term
+    is split evenly.
   </div>
 
   <div class="ex">
@@ -111,7 +113,7 @@ slug: Completing_the_Square
 
   <div class="keys">
     Completing the square works best when the coefficient of <var>x</var><sup>2</sup> is
-    <span class="b s">{{a}}1{{/a}}</span>. If it is not, <span class="b m">{{a}}factor{{/a}}</span> it out first.
+    <span class="b s">{{a}}1{{/a}}</span>. If it is not, factor it out first.
   </div>
 
   <div class="ex">
@@ -154,13 +156,13 @@ slug: Completing_the_Square
   <div class="keys">
     Once an equation is in the form (<var>x</var> &minus; <var>h</var>)<sup>2</sup> =
     <var>k</var>, you finish with the <span class="b m">{{a}}square root property{{/a}}</span> from Lesson 6.4.
-    Completing the square is how you <span class="b m">{{a}}get it into that form{{/a}}</span>.
+    Completing the square is how you get it into that form.
   </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 7.</b> Finish EX 6: solve
       (<var>x</var> + 2)<sup>2</sup> = {{f 5/2}}.</div>
-    <div class="work h16">{{a}}<p><var>x</var> + 2 = &plusmn;&radic;{{f 5/2}} = &plusmn;{{f &radic;10/2}}</p><p><var>x</var> = &minus;2 &plusmn; {{f &radic;10/2}} &asymp; &minus;0.42 or &minus;3.58</p>{{/a}}</div>
+    <div class="work h16">{{a}}<p><var>x</var> + 2 = &plusmn;<span class="sqrt">{{f 5/2}}</span></p><p><var>x</var> = &minus;2 &plusmn; <span class="sqrt">{{f 5/2}}</span> &asymp; &minus;0.42 or &minus;3.58</p>{{/a}}</div>
   </div>
 
   <div class="ex">
@@ -202,6 +204,16 @@ slug: Completing_the_Square
     <div class="work h25">{{a}}<p><var>x</var><sup>2</sup> &minus; 10<var>x</var> = &minus;16</p><p><var>x</var><sup>2</sup> &minus; 10<var>x</var> + 25 = 9 &rarr; (<var>x</var> &minus; 5)<sup>2</sup> = 9</p><p><var>x</var> &minus; 5 = &plusmn;3, so <var>x</var> = 8 or 2</p>{{/a}}</div>
   </div>
 
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>add</span><span>double</span><span>factor</span><span>half</span><span>multiply</span><span>perfect</span><span>roots</span><span>subtract</span></div>
+    <p>1. Completing the square turns an expression into a <span class="b m">{{a}}perfect{{/a}}</span> square.</p>
+    <p>2. To complete the square, take <span class="b m">{{a}}half{{/a}}</span> of the <var>x</var> coefficient and square it.</p>
+    <p>3. We add a number to make the square, so we <span class="b m">{{a}}subtract{{/a}}</span> it back out to keep the value the same.</p>
+    <p>4. If the number in front of <var>x</var><sup>2</sup> is not 1, <span class="b m">{{a}}factor{{/a}}</span> it out first.</p>
+    <p>5. After completing the square, we solve by taking square <span class="b m">{{a}}roots{{/a}}</span>.</p>
+  </div>
+
 {{practice-head}}
 
   <h2>Practice</h2>
@@ -214,7 +226,7 @@ slug: Completing_the_Square
       <p>2. Why must the middle term be split into two <b>equal</b> parts?
         <span class="b xl">{{a}}the two diagonal boxes must match for the side lengths to be the same{{/a}}</span></p>
       <p>3. In the area model, what does the missing corner represent?
-        <span class="b xl">{{a}}the constant that completes the square, (<var>b</var>/2)<sup>2</sup>{{/a}}</span></p>
+        <span class="b xl">{{a}}the term that must be added to make the expression a perfect square trinomial{{/a}}</span></p>
       <p>4. Why do we subtract the number we added? <span class="b xl">{{a}}so the value does not change. We add and subtract the same amount{{/a}}</span></p>
       <p>5. Without solving, what can you say about the solutions of
         (<var>x</var> &minus; <var>h</var>)<sup>2</sup> = <var>k</var> when&hellip;</p>
@@ -260,10 +272,10 @@ slug: Completing_the_Square
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>15. &nbsp;2<var>x</var><sup>2</sup> + 8<var>x</var> + 3 = 0{{a}} &nbsp; <var>x</var> = &minus;2 &plusmn; {{f &radic;10/2}}{{/a}}</p>
+        <p>15. &nbsp;2<var>x</var><sup>2</sup> + 8<var>x</var> + 3 = 0{{a}} &nbsp; <var>x</var> = &minus;2 &plusmn; <span class="sqrt">{{f 5/2}}</span>{{/a}}</p>
         <p>16. &nbsp;3<var>x</var><sup>2</sup> + 12<var>x</var> = 0{{a}} &nbsp; <var>x</var> = 0, &minus;4{{/a}}</p>
-        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = 1 &plusmn; {{f &radic;2/2}}{{/a}}</p>
-        <p>18. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = &minus;1 &plusmn; {{f &radic;6/3}}{{/a}}</p>
+        <p>17. &nbsp;2<var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = 1 &plusmn; <span class="sqrt">{{f 1/2}}</span>{{/a}}</p>
+        <p>18. &nbsp;3<var>x</var><sup>2</sup> + 6<var>x</var> + 1 = 0{{a}} &nbsp; <var>x</var> = &minus;1 &plusmn; <span class="sqrt">{{f 2/3}}</span>{{/a}}</p>
         <p>19. &nbsp;4<var>x</var><sup>2</sup> &minus; 12<var>x</var> + 5 = 0{{a}} &nbsp; <var>x</var> = {{f 5/2}}, {{f 1/2}}{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>

@@ -18,7 +18,7 @@ In this lesson, we will develop a **general method** that works for *every* quad
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.6_The_Quadratic_Formula.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.6_The_Quadratic_Formula.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -67,13 +67,13 @@ $$
 x^2 + \frac{b}{a}x + \frac{c}{a} = 0
 $$
 
-Next, we move the constant term to the other side:
+Next, we get the constant term on the other side. We subtract $\frac{c}{a}$ from both sides:
 
 $$
 x^2 + \frac{b}{a}x = -\frac{c}{a}
 $$
 
-At this point, we complete the square in the same way we did in Lesson 6.4. We split the middle term into two equal pieces and use an area model:
+At this point, we complete the square in the same way we did in Lesson 6.5. We split the middle term into two equal pieces and use an area model:
 
 $$
 \frac{b}{a}x = \frac{b}{2a}x + \frac{b}{2a}x
@@ -355,13 +355,13 @@ The discriminant is negative, so the quadratic has **no real solutions**. The pa
 ***
 
 :::{.note title="Is it factorable?"}
-The discriminant can help you decide if a quadratic can be factorable. If the discriminant is a perfect square, the quadratic can be factored over the integers. For example:
+The discriminant can help you decide if a quadratic is factorable. If the discriminant is a perfect square, the quadratic can be factored over the integers. For example:
 
 $$
 2x^2 + 5x - 3
 $$
 
-The discriminant is $(-5)^2 - 4(2)(-3) = 49$, which is a perfect square. The quadratic can be factored as $(2x - 1)(x + 3)$.
+The discriminant is $5^2 - 4(2)(-3) = 49$, which is a perfect square. The quadratic can be factored as $(2x - 1)(x + 3)$.
 :::
 
 :::{.you-try title="Find the discriminant and number of solutions for $x^2 + x - 2 = 0$"}
