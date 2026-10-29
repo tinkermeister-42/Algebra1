@@ -320,7 +320,7 @@ Fill in what we know.
 :::
 
 The last term is negative, so one factor is positive and one negative.  
-The middle term is negative, so the factor farther from zero must be negative. We just need to find which factor pair add up to $-7$.
+The middle term is negative, so the larger factor must be negative. We just need to find which factor pair add up to $-7$.
 
 | Factors | Sum |
 | ------- | ---- |
@@ -357,7 +357,7 @@ Factor $x^2 + 2x - 15$.
 :::
 
 Since the last term is negative, one factor must be positive and one negative.  
-The middle term is positive, so the factor farther from zero is positive.
+The middle term is positive, so the larger factor is positive.
 
 | Factors | Sum |
 | ------- | ---- |
@@ -454,8 +454,8 @@ For a trinomial $x^2 + bx + c$:
     * If $b$ is negative, both are negative.
 
 * If $c$ is negative, the factors have opposite signs.
-    * If $b$ is positive, the factor farther from zero is positive.
-    * If $b$ is negative, the factor farther from zero is negative.
+    * If $b$ is positive, the larger factor is positive.
+    * If $b$ is negative, the larger factor is negative.
 
 These patterns help you choose the correct factors quickly.
 :::
