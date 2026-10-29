@@ -67,7 +67,7 @@ $$
 x^2 + \frac{b}{a}x + \frac{c}{a} = 0
 $$
 
-Next, we subtract $\frac{c}{a}$ from both sides:
+Next, we get the constant term on the other side. We subtract $\frac{c}{a}$ from both sides:
 
 $$
 x^2 + \frac{b}{a}x = -\frac{c}{a}

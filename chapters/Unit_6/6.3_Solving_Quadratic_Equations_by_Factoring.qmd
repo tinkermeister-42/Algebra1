@@ -166,7 +166,7 @@ $$
 2x^2 = 7x + 4.
 $$
 
-Before factoring, we subtract $7x$ and $4$ from both sides so the equation equals zero.
+Before factoring, we get all the terms on one side so the equation equals zero. Here, we subtract $7x$ and $4$ from both sides.
 
 $$
 2x^2 - 7x - 4 = 0

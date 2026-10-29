@@ -399,7 +399,7 @@ $$
 x^2 - 10x + 16 = 0
 $$
 
-Subtract $16$ from both sides:
+Get the constant on the other side. Subtract $16$ from both sides:
 
 $$
 x^2 - 10x = -16
