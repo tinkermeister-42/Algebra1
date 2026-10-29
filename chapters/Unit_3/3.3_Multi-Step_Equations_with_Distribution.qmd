@@ -421,6 +421,8 @@ They washed **20 cars**.
 
 24. The student council ordered T-shirts and hoodies from a printing company. Each T-shirt costs $\$12$, and each hoodie costs $\$24$. The number of hoodies ordered was 3 more than twice the number of T-shirts. If the total cost was $\$312$, how many T-shirts did they order?
 
+25.  $2(x + y) + 3x - 4 = 5y + 6 \quad$ *(solve for $x$ in terms of $y$)*
+
 ***
 
 :::{.answers}

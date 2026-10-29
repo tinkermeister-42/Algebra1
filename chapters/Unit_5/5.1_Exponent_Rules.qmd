@@ -624,8 +624,4 @@ Simplify and rewrite using only positive exponents:
 23. $x^{2}$
 24. $y^{\tfrac{3}{4}}$
 25. $z^{1} = z$
-26. $\dfrac{81a^{\tfrac{11}{2}}}{b^{\tfrac{8}{3}}}$
-27. $\dfrac{x^{\tfrac{41}{5}}y^{\tfrac{1}{5}}}{128}$
-28. $\dfrac{q^{\tfrac{9}{4}}}{81p^{3}}$
-
 :::

@@ -314,7 +314,7 @@ Rearrange each expression from highest to lowest degree.
 26. Three linear expressions are added together:
     $$(x + a) + (x + b) + (x + c)$$
 
-    After combining like terms, the result has **no constant term**. What must be true about $a$, $b$, and $c$?
+    After combining like terms, the result has **no $x$ term**. What relationship must $a$, $b$, and $c$ satisfy?
 
 :::{.answers}
 
@@ -343,6 +343,4 @@ Rearrange each expression from highest to lowest degree.
 23. $3x^4 + 6x^3 - 12x^2 + 18x$
 24. $2x^2 - 10x + 8$
 25. $5x^3 - 7x^2 + 10$
-26. $a + b + c = 0$
-
 :::

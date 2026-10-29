@@ -727,8 +727,6 @@ Factor completely. If the polynomial cannot be factored, write **prime**.
 
 32. Identify the pattern and factor: $121a^4 - 64b^4$
 
-33. Factor completely: $4a^2b - 9b^3$
-
 :::{.answers}
 1. $(3x + 2)(2x + 5)$  
 2. $(y + 1)(15y + 14)$  
@@ -760,8 +758,5 @@ Factor completely. If the polynomial cannot be factored, write **prime**.
 28. $4(x - 3)(x - 2)$  
 29. **prime**  
 30. $5(z - 1)(5z - 1)$  
-31. $x(6x + 5)(4x + 3)$  
-32. $(11a^2 - 8b^2)(11a^2 + 8b^2)$  
-33. $b(2a - 3b)(2a + 3b)$  
 :::
 

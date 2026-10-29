@@ -278,7 +278,11 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
     The line $y = 3x - 1$ has slope $3$.
     A second line is perpendicular to it and crosses the y-axis at $(0, 9)$.
 
-    Write the equation of the second line.
+    Find the point where the two lines intersect.
+
+
+15. Parallel lines have the same slope.
+    Find the y-intercept of a line that passes through the point $(n, m)$ and is parallel to the line through the points $(m, 3)$ and $(4, n)$.
 
 
 

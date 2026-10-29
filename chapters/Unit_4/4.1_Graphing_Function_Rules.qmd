@@ -290,9 +290,7 @@ What kind of lines do they make?
 Then check your prediction by graphing.
 
 15. A mystery function passes through the points $(0, 2)$ and $(2, 6)$.
-Which of these rules could it be? Plot one more point that fits that rule.
-
-    $y = x + 2 \qquad y = 3x \qquad y = 2x + 2$
+Write a possible rule for the function and plot one more point that fits your rule.
 
 
 

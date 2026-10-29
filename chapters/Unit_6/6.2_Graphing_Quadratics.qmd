@@ -510,9 +510,5 @@ Find the axis of symmetry and vertex to graph each quadratic.
    
    ![](/images/Unit_6/Lesson_2/Problem12.png){width="250px" fig-align="center"}
 
-13. $a > 0$ and $k > 0$
-
-14. Draw a dashed line $y = x + 4$ and shade below it. Draw a solid parabola with vertex $(2, 1)$ opening downward and shade above it. The solution is the region below the line and above the parabola. The point $(4, 2)$ works. The point $(3, -4)$ does not.
-
 :::
 

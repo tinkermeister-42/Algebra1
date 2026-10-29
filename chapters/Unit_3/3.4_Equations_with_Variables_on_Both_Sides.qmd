@@ -510,10 +510,17 @@ They match at **3 movies**.
 
     Two contractors are bidding to build a concert stage.
 
-    * Contractor A charges $\$1200$ plus $\$35$ per square meter.
-    * Contractor B charges $\$50$ per square meter, minus $\$300$.
+    * Contractor A charges a $\$1200$ setup fee plus $\$35$ for every square meter more than the base design.
+    * Contractor B charges $\$50$ per square meter but offers a $\$300$ discount if the stage is small.
 
-    For what size of stage (in square meters) are the prices the same?
+    For what size of stage (in square meters beyond the base design) will their total prices be the same?
+
+25. Solve for $x$ in terms of $y$.
+
+$$
+3(x + 2) + 4y = 2(x - y) + 10
+$$
+
 
 :::{.answers}
 

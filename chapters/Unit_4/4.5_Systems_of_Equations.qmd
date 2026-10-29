@@ -609,7 +609,7 @@ Graph each system and find the solution.
     $$
     \begin{cases}
     y = m x + 4 \\
-    y = -x + b
+    y = -2x + b
     \end{cases}
     $$
     intersects at $(2, 0)$.

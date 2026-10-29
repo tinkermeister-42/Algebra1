@@ -720,9 +720,11 @@ Factor each polynomial completely.
 ***
 
 **Challenge Problems**  
-Factor completely.
+Factor each expression completely.
 
-31. $k^4 - 10k^2 + 9$
+31. $4a^2b - 9b^3$
+
+32. $k^4 - 10k^2 + 9$
 
 
 :::{.answers}
@@ -786,7 +788,5 @@ Factor completely.
 29. $-5(x - 3)(x + 1)$
 
 30. $-3(n + 1)(n + 2)$
-
-31. $(k - 1)(k + 1)(k - 3)(k + 3)$
 
 :::

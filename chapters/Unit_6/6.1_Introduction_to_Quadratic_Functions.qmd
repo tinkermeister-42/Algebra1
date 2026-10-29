@@ -376,13 +376,13 @@ Use the graph to find the vertex, axis of symmetry, domain, and range.
 
 **Challenge Problems**
 
-Use only the vertex, range, and opening direction.
+Construct or justify a quadratic using only vertex, range, and opening direction.
 
 21.  A quadratic has vertex $(a, b)$ and opens upward.  
-    State its axis of symmetry and range.
+    Write a possible equation and state its axis of symmetry.
 
 22.  A parabola has range $(-\infty, 4]$ and axis of symmetry $x = 3$.  
-    Give its vertex and opening direction.
+    Give a possible vertex and matching quadratic equation.
 
 ***
 

@@ -478,7 +478,4 @@ How many miles did they run total?
 
 **Challenge Problems**
 
-21. $\frac{5}{8}$  
-22. $8\tfrac{1}{2}$ miles  
-
 :::

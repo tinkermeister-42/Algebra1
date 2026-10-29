@@ -297,10 +297,10 @@ For each equation, decide whether it has **one solution**, **no solution**, or *
     have (a) one solution, (b) no solution?
 
 
-25. Solve:
+25. Solve for $x$ in terms of $y$:
 
     $$
-    3(x + 2) + 4 = 2(x + 1) + x
+    3(x + 2) + 4y = 2(x - y) + 10
     $$
 
     Then decide: is there exactly one solution, no solution, or infinitely many solutions?
