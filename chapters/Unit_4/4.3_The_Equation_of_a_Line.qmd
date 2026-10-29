@@ -22,7 +22,7 @@ Once you know those, you can write an equation, make predictions, and see how th
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.3_The_Equation_of_a_Line.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.3_The_Equation_of_a_Line.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -165,7 +165,7 @@ $$
 where
 
 * $m$ is the **slope**, and
-* $b$ is the **y-intercept**: the point where the line crosses the y-axis.
+* $b$ is the **y-intercept**. The line crosses the y-axis at $(0, b)$.
 
 This is called the {{< glink "slope-intercept form" >}} of a line.
 
@@ -278,11 +278,7 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
     The line $y = 3x - 1$ has slope $3$.
     A second line is perpendicular to it and crosses the y-axis at $(0, 9)$.
 
-    Find the point where the two lines intersect.
-
-
-15. Parallel lines have the same slope.
-    Find the y-intercept of a line that passes through the point $(n, m)$ and is parallel to the line through the points $(m, 3)$ and $(4, n)$.
+    Write the equation of the second line.
 
 
 
@@ -307,7 +303,7 @@ If you are interested in a gamified way to learn about lines, try out the [**Lin
     x-intercept: (2, 0)
 
 7.  y-intercept: (0, 8)
-    x-intercept: (-4, 0)
+    x-intercept: (4, 0)
 
 8.  y-intercept: (0, 4)
     x-intercept: (6, 0)

@@ -19,7 +19,7 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.5_Adding_and_Subtracting_Fractions.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -45,8 +45,8 @@ In this lesson, you’ll learn how to add and subtract fractions and mixed numbe
 
 2. Jack was hungrier than Monique.
 
-   - He ate **1 slice of pepperoni pizza**, cut into **3 equal pieces**.
-   - He also ate **1 slice of cheese pizza**, cut into **4 equal pieces**.
+   - He ate **1 slice** of a pepperoni pizza cut into **3 equal pieces**.
+   - He also ate **1 slice** of a cheese pizza cut into **4 equal pieces**.
 
    How much pizza did Jack eat in total?
 
@@ -473,5 +473,12 @@ How many miles did they run total?
 18. $2\tfrac{3}{4}$  
 19. $\frac{5}{12}$  
 20. $-\frac{3}{4}$  
+
+***
+
+**Challenge Problems**
+
+21. $\frac{5}{8}$  
+22. $8\tfrac{1}{2}$ miles  
 
 :::

@@ -4,7 +4,7 @@ Imagine your football (soccer) team wants to order new jerseys. Each jersey cost
 
 Since there are 11 players on the team, you need 11 jerseys. You could figure out the total cost in two different ways:
 
-First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = \$30.
+First, add the cost of one jersey and the logo: 25 + 5 = 30. Then multiply by 11 → 11 × 30 = \$330.
 
 Or multiply separately: (11 × 25) + (11 × 5) = 275 + 55 = $\$330$.
 
@@ -25,7 +25,7 @@ Either way, you get the same answer. What we just did actually followed a rule i
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.4_The_Distributive_Property.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.4_The_Distributive_Property.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -398,7 +398,7 @@ Both expressions gave 4 when $x = 5$ so we feel good about our answer.
 
 17. $8p+12q$
 
-18. $14x-21x^2$
+18. $14x-21$
 
 **Are they equivalent? Expand/simplify and compare.**
 
@@ -424,7 +424,7 @@ $$
 Explain why both methods lead to the same result.
 
 
-24. Use the distributive property to multiply $(3x - 1)(2x + 3)$. Show each step and simplify your result.
+24. Use the distributive property to find $(30 - 1)(20 + 3)$. Show each step.
 
 ***
 
@@ -457,7 +457,7 @@ Explain why both methods lead to the same result.
 15. $9(2x+3)$
 16. $4(5m-3)$
 17. $4(2p+3q)$
-18. $7x(2-3x)$
+18. $7(2x-3)$
 
 **Are they equivalent?**
 

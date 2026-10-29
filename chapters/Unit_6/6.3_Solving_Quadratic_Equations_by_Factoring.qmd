@@ -29,12 +29,10 @@ In this lesson, we will see that we already have all of the tools we need.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.3_Solving_Quadratic_Equations_by_Factoring.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
-
-**Warm-Up**
 
 1. Factor the expression completely.
 
@@ -168,7 +166,7 @@ $$
 2x^2 = 7x + 4.
 $$
 
-Before factoring, we move all terms to one side so the equation equals zero.
+Before factoring, we subtract $7x$ and $4$ from both sides so the equation equals zero.
 
 $$
 2x^2 - 7x - 4 = 0
@@ -324,10 +322,13 @@ $$
 x^2 + 4x + 7 = 0.
 $$
 
-There are no two real numbers that multiply to $7$ and add to $4$, so this quadratic does not factor over the real numbers.
+There are no two whole numbers that multiply to $7$ and add to $4$, so we cannot factor this quadratic.
 
-That means there is no real value of $x$ that makes the equation true.
-On the graph, the parabola never touches the x-axis.
+Check the vertex instead. The axis of symmetry is $x = -\frac{4}{2(1)} = -2$, and $f(-2) = (-2)^2 + 4(-2) + 7 = 3$.
+
+The vertex is $(-2, 3)$. It is above the x-axis, and the parabola opens upward.
+
+So the parabola never touches the x-axis. There is no real value of $x$ that makes the equation true.
 
 ![](/images/Unit_6/Lesson_3/Example8.png){width="400px" fig-align="center"}
 
@@ -337,7 +338,7 @@ On the graph, the parabola never touches the x-axis.
 
 * Two different linear factors lead to **two solutions**.
 * A repeated factor leads to **one solution**.
-* No real factors lead to **no real solutions**.
+* A quadratic that does not factor, with its vertex above the x-axis and opening upward, leads to **no real solutions**.
 
 These algebraic results match exactly what we see on the graph.
 
@@ -446,7 +447,7 @@ Solve each equation.
 
 9. $y = -3, 0$
 
-10. No real solutions
+10. No real solutions. The vertex $(3, 2)$ is above the x-axis and the parabola opens upward.
 
 11. $m = 2, 5$
 
@@ -456,7 +457,7 @@ Solve each equation.
 
 14. $x = -\tfrac{4}{3}, 2$
 
-15. No real solutions
+15. No real solutions. The vertex $(3, 3)$ is above the x-axis and the parabola opens upward.
 
 16. $x = -2, -\tfrac{4}{3}$
 
@@ -478,7 +479,7 @@ Solve each equation.
 
 25. $x = -\tfrac{1}{2}, 5$
 
-26. No real solutions
+26. No real solutions. The vertex $(-2, 3)$ is above the x-axis and the parabola opens upward.
 
 27. $x = -3, 0$
 
@@ -490,7 +491,7 @@ Solve each equation.
 
 31. $x = 3$
 
-32. No real solutions
+32. No real solutions. The vertex $(0, 1)$ is above the x-axis and the parabola opens upward.
 
 :::
 

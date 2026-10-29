@@ -44,7 +44,7 @@ slug: Inputs_Outputs_and_Functions
             <tr><td>6</td><td>19</td></tr>
           </table>
         </div>
-        <div><p>Rule:</p>{{a}}<p>Multiply by 3, then add 1 - <var>f</var>(<var>x</var>) = 3<var>x</var> + 1</p>{{/a}}<div class="ruled"></div><div class="ruled"></div></div>
+        <div><p>Rule:</p>{{a}}<p>Multiply by 3, then add 1 (3<var>x</var> + 1)</p>{{/a}}<div class="ruled"></div><div class="ruled"></div></div>
       </div>
     </div>
   </div>
@@ -55,23 +55,6 @@ slug: Inputs_Outputs_and_Functions
     <img src="../../images/Unit_2/Lesson_5/function_machine.png" alt="a machine with a number going in and one number coming out">
   </div>
 
-  <div class="keys">
-    A function is a machine: put a number in, get exactly <span class="b s">{{a}}one{{/a}}</span> number out.
-    <p style="text-align:center;font-size:13pt;margin:6px 0"><var>f</var>(<var>x</var>) =
-      2<var>x</var> + 3</p>
-    <div class="cols3">
-      <p><var>f</var> is the <span class="b m">{{a}}function name{{/a}}</span></p>
-      <p><var>x</var> is the <span class="b m">{{a}}input{{/a}}</span></p>
-      <p>2<var>x</var> + 3 is the <span class="b m">{{a}}rule{{/a}}</span></p>
-    </div>
-  </div>
-
-  <div class="box warn">
-    <div class="lbl">Gotcha: <var>f</var>(<var>x</var>) is not <var>f</var> times <var>x</var></div>
-    Read it as &ldquo;<span class="b m">{{a}}<var>f</var> of <var>x</var>{{/a}}</span>&rdquo;. It names the
-    <span class="b m">{{a}}output{{/a}}</span> when the input is <var>x</var>.
-  </div>
-
   <div class="ex">
     <div class="q"><b class="tag">EX 1.</b> The mystery machine sends 5 &rarr; 13 and 7 &rarr; 17.
       What rule could it be following? Write it in function notation.</div>
@@ -79,6 +62,24 @@ slug: Inputs_Outputs_and_Functions
       <p>In words: <span class="b xl">{{a}}double the input, then add 3{{/a}}</span></p>
       <p class="ans">In notation: <var>f</var>(<var>x</var>) = <span class="b">{{a}}2<var>x</var> + 3{{/a}}</span></p>
     </div>
+  </div>
+
+  <div class="keys">
+    A function is a machine: put a number in, get exactly one number out.
+    <p style="text-align:center;font-size:13pt;margin:6px 0"><var>f</var>(<var>x</var>) =
+      2<var>x</var> + 3</p>
+    <div class="wordbank"><span>input</span><span>name</span><span>rule</span></div>
+    <div class="cols3">
+      <p><var>f</var> is the <span class="b s">{{a}}name{{/a}}</span> of the function</p>
+      <p><var>x</var> is the <span class="b s">{{a}}input{{/a}}</span> variable</p>
+      <p>2<var>x</var> + 3 is the <span class="b s">{{a}}rule{{/a}}</span> for the output</p>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <div class="lbl">Gotcha: <var>f</var>(<var>x</var>) is not <var>f</var> times <var>x</var></div>
+    Read it as &ldquo;<span class="b m">{{a}}<var>f</var> of <var>x</var>{{/a}}</span>&rdquo;. It names the
+    output when the input is <var>x</var>.
   </div>
 
   <div class="ex">
@@ -93,15 +94,15 @@ slug: Inputs_Outputs_and_Functions
     A <b>relation</b> is any set of input/output pairs. A <b>function</b> is a relation where
     each input has exactly <span class="b s">{{a}}one{{/a}}</span> output.
     <ul style="margin-top:3px">
-      <li>Same input with two <span class="b m">{{a}}different{{/a}}</span> outputs &rarr; not a function.</li>
-      <li>A repeated input is fine if the output is the <span class="b m">{{a}}same{{/a}}</span>.</li>
-      <li>Different inputs <span class="b m">{{a}}may{{/a}}</span> share an output. That is allowed.</li>
+      <li>Same input with two different outputs &rarr; not a function.</li>
+      <li>A repeated input is fine if the output is the same.</li>
+      <li>Different inputs can share an output. That is allowed.</li>
     </ul>
   </div>
 
   <div class="box warn">
     <div class="lbl">Gotcha</div>
-    It is only a problem when the same <span class="b m">{{a}}input{{/a}}</span> gives different outputs. It is never a problem when the same <span class="b m">{{a}}output{{/a}}</span> comes from different inputs.
+    Two different temperatures can both feel like 75&deg;F. Different inputs, same output: still a function.
   </div>
 
   <div class="ex">
@@ -116,7 +117,7 @@ slug: Inputs_Outputs_and_Functions
             <tr><td>&minus;1</td><td>3</td></tr>
             <tr><td>2</td><td>5</td></tr>
           </table>
-          <p><span class="b m">{{a}}yes - &minus;1 repeats but always gives 3{{/a}}</span></p>
+          <p><span class="b m">{{a}}yes, &minus;1 repeats but always gives 3{{/a}}</span></p>
         </div>
         <div>
           <table class="fill">
@@ -143,20 +144,26 @@ slug: Inputs_Outputs_and_Functions
   <h2><span class="num">2.5.3</span>Evaluating Functions</h2>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 4.</b> <var>g</var>(<var>x</var>) = 3(<var>x</var> + 4).
+    <div class="q"><b class="tag">EX 4.</b> <var>f</var>(<var>x</var>) = 2<var>x</var> + 3.
+      Find <var>f</var>(5).</div>
+    <div class="work h08">{{a}}<p><var>f</var>(5) = 2(5) + 3 = 10 + 3 = 13</p>{{/a}}</div>
+  </div>
+
+  <div class="ex">
+    <div class="q"><b class="tag">EX 5.</b> <var>g</var>(<var>x</var>) = 3(<var>x</var> + 4).
       Find <var>g</var>(2).</div>
     <div class="work h13">{{a}}<p><var>g</var>(2) = 3(2 + 4) = 3(6) = 18</p>{{/a}}</div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 5.</b> <var>h</var>(<var>x</var>) =
+    <div class="q"><b class="tag">EX 6.</b> <var>h</var>(<var>x</var>) =
       &minus;2(3<var>x</var> &minus; 1) + 7. Find <var>h</var>(&minus;2).
       <i>Careful with the negatives.</i></div>
     <div class="work h16">{{a}}<p><var>h</var>(&minus;2) = &minus;2(3(&minus;2) &minus; 1) + 7 = &minus;2(&minus;7) + 7 = 14 + 7 = 21</p>{{/a}}</div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 6.</b> <var>f</var>(<var>x</var>) = 9 &minus; 3<var>x</var>.
+    <div class="q"><b class="tag">EX 7.</b> <var>f</var>(<var>x</var>) = 9 &minus; 3<var>x</var>.
       Find <var>f</var>(2).</div>
     <div class="work h1">{{a}}<p><var>f</var>(2) = 9 &minus; 6 = 3</p>{{/a}}</div>
   </div>
@@ -164,12 +171,11 @@ slug: Inputs_Outputs_and_Functions
   <h2><span class="num">2.5.4</span>Simplifying Function Rules</h2>
 
   <div class="keys">
-    A shorter rule is <span class="b m">{{a}}faster{{/a}}</span> to use and gives you fewer chances to make a
-    mistake, especially when you evaluate it many times.
+    A shorter rule makes evaluation quicker and reduces mistakes.
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 7.</b> <var>p</var>(<var>x</var>) =
+    <div class="q"><b class="tag">EX 8.</b> <var>p</var>(<var>x</var>) =
       4(<var>x</var> &minus; 2) + 3<var>x</var>. Simplify first, then find <var>p</var>(5).</div>
     <div class="work h16">
       <p>Simplified: <var>p</var>(<var>x</var>) = <span class="b">{{a}}7<var>x</var> &minus; 8{{/a}}</span></p>
@@ -178,7 +184,7 @@ slug: Inputs_Outputs_and_Functions
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 8.</b> Simplify <var>q</var>(<var>x</var>) =
+    <div class="q"><b class="tag">EX 9.</b> Simplify <var>q</var>(<var>x</var>) =
       2(<var>x</var> + 5) + 3<var>x</var>, then find <var>q</var>(3).</div>
     <div class="work h13">{{a}}<p><var>q</var>(<var>x</var>) = 2<var>x</var> + 10 + 3<var>x</var> = 5<var>x</var> + 10</p><p><var>q</var>(3) = 15 + 10 = 25</p>{{/a}}</div>
   </div>
@@ -186,7 +192,7 @@ slug: Inputs_Outputs_and_Functions
   <h2><span class="num">2.5.5</span>Functions in Real Life</h2>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 9.</b> A data plan charges $50 per month plus $0.10 per Gb.
+    <div class="q"><b class="tag">EX 10.</b> A data plan charges $50 per month plus $0.10 per Gb.
       Write the function and find the cost for 80 Gb.</div>
     <div class="work h16">
       <p><var>C</var>(<var>g</var>) = <span class="b">{{a}}0.10<var>g</var> + 50{{/a}}</span>
@@ -196,13 +202,13 @@ slug: Inputs_Outputs_and_Functions
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 10.</b> Convert 25&deg;C to Fahrenheit using
+    <div class="q"><b class="tag">EX 11.</b> Convert 25&deg;C to Fahrenheit using
       <var>F</var>(<var>C</var>) = {{f 9/5}}<var>C</var> + 32.</div>
     <div class="work h13">{{a}}<p><var>F</var>(25) = {{f 9/5}}(25) + 32 = 45 + 32 = 77&deg;F</p>{{/a}}</div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 11.</b> You earn $12 per hour plus a $15 bonus:
+    <div class="q"><b class="tag">EX 12.</b> You earn $12 per hour plus a $15 bonus:
       <var>P</var>(<var>h</var>) = 12<var>h</var> + 15. What do you make for 40 hours?</div>
     <div class="work h13">{{a}}<p><var>P</var>(40) = 12(40) + 15 = 480 + 15 = $495</p>{{/a}}</div>
   </div>
@@ -257,7 +263,7 @@ slug: Inputs_Outputs_and_Functions
             <tr><td>1</td><td>5</td></tr>
             <tr><td>2</td><td>8</td></tr>
           </table>
-          {{a}}<p>Function - 1 repeats but gives 5 both times.</p>{{/a}}
+          {{a}}<p>Function. 1 repeats but gives 5 both times.</p>{{/a}}
           <div class="ruled"></div>
         </div>
         <div>
@@ -268,7 +274,7 @@ slug: Inputs_Outputs_and_Functions
             <tr><td>&minus;2</td><td>3</td></tr>
             <tr><td>0</td><td>3</td></tr>
           </table>
-          {{a}}<p>Not a function - &minus;2 gives 1 and 3.</p>{{/a}}
+          {{a}}<p>Not a function. &minus;2 gives 1 and 3.</p>{{/a}}
           <div class="ruled"></div>
         </div>
         <div>
@@ -342,10 +348,10 @@ slug: Inputs_Outputs_and_Functions
           <var>f</var>(3) + <var>f</var>(5){{a}} &nbsp; = 7 + 11 = 18{{/a}}</p>
         <p>21. &nbsp;<var>g</var>(<var>x</var>) = <var>x</var><sup>2</sup> &minus; 4; find
           <var>g</var>(2) + <var>g</var>(&minus;2){{a}} &nbsp; = 0 + 0 = 0{{/a}}</p>
-        <p>22. &nbsp;<var>h</var>(<var>x</var>) = 3<var>x</var> &minus; 7; solve
-          <var>h</var>(<var>x</var>) = 5{{a}} &nbsp; 3<var>x</var> = 12, <var>x</var> = 4{{/a}}</p>
+        <p>22. &nbsp;<var>h</var>(<var>x</var>) = 3<var>x</var> &minus; 7; try inputs until
+          <var>h</var>(<var>x</var>) = 5{{a}} &nbsp; <var>h</var>(2) = &minus;1, <var>h</var>(3) = 2, <var>h</var>(4) = 5, so <var>x</var> = 4{{/a}}</p>
         <p>23. &nbsp;<var>f</var>(<var>x</var>) = 2<var>x</var> + 3. If the output is 23,
-          what was the input?{{a}} &nbsp; 2<var>x</var> = 20, <var>x</var> = 10{{/a}}</p>
+          what was the input? Try inputs until you get 23.{{a}} &nbsp; <var>f</var>(5) = 13, <var>f</var>(8) = 19, <var>f</var>(10) = 23, so <var>x</var> = 10{{/a}}</p>
       </div>
       <div class="tallbox h25"></div>
     </div>

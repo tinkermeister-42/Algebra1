@@ -70,7 +70,7 @@ BLOCK_RE = re.compile(r"<(table|div|p|ul|ol|h[1-6])\b", re.I)
 
 IDLINE = ('<div class="idline"><span>Name</span>'
           '<span class="small">Date</span><span class="small">Period</span></div>')
-KEYLINE = '<div class="keybadge">Teacher Key - answers in red</div>'
+KEYLINE = '<div class="keybadge">Teacher Key: answers in red</div>'
 
 
 def _drop_answers(body):

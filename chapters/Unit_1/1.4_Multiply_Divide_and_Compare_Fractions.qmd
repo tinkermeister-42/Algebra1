@@ -20,14 +20,14 @@ You need these skills any time you scale a recipe, split something into equal pa
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.4_Multiply_Divide_and_Compare_Fractions.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
 
 1. What is half of a half?
 
-2. What happens when you multiply two, positive numbers that are smaller than 1?
+2. What happens when you multiply two positive numbers that are smaller than 1?
 
 3. If you divide 1 by $\frac{1}{2}$, will the answer be bigger or smaller?
 
@@ -43,7 +43,7 @@ This means:
 
 > **one-fourth of one-half**
 
-Here is what it looks like to find how many fourths are in one half:
+Here is what it looks like to find one fourth of one half:
 
 ![](/images/Unit_1/Lesson_4/fourth_of_a_half.png){width=50%}
 

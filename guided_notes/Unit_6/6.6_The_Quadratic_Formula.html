@@ -67,9 +67,9 @@
         <div>
           <table class="steps">
             <tr><td class="why">Divide by <var>a</var></td><td></td></tr>
-            <tr><td class="why">Move the constant</td><td></td></tr>
+            <tr><td class="why">Subtract <span class="f"><b><var>c</var></b><b><var>a</var></b></span> from both sides</td><td></td></tr>
             <tr><td class="why">Add to both sides</td><td></td></tr>
-            <tr><td class="why">Write as a square</td><td></td></tr>
+            <tr><td class="why">Write as a square</td><td>(<var>x</var> + <span class="f"><b><var>b</var></b><b>2<var>a</var></b></span>)<sup>2</sup> = <span class="f"><b><var>b</var><sup>2</sup> &minus; 4<var>ac</var></b><b>4<var>a</var><sup>2</sup></b></span></td></tr>
             <tr><td class="why">Take square roots</td><td></td></tr>
             <tr><td class="why">Solve for <var>x</var></td><td></td></tr>
           </table>
@@ -94,10 +94,9 @@
   <div class="box tint">
     <div class="lbl">The steps never change</div>
     <ol>
-      <li>Identify <span class="b s"></span>, <span class="b s"></span>, and
-        <span class="b s"></span>. The equation must be in
+      <li>Identify <var>a</var>, <var>b</var>, and <var>c</var>. The equation must be in
         <span class="b m"></span> first.</li>
-      <li>Substitute <span class="b m"></span>.</li>
+      <li>Substitute carefully, using parentheses.</li>
       <li>Simplify step by step.</li>
     </ol>
   </div>
@@ -128,7 +127,7 @@
     <div class="q"><b class="tag">EX 4.</b> Solve 3<var>x</var><sup>2</sup> + 4<var>x</var>
       + 7 = 0.</div>
     <div class="work h2">
-      <p class="ans">What went wrong under the square root? <span class="b l"></span></p>
+      <p class="ans">Under the square root: 16 &minus; 84 = &minus;68. The square root of a negative number is not real.</p>
       <p class="ans">So this equation has <span class="b m"></span>.</p>
     </div>
   </div>
@@ -148,9 +147,9 @@
     <table class="steps" style="margin-top:4px">
       <tr><th style="width:2.4in">Discriminant</th><th>Number of real solutions</th>
         <th>What the graph does</th></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td></td><td></td></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td></td><td></td></tr>
-      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td></td><td></td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &gt; 0</td><td></td><td>The parabola intersects the <var>x</var>-axis at two points.</td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> = 0</td><td></td><td>The parabola intersects the <var>x</var>-axis at one point only.</td></tr>
+      <tr><td><var>b</var><sup>2</sup> &minus; 4<var>ac</var> &lt; 0</td><td></td><td>The parabola does not cross the <var>x</var>-axis at all.</td></tr>
     </table>
   </div>
 
@@ -174,7 +173,7 @@
     integers.
     <div style="margin-top:3px">Check 2<var>x</var><sup>2</sup> + 5<var>x</var> &minus; 3:
       discriminant = <span class="b s"></span>, which
-      <span class="b m"></span> a perfect square, so it factors as
+      is a perfect square, so it factors as
       <span class="b m"></span>.</div>
   </div>
 
@@ -206,22 +205,22 @@
   <div class="ex">
     <div class="work">
       <table class="steps">
-        <tr><th style="width:2.2in">Equation</th><th style="width:1.4in">Discriminant</th>
-          <th>Solutions</th></tr>
-        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td></td><td></td></tr>
-        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td></td><td></td></tr>
-        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td></td><td></td></tr>
-        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td></td><td></td></tr>
-        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td></td><td></td></tr>
-        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td></td><td></td></tr>
-        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td></td><td></td></tr>
-        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td></td><td></td></tr>
+        <tr><th style="width:2.2in">Equation</th><th style="width:1.3in">Discriminant</th>
+          <th style="width:1.2in"># of solutions</th><th>Solutions</th></tr>
+        <tr><td>9. &nbsp;<var>x</var><sup>2</sup> + 3<var>x</var> + 1 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>10. &nbsp;<var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 5 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>11. &nbsp;2<var>x</var><sup>2</sup> + 7<var>x</var> + 3 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>12. &nbsp;6<var>x</var><sup>2</sup> + <var>x</var> &minus; 2 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>13. &nbsp;5<var>x</var><sup>2</sup> + 2<var>x</var> &minus; 1 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>14. &nbsp;7<var>x</var><sup>2</sup> &minus; 14<var>x</var> + 10 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>15. &nbsp;3<var>x</var><sup>2</sup> &minus; 2<var>x</var> + 5 = 0</td><td></td><td></td><td></td></tr>
+        <tr><td>16. &nbsp;2<var>x</var><sup>2</sup> + 4<var>x</var> + 5 = 0</td><td></td><td></td><td></td></tr>
       </table>
     </div>
   </div>
 
   <h3>Level 3 - Challenging</h3>
-  <div class="box tint">You may need to rearrange or simplify first.</div>
+  <div class="box tint">Identify the number of solutions, then solve. You may need to rearrange or simplify first.</div>
 
   <div class="ex">
     <div class="work">

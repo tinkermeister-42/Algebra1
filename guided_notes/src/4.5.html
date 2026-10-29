@@ -28,7 +28,7 @@ slug: Systems_of_Equations
           <p>1. Graph <var>y</var> = 2<var>x</var> + 1 and <var>y</var> = &minus;<var>x</var> + 4
             on the same axes.</p>
           <p>2. Is (3, 4) a solution to <var>y</var> = 5<var>x</var> &minus; 11?
-            <span class="b m">{{a}}yes - 5(3) &minus; 11 = 4 &#10003;{{/a}}</span></p>
+            <span class="b m">{{a}}yes, 5(3) &minus; 11 = 4 &#10003;{{/a}}</span></p>
           <p>3. Is there a point that makes <b>both</b> equations in #1 true? How would you
             find it?</p>
           {{a}}<p>Yes, where the lines cross. 2<var>x</var> + 1 = &minus;<var>x</var> + 4 gives <var>x</var> = 1, <var>y</var> = 3, so (1, 3).</p>{{/a}}
@@ -40,13 +40,6 @@ slug: Systems_of_Equations
   </div>
 
   <h2><span class="num">4.5.1</span>Solving Systems by Graphing</h2>
-
-  <div class="keys">
-    A <b>system of equations</b> is two or more equations that share the same
-    <span class="b m">{{a}}variables{{/a}}</span>. The <b>solution</b> is a point that makes
-    <span class="b m">{{a}}every{{/a}}</span> equation true. On a graph it is the point where the lines
-    <span class="b m">{{a}}cross{{/a}}</span>.
-  </div>
 
   <div class="ex">
     <div class="q"><b class="tag">EX 1.</b> Graph and solve.
@@ -63,6 +56,12 @@ slug: Systems_of_Equations
         <div>{{grid}}</div>
       </div>
     </div>
+  </div>
+
+  <div class="keys">
+    A <b>system of equations</b> is two or more equations that share the same variables.
+    The <b>solution</b> is a point that makes both equations true.
+    On a graph it is the point where the lines <span class="b m">{{a}}cross{{/a}}</span>.
   </div>
 
   <div class="ex">
@@ -84,6 +83,7 @@ slug: Systems_of_Equations
     <div class="work">
       <div class="cols2">
         <div>
+          <p>Choose a scale for each axis.</p>
           <p>System: <div class="sys"><span><var>y</var> = <span class="b m">{{a}}5<var>x</var> + 10{{/a}}</span></span>
             <span><var>y</var> = <span class="b m">{{a}}2<var>x</var> + 25{{/a}}</span></span></div></p>
           <p class="ans">They meet at ( <span class="b s">{{a}}5{{/a}}</span> ,
@@ -91,7 +91,7 @@ slug: Systems_of_Equations
           <p class="ans">Meaning: after <span class="b s">{{a}}5{{/a}}</span> classes both plans cost
             <span class="b s">{{a}}$35{{/a}}</span>. Before that, Plan <span class="b s">{{a}}A{{/a}}</span> is cheaper.</p>
         </div>
-        <div>{{grid}}</div>
+        <div>{{grid-q1}}</div>
       </div>
     </div>
   </div>
@@ -113,21 +113,24 @@ slug: Systems_of_Equations
     <div class="work">
       <div class="cols2">
         <div>
+          <p>Choose a scale for each axis.</p>
           <p class="ans">Solution: ( <span class="b s">{{a}}3{{/a}}</span> , <span class="b s">{{a}}85{{/a}}</span> )</p>
           <p>Interpretation:</p>{{a}}<p>After 3 months both plans have cost $85. Before that the $25/month plan is cheaper; after it, the $15/month plan is.</p>{{/a}}<div class="ruled"></div><div class="ruled"></div>
         </div>
-        <div>{{grid}}</div>
+        <div>{{grid-q1}}</div>
       </div>
     </div>
   </div>
 
-  <h2><span class="num">4.5.2</span>Solving by Substitution</h2>
+  <h2><span class="num">4.5.2</span>Other Solving Methods</h2>
+
+  <h3>Solving by Substitution</h3>
 
   <div class="box tint">
     <div class="lbl">Steps</div>
     <ol>
-      <li>Solve one equation for <span class="b m">{{a}}one variable{{/a}}</span>.</li>
-      <li><span class="b m">{{a}}Substitute{{/a}}</span> that expression into the other equation.</li>
+      <li>Solve one equation for one variable.</li>
+      <li>Substitute that expression into the other equation.</li>
       <li>Solve for the remaining variable.</li>
       <li>Plug back in to find the other one.</li>
     </ol>
@@ -153,13 +156,13 @@ slug: Systems_of_Equations
     {{a}}<p><var>x</var> + (3<var>x</var> &minus; 8) = &minus;24 &nbsp;&rarr;&nbsp; 4<var>x</var> = &minus;16</p>{{/a}}</div>
   </div>
 
-  <h2><span class="num">4.5.3</span>Solving by Elimination</h2>
+  <h3>Solving by Elimination</h3>
 
   <div class="box tint">
     <div class="lbl">Steps</div>
     <ol>
-      <li><span class="b m">{{a}}Line up{{/a}}</span> both equations.</li>
-      <li>Add or subtract so one variable <span class="b m">{{a}}cancels{{/a}}</span>.</li>
+      <li>Line up both equations.</li>
+      <li>Add or subtract the equations to eliminate one variable.</li>
       <li>Solve for the remaining variable.</li>
       <li>Substitute back to find the other.</li>
     </ol>
@@ -193,10 +196,10 @@ slug: Systems_of_Equations
       <div class="sys"><span>3<var>x</var> + 2<var>y</var> = 16</span>
         <span>2<var>x</var> + 3<var>y</var> = 14</span></div></div>
     <div class="work h25">
-      <p>Multiply the first by <span class="b s">{{a}}3{{/a}}</span> and the second by
-        <span class="b s">{{a}}2{{/a}}</span>:</p>
+      <p>Multiply the first by <span class="b s">{{a}}2{{/a}}</span> and the second by
+        <span class="b s">{{a}}&minus;3{{/a}}</span>:</p>
       <p class="ans">Solution: ( <span class="b s">{{a}}4{{/a}}</span> , <span class="b s">{{a}}2{{/a}}</span> )</p>
-    {{a}}<p>9<var>x</var> + 6<var>y</var> = 48 and 4<var>x</var> + 6<var>y</var> = 28; subtracting gives 5<var>x</var> = 20.</p>{{/a}}</div>
+    {{a}}<p>6<var>x</var> + 4<var>y</var> = 32 and &minus;6<var>x</var> &minus; 9<var>y</var> = &minus;42; adding gives &minus;5<var>y</var> = &minus;10.</p>{{/a}}</div>
   </div>
 
 {{practice-head}}
@@ -264,11 +267,11 @@ slug: Systems_of_Equations
       <table class="steps">
         <tr><th style="width:3in">Situation</th><th>System</th><th style="width:1.6in">Solution &amp; meaning</th></tr>
         <tr><td>6. One service costs $8/month plus $4 per movie; another costs $20/month plus
-          $2 per movie.</td><td>{{a}}<var>y</var> = 4<var>x</var> + 8; <var>y</var> = 2<var>x</var> + 20{{/a}}</td><td>{{a}}(6, 32) - at 6 movies both cost $32{{/a}}</td></tr>
+          $2 per movie.</td><td>{{a}}<var>y</var> = 4<var>x</var> + 8; <var>y</var> = 2<var>x</var> + 20{{/a}}</td><td>{{a}}(6, 32), at 6 movies both cost $32{{/a}}</td></tr>
         <tr><td>7. A taxi charges $5 plus $3 per mile; a ride-share charges $2 plus $4 per
           mile.</td><td>{{a}}<var>y</var> = 3<var>x</var> + 5; <var>y</var> = 4<var>x</var> + 2{{/a}}</td><td>{{a}}(3, 14), at 3 miles both cost $14{{/a}}</td></tr>
         <tr><td>8. Company A: $30 per ticket plus a $10 fee. Company B: $25 per ticket plus a
-          $20 fee.</td><td>{{a}}<var>y</var> = 30<var>x</var> + 10; <var>y</var> = 25<var>x</var> + 20{{/a}}</td><td>{{a}}(2, 70) - at 2 tickets both cost $70{{/a}}</td></tr>
+          $20 fee.</td><td>{{a}}<var>y</var> = 30<var>x</var> + 10; <var>y</var> = 25<var>x</var> + 20{{/a}}</td><td>{{a}}(2, 70), at 2 tickets both cost $70{{/a}}</td></tr>
         <tr><td>9. Plan A: $15 to join, $20 per month. Plan B: $50 to join, $15 per
           month.</td><td>{{a}}<var>y</var> = 20<var>x</var> + 15; <var>y</var> = 15<var>x</var> + 50{{/a}}</td><td>{{a}}(7, 155), at 7 months both cost $155{{/a}}</td></tr>
         <tr><td>10. Theater A: $12 per ticket plus $6 fee. Theater B: $10 per ticket plus $12
@@ -306,10 +309,10 @@ slug: Systems_of_Equations
   <div class="ex">
     <div class="work">
       <div class="cols3">
-        <p>16. <div class="sys"><span><var>x</var> + <var>y</var> = 9</span>
-          <span><var>x</var> &minus; <var>y</var> = 3</span></div>{{a}} &nbsp; (6, 3){{/a}}</p>
-        <p>17. <div class="sys"><span>2<var>x</var> + <var>y</var> = 10</span>
-          <span>2<var>x</var> &minus; <var>y</var> = 2</span></div>{{a}} &nbsp; (3, 4){{/a}}</p>
+        <p>16. <div class="sys"><span><var>x</var> + <var>y</var> = 10</span>
+          <span><var>x</var> &minus; <var>y</var> = 4</span></div>{{a}} &nbsp; (7, 3){{/a}}</p>
+        <p>17. <div class="sys"><span>3<var>x</var> + <var>y</var> = 11</span>
+          <span>3<var>x</var> &minus; <var>y</var> = 7</span></div>{{a}} &nbsp; (3, 2){{/a}}</p>
         <p>18. <div class="sys"><span>3<var>x</var> + 2<var>y</var> = 16</span>
           <span>3<var>x</var> &minus; <var>y</var> = 7</span></div>{{a}} &nbsp; ({{f 10/3}}, 3){{/a}}</p>
       </div>
@@ -329,9 +332,9 @@ slug: Systems_of_Equations
 
   <div class="ex">
     <div class="q">21. The system <div class="sys"><span><var>y</var> = <var>mx</var> + 4</span>
-      <span><var>y</var> = &minus;2<var>x</var> + <var>b</var></span></div>
+      <span><var>y</var> = &minus;<var>x</var> + <var>b</var></span></div>
       intersects at (2, 0). Find <var>m</var> and <var>b</var>.</div>
-    <div class="work h2">{{a}}<p>At (2, 0): 0 = 2<var>m</var> + 4 &rarr; <var>m</var> = &minus;2, and 0 = &minus;4 + <var>b</var> &rarr; <var>b</var> = 4.</p><p>Note both equations then read <var>y</var> = &minus;2<var>x</var> + 4 - the lines coincide, so they meet everywhere, not just at (2, 0).</p>{{/a}}</div>
+    <div class="work h2">{{a}}<p>At (2, 0): 0 = 2<var>m</var> + 4 &rarr; <var>m</var> = &minus;2, and 0 = &minus;2 + <var>b</var> &rarr; <var>b</var> = 2.</p>{{/a}}</div>
   </div>
 
   <div class="ex">

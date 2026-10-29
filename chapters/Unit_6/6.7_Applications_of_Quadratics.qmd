@@ -20,7 +20,7 @@ They model real situations involving height, distance, area, revenue, and time. 
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.7_Applications_of_Quadratics.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -60,7 +60,7 @@ When a quadratic is used as a model, different parts of the graph answer differe
 | **Vertex**                 | The highest or lowest value of the situation     | Maximum height of a ball, highest profit, minimum cost                 |
 | **$y$-intercept**          | The starting value when $x = 0$                  | Starting height, initial amount of money, starting population          |
 | **$x$-intercepts** | When the quantity becomes zero                   | When an object hits the ground, when profit is zero, break-even points |
-| **Axis of symmetry**       | The point where the situation switches direction | When something stops increasing and starts decreasing                  |
+| **Axis of symmetry**       | The input where the situation switches direction | When something stops increasing and starts decreasing                  |
 | **Opening direction**      | Whether the situation has a maximum or minimum   | Downward opening for max height, upward opening for min cost           |
 
 
@@ -82,7 +82,7 @@ d. A rocket is fired into the air. How high does the rocket go before coming bac
 
 a. The $y$-intercept
 
-b. The $x$ coordinate for the vertex
+b. The $x$-coordinate of the vertex
 
 c. The $x$-intercepts
 
@@ -145,7 +145,7 @@ $$
 
 There are two solutions, one positive and one negative. In this situation, a negative time would mean the ball hit the ground in the past. That doesn't make sense so we ignore that solution.
 
-The postive time:
+The positive time:
 
 $$
 t = \frac{-40 - 8\sqrt{30}}{-32} = \frac{5 + \sqrt{30}}{4} \approx 2.62

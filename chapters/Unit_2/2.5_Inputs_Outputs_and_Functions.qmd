@@ -23,7 +23,7 @@ What could the machine be doing to the numbers? How could we describe that proce
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.5_Inputs_Outputs_and_Functions.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -147,14 +147,13 @@ It’s okay if **different inputs** give the **same output**. For example, two d
 |     6 |      2 |
 |     7 |      2 |
 |     8 |      2 |
-|    |        |
 
 :::
 
 :::{.answer title="Answers"}
 (a) Function (repeated input has the same output).
 (b) **Not** a function (input 4 maps to two different outputs).
-(c) Function (different inputs share one output-allowed).
+(c) Function (different inputs share one output). That is allowed.
 :::
 
 ***
@@ -249,7 +248,7 @@ $$
 A shorter rule makes evaluation quicker and reduces mistakes.
 :::
 
-Whenever possible, simplify before substituting-then you only have to do it once, no matter what input you plug in.
+Whenever possible, simplify before substituting. Then you only have to do it once, no matter what input you plug in.
 
 :::{.you-try title="Simplify $q(x) = 2(x+5) + 3x$. Then find $q(3)$."}
 $q(x) = 5x+10$, so $q(3)=25$.
@@ -259,7 +258,7 @@ $q(x) = 5x+10$, so $q(3)=25$.
 
 ### 2.5.5 - Function Evaluation in Real Life
 
-Functions don’t just show up in math class-they model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
+Functions don’t just show up in math class. They model real situations. In science, functions describe how the world works. In everyday life, they help you predict costs or convert measurements. Below are two common examples.
 
 ***
 
@@ -414,9 +413,9 @@ Want some practice building your understanding of function rules? Check out the 
 
 21. If $g(x)=x^2-4$, find $g(2)+g(-2)$.
 
-22. If $h(x)=3x-7$, solve $h(x)=5$.
+22. If $h(x)=3x-7$, try inputs until $h(x)=5$.
 
-23. Suppose $f(x)=2x+3$. If the output is 23, what was the input?
+23. Suppose $f(x)=2x+3$. If the output is 23, what was the input? Try inputs until you get 23.
 
 ***
 
@@ -488,9 +487,9 @@ Want some practice building your understanding of function rules? Check out the 
 
 21. $g(2)=0$, $g(-2)=0$, total = 0
 
-22. $3x-7=5 \Rightarrow x=4$
+22. $h(2)=-1$, $h(3)=2$, $h(4)=5$, so $x=4$
 
-23. $2x+3=23 \Rightarrow x=10$
+23. $f(5)=13$, $f(8)=19$, $f(10)=23$, so $x=10$
 
 :::
 

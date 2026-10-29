@@ -17,7 +17,7 @@ When we switch from **equations** to **inequalities**, we’re no longer looking
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.7_Graphing_Linear_Inequalities.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_4/4.7_Graphing_Linear_Inequalities.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -144,7 +144,7 @@ Here we’ll focus on **getting the inequality into slope-intercept form** so it
 
 **How to solve for $y$:**
 
-1. Move $x$-terms and constants just like in an equation.
+1. Add or subtract the same amount on both sides, just like in an equation.
 2. If you multiply or divide by a **negative**, **flip the inequality sign**.
 3. Once it’s in slope-intercept form ($y = mx + b$), graph it as before:
 

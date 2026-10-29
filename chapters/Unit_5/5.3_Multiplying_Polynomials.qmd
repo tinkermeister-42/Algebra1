@@ -25,7 +25,7 @@ In this lesson, you’ll learn a method that keeps everything in order and works
 
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.3_Multiplying_Polynomials.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_5/5.3_Multiplying_Polynomials.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -463,5 +463,8 @@ Write the product as a single polynomial in **standard form**.
 23. $x^3 + 2x^2 - 5x - 6$  
 24. $2x^3 - 3x^2 - 39x + 20$  
 25. $x^4 - 6x^2 - 7x - 6$
+
+26. $a + b + c = 0$  
+27. $pq + pr + qr = 0$
 
 :::

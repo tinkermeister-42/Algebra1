@@ -1,6 +1,6 @@
 # 6.5 - Completing the Square {.unnumbered}
 
-In the last lesson, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.
+In Lesson 6.3, we solved quadratic equations by factoring. When a quadratic factors nicely, this method works well.
 
 But not all quadratic equations factor using integers.
 
@@ -52,12 +52,10 @@ In this lesson, we will learn a method called **completing the square**. This me
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.5_Completing_the_Square.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.5_Completing_the_Square.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
-
-**Warm-Up**
 
 1. Expand:
    $$
@@ -401,7 +399,7 @@ $$
 x^2 - 10x + 16 = 0
 $$
 
-Move the constant:
+Subtract $16$ from both sides:
 
 $$
 x^2 - 10x = -16

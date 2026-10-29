@@ -26,7 +26,7 @@ Now we ask a similar question for quadratics:
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_6/6.2_Graphing_Quadratics.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -247,7 +247,7 @@ $$
 
 The vertex is **not** $(3, -2)$. It is $(-3, -2)$.
 
-Always switch the sign on the $h$ value and keep the sign for the $k$ value.
+$x + 3$ is $x - (-3)$, so $h = -3$.
 :::
 
 :::{.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}
@@ -430,7 +430,7 @@ Find the axis of symmetry and vertex to graph each quadratic.
    
    ![](/images/Blank.png){width="250px" fig-align="center"}
 
-11. $f(x) = 0.5x^2 - 3.0x - 7.0$ (Use $x = -7$ for your extra point)
+11. $f(x) = 0.5x^2 + 3x - 2.5$ (Use $x = -7$ for your extra point)
    
    ![](/images/Blank.png){width="250px" fig-align="center"}
 
@@ -470,7 +470,7 @@ Find the axis of symmetry and vertex to graph each quadratic.
    
    ![](/images/Unit_6/Lesson_2/Problem2.png){width="250px" fig-align="center"}
 
-3. Vertex is $(-2, 4)$. Increasing on $(-\infty,-2)$; decreasing on $(-2,\infty)$; positive between the two x-intercepts; negative outside them  
+3. Vertex is $(-3, 4)$. Increasing on $(-\infty,-3)$; decreasing on $(-3,\infty)$; positive between the two x-intercepts; negative outside them  
    
    ![](/images/Unit_6/Lesson_2/Problem3.png){width="250px" fig-align="center"}
 
@@ -482,7 +482,7 @@ Find the axis of symmetry and vertex to graph each quadratic.
    
    ![](/images/Unit_6/Lesson_2/Problem5.png){width="250px" fig-align="center"}
 
-6. Vertex $(0,4)$; decreasing on $(-\infty,0)$; increasing on $(0,\infty)$; positive between the x-intercepts and negative otherwise.  
+6. Vertex $(0,4)$; increasing on $(-\infty,0)$; decreasing on $(0,\infty)$; positive between the x-intercepts and negative otherwise.  
    
    ![](/images/Unit_6/Lesson_2/Problem6.png){width="250px" fig-align="center"}
 
@@ -509,6 +509,10 @@ Find the axis of symmetry and vertex to graph each quadratic.
 12. Axis of symmetry is $x = -1$. Vertex is $(-1,-2)$  
    
    ![](/images/Unit_6/Lesson_2/Problem12.png){width="250px" fig-align="center"}
+
+13. $a > 0$ and $k > 0$
+
+14. Draw a dashed line $y = x + 4$ and shade below it. Draw a solid parabola with vertex $(2, 1)$ opening downward and shade above it. The solution is the region below the line and above the parabola. The point $(4, 2)$ works. The point $(3, -4)$ does not.
 
 :::
 

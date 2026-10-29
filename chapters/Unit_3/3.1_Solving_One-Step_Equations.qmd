@@ -31,7 +31,7 @@ Later lessons will build on these rules to solve more complicated equations.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.1_Solving_One-Step_Equations.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -66,7 +66,7 @@ $$
 a + 2 = 5
 $$
 
-To find the weight *a* of the apple. We need to get it by itself on one of the pans with weights on the other side. If we do that, and the scale is still in balance, we will know the weight of the apple.
+To find the weight *a* of the apple, we need to get the apple by itself on one pan, with weights on the other pan. If we do that, and the scale is still in balance, we will know the weight of the apple.
 
 Start by taking the two weights off the left-hand side to get the apple by itself.
 
@@ -91,7 +91,7 @@ The weight of the apple is **3**.
 
 To {{< glink solve >}} the equation, we only needed one step, subtract 2 from each side. We always **undo addition by subtracting**. Subtraction is what we call the {{< glink slug="inverse-operations" text="inverse operation" >}} for addition.
 
-We don't usually draw pictures to solve equations. Here is what the solutions looks like showing just the algebra.
+We don't usually draw pictures to solve equations. Here is the solution, showing just the algebra.
 
 $$
 \begin{aligned}

@@ -19,7 +19,7 @@ In this lesson, you’ll learn to **read** expressions to understand the ideas t
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_2/2.1_Expressions_and_Their_Parts.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -198,7 +198,7 @@ Constant: -1
 
 :::{.you-try-m title="Rectangle width from length"}
 A rectangle has length **L**. The width is 2 more than 4 times the length.  
-Find an expression for the width **W** in terms of the length **L**,
+Find an expression for the width **W** in terms of the length **L**.
 :::
 
 :::{.answer title="Answer"}
@@ -279,7 +279,7 @@ For each of the following situations, write an expression that represents it. Fo
 
 13. A tank starts with 50 liters and drains 3 liters per minute for $t$ minutes.  
 
-14. A rectangle’s width is $w$; its length is 5 more than its width. (Write an expression for the perimeter of the rectangle.)  
+14. A rectangle’s width is $w$; its length is 5 more than its width. (Write an expression for the perimeter of the rectangle. Perimeter: add all four sides.)  
 
 15. A phone plan includes 2 GB free, then $5 per extra GB $g$.
 
@@ -381,9 +381,9 @@ These are possible answers, there are more.
 13) $50-3t$  
 
 14) length = $w+5$; 
-    perimeter = $4w+10$  
+    perimeter = $w + (w+5) + w + (w+5)$ or $2w + 2(w+5)$  
 
-15) $2+5g$  
+15) $5g$ ($g$ = GB past the free 2)  
 
 **Bringing It Back**  
 

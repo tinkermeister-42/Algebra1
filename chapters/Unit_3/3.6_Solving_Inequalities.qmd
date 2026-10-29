@@ -22,7 +22,7 @@ c &= 13.2
 \end{aligned}
 $$
 
-This tells us you can afford 13.2 packages of candy-but you can’t just buy part of a package.
+This tells us you can afford 13.2 packages of candy. But you can’t just buy part of a package.
 
 Problems like this one show the limitations of equations. Equations are great when there’s a single exact answer, but real situations often have **ranges** of possible answers. To describe those ranges, we use **inequalities**.
 
@@ -42,7 +42,7 @@ Unlike an equation, inequalities help us solve problems with a range of answers.
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_3/3.6_Solving_Inequalities.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -144,7 +144,7 @@ Test a value: $-5 < -2$ is true, and $-5$ is on the left.
 
 ### 3.6.2 - Solving Inequalities Using Addition and Subtraction
 
-Solving inequalities works just like solving equations, you undo operations to get the variable by itself. The only difference is that the solution represents a range.
+Solving inequalities works just like solving equations, you undo operations to get the variable by itself. One difference is that the solution represents a range.
 
 ***
 
@@ -333,7 +333,7 @@ $$
 
 Let's revisit the candy problem:
 
-You have $\$20$, break costs $\$3.50$, and candy is $\$1.25$ per package. How many packages can you afford?
+You have $\$20$, bread costs $\$3.50$, and candy is $\$1.25$ per package. How many packages can you afford?
 
 Let $c$ be the number of packages you purchase. The expression $3.5 + 1.25c$ will give you the cost of purchasing the candy with a loaf of bread.
 

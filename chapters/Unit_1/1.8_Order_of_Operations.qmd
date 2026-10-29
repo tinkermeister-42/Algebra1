@@ -11,23 +11,23 @@ If you said 24, you're not alone, but that's not the correct answer. Math has sp
 In this lesson, you'll learn how to follow those rules correctly, even when negatives, fractions, and grouping symbols are involved.
 
 :::{.objectives}
-- [ ] I follow the correct order of operations (PEMDAS).
-- [ ] I  simplify expressions with fractions and negatives.
-- [ ] I avoid common mistakes when simplifying expressions.
+- [ ] I can follow the correct order of operations (PEMDAS).
+- [ ] I can simplify expressions with fractions and negatives.
+- [ ] I can avoid common mistakes when simplifying expressions.
 :::
 
 
 
 :::{.vocab}
+{{< glink exponent >}},
 {{< glink expression >}},
 {{< glink "grouping symbols" >}},
 {{< glink "order of operations" >}},
-{{< glink parentheses >}},
-{{< glink exponent >}}
+{{< glink parentheses >}}
 :::
 
 :::{.guided-notes-link}
-[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"} - fill-in notes to print and write on.
+[Printable Guided Notes for this lesson](/guided_notes/Unit_1/1.8_Order_of_Operations.html){target="_blank"} (fill-in notes to print and write on)
 :::
 
 {{< warmup >}}
@@ -190,7 +190,7 @@ $$
 -3 \times (\textcolor{red}{4 - 7}) = -3 \times \textcolor{red}{-3}
 $$
 
-Then multiply. Remember: a **negative times a negative is positive**.
+Then multiply. Here is a new fact: a **negative times a negative is positive**. For example, $-4 \times -2 = 8$.
 
 $$
 -3 \times -3 = 9
@@ -247,15 +247,15 @@ $$
 
 ***
 
-:::{.you-try title="$-3 \times (4 - 7)$"}
+:::{.you-try title="$-2 \times (1 - 6)$"}
 
 First do the parentheses:
 $$
--3 \times (\textcolor{red}{4 - 7}) = -3 \times \textcolor{red}{-3}
+-2 \times (\textcolor{red}{1 - 6}) = -2 \times \textcolor{red}{-5}
 $$
 Then multiply:
 $$
--3 \times -3 = 9
+-2 \times -5 = 10
 $$
 :::
 
@@ -359,7 +359,6 @@ These all group parts of an expression:
 - $(...)$: parentheses
 - $[\,]$ or $\{\,\}$: brackets/braces (used for nesting)
 - Fraction bars $\frac{a}{b}$
-- Square roots $\sqrt{a + b}$
 
 Always simplify **grouped expressions** before applying exponents or multiplying.
 
