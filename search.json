@@ -1927,7 +1927,7 @@
     "href": "chapters/Unit_6/6.4_Solving_by_Taking_Square_Roots.html#warmup",
     "title": "6.4 - Solving Quadratic Equations by Taking Square Roots",
     "section": "",
-    "text": "Evaluate each expression.\n\n\\(\\sqrt{49}\\)\n\\(\\sqrt{75}\\) (simplify completely)\n\\((-8)^2\\)\n\nA student says the only number that squares to \\(25\\) is \\(5\\). What is missing?\nThink about it: what values of \\(x\\) make the equation \\(x^2 = 49\\) true? How many values are there?",
+    "text": "Evaluate each expression.\n\n\\(\\sqrt{49}\\)\n\\(\\sqrt{75}\\) (simplify completely)\n\\((-8)^2\\)\n\nA student says “the square root of \\(25\\) is \\(5\\).” Is that the complete answer? What is missing?\nThink about it: what values of \\(x\\) make the equation \\(x^2 = 49\\) true? How many values are there?",
     "crumbs": [
       "Unit 6: Quadratic Equations & Functions",
       "6.4 - Solving Quadratic Equations by Taking Square Roots"
