@@ -154,6 +154,7 @@ book:
         - file: chapters/Supplemental/math_games_and_puzzles/index.md
         - file: chapters/Supplemental/worksheets/index.qmd
         - file: chapters/Supplemental/worksheets/Unit_3/literal_equations_practice.qmd
+        - file: chapters/Supplemental/worksheets/Unit_3/literal_equations_mixed_practice.qmd
         - file: chapters/Supplemental/challenge_solutions.qmd
 
     - file: resources.qmd
