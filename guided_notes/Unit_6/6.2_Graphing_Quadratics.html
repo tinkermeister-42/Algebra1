@@ -48,157 +48,105 @@
   <h2><span class="num">6.2.1</span>Graphing With a Table of Values</h2>
 
   <div class="keys">
-    A line needs only <span class="b s"></span> points. A parabola curves and turns, so you
-    need <span class="b m"></span> points to see its shape.
+    A line needs only two points. A parabola curves and turns, so you need several points to see its shape.
+    <div style="margin-top:3px">If you know the vertex, the axis of symmetry, and the opening direction,
+      you need only two more points.</div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 1.</b> Graph <var>f</var>(<var>x</var>) =
-      <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 from a table.</div>
-    <div class="work">
-      <div class="cols2">
-        <div>
-          <table class="fill">
-            <tr><th><var>x</var></th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-            <tr><th><var>f</var>(<var>x</var>)</th><td></td><td></td><td></td><td></td><td></td></tr>
-          </table>
-          <p class="ans">The lowest point is the <span class="b m"></span>.</p>
+  <div class="cols2">
+    <div class="ex">
+      <div class="q"><b class="tag">EX 1.</b> Graph <var>f</var>(<var>x</var>) =
+        <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 from a table.</div>
+      <div class="work">
+        <table class="fill">
+          <tr><th><var>x</var></th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+          <tr><th><var>f</var>(<var>x</var>)</th><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+        <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
+      </div>
+    </div>
+    <div class="ex">
+      <div class="q"><b class="tag">EX 2.</b> Graph the same function from its features:
+        vertex (2, &minus;3), axis <var>x</var> = 2, opens upward.</div>
+      <div class="work">
+        <p>Pick <var>x</var> = 3: &nbsp;<var>f</var>(3) = <span class="b s"></span>,
+          so the point is (3, <span class="b s"></span>).</p>
+        <p>Mirror image: ( <span class="b s"></span> , <span class="b s"></span> )</p>
+        <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
+      </div>
+    </div>
+  </div>
+
+  <div class="cols2">
+    <div>
+      <h2><span class="num">6.2.2</span>Graphing Using Key Features</h2>
+      <div class="keys">
+        <b>Reading the graph</b>
+        <img class="fig" src="../../images/Unit_6/Lesson_2/QuadraticFeatures.png" alt="the parabola from EX 1 with decreasing, increasing, positive and negative parts marked" style="max-height:1.5in;margin:3px auto">
+        <p>Before the vertex, the graph goes down. It is <b>decreasing</b> on (&minus;&infin;, 2).
+          After the vertex, it goes up. It is <b>increasing</b> on (2, &infin;).</p>
+        <p>It is <b>negative</b> between the <var>x</var>-intercepts and <b>positive</b> outside them.</p>
+      </div>
+      <div class="ex yours">
+        <div class="q"><b class="tag">EX 3.</b> Graph <var>f</var>(<var>x</var>) =
+          3<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 7.<span class="yt">your turn</span></div>
+        <div class="work">
+          <p>Vertex (1, 4). Axis <var>x</var> = 1. Opens upward.</p>
+          <p>Extra point: <span class="b s"></span> &nbsp;Mirror: <span class="b s"></span></p>
+          <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
         </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
+      </div>
+    </div>
+    <div>
+      <h2><span class="num">6.2.3</span>Graphing From Vertex Form</h2>
+      <div class="keys">
+        <p style="text-align:center;font-size:13pt;margin:2px 0"><var>f</var>(<var>x</var>) =
+          <var>a</var>(<var>x</var> &minus; <var>h</var>)<sup>2</sup> + <var>k</var></p>
+        <p>Vertex: (<var>h</var>, <var>k</var>). &nbsp; Axis of symmetry: <var>x</var> = <var>h</var>.</p>
+        <p>Opens upward if <var>a</var> &gt; 0. Opens downward if <var>a</var> &lt; 0.</p>
+      </div>
+      <div class="ex">
+        <div class="q"><b class="tag">EX 4.</b> Graph <var>f</var>(<var>x</var>) =
+          2(<var>x</var> &minus; 3)<sup>2</sup> &minus; 4.</div>
+        <div class="work">
+          <p>Vertex <span class="b s"></span> Axis <span class="b s"></span>
+            Opens <span class="b s"></span></p>
+          <p>Pick <var>x</var> = 4: ( 4 , <span class="b s"></span> ) &nbsp;Mirror:
+            ( <span class="b s"></span> , <span class="b s"></span> )</p>
+          <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
+        </div>
       </div>
     </div>
   </div>
 
   <div class="box warn">
-    <div class="lbl">Drawbacks of the table method</div>
-    <ul>
-      <li>You need <span class="b m"></span> points to see the shape.</li>
-      <li>The wrong <var>x</var>-values might make you <span class="b m"></span>.</li>
-      <li>Squaring and signs invite <span class="b m"></span>.</li>
-      <li>It takes much longer than graphing a <span class="b m"></span>.</li>
-    </ul>
+    <div class="lbl">Careful with those signs</div>
+    In the formula, <var>h</var> is subtracted and <var>k</var> is added.
+    In <var>f</var>(<var>x</var>) = 2(<var>x</var> + 3)<sup>2</sup> &minus; 2, the vertex is
+    <b>not</b> (3, &minus;2). It is (&minus;3, &minus;2).
   </div>
 
-  <h2><span class="num">6.2.2</span>Graphing Using Key Features</h2>
-
-  <div class="keys">
-    Know these three and you only need <span class="b s"></span> extra points:
-    <div class="cols3" style="margin-top:3px">
-      <p>the <span class="b m"></span></p>
-      <p>the <span class="b m"></span></p>
-      <p>the <span class="b m"></span></p>
-    </div>
-    <div class="figrow fig-w">
-      <figure><img src="../../images/Unit_6/Lesson_2/QuadraticFeatures.png" alt="the features of a parabola"><figcaption>the features of a parabola</figcaption></figure>
-    </div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 2.</b> Graph the same function from its features:
-      vertex (2, &minus;3), axis <var>x</var> = 2, opens upward.</div>
-    <div class="work">
-      <div class="cols2">
-        <div>
-          <p>Pick <var>x</var> = 3: <var>f</var>(3) = <span class="b s"></span>, giving
-            ( <span class="b s"></span> , <span class="b s"></span> ).</p>
-          <p>Its mirror image across the axis is ( <span class="b s"></span> ,
-            <span class="b s"></span> ).</p>
-          <p class="ans">Why does one point give you two? <span class="b m"></span></p>
-        </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
+  <div class="cols2">
+    <div class="ex">
+      <div class="q"><b class="tag">EX 5.</b> Graph <var>f</var>(<var>x</var>) =
+        &minus;<span class="f"><b>1</b><b>3</b></span>(<var>x</var> + 2)<sup>2</sup> &minus; 1.</div>
+      <div class="work">
+        <p>Vertex <span class="b s"></span> Axis <span class="b s"></span>
+          Opens <span class="b s"></span></p>
+        <p>Pick <var>x</var> = 1: ( 1 , <span class="b s"></span> ) &nbsp;Mirror:
+          ( <span class="b s"></span> , <span class="b s"></span> )</p>
+        <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
       </div>
     </div>
-  </div>
-
-  <div class="box tint">
-    <div class="lbl">Reading the graph</div>
-    <div class="cols2">
-      <p>Before the vertex the graph goes down, so the function is
-        <span class="b m"></span> there.</p>
-      <p>After the vertex it goes up, so the function is <span class="b m"></span> there.</p>
-    </div>
-    <div>If the graph crosses the <var>x</var>-axis twice, the function is
-      <span class="b m"></span> between the intercepts and <span class="b m"></span>
-      outside them.</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 3.</b> Graph <var>f</var>(<var>x</var>) =
-      3<var>x</var><sup>2</sup> &minus; 6<var>x</var> + 7, whose vertex is (1, 4).</div>
-    <div class="work">
-      <div class="cols2">
-        <div>
-          <p>Axis: <span class="b m"></span> &nbsp; Opens: <span class="b m"></span></p>
-          <p>Extra point and its reflection:</p>
-          <div class="ruled"></div>
-        </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
-      </div>
-    </div>
-  </div>
-
-  <h2><span class="num">6.2.3</span>Graphing From Vertex Form</h2>
-
-  <div class="keys">
-    <p style="text-align:center;font-size:13pt;margin:4px 0"><var>f</var>(<var>x</var>) =
-      <var>a</var>(<var>x</var> &minus; <var>h</var>)<sup>2</sup> + <var>k</var></p>
-    <div class="cols3">
-      <p>Vertex: <span class="b m"></span></p>
-      <p>Axis: <span class="b m"></span></p>
-      <p>Opens up if <span class="b m"></span></p>
-    </div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 4.</b> Graph <var>f</var>(<var>x</var>) =
-      2(<var>x</var> &minus; 3)<sup>2</sup> &minus; 4.</div>
-    <div class="work">
-      <div class="cols2">
-        <div>
-          <p>Vertex <span class="b m"></span> &nbsp; Axis <span class="b m"></span></p>
-          <p>Opens <span class="b m"></span></p>
-          <p>Using <var>x</var> = 4: point ( <span class="b s"></span> ,
-            <span class="b s"></span> ), reflection ( <span class="b s"></span> ,
-            <span class="b s"></span> )</p>
-        </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 5.</b> Graph <var>f</var>(<var>x</var>) =
-      &minus;<span class="f"><b>1</b><b>3</b></span>(<var>x</var> + 2)<sup>2</sup> &minus; 1.</div>
-    <div class="work">
-      <div class="cols2">
-        <div>
-          <p>Vertex <span class="b m"></span> &nbsp; Axis <span class="b m"></span></p>
-          <p>Opens <span class="b m"></span></p>
-          <p>Using <var>x</var> = 1: point ( <span class="b s"></span> ,
-            <span class="b s"></span> ), reflection ( <span class="b s"></span> ,
-            <span class="b s"></span> )</p>
-        </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="box warn">
-    <div class="lbl">Gotcha: careful with those signs</div>
-    In <var>f</var>(<var>x</var>) = 2(<var>x</var> + 3)<sup>2</sup> &minus; 2 the vertex is
-    <b>not</b> (3, &minus;2). It is <span class="b m"></span>.
-    <div style="margin-top:3px">Always <span class="b m"></span> the sign on <var>h</var>
-      and <span class="b m"></span> the sign on <var>k</var>.</div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 6.</b> Graph <var>g</var>(<var>x</var>) =
-      (<var>x</var> + 1)<sup>2</sup> + 3.</div>
-    <div class="work">
-      <div class="cols2">
-        <div><p>Vertex <span class="b m"></span> &nbsp; Axis <span class="b m"></span></p>
-          <p>Opens <span class="b m"></span></p></div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
+    <div class="ex yours">
+      <div class="q"><b class="tag">EX 6.</b> Graph <var>g</var>(<var>x</var>) =
+        (<var>x</var> + 1)<sup>2</sup> + 3.<span class="yt">your turn</span></div>
+      <div class="work">
+        <p>Vertex <span class="b s"></span> Axis <span class="b s"></span>
+          Opens <span class="b s"></span></p>
+        <p>Pick <var>x</var> = &minus;3: ( &minus;3 , <span class="b s"></span> ) &nbsp;Mirror:
+          ( <span class="b s"></span> , <span class="b s"></span> )</p>
+        <img class="grid" src="../assets/grid.svg" alt="coordinate grid">
       </div>
     </div>
   </div>
@@ -206,48 +154,59 @@
   <h2><span class="num">6.2.4</span>Axis of Symmetry from Standard Form</h2>
 
   <div class="keys">
-    Standard form is <var>f</var>(<var>x</var>) = <var>ax</var><sup>2</sup> +
-    <var>bx</var> + <var>c</var>. The axis of symmetry is
-    <p style="text-align:center;font-size:13pt;margin:4px 0"><var>x</var> = <span class="b m"></span></p>
-    This value is also the <span class="b m"></span> of the vertex.
+    Standard form is <var>f</var>(<var>x</var>) = <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var>.
+    The axis of symmetry is <var>x</var> = &minus;<span class="f"><b><var>b</var></b><b>2<var>a</var></b></span>.
+    This value is the <var>x</var>-coordinate of the vertex.
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 7.</b> Find the axis of symmetry of
-      <var>f</var>(<var>x</var>) = &minus;3<var>x</var><sup>2</sup> + 12<var>x</var> + 5.</div>
-    <div class="work h13">
-      <p><var>a</var> = <span class="b s"></span> &nbsp; <var>b</var> = <span class="b s"></span>
-        &nbsp;&rarr;&nbsp; <var>x</var> = <span class="b m"></span></p>
+  <div class="cols2">
+    <div class="ex">
+      <div class="q"><b class="tag">EX 7.</b> Find the axis of symmetry of
+        <var>f</var>(<var>x</var>) = &minus;3<var>x</var><sup>2</sup> + 12<var>x</var> + 5.</div>
+      <div class="work h08">
+        <p><var>a</var> = <span class="b s"></span> &nbsp; <var>b</var> = <span class="b s"></span></p>
+      </div>
     </div>
-  </div>
-
-  <div class="ex">
-    <div class="q"><b class="tag">EX 8.</b> Find the axis of symmetry of
-      <var>f</var>(<var>x</var>) = 2<var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1.</div>
-    <div class="work h1"></div>
+    <div class="ex yours">
+      <div class="q"><b class="tag">EX 8.</b> Find the axis of symmetry of
+        <var>f</var>(<var>x</var>) = 2<var>x</var><sup>2</sup> + 4<var>x</var> &minus; 1.<span class="yt">your turn</span></div>
+      <div class="work h08"></div>
+    </div>
   </div>
 
   <h2><span class="num">6.2.5</span>Finding the Vertex from Standard Form</h2>
 
   <div class="keys">
-    Once you know the axis <var>x</var> = <var>h</var>, the vertex is always
-    ( <span class="b s"></span> , <span class="b m"></span> ).
+    Once you know the axis <var>x</var> = <var>h</var>, the vertex is (<var>h</var>, <var>f</var>(<var>h</var>)).
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 9.</b> Find the vertex of <var>f</var>(<var>x</var>) =
-      <var>x</var><sup>2</sup> &minus; 6<var>x</var> + 10.</div>
-    <div class="work h16">
-      <p>Axis: <var>x</var> = <span class="b s"></span></p>
-      <p>Then <var>f</var>(<span class="b s"></span>) = <span class="b m"></span></p>
-      <p class="ans">Vertex: <span class="b m"></span></p>
+  <div class="cols2">
+    <div class="ex">
+      <div class="q"><b class="tag">EX 9.</b> Find the vertex of <var>f</var>(<var>x</var>) =
+        <var>x</var><sup>2</sup> &minus; 6<var>x</var> + 10.</div>
+      <div class="work h08">
+        <p>Axis: <var>x</var> = <span class="b s"></span></p>
+        <p><var>f</var>(3) = <span class="b m"></span> &nbsp; Vertex: <span class="b s"></span></p>
+      </div>
+    </div>
+    <div class="ex yours">
+      <div class="q"><b class="tag">EX 10.</b> Find the vertex of <var>f</var>(<var>x</var>) =
+        2<var>x</var><sup>2</sup> + 8<var>x</var> &minus; 5.<span class="yt">your turn</span></div>
+      <div class="work h08"></div>
     </div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 10.</b> Find the vertex of <var>f</var>(<var>x</var>) =
-      2<var>x</var><sup>2</sup> + 8<var>x</var> &minus; 5.</div>
-    <div class="work h16"></div>
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>decreasing</span><span>increasing</span><span>negative</span><span>positive</span><span>1</span><span>3</span><span>&minus;3</span><span>&minus;<span class="f"><b><var>b</var></b><b>2<var>a</var></b></span></span></div>
+    <p>1. <var>f</var>(<var>x</var>) = <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 has axis of symmetry <var>x</var> = 2.
+      The point (3, &minus;2) has a mirror image at ( <span class="b s"></span> , &minus;2).</p>
+    <p>2. This function is <span class="b m"></span> before its vertex and
+      <span class="b m"></span> after it.</p>
+    <p>3. Between its two <var>x</var>-intercepts, this function is <span class="b m"></span>.</p>
+    <p>4. In <var>f</var>(<var>x</var>) = 2(<var>x</var> + 3)<sup>2</sup> &minus; 2, the vertex is ( <span class="b s"></span> , &minus;2).</p>
+    <p>5. In standard form <var>f</var>(<var>x</var>) = <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var>,
+      the axis of symmetry is <var>x</var> = <span class="b s"></span>.</p>
   </div>
 
 <div class="pagebreak"></div>
@@ -275,7 +234,7 @@
 
   <h3>Graph and Describe the Behavior</h3>
 
-  <div class="box tint">For 2 - 6, graph the quadratic, then say where it is
+  <div class="box tint">For 2 to 6, graph the quadratic, then say where it is
     <b>increasing</b>, <b>decreasing</b>, <b>positive</b>, and <b>negative</b>.</div>
 
   <div class="ex">
@@ -342,8 +301,8 @@
           <img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
       </div>
       <div class="cols2">
-        <div><p>11. &nbsp;<var>f</var>(<var>x</var>) = 0.5<var>x</var><sup>2</sup> &minus;
-          3.0<var>x</var> &minus; 7.0 &nbsp;<i>(extra point at <var>x</var> = &minus;7)</i></p>
+        <div><p>11. &nbsp;<var>f</var>(<var>x</var>) = 0.5<var>x</var><sup>2</sup> +
+          3<var>x</var> &minus; 2.5 &nbsp;<i>(extra point at <var>x</var> = &minus;7)</i></p>
           <p>Axis <span class="b s"></span> Vertex <span class="b m"></span></p>
           <img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
         <div><p>12. &nbsp;<var>f</var>(<var>x</var>) = <span class="f"><b>1</b><b>4</b></span><var>x</var><sup>2</sup> +

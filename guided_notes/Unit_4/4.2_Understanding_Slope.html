@@ -43,85 +43,75 @@
 
   <h2><span class="num">4.2.1</span>What Is Slope?</h2>
 
-  <div class="box tint">
-    <div class="lbl">Which one doesn't belong?</div>
-    <div>Look at the four stairways. Pick one that does not belong with the others, and say why.
-      More than one answer works.</div>
-    <div class="work">
-      <div class="figrow fig-sq">
-        <img src="../../images/Unit_4/Lesson_2/stairs_xkcd.png"
-          alt="four panels, A to D, each showing a figure on a stairway of a different slope">
-      </div>
-      <p>I picked <span class="b s"></span> because
-        <span class="b l"></span></p>
-      <p>Now compare all four:</p>
-      <table class="steps">
-        <tr><th style="width:.8in">Panel</th><th>Direction (up or down)</th>
-          <th>&Delta;<var>y</var> compared to &Delta;<var>x</var></th></tr>
-        <tr><td>A</td><td></td><td></td></tr>
-        <tr><td>B</td><td></td><td></td></tr>
-        <tr><td>C</td><td></td><td></td></tr>
-        <tr><td>D</td><td></td><td></td></tr>
-      </table>
-      <p class="ans">If <var>y</var> goes up as <var>x</var> goes up, the slope is
-        <span class="b m"></span>. If <var>y</var> goes down, the slope is
-        <span class="b m"></span>. A bigger change in <var>y</var> makes the line
-        <span class="b m"></span>.</p>
-    </div>
-  </div>
-
   <div class="keys">
-    Picture climbing a stairway. Each step moves you <span class="b m"></span> and also
-    <span class="b m"></span>. Comparing those two amounts tells you how
-    <span class="b m"></span> the stairs are. That is <b>slope</b>.
+    Each step on a stairway moves you forward and also up or down.
+    How much you go up compared to how much you go forward tells how steep the stairs are.
+    That is <b>slope</b>. We use the letter <var>m</var> for slope.
     <p style="text-align:center;font-size:13pt;margin:6px 0">
       <var>m</var> = <span class="f"><b>rise</b><b>run</b></span> = <span class="f"><b>&Delta;<var>y</var></b><b>&Delta;<var>x</var></b></span></p>
-    <div>&Delta; (delta) means <span class="b m"></span>. So &Delta;<var>y</var> is
-      <span class="b m"></span> and &Delta;<var>x</var> is <span class="b m"></span>.</div>
+    <ul>
+      <li>&Delta; (delta) means <b>change</b>. &Delta;<var>y</var> is the change in <var>y</var>. &Delta;<var>x</var> is the change in <var>x</var>.</li>
+      <li>If <var>y</var> increases as <var>x</var> increases, the slope is <b>positive</b>. If <var>y</var> decreases, the slope is <b>negative</b>.</li>
+      <li>If <var>y</var> changes more for each step in <var>x</var>, the line is steeper.</li>
+    </ul>
+  </div>
+
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 1.</b> What do you notice about how the change in <var>y</var>
+      compares to the change in <var>x</var> in each panel?<span class="yt">your turn</span></div>
+    <div class="work">
+      <div class="cols2" style="grid-template-columns:2.4in 1fr;align-items:center">
+        <img class="fig" src="../../images/Unit_4/Lesson_2/stairs_xkcd.png"
+          alt="four panels, A to D, each showing a figure on a stairway of a different slope" style="width:2.4in">
+        <table class="steps">
+          <tr><th style="width:.6in">Panel</th><th>Direction</th>
+            <th>Change in <var>y</var> compared to change in <var>x</var></th></tr>
+          <tr><td>A</td><td></td><td></td></tr>
+          <tr><td>B</td><td></td><td></td></tr>
+          <tr><td>C</td><td></td><td></td></tr>
+          <tr><td>D</td><td></td><td></td></tr>
+        </table>
+      </div>
+    </div>
   </div>
 
   <h2><span class="num">4.2.2</span>Finding Slope from a Graph</h2>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 1.</b> Fill in the slope for each stairway panel
-      (each has &Delta;<var>x</var> = 3).</div>
+    <div class="q">In each panel, count how far the person moves up or down (&Delta;<var>y</var>)
+      and right (&Delta;<var>x</var>). Then find the slope.</div>
     <div class="work">
-      <div class="figrow fig-sq">
-        <img src="../../images/Unit_4/Lesson_2/stairs_xkcd_grid.png"
-          alt="the same four stairways drawn on a coordinate grid">
+      <div class="cols2" style="grid-template-columns:2.4in 1fr;align-items:center">
+        <img class="fig" src="../../images/Unit_4/Lesson_2/stairs_xkcd_grid.png"
+          alt="the four stairways drawn on coordinate grids" style="width:2.4in">
+        <table class="steps">
+          <tr><th>Panel</th><th>&Delta;<var>y</var></th><th>&Delta;<var>x</var></th>
+            <th><var>m</var> = <span class="f"><b>&Delta;<var>y</var></b><b>&Delta;<var>x</var></b></span></th></tr>
+          <tr><td>A</td><td></td><td></td><td></td></tr>
+          <tr><td>B</td><td></td><td></td><td></td></tr>
+          <tr><td>C</td><td></td><td></td><td></td></tr>
+          <tr><td>D</td><td></td><td></td><td></td></tr>
+        </table>
       </div>
-      <table class="fill">
-        <tr><th>Panel</th><th>&Delta;<var>y</var></th><th>&Delta;<var>x</var></th><th><var>m</var></th></tr>
-        <tr><td>A</td><td></td><td>3</td><td></td></tr>
-        <tr><td>B</td><td></td><td>3</td><td></td></tr>
-        <tr><td>C</td><td></td><td>3</td><td></td></tr>
-        <tr><td>D</td><td></td><td>3</td><td></td></tr>
-      </table>
-      <p class="ans">Which two are steepest? <span class="b m"></span>
-        &nbsp;&nbsp; Which two go down? <span class="b m"></span></p>
     </div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 2.</b> Draw a line through (0, 2) and (5, 6).
-      Count boxes to find its slope.</div>
+    <div class="q"><b class="tag">EX 2.</b> Find the slope of the line. Use the points (0, 2) and (5, 6).</div>
     <div class="work">
       <div class="cols2">
         <div>
-          <p>&Delta;<var>x</var> = <span class="b s"></span> &nbsp;(count
-            <span class="b m"></span>)</p>
-          <p>&Delta;<var>y</var> = <span class="b s"></span> &nbsp;(count
-            <span class="b m"></span>)</p>
-          <p class="ans"><var>m</var> = <span class="b"></span></p>
+          <p>&Delta;<var>x</var> = <span class="b s"></span> &nbsp;(boxes right)</p>
+          <p>&Delta;<var>y</var> = <span class="b s"></span> &nbsp;(boxes up)</p>
+          <p class="ans"><var>m</var> = <span class="f"><b>&Delta;<var>y</var></b><b>&Delta;<var>x</var></b></span> = <span class="b"></span></p>
         </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
+        <div><img class="fig" src="../../images/Unit_4/Lesson_2/Example2A.png" alt="a line on a coordinate grid" style="width:2.9in;margin:4px auto"></div>
       </div>
     </div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 3.</b> Draw the line through (&minus;6, 3) and
-      (3, &minus;3) and count to find the slope.</div>
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 3.</b> Counting boxes: compute the slope of the line.<span class="yt">your turn</span></div>
     <div class="work">
       <div class="cols2">
         <div>
@@ -129,7 +119,7 @@
             &nbsp;&nbsp; &Delta;<var>y</var> = <span class="b s"></span></p>
           <p class="ans"><var>m</var> = <span class="b"></span></p>
         </div>
-        <div><img class="grid" src="../assets/grid.svg" alt="coordinate grid"></div>
+        <div><img class="fig" src="../../images/Unit_4/Lesson_2/YouTry4_2_2A.png" alt="a line on a coordinate grid through two marked points" style="width:2.9in;margin:4px auto"></div>
       </div>
     </div>
   </div>
@@ -137,16 +127,15 @@
   <h2><span class="num">4.2.3</span>The Slope Formula</h2>
 
   <div class="keys">
-    When counting boxes is impractical, use the formula. For
-    (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) and
-    (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>):
-    <p style="text-align:center;font-size:13pt;margin:6px 0"><var>m</var> =
-      <span class="f"><b>&Delta;<var>y</var></b><b>&Delta;<var>x</var></b></span> = <span class="b m"></span></p>
+    For the points (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) and
+    (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>), the slope is
+    <span style="font-size:13pt;margin-left:6px"><var>m</var> =
+      <span class="f"><b>&Delta;<var>y</var></b><b>&Delta;<var>x</var></b></span> = <span class="f"><b><var>y</var><sub>2</sub> &minus; <var>y</var><sub>1</sub></b><b><var>x</var><sub>2</sub> &minus; <var>x</var><sub>1</sub></b></span></span>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 4.</b> Find the slope through (&minus;2, 8) and (10, 6).</div>
-    <div class="work h16">
+    <div class="q"><b class="tag">EX 4.</b> Compute the slope of the line between (&minus;2, 8) and (10, 6).</div>
+    <div class="work h13">
       <p><var>x</var><sub>1</sub> = <span class="b s"></span>,
         <var>y</var><sub>1</sub> = <span class="b s"></span>,
         <var>x</var><sub>2</sub> = <span class="b s"></span>,
@@ -155,43 +144,54 @@
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 5.</b> Find the slope through (3, &minus;2) and
-      (5, &minus;5).</div>
-    <div class="work h13"></div>
+    <div class="q"><b class="tag">EX 5.</b> Compute the slope of the line between (3, &minus;2) and (5, &minus;5).</div>
+    <div class="work h1"></div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 6.</b> Find the slope through (4, 3) and (2, 3).</div>
-    <div class="work h13">
-      <p class="ans"><var>m</var> = <span class="b s"></span> &nbsp;&nbsp;
-        That means the line is <span class="b m"></span>, because the <var>y</var>-values
-        <span class="b m"></span>.</p>
-    </div>
+    <div class="q"><b class="tag">EX 6.</b> Compute the slope of the line containing (4, 3) and (2, 3).</div>
+    <div class="work h1"></div>
+  </div>
+
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 7.</b> In EX 6, the slope is 0. What does that mean?<span class="yt">your turn</span></div>
+    <div class="work h05"></div>
   </div>
 
   <div class="ex">
-    <div class="q"><b class="tag">EX 7.</b> Find the slope through (5, &minus;3) and (5, 6).</div>
-    <div class="work h16">
-      <p class="ans"><var>m</var> = <span class="b s"></span> &nbsp;&nbsp;
-        The slope is <span class="b m"></span> because you cannot
-        <span class="b m"></span>. The line is <span class="b m"></span>.</p>
-    </div>
+    <div class="q"><b class="tag">EX 8.</b> Find the slope of the line containing (5, &minus;3) and (5, 6).</div>
+    <div class="work h1"></div>
+  </div>
+
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 9.</b> What does it mean to have an undefined slope?<span class="yt">your turn</span></div>
+    <div class="work h05"></div>
   </div>
 
   <div class="box warn">
     <div class="lbl">Straight up or straight down?</div>
-    Someone at the bottom of a cliff says it goes straight <span class="b s"></span>.
-    Someone at the top says straight <span class="b s"></span>. It cannot be both, so we
-    call a vertical slope <span class="b m"></span>.
-    <div class="figrow fig-w">
-      <figure><img src="../../images/Unit_4/Lesson_2/vertical_lines.png" alt="straight up or straight down?"><figcaption>straight up or straight down?</figcaption></figure>
+    <div class="figrow fig-m" style="align-items:center">
+      <figure><img src="../../images/Unit_4/Lesson_2/vertical_lines.png" alt="a person on top of a cliff and a person on the ground" style="max-height:2.4in"></figure>
+      <div>The person on the ground says the cliff is straight up.
+        The person on top says it is straight down.
+        It is both, so we say the slope of a vertical line is <b>undefined</b>.</div>
     </div>
   </div>
 
-  <div class="ex">
-    <div class="q"><b class="tag">EX 8.</b> Find the slope between (0, 95) and
-      (&minus;50, 2).</div>
-    <div class="work h16"></div>
+  <div class="ex yours">
+    <div class="q"><b class="tag">EX 10.</b> Calculate the slope between (0, 95) and
+      (&minus;50, 2).<span class="yt">your turn</span></div>
+    <div class="work h13"></div>
+  </div>
+
+  <div class="box tint summary">
+    <div class="lbl">Summary</div>
+    <div class="wordbank"><span>change</span><span>horizontal</span><span>m</span><span>negative</span><span>positive</span><span>vertical</span><span>0</span><span>1</span></div>
+    <p>1. We use the letter <span class="b s"></span> for slope.</p>
+    <p>2. &Delta; means <span class="b m"></span>.</p>
+    <p>3. If <var>y</var> increases as <var>x</var> increases, the slope is <span class="b m"></span>.</p>
+    <p>4. A <span class="b m"></span> line has a slope of 0.</p>
+    <p>5. A <span class="b m"></span> line has an undefined slope.</p>
   </div>
 
 <div class="pagebreak"></div>
@@ -267,8 +267,8 @@
 
   <div class="ex">
     <div class="q">24. Two lines have slopes <var>m</var><sub>1</sub> = 3 and
-      <var>m</var><sub>2</sub> = &minus;<span class="f"><b>1</b><b>3</b></span>. What is true about how these lines
-      relate to each other?</div>
+      <var>m</var><sub>2</sub> = &minus;<span class="f"><b>1</b><b>3</b></span>. Which line is steeper?
+      Which line goes up?</div>
     <div class="work h16"></div>
   </div>
 
