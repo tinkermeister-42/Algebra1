@@ -38,7 +38,7 @@ In this lesson, we will formalize this idea into a reliable solving method calle
    b. $\sqrt{75}$ (simplify completely)
    c. $(-8)^2$
 
-2. A student says the only number that squares to $25$ is $5$.
+2. A student says "the square root of $25$ is $5$." Is that the complete answer?
    What is missing?
 
 3. Think about it: what values of $x$ make the equation $x^2 = 49$ true?
