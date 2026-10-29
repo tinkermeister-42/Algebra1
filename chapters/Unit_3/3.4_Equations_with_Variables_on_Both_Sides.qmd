@@ -258,9 +258,9 @@ When solving an equation with variables on both sides:
 
 1. Simplify each side using the distributive property and combining like terms
 
-2. Subtract a variable term from both sides so all the variables are on one side
+2. Get the variables on one side
 
-3. Undo the number on that side
+3. Get the constants on the other side
 
 4. Solve for the variable
 

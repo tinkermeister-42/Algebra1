@@ -247,7 +247,8 @@ $$
 
 The vertex is **not** $(3, -2)$. It is $(-3, -2)$.
 
-$x + 3$ is $x - (-3)$, so $h = -3$.
+Switch the sign on the $h$ value and keep the sign for the $k$ value.
+For example, $x + 3$ is $x - (-3)$, so $h = -3$.
 :::
 
 :::{.you-try title="Graph $g(x) = (x + 1)^2 + 3$."}

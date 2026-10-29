@@ -359,6 +359,7 @@ These all group parts of an expression:
 - $(...)$: parentheses
 - $[\,]$ or $\{\,\}$: brackets/braces (used for nesting)
 - Fraction bars $\frac{a}{b}$
+- Square roots $\sqrt{a + b}$
 
 Always simplify **grouped expressions** before applying exponents or multiplying.
 
