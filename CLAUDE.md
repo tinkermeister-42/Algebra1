@@ -160,7 +160,11 @@ Syntax: `:::{.callout-type title="Title"} … :::`
   wraps a loose `**4.**` question and everything under it in one `.q` block,
   pulls a figure that fell out of its list item back inside, and tags a bold
   line that only introduces the questions below it `.lead`; the stylesheet
-  keeps each whole. A question split into `a, b, c` is the exception: it may
+  keeps each whole. A lead is a bold-only line with questions right under it;
+  a bold label with room under it ("**Terms:**") is part of its question. A
+  lead typed on the line under a list item, with no blank line, would read as
+  more of that item, so the builder gives it the blank line. A lead also ends
+  the trailing blocks pulled back into the question above it. A question split into `a, b, c` is the exception: it may
   break between parts, since each part is its own item with its own room, and
   only the stem and the first part have to stay together
 - **Unlisted on purpose.** They are copied into the site by `_quarto.yml`

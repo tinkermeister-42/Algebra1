@@ -74,12 +74,40 @@ def pandoc(text):
     return p.stdout
 
 
+# A list item, "12." or "a)" or "-", and a line that is bold from end to end
+# but is not a bold question number
+LIST_ITEM_RE = re.compile(r"\s{0,3}(?:\d+|[A-Za-z])[.)]\s|\s{0,3}[-*+]\s")
+LEAD_LINE_RE = re.compile(r"\*\*(?!\d+\.)[^*].*\*\*\s*$")
+
+
+def unglue_leads(text):
+    """Give a bold lead line written right under a list its own paragraph.
+
+    "6. ... ___" then "**Complete the table ...**" on the next line, with no
+    blank line between, reads in markdown as more text of question 6, so the
+    instruction for 7 and 8 printed at the end of 6's line.  A whole bold line
+    under a list is always the next set's lead, never more of the last item,
+    so it gets the blank line the source left out."""
+    out, block = [], None
+    for line in text.split("\n"):
+        if not line.strip():
+            block = None
+        elif block is None:
+            block = line
+        elif LEAD_LINE_RE.match(line) and LIST_ITEM_RE.match(block):
+            out.append("")
+            block = line
+        out.append(line)
+    return "\n".join(out)
+
+
 def prepare(text):
     """Turn the three different ways the sources ask for work space into one.
 
     They use runs of <br>, LaTeX \\vspace, and raw ```{=latex} blocks; the
     first survives conversion, the other two would either print literally or
     vanish.  All three become a .space div of a measured height."""
+    text = unglue_leads(text)
     # ```{=latex} ... ``` blocks: keep the \vspace inside, drop the rest
     def latex_block(m):
         cm = sum(float(v) for v in re.findall(r"\\vspace\{([\d.]+)cm\}", m.group(1)))
@@ -170,6 +198,11 @@ def ensure_room(body):
         # would leave the last part with no room at all.  A top-level question
         # keeps the old reading: room after its </li> is still its own.
         j = own_li_end(chunk) if chunk.startswith("<li>") and depth[start] > 1 else -1
+        # a loose question ends where the next set's heading or lead begins,
+        # and its room goes above that, not between the lead and its questions
+        if j == -1 and not chunk.startswith("<li>"):
+            nxt = SET_START_RE.search(chunk, 1)
+            j = nxt.start() if nxt else -1
         mine = chunk[:j] if j != -1 else chunk
         have = sum(float(v) for v in SPACE_RE.findall(mine))
         # a stem that only introduces its own a/b/c parts gets nothing: the
@@ -243,6 +276,20 @@ def own_li_end(chunk):
 LOOSE_CM = 16.0
 
 
+# A paragraph that is one bold run from end to end, math allowed inside, and
+# does not open with a question number: "**Find the $x$- and $y$-intercepts.**"
+LEAD_P_RE = re.compile(r"<p><strong>(?!\s*\d+\.(?!\d))"
+                       r"((?:(?!</?strong>|</?p>).)*)</strong></p>")
+
+
+# A lead only when questions follow it.  "**Terms:**" over a 1cm line is a
+# label inside question 1, and the next thing under it is room, not a question.
+NEXT_Q = r'\s*(?=<[ou]l\b|<p><strong>\d+\.(?!\d)|<div class="q)'
+SET_LEAD = LEAD_P_RE.pattern + NEXT_Q
+# Where a new set of questions begins: a heading, a rule, a page break, a lead
+SET_START_RE = re.compile(r'<h[1-4]\b|<hr\b|<div class="pagebreak"|' + SET_LEAD)
+
+
 def absorb_trailing(body):
     """Pull a question's trailing blocks back inside its list item.
 
@@ -258,7 +305,9 @@ def absorb_trailing(body):
         if depth[m.start()] != 1:                 # a nested list, not a question
             continue
         rest = body[m.end():]
-        stop = re.search(r"<h[1-4]\b|<hr\b|<[ou]l\b|<div class=\"pagebreak\"", rest)
+        # a lead sets up the questions after it, so it ends this one's tail
+        stop = re.search(r"<h[1-4]\b|<hr\b|<[ou]l\b|<div class=\"pagebreak\"|"
+                         + SET_LEAD, rest)
         tail = rest[:stop.start() if stop else len(rest)]
         # only content, and only a question's own: a numbered head starts a new one
         if not tail.strip() or re.search(r"<strong>\d+\.(?!\d)", tail):
@@ -280,11 +329,7 @@ def mark_leads(body):
     "**Solve each system. Show your work.**" is not a question, so nothing
     held it to the ones it sets up and it could be left alone at the foot of a
     page.  The stylesheet keeps a .lead with what follows."""
-    def one(m):
-        if re.match(r"\s*\d+\.(?!\d)", m.group(1)):    # a question, not a lead
-            return m.group(0)
-        return '<p class="lead"><strong>%s</strong></p>' % m.group(1)
-    return re.sub(r"<p><strong>([^<]*)</strong></p>", one, body)
+    return LEAD_P_RE.sub(r'<p class="lead"><strong>\1</strong></p>', body)
 
 
 def group_questions(body):
@@ -302,7 +347,9 @@ def group_questions(body):
         return body
     bounds = sorted({m.start() for m in heads}
                     | {m.start() for m in re.finditer(r'<h[1-4]\b|<hr\b', body)}
-                    | {m.start() for m in re.finditer(r'<div class="pagebreak"', body)})
+                    | {m.start() for m in re.finditer(r'<div class="pagebreak"', body)}
+                    | {m.start() for m in re.finditer(
+                        r'<p class="lead">(?:(?!</p>).)*</p>' + NEXT_Q, body)})
     out, at = [], 0
     for m in heads:
         end = next((b for b in bounds if b > m.start()), len(body))
