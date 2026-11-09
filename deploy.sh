@@ -45,6 +45,13 @@ if [[ "$ABS_TEMP_DIR" == "$ABS_REPO_ROOT" || "$ABS_TEMP_DIR" == "$ABS_BOOK_DIR" 
 fi
 
 echo "Preparing worktree for $DEPLOY_BRANCH..."
+# A single-branch clone (any `git clone --depth 1`) maps only main in
+# remote.origin.fetch, so a plain fetch of $DEPLOY_BRANCH lands in FETCH_HEAD
+# and origin/$DEPLOY_BRANCH never moves. Name the tracking ref explicitly.
+fetch_deploy_branch() {
+  git fetch --depth 1 origin "+refs/heads/$DEPLOY_BRANCH:refs/remotes/origin/$DEPLOY_BRANCH"
+}
+fetch_deploy_branch 2>/dev/null || true
 if git show-ref --verify --quiet "refs/heads/$DEPLOY_BRANCH"; then
   git worktree add "$ABS_TEMP_DIR" "$DEPLOY_BRANCH"
 elif git ls-remote --exit-code --heads origin "$DEPLOY_BRANCH" >/dev/null 2>&1; then
@@ -70,7 +77,7 @@ fi
 # Sync to remote tip to avoid divergence
 (
   cd "$ABS_TEMP_DIR"
-  git fetch origin "$DEPLOY_BRANCH" || true
+  fetch_deploy_branch || true
   git reset --hard "origin/$DEPLOY_BRANCH" || true
   git config core.autocrlf false
   if [[ ! -f .gitattributes ]]; then
@@ -97,6 +104,10 @@ fi
 echo "Committing changes..."
 cd "$ABS_TEMP_DIR"
 git add -A
+# The lease names the tip we built on. Without a value, git looks the tracking
+# ref up through the fetch refspec, finds nothing in a single-branch clone, and
+# refuses with "stale info".
+LEASE=$(git rev-parse --verify -q "refs/remotes/origin/$DEPLOY_BRANCH" || true)
 if git diff --cached --quiet; then
   echo "No changes to commit."
 else
@@ -105,7 +116,7 @@ else
   else
     git -c commit.gpgsign=${SIGN_COMMITS} commit -m "Deploy updated book"
     echo "Pushing to $DEPLOY_BRANCH..."
-    git push --force-with-lease origin "$DEPLOY_BRANCH"
+    git push --force-with-lease="$DEPLOY_BRANCH:$LEASE" origin "$DEPLOY_BRANCH"
   fi
 fi
 
