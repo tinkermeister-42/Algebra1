@@ -82,6 +82,6 @@ def rectangle(path):
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    graph(os.path.join(OUT, "wle_practice_2.svg"), -3, 2)
-    graph(os.path.join(OUT, "wle_practice_6.svg"), 0.75, -2)
-    rectangle(os.path.join(OUT, "wle_practice_19.svg"))
+    graph(os.path.join(OUT, "wle_graph_a.svg"), -3, 2)
+    graph(os.path.join(OUT, "wle_graph_b.svg"), 0.75, -2)
+    rectangle(os.path.join(OUT, "wle_rectangle.svg"))
