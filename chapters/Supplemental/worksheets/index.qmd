@@ -20,5 +20,10 @@ Here are some worksheets that will give you practice on various topics.
   - [Literal Equations Practice](Unit_3/literal_equations_practice.qmd)
   - [Literal Equations Mixed Practice](Unit_3/literal_equations_mixed_practice.qmd)
 
+
+## Unit 4 - Linear Functions & Graphs
+
+  - [4.4 Writing Linear Equations Practice](../../../assessments/Unit_4/Unit4_Writing_Linear_Equations_Practice.html)
+
 ***
 
